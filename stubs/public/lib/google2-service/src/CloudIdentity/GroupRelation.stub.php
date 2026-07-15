@@ -21,142 +21,151 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class GroupRelation extends \Google\Collection
-{
-    /**
-     * The relation type is undefined or undetermined.
-     */
-    public const RELATION_TYPE_RELATION_TYPE_UNSPECIFIED = 'RELATION_TYPE_UNSPECIFIED';
-    /**
-     * The two entities have only a direct membership with each other.
-     */
-    public const RELATION_TYPE_DIRECT = 'DIRECT';
-    /**
-     * The two entities have only an indirect membership with each other.
-     */
-    public const RELATION_TYPE_INDIRECT = 'INDIRECT';
-    /**
-     * The two entities have both a direct and an indirect membership with each
-     * other.
-     */
-    public const RELATION_TYPE_DIRECT_AND_INDIRECT = 'DIRECT_AND_INDIRECT';
-    protected $collection_key = 'roles';
-    /**
-     * Display name for this group.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Resource name for this group.
-     *
-     * @var string
-     */
-    public $group;
-    protected $groupKeyType = EntityKey::class;
-    protected $groupKeyDataType = '';
-    /**
-     * Labels for Group resource.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * The relation between the member and the transitive group.
-     *
-     * @var string
-     */
-    public $relationType;
-    protected $rolesType = TransitiveMembershipRole::class;
-    protected $rolesDataType = 'array';
-    /**
-     * Display name for this group.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\CloudIdentity {
+    class GroupRelation extends \Google\Collection
     {
+        /**
+         * The relation type is undefined or undetermined.
+         */
+        public const RELATION_TYPE_RELATION_TYPE_UNSPECIFIED = 'RELATION_TYPE_UNSPECIFIED';
+        /**
+         * The two entities have only a direct membership with each other.
+         */
+        public const RELATION_TYPE_DIRECT = 'DIRECT';
+        /**
+         * The two entities have only an indirect membership with each other.
+         */
+        public const RELATION_TYPE_INDIRECT = 'INDIRECT';
+        /**
+         * The two entities have both a direct and an indirect membership with each
+         * other.
+         */
+        public const RELATION_TYPE_DIRECT_AND_INDIRECT = 'DIRECT_AND_INDIRECT';
+        protected $collection_key = 'roles';
+        /**
+         * Display name for this group.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Resource name for this group.
+         *
+         * @var string
+         */
+        public $group;
+        protected $groupKeyType = EntityKey::class;
+        protected $groupKeyDataType = '';
+        /**
+         * Labels for Group resource.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * The relation between the member and the transitive group.
+         *
+         * @var string
+         */
+        public $relationType;
+        protected $rolesType = TransitiveMembershipRole::class;
+        protected $rolesDataType = 'array';
+        /**
+         * Display name for this group.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Resource name for this group.
+         *
+         * @param string $group
+         */
+        public function setGroup($group)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroup()
+        {
+        }
+        /**
+         * Entity key has an id and a namespace. In case of discussion forums, the id
+         * will be an email address without a namespace.
+         *
+         * @param EntityKey $groupKey
+         */
+        public function setGroupKey(EntityKey $groupKey)
+        {
+        }
+        /**
+         * @return EntityKey
+         */
+        public function getGroupKey()
+        {
+        }
+        /**
+         * Labels for Group resource.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * The relation between the member and the transitive group.
+         *
+         * Accepted values: RELATION_TYPE_UNSPECIFIED, DIRECT, INDIRECT,
+         * DIRECT_AND_INDIRECT
+         *
+         * @param self::RELATION_TYPE_* $relationType
+         */
+        public function setRelationType($relationType)
+        {
+        }
+        /**
+         * @return self::RELATION_TYPE_*
+         */
+        public function getRelationType()
+        {
+        }
+        /**
+         * Membership roles of the member for the group.
+         *
+         * @param TransitiveMembershipRole[] $roles
+         */
+        public function setRoles($roles)
+        {
+        }
+        /**
+         * @return TransitiveMembershipRole[]
+         */
+        public function getRoles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIdentity\GroupRelation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Resource name for this group.
-     *
-     * @param string $group
-     */
-    public function setGroup($group)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGroup()
-    {
-    }
-    /**
-     * Entity key has an id and a namespace. In case of discussion forums, the id
-     * will be an email address without a namespace.
-     *
-     * @param EntityKey $groupKey
-     */
-    public function setGroupKey(EntityKey $groupKey)
-    {
-    }
-    /**
-     * @return EntityKey
-     */
-    public function getGroupKey()
-    {
-    }
-    /**
-     * Labels for Group resource.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * The relation between the member and the transitive group.
-     *
-     * Accepted values: RELATION_TYPE_UNSPECIFIED, DIRECT, INDIRECT,
-     * DIRECT_AND_INDIRECT
-     *
-     * @param self::RELATION_TYPE_* $relationType
-     */
-    public function setRelationType($relationType)
-    {
-    }
-    /**
-     * @return self::RELATION_TYPE_*
-     */
-    public function getRelationType()
-    {
-    }
-    /**
-     * Membership roles of the member for the group.
-     *
-     * @param TransitiveMembershipRole[] $roles
-     */
-    public function setRoles($roles)
-    {
-    }
-    /**
-     * @return TransitiveMembershipRole[]
-     */
-    public function getRoles()
+    class Google_Service_CloudIdentity_GroupRelation extends \Google\Service\CloudIdentity\GroupRelation
     {
     }
 }

@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class SchemaSegment extends \Google\Model
-{
-    /**
-     * The maximum number of times this segment can be present in this group. 0 or
-     * -1 means unbounded.
-     *
-     * @var int
-     */
-    public $maxOccurs;
-    /**
-     * The minimum number of times this segment can be present in this group.
-     *
-     * @var int
-     */
-    public $minOccurs;
-    /**
-     * The Segment type. For example, "PID".
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The maximum number of times this segment can be present in this group. 0 or
-     * -1 means unbounded.
-     *
-     * @param int $maxOccurs
-     */
-    public function setMaxOccurs($maxOccurs)
+namespace Google\Service\CloudHealthcare {
+    class SchemaSegment extends \Google\Model
     {
+        /**
+         * The maximum number of times this segment can be present in this group. 0 or
+         * -1 means unbounded.
+         *
+         * @var int
+         */
+        public $maxOccurs;
+        /**
+         * The minimum number of times this segment can be present in this group.
+         *
+         * @var int
+         */
+        public $minOccurs;
+        /**
+         * The Segment type. For example, "PID".
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The maximum number of times this segment can be present in this group. 0 or
+         * -1 means unbounded.
+         *
+         * @param int $maxOccurs
+         */
+        public function setMaxOccurs($maxOccurs)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxOccurs()
+        {
+        }
+        /**
+         * The minimum number of times this segment can be present in this group.
+         *
+         * @param int $minOccurs
+         */
+        public function setMinOccurs($minOccurs)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinOccurs()
+        {
+        }
+        /**
+         * The Segment type. For example, "PID".
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudHealthcare\SchemaSegment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxOccurs()
-    {
-    }
-    /**
-     * The minimum number of times this segment can be present in this group.
-     *
-     * @param int $minOccurs
-     */
-    public function setMinOccurs($minOccurs)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinOccurs()
-    {
-    }
-    /**
-     * The Segment type. For example, "PID".
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudHealthcare_SchemaSegment extends \Google\Service\CloudHealthcare\SchemaSegment
     {
     }
 }

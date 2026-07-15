@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class ApplicationReference extends \Google\Model
-{
-    /**
-     * The type is not available.
-     */
-    public const TYPE_UNSPECIFIED_REFERENCE_TYPE = 'UNSPECIFIED_REFERENCE_TYPE';
-    /**
-     * The links of one or more Drive items were posted.
-     */
-    public const TYPE_LINK = 'LINK';
-    /**
-     * Comments were made regarding a Drive item.
-     */
-    public const TYPE_DISCUSS = 'DISCUSS';
-    /**
-     * The reference type corresponding to this event.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The reference type corresponding to this event.
-     *
-     * Accepted values: UNSPECIFIED_REFERENCE_TYPE, LINK, DISCUSS
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\DriveActivity {
+    class ApplicationReference extends \Google\Model
     {
+        /**
+         * The type is not available.
+         */
+        public const TYPE_UNSPECIFIED_REFERENCE_TYPE = 'UNSPECIFIED_REFERENCE_TYPE';
+        /**
+         * The links of one or more Drive items were posted.
+         */
+        public const TYPE_LINK = 'LINK';
+        /**
+         * Comments were made regarding a Drive item.
+         */
+        public const TYPE_DISCUSS = 'DISCUSS';
+        /**
+         * The reference type corresponding to this event.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The reference type corresponding to this event.
+         *
+         * Accepted values: UNSPECIFIED_REFERENCE_TYPE, LINK, DISCUSS
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\DriveActivity\ApplicationReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_DriveActivity_ApplicationReference extends \Google\Service\DriveActivity\ApplicationReference
     {
     }
 }

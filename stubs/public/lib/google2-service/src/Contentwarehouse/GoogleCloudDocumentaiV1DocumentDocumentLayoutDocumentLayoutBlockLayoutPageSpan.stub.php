@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutPageSpan extends \Google\Model
-{
-    /**
-     * Page where block ends in the document.
-     *
-     * @var int
-     */
-    public $pageEnd;
-    /**
-     * Page where block starts in the document.
-     *
-     * @var int
-     */
-    public $pageStart;
-    /**
-     * Page where block ends in the document.
-     *
-     * @param int $pageEnd
-     */
-    public function setPageEnd($pageEnd)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutPageSpan extends \Google\Model
     {
+        /**
+         * Page where block ends in the document.
+         *
+         * @var int
+         */
+        public $pageEnd;
+        /**
+         * Page where block starts in the document.
+         *
+         * @var int
+         */
+        public $pageStart;
+        /**
+         * Page where block ends in the document.
+         *
+         * @param int $pageEnd
+         */
+        public function setPageEnd($pageEnd)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageEnd()
+        {
+        }
+        /**
+         * Page where block starts in the document.
+         *
+         * @param int $pageStart
+         */
+        public function setPageStart($pageStart)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageStart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutPageSpan registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageEnd()
-    {
-    }
-    /**
-     * Page where block starts in the document.
-     *
-     * @param int $pageStart
-     */
-    public function setPageStart($pageStart)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPageStart()
+    class Google_Service_Contentwarehouse_GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutPageSpan extends \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutPageSpan
     {
     }
 }

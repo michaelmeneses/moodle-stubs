@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class DirectoryEntry extends \Google\Model
-{
-    /**
-     * A child directory in the directory.
-     *
-     * @var string
-     */
-    public $directory;
-    /**
-     * A file in the directory.
-     *
-     * @var string
-     */
-    public $file;
-    /**
-     * A child directory in the directory.
-     *
-     * @param string $directory
-     */
-    public function setDirectory($directory)
+namespace Google\Service\Dataform {
+    class DirectoryEntry extends \Google\Model
     {
+        /**
+         * A child directory in the directory.
+         *
+         * @var string
+         */
+        public $directory;
+        /**
+         * A file in the directory.
+         *
+         * @var string
+         */
+        public $file;
+        /**
+         * A child directory in the directory.
+         *
+         * @param string $directory
+         */
+        public function setDirectory($directory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDirectory()
+        {
+        }
+        /**
+         * A file in the directory.
+         *
+         * @param string $file
+         */
+        public function setFile($file)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFile()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataform\DirectoryEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDirectory()
-    {
-    }
-    /**
-     * A file in the directory.
-     *
-     * @param string $file
-     */
-    public function setFile($file)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFile()
+    class Google_Service_Dataform_DirectoryEntry extends \Google\Service\Dataform\DirectoryEntry
     {
     }
 }

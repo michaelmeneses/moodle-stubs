@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ListDeploymentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'deployments';
-    protected $deploymentsType = GoogleCloudApihubV1Deployment::class;
-    protected $deploymentsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The deployment resources present in the API hub.
-     *
-     * @param GoogleCloudApihubV1Deployment[] $deployments
-     */
-    public function setDeployments($deployments)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ListDeploymentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'deployments';
+        protected $deploymentsType = GoogleCloudApihubV1Deployment::class;
+        protected $deploymentsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The deployment resources present in the API hub.
+         *
+         * @param GoogleCloudApihubV1Deployment[] $deployments
+         */
+        public function setDeployments($deployments)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1Deployment[]
+         */
+        public function getDeployments()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1Deployment[]
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ListDeploymentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployments()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_APIhub_GoogleCloudApihubV1ListDeploymentsResponse extends \Google\Service\APIhub\GoogleCloudApihubV1ListDeploymentsResponse
     {
     }
 }

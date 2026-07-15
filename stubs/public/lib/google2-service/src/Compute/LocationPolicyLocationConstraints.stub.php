@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class LocationPolicyLocationConstraints extends \Google\Model
-{
-    /**
-     * Maximum number of items that are allowed to be placed in this zone. The
-     * value must be non-negative.
-     *
-     * @var int
-     */
-    public $maxCount;
-    /**
-     * Maximum number of items that are allowed to be placed in this zone. The
-     * value must be non-negative.
-     *
-     * @param int $maxCount
-     */
-    public function setMaxCount($maxCount)
+namespace Google\Service\Compute {
+    class LocationPolicyLocationConstraints extends \Google\Model
     {
+        /**
+         * Maximum number of items that are allowed to be placed in this zone. The
+         * value must be non-negative.
+         *
+         * @var int
+         */
+        public $maxCount;
+        /**
+         * Maximum number of items that are allowed to be placed in this zone. The
+         * value must be non-negative.
+         *
+         * @param int $maxCount
+         */
+        public function setMaxCount($maxCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Compute\LocationPolicyLocationConstraints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxCount()
+    class Google_Service_Compute_LocationPolicyLocationConstraints extends \Google\Service\Compute\LocationPolicyLocationConstraints
     {
     }
 }

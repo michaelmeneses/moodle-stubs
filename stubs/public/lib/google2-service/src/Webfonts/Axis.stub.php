@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Webfonts;
-
-class Axis extends \Google\Model
-{
-    /**
-     * maximum value
-     *
-     * @var float
-     */
-    public $end;
-    /**
-     * minimum value
-     *
-     * @var float
-     */
-    public $start;
-    /**
-     * tag name.
-     *
-     * @var string
-     */
-    public $tag;
-    /**
-     * maximum value
-     *
-     * @param float $end
-     */
-    public function setEnd($end)
+namespace Google\Service\Webfonts {
+    class Axis extends \Google\Model
     {
+        /**
+         * maximum value
+         *
+         * @var float
+         */
+        public $end;
+        /**
+         * minimum value
+         *
+         * @var float
+         */
+        public $start;
+        /**
+         * tag name.
+         *
+         * @var string
+         */
+        public $tag;
+        /**
+         * maximum value
+         *
+         * @param float $end
+         */
+        public function setEnd($end)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getEnd()
+        {
+        }
+        /**
+         * minimum value
+         *
+         * @param float $start
+         */
+        public function setStart($start)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getStart()
+        {
+        }
+        /**
+         * tag name.
+         *
+         * @param string $tag
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Webfonts\Axis registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnd()
-    {
-    }
-    /**
-     * minimum value
-     *
-     * @param float $start
-     */
-    public function setStart($start)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getStart()
-    {
-    }
-    /**
-     * tag name.
-     *
-     * @param string $tag
-     */
-    public function setTag($tag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTag()
+    class Google_Service_Webfonts_Axis extends \Google\Service\Webfonts\Axis
     {
     }
 }

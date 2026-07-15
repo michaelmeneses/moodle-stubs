@@ -21,21 +21,30 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class Explicit extends \Google\Collection
-{
-    protected $collection_key = 'bounds';
-    /**
-     * The values must be monotonically increasing.
-     *
-     * @var []
-     */
-    public $bounds;
-    public function setBounds($bounds)
+namespace Google\Service\Monitoring {
+    class Explicit extends \Google\Collection
     {
+        protected $collection_key = 'bounds';
+        /**
+         * The values must be monotonically increasing.
+         *
+         * @var []
+         */
+        public $bounds;
+        public function setBounds($bounds)
+        {
+        }
+        public function getBounds()
+        {
+        }
     }
-    public function getBounds()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Monitoring\Explicit registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Monitoring_Explicit extends \Google\Service\Monitoring\Explicit
     {
     }
 }

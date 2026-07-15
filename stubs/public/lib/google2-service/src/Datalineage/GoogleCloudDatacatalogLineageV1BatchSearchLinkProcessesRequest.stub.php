@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datalineage;
-
-class GoogleCloudDatacatalogLineageV1BatchSearchLinkProcessesRequest extends \Google\Collection
-{
-    protected $collection_key = 'links';
-    /**
-     * Required. An array of links to check for their associated LineageProcesses.
-     * The maximum number of items in this array is 100. If the request contains
-     * more than 100 links, it returns the `INVALID_ARGUMENT` error. Format:
-     * `projects/{project}/locations/{location}/links/{link}`.
-     *
-     * @var string[]
-     */
-    public $links;
-    /**
-     * The maximum number of processes to return in a single page of the response.
-     * A page may contain fewer results than this value.
-     *
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * The page token received from a previous `BatchSearchLinkProcesses` call.
-     * Use it to get the next page. When requesting subsequent pages of a
-     * response, remember that all parameters must match the values you provided
-     * in the original request.
-     *
-     * @var string
-     */
-    public $pageToken;
-    /**
-     * Required. An array of links to check for their associated LineageProcesses.
-     * The maximum number of items in this array is 100. If the request contains
-     * more than 100 links, it returns the `INVALID_ARGUMENT` error. Format:
-     * `projects/{project}/locations/{location}/links/{link}`.
-     *
-     * @param string[] $links
-     */
-    public function setLinks($links)
+namespace Google\Service\Datalineage {
+    class GoogleCloudDatacatalogLineageV1BatchSearchLinkProcessesRequest extends \Google\Collection
     {
+        protected $collection_key = 'links';
+        /**
+         * Required. An array of links to check for their associated LineageProcesses.
+         * The maximum number of items in this array is 100. If the request contains
+         * more than 100 links, it returns the `INVALID_ARGUMENT` error. Format:
+         * `projects/{project}/locations/{location}/links/{link}`.
+         *
+         * @var string[]
+         */
+        public $links;
+        /**
+         * The maximum number of processes to return in a single page of the response.
+         * A page may contain fewer results than this value.
+         *
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * The page token received from a previous `BatchSearchLinkProcesses` call.
+         * Use it to get the next page. When requesting subsequent pages of a
+         * response, remember that all parameters must match the values you provided
+         * in the original request.
+         *
+         * @var string
+         */
+        public $pageToken;
+        /**
+         * Required. An array of links to check for their associated LineageProcesses.
+         * The maximum number of items in this array is 100. If the request contains
+         * more than 100 links, it returns the `INVALID_ARGUMENT` error. Format:
+         * `projects/{project}/locations/{location}/links/{link}`.
+         *
+         * @param string[] $links
+         */
+        public function setLinks($links)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLinks()
+        {
+        }
+        /**
+         * The maximum number of processes to return in a single page of the response.
+         * A page may contain fewer results than this value.
+         *
+         * @param int $pageSize
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * The page token received from a previous `BatchSearchLinkProcesses` call.
+         * Use it to get the next page. When requesting subsequent pages of a
+         * response, remember that all parameters must match the values you provided
+         * in the original request.
+         *
+         * @param string $pageToken
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1BatchSearchLinkProcessesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLinks()
-    {
-    }
-    /**
-     * The maximum number of processes to return in a single page of the response.
-     * A page may contain fewer results than this value.
-     *
-     * @param int $pageSize
-     */
-    public function setPageSize($pageSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPageSize()
-    {
-    }
-    /**
-     * The page token received from a previous `BatchSearchLinkProcesses` call.
-     * Use it to get the next page. When requesting subsequent pages of a
-     * response, remember that all parameters must match the values you provided
-     * in the original request.
-     *
-     * @param string $pageToken
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
+    class Google_Service_Datalineage_GoogleCloudDatacatalogLineageV1BatchSearchLinkProcessesRequest extends \Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1BatchSearchLinkProcessesRequest
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sasportal;
-
-class SasPortalCreateSignedDeviceRequest extends \Google\Model
-{
-    /**
-     * Required. JSON Web Token signed using a CPI private key. Payload must be
-     * the JSON encoding of the device. The user_id field must be set.
-     *
-     * @var string
-     */
-    public $encodedDevice;
-    /**
-     * Required. Unique installer id (CPI ID) from the Certified Professional
-     * Installers database.
-     *
-     * @var string
-     */
-    public $installerId;
-    /**
-     * Required. JSON Web Token signed using a CPI private key. Payload must be
-     * the JSON encoding of the device. The user_id field must be set.
-     *
-     * @param string $encodedDevice
-     */
-    public function setEncodedDevice($encodedDevice)
+namespace Google\Service\Sasportal {
+    class SasPortalCreateSignedDeviceRequest extends \Google\Model
     {
+        /**
+         * Required. JSON Web Token signed using a CPI private key. Payload must be
+         * the JSON encoding of the device. The user_id field must be set.
+         *
+         * @var string
+         */
+        public $encodedDevice;
+        /**
+         * Required. Unique installer id (CPI ID) from the Certified Professional
+         * Installers database.
+         *
+         * @var string
+         */
+        public $installerId;
+        /**
+         * Required. JSON Web Token signed using a CPI private key. Payload must be
+         * the JSON encoding of the device. The user_id field must be set.
+         *
+         * @param string $encodedDevice
+         */
+        public function setEncodedDevice($encodedDevice)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncodedDevice()
+        {
+        }
+        /**
+         * Required. Unique installer id (CPI ID) from the Certified Professional
+         * Installers database.
+         *
+         * @param string $installerId
+         */
+        public function setInstallerId($installerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstallerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sasportal\SasPortalCreateSignedDeviceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncodedDevice()
-    {
-    }
-    /**
-     * Required. Unique installer id (CPI ID) from the Certified Professional
-     * Installers database.
-     *
-     * @param string $installerId
-     */
-    public function setInstallerId($installerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstallerId()
+    class Google_Service_Sasportal_SasPortalCreateSignedDeviceRequest extends \Google\Service\Sasportal\SasPortalCreateSignedDeviceRequest
     {
     }
 }

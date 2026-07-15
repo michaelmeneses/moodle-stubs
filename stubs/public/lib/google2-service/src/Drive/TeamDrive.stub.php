@@ -21,240 +21,249 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class TeamDrive extends \Google\Model
-{
-    protected $backgroundImageFileType = TeamDriveBackgroundImageFile::class;
-    protected $backgroundImageFileDataType = '';
-    /**
-     * A short-lived link to this Team Drive's background image.
-     *
-     * @var string
-     */
-    public $backgroundImageLink;
-    protected $capabilitiesType = TeamDriveCapabilities::class;
-    protected $capabilitiesDataType = '';
-    /**
-     * The color of this Team Drive as an RGB hex string. It can only be set on a
-     * `drive.teamdrives.update` request that does not set `themeId`.
-     *
-     * @var string
-     */
-    public $colorRgb;
-    /**
-     * The time at which the Team Drive was created (RFC 3339 date-time).
-     *
-     * @var string
-     */
-    public $createdTime;
-    /**
-     * The ID of this Team Drive which is also the ID of the top level folder of
-     * this Team Drive.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"drive#teamDrive"`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The name of this Team Drive.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The organizational unit of this shared drive. This field is only populated
-     * on `drives.list` responses when the `useDomainAdminAccess` parameter is set
-     * to `true`.
-     *
-     * @var string
-     */
-    public $orgUnitId;
-    protected $restrictionsType = TeamDriveRestrictions::class;
-    protected $restrictionsDataType = '';
-    /**
-     * The ID of the theme from which the background image and color will be set.
-     * The set of possible `teamDriveThemes` can be retrieved from a
-     * `drive.about.get` response. When not specified on a
-     * `drive.teamdrives.create` request, a random theme is chosen from which the
-     * background image and color are set. This is a write-only field; it can only
-     * be set on requests that don't set `colorRgb` or `backgroundImageFile`.
-     *
-     * @var string
-     */
-    public $themeId;
-    /**
-     * An image file and cropping parameters from which a background image for
-     * this Team Drive is set. This is a write only field; it can only be set on
-     * `drive.teamdrives.update` requests that don't set `themeId`. When
-     * specified, all fields of the `backgroundImageFile` must be set.
-     *
-     * @param TeamDriveBackgroundImageFile $backgroundImageFile
-     */
-    public function setBackgroundImageFile(TeamDriveBackgroundImageFile $backgroundImageFile)
+namespace Google\Service\Drive {
+    class TeamDrive extends \Google\Model
     {
+        protected $backgroundImageFileType = TeamDriveBackgroundImageFile::class;
+        protected $backgroundImageFileDataType = '';
+        /**
+         * A short-lived link to this Team Drive's background image.
+         *
+         * @var string
+         */
+        public $backgroundImageLink;
+        protected $capabilitiesType = TeamDriveCapabilities::class;
+        protected $capabilitiesDataType = '';
+        /**
+         * The color of this Team Drive as an RGB hex string. It can only be set on a
+         * `drive.teamdrives.update` request that does not set `themeId`.
+         *
+         * @var string
+         */
+        public $colorRgb;
+        /**
+         * The time at which the Team Drive was created (RFC 3339 date-time).
+         *
+         * @var string
+         */
+        public $createdTime;
+        /**
+         * The ID of this Team Drive which is also the ID of the top level folder of
+         * this Team Drive.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"drive#teamDrive"`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The name of this Team Drive.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The organizational unit of this shared drive. This field is only populated
+         * on `drives.list` responses when the `useDomainAdminAccess` parameter is set
+         * to `true`.
+         *
+         * @var string
+         */
+        public $orgUnitId;
+        protected $restrictionsType = TeamDriveRestrictions::class;
+        protected $restrictionsDataType = '';
+        /**
+         * The ID of the theme from which the background image and color will be set.
+         * The set of possible `teamDriveThemes` can be retrieved from a
+         * `drive.about.get` response. When not specified on a
+         * `drive.teamdrives.create` request, a random theme is chosen from which the
+         * background image and color are set. This is a write-only field; it can only
+         * be set on requests that don't set `colorRgb` or `backgroundImageFile`.
+         *
+         * @var string
+         */
+        public $themeId;
+        /**
+         * An image file and cropping parameters from which a background image for
+         * this Team Drive is set. This is a write only field; it can only be set on
+         * `drive.teamdrives.update` requests that don't set `themeId`. When
+         * specified, all fields of the `backgroundImageFile` must be set.
+         *
+         * @param TeamDriveBackgroundImageFile $backgroundImageFile
+         */
+        public function setBackgroundImageFile(TeamDriveBackgroundImageFile $backgroundImageFile)
+        {
+        }
+        /**
+         * @return TeamDriveBackgroundImageFile
+         */
+        public function getBackgroundImageFile()
+        {
+        }
+        /**
+         * A short-lived link to this Team Drive's background image.
+         *
+         * @param string $backgroundImageLink
+         */
+        public function setBackgroundImageLink($backgroundImageLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackgroundImageLink()
+        {
+        }
+        /**
+         * Capabilities the current user has on this Team Drive.
+         *
+         * @param TeamDriveCapabilities $capabilities
+         */
+        public function setCapabilities(TeamDriveCapabilities $capabilities)
+        {
+        }
+        /**
+         * @return TeamDriveCapabilities
+         */
+        public function getCapabilities()
+        {
+        }
+        /**
+         * The color of this Team Drive as an RGB hex string. It can only be set on a
+         * `drive.teamdrives.update` request that does not set `themeId`.
+         *
+         * @param string $colorRgb
+         */
+        public function setColorRgb($colorRgb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getColorRgb()
+        {
+        }
+        /**
+         * The time at which the Team Drive was created (RFC 3339 date-time).
+         *
+         * @param string $createdTime
+         */
+        public function setCreatedTime($createdTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatedTime()
+        {
+        }
+        /**
+         * The ID of this Team Drive which is also the ID of the top level folder of
+         * this Team Drive.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"drive#teamDrive"`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The name of this Team Drive.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The organizational unit of this shared drive. This field is only populated
+         * on `drives.list` responses when the `useDomainAdminAccess` parameter is set
+         * to `true`.
+         *
+         * @param string $orgUnitId
+         */
+        public function setOrgUnitId($orgUnitId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrgUnitId()
+        {
+        }
+        /**
+         * A set of restrictions that apply to this Team Drive or items inside this
+         * Team Drive.
+         *
+         * @param TeamDriveRestrictions $restrictions
+         */
+        public function setRestrictions(TeamDriveRestrictions $restrictions)
+        {
+        }
+        /**
+         * @return TeamDriveRestrictions
+         */
+        public function getRestrictions()
+        {
+        }
+        /**
+         * The ID of the theme from which the background image and color will be set.
+         * The set of possible `teamDriveThemes` can be retrieved from a
+         * `drive.about.get` response. When not specified on a
+         * `drive.teamdrives.create` request, a random theme is chosen from which the
+         * background image and color are set. This is a write-only field; it can only
+         * be set on requests that don't set `colorRgb` or `backgroundImageFile`.
+         *
+         * @param string $themeId
+         */
+        public function setThemeId($themeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThemeId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TeamDriveBackgroundImageFile
+     * Runtime class alias of \Google\Service\Drive\TeamDrive registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackgroundImageFile()
-    {
-    }
-    /**
-     * A short-lived link to this Team Drive's background image.
-     *
-     * @param string $backgroundImageLink
-     */
-    public function setBackgroundImageLink($backgroundImageLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBackgroundImageLink()
-    {
-    }
-    /**
-     * Capabilities the current user has on this Team Drive.
-     *
-     * @param TeamDriveCapabilities $capabilities
-     */
-    public function setCapabilities(TeamDriveCapabilities $capabilities)
-    {
-    }
-    /**
-     * @return TeamDriveCapabilities
-     */
-    public function getCapabilities()
-    {
-    }
-    /**
-     * The color of this Team Drive as an RGB hex string. It can only be set on a
-     * `drive.teamdrives.update` request that does not set `themeId`.
-     *
-     * @param string $colorRgb
-     */
-    public function setColorRgb($colorRgb)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getColorRgb()
-    {
-    }
-    /**
-     * The time at which the Team Drive was created (RFC 3339 date-time).
-     *
-     * @param string $createdTime
-     */
-    public function setCreatedTime($createdTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreatedTime()
-    {
-    }
-    /**
-     * The ID of this Team Drive which is also the ID of the top level folder of
-     * this Team Drive.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"drive#teamDrive"`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The name of this Team Drive.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The organizational unit of this shared drive. This field is only populated
-     * on `drives.list` responses when the `useDomainAdminAccess` parameter is set
-     * to `true`.
-     *
-     * @param string $orgUnitId
-     */
-    public function setOrgUnitId($orgUnitId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrgUnitId()
-    {
-    }
-    /**
-     * A set of restrictions that apply to this Team Drive or items inside this
-     * Team Drive.
-     *
-     * @param TeamDriveRestrictions $restrictions
-     */
-    public function setRestrictions(TeamDriveRestrictions $restrictions)
-    {
-    }
-    /**
-     * @return TeamDriveRestrictions
-     */
-    public function getRestrictions()
-    {
-    }
-    /**
-     * The ID of the theme from which the background image and color will be set.
-     * The set of possible `teamDriveThemes` can be retrieved from a
-     * `drive.about.get` response. When not specified on a
-     * `drive.teamdrives.create` request, a random theme is chosen from which the
-     * background image and color are set. This is a write-only field; it can only
-     * be set on requests that don't set `colorRgb` or `backgroundImageFile`.
-     *
-     * @param string $themeId
-     */
-    public function setThemeId($themeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThemeId()
+    class Google_Service_Drive_TeamDrive extends \Google\Service\Drive\TeamDrive
     {
     }
 }

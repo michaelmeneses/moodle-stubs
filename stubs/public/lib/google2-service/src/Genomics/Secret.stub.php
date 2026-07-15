@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Genomics;
-
-class Secret extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $cipherText;
-    /**
-     * @var string
-     */
-    public $keyName;
-    /**
-     * @param string
-     */
-    public function setCipherText($cipherText)
+namespace Google\Service\Genomics {
+    class Secret extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $cipherText;
+        /**
+         * @var string
+         */
+        public $keyName;
+        /**
+         * @param string
+         */
+        public function setCipherText($cipherText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCipherText()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKeyName($keyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Genomics\Secret registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCipherText()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKeyName($keyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKeyName()
+    class Google_Service_Genomics_Secret extends \Google\Service\Genomics\Secret
     {
     }
 }

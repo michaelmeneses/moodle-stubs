@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaEngineMediaRecommendationEngineConfigEngineFeaturesConfig extends \Google\Model
-{
-    protected $mostPopularConfigType = GoogleCloudDiscoveryengineV1alphaEngineMediaRecommendationEngineConfigMostPopularFeatureConfig::class;
-    protected $mostPopularConfigDataType = '';
-    protected $recommendedForYouConfigType = GoogleCloudDiscoveryengineV1alphaEngineMediaRecommendationEngineConfigRecommendedForYouFeatureConfig::class;
-    protected $recommendedForYouConfigDataType = '';
-    /**
-     * Most popular engine feature config.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaEngineMediaRecommendationEngineConfigMostPopularFeatureConfig $mostPopularConfig
-     */
-    public function setMostPopularConfig(GoogleCloudDiscoveryengineV1alphaEngineMediaRecommendationEngineConfigMostPopularFeatureConfig $mostPopularConfig)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaEngineMediaRecommendationEngineConfigEngineFeaturesConfig extends \Google\Model
     {
+        protected $mostPopularConfigType = GoogleCloudDiscoveryengineV1alphaEngineMediaRecommendationEngineConfigMostPopularFeatureConfig::class;
+        protected $mostPopularConfigDataType = '';
+        protected $recommendedForYouConfigType = GoogleCloudDiscoveryengineV1alphaEngineMediaRecommendationEngineConfigRecommendedForYouFeatureConfig::class;
+        protected $recommendedForYouConfigDataType = '';
+        /**
+         * Most popular engine feature config.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaEngineMediaRecommendationEngineConfigMostPopularFeatureConfig $mostPopularConfig
+         */
+        public function setMostPopularConfig(GoogleCloudDiscoveryengineV1alphaEngineMediaRecommendationEngineConfigMostPopularFeatureConfig $mostPopularConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaEngineMediaRecommendationEngineConfigMostPopularFeatureConfig
+         */
+        public function getMostPopularConfig()
+        {
+        }
+        /**
+         * Recommended for you engine feature config.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaEngineMediaRecommendationEngineConfigRecommendedForYouFeatureConfig $recommendedForYouConfig
+         */
+        public function setRecommendedForYouConfig(GoogleCloudDiscoveryengineV1alphaEngineMediaRecommendationEngineConfigRecommendedForYouFeatureConfig $recommendedForYouConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaEngineMediaRecommendationEngineConfigRecommendedForYouFeatureConfig
+         */
+        public function getRecommendedForYouConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaEngineMediaRecommendationEngineConfigMostPopularFeatureConfig
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaEngineMediaRecommendationEngineConfigEngineFeaturesConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMostPopularConfig()
-    {
-    }
-    /**
-     * Recommended for you engine feature config.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaEngineMediaRecommendationEngineConfigRecommendedForYouFeatureConfig $recommendedForYouConfig
-     */
-    public function setRecommendedForYouConfig(GoogleCloudDiscoveryengineV1alphaEngineMediaRecommendationEngineConfigRecommendedForYouFeatureConfig $recommendedForYouConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1alphaEngineMediaRecommendationEngineConfigRecommendedForYouFeatureConfig
-     */
-    public function getRecommendedForYouConfig()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaEngineMediaRecommendationEngineConfigEngineFeaturesConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaEngineMediaRecommendationEngineConfigEngineFeaturesConfig
     {
     }
 }

@@ -21,107 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class Columns extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * List of attributes names returned by columns.
-     *
-     * @var string[]
-     */
-    public $attributeNames;
-    /**
-     * Etag of collection. This etag can be compared with the last response etag
-     * to check if response has changed.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $itemsType = Column::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Collection type.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Total number of columns returned in the response.
-     *
-     * @var int
-     */
-    public $totalResults;
-    /**
-     * List of attributes names returned by columns.
-     *
-     * @param string[] $attributeNames
-     */
-    public function setAttributeNames($attributeNames)
+namespace Google\Service\Analytics {
+    class Columns extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * List of attributes names returned by columns.
+         *
+         * @var string[]
+         */
+        public $attributeNames;
+        /**
+         * Etag of collection. This etag can be compared with the last response etag
+         * to check if response has changed.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $itemsType = Column::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Collection type.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Total number of columns returned in the response.
+         *
+         * @var int
+         */
+        public $totalResults;
+        /**
+         * List of attributes names returned by columns.
+         *
+         * @param string[] $attributeNames
+         */
+        public function setAttributeNames($attributeNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAttributeNames()
+        {
+        }
+        /**
+         * Etag of collection. This etag can be compared with the last response etag
+         * to check if response has changed.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * List of columns for a report type.
+         *
+         * @param Column[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Column[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Collection type.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Total number of columns returned in the response.
+         *
+         * @param int $totalResults
+         */
+        public function setTotalResults($totalResults)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Analytics\Columns registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributeNames()
-    {
-    }
-    /**
-     * Etag of collection. This etag can be compared with the last response etag
-     * to check if response has changed.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * List of columns for a report type.
-     *
-     * @param Column[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return Column[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * Collection type.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Total number of columns returned in the response.
-     *
-     * @param int $totalResults
-     */
-    public function setTotalResults($totalResults)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalResults()
+    class Google_Service_Analytics_Columns extends \Google\Service\Analytics\Columns
     {
     }
 }

@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class TableCellProperties extends \Google\Model
-{
-    /**
-     * An unspecified content alignment. The content alignment is inherited from
-     * the parent if it exists.
-     */
-    public const CONTENT_ALIGNMENT_CONTENT_ALIGNMENT_UNSPECIFIED = 'CONTENT_ALIGNMENT_UNSPECIFIED';
-    /**
-     * An unsupported content alignment.
-     */
-    public const CONTENT_ALIGNMENT_CONTENT_ALIGNMENT_UNSUPPORTED = 'CONTENT_ALIGNMENT_UNSUPPORTED';
-    /**
-     * An alignment that aligns the content to the top of the content holder.
-     * Corresponds to ECMA-376 ST_TextAnchoringType 't'.
-     */
-    public const CONTENT_ALIGNMENT_TOP = 'TOP';
-    /**
-     * An alignment that aligns the content to the middle of the content holder.
-     * Corresponds to ECMA-376 ST_TextAnchoringType 'ctr'.
-     */
-    public const CONTENT_ALIGNMENT_MIDDLE = 'MIDDLE';
-    /**
-     * An alignment that aligns the content to the bottom of the content holder.
-     * Corresponds to ECMA-376 ST_TextAnchoringType 'b'.
-     */
-    public const CONTENT_ALIGNMENT_BOTTOM = 'BOTTOM';
-    /**
-     * The alignment of the content in the table cell. The default alignment
-     * matches the alignment for newly created table cells in the Slides editor.
-     *
-     * @var string
-     */
-    public $contentAlignment;
-    protected $tableCellBackgroundFillType = TableCellBackgroundFill::class;
-    protected $tableCellBackgroundFillDataType = '';
-    /**
-     * The alignment of the content in the table cell. The default alignment
-     * matches the alignment for newly created table cells in the Slides editor.
-     *
-     * Accepted values: CONTENT_ALIGNMENT_UNSPECIFIED,
-     * CONTENT_ALIGNMENT_UNSUPPORTED, TOP, MIDDLE, BOTTOM
-     *
-     * @param self::CONTENT_ALIGNMENT_* $contentAlignment
-     */
-    public function setContentAlignment($contentAlignment)
+namespace Google\Service\Slides {
+    class TableCellProperties extends \Google\Model
     {
+        /**
+         * An unspecified content alignment. The content alignment is inherited from
+         * the parent if it exists.
+         */
+        public const CONTENT_ALIGNMENT_CONTENT_ALIGNMENT_UNSPECIFIED = 'CONTENT_ALIGNMENT_UNSPECIFIED';
+        /**
+         * An unsupported content alignment.
+         */
+        public const CONTENT_ALIGNMENT_CONTENT_ALIGNMENT_UNSUPPORTED = 'CONTENT_ALIGNMENT_UNSUPPORTED';
+        /**
+         * An alignment that aligns the content to the top of the content holder.
+         * Corresponds to ECMA-376 ST_TextAnchoringType 't'.
+         */
+        public const CONTENT_ALIGNMENT_TOP = 'TOP';
+        /**
+         * An alignment that aligns the content to the middle of the content holder.
+         * Corresponds to ECMA-376 ST_TextAnchoringType 'ctr'.
+         */
+        public const CONTENT_ALIGNMENT_MIDDLE = 'MIDDLE';
+        /**
+         * An alignment that aligns the content to the bottom of the content holder.
+         * Corresponds to ECMA-376 ST_TextAnchoringType 'b'.
+         */
+        public const CONTENT_ALIGNMENT_BOTTOM = 'BOTTOM';
+        /**
+         * The alignment of the content in the table cell. The default alignment
+         * matches the alignment for newly created table cells in the Slides editor.
+         *
+         * @var string
+         */
+        public $contentAlignment;
+        protected $tableCellBackgroundFillType = TableCellBackgroundFill::class;
+        protected $tableCellBackgroundFillDataType = '';
+        /**
+         * The alignment of the content in the table cell. The default alignment
+         * matches the alignment for newly created table cells in the Slides editor.
+         *
+         * Accepted values: CONTENT_ALIGNMENT_UNSPECIFIED,
+         * CONTENT_ALIGNMENT_UNSUPPORTED, TOP, MIDDLE, BOTTOM
+         *
+         * @param self::CONTENT_ALIGNMENT_* $contentAlignment
+         */
+        public function setContentAlignment($contentAlignment)
+        {
+        }
+        /**
+         * @return self::CONTENT_ALIGNMENT_*
+         */
+        public function getContentAlignment()
+        {
+        }
+        /**
+         * The background fill of the table cell. The default fill matches the fill
+         * for newly created table cells in the Slides editor.
+         *
+         * @param TableCellBackgroundFill $tableCellBackgroundFill
+         */
+        public function setTableCellBackgroundFill(TableCellBackgroundFill $tableCellBackgroundFill)
+        {
+        }
+        /**
+         * @return TableCellBackgroundFill
+         */
+        public function getTableCellBackgroundFill()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CONTENT_ALIGNMENT_*
+     * Runtime class alias of \Google\Service\Slides\TableCellProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentAlignment()
-    {
-    }
-    /**
-     * The background fill of the table cell. The default fill matches the fill
-     * for newly created table cells in the Slides editor.
-     *
-     * @param TableCellBackgroundFill $tableCellBackgroundFill
-     */
-    public function setTableCellBackgroundFill(TableCellBackgroundFill $tableCellBackgroundFill)
-    {
-    }
-    /**
-     * @return TableCellBackgroundFill
-     */
-    public function getTableCellBackgroundFill()
+    class Google_Service_Slides_TableCellProperties extends \Google\Service\Slides\TableCellProperties
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class ForwardingRule extends \Google\Collection
-{
-    protected $collection_key = 'nameServers';
-    /**
-     * Required. Domain used to resolve a `name_servers` list.
-     *
-     * @var string
-     */
-    public $domain;
-    /**
-     * Required. List of DNS servers to use for domain resolution
-     *
-     * @var string[]
-     */
-    public $nameServers;
-    /**
-     * Required. Domain used to resolve a `name_servers` list.
-     *
-     * @param string $domain
-     */
-    public function setDomain($domain)
+namespace Google\Service\VMwareEngine {
+    class ForwardingRule extends \Google\Collection
     {
+        protected $collection_key = 'nameServers';
+        /**
+         * Required. Domain used to resolve a `name_servers` list.
+         *
+         * @var string
+         */
+        public $domain;
+        /**
+         * Required. List of DNS servers to use for domain resolution
+         *
+         * @var string[]
+         */
+        public $nameServers;
+        /**
+         * Required. Domain used to resolve a `name_servers` list.
+         *
+         * @param string $domain
+         */
+        public function setDomain($domain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomain()
+        {
+        }
+        /**
+         * Required. List of DNS servers to use for domain resolution
+         *
+         * @param string[] $nameServers
+         */
+        public function setNameServers($nameServers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNameServers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMwareEngine\ForwardingRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomain()
-    {
-    }
-    /**
-     * Required. List of DNS servers to use for domain resolution
-     *
-     * @param string[] $nameServers
-     */
-    public function setNameServers($nameServers)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNameServers()
+    class Google_Service_VMwareEngine_ForwardingRule extends \Google\Service\VMwareEngine\ForwardingRule
     {
     }
 }

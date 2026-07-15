@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmFrontendsEventbusProtoIntParameterArray extends \Google\Collection
-{
-    protected $collection_key = 'intValues';
-    /**
-     * @var string[]
-     */
-    public $intValues;
-    /**
-     * @param string[] $intValues
-     */
-    public function setIntValues($intValues)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmFrontendsEventbusProtoIntParameterArray extends \Google\Collection
     {
+        protected $collection_key = 'intValues';
+        /**
+         * @var string[]
+         */
+        public $intValues;
+        /**
+         * @param string[] $intValues
+         */
+        public function setIntValues($intValues)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIntValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmFrontendsEventbusProtoIntParameterArray registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntValues()
+    class Google_Service_Integrations_EnterpriseCrmFrontendsEventbusProtoIntParameterArray extends \Google\Service\Integrations\EnterpriseCrmFrontendsEventbusProtoIntParameterArray
     {
     }
 }

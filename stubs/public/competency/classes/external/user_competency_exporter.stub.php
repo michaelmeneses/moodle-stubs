@@ -29,6 +29,13 @@
  */
 namespace core_competency\external;
 
+use context_system;
+use core_user;
+use renderer_base;
+use stdClass;
+use core_competency\url;
+use core_competency\user_competency;
+use core_user\external\user_summary_exporter;
 /**
  * Class for exporting user competency data.
  *

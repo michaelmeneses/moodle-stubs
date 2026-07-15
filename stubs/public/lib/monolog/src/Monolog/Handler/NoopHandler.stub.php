@@ -16,6 +16,7 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\LogRecord;
 /**
  * No-op
  *

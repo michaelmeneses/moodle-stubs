@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class AppDevExperienceStatus extends \Google\Model
-{
-    /**
-     * Not set.
-     */
-    public const CODE_CODE_UNSPECIFIED = 'CODE_UNSPECIFIED';
-    /**
-     * AppDevExperienceFeature's specified subcomponent is ready.
-     */
-    public const CODE_OK = 'OK';
-    /**
-     * AppDevExperienceFeature's specified subcomponent ready state is false. This
-     * means AppDevExperienceFeature has encountered an issue that blocks all, or
-     * a portion, of its normal operation. See the `description` for more details.
-     */
-    public const CODE_FAILED = 'FAILED';
-    /**
-     * AppDevExperienceFeature's specified subcomponent has a pending or unknown
-     * state.
-     */
-    public const CODE_UNKNOWN = 'UNKNOWN';
-    /**
-     * Code specifies AppDevExperienceFeature's subcomponent ready state.
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * Description is populated if Code is Failed, explaining why it has failed.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Code specifies AppDevExperienceFeature's subcomponent ready state.
-     *
-     * Accepted values: CODE_UNSPECIFIED, OK, FAILED, UNKNOWN
-     *
-     * @param self::CODE_* $code
-     */
-    public function setCode($code)
+namespace Google\Service\GKEHub {
+    class AppDevExperienceStatus extends \Google\Model
     {
+        /**
+         * Not set.
+         */
+        public const CODE_CODE_UNSPECIFIED = 'CODE_UNSPECIFIED';
+        /**
+         * AppDevExperienceFeature's specified subcomponent is ready.
+         */
+        public const CODE_OK = 'OK';
+        /**
+         * AppDevExperienceFeature's specified subcomponent ready state is false. This
+         * means AppDevExperienceFeature has encountered an issue that blocks all, or
+         * a portion, of its normal operation. See the `description` for more details.
+         */
+        public const CODE_FAILED = 'FAILED';
+        /**
+         * AppDevExperienceFeature's specified subcomponent has a pending or unknown
+         * state.
+         */
+        public const CODE_UNKNOWN = 'UNKNOWN';
+        /**
+         * Code specifies AppDevExperienceFeature's subcomponent ready state.
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * Description is populated if Code is Failed, explaining why it has failed.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Code specifies AppDevExperienceFeature's subcomponent ready state.
+         *
+         * Accepted values: CODE_UNSPECIFIED, OK, FAILED, UNKNOWN
+         *
+         * @param self::CODE_* $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return self::CODE_*
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * Description is populated if Code is Failed, explaining why it has failed.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CODE_*
+     * Runtime class alias of \Google\Service\GKEHub\AppDevExperienceStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * Description is populated if Code is Failed, explaining why it has failed.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
+    class Google_Service_GKEHub_AppDevExperienceStatus extends \Google\Service\GKEHub\AppDevExperienceStatus
     {
     }
 }

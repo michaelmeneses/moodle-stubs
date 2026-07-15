@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ActivityContentDetailsPlaylistItem extends \Google\Model
-{
-    /**
-     * The value that YouTube uses to uniquely identify the playlist.
-     *
-     * @var string
-     */
-    public $playlistId;
-    /**
-     * ID of the item within the playlist.
-     *
-     * @var string
-     */
-    public $playlistItemId;
-    protected $resourceIdType = ResourceId::class;
-    protected $resourceIdDataType = '';
-    /**
-     * The value that YouTube uses to uniquely identify the playlist.
-     *
-     * @param string $playlistId
-     */
-    public function setPlaylistId($playlistId)
+namespace Google\Service\YouTube {
+    class ActivityContentDetailsPlaylistItem extends \Google\Model
     {
+        /**
+         * The value that YouTube uses to uniquely identify the playlist.
+         *
+         * @var string
+         */
+        public $playlistId;
+        /**
+         * ID of the item within the playlist.
+         *
+         * @var string
+         */
+        public $playlistItemId;
+        protected $resourceIdType = ResourceId::class;
+        protected $resourceIdDataType = '';
+        /**
+         * The value that YouTube uses to uniquely identify the playlist.
+         *
+         * @param string $playlistId
+         */
+        public function setPlaylistId($playlistId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlaylistId()
+        {
+        }
+        /**
+         * ID of the item within the playlist.
+         *
+         * @param string $playlistItemId
+         */
+        public function setPlaylistItemId($playlistItemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlaylistItemId()
+        {
+        }
+        /**
+         * The resourceId object contains information about the resource that was
+         * added to the playlist.
+         *
+         * @param ResourceId $resourceId
+         */
+        public function setResourceId(ResourceId $resourceId)
+        {
+        }
+        /**
+         * @return ResourceId
+         */
+        public function getResourceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\ActivityContentDetailsPlaylistItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlaylistId()
-    {
-    }
-    /**
-     * ID of the item within the playlist.
-     *
-     * @param string $playlistItemId
-     */
-    public function setPlaylistItemId($playlistItemId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlaylistItemId()
-    {
-    }
-    /**
-     * The resourceId object contains information about the resource that was
-     * added to the playlist.
-     *
-     * @param ResourceId $resourceId
-     */
-    public function setResourceId(ResourceId $resourceId)
-    {
-    }
-    /**
-     * @return ResourceId
-     */
-    public function getResourceId()
+    class Google_Service_YouTube_ActivityContentDetailsPlaylistItem extends \Google\Service\YouTube\ActivityContentDetailsPlaylistItem
     {
     }
 }

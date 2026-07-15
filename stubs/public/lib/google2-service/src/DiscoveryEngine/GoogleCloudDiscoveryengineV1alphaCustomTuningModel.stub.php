@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaCustomTuningModel extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $errorMessage;
-    public $metrics;
-    /**
-     * @var string
-     */
-    public $modelState;
-    /**
-     * @var string
-     */
-    public $modelVersion;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $trainingStartTime;
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaCustomTuningModel extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string
+         */
+        public $errorMessage;
+        public $metrics;
+        /**
+         * @var string
+         */
+        public $modelState;
+        /**
+         * @var string
+         */
+        public $modelVersion;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $trainingStartTime;
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
+        public function setMetrics($metrics)
+        {
+        }
+        public function getMetrics()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setModelState($modelState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setModelVersion($modelVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelVersion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTrainingStartTime($trainingStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrainingStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaCustomTuningModel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setErrorMessage($errorMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorMessage()
-    {
-    }
-    public function setMetrics($metrics)
-    {
-    }
-    public function getMetrics()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setModelState($modelState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModelState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setModelVersion($modelVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModelVersion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTrainingStartTime($trainingStartTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrainingStartTime()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaCustomTuningModel extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaCustomTuningModel
     {
     }
 }

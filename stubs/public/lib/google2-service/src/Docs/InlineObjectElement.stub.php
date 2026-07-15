@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class InlineObjectElement extends \Google\Collection
-{
-    protected $collection_key = 'suggestedInsertionIds';
-    /**
-     * The ID of the InlineObject this element contains.
-     *
-     * @var string
-     */
-    public $inlineObjectId;
-    /**
-     * The suggested deletion IDs. If empty, then there are no suggested deletions
-     * of this content.
-     *
-     * @var string[]
-     */
-    public $suggestedDeletionIds;
-    /**
-     * The suggested insertion IDs. An InlineObjectElement may have multiple
-     * insertion IDs if it's a nested suggested change. If empty, then this is not
-     * a suggested insertion.
-     *
-     * @var string[]
-     */
-    public $suggestedInsertionIds;
-    protected $suggestedTextStyleChangesType = SuggestedTextStyle::class;
-    protected $suggestedTextStyleChangesDataType = 'map';
-    protected $textStyleType = TextStyle::class;
-    protected $textStyleDataType = '';
-    /**
-     * The ID of the InlineObject this element contains.
-     *
-     * @param string $inlineObjectId
-     */
-    public function setInlineObjectId($inlineObjectId)
+namespace Google\Service\Docs {
+    class InlineObjectElement extends \Google\Collection
     {
+        protected $collection_key = 'suggestedInsertionIds';
+        /**
+         * The ID of the InlineObject this element contains.
+         *
+         * @var string
+         */
+        public $inlineObjectId;
+        /**
+         * The suggested deletion IDs. If empty, then there are no suggested deletions
+         * of this content.
+         *
+         * @var string[]
+         */
+        public $suggestedDeletionIds;
+        /**
+         * The suggested insertion IDs. An InlineObjectElement may have multiple
+         * insertion IDs if it's a nested suggested change. If empty, then this is not
+         * a suggested insertion.
+         *
+         * @var string[]
+         */
+        public $suggestedInsertionIds;
+        protected $suggestedTextStyleChangesType = SuggestedTextStyle::class;
+        protected $suggestedTextStyleChangesDataType = 'map';
+        protected $textStyleType = TextStyle::class;
+        protected $textStyleDataType = '';
+        /**
+         * The ID of the InlineObject this element contains.
+         *
+         * @param string $inlineObjectId
+         */
+        public function setInlineObjectId($inlineObjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInlineObjectId()
+        {
+        }
+        /**
+         * The suggested deletion IDs. If empty, then there are no suggested deletions
+         * of this content.
+         *
+         * @param string[] $suggestedDeletionIds
+         */
+        public function setSuggestedDeletionIds($suggestedDeletionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSuggestedDeletionIds()
+        {
+        }
+        /**
+         * The suggested insertion IDs. An InlineObjectElement may have multiple
+         * insertion IDs if it's a nested suggested change. If empty, then this is not
+         * a suggested insertion.
+         *
+         * @param string[] $suggestedInsertionIds
+         */
+        public function setSuggestedInsertionIds($suggestedInsertionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSuggestedInsertionIds()
+        {
+        }
+        /**
+         * The suggested text style changes to this InlineObject, keyed by suggestion
+         * ID.
+         *
+         * @param SuggestedTextStyle[] $suggestedTextStyleChanges
+         */
+        public function setSuggestedTextStyleChanges($suggestedTextStyleChanges)
+        {
+        }
+        /**
+         * @return SuggestedTextStyle[]
+         */
+        public function getSuggestedTextStyleChanges()
+        {
+        }
+        /**
+         * The text style of this InlineObjectElement. Similar to text content, like
+         * text runs and footnote references, the text style of an inline object
+         * element can affect content layout as well as the styling of text inserted
+         * next to it.
+         *
+         * @param TextStyle $textStyle
+         */
+        public function setTextStyle(TextStyle $textStyle)
+        {
+        }
+        /**
+         * @return TextStyle
+         */
+        public function getTextStyle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Docs\InlineObjectElement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInlineObjectId()
-    {
-    }
-    /**
-     * The suggested deletion IDs. If empty, then there are no suggested deletions
-     * of this content.
-     *
-     * @param string[] $suggestedDeletionIds
-     */
-    public function setSuggestedDeletionIds($suggestedDeletionIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSuggestedDeletionIds()
-    {
-    }
-    /**
-     * The suggested insertion IDs. An InlineObjectElement may have multiple
-     * insertion IDs if it's a nested suggested change. If empty, then this is not
-     * a suggested insertion.
-     *
-     * @param string[] $suggestedInsertionIds
-     */
-    public function setSuggestedInsertionIds($suggestedInsertionIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSuggestedInsertionIds()
-    {
-    }
-    /**
-     * The suggested text style changes to this InlineObject, keyed by suggestion
-     * ID.
-     *
-     * @param SuggestedTextStyle[] $suggestedTextStyleChanges
-     */
-    public function setSuggestedTextStyleChanges($suggestedTextStyleChanges)
-    {
-    }
-    /**
-     * @return SuggestedTextStyle[]
-     */
-    public function getSuggestedTextStyleChanges()
-    {
-    }
-    /**
-     * The text style of this InlineObjectElement. Similar to text content, like
-     * text runs and footnote references, the text style of an inline object
-     * element can affect content layout as well as the styling of text inserted
-     * next to it.
-     *
-     * @param TextStyle $textStyle
-     */
-    public function setTextStyle(TextStyle $textStyle)
-    {
-    }
-    /**
-     * @return TextStyle
-     */
-    public function getTextStyle()
+    class Google_Service_Docs_InlineObjectElement extends \Google\Service\Docs\InlineObjectElement
     {
     }
 }

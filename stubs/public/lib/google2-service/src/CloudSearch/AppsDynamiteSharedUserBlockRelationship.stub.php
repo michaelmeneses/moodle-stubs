@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedUserBlockRelationship extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $hasBlockedRequester;
-    /**
-     * @var bool
-     */
-    public $isBlockedByRequester;
-    /**
-     * @param bool
-     */
-    public function setHasBlockedRequester($hasBlockedRequester)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedUserBlockRelationship extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $hasBlockedRequester;
+        /**
+         * @var bool
+         */
+        public $isBlockedByRequester;
+        /**
+         * @param bool
+         */
+        public function setHasBlockedRequester($hasBlockedRequester)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasBlockedRequester()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIsBlockedByRequester($isBlockedByRequester)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsBlockedByRequester()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedUserBlockRelationship registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHasBlockedRequester()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIsBlockedByRequester($isBlockedByRequester)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsBlockedByRequester()
+    class Google_Service_CloudSearch_AppsDynamiteSharedUserBlockRelationship extends \Google\Service\CloudSearch\AppsDynamiteSharedUserBlockRelationship
     {
     }
 }

@@ -21,329 +21,338 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3Experiment extends \Google\Collection
-{
-    /**
-     * State unspecified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The experiment is created but not started yet.
-     */
-    public const STATE_DRAFT = 'DRAFT';
-    /**
-     * The experiment is running.
-     */
-    public const STATE_RUNNING = 'RUNNING';
-    /**
-     * The experiment is done.
-     */
-    public const STATE_DONE = 'DONE';
-    /**
-     * The experiment with auto-rollout enabled has failed.
-     */
-    public const STATE_ROLLOUT_FAILED = 'ROLLOUT_FAILED';
-    protected $collection_key = 'variantsHistory';
-    /**
-     * Creation time of this experiment.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $definitionType = GoogleCloudDialogflowCxV3ExperimentDefinition::class;
-    protected $definitionDataType = '';
-    /**
-     * The human-readable description of the experiment.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. The human-readable name of the experiment (unique in an
-     * environment). Limit of 64 characters.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * End time of this experiment.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Maximum number of days to run the experiment/rollout. If auto-rollout is
-     * not enabled, default value and maximum will be 30 days. If auto-rollout is
-     * enabled, default value and maximum will be 6 days.
-     *
-     * @var string
-     */
-    public $experimentLength;
-    /**
-     * Last update time of this experiment.
-     *
-     * @var string
-     */
-    public $lastUpdateTime;
-    /**
-     * The name of the experiment. Format:
-     * projects//locations//agents//environments//experiments/.
-     *
-     * @var string
-     */
-    public $name;
-    protected $resultType = GoogleCloudDialogflowCxV3ExperimentResult::class;
-    protected $resultDataType = '';
-    protected $rolloutConfigType = GoogleCloudDialogflowCxV3RolloutConfig::class;
-    protected $rolloutConfigDataType = '';
-    /**
-     * The reason why rollout has failed. Should only be set when state is
-     * ROLLOUT_FAILED.
-     *
-     * @var string
-     */
-    public $rolloutFailureReason;
-    protected $rolloutStateType = GoogleCloudDialogflowCxV3RolloutState::class;
-    protected $rolloutStateDataType = '';
-    /**
-     * Start time of this experiment.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * The current state of the experiment. Transition triggered by
-     * Experiments.StartExperiment: DRAFT->RUNNING. Transition triggered by
-     * Experiments.CancelExperiment: DRAFT->DONE or RUNNING->DONE.
-     *
-     * @var string
-     */
-    public $state;
-    protected $variantsHistoryType = GoogleCloudDialogflowCxV3VariantsHistory::class;
-    protected $variantsHistoryDataType = 'array';
-    /**
-     * Creation time of this experiment.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3Experiment extends \Google\Collection
     {
+        /**
+         * State unspecified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The experiment is created but not started yet.
+         */
+        public const STATE_DRAFT = 'DRAFT';
+        /**
+         * The experiment is running.
+         */
+        public const STATE_RUNNING = 'RUNNING';
+        /**
+         * The experiment is done.
+         */
+        public const STATE_DONE = 'DONE';
+        /**
+         * The experiment with auto-rollout enabled has failed.
+         */
+        public const STATE_ROLLOUT_FAILED = 'ROLLOUT_FAILED';
+        protected $collection_key = 'variantsHistory';
+        /**
+         * Creation time of this experiment.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $definitionType = GoogleCloudDialogflowCxV3ExperimentDefinition::class;
+        protected $definitionDataType = '';
+        /**
+         * The human-readable description of the experiment.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. The human-readable name of the experiment (unique in an
+         * environment). Limit of 64 characters.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * End time of this experiment.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Maximum number of days to run the experiment/rollout. If auto-rollout is
+         * not enabled, default value and maximum will be 30 days. If auto-rollout is
+         * enabled, default value and maximum will be 6 days.
+         *
+         * @var string
+         */
+        public $experimentLength;
+        /**
+         * Last update time of this experiment.
+         *
+         * @var string
+         */
+        public $lastUpdateTime;
+        /**
+         * The name of the experiment. Format:
+         * projects//locations//agents//environments//experiments/.
+         *
+         * @var string
+         */
+        public $name;
+        protected $resultType = GoogleCloudDialogflowCxV3ExperimentResult::class;
+        protected $resultDataType = '';
+        protected $rolloutConfigType = GoogleCloudDialogflowCxV3RolloutConfig::class;
+        protected $rolloutConfigDataType = '';
+        /**
+         * The reason why rollout has failed. Should only be set when state is
+         * ROLLOUT_FAILED.
+         *
+         * @var string
+         */
+        public $rolloutFailureReason;
+        protected $rolloutStateType = GoogleCloudDialogflowCxV3RolloutState::class;
+        protected $rolloutStateDataType = '';
+        /**
+         * Start time of this experiment.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * The current state of the experiment. Transition triggered by
+         * Experiments.StartExperiment: DRAFT->RUNNING. Transition triggered by
+         * Experiments.CancelExperiment: DRAFT->DONE or RUNNING->DONE.
+         *
+         * @var string
+         */
+        public $state;
+        protected $variantsHistoryType = GoogleCloudDialogflowCxV3VariantsHistory::class;
+        protected $variantsHistoryDataType = 'array';
+        /**
+         * Creation time of this experiment.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The definition of the experiment.
+         *
+         * @param GoogleCloudDialogflowCxV3ExperimentDefinition $definition
+         */
+        public function setDefinition(GoogleCloudDialogflowCxV3ExperimentDefinition $definition)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3ExperimentDefinition
+         */
+        public function getDefinition()
+        {
+        }
+        /**
+         * The human-readable description of the experiment.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. The human-readable name of the experiment (unique in an
+         * environment). Limit of 64 characters.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * End time of this experiment.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Maximum number of days to run the experiment/rollout. If auto-rollout is
+         * not enabled, default value and maximum will be 30 days. If auto-rollout is
+         * enabled, default value and maximum will be 6 days.
+         *
+         * @param string $experimentLength
+         */
+        public function setExperimentLength($experimentLength)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExperimentLength()
+        {
+        }
+        /**
+         * Last update time of this experiment.
+         *
+         * @param string $lastUpdateTime
+         */
+        public function setLastUpdateTime($lastUpdateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdateTime()
+        {
+        }
+        /**
+         * The name of the experiment. Format:
+         * projects//locations//agents//environments//experiments/.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Inference result of the experiment.
+         *
+         * @param GoogleCloudDialogflowCxV3ExperimentResult $result
+         */
+        public function setResult(GoogleCloudDialogflowCxV3ExperimentResult $result)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3ExperimentResult
+         */
+        public function getResult()
+        {
+        }
+        /**
+         * The configuration for auto rollout. If set, there should be exactly two
+         * variants in the experiment (control variant being the default version of
+         * the flow), the traffic allocation for the non-control variant will
+         * gradually increase to 100% when conditions are met, and eventually replace
+         * the control variant to become the default version of the flow.
+         *
+         * @param GoogleCloudDialogflowCxV3RolloutConfig $rolloutConfig
+         */
+        public function setRolloutConfig(GoogleCloudDialogflowCxV3RolloutConfig $rolloutConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3RolloutConfig
+         */
+        public function getRolloutConfig()
+        {
+        }
+        /**
+         * The reason why rollout has failed. Should only be set when state is
+         * ROLLOUT_FAILED.
+         *
+         * @param string $rolloutFailureReason
+         */
+        public function setRolloutFailureReason($rolloutFailureReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRolloutFailureReason()
+        {
+        }
+        /**
+         * State of the auto rollout process.
+         *
+         * @param GoogleCloudDialogflowCxV3RolloutState $rolloutState
+         */
+        public function setRolloutState(GoogleCloudDialogflowCxV3RolloutState $rolloutState)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3RolloutState
+         */
+        public function getRolloutState()
+        {
+        }
+        /**
+         * Start time of this experiment.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * The current state of the experiment. Transition triggered by
+         * Experiments.StartExperiment: DRAFT->RUNNING. Transition triggered by
+         * Experiments.CancelExperiment: DRAFT->DONE or RUNNING->DONE.
+         *
+         * Accepted values: STATE_UNSPECIFIED, DRAFT, RUNNING, DONE, ROLLOUT_FAILED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * The history of updates to the experiment variants.
+         *
+         * @param GoogleCloudDialogflowCxV3VariantsHistory[] $variantsHistory
+         */
+        public function setVariantsHistory($variantsHistory)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3VariantsHistory[]
+         */
+        public function getVariantsHistory()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Experiment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The definition of the experiment.
-     *
-     * @param GoogleCloudDialogflowCxV3ExperimentDefinition $definition
-     */
-    public function setDefinition(GoogleCloudDialogflowCxV3ExperimentDefinition $definition)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3ExperimentDefinition
-     */
-    public function getDefinition()
-    {
-    }
-    /**
-     * The human-readable description of the experiment.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. The human-readable name of the experiment (unique in an
-     * environment). Limit of 64 characters.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * End time of this experiment.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Maximum number of days to run the experiment/rollout. If auto-rollout is
-     * not enabled, default value and maximum will be 30 days. If auto-rollout is
-     * enabled, default value and maximum will be 6 days.
-     *
-     * @param string $experimentLength
-     */
-    public function setExperimentLength($experimentLength)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExperimentLength()
-    {
-    }
-    /**
-     * Last update time of this experiment.
-     *
-     * @param string $lastUpdateTime
-     */
-    public function setLastUpdateTime($lastUpdateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastUpdateTime()
-    {
-    }
-    /**
-     * The name of the experiment. Format:
-     * projects//locations//agents//environments//experiments/.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Inference result of the experiment.
-     *
-     * @param GoogleCloudDialogflowCxV3ExperimentResult $result
-     */
-    public function setResult(GoogleCloudDialogflowCxV3ExperimentResult $result)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3ExperimentResult
-     */
-    public function getResult()
-    {
-    }
-    /**
-     * The configuration for auto rollout. If set, there should be exactly two
-     * variants in the experiment (control variant being the default version of
-     * the flow), the traffic allocation for the non-control variant will
-     * gradually increase to 100% when conditions are met, and eventually replace
-     * the control variant to become the default version of the flow.
-     *
-     * @param GoogleCloudDialogflowCxV3RolloutConfig $rolloutConfig
-     */
-    public function setRolloutConfig(GoogleCloudDialogflowCxV3RolloutConfig $rolloutConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3RolloutConfig
-     */
-    public function getRolloutConfig()
-    {
-    }
-    /**
-     * The reason why rollout has failed. Should only be set when state is
-     * ROLLOUT_FAILED.
-     *
-     * @param string $rolloutFailureReason
-     */
-    public function setRolloutFailureReason($rolloutFailureReason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRolloutFailureReason()
-    {
-    }
-    /**
-     * State of the auto rollout process.
-     *
-     * @param GoogleCloudDialogflowCxV3RolloutState $rolloutState
-     */
-    public function setRolloutState(GoogleCloudDialogflowCxV3RolloutState $rolloutState)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3RolloutState
-     */
-    public function getRolloutState()
-    {
-    }
-    /**
-     * Start time of this experiment.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * The current state of the experiment. Transition triggered by
-     * Experiments.StartExperiment: DRAFT->RUNNING. Transition triggered by
-     * Experiments.CancelExperiment: DRAFT->DONE or RUNNING->DONE.
-     *
-     * Accepted values: STATE_UNSPECIFIED, DRAFT, RUNNING, DONE, ROLLOUT_FAILED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * The history of updates to the experiment variants.
-     *
-     * @param GoogleCloudDialogflowCxV3VariantsHistory[] $variantsHistory
-     */
-    public function setVariantsHistory($variantsHistory)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3VariantsHistory[]
-     */
-    public function getVariantsHistory()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3Experiment extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Experiment
     {
     }
 }

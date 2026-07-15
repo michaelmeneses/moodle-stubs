@@ -21,28 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataPortability\Resource;
-
-/**
- * The "portabilityArchive" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dataportabilityService = new Google\Service\DataPortability(...);
- *   $portabilityArchive = $dataportabilityService->portabilityArchive;
- *  </code>
- */
-class PortabilityArchive extends \Google\Service\Resource
-{
+namespace Google\Service\DataPortability\Resource {
+    use Google\Service\DataPortability\InitiatePortabilityArchiveRequest;
+    use Google\Service\DataPortability\InitiatePortabilityArchiveResponse;
     /**
-     * Initiates a new Archive job for the Portability API.
-     * (portabilityArchive.initiate)
-     *
-     * @param InitiatePortabilityArchiveRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return InitiatePortabilityArchiveResponse
-     * @throws \Google\Service\Exception
+     * The "portabilityArchive" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dataportabilityService = new Google\Service\DataPortability(...);
+     *   $portabilityArchive = $dataportabilityService->portabilityArchive;
+     *  </code>
      */
-    public function initiate(InitiatePortabilityArchiveRequest $postBody, $optParams = [])
+    class PortabilityArchive extends \Google\Service\Resource
+    {
+        /**
+         * Initiates a new Archive job for the Portability API.
+         * (portabilityArchive.initiate)
+         *
+         * @param InitiatePortabilityArchiveRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return InitiatePortabilityArchiveResponse
+         * @throws \Google\Service\Exception
+         */
+        public function initiate(InitiatePortabilityArchiveRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataPortability\Resource\PortabilityArchive registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataPortability_Resource_PortabilityArchive extends \Google\Service\DataPortability\Resource\PortabilityArchive
     {
     }
 }

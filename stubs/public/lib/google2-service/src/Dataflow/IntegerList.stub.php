@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class IntegerList extends \Google\Collection
-{
-    protected $collection_key = 'elements';
-    protected $elementsType = SplitInt64::class;
-    protected $elementsDataType = 'array';
-    /**
-     * Elements of the list.
-     *
-     * @param SplitInt64[] $elements
-     */
-    public function setElements($elements)
+namespace Google\Service\Dataflow {
+    class IntegerList extends \Google\Collection
     {
+        protected $collection_key = 'elements';
+        protected $elementsType = SplitInt64::class;
+        protected $elementsDataType = 'array';
+        /**
+         * Elements of the list.
+         *
+         * @param SplitInt64[] $elements
+         */
+        public function setElements($elements)
+        {
+        }
+        /**
+         * @return SplitInt64[]
+         */
+        public function getElements()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SplitInt64[]
+     * Runtime class alias of \Google\Service\Dataflow\IntegerList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getElements()
+    class Google_Service_Dataflow_IntegerList extends \Google\Service\Dataflow\IntegerList
     {
     }
 }

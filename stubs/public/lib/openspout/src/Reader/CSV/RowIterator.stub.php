@@ -8,6 +8,11 @@
  */
 namespace OpenSpout\Reader\CSV;
 
+use OpenSpout\Common\Entity\Cell;
+use OpenSpout\Common\Entity\Row;
+use OpenSpout\Common\Exception\EncodingConversionException;
+use OpenSpout\Common\Helper\EncodingHelper;
+use OpenSpout\Reader\RowIteratorInterface;
 /**
  * Iterate over CSV rows.
  */

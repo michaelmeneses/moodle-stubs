@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class ListTriggersResponse extends \Google\Collection
-{
-    protected $collection_key = 'trigger';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $triggerType = Trigger::class;
-    protected $triggerDataType = 'array';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\TagManager {
+    class ListTriggersResponse extends \Google\Collection
     {
+        protected $collection_key = 'trigger';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $triggerType = Trigger::class;
+        protected $triggerDataType = 'array';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * All GTM Triggers of a GTM Container.
+         *
+         * @param Trigger[] $trigger
+         */
+        public function setTrigger($trigger)
+        {
+        }
+        /**
+         * @return Trigger[]
+         */
+        public function getTrigger()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TagManager\ListTriggersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * All GTM Triggers of a GTM Container.
-     *
-     * @param Trigger[] $trigger
-     */
-    public function setTrigger($trigger)
-    {
-    }
-    /**
-     * @return Trigger[]
-     */
-    public function getTrigger()
+    class Google_Service_TagManager_ListTriggersResponse extends \Google\Service\TagManager\ListTriggersResponse
     {
     }
 }

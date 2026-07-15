@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class MobileCarriersListResponse extends \Google\Collection
-{
-    protected $collection_key = 'mobileCarriers';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#mobileCarriersListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $mobileCarriersType = MobileCarrier::class;
-    protected $mobileCarriersDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#mobileCarriersListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class MobileCarriersListResponse extends \Google\Collection
     {
+        protected $collection_key = 'mobileCarriers';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#mobileCarriersListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $mobileCarriersType = MobileCarrier::class;
+        protected $mobileCarriersDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#mobileCarriersListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Mobile carrier collection.
+         *
+         * @param MobileCarrier[] $mobileCarriers
+         */
+        public function setMobileCarriers($mobileCarriers)
+        {
+        }
+        /**
+         * @return MobileCarrier[]
+         */
+        public function getMobileCarriers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\MobileCarriersListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Mobile carrier collection.
-     *
-     * @param MobileCarrier[] $mobileCarriers
-     */
-    public function setMobileCarriers($mobileCarriers)
-    {
-    }
-    /**
-     * @return MobileCarrier[]
-     */
-    public function getMobileCarriers()
+    class Google_Service_Dfareporting_MobileCarriersListResponse extends \Google\Service\Dfareporting\MobileCarriersListResponse
     {
     }
 }

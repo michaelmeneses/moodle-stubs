@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1FetchAclRequest extends \Google\Model
-{
-    /**
-     * For Get Project ACL only. Authorization check for end user will be ignored
-     * when project_owner=true.
-     *
-     * @var bool
-     */
-    public $projectOwner;
-    protected $requestMetadataType = GoogleCloudContentwarehouseV1RequestMetadata::class;
-    protected $requestMetadataDataType = '';
-    /**
-     * For Get Project ACL only. Authorization check for end user will be ignored
-     * when project_owner=true.
-     *
-     * @param bool $projectOwner
-     */
-    public function setProjectOwner($projectOwner)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1FetchAclRequest extends \Google\Model
     {
+        /**
+         * For Get Project ACL only. Authorization check for end user will be ignored
+         * when project_owner=true.
+         *
+         * @var bool
+         */
+        public $projectOwner;
+        protected $requestMetadataType = GoogleCloudContentwarehouseV1RequestMetadata::class;
+        protected $requestMetadataDataType = '';
+        /**
+         * For Get Project ACL only. Authorization check for end user will be ignored
+         * when project_owner=true.
+         *
+         * @param bool $projectOwner
+         */
+        public function setProjectOwner($projectOwner)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getProjectOwner()
+        {
+        }
+        /**
+         * The meta information collected about the end user, used to enforce access
+         * control for the service.
+         *
+         * @param GoogleCloudContentwarehouseV1RequestMetadata $requestMetadata
+         */
+        public function setRequestMetadata(GoogleCloudContentwarehouseV1RequestMetadata $requestMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1RequestMetadata
+         */
+        public function getRequestMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1FetchAclRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectOwner()
-    {
-    }
-    /**
-     * The meta information collected about the end user, used to enforce access
-     * control for the service.
-     *
-     * @param GoogleCloudContentwarehouseV1RequestMetadata $requestMetadata
-     */
-    public function setRequestMetadata(GoogleCloudContentwarehouseV1RequestMetadata $requestMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1RequestMetadata
-     */
-    public function getRequestMetadata()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1FetchAclRequest extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1FetchAclRequest
     {
     }
 }

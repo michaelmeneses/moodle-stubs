@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class StageSchedule extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $actualEndTime;
-    /**
-     * @var string
-     */
-    public $actualStartTime;
-    /**
-     * @var string
-     */
-    public $estimatedEndTime;
-    /**
-     * @var string
-     */
-    public $estimatedStartTime;
-    /**
-     * @param string
-     */
-    public function setActualEndTime($actualEndTime)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class StageSchedule extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $actualEndTime;
+        /**
+         * @var string
+         */
+        public $actualStartTime;
+        /**
+         * @var string
+         */
+        public $estimatedEndTime;
+        /**
+         * @var string
+         */
+        public $estimatedStartTime;
+        /**
+         * @param string
+         */
+        public function setActualEndTime($actualEndTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActualEndTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setActualStartTime($actualStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActualStartTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEstimatedEndTime($estimatedEndTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEstimatedEndTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEstimatedStartTime($estimatedStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEstimatedStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\StageSchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActualEndTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setActualStartTime($actualStartTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getActualStartTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEstimatedEndTime($estimatedEndTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEstimatedEndTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEstimatedStartTime($estimatedStartTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEstimatedStartTime()
+    class Google_Service_CloudAlloyDBAdmin_StageSchedule extends \Google\Service\CloudAlloyDBAdmin\StageSchedule
     {
     }
 }

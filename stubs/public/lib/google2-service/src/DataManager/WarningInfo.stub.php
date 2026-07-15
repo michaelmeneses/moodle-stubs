@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class WarningInfo extends \Google\Collection
-{
-    protected $collection_key = 'warningCounts';
-    protected $warningCountsType = WarningCount::class;
-    protected $warningCountsDataType = 'array';
-    /**
-     * A list of warnings and counts per warning reason.
-     *
-     * @param WarningCount[] $warningCounts
-     */
-    public function setWarningCounts($warningCounts)
+namespace Google\Service\DataManager {
+    class WarningInfo extends \Google\Collection
     {
+        protected $collection_key = 'warningCounts';
+        protected $warningCountsType = WarningCount::class;
+        protected $warningCountsDataType = 'array';
+        /**
+         * A list of warnings and counts per warning reason.
+         *
+         * @param WarningCount[] $warningCounts
+         */
+        public function setWarningCounts($warningCounts)
+        {
+        }
+        /**
+         * @return WarningCount[]
+         */
+        public function getWarningCounts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return WarningCount[]
+     * Runtime class alias of \Google\Service\DataManager\WarningInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWarningCounts()
+    class Google_Service_DataManager_WarningInfo extends \Google\Service\DataManager\WarningInfo
     {
     }
 }

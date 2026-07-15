@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class ListPackagesResponse extends \Google\Collection
-{
-    protected $collection_key = 'packages';
-    /**
-     * The token to retrieve the next page of packages, or empty if there are no
-     * more packages to return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $packagesType = Package::class;
-    protected $packagesDataType = 'array';
-    /**
-     * The token to retrieve the next page of packages, or empty if there are no
-     * more packages to return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ArtifactRegistry {
+    class ListPackagesResponse extends \Google\Collection
     {
+        protected $collection_key = 'packages';
+        /**
+         * The token to retrieve the next page of packages, or empty if there are no
+         * more packages to return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $packagesType = Package::class;
+        protected $packagesDataType = 'array';
+        /**
+         * The token to retrieve the next page of packages, or empty if there are no
+         * more packages to return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The packages returned.
+         *
+         * @param Package[] $packages
+         */
+        public function setPackages($packages)
+        {
+        }
+        /**
+         * @return Package[]
+         */
+        public function getPackages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ArtifactRegistry\ListPackagesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The packages returned.
-     *
-     * @param Package[] $packages
-     */
-    public function setPackages($packages)
-    {
-    }
-    /**
-     * @return Package[]
-     */
-    public function getPackages()
+    class Google_Service_ArtifactRegistry_ListPackagesResponse extends \Google\Service\ArtifactRegistry\ListPackagesResponse
     {
     }
 }

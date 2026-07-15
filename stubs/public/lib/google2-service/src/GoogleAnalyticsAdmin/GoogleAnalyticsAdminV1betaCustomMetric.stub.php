@@ -21,228 +21,237 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaCustomMetric extends \Google\Collection
-{
-    /**
-     * MeasurementUnit unspecified or missing.
-     */
-    public const MEASUREMENT_UNIT_MEASUREMENT_UNIT_UNSPECIFIED = 'MEASUREMENT_UNIT_UNSPECIFIED';
-    /**
-     * This metric uses default units.
-     */
-    public const MEASUREMENT_UNIT_STANDARD = 'STANDARD';
-    /**
-     * This metric measures a currency.
-     */
-    public const MEASUREMENT_UNIT_CURRENCY = 'CURRENCY';
-    /**
-     * This metric measures feet.
-     */
-    public const MEASUREMENT_UNIT_FEET = 'FEET';
-    /**
-     * This metric measures meters.
-     */
-    public const MEASUREMENT_UNIT_METERS = 'METERS';
-    /**
-     * This metric measures kilometers.
-     */
-    public const MEASUREMENT_UNIT_KILOMETERS = 'KILOMETERS';
-    /**
-     * This metric measures miles.
-     */
-    public const MEASUREMENT_UNIT_MILES = 'MILES';
-    /**
-     * This metric measures milliseconds.
-     */
-    public const MEASUREMENT_UNIT_MILLISECONDS = 'MILLISECONDS';
-    /**
-     * This metric measures seconds.
-     */
-    public const MEASUREMENT_UNIT_SECONDS = 'SECONDS';
-    /**
-     * This metric measures minutes.
-     */
-    public const MEASUREMENT_UNIT_MINUTES = 'MINUTES';
-    /**
-     * This metric measures hours.
-     */
-    public const MEASUREMENT_UNIT_HOURS = 'HOURS';
-    /**
-     * Scope unknown or not specified.
-     */
-    public const SCOPE_METRIC_SCOPE_UNSPECIFIED = 'METRIC_SCOPE_UNSPECIFIED';
-    /**
-     * Metric scoped to an event.
-     */
-    public const SCOPE_EVENT = 'EVENT';
-    protected $collection_key = 'restrictedMetricType';
-    /**
-     * Optional. Description for this custom dimension. Max length of 150
-     * characters.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. Display name for this custom metric as shown in the Analytics UI.
-     * Max length of 82 characters, alphanumeric plus space and underscore
-     * starting with a letter. Legacy system-generated display names may contain
-     * square brackets, but updates to this field will never permit square
-     * brackets.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Required. The type for the custom metric's value.
-     *
-     * @var string
-     */
-    public $measurementUnit;
-    /**
-     * Output only. Resource name for this CustomMetric resource. Format:
-     * properties/{property}/customMetrics/{customMetric}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Immutable. Tagging name for this custom metric. If this is an
-     * event-scoped metric, then this is the event parameter name. May only
-     * contain alphanumeric and underscore charactes, starting with a letter. Max
-     * length of 40 characters for event-scoped metrics.
-     *
-     * @var string
-     */
-    public $parameterName;
-    /**
-     * Optional. Types of restricted data that this metric may contain. Required
-     * for metrics with CURRENCY measurement unit. Must be empty for metrics with
-     * a non-CURRENCY measurement unit.
-     *
-     * @var string[]
-     */
-    public $restrictedMetricType;
-    /**
-     * Required. Immutable. The scope of this custom metric.
-     *
-     * @var string
-     */
-    public $scope;
-    /**
-     * Optional. Description for this custom dimension. Max length of 150
-     * characters.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaCustomMetric extends \Google\Collection
     {
+        /**
+         * MeasurementUnit unspecified or missing.
+         */
+        public const MEASUREMENT_UNIT_MEASUREMENT_UNIT_UNSPECIFIED = 'MEASUREMENT_UNIT_UNSPECIFIED';
+        /**
+         * This metric uses default units.
+         */
+        public const MEASUREMENT_UNIT_STANDARD = 'STANDARD';
+        /**
+         * This metric measures a currency.
+         */
+        public const MEASUREMENT_UNIT_CURRENCY = 'CURRENCY';
+        /**
+         * This metric measures feet.
+         */
+        public const MEASUREMENT_UNIT_FEET = 'FEET';
+        /**
+         * This metric measures meters.
+         */
+        public const MEASUREMENT_UNIT_METERS = 'METERS';
+        /**
+         * This metric measures kilometers.
+         */
+        public const MEASUREMENT_UNIT_KILOMETERS = 'KILOMETERS';
+        /**
+         * This metric measures miles.
+         */
+        public const MEASUREMENT_UNIT_MILES = 'MILES';
+        /**
+         * This metric measures milliseconds.
+         */
+        public const MEASUREMENT_UNIT_MILLISECONDS = 'MILLISECONDS';
+        /**
+         * This metric measures seconds.
+         */
+        public const MEASUREMENT_UNIT_SECONDS = 'SECONDS';
+        /**
+         * This metric measures minutes.
+         */
+        public const MEASUREMENT_UNIT_MINUTES = 'MINUTES';
+        /**
+         * This metric measures hours.
+         */
+        public const MEASUREMENT_UNIT_HOURS = 'HOURS';
+        /**
+         * Scope unknown or not specified.
+         */
+        public const SCOPE_METRIC_SCOPE_UNSPECIFIED = 'METRIC_SCOPE_UNSPECIFIED';
+        /**
+         * Metric scoped to an event.
+         */
+        public const SCOPE_EVENT = 'EVENT';
+        protected $collection_key = 'restrictedMetricType';
+        /**
+         * Optional. Description for this custom dimension. Max length of 150
+         * characters.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. Display name for this custom metric as shown in the Analytics UI.
+         * Max length of 82 characters, alphanumeric plus space and underscore
+         * starting with a letter. Legacy system-generated display names may contain
+         * square brackets, but updates to this field will never permit square
+         * brackets.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Required. The type for the custom metric's value.
+         *
+         * @var string
+         */
+        public $measurementUnit;
+        /**
+         * Output only. Resource name for this CustomMetric resource. Format:
+         * properties/{property}/customMetrics/{customMetric}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Immutable. Tagging name for this custom metric. If this is an
+         * event-scoped metric, then this is the event parameter name. May only
+         * contain alphanumeric and underscore charactes, starting with a letter. Max
+         * length of 40 characters for event-scoped metrics.
+         *
+         * @var string
+         */
+        public $parameterName;
+        /**
+         * Optional. Types of restricted data that this metric may contain. Required
+         * for metrics with CURRENCY measurement unit. Must be empty for metrics with
+         * a non-CURRENCY measurement unit.
+         *
+         * @var string[]
+         */
+        public $restrictedMetricType;
+        /**
+         * Required. Immutable. The scope of this custom metric.
+         *
+         * @var string
+         */
+        public $scope;
+        /**
+         * Optional. Description for this custom dimension. Max length of 150
+         * characters.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. Display name for this custom metric as shown in the Analytics UI.
+         * Max length of 82 characters, alphanumeric plus space and underscore
+         * starting with a letter. Legacy system-generated display names may contain
+         * square brackets, but updates to this field will never permit square
+         * brackets.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Required. The type for the custom metric's value.
+         *
+         * Accepted values: MEASUREMENT_UNIT_UNSPECIFIED, STANDARD, CURRENCY, FEET,
+         * METERS, KILOMETERS, MILES, MILLISECONDS, SECONDS, MINUTES, HOURS
+         *
+         * @param self::MEASUREMENT_UNIT_* $measurementUnit
+         */
+        public function setMeasurementUnit($measurementUnit)
+        {
+        }
+        /**
+         * @return self::MEASUREMENT_UNIT_*
+         */
+        public function getMeasurementUnit()
+        {
+        }
+        /**
+         * Output only. Resource name for this CustomMetric resource. Format:
+         * properties/{property}/customMetrics/{customMetric}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Immutable. Tagging name for this custom metric. If this is an
+         * event-scoped metric, then this is the event parameter name. May only
+         * contain alphanumeric and underscore charactes, starting with a letter. Max
+         * length of 40 characters for event-scoped metrics.
+         *
+         * @param string $parameterName
+         */
+        public function setParameterName($parameterName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParameterName()
+        {
+        }
+        /**
+         * Optional. Types of restricted data that this metric may contain. Required
+         * for metrics with CURRENCY measurement unit. Must be empty for metrics with
+         * a non-CURRENCY measurement unit.
+         *
+         * @param string[] $restrictedMetricType
+         */
+        public function setRestrictedMetricType($restrictedMetricType)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRestrictedMetricType()
+        {
+        }
+        /**
+         * Required. Immutable. The scope of this custom metric.
+         *
+         * Accepted values: METRIC_SCOPE_UNSPECIFIED, EVENT
+         *
+         * @param self::SCOPE_* $scope
+         */
+        public function setScope($scope)
+        {
+        }
+        /**
+         * @return self::SCOPE_*
+         */
+        public function getScope()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaCustomMetric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. Display name for this custom metric as shown in the Analytics UI.
-     * Max length of 82 characters, alphanumeric plus space and underscore
-     * starting with a letter. Legacy system-generated display names may contain
-     * square brackets, but updates to this field will never permit square
-     * brackets.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Required. The type for the custom metric's value.
-     *
-     * Accepted values: MEASUREMENT_UNIT_UNSPECIFIED, STANDARD, CURRENCY, FEET,
-     * METERS, KILOMETERS, MILES, MILLISECONDS, SECONDS, MINUTES, HOURS
-     *
-     * @param self::MEASUREMENT_UNIT_* $measurementUnit
-     */
-    public function setMeasurementUnit($measurementUnit)
-    {
-    }
-    /**
-     * @return self::MEASUREMENT_UNIT_*
-     */
-    public function getMeasurementUnit()
-    {
-    }
-    /**
-     * Output only. Resource name for this CustomMetric resource. Format:
-     * properties/{property}/customMetrics/{customMetric}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Immutable. Tagging name for this custom metric. If this is an
-     * event-scoped metric, then this is the event parameter name. May only
-     * contain alphanumeric and underscore charactes, starting with a letter. Max
-     * length of 40 characters for event-scoped metrics.
-     *
-     * @param string $parameterName
-     */
-    public function setParameterName($parameterName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParameterName()
-    {
-    }
-    /**
-     * Optional. Types of restricted data that this metric may contain. Required
-     * for metrics with CURRENCY measurement unit. Must be empty for metrics with
-     * a non-CURRENCY measurement unit.
-     *
-     * @param string[] $restrictedMetricType
-     */
-    public function setRestrictedMetricType($restrictedMetricType)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRestrictedMetricType()
-    {
-    }
-    /**
-     * Required. Immutable. The scope of this custom metric.
-     *
-     * Accepted values: METRIC_SCOPE_UNSPECIFIED, EVENT
-     *
-     * @param self::SCOPE_* $scope
-     */
-    public function setScope($scope)
-    {
-    }
-    /**
-     * @return self::SCOPE_*
-     */
-    public function getScope()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaCustomMetric extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaCustomMetric
     {
     }
 }

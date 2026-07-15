@@ -21,35 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Webmasters\Resource;
-
-/**
- * The "searchanalytics" collection of methods.
- * Typical usage is:
- *  <code>
- *   $webmastersService = new Google\Service\Webmasters(...);
- *   $searchanalytics = $webmastersService->searchanalytics;
- *  </code>
- */
-class Searchanalytics extends \Google\Service\Resource
-{
+namespace Google\Service\Webmasters\Resource {
+    use Google\Service\Webmasters\SearchAnalyticsQueryRequest;
+    use Google\Service\Webmasters\SearchAnalyticsQueryResponse;
     /**
-     * Query your data with filters and parameters that you define. Returns zero or
-     * more rows grouped by the row keys that you define. You must define a date
-     * range of one or more days.
-     *
-     * When date is one of the group by values, any days without data are omitted
-     * from the result list. If you need to know which days have data, issue a broad
-     * date range query grouped by date for any metric, and see which day rows are
-     * returned. (searchanalytics.query)
-     *
-     * @param string $siteUrl The site's URL, including protocol. For example:
-     * http://www.example.com/
-     * @param SearchAnalyticsQueryRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SearchAnalyticsQueryResponse
+     * The "searchanalytics" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $webmastersService = new Google\Service\Webmasters(...);
+     *   $searchanalytics = $webmastersService->searchanalytics;
+     *  </code>
      */
-    public function query($siteUrl, SearchAnalyticsQueryRequest $postBody, $optParams = [])
+    class Searchanalytics extends \Google\Service\Resource
+    {
+        /**
+         * Query your data with filters and parameters that you define. Returns zero or
+         * more rows grouped by the row keys that you define. You must define a date
+         * range of one or more days.
+         *
+         * When date is one of the group by values, any days without data are omitted
+         * from the result list. If you need to know which days have data, issue a broad
+         * date range query grouped by date for any metric, and see which day rows are
+         * returned. (searchanalytics.query)
+         *
+         * @param string $siteUrl The site's URL, including protocol. For example:
+         * http://www.example.com/
+         * @param SearchAnalyticsQueryRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SearchAnalyticsQueryResponse
+         */
+        public function query($siteUrl, SearchAnalyticsQueryRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Webmasters\Resource\Searchanalytics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Webmasters_Resource_Searchanalytics extends \Google\Service\Webmasters\Resource\Searchanalytics
     {
     }
 }

@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class HistogramSeries extends \Google\Model
-{
-    protected $barColorType = Color::class;
-    protected $barColorDataType = '';
-    protected $barColorStyleType = ColorStyle::class;
-    protected $barColorStyleDataType = '';
-    protected $dataType = ChartData::class;
-    protected $dataDataType = '';
-    /**
-     * The color of the column representing this series in each bucket. This field
-     * is optional. Deprecated: Use bar_color_style.
-     *
-     * @deprecated
-     * @param Color $barColor
-     */
-    public function setBarColor(Color $barColor)
+namespace Google\Service\Sheets {
+    class HistogramSeries extends \Google\Model
     {
+        protected $barColorType = Color::class;
+        protected $barColorDataType = '';
+        protected $barColorStyleType = ColorStyle::class;
+        protected $barColorStyleDataType = '';
+        protected $dataType = ChartData::class;
+        protected $dataDataType = '';
+        /**
+         * The color of the column representing this series in each bucket. This field
+         * is optional. Deprecated: Use bar_color_style.
+         *
+         * @deprecated
+         * @param Color $barColor
+         */
+        public function setBarColor(Color $barColor)
+        {
+        }
+        /**
+         * @deprecated
+         * @return Color
+         */
+        public function getBarColor()
+        {
+        }
+        /**
+         * The color of the column representing this series in each bucket. This field
+         * is optional. If bar_color is also set, this field takes precedence.
+         *
+         * @param ColorStyle $barColorStyle
+         */
+        public function setBarColorStyle(ColorStyle $barColorStyle)
+        {
+        }
+        /**
+         * @return ColorStyle
+         */
+        public function getBarColorStyle()
+        {
+        }
+        /**
+         * The data for this histogram series.
+         *
+         * @param ChartData $data
+         */
+        public function setData(ChartData $data)
+        {
+        }
+        /**
+         * @return ChartData
+         */
+        public function getData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return Color
+     * Runtime class alias of \Google\Service\Sheets\HistogramSeries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBarColor()
-    {
-    }
-    /**
-     * The color of the column representing this series in each bucket. This field
-     * is optional. If bar_color is also set, this field takes precedence.
-     *
-     * @param ColorStyle $barColorStyle
-     */
-    public function setBarColorStyle(ColorStyle $barColorStyle)
-    {
-    }
-    /**
-     * @return ColorStyle
-     */
-    public function getBarColorStyle()
-    {
-    }
-    /**
-     * The data for this histogram series.
-     *
-     * @param ChartData $data
-     */
-    public function setData(ChartData $data)
-    {
-    }
-    /**
-     * @return ChartData
-     */
-    public function getData()
+    class Google_Service_Sheets_HistogramSeries extends \Google\Service\Sheets\HistogramSeries
     {
     }
 }

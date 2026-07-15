@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareVsphereTag extends \Google\Model
-{
-    /**
-     * The Vsphere tag category.
-     *
-     * @var string
-     */
-    public $category;
-    /**
-     * The Vsphere tag name.
-     *
-     * @var string
-     */
-    public $tag;
-    /**
-     * The Vsphere tag category.
-     *
-     * @param string $category
-     */
-    public function setCategory($category)
+namespace Google\Service\GKEOnPrem {
+    class VmwareVsphereTag extends \Google\Model
     {
+        /**
+         * The Vsphere tag category.
+         *
+         * @var string
+         */
+        public $category;
+        /**
+         * The Vsphere tag name.
+         *
+         * @var string
+         */
+        public $tag;
+        /**
+         * The Vsphere tag category.
+         *
+         * @param string $category
+         */
+        public function setCategory($category)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategory()
+        {
+        }
+        /**
+         * The Vsphere tag name.
+         *
+         * @param string $tag
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareVsphereTag registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategory()
-    {
-    }
-    /**
-     * The Vsphere tag name.
-     *
-     * @param string $tag
-     */
-    public function setTag($tag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTag()
+    class Google_Service_GKEOnPrem_VmwareVsphereTag extends \Google\Service\GKEOnPrem\VmwareVsphereTag
     {
     }
 }

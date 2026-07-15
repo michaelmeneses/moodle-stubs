@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1FindInstalledAppDevicesResponse extends \Google\Collection
-{
-    protected $collection_key = 'devices';
-    protected $devicesType = GoogleChromeManagementV1Device::class;
-    protected $devicesDataType = 'array';
-    /**
-     * Token to specify the next page of the request.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Total number of devices matching request.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * A list of devices which have the app installed. Sorted in ascending
-     * alphabetical order on the Device.machine field.
-     *
-     * @param GoogleChromeManagementV1Device[] $devices
-     */
-    public function setDevices($devices)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1FindInstalledAppDevicesResponse extends \Google\Collection
     {
+        protected $collection_key = 'devices';
+        protected $devicesType = GoogleChromeManagementV1Device::class;
+        protected $devicesDataType = 'array';
+        /**
+         * Token to specify the next page of the request.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Total number of devices matching request.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * A list of devices which have the app installed. Sorted in ascending
+         * alphabetical order on the Device.machine field.
+         *
+         * @param GoogleChromeManagementV1Device[] $devices
+         */
+        public function setDevices($devices)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1Device[]
+         */
+        public function getDevices()
+        {
+        }
+        /**
+         * Token to specify the next page of the request.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Total number of devices matching request.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromeManagementV1Device[]
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1FindInstalledAppDevicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDevices()
-    {
-    }
-    /**
-     * Token to specify the next page of the request.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Total number of devices matching request.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1FindInstalledAppDevicesResponse extends \Google\Service\ChromeManagement\GoogleChromeManagementV1FindInstalledAppDevicesResponse
     {
     }
 }

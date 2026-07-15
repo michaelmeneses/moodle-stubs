@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class MeteringState extends \Google\Model
-{
-    /**
-     * The time stamp of the most recent measurement of the number of vCPUs in the
-     * cluster.
-     *
-     * @var string
-     */
-    public $lastMeasurementTime;
-    /**
-     * The vCPUs capacity in the cluster according to the most recent measurement
-     * (1/1000 precision).
-     *
-     * @var float
-     */
-    public $preciseLastMeasuredClusterVcpuCapacity;
-    /**
-     * The time stamp of the most recent measurement of the number of vCPUs in the
-     * cluster.
-     *
-     * @param string $lastMeasurementTime
-     */
-    public function setLastMeasurementTime($lastMeasurementTime)
+namespace Google\Service\GKEHub {
+    class MeteringState extends \Google\Model
     {
+        /**
+         * The time stamp of the most recent measurement of the number of vCPUs in the
+         * cluster.
+         *
+         * @var string
+         */
+        public $lastMeasurementTime;
+        /**
+         * The vCPUs capacity in the cluster according to the most recent measurement
+         * (1/1000 precision).
+         *
+         * @var float
+         */
+        public $preciseLastMeasuredClusterVcpuCapacity;
+        /**
+         * The time stamp of the most recent measurement of the number of vCPUs in the
+         * cluster.
+         *
+         * @param string $lastMeasurementTime
+         */
+        public function setLastMeasurementTime($lastMeasurementTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastMeasurementTime()
+        {
+        }
+        /**
+         * The vCPUs capacity in the cluster according to the most recent measurement
+         * (1/1000 precision).
+         *
+         * @param float $preciseLastMeasuredClusterVcpuCapacity
+         */
+        public function setPreciseLastMeasuredClusterVcpuCapacity($preciseLastMeasuredClusterVcpuCapacity)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getPreciseLastMeasuredClusterVcpuCapacity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\MeteringState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastMeasurementTime()
-    {
-    }
-    /**
-     * The vCPUs capacity in the cluster according to the most recent measurement
-     * (1/1000 precision).
-     *
-     * @param float $preciseLastMeasuredClusterVcpuCapacity
-     */
-    public function setPreciseLastMeasuredClusterVcpuCapacity($preciseLastMeasuredClusterVcpuCapacity)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getPreciseLastMeasuredClusterVcpuCapacity()
+    class Google_Service_GKEHub_MeteringState extends \Google\Service\GKEHub\MeteringState
     {
     }
 }

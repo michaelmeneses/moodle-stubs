@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class AboutStorageQuota extends \Google\Model
-{
-    /**
-     * The usage limit, if applicable. This will not be present if the user has
-     * unlimited storage. For users that are part of an organization with pooled
-     * storage, this is the limit for the organization, rather than the individual
-     * user.
-     *
-     * @var string
-     */
-    public $limit;
-    /**
-     * The total usage across all services. For users that are part of an
-     * organization with pooled storage, this is the usage across all services for
-     * the organization, rather than the individual user.
-     *
-     * @var string
-     */
-    public $usage;
-    /**
-     * The usage by all files in Google Drive.
-     *
-     * @var string
-     */
-    public $usageInDrive;
-    /**
-     * The usage by trashed files in Google Drive.
-     *
-     * @var string
-     */
-    public $usageInDriveTrash;
-    /**
-     * The usage limit, if applicable. This will not be present if the user has
-     * unlimited storage. For users that are part of an organization with pooled
-     * storage, this is the limit for the organization, rather than the individual
-     * user.
-     *
-     * @param string $limit
-     */
-    public function setLimit($limit)
+namespace Google\Service\Drive {
+    class AboutStorageQuota extends \Google\Model
     {
+        /**
+         * The usage limit, if applicable. This will not be present if the user has
+         * unlimited storage. For users that are part of an organization with pooled
+         * storage, this is the limit for the organization, rather than the individual
+         * user.
+         *
+         * @var string
+         */
+        public $limit;
+        /**
+         * The total usage across all services. For users that are part of an
+         * organization with pooled storage, this is the usage across all services for
+         * the organization, rather than the individual user.
+         *
+         * @var string
+         */
+        public $usage;
+        /**
+         * The usage by all files in Google Drive.
+         *
+         * @var string
+         */
+        public $usageInDrive;
+        /**
+         * The usage by trashed files in Google Drive.
+         *
+         * @var string
+         */
+        public $usageInDriveTrash;
+        /**
+         * The usage limit, if applicable. This will not be present if the user has
+         * unlimited storage. For users that are part of an organization with pooled
+         * storage, this is the limit for the organization, rather than the individual
+         * user.
+         *
+         * @param string $limit
+         */
+        public function setLimit($limit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLimit()
+        {
+        }
+        /**
+         * The total usage across all services. For users that are part of an
+         * organization with pooled storage, this is the usage across all services for
+         * the organization, rather than the individual user.
+         *
+         * @param string $usage
+         */
+        public function setUsage($usage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsage()
+        {
+        }
+        /**
+         * The usage by all files in Google Drive.
+         *
+         * @param string $usageInDrive
+         */
+        public function setUsageInDrive($usageInDrive)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsageInDrive()
+        {
+        }
+        /**
+         * The usage by trashed files in Google Drive.
+         *
+         * @param string $usageInDriveTrash
+         */
+        public function setUsageInDriveTrash($usageInDriveTrash)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsageInDriveTrash()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Drive\AboutStorageQuota registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLimit()
-    {
-    }
-    /**
-     * The total usage across all services. For users that are part of an
-     * organization with pooled storage, this is the usage across all services for
-     * the organization, rather than the individual user.
-     *
-     * @param string $usage
-     */
-    public function setUsage($usage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsage()
-    {
-    }
-    /**
-     * The usage by all files in Google Drive.
-     *
-     * @param string $usageInDrive
-     */
-    public function setUsageInDrive($usageInDrive)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsageInDrive()
-    {
-    }
-    /**
-     * The usage by trashed files in Google Drive.
-     *
-     * @param string $usageInDriveTrash
-     */
-    public function setUsageInDriveTrash($usageInDriveTrash)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsageInDriveTrash()
+    class Google_Service_Drive_AboutStorageQuota extends \Google\Service\Drive\AboutStorageQuota
     {
     }
 }

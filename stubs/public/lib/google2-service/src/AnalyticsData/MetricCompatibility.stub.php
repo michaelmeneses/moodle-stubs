@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class MetricCompatibility extends \Google\Model
-{
-    /**
-     * Unspecified compatibility.
-     */
-    public const COMPATIBILITY_COMPATIBILITY_UNSPECIFIED = 'COMPATIBILITY_UNSPECIFIED';
-    /**
-     * The dimension or metric is compatible. This dimension or metric can be
-     * successfully added to a report.
-     */
-    public const COMPATIBILITY_COMPATIBLE = 'COMPATIBLE';
-    /**
-     * The dimension or metric is incompatible. This dimension or metric cannot be
-     * successfully added to a report.
-     */
-    public const COMPATIBILITY_INCOMPATIBLE = 'INCOMPATIBLE';
-    /**
-     * The compatibility of this metric. If the compatibility is COMPATIBLE, this
-     * metric can be successfully added to the report.
-     *
-     * @var string
-     */
-    public $compatibility;
-    protected $metricMetadataType = MetricMetadata::class;
-    protected $metricMetadataDataType = '';
-    /**
-     * The compatibility of this metric. If the compatibility is COMPATIBLE, this
-     * metric can be successfully added to the report.
-     *
-     * Accepted values: COMPATIBILITY_UNSPECIFIED, COMPATIBLE, INCOMPATIBLE
-     *
-     * @param self::COMPATIBILITY_* $compatibility
-     */
-    public function setCompatibility($compatibility)
+namespace Google\Service\AnalyticsData {
+    class MetricCompatibility extends \Google\Model
     {
+        /**
+         * Unspecified compatibility.
+         */
+        public const COMPATIBILITY_COMPATIBILITY_UNSPECIFIED = 'COMPATIBILITY_UNSPECIFIED';
+        /**
+         * The dimension or metric is compatible. This dimension or metric can be
+         * successfully added to a report.
+         */
+        public const COMPATIBILITY_COMPATIBLE = 'COMPATIBLE';
+        /**
+         * The dimension or metric is incompatible. This dimension or metric cannot be
+         * successfully added to a report.
+         */
+        public const COMPATIBILITY_INCOMPATIBLE = 'INCOMPATIBLE';
+        /**
+         * The compatibility of this metric. If the compatibility is COMPATIBLE, this
+         * metric can be successfully added to the report.
+         *
+         * @var string
+         */
+        public $compatibility;
+        protected $metricMetadataType = MetricMetadata::class;
+        protected $metricMetadataDataType = '';
+        /**
+         * The compatibility of this metric. If the compatibility is COMPATIBLE, this
+         * metric can be successfully added to the report.
+         *
+         * Accepted values: COMPATIBILITY_UNSPECIFIED, COMPATIBLE, INCOMPATIBLE
+         *
+         * @param self::COMPATIBILITY_* $compatibility
+         */
+        public function setCompatibility($compatibility)
+        {
+        }
+        /**
+         * @return self::COMPATIBILITY_*
+         */
+        public function getCompatibility()
+        {
+        }
+        /**
+         * The metric metadata contains the API name for this compatibility
+         * information. The metric metadata also contains other helpful information
+         * like the UI name and description.
+         *
+         * @param MetricMetadata $metricMetadata
+         */
+        public function setMetricMetadata(MetricMetadata $metricMetadata)
+        {
+        }
+        /**
+         * @return MetricMetadata
+         */
+        public function getMetricMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::COMPATIBILITY_*
+     * Runtime class alias of \Google\Service\AnalyticsData\MetricCompatibility registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompatibility()
-    {
-    }
-    /**
-     * The metric metadata contains the API name for this compatibility
-     * information. The metric metadata also contains other helpful information
-     * like the UI name and description.
-     *
-     * @param MetricMetadata $metricMetadata
-     */
-    public function setMetricMetadata(MetricMetadata $metricMetadata)
-    {
-    }
-    /**
-     * @return MetricMetadata
-     */
-    public function getMetricMetadata()
+    class Google_Service_AnalyticsData_MetricCompatibility extends \Google\Service\AnalyticsData\MetricCompatibility
     {
     }
 }

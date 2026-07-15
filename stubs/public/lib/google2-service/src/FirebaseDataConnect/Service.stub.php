@@ -21,204 +21,213 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDataConnect;
-
-class Service extends \Google\Model
-{
-    /**
-     * Optional. Stores small amounts of arbitrary data.
-     *
-     * @var string[]
-     */
-    public $annotations;
-    /**
-     * Output only. [Output only] Create time stamp.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. Mutable human-readable name. 63 character limit.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. This checksum is computed by the server based on the value of
-     * other fields, and may be sent on update and delete requests to ensure the
-     * client has an up-to-date value before proceeding.
-     * [AIP-154](https://google.aip.dev/154)
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Optional. Labels as key value pairs.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Identifier. The relative resource name of the Firebase Data Connect
-     * service, in the format: ```
-     * projects/{project}/locations/{location}/services/{service} ``` Note that
-     * the service ID is specific to Firebase Data Connect and does not correspond
-     * to any of the instance IDs of the underlying data source connections.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. A field that if true, indicates that the system is working
-     * update the service.
-     *
-     * @var bool
-     */
-    public $reconciling;
-    /**
-     * Output only. System-assigned, unique identifier.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Output only. [Output only] Update time stamp.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. Stores small amounts of arbitrary data.
-     *
-     * @param string[] $annotations
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\FirebaseDataConnect {
+    class Service extends \Google\Model
     {
+        /**
+         * Optional. Stores small amounts of arbitrary data.
+         *
+         * @var string[]
+         */
+        public $annotations;
+        /**
+         * Output only. [Output only] Create time stamp.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. Mutable human-readable name. 63 character limit.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. This checksum is computed by the server based on the value of
+         * other fields, and may be sent on update and delete requests to ensure the
+         * client has an up-to-date value before proceeding.
+         * [AIP-154](https://google.aip.dev/154)
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Optional. Labels as key value pairs.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Identifier. The relative resource name of the Firebase Data Connect
+         * service, in the format: ```
+         * projects/{project}/locations/{location}/services/{service} ``` Note that
+         * the service ID is specific to Firebase Data Connect and does not correspond
+         * to any of the instance IDs of the underlying data source connections.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. A field that if true, indicates that the system is working
+         * update the service.
+         *
+         * @var bool
+         */
+        public $reconciling;
+        /**
+         * Output only. System-assigned, unique identifier.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Output only. [Output only] Update time stamp.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. Stores small amounts of arbitrary data.
+         *
+         * @param string[] $annotations
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * Output only. [Output only] Create time stamp.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Mutable human-readable name. 63 character limit.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. This checksum is computed by the server based on the value of
+         * other fields, and may be sent on update and delete requests to ensure the
+         * client has an up-to-date value before proceeding.
+         * [AIP-154](https://google.aip.dev/154)
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Optional. Labels as key value pairs.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Identifier. The relative resource name of the Firebase Data Connect
+         * service, in the format: ```
+         * projects/{project}/locations/{location}/services/{service} ``` Note that
+         * the service ID is specific to Firebase Data Connect and does not correspond
+         * to any of the instance IDs of the underlying data source connections.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. A field that if true, indicates that the system is working
+         * update the service.
+         *
+         * @param bool $reconciling
+         */
+        public function setReconciling($reconciling)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReconciling()
+        {
+        }
+        /**
+         * Output only. System-assigned, unique identifier.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * Output only. [Output only] Update time stamp.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\FirebaseDataConnect\Service registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * Output only. [Output only] Create time stamp.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Mutable human-readable name. 63 character limit.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. This checksum is computed by the server based on the value of
-     * other fields, and may be sent on update and delete requests to ensure the
-     * client has an up-to-date value before proceeding.
-     * [AIP-154](https://google.aip.dev/154)
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Optional. Labels as key value pairs.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Identifier. The relative resource name of the Firebase Data Connect
-     * service, in the format: ```
-     * projects/{project}/locations/{location}/services/{service} ``` Note that
-     * the service ID is specific to Firebase Data Connect and does not correspond
-     * to any of the instance IDs of the underlying data source connections.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. A field that if true, indicates that the system is working
-     * update the service.
-     *
-     * @param bool $reconciling
-     */
-    public function setReconciling($reconciling)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReconciling()
-    {
-    }
-    /**
-     * Output only. System-assigned, unique identifier.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * Output only. [Output only] Update time stamp.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_FirebaseDataConnect_Service extends \Google\Service\FirebaseDataConnect\Service
     {
     }
 }

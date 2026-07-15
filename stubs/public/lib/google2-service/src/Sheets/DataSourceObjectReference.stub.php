@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DataSourceObjectReference extends \Google\Model
-{
-    /**
-     * References to a data source chart.
-     *
-     * @var int
-     */
-    public $chartId;
-    protected $dataSourceFormulaCellType = GridCoordinate::class;
-    protected $dataSourceFormulaCellDataType = '';
-    protected $dataSourcePivotTableAnchorCellType = GridCoordinate::class;
-    protected $dataSourcePivotTableAnchorCellDataType = '';
-    protected $dataSourceTableAnchorCellType = GridCoordinate::class;
-    protected $dataSourceTableAnchorCellDataType = '';
-    /**
-     * References to a DATA_SOURCE sheet.
-     *
-     * @var string
-     */
-    public $sheetId;
-    /**
-     * References to a data source chart.
-     *
-     * @param int $chartId
-     */
-    public function setChartId($chartId)
+namespace Google\Service\Sheets {
+    class DataSourceObjectReference extends \Google\Model
     {
+        /**
+         * References to a data source chart.
+         *
+         * @var int
+         */
+        public $chartId;
+        protected $dataSourceFormulaCellType = GridCoordinate::class;
+        protected $dataSourceFormulaCellDataType = '';
+        protected $dataSourcePivotTableAnchorCellType = GridCoordinate::class;
+        protected $dataSourcePivotTableAnchorCellDataType = '';
+        protected $dataSourceTableAnchorCellType = GridCoordinate::class;
+        protected $dataSourceTableAnchorCellDataType = '';
+        /**
+         * References to a DATA_SOURCE sheet.
+         *
+         * @var string
+         */
+        public $sheetId;
+        /**
+         * References to a data source chart.
+         *
+         * @param int $chartId
+         */
+        public function setChartId($chartId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getChartId()
+        {
+        }
+        /**
+         * References to a cell containing DataSourceFormula.
+         *
+         * @param GridCoordinate $dataSourceFormulaCell
+         */
+        public function setDataSourceFormulaCell(GridCoordinate $dataSourceFormulaCell)
+        {
+        }
+        /**
+         * @return GridCoordinate
+         */
+        public function getDataSourceFormulaCell()
+        {
+        }
+        /**
+         * References to a data source PivotTable anchored at the cell.
+         *
+         * @param GridCoordinate $dataSourcePivotTableAnchorCell
+         */
+        public function setDataSourcePivotTableAnchorCell(GridCoordinate $dataSourcePivotTableAnchorCell)
+        {
+        }
+        /**
+         * @return GridCoordinate
+         */
+        public function getDataSourcePivotTableAnchorCell()
+        {
+        }
+        /**
+         * References to a DataSourceTable anchored at the cell.
+         *
+         * @param GridCoordinate $dataSourceTableAnchorCell
+         */
+        public function setDataSourceTableAnchorCell(GridCoordinate $dataSourceTableAnchorCell)
+        {
+        }
+        /**
+         * @return GridCoordinate
+         */
+        public function getDataSourceTableAnchorCell()
+        {
+        }
+        /**
+         * References to a DATA_SOURCE sheet.
+         *
+         * @param string $sheetId
+         */
+        public function setSheetId($sheetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSheetId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Sheets\DataSourceObjectReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChartId()
-    {
-    }
-    /**
-     * References to a cell containing DataSourceFormula.
-     *
-     * @param GridCoordinate $dataSourceFormulaCell
-     */
-    public function setDataSourceFormulaCell(GridCoordinate $dataSourceFormulaCell)
-    {
-    }
-    /**
-     * @return GridCoordinate
-     */
-    public function getDataSourceFormulaCell()
-    {
-    }
-    /**
-     * References to a data source PivotTable anchored at the cell.
-     *
-     * @param GridCoordinate $dataSourcePivotTableAnchorCell
-     */
-    public function setDataSourcePivotTableAnchorCell(GridCoordinate $dataSourcePivotTableAnchorCell)
-    {
-    }
-    /**
-     * @return GridCoordinate
-     */
-    public function getDataSourcePivotTableAnchorCell()
-    {
-    }
-    /**
-     * References to a DataSourceTable anchored at the cell.
-     *
-     * @param GridCoordinate $dataSourceTableAnchorCell
-     */
-    public function setDataSourceTableAnchorCell(GridCoordinate $dataSourceTableAnchorCell)
-    {
-    }
-    /**
-     * @return GridCoordinate
-     */
-    public function getDataSourceTableAnchorCell()
-    {
-    }
-    /**
-     * References to a DATA_SOURCE sheet.
-     *
-     * @param string $sheetId
-     */
-    public function setSheetId($sheetId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSheetId()
+    class Google_Service_Sheets_DataSourceObjectReference extends \Google\Service\Sheets\DataSourceObjectReference
     {
     }
 }

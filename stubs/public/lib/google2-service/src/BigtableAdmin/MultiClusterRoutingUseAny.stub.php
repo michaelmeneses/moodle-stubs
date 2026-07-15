@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class MultiClusterRoutingUseAny extends \Google\Collection
-{
-    protected $collection_key = 'clusterIds';
-    /**
-     * The set of clusters to route to. The order is ignored; clusters will be
-     * tried in order of distance. If left empty, all clusters are eligible.
-     *
-     * @var string[]
-     */
-    public $clusterIds;
-    protected $rowAffinityType = RowAffinity::class;
-    protected $rowAffinityDataType = '';
-    /**
-     * The set of clusters to route to. The order is ignored; clusters will be
-     * tried in order of distance. If left empty, all clusters are eligible.
-     *
-     * @param string[] $clusterIds
-     */
-    public function setClusterIds($clusterIds)
+namespace Google\Service\BigtableAdmin {
+    class MultiClusterRoutingUseAny extends \Google\Collection
     {
+        protected $collection_key = 'clusterIds';
+        /**
+         * The set of clusters to route to. The order is ignored; clusters will be
+         * tried in order of distance. If left empty, all clusters are eligible.
+         *
+         * @var string[]
+         */
+        public $clusterIds;
+        protected $rowAffinityType = RowAffinity::class;
+        protected $rowAffinityDataType = '';
+        /**
+         * The set of clusters to route to. The order is ignored; clusters will be
+         * tried in order of distance. If left empty, all clusters are eligible.
+         *
+         * @param string[] $clusterIds
+         */
+        public function setClusterIds($clusterIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getClusterIds()
+        {
+        }
+        /**
+         * Row affinity sticky routing based on the row key of the request. Requests
+         * that span multiple rows are routed non-deterministically.
+         *
+         * @param RowAffinity $rowAffinity
+         */
+        public function setRowAffinity(RowAffinity $rowAffinity)
+        {
+        }
+        /**
+         * @return RowAffinity
+         */
+        public function getRowAffinity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\BigtableAdmin\MultiClusterRoutingUseAny registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterIds()
-    {
-    }
-    /**
-     * Row affinity sticky routing based on the row key of the request. Requests
-     * that span multiple rows are routed non-deterministically.
-     *
-     * @param RowAffinity $rowAffinity
-     */
-    public function setRowAffinity(RowAffinity $rowAffinity)
-    {
-    }
-    /**
-     * @return RowAffinity
-     */
-    public function getRowAffinity()
+    class Google_Service_BigtableAdmin_MultiClusterRoutingUseAny extends \Google\Service\BigtableAdmin\MultiClusterRoutingUseAny
     {
     }
 }

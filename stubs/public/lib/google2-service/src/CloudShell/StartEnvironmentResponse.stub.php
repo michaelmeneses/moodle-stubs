@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudShell;
-
-class StartEnvironmentResponse extends \Google\Model
-{
-    protected $environmentType = Environment::class;
-    protected $environmentDataType = '';
-    /**
-     * Environment that was started.
-     *
-     * @param Environment $environment
-     */
-    public function setEnvironment(Environment $environment)
+namespace Google\Service\CloudShell {
+    class StartEnvironmentResponse extends \Google\Model
     {
+        protected $environmentType = Environment::class;
+        protected $environmentDataType = '';
+        /**
+         * Environment that was started.
+         *
+         * @param Environment $environment
+         */
+        public function setEnvironment(Environment $environment)
+        {
+        }
+        /**
+         * @return Environment
+         */
+        public function getEnvironment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Environment
+     * Runtime class alias of \Google\Service\CloudShell\StartEnvironmentResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnvironment()
+    class Google_Service_CloudShell_StartEnvironmentResponse extends \Google\Service\CloudShell\StartEnvironmentResponse
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataFusion;
-
-class EventPublishConfig extends \Google\Model
-{
-    /**
-     * Required. Option to enable Event Publishing.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Required. The resource name of the Pub/Sub topic. Format:
-     * projects/{project_id}/topics/{topic_id}
-     *
-     * @var string
-     */
-    public $topic;
-    /**
-     * Required. Option to enable Event Publishing.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\DataFusion {
+    class EventPublishConfig extends \Google\Model
     {
+        /**
+         * Required. Option to enable Event Publishing.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Required. The resource name of the Pub/Sub topic. Format:
+         * projects/{project_id}/topics/{topic_id}
+         *
+         * @var string
+         */
+        public $topic;
+        /**
+         * Required. Option to enable Event Publishing.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * Required. The resource name of the Pub/Sub topic. Format:
+         * projects/{project_id}/topics/{topic_id}
+         *
+         * @param string $topic
+         */
+        public function setTopic($topic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DataFusion\EventPublishConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * Required. The resource name of the Pub/Sub topic. Format:
-     * projects/{project_id}/topics/{topic_id}
-     *
-     * @param string $topic
-     */
-    public function setTopic($topic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopic()
+    class Google_Service_DataFusion_EventPublishConfig extends \Google\Service\DataFusion\EventPublishConfig
     {
     }
 }

@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceConsumerManagement;
-
-class TenantProjectPolicy extends \Google\Collection
-{
-    protected $collection_key = 'policyBindings';
-    protected $policyBindingsType = PolicyBinding::class;
-    protected $policyBindingsDataType = 'array';
-    /**
-     * Policy bindings to be applied to the tenant project, in addition to the
-     * 'roles/owner' role granted to the Service Consumer Management service
-     * account.
-     *
-     * @param PolicyBinding[] $policyBindings
-     */
-    public function setPolicyBindings($policyBindings)
+namespace Google\Service\ServiceConsumerManagement {
+    class TenantProjectPolicy extends \Google\Collection
     {
+        protected $collection_key = 'policyBindings';
+        protected $policyBindingsType = PolicyBinding::class;
+        protected $policyBindingsDataType = 'array';
+        /**
+         * Policy bindings to be applied to the tenant project, in addition to the
+         * 'roles/owner' role granted to the Service Consumer Management service
+         * account.
+         *
+         * @param PolicyBinding[] $policyBindings
+         */
+        public function setPolicyBindings($policyBindings)
+        {
+        }
+        /**
+         * @return PolicyBinding[]
+         */
+        public function getPolicyBindings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PolicyBinding[]
+     * Runtime class alias of \Google\Service\ServiceConsumerManagement\TenantProjectPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicyBindings()
+    class Google_Service_ServiceConsumerManagement_TenantProjectPolicy extends \Google\Service\ServiceConsumerManagement\TenantProjectPolicy
     {
     }
 }

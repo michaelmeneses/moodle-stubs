@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectAttachmentL2ForwardingGeneveHeader extends \Google\Model
-{
-    /**
-     * Optional. VNI is a 24-bit unique virtual network identifier, from 0 to
-     * 16,777,215.
-     *
-     * @var string
-     */
-    public $vni;
-    /**
-     * Optional. VNI is a 24-bit unique virtual network identifier, from 0 to
-     * 16,777,215.
-     *
-     * @param string $vni
-     */
-    public function setVni($vni)
+namespace Google\Service\Compute {
+    class InterconnectAttachmentL2ForwardingGeneveHeader extends \Google\Model
     {
+        /**
+         * Optional. VNI is a 24-bit unique virtual network identifier, from 0 to
+         * 16,777,215.
+         *
+         * @var string
+         */
+        public $vni;
+        /**
+         * Optional. VNI is a 24-bit unique virtual network identifier, from 0 to
+         * 16,777,215.
+         *
+         * @param string $vni
+         */
+        public function setVni($vni)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVni()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InterconnectAttachmentL2ForwardingGeneveHeader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVni()
+    class Google_Service_Compute_InterconnectAttachmentL2ForwardingGeneveHeader extends \Google\Service\Compute\InterconnectAttachmentL2ForwardingGeneveHeader
     {
     }
 }

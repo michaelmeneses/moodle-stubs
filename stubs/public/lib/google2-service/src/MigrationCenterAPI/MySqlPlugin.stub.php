@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class MySqlPlugin extends \Google\Model
-{
-    /**
-     * Required. The plugin is active.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Required. The plugin name.
-     *
-     * @var string
-     */
-    public $plugin;
-    /**
-     * Required. The plugin version.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Required. The plugin is active.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\MigrationCenterAPI {
+    class MySqlPlugin extends \Google\Model
     {
+        /**
+         * Required. The plugin is active.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Required. The plugin name.
+         *
+         * @var string
+         */
+        public $plugin;
+        /**
+         * Required. The plugin version.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Required. The plugin is active.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * Required. The plugin name.
+         *
+         * @param string $plugin
+         */
+        public function setPlugin($plugin)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlugin()
+        {
+        }
+        /**
+         * Required. The plugin version.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\MySqlPlugin registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * Required. The plugin name.
-     *
-     * @param string $plugin
-     */
-    public function setPlugin($plugin)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlugin()
-    {
-    }
-    /**
-     * Required. The plugin version.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_MigrationCenterAPI_MySqlPlugin extends \Google\Service\MigrationCenterAPI\MySqlPlugin
     {
     }
 }

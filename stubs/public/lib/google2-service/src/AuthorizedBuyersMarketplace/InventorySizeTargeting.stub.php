@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class InventorySizeTargeting extends \Google\Collection
-{
-    protected $collection_key = 'targetedInventorySizes';
-    protected $excludedInventorySizesType = AdSize::class;
-    protected $excludedInventorySizesDataType = 'array';
-    protected $targetedInventorySizesType = AdSize::class;
-    protected $targetedInventorySizesDataType = 'array';
-    /**
-     * A list of inventory sizes to be excluded.
-     *
-     * @param AdSize[] $excludedInventorySizes
-     */
-    public function setExcludedInventorySizes($excludedInventorySizes)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class InventorySizeTargeting extends \Google\Collection
     {
+        protected $collection_key = 'targetedInventorySizes';
+        protected $excludedInventorySizesType = AdSize::class;
+        protected $excludedInventorySizesDataType = 'array';
+        protected $targetedInventorySizesType = AdSize::class;
+        protected $targetedInventorySizesDataType = 'array';
+        /**
+         * A list of inventory sizes to be excluded.
+         *
+         * @param AdSize[] $excludedInventorySizes
+         */
+        public function setExcludedInventorySizes($excludedInventorySizes)
+        {
+        }
+        /**
+         * @return AdSize[]
+         */
+        public function getExcludedInventorySizes()
+        {
+        }
+        /**
+         * A list of inventory sizes to be included.
+         *
+         * @param AdSize[] $targetedInventorySizes
+         */
+        public function setTargetedInventorySizes($targetedInventorySizes)
+        {
+        }
+        /**
+         * @return AdSize[]
+         */
+        public function getTargetedInventorySizes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdSize[]
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\InventorySizeTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExcludedInventorySizes()
-    {
-    }
-    /**
-     * A list of inventory sizes to be included.
-     *
-     * @param AdSize[] $targetedInventorySizes
-     */
-    public function setTargetedInventorySizes($targetedInventorySizes)
-    {
-    }
-    /**
-     * @return AdSize[]
-     */
-    public function getTargetedInventorySizes()
+    class Google_Service_AuthorizedBuyersMarketplace_InventorySizeTargeting extends \Google\Service\AuthorizedBuyersMarketplace\InventorySizeTargeting
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SaaSServiceManagement;
-
-class UnitDependency extends \Google\Model
-{
-    /**
-     * Output only. Alias for the name of the dependency.
-     *
-     * @var string
-     */
-    public $alias;
-    /**
-     * Output only. A reference to the Unit object.
-     *
-     * @var string
-     */
-    public $unit;
-    /**
-     * Output only. Alias for the name of the dependency.
-     *
-     * @param string $alias
-     */
-    public function setAlias($alias)
+namespace Google\Service\SaaSServiceManagement {
+    class UnitDependency extends \Google\Model
     {
+        /**
+         * Output only. Alias for the name of the dependency.
+         *
+         * @var string
+         */
+        public $alias;
+        /**
+         * Output only. A reference to the Unit object.
+         *
+         * @var string
+         */
+        public $unit;
+        /**
+         * Output only. Alias for the name of the dependency.
+         *
+         * @param string $alias
+         */
+        public function setAlias($alias)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAlias()
+        {
+        }
+        /**
+         * Output only. A reference to the Unit object.
+         *
+         * @param string $unit
+         */
+        public function setUnit($unit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnit()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SaaSServiceManagement\UnitDependency registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlias()
-    {
-    }
-    /**
-     * Output only. A reference to the Unit object.
-     *
-     * @param string $unit
-     */
-    public function setUnit($unit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnit()
+    class Google_Service_SaaSServiceManagement_UnitDependency extends \Google\Service\SaaSServiceManagement\UnitDependency
     {
     }
 }

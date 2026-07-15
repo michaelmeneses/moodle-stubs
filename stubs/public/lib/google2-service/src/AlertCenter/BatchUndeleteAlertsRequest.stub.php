@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class BatchUndeleteAlertsRequest extends \Google\Collection
-{
-    protected $collection_key = 'alertId';
-    /**
-     * Required. The list of alert IDs to undelete.
-     *
-     * @var string[]
-     */
-    public $alertId;
-    /**
-     * Optional. The unique identifier of the Google Workspace account of the
-     * customer the alerts are associated with. The `customer_id` must have the
-     * initial "C" stripped (for example, `046psxkn`). Inferred from the caller
-     * identity if not provided. [Find your customer
-     * ID](https://support.google.com/cloudidentity/answer/10070793).
-     *
-     * @var string
-     */
-    public $customerId;
-    /**
-     * Required. The list of alert IDs to undelete.
-     *
-     * @param string[] $alertId
-     */
-    public function setAlertId($alertId)
+namespace Google\Service\AlertCenter {
+    class BatchUndeleteAlertsRequest extends \Google\Collection
     {
+        protected $collection_key = 'alertId';
+        /**
+         * Required. The list of alert IDs to undelete.
+         *
+         * @var string[]
+         */
+        public $alertId;
+        /**
+         * Optional. The unique identifier of the Google Workspace account of the
+         * customer the alerts are associated with. The `customer_id` must have the
+         * initial "C" stripped (for example, `046psxkn`). Inferred from the caller
+         * identity if not provided. [Find your customer
+         * ID](https://support.google.com/cloudidentity/answer/10070793).
+         *
+         * @var string
+         */
+        public $customerId;
+        /**
+         * Required. The list of alert IDs to undelete.
+         *
+         * @param string[] $alertId
+         */
+        public function setAlertId($alertId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAlertId()
+        {
+        }
+        /**
+         * Optional. The unique identifier of the Google Workspace account of the
+         * customer the alerts are associated with. The `customer_id` must have the
+         * initial "C" stripped (for example, `046psxkn`). Inferred from the caller
+         * identity if not provided. [Find your customer
+         * ID](https://support.google.com/cloudidentity/answer/10070793).
+         *
+         * @param string $customerId
+         */
+        public function setCustomerId($customerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AlertCenter\BatchUndeleteAlertsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlertId()
-    {
-    }
-    /**
-     * Optional. The unique identifier of the Google Workspace account of the
-     * customer the alerts are associated with. The `customer_id` must have the
-     * initial "C" stripped (for example, `046psxkn`). Inferred from the caller
-     * identity if not provided. [Find your customer
-     * ID](https://support.google.com/cloudidentity/answer/10070793).
-     *
-     * @param string $customerId
-     */
-    public function setCustomerId($customerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomerId()
+    class Google_Service_AlertCenter_BatchUndeleteAlertsRequest extends \Google\Service\AlertCenter\BatchUndeleteAlertsRequest
     {
     }
 }

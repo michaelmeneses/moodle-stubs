@@ -21,35 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1IdMatcher extends \Google\Collection
-{
-    protected $collection_key = 'ids';
-    /**
-     * Required. The following are accepted as `ids`: * A single-element list
-     * containing only `*`, which selects all Features in the target EntityType,
-     * or * A list containing only Feature IDs, which selects only Features with
-     * those IDs in the target EntityType.
-     *
-     * @var string[]
-     */
-    public $ids;
-    /**
-     * Required. The following are accepted as `ids`: * A single-element list
-     * containing only `*`, which selects all Features in the target EntityType,
-     * or * A list containing only Feature IDs, which selects only Features with
-     * those IDs in the target EntityType.
-     *
-     * @param string[] $ids
-     */
-    public function setIds($ids)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1IdMatcher extends \Google\Collection
     {
+        protected $collection_key = 'ids';
+        /**
+         * Required. The following are accepted as `ids`: * A single-element list
+         * containing only `*`, which selects all Features in the target EntityType,
+         * or * A list containing only Feature IDs, which selects only Features with
+         * those IDs in the target EntityType.
+         *
+         * @var string[]
+         */
+        public $ids;
+        /**
+         * Required. The following are accepted as `ids`: * A single-element list
+         * containing only `*`, which selects all Features in the target EntityType,
+         * or * A list containing only Feature IDs, which selects only Features with
+         * those IDs in the target EntityType.
+         *
+         * @param string[] $ids
+         */
+        public function setIds($ids)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1IdMatcher registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIds()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1IdMatcher extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1IdMatcher
     {
     }
 }

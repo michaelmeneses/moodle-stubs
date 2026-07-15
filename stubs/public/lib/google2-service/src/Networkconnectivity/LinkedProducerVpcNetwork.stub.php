@@ -21,179 +21,188 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class LinkedProducerVpcNetwork extends \Google\Collection
-{
-    protected $collection_key = 'proposedIncludeExportRanges';
-    /**
-     * Optional. IP ranges encompassing the subnets to be excluded from peering.
-     *
-     * @var string[]
-     */
-    public $excludeExportRanges;
-    /**
-     * Optional. IP ranges allowed to be included from peering.
-     *
-     * @var string[]
-     */
-    public $includeExportRanges;
-    /**
-     * Immutable. The URI of the Service Consumer VPC that the Producer VPC is
-     * peered with.
-     *
-     * @var string
-     */
-    public $network;
-    /**
-     * Immutable. The name of the VPC peering between the Service Consumer VPC and
-     * the Producer VPC (defined in the Tenant project) which is added to the NCC
-     * hub. This peering must be in ACTIVE state.
-     *
-     * @var string
-     */
-    public $peering;
-    /**
-     * Output only. The URI of the Producer VPC.
-     *
-     * @var string
-     */
-    public $producerNetwork;
-    /**
-     * Output only. The proposed exclude export IP ranges waiting for hub
-     * administration's approval.
-     *
-     * @var string[]
-     */
-    public $proposedExcludeExportRanges;
-    /**
-     * Output only. The proposed include export IP ranges waiting for hub
-     * administration's approval.
-     *
-     * @var string[]
-     */
-    public $proposedIncludeExportRanges;
-    /**
-     * Output only. The Service Consumer Network spoke.
-     *
-     * @var string
-     */
-    public $serviceConsumerVpcSpoke;
-    /**
-     * Optional. IP ranges encompassing the subnets to be excluded from peering.
-     *
-     * @param string[] $excludeExportRanges
-     */
-    public function setExcludeExportRanges($excludeExportRanges)
+namespace Google\Service\Networkconnectivity {
+    class LinkedProducerVpcNetwork extends \Google\Collection
     {
+        protected $collection_key = 'proposedIncludeExportRanges';
+        /**
+         * Optional. IP ranges encompassing the subnets to be excluded from peering.
+         *
+         * @var string[]
+         */
+        public $excludeExportRanges;
+        /**
+         * Optional. IP ranges allowed to be included from peering.
+         *
+         * @var string[]
+         */
+        public $includeExportRanges;
+        /**
+         * Immutable. The URI of the Service Consumer VPC that the Producer VPC is
+         * peered with.
+         *
+         * @var string
+         */
+        public $network;
+        /**
+         * Immutable. The name of the VPC peering between the Service Consumer VPC and
+         * the Producer VPC (defined in the Tenant project) which is added to the NCC
+         * hub. This peering must be in ACTIVE state.
+         *
+         * @var string
+         */
+        public $peering;
+        /**
+         * Output only. The URI of the Producer VPC.
+         *
+         * @var string
+         */
+        public $producerNetwork;
+        /**
+         * Output only. The proposed exclude export IP ranges waiting for hub
+         * administration's approval.
+         *
+         * @var string[]
+         */
+        public $proposedExcludeExportRanges;
+        /**
+         * Output only. The proposed include export IP ranges waiting for hub
+         * administration's approval.
+         *
+         * @var string[]
+         */
+        public $proposedIncludeExportRanges;
+        /**
+         * Output only. The Service Consumer Network spoke.
+         *
+         * @var string
+         */
+        public $serviceConsumerVpcSpoke;
+        /**
+         * Optional. IP ranges encompassing the subnets to be excluded from peering.
+         *
+         * @param string[] $excludeExportRanges
+         */
+        public function setExcludeExportRanges($excludeExportRanges)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludeExportRanges()
+        {
+        }
+        /**
+         * Optional. IP ranges allowed to be included from peering.
+         *
+         * @param string[] $includeExportRanges
+         */
+        public function setIncludeExportRanges($includeExportRanges)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIncludeExportRanges()
+        {
+        }
+        /**
+         * Immutable. The URI of the Service Consumer VPC that the Producer VPC is
+         * peered with.
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * Immutable. The name of the VPC peering between the Service Consumer VPC and
+         * the Producer VPC (defined in the Tenant project) which is added to the NCC
+         * hub. This peering must be in ACTIVE state.
+         *
+         * @param string $peering
+         */
+        public function setPeering($peering)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeering()
+        {
+        }
+        /**
+         * Output only. The URI of the Producer VPC.
+         *
+         * @param string $producerNetwork
+         */
+        public function setProducerNetwork($producerNetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProducerNetwork()
+        {
+        }
+        /**
+         * Output only. The proposed exclude export IP ranges waiting for hub
+         * administration's approval.
+         *
+         * @param string[] $proposedExcludeExportRanges
+         */
+        public function setProposedExcludeExportRanges($proposedExcludeExportRanges)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProposedExcludeExportRanges()
+        {
+        }
+        /**
+         * Output only. The proposed include export IP ranges waiting for hub
+         * administration's approval.
+         *
+         * @param string[] $proposedIncludeExportRanges
+         */
+        public function setProposedIncludeExportRanges($proposedIncludeExportRanges)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProposedIncludeExportRanges()
+        {
+        }
+        /**
+         * Output only. The Service Consumer Network spoke.
+         *
+         * @param string $serviceConsumerVpcSpoke
+         */
+        public function setServiceConsumerVpcSpoke($serviceConsumerVpcSpoke)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceConsumerVpcSpoke()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Networkconnectivity\LinkedProducerVpcNetwork registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExcludeExportRanges()
-    {
-    }
-    /**
-     * Optional. IP ranges allowed to be included from peering.
-     *
-     * @param string[] $includeExportRanges
-     */
-    public function setIncludeExportRanges($includeExportRanges)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIncludeExportRanges()
-    {
-    }
-    /**
-     * Immutable. The URI of the Service Consumer VPC that the Producer VPC is
-     * peered with.
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetwork()
-    {
-    }
-    /**
-     * Immutable. The name of the VPC peering between the Service Consumer VPC and
-     * the Producer VPC (defined in the Tenant project) which is added to the NCC
-     * hub. This peering must be in ACTIVE state.
-     *
-     * @param string $peering
-     */
-    public function setPeering($peering)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPeering()
-    {
-    }
-    /**
-     * Output only. The URI of the Producer VPC.
-     *
-     * @param string $producerNetwork
-     */
-    public function setProducerNetwork($producerNetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProducerNetwork()
-    {
-    }
-    /**
-     * Output only. The proposed exclude export IP ranges waiting for hub
-     * administration's approval.
-     *
-     * @param string[] $proposedExcludeExportRanges
-     */
-    public function setProposedExcludeExportRanges($proposedExcludeExportRanges)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProposedExcludeExportRanges()
-    {
-    }
-    /**
-     * Output only. The proposed include export IP ranges waiting for hub
-     * administration's approval.
-     *
-     * @param string[] $proposedIncludeExportRanges
-     */
-    public function setProposedIncludeExportRanges($proposedIncludeExportRanges)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProposedIncludeExportRanges()
-    {
-    }
-    /**
-     * Output only. The Service Consumer Network spoke.
-     *
-     * @param string $serviceConsumerVpcSpoke
-     */
-    public function setServiceConsumerVpcSpoke($serviceConsumerVpcSpoke)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceConsumerVpcSpoke()
+    class Google_Service_Networkconnectivity_LinkedProducerVpcNetwork extends \Google\Service\Networkconnectivity\LinkedProducerVpcNetwork
     {
     }
 }

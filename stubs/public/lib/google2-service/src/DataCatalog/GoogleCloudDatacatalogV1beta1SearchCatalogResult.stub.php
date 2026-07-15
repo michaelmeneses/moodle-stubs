@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1SearchCatalogResult extends \Google\Model
-{
-    public $linkedResource;
-    public $modifyTime;
-    public $relativeResourceName;
-    public $searchResultSubtype;
-    public $searchResultType;
-    public function setLinkedResource($linkedResource)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1SearchCatalogResult extends \Google\Model
     {
+        public $linkedResource;
+        public $modifyTime;
+        public $relativeResourceName;
+        public $searchResultSubtype;
+        public $searchResultType;
+        public function setLinkedResource($linkedResource)
+        {
+        }
+        public function getLinkedResource()
+        {
+        }
+        public function setModifyTime($modifyTime)
+        {
+        }
+        public function getModifyTime()
+        {
+        }
+        public function setRelativeResourceName($relativeResourceName)
+        {
+        }
+        public function getRelativeResourceName()
+        {
+        }
+        public function setSearchResultSubtype($searchResultSubtype)
+        {
+        }
+        public function getSearchResultSubtype()
+        {
+        }
+        public function setSearchResultType($searchResultType)
+        {
+        }
+        public function getSearchResultType()
+        {
+        }
     }
-    public function getLinkedResource()
-    {
-    }
-    public function setModifyTime($modifyTime)
-    {
-    }
-    public function getModifyTime()
-    {
-    }
-    public function setRelativeResourceName($relativeResourceName)
-    {
-    }
-    public function getRelativeResourceName()
-    {
-    }
-    public function setSearchResultSubtype($searchResultSubtype)
-    {
-    }
-    public function getSearchResultSubtype()
-    {
-    }
-    public function setSearchResultType($searchResultType)
-    {
-    }
-    public function getSearchResultType()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1SearchCatalogResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1SearchCatalogResult extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1SearchCatalogResult
     {
     }
 }

@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class GoogleApiServiceusageV2betaEnableRule extends \Google\Collection
-{
-    protected $collection_key = 'services';
-    /**
-     * The names of the services that are enabled. Example:
-     * `services/storage.googleapis.com`.
-     *
-     * @var string[]
-     */
-    public $services;
-    /**
-     * The names of the services that are enabled. Example:
-     * `services/storage.googleapis.com`.
-     *
-     * @param string[] $services
-     */
-    public function setServices($services)
+namespace Google\Service\ServiceUsage {
+    class GoogleApiServiceusageV2betaEnableRule extends \Google\Collection
     {
+        protected $collection_key = 'services';
+        /**
+         * The names of the services that are enabled. Example:
+         * `services/storage.googleapis.com`.
+         *
+         * @var string[]
+         */
+        public $services;
+        /**
+         * The names of the services that are enabled. Example:
+         * `services/storage.googleapis.com`.
+         *
+         * @param string[] $services
+         */
+        public function setServices($services)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getServices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ServiceUsage\GoogleApiServiceusageV2betaEnableRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServices()
+    class Google_Service_ServiceUsage_GoogleApiServiceusageV2betaEnableRule extends \Google\Service\ServiceUsage\GoogleApiServiceusageV2betaEnableRule
     {
     }
 }

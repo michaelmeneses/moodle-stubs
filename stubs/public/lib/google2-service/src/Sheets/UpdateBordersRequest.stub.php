@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class UpdateBordersRequest extends \Google\Model
-{
-    protected $bottomType = Border::class;
-    protected $bottomDataType = '';
-    protected $innerHorizontalType = Border::class;
-    protected $innerHorizontalDataType = '';
-    protected $innerVerticalType = Border::class;
-    protected $innerVerticalDataType = '';
-    protected $leftType = Border::class;
-    protected $leftDataType = '';
-    protected $rangeType = GridRange::class;
-    protected $rangeDataType = '';
-    protected $rightType = Border::class;
-    protected $rightDataType = '';
-    protected $topType = Border::class;
-    protected $topDataType = '';
-    /**
-     * The border to put at the bottom of the range.
-     *
-     * @param Border $bottom
-     */
-    public function setBottom(Border $bottom)
+namespace Google\Service\Sheets {
+    class UpdateBordersRequest extends \Google\Model
     {
+        protected $bottomType = Border::class;
+        protected $bottomDataType = '';
+        protected $innerHorizontalType = Border::class;
+        protected $innerHorizontalDataType = '';
+        protected $innerVerticalType = Border::class;
+        protected $innerVerticalDataType = '';
+        protected $leftType = Border::class;
+        protected $leftDataType = '';
+        protected $rangeType = GridRange::class;
+        protected $rangeDataType = '';
+        protected $rightType = Border::class;
+        protected $rightDataType = '';
+        protected $topType = Border::class;
+        protected $topDataType = '';
+        /**
+         * The border to put at the bottom of the range.
+         *
+         * @param Border $bottom
+         */
+        public function setBottom(Border $bottom)
+        {
+        }
+        /**
+         * @return Border
+         */
+        public function getBottom()
+        {
+        }
+        /**
+         * The horizontal border to put within the range.
+         *
+         * @param Border $innerHorizontal
+         */
+        public function setInnerHorizontal(Border $innerHorizontal)
+        {
+        }
+        /**
+         * @return Border
+         */
+        public function getInnerHorizontal()
+        {
+        }
+        /**
+         * The vertical border to put within the range.
+         *
+         * @param Border $innerVertical
+         */
+        public function setInnerVertical(Border $innerVertical)
+        {
+        }
+        /**
+         * @return Border
+         */
+        public function getInnerVertical()
+        {
+        }
+        /**
+         * The border to put at the left of the range.
+         *
+         * @param Border $left
+         */
+        public function setLeft(Border $left)
+        {
+        }
+        /**
+         * @return Border
+         */
+        public function getLeft()
+        {
+        }
+        /**
+         * The range whose borders should be updated.
+         *
+         * @param GridRange $range
+         */
+        public function setRange(GridRange $range)
+        {
+        }
+        /**
+         * @return GridRange
+         */
+        public function getRange()
+        {
+        }
+        /**
+         * The border to put at the right of the range.
+         *
+         * @param Border $right
+         */
+        public function setRight(Border $right)
+        {
+        }
+        /**
+         * @return Border
+         */
+        public function getRight()
+        {
+        }
+        /**
+         * The border to put at the top of the range.
+         *
+         * @param Border $top
+         */
+        public function setTop(Border $top)
+        {
+        }
+        /**
+         * @return Border
+         */
+        public function getTop()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Border
+     * Runtime class alias of \Google\Service\Sheets\UpdateBordersRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBottom()
-    {
-    }
-    /**
-     * The horizontal border to put within the range.
-     *
-     * @param Border $innerHorizontal
-     */
-    public function setInnerHorizontal(Border $innerHorizontal)
-    {
-    }
-    /**
-     * @return Border
-     */
-    public function getInnerHorizontal()
-    {
-    }
-    /**
-     * The vertical border to put within the range.
-     *
-     * @param Border $innerVertical
-     */
-    public function setInnerVertical(Border $innerVertical)
-    {
-    }
-    /**
-     * @return Border
-     */
-    public function getInnerVertical()
-    {
-    }
-    /**
-     * The border to put at the left of the range.
-     *
-     * @param Border $left
-     */
-    public function setLeft(Border $left)
-    {
-    }
-    /**
-     * @return Border
-     */
-    public function getLeft()
-    {
-    }
-    /**
-     * The range whose borders should be updated.
-     *
-     * @param GridRange $range
-     */
-    public function setRange(GridRange $range)
-    {
-    }
-    /**
-     * @return GridRange
-     */
-    public function getRange()
-    {
-    }
-    /**
-     * The border to put at the right of the range.
-     *
-     * @param Border $right
-     */
-    public function setRight(Border $right)
-    {
-    }
-    /**
-     * @return Border
-     */
-    public function getRight()
-    {
-    }
-    /**
-     * The border to put at the top of the range.
-     *
-     * @param Border $top
-     */
-    public function setTop(Border $top)
-    {
-    }
-    /**
-     * @return Border
-     */
-    public function getTop()
+    class Google_Service_Sheets_UpdateBordersRequest extends \Google\Service\Sheets\UpdateBordersRequest
     {
     }
 }

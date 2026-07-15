@@ -30,6 +30,10 @@
  */
 namespace tool_policy\output;
 
+use core\output\mustache_template_finder;
+use plugin_renderer_base;
+use renderable;
+use Exception;
 /**
  * Renderer for the policies plugin.
  *

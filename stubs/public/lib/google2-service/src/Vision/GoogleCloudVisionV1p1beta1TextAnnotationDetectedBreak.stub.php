@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p1beta1TextAnnotationDetectedBreak extends \Google\Model
-{
-    /**
-     * Unknown break label type.
-     */
-    public const TYPE_UNKNOWN = 'UNKNOWN';
-    /**
-     * Regular space.
-     */
-    public const TYPE_SPACE = 'SPACE';
-    /**
-     * Sure space (very wide).
-     */
-    public const TYPE_SURE_SPACE = 'SURE_SPACE';
-    /**
-     * Line-wrapping break.
-     */
-    public const TYPE_EOL_SURE_SPACE = 'EOL_SURE_SPACE';
-    /**
-     * End-line hyphen that is not present in text; does not co-occur with
-     * `SPACE`, `LEADER_SPACE`, or `LINE_BREAK`.
-     */
-    public const TYPE_HYPHEN = 'HYPHEN';
-    /**
-     * Line break that ends a paragraph.
-     */
-    public const TYPE_LINE_BREAK = 'LINE_BREAK';
-    /**
-     * True if break prepends the element.
-     *
-     * @var bool
-     */
-    public $isPrefix;
-    /**
-     * Detected break type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * True if break prepends the element.
-     *
-     * @param bool $isPrefix
-     */
-    public function setIsPrefix($isPrefix)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p1beta1TextAnnotationDetectedBreak extends \Google\Model
     {
+        /**
+         * Unknown break label type.
+         */
+        public const TYPE_UNKNOWN = 'UNKNOWN';
+        /**
+         * Regular space.
+         */
+        public const TYPE_SPACE = 'SPACE';
+        /**
+         * Sure space (very wide).
+         */
+        public const TYPE_SURE_SPACE = 'SURE_SPACE';
+        /**
+         * Line-wrapping break.
+         */
+        public const TYPE_EOL_SURE_SPACE = 'EOL_SURE_SPACE';
+        /**
+         * End-line hyphen that is not present in text; does not co-occur with
+         * `SPACE`, `LEADER_SPACE`, or `LINE_BREAK`.
+         */
+        public const TYPE_HYPHEN = 'HYPHEN';
+        /**
+         * Line break that ends a paragraph.
+         */
+        public const TYPE_LINE_BREAK = 'LINE_BREAK';
+        /**
+         * True if break prepends the element.
+         *
+         * @var bool
+         */
+        public $isPrefix;
+        /**
+         * Detected break type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * True if break prepends the element.
+         *
+         * @param bool $isPrefix
+         */
+        public function setIsPrefix($isPrefix)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsPrefix()
+        {
+        }
+        /**
+         * Detected break type.
+         *
+         * Accepted values: UNKNOWN, SPACE, SURE_SPACE, EOL_SURE_SPACE, HYPHEN,
+         * LINE_BREAK
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p1beta1TextAnnotationDetectedBreak registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsPrefix()
-    {
-    }
-    /**
-     * Detected break type.
-     *
-     * Accepted values: UNKNOWN, SPACE, SURE_SPACE, EOL_SURE_SPACE, HYPHEN,
-     * LINE_BREAK
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Vision_GoogleCloudVisionV1p1beta1TextAnnotationDetectedBreak extends \Google\Service\Vision\GoogleCloudVisionV1p1beta1TextAnnotationDetectedBreak
     {
     }
 }

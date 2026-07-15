@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BleuResults extends \Google\Collection
-{
-    protected $collection_key = 'bleuMetricValues';
-    protected $bleuMetricValuesType = GoogleCloudAiplatformV1BleuMetricValue::class;
-    protected $bleuMetricValuesDataType = 'array';
-    /**
-     * Output only. Bleu metric values.
-     *
-     * @param GoogleCloudAiplatformV1BleuMetricValue[] $bleuMetricValues
-     */
-    public function setBleuMetricValues($bleuMetricValues)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BleuResults extends \Google\Collection
     {
+        protected $collection_key = 'bleuMetricValues';
+        protected $bleuMetricValuesType = GoogleCloudAiplatformV1BleuMetricValue::class;
+        protected $bleuMetricValuesDataType = 'array';
+        /**
+         * Output only. Bleu metric values.
+         *
+         * @param GoogleCloudAiplatformV1BleuMetricValue[] $bleuMetricValues
+         */
+        public function setBleuMetricValues($bleuMetricValues)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1BleuMetricValue[]
+         */
+        public function getBleuMetricValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1BleuMetricValue[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BleuResults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBleuMetricValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BleuResults extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BleuResults
     {
     }
 }

@@ -21,116 +21,125 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class EventAttachment extends \Google\Model
-{
-    /**
-     * ID of the attached file. Read-only. For Google Drive files, this is the ID
-     * of the corresponding Files resource entry in the Drive API.
-     *
-     * @var string
-     */
-    public $fileId;
-    /**
-     * URL link to the attachment. For adding Google Drive file attachments use
-     * the same format as in alternateLink property of the Files resource in the
-     * Drive API. Required when adding an attachment.
-     *
-     * @var string
-     */
-    public $fileUrl;
-    /**
-     * URL link to the attachment's icon. This field can only be modified for
-     * custom third-party attachments.
-     *
-     * @var string
-     */
-    public $iconLink;
-    /**
-     * Internet media type (MIME type) of the attachment.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * Attachment title.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * ID of the attached file. Read-only. For Google Drive files, this is the ID
-     * of the corresponding Files resource entry in the Drive API.
-     *
-     * @param string $fileId
-     */
-    public function setFileId($fileId)
+namespace Google\Service\Calendar {
+    class EventAttachment extends \Google\Model
     {
+        /**
+         * ID of the attached file. Read-only. For Google Drive files, this is the ID
+         * of the corresponding Files resource entry in the Drive API.
+         *
+         * @var string
+         */
+        public $fileId;
+        /**
+         * URL link to the attachment. For adding Google Drive file attachments use
+         * the same format as in alternateLink property of the Files resource in the
+         * Drive API. Required when adding an attachment.
+         *
+         * @var string
+         */
+        public $fileUrl;
+        /**
+         * URL link to the attachment's icon. This field can only be modified for
+         * custom third-party attachments.
+         *
+         * @var string
+         */
+        public $iconLink;
+        /**
+         * Internet media type (MIME type) of the attachment.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * Attachment title.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * ID of the attached file. Read-only. For Google Drive files, this is the ID
+         * of the corresponding Files resource entry in the Drive API.
+         *
+         * @param string $fileId
+         */
+        public function setFileId($fileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileId()
+        {
+        }
+        /**
+         * URL link to the attachment. For adding Google Drive file attachments use
+         * the same format as in alternateLink property of the Files resource in the
+         * Drive API. Required when adding an attachment.
+         *
+         * @param string $fileUrl
+         */
+        public function setFileUrl($fileUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileUrl()
+        {
+        }
+        /**
+         * URL link to the attachment's icon. This field can only be modified for
+         * custom third-party attachments.
+         *
+         * @param string $iconLink
+         */
+        public function setIconLink($iconLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIconLink()
+        {
+        }
+        /**
+         * Internet media type (MIME type) of the attachment.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * Attachment title.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Calendar\EventAttachment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileId()
-    {
-    }
-    /**
-     * URL link to the attachment. For adding Google Drive file attachments use
-     * the same format as in alternateLink property of the Files resource in the
-     * Drive API. Required when adding an attachment.
-     *
-     * @param string $fileUrl
-     */
-    public function setFileUrl($fileUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFileUrl()
-    {
-    }
-    /**
-     * URL link to the attachment's icon. This field can only be modified for
-     * custom third-party attachments.
-     *
-     * @param string $iconLink
-     */
-    public function setIconLink($iconLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIconLink()
-    {
-    }
-    /**
-     * Internet media type (MIME type) of the attachment.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
-    {
-    }
-    /**
-     * Attachment title.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Calendar_EventAttachment extends \Google\Service\Calendar\EventAttachment
     {
     }
 }

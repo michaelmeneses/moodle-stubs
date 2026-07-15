@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class ApplicationReportingSettings extends \Google\Model
-{
-    /**
-     * Whether removed apps are included in application reports.
-     *
-     * @var bool
-     */
-    public $includeRemovedApps;
-    /**
-     * Whether removed apps are included in application reports.
-     *
-     * @param bool $includeRemovedApps
-     */
-    public function setIncludeRemovedApps($includeRemovedApps)
+namespace Google\Service\AndroidManagement {
+    class ApplicationReportingSettings extends \Google\Model
     {
+        /**
+         * Whether removed apps are included in application reports.
+         *
+         * @var bool
+         */
+        public $includeRemovedApps;
+        /**
+         * Whether removed apps are included in application reports.
+         *
+         * @param bool $includeRemovedApps
+         */
+        public function setIncludeRemovedApps($includeRemovedApps)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeRemovedApps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AndroidManagement\ApplicationReportingSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludeRemovedApps()
+    class Google_Service_AndroidManagement_ApplicationReportingSettings extends \Google\Service\AndroidManagement\ApplicationReportingSettings
     {
     }
 }

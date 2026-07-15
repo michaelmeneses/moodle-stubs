@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_files\external;
 
+use coding_exception;
+use core_text;
+use moodle_url;
+use renderer_base;
+use stdClass;
+use stored_file;
 /**
  * Class for exporting stored_file data.
  *

@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1TrajectoryPrecisionInput extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    protected $instancesType = GoogleCloudAiplatformV1TrajectoryPrecisionInstance::class;
-    protected $instancesDataType = 'array';
-    protected $metricSpecType = GoogleCloudAiplatformV1TrajectoryPrecisionSpec::class;
-    protected $metricSpecDataType = '';
-    /**
-     * Required. Repeated TrajectoryPrecision instance.
-     *
-     * @param GoogleCloudAiplatformV1TrajectoryPrecisionInstance[] $instances
-     */
-    public function setInstances($instances)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1TrajectoryPrecisionInput extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        protected $instancesType = GoogleCloudAiplatformV1TrajectoryPrecisionInstance::class;
+        protected $instancesDataType = 'array';
+        protected $metricSpecType = GoogleCloudAiplatformV1TrajectoryPrecisionSpec::class;
+        protected $metricSpecDataType = '';
+        /**
+         * Required. Repeated TrajectoryPrecision instance.
+         *
+         * @param GoogleCloudAiplatformV1TrajectoryPrecisionInstance[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TrajectoryPrecisionInstance[]
+         */
+        public function getInstances()
+        {
+        }
+        /**
+         * Required. Spec for TrajectoryPrecision metric.
+         *
+         * @param GoogleCloudAiplatformV1TrajectoryPrecisionSpec $metricSpec
+         */
+        public function setMetricSpec(GoogleCloudAiplatformV1TrajectoryPrecisionSpec $metricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TrajectoryPrecisionSpec
+         */
+        public function getMetricSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1TrajectoryPrecisionInstance[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrajectoryPrecisionInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstances()
-    {
-    }
-    /**
-     * Required. Spec for TrajectoryPrecision metric.
-     *
-     * @param GoogleCloudAiplatformV1TrajectoryPrecisionSpec $metricSpec
-     */
-    public function setMetricSpec(GoogleCloudAiplatformV1TrajectoryPrecisionSpec $metricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1TrajectoryPrecisionSpec
-     */
-    public function getMetricSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1TrajectoryPrecisionInput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrajectoryPrecisionInput
     {
     }
 }

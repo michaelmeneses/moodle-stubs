@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BatchImportModelEvaluationSlicesResponse extends \Google\Collection
-{
-    protected $collection_key = 'importedModelEvaluationSlices';
-    /**
-     * Output only. List of imported ModelEvaluationSlice.name.
-     *
-     * @var string[]
-     */
-    public $importedModelEvaluationSlices;
-    /**
-     * Output only. List of imported ModelEvaluationSlice.name.
-     *
-     * @param string[] $importedModelEvaluationSlices
-     */
-    public function setImportedModelEvaluationSlices($importedModelEvaluationSlices)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BatchImportModelEvaluationSlicesResponse extends \Google\Collection
     {
+        protected $collection_key = 'importedModelEvaluationSlices';
+        /**
+         * Output only. List of imported ModelEvaluationSlice.name.
+         *
+         * @var string[]
+         */
+        public $importedModelEvaluationSlices;
+        /**
+         * Output only. List of imported ModelEvaluationSlice.name.
+         *
+         * @param string[] $importedModelEvaluationSlices
+         */
+        public function setImportedModelEvaluationSlices($importedModelEvaluationSlices)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getImportedModelEvaluationSlices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchImportModelEvaluationSlicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImportedModelEvaluationSlices()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BatchImportModelEvaluationSlicesResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchImportModelEvaluationSlicesResponse
     {
     }
 }

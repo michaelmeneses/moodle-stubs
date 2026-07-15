@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class InputFieldChoiceInput extends \Google\Collection
-{
-    protected $collection_key = 'options';
-    protected $optionsType = InputFieldChoiceInputChoiceInputOption::class;
-    protected $optionsDataType = 'array';
-    /**
-     * A list of choices. Only one option can be selected.
-     *
-     * @param InputFieldChoiceInputChoiceInputOption[] $options
-     */
-    public function setOptions($options)
+namespace Google\Service\ShoppingContent {
+    class InputFieldChoiceInput extends \Google\Collection
     {
+        protected $collection_key = 'options';
+        protected $optionsType = InputFieldChoiceInputChoiceInputOption::class;
+        protected $optionsDataType = 'array';
+        /**
+         * A list of choices. Only one option can be selected.
+         *
+         * @param InputFieldChoiceInputChoiceInputOption[] $options
+         */
+        public function setOptions($options)
+        {
+        }
+        /**
+         * @return InputFieldChoiceInputChoiceInputOption[]
+         */
+        public function getOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InputFieldChoiceInputChoiceInputOption[]
+     * Runtime class alias of \Google\Service\ShoppingContent\InputFieldChoiceInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOptions()
+    class Google_Service_ShoppingContent_InputFieldChoiceInput extends \Google\Service\ShoppingContent\InputFieldChoiceInput
     {
     }
 }

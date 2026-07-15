@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ParameterManager;
-
-class ParameterVersionPayload extends \Google\Model
-{
-    /**
-     * Required. bytes data for storing payload.
-     *
-     * @var string
-     */
-    public $data;
-    /**
-     * Required. bytes data for storing payload.
-     *
-     * @param string $data
-     */
-    public function setData($data)
+namespace Google\Service\ParameterManager {
+    class ParameterVersionPayload extends \Google\Model
     {
+        /**
+         * Required. bytes data for storing payload.
+         *
+         * @var string
+         */
+        public $data;
+        /**
+         * Required. bytes data for storing payload.
+         *
+         * @param string $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ParameterManager\ParameterVersionPayload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
+    class Google_Service_ParameterManager_ParameterVersionPayload extends \Google\Service\ParameterManager\ParameterVersionPayload
     {
     }
 }

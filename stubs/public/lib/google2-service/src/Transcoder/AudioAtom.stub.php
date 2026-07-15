@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class AudioAtom extends \Google\Collection
-{
-    protected $collection_key = 'channels';
-    protected $channelsType = AudioChannel::class;
-    protected $channelsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $key;
-    /**
-     * @param AudioChannel[]
-     */
-    public function setChannels($channels)
+namespace Google\Service\Transcoder {
+    class AudioAtom extends \Google\Collection
     {
+        protected $collection_key = 'channels';
+        protected $channelsType = AudioChannel::class;
+        protected $channelsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $key;
+        /**
+         * @param AudioChannel[]
+         */
+        public function setChannels($channels)
+        {
+        }
+        /**
+         * @return AudioChannel[]
+         */
+        public function getChannels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AudioChannel[]
+     * Runtime class alias of \Google\Service\Transcoder\AudioAtom registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
+    class Google_Service_Transcoder_AudioAtom extends \Google\Service\Transcoder\AudioAtom
     {
     }
 }

@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksReportV1alphaDataMonitoringResultMetadata extends \Google\Collection
-{
-    protected $collection_key = 'badges';
-    /**
-     * Badges that apply to this result.
-     *
-     * @var string[]
-     */
-    public $badges;
-    /**
-     * The timestamp when this result was first detected within the last 8 weeks.
-     * If not set, it wasn't detected within the last 8 weeks.
-     *
-     * @var string
-     */
-    public $firstDetectedTime;
-    /**
-     * Your app's version name when this result was last detected within the last
-     * 8 weeks. If not set, it wasn't detected within the last 8 weeks.
-     *
-     * @var string
-     */
-    public $lastDetectedAppVersion;
-    /**
-     * The timestamp when this result was last detected within the last 8 weeks.
-     * If not set, it wasn't detected within the last 8 weeks.
-     *
-     * @var string
-     */
-    public $lastDetectedTime;
-    /**
-     * Badges that apply to this result.
-     *
-     * @param string[] $badges
-     */
-    public function setBadges($badges)
+namespace Google\Service\ChecksService {
+    class GoogleChecksReportV1alphaDataMonitoringResultMetadata extends \Google\Collection
     {
+        protected $collection_key = 'badges';
+        /**
+         * Badges that apply to this result.
+         *
+         * @var string[]
+         */
+        public $badges;
+        /**
+         * The timestamp when this result was first detected within the last 8 weeks.
+         * If not set, it wasn't detected within the last 8 weeks.
+         *
+         * @var string
+         */
+        public $firstDetectedTime;
+        /**
+         * Your app's version name when this result was last detected within the last
+         * 8 weeks. If not set, it wasn't detected within the last 8 weeks.
+         *
+         * @var string
+         */
+        public $lastDetectedAppVersion;
+        /**
+         * The timestamp when this result was last detected within the last 8 weeks.
+         * If not set, it wasn't detected within the last 8 weeks.
+         *
+         * @var string
+         */
+        public $lastDetectedTime;
+        /**
+         * Badges that apply to this result.
+         *
+         * @param string[] $badges
+         */
+        public function setBadges($badges)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBadges()
+        {
+        }
+        /**
+         * The timestamp when this result was first detected within the last 8 weeks.
+         * If not set, it wasn't detected within the last 8 weeks.
+         *
+         * @param string $firstDetectedTime
+         */
+        public function setFirstDetectedTime($firstDetectedTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirstDetectedTime()
+        {
+        }
+        /**
+         * Your app's version name when this result was last detected within the last
+         * 8 weeks. If not set, it wasn't detected within the last 8 weeks.
+         *
+         * @param string $lastDetectedAppVersion
+         */
+        public function setLastDetectedAppVersion($lastDetectedAppVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastDetectedAppVersion()
+        {
+        }
+        /**
+         * The timestamp when this result was last detected within the last 8 weeks.
+         * If not set, it wasn't detected within the last 8 weeks.
+         *
+         * @param string $lastDetectedTime
+         */
+        public function setLastDetectedTime($lastDetectedTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastDetectedTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksReportV1alphaDataMonitoringResultMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBadges()
-    {
-    }
-    /**
-     * The timestamp when this result was first detected within the last 8 weeks.
-     * If not set, it wasn't detected within the last 8 weeks.
-     *
-     * @param string $firstDetectedTime
-     */
-    public function setFirstDetectedTime($firstDetectedTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFirstDetectedTime()
-    {
-    }
-    /**
-     * Your app's version name when this result was last detected within the last
-     * 8 weeks. If not set, it wasn't detected within the last 8 weeks.
-     *
-     * @param string $lastDetectedAppVersion
-     */
-    public function setLastDetectedAppVersion($lastDetectedAppVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastDetectedAppVersion()
-    {
-    }
-    /**
-     * The timestamp when this result was last detected within the last 8 weeks.
-     * If not set, it wasn't detected within the last 8 weeks.
-     *
-     * @param string $lastDetectedTime
-     */
-    public function setLastDetectedTime($lastDetectedTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastDetectedTime()
+    class Google_Service_ChecksService_GoogleChecksReportV1alphaDataMonitoringResultMetadata extends \Google\Service\ChecksService\GoogleChecksReportV1alphaDataMonitoringResultMetadata
     {
     }
 }

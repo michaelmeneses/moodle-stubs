@@ -21,317 +21,326 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class Router extends \Google\Collection
-{
-    protected $collection_key = 'nats';
-    protected $bgpType = RouterBgp::class;
-    protected $bgpDataType = '';
-    protected $bgpPeersType = RouterBgpPeer::class;
-    protected $bgpPeersDataType = 'array';
-    /**
-     * Output only. [Output Only] Creation timestamp inRFC3339 text format.
-     *
-     * @var string
-     */
-    public $creationTimestamp;
-    /**
-     * An optional description of this resource. Provide this property when you
-     * create the resource.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Indicates if a router is dedicated for use with encrypted VLAN attachments
-     * (interconnectAttachments).
-     *
-     * @var bool
-     */
-    public $encryptedInterconnectRouter;
-    /**
-     * [Output Only] The unique identifier for the resource. This identifier is
-     * defined by the server.
-     *
-     * @var string
-     */
-    public $id;
-    protected $interfacesType = RouterInterface::class;
-    protected $interfacesDataType = 'array';
-    /**
-     * Output only. [Output Only] Type of resource. Always compute#router for
-     * routers.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $md5AuthenticationKeysType = RouterMd5AuthenticationKey::class;
-    protected $md5AuthenticationKeysDataType = 'array';
-    /**
-     * Name of the resource. Provided by the client when the resource is created.
-     * The name must be 1-63 characters long, and comply withRFC1035.
-     * Specifically, the name must be 1-63 characters long and match the regular
-     * expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character
-     * must be a lowercase letter, and all following characters must be a dash,
-     * lowercase letter, or digit, except the last character, which cannot be a
-     * dash.
-     *
-     * @var string
-     */
-    public $name;
-    protected $natsType = RouterNat::class;
-    protected $natsDataType = 'array';
-    /**
-     * URI of the network to which this router belongs.
-     *
-     * @var string
-     */
-    public $network;
-    protected $paramsType = RouterParams::class;
-    protected $paramsDataType = '';
-    /**
-     * [Output Only] URI of the region where the router resides. You must specify
-     * this field as part of the HTTP request URL. It is not settable as a field
-     * in the request body.
-     *
-     * @var string
-     */
-    public $region;
-    /**
-     * [Output Only] Server-defined URL for the resource.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * BGP information specific to this router.
-     *
-     * @param RouterBgp $bgp
-     */
-    public function setBgp(RouterBgp $bgp)
+namespace Google\Service\Compute {
+    class Router extends \Google\Collection
     {
+        protected $collection_key = 'nats';
+        protected $bgpType = RouterBgp::class;
+        protected $bgpDataType = '';
+        protected $bgpPeersType = RouterBgpPeer::class;
+        protected $bgpPeersDataType = 'array';
+        /**
+         * Output only. [Output Only] Creation timestamp inRFC3339 text format.
+         *
+         * @var string
+         */
+        public $creationTimestamp;
+        /**
+         * An optional description of this resource. Provide this property when you
+         * create the resource.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Indicates if a router is dedicated for use with encrypted VLAN attachments
+         * (interconnectAttachments).
+         *
+         * @var bool
+         */
+        public $encryptedInterconnectRouter;
+        /**
+         * [Output Only] The unique identifier for the resource. This identifier is
+         * defined by the server.
+         *
+         * @var string
+         */
+        public $id;
+        protected $interfacesType = RouterInterface::class;
+        protected $interfacesDataType = 'array';
+        /**
+         * Output only. [Output Only] Type of resource. Always compute#router for
+         * routers.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $md5AuthenticationKeysType = RouterMd5AuthenticationKey::class;
+        protected $md5AuthenticationKeysDataType = 'array';
+        /**
+         * Name of the resource. Provided by the client when the resource is created.
+         * The name must be 1-63 characters long, and comply withRFC1035.
+         * Specifically, the name must be 1-63 characters long and match the regular
+         * expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character
+         * must be a lowercase letter, and all following characters must be a dash,
+         * lowercase letter, or digit, except the last character, which cannot be a
+         * dash.
+         *
+         * @var string
+         */
+        public $name;
+        protected $natsType = RouterNat::class;
+        protected $natsDataType = 'array';
+        /**
+         * URI of the network to which this router belongs.
+         *
+         * @var string
+         */
+        public $network;
+        protected $paramsType = RouterParams::class;
+        protected $paramsDataType = '';
+        /**
+         * [Output Only] URI of the region where the router resides. You must specify
+         * this field as part of the HTTP request URL. It is not settable as a field
+         * in the request body.
+         *
+         * @var string
+         */
+        public $region;
+        /**
+         * [Output Only] Server-defined URL for the resource.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * BGP information specific to this router.
+         *
+         * @param RouterBgp $bgp
+         */
+        public function setBgp(RouterBgp $bgp)
+        {
+        }
+        /**
+         * @return RouterBgp
+         */
+        public function getBgp()
+        {
+        }
+        /**
+         * BGP information that must be configured into the routing stack to establish
+         * BGP peering. This information must specify the peer ASN and either the
+         * interface name, IP address, or peer IP address. Please refer toRFC4273.
+         *
+         * @param RouterBgpPeer[] $bgpPeers
+         */
+        public function setBgpPeers($bgpPeers)
+        {
+        }
+        /**
+         * @return RouterBgpPeer[]
+         */
+        public function getBgpPeers()
+        {
+        }
+        /**
+         * Output only. [Output Only] Creation timestamp inRFC3339 text format.
+         *
+         * @param string $creationTimestamp
+         */
+        public function setCreationTimestamp($creationTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationTimestamp()
+        {
+        }
+        /**
+         * An optional description of this resource. Provide this property when you
+         * create the resource.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Indicates if a router is dedicated for use with encrypted VLAN attachments
+         * (interconnectAttachments).
+         *
+         * @param bool $encryptedInterconnectRouter
+         */
+        public function setEncryptedInterconnectRouter($encryptedInterconnectRouter)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEncryptedInterconnectRouter()
+        {
+        }
+        /**
+         * [Output Only] The unique identifier for the resource. This identifier is
+         * defined by the server.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Router interfaces. To create a BGP peer that uses a router interface, the
+         * interface must have one of the following fields specified:        -
+         * linkedVpnTunnel    - linkedInterconnectAttachment    - subnetwork
+         *
+         * You can create a router interface without any of these fields specified.
+         * However, you cannot create a BGP peer that uses that interface.
+         *
+         * @param RouterInterface[] $interfaces
+         */
+        public function setInterfaces($interfaces)
+        {
+        }
+        /**
+         * @return RouterInterface[]
+         */
+        public function getInterfaces()
+        {
+        }
+        /**
+         * Output only. [Output Only] Type of resource. Always compute#router for
+         * routers.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Keys used for MD5 authentication.
+         *
+         * @param RouterMd5AuthenticationKey[] $md5AuthenticationKeys
+         */
+        public function setMd5AuthenticationKeys($md5AuthenticationKeys)
+        {
+        }
+        /**
+         * @return RouterMd5AuthenticationKey[]
+         */
+        public function getMd5AuthenticationKeys()
+        {
+        }
+        /**
+         * Name of the resource. Provided by the client when the resource is created.
+         * The name must be 1-63 characters long, and comply withRFC1035.
+         * Specifically, the name must be 1-63 characters long and match the regular
+         * expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character
+         * must be a lowercase letter, and all following characters must be a dash,
+         * lowercase letter, or digit, except the last character, which cannot be a
+         * dash.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * A list of NAT services created in this router.
+         *
+         * @param RouterNat[] $nats
+         */
+        public function setNats($nats)
+        {
+        }
+        /**
+         * @return RouterNat[]
+         */
+        public function getNats()
+        {
+        }
+        /**
+         * URI of the network to which this router belongs.
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * Input only. [Input Only] Additional params passed with the request, but not
+         * persisted as part of resource payload.
+         *
+         * @param RouterParams $params
+         */
+        public function setParams(RouterParams $params)
+        {
+        }
+        /**
+         * @return RouterParams
+         */
+        public function getParams()
+        {
+        }
+        /**
+         * [Output Only] URI of the region where the router resides. You must specify
+         * this field as part of the HTTP request URL. It is not settable as a field
+         * in the request body.
+         *
+         * @param string $region
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
+        /**
+         * [Output Only] Server-defined URL for the resource.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RouterBgp
+     * Runtime class alias of \Google\Service\Compute\Router registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBgp()
-    {
-    }
-    /**
-     * BGP information that must be configured into the routing stack to establish
-     * BGP peering. This information must specify the peer ASN and either the
-     * interface name, IP address, or peer IP address. Please refer toRFC4273.
-     *
-     * @param RouterBgpPeer[] $bgpPeers
-     */
-    public function setBgpPeers($bgpPeers)
-    {
-    }
-    /**
-     * @return RouterBgpPeer[]
-     */
-    public function getBgpPeers()
-    {
-    }
-    /**
-     * Output only. [Output Only] Creation timestamp inRFC3339 text format.
-     *
-     * @param string $creationTimestamp
-     */
-    public function setCreationTimestamp($creationTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreationTimestamp()
-    {
-    }
-    /**
-     * An optional description of this resource. Provide this property when you
-     * create the resource.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Indicates if a router is dedicated for use with encrypted VLAN attachments
-     * (interconnectAttachments).
-     *
-     * @param bool $encryptedInterconnectRouter
-     */
-    public function setEncryptedInterconnectRouter($encryptedInterconnectRouter)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEncryptedInterconnectRouter()
-    {
-    }
-    /**
-     * [Output Only] The unique identifier for the resource. This identifier is
-     * defined by the server.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Router interfaces. To create a BGP peer that uses a router interface, the
-     * interface must have one of the following fields specified:        -
-     * linkedVpnTunnel    - linkedInterconnectAttachment    - subnetwork
-     *
-     * You can create a router interface without any of these fields specified.
-     * However, you cannot create a BGP peer that uses that interface.
-     *
-     * @param RouterInterface[] $interfaces
-     */
-    public function setInterfaces($interfaces)
-    {
-    }
-    /**
-     * @return RouterInterface[]
-     */
-    public function getInterfaces()
-    {
-    }
-    /**
-     * Output only. [Output Only] Type of resource. Always compute#router for
-     * routers.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Keys used for MD5 authentication.
-     *
-     * @param RouterMd5AuthenticationKey[] $md5AuthenticationKeys
-     */
-    public function setMd5AuthenticationKeys($md5AuthenticationKeys)
-    {
-    }
-    /**
-     * @return RouterMd5AuthenticationKey[]
-     */
-    public function getMd5AuthenticationKeys()
-    {
-    }
-    /**
-     * Name of the resource. Provided by the client when the resource is created.
-     * The name must be 1-63 characters long, and comply withRFC1035.
-     * Specifically, the name must be 1-63 characters long and match the regular
-     * expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character
-     * must be a lowercase letter, and all following characters must be a dash,
-     * lowercase letter, or digit, except the last character, which cannot be a
-     * dash.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * A list of NAT services created in this router.
-     *
-     * @param RouterNat[] $nats
-     */
-    public function setNats($nats)
-    {
-    }
-    /**
-     * @return RouterNat[]
-     */
-    public function getNats()
-    {
-    }
-    /**
-     * URI of the network to which this router belongs.
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetwork()
-    {
-    }
-    /**
-     * Input only. [Input Only] Additional params passed with the request, but not
-     * persisted as part of resource payload.
-     *
-     * @param RouterParams $params
-     */
-    public function setParams(RouterParams $params)
-    {
-    }
-    /**
-     * @return RouterParams
-     */
-    public function getParams()
-    {
-    }
-    /**
-     * [Output Only] URI of the region where the router resides. You must specify
-     * this field as part of the HTTP request URL. It is not settable as a field
-     * in the request body.
-     *
-     * @param string $region
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegion()
-    {
-    }
-    /**
-     * [Output Only] Server-defined URL for the resource.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
+    class Google_Service_Compute_Router extends \Google\Service\Compute\Router
     {
     }
 }

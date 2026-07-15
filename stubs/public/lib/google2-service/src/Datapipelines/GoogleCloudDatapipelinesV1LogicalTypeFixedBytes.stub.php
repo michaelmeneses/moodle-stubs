@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1LogicalTypeFixedBytes extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $sizeBytes;
-    /**
-     * @param int
-     */
-    public function setSizeBytes($sizeBytes)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1LogicalTypeFixedBytes extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $sizeBytes;
+        /**
+         * @param int
+         */
+        public function setSizeBytes($sizeBytes)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSizeBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1LogicalTypeFixedBytes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSizeBytes()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1LogicalTypeFixedBytes extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1LogicalTypeFixedBytes
     {
     }
 }

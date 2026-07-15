@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectGroupsGetOperationalStatusResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $etag;
-    protected $resultType = InterconnectGroupsOperationalStatus::class;
-    protected $resultDataType = '';
-    /**
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Compute {
+    class InterconnectGroupsGetOperationalStatusResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $etag;
+        protected $resultType = InterconnectGroupsOperationalStatus::class;
+        protected $resultDataType = '';
+        /**
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * @param InterconnectGroupsOperationalStatus $result
+         */
+        public function setResult(InterconnectGroupsOperationalStatus $result)
+        {
+        }
+        /**
+         * @return InterconnectGroupsOperationalStatus
+         */
+        public function getResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InterconnectGroupsGetOperationalStatusResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * @param InterconnectGroupsOperationalStatus $result
-     */
-    public function setResult(InterconnectGroupsOperationalStatus $result)
-    {
-    }
-    /**
-     * @return InterconnectGroupsOperationalStatus
-     */
-    public function getResult()
+    class Google_Service_Compute_InterconnectGroupsGetOperationalStatusResponse extends \Google\Service\Compute\InterconnectGroupsGetOperationalStatusResponse
     {
     }
 }

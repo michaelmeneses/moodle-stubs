@@ -21,138 +21,147 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainArticleSuggestionData extends \Google\Model
-{
-    /**
-     * The system's confidence score that this article is a good match for this
-     * conversation, ranging from 0.0 (completely uncertain) to 1.0 (completely
-     * certain).
-     *
-     * @var float
-     */
-    public $confidenceScore;
-    /**
-     * Map that contains metadata about the Article Suggestion and the document
-     * that it originates from.
-     *
-     * @var string[]
-     */
-    public $metadata;
-    /**
-     * The name of the answer record. Format:
-     * projects/{project}/locations/{location}/answerRecords/{answer_record}
-     *
-     * @var string
-     */
-    public $queryRecord;
-    /**
-     * The knowledge document that this answer was extracted from. Format:
-     * projects/{project}/knowledgeBases/{knowledge_base}/documents/{document}
-     *
-     * @var string
-     */
-    public $source;
-    /**
-     * Article title.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Article URI.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * The system's confidence score that this article is a good match for this
-     * conversation, ranging from 0.0 (completely uncertain) to 1.0 (completely
-     * certain).
-     *
-     * @param float $confidenceScore
-     */
-    public function setConfidenceScore($confidenceScore)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainArticleSuggestionData extends \Google\Model
     {
+        /**
+         * The system's confidence score that this article is a good match for this
+         * conversation, ranging from 0.0 (completely uncertain) to 1.0 (completely
+         * certain).
+         *
+         * @var float
+         */
+        public $confidenceScore;
+        /**
+         * Map that contains metadata about the Article Suggestion and the document
+         * that it originates from.
+         *
+         * @var string[]
+         */
+        public $metadata;
+        /**
+         * The name of the answer record. Format:
+         * projects/{project}/locations/{location}/answerRecords/{answer_record}
+         *
+         * @var string
+         */
+        public $queryRecord;
+        /**
+         * The knowledge document that this answer was extracted from. Format:
+         * projects/{project}/knowledgeBases/{knowledge_base}/documents/{document}
+         *
+         * @var string
+         */
+        public $source;
+        /**
+         * Article title.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Article URI.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * The system's confidence score that this article is a good match for this
+         * conversation, ranging from 0.0 (completely uncertain) to 1.0 (completely
+         * certain).
+         *
+         * @param float $confidenceScore
+         */
+        public function setConfidenceScore($confidenceScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidenceScore()
+        {
+        }
+        /**
+         * Map that contains metadata about the Article Suggestion and the document
+         * that it originates from.
+         *
+         * @param string[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The name of the answer record. Format:
+         * projects/{project}/locations/{location}/answerRecords/{answer_record}
+         *
+         * @param string $queryRecord
+         */
+        public function setQueryRecord($queryRecord)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQueryRecord()
+        {
+        }
+        /**
+         * The knowledge document that this answer was extracted from. Format:
+         * projects/{project}/knowledgeBases/{knowledge_base}/documents/{document}
+         *
+         * @param string $source
+         */
+        public function setSource($source)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * Article title.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * Article URI.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainArticleSuggestionData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidenceScore()
-    {
-    }
-    /**
-     * Map that contains metadata about the Article Suggestion and the document
-     * that it originates from.
-     *
-     * @param string[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The name of the answer record. Format:
-     * projects/{project}/locations/{location}/answerRecords/{answer_record}
-     *
-     * @param string $queryRecord
-     */
-    public function setQueryRecord($queryRecord)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQueryRecord()
-    {
-    }
-    /**
-     * The knowledge document that this answer was extracted from. Format:
-     * projects/{project}/knowledgeBases/{knowledge_base}/documents/{document}
-     *
-     * @param string $source
-     */
-    public function setSource($source)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSource()
-    {
-    }
-    /**
-     * Article title.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * Article URI.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainArticleSuggestionData extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainArticleSuggestionData
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonListingGroupInfo extends \Google\Model
-{
-    /**
-     * Not specified.
-     */
-    public const TYPE_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * Used for return value only. Represents value unknown in this version.
-     */
-    public const TYPE_UNKNOWN = 'UNKNOWN';
-    /**
-     * Subdivision of products along some listing dimension. These nodes are not
-     * used by serving to target listing entries, but is purely to define the
-     * structure of the tree.
-     */
-    public const TYPE_SUBDIVISION = 'SUBDIVISION';
-    /**
-     * Listing group unit that defines a bid.
-     */
-    public const TYPE_UNIT = 'UNIT';
-    /**
-     * Type of the listing group.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Type of the listing group.
-     *
-     * Accepted values: UNSPECIFIED, UNKNOWN, SUBDIVISION, UNIT
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonListingGroupInfo extends \Google\Model
     {
+        /**
+         * Not specified.
+         */
+        public const TYPE_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * Used for return value only. Represents value unknown in this version.
+         */
+        public const TYPE_UNKNOWN = 'UNKNOWN';
+        /**
+         * Subdivision of products along some listing dimension. These nodes are not
+         * used by serving to target listing entries, but is purely to define the
+         * structure of the tree.
+         */
+        public const TYPE_SUBDIVISION = 'SUBDIVISION';
+        /**
+         * Listing group unit that defines a bid.
+         */
+        public const TYPE_UNIT = 'UNIT';
+        /**
+         * Type of the listing group.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Type of the listing group.
+         *
+         * Accepted values: UNSPECIFIED, UNKNOWN, SUBDIVISION, UNIT
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonListingGroupInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonListingGroupInfo extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonListingGroupInfo
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudResourceManager;
-
-class CreateProjectMetadata extends \Google\Model
-{
-    /**
-     * Creation time of the project creation workflow.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * True if the project can be retrieved using `GetProject`. No other
-     * operations on the project are guaranteed to work until the project creation
-     * is complete.
-     *
-     * @var bool
-     */
-    public $gettable;
-    /**
-     * True if the project creation process is complete.
-     *
-     * @var bool
-     */
-    public $ready;
-    /**
-     * Creation time of the project creation workflow.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\CloudResourceManager {
+    class CreateProjectMetadata extends \Google\Model
     {
+        /**
+         * Creation time of the project creation workflow.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * True if the project can be retrieved using `GetProject`. No other
+         * operations on the project are guaranteed to work until the project creation
+         * is complete.
+         *
+         * @var bool
+         */
+        public $gettable;
+        /**
+         * True if the project creation process is complete.
+         *
+         * @var bool
+         */
+        public $ready;
+        /**
+         * Creation time of the project creation workflow.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * True if the project can be retrieved using `GetProject`. No other
+         * operations on the project are guaranteed to work until the project creation
+         * is complete.
+         *
+         * @param bool $gettable
+         */
+        public function setGettable($gettable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getGettable()
+        {
+        }
+        /**
+         * True if the project creation process is complete.
+         *
+         * @param bool $ready
+         */
+        public function setReady($ready)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReady()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudResourceManager\CreateProjectMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * True if the project can be retrieved using `GetProject`. No other
-     * operations on the project are guaranteed to work until the project creation
-     * is complete.
-     *
-     * @param bool $gettable
-     */
-    public function setGettable($gettable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getGettable()
-    {
-    }
-    /**
-     * True if the project creation process is complete.
-     *
-     * @param bool $ready
-     */
-    public function setReady($ready)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReady()
+    class Google_Service_CloudResourceManager_CreateProjectMetadata extends \Google\Service\CloudResourceManager\CreateProjectMetadata
     {
     }
 }

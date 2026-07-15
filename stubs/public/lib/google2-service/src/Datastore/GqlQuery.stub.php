@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class GqlQuery extends \Google\Collection
-{
-    protected $collection_key = 'positionalBindings';
-    /**
-     * When false, the query string must not contain any literals and instead must
-     * bind all values. For example, `SELECT * FROM Kind WHERE a = 'string
-     * literal'` is not allowed, while `SELECT * FROM Kind WHERE a = @value` is.
-     *
-     * @var bool
-     */
-    public $allowLiterals;
-    protected $namedBindingsType = GqlQueryParameter::class;
-    protected $namedBindingsDataType = 'map';
-    protected $positionalBindingsType = GqlQueryParameter::class;
-    protected $positionalBindingsDataType = 'array';
-    /**
-     * A string of the format described
-     * [here](https://cloud.google.com/datastore/docs/apis/gql/gql_reference).
-     *
-     * @var string
-     */
-    public $queryString;
-    /**
-     * When false, the query string must not contain any literals and instead must
-     * bind all values. For example, `SELECT * FROM Kind WHERE a = 'string
-     * literal'` is not allowed, while `SELECT * FROM Kind WHERE a = @value` is.
-     *
-     * @param bool $allowLiterals
-     */
-    public function setAllowLiterals($allowLiterals)
+namespace Google\Service\Datastore {
+    class GqlQuery extends \Google\Collection
     {
+        protected $collection_key = 'positionalBindings';
+        /**
+         * When false, the query string must not contain any literals and instead must
+         * bind all values. For example, `SELECT * FROM Kind WHERE a = 'string
+         * literal'` is not allowed, while `SELECT * FROM Kind WHERE a = @value` is.
+         *
+         * @var bool
+         */
+        public $allowLiterals;
+        protected $namedBindingsType = GqlQueryParameter::class;
+        protected $namedBindingsDataType = 'map';
+        protected $positionalBindingsType = GqlQueryParameter::class;
+        protected $positionalBindingsDataType = 'array';
+        /**
+         * A string of the format described
+         * [here](https://cloud.google.com/datastore/docs/apis/gql/gql_reference).
+         *
+         * @var string
+         */
+        public $queryString;
+        /**
+         * When false, the query string must not contain any literals and instead must
+         * bind all values. For example, `SELECT * FROM Kind WHERE a = 'string
+         * literal'` is not allowed, while `SELECT * FROM Kind WHERE a = @value` is.
+         *
+         * @param bool $allowLiterals
+         */
+        public function setAllowLiterals($allowLiterals)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowLiterals()
+        {
+        }
+        /**
+         * For each non-reserved named binding site in the query string, there must be
+         * a named parameter with that name, but not necessarily the inverse. Key must
+         * match regex `A-Za-z_$*`, must not match regex `__.*__`, and must not be
+         * `""`.
+         *
+         * @param GqlQueryParameter[] $namedBindings
+         */
+        public function setNamedBindings($namedBindings)
+        {
+        }
+        /**
+         * @return GqlQueryParameter[]
+         */
+        public function getNamedBindings()
+        {
+        }
+        /**
+         * Numbered binding site @1 references the first numbered parameter,
+         * effectively using 1-based indexing, rather than the usual 0. For each
+         * binding site numbered i in `query_string`, there must be an i-th numbered
+         * parameter. The inverse must also be true.
+         *
+         * @param GqlQueryParameter[] $positionalBindings
+         */
+        public function setPositionalBindings($positionalBindings)
+        {
+        }
+        /**
+         * @return GqlQueryParameter[]
+         */
+        public function getPositionalBindings()
+        {
+        }
+        /**
+         * A string of the format described
+         * [here](https://cloud.google.com/datastore/docs/apis/gql/gql_reference).
+         *
+         * @param string $queryString
+         */
+        public function setQueryString($queryString)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQueryString()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Datastore\GqlQuery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowLiterals()
-    {
-    }
-    /**
-     * For each non-reserved named binding site in the query string, there must be
-     * a named parameter with that name, but not necessarily the inverse. Key must
-     * match regex `A-Za-z_$*`, must not match regex `__.*__`, and must not be
-     * `""`.
-     *
-     * @param GqlQueryParameter[] $namedBindings
-     */
-    public function setNamedBindings($namedBindings)
-    {
-    }
-    /**
-     * @return GqlQueryParameter[]
-     */
-    public function getNamedBindings()
-    {
-    }
-    /**
-     * Numbered binding site @1 references the first numbered parameter,
-     * effectively using 1-based indexing, rather than the usual 0. For each
-     * binding site numbered i in `query_string`, there must be an i-th numbered
-     * parameter. The inverse must also be true.
-     *
-     * @param GqlQueryParameter[] $positionalBindings
-     */
-    public function setPositionalBindings($positionalBindings)
-    {
-    }
-    /**
-     * @return GqlQueryParameter[]
-     */
-    public function getPositionalBindings()
-    {
-    }
-    /**
-     * A string of the format described
-     * [here](https://cloud.google.com/datastore/docs/apis/gql/gql_reference).
-     *
-     * @param string $queryString
-     */
-    public function setQueryString($queryString)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQueryString()
+    class Google_Service_Datastore_GqlQuery extends \Google\Service\Datastore\GqlQuery
     {
     }
 }

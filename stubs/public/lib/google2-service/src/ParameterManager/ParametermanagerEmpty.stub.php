@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ParameterManager;
-
-class ParametermanagerEmpty extends \Google\Model
-{
+namespace Google\Service\ParameterManager {
+    class ParametermanagerEmpty extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ParameterManager\ParametermanagerEmpty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ParameterManager_ParametermanagerEmpty extends \Google\Service\ParameterManager\ParametermanagerEmpty
+    {
+    }
 }

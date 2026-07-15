@@ -21,48 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Area120Tables\Resource;
-
-/**
- * The "tables" collection of methods.
- * Typical usage is:
- *  <code>
- *   $area120tablesService = new Google\Service\Area120Tables(...);
- *   $tables = $area120tablesService->tables;
- *  </code>
- */
-class Tables extends \Google\Service\Resource
-{
+namespace Google\Service\Area120Tables\Resource {
+    use Google\Service\Area120Tables\ListTablesResponse;
+    use Google\Service\Area120Tables\Table;
     /**
-     * Gets a table. Returns NOT_FOUND if the table does not exist. (tables.get)
-     *
-     * @param string $name Required. The name of the table to retrieve. Format:
-     * tables/{table}
-     * @param array $optParams Optional parameters.
-     * @return Table
-     * @throws \Google\Service\Exception
+     * The "tables" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $area120tablesService = new Google\Service\Area120Tables(...);
+     *   $tables = $area120tablesService->tables;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class Tables extends \Google\Service\Resource
     {
+        /**
+         * Gets a table. Returns NOT_FOUND if the table does not exist. (tables.get)
+         *
+         * @param string $name Required. The name of the table to retrieve. Format:
+         * tables/{table}
+         * @param array $optParams Optional parameters.
+         * @return Table
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists tables for the user. (tables.listTables)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string orderBy Optional. Sorting order for the list of tables on
+         * createTime/updateTime.
+         * @opt_param int pageSize The maximum number of tables to return. The service
+         * may return fewer than this value. If unspecified, at most 20 tables are
+         * returned. The maximum value is 100; values above 100 are coerced to 100.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListTables` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListTables` must match the call
+         * that provided the page token.
+         * @return ListTablesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listTables($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists tables for the user. (tables.listTables)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string orderBy Optional. Sorting order for the list of tables on
-     * createTime/updateTime.
-     * @opt_param int pageSize The maximum number of tables to return. The service
-     * may return fewer than this value. If unspecified, at most 20 tables are
-     * returned. The maximum value is 100; values above 100 are coerced to 100.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListTables` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListTables` must match the call
-     * that provided the page token.
-     * @return ListTablesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Area120Tables\Resource\Tables registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listTables($optParams = [])
+    class Google_Service_Area120Tables_Resource_Tables extends \Google\Service\Area120Tables\Resource\Tables
     {
     }
 }

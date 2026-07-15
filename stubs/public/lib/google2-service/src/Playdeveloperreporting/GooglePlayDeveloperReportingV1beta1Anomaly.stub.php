@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting;
-
-class GooglePlayDeveloperReportingV1beta1Anomaly extends \Google\Collection
-{
-    protected $collection_key = 'dimensions';
-    protected $dimensionsType = GooglePlayDeveloperReportingV1beta1DimensionValue::class;
-    protected $dimensionsDataType = 'array';
-    protected $metricType = GooglePlayDeveloperReportingV1beta1MetricValue::class;
-    protected $metricDataType = '';
-    /**
-     * Metric set resource where the anomaly was detected.
-     *
-     * @var string
-     */
-    public $metricSet;
-    /**
-     * Identifier. Name of the anomaly. Format: apps/{app}/anomalies/{anomaly}
-     *
-     * @var string
-     */
-    public $name;
-    protected $timelineSpecType = GooglePlayDeveloperReportingV1beta1TimelineSpec::class;
-    protected $timelineSpecDataType = '';
-    /**
-     * Combination of dimensions in which the anomaly was detected.
-     *
-     * @param GooglePlayDeveloperReportingV1beta1DimensionValue[] $dimensions
-     */
-    public function setDimensions($dimensions)
+namespace Google\Service\Playdeveloperreporting {
+    class GooglePlayDeveloperReportingV1beta1Anomaly extends \Google\Collection
     {
+        protected $collection_key = 'dimensions';
+        protected $dimensionsType = GooglePlayDeveloperReportingV1beta1DimensionValue::class;
+        protected $dimensionsDataType = 'array';
+        protected $metricType = GooglePlayDeveloperReportingV1beta1MetricValue::class;
+        protected $metricDataType = '';
+        /**
+         * Metric set resource where the anomaly was detected.
+         *
+         * @var string
+         */
+        public $metricSet;
+        /**
+         * Identifier. Name of the anomaly. Format: apps/{app}/anomalies/{anomaly}
+         *
+         * @var string
+         */
+        public $name;
+        protected $timelineSpecType = GooglePlayDeveloperReportingV1beta1TimelineSpec::class;
+        protected $timelineSpecDataType = '';
+        /**
+         * Combination of dimensions in which the anomaly was detected.
+         *
+         * @param GooglePlayDeveloperReportingV1beta1DimensionValue[] $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return GooglePlayDeveloperReportingV1beta1DimensionValue[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * Metric where the anomaly was detected, together with the anomalous value.
+         *
+         * @param GooglePlayDeveloperReportingV1beta1MetricValue $metric
+         */
+        public function setMetric(GooglePlayDeveloperReportingV1beta1MetricValue $metric)
+        {
+        }
+        /**
+         * @return GooglePlayDeveloperReportingV1beta1MetricValue
+         */
+        public function getMetric()
+        {
+        }
+        /**
+         * Metric set resource where the anomaly was detected.
+         *
+         * @param string $metricSet
+         */
+        public function setMetricSet($metricSet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetricSet()
+        {
+        }
+        /**
+         * Identifier. Name of the anomaly. Format: apps/{app}/anomalies/{anomaly}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Timeline specification that covers the anomaly period.
+         *
+         * @param GooglePlayDeveloperReportingV1beta1TimelineSpec $timelineSpec
+         */
+        public function setTimelineSpec(GooglePlayDeveloperReportingV1beta1TimelineSpec $timelineSpec)
+        {
+        }
+        /**
+         * @return GooglePlayDeveloperReportingV1beta1TimelineSpec
+         */
+        public function getTimelineSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePlayDeveloperReportingV1beta1DimensionValue[]
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1Anomaly registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensions()
-    {
-    }
-    /**
-     * Metric where the anomaly was detected, together with the anomalous value.
-     *
-     * @param GooglePlayDeveloperReportingV1beta1MetricValue $metric
-     */
-    public function setMetric(GooglePlayDeveloperReportingV1beta1MetricValue $metric)
-    {
-    }
-    /**
-     * @return GooglePlayDeveloperReportingV1beta1MetricValue
-     */
-    public function getMetric()
-    {
-    }
-    /**
-     * Metric set resource where the anomaly was detected.
-     *
-     * @param string $metricSet
-     */
-    public function setMetricSet($metricSet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetricSet()
-    {
-    }
-    /**
-     * Identifier. Name of the anomaly. Format: apps/{app}/anomalies/{anomaly}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Timeline specification that covers the anomaly period.
-     *
-     * @param GooglePlayDeveloperReportingV1beta1TimelineSpec $timelineSpec
-     */
-    public function setTimelineSpec(GooglePlayDeveloperReportingV1beta1TimelineSpec $timelineSpec)
-    {
-    }
-    /**
-     * @return GooglePlayDeveloperReportingV1beta1TimelineSpec
-     */
-    public function getTimelineSpec()
+    class Google_Service_Playdeveloperreporting_GooglePlayDeveloperReportingV1beta1Anomaly extends \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1Anomaly
     {
     }
 }

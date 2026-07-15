@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class Event extends \Google\Model
-{
-    protected $dateType = Date::class;
-    protected $dateDataType = '';
-    /**
-     * Output only. The type of the event translated and formatted in the viewer's
-     * account locale or the `Accept-Language` HTTP header locale.
-     *
-     * @var string
-     */
-    public $formattedType;
-    protected $metadataType = FieldMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * The type of the event. The type can be custom or one of these predefined
-     * values: * `anniversary` * `other`
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The date of the event.
-     *
-     * @param Date $date
-     */
-    public function setDate(Date $date)
+namespace Google\Service\PeopleService {
+    class Event extends \Google\Model
     {
+        protected $dateType = Date::class;
+        protected $dateDataType = '';
+        /**
+         * Output only. The type of the event translated and formatted in the viewer's
+         * account locale or the `Accept-Language` HTTP header locale.
+         *
+         * @var string
+         */
+        public $formattedType;
+        protected $metadataType = FieldMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * The type of the event. The type can be custom or one of these predefined
+         * values: * `anniversary` * `other`
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The date of the event.
+         *
+         * @param Date $date
+         */
+        public function setDate(Date $date)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getDate()
+        {
+        }
+        /**
+         * Output only. The type of the event translated and formatted in the viewer's
+         * account locale or the `Accept-Language` HTTP header locale.
+         *
+         * @param string $formattedType
+         */
+        public function setFormattedType($formattedType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormattedType()
+        {
+        }
+        /**
+         * Metadata about the event.
+         *
+         * @param FieldMetadata $metadata
+         */
+        public function setMetadata(FieldMetadata $metadata)
+        {
+        }
+        /**
+         * @return FieldMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The type of the event. The type can be custom or one of these predefined
+         * values: * `anniversary` * `other`
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Date
+     * Runtime class alias of \Google\Service\PeopleService\Event registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDate()
-    {
-    }
-    /**
-     * Output only. The type of the event translated and formatted in the viewer's
-     * account locale or the `Accept-Language` HTTP header locale.
-     *
-     * @param string $formattedType
-     */
-    public function setFormattedType($formattedType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFormattedType()
-    {
-    }
-    /**
-     * Metadata about the event.
-     *
-     * @param FieldMetadata $metadata
-     */
-    public function setMetadata(FieldMetadata $metadata)
-    {
-    }
-    /**
-     * @return FieldMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The type of the event. The type can be custom or one of these predefined
-     * values: * `anniversary` * `other`
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_PeopleService_Event extends \Google\Service\PeopleService\Event
     {
     }
 }

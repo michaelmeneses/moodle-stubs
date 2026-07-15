@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSensePlatform;
-
-class ListAccountsResponse extends \Google\Collection
-{
-    protected $collection_key = 'accounts';
-    protected $accountsType = Account::class;
-    protected $accountsDataType = 'array';
-    /**
-     * Continuation token used to page through accounts. To retrieve the next page
-     * of the results, set the next request's "page_token" value to this.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The Accounts returned in the list response. Represented by a partial view
-     * of the Account resource, populating `name` and `creation_request_id`.
-     *
-     * @param Account[] $accounts
-     */
-    public function setAccounts($accounts)
+namespace Google\Service\AdSensePlatform {
+    class ListAccountsResponse extends \Google\Collection
     {
+        protected $collection_key = 'accounts';
+        protected $accountsType = Account::class;
+        protected $accountsDataType = 'array';
+        /**
+         * Continuation token used to page through accounts. To retrieve the next page
+         * of the results, set the next request's "page_token" value to this.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The Accounts returned in the list response. Represented by a partial view
+         * of the Account resource, populating `name` and `creation_request_id`.
+         *
+         * @param Account[] $accounts
+         */
+        public function setAccounts($accounts)
+        {
+        }
+        /**
+         * @return Account[]
+         */
+        public function getAccounts()
+        {
+        }
+        /**
+         * Continuation token used to page through accounts. To retrieve the next page
+         * of the results, set the next request's "page_token" value to this.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Account[]
+     * Runtime class alias of \Google\Service\AdSensePlatform\ListAccountsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccounts()
-    {
-    }
-    /**
-     * Continuation token used to page through accounts. To retrieve the next page
-     * of the results, set the next request's "page_token" value to this.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AdSensePlatform_ListAccountsResponse extends \Google\Service\AdSensePlatform\ListAccountsResponse
     {
     }
 }

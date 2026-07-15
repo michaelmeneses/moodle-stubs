@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MergeVersionAliasesRequest extends \Google\Collection
-{
-    protected $collection_key = 'versionAliases';
-    /**
-     * Required. The set of version aliases to merge. The alias should be at most
-     * 128 characters, and match `a-z{0,126}[a-z-0-9]`. Add the `-` prefix to an
-     * alias means removing that alias from the version. `-` is NOT counted in the
-     * 128 characters. Example: `-golden` means removing the `golden` alias from
-     * the version. There is NO ordering in aliases, which means 1) The aliases
-     * returned from GetModel API might not have the exactly same order from this
-     * MergeVersionAliases API. 2) Adding and deleting the same alias in the
-     * request is not recommended, and the 2 operations will be cancelled out.
-     *
-     * @var string[]
-     */
-    public $versionAliases;
-    /**
-     * Required. The set of version aliases to merge. The alias should be at most
-     * 128 characters, and match `a-z{0,126}[a-z-0-9]`. Add the `-` prefix to an
-     * alias means removing that alias from the version. `-` is NOT counted in the
-     * 128 characters. Example: `-golden` means removing the `golden` alias from
-     * the version. There is NO ordering in aliases, which means 1) The aliases
-     * returned from GetModel API might not have the exactly same order from this
-     * MergeVersionAliases API. 2) Adding and deleting the same alias in the
-     * request is not recommended, and the 2 operations will be cancelled out.
-     *
-     * @param string[] $versionAliases
-     */
-    public function setVersionAliases($versionAliases)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MergeVersionAliasesRequest extends \Google\Collection
     {
+        protected $collection_key = 'versionAliases';
+        /**
+         * Required. The set of version aliases to merge. The alias should be at most
+         * 128 characters, and match `a-z{0,126}[a-z-0-9]`. Add the `-` prefix to an
+         * alias means removing that alias from the version. `-` is NOT counted in the
+         * 128 characters. Example: `-golden` means removing the `golden` alias from
+         * the version. There is NO ordering in aliases, which means 1) The aliases
+         * returned from GetModel API might not have the exactly same order from this
+         * MergeVersionAliases API. 2) Adding and deleting the same alias in the
+         * request is not recommended, and the 2 operations will be cancelled out.
+         *
+         * @var string[]
+         */
+        public $versionAliases;
+        /**
+         * Required. The set of version aliases to merge. The alias should be at most
+         * 128 characters, and match `a-z{0,126}[a-z-0-9]`. Add the `-` prefix to an
+         * alias means removing that alias from the version. `-` is NOT counted in the
+         * 128 characters. Example: `-golden` means removing the `golden` alias from
+         * the version. There is NO ordering in aliases, which means 1) The aliases
+         * returned from GetModel API might not have the exactly same order from this
+         * MergeVersionAliases API. 2) Adding and deleting the same alias in the
+         * request is not recommended, and the 2 operations will be cancelled out.
+         *
+         * @param string[] $versionAliases
+         */
+        public function setVersionAliases($versionAliases)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getVersionAliases()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MergeVersionAliasesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVersionAliases()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MergeVersionAliasesRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MergeVersionAliasesRequest
     {
     }
 }

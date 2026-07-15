@@ -21,94 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub\Resource;
-
-/**
- * The "fleets" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gkehubService = new Google\Service\GKEHub(...);
- *   $fleets = $gkehubService->projects_locations_fleets;
- *  </code>
- */
-class ProjectsLocationsFleets extends \Google\Service\Resource
-{
+namespace Google\Service\GKEHub\Resource {
+    use Google\Service\GKEHub\Fleet;
+    use Google\Service\GKEHub\ListFleetsResponse;
+    use Google\Service\GKEHub\Operation;
     /**
-     * Creates a fleet. (fleets.create)
-     *
-     * @param string $parent Required. The parent (project and location) where the
-     * Fleet will be created. Specified in the format `projects/locations`.
-     * @param Fleet $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "fleets" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gkehubService = new Google\Service\GKEHub(...);
+     *   $fleets = $gkehubService->projects_locations_fleets;
+     *  </code>
      */
-    public function create($parent, Fleet $postBody, $optParams = [])
+    class ProjectsLocationsFleets extends \Google\Service\Resource
     {
+        /**
+         * Creates a fleet. (fleets.create)
+         *
+         * @param string $parent Required. The parent (project and location) where the
+         * Fleet will be created. Specified in the format `projects/locations`.
+         * @param Fleet $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Fleet $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Removes a Fleet. There must be no memberships remaining in the Fleet.
+         * (fleets.delete)
+         *
+         * @param string $name Required. The Fleet resource name in the format
+         * `projects/locations/fleets`.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns the details of a fleet. (fleets.get)
+         *
+         * @param string $name Required. The Fleet resource name in the format
+         * `projects/locations/fleets`.
+         * @param array $optParams Optional parameters.
+         * @return Fleet
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns all fleets within an organization or a project that the caller has
+         * access to. (fleets.listProjectsLocationsFleets)
+         *
+         * @param string $parent Required. The organization or project to list for
+         * Fleets under, in the format `organizations/locations` or
+         * `projects/locations`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of fleets to return. The
+         * service may return fewer than this value. If unspecified, at most 200 fleets
+         * will be returned. The maximum value is 1000; values above 1000 will be
+         * coerced to 1000.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListFleets` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListFleets` must match the call
+         * that provided the page token.
+         * @return ListFleetsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsFleets($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a fleet. (fleets.patch)
+         *
+         * @param string $name Output only. The full, unique resource name of this fleet
+         * in the format of `projects/{project}/locations/{location}/fleets/{fleet}`.
+         * Each Google Cloud project can have at most one fleet resource, named
+         * "default".
+         * @param Fleet $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. The fields to be updated;
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, Fleet $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Removes a Fleet. There must be no memberships remaining in the Fleet.
-     * (fleets.delete)
-     *
-     * @param string $name Required. The Fleet resource name in the format
-     * `projects/locations/fleets`.
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\GKEHub\Resource\ProjectsLocationsFleets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns the details of a fleet. (fleets.get)
-     *
-     * @param string $name Required. The Fleet resource name in the format
-     * `projects/locations/fleets`.
-     * @param array $optParams Optional parameters.
-     * @return Fleet
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns all fleets within an organization or a project that the caller has
-     * access to. (fleets.listProjectsLocationsFleets)
-     *
-     * @param string $parent Required. The organization or project to list for
-     * Fleets under, in the format `organizations/locations` or
-     * `projects/locations`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of fleets to return. The
-     * service may return fewer than this value. If unspecified, at most 200 fleets
-     * will be returned. The maximum value is 1000; values above 1000 will be
-     * coerced to 1000.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListFleets` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListFleets` must match the call
-     * that provided the page token.
-     * @return ListFleetsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsFleets($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a fleet. (fleets.patch)
-     *
-     * @param string $name Output only. The full, unique resource name of this fleet
-     * in the format of `projects/{project}/locations/{location}/fleets/{fleet}`.
-     * Each Google Cloud project can have at most one fleet resource, named
-     * "default".
-     * @param Fleet $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. The fields to be updated;
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, Fleet $postBody, $optParams = [])
+    class Google_Service_GKEHub_Resource_ProjectsLocationsFleets extends \Google\Service\GKEHub\Resource\ProjectsLocationsFleets
     {
     }
 }

@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IAMCredentials;
-
-class WorkloadIdentityPoolAllowedLocations extends \Google\Collection
-{
-    protected $collection_key = 'locations';
-    /**
-     * Output only. The hex encoded bitmap of the trust boundary locations
-     *
-     * @var string
-     */
-    public $encodedLocations;
-    /**
-     * Output only. The human readable trust boundary locations. For example,
-     * ["us-central1", "europe-west1"]
-     *
-     * @var string[]
-     */
-    public $locations;
-    /**
-     * Output only. The hex encoded bitmap of the trust boundary locations
-     *
-     * @param string $encodedLocations
-     */
-    public function setEncodedLocations($encodedLocations)
+namespace Google\Service\IAMCredentials {
+    class WorkloadIdentityPoolAllowedLocations extends \Google\Collection
     {
+        protected $collection_key = 'locations';
+        /**
+         * Output only. The hex encoded bitmap of the trust boundary locations
+         *
+         * @var string
+         */
+        public $encodedLocations;
+        /**
+         * Output only. The human readable trust boundary locations. For example,
+         * ["us-central1", "europe-west1"]
+         *
+         * @var string[]
+         */
+        public $locations;
+        /**
+         * Output only. The hex encoded bitmap of the trust boundary locations
+         *
+         * @param string $encodedLocations
+         */
+        public function setEncodedLocations($encodedLocations)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncodedLocations()
+        {
+        }
+        /**
+         * Output only. The human readable trust boundary locations. For example,
+         * ["us-central1", "europe-west1"]
+         *
+         * @param string[] $locations
+         */
+        public function setLocations($locations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLocations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IAMCredentials\WorkloadIdentityPoolAllowedLocations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncodedLocations()
-    {
-    }
-    /**
-     * Output only. The human readable trust boundary locations. For example,
-     * ["us-central1", "europe-west1"]
-     *
-     * @param string[] $locations
-     */
-    public function setLocations($locations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLocations()
+    class Google_Service_IAMCredentials_WorkloadIdentityPoolAllowedLocations extends \Google\Service\IAMCredentials\WorkloadIdentityPoolAllowedLocations
     {
     }
 }

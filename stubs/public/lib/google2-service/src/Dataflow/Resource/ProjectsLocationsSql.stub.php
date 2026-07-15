@@ -21,35 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow\Resource;
-
-/**
- * The "sql" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dataflowService = new Google\Service\Dataflow(...);
- *   $sql = $dataflowService->projects_locations_sql;
- *  </code>
- */
-class ProjectsLocationsSql extends \Google\Service\Resource
-{
+namespace Google\Service\Dataflow\Resource {
+    use Google\Service\Dataflow\ValidateResponse;
     /**
-     * Validates a GoogleSQL query for Cloud Dataflow syntax. Will always confirm
-     * the given query parses correctly, and if able to look up schema information
-     * from DataCatalog, will validate that the query analyzes properly as well.
-     * (sql.validate)
-     *
-     * @param string $projectId Required. The ID of the Cloud Platform project that
-     * the job belongs to.
-     * @param string $location The [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) to which
-     * to direct the request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string query The sql query to validate.
-     * @return ValidateResponse
+     * The "sql" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dataflowService = new Google\Service\Dataflow(...);
+     *   $sql = $dataflowService->projects_locations_sql;
+     *  </code>
      */
-    public function validate($projectId, $location, $optParams = [])
+    class ProjectsLocationsSql extends \Google\Service\Resource
+    {
+        /**
+         * Validates a GoogleSQL query for Cloud Dataflow syntax. Will always confirm
+         * the given query parses correctly, and if able to look up schema information
+         * from DataCatalog, will validate that the query analyzes properly as well.
+         * (sql.validate)
+         *
+         * @param string $projectId Required. The ID of the Cloud Platform project that
+         * the job belongs to.
+         * @param string $location The [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) to which
+         * to direct the request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string query The sql query to validate.
+         * @return ValidateResponse
+         */
+        public function validate($projectId, $location, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dataflow\Resource\ProjectsLocationsSql registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dataflow_Resource_ProjectsLocationsSql extends \Google\Service\Dataflow\Resource\ProjectsLocationsSql
     {
     }
 }

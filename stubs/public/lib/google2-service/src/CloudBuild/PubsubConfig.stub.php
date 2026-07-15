@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class PubsubConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $serviceAccountEmail;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @var string
-     */
-    public $subscription;
-    /**
-     * @var string
-     */
-    public $topic;
-    /**
-     * @param string
-     */
-    public function setServiceAccountEmail($serviceAccountEmail)
+namespace Google\Service\CloudBuild {
+    class PubsubConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $serviceAccountEmail;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @var string
+         */
+        public $subscription;
+        /**
+         * @var string
+         */
+        public $topic;
+        /**
+         * @param string
+         */
+        public function setServiceAccountEmail($serviceAccountEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccountEmail()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSubscription($subscription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubscription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTopic($topic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\PubsubConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServiceAccountEmail()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSubscription($subscription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubscription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTopic($topic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopic()
+    class Google_Service_CloudBuild_PubsubConfig extends \Google\Service\CloudBuild\PubsubConfig
     {
     }
 }

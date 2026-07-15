@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalAdminBgpPeerConfig extends \Google\Collection
-{
-    protected $collection_key = 'controlPlaneNodes';
-    /**
-     * Required. BGP autonomous system number (ASN) for the network that contains
-     * the external peer device.
-     *
-     * @var string
-     */
-    public $asn;
-    /**
-     * The IP address of the control plane node that connects to the external
-     * peer. If you don't specify any control plane nodes, all control plane nodes
-     * can connect to the external peer. If you specify one or more IP addresses,
-     * only the nodes specified participate in peering sessions.
-     *
-     * @var string[]
-     */
-    public $controlPlaneNodes;
-    /**
-     * Required. The IP address of the external peer device.
-     *
-     * @var string
-     */
-    public $ipAddress;
-    /**
-     * Required. BGP autonomous system number (ASN) for the network that contains
-     * the external peer device.
-     *
-     * @param string $asn
-     */
-    public function setAsn($asn)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalAdminBgpPeerConfig extends \Google\Collection
     {
+        protected $collection_key = 'controlPlaneNodes';
+        /**
+         * Required. BGP autonomous system number (ASN) for the network that contains
+         * the external peer device.
+         *
+         * @var string
+         */
+        public $asn;
+        /**
+         * The IP address of the control plane node that connects to the external
+         * peer. If you don't specify any control plane nodes, all control plane nodes
+         * can connect to the external peer. If you specify one or more IP addresses,
+         * only the nodes specified participate in peering sessions.
+         *
+         * @var string[]
+         */
+        public $controlPlaneNodes;
+        /**
+         * Required. The IP address of the external peer device.
+         *
+         * @var string
+         */
+        public $ipAddress;
+        /**
+         * Required. BGP autonomous system number (ASN) for the network that contains
+         * the external peer device.
+         *
+         * @param string $asn
+         */
+        public function setAsn($asn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAsn()
+        {
+        }
+        /**
+         * The IP address of the control plane node that connects to the external
+         * peer. If you don't specify any control plane nodes, all control plane nodes
+         * can connect to the external peer. If you specify one or more IP addresses,
+         * only the nodes specified participate in peering sessions.
+         *
+         * @param string[] $controlPlaneNodes
+         */
+        public function setControlPlaneNodes($controlPlaneNodes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getControlPlaneNodes()
+        {
+        }
+        /**
+         * Required. The IP address of the external peer device.
+         *
+         * @param string $ipAddress
+         */
+        public function setIpAddress($ipAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalAdminBgpPeerConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAsn()
-    {
-    }
-    /**
-     * The IP address of the control plane node that connects to the external
-     * peer. If you don't specify any control plane nodes, all control plane nodes
-     * can connect to the external peer. If you specify one or more IP addresses,
-     * only the nodes specified participate in peering sessions.
-     *
-     * @param string[] $controlPlaneNodes
-     */
-    public function setControlPlaneNodes($controlPlaneNodes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getControlPlaneNodes()
-    {
-    }
-    /**
-     * Required. The IP address of the external peer device.
-     *
-     * @param string $ipAddress
-     */
-    public function setIpAddress($ipAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIpAddress()
+    class Google_Service_GKEOnPrem_BareMetalAdminBgpPeerConfig extends \Google\Service\GKEOnPrem\BareMetalAdminBgpPeerConfig
     {
     }
 }

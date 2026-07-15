@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class DataprocParameters extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $cluster;
-    /**
-     * @param string
-     */
-    public function setCluster($cluster)
+namespace Google\Service\AIPlatformNotebooks {
+    class DataprocParameters extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $cluster;
+        /**
+         * @param string
+         */
+        public function setCluster($cluster)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCluster()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\DataprocParameters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCluster()
+    class Google_Service_AIPlatformNotebooks_DataprocParameters extends \Google\Service\AIPlatformNotebooks\DataprocParameters
     {
     }
 }

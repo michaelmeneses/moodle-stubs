@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GoogleChatV1ContextualAddOnMarkupCardSection extends \Google\Collection
-{
-    protected $collection_key = 'widgets';
-    /**
-     * @var string
-     */
-    public $header;
-    protected $widgetsType = GoogleChatV1WidgetMarkup::class;
-    protected $widgetsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setHeader($header)
+namespace Google\Service\CloudSearch {
+    class GoogleChatV1ContextualAddOnMarkupCardSection extends \Google\Collection
     {
+        protected $collection_key = 'widgets';
+        /**
+         * @var string
+         */
+        public $header;
+        protected $widgetsType = GoogleChatV1WidgetMarkup::class;
+        protected $widgetsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setHeader($header)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeader()
+        {
+        }
+        /**
+         * @param GoogleChatV1WidgetMarkup[]
+         */
+        public function setWidgets($widgets)
+        {
+        }
+        /**
+         * @return GoogleChatV1WidgetMarkup[]
+         */
+        public function getWidgets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\GoogleChatV1ContextualAddOnMarkupCardSection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeader()
-    {
-    }
-    /**
-     * @param GoogleChatV1WidgetMarkup[]
-     */
-    public function setWidgets($widgets)
-    {
-    }
-    /**
-     * @return GoogleChatV1WidgetMarkup[]
-     */
-    public function getWidgets()
+    class Google_Service_CloudSearch_GoogleChatV1ContextualAddOnMarkupCardSection extends \Google\Service\CloudSearch\GoogleChatV1ContextualAddOnMarkupCardSection
     {
     }
 }

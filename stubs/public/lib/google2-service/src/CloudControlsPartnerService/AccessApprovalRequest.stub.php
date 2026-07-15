@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudControlsPartnerService;
-
-class AccessApprovalRequest extends \Google\Model
-{
-    /**
-     * Identifier. Format: `organizations/{organization}/locations/{location}/cust
-     * omers/{customer}/workloads/{workload}/accessApprovalRequests/{access_approv
-     * al_request}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The time at which approval was requested.
-     *
-     * @var string
-     */
-    public $requestTime;
-    /**
-     * The requested expiration for the approval. If the request is approved,
-     * access will be granted from the time of approval until the expiration time.
-     *
-     * @var string
-     */
-    public $requestedExpirationTime;
-    protected $requestedReasonType = AccessReason::class;
-    protected $requestedReasonDataType = '';
-    /**
-     * Identifier. Format: `organizations/{organization}/locations/{location}/cust
-     * omers/{customer}/workloads/{workload}/accessApprovalRequests/{access_approv
-     * al_request}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CloudControlsPartnerService {
+    class AccessApprovalRequest extends \Google\Model
     {
+        /**
+         * Identifier. Format: `organizations/{organization}/locations/{location}/cust
+         * omers/{customer}/workloads/{workload}/accessApprovalRequests/{access_approv
+         * al_request}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The time at which approval was requested.
+         *
+         * @var string
+         */
+        public $requestTime;
+        /**
+         * The requested expiration for the approval. If the request is approved,
+         * access will be granted from the time of approval until the expiration time.
+         *
+         * @var string
+         */
+        public $requestedExpirationTime;
+        protected $requestedReasonType = AccessReason::class;
+        protected $requestedReasonDataType = '';
+        /**
+         * Identifier. Format: `organizations/{organization}/locations/{location}/cust
+         * omers/{customer}/workloads/{workload}/accessApprovalRequests/{access_approv
+         * al_request}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The time at which approval was requested.
+         *
+         * @param string $requestTime
+         */
+        public function setRequestTime($requestTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestTime()
+        {
+        }
+        /**
+         * The requested expiration for the approval. If the request is approved,
+         * access will be granted from the time of approval until the expiration time.
+         *
+         * @param string $requestedExpirationTime
+         */
+        public function setRequestedExpirationTime($requestedExpirationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestedExpirationTime()
+        {
+        }
+        /**
+         * The justification for which approval is being requested.
+         *
+         * @param AccessReason $requestedReason
+         */
+        public function setRequestedReason(AccessReason $requestedReason)
+        {
+        }
+        /**
+         * @return AccessReason
+         */
+        public function getRequestedReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudControlsPartnerService\AccessApprovalRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The time at which approval was requested.
-     *
-     * @param string $requestTime
-     */
-    public function setRequestTime($requestTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestTime()
-    {
-    }
-    /**
-     * The requested expiration for the approval. If the request is approved,
-     * access will be granted from the time of approval until the expiration time.
-     *
-     * @param string $requestedExpirationTime
-     */
-    public function setRequestedExpirationTime($requestedExpirationTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestedExpirationTime()
-    {
-    }
-    /**
-     * The justification for which approval is being requested.
-     *
-     * @param AccessReason $requestedReason
-     */
-    public function setRequestedReason(AccessReason $requestedReason)
-    {
-    }
-    /**
-     * @return AccessReason
-     */
-    public function getRequestedReason()
+    class Google_Service_CloudControlsPartnerService_AccessApprovalRequest extends \Google\Service\CloudControlsPartnerService\AccessApprovalRequest
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class BucketObjectRetention extends \Google\Model
-{
-    /**
-     * The bucket's object retention mode. Can be Enabled.
-     *
-     * @var string
-     */
-    public $mode;
-    /**
-     * The bucket's object retention mode. Can be Enabled.
-     *
-     * @param string $mode
-     */
-    public function setMode($mode)
+namespace Google\Service\Storage {
+    class BucketObjectRetention extends \Google\Model
     {
+        /**
+         * The bucket's object retention mode. Can be Enabled.
+         *
+         * @var string
+         */
+        public $mode;
+        /**
+         * The bucket's object retention mode. Can be Enabled.
+         *
+         * @param string $mode
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storage\BucketObjectRetention registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMode()
+    class Google_Service_Storage_BucketObjectRetention extends \Google\Service\Storage\BucketObjectRetention
     {
     }
 }

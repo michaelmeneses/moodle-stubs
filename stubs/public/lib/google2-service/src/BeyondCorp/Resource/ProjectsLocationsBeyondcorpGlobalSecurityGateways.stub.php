@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp\Resource;
-
-/**
- * The "securityGateways" collection of methods.
- * Typical usage is:
- *  <code>
- *   $beyondcorpService = new Google\Service\BeyondCorp(...);
- *   $securityGateways = $beyondcorpService->projects_locations_global_securityGateways;
- *  </code>
- */
-class ProjectsLocationsBeyondcorpGlobalSecurityGateways extends \Google\Service\Resource
-{
+namespace Google\Service\BeyondCorp\Resource {
+    /**
+     * The "securityGateways" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $beyondcorpService = new Google\Service\BeyondCorp(...);
+     *   $securityGateways = $beyondcorpService->projects_locations_global_securityGateways;
+     *  </code>
+     */
+    class ProjectsLocationsBeyondcorpGlobalSecurityGateways extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\BeyondCorp\Resource\ProjectsLocationsBeyondcorpGlobalSecurityGateways registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_BeyondCorp_Resource_ProjectsLocationsBeyondcorpGlobalSecurityGateways extends \Google\Service\BeyondCorp\Resource\ProjectsLocationsBeyondcorpGlobalSecurityGateways
+    {
+    }
 }

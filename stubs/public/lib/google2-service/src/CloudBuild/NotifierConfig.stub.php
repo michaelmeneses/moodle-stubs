@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class NotifierConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $apiVersion;
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $metadataType = NotifierMetadata::class;
-    protected $metadataDataType = '';
-    public $metadata;
-    protected $specType = NotifierSpec::class;
-    protected $specDataType = '';
-    public $spec;
-    /**
-     * @param string
-     */
-    public function setApiVersion($apiVersion)
+namespace Google\Service\CloudBuild {
+    class NotifierConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $apiVersion;
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $metadataType = NotifierMetadata::class;
+        protected $metadataDataType = '';
+        public $metadata;
+        protected $specType = NotifierSpec::class;
+        protected $specDataType = '';
+        public $spec;
+        /**
+         * @param string
+         */
+        public function setApiVersion($apiVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiVersion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param NotifierMetadata
+         */
+        public function setMetadata(NotifierMetadata $metadata)
+        {
+        }
+        /**
+         * @return NotifierMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * @param NotifierSpec
+         */
+        public function setSpec(NotifierSpec $spec)
+        {
+        }
+        /**
+         * @return NotifierSpec
+         */
+        public function getSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\NotifierConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiVersion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param NotifierMetadata
-     */
-    public function setMetadata(NotifierMetadata $metadata)
-    {
-    }
-    /**
-     * @return NotifierMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * @param NotifierSpec
-     */
-    public function setSpec(NotifierSpec $spec)
-    {
-    }
-    /**
-     * @return NotifierSpec
-     */
-    public function getSpec()
+    class Google_Service_CloudBuild_NotifierConfig extends \Google\Service\CloudBuild\NotifierConfig
     {
     }
 }

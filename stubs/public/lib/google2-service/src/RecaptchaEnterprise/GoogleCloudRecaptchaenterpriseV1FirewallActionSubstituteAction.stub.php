@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1FirewallActionSubstituteAction extends \Google\Model
-{
-    /**
-     * Optional. The address to redirect to. The target is a relative path in the
-     * current host. Example: "/blog/404.html".
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Optional. The address to redirect to. The target is a relative path in the
-     * current host. Example: "/blog/404.html".
-     *
-     * @param string $path
-     */
-    public function setPath($path)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1FirewallActionSubstituteAction extends \Google\Model
     {
+        /**
+         * Optional. The address to redirect to. The target is a relative path in the
+         * current host. Example: "/blog/404.html".
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Optional. The address to redirect to. The target is a relative path in the
+         * current host. Example: "/blog/404.html".
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1FirewallActionSubstituteAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPath()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1FirewallActionSubstituteAction extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1FirewallActionSubstituteAction
     {
     }
 }

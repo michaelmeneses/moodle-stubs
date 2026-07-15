@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SaaSServiceManagement;
-
-class Dependency extends \Google\Model
-{
-    /**
-     * Required. An alias for the dependency. Used for input variable mapping.
-     *
-     * @var string
-     */
-    public $alias;
-    /**
-     * Required. Immutable. The unit kind of the dependency.
-     *
-     * @var string
-     */
-    public $unitKind;
-    /**
-     * Required. An alias for the dependency. Used for input variable mapping.
-     *
-     * @param string $alias
-     */
-    public function setAlias($alias)
+namespace Google\Service\SaaSServiceManagement {
+    class Dependency extends \Google\Model
     {
+        /**
+         * Required. An alias for the dependency. Used for input variable mapping.
+         *
+         * @var string
+         */
+        public $alias;
+        /**
+         * Required. Immutable. The unit kind of the dependency.
+         *
+         * @var string
+         */
+        public $unitKind;
+        /**
+         * Required. An alias for the dependency. Used for input variable mapping.
+         *
+         * @param string $alias
+         */
+        public function setAlias($alias)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAlias()
+        {
+        }
+        /**
+         * Required. Immutable. The unit kind of the dependency.
+         *
+         * @param string $unitKind
+         */
+        public function setUnitKind($unitKind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnitKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SaaSServiceManagement\Dependency registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlias()
-    {
-    }
-    /**
-     * Required. Immutable. The unit kind of the dependency.
-     *
-     * @param string $unitKind
-     */
-    public function setUnitKind($unitKind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnitKind()
+    class Google_Service_SaaSServiceManagement_Dependency extends \Google\Service\SaaSServiceManagement\Dependency
     {
     }
 }

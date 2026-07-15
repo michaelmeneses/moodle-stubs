@@ -21,30 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DoubleClickBidManager\Resource;
-
-/**
- * The "reports" collection of methods.
- * Typical usage is:
- *  <code>
- *   $doubleclickbidmanagerService = new Google\Service\DoubleClickBidManager(...);
- *   $reports = $doubleclickbidmanagerService->reports;
- *  </code>
- */
-class Reports extends \Google\Service\Resource
-{
+namespace Google\Service\DoubleClickBidManager\Resource {
+    use Google\Service\DoubleClickBidManager\ListReportsResponse;
     /**
-     * Retrieves stored reports. (reports.listreports)
-     *
-     * @param string $queryId Query ID with which the reports are associated.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum number of results per page. Must be between 1
-     * and 100. Defaults to 100 if unspecified.
-     * @opt_param string pageToken Optional pagination token.
-     * @return ListReportsResponse
+     * The "reports" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $doubleclickbidmanagerService = new Google\Service\DoubleClickBidManager(...);
+     *   $reports = $doubleclickbidmanagerService->reports;
+     *  </code>
      */
-    public function listreports($queryId, $optParams = [])
+    class Reports extends \Google\Service\Resource
+    {
+        /**
+         * Retrieves stored reports. (reports.listreports)
+         *
+         * @param string $queryId Query ID with which the reports are associated.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum number of results per page. Must be between 1
+         * and 100. Defaults to 100 if unspecified.
+         * @opt_param string pageToken Optional pagination token.
+         * @return ListReportsResponse
+         */
+        public function listreports($queryId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DoubleClickBidManager\Resource\Reports registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DoubleClickBidManager_Resource_Reports extends \Google\Service\DoubleClickBidManager\Resource\Reports
     {
     }
 }

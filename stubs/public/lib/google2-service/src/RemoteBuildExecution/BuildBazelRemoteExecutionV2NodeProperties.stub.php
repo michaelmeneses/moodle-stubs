@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2NodeProperties extends \Google\Collection
-{
-    protected $collection_key = 'properties';
-    public $mtime;
-    protected $propertiesType = BuildBazelRemoteExecutionV2NodeProperty::class;
-    protected $propertiesDataType = 'array';
-    public $unixMode;
-    public function setMtime($mtime)
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2NodeProperties extends \Google\Collection
     {
+        protected $collection_key = 'properties';
+        public $mtime;
+        protected $propertiesType = BuildBazelRemoteExecutionV2NodeProperty::class;
+        protected $propertiesDataType = 'array';
+        public $unixMode;
+        public function setMtime($mtime)
+        {
+        }
+        public function getMtime()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2NodeProperty[]
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2NodeProperty[]
+         */
+        public function getProperties()
+        {
+        }
+        public function setUnixMode($unixMode)
+        {
+        }
+        public function getUnixMode()
+        {
+        }
     }
-    public function getMtime()
-    {
-    }
+}
+namespace {
     /**
-     * @param BuildBazelRemoteExecutionV2NodeProperty[]
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2NodeProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setProperties($properties)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2NodeProperty[]
-     */
-    public function getProperties()
-    {
-    }
-    public function setUnixMode($unixMode)
-    {
-    }
-    public function getUnixMode()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2NodeProperties extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2NodeProperties
     {
     }
 }

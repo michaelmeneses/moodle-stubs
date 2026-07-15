@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMemorystoreforMemcached;
-
-class SetTagsResponse extends \Google\Model
-{
-    /**
-     * Required. The full One Platform resource name of the service resource.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Tag keys/values directly bound to this resource. Each item in the
-     * map must be expressed as " : ". For example: "123/environment" :
-     * "production", "123/costCenter" : "marketing"
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * A checksum based on the current bindings. This field is always set in
-     * server responses.
-     *
-     * @var string
-     */
-    public $tagsEtag;
-    /**
-     * Required. The full One Platform resource name of the service resource.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CloudMemorystoreforMemcached {
+    class SetTagsResponse extends \Google\Model
     {
+        /**
+         * Required. The full One Platform resource name of the service resource.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Tag keys/values directly bound to this resource. Each item in the
+         * map must be expressed as " : ". For example: "123/environment" :
+         * "production", "123/costCenter" : "marketing"
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * A checksum based on the current bindings. This field is always set in
+         * server responses.
+         *
+         * @var string
+         */
+        public $tagsEtag;
+        /**
+         * Required. The full One Platform resource name of the service resource.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Tag keys/values directly bound to this resource. Each item in the
+         * map must be expressed as " : ". For example: "123/environment" :
+         * "production", "123/costCenter" : "marketing"
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
+        /**
+         * A checksum based on the current bindings. This field is always set in
+         * server responses.
+         *
+         * @param string $tagsEtag
+         */
+        public function setTagsEtag($tagsEtag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTagsEtag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudMemorystoreforMemcached\SetTagsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Tag keys/values directly bound to this resource. Each item in the
-     * map must be expressed as " : ". For example: "123/environment" :
-     * "production", "123/costCenter" : "marketing"
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
-    {
-    }
-    /**
-     * A checksum based on the current bindings. This field is always set in
-     * server responses.
-     *
-     * @param string $tagsEtag
-     */
-    public function setTagsEtag($tagsEtag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTagsEtag()
+    class Google_Service_CloudMemorystoreforMemcached_SetTagsResponse extends \Google\Service\CloudMemorystoreforMemcached\SetTagsResponse
     {
     }
 }

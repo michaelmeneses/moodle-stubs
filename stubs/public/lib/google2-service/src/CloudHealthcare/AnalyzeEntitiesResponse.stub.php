@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class AnalyzeEntitiesResponse extends \Google\Collection
-{
-    protected $collection_key = 'relationships';
-    protected $entitiesType = Entity::class;
-    protected $entitiesDataType = 'array';
-    protected $entityMentionsType = EntityMention::class;
-    protected $entityMentionsDataType = 'array';
-    /**
-     * The FHIR bundle ([`R4`](http://hl7.org/fhir/R4/bundle.html)) that includes
-     * all the entities, the entity mentions, and the relationships in JSON
-     * format.
-     *
-     * @var string
-     */
-    public $fhirBundle;
-    protected $relationshipsType = EntityMentionRelationship::class;
-    protected $relationshipsDataType = 'array';
-    /**
-     * The union of all the candidate entities that the entity_mentions in this
-     * response could link to. These are UMLS concepts or normalized mention
-     * content.
-     *
-     * @param Entity[] $entities
-     */
-    public function setEntities($entities)
+namespace Google\Service\CloudHealthcare {
+    class AnalyzeEntitiesResponse extends \Google\Collection
     {
+        protected $collection_key = 'relationships';
+        protected $entitiesType = Entity::class;
+        protected $entitiesDataType = 'array';
+        protected $entityMentionsType = EntityMention::class;
+        protected $entityMentionsDataType = 'array';
+        /**
+         * The FHIR bundle ([`R4`](http://hl7.org/fhir/R4/bundle.html)) that includes
+         * all the entities, the entity mentions, and the relationships in JSON
+         * format.
+         *
+         * @var string
+         */
+        public $fhirBundle;
+        protected $relationshipsType = EntityMentionRelationship::class;
+        protected $relationshipsDataType = 'array';
+        /**
+         * The union of all the candidate entities that the entity_mentions in this
+         * response could link to. These are UMLS concepts or normalized mention
+         * content.
+         *
+         * @param Entity[] $entities
+         */
+        public function setEntities($entities)
+        {
+        }
+        /**
+         * @return Entity[]
+         */
+        public function getEntities()
+        {
+        }
+        /**
+         * The `entity_mentions` field contains all the annotated medical entities
+         * that were mentioned in the provided document.
+         *
+         * @param EntityMention[] $entityMentions
+         */
+        public function setEntityMentions($entityMentions)
+        {
+        }
+        /**
+         * @return EntityMention[]
+         */
+        public function getEntityMentions()
+        {
+        }
+        /**
+         * The FHIR bundle ([`R4`](http://hl7.org/fhir/R4/bundle.html)) that includes
+         * all the entities, the entity mentions, and the relationships in JSON
+         * format.
+         *
+         * @param string $fhirBundle
+         */
+        public function setFhirBundle($fhirBundle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFhirBundle()
+        {
+        }
+        /**
+         * relationships contains all the binary relationships that were identified
+         * between entity mentions within the provided document.
+         *
+         * @param EntityMentionRelationship[] $relationships
+         */
+        public function setRelationships($relationships)
+        {
+        }
+        /**
+         * @return EntityMentionRelationship[]
+         */
+        public function getRelationships()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Entity[]
+     * Runtime class alias of \Google\Service\CloudHealthcare\AnalyzeEntitiesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntities()
-    {
-    }
-    /**
-     * The `entity_mentions` field contains all the annotated medical entities
-     * that were mentioned in the provided document.
-     *
-     * @param EntityMention[] $entityMentions
-     */
-    public function setEntityMentions($entityMentions)
-    {
-    }
-    /**
-     * @return EntityMention[]
-     */
-    public function getEntityMentions()
-    {
-    }
-    /**
-     * The FHIR bundle ([`R4`](http://hl7.org/fhir/R4/bundle.html)) that includes
-     * all the entities, the entity mentions, and the relationships in JSON
-     * format.
-     *
-     * @param string $fhirBundle
-     */
-    public function setFhirBundle($fhirBundle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFhirBundle()
-    {
-    }
-    /**
-     * relationships contains all the binary relationships that were identified
-     * between entity mentions within the provided document.
-     *
-     * @param EntityMentionRelationship[] $relationships
-     */
-    public function setRelationships($relationships)
-    {
-    }
-    /**
-     * @return EntityMentionRelationship[]
-     */
-    public function getRelationships()
+    class Google_Service_CloudHealthcare_AnalyzeEntitiesResponse extends \Google\Service\CloudHealthcare\AnalyzeEntitiesResponse
     {
     }
 }

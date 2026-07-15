@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FunctionResponseFileData extends \Google\Model
-{
-    /**
-     * Optional. Display name of the file data. Used to provide a label or
-     * filename to distinguish file datas. This field is only returned in
-     * PromptMessage for prompt management. It is currently used in the Gemini
-     * GenerateContent calls only when server side tools (code_execution,
-     * google_search, and url_context) are enabled.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Required. URI.
-     *
-     * @var string
-     */
-    public $fileUri;
-    /**
-     * Required. The IANA standard MIME type of the source data.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * Optional. Display name of the file data. Used to provide a label or
-     * filename to distinguish file datas. This field is only returned in
-     * PromptMessage for prompt management. It is currently used in the Gemini
-     * GenerateContent calls only when server side tools (code_execution,
-     * google_search, and url_context) are enabled.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FunctionResponseFileData extends \Google\Model
     {
+        /**
+         * Optional. Display name of the file data. Used to provide a label or
+         * filename to distinguish file datas. This field is only returned in
+         * PromptMessage for prompt management. It is currently used in the Gemini
+         * GenerateContent calls only when server side tools (code_execution,
+         * google_search, and url_context) are enabled.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Required. URI.
+         *
+         * @var string
+         */
+        public $fileUri;
+        /**
+         * Required. The IANA standard MIME type of the source data.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * Optional. Display name of the file data. Used to provide a label or
+         * filename to distinguish file datas. This field is only returned in
+         * PromptMessage for prompt management. It is currently used in the Gemini
+         * GenerateContent calls only when server side tools (code_execution,
+         * google_search, and url_context) are enabled.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Required. URI.
+         *
+         * @param string $fileUri
+         */
+        public function setFileUri($fileUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileUri()
+        {
+        }
+        /**
+         * Required. The IANA standard MIME type of the source data.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FunctionResponseFileData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Required. URI.
-     *
-     * @param string $fileUri
-     */
-    public function setFileUri($fileUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFileUri()
-    {
-    }
-    /**
-     * Required. The IANA standard MIME type of the source data.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FunctionResponseFileData extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FunctionResponseFileData
     {
     }
 }

@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class DealTermsRubiconNonGuaranteedTerms extends \Google\Model
-{
-    protected $priorityPriceType = Price::class;
-    protected $priorityPriceDataType = '';
-    protected $standardPriceType = Price::class;
-    protected $standardPriceDataType = '';
-    /**
-     * @param Price
-     */
-    public function setPriorityPrice(Price $priorityPrice)
+namespace Google\Service\AdExchangeBuyer {
+    class DealTermsRubiconNonGuaranteedTerms extends \Google\Model
     {
+        protected $priorityPriceType = Price::class;
+        protected $priorityPriceDataType = '';
+        protected $standardPriceType = Price::class;
+        protected $standardPriceDataType = '';
+        /**
+         * @param Price
+         */
+        public function setPriorityPrice(Price $priorityPrice)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getPriorityPrice()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setStandardPrice(Price $standardPrice)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getStandardPrice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Price
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\DealTermsRubiconNonGuaranteedTerms registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPriorityPrice()
-    {
-    }
-    /**
-     * @param Price
-     */
-    public function setStandardPrice(Price $standardPrice)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getStandardPrice()
+    class Google_Service_AdExchangeBuyer_DealTermsRubiconNonGuaranteedTerms extends \Google\Service\AdExchangeBuyer\DealTermsRubiconNonGuaranteedTerms
     {
     }
 }

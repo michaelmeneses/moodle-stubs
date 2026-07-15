@@ -29,6 +29,13 @@
  */
 namespace mod_quiz\privacy;
 
+use core_privacy\local\request\writer;
+use core_privacy\local\request\transform;
+use core_privacy\local\request\contextlist;
+use core_privacy\local\request\approved_contextlist;
+use core_privacy\local\request\deletion_criteria;
+use core_privacy\local\metadata\collection;
+use core_privacy\manager;
 /**
  * Privacy Subsystem implementation for mod_quiz.
  *

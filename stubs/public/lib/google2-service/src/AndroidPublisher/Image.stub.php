@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class Image extends \Google\Model
-{
-    /**
-     * A unique id representing this image.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * A sha1 hash of the image.
-     *
-     * @var string
-     */
-    public $sha1;
-    /**
-     * A sha256 hash of the image.
-     *
-     * @var string
-     */
-    public $sha256;
-    /**
-     * A URL that will serve a preview of the image.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * A unique id representing this image.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\AndroidPublisher {
+    class Image extends \Google\Model
     {
+        /**
+         * A unique id representing this image.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * A sha1 hash of the image.
+         *
+         * @var string
+         */
+        public $sha1;
+        /**
+         * A sha256 hash of the image.
+         *
+         * @var string
+         */
+        public $sha256;
+        /**
+         * A URL that will serve a preview of the image.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * A unique id representing this image.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * A sha1 hash of the image.
+         *
+         * @param string $sha1
+         */
+        public function setSha1($sha1)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSha1()
+        {
+        }
+        /**
+         * A sha256 hash of the image.
+         *
+         * @param string $sha256
+         */
+        public function setSha256($sha256)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSha256()
+        {
+        }
+        /**
+         * A URL that will serve a preview of the image.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\Image registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * A sha1 hash of the image.
-     *
-     * @param string $sha1
-     */
-    public function setSha1($sha1)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSha1()
-    {
-    }
-    /**
-     * A sha256 hash of the image.
-     *
-     * @param string $sha256
-     */
-    public function setSha256($sha256)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSha256()
-    {
-    }
-    /**
-     * A URL that will serve a preview of the image.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_AndroidPublisher_Image extends \Google\Service\AndroidPublisher\Image
     {
     }
 }

@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 namespace core_sms\hook;
 
+use core_sms\gateway;
+use core\hook\stoppable_trait;
 /**
  * Hook before sms gateway is disabled.
  *

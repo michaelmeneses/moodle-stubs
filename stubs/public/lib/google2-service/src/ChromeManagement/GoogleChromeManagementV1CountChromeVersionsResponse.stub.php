@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1CountChromeVersionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'browserVersions';
-    protected $browserVersionsType = GoogleChromeManagementV1BrowserVersion::class;
-    protected $browserVersionsDataType = 'array';
-    /**
-     * Token to specify the next page of the request.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Total number browser versions matching request.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * List of all browser versions and their install counts.
-     *
-     * @param GoogleChromeManagementV1BrowserVersion[] $browserVersions
-     */
-    public function setBrowserVersions($browserVersions)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1CountChromeVersionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'browserVersions';
+        protected $browserVersionsType = GoogleChromeManagementV1BrowserVersion::class;
+        protected $browserVersionsDataType = 'array';
+        /**
+         * Token to specify the next page of the request.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Total number browser versions matching request.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * List of all browser versions and their install counts.
+         *
+         * @param GoogleChromeManagementV1BrowserVersion[] $browserVersions
+         */
+        public function setBrowserVersions($browserVersions)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1BrowserVersion[]
+         */
+        public function getBrowserVersions()
+        {
+        }
+        /**
+         * Token to specify the next page of the request.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Total number browser versions matching request.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromeManagementV1BrowserVersion[]
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1CountChromeVersionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBrowserVersions()
-    {
-    }
-    /**
-     * Token to specify the next page of the request.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Total number browser versions matching request.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1CountChromeVersionsResponse extends \Google\Service\ChromeManagement\GoogleChromeManagementV1CountChromeVersionsResponse
     {
     }
 }

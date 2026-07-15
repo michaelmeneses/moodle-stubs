@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class IntegerRangePartition extends \Google\Model
-{
-    /**
-     * Required. The partitioning column.
-     *
-     * @var string
-     */
-    public $column;
-    /**
-     * Required. The ending value for range partitioning (exclusive).
-     *
-     * @var string
-     */
-    public $end;
-    /**
-     * Required. The interval of each range within the partition.
-     *
-     * @var string
-     */
-    public $interval;
-    /**
-     * Required. The starting value for range partitioning (inclusive).
-     *
-     * @var string
-     */
-    public $start;
-    /**
-     * Required. The partitioning column.
-     *
-     * @param string $column
-     */
-    public function setColumn($column)
+namespace Google\Service\Datastream {
+    class IntegerRangePartition extends \Google\Model
     {
+        /**
+         * Required. The partitioning column.
+         *
+         * @var string
+         */
+        public $column;
+        /**
+         * Required. The ending value for range partitioning (exclusive).
+         *
+         * @var string
+         */
+        public $end;
+        /**
+         * Required. The interval of each range within the partition.
+         *
+         * @var string
+         */
+        public $interval;
+        /**
+         * Required. The starting value for range partitioning (inclusive).
+         *
+         * @var string
+         */
+        public $start;
+        /**
+         * Required. The partitioning column.
+         *
+         * @param string $column
+         */
+        public function setColumn($column)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getColumn()
+        {
+        }
+        /**
+         * Required. The ending value for range partitioning (exclusive).
+         *
+         * @param string $end
+         */
+        public function setEnd($end)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnd()
+        {
+        }
+        /**
+         * Required. The interval of each range within the partition.
+         *
+         * @param string $interval
+         */
+        public function setInterval($interval)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInterval()
+        {
+        }
+        /**
+         * Required. The starting value for range partitioning (inclusive).
+         *
+         * @param string $start
+         */
+        public function setStart($start)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\IntegerRangePartition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumn()
-    {
-    }
-    /**
-     * Required. The ending value for range partitioning (exclusive).
-     *
-     * @param string $end
-     */
-    public function setEnd($end)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnd()
-    {
-    }
-    /**
-     * Required. The interval of each range within the partition.
-     *
-     * @param string $interval
-     */
-    public function setInterval($interval)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInterval()
-    {
-    }
-    /**
-     * Required. The starting value for range partitioning (inclusive).
-     *
-     * @param string $start
-     */
-    public function setStart($start)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStart()
+    class Google_Service_Datastream_IntegerRangePartition extends \Google\Service\Datastream\IntegerRangePartition
     {
     }
 }

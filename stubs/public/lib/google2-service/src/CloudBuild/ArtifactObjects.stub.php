@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class ArtifactObjects extends \Google\Collection
-{
-    protected $collection_key = 'paths';
-    /**
-     * @var string
-     */
-    public $location;
-    /**
-     * @var string[]
-     */
-    public $paths;
-    protected $timingType = TimeSpan::class;
-    protected $timingDataType = '';
-    /**
-     * @param string
-     */
-    public function setLocation($location)
+namespace Google\Service\CloudBuild {
+    class ArtifactObjects extends \Google\Collection
     {
+        protected $collection_key = 'paths';
+        /**
+         * @var string
+         */
+        public $location;
+        /**
+         * @var string[]
+         */
+        public $paths;
+        protected $timingType = TimeSpan::class;
+        protected $timingDataType = '';
+        /**
+         * @param string
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setPaths($paths)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPaths()
+        {
+        }
+        /**
+         * @param TimeSpan
+         */
+        public function setTiming(TimeSpan $timing)
+        {
+        }
+        /**
+         * @return TimeSpan
+         */
+        public function getTiming()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\ArtifactObjects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setPaths($paths)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPaths()
-    {
-    }
-    /**
-     * @param TimeSpan
-     */
-    public function setTiming(TimeSpan $timing)
-    {
-    }
-    /**
-     * @return TimeSpan
-     */
-    public function getTiming()
+    class Google_Service_CloudBuild_ArtifactObjects extends \Google\Service\CloudBuild\ArtifactObjects
     {
     }
 }

@@ -21,195 +21,204 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDebugger;
-
-class Debuggee extends \Google\Collection
-{
-    protected $collection_key = 'sourceContexts';
-    /**
-     * @var string
-     */
-    public $agentVersion;
-    /**
-     * @var string
-     */
-    public $canaryMode;
-    /**
-     * @var string
-     */
-    public $description;
-    protected $extSourceContextsType = ExtendedSourceContext::class;
-    protected $extSourceContextsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var bool
-     */
-    public $isDisabled;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * @var string
-     */
-    public $project;
-    protected $sourceContextsType = SourceContext::class;
-    protected $sourceContextsDataType = 'array';
-    protected $statusType = StatusMessage::class;
-    protected $statusDataType = '';
-    /**
-     * @var string
-     */
-    public $uniquifier;
-    /**
-     * @param string
-     */
-    public function setAgentVersion($agentVersion)
+namespace Google\Service\CloudDebugger {
+    class Debuggee extends \Google\Collection
     {
+        protected $collection_key = 'sourceContexts';
+        /**
+         * @var string
+         */
+        public $agentVersion;
+        /**
+         * @var string
+         */
+        public $canaryMode;
+        /**
+         * @var string
+         */
+        public $description;
+        protected $extSourceContextsType = ExtendedSourceContext::class;
+        protected $extSourceContextsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var bool
+         */
+        public $isDisabled;
+        /**
+         * @var bool
+         */
+        public $isInactive;
+        /**
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * @var string
+         */
+        public $project;
+        protected $sourceContextsType = SourceContext::class;
+        protected $sourceContextsDataType = 'array';
+        protected $statusType = StatusMessage::class;
+        protected $statusDataType = '';
+        /**
+         * @var string
+         */
+        public $uniquifier;
+        /**
+         * @param string
+         */
+        public function setAgentVersion($agentVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentVersion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCanaryMode($canaryMode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCanaryMode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param ExtendedSourceContext[]
+         */
+        public function setExtSourceContexts($extSourceContexts)
+        {
+        }
+        /**
+         * @return ExtendedSourceContext[]
+         */
+        public function getExtSourceContexts()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIsDisabled($isDisabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsDisabled()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIsInactive($isInactive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsInactive()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProject($project)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProject()
+        {
+        }
+        /**
+         * @param SourceContext[]
+         */
+        public function setSourceContexts($sourceContexts)
+        {
+        }
+        /**
+         * @return SourceContext[]
+         */
+        public function getSourceContexts()
+        {
+        }
+        /**
+         * @param StatusMessage
+         */
+        public function setStatus(StatusMessage $status)
+        {
+        }
+        /**
+         * @return StatusMessage
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUniquifier($uniquifier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUniquifier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDebugger\Debuggee registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentVersion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCanaryMode($canaryMode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCanaryMode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param ExtendedSourceContext[]
-     */
-    public function setExtSourceContexts($extSourceContexts)
-    {
-    }
-    /**
-     * @return ExtendedSourceContext[]
-     */
-    public function getExtSourceContexts()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIsDisabled($isDisabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsDisabled()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIsInactive($isInactive)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsInactive()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProject($project)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProject()
-    {
-    }
-    /**
-     * @param SourceContext[]
-     */
-    public function setSourceContexts($sourceContexts)
-    {
-    }
-    /**
-     * @return SourceContext[]
-     */
-    public function getSourceContexts()
-    {
-    }
-    /**
-     * @param StatusMessage
-     */
-    public function setStatus(StatusMessage $status)
-    {
-    }
-    /**
-     * @return StatusMessage
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUniquifier($uniquifier)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUniquifier()
+    class Google_Service_CloudDebugger_Debuggee extends \Google\Service\CloudDebugger\Debuggee
     {
     }
 }

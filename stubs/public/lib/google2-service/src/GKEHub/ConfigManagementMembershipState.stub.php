@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ConfigManagementMembershipState extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $clusterName;
-    protected $configSyncStateType = ConfigManagementConfigSyncState::class;
-    protected $configSyncStateDataType = '';
-    protected $hierarchyControllerStateType = ConfigManagementHierarchyControllerState::class;
-    protected $hierarchyControllerStateDataType = '';
-    protected $membershipSpecType = ConfigManagementMembershipSpec::class;
-    protected $membershipSpecDataType = '';
-    protected $operatorStateType = ConfigManagementOperatorState::class;
-    protected $operatorStateDataType = '';
-    protected $policyControllerStateType = ConfigManagementPolicyControllerState::class;
-    protected $policyControllerStateDataType = '';
-    /**
-     * @param string
-     */
-    public function setClusterName($clusterName)
+namespace Google\Service\GKEHub {
+    class ConfigManagementMembershipState extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $clusterName;
+        protected $configSyncStateType = ConfigManagementConfigSyncState::class;
+        protected $configSyncStateDataType = '';
+        protected $hierarchyControllerStateType = ConfigManagementHierarchyControllerState::class;
+        protected $hierarchyControllerStateDataType = '';
+        protected $membershipSpecType = ConfigManagementMembershipSpec::class;
+        protected $membershipSpecDataType = '';
+        protected $operatorStateType = ConfigManagementOperatorState::class;
+        protected $operatorStateDataType = '';
+        protected $policyControllerStateType = ConfigManagementPolicyControllerState::class;
+        protected $policyControllerStateDataType = '';
+        /**
+         * @param string
+         */
+        public function setClusterName($clusterName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterName()
+        {
+        }
+        /**
+         * @param ConfigManagementConfigSyncState
+         */
+        public function setConfigSyncState(ConfigManagementConfigSyncState $configSyncState)
+        {
+        }
+        /**
+         * @return ConfigManagementConfigSyncState
+         */
+        public function getConfigSyncState()
+        {
+        }
+        /**
+         * @param ConfigManagementHierarchyControllerState
+         */
+        public function setHierarchyControllerState(ConfigManagementHierarchyControllerState $hierarchyControllerState)
+        {
+        }
+        /**
+         * @return ConfigManagementHierarchyControllerState
+         */
+        public function getHierarchyControllerState()
+        {
+        }
+        /**
+         * @param ConfigManagementMembershipSpec
+         */
+        public function setMembershipSpec(ConfigManagementMembershipSpec $membershipSpec)
+        {
+        }
+        /**
+         * @return ConfigManagementMembershipSpec
+         */
+        public function getMembershipSpec()
+        {
+        }
+        /**
+         * @param ConfigManagementOperatorState
+         */
+        public function setOperatorState(ConfigManagementOperatorState $operatorState)
+        {
+        }
+        /**
+         * @return ConfigManagementOperatorState
+         */
+        public function getOperatorState()
+        {
+        }
+        /**
+         * @param ConfigManagementPolicyControllerState
+         */
+        public function setPolicyControllerState(ConfigManagementPolicyControllerState $policyControllerState)
+        {
+        }
+        /**
+         * @return ConfigManagementPolicyControllerState
+         */
+        public function getPolicyControllerState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\ConfigManagementMembershipState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterName()
-    {
-    }
-    /**
-     * @param ConfigManagementConfigSyncState
-     */
-    public function setConfigSyncState(ConfigManagementConfigSyncState $configSyncState)
-    {
-    }
-    /**
-     * @return ConfigManagementConfigSyncState
-     */
-    public function getConfigSyncState()
-    {
-    }
-    /**
-     * @param ConfigManagementHierarchyControllerState
-     */
-    public function setHierarchyControllerState(ConfigManagementHierarchyControllerState $hierarchyControllerState)
-    {
-    }
-    /**
-     * @return ConfigManagementHierarchyControllerState
-     */
-    public function getHierarchyControllerState()
-    {
-    }
-    /**
-     * @param ConfigManagementMembershipSpec
-     */
-    public function setMembershipSpec(ConfigManagementMembershipSpec $membershipSpec)
-    {
-    }
-    /**
-     * @return ConfigManagementMembershipSpec
-     */
-    public function getMembershipSpec()
-    {
-    }
-    /**
-     * @param ConfigManagementOperatorState
-     */
-    public function setOperatorState(ConfigManagementOperatorState $operatorState)
-    {
-    }
-    /**
-     * @return ConfigManagementOperatorState
-     */
-    public function getOperatorState()
-    {
-    }
-    /**
-     * @param ConfigManagementPolicyControllerState
-     */
-    public function setPolicyControllerState(ConfigManagementPolicyControllerState $policyControllerState)
-    {
-    }
-    /**
-     * @return ConfigManagementPolicyControllerState
-     */
-    public function getPolicyControllerState()
+    class Google_Service_GKEHub_ConfigManagementMembershipState extends \Google\Service\GKEHub\ConfigManagementMembershipState
     {
     }
 }

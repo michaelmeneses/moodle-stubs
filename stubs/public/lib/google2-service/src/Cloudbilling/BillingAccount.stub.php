@@ -21,170 +21,179 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudbilling;
-
-class BillingAccount extends \Google\Model
-{
-    /**
-     * Optional. The currency in which the billing account is billed and charged,
-     * represented as an ISO 4217 code such as `USD`. Billing account currency is
-     * determined at the time of billing account creation and cannot be updated
-     * subsequently, so this field should not be set on update requests. In
-     * addition, a subaccount always matches the currency of its parent billing
-     * account, so this field should not be set on subaccount creation requests.
-     * Clients can read this field to determine the currency of an existing
-     * billing account.
-     *
-     * @var string
-     */
-    public $currencyCode;
-    /**
-     * The display name given to the billing account, such as `My Billing
-     * Account`. This name is displayed in the Google Cloud Console.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * If this account is a
-     * [subaccount](https://cloud.google.com/billing/docs/concepts), then this
-     * will be the resource name of the parent billing account that it is being
-     * resold through. Otherwise this will be empty.
-     *
-     * @var string
-     */
-    public $masterBillingAccount;
-    /**
-     * Output only. The resource name of the billing account. The resource name
-     * has the form `billingAccounts/{billing_account_id}`. For example,
-     * `billingAccounts/012345-567890-ABCDEF` would be the resource name for
-     * billing account `012345-567890-ABCDEF`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. True if the billing account is open, and will therefore be
-     * charged for any usage on associated projects. False if the billing account
-     * is closed, and therefore projects associated with it are unable to use paid
-     * services.
-     *
-     * @var bool
-     */
-    public $open;
-    /**
-     * Output only. The billing account's parent resource identifier. Use the
-     * `MoveBillingAccount` method to update the account's parent resource if it
-     * is a organization. Format: - `organizations/{organization_id}`, for
-     * example, `organizations/12345678` - `billingAccounts/{billing_account_id}`,
-     * for example, `billingAccounts/012345-567890-ABCDEF`
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * Optional. The currency in which the billing account is billed and charged,
-     * represented as an ISO 4217 code such as `USD`. Billing account currency is
-     * determined at the time of billing account creation and cannot be updated
-     * subsequently, so this field should not be set on update requests. In
-     * addition, a subaccount always matches the currency of its parent billing
-     * account, so this field should not be set on subaccount creation requests.
-     * Clients can read this field to determine the currency of an existing
-     * billing account.
-     *
-     * @param string $currencyCode
-     */
-    public function setCurrencyCode($currencyCode)
+namespace Google\Service\Cloudbilling {
+    class BillingAccount extends \Google\Model
     {
+        /**
+         * Optional. The currency in which the billing account is billed and charged,
+         * represented as an ISO 4217 code such as `USD`. Billing account currency is
+         * determined at the time of billing account creation and cannot be updated
+         * subsequently, so this field should not be set on update requests. In
+         * addition, a subaccount always matches the currency of its parent billing
+         * account, so this field should not be set on subaccount creation requests.
+         * Clients can read this field to determine the currency of an existing
+         * billing account.
+         *
+         * @var string
+         */
+        public $currencyCode;
+        /**
+         * The display name given to the billing account, such as `My Billing
+         * Account`. This name is displayed in the Google Cloud Console.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * If this account is a
+         * [subaccount](https://cloud.google.com/billing/docs/concepts), then this
+         * will be the resource name of the parent billing account that it is being
+         * resold through. Otherwise this will be empty.
+         *
+         * @var string
+         */
+        public $masterBillingAccount;
+        /**
+         * Output only. The resource name of the billing account. The resource name
+         * has the form `billingAccounts/{billing_account_id}`. For example,
+         * `billingAccounts/012345-567890-ABCDEF` would be the resource name for
+         * billing account `012345-567890-ABCDEF`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. True if the billing account is open, and will therefore be
+         * charged for any usage on associated projects. False if the billing account
+         * is closed, and therefore projects associated with it are unable to use paid
+         * services.
+         *
+         * @var bool
+         */
+        public $open;
+        /**
+         * Output only. The billing account's parent resource identifier. Use the
+         * `MoveBillingAccount` method to update the account's parent resource if it
+         * is a organization. Format: - `organizations/{organization_id}`, for
+         * example, `organizations/12345678` - `billingAccounts/{billing_account_id}`,
+         * for example, `billingAccounts/012345-567890-ABCDEF`
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * Optional. The currency in which the billing account is billed and charged,
+         * represented as an ISO 4217 code such as `USD`. Billing account currency is
+         * determined at the time of billing account creation and cannot be updated
+         * subsequently, so this field should not be set on update requests. In
+         * addition, a subaccount always matches the currency of its parent billing
+         * account, so this field should not be set on subaccount creation requests.
+         * Clients can read this field to determine the currency of an existing
+         * billing account.
+         *
+         * @param string $currencyCode
+         */
+        public function setCurrencyCode($currencyCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrencyCode()
+        {
+        }
+        /**
+         * The display name given to the billing account, such as `My Billing
+         * Account`. This name is displayed in the Google Cloud Console.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * If this account is a
+         * [subaccount](https://cloud.google.com/billing/docs/concepts), then this
+         * will be the resource name of the parent billing account that it is being
+         * resold through. Otherwise this will be empty.
+         *
+         * @param string $masterBillingAccount
+         */
+        public function setMasterBillingAccount($masterBillingAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMasterBillingAccount()
+        {
+        }
+        /**
+         * Output only. The resource name of the billing account. The resource name
+         * has the form `billingAccounts/{billing_account_id}`. For example,
+         * `billingAccounts/012345-567890-ABCDEF` would be the resource name for
+         * billing account `012345-567890-ABCDEF`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. True if the billing account is open, and will therefore be
+         * charged for any usage on associated projects. False if the billing account
+         * is closed, and therefore projects associated with it are unable to use paid
+         * services.
+         *
+         * @param bool $open
+         */
+        public function setOpen($open)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOpen()
+        {
+        }
+        /**
+         * Output only. The billing account's parent resource identifier. Use the
+         * `MoveBillingAccount` method to update the account's parent resource if it
+         * is a organization. Format: - `organizations/{organization_id}`, for
+         * example, `organizations/12345678` - `billingAccounts/{billing_account_id}`,
+         * for example, `billingAccounts/012345-567890-ABCDEF`
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudbilling\BillingAccount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrencyCode()
-    {
-    }
-    /**
-     * The display name given to the billing account, such as `My Billing
-     * Account`. This name is displayed in the Google Cloud Console.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * If this account is a
-     * [subaccount](https://cloud.google.com/billing/docs/concepts), then this
-     * will be the resource name of the parent billing account that it is being
-     * resold through. Otherwise this will be empty.
-     *
-     * @param string $masterBillingAccount
-     */
-    public function setMasterBillingAccount($masterBillingAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMasterBillingAccount()
-    {
-    }
-    /**
-     * Output only. The resource name of the billing account. The resource name
-     * has the form `billingAccounts/{billing_account_id}`. For example,
-     * `billingAccounts/012345-567890-ABCDEF` would be the resource name for
-     * billing account `012345-567890-ABCDEF`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. True if the billing account is open, and will therefore be
-     * charged for any usage on associated projects. False if the billing account
-     * is closed, and therefore projects associated with it are unable to use paid
-     * services.
-     *
-     * @param bool $open
-     */
-    public function setOpen($open)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOpen()
-    {
-    }
-    /**
-     * Output only. The billing account's parent resource identifier. Use the
-     * `MoveBillingAccount` method to update the account's parent resource if it
-     * is a organization. Format: - `organizations/{organization_id}`, for
-     * example, `organizations/12345678` - `billingAccounts/{billing_account_id}`,
-     * for example, `billingAccounts/012345-567890-ABCDEF`
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
+    class Google_Service_Cloudbilling_BillingAccount extends \Google\Service\Cloudbilling\BillingAccount
     {
     }
 }

@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class AgentCapabilities extends \Google\Collection
-{
-    protected $collection_key = 'extensions';
-    protected $extensionsType = AgentExtension::class;
-    protected $extensionsDataType = 'array';
-    /**
-     * If the agent can send push notifications to the clients webhook
-     *
-     * @var bool
-     */
-    public $pushNotifications;
-    /**
-     * If the agent will support streaming responses
-     *
-     * @var bool
-     */
-    public $streaming;
-    /**
-     * Extensions supported by this agent.
-     *
-     * @param AgentExtension[] $extensions
-     */
-    public function setExtensions($extensions)
+namespace Google\Service\WorkspaceEvents {
+    class AgentCapabilities extends \Google\Collection
     {
+        protected $collection_key = 'extensions';
+        protected $extensionsType = AgentExtension::class;
+        protected $extensionsDataType = 'array';
+        /**
+         * If the agent can send push notifications to the clients webhook
+         *
+         * @var bool
+         */
+        public $pushNotifications;
+        /**
+         * If the agent will support streaming responses
+         *
+         * @var bool
+         */
+        public $streaming;
+        /**
+         * Extensions supported by this agent.
+         *
+         * @param AgentExtension[] $extensions
+         */
+        public function setExtensions($extensions)
+        {
+        }
+        /**
+         * @return AgentExtension[]
+         */
+        public function getExtensions()
+        {
+        }
+        /**
+         * If the agent can send push notifications to the clients webhook
+         *
+         * @param bool $pushNotifications
+         */
+        public function setPushNotifications($pushNotifications)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPushNotifications()
+        {
+        }
+        /**
+         * If the agent will support streaming responses
+         *
+         * @param bool $streaming
+         */
+        public function setStreaming($streaming)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStreaming()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AgentExtension[]
+     * Runtime class alias of \Google\Service\WorkspaceEvents\AgentCapabilities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExtensions()
-    {
-    }
-    /**
-     * If the agent can send push notifications to the clients webhook
-     *
-     * @param bool $pushNotifications
-     */
-    public function setPushNotifications($pushNotifications)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPushNotifications()
-    {
-    }
-    /**
-     * If the agent will support streaming responses
-     *
-     * @param bool $streaming
-     */
-    public function setStreaming($streaming)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getStreaming()
+    class Google_Service_WorkspaceEvents_AgentCapabilities extends \Google\Service\WorkspaceEvents\AgentCapabilities
     {
     }
 }

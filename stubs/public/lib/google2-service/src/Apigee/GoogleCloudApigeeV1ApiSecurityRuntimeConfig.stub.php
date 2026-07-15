@@ -21,115 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ApiSecurityRuntimeConfig extends \Google\Collection
-{
-    protected $collection_key = 'location';
-    /**
-     * A list of up to 5 Cloud Storage Blobs that contain SecurityActions.
-     *
-     * @var string[]
-     */
-    public $location;
-    /**
-     * Name of the environment API Security Runtime configuration resource.
-     * Format: `organizations/{org}/environments/{env}/apiSecurityRuntimeConfig`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Revision ID of the API Security Runtime configuration. The higher the
-     * value, the more recently the configuration was deployed.
-     *
-     * @var string
-     */
-    public $revisionId;
-    /**
-     * Unique ID for the API Security Runtime configuration. The ID will only
-     * change if the environment is deleted and recreated.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Time that the API Security Runtime configuration was updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * A list of up to 5 Cloud Storage Blobs that contain SecurityActions.
-     *
-     * @param string[] $location
-     */
-    public function setLocation($location)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ApiSecurityRuntimeConfig extends \Google\Collection
     {
+        protected $collection_key = 'location';
+        /**
+         * A list of up to 5 Cloud Storage Blobs that contain SecurityActions.
+         *
+         * @var string[]
+         */
+        public $location;
+        /**
+         * Name of the environment API Security Runtime configuration resource.
+         * Format: `organizations/{org}/environments/{env}/apiSecurityRuntimeConfig`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Revision ID of the API Security Runtime configuration. The higher the
+         * value, the more recently the configuration was deployed.
+         *
+         * @var string
+         */
+        public $revisionId;
+        /**
+         * Unique ID for the API Security Runtime configuration. The ID will only
+         * change if the environment is deleted and recreated.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Time that the API Security Runtime configuration was updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * A list of up to 5 Cloud Storage Blobs that contain SecurityActions.
+         *
+         * @param string[] $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Name of the environment API Security Runtime configuration resource.
+         * Format: `organizations/{org}/environments/{env}/apiSecurityRuntimeConfig`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Revision ID of the API Security Runtime configuration. The higher the
+         * value, the more recently the configuration was deployed.
+         *
+         * @param string $revisionId
+         */
+        public function setRevisionId($revisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionId()
+        {
+        }
+        /**
+         * Unique ID for the API Security Runtime configuration. The ID will only
+         * change if the environment is deleted and recreated.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * Time that the API Security Runtime configuration was updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ApiSecurityRuntimeConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
-    {
-    }
-    /**
-     * Name of the environment API Security Runtime configuration resource.
-     * Format: `organizations/{org}/environments/{env}/apiSecurityRuntimeConfig`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Revision ID of the API Security Runtime configuration. The higher the
-     * value, the more recently the configuration was deployed.
-     *
-     * @param string $revisionId
-     */
-    public function setRevisionId($revisionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionId()
-    {
-    }
-    /**
-     * Unique ID for the API Security Runtime configuration. The ID will only
-     * change if the environment is deleted and recreated.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * Time that the API Security Runtime configuration was updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ApiSecurityRuntimeConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1ApiSecurityRuntimeConfig
     {
     }
 }

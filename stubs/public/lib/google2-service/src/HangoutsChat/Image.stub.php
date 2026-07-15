@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class Image extends \Google\Model
-{
-    /**
-     * The aspect ratio of this image (width and height). This field lets you
-     * reserve the right height for the image while waiting for it to load. It's
-     * not meant to override the built-in aspect ratio of the image. If unset, the
-     * server fills it by prefetching the image.
-     *
-     * @var 
-     */
-    public $aspectRatio;
-    /**
-     * The URL of the image.
-     *
-     * @var string
-     */
-    public $imageUrl;
-    protected $onClickType = OnClick::class;
-    protected $onClickDataType = '';
-    public function setAspectRatio($aspectRatio)
+namespace Google\Service\HangoutsChat {
+    class Image extends \Google\Model
     {
+        /**
+         * The aspect ratio of this image (width and height). This field lets you
+         * reserve the right height for the image while waiting for it to load. It's
+         * not meant to override the built-in aspect ratio of the image. If unset, the
+         * server fills it by prefetching the image.
+         *
+         * @var 
+         */
+        public $aspectRatio;
+        /**
+         * The URL of the image.
+         *
+         * @var string
+         */
+        public $imageUrl;
+        protected $onClickType = OnClick::class;
+        protected $onClickDataType = '';
+        public function setAspectRatio($aspectRatio)
+        {
+        }
+        public function getAspectRatio()
+        {
+        }
+        /**
+         * The URL of the image.
+         *
+         * @param string $imageUrl
+         */
+        public function setImageUrl($imageUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUrl()
+        {
+        }
+        /**
+         * The `onclick` action.
+         *
+         * @param OnClick $onClick
+         */
+        public function setOnClick(OnClick $onClick)
+        {
+        }
+        /**
+         * @return OnClick
+         */
+        public function getOnClick()
+        {
+        }
     }
-    public function getAspectRatio()
-    {
-    }
+}
+namespace {
     /**
-     * The URL of the image.
-     *
-     * @param string $imageUrl
+     * Runtime class alias of \Google\Service\HangoutsChat\Image registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setImageUrl($imageUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUrl()
-    {
-    }
-    /**
-     * The `onclick` action.
-     *
-     * @param OnClick $onClick
-     */
-    public function setOnClick(OnClick $onClick)
-    {
-    }
-    /**
-     * @return OnClick
-     */
-    public function getOnClick()
+    class Google_Service_HangoutsChat_Image extends \Google\Service\HangoutsChat\Image
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedCalendarEventAnnotationDataCalendarEvent extends \Google\Model
-{
-    protected $endTimeType = AppsDynamiteSharedCalendarEventAnnotationDataCalendarEventTime::class;
-    protected $endTimeDataType = '';
-    /**
-     * @var string
-     */
-    public $eventId;
-    protected $startTimeType = AppsDynamiteSharedCalendarEventAnnotationDataCalendarEventTime::class;
-    protected $startTimeDataType = '';
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @param AppsDynamiteSharedCalendarEventAnnotationDataCalendarEventTime
-     */
-    public function setEndTime(AppsDynamiteSharedCalendarEventAnnotationDataCalendarEventTime $endTime)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedCalendarEventAnnotationDataCalendarEvent extends \Google\Model
     {
+        protected $endTimeType = AppsDynamiteSharedCalendarEventAnnotationDataCalendarEventTime::class;
+        protected $endTimeDataType = '';
+        /**
+         * @var string
+         */
+        public $eventId;
+        protected $startTimeType = AppsDynamiteSharedCalendarEventAnnotationDataCalendarEventTime::class;
+        protected $startTimeDataType = '';
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @param AppsDynamiteSharedCalendarEventAnnotationDataCalendarEventTime
+         */
+        public function setEndTime(AppsDynamiteSharedCalendarEventAnnotationDataCalendarEventTime $endTime)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedCalendarEventAnnotationDataCalendarEventTime
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEventId($eventId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventId()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedCalendarEventAnnotationDataCalendarEventTime
+         */
+        public function setStartTime(AppsDynamiteSharedCalendarEventAnnotationDataCalendarEventTime $startTime)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedCalendarEventAnnotationDataCalendarEventTime
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedCalendarEventAnnotationDataCalendarEventTime
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedCalendarEventAnnotationDataCalendarEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEventId($eventId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventId()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedCalendarEventAnnotationDataCalendarEventTime
-     */
-    public function setStartTime(AppsDynamiteSharedCalendarEventAnnotationDataCalendarEventTime $startTime)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedCalendarEventAnnotationDataCalendarEventTime
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_CloudSearch_AppsDynamiteSharedCalendarEventAnnotationDataCalendarEvent extends \Google\Service\CloudSearch\AppsDynamiteSharedCalendarEventAnnotationDataCalendarEvent
     {
     }
 }

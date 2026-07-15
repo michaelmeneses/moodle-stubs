@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaSpannerSource extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $databaseId;
-    /**
-     * @var bool
-     */
-    public $enableDataBoost;
-    /**
-     * @var string
-     */
-    public $instanceId;
-    /**
-     * @var string
-     */
-    public $projectId;
-    /**
-     * @var string
-     */
-    public $tableId;
-    /**
-     * @param string
-     */
-    public function setDatabaseId($databaseId)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaSpannerSource extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $databaseId;
+        /**
+         * @var bool
+         */
+        public $enableDataBoost;
+        /**
+         * @var string
+         */
+        public $instanceId;
+        /**
+         * @var string
+         */
+        public $projectId;
+        /**
+         * @var string
+         */
+        public $tableId;
+        /**
+         * @param string
+         */
+        public function setDatabaseId($databaseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabaseId()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setEnableDataBoost($enableDataBoost)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableDataBoost()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInstanceId($instanceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTableId($tableId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSpannerSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabaseId()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setEnableDataBoost($enableDataBoost)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableDataBoost()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInstanceId($instanceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTableId($tableId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableId()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaSpannerSource extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSpannerSource
     {
     }
 }

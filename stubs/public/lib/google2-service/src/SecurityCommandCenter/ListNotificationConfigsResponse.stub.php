@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class ListNotificationConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'notificationConfigs';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $notificationConfigsType = NotificationConfig::class;
-    protected $notificationConfigsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\SecurityCommandCenter {
+    class ListNotificationConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'notificationConfigs';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $notificationConfigsType = NotificationConfig::class;
+        protected $notificationConfigsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Notification configs belonging to the requested parent.
+         *
+         * @param NotificationConfig[] $notificationConfigs
+         */
+        public function setNotificationConfigs($notificationConfigs)
+        {
+        }
+        /**
+         * @return NotificationConfig[]
+         */
+        public function getNotificationConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\ListNotificationConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Notification configs belonging to the requested parent.
-     *
-     * @param NotificationConfig[] $notificationConfigs
-     */
-    public function setNotificationConfigs($notificationConfigs)
-    {
-    }
-    /**
-     * @return NotificationConfig[]
-     */
-    public function getNotificationConfigs()
+    class Google_Service_SecurityCommandCenter_ListNotificationConfigsResponse extends \Google\Service\SecurityCommandCenter\ListNotificationConfigsResponse
     {
     }
 }

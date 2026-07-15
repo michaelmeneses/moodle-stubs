@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CCAIPlatform;
-
-class WorkforceDemandList extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    protected $valuesType = WorkforceDemand::class;
-    protected $valuesDataType = 'array';
-    /**
-     * Optional. Values in the list.
-     *
-     * @param WorkforceDemand[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\CCAIPlatform {
+    class WorkforceDemandList extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        protected $valuesType = WorkforceDemand::class;
+        protected $valuesDataType = 'array';
+        /**
+         * Optional. Values in the list.
+         *
+         * @param WorkforceDemand[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return WorkforceDemand[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return WorkforceDemand[]
+     * Runtime class alias of \Google\Service\CCAIPlatform\WorkforceDemandList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_CCAIPlatform_WorkforceDemandList extends \Google\Service\CCAIPlatform\WorkforceDemandList
     {
     }
 }

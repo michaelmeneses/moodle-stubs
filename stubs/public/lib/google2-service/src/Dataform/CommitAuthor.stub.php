@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class CommitAuthor extends \Google\Model
-{
-    /**
-     * Required. The commit author's email address.
-     *
-     * @var string
-     */
-    public $emailAddress;
-    /**
-     * Required. The commit author's name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The commit author's email address.
-     *
-     * @param string $emailAddress
-     */
-    public function setEmailAddress($emailAddress)
+namespace Google\Service\Dataform {
+    class CommitAuthor extends \Google\Model
     {
+        /**
+         * Required. The commit author's email address.
+         *
+         * @var string
+         */
+        public $emailAddress;
+        /**
+         * Required. The commit author's name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The commit author's email address.
+         *
+         * @param string $emailAddress
+         */
+        public function setEmailAddress($emailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmailAddress()
+        {
+        }
+        /**
+         * Required. The commit author's name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataform\CommitAuthor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmailAddress()
-    {
-    }
-    /**
-     * Required. The commit author's name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Dataform_CommitAuthor extends \Google\Service\Dataform\CommitAuthor
     {
     }
 }

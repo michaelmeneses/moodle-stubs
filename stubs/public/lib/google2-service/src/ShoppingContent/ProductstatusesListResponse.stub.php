@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ProductstatusesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#productstatusesListResponse`".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The token for the retrieval of the next page of products statuses.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resourcesType = ProductStatus::class;
-    protected $resourcesDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#productstatusesListResponse`".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\ShoppingContent {
+    class ProductstatusesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#productstatusesListResponse`".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The token for the retrieval of the next page of products statuses.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resourcesType = ProductStatus::class;
+        protected $resourcesDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#productstatusesListResponse`".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The token for the retrieval of the next page of products statuses.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param ProductStatus[] $resources
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return ProductStatus[]
+         */
+        public function getResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ProductstatusesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The token for the retrieval of the next page of products statuses.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param ProductStatus[] $resources
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return ProductStatus[]
-     */
-    public function getResources()
+    class Google_Service_ShoppingContent_ProductstatusesListResponse extends \Google\Service\ShoppingContent\ProductstatusesListResponse
     {
     }
 }

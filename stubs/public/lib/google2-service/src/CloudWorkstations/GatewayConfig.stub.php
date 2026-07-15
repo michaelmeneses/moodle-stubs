@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudWorkstations;
-
-class GatewayConfig extends \Google\Model
-{
-    /**
-     * Optional. Whether HTTP/2 is enabled for this workstation cluster. Defaults
-     * to false.
-     *
-     * @var bool
-     */
-    public $http2Enabled;
-    /**
-     * Optional. Whether HTTP/2 is enabled for this workstation cluster. Defaults
-     * to false.
-     *
-     * @param bool $http2Enabled
-     */
-    public function setHttp2Enabled($http2Enabled)
+namespace Google\Service\CloudWorkstations {
+    class GatewayConfig extends \Google\Model
     {
+        /**
+         * Optional. Whether HTTP/2 is enabled for this workstation cluster. Defaults
+         * to false.
+         *
+         * @var bool
+         */
+        public $http2Enabled;
+        /**
+         * Optional. Whether HTTP/2 is enabled for this workstation cluster. Defaults
+         * to false.
+         *
+         * @param bool $http2Enabled
+         */
+        public function setHttp2Enabled($http2Enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHttp2Enabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudWorkstations\GatewayConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHttp2Enabled()
+    class Google_Service_CloudWorkstations_GatewayConfig extends \Google\Service\CloudWorkstations\GatewayConfig
     {
     }
 }

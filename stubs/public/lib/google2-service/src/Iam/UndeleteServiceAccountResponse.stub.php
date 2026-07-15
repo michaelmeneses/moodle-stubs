@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class UndeleteServiceAccountResponse extends \Google\Model
-{
-    protected $restoredAccountType = ServiceAccount::class;
-    protected $restoredAccountDataType = '';
-    public $restoredAccount;
-    /**
-     * @param ServiceAccount
-     */
-    public function setRestoredAccount(ServiceAccount $restoredAccount)
+namespace Google\Service\Iam {
+    class UndeleteServiceAccountResponse extends \Google\Model
     {
+        protected $restoredAccountType = ServiceAccount::class;
+        protected $restoredAccountDataType = '';
+        public $restoredAccount;
+        /**
+         * @param ServiceAccount
+         */
+        public function setRestoredAccount(ServiceAccount $restoredAccount)
+        {
+        }
+        /**
+         * @return ServiceAccount
+         */
+        public function getRestoredAccount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ServiceAccount
+     * Runtime class alias of \Google\Service\Iam\UndeleteServiceAccountResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRestoredAccount()
+    class Google_Service_Iam_UndeleteServiceAccountResponse extends \Google\Service\Iam\UndeleteServiceAccountResponse
     {
     }
 }

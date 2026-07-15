@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class MigrationJobObjectsConfig extends \Google\Model
-{
-    protected $sourceObjectsConfigType = SourceObjectsConfig::class;
-    protected $sourceObjectsConfigDataType = '';
-    /**
-     * The list of the migration job objects.
-     *
-     * @param SourceObjectsConfig $sourceObjectsConfig
-     */
-    public function setSourceObjectsConfig(SourceObjectsConfig $sourceObjectsConfig)
+namespace Google\Service\DatabaseMigrationService {
+    class MigrationJobObjectsConfig extends \Google\Model
     {
+        protected $sourceObjectsConfigType = SourceObjectsConfig::class;
+        protected $sourceObjectsConfigDataType = '';
+        /**
+         * The list of the migration job objects.
+         *
+         * @param SourceObjectsConfig $sourceObjectsConfig
+         */
+        public function setSourceObjectsConfig(SourceObjectsConfig $sourceObjectsConfig)
+        {
+        }
+        /**
+         * @return SourceObjectsConfig
+         */
+        public function getSourceObjectsConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SourceObjectsConfig
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\MigrationJobObjectsConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSourceObjectsConfig()
+    class Google_Service_DatabaseMigrationService_MigrationJobObjectsConfig extends \Google\Service\DatabaseMigrationService\MigrationJobObjectsConfig
     {
     }
 }

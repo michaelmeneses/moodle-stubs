@@ -21,45 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudObservability\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $observabilityService = new Google\Service\CloudObservability(...);
- *   $locations = $observabilityService->folders_locations;
- *  </code>
- */
-class FoldersLocations extends \Google\Service\Resource
-{
+namespace Google\Service\CloudObservability\Resource {
+    use Google\Service\CloudObservability\Operation;
+    use Google\Service\CloudObservability\Settings;
     /**
-     * Get Settings (locations.getSettings)
-     *
-     * @param string $name Required. Name of the settings to retrieve. Name format:
-     * "projects/[PROJECT_ID]/locations/[LOCATION]/settings"
-     * "folders/[FOLDER_ID]/locations/[LOCATION]/settings"
-     * "organizations/[ORGANIZATION_ID]/locations/[LOCATION]/settings"
-     * @param array $optParams Optional parameters.
-     * @return Settings
-     * @throws \Google\Service\Exception
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $observabilityService = new Google\Service\CloudObservability(...);
+     *   $locations = $observabilityService->folders_locations;
+     *  </code>
      */
-    public function getSettings($name, $optParams = [])
+    class FoldersLocations extends \Google\Service\Resource
     {
+        /**
+         * Get Settings (locations.getSettings)
+         *
+         * @param string $name Required. Name of the settings to retrieve. Name format:
+         * "projects/[PROJECT_ID]/locations/[LOCATION]/settings"
+         * "folders/[FOLDER_ID]/locations/[LOCATION]/settings"
+         * "organizations/[ORGANIZATION_ID]/locations/[LOCATION]/settings"
+         * @param array $optParams Optional parameters.
+         * @return Settings
+         * @throws \Google\Service\Exception
+         */
+        public function getSettings($name, $optParams = [])
+        {
+        }
+        /**
+         * Update Settings (locations.updateSettings)
+         *
+         * @param string $name Identifier. The resource name of the settings.
+         * @param Settings $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. The field mask specifying which fields
+         * of the settings are to be updated.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function updateSettings($name, Settings $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Update Settings (locations.updateSettings)
-     *
-     * @param string $name Identifier. The resource name of the settings.
-     * @param Settings $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. The field mask specifying which fields
-     * of the settings are to be updated.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudObservability\Resource\FoldersLocations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function updateSettings($name, Settings $postBody, $optParams = [])
+    class Google_Service_CloudObservability_Resource_FoldersLocations extends \Google\Service\CloudObservability\Resource\FoldersLocations
     {
     }
 }

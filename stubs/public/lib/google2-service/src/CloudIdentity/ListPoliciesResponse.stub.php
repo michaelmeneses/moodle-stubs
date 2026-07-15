@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class ListPoliciesResponse extends \Google\Collection
-{
-    protected $collection_key = 'policies';
-    /**
-     * The pagination token to retrieve the next page of results. If this field is
-     * empty, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $policiesType = Policy::class;
-    protected $policiesDataType = 'array';
-    /**
-     * The pagination token to retrieve the next page of results. If this field is
-     * empty, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudIdentity {
+    class ListPoliciesResponse extends \Google\Collection
     {
+        protected $collection_key = 'policies';
+        /**
+         * The pagination token to retrieve the next page of results. If this field is
+         * empty, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $policiesType = Policy::class;
+        protected $policiesDataType = 'array';
+        /**
+         * The pagination token to retrieve the next page of results. If this field is
+         * empty, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The results
+         *
+         * @param Policy[] $policies
+         */
+        public function setPolicies($policies)
+        {
+        }
+        /**
+         * @return Policy[]
+         */
+        public function getPolicies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIdentity\ListPoliciesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The results
-     *
-     * @param Policy[] $policies
-     */
-    public function setPolicies($policies)
-    {
-    }
-    /**
-     * @return Policy[]
-     */
-    public function getPolicies()
+    class Google_Service_CloudIdentity_ListPoliciesResponse extends \Google\Service\CloudIdentity\ListPoliciesResponse
     {
     }
 }

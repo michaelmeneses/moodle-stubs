@@ -21,137 +21,146 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDynamicLinks;
-
-class GooglePlayAnalytics extends \Google\Model
-{
-    /**
-     * Deprecated; FDL SDK does not process nor log it.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $gclid;
-    /**
-     * Campaign name; used for keyword analysis to identify a specific product
-     * promotion or strategic campaign.
-     *
-     * @var string
-     */
-    public $utmCampaign;
-    /**
-     * Campaign content; used for A/B testing and content-targeted ads to
-     * differentiate ads or links that point to the same URL.
-     *
-     * @var string
-     */
-    public $utmContent;
-    /**
-     * Campaign medium; used to identify a medium such as email or cost-per-click.
-     *
-     * @var string
-     */
-    public $utmMedium;
-    /**
-     * Campaign source; used to identify a search engine, newsletter, or other
-     * source.
-     *
-     * @var string
-     */
-    public $utmSource;
-    /**
-     * Campaign term; used with paid search to supply the keywords for ads.
-     *
-     * @var string
-     */
-    public $utmTerm;
-    /**
-     * Deprecated; FDL SDK does not process nor log it.
-     *
-     * @deprecated
-     * @param string $gclid
-     */
-    public function setGclid($gclid)
+namespace Google\Service\FirebaseDynamicLinks {
+    class GooglePlayAnalytics extends \Google\Model
     {
+        /**
+         * Deprecated; FDL SDK does not process nor log it.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $gclid;
+        /**
+         * Campaign name; used for keyword analysis to identify a specific product
+         * promotion or strategic campaign.
+         *
+         * @var string
+         */
+        public $utmCampaign;
+        /**
+         * Campaign content; used for A/B testing and content-targeted ads to
+         * differentiate ads or links that point to the same URL.
+         *
+         * @var string
+         */
+        public $utmContent;
+        /**
+         * Campaign medium; used to identify a medium such as email or cost-per-click.
+         *
+         * @var string
+         */
+        public $utmMedium;
+        /**
+         * Campaign source; used to identify a search engine, newsletter, or other
+         * source.
+         *
+         * @var string
+         */
+        public $utmSource;
+        /**
+         * Campaign term; used with paid search to supply the keywords for ads.
+         *
+         * @var string
+         */
+        public $utmTerm;
+        /**
+         * Deprecated; FDL SDK does not process nor log it.
+         *
+         * @deprecated
+         * @param string $gclid
+         */
+        public function setGclid($gclid)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getGclid()
+        {
+        }
+        /**
+         * Campaign name; used for keyword analysis to identify a specific product
+         * promotion or strategic campaign.
+         *
+         * @param string $utmCampaign
+         */
+        public function setUtmCampaign($utmCampaign)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUtmCampaign()
+        {
+        }
+        /**
+         * Campaign content; used for A/B testing and content-targeted ads to
+         * differentiate ads or links that point to the same URL.
+         *
+         * @param string $utmContent
+         */
+        public function setUtmContent($utmContent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUtmContent()
+        {
+        }
+        /**
+         * Campaign medium; used to identify a medium such as email or cost-per-click.
+         *
+         * @param string $utmMedium
+         */
+        public function setUtmMedium($utmMedium)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUtmMedium()
+        {
+        }
+        /**
+         * Campaign source; used to identify a search engine, newsletter, or other
+         * source.
+         *
+         * @param string $utmSource
+         */
+        public function setUtmSource($utmSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUtmSource()
+        {
+        }
+        /**
+         * Campaign term; used with paid search to supply the keywords for ads.
+         *
+         * @param string $utmTerm
+         */
+        public function setUtmTerm($utmTerm)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUtmTerm()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseDynamicLinks\GooglePlayAnalytics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGclid()
-    {
-    }
-    /**
-     * Campaign name; used for keyword analysis to identify a specific product
-     * promotion or strategic campaign.
-     *
-     * @param string $utmCampaign
-     */
-    public function setUtmCampaign($utmCampaign)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUtmCampaign()
-    {
-    }
-    /**
-     * Campaign content; used for A/B testing and content-targeted ads to
-     * differentiate ads or links that point to the same URL.
-     *
-     * @param string $utmContent
-     */
-    public function setUtmContent($utmContent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUtmContent()
-    {
-    }
-    /**
-     * Campaign medium; used to identify a medium such as email or cost-per-click.
-     *
-     * @param string $utmMedium
-     */
-    public function setUtmMedium($utmMedium)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUtmMedium()
-    {
-    }
-    /**
-     * Campaign source; used to identify a search engine, newsletter, or other
-     * source.
-     *
-     * @param string $utmSource
-     */
-    public function setUtmSource($utmSource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUtmSource()
-    {
-    }
-    /**
-     * Campaign term; used with paid search to supply the keywords for ads.
-     *
-     * @param string $utmTerm
-     */
-    public function setUtmTerm($utmTerm)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUtmTerm()
+    class Google_Service_FirebaseDynamicLinks_GooglePlayAnalytics extends \Google\Service\FirebaseDynamicLinks\GooglePlayAnalytics
     {
     }
 }

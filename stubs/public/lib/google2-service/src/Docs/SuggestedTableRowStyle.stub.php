@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class SuggestedTableRowStyle extends \Google\Model
-{
-    protected $tableRowStyleType = TableRowStyle::class;
-    protected $tableRowStyleDataType = '';
-    protected $tableRowStyleSuggestionStateType = TableRowStyleSuggestionState::class;
-    protected $tableRowStyleSuggestionStateDataType = '';
-    /**
-     * A TableRowStyle that only includes the changes made in this suggestion.
-     * This can be used along with the table_row_style_suggestion_state to see
-     * which fields have changed and their new values.
-     *
-     * @param TableRowStyle $tableRowStyle
-     */
-    public function setTableRowStyle(TableRowStyle $tableRowStyle)
+namespace Google\Service\Docs {
+    class SuggestedTableRowStyle extends \Google\Model
     {
+        protected $tableRowStyleType = TableRowStyle::class;
+        protected $tableRowStyleDataType = '';
+        protected $tableRowStyleSuggestionStateType = TableRowStyleSuggestionState::class;
+        protected $tableRowStyleSuggestionStateDataType = '';
+        /**
+         * A TableRowStyle that only includes the changes made in this suggestion.
+         * This can be used along with the table_row_style_suggestion_state to see
+         * which fields have changed and their new values.
+         *
+         * @param TableRowStyle $tableRowStyle
+         */
+        public function setTableRowStyle(TableRowStyle $tableRowStyle)
+        {
+        }
+        /**
+         * @return TableRowStyle
+         */
+        public function getTableRowStyle()
+        {
+        }
+        /**
+         * A mask that indicates which of the fields on the base TableRowStyle have
+         * been changed in this suggestion.
+         *
+         * @param TableRowStyleSuggestionState $tableRowStyleSuggestionState
+         */
+        public function setTableRowStyleSuggestionState(TableRowStyleSuggestionState $tableRowStyleSuggestionState)
+        {
+        }
+        /**
+         * @return TableRowStyleSuggestionState
+         */
+        public function getTableRowStyleSuggestionState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TableRowStyle
+     * Runtime class alias of \Google\Service\Docs\SuggestedTableRowStyle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTableRowStyle()
-    {
-    }
-    /**
-     * A mask that indicates which of the fields on the base TableRowStyle have
-     * been changed in this suggestion.
-     *
-     * @param TableRowStyleSuggestionState $tableRowStyleSuggestionState
-     */
-    public function setTableRowStyleSuggestionState(TableRowStyleSuggestionState $tableRowStyleSuggestionState)
-    {
-    }
-    /**
-     * @return TableRowStyleSuggestionState
-     */
-    public function getTableRowStyleSuggestionState()
+    class Google_Service_Docs_SuggestedTableRowStyle extends \Google\Service\Docs\SuggestedTableRowStyle
     {
     }
 }

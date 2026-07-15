@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ToolAuthenticationApiKeyConfig extends \Google\Model
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const REQUEST_LOCATION_REQUEST_LOCATION_UNSPECIFIED = 'REQUEST_LOCATION_UNSPECIFIED';
-    /**
-     * Represents the key in http header.
-     */
-    public const REQUEST_LOCATION_HEADER = 'HEADER';
-    /**
-     * Represents the key in query string.
-     */
-    public const REQUEST_LOCATION_QUERY_STRING = 'QUERY_STRING';
-    /**
-     * Optional. The API key. If the `secret_version_for_api_key` field is set,
-     * this field will be ignored.
-     *
-     * @var string
-     */
-    public $apiKey;
-    /**
-     * Required. The parameter name or the header name of the API key. E.g., If
-     * the API request is "https://example.com/act?X-Api-Key=", "X-Api-Key" would
-     * be the parameter name.
-     *
-     * @var string
-     */
-    public $keyName;
-    /**
-     * Required. Key location in the request.
-     *
-     * @var string
-     */
-    public $requestLocation;
-    /**
-     * Optional. The name of the SecretManager secret version resource storing the
-     * API key. If this field is set, the `api_key` field will be ignored. Format:
-     * `projects/{project}/secrets/{secret}/versions/{version}`
-     *
-     * @var string
-     */
-    public $secretVersionForApiKey;
-    /**
-     * Optional. The API key. If the `secret_version_for_api_key` field is set,
-     * this field will be ignored.
-     *
-     * @param string $apiKey
-     */
-    public function setApiKey($apiKey)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ToolAuthenticationApiKeyConfig extends \Google\Model
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const REQUEST_LOCATION_REQUEST_LOCATION_UNSPECIFIED = 'REQUEST_LOCATION_UNSPECIFIED';
+        /**
+         * Represents the key in http header.
+         */
+        public const REQUEST_LOCATION_HEADER = 'HEADER';
+        /**
+         * Represents the key in query string.
+         */
+        public const REQUEST_LOCATION_QUERY_STRING = 'QUERY_STRING';
+        /**
+         * Optional. The API key. If the `secret_version_for_api_key` field is set,
+         * this field will be ignored.
+         *
+         * @var string
+         */
+        public $apiKey;
+        /**
+         * Required. The parameter name or the header name of the API key. E.g., If
+         * the API request is "https://example.com/act?X-Api-Key=", "X-Api-Key" would
+         * be the parameter name.
+         *
+         * @var string
+         */
+        public $keyName;
+        /**
+         * Required. Key location in the request.
+         *
+         * @var string
+         */
+        public $requestLocation;
+        /**
+         * Optional. The name of the SecretManager secret version resource storing the
+         * API key. If this field is set, the `api_key` field will be ignored. Format:
+         * `projects/{project}/secrets/{secret}/versions/{version}`
+         *
+         * @var string
+         */
+        public $secretVersionForApiKey;
+        /**
+         * Optional. The API key. If the `secret_version_for_api_key` field is set,
+         * this field will be ignored.
+         *
+         * @param string $apiKey
+         */
+        public function setApiKey($apiKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiKey()
+        {
+        }
+        /**
+         * Required. The parameter name or the header name of the API key. E.g., If
+         * the API request is "https://example.com/act?X-Api-Key=", "X-Api-Key" would
+         * be the parameter name.
+         *
+         * @param string $keyName
+         */
+        public function setKeyName($keyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyName()
+        {
+        }
+        /**
+         * Required. Key location in the request.
+         *
+         * Accepted values: REQUEST_LOCATION_UNSPECIFIED, HEADER, QUERY_STRING
+         *
+         * @param self::REQUEST_LOCATION_* $requestLocation
+         */
+        public function setRequestLocation($requestLocation)
+        {
+        }
+        /**
+         * @return self::REQUEST_LOCATION_*
+         */
+        public function getRequestLocation()
+        {
+        }
+        /**
+         * Optional. The name of the SecretManager secret version resource storing the
+         * API key. If this field is set, the `api_key` field will be ignored. Format:
+         * `projects/{project}/secrets/{secret}/versions/{version}`
+         *
+         * @param string $secretVersionForApiKey
+         */
+        public function setSecretVersionForApiKey($secretVersionForApiKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecretVersionForApiKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ToolAuthenticationApiKeyConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiKey()
-    {
-    }
-    /**
-     * Required. The parameter name or the header name of the API key. E.g., If
-     * the API request is "https://example.com/act?X-Api-Key=", "X-Api-Key" would
-     * be the parameter name.
-     *
-     * @param string $keyName
-     */
-    public function setKeyName($keyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKeyName()
-    {
-    }
-    /**
-     * Required. Key location in the request.
-     *
-     * Accepted values: REQUEST_LOCATION_UNSPECIFIED, HEADER, QUERY_STRING
-     *
-     * @param self::REQUEST_LOCATION_* $requestLocation
-     */
-    public function setRequestLocation($requestLocation)
-    {
-    }
-    /**
-     * @return self::REQUEST_LOCATION_*
-     */
-    public function getRequestLocation()
-    {
-    }
-    /**
-     * Optional. The name of the SecretManager secret version resource storing the
-     * API key. If this field is set, the `api_key` field will be ignored. Format:
-     * `projects/{project}/secrets/{secret}/versions/{version}`
-     *
-     * @param string $secretVersionForApiKey
-     */
-    public function setSecretVersionForApiKey($secretVersionForApiKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecretVersionForApiKey()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ToolAuthenticationApiKeyConfig extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ToolAuthenticationApiKeyConfig
     {
     }
 }

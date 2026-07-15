@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class InstanceReference extends \Google\Model
-{
-    /**
-     * The name of the Cloud SQL instance being referenced. This does not include
-     * the project ID.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The project ID of the Cloud SQL instance being referenced. The default is
-     * the same project ID as the instance references it.
-     *
-     * @var string
-     */
-    public $project;
-    /**
-     * The region of the Cloud SQL instance being referenced.
-     *
-     * @var string
-     */
-    public $region;
-    /**
-     * The name of the Cloud SQL instance being referenced. This does not include
-     * the project ID.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\SQLAdmin {
+    class InstanceReference extends \Google\Model
     {
+        /**
+         * The name of the Cloud SQL instance being referenced. This does not include
+         * the project ID.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The project ID of the Cloud SQL instance being referenced. The default is
+         * the same project ID as the instance references it.
+         *
+         * @var string
+         */
+        public $project;
+        /**
+         * The region of the Cloud SQL instance being referenced.
+         *
+         * @var string
+         */
+        public $region;
+        /**
+         * The name of the Cloud SQL instance being referenced. This does not include
+         * the project ID.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The project ID of the Cloud SQL instance being referenced. The default is
+         * the same project ID as the instance references it.
+         *
+         * @param string $project
+         */
+        public function setProject($project)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProject()
+        {
+        }
+        /**
+         * The region of the Cloud SQL instance being referenced.
+         *
+         * @param string $region
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\InstanceReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The project ID of the Cloud SQL instance being referenced. The default is
-     * the same project ID as the instance references it.
-     *
-     * @param string $project
-     */
-    public function setProject($project)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProject()
-    {
-    }
-    /**
-     * The region of the Cloud SQL instance being referenced.
-     *
-     * @param string $region
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegion()
+    class Google_Service_SQLAdmin_InstanceReference extends \Google\Service\SQLAdmin\InstanceReference
     {
     }
 }

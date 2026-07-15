@@ -21,30 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine\Resource;
-
-/**
- * The "groundingConfigs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
- *   $groundingConfigs = $discoveryengineService->projects_locations_groundingConfigs;
- *  </code>
- */
-class ProjectsLocationsGroundingConfigs extends \Google\Service\Resource
-{
+namespace Google\Service\DiscoveryEngine\Resource {
+    use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CheckGroundingRequest;
+    use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CheckGroundingResponse;
     /**
-     * Performs a grounding check. (groundingConfigs.check)
-     *
-     * @param string $groundingConfig Required. The resource name of the grounding
-     * config, such as
-     * `projects/locations/global/groundingConfigs/default_grounding_config`.
-     * @param GoogleCloudDiscoveryengineV1CheckGroundingRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDiscoveryengineV1CheckGroundingResponse
-     * @throws \Google\Service\Exception
+     * The "groundingConfigs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
+     *   $groundingConfigs = $discoveryengineService->projects_locations_groundingConfigs;
+     *  </code>
      */
-    public function check($groundingConfig, GoogleCloudDiscoveryengineV1CheckGroundingRequest $postBody, $optParams = [])
+    class ProjectsLocationsGroundingConfigs extends \Google\Service\Resource
+    {
+        /**
+         * Performs a grounding check. (groundingConfigs.check)
+         *
+         * @param string $groundingConfig Required. The resource name of the grounding
+         * config, such as
+         * `projects/locations/global/groundingConfigs/default_grounding_config`.
+         * @param GoogleCloudDiscoveryengineV1CheckGroundingRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDiscoveryengineV1CheckGroundingResponse
+         * @throws \Google\Service\Exception
+         */
+        public function check($groundingConfig, GoogleCloudDiscoveryengineV1CheckGroundingRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsGroundingConfigs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DiscoveryEngine_Resource_ProjectsLocationsGroundingConfigs extends \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsGroundingConfigs
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class MatchedUrl extends \Google\Model
-{
-    /**
-     * Output only. The URL that was matched.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Output only. The URL that was matched.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
+namespace Google\Service\HangoutsChat {
+    class MatchedUrl extends \Google\Model
     {
+        /**
+         * Output only. The URL that was matched.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Output only. The URL that was matched.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\MatchedUrl registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUrl()
+    class Google_Service_HangoutsChat_MatchedUrl extends \Google\Service\HangoutsChat\MatchedUrl
     {
     }
 }

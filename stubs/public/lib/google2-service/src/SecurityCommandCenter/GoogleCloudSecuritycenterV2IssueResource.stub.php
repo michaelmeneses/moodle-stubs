@@ -21,177 +21,186 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2IssueResource extends \Google\Model
-{
-    /**
-     * Unspecified cloud provider.
-     */
-    public const CLOUD_PROVIDER_CLOUD_PROVIDER_UNSPECIFIED = 'CLOUD_PROVIDER_UNSPECIFIED';
-    /**
-     * Google Cloud.
-     */
-    public const CLOUD_PROVIDER_GOOGLE_CLOUD = 'GOOGLE_CLOUD';
-    /**
-     * Amazon Web Services.
-     */
-    public const CLOUD_PROVIDER_AMAZON_WEB_SERVICES = 'AMAZON_WEB_SERVICES';
-    /**
-     * Microsoft Azure.
-     */
-    public const CLOUD_PROVIDER_MICROSOFT_AZURE = 'MICROSOFT_AZURE';
-    protected $applicationType = GoogleCloudSecuritycenterV2IssueResourceApplication::class;
-    protected $applicationDataType = '';
-    protected $awsMetadataType = GoogleCloudSecuritycenterV2IssueResourceAwsMetadata::class;
-    protected $awsMetadataDataType = '';
-    protected $azureMetadataType = GoogleCloudSecuritycenterV2IssueResourceAzureMetadata::class;
-    protected $azureMetadataDataType = '';
-    /**
-     * The cloud provider of the resource associated with the issue.
-     *
-     * @var string
-     */
-    public $cloudProvider;
-    /**
-     * The resource-type specific display name of the resource associated with the
-     * issue.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $googleCloudMetadataType = GoogleCloudSecuritycenterV2IssueResourceGoogleCloudMetadata::class;
-    protected $googleCloudMetadataDataType = '';
-    /**
-     * The full resource name of the resource associated with the issue.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The type of the resource associated with the issue.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The AppHub application associated with the resource, if any. Only populated
-     * for the primary resource.
-     *
-     * @param GoogleCloudSecuritycenterV2IssueResourceApplication $application
-     */
-    public function setApplication(GoogleCloudSecuritycenterV2IssueResourceApplication $application)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2IssueResource extends \Google\Model
     {
+        /**
+         * Unspecified cloud provider.
+         */
+        public const CLOUD_PROVIDER_CLOUD_PROVIDER_UNSPECIFIED = 'CLOUD_PROVIDER_UNSPECIFIED';
+        /**
+         * Google Cloud.
+         */
+        public const CLOUD_PROVIDER_GOOGLE_CLOUD = 'GOOGLE_CLOUD';
+        /**
+         * Amazon Web Services.
+         */
+        public const CLOUD_PROVIDER_AMAZON_WEB_SERVICES = 'AMAZON_WEB_SERVICES';
+        /**
+         * Microsoft Azure.
+         */
+        public const CLOUD_PROVIDER_MICROSOFT_AZURE = 'MICROSOFT_AZURE';
+        protected $applicationType = GoogleCloudSecuritycenterV2IssueResourceApplication::class;
+        protected $applicationDataType = '';
+        protected $awsMetadataType = GoogleCloudSecuritycenterV2IssueResourceAwsMetadata::class;
+        protected $awsMetadataDataType = '';
+        protected $azureMetadataType = GoogleCloudSecuritycenterV2IssueResourceAzureMetadata::class;
+        protected $azureMetadataDataType = '';
+        /**
+         * The cloud provider of the resource associated with the issue.
+         *
+         * @var string
+         */
+        public $cloudProvider;
+        /**
+         * The resource-type specific display name of the resource associated with the
+         * issue.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $googleCloudMetadataType = GoogleCloudSecuritycenterV2IssueResourceGoogleCloudMetadata::class;
+        protected $googleCloudMetadataDataType = '';
+        /**
+         * The full resource name of the resource associated with the issue.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The type of the resource associated with the issue.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The AppHub application associated with the resource, if any. Only populated
+         * for the primary resource.
+         *
+         * @param GoogleCloudSecuritycenterV2IssueResourceApplication $application
+         */
+        public function setApplication(GoogleCloudSecuritycenterV2IssueResourceApplication $application)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2IssueResourceApplication
+         */
+        public function getApplication()
+        {
+        }
+        /**
+         * The AWS metadata of the resource associated with the issue. Only populated
+         * for AWS resources.
+         *
+         * @param GoogleCloudSecuritycenterV2IssueResourceAwsMetadata $awsMetadata
+         */
+        public function setAwsMetadata(GoogleCloudSecuritycenterV2IssueResourceAwsMetadata $awsMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2IssueResourceAwsMetadata
+         */
+        public function getAwsMetadata()
+        {
+        }
+        /**
+         * The Azure metadata of the resource associated with the issue. Only
+         * populated for Azure resources.
+         *
+         * @param GoogleCloudSecuritycenterV2IssueResourceAzureMetadata $azureMetadata
+         */
+        public function setAzureMetadata(GoogleCloudSecuritycenterV2IssueResourceAzureMetadata $azureMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2IssueResourceAzureMetadata
+         */
+        public function getAzureMetadata()
+        {
+        }
+        /**
+         * The cloud provider of the resource associated with the issue.
+         *
+         * Accepted values: CLOUD_PROVIDER_UNSPECIFIED, GOOGLE_CLOUD,
+         * AMAZON_WEB_SERVICES, MICROSOFT_AZURE
+         *
+         * @param self::CLOUD_PROVIDER_* $cloudProvider
+         */
+        public function setCloudProvider($cloudProvider)
+        {
+        }
+        /**
+         * @return self::CLOUD_PROVIDER_*
+         */
+        public function getCloudProvider()
+        {
+        }
+        /**
+         * The resource-type specific display name of the resource associated with the
+         * issue.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The Google Cloud metadata of the resource associated with the issue. Only
+         * populated for Google Cloud resources.
+         *
+         * @param GoogleCloudSecuritycenterV2IssueResourceGoogleCloudMetadata $googleCloudMetadata
+         */
+        public function setGoogleCloudMetadata(GoogleCloudSecuritycenterV2IssueResourceGoogleCloudMetadata $googleCloudMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2IssueResourceGoogleCloudMetadata
+         */
+        public function getGoogleCloudMetadata()
+        {
+        }
+        /**
+         * The full resource name of the resource associated with the issue.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The type of the resource associated with the issue.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV2IssueResourceApplication
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IssueResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplication()
-    {
-    }
-    /**
-     * The AWS metadata of the resource associated with the issue. Only populated
-     * for AWS resources.
-     *
-     * @param GoogleCloudSecuritycenterV2IssueResourceAwsMetadata $awsMetadata
-     */
-    public function setAwsMetadata(GoogleCloudSecuritycenterV2IssueResourceAwsMetadata $awsMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2IssueResourceAwsMetadata
-     */
-    public function getAwsMetadata()
-    {
-    }
-    /**
-     * The Azure metadata of the resource associated with the issue. Only
-     * populated for Azure resources.
-     *
-     * @param GoogleCloudSecuritycenterV2IssueResourceAzureMetadata $azureMetadata
-     */
-    public function setAzureMetadata(GoogleCloudSecuritycenterV2IssueResourceAzureMetadata $azureMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2IssueResourceAzureMetadata
-     */
-    public function getAzureMetadata()
-    {
-    }
-    /**
-     * The cloud provider of the resource associated with the issue.
-     *
-     * Accepted values: CLOUD_PROVIDER_UNSPECIFIED, GOOGLE_CLOUD,
-     * AMAZON_WEB_SERVICES, MICROSOFT_AZURE
-     *
-     * @param self::CLOUD_PROVIDER_* $cloudProvider
-     */
-    public function setCloudProvider($cloudProvider)
-    {
-    }
-    /**
-     * @return self::CLOUD_PROVIDER_*
-     */
-    public function getCloudProvider()
-    {
-    }
-    /**
-     * The resource-type specific display name of the resource associated with the
-     * issue.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The Google Cloud metadata of the resource associated with the issue. Only
-     * populated for Google Cloud resources.
-     *
-     * @param GoogleCloudSecuritycenterV2IssueResourceGoogleCloudMetadata $googleCloudMetadata
-     */
-    public function setGoogleCloudMetadata(GoogleCloudSecuritycenterV2IssueResourceGoogleCloudMetadata $googleCloudMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2IssueResourceGoogleCloudMetadata
-     */
-    public function getGoogleCloudMetadata()
-    {
-    }
-    /**
-     * The full resource name of the resource associated with the issue.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The type of the resource associated with the issue.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2IssueResource extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IssueResource
     {
     }
 }

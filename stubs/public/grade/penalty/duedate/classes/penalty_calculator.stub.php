@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace gradepenalty_duedate;
 
+use cm_info;
+use context_course;
+use context_module;
+use context_system;
+use core_grades\penalty_container;
 /**
  * Penalty plugins must override this class to implement their own penalty calculation.
  *

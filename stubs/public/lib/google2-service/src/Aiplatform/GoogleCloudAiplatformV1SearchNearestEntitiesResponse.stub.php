@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SearchNearestEntitiesResponse extends \Google\Model
-{
-    protected $nearestNeighborsType = GoogleCloudAiplatformV1NearestNeighbors::class;
-    protected $nearestNeighborsDataType = '';
-    /**
-     * The nearest neighbors of the query entity.
-     *
-     * @param GoogleCloudAiplatformV1NearestNeighbors $nearestNeighbors
-     */
-    public function setNearestNeighbors(GoogleCloudAiplatformV1NearestNeighbors $nearestNeighbors)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SearchNearestEntitiesResponse extends \Google\Model
     {
+        protected $nearestNeighborsType = GoogleCloudAiplatformV1NearestNeighbors::class;
+        protected $nearestNeighborsDataType = '';
+        /**
+         * The nearest neighbors of the query entity.
+         *
+         * @param GoogleCloudAiplatformV1NearestNeighbors $nearestNeighbors
+         */
+        public function setNearestNeighbors(GoogleCloudAiplatformV1NearestNeighbors $nearestNeighbors)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1NearestNeighbors
+         */
+        public function getNearestNeighbors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1NearestNeighbors
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SearchNearestEntitiesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNearestNeighbors()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SearchNearestEntitiesResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SearchNearestEntitiesResponse
     {
     }
 }

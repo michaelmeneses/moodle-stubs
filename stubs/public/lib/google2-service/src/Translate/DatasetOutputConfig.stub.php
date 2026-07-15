@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class DatasetOutputConfig extends \Google\Model
-{
-    protected $gcsDestinationType = GcsOutputDestination::class;
-    protected $gcsDestinationDataType = '';
-    /**
-     * Google Cloud Storage destination to write the output.
-     *
-     * @param GcsOutputDestination $gcsDestination
-     */
-    public function setGcsDestination(GcsOutputDestination $gcsDestination)
+namespace Google\Service\Translate {
+    class DatasetOutputConfig extends \Google\Model
     {
+        protected $gcsDestinationType = GcsOutputDestination::class;
+        protected $gcsDestinationDataType = '';
+        /**
+         * Google Cloud Storage destination to write the output.
+         *
+         * @param GcsOutputDestination $gcsDestination
+         */
+        public function setGcsDestination(GcsOutputDestination $gcsDestination)
+        {
+        }
+        /**
+         * @return GcsOutputDestination
+         */
+        public function getGcsDestination()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GcsOutputDestination
+     * Runtime class alias of \Google\Service\Translate\DatasetOutputConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsDestination()
+    class Google_Service_Translate_DatasetOutputConfig extends \Google\Service\Translate\DatasetOutputConfig
     {
     }
 }

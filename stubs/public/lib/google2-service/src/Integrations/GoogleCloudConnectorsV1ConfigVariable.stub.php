@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudConnectorsV1ConfigVariable extends \Google\Model
-{
-    /**
-     * Value is a bool.
-     *
-     * @var bool
-     */
-    public $boolValue;
-    protected $encryptionKeyValueType = GoogleCloudConnectorsV1EncryptionKey::class;
-    protected $encryptionKeyValueDataType = '';
-    /**
-     * Value is an integer
-     *
-     * @var string
-     */
-    public $intValue;
-    /**
-     * Optional. Key of the config variable.
-     *
-     * @var string
-     */
-    public $key;
-    protected $secretValueType = GoogleCloudConnectorsV1Secret::class;
-    protected $secretValueDataType = '';
-    /**
-     * Value is a string.
-     *
-     * @var string
-     */
-    public $stringValue;
-    /**
-     * Value is a bool.
-     *
-     * @param bool $boolValue
-     */
-    public function setBoolValue($boolValue)
+namespace Google\Service\Integrations {
+    class GoogleCloudConnectorsV1ConfigVariable extends \Google\Model
     {
+        /**
+         * Value is a bool.
+         *
+         * @var bool
+         */
+        public $boolValue;
+        protected $encryptionKeyValueType = GoogleCloudConnectorsV1EncryptionKey::class;
+        protected $encryptionKeyValueDataType = '';
+        /**
+         * Value is an integer
+         *
+         * @var string
+         */
+        public $intValue;
+        /**
+         * Optional. Key of the config variable.
+         *
+         * @var string
+         */
+        public $key;
+        protected $secretValueType = GoogleCloudConnectorsV1Secret::class;
+        protected $secretValueDataType = '';
+        /**
+         * Value is a string.
+         *
+         * @var string
+         */
+        public $stringValue;
+        /**
+         * Value is a bool.
+         *
+         * @param bool $boolValue
+         */
+        public function setBoolValue($boolValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBoolValue()
+        {
+        }
+        /**
+         * Value is a Encryption Key.
+         *
+         * @param GoogleCloudConnectorsV1EncryptionKey $encryptionKeyValue
+         */
+        public function setEncryptionKeyValue(GoogleCloudConnectorsV1EncryptionKey $encryptionKeyValue)
+        {
+        }
+        /**
+         * @return GoogleCloudConnectorsV1EncryptionKey
+         */
+        public function getEncryptionKeyValue()
+        {
+        }
+        /**
+         * Value is an integer
+         *
+         * @param string $intValue
+         */
+        public function setIntValue($intValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntValue()
+        {
+        }
+        /**
+         * Optional. Key of the config variable.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Value is a secret.
+         *
+         * @param GoogleCloudConnectorsV1Secret $secretValue
+         */
+        public function setSecretValue(GoogleCloudConnectorsV1Secret $secretValue)
+        {
+        }
+        /**
+         * @return GoogleCloudConnectorsV1Secret
+         */
+        public function getSecretValue()
+        {
+        }
+        /**
+         * Value is a string.
+         *
+         * @param string $stringValue
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudConnectorsV1ConfigVariable registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoolValue()
-    {
-    }
-    /**
-     * Value is a Encryption Key.
-     *
-     * @param GoogleCloudConnectorsV1EncryptionKey $encryptionKeyValue
-     */
-    public function setEncryptionKeyValue(GoogleCloudConnectorsV1EncryptionKey $encryptionKeyValue)
-    {
-    }
-    /**
-     * @return GoogleCloudConnectorsV1EncryptionKey
-     */
-    public function getEncryptionKeyValue()
-    {
-    }
-    /**
-     * Value is an integer
-     *
-     * @param string $intValue
-     */
-    public function setIntValue($intValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntValue()
-    {
-    }
-    /**
-     * Optional. Key of the config variable.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * Value is a secret.
-     *
-     * @param GoogleCloudConnectorsV1Secret $secretValue
-     */
-    public function setSecretValue(GoogleCloudConnectorsV1Secret $secretValue)
-    {
-    }
-    /**
-     * @return GoogleCloudConnectorsV1Secret
-     */
-    public function getSecretValue()
-    {
-    }
-    /**
-     * Value is a string.
-     *
-     * @param string $stringValue
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
+    class Google_Service_Integrations_GoogleCloudConnectorsV1ConfigVariable extends \Google\Service\Integrations\GoogleCloudConnectorsV1ConfigVariable
     {
     }
 }

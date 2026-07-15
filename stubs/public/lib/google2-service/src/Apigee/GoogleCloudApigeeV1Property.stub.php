@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1Property extends \Google\Model
-{
-    /**
-     * The property key
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The property value
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The property key
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1Property extends \Google\Model
     {
+        /**
+         * The property key
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The property value
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The property key
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The property value
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1Property registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The property value
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Apigee_GoogleCloudApigeeV1Property extends \Google\Service\Apigee\GoogleCloudApigeeV1Property
     {
     }
 }

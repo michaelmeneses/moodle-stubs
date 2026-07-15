@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1DocumentEntityValidationOutput extends \Google\Collection
-{
-    protected $collection_key = 'validationResults';
-    /**
-     * The overall result of the validation, true if all applicable rules are
-     * valid.
-     *
-     * @var bool
-     */
-    public $passAllRules;
-    protected $validationResultsType = GoogleCloudDocumentaiV1DocumentEntityValidationOutputValidationResult::class;
-    protected $validationResultsDataType = 'array';
-    /**
-     * The overall result of the validation, true if all applicable rules are
-     * valid.
-     *
-     * @param bool $passAllRules
-     */
-    public function setPassAllRules($passAllRules)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1DocumentEntityValidationOutput extends \Google\Collection
     {
+        protected $collection_key = 'validationResults';
+        /**
+         * The overall result of the validation, true if all applicable rules are
+         * valid.
+         *
+         * @var bool
+         */
+        public $passAllRules;
+        protected $validationResultsType = GoogleCloudDocumentaiV1DocumentEntityValidationOutputValidationResult::class;
+        protected $validationResultsDataType = 'array';
+        /**
+         * The overall result of the validation, true if all applicable rules are
+         * valid.
+         *
+         * @param bool $passAllRules
+         */
+        public function setPassAllRules($passAllRules)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPassAllRules()
+        {
+        }
+        /**
+         * The result of each validation rule.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentEntityValidationOutputValidationResult[] $validationResults
+         */
+        public function setValidationResults($validationResults)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentEntityValidationOutputValidationResult[]
+         */
+        public function getValidationResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1DocumentEntityValidationOutput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPassAllRules()
-    {
-    }
-    /**
-     * The result of each validation rule.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentEntityValidationOutputValidationResult[] $validationResults
-     */
-    public function setValidationResults($validationResults)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1DocumentEntityValidationOutputValidationResult[]
-     */
-    public function getValidationResults()
+    class Google_Service_Document_GoogleCloudDocumentaiV1DocumentEntityValidationOutput extends \Google\Service\Document\GoogleCloudDocumentaiV1DocumentEntityValidationOutput
     {
     }
 }

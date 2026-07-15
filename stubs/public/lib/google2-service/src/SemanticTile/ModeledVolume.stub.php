@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SemanticTile;
-
-class ModeledVolume extends \Google\Collection
-{
-    protected $collection_key = 'strips';
-    protected $stripsType = TriangleStrip::class;
-    protected $stripsDataType = 'array';
-    protected $vertexOffsetsType = Vertex3DList::class;
-    protected $vertexOffsetsDataType = '';
-    /**
-     * @param TriangleStrip[]
-     */
-    public function setStrips($strips)
+namespace Google\Service\SemanticTile {
+    class ModeledVolume extends \Google\Collection
     {
+        protected $collection_key = 'strips';
+        protected $stripsType = TriangleStrip::class;
+        protected $stripsDataType = 'array';
+        protected $vertexOffsetsType = Vertex3DList::class;
+        protected $vertexOffsetsDataType = '';
+        /**
+         * @param TriangleStrip[]
+         */
+        public function setStrips($strips)
+        {
+        }
+        /**
+         * @return TriangleStrip[]
+         */
+        public function getStrips()
+        {
+        }
+        /**
+         * @param Vertex3DList
+         */
+        public function setVertexOffsets(Vertex3DList $vertexOffsets)
+        {
+        }
+        /**
+         * @return Vertex3DList
+         */
+        public function getVertexOffsets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TriangleStrip[]
+     * Runtime class alias of \Google\Service\SemanticTile\ModeledVolume registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStrips()
-    {
-    }
-    /**
-     * @param Vertex3DList
-     */
-    public function setVertexOffsets(Vertex3DList $vertexOffsets)
-    {
-    }
-    /**
-     * @return Vertex3DList
-     */
-    public function getVertexOffsets()
+    class Google_Service_SemanticTile_ModeledVolume extends \Google\Service\SemanticTile\ModeledVolume
     {
     }
 }

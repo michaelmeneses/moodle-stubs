@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ListTestCasesResponse extends \Google\Collection
-{
-    protected $collection_key = 'testCases';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $testCasesType = GoogleCloudDialogflowCxV3TestCase::class;
-    protected $testCasesDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ListTestCasesResponse extends \Google\Collection
     {
+        protected $collection_key = 'testCases';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $testCasesType = GoogleCloudDialogflowCxV3TestCase::class;
+        protected $testCasesDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of test cases. There will be a maximum number of items returned
+         * based on the page_size field in the request.
+         *
+         * @param GoogleCloudDialogflowCxV3TestCase[] $testCases
+         */
+        public function setTestCases($testCases)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3TestCase[]
+         */
+        public function getTestCases()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListTestCasesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of test cases. There will be a maximum number of items returned
-     * based on the page_size field in the request.
-     *
-     * @param GoogleCloudDialogflowCxV3TestCase[] $testCases
-     */
-    public function setTestCases($testCases)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3TestCase[]
-     */
-    public function getTestCases()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ListTestCasesResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListTestCasesResponse
     {
     }
 }

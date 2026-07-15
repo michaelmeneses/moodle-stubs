@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class CreativeFilteringReasonsReasons extends \Google\Model
-{
-    public $filteringCount;
-    public $filteringStatus;
-    public function setFilteringCount($filteringCount)
+namespace Google\Service\AdExchangeBuyer {
+    class CreativeFilteringReasonsReasons extends \Google\Model
     {
+        public $filteringCount;
+        public $filteringStatus;
+        public function setFilteringCount($filteringCount)
+        {
+        }
+        public function getFilteringCount()
+        {
+        }
+        public function setFilteringStatus($filteringStatus)
+        {
+        }
+        public function getFilteringStatus()
+        {
+        }
     }
-    public function getFilteringCount()
-    {
-    }
-    public function setFilteringStatus($filteringStatus)
-    {
-    }
-    public function getFilteringStatus()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\CreativeFilteringReasonsReasons registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_CreativeFilteringReasonsReasons extends \Google\Service\AdExchangeBuyer\CreativeFilteringReasonsReasons
     {
     }
 }

@@ -21,73 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for DLP (v2).
- *
- * <p>
- * Discover and protect your sensitive data. A fully managed service designed to
- * help you discover, classify, and protect your valuable data assets with ease.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/sensitive-data-protection/docs/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class DLP extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $infoTypes;
-    public $locations_infoTypes;
-    public $organizations_deidentifyTemplates;
-    public $organizations_inspectTemplates;
-    public $organizations_locations_columnDataProfiles;
-    public $organizations_locations_connections;
-    public $organizations_locations_deidentifyTemplates;
-    public $organizations_locations_discoveryConfigs;
-    public $organizations_locations_dlpJobs;
-    public $organizations_locations_fileStoreDataProfiles;
-    public $organizations_locations_infoTypes;
-    public $organizations_locations_inspectTemplates;
-    public $organizations_locations_jobTriggers;
-    public $organizations_locations_projectDataProfiles;
-    public $organizations_locations_storedInfoTypes;
-    public $organizations_locations_tableDataProfiles;
-    public $organizations_storedInfoTypes;
-    public $projects_content;
-    public $projects_deidentifyTemplates;
-    public $projects_dlpJobs;
-    public $projects_image;
-    public $projects_inspectTemplates;
-    public $projects_jobTriggers;
-    public $projects_locations_columnDataProfiles;
-    public $projects_locations_connections;
-    public $projects_locations_content;
-    public $projects_locations_deidentifyTemplates;
-    public $projects_locations_discoveryConfigs;
-    public $projects_locations_dlpJobs;
-    public $projects_locations_fileStoreDataProfiles;
-    public $projects_locations_image;
-    public $projects_locations_infoTypes;
-    public $projects_locations_inspectTemplates;
-    public $projects_locations_jobTriggers;
-    public $projects_locations_projectDataProfiles;
-    public $projects_locations_storedInfoTypes;
-    public $projects_locations_tableDataProfiles;
-    public $projects_storedInfoTypes;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the DLP service.
+     * Service definition for DLP (v2).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Discover and protect your sensitive data. A fully managed service designed to
+     * help you discover, classify, and protect your valuable data assets with ease.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/sensitive-data-protection/docs/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class DLP extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $infoTypes;
+        public $locations_infoTypes;
+        public $organizations_deidentifyTemplates;
+        public $organizations_inspectTemplates;
+        public $organizations_locations_columnDataProfiles;
+        public $organizations_locations_connections;
+        public $organizations_locations_deidentifyTemplates;
+        public $organizations_locations_discoveryConfigs;
+        public $organizations_locations_dlpJobs;
+        public $organizations_locations_fileStoreDataProfiles;
+        public $organizations_locations_infoTypes;
+        public $organizations_locations_inspectTemplates;
+        public $organizations_locations_jobTriggers;
+        public $organizations_locations_projectDataProfiles;
+        public $organizations_locations_storedInfoTypes;
+        public $organizations_locations_tableDataProfiles;
+        public $organizations_storedInfoTypes;
+        public $projects_content;
+        public $projects_deidentifyTemplates;
+        public $projects_dlpJobs;
+        public $projects_image;
+        public $projects_inspectTemplates;
+        public $projects_jobTriggers;
+        public $projects_locations_columnDataProfiles;
+        public $projects_locations_connections;
+        public $projects_locations_content;
+        public $projects_locations_deidentifyTemplates;
+        public $projects_locations_discoveryConfigs;
+        public $projects_locations_dlpJobs;
+        public $projects_locations_fileStoreDataProfiles;
+        public $projects_locations_image;
+        public $projects_locations_infoTypes;
+        public $projects_locations_inspectTemplates;
+        public $projects_locations_jobTriggers;
+        public $projects_locations_projectDataProfiles;
+        public $projects_locations_storedInfoTypes;
+        public $projects_locations_tableDataProfiles;
+        public $projects_storedInfoTypes;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the DLP service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DLP registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DLP extends \Google\Service\DLP
     {
     }
 }

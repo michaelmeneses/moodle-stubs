@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class InviteAcceptedEvent extends \Google\Collection
-{
-    protected $collection_key = 'participantId';
-    protected $participantIdType = StoredParticipantId::class;
-    protected $participantIdDataType = 'array';
-    /**
-     * @param StoredParticipantId[]
-     */
-    public function setParticipantId($participantId)
+namespace Google\Service\CloudSearch {
+    class InviteAcceptedEvent extends \Google\Collection
     {
+        protected $collection_key = 'participantId';
+        protected $participantIdType = StoredParticipantId::class;
+        protected $participantIdDataType = 'array';
+        /**
+         * @param StoredParticipantId[]
+         */
+        public function setParticipantId($participantId)
+        {
+        }
+        /**
+         * @return StoredParticipantId[]
+         */
+        public function getParticipantId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StoredParticipantId[]
+     * Runtime class alias of \Google\Service\CloudSearch\InviteAcceptedEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParticipantId()
+    class Google_Service_CloudSearch_InviteAcceptedEvent extends \Google\Service\CloudSearch\InviteAcceptedEvent
     {
     }
 }

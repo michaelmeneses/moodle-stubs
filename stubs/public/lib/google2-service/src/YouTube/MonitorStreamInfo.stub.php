@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class MonitorStreamInfo extends \Google\Model
-{
-    /**
-     * If you have set the enableMonitorStream property to true, then this
-     * property determines the length of the live broadcast delay.
-     *
-     * @var string
-     */
-    public $broadcastStreamDelayMs;
-    /**
-     * HTML code that embeds a player that plays the monitor stream.
-     *
-     * @var string
-     */
-    public $embedHtml;
-    /**
-     * This value determines whether the monitor stream is enabled for the
-     * broadcast. If the monitor stream is enabled, then YouTube will broadcast
-     * the event content on a special stream intended only for the broadcaster's
-     * consumption. The broadcaster can use the stream to review the event content
-     * and also to identify the optimal times to insert cuepoints. You need to set
-     * this value to true if you intend to have a broadcast delay for your event.
-     * *Note:* This property cannot be updated once the broadcast is in the
-     * testing or live state.
-     *
-     * @var bool
-     */
-    public $enableMonitorStream;
-    /**
-     * If you have set the enableMonitorStream property to true, then this
-     * property determines the length of the live broadcast delay.
-     *
-     * @param string $broadcastStreamDelayMs
-     */
-    public function setBroadcastStreamDelayMs($broadcastStreamDelayMs)
+namespace Google\Service\YouTube {
+    class MonitorStreamInfo extends \Google\Model
     {
+        /**
+         * If you have set the enableMonitorStream property to true, then this
+         * property determines the length of the live broadcast delay.
+         *
+         * @var string
+         */
+        public $broadcastStreamDelayMs;
+        /**
+         * HTML code that embeds a player that plays the monitor stream.
+         *
+         * @var string
+         */
+        public $embedHtml;
+        /**
+         * This value determines whether the monitor stream is enabled for the
+         * broadcast. If the monitor stream is enabled, then YouTube will broadcast
+         * the event content on a special stream intended only for the broadcaster's
+         * consumption. The broadcaster can use the stream to review the event content
+         * and also to identify the optimal times to insert cuepoints. You need to set
+         * this value to true if you intend to have a broadcast delay for your event.
+         * *Note:* This property cannot be updated once the broadcast is in the
+         * testing or live state.
+         *
+         * @var bool
+         */
+        public $enableMonitorStream;
+        /**
+         * If you have set the enableMonitorStream property to true, then this
+         * property determines the length of the live broadcast delay.
+         *
+         * @param string $broadcastStreamDelayMs
+         */
+        public function setBroadcastStreamDelayMs($broadcastStreamDelayMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBroadcastStreamDelayMs()
+        {
+        }
+        /**
+         * HTML code that embeds a player that plays the monitor stream.
+         *
+         * @param string $embedHtml
+         */
+        public function setEmbedHtml($embedHtml)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmbedHtml()
+        {
+        }
+        /**
+         * This value determines whether the monitor stream is enabled for the
+         * broadcast. If the monitor stream is enabled, then YouTube will broadcast
+         * the event content on a special stream intended only for the broadcaster's
+         * consumption. The broadcaster can use the stream to review the event content
+         * and also to identify the optimal times to insert cuepoints. You need to set
+         * this value to true if you intend to have a broadcast delay for your event.
+         * *Note:* This property cannot be updated once the broadcast is in the
+         * testing or live state.
+         *
+         * @param bool $enableMonitorStream
+         */
+        public function setEnableMonitorStream($enableMonitorStream)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableMonitorStream()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\MonitorStreamInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBroadcastStreamDelayMs()
-    {
-    }
-    /**
-     * HTML code that embeds a player that plays the monitor stream.
-     *
-     * @param string $embedHtml
-     */
-    public function setEmbedHtml($embedHtml)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmbedHtml()
-    {
-    }
-    /**
-     * This value determines whether the monitor stream is enabled for the
-     * broadcast. If the monitor stream is enabled, then YouTube will broadcast
-     * the event content on a special stream intended only for the broadcaster's
-     * consumption. The broadcaster can use the stream to review the event content
-     * and also to identify the optimal times to insert cuepoints. You need to set
-     * this value to true if you intend to have a broadcast delay for your event.
-     * *Note:* This property cannot be updated once the broadcast is in the
-     * testing or live state.
-     *
-     * @param bool $enableMonitorStream
-     */
-    public function setEnableMonitorStream($enableMonitorStream)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableMonitorStream()
+    class Google_Service_YouTube_MonitorStreamInfo extends \Google\Service\YouTube\MonitorStreamInfo
     {
     }
 }

@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2RuleReplacementAction extends \Google\Collection
-{
-    protected $collection_key = 'queryTerms';
-    /**
-     * Terms from the search query. Will be replaced by replacement term. Can
-     * specify up to 100 terms.
-     *
-     * @var string[]
-     */
-    public $queryTerms;
-    /**
-     * Term that will be used for replacement.
-     *
-     * @var string
-     */
-    public $replacementTerm;
-    /**
-     * Will be [deprecated = true] post migration;
-     *
-     * @var string
-     */
-    public $term;
-    /**
-     * Terms from the search query. Will be replaced by replacement term. Can
-     * specify up to 100 terms.
-     *
-     * @param string[] $queryTerms
-     */
-    public function setQueryTerms($queryTerms)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2RuleReplacementAction extends \Google\Collection
     {
+        protected $collection_key = 'queryTerms';
+        /**
+         * Terms from the search query. Will be replaced by replacement term. Can
+         * specify up to 100 terms.
+         *
+         * @var string[]
+         */
+        public $queryTerms;
+        /**
+         * Term that will be used for replacement.
+         *
+         * @var string
+         */
+        public $replacementTerm;
+        /**
+         * Will be [deprecated = true] post migration;
+         *
+         * @var string
+         */
+        public $term;
+        /**
+         * Terms from the search query. Will be replaced by replacement term. Can
+         * specify up to 100 terms.
+         *
+         * @param string[] $queryTerms
+         */
+        public function setQueryTerms($queryTerms)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getQueryTerms()
+        {
+        }
+        /**
+         * Term that will be used for replacement.
+         *
+         * @param string $replacementTerm
+         */
+        public function setReplacementTerm($replacementTerm)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReplacementTerm()
+        {
+        }
+        /**
+         * Will be [deprecated = true] post migration;
+         *
+         * @param string $term
+         */
+        public function setTerm($term)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTerm()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2RuleReplacementAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQueryTerms()
-    {
-    }
-    /**
-     * Term that will be used for replacement.
-     *
-     * @param string $replacementTerm
-     */
-    public function setReplacementTerm($replacementTerm)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReplacementTerm()
-    {
-    }
-    /**
-     * Will be [deprecated = true] post migration;
-     *
-     * @param string $term
-     */
-    public function setTerm($term)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTerm()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2RuleReplacementAction extends \Google\Service\CloudRetail\GoogleCloudRetailV2RuleReplacementAction
     {
     }
 }

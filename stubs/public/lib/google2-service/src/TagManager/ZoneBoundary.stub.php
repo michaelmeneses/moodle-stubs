@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class ZoneBoundary extends \Google\Collection
-{
-    protected $collection_key = 'customEvaluationTriggerId';
-    protected $conditionType = Condition::class;
-    protected $conditionDataType = 'array';
-    /**
-     * Custom evaluation trigger IDs. A zone will evaluate its boundary conditions
-     * when any of the listed triggers are true.
-     *
-     * @var string[]
-     */
-    public $customEvaluationTriggerId;
-    /**
-     * The conditions that, when conjoined, make up the boundary.
-     *
-     * @param Condition[] $condition
-     */
-    public function setCondition($condition)
+namespace Google\Service\TagManager {
+    class ZoneBoundary extends \Google\Collection
     {
+        protected $collection_key = 'customEvaluationTriggerId';
+        protected $conditionType = Condition::class;
+        protected $conditionDataType = 'array';
+        /**
+         * Custom evaluation trigger IDs. A zone will evaluate its boundary conditions
+         * when any of the listed triggers are true.
+         *
+         * @var string[]
+         */
+        public $customEvaluationTriggerId;
+        /**
+         * The conditions that, when conjoined, make up the boundary.
+         *
+         * @param Condition[] $condition
+         */
+        public function setCondition($condition)
+        {
+        }
+        /**
+         * @return Condition[]
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * Custom evaluation trigger IDs. A zone will evaluate its boundary conditions
+         * when any of the listed triggers are true.
+         *
+         * @param string[] $customEvaluationTriggerId
+         */
+        public function setCustomEvaluationTriggerId($customEvaluationTriggerId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCustomEvaluationTriggerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Condition[]
+     * Runtime class alias of \Google\Service\TagManager\ZoneBoundary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCondition()
-    {
-    }
-    /**
-     * Custom evaluation trigger IDs. A zone will evaluate its boundary conditions
-     * when any of the listed triggers are true.
-     *
-     * @param string[] $customEvaluationTriggerId
-     */
-    public function setCustomEvaluationTriggerId($customEvaluationTriggerId)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCustomEvaluationTriggerId()
+    class Google_Service_TagManager_ZoneBoundary extends \Google\Service\TagManager\ZoneBoundary
     {
     }
 }

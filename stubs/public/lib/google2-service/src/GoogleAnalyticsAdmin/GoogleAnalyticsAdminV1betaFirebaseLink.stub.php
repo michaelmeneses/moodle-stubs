@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaFirebaseLink extends \Google\Model
-{
-    /**
-     * Output only. Time when this FirebaseLink was originally created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. Example format: properties/1234/firebaseLinks/5678
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Immutable. Firebase project resource name. When creating a FirebaseLink,
-     * you may provide this resource name using either a project number or project
-     * ID. Once this resource has been created, returned FirebaseLinks will always
-     * have a project_name that contains a project number. Format:
-     * 'projects/{project number}' Example: 'projects/1234'
-     *
-     * @var string
-     */
-    public $project;
-    /**
-     * Output only. Time when this FirebaseLink was originally created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaFirebaseLink extends \Google\Model
     {
+        /**
+         * Output only. Time when this FirebaseLink was originally created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. Example format: properties/1234/firebaseLinks/5678
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Immutable. Firebase project resource name. When creating a FirebaseLink,
+         * you may provide this resource name using either a project number or project
+         * ID. Once this resource has been created, returned FirebaseLinks will always
+         * have a project_name that contains a project number. Format:
+         * 'projects/{project number}' Example: 'projects/1234'
+         *
+         * @var string
+         */
+        public $project;
+        /**
+         * Output only. Time when this FirebaseLink was originally created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. Example format: properties/1234/firebaseLinks/5678
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Immutable. Firebase project resource name. When creating a FirebaseLink,
+         * you may provide this resource name using either a project number or project
+         * ID. Once this resource has been created, returned FirebaseLinks will always
+         * have a project_name that contains a project number. Format:
+         * 'projects/{project number}' Example: 'projects/1234'
+         *
+         * @param string $project
+         */
+        public function setProject($project)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaFirebaseLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. Example format: properties/1234/firebaseLinks/5678
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Immutable. Firebase project resource name. When creating a FirebaseLink,
-     * you may provide this resource name using either a project number or project
-     * ID. Once this resource has been created, returned FirebaseLinks will always
-     * have a project_name that contains a project number. Format:
-     * 'projects/{project number}' Example: 'projects/1234'
-     *
-     * @param string $project
-     */
-    public function setProject($project)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProject()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaFirebaseLink extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaFirebaseLink
     {
     }
 }

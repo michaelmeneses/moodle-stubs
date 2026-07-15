@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class PromotionIntroductoryPricingDetails extends \Google\Collection
-{
-    protected $collection_key = 'introductoryPricingSpecs';
-    protected $introductoryPricingSpecsType = PromotionIntroductoryPricingDetailsIntroductoryPricingSpec::class;
-    protected $introductoryPricingSpecsDataType = 'array';
-    /**
-     * Output only. Specifies the introductory pricing periods.
-     *
-     * @param PromotionIntroductoryPricingDetailsIntroductoryPricingSpec[] $introductoryPricingSpecs
-     */
-    public function setIntroductoryPricingSpecs($introductoryPricingSpecs)
+namespace Google\Service\PaymentsResellerSubscription {
+    class PromotionIntroductoryPricingDetails extends \Google\Collection
     {
+        protected $collection_key = 'introductoryPricingSpecs';
+        protected $introductoryPricingSpecsType = PromotionIntroductoryPricingDetailsIntroductoryPricingSpec::class;
+        protected $introductoryPricingSpecsDataType = 'array';
+        /**
+         * Output only. Specifies the introductory pricing periods.
+         *
+         * @param PromotionIntroductoryPricingDetailsIntroductoryPricingSpec[] $introductoryPricingSpecs
+         */
+        public function setIntroductoryPricingSpecs($introductoryPricingSpecs)
+        {
+        }
+        /**
+         * @return PromotionIntroductoryPricingDetailsIntroductoryPricingSpec[]
+         */
+        public function getIntroductoryPricingSpecs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PromotionIntroductoryPricingDetailsIntroductoryPricingSpec[]
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\PromotionIntroductoryPricingDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntroductoryPricingSpecs()
+    class Google_Service_PaymentsResellerSubscription_PromotionIntroductoryPricingDetails extends \Google\Service\PaymentsResellerSubscription\PromotionIntroductoryPricingDetails
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class SamlSsoInfo extends \Google\Model
-{
-    /**
-     * Required. Name of the `InboundSamlSsoProfile` to use. Must be of the form
-     * `inboundSamlSsoProfiles/{inbound_saml_sso_profile}`.
-     *
-     * @var string
-     */
-    public $inboundSamlSsoProfile;
-    /**
-     * Required. Name of the `InboundSamlSsoProfile` to use. Must be of the form
-     * `inboundSamlSsoProfiles/{inbound_saml_sso_profile}`.
-     *
-     * @param string $inboundSamlSsoProfile
-     */
-    public function setInboundSamlSsoProfile($inboundSamlSsoProfile)
+namespace Google\Service\CloudIdentity {
+    class SamlSsoInfo extends \Google\Model
     {
+        /**
+         * Required. Name of the `InboundSamlSsoProfile` to use. Must be of the form
+         * `inboundSamlSsoProfiles/{inbound_saml_sso_profile}`.
+         *
+         * @var string
+         */
+        public $inboundSamlSsoProfile;
+        /**
+         * Required. Name of the `InboundSamlSsoProfile` to use. Must be of the form
+         * `inboundSamlSsoProfiles/{inbound_saml_sso_profile}`.
+         *
+         * @param string $inboundSamlSsoProfile
+         */
+        public function setInboundSamlSsoProfile($inboundSamlSsoProfile)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInboundSamlSsoProfile()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIdentity\SamlSsoInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInboundSamlSsoProfile()
+    class Google_Service_CloudIdentity_SamlSsoInfo extends \Google\Service\CloudIdentity\SamlSsoInfo
     {
     }
 }

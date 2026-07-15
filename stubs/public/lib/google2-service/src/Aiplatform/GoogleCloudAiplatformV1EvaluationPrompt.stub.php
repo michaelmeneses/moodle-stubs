@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EvaluationPrompt extends \Google\Model
-{
-    protected $promptTemplateDataType = GoogleCloudAiplatformV1EvaluationPromptPromptTemplateData::class;
-    protected $promptTemplateDataDataType = '';
-    /**
-     * Text prompt.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Fields and values that can be used to populate the prompt template.
-     *
-     * @var array
-     */
-    public $value;
-    /**
-     * Prompt template data.
-     *
-     * @param GoogleCloudAiplatformV1EvaluationPromptPromptTemplateData $promptTemplateData
-     */
-    public function setPromptTemplateData(GoogleCloudAiplatformV1EvaluationPromptPromptTemplateData $promptTemplateData)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EvaluationPrompt extends \Google\Model
     {
+        protected $promptTemplateDataType = GoogleCloudAiplatformV1EvaluationPromptPromptTemplateData::class;
+        protected $promptTemplateDataDataType = '';
+        /**
+         * Text prompt.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Fields and values that can be used to populate the prompt template.
+         *
+         * @var array
+         */
+        public $value;
+        /**
+         * Prompt template data.
+         *
+         * @param GoogleCloudAiplatformV1EvaluationPromptPromptTemplateData $promptTemplateData
+         */
+        public function setPromptTemplateData(GoogleCloudAiplatformV1EvaluationPromptPromptTemplateData $promptTemplateData)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EvaluationPromptPromptTemplateData
+         */
+        public function getPromptTemplateData()
+        {
+        }
+        /**
+         * Text prompt.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * Fields and values that can be used to populate the prompt template.
+         *
+         * @param array $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1EvaluationPromptPromptTemplateData
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationPrompt registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPromptTemplateData()
-    {
-    }
-    /**
-     * Text prompt.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
-    {
-    }
-    /**
-     * Fields and values that can be used to populate the prompt template.
-     *
-     * @param array $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getValue()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EvaluationPrompt extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationPrompt
     {
     }
 }

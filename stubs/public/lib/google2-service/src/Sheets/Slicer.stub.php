@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class Slicer extends \Google\Model
-{
-    protected $positionType = EmbeddedObjectPosition::class;
-    protected $positionDataType = '';
-    /**
-     * The ID of the slicer.
-     *
-     * @var int
-     */
-    public $slicerId;
-    protected $specType = SlicerSpec::class;
-    protected $specDataType = '';
-    /**
-     * The position of the slicer. Note that slicer can be positioned only on
-     * existing sheet. Also, width and height of slicer can be automatically
-     * adjusted to keep it within permitted limits.
-     *
-     * @param EmbeddedObjectPosition $position
-     */
-    public function setPosition(EmbeddedObjectPosition $position)
+namespace Google\Service\Sheets {
+    class Slicer extends \Google\Model
     {
+        protected $positionType = EmbeddedObjectPosition::class;
+        protected $positionDataType = '';
+        /**
+         * The ID of the slicer.
+         *
+         * @var int
+         */
+        public $slicerId;
+        protected $specType = SlicerSpec::class;
+        protected $specDataType = '';
+        /**
+         * The position of the slicer. Note that slicer can be positioned only on
+         * existing sheet. Also, width and height of slicer can be automatically
+         * adjusted to keep it within permitted limits.
+         *
+         * @param EmbeddedObjectPosition $position
+         */
+        public function setPosition(EmbeddedObjectPosition $position)
+        {
+        }
+        /**
+         * @return EmbeddedObjectPosition
+         */
+        public function getPosition()
+        {
+        }
+        /**
+         * The ID of the slicer.
+         *
+         * @param int $slicerId
+         */
+        public function setSlicerId($slicerId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSlicerId()
+        {
+        }
+        /**
+         * The specification of the slicer.
+         *
+         * @param SlicerSpec $spec
+         */
+        public function setSpec(SlicerSpec $spec)
+        {
+        }
+        /**
+         * @return SlicerSpec
+         */
+        public function getSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EmbeddedObjectPosition
+     * Runtime class alias of \Google\Service\Sheets\Slicer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPosition()
-    {
-    }
-    /**
-     * The ID of the slicer.
-     *
-     * @param int $slicerId
-     */
-    public function setSlicerId($slicerId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSlicerId()
-    {
-    }
-    /**
-     * The specification of the slicer.
-     *
-     * @param SlicerSpec $spec
-     */
-    public function setSpec(SlicerSpec $spec)
-    {
-    }
-    /**
-     * @return SlicerSpec
-     */
-    public function getSpec()
+    class Google_Service_Sheets_Slicer extends \Google\Service\Sheets\Slicer
     {
     }
 }

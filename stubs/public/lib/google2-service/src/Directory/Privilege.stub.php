@@ -21,151 +21,160 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class Privilege extends \Google\Collection
-{
-    protected $collection_key = 'childPrivileges';
-    protected $childPrivilegesType = Privilege::class;
-    protected $childPrivilegesDataType = 'array';
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * If the privilege can be restricted to an organization unit.
-     *
-     * @var bool
-     */
-    public $isOuScopable;
-    /**
-     * The type of the API resource. This is always `admin#directory#privilege`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The name of the privilege.
-     *
-     * @var string
-     */
-    public $privilegeName;
-    /**
-     * The obfuscated ID of the service this privilege is for. This value is
-     * returned with [`Privileges.list()`](https://developers.google.com/workspace
-     * /admin/directory/v1/reference/privileges/list).
-     *
-     * @var string
-     */
-    public $serviceId;
-    /**
-     * The name of the service this privilege is for.
-     *
-     * @var string
-     */
-    public $serviceName;
-    /**
-     * A list of child privileges. Privileges for a service form a tree. Each
-     * privilege can have a list of child privileges; this list is empty for a
-     * leaf privilege.
-     *
-     * @param Privilege[] $childPrivileges
-     */
-    public function setChildPrivileges($childPrivileges)
+namespace Google\Service\Directory {
+    class Privilege extends \Google\Collection
     {
+        protected $collection_key = 'childPrivileges';
+        protected $childPrivilegesType = Privilege::class;
+        protected $childPrivilegesDataType = 'array';
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * If the privilege can be restricted to an organization unit.
+         *
+         * @var bool
+         */
+        public $isOuScopable;
+        /**
+         * The type of the API resource. This is always `admin#directory#privilege`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The name of the privilege.
+         *
+         * @var string
+         */
+        public $privilegeName;
+        /**
+         * The obfuscated ID of the service this privilege is for. This value is
+         * returned with [`Privileges.list()`](https://developers.google.com/workspace
+         * /admin/directory/v1/reference/privileges/list).
+         *
+         * @var string
+         */
+        public $serviceId;
+        /**
+         * The name of the service this privilege is for.
+         *
+         * @var string
+         */
+        public $serviceName;
+        /**
+         * A list of child privileges. Privileges for a service form a tree. Each
+         * privilege can have a list of child privileges; this list is empty for a
+         * leaf privilege.
+         *
+         * @param Privilege[] $childPrivileges
+         */
+        public function setChildPrivileges($childPrivileges)
+        {
+        }
+        /**
+         * @return Privilege[]
+         */
+        public function getChildPrivileges()
+        {
+        }
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * If the privilege can be restricted to an organization unit.
+         *
+         * @param bool $isOuScopable
+         */
+        public function setIsOuScopable($isOuScopable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsOuScopable()
+        {
+        }
+        /**
+         * The type of the API resource. This is always `admin#directory#privilege`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The name of the privilege.
+         *
+         * @param string $privilegeName
+         */
+        public function setPrivilegeName($privilegeName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivilegeName()
+        {
+        }
+        /**
+         * The obfuscated ID of the service this privilege is for. This value is
+         * returned with [`Privileges.list()`](https://developers.google.com/workspace
+         * /admin/directory/v1/reference/privileges/list).
+         *
+         * @param string $serviceId
+         */
+        public function setServiceId($serviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceId()
+        {
+        }
+        /**
+         * The name of the service this privilege is for.
+         *
+         * @param string $serviceName
+         */
+        public function setServiceName($serviceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Privilege[]
+     * Runtime class alias of \Google\Service\Directory\Privilege registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChildPrivileges()
-    {
-    }
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * If the privilege can be restricted to an organization unit.
-     *
-     * @param bool $isOuScopable
-     */
-    public function setIsOuScopable($isOuScopable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsOuScopable()
-    {
-    }
-    /**
-     * The type of the API resource. This is always `admin#directory#privilege`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The name of the privilege.
-     *
-     * @param string $privilegeName
-     */
-    public function setPrivilegeName($privilegeName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrivilegeName()
-    {
-    }
-    /**
-     * The obfuscated ID of the service this privilege is for. This value is
-     * returned with [`Privileges.list()`](https://developers.google.com/workspace
-     * /admin/directory/v1/reference/privileges/list).
-     *
-     * @param string $serviceId
-     */
-    public function setServiceId($serviceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceId()
-    {
-    }
-    /**
-     * The name of the service this privilege is for.
-     *
-     * @param string $serviceName
-     */
-    public function setServiceName($serviceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceName()
+    class Google_Service_Directory_Privilege extends \Google\Service\Directory\Privilege
     {
     }
 }

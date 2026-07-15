@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1UserInfo extends \Google\Model
-{
-    /**
-     * The user's username.
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * The user's username.
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1UserInfo extends \Google\Model
     {
+        /**
+         * The user's username.
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * The user's username.
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1UserInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUsername()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1UserInfo extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1UserInfo
     {
     }
 }

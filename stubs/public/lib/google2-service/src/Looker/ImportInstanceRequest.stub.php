@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Looker;
-
-class ImportInstanceRequest extends \Google\Model
-{
-    /**
-     * Path to the import folder in Google Cloud Storage, in the form
-     * `gs://bucketName/folderName`.
-     *
-     * @var string
-     */
-    public $gcsUri;
-    /**
-     * Path to the import folder in Google Cloud Storage, in the form
-     * `gs://bucketName/folderName`.
-     *
-     * @param string $gcsUri
-     */
-    public function setGcsUri($gcsUri)
+namespace Google\Service\Looker {
+    class ImportInstanceRequest extends \Google\Model
     {
+        /**
+         * Path to the import folder in Google Cloud Storage, in the form
+         * `gs://bucketName/folderName`.
+         *
+         * @var string
+         */
+        public $gcsUri;
+        /**
+         * Path to the import folder in Google Cloud Storage, in the form
+         * `gs://bucketName/folderName`.
+         *
+         * @param string $gcsUri
+         */
+        public function setGcsUri($gcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Looker\ImportInstanceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsUri()
+    class Google_Service_Looker_ImportInstanceRequest extends \Google\Service\Looker\ImportInstanceRequest
     {
     }
 }

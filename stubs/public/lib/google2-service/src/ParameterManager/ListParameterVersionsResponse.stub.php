@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ParameterManager;
-
-class ListParameterVersionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $parameterVersionsType = ParameterVersion::class;
-    protected $parameterVersionsDataType = 'array';
-    /**
-     * Unordered list. Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ParameterManager {
+    class ListParameterVersionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $parameterVersionsType = ParameterVersion::class;
+        protected $parameterVersionsDataType = 'array';
+        /**
+         * Unordered list. Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of ParameterVersions
+         *
+         * @param ParameterVersion[] $parameterVersions
+         */
+        public function setParameterVersions($parameterVersions)
+        {
+        }
+        /**
+         * @return ParameterVersion[]
+         */
+        public function getParameterVersions()
+        {
+        }
+        /**
+         * Unordered list. Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ParameterManager\ListParameterVersionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of ParameterVersions
-     *
-     * @param ParameterVersion[] $parameterVersions
-     */
-    public function setParameterVersions($parameterVersions)
-    {
-    }
-    /**
-     * @return ParameterVersion[]
-     */
-    public function getParameterVersions()
-    {
-    }
-    /**
-     * Unordered list. Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_ParameterManager_ListParameterVersionsResponse extends \Google\Service\ParameterManager\ListParameterVersionsResponse
     {
     }
 }

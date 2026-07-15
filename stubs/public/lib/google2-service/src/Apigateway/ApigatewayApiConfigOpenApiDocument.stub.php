@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigateway;
-
-class ApigatewayApiConfigOpenApiDocument extends \Google\Model
-{
-    protected $documentType = ApigatewayApiConfigFile::class;
-    protected $documentDataType = '';
-    /**
-     * The OpenAPI Specification document file.
-     *
-     * @param ApigatewayApiConfigFile $document
-     */
-    public function setDocument(ApigatewayApiConfigFile $document)
+namespace Google\Service\Apigateway {
+    class ApigatewayApiConfigOpenApiDocument extends \Google\Model
     {
+        protected $documentType = ApigatewayApiConfigFile::class;
+        protected $documentDataType = '';
+        /**
+         * The OpenAPI Specification document file.
+         *
+         * @param ApigatewayApiConfigFile $document
+         */
+        public function setDocument(ApigatewayApiConfigFile $document)
+        {
+        }
+        /**
+         * @return ApigatewayApiConfigFile
+         */
+        public function getDocument()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApigatewayApiConfigFile
+     * Runtime class alias of \Google\Service\Apigateway\ApigatewayApiConfigOpenApiDocument registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocument()
+    class Google_Service_Apigateway_ApigatewayApiConfigOpenApiDocument extends \Google\Service\Apigateway\ApigatewayApiConfigOpenApiDocument
     {
     }
 }

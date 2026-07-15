@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer;
-
-class MetadataTaskSpec extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $bucketName;
-    /**
-     * @var string
-     */
-    public $generation;
-    /**
-     * @var string
-     */
-    public $key;
-    /**
-     * @var string
-     */
-    public $size;
-    /**
-     * @param string
-     */
-    public function setBucketName($bucketName)
+namespace Google\Service\Storagetransfer {
+    class MetadataTaskSpec extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $bucketName;
+        /**
+         * @var string
+         */
+        public $generation;
+        /**
+         * @var string
+         */
+        public $key;
+        /**
+         * @var string
+         */
+        public $size;
+        /**
+         * @param string
+         */
+        public function setBucketName($bucketName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucketName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGeneration($generation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeneration()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSize($size)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storagetransfer\MetadataTaskSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucketName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGeneration($generation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGeneration()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSize($size)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSize()
+    class Google_Service_Storagetransfer_MetadataTaskSpec extends \Google\Service\Storagetransfer\MetadataTaskSpec
     {
     }
 }

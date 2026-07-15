@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1GetKnowledgeAssistResponseKnowledgeAnswerGenerativeSource extends \Google\Collection
-{
-    protected $collection_key = 'snippets';
-    protected $snippetsType = GoogleCloudContactcenterinsightsV1GetKnowledgeAssistResponseKnowledgeAnswerGenerativeSourceSnippet::class;
-    protected $snippetsDataType = 'array';
-    /**
-     * @param GoogleCloudContactcenterinsightsV1GetKnowledgeAssistResponseKnowledgeAnswerGenerativeSourceSnippet[]
-     */
-    public function setSnippets($snippets)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1GetKnowledgeAssistResponseKnowledgeAnswerGenerativeSource extends \Google\Collection
     {
+        protected $collection_key = 'snippets';
+        protected $snippetsType = GoogleCloudContactcenterinsightsV1GetKnowledgeAssistResponseKnowledgeAnswerGenerativeSourceSnippet::class;
+        protected $snippetsDataType = 'array';
+        /**
+         * @param GoogleCloudContactcenterinsightsV1GetKnowledgeAssistResponseKnowledgeAnswerGenerativeSourceSnippet[]
+         */
+        public function setSnippets($snippets)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1GetKnowledgeAssistResponseKnowledgeAnswerGenerativeSourceSnippet[]
+         */
+        public function getSnippets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1GetKnowledgeAssistResponseKnowledgeAnswerGenerativeSourceSnippet[]
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1GetKnowledgeAssistResponseKnowledgeAnswerGenerativeSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSnippets()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1GetKnowledgeAssistResponseKnowledgeAnswerGenerativeSource extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1GetKnowledgeAssistResponseKnowledgeAnswerGenerativeSource
     {
     }
 }

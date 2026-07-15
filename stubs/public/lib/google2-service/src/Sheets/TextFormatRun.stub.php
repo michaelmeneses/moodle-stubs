@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class TextFormatRun extends \Google\Model
-{
-    protected $formatType = TextFormat::class;
-    protected $formatDataType = '';
-    /**
-     * The zero-based character index where this run starts, in UTF-16 code units.
-     *
-     * @var int
-     */
-    public $startIndex;
-    /**
-     * The format of this run. Absent values inherit the cell's format.
-     *
-     * @param TextFormat $format
-     */
-    public function setFormat(TextFormat $format)
+namespace Google\Service\Sheets {
+    class TextFormatRun extends \Google\Model
     {
+        protected $formatType = TextFormat::class;
+        protected $formatDataType = '';
+        /**
+         * The zero-based character index where this run starts, in UTF-16 code units.
+         *
+         * @var int
+         */
+        public $startIndex;
+        /**
+         * The format of this run. Absent values inherit the cell's format.
+         *
+         * @param TextFormat $format
+         */
+        public function setFormat(TextFormat $format)
+        {
+        }
+        /**
+         * @return TextFormat
+         */
+        public function getFormat()
+        {
+        }
+        /**
+         * The zero-based character index where this run starts, in UTF-16 code units.
+         *
+         * @param int $startIndex
+         */
+        public function setStartIndex($startIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TextFormat
+     * Runtime class alias of \Google\Service\Sheets\TextFormatRun registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFormat()
-    {
-    }
-    /**
-     * The zero-based character index where this run starts, in UTF-16 code units.
-     *
-     * @param int $startIndex
-     */
-    public function setStartIndex($startIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartIndex()
+    class Google_Service_Sheets_TextFormatRun extends \Google\Service\Sheets\TextFormatRun
     {
     }
 }

@@ -16,6 +16,9 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\Formatter\WildfireFormatter;
+use Monolog\Formatter\FormatterInterface;
+use Monolog\LogRecord;
 /**
  * Simple FirePHP Handler (http://www.firephp.org/), which uses the Wildfire protocol.
  *

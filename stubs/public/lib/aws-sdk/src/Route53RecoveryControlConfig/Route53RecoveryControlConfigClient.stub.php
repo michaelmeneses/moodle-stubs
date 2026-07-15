@@ -8,6 +8,7 @@
  */
 namespace Aws\Route53RecoveryControlConfig;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Route53 Recovery Control Config** service.
  * @method \Aws\Result createCluster(array $args = [])

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1betaExchangeRecaptchaEnterpriseTokenRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $recaptchaEnterpriseToken;
-    /**
-     * @param string
-     */
-    public function setRecaptchaEnterpriseToken($recaptchaEnterpriseToken)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1betaExchangeRecaptchaEnterpriseTokenRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $recaptchaEnterpriseToken;
+        /**
+         * @param string
+         */
+        public function setRecaptchaEnterpriseToken($recaptchaEnterpriseToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecaptchaEnterpriseToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaExchangeRecaptchaEnterpriseTokenRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRecaptchaEnterpriseToken()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1betaExchangeRecaptchaEnterpriseTokenRequest extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaExchangeRecaptchaEnterpriseTokenRequest
     {
     }
 }

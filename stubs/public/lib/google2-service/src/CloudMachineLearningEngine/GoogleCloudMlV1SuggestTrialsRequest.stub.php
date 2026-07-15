@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1SuggestTrialsRequest extends \Google\Model
-{
-    /**
-     * Required. The identifier of the client that is requesting the suggestion.
-     * If multiple SuggestTrialsRequests have the same `client_id`, the service
-     * will return the identical suggested trial if the trial is pending, and
-     * provide a new trial if the last suggested trial was completed.
-     *
-     * @var string
-     */
-    public $clientId;
-    /**
-     * Required. The number of suggestions requested.
-     *
-     * @var int
-     */
-    public $suggestionCount;
-    /**
-     * Required. The identifier of the client that is requesting the suggestion.
-     * If multiple SuggestTrialsRequests have the same `client_id`, the service
-     * will return the identical suggested trial if the trial is pending, and
-     * provide a new trial if the last suggested trial was completed.
-     *
-     * @param string $clientId
-     */
-    public function setClientId($clientId)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1SuggestTrialsRequest extends \Google\Model
     {
+        /**
+         * Required. The identifier of the client that is requesting the suggestion.
+         * If multiple SuggestTrialsRequests have the same `client_id`, the service
+         * will return the identical suggested trial if the trial is pending, and
+         * provide a new trial if the last suggested trial was completed.
+         *
+         * @var string
+         */
+        public $clientId;
+        /**
+         * Required. The number of suggestions requested.
+         *
+         * @var int
+         */
+        public $suggestionCount;
+        /**
+         * Required. The identifier of the client that is requesting the suggestion.
+         * If multiple SuggestTrialsRequests have the same `client_id`, the service
+         * will return the identical suggested trial if the trial is pending, and
+         * provide a new trial if the last suggested trial was completed.
+         *
+         * @param string $clientId
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
+        /**
+         * Required. The number of suggestions requested.
+         *
+         * @param int $suggestionCount
+         */
+        public function setSuggestionCount($suggestionCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSuggestionCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1SuggestTrialsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientId()
-    {
-    }
-    /**
-     * Required. The number of suggestions requested.
-     *
-     * @param int $suggestionCount
-     */
-    public function setSuggestionCount($suggestionCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSuggestionCount()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1SuggestTrialsRequest extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1SuggestTrialsRequest
     {
     }
 }

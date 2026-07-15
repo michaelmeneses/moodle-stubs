@@ -21,28 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IAMCredentials\Resource;
-
-/**
- * The "workforcePools" collection of methods.
- * Typical usage is:
- *  <code>
- *   $iamcredentialsService = new Google\Service\IAMCredentials(...);
- *   $workforcePools = $iamcredentialsService->locations_workforcePools;
- *  </code>
- */
-class LocationsWorkforcePools extends \Google\Service\Resource
-{
+namespace Google\Service\IAMCredentials\Resource {
+    use Google\Service\IAMCredentials\WorkforcePoolAllowedLocations;
     /**
-     * Returns the trust boundary info for a given workforce pool.
-     * (workforcePools.getAllowedLocations)
-     *
-     * @param string $name Required. Resource name of workforce pool.
-     * @param array $optParams Optional parameters.
-     * @return WorkforcePoolAllowedLocations
-     * @throws \Google\Service\Exception
+     * The "workforcePools" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $iamcredentialsService = new Google\Service\IAMCredentials(...);
+     *   $workforcePools = $iamcredentialsService->locations_workforcePools;
+     *  </code>
      */
-    public function getAllowedLocations($name, $optParams = [])
+    class LocationsWorkforcePools extends \Google\Service\Resource
+    {
+        /**
+         * Returns the trust boundary info for a given workforce pool.
+         * (workforcePools.getAllowedLocations)
+         *
+         * @param string $name Required. Resource name of workforce pool.
+         * @param array $optParams Optional parameters.
+         * @return WorkforcePoolAllowedLocations
+         * @throws \Google\Service\Exception
+         */
+        public function getAllowedLocations($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\IAMCredentials\Resource\LocationsWorkforcePools registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_IAMCredentials_Resource_LocationsWorkforcePools extends \Google\Service\IAMCredentials\Resource\LocationsWorkforcePools
     {
     }
 }

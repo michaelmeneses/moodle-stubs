@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class BulkEditLineItemAssignedTargetingOptionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'createdAssignedTargetingOptions';
-    protected $createdAssignedTargetingOptionsType = AssignedTargetingOption::class;
-    protected $createdAssignedTargetingOptionsDataType = 'array';
-    /**
-     * @param AssignedTargetingOption[]
-     */
-    public function setCreatedAssignedTargetingOptions($createdAssignedTargetingOptions)
+namespace Google\Service\DisplayVideo {
+    class BulkEditLineItemAssignedTargetingOptionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'createdAssignedTargetingOptions';
+        protected $createdAssignedTargetingOptionsType = AssignedTargetingOption::class;
+        protected $createdAssignedTargetingOptionsDataType = 'array';
+        /**
+         * @param AssignedTargetingOption[]
+         */
+        public function setCreatedAssignedTargetingOptions($createdAssignedTargetingOptions)
+        {
+        }
+        /**
+         * @return AssignedTargetingOption[]
+         */
+        public function getCreatedAssignedTargetingOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AssignedTargetingOption[]
+     * Runtime class alias of \Google\Service\DisplayVideo\BulkEditLineItemAssignedTargetingOptionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreatedAssignedTargetingOptions()
+    class Google_Service_DisplayVideo_BulkEditLineItemAssignedTargetingOptionsResponse extends \Google\Service\DisplayVideo\BulkEditLineItemAssignedTargetingOptionsResponse
     {
     }
 }

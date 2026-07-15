@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessCalls;
-
-class WeekDayMetrics extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $day;
-    /**
-     * @var int
-     */
-    public $missedCallsCount;
-    /**
-     * @param string
-     */
-    public function setDay($day)
+namespace Google\Service\MyBusinessBusinessCalls {
+    class WeekDayMetrics extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $day;
+        /**
+         * @var int
+         */
+        public $missedCallsCount;
+        /**
+         * @param string
+         */
+        public function setDay($day)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDay()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMissedCallsCount($missedCallsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMissedCallsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessBusinessCalls\WeekDayMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDay()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMissedCallsCount($missedCallsCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMissedCallsCount()
+    class Google_Service_MyBusinessBusinessCalls_WeekDayMetrics extends \Google\Service\MyBusinessBusinessCalls\WeekDayMetrics
     {
     }
 }

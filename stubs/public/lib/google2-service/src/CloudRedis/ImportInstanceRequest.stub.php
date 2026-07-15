@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class ImportInstanceRequest extends \Google\Model
-{
-    protected $inputConfigType = InputConfig::class;
-    protected $inputConfigDataType = '';
-    /**
-     * Required. Specify data to be imported.
-     *
-     * @param InputConfig $inputConfig
-     */
-    public function setInputConfig(InputConfig $inputConfig)
+namespace Google\Service\CloudRedis {
+    class ImportInstanceRequest extends \Google\Model
     {
+        protected $inputConfigType = InputConfig::class;
+        protected $inputConfigDataType = '';
+        /**
+         * Required. Specify data to be imported.
+         *
+         * @param InputConfig $inputConfig
+         */
+        public function setInputConfig(InputConfig $inputConfig)
+        {
+        }
+        /**
+         * @return InputConfig
+         */
+        public function getInputConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InputConfig
+     * Runtime class alias of \Google\Service\CloudRedis\ImportInstanceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputConfig()
+    class Google_Service_CloudRedis_ImportInstanceRequest extends \Google\Service\CloudRedis\ImportInstanceRequest
     {
     }
 }

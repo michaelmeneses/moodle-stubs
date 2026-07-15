@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainUndeployIssueModelRequest extends \Google\Model
-{
-    /**
-     * Required. The issue model to undeploy.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The issue model to undeploy.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainUndeployIssueModelRequest extends \Google\Model
     {
+        /**
+         * Required. The issue model to undeploy.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The issue model to undeploy.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainUndeployIssueModelRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainUndeployIssueModelRequest extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainUndeployIssueModelRequest
     {
     }
 }

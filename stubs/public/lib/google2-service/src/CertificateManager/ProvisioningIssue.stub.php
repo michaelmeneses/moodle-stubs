@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateManager;
-
-class ProvisioningIssue extends \Google\Model
-{
-    /**
-     * Reason is unspecified.
-     */
-    public const REASON_REASON_UNSPECIFIED = 'REASON_UNSPECIFIED';
-    /**
-     * Certificate provisioning failed due to an issue with one or more of the
-     * domains on the certificate. For details of which domains failed, consult
-     * the `authorization_attempt_info` field.
-     */
-    public const REASON_AUTHORIZATION_ISSUE = 'AUTHORIZATION_ISSUE';
-    /**
-     * Exceeded Certificate Authority quotas or internal rate limits of the
-     * system. Provisioning may take longer to complete.
-     */
-    public const REASON_RATE_LIMITED = 'RATE_LIMITED';
-    /**
-     * Output only. Human readable explanation about the issue. Provided to help
-     * address the configuration issues. Not guaranteed to be stable. For
-     * programmatic access use Reason enum.
-     *
-     * @var string
-     */
-    public $details;
-    /**
-     * Output only. Reason for provisioning failures.
-     *
-     * @var string
-     */
-    public $reason;
-    /**
-     * Output only. Human readable explanation about the issue. Provided to help
-     * address the configuration issues. Not guaranteed to be stable. For
-     * programmatic access use Reason enum.
-     *
-     * @param string $details
-     */
-    public function setDetails($details)
+namespace Google\Service\CertificateManager {
+    class ProvisioningIssue extends \Google\Model
     {
+        /**
+         * Reason is unspecified.
+         */
+        public const REASON_REASON_UNSPECIFIED = 'REASON_UNSPECIFIED';
+        /**
+         * Certificate provisioning failed due to an issue with one or more of the
+         * domains on the certificate. For details of which domains failed, consult
+         * the `authorization_attempt_info` field.
+         */
+        public const REASON_AUTHORIZATION_ISSUE = 'AUTHORIZATION_ISSUE';
+        /**
+         * Exceeded Certificate Authority quotas or internal rate limits of the
+         * system. Provisioning may take longer to complete.
+         */
+        public const REASON_RATE_LIMITED = 'RATE_LIMITED';
+        /**
+         * Output only. Human readable explanation about the issue. Provided to help
+         * address the configuration issues. Not guaranteed to be stable. For
+         * programmatic access use Reason enum.
+         *
+         * @var string
+         */
+        public $details;
+        /**
+         * Output only. Reason for provisioning failures.
+         *
+         * @var string
+         */
+        public $reason;
+        /**
+         * Output only. Human readable explanation about the issue. Provided to help
+         * address the configuration issues. Not guaranteed to be stable. For
+         * programmatic access use Reason enum.
+         *
+         * @param string $details
+         */
+        public function setDetails($details)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDetails()
+        {
+        }
+        /**
+         * Output only. Reason for provisioning failures.
+         *
+         * Accepted values: REASON_UNSPECIFIED, AUTHORIZATION_ISSUE, RATE_LIMITED
+         *
+         * @param self::REASON_* $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return self::REASON_*
+         */
+        public function getReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CertificateManager\ProvisioningIssue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetails()
-    {
-    }
-    /**
-     * Output only. Reason for provisioning failures.
-     *
-     * Accepted values: REASON_UNSPECIFIED, AUTHORIZATION_ISSUE, RATE_LIMITED
-     *
-     * @param self::REASON_* $reason
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return self::REASON_*
-     */
-    public function getReason()
+    class Google_Service_CertificateManager_ProvisioningIssue extends \Google\Service\CertificateManager\ProvisioningIssue
     {
     }
 }

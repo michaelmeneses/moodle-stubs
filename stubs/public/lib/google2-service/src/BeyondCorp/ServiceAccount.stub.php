@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class ServiceAccount extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $email;
-    /**
-     * @param string
-     */
-    public function setEmail($email)
+namespace Google\Service\BeyondCorp {
+    class ServiceAccount extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $email;
+        /**
+         * @param string
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BeyondCorp\ServiceAccount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
+    class Google_Service_BeyondCorp_ServiceAccount extends \Google\Service\BeyondCorp\ServiceAccount
     {
     }
 }

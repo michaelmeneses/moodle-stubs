@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessInput extends \Google\Model
-{
-    protected $instanceType = GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessInstance::class;
-    protected $instanceDataType = '';
-    protected $metricSpecType = GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessSpec::class;
-    protected $metricSpecDataType = '';
-    /**
-     * Required. Question answering helpfulness instance.
-     *
-     * @param GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessInstance $instance
-     */
-    public function setInstance(GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessInstance $instance)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessInput extends \Google\Model
     {
+        protected $instanceType = GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessInstance::class;
+        protected $instanceDataType = '';
+        protected $metricSpecType = GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessSpec::class;
+        protected $metricSpecDataType = '';
+        /**
+         * Required. Question answering helpfulness instance.
+         *
+         * @param GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessInstance $instance
+         */
+        public function setInstance(GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessInstance $instance)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessInstance
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * Required. Spec for question answering helpfulness score metric.
+         *
+         * @param GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessSpec $metricSpec
+         */
+        public function setMetricSpec(GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessSpec $metricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessSpec
+         */
+        public function getMetricSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessInstance
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstance()
-    {
-    }
-    /**
-     * Required. Spec for question answering helpfulness score metric.
-     *
-     * @param GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessSpec $metricSpec
-     */
-    public function setMetricSpec(GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessSpec $metricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessSpec
-     */
-    public function getMetricSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessInput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessInput
     {
     }
 }

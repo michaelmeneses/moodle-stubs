@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class ConferenceSolution extends \Google\Model
-{
-    /**
-     * The user-visible icon for this solution.
-     *
-     * @var string
-     */
-    public $iconUri;
-    protected $keyType = ConferenceSolutionKey::class;
-    protected $keyDataType = '';
-    /**
-     * The user-visible name of this solution. Not localized.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The user-visible icon for this solution.
-     *
-     * @param string $iconUri
-     */
-    public function setIconUri($iconUri)
+namespace Google\Service\Calendar {
+    class ConferenceSolution extends \Google\Model
     {
+        /**
+         * The user-visible icon for this solution.
+         *
+         * @var string
+         */
+        public $iconUri;
+        protected $keyType = ConferenceSolutionKey::class;
+        protected $keyDataType = '';
+        /**
+         * The user-visible name of this solution. Not localized.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The user-visible icon for this solution.
+         *
+         * @param string $iconUri
+         */
+        public function setIconUri($iconUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIconUri()
+        {
+        }
+        /**
+         * The key which can uniquely identify the conference solution for this event.
+         *
+         * @param ConferenceSolutionKey $key
+         */
+        public function setKey(ConferenceSolutionKey $key)
+        {
+        }
+        /**
+         * @return ConferenceSolutionKey
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * The user-visible name of this solution. Not localized.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Calendar\ConferenceSolution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIconUri()
-    {
-    }
-    /**
-     * The key which can uniquely identify the conference solution for this event.
-     *
-     * @param ConferenceSolutionKey $key
-     */
-    public function setKey(ConferenceSolutionKey $key)
-    {
-    }
-    /**
-     * @return ConferenceSolutionKey
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * The user-visible name of this solution. Not localized.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Calendar_ConferenceSolution extends \Google\Service\Calendar\ConferenceSolution
     {
     }
 }

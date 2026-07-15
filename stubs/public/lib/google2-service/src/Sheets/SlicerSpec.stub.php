@@ -21,195 +21,204 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class SlicerSpec extends \Google\Model
-{
-    /**
-     * The horizontal alignment is not specified. Do not use this.
-     */
-    public const HORIZONTAL_ALIGNMENT_HORIZONTAL_ALIGN_UNSPECIFIED = 'HORIZONTAL_ALIGN_UNSPECIFIED';
-    /**
-     * The text is explicitly aligned to the left of the cell.
-     */
-    public const HORIZONTAL_ALIGNMENT_LEFT = 'LEFT';
-    /**
-     * The text is explicitly aligned to the center of the cell.
-     */
-    public const HORIZONTAL_ALIGNMENT_CENTER = 'CENTER';
-    /**
-     * The text is explicitly aligned to the right of the cell.
-     */
-    public const HORIZONTAL_ALIGNMENT_RIGHT = 'RIGHT';
-    /**
-     * True if the filter should apply to pivot tables. If not set, default to
-     * `True`.
-     *
-     * @var bool
-     */
-    public $applyToPivotTables;
-    protected $backgroundColorType = Color::class;
-    protected $backgroundColorDataType = '';
-    protected $backgroundColorStyleType = ColorStyle::class;
-    protected $backgroundColorStyleDataType = '';
-    /**
-     * The zero-based column index in the data table on which the filter is
-     * applied to.
-     *
-     * @var int
-     */
-    public $columnIndex;
-    protected $dataRangeType = GridRange::class;
-    protected $dataRangeDataType = '';
-    protected $filterCriteriaType = FilterCriteria::class;
-    protected $filterCriteriaDataType = '';
-    /**
-     * The horizontal alignment of title in the slicer. If unspecified, defaults
-     * to `LEFT`
-     *
-     * @var string
-     */
-    public $horizontalAlignment;
-    protected $textFormatType = TextFormat::class;
-    protected $textFormatDataType = '';
-    /**
-     * The title of the slicer.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * True if the filter should apply to pivot tables. If not set, default to
-     * `True`.
-     *
-     * @param bool $applyToPivotTables
-     */
-    public function setApplyToPivotTables($applyToPivotTables)
+namespace Google\Service\Sheets {
+    class SlicerSpec extends \Google\Model
     {
+        /**
+         * The horizontal alignment is not specified. Do not use this.
+         */
+        public const HORIZONTAL_ALIGNMENT_HORIZONTAL_ALIGN_UNSPECIFIED = 'HORIZONTAL_ALIGN_UNSPECIFIED';
+        /**
+         * The text is explicitly aligned to the left of the cell.
+         */
+        public const HORIZONTAL_ALIGNMENT_LEFT = 'LEFT';
+        /**
+         * The text is explicitly aligned to the center of the cell.
+         */
+        public const HORIZONTAL_ALIGNMENT_CENTER = 'CENTER';
+        /**
+         * The text is explicitly aligned to the right of the cell.
+         */
+        public const HORIZONTAL_ALIGNMENT_RIGHT = 'RIGHT';
+        /**
+         * True if the filter should apply to pivot tables. If not set, default to
+         * `True`.
+         *
+         * @var bool
+         */
+        public $applyToPivotTables;
+        protected $backgroundColorType = Color::class;
+        protected $backgroundColorDataType = '';
+        protected $backgroundColorStyleType = ColorStyle::class;
+        protected $backgroundColorStyleDataType = '';
+        /**
+         * The zero-based column index in the data table on which the filter is
+         * applied to.
+         *
+         * @var int
+         */
+        public $columnIndex;
+        protected $dataRangeType = GridRange::class;
+        protected $dataRangeDataType = '';
+        protected $filterCriteriaType = FilterCriteria::class;
+        protected $filterCriteriaDataType = '';
+        /**
+         * The horizontal alignment of title in the slicer. If unspecified, defaults
+         * to `LEFT`
+         *
+         * @var string
+         */
+        public $horizontalAlignment;
+        protected $textFormatType = TextFormat::class;
+        protected $textFormatDataType = '';
+        /**
+         * The title of the slicer.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * True if the filter should apply to pivot tables. If not set, default to
+         * `True`.
+         *
+         * @param bool $applyToPivotTables
+         */
+        public function setApplyToPivotTables($applyToPivotTables)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getApplyToPivotTables()
+        {
+        }
+        /**
+         * The background color of the slicer. Deprecated: Use background_color_style.
+         *
+         * @deprecated
+         * @param Color $backgroundColor
+         */
+        public function setBackgroundColor(Color $backgroundColor)
+        {
+        }
+        /**
+         * @deprecated
+         * @return Color
+         */
+        public function getBackgroundColor()
+        {
+        }
+        /**
+         * The background color of the slicer. If background_color is also set, this
+         * field takes precedence.
+         *
+         * @param ColorStyle $backgroundColorStyle
+         */
+        public function setBackgroundColorStyle(ColorStyle $backgroundColorStyle)
+        {
+        }
+        /**
+         * @return ColorStyle
+         */
+        public function getBackgroundColorStyle()
+        {
+        }
+        /**
+         * The zero-based column index in the data table on which the filter is
+         * applied to.
+         *
+         * @param int $columnIndex
+         */
+        public function setColumnIndex($columnIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColumnIndex()
+        {
+        }
+        /**
+         * The data range of the slicer.
+         *
+         * @param GridRange $dataRange
+         */
+        public function setDataRange(GridRange $dataRange)
+        {
+        }
+        /**
+         * @return GridRange
+         */
+        public function getDataRange()
+        {
+        }
+        /**
+         * The filtering criteria of the slicer.
+         *
+         * @param FilterCriteria $filterCriteria
+         */
+        public function setFilterCriteria(FilterCriteria $filterCriteria)
+        {
+        }
+        /**
+         * @return FilterCriteria
+         */
+        public function getFilterCriteria()
+        {
+        }
+        /**
+         * The horizontal alignment of title in the slicer. If unspecified, defaults
+         * to `LEFT`
+         *
+         * Accepted values: HORIZONTAL_ALIGN_UNSPECIFIED, LEFT, CENTER, RIGHT
+         *
+         * @param self::HORIZONTAL_ALIGNMENT_* $horizontalAlignment
+         */
+        public function setHorizontalAlignment($horizontalAlignment)
+        {
+        }
+        /**
+         * @return self::HORIZONTAL_ALIGNMENT_*
+         */
+        public function getHorizontalAlignment()
+        {
+        }
+        /**
+         * The text format of title in the slicer. The link field is not supported.
+         *
+         * @param TextFormat $textFormat
+         */
+        public function setTextFormat(TextFormat $textFormat)
+        {
+        }
+        /**
+         * @return TextFormat
+         */
+        public function getTextFormat()
+        {
+        }
+        /**
+         * The title of the slicer.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Sheets\SlicerSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplyToPivotTables()
-    {
-    }
-    /**
-     * The background color of the slicer. Deprecated: Use background_color_style.
-     *
-     * @deprecated
-     * @param Color $backgroundColor
-     */
-    public function setBackgroundColor(Color $backgroundColor)
-    {
-    }
-    /**
-     * @deprecated
-     * @return Color
-     */
-    public function getBackgroundColor()
-    {
-    }
-    /**
-     * The background color of the slicer. If background_color is also set, this
-     * field takes precedence.
-     *
-     * @param ColorStyle $backgroundColorStyle
-     */
-    public function setBackgroundColorStyle(ColorStyle $backgroundColorStyle)
-    {
-    }
-    /**
-     * @return ColorStyle
-     */
-    public function getBackgroundColorStyle()
-    {
-    }
-    /**
-     * The zero-based column index in the data table on which the filter is
-     * applied to.
-     *
-     * @param int $columnIndex
-     */
-    public function setColumnIndex($columnIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getColumnIndex()
-    {
-    }
-    /**
-     * The data range of the slicer.
-     *
-     * @param GridRange $dataRange
-     */
-    public function setDataRange(GridRange $dataRange)
-    {
-    }
-    /**
-     * @return GridRange
-     */
-    public function getDataRange()
-    {
-    }
-    /**
-     * The filtering criteria of the slicer.
-     *
-     * @param FilterCriteria $filterCriteria
-     */
-    public function setFilterCriteria(FilterCriteria $filterCriteria)
-    {
-    }
-    /**
-     * @return FilterCriteria
-     */
-    public function getFilterCriteria()
-    {
-    }
-    /**
-     * The horizontal alignment of title in the slicer. If unspecified, defaults
-     * to `LEFT`
-     *
-     * Accepted values: HORIZONTAL_ALIGN_UNSPECIFIED, LEFT, CENTER, RIGHT
-     *
-     * @param self::HORIZONTAL_ALIGNMENT_* $horizontalAlignment
-     */
-    public function setHorizontalAlignment($horizontalAlignment)
-    {
-    }
-    /**
-     * @return self::HORIZONTAL_ALIGNMENT_*
-     */
-    public function getHorizontalAlignment()
-    {
-    }
-    /**
-     * The text format of title in the slicer. The link field is not supported.
-     *
-     * @param TextFormat $textFormat
-     */
-    public function setTextFormat(TextFormat $textFormat)
-    {
-    }
-    /**
-     * @return TextFormat
-     */
-    public function getTextFormat()
-    {
-    }
-    /**
-     * The title of the slicer.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Sheets_SlicerSpec extends \Google\Service\Sheets\SlicerSpec
     {
     }
 }

@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1p2beta1TextAnnotation extends \Google\Collection
-{
-    protected $collection_key = 'segments';
-    protected $segmentsType = GoogleCloudVideointelligenceV1p2beta1TextSegment::class;
-    protected $segmentsDataType = 'array';
-    /**
-     * The detected text.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Feature version.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * All video segments where OCR detected text appears.
-     *
-     * @param GoogleCloudVideointelligenceV1p2beta1TextSegment[] $segments
-     */
-    public function setSegments($segments)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1p2beta1TextAnnotation extends \Google\Collection
     {
+        protected $collection_key = 'segments';
+        protected $segmentsType = GoogleCloudVideointelligenceV1p2beta1TextSegment::class;
+        protected $segmentsDataType = 'array';
+        /**
+         * The detected text.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Feature version.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * All video segments where OCR detected text appears.
+         *
+         * @param GoogleCloudVideointelligenceV1p2beta1TextSegment[] $segments
+         */
+        public function setSegments($segments)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1p2beta1TextSegment[]
+         */
+        public function getSegments()
+        {
+        }
+        /**
+         * The detected text.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * Feature version.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVideointelligenceV1p2beta1TextSegment[]
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p2beta1TextAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSegments()
-    {
-    }
-    /**
-     * The detected text.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
-    {
-    }
-    /**
-     * Feature version.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p2beta1TextAnnotation extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p2beta1TextAnnotation
     {
     }
 }

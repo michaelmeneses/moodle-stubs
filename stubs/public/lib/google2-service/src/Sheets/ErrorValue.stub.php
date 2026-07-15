@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class ErrorValue extends \Google\Model
-{
-    /**
-     * The default error type, do not use this.
-     */
-    public const TYPE_ERROR_TYPE_UNSPECIFIED = 'ERROR_TYPE_UNSPECIFIED';
-    /**
-     * Corresponds to the `#ERROR!` error.
-     */
-    public const TYPE_ERROR = 'ERROR';
-    /**
-     * Corresponds to the `#NULL!` error.
-     */
-    public const TYPE_NULL_VALUE = 'NULL_VALUE';
-    /**
-     * Corresponds to the `#DIV/0` error.
-     */
-    public const TYPE_DIVIDE_BY_ZERO = 'DIVIDE_BY_ZERO';
-    /**
-     * Corresponds to the `#VALUE!` error.
-     */
-    public const TYPE_VALUE = 'VALUE';
-    /**
-     * Corresponds to the `#REF!` error.
-     */
-    public const TYPE_REF = 'REF';
-    /**
-     * Corresponds to the `#NAME?` error.
-     */
-    public const TYPE_NAME = 'NAME';
-    /**
-     * Corresponds to the `#NUM!` error.
-     */
-    public const TYPE_NUM = 'NUM';
-    /**
-     * Corresponds to the `#N/A` error.
-     */
-    public const TYPE_N_A = 'N_A';
-    /**
-     * Corresponds to the `Loading...` state.
-     */
-    public const TYPE_LOADING = 'LOADING';
-    /**
-     * A message with more information about the error (in the spreadsheet's
-     * locale).
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * The type of error.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * A message with more information about the error (in the spreadsheet's
-     * locale).
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
+namespace Google\Service\Sheets {
+    class ErrorValue extends \Google\Model
     {
+        /**
+         * The default error type, do not use this.
+         */
+        public const TYPE_ERROR_TYPE_UNSPECIFIED = 'ERROR_TYPE_UNSPECIFIED';
+        /**
+         * Corresponds to the `#ERROR!` error.
+         */
+        public const TYPE_ERROR = 'ERROR';
+        /**
+         * Corresponds to the `#NULL!` error.
+         */
+        public const TYPE_NULL_VALUE = 'NULL_VALUE';
+        /**
+         * Corresponds to the `#DIV/0` error.
+         */
+        public const TYPE_DIVIDE_BY_ZERO = 'DIVIDE_BY_ZERO';
+        /**
+         * Corresponds to the `#VALUE!` error.
+         */
+        public const TYPE_VALUE = 'VALUE';
+        /**
+         * Corresponds to the `#REF!` error.
+         */
+        public const TYPE_REF = 'REF';
+        /**
+         * Corresponds to the `#NAME?` error.
+         */
+        public const TYPE_NAME = 'NAME';
+        /**
+         * Corresponds to the `#NUM!` error.
+         */
+        public const TYPE_NUM = 'NUM';
+        /**
+         * Corresponds to the `#N/A` error.
+         */
+        public const TYPE_N_A = 'N_A';
+        /**
+         * Corresponds to the `Loading...` state.
+         */
+        public const TYPE_LOADING = 'LOADING';
+        /**
+         * A message with more information about the error (in the spreadsheet's
+         * locale).
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * The type of error.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * A message with more information about the error (in the spreadsheet's
+         * locale).
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * The type of error.
+         *
+         * Accepted values: ERROR_TYPE_UNSPECIFIED, ERROR, NULL_VALUE, DIVIDE_BY_ZERO,
+         * VALUE, REF, NAME, NUM, N_A, LOADING
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sheets\ErrorValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessage()
-    {
-    }
-    /**
-     * The type of error.
-     *
-     * Accepted values: ERROR_TYPE_UNSPECIFIED, ERROR, NULL_VALUE, DIVIDE_BY_ZERO,
-     * VALUE, REF, NAME, NUM, N_A, LOADING
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Sheets_ErrorValue extends \Google\Service\Sheets\ErrorValue
     {
     }
 }

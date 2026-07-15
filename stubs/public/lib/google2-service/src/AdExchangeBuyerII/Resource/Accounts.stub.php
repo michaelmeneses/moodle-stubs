@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII\Resource;
-
-/**
- * The "accounts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adexchangebuyer2Service = new Google\Service\AdExchangeBuyerII(...);
- *   $accounts = $adexchangebuyer2Service->accounts;
- *  </code>
- */
-class Accounts extends \Google\Service\Resource
-{
+namespace Google\Service\AdExchangeBuyerII\Resource {
+    /**
+     * The "accounts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adexchangebuyer2Service = new Google\Service\AdExchangeBuyerII(...);
+     *   $accounts = $adexchangebuyer2Service->accounts;
+     *  </code>
+     */
+    class Accounts extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\Resource\Accounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyerII_Resource_Accounts extends \Google\Service\AdExchangeBuyerII\Resource\Accounts
+    {
+    }
 }

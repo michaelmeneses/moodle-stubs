@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class GitHubEventsConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $enterpriseConfigResourceName;
-    /**
-     * @var string
-     */
-    public $installationId;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $owner;
-    protected $pullRequestType = PullRequestFilter::class;
-    protected $pullRequestDataType = '';
-    protected $pushType = PushFilter::class;
-    protected $pushDataType = '';
-    /**
-     * @param string
-     */
-    public function setEnterpriseConfigResourceName($enterpriseConfigResourceName)
+namespace Google\Service\CloudBuild {
+    class GitHubEventsConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $enterpriseConfigResourceName;
+        /**
+         * @var string
+         */
+        public $installationId;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $owner;
+        protected $pullRequestType = PullRequestFilter::class;
+        protected $pullRequestDataType = '';
+        protected $pushType = PushFilter::class;
+        protected $pushDataType = '';
+        /**
+         * @param string
+         */
+        public function setEnterpriseConfigResourceName($enterpriseConfigResourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnterpriseConfigResourceName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInstallationId($installationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstallationId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOwner($owner)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOwner()
+        {
+        }
+        /**
+         * @param PullRequestFilter
+         */
+        public function setPullRequest(PullRequestFilter $pullRequest)
+        {
+        }
+        /**
+         * @return PullRequestFilter
+         */
+        public function getPullRequest()
+        {
+        }
+        /**
+         * @param PushFilter
+         */
+        public function setPush(PushFilter $push)
+        {
+        }
+        /**
+         * @return PushFilter
+         */
+        public function getPush()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\GitHubEventsConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnterpriseConfigResourceName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInstallationId($installationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstallationId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOwner($owner)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOwner()
-    {
-    }
-    /**
-     * @param PullRequestFilter
-     */
-    public function setPullRequest(PullRequestFilter $pullRequest)
-    {
-    }
-    /**
-     * @return PullRequestFilter
-     */
-    public function getPullRequest()
-    {
-    }
-    /**
-     * @param PushFilter
-     */
-    public function setPush(PushFilter $push)
-    {
-    }
-    /**
-     * @return PushFilter
-     */
-    public function getPush()
+    class Google_Service_CloudBuild_GitHubEventsConfig extends \Google\Service\CloudBuild\GitHubEventsConfig
     {
     }
 }

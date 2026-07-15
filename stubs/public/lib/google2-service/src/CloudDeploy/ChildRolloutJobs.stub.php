@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class ChildRolloutJobs extends \Google\Collection
-{
-    protected $collection_key = 'createRolloutJobs';
-    protected $advanceRolloutJobsType = Job::class;
-    protected $advanceRolloutJobsDataType = 'array';
-    protected $createRolloutJobsType = Job::class;
-    protected $createRolloutJobsDataType = 'array';
-    /**
-     * Output only. List of AdvanceChildRolloutJobs
-     *
-     * @param Job[] $advanceRolloutJobs
-     */
-    public function setAdvanceRolloutJobs($advanceRolloutJobs)
+namespace Google\Service\CloudDeploy {
+    class ChildRolloutJobs extends \Google\Collection
     {
+        protected $collection_key = 'createRolloutJobs';
+        protected $advanceRolloutJobsType = Job::class;
+        protected $advanceRolloutJobsDataType = 'array';
+        protected $createRolloutJobsType = Job::class;
+        protected $createRolloutJobsDataType = 'array';
+        /**
+         * Output only. List of AdvanceChildRolloutJobs
+         *
+         * @param Job[] $advanceRolloutJobs
+         */
+        public function setAdvanceRolloutJobs($advanceRolloutJobs)
+        {
+        }
+        /**
+         * @return Job[]
+         */
+        public function getAdvanceRolloutJobs()
+        {
+        }
+        /**
+         * Output only. List of CreateChildRolloutJobs
+         *
+         * @param Job[] $createRolloutJobs
+         */
+        public function setCreateRolloutJobs($createRolloutJobs)
+        {
+        }
+        /**
+         * @return Job[]
+         */
+        public function getCreateRolloutJobs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Job[]
+     * Runtime class alias of \Google\Service\CloudDeploy\ChildRolloutJobs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvanceRolloutJobs()
-    {
-    }
-    /**
-     * Output only. List of CreateChildRolloutJobs
-     *
-     * @param Job[] $createRolloutJobs
-     */
-    public function setCreateRolloutJobs($createRolloutJobs)
-    {
-    }
-    /**
-     * @return Job[]
-     */
-    public function getCreateRolloutJobs()
+    class Google_Service_CloudDeploy_ChildRolloutJobs extends \Google\Service\CloudDeploy\ChildRolloutJobs
     {
     }
 }

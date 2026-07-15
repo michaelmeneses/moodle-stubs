@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Speech;
-
-class SpeechAdaptationInfo extends \Google\Model
-{
-    /**
-     * Whether there was a timeout when applying speech adaptation. If true,
-     * adaptation had no effect in the response transcript.
-     *
-     * @var bool
-     */
-    public $adaptationTimeout;
-    /**
-     * If set, returns a message specifying which part of the speech adaptation
-     * request timed out.
-     *
-     * @var string
-     */
-    public $timeoutMessage;
-    /**
-     * Whether there was a timeout when applying speech adaptation. If true,
-     * adaptation had no effect in the response transcript.
-     *
-     * @param bool $adaptationTimeout
-     */
-    public function setAdaptationTimeout($adaptationTimeout)
+namespace Google\Service\Speech {
+    class SpeechAdaptationInfo extends \Google\Model
     {
+        /**
+         * Whether there was a timeout when applying speech adaptation. If true,
+         * adaptation had no effect in the response transcript.
+         *
+         * @var bool
+         */
+        public $adaptationTimeout;
+        /**
+         * If set, returns a message specifying which part of the speech adaptation
+         * request timed out.
+         *
+         * @var string
+         */
+        public $timeoutMessage;
+        /**
+         * Whether there was a timeout when applying speech adaptation. If true,
+         * adaptation had no effect in the response transcript.
+         *
+         * @param bool $adaptationTimeout
+         */
+        public function setAdaptationTimeout($adaptationTimeout)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAdaptationTimeout()
+        {
+        }
+        /**
+         * If set, returns a message specifying which part of the speech adaptation
+         * request timed out.
+         *
+         * @param string $timeoutMessage
+         */
+        public function setTimeoutMessage($timeoutMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeoutMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Speech\SpeechAdaptationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdaptationTimeout()
-    {
-    }
-    /**
-     * If set, returns a message specifying which part of the speech adaptation
-     * request timed out.
-     *
-     * @param string $timeoutMessage
-     */
-    public function setTimeoutMessage($timeoutMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeoutMessage()
+    class Google_Service_Speech_SpeechAdaptationInfo extends \Google\Service\Speech\SpeechAdaptationInfo
     {
     }
 }

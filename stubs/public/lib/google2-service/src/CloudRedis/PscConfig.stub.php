@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class PscConfig extends \Google\Model
-{
-    /**
-     * Required. The network where the IP address of the discovery endpoint will
-     * be reserved, in the form of
-     * projects/{network_project}/global/networks/{network_id}.
-     *
-     * @var string
-     */
-    public $network;
-    /**
-     * Required. The network where the IP address of the discovery endpoint will
-     * be reserved, in the form of
-     * projects/{network_project}/global/networks/{network_id}.
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
+namespace Google\Service\CloudRedis {
+    class PscConfig extends \Google\Model
     {
+        /**
+         * Required. The network where the IP address of the discovery endpoint will
+         * be reserved, in the form of
+         * projects/{network_project}/global/networks/{network_id}.
+         *
+         * @var string
+         */
+        public $network;
+        /**
+         * Required. The network where the IP address of the discovery endpoint will
+         * be reserved, in the form of
+         * projects/{network_project}/global/networks/{network_id}.
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRedis\PscConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetwork()
+    class Google_Service_CloudRedis_PscConfig extends \Google\Service\CloudRedis\PscConfig
     {
     }
 }

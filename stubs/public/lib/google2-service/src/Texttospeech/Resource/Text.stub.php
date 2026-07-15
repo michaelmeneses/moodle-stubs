@@ -21,28 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Texttospeech\Resource;
-
-/**
- * The "text" collection of methods.
- * Typical usage is:
- *  <code>
- *   $texttospeechService = new Google\Service\Texttospeech(...);
- *   $text = $texttospeechService->text;
- *  </code>
- */
-class Text extends \Google\Service\Resource
-{
+namespace Google\Service\Texttospeech\Resource {
+    use Google\Service\Texttospeech\SynthesizeSpeechRequest;
+    use Google\Service\Texttospeech\SynthesizeSpeechResponse;
     /**
-     * Synthesizes speech synchronously: receive results after all text input has
-     * been processed. (text.synthesize)
-     *
-     * @param SynthesizeSpeechRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SynthesizeSpeechResponse
-     * @throws \Google\Service\Exception
+     * The "text" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $texttospeechService = new Google\Service\Texttospeech(...);
+     *   $text = $texttospeechService->text;
+     *  </code>
      */
-    public function synthesize(SynthesizeSpeechRequest $postBody, $optParams = [])
+    class Text extends \Google\Service\Resource
+    {
+        /**
+         * Synthesizes speech synchronously: receive results after all text input has
+         * been processed. (text.synthesize)
+         *
+         * @param SynthesizeSpeechRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SynthesizeSpeechResponse
+         * @throws \Google\Service\Exception
+         */
+        public function synthesize(SynthesizeSpeechRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Texttospeech\Resource\Text registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Texttospeech_Resource_Text extends \Google\Service\Texttospeech\Resource\Text
     {
     }
 }

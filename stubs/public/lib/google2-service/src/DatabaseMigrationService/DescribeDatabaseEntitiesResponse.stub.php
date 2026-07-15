@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class DescribeDatabaseEntitiesResponse extends \Google\Collection
-{
-    protected $collection_key = 'databaseEntities';
-    protected $databaseEntitiesType = DatabaseEntity::class;
-    protected $databaseEntitiesDataType = 'array';
-    /**
-     * A token which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of database entities for the conversion workspace.
-     *
-     * @param DatabaseEntity[] $databaseEntities
-     */
-    public function setDatabaseEntities($databaseEntities)
+namespace Google\Service\DatabaseMigrationService {
+    class DescribeDatabaseEntitiesResponse extends \Google\Collection
     {
+        protected $collection_key = 'databaseEntities';
+        protected $databaseEntitiesType = DatabaseEntity::class;
+        protected $databaseEntitiesDataType = 'array';
+        /**
+         * A token which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of database entities for the conversion workspace.
+         *
+         * @param DatabaseEntity[] $databaseEntities
+         */
+        public function setDatabaseEntities($databaseEntities)
+        {
+        }
+        /**
+         * @return DatabaseEntity[]
+         */
+        public function getDatabaseEntities()
+        {
+        }
+        /**
+         * A token which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DatabaseEntity[]
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\DescribeDatabaseEntitiesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabaseEntities()
-    {
-    }
-    /**
-     * A token which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DatabaseMigrationService_DescribeDatabaseEntitiesResponse extends \Google\Service\DatabaseMigrationService\DescribeDatabaseEntitiesResponse
     {
     }
 }

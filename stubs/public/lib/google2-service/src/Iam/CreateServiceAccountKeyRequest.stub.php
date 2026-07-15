@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class CreateServiceAccountKeyRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $keyAlgorithm;
-    /**
-     * @var string
-     */
-    public $privateKeyType;
-    /**
-     * @param string
-     */
-    public function setKeyAlgorithm($keyAlgorithm)
+namespace Google\Service\Iam {
+    class CreateServiceAccountKeyRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $keyAlgorithm;
+        /**
+         * @var string
+         */
+        public $privateKeyType;
+        /**
+         * @param string
+         */
+        public function setKeyAlgorithm($keyAlgorithm)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyAlgorithm()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPrivateKeyType($privateKeyType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivateKeyType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Iam\CreateServiceAccountKeyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeyAlgorithm()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPrivateKeyType($privateKeyType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrivateKeyType()
+    class Google_Service_Iam_CreateServiceAccountKeyRequest extends \Google\Service\Iam\CreateServiceAccountKeyRequest
     {
     }
 }

@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class BatchDeletePrintServersRequest extends \Google\Collection
-{
-    protected $collection_key = 'printServerIds';
-    /**
-     * A list of print server IDs that should be deleted (max `100` per batch).
-     *
-     * @var string[]
-     */
-    public $printServerIds;
-    /**
-     * A list of print server IDs that should be deleted (max `100` per batch).
-     *
-     * @param string[] $printServerIds
-     */
-    public function setPrintServerIds($printServerIds)
+namespace Google\Service\Directory {
+    class BatchDeletePrintServersRequest extends \Google\Collection
     {
+        protected $collection_key = 'printServerIds';
+        /**
+         * A list of print server IDs that should be deleted (max `100` per batch).
+         *
+         * @var string[]
+         */
+        public $printServerIds;
+        /**
+         * A list of print server IDs that should be deleted (max `100` per batch).
+         *
+         * @param string[] $printServerIds
+         */
+        public function setPrintServerIds($printServerIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPrintServerIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Directory\BatchDeletePrintServersRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrintServerIds()
+    class Google_Service_Directory_BatchDeletePrintServersRequest extends \Google\Service\Directory\BatchDeletePrintServersRequest
     {
     }
 }

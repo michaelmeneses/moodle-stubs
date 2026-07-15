@@ -21,155 +21,164 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class StreamObject extends \Google\Collection
-{
-    protected $collection_key = 'errors';
-    protected $backfillJobType = BackfillJob::class;
-    protected $backfillJobDataType = '';
-    /**
-     * Output only. The creation time of the object.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $customizationRulesType = CustomizationRule::class;
-    protected $customizationRulesDataType = 'array';
-    /**
-     * Required. Display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $errorsType = Error::class;
-    protected $errorsDataType = 'array';
-    /**
-     * Output only. Identifier. The object resource's name.
-     *
-     * @var string
-     */
-    public $name;
-    protected $sourceObjectType = SourceObjectIdentifier::class;
-    protected $sourceObjectDataType = '';
-    /**
-     * Output only. The last update time of the object.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * The latest backfill job that was initiated for the stream object.
-     *
-     * @param BackfillJob $backfillJob
-     */
-    public function setBackfillJob(BackfillJob $backfillJob)
+namespace Google\Service\Datastream {
+    class StreamObject extends \Google\Collection
     {
+        protected $collection_key = 'errors';
+        protected $backfillJobType = BackfillJob::class;
+        protected $backfillJobDataType = '';
+        /**
+         * Output only. The creation time of the object.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $customizationRulesType = CustomizationRule::class;
+        protected $customizationRulesDataType = 'array';
+        /**
+         * Required. Display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $errorsType = Error::class;
+        protected $errorsDataType = 'array';
+        /**
+         * Output only. Identifier. The object resource's name.
+         *
+         * @var string
+         */
+        public $name;
+        protected $sourceObjectType = SourceObjectIdentifier::class;
+        protected $sourceObjectDataType = '';
+        /**
+         * Output only. The last update time of the object.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * The latest backfill job that was initiated for the stream object.
+         *
+         * @param BackfillJob $backfillJob
+         */
+        public function setBackfillJob(BackfillJob $backfillJob)
+        {
+        }
+        /**
+         * @return BackfillJob
+         */
+        public function getBackfillJob()
+        {
+        }
+        /**
+         * Output only. The creation time of the object.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The customization rules for the object. These rules are
+         * derived from the parent Stream's `rule_sets` and represent the intended
+         * configuration for the object.
+         *
+         * @param CustomizationRule[] $customizationRules
+         */
+        public function setCustomizationRules($customizationRules)
+        {
+        }
+        /**
+         * @return CustomizationRule[]
+         */
+        public function getCustomizationRules()
+        {
+        }
+        /**
+         * Required. Display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. Active errors on the object.
+         *
+         * @param Error[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return Error[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * Output only. Identifier. The object resource's name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The object identifier in the data source.
+         *
+         * @param SourceObjectIdentifier $sourceObject
+         */
+        public function setSourceObject(SourceObjectIdentifier $sourceObject)
+        {
+        }
+        /**
+         * @return SourceObjectIdentifier
+         */
+        public function getSourceObject()
+        {
+        }
+        /**
+         * Output only. The last update time of the object.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BackfillJob
+     * Runtime class alias of \Google\Service\Datastream\StreamObject registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackfillJob()
-    {
-    }
-    /**
-     * Output only. The creation time of the object.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The customization rules for the object. These rules are
-     * derived from the parent Stream's `rule_sets` and represent the intended
-     * configuration for the object.
-     *
-     * @param CustomizationRule[] $customizationRules
-     */
-    public function setCustomizationRules($customizationRules)
-    {
-    }
-    /**
-     * @return CustomizationRule[]
-     */
-    public function getCustomizationRules()
-    {
-    }
-    /**
-     * Required. Display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. Active errors on the object.
-     *
-     * @param Error[] $errors
-     */
-    public function setErrors($errors)
-    {
-    }
-    /**
-     * @return Error[]
-     */
-    public function getErrors()
-    {
-    }
-    /**
-     * Output only. Identifier. The object resource's name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The object identifier in the data source.
-     *
-     * @param SourceObjectIdentifier $sourceObject
-     */
-    public function setSourceObject(SourceObjectIdentifier $sourceObject)
-    {
-    }
-    /**
-     * @return SourceObjectIdentifier
-     */
-    public function getSourceObject()
-    {
-    }
-    /**
-     * Output only. The last update time of the object.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Datastream_StreamObject extends \Google\Service\Datastream\StreamObject
     {
     }
 }

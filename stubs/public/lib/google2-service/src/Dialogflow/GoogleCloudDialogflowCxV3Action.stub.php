@@ -21,123 +21,132 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3Action extends \Google\Model
-{
-    protected $agentUtteranceType = GoogleCloudDialogflowCxV3AgentUtterance::class;
-    protected $agentUtteranceDataType = '';
-    protected $flowInvocationType = GoogleCloudDialogflowCxV3FlowInvocation::class;
-    protected $flowInvocationDataType = '';
-    protected $flowTransitionType = GoogleCloudDialogflowCxV3FlowTransition::class;
-    protected $flowTransitionDataType = '';
-    protected $playbookInvocationType = GoogleCloudDialogflowCxV3PlaybookInvocation::class;
-    protected $playbookInvocationDataType = '';
-    protected $playbookTransitionType = GoogleCloudDialogflowCxV3PlaybookTransition::class;
-    protected $playbookTransitionDataType = '';
-    protected $toolUseType = GoogleCloudDialogflowCxV3ToolUse::class;
-    protected $toolUseDataType = '';
-    protected $userUtteranceType = GoogleCloudDialogflowCxV3UserUtterance::class;
-    protected $userUtteranceDataType = '';
-    /**
-     * Optional. Action performed by the agent as a message.
-     *
-     * @param GoogleCloudDialogflowCxV3AgentUtterance $agentUtterance
-     */
-    public function setAgentUtterance(GoogleCloudDialogflowCxV3AgentUtterance $agentUtterance)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3Action extends \Google\Model
     {
+        protected $agentUtteranceType = GoogleCloudDialogflowCxV3AgentUtterance::class;
+        protected $agentUtteranceDataType = '';
+        protected $flowInvocationType = GoogleCloudDialogflowCxV3FlowInvocation::class;
+        protected $flowInvocationDataType = '';
+        protected $flowTransitionType = GoogleCloudDialogflowCxV3FlowTransition::class;
+        protected $flowTransitionDataType = '';
+        protected $playbookInvocationType = GoogleCloudDialogflowCxV3PlaybookInvocation::class;
+        protected $playbookInvocationDataType = '';
+        protected $playbookTransitionType = GoogleCloudDialogflowCxV3PlaybookTransition::class;
+        protected $playbookTransitionDataType = '';
+        protected $toolUseType = GoogleCloudDialogflowCxV3ToolUse::class;
+        protected $toolUseDataType = '';
+        protected $userUtteranceType = GoogleCloudDialogflowCxV3UserUtterance::class;
+        protected $userUtteranceDataType = '';
+        /**
+         * Optional. Action performed by the agent as a message.
+         *
+         * @param GoogleCloudDialogflowCxV3AgentUtterance $agentUtterance
+         */
+        public function setAgentUtterance(GoogleCloudDialogflowCxV3AgentUtterance $agentUtterance)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3AgentUtterance
+         */
+        public function getAgentUtterance()
+        {
+        }
+        /**
+         * Optional. Action performed on behalf of the agent by invoking a CX flow.
+         *
+         * @param GoogleCloudDialogflowCxV3FlowInvocation $flowInvocation
+         */
+        public function setFlowInvocation(GoogleCloudDialogflowCxV3FlowInvocation $flowInvocation)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3FlowInvocation
+         */
+        public function getFlowInvocation()
+        {
+        }
+        /**
+         * Optional. Action performed on behalf of the agent by transitioning to a
+         * target CX flow.
+         *
+         * @param GoogleCloudDialogflowCxV3FlowTransition $flowTransition
+         */
+        public function setFlowTransition(GoogleCloudDialogflowCxV3FlowTransition $flowTransition)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3FlowTransition
+         */
+        public function getFlowTransition()
+        {
+        }
+        /**
+         * Optional. Action performed on behalf of the agent by invoking a child
+         * playbook.
+         *
+         * @param GoogleCloudDialogflowCxV3PlaybookInvocation $playbookInvocation
+         */
+        public function setPlaybookInvocation(GoogleCloudDialogflowCxV3PlaybookInvocation $playbookInvocation)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3PlaybookInvocation
+         */
+        public function getPlaybookInvocation()
+        {
+        }
+        /**
+         * Optional. Action performed on behalf of the agent by transitioning to a
+         * target playbook.
+         *
+         * @param GoogleCloudDialogflowCxV3PlaybookTransition $playbookTransition
+         */
+        public function setPlaybookTransition(GoogleCloudDialogflowCxV3PlaybookTransition $playbookTransition)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3PlaybookTransition
+         */
+        public function getPlaybookTransition()
+        {
+        }
+        /**
+         * Optional. Action performed on behalf of the agent by calling a plugin tool.
+         *
+         * @param GoogleCloudDialogflowCxV3ToolUse $toolUse
+         */
+        public function setToolUse(GoogleCloudDialogflowCxV3ToolUse $toolUse)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3ToolUse
+         */
+        public function getToolUse()
+        {
+        }
+        /**
+         * Optional. Agent obtained a message from the customer.
+         *
+         * @param GoogleCloudDialogflowCxV3UserUtterance $userUtterance
+         */
+        public function setUserUtterance(GoogleCloudDialogflowCxV3UserUtterance $userUtterance)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3UserUtterance
+         */
+        public function getUserUtterance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3AgentUtterance
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Action registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentUtterance()
-    {
-    }
-    /**
-     * Optional. Action performed on behalf of the agent by invoking a CX flow.
-     *
-     * @param GoogleCloudDialogflowCxV3FlowInvocation $flowInvocation
-     */
-    public function setFlowInvocation(GoogleCloudDialogflowCxV3FlowInvocation $flowInvocation)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3FlowInvocation
-     */
-    public function getFlowInvocation()
-    {
-    }
-    /**
-     * Optional. Action performed on behalf of the agent by transitioning to a
-     * target CX flow.
-     *
-     * @param GoogleCloudDialogflowCxV3FlowTransition $flowTransition
-     */
-    public function setFlowTransition(GoogleCloudDialogflowCxV3FlowTransition $flowTransition)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3FlowTransition
-     */
-    public function getFlowTransition()
-    {
-    }
-    /**
-     * Optional. Action performed on behalf of the agent by invoking a child
-     * playbook.
-     *
-     * @param GoogleCloudDialogflowCxV3PlaybookInvocation $playbookInvocation
-     */
-    public function setPlaybookInvocation(GoogleCloudDialogflowCxV3PlaybookInvocation $playbookInvocation)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3PlaybookInvocation
-     */
-    public function getPlaybookInvocation()
-    {
-    }
-    /**
-     * Optional. Action performed on behalf of the agent by transitioning to a
-     * target playbook.
-     *
-     * @param GoogleCloudDialogflowCxV3PlaybookTransition $playbookTransition
-     */
-    public function setPlaybookTransition(GoogleCloudDialogflowCxV3PlaybookTransition $playbookTransition)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3PlaybookTransition
-     */
-    public function getPlaybookTransition()
-    {
-    }
-    /**
-     * Optional. Action performed on behalf of the agent by calling a plugin tool.
-     *
-     * @param GoogleCloudDialogflowCxV3ToolUse $toolUse
-     */
-    public function setToolUse(GoogleCloudDialogflowCxV3ToolUse $toolUse)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3ToolUse
-     */
-    public function getToolUse()
-    {
-    }
-    /**
-     * Optional. Agent obtained a message from the customer.
-     *
-     * @param GoogleCloudDialogflowCxV3UserUtterance $userUtterance
-     */
-    public function setUserUtterance(GoogleCloudDialogflowCxV3UserUtterance $userUtterance)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3UserUtterance
-     */
-    public function getUserUtterance()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3Action extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Action
     {
     }
 }

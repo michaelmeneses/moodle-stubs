@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class Thumbnail extends \Google\Model
-{
-    /**
-     * (Optional) Height of the thumbnail image.
-     *
-     * @var string
-     */
-    public $height;
-    /**
-     * The thumbnail image's URL.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * (Optional) Width of the thumbnail image.
-     *
-     * @var string
-     */
-    public $width;
-    /**
-     * (Optional) Height of the thumbnail image.
-     *
-     * @param string $height
-     */
-    public function setHeight($height)
+namespace Google\Service\YouTube {
+    class Thumbnail extends \Google\Model
     {
+        /**
+         * (Optional) Height of the thumbnail image.
+         *
+         * @var string
+         */
+        public $height;
+        /**
+         * The thumbnail image's URL.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * (Optional) Width of the thumbnail image.
+         *
+         * @var string
+         */
+        public $width;
+        /**
+         * (Optional) Height of the thumbnail image.
+         *
+         * @param string $height
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * The thumbnail image's URL.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
+        /**
+         * (Optional) Width of the thumbnail image.
+         *
+         * @param string $width
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\Thumbnail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeight()
-    {
-    }
-    /**
-     * The thumbnail image's URL.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
-    {
-    }
-    /**
-     * (Optional) Width of the thumbnail image.
-     *
-     * @param string $width
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWidth()
+    class Google_Service_YouTube_Thumbnail extends \Google\Service\YouTube\Thumbnail
     {
     }
 }

@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class BooleanOperatorOptions extends \Google\Model
-{
-    /**
-     * Indicates the operator name required in the query in order to isolate the
-     * boolean property. For example, if operatorName is *closed* and the
-     * property's name is *isClosed*, then queries like *closed:* show results
-     * only where the value of the property named *isClosed* matches **. By
-     * contrast, a search that uses the same ** without an operator returns all
-     * items where ** matches the value of any String properties or text within
-     * the content field for the item. The operator name can only contain
-     * lowercase letters (a-z). The maximum length is 32 characters.
-     *
-     * @var string
-     */
-    public $operatorName;
-    /**
-     * Indicates the operator name required in the query in order to isolate the
-     * boolean property. For example, if operatorName is *closed* and the
-     * property's name is *isClosed*, then queries like *closed:* show results
-     * only where the value of the property named *isClosed* matches **. By
-     * contrast, a search that uses the same ** without an operator returns all
-     * items where ** matches the value of any String properties or text within
-     * the content field for the item. The operator name can only contain
-     * lowercase letters (a-z). The maximum length is 32 characters.
-     *
-     * @param string $operatorName
-     */
-    public function setOperatorName($operatorName)
+namespace Google\Service\CloudSearch {
+    class BooleanOperatorOptions extends \Google\Model
     {
+        /**
+         * Indicates the operator name required in the query in order to isolate the
+         * boolean property. For example, if operatorName is *closed* and the
+         * property's name is *isClosed*, then queries like *closed:* show results
+         * only where the value of the property named *isClosed* matches **. By
+         * contrast, a search that uses the same ** without an operator returns all
+         * items where ** matches the value of any String properties or text within
+         * the content field for the item. The operator name can only contain
+         * lowercase letters (a-z). The maximum length is 32 characters.
+         *
+         * @var string
+         */
+        public $operatorName;
+        /**
+         * Indicates the operator name required in the query in order to isolate the
+         * boolean property. For example, if operatorName is *closed* and the
+         * property's name is *isClosed*, then queries like *closed:* show results
+         * only where the value of the property named *isClosed* matches **. By
+         * contrast, a search that uses the same ** without an operator returns all
+         * items where ** matches the value of any String properties or text within
+         * the content field for the item. The operator name can only contain
+         * lowercase letters (a-z). The maximum length is 32 characters.
+         *
+         * @param string $operatorName
+         */
+        public function setOperatorName($operatorName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperatorName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\BooleanOperatorOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperatorName()
+    class Google_Service_CloudSearch_BooleanOperatorOptions extends \Google\Service\CloudSearch\BooleanOperatorOptions
     {
     }
 }

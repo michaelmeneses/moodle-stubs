@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Recommender;
-
-class GoogleCloudRecommenderV1RecommendationInsightReference extends \Google\Model
-{
-    /**
-     * Insight resource name, e.g. projects/[PROJECT_NUMBER]/locations/[LOCATION]/
-     * insightTypes/[INSIGHT_TYPE_ID]/insights/[INSIGHT_ID]
-     *
-     * @var string
-     */
-    public $insight;
-    /**
-     * Insight resource name, e.g. projects/[PROJECT_NUMBER]/locations/[LOCATION]/
-     * insightTypes/[INSIGHT_TYPE_ID]/insights/[INSIGHT_ID]
-     *
-     * @param string $insight
-     */
-    public function setInsight($insight)
+namespace Google\Service\Recommender {
+    class GoogleCloudRecommenderV1RecommendationInsightReference extends \Google\Model
     {
+        /**
+         * Insight resource name, e.g. projects/[PROJECT_NUMBER]/locations/[LOCATION]/
+         * insightTypes/[INSIGHT_TYPE_ID]/insights/[INSIGHT_ID]
+         *
+         * @var string
+         */
+        public $insight;
+        /**
+         * Insight resource name, e.g. projects/[PROJECT_NUMBER]/locations/[LOCATION]/
+         * insightTypes/[INSIGHT_TYPE_ID]/insights/[INSIGHT_ID]
+         *
+         * @param string $insight
+         */
+        public function setInsight($insight)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInsight()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Recommender\GoogleCloudRecommenderV1RecommendationInsightReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInsight()
+    class Google_Service_Recommender_GoogleCloudRecommenderV1RecommendationInsightReference extends \Google\Service\Recommender\GoogleCloudRecommenderV1RecommendationInsightReference
     {
     }
 }

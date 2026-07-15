@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickPeopleAnswerDisambiguationInfo extends \Google\Collection
-{
-    protected $collection_key = 'disambiguation';
-    protected $disambiguationType = EnterpriseTopazSidekickPeopleAnswerDisambiguationInfoDisambiguationPerson::class;
-    protected $disambiguationDataType = 'array';
-    /**
-     * The name that was extracted from the query. This may be in the form of the
-     * given name, last name, full name, LDAP, or email address. This name can be
-     * considered suitable for displaying to the user and can largely be
-     * considered to be normalized (e.g. "Bob's" -> "Bob").
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * A list of people that also matched the query. This list is not complete.
-     *
-     * @param EnterpriseTopazSidekickPeopleAnswerDisambiguationInfoDisambiguationPerson[] $disambiguation
-     */
-    public function setDisambiguation($disambiguation)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickPeopleAnswerDisambiguationInfo extends \Google\Collection
     {
+        protected $collection_key = 'disambiguation';
+        protected $disambiguationType = EnterpriseTopazSidekickPeopleAnswerDisambiguationInfoDisambiguationPerson::class;
+        protected $disambiguationDataType = 'array';
+        /**
+         * The name that was extracted from the query. This may be in the form of the
+         * given name, last name, full name, LDAP, or email address. This name can be
+         * considered suitable for displaying to the user and can largely be
+         * considered to be normalized (e.g. "Bob's" -> "Bob").
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * A list of people that also matched the query. This list is not complete.
+         *
+         * @param EnterpriseTopazSidekickPeopleAnswerDisambiguationInfoDisambiguationPerson[] $disambiguation
+         */
+        public function setDisambiguation($disambiguation)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickPeopleAnswerDisambiguationInfoDisambiguationPerson[]
+         */
+        public function getDisambiguation()
+        {
+        }
+        /**
+         * The name that was extracted from the query. This may be in the form of the
+         * given name, last name, full name, LDAP, or email address. This name can be
+         * considered suitable for displaying to the user and can largely be
+         * considered to be normalized (e.g. "Bob's" -> "Bob").
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseTopazSidekickPeopleAnswerDisambiguationInfoDisambiguationPerson[]
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickPeopleAnswerDisambiguationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisambiguation()
-    {
-    }
-    /**
-     * The name that was extracted from the query. This may be in the form of the
-     * given name, last name, full name, LDAP, or email address. This name can be
-     * considered suitable for displaying to the user and can largely be
-     * considered to be normalized (e.g. "Bob's" -> "Bob").
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickPeopleAnswerDisambiguationInfo extends \Google\Service\CloudSearch\EnterpriseTopazSidekickPeopleAnswerDisambiguationInfo
     {
     }
 }

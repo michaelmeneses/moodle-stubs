@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reports;
-
-class FieldValueTextListValue extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * List of text values.
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * List of text values.
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\Reports {
+    class FieldValueTextListValue extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * List of text values.
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * List of text values.
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Reports\FieldValueTextListValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_Reports_FieldValueTextListValue extends \Google\Service\Reports\FieldValueTextListValue
     {
     }
 }

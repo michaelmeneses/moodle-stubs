@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class ToolVersions extends \Google\Model
-{
-    /**
-     * Optional. The docker version to use for Cloud Deploy operations.
-     *
-     * @var string
-     */
-    public $docker;
-    /**
-     * Optional. The helm version to use for Cloud Deploy operations.
-     *
-     * @var string
-     */
-    public $helm;
-    /**
-     * Optional. The kpt version to use for Cloud Deploy operations.
-     *
-     * @var string
-     */
-    public $kpt;
-    /**
-     * Optional. The kubectl version to use for Cloud Deploy operations.
-     *
-     * @var string
-     */
-    public $kubectl;
-    /**
-     * Optional. The kustomize version to use for Cloud Deploy operations.
-     *
-     * @var string
-     */
-    public $kustomize;
-    /**
-     * Optional. The skaffold version to use for Cloud Deploy operations.
-     *
-     * @var string
-     */
-    public $skaffold;
-    /**
-     * Optional. The docker version to use for Cloud Deploy operations.
-     *
-     * @param string $docker
-     */
-    public function setDocker($docker)
+namespace Google\Service\CloudDeploy {
+    class ToolVersions extends \Google\Model
     {
+        /**
+         * Optional. The docker version to use for Cloud Deploy operations.
+         *
+         * @var string
+         */
+        public $docker;
+        /**
+         * Optional. The helm version to use for Cloud Deploy operations.
+         *
+         * @var string
+         */
+        public $helm;
+        /**
+         * Optional. The kpt version to use for Cloud Deploy operations.
+         *
+         * @var string
+         */
+        public $kpt;
+        /**
+         * Optional. The kubectl version to use for Cloud Deploy operations.
+         *
+         * @var string
+         */
+        public $kubectl;
+        /**
+         * Optional. The kustomize version to use for Cloud Deploy operations.
+         *
+         * @var string
+         */
+        public $kustomize;
+        /**
+         * Optional. The skaffold version to use for Cloud Deploy operations.
+         *
+         * @var string
+         */
+        public $skaffold;
+        /**
+         * Optional. The docker version to use for Cloud Deploy operations.
+         *
+         * @param string $docker
+         */
+        public function setDocker($docker)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocker()
+        {
+        }
+        /**
+         * Optional. The helm version to use for Cloud Deploy operations.
+         *
+         * @param string $helm
+         */
+        public function setHelm($helm)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHelm()
+        {
+        }
+        /**
+         * Optional. The kpt version to use for Cloud Deploy operations.
+         *
+         * @param string $kpt
+         */
+        public function setKpt($kpt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKpt()
+        {
+        }
+        /**
+         * Optional. The kubectl version to use for Cloud Deploy operations.
+         *
+         * @param string $kubectl
+         */
+        public function setKubectl($kubectl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKubectl()
+        {
+        }
+        /**
+         * Optional. The kustomize version to use for Cloud Deploy operations.
+         *
+         * @param string $kustomize
+         */
+        public function setKustomize($kustomize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKustomize()
+        {
+        }
+        /**
+         * Optional. The skaffold version to use for Cloud Deploy operations.
+         *
+         * @param string $skaffold
+         */
+        public function setSkaffold($skaffold)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSkaffold()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\ToolVersions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocker()
-    {
-    }
-    /**
-     * Optional. The helm version to use for Cloud Deploy operations.
-     *
-     * @param string $helm
-     */
-    public function setHelm($helm)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHelm()
-    {
-    }
-    /**
-     * Optional. The kpt version to use for Cloud Deploy operations.
-     *
-     * @param string $kpt
-     */
-    public function setKpt($kpt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKpt()
-    {
-    }
-    /**
-     * Optional. The kubectl version to use for Cloud Deploy operations.
-     *
-     * @param string $kubectl
-     */
-    public function setKubectl($kubectl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKubectl()
-    {
-    }
-    /**
-     * Optional. The kustomize version to use for Cloud Deploy operations.
-     *
-     * @param string $kustomize
-     */
-    public function setKustomize($kustomize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKustomize()
-    {
-    }
-    /**
-     * Optional. The skaffold version to use for Cloud Deploy operations.
-     *
-     * @param string $skaffold
-     */
-    public function setSkaffold($skaffold)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSkaffold()
+    class Google_Service_CloudDeploy_ToolVersions extends \Google\Service\CloudDeploy\ToolVersions
     {
     }
 }

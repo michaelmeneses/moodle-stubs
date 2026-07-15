@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ListAutoscalingPoliciesResponse extends \Google\Collection
-{
-    protected $collection_key = 'policies';
-    /**
-     * Output only. This token is included in the response if there are more
-     * results to fetch.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $policiesType = AutoscalingPolicy::class;
-    protected $policiesDataType = 'array';
-    /**
-     * Output only. This token is included in the response if there are more
-     * results to fetch.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Dataproc {
+    class ListAutoscalingPoliciesResponse extends \Google\Collection
     {
+        protected $collection_key = 'policies';
+        /**
+         * Output only. This token is included in the response if there are more
+         * results to fetch.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $policiesType = AutoscalingPolicy::class;
+        protected $policiesDataType = 'array';
+        /**
+         * Output only. This token is included in the response if there are more
+         * results to fetch.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Output only. Autoscaling policies list.
+         *
+         * @param AutoscalingPolicy[] $policies
+         */
+        public function setPolicies($policies)
+        {
+        }
+        /**
+         * @return AutoscalingPolicy[]
+         */
+        public function getPolicies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\ListAutoscalingPoliciesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Output only. Autoscaling policies list.
-     *
-     * @param AutoscalingPolicy[] $policies
-     */
-    public function setPolicies($policies)
-    {
-    }
-    /**
-     * @return AutoscalingPolicy[]
-     */
-    public function getPolicies()
+    class Google_Service_Dataproc_ListAutoscalingPoliciesResponse extends \Google\Service\Dataproc\ListAutoscalingPoliciesResponse
     {
     }
 }

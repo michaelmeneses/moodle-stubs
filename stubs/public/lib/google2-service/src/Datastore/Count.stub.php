@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class Count extends \Google\Model
-{
-    /**
-     * Optional. Optional constraint on the maximum number of entities to count.
-     * This provides a way to set an upper bound on the number of entities to
-     * scan, limiting latency, and cost. Unspecified is interpreted as no bound.
-     * If a zero value is provided, a count result of zero should always be
-     * expected. High-Level Example: ``` AGGREGATE COUNT_UP_TO(1000) OVER ( SELECT
-     * * FROM k ); ``` Requires: * Must be non-negative when present.
-     *
-     * @var string
-     */
-    public $upTo;
-    /**
-     * Optional. Optional constraint on the maximum number of entities to count.
-     * This provides a way to set an upper bound on the number of entities to
-     * scan, limiting latency, and cost. Unspecified is interpreted as no bound.
-     * If a zero value is provided, a count result of zero should always be
-     * expected. High-Level Example: ``` AGGREGATE COUNT_UP_TO(1000) OVER ( SELECT
-     * * FROM k ); ``` Requires: * Must be non-negative when present.
-     *
-     * @param string $upTo
-     */
-    public function setUpTo($upTo)
+namespace Google\Service\Datastore {
+    class Count extends \Google\Model
     {
+        /**
+         * Optional. Optional constraint on the maximum number of entities to count.
+         * This provides a way to set an upper bound on the number of entities to
+         * scan, limiting latency, and cost. Unspecified is interpreted as no bound.
+         * If a zero value is provided, a count result of zero should always be
+         * expected. High-Level Example: ``` AGGREGATE COUNT_UP_TO(1000) OVER ( SELECT
+         * * FROM k ); ``` Requires: * Must be non-negative when present.
+         *
+         * @var string
+         */
+        public $upTo;
+        /**
+         * Optional. Optional constraint on the maximum number of entities to count.
+         * This provides a way to set an upper bound on the number of entities to
+         * scan, limiting latency, and cost. Unspecified is interpreted as no bound.
+         * If a zero value is provided, a count result of zero should always be
+         * expected. High-Level Example: ``` AGGREGATE COUNT_UP_TO(1000) OVER ( SELECT
+         * * FROM k ); ``` Requires: * Must be non-negative when present.
+         *
+         * @param string $upTo
+         */
+        public function setUpTo($upTo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpTo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastore\Count registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUpTo()
+    class Google_Service_Datastore_Count extends \Google\Service\Datastore\Count
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SubscriptionLinking;
-
-class ReaderEntitlements extends \Google\Collection
-{
-    protected $collection_key = 'entitlements';
-    protected $entitlementsType = Entitlement::class;
-    protected $entitlementsDataType = 'array';
-    /**
-     * Output only. The resource name of the singleton.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * All of the entitlements for a publication reader.
-     *
-     * @param Entitlement[] $entitlements
-     */
-    public function setEntitlements($entitlements)
+namespace Google\Service\SubscriptionLinking {
+    class ReaderEntitlements extends \Google\Collection
     {
+        protected $collection_key = 'entitlements';
+        protected $entitlementsType = Entitlement::class;
+        protected $entitlementsDataType = 'array';
+        /**
+         * Output only. The resource name of the singleton.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * All of the entitlements for a publication reader.
+         *
+         * @param Entitlement[] $entitlements
+         */
+        public function setEntitlements($entitlements)
+        {
+        }
+        /**
+         * @return Entitlement[]
+         */
+        public function getEntitlements()
+        {
+        }
+        /**
+         * Output only. The resource name of the singleton.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Entitlement[]
+     * Runtime class alias of \Google\Service\SubscriptionLinking\ReaderEntitlements registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntitlements()
-    {
-    }
-    /**
-     * Output only. The resource name of the singleton.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_SubscriptionLinking_ReaderEntitlements extends \Google\Service\SubscriptionLinking\ReaderEntitlements
     {
     }
 }

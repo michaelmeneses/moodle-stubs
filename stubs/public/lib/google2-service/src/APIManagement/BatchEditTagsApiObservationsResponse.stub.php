@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIManagement;
-
-class BatchEditTagsApiObservationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'apiObservations';
-    protected $apiObservationsType = ApiObservation::class;
-    protected $apiObservationsDataType = 'array';
-    /**
-     * ApiObservations that were changed
-     *
-     * @param ApiObservation[] $apiObservations
-     */
-    public function setApiObservations($apiObservations)
+namespace Google\Service\APIManagement {
+    class BatchEditTagsApiObservationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'apiObservations';
+        protected $apiObservationsType = ApiObservation::class;
+        protected $apiObservationsDataType = 'array';
+        /**
+         * ApiObservations that were changed
+         *
+         * @param ApiObservation[] $apiObservations
+         */
+        public function setApiObservations($apiObservations)
+        {
+        }
+        /**
+         * @return ApiObservation[]
+         */
+        public function getApiObservations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApiObservation[]
+     * Runtime class alias of \Google\Service\APIManagement\BatchEditTagsApiObservationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiObservations()
+    class Google_Service_APIManagement_BatchEditTagsApiObservationsResponse extends \Google\Service\APIManagement\BatchEditTagsApiObservationsResponse
     {
     }
 }

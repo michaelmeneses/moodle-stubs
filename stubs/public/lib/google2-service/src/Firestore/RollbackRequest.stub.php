@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class RollbackRequest extends \Google\Model
-{
-    /**
-     * Required. The transaction to roll back.
-     *
-     * @var string
-     */
-    public $transaction;
-    /**
-     * Required. The transaction to roll back.
-     *
-     * @param string $transaction
-     */
-    public function setTransaction($transaction)
+namespace Google\Service\Firestore {
+    class RollbackRequest extends \Google\Model
     {
+        /**
+         * Required. The transaction to roll back.
+         *
+         * @var string
+         */
+        public $transaction;
+        /**
+         * Required. The transaction to roll back.
+         *
+         * @param string $transaction
+         */
+        public function setTransaction($transaction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransaction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firestore\RollbackRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTransaction()
+    class Google_Service_Firestore_RollbackRequest extends \Google\Service\Firestore\RollbackRequest
     {
     }
 }

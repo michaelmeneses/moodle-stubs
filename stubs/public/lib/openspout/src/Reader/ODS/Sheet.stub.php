@@ -8,6 +8,7 @@
  */
 namespace OpenSpout\Reader\ODS;
 
+use OpenSpout\Reader\SheetWithVisibilityInterface;
 /**
  * @implements SheetWithVisibilityInterface<RowIterator>
  */

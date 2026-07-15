@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaAccessStringFilter extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $caseSensitive;
-    /**
-     * @var string
-     */
-    public $matchType;
-    /**
-     * @var string
-     */
-    public $value;
-    /**
-     * @param bool
-     */
-    public function setCaseSensitive($caseSensitive)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaAccessStringFilter extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $caseSensitive;
+        /**
+         * @var string
+         */
+        public $matchType;
+        /**
+         * @var string
+         */
+        public $value;
+        /**
+         * @param bool
+         */
+        public function setCaseSensitive($caseSensitive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCaseSensitive()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMatchType($matchType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatchType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAccessStringFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaseSensitive()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMatchType($matchType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMatchType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaAccessStringFilter extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAccessStringFilter
     {
     }
 }

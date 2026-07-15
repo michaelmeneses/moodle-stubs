@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class UpdateTableColumnPropertiesRequest extends \Google\Collection
-{
-    protected $collection_key = 'columnIndices';
-    /**
-     * The list of zero-based indices specifying which columns to update. If no
-     * indices are provided, all columns in the table will be updated.
-     *
-     * @var int[]
-     */
-    public $columnIndices;
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `tableColumnProperties` is implied and should not be specified. A
-     * single `"*"` can be used as short-hand for listing every field. For example
-     * to update the column width, set `fields` to `"column_width"`. If
-     * '"column_width"' is included in the field mask but the property is left
-     * unset, the column width will default to 406,400 EMU (32 points).
-     *
-     * @var string
-     */
-    public $fields;
-    /**
-     * The object ID of the table.
-     *
-     * @var string
-     */
-    public $objectId;
-    protected $tableColumnPropertiesType = TableColumnProperties::class;
-    protected $tableColumnPropertiesDataType = '';
-    /**
-     * The list of zero-based indices specifying which columns to update. If no
-     * indices are provided, all columns in the table will be updated.
-     *
-     * @param int[] $columnIndices
-     */
-    public function setColumnIndices($columnIndices)
+namespace Google\Service\Slides {
+    class UpdateTableColumnPropertiesRequest extends \Google\Collection
     {
+        protected $collection_key = 'columnIndices';
+        /**
+         * The list of zero-based indices specifying which columns to update. If no
+         * indices are provided, all columns in the table will be updated.
+         *
+         * @var int[]
+         */
+        public $columnIndices;
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `tableColumnProperties` is implied and should not be specified. A
+         * single `"*"` can be used as short-hand for listing every field. For example
+         * to update the column width, set `fields` to `"column_width"`. If
+         * '"column_width"' is included in the field mask but the property is left
+         * unset, the column width will default to 406,400 EMU (32 points).
+         *
+         * @var string
+         */
+        public $fields;
+        /**
+         * The object ID of the table.
+         *
+         * @var string
+         */
+        public $objectId;
+        protected $tableColumnPropertiesType = TableColumnProperties::class;
+        protected $tableColumnPropertiesDataType = '';
+        /**
+         * The list of zero-based indices specifying which columns to update. If no
+         * indices are provided, all columns in the table will be updated.
+         *
+         * @param int[] $columnIndices
+         */
+        public function setColumnIndices($columnIndices)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getColumnIndices()
+        {
+        }
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `tableColumnProperties` is implied and should not be specified. A
+         * single `"*"` can be used as short-hand for listing every field. For example
+         * to update the column width, set `fields` to `"column_width"`. If
+         * '"column_width"' is included in the field mask but the property is left
+         * unset, the column width will default to 406,400 EMU (32 points).
+         *
+         * @param string $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * The object ID of the table.
+         *
+         * @param string $objectId
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectId()
+        {
+        }
+        /**
+         * The table column properties to update. If the value of
+         * `table_column_properties#column_width` in the request is less than 406,400
+         * EMU (32 points), a 400 bad request error is returned.
+         *
+         * @param TableColumnProperties $tableColumnProperties
+         */
+        public function setTableColumnProperties(TableColumnProperties $tableColumnProperties)
+        {
+        }
+        /**
+         * @return TableColumnProperties
+         */
+        public function getTableColumnProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int[]
+     * Runtime class alias of \Google\Service\Slides\UpdateTableColumnPropertiesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnIndices()
-    {
-    }
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `tableColumnProperties` is implied and should not be specified. A
-     * single `"*"` can be used as short-hand for listing every field. For example
-     * to update the column width, set `fields` to `"column_width"`. If
-     * '"column_width"' is included in the field mask but the property is left
-     * unset, the column width will default to 406,400 EMU (32 points).
-     *
-     * @param string $fields
-     */
-    public function setFields($fields)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFields()
-    {
-    }
-    /**
-     * The object ID of the table.
-     *
-     * @param string $objectId
-     */
-    public function setObjectId($objectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectId()
-    {
-    }
-    /**
-     * The table column properties to update. If the value of
-     * `table_column_properties#column_width` in the request is less than 406,400
-     * EMU (32 points), a 400 bad request error is returned.
-     *
-     * @param TableColumnProperties $tableColumnProperties
-     */
-    public function setTableColumnProperties(TableColumnProperties $tableColumnProperties)
-    {
-    }
-    /**
-     * @return TableColumnProperties
-     */
-    public function getTableColumnProperties()
+    class Google_Service_Slides_UpdateTableColumnPropertiesRequest extends \Google\Service\Slides\UpdateTableColumnPropertiesRequest
     {
     }
 }

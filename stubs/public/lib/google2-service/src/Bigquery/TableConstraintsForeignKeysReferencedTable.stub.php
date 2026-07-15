@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class TableConstraintsForeignKeysReferencedTable extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $datasetId;
-    /**
-     * @var string
-     */
-    public $projectId;
-    /**
-     * @var string
-     */
-    public $tableId;
-    /**
-     * @param string $datasetId
-     */
-    public function setDatasetId($datasetId)
+namespace Google\Service\Bigquery {
+    class TableConstraintsForeignKeysReferencedTable extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $datasetId;
+        /**
+         * @var string
+         */
+        public $projectId;
+        /**
+         * @var string
+         */
+        public $tableId;
+        /**
+         * @param string $datasetId
+         */
+        public function setDatasetId($datasetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatasetId()
+        {
+        }
+        /**
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * @param string $tableId
+         */
+        public function setTableId($tableId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\TableConstraintsForeignKeysReferencedTable registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatasetId()
-    {
-    }
-    /**
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * @param string $tableId
-     */
-    public function setTableId($tableId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableId()
+    class Google_Service_Bigquery_TableConstraintsForeignKeysReferencedTable extends \Google\Service\Bigquery\TableConstraintsForeignKeysReferencedTable
     {
     }
 }

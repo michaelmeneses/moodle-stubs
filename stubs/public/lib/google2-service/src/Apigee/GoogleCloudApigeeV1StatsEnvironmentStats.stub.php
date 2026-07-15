@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1StatsEnvironmentStats extends \Google\Collection
-{
-    protected $collection_key = 'metrics';
-    protected $dimensionsType = GoogleCloudApigeeV1DimensionMetric::class;
-    protected $dimensionsDataType = 'array';
-    protected $metricsType = GoogleCloudApigeeV1Metric::class;
-    protected $metricsDataType = 'array';
-    /**
-     * Name of the environment.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * List of metrics grouped under dimensions.
-     *
-     * @param GoogleCloudApigeeV1DimensionMetric[] $dimensions
-     */
-    public function setDimensions($dimensions)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1StatsEnvironmentStats extends \Google\Collection
     {
+        protected $collection_key = 'metrics';
+        protected $dimensionsType = GoogleCloudApigeeV1DimensionMetric::class;
+        protected $dimensionsDataType = 'array';
+        protected $metricsType = GoogleCloudApigeeV1Metric::class;
+        protected $metricsDataType = 'array';
+        /**
+         * Name of the environment.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * List of metrics grouped under dimensions.
+         *
+         * @param GoogleCloudApigeeV1DimensionMetric[] $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1DimensionMetric[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * In the final response, only one of the following fields will be present
+         * based on the dimensions provided. If no dimensions are provided, then only
+         * top-level metrics is provided. If dimensions are included, then there will
+         * be a top-level dimensions field under environments which will contain
+         * metrics values and the dimension name. Example: ``` "environments": [ {
+         * "dimensions": [ { "metrics": [ { "name": "sum(message_count)", "values": [
+         * "2.14049521E8" ] } ], "name": "nit_proxy" } ], "name": "prod" } ]``` or
+         * ```"environments": [ { "metrics": [ { "name": "sum(message_count)",
+         * "values": [ "2.19026331E8" ] } ], "name": "prod" } ]``` List of metric
+         * values.
+         *
+         * @param GoogleCloudApigeeV1Metric[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Metric[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * Name of the environment.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1DimensionMetric[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1StatsEnvironmentStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensions()
-    {
-    }
-    /**
-     * In the final response, only one of the following fields will be present
-     * based on the dimensions provided. If no dimensions are provided, then only
-     * top-level metrics is provided. If dimensions are included, then there will
-     * be a top-level dimensions field under environments which will contain
-     * metrics values and the dimension name. Example: ``` "environments": [ {
-     * "dimensions": [ { "metrics": [ { "name": "sum(message_count)", "values": [
-     * "2.14049521E8" ] } ], "name": "nit_proxy" } ], "name": "prod" } ]``` or
-     * ```"environments": [ { "metrics": [ { "name": "sum(message_count)",
-     * "values": [ "2.19026331E8" ] } ], "name": "prod" } ]``` List of metric
-     * values.
-     *
-     * @param GoogleCloudApigeeV1Metric[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1Metric[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * Name of the environment.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Apigee_GoogleCloudApigeeV1StatsEnvironmentStats extends \Google\Service\Apigee\GoogleCloudApigeeV1StatsEnvironmentStats
     {
     }
 }

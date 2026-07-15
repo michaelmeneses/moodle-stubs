@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LiveStreamStatus extends \Google\Model
-{
-    public const STREAM_STATUS_created = 'created';
-    public const STREAM_STATUS_ready = 'ready';
-    public const STREAM_STATUS_active = 'active';
-    public const STREAM_STATUS_inactive = 'inactive';
-    public const STREAM_STATUS_error = 'error';
-    protected $healthStatusType = LiveStreamHealthStatus::class;
-    protected $healthStatusDataType = '';
-    /**
-     * @var string
-     */
-    public $streamStatus;
-    /**
-     * The health status of the stream.
-     *
-     * @param LiveStreamHealthStatus $healthStatus
-     */
-    public function setHealthStatus(LiveStreamHealthStatus $healthStatus)
+namespace Google\Service\YouTube {
+    class LiveStreamStatus extends \Google\Model
     {
+        public const STREAM_STATUS_created = 'created';
+        public const STREAM_STATUS_ready = 'ready';
+        public const STREAM_STATUS_active = 'active';
+        public const STREAM_STATUS_inactive = 'inactive';
+        public const STREAM_STATUS_error = 'error';
+        protected $healthStatusType = LiveStreamHealthStatus::class;
+        protected $healthStatusDataType = '';
+        /**
+         * @var string
+         */
+        public $streamStatus;
+        /**
+         * The health status of the stream.
+         *
+         * @param LiveStreamHealthStatus $healthStatus
+         */
+        public function setHealthStatus(LiveStreamHealthStatus $healthStatus)
+        {
+        }
+        /**
+         * @return LiveStreamHealthStatus
+         */
+        public function getHealthStatus()
+        {
+        }
+        /**
+         * @param self::STREAM_STATUS_* $streamStatus
+         */
+        public function setStreamStatus($streamStatus)
+        {
+        }
+        /**
+         * @return self::STREAM_STATUS_*
+         */
+        public function getStreamStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LiveStreamHealthStatus
+     * Runtime class alias of \Google\Service\YouTube\LiveStreamStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHealthStatus()
-    {
-    }
-    /**
-     * @param self::STREAM_STATUS_* $streamStatus
-     */
-    public function setStreamStatus($streamStatus)
-    {
-    }
-    /**
-     * @return self::STREAM_STATUS_*
-     */
-    public function getStreamStatus()
+    class Google_Service_YouTube_LiveStreamStatus extends \Google\Service\YouTube\LiveStreamStatus
     {
     }
 }

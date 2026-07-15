@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RagRetrievalConfigRankingLlmRanker extends \Google\Model
-{
-    /**
-     * Optional. The model name used for ranking. See [Supported
-     * models](https://cloud.google.com/vertex-ai/generative-ai/docs/model-
-     * reference/inference#supported-models).
-     *
-     * @var string
-     */
-    public $modelName;
-    /**
-     * Optional. The model name used for ranking. See [Supported
-     * models](https://cloud.google.com/vertex-ai/generative-ai/docs/model-
-     * reference/inference#supported-models).
-     *
-     * @param string $modelName
-     */
-    public function setModelName($modelName)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RagRetrievalConfigRankingLlmRanker extends \Google\Model
     {
+        /**
+         * Optional. The model name used for ranking. See [Supported
+         * models](https://cloud.google.com/vertex-ai/generative-ai/docs/model-
+         * reference/inference#supported-models).
+         *
+         * @var string
+         */
+        public $modelName;
+        /**
+         * Optional. The model name used for ranking. See [Supported
+         * models](https://cloud.google.com/vertex-ai/generative-ai/docs/model-
+         * reference/inference#supported-models).
+         *
+         * @param string $modelName
+         */
+        public function setModelName($modelName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagRetrievalConfigRankingLlmRanker registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModelName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RagRetrievalConfigRankingLlmRanker extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagRetrievalConfigRankingLlmRanker
     {
     }
 }

@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class Form extends \Google\Model
-{
-    /**
-     * URL of the form.
-     *
-     * @var string
-     */
-    public $formUrl;
-    /**
-     * URL of the form responses document. Only set if responses have been
-     * recorded and only when the requesting user is an editor of the form. Read-
-     * only.
-     *
-     * @var string
-     */
-    public $responseUrl;
-    /**
-     * URL of a thumbnail image of the Form. Read-only.
-     *
-     * @var string
-     */
-    public $thumbnailUrl;
-    /**
-     * Title of the Form. Read-only.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * URL of the form.
-     *
-     * @param string $formUrl
-     */
-    public function setFormUrl($formUrl)
+namespace Google\Service\Classroom {
+    class Form extends \Google\Model
     {
+        /**
+         * URL of the form.
+         *
+         * @var string
+         */
+        public $formUrl;
+        /**
+         * URL of the form responses document. Only set if responses have been
+         * recorded and only when the requesting user is an editor of the form. Read-
+         * only.
+         *
+         * @var string
+         */
+        public $responseUrl;
+        /**
+         * URL of a thumbnail image of the Form. Read-only.
+         *
+         * @var string
+         */
+        public $thumbnailUrl;
+        /**
+         * Title of the Form. Read-only.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * URL of the form.
+         *
+         * @param string $formUrl
+         */
+        public function setFormUrl($formUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormUrl()
+        {
+        }
+        /**
+         * URL of the form responses document. Only set if responses have been
+         * recorded and only when the requesting user is an editor of the form. Read-
+         * only.
+         *
+         * @param string $responseUrl
+         */
+        public function setResponseUrl($responseUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResponseUrl()
+        {
+        }
+        /**
+         * URL of a thumbnail image of the Form. Read-only.
+         *
+         * @param string $thumbnailUrl
+         */
+        public function setThumbnailUrl($thumbnailUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThumbnailUrl()
+        {
+        }
+        /**
+         * Title of the Form. Read-only.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\Form registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFormUrl()
-    {
-    }
-    /**
-     * URL of the form responses document. Only set if responses have been
-     * recorded and only when the requesting user is an editor of the form. Read-
-     * only.
-     *
-     * @param string $responseUrl
-     */
-    public function setResponseUrl($responseUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResponseUrl()
-    {
-    }
-    /**
-     * URL of a thumbnail image of the Form. Read-only.
-     *
-     * @param string $thumbnailUrl
-     */
-    public function setThumbnailUrl($thumbnailUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThumbnailUrl()
-    {
-    }
-    /**
-     * Title of the Form. Read-only.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Classroom_Form extends \Google\Service\Classroom\Form
     {
     }
 }

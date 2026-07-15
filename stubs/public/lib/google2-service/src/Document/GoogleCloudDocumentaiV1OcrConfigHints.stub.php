@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1OcrConfigHints extends \Google\Collection
-{
-    protected $collection_key = 'languageHints';
-    /**
-     * List of BCP-47 language codes to use for OCR. In most cases, not specifying
-     * it yields the best results since it enables automatic language detection.
-     * For languages based on the Latin alphabet, setting hints is not needed. In
-     * rare cases, when the language of the text in the image is known, setting a
-     * hint will help get better results (although it will be a significant
-     * hindrance if the hint is wrong).
-     *
-     * @var string[]
-     */
-    public $languageHints;
-    /**
-     * List of BCP-47 language codes to use for OCR. In most cases, not specifying
-     * it yields the best results since it enables automatic language detection.
-     * For languages based on the Latin alphabet, setting hints is not needed. In
-     * rare cases, when the language of the text in the image is known, setting a
-     * hint will help get better results (although it will be a significant
-     * hindrance if the hint is wrong).
-     *
-     * @param string[] $languageHints
-     */
-    public function setLanguageHints($languageHints)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1OcrConfigHints extends \Google\Collection
     {
+        protected $collection_key = 'languageHints';
+        /**
+         * List of BCP-47 language codes to use for OCR. In most cases, not specifying
+         * it yields the best results since it enables automatic language detection.
+         * For languages based on the Latin alphabet, setting hints is not needed. In
+         * rare cases, when the language of the text in the image is known, setting a
+         * hint will help get better results (although it will be a significant
+         * hindrance if the hint is wrong).
+         *
+         * @var string[]
+         */
+        public $languageHints;
+        /**
+         * List of BCP-47 language codes to use for OCR. In most cases, not specifying
+         * it yields the best results since it enables automatic language detection.
+         * For languages based on the Latin alphabet, setting hints is not needed. In
+         * rare cases, when the language of the text in the image is known, setting a
+         * hint will help get better results (although it will be a significant
+         * hindrance if the hint is wrong).
+         *
+         * @param string[] $languageHints
+         */
+        public function setLanguageHints($languageHints)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLanguageHints()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1OcrConfigHints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLanguageHints()
+    class Google_Service_Document_GoogleCloudDocumentaiV1OcrConfigHints extends \Google\Service\Document\GoogleCloudDocumentaiV1OcrConfigHints
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class FinishOAuthResponse extends \Google\Model
-{
-    protected $exchangeErrorType = ExchangeError::class;
-    protected $exchangeErrorDataType = '';
-    /**
-     * The error resulted from exchanging OAuth tokens from the service provider.
-     *
-     * @param ExchangeError $exchangeError
-     */
-    public function setExchangeError(ExchangeError $exchangeError)
+namespace Google\Service\DeveloperConnect {
+    class FinishOAuthResponse extends \Google\Model
     {
+        protected $exchangeErrorType = ExchangeError::class;
+        protected $exchangeErrorDataType = '';
+        /**
+         * The error resulted from exchanging OAuth tokens from the service provider.
+         *
+         * @param ExchangeError $exchangeError
+         */
+        public function setExchangeError(ExchangeError $exchangeError)
+        {
+        }
+        /**
+         * @return ExchangeError
+         */
+        public function getExchangeError()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExchangeError
+     * Runtime class alias of \Google\Service\DeveloperConnect\FinishOAuthResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExchangeError()
+    class Google_Service_DeveloperConnect_FinishOAuthResponse extends \Google\Service\DeveloperConnect\FinishOAuthResponse
     {
     }
 }

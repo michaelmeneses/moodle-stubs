@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeploymentManager;
-
-class SetCommonInstanceMetadataOperationMetadataPerLocationOperationInfo extends \Google\Model
-{
-    public const STATE_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * Operation is not yet confirmed to have been created in the location.
-     */
-    public const STATE_PROPAGATING = 'PROPAGATING';
-    /**
-     * Operation is confirmed to be in the location.
-     */
-    public const STATE_PROPAGATED = 'PROPAGATED';
-    /**
-     * Operation not tracked in this location e.g. zone is marked as DOWN.
-     */
-    public const STATE_ABANDONED = 'ABANDONED';
-    /**
-     * Operation is in an error state.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * Operation has completed successfully.
-     */
-    public const STATE_DONE = 'DONE';
-    protected $errorType = Status::class;
-    protected $errorDataType = '';
-    /**
-     * [Output Only] Status of the action, which can be one of the following:
-     * `PROPAGATING`, `PROPAGATED`, `ABANDONED`, `FAILED`, or `DONE`.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * [Output Only] If state is `ABANDONED` or `FAILED`, this field is populated.
-     *
-     * @param Status $error
-     */
-    public function setError(Status $error)
+namespace Google\Service\DeploymentManager {
+    class SetCommonInstanceMetadataOperationMetadataPerLocationOperationInfo extends \Google\Model
     {
+        public const STATE_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * Operation is not yet confirmed to have been created in the location.
+         */
+        public const STATE_PROPAGATING = 'PROPAGATING';
+        /**
+         * Operation is confirmed to be in the location.
+         */
+        public const STATE_PROPAGATED = 'PROPAGATED';
+        /**
+         * Operation not tracked in this location e.g. zone is marked as DOWN.
+         */
+        public const STATE_ABANDONED = 'ABANDONED';
+        /**
+         * Operation is in an error state.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * Operation has completed successfully.
+         */
+        public const STATE_DONE = 'DONE';
+        protected $errorType = Status::class;
+        protected $errorDataType = '';
+        /**
+         * [Output Only] Status of the action, which can be one of the following:
+         * `PROPAGATING`, `PROPAGATED`, `ABANDONED`, `FAILED`, or `DONE`.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * [Output Only] If state is `ABANDONED` or `FAILED`, this field is populated.
+         *
+         * @param Status $error
+         */
+        public function setError(Status $error)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getError()
+        {
+        }
+        /**
+         * [Output Only] Status of the action, which can be one of the following:
+         * `PROPAGATING`, `PROPAGATED`, `ABANDONED`, `FAILED`, or `DONE`.
+         *
+         * Accepted values: UNSPECIFIED, PROPAGATING, PROPAGATED, ABANDONED, FAILED,
+         * DONE
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Status
+     * Runtime class alias of \Google\Service\DeploymentManager\SetCommonInstanceMetadataOperationMetadataPerLocationOperationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * [Output Only] Status of the action, which can be one of the following:
-     * `PROPAGATING`, `PROPAGATED`, `ABANDONED`, `FAILED`, or `DONE`.
-     *
-     * Accepted values: UNSPECIFIED, PROPAGATING, PROPAGATED, ABANDONED, FAILED,
-     * DONE
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_DeploymentManager_SetCommonInstanceMetadataOperationMetadataPerLocationOperationInfo extends \Google\Service\DeploymentManager\SetCommonInstanceMetadataOperationMetadataPerLocationOperationInfo
     {
     }
 }

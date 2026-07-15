@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSenseHost;
-
-class AdClient extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $arcOptIn;
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string
-     */
-    public $productCode;
-    /**
-     * @var bool
-     */
-    public $supportsReporting;
-    /**
-     * @param bool
-     */
-    public function setArcOptIn($arcOptIn)
+namespace Google\Service\AdSenseHost {
+    class AdClient extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $arcOptIn;
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string
+         */
+        public $productCode;
+        /**
+         * @var bool
+         */
+        public $supportsReporting;
+        /**
+         * @param bool
+         */
+        public function setArcOptIn($arcOptIn)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getArcOptIn()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProductCode($productCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductCode()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setSupportsReporting($supportsReporting)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportsReporting()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AdSenseHost\AdClient registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArcOptIn()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProductCode($productCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductCode()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setSupportsReporting($supportsReporting)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportsReporting()
+    class Google_Service_AdSenseHost_AdClient extends \Google\Service\AdSenseHost\AdClient
     {
     }
 }

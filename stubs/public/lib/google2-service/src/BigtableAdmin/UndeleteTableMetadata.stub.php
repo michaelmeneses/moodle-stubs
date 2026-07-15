@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class UndeleteTableMetadata extends \Google\Model
-{
-    /**
-     * If set, the time at which this operation finished or was cancelled.
-     * DEPRECATED: Use finish_time instead.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $endTime;
-    /**
-     * The time at which the operation failed or was completed successfully.
-     *
-     * @var string
-     */
-    public $finishTime;
-    /**
-     * The name of the table being restored.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The time at which the original request was received.
-     *
-     * @var string
-     */
-    public $requestTime;
-    /**
-     * The time at which this operation started. DEPRECATED: Use request_time
-     * instead.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $startTime;
-    /**
-     * If set, the time at which this operation finished or was cancelled.
-     * DEPRECATED: Use finish_time instead.
-     *
-     * @deprecated
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\BigtableAdmin {
+    class UndeleteTableMetadata extends \Google\Model
     {
+        /**
+         * If set, the time at which this operation finished or was cancelled.
+         * DEPRECATED: Use finish_time instead.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $endTime;
+        /**
+         * The time at which the operation failed or was completed successfully.
+         *
+         * @var string
+         */
+        public $finishTime;
+        /**
+         * The name of the table being restored.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The time at which the original request was received.
+         *
+         * @var string
+         */
+        public $requestTime;
+        /**
+         * The time at which this operation started. DEPRECATED: Use request_time
+         * instead.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $startTime;
+        /**
+         * If set, the time at which this operation finished or was cancelled.
+         * DEPRECATED: Use finish_time instead.
+         *
+         * @deprecated
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The time at which the operation failed or was completed successfully.
+         *
+         * @param string $finishTime
+         */
+        public function setFinishTime($finishTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFinishTime()
+        {
+        }
+        /**
+         * The name of the table being restored.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The time at which the original request was received.
+         *
+         * @param string $requestTime
+         */
+        public function setRequestTime($requestTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestTime()
+        {
+        }
+        /**
+         * The time at which this operation started. DEPRECATED: Use request_time
+         * instead.
+         *
+         * @deprecated
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\BigtableAdmin\UndeleteTableMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The time at which the operation failed or was completed successfully.
-     *
-     * @param string $finishTime
-     */
-    public function setFinishTime($finishTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFinishTime()
-    {
-    }
-    /**
-     * The name of the table being restored.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The time at which the original request was received.
-     *
-     * @param string $requestTime
-     */
-    public function setRequestTime($requestTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestTime()
-    {
-    }
-    /**
-     * The time at which this operation started. DEPRECATED: Use request_time
-     * instead.
-     *
-     * @deprecated
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_BigtableAdmin_UndeleteTableMetadata extends \Google\Service\BigtableAdmin\UndeleteTableMetadata
     {
     }
 }

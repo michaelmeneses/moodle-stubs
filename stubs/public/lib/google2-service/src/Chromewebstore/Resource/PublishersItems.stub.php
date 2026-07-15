@@ -21,74 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Chromewebstore\Resource;
-
-/**
- * The "items" collection of methods.
- * Typical usage is:
- *  <code>
- *   $chromewebstoreService = new Google\Service\Chromewebstore(...);
- *   $items = $chromewebstoreService->publishers_items;
- *  </code>
- */
-class PublishersItems extends \Google\Service\Resource
-{
+namespace Google\Service\Chromewebstore\Resource {
+    use Google\Service\Chromewebstore\CancelSubmissionRequest;
+    use Google\Service\Chromewebstore\CancelSubmissionResponse;
+    use Google\Service\Chromewebstore\FetchItemStatusResponse;
+    use Google\Service\Chromewebstore\PublishItemRequest;
+    use Google\Service\Chromewebstore\PublishItemResponse;
+    use Google\Service\Chromewebstore\SetPublishedDeployPercentageRequest;
+    use Google\Service\Chromewebstore\SetPublishedDeployPercentageResponse;
     /**
-     * Cancel the current active submission of an item if present. This can be used
-     * to cancel the review of a pending submission. (items.cancelSubmission)
-     *
-     * @param string $name Required. Name of the item to cancel the submission of in
-     * the form `publishers/{publisherId}/items/{itemId}`
-     * @param CancelSubmissionRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return CancelSubmissionResponse
-     * @throws \Google\Service\Exception
+     * The "items" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $chromewebstoreService = new Google\Service\Chromewebstore(...);
+     *   $items = $chromewebstoreService->publishers_items;
+     *  </code>
      */
-    public function cancelSubmission($name, CancelSubmissionRequest $postBody, $optParams = [])
+    class PublishersItems extends \Google\Service\Resource
     {
+        /**
+         * Cancel the current active submission of an item if present. This can be used
+         * to cancel the review of a pending submission. (items.cancelSubmission)
+         *
+         * @param string $name Required. Name of the item to cancel the submission of in
+         * the form `publishers/{publisherId}/items/{itemId}`
+         * @param CancelSubmissionRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return CancelSubmissionResponse
+         * @throws \Google\Service\Exception
+         */
+        public function cancelSubmission($name, CancelSubmissionRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Fetch the status of an item. (items.fetchStatus)
+         *
+         * @param string $name Required. Name of the item to retrieve the status of in
+         * the form `publishers/{publisherId}/items/{itemId}`
+         * @param array $optParams Optional parameters.
+         * @return FetchItemStatusResponse
+         * @throws \Google\Service\Exception
+         */
+        public function fetchStatus($name, $optParams = [])
+        {
+        }
+        /**
+         * Submit the item to be published in the store. The item will be submitted for
+         * review unless `skip_review` is set to true, or the item is staged from a
+         * previous submission with `publish_type` set to `STAGED_PUBLISH`.
+         * (items.publish)
+         *
+         * @param string $name Required. Name of the item in the form
+         * `publishers/{publisherId}/items/{itemId}`
+         * @param PublishItemRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return PublishItemResponse
+         * @throws \Google\Service\Exception
+         */
+        public function publish($name, PublishItemRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Set a higher target deploy percentage for the item's published revision. This
+         * will be updated without the item being submitted for review. This is only
+         * available to items with over 10,000 seven-day active users.
+         * (items.setPublishedDeployPercentage)
+         *
+         * @param string $name Required. Name of the item to update the published
+         * revision of in the form `publishers/{publisherId}/items/{itemId}`
+         * @param SetPublishedDeployPercentageRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SetPublishedDeployPercentageResponse
+         * @throws \Google\Service\Exception
+         */
+        public function setPublishedDeployPercentage($name, SetPublishedDeployPercentageRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Fetch the status of an item. (items.fetchStatus)
-     *
-     * @param string $name Required. Name of the item to retrieve the status of in
-     * the form `publishers/{publisherId}/items/{itemId}`
-     * @param array $optParams Optional parameters.
-     * @return FetchItemStatusResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Chromewebstore\Resource\PublishersItems registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function fetchStatus($name, $optParams = [])
-    {
-    }
-    /**
-     * Submit the item to be published in the store. The item will be submitted for
-     * review unless `skip_review` is set to true, or the item is staged from a
-     * previous submission with `publish_type` set to `STAGED_PUBLISH`.
-     * (items.publish)
-     *
-     * @param string $name Required. Name of the item in the form
-     * `publishers/{publisherId}/items/{itemId}`
-     * @param PublishItemRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return PublishItemResponse
-     * @throws \Google\Service\Exception
-     */
-    public function publish($name, PublishItemRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Set a higher target deploy percentage for the item's published revision. This
-     * will be updated without the item being submitted for review. This is only
-     * available to items with over 10,000 seven-day active users.
-     * (items.setPublishedDeployPercentage)
-     *
-     * @param string $name Required. Name of the item to update the published
-     * revision of in the form `publishers/{publisherId}/items/{itemId}`
-     * @param SetPublishedDeployPercentageRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SetPublishedDeployPercentageResponse
-     * @throws \Google\Service\Exception
-     */
-    public function setPublishedDeployPercentage($name, SetPublishedDeployPercentageRequest $postBody, $optParams = [])
+    class Google_Service_Chromewebstore_Resource_PublishersItems extends \Google\Service\Chromewebstore\Resource\PublishersItems
     {
     }
 }

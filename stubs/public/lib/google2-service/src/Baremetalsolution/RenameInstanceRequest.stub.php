@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class RenameInstanceRequest extends \Google\Model
-{
-    /**
-     * Required. The new `id` of the instance.
-     *
-     * @var string
-     */
-    public $newInstanceId;
-    /**
-     * Required. The new `id` of the instance.
-     *
-     * @param string $newInstanceId
-     */
-    public function setNewInstanceId($newInstanceId)
+namespace Google\Service\Baremetalsolution {
+    class RenameInstanceRequest extends \Google\Model
     {
+        /**
+         * Required. The new `id` of the instance.
+         *
+         * @var string
+         */
+        public $newInstanceId;
+        /**
+         * Required. The new `id` of the instance.
+         *
+         * @param string $newInstanceId
+         */
+        public function setNewInstanceId($newInstanceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewInstanceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Baremetalsolution\RenameInstanceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewInstanceId()
+    class Google_Service_Baremetalsolution_RenameInstanceRequest extends \Google\Service\Baremetalsolution\RenameInstanceRequest
     {
     }
 }

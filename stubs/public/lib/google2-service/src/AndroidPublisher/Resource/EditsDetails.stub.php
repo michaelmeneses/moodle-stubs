@@ -21,54 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher\Resource;
-
-/**
- * The "details" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $details = $androidpublisherService->edits_details;
- *  </code>
- */
-class EditsDetails extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidPublisher\Resource {
+    use Google\Service\AndroidPublisher\AppDetails;
     /**
-     * Gets details of an app. (details.get)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param array $optParams Optional parameters.
-     * @return AppDetails
-     * @throws \Google\Service\Exception
+     * The "details" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
+     *   $details = $androidpublisherService->edits_details;
+     *  </code>
      */
-    public function get($packageName, $editId, $optParams = [])
+    class EditsDetails extends \Google\Service\Resource
     {
+        /**
+         * Gets details of an app. (details.get)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param array $optParams Optional parameters.
+         * @return AppDetails
+         * @throws \Google\Service\Exception
+         */
+        public function get($packageName, $editId, $optParams = [])
+        {
+        }
+        /**
+         * Patches details of an app. (details.patch)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param AppDetails $postBody
+         * @param array $optParams Optional parameters.
+         * @return AppDetails
+         * @throws \Google\Service\Exception
+         */
+        public function patch($packageName, $editId, AppDetails $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates details of an app. (details.update)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param AppDetails $postBody
+         * @param array $optParams Optional parameters.
+         * @return AppDetails
+         * @throws \Google\Service\Exception
+         */
+        public function update($packageName, $editId, AppDetails $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Patches details of an app. (details.patch)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param AppDetails $postBody
-     * @param array $optParams Optional parameters.
-     * @return AppDetails
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidPublisher\Resource\EditsDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function patch($packageName, $editId, AppDetails $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates details of an app. (details.update)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param AppDetails $postBody
-     * @param array $optParams Optional parameters.
-     * @return AppDetails
-     * @throws \Google\Service\Exception
-     */
-    public function update($packageName, $editId, AppDetails $postBody, $optParams = [])
+    class Google_Service_AndroidPublisher_Resource_EditsDetails extends \Google\Service\AndroidPublisher\Resource\EditsDetails
     {
     }
 }

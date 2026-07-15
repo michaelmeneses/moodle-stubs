@@ -21,247 +21,256 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RagFile extends \Google\Model
-{
-    /**
-     * Output only. Timestamp when this RagFile was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. The description of the RagFile.
-     *
-     * @var string
-     */
-    public $description;
-    protected $directUploadSourceType = GoogleCloudAiplatformV1DirectUploadSource::class;
-    protected $directUploadSourceDataType = '';
-    /**
-     * Required. The display name of the RagFile. The name can be up to 128
-     * characters long and can consist of any UTF-8 characters.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $fileStatusType = GoogleCloudAiplatformV1FileStatus::class;
-    protected $fileStatusDataType = '';
-    protected $gcsSourceType = GoogleCloudAiplatformV1GcsSource::class;
-    protected $gcsSourceDataType = '';
-    protected $googleDriveSourceType = GoogleCloudAiplatformV1GoogleDriveSource::class;
-    protected $googleDriveSourceDataType = '';
-    protected $jiraSourceType = GoogleCloudAiplatformV1JiraSource::class;
-    protected $jiraSourceDataType = '';
-    /**
-     * Output only. The resource name of the RagFile.
-     *
-     * @var string
-     */
-    public $name;
-    protected $sharePointSourcesType = GoogleCloudAiplatformV1SharePointSources::class;
-    protected $sharePointSourcesDataType = '';
-    protected $slackSourceType = GoogleCloudAiplatformV1SlackSource::class;
-    protected $slackSourceDataType = '';
-    /**
-     * Output only. Timestamp when this RagFile was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The metadata for metadata search. The user_metadata Needs to
-     * be in JSON format.
-     *
-     * @var string
-     */
-    public $userMetadata;
-    /**
-     * Output only. Timestamp when this RagFile was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RagFile extends \Google\Model
     {
+        /**
+         * Output only. Timestamp when this RagFile was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. The description of the RagFile.
+         *
+         * @var string
+         */
+        public $description;
+        protected $directUploadSourceType = GoogleCloudAiplatformV1DirectUploadSource::class;
+        protected $directUploadSourceDataType = '';
+        /**
+         * Required. The display name of the RagFile. The name can be up to 128
+         * characters long and can consist of any UTF-8 characters.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $fileStatusType = GoogleCloudAiplatformV1FileStatus::class;
+        protected $fileStatusDataType = '';
+        protected $gcsSourceType = GoogleCloudAiplatformV1GcsSource::class;
+        protected $gcsSourceDataType = '';
+        protected $googleDriveSourceType = GoogleCloudAiplatformV1GoogleDriveSource::class;
+        protected $googleDriveSourceDataType = '';
+        protected $jiraSourceType = GoogleCloudAiplatformV1JiraSource::class;
+        protected $jiraSourceDataType = '';
+        /**
+         * Output only. The resource name of the RagFile.
+         *
+         * @var string
+         */
+        public $name;
+        protected $sharePointSourcesType = GoogleCloudAiplatformV1SharePointSources::class;
+        protected $sharePointSourcesDataType = '';
+        protected $slackSourceType = GoogleCloudAiplatformV1SlackSource::class;
+        protected $slackSourceDataType = '';
+        /**
+         * Output only. Timestamp when this RagFile was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The metadata for metadata search. The user_metadata Needs to
+         * be in JSON format.
+         *
+         * @var string
+         */
+        public $userMetadata;
+        /**
+         * Output only. Timestamp when this RagFile was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. The description of the RagFile.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. The RagFile is encapsulated and uploaded in the UploadRagFile
+         * request.
+         *
+         * @param GoogleCloudAiplatformV1DirectUploadSource $directUploadSource
+         */
+        public function setDirectUploadSource(GoogleCloudAiplatformV1DirectUploadSource $directUploadSource)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DirectUploadSource
+         */
+        public function getDirectUploadSource()
+        {
+        }
+        /**
+         * Required. The display name of the RagFile. The name can be up to 128
+         * characters long and can consist of any UTF-8 characters.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. State of the RagFile.
+         *
+         * @param GoogleCloudAiplatformV1FileStatus $fileStatus
+         */
+        public function setFileStatus(GoogleCloudAiplatformV1FileStatus $fileStatus)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FileStatus
+         */
+        public function getFileStatus()
+        {
+        }
+        /**
+         * Output only. Google Cloud Storage location of the RagFile. It does not
+         * support wildcards in the Cloud Storage uri for now.
+         *
+         * @param GoogleCloudAiplatformV1GcsSource $gcsSource
+         */
+        public function setGcsSource(GoogleCloudAiplatformV1GcsSource $gcsSource)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GcsSource
+         */
+        public function getGcsSource()
+        {
+        }
+        /**
+         * Output only. Google Drive location. Supports importing individual files as
+         * well as Google Drive folders.
+         *
+         * @param GoogleCloudAiplatformV1GoogleDriveSource $googleDriveSource
+         */
+        public function setGoogleDriveSource(GoogleCloudAiplatformV1GoogleDriveSource $googleDriveSource)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GoogleDriveSource
+         */
+        public function getGoogleDriveSource()
+        {
+        }
+        /**
+         * The RagFile is imported from a Jira query.
+         *
+         * @param GoogleCloudAiplatformV1JiraSource $jiraSource
+         */
+        public function setJiraSource(GoogleCloudAiplatformV1JiraSource $jiraSource)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1JiraSource
+         */
+        public function getJiraSource()
+        {
+        }
+        /**
+         * Output only. The resource name of the RagFile.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The RagFile is imported from a SharePoint source.
+         *
+         * @param GoogleCloudAiplatformV1SharePointSources $sharePointSources
+         */
+        public function setSharePointSources(GoogleCloudAiplatformV1SharePointSources $sharePointSources)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SharePointSources
+         */
+        public function getSharePointSources()
+        {
+        }
+        /**
+         * The RagFile is imported from a Slack channel.
+         *
+         * @param GoogleCloudAiplatformV1SlackSource $slackSource
+         */
+        public function setSlackSource(GoogleCloudAiplatformV1SlackSource $slackSource)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SlackSource
+         */
+        public function getSlackSource()
+        {
+        }
+        /**
+         * Output only. Timestamp when this RagFile was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * Output only. The metadata for metadata search. The user_metadata Needs to
+         * be in JSON format.
+         *
+         * @param string $userMetadata
+         */
+        public function setUserMetadata($userMetadata)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. The description of the RagFile.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. The RagFile is encapsulated and uploaded in the UploadRagFile
-     * request.
-     *
-     * @param GoogleCloudAiplatformV1DirectUploadSource $directUploadSource
-     */
-    public function setDirectUploadSource(GoogleCloudAiplatformV1DirectUploadSource $directUploadSource)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1DirectUploadSource
-     */
-    public function getDirectUploadSource()
-    {
-    }
-    /**
-     * Required. The display name of the RagFile. The name can be up to 128
-     * characters long and can consist of any UTF-8 characters.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. State of the RagFile.
-     *
-     * @param GoogleCloudAiplatformV1FileStatus $fileStatus
-     */
-    public function setFileStatus(GoogleCloudAiplatformV1FileStatus $fileStatus)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FileStatus
-     */
-    public function getFileStatus()
-    {
-    }
-    /**
-     * Output only. Google Cloud Storage location of the RagFile. It does not
-     * support wildcards in the Cloud Storage uri for now.
-     *
-     * @param GoogleCloudAiplatformV1GcsSource $gcsSource
-     */
-    public function setGcsSource(GoogleCloudAiplatformV1GcsSource $gcsSource)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1GcsSource
-     */
-    public function getGcsSource()
-    {
-    }
-    /**
-     * Output only. Google Drive location. Supports importing individual files as
-     * well as Google Drive folders.
-     *
-     * @param GoogleCloudAiplatformV1GoogleDriveSource $googleDriveSource
-     */
-    public function setGoogleDriveSource(GoogleCloudAiplatformV1GoogleDriveSource $googleDriveSource)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1GoogleDriveSource
-     */
-    public function getGoogleDriveSource()
-    {
-    }
-    /**
-     * The RagFile is imported from a Jira query.
-     *
-     * @param GoogleCloudAiplatformV1JiraSource $jiraSource
-     */
-    public function setJiraSource(GoogleCloudAiplatformV1JiraSource $jiraSource)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1JiraSource
-     */
-    public function getJiraSource()
-    {
-    }
-    /**
-     * Output only. The resource name of the RagFile.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The RagFile is imported from a SharePoint source.
-     *
-     * @param GoogleCloudAiplatformV1SharePointSources $sharePointSources
-     */
-    public function setSharePointSources(GoogleCloudAiplatformV1SharePointSources $sharePointSources)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SharePointSources
-     */
-    public function getSharePointSources()
-    {
-    }
-    /**
-     * The RagFile is imported from a Slack channel.
-     *
-     * @param GoogleCloudAiplatformV1SlackSource $slackSource
-     */
-    public function setSlackSource(GoogleCloudAiplatformV1SlackSource $slackSource)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SlackSource
-     */
-    public function getSlackSource()
-    {
-    }
-    /**
-     * Output only. Timestamp when this RagFile was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * Output only. The metadata for metadata search. The user_metadata Needs to
-     * be in JSON format.
-     *
-     * @param string $userMetadata
-     */
-    public function setUserMetadata($userMetadata)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserMetadata()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RagFile extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagFile
     {
     }
 }

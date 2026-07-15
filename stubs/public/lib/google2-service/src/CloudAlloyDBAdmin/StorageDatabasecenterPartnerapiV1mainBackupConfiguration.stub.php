@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class StorageDatabasecenterPartnerapiV1mainBackupConfiguration extends \Google\Model
-{
-    /**
-     * Whether customer visible automated backups are enabled on the instance.
-     *
-     * @var bool
-     */
-    public $automatedBackupEnabled;
-    protected $backupRetentionSettingsType = StorageDatabasecenterPartnerapiV1mainRetentionSettings::class;
-    protected $backupRetentionSettingsDataType = '';
-    /**
-     * Whether point-in-time recovery is enabled. This is optional field, if the
-     * database service does not have this feature or metadata is not available in
-     * control plane, this can be omitted.
-     *
-     * @var bool
-     */
-    public $pointInTimeRecoveryEnabled;
-    /**
-     * Whether customer visible automated backups are enabled on the instance.
-     *
-     * @param bool $automatedBackupEnabled
-     */
-    public function setAutomatedBackupEnabled($automatedBackupEnabled)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class StorageDatabasecenterPartnerapiV1mainBackupConfiguration extends \Google\Model
     {
+        /**
+         * Whether customer visible automated backups are enabled on the instance.
+         *
+         * @var bool
+         */
+        public $automatedBackupEnabled;
+        protected $backupRetentionSettingsType = StorageDatabasecenterPartnerapiV1mainRetentionSettings::class;
+        protected $backupRetentionSettingsDataType = '';
+        /**
+         * Whether point-in-time recovery is enabled. This is optional field, if the
+         * database service does not have this feature or metadata is not available in
+         * control plane, this can be omitted.
+         *
+         * @var bool
+         */
+        public $pointInTimeRecoveryEnabled;
+        /**
+         * Whether customer visible automated backups are enabled on the instance.
+         *
+         * @param bool $automatedBackupEnabled
+         */
+        public function setAutomatedBackupEnabled($automatedBackupEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutomatedBackupEnabled()
+        {
+        }
+        /**
+         * Backup retention settings.
+         *
+         * @param StorageDatabasecenterPartnerapiV1mainRetentionSettings $backupRetentionSettings
+         */
+        public function setBackupRetentionSettings(StorageDatabasecenterPartnerapiV1mainRetentionSettings $backupRetentionSettings)
+        {
+        }
+        /**
+         * @return StorageDatabasecenterPartnerapiV1mainRetentionSettings
+         */
+        public function getBackupRetentionSettings()
+        {
+        }
+        /**
+         * Whether point-in-time recovery is enabled. This is optional field, if the
+         * database service does not have this feature or metadata is not available in
+         * control plane, this can be omitted.
+         *
+         * @param bool $pointInTimeRecoveryEnabled
+         */
+        public function setPointInTimeRecoveryEnabled($pointInTimeRecoveryEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPointInTimeRecoveryEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\StorageDatabasecenterPartnerapiV1mainBackupConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutomatedBackupEnabled()
-    {
-    }
-    /**
-     * Backup retention settings.
-     *
-     * @param StorageDatabasecenterPartnerapiV1mainRetentionSettings $backupRetentionSettings
-     */
-    public function setBackupRetentionSettings(StorageDatabasecenterPartnerapiV1mainRetentionSettings $backupRetentionSettings)
-    {
-    }
-    /**
-     * @return StorageDatabasecenterPartnerapiV1mainRetentionSettings
-     */
-    public function getBackupRetentionSettings()
-    {
-    }
-    /**
-     * Whether point-in-time recovery is enabled. This is optional field, if the
-     * database service does not have this feature or metadata is not available in
-     * control plane, this can be omitted.
-     *
-     * @param bool $pointInTimeRecoveryEnabled
-     */
-    public function setPointInTimeRecoveryEnabled($pointInTimeRecoveryEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPointInTimeRecoveryEnabled()
+    class Google_Service_CloudAlloyDBAdmin_StorageDatabasecenterPartnerapiV1mainBackupConfiguration extends \Google\Service\CloudAlloyDBAdmin\StorageDatabasecenterPartnerapiV1mainBackupConfiguration
     {
     }
 }

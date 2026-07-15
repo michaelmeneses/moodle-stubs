@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1Attempt extends \Google\Collection
-{
-    protected $collection_key = 'partialFailures';
-    /**
-     * @var string
-     */
-    public $attemptTime;
-    protected $partialFailuresType = GoogleRpcStatus::class;
-    protected $partialFailuresDataType = 'array';
-    /**
-     * @param string $attemptTime
-     */
-    public function setAttemptTime($attemptTime)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1Attempt extends \Google\Collection
     {
+        protected $collection_key = 'partialFailures';
+        /**
+         * @var string
+         */
+        public $attemptTime;
+        protected $partialFailuresType = GoogleRpcStatus::class;
+        protected $partialFailuresDataType = 'array';
+        /**
+         * @param string $attemptTime
+         */
+        public function setAttemptTime($attemptTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttemptTime()
+        {
+        }
+        /**
+         * Details of errors that occurred.
+         *
+         * @param GoogleRpcStatus[] $partialFailures
+         */
+        public function setPartialFailures($partialFailures)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getPartialFailures()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1Attempt registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttemptTime()
-    {
-    }
-    /**
-     * Details of errors that occurred.
-     *
-     * @param GoogleRpcStatus[] $partialFailures
-     */
-    public function setPartialFailures($partialFailures)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus[]
-     */
-    public function getPartialFailures()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1Attempt extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1Attempt
     {
     }
 }

@@ -21,312 +21,321 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class Relyingparty extends \Google\Model
-{
-    /**
-     * whether or not to install the android app on the device where the link is
-     * opened
-     *
-     * @var bool
-     */
-    public $androidInstallApp;
-    /**
-     * minimum version of the app. if the version on the device is lower than this
-     * version then the user is taken to the play store to upgrade the app
-     *
-     * @var string
-     */
-    public $androidMinimumVersion;
-    /**
-     * android package name of the android app to handle the action code
-     *
-     * @var string
-     */
-    public $androidPackageName;
-    /**
-     * whether or not the app can handle the oob code without first going to web
-     *
-     * @var bool
-     */
-    public $canHandleCodeInApp;
-    /**
-     * The recaptcha response from the user.
-     *
-     * @var string
-     */
-    public $captchaResp;
-    /**
-     * The recaptcha challenge presented to the user.
-     *
-     * @var string
-     */
-    public $challenge;
-    /**
-     * The url to continue to the Gitkit app
-     *
-     * @var string
-     */
-    public $continueUrl;
-    /**
-     * The email of the user.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * iOS app store id to download the app if it's not already installed
-     *
-     * @var string
-     */
-    public $iOSAppStoreId;
-    /**
-     * the iOS bundle id of iOS app to handle the action code
-     *
-     * @var string
-     */
-    public $iOSBundleId;
-    /**
-     * The user's Gitkit login token for email change.
-     *
-     * @var string
-     */
-    public $idToken;
-    /**
-     * The fixed string "identitytoolkit#relyingparty".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The new email if the code is for email change.
-     *
-     * @var string
-     */
-    public $newEmail;
-    /**
-     * The request type.
-     *
-     * @var string
-     */
-    public $requestType;
-    /**
-     * The IP address of the user.
-     *
-     * @var string
-     */
-    public $userIp;
-    /**
-     * whether or not to install the android app on the device where the link is
-     * opened
-     *
-     * @param bool $androidInstallApp
-     */
-    public function setAndroidInstallApp($androidInstallApp)
+namespace Google\Service\IdentityToolkit {
+    class Relyingparty extends \Google\Model
     {
+        /**
+         * whether or not to install the android app on the device where the link is
+         * opened
+         *
+         * @var bool
+         */
+        public $androidInstallApp;
+        /**
+         * minimum version of the app. if the version on the device is lower than this
+         * version then the user is taken to the play store to upgrade the app
+         *
+         * @var string
+         */
+        public $androidMinimumVersion;
+        /**
+         * android package name of the android app to handle the action code
+         *
+         * @var string
+         */
+        public $androidPackageName;
+        /**
+         * whether or not the app can handle the oob code without first going to web
+         *
+         * @var bool
+         */
+        public $canHandleCodeInApp;
+        /**
+         * The recaptcha response from the user.
+         *
+         * @var string
+         */
+        public $captchaResp;
+        /**
+         * The recaptcha challenge presented to the user.
+         *
+         * @var string
+         */
+        public $challenge;
+        /**
+         * The url to continue to the Gitkit app
+         *
+         * @var string
+         */
+        public $continueUrl;
+        /**
+         * The email of the user.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * iOS app store id to download the app if it's not already installed
+         *
+         * @var string
+         */
+        public $iOSAppStoreId;
+        /**
+         * the iOS bundle id of iOS app to handle the action code
+         *
+         * @var string
+         */
+        public $iOSBundleId;
+        /**
+         * The user's Gitkit login token for email change.
+         *
+         * @var string
+         */
+        public $idToken;
+        /**
+         * The fixed string "identitytoolkit#relyingparty".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The new email if the code is for email change.
+         *
+         * @var string
+         */
+        public $newEmail;
+        /**
+         * The request type.
+         *
+         * @var string
+         */
+        public $requestType;
+        /**
+         * The IP address of the user.
+         *
+         * @var string
+         */
+        public $userIp;
+        /**
+         * whether or not to install the android app on the device where the link is
+         * opened
+         *
+         * @param bool $androidInstallApp
+         */
+        public function setAndroidInstallApp($androidInstallApp)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAndroidInstallApp()
+        {
+        }
+        /**
+         * minimum version of the app. if the version on the device is lower than this
+         * version then the user is taken to the play store to upgrade the app
+         *
+         * @param string $androidMinimumVersion
+         */
+        public function setAndroidMinimumVersion($androidMinimumVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAndroidMinimumVersion()
+        {
+        }
+        /**
+         * android package name of the android app to handle the action code
+         *
+         * @param string $androidPackageName
+         */
+        public function setAndroidPackageName($androidPackageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAndroidPackageName()
+        {
+        }
+        /**
+         * whether or not the app can handle the oob code without first going to web
+         *
+         * @param bool $canHandleCodeInApp
+         */
+        public function setCanHandleCodeInApp($canHandleCodeInApp)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanHandleCodeInApp()
+        {
+        }
+        /**
+         * The recaptcha response from the user.
+         *
+         * @param string $captchaResp
+         */
+        public function setCaptchaResp($captchaResp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCaptchaResp()
+        {
+        }
+        /**
+         * The recaptcha challenge presented to the user.
+         *
+         * @param string $challenge
+         */
+        public function setChallenge($challenge)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChallenge()
+        {
+        }
+        /**
+         * The url to continue to the Gitkit app
+         *
+         * @param string $continueUrl
+         */
+        public function setContinueUrl($continueUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContinueUrl()
+        {
+        }
+        /**
+         * The email of the user.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * iOS app store id to download the app if it's not already installed
+         *
+         * @param string $iOSAppStoreId
+         */
+        public function setIOSAppStoreId($iOSAppStoreId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIOSAppStoreId()
+        {
+        }
+        /**
+         * the iOS bundle id of iOS app to handle the action code
+         *
+         * @param string $iOSBundleId
+         */
+        public function setIOSBundleId($iOSBundleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIOSBundleId()
+        {
+        }
+        /**
+         * The user's Gitkit login token for email change.
+         *
+         * @param string $idToken
+         */
+        public function setIdToken($idToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdToken()
+        {
+        }
+        /**
+         * The fixed string "identitytoolkit#relyingparty".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The new email if the code is for email change.
+         *
+         * @param string $newEmail
+         */
+        public function setNewEmail($newEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewEmail()
+        {
+        }
+        /**
+         * The request type.
+         *
+         * @param string $requestType
+         */
+        public function setRequestType($requestType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestType()
+        {
+        }
+        /**
+         * The IP address of the user.
+         *
+         * @param string $userIp
+         */
+        public function setUserIp($userIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserIp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\IdentityToolkit\Relyingparty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndroidInstallApp()
-    {
-    }
-    /**
-     * minimum version of the app. if the version on the device is lower than this
-     * version then the user is taken to the play store to upgrade the app
-     *
-     * @param string $androidMinimumVersion
-     */
-    public function setAndroidMinimumVersion($androidMinimumVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAndroidMinimumVersion()
-    {
-    }
-    /**
-     * android package name of the android app to handle the action code
-     *
-     * @param string $androidPackageName
-     */
-    public function setAndroidPackageName($androidPackageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAndroidPackageName()
-    {
-    }
-    /**
-     * whether or not the app can handle the oob code without first going to web
-     *
-     * @param bool $canHandleCodeInApp
-     */
-    public function setCanHandleCodeInApp($canHandleCodeInApp)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanHandleCodeInApp()
-    {
-    }
-    /**
-     * The recaptcha response from the user.
-     *
-     * @param string $captchaResp
-     */
-    public function setCaptchaResp($captchaResp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCaptchaResp()
-    {
-    }
-    /**
-     * The recaptcha challenge presented to the user.
-     *
-     * @param string $challenge
-     */
-    public function setChallenge($challenge)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChallenge()
-    {
-    }
-    /**
-     * The url to continue to the Gitkit app
-     *
-     * @param string $continueUrl
-     */
-    public function setContinueUrl($continueUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContinueUrl()
-    {
-    }
-    /**
-     * The email of the user.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
-    {
-    }
-    /**
-     * iOS app store id to download the app if it's not already installed
-     *
-     * @param string $iOSAppStoreId
-     */
-    public function setIOSAppStoreId($iOSAppStoreId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIOSAppStoreId()
-    {
-    }
-    /**
-     * the iOS bundle id of iOS app to handle the action code
-     *
-     * @param string $iOSBundleId
-     */
-    public function setIOSBundleId($iOSBundleId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIOSBundleId()
-    {
-    }
-    /**
-     * The user's Gitkit login token for email change.
-     *
-     * @param string $idToken
-     */
-    public function setIdToken($idToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIdToken()
-    {
-    }
-    /**
-     * The fixed string "identitytoolkit#relyingparty".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The new email if the code is for email change.
-     *
-     * @param string $newEmail
-     */
-    public function setNewEmail($newEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNewEmail()
-    {
-    }
-    /**
-     * The request type.
-     *
-     * @param string $requestType
-     */
-    public function setRequestType($requestType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestType()
-    {
-    }
-    /**
-     * The IP address of the user.
-     *
-     * @param string $userIp
-     */
-    public function setUserIp($userIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserIp()
+    class Google_Service_IdentityToolkit_Relyingparty extends \Google\Service\IdentityToolkit\Relyingparty
     {
     }
 }

@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainFeedbackLabel extends \Google\Model
-{
-    /**
-     * Output only. Create time of the label.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * String label used for Topic Modeling.
-     *
-     * @var string
-     */
-    public $label;
-    /**
-     * Name of the resource to be labeled. Supported resources are: * `projects/{p
-     * roject}/locations/{location}/qaScorecards/{scorecard}/revisions/{revision}/
-     * qaQuestions/{question}` *
-     * `projects/{project}/locations/{location}/issueModels/{issue_model}` *
-     * `projects/{project}/locations/{location}/generators/{generator_id}`
-     *
-     * @var string
-     */
-    public $labeledResource;
-    /**
-     * Immutable. Resource name of the FeedbackLabel. Format: projects/{project}/l
-     * ocations/{location}/conversations/{conversation}/feedbackLabels/{feedback_l
-     * abel}
-     *
-     * @var string
-     */
-    public $name;
-    protected $qaAnswerLabelType = GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerValue::class;
-    protected $qaAnswerLabelDataType = '';
-    /**
-     * Output only. Update time of the label.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Create time of the label.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainFeedbackLabel extends \Google\Model
     {
+        /**
+         * Output only. Create time of the label.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * String label used for Topic Modeling.
+         *
+         * @var string
+         */
+        public $label;
+        /**
+         * Name of the resource to be labeled. Supported resources are: * `projects/{p
+         * roject}/locations/{location}/qaScorecards/{scorecard}/revisions/{revision}/
+         * qaQuestions/{question}` *
+         * `projects/{project}/locations/{location}/issueModels/{issue_model}` *
+         * `projects/{project}/locations/{location}/generators/{generator_id}`
+         *
+         * @var string
+         */
+        public $labeledResource;
+        /**
+         * Immutable. Resource name of the FeedbackLabel. Format: projects/{project}/l
+         * ocations/{location}/conversations/{conversation}/feedbackLabels/{feedback_l
+         * abel}
+         *
+         * @var string
+         */
+        public $name;
+        protected $qaAnswerLabelType = GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerValue::class;
+        protected $qaAnswerLabelDataType = '';
+        /**
+         * Output only. Update time of the label.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Create time of the label.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * String label used for Topic Modeling.
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * Name of the resource to be labeled. Supported resources are: * `projects/{p
+         * roject}/locations/{location}/qaScorecards/{scorecard}/revisions/{revision}/
+         * qaQuestions/{question}` *
+         * `projects/{project}/locations/{location}/issueModels/{issue_model}` *
+         * `projects/{project}/locations/{location}/generators/{generator_id}`
+         *
+         * @param string $labeledResource
+         */
+        public function setLabeledResource($labeledResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabeledResource()
+        {
+        }
+        /**
+         * Immutable. Resource name of the FeedbackLabel. Format: projects/{project}/l
+         * ocations/{location}/conversations/{conversation}/feedbackLabels/{feedback_l
+         * abel}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * QaAnswer label used for Quality AI example conversations.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerValue $qaAnswerLabel
+         */
+        public function setQaAnswerLabel(GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerValue $qaAnswerLabel)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerValue
+         */
+        public function getQaAnswerLabel()
+        {
+        }
+        /**
+         * Output only. Update time of the label.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainFeedbackLabel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * String label used for Topic Modeling.
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
-    {
-    }
-    /**
-     * Name of the resource to be labeled. Supported resources are: * `projects/{p
-     * roject}/locations/{location}/qaScorecards/{scorecard}/revisions/{revision}/
-     * qaQuestions/{question}` *
-     * `projects/{project}/locations/{location}/issueModels/{issue_model}` *
-     * `projects/{project}/locations/{location}/generators/{generator_id}`
-     *
-     * @param string $labeledResource
-     */
-    public function setLabeledResource($labeledResource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabeledResource()
-    {
-    }
-    /**
-     * Immutable. Resource name of the FeedbackLabel. Format: projects/{project}/l
-     * ocations/{location}/conversations/{conversation}/feedbackLabels/{feedback_l
-     * abel}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * QaAnswer label used for Quality AI example conversations.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerValue $qaAnswerLabel
-     */
-    public function setQaAnswerLabel(GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerValue $qaAnswerLabel)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerValue
-     */
-    public function getQaAnswerLabel()
-    {
-    }
-    /**
-     * Output only. Update time of the label.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainFeedbackLabel extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainFeedbackLabel
     {
     }
 }

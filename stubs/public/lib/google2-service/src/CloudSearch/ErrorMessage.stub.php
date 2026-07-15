@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ErrorMessage extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $errorMessage;
-    protected $sourceType = Source::class;
-    protected $sourceDataType = '';
-    /**
-     * @param string $errorMessage
-     */
-    public function setErrorMessage($errorMessage)
+namespace Google\Service\CloudSearch {
+    class ErrorMessage extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $errorMessage;
+        protected $sourceType = Source::class;
+        protected $sourceDataType = '';
+        /**
+         * @param string $errorMessage
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
+        /**
+         * @param Source $source
+         */
+        public function setSource(Source $source)
+        {
+        }
+        /**
+         * @return Source
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\ErrorMessage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorMessage()
-    {
-    }
-    /**
-     * @param Source $source
-     */
-    public function setSource(Source $source)
-    {
-    }
-    /**
-     * @return Source
-     */
-    public function getSource()
+    class Google_Service_CloudSearch_ErrorMessage extends \Google\Service\CloudSearch\ErrorMessage
     {
     }
 }

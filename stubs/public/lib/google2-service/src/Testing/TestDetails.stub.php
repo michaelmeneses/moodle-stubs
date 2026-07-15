@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class TestDetails extends \Google\Collection
-{
-    protected $collection_key = 'progressMessages';
-    /**
-     * Output only. If the TestState is ERROR, then this string will contain
-     * human-readable details about the error.
-     *
-     * @var string
-     */
-    public $errorMessage;
-    /**
-     * Output only. Human-readable, detailed descriptions of the test's progress.
-     * For example: "Provisioning a device", "Starting Test". During the course of
-     * execution new data may be appended to the end of progress_messages.
-     *
-     * @var string[]
-     */
-    public $progressMessages;
-    /**
-     * Output only. If the TestState is ERROR, then this string will contain
-     * human-readable details about the error.
-     *
-     * @param string $errorMessage
-     */
-    public function setErrorMessage($errorMessage)
+namespace Google\Service\Testing {
+    class TestDetails extends \Google\Collection
     {
+        protected $collection_key = 'progressMessages';
+        /**
+         * Output only. If the TestState is ERROR, then this string will contain
+         * human-readable details about the error.
+         *
+         * @var string
+         */
+        public $errorMessage;
+        /**
+         * Output only. Human-readable, detailed descriptions of the test's progress.
+         * For example: "Provisioning a device", "Starting Test". During the course of
+         * execution new data may be appended to the end of progress_messages.
+         *
+         * @var string[]
+         */
+        public $progressMessages;
+        /**
+         * Output only. If the TestState is ERROR, then this string will contain
+         * human-readable details about the error.
+         *
+         * @param string $errorMessage
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
+        /**
+         * Output only. Human-readable, detailed descriptions of the test's progress.
+         * For example: "Provisioning a device", "Starting Test". During the course of
+         * execution new data may be appended to the end of progress_messages.
+         *
+         * @param string[] $progressMessages
+         */
+        public function setProgressMessages($progressMessages)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProgressMessages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Testing\TestDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorMessage()
-    {
-    }
-    /**
-     * Output only. Human-readable, detailed descriptions of the test's progress.
-     * For example: "Provisioning a device", "Starting Test". During the course of
-     * execution new data may be appended to the end of progress_messages.
-     *
-     * @param string[] $progressMessages
-     */
-    public function setProgressMessages($progressMessages)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProgressMessages()
+    class Google_Service_Testing_TestDetails extends \Google\Service\Testing\TestDetails
     {
     }
 }

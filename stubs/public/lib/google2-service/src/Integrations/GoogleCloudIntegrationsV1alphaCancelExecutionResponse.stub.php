@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaCancelExecutionResponse extends \Google\Model
-{
-    /**
-     * True if cancellation performed successfully.
-     *
-     * @var bool
-     */
-    public $isCanceled;
-    /**
-     * True if cancellation performed successfully.
-     *
-     * @param bool $isCanceled
-     */
-    public function setIsCanceled($isCanceled)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaCancelExecutionResponse extends \Google\Model
     {
+        /**
+         * True if cancellation performed successfully.
+         *
+         * @var bool
+         */
+        public $isCanceled;
+        /**
+         * True if cancellation performed successfully.
+         *
+         * @param bool $isCanceled
+         */
+        public function setIsCanceled($isCanceled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsCanceled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCancelExecutionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsCanceled()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaCancelExecutionResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCancelExecutionResponse
     {
     }
 }

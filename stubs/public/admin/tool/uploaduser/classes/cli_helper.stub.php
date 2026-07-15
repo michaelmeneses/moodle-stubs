@@ -29,6 +29,7 @@
  */
 namespace tool_uploaduser;
 
+use tool_uploaduser\local\cli_progress_tracker;
 /**
  * Helper method for CLI script to upload users (also has special wrappers for cli* functions for phpunit testing)
  *

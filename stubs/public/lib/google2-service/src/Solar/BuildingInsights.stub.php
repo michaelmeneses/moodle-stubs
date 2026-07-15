@@ -21,236 +21,245 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Solar;
-
-class BuildingInsights extends \Google\Model
-{
-    /**
-     * No quality is known.
-     */
-    public const IMAGERY_QUALITY_IMAGERY_QUALITY_UNSPECIFIED = 'IMAGERY_QUALITY_UNSPECIFIED';
-    /**
-     * Solar data is derived from aerial imagery captured at low-altitude and
-     * processed at 0.1 m/pixel.
-     */
-    public const IMAGERY_QUALITY_HIGH = 'HIGH';
-    /**
-     * Solar data is derived from enhanced aerial imagery captured at high-
-     * altitude and processed at 0.25 m/pixel.
-     */
-    public const IMAGERY_QUALITY_MEDIUM = 'MEDIUM';
-    /**
-     * Solar data is derived from enhanced satellite imagery processed at 0.25
-     * m/pixel.
-     */
-    public const IMAGERY_QUALITY_LOW = 'LOW';
-    /**
-     * Solar data is derived from enhanced satellite imagery processed at 0.25
-     * m/pixel.
-     */
-    public const IMAGERY_QUALITY_BASE = 'BASE';
-    /**
-     * Administrative area 1 (e.g., in the US, the state) that contains this
-     * building. For example, in the US, the abbreviation might be "MA" or "CA."
-     *
-     * @var string
-     */
-    public $administrativeArea;
-    protected $boundingBoxType = LatLngBox::class;
-    protected $boundingBoxDataType = '';
-    protected $centerType = LatLng::class;
-    protected $centerDataType = '';
-    protected $imageryDateType = Date::class;
-    protected $imageryDateDataType = '';
-    protected $imageryProcessedDateType = Date::class;
-    protected $imageryProcessedDateDataType = '';
-    /**
-     * The quality of the imagery used to compute the data for this building.
-     *
-     * @var string
-     */
-    public $imageryQuality;
-    /**
-     * The resource name for the building, of the format `buildings/{place_id}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Postal code (e.g., US zip code) this building is contained by.
-     *
-     * @var string
-     */
-    public $postalCode;
-    /**
-     * Region code for the country (or region) this building is in.
-     *
-     * @var string
-     */
-    public $regionCode;
-    protected $solarPotentialType = SolarPotential::class;
-    protected $solarPotentialDataType = '';
-    /**
-     * Statistical area (e.g., US census tract) this building is in.
-     *
-     * @var string
-     */
-    public $statisticalArea;
-    /**
-     * Administrative area 1 (e.g., in the US, the state) that contains this
-     * building. For example, in the US, the abbreviation might be "MA" or "CA."
-     *
-     * @param string $administrativeArea
-     */
-    public function setAdministrativeArea($administrativeArea)
+namespace Google\Service\Solar {
+    class BuildingInsights extends \Google\Model
     {
+        /**
+         * No quality is known.
+         */
+        public const IMAGERY_QUALITY_IMAGERY_QUALITY_UNSPECIFIED = 'IMAGERY_QUALITY_UNSPECIFIED';
+        /**
+         * Solar data is derived from aerial imagery captured at low-altitude and
+         * processed at 0.1 m/pixel.
+         */
+        public const IMAGERY_QUALITY_HIGH = 'HIGH';
+        /**
+         * Solar data is derived from enhanced aerial imagery captured at high-
+         * altitude and processed at 0.25 m/pixel.
+         */
+        public const IMAGERY_QUALITY_MEDIUM = 'MEDIUM';
+        /**
+         * Solar data is derived from enhanced satellite imagery processed at 0.25
+         * m/pixel.
+         */
+        public const IMAGERY_QUALITY_LOW = 'LOW';
+        /**
+         * Solar data is derived from enhanced satellite imagery processed at 0.25
+         * m/pixel.
+         */
+        public const IMAGERY_QUALITY_BASE = 'BASE';
+        /**
+         * Administrative area 1 (e.g., in the US, the state) that contains this
+         * building. For example, in the US, the abbreviation might be "MA" or "CA."
+         *
+         * @var string
+         */
+        public $administrativeArea;
+        protected $boundingBoxType = LatLngBox::class;
+        protected $boundingBoxDataType = '';
+        protected $centerType = LatLng::class;
+        protected $centerDataType = '';
+        protected $imageryDateType = Date::class;
+        protected $imageryDateDataType = '';
+        protected $imageryProcessedDateType = Date::class;
+        protected $imageryProcessedDateDataType = '';
+        /**
+         * The quality of the imagery used to compute the data for this building.
+         *
+         * @var string
+         */
+        public $imageryQuality;
+        /**
+         * The resource name for the building, of the format `buildings/{place_id}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Postal code (e.g., US zip code) this building is contained by.
+         *
+         * @var string
+         */
+        public $postalCode;
+        /**
+         * Region code for the country (or region) this building is in.
+         *
+         * @var string
+         */
+        public $regionCode;
+        protected $solarPotentialType = SolarPotential::class;
+        protected $solarPotentialDataType = '';
+        /**
+         * Statistical area (e.g., US census tract) this building is in.
+         *
+         * @var string
+         */
+        public $statisticalArea;
+        /**
+         * Administrative area 1 (e.g., in the US, the state) that contains this
+         * building. For example, in the US, the abbreviation might be "MA" or "CA."
+         *
+         * @param string $administrativeArea
+         */
+        public function setAdministrativeArea($administrativeArea)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdministrativeArea()
+        {
+        }
+        /**
+         * The bounding box of the building.
+         *
+         * @param LatLngBox $boundingBox
+         */
+        public function setBoundingBox(LatLngBox $boundingBox)
+        {
+        }
+        /**
+         * @return LatLngBox
+         */
+        public function getBoundingBox()
+        {
+        }
+        /**
+         * A point near the center of the building.
+         *
+         * @param LatLng $center
+         */
+        public function setCenter(LatLng $center)
+        {
+        }
+        /**
+         * @return LatLng
+         */
+        public function getCenter()
+        {
+        }
+        /**
+         * Date that the underlying imagery was acquired. This is approximate.
+         *
+         * @param Date $imageryDate
+         */
+        public function setImageryDate(Date $imageryDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getImageryDate()
+        {
+        }
+        /**
+         * When processing was completed on this imagery.
+         *
+         * @param Date $imageryProcessedDate
+         */
+        public function setImageryProcessedDate(Date $imageryProcessedDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getImageryProcessedDate()
+        {
+        }
+        /**
+         * The quality of the imagery used to compute the data for this building.
+         *
+         * Accepted values: IMAGERY_QUALITY_UNSPECIFIED, HIGH, MEDIUM, LOW, BASE
+         *
+         * @param self::IMAGERY_QUALITY_* $imageryQuality
+         */
+        public function setImageryQuality($imageryQuality)
+        {
+        }
+        /**
+         * @return self::IMAGERY_QUALITY_*
+         */
+        public function getImageryQuality()
+        {
+        }
+        /**
+         * The resource name for the building, of the format `buildings/{place_id}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Postal code (e.g., US zip code) this building is contained by.
+         *
+         * @param string $postalCode
+         */
+        public function setPostalCode($postalCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostalCode()
+        {
+        }
+        /**
+         * Region code for the country (or region) this building is in.
+         *
+         * @param string $regionCode
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
+        /**
+         * Solar potential of the building.
+         *
+         * @param SolarPotential $solarPotential
+         */
+        public function setSolarPotential(SolarPotential $solarPotential)
+        {
+        }
+        /**
+         * @return SolarPotential
+         */
+        public function getSolarPotential()
+        {
+        }
+        /**
+         * Statistical area (e.g., US census tract) this building is in.
+         *
+         * @param string $statisticalArea
+         */
+        public function setStatisticalArea($statisticalArea)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatisticalArea()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Solar\BuildingInsights registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdministrativeArea()
-    {
-    }
-    /**
-     * The bounding box of the building.
-     *
-     * @param LatLngBox $boundingBox
-     */
-    public function setBoundingBox(LatLngBox $boundingBox)
-    {
-    }
-    /**
-     * @return LatLngBox
-     */
-    public function getBoundingBox()
-    {
-    }
-    /**
-     * A point near the center of the building.
-     *
-     * @param LatLng $center
-     */
-    public function setCenter(LatLng $center)
-    {
-    }
-    /**
-     * @return LatLng
-     */
-    public function getCenter()
-    {
-    }
-    /**
-     * Date that the underlying imagery was acquired. This is approximate.
-     *
-     * @param Date $imageryDate
-     */
-    public function setImageryDate(Date $imageryDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getImageryDate()
-    {
-    }
-    /**
-     * When processing was completed on this imagery.
-     *
-     * @param Date $imageryProcessedDate
-     */
-    public function setImageryProcessedDate(Date $imageryProcessedDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getImageryProcessedDate()
-    {
-    }
-    /**
-     * The quality of the imagery used to compute the data for this building.
-     *
-     * Accepted values: IMAGERY_QUALITY_UNSPECIFIED, HIGH, MEDIUM, LOW, BASE
-     *
-     * @param self::IMAGERY_QUALITY_* $imageryQuality
-     */
-    public function setImageryQuality($imageryQuality)
-    {
-    }
-    /**
-     * @return self::IMAGERY_QUALITY_*
-     */
-    public function getImageryQuality()
-    {
-    }
-    /**
-     * The resource name for the building, of the format `buildings/{place_id}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Postal code (e.g., US zip code) this building is contained by.
-     *
-     * @param string $postalCode
-     */
-    public function setPostalCode($postalCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPostalCode()
-    {
-    }
-    /**
-     * Region code for the country (or region) this building is in.
-     *
-     * @param string $regionCode
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
-    {
-    }
-    /**
-     * Solar potential of the building.
-     *
-     * @param SolarPotential $solarPotential
-     */
-    public function setSolarPotential(SolarPotential $solarPotential)
-    {
-    }
-    /**
-     * @return SolarPotential
-     */
-    public function getSolarPotential()
-    {
-    }
-    /**
-     * Statistical area (e.g., US census tract) this building is in.
-     *
-     * @param string $statisticalArea
-     */
-    public function setStatisticalArea($statisticalArea)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatisticalArea()
+    class Google_Service_Solar_BuildingInsights extends \Google\Service\Solar\BuildingInsights
     {
     }
 }

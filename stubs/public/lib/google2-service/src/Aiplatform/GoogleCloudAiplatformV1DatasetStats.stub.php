@@ -21,129 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1DatasetStats extends \Google\Collection
-{
-    protected $collection_key = 'userDatasetExamples';
-    /**
-     * @var string
-     */
-    public $totalBillableCharacterCount;
-    /**
-     * @var string
-     */
-    public $totalTuningCharacterCount;
-    /**
-     * @var string
-     */
-    public $tuningDatasetExampleCount;
-    /**
-     * @var string
-     */
-    public $tuningStepCount;
-    protected $userDatasetExamplesType = GoogleCloudAiplatformV1Content::class;
-    protected $userDatasetExamplesDataType = 'array';
-    protected $userInputTokenDistributionType = GoogleCloudAiplatformV1DatasetDistribution::class;
-    protected $userInputTokenDistributionDataType = '';
-    protected $userMessagePerExampleDistributionType = GoogleCloudAiplatformV1DatasetDistribution::class;
-    protected $userMessagePerExampleDistributionDataType = '';
-    protected $userOutputTokenDistributionType = GoogleCloudAiplatformV1DatasetDistribution::class;
-    protected $userOutputTokenDistributionDataType = '';
-    /**
-     * @param string
-     */
-    public function setTotalBillableCharacterCount($totalBillableCharacterCount)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1DatasetStats extends \Google\Collection
     {
+        protected $collection_key = 'userDatasetExamples';
+        /**
+         * @var string
+         */
+        public $totalBillableCharacterCount;
+        /**
+         * @var string
+         */
+        public $totalTuningCharacterCount;
+        /**
+         * @var string
+         */
+        public $tuningDatasetExampleCount;
+        /**
+         * @var string
+         */
+        public $tuningStepCount;
+        protected $userDatasetExamplesType = GoogleCloudAiplatformV1Content::class;
+        protected $userDatasetExamplesDataType = 'array';
+        protected $userInputTokenDistributionType = GoogleCloudAiplatformV1DatasetDistribution::class;
+        protected $userInputTokenDistributionDataType = '';
+        protected $userMessagePerExampleDistributionType = GoogleCloudAiplatformV1DatasetDistribution::class;
+        protected $userMessagePerExampleDistributionDataType = '';
+        protected $userOutputTokenDistributionType = GoogleCloudAiplatformV1DatasetDistribution::class;
+        protected $userOutputTokenDistributionDataType = '';
+        /**
+         * @param string
+         */
+        public function setTotalBillableCharacterCount($totalBillableCharacterCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalBillableCharacterCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTotalTuningCharacterCount($totalTuningCharacterCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalTuningCharacterCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTuningDatasetExampleCount($tuningDatasetExampleCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTuningDatasetExampleCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTuningStepCount($tuningStepCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTuningStepCount()
+        {
+        }
+        /**
+         * @param GoogleCloudAiplatformV1Content[]
+         */
+        public function setUserDatasetExamples($userDatasetExamples)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Content[]
+         */
+        public function getUserDatasetExamples()
+        {
+        }
+        /**
+         * @param GoogleCloudAiplatformV1DatasetDistribution
+         */
+        public function setUserInputTokenDistribution(GoogleCloudAiplatformV1DatasetDistribution $userInputTokenDistribution)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DatasetDistribution
+         */
+        public function getUserInputTokenDistribution()
+        {
+        }
+        /**
+         * @param GoogleCloudAiplatformV1DatasetDistribution
+         */
+        public function setUserMessagePerExampleDistribution(GoogleCloudAiplatformV1DatasetDistribution $userMessagePerExampleDistribution)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DatasetDistribution
+         */
+        public function getUserMessagePerExampleDistribution()
+        {
+        }
+        /**
+         * @param GoogleCloudAiplatformV1DatasetDistribution
+         */
+        public function setUserOutputTokenDistribution(GoogleCloudAiplatformV1DatasetDistribution $userOutputTokenDistribution)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DatasetDistribution
+         */
+        public function getUserOutputTokenDistribution()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1DatasetStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTotalBillableCharacterCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTotalTuningCharacterCount($totalTuningCharacterCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalTuningCharacterCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTuningDatasetExampleCount($tuningDatasetExampleCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTuningDatasetExampleCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTuningStepCount($tuningStepCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTuningStepCount()
-    {
-    }
-    /**
-     * @param GoogleCloudAiplatformV1Content[]
-     */
-    public function setUserDatasetExamples($userDatasetExamples)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1Content[]
-     */
-    public function getUserDatasetExamples()
-    {
-    }
-    /**
-     * @param GoogleCloudAiplatformV1DatasetDistribution
-     */
-    public function setUserInputTokenDistribution(GoogleCloudAiplatformV1DatasetDistribution $userInputTokenDistribution)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1DatasetDistribution
-     */
-    public function getUserInputTokenDistribution()
-    {
-    }
-    /**
-     * @param GoogleCloudAiplatformV1DatasetDistribution
-     */
-    public function setUserMessagePerExampleDistribution(GoogleCloudAiplatformV1DatasetDistribution $userMessagePerExampleDistribution)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1DatasetDistribution
-     */
-    public function getUserMessagePerExampleDistribution()
-    {
-    }
-    /**
-     * @param GoogleCloudAiplatformV1DatasetDistribution
-     */
-    public function setUserOutputTokenDistribution(GoogleCloudAiplatformV1DatasetDistribution $userOutputTokenDistribution)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1DatasetDistribution
-     */
-    public function getUserOutputTokenDistribution()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1DatasetStats extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1DatasetStats
     {
     }
 }

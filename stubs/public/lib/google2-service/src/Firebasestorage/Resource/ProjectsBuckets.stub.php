@@ -21,78 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebasestorage\Resource;
-
-/**
- * The "buckets" collection of methods.
- * Typical usage is:
- *  <code>
- *   $firebasestorageService = new Google\Service\Firebasestorage(...);
- *   $buckets = $firebasestorageService->projects_buckets;
- *  </code>
- */
-class ProjectsBuckets extends \Google\Service\Resource
-{
+namespace Google\Service\Firebasestorage\Resource {
+    use Google\Service\Firebasestorage\AddFirebaseRequest;
+    use Google\Service\Firebasestorage\Bucket;
+    use Google\Service\Firebasestorage\FirebasestorageEmpty;
+    use Google\Service\Firebasestorage\ListBucketsResponse;
+    use Google\Service\Firebasestorage\RemoveFirebaseRequest;
     /**
-     * Links a Google Cloud Storage bucket to a Firebase project.
-     * (buckets.addFirebase)
-     *
-     * @param string $bucket Required. Resource name of the bucket, mirrors the ID
-     * of the underlying Google Cloud Storage bucket,
-     * `projects/{project_id_or_number}/buckets/{bucket_id}`.
-     * @param AddFirebaseRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Bucket
-     * @throws \Google\Service\Exception
+     * The "buckets" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $firebasestorageService = new Google\Service\Firebasestorage(...);
+     *   $buckets = $firebasestorageService->projects_buckets;
+     *  </code>
      */
-    public function addFirebase($bucket, AddFirebaseRequest $postBody, $optParams = [])
+    class ProjectsBuckets extends \Google\Service\Resource
     {
+        /**
+         * Links a Google Cloud Storage bucket to a Firebase project.
+         * (buckets.addFirebase)
+         *
+         * @param string $bucket Required. Resource name of the bucket, mirrors the ID
+         * of the underlying Google Cloud Storage bucket,
+         * `projects/{project_id_or_number}/buckets/{bucket_id}`.
+         * @param AddFirebaseRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Bucket
+         * @throws \Google\Service\Exception
+         */
+        public function addFirebase($bucket, AddFirebaseRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets a single linked storage bucket. (buckets.get)
+         *
+         * @param string $name Required. Resource name of the bucket, mirrors the ID of
+         * the underlying Google Cloud Storage bucket,
+         * `projects/{project_id_or_number}/buckets/{bucket_id}`.
+         * @param array $optParams Optional parameters.
+         * @return Bucket
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists the linked storage buckets for a project. (buckets.listProjectsBuckets)
+         *
+         * @param string $parent Required. Resource name of the parent Firebase project,
+         * `projects/{project_id_or_number}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of buckets to return. If not set,
+         * the server will use a reasonable default.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListBuckets` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListBuckets` must match the
+         * call that provided the page token.
+         * @return ListBucketsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsBuckets($parent, $optParams = [])
+        {
+        }
+        /**
+         * Unlinks a linked Google Cloud Storage bucket from a Firebase project.
+         * (buckets.removeFirebase)
+         *
+         * @param string $bucket Required. Resource name of the bucket, mirrors the ID
+         * of the underlying Google Cloud Storage bucket,
+         * `projects/{project_id_or_number}/buckets/{bucket_id}`.
+         * @param RemoveFirebaseRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return FirebasestorageEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function removeFirebase($bucket, RemoveFirebaseRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a single linked storage bucket. (buckets.get)
-     *
-     * @param string $name Required. Resource name of the bucket, mirrors the ID of
-     * the underlying Google Cloud Storage bucket,
-     * `projects/{project_id_or_number}/buckets/{bucket_id}`.
-     * @param array $optParams Optional parameters.
-     * @return Bucket
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Firebasestorage\Resource\ProjectsBuckets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists the linked storage buckets for a project. (buckets.listProjectsBuckets)
-     *
-     * @param string $parent Required. Resource name of the parent Firebase project,
-     * `projects/{project_id_or_number}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of buckets to return. If not set,
-     * the server will use a reasonable default.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListBuckets` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListBuckets` must match the
-     * call that provided the page token.
-     * @return ListBucketsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsBuckets($parent, $optParams = [])
-    {
-    }
-    /**
-     * Unlinks a linked Google Cloud Storage bucket from a Firebase project.
-     * (buckets.removeFirebase)
-     *
-     * @param string $bucket Required. Resource name of the bucket, mirrors the ID
-     * of the underlying Google Cloud Storage bucket,
-     * `projects/{project_id_or_number}/buckets/{bucket_id}`.
-     * @param RemoveFirebaseRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return FirebasestorageEmpty
-     * @throws \Google\Service\Exception
-     */
-    public function removeFirebase($bucket, RemoveFirebaseRequest $postBody, $optParams = [])
+    class Google_Service_Firebasestorage_Resource_ProjectsBuckets extends \Google\Service\Firebasestorage\Resource\ProjectsBuckets
     {
     }
 }

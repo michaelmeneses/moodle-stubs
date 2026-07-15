@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class InventorySourceAccessorsAdvertiserAccessors extends \Google\Collection
-{
-    protected $collection_key = 'advertiserIds';
-    /**
-     * The IDs of the advertisers.
-     *
-     * @var string[]
-     */
-    public $advertiserIds;
-    /**
-     * The IDs of the advertisers.
-     *
-     * @param string[] $advertiserIds
-     */
-    public function setAdvertiserIds($advertiserIds)
+namespace Google\Service\DisplayVideo {
+    class InventorySourceAccessorsAdvertiserAccessors extends \Google\Collection
     {
+        protected $collection_key = 'advertiserIds';
+        /**
+         * The IDs of the advertisers.
+         *
+         * @var string[]
+         */
+        public $advertiserIds;
+        /**
+         * The IDs of the advertisers.
+         *
+         * @param string[] $advertiserIds
+         */
+        public function setAdvertiserIds($advertiserIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAdvertiserIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DisplayVideo\InventorySourceAccessorsAdvertiserAccessors registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvertiserIds()
+    class Google_Service_DisplayVideo_InventorySourceAccessorsAdvertiserAccessors extends \Google\Service\DisplayVideo\InventorySourceAccessorsAdvertiserAccessors
     {
     }
 }

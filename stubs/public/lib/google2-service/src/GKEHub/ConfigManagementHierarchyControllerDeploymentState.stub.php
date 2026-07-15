@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ConfigManagementHierarchyControllerDeploymentState extends \Google\Model
-{
-    /**
-     * Deployment's state cannot be determined.
-     */
-    public const EXTENSION_DEPLOYMENT_STATE_UNSPECIFIED = 'DEPLOYMENT_STATE_UNSPECIFIED';
-    /**
-     * Deployment is not installed.
-     */
-    public const EXTENSION_NOT_INSTALLED = 'NOT_INSTALLED';
-    /**
-     * Deployment is installed.
-     */
-    public const EXTENSION_INSTALLED = 'INSTALLED';
-    /**
-     * Deployment was attempted to be installed, but has errors.
-     */
-    public const EXTENSION_ERROR = 'ERROR';
-    /**
-     * Deployment is installing or terminating
-     */
-    public const EXTENSION_PENDING = 'PENDING';
-    /**
-     * Deployment's state cannot be determined.
-     */
-    public const HNC_DEPLOYMENT_STATE_UNSPECIFIED = 'DEPLOYMENT_STATE_UNSPECIFIED';
-    /**
-     * Deployment is not installed.
-     */
-    public const HNC_NOT_INSTALLED = 'NOT_INSTALLED';
-    /**
-     * Deployment is installed.
-     */
-    public const HNC_INSTALLED = 'INSTALLED';
-    /**
-     * Deployment was attempted to be installed, but has errors.
-     */
-    public const HNC_ERROR = 'ERROR';
-    /**
-     * Deployment is installing or terminating
-     */
-    public const HNC_PENDING = 'PENDING';
-    /**
-     * The deployment state for Hierarchy Controller extension (e.g. v0.7.0-hc.1).
-     *
-     * @var string
-     */
-    public $extension;
-    /**
-     * The deployment state for open source HNC (e.g. v0.7.0-hc.0).
-     *
-     * @var string
-     */
-    public $hnc;
-    /**
-     * The deployment state for Hierarchy Controller extension (e.g. v0.7.0-hc.1).
-     *
-     * Accepted values: DEPLOYMENT_STATE_UNSPECIFIED, NOT_INSTALLED, INSTALLED,
-     * ERROR, PENDING
-     *
-     * @param self::EXTENSION_* $extension
-     */
-    public function setExtension($extension)
+namespace Google\Service\GKEHub {
+    class ConfigManagementHierarchyControllerDeploymentState extends \Google\Model
     {
+        /**
+         * Deployment's state cannot be determined.
+         */
+        public const EXTENSION_DEPLOYMENT_STATE_UNSPECIFIED = 'DEPLOYMENT_STATE_UNSPECIFIED';
+        /**
+         * Deployment is not installed.
+         */
+        public const EXTENSION_NOT_INSTALLED = 'NOT_INSTALLED';
+        /**
+         * Deployment is installed.
+         */
+        public const EXTENSION_INSTALLED = 'INSTALLED';
+        /**
+         * Deployment was attempted to be installed, but has errors.
+         */
+        public const EXTENSION_ERROR = 'ERROR';
+        /**
+         * Deployment is installing or terminating
+         */
+        public const EXTENSION_PENDING = 'PENDING';
+        /**
+         * Deployment's state cannot be determined.
+         */
+        public const HNC_DEPLOYMENT_STATE_UNSPECIFIED = 'DEPLOYMENT_STATE_UNSPECIFIED';
+        /**
+         * Deployment is not installed.
+         */
+        public const HNC_NOT_INSTALLED = 'NOT_INSTALLED';
+        /**
+         * Deployment is installed.
+         */
+        public const HNC_INSTALLED = 'INSTALLED';
+        /**
+         * Deployment was attempted to be installed, but has errors.
+         */
+        public const HNC_ERROR = 'ERROR';
+        /**
+         * Deployment is installing or terminating
+         */
+        public const HNC_PENDING = 'PENDING';
+        /**
+         * The deployment state for Hierarchy Controller extension (e.g. v0.7.0-hc.1).
+         *
+         * @var string
+         */
+        public $extension;
+        /**
+         * The deployment state for open source HNC (e.g. v0.7.0-hc.0).
+         *
+         * @var string
+         */
+        public $hnc;
+        /**
+         * The deployment state for Hierarchy Controller extension (e.g. v0.7.0-hc.1).
+         *
+         * Accepted values: DEPLOYMENT_STATE_UNSPECIFIED, NOT_INSTALLED, INSTALLED,
+         * ERROR, PENDING
+         *
+         * @param self::EXTENSION_* $extension
+         */
+        public function setExtension($extension)
+        {
+        }
+        /**
+         * @return self::EXTENSION_*
+         */
+        public function getExtension()
+        {
+        }
+        /**
+         * The deployment state for open source HNC (e.g. v0.7.0-hc.0).
+         *
+         * Accepted values: DEPLOYMENT_STATE_UNSPECIFIED, NOT_INSTALLED, INSTALLED,
+         * ERROR, PENDING
+         *
+         * @param self::HNC_* $hnc
+         */
+        public function setHnc($hnc)
+        {
+        }
+        /**
+         * @return self::HNC_*
+         */
+        public function getHnc()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::EXTENSION_*
+     * Runtime class alias of \Google\Service\GKEHub\ConfigManagementHierarchyControllerDeploymentState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExtension()
-    {
-    }
-    /**
-     * The deployment state for open source HNC (e.g. v0.7.0-hc.0).
-     *
-     * Accepted values: DEPLOYMENT_STATE_UNSPECIFIED, NOT_INSTALLED, INSTALLED,
-     * ERROR, PENDING
-     *
-     * @param self::HNC_* $hnc
-     */
-    public function setHnc($hnc)
-    {
-    }
-    /**
-     * @return self::HNC_*
-     */
-    public function getHnc()
+    class Google_Service_GKEHub_ConfigManagementHierarchyControllerDeploymentState extends \Google\Service\GKEHub\ConfigManagementHierarchyControllerDeploymentState
     {
     }
 }

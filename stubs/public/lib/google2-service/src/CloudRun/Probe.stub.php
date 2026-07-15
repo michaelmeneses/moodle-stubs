@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class Probe extends \Google\Model
-{
-    protected $execType = ExecAction::class;
-    protected $execDataType = '';
-    /**
-     * @var int
-     */
-    public $failureThreshold;
-    protected $httpGetType = HTTPGetAction::class;
-    protected $httpGetDataType = '';
-    /**
-     * @var int
-     */
-    public $initialDelaySeconds;
-    /**
-     * @var int
-     */
-    public $periodSeconds;
-    /**
-     * @var int
-     */
-    public $successThreshold;
-    protected $tcpSocketType = TCPSocketAction::class;
-    protected $tcpSocketDataType = '';
-    /**
-     * @var int
-     */
-    public $timeoutSeconds;
-    /**
-     * @param ExecAction
-     */
-    public function setExec(ExecAction $exec)
+namespace Google\Service\CloudRun {
+    class Probe extends \Google\Model
     {
+        protected $execType = ExecAction::class;
+        protected $execDataType = '';
+        /**
+         * @var int
+         */
+        public $failureThreshold;
+        protected $httpGetType = HTTPGetAction::class;
+        protected $httpGetDataType = '';
+        /**
+         * @var int
+         */
+        public $initialDelaySeconds;
+        /**
+         * @var int
+         */
+        public $periodSeconds;
+        /**
+         * @var int
+         */
+        public $successThreshold;
+        protected $tcpSocketType = TCPSocketAction::class;
+        protected $tcpSocketDataType = '';
+        /**
+         * @var int
+         */
+        public $timeoutSeconds;
+        /**
+         * @param ExecAction
+         */
+        public function setExec(ExecAction $exec)
+        {
+        }
+        /**
+         * @return ExecAction
+         */
+        public function getExec()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setFailureThreshold($failureThreshold)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFailureThreshold()
+        {
+        }
+        /**
+         * @param HTTPGetAction
+         */
+        public function setHttpGet(HTTPGetAction $httpGet)
+        {
+        }
+        /**
+         * @return HTTPGetAction
+         */
+        public function getHttpGet()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setInitialDelaySeconds($initialDelaySeconds)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getInitialDelaySeconds()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setPeriodSeconds($periodSeconds)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPeriodSeconds()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setSuccessThreshold($successThreshold)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSuccessThreshold()
+        {
+        }
+        /**
+         * @param TCPSocketAction
+         */
+        public function setTcpSocket(TCPSocketAction $tcpSocket)
+        {
+        }
+        /**
+         * @return TCPSocketAction
+         */
+        public function getTcpSocket()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setTimeoutSeconds($timeoutSeconds)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTimeoutSeconds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExecAction
+     * Runtime class alias of \Google\Service\CloudRun\Probe registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExec()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setFailureThreshold($failureThreshold)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFailureThreshold()
-    {
-    }
-    /**
-     * @param HTTPGetAction
-     */
-    public function setHttpGet(HTTPGetAction $httpGet)
-    {
-    }
-    /**
-     * @return HTTPGetAction
-     */
-    public function getHttpGet()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setInitialDelaySeconds($initialDelaySeconds)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getInitialDelaySeconds()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setPeriodSeconds($periodSeconds)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPeriodSeconds()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setSuccessThreshold($successThreshold)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSuccessThreshold()
-    {
-    }
-    /**
-     * @param TCPSocketAction
-     */
-    public function setTcpSocket(TCPSocketAction $tcpSocket)
-    {
-    }
-    /**
-     * @return TCPSocketAction
-     */
-    public function getTcpSocket()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setTimeoutSeconds($timeoutSeconds)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTimeoutSeconds()
+    class Google_Service_CloudRun_Probe extends \Google\Service\CloudRun\Probe
     {
     }
 }

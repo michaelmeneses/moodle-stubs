@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta3EvaluationReference extends \Google\Model
-{
-    protected $aggregateMetricsType = GoogleCloudDocumentaiV1beta3EvaluationMetrics::class;
-    protected $aggregateMetricsDataType = '';
-    protected $aggregateMetricsExactType = GoogleCloudDocumentaiV1beta3EvaluationMetrics::class;
-    protected $aggregateMetricsExactDataType = '';
-    /**
-     * The resource name of the evaluation.
-     *
-     * @var string
-     */
-    public $evaluation;
-    /**
-     * The resource name of the Long Running Operation for the evaluation.
-     *
-     * @var string
-     */
-    public $operation;
-    /**
-     * An aggregate of the statistics for the evaluation with fuzzy matching on.
-     *
-     * @param GoogleCloudDocumentaiV1beta3EvaluationMetrics $aggregateMetrics
-     */
-    public function setAggregateMetrics(GoogleCloudDocumentaiV1beta3EvaluationMetrics $aggregateMetrics)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta3EvaluationReference extends \Google\Model
     {
+        protected $aggregateMetricsType = GoogleCloudDocumentaiV1beta3EvaluationMetrics::class;
+        protected $aggregateMetricsDataType = '';
+        protected $aggregateMetricsExactType = GoogleCloudDocumentaiV1beta3EvaluationMetrics::class;
+        protected $aggregateMetricsExactDataType = '';
+        /**
+         * The resource name of the evaluation.
+         *
+         * @var string
+         */
+        public $evaluation;
+        /**
+         * The resource name of the Long Running Operation for the evaluation.
+         *
+         * @var string
+         */
+        public $operation;
+        /**
+         * An aggregate of the statistics for the evaluation with fuzzy matching on.
+         *
+         * @param GoogleCloudDocumentaiV1beta3EvaluationMetrics $aggregateMetrics
+         */
+        public function setAggregateMetrics(GoogleCloudDocumentaiV1beta3EvaluationMetrics $aggregateMetrics)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta3EvaluationMetrics
+         */
+        public function getAggregateMetrics()
+        {
+        }
+        /**
+         * An aggregate of the statistics for the evaluation with fuzzy matching off.
+         *
+         * @param GoogleCloudDocumentaiV1beta3EvaluationMetrics $aggregateMetricsExact
+         */
+        public function setAggregateMetricsExact(GoogleCloudDocumentaiV1beta3EvaluationMetrics $aggregateMetricsExact)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta3EvaluationMetrics
+         */
+        public function getAggregateMetricsExact()
+        {
+        }
+        /**
+         * The resource name of the evaluation.
+         *
+         * @param string $evaluation
+         */
+        public function setEvaluation($evaluation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEvaluation()
+        {
+        }
+        /**
+         * The resource name of the Long Running Operation for the evaluation.
+         *
+         * @param string $operation
+         */
+        public function setOperation($operation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1beta3EvaluationMetrics
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta3EvaluationReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAggregateMetrics()
-    {
-    }
-    /**
-     * An aggregate of the statistics for the evaluation with fuzzy matching off.
-     *
-     * @param GoogleCloudDocumentaiV1beta3EvaluationMetrics $aggregateMetricsExact
-     */
-    public function setAggregateMetricsExact(GoogleCloudDocumentaiV1beta3EvaluationMetrics $aggregateMetricsExact)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta3EvaluationMetrics
-     */
-    public function getAggregateMetricsExact()
-    {
-    }
-    /**
-     * The resource name of the evaluation.
-     *
-     * @param string $evaluation
-     */
-    public function setEvaluation($evaluation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEvaluation()
-    {
-    }
-    /**
-     * The resource name of the Long Running Operation for the evaluation.
-     *
-     * @param string $operation
-     */
-    public function setOperation($operation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperation()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta3EvaluationReference extends \Google\Service\Document\GoogleCloudDocumentaiV1beta3EvaluationReference
     {
     }
 }

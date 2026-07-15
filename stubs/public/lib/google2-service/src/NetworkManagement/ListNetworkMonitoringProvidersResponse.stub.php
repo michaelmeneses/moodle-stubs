@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class ListNetworkMonitoringProvidersResponse extends \Google\Collection
-{
-    protected $collection_key = 'networkMonitoringProviders';
-    protected $networkMonitoringProvidersType = NetworkMonitoringProvider::class;
-    protected $networkMonitoringProvidersDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param NetworkMonitoringProvider[]
-     */
-    public function setNetworkMonitoringProviders($networkMonitoringProviders)
+namespace Google\Service\NetworkManagement {
+    class ListNetworkMonitoringProvidersResponse extends \Google\Collection
     {
+        protected $collection_key = 'networkMonitoringProviders';
+        protected $networkMonitoringProvidersType = NetworkMonitoringProvider::class;
+        protected $networkMonitoringProvidersDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param NetworkMonitoringProvider[]
+         */
+        public function setNetworkMonitoringProviders($networkMonitoringProviders)
+        {
+        }
+        /**
+         * @return NetworkMonitoringProvider[]
+         */
+        public function getNetworkMonitoringProviders()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NetworkMonitoringProvider[]
+     * Runtime class alias of \Google\Service\NetworkManagement\ListNetworkMonitoringProvidersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkMonitoringProviders()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_NetworkManagement_ListNetworkMonitoringProvidersResponse extends \Google\Service\NetworkManagement\ListNetworkMonitoringProvidersResponse
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class ImageProperties extends \Google\Model
-{
-    protected $dominantColorsType = DominantColorsAnnotation::class;
-    protected $dominantColorsDataType = '';
-    /**
-     * If present, dominant colors completed successfully.
-     *
-     * @param DominantColorsAnnotation $dominantColors
-     */
-    public function setDominantColors(DominantColorsAnnotation $dominantColors)
+namespace Google\Service\Vision {
+    class ImageProperties extends \Google\Model
     {
+        protected $dominantColorsType = DominantColorsAnnotation::class;
+        protected $dominantColorsDataType = '';
+        /**
+         * If present, dominant colors completed successfully.
+         *
+         * @param DominantColorsAnnotation $dominantColors
+         */
+        public function setDominantColors(DominantColorsAnnotation $dominantColors)
+        {
+        }
+        /**
+         * @return DominantColorsAnnotation
+         */
+        public function getDominantColors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DominantColorsAnnotation
+     * Runtime class alias of \Google\Service\Vision\ImageProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDominantColors()
+    class Google_Service_Vision_ImageProperties extends \Google\Service\Vision\ImageProperties
     {
     }
 }

@@ -8,6 +8,7 @@
  */
 namespace DI\Definition;
 
+use DI\Definition\Exception\InvalidDefinition;
 /**
  * Extends an array definition by adding new elements into it.
  *

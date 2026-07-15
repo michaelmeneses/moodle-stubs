@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CCAIPlatform;
-
-class AuthenticationConfig extends \Google\Model
-{
-    protected $basicAuthSettingType = BasicAuthConfig::class;
-    protected $basicAuthSettingDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    protected $samlSettingType = SamlConfig::class;
-    protected $samlSettingDataType = '';
-    /**
-     * @param BasicAuthConfig
-     */
-    public function setBasicAuthSetting(BasicAuthConfig $basicAuthSetting)
+namespace Google\Service\CCAIPlatform {
+    class AuthenticationConfig extends \Google\Model
     {
+        protected $basicAuthSettingType = BasicAuthConfig::class;
+        protected $basicAuthSettingDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        protected $samlSettingType = SamlConfig::class;
+        protected $samlSettingDataType = '';
+        /**
+         * @param BasicAuthConfig
+         */
+        public function setBasicAuthSetting(BasicAuthConfig $basicAuthSetting)
+        {
+        }
+        /**
+         * @return BasicAuthConfig
+         */
+        public function getBasicAuthSetting()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param SamlConfig
+         */
+        public function setSamlSetting(SamlConfig $samlSetting)
+        {
+        }
+        /**
+         * @return SamlConfig
+         */
+        public function getSamlSetting()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BasicAuthConfig
+     * Runtime class alias of \Google\Service\CCAIPlatform\AuthenticationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBasicAuthSetting()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param SamlConfig
-     */
-    public function setSamlSetting(SamlConfig $samlSetting)
-    {
-    }
-    /**
-     * @return SamlConfig
-     */
-    public function getSamlSetting()
+    class Google_Service_CCAIPlatform_AuthenticationConfig extends \Google\Service\CCAIPlatform\AuthenticationConfig
     {
     }
 }

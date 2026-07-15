@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ClusterUpgradeMembershipGKEUpgradeState extends \Google\Model
-{
-    protected $statusType = ClusterUpgradeUpgradeStatus::class;
-    protected $statusDataType = '';
-    protected $upgradeType = ClusterUpgradeGKEUpgrade::class;
-    protected $upgradeDataType = '';
-    /**
-     * Status of the upgrade.
-     *
-     * @param ClusterUpgradeUpgradeStatus $status
-     */
-    public function setStatus(ClusterUpgradeUpgradeStatus $status)
+namespace Google\Service\GKEHub {
+    class ClusterUpgradeMembershipGKEUpgradeState extends \Google\Model
     {
+        protected $statusType = ClusterUpgradeUpgradeStatus::class;
+        protected $statusDataType = '';
+        protected $upgradeType = ClusterUpgradeGKEUpgrade::class;
+        protected $upgradeDataType = '';
+        /**
+         * Status of the upgrade.
+         *
+         * @param ClusterUpgradeUpgradeStatus $status
+         */
+        public function setStatus(ClusterUpgradeUpgradeStatus $status)
+        {
+        }
+        /**
+         * @return ClusterUpgradeUpgradeStatus
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Which upgrade to track the state.
+         *
+         * @param ClusterUpgradeGKEUpgrade $upgrade
+         */
+        public function setUpgrade(ClusterUpgradeGKEUpgrade $upgrade)
+        {
+        }
+        /**
+         * @return ClusterUpgradeGKEUpgrade
+         */
+        public function getUpgrade()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClusterUpgradeUpgradeStatus
+     * Runtime class alias of \Google\Service\GKEHub\ClusterUpgradeMembershipGKEUpgradeState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStatus()
-    {
-    }
-    /**
-     * Which upgrade to track the state.
-     *
-     * @param ClusterUpgradeGKEUpgrade $upgrade
-     */
-    public function setUpgrade(ClusterUpgradeGKEUpgrade $upgrade)
-    {
-    }
-    /**
-     * @return ClusterUpgradeGKEUpgrade
-     */
-    public function getUpgrade()
+    class Google_Service_GKEHub_ClusterUpgradeMembershipGKEUpgradeState extends \Google\Service\GKEHub\ClusterUpgradeMembershipGKEUpgradeState
     {
     }
 }

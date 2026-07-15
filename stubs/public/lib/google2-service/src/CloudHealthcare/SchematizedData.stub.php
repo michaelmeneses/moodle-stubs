@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class SchematizedData extends \Google\Model
-{
-    /**
-     * JSON output of the parser.
-     *
-     * @var string
-     */
-    public $data;
-    /**
-     * The error output of the parser.
-     *
-     * @var string
-     */
-    public $error;
-    /**
-     * JSON output of the parser.
-     *
-     * @param string $data
-     */
-    public function setData($data)
+namespace Google\Service\CloudHealthcare {
+    class SchematizedData extends \Google\Model
     {
+        /**
+         * JSON output of the parser.
+         *
+         * @var string
+         */
+        public $data;
+        /**
+         * The error output of the parser.
+         *
+         * @var string
+         */
+        public $error;
+        /**
+         * JSON output of the parser.
+         *
+         * @param string $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getData()
+        {
+        }
+        /**
+         * The error output of the parser.
+         *
+         * @param string $error
+         */
+        public function setError($error)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getError()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\SchematizedData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
-    {
-    }
-    /**
-     * The error output of the parser.
-     *
-     * @param string $error
-     */
-    public function setError($error)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getError()
+    class Google_Service_CloudHealthcare_SchematizedData extends \Google\Service\CloudHealthcare\SchematizedData
     {
     }
 }

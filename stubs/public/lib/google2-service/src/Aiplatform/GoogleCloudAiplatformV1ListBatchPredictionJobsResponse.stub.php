@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListBatchPredictionJobsResponse extends \Google\Collection
-{
-    protected $collection_key = 'batchPredictionJobs';
-    protected $batchPredictionJobsType = GoogleCloudAiplatformV1BatchPredictionJob::class;
-    protected $batchPredictionJobsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListBatchPredictionJobsRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of BatchPredictionJobs in the requested page.
-     *
-     * @param GoogleCloudAiplatformV1BatchPredictionJob[] $batchPredictionJobs
-     */
-    public function setBatchPredictionJobs($batchPredictionJobs)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListBatchPredictionJobsResponse extends \Google\Collection
     {
+        protected $collection_key = 'batchPredictionJobs';
+        protected $batchPredictionJobsType = GoogleCloudAiplatformV1BatchPredictionJob::class;
+        protected $batchPredictionJobsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListBatchPredictionJobsRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of BatchPredictionJobs in the requested page.
+         *
+         * @param GoogleCloudAiplatformV1BatchPredictionJob[] $batchPredictionJobs
+         */
+        public function setBatchPredictionJobs($batchPredictionJobs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1BatchPredictionJob[]
+         */
+        public function getBatchPredictionJobs()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListBatchPredictionJobsRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1BatchPredictionJob[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListBatchPredictionJobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBatchPredictionJobs()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListBatchPredictionJobsRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListBatchPredictionJobsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListBatchPredictionJobsResponse
     {
     }
 }

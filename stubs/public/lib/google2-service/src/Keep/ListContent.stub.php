@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Keep;
-
-class ListContent extends \Google\Collection
-{
-    protected $collection_key = 'listItems';
-    protected $listItemsType = ListItem::class;
-    protected $listItemsDataType = 'array';
-    /**
-     * The items in the list. The number of items must be less than 1,000.
-     *
-     * @param ListItem[] $listItems
-     */
-    public function setListItems($listItems)
+namespace Google\Service\Keep {
+    class ListContent extends \Google\Collection
     {
+        protected $collection_key = 'listItems';
+        protected $listItemsType = ListItem::class;
+        protected $listItemsDataType = 'array';
+        /**
+         * The items in the list. The number of items must be less than 1,000.
+         *
+         * @param ListItem[] $listItems
+         */
+        public function setListItems($listItems)
+        {
+        }
+        /**
+         * @return ListItem[]
+         */
+        public function getListItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ListItem[]
+     * Runtime class alias of \Google\Service\Keep\ListContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getListItems()
+    class Google_Service_Keep_ListContent extends \Google\Service\Keep\ListContent
     {
     }
 }

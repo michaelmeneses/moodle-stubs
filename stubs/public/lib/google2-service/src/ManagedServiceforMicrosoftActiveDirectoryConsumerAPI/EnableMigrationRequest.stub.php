@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI;
-
-class EnableMigrationRequest extends \Google\Collection
-{
-    protected $collection_key = 'migratingDomains';
-    protected $migratingDomainsType = OnPremDomainDetails::class;
-    protected $migratingDomainsDataType = 'array';
-    /**
-     * Required. List of the on-prem domains to be migrated.
-     *
-     * @param OnPremDomainDetails[] $migratingDomains
-     */
-    public function setMigratingDomains($migratingDomains)
+namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI {
+    class EnableMigrationRequest extends \Google\Collection
     {
+        protected $collection_key = 'migratingDomains';
+        protected $migratingDomainsType = OnPremDomainDetails::class;
+        protected $migratingDomainsDataType = 'array';
+        /**
+         * Required. List of the on-prem domains to be migrated.
+         *
+         * @param OnPremDomainDetails[] $migratingDomains
+         */
+        public function setMigratingDomains($migratingDomains)
+        {
+        }
+        /**
+         * @return OnPremDomainDetails[]
+         */
+        public function getMigratingDomains()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OnPremDomainDetails[]
+     * Runtime class alias of \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\EnableMigrationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMigratingDomains()
+    class Google_Service_ManagedServiceforMicrosoftActiveDirectoryConsumerAPI_EnableMigrationRequest extends \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\EnableMigrationRequest
     {
     }
 }

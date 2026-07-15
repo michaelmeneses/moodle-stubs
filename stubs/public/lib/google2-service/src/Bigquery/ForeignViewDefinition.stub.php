@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ForeignViewDefinition extends \Google\Model
-{
-    /**
-     * Optional. Represents the dialect of the query.
-     *
-     * @var string
-     */
-    public $dialect;
-    /**
-     * Required. The query that defines the view.
-     *
-     * @var string
-     */
-    public $query;
-    /**
-     * Optional. Represents the dialect of the query.
-     *
-     * @param string $dialect
-     */
-    public function setDialect($dialect)
+namespace Google\Service\Bigquery {
+    class ForeignViewDefinition extends \Google\Model
     {
+        /**
+         * Optional. Represents the dialect of the query.
+         *
+         * @var string
+         */
+        public $dialect;
+        /**
+         * Required. The query that defines the view.
+         *
+         * @var string
+         */
+        public $query;
+        /**
+         * Optional. Represents the dialect of the query.
+         *
+         * @param string $dialect
+         */
+        public function setDialect($dialect)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDialect()
+        {
+        }
+        /**
+         * Required. The query that defines the view.
+         *
+         * @param string $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\ForeignViewDefinition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDialect()
-    {
-    }
-    /**
-     * Required. The query that defines the view.
-     *
-     * @param string $query
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuery()
+    class Google_Service_Bigquery_ForeignViewDefinition extends \Google\Service\Bigquery\ForeignViewDefinition
     {
     }
 }

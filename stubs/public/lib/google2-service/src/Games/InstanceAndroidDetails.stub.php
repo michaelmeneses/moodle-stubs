@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class InstanceAndroidDetails extends \Google\Model
-{
-    /**
-     * Flag indicating whether the anti-piracy check is enabled.
-     *
-     * @var bool
-     */
-    public $enablePiracyCheck;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#instanceAndroidDetails`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Android package name which maps to Google Play URL.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * Indicates that this instance is the default for new installations.
-     *
-     * @var bool
-     */
-    public $preferred;
-    /**
-     * Flag indicating whether the anti-piracy check is enabled.
-     *
-     * @param bool $enablePiracyCheck
-     */
-    public function setEnablePiracyCheck($enablePiracyCheck)
+namespace Google\Service\Games {
+    class InstanceAndroidDetails extends \Google\Model
     {
+        /**
+         * Flag indicating whether the anti-piracy check is enabled.
+         *
+         * @var bool
+         */
+        public $enablePiracyCheck;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#instanceAndroidDetails`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Android package name which maps to Google Play URL.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * Indicates that this instance is the default for new installations.
+         *
+         * @var bool
+         */
+        public $preferred;
+        /**
+         * Flag indicating whether the anti-piracy check is enabled.
+         *
+         * @param bool $enablePiracyCheck
+         */
+        public function setEnablePiracyCheck($enablePiracyCheck)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnablePiracyCheck()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#instanceAndroidDetails`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Android package name which maps to Google Play URL.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
+        /**
+         * Indicates that this instance is the default for new installations.
+         *
+         * @param bool $preferred
+         */
+        public function setPreferred($preferred)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPreferred()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Games\InstanceAndroidDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnablePiracyCheck()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#instanceAndroidDetails`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Android package name which maps to Google Play URL.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
-    {
-    }
-    /**
-     * Indicates that this instance is the default for new installations.
-     *
-     * @param bool $preferred
-     */
-    public function setPreferred($preferred)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPreferred()
+    class Google_Service_Games_InstanceAndroidDetails extends \Google\Service\Games\InstanceAndroidDetails
     {
     }
 }

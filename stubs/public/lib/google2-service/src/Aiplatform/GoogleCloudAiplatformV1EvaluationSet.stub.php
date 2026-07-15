@@ -21,131 +21,140 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EvaluationSet extends \Google\Collection
-{
-    protected $collection_key = 'evaluationItems';
-    /**
-     * Output only. Timestamp when this item was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Required. The display name of the EvaluationSet.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Required. The EvaluationItems that are part of this dataset.
-     *
-     * @var string[]
-     */
-    public $evaluationItems;
-    /**
-     * Optional. Metadata for the EvaluationSet.
-     *
-     * @var array
-     */
-    public $metadata;
-    /**
-     * Identifier. The resource name of the EvaluationSet. Format:
-     * `projects/{project}/locations/{location}/evaluationSets/{evaluation_set}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Timestamp when this item was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Timestamp when this item was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EvaluationSet extends \Google\Collection
     {
+        protected $collection_key = 'evaluationItems';
+        /**
+         * Output only. Timestamp when this item was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Required. The display name of the EvaluationSet.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Required. The EvaluationItems that are part of this dataset.
+         *
+         * @var string[]
+         */
+        public $evaluationItems;
+        /**
+         * Optional. Metadata for the EvaluationSet.
+         *
+         * @var array
+         */
+        public $metadata;
+        /**
+         * Identifier. The resource name of the EvaluationSet. Format:
+         * `projects/{project}/locations/{location}/evaluationSets/{evaluation_set}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Timestamp when this item was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Timestamp when this item was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Required. The display name of the EvaluationSet.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Required. The EvaluationItems that are part of this dataset.
+         *
+         * @param string[] $evaluationItems
+         */
+        public function setEvaluationItems($evaluationItems)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEvaluationItems()
+        {
+        }
+        /**
+         * Optional. Metadata for the EvaluationSet.
+         *
+         * @param array $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Identifier. The resource name of the EvaluationSet. Format:
+         * `projects/{project}/locations/{location}/evaluationSets/{evaluation_set}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Timestamp when this item was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Required. The display name of the EvaluationSet.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Required. The EvaluationItems that are part of this dataset.
-     *
-     * @param string[] $evaluationItems
-     */
-    public function setEvaluationItems($evaluationItems)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEvaluationItems()
-    {
-    }
-    /**
-     * Optional. Metadata for the EvaluationSet.
-     *
-     * @param array $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Identifier. The resource name of the EvaluationSet. Format:
-     * `projects/{project}/locations/{location}/evaluationSets/{evaluation_set}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Timestamp when this item was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EvaluationSet extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationSet
     {
     }
 }

@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1AssetDiscoverySpecCsvOptions extends \Google\Model
-{
-    /**
-     * Optional. The delimiter being used to separate values. This defaults to
-     * ','.
-     *
-     * @var string
-     */
-    public $delimiter;
-    /**
-     * Optional. Whether to disable the inference of data type for CSV data. If
-     * true, all columns will be registered as strings.
-     *
-     * @var bool
-     */
-    public $disableTypeInference;
-    /**
-     * Optional. The character encoding of the data. The default is UTF-8.
-     *
-     * @var string
-     */
-    public $encoding;
-    /**
-     * Optional. The number of rows to interpret as header rows that should be
-     * skipped when reading data rows.
-     *
-     * @var int
-     */
-    public $headerRows;
-    /**
-     * Optional. The delimiter being used to separate values. This defaults to
-     * ','.
-     *
-     * @param string $delimiter
-     */
-    public function setDelimiter($delimiter)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1AssetDiscoverySpecCsvOptions extends \Google\Model
     {
+        /**
+         * Optional. The delimiter being used to separate values. This defaults to
+         * ','.
+         *
+         * @var string
+         */
+        public $delimiter;
+        /**
+         * Optional. Whether to disable the inference of data type for CSV data. If
+         * true, all columns will be registered as strings.
+         *
+         * @var bool
+         */
+        public $disableTypeInference;
+        /**
+         * Optional. The character encoding of the data. The default is UTF-8.
+         *
+         * @var string
+         */
+        public $encoding;
+        /**
+         * Optional. The number of rows to interpret as header rows that should be
+         * skipped when reading data rows.
+         *
+         * @var int
+         */
+        public $headerRows;
+        /**
+         * Optional. The delimiter being used to separate values. This defaults to
+         * ','.
+         *
+         * @param string $delimiter
+         */
+        public function setDelimiter($delimiter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDelimiter()
+        {
+        }
+        /**
+         * Optional. Whether to disable the inference of data type for CSV data. If
+         * true, all columns will be registered as strings.
+         *
+         * @param bool $disableTypeInference
+         */
+        public function setDisableTypeInference($disableTypeInference)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableTypeInference()
+        {
+        }
+        /**
+         * Optional. The character encoding of the data. The default is UTF-8.
+         *
+         * @param string $encoding
+         */
+        public function setEncoding($encoding)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncoding()
+        {
+        }
+        /**
+         * Optional. The number of rows to interpret as header rows that should be
+         * skipped when reading data rows.
+         *
+         * @param int $headerRows
+         */
+        public function setHeaderRows($headerRows)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeaderRows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1AssetDiscoverySpecCsvOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDelimiter()
-    {
-    }
-    /**
-     * Optional. Whether to disable the inference of data type for CSV data. If
-     * true, all columns will be registered as strings.
-     *
-     * @param bool $disableTypeInference
-     */
-    public function setDisableTypeInference($disableTypeInference)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisableTypeInference()
-    {
-    }
-    /**
-     * Optional. The character encoding of the data. The default is UTF-8.
-     *
-     * @param string $encoding
-     */
-    public function setEncoding($encoding)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEncoding()
-    {
-    }
-    /**
-     * Optional. The number of rows to interpret as header rows that should be
-     * skipped when reading data rows.
-     *
-     * @param int $headerRows
-     */
-    public function setHeaderRows($headerRows)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHeaderRows()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1AssetDiscoverySpecCsvOptions extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1AssetDiscoverySpecCsvOptions
     {
     }
 }

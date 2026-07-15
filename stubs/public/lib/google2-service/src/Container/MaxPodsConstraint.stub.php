@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class MaxPodsConstraint extends \Google\Model
-{
-    /**
-     * Constraint enforced on the max num of pods per node.
-     *
-     * @var string
-     */
-    public $maxPodsPerNode;
-    /**
-     * Constraint enforced on the max num of pods per node.
-     *
-     * @param string $maxPodsPerNode
-     */
-    public function setMaxPodsPerNode($maxPodsPerNode)
+namespace Google\Service\Container {
+    class MaxPodsConstraint extends \Google\Model
     {
+        /**
+         * Constraint enforced on the max num of pods per node.
+         *
+         * @var string
+         */
+        public $maxPodsPerNode;
+        /**
+         * Constraint enforced on the max num of pods per node.
+         *
+         * @param string $maxPodsPerNode
+         */
+        public function setMaxPodsPerNode($maxPodsPerNode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxPodsPerNode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\MaxPodsConstraint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxPodsPerNode()
+    class Google_Service_Container_MaxPodsConstraint extends \Google\Service\Container\MaxPodsConstraint
     {
     }
 }

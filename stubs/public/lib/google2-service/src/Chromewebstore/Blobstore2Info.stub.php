@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Chromewebstore;
-
-class Blobstore2Info extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $blobGeneration;
-    /**
-     * @var string
-     */
-    public $blobId;
-    /**
-     * @var string
-     */
-    public $downloadReadHandle;
-    /**
-     * @var string
-     */
-    public $readToken;
-    /**
-     * @var string
-     */
-    public $uploadMetadataContainer;
-    /**
-     * @param string
-     */
-    public function setBlobGeneration($blobGeneration)
+namespace Google\Service\Chromewebstore {
+    class Blobstore2Info extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $blobGeneration;
+        /**
+         * @var string
+         */
+        public $blobId;
+        /**
+         * @var string
+         */
+        public $downloadReadHandle;
+        /**
+         * @var string
+         */
+        public $readToken;
+        /**
+         * @var string
+         */
+        public $uploadMetadataContainer;
+        /**
+         * @param string
+         */
+        public function setBlobGeneration($blobGeneration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBlobGeneration()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBlobId($blobId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBlobId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDownloadReadHandle($downloadReadHandle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDownloadReadHandle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReadToken($readToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadToken()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUploadMetadataContainer($uploadMetadataContainer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUploadMetadataContainer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Chromewebstore\Blobstore2Info registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlobGeneration()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBlobId($blobId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBlobId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDownloadReadHandle($downloadReadHandle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDownloadReadHandle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReadToken($readToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadToken()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUploadMetadataContainer($uploadMetadataContainer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUploadMetadataContainer()
+    class Google_Service_Chromewebstore_Blobstore2Info extends \Google\Service\Chromewebstore\Blobstore2Info
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Ideahub;
-
-class GoogleSearchIdeahubV1betaListAvailableLocalesResponse extends \Google\Collection
-{
-    protected $collection_key = 'availableLocales';
-    protected $availableLocalesType = GoogleSearchIdeahubV1betaAvailableLocale::class;
-    protected $availableLocalesDataType = 'array';
-    public $availableLocales;
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param GoogleSearchIdeahubV1betaAvailableLocale[]
-     */
-    public function setAvailableLocales($availableLocales)
+namespace Google\Service\Ideahub {
+    class GoogleSearchIdeahubV1betaListAvailableLocalesResponse extends \Google\Collection
     {
+        protected $collection_key = 'availableLocales';
+        protected $availableLocalesType = GoogleSearchIdeahubV1betaAvailableLocale::class;
+        protected $availableLocalesDataType = 'array';
+        public $availableLocales;
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param GoogleSearchIdeahubV1betaAvailableLocale[]
+         */
+        public function setAvailableLocales($availableLocales)
+        {
+        }
+        /**
+         * @return GoogleSearchIdeahubV1betaAvailableLocale[]
+         */
+        public function getAvailableLocales()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleSearchIdeahubV1betaAvailableLocale[]
+     * Runtime class alias of \Google\Service\Ideahub\GoogleSearchIdeahubV1betaListAvailableLocalesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailableLocales()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Ideahub_GoogleSearchIdeahubV1betaListAvailableLocalesResponse extends \Google\Service\Ideahub\GoogleSearchIdeahubV1betaListAvailableLocalesResponse
     {
     }
 }

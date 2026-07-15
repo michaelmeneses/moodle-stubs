@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2Action extends \Google\Model
-{
-    protected $commandDigestType = BuildBazelRemoteExecutionV2Digest::class;
-    protected $commandDigestDataType = '';
-    public $doNotCache;
-    protected $inputRootDigestType = BuildBazelRemoteExecutionV2Digest::class;
-    protected $inputRootDigestDataType = '';
-    protected $platformType = BuildBazelRemoteExecutionV2Platform::class;
-    protected $platformDataType = '';
-    public $salt;
-    public $timeout;
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2Action extends \Google\Model
+    {
+        protected $commandDigestType = BuildBazelRemoteExecutionV2Digest::class;
+        protected $commandDigestDataType = '';
+        public $doNotCache;
+        protected $inputRootDigestType = BuildBazelRemoteExecutionV2Digest::class;
+        protected $inputRootDigestDataType = '';
+        protected $platformType = BuildBazelRemoteExecutionV2Platform::class;
+        protected $platformDataType = '';
+        public $salt;
+        public $timeout;
+        /**
+         * @param BuildBazelRemoteExecutionV2Digest
+         */
+        public function setCommandDigest(BuildBazelRemoteExecutionV2Digest $commandDigest)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2Digest
+         */
+        public function getCommandDigest()
+        {
+        }
+        public function setDoNotCache($doNotCache)
+        {
+        }
+        public function getDoNotCache()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2Digest
+         */
+        public function setInputRootDigest(BuildBazelRemoteExecutionV2Digest $inputRootDigest)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2Digest
+         */
+        public function getInputRootDigest()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2Platform
+         */
+        public function setPlatform(BuildBazelRemoteExecutionV2Platform $platform)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2Platform
+         */
+        public function getPlatform()
+        {
+        }
+        public function setSalt($salt)
+        {
+        }
+        public function getSalt()
+        {
+        }
+        public function setTimeout($timeout)
+        {
+        }
+        public function getTimeout()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param BuildBazelRemoteExecutionV2Digest
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2Action registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setCommandDigest(BuildBazelRemoteExecutionV2Digest $commandDigest)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2Digest
-     */
-    public function getCommandDigest()
-    {
-    }
-    public function setDoNotCache($doNotCache)
-    {
-    }
-    public function getDoNotCache()
-    {
-    }
-    /**
-     * @param BuildBazelRemoteExecutionV2Digest
-     */
-    public function setInputRootDigest(BuildBazelRemoteExecutionV2Digest $inputRootDigest)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2Digest
-     */
-    public function getInputRootDigest()
-    {
-    }
-    /**
-     * @param BuildBazelRemoteExecutionV2Platform
-     */
-    public function setPlatform(BuildBazelRemoteExecutionV2Platform $platform)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2Platform
-     */
-    public function getPlatform()
-    {
-    }
-    public function setSalt($salt)
-    {
-    }
-    public function getSalt()
-    {
-    }
-    public function setTimeout($timeout)
-    {
-    }
-    public function getTimeout()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2Action extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2Action
     {
     }
 }

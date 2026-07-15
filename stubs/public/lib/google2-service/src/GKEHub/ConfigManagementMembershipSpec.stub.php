@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ConfigManagementMembershipSpec extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $cluster;
-    protected $configSyncType = ConfigManagementConfigSync::class;
-    protected $configSyncDataType = '';
-    protected $hierarchyControllerType = ConfigManagementHierarchyControllerConfig::class;
-    protected $hierarchyControllerDataType = '';
-    /**
-     * @var string
-     */
-    public $management;
-    protected $policyControllerType = ConfigManagementPolicyController::class;
-    protected $policyControllerDataType = '';
-    /**
-     * @var string
-     */
-    public $version;
-    /**
-     * @param string
-     */
-    public function setCluster($cluster)
+namespace Google\Service\GKEHub {
+    class ConfigManagementMembershipSpec extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $cluster;
+        protected $configSyncType = ConfigManagementConfigSync::class;
+        protected $configSyncDataType = '';
+        protected $hierarchyControllerType = ConfigManagementHierarchyControllerConfig::class;
+        protected $hierarchyControllerDataType = '';
+        /**
+         * @var string
+         */
+        public $management;
+        protected $policyControllerType = ConfigManagementPolicyController::class;
+        protected $policyControllerDataType = '';
+        /**
+         * @var string
+         */
+        public $version;
+        /**
+         * @param string
+         */
+        public function setCluster($cluster)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCluster()
+        {
+        }
+        /**
+         * @param ConfigManagementConfigSync
+         */
+        public function setConfigSync(ConfigManagementConfigSync $configSync)
+        {
+        }
+        /**
+         * @return ConfigManagementConfigSync
+         */
+        public function getConfigSync()
+        {
+        }
+        /**
+         * @param ConfigManagementHierarchyControllerConfig
+         */
+        public function setHierarchyController(ConfigManagementHierarchyControllerConfig $hierarchyController)
+        {
+        }
+        /**
+         * @return ConfigManagementHierarchyControllerConfig
+         */
+        public function getHierarchyController()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setManagement($management)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getManagement()
+        {
+        }
+        /**
+         * @param ConfigManagementPolicyController
+         */
+        public function setPolicyController(ConfigManagementPolicyController $policyController)
+        {
+        }
+        /**
+         * @return ConfigManagementPolicyController
+         */
+        public function getPolicyController()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\ConfigManagementMembershipSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCluster()
-    {
-    }
-    /**
-     * @param ConfigManagementConfigSync
-     */
-    public function setConfigSync(ConfigManagementConfigSync $configSync)
-    {
-    }
-    /**
-     * @return ConfigManagementConfigSync
-     */
-    public function getConfigSync()
-    {
-    }
-    /**
-     * @param ConfigManagementHierarchyControllerConfig
-     */
-    public function setHierarchyController(ConfigManagementHierarchyControllerConfig $hierarchyController)
-    {
-    }
-    /**
-     * @return ConfigManagementHierarchyControllerConfig
-     */
-    public function getHierarchyController()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setManagement($management)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getManagement()
-    {
-    }
-    /**
-     * @param ConfigManagementPolicyController
-     */
-    public function setPolicyController(ConfigManagementPolicyController $policyController)
-    {
-    }
-    /**
-     * @return ConfigManagementPolicyController
-     */
-    public function getPolicyController()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_GKEHub_ConfigManagementMembershipSpec extends \Google\Service\GKEHub\ConfigManagementMembershipSpec
     {
     }
 }

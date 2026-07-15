@@ -21,144 +21,153 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class PoiAssignedTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * Type value is not specified or is unknown in this version.
-     */
-    public const PROXIMITY_RADIUS_UNIT_DISTANCE_UNIT_UNSPECIFIED = 'DISTANCE_UNIT_UNSPECIFIED';
-    /**
-     * Miles.
-     */
-    public const PROXIMITY_RADIUS_UNIT_DISTANCE_UNIT_MILES = 'DISTANCE_UNIT_MILES';
-    /**
-     * Kilometers.
-     */
-    public const PROXIMITY_RADIUS_UNIT_DISTANCE_UNIT_KILOMETERS = 'DISTANCE_UNIT_KILOMETERS';
-    /**
-     * Output only. The display name of a POI, e.g. "Times Square", "Space
-     * Needle", followed by its full address if available.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. Latitude of the POI rounding to 6th decimal place.
-     *
-     * @var 
-     */
-    public $latitude;
-    /**
-     * Output only. Longitude of the POI rounding to 6th decimal place.
-     *
-     * @var 
-     */
-    public $longitude;
-    /**
-     * Required. The radius of the area around the POI that will be targeted. The
-     * units of the radius are specified by proximity_radius_unit. Must be 1 to
-     * 800 if unit is `DISTANCE_UNIT_KILOMETERS` and 1 to 500 if unit is
-     * `DISTANCE_UNIT_MILES`.
-     *
-     * @var 
-     */
-    public $proximityRadiusAmount;
-    /**
-     * Required. The unit of distance by which the targeting radius is measured.
-     *
-     * @var string
-     */
-    public $proximityRadiusUnit;
-    /**
-     * Required. The targeting_option_id of a TargetingOption of type
-     * `TARGETING_TYPE_POI`. Accepted POI targeting option IDs can be retrieved
-     * using `targetingTypes.targetingOptions.search`. If targeting a specific
-     * latitude/longitude coordinate removed from an address or POI name, you can
-     * generate the necessary targeting option ID by rounding the desired
-     * coordinate values to the 6th decimal place, removing the decimals, and
-     * concatenating the string values separated by a semicolon. For example, you
-     * can target the latitude/longitude pair of 40.7414691, -74.003387 using the
-     * targeting option ID "40741469;-74003387". **Upon** **creation, this field
-     * value will be updated to append a semicolon and** **alphanumerical hash
-     * value if only latitude/longitude coordinates are** **provided.**
-     *
-     * @var string
-     */
-    public $targetingOptionId;
-    /**
-     * Output only. The display name of a POI, e.g. "Times Square", "Space
-     * Needle", followed by its full address if available.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\DisplayVideo {
+    class PoiAssignedTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * Type value is not specified or is unknown in this version.
+         */
+        public const PROXIMITY_RADIUS_UNIT_DISTANCE_UNIT_UNSPECIFIED = 'DISTANCE_UNIT_UNSPECIFIED';
+        /**
+         * Miles.
+         */
+        public const PROXIMITY_RADIUS_UNIT_DISTANCE_UNIT_MILES = 'DISTANCE_UNIT_MILES';
+        /**
+         * Kilometers.
+         */
+        public const PROXIMITY_RADIUS_UNIT_DISTANCE_UNIT_KILOMETERS = 'DISTANCE_UNIT_KILOMETERS';
+        /**
+         * Output only. The display name of a POI, e.g. "Times Square", "Space
+         * Needle", followed by its full address if available.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. Latitude of the POI rounding to 6th decimal place.
+         *
+         * @var 
+         */
+        public $latitude;
+        /**
+         * Output only. Longitude of the POI rounding to 6th decimal place.
+         *
+         * @var 
+         */
+        public $longitude;
+        /**
+         * Required. The radius of the area around the POI that will be targeted. The
+         * units of the radius are specified by proximity_radius_unit. Must be 1 to
+         * 800 if unit is `DISTANCE_UNIT_KILOMETERS` and 1 to 500 if unit is
+         * `DISTANCE_UNIT_MILES`.
+         *
+         * @var 
+         */
+        public $proximityRadiusAmount;
+        /**
+         * Required. The unit of distance by which the targeting radius is measured.
+         *
+         * @var string
+         */
+        public $proximityRadiusUnit;
+        /**
+         * Required. The targeting_option_id of a TargetingOption of type
+         * `TARGETING_TYPE_POI`. Accepted POI targeting option IDs can be retrieved
+         * using `targetingTypes.targetingOptions.search`. If targeting a specific
+         * latitude/longitude coordinate removed from an address or POI name, you can
+         * generate the necessary targeting option ID by rounding the desired
+         * coordinate values to the 6th decimal place, removing the decimals, and
+         * concatenating the string values separated by a semicolon. For example, you
+         * can target the latitude/longitude pair of 40.7414691, -74.003387 using the
+         * targeting option ID "40741469;-74003387". **Upon** **creation, this field
+         * value will be updated to append a semicolon and** **alphanumerical hash
+         * value if only latitude/longitude coordinates are** **provided.**
+         *
+         * @var string
+         */
+        public $targetingOptionId;
+        /**
+         * Output only. The display name of a POI, e.g. "Times Square", "Space
+         * Needle", followed by its full address if available.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        public function setLatitude($latitude)
+        {
+        }
+        public function getLatitude()
+        {
+        }
+        public function setLongitude($longitude)
+        {
+        }
+        public function getLongitude()
+        {
+        }
+        public function setProximityRadiusAmount($proximityRadiusAmount)
+        {
+        }
+        public function getProximityRadiusAmount()
+        {
+        }
+        /**
+         * Required. The unit of distance by which the targeting radius is measured.
+         *
+         * Accepted values: DISTANCE_UNIT_UNSPECIFIED, DISTANCE_UNIT_MILES,
+         * DISTANCE_UNIT_KILOMETERS
+         *
+         * @param self::PROXIMITY_RADIUS_UNIT_* $proximityRadiusUnit
+         */
+        public function setProximityRadiusUnit($proximityRadiusUnit)
+        {
+        }
+        /**
+         * @return self::PROXIMITY_RADIUS_UNIT_*
+         */
+        public function getProximityRadiusUnit()
+        {
+        }
+        /**
+         * Required. The targeting_option_id of a TargetingOption of type
+         * `TARGETING_TYPE_POI`. Accepted POI targeting option IDs can be retrieved
+         * using `targetingTypes.targetingOptions.search`. If targeting a specific
+         * latitude/longitude coordinate removed from an address or POI name, you can
+         * generate the necessary targeting option ID by rounding the desired
+         * coordinate values to the 6th decimal place, removing the decimals, and
+         * concatenating the string values separated by a semicolon. For example, you
+         * can target the latitude/longitude pair of 40.7414691, -74.003387 using the
+         * targeting option ID "40741469;-74003387". **Upon** **creation, this field
+         * value will be updated to append a semicolon and** **alphanumerical hash
+         * value if only latitude/longitude coordinates are** **provided.**
+         *
+         * @param string $targetingOptionId
+         */
+        public function setTargetingOptionId($targetingOptionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetingOptionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\PoiAssignedTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    public function setLatitude($latitude)
-    {
-    }
-    public function getLatitude()
-    {
-    }
-    public function setLongitude($longitude)
-    {
-    }
-    public function getLongitude()
-    {
-    }
-    public function setProximityRadiusAmount($proximityRadiusAmount)
-    {
-    }
-    public function getProximityRadiusAmount()
-    {
-    }
-    /**
-     * Required. The unit of distance by which the targeting radius is measured.
-     *
-     * Accepted values: DISTANCE_UNIT_UNSPECIFIED, DISTANCE_UNIT_MILES,
-     * DISTANCE_UNIT_KILOMETERS
-     *
-     * @param self::PROXIMITY_RADIUS_UNIT_* $proximityRadiusUnit
-     */
-    public function setProximityRadiusUnit($proximityRadiusUnit)
-    {
-    }
-    /**
-     * @return self::PROXIMITY_RADIUS_UNIT_*
-     */
-    public function getProximityRadiusUnit()
-    {
-    }
-    /**
-     * Required. The targeting_option_id of a TargetingOption of type
-     * `TARGETING_TYPE_POI`. Accepted POI targeting option IDs can be retrieved
-     * using `targetingTypes.targetingOptions.search`. If targeting a specific
-     * latitude/longitude coordinate removed from an address or POI name, you can
-     * generate the necessary targeting option ID by rounding the desired
-     * coordinate values to the 6th decimal place, removing the decimals, and
-     * concatenating the string values separated by a semicolon. For example, you
-     * can target the latitude/longitude pair of 40.7414691, -74.003387 using the
-     * targeting option ID "40741469;-74003387". **Upon** **creation, this field
-     * value will be updated to append a semicolon and** **alphanumerical hash
-     * value if only latitude/longitude coordinates are** **provided.**
-     *
-     * @param string $targetingOptionId
-     */
-    public function setTargetingOptionId($targetingOptionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetingOptionId()
+    class Google_Service_DisplayVideo_PoiAssignedTargetingOptionDetails extends \Google\Service\DisplayVideo\PoiAssignedTargetingOptionDetails
     {
     }
 }

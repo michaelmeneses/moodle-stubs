@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class ImportYumArtifactsResponse extends \Google\Collection
-{
-    protected $collection_key = 'yumArtifacts';
-    protected $errorsType = ImportYumArtifactsErrorInfo::class;
-    protected $errorsDataType = 'array';
-    protected $yumArtifactsType = YumArtifact::class;
-    protected $yumArtifactsDataType = 'array';
-    /**
-     * Detailed error info for packages that were not imported.
-     *
-     * @param ImportYumArtifactsErrorInfo[] $errors
-     */
-    public function setErrors($errors)
+namespace Google\Service\ArtifactRegistry {
+    class ImportYumArtifactsResponse extends \Google\Collection
     {
+        protected $collection_key = 'yumArtifacts';
+        protected $errorsType = ImportYumArtifactsErrorInfo::class;
+        protected $errorsDataType = 'array';
+        protected $yumArtifactsType = YumArtifact::class;
+        protected $yumArtifactsDataType = 'array';
+        /**
+         * Detailed error info for packages that were not imported.
+         *
+         * @param ImportYumArtifactsErrorInfo[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return ImportYumArtifactsErrorInfo[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * The yum artifacts imported.
+         *
+         * @param YumArtifact[] $yumArtifacts
+         */
+        public function setYumArtifacts($yumArtifacts)
+        {
+        }
+        /**
+         * @return YumArtifact[]
+         */
+        public function getYumArtifacts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ImportYumArtifactsErrorInfo[]
+     * Runtime class alias of \Google\Service\ArtifactRegistry\ImportYumArtifactsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
-    {
-    }
-    /**
-     * The yum artifacts imported.
-     *
-     * @param YumArtifact[] $yumArtifacts
-     */
-    public function setYumArtifacts($yumArtifacts)
-    {
-    }
-    /**
-     * @return YumArtifact[]
-     */
-    public function getYumArtifacts()
+    class Google_Service_ArtifactRegistry_ImportYumArtifactsResponse extends \Google\Service\ArtifactRegistry\ImportYumArtifactsResponse
     {
     }
 }

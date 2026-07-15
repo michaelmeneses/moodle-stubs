@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainAnalysisResult extends \Google\Model
-{
-    protected $callAnalysisMetadataType = GoogleCloudContactcenterinsightsV1mainAnalysisResultCallAnalysisMetadata::class;
-    protected $callAnalysisMetadataDataType = '';
-    /**
-     * The time at which the analysis ended.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Call-specific metadata created by the analysis.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainAnalysisResultCallAnalysisMetadata $callAnalysisMetadata
-     */
-    public function setCallAnalysisMetadata(GoogleCloudContactcenterinsightsV1mainAnalysisResultCallAnalysisMetadata $callAnalysisMetadata)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainAnalysisResult extends \Google\Model
     {
+        protected $callAnalysisMetadataType = GoogleCloudContactcenterinsightsV1mainAnalysisResultCallAnalysisMetadata::class;
+        protected $callAnalysisMetadataDataType = '';
+        /**
+         * The time at which the analysis ended.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Call-specific metadata created by the analysis.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainAnalysisResultCallAnalysisMetadata $callAnalysisMetadata
+         */
+        public function setCallAnalysisMetadata(GoogleCloudContactcenterinsightsV1mainAnalysisResultCallAnalysisMetadata $callAnalysisMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainAnalysisResultCallAnalysisMetadata
+         */
+        public function getCallAnalysisMetadata()
+        {
+        }
+        /**
+         * The time at which the analysis ended.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1mainAnalysisResultCallAnalysisMetadata
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainAnalysisResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCallAnalysisMetadata()
-    {
-    }
-    /**
-     * The time at which the analysis ended.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainAnalysisResult extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainAnalysisResult
     {
     }
 }

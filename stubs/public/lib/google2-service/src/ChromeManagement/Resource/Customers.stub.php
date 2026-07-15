@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement\Resource;
-
-/**
- * The "customers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $chromemanagementService = new Google\Service\ChromeManagement(...);
- *   $customers = $chromemanagementService->customers;
- *  </code>
- */
-class Customers extends \Google\Service\Resource
-{
+namespace Google\Service\ChromeManagement\Resource {
+    /**
+     * The "customers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $chromemanagementService = new Google\Service\ChromeManagement(...);
+     *   $customers = $chromemanagementService->customers;
+     *  </code>
+     */
+    class Customers extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ChromeManagement\Resource\Customers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ChromeManagement_Resource_Customers extends \Google\Service\ChromeManagement\Resource\Customers
+    {
+    }
 }

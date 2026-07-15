@@ -21,310 +21,319 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ExecutorStageSummary extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $diskBytesSpilled;
-    /**
-     * @var string
-     */
-    public $executorId;
-    /**
-     * @var int
-     */
-    public $failedTasks;
-    /**
-     * @var string
-     */
-    public $inputBytes;
-    /**
-     * @var string
-     */
-    public $inputRecords;
-    /**
-     * @var bool
-     */
-    public $isExcludedForStage;
-    /**
-     * @var int
-     */
-    public $killedTasks;
-    /**
-     * @var string
-     */
-    public $memoryBytesSpilled;
-    /**
-     * @var string
-     */
-    public $outputBytes;
-    /**
-     * @var string
-     */
-    public $outputRecords;
-    protected $peakMemoryMetricsType = ExecutorMetrics::class;
-    protected $peakMemoryMetricsDataType = '';
-    /**
-     * @var string
-     */
-    public $shuffleRead;
-    /**
-     * @var string
-     */
-    public $shuffleReadRecords;
-    /**
-     * @var string
-     */
-    public $shuffleWrite;
-    /**
-     * @var string
-     */
-    public $shuffleWriteRecords;
-    /**
-     * @var int
-     */
-    public $stageAttemptId;
-    /**
-     * @var string
-     */
-    public $stageId;
-    /**
-     * @var int
-     */
-    public $succeededTasks;
-    /**
-     * @var string
-     */
-    public $taskTimeMillis;
-    /**
-     * @param string $diskBytesSpilled
-     */
-    public function setDiskBytesSpilled($diskBytesSpilled)
+namespace Google\Service\Dataproc {
+    class ExecutorStageSummary extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $diskBytesSpilled;
+        /**
+         * @var string
+         */
+        public $executorId;
+        /**
+         * @var int
+         */
+        public $failedTasks;
+        /**
+         * @var string
+         */
+        public $inputBytes;
+        /**
+         * @var string
+         */
+        public $inputRecords;
+        /**
+         * @var bool
+         */
+        public $isExcludedForStage;
+        /**
+         * @var int
+         */
+        public $killedTasks;
+        /**
+         * @var string
+         */
+        public $memoryBytesSpilled;
+        /**
+         * @var string
+         */
+        public $outputBytes;
+        /**
+         * @var string
+         */
+        public $outputRecords;
+        protected $peakMemoryMetricsType = ExecutorMetrics::class;
+        protected $peakMemoryMetricsDataType = '';
+        /**
+         * @var string
+         */
+        public $shuffleRead;
+        /**
+         * @var string
+         */
+        public $shuffleReadRecords;
+        /**
+         * @var string
+         */
+        public $shuffleWrite;
+        /**
+         * @var string
+         */
+        public $shuffleWriteRecords;
+        /**
+         * @var int
+         */
+        public $stageAttemptId;
+        /**
+         * @var string
+         */
+        public $stageId;
+        /**
+         * @var int
+         */
+        public $succeededTasks;
+        /**
+         * @var string
+         */
+        public $taskTimeMillis;
+        /**
+         * @param string $diskBytesSpilled
+         */
+        public function setDiskBytesSpilled($diskBytesSpilled)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskBytesSpilled()
+        {
+        }
+        /**
+         * @param string $executorId
+         */
+        public function setExecutorId($executorId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutorId()
+        {
+        }
+        /**
+         * @param int $failedTasks
+         */
+        public function setFailedTasks($failedTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFailedTasks()
+        {
+        }
+        /**
+         * @param string $inputBytes
+         */
+        public function setInputBytes($inputBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInputBytes()
+        {
+        }
+        /**
+         * @param string $inputRecords
+         */
+        public function setInputRecords($inputRecords)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInputRecords()
+        {
+        }
+        /**
+         * @param bool $isExcludedForStage
+         */
+        public function setIsExcludedForStage($isExcludedForStage)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsExcludedForStage()
+        {
+        }
+        /**
+         * @param int $killedTasks
+         */
+        public function setKilledTasks($killedTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getKilledTasks()
+        {
+        }
+        /**
+         * @param string $memoryBytesSpilled
+         */
+        public function setMemoryBytesSpilled($memoryBytesSpilled)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemoryBytesSpilled()
+        {
+        }
+        /**
+         * @param string $outputBytes
+         */
+        public function setOutputBytes($outputBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputBytes()
+        {
+        }
+        /**
+         * @param string $outputRecords
+         */
+        public function setOutputRecords($outputRecords)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputRecords()
+        {
+        }
+        /**
+         * @param ExecutorMetrics $peakMemoryMetrics
+         */
+        public function setPeakMemoryMetrics(ExecutorMetrics $peakMemoryMetrics)
+        {
+        }
+        /**
+         * @return ExecutorMetrics
+         */
+        public function getPeakMemoryMetrics()
+        {
+        }
+        /**
+         * @param string $shuffleRead
+         */
+        public function setShuffleRead($shuffleRead)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShuffleRead()
+        {
+        }
+        /**
+         * @param string $shuffleReadRecords
+         */
+        public function setShuffleReadRecords($shuffleReadRecords)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShuffleReadRecords()
+        {
+        }
+        /**
+         * @param string $shuffleWrite
+         */
+        public function setShuffleWrite($shuffleWrite)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShuffleWrite()
+        {
+        }
+        /**
+         * @param string $shuffleWriteRecords
+         */
+        public function setShuffleWriteRecords($shuffleWriteRecords)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShuffleWriteRecords()
+        {
+        }
+        /**
+         * @param int $stageAttemptId
+         */
+        public function setStageAttemptId($stageAttemptId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStageAttemptId()
+        {
+        }
+        /**
+         * @param string $stageId
+         */
+        public function setStageId($stageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStageId()
+        {
+        }
+        /**
+         * @param int $succeededTasks
+         */
+        public function setSucceededTasks($succeededTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSucceededTasks()
+        {
+        }
+        /**
+         * @param string $taskTimeMillis
+         */
+        public function setTaskTimeMillis($taskTimeMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTaskTimeMillis()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\ExecutorStageSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiskBytesSpilled()
-    {
-    }
-    /**
-     * @param string $executorId
-     */
-    public function setExecutorId($executorId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecutorId()
-    {
-    }
-    /**
-     * @param int $failedTasks
-     */
-    public function setFailedTasks($failedTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFailedTasks()
-    {
-    }
-    /**
-     * @param string $inputBytes
-     */
-    public function setInputBytes($inputBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInputBytes()
-    {
-    }
-    /**
-     * @param string $inputRecords
-     */
-    public function setInputRecords($inputRecords)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInputRecords()
-    {
-    }
-    /**
-     * @param bool $isExcludedForStage
-     */
-    public function setIsExcludedForStage($isExcludedForStage)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsExcludedForStage()
-    {
-    }
-    /**
-     * @param int $killedTasks
-     */
-    public function setKilledTasks($killedTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getKilledTasks()
-    {
-    }
-    /**
-     * @param string $memoryBytesSpilled
-     */
-    public function setMemoryBytesSpilled($memoryBytesSpilled)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMemoryBytesSpilled()
-    {
-    }
-    /**
-     * @param string $outputBytes
-     */
-    public function setOutputBytes($outputBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutputBytes()
-    {
-    }
-    /**
-     * @param string $outputRecords
-     */
-    public function setOutputRecords($outputRecords)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutputRecords()
-    {
-    }
-    /**
-     * @param ExecutorMetrics $peakMemoryMetrics
-     */
-    public function setPeakMemoryMetrics(ExecutorMetrics $peakMemoryMetrics)
-    {
-    }
-    /**
-     * @return ExecutorMetrics
-     */
-    public function getPeakMemoryMetrics()
-    {
-    }
-    /**
-     * @param string $shuffleRead
-     */
-    public function setShuffleRead($shuffleRead)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShuffleRead()
-    {
-    }
-    /**
-     * @param string $shuffleReadRecords
-     */
-    public function setShuffleReadRecords($shuffleReadRecords)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShuffleReadRecords()
-    {
-    }
-    /**
-     * @param string $shuffleWrite
-     */
-    public function setShuffleWrite($shuffleWrite)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShuffleWrite()
-    {
-    }
-    /**
-     * @param string $shuffleWriteRecords
-     */
-    public function setShuffleWriteRecords($shuffleWriteRecords)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShuffleWriteRecords()
-    {
-    }
-    /**
-     * @param int $stageAttemptId
-     */
-    public function setStageAttemptId($stageAttemptId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStageAttemptId()
-    {
-    }
-    /**
-     * @param string $stageId
-     */
-    public function setStageId($stageId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStageId()
-    {
-    }
-    /**
-     * @param int $succeededTasks
-     */
-    public function setSucceededTasks($succeededTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSucceededTasks()
-    {
-    }
-    /**
-     * @param string $taskTimeMillis
-     */
-    public function setTaskTimeMillis($taskTimeMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTaskTimeMillis()
+    class Google_Service_Dataproc_ExecutorStageSummary extends \Google\Service\Dataproc\ExecutorStageSummary
     {
     }
 }

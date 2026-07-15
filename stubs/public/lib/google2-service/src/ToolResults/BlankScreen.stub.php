@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class BlankScreen extends \Google\Model
-{
-    /**
-     * The screen id of the element
-     *
-     * @var string
-     */
-    public $screenId;
-    /**
-     * The screen id of the element
-     *
-     * @param string $screenId
-     */
-    public function setScreenId($screenId)
+namespace Google\Service\ToolResults {
+    class BlankScreen extends \Google\Model
     {
+        /**
+         * The screen id of the element
+         *
+         * @var string
+         */
+        public $screenId;
+        /**
+         * The screen id of the element
+         *
+         * @param string $screenId
+         */
+        public function setScreenId($screenId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScreenId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ToolResults\BlankScreen registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScreenId()
+    class Google_Service_ToolResults_BlankScreen extends \Google\Service\ToolResults\BlankScreen
     {
     }
 }

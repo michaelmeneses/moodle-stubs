@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudLifeSciences;
-
-class FailedEvent extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $cause;
-    /**
-     * @var string
-     */
-    public $code;
-    /**
-     * @param string
-     */
-    public function setCause($cause)
+namespace Google\Service\CloudLifeSciences {
+    class FailedEvent extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $cause;
+        /**
+         * @var string
+         */
+        public $code;
+        /**
+         * @param string
+         */
+        public function setCause($cause)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCause()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudLifeSciences\FailedEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCause()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCode($code)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCode()
+    class Google_Service_CloudLifeSciences_FailedEvent extends \Google\Service\CloudLifeSciences\FailedEvent
     {
     }
 }

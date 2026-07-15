@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class ObjectFilter extends \Google\Model
-{
-    protected $sourceObjectIdentifierType = SourceObjectIdentifier::class;
-    protected $sourceObjectIdentifierDataType = '';
-    /**
-     * Specific source object identifier.
-     *
-     * @param SourceObjectIdentifier $sourceObjectIdentifier
-     */
-    public function setSourceObjectIdentifier(SourceObjectIdentifier $sourceObjectIdentifier)
+namespace Google\Service\Datastream {
+    class ObjectFilter extends \Google\Model
     {
+        protected $sourceObjectIdentifierType = SourceObjectIdentifier::class;
+        protected $sourceObjectIdentifierDataType = '';
+        /**
+         * Specific source object identifier.
+         *
+         * @param SourceObjectIdentifier $sourceObjectIdentifier
+         */
+        public function setSourceObjectIdentifier(SourceObjectIdentifier $sourceObjectIdentifier)
+        {
+        }
+        /**
+         * @return SourceObjectIdentifier
+         */
+        public function getSourceObjectIdentifier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SourceObjectIdentifier
+     * Runtime class alias of \Google\Service\Datastream\ObjectFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSourceObjectIdentifier()
+    class Google_Service_Datastream_ObjectFilter extends \Google\Service\Datastream\ObjectFilter
     {
     }
 }

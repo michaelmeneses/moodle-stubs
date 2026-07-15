@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class Fleet extends \Google\Model
-{
-    /**
-     * The MembershipType is not set.
-     */
-    public const MEMBERSHIP_TYPE_MEMBERSHIP_TYPE_UNSPECIFIED = 'MEMBERSHIP_TYPE_UNSPECIFIED';
-    /**
-     * The membership supports only lightweight compatible features.
-     */
-    public const MEMBERSHIP_TYPE_LIGHTWEIGHT = 'LIGHTWEIGHT';
-    /**
-     * Output only. The full resource name of the registered fleet membership of
-     * the cluster, in the format
-     * `//gkehub.googleapis.com/projects/locations/memberships`.
-     *
-     * @var string
-     */
-    public $membership;
-    /**
-     * The type of the cluster's fleet membership.
-     *
-     * @var string
-     */
-    public $membershipType;
-    /**
-     * Output only. Whether the cluster has been registered through the fleet API.
-     *
-     * @var bool
-     */
-    public $preRegistered;
-    /**
-     * The Fleet host project(project ID or project number) where this cluster
-     * will be registered to. This field cannot be changed after the cluster has
-     * been registered.
-     *
-     * @var string
-     */
-    public $project;
-    /**
-     * Output only. The full resource name of the registered fleet membership of
-     * the cluster, in the format
-     * `//gkehub.googleapis.com/projects/locations/memberships`.
-     *
-     * @param string $membership
-     */
-    public function setMembership($membership)
+namespace Google\Service\Container {
+    class Fleet extends \Google\Model
     {
+        /**
+         * The MembershipType is not set.
+         */
+        public const MEMBERSHIP_TYPE_MEMBERSHIP_TYPE_UNSPECIFIED = 'MEMBERSHIP_TYPE_UNSPECIFIED';
+        /**
+         * The membership supports only lightweight compatible features.
+         */
+        public const MEMBERSHIP_TYPE_LIGHTWEIGHT = 'LIGHTWEIGHT';
+        /**
+         * Output only. The full resource name of the registered fleet membership of
+         * the cluster, in the format
+         * `//gkehub.googleapis.com/projects/locations/memberships`.
+         *
+         * @var string
+         */
+        public $membership;
+        /**
+         * The type of the cluster's fleet membership.
+         *
+         * @var string
+         */
+        public $membershipType;
+        /**
+         * Output only. Whether the cluster has been registered through the fleet API.
+         *
+         * @var bool
+         */
+        public $preRegistered;
+        /**
+         * The Fleet host project(project ID or project number) where this cluster
+         * will be registered to. This field cannot be changed after the cluster has
+         * been registered.
+         *
+         * @var string
+         */
+        public $project;
+        /**
+         * Output only. The full resource name of the registered fleet membership of
+         * the cluster, in the format
+         * `//gkehub.googleapis.com/projects/locations/memberships`.
+         *
+         * @param string $membership
+         */
+        public function setMembership($membership)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMembership()
+        {
+        }
+        /**
+         * The type of the cluster's fleet membership.
+         *
+         * Accepted values: MEMBERSHIP_TYPE_UNSPECIFIED, LIGHTWEIGHT
+         *
+         * @param self::MEMBERSHIP_TYPE_* $membershipType
+         */
+        public function setMembershipType($membershipType)
+        {
+        }
+        /**
+         * @return self::MEMBERSHIP_TYPE_*
+         */
+        public function getMembershipType()
+        {
+        }
+        /**
+         * Output only. Whether the cluster has been registered through the fleet API.
+         *
+         * @param bool $preRegistered
+         */
+        public function setPreRegistered($preRegistered)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPreRegistered()
+        {
+        }
+        /**
+         * The Fleet host project(project ID or project number) where this cluster
+         * will be registered to. This field cannot be changed after the cluster has
+         * been registered.
+         *
+         * @param string $project
+         */
+        public function setProject($project)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\Fleet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMembership()
-    {
-    }
-    /**
-     * The type of the cluster's fleet membership.
-     *
-     * Accepted values: MEMBERSHIP_TYPE_UNSPECIFIED, LIGHTWEIGHT
-     *
-     * @param self::MEMBERSHIP_TYPE_* $membershipType
-     */
-    public function setMembershipType($membershipType)
-    {
-    }
-    /**
-     * @return self::MEMBERSHIP_TYPE_*
-     */
-    public function getMembershipType()
-    {
-    }
-    /**
-     * Output only. Whether the cluster has been registered through the fleet API.
-     *
-     * @param bool $preRegistered
-     */
-    public function setPreRegistered($preRegistered)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPreRegistered()
-    {
-    }
-    /**
-     * The Fleet host project(project ID or project number) where this cluster
-     * will be registered to. This field cannot be changed after the cluster has
-     * been registered.
-     *
-     * @param string $project
-     */
-    public function setProject($project)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProject()
+    class Google_Service_Container_Fleet extends \Google\Service\Container\Fleet
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ReportSummaryChartDataDataPoint extends \Google\Model
-{
-    /**
-     * The X-axis label for this data point.
-     *
-     * @var string
-     */
-    public $label;
-    /**
-     * The Y-axis value for this data point.
-     *
-     * @var 
-     */
-    public $value;
-    /**
-     * The X-axis label for this data point.
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
+namespace Google\Service\MigrationCenterAPI {
+    class ReportSummaryChartDataDataPoint extends \Google\Model
     {
+        /**
+         * The X-axis label for this data point.
+         *
+         * @var string
+         */
+        public $label;
+        /**
+         * The Y-axis value for this data point.
+         *
+         * @var 
+         */
+        public $value;
+        /**
+         * The X-axis label for this data point.
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        public function setValue($value)
+        {
+        }
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ReportSummaryChartDataDataPoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabel()
-    {
-    }
-    public function setValue($value)
-    {
-    }
-    public function getValue()
+    class Google_Service_MigrationCenterAPI_ReportSummaryChartDataDataPoint extends \Google\Service\MigrationCenterAPI\ReportSummaryChartDataDataPoint
     {
     }
 }

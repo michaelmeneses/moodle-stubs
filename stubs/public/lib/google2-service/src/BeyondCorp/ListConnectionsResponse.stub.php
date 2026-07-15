@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class ListConnectionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $connectionsType = Connection::class;
-    protected $connectionsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * @param Connection[]
-     */
-    public function setConnections($connections)
+namespace Google\Service\BeyondCorp {
+    class ListConnectionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $connectionsType = Connection::class;
+        protected $connectionsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * @param Connection[]
+         */
+        public function setConnections($connections)
+        {
+        }
+        /**
+         * @return Connection[]
+         */
+        public function getConnections()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Connection[]
+     * Runtime class alias of \Google\Service\BeyondCorp\ListConnectionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnections()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_BeyondCorp_ListConnectionsResponse extends \Google\Service\BeyondCorp\ListConnectionsResponse
     {
     }
 }

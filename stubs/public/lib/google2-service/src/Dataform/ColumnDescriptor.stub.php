@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class ColumnDescriptor extends \Google\Collection
-{
-    protected $collection_key = 'path';
-    /**
-     * A list of BigQuery policy tags that will be applied to the column.
-     *
-     * @var string[]
-     */
-    public $bigqueryPolicyTags;
-    /**
-     * A textual description of the column.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The identifier for the column. Each entry in `path` represents one level of
-     * nesting.
-     *
-     * @var string[]
-     */
-    public $path;
-    /**
-     * A list of BigQuery policy tags that will be applied to the column.
-     *
-     * @param string[] $bigqueryPolicyTags
-     */
-    public function setBigqueryPolicyTags($bigqueryPolicyTags)
+namespace Google\Service\Dataform {
+    class ColumnDescriptor extends \Google\Collection
     {
+        protected $collection_key = 'path';
+        /**
+         * A list of BigQuery policy tags that will be applied to the column.
+         *
+         * @var string[]
+         */
+        public $bigqueryPolicyTags;
+        /**
+         * A textual description of the column.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The identifier for the column. Each entry in `path` represents one level of
+         * nesting.
+         *
+         * @var string[]
+         */
+        public $path;
+        /**
+         * A list of BigQuery policy tags that will be applied to the column.
+         *
+         * @param string[] $bigqueryPolicyTags
+         */
+        public function setBigqueryPolicyTags($bigqueryPolicyTags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBigqueryPolicyTags()
+        {
+        }
+        /**
+         * A textual description of the column.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The identifier for the column. Each entry in `path` represents one level of
+         * nesting.
+         *
+         * @param string[] $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataform\ColumnDescriptor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigqueryPolicyTags()
-    {
-    }
-    /**
-     * A textual description of the column.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * The identifier for the column. Each entry in `path` represents one level of
-     * nesting.
-     *
-     * @param string[] $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPath()
+    class Google_Service_Dataform_ColumnDescriptor extends \Google\Service\Dataform\ColumnDescriptor
     {
     }
 }

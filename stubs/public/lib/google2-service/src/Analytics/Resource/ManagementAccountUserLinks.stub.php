@@ -21,71 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics\Resource;
-
-/**
- * The "accountUserLinks" collection of methods.
- * Typical usage is:
- *  <code>
- *   $analyticsService = new Google\Service\Analytics(...);
- *   $accountUserLinks = $analyticsService->management_accountUserLinks;
- *  </code>
- */
-class ManagementAccountUserLinks extends \Google\Service\Resource
-{
+namespace Google\Service\Analytics\Resource {
+    use Google\Service\Analytics\EntityUserLink;
+    use Google\Service\Analytics\EntityUserLinks;
     /**
-     * Removes a user from the given account. (accountUserLinks.delete)
-     *
-     * @param string $accountId Account ID to delete the user link for.
-     * @param string $linkId Link ID to delete the user link for.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "accountUserLinks" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $analyticsService = new Google\Service\Analytics(...);
+     *   $accountUserLinks = $analyticsService->management_accountUserLinks;
+     *  </code>
      */
-    public function delete($accountId, $linkId, $optParams = [])
+    class ManagementAccountUserLinks extends \Google\Service\Resource
     {
+        /**
+         * Removes a user from the given account. (accountUserLinks.delete)
+         *
+         * @param string $accountId Account ID to delete the user link for.
+         * @param string $linkId Link ID to delete the user link for.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($accountId, $linkId, $optParams = [])
+        {
+        }
+        /**
+         * Adds a new user to the given account. (accountUserLinks.insert)
+         *
+         * @param string $accountId Account ID to create the user link for.
+         * @param EntityUserLink $postBody
+         * @param array $optParams Optional parameters.
+         * @return EntityUserLink
+         * @throws \Google\Service\Exception
+         */
+        public function insert($accountId, EntityUserLink $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists account-user links for a given account.
+         * (accountUserLinks.listManagementAccountUserLinks)
+         *
+         * @param string $accountId Account ID to retrieve the user links for.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int max-results The maximum number of account-user links to
+         * include in this response.
+         * @opt_param int start-index An index of the first account-user link to
+         * retrieve. Use this parameter as a pagination mechanism along with the max-
+         * results parameter.
+         * @return EntityUserLinks
+         * @throws \Google\Service\Exception
+         */
+        public function listManagementAccountUserLinks($accountId, $optParams = [])
+        {
+        }
+        /**
+         * Updates permissions for an existing user on the given account.
+         * (accountUserLinks.update)
+         *
+         * @param string $accountId Account ID to update the account-user link for.
+         * @param string $linkId Link ID to update the account-user link for.
+         * @param EntityUserLink $postBody
+         * @param array $optParams Optional parameters.
+         * @return EntityUserLink
+         * @throws \Google\Service\Exception
+         */
+        public function update($accountId, $linkId, EntityUserLink $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Adds a new user to the given account. (accountUserLinks.insert)
-     *
-     * @param string $accountId Account ID to create the user link for.
-     * @param EntityUserLink $postBody
-     * @param array $optParams Optional parameters.
-     * @return EntityUserLink
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Analytics\Resource\ManagementAccountUserLinks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert($accountId, EntityUserLink $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists account-user links for a given account.
-     * (accountUserLinks.listManagementAccountUserLinks)
-     *
-     * @param string $accountId Account ID to retrieve the user links for.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int max-results The maximum number of account-user links to
-     * include in this response.
-     * @opt_param int start-index An index of the first account-user link to
-     * retrieve. Use this parameter as a pagination mechanism along with the max-
-     * results parameter.
-     * @return EntityUserLinks
-     * @throws \Google\Service\Exception
-     */
-    public function listManagementAccountUserLinks($accountId, $optParams = [])
-    {
-    }
-    /**
-     * Updates permissions for an existing user on the given account.
-     * (accountUserLinks.update)
-     *
-     * @param string $accountId Account ID to update the account-user link for.
-     * @param string $linkId Link ID to update the account-user link for.
-     * @param EntityUserLink $postBody
-     * @param array $optParams Optional parameters.
-     * @return EntityUserLink
-     * @throws \Google\Service\Exception
-     */
-    public function update($accountId, $linkId, EntityUserLink $postBody, $optParams = [])
+    class Google_Service_Analytics_Resource_ManagementAccountUserLinks extends \Google\Service\Analytics\Resource\ManagementAccountUserLinks
     {
     }
 }

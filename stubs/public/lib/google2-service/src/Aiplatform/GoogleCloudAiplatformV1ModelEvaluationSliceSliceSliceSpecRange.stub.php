@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpecRange extends \Google\Model
-{
-    /**
-     * Exclusive high value for the range.
-     *
-     * @var float
-     */
-    public $high;
-    /**
-     * Inclusive low value for the range.
-     *
-     * @var float
-     */
-    public $low;
-    /**
-     * Exclusive high value for the range.
-     *
-     * @param float $high
-     */
-    public function setHigh($high)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpecRange extends \Google\Model
     {
+        /**
+         * Exclusive high value for the range.
+         *
+         * @var float
+         */
+        public $high;
+        /**
+         * Inclusive low value for the range.
+         *
+         * @var float
+         */
+        public $low;
+        /**
+         * Exclusive high value for the range.
+         *
+         * @param float $high
+         */
+        public function setHigh($high)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getHigh()
+        {
+        }
+        /**
+         * Inclusive low value for the range.
+         *
+         * @param float $low
+         */
+        public function setLow($low)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getLow()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpecRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHigh()
-    {
-    }
-    /**
-     * Inclusive low value for the range.
-     *
-     * @param float $low
-     */
-    public function setLow($low)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getLow()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpecRange extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpecRange
     {
     }
 }

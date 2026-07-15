@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1Metrics extends \Google\Collection
-{
-    protected $collection_key = 'scoreMetrics';
-    protected $challengeMetricsType = GoogleCloudRecaptchaenterpriseV1ChallengeMetrics::class;
-    protected $challengeMetricsDataType = 'array';
-    /**
-     * Output only. Identifier. The name of the metrics, in the format
-     * `projects/{project}/keys/{key}/metrics`.
-     *
-     * @var string
-     */
-    public $name;
-    protected $scoreMetricsType = GoogleCloudRecaptchaenterpriseV1ScoreMetrics::class;
-    protected $scoreMetricsDataType = 'array';
-    /**
-     * Inclusive start time aligned to a day in the America/Los_Angeles (Pacific)
-     * timezone.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Metrics are continuous and in order by dates, and in the granularity of
-     * day. Only challenge-based keys (CHECKBOX, INVISIBLE) have challenge-based
-     * data.
-     *
-     * @param GoogleCloudRecaptchaenterpriseV1ChallengeMetrics[] $challengeMetrics
-     */
-    public function setChallengeMetrics($challengeMetrics)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1Metrics extends \Google\Collection
     {
+        protected $collection_key = 'scoreMetrics';
+        protected $challengeMetricsType = GoogleCloudRecaptchaenterpriseV1ChallengeMetrics::class;
+        protected $challengeMetricsDataType = 'array';
+        /**
+         * Output only. Identifier. The name of the metrics, in the format
+         * `projects/{project}/keys/{key}/metrics`.
+         *
+         * @var string
+         */
+        public $name;
+        protected $scoreMetricsType = GoogleCloudRecaptchaenterpriseV1ScoreMetrics::class;
+        protected $scoreMetricsDataType = 'array';
+        /**
+         * Inclusive start time aligned to a day in the America/Los_Angeles (Pacific)
+         * timezone.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Metrics are continuous and in order by dates, and in the granularity of
+         * day. Only challenge-based keys (CHECKBOX, INVISIBLE) have challenge-based
+         * data.
+         *
+         * @param GoogleCloudRecaptchaenterpriseV1ChallengeMetrics[] $challengeMetrics
+         */
+        public function setChallengeMetrics($challengeMetrics)
+        {
+        }
+        /**
+         * @return GoogleCloudRecaptchaenterpriseV1ChallengeMetrics[]
+         */
+        public function getChallengeMetrics()
+        {
+        }
+        /**
+         * Output only. Identifier. The name of the metrics, in the format
+         * `projects/{project}/keys/{key}/metrics`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Metrics are continuous and in order by dates, and in the granularity of
+         * day. All Key types should have score-based data.
+         *
+         * @param GoogleCloudRecaptchaenterpriseV1ScoreMetrics[] $scoreMetrics
+         */
+        public function setScoreMetrics($scoreMetrics)
+        {
+        }
+        /**
+         * @return GoogleCloudRecaptchaenterpriseV1ScoreMetrics[]
+         */
+        public function getScoreMetrics()
+        {
+        }
+        /**
+         * Inclusive start time aligned to a day in the America/Los_Angeles (Pacific)
+         * timezone.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRecaptchaenterpriseV1ChallengeMetrics[]
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1Metrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChallengeMetrics()
-    {
-    }
-    /**
-     * Output only. Identifier. The name of the metrics, in the format
-     * `projects/{project}/keys/{key}/metrics`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Metrics are continuous and in order by dates, and in the granularity of
-     * day. All Key types should have score-based data.
-     *
-     * @param GoogleCloudRecaptchaenterpriseV1ScoreMetrics[] $scoreMetrics
-     */
-    public function setScoreMetrics($scoreMetrics)
-    {
-    }
-    /**
-     * @return GoogleCloudRecaptchaenterpriseV1ScoreMetrics[]
-     */
-    public function getScoreMetrics()
-    {
-    }
-    /**
-     * Inclusive start time aligned to a day in the America/Los_Angeles (Pacific)
-     * timezone.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1Metrics extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1Metrics
     {
     }
 }

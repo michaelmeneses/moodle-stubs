@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class FleetObservabilityFeatureState extends \Google\Model
-{
-    protected $loggingType = FleetObservabilityFleetObservabilityLoggingState::class;
-    protected $loggingDataType = '';
-    protected $monitoringType = FleetObservabilityFleetObservabilityMonitoringState::class;
-    protected $monitoringDataType = '';
-    /**
-     * @param FleetObservabilityFleetObservabilityLoggingState
-     */
-    public function setLogging(FleetObservabilityFleetObservabilityLoggingState $logging)
+namespace Google\Service\GKEHub {
+    class FleetObservabilityFeatureState extends \Google\Model
     {
+        protected $loggingType = FleetObservabilityFleetObservabilityLoggingState::class;
+        protected $loggingDataType = '';
+        protected $monitoringType = FleetObservabilityFleetObservabilityMonitoringState::class;
+        protected $monitoringDataType = '';
+        /**
+         * @param FleetObservabilityFleetObservabilityLoggingState
+         */
+        public function setLogging(FleetObservabilityFleetObservabilityLoggingState $logging)
+        {
+        }
+        /**
+         * @return FleetObservabilityFleetObservabilityLoggingState
+         */
+        public function getLogging()
+        {
+        }
+        /**
+         * @param FleetObservabilityFleetObservabilityMonitoringState
+         */
+        public function setMonitoring(FleetObservabilityFleetObservabilityMonitoringState $monitoring)
+        {
+        }
+        /**
+         * @return FleetObservabilityFleetObservabilityMonitoringState
+         */
+        public function getMonitoring()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FleetObservabilityFleetObservabilityLoggingState
+     * Runtime class alias of \Google\Service\GKEHub\FleetObservabilityFeatureState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLogging()
-    {
-    }
-    /**
-     * @param FleetObservabilityFleetObservabilityMonitoringState
-     */
-    public function setMonitoring(FleetObservabilityFleetObservabilityMonitoringState $monitoring)
-    {
-    }
-    /**
-     * @return FleetObservabilityFleetObservabilityMonitoringState
-     */
-    public function getMonitoring()
+    class Google_Service_GKEHub_FleetObservabilityFeatureState extends \Google\Service\GKEHub\FleetObservabilityFeatureState
     {
     }
 }

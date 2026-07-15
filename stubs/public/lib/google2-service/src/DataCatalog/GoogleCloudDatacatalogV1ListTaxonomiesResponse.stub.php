@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1ListTaxonomiesResponse extends \Google\Collection
-{
-    protected $collection_key = 'taxonomies';
-    /**
-     * Pagination token of the next results page. Empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $taxonomiesType = GoogleCloudDatacatalogV1Taxonomy::class;
-    protected $taxonomiesDataType = 'array';
-    /**
-     * Pagination token of the next results page. Empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1ListTaxonomiesResponse extends \Google\Collection
     {
+        protected $collection_key = 'taxonomies';
+        /**
+         * Pagination token of the next results page. Empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $taxonomiesType = GoogleCloudDatacatalogV1Taxonomy::class;
+        protected $taxonomiesDataType = 'array';
+        /**
+         * Pagination token of the next results page. Empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Taxonomies that the project contains.
+         *
+         * @param GoogleCloudDatacatalogV1Taxonomy[] $taxonomies
+         */
+        public function setTaxonomies($taxonomies)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1Taxonomy[]
+         */
+        public function getTaxonomies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ListTaxonomiesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Taxonomies that the project contains.
-     *
-     * @param GoogleCloudDatacatalogV1Taxonomy[] $taxonomies
-     */
-    public function setTaxonomies($taxonomies)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1Taxonomy[]
-     */
-    public function getTaxonomies()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1ListTaxonomiesResponse extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ListTaxonomiesResponse
     {
     }
 }

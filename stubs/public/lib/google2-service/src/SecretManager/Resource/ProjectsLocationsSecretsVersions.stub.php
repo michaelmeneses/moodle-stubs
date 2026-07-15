@@ -21,119 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecretManager\Resource;
-
-/**
- * The "versions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $secretmanagerService = new Google\Service\SecretManager(...);
- *   $versions = $secretmanagerService->projects_locations_secrets_versions;
- *  </code>
- */
-class ProjectsLocationsSecretsVersions extends \Google\Service\Resource
-{
+namespace Google\Service\SecretManager\Resource {
+    use Google\Service\SecretManager\AccessSecretVersionResponse;
+    use Google\Service\SecretManager\DestroySecretVersionRequest;
+    use Google\Service\SecretManager\DisableSecretVersionRequest;
+    use Google\Service\SecretManager\EnableSecretVersionRequest;
+    use Google\Service\SecretManager\ListSecretVersionsResponse;
+    use Google\Service\SecretManager\SecretVersion;
     /**
-     * Accesses a SecretVersion. This call returns the secret data.
-     * `projects/secrets/versions/latest` is an alias to the most recently created
-     * SecretVersion. (versions.access)
-     *
-     * @param string $name Required. The resource name of the SecretVersion in the
-     * format `projects/secrets/versions` or `projects/locations/secrets/versions`.
-     * `projects/secrets/versions/latest` or
-     * `projects/locations/secrets/versions/latest` is an alias to the most recently
-     * created SecretVersion.
-     * @param array $optParams Optional parameters.
-     * @return AccessSecretVersionResponse
-     * @throws \Google\Service\Exception
+     * The "versions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $secretmanagerService = new Google\Service\SecretManager(...);
+     *   $versions = $secretmanagerService->projects_locations_secrets_versions;
+     *  </code>
      */
-    public function access($name, $optParams = [])
+    class ProjectsLocationsSecretsVersions extends \Google\Service\Resource
     {
+        /**
+         * Accesses a SecretVersion. This call returns the secret data.
+         * `projects/secrets/versions/latest` is an alias to the most recently created
+         * SecretVersion. (versions.access)
+         *
+         * @param string $name Required. The resource name of the SecretVersion in the
+         * format `projects/secrets/versions` or `projects/locations/secrets/versions`.
+         * `projects/secrets/versions/latest` or
+         * `projects/locations/secrets/versions/latest` is an alias to the most recently
+         * created SecretVersion.
+         * @param array $optParams Optional parameters.
+         * @return AccessSecretVersionResponse
+         * @throws \Google\Service\Exception
+         */
+        public function access($name, $optParams = [])
+        {
+        }
+        /**
+         * Destroys a SecretVersion. Sets the state of the SecretVersion to DESTROYED
+         * and irrevocably destroys the secret data. (versions.destroy)
+         *
+         * @param string $name Required. The resource name of the SecretVersion to
+         * destroy in the format `projects/secrets/versions` or
+         * `projects/locations/secrets/versions`.
+         * @param DestroySecretVersionRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SecretVersion
+         * @throws \Google\Service\Exception
+         */
+        public function destroy($name, DestroySecretVersionRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Disables a SecretVersion. Sets the state of the SecretVersion to DISABLED.
+         * (versions.disable)
+         *
+         * @param string $name Required. The resource name of the SecretVersion to
+         * disable in the format `projects/secrets/versions` or
+         * `projects/locations/secrets/versions`.
+         * @param DisableSecretVersionRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SecretVersion
+         * @throws \Google\Service\Exception
+         */
+        public function disable($name, DisableSecretVersionRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Enables a SecretVersion. Sets the state of the SecretVersion to ENABLED.
+         * (versions.enable)
+         *
+         * @param string $name Required. The resource name of the SecretVersion to
+         * enable in the format `projects/secrets/versions` or
+         * `projects/locations/secrets/versions`.
+         * @param EnableSecretVersionRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SecretVersion
+         * @throws \Google\Service\Exception
+         */
+        public function enable($name, EnableSecretVersionRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets metadata for a SecretVersion. `projects/secrets/versions/latest` is an
+         * alias to the most recently created SecretVersion. (versions.get)
+         *
+         * @param string $name Required. The resource name of the SecretVersion in the
+         * format `projects/secrets/versions` or `projects/locations/secrets/versions`.
+         * `projects/secrets/versions/latest` or
+         * `projects/locations/secrets/versions/latest` is an alias to the most recently
+         * created SecretVersion.
+         * @param array $optParams Optional parameters.
+         * @return SecretVersion
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists SecretVersions. This call does not return secret data.
+         * (versions.listProjectsLocationsSecretsVersions)
+         *
+         * @param string $parent Required. The resource name of the Secret associated
+         * with the SecretVersions to list, in the format `projects/secrets` or
+         * `projects/locations/secrets`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filter string, adhering to the rules in
+         * [List-operation filtering](https://cloud.google.com/secret-
+         * manager/docs/filtering). List only secret versions matching the filter. If
+         * filter is empty, all secret versions are listed.
+         * @opt_param int pageSize Optional. The maximum number of results to be
+         * returned in a single page. If set to 0, the server decides the number of
+         * results to return. If the number is greater than 25000, it is capped at
+         * 25000.
+         * @opt_param string pageToken Optional. Pagination token, returned earlier via
+         * ListSecretVersionsResponse.next_page_token][].
+         * @return ListSecretVersionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsSecretsVersions($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Destroys a SecretVersion. Sets the state of the SecretVersion to DESTROYED
-     * and irrevocably destroys the secret data. (versions.destroy)
-     *
-     * @param string $name Required. The resource name of the SecretVersion to
-     * destroy in the format `projects/secrets/versions` or
-     * `projects/locations/secrets/versions`.
-     * @param DestroySecretVersionRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SecretVersion
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\SecretManager\Resource\ProjectsLocationsSecretsVersions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function destroy($name, DestroySecretVersionRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Disables a SecretVersion. Sets the state of the SecretVersion to DISABLED.
-     * (versions.disable)
-     *
-     * @param string $name Required. The resource name of the SecretVersion to
-     * disable in the format `projects/secrets/versions` or
-     * `projects/locations/secrets/versions`.
-     * @param DisableSecretVersionRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SecretVersion
-     * @throws \Google\Service\Exception
-     */
-    public function disable($name, DisableSecretVersionRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Enables a SecretVersion. Sets the state of the SecretVersion to ENABLED.
-     * (versions.enable)
-     *
-     * @param string $name Required. The resource name of the SecretVersion to
-     * enable in the format `projects/secrets/versions` or
-     * `projects/locations/secrets/versions`.
-     * @param EnableSecretVersionRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SecretVersion
-     * @throws \Google\Service\Exception
-     */
-    public function enable($name, EnableSecretVersionRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Gets metadata for a SecretVersion. `projects/secrets/versions/latest` is an
-     * alias to the most recently created SecretVersion. (versions.get)
-     *
-     * @param string $name Required. The resource name of the SecretVersion in the
-     * format `projects/secrets/versions` or `projects/locations/secrets/versions`.
-     * `projects/secrets/versions/latest` or
-     * `projects/locations/secrets/versions/latest` is an alias to the most recently
-     * created SecretVersion.
-     * @param array $optParams Optional parameters.
-     * @return SecretVersion
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists SecretVersions. This call does not return secret data.
-     * (versions.listProjectsLocationsSecretsVersions)
-     *
-     * @param string $parent Required. The resource name of the Secret associated
-     * with the SecretVersions to list, in the format `projects/secrets` or
-     * `projects/locations/secrets`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filter string, adhering to the rules in
-     * [List-operation filtering](https://cloud.google.com/secret-
-     * manager/docs/filtering). List only secret versions matching the filter. If
-     * filter is empty, all secret versions are listed.
-     * @opt_param int pageSize Optional. The maximum number of results to be
-     * returned in a single page. If set to 0, the server decides the number of
-     * results to return. If the number is greater than 25000, it is capped at
-     * 25000.
-     * @opt_param string pageToken Optional. Pagination token, returned earlier via
-     * ListSecretVersionsResponse.next_page_token][].
-     * @return ListSecretVersionsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsSecretsVersions($parent, $optParams = [])
+    class Google_Service_SecretManager_Resource_ProjectsLocationsSecretsVersions extends \Google\Service\SecretManager\Resource\ProjectsLocationsSecretsVersions
     {
     }
 }

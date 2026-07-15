@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementVersionsV1alpha1SignDataResponse extends \Google\Model
-{
-    protected $certificateProvisioningProcessType = GoogleChromeManagementVersionsV1alpha1CertificateProvisioningProcess::class;
-    protected $certificateProvisioningProcessDataType = '';
-    /**
-     * @param GoogleChromeManagementVersionsV1alpha1CertificateProvisioningProcess
-     */
-    public function setCertificateProvisioningProcess(GoogleChromeManagementVersionsV1alpha1CertificateProvisioningProcess $certificateProvisioningProcess)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementVersionsV1alpha1SignDataResponse extends \Google\Model
     {
+        protected $certificateProvisioningProcessType = GoogleChromeManagementVersionsV1alpha1CertificateProvisioningProcess::class;
+        protected $certificateProvisioningProcessDataType = '';
+        /**
+         * @param GoogleChromeManagementVersionsV1alpha1CertificateProvisioningProcess
+         */
+        public function setCertificateProvisioningProcess(GoogleChromeManagementVersionsV1alpha1CertificateProvisioningProcess $certificateProvisioningProcess)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementVersionsV1alpha1CertificateProvisioningProcess
+         */
+        public function getCertificateProvisioningProcess()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromeManagementVersionsV1alpha1CertificateProvisioningProcess
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1alpha1SignDataResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificateProvisioningProcess()
+    class Google_Service_ChromeManagement_GoogleChromeManagementVersionsV1alpha1SignDataResponse extends \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1alpha1SignDataResponse
     {
     }
 }

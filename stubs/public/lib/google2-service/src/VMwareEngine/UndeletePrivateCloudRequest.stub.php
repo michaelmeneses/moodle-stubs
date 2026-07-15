@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class UndeletePrivateCloudRequest extends \Google\Model
-{
-    /**
-     * Optional. The request ID must be a valid UUID with the exception that zero
-     * UUID is not supported (00000000-0000-0000-0000-000000000000).
-     *
-     * @var string
-     */
-    public $requestId;
-    /**
-     * Optional. The request ID must be a valid UUID with the exception that zero
-     * UUID is not supported (00000000-0000-0000-0000-000000000000).
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
+namespace Google\Service\VMwareEngine {
+    class UndeletePrivateCloudRequest extends \Google\Model
     {
+        /**
+         * Optional. The request ID must be a valid UUID with the exception that zero
+         * UUID is not supported (00000000-0000-0000-0000-000000000000).
+         *
+         * @var string
+         */
+        public $requestId;
+        /**
+         * Optional. The request ID must be a valid UUID with the exception that zero
+         * UUID is not supported (00000000-0000-0000-0000-000000000000).
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMwareEngine\UndeletePrivateCloudRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequestId()
+    class Google_Service_VMwareEngine_UndeletePrivateCloudRequest extends \Google\Service\VMwareEngine\UndeletePrivateCloudRequest
     {
     }
 }

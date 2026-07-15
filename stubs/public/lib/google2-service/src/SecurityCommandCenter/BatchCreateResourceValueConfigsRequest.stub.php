@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class BatchCreateResourceValueConfigsRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = CreateResourceValueConfigRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * Required. The resource value configs to be created.
-     *
-     * @param CreateResourceValueConfigRequest[] $requests
-     */
-    public function setRequests($requests)
+namespace Google\Service\SecurityCommandCenter {
+    class BatchCreateResourceValueConfigsRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = CreateResourceValueConfigRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * Required. The resource value configs to be created.
+         *
+         * @param CreateResourceValueConfigRequest[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return CreateResourceValueConfigRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CreateResourceValueConfigRequest[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\BatchCreateResourceValueConfigsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_SecurityCommandCenter_BatchCreateResourceValueConfigsRequest extends \Google\Service\SecurityCommandCenter\BatchCreateResourceValueConfigsRequest
     {
     }
 }

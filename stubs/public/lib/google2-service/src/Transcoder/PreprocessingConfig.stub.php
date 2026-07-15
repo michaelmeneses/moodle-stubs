@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class PreprocessingConfig extends \Google\Model
-{
-    protected $audioType = Audio::class;
-    protected $audioDataType = '';
-    protected $colorType = Color::class;
-    protected $colorDataType = '';
-    protected $cropType = Crop::class;
-    protected $cropDataType = '';
-    protected $deblockType = Deblock::class;
-    protected $deblockDataType = '';
-    protected $deinterlaceType = Deinterlace::class;
-    protected $deinterlaceDataType = '';
-    protected $denoiseType = Denoise::class;
-    protected $denoiseDataType = '';
-    protected $padType = Pad::class;
-    protected $padDataType = '';
-    /**
-     * Audio preprocessing configuration.
-     *
-     * @param Audio $audio
-     */
-    public function setAudio(Audio $audio)
+namespace Google\Service\Transcoder {
+    class PreprocessingConfig extends \Google\Model
     {
+        protected $audioType = Audio::class;
+        protected $audioDataType = '';
+        protected $colorType = Color::class;
+        protected $colorDataType = '';
+        protected $cropType = Crop::class;
+        protected $cropDataType = '';
+        protected $deblockType = Deblock::class;
+        protected $deblockDataType = '';
+        protected $deinterlaceType = Deinterlace::class;
+        protected $deinterlaceDataType = '';
+        protected $denoiseType = Denoise::class;
+        protected $denoiseDataType = '';
+        protected $padType = Pad::class;
+        protected $padDataType = '';
+        /**
+         * Audio preprocessing configuration.
+         *
+         * @param Audio $audio
+         */
+        public function setAudio(Audio $audio)
+        {
+        }
+        /**
+         * @return Audio
+         */
+        public function getAudio()
+        {
+        }
+        /**
+         * Color preprocessing configuration.
+         *
+         * @param Color $color
+         */
+        public function setColor(Color $color)
+        {
+        }
+        /**
+         * @return Color
+         */
+        public function getColor()
+        {
+        }
+        /**
+         * Specify the video cropping configuration.
+         *
+         * @param Crop $crop
+         */
+        public function setCrop(Crop $crop)
+        {
+        }
+        /**
+         * @return Crop
+         */
+        public function getCrop()
+        {
+        }
+        /**
+         * Deblock preprocessing configuration.
+         *
+         * @param Deblock $deblock
+         */
+        public function setDeblock(Deblock $deblock)
+        {
+        }
+        /**
+         * @return Deblock
+         */
+        public function getDeblock()
+        {
+        }
+        /**
+         * Specify the video deinterlace configuration.
+         *
+         * @param Deinterlace $deinterlace
+         */
+        public function setDeinterlace(Deinterlace $deinterlace)
+        {
+        }
+        /**
+         * @return Deinterlace
+         */
+        public function getDeinterlace()
+        {
+        }
+        /**
+         * Denoise preprocessing configuration.
+         *
+         * @param Denoise $denoise
+         */
+        public function setDenoise(Denoise $denoise)
+        {
+        }
+        /**
+         * @return Denoise
+         */
+        public function getDenoise()
+        {
+        }
+        /**
+         * Specify the video pad filter configuration.
+         *
+         * @param Pad $pad
+         */
+        public function setPad(Pad $pad)
+        {
+        }
+        /**
+         * @return Pad
+         */
+        public function getPad()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Audio
+     * Runtime class alias of \Google\Service\Transcoder\PreprocessingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAudio()
-    {
-    }
-    /**
-     * Color preprocessing configuration.
-     *
-     * @param Color $color
-     */
-    public function setColor(Color $color)
-    {
-    }
-    /**
-     * @return Color
-     */
-    public function getColor()
-    {
-    }
-    /**
-     * Specify the video cropping configuration.
-     *
-     * @param Crop $crop
-     */
-    public function setCrop(Crop $crop)
-    {
-    }
-    /**
-     * @return Crop
-     */
-    public function getCrop()
-    {
-    }
-    /**
-     * Deblock preprocessing configuration.
-     *
-     * @param Deblock $deblock
-     */
-    public function setDeblock(Deblock $deblock)
-    {
-    }
-    /**
-     * @return Deblock
-     */
-    public function getDeblock()
-    {
-    }
-    /**
-     * Specify the video deinterlace configuration.
-     *
-     * @param Deinterlace $deinterlace
-     */
-    public function setDeinterlace(Deinterlace $deinterlace)
-    {
-    }
-    /**
-     * @return Deinterlace
-     */
-    public function getDeinterlace()
-    {
-    }
-    /**
-     * Denoise preprocessing configuration.
-     *
-     * @param Denoise $denoise
-     */
-    public function setDenoise(Denoise $denoise)
-    {
-    }
-    /**
-     * @return Denoise
-     */
-    public function getDenoise()
-    {
-    }
-    /**
-     * Specify the video pad filter configuration.
-     *
-     * @param Pad $pad
-     */
-    public function setPad(Pad $pad)
-    {
-    }
-    /**
-     * @return Pad
-     */
-    public function getPad()
+    class Google_Service_Transcoder_PreprocessingConfig extends \Google\Service\Transcoder\PreprocessingConfig
     {
     }
 }

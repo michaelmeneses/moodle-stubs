@@ -21,78 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager\Resource;
-
-/**
- * The "user_permissions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $tagmanagerService = new Google\Service\TagManager(...);
- *   $user_permissions = $tagmanagerService->accounts_user_permissions;
- *  </code>
- */
-class AccountsUserPermissions extends \Google\Service\Resource
-{
+namespace Google\Service\TagManager\Resource {
+    use Google\Service\TagManager\ListUserPermissionsResponse;
+    use Google\Service\TagManager\UserPermission;
     /**
-     * Creates a user's Account & Container access. (user_permissions.create)
-     *
-     * @param string $parent GTM Account's API relative path.
-     * @param UserPermission $postBody
-     * @param array $optParams Optional parameters.
-     * @return UserPermission
-     * @throws \Google\Service\Exception
+     * The "user_permissions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $tagmanagerService = new Google\Service\TagManager(...);
+     *   $user_permissions = $tagmanagerService->accounts_user_permissions;
+     *  </code>
      */
-    public function create($parent, UserPermission $postBody, $optParams = [])
+    class AccountsUserPermissions extends \Google\Service\Resource
     {
+        /**
+         * Creates a user's Account & Container access. (user_permissions.create)
+         *
+         * @param string $parent GTM Account's API relative path.
+         * @param UserPermission $postBody
+         * @param array $optParams Optional parameters.
+         * @return UserPermission
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, UserPermission $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Removes a user from the account, revoking access to it and all of its
+         * containers. (user_permissions.delete)
+         *
+         * @param string $path GTM UserPermission's API relative path.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($path, $optParams = [])
+        {
+        }
+        /**
+         * Gets a user's Account & Container access. (user_permissions.get)
+         *
+         * @param string $path GTM UserPermission's API relative path.
+         * @param array $optParams Optional parameters.
+         * @return UserPermission
+         * @throws \Google\Service\Exception
+         */
+        public function get($path, $optParams = [])
+        {
+        }
+        /**
+         * List all users that have access to the account along with Account and
+         * Container user access granted to each of them.
+         * (user_permissions.listAccountsUserPermissions)
+         *
+         * @param string $parent GTM Account's API relative path.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string pageToken Continuation token for fetching the next page of
+         * results.
+         * @return ListUserPermissionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsUserPermissions($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a user's Account & Container access. (user_permissions.update)
+         *
+         * @param string $path GTM UserPermission's API relative path.
+         * @param UserPermission $postBody
+         * @param array $optParams Optional parameters.
+         * @return UserPermission
+         * @throws \Google\Service\Exception
+         */
+        public function update($path, UserPermission $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Removes a user from the account, revoking access to it and all of its
-     * containers. (user_permissions.delete)
-     *
-     * @param string $path GTM UserPermission's API relative path.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\TagManager\Resource\AccountsUserPermissions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($path, $optParams = [])
-    {
-    }
-    /**
-     * Gets a user's Account & Container access. (user_permissions.get)
-     *
-     * @param string $path GTM UserPermission's API relative path.
-     * @param array $optParams Optional parameters.
-     * @return UserPermission
-     * @throws \Google\Service\Exception
-     */
-    public function get($path, $optParams = [])
-    {
-    }
-    /**
-     * List all users that have access to the account along with Account and
-     * Container user access granted to each of them.
-     * (user_permissions.listAccountsUserPermissions)
-     *
-     * @param string $parent GTM Account's API relative path.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string pageToken Continuation token for fetching the next page of
-     * results.
-     * @return ListUserPermissionsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAccountsUserPermissions($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a user's Account & Container access. (user_permissions.update)
-     *
-     * @param string $path GTM UserPermission's API relative path.
-     * @param UserPermission $postBody
-     * @param array $optParams Optional parameters.
-     * @return UserPermission
-     * @throws \Google\Service\Exception
-     */
-    public function update($path, UserPermission $postBody, $optParams = [])
+    class Google_Service_TagManager_Resource_AccountsUserPermissions extends \Google\Service\TagManager\Resource\AccountsUserPermissions
     {
     }
 }

@@ -21,45 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU\Resource;
-
-/**
- * The "runtimeVersions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $tpuService = new Google\Service\TPU(...);
- *   $runtimeVersions = $tpuService->projects_locations_runtimeVersions;
- *  </code>
- */
-class ProjectsLocationsRuntimeVersions extends \Google\Service\Resource
-{
+namespace Google\Service\TPU\Resource {
+    use Google\Service\TPU\ListRuntimeVersionsResponse;
+    use Google\Service\TPU\RuntimeVersion;
     /**
-     * Gets a runtime version. (runtimeVersions.get)
-     *
-     * @param string $name Required. The resource name.
-     * @param array $optParams Optional parameters.
-     * @return RuntimeVersion
-     * @throws \Google\Service\Exception
+     * The "runtimeVersions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $tpuService = new Google\Service\TPU(...);
+     *   $runtimeVersions = $tpuService->projects_locations_runtimeVersions;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsRuntimeVersions extends \Google\Service\Resource
     {
+        /**
+         * Gets a runtime version. (runtimeVersions.get)
+         *
+         * @param string $name Required. The resource name.
+         * @param array $optParams Optional parameters.
+         * @return RuntimeVersion
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists runtime versions supported by this API.
+         * (runtimeVersions.listProjectsLocationsRuntimeVersions)
+         *
+         * @param string $parent Required. The parent resource name.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter List filter.
+         * @opt_param string orderBy Sort results.
+         * @opt_param int pageSize The maximum number of items to return.
+         * @opt_param string pageToken The next_page_token value returned from a
+         * previous List request, if any.
+         * @return ListRuntimeVersionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsRuntimeVersions($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists runtime versions supported by this API.
-     * (runtimeVersions.listProjectsLocationsRuntimeVersions)
-     *
-     * @param string $parent Required. The parent resource name.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter List filter.
-     * @opt_param string orderBy Sort results.
-     * @opt_param int pageSize The maximum number of items to return.
-     * @opt_param string pageToken The next_page_token value returned from a
-     * previous List request, if any.
-     * @return ListRuntimeVersionsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\TPU\Resource\ProjectsLocationsRuntimeVersions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsRuntimeVersions($parent, $optParams = [])
+    class Google_Service_TPU_Resource_ProjectsLocationsRuntimeVersions extends \Google\Service\TPU\Resource\ProjectsLocationsRuntimeVersions
     {
     }
 }

@@ -21,20 +21,29 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PagespeedInsights;
-
-class Timing extends \Google\Model
-{
-    /**
-     * The total duration of Lighthouse's run.
-     *
-     * @var 
-     */
-    public $total;
-    public function setTotal($total)
+namespace Google\Service\PagespeedInsights {
+    class Timing extends \Google\Model
     {
+        /**
+         * The total duration of Lighthouse's run.
+         *
+         * @var 
+         */
+        public $total;
+        public function setTotal($total)
+        {
+        }
+        public function getTotal()
+        {
+        }
     }
-    public function getTotal()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PagespeedInsights\Timing registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PagespeedInsights_Timing extends \Google\Service\PagespeedInsights\Timing
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class MysqlDatabase extends \Google\Collection
-{
-    protected $collection_key = 'mysqlTables';
-    /**
-     * Database name.
-     *
-     * @var string
-     */
-    public $database;
-    protected $mysqlTablesType = MysqlTable::class;
-    protected $mysqlTablesDataType = 'array';
-    /**
-     * Database name.
-     *
-     * @param string $database
-     */
-    public function setDatabase($database)
+namespace Google\Service\Datastream {
+    class MysqlDatabase extends \Google\Collection
     {
+        protected $collection_key = 'mysqlTables';
+        /**
+         * Database name.
+         *
+         * @var string
+         */
+        public $database;
+        protected $mysqlTablesType = MysqlTable::class;
+        protected $mysqlTablesDataType = 'array';
+        /**
+         * Database name.
+         *
+         * @param string $database
+         */
+        public function setDatabase($database)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabase()
+        {
+        }
+        /**
+         * Tables in the database.
+         *
+         * @param MysqlTable[] $mysqlTables
+         */
+        public function setMysqlTables($mysqlTables)
+        {
+        }
+        /**
+         * @return MysqlTable[]
+         */
+        public function getMysqlTables()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\MysqlDatabase registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabase()
-    {
-    }
-    /**
-     * Tables in the database.
-     *
-     * @param MysqlTable[] $mysqlTables
-     */
-    public function setMysqlTables($mysqlTables)
-    {
-    }
-    /**
-     * @return MysqlTable[]
-     */
-    public function getMysqlTables()
+    class Google_Service_Datastream_MysqlDatabase extends \Google\Service\Datastream\MysqlDatabase
     {
     }
 }

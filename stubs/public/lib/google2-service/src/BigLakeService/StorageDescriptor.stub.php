@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigLakeService;
-
-class StorageDescriptor extends \Google\Model
-{
-    /**
-     * The fully qualified Java class name of the input format.
-     *
-     * @var string
-     */
-    public $inputFormat;
-    /**
-     * Cloud Storage folder URI where the table data is stored, starting with
-     * "gs://".
-     *
-     * @var string
-     */
-    public $locationUri;
-    /**
-     * The fully qualified Java class name of the output format.
-     *
-     * @var string
-     */
-    public $outputFormat;
-    protected $serdeInfoType = SerDeInfo::class;
-    protected $serdeInfoDataType = '';
-    /**
-     * The fully qualified Java class name of the input format.
-     *
-     * @param string $inputFormat
-     */
-    public function setInputFormat($inputFormat)
+namespace Google\Service\BigLakeService {
+    class StorageDescriptor extends \Google\Model
     {
+        /**
+         * The fully qualified Java class name of the input format.
+         *
+         * @var string
+         */
+        public $inputFormat;
+        /**
+         * Cloud Storage folder URI where the table data is stored, starting with
+         * "gs://".
+         *
+         * @var string
+         */
+        public $locationUri;
+        /**
+         * The fully qualified Java class name of the output format.
+         *
+         * @var string
+         */
+        public $outputFormat;
+        protected $serdeInfoType = SerDeInfo::class;
+        protected $serdeInfoDataType = '';
+        /**
+         * The fully qualified Java class name of the input format.
+         *
+         * @param string $inputFormat
+         */
+        public function setInputFormat($inputFormat)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInputFormat()
+        {
+        }
+        /**
+         * Cloud Storage folder URI where the table data is stored, starting with
+         * "gs://".
+         *
+         * @param string $locationUri
+         */
+        public function setLocationUri($locationUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocationUri()
+        {
+        }
+        /**
+         * The fully qualified Java class name of the output format.
+         *
+         * @param string $outputFormat
+         */
+        public function setOutputFormat($outputFormat)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputFormat()
+        {
+        }
+        /**
+         * Serializer and deserializer information.
+         *
+         * @param SerDeInfo $serdeInfo
+         */
+        public function setSerdeInfo(SerDeInfo $serdeInfo)
+        {
+        }
+        /**
+         * @return SerDeInfo
+         */
+        public function getSerdeInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigLakeService\StorageDescriptor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputFormat()
-    {
-    }
-    /**
-     * Cloud Storage folder URI where the table data is stored, starting with
-     * "gs://".
-     *
-     * @param string $locationUri
-     */
-    public function setLocationUri($locationUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocationUri()
-    {
-    }
-    /**
-     * The fully qualified Java class name of the output format.
-     *
-     * @param string $outputFormat
-     */
-    public function setOutputFormat($outputFormat)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutputFormat()
-    {
-    }
-    /**
-     * Serializer and deserializer information.
-     *
-     * @param SerDeInfo $serdeInfo
-     */
-    public function setSerdeInfo(SerDeInfo $serdeInfo)
-    {
-    }
-    /**
-     * @return SerDeInfo
-     */
-    public function getSerdeInfo()
+    class Google_Service_BigLakeService_StorageDescriptor extends \Google\Service\BigLakeService\StorageDescriptor
     {
     }
 }

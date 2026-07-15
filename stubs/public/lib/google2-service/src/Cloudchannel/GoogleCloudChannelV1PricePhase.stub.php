@@ -21,119 +21,128 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1PricePhase extends \Google\Collection
-{
-    /**
-     * Not used.
-     */
-    public const PERIOD_TYPE_PERIOD_TYPE_UNSPECIFIED = 'PERIOD_TYPE_UNSPECIFIED';
-    /**
-     * Day.
-     */
-    public const PERIOD_TYPE_DAY = 'DAY';
-    /**
-     * Month.
-     */
-    public const PERIOD_TYPE_MONTH = 'MONTH';
-    /**
-     * Year.
-     */
-    public const PERIOD_TYPE_YEAR = 'YEAR';
-    protected $collection_key = 'priceTiers';
-    /**
-     * Defines first period for the phase.
-     *
-     * @var int
-     */
-    public $firstPeriod;
-    /**
-     * Defines first period for the phase.
-     *
-     * @var int
-     */
-    public $lastPeriod;
-    /**
-     * Defines the phase period type.
-     *
-     * @var string
-     */
-    public $periodType;
-    protected $priceType = GoogleCloudChannelV1Price::class;
-    protected $priceDataType = '';
-    protected $priceTiersType = GoogleCloudChannelV1PriceTier::class;
-    protected $priceTiersDataType = 'array';
-    /**
-     * Defines first period for the phase.
-     *
-     * @param int $firstPeriod
-     */
-    public function setFirstPeriod($firstPeriod)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1PricePhase extends \Google\Collection
     {
+        /**
+         * Not used.
+         */
+        public const PERIOD_TYPE_PERIOD_TYPE_UNSPECIFIED = 'PERIOD_TYPE_UNSPECIFIED';
+        /**
+         * Day.
+         */
+        public const PERIOD_TYPE_DAY = 'DAY';
+        /**
+         * Month.
+         */
+        public const PERIOD_TYPE_MONTH = 'MONTH';
+        /**
+         * Year.
+         */
+        public const PERIOD_TYPE_YEAR = 'YEAR';
+        protected $collection_key = 'priceTiers';
+        /**
+         * Defines first period for the phase.
+         *
+         * @var int
+         */
+        public $firstPeriod;
+        /**
+         * Defines first period for the phase.
+         *
+         * @var int
+         */
+        public $lastPeriod;
+        /**
+         * Defines the phase period type.
+         *
+         * @var string
+         */
+        public $periodType;
+        protected $priceType = GoogleCloudChannelV1Price::class;
+        protected $priceDataType = '';
+        protected $priceTiersType = GoogleCloudChannelV1PriceTier::class;
+        protected $priceTiersDataType = 'array';
+        /**
+         * Defines first period for the phase.
+         *
+         * @param int $firstPeriod
+         */
+        public function setFirstPeriod($firstPeriod)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFirstPeriod()
+        {
+        }
+        /**
+         * Defines first period for the phase.
+         *
+         * @param int $lastPeriod
+         */
+        public function setLastPeriod($lastPeriod)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLastPeriod()
+        {
+        }
+        /**
+         * Defines the phase period type.
+         *
+         * Accepted values: PERIOD_TYPE_UNSPECIFIED, DAY, MONTH, YEAR
+         *
+         * @param self::PERIOD_TYPE_* $periodType
+         */
+        public function setPeriodType($periodType)
+        {
+        }
+        /**
+         * @return self::PERIOD_TYPE_*
+         */
+        public function getPeriodType()
+        {
+        }
+        /**
+         * Price of the phase. Present if there are no price tiers.
+         *
+         * @param GoogleCloudChannelV1Price $price
+         */
+        public function setPrice(GoogleCloudChannelV1Price $price)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1Price
+         */
+        public function getPrice()
+        {
+        }
+        /**
+         * Price by the resource tiers.
+         *
+         * @param GoogleCloudChannelV1PriceTier[] $priceTiers
+         */
+        public function setPriceTiers($priceTiers)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1PriceTier[]
+         */
+        public function getPriceTiers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1PricePhase registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirstPeriod()
-    {
-    }
-    /**
-     * Defines first period for the phase.
-     *
-     * @param int $lastPeriod
-     */
-    public function setLastPeriod($lastPeriod)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLastPeriod()
-    {
-    }
-    /**
-     * Defines the phase period type.
-     *
-     * Accepted values: PERIOD_TYPE_UNSPECIFIED, DAY, MONTH, YEAR
-     *
-     * @param self::PERIOD_TYPE_* $periodType
-     */
-    public function setPeriodType($periodType)
-    {
-    }
-    /**
-     * @return self::PERIOD_TYPE_*
-     */
-    public function getPeriodType()
-    {
-    }
-    /**
-     * Price of the phase. Present if there are no price tiers.
-     *
-     * @param GoogleCloudChannelV1Price $price
-     */
-    public function setPrice(GoogleCloudChannelV1Price $price)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1Price
-     */
-    public function getPrice()
-    {
-    }
-    /**
-     * Price by the resource tiers.
-     *
-     * @param GoogleCloudChannelV1PriceTier[] $priceTiers
-     */
-    public function setPriceTiers($priceTiers)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1PriceTier[]
-     */
-    public function getPriceTiers()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1PricePhase extends \Google\Service\Cloudchannel\GoogleCloudChannelV1PricePhase
     {
     }
 }

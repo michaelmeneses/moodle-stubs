@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class BulkListAdGroupAssignedTargetingOptionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'adGroupAssignedTargetingOptions';
-    protected $adGroupAssignedTargetingOptionsType = AdGroupAssignedTargetingOption::class;
-    protected $adGroupAssignedTargetingOptionsDataType = 'array';
-    /**
-     * A token identifying the next page of results. This value should be
-     * specified as the pageToken in a subsequent call to
-     * `BulkListAdGroupAssignedTargetingOptions` to fetch the next page of
-     * results. This token will be absent if there are no more
-     * AdGroupAssignedTargetingOption resources to return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of wrapper objects, each providing an assigned targeting option
-     * and the ad group it is assigned to. This list will be absent if empty.
-     *
-     * @param AdGroupAssignedTargetingOption[] $adGroupAssignedTargetingOptions
-     */
-    public function setAdGroupAssignedTargetingOptions($adGroupAssignedTargetingOptions)
+namespace Google\Service\DisplayVideo {
+    class BulkListAdGroupAssignedTargetingOptionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'adGroupAssignedTargetingOptions';
+        protected $adGroupAssignedTargetingOptionsType = AdGroupAssignedTargetingOption::class;
+        protected $adGroupAssignedTargetingOptionsDataType = 'array';
+        /**
+         * A token identifying the next page of results. This value should be
+         * specified as the pageToken in a subsequent call to
+         * `BulkListAdGroupAssignedTargetingOptions` to fetch the next page of
+         * results. This token will be absent if there are no more
+         * AdGroupAssignedTargetingOption resources to return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of wrapper objects, each providing an assigned targeting option
+         * and the ad group it is assigned to. This list will be absent if empty.
+         *
+         * @param AdGroupAssignedTargetingOption[] $adGroupAssignedTargetingOptions
+         */
+        public function setAdGroupAssignedTargetingOptions($adGroupAssignedTargetingOptions)
+        {
+        }
+        /**
+         * @return AdGroupAssignedTargetingOption[]
+         */
+        public function getAdGroupAssignedTargetingOptions()
+        {
+        }
+        /**
+         * A token identifying the next page of results. This value should be
+         * specified as the pageToken in a subsequent call to
+         * `BulkListAdGroupAssignedTargetingOptions` to fetch the next page of
+         * results. This token will be absent if there are no more
+         * AdGroupAssignedTargetingOption resources to return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdGroupAssignedTargetingOption[]
+     * Runtime class alias of \Google\Service\DisplayVideo\BulkListAdGroupAssignedTargetingOptionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdGroupAssignedTargetingOptions()
-    {
-    }
-    /**
-     * A token identifying the next page of results. This value should be
-     * specified as the pageToken in a subsequent call to
-     * `BulkListAdGroupAssignedTargetingOptions` to fetch the next page of
-     * results. This token will be absent if there are no more
-     * AdGroupAssignedTargetingOption resources to return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DisplayVideo_BulkListAdGroupAssignedTargetingOptionsResponse extends \Google\Service\DisplayVideo\BulkListAdGroupAssignedTargetingOptionsResponse
     {
     }
 }

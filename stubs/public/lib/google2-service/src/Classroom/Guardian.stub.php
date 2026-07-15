@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class Guardian extends \Google\Model
-{
-    /**
-     * Identifier for the guardian.
-     *
-     * @var string
-     */
-    public $guardianId;
-    protected $guardianProfileType = UserProfile::class;
-    protected $guardianProfileDataType = '';
-    /**
-     * The email address to which the initial guardian invitation was sent. This
-     * field is only visible to domain administrators.
-     *
-     * @var string
-     */
-    public $invitedEmailAddress;
-    /**
-     * Identifier for the student to whom the guardian relationship applies.
-     *
-     * @var string
-     */
-    public $studentId;
-    /**
-     * Identifier for the guardian.
-     *
-     * @param string $guardianId
-     */
-    public function setGuardianId($guardianId)
+namespace Google\Service\Classroom {
+    class Guardian extends \Google\Model
     {
+        /**
+         * Identifier for the guardian.
+         *
+         * @var string
+         */
+        public $guardianId;
+        protected $guardianProfileType = UserProfile::class;
+        protected $guardianProfileDataType = '';
+        /**
+         * The email address to which the initial guardian invitation was sent. This
+         * field is only visible to domain administrators.
+         *
+         * @var string
+         */
+        public $invitedEmailAddress;
+        /**
+         * Identifier for the student to whom the guardian relationship applies.
+         *
+         * @var string
+         */
+        public $studentId;
+        /**
+         * Identifier for the guardian.
+         *
+         * @param string $guardianId
+         */
+        public function setGuardianId($guardianId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGuardianId()
+        {
+        }
+        /**
+         * User profile for the guardian.
+         *
+         * @param UserProfile $guardianProfile
+         */
+        public function setGuardianProfile(UserProfile $guardianProfile)
+        {
+        }
+        /**
+         * @return UserProfile
+         */
+        public function getGuardianProfile()
+        {
+        }
+        /**
+         * The email address to which the initial guardian invitation was sent. This
+         * field is only visible to domain administrators.
+         *
+         * @param string $invitedEmailAddress
+         */
+        public function setInvitedEmailAddress($invitedEmailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInvitedEmailAddress()
+        {
+        }
+        /**
+         * Identifier for the student to whom the guardian relationship applies.
+         *
+         * @param string $studentId
+         */
+        public function setStudentId($studentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStudentId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\Guardian registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGuardianId()
-    {
-    }
-    /**
-     * User profile for the guardian.
-     *
-     * @param UserProfile $guardianProfile
-     */
-    public function setGuardianProfile(UserProfile $guardianProfile)
-    {
-    }
-    /**
-     * @return UserProfile
-     */
-    public function getGuardianProfile()
-    {
-    }
-    /**
-     * The email address to which the initial guardian invitation was sent. This
-     * field is only visible to domain administrators.
-     *
-     * @param string $invitedEmailAddress
-     */
-    public function setInvitedEmailAddress($invitedEmailAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInvitedEmailAddress()
-    {
-    }
-    /**
-     * Identifier for the student to whom the guardian relationship applies.
-     *
-     * @param string $studentId
-     */
-    public function setStudentId($studentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStudentId()
+    class Google_Service_Classroom_Guardian extends \Google\Service\Classroom\Guardian
     {
     }
 }

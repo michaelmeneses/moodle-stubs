@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class CreativeCorrections extends \Google\Collection
-{
-    protected $collection_key = 'details';
-    protected $contextsType = CreativeCorrectionsContexts::class;
-    protected $contextsDataType = 'array';
-    public $details;
-    public $reason;
+namespace Google\Service\AdExchangeBuyer {
+    class CreativeCorrections extends \Google\Collection
+    {
+        protected $collection_key = 'details';
+        protected $contextsType = CreativeCorrectionsContexts::class;
+        protected $contextsDataType = 'array';
+        public $details;
+        public $reason;
+        /**
+         * @param CreativeCorrectionsContexts[]
+         */
+        public function setContexts($contexts)
+        {
+        }
+        /**
+         * @return CreativeCorrectionsContexts[]
+         */
+        public function getContexts()
+        {
+        }
+        public function setDetails($details)
+        {
+        }
+        public function getDetails()
+        {
+        }
+        public function setReason($reason)
+        {
+        }
+        public function getReason()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param CreativeCorrectionsContexts[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\CreativeCorrections registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setContexts($contexts)
-    {
-    }
-    /**
-     * @return CreativeCorrectionsContexts[]
-     */
-    public function getContexts()
-    {
-    }
-    public function setDetails($details)
-    {
-    }
-    public function getDetails()
-    {
-    }
-    public function setReason($reason)
-    {
-    }
-    public function getReason()
+    class Google_Service_AdExchangeBuyer_CreativeCorrections extends \Google\Service\AdExchangeBuyer\CreativeCorrections
     {
     }
 }

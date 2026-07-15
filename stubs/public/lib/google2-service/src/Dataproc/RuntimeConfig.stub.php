@@ -21,126 +21,135 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class RuntimeConfig extends \Google\Model
-{
-    protected $autotuningConfigType = AutotuningConfig::class;
-    protected $autotuningConfigDataType = '';
-    /**
-     * Optional. Cohort identifier. Identifies families of the workloads having
-     * the same shape, e.g. daily ETL jobs.
-     *
-     * @var string
-     */
-    public $cohort;
-    /**
-     * Optional. Optional custom container image for the job runtime environment.
-     * If not specified, a default container image will be used.
-     *
-     * @var string
-     */
-    public $containerImage;
-    /**
-     * Optional. A mapping of property names to values, which are used to
-     * configure workload execution.
-     *
-     * @var string[]
-     */
-    public $properties;
-    protected $repositoryConfigType = RepositoryConfig::class;
-    protected $repositoryConfigDataType = '';
-    /**
-     * Optional. Version of the batch runtime.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Optional. Autotuning configuration of the workload.
-     *
-     * @param AutotuningConfig $autotuningConfig
-     */
-    public function setAutotuningConfig(AutotuningConfig $autotuningConfig)
+namespace Google\Service\Dataproc {
+    class RuntimeConfig extends \Google\Model
     {
+        protected $autotuningConfigType = AutotuningConfig::class;
+        protected $autotuningConfigDataType = '';
+        /**
+         * Optional. Cohort identifier. Identifies families of the workloads having
+         * the same shape, e.g. daily ETL jobs.
+         *
+         * @var string
+         */
+        public $cohort;
+        /**
+         * Optional. Optional custom container image for the job runtime environment.
+         * If not specified, a default container image will be used.
+         *
+         * @var string
+         */
+        public $containerImage;
+        /**
+         * Optional. A mapping of property names to values, which are used to
+         * configure workload execution.
+         *
+         * @var string[]
+         */
+        public $properties;
+        protected $repositoryConfigType = RepositoryConfig::class;
+        protected $repositoryConfigDataType = '';
+        /**
+         * Optional. Version of the batch runtime.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Optional. Autotuning configuration of the workload.
+         *
+         * @param AutotuningConfig $autotuningConfig
+         */
+        public function setAutotuningConfig(AutotuningConfig $autotuningConfig)
+        {
+        }
+        /**
+         * @return AutotuningConfig
+         */
+        public function getAutotuningConfig()
+        {
+        }
+        /**
+         * Optional. Cohort identifier. Identifies families of the workloads having
+         * the same shape, e.g. daily ETL jobs.
+         *
+         * @param string $cohort
+         */
+        public function setCohort($cohort)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCohort()
+        {
+        }
+        /**
+         * Optional. Optional custom container image for the job runtime environment.
+         * If not specified, a default container image will be used.
+         *
+         * @param string $containerImage
+         */
+        public function setContainerImage($containerImage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContainerImage()
+        {
+        }
+        /**
+         * Optional. A mapping of property names to values, which are used to
+         * configure workload execution.
+         *
+         * @param string[] $properties
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProperties()
+        {
+        }
+        /**
+         * Optional. Dependency repository configuration.
+         *
+         * @param RepositoryConfig $repositoryConfig
+         */
+        public function setRepositoryConfig(RepositoryConfig $repositoryConfig)
+        {
+        }
+        /**
+         * @return RepositoryConfig
+         */
+        public function getRepositoryConfig()
+        {
+        }
+        /**
+         * Optional. Version of the batch runtime.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AutotuningConfig
+     * Runtime class alias of \Google\Service\Dataproc\RuntimeConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutotuningConfig()
-    {
-    }
-    /**
-     * Optional. Cohort identifier. Identifies families of the workloads having
-     * the same shape, e.g. daily ETL jobs.
-     *
-     * @param string $cohort
-     */
-    public function setCohort($cohort)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCohort()
-    {
-    }
-    /**
-     * Optional. Optional custom container image for the job runtime environment.
-     * If not specified, a default container image will be used.
-     *
-     * @param string $containerImage
-     */
-    public function setContainerImage($containerImage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContainerImage()
-    {
-    }
-    /**
-     * Optional. A mapping of property names to values, which are used to
-     * configure workload execution.
-     *
-     * @param string[] $properties
-     */
-    public function setProperties($properties)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProperties()
-    {
-    }
-    /**
-     * Optional. Dependency repository configuration.
-     *
-     * @param RepositoryConfig $repositoryConfig
-     */
-    public function setRepositoryConfig(RepositoryConfig $repositoryConfig)
-    {
-    }
-    /**
-     * @return RepositoryConfig
-     */
-    public function getRepositoryConfig()
-    {
-    }
-    /**
-     * Optional. Version of the batch runtime.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_Dataproc_RuntimeConfig extends \Google\Service\Dataproc\RuntimeConfig
     {
     }
 }

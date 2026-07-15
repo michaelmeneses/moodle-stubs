@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1RuntimeAnnotationUserInput extends \Google\Model
-{
-    /**
-     * Unknown query source.
-     */
-    public const QUERY_SOURCE_QUERY_SOURCE_UNSPECIFIED = 'QUERY_SOURCE_UNSPECIFIED';
-    /**
-     * The query is from agents.
-     */
-    public const QUERY_SOURCE_AGENT_QUERY = 'AGENT_QUERY';
-    /**
-     * The query is a query from previous suggestions, e.g. from a preceding
-     * SuggestKnowledgeAssist response.
-     */
-    public const QUERY_SOURCE_SUGGESTED_QUERY = 'SUGGESTED_QUERY';
-    /**
-     * The resource name of associated generator. Format:
-     * `projects//locations//generators/`
-     *
-     * @var string
-     */
-    public $generatorName;
-    /**
-     * Query text. Article Search uses this to store the input query used to
-     * generate the search results.
-     *
-     * @var string
-     */
-    public $query;
-    /**
-     * Query source for the answer.
-     *
-     * @var string
-     */
-    public $querySource;
-    /**
-     * The resource name of associated generator. Format:
-     * `projects//locations//generators/`
-     *
-     * @param string $generatorName
-     */
-    public function setGeneratorName($generatorName)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1RuntimeAnnotationUserInput extends \Google\Model
     {
+        /**
+         * Unknown query source.
+         */
+        public const QUERY_SOURCE_QUERY_SOURCE_UNSPECIFIED = 'QUERY_SOURCE_UNSPECIFIED';
+        /**
+         * The query is from agents.
+         */
+        public const QUERY_SOURCE_AGENT_QUERY = 'AGENT_QUERY';
+        /**
+         * The query is a query from previous suggestions, e.g. from a preceding
+         * SuggestKnowledgeAssist response.
+         */
+        public const QUERY_SOURCE_SUGGESTED_QUERY = 'SUGGESTED_QUERY';
+        /**
+         * The resource name of associated generator. Format:
+         * `projects//locations//generators/`
+         *
+         * @var string
+         */
+        public $generatorName;
+        /**
+         * Query text. Article Search uses this to store the input query used to
+         * generate the search results.
+         *
+         * @var string
+         */
+        public $query;
+        /**
+         * Query source for the answer.
+         *
+         * @var string
+         */
+        public $querySource;
+        /**
+         * The resource name of associated generator. Format:
+         * `projects//locations//generators/`
+         *
+         * @param string $generatorName
+         */
+        public function setGeneratorName($generatorName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeneratorName()
+        {
+        }
+        /**
+         * Query text. Article Search uses this to store the input query used to
+         * generate the search results.
+         *
+         * @param string $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
+        /**
+         * Query source for the answer.
+         *
+         * Accepted values: QUERY_SOURCE_UNSPECIFIED, AGENT_QUERY, SUGGESTED_QUERY
+         *
+         * @param self::QUERY_SOURCE_* $querySource
+         */
+        public function setQuerySource($querySource)
+        {
+        }
+        /**
+         * @return self::QUERY_SOURCE_*
+         */
+        public function getQuerySource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1RuntimeAnnotationUserInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGeneratorName()
-    {
-    }
-    /**
-     * Query text. Article Search uses this to store the input query used to
-     * generate the search results.
-     *
-     * @param string $query
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuery()
-    {
-    }
-    /**
-     * Query source for the answer.
-     *
-     * Accepted values: QUERY_SOURCE_UNSPECIFIED, AGENT_QUERY, SUGGESTED_QUERY
-     *
-     * @param self::QUERY_SOURCE_* $querySource
-     */
-    public function setQuerySource($querySource)
-    {
-    }
-    /**
-     * @return self::QUERY_SOURCE_*
-     */
-    public function getQuerySource()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1RuntimeAnnotationUserInput extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1RuntimeAnnotationUserInput
     {
     }
 }

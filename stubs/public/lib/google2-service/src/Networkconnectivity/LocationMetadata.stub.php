@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class LocationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'locationFeatures';
-    /**
-     * List of supported features
-     *
-     * @var string[]
-     */
-    public $locationFeatures;
-    /**
-     * List of supported features
-     *
-     * @param string[] $locationFeatures
-     */
-    public function setLocationFeatures($locationFeatures)
+namespace Google\Service\Networkconnectivity {
+    class LocationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'locationFeatures';
+        /**
+         * List of supported features
+         *
+         * @var string[]
+         */
+        public $locationFeatures;
+        /**
+         * List of supported features
+         *
+         * @param string[] $locationFeatures
+         */
+        public function setLocationFeatures($locationFeatures)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLocationFeatures()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Networkconnectivity\LocationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocationFeatures()
+    class Google_Service_Networkconnectivity_LocationMetadata extends \Google\Service\Networkconnectivity\LocationMetadata
     {
     }
 }

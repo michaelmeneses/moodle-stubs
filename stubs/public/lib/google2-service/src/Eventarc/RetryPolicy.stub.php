@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Eventarc;
-
-class RetryPolicy extends \Google\Model
-{
-    /**
-     * Optional. The maximum number of delivery attempts for any message. The only
-     * valid value is 1.
-     *
-     * @var int
-     */
-    public $maxAttempts;
-    /**
-     * Optional. The maximum number of delivery attempts for any message. The only
-     * valid value is 1.
-     *
-     * @param int $maxAttempts
-     */
-    public function setMaxAttempts($maxAttempts)
+namespace Google\Service\Eventarc {
+    class RetryPolicy extends \Google\Model
     {
+        /**
+         * Optional. The maximum number of delivery attempts for any message. The only
+         * valid value is 1.
+         *
+         * @var int
+         */
+        public $maxAttempts;
+        /**
+         * Optional. The maximum number of delivery attempts for any message. The only
+         * valid value is 1.
+         *
+         * @param int $maxAttempts
+         */
+        public function setMaxAttempts($maxAttempts)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxAttempts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Eventarc\RetryPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxAttempts()
+    class Google_Service_Eventarc_RetryPolicy extends \Google\Service\Eventarc\RetryPolicy
     {
     }
 }

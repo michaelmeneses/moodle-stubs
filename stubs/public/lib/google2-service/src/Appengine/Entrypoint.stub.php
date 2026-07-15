@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class Entrypoint extends \Google\Model
-{
-    /**
-     * The format should be a shell command that can be fed to bash -c.
-     *
-     * @var string
-     */
-    public $shell;
-    /**
-     * The format should be a shell command that can be fed to bash -c.
-     *
-     * @param string $shell
-     */
-    public function setShell($shell)
+namespace Google\Service\Appengine {
+    class Entrypoint extends \Google\Model
     {
+        /**
+         * The format should be a shell command that can be fed to bash -c.
+         *
+         * @var string
+         */
+        public $shell;
+        /**
+         * The format should be a shell command that can be fed to bash -c.
+         *
+         * @param string $shell
+         */
+        public function setShell($shell)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShell()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Appengine\Entrypoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getShell()
+    class Google_Service_Appengine_Entrypoint extends \Google\Service\Appengine\Entrypoint
     {
     }
 }

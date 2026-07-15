@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Risk extends \Google\Model
-{
-    protected $cisaKevType = CISAKnownExploitedVulnerabilities::class;
-    protected $cisaKevDataType = '';
-    protected $epssType = ExploitPredictionScoringSystem::class;
-    protected $epssDataType = '';
-    /**
-     * CISA maintains the authoritative source of vulnerabilities that have been
-     * exploited in the wild.
-     *
-     * @param CISAKnownExploitedVulnerabilities $cisaKev
-     */
-    public function setCisaKev(CISAKnownExploitedVulnerabilities $cisaKev)
+namespace Google\Service\ContainerAnalysis {
+    class Risk extends \Google\Model
     {
+        protected $cisaKevType = CISAKnownExploitedVulnerabilities::class;
+        protected $cisaKevDataType = '';
+        protected $epssType = ExploitPredictionScoringSystem::class;
+        protected $epssDataType = '';
+        /**
+         * CISA maintains the authoritative source of vulnerabilities that have been
+         * exploited in the wild.
+         *
+         * @param CISAKnownExploitedVulnerabilities $cisaKev
+         */
+        public function setCisaKev(CISAKnownExploitedVulnerabilities $cisaKev)
+        {
+        }
+        /**
+         * @return CISAKnownExploitedVulnerabilities
+         */
+        public function getCisaKev()
+        {
+        }
+        /**
+         * The Exploit Prediction Scoring System (EPSS) estimates the likelihood
+         * (probability) that a software vulnerability will be exploited in the wild.
+         *
+         * @param ExploitPredictionScoringSystem $epss
+         */
+        public function setEpss(ExploitPredictionScoringSystem $epss)
+        {
+        }
+        /**
+         * @return ExploitPredictionScoringSystem
+         */
+        public function getEpss()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CISAKnownExploitedVulnerabilities
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Risk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCisaKev()
-    {
-    }
-    /**
-     * The Exploit Prediction Scoring System (EPSS) estimates the likelihood
-     * (probability) that a software vulnerability will be exploited in the wild.
-     *
-     * @param ExploitPredictionScoringSystem $epss
-     */
-    public function setEpss(ExploitPredictionScoringSystem $epss)
-    {
-    }
-    /**
-     * @return ExploitPredictionScoringSystem
-     */
-    public function getEpss()
+    class Google_Service_ContainerAnalysis_Risk extends \Google\Service\ContainerAnalysis\Risk
     {
     }
 }

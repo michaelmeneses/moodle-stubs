@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class RotatingBarcodeTotpDetailsTotpParameters extends \Google\Model
-{
-    /**
-     * The secret key used for the TOTP value generation, encoded as a Base16
-     * string.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * The length of the TOTP value in decimal digits.
-     *
-     * @var int
-     */
-    public $valueLength;
-    /**
-     * The secret key used for the TOTP value generation, encoded as a Base16
-     * string.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\Walletobjects {
+    class RotatingBarcodeTotpDetailsTotpParameters extends \Google\Model
     {
+        /**
+         * The secret key used for the TOTP value generation, encoded as a Base16
+         * string.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * The length of the TOTP value in decimal digits.
+         *
+         * @var int
+         */
+        public $valueLength;
+        /**
+         * The secret key used for the TOTP value generation, encoded as a Base16
+         * string.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * The length of the TOTP value in decimal digits.
+         *
+         * @param int $valueLength
+         */
+        public function setValueLength($valueLength)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getValueLength()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Walletobjects\RotatingBarcodeTotpDetailsTotpParameters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * The length of the TOTP value in decimal digits.
-     *
-     * @param int $valueLength
-     */
-    public function setValueLength($valueLength)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getValueLength()
+    class Google_Service_Walletobjects_RotatingBarcodeTotpDetailsTotpParameters extends \Google\Service\Walletobjects\RotatingBarcodeTotpDetailsTotpParameters
     {
     }
 }

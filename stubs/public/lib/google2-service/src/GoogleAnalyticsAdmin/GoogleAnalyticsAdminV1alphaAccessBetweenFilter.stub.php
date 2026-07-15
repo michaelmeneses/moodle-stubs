@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaAccessBetweenFilter extends \Google\Model
-{
-    protected $fromValueType = GoogleAnalyticsAdminV1alphaNumericValue::class;
-    protected $fromValueDataType = '';
-    protected $toValueType = GoogleAnalyticsAdminV1alphaNumericValue::class;
-    protected $toValueDataType = '';
-    /**
-     * @param GoogleAnalyticsAdminV1alphaNumericValue
-     */
-    public function setFromValue(GoogleAnalyticsAdminV1alphaNumericValue $fromValue)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaAccessBetweenFilter extends \Google\Model
     {
+        protected $fromValueType = GoogleAnalyticsAdminV1alphaNumericValue::class;
+        protected $fromValueDataType = '';
+        protected $toValueType = GoogleAnalyticsAdminV1alphaNumericValue::class;
+        protected $toValueDataType = '';
+        /**
+         * @param GoogleAnalyticsAdminV1alphaNumericValue
+         */
+        public function setFromValue(GoogleAnalyticsAdminV1alphaNumericValue $fromValue)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaNumericValue
+         */
+        public function getFromValue()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaNumericValue
+         */
+        public function setToValue(GoogleAnalyticsAdminV1alphaNumericValue $toValue)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaNumericValue
+         */
+        public function getToValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1alphaNumericValue
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAccessBetweenFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFromValue()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaNumericValue
-     */
-    public function setToValue(GoogleAnalyticsAdminV1alphaNumericValue $toValue)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaNumericValue
-     */
-    public function getToValue()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaAccessBetweenFilter extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAccessBetweenFilter
     {
     }
 }

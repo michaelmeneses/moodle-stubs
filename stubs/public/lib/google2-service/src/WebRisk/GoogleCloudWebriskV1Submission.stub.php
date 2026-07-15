@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WebRisk;
-
-class GoogleCloudWebriskV1Submission extends \Google\Model
-{
-    /**
-     * Required. The URI that is being reported for malicious content to be
-     * analyzed.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Required. The URI that is being reported for malicious content to be
-     * analyzed.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
+namespace Google\Service\WebRisk {
+    class GoogleCloudWebriskV1Submission extends \Google\Model
     {
+        /**
+         * Required. The URI that is being reported for malicious content to be
+         * analyzed.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Required. The URI that is being reported for malicious content to be
+         * analyzed.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WebRisk\GoogleCloudWebriskV1Submission registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUri()
+    class Google_Service_WebRisk_GoogleCloudWebriskV1Submission extends \Google\Service\WebRisk\GoogleCloudWebriskV1Submission
     {
     }
 }

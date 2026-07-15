@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class StartUploadItemRequest extends \Google\Model
-{
-    /**
-     * The name of connector making this call. Format:
-     * datasources/{source_id}/connectors/{ID}
-     *
-     * @var string
-     */
-    public $connectorName;
-    protected $debugOptionsType = DebugOptions::class;
-    protected $debugOptionsDataType = '';
-    /**
-     * The name of connector making this call. Format:
-     * datasources/{source_id}/connectors/{ID}
-     *
-     * @param string $connectorName
-     */
-    public function setConnectorName($connectorName)
+namespace Google\Service\CloudSearch {
+    class StartUploadItemRequest extends \Google\Model
     {
+        /**
+         * The name of connector making this call. Format:
+         * datasources/{source_id}/connectors/{ID}
+         *
+         * @var string
+         */
+        public $connectorName;
+        protected $debugOptionsType = DebugOptions::class;
+        protected $debugOptionsDataType = '';
+        /**
+         * The name of connector making this call. Format:
+         * datasources/{source_id}/connectors/{ID}
+         *
+         * @param string $connectorName
+         */
+        public function setConnectorName($connectorName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConnectorName()
+        {
+        }
+        /**
+         * Common debug options.
+         *
+         * @param DebugOptions $debugOptions
+         */
+        public function setDebugOptions(DebugOptions $debugOptions)
+        {
+        }
+        /**
+         * @return DebugOptions
+         */
+        public function getDebugOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\StartUploadItemRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectorName()
-    {
-    }
-    /**
-     * Common debug options.
-     *
-     * @param DebugOptions $debugOptions
-     */
-    public function setDebugOptions(DebugOptions $debugOptions)
-    {
-    }
-    /**
-     * @return DebugOptions
-     */
-    public function getDebugOptions()
+    class Google_Service_CloudSearch_StartUploadItemRequest extends \Google\Service\CloudSearch\StartUploadItemRequest
     {
     }
 }

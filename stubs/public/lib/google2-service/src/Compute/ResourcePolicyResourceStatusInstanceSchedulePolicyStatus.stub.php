@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ResourcePolicyResourceStatusInstanceSchedulePolicyStatus extends \Google\Model
-{
-    /**
-     * Output only. [Output Only] The last time the schedule successfully ran. The
-     * timestamp is an RFC3339 string.
-     *
-     * @var string
-     */
-    public $lastRunStartTime;
-    /**
-     * Output only. [Output Only] The next time the schedule is planned to run.
-     * The actual time might be slightly different. The timestamp is an RFC3339
-     * string.
-     *
-     * @var string
-     */
-    public $nextRunStartTime;
-    /**
-     * Output only. [Output Only] The last time the schedule successfully ran. The
-     * timestamp is an RFC3339 string.
-     *
-     * @param string $lastRunStartTime
-     */
-    public function setLastRunStartTime($lastRunStartTime)
+namespace Google\Service\Compute {
+    class ResourcePolicyResourceStatusInstanceSchedulePolicyStatus extends \Google\Model
     {
+        /**
+         * Output only. [Output Only] The last time the schedule successfully ran. The
+         * timestamp is an RFC3339 string.
+         *
+         * @var string
+         */
+        public $lastRunStartTime;
+        /**
+         * Output only. [Output Only] The next time the schedule is planned to run.
+         * The actual time might be slightly different. The timestamp is an RFC3339
+         * string.
+         *
+         * @var string
+         */
+        public $nextRunStartTime;
+        /**
+         * Output only. [Output Only] The last time the schedule successfully ran. The
+         * timestamp is an RFC3339 string.
+         *
+         * @param string $lastRunStartTime
+         */
+        public function setLastRunStartTime($lastRunStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastRunStartTime()
+        {
+        }
+        /**
+         * Output only. [Output Only] The next time the schedule is planned to run.
+         * The actual time might be slightly different. The timestamp is an RFC3339
+         * string.
+         *
+         * @param string $nextRunStartTime
+         */
+        public function setNextRunStartTime($nextRunStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextRunStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\ResourcePolicyResourceStatusInstanceSchedulePolicyStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastRunStartTime()
-    {
-    }
-    /**
-     * Output only. [Output Only] The next time the schedule is planned to run.
-     * The actual time might be slightly different. The timestamp is an RFC3339
-     * string.
-     *
-     * @param string $nextRunStartTime
-     */
-    public function setNextRunStartTime($nextRunStartTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextRunStartTime()
+    class Google_Service_Compute_ResourcePolicyResourceStatusInstanceSchedulePolicyStatus extends \Google\Service\Compute\ResourcePolicyResourceStatusInstanceSchedulePolicyStatus
     {
     }
 }

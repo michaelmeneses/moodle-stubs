@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSenseHost;
-
-class AdStyleColors extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $background;
-    /**
-     * @var string
-     */
-    public $border;
-    /**
-     * @var string
-     */
-    public $text;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @var string
-     */
-    public $url;
-    /**
-     * @param string
-     */
-    public function setBackground($background)
+namespace Google\Service\AdSenseHost {
+    class AdStyleColors extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $background;
+        /**
+         * @var string
+         */
+        public $border;
+        /**
+         * @var string
+         */
+        public $text;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @var string
+         */
+        public $url;
+        /**
+         * @param string
+         */
+        public function setBackground($background)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackground()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBorder($border)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBorder()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdSenseHost\AdStyleColors registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackground()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBorder($border)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBorder()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_AdSenseHost_AdStyleColors extends \Google\Service\AdSenseHost\AdStyleColors
     {
     }
 }

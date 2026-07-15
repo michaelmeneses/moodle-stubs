@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class UniformSharding extends \Google\Model
-{
-    /**
-     * Required. The total number of shards to create. This must always be a
-     * positive number that is no greater than the total number of test cases.
-     * When you select one or more physical devices, the number of shards must be
-     * <= 50. When you select one or more ARM virtual devices, it must be <= 200.
-     * When you select only x86 virtual devices, it must be <= 500.
-     *
-     * @var int
-     */
-    public $numShards;
-    /**
-     * Required. The total number of shards to create. This must always be a
-     * positive number that is no greater than the total number of test cases.
-     * When you select one or more physical devices, the number of shards must be
-     * <= 50. When you select one or more ARM virtual devices, it must be <= 200.
-     * When you select only x86 virtual devices, it must be <= 500.
-     *
-     * @param int $numShards
-     */
-    public function setNumShards($numShards)
+namespace Google\Service\Testing {
+    class UniformSharding extends \Google\Model
     {
+        /**
+         * Required. The total number of shards to create. This must always be a
+         * positive number that is no greater than the total number of test cases.
+         * When you select one or more physical devices, the number of shards must be
+         * <= 50. When you select one or more ARM virtual devices, it must be <= 200.
+         * When you select only x86 virtual devices, it must be <= 500.
+         *
+         * @var int
+         */
+        public $numShards;
+        /**
+         * Required. The total number of shards to create. This must always be a
+         * positive number that is no greater than the total number of test cases.
+         * When you select one or more physical devices, the number of shards must be
+         * <= 50. When you select one or more ARM virtual devices, it must be <= 200.
+         * When you select only x86 virtual devices, it must be <= 500.
+         *
+         * @param int $numShards
+         */
+        public function setNumShards($numShards)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumShards()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Testing\UniformSharding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNumShards()
+    class Google_Service_Testing_UniformSharding extends \Google\Service\Testing\UniformSharding
     {
     }
 }

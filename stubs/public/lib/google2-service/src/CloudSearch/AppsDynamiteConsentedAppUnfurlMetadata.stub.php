@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteConsentedAppUnfurlMetadata extends \Google\Model
-{
-    protected $clientSpecifiedAppIdType = AppsDynamiteUserId::class;
-    protected $clientSpecifiedAppIdDataType = '';
-    /**
-     * @param AppsDynamiteUserId
-     */
-    public function setClientSpecifiedAppId(AppsDynamiteUserId $clientSpecifiedAppId)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteConsentedAppUnfurlMetadata extends \Google\Model
     {
+        protected $clientSpecifiedAppIdType = AppsDynamiteUserId::class;
+        protected $clientSpecifiedAppIdDataType = '';
+        /**
+         * @param AppsDynamiteUserId
+         */
+        public function setClientSpecifiedAppId(AppsDynamiteUserId $clientSpecifiedAppId)
+        {
+        }
+        /**
+         * @return AppsDynamiteUserId
+         */
+        public function getClientSpecifiedAppId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteUserId
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteConsentedAppUnfurlMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientSpecifiedAppId()
+    class Google_Service_CloudSearch_AppsDynamiteConsentedAppUnfurlMetadata extends \Google\Service\CloudSearch\AppsDynamiteConsentedAppUnfurlMetadata
     {
     }
 }

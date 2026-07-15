@@ -21,138 +21,147 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1AgentCoachingInstruction extends \Google\Model
-{
-    /**
-     * Optional. The action that human agent should take. For example, "apologize
-     * for the slow shipping". If the users only want to use agent coaching for
-     * intent detection, agent_action can be empty
-     *
-     * @var string
-     */
-    public $agentAction;
-    /**
-     * Optional. The condition of the instruction. For example, "the customer
-     * wants to cancel an order". If the users want the instruction to be
-     * triggered unconditionally, the condition can be empty.
-     *
-     * @var string
-     */
-    public $condition;
-    /**
-     * Optional. The detailed description of this instruction.
-     *
-     * @var string
-     */
-    public $displayDetails;
-    /**
-     * Optional. Display name for the instruction.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $duplicateCheckResultType = GoogleCloudDialogflowV2beta1AgentCoachingInstructionDuplicateCheckResult::class;
-    protected $duplicateCheckResultDataType = '';
-    /**
-     * Optional. The action that system should take. For example, "call
-     * GetOrderTime with order_number={order number provided by the customer}". If
-     * the users don't have plugins or don't want to trigger plugins, the
-     * system_action can be empty
-     *
-     * @var string
-     */
-    public $systemAction;
-    /**
-     * Optional. The action that human agent should take. For example, "apologize
-     * for the slow shipping". If the users only want to use agent coaching for
-     * intent detection, agent_action can be empty
-     *
-     * @param string $agentAction
-     */
-    public function setAgentAction($agentAction)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1AgentCoachingInstruction extends \Google\Model
     {
+        /**
+         * Optional. The action that human agent should take. For example, "apologize
+         * for the slow shipping". If the users only want to use agent coaching for
+         * intent detection, agent_action can be empty
+         *
+         * @var string
+         */
+        public $agentAction;
+        /**
+         * Optional. The condition of the instruction. For example, "the customer
+         * wants to cancel an order". If the users want the instruction to be
+         * triggered unconditionally, the condition can be empty.
+         *
+         * @var string
+         */
+        public $condition;
+        /**
+         * Optional. The detailed description of this instruction.
+         *
+         * @var string
+         */
+        public $displayDetails;
+        /**
+         * Optional. Display name for the instruction.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $duplicateCheckResultType = GoogleCloudDialogflowV2beta1AgentCoachingInstructionDuplicateCheckResult::class;
+        protected $duplicateCheckResultDataType = '';
+        /**
+         * Optional. The action that system should take. For example, "call
+         * GetOrderTime with order_number={order number provided by the customer}". If
+         * the users don't have plugins or don't want to trigger plugins, the
+         * system_action can be empty
+         *
+         * @var string
+         */
+        public $systemAction;
+        /**
+         * Optional. The action that human agent should take. For example, "apologize
+         * for the slow shipping". If the users only want to use agent coaching for
+         * intent detection, agent_action can be empty
+         *
+         * @param string $agentAction
+         */
+        public function setAgentAction($agentAction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentAction()
+        {
+        }
+        /**
+         * Optional. The condition of the instruction. For example, "the customer
+         * wants to cancel an order". If the users want the instruction to be
+         * triggered unconditionally, the condition can be empty.
+         *
+         * @param string $condition
+         */
+        public function setCondition($condition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * Optional. The detailed description of this instruction.
+         *
+         * @param string $displayDetails
+         */
+        public function setDisplayDetails($displayDetails)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayDetails()
+        {
+        }
+        /**
+         * Optional. Display name for the instruction.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. Duplication check for the AgentCoachingInstruction.
+         *
+         * @param GoogleCloudDialogflowV2beta1AgentCoachingInstructionDuplicateCheckResult $duplicateCheckResult
+         */
+        public function setDuplicateCheckResult(GoogleCloudDialogflowV2beta1AgentCoachingInstructionDuplicateCheckResult $duplicateCheckResult)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1AgentCoachingInstructionDuplicateCheckResult
+         */
+        public function getDuplicateCheckResult()
+        {
+        }
+        /**
+         * Optional. The action that system should take. For example, "call
+         * GetOrderTime with order_number={order number provided by the customer}". If
+         * the users don't have plugins or don't want to trigger plugins, the
+         * system_action can be empty
+         *
+         * @param string $systemAction
+         */
+        public function setSystemAction($systemAction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSystemAction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1AgentCoachingInstruction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentAction()
-    {
-    }
-    /**
-     * Optional. The condition of the instruction. For example, "the customer
-     * wants to cancel an order". If the users want the instruction to be
-     * triggered unconditionally, the condition can be empty.
-     *
-     * @param string $condition
-     */
-    public function setCondition($condition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCondition()
-    {
-    }
-    /**
-     * Optional. The detailed description of this instruction.
-     *
-     * @param string $displayDetails
-     */
-    public function setDisplayDetails($displayDetails)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayDetails()
-    {
-    }
-    /**
-     * Optional. Display name for the instruction.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. Duplication check for the AgentCoachingInstruction.
-     *
-     * @param GoogleCloudDialogflowV2beta1AgentCoachingInstructionDuplicateCheckResult $duplicateCheckResult
-     */
-    public function setDuplicateCheckResult(GoogleCloudDialogflowV2beta1AgentCoachingInstructionDuplicateCheckResult $duplicateCheckResult)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2beta1AgentCoachingInstructionDuplicateCheckResult
-     */
-    public function getDuplicateCheckResult()
-    {
-    }
-    /**
-     * Optional. The action that system should take. For example, "call
-     * GetOrderTime with order_number={order number provided by the customer}". If
-     * the users don't have plugins or don't want to trigger plugins, the
-     * system_action can be empty
-     *
-     * @param string $systemAction
-     */
-    public function setSystemAction($systemAction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSystemAction()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1AgentCoachingInstruction extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1AgentCoachingInstruction
     {
     }
 }

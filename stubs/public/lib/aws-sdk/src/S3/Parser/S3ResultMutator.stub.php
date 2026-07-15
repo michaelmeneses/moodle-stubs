@@ -8,6 +8,9 @@
  */
 namespace Aws\S3\Parser;
 
+use Aws\CommandInterface;
+use Aws\ResultInterface;
+use Psr\Http\Message\ResponseInterface;
 /**
  * Interface for S3 result mutator implementations.
  * A S3 result mutator is meant for modifying a request

@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class PostalCodeRange extends \Google\Model
-{
-    /**
-     * A postal code or a pattern of the form `prefix*` denoting the inclusive
-     * lower bound of the range defining the area. Examples values: `"94108"`,
-     * `"9410*"`, `"9*"`. Required.
-     *
-     * @var string
-     */
-    public $postalCodeRangeBegin;
-    /**
-     * A postal code or a pattern of the form `prefix*` denoting the inclusive
-     * upper bound of the range defining the area. It must have the same length as
-     * `postalCodeRangeBegin`: if `postalCodeRangeBegin` is a postal code then
-     * `postalCodeRangeEnd` must be a postal code too; if `postalCodeRangeBegin`
-     * is a pattern then `postalCodeRangeEnd` must be a pattern with the same
-     * prefix length. Optional: if not set, then the area is defined as being all
-     * the postal codes matching `postalCodeRangeBegin`.
-     *
-     * @var string
-     */
-    public $postalCodeRangeEnd;
-    /**
-     * A postal code or a pattern of the form `prefix*` denoting the inclusive
-     * lower bound of the range defining the area. Examples values: `"94108"`,
-     * `"9410*"`, `"9*"`. Required.
-     *
-     * @param string $postalCodeRangeBegin
-     */
-    public function setPostalCodeRangeBegin($postalCodeRangeBegin)
+namespace Google\Service\ShoppingContent {
+    class PostalCodeRange extends \Google\Model
     {
+        /**
+         * A postal code or a pattern of the form `prefix*` denoting the inclusive
+         * lower bound of the range defining the area. Examples values: `"94108"`,
+         * `"9410*"`, `"9*"`. Required.
+         *
+         * @var string
+         */
+        public $postalCodeRangeBegin;
+        /**
+         * A postal code or a pattern of the form `prefix*` denoting the inclusive
+         * upper bound of the range defining the area. It must have the same length as
+         * `postalCodeRangeBegin`: if `postalCodeRangeBegin` is a postal code then
+         * `postalCodeRangeEnd` must be a postal code too; if `postalCodeRangeBegin`
+         * is a pattern then `postalCodeRangeEnd` must be a pattern with the same
+         * prefix length. Optional: if not set, then the area is defined as being all
+         * the postal codes matching `postalCodeRangeBegin`.
+         *
+         * @var string
+         */
+        public $postalCodeRangeEnd;
+        /**
+         * A postal code or a pattern of the form `prefix*` denoting the inclusive
+         * lower bound of the range defining the area. Examples values: `"94108"`,
+         * `"9410*"`, `"9*"`. Required.
+         *
+         * @param string $postalCodeRangeBegin
+         */
+        public function setPostalCodeRangeBegin($postalCodeRangeBegin)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostalCodeRangeBegin()
+        {
+        }
+        /**
+         * A postal code or a pattern of the form `prefix*` denoting the inclusive
+         * upper bound of the range defining the area. It must have the same length as
+         * `postalCodeRangeBegin`: if `postalCodeRangeBegin` is a postal code then
+         * `postalCodeRangeEnd` must be a postal code too; if `postalCodeRangeBegin`
+         * is a pattern then `postalCodeRangeEnd` must be a pattern with the same
+         * prefix length. Optional: if not set, then the area is defined as being all
+         * the postal codes matching `postalCodeRangeBegin`.
+         *
+         * @param string $postalCodeRangeEnd
+         */
+        public function setPostalCodeRangeEnd($postalCodeRangeEnd)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostalCodeRangeEnd()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\PostalCodeRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPostalCodeRangeBegin()
-    {
-    }
-    /**
-     * A postal code or a pattern of the form `prefix*` denoting the inclusive
-     * upper bound of the range defining the area. It must have the same length as
-     * `postalCodeRangeBegin`: if `postalCodeRangeBegin` is a postal code then
-     * `postalCodeRangeEnd` must be a postal code too; if `postalCodeRangeBegin`
-     * is a pattern then `postalCodeRangeEnd` must be a pattern with the same
-     * prefix length. Optional: if not set, then the area is defined as being all
-     * the postal codes matching `postalCodeRangeBegin`.
-     *
-     * @param string $postalCodeRangeEnd
-     */
-    public function setPostalCodeRangeEnd($postalCodeRangeEnd)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPostalCodeRangeEnd()
+    class Google_Service_ShoppingContent_PostalCodeRange extends \Google\Service\ShoppingContent\PostalCodeRange
     {
     }
 }

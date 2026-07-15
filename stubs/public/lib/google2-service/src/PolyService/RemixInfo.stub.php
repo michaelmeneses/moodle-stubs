@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolyService;
-
-class RemixInfo extends \Google\Collection
-{
-    protected $collection_key = 'sourceAsset';
-    /**
-     * @var string[]
-     */
-    public $sourceAsset;
-    /**
-     * @param string[]
-     */
-    public function setSourceAsset($sourceAsset)
+namespace Google\Service\PolyService {
+    class RemixInfo extends \Google\Collection
     {
+        protected $collection_key = 'sourceAsset';
+        /**
+         * @var string[]
+         */
+        public $sourceAsset;
+        /**
+         * @param string[]
+         */
+        public function setSourceAsset($sourceAsset)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSourceAsset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\PolyService\RemixInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSourceAsset()
+    class Google_Service_PolyService_RemixInfo extends \Google\Service\PolyService\RemixInfo
     {
     }
 }

@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1GetGeneratorSuggestionResponse extends \Google\Model
-{
-    protected $generatorSuggestionType = GoogleCloudContactcenterinsightsV1GeneratorSuggestion::class;
-    protected $generatorSuggestionDataType = '';
-    /**
-     * @param GoogleCloudContactcenterinsightsV1GeneratorSuggestion
-     */
-    public function setGeneratorSuggestion(GoogleCloudContactcenterinsightsV1GeneratorSuggestion $generatorSuggestion)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1GetGeneratorSuggestionResponse extends \Google\Model
     {
+        protected $generatorSuggestionType = GoogleCloudContactcenterinsightsV1GeneratorSuggestion::class;
+        protected $generatorSuggestionDataType = '';
+        /**
+         * @param GoogleCloudContactcenterinsightsV1GeneratorSuggestion
+         */
+        public function setGeneratorSuggestion(GoogleCloudContactcenterinsightsV1GeneratorSuggestion $generatorSuggestion)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1GeneratorSuggestion
+         */
+        public function getGeneratorSuggestion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1GeneratorSuggestion
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1GetGeneratorSuggestionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGeneratorSuggestion()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1GetGeneratorSuggestionResponse extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1GetGeneratorSuggestionResponse
     {
     }
 }

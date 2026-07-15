@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BackupforGKE;
-
-class RetentionPolicyDetails extends \Google\Model
-{
-    /**
-     * Optional. Minimum age for Backups created via this BackupPlan (in days).
-     * This field MUST be an integer value between 0-90 (inclusive). A Backup
-     * created under this BackupPlan will NOT be deletable until it reaches
-     * Backup's (create_time + backup_delete_lock_days). Updating this field of a
-     * BackupPlan does NOT affect existing Backups under it. Backups created AFTER
-     * a successful update will inherit the new value. Default: 0 (no delete
-     * blocking)
-     *
-     * @var int
-     */
-    public $backupDeleteLockDays;
-    /**
-     * Optional. The default maximum age of a Backup created via this BackupPlan.
-     * This field MUST be an integer value >= 0 and <= 365. If specified, a Backup
-     * created under this BackupPlan will be automatically deleted after its age
-     * reaches (create_time + backup_retain_days). If not specified, Backups
-     * created under this BackupPlan will NOT be subject to automatic deletion.
-     * Default: 0 (no automatic deletion)
-     *
-     * @var int
-     */
-    public $backupRetainDays;
-    /**
-     * Optional. Minimum age for Backups created via this BackupPlan (in days).
-     * This field MUST be an integer value between 0-90 (inclusive). A Backup
-     * created under this BackupPlan will NOT be deletable until it reaches
-     * Backup's (create_time + backup_delete_lock_days). Updating this field of a
-     * BackupPlan does NOT affect existing Backups under it. Backups created AFTER
-     * a successful update will inherit the new value. Default: 0 (no delete
-     * blocking)
-     *
-     * @param int $backupDeleteLockDays
-     */
-    public function setBackupDeleteLockDays($backupDeleteLockDays)
+namespace Google\Service\BackupforGKE {
+    class RetentionPolicyDetails extends \Google\Model
     {
+        /**
+         * Optional. Minimum age for Backups created via this BackupPlan (in days).
+         * This field MUST be an integer value between 0-90 (inclusive). A Backup
+         * created under this BackupPlan will NOT be deletable until it reaches
+         * Backup's (create_time + backup_delete_lock_days). Updating this field of a
+         * BackupPlan does NOT affect existing Backups under it. Backups created AFTER
+         * a successful update will inherit the new value. Default: 0 (no delete
+         * blocking)
+         *
+         * @var int
+         */
+        public $backupDeleteLockDays;
+        /**
+         * Optional. The default maximum age of a Backup created via this BackupPlan.
+         * This field MUST be an integer value >= 0 and <= 365. If specified, a Backup
+         * created under this BackupPlan will be automatically deleted after its age
+         * reaches (create_time + backup_retain_days). If not specified, Backups
+         * created under this BackupPlan will NOT be subject to automatic deletion.
+         * Default: 0 (no automatic deletion)
+         *
+         * @var int
+         */
+        public $backupRetainDays;
+        /**
+         * Optional. Minimum age for Backups created via this BackupPlan (in days).
+         * This field MUST be an integer value between 0-90 (inclusive). A Backup
+         * created under this BackupPlan will NOT be deletable until it reaches
+         * Backup's (create_time + backup_delete_lock_days). Updating this field of a
+         * BackupPlan does NOT affect existing Backups under it. Backups created AFTER
+         * a successful update will inherit the new value. Default: 0 (no delete
+         * blocking)
+         *
+         * @param int $backupDeleteLockDays
+         */
+        public function setBackupDeleteLockDays($backupDeleteLockDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getBackupDeleteLockDays()
+        {
+        }
+        /**
+         * Optional. The default maximum age of a Backup created via this BackupPlan.
+         * This field MUST be an integer value >= 0 and <= 365. If specified, a Backup
+         * created under this BackupPlan will be automatically deleted after its age
+         * reaches (create_time + backup_retain_days). If not specified, Backups
+         * created under this BackupPlan will NOT be subject to automatic deletion.
+         * Default: 0 (no automatic deletion)
+         *
+         * @param int $backupRetainDays
+         */
+        public function setBackupRetainDays($backupRetainDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getBackupRetainDays()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\BackupforGKE\RetentionPolicyDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupDeleteLockDays()
-    {
-    }
-    /**
-     * Optional. The default maximum age of a Backup created via this BackupPlan.
-     * This field MUST be an integer value >= 0 and <= 365. If specified, a Backup
-     * created under this BackupPlan will be automatically deleted after its age
-     * reaches (create_time + backup_retain_days). If not specified, Backups
-     * created under this BackupPlan will NOT be subject to automatic deletion.
-     * Default: 0 (no automatic deletion)
-     *
-     * @param int $backupRetainDays
-     */
-    public function setBackupRetainDays($backupRetainDays)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getBackupRetainDays()
+    class Google_Service_BackupforGKE_RetentionPolicyDetails extends \Google\Service\BackupforGKE\RetentionPolicyDetails
     {
     }
 }

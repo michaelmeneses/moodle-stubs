@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1IndexDatapointSparseEmbedding extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * Required. The list of indexes for the embedding values of the sparse
-     * vector.
-     *
-     * @var string[]
-     */
-    public $dimensions;
-    /**
-     * Required. The list of embedding values of the sparse vector.
-     *
-     * @var float[]
-     */
-    public $values;
-    /**
-     * Required. The list of indexes for the embedding values of the sparse
-     * vector.
-     *
-     * @param string[] $dimensions
-     */
-    public function setDimensions($dimensions)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1IndexDatapointSparseEmbedding extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * Required. The list of indexes for the embedding values of the sparse
+         * vector.
+         *
+         * @var string[]
+         */
+        public $dimensions;
+        /**
+         * Required. The list of embedding values of the sparse vector.
+         *
+         * @var float[]
+         */
+        public $values;
+        /**
+         * Required. The list of indexes for the embedding values of the sparse
+         * vector.
+         *
+         * @param string[] $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * Required. The list of embedding values of the sparse vector.
+         *
+         * @param float[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return float[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1IndexDatapointSparseEmbedding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensions()
-    {
-    }
-    /**
-     * Required. The list of embedding values of the sparse vector.
-     *
-     * @param float[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return float[]
-     */
-    public function getValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1IndexDatapointSparseEmbedding extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1IndexDatapointSparseEmbedding
     {
     }
 }

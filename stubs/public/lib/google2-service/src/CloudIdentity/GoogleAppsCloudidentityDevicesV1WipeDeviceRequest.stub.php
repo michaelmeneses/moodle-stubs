@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class GoogleAppsCloudidentityDevicesV1WipeDeviceRequest extends \Google\Model
-{
-    /**
-     * Optional. [Resource
-     * name](https://cloud.google.com/apis/design/resource_names) of the customer.
-     * If you're using this API for your own organization, use
-     * `customers/my_customer` If you're using this API to manage another
-     * organization, use `customers/{customer}`, where customer is the customer to
-     * whom the device belongs.
-     *
-     * @var string
-     */
-    public $customer;
-    /**
-     * Optional. Specifies if a user is able to factory reset a device after a
-     * Device Wipe. On iOS, this is called "Activation Lock", while on Android,
-     * this is known as "Factory Reset Protection". If true, this protection will
-     * be removed from the device, so that a user can successfully factory reset.
-     * If false, the setting is untouched on the device.
-     *
-     * @var bool
-     */
-    public $removeResetLock;
-    /**
-     * Optional. [Resource
-     * name](https://cloud.google.com/apis/design/resource_names) of the customer.
-     * If you're using this API for your own organization, use
-     * `customers/my_customer` If you're using this API to manage another
-     * organization, use `customers/{customer}`, where customer is the customer to
-     * whom the device belongs.
-     *
-     * @param string $customer
-     */
-    public function setCustomer($customer)
+namespace Google\Service\CloudIdentity {
+    class GoogleAppsCloudidentityDevicesV1WipeDeviceRequest extends \Google\Model
     {
+        /**
+         * Optional. [Resource
+         * name](https://cloud.google.com/apis/design/resource_names) of the customer.
+         * If you're using this API for your own organization, use
+         * `customers/my_customer` If you're using this API to manage another
+         * organization, use `customers/{customer}`, where customer is the customer to
+         * whom the device belongs.
+         *
+         * @var string
+         */
+        public $customer;
+        /**
+         * Optional. Specifies if a user is able to factory reset a device after a
+         * Device Wipe. On iOS, this is called "Activation Lock", while on Android,
+         * this is known as "Factory Reset Protection". If true, this protection will
+         * be removed from the device, so that a user can successfully factory reset.
+         * If false, the setting is untouched on the device.
+         *
+         * @var bool
+         */
+        public $removeResetLock;
+        /**
+         * Optional. [Resource
+         * name](https://cloud.google.com/apis/design/resource_names) of the customer.
+         * If you're using this API for your own organization, use
+         * `customers/my_customer` If you're using this API to manage another
+         * organization, use `customers/{customer}`, where customer is the customer to
+         * whom the device belongs.
+         *
+         * @param string $customer
+         */
+        public function setCustomer($customer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomer()
+        {
+        }
+        /**
+         * Optional. Specifies if a user is able to factory reset a device after a
+         * Device Wipe. On iOS, this is called "Activation Lock", while on Android,
+         * this is known as "Factory Reset Protection". If true, this protection will
+         * be removed from the device, so that a user can successfully factory reset.
+         * If false, the setting is untouched on the device.
+         *
+         * @param bool $removeResetLock
+         */
+        public function setRemoveResetLock($removeResetLock)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRemoveResetLock()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1WipeDeviceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomer()
-    {
-    }
-    /**
-     * Optional. Specifies if a user is able to factory reset a device after a
-     * Device Wipe. On iOS, this is called "Activation Lock", while on Android,
-     * this is known as "Factory Reset Protection". If true, this protection will
-     * be removed from the device, so that a user can successfully factory reset.
-     * If false, the setting is untouched on the device.
-     *
-     * @param bool $removeResetLock
-     */
-    public function setRemoveResetLock($removeResetLock)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRemoveResetLock()
+    class Google_Service_CloudIdentity_GoogleAppsCloudidentityDevicesV1WipeDeviceRequest extends \Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1WipeDeviceRequest
     {
     }
 }

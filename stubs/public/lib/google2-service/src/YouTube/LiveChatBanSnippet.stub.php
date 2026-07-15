@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LiveChatBanSnippet extends \Google\Model
-{
-    /**
-     * An invalid ban type.
-     */
-    public const TYPE_liveChatBanTypeUnspecified = 'liveChatBanTypeUnspecified';
-    /**
-     * A permanent ban.
-     */
-    public const TYPE_permanent = 'permanent';
-    /**
-     * A temporary ban.
-     */
-    public const TYPE_temporary = 'temporary';
-    /**
-     * The duration of a ban, only filled if the ban has type TEMPORARY.
-     *
-     * @var string
-     */
-    public $banDurationSeconds;
-    protected $bannedUserDetailsType = ChannelProfileDetails::class;
-    protected $bannedUserDetailsDataType = '';
-    /**
-     * The chat this ban is pertinent to.
-     *
-     * @var string
-     */
-    public $liveChatId;
-    /**
-     * The type of ban.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The duration of a ban, only filled if the ban has type TEMPORARY.
-     *
-     * @param string $banDurationSeconds
-     */
-    public function setBanDurationSeconds($banDurationSeconds)
+namespace Google\Service\YouTube {
+    class LiveChatBanSnippet extends \Google\Model
     {
+        /**
+         * An invalid ban type.
+         */
+        public const TYPE_liveChatBanTypeUnspecified = 'liveChatBanTypeUnspecified';
+        /**
+         * A permanent ban.
+         */
+        public const TYPE_permanent = 'permanent';
+        /**
+         * A temporary ban.
+         */
+        public const TYPE_temporary = 'temporary';
+        /**
+         * The duration of a ban, only filled if the ban has type TEMPORARY.
+         *
+         * @var string
+         */
+        public $banDurationSeconds;
+        protected $bannedUserDetailsType = ChannelProfileDetails::class;
+        protected $bannedUserDetailsDataType = '';
+        /**
+         * The chat this ban is pertinent to.
+         *
+         * @var string
+         */
+        public $liveChatId;
+        /**
+         * The type of ban.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The duration of a ban, only filled if the ban has type TEMPORARY.
+         *
+         * @param string $banDurationSeconds
+         */
+        public function setBanDurationSeconds($banDurationSeconds)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBanDurationSeconds()
+        {
+        }
+        /**
+         * @param ChannelProfileDetails $bannedUserDetails
+         */
+        public function setBannedUserDetails(ChannelProfileDetails $bannedUserDetails)
+        {
+        }
+        /**
+         * @return ChannelProfileDetails
+         */
+        public function getBannedUserDetails()
+        {
+        }
+        /**
+         * The chat this ban is pertinent to.
+         *
+         * @param string $liveChatId
+         */
+        public function setLiveChatId($liveChatId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLiveChatId()
+        {
+        }
+        /**
+         * The type of ban.
+         *
+         * Accepted values: liveChatBanTypeUnspecified, permanent, temporary
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\LiveChatBanSnippet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBanDurationSeconds()
-    {
-    }
-    /**
-     * @param ChannelProfileDetails $bannedUserDetails
-     */
-    public function setBannedUserDetails(ChannelProfileDetails $bannedUserDetails)
-    {
-    }
-    /**
-     * @return ChannelProfileDetails
-     */
-    public function getBannedUserDetails()
-    {
-    }
-    /**
-     * The chat this ban is pertinent to.
-     *
-     * @param string $liveChatId
-     */
-    public function setLiveChatId($liveChatId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLiveChatId()
-    {
-    }
-    /**
-     * The type of ban.
-     *
-     * Accepted values: liveChatBanTypeUnspecified, permanent, temporary
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_YouTube_LiveChatBanSnippet extends \Google\Service\YouTube\LiveChatBanSnippet
     {
     }
 }

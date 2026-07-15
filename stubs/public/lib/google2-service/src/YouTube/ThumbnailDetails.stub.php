@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ThumbnailDetails extends \Google\Model
-{
-    protected $defaultType = Thumbnail::class;
-    protected $defaultDataType = '';
-    protected $highType = Thumbnail::class;
-    protected $highDataType = '';
-    protected $maxresType = Thumbnail::class;
-    protected $maxresDataType = '';
-    protected $mediumType = Thumbnail::class;
-    protected $mediumDataType = '';
-    protected $standardType = Thumbnail::class;
-    protected $standardDataType = '';
-    /**
-     * The default image for this resource.
-     *
-     * @param Thumbnail $default
-     */
-    public function setDefault(Thumbnail $default)
+namespace Google\Service\YouTube {
+    class ThumbnailDetails extends \Google\Model
     {
+        protected $defaultType = Thumbnail::class;
+        protected $defaultDataType = '';
+        protected $highType = Thumbnail::class;
+        protected $highDataType = '';
+        protected $maxresType = Thumbnail::class;
+        protected $maxresDataType = '';
+        protected $mediumType = Thumbnail::class;
+        protected $mediumDataType = '';
+        protected $standardType = Thumbnail::class;
+        protected $standardDataType = '';
+        /**
+         * The default image for this resource.
+         *
+         * @param Thumbnail $default
+         */
+        public function setDefault(Thumbnail $default)
+        {
+        }
+        /**
+         * @return Thumbnail
+         */
+        public function getDefault()
+        {
+        }
+        /**
+         * The high quality image for this resource.
+         *
+         * @param Thumbnail $high
+         */
+        public function setHigh(Thumbnail $high)
+        {
+        }
+        /**
+         * @return Thumbnail
+         */
+        public function getHigh()
+        {
+        }
+        /**
+         * The maximum resolution quality image for this resource.
+         *
+         * @param Thumbnail $maxres
+         */
+        public function setMaxres(Thumbnail $maxres)
+        {
+        }
+        /**
+         * @return Thumbnail
+         */
+        public function getMaxres()
+        {
+        }
+        /**
+         * The medium quality image for this resource.
+         *
+         * @param Thumbnail $medium
+         */
+        public function setMedium(Thumbnail $medium)
+        {
+        }
+        /**
+         * @return Thumbnail
+         */
+        public function getMedium()
+        {
+        }
+        /**
+         * The standard quality image for this resource.
+         *
+         * @param Thumbnail $standard
+         */
+        public function setStandard(Thumbnail $standard)
+        {
+        }
+        /**
+         * @return Thumbnail
+         */
+        public function getStandard()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Thumbnail
+     * Runtime class alias of \Google\Service\YouTube\ThumbnailDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefault()
-    {
-    }
-    /**
-     * The high quality image for this resource.
-     *
-     * @param Thumbnail $high
-     */
-    public function setHigh(Thumbnail $high)
-    {
-    }
-    /**
-     * @return Thumbnail
-     */
-    public function getHigh()
-    {
-    }
-    /**
-     * The maximum resolution quality image for this resource.
-     *
-     * @param Thumbnail $maxres
-     */
-    public function setMaxres(Thumbnail $maxres)
-    {
-    }
-    /**
-     * @return Thumbnail
-     */
-    public function getMaxres()
-    {
-    }
-    /**
-     * The medium quality image for this resource.
-     *
-     * @param Thumbnail $medium
-     */
-    public function setMedium(Thumbnail $medium)
-    {
-    }
-    /**
-     * @return Thumbnail
-     */
-    public function getMedium()
-    {
-    }
-    /**
-     * The standard quality image for this resource.
-     *
-     * @param Thumbnail $standard
-     */
-    public function setStandard(Thumbnail $standard)
-    {
-    }
-    /**
-     * @return Thumbnail
-     */
-    public function getStandard()
+    class Google_Service_YouTube_ThumbnailDetails extends \Google\Service\YouTube\ThumbnailDetails
     {
     }
 }

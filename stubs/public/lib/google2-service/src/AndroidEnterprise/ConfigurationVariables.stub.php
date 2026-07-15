@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class ConfigurationVariables extends \Google\Collection
-{
-    protected $collection_key = 'variableSet';
-    /**
-     * The ID of the managed configurations settings.
-     *
-     * @var string
-     */
-    public $mcmId;
-    protected $variableSetType = VariableSet::class;
-    protected $variableSetDataType = 'array';
-    /**
-     * The ID of the managed configurations settings.
-     *
-     * @param string $mcmId
-     */
-    public function setMcmId($mcmId)
+namespace Google\Service\AndroidEnterprise {
+    class ConfigurationVariables extends \Google\Collection
     {
+        protected $collection_key = 'variableSet';
+        /**
+         * The ID of the managed configurations settings.
+         *
+         * @var string
+         */
+        public $mcmId;
+        protected $variableSetType = VariableSet::class;
+        protected $variableSetDataType = 'array';
+        /**
+         * The ID of the managed configurations settings.
+         *
+         * @param string $mcmId
+         */
+        public function setMcmId($mcmId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMcmId()
+        {
+        }
+        /**
+         * The variable set that is attributed to the user.
+         *
+         * @param VariableSet[] $variableSet
+         */
+        public function setVariableSet($variableSet)
+        {
+        }
+        /**
+         * @return VariableSet[]
+         */
+        public function getVariableSet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidEnterprise\ConfigurationVariables registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMcmId()
-    {
-    }
-    /**
-     * The variable set that is attributed to the user.
-     *
-     * @param VariableSet[] $variableSet
-     */
-    public function setVariableSet($variableSet)
-    {
-    }
-    /**
-     * @return VariableSet[]
-     */
-    public function getVariableSet()
+    class Google_Service_AndroidEnterprise_ConfigurationVariables extends \Google\Service\AndroidEnterprise\ConfigurationVariables
     {
     }
 }

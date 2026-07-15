@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ForeignTypeInfo extends \Google\Model
-{
-    /**
-     * TypeSystem not specified.
-     */
-    public const TYPE_SYSTEM_TYPE_SYSTEM_UNSPECIFIED = 'TYPE_SYSTEM_UNSPECIFIED';
-    /**
-     * Represents Hive data types.
-     */
-    public const TYPE_SYSTEM_HIVE = 'HIVE';
-    /**
-     * Required. Specifies the system which defines the foreign data type.
-     *
-     * @var string
-     */
-    public $typeSystem;
-    /**
-     * Required. Specifies the system which defines the foreign data type.
-     *
-     * Accepted values: TYPE_SYSTEM_UNSPECIFIED, HIVE
-     *
-     * @param self::TYPE_SYSTEM_* $typeSystem
-     */
-    public function setTypeSystem($typeSystem)
+namespace Google\Service\Bigquery {
+    class ForeignTypeInfo extends \Google\Model
     {
+        /**
+         * TypeSystem not specified.
+         */
+        public const TYPE_SYSTEM_TYPE_SYSTEM_UNSPECIFIED = 'TYPE_SYSTEM_UNSPECIFIED';
+        /**
+         * Represents Hive data types.
+         */
+        public const TYPE_SYSTEM_HIVE = 'HIVE';
+        /**
+         * Required. Specifies the system which defines the foreign data type.
+         *
+         * @var string
+         */
+        public $typeSystem;
+        /**
+         * Required. Specifies the system which defines the foreign data type.
+         *
+         * Accepted values: TYPE_SYSTEM_UNSPECIFIED, HIVE
+         *
+         * @param self::TYPE_SYSTEM_* $typeSystem
+         */
+        public function setTypeSystem($typeSystem)
+        {
+        }
+        /**
+         * @return self::TYPE_SYSTEM_*
+         */
+        public function getTypeSystem()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_SYSTEM_*
+     * Runtime class alias of \Google\Service\Bigquery\ForeignTypeInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTypeSystem()
+    class Google_Service_Bigquery_ForeignTypeInfo extends \Google\Service\Bigquery\ForeignTypeInfo
     {
     }
 }

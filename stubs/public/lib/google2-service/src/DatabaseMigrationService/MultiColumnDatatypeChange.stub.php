@@ -21,190 +21,199 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class MultiColumnDatatypeChange extends \Google\Model
-{
-    /**
-     * Optional. Custom engine specific features.
-     *
-     * @var array[]
-     */
-    public $customFeatures;
-    /**
-     * Required. New data type.
-     *
-     * @var string
-     */
-    public $newDataType;
-    /**
-     * Optional. Column fractional seconds precision - used only for timestamp
-     * based datatypes - if not specified and relevant uses the source column
-     * fractional seconds precision.
-     *
-     * @var int
-     */
-    public $overrideFractionalSecondsPrecision;
-    /**
-     * Optional. Column length - e.g. varchar (50) - if not specified and relevant
-     * uses the source column length.
-     *
-     * @var string
-     */
-    public $overrideLength;
-    /**
-     * Optional. Column precision - when relevant - if not specified and relevant
-     * uses the source column precision.
-     *
-     * @var int
-     */
-    public $overridePrecision;
-    /**
-     * Optional. Column scale - when relevant - if not specified and relevant uses
-     * the source column scale.
-     *
-     * @var int
-     */
-    public $overrideScale;
-    /**
-     * Required. Filter on source data type.
-     *
-     * @var string
-     */
-    public $sourceDataTypeFilter;
-    protected $sourceNumericFilterType = SourceNumericFilter::class;
-    protected $sourceNumericFilterDataType = '';
-    protected $sourceTextFilterType = SourceTextFilter::class;
-    protected $sourceTextFilterDataType = '';
-    /**
-     * Optional. Custom engine specific features.
-     *
-     * @param array[] $customFeatures
-     */
-    public function setCustomFeatures($customFeatures)
+namespace Google\Service\DatabaseMigrationService {
+    class MultiColumnDatatypeChange extends \Google\Model
     {
+        /**
+         * Optional. Custom engine specific features.
+         *
+         * @var array[]
+         */
+        public $customFeatures;
+        /**
+         * Required. New data type.
+         *
+         * @var string
+         */
+        public $newDataType;
+        /**
+         * Optional. Column fractional seconds precision - used only for timestamp
+         * based datatypes - if not specified and relevant uses the source column
+         * fractional seconds precision.
+         *
+         * @var int
+         */
+        public $overrideFractionalSecondsPrecision;
+        /**
+         * Optional. Column length - e.g. varchar (50) - if not specified and relevant
+         * uses the source column length.
+         *
+         * @var string
+         */
+        public $overrideLength;
+        /**
+         * Optional. Column precision - when relevant - if not specified and relevant
+         * uses the source column precision.
+         *
+         * @var int
+         */
+        public $overridePrecision;
+        /**
+         * Optional. Column scale - when relevant - if not specified and relevant uses
+         * the source column scale.
+         *
+         * @var int
+         */
+        public $overrideScale;
+        /**
+         * Required. Filter on source data type.
+         *
+         * @var string
+         */
+        public $sourceDataTypeFilter;
+        protected $sourceNumericFilterType = SourceNumericFilter::class;
+        protected $sourceNumericFilterDataType = '';
+        protected $sourceTextFilterType = SourceTextFilter::class;
+        protected $sourceTextFilterDataType = '';
+        /**
+         * Optional. Custom engine specific features.
+         *
+         * @param array[] $customFeatures
+         */
+        public function setCustomFeatures($customFeatures)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getCustomFeatures()
+        {
+        }
+        /**
+         * Required. New data type.
+         *
+         * @param string $newDataType
+         */
+        public function setNewDataType($newDataType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewDataType()
+        {
+        }
+        /**
+         * Optional. Column fractional seconds precision - used only for timestamp
+         * based datatypes - if not specified and relevant uses the source column
+         * fractional seconds precision.
+         *
+         * @param int $overrideFractionalSecondsPrecision
+         */
+        public function setOverrideFractionalSecondsPrecision($overrideFractionalSecondsPrecision)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOverrideFractionalSecondsPrecision()
+        {
+        }
+        /**
+         * Optional. Column length - e.g. varchar (50) - if not specified and relevant
+         * uses the source column length.
+         *
+         * @param string $overrideLength
+         */
+        public function setOverrideLength($overrideLength)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOverrideLength()
+        {
+        }
+        /**
+         * Optional. Column precision - when relevant - if not specified and relevant
+         * uses the source column precision.
+         *
+         * @param int $overridePrecision
+         */
+        public function setOverridePrecision($overridePrecision)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOverridePrecision()
+        {
+        }
+        /**
+         * Optional. Column scale - when relevant - if not specified and relevant uses
+         * the source column scale.
+         *
+         * @param int $overrideScale
+         */
+        public function setOverrideScale($overrideScale)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOverrideScale()
+        {
+        }
+        /**
+         * Required. Filter on source data type.
+         *
+         * @param string $sourceDataTypeFilter
+         */
+        public function setSourceDataTypeFilter($sourceDataTypeFilter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceDataTypeFilter()
+        {
+        }
+        /**
+         * Optional. Filter for fixed point number data types such as NUMERIC/NUMBER.
+         *
+         * @param SourceNumericFilter $sourceNumericFilter
+         */
+        public function setSourceNumericFilter(SourceNumericFilter $sourceNumericFilter)
+        {
+        }
+        /**
+         * @return SourceNumericFilter
+         */
+        public function getSourceNumericFilter()
+        {
+        }
+        /**
+         * Optional. Filter for text-based data types like varchar.
+         *
+         * @param SourceTextFilter $sourceTextFilter
+         */
+        public function setSourceTextFilter(SourceTextFilter $sourceTextFilter)
+        {
+        }
+        /**
+         * @return SourceTextFilter
+         */
+        public function getSourceTextFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\MultiColumnDatatypeChange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomFeatures()
-    {
-    }
-    /**
-     * Required. New data type.
-     *
-     * @param string $newDataType
-     */
-    public function setNewDataType($newDataType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNewDataType()
-    {
-    }
-    /**
-     * Optional. Column fractional seconds precision - used only for timestamp
-     * based datatypes - if not specified and relevant uses the source column
-     * fractional seconds precision.
-     *
-     * @param int $overrideFractionalSecondsPrecision
-     */
-    public function setOverrideFractionalSecondsPrecision($overrideFractionalSecondsPrecision)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getOverrideFractionalSecondsPrecision()
-    {
-    }
-    /**
-     * Optional. Column length - e.g. varchar (50) - if not specified and relevant
-     * uses the source column length.
-     *
-     * @param string $overrideLength
-     */
-    public function setOverrideLength($overrideLength)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOverrideLength()
-    {
-    }
-    /**
-     * Optional. Column precision - when relevant - if not specified and relevant
-     * uses the source column precision.
-     *
-     * @param int $overridePrecision
-     */
-    public function setOverridePrecision($overridePrecision)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getOverridePrecision()
-    {
-    }
-    /**
-     * Optional. Column scale - when relevant - if not specified and relevant uses
-     * the source column scale.
-     *
-     * @param int $overrideScale
-     */
-    public function setOverrideScale($overrideScale)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getOverrideScale()
-    {
-    }
-    /**
-     * Required. Filter on source data type.
-     *
-     * @param string $sourceDataTypeFilter
-     */
-    public function setSourceDataTypeFilter($sourceDataTypeFilter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceDataTypeFilter()
-    {
-    }
-    /**
-     * Optional. Filter for fixed point number data types such as NUMERIC/NUMBER.
-     *
-     * @param SourceNumericFilter $sourceNumericFilter
-     */
-    public function setSourceNumericFilter(SourceNumericFilter $sourceNumericFilter)
-    {
-    }
-    /**
-     * @return SourceNumericFilter
-     */
-    public function getSourceNumericFilter()
-    {
-    }
-    /**
-     * Optional. Filter for text-based data types like varchar.
-     *
-     * @param SourceTextFilter $sourceTextFilter
-     */
-    public function setSourceTextFilter(SourceTextFilter $sourceTextFilter)
-    {
-    }
-    /**
-     * @return SourceTextFilter
-     */
-    public function getSourceTextFilter()
+    class Google_Service_DatabaseMigrationService_MultiColumnDatatypeChange extends \Google\Service\DatabaseMigrationService\MultiColumnDatatypeChange
     {
     }
 }

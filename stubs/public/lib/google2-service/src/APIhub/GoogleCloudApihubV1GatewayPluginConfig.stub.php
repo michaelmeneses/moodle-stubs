@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1GatewayPluginConfig extends \Google\Model
-{
-    protected $apigeeEdgeConfigType = GoogleCloudApihubV1ApigeeEdgeConfig::class;
-    protected $apigeeEdgeConfigDataType = '';
-    protected $apigeeOpdkConfigType = GoogleCloudApihubV1ApigeeOPDKConfig::class;
-    protected $apigeeOpdkConfigDataType = '';
-    protected $apigeeXHybridConfigType = GoogleCloudApihubV1ApigeeXHybridConfig::class;
-    protected $apigeeXHybridConfigDataType = '';
-    /**
-     * Required. The name of the gateway plugin instance for which the config is
-     * to be specified. Format: projects/{project}/locations/{location}/plugins/{p
-     * lugin}/pluginInstances/{plugin_instance}
-     *
-     * @var string
-     */
-    public $pluginInstance;
-    /**
-     * Configuration for Apigee Edge gateways.
-     *
-     * @param GoogleCloudApihubV1ApigeeEdgeConfig $apigeeEdgeConfig
-     */
-    public function setApigeeEdgeConfig(GoogleCloudApihubV1ApigeeEdgeConfig $apigeeEdgeConfig)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1GatewayPluginConfig extends \Google\Model
     {
+        protected $apigeeEdgeConfigType = GoogleCloudApihubV1ApigeeEdgeConfig::class;
+        protected $apigeeEdgeConfigDataType = '';
+        protected $apigeeOpdkConfigType = GoogleCloudApihubV1ApigeeOPDKConfig::class;
+        protected $apigeeOpdkConfigDataType = '';
+        protected $apigeeXHybridConfigType = GoogleCloudApihubV1ApigeeXHybridConfig::class;
+        protected $apigeeXHybridConfigDataType = '';
+        /**
+         * Required. The name of the gateway plugin instance for which the config is
+         * to be specified. Format: projects/{project}/locations/{location}/plugins/{p
+         * lugin}/pluginInstances/{plugin_instance}
+         *
+         * @var string
+         */
+        public $pluginInstance;
+        /**
+         * Configuration for Apigee Edge gateways.
+         *
+         * @param GoogleCloudApihubV1ApigeeEdgeConfig $apigeeEdgeConfig
+         */
+        public function setApigeeEdgeConfig(GoogleCloudApihubV1ApigeeEdgeConfig $apigeeEdgeConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1ApigeeEdgeConfig
+         */
+        public function getApigeeEdgeConfig()
+        {
+        }
+        /**
+         * Configuration for Apigee OPDK gateways.
+         *
+         * @param GoogleCloudApihubV1ApigeeOPDKConfig $apigeeOpdkConfig
+         */
+        public function setApigeeOpdkConfig(GoogleCloudApihubV1ApigeeOPDKConfig $apigeeOpdkConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1ApigeeOPDKConfig
+         */
+        public function getApigeeOpdkConfig()
+        {
+        }
+        /**
+         * Configuration for Apigee X and Apigee Hybrid gateways.
+         *
+         * @param GoogleCloudApihubV1ApigeeXHybridConfig $apigeeXHybridConfig
+         */
+        public function setApigeeXHybridConfig(GoogleCloudApihubV1ApigeeXHybridConfig $apigeeXHybridConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1ApigeeXHybridConfig
+         */
+        public function getApigeeXHybridConfig()
+        {
+        }
+        /**
+         * Required. The name of the gateway plugin instance for which the config is
+         * to be specified. Format: projects/{project}/locations/{location}/plugins/{p
+         * lugin}/pluginInstances/{plugin_instance}
+         *
+         * @param string $pluginInstance
+         */
+        public function setPluginInstance($pluginInstance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPluginInstance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1ApigeeEdgeConfig
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1GatewayPluginConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApigeeEdgeConfig()
-    {
-    }
-    /**
-     * Configuration for Apigee OPDK gateways.
-     *
-     * @param GoogleCloudApihubV1ApigeeOPDKConfig $apigeeOpdkConfig
-     */
-    public function setApigeeOpdkConfig(GoogleCloudApihubV1ApigeeOPDKConfig $apigeeOpdkConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1ApigeeOPDKConfig
-     */
-    public function getApigeeOpdkConfig()
-    {
-    }
-    /**
-     * Configuration for Apigee X and Apigee Hybrid gateways.
-     *
-     * @param GoogleCloudApihubV1ApigeeXHybridConfig $apigeeXHybridConfig
-     */
-    public function setApigeeXHybridConfig(GoogleCloudApihubV1ApigeeXHybridConfig $apigeeXHybridConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1ApigeeXHybridConfig
-     */
-    public function getApigeeXHybridConfig()
-    {
-    }
-    /**
-     * Required. The name of the gateway plugin instance for which the config is
-     * to be specified. Format: projects/{project}/locations/{location}/plugins/{p
-     * lugin}/pluginInstances/{plugin_instance}
-     *
-     * @param string $pluginInstance
-     */
-    public function setPluginInstance($pluginInstance)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPluginInstance()
+    class Google_Service_APIhub_GoogleCloudApihubV1GatewayPluginConfig extends \Google\Service\APIhub\GoogleCloudApihubV1GatewayPluginConfig
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class LogMetadata extends \Google\Model
-{
-    /**
-     * The labels extracted from the log.
-     *
-     * @var string[]
-     */
-    public $extractedLabels;
-    /**
-     * The labels extracted from the log.
-     *
-     * @param string[] $extractedLabels
-     */
-    public function setExtractedLabels($extractedLabels)
+namespace Google\Service\Monitoring {
+    class LogMetadata extends \Google\Model
     {
+        /**
+         * The labels extracted from the log.
+         *
+         * @var string[]
+         */
+        public $extractedLabels;
+        /**
+         * The labels extracted from the log.
+         *
+         * @param string[] $extractedLabels
+         */
+        public function setExtractedLabels($extractedLabels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExtractedLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Monitoring\LogMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExtractedLabels()
+    class Google_Service_Monitoring_LogMetadata extends \Google\Service\Monitoring\LogMetadata
     {
     }
 }

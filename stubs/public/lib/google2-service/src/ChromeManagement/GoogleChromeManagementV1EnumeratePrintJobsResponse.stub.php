@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1EnumeratePrintJobsResponse extends \Google\Collection
-{
-    protected $collection_key = 'printJobs';
-    /**
-     * A token, which can be used in a subsequent request to retrieve the next
-     * page. If this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $printJobsType = GoogleChromeManagementV1PrintJob::class;
-    protected $printJobsDataType = 'array';
-    /**
-     * Total number of print jobs matching request.
-     *
-     * @var string
-     */
-    public $totalSize;
-    /**
-     * A token, which can be used in a subsequent request to retrieve the next
-     * page. If this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1EnumeratePrintJobsResponse extends \Google\Collection
     {
+        protected $collection_key = 'printJobs';
+        /**
+         * A token, which can be used in a subsequent request to retrieve the next
+         * page. If this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $printJobsType = GoogleChromeManagementV1PrintJob::class;
+        protected $printJobsDataType = 'array';
+        /**
+         * Total number of print jobs matching request.
+         *
+         * @var string
+         */
+        public $totalSize;
+        /**
+         * A token, which can be used in a subsequent request to retrieve the next
+         * page. If this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of requested print jobs.
+         *
+         * @param GoogleChromeManagementV1PrintJob[] $printJobs
+         */
+        public function setPrintJobs($printJobs)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1PrintJob[]
+         */
+        public function getPrintJobs()
+        {
+        }
+        /**
+         * Total number of print jobs matching request.
+         *
+         * @param string $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1EnumeratePrintJobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of requested print jobs.
-     *
-     * @param GoogleChromeManagementV1PrintJob[] $printJobs
-     */
-    public function setPrintJobs($printJobs)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementV1PrintJob[]
-     */
-    public function getPrintJobs()
-    {
-    }
-    /**
-     * Total number of print jobs matching request.
-     *
-     * @param string $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalSize()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1EnumeratePrintJobsResponse extends \Google\Service\ChromeManagement\GoogleChromeManagementV1EnumeratePrintJobsResponse
     {
     }
 }

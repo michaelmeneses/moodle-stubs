@@ -21,126 +21,135 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AdPolicyTopicConstraint extends \Google\Model
-{
-    protected $certificateDomainMismatchCountryListType = AdPolicyTopicConstraintAdPolicyCountryConstraintList::class;
-    protected $certificateDomainMismatchCountryListDataType = '';
-    protected $certificateMissingCountryListType = AdPolicyTopicConstraintAdPolicyCountryConstraintList::class;
-    protected $certificateMissingCountryListDataType = '';
-    protected $countryConstraintType = AdPolicyTopicConstraintAdPolicyCountryConstraintList::class;
-    protected $countryConstraintDataType = '';
-    protected $globalCertificateDomainMismatchType = AdPolicyTopicConstraintAdPolicyGlobalCertificateDomainMismatchConstraint::class;
-    protected $globalCertificateDomainMismatchDataType = '';
-    protected $globalCertificateMissingType = AdPolicyTopicConstraintAdPolicyGlobalCertificateMissingConstraint::class;
-    protected $globalCertificateMissingDataType = '';
-    /**
-     * Link to the form to request a certificate for the constraint.
-     *
-     * @var string
-     */
-    public $requestCertificateFormLink;
-    protected $resellerConstraintType = AdPolicyTopicConstraintAdPolicyResellerConstraint::class;
-    protected $resellerConstraintDataType = '';
-    /**
-     * Countries where the resource's domain is not covered by the certificates
-     * associated with it.
-     *
-     * @param AdPolicyTopicConstraintAdPolicyCountryConstraintList $certificateDomainMismatchCountryList
-     */
-    public function setCertificateDomainMismatchCountryList(AdPolicyTopicConstraintAdPolicyCountryConstraintList $certificateDomainMismatchCountryList)
+namespace Google\Service\DisplayVideo {
+    class AdPolicyTopicConstraint extends \Google\Model
     {
+        protected $certificateDomainMismatchCountryListType = AdPolicyTopicConstraintAdPolicyCountryConstraintList::class;
+        protected $certificateDomainMismatchCountryListDataType = '';
+        protected $certificateMissingCountryListType = AdPolicyTopicConstraintAdPolicyCountryConstraintList::class;
+        protected $certificateMissingCountryListDataType = '';
+        protected $countryConstraintType = AdPolicyTopicConstraintAdPolicyCountryConstraintList::class;
+        protected $countryConstraintDataType = '';
+        protected $globalCertificateDomainMismatchType = AdPolicyTopicConstraintAdPolicyGlobalCertificateDomainMismatchConstraint::class;
+        protected $globalCertificateDomainMismatchDataType = '';
+        protected $globalCertificateMissingType = AdPolicyTopicConstraintAdPolicyGlobalCertificateMissingConstraint::class;
+        protected $globalCertificateMissingDataType = '';
+        /**
+         * Link to the form to request a certificate for the constraint.
+         *
+         * @var string
+         */
+        public $requestCertificateFormLink;
+        protected $resellerConstraintType = AdPolicyTopicConstraintAdPolicyResellerConstraint::class;
+        protected $resellerConstraintDataType = '';
+        /**
+         * Countries where the resource's domain is not covered by the certificates
+         * associated with it.
+         *
+         * @param AdPolicyTopicConstraintAdPolicyCountryConstraintList $certificateDomainMismatchCountryList
+         */
+        public function setCertificateDomainMismatchCountryList(AdPolicyTopicConstraintAdPolicyCountryConstraintList $certificateDomainMismatchCountryList)
+        {
+        }
+        /**
+         * @return AdPolicyTopicConstraintAdPolicyCountryConstraintList
+         */
+        public function getCertificateDomainMismatchCountryList()
+        {
+        }
+        /**
+         * Countries where a certificate is required for serving.
+         *
+         * @param AdPolicyTopicConstraintAdPolicyCountryConstraintList $certificateMissingCountryList
+         */
+        public function setCertificateMissingCountryList(AdPolicyTopicConstraintAdPolicyCountryConstraintList $certificateMissingCountryList)
+        {
+        }
+        /**
+         * @return AdPolicyTopicConstraintAdPolicyCountryConstraintList
+         */
+        public function getCertificateMissingCountryList()
+        {
+        }
+        /**
+         * Countries where the ad cannot serve.
+         *
+         * @param AdPolicyTopicConstraintAdPolicyCountryConstraintList $countryConstraint
+         */
+        public function setCountryConstraint(AdPolicyTopicConstraintAdPolicyCountryConstraintList $countryConstraint)
+        {
+        }
+        /**
+         * @return AdPolicyTopicConstraintAdPolicyCountryConstraintList
+         */
+        public function getCountryConstraint()
+        {
+        }
+        /**
+         * Certificate is required to serve in any country and the existing
+         * certificate does not cover the ad's domain.
+         *
+         * @param AdPolicyTopicConstraintAdPolicyGlobalCertificateDomainMismatchConstraint $globalCertificateDomainMismatch
+         */
+        public function setGlobalCertificateDomainMismatch(AdPolicyTopicConstraintAdPolicyGlobalCertificateDomainMismatchConstraint $globalCertificateDomainMismatch)
+        {
+        }
+        /**
+         * @return AdPolicyTopicConstraintAdPolicyGlobalCertificateDomainMismatchConstraint
+         */
+        public function getGlobalCertificateDomainMismatch()
+        {
+        }
+        /**
+         * Certificate is required to serve in any country.
+         *
+         * @param AdPolicyTopicConstraintAdPolicyGlobalCertificateMissingConstraint $globalCertificateMissing
+         */
+        public function setGlobalCertificateMissing(AdPolicyTopicConstraintAdPolicyGlobalCertificateMissingConstraint $globalCertificateMissing)
+        {
+        }
+        /**
+         * @return AdPolicyTopicConstraintAdPolicyGlobalCertificateMissingConstraint
+         */
+        public function getGlobalCertificateMissing()
+        {
+        }
+        /**
+         * Link to the form to request a certificate for the constraint.
+         *
+         * @param string $requestCertificateFormLink
+         */
+        public function setRequestCertificateFormLink($requestCertificateFormLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestCertificateFormLink()
+        {
+        }
+        /**
+         * Reseller constraint.
+         *
+         * @param AdPolicyTopicConstraintAdPolicyResellerConstraint $resellerConstraint
+         */
+        public function setResellerConstraint(AdPolicyTopicConstraintAdPolicyResellerConstraint $resellerConstraint)
+        {
+        }
+        /**
+         * @return AdPolicyTopicConstraintAdPolicyResellerConstraint
+         */
+        public function getResellerConstraint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdPolicyTopicConstraintAdPolicyCountryConstraintList
+     * Runtime class alias of \Google\Service\DisplayVideo\AdPolicyTopicConstraint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificateDomainMismatchCountryList()
-    {
-    }
-    /**
-     * Countries where a certificate is required for serving.
-     *
-     * @param AdPolicyTopicConstraintAdPolicyCountryConstraintList $certificateMissingCountryList
-     */
-    public function setCertificateMissingCountryList(AdPolicyTopicConstraintAdPolicyCountryConstraintList $certificateMissingCountryList)
-    {
-    }
-    /**
-     * @return AdPolicyTopicConstraintAdPolicyCountryConstraintList
-     */
-    public function getCertificateMissingCountryList()
-    {
-    }
-    /**
-     * Countries where the ad cannot serve.
-     *
-     * @param AdPolicyTopicConstraintAdPolicyCountryConstraintList $countryConstraint
-     */
-    public function setCountryConstraint(AdPolicyTopicConstraintAdPolicyCountryConstraintList $countryConstraint)
-    {
-    }
-    /**
-     * @return AdPolicyTopicConstraintAdPolicyCountryConstraintList
-     */
-    public function getCountryConstraint()
-    {
-    }
-    /**
-     * Certificate is required to serve in any country and the existing
-     * certificate does not cover the ad's domain.
-     *
-     * @param AdPolicyTopicConstraintAdPolicyGlobalCertificateDomainMismatchConstraint $globalCertificateDomainMismatch
-     */
-    public function setGlobalCertificateDomainMismatch(AdPolicyTopicConstraintAdPolicyGlobalCertificateDomainMismatchConstraint $globalCertificateDomainMismatch)
-    {
-    }
-    /**
-     * @return AdPolicyTopicConstraintAdPolicyGlobalCertificateDomainMismatchConstraint
-     */
-    public function getGlobalCertificateDomainMismatch()
-    {
-    }
-    /**
-     * Certificate is required to serve in any country.
-     *
-     * @param AdPolicyTopicConstraintAdPolicyGlobalCertificateMissingConstraint $globalCertificateMissing
-     */
-    public function setGlobalCertificateMissing(AdPolicyTopicConstraintAdPolicyGlobalCertificateMissingConstraint $globalCertificateMissing)
-    {
-    }
-    /**
-     * @return AdPolicyTopicConstraintAdPolicyGlobalCertificateMissingConstraint
-     */
-    public function getGlobalCertificateMissing()
-    {
-    }
-    /**
-     * Link to the form to request a certificate for the constraint.
-     *
-     * @param string $requestCertificateFormLink
-     */
-    public function setRequestCertificateFormLink($requestCertificateFormLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestCertificateFormLink()
-    {
-    }
-    /**
-     * Reseller constraint.
-     *
-     * @param AdPolicyTopicConstraintAdPolicyResellerConstraint $resellerConstraint
-     */
-    public function setResellerConstraint(AdPolicyTopicConstraintAdPolicyResellerConstraint $resellerConstraint)
-    {
-    }
-    /**
-     * @return AdPolicyTopicConstraintAdPolicyResellerConstraint
-     */
-    public function getResellerConstraint()
+    class Google_Service_DisplayVideo_AdPolicyTopicConstraint extends \Google\Service\DisplayVideo\AdPolicyTopicConstraint
     {
     }
 }

@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class TlsRouteRouteRule extends \Google\Collection
-{
-    protected $collection_key = 'matches';
-    protected $actionType = TlsRouteRouteAction::class;
-    protected $actionDataType = '';
-    protected $matchesType = TlsRouteRouteMatch::class;
-    protected $matchesDataType = 'array';
-    /**
-     * Required. The detailed rule defining how to route matched traffic.
-     *
-     * @param TlsRouteRouteAction $action
-     */
-    public function setAction(TlsRouteRouteAction $action)
+namespace Google\Service\NetworkServices {
+    class TlsRouteRouteRule extends \Google\Collection
     {
+        protected $collection_key = 'matches';
+        protected $actionType = TlsRouteRouteAction::class;
+        protected $actionDataType = '';
+        protected $matchesType = TlsRouteRouteMatch::class;
+        protected $matchesDataType = 'array';
+        /**
+         * Required. The detailed rule defining how to route matched traffic.
+         *
+         * @param TlsRouteRouteAction $action
+         */
+        public function setAction(TlsRouteRouteAction $action)
+        {
+        }
+        /**
+         * @return TlsRouteRouteAction
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * Required. RouteMatch defines the predicate used to match requests to a
+         * given action. Multiple match types are "OR"ed for evaluation. Atleast one
+         * RouteMatch must be supplied.
+         *
+         * @param TlsRouteRouteMatch[] $matches
+         */
+        public function setMatches($matches)
+        {
+        }
+        /**
+         * @return TlsRouteRouteMatch[]
+         */
+        public function getMatches()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TlsRouteRouteAction
+     * Runtime class alias of \Google\Service\NetworkServices\TlsRouteRouteRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * Required. RouteMatch defines the predicate used to match requests to a
-     * given action. Multiple match types are "OR"ed for evaluation. Atleast one
-     * RouteMatch must be supplied.
-     *
-     * @param TlsRouteRouteMatch[] $matches
-     */
-    public function setMatches($matches)
-    {
-    }
-    /**
-     * @return TlsRouteRouteMatch[]
-     */
-    public function getMatches()
+    class Google_Service_NetworkServices_TlsRouteRouteRule extends \Google\Service\NetworkServices\TlsRouteRouteRule
     {
     }
 }

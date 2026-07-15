@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaKeyEventDefaultValue extends \Google\Model
-{
-    /**
-     * Required. When an occurrence of this Key Event (specified by event_name)
-     * has no set currency this currency will be applied as the default. Must be
-     * in ISO 4217 currency code format. See
-     * https://en.wikipedia.org/wiki/ISO_4217 for more information.
-     *
-     * @var string
-     */
-    public $currencyCode;
-    /**
-     * Required. This will be used to populate the "value" parameter for all
-     * occurrences of this Key Event (specified by event_name) where that
-     * parameter is unset.
-     *
-     * @var 
-     */
-    public $numericValue;
-    /**
-     * Required. When an occurrence of this Key Event (specified by event_name)
-     * has no set currency this currency will be applied as the default. Must be
-     * in ISO 4217 currency code format. See
-     * https://en.wikipedia.org/wiki/ISO_4217 for more information.
-     *
-     * @param string $currencyCode
-     */
-    public function setCurrencyCode($currencyCode)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaKeyEventDefaultValue extends \Google\Model
     {
+        /**
+         * Required. When an occurrence of this Key Event (specified by event_name)
+         * has no set currency this currency will be applied as the default. Must be
+         * in ISO 4217 currency code format. See
+         * https://en.wikipedia.org/wiki/ISO_4217 for more information.
+         *
+         * @var string
+         */
+        public $currencyCode;
+        /**
+         * Required. This will be used to populate the "value" parameter for all
+         * occurrences of this Key Event (specified by event_name) where that
+         * parameter is unset.
+         *
+         * @var 
+         */
+        public $numericValue;
+        /**
+         * Required. When an occurrence of this Key Event (specified by event_name)
+         * has no set currency this currency will be applied as the default. Must be
+         * in ISO 4217 currency code format. See
+         * https://en.wikipedia.org/wiki/ISO_4217 for more information.
+         *
+         * @param string $currencyCode
+         */
+        public function setCurrencyCode($currencyCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrencyCode()
+        {
+        }
+        public function setNumericValue($numericValue)
+        {
+        }
+        public function getNumericValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaKeyEventDefaultValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrencyCode()
-    {
-    }
-    public function setNumericValue($numericValue)
-    {
-    }
-    public function getNumericValue()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaKeyEventDefaultValue extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaKeyEventDefaultValue
     {
     }
 }

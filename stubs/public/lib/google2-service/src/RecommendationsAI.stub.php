@@ -21,47 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for RecommendationsAI (v1beta1).
- *
- * <p>
- * Note that we now highly recommend new customers to use Retail API, which
- * incorporates the GA version of the Recommendations AI funtionalities. To
- * enable Retail API, please visit
- * https://console.cloud.google.com/apis/library/retail.googleapis.com. The
- * Recommendations AI service enables customers to build end-to-end personalized
- * recommendation systems without requiring a high level of expertise in machine
- * learning, recommendation system, or Google Cloud.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/recommendations-ai/docs" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class RecommendationsAI extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $projects_locations_catalogs;
-    public $projects_locations_catalogs_catalogItems;
-    public $projects_locations_catalogs_eventStores_operations;
-    public $projects_locations_catalogs_eventStores_placements;
-    public $projects_locations_catalogs_eventStores_predictionApiKeyRegistrations;
-    public $projects_locations_catalogs_eventStores_userEvents;
-    public $projects_locations_catalogs_operations;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the RecommendationsAI service.
+     * Service definition for RecommendationsAI (v1beta1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Note that we now highly recommend new customers to use Retail API, which
+     * incorporates the GA version of the Recommendations AI funtionalities. To
+     * enable Retail API, please visit
+     * https://console.cloud.google.com/apis/library/retail.googleapis.com. The
+     * Recommendations AI service enables customers to build end-to-end personalized
+     * recommendation systems without requiring a high level of expertise in machine
+     * learning, recommendation system, or Google Cloud.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/recommendations-ai/docs" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class RecommendationsAI extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $projects_locations_catalogs;
+        public $projects_locations_catalogs_catalogItems;
+        public $projects_locations_catalogs_eventStores_operations;
+        public $projects_locations_catalogs_eventStores_placements;
+        public $projects_locations_catalogs_eventStores_predictionApiKeyRegistrations;
+        public $projects_locations_catalogs_eventStores_userEvents;
+        public $projects_locations_catalogs_operations;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the RecommendationsAI service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RecommendationsAI registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RecommendationsAI extends \Google\Service\RecommendationsAI
     {
     }
 }

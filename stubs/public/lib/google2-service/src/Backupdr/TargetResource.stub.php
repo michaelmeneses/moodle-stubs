@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class TargetResource extends \Google\Model
-{
-    protected $gcpResourceType = GcpResource::class;
-    protected $gcpResourceDataType = '';
-    /**
-     * Details of the native Google Cloud resource created as part of restore.
-     *
-     * @param GcpResource $gcpResource
-     */
-    public function setGcpResource(GcpResource $gcpResource)
+namespace Google\Service\Backupdr {
+    class TargetResource extends \Google\Model
     {
+        protected $gcpResourceType = GcpResource::class;
+        protected $gcpResourceDataType = '';
+        /**
+         * Details of the native Google Cloud resource created as part of restore.
+         *
+         * @param GcpResource $gcpResource
+         */
+        public function setGcpResource(GcpResource $gcpResource)
+        {
+        }
+        /**
+         * @return GcpResource
+         */
+        public function getGcpResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GcpResource
+     * Runtime class alias of \Google\Service\Backupdr\TargetResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcpResource()
+    class Google_Service_Backupdr_TargetResource extends \Google\Service\Backupdr\TargetResource
     {
     }
 }

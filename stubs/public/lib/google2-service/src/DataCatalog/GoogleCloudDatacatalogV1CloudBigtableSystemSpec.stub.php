@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1CloudBigtableSystemSpec extends \Google\Model
-{
-    /**
-     * Display name of the Instance. This is user specified and different from the
-     * resource name.
-     *
-     * @var string
-     */
-    public $instanceDisplayName;
-    /**
-     * Display name of the Instance. This is user specified and different from the
-     * resource name.
-     *
-     * @param string $instanceDisplayName
-     */
-    public function setInstanceDisplayName($instanceDisplayName)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1CloudBigtableSystemSpec extends \Google\Model
     {
+        /**
+         * Display name of the Instance. This is user specified and different from the
+         * resource name.
+         *
+         * @var string
+         */
+        public $instanceDisplayName;
+        /**
+         * Display name of the Instance. This is user specified and different from the
+         * resource name.
+         *
+         * @param string $instanceDisplayName
+         */
+        public function setInstanceDisplayName($instanceDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1CloudBigtableSystemSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceDisplayName()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1CloudBigtableSystemSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1CloudBigtableSystemSpec
     {
     }
 }

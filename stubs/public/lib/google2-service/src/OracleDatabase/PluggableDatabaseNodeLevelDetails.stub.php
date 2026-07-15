@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class PluggableDatabaseNodeLevelDetails extends \Google\Model
-{
-    /**
-     * The open mode is unspecified.
-     */
-    public const OPEN_MODE_PLUGGABLE_DATABASE_OPEN_MODE_UNSPECIFIED = 'PLUGGABLE_DATABASE_OPEN_MODE_UNSPECIFIED';
-    /**
-     * The pluggable database is opened in read-only mode.
-     */
-    public const OPEN_MODE_READ_ONLY = 'READ_ONLY';
-    /**
-     * The pluggable database is opened in read-write mode.
-     */
-    public const OPEN_MODE_READ_WRITE = 'READ_WRITE';
-    /**
-     * The pluggable database is mounted.
-     */
-    public const OPEN_MODE_MOUNTED = 'MOUNTED';
-    /**
-     * The pluggable database is migrated.
-     */
-    public const OPEN_MODE_MIGRATE = 'MIGRATE';
-    /**
-     * Required. The Node name of the Database home.
-     *
-     * @var string
-     */
-    public $nodeName;
-    /**
-     * Required. The mode that the pluggable database is in to open it.
-     *
-     * @var string
-     */
-    public $openMode;
-    /**
-     * Required. The OCID of the Pluggable Database.
-     *
-     * @var string
-     */
-    public $pluggableDatabaseId;
-    /**
-     * Required. The Node name of the Database home.
-     *
-     * @param string $nodeName
-     */
-    public function setNodeName($nodeName)
+namespace Google\Service\OracleDatabase {
+    class PluggableDatabaseNodeLevelDetails extends \Google\Model
     {
+        /**
+         * The open mode is unspecified.
+         */
+        public const OPEN_MODE_PLUGGABLE_DATABASE_OPEN_MODE_UNSPECIFIED = 'PLUGGABLE_DATABASE_OPEN_MODE_UNSPECIFIED';
+        /**
+         * The pluggable database is opened in read-only mode.
+         */
+        public const OPEN_MODE_READ_ONLY = 'READ_ONLY';
+        /**
+         * The pluggable database is opened in read-write mode.
+         */
+        public const OPEN_MODE_READ_WRITE = 'READ_WRITE';
+        /**
+         * The pluggable database is mounted.
+         */
+        public const OPEN_MODE_MOUNTED = 'MOUNTED';
+        /**
+         * The pluggable database is migrated.
+         */
+        public const OPEN_MODE_MIGRATE = 'MIGRATE';
+        /**
+         * Required. The Node name of the Database home.
+         *
+         * @var string
+         */
+        public $nodeName;
+        /**
+         * Required. The mode that the pluggable database is in to open it.
+         *
+         * @var string
+         */
+        public $openMode;
+        /**
+         * Required. The OCID of the Pluggable Database.
+         *
+         * @var string
+         */
+        public $pluggableDatabaseId;
+        /**
+         * Required. The Node name of the Database home.
+         *
+         * @param string $nodeName
+         */
+        public function setNodeName($nodeName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNodeName()
+        {
+        }
+        /**
+         * Required. The mode that the pluggable database is in to open it.
+         *
+         * Accepted values: PLUGGABLE_DATABASE_OPEN_MODE_UNSPECIFIED, READ_ONLY,
+         * READ_WRITE, MOUNTED, MIGRATE
+         *
+         * @param self::OPEN_MODE_* $openMode
+         */
+        public function setOpenMode($openMode)
+        {
+        }
+        /**
+         * @return self::OPEN_MODE_*
+         */
+        public function getOpenMode()
+        {
+        }
+        /**
+         * Required. The OCID of the Pluggable Database.
+         *
+         * @param string $pluggableDatabaseId
+         */
+        public function setPluggableDatabaseId($pluggableDatabaseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPluggableDatabaseId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OracleDatabase\PluggableDatabaseNodeLevelDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNodeName()
-    {
-    }
-    /**
-     * Required. The mode that the pluggable database is in to open it.
-     *
-     * Accepted values: PLUGGABLE_DATABASE_OPEN_MODE_UNSPECIFIED, READ_ONLY,
-     * READ_WRITE, MOUNTED, MIGRATE
-     *
-     * @param self::OPEN_MODE_* $openMode
-     */
-    public function setOpenMode($openMode)
-    {
-    }
-    /**
-     * @return self::OPEN_MODE_*
-     */
-    public function getOpenMode()
-    {
-    }
-    /**
-     * Required. The OCID of the Pluggable Database.
-     *
-     * @param string $pluggableDatabaseId
-     */
-    public function setPluggableDatabaseId($pluggableDatabaseId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPluggableDatabaseId()
+    class Google_Service_OracleDatabase_PluggableDatabaseNodeLevelDetails extends \Google\Service\OracleDatabase\PluggableDatabaseNodeLevelDetails
     {
     }
 }

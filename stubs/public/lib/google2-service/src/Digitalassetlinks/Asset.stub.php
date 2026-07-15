@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Digitalassetlinks;
-
-class Asset extends \Google\Model
-{
-    protected $androidAppType = AndroidAppAsset::class;
-    protected $androidAppDataType = '';
-    protected $webType = WebAsset::class;
-    protected $webDataType = '';
-    /**
-     * Set if this is an Android App asset.
-     *
-     * @param AndroidAppAsset $androidApp
-     */
-    public function setAndroidApp(AndroidAppAsset $androidApp)
+namespace Google\Service\Digitalassetlinks {
+    class Asset extends \Google\Model
     {
+        protected $androidAppType = AndroidAppAsset::class;
+        protected $androidAppDataType = '';
+        protected $webType = WebAsset::class;
+        protected $webDataType = '';
+        /**
+         * Set if this is an Android App asset.
+         *
+         * @param AndroidAppAsset $androidApp
+         */
+        public function setAndroidApp(AndroidAppAsset $androidApp)
+        {
+        }
+        /**
+         * @return AndroidAppAsset
+         */
+        public function getAndroidApp()
+        {
+        }
+        /**
+         * Set if this is a web asset.
+         *
+         * @param WebAsset $web
+         */
+        public function setWeb(WebAsset $web)
+        {
+        }
+        /**
+         * @return WebAsset
+         */
+        public function getWeb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AndroidAppAsset
+     * Runtime class alias of \Google\Service\Digitalassetlinks\Asset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndroidApp()
-    {
-    }
-    /**
-     * Set if this is a web asset.
-     *
-     * @param WebAsset $web
-     */
-    public function setWeb(WebAsset $web)
-    {
-    }
-    /**
-     * @return WebAsset
-     */
-    public function getWeb()
+    class Google_Service_Digitalassetlinks_Asset extends \Google\Service\Digitalassetlinks\Asset
     {
     }
 }

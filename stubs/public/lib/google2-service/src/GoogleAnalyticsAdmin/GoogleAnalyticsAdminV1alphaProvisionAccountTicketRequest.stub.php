@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaProvisionAccountTicketRequest extends \Google\Model
-{
-    protected $accountType = GoogleAnalyticsAdminV1alphaAccount::class;
-    protected $accountDataType = '';
-    /**
-     * @var string
-     */
-    public $redirectUri;
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAccount
-     */
-    public function setAccount(GoogleAnalyticsAdminV1alphaAccount $account)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaProvisionAccountTicketRequest extends \Google\Model
     {
+        protected $accountType = GoogleAnalyticsAdminV1alphaAccount::class;
+        protected $accountDataType = '';
+        /**
+         * @var string
+         */
+        public $redirectUri;
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAccount
+         */
+        public function setAccount(GoogleAnalyticsAdminV1alphaAccount $account)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAccount
+         */
+        public function getAccount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRedirectUri($redirectUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRedirectUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1alphaAccount
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaProvisionAccountTicketRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRedirectUri($redirectUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRedirectUri()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaProvisionAccountTicketRequest extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaProvisionAccountTicketRequest
     {
     }
 }

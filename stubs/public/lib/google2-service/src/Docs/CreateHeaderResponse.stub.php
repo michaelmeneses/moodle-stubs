@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class CreateHeaderResponse extends \Google\Model
-{
-    /**
-     * The ID of the created header.
-     *
-     * @var string
-     */
-    public $headerId;
-    /**
-     * The ID of the created header.
-     *
-     * @param string $headerId
-     */
-    public function setHeaderId($headerId)
+namespace Google\Service\Docs {
+    class CreateHeaderResponse extends \Google\Model
     {
+        /**
+         * The ID of the created header.
+         *
+         * @var string
+         */
+        public $headerId;
+        /**
+         * The ID of the created header.
+         *
+         * @param string $headerId
+         */
+        public function setHeaderId($headerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeaderId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Docs\CreateHeaderResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeaderId()
+    class Google_Service_Docs_CreateHeaderResponse extends \Google\Service\Docs\CreateHeaderResponse
     {
     }
 }

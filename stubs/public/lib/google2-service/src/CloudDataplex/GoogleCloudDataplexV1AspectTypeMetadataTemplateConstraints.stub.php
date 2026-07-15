@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1AspectTypeMetadataTemplateConstraints extends \Google\Model
-{
-    /**
-     * Optional. Marks this field as optional or required.
-     *
-     * @var bool
-     */
-    public $required;
-    /**
-     * Optional. Marks this field as optional or required.
-     *
-     * @param bool $required
-     */
-    public function setRequired($required)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1AspectTypeMetadataTemplateConstraints extends \Google\Model
     {
+        /**
+         * Optional. Marks this field as optional or required.
+         *
+         * @var bool
+         */
+        public $required;
+        /**
+         * Optional. Marks this field as optional or required.
+         *
+         * @param bool $required
+         */
+        public function setRequired($required)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRequired()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1AspectTypeMetadataTemplateConstraints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequired()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1AspectTypeMetadataTemplateConstraints extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1AspectTypeMetadataTemplateConstraints
     {
     }
 }

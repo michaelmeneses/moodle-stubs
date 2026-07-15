@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class AccountTreeRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $accountName;
-    /**
-     * Resource type for account ticket.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string
-     */
-    public $profileName;
-    /**
-     * @var string
-     */
-    public $timezone;
-    /**
-     * @var string
-     */
-    public $webpropertyName;
-    /**
-     * @var string
-     */
-    public $websiteUrl;
-    /**
-     * @param string $accountName
-     */
-    public function setAccountName($accountName)
+namespace Google\Service\Analytics {
+    class AccountTreeRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $accountName;
+        /**
+         * Resource type for account ticket.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string
+         */
+        public $profileName;
+        /**
+         * @var string
+         */
+        public $timezone;
+        /**
+         * @var string
+         */
+        public $webpropertyName;
+        /**
+         * @var string
+         */
+        public $websiteUrl;
+        /**
+         * @param string $accountName
+         */
+        public function setAccountName($accountName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountName()
+        {
+        }
+        /**
+         * Resource type for account ticket.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string $profileName
+         */
+        public function setProfileName($profileName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProfileName()
+        {
+        }
+        /**
+         * @param string $timezone
+         */
+        public function setTimezone($timezone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimezone()
+        {
+        }
+        /**
+         * @param string $webpropertyName
+         */
+        public function setWebpropertyName($webpropertyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebpropertyName()
+        {
+        }
+        /**
+         * @param string $websiteUrl
+         */
+        public function setWebsiteUrl($websiteUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebsiteUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\AccountTreeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountName()
-    {
-    }
-    /**
-     * Resource type for account ticket.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string $profileName
-     */
-    public function setProfileName($profileName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProfileName()
-    {
-    }
-    /**
-     * @param string $timezone
-     */
-    public function setTimezone($timezone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimezone()
-    {
-    }
-    /**
-     * @param string $webpropertyName
-     */
-    public function setWebpropertyName($webpropertyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebpropertyName()
-    {
-    }
-    /**
-     * @param string $websiteUrl
-     */
-    public function setWebsiteUrl($websiteUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebsiteUrl()
+    class Google_Service_Analytics_AccountTreeRequest extends \Google\Service\Analytics\AccountTreeRequest
     {
     }
 }

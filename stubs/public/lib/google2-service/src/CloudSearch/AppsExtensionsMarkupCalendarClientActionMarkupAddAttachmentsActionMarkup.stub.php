@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsExtensionsMarkupCalendarClientActionMarkupAddAttachmentsActionMarkup extends \Google\Collection
-{
-    protected $collection_key = 'addonAttachments';
-    protected $addonAttachmentsType = AppsExtensionsMarkupCalendarClientActionMarkupAddAttachmentsActionMarkupAddonAttachment::class;
-    protected $addonAttachmentsDataType = 'array';
-    /**
-     * @param AppsExtensionsMarkupCalendarClientActionMarkupAddAttachmentsActionMarkupAddonAttachment[]
-     */
-    public function setAddonAttachments($addonAttachments)
+namespace Google\Service\CloudSearch {
+    class AppsExtensionsMarkupCalendarClientActionMarkupAddAttachmentsActionMarkup extends \Google\Collection
     {
+        protected $collection_key = 'addonAttachments';
+        protected $addonAttachmentsType = AppsExtensionsMarkupCalendarClientActionMarkupAddAttachmentsActionMarkupAddonAttachment::class;
+        protected $addonAttachmentsDataType = 'array';
+        /**
+         * @param AppsExtensionsMarkupCalendarClientActionMarkupAddAttachmentsActionMarkupAddonAttachment[]
+         */
+        public function setAddonAttachments($addonAttachments)
+        {
+        }
+        /**
+         * @return AppsExtensionsMarkupCalendarClientActionMarkupAddAttachmentsActionMarkupAddonAttachment[]
+         */
+        public function getAddonAttachments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsExtensionsMarkupCalendarClientActionMarkupAddAttachmentsActionMarkupAddonAttachment[]
+     * Runtime class alias of \Google\Service\CloudSearch\AppsExtensionsMarkupCalendarClientActionMarkupAddAttachmentsActionMarkup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddonAttachments()
+    class Google_Service_CloudSearch_AppsExtensionsMarkupCalendarClientActionMarkupAddAttachmentsActionMarkup extends \Google\Service\CloudSearch\AppsExtensionsMarkupCalendarClientActionMarkupAddAttachmentsActionMarkup
     {
     }
 }

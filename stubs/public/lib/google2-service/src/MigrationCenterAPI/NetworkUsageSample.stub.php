@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class NetworkUsageSample extends \Google\Model
-{
-    /**
-     * Average network egress in B/s sampled over a short window. Must be non-
-     * negative.
-     *
-     * @var float
-     */
-    public $averageEgressBps;
-    /**
-     * Average network ingress in B/s sampled over a short window. Must be non-
-     * negative.
-     *
-     * @var float
-     */
-    public $averageIngressBps;
-    /**
-     * Average network egress in B/s sampled over a short window. Must be non-
-     * negative.
-     *
-     * @param float $averageEgressBps
-     */
-    public function setAverageEgressBps($averageEgressBps)
+namespace Google\Service\MigrationCenterAPI {
+    class NetworkUsageSample extends \Google\Model
     {
+        /**
+         * Average network egress in B/s sampled over a short window. Must be non-
+         * negative.
+         *
+         * @var float
+         */
+        public $averageEgressBps;
+        /**
+         * Average network ingress in B/s sampled over a short window. Must be non-
+         * negative.
+         *
+         * @var float
+         */
+        public $averageIngressBps;
+        /**
+         * Average network egress in B/s sampled over a short window. Must be non-
+         * negative.
+         *
+         * @param float $averageEgressBps
+         */
+        public function setAverageEgressBps($averageEgressBps)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getAverageEgressBps()
+        {
+        }
+        /**
+         * Average network ingress in B/s sampled over a short window. Must be non-
+         * negative.
+         *
+         * @param float $averageIngressBps
+         */
+        public function setAverageIngressBps($averageIngressBps)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getAverageIngressBps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\NetworkUsageSample registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAverageEgressBps()
-    {
-    }
-    /**
-     * Average network ingress in B/s sampled over a short window. Must be non-
-     * negative.
-     *
-     * @param float $averageIngressBps
-     */
-    public function setAverageIngressBps($averageIngressBps)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getAverageIngressBps()
+    class Google_Service_MigrationCenterAPI_NetworkUsageSample extends \Google\Service\MigrationCenterAPI\NetworkUsageSample
     {
     }
 }

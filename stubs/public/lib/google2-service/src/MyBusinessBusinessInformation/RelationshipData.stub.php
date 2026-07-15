@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class RelationshipData extends \Google\Collection
-{
-    protected $collection_key = 'childrenLocations';
-    protected $childrenLocationsType = RelevantLocation::class;
-    protected $childrenLocationsDataType = 'array';
-    /**
-     * The resource name of the Chain that this location is member of. How to find
-     * Chain ID
-     *
-     * @var string
-     */
-    public $parentChain;
-    protected $parentLocationType = RelevantLocation::class;
-    protected $parentLocationDataType = '';
-    /**
-     * The list of children locations that this location has relations with.
-     *
-     * @param RelevantLocation[] $childrenLocations
-     */
-    public function setChildrenLocations($childrenLocations)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class RelationshipData extends \Google\Collection
     {
+        protected $collection_key = 'childrenLocations';
+        protected $childrenLocationsType = RelevantLocation::class;
+        protected $childrenLocationsDataType = 'array';
+        /**
+         * The resource name of the Chain that this location is member of. How to find
+         * Chain ID
+         *
+         * @var string
+         */
+        public $parentChain;
+        protected $parentLocationType = RelevantLocation::class;
+        protected $parentLocationDataType = '';
+        /**
+         * The list of children locations that this location has relations with.
+         *
+         * @param RelevantLocation[] $childrenLocations
+         */
+        public function setChildrenLocations($childrenLocations)
+        {
+        }
+        /**
+         * @return RelevantLocation[]
+         */
+        public function getChildrenLocations()
+        {
+        }
+        /**
+         * The resource name of the Chain that this location is member of. How to find
+         * Chain ID
+         *
+         * @param string $parentChain
+         */
+        public function setParentChain($parentChain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParentChain()
+        {
+        }
+        /**
+         * The parent location that this location has relations with.
+         *
+         * @param RelevantLocation $parentLocation
+         */
+        public function setParentLocation(RelevantLocation $parentLocation)
+        {
+        }
+        /**
+         * @return RelevantLocation
+         */
+        public function getParentLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RelevantLocation[]
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\RelationshipData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChildrenLocations()
-    {
-    }
-    /**
-     * The resource name of the Chain that this location is member of. How to find
-     * Chain ID
-     *
-     * @param string $parentChain
-     */
-    public function setParentChain($parentChain)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParentChain()
-    {
-    }
-    /**
-     * The parent location that this location has relations with.
-     *
-     * @param RelevantLocation $parentLocation
-     */
-    public function setParentLocation(RelevantLocation $parentLocation)
-    {
-    }
-    /**
-     * @return RelevantLocation
-     */
-    public function getParentLocation()
+    class Google_Service_MyBusinessBusinessInformation_RelationshipData extends \Google\Service\MyBusinessBusinessInformation\RelationshipData
     {
     }
 }

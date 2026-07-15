@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class ListNfsSharesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * A token identifying a page of results from the server.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $nfsSharesType = NfsShare::class;
-    protected $nfsSharesDataType = 'array';
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A token identifying a page of results from the server.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Baremetalsolution {
+    class ListNfsSharesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * A token identifying a page of results from the server.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $nfsSharesType = NfsShare::class;
+        protected $nfsSharesDataType = 'array';
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A token identifying a page of results from the server.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of NFS shares.
+         *
+         * @param NfsShare[] $nfsShares
+         */
+        public function setNfsShares($nfsShares)
+        {
+        }
+        /**
+         * @return NfsShare[]
+         */
+        public function getNfsShares()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Baremetalsolution\ListNfsSharesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of NFS shares.
-     *
-     * @param NfsShare[] $nfsShares
-     */
-    public function setNfsShares($nfsShares)
-    {
-    }
-    /**
-     * @return NfsShare[]
-     */
-    public function getNfsShares()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Baremetalsolution_ListNfsSharesResponse extends \Google\Service\Baremetalsolution\ListNfsSharesResponse
     {
     }
 }

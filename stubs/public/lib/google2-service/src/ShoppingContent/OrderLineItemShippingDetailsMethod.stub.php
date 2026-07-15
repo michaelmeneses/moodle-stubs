@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderLineItemShippingDetailsMethod extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $carrier;
-    /**
-     * @var string
-     */
-    public $maxDaysInTransit;
-    /**
-     * @var string
-     */
-    public $methodName;
-    /**
-     * @var string
-     */
-    public $minDaysInTransit;
-    /**
-     * @param string
-     */
-    public function setCarrier($carrier)
+namespace Google\Service\ShoppingContent {
+    class OrderLineItemShippingDetailsMethod extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $carrier;
+        /**
+         * @var string
+         */
+        public $maxDaysInTransit;
+        /**
+         * @var string
+         */
+        public $methodName;
+        /**
+         * @var string
+         */
+        public $minDaysInTransit;
+        /**
+         * @param string
+         */
+        public function setCarrier($carrier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCarrier()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMaxDaysInTransit($maxDaysInTransit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxDaysInTransit()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMethodName($methodName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMethodName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMinDaysInTransit($minDaysInTransit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinDaysInTransit()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderLineItemShippingDetailsMethod registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCarrier()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMaxDaysInTransit($maxDaysInTransit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxDaysInTransit()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMethodName($methodName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMethodName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMinDaysInTransit($minDaysInTransit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinDaysInTransit()
+    class Google_Service_ShoppingContent_OrderLineItemShippingDetailsMethod extends \Google\Service\ShoppingContent\OrderLineItemShippingDetailsMethod
     {
     }
 }

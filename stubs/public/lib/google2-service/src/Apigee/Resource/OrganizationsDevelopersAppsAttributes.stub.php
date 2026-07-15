@@ -21,76 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "attributes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $attributes = $apigeeService->organizations_developers_apps_attributes;
- *  </code>
- */
-class OrganizationsDevelopersAppsAttributes extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1Attribute;
+    use Google\Service\Apigee\GoogleCloudApigeeV1Attributes;
     /**
-     * Deletes a developer app attribute. (attributes.delete)
-     *
-     * @param string $name Required. Name of the developer app attribute. Use the
-     * following structure in your request: `organizations/{org}/developers/{develop
-     * er_email}/apps/{app}/attributes/{attribute}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1Attribute
-     * @throws \Google\Service\Exception
+     * The "attributes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $attributes = $apigeeService->organizations_developers_apps_attributes;
+     *  </code>
      */
-    public function delete($name, $optParams = [])
+    class OrganizationsDevelopersAppsAttributes extends \Google\Service\Resource
     {
+        /**
+         * Deletes a developer app attribute. (attributes.delete)
+         *
+         * @param string $name Required. Name of the developer app attribute. Use the
+         * following structure in your request: `organizations/{org}/developers/{develop
+         * er_email}/apps/{app}/attributes/{attribute}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1Attribute
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns a developer app attribute. (attributes.get)
+         *
+         * @param string $name Required. Name of the developer app attribute. Use the
+         * following structure in your request: `organizations/{org}/developers/{develop
+         * er_email}/apps/{app}/attributes/{attribute}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1Attribute
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns a list of all developer app attributes.
+         * (attributes.listOrganizationsDevelopersAppsAttributes)
+         *
+         * @param string $parent Required. Name of the developer app. Use the following
+         * structure in your request:
+         * `organizations/{org}/developers/{developer_email}/apps/{app}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1Attributes
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsDevelopersAppsAttributes($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a developer app attribute. **Note**: OAuth access tokens and Key
+         * Management Service (KMS) entities (apps, developers, and API products) are
+         * cached for 180 seconds (current default). Any custom attributes associated
+         * with these entities are cached for at least 180 seconds after the entity is
+         * accessed at runtime. Therefore, an `ExpiresIn` element on the OAuthV2 policy
+         * won't be able to expire an access token in less than 180 seconds.
+         * (attributes.updateDeveloperAppAttribute)
+         *
+         * @param string $name Required. Name of the developer app attribute. Use the
+         * following structure in your request: `organizations/{org}/developers/{develop
+         * er_email}/apps/{app}/attributes/{attribute}`
+         * @param GoogleCloudApigeeV1Attribute $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1Attribute
+         * @throws \Google\Service\Exception
+         */
+        public function updateDeveloperAppAttribute($name, GoogleCloudApigeeV1Attribute $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns a developer app attribute. (attributes.get)
-     *
-     * @param string $name Required. Name of the developer app attribute. Use the
-     * following structure in your request: `organizations/{org}/developers/{develop
-     * er_email}/apps/{app}/attributes/{attribute}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1Attribute
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsDevelopersAppsAttributes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns a list of all developer app attributes.
-     * (attributes.listOrganizationsDevelopersAppsAttributes)
-     *
-     * @param string $parent Required. Name of the developer app. Use the following
-     * structure in your request:
-     * `organizations/{org}/developers/{developer_email}/apps/{app}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1Attributes
-     * @throws \Google\Service\Exception
-     */
-    public function listOrganizationsDevelopersAppsAttributes($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a developer app attribute. **Note**: OAuth access tokens and Key
-     * Management Service (KMS) entities (apps, developers, and API products) are
-     * cached for 180 seconds (current default). Any custom attributes associated
-     * with these entities are cached for at least 180 seconds after the entity is
-     * accessed at runtime. Therefore, an `ExpiresIn` element on the OAuthV2 policy
-     * won't be able to expire an access token in less than 180 seconds.
-     * (attributes.updateDeveloperAppAttribute)
-     *
-     * @param string $name Required. Name of the developer app attribute. Use the
-     * following structure in your request: `organizations/{org}/developers/{develop
-     * er_email}/apps/{app}/attributes/{attribute}`
-     * @param GoogleCloudApigeeV1Attribute $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1Attribute
-     * @throws \Google\Service\Exception
-     */
-    public function updateDeveloperAppAttribute($name, GoogleCloudApigeeV1Attribute $postBody, $optParams = [])
+    class Google_Service_Apigee_Resource_OrganizationsDevelopersAppsAttributes extends \Google\Service\Apigee\Resource\OrganizationsDevelopersAppsAttributes
     {
     }
 }

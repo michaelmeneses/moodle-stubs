@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class ListProductsInProductSetResponse extends \Google\Collection
-{
-    protected $collection_key = 'products';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $productsType = Product::class;
-    protected $productsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Vision {
+    class ListProductsInProductSetResponse extends \Google\Collection
     {
+        protected $collection_key = 'products';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $productsType = Product::class;
+        protected $productsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of Products.
+         *
+         * @param Product[] $products
+         */
+        public function setProducts($products)
+        {
+        }
+        /**
+         * @return Product[]
+         */
+        public function getProducts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vision\ListProductsInProductSetResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of Products.
-     *
-     * @param Product[] $products
-     */
-    public function setProducts($products)
-    {
-    }
-    /**
-     * @return Product[]
-     */
-    public function getProducts()
+    class Google_Service_Vision_ListProductsInProductSetResponse extends \Google\Service\Vision\ListProductsInProductSetResponse
     {
     }
 }

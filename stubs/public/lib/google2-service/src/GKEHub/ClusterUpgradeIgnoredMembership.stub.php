@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ClusterUpgradeIgnoredMembership extends \Google\Model
-{
-    /**
-     * Time when the membership was first set to ignored.
-     *
-     * @var string
-     */
-    public $ignoredTime;
-    /**
-     * Reason why the membership is ignored.
-     *
-     * @var string
-     */
-    public $reason;
-    /**
-     * Time when the membership was first set to ignored.
-     *
-     * @param string $ignoredTime
-     */
-    public function setIgnoredTime($ignoredTime)
+namespace Google\Service\GKEHub {
+    class ClusterUpgradeIgnoredMembership extends \Google\Model
     {
+        /**
+         * Time when the membership was first set to ignored.
+         *
+         * @var string
+         */
+        public $ignoredTime;
+        /**
+         * Reason why the membership is ignored.
+         *
+         * @var string
+         */
+        public $reason;
+        /**
+         * Time when the membership was first set to ignored.
+         *
+         * @param string $ignoredTime
+         */
+        public function setIgnoredTime($ignoredTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIgnoredTime()
+        {
+        }
+        /**
+         * Reason why the membership is ignored.
+         *
+         * @param string $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\ClusterUpgradeIgnoredMembership registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIgnoredTime()
-    {
-    }
-    /**
-     * Reason why the membership is ignored.
-     *
-     * @param string $reason
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReason()
+    class Google_Service_GKEHub_ClusterUpgradeIgnoredMembership extends \Google\Service\GKEHub\ClusterUpgradeIgnoredMembership
     {
     }
 }

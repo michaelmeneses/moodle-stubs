@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class QueryPlan extends \Google\Collection
-{
-    protected $collection_key = 'planNodes';
-    protected $planNodesType = PlanNode::class;
-    protected $planNodesDataType = 'array';
-    protected $queryAdviceType = QueryAdvisorResult::class;
-    protected $queryAdviceDataType = '';
-    /**
-     * The nodes in the query plan. Plan nodes are returned in pre-order starting
-     * with the plan root. Each PlanNode's `id` corresponds to its index in
-     * `plan_nodes`.
-     *
-     * @param PlanNode[] $planNodes
-     */
-    public function setPlanNodes($planNodes)
+namespace Google\Service\Spanner {
+    class QueryPlan extends \Google\Collection
     {
+        protected $collection_key = 'planNodes';
+        protected $planNodesType = PlanNode::class;
+        protected $planNodesDataType = 'array';
+        protected $queryAdviceType = QueryAdvisorResult::class;
+        protected $queryAdviceDataType = '';
+        /**
+         * The nodes in the query plan. Plan nodes are returned in pre-order starting
+         * with the plan root. Each PlanNode's `id` corresponds to its index in
+         * `plan_nodes`.
+         *
+         * @param PlanNode[] $planNodes
+         */
+        public function setPlanNodes($planNodes)
+        {
+        }
+        /**
+         * @return PlanNode[]
+         */
+        public function getPlanNodes()
+        {
+        }
+        /**
+         * Optional. The advise/recommendations for a query. Currently this field will
+         * be serving index recommendations for a query.
+         *
+         * @param QueryAdvisorResult $queryAdvice
+         */
+        public function setQueryAdvice(QueryAdvisorResult $queryAdvice)
+        {
+        }
+        /**
+         * @return QueryAdvisorResult
+         */
+        public function getQueryAdvice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PlanNode[]
+     * Runtime class alias of \Google\Service\Spanner\QueryPlan registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlanNodes()
-    {
-    }
-    /**
-     * Optional. The advise/recommendations for a query. Currently this field will
-     * be serving index recommendations for a query.
-     *
-     * @param QueryAdvisorResult $queryAdvice
-     */
-    public function setQueryAdvice(QueryAdvisorResult $queryAdvice)
-    {
-    }
-    /**
-     * @return QueryAdvisorResult
-     */
-    public function getQueryAdvice()
+    class Google_Service_Spanner_QueryPlan extends \Google\Service\Spanner\QueryPlan
     {
     }
 }

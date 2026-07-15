@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class DeviceFeatureTargeting extends \Google\Model
-{
-    protected $requiredFeatureType = DeviceFeature::class;
-    protected $requiredFeatureDataType = '';
-    /**
-     * Feature of the device.
-     *
-     * @param DeviceFeature $requiredFeature
-     */
-    public function setRequiredFeature(DeviceFeature $requiredFeature)
+namespace Google\Service\AndroidPublisher {
+    class DeviceFeatureTargeting extends \Google\Model
     {
+        protected $requiredFeatureType = DeviceFeature::class;
+        protected $requiredFeatureDataType = '';
+        /**
+         * Feature of the device.
+         *
+         * @param DeviceFeature $requiredFeature
+         */
+        public function setRequiredFeature(DeviceFeature $requiredFeature)
+        {
+        }
+        /**
+         * @return DeviceFeature
+         */
+        public function getRequiredFeature()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeviceFeature
+     * Runtime class alias of \Google\Service\AndroidPublisher\DeviceFeatureTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequiredFeature()
+    class Google_Service_AndroidPublisher_DeviceFeatureTargeting extends \Google\Service\AndroidPublisher\DeviceFeatureTargeting
     {
     }
 }

@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class CloudReliabilityZicyWs3DataplaneProtosAssetLocation extends \Google\Collection
-{
-    protected $collection_key = 'parentAsset';
-    /**
-     * @var string
-     */
-    public $ccfeRmsPath;
-    protected $expectedType = CloudReliabilityZicyWs3DataplaneProtosAssetLocationIsolationExpectations::class;
-    protected $expectedDataType = '';
-    protected $extraParametersType = CloudReliabilityZicyWs3DataplaneProtosExtraParameter::class;
-    protected $extraParametersDataType = 'array';
-    protected $locationDataType = CloudReliabilityZicyWs3DataplaneProtosLocationData::class;
-    protected $locationDataDataType = 'array';
-    protected $parentAssetType = CloudReliabilityZicyWs3DataplaneProtosCloudAsset::class;
-    protected $parentAssetDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setCcfeRmsPath($ccfeRmsPath)
+namespace Google\Service\CloudDataplex {
+    class CloudReliabilityZicyWs3DataplaneProtosAssetLocation extends \Google\Collection
     {
+        protected $collection_key = 'parentAsset';
+        /**
+         * @var string
+         */
+        public $ccfeRmsPath;
+        protected $expectedType = CloudReliabilityZicyWs3DataplaneProtosAssetLocationIsolationExpectations::class;
+        protected $expectedDataType = '';
+        protected $extraParametersType = CloudReliabilityZicyWs3DataplaneProtosExtraParameter::class;
+        protected $extraParametersDataType = 'array';
+        protected $locationDataType = CloudReliabilityZicyWs3DataplaneProtosLocationData::class;
+        protected $locationDataDataType = 'array';
+        protected $parentAssetType = CloudReliabilityZicyWs3DataplaneProtosCloudAsset::class;
+        protected $parentAssetDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setCcfeRmsPath($ccfeRmsPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCcfeRmsPath()
+        {
+        }
+        /**
+         * @param CloudReliabilityZicyWs3DataplaneProtosAssetLocationIsolationExpectations
+         */
+        public function setExpected(CloudReliabilityZicyWs3DataplaneProtosAssetLocationIsolationExpectations $expected)
+        {
+        }
+        /**
+         * @return CloudReliabilityZicyWs3DataplaneProtosAssetLocationIsolationExpectations
+         */
+        public function getExpected()
+        {
+        }
+        /**
+         * @param CloudReliabilityZicyWs3DataplaneProtosExtraParameter[]
+         */
+        public function setExtraParameters($extraParameters)
+        {
+        }
+        /**
+         * @return CloudReliabilityZicyWs3DataplaneProtosExtraParameter[]
+         */
+        public function getExtraParameters()
+        {
+        }
+        /**
+         * @param CloudReliabilityZicyWs3DataplaneProtosLocationData[]
+         */
+        public function setLocationData($locationData)
+        {
+        }
+        /**
+         * @return CloudReliabilityZicyWs3DataplaneProtosLocationData[]
+         */
+        public function getLocationData()
+        {
+        }
+        /**
+         * @param CloudReliabilityZicyWs3DataplaneProtosCloudAsset[]
+         */
+        public function setParentAsset($parentAsset)
+        {
+        }
+        /**
+         * @return CloudReliabilityZicyWs3DataplaneProtosCloudAsset[]
+         */
+        public function getParentAsset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\CloudReliabilityZicyWs3DataplaneProtosAssetLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCcfeRmsPath()
-    {
-    }
-    /**
-     * @param CloudReliabilityZicyWs3DataplaneProtosAssetLocationIsolationExpectations
-     */
-    public function setExpected(CloudReliabilityZicyWs3DataplaneProtosAssetLocationIsolationExpectations $expected)
-    {
-    }
-    /**
-     * @return CloudReliabilityZicyWs3DataplaneProtosAssetLocationIsolationExpectations
-     */
-    public function getExpected()
-    {
-    }
-    /**
-     * @param CloudReliabilityZicyWs3DataplaneProtosExtraParameter[]
-     */
-    public function setExtraParameters($extraParameters)
-    {
-    }
-    /**
-     * @return CloudReliabilityZicyWs3DataplaneProtosExtraParameter[]
-     */
-    public function getExtraParameters()
-    {
-    }
-    /**
-     * @param CloudReliabilityZicyWs3DataplaneProtosLocationData[]
-     */
-    public function setLocationData($locationData)
-    {
-    }
-    /**
-     * @return CloudReliabilityZicyWs3DataplaneProtosLocationData[]
-     */
-    public function getLocationData()
-    {
-    }
-    /**
-     * @param CloudReliabilityZicyWs3DataplaneProtosCloudAsset[]
-     */
-    public function setParentAsset($parentAsset)
-    {
-    }
-    /**
-     * @return CloudReliabilityZicyWs3DataplaneProtosCloudAsset[]
-     */
-    public function getParentAsset()
+    class Google_Service_CloudDataplex_CloudReliabilityZicyWs3DataplaneProtosAssetLocation extends \Google\Service\CloudDataplex\CloudReliabilityZicyWs3DataplaneProtosAssetLocation
     {
     }
 }

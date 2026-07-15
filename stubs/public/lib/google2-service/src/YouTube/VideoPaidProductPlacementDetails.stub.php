@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class VideoPaidProductPlacementDetails extends \Google\Model
-{
-    /**
-     * This boolean represents whether the video contains Paid Product Placement,
-     * Studio equivalent: https://screenshot.googleplex.com/4Me79DE6AfT2ktp.png
-     *
-     * @var bool
-     */
-    public $hasPaidProductPlacement;
-    /**
-     * This boolean represents whether the video contains Paid Product Placement,
-     * Studio equivalent: https://screenshot.googleplex.com/4Me79DE6AfT2ktp.png
-     *
-     * @param bool $hasPaidProductPlacement
-     */
-    public function setHasPaidProductPlacement($hasPaidProductPlacement)
+namespace Google\Service\YouTube {
+    class VideoPaidProductPlacementDetails extends \Google\Model
     {
+        /**
+         * This boolean represents whether the video contains Paid Product Placement,
+         * Studio equivalent: https://screenshot.googleplex.com/4Me79DE6AfT2ktp.png
+         *
+         * @var bool
+         */
+        public $hasPaidProductPlacement;
+        /**
+         * This boolean represents whether the video contains Paid Product Placement,
+         * Studio equivalent: https://screenshot.googleplex.com/4Me79DE6AfT2ktp.png
+         *
+         * @param bool $hasPaidProductPlacement
+         */
+        public function setHasPaidProductPlacement($hasPaidProductPlacement)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasPaidProductPlacement()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\YouTube\VideoPaidProductPlacementDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHasPaidProductPlacement()
+    class Google_Service_YouTube_VideoPaidProductPlacementDetails extends \Google\Service\YouTube\VideoPaidProductPlacementDetails
     {
     }
 }

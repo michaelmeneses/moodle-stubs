@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Verifiedaccess;
-
-class Antivirus extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * No antivirus was detected on the device.
-     */
-    public const STATE_MISSING = 'MISSING';
-    /**
-     * At least one antivirus was installed on the device but none was enabled.
-     */
-    public const STATE_DISABLED = 'DISABLED';
-    /**
-     * At least one antivirus was enabled on the device.
-     */
-    public const STATE_ENABLED = 'ENABLED';
-    /**
-     * Output only. The state of the antivirus on the device. Introduced in Chrome
-     * M136.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. The state of the antivirus on the device. Introduced in Chrome
-     * M136.
-     *
-     * Accepted values: STATE_UNSPECIFIED, MISSING, DISABLED, ENABLED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
+namespace Google\Service\Verifiedaccess {
+    class Antivirus extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * No antivirus was detected on the device.
+         */
+        public const STATE_MISSING = 'MISSING';
+        /**
+         * At least one antivirus was installed on the device but none was enabled.
+         */
+        public const STATE_DISABLED = 'DISABLED';
+        /**
+         * At least one antivirus was enabled on the device.
+         */
+        public const STATE_ENABLED = 'ENABLED';
+        /**
+         * Output only. The state of the antivirus on the device. Introduced in Chrome
+         * M136.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. The state of the antivirus on the device. Introduced in Chrome
+         * M136.
+         *
+         * Accepted values: STATE_UNSPECIFIED, MISSING, DISABLED, ENABLED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::STATE_*
+     * Runtime class alias of \Google\Service\Verifiedaccess\Antivirus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getState()
+    class Google_Service_Verifiedaccess_Antivirus extends \Google\Service\Verifiedaccess\Antivirus
     {
     }
 }

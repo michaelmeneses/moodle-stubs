@@ -16,6 +16,10 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\Level;
+use Monolog\ResettableInterface;
+use Monolog\Formatter\FormatterInterface;
+use Monolog\LogRecord;
 /**
  * Buffers all records until closing the handler and then pass them as batch.
  *

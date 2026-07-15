@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class ReviewAuthor extends \Google\Model
-{
-    /**
-     * Name of this person.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Name of this person.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Books {
+    class ReviewAuthor extends \Google\Model
     {
+        /**
+         * Name of this person.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Name of this person.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\ReviewAuthor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
+    class Google_Service_Books_ReviewAuthor extends \Google\Service\Books\ReviewAuthor
     {
     }
 }

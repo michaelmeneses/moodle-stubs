@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ApigeeRegistry;
-
-class ListArtifactsResponse extends \Google\Collection
-{
-    protected $collection_key = 'artifacts';
-    protected $artifactsType = Artifact::class;
-    protected $artifactsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The artifacts from the specified publisher.
-     *
-     * @param Artifact[] $artifacts
-     */
-    public function setArtifacts($artifacts)
+namespace Google\Service\ApigeeRegistry {
+    class ListArtifactsResponse extends \Google\Collection
     {
+        protected $collection_key = 'artifacts';
+        protected $artifactsType = Artifact::class;
+        protected $artifactsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The artifacts from the specified publisher.
+         *
+         * @param Artifact[] $artifacts
+         */
+        public function setArtifacts($artifacts)
+        {
+        }
+        /**
+         * @return Artifact[]
+         */
+        public function getArtifacts()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Artifact[]
+     * Runtime class alias of \Google\Service\ApigeeRegistry\ListArtifactsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifacts()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_ApigeeRegistry_ListArtifactsResponse extends \Google\Service\ApigeeRegistry\ListArtifactsResponse
     {
     }
 }

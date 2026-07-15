@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaModelevaluationMetricsTextExtractionEvaluationMetrics extends \Google\Collection
-{
-    protected $collection_key = 'confidenceMetrics';
-    protected $confidenceMetricsType = GoogleCloudAiplatformV1SchemaModelevaluationMetricsTextExtractionEvaluationMetricsConfidenceMetrics::class;
-    protected $confidenceMetricsDataType = 'array';
-    protected $confusionMatrixType = GoogleCloudAiplatformV1SchemaModelevaluationMetricsConfusionMatrix::class;
-    protected $confusionMatrixDataType = '';
-    /**
-     * Metrics that have confidence thresholds. Precision-recall curve can be
-     * derived from them.
-     *
-     * @param GoogleCloudAiplatformV1SchemaModelevaluationMetricsTextExtractionEvaluationMetricsConfidenceMetrics[] $confidenceMetrics
-     */
-    public function setConfidenceMetrics($confidenceMetrics)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaModelevaluationMetricsTextExtractionEvaluationMetrics extends \Google\Collection
     {
+        protected $collection_key = 'confidenceMetrics';
+        protected $confidenceMetricsType = GoogleCloudAiplatformV1SchemaModelevaluationMetricsTextExtractionEvaluationMetricsConfidenceMetrics::class;
+        protected $confidenceMetricsDataType = 'array';
+        protected $confusionMatrixType = GoogleCloudAiplatformV1SchemaModelevaluationMetricsConfusionMatrix::class;
+        protected $confusionMatrixDataType = '';
+        /**
+         * Metrics that have confidence thresholds. Precision-recall curve can be
+         * derived from them.
+         *
+         * @param GoogleCloudAiplatformV1SchemaModelevaluationMetricsTextExtractionEvaluationMetricsConfidenceMetrics[] $confidenceMetrics
+         */
+        public function setConfidenceMetrics($confidenceMetrics)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaModelevaluationMetricsTextExtractionEvaluationMetricsConfidenceMetrics[]
+         */
+        public function getConfidenceMetrics()
+        {
+        }
+        /**
+         * Confusion matrix of the evaluation. Only set for Models where number of
+         * AnnotationSpecs is no more than 10. Only set for ModelEvaluations, not for
+         * ModelEvaluationSlices.
+         *
+         * @param GoogleCloudAiplatformV1SchemaModelevaluationMetricsConfusionMatrix $confusionMatrix
+         */
+        public function setConfusionMatrix(GoogleCloudAiplatformV1SchemaModelevaluationMetricsConfusionMatrix $confusionMatrix)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaModelevaluationMetricsConfusionMatrix
+         */
+        public function getConfusionMatrix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SchemaModelevaluationMetricsTextExtractionEvaluationMetricsConfidenceMetrics[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaModelevaluationMetricsTextExtractionEvaluationMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidenceMetrics()
-    {
-    }
-    /**
-     * Confusion matrix of the evaluation. Only set for Models where number of
-     * AnnotationSpecs is no more than 10. Only set for ModelEvaluations, not for
-     * ModelEvaluationSlices.
-     *
-     * @param GoogleCloudAiplatformV1SchemaModelevaluationMetricsConfusionMatrix $confusionMatrix
-     */
-    public function setConfusionMatrix(GoogleCloudAiplatformV1SchemaModelevaluationMetricsConfusionMatrix $confusionMatrix)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SchemaModelevaluationMetricsConfusionMatrix
-     */
-    public function getConfusionMatrix()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaModelevaluationMetricsTextExtractionEvaluationMetrics extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaModelevaluationMetricsTextExtractionEvaluationMetrics
     {
     }
 }

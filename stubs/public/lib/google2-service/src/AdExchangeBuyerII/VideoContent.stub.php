@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class VideoContent extends \Google\Model
-{
-    /**
-     * The URL to fetch a video ad.
-     *
-     * @var string
-     */
-    public $videoUrl;
-    /**
-     * The contents of a VAST document for a video ad. This document should
-     * conform to the VAST 2.0 or 3.0 standard.
-     *
-     * @var string
-     */
-    public $videoVastXml;
-    /**
-     * The URL to fetch a video ad.
-     *
-     * @param string $videoUrl
-     */
-    public function setVideoUrl($videoUrl)
+namespace Google\Service\AdExchangeBuyerII {
+    class VideoContent extends \Google\Model
     {
+        /**
+         * The URL to fetch a video ad.
+         *
+         * @var string
+         */
+        public $videoUrl;
+        /**
+         * The contents of a VAST document for a video ad. This document should
+         * conform to the VAST 2.0 or 3.0 standard.
+         *
+         * @var string
+         */
+        public $videoVastXml;
+        /**
+         * The URL to fetch a video ad.
+         *
+         * @param string $videoUrl
+         */
+        public function setVideoUrl($videoUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVideoUrl()
+        {
+        }
+        /**
+         * The contents of a VAST document for a video ad. This document should
+         * conform to the VAST 2.0 or 3.0 standard.
+         *
+         * @param string $videoVastXml
+         */
+        public function setVideoVastXml($videoVastXml)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVideoVastXml()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\VideoContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVideoUrl()
-    {
-    }
-    /**
-     * The contents of a VAST document for a video ad. This document should
-     * conform to the VAST 2.0 or 3.0 standard.
-     *
-     * @param string $videoVastXml
-     */
-    public function setVideoVastXml($videoVastXml)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVideoVastXml()
+    class Google_Service_AdExchangeBuyerII_VideoContent extends \Google\Service\AdExchangeBuyerII\VideoContent
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class TargetAttribute extends \Google\Model
-{
-    /**
-     * Optional. ID of the `Target`. The value of this field could be one of the
-     * following: * The last segment of a target name * "*", all targets in a
-     * location
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Target labels.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Optional. ID of the `Target`. The value of this field could be one of the
-     * following: * The last segment of a target name * "*", all targets in a
-     * location
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\CloudDeploy {
+    class TargetAttribute extends \Google\Model
     {
+        /**
+         * Optional. ID of the `Target`. The value of this field could be one of the
+         * following: * The last segment of a target name * "*", all targets in a
+         * location
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Target labels.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Optional. ID of the `Target`. The value of this field could be one of the
+         * following: * The last segment of a target name * "*", all targets in a
+         * location
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Target labels.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\TargetAttribute registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Target labels.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
+    class Google_Service_CloudDeploy_TargetAttribute extends \Google\Service\CloudDeploy\TargetAttribute
     {
     }
 }

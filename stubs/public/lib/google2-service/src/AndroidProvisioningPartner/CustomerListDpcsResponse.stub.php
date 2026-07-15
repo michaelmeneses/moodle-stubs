@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner;
-
-class CustomerListDpcsResponse extends \Google\Collection
-{
-    protected $collection_key = 'dpcs';
-    protected $dpcsType = Dpc::class;
-    protected $dpcsDataType = 'array';
-    /**
-     * The list of DPCs available to the customer that support zero-touch
-     * enrollment.
-     *
-     * @param Dpc[] $dpcs
-     */
-    public function setDpcs($dpcs)
+namespace Google\Service\AndroidProvisioningPartner {
+    class CustomerListDpcsResponse extends \Google\Collection
     {
+        protected $collection_key = 'dpcs';
+        protected $dpcsType = Dpc::class;
+        protected $dpcsDataType = 'array';
+        /**
+         * The list of DPCs available to the customer that support zero-touch
+         * enrollment.
+         *
+         * @param Dpc[] $dpcs
+         */
+        public function setDpcs($dpcs)
+        {
+        }
+        /**
+         * @return Dpc[]
+         */
+        public function getDpcs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Dpc[]
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\CustomerListDpcsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDpcs()
+    class Google_Service_AndroidProvisioningPartner_CustomerListDpcsResponse extends \Google\Service\AndroidProvisioningPartner\CustomerListDpcsResponse
     {
     }
 }

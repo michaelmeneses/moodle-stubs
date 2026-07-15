@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_badges\local\backpack\ob\v2p0;
 
+use core\url;
+use core_badges\badge;
+use core_badges\local\backpack\ob\exporter_base;
+use core_badges\local\backpack\ob\issuer_exporter_interface;
 /**
  * Class that represents issuer to be exported to a backpack.
  *

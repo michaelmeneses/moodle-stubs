@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpec extends \Google\Model
-{
-    /**
-     * Defaults to `REINFORCEMENT_LEARNING`.
-     */
-    public const MULTI_TRIAL_ALGORITHM_MULTI_TRIAL_ALGORITHM_UNSPECIFIED = 'MULTI_TRIAL_ALGORITHM_UNSPECIFIED';
-    /**
-     * The Reinforcement Learning Algorithm for Multi-trial Neural Architecture
-     * Search (NAS).
-     */
-    public const MULTI_TRIAL_ALGORITHM_REINFORCEMENT_LEARNING = 'REINFORCEMENT_LEARNING';
-    /**
-     * The Grid Search Algorithm for Multi-trial Neural Architecture Search (NAS).
-     */
-    public const MULTI_TRIAL_ALGORITHM_GRID_SEARCH = 'GRID_SEARCH';
-    protected $metricType = GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpecMetricSpec::class;
-    protected $metricDataType = '';
-    /**
-     * The multi-trial Neural Architecture Search (NAS) algorithm type. Defaults
-     * to `REINFORCEMENT_LEARNING`.
-     *
-     * @var string
-     */
-    public $multiTrialAlgorithm;
-    protected $searchTrialSpecType = GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpecSearchTrialSpec::class;
-    protected $searchTrialSpecDataType = '';
-    protected $trainTrialSpecType = GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpecTrainTrialSpec::class;
-    protected $trainTrialSpecDataType = '';
-    /**
-     * Metric specs for the NAS job. Validation for this field is done at
-     * `multi_trial_algorithm_spec` field.
-     *
-     * @param GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpecMetricSpec $metric
-     */
-    public function setMetric(GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpecMetricSpec $metric)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpec extends \Google\Model
     {
+        /**
+         * Defaults to `REINFORCEMENT_LEARNING`.
+         */
+        public const MULTI_TRIAL_ALGORITHM_MULTI_TRIAL_ALGORITHM_UNSPECIFIED = 'MULTI_TRIAL_ALGORITHM_UNSPECIFIED';
+        /**
+         * The Reinforcement Learning Algorithm for Multi-trial Neural Architecture
+         * Search (NAS).
+         */
+        public const MULTI_TRIAL_ALGORITHM_REINFORCEMENT_LEARNING = 'REINFORCEMENT_LEARNING';
+        /**
+         * The Grid Search Algorithm for Multi-trial Neural Architecture Search (NAS).
+         */
+        public const MULTI_TRIAL_ALGORITHM_GRID_SEARCH = 'GRID_SEARCH';
+        protected $metricType = GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpecMetricSpec::class;
+        protected $metricDataType = '';
+        /**
+         * The multi-trial Neural Architecture Search (NAS) algorithm type. Defaults
+         * to `REINFORCEMENT_LEARNING`.
+         *
+         * @var string
+         */
+        public $multiTrialAlgorithm;
+        protected $searchTrialSpecType = GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpecSearchTrialSpec::class;
+        protected $searchTrialSpecDataType = '';
+        protected $trainTrialSpecType = GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpecTrainTrialSpec::class;
+        protected $trainTrialSpecDataType = '';
+        /**
+         * Metric specs for the NAS job. Validation for this field is done at
+         * `multi_trial_algorithm_spec` field.
+         *
+         * @param GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpecMetricSpec $metric
+         */
+        public function setMetric(GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpecMetricSpec $metric)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpecMetricSpec
+         */
+        public function getMetric()
+        {
+        }
+        /**
+         * The multi-trial Neural Architecture Search (NAS) algorithm type. Defaults
+         * to `REINFORCEMENT_LEARNING`.
+         *
+         * Accepted values: MULTI_TRIAL_ALGORITHM_UNSPECIFIED, REINFORCEMENT_LEARNING,
+         * GRID_SEARCH
+         *
+         * @param self::MULTI_TRIAL_ALGORITHM_* $multiTrialAlgorithm
+         */
+        public function setMultiTrialAlgorithm($multiTrialAlgorithm)
+        {
+        }
+        /**
+         * @return self::MULTI_TRIAL_ALGORITHM_*
+         */
+        public function getMultiTrialAlgorithm()
+        {
+        }
+        /**
+         * Required. Spec for search trials.
+         *
+         * @param GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpecSearchTrialSpec $searchTrialSpec
+         */
+        public function setSearchTrialSpec(GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpecSearchTrialSpec $searchTrialSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpecSearchTrialSpec
+         */
+        public function getSearchTrialSpec()
+        {
+        }
+        /**
+         * Spec for train trials. Top N [TrainTrialSpec.max_parallel_trial_count]
+         * search trials will be trained for every M [TrainTrialSpec.frequency] trials
+         * searched.
+         *
+         * @param GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpecTrainTrialSpec $trainTrialSpec
+         */
+        public function setTrainTrialSpec(GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpecTrainTrialSpec $trainTrialSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpecTrainTrialSpec
+         */
+        public function getTrainTrialSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpecMetricSpec
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetric()
-    {
-    }
-    /**
-     * The multi-trial Neural Architecture Search (NAS) algorithm type. Defaults
-     * to `REINFORCEMENT_LEARNING`.
-     *
-     * Accepted values: MULTI_TRIAL_ALGORITHM_UNSPECIFIED, REINFORCEMENT_LEARNING,
-     * GRID_SEARCH
-     *
-     * @param self::MULTI_TRIAL_ALGORITHM_* $multiTrialAlgorithm
-     */
-    public function setMultiTrialAlgorithm($multiTrialAlgorithm)
-    {
-    }
-    /**
-     * @return self::MULTI_TRIAL_ALGORITHM_*
-     */
-    public function getMultiTrialAlgorithm()
-    {
-    }
-    /**
-     * Required. Spec for search trials.
-     *
-     * @param GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpecSearchTrialSpec $searchTrialSpec
-     */
-    public function setSearchTrialSpec(GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpecSearchTrialSpec $searchTrialSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpecSearchTrialSpec
-     */
-    public function getSearchTrialSpec()
-    {
-    }
-    /**
-     * Spec for train trials. Top N [TrainTrialSpec.max_parallel_trial_count]
-     * search trials will be trained for every M [TrainTrialSpec.frequency] trials
-     * searched.
-     *
-     * @param GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpecTrainTrialSpec $trainTrialSpec
-     */
-    public function setTrainTrialSpec(GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpecTrainTrialSpec $trainTrialSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpecTrainTrialSpec
-     */
-    public function getTrainTrialSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpec
     {
     }
 }

@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityPosture;
-
-class PolicySet extends \Google\Collection
-{
-    protected $collection_key = 'policies';
-    /**
-     * Optional. A description of the policy set.
-     *
-     * @var string
-     */
-    public $description;
-    protected $policiesType = Policy::class;
-    protected $policiesDataType = 'array';
-    /**
-     * Required. An identifier for the policy set.
-     *
-     * @var string
-     */
-    public $policySetId;
-    /**
-     * Optional. A description of the policy set.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\SecurityPosture {
+    class PolicySet extends \Google\Collection
     {
+        protected $collection_key = 'policies';
+        /**
+         * Optional. A description of the policy set.
+         *
+         * @var string
+         */
+        public $description;
+        protected $policiesType = Policy::class;
+        protected $policiesDataType = 'array';
+        /**
+         * Required. An identifier for the policy set.
+         *
+         * @var string
+         */
+        public $policySetId;
+        /**
+         * Optional. A description of the policy set.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. The Policy resources in the policy set. Each policy must have a
+         * policy_id that's unique within the policy set.
+         *
+         * @param Policy[] $policies
+         */
+        public function setPolicies($policies)
+        {
+        }
+        /**
+         * @return Policy[]
+         */
+        public function getPolicies()
+        {
+        }
+        /**
+         * Required. An identifier for the policy set.
+         *
+         * @param string $policySetId
+         */
+        public function setPolicySetId($policySetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicySetId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityPosture\PolicySet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. The Policy resources in the policy set. Each policy must have a
-     * policy_id that's unique within the policy set.
-     *
-     * @param Policy[] $policies
-     */
-    public function setPolicies($policies)
-    {
-    }
-    /**
-     * @return Policy[]
-     */
-    public function getPolicies()
-    {
-    }
-    /**
-     * Required. An identifier for the policy set.
-     *
-     * @param string $policySetId
-     */
-    public function setPolicySetId($policySetId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPolicySetId()
+    class Google_Service_SecurityPosture_PolicySet extends \Google\Service\SecurityPosture\PolicySet
     {
     }
 }

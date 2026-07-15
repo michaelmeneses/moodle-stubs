@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpSecuritygatewaysV1ListApplicationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $applicationsType = GoogleCloudBeyondcorpSecuritygatewaysV1Application::class;
-    protected $applicationsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A list of BeyondCorp Application in the project.
-     *
-     * @param GoogleCloudBeyondcorpSecuritygatewaysV1Application[] $applications
-     */
-    public function setApplications($applications)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpSecuritygatewaysV1ListApplicationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $applicationsType = GoogleCloudBeyondcorpSecuritygatewaysV1Application::class;
+        protected $applicationsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A list of BeyondCorp Application in the project.
+         *
+         * @param GoogleCloudBeyondcorpSecuritygatewaysV1Application[] $applications
+         */
+        public function setApplications($applications)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpSecuritygatewaysV1Application[]
+         */
+        public function getApplications()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudBeyondcorpSecuritygatewaysV1Application[]
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1ListApplicationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplications()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpSecuritygatewaysV1ListApplicationsResponse extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1ListApplicationsResponse
     {
     }
 }

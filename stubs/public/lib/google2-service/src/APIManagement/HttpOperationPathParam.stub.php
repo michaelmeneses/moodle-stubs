@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIManagement;
-
-class HttpOperationPathParam extends \Google\Model
-{
-    /**
-     * Unspecified data type
-     */
-    public const DATA_TYPE_DATA_TYPE_UNSPECIFIED = 'DATA_TYPE_UNSPECIFIED';
-    /**
-     * Boolean data type
-     */
-    public const DATA_TYPE_BOOL = 'BOOL';
-    /**
-     * Integer data type
-     */
-    public const DATA_TYPE_INTEGER = 'INTEGER';
-    /**
-     * Float data type
-     */
-    public const DATA_TYPE_FLOAT = 'FLOAT';
-    /**
-     * String data type
-     */
-    public const DATA_TYPE_STRING = 'STRING';
-    /**
-     * UUID data type
-     */
-    public const DATA_TYPE_UUID = 'UUID';
-    /**
-     * Data type of path param
-     *
-     * @var string
-     */
-    public $dataType;
-    /**
-     * Segment location in the path, 1-indexed
-     *
-     * @var int
-     */
-    public $position;
-    /**
-     * Data type of path param
-     *
-     * Accepted values: DATA_TYPE_UNSPECIFIED, BOOL, INTEGER, FLOAT, STRING, UUID
-     *
-     * @param self::DATA_TYPE_* $dataType
-     */
-    public function setDataType($dataType)
+namespace Google\Service\APIManagement {
+    class HttpOperationPathParam extends \Google\Model
     {
+        /**
+         * Unspecified data type
+         */
+        public const DATA_TYPE_DATA_TYPE_UNSPECIFIED = 'DATA_TYPE_UNSPECIFIED';
+        /**
+         * Boolean data type
+         */
+        public const DATA_TYPE_BOOL = 'BOOL';
+        /**
+         * Integer data type
+         */
+        public const DATA_TYPE_INTEGER = 'INTEGER';
+        /**
+         * Float data type
+         */
+        public const DATA_TYPE_FLOAT = 'FLOAT';
+        /**
+         * String data type
+         */
+        public const DATA_TYPE_STRING = 'STRING';
+        /**
+         * UUID data type
+         */
+        public const DATA_TYPE_UUID = 'UUID';
+        /**
+         * Data type of path param
+         *
+         * @var string
+         */
+        public $dataType;
+        /**
+         * Segment location in the path, 1-indexed
+         *
+         * @var int
+         */
+        public $position;
+        /**
+         * Data type of path param
+         *
+         * Accepted values: DATA_TYPE_UNSPECIFIED, BOOL, INTEGER, FLOAT, STRING, UUID
+         *
+         * @param self::DATA_TYPE_* $dataType
+         */
+        public function setDataType($dataType)
+        {
+        }
+        /**
+         * @return self::DATA_TYPE_*
+         */
+        public function getDataType()
+        {
+        }
+        /**
+         * Segment location in the path, 1-indexed
+         *
+         * @param int $position
+         */
+        public function setPosition($position)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPosition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DATA_TYPE_*
+     * Runtime class alias of \Google\Service\APIManagement\HttpOperationPathParam registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataType()
-    {
-    }
-    /**
-     * Segment location in the path, 1-indexed
-     *
-     * @param int $position
-     */
-    public function setPosition($position)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPosition()
+    class Google_Service_APIManagement_HttpOperationPathParam extends \Google\Service\APIManagement\HttpOperationPathParam
     {
     }
 }

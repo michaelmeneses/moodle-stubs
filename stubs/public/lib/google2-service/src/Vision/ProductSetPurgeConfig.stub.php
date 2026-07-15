@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class ProductSetPurgeConfig extends \Google\Model
-{
-    /**
-     * The ProductSet that contains the Products to delete. If a Product is a
-     * member of product_set_id in addition to other ProductSets, the Product will
-     * still be deleted.
-     *
-     * @var string
-     */
-    public $productSetId;
-    /**
-     * The ProductSet that contains the Products to delete. If a Product is a
-     * member of product_set_id in addition to other ProductSets, the Product will
-     * still be deleted.
-     *
-     * @param string $productSetId
-     */
-    public function setProductSetId($productSetId)
+namespace Google\Service\Vision {
+    class ProductSetPurgeConfig extends \Google\Model
     {
+        /**
+         * The ProductSet that contains the Products to delete. If a Product is a
+         * member of product_set_id in addition to other ProductSets, the Product will
+         * still be deleted.
+         *
+         * @var string
+         */
+        public $productSetId;
+        /**
+         * The ProductSet that contains the Products to delete. If a Product is a
+         * member of product_set_id in addition to other ProductSets, the Product will
+         * still be deleted.
+         *
+         * @param string $productSetId
+         */
+        public function setProductSetId($productSetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductSetId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vision\ProductSetPurgeConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProductSetId()
+    class Google_Service_Vision_ProductSetPurgeConfig extends \Google\Service\Vision\ProductSetPurgeConfig
     {
     }
 }

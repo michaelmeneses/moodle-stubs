@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2VolumeMount extends \Google\Model
-{
-    /**
-     * Required. Path within the container at which the volume should be mounted.
-     * Must not contain ':'. For Cloud SQL volumes, it can be left empty, or must
-     * otherwise be `/cloudsql`. All instances defined in the Volume will be
-     * available as `/cloudsql/[instance]`. For more information on Cloud SQL
-     * volumes, visit https://cloud.google.com/sql/docs/mysql/connect-run
-     *
-     * @var string
-     */
-    public $mountPath;
-    /**
-     * Required. This must match the Name of a Volume.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Path within the volume from which the container's volume should
-     * be mounted. Defaults to "" (volume's root).
-     *
-     * @var string
-     */
-    public $subPath;
-    /**
-     * Required. Path within the container at which the volume should be mounted.
-     * Must not contain ':'. For Cloud SQL volumes, it can be left empty, or must
-     * otherwise be `/cloudsql`. All instances defined in the Volume will be
-     * available as `/cloudsql/[instance]`. For more information on Cloud SQL
-     * volumes, visit https://cloud.google.com/sql/docs/mysql/connect-run
-     *
-     * @param string $mountPath
-     */
-    public function setMountPath($mountPath)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2VolumeMount extends \Google\Model
     {
+        /**
+         * Required. Path within the container at which the volume should be mounted.
+         * Must not contain ':'. For Cloud SQL volumes, it can be left empty, or must
+         * otherwise be `/cloudsql`. All instances defined in the Volume will be
+         * available as `/cloudsql/[instance]`. For more information on Cloud SQL
+         * volumes, visit https://cloud.google.com/sql/docs/mysql/connect-run
+         *
+         * @var string
+         */
+        public $mountPath;
+        /**
+         * Required. This must match the Name of a Volume.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Path within the volume from which the container's volume should
+         * be mounted. Defaults to "" (volume's root).
+         *
+         * @var string
+         */
+        public $subPath;
+        /**
+         * Required. Path within the container at which the volume should be mounted.
+         * Must not contain ':'. For Cloud SQL volumes, it can be left empty, or must
+         * otherwise be `/cloudsql`. All instances defined in the Volume will be
+         * available as `/cloudsql/[instance]`. For more information on Cloud SQL
+         * volumes, visit https://cloud.google.com/sql/docs/mysql/connect-run
+         *
+         * @param string $mountPath
+         */
+        public function setMountPath($mountPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMountPath()
+        {
+        }
+        /**
+         * Required. This must match the Name of a Volume.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Path within the volume from which the container's volume should
+         * be mounted. Defaults to "" (volume's root).
+         *
+         * @param string $subPath
+         */
+        public function setSubPath($subPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2VolumeMount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMountPath()
-    {
-    }
-    /**
-     * Required. This must match the Name of a Volume.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Path within the volume from which the container's volume should
-     * be mounted. Defaults to "" (volume's root).
-     *
-     * @param string $subPath
-     */
-    public function setSubPath($subPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubPath()
+    class Google_Service_CloudRun_GoogleCloudRunV2VolumeMount extends \Google\Service\CloudRun\GoogleCloudRunV2VolumeMount
     {
     }
 }

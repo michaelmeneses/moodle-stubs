@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DeleteSheetRequest extends \Google\Model
-{
-    /**
-     * The ID of the sheet to delete. If the sheet is of DATA_SOURCE type, the
-     * associated DataSource is also deleted.
-     *
-     * @var int
-     */
-    public $sheetId;
-    /**
-     * The ID of the sheet to delete. If the sheet is of DATA_SOURCE type, the
-     * associated DataSource is also deleted.
-     *
-     * @param int $sheetId
-     */
-    public function setSheetId($sheetId)
+namespace Google\Service\Sheets {
+    class DeleteSheetRequest extends \Google\Model
     {
+        /**
+         * The ID of the sheet to delete. If the sheet is of DATA_SOURCE type, the
+         * associated DataSource is also deleted.
+         *
+         * @var int
+         */
+        public $sheetId;
+        /**
+         * The ID of the sheet to delete. If the sheet is of DATA_SOURCE type, the
+         * associated DataSource is also deleted.
+         *
+         * @param int $sheetId
+         */
+        public function setSheetId($sheetId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSheetId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Sheets\DeleteSheetRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSheetId()
+    class Google_Service_Sheets_DeleteSheetRequest extends \Google\Service\Sheets\DeleteSheetRequest
     {
     }
 }

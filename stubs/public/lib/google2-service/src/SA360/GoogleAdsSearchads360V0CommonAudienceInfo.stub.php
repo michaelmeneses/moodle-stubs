@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonAudienceInfo extends \Google\Model
-{
-    /**
-     * The Audience resource name.
-     *
-     * @var string
-     */
-    public $audience;
-    /**
-     * The Audience resource name.
-     *
-     * @param string $audience
-     */
-    public function setAudience($audience)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonAudienceInfo extends \Google\Model
     {
+        /**
+         * The Audience resource name.
+         *
+         * @var string
+         */
+        public $audience;
+        /**
+         * The Audience resource name.
+         *
+         * @param string $audience
+         */
+        public function setAudience($audience)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAudience()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonAudienceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAudience()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonAudienceInfo extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonAudienceInfo
     {
     }
 }

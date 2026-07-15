@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1UrlMetadata extends \Google\Model
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const URL_RETRIEVAL_STATUS_URL_RETRIEVAL_STATUS_UNSPECIFIED = 'URL_RETRIEVAL_STATUS_UNSPECIFIED';
-    /**
-     * The URL was retrieved successfully.
-     */
-    public const URL_RETRIEVAL_STATUS_URL_RETRIEVAL_STATUS_SUCCESS = 'URL_RETRIEVAL_STATUS_SUCCESS';
-    /**
-     * The URL retrieval failed.
-     */
-    public const URL_RETRIEVAL_STATUS_URL_RETRIEVAL_STATUS_ERROR = 'URL_RETRIEVAL_STATUS_ERROR';
-    /**
-     * The URL retrieved by the tool.
-     *
-     * @var string
-     */
-    public $retrievedUrl;
-    /**
-     * The status of the URL retrieval.
-     *
-     * @var string
-     */
-    public $urlRetrievalStatus;
-    /**
-     * The URL retrieved by the tool.
-     *
-     * @param string $retrievedUrl
-     */
-    public function setRetrievedUrl($retrievedUrl)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1UrlMetadata extends \Google\Model
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const URL_RETRIEVAL_STATUS_URL_RETRIEVAL_STATUS_UNSPECIFIED = 'URL_RETRIEVAL_STATUS_UNSPECIFIED';
+        /**
+         * The URL was retrieved successfully.
+         */
+        public const URL_RETRIEVAL_STATUS_URL_RETRIEVAL_STATUS_SUCCESS = 'URL_RETRIEVAL_STATUS_SUCCESS';
+        /**
+         * The URL retrieval failed.
+         */
+        public const URL_RETRIEVAL_STATUS_URL_RETRIEVAL_STATUS_ERROR = 'URL_RETRIEVAL_STATUS_ERROR';
+        /**
+         * The URL retrieved by the tool.
+         *
+         * @var string
+         */
+        public $retrievedUrl;
+        /**
+         * The status of the URL retrieval.
+         *
+         * @var string
+         */
+        public $urlRetrievalStatus;
+        /**
+         * The URL retrieved by the tool.
+         *
+         * @param string $retrievedUrl
+         */
+        public function setRetrievedUrl($retrievedUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRetrievedUrl()
+        {
+        }
+        /**
+         * The status of the URL retrieval.
+         *
+         * Accepted values: URL_RETRIEVAL_STATUS_UNSPECIFIED,
+         * URL_RETRIEVAL_STATUS_SUCCESS, URL_RETRIEVAL_STATUS_ERROR
+         *
+         * @param self::URL_RETRIEVAL_STATUS_* $urlRetrievalStatus
+         */
+        public function setUrlRetrievalStatus($urlRetrievalStatus)
+        {
+        }
+        /**
+         * @return self::URL_RETRIEVAL_STATUS_*
+         */
+        public function getUrlRetrievalStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1UrlMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRetrievedUrl()
-    {
-    }
-    /**
-     * The status of the URL retrieval.
-     *
-     * Accepted values: URL_RETRIEVAL_STATUS_UNSPECIFIED,
-     * URL_RETRIEVAL_STATUS_SUCCESS, URL_RETRIEVAL_STATUS_ERROR
-     *
-     * @param self::URL_RETRIEVAL_STATUS_* $urlRetrievalStatus
-     */
-    public function setUrlRetrievalStatus($urlRetrievalStatus)
-    {
-    }
-    /**
-     * @return self::URL_RETRIEVAL_STATUS_*
-     */
-    public function getUrlRetrievalStatus()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1UrlMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1UrlMetadata
     {
     }
 }

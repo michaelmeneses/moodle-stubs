@@ -21,35 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSVideoBatchPredictOperationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'outputExamples';
-    /**
-     * All the partial batch prediction results that are completed at the moment.
-     * Output examples are sorted by completion time. The order will not be
-     * changed. Each output example should be the path of a single RecordIO file
-     * of AnnotatedExamples.
-     *
-     * @var string[]
-     */
-    public $outputExamples;
-    /**
-     * All the partial batch prediction results that are completed at the moment.
-     * Output examples are sorted by completion time. The order will not be
-     * changed. Each output example should be the path of a single RecordIO file
-     * of AnnotatedExamples.
-     *
-     * @param string[] $outputExamples
-     */
-    public function setOutputExamples($outputExamples)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSVideoBatchPredictOperationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'outputExamples';
+        /**
+         * All the partial batch prediction results that are completed at the moment.
+         * Output examples are sorted by completion time. The order will not be
+         * changed. Each output example should be the path of a single RecordIO file
+         * of AnnotatedExamples.
+         *
+         * @var string[]
+         */
+        public $outputExamples;
+        /**
+         * All the partial batch prediction results that are completed at the moment.
+         * Output examples are sorted by completion time. The order will not be
+         * changed. Each output example should be the path of a single RecordIO file
+         * of AnnotatedExamples.
+         *
+         * @param string[] $outputExamples
+         */
+        public function setOutputExamples($outputExamples)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOutputExamples()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSVideoBatchPredictOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutputExamples()
+    class Google_Service_CloudNaturalLanguage_XPSVideoBatchPredictOperationMetadata extends \Google\Service\CloudNaturalLanguage\XPSVideoBatchPredictOperationMetadata
     {
     }
 }

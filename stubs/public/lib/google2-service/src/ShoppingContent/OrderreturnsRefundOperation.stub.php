@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderreturnsRefundOperation extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $fullRefund;
-    protected $partialRefundType = OrderreturnsPartialRefund::class;
-    protected $partialRefundDataType = '';
-    /**
-     * @var string
-     */
-    public $paymentType;
-    /**
-     * @var string
-     */
-    public $reasonText;
-    /**
-     * @var string
-     */
-    public $returnRefundReason;
-    /**
-     * @param bool
-     */
-    public function setFullRefund($fullRefund)
+namespace Google\Service\ShoppingContent {
+    class OrderreturnsRefundOperation extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $fullRefund;
+        protected $partialRefundType = OrderreturnsPartialRefund::class;
+        protected $partialRefundDataType = '';
+        /**
+         * @var string
+         */
+        public $paymentType;
+        /**
+         * @var string
+         */
+        public $reasonText;
+        /**
+         * @var string
+         */
+        public $returnRefundReason;
+        /**
+         * @param bool
+         */
+        public function setFullRefund($fullRefund)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFullRefund()
+        {
+        }
+        /**
+         * @param OrderreturnsPartialRefund
+         */
+        public function setPartialRefund(OrderreturnsPartialRefund $partialRefund)
+        {
+        }
+        /**
+         * @return OrderreturnsPartialRefund
+         */
+        public function getPartialRefund()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPaymentType($paymentType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPaymentType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReasonText($reasonText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReasonText()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReturnRefundReason($returnRefundReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReturnRefundReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderreturnsRefundOperation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFullRefund()
-    {
-    }
-    /**
-     * @param OrderreturnsPartialRefund
-     */
-    public function setPartialRefund(OrderreturnsPartialRefund $partialRefund)
-    {
-    }
-    /**
-     * @return OrderreturnsPartialRefund
-     */
-    public function getPartialRefund()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPaymentType($paymentType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPaymentType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReasonText($reasonText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReasonText()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReturnRefundReason($returnRefundReason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReturnRefundReason()
+    class Google_Service_ShoppingContent_OrderreturnsRefundOperation extends \Google\Service\ShoppingContent\OrderreturnsRefundOperation
     {
     }
 }

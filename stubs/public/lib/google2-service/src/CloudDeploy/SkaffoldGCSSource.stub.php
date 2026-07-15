@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class SkaffoldGCSSource extends \Google\Model
-{
-    /**
-     * Optional. Relative path from the source to the Skaffold file.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Required. Cloud Storage source paths to copy recursively. For example,
-     * providing "gs://my-bucket/dir/configs" will result in Skaffold copying all
-     * files within the "dir/configs" directory in the bucket "my-bucket".
-     *
-     * @var string
-     */
-    public $source;
-    /**
-     * Optional. Relative path from the source to the Skaffold file.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
+namespace Google\Service\CloudDeploy {
+    class SkaffoldGCSSource extends \Google\Model
     {
+        /**
+         * Optional. Relative path from the source to the Skaffold file.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Required. Cloud Storage source paths to copy recursively. For example,
+         * providing "gs://my-bucket/dir/configs" will result in Skaffold copying all
+         * files within the "dir/configs" directory in the bucket "my-bucket".
+         *
+         * @var string
+         */
+        public $source;
+        /**
+         * Optional. Relative path from the source to the Skaffold file.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Required. Cloud Storage source paths to copy recursively. For example,
+         * providing "gs://my-bucket/dir/configs" will result in Skaffold copying all
+         * files within the "dir/configs" directory in the bucket "my-bucket".
+         *
+         * @param string $source
+         */
+        public function setSource($source)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\SkaffoldGCSSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPath()
-    {
-    }
-    /**
-     * Required. Cloud Storage source paths to copy recursively. For example,
-     * providing "gs://my-bucket/dir/configs" will result in Skaffold copying all
-     * files within the "dir/configs" directory in the bucket "my-bucket".
-     *
-     * @param string $source
-     */
-    public function setSource($source)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSource()
+    class Google_Service_CloudDeploy_SkaffoldGCSSource extends \Google\Service\CloudDeploy\SkaffoldGCSSource
     {
     }
 }

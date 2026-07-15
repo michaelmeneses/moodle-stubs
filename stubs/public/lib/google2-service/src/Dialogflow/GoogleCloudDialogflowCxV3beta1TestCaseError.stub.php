@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1TestCaseError extends \Google\Model
-{
-    protected $statusType = GoogleRpcStatus::class;
-    protected $statusDataType = '';
-    protected $testCaseType = GoogleCloudDialogflowCxV3beta1TestCase::class;
-    protected $testCaseDataType = '';
-    /**
-     * The status associated with the test case.
-     *
-     * @param GoogleRpcStatus $status
-     */
-    public function setStatus(GoogleRpcStatus $status)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1TestCaseError extends \Google\Model
     {
+        protected $statusType = GoogleRpcStatus::class;
+        protected $statusDataType = '';
+        protected $testCaseType = GoogleCloudDialogflowCxV3beta1TestCase::class;
+        protected $testCaseDataType = '';
+        /**
+         * The status associated with the test case.
+         *
+         * @param GoogleRpcStatus $status
+         */
+        public function setStatus(GoogleRpcStatus $status)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * The test case.
+         *
+         * @param GoogleCloudDialogflowCxV3beta1TestCase $testCase
+         */
+        public function setTestCase(GoogleCloudDialogflowCxV3beta1TestCase $testCase)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3beta1TestCase
+         */
+        public function getTestCase()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1TestCaseError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStatus()
-    {
-    }
-    /**
-     * The test case.
-     *
-     * @param GoogleCloudDialogflowCxV3beta1TestCase $testCase
-     */
-    public function setTestCase(GoogleCloudDialogflowCxV3beta1TestCase $testCase)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3beta1TestCase
-     */
-    public function getTestCase()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1TestCaseError extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1TestCaseError
     {
     }
 }

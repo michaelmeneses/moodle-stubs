@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RouterNatLogConfig extends \Google\Model
-{
-    /**
-     * Export logs for all (successful and unsuccessful) connections.
-     */
-    public const FILTER_ALL = 'ALL';
-    /**
-     * Export logs for connection failures only.
-     */
-    public const FILTER_ERRORS_ONLY = 'ERRORS_ONLY';
-    /**
-     * Export logs for successful connections only.
-     */
-    public const FILTER_TRANSLATIONS_ONLY = 'TRANSLATIONS_ONLY';
-    /**
-     * Indicates whether or not to export logs. This is false by default.
-     *
-     * @var bool
-     */
-    public $enable;
-    /**
-     * Specify the desired filtering of logs on this NAT. If unspecified, logs are
-     * exported for all connections handled by this NAT. This option can take one
-     * of the following values:        - ERRORS_ONLY: Export logs only for
-     * connection failures.    - TRANSLATIONS_ONLY: Export logs only for
-     * successful    connections.    - ALL: Export logs for all connections,
-     * successful and    unsuccessful.
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * Indicates whether or not to export logs. This is false by default.
-     *
-     * @param bool $enable
-     */
-    public function setEnable($enable)
+namespace Google\Service\Compute {
+    class RouterNatLogConfig extends \Google\Model
     {
+        /**
+         * Export logs for all (successful and unsuccessful) connections.
+         */
+        public const FILTER_ALL = 'ALL';
+        /**
+         * Export logs for connection failures only.
+         */
+        public const FILTER_ERRORS_ONLY = 'ERRORS_ONLY';
+        /**
+         * Export logs for successful connections only.
+         */
+        public const FILTER_TRANSLATIONS_ONLY = 'TRANSLATIONS_ONLY';
+        /**
+         * Indicates whether or not to export logs. This is false by default.
+         *
+         * @var bool
+         */
+        public $enable;
+        /**
+         * Specify the desired filtering of logs on this NAT. If unspecified, logs are
+         * exported for all connections handled by this NAT. This option can take one
+         * of the following values:        - ERRORS_ONLY: Export logs only for
+         * connection failures.    - TRANSLATIONS_ONLY: Export logs only for
+         * successful    connections.    - ALL: Export logs for all connections,
+         * successful and    unsuccessful.
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * Indicates whether or not to export logs. This is false by default.
+         *
+         * @param bool $enable
+         */
+        public function setEnable($enable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnable()
+        {
+        }
+        /**
+         * Specify the desired filtering of logs on this NAT. If unspecified, logs are
+         * exported for all connections handled by this NAT. This option can take one
+         * of the following values:        - ERRORS_ONLY: Export logs only for
+         * connection failures.    - TRANSLATIONS_ONLY: Export logs only for
+         * successful    connections.    - ALL: Export logs for all connections,
+         * successful and    unsuccessful.
+         *
+         * Accepted values: ALL, ERRORS_ONLY, TRANSLATIONS_ONLY
+         *
+         * @param self::FILTER_* $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return self::FILTER_*
+         */
+        public function getFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Compute\RouterNatLogConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnable()
-    {
-    }
-    /**
-     * Specify the desired filtering of logs on this NAT. If unspecified, logs are
-     * exported for all connections handled by this NAT. This option can take one
-     * of the following values:        - ERRORS_ONLY: Export logs only for
-     * connection failures.    - TRANSLATIONS_ONLY: Export logs only for
-     * successful    connections.    - ALL: Export logs for all connections,
-     * successful and    unsuccessful.
-     *
-     * Accepted values: ALL, ERRORS_ONLY, TRANSLATIONS_ONLY
-     *
-     * @param self::FILTER_* $filter
-     */
-    public function setFilter($filter)
-    {
-    }
-    /**
-     * @return self::FILTER_*
-     */
-    public function getFilter()
+    class Google_Service_Compute_RouterNatLogConfig extends \Google\Service\Compute\RouterNatLogConfig
     {
     }
 }

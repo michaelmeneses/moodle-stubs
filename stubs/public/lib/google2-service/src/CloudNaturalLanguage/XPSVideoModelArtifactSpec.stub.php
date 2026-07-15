@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSVideoModelArtifactSpec extends \Google\Collection
-{
-    protected $collection_key = 'exportArtifact';
-    protected $exportArtifactType = XPSModelArtifactItem::class;
-    protected $exportArtifactDataType = 'array';
-    protected $servingArtifactType = XPSModelArtifactItem::class;
-    protected $servingArtifactDataType = '';
-    /**
-     * The model binary files in different formats for model export.
-     *
-     * @param XPSModelArtifactItem[] $exportArtifact
-     */
-    public function setExportArtifact($exportArtifact)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSVideoModelArtifactSpec extends \Google\Collection
     {
+        protected $collection_key = 'exportArtifact';
+        protected $exportArtifactType = XPSModelArtifactItem::class;
+        protected $exportArtifactDataType = 'array';
+        protected $servingArtifactType = XPSModelArtifactItem::class;
+        protected $servingArtifactDataType = '';
+        /**
+         * The model binary files in different formats for model export.
+         *
+         * @param XPSModelArtifactItem[] $exportArtifact
+         */
+        public function setExportArtifact($exportArtifact)
+        {
+        }
+        /**
+         * @return XPSModelArtifactItem[]
+         */
+        public function getExportArtifact()
+        {
+        }
+        /**
+         * The default model binary file used for serving (e.g. batch predict) via
+         * public Cloud AI Platform API.
+         *
+         * @param XPSModelArtifactItem $servingArtifact
+         */
+        public function setServingArtifact(XPSModelArtifactItem $servingArtifact)
+        {
+        }
+        /**
+         * @return XPSModelArtifactItem
+         */
+        public function getServingArtifact()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSModelArtifactItem[]
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSVideoModelArtifactSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExportArtifact()
-    {
-    }
-    /**
-     * The default model binary file used for serving (e.g. batch predict) via
-     * public Cloud AI Platform API.
-     *
-     * @param XPSModelArtifactItem $servingArtifact
-     */
-    public function setServingArtifact(XPSModelArtifactItem $servingArtifact)
-    {
-    }
-    /**
-     * @return XPSModelArtifactItem
-     */
-    public function getServingArtifact()
+    class Google_Service_CloudNaturalLanguage_XPSVideoModelArtifactSpec extends \Google\Service\CloudNaturalLanguage\XPSVideoModelArtifactSpec
     {
     }
 }

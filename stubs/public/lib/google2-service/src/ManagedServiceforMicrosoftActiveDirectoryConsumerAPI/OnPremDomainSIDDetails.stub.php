@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI;
-
-class OnPremDomainSIDDetails extends \Google\Model
-{
-    /**
-     * SID Filtering is in unspecified state.
-     */
-    public const SID_FILTERING_STATE_SID_FILTERING_STATE_UNSPECIFIED = 'SID_FILTERING_STATE_UNSPECIFIED';
-    /**
-     * SID Filtering is Enabled.
-     */
-    public const SID_FILTERING_STATE_ENABLED = 'ENABLED';
-    /**
-     * SID Filtering is Disabled.
-     */
-    public const SID_FILTERING_STATE_DISABLED = 'DISABLED';
-    /**
-     * FQDN of the on-prem domain being migrated.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Current SID filtering state.
-     *
-     * @var string
-     */
-    public $sidFilteringState;
-    /**
-     * FQDN of the on-prem domain being migrated.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI {
+    class OnPremDomainSIDDetails extends \Google\Model
     {
+        /**
+         * SID Filtering is in unspecified state.
+         */
+        public const SID_FILTERING_STATE_SID_FILTERING_STATE_UNSPECIFIED = 'SID_FILTERING_STATE_UNSPECIFIED';
+        /**
+         * SID Filtering is Enabled.
+         */
+        public const SID_FILTERING_STATE_ENABLED = 'ENABLED';
+        /**
+         * SID Filtering is Disabled.
+         */
+        public const SID_FILTERING_STATE_DISABLED = 'DISABLED';
+        /**
+         * FQDN of the on-prem domain being migrated.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Current SID filtering state.
+         *
+         * @var string
+         */
+        public $sidFilteringState;
+        /**
+         * FQDN of the on-prem domain being migrated.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Current SID filtering state.
+         *
+         * Accepted values: SID_FILTERING_STATE_UNSPECIFIED, ENABLED, DISABLED
+         *
+         * @param self::SID_FILTERING_STATE_* $sidFilteringState
+         */
+        public function setSidFilteringState($sidFilteringState)
+        {
+        }
+        /**
+         * @return self::SID_FILTERING_STATE_*
+         */
+        public function getSidFilteringState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\OnPremDomainSIDDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Current SID filtering state.
-     *
-     * Accepted values: SID_FILTERING_STATE_UNSPECIFIED, ENABLED, DISABLED
-     *
-     * @param self::SID_FILTERING_STATE_* $sidFilteringState
-     */
-    public function setSidFilteringState($sidFilteringState)
-    {
-    }
-    /**
-     * @return self::SID_FILTERING_STATE_*
-     */
-    public function getSidFilteringState()
+    class Google_Service_ManagedServiceforMicrosoftActiveDirectoryConsumerAPI_OnPremDomainSIDDetails extends \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\OnPremDomainSIDDetails
     {
     }
 }

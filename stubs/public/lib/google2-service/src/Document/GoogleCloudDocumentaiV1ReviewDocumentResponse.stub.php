@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1ReviewDocumentResponse extends \Google\Model
-{
-    /**
-     * The default value. This value is used if the state is omitted.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The review operation is rejected by the reviewer.
-     */
-    public const STATE_REJECTED = 'REJECTED';
-    /**
-     * The review operation is succeeded.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * The Cloud Storage uri for the human reviewed document if the review is
-     * succeeded.
-     *
-     * @var string
-     */
-    public $gcsDestination;
-    /**
-     * The reason why the review is rejected by reviewer.
-     *
-     * @var string
-     */
-    public $rejectionReason;
-    /**
-     * The state of the review operation.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * The Cloud Storage uri for the human reviewed document if the review is
-     * succeeded.
-     *
-     * @param string $gcsDestination
-     */
-    public function setGcsDestination($gcsDestination)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1ReviewDocumentResponse extends \Google\Model
     {
+        /**
+         * The default value. This value is used if the state is omitted.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The review operation is rejected by the reviewer.
+         */
+        public const STATE_REJECTED = 'REJECTED';
+        /**
+         * The review operation is succeeded.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * The Cloud Storage uri for the human reviewed document if the review is
+         * succeeded.
+         *
+         * @var string
+         */
+        public $gcsDestination;
+        /**
+         * The reason why the review is rejected by reviewer.
+         *
+         * @var string
+         */
+        public $rejectionReason;
+        /**
+         * The state of the review operation.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * The Cloud Storage uri for the human reviewed document if the review is
+         * succeeded.
+         *
+         * @param string $gcsDestination
+         */
+        public function setGcsDestination($gcsDestination)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsDestination()
+        {
+        }
+        /**
+         * The reason why the review is rejected by reviewer.
+         *
+         * @param string $rejectionReason
+         */
+        public function setRejectionReason($rejectionReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRejectionReason()
+        {
+        }
+        /**
+         * The state of the review operation.
+         *
+         * Accepted values: STATE_UNSPECIFIED, REJECTED, SUCCEEDED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1ReviewDocumentResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsDestination()
-    {
-    }
-    /**
-     * The reason why the review is rejected by reviewer.
-     *
-     * @param string $rejectionReason
-     */
-    public function setRejectionReason($rejectionReason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRejectionReason()
-    {
-    }
-    /**
-     * The state of the review operation.
-     *
-     * Accepted values: STATE_UNSPECIFIED, REJECTED, SUCCEEDED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Document_GoogleCloudDocumentaiV1ReviewDocumentResponse extends \Google\Service\Document\GoogleCloudDocumentaiV1ReviewDocumentResponse
     {
     }
 }

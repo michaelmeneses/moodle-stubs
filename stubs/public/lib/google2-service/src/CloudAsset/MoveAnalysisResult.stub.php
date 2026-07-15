@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class MoveAnalysisResult extends \Google\Collection
-{
-    protected $collection_key = 'warnings';
-    protected $blockersType = MoveImpact::class;
-    protected $blockersDataType = 'array';
-    protected $warningsType = MoveImpact::class;
-    protected $warningsDataType = 'array';
-    /**
-     * Blocking information that would prevent the target resource from moving to
-     * the specified destination at runtime.
-     *
-     * @param MoveImpact[] $blockers
-     */
-    public function setBlockers($blockers)
+namespace Google\Service\CloudAsset {
+    class MoveAnalysisResult extends \Google\Collection
     {
+        protected $collection_key = 'warnings';
+        protected $blockersType = MoveImpact::class;
+        protected $blockersDataType = 'array';
+        protected $warningsType = MoveImpact::class;
+        protected $warningsDataType = 'array';
+        /**
+         * Blocking information that would prevent the target resource from moving to
+         * the specified destination at runtime.
+         *
+         * @param MoveImpact[] $blockers
+         */
+        public function setBlockers($blockers)
+        {
+        }
+        /**
+         * @return MoveImpact[]
+         */
+        public function getBlockers()
+        {
+        }
+        /**
+         * Warning information indicating that moving the target resource to the
+         * specified destination might be unsafe. This can include important policy
+         * information and configuration changes, but will not block moves at runtime.
+         *
+         * @param MoveImpact[] $warnings
+         */
+        public function setWarnings($warnings)
+        {
+        }
+        /**
+         * @return MoveImpact[]
+         */
+        public function getWarnings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MoveImpact[]
+     * Runtime class alias of \Google\Service\CloudAsset\MoveAnalysisResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlockers()
-    {
-    }
-    /**
-     * Warning information indicating that moving the target resource to the
-     * specified destination might be unsafe. This can include important policy
-     * information and configuration changes, but will not block moves at runtime.
-     *
-     * @param MoveImpact[] $warnings
-     */
-    public function setWarnings($warnings)
-    {
-    }
-    /**
-     * @return MoveImpact[]
-     */
-    public function getWarnings()
+    class Google_Service_CloudAsset_MoveAnalysisResult extends \Google\Service\CloudAsset\MoveAnalysisResult
     {
     }
 }

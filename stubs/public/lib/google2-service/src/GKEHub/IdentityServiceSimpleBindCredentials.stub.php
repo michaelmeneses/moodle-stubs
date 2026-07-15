@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class IdentityServiceSimpleBindCredentials extends \Google\Model
-{
-    /**
-     * Required. The distinguished name(DN) of the service account object/user.
-     *
-     * @var string
-     */
-    public $dn;
-    /**
-     * Output only. The encrypted password of the service account object/user.
-     *
-     * @var string
-     */
-    public $encryptedPassword;
-    /**
-     * Required. Input only. The password of the service account object/user.
-     *
-     * @var string
-     */
-    public $password;
-    /**
-     * Required. The distinguished name(DN) of the service account object/user.
-     *
-     * @param string $dn
-     */
-    public function setDn($dn)
+namespace Google\Service\GKEHub {
+    class IdentityServiceSimpleBindCredentials extends \Google\Model
     {
+        /**
+         * Required. The distinguished name(DN) of the service account object/user.
+         *
+         * @var string
+         */
+        public $dn;
+        /**
+         * Output only. The encrypted password of the service account object/user.
+         *
+         * @var string
+         */
+        public $encryptedPassword;
+        /**
+         * Required. Input only. The password of the service account object/user.
+         *
+         * @var string
+         */
+        public $password;
+        /**
+         * Required. The distinguished name(DN) of the service account object/user.
+         *
+         * @param string $dn
+         */
+        public function setDn($dn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDn()
+        {
+        }
+        /**
+         * Output only. The encrypted password of the service account object/user.
+         *
+         * @param string $encryptedPassword
+         */
+        public function setEncryptedPassword($encryptedPassword)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncryptedPassword()
+        {
+        }
+        /**
+         * Required. Input only. The password of the service account object/user.
+         *
+         * @param string $password
+         */
+        public function setPassword($password)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassword()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\IdentityServiceSimpleBindCredentials registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDn()
-    {
-    }
-    /**
-     * Output only. The encrypted password of the service account object/user.
-     *
-     * @param string $encryptedPassword
-     */
-    public function setEncryptedPassword($encryptedPassword)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEncryptedPassword()
-    {
-    }
-    /**
-     * Required. Input only. The password of the service account object/user.
-     *
-     * @param string $password
-     */
-    public function setPassword($password)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPassword()
+    class Google_Service_GKEHub_IdentityServiceSimpleBindCredentials extends \Google\Service\GKEHub\IdentityServiceSimpleBindCredentials
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1ListEntriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'entries';
-    protected $entriesType = GoogleCloudDatacatalogV1beta1Entry::class;
-    protected $entriesDataType = 'array';
-    public $nextPageToken;
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1ListEntriesResponse extends \Google\Collection
+    {
+        protected $collection_key = 'entries';
+        protected $entriesType = GoogleCloudDatacatalogV1beta1Entry::class;
+        protected $entriesDataType = 'array';
+        public $nextPageToken;
+        /**
+         * @param GoogleCloudDatacatalogV1beta1Entry[]
+         */
+        public function setEntries($entries)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1Entry[]
+         */
+        public function getEntries()
+        {
+        }
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        public function getNextPageToken()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param GoogleCloudDatacatalogV1beta1Entry[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1ListEntriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setEntries($entries)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1beta1Entry[]
-     */
-    public function getEntries()
-    {
-    }
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    public function getNextPageToken()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1ListEntriesResponse extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1ListEntriesResponse
     {
     }
 }

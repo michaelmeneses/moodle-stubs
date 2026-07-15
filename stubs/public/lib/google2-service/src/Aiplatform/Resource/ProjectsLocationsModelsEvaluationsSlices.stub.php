@@ -21,66 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform\Resource;
-
-/**
- * The "slices" collection of methods.
- * Typical usage is:
- *  <code>
- *   $aiplatformService = new Google\Service\Aiplatform(...);
- *   $slices = $aiplatformService->projects_locations_models_evaluations_slices;
- *  </code>
- */
-class ProjectsLocationsModelsEvaluationsSlices extends \Google\Service\Resource
-{
+namespace Google\Service\Aiplatform\Resource {
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchImportEvaluatedAnnotationsRequest;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchImportEvaluatedAnnotationsResponse;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListModelEvaluationSlicesResponse;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelEvaluationSlice;
     /**
-     * Imports a list of externally generated EvaluatedAnnotations.
-     * (slices.batchImport)
-     *
-     * @param string $parent Required. The name of the parent ModelEvaluationSlice
-     * resource. Format: `projects/{project}/locations/{location}/models/{model}/eva
-     * luations/{evaluation}/slices/{slice}`
-     * @param GoogleCloudAiplatformV1BatchImportEvaluatedAnnotationsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAiplatformV1BatchImportEvaluatedAnnotationsResponse
-     * @throws \Google\Service\Exception
+     * The "slices" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $aiplatformService = new Google\Service\Aiplatform(...);
+     *   $slices = $aiplatformService->projects_locations_models_evaluations_slices;
+     *  </code>
      */
-    public function batchImport($parent, GoogleCloudAiplatformV1BatchImportEvaluatedAnnotationsRequest $postBody, $optParams = [])
+    class ProjectsLocationsModelsEvaluationsSlices extends \Google\Service\Resource
     {
+        /**
+         * Imports a list of externally generated EvaluatedAnnotations.
+         * (slices.batchImport)
+         *
+         * @param string $parent Required. The name of the parent ModelEvaluationSlice
+         * resource. Format: `projects/{project}/locations/{location}/models/{model}/eva
+         * luations/{evaluation}/slices/{slice}`
+         * @param GoogleCloudAiplatformV1BatchImportEvaluatedAnnotationsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAiplatformV1BatchImportEvaluatedAnnotationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function batchImport($parent, GoogleCloudAiplatformV1BatchImportEvaluatedAnnotationsRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets a ModelEvaluationSlice. (slices.get)
+         *
+         * @param string $name Required. The name of the ModelEvaluationSlice resource.
+         * Format: `projects/{project}/locations/{location}/models/{model}/evaluations/{
+         * evaluation}/slices/{slice}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAiplatformV1ModelEvaluationSlice
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists ModelEvaluationSlices in a ModelEvaluation.
+         * (slices.listProjectsLocationsModelsEvaluationsSlices)
+         *
+         * @param string $parent Required. The resource name of the ModelEvaluation to
+         * list the ModelEvaluationSlices from. Format: `projects/{project}/locations/{l
+         * ocation}/models/{model}/evaluations/{evaluation}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter The standard list filter. * `slice.dimension` - for
+         * =.
+         * @opt_param int pageSize The standard list page size.
+         * @opt_param string pageToken The standard list page token. Typically obtained
+         * via ListModelEvaluationSlicesResponse.next_page_token of the previous
+         * ModelService.ListModelEvaluationSlices call.
+         * @opt_param string readMask Mask specifying which fields to read.
+         * @return GoogleCloudAiplatformV1ListModelEvaluationSlicesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsModelsEvaluationsSlices($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a ModelEvaluationSlice. (slices.get)
-     *
-     * @param string $name Required. The name of the ModelEvaluationSlice resource.
-     * Format: `projects/{project}/locations/{location}/models/{model}/evaluations/{
-     * evaluation}/slices/{slice}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAiplatformV1ModelEvaluationSlice
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Aiplatform\Resource\ProjectsLocationsModelsEvaluationsSlices registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists ModelEvaluationSlices in a ModelEvaluation.
-     * (slices.listProjectsLocationsModelsEvaluationsSlices)
-     *
-     * @param string $parent Required. The resource name of the ModelEvaluation to
-     * list the ModelEvaluationSlices from. Format: `projects/{project}/locations/{l
-     * ocation}/models/{model}/evaluations/{evaluation}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter The standard list filter. * `slice.dimension` - for
-     * =.
-     * @opt_param int pageSize The standard list page size.
-     * @opt_param string pageToken The standard list page token. Typically obtained
-     * via ListModelEvaluationSlicesResponse.next_page_token of the previous
-     * ModelService.ListModelEvaluationSlices call.
-     * @opt_param string readMask Mask specifying which fields to read.
-     * @return GoogleCloudAiplatformV1ListModelEvaluationSlicesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsModelsEvaluationsSlices($parent, $optParams = [])
+    class Google_Service_Aiplatform_Resource_ProjectsLocationsModelsEvaluationsSlices extends \Google\Service\Aiplatform\Resource\ProjectsLocationsModelsEvaluationsSlices
     {
     }
 }

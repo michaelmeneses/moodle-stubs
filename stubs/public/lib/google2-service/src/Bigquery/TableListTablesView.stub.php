@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class TableListTablesView extends \Google\Model
-{
-    protected $privacyPolicyType = PrivacyPolicy::class;
-    protected $privacyPolicyDataType = '';
-    /**
-     * True if view is defined in legacy SQL dialect, false if in GoogleSQL.
-     *
-     * @var bool
-     */
-    public $useLegacySql;
-    /**
-     * Specifies the privacy policy for the view.
-     *
-     * @param PrivacyPolicy $privacyPolicy
-     */
-    public function setPrivacyPolicy(PrivacyPolicy $privacyPolicy)
+namespace Google\Service\Bigquery {
+    class TableListTablesView extends \Google\Model
     {
+        protected $privacyPolicyType = PrivacyPolicy::class;
+        protected $privacyPolicyDataType = '';
+        /**
+         * True if view is defined in legacy SQL dialect, false if in GoogleSQL.
+         *
+         * @var bool
+         */
+        public $useLegacySql;
+        /**
+         * Specifies the privacy policy for the view.
+         *
+         * @param PrivacyPolicy $privacyPolicy
+         */
+        public function setPrivacyPolicy(PrivacyPolicy $privacyPolicy)
+        {
+        }
+        /**
+         * @return PrivacyPolicy
+         */
+        public function getPrivacyPolicy()
+        {
+        }
+        /**
+         * True if view is defined in legacy SQL dialect, false if in GoogleSQL.
+         *
+         * @param bool $useLegacySql
+         */
+        public function setUseLegacySql($useLegacySql)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseLegacySql()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PrivacyPolicy
+     * Runtime class alias of \Google\Service\Bigquery\TableListTablesView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrivacyPolicy()
-    {
-    }
-    /**
-     * True if view is defined in legacy SQL dialect, false if in GoogleSQL.
-     *
-     * @param bool $useLegacySql
-     */
-    public function setUseLegacySql($useLegacySql)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseLegacySql()
+    class Google_Service_Bigquery_TableListTablesView extends \Google\Service\Bigquery\TableListTablesView
     {
     }
 }

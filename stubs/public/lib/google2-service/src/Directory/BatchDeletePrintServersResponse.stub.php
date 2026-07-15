@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class BatchDeletePrintServersResponse extends \Google\Collection
-{
-    protected $collection_key = 'printServerIds';
-    protected $failedPrintServersType = PrintServerFailureInfo::class;
-    protected $failedPrintServersDataType = 'array';
-    /**
-     * A list of print server IDs that were successfully deleted.
-     *
-     * @var string[]
-     */
-    public $printServerIds;
-    /**
-     * A list of update failures.
-     *
-     * @param PrintServerFailureInfo[] $failedPrintServers
-     */
-    public function setFailedPrintServers($failedPrintServers)
+namespace Google\Service\Directory {
+    class BatchDeletePrintServersResponse extends \Google\Collection
     {
+        protected $collection_key = 'printServerIds';
+        protected $failedPrintServersType = PrintServerFailureInfo::class;
+        protected $failedPrintServersDataType = 'array';
+        /**
+         * A list of print server IDs that were successfully deleted.
+         *
+         * @var string[]
+         */
+        public $printServerIds;
+        /**
+         * A list of update failures.
+         *
+         * @param PrintServerFailureInfo[] $failedPrintServers
+         */
+        public function setFailedPrintServers($failedPrintServers)
+        {
+        }
+        /**
+         * @return PrintServerFailureInfo[]
+         */
+        public function getFailedPrintServers()
+        {
+        }
+        /**
+         * A list of print server IDs that were successfully deleted.
+         *
+         * @param string[] $printServerIds
+         */
+        public function setPrintServerIds($printServerIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPrintServerIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PrintServerFailureInfo[]
+     * Runtime class alias of \Google\Service\Directory\BatchDeletePrintServersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailedPrintServers()
-    {
-    }
-    /**
-     * A list of print server IDs that were successfully deleted.
-     *
-     * @param string[] $printServerIds
-     */
-    public function setPrintServerIds($printServerIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPrintServerIds()
+    class Google_Service_Directory_BatchDeletePrintServersResponse extends \Google\Service\Directory\BatchDeletePrintServersResponse
     {
     }
 }

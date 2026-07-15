@@ -29,6 +29,9 @@
  */
 namespace tool_licensemanager\form;
 
+use moodleform;
+use tool_licensemanager\helper;
+use tool_licensemanager\manager;
 /**
  * Form for creating/updating a custom license.
  *

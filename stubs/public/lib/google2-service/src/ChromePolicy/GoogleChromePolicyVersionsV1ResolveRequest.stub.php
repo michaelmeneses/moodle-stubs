@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1ResolveRequest extends \Google\Model
-{
-    /**
-     * The maximum number of policies to return, defaults to 100 and has a maximum
-     * of 1000.
-     *
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * The page token used to retrieve a specific page of the request.
-     *
-     * @var string
-     */
-    public $pageToken;
-    /**
-     * Required. The schema filter to apply to the resolve request. Specify a
-     * schema name to view a particular schema, for example:
-     * chrome.users.ShowLogoutButton Wildcards are supported, but only in the leaf
-     * portion of the schema name. Wildcards cannot be used in namespace directly.
-     * Please read https://developers.google.com/chrome/policy/guides/policy-
-     * schemas for details on schema namespaces. For example: Valid:
-     * "chrome.users.*", "chrome.users.apps.*", "chrome.printers.*" Invalid: "*",
-     * "*.users", "chrome.*", "chrome.*.apps.*"
-     *
-     * @var string
-     */
-    public $policySchemaFilter;
-    protected $policyTargetKeyType = GoogleChromePolicyVersionsV1PolicyTargetKey::class;
-    protected $policyTargetKeyDataType = '';
-    /**
-     * The maximum number of policies to return, defaults to 100 and has a maximum
-     * of 1000.
-     *
-     * @param int $pageSize
-     */
-    public function setPageSize($pageSize)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1ResolveRequest extends \Google\Model
     {
+        /**
+         * The maximum number of policies to return, defaults to 100 and has a maximum
+         * of 1000.
+         *
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * The page token used to retrieve a specific page of the request.
+         *
+         * @var string
+         */
+        public $pageToken;
+        /**
+         * Required. The schema filter to apply to the resolve request. Specify a
+         * schema name to view a particular schema, for example:
+         * chrome.users.ShowLogoutButton Wildcards are supported, but only in the leaf
+         * portion of the schema name. Wildcards cannot be used in namespace directly.
+         * Please read https://developers.google.com/chrome/policy/guides/policy-
+         * schemas for details on schema namespaces. For example: Valid:
+         * "chrome.users.*", "chrome.users.apps.*", "chrome.printers.*" Invalid: "*",
+         * "*.users", "chrome.*", "chrome.*.apps.*"
+         *
+         * @var string
+         */
+        public $policySchemaFilter;
+        protected $policyTargetKeyType = GoogleChromePolicyVersionsV1PolicyTargetKey::class;
+        protected $policyTargetKeyDataType = '';
+        /**
+         * The maximum number of policies to return, defaults to 100 and has a maximum
+         * of 1000.
+         *
+         * @param int $pageSize
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * The page token used to retrieve a specific page of the request.
+         *
+         * @param string $pageToken
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
+        /**
+         * Required. The schema filter to apply to the resolve request. Specify a
+         * schema name to view a particular schema, for example:
+         * chrome.users.ShowLogoutButton Wildcards are supported, but only in the leaf
+         * portion of the schema name. Wildcards cannot be used in namespace directly.
+         * Please read https://developers.google.com/chrome/policy/guides/policy-
+         * schemas for details on schema namespaces. For example: Valid:
+         * "chrome.users.*", "chrome.users.apps.*", "chrome.printers.*" Invalid: "*",
+         * "*.users", "chrome.*", "chrome.*.apps.*"
+         *
+         * @param string $policySchemaFilter
+         */
+        public function setPolicySchemaFilter($policySchemaFilter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicySchemaFilter()
+        {
+        }
+        /**
+         * Required. The key of the target resource on which the policies should be
+         * resolved.
+         *
+         * @param GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey
+         */
+        public function setPolicyTargetKey(GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyVersionsV1PolicyTargetKey
+         */
+        public function getPolicyTargetKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1ResolveRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageSize()
-    {
-    }
-    /**
-     * The page token used to retrieve a specific page of the request.
-     *
-     * @param string $pageToken
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
-    {
-    }
-    /**
-     * Required. The schema filter to apply to the resolve request. Specify a
-     * schema name to view a particular schema, for example:
-     * chrome.users.ShowLogoutButton Wildcards are supported, but only in the leaf
-     * portion of the schema name. Wildcards cannot be used in namespace directly.
-     * Please read https://developers.google.com/chrome/policy/guides/policy-
-     * schemas for details on schema namespaces. For example: Valid:
-     * "chrome.users.*", "chrome.users.apps.*", "chrome.printers.*" Invalid: "*",
-     * "*.users", "chrome.*", "chrome.*.apps.*"
-     *
-     * @param string $policySchemaFilter
-     */
-    public function setPolicySchemaFilter($policySchemaFilter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPolicySchemaFilter()
-    {
-    }
-    /**
-     * Required. The key of the target resource on which the policies should be
-     * resolved.
-     *
-     * @param GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey
-     */
-    public function setPolicyTargetKey(GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyVersionsV1PolicyTargetKey
-     */
-    public function getPolicyTargetKey()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1ResolveRequest extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1ResolveRequest
     {
     }
 }

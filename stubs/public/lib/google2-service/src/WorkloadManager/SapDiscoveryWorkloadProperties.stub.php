@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class SapDiscoveryWorkloadProperties extends \Google\Collection
-{
-    protected $collection_key = 'softwareComponentVersions';
-    protected $productVersionsType = SapDiscoveryWorkloadPropertiesProductVersion::class;
-    protected $productVersionsDataType = 'array';
-    protected $softwareComponentVersionsType = SapDiscoveryWorkloadPropertiesSoftwareComponentProperties::class;
-    protected $softwareComponentVersionsDataType = 'array';
-    /**
-     * Optional. List of SAP Products and their versions running on the system.
-     *
-     * @param SapDiscoveryWorkloadPropertiesProductVersion[] $productVersions
-     */
-    public function setProductVersions($productVersions)
+namespace Google\Service\WorkloadManager {
+    class SapDiscoveryWorkloadProperties extends \Google\Collection
     {
+        protected $collection_key = 'softwareComponentVersions';
+        protected $productVersionsType = SapDiscoveryWorkloadPropertiesProductVersion::class;
+        protected $productVersionsDataType = 'array';
+        protected $softwareComponentVersionsType = SapDiscoveryWorkloadPropertiesSoftwareComponentProperties::class;
+        protected $softwareComponentVersionsDataType = 'array';
+        /**
+         * Optional. List of SAP Products and their versions running on the system.
+         *
+         * @param SapDiscoveryWorkloadPropertiesProductVersion[] $productVersions
+         */
+        public function setProductVersions($productVersions)
+        {
+        }
+        /**
+         * @return SapDiscoveryWorkloadPropertiesProductVersion[]
+         */
+        public function getProductVersions()
+        {
+        }
+        /**
+         * Optional. A list of SAP software components and their versions running on
+         * the system.
+         *
+         * @param SapDiscoveryWorkloadPropertiesSoftwareComponentProperties[] $softwareComponentVersions
+         */
+        public function setSoftwareComponentVersions($softwareComponentVersions)
+        {
+        }
+        /**
+         * @return SapDiscoveryWorkloadPropertiesSoftwareComponentProperties[]
+         */
+        public function getSoftwareComponentVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SapDiscoveryWorkloadPropertiesProductVersion[]
+     * Runtime class alias of \Google\Service\WorkloadManager\SapDiscoveryWorkloadProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProductVersions()
-    {
-    }
-    /**
-     * Optional. A list of SAP software components and their versions running on
-     * the system.
-     *
-     * @param SapDiscoveryWorkloadPropertiesSoftwareComponentProperties[] $softwareComponentVersions
-     */
-    public function setSoftwareComponentVersions($softwareComponentVersions)
-    {
-    }
-    /**
-     * @return SapDiscoveryWorkloadPropertiesSoftwareComponentProperties[]
-     */
-    public function getSoftwareComponentVersions()
+    class Google_Service_WorkloadManager_SapDiscoveryWorkloadProperties extends \Google\Service\WorkloadManager\SapDiscoveryWorkloadProperties
     {
     }
 }

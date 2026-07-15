@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Folder extends \Google\Collection
-{
-    protected $collection_key = 'message';
-    /**
-     * @var string
-     */
-    public $id;
-    protected $messageType = ImapsyncFolderAttributeFolderMessage::class;
-    protected $messageDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setId($id)
+namespace Google\Service\CloudSearch {
+    class Folder extends \Google\Collection
     {
+        protected $collection_key = 'message';
+        /**
+         * @var string
+         */
+        public $id;
+        protected $messageType = ImapsyncFolderAttributeFolderMessage::class;
+        protected $messageDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param ImapsyncFolderAttributeFolderMessage[]
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return ImapsyncFolderAttributeFolderMessage[]
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\Folder registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * @param ImapsyncFolderAttributeFolderMessage[]
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return ImapsyncFolderAttributeFolderMessage[]
-     */
-    public function getMessage()
+    class Google_Service_CloudSearch_Folder extends \Google\Service\CloudSearch\Folder
     {
     }
 }

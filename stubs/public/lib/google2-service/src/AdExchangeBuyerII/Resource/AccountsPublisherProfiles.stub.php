@@ -21,44 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII\Resource;
-
-/**
- * The "publisherProfiles" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adexchangebuyer2Service = new Google\Service\AdExchangeBuyerII(...);
- *   $publisherProfiles = $adexchangebuyer2Service->accounts_publisherProfiles;
- *  </code>
- */
-class AccountsPublisherProfiles extends \Google\Service\Resource
-{
+namespace Google\Service\AdExchangeBuyerII\Resource {
+    use Google\Service\AdExchangeBuyerII\ListPublisherProfilesResponse;
+    use Google\Service\AdExchangeBuyerII\PublisherProfile;
     /**
-     * Gets the requested publisher profile by id. (publisherProfiles.get)
-     *
-     * @param string $accountId Account ID of the buyer.
-     * @param string $publisherProfileId The id for the publisher profile to get.
-     * @param array $optParams Optional parameters.
-     * @return PublisherProfile
-     * @throws \Google\Service\Exception
+     * The "publisherProfiles" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adexchangebuyer2Service = new Google\Service\AdExchangeBuyerII(...);
+     *   $publisherProfiles = $adexchangebuyer2Service->accounts_publisherProfiles;
+     *  </code>
      */
-    public function get($accountId, $publisherProfileId, $optParams = [])
+    class AccountsPublisherProfiles extends \Google\Service\Resource
     {
+        /**
+         * Gets the requested publisher profile by id. (publisherProfiles.get)
+         *
+         * @param string $accountId Account ID of the buyer.
+         * @param string $publisherProfileId The id for the publisher profile to get.
+         * @param array $optParams Optional parameters.
+         * @return PublisherProfile
+         * @throws \Google\Service\Exception
+         */
+        public function get($accountId, $publisherProfileId, $optParams = [])
+        {
+        }
+        /**
+         * List all publisher profiles visible to the buyer
+         * (publisherProfiles.listAccountsPublisherProfiles)
+         *
+         * @param string $accountId Account ID of the buyer.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Specify the number of results to include per page.
+         * @opt_param string pageToken The page token as return from
+         * ListPublisherProfilesResponse.
+         * @return ListPublisherProfilesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsPublisherProfiles($accountId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * List all publisher profiles visible to the buyer
-     * (publisherProfiles.listAccountsPublisherProfiles)
-     *
-     * @param string $accountId Account ID of the buyer.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Specify the number of results to include per page.
-     * @opt_param string pageToken The page token as return from
-     * ListPublisherProfilesResponse.
-     * @return ListPublisherProfilesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\Resource\AccountsPublisherProfiles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listAccountsPublisherProfiles($accountId, $optParams = [])
+    class Google_Service_AdExchangeBuyerII_Resource_AccountsPublisherProfiles extends \Google\Service\AdExchangeBuyerII\Resource\AccountsPublisherProfiles
     {
     }
 }

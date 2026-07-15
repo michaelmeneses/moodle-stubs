@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1Schema extends \Google\Collection
-{
-    protected $collection_key = 'metrics';
-    protected $dimensionsType = GoogleCloudApigeeV1SchemaSchemaElement::class;
-    protected $dimensionsDataType = 'array';
-    /**
-     * Additional metadata associated with schema. This is a legacy field and
-     * usually consists of an empty array of strings.
-     *
-     * @var string[]
-     */
-    public $meta;
-    protected $metricsType = GoogleCloudApigeeV1SchemaSchemaElement::class;
-    protected $metricsDataType = 'array';
-    /**
-     * List of schema fields grouped as dimensions.
-     *
-     * @param GoogleCloudApigeeV1SchemaSchemaElement[] $dimensions
-     */
-    public function setDimensions($dimensions)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1Schema extends \Google\Collection
     {
+        protected $collection_key = 'metrics';
+        protected $dimensionsType = GoogleCloudApigeeV1SchemaSchemaElement::class;
+        protected $dimensionsDataType = 'array';
+        /**
+         * Additional metadata associated with schema. This is a legacy field and
+         * usually consists of an empty array of strings.
+         *
+         * @var string[]
+         */
+        public $meta;
+        protected $metricsType = GoogleCloudApigeeV1SchemaSchemaElement::class;
+        protected $metricsDataType = 'array';
+        /**
+         * List of schema fields grouped as dimensions.
+         *
+         * @param GoogleCloudApigeeV1SchemaSchemaElement[] $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1SchemaSchemaElement[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * Additional metadata associated with schema. This is a legacy field and
+         * usually consists of an empty array of strings.
+         *
+         * @param string[] $meta
+         */
+        public function setMeta($meta)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMeta()
+        {
+        }
+        /**
+         * List of schema fields grouped as dimensions that can be used with an
+         * aggregate function such as `sum`, `avg`, `min`, and `max`.
+         *
+         * @param GoogleCloudApigeeV1SchemaSchemaElement[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1SchemaSchemaElement[]
+         */
+        public function getMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1SchemaSchemaElement[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1Schema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensions()
-    {
-    }
-    /**
-     * Additional metadata associated with schema. This is a legacy field and
-     * usually consists of an empty array of strings.
-     *
-     * @param string[] $meta
-     */
-    public function setMeta($meta)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMeta()
-    {
-    }
-    /**
-     * List of schema fields grouped as dimensions that can be used with an
-     * aggregate function such as `sum`, `avg`, `min`, and `max`.
-     *
-     * @param GoogleCloudApigeeV1SchemaSchemaElement[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1SchemaSchemaElement[]
-     */
-    public function getMetrics()
+    class Google_Service_Apigee_GoogleCloudApigeeV1Schema extends \Google\Service\Apigee\GoogleCloudApigeeV1Schema
     {
     }
 }

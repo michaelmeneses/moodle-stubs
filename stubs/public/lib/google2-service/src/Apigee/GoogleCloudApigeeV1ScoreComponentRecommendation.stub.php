@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ScoreComponentRecommendation extends \Google\Collection
-{
-    protected $collection_key = 'actions';
-    protected $actionsType = GoogleCloudApigeeV1ScoreComponentRecommendationAction::class;
-    protected $actionsDataType = 'array';
-    /**
-     * Description of the recommendation.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Potential impact of this recommendation on the overall score. This denotes
-     * how important this recommendation is to improve the score.
-     *
-     * @var int
-     */
-    public $impact;
-    /**
-     * Title represents recommendation title.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Actions for the recommendation to improve the security score.
-     *
-     * @param GoogleCloudApigeeV1ScoreComponentRecommendationAction[] $actions
-     */
-    public function setActions($actions)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ScoreComponentRecommendation extends \Google\Collection
     {
+        protected $collection_key = 'actions';
+        protected $actionsType = GoogleCloudApigeeV1ScoreComponentRecommendationAction::class;
+        protected $actionsDataType = 'array';
+        /**
+         * Description of the recommendation.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Potential impact of this recommendation on the overall score. This denotes
+         * how important this recommendation is to improve the score.
+         *
+         * @var int
+         */
+        public $impact;
+        /**
+         * Title represents recommendation title.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Actions for the recommendation to improve the security score.
+         *
+         * @param GoogleCloudApigeeV1ScoreComponentRecommendationAction[] $actions
+         */
+        public function setActions($actions)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1ScoreComponentRecommendationAction[]
+         */
+        public function getActions()
+        {
+        }
+        /**
+         * Description of the recommendation.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Potential impact of this recommendation on the overall score. This denotes
+         * how important this recommendation is to improve the score.
+         *
+         * @param int $impact
+         */
+        public function setImpact($impact)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getImpact()
+        {
+        }
+        /**
+         * Title represents recommendation title.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1ScoreComponentRecommendationAction[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ScoreComponentRecommendation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActions()
-    {
-    }
-    /**
-     * Description of the recommendation.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Potential impact of this recommendation on the overall score. This denotes
-     * how important this recommendation is to improve the score.
-     *
-     * @param int $impact
-     */
-    public function setImpact($impact)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getImpact()
-    {
-    }
-    /**
-     * Title represents recommendation title.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ScoreComponentRecommendation extends \Google\Service\Apigee\GoogleCloudApigeeV1ScoreComponentRecommendation
     {
     }
 }

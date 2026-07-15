@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectAttachmentsScopedList extends \Google\Collection
-{
-    protected $collection_key = 'interconnectAttachments';
-    protected $interconnectAttachmentsType = InterconnectAttachment::class;
-    protected $interconnectAttachmentsDataType = 'array';
-    protected $warningType = InterconnectAttachmentsScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * A list of interconnect attachments contained in this scope.
-     *
-     * @param InterconnectAttachment[] $interconnectAttachments
-     */
-    public function setInterconnectAttachments($interconnectAttachments)
+namespace Google\Service\Compute {
+    class InterconnectAttachmentsScopedList extends \Google\Collection
     {
+        protected $collection_key = 'interconnectAttachments';
+        protected $interconnectAttachmentsType = InterconnectAttachment::class;
+        protected $interconnectAttachmentsDataType = 'array';
+        protected $warningType = InterconnectAttachmentsScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * A list of interconnect attachments contained in this scope.
+         *
+         * @param InterconnectAttachment[] $interconnectAttachments
+         */
+        public function setInterconnectAttachments($interconnectAttachments)
+        {
+        }
+        /**
+         * @return InterconnectAttachment[]
+         */
+        public function getInterconnectAttachments()
+        {
+        }
+        /**
+         * Informational warning which replaces the list of addresses when the list is
+         * empty.
+         *
+         * @param InterconnectAttachmentsScopedListWarning $warning
+         */
+        public function setWarning(InterconnectAttachmentsScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return InterconnectAttachmentsScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InterconnectAttachment[]
+     * Runtime class alias of \Google\Service\Compute\InterconnectAttachmentsScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInterconnectAttachments()
-    {
-    }
-    /**
-     * Informational warning which replaces the list of addresses when the list is
-     * empty.
-     *
-     * @param InterconnectAttachmentsScopedListWarning $warning
-     */
-    public function setWarning(InterconnectAttachmentsScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return InterconnectAttachmentsScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_InterconnectAttachmentsScopedList extends \Google\Service\Compute\InterconnectAttachmentsScopedList
     {
     }
 }

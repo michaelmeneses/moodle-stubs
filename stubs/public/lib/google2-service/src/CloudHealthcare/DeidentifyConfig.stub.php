@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class DeidentifyConfig extends \Google\Model
-{
-    protected $dicomType = DicomConfig::class;
-    protected $dicomDataType = '';
-    protected $fhirType = FhirConfig::class;
-    protected $fhirDataType = '';
-    protected $imageType = ImageConfig::class;
-    protected $imageDataType = '';
-    protected $textType = TextConfig::class;
-    protected $textDataType = '';
-    /**
-     * Optional. Ensures in-flight data remains in the region of origin during de-
-     * identification. The default value is false. Using this option results in a
-     * significant reduction of throughput, and is not compatible with `LOCATION`
-     * or `ORGANIZATION_NAME` infoTypes. `LOCATION` must be excluded within
-     * TextConfig, and must also be excluded within ImageConfig if image redaction
-     * is required.
-     *
-     * @var bool
-     */
-    public $useRegionalDataProcessing;
-    /**
-     * Optional. Configures de-id of application/DICOM content.
-     *
-     * @param DicomConfig $dicom
-     */
-    public function setDicom(DicomConfig $dicom)
+namespace Google\Service\CloudHealthcare {
+    class DeidentifyConfig extends \Google\Model
     {
+        protected $dicomType = DicomConfig::class;
+        protected $dicomDataType = '';
+        protected $fhirType = FhirConfig::class;
+        protected $fhirDataType = '';
+        protected $imageType = ImageConfig::class;
+        protected $imageDataType = '';
+        protected $textType = TextConfig::class;
+        protected $textDataType = '';
+        /**
+         * Optional. Ensures in-flight data remains in the region of origin during de-
+         * identification. The default value is false. Using this option results in a
+         * significant reduction of throughput, and is not compatible with `LOCATION`
+         * or `ORGANIZATION_NAME` infoTypes. `LOCATION` must be excluded within
+         * TextConfig, and must also be excluded within ImageConfig if image redaction
+         * is required.
+         *
+         * @var bool
+         */
+        public $useRegionalDataProcessing;
+        /**
+         * Optional. Configures de-id of application/DICOM content.
+         *
+         * @param DicomConfig $dicom
+         */
+        public function setDicom(DicomConfig $dicom)
+        {
+        }
+        /**
+         * @return DicomConfig
+         */
+        public function getDicom()
+        {
+        }
+        /**
+         * Optional. Configures de-id of application/FHIR content.
+         *
+         * @param FhirConfig $fhir
+         */
+        public function setFhir(FhirConfig $fhir)
+        {
+        }
+        /**
+         * @return FhirConfig
+         */
+        public function getFhir()
+        {
+        }
+        /**
+         * Optional. Configures de-identification of image pixels wherever they are
+         * found in the source_dataset.
+         *
+         * @param ImageConfig $image
+         */
+        public function setImage(ImageConfig $image)
+        {
+        }
+        /**
+         * @return ImageConfig
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * Optional. Configures de-identification of text wherever it is found in the
+         * source_dataset.
+         *
+         * @param TextConfig $text
+         */
+        public function setText(TextConfig $text)
+        {
+        }
+        /**
+         * @return TextConfig
+         */
+        public function getText()
+        {
+        }
+        /**
+         * Optional. Ensures in-flight data remains in the region of origin during de-
+         * identification. The default value is false. Using this option results in a
+         * significant reduction of throughput, and is not compatible with `LOCATION`
+         * or `ORGANIZATION_NAME` infoTypes. `LOCATION` must be excluded within
+         * TextConfig, and must also be excluded within ImageConfig if image redaction
+         * is required.
+         *
+         * @param bool $useRegionalDataProcessing
+         */
+        public function setUseRegionalDataProcessing($useRegionalDataProcessing)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseRegionalDataProcessing()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DicomConfig
+     * Runtime class alias of \Google\Service\CloudHealthcare\DeidentifyConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDicom()
-    {
-    }
-    /**
-     * Optional. Configures de-id of application/FHIR content.
-     *
-     * @param FhirConfig $fhir
-     */
-    public function setFhir(FhirConfig $fhir)
-    {
-    }
-    /**
-     * @return FhirConfig
-     */
-    public function getFhir()
-    {
-    }
-    /**
-     * Optional. Configures de-identification of image pixels wherever they are
-     * found in the source_dataset.
-     *
-     * @param ImageConfig $image
-     */
-    public function setImage(ImageConfig $image)
-    {
-    }
-    /**
-     * @return ImageConfig
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * Optional. Configures de-identification of text wherever it is found in the
-     * source_dataset.
-     *
-     * @param TextConfig $text
-     */
-    public function setText(TextConfig $text)
-    {
-    }
-    /**
-     * @return TextConfig
-     */
-    public function getText()
-    {
-    }
-    /**
-     * Optional. Ensures in-flight data remains in the region of origin during de-
-     * identification. The default value is false. Using this option results in a
-     * significant reduction of throughput, and is not compatible with `LOCATION`
-     * or `ORGANIZATION_NAME` infoTypes. `LOCATION` must be excluded within
-     * TextConfig, and must also be excluded within ImageConfig if image redaction
-     * is required.
-     *
-     * @param bool $useRegionalDataProcessing
-     */
-    public function setUseRegionalDataProcessing($useRegionalDataProcessing)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseRegionalDataProcessing()
+    class Google_Service_CloudHealthcare_DeidentifyConfig extends \Google\Service\CloudHealthcare\DeidentifyConfig
     {
     }
 }

@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer;
-
-class StoragetransferEmpty extends \Google\Model
-{
+namespace Google\Service\Storagetransfer {
+    class StoragetransferEmpty extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Storagetransfer\StoragetransferEmpty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Storagetransfer_StoragetransferEmpty extends \Google\Service\Storagetransfer\StoragetransferEmpty
+    {
+    }
 }

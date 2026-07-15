@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class ReceivedMessage extends \Google\Model
-{
-    /**
-     * Optional. This ID can be used to acknowledge the received message.
-     *
-     * @var string
-     */
-    public $ackId;
-    /**
-     * Optional. The approximate number of times that Pub/Sub has attempted to
-     * deliver the associated message to a subscriber. More precisely, this is 1 +
-     * (number of NACKs) + (number of ack_deadline exceeds) for this message. A
-     * NACK is any call to ModifyAckDeadline with a 0 deadline. An ack_deadline
-     * exceeds event is whenever a message is not acknowledged within
-     * ack_deadline. Note that ack_deadline is initially
-     * Subscription.ackDeadlineSeconds, but may get extended automatically by the
-     * client library. Upon the first delivery of a given message,
-     * `delivery_attempt` will have a value of 1. The value is calculated at best
-     * effort and is approximate. If a DeadLetterPolicy is not set on the
-     * subscription, this will be 0.
-     *
-     * @var int
-     */
-    public $deliveryAttempt;
-    protected $messageType = PubsubMessage::class;
-    protected $messageDataType = '';
-    /**
-     * Optional. This ID can be used to acknowledge the received message.
-     *
-     * @param string $ackId
-     */
-    public function setAckId($ackId)
+namespace Google\Service\Pubsub {
+    class ReceivedMessage extends \Google\Model
     {
+        /**
+         * Optional. This ID can be used to acknowledge the received message.
+         *
+         * @var string
+         */
+        public $ackId;
+        /**
+         * Optional. The approximate number of times that Pub/Sub has attempted to
+         * deliver the associated message to a subscriber. More precisely, this is 1 +
+         * (number of NACKs) + (number of ack_deadline exceeds) for this message. A
+         * NACK is any call to ModifyAckDeadline with a 0 deadline. An ack_deadline
+         * exceeds event is whenever a message is not acknowledged within
+         * ack_deadline. Note that ack_deadline is initially
+         * Subscription.ackDeadlineSeconds, but may get extended automatically by the
+         * client library. Upon the first delivery of a given message,
+         * `delivery_attempt` will have a value of 1. The value is calculated at best
+         * effort and is approximate. If a DeadLetterPolicy is not set on the
+         * subscription, this will be 0.
+         *
+         * @var int
+         */
+        public $deliveryAttempt;
+        protected $messageType = PubsubMessage::class;
+        protected $messageDataType = '';
+        /**
+         * Optional. This ID can be used to acknowledge the received message.
+         *
+         * @param string $ackId
+         */
+        public function setAckId($ackId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAckId()
+        {
+        }
+        /**
+         * Optional. The approximate number of times that Pub/Sub has attempted to
+         * deliver the associated message to a subscriber. More precisely, this is 1 +
+         * (number of NACKs) + (number of ack_deadline exceeds) for this message. A
+         * NACK is any call to ModifyAckDeadline with a 0 deadline. An ack_deadline
+         * exceeds event is whenever a message is not acknowledged within
+         * ack_deadline. Note that ack_deadline is initially
+         * Subscription.ackDeadlineSeconds, but may get extended automatically by the
+         * client library. Upon the first delivery of a given message,
+         * `delivery_attempt` will have a value of 1. The value is calculated at best
+         * effort and is approximate. If a DeadLetterPolicy is not set on the
+         * subscription, this will be 0.
+         *
+         * @param int $deliveryAttempt
+         */
+        public function setDeliveryAttempt($deliveryAttempt)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDeliveryAttempt()
+        {
+        }
+        /**
+         * Optional. The message.
+         *
+         * @param PubsubMessage $message
+         */
+        public function setMessage(PubsubMessage $message)
+        {
+        }
+        /**
+         * @return PubsubMessage
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Pubsub\ReceivedMessage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAckId()
-    {
-    }
-    /**
-     * Optional. The approximate number of times that Pub/Sub has attempted to
-     * deliver the associated message to a subscriber. More precisely, this is 1 +
-     * (number of NACKs) + (number of ack_deadline exceeds) for this message. A
-     * NACK is any call to ModifyAckDeadline with a 0 deadline. An ack_deadline
-     * exceeds event is whenever a message is not acknowledged within
-     * ack_deadline. Note that ack_deadline is initially
-     * Subscription.ackDeadlineSeconds, but may get extended automatically by the
-     * client library. Upon the first delivery of a given message,
-     * `delivery_attempt` will have a value of 1. The value is calculated at best
-     * effort and is approximate. If a DeadLetterPolicy is not set on the
-     * subscription, this will be 0.
-     *
-     * @param int $deliveryAttempt
-     */
-    public function setDeliveryAttempt($deliveryAttempt)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getDeliveryAttempt()
-    {
-    }
-    /**
-     * Optional. The message.
-     *
-     * @param PubsubMessage $message
-     */
-    public function setMessage(PubsubMessage $message)
-    {
-    }
-    /**
-     * @return PubsubMessage
-     */
-    public function getMessage()
+    class Google_Service_Pubsub_ReceivedMessage extends \Google\Service\Pubsub\ReceivedMessage
     {
     }
 }

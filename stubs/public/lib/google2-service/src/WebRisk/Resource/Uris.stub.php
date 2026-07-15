@@ -21,34 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WebRisk\Resource;
-
-/**
- * The "uris" collection of methods.
- * Typical usage is:
- *  <code>
- *   $webriskService = new Google\Service\WebRisk(...);
- *   $uris = $webriskService->uris;
- *  </code>
- */
-class Uris extends \Google\Service\Resource
-{
+namespace Google\Service\WebRisk\Resource {
+    use Google\Service\WebRisk\GoogleCloudWebriskV1SearchUrisResponse;
     /**
-     * This method is used to check whether a URI is on a given threatList. Multiple
-     * threatLists may be searched in a single query. The response will list all
-     * requested threatLists the URI was found to match. If the URI is not found on
-     * any of the requested ThreatList an empty response will be returned.
-     * (uris.search)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string threatTypes Required. The ThreatLists to search in.
-     * Multiple ThreatLists may be specified.
-     * @opt_param string uri Required. The URI to be checked for matches.
-     * @return GoogleCloudWebriskV1SearchUrisResponse
-     * @throws \Google\Service\Exception
+     * The "uris" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $webriskService = new Google\Service\WebRisk(...);
+     *   $uris = $webriskService->uris;
+     *  </code>
      */
-    public function search($optParams = [])
+    class Uris extends \Google\Service\Resource
+    {
+        /**
+         * This method is used to check whether a URI is on a given threatList. Multiple
+         * threatLists may be searched in a single query. The response will list all
+         * requested threatLists the URI was found to match. If the URI is not found on
+         * any of the requested ThreatList an empty response will be returned.
+         * (uris.search)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string threatTypes Required. The ThreatLists to search in.
+         * Multiple ThreatLists may be specified.
+         * @opt_param string uri Required. The URI to be checked for matches.
+         * @return GoogleCloudWebriskV1SearchUrisResponse
+         * @throws \Google\Service\Exception
+         */
+        public function search($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\WebRisk\Resource\Uris registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_WebRisk_Resource_Uris extends \Google\Service\WebRisk\Resource\Uris
     {
     }
 }

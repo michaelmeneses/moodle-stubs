@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class CidrBlock extends \Google\Model
-{
-    /**
-     * cidr_block must be specified in CIDR notation.
-     *
-     * @var string
-     */
-    public $cidrBlock;
-    /**
-     * display_name is an optional field for users to identify CIDR blocks.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * cidr_block must be specified in CIDR notation.
-     *
-     * @param string $cidrBlock
-     */
-    public function setCidrBlock($cidrBlock)
+namespace Google\Service\Container {
+    class CidrBlock extends \Google\Model
     {
+        /**
+         * cidr_block must be specified in CIDR notation.
+         *
+         * @var string
+         */
+        public $cidrBlock;
+        /**
+         * display_name is an optional field for users to identify CIDR blocks.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * cidr_block must be specified in CIDR notation.
+         *
+         * @param string $cidrBlock
+         */
+        public function setCidrBlock($cidrBlock)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCidrBlock()
+        {
+        }
+        /**
+         * display_name is an optional field for users to identify CIDR blocks.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\CidrBlock registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCidrBlock()
-    {
-    }
-    /**
-     * display_name is an optional field for users to identify CIDR blocks.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
+    class Google_Service_Container_CidrBlock extends \Google\Service\Container\CidrBlock
     {
     }
 }

@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1TagTemplate extends \Google\Model
-{
-    public $displayName;
-    protected $fieldsType = GoogleCloudDatacatalogV1beta1TagTemplateField::class;
-    protected $fieldsDataType = 'map';
-    public $name;
-    public function setDisplayName($displayName)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1TagTemplate extends \Google\Model
     {
+        public $displayName;
+        protected $fieldsType = GoogleCloudDatacatalogV1beta1TagTemplateField::class;
+        protected $fieldsDataType = 'map';
+        public $name;
+        public function setDisplayName($displayName)
+        {
+        }
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param GoogleCloudDatacatalogV1beta1TagTemplateField[]
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1TagTemplateField[]
+         */
+        public function getFields()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
     }
-    public function getDisplayName()
-    {
-    }
+}
+namespace {
     /**
-     * @param GoogleCloudDatacatalogV1beta1TagTemplateField[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1TagTemplate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setFields($fields)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1beta1TagTemplateField[]
-     */
-    public function getFields()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1TagTemplate extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1TagTemplate
     {
     }
 }

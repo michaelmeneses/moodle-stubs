@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Chromewebstore;
-
-class Item2 extends \Google\Collection
-{
-    protected $collection_key = 'statusDetail';
-    protected $internal_gapi_mappings = ["itemId" => "item_id"];
-    /**
-     * @var string
-     */
-    public $itemId;
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string[]
-     */
-    public $status;
-    /**
-     * @var string[]
-     */
-    public $statusDetail;
-    /**
-     * @param string
-     */
-    public function setItemId($itemId)
+namespace Google\Service\Chromewebstore {
+    class Item2 extends \Google\Collection
     {
+        protected $collection_key = 'statusDetail';
+        protected $internal_gapi_mappings = ["itemId" => "item_id"];
+        /**
+         * @var string
+         */
+        public $itemId;
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string[]
+         */
+        public $status;
+        /**
+         * @var string[]
+         */
+        public $statusDetail;
+        /**
+         * @param string
+         */
+        public function setItemId($itemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getItemId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setStatusDetail($statusDetail)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getStatusDetail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Chromewebstore\Item2 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItemId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setStatusDetail($statusDetail)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getStatusDetail()
+    class Google_Service_Chromewebstore_Item2 extends \Google\Service\Chromewebstore\Item2
     {
     }
 }

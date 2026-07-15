@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1BatchGetSafetyNetConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'configs';
-    protected $configsType = GoogleFirebaseAppcheckV1SafetyNetConfig::class;
-    protected $configsDataType = 'array';
-    /**
-     * SafetyNetConfigs retrieved.
-     *
-     * @param GoogleFirebaseAppcheckV1SafetyNetConfig[] $configs
-     */
-    public function setConfigs($configs)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1BatchGetSafetyNetConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'configs';
+        protected $configsType = GoogleFirebaseAppcheckV1SafetyNetConfig::class;
+        protected $configsDataType = 'array';
+        /**
+         * SafetyNetConfigs retrieved.
+         *
+         * @param GoogleFirebaseAppcheckV1SafetyNetConfig[] $configs
+         */
+        public function setConfigs($configs)
+        {
+        }
+        /**
+         * @return GoogleFirebaseAppcheckV1SafetyNetConfig[]
+         */
+        public function getConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFirebaseAppcheckV1SafetyNetConfig[]
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1BatchGetSafetyNetConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigs()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1BatchGetSafetyNetConfigsResponse extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1BatchGetSafetyNetConfigsResponse
     {
     }
 }

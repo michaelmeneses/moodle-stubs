@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class ListResourceChangesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * A token to request the next page of resources from the
-     * 'ListResourceChanges' method. The value of an empty string means that there
-     * are no more resources to return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resourceChangesType = ResourceChange::class;
-    protected $resourceChangesDataType = 'array';
-    /**
-     * Unreachable resources, if any.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A token to request the next page of resources from the
-     * 'ListResourceChanges' method. The value of an empty string means that there
-     * are no more resources to return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Config {
+    class ListResourceChangesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * A token to request the next page of resources from the
+         * 'ListResourceChanges' method. The value of an empty string means that there
+         * are no more resources to return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resourceChangesType = ResourceChange::class;
+        protected $resourceChangesDataType = 'array';
+        /**
+         * Unreachable resources, if any.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A token to request the next page of resources from the
+         * 'ListResourceChanges' method. The value of an empty string means that there
+         * are no more resources to return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of ResourceChanges.
+         *
+         * @param ResourceChange[] $resourceChanges
+         */
+        public function setResourceChanges($resourceChanges)
+        {
+        }
+        /**
+         * @return ResourceChange[]
+         */
+        public function getResourceChanges()
+        {
+        }
+        /**
+         * Unreachable resources, if any.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Config\ListResourceChangesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of ResourceChanges.
-     *
-     * @param ResourceChange[] $resourceChanges
-     */
-    public function setResourceChanges($resourceChanges)
-    {
-    }
-    /**
-     * @return ResourceChange[]
-     */
-    public function getResourceChanges()
-    {
-    }
-    /**
-     * Unreachable resources, if any.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Config_ListResourceChangesResponse extends \Google\Service\Config\ListResourceChangesResponse
     {
     }
 }

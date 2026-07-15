@@ -8,6 +8,7 @@
  */
 namespace Aws\S3Vectors;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon S3 Vectors** service.
  * @method \Aws\Result createIndex(array $args = [])

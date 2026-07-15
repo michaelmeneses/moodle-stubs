@@ -21,238 +21,247 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class AnnotateImageResponse extends \Google\Collection
-{
-    protected $collection_key = 'textAnnotations';
-    protected $contextType = ImageAnnotationContext::class;
-    protected $contextDataType = '';
-    protected $cropHintsAnnotationType = CropHintsAnnotation::class;
-    protected $cropHintsAnnotationDataType = '';
-    protected $errorType = Status::class;
-    protected $errorDataType = '';
-    protected $faceAnnotationsType = FaceAnnotation::class;
-    protected $faceAnnotationsDataType = 'array';
-    protected $fullTextAnnotationType = TextAnnotation::class;
-    protected $fullTextAnnotationDataType = '';
-    protected $imagePropertiesAnnotationType = ImageProperties::class;
-    protected $imagePropertiesAnnotationDataType = '';
-    protected $labelAnnotationsType = EntityAnnotation::class;
-    protected $labelAnnotationsDataType = 'array';
-    protected $landmarkAnnotationsType = EntityAnnotation::class;
-    protected $landmarkAnnotationsDataType = 'array';
-    protected $localizedObjectAnnotationsType = LocalizedObjectAnnotation::class;
-    protected $localizedObjectAnnotationsDataType = 'array';
-    protected $logoAnnotationsType = EntityAnnotation::class;
-    protected $logoAnnotationsDataType = 'array';
-    protected $productSearchResultsType = ProductSearchResults::class;
-    protected $productSearchResultsDataType = '';
-    protected $safeSearchAnnotationType = SafeSearchAnnotation::class;
-    protected $safeSearchAnnotationDataType = '';
-    protected $textAnnotationsType = EntityAnnotation::class;
-    protected $textAnnotationsDataType = 'array';
-    protected $webDetectionType = WebDetection::class;
-    protected $webDetectionDataType = '';
-    /**
-     * If present, contextual information is needed to understand where this image
-     * comes from.
-     *
-     * @param ImageAnnotationContext $context
-     */
-    public function setContext(ImageAnnotationContext $context)
+namespace Google\Service\Vision {
+    class AnnotateImageResponse extends \Google\Collection
     {
+        protected $collection_key = 'textAnnotations';
+        protected $contextType = ImageAnnotationContext::class;
+        protected $contextDataType = '';
+        protected $cropHintsAnnotationType = CropHintsAnnotation::class;
+        protected $cropHintsAnnotationDataType = '';
+        protected $errorType = Status::class;
+        protected $errorDataType = '';
+        protected $faceAnnotationsType = FaceAnnotation::class;
+        protected $faceAnnotationsDataType = 'array';
+        protected $fullTextAnnotationType = TextAnnotation::class;
+        protected $fullTextAnnotationDataType = '';
+        protected $imagePropertiesAnnotationType = ImageProperties::class;
+        protected $imagePropertiesAnnotationDataType = '';
+        protected $labelAnnotationsType = EntityAnnotation::class;
+        protected $labelAnnotationsDataType = 'array';
+        protected $landmarkAnnotationsType = EntityAnnotation::class;
+        protected $landmarkAnnotationsDataType = 'array';
+        protected $localizedObjectAnnotationsType = LocalizedObjectAnnotation::class;
+        protected $localizedObjectAnnotationsDataType = 'array';
+        protected $logoAnnotationsType = EntityAnnotation::class;
+        protected $logoAnnotationsDataType = 'array';
+        protected $productSearchResultsType = ProductSearchResults::class;
+        protected $productSearchResultsDataType = '';
+        protected $safeSearchAnnotationType = SafeSearchAnnotation::class;
+        protected $safeSearchAnnotationDataType = '';
+        protected $textAnnotationsType = EntityAnnotation::class;
+        protected $textAnnotationsDataType = 'array';
+        protected $webDetectionType = WebDetection::class;
+        protected $webDetectionDataType = '';
+        /**
+         * If present, contextual information is needed to understand where this image
+         * comes from.
+         *
+         * @param ImageAnnotationContext $context
+         */
+        public function setContext(ImageAnnotationContext $context)
+        {
+        }
+        /**
+         * @return ImageAnnotationContext
+         */
+        public function getContext()
+        {
+        }
+        /**
+         * If present, crop hints have completed successfully.
+         *
+         * @param CropHintsAnnotation $cropHintsAnnotation
+         */
+        public function setCropHintsAnnotation(CropHintsAnnotation $cropHintsAnnotation)
+        {
+        }
+        /**
+         * @return CropHintsAnnotation
+         */
+        public function getCropHintsAnnotation()
+        {
+        }
+        /**
+         * If set, represents the error message for the operation. Note that filled-in
+         * image annotations are guaranteed to be correct, even when `error` is set.
+         *
+         * @param Status $error
+         */
+        public function setError(Status $error)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getError()
+        {
+        }
+        /**
+         * If present, face detection has completed successfully.
+         *
+         * @param FaceAnnotation[] $faceAnnotations
+         */
+        public function setFaceAnnotations($faceAnnotations)
+        {
+        }
+        /**
+         * @return FaceAnnotation[]
+         */
+        public function getFaceAnnotations()
+        {
+        }
+        /**
+         * If present, text (OCR) detection or document (OCR) text detection has
+         * completed successfully. This annotation provides the structural hierarchy
+         * for the OCR detected text.
+         *
+         * @param TextAnnotation $fullTextAnnotation
+         */
+        public function setFullTextAnnotation(TextAnnotation $fullTextAnnotation)
+        {
+        }
+        /**
+         * @return TextAnnotation
+         */
+        public function getFullTextAnnotation()
+        {
+        }
+        /**
+         * If present, image properties were extracted successfully.
+         *
+         * @param ImageProperties $imagePropertiesAnnotation
+         */
+        public function setImagePropertiesAnnotation(ImageProperties $imagePropertiesAnnotation)
+        {
+        }
+        /**
+         * @return ImageProperties
+         */
+        public function getImagePropertiesAnnotation()
+        {
+        }
+        /**
+         * If present, label detection has completed successfully.
+         *
+         * @param EntityAnnotation[] $labelAnnotations
+         */
+        public function setLabelAnnotations($labelAnnotations)
+        {
+        }
+        /**
+         * @return EntityAnnotation[]
+         */
+        public function getLabelAnnotations()
+        {
+        }
+        /**
+         * If present, landmark detection has completed successfully.
+         *
+         * @param EntityAnnotation[] $landmarkAnnotations
+         */
+        public function setLandmarkAnnotations($landmarkAnnotations)
+        {
+        }
+        /**
+         * @return EntityAnnotation[]
+         */
+        public function getLandmarkAnnotations()
+        {
+        }
+        /**
+         * If present, localized object detection has completed successfully. This
+         * will be sorted descending by confidence score.
+         *
+         * @param LocalizedObjectAnnotation[] $localizedObjectAnnotations
+         */
+        public function setLocalizedObjectAnnotations($localizedObjectAnnotations)
+        {
+        }
+        /**
+         * @return LocalizedObjectAnnotation[]
+         */
+        public function getLocalizedObjectAnnotations()
+        {
+        }
+        /**
+         * If present, logo detection has completed successfully.
+         *
+         * @param EntityAnnotation[] $logoAnnotations
+         */
+        public function setLogoAnnotations($logoAnnotations)
+        {
+        }
+        /**
+         * @return EntityAnnotation[]
+         */
+        public function getLogoAnnotations()
+        {
+        }
+        /**
+         * If present, product search has completed successfully.
+         *
+         * @param ProductSearchResults $productSearchResults
+         */
+        public function setProductSearchResults(ProductSearchResults $productSearchResults)
+        {
+        }
+        /**
+         * @return ProductSearchResults
+         */
+        public function getProductSearchResults()
+        {
+        }
+        /**
+         * If present, safe-search annotation has completed successfully.
+         *
+         * @param SafeSearchAnnotation $safeSearchAnnotation
+         */
+        public function setSafeSearchAnnotation(SafeSearchAnnotation $safeSearchAnnotation)
+        {
+        }
+        /**
+         * @return SafeSearchAnnotation
+         */
+        public function getSafeSearchAnnotation()
+        {
+        }
+        /**
+         * If present, text (OCR) detection has completed successfully.
+         *
+         * @param EntityAnnotation[] $textAnnotations
+         */
+        public function setTextAnnotations($textAnnotations)
+        {
+        }
+        /**
+         * @return EntityAnnotation[]
+         */
+        public function getTextAnnotations()
+        {
+        }
+        /**
+         * If present, web detection has completed successfully.
+         *
+         * @param WebDetection $webDetection
+         */
+        public function setWebDetection(WebDetection $webDetection)
+        {
+        }
+        /**
+         * @return WebDetection
+         */
+        public function getWebDetection()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ImageAnnotationContext
+     * Runtime class alias of \Google\Service\Vision\AnnotateImageResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContext()
-    {
-    }
-    /**
-     * If present, crop hints have completed successfully.
-     *
-     * @param CropHintsAnnotation $cropHintsAnnotation
-     */
-    public function setCropHintsAnnotation(CropHintsAnnotation $cropHintsAnnotation)
-    {
-    }
-    /**
-     * @return CropHintsAnnotation
-     */
-    public function getCropHintsAnnotation()
-    {
-    }
-    /**
-     * If set, represents the error message for the operation. Note that filled-in
-     * image annotations are guaranteed to be correct, even when `error` is set.
-     *
-     * @param Status $error
-     */
-    public function setError(Status $error)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getError()
-    {
-    }
-    /**
-     * If present, face detection has completed successfully.
-     *
-     * @param FaceAnnotation[] $faceAnnotations
-     */
-    public function setFaceAnnotations($faceAnnotations)
-    {
-    }
-    /**
-     * @return FaceAnnotation[]
-     */
-    public function getFaceAnnotations()
-    {
-    }
-    /**
-     * If present, text (OCR) detection or document (OCR) text detection has
-     * completed successfully. This annotation provides the structural hierarchy
-     * for the OCR detected text.
-     *
-     * @param TextAnnotation $fullTextAnnotation
-     */
-    public function setFullTextAnnotation(TextAnnotation $fullTextAnnotation)
-    {
-    }
-    /**
-     * @return TextAnnotation
-     */
-    public function getFullTextAnnotation()
-    {
-    }
-    /**
-     * If present, image properties were extracted successfully.
-     *
-     * @param ImageProperties $imagePropertiesAnnotation
-     */
-    public function setImagePropertiesAnnotation(ImageProperties $imagePropertiesAnnotation)
-    {
-    }
-    /**
-     * @return ImageProperties
-     */
-    public function getImagePropertiesAnnotation()
-    {
-    }
-    /**
-     * If present, label detection has completed successfully.
-     *
-     * @param EntityAnnotation[] $labelAnnotations
-     */
-    public function setLabelAnnotations($labelAnnotations)
-    {
-    }
-    /**
-     * @return EntityAnnotation[]
-     */
-    public function getLabelAnnotations()
-    {
-    }
-    /**
-     * If present, landmark detection has completed successfully.
-     *
-     * @param EntityAnnotation[] $landmarkAnnotations
-     */
-    public function setLandmarkAnnotations($landmarkAnnotations)
-    {
-    }
-    /**
-     * @return EntityAnnotation[]
-     */
-    public function getLandmarkAnnotations()
-    {
-    }
-    /**
-     * If present, localized object detection has completed successfully. This
-     * will be sorted descending by confidence score.
-     *
-     * @param LocalizedObjectAnnotation[] $localizedObjectAnnotations
-     */
-    public function setLocalizedObjectAnnotations($localizedObjectAnnotations)
-    {
-    }
-    /**
-     * @return LocalizedObjectAnnotation[]
-     */
-    public function getLocalizedObjectAnnotations()
-    {
-    }
-    /**
-     * If present, logo detection has completed successfully.
-     *
-     * @param EntityAnnotation[] $logoAnnotations
-     */
-    public function setLogoAnnotations($logoAnnotations)
-    {
-    }
-    /**
-     * @return EntityAnnotation[]
-     */
-    public function getLogoAnnotations()
-    {
-    }
-    /**
-     * If present, product search has completed successfully.
-     *
-     * @param ProductSearchResults $productSearchResults
-     */
-    public function setProductSearchResults(ProductSearchResults $productSearchResults)
-    {
-    }
-    /**
-     * @return ProductSearchResults
-     */
-    public function getProductSearchResults()
-    {
-    }
-    /**
-     * If present, safe-search annotation has completed successfully.
-     *
-     * @param SafeSearchAnnotation $safeSearchAnnotation
-     */
-    public function setSafeSearchAnnotation(SafeSearchAnnotation $safeSearchAnnotation)
-    {
-    }
-    /**
-     * @return SafeSearchAnnotation
-     */
-    public function getSafeSearchAnnotation()
-    {
-    }
-    /**
-     * If present, text (OCR) detection has completed successfully.
-     *
-     * @param EntityAnnotation[] $textAnnotations
-     */
-    public function setTextAnnotations($textAnnotations)
-    {
-    }
-    /**
-     * @return EntityAnnotation[]
-     */
-    public function getTextAnnotations()
-    {
-    }
-    /**
-     * If present, web detection has completed successfully.
-     *
-     * @param WebDetection $webDetection
-     */
-    public function setWebDetection(WebDetection $webDetection)
-    {
-    }
-    /**
-     * @return WebDetection
-     */
-    public function getWebDetection()
+    class Google_Service_Vision_AnnotateImageResponse extends \Google\Service\Vision\AnnotateImageResponse
     {
     }
 }

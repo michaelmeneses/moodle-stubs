@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3SpeechToTextSettings extends \Google\Model
-{
-    /**
-     * Whether to use speech adaptation for speech recognition.
-     *
-     * @var bool
-     */
-    public $enableSpeechAdaptation;
-    /**
-     * Whether to use speech adaptation for speech recognition.
-     *
-     * @param bool $enableSpeechAdaptation
-     */
-    public function setEnableSpeechAdaptation($enableSpeechAdaptation)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3SpeechToTextSettings extends \Google\Model
     {
+        /**
+         * Whether to use speech adaptation for speech recognition.
+         *
+         * @var bool
+         */
+        public $enableSpeechAdaptation;
+        /**
+         * Whether to use speech adaptation for speech recognition.
+         *
+         * @param bool $enableSpeechAdaptation
+         */
+        public function setEnableSpeechAdaptation($enableSpeechAdaptation)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableSpeechAdaptation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3SpeechToTextSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableSpeechAdaptation()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3SpeechToTextSettings extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3SpeechToTextSettings
     {
     }
 }

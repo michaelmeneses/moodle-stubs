@@ -21,35 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeUXReport;
-
-class TimeseriesPercentiles extends \Google\Collection
-{
-    protected $collection_key = 'p75s';
-    /**
-     * 75% of users experienced the given metric at or below this value. The
-     * length of this list of densities is equal to the length of the
-     * CollectionPeriods field in the HistoryRecord message, which describes when
-     * the density was observed in the field.
-     *
-     * @var array[]
-     */
-    public $p75s;
-    /**
-     * 75% of users experienced the given metric at or below this value. The
-     * length of this list of densities is equal to the length of the
-     * CollectionPeriods field in the HistoryRecord message, which describes when
-     * the density was observed in the field.
-     *
-     * @param array[] $p75s
-     */
-    public function setP75s($p75s)
+namespace Google\Service\ChromeUXReport {
+    class TimeseriesPercentiles extends \Google\Collection
     {
+        protected $collection_key = 'p75s';
+        /**
+         * 75% of users experienced the given metric at or below this value. The
+         * length of this list of densities is equal to the length of the
+         * CollectionPeriods field in the HistoryRecord message, which describes when
+         * the density was observed in the field.
+         *
+         * @var array[]
+         */
+        public $p75s;
+        /**
+         * 75% of users experienced the given metric at or below this value. The
+         * length of this list of densities is equal to the length of the
+         * CollectionPeriods field in the HistoryRecord message, which describes when
+         * the density was observed in the field.
+         *
+         * @param array[] $p75s
+         */
+        public function setP75s($p75s)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getP75s()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\ChromeUXReport\TimeseriesPercentiles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getP75s()
+    class Google_Service_ChromeUXReport_TimeseriesPercentiles extends \Google\Service\ChromeUXReport\TimeseriesPercentiles
     {
     }
 }

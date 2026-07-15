@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusStats extends \Google\Model
-{
-    protected $dimensionsType = EnterpriseCrmEventbusStatsDimensions::class;
-    protected $dimensionsDataType = '';
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusStats extends \Google\Model
+    {
+        protected $dimensionsType = EnterpriseCrmEventbusStatsDimensions::class;
+        protected $dimensionsDataType = '';
+        /**
+         * Average duration in seconds.
+         *
+         * @var 
+         */
+        public $durationInSeconds;
+        /**
+         * Average error rate.
+         *
+         * @var 
+         */
+        public $errorRate;
+        /**
+         * Queries per second.
+         *
+         * @var 
+         */
+        public $qps;
+        /**
+         * Average warning rate.
+         *
+         * @var 
+         */
+        public $warningRate;
+        /**
+         * Dimensions that these stats have been aggregated on.
+         *
+         * @param EnterpriseCrmEventbusStatsDimensions $dimensions
+         */
+        public function setDimensions(EnterpriseCrmEventbusStatsDimensions $dimensions)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusStatsDimensions
+         */
+        public function getDimensions()
+        {
+        }
+        public function setDurationInSeconds($durationInSeconds)
+        {
+        }
+        public function getDurationInSeconds()
+        {
+        }
+        public function setErrorRate($errorRate)
+        {
+        }
+        public function getErrorRate()
+        {
+        }
+        public function setQps($qps)
+        {
+        }
+        public function getQps()
+        {
+        }
+        public function setWarningRate($warningRate)
+        {
+        }
+        public function getWarningRate()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Average duration in seconds.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $durationInSeconds;
-    /**
-     * Average error rate.
-     *
-     * @var 
-     */
-    public $errorRate;
-    /**
-     * Queries per second.
-     *
-     * @var 
-     */
-    public $qps;
-    /**
-     * Average warning rate.
-     *
-     * @var 
-     */
-    public $warningRate;
-    /**
-     * Dimensions that these stats have been aggregated on.
-     *
-     * @param EnterpriseCrmEventbusStatsDimensions $dimensions
-     */
-    public function setDimensions(EnterpriseCrmEventbusStatsDimensions $dimensions)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusStatsDimensions
-     */
-    public function getDimensions()
-    {
-    }
-    public function setDurationInSeconds($durationInSeconds)
-    {
-    }
-    public function getDurationInSeconds()
-    {
-    }
-    public function setErrorRate($errorRate)
-    {
-    }
-    public function getErrorRate()
-    {
-    }
-    public function setQps($qps)
-    {
-    }
-    public function getQps()
-    {
-    }
-    public function setWarningRate($warningRate)
-    {
-    }
-    public function getWarningRate()
+    class Google_Service_Integrations_EnterpriseCrmEventbusStats extends \Google\Service\Integrations\EnterpriseCrmEventbusStats
     {
     }
 }

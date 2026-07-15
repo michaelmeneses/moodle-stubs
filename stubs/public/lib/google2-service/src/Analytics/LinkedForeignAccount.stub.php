@@ -21,216 +21,225 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class LinkedForeignAccount extends \Google\Model
-{
-    /**
-     * Account ID to which this linked foreign account belongs.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * Boolean indicating whether this is eligible for search.
-     *
-     * @var bool
-     */
-    public $eligibleForSearch;
-    /**
-     * Entity ad account link ID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Internal ID for the web property to which this linked foreign account
-     * belongs.
-     *
-     * @var string
-     */
-    public $internalWebPropertyId;
-    /**
-     * Resource type for linked foreign account.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The foreign account ID. For example the an Google Ads `linkedAccountId` has
-     * the following format XXX-XXX-XXXX.
-     *
-     * @var string
-     */
-    public $linkedAccountId;
-    /**
-     * Remarketing audience ID to which this linked foreign account belongs.
-     *
-     * @var string
-     */
-    public $remarketingAudienceId;
-    /**
-     * The status of this foreign account link.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * The type of the foreign account. For example, `ADWORDS_LINKS`, `DBM_LINKS`,
-     * `MCC_LINKS` or `OPTIMIZE`.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Web property ID of the form UA-XXXXX-YY to which this linked foreign
-     * account belongs.
-     *
-     * @var string
-     */
-    public $webPropertyId;
-    /**
-     * Account ID to which this linked foreign account belongs.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Analytics {
+    class LinkedForeignAccount extends \Google\Model
     {
+        /**
+         * Account ID to which this linked foreign account belongs.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * Boolean indicating whether this is eligible for search.
+         *
+         * @var bool
+         */
+        public $eligibleForSearch;
+        /**
+         * Entity ad account link ID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Internal ID for the web property to which this linked foreign account
+         * belongs.
+         *
+         * @var string
+         */
+        public $internalWebPropertyId;
+        /**
+         * Resource type for linked foreign account.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The foreign account ID. For example the an Google Ads `linkedAccountId` has
+         * the following format XXX-XXX-XXXX.
+         *
+         * @var string
+         */
+        public $linkedAccountId;
+        /**
+         * Remarketing audience ID to which this linked foreign account belongs.
+         *
+         * @var string
+         */
+        public $remarketingAudienceId;
+        /**
+         * The status of this foreign account link.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * The type of the foreign account. For example, `ADWORDS_LINKS`, `DBM_LINKS`,
+         * `MCC_LINKS` or `OPTIMIZE`.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Web property ID of the form UA-XXXXX-YY to which this linked foreign
+         * account belongs.
+         *
+         * @var string
+         */
+        public $webPropertyId;
+        /**
+         * Account ID to which this linked foreign account belongs.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * Boolean indicating whether this is eligible for search.
+         *
+         * @param bool $eligibleForSearch
+         */
+        public function setEligibleForSearch($eligibleForSearch)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEligibleForSearch()
+        {
+        }
+        /**
+         * Entity ad account link ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Internal ID for the web property to which this linked foreign account
+         * belongs.
+         *
+         * @param string $internalWebPropertyId
+         */
+        public function setInternalWebPropertyId($internalWebPropertyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInternalWebPropertyId()
+        {
+        }
+        /**
+         * Resource type for linked foreign account.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The foreign account ID. For example the an Google Ads `linkedAccountId` has
+         * the following format XXX-XXX-XXXX.
+         *
+         * @param string $linkedAccountId
+         */
+        public function setLinkedAccountId($linkedAccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLinkedAccountId()
+        {
+        }
+        /**
+         * Remarketing audience ID to which this linked foreign account belongs.
+         *
+         * @param string $remarketingAudienceId
+         */
+        public function setRemarketingAudienceId($remarketingAudienceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemarketingAudienceId()
+        {
+        }
+        /**
+         * The status of this foreign account link.
+         *
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * The type of the foreign account. For example, `ADWORDS_LINKS`, `DBM_LINKS`,
+         * `MCC_LINKS` or `OPTIMIZE`.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Web property ID of the form UA-XXXXX-YY to which this linked foreign
+         * account belongs.
+         *
+         * @param string $webPropertyId
+         */
+        public function setWebPropertyId($webPropertyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebPropertyId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\LinkedForeignAccount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * Boolean indicating whether this is eligible for search.
-     *
-     * @param bool $eligibleForSearch
-     */
-    public function setEligibleForSearch($eligibleForSearch)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEligibleForSearch()
-    {
-    }
-    /**
-     * Entity ad account link ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Internal ID for the web property to which this linked foreign account
-     * belongs.
-     *
-     * @param string $internalWebPropertyId
-     */
-    public function setInternalWebPropertyId($internalWebPropertyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInternalWebPropertyId()
-    {
-    }
-    /**
-     * Resource type for linked foreign account.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The foreign account ID. For example the an Google Ads `linkedAccountId` has
-     * the following format XXX-XXX-XXXX.
-     *
-     * @param string $linkedAccountId
-     */
-    public function setLinkedAccountId($linkedAccountId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLinkedAccountId()
-    {
-    }
-    /**
-     * Remarketing audience ID to which this linked foreign account belongs.
-     *
-     * @param string $remarketingAudienceId
-     */
-    public function setRemarketingAudienceId($remarketingAudienceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRemarketingAudienceId()
-    {
-    }
-    /**
-     * The status of this foreign account link.
-     *
-     * @param string $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * The type of the foreign account. For example, `ADWORDS_LINKS`, `DBM_LINKS`,
-     * `MCC_LINKS` or `OPTIMIZE`.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Web property ID of the form UA-XXXXX-YY to which this linked foreign
-     * account belongs.
-     *
-     * @param string $webPropertyId
-     */
-    public function setWebPropertyId($webPropertyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebPropertyId()
+    class Google_Service_Analytics_LinkedForeignAccount extends \Google\Service\Analytics\LinkedForeignAccount
     {
     }
 }

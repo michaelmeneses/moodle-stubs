@@ -21,32 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement\Resource;
-
-/**
- * The "applications" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidmanagementService = new Google\Service\AndroidManagement(...);
- *   $applications = $androidmanagementService->enterprises_applications;
- *  </code>
- */
-class EnterprisesApplications extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidManagement\Resource {
+    use Google\Service\AndroidManagement\Application;
     /**
-     * Gets info about an application. (applications.get)
-     *
-     * @param string $name The name of the application in the form
-     * enterprises/{enterpriseId}/applications/{package_name}.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string languageCode The preferred language for localized
-     * application info, as a BCP47 tag (e.g. "en-US", "de"). If not specified the
-     * default language of the application will be used.
-     * @return Application
-     * @throws \Google\Service\Exception
+     * The "applications" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidmanagementService = new Google\Service\AndroidManagement(...);
+     *   $applications = $androidmanagementService->enterprises_applications;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class EnterprisesApplications extends \Google\Service\Resource
+    {
+        /**
+         * Gets info about an application. (applications.get)
+         *
+         * @param string $name The name of the application in the form
+         * enterprises/{enterpriseId}/applications/{package_name}.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string languageCode The preferred language for localized
+         * application info, as a BCP47 tag (e.g. "en-US", "de"). If not specified the
+         * default language of the application will be used.
+         * @return Application
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AndroidManagement\Resource\EnterprisesApplications registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AndroidManagement_Resource_EnterprisesApplications extends \Google\Service\AndroidManagement\Resource\EnterprisesApplications
     {
     }
 }

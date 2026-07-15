@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class GitFileSource extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $bitbucketServerConfig;
-    /**
-     * @var string
-     */
-    public $githubEnterpriseConfig;
-    /**
-     * @var string
-     */
-    public $path;
-    /**
-     * @var string
-     */
-    public $repoType;
-    /**
-     * @var string
-     */
-    public $repository;
-    /**
-     * @var string
-     */
-    public $revision;
-    /**
-     * @var string
-     */
-    public $uri;
-    /**
-     * @param string
-     */
-    public function setBitbucketServerConfig($bitbucketServerConfig)
+namespace Google\Service\CloudBuild {
+    class GitFileSource extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $bitbucketServerConfig;
+        /**
+         * @var string
+         */
+        public $githubEnterpriseConfig;
+        /**
+         * @var string
+         */
+        public $path;
+        /**
+         * @var string
+         */
+        public $repoType;
+        /**
+         * @var string
+         */
+        public $repository;
+        /**
+         * @var string
+         */
+        public $revision;
+        /**
+         * @var string
+         */
+        public $uri;
+        /**
+         * @param string
+         */
+        public function setBitbucketServerConfig($bitbucketServerConfig)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBitbucketServerConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGithubEnterpriseConfig($githubEnterpriseConfig)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGithubEnterpriseConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRepoType($repoType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepoType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRepository($repository)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepository()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRevision($revision)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevision()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\GitFileSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBitbucketServerConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGithubEnterpriseConfig($githubEnterpriseConfig)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGithubEnterpriseConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRepoType($repoType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRepoType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRepository($repository)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRepository()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRevision($revision)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevision()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_CloudBuild_GitFileSource extends \Google\Service\CloudBuild\GitFileSource
     {
     }
 }

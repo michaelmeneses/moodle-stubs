@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIot;
-
-class BindDeviceToGatewayRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $deviceId;
-    /**
-     * @var string
-     */
-    public $gatewayId;
-    /**
-     * @param string
-     */
-    public function setDeviceId($deviceId)
+namespace Google\Service\CloudIot {
+    class BindDeviceToGatewayRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $deviceId;
+        /**
+         * @var string
+         */
+        public $gatewayId;
+        /**
+         * @param string
+         */
+        public function setDeviceId($deviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGatewayId($gatewayId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGatewayId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIot\BindDeviceToGatewayRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGatewayId($gatewayId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGatewayId()
+    class Google_Service_CloudIot_BindDeviceToGatewayRequest extends \Google\Service\CloudIot\BindDeviceToGatewayRequest
     {
     }
 }

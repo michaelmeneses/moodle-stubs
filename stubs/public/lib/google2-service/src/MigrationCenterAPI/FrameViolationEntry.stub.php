@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class FrameViolationEntry extends \Google\Model
-{
-    /**
-     * The field of the original frame where the violation occurred.
-     *
-     * @var string
-     */
-    public $field;
-    /**
-     * A message describing the violation.
-     *
-     * @var string
-     */
-    public $violation;
-    /**
-     * The field of the original frame where the violation occurred.
-     *
-     * @param string $field
-     */
-    public function setField($field)
+namespace Google\Service\MigrationCenterAPI {
+    class FrameViolationEntry extends \Google\Model
     {
+        /**
+         * The field of the original frame where the violation occurred.
+         *
+         * @var string
+         */
+        public $field;
+        /**
+         * A message describing the violation.
+         *
+         * @var string
+         */
+        public $violation;
+        /**
+         * The field of the original frame where the violation occurred.
+         *
+         * @param string $field
+         */
+        public function setField($field)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getField()
+        {
+        }
+        /**
+         * A message describing the violation.
+         *
+         * @param string $violation
+         */
+        public function setViolation($violation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getViolation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\FrameViolationEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getField()
-    {
-    }
-    /**
-     * A message describing the violation.
-     *
-     * @param string $violation
-     */
-    public function setViolation($violation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getViolation()
+    class Google_Service_MigrationCenterAPI_FrameViolationEntry extends \Google\Service\MigrationCenterAPI\FrameViolationEntry
     {
     }
 }

@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class CsvRow extends \Google\Collection
-{
-    protected $collection_key = 'entries';
-    /**
-     * The data entries in a CSV file row, as a string array rather than a single
-     * comma-separated string.
-     *
-     * @var string[]
-     */
-    public $entries;
-    /**
-     * The data entries in a CSV file row, as a string array rather than a single
-     * comma-separated string.
-     *
-     * @param string[] $entries
-     */
-    public function setEntries($entries)
+namespace Google\Service\AlertCenter {
+    class CsvRow extends \Google\Collection
     {
+        protected $collection_key = 'entries';
+        /**
+         * The data entries in a CSV file row, as a string array rather than a single
+         * comma-separated string.
+         *
+         * @var string[]
+         */
+        public $entries;
+        /**
+         * The data entries in a CSV file row, as a string array rather than a single
+         * comma-separated string.
+         *
+         * @param string[] $entries
+         */
+        public function setEntries($entries)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AlertCenter\CsvRow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntries()
+    class Google_Service_AlertCenter_CsvRow extends \Google\Service\AlertCenter\CsvRow
     {
     }
 }

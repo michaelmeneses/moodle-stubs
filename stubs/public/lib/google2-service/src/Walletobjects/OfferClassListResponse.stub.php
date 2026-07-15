@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class OfferClassListResponse extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    protected $paginationType = Pagination::class;
-    protected $paginationDataType = '';
-    protected $resourcesType = OfferClass::class;
-    protected $resourcesDataType = 'array';
-    /**
-     * Pagination of the response.
-     *
-     * @param Pagination $pagination
-     */
-    public function setPagination(Pagination $pagination)
+namespace Google\Service\Walletobjects {
+    class OfferClassListResponse extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        protected $paginationType = Pagination::class;
+        protected $paginationDataType = '';
+        protected $resourcesType = OfferClass::class;
+        protected $resourcesDataType = 'array';
+        /**
+         * Pagination of the response.
+         *
+         * @param Pagination $pagination
+         */
+        public function setPagination(Pagination $pagination)
+        {
+        }
+        /**
+         * @return Pagination
+         */
+        public function getPagination()
+        {
+        }
+        /**
+         * Resources corresponding to the list request.
+         *
+         * @param OfferClass[] $resources
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return OfferClass[]
+         */
+        public function getResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Pagination
+     * Runtime class alias of \Google\Service\Walletobjects\OfferClassListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPagination()
-    {
-    }
-    /**
-     * Resources corresponding to the list request.
-     *
-     * @param OfferClass[] $resources
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return OfferClass[]
-     */
-    public function getResources()
+    class Google_Service_Walletobjects_OfferClassListResponse extends \Google\Service\Walletobjects\OfferClassListResponse
     {
     }
 }

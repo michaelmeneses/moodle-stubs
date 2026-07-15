@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1MapType extends \Google\Model
-{
-    protected $mapKeyTypeType = GoogleCloudDatapipelinesV1FieldType::class;
-    protected $mapKeyTypeDataType = '';
-    protected $mapValueTypeType = GoogleCloudDatapipelinesV1FieldType::class;
-    protected $mapValueTypeDataType = '';
-    /**
-     * @param GoogleCloudDatapipelinesV1FieldType
-     */
-    public function setMapKeyType(GoogleCloudDatapipelinesV1FieldType $mapKeyType)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1MapType extends \Google\Model
     {
+        protected $mapKeyTypeType = GoogleCloudDatapipelinesV1FieldType::class;
+        protected $mapKeyTypeDataType = '';
+        protected $mapValueTypeType = GoogleCloudDatapipelinesV1FieldType::class;
+        protected $mapValueTypeDataType = '';
+        /**
+         * @param GoogleCloudDatapipelinesV1FieldType
+         */
+        public function setMapKeyType(GoogleCloudDatapipelinesV1FieldType $mapKeyType)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1FieldType
+         */
+        public function getMapKeyType()
+        {
+        }
+        /**
+         * @param GoogleCloudDatapipelinesV1FieldType
+         */
+        public function setMapValueType(GoogleCloudDatapipelinesV1FieldType $mapValueType)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1FieldType
+         */
+        public function getMapValueType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatapipelinesV1FieldType
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1MapType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMapKeyType()
-    {
-    }
-    /**
-     * @param GoogleCloudDatapipelinesV1FieldType
-     */
-    public function setMapValueType(GoogleCloudDatapipelinesV1FieldType $mapValueType)
-    {
-    }
-    /**
-     * @return GoogleCloudDatapipelinesV1FieldType
-     */
-    public function getMapValueType()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1MapType extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1MapType
     {
     }
 }

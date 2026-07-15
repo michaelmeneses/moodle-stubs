@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2CloudDlpInspection extends \Google\Model
-{
-    /**
-     * Whether Cloud DLP scanned the complete resource or a sampled subset.
-     *
-     * @var bool
-     */
-    public $fullScan;
-    /**
-     * The type of information (or
-     * *[infoType](https://cloud.google.com/dlp/docs/infotypes-reference)*) found,
-     * for example, `EMAIL_ADDRESS` or `STREET_ADDRESS`.
-     *
-     * @var string
-     */
-    public $infoType;
-    /**
-     * The number of times Cloud DLP found this infoType within this job and
-     * resource.
-     *
-     * @var string
-     */
-    public $infoTypeCount;
-    /**
-     * Name of the inspection job, for example,
-     * `projects/123/locations/europe/dlpJobs/i-8383929`.
-     *
-     * @var string
-     */
-    public $inspectJob;
-    /**
-     * Whether Cloud DLP scanned the complete resource or a sampled subset.
-     *
-     * @param bool $fullScan
-     */
-    public function setFullScan($fullScan)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2CloudDlpInspection extends \Google\Model
     {
+        /**
+         * Whether Cloud DLP scanned the complete resource or a sampled subset.
+         *
+         * @var bool
+         */
+        public $fullScan;
+        /**
+         * The type of information (or
+         * *[infoType](https://cloud.google.com/dlp/docs/infotypes-reference)*) found,
+         * for example, `EMAIL_ADDRESS` or `STREET_ADDRESS`.
+         *
+         * @var string
+         */
+        public $infoType;
+        /**
+         * The number of times Cloud DLP found this infoType within this job and
+         * resource.
+         *
+         * @var string
+         */
+        public $infoTypeCount;
+        /**
+         * Name of the inspection job, for example,
+         * `projects/123/locations/europe/dlpJobs/i-8383929`.
+         *
+         * @var string
+         */
+        public $inspectJob;
+        /**
+         * Whether Cloud DLP scanned the complete resource or a sampled subset.
+         *
+         * @param bool $fullScan
+         */
+        public function setFullScan($fullScan)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFullScan()
+        {
+        }
+        /**
+         * The type of information (or
+         * *[infoType](https://cloud.google.com/dlp/docs/infotypes-reference)*) found,
+         * for example, `EMAIL_ADDRESS` or `STREET_ADDRESS`.
+         *
+         * @param string $infoType
+         */
+        public function setInfoType($infoType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInfoType()
+        {
+        }
+        /**
+         * The number of times Cloud DLP found this infoType within this job and
+         * resource.
+         *
+         * @param string $infoTypeCount
+         */
+        public function setInfoTypeCount($infoTypeCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInfoTypeCount()
+        {
+        }
+        /**
+         * Name of the inspection job, for example,
+         * `projects/123/locations/europe/dlpJobs/i-8383929`.
+         *
+         * @param string $inspectJob
+         */
+        public function setInspectJob($inspectJob)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInspectJob()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2CloudDlpInspection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFullScan()
-    {
-    }
-    /**
-     * The type of information (or
-     * *[infoType](https://cloud.google.com/dlp/docs/infotypes-reference)*) found,
-     * for example, `EMAIL_ADDRESS` or `STREET_ADDRESS`.
-     *
-     * @param string $infoType
-     */
-    public function setInfoType($infoType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInfoType()
-    {
-    }
-    /**
-     * The number of times Cloud DLP found this infoType within this job and
-     * resource.
-     *
-     * @param string $infoTypeCount
-     */
-    public function setInfoTypeCount($infoTypeCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInfoTypeCount()
-    {
-    }
-    /**
-     * Name of the inspection job, for example,
-     * `projects/123/locations/europe/dlpJobs/i-8383929`.
-     *
-     * @param string $inspectJob
-     */
-    public function setInspectJob($inspectJob)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInspectJob()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2CloudDlpInspection extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2CloudDlpInspection
     {
     }
 }

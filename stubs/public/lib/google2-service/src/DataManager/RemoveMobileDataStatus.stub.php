@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class RemoveMobileDataStatus extends \Google\Model
-{
-    /**
-     * The total count of mobile Ids sent in the removal request. Includes all
-     * mobile ids in the request, regardless of whether they were successfully
-     * removed or not.
-     *
-     * @var string
-     */
-    public $mobileIdCount;
-    /**
-     * The total count of audience members sent in the removal request. Includes
-     * all audience members in the request, regardless of whether they were
-     * successfully removed or not.
-     *
-     * @var string
-     */
-    public $recordCount;
-    /**
-     * The total count of mobile Ids sent in the removal request. Includes all
-     * mobile ids in the request, regardless of whether they were successfully
-     * removed or not.
-     *
-     * @param string $mobileIdCount
-     */
-    public function setMobileIdCount($mobileIdCount)
+namespace Google\Service\DataManager {
+    class RemoveMobileDataStatus extends \Google\Model
     {
+        /**
+         * The total count of mobile Ids sent in the removal request. Includes all
+         * mobile ids in the request, regardless of whether they were successfully
+         * removed or not.
+         *
+         * @var string
+         */
+        public $mobileIdCount;
+        /**
+         * The total count of audience members sent in the removal request. Includes
+         * all audience members in the request, regardless of whether they were
+         * successfully removed or not.
+         *
+         * @var string
+         */
+        public $recordCount;
+        /**
+         * The total count of mobile Ids sent in the removal request. Includes all
+         * mobile ids in the request, regardless of whether they were successfully
+         * removed or not.
+         *
+         * @param string $mobileIdCount
+         */
+        public function setMobileIdCount($mobileIdCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMobileIdCount()
+        {
+        }
+        /**
+         * The total count of audience members sent in the removal request. Includes
+         * all audience members in the request, regardless of whether they were
+         * successfully removed or not.
+         *
+         * @param string $recordCount
+         */
+        public function setRecordCount($recordCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecordCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataManager\RemoveMobileDataStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMobileIdCount()
-    {
-    }
-    /**
-     * The total count of audience members sent in the removal request. Includes
-     * all audience members in the request, regardless of whether they were
-     * successfully removed or not.
-     *
-     * @param string $recordCount
-     */
-    public function setRecordCount($recordCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecordCount()
+    class Google_Service_DataManager_RemoveMobileDataStatus extends \Google\Service\DataManager\RemoveMobileDataStatus
     {
     }
 }

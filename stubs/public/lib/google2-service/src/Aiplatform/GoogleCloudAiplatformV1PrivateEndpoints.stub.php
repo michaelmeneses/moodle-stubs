@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PrivateEndpoints extends \Google\Model
-{
-    /**
-     * Output only. Http(s) path to send explain requests.
-     *
-     * @var string
-     */
-    public $explainHttpUri;
-    /**
-     * Output only. Http(s) path to send health check requests.
-     *
-     * @var string
-     */
-    public $healthHttpUri;
-    /**
-     * Output only. Http(s) path to send prediction requests.
-     *
-     * @var string
-     */
-    public $predictHttpUri;
-    /**
-     * Output only. The name of the service attachment resource. Populated if
-     * private service connect is enabled.
-     *
-     * @var string
-     */
-    public $serviceAttachment;
-    /**
-     * Output only. Http(s) path to send explain requests.
-     *
-     * @param string $explainHttpUri
-     */
-    public function setExplainHttpUri($explainHttpUri)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PrivateEndpoints extends \Google\Model
     {
+        /**
+         * Output only. Http(s) path to send explain requests.
+         *
+         * @var string
+         */
+        public $explainHttpUri;
+        /**
+         * Output only. Http(s) path to send health check requests.
+         *
+         * @var string
+         */
+        public $healthHttpUri;
+        /**
+         * Output only. Http(s) path to send prediction requests.
+         *
+         * @var string
+         */
+        public $predictHttpUri;
+        /**
+         * Output only. The name of the service attachment resource. Populated if
+         * private service connect is enabled.
+         *
+         * @var string
+         */
+        public $serviceAttachment;
+        /**
+         * Output only. Http(s) path to send explain requests.
+         *
+         * @param string $explainHttpUri
+         */
+        public function setExplainHttpUri($explainHttpUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExplainHttpUri()
+        {
+        }
+        /**
+         * Output only. Http(s) path to send health check requests.
+         *
+         * @param string $healthHttpUri
+         */
+        public function setHealthHttpUri($healthHttpUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHealthHttpUri()
+        {
+        }
+        /**
+         * Output only. Http(s) path to send prediction requests.
+         *
+         * @param string $predictHttpUri
+         */
+        public function setPredictHttpUri($predictHttpUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPredictHttpUri()
+        {
+        }
+        /**
+         * Output only. The name of the service attachment resource. Populated if
+         * private service connect is enabled.
+         *
+         * @param string $serviceAttachment
+         */
+        public function setServiceAttachment($serviceAttachment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAttachment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PrivateEndpoints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExplainHttpUri()
-    {
-    }
-    /**
-     * Output only. Http(s) path to send health check requests.
-     *
-     * @param string $healthHttpUri
-     */
-    public function setHealthHttpUri($healthHttpUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHealthHttpUri()
-    {
-    }
-    /**
-     * Output only. Http(s) path to send prediction requests.
-     *
-     * @param string $predictHttpUri
-     */
-    public function setPredictHttpUri($predictHttpUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPredictHttpUri()
-    {
-    }
-    /**
-     * Output only. The name of the service attachment resource. Populated if
-     * private service connect is enabled.
-     *
-     * @param string $serviceAttachment
-     */
-    public function setServiceAttachment($serviceAttachment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAttachment()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PrivateEndpoints extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PrivateEndpoints
     {
     }
 }

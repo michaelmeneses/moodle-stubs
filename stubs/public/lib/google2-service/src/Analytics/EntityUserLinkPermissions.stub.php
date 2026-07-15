@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class EntityUserLinkPermissions extends \Google\Collection
-{
-    protected $collection_key = 'local';
-    /**
-     * Effective permissions represent all the permissions that a user has for
-     * this entity. These include any implied permissions (e.g., EDIT implies
-     * VIEW) or inherited permissions from the parent entity. Effective
-     * permissions are read-only.
-     *
-     * @var string[]
-     */
-    public $effective;
-    /**
-     * Permissions that a user has been assigned at this very level. Does not
-     * include any implied or inherited permissions. Local permissions are
-     * modifiable.
-     *
-     * @var string[]
-     */
-    public $local;
-    /**
-     * Effective permissions represent all the permissions that a user has for
-     * this entity. These include any implied permissions (e.g., EDIT implies
-     * VIEW) or inherited permissions from the parent entity. Effective
-     * permissions are read-only.
-     *
-     * @param string[] $effective
-     */
-    public function setEffective($effective)
+namespace Google\Service\Analytics {
+    class EntityUserLinkPermissions extends \Google\Collection
     {
+        protected $collection_key = 'local';
+        /**
+         * Effective permissions represent all the permissions that a user has for
+         * this entity. These include any implied permissions (e.g., EDIT implies
+         * VIEW) or inherited permissions from the parent entity. Effective
+         * permissions are read-only.
+         *
+         * @var string[]
+         */
+        public $effective;
+        /**
+         * Permissions that a user has been assigned at this very level. Does not
+         * include any implied or inherited permissions. Local permissions are
+         * modifiable.
+         *
+         * @var string[]
+         */
+        public $local;
+        /**
+         * Effective permissions represent all the permissions that a user has for
+         * this entity. These include any implied permissions (e.g., EDIT implies
+         * VIEW) or inherited permissions from the parent entity. Effective
+         * permissions are read-only.
+         *
+         * @param string[] $effective
+         */
+        public function setEffective($effective)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEffective()
+        {
+        }
+        /**
+         * Permissions that a user has been assigned at this very level. Does not
+         * include any implied or inherited permissions. Local permissions are
+         * modifiable.
+         *
+         * @param string[] $local
+         */
+        public function setLocal($local)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLocal()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Analytics\EntityUserLinkPermissions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEffective()
-    {
-    }
-    /**
-     * Permissions that a user has been assigned at this very level. Does not
-     * include any implied or inherited permissions. Local permissions are
-     * modifiable.
-     *
-     * @param string[] $local
-     */
-    public function setLocal($local)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLocal()
+    class Google_Service_Analytics_EntityUserLinkPermissions extends \Google\Service\Analytics\EntityUserLinkPermissions
     {
     }
 }

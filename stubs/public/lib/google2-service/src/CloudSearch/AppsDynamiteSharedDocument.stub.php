@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedDocument extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $fileId;
-    protected $justificationType = AppsDynamiteSharedJustification::class;
-    protected $justificationDataType = '';
-    /**
-     * @var string
-     */
-    public $lastModifiedTime;
-    /**
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @var string
-     */
-    public $url;
-    /**
-     * @param string
-     */
-    public function setFileId($fileId)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedDocument extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $fileId;
+        protected $justificationType = AppsDynamiteSharedJustification::class;
+        protected $justificationDataType = '';
+        /**
+         * @var string
+         */
+        public $lastModifiedTime;
+        /**
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @var string
+         */
+        public $url;
+        /**
+         * @param string
+         */
+        public function setFileId($fileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileId()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedJustification
+         */
+        public function setJustification(AppsDynamiteSharedJustification $justification)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedJustification
+         */
+        public function getJustification()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastModifiedTime($lastModifiedTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastModifiedTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedDocument registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileId()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedJustification
-     */
-    public function setJustification(AppsDynamiteSharedJustification $justification)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedJustification
-     */
-    public function getJustification()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastModifiedTime($lastModifiedTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastModifiedTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_CloudSearch_AppsDynamiteSharedDocument extends \Google\Service\CloudSearch\AppsDynamiteSharedDocument
     {
     }
 }

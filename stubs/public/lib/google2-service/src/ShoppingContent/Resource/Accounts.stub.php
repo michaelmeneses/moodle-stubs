@@ -21,229 +21,253 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "accounts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $accounts = $contentService->accounts;
- *  </code>
- */
-class Accounts extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\Account;
+    use Google\Service\ShoppingContent\AccountsAuthInfoResponse;
+    use Google\Service\ShoppingContent\AccountsClaimWebsiteResponse;
+    use Google\Service\ShoppingContent\AccountsCustomBatchRequest;
+    use Google\Service\ShoppingContent\AccountsCustomBatchResponse;
+    use Google\Service\ShoppingContent\AccountsLinkRequest;
+    use Google\Service\ShoppingContent\AccountsLinkResponse;
+    use Google\Service\ShoppingContent\AccountsListLinksResponse;
+    use Google\Service\ShoppingContent\AccountsListResponse;
+    use Google\Service\ShoppingContent\AccountsUpdateLabelsRequest;
+    use Google\Service\ShoppingContent\AccountsUpdateLabelsResponse;
+    use Google\Service\ShoppingContent\RequestPhoneVerificationRequest;
+    use Google\Service\ShoppingContent\RequestPhoneVerificationResponse;
+    use Google\Service\ShoppingContent\VerifyPhoneNumberRequest;
+    use Google\Service\ShoppingContent\VerifyPhoneNumberResponse;
     /**
-     * Returns information about the authenticated user. (accounts.authinfo)
-     *
-     * @param array $optParams Optional parameters.
-     * @return AccountsAuthInfoResponse
-     * @throws \Google\Service\Exception
+     * The "accounts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $accounts = $contentService->accounts;
+     *  </code>
      */
-    public function authinfo($optParams = [])
+    class Accounts extends \Google\Service\Resource
     {
+        /**
+         * Returns information about the authenticated user. (accounts.authinfo)
+         *
+         * @param array $optParams Optional parameters.
+         * @return AccountsAuthInfoResponse
+         * @throws \Google\Service\Exception
+         */
+        public function authinfo($optParams = [])
+        {
+        }
+        /**
+         * Claims the website of a Merchant Center sub-account. Merchant accounts with
+         * approved third-party CSSs aren't required to claim a website.
+         * (accounts.claimwebsite)
+         *
+         * @param string $merchantId The ID of the managing account. If this parameter
+         * is not the same as accountId, then this account must be a multi-client
+         * account and `accountId` must be the ID of a sub-account of this account.
+         * @param string $accountId The ID of the account whose website is claimed.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool overwrite Only available to selected merchants, for example
+         * multi-client accounts (MCAs) and their sub-accounts. When set to `True`, this
+         * option removes any existing claim on the requested website and replaces it
+         * with a claim from the account that makes the request.
+         * @return AccountsClaimWebsiteResponse
+         * @throws \Google\Service\Exception
+         */
+        public function claimwebsite($merchantId, $accountId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves, inserts, updates, and deletes multiple Merchant Center
+         * (sub-)accounts in a single request. (accounts.custombatch)
+         *
+         * @param AccountsCustomBatchRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return AccountsCustomBatchResponse
+         * @throws \Google\Service\Exception
+         */
+        public function custombatch(AccountsCustomBatchRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a Merchant Center sub-account. (accounts.delete)
+         *
+         * @param string $merchantId The ID of the managing account. This must be a
+         * multi-client account, and accountId must be the ID of a sub-account of this
+         * account.
+         * @param string $accountId The ID of the account.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool force Option to delete sub-accounts with products. The
+         * default value is false.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($merchantId, $accountId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a Merchant Center account. (accounts.get)
+         *
+         * @param string $merchantId The ID of the managing account. If this parameter
+         * is not the same as accountId, then this account must be a multi-client
+         * account and `accountId` must be the ID of a sub-account of this account.
+         * @param string $accountId The ID of the account.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string view Controls which fields will be populated. Acceptable
+         * values are: "merchant" and "css". The default value is "merchant".
+         * @return Account
+         * @throws \Google\Service\Exception
+         */
+        public function get($merchantId, $accountId, $optParams = [])
+        {
+        }
+        /**
+         * Creates a Merchant Center sub-account. (accounts.insert)
+         *
+         * @param string $merchantId The ID of the managing account. This must be a
+         * multi-client account.
+         * @param Account $postBody
+         * @param array $optParams Optional parameters.
+         * @return Account
+         * @throws \Google\Service\Exception
+         */
+        public function insert($merchantId, Account $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Performs an action on a link between two Merchant Center accounts, namely
+         * accountId and linkedAccountId. (accounts.link)
+         *
+         * @param string $merchantId The ID of the managing account. If this parameter
+         * is not the same as accountId, then this account must be a multi-client
+         * account and `accountId` must be the ID of a sub-account of this account.
+         * @param string $accountId The ID of the account that should be linked.
+         * @param AccountsLinkRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return AccountsLinkResponse
+         * @throws \Google\Service\Exception
+         */
+        public function link($merchantId, $accountId, AccountsLinkRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists the sub-accounts in your Merchant Center account.
+         * (accounts.listAccounts)
+         *
+         * @param string $merchantId The ID of the managing account. This must be a
+         * multi-client account.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string label If view is set to "css", only return accounts that
+         * are assigned label with given ID.
+         * @opt_param string maxResults The maximum number of accounts to return in the
+         * response, used for paging.
+         * @opt_param string name If set, only the accounts with the given name (case
+         * sensitive) will be returned.
+         * @opt_param string pageToken The token returned by the previous request.
+         * @opt_param string view Controls which fields will be populated. Acceptable
+         * values are: "merchant" and "css". The default value is "merchant".
+         * @return AccountsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccounts($merchantId, $optParams = [])
+        {
+        }
+        /**
+         * Returns the list of accounts linked to your Merchant Center account.
+         * (accounts.listlinks)
+         *
+         * @param string $merchantId The ID of the managing account. If this parameter
+         * is not the same as accountId, then this account must be a multi-client
+         * account and `accountId` must be the ID of a sub-account of this account.
+         * @param string $accountId The ID of the account for which to list links.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string maxResults The maximum number of links to return in the
+         * response, used for pagination. The minimum allowed value is 5 results per
+         * page. If provided value is lower than 5, it will be automatically increased
+         * to 5.
+         * @opt_param string pageToken The token returned by the previous request.
+         * @return AccountsListLinksResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listlinks($merchantId, $accountId, $optParams = [])
+        {
+        }
+        /**
+         * Request verification code to start phone verification.
+         * (accounts.requestphoneverification)
+         *
+         * @param string $merchantId Required. The ID of the managing account. If this
+         * parameter is not the same as accountId, then this account must be a multi-
+         * client account and accountId must be the ID of a sub-account of this account.
+         * @param string $accountId Required. The ID of the account.
+         * @param RequestPhoneVerificationRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return RequestPhoneVerificationResponse
+         * @throws \Google\Service\Exception
+         */
+        public function requestphoneverification($merchantId, $accountId, RequestPhoneVerificationRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates a Merchant Center account. Any fields that are not provided are
+         * deleted from the resource. (accounts.update)
+         *
+         * @param string $merchantId The ID of the managing account. If this parameter
+         * is not the same as accountId, then this account must be a multi-client
+         * account and `accountId` must be the ID of a sub-account of this account.
+         * @param string $accountId The ID of the account.
+         * @param Account $postBody
+         * @param array $optParams Optional parameters.
+         * @return Account
+         * @throws \Google\Service\Exception
+         */
+        public function update($merchantId, $accountId, Account $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates labels that are assigned to the Merchant Center account by CSS user.
+         * (accounts.updatelabels)
+         *
+         * @param string $merchantId The ID of the managing account.
+         * @param string $accountId The ID of the account whose labels are updated.
+         * @param AccountsUpdateLabelsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return AccountsUpdateLabelsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function updatelabels($merchantId, $accountId, AccountsUpdateLabelsRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Validates verification code to verify phone number for the account. If
+         * successful this will overwrite the value of
+         * `accounts.businessinformation.phoneNumber`. Only verified phone number will
+         * replace an existing verified phone number. (accounts.verifyphonenumber)
+         *
+         * @param string $merchantId Required. The ID of the managing account. If this
+         * parameter is not the same as accountId, then this account must be a multi-
+         * client account and accountId must be the ID of a sub-account of this account.
+         * @param string $accountId Required. The ID of the account.
+         * @param VerifyPhoneNumberRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return VerifyPhoneNumberResponse
+         * @throws \Google\Service\Exception
+         */
+        public function verifyphonenumber($merchantId, $accountId, VerifyPhoneNumberRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Claims the website of a Merchant Center sub-account. Merchant accounts with
-     * approved third-party CSSs aren't required to claim a website.
-     * (accounts.claimwebsite)
-     *
-     * @param string $merchantId The ID of the managing account. If this parameter
-     * is not the same as accountId, then this account must be a multi-client
-     * account and `accountId` must be the ID of a sub-account of this account.
-     * @param string $accountId The ID of the account whose website is claimed.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool overwrite Only available to selected merchants, for example
-     * multi-client accounts (MCAs) and their sub-accounts. When set to `True`, this
-     * option removes any existing claim on the requested website and replaces it
-     * with a claim from the account that makes the request.
-     * @return AccountsClaimWebsiteResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\Accounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function claimwebsite($merchantId, $accountId, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves, inserts, updates, and deletes multiple Merchant Center
-     * (sub-)accounts in a single request. (accounts.custombatch)
-     *
-     * @param AccountsCustomBatchRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return AccountsCustomBatchResponse
-     * @throws \Google\Service\Exception
-     */
-    public function custombatch(AccountsCustomBatchRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Deletes a Merchant Center sub-account. (accounts.delete)
-     *
-     * @param string $merchantId The ID of the managing account. This must be a
-     * multi-client account, and accountId must be the ID of a sub-account of this
-     * account.
-     * @param string $accountId The ID of the account.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool force Option to delete sub-accounts with products. The
-     * default value is false.
-     * @throws \Google\Service\Exception
-     */
-    public function delete($merchantId, $accountId, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a Merchant Center account. (accounts.get)
-     *
-     * @param string $merchantId The ID of the managing account. If this parameter
-     * is not the same as accountId, then this account must be a multi-client
-     * account and `accountId` must be the ID of a sub-account of this account.
-     * @param string $accountId The ID of the account.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string view Controls which fields will be populated. Acceptable
-     * values are: "merchant" and "css". The default value is "merchant".
-     * @return Account
-     * @throws \Google\Service\Exception
-     */
-    public function get($merchantId, $accountId, $optParams = [])
-    {
-    }
-    /**
-     * Creates a Merchant Center sub-account. (accounts.insert)
-     *
-     * @param string $merchantId The ID of the managing account. This must be a
-     * multi-client account.
-     * @param Account $postBody
-     * @param array $optParams Optional parameters.
-     * @return Account
-     * @throws \Google\Service\Exception
-     */
-    public function insert($merchantId, Account $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Performs an action on a link between two Merchant Center accounts, namely
-     * accountId and linkedAccountId. (accounts.link)
-     *
-     * @param string $merchantId The ID of the managing account. If this parameter
-     * is not the same as accountId, then this account must be a multi-client
-     * account and `accountId` must be the ID of a sub-account of this account.
-     * @param string $accountId The ID of the account that should be linked.
-     * @param AccountsLinkRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return AccountsLinkResponse
-     * @throws \Google\Service\Exception
-     */
-    public function link($merchantId, $accountId, AccountsLinkRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists the sub-accounts in your Merchant Center account.
-     * (accounts.listAccounts)
-     *
-     * @param string $merchantId The ID of the managing account. This must be a
-     * multi-client account.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string label If view is set to "css", only return accounts that
-     * are assigned label with given ID.
-     * @opt_param string maxResults The maximum number of accounts to return in the
-     * response, used for paging.
-     * @opt_param string name If set, only the accounts with the given name (case
-     * sensitive) will be returned.
-     * @opt_param string pageToken The token returned by the previous request.
-     * @opt_param string view Controls which fields will be populated. Acceptable
-     * values are: "merchant" and "css". The default value is "merchant".
-     * @return AccountsListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAccounts($merchantId, $optParams = [])
-    {
-    }
-    /**
-     * Returns the list of accounts linked to your Merchant Center account.
-     * (accounts.listlinks)
-     *
-     * @param string $merchantId The ID of the managing account. If this parameter
-     * is not the same as accountId, then this account must be a multi-client
-     * account and `accountId` must be the ID of a sub-account of this account.
-     * @param string $accountId The ID of the account for which to list links.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string maxResults The maximum number of links to return in the
-     * response, used for pagination. The minimum allowed value is 5 results per
-     * page. If provided value is lower than 5, it will be automatically increased
-     * to 5.
-     * @opt_param string pageToken The token returned by the previous request.
-     * @return AccountsListLinksResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listlinks($merchantId, $accountId, $optParams = [])
-    {
-    }
-    /**
-     * Request verification code to start phone verification.
-     * (accounts.requestphoneverification)
-     *
-     * @param string $merchantId Required. The ID of the managing account. If this
-     * parameter is not the same as accountId, then this account must be a multi-
-     * client account and accountId must be the ID of a sub-account of this account.
-     * @param string $accountId Required. The ID of the account.
-     * @param RequestPhoneVerificationRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return RequestPhoneVerificationResponse
-     * @throws \Google\Service\Exception
-     */
-    public function requestphoneverification($merchantId, $accountId, RequestPhoneVerificationRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates a Merchant Center account. Any fields that are not provided are
-     * deleted from the resource. (accounts.update)
-     *
-     * @param string $merchantId The ID of the managing account. If this parameter
-     * is not the same as accountId, then this account must be a multi-client
-     * account and `accountId` must be the ID of a sub-account of this account.
-     * @param string $accountId The ID of the account.
-     * @param Account $postBody
-     * @param array $optParams Optional parameters.
-     * @return Account
-     * @throws \Google\Service\Exception
-     */
-    public function update($merchantId, $accountId, Account $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates labels that are assigned to the Merchant Center account by CSS user.
-     * (accounts.updatelabels)
-     *
-     * @param string $merchantId The ID of the managing account.
-     * @param string $accountId The ID of the account whose labels are updated.
-     * @param AccountsUpdateLabelsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return AccountsUpdateLabelsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function updatelabels($merchantId, $accountId, AccountsUpdateLabelsRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Validates verification code to verify phone number for the account. If
-     * successful this will overwrite the value of
-     * `accounts.businessinformation.phoneNumber`. Only verified phone number will
-     * replace an existing verified phone number. (accounts.verifyphonenumber)
-     *
-     * @param string $merchantId Required. The ID of the managing account. If this
-     * parameter is not the same as accountId, then this account must be a multi-
-     * client account and accountId must be the ID of a sub-account of this account.
-     * @param string $accountId Required. The ID of the account.
-     * @param VerifyPhoneNumberRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return VerifyPhoneNumberResponse
-     * @throws \Google\Service\Exception
-     */
-    public function verifyphonenumber($merchantId, $accountId, VerifyPhoneNumberRequest $postBody, $optParams = [])
+    class Google_Service_ShoppingContent_Resource_Accounts extends \Google\Service\ShoppingContent\Resource\Accounts
     {
     }
 }

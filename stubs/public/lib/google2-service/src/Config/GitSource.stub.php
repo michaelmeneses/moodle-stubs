@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class GitSource extends \Google\Model
-{
-    /**
-     * Optional. Subdirectory inside the repository. Example: 'staging/my-package'
-     *
-     * @var string
-     */
-    public $directory;
-    /**
-     * Optional. Git reference (e.g. branch or tag).
-     *
-     * @var string
-     */
-    public $ref;
-    /**
-     * Optional. Repository URL. Example:
-     * 'https://github.com/kubernetes/examples.git'
-     *
-     * @var string
-     */
-    public $repo;
-    /**
-     * Optional. Subdirectory inside the repository. Example: 'staging/my-package'
-     *
-     * @param string $directory
-     */
-    public function setDirectory($directory)
+namespace Google\Service\Config {
+    class GitSource extends \Google\Model
     {
+        /**
+         * Optional. Subdirectory inside the repository. Example: 'staging/my-package'
+         *
+         * @var string
+         */
+        public $directory;
+        /**
+         * Optional. Git reference (e.g. branch or tag).
+         *
+         * @var string
+         */
+        public $ref;
+        /**
+         * Optional. Repository URL. Example:
+         * 'https://github.com/kubernetes/examples.git'
+         *
+         * @var string
+         */
+        public $repo;
+        /**
+         * Optional. Subdirectory inside the repository. Example: 'staging/my-package'
+         *
+         * @param string $directory
+         */
+        public function setDirectory($directory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDirectory()
+        {
+        }
+        /**
+         * Optional. Git reference (e.g. branch or tag).
+         *
+         * @param string $ref
+         */
+        public function setRef($ref)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRef()
+        {
+        }
+        /**
+         * Optional. Repository URL. Example:
+         * 'https://github.com/kubernetes/examples.git'
+         *
+         * @param string $repo
+         */
+        public function setRepo($repo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Config\GitSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDirectory()
-    {
-    }
-    /**
-     * Optional. Git reference (e.g. branch or tag).
-     *
-     * @param string $ref
-     */
-    public function setRef($ref)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRef()
-    {
-    }
-    /**
-     * Optional. Repository URL. Example:
-     * 'https://github.com/kubernetes/examples.git'
-     *
-     * @param string $repo
-     */
-    public function setRepo($repo)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRepo()
+    class Google_Service_Config_GitSource extends \Google\Service\Config\GitSource
     {
     }
 }

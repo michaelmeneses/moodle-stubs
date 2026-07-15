@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script;
-
-class Struct extends \Google\Model
-{
-    protected $fieldsType = Value::class;
-    protected $fieldsDataType = 'map';
-    /**
-     * @param Value[]
-     */
-    public function setFields($fields)
+namespace Google\Service\Script {
+    class Struct extends \Google\Model
     {
+        protected $fieldsType = Value::class;
+        protected $fieldsDataType = 'map';
+        /**
+         * @param Value[]
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return Value[]
+         */
+        public function getFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Value[]
+     * Runtime class alias of \Google\Service\Script\Struct registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
+    class Google_Service_Script_Struct extends \Google\Service\Script\Struct
     {
     }
 }

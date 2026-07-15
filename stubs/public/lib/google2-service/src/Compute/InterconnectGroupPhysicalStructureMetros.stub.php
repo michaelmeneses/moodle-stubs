@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectGroupPhysicalStructureMetros extends \Google\Collection
-{
-    protected $collection_key = 'facilities';
-    protected $facilitiesType = InterconnectGroupPhysicalStructureMetrosFacilities::class;
-    protected $facilitiesDataType = 'array';
-    /**
-     * Output only. [Output Only] The name of the metro, as a three-letter
-     * lowercase string like "iad". This is the first component of the location of
-     * Interconnects underneath this.
-     *
-     * @var string
-     */
-    public $metro;
-    /**
-     * @param InterconnectGroupPhysicalStructureMetrosFacilities[] $facilities
-     */
-    public function setFacilities($facilities)
+namespace Google\Service\Compute {
+    class InterconnectGroupPhysicalStructureMetros extends \Google\Collection
     {
+        protected $collection_key = 'facilities';
+        protected $facilitiesType = InterconnectGroupPhysicalStructureMetrosFacilities::class;
+        protected $facilitiesDataType = 'array';
+        /**
+         * Output only. [Output Only] The name of the metro, as a three-letter
+         * lowercase string like "iad". This is the first component of the location of
+         * Interconnects underneath this.
+         *
+         * @var string
+         */
+        public $metro;
+        /**
+         * @param InterconnectGroupPhysicalStructureMetrosFacilities[] $facilities
+         */
+        public function setFacilities($facilities)
+        {
+        }
+        /**
+         * @return InterconnectGroupPhysicalStructureMetrosFacilities[]
+         */
+        public function getFacilities()
+        {
+        }
+        /**
+         * Output only. [Output Only] The name of the metro, as a three-letter
+         * lowercase string like "iad". This is the first component of the location of
+         * Interconnects underneath this.
+         *
+         * @param string $metro
+         */
+        public function setMetro($metro)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetro()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InterconnectGroupPhysicalStructureMetrosFacilities[]
+     * Runtime class alias of \Google\Service\Compute\InterconnectGroupPhysicalStructureMetros registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFacilities()
-    {
-    }
-    /**
-     * Output only. [Output Only] The name of the metro, as a three-letter
-     * lowercase string like "iad". This is the first component of the location of
-     * Interconnects underneath this.
-     *
-     * @param string $metro
-     */
-    public function setMetro($metro)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetro()
+    class Google_Service_Compute_InterconnectGroupPhysicalStructureMetros extends \Google\Service\Compute\InterconnectGroupPhysicalStructureMetros
     {
     }
 }

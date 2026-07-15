@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1FetchSitemapsResponse extends \Google\Collection
-{
-    protected $collection_key = 'sitemapsMetadata';
-    protected $sitemapsMetadataType = GoogleCloudDiscoveryengineV1FetchSitemapsResponseSitemapMetadata::class;
-    protected $sitemapsMetadataDataType = 'array';
-    /**
-     * List of Sitemaps fetched.
-     *
-     * @param GoogleCloudDiscoveryengineV1FetchSitemapsResponseSitemapMetadata[] $sitemapsMetadata
-     */
-    public function setSitemapsMetadata($sitemapsMetadata)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1FetchSitemapsResponse extends \Google\Collection
     {
+        protected $collection_key = 'sitemapsMetadata';
+        protected $sitemapsMetadataType = GoogleCloudDiscoveryengineV1FetchSitemapsResponseSitemapMetadata::class;
+        protected $sitemapsMetadataDataType = 'array';
+        /**
+         * List of Sitemaps fetched.
+         *
+         * @param GoogleCloudDiscoveryengineV1FetchSitemapsResponseSitemapMetadata[] $sitemapsMetadata
+         */
+        public function setSitemapsMetadata($sitemapsMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1FetchSitemapsResponseSitemapMetadata[]
+         */
+        public function getSitemapsMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1FetchSitemapsResponseSitemapMetadata[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1FetchSitemapsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSitemapsMetadata()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1FetchSitemapsResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1FetchSitemapsResponse
     {
     }
 }

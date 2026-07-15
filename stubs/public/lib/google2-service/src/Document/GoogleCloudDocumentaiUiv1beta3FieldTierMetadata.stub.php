@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3FieldTierMetadata extends \Google\Model
-{
-    /**
-     * Integer that indicates the tier of a property. e.g. Invoice has entities
-     * that are classified as tier 1 which is the most important, while tier 2 and
-     * tier 3 less so. This attribute can be used to filter schema attributes
-     * before running eval. e.g. compute F1 score for only tier 1 entities. If not
-     * present this attribute should be inferred as 1.
-     *
-     * @var int
-     */
-    public $tierLevel;
-    /**
-     * Integer that indicates the tier of a property. e.g. Invoice has entities
-     * that are classified as tier 1 which is the most important, while tier 2 and
-     * tier 3 less so. This attribute can be used to filter schema attributes
-     * before running eval. e.g. compute F1 score for only tier 1 entities. If not
-     * present this attribute should be inferred as 1.
-     *
-     * @param int $tierLevel
-     */
-    public function setTierLevel($tierLevel)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3FieldTierMetadata extends \Google\Model
     {
+        /**
+         * Integer that indicates the tier of a property. e.g. Invoice has entities
+         * that are classified as tier 1 which is the most important, while tier 2 and
+         * tier 3 less so. This attribute can be used to filter schema attributes
+         * before running eval. e.g. compute F1 score for only tier 1 entities. If not
+         * present this attribute should be inferred as 1.
+         *
+         * @var int
+         */
+        public $tierLevel;
+        /**
+         * Integer that indicates the tier of a property. e.g. Invoice has entities
+         * that are classified as tier 1 which is the most important, while tier 2 and
+         * tier 3 less so. This attribute can be used to filter schema attributes
+         * before running eval. e.g. compute F1 score for only tier 1 entities. If not
+         * present this attribute should be inferred as 1.
+         *
+         * @param int $tierLevel
+         */
+        public function setTierLevel($tierLevel)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTierLevel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3FieldTierMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTierLevel()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3FieldTierMetadata extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3FieldTierMetadata
     {
     }
 }

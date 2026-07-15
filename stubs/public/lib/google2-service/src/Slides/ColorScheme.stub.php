@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class ColorScheme extends \Google\Collection
-{
-    protected $collection_key = 'colors';
-    protected $colorsType = ThemeColorPair::class;
-    protected $colorsDataType = 'array';
-    /**
-     * The ThemeColorType and corresponding concrete color pairs.
-     *
-     * @param ThemeColorPair[] $colors
-     */
-    public function setColors($colors)
+namespace Google\Service\Slides {
+    class ColorScheme extends \Google\Collection
     {
+        protected $collection_key = 'colors';
+        protected $colorsType = ThemeColorPair::class;
+        protected $colorsDataType = 'array';
+        /**
+         * The ThemeColorType and corresponding concrete color pairs.
+         *
+         * @param ThemeColorPair[] $colors
+         */
+        public function setColors($colors)
+        {
+        }
+        /**
+         * @return ThemeColorPair[]
+         */
+        public function getColors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ThemeColorPair[]
+     * Runtime class alias of \Google\Service\Slides\ColorScheme registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColors()
+    class Google_Service_Slides_ColorScheme extends \Google\Service\Slides\ColorScheme
     {
     }
 }

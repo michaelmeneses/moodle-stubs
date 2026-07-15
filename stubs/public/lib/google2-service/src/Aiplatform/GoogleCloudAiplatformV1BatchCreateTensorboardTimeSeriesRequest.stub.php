@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BatchCreateTensorboardTimeSeriesRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = GoogleCloudAiplatformV1CreateTensorboardTimeSeriesRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * Required. The request message specifying the TensorboardTimeSeries to
-     * create. A maximum of 1000 TensorboardTimeSeries can be created in a batch.
-     *
-     * @param GoogleCloudAiplatformV1CreateTensorboardTimeSeriesRequest[] $requests
-     */
-    public function setRequests($requests)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BatchCreateTensorboardTimeSeriesRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = GoogleCloudAiplatformV1CreateTensorboardTimeSeriesRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * Required. The request message specifying the TensorboardTimeSeries to
+         * create. A maximum of 1000 TensorboardTimeSeries can be created in a batch.
+         *
+         * @param GoogleCloudAiplatformV1CreateTensorboardTimeSeriesRequest[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1CreateTensorboardTimeSeriesRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1CreateTensorboardTimeSeriesRequest[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchCreateTensorboardTimeSeriesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BatchCreateTensorboardTimeSeriesRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchCreateTensorboardTimeSeriesRequest
     {
     }
 }

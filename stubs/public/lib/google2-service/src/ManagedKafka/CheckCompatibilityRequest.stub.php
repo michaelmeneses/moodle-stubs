@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class CheckCompatibilityRequest extends \Google\Collection
-{
-    /**
-     * No schema type. The default will be AVRO.
-     */
-    public const SCHEMA_TYPE_SCHEMA_TYPE_UNSPECIFIED = 'SCHEMA_TYPE_UNSPECIFIED';
-    /**
-     * Avro schema type.
-     */
-    public const SCHEMA_TYPE_AVRO = 'AVRO';
-    /**
-     * JSON schema type.
-     */
-    public const SCHEMA_TYPE_JSON = 'JSON';
-    /**
-     * Protobuf schema type.
-     */
-    public const SCHEMA_TYPE_PROTOBUF = 'PROTOBUF';
-    protected $collection_key = 'references';
-    protected $referencesType = SchemaReference::class;
-    protected $referencesDataType = 'array';
-    /**
-     * Required. The schema payload
-     *
-     * @var string
-     */
-    public $schema;
-    /**
-     * Optional. The schema type of the schema.
-     *
-     * @var string
-     */
-    public $schemaType;
-    /**
-     * Optional. If true, the response will contain the compatibility check result
-     * with reasons for failed checks. The default is false.
-     *
-     * @var bool
-     */
-    public $verbose;
-    /**
-     * Optional. The schema references used by the schema.
-     *
-     * @param SchemaReference[] $references
-     */
-    public function setReferences($references)
+namespace Google\Service\ManagedKafka {
+    class CheckCompatibilityRequest extends \Google\Collection
     {
+        /**
+         * No schema type. The default will be AVRO.
+         */
+        public const SCHEMA_TYPE_SCHEMA_TYPE_UNSPECIFIED = 'SCHEMA_TYPE_UNSPECIFIED';
+        /**
+         * Avro schema type.
+         */
+        public const SCHEMA_TYPE_AVRO = 'AVRO';
+        /**
+         * JSON schema type.
+         */
+        public const SCHEMA_TYPE_JSON = 'JSON';
+        /**
+         * Protobuf schema type.
+         */
+        public const SCHEMA_TYPE_PROTOBUF = 'PROTOBUF';
+        protected $collection_key = 'references';
+        protected $referencesType = SchemaReference::class;
+        protected $referencesDataType = 'array';
+        /**
+         * Required. The schema payload
+         *
+         * @var string
+         */
+        public $schema;
+        /**
+         * Optional. The schema type of the schema.
+         *
+         * @var string
+         */
+        public $schemaType;
+        /**
+         * Optional. If true, the response will contain the compatibility check result
+         * with reasons for failed checks. The default is false.
+         *
+         * @var bool
+         */
+        public $verbose;
+        /**
+         * Optional. The schema references used by the schema.
+         *
+         * @param SchemaReference[] $references
+         */
+        public function setReferences($references)
+        {
+        }
+        /**
+         * @return SchemaReference[]
+         */
+        public function getReferences()
+        {
+        }
+        /**
+         * Required. The schema payload
+         *
+         * @param string $schema
+         */
+        public function setSchema($schema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchema()
+        {
+        }
+        /**
+         * Optional. The schema type of the schema.
+         *
+         * Accepted values: SCHEMA_TYPE_UNSPECIFIED, AVRO, JSON, PROTOBUF
+         *
+         * @param self::SCHEMA_TYPE_* $schemaType
+         */
+        public function setSchemaType($schemaType)
+        {
+        }
+        /**
+         * @return self::SCHEMA_TYPE_*
+         */
+        public function getSchemaType()
+        {
+        }
+        /**
+         * Optional. If true, the response will contain the compatibility check result
+         * with reasons for failed checks. The default is false.
+         *
+         * @param bool $verbose
+         */
+        public function setVerbose($verbose)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getVerbose()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SchemaReference[]
+     * Runtime class alias of \Google\Service\ManagedKafka\CheckCompatibilityRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReferences()
-    {
-    }
-    /**
-     * Required. The schema payload
-     *
-     * @param string $schema
-     */
-    public function setSchema($schema)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchema()
-    {
-    }
-    /**
-     * Optional. The schema type of the schema.
-     *
-     * Accepted values: SCHEMA_TYPE_UNSPECIFIED, AVRO, JSON, PROTOBUF
-     *
-     * @param self::SCHEMA_TYPE_* $schemaType
-     */
-    public function setSchemaType($schemaType)
-    {
-    }
-    /**
-     * @return self::SCHEMA_TYPE_*
-     */
-    public function getSchemaType()
-    {
-    }
-    /**
-     * Optional. If true, the response will contain the compatibility check result
-     * with reasons for failed checks. The default is false.
-     *
-     * @param bool $verbose
-     */
-    public function setVerbose($verbose)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getVerbose()
+    class Google_Service_ManagedKafka_CheckCompatibilityRequest extends \Google\Service\ManagedKafka\CheckCompatibilityRequest
     {
     }
 }

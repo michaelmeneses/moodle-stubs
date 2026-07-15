@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class Oidc extends \Google\Collection
-{
-    protected $collection_key = 'allowedAudiences';
-    /**
-     * @var string[]
-     */
-    public $allowedAudiences;
-    /**
-     * @var string
-     */
-    public $issuerUri;
-    /**
-     * @param string[]
-     */
-    public function setAllowedAudiences($allowedAudiences)
+namespace Google\Service\Iam {
+    class Oidc extends \Google\Collection
     {
+        protected $collection_key = 'allowedAudiences';
+        /**
+         * @var string[]
+         */
+        public $allowedAudiences;
+        /**
+         * @var string
+         */
+        public $issuerUri;
+        /**
+         * @param string[]
+         */
+        public function setAllowedAudiences($allowedAudiences)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowedAudiences()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIssuerUri($issuerUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssuerUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Iam\Oidc registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedAudiences()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIssuerUri($issuerUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIssuerUri()
+    class Google_Service_Iam_Oidc extends \Google\Service\Iam\Oidc
     {
     }
 }

@@ -29,6 +29,18 @@
  */
 namespace core_customfield\output;
 
+use core_customfield\api;
+use core_customfield\customfield\shared_handler;
+use core_customfield\handler;
+use core_customfield\shared;
+use core_customfield\field_controller;
+use core\url;
+use core\output\action_menu;
+use core\output\pix_icon;
+use core\output\renderer_base;
+use core\output\renderable;
+use core\output\templatable;
+use stdClass;
 /**
  * Class management
  *

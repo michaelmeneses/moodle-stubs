@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1Polyline extends \Google\Model
-{
-    /**
-     * An [encoded polyline](https://developers.google.com/maps/documentation/util
-     * ities/polylinealgorithm), as returned by the [Routes API by default](https:
-     * //developers.google.com/maps/documentation/routes/reference/rest/v2/TopLeve
-     * l/computeRoutes#polylineencoding). See the [encoder](https://developers.goo
-     * gle.com/maps/documentation/utilities/polylineutility) and [decoder](https:/
-     * /developers.google.com/maps/documentation/routes/polylinedecoder) tools.
-     *
-     * @var string
-     */
-    public $encodedPolyline;
-    /**
-     * An [encoded polyline](https://developers.google.com/maps/documentation/util
-     * ities/polylinealgorithm), as returned by the [Routes API by default](https:
-     * //developers.google.com/maps/documentation/routes/reference/rest/v2/TopLeve
-     * l/computeRoutes#polylineencoding). See the [encoder](https://developers.goo
-     * gle.com/maps/documentation/utilities/polylineutility) and [decoder](https:/
-     * /developers.google.com/maps/documentation/routes/polylinedecoder) tools.
-     *
-     * @param string $encodedPolyline
-     */
-    public function setEncodedPolyline($encodedPolyline)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1Polyline extends \Google\Model
     {
+        /**
+         * An [encoded polyline](https://developers.google.com/maps/documentation/util
+         * ities/polylinealgorithm), as returned by the [Routes API by default](https:
+         * //developers.google.com/maps/documentation/routes/reference/rest/v2/TopLeve
+         * l/computeRoutes#polylineencoding). See the [encoder](https://developers.goo
+         * gle.com/maps/documentation/utilities/polylineutility) and [decoder](https:/
+         * /developers.google.com/maps/documentation/routes/polylinedecoder) tools.
+         *
+         * @var string
+         */
+        public $encodedPolyline;
+        /**
+         * An [encoded polyline](https://developers.google.com/maps/documentation/util
+         * ities/polylinealgorithm), as returned by the [Routes API by default](https:
+         * //developers.google.com/maps/documentation/routes/reference/rest/v2/TopLeve
+         * l/computeRoutes#polylineencoding). See the [encoder](https://developers.goo
+         * gle.com/maps/documentation/utilities/polylineutility) and [decoder](https:/
+         * /developers.google.com/maps/documentation/routes/polylinedecoder) tools.
+         *
+         * @param string $encodedPolyline
+         */
+        public function setEncodedPolyline($encodedPolyline)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncodedPolyline()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1Polyline registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncodedPolyline()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1Polyline extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1Polyline
     {
     }
 }

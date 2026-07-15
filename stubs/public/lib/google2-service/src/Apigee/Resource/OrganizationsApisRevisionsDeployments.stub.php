@@ -21,34 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "deployments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $deployments = $apigeeService->organizations_apis_revisions_deployments;
- *  </code>
- */
-class OrganizationsApisRevisionsDeployments extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1ListDeploymentsResponse;
     /**
-     * Lists all deployments of an API proxy revision.
-     * (deployments.listOrganizationsApisRevisionsDeployments)
-     *
-     * @param string $parent Required. Name of the API proxy revision for which to
-     * return deployment information in the following format:
-     * `organizations/{org}/apis/{api}/revisions/{rev}`. If the API proxy resource
-     * has the `space` attribute set, IAM permissions are checked differently . To
-     * learn more, read the [Apigee Spaces
-     * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
-     * administration/spaces/apigee-spaces-overview).
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1ListDeploymentsResponse
-     * @throws \Google\Service\Exception
+     * The "deployments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $deployments = $apigeeService->organizations_apis_revisions_deployments;
+     *  </code>
      */
-    public function listOrganizationsApisRevisionsDeployments($parent, $optParams = [])
+    class OrganizationsApisRevisionsDeployments extends \Google\Service\Resource
+    {
+        /**
+         * Lists all deployments of an API proxy revision.
+         * (deployments.listOrganizationsApisRevisionsDeployments)
+         *
+         * @param string $parent Required. Name of the API proxy revision for which to
+         * return deployment information in the following format:
+         * `organizations/{org}/apis/{api}/revisions/{rev}`. If the API proxy resource
+         * has the `space` attribute set, IAM permissions are checked differently . To
+         * learn more, read the [Apigee Spaces
+         * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
+         * administration/spaces/apigee-spaces-overview).
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1ListDeploymentsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsApisRevisionsDeployments($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsApisRevisionsDeployments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Apigee_Resource_OrganizationsApisRevisionsDeployments extends \Google\Service\Apigee\Resource\OrganizationsApisRevisionsDeployments
     {
     }
 }

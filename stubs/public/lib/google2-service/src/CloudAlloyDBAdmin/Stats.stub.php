@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class Stats extends \Google\Model
-{
-    /**
-     * Number of read pool instances which failed to upgrade.
-     *
-     * @var int
-     */
-    public $failed;
-    /**
-     * Number of read pool instances for which upgrade has not started.
-     *
-     * @var int
-     */
-    public $notStarted;
-    /**
-     * Number of read pool instances undergoing upgrade.
-     *
-     * @var int
-     */
-    public $ongoing;
-    /**
-     * Number of read pool instances successfully upgraded.
-     *
-     * @var int
-     */
-    public $success;
-    /**
-     * Number of read pool instances which failed to upgrade.
-     *
-     * @param int $failed
-     */
-    public function setFailed($failed)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class Stats extends \Google\Model
     {
+        /**
+         * Number of read pool instances which failed to upgrade.
+         *
+         * @var int
+         */
+        public $failed;
+        /**
+         * Number of read pool instances for which upgrade has not started.
+         *
+         * @var int
+         */
+        public $notStarted;
+        /**
+         * Number of read pool instances undergoing upgrade.
+         *
+         * @var int
+         */
+        public $ongoing;
+        /**
+         * Number of read pool instances successfully upgraded.
+         *
+         * @var int
+         */
+        public $success;
+        /**
+         * Number of read pool instances which failed to upgrade.
+         *
+         * @param int $failed
+         */
+        public function setFailed($failed)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFailed()
+        {
+        }
+        /**
+         * Number of read pool instances for which upgrade has not started.
+         *
+         * @param int $notStarted
+         */
+        public function setNotStarted($notStarted)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNotStarted()
+        {
+        }
+        /**
+         * Number of read pool instances undergoing upgrade.
+         *
+         * @param int $ongoing
+         */
+        public function setOngoing($ongoing)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOngoing()
+        {
+        }
+        /**
+         * Number of read pool instances successfully upgraded.
+         *
+         * @param int $success
+         */
+        public function setSuccess($success)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSuccess()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\Stats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailed()
-    {
-    }
-    /**
-     * Number of read pool instances for which upgrade has not started.
-     *
-     * @param int $notStarted
-     */
-    public function setNotStarted($notStarted)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNotStarted()
-    {
-    }
-    /**
-     * Number of read pool instances undergoing upgrade.
-     *
-     * @param int $ongoing
-     */
-    public function setOngoing($ongoing)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getOngoing()
-    {
-    }
-    /**
-     * Number of read pool instances successfully upgraded.
-     *
-     * @param int $success
-     */
-    public function setSuccess($success)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSuccess()
+    class Google_Service_CloudAlloyDBAdmin_Stats extends \Google\Service\CloudAlloyDBAdmin\Stats
     {
     }
 }

@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class ResumeConnectorResponse extends \Google\Model
-{
+namespace Google\Service\ManagedKafka {
+    class ResumeConnectorResponse extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ManagedKafka\ResumeConnectorResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ManagedKafka_ResumeConnectorResponse extends \Google\Service\ManagedKafka\ResumeConnectorResponse
+    {
+    }
 }

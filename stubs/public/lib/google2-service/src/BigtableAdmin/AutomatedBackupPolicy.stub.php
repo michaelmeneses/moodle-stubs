@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class AutomatedBackupPolicy extends \Google\Model
-{
-    /**
-     * How frequently automated backups should occur. The only supported value at
-     * this time is 24 hours. An undefined frequency is treated as 24 hours.
-     *
-     * @var string
-     */
-    public $frequency;
-    /**
-     * Required. How long the automated backups should be retained. Values must be
-     * at least 3 days and at most 90 days.
-     *
-     * @var string
-     */
-    public $retentionPeriod;
-    /**
-     * How frequently automated backups should occur. The only supported value at
-     * this time is 24 hours. An undefined frequency is treated as 24 hours.
-     *
-     * @param string $frequency
-     */
-    public function setFrequency($frequency)
+namespace Google\Service\BigtableAdmin {
+    class AutomatedBackupPolicy extends \Google\Model
     {
+        /**
+         * How frequently automated backups should occur. The only supported value at
+         * this time is 24 hours. An undefined frequency is treated as 24 hours.
+         *
+         * @var string
+         */
+        public $frequency;
+        /**
+         * Required. How long the automated backups should be retained. Values must be
+         * at least 3 days and at most 90 days.
+         *
+         * @var string
+         */
+        public $retentionPeriod;
+        /**
+         * How frequently automated backups should occur. The only supported value at
+         * this time is 24 hours. An undefined frequency is treated as 24 hours.
+         *
+         * @param string $frequency
+         */
+        public function setFrequency($frequency)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFrequency()
+        {
+        }
+        /**
+         * Required. How long the automated backups should be retained. Values must be
+         * at least 3 days and at most 90 days.
+         *
+         * @param string $retentionPeriod
+         */
+        public function setRetentionPeriod($retentionPeriod)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRetentionPeriod()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigtableAdmin\AutomatedBackupPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFrequency()
-    {
-    }
-    /**
-     * Required. How long the automated backups should be retained. Values must be
-     * at least 3 days and at most 90 days.
-     *
-     * @param string $retentionPeriod
-     */
-    public function setRetentionPeriod($retentionPeriod)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRetentionPeriod()
+    class Google_Service_BigtableAdmin_AutomatedBackupPolicy extends \Google\Service\BigtableAdmin\AutomatedBackupPolicy
     {
     }
 }

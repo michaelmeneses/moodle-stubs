@@ -21,133 +21,142 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedTextInput extends \Google\Model
-{
-    protected $autoCompleteActionType = AppsDynamiteSharedAction::class;
-    protected $autoCompleteActionDataType = '';
-    public $autoCompleteAction;
-    /**
-     * @var string
-     */
-    public $hintText;
-    protected $initialSuggestionsType = AppsDynamiteSharedSuggestions::class;
-    protected $initialSuggestionsDataType = '';
-    public $initialSuggestions;
-    /**
-     * @var string
-     */
-    public $label;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $onChangeActionType = AppsDynamiteSharedAction::class;
-    protected $onChangeActionDataType = '';
-    public $onChangeAction;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $value;
-    /**
-     * @param AppsDynamiteSharedAction
-     */
-    public function setAutoCompleteAction(AppsDynamiteSharedAction $autoCompleteAction)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedTextInput extends \Google\Model
     {
+        protected $autoCompleteActionType = AppsDynamiteSharedAction::class;
+        protected $autoCompleteActionDataType = '';
+        public $autoCompleteAction;
+        /**
+         * @var string
+         */
+        public $hintText;
+        protected $initialSuggestionsType = AppsDynamiteSharedSuggestions::class;
+        protected $initialSuggestionsDataType = '';
+        public $initialSuggestions;
+        /**
+         * @var string
+         */
+        public $label;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $onChangeActionType = AppsDynamiteSharedAction::class;
+        protected $onChangeActionDataType = '';
+        public $onChangeAction;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @var string
+         */
+        public $value;
+        /**
+         * @param AppsDynamiteSharedAction
+         */
+        public function setAutoCompleteAction(AppsDynamiteSharedAction $autoCompleteAction)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedAction
+         */
+        public function getAutoCompleteAction()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHintText($hintText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHintText()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedSuggestions
+         */
+        public function setInitialSuggestions(AppsDynamiteSharedSuggestions $initialSuggestions)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedSuggestions
+         */
+        public function getInitialSuggestions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedAction
+         */
+        public function setOnChangeAction(AppsDynamiteSharedAction $onChangeAction)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedAction
+         */
+        public function getOnChangeAction()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedAction
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedTextInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoCompleteAction()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHintText($hintText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHintText()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedSuggestions
-     */
-    public function setInitialSuggestions(AppsDynamiteSharedSuggestions $initialSuggestions)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedSuggestions
-     */
-    public function getInitialSuggestions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedAction
-     */
-    public function setOnChangeAction(AppsDynamiteSharedAction $onChangeAction)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedAction
-     */
-    public function getOnChangeAction()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_CloudSearch_AppsDynamiteSharedTextInput extends \Google\Service\CloudSearch\AppsDynamiteSharedTextInput
     {
     }
 }

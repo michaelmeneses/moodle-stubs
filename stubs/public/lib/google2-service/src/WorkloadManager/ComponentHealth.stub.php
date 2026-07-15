@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class ComponentHealth extends \Google\Collection
-{
-    protected $collection_key = 'subComponentHealthes';
-    /**
-     * @var string
-     */
-    public $component;
-    protected $componentHealthChecksType = HealthCheck::class;
-    protected $componentHealthChecksDataType = 'array';
-    /**
-     * @var string
-     */
-    public $componentHealthType;
-    /**
-     * @var bool
-     */
-    public $isRequired;
-    /**
-     * @var string
-     */
-    public $state;
-    protected $subComponentHealthesType = ComponentHealth::class;
-    protected $subComponentHealthesDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setComponent($component)
+namespace Google\Service\WorkloadManager {
+    class ComponentHealth extends \Google\Collection
     {
+        protected $collection_key = 'subComponentHealthes';
+        /**
+         * @var string
+         */
+        public $component;
+        protected $componentHealthChecksType = HealthCheck::class;
+        protected $componentHealthChecksDataType = 'array';
+        /**
+         * @var string
+         */
+        public $componentHealthType;
+        /**
+         * @var bool
+         */
+        public $isRequired;
+        /**
+         * @var string
+         */
+        public $state;
+        protected $subComponentHealthesType = ComponentHealth::class;
+        protected $subComponentHealthesDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setComponent($component)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComponent()
+        {
+        }
+        /**
+         * @param HealthCheck[]
+         */
+        public function setComponentHealthChecks($componentHealthChecks)
+        {
+        }
+        /**
+         * @return HealthCheck[]
+         */
+        public function getComponentHealthChecks()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setComponentHealthType($componentHealthType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComponentHealthType()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIsRequired($isRequired)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsRequired()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param ComponentHealth[]
+         */
+        public function setSubComponentHealthes($subComponentHealthes)
+        {
+        }
+        /**
+         * @return ComponentHealth[]
+         */
+        public function getSubComponentHealthes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\ComponentHealth registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComponent()
-    {
-    }
-    /**
-     * @param HealthCheck[]
-     */
-    public function setComponentHealthChecks($componentHealthChecks)
-    {
-    }
-    /**
-     * @return HealthCheck[]
-     */
-    public function getComponentHealthChecks()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setComponentHealthType($componentHealthType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getComponentHealthType()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIsRequired($isRequired)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsRequired()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param ComponentHealth[]
-     */
-    public function setSubComponentHealthes($subComponentHealthes)
-    {
-    }
-    /**
-     * @return ComponentHealth[]
-     */
-    public function getSubComponentHealthes()
+    class Google_Service_WorkloadManager_ComponentHealth extends \Google\Service\WorkloadManager\ComponentHealth
     {
     }
 }

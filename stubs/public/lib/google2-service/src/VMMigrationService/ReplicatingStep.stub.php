@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class ReplicatingStep extends \Google\Model
-{
-    /**
-     * The source disks replication rate for the last 30 minutes in bytes per
-     * second.
-     *
-     * @var string
-     */
-    public $lastThirtyMinutesAverageBytesPerSecond;
-    /**
-     * The source disks replication rate for the last 2 minutes in bytes per
-     * second.
-     *
-     * @var string
-     */
-    public $lastTwoMinutesAverageBytesPerSecond;
-    /**
-     * Replicated bytes in the step.
-     *
-     * @var string
-     */
-    public $replicatedBytes;
-    /**
-     * Total bytes to be handled in the step.
-     *
-     * @var string
-     */
-    public $totalBytes;
-    /**
-     * The source disks replication rate for the last 30 minutes in bytes per
-     * second.
-     *
-     * @param string $lastThirtyMinutesAverageBytesPerSecond
-     */
-    public function setLastThirtyMinutesAverageBytesPerSecond($lastThirtyMinutesAverageBytesPerSecond)
+namespace Google\Service\VMMigrationService {
+    class ReplicatingStep extends \Google\Model
     {
+        /**
+         * The source disks replication rate for the last 30 minutes in bytes per
+         * second.
+         *
+         * @var string
+         */
+        public $lastThirtyMinutesAverageBytesPerSecond;
+        /**
+         * The source disks replication rate for the last 2 minutes in bytes per
+         * second.
+         *
+         * @var string
+         */
+        public $lastTwoMinutesAverageBytesPerSecond;
+        /**
+         * Replicated bytes in the step.
+         *
+         * @var string
+         */
+        public $replicatedBytes;
+        /**
+         * Total bytes to be handled in the step.
+         *
+         * @var string
+         */
+        public $totalBytes;
+        /**
+         * The source disks replication rate for the last 30 minutes in bytes per
+         * second.
+         *
+         * @param string $lastThirtyMinutesAverageBytesPerSecond
+         */
+        public function setLastThirtyMinutesAverageBytesPerSecond($lastThirtyMinutesAverageBytesPerSecond)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastThirtyMinutesAverageBytesPerSecond()
+        {
+        }
+        /**
+         * The source disks replication rate for the last 2 minutes in bytes per
+         * second.
+         *
+         * @param string $lastTwoMinutesAverageBytesPerSecond
+         */
+        public function setLastTwoMinutesAverageBytesPerSecond($lastTwoMinutesAverageBytesPerSecond)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastTwoMinutesAverageBytesPerSecond()
+        {
+        }
+        /**
+         * Replicated bytes in the step.
+         *
+         * @param string $replicatedBytes
+         */
+        public function setReplicatedBytes($replicatedBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReplicatedBytes()
+        {
+        }
+        /**
+         * Total bytes to be handled in the step.
+         *
+         * @param string $totalBytes
+         */
+        public function setTotalBytes($totalBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\ReplicatingStep registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastThirtyMinutesAverageBytesPerSecond()
-    {
-    }
-    /**
-     * The source disks replication rate for the last 2 minutes in bytes per
-     * second.
-     *
-     * @param string $lastTwoMinutesAverageBytesPerSecond
-     */
-    public function setLastTwoMinutesAverageBytesPerSecond($lastTwoMinutesAverageBytesPerSecond)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastTwoMinutesAverageBytesPerSecond()
-    {
-    }
-    /**
-     * Replicated bytes in the step.
-     *
-     * @param string $replicatedBytes
-     */
-    public function setReplicatedBytes($replicatedBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReplicatedBytes()
-    {
-    }
-    /**
-     * Total bytes to be handled in the step.
-     *
-     * @param string $totalBytes
-     */
-    public function setTotalBytes($totalBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalBytes()
+    class Google_Service_VMMigrationService_ReplicatingStep extends \Google\Service\VMMigrationService\ReplicatingStep
     {
     }
 }

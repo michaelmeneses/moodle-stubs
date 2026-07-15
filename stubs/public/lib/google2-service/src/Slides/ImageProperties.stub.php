@@ -21,159 +21,168 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class ImageProperties extends \Google\Model
-{
-    /**
-     * The brightness effect of the image. The value should be in the interval
-     * [-1.0, 1.0], where 0 means no effect. This property is read-only.
-     *
-     * @var float
-     */
-    public $brightness;
-    /**
-     * The contrast effect of the image. The value should be in the interval
-     * [-1.0, 1.0], where 0 means no effect. This property is read-only.
-     *
-     * @var float
-     */
-    public $contrast;
-    protected $cropPropertiesType = CropProperties::class;
-    protected $cropPropertiesDataType = '';
-    protected $linkType = Link::class;
-    protected $linkDataType = '';
-    protected $outlineType = Outline::class;
-    protected $outlineDataType = '';
-    protected $recolorType = Recolor::class;
-    protected $recolorDataType = '';
-    protected $shadowType = Shadow::class;
-    protected $shadowDataType = '';
-    /**
-     * The transparency effect of the image. The value should be in the interval
-     * [0.0, 1.0], where 0 means no effect and 1 means completely transparent.
-     * This property is read-only.
-     *
-     * @var float
-     */
-    public $transparency;
-    /**
-     * The brightness effect of the image. The value should be in the interval
-     * [-1.0, 1.0], where 0 means no effect. This property is read-only.
-     *
-     * @param float $brightness
-     */
-    public function setBrightness($brightness)
+namespace Google\Service\Slides {
+    class ImageProperties extends \Google\Model
     {
+        /**
+         * The brightness effect of the image. The value should be in the interval
+         * [-1.0, 1.0], where 0 means no effect. This property is read-only.
+         *
+         * @var float
+         */
+        public $brightness;
+        /**
+         * The contrast effect of the image. The value should be in the interval
+         * [-1.0, 1.0], where 0 means no effect. This property is read-only.
+         *
+         * @var float
+         */
+        public $contrast;
+        protected $cropPropertiesType = CropProperties::class;
+        protected $cropPropertiesDataType = '';
+        protected $linkType = Link::class;
+        protected $linkDataType = '';
+        protected $outlineType = Outline::class;
+        protected $outlineDataType = '';
+        protected $recolorType = Recolor::class;
+        protected $recolorDataType = '';
+        protected $shadowType = Shadow::class;
+        protected $shadowDataType = '';
+        /**
+         * The transparency effect of the image. The value should be in the interval
+         * [0.0, 1.0], where 0 means no effect and 1 means completely transparent.
+         * This property is read-only.
+         *
+         * @var float
+         */
+        public $transparency;
+        /**
+         * The brightness effect of the image. The value should be in the interval
+         * [-1.0, 1.0], where 0 means no effect. This property is read-only.
+         *
+         * @param float $brightness
+         */
+        public function setBrightness($brightness)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getBrightness()
+        {
+        }
+        /**
+         * The contrast effect of the image. The value should be in the interval
+         * [-1.0, 1.0], where 0 means no effect. This property is read-only.
+         *
+         * @param float $contrast
+         */
+        public function setContrast($contrast)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getContrast()
+        {
+        }
+        /**
+         * The crop properties of the image. If not set, the image is not cropped.
+         * This property is read-only.
+         *
+         * @param CropProperties $cropProperties
+         */
+        public function setCropProperties(CropProperties $cropProperties)
+        {
+        }
+        /**
+         * @return CropProperties
+         */
+        public function getCropProperties()
+        {
+        }
+        /**
+         * The hyperlink destination of the image. If unset, there is no link.
+         *
+         * @param Link $link
+         */
+        public function setLink(Link $link)
+        {
+        }
+        /**
+         * @return Link
+         */
+        public function getLink()
+        {
+        }
+        /**
+         * The outline of the image. If not set, the image has no outline.
+         *
+         * @param Outline $outline
+         */
+        public function setOutline(Outline $outline)
+        {
+        }
+        /**
+         * @return Outline
+         */
+        public function getOutline()
+        {
+        }
+        /**
+         * The recolor effect of the image. If not set, the image is not recolored.
+         * This property is read-only.
+         *
+         * @param Recolor $recolor
+         */
+        public function setRecolor(Recolor $recolor)
+        {
+        }
+        /**
+         * @return Recolor
+         */
+        public function getRecolor()
+        {
+        }
+        /**
+         * The shadow of the image. If not set, the image has no shadow. This property
+         * is read-only.
+         *
+         * @param Shadow $shadow
+         */
+        public function setShadow(Shadow $shadow)
+        {
+        }
+        /**
+         * @return Shadow
+         */
+        public function getShadow()
+        {
+        }
+        /**
+         * The transparency effect of the image. The value should be in the interval
+         * [0.0, 1.0], where 0 means no effect and 1 means completely transparent.
+         * This property is read-only.
+         *
+         * @param float $transparency
+         */
+        public function setTransparency($transparency)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getTransparency()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Slides\ImageProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBrightness()
-    {
-    }
-    /**
-     * The contrast effect of the image. The value should be in the interval
-     * [-1.0, 1.0], where 0 means no effect. This property is read-only.
-     *
-     * @param float $contrast
-     */
-    public function setContrast($contrast)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getContrast()
-    {
-    }
-    /**
-     * The crop properties of the image. If not set, the image is not cropped.
-     * This property is read-only.
-     *
-     * @param CropProperties $cropProperties
-     */
-    public function setCropProperties(CropProperties $cropProperties)
-    {
-    }
-    /**
-     * @return CropProperties
-     */
-    public function getCropProperties()
-    {
-    }
-    /**
-     * The hyperlink destination of the image. If unset, there is no link.
-     *
-     * @param Link $link
-     */
-    public function setLink(Link $link)
-    {
-    }
-    /**
-     * @return Link
-     */
-    public function getLink()
-    {
-    }
-    /**
-     * The outline of the image. If not set, the image has no outline.
-     *
-     * @param Outline $outline
-     */
-    public function setOutline(Outline $outline)
-    {
-    }
-    /**
-     * @return Outline
-     */
-    public function getOutline()
-    {
-    }
-    /**
-     * The recolor effect of the image. If not set, the image is not recolored.
-     * This property is read-only.
-     *
-     * @param Recolor $recolor
-     */
-    public function setRecolor(Recolor $recolor)
-    {
-    }
-    /**
-     * @return Recolor
-     */
-    public function getRecolor()
-    {
-    }
-    /**
-     * The shadow of the image. If not set, the image has no shadow. This property
-     * is read-only.
-     *
-     * @param Shadow $shadow
-     */
-    public function setShadow(Shadow $shadow)
-    {
-    }
-    /**
-     * @return Shadow
-     */
-    public function getShadow()
-    {
-    }
-    /**
-     * The transparency effect of the image. The value should be in the interval
-     * [0.0, 1.0], where 0 means no effect and 1 means completely transparent.
-     * This property is read-only.
-     *
-     * @param float $transparency
-     */
-    public function setTransparency($transparency)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getTransparency()
+    class Google_Service_Slides_ImageProperties extends \Google\Service\Slides\ImageProperties
     {
     }
 }

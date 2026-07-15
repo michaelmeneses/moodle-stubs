@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1ConversationSignals extends \Google\Model
-{
-    protected $turnSignalsType = GoogleCloudDialogflowCxV3beta1TurnSignals::class;
-    protected $turnSignalsDataType = '';
-    /**
-     * Required. Turn signals for the current turn.
-     *
-     * @param GoogleCloudDialogflowCxV3beta1TurnSignals $turnSignals
-     */
-    public function setTurnSignals(GoogleCloudDialogflowCxV3beta1TurnSignals $turnSignals)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1ConversationSignals extends \Google\Model
     {
+        protected $turnSignalsType = GoogleCloudDialogflowCxV3beta1TurnSignals::class;
+        protected $turnSignalsDataType = '';
+        /**
+         * Required. Turn signals for the current turn.
+         *
+         * @param GoogleCloudDialogflowCxV3beta1TurnSignals $turnSignals
+         */
+        public function setTurnSignals(GoogleCloudDialogflowCxV3beta1TurnSignals $turnSignals)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3beta1TurnSignals
+         */
+        public function getTurnSignals()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3beta1TurnSignals
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1ConversationSignals registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTurnSignals()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1ConversationSignals extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1ConversationSignals
     {
     }
 }

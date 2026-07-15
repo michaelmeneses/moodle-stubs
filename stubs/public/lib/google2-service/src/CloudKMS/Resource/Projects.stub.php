@@ -21,90 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudkmsService = new Google\Service\CloudKMS(...);
- *   $projects = $cloudkmsService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\CloudKMS\Resource {
+    use Google\Service\CloudKMS\KeyAccessJustificationsPolicyConfig;
+    use Google\Service\CloudKMS\ShowEffectiveAutokeyConfigResponse;
+    use Google\Service\CloudKMS\ShowEffectiveKeyAccessJustificationsEnrollmentConfigResponse;
+    use Google\Service\CloudKMS\ShowEffectiveKeyAccessJustificationsPolicyConfigResponse;
     /**
-     * Gets the KeyAccessJustificationsPolicyConfig for a given organization,
-     * folder, or project. (projects.getKajPolicyConfig)
-     *
-     * @param string $name Required. The name of the
-     * KeyAccessJustificationsPolicyConfig to get.
-     * @param array $optParams Optional parameters.
-     * @return KeyAccessJustificationsPolicyConfig
-     * @throws \Google\Service\Exception
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudkmsService = new Google\Service\CloudKMS(...);
+     *   $projects = $cloudkmsService->projects;
+     *  </code>
      */
-    public function getKajPolicyConfig($name, $optParams = [])
+    class Projects extends \Google\Service\Resource
     {
+        /**
+         * Gets the KeyAccessJustificationsPolicyConfig for a given organization,
+         * folder, or project. (projects.getKajPolicyConfig)
+         *
+         * @param string $name Required. The name of the
+         * KeyAccessJustificationsPolicyConfig to get.
+         * @param array $optParams Optional parameters.
+         * @return KeyAccessJustificationsPolicyConfig
+         * @throws \Google\Service\Exception
+         */
+        public function getKajPolicyConfig($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns the effective Cloud KMS Autokey configuration for a given project.
+         * (projects.showEffectiveAutokeyConfig)
+         *
+         * @param string $parent Required. Name of the resource project to the show
+         * effective Cloud KMS Autokey configuration for. This may be helpful for
+         * interrogating the effect of nested folder configurations on a given resource
+         * project.
+         * @param array $optParams Optional parameters.
+         * @return ShowEffectiveAutokeyConfigResponse
+         * @throws \Google\Service\Exception
+         */
+        public function showEffectiveAutokeyConfig($parent, $optParams = [])
+        {
+        }
+        /**
+         * Returns the KeyAccessJustificationsEnrollmentConfig of the resource closest
+         * to the given project in hierarchy.
+         * (projects.showEffectiveKeyAccessJustificationsEnrollmentConfig)
+         *
+         * @param string $project Required. The number or id of the project to get the
+         * effective KeyAccessJustificationsEnrollmentConfig for.
+         * @param array $optParams Optional parameters.
+         * @return ShowEffectiveKeyAccessJustificationsEnrollmentConfigResponse
+         * @throws \Google\Service\Exception
+         */
+        public function showEffectiveKeyAccessJustificationsEnrollmentConfig($project, $optParams = [])
+        {
+        }
+        /**
+         * Returns the KeyAccessJustificationsPolicyConfig of the resource closest to
+         * the given project in hierarchy.
+         * (projects.showEffectiveKeyAccessJustificationsPolicyConfig)
+         *
+         * @param string $project Required. The number or id of the project to get the
+         * effective KeyAccessJustificationsPolicyConfig. In the format of
+         * "projects/{|}"
+         * @param array $optParams Optional parameters.
+         * @return ShowEffectiveKeyAccessJustificationsPolicyConfigResponse
+         * @throws \Google\Service\Exception
+         */
+        public function showEffectiveKeyAccessJustificationsPolicyConfig($project, $optParams = [])
+        {
+        }
+        /**
+         * Updates the KeyAccessJustificationsPolicyConfig for a given organization,
+         * folder, or project. (projects.updateKajPolicyConfig)
+         *
+         * @param string $name Identifier. The resource name for this
+         * KeyAccessJustificationsPolicyConfig in the format of
+         * "{organizations|folders|projects}/kajPolicyConfig".
+         * @param KeyAccessJustificationsPolicyConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. The list of fields to update.
+         * @return KeyAccessJustificationsPolicyConfig
+         * @throws \Google\Service\Exception
+         */
+        public function updateKajPolicyConfig($name, KeyAccessJustificationsPolicyConfig $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns the effective Cloud KMS Autokey configuration for a given project.
-     * (projects.showEffectiveAutokeyConfig)
-     *
-     * @param string $parent Required. Name of the resource project to the show
-     * effective Cloud KMS Autokey configuration for. This may be helpful for
-     * interrogating the effect of nested folder configurations on a given resource
-     * project.
-     * @param array $optParams Optional parameters.
-     * @return ShowEffectiveAutokeyConfigResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudKMS\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function showEffectiveAutokeyConfig($parent, $optParams = [])
-    {
-    }
-    /**
-     * Returns the KeyAccessJustificationsEnrollmentConfig of the resource closest
-     * to the given project in hierarchy.
-     * (projects.showEffectiveKeyAccessJustificationsEnrollmentConfig)
-     *
-     * @param string $project Required. The number or id of the project to get the
-     * effective KeyAccessJustificationsEnrollmentConfig for.
-     * @param array $optParams Optional parameters.
-     * @return ShowEffectiveKeyAccessJustificationsEnrollmentConfigResponse
-     * @throws \Google\Service\Exception
-     */
-    public function showEffectiveKeyAccessJustificationsEnrollmentConfig($project, $optParams = [])
-    {
-    }
-    /**
-     * Returns the KeyAccessJustificationsPolicyConfig of the resource closest to
-     * the given project in hierarchy.
-     * (projects.showEffectiveKeyAccessJustificationsPolicyConfig)
-     *
-     * @param string $project Required. The number or id of the project to get the
-     * effective KeyAccessJustificationsPolicyConfig. In the format of
-     * "projects/{|}"
-     * @param array $optParams Optional parameters.
-     * @return ShowEffectiveKeyAccessJustificationsPolicyConfigResponse
-     * @throws \Google\Service\Exception
-     */
-    public function showEffectiveKeyAccessJustificationsPolicyConfig($project, $optParams = [])
-    {
-    }
-    /**
-     * Updates the KeyAccessJustificationsPolicyConfig for a given organization,
-     * folder, or project. (projects.updateKajPolicyConfig)
-     *
-     * @param string $name Identifier. The resource name for this
-     * KeyAccessJustificationsPolicyConfig in the format of
-     * "{organizations|folders|projects}/kajPolicyConfig".
-     * @param KeyAccessJustificationsPolicyConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. The list of fields to update.
-     * @return KeyAccessJustificationsPolicyConfig
-     * @throws \Google\Service\Exception
-     */
-    public function updateKajPolicyConfig($name, KeyAccessJustificationsPolicyConfig $postBody, $optParams = [])
+    class Google_Service_CloudKMS_Resource_Projects extends \Google\Service\CloudKMS\Resource\Projects
     {
     }
 }

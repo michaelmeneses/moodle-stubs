@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpression extends \Google\Model
-{
-    protected $andGroupType = GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpressionList::class;
-    protected $andGroupDataType = '';
-    protected $filterType = GoogleAnalyticsAdminV1alphaExpandedDataSetFilter::class;
-    protected $filterDataType = '';
-    protected $notExpressionType = GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpression::class;
-    protected $notExpressionDataType = '';
-    /**
-     * @param GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpressionList
-     */
-    public function setAndGroup(GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpressionList $andGroup)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpression extends \Google\Model
     {
+        protected $andGroupType = GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpressionList::class;
+        protected $andGroupDataType = '';
+        protected $filterType = GoogleAnalyticsAdminV1alphaExpandedDataSetFilter::class;
+        protected $filterDataType = '';
+        protected $notExpressionType = GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpression::class;
+        protected $notExpressionDataType = '';
+        /**
+         * @param GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpressionList
+         */
+        public function setAndGroup(GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpressionList $andGroup)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpressionList
+         */
+        public function getAndGroup()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaExpandedDataSetFilter
+         */
+        public function setFilter(GoogleAnalyticsAdminV1alphaExpandedDataSetFilter $filter)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaExpandedDataSetFilter
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpression
+         */
+        public function setNotExpression(GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpression $notExpression)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpression
+         */
+        public function getNotExpression()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpressionList
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpression registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndGroup()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaExpandedDataSetFilter
-     */
-    public function setFilter(GoogleAnalyticsAdminV1alphaExpandedDataSetFilter $filter)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaExpandedDataSetFilter
-     */
-    public function getFilter()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpression
-     */
-    public function setNotExpression(GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpression $notExpression)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpression
-     */
-    public function getNotExpression()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpression extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpression
     {
     }
 }

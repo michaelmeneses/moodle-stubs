@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1TagField extends \Google\Model
-{
-    public $boolValue;
-    public $displayName;
-    public $doubleValue;
-    protected $enumValueType = GoogleCloudDatacatalogV1beta1TagFieldEnumValue::class;
-    protected $enumValueDataType = '';
-    public $order;
-    public $stringValue;
-    public $timestampValue;
-    public function setBoolValue($boolValue)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1TagField extends \Google\Model
     {
+        public $boolValue;
+        public $displayName;
+        public $doubleValue;
+        protected $enumValueType = GoogleCloudDatacatalogV1beta1TagFieldEnumValue::class;
+        protected $enumValueDataType = '';
+        public $order;
+        public $stringValue;
+        public $timestampValue;
+        public function setBoolValue($boolValue)
+        {
+        }
+        public function getBoolValue()
+        {
+        }
+        public function setDisplayName($displayName)
+        {
+        }
+        public function getDisplayName()
+        {
+        }
+        public function setDoubleValue($doubleValue)
+        {
+        }
+        public function getDoubleValue()
+        {
+        }
+        /**
+         * @param GoogleCloudDatacatalogV1beta1TagFieldEnumValue
+         */
+        public function setEnumValue(GoogleCloudDatacatalogV1beta1TagFieldEnumValue $enumValue)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1TagFieldEnumValue
+         */
+        public function getEnumValue()
+        {
+        }
+        public function setOrder($order)
+        {
+        }
+        public function getOrder()
+        {
+        }
+        public function setStringValue($stringValue)
+        {
+        }
+        public function getStringValue()
+        {
+        }
+        public function setTimestampValue($timestampValue)
+        {
+        }
+        public function getTimestampValue()
+        {
+        }
     }
-    public function getBoolValue()
-    {
-    }
-    public function setDisplayName($displayName)
-    {
-    }
-    public function getDisplayName()
-    {
-    }
-    public function setDoubleValue($doubleValue)
-    {
-    }
-    public function getDoubleValue()
-    {
-    }
+}
+namespace {
     /**
-     * @param GoogleCloudDatacatalogV1beta1TagFieldEnumValue
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1TagField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setEnumValue(GoogleCloudDatacatalogV1beta1TagFieldEnumValue $enumValue)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1beta1TagFieldEnumValue
-     */
-    public function getEnumValue()
-    {
-    }
-    public function setOrder($order)
-    {
-    }
-    public function getOrder()
-    {
-    }
-    public function setStringValue($stringValue)
-    {
-    }
-    public function getStringValue()
-    {
-    }
-    public function setTimestampValue($timestampValue)
-    {
-    }
-    public function getTimestampValue()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1TagField extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1TagField
     {
     }
 }

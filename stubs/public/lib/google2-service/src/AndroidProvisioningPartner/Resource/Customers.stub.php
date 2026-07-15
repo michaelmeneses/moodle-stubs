@@ -21,31 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner\Resource;
-
-/**
- * The "customers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androiddeviceprovisioningService = new Google\Service\AndroidProvisioningPartner(...);
- *   $customers = $androiddeviceprovisioningService->customers;
- *  </code>
- */
-class Customers extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidProvisioningPartner\Resource {
+    use Google\Service\AndroidProvisioningPartner\CustomerListCustomersResponse;
     /**
-     * Lists the user's customer accounts. (customers.listCustomers)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Required. The maximum number of customers to show in
-     * a page of results. A number between 1 and 100 (inclusive).
-     * @opt_param string pageToken A token specifying which result page to return.
-     * This field has custom validations in ListCustomersRequestValidator
-     * @return CustomerListCustomersResponse
-     * @throws \Google\Service\Exception
+     * The "customers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androiddeviceprovisioningService = new Google\Service\AndroidProvisioningPartner(...);
+     *   $customers = $androiddeviceprovisioningService->customers;
+     *  </code>
      */
-    public function listCustomers($optParams = [])
+    class Customers extends \Google\Service\Resource
+    {
+        /**
+         * Lists the user's customer accounts. (customers.listCustomers)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Required. The maximum number of customers to show in
+         * a page of results. A number between 1 and 100 (inclusive).
+         * @opt_param string pageToken A token specifying which result page to return.
+         * This field has custom validations in ListCustomersRequestValidator
+         * @return CustomerListCustomersResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listCustomers($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\Resource\Customers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AndroidProvisioningPartner_Resource_Customers extends \Google\Service\AndroidProvisioningPartner\Resource\Customers
     {
     }
 }

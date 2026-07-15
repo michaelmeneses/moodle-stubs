@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class SearchGoogleLocationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'googleLocations';
-    protected $googleLocationsType = GoogleLocation::class;
-    protected $googleLocationsDataType = 'array';
-    /**
-     * A collection of GoogleLocations that are potential matches to the specified
-     * request, listed in order from most to least accuracy.
-     *
-     * @param GoogleLocation[] $googleLocations
-     */
-    public function setGoogleLocations($googleLocations)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class SearchGoogleLocationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'googleLocations';
+        protected $googleLocationsType = GoogleLocation::class;
+        protected $googleLocationsDataType = 'array';
+        /**
+         * A collection of GoogleLocations that are potential matches to the specified
+         * request, listed in order from most to least accuracy.
+         *
+         * @param GoogleLocation[] $googleLocations
+         */
+        public function setGoogleLocations($googleLocations)
+        {
+        }
+        /**
+         * @return GoogleLocation[]
+         */
+        public function getGoogleLocations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleLocation[]
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\SearchGoogleLocationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGoogleLocations()
+    class Google_Service_MyBusinessBusinessInformation_SearchGoogleLocationsResponse extends \Google\Service\MyBusinessBusinessInformation\SearchGoogleLocationsResponse
     {
     }
 }

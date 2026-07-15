@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequestResourceArrayResource extends \Google\Model
-{
-    /**
-     * ResourceType not specified.
-     */
-    public const TYPE_RESOURCE_TYPE_UNSPECIFIED = 'RESOURCE_TYPE_UNSPECIFIED';
-    /**
-     * Resource is an Apigee Proxy.
-     */
-    public const TYPE_API_PROXY = 'API_PROXY';
-    /**
-     * Resource is an API Hub deployment.
-     */
-    public const TYPE_API_HUB_DEPLOYMENT = 'API_HUB_DEPLOYMENT';
-    /**
-     * Required. Name of this resource. For an Apigee API Proxy, this should be
-     * the id of the API proxy. For an API Hub Deployment, this should be the id
-     * of the deployment.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Type of this resource.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Required. Name of this resource. For an Apigee API Proxy, this should be
-     * the id of the API proxy. For an API Hub Deployment, this should be the id
-     * of the deployment.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequestResourceArrayResource extends \Google\Model
     {
+        /**
+         * ResourceType not specified.
+         */
+        public const TYPE_RESOURCE_TYPE_UNSPECIFIED = 'RESOURCE_TYPE_UNSPECIFIED';
+        /**
+         * Resource is an Apigee Proxy.
+         */
+        public const TYPE_API_PROXY = 'API_PROXY';
+        /**
+         * Resource is an API Hub deployment.
+         */
+        public const TYPE_API_HUB_DEPLOYMENT = 'API_HUB_DEPLOYMENT';
+        /**
+         * Required. Name of this resource. For an Apigee API Proxy, this should be
+         * the id of the API proxy. For an API Hub Deployment, this should be the id
+         * of the deployment.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Type of this resource.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Required. Name of this resource. For an Apigee API Proxy, this should be
+         * the id of the API proxy. For an API Hub Deployment, this should be the id
+         * of the deployment.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Type of this resource.
+         *
+         * Accepted values: RESOURCE_TYPE_UNSPECIFIED, API_PROXY, API_HUB_DEPLOYMENT
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequestResourceArrayResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Type of this resource.
-     *
-     * Accepted values: RESOURCE_TYPE_UNSPECIFIED, API_PROXY, API_HUB_DEPLOYMENT
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Apigee_GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequestResourceArrayResource extends \Google\Service\Apigee\GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequestResourceArrayResource
     {
     }
 }

@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataQualityResultAnomalyDetectionGeneratedAssets extends \Google\Model
-{
-    /**
-     * Output only. The intermediate table for data anomaly detection. Format:
-     * PROJECT_ID.DATASET_ID.TABLE_ID
-     *
-     * @var string
-     */
-    public $dataIntermediateTable;
-    /**
-     * Output only. The intermediate table for freshness anomaly detection.
-     * Format: PROJECT_ID.DATASET_ID.TABLE_ID
-     *
-     * @var string
-     */
-    public $freshnessIntermediateTable;
-    /**
-     * Output only. The result table for anomaly detection. Format:
-     * PROJECT_ID.DATASET_ID.TABLE_ID If the result table is set at
-     * AnomalyDetectionAssets, the result table here would be the same as the one
-     * set in the AnomalyDetectionAssets.result_table.
-     *
-     * @var string
-     */
-    public $resultTable;
-    /**
-     * Output only. The intermediate table for volume anomaly detection. Format:
-     * PROJECT_ID.DATASET_ID.TABLE_ID
-     *
-     * @var string
-     */
-    public $volumeIntermediateTable;
-    /**
-     * Output only. The intermediate table for data anomaly detection. Format:
-     * PROJECT_ID.DATASET_ID.TABLE_ID
-     *
-     * @param string $dataIntermediateTable
-     */
-    public function setDataIntermediateTable($dataIntermediateTable)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataQualityResultAnomalyDetectionGeneratedAssets extends \Google\Model
     {
+        /**
+         * Output only. The intermediate table for data anomaly detection. Format:
+         * PROJECT_ID.DATASET_ID.TABLE_ID
+         *
+         * @var string
+         */
+        public $dataIntermediateTable;
+        /**
+         * Output only. The intermediate table for freshness anomaly detection.
+         * Format: PROJECT_ID.DATASET_ID.TABLE_ID
+         *
+         * @var string
+         */
+        public $freshnessIntermediateTable;
+        /**
+         * Output only. The result table for anomaly detection. Format:
+         * PROJECT_ID.DATASET_ID.TABLE_ID If the result table is set at
+         * AnomalyDetectionAssets, the result table here would be the same as the one
+         * set in the AnomalyDetectionAssets.result_table.
+         *
+         * @var string
+         */
+        public $resultTable;
+        /**
+         * Output only. The intermediate table for volume anomaly detection. Format:
+         * PROJECT_ID.DATASET_ID.TABLE_ID
+         *
+         * @var string
+         */
+        public $volumeIntermediateTable;
+        /**
+         * Output only. The intermediate table for data anomaly detection. Format:
+         * PROJECT_ID.DATASET_ID.TABLE_ID
+         *
+         * @param string $dataIntermediateTable
+         */
+        public function setDataIntermediateTable($dataIntermediateTable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataIntermediateTable()
+        {
+        }
+        /**
+         * Output only. The intermediate table for freshness anomaly detection.
+         * Format: PROJECT_ID.DATASET_ID.TABLE_ID
+         *
+         * @param string $freshnessIntermediateTable
+         */
+        public function setFreshnessIntermediateTable($freshnessIntermediateTable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFreshnessIntermediateTable()
+        {
+        }
+        /**
+         * Output only. The result table for anomaly detection. Format:
+         * PROJECT_ID.DATASET_ID.TABLE_ID If the result table is set at
+         * AnomalyDetectionAssets, the result table here would be the same as the one
+         * set in the AnomalyDetectionAssets.result_table.
+         *
+         * @param string $resultTable
+         */
+        public function setResultTable($resultTable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultTable()
+        {
+        }
+        /**
+         * Output only. The intermediate table for volume anomaly detection. Format:
+         * PROJECT_ID.DATASET_ID.TABLE_ID
+         *
+         * @param string $volumeIntermediateTable
+         */
+        public function setVolumeIntermediateTable($volumeIntermediateTable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVolumeIntermediateTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualityResultAnomalyDetectionGeneratedAssets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataIntermediateTable()
-    {
-    }
-    /**
-     * Output only. The intermediate table for freshness anomaly detection.
-     * Format: PROJECT_ID.DATASET_ID.TABLE_ID
-     *
-     * @param string $freshnessIntermediateTable
-     */
-    public function setFreshnessIntermediateTable($freshnessIntermediateTable)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFreshnessIntermediateTable()
-    {
-    }
-    /**
-     * Output only. The result table for anomaly detection. Format:
-     * PROJECT_ID.DATASET_ID.TABLE_ID If the result table is set at
-     * AnomalyDetectionAssets, the result table here would be the same as the one
-     * set in the AnomalyDetectionAssets.result_table.
-     *
-     * @param string $resultTable
-     */
-    public function setResultTable($resultTable)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResultTable()
-    {
-    }
-    /**
-     * Output only. The intermediate table for volume anomaly detection. Format:
-     * PROJECT_ID.DATASET_ID.TABLE_ID
-     *
-     * @param string $volumeIntermediateTable
-     */
-    public function setVolumeIntermediateTable($volumeIntermediateTable)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVolumeIntermediateTable()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataQualityResultAnomalyDetectionGeneratedAssets extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualityResultAnomalyDetectionGeneratedAssets
     {
     }
 }

@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class NetworkPerformanceConfig extends \Google\Model
-{
-    /**
-     * Default value
-     */
-    public const TOTAL_EGRESS_BANDWIDTH_TIER_TIER_UNSPECIFIED = 'TIER_UNSPECIFIED';
-    /**
-     * Higher bandwidth, actual values based on VM size.
-     */
-    public const TOTAL_EGRESS_BANDWIDTH_TIER_TIER_1 = 'TIER_1';
-    /**
-     * Specifies the total network bandwidth tier for the NodePool.
-     *
-     * @var string
-     */
-    public $totalEgressBandwidthTier;
-    /**
-     * Specifies the total network bandwidth tier for the NodePool.
-     *
-     * Accepted values: TIER_UNSPECIFIED, TIER_1
-     *
-     * @param self::TOTAL_EGRESS_BANDWIDTH_TIER_* $totalEgressBandwidthTier
-     */
-    public function setTotalEgressBandwidthTier($totalEgressBandwidthTier)
+namespace Google\Service\Container {
+    class NetworkPerformanceConfig extends \Google\Model
     {
+        /**
+         * Default value
+         */
+        public const TOTAL_EGRESS_BANDWIDTH_TIER_TIER_UNSPECIFIED = 'TIER_UNSPECIFIED';
+        /**
+         * Higher bandwidth, actual values based on VM size.
+         */
+        public const TOTAL_EGRESS_BANDWIDTH_TIER_TIER_1 = 'TIER_1';
+        /**
+         * Specifies the total network bandwidth tier for the NodePool.
+         *
+         * @var string
+         */
+        public $totalEgressBandwidthTier;
+        /**
+         * Specifies the total network bandwidth tier for the NodePool.
+         *
+         * Accepted values: TIER_UNSPECIFIED, TIER_1
+         *
+         * @param self::TOTAL_EGRESS_BANDWIDTH_TIER_* $totalEgressBandwidthTier
+         */
+        public function setTotalEgressBandwidthTier($totalEgressBandwidthTier)
+        {
+        }
+        /**
+         * @return self::TOTAL_EGRESS_BANDWIDTH_TIER_*
+         */
+        public function getTotalEgressBandwidthTier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TOTAL_EGRESS_BANDWIDTH_TIER_*
+     * Runtime class alias of \Google\Service\Container\NetworkPerformanceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTotalEgressBandwidthTier()
+    class Google_Service_Container_NetworkPerformanceConfig extends \Google\Service\Container\NetworkPerformanceConfig
     {
     }
 }

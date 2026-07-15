@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class Consumer extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $endpointLocation;
-    /**
-     * @var string
-     */
-    public $endpointUri;
-    /**
-     * @var string
-     */
-    public $subnetwork;
-    /**
-     * @param string
-     */
-    public function setEndpointLocation($endpointLocation)
+namespace Google\Service\DataprocMetastore {
+    class Consumer extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $endpointLocation;
+        /**
+         * @var string
+         */
+        public $endpointUri;
+        /**
+         * @var string
+         */
+        public $subnetwork;
+        /**
+         * @param string
+         */
+        public function setEndpointLocation($endpointLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndpointLocation()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEndpointUri($endpointUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndpointUri()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSubnetwork($subnetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataprocMetastore\Consumer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndpointLocation()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEndpointUri($endpointUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndpointUri()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSubnetwork($subnetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubnetwork()
+    class Google_Service_DataprocMetastore_Consumer extends \Google\Service\DataprocMetastore\Consumer
     {
     }
 }

@@ -29,6 +29,9 @@
  */
 namespace core\output;
 
+use lang_string;
+use moodle_url;
+use stdClass;
 /**
  * The chooser renderable class.
  *

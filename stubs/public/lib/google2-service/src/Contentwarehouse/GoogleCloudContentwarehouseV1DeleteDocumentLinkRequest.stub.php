@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1DeleteDocumentLinkRequest extends \Google\Model
-{
-    protected $requestMetadataType = GoogleCloudContentwarehouseV1RequestMetadata::class;
-    protected $requestMetadataDataType = '';
-    /**
-     * The meta information collected about the document creator, used to enforce
-     * access control for the service.
-     *
-     * @param GoogleCloudContentwarehouseV1RequestMetadata $requestMetadata
-     */
-    public function setRequestMetadata(GoogleCloudContentwarehouseV1RequestMetadata $requestMetadata)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1DeleteDocumentLinkRequest extends \Google\Model
     {
+        protected $requestMetadataType = GoogleCloudContentwarehouseV1RequestMetadata::class;
+        protected $requestMetadataDataType = '';
+        /**
+         * The meta information collected about the document creator, used to enforce
+         * access control for the service.
+         *
+         * @param GoogleCloudContentwarehouseV1RequestMetadata $requestMetadata
+         */
+        public function setRequestMetadata(GoogleCloudContentwarehouseV1RequestMetadata $requestMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1RequestMetadata
+         */
+        public function getRequestMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContentwarehouseV1RequestMetadata
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1DeleteDocumentLinkRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequestMetadata()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1DeleteDocumentLinkRequest extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1DeleteDocumentLinkRequest
     {
     }
 }

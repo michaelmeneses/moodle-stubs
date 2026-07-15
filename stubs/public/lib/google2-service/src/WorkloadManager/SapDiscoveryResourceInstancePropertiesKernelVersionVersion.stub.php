@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class SapDiscoveryResourceInstancePropertiesKernelVersionVersion extends \Google\Model
-{
-    /**
-     * Optional. The build version number.
-     *
-     * @var int
-     */
-    public $build;
-    /**
-     * Optional. The major version number.
-     *
-     * @var int
-     */
-    public $major;
-    /**
-     * Optional. The minor version number.
-     *
-     * @var int
-     */
-    public $minor;
-    /**
-     * Optional. The patch version number.
-     *
-     * @var int
-     */
-    public $patch;
-    /**
-     * Optional. A catch-all for any unparsed version components. This is in case
-     * the number of points in the version string exceeds the expected count of 4.
-     *
-     * @var string
-     */
-    public $remainder;
-    /**
-     * Optional. The build version number.
-     *
-     * @param int $build
-     */
-    public function setBuild($build)
+namespace Google\Service\WorkloadManager {
+    class SapDiscoveryResourceInstancePropertiesKernelVersionVersion extends \Google\Model
     {
+        /**
+         * Optional. The build version number.
+         *
+         * @var int
+         */
+        public $build;
+        /**
+         * Optional. The major version number.
+         *
+         * @var int
+         */
+        public $major;
+        /**
+         * Optional. The minor version number.
+         *
+         * @var int
+         */
+        public $minor;
+        /**
+         * Optional. The patch version number.
+         *
+         * @var int
+         */
+        public $patch;
+        /**
+         * Optional. A catch-all for any unparsed version components. This is in case
+         * the number of points in the version string exceeds the expected count of 4.
+         *
+         * @var string
+         */
+        public $remainder;
+        /**
+         * Optional. The build version number.
+         *
+         * @param int $build
+         */
+        public function setBuild($build)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getBuild()
+        {
+        }
+        /**
+         * Optional. The major version number.
+         *
+         * @param int $major
+         */
+        public function setMajor($major)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMajor()
+        {
+        }
+        /**
+         * Optional. The minor version number.
+         *
+         * @param int $minor
+         */
+        public function setMinor($minor)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinor()
+        {
+        }
+        /**
+         * Optional. The patch version number.
+         *
+         * @param int $patch
+         */
+        public function setPatch($patch)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPatch()
+        {
+        }
+        /**
+         * Optional. A catch-all for any unparsed version components. This is in case
+         * the number of points in the version string exceeds the expected count of 4.
+         *
+         * @param string $remainder
+         */
+        public function setRemainder($remainder)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemainder()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\WorkloadManager\SapDiscoveryResourceInstancePropertiesKernelVersionVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuild()
-    {
-    }
-    /**
-     * Optional. The major version number.
-     *
-     * @param int $major
-     */
-    public function setMajor($major)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMajor()
-    {
-    }
-    /**
-     * Optional. The minor version number.
-     *
-     * @param int $minor
-     */
-    public function setMinor($minor)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinor()
-    {
-    }
-    /**
-     * Optional. The patch version number.
-     *
-     * @param int $patch
-     */
-    public function setPatch($patch)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPatch()
-    {
-    }
-    /**
-     * Optional. A catch-all for any unparsed version components. This is in case
-     * the number of points in the version string exceeds the expected count of 4.
-     *
-     * @param string $remainder
-     */
-    public function setRemainder($remainder)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRemainder()
+    class Google_Service_WorkloadManager_SapDiscoveryResourceInstancePropertiesKernelVersionVersion extends \Google\Service\WorkloadManager\SapDiscoveryResourceInstancePropertiesKernelVersionVersion
     {
     }
 }

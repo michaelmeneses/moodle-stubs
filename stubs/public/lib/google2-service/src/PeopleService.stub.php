@@ -21,61 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for PeopleService (v1).
- *
- * <p>
- * Provides access to information about profiles and contacts.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/people/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class PeopleService extends \Google\Service
-{
-    /** See, edit, download, and permanently delete your contacts. */
-    const CONTACTS = "https://www.googleapis.com/auth/contacts";
-    /** See and download contact info automatically saved in your "Other contacts". */
-    const CONTACTS_OTHER_READONLY = "https://www.googleapis.com/auth/contacts.other.readonly";
-    /** See and download your contacts. */
-    const CONTACTS_READONLY = "https://www.googleapis.com/auth/contacts.readonly";
-    /** See and download your organization's Google Workspace directory. */
-    const DIRECTORY_READONLY = "https://www.googleapis.com/auth/directory.readonly";
-    /** View your street addresses. */
-    const USER_ADDRESSES_READ = "https://www.googleapis.com/auth/user.addresses.read";
-    /** See and download your exact date of birth. */
-    const USER_BIRTHDAY_READ = "https://www.googleapis.com/auth/user.birthday.read";
-    /** See and download all of your Google Account email addresses. */
-    const USER_EMAILS_READ = "https://www.googleapis.com/auth/user.emails.read";
-    /** See your gender. */
-    const USER_GENDER_READ = "https://www.googleapis.com/auth/user.gender.read";
-    /** See your education, work history and org info. */
-    const USER_ORGANIZATION_READ = "https://www.googleapis.com/auth/user.organization.read";
-    /** See and download your personal phone numbers. */
-    const USER_PHONENUMBERS_READ = "https://www.googleapis.com/auth/user.phonenumbers.read";
-    /** See your primary Google Account email address. */
-    const USERINFO_EMAIL = "https://www.googleapis.com/auth/userinfo.email";
-    /** See your personal info, including any personal info you've made publicly available. */
-    const USERINFO_PROFILE = "https://www.googleapis.com/auth/userinfo.profile";
-    public $contactGroups;
-    public $contactGroups_members;
-    public $otherContacts;
-    public $people;
-    public $people_connections;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the PeopleService service.
+     * Service definition for PeopleService (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Provides access to information about profiles and contacts.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/people/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class PeopleService extends \Google\Service
+    {
+        /** See, edit, download, and permanently delete your contacts. */
+        const CONTACTS = "https://www.googleapis.com/auth/contacts";
+        /** See and download contact info automatically saved in your "Other contacts". */
+        const CONTACTS_OTHER_READONLY = "https://www.googleapis.com/auth/contacts.other.readonly";
+        /** See and download your contacts. */
+        const CONTACTS_READONLY = "https://www.googleapis.com/auth/contacts.readonly";
+        /** See and download your organization's Google Workspace directory. */
+        const DIRECTORY_READONLY = "https://www.googleapis.com/auth/directory.readonly";
+        /** View your street addresses. */
+        const USER_ADDRESSES_READ = "https://www.googleapis.com/auth/user.addresses.read";
+        /** See and download your exact date of birth. */
+        const USER_BIRTHDAY_READ = "https://www.googleapis.com/auth/user.birthday.read";
+        /** See and download all of your Google Account email addresses. */
+        const USER_EMAILS_READ = "https://www.googleapis.com/auth/user.emails.read";
+        /** See your gender. */
+        const USER_GENDER_READ = "https://www.googleapis.com/auth/user.gender.read";
+        /** See your education, work history and org info. */
+        const USER_ORGANIZATION_READ = "https://www.googleapis.com/auth/user.organization.read";
+        /** See and download your personal phone numbers. */
+        const USER_PHONENUMBERS_READ = "https://www.googleapis.com/auth/user.phonenumbers.read";
+        /** See your primary Google Account email address. */
+        const USERINFO_EMAIL = "https://www.googleapis.com/auth/userinfo.email";
+        /** See your personal info, including any personal info you've made publicly available. */
+        const USERINFO_PROFILE = "https://www.googleapis.com/auth/userinfo.profile";
+        public $contactGroups;
+        public $contactGroups_members;
+        public $otherContacts;
+        public $people;
+        public $people_connections;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the PeopleService service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PeopleService registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PeopleService extends \Google\Service\PeopleService
     {
     }
 }

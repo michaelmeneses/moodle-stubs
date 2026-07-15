@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EvaluationDataset extends \Google\Model
-{
-    protected $bigquerySourceType = GoogleCloudAiplatformV1BigQuerySource::class;
-    protected $bigquerySourceDataType = '';
-    protected $gcsSourceType = GoogleCloudAiplatformV1GcsSource::class;
-    protected $gcsSourceDataType = '';
-    /**
-     * BigQuery source holds the dataset.
-     *
-     * @param GoogleCloudAiplatformV1BigQuerySource $bigquerySource
-     */
-    public function setBigquerySource(GoogleCloudAiplatformV1BigQuerySource $bigquerySource)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EvaluationDataset extends \Google\Model
     {
+        protected $bigquerySourceType = GoogleCloudAiplatformV1BigQuerySource::class;
+        protected $bigquerySourceDataType = '';
+        protected $gcsSourceType = GoogleCloudAiplatformV1GcsSource::class;
+        protected $gcsSourceDataType = '';
+        /**
+         * BigQuery source holds the dataset.
+         *
+         * @param GoogleCloudAiplatformV1BigQuerySource $bigquerySource
+         */
+        public function setBigquerySource(GoogleCloudAiplatformV1BigQuerySource $bigquerySource)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1BigQuerySource
+         */
+        public function getBigquerySource()
+        {
+        }
+        /**
+         * Cloud storage source holds the dataset. Currently only one Cloud Storage
+         * file path is supported.
+         *
+         * @param GoogleCloudAiplatformV1GcsSource $gcsSource
+         */
+        public function setGcsSource(GoogleCloudAiplatformV1GcsSource $gcsSource)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GcsSource
+         */
+        public function getGcsSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1BigQuerySource
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationDataset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigquerySource()
-    {
-    }
-    /**
-     * Cloud storage source holds the dataset. Currently only one Cloud Storage
-     * file path is supported.
-     *
-     * @param GoogleCloudAiplatformV1GcsSource $gcsSource
-     */
-    public function setGcsSource(GoogleCloudAiplatformV1GcsSource $gcsSource)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1GcsSource
-     */
-    public function getGcsSource()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EvaluationDataset extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationDataset
     {
     }
 }

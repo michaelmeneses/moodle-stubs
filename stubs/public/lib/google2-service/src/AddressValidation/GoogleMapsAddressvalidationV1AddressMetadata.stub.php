@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AddressValidation;
-
-class GoogleMapsAddressvalidationV1AddressMetadata extends \Google\Model
-{
-    /**
-     * Indicates that this is the address of a business. If unset, indicates that
-     * the value is unknown.
-     *
-     * @var bool
-     */
-    public $business;
-    /**
-     * Indicates that the address of a PO box. If unset, indicates that the value
-     * is unknown.
-     *
-     * @var bool
-     */
-    public $poBox;
-    /**
-     * Indicates that this is the address of a residence. If unset, indicates that
-     * the value is unknown.
-     *
-     * @var bool
-     */
-    public $residential;
-    /**
-     * Indicates that this is the address of a business. If unset, indicates that
-     * the value is unknown.
-     *
-     * @param bool $business
-     */
-    public function setBusiness($business)
+namespace Google\Service\AddressValidation {
+    class GoogleMapsAddressvalidationV1AddressMetadata extends \Google\Model
     {
+        /**
+         * Indicates that this is the address of a business. If unset, indicates that
+         * the value is unknown.
+         *
+         * @var bool
+         */
+        public $business;
+        /**
+         * Indicates that the address of a PO box. If unset, indicates that the value
+         * is unknown.
+         *
+         * @var bool
+         */
+        public $poBox;
+        /**
+         * Indicates that this is the address of a residence. If unset, indicates that
+         * the value is unknown.
+         *
+         * @var bool
+         */
+        public $residential;
+        /**
+         * Indicates that this is the address of a business. If unset, indicates that
+         * the value is unknown.
+         *
+         * @param bool $business
+         */
+        public function setBusiness($business)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBusiness()
+        {
+        }
+        /**
+         * Indicates that the address of a PO box. If unset, indicates that the value
+         * is unknown.
+         *
+         * @param bool $poBox
+         */
+        public function setPoBox($poBox)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPoBox()
+        {
+        }
+        /**
+         * Indicates that this is the address of a residence. If unset, indicates that
+         * the value is unknown.
+         *
+         * @param bool $residential
+         */
+        public function setResidential($residential)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getResidential()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AddressValidation\GoogleMapsAddressvalidationV1AddressMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBusiness()
-    {
-    }
-    /**
-     * Indicates that the address of a PO box. If unset, indicates that the value
-     * is unknown.
-     *
-     * @param bool $poBox
-     */
-    public function setPoBox($poBox)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPoBox()
-    {
-    }
-    /**
-     * Indicates that this is the address of a residence. If unset, indicates that
-     * the value is unknown.
-     *
-     * @param bool $residential
-     */
-    public function setResidential($residential)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getResidential()
+    class Google_Service_AddressValidation_GoogleMapsAddressvalidationV1AddressMetadata extends \Google\Service\AddressValidation\GoogleMapsAddressvalidationV1AddressMetadata
     {
     }
 }

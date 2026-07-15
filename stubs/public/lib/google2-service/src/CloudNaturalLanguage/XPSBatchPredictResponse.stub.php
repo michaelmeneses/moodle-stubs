@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSBatchPredictResponse extends \Google\Model
-{
-    protected $exampleSetType = XPSExampleSet::class;
-    protected $exampleSetDataType = '';
-    /**
-     * Examples for batch prediction result. Under full API implementation,
-     * results are stored in shared RecordIO of AnnotatedExample protobufs, the
-     * annotations field of which is populated by XPS backend.
-     *
-     * @param XPSExampleSet $exampleSet
-     */
-    public function setExampleSet(XPSExampleSet $exampleSet)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSBatchPredictResponse extends \Google\Model
     {
+        protected $exampleSetType = XPSExampleSet::class;
+        protected $exampleSetDataType = '';
+        /**
+         * Examples for batch prediction result. Under full API implementation,
+         * results are stored in shared RecordIO of AnnotatedExample protobufs, the
+         * annotations field of which is populated by XPS backend.
+         *
+         * @param XPSExampleSet $exampleSet
+         */
+        public function setExampleSet(XPSExampleSet $exampleSet)
+        {
+        }
+        /**
+         * @return XPSExampleSet
+         */
+        public function getExampleSet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSExampleSet
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSBatchPredictResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExampleSet()
+    class Google_Service_CloudNaturalLanguage_XPSBatchPredictResponse extends \Google\Service\CloudNaturalLanguage\XPSBatchPredictResponse
     {
     }
 }

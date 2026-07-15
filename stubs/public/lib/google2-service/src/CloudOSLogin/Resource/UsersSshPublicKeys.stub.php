@@ -21,73 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudOSLogin\Resource;
-
-/**
- * The "sshPublicKeys" collection of methods.
- * Typical usage is:
- *  <code>
- *   $osloginService = new Google\Service\CloudOSLogin(...);
- *   $sshPublicKeys = $osloginService->users_sshPublicKeys;
- *  </code>
- */
-class UsersSshPublicKeys extends \Google\Service\Resource
-{
+namespace Google\Service\CloudOSLogin\Resource {
+    use Google\Service\CloudOSLogin\OsloginEmpty;
+    use Google\Service\CloudOSLogin\SshPublicKey;
     /**
-     * Create an SSH public key (sshPublicKeys.create)
-     *
-     * @param string $parent Required. The unique ID for the user in format
-     * `users/{user}`.
-     * @param SshPublicKey $postBody
-     * @param array $optParams Optional parameters.
-     * @return SshPublicKey
-     * @throws \Google\Service\Exception
+     * The "sshPublicKeys" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $osloginService = new Google\Service\CloudOSLogin(...);
+     *   $sshPublicKeys = $osloginService->users_sshPublicKeys;
+     *  </code>
      */
-    public function create($parent, SshPublicKey $postBody, $optParams = [])
+    class UsersSshPublicKeys extends \Google\Service\Resource
     {
+        /**
+         * Create an SSH public key (sshPublicKeys.create)
+         *
+         * @param string $parent Required. The unique ID for the user in format
+         * `users/{user}`.
+         * @param SshPublicKey $postBody
+         * @param array $optParams Optional parameters.
+         * @return SshPublicKey
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, SshPublicKey $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes an SSH public key. (sshPublicKeys.delete)
+         *
+         * @param string $name Required. The fingerprint of the public key to update.
+         * Public keys are identified by their SHA-256 fingerprint. The fingerprint of
+         * the public key is in format `users/{user}/sshPublicKeys/{fingerprint}`.
+         * @param array $optParams Optional parameters.
+         * @return OsloginEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves an SSH public key. (sshPublicKeys.get)
+         *
+         * @param string $name Required. The fingerprint of the public key to retrieve.
+         * Public keys are identified by their SHA-256 fingerprint. The fingerprint of
+         * the public key is in format `users/{user}/sshPublicKeys/{fingerprint}`.
+         * @param array $optParams Optional parameters.
+         * @return SshPublicKey
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates an SSH public key and returns the profile information. This method
+         * supports patch semantics. (sshPublicKeys.patch)
+         *
+         * @param string $name Required. The fingerprint of the public key to update.
+         * Public keys are identified by their SHA-256 fingerprint. The fingerprint of
+         * the public key is in format `users/{user}/sshPublicKeys/{fingerprint}`.
+         * @param SshPublicKey $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. Mask to control which fields get
+         * updated. Updates all if not present.
+         * @return SshPublicKey
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, SshPublicKey $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes an SSH public key. (sshPublicKeys.delete)
-     *
-     * @param string $name Required. The fingerprint of the public key to update.
-     * Public keys are identified by their SHA-256 fingerprint. The fingerprint of
-     * the public key is in format `users/{user}/sshPublicKeys/{fingerprint}`.
-     * @param array $optParams Optional parameters.
-     * @return OsloginEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudOSLogin\Resource\UsersSshPublicKeys registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves an SSH public key. (sshPublicKeys.get)
-     *
-     * @param string $name Required. The fingerprint of the public key to retrieve.
-     * Public keys are identified by their SHA-256 fingerprint. The fingerprint of
-     * the public key is in format `users/{user}/sshPublicKeys/{fingerprint}`.
-     * @param array $optParams Optional parameters.
-     * @return SshPublicKey
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Updates an SSH public key and returns the profile information. This method
-     * supports patch semantics. (sshPublicKeys.patch)
-     *
-     * @param string $name Required. The fingerprint of the public key to update.
-     * Public keys are identified by their SHA-256 fingerprint. The fingerprint of
-     * the public key is in format `users/{user}/sshPublicKeys/{fingerprint}`.
-     * @param SshPublicKey $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. Mask to control which fields get
-     * updated. Updates all if not present.
-     * @return SshPublicKey
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, SshPublicKey $postBody, $optParams = [])
+    class Google_Service_CloudOSLogin_Resource_UsersSshPublicKeys extends \Google\Service\CloudOSLogin\Resource\UsersSshPublicKeys
     {
     }
 }

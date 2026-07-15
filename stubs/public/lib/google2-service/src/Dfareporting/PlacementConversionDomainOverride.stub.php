@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class PlacementConversionDomainOverride extends \Google\Collection
-{
-    protected $collection_key = 'conversionDomains';
-    protected $conversionDomainsType = PlacementSingleConversionDomain::class;
-    protected $conversionDomainsDataType = 'array';
-    /**
-     * @param PlacementSingleConversionDomain[] $conversionDomains
-     */
-    public function setConversionDomains($conversionDomains)
+namespace Google\Service\Dfareporting {
+    class PlacementConversionDomainOverride extends \Google\Collection
     {
+        protected $collection_key = 'conversionDomains';
+        protected $conversionDomainsType = PlacementSingleConversionDomain::class;
+        protected $conversionDomainsDataType = 'array';
+        /**
+         * @param PlacementSingleConversionDomain[] $conversionDomains
+         */
+        public function setConversionDomains($conversionDomains)
+        {
+        }
+        /**
+         * @return PlacementSingleConversionDomain[]
+         */
+        public function getConversionDomains()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PlacementSingleConversionDomain[]
+     * Runtime class alias of \Google\Service\Dfareporting\PlacementConversionDomainOverride registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversionDomains()
+    class Google_Service_Dfareporting_PlacementConversionDomainOverride extends \Google\Service\Dfareporting\PlacementConversionDomainOverride
     {
     }
 }

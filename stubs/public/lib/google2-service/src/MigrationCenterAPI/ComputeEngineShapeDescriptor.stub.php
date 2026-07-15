@@ -21,125 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ComputeEngineShapeDescriptor extends \Google\Collection
-{
-    protected $collection_key = 'storage';
-    /**
-     * Output only. Number of logical cores.
-     *
-     * @var int
-     */
-    public $logicalCoreCount;
-    /**
-     * Output only. Compute Engine machine type.
-     *
-     * @var string
-     */
-    public $machineType;
-    /**
-     * Memory in mebibytes.
-     *
-     * @var int
-     */
-    public $memoryMb;
-    /**
-     * Number of physical cores.
-     *
-     * @var int
-     */
-    public $physicalCoreCount;
-    /**
-     * Output only. Compute Engine machine series.
-     *
-     * @var string
-     */
-    public $series;
-    protected $storageType = ComputeStorageDescriptor::class;
-    protected $storageDataType = 'array';
-    /**
-     * Output only. Number of logical cores.
-     *
-     * @param int $logicalCoreCount
-     */
-    public function setLogicalCoreCount($logicalCoreCount)
+namespace Google\Service\MigrationCenterAPI {
+    class ComputeEngineShapeDescriptor extends \Google\Collection
     {
+        protected $collection_key = 'storage';
+        /**
+         * Output only. Number of logical cores.
+         *
+         * @var int
+         */
+        public $logicalCoreCount;
+        /**
+         * Output only. Compute Engine machine type.
+         *
+         * @var string
+         */
+        public $machineType;
+        /**
+         * Memory in mebibytes.
+         *
+         * @var int
+         */
+        public $memoryMb;
+        /**
+         * Number of physical cores.
+         *
+         * @var int
+         */
+        public $physicalCoreCount;
+        /**
+         * Output only. Compute Engine machine series.
+         *
+         * @var string
+         */
+        public $series;
+        protected $storageType = ComputeStorageDescriptor::class;
+        protected $storageDataType = 'array';
+        /**
+         * Output only. Number of logical cores.
+         *
+         * @param int $logicalCoreCount
+         */
+        public function setLogicalCoreCount($logicalCoreCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLogicalCoreCount()
+        {
+        }
+        /**
+         * Output only. Compute Engine machine type.
+         *
+         * @param string $machineType
+         */
+        public function setMachineType($machineType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMachineType()
+        {
+        }
+        /**
+         * Memory in mebibytes.
+         *
+         * @param int $memoryMb
+         */
+        public function setMemoryMb($memoryMb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMemoryMb()
+        {
+        }
+        /**
+         * Number of physical cores.
+         *
+         * @param int $physicalCoreCount
+         */
+        public function setPhysicalCoreCount($physicalCoreCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPhysicalCoreCount()
+        {
+        }
+        /**
+         * Output only. Compute Engine machine series.
+         *
+         * @param string $series
+         */
+        public function setSeries($series)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSeries()
+        {
+        }
+        /**
+         * Output only. Compute Engine storage. Never empty.
+         *
+         * @param ComputeStorageDescriptor[] $storage
+         */
+        public function setStorage($storage)
+        {
+        }
+        /**
+         * @return ComputeStorageDescriptor[]
+         */
+        public function getStorage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ComputeEngineShapeDescriptor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLogicalCoreCount()
-    {
-    }
-    /**
-     * Output only. Compute Engine machine type.
-     *
-     * @param string $machineType
-     */
-    public function setMachineType($machineType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMachineType()
-    {
-    }
-    /**
-     * Memory in mebibytes.
-     *
-     * @param int $memoryMb
-     */
-    public function setMemoryMb($memoryMb)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMemoryMb()
-    {
-    }
-    /**
-     * Number of physical cores.
-     *
-     * @param int $physicalCoreCount
-     */
-    public function setPhysicalCoreCount($physicalCoreCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPhysicalCoreCount()
-    {
-    }
-    /**
-     * Output only. Compute Engine machine series.
-     *
-     * @param string $series
-     */
-    public function setSeries($series)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSeries()
-    {
-    }
-    /**
-     * Output only. Compute Engine storage. Never empty.
-     *
-     * @param ComputeStorageDescriptor[] $storage
-     */
-    public function setStorage($storage)
-    {
-    }
-    /**
-     * @return ComputeStorageDescriptor[]
-     */
-    public function getStorage()
+    class Google_Service_MigrationCenterAPI_ComputeEngineShapeDescriptor extends \Google\Service\MigrationCenterAPI\ComputeEngineShapeDescriptor
     {
     }
 }

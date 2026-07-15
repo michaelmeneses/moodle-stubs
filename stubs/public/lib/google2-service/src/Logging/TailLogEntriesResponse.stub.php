@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class TailLogEntriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'suppressionInfo';
-    protected $entriesType = LogEntry::class;
-    protected $entriesDataType = 'array';
-    protected $suppressionInfoType = SuppressionInfo::class;
-    protected $suppressionInfoDataType = 'array';
-    /**
-     * A list of log entries. Each response in the stream will order entries with
-     * increasing values of LogEntry.timestamp. Ordering is not guaranteed between
-     * separate responses.
-     *
-     * @param LogEntry[] $entries
-     */
-    public function setEntries($entries)
+namespace Google\Service\Logging {
+    class TailLogEntriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'suppressionInfo';
+        protected $entriesType = LogEntry::class;
+        protected $entriesDataType = 'array';
+        protected $suppressionInfoType = SuppressionInfo::class;
+        protected $suppressionInfoDataType = 'array';
+        /**
+         * A list of log entries. Each response in the stream will order entries with
+         * increasing values of LogEntry.timestamp. Ordering is not guaranteed between
+         * separate responses.
+         *
+         * @param LogEntry[] $entries
+         */
+        public function setEntries($entries)
+        {
+        }
+        /**
+         * @return LogEntry[]
+         */
+        public function getEntries()
+        {
+        }
+        /**
+         * If entries that otherwise would have been included in the session were not
+         * sent back to the client, counts of relevant entries omitted from the
+         * session with the reason that they were not included. There will be at most
+         * one of each reason per response. The counts represent the number of
+         * suppressed entries since the last streamed response.
+         *
+         * @param SuppressionInfo[] $suppressionInfo
+         */
+        public function setSuppressionInfo($suppressionInfo)
+        {
+        }
+        /**
+         * @return SuppressionInfo[]
+         */
+        public function getSuppressionInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LogEntry[]
+     * Runtime class alias of \Google\Service\Logging\TailLogEntriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntries()
-    {
-    }
-    /**
-     * If entries that otherwise would have been included in the session were not
-     * sent back to the client, counts of relevant entries omitted from the
-     * session with the reason that they were not included. There will be at most
-     * one of each reason per response. The counts represent the number of
-     * suppressed entries since the last streamed response.
-     *
-     * @param SuppressionInfo[] $suppressionInfo
-     */
-    public function setSuppressionInfo($suppressionInfo)
-    {
-    }
-    /**
-     * @return SuppressionInfo[]
-     */
-    public function getSuppressionInfo()
+    class Google_Service_Logging_TailLogEntriesResponse extends \Google\Service\Logging\TailLogEntriesResponse
     {
     }
 }

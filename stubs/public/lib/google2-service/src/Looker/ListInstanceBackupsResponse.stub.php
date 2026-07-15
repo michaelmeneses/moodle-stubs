@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Looker;
-
-class ListInstanceBackupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $instanceBackupsType = InstanceBackup::class;
-    protected $instanceBackupsDataType = 'array';
-    /**
-     * If provided, a page token that can look up the next `page_size` results. If
-     * empty, the results list is exhausted.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of instances matching the request filters, up to the requested
-     * `page_size`.
-     *
-     * @param InstanceBackup[] $instanceBackups
-     */
-    public function setInstanceBackups($instanceBackups)
+namespace Google\Service\Looker {
+    class ListInstanceBackupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $instanceBackupsType = InstanceBackup::class;
+        protected $instanceBackupsDataType = 'array';
+        /**
+         * If provided, a page token that can look up the next `page_size` results. If
+         * empty, the results list is exhausted.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of instances matching the request filters, up to the requested
+         * `page_size`.
+         *
+         * @param InstanceBackup[] $instanceBackups
+         */
+        public function setInstanceBackups($instanceBackups)
+        {
+        }
+        /**
+         * @return InstanceBackup[]
+         */
+        public function getInstanceBackups()
+        {
+        }
+        /**
+         * If provided, a page token that can look up the next `page_size` results. If
+         * empty, the results list is exhausted.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InstanceBackup[]
+     * Runtime class alias of \Google\Service\Looker\ListInstanceBackupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceBackups()
-    {
-    }
-    /**
-     * If provided, a page token that can look up the next `page_size` results. If
-     * empty, the results list is exhausted.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Looker_ListInstanceBackupsResponse extends \Google\Service\Looker\ListInstanceBackupsResponse
     {
     }
 }

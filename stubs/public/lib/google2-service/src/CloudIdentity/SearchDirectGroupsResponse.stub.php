@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class SearchDirectGroupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'memberships';
-    protected $membershipsType = MembershipRelation::class;
-    protected $membershipsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results available for listing.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of direct groups satisfying the query.
-     *
-     * @param MembershipRelation[] $memberships
-     */
-    public function setMemberships($memberships)
+namespace Google\Service\CloudIdentity {
+    class SearchDirectGroupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'memberships';
+        protected $membershipsType = MembershipRelation::class;
+        protected $membershipsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results available for listing.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of direct groups satisfying the query.
+         *
+         * @param MembershipRelation[] $memberships
+         */
+        public function setMemberships($memberships)
+        {
+        }
+        /**
+         * @return MembershipRelation[]
+         */
+        public function getMemberships()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results available for listing.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MembershipRelation[]
+     * Runtime class alias of \Google\Service\CloudIdentity\SearchDirectGroupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMemberships()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results available for listing.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudIdentity_SearchDirectGroupsResponse extends \Google\Service\CloudIdentity\SearchDirectGroupsResponse
     {
     }
 }

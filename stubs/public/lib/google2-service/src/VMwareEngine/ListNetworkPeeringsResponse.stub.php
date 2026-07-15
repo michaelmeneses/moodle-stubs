@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class ListNetworkPeeringsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $networkPeeringsType = NetworkPeering::class;
-    protected $networkPeeringsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Unreachable resources.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A list of network peerings.
-     *
-     * @param NetworkPeering[] $networkPeerings
-     */
-    public function setNetworkPeerings($networkPeerings)
+namespace Google\Service\VMwareEngine {
+    class ListNetworkPeeringsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $networkPeeringsType = NetworkPeering::class;
+        protected $networkPeeringsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Unreachable resources.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A list of network peerings.
+         *
+         * @param NetworkPeering[] $networkPeerings
+         */
+        public function setNetworkPeerings($networkPeerings)
+        {
+        }
+        /**
+         * @return NetworkPeering[]
+         */
+        public function getNetworkPeerings()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Unreachable resources.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NetworkPeering[]
+     * Runtime class alias of \Google\Service\VMwareEngine\ListNetworkPeeringsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkPeerings()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Unreachable resources.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_VMwareEngine_ListNetworkPeeringsResponse extends \Google\Service\VMwareEngine\ListNetworkPeeringsResponse
     {
     }
 }

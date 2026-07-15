@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class ListFirewallEndpointsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $firewallEndpointsType = FirewallEndpoint::class;
-    protected $firewallEndpointsDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of Endpoint
-     *
-     * @param FirewallEndpoint[] $firewallEndpoints
-     */
-    public function setFirewallEndpoints($firewallEndpoints)
+namespace Google\Service\NetworkSecurity {
+    class ListFirewallEndpointsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $firewallEndpointsType = FirewallEndpoint::class;
+        protected $firewallEndpointsDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of Endpoint
+         *
+         * @param FirewallEndpoint[] $firewallEndpoints
+         */
+        public function setFirewallEndpoints($firewallEndpoints)
+        {
+        }
+        /**
+         * @return FirewallEndpoint[]
+         */
+        public function getFirewallEndpoints()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FirewallEndpoint[]
+     * Runtime class alias of \Google\Service\NetworkSecurity\ListFirewallEndpointsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirewallEndpoints()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_NetworkSecurity_ListFirewallEndpointsResponse extends \Google\Service\NetworkSecurity\ListFirewallEndpointsResponse
     {
     }
 }

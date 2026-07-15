@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManufacturerCenter;
-
-class VoluntaryNutritionFact extends \Google\Model
-{
-    /**
-     * Daily percentage.
-     *
-     * @var 
-     */
-    public $dailyPercentage;
-    /**
-     * Name.
-     *
-     * @var string
-     */
-    public $name;
-    protected $valueType = FloatUnit::class;
-    protected $valueDataType = '';
-    public function setDailyPercentage($dailyPercentage)
+namespace Google\Service\ManufacturerCenter {
+    class VoluntaryNutritionFact extends \Google\Model
     {
+        /**
+         * Daily percentage.
+         *
+         * @var 
+         */
+        public $dailyPercentage;
+        /**
+         * Name.
+         *
+         * @var string
+         */
+        public $name;
+        protected $valueType = FloatUnit::class;
+        protected $valueDataType = '';
+        public function setDailyPercentage($dailyPercentage)
+        {
+        }
+        public function getDailyPercentage()
+        {
+        }
+        /**
+         * Name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Value.
+         *
+         * @param FloatUnit $value
+         */
+        public function setValue(FloatUnit $value)
+        {
+        }
+        /**
+         * @return FloatUnit
+         */
+        public function getValue()
+        {
+        }
     }
-    public function getDailyPercentage()
-    {
-    }
+}
+namespace {
     /**
-     * Name.
-     *
-     * @param string $name
+     * Runtime class alias of \Google\Service\ManufacturerCenter\VoluntaryNutritionFact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Value.
-     *
-     * @param FloatUnit $value
-     */
-    public function setValue(FloatUnit $value)
-    {
-    }
-    /**
-     * @return FloatUnit
-     */
-    public function getValue()
+    class Google_Service_ManufacturerCenter_VoluntaryNutritionFact extends \Google\Service\ManufacturerCenter\VoluntaryNutritionFact
     {
     }
 }

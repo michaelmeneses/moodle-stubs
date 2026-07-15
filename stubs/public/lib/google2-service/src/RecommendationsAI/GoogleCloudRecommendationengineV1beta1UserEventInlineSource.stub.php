@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1UserEventInlineSource extends \Google\Collection
-{
-    protected $collection_key = 'userEvents';
-    protected $userEventsType = GoogleCloudRecommendationengineV1beta1UserEvent::class;
-    protected $userEventsDataType = 'array';
-    /**
-     * Optional. A list of user events to import. Recommended max of 10k items.
-     *
-     * @param GoogleCloudRecommendationengineV1beta1UserEvent[] $userEvents
-     */
-    public function setUserEvents($userEvents)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1UserEventInlineSource extends \Google\Collection
     {
+        protected $collection_key = 'userEvents';
+        protected $userEventsType = GoogleCloudRecommendationengineV1beta1UserEvent::class;
+        protected $userEventsDataType = 'array';
+        /**
+         * Optional. A list of user events to import. Recommended max of 10k items.
+         *
+         * @param GoogleCloudRecommendationengineV1beta1UserEvent[] $userEvents
+         */
+        public function setUserEvents($userEvents)
+        {
+        }
+        /**
+         * @return GoogleCloudRecommendationengineV1beta1UserEvent[]
+         */
+        public function getUserEvents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRecommendationengineV1beta1UserEvent[]
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1UserEventInlineSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUserEvents()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1UserEventInlineSource extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1UserEventInlineSource
     {
     }
 }

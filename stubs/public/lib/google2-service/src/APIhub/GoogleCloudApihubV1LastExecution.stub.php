@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1LastExecution extends \Google\Model
-{
-    /**
-     * Default unspecified execution result.
-     */
-    public const RESULT_RESULT_UNSPECIFIED = 'RESULT_UNSPECIFIED';
-    /**
-     * The plugin instance executed successfully.
-     */
-    public const RESULT_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * The plugin instance execution failed.
-     */
-    public const RESULT_FAILED = 'FAILED';
-    /**
-     * Output only. The last execution end time of the plugin instance.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Output only. Error message describing the failure, if any, during the last
-     * execution.
-     *
-     * @var string
-     */
-    public $errorMessage;
-    /**
-     * Output only. The result of the last execution of the plugin instance.
-     *
-     * @var string
-     */
-    public $result;
-    /**
-     * Output only. The result metadata of the last execution of the plugin
-     * instance. This will be a string representation of a JSON object and will be
-     * available on successful execution.
-     *
-     * @var string
-     */
-    public $resultMetadata;
-    /**
-     * Output only. The last execution start time of the plugin instance.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Output only. The last execution end time of the plugin instance.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1LastExecution extends \Google\Model
     {
+        /**
+         * Default unspecified execution result.
+         */
+        public const RESULT_RESULT_UNSPECIFIED = 'RESULT_UNSPECIFIED';
+        /**
+         * The plugin instance executed successfully.
+         */
+        public const RESULT_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * The plugin instance execution failed.
+         */
+        public const RESULT_FAILED = 'FAILED';
+        /**
+         * Output only. The last execution end time of the plugin instance.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Output only. Error message describing the failure, if any, during the last
+         * execution.
+         *
+         * @var string
+         */
+        public $errorMessage;
+        /**
+         * Output only. The result of the last execution of the plugin instance.
+         *
+         * @var string
+         */
+        public $result;
+        /**
+         * Output only. The result metadata of the last execution of the plugin
+         * instance. This will be a string representation of a JSON object and will be
+         * available on successful execution.
+         *
+         * @var string
+         */
+        public $resultMetadata;
+        /**
+         * Output only. The last execution start time of the plugin instance.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Output only. The last execution end time of the plugin instance.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Output only. Error message describing the failure, if any, during the last
+         * execution.
+         *
+         * @param string $errorMessage
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
+        /**
+         * Output only. The result of the last execution of the plugin instance.
+         *
+         * Accepted values: RESULT_UNSPECIFIED, SUCCEEDED, FAILED
+         *
+         * @param self::RESULT_* $result
+         */
+        public function setResult($result)
+        {
+        }
+        /**
+         * @return self::RESULT_*
+         */
+        public function getResult()
+        {
+        }
+        /**
+         * Output only. The result metadata of the last execution of the plugin
+         * instance. This will be a string representation of a JSON object and will be
+         * available on successful execution.
+         *
+         * @param string $resultMetadata
+         */
+        public function setResultMetadata($resultMetadata)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultMetadata()
+        {
+        }
+        /**
+         * Output only. The last execution start time of the plugin instance.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1LastExecution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Output only. Error message describing the failure, if any, during the last
-     * execution.
-     *
-     * @param string $errorMessage
-     */
-    public function setErrorMessage($errorMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorMessage()
-    {
-    }
-    /**
-     * Output only. The result of the last execution of the plugin instance.
-     *
-     * Accepted values: RESULT_UNSPECIFIED, SUCCEEDED, FAILED
-     *
-     * @param self::RESULT_* $result
-     */
-    public function setResult($result)
-    {
-    }
-    /**
-     * @return self::RESULT_*
-     */
-    public function getResult()
-    {
-    }
-    /**
-     * Output only. The result metadata of the last execution of the plugin
-     * instance. This will be a string representation of a JSON object and will be
-     * available on successful execution.
-     *
-     * @param string $resultMetadata
-     */
-    public function setResultMetadata($resultMetadata)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResultMetadata()
-    {
-    }
-    /**
-     * Output only. The last execution start time of the plugin instance.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_APIhub_GoogleCloudApihubV1LastExecution extends \Google\Service\APIhub\GoogleCloudApihubV1LastExecution
     {
     }
 }

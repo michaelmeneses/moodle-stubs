@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class PartialUpdateClusterMetadata extends \Google\Model
-{
-    /**
-     * The time at which the operation failed or was completed successfully.
-     *
-     * @var string
-     */
-    public $finishTime;
-    protected $originalRequestType = PartialUpdateClusterRequest::class;
-    protected $originalRequestDataType = '';
-    /**
-     * The time at which the original request was received.
-     *
-     * @var string
-     */
-    public $requestTime;
-    /**
-     * The time at which the operation failed or was completed successfully.
-     *
-     * @param string $finishTime
-     */
-    public function setFinishTime($finishTime)
+namespace Google\Service\BigtableAdmin {
+    class PartialUpdateClusterMetadata extends \Google\Model
     {
+        /**
+         * The time at which the operation failed or was completed successfully.
+         *
+         * @var string
+         */
+        public $finishTime;
+        protected $originalRequestType = PartialUpdateClusterRequest::class;
+        protected $originalRequestDataType = '';
+        /**
+         * The time at which the original request was received.
+         *
+         * @var string
+         */
+        public $requestTime;
+        /**
+         * The time at which the operation failed or was completed successfully.
+         *
+         * @param string $finishTime
+         */
+        public function setFinishTime($finishTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFinishTime()
+        {
+        }
+        /**
+         * The original request for PartialUpdateCluster.
+         *
+         * @param PartialUpdateClusterRequest $originalRequest
+         */
+        public function setOriginalRequest(PartialUpdateClusterRequest $originalRequest)
+        {
+        }
+        /**
+         * @return PartialUpdateClusterRequest
+         */
+        public function getOriginalRequest()
+        {
+        }
+        /**
+         * The time at which the original request was received.
+         *
+         * @param string $requestTime
+         */
+        public function setRequestTime($requestTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigtableAdmin\PartialUpdateClusterMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFinishTime()
-    {
-    }
-    /**
-     * The original request for PartialUpdateCluster.
-     *
-     * @param PartialUpdateClusterRequest $originalRequest
-     */
-    public function setOriginalRequest(PartialUpdateClusterRequest $originalRequest)
-    {
-    }
-    /**
-     * @return PartialUpdateClusterRequest
-     */
-    public function getOriginalRequest()
-    {
-    }
-    /**
-     * The time at which the original request was received.
-     *
-     * @param string $requestTime
-     */
-    public function setRequestTime($requestTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestTime()
+    class Google_Service_BigtableAdmin_PartialUpdateClusterMetadata extends \Google\Service\BigtableAdmin\PartialUpdateClusterMetadata
     {
     }
 }

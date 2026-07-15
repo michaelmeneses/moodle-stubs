@@ -21,168 +21,177 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class PlayerAchievement extends \Google\Model
-{
-    /**
-     * Achievement is hidden.
-     */
-    public const ACHIEVEMENT_STATE_HIDDEN = 'HIDDEN';
-    /**
-     * Achievement is revealed.
-     */
-    public const ACHIEVEMENT_STATE_REVEALED = 'REVEALED';
-    /**
-     * Achievement is unlocked.
-     */
-    public const ACHIEVEMENT_STATE_UNLOCKED = 'UNLOCKED';
-    /**
-     * The state of the achievement.
-     *
-     * @var string
-     */
-    public $achievementState;
-    /**
-     * The current steps for an incremental achievement.
-     *
-     * @var int
-     */
-    public $currentSteps;
-    /**
-     * Experience points earned for the achievement. This field is absent for
-     * achievements that have not yet been unlocked and 0 for achievements that
-     * have been unlocked by testers but that are unpublished.
-     *
-     * @var string
-     */
-    public $experiencePoints;
-    /**
-     * The current steps for an incremental achievement as a string.
-     *
-     * @var string
-     */
-    public $formattedCurrentStepsString;
-    /**
-     * The ID of the achievement.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#playerAchievement`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The timestamp of the last modification to this achievement's state.
-     *
-     * @var string
-     */
-    public $lastUpdatedTimestamp;
-    /**
-     * The state of the achievement.
-     *
-     * Accepted values: HIDDEN, REVEALED, UNLOCKED
-     *
-     * @param self::ACHIEVEMENT_STATE_* $achievementState
-     */
-    public function setAchievementState($achievementState)
+namespace Google\Service\Games {
+    class PlayerAchievement extends \Google\Model
     {
+        /**
+         * Achievement is hidden.
+         */
+        public const ACHIEVEMENT_STATE_HIDDEN = 'HIDDEN';
+        /**
+         * Achievement is revealed.
+         */
+        public const ACHIEVEMENT_STATE_REVEALED = 'REVEALED';
+        /**
+         * Achievement is unlocked.
+         */
+        public const ACHIEVEMENT_STATE_UNLOCKED = 'UNLOCKED';
+        /**
+         * The state of the achievement.
+         *
+         * @var string
+         */
+        public $achievementState;
+        /**
+         * The current steps for an incremental achievement.
+         *
+         * @var int
+         */
+        public $currentSteps;
+        /**
+         * Experience points earned for the achievement. This field is absent for
+         * achievements that have not yet been unlocked and 0 for achievements that
+         * have been unlocked by testers but that are unpublished.
+         *
+         * @var string
+         */
+        public $experiencePoints;
+        /**
+         * The current steps for an incremental achievement as a string.
+         *
+         * @var string
+         */
+        public $formattedCurrentStepsString;
+        /**
+         * The ID of the achievement.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#playerAchievement`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The timestamp of the last modification to this achievement's state.
+         *
+         * @var string
+         */
+        public $lastUpdatedTimestamp;
+        /**
+         * The state of the achievement.
+         *
+         * Accepted values: HIDDEN, REVEALED, UNLOCKED
+         *
+         * @param self::ACHIEVEMENT_STATE_* $achievementState
+         */
+        public function setAchievementState($achievementState)
+        {
+        }
+        /**
+         * @return self::ACHIEVEMENT_STATE_*
+         */
+        public function getAchievementState()
+        {
+        }
+        /**
+         * The current steps for an incremental achievement.
+         *
+         * @param int $currentSteps
+         */
+        public function setCurrentSteps($currentSteps)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCurrentSteps()
+        {
+        }
+        /**
+         * Experience points earned for the achievement. This field is absent for
+         * achievements that have not yet been unlocked and 0 for achievements that
+         * have been unlocked by testers but that are unpublished.
+         *
+         * @param string $experiencePoints
+         */
+        public function setExperiencePoints($experiencePoints)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExperiencePoints()
+        {
+        }
+        /**
+         * The current steps for an incremental achievement as a string.
+         *
+         * @param string $formattedCurrentStepsString
+         */
+        public function setFormattedCurrentStepsString($formattedCurrentStepsString)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormattedCurrentStepsString()
+        {
+        }
+        /**
+         * The ID of the achievement.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#playerAchievement`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The timestamp of the last modification to this achievement's state.
+         *
+         * @param string $lastUpdatedTimestamp
+         */
+        public function setLastUpdatedTimestamp($lastUpdatedTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdatedTimestamp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACHIEVEMENT_STATE_*
+     * Runtime class alias of \Google\Service\Games\PlayerAchievement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAchievementState()
-    {
-    }
-    /**
-     * The current steps for an incremental achievement.
-     *
-     * @param int $currentSteps
-     */
-    public function setCurrentSteps($currentSteps)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getCurrentSteps()
-    {
-    }
-    /**
-     * Experience points earned for the achievement. This field is absent for
-     * achievements that have not yet been unlocked and 0 for achievements that
-     * have been unlocked by testers but that are unpublished.
-     *
-     * @param string $experiencePoints
-     */
-    public function setExperiencePoints($experiencePoints)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExperiencePoints()
-    {
-    }
-    /**
-     * The current steps for an incremental achievement as a string.
-     *
-     * @param string $formattedCurrentStepsString
-     */
-    public function setFormattedCurrentStepsString($formattedCurrentStepsString)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFormattedCurrentStepsString()
-    {
-    }
-    /**
-     * The ID of the achievement.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#playerAchievement`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The timestamp of the last modification to this achievement's state.
-     *
-     * @param string $lastUpdatedTimestamp
-     */
-    public function setLastUpdatedTimestamp($lastUpdatedTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastUpdatedTimestamp()
+    class Google_Service_Games_PlayerAchievement extends \Google\Service\Games\PlayerAchievement
     {
     }
 }

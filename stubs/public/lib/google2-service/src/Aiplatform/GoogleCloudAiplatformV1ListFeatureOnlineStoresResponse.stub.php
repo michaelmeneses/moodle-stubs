@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListFeatureOnlineStoresResponse extends \Google\Collection
-{
-    protected $collection_key = 'featureOnlineStores';
-    protected $featureOnlineStoresType = GoogleCloudAiplatformV1FeatureOnlineStore::class;
-    protected $featureOnlineStoresDataType = 'array';
-    /**
-     * A token, which can be sent as ListFeatureOnlineStoresRequest.page_token to
-     * retrieve the next page. If this field is omitted, there are no subsequent
-     * pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The FeatureOnlineStores matching the request.
-     *
-     * @param GoogleCloudAiplatformV1FeatureOnlineStore[] $featureOnlineStores
-     */
-    public function setFeatureOnlineStores($featureOnlineStores)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListFeatureOnlineStoresResponse extends \Google\Collection
     {
+        protected $collection_key = 'featureOnlineStores';
+        protected $featureOnlineStoresType = GoogleCloudAiplatformV1FeatureOnlineStore::class;
+        protected $featureOnlineStoresDataType = 'array';
+        /**
+         * A token, which can be sent as ListFeatureOnlineStoresRequest.page_token to
+         * retrieve the next page. If this field is omitted, there are no subsequent
+         * pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The FeatureOnlineStores matching the request.
+         *
+         * @param GoogleCloudAiplatformV1FeatureOnlineStore[] $featureOnlineStores
+         */
+        public function setFeatureOnlineStores($featureOnlineStores)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeatureOnlineStore[]
+         */
+        public function getFeatureOnlineStores()
+        {
+        }
+        /**
+         * A token, which can be sent as ListFeatureOnlineStoresRequest.page_token to
+         * retrieve the next page. If this field is omitted, there are no subsequent
+         * pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1FeatureOnlineStore[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListFeatureOnlineStoresResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFeatureOnlineStores()
-    {
-    }
-    /**
-     * A token, which can be sent as ListFeatureOnlineStoresRequest.page_token to
-     * retrieve the next page. If this field is omitted, there are no subsequent
-     * pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListFeatureOnlineStoresResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListFeatureOnlineStoresResponse
     {
     }
 }

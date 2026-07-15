@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ManagedInstanceLastAttemptErrorsErrorsErrorDetails extends \Google\Model
-{
-    protected $errorInfoType = ErrorInfo::class;
-    protected $errorInfoDataType = '';
-    protected $helpType = Help::class;
-    protected $helpDataType = '';
-    protected $localizedMessageType = LocalizedMessage::class;
-    protected $localizedMessageDataType = '';
-    protected $quotaInfoType = QuotaExceededInfo::class;
-    protected $quotaInfoDataType = '';
-    /**
-     * @param ErrorInfo $errorInfo
-     */
-    public function setErrorInfo(ErrorInfo $errorInfo)
+namespace Google\Service\Compute {
+    class ManagedInstanceLastAttemptErrorsErrorsErrorDetails extends \Google\Model
     {
+        protected $errorInfoType = ErrorInfo::class;
+        protected $errorInfoDataType = '';
+        protected $helpType = Help::class;
+        protected $helpDataType = '';
+        protected $localizedMessageType = LocalizedMessage::class;
+        protected $localizedMessageDataType = '';
+        protected $quotaInfoType = QuotaExceededInfo::class;
+        protected $quotaInfoDataType = '';
+        /**
+         * @param ErrorInfo $errorInfo
+         */
+        public function setErrorInfo(ErrorInfo $errorInfo)
+        {
+        }
+        /**
+         * @return ErrorInfo
+         */
+        public function getErrorInfo()
+        {
+        }
+        /**
+         * @param Help $help
+         */
+        public function setHelp(Help $help)
+        {
+        }
+        /**
+         * @return Help
+         */
+        public function getHelp()
+        {
+        }
+        /**
+         * @param LocalizedMessage $localizedMessage
+         */
+        public function setLocalizedMessage(LocalizedMessage $localizedMessage)
+        {
+        }
+        /**
+         * @return LocalizedMessage
+         */
+        public function getLocalizedMessage()
+        {
+        }
+        /**
+         * @param QuotaExceededInfo $quotaInfo
+         */
+        public function setQuotaInfo(QuotaExceededInfo $quotaInfo)
+        {
+        }
+        /**
+         * @return QuotaExceededInfo
+         */
+        public function getQuotaInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ErrorInfo
+     * Runtime class alias of \Google\Service\Compute\ManagedInstanceLastAttemptErrorsErrorsErrorDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorInfo()
-    {
-    }
-    /**
-     * @param Help $help
-     */
-    public function setHelp(Help $help)
-    {
-    }
-    /**
-     * @return Help
-     */
-    public function getHelp()
-    {
-    }
-    /**
-     * @param LocalizedMessage $localizedMessage
-     */
-    public function setLocalizedMessage(LocalizedMessage $localizedMessage)
-    {
-    }
-    /**
-     * @return LocalizedMessage
-     */
-    public function getLocalizedMessage()
-    {
-    }
-    /**
-     * @param QuotaExceededInfo $quotaInfo
-     */
-    public function setQuotaInfo(QuotaExceededInfo $quotaInfo)
-    {
-    }
-    /**
-     * @return QuotaExceededInfo
-     */
-    public function getQuotaInfo()
+    class Google_Service_Compute_ManagedInstanceLastAttemptErrorsErrorsErrorDetails extends \Google\Service\Compute\ManagedInstanceLastAttemptErrorsErrorsErrorDetails
     {
     }
 }

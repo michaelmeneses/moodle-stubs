@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class Expr extends \Google\Model
-{
-    public $description;
-    public $expression;
-    public $location;
-    public $title;
-    public function setDescription($description)
+namespace Google\Service\Baremetalsolution {
+    class Expr extends \Google\Model
     {
+        public $description;
+        public $expression;
+        public $location;
+        public $title;
+        public function setDescription($description)
+        {
+        }
+        public function getDescription()
+        {
+        }
+        public function setExpression($expression)
+        {
+        }
+        public function getExpression()
+        {
+        }
+        public function setLocation($location)
+        {
+        }
+        public function getLocation()
+        {
+        }
+        public function setTitle($title)
+        {
+        }
+        public function getTitle()
+        {
+        }
     }
-    public function getDescription()
-    {
-    }
-    public function setExpression($expression)
-    {
-    }
-    public function getExpression()
-    {
-    }
-    public function setLocation($location)
-    {
-    }
-    public function getLocation()
-    {
-    }
-    public function setTitle($title)
-    {
-    }
-    public function getTitle()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Baremetalsolution\Expr registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Baremetalsolution_Expr extends \Google\Service\Baremetalsolution\Expr
     {
     }
 }

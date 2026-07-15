@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger;
-
-class BlogLocale extends \Google\Model
-{
-    /**
-     * The country this blog's locale is set to.
-     *
-     * @var string
-     */
-    public $country;
-    /**
-     * The language this blog is authored in.
-     *
-     * @var string
-     */
-    public $language;
-    /**
-     * The language variant this blog is authored in.
-     *
-     * @var string
-     */
-    public $variant;
-    /**
-     * The country this blog's locale is set to.
-     *
-     * @param string $country
-     */
-    public function setCountry($country)
+namespace Google\Service\Blogger {
+    class BlogLocale extends \Google\Model
     {
+        /**
+         * The country this blog's locale is set to.
+         *
+         * @var string
+         */
+        public $country;
+        /**
+         * The language this blog is authored in.
+         *
+         * @var string
+         */
+        public $language;
+        /**
+         * The language variant this blog is authored in.
+         *
+         * @var string
+         */
+        public $variant;
+        /**
+         * The country this blog's locale is set to.
+         *
+         * @param string $country
+         */
+        public function setCountry($country)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountry()
+        {
+        }
+        /**
+         * The language this blog is authored in.
+         *
+         * @param string $language
+         */
+        public function setLanguage($language)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguage()
+        {
+        }
+        /**
+         * The language variant this blog is authored in.
+         *
+         * @param string $variant
+         */
+        public function setVariant($variant)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVariant()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Blogger\BlogLocale registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountry()
-    {
-    }
-    /**
-     * The language this blog is authored in.
-     *
-     * @param string $language
-     */
-    public function setLanguage($language)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguage()
-    {
-    }
-    /**
-     * The language variant this blog is authored in.
-     *
-     * @param string $variant
-     */
-    public function setVariant($variant)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVariant()
+    class Google_Service_Blogger_BlogLocale extends \Google\Service\Blogger\BlogLocale
     {
     }
 }

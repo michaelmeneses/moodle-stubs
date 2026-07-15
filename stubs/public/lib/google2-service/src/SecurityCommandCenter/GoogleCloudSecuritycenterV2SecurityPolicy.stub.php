@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2SecurityPolicy extends \Google\Model
-{
-    /**
-     * The name of the Google Cloud Armor security policy, for example, "my-
-     * security-policy".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Whether or not the associated rule or policy is in preview mode.
-     *
-     * @var bool
-     */
-    public $preview;
-    /**
-     * The type of Google Cloud Armor security policy for example, 'backend
-     * security policy', 'edge security policy', 'network edge security policy',
-     * or 'always-on DDoS protection'.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The name of the Google Cloud Armor security policy, for example, "my-
-     * security-policy".
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2SecurityPolicy extends \Google\Model
     {
+        /**
+         * The name of the Google Cloud Armor security policy, for example, "my-
+         * security-policy".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Whether or not the associated rule or policy is in preview mode.
+         *
+         * @var bool
+         */
+        public $preview;
+        /**
+         * The type of Google Cloud Armor security policy for example, 'backend
+         * security policy', 'edge security policy', 'network edge security policy',
+         * or 'always-on DDoS protection'.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The name of the Google Cloud Armor security policy, for example, "my-
+         * security-policy".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Whether or not the associated rule or policy is in preview mode.
+         *
+         * @param bool $preview
+         */
+        public function setPreview($preview)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPreview()
+        {
+        }
+        /**
+         * The type of Google Cloud Armor security policy for example, 'backend
+         * security policy', 'edge security policy', 'network edge security policy',
+         * or 'always-on DDoS protection'.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2SecurityPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Whether or not the associated rule or policy is in preview mode.
-     *
-     * @param bool $preview
-     */
-    public function setPreview($preview)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPreview()
-    {
-    }
-    /**
-     * The type of Google Cloud Armor security policy for example, 'backend
-     * security policy', 'edge security policy', 'network edge security policy',
-     * or 'always-on DDoS protection'.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2SecurityPolicy extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2SecurityPolicy
     {
     }
 }

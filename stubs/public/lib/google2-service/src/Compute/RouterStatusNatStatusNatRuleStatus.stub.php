@@ -21,119 +21,128 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RouterStatusNatStatusNatRuleStatus extends \Google\Collection
-{
-    protected $collection_key = 'drainNatIps';
-    /**
-     * Output only. A list of active IPs for NAT. Example: ["1.1.1.1",
-     * "179.12.26.133"].
-     *
-     * @var string[]
-     */
-    public $activeNatIps;
-    /**
-     * Output only. A list of IPs for NAT that are in drain mode. Example:
-     * ["1.1.1.1", "179.12.26.133"].
-     *
-     * @var string[]
-     */
-    public $drainNatIps;
-    /**
-     * Output only. The number of extra IPs to allocate. This will be greater than
-     * 0 only if the existing IPs in this NAT Rule are NOT enough to allow all
-     * configured VMs to use NAT.
-     *
-     * @var int
-     */
-    public $minExtraIpsNeeded;
-    /**
-     * Output only. Number of VM endpoints (i.e., NICs) that have NAT Mappings
-     * from this NAT Rule.
-     *
-     * @var int
-     */
-    public $numVmEndpointsWithNatMappings;
-    /**
-     * Output only. Rule number of the rule.
-     *
-     * @var int
-     */
-    public $ruleNumber;
-    /**
-     * Output only. A list of active IPs for NAT. Example: ["1.1.1.1",
-     * "179.12.26.133"].
-     *
-     * @param string[] $activeNatIps
-     */
-    public function setActiveNatIps($activeNatIps)
+namespace Google\Service\Compute {
+    class RouterStatusNatStatusNatRuleStatus extends \Google\Collection
     {
+        protected $collection_key = 'drainNatIps';
+        /**
+         * Output only. A list of active IPs for NAT. Example: ["1.1.1.1",
+         * "179.12.26.133"].
+         *
+         * @var string[]
+         */
+        public $activeNatIps;
+        /**
+         * Output only. A list of IPs for NAT that are in drain mode. Example:
+         * ["1.1.1.1", "179.12.26.133"].
+         *
+         * @var string[]
+         */
+        public $drainNatIps;
+        /**
+         * Output only. The number of extra IPs to allocate. This will be greater than
+         * 0 only if the existing IPs in this NAT Rule are NOT enough to allow all
+         * configured VMs to use NAT.
+         *
+         * @var int
+         */
+        public $minExtraIpsNeeded;
+        /**
+         * Output only. Number of VM endpoints (i.e., NICs) that have NAT Mappings
+         * from this NAT Rule.
+         *
+         * @var int
+         */
+        public $numVmEndpointsWithNatMappings;
+        /**
+         * Output only. Rule number of the rule.
+         *
+         * @var int
+         */
+        public $ruleNumber;
+        /**
+         * Output only. A list of active IPs for NAT. Example: ["1.1.1.1",
+         * "179.12.26.133"].
+         *
+         * @param string[] $activeNatIps
+         */
+        public function setActiveNatIps($activeNatIps)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getActiveNatIps()
+        {
+        }
+        /**
+         * Output only. A list of IPs for NAT that are in drain mode. Example:
+         * ["1.1.1.1", "179.12.26.133"].
+         *
+         * @param string[] $drainNatIps
+         */
+        public function setDrainNatIps($drainNatIps)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDrainNatIps()
+        {
+        }
+        /**
+         * Output only. The number of extra IPs to allocate. This will be greater than
+         * 0 only if the existing IPs in this NAT Rule are NOT enough to allow all
+         * configured VMs to use NAT.
+         *
+         * @param int $minExtraIpsNeeded
+         */
+        public function setMinExtraIpsNeeded($minExtraIpsNeeded)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinExtraIpsNeeded()
+        {
+        }
+        /**
+         * Output only. Number of VM endpoints (i.e., NICs) that have NAT Mappings
+         * from this NAT Rule.
+         *
+         * @param int $numVmEndpointsWithNatMappings
+         */
+        public function setNumVmEndpointsWithNatMappings($numVmEndpointsWithNatMappings)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumVmEndpointsWithNatMappings()
+        {
+        }
+        /**
+         * Output only. Rule number of the rule.
+         *
+         * @param int $ruleNumber
+         */
+        public function setRuleNumber($ruleNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRuleNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\RouterStatusNatStatusNatRuleStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActiveNatIps()
-    {
-    }
-    /**
-     * Output only. A list of IPs for NAT that are in drain mode. Example:
-     * ["1.1.1.1", "179.12.26.133"].
-     *
-     * @param string[] $drainNatIps
-     */
-    public function setDrainNatIps($drainNatIps)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDrainNatIps()
-    {
-    }
-    /**
-     * Output only. The number of extra IPs to allocate. This will be greater than
-     * 0 only if the existing IPs in this NAT Rule are NOT enough to allow all
-     * configured VMs to use NAT.
-     *
-     * @param int $minExtraIpsNeeded
-     */
-    public function setMinExtraIpsNeeded($minExtraIpsNeeded)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinExtraIpsNeeded()
-    {
-    }
-    /**
-     * Output only. Number of VM endpoints (i.e., NICs) that have NAT Mappings
-     * from this NAT Rule.
-     *
-     * @param int $numVmEndpointsWithNatMappings
-     */
-    public function setNumVmEndpointsWithNatMappings($numVmEndpointsWithNatMappings)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumVmEndpointsWithNatMappings()
-    {
-    }
-    /**
-     * Output only. Rule number of the rule.
-     *
-     * @param int $ruleNumber
-     */
-    public function setRuleNumber($ruleNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRuleNumber()
+    class Google_Service_Compute_RouterStatusNatStatusNatRuleStatus extends \Google\Service\Compute\RouterStatusNatStatusNatRuleStatus
     {
     }
 }

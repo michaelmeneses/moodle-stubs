@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseRules;
-
-class UpdateReleaseRequest extends \Google\Model
-{
-    protected $releaseType = Release::class;
-    protected $releaseDataType = '';
-    /**
-     * Optional. Specifies which fields to update.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. `Release` to update.
-     *
-     * @param Release $release
-     */
-    public function setRelease(Release $release)
+namespace Google\Service\FirebaseRules {
+    class UpdateReleaseRequest extends \Google\Model
     {
+        protected $releaseType = Release::class;
+        protected $releaseDataType = '';
+        /**
+         * Optional. Specifies which fields to update.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. `Release` to update.
+         *
+         * @param Release $release
+         */
+        public function setRelease(Release $release)
+        {
+        }
+        /**
+         * @return Release
+         */
+        public function getRelease()
+        {
+        }
+        /**
+         * Optional. Specifies which fields to update.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Release
+     * Runtime class alias of \Google\Service\FirebaseRules\UpdateReleaseRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRelease()
-    {
-    }
-    /**
-     * Optional. Specifies which fields to update.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_FirebaseRules_UpdateReleaseRequest extends \Google\Service\FirebaseRules\UpdateReleaseRequest
     {
     }
 }

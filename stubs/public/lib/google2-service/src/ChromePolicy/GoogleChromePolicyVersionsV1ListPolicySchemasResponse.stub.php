@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1ListPolicySchemasResponse extends \Google\Collection
-{
-    protected $collection_key = 'policySchemas';
-    /**
-     * The page token used to get the next page of policy schemas.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $policySchemasType = GoogleChromePolicyVersionsV1PolicySchema::class;
-    protected $policySchemasDataType = 'array';
-    /**
-     * The page token used to get the next page of policy schemas.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1ListPolicySchemasResponse extends \Google\Collection
     {
+        protected $collection_key = 'policySchemas';
+        /**
+         * The page token used to get the next page of policy schemas.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $policySchemasType = GoogleChromePolicyVersionsV1PolicySchema::class;
+        protected $policySchemasDataType = 'array';
+        /**
+         * The page token used to get the next page of policy schemas.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of policy schemas that match the query.
+         *
+         * @param GoogleChromePolicyVersionsV1PolicySchema[] $policySchemas
+         */
+        public function setPolicySchemas($policySchemas)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyVersionsV1PolicySchema[]
+         */
+        public function getPolicySchemas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1ListPolicySchemasResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of policy schemas that match the query.
-     *
-     * @param GoogleChromePolicyVersionsV1PolicySchema[] $policySchemas
-     */
-    public function setPolicySchemas($policySchemas)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyVersionsV1PolicySchema[]
-     */
-    public function getPolicySchemas()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1ListPolicySchemasResponse extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1ListPolicySchemasResponse
     {
     }
 }

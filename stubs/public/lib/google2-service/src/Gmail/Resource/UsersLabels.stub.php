@@ -21,95 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail\Resource;
-
-/**
- * The "labels" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gmailService = new Google\Service\Gmail(...);
- *   $labels = $gmailService->users_labels;
- *  </code>
- */
-class UsersLabels extends \Google\Service\Resource
-{
+namespace Google\Service\Gmail\Resource {
+    use Google\Service\Gmail\Label;
+    use Google\Service\Gmail\ListLabelsResponse;
     /**
-     * Creates a new label. (labels.create)
-     *
-     * @param string $userId The user's email address. The special value `me` can be
-     * used to indicate the authenticated user.
-     * @param Label $postBody
-     * @param array $optParams Optional parameters.
-     * @return Label
-     * @throws \Google\Service\Exception
+     * The "labels" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gmailService = new Google\Service\Gmail(...);
+     *   $labels = $gmailService->users_labels;
+     *  </code>
      */
-    public function create($userId, Label $postBody, $optParams = [])
+    class UsersLabels extends \Google\Service\Resource
     {
+        /**
+         * Creates a new label. (labels.create)
+         *
+         * @param string $userId The user's email address. The special value `me` can be
+         * used to indicate the authenticated user.
+         * @param Label $postBody
+         * @param array $optParams Optional parameters.
+         * @return Label
+         * @throws \Google\Service\Exception
+         */
+        public function create($userId, Label $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Immediately and permanently deletes the specified label and removes it from
+         * any messages and threads that it is applied to. (labels.delete)
+         *
+         * @param string $userId The user's email address. The special value `me` can be
+         * used to indicate the authenticated user.
+         * @param string $id The ID of the label to delete.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($userId, $id, $optParams = [])
+        {
+        }
+        /**
+         * Gets the specified label. (labels.get)
+         *
+         * @param string $userId The user's email address. The special value `me` can be
+         * used to indicate the authenticated user.
+         * @param string $id The ID of the label to retrieve.
+         * @param array $optParams Optional parameters.
+         * @return Label
+         * @throws \Google\Service\Exception
+         */
+        public function get($userId, $id, $optParams = [])
+        {
+        }
+        /**
+         * Lists all labels in the user's mailbox. (labels.listUsersLabels)
+         *
+         * @param string $userId The user's email address. The special value `me` can be
+         * used to indicate the authenticated user.
+         * @param array $optParams Optional parameters.
+         * @return ListLabelsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listUsersLabels($userId, $optParams = [])
+        {
+        }
+        /**
+         * Patch the specified label. (labels.patch)
+         *
+         * @param string $userId The user's email address. The special value `me` can be
+         * used to indicate the authenticated user.
+         * @param string $id The ID of the label to update.
+         * @param Label $postBody
+         * @param array $optParams Optional parameters.
+         * @return Label
+         * @throws \Google\Service\Exception
+         */
+        public function patch($userId, $id, Label $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates the specified label. (labels.update)
+         *
+         * @param string $userId The user's email address. The special value `me` can be
+         * used to indicate the authenticated user.
+         * @param string $id The ID of the label to update.
+         * @param Label $postBody
+         * @param array $optParams Optional parameters.
+         * @return Label
+         * @throws \Google\Service\Exception
+         */
+        public function update($userId, $id, Label $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Immediately and permanently deletes the specified label and removes it from
-     * any messages and threads that it is applied to. (labels.delete)
-     *
-     * @param string $userId The user's email address. The special value `me` can be
-     * used to indicate the authenticated user.
-     * @param string $id The ID of the label to delete.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Gmail\Resource\UsersLabels registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($userId, $id, $optParams = [])
-    {
-    }
-    /**
-     * Gets the specified label. (labels.get)
-     *
-     * @param string $userId The user's email address. The special value `me` can be
-     * used to indicate the authenticated user.
-     * @param string $id The ID of the label to retrieve.
-     * @param array $optParams Optional parameters.
-     * @return Label
-     * @throws \Google\Service\Exception
-     */
-    public function get($userId, $id, $optParams = [])
-    {
-    }
-    /**
-     * Lists all labels in the user's mailbox. (labels.listUsersLabels)
-     *
-     * @param string $userId The user's email address. The special value `me` can be
-     * used to indicate the authenticated user.
-     * @param array $optParams Optional parameters.
-     * @return ListLabelsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listUsersLabels($userId, $optParams = [])
-    {
-    }
-    /**
-     * Patch the specified label. (labels.patch)
-     *
-     * @param string $userId The user's email address. The special value `me` can be
-     * used to indicate the authenticated user.
-     * @param string $id The ID of the label to update.
-     * @param Label $postBody
-     * @param array $optParams Optional parameters.
-     * @return Label
-     * @throws \Google\Service\Exception
-     */
-    public function patch($userId, $id, Label $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates the specified label. (labels.update)
-     *
-     * @param string $userId The user's email address. The special value `me` can be
-     * used to indicate the authenticated user.
-     * @param string $id The ID of the label to update.
-     * @param Label $postBody
-     * @param array $optParams Optional parameters.
-     * @return Label
-     * @throws \Google\Service\Exception
-     */
-    public function update($userId, $id, Label $postBody, $optParams = [])
+    class Google_Service_Gmail_Resource_UsersLabels extends \Google\Service\Gmail\Resource\UsersLabels
     {
     }
 }

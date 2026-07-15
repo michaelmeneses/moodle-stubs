@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class ColorDefinition extends \Google\Model
-{
-    /**
-     * The background color associated with this color definition.
-     *
-     * @var string
-     */
-    public $background;
-    /**
-     * The foreground color that can be used to write on top of a background with
-     * 'background' color.
-     *
-     * @var string
-     */
-    public $foreground;
-    /**
-     * The background color associated with this color definition.
-     *
-     * @param string $background
-     */
-    public function setBackground($background)
+namespace Google\Service\Calendar {
+    class ColorDefinition extends \Google\Model
     {
+        /**
+         * The background color associated with this color definition.
+         *
+         * @var string
+         */
+        public $background;
+        /**
+         * The foreground color that can be used to write on top of a background with
+         * 'background' color.
+         *
+         * @var string
+         */
+        public $foreground;
+        /**
+         * The background color associated with this color definition.
+         *
+         * @param string $background
+         */
+        public function setBackground($background)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackground()
+        {
+        }
+        /**
+         * The foreground color that can be used to write on top of a background with
+         * 'background' color.
+         *
+         * @param string $foreground
+         */
+        public function setForeground($foreground)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getForeground()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Calendar\ColorDefinition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackground()
-    {
-    }
-    /**
-     * The foreground color that can be used to write on top of a background with
-     * 'background' color.
-     *
-     * @param string $foreground
-     */
-    public function setForeground($foreground)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getForeground()
+    class Google_Service_Calendar_ColorDefinition extends \Google\Service\Calendar\ColorDefinition
     {
     }
 }

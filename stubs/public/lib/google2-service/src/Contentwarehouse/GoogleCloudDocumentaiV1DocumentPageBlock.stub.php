@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudDocumentaiV1DocumentPageBlock extends \Google\Collection
-{
-    protected $collection_key = 'detectedLanguages';
-    protected $detectedLanguagesType = GoogleCloudDocumentaiV1DocumentPageDetectedLanguage::class;
-    protected $detectedLanguagesDataType = 'array';
-    protected $layoutType = GoogleCloudDocumentaiV1DocumentPageLayout::class;
-    protected $layoutDataType = '';
-    protected $provenanceType = GoogleCloudDocumentaiV1DocumentProvenance::class;
-    protected $provenanceDataType = '';
-    /**
-     * A list of detected languages together with confidence.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentPageDetectedLanguage[] $detectedLanguages
-     */
-    public function setDetectedLanguages($detectedLanguages)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudDocumentaiV1DocumentPageBlock extends \Google\Collection
     {
+        protected $collection_key = 'detectedLanguages';
+        protected $detectedLanguagesType = GoogleCloudDocumentaiV1DocumentPageDetectedLanguage::class;
+        protected $detectedLanguagesDataType = 'array';
+        protected $layoutType = GoogleCloudDocumentaiV1DocumentPageLayout::class;
+        protected $layoutDataType = '';
+        protected $provenanceType = GoogleCloudDocumentaiV1DocumentProvenance::class;
+        protected $provenanceDataType = '';
+        /**
+         * A list of detected languages together with confidence.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentPageDetectedLanguage[] $detectedLanguages
+         */
+        public function setDetectedLanguages($detectedLanguages)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentPageDetectedLanguage[]
+         */
+        public function getDetectedLanguages()
+        {
+        }
+        /**
+         * Layout for Block.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentPageLayout $layout
+         */
+        public function setLayout(GoogleCloudDocumentaiV1DocumentPageLayout $layout)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentPageLayout
+         */
+        public function getLayout()
+        {
+        }
+        /**
+         * The history of this annotation.
+         *
+         * @deprecated
+         * @param GoogleCloudDocumentaiV1DocumentProvenance $provenance
+         */
+        public function setProvenance(GoogleCloudDocumentaiV1DocumentProvenance $provenance)
+        {
+        }
+        /**
+         * @deprecated
+         * @return GoogleCloudDocumentaiV1DocumentProvenance
+         */
+        public function getProvenance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1DocumentPageDetectedLanguage[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentPageBlock registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetectedLanguages()
-    {
-    }
-    /**
-     * Layout for Block.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentPageLayout $layout
-     */
-    public function setLayout(GoogleCloudDocumentaiV1DocumentPageLayout $layout)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1DocumentPageLayout
-     */
-    public function getLayout()
-    {
-    }
-    /**
-     * The history of this annotation.
-     *
-     * @deprecated
-     * @param GoogleCloudDocumentaiV1DocumentProvenance $provenance
-     */
-    public function setProvenance(GoogleCloudDocumentaiV1DocumentProvenance $provenance)
-    {
-    }
-    /**
-     * @deprecated
-     * @return GoogleCloudDocumentaiV1DocumentProvenance
-     */
-    public function getProvenance()
+    class Google_Service_Contentwarehouse_GoogleCloudDocumentaiV1DocumentPageBlock extends \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentPageBlock
     {
     }
 }

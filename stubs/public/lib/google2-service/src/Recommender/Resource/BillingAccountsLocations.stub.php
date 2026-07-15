@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Recommender\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $recommenderService = new Google\Service\Recommender(...);
- *   $locations = $recommenderService->billingAccounts_locations;
- *  </code>
- */
-class BillingAccountsLocations extends \Google\Service\Resource
-{
+namespace Google\Service\Recommender\Resource {
+    /**
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $recommenderService = new Google\Service\Recommender(...);
+     *   $locations = $recommenderService->billingAccounts_locations;
+     *  </code>
+     */
+    class BillingAccountsLocations extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Recommender\Resource\BillingAccountsLocations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Recommender_Resource_BillingAccountsLocations extends \Google\Service\Recommender\Resource\BillingAccountsLocations
+    {
+    }
 }

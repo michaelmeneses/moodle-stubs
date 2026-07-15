@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityInput extends \Google\Model
-{
-    protected $instanceType = GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityInstance::class;
-    protected $instanceDataType = '';
-    protected $metricSpecType = GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualitySpec::class;
-    protected $metricSpecDataType = '';
-    /**
-     * Required. Pairwise question answering quality instance.
-     *
-     * @param GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityInstance $instance
-     */
-    public function setInstance(GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityInstance $instance)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityInput extends \Google\Model
     {
+        protected $instanceType = GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityInstance::class;
+        protected $instanceDataType = '';
+        protected $metricSpecType = GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualitySpec::class;
+        protected $metricSpecDataType = '';
+        /**
+         * Required. Pairwise question answering quality instance.
+         *
+         * @param GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityInstance $instance
+         */
+        public function setInstance(GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityInstance $instance)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityInstance
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * Required. Spec for pairwise question answering quality score metric.
+         *
+         * @param GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualitySpec $metricSpec
+         */
+        public function setMetricSpec(GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualitySpec $metricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualitySpec
+         */
+        public function getMetricSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityInstance
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstance()
-    {
-    }
-    /**
-     * Required. Spec for pairwise question answering quality score metric.
-     *
-     * @param GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualitySpec $metricSpec
-     */
-    public function setMetricSpec(GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualitySpec $metricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualitySpec
-     */
-    public function getMetricSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityInput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityInput
     {
     }
 }

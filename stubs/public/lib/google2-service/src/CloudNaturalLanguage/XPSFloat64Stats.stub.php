@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSFloat64Stats extends \Google\Collection
-{
-    protected $collection_key = 'quantiles';
-    protected $commonStatsType = XPSCommonStats::class;
-    protected $commonStatsDataType = '';
-    protected $histogramBucketsType = XPSFloat64StatsHistogramBucket::class;
-    protected $histogramBucketsDataType = 'array';
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSFloat64Stats extends \Google\Collection
+    {
+        protected $collection_key = 'quantiles';
+        protected $commonStatsType = XPSCommonStats::class;
+        protected $commonStatsDataType = '';
+        protected $histogramBucketsType = XPSFloat64StatsHistogramBucket::class;
+        protected $histogramBucketsDataType = 'array';
+        /**
+         * The mean of the series.
+         *
+         * @var 
+         */
+        public $mean;
+        /**
+         * Ordered from 0 to k k-quantile values of the data series of n values. The
+         * value at index i is, approximately, the i*n/k-th smallest value in the
+         * series; for i = 0 and i = k these are, respectively, the min and max
+         * values.
+         *
+         * @var []
+         */
+        public $quantiles;
+        /**
+         * The standard deviation of the series.
+         *
+         * @var 
+         */
+        public $standardDeviation;
+        /**
+         * @param XPSCommonStats $commonStats
+         */
+        public function setCommonStats(XPSCommonStats $commonStats)
+        {
+        }
+        /**
+         * @return XPSCommonStats
+         */
+        public function getCommonStats()
+        {
+        }
+        /**
+         * Histogram buckets of the data series. Sorted by the min value of the
+         * bucket, ascendingly, and the number of the buckets is dynamically
+         * generated. The buckets are non-overlapping and completely cover whole
+         * FLOAT64 range with min of first bucket being `"-Infinity"`, and max of the
+         * last one being `"Infinity"`.
+         *
+         * @param XPSFloat64StatsHistogramBucket[] $histogramBuckets
+         */
+        public function setHistogramBuckets($histogramBuckets)
+        {
+        }
+        /**
+         * @return XPSFloat64StatsHistogramBucket[]
+         */
+        public function getHistogramBuckets()
+        {
+        }
+        public function setMean($mean)
+        {
+        }
+        public function getMean()
+        {
+        }
+        public function setQuantiles($quantiles)
+        {
+        }
+        public function getQuantiles()
+        {
+        }
+        public function setStandardDeviation($standardDeviation)
+        {
+        }
+        public function getStandardDeviation()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * The mean of the series.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSFloat64Stats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $mean;
-    /**
-     * Ordered from 0 to k k-quantile values of the data series of n values. The
-     * value at index i is, approximately, the i*n/k-th smallest value in the
-     * series; for i = 0 and i = k these are, respectively, the min and max
-     * values.
-     *
-     * @var []
-     */
-    public $quantiles;
-    /**
-     * The standard deviation of the series.
-     *
-     * @var 
-     */
-    public $standardDeviation;
-    /**
-     * @param XPSCommonStats $commonStats
-     */
-    public function setCommonStats(XPSCommonStats $commonStats)
-    {
-    }
-    /**
-     * @return XPSCommonStats
-     */
-    public function getCommonStats()
-    {
-    }
-    /**
-     * Histogram buckets of the data series. Sorted by the min value of the
-     * bucket, ascendingly, and the number of the buckets is dynamically
-     * generated. The buckets are non-overlapping and completely cover whole
-     * FLOAT64 range with min of first bucket being `"-Infinity"`, and max of the
-     * last one being `"Infinity"`.
-     *
-     * @param XPSFloat64StatsHistogramBucket[] $histogramBuckets
-     */
-    public function setHistogramBuckets($histogramBuckets)
-    {
-    }
-    /**
-     * @return XPSFloat64StatsHistogramBucket[]
-     */
-    public function getHistogramBuckets()
-    {
-    }
-    public function setMean($mean)
-    {
-    }
-    public function getMean()
-    {
-    }
-    public function setQuantiles($quantiles)
-    {
-    }
-    public function getQuantiles()
-    {
-    }
-    public function setStandardDeviation($standardDeviation)
-    {
-    }
-    public function getStandardDeviation()
+    class Google_Service_CloudNaturalLanguage_XPSFloat64Stats extends \Google\Service\CloudNaturalLanguage\XPSFloat64Stats
     {
     }
 }

@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class UpdateCcRecipients extends \Google\Collection
-{
-    protected $collection_key = 'ccRecipients';
-    protected $ccRecipientsType = Recipient::class;
-    protected $ccRecipientsDataType = 'array';
-    /**
-     * @param Recipient[]
-     */
-    public function setCcRecipients($ccRecipients)
+namespace Google\Service\CloudSearch {
+    class UpdateCcRecipients extends \Google\Collection
     {
+        protected $collection_key = 'ccRecipients';
+        protected $ccRecipientsType = Recipient::class;
+        protected $ccRecipientsDataType = 'array';
+        /**
+         * @param Recipient[]
+         */
+        public function setCcRecipients($ccRecipients)
+        {
+        }
+        /**
+         * @return Recipient[]
+         */
+        public function getCcRecipients()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Recipient[]
+     * Runtime class alias of \Google\Service\CloudSearch\UpdateCcRecipients registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCcRecipients()
+    class Google_Service_CloudSearch_UpdateCcRecipients extends \Google\Service\CloudSearch\UpdateCcRecipients
     {
     }
 }

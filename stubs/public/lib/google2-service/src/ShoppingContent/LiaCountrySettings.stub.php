@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class LiaCountrySettings extends \Google\Model
-{
-    protected $aboutType = LiaAboutPageSettings::class;
-    protected $aboutDataType = '';
-    /**
-     * Required. CLDR country code (for example, "US").
-     *
-     * @var string
-     */
-    public $country;
-    /**
-     * The status of the "Merchant hosted local storefront" feature.
-     *
-     * @var bool
-     */
-    public $hostedLocalStorefrontActive;
-    protected $inventoryType = LiaInventorySettings::class;
-    protected $inventoryDataType = '';
-    protected $omnichannelExperienceType = LiaOmnichannelExperience::class;
-    protected $omnichannelExperienceDataType = '';
-    protected $onDisplayToOrderType = LiaOnDisplayToOrderSettings::class;
-    protected $onDisplayToOrderDataType = '';
-    protected $posDataProviderType = LiaPosDataProvider::class;
-    protected $posDataProviderDataType = '';
-    /**
-     * The status of the "Store pickup" feature.
-     *
-     * @var bool
-     */
-    public $storePickupActive;
-    /**
-     * The settings for the About page.
-     *
-     * @param LiaAboutPageSettings $about
-     */
-    public function setAbout(LiaAboutPageSettings $about)
+namespace Google\Service\ShoppingContent {
+    class LiaCountrySettings extends \Google\Model
     {
+        protected $aboutType = LiaAboutPageSettings::class;
+        protected $aboutDataType = '';
+        /**
+         * Required. CLDR country code (for example, "US").
+         *
+         * @var string
+         */
+        public $country;
+        /**
+         * The status of the "Merchant hosted local storefront" feature.
+         *
+         * @var bool
+         */
+        public $hostedLocalStorefrontActive;
+        protected $inventoryType = LiaInventorySettings::class;
+        protected $inventoryDataType = '';
+        protected $omnichannelExperienceType = LiaOmnichannelExperience::class;
+        protected $omnichannelExperienceDataType = '';
+        protected $onDisplayToOrderType = LiaOnDisplayToOrderSettings::class;
+        protected $onDisplayToOrderDataType = '';
+        protected $posDataProviderType = LiaPosDataProvider::class;
+        protected $posDataProviderDataType = '';
+        /**
+         * The status of the "Store pickup" feature.
+         *
+         * @var bool
+         */
+        public $storePickupActive;
+        /**
+         * The settings for the About page.
+         *
+         * @param LiaAboutPageSettings $about
+         */
+        public function setAbout(LiaAboutPageSettings $about)
+        {
+        }
+        /**
+         * @return LiaAboutPageSettings
+         */
+        public function getAbout()
+        {
+        }
+        /**
+         * Required. CLDR country code (for example, "US").
+         *
+         * @param string $country
+         */
+        public function setCountry($country)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountry()
+        {
+        }
+        /**
+         * The status of the "Merchant hosted local storefront" feature.
+         *
+         * @param bool $hostedLocalStorefrontActive
+         */
+        public function setHostedLocalStorefrontActive($hostedLocalStorefrontActive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHostedLocalStorefrontActive()
+        {
+        }
+        /**
+         * LIA inventory verification settings.
+         *
+         * @param LiaInventorySettings $inventory
+         */
+        public function setInventory(LiaInventorySettings $inventory)
+        {
+        }
+        /**
+         * @return LiaInventorySettings
+         */
+        public function getInventory()
+        {
+        }
+        /**
+         * The omnichannel experience configured for this country.
+         *
+         * @param LiaOmnichannelExperience $omnichannelExperience
+         */
+        public function setOmnichannelExperience(LiaOmnichannelExperience $omnichannelExperience)
+        {
+        }
+        /**
+         * @return LiaOmnichannelExperience
+         */
+        public function getOmnichannelExperience()
+        {
+        }
+        /**
+         * LIA "On Display To Order" settings.
+         *
+         * @param LiaOnDisplayToOrderSettings $onDisplayToOrder
+         */
+        public function setOnDisplayToOrder(LiaOnDisplayToOrderSettings $onDisplayToOrder)
+        {
+        }
+        /**
+         * @return LiaOnDisplayToOrderSettings
+         */
+        public function getOnDisplayToOrder()
+        {
+        }
+        /**
+         * The POS data provider linked with this country.
+         *
+         * @param LiaPosDataProvider $posDataProvider
+         */
+        public function setPosDataProvider(LiaPosDataProvider $posDataProvider)
+        {
+        }
+        /**
+         * @return LiaPosDataProvider
+         */
+        public function getPosDataProvider()
+        {
+        }
+        /**
+         * The status of the "Store pickup" feature.
+         *
+         * @param bool $storePickupActive
+         */
+        public function setStorePickupActive($storePickupActive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStorePickupActive()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LiaAboutPageSettings
+     * Runtime class alias of \Google\Service\ShoppingContent\LiaCountrySettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAbout()
-    {
-    }
-    /**
-     * Required. CLDR country code (for example, "US").
-     *
-     * @param string $country
-     */
-    public function setCountry($country)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCountry()
-    {
-    }
-    /**
-     * The status of the "Merchant hosted local storefront" feature.
-     *
-     * @param bool $hostedLocalStorefrontActive
-     */
-    public function setHostedLocalStorefrontActive($hostedLocalStorefrontActive)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHostedLocalStorefrontActive()
-    {
-    }
-    /**
-     * LIA inventory verification settings.
-     *
-     * @param LiaInventorySettings $inventory
-     */
-    public function setInventory(LiaInventorySettings $inventory)
-    {
-    }
-    /**
-     * @return LiaInventorySettings
-     */
-    public function getInventory()
-    {
-    }
-    /**
-     * The omnichannel experience configured for this country.
-     *
-     * @param LiaOmnichannelExperience $omnichannelExperience
-     */
-    public function setOmnichannelExperience(LiaOmnichannelExperience $omnichannelExperience)
-    {
-    }
-    /**
-     * @return LiaOmnichannelExperience
-     */
-    public function getOmnichannelExperience()
-    {
-    }
-    /**
-     * LIA "On Display To Order" settings.
-     *
-     * @param LiaOnDisplayToOrderSettings $onDisplayToOrder
-     */
-    public function setOnDisplayToOrder(LiaOnDisplayToOrderSettings $onDisplayToOrder)
-    {
-    }
-    /**
-     * @return LiaOnDisplayToOrderSettings
-     */
-    public function getOnDisplayToOrder()
-    {
-    }
-    /**
-     * The POS data provider linked with this country.
-     *
-     * @param LiaPosDataProvider $posDataProvider
-     */
-    public function setPosDataProvider(LiaPosDataProvider $posDataProvider)
-    {
-    }
-    /**
-     * @return LiaPosDataProvider
-     */
-    public function getPosDataProvider()
-    {
-    }
-    /**
-     * The status of the "Store pickup" feature.
-     *
-     * @param bool $storePickupActive
-     */
-    public function setStorePickupActive($storePickupActive)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getStorePickupActive()
+    class Google_Service_ShoppingContent_LiaCountrySettings extends \Google\Service\ShoppingContent\LiaCountrySettings
     {
     }
 }

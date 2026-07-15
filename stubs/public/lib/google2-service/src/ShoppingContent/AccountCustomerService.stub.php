@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountCustomerService extends \Google\Model
-{
-    /**
-     * Customer service email.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Customer service phone number.
-     *
-     * @var string
-     */
-    public $phoneNumber;
-    /**
-     * Customer service URL.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Customer service email.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\ShoppingContent {
+    class AccountCustomerService extends \Google\Model
     {
+        /**
+         * Customer service email.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Customer service phone number.
+         *
+         * @var string
+         */
+        public $phoneNumber;
+        /**
+         * Customer service URL.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Customer service email.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * Customer service phone number.
+         *
+         * @param string $phoneNumber
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
+        /**
+         * Customer service URL.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountCustomerService registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * Customer service phone number.
-     *
-     * @param string $phoneNumber
-     */
-    public function setPhoneNumber($phoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneNumber()
-    {
-    }
-    /**
-     * Customer service URL.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_ShoppingContent_AccountCustomerService extends \Google\Service\ShoppingContent\AccountCustomerService
     {
     }
 }

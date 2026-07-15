@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StreetViewPublish;
-
-class ProcessingFailureDetails extends \Google\Model
-{
-    protected $gpsDataGapDetailsType = GpsDataGapFailureDetails::class;
-    protected $gpsDataGapDetailsDataType = '';
-    protected $imuDataGapDetailsType = ImuDataGapFailureDetails::class;
-    protected $imuDataGapDetailsDataType = '';
-    protected $insufficientGpsDetailsType = InsufficientGpsFailureDetails::class;
-    protected $insufficientGpsDetailsDataType = '';
-    protected $noOverlapGpsDetailsType = NoOverlapGpsFailureDetails::class;
-    protected $noOverlapGpsDetailsDataType = '';
-    protected $notOutdoorsDetailsType = NotOutdoorsFailureDetails::class;
-    protected $notOutdoorsDetailsDataType = '';
-    /**
-     * See GpsDataGapFailureDetails.
-     *
-     * @param GpsDataGapFailureDetails $gpsDataGapDetails
-     */
-    public function setGpsDataGapDetails(GpsDataGapFailureDetails $gpsDataGapDetails)
+namespace Google\Service\StreetViewPublish {
+    class ProcessingFailureDetails extends \Google\Model
     {
+        protected $gpsDataGapDetailsType = GpsDataGapFailureDetails::class;
+        protected $gpsDataGapDetailsDataType = '';
+        protected $imuDataGapDetailsType = ImuDataGapFailureDetails::class;
+        protected $imuDataGapDetailsDataType = '';
+        protected $insufficientGpsDetailsType = InsufficientGpsFailureDetails::class;
+        protected $insufficientGpsDetailsDataType = '';
+        protected $noOverlapGpsDetailsType = NoOverlapGpsFailureDetails::class;
+        protected $noOverlapGpsDetailsDataType = '';
+        protected $notOutdoorsDetailsType = NotOutdoorsFailureDetails::class;
+        protected $notOutdoorsDetailsDataType = '';
+        /**
+         * See GpsDataGapFailureDetails.
+         *
+         * @param GpsDataGapFailureDetails $gpsDataGapDetails
+         */
+        public function setGpsDataGapDetails(GpsDataGapFailureDetails $gpsDataGapDetails)
+        {
+        }
+        /**
+         * @return GpsDataGapFailureDetails
+         */
+        public function getGpsDataGapDetails()
+        {
+        }
+        /**
+         * See ImuDataGapFailureDetails.
+         *
+         * @param ImuDataGapFailureDetails $imuDataGapDetails
+         */
+        public function setImuDataGapDetails(ImuDataGapFailureDetails $imuDataGapDetails)
+        {
+        }
+        /**
+         * @return ImuDataGapFailureDetails
+         */
+        public function getImuDataGapDetails()
+        {
+        }
+        /**
+         * See InsufficientGpsFailureDetails.
+         *
+         * @param InsufficientGpsFailureDetails $insufficientGpsDetails
+         */
+        public function setInsufficientGpsDetails(InsufficientGpsFailureDetails $insufficientGpsDetails)
+        {
+        }
+        /**
+         * @return InsufficientGpsFailureDetails
+         */
+        public function getInsufficientGpsDetails()
+        {
+        }
+        /**
+         * See NoOverlapGpsFailureDetails.
+         *
+         * @param NoOverlapGpsFailureDetails $noOverlapGpsDetails
+         */
+        public function setNoOverlapGpsDetails(NoOverlapGpsFailureDetails $noOverlapGpsDetails)
+        {
+        }
+        /**
+         * @return NoOverlapGpsFailureDetails
+         */
+        public function getNoOverlapGpsDetails()
+        {
+        }
+        /**
+         * See NotOutdoorsFailureDetails.
+         *
+         * @param NotOutdoorsFailureDetails $notOutdoorsDetails
+         */
+        public function setNotOutdoorsDetails(NotOutdoorsFailureDetails $notOutdoorsDetails)
+        {
+        }
+        /**
+         * @return NotOutdoorsFailureDetails
+         */
+        public function getNotOutdoorsDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GpsDataGapFailureDetails
+     * Runtime class alias of \Google\Service\StreetViewPublish\ProcessingFailureDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGpsDataGapDetails()
-    {
-    }
-    /**
-     * See ImuDataGapFailureDetails.
-     *
-     * @param ImuDataGapFailureDetails $imuDataGapDetails
-     */
-    public function setImuDataGapDetails(ImuDataGapFailureDetails $imuDataGapDetails)
-    {
-    }
-    /**
-     * @return ImuDataGapFailureDetails
-     */
-    public function getImuDataGapDetails()
-    {
-    }
-    /**
-     * See InsufficientGpsFailureDetails.
-     *
-     * @param InsufficientGpsFailureDetails $insufficientGpsDetails
-     */
-    public function setInsufficientGpsDetails(InsufficientGpsFailureDetails $insufficientGpsDetails)
-    {
-    }
-    /**
-     * @return InsufficientGpsFailureDetails
-     */
-    public function getInsufficientGpsDetails()
-    {
-    }
-    /**
-     * See NoOverlapGpsFailureDetails.
-     *
-     * @param NoOverlapGpsFailureDetails $noOverlapGpsDetails
-     */
-    public function setNoOverlapGpsDetails(NoOverlapGpsFailureDetails $noOverlapGpsDetails)
-    {
-    }
-    /**
-     * @return NoOverlapGpsFailureDetails
-     */
-    public function getNoOverlapGpsDetails()
-    {
-    }
-    /**
-     * See NotOutdoorsFailureDetails.
-     *
-     * @param NotOutdoorsFailureDetails $notOutdoorsDetails
-     */
-    public function setNotOutdoorsDetails(NotOutdoorsFailureDetails $notOutdoorsDetails)
-    {
-    }
-    /**
-     * @return NotOutdoorsFailureDetails
-     */
-    public function getNotOutdoorsDetails()
+    class Google_Service_StreetViewPublish_ProcessingFailureDetails extends \Google\Service\StreetViewPublish\ProcessingFailureDetails
     {
     }
 }

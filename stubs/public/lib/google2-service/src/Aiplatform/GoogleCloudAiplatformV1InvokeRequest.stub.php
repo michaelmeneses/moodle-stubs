@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1InvokeRequest extends \Google\Model
-{
-    /**
-     * ID of the DeployedModel that serves the invoke request.
-     *
-     * @var string
-     */
-    public $deployedModelId;
-    protected $httpBodyType = GoogleApiHttpBody::class;
-    protected $httpBodyDataType = '';
-    /**
-     * ID of the DeployedModel that serves the invoke request.
-     *
-     * @param string $deployedModelId
-     */
-    public function setDeployedModelId($deployedModelId)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1InvokeRequest extends \Google\Model
     {
+        /**
+         * ID of the DeployedModel that serves the invoke request.
+         *
+         * @var string
+         */
+        public $deployedModelId;
+        protected $httpBodyType = GoogleApiHttpBody::class;
+        protected $httpBodyDataType = '';
+        /**
+         * ID of the DeployedModel that serves the invoke request.
+         *
+         * @param string $deployedModelId
+         */
+        public function setDeployedModelId($deployedModelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeployedModelId()
+        {
+        }
+        /**
+         * The invoke method input. Supports HTTP headers and arbitrary data payload.
+         *
+         * @param GoogleApiHttpBody $httpBody
+         */
+        public function setHttpBody(GoogleApiHttpBody $httpBody)
+        {
+        }
+        /**
+         * @return GoogleApiHttpBody
+         */
+        public function getHttpBody()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1InvokeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployedModelId()
-    {
-    }
-    /**
-     * The invoke method input. Supports HTTP headers and arbitrary data payload.
-     *
-     * @param GoogleApiHttpBody $httpBody
-     */
-    public function setHttpBody(GoogleApiHttpBody $httpBody)
-    {
-    }
-    /**
-     * @return GoogleApiHttpBody
-     */
-    public function getHttpBody()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1InvokeRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1InvokeRequest
     {
     }
 }

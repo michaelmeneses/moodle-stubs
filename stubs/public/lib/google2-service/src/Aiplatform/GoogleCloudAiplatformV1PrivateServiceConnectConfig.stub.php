@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PrivateServiceConnectConfig extends \Google\Collection
-{
-    protected $collection_key = 'pscAutomationConfigs';
-    /**
-     * Required. If true, expose the IndexEndpoint via private service connect.
-     *
-     * @var bool
-     */
-    public $enablePrivateServiceConnect;
-    /**
-     * A list of Projects from which the forwarding rule will target the service
-     * attachment.
-     *
-     * @var string[]
-     */
-    public $projectAllowlist;
-    protected $pscAutomationConfigsType = GoogleCloudAiplatformV1PSCAutomationConfig::class;
-    protected $pscAutomationConfigsDataType = 'array';
-    /**
-     * Output only. The name of the generated service attachment resource. This is
-     * only populated if the endpoint is deployed with PrivateServiceConnect.
-     *
-     * @var string
-     */
-    public $serviceAttachment;
-    /**
-     * Required. If true, expose the IndexEndpoint via private service connect.
-     *
-     * @param bool $enablePrivateServiceConnect
-     */
-    public function setEnablePrivateServiceConnect($enablePrivateServiceConnect)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PrivateServiceConnectConfig extends \Google\Collection
     {
+        protected $collection_key = 'pscAutomationConfigs';
+        /**
+         * Required. If true, expose the IndexEndpoint via private service connect.
+         *
+         * @var bool
+         */
+        public $enablePrivateServiceConnect;
+        /**
+         * A list of Projects from which the forwarding rule will target the service
+         * attachment.
+         *
+         * @var string[]
+         */
+        public $projectAllowlist;
+        protected $pscAutomationConfigsType = GoogleCloudAiplatformV1PSCAutomationConfig::class;
+        protected $pscAutomationConfigsDataType = 'array';
+        /**
+         * Output only. The name of the generated service attachment resource. This is
+         * only populated if the endpoint is deployed with PrivateServiceConnect.
+         *
+         * @var string
+         */
+        public $serviceAttachment;
+        /**
+         * Required. If true, expose the IndexEndpoint via private service connect.
+         *
+         * @param bool $enablePrivateServiceConnect
+         */
+        public function setEnablePrivateServiceConnect($enablePrivateServiceConnect)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnablePrivateServiceConnect()
+        {
+        }
+        /**
+         * A list of Projects from which the forwarding rule will target the service
+         * attachment.
+         *
+         * @param string[] $projectAllowlist
+         */
+        public function setProjectAllowlist($projectAllowlist)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProjectAllowlist()
+        {
+        }
+        /**
+         * Optional. List of projects and networks where the PSC endpoints will be
+         * created. This field is used by Online Inference(Prediction) only.
+         *
+         * @param GoogleCloudAiplatformV1PSCAutomationConfig[] $pscAutomationConfigs
+         */
+        public function setPscAutomationConfigs($pscAutomationConfigs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PSCAutomationConfig[]
+         */
+        public function getPscAutomationConfigs()
+        {
+        }
+        /**
+         * Output only. The name of the generated service attachment resource. This is
+         * only populated if the endpoint is deployed with PrivateServiceConnect.
+         *
+         * @param string $serviceAttachment
+         */
+        public function setServiceAttachment($serviceAttachment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAttachment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PrivateServiceConnectConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnablePrivateServiceConnect()
-    {
-    }
-    /**
-     * A list of Projects from which the forwarding rule will target the service
-     * attachment.
-     *
-     * @param string[] $projectAllowlist
-     */
-    public function setProjectAllowlist($projectAllowlist)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProjectAllowlist()
-    {
-    }
-    /**
-     * Optional. List of projects and networks where the PSC endpoints will be
-     * created. This field is used by Online Inference(Prediction) only.
-     *
-     * @param GoogleCloudAiplatformV1PSCAutomationConfig[] $pscAutomationConfigs
-     */
-    public function setPscAutomationConfigs($pscAutomationConfigs)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1PSCAutomationConfig[]
-     */
-    public function getPscAutomationConfigs()
-    {
-    }
-    /**
-     * Output only. The name of the generated service attachment resource. This is
-     * only populated if the endpoint is deployed with PrivateServiceConnect.
-     *
-     * @param string $serviceAttachment
-     */
-    public function setServiceAttachment($serviceAttachment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAttachment()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PrivateServiceConnectConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PrivateServiceConnectConfig
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2ListJobTriggersResponse extends \Google\Collection
-{
-    protected $collection_key = 'jobTriggers';
-    protected $jobTriggersType = GooglePrivacyDlpV2JobTrigger::class;
-    protected $jobTriggersDataType = 'array';
-    /**
-     * If the next page is available then this value is the next page token to be
-     * used in the following ListJobTriggers request.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of triggeredJobs, up to page_size in ListJobTriggersRequest.
-     *
-     * @param GooglePrivacyDlpV2JobTrigger[] $jobTriggers
-     */
-    public function setJobTriggers($jobTriggers)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2ListJobTriggersResponse extends \Google\Collection
     {
+        protected $collection_key = 'jobTriggers';
+        protected $jobTriggersType = GooglePrivacyDlpV2JobTrigger::class;
+        protected $jobTriggersDataType = 'array';
+        /**
+         * If the next page is available then this value is the next page token to be
+         * used in the following ListJobTriggers request.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of triggeredJobs, up to page_size in ListJobTriggersRequest.
+         *
+         * @param GooglePrivacyDlpV2JobTrigger[] $jobTriggers
+         */
+        public function setJobTriggers($jobTriggers)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2JobTrigger[]
+         */
+        public function getJobTriggers()
+        {
+        }
+        /**
+         * If the next page is available then this value is the next page token to be
+         * used in the following ListJobTriggers request.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2JobTrigger[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2ListJobTriggersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJobTriggers()
-    {
-    }
-    /**
-     * If the next page is available then this value is the next page token to be
-     * used in the following ListJobTriggers request.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DLP_GooglePrivacyDlpV2ListJobTriggersResponse extends \Google\Service\DLP\GooglePrivacyDlpV2ListJobTriggersResponse
     {
     }
 }

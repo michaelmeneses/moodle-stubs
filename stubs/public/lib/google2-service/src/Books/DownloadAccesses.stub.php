@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class DownloadAccesses extends \Google\Collection
-{
-    protected $collection_key = 'downloadAccessList';
-    protected $downloadAccessListType = DownloadAccessRestriction::class;
-    protected $downloadAccessListDataType = 'array';
-    /**
-     * Resource type.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * A list of download access responses.
-     *
-     * @param DownloadAccessRestriction[] $downloadAccessList
-     */
-    public function setDownloadAccessList($downloadAccessList)
+namespace Google\Service\Books {
+    class DownloadAccesses extends \Google\Collection
     {
+        protected $collection_key = 'downloadAccessList';
+        protected $downloadAccessListType = DownloadAccessRestriction::class;
+        protected $downloadAccessListDataType = 'array';
+        /**
+         * Resource type.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * A list of download access responses.
+         *
+         * @param DownloadAccessRestriction[] $downloadAccessList
+         */
+        public function setDownloadAccessList($downloadAccessList)
+        {
+        }
+        /**
+         * @return DownloadAccessRestriction[]
+         */
+        public function getDownloadAccessList()
+        {
+        }
+        /**
+         * Resource type.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DownloadAccessRestriction[]
+     * Runtime class alias of \Google\Service\Books\DownloadAccesses registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDownloadAccessList()
-    {
-    }
-    /**
-     * Resource type.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Books_DownloadAccesses extends \Google\Service\Books\DownloadAccesses
     {
     }
 }

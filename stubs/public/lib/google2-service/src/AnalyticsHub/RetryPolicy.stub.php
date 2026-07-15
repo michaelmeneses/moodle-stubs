@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class RetryPolicy extends \Google\Model
-{
-    /**
-     * Optional. The maximum delay between consecutive deliveries of a given
-     * message. Value should be between 0 and 600 seconds. Defaults to 600
-     * seconds.
-     *
-     * @var string
-     */
-    public $maximumBackoff;
-    /**
-     * Optional. The minimum delay between consecutive deliveries of a given
-     * message. Value should be between 0 and 600 seconds. Defaults to 10 seconds.
-     *
-     * @var string
-     */
-    public $minimumBackoff;
-    /**
-     * Optional. The maximum delay between consecutive deliveries of a given
-     * message. Value should be between 0 and 600 seconds. Defaults to 600
-     * seconds.
-     *
-     * @param string $maximumBackoff
-     */
-    public function setMaximumBackoff($maximumBackoff)
+namespace Google\Service\AnalyticsHub {
+    class RetryPolicy extends \Google\Model
     {
+        /**
+         * Optional. The maximum delay between consecutive deliveries of a given
+         * message. Value should be between 0 and 600 seconds. Defaults to 600
+         * seconds.
+         *
+         * @var string
+         */
+        public $maximumBackoff;
+        /**
+         * Optional. The minimum delay between consecutive deliveries of a given
+         * message. Value should be between 0 and 600 seconds. Defaults to 10 seconds.
+         *
+         * @var string
+         */
+        public $minimumBackoff;
+        /**
+         * Optional. The maximum delay between consecutive deliveries of a given
+         * message. Value should be between 0 and 600 seconds. Defaults to 600
+         * seconds.
+         *
+         * @param string $maximumBackoff
+         */
+        public function setMaximumBackoff($maximumBackoff)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaximumBackoff()
+        {
+        }
+        /**
+         * Optional. The minimum delay between consecutive deliveries of a given
+         * message. Value should be between 0 and 600 seconds. Defaults to 10 seconds.
+         *
+         * @param string $minimumBackoff
+         */
+        public function setMinimumBackoff($minimumBackoff)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinimumBackoff()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsHub\RetryPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaximumBackoff()
-    {
-    }
-    /**
-     * Optional. The minimum delay between consecutive deliveries of a given
-     * message. Value should be between 0 and 600 seconds. Defaults to 10 seconds.
-     *
-     * @param string $minimumBackoff
-     */
-    public function setMinimumBackoff($minimumBackoff)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinimumBackoff()
+    class Google_Service_AnalyticsHub_RetryPolicy extends \Google\Service\AnalyticsHub\RetryPolicy
     {
     }
 }

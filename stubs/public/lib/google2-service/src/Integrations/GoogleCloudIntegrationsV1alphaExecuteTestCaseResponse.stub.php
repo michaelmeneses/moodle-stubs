@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaExecuteTestCaseResponse extends \Google\Collection
-{
-    /**
-     * Unspecified state
-     */
-    public const TEST_EXECUTION_STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Test case execution passed
-     */
-    public const TEST_EXECUTION_STATE_PASSED = 'PASSED';
-    /**
-     * Test case execution failed
-     */
-    public const TEST_EXECUTION_STATE_FAILED = 'FAILED';
-    protected $collection_key = 'assertionResults';
-    protected $assertionResultsType = GoogleCloudIntegrationsV1alphaAssertionResult::class;
-    protected $assertionResultsDataType = 'array';
-    /**
-     * The id of the execution corresponding to this run of integration.
-     *
-     * @var string
-     */
-    public $executionId;
-    /**
-     * OUTPUT parameters in format of Map. Where Key is the name of the parameter.
-     * Note: Name of the system generated parameters are wrapped by backtick(`) to
-     * distinguish them from the user defined parameters.
-     *
-     * @var array[]
-     */
-    public $outputParameters;
-    /**
-     * State of the test case execution
-     *
-     * @var string
-     */
-    public $testExecutionState;
-    /**
-     * Results of each assertions ran during execution of test case.
-     *
-     * @param GoogleCloudIntegrationsV1alphaAssertionResult[] $assertionResults
-     */
-    public function setAssertionResults($assertionResults)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaExecuteTestCaseResponse extends \Google\Collection
     {
+        /**
+         * Unspecified state
+         */
+        public const TEST_EXECUTION_STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Test case execution passed
+         */
+        public const TEST_EXECUTION_STATE_PASSED = 'PASSED';
+        /**
+         * Test case execution failed
+         */
+        public const TEST_EXECUTION_STATE_FAILED = 'FAILED';
+        protected $collection_key = 'assertionResults';
+        protected $assertionResultsType = GoogleCloudIntegrationsV1alphaAssertionResult::class;
+        protected $assertionResultsDataType = 'array';
+        /**
+         * The id of the execution corresponding to this run of integration.
+         *
+         * @var string
+         */
+        public $executionId;
+        /**
+         * OUTPUT parameters in format of Map. Where Key is the name of the parameter.
+         * Note: Name of the system generated parameters are wrapped by backtick(`) to
+         * distinguish them from the user defined parameters.
+         *
+         * @var array[]
+         */
+        public $outputParameters;
+        /**
+         * State of the test case execution
+         *
+         * @var string
+         */
+        public $testExecutionState;
+        /**
+         * Results of each assertions ran during execution of test case.
+         *
+         * @param GoogleCloudIntegrationsV1alphaAssertionResult[] $assertionResults
+         */
+        public function setAssertionResults($assertionResults)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaAssertionResult[]
+         */
+        public function getAssertionResults()
+        {
+        }
+        /**
+         * The id of the execution corresponding to this run of integration.
+         *
+         * @param string $executionId
+         */
+        public function setExecutionId($executionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutionId()
+        {
+        }
+        /**
+         * OUTPUT parameters in format of Map. Where Key is the name of the parameter.
+         * Note: Name of the system generated parameters are wrapped by backtick(`) to
+         * distinguish them from the user defined parameters.
+         *
+         * @param array[] $outputParameters
+         */
+        public function setOutputParameters($outputParameters)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getOutputParameters()
+        {
+        }
+        /**
+         * State of the test case execution
+         *
+         * Accepted values: STATE_UNSPECIFIED, PASSED, FAILED
+         *
+         * @param self::TEST_EXECUTION_STATE_* $testExecutionState
+         */
+        public function setTestExecutionState($testExecutionState)
+        {
+        }
+        /**
+         * @return self::TEST_EXECUTION_STATE_*
+         */
+        public function getTestExecutionState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaAssertionResult[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaExecuteTestCaseResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssertionResults()
-    {
-    }
-    /**
-     * The id of the execution corresponding to this run of integration.
-     *
-     * @param string $executionId
-     */
-    public function setExecutionId($executionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecutionId()
-    {
-    }
-    /**
-     * OUTPUT parameters in format of Map. Where Key is the name of the parameter.
-     * Note: Name of the system generated parameters are wrapped by backtick(`) to
-     * distinguish them from the user defined parameters.
-     *
-     * @param array[] $outputParameters
-     */
-    public function setOutputParameters($outputParameters)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getOutputParameters()
-    {
-    }
-    /**
-     * State of the test case execution
-     *
-     * Accepted values: STATE_UNSPECIFIED, PASSED, FAILED
-     *
-     * @param self::TEST_EXECUTION_STATE_* $testExecutionState
-     */
-    public function setTestExecutionState($testExecutionState)
-    {
-    }
-    /**
-     * @return self::TEST_EXECUTION_STATE_*
-     */
-    public function getTestExecutionState()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaExecuteTestCaseResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaExecuteTestCaseResponse
     {
     }
 }

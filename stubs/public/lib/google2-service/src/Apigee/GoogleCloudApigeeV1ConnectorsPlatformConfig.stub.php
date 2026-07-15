@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ConnectorsPlatformConfig extends \Google\Model
-{
-    /**
-     * Flag that specifies whether the Connectors Platform add-on is enabled.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Output only. Time at which the Connectors Platform add-on expires in
-     * milliseconds since epoch. If unspecified, the add-on will never expire.
-     *
-     * @var string
-     */
-    public $expiresAt;
-    /**
-     * Flag that specifies whether the Connectors Platform add-on is enabled.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ConnectorsPlatformConfig extends \Google\Model
     {
+        /**
+         * Flag that specifies whether the Connectors Platform add-on is enabled.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Output only. Time at which the Connectors Platform add-on expires in
+         * milliseconds since epoch. If unspecified, the add-on will never expire.
+         *
+         * @var string
+         */
+        public $expiresAt;
+        /**
+         * Flag that specifies whether the Connectors Platform add-on is enabled.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * Output only. Time at which the Connectors Platform add-on expires in
+         * milliseconds since epoch. If unspecified, the add-on will never expire.
+         *
+         * @param string $expiresAt
+         */
+        public function setExpiresAt($expiresAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpiresAt()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ConnectorsPlatformConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * Output only. Time at which the Connectors Platform add-on expires in
-     * milliseconds since epoch. If unspecified, the add-on will never expire.
-     *
-     * @param string $expiresAt
-     */
-    public function setExpiresAt($expiresAt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpiresAt()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ConnectorsPlatformConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1ConnectorsPlatformConfig
     {
     }
 }

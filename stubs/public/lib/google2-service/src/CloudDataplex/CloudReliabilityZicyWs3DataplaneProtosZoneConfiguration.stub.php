@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class CloudReliabilityZicyWs3DataplaneProtosZoneConfiguration extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $zone;
-    /**
-     * @param string
-     */
-    public function setZone($zone)
+namespace Google\Service\CloudDataplex {
+    class CloudReliabilityZicyWs3DataplaneProtosZoneConfiguration extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $zone;
+        /**
+         * @param string
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\CloudReliabilityZicyWs3DataplaneProtosZoneConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getZone()
+    class Google_Service_CloudDataplex_CloudReliabilityZicyWs3DataplaneProtosZoneConfiguration extends \Google\Service\CloudDataplex\CloudReliabilityZicyWs3DataplaneProtosZoneConfiguration
     {
     }
 }

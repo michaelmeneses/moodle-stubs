@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ComputeTokensRequest extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    protected $contentsType = GoogleCloudAiplatformV1Content::class;
-    protected $contentsDataType = 'array';
-    /**
-     * Optional. The instances that are the input to token computing API call.
-     * Schema is identical to the prediction schema of the text model, even for
-     * the non-text models, like chat models, or Codey models.
-     *
-     * @var array[]
-     */
-    public $instances;
-    /**
-     * Optional. The name of the publisher model requested to serve the
-     * prediction. Format:
-     * projects/{project}/locations/{location}/publishers/models
-     *
-     * @var string
-     */
-    public $model;
-    /**
-     * Optional. Input content.
-     *
-     * @param GoogleCloudAiplatformV1Content[] $contents
-     */
-    public function setContents($contents)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ComputeTokensRequest extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        protected $contentsType = GoogleCloudAiplatformV1Content::class;
+        protected $contentsDataType = 'array';
+        /**
+         * Optional. The instances that are the input to token computing API call.
+         * Schema is identical to the prediction schema of the text model, even for
+         * the non-text models, like chat models, or Codey models.
+         *
+         * @var array[]
+         */
+        public $instances;
+        /**
+         * Optional. The name of the publisher model requested to serve the
+         * prediction. Format:
+         * projects/{project}/locations/{location}/publishers/models
+         *
+         * @var string
+         */
+        public $model;
+        /**
+         * Optional. Input content.
+         *
+         * @param GoogleCloudAiplatformV1Content[] $contents
+         */
+        public function setContents($contents)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Content[]
+         */
+        public function getContents()
+        {
+        }
+        /**
+         * Optional. The instances that are the input to token computing API call.
+         * Schema is identical to the prediction schema of the text model, even for
+         * the non-text models, like chat models, or Codey models.
+         *
+         * @param array[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getInstances()
+        {
+        }
+        /**
+         * Optional. The name of the publisher model requested to serve the
+         * prediction. Format:
+         * projects/{project}/locations/{location}/publishers/models
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Content[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ComputeTokensRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContents()
-    {
-    }
-    /**
-     * Optional. The instances that are the input to token computing API call.
-     * Schema is identical to the prediction schema of the text model, even for
-     * the non-text models, like chat models, or Codey models.
-     *
-     * @param array[] $instances
-     */
-    public function setInstances($instances)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getInstances()
-    {
-    }
-    /**
-     * Optional. The name of the publisher model requested to serve the
-     * prediction. Format:
-     * projects/{project}/locations/{location}/publishers/models
-     *
-     * @param string $model
-     */
-    public function setModel($model)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModel()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ComputeTokensRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ComputeTokensRequest
     {
     }
 }

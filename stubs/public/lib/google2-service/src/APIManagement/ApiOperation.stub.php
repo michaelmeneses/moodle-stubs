@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIManagement;
-
-class ApiOperation extends \Google\Model
-{
-    /**
-     * The number of occurrences of this API Operation.
-     *
-     * @var string
-     */
-    public $count;
-    /**
-     * First seen time stamp
-     *
-     * @var string
-     */
-    public $firstSeenTime;
-    protected $httpOperationType = HttpOperation::class;
-    protected $httpOperationDataType = '';
-    /**
-     * Last seen time stamp
-     *
-     * @var string
-     */
-    public $lastSeenTime;
-    /**
-     * Identifier. Name of resource
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The number of occurrences of this API Operation.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
+namespace Google\Service\APIManagement {
+    class ApiOperation extends \Google\Model
     {
+        /**
+         * The number of occurrences of this API Operation.
+         *
+         * @var string
+         */
+        public $count;
+        /**
+         * First seen time stamp
+         *
+         * @var string
+         */
+        public $firstSeenTime;
+        protected $httpOperationType = HttpOperation::class;
+        protected $httpOperationDataType = '';
+        /**
+         * Last seen time stamp
+         *
+         * @var string
+         */
+        public $lastSeenTime;
+        /**
+         * Identifier. Name of resource
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The number of occurrences of this API Operation.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * First seen time stamp
+         *
+         * @param string $firstSeenTime
+         */
+        public function setFirstSeenTime($firstSeenTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirstSeenTime()
+        {
+        }
+        /**
+         * An HTTP Operation.
+         *
+         * @param HttpOperation $httpOperation
+         */
+        public function setHttpOperation(HttpOperation $httpOperation)
+        {
+        }
+        /**
+         * @return HttpOperation
+         */
+        public function getHttpOperation()
+        {
+        }
+        /**
+         * Last seen time stamp
+         *
+         * @param string $lastSeenTime
+         */
+        public function setLastSeenTime($lastSeenTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastSeenTime()
+        {
+        }
+        /**
+         * Identifier. Name of resource
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIManagement\ApiOperation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * First seen time stamp
-     *
-     * @param string $firstSeenTime
-     */
-    public function setFirstSeenTime($firstSeenTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFirstSeenTime()
-    {
-    }
-    /**
-     * An HTTP Operation.
-     *
-     * @param HttpOperation $httpOperation
-     */
-    public function setHttpOperation(HttpOperation $httpOperation)
-    {
-    }
-    /**
-     * @return HttpOperation
-     */
-    public function getHttpOperation()
-    {
-    }
-    /**
-     * Last seen time stamp
-     *
-     * @param string $lastSeenTime
-     */
-    public function setLastSeenTime($lastSeenTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastSeenTime()
-    {
-    }
-    /**
-     * Identifier. Name of resource
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_APIManagement_ApiOperation extends \Google\Service\APIManagement\ApiOperation
     {
     }
 }

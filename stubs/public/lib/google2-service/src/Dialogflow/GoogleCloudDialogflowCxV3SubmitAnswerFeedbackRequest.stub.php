@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3SubmitAnswerFeedbackRequest extends \Google\Model
-{
-    protected $answerFeedbackType = GoogleCloudDialogflowCxV3AnswerFeedback::class;
-    protected $answerFeedbackDataType = '';
-    /**
-     * Required. ID of the response to update its feedback. This is the same as
-     * DetectIntentResponse.response_id.
-     *
-     * @var string
-     */
-    public $responseId;
-    /**
-     * Optional. The mask to control which fields to update. If the mask is not
-     * present, all fields will be updated.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. Feedback provided for a bot answer.
-     *
-     * @param GoogleCloudDialogflowCxV3AnswerFeedback $answerFeedback
-     */
-    public function setAnswerFeedback(GoogleCloudDialogflowCxV3AnswerFeedback $answerFeedback)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3SubmitAnswerFeedbackRequest extends \Google\Model
     {
+        protected $answerFeedbackType = GoogleCloudDialogflowCxV3AnswerFeedback::class;
+        protected $answerFeedbackDataType = '';
+        /**
+         * Required. ID of the response to update its feedback. This is the same as
+         * DetectIntentResponse.response_id.
+         *
+         * @var string
+         */
+        public $responseId;
+        /**
+         * Optional. The mask to control which fields to update. If the mask is not
+         * present, all fields will be updated.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. Feedback provided for a bot answer.
+         *
+         * @param GoogleCloudDialogflowCxV3AnswerFeedback $answerFeedback
+         */
+        public function setAnswerFeedback(GoogleCloudDialogflowCxV3AnswerFeedback $answerFeedback)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3AnswerFeedback
+         */
+        public function getAnswerFeedback()
+        {
+        }
+        /**
+         * Required. ID of the response to update its feedback. This is the same as
+         * DetectIntentResponse.response_id.
+         *
+         * @param string $responseId
+         */
+        public function setResponseId($responseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResponseId()
+        {
+        }
+        /**
+         * Optional. The mask to control which fields to update. If the mask is not
+         * present, all fields will be updated.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3AnswerFeedback
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3SubmitAnswerFeedbackRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswerFeedback()
-    {
-    }
-    /**
-     * Required. ID of the response to update its feedback. This is the same as
-     * DetectIntentResponse.response_id.
-     *
-     * @param string $responseId
-     */
-    public function setResponseId($responseId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResponseId()
-    {
-    }
-    /**
-     * Optional. The mask to control which fields to update. If the mask is not
-     * present, all fields will be updated.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3SubmitAnswerFeedbackRequest extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3SubmitAnswerFeedbackRequest
     {
     }
 }

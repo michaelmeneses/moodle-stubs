@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class HttpRouteHeaderMatchIntegerRange extends \Google\Model
-{
-    /**
-     * End of the range (exclusive)
-     *
-     * @var int
-     */
-    public $end;
-    /**
-     * Start of the range (inclusive)
-     *
-     * @var int
-     */
-    public $start;
-    /**
-     * End of the range (exclusive)
-     *
-     * @param int $end
-     */
-    public function setEnd($end)
+namespace Google\Service\NetworkServices {
+    class HttpRouteHeaderMatchIntegerRange extends \Google\Model
     {
+        /**
+         * End of the range (exclusive)
+         *
+         * @var int
+         */
+        public $end;
+        /**
+         * Start of the range (inclusive)
+         *
+         * @var int
+         */
+        public $start;
+        /**
+         * End of the range (exclusive)
+         *
+         * @param int $end
+         */
+        public function setEnd($end)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEnd()
+        {
+        }
+        /**
+         * Start of the range (inclusive)
+         *
+         * @param int $start
+         */
+        public function setStart($start)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\NetworkServices\HttpRouteHeaderMatchIntegerRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnd()
-    {
-    }
-    /**
-     * Start of the range (inclusive)
-     *
-     * @param int $start
-     */
-    public function setStart($start)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStart()
+    class Google_Service_NetworkServices_HttpRouteHeaderMatchIntegerRange extends \Google\Service\NetworkServices\HttpRouteHeaderMatchIntegerRange
     {
     }
 }

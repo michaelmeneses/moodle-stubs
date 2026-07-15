@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class GqlQueryParameter extends \Google\Model
-{
-    /**
-     * A query cursor. Query cursors are returned in query result batches.
-     *
-     * @var string
-     */
-    public $cursor;
-    protected $valueType = Value::class;
-    protected $valueDataType = '';
-    /**
-     * A query cursor. Query cursors are returned in query result batches.
-     *
-     * @param string $cursor
-     */
-    public function setCursor($cursor)
+namespace Google\Service\Datastore {
+    class GqlQueryParameter extends \Google\Model
     {
+        /**
+         * A query cursor. Query cursors are returned in query result batches.
+         *
+         * @var string
+         */
+        public $cursor;
+        protected $valueType = Value::class;
+        protected $valueDataType = '';
+        /**
+         * A query cursor. Query cursors are returned in query result batches.
+         *
+         * @param string $cursor
+         */
+        public function setCursor($cursor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCursor()
+        {
+        }
+        /**
+         * A value parameter.
+         *
+         * @param Value $value
+         */
+        public function setValue(Value $value)
+        {
+        }
+        /**
+         * @return Value
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastore\GqlQueryParameter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCursor()
-    {
-    }
-    /**
-     * A value parameter.
-     *
-     * @param Value $value
-     */
-    public function setValue(Value $value)
-    {
-    }
-    /**
-     * @return Value
-     */
-    public function getValue()
+    class Google_Service_Datastore_GqlQueryParameter extends \Google\Service\Datastore\GqlQueryParameter
     {
     }
 }

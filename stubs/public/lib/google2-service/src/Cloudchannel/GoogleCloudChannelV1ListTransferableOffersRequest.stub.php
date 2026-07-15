@@ -21,168 +21,177 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1ListTransferableOffersRequest extends \Google\Model
-{
-    /**
-     * Optional. The Billing Account to look up Offers for. Format:
-     * accounts/{account_id}/billingAccounts/{billing_account_id}. This field is
-     * only relevant for multi-currency accounts. It should be left empty for
-     * single currency accounts.
-     *
-     * @var string
-     */
-    public $billingAccount;
-    /**
-     * Customer's Cloud Identity ID
-     *
-     * @var string
-     */
-    public $cloudIdentityId;
-    /**
-     * A reseller should create a customer and use the resource name of that
-     * customer here.
-     *
-     * @var string
-     */
-    public $customerName;
-    /**
-     * Optional. The BCP-47 language code. For example, "en-US". The response will
-     * localize in the corresponding language code, if specified. The default
-     * value is "en-US".
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Requested page size. Server might return fewer results than requested. If
-     * unspecified, returns at most 100 offers. The maximum value is 1000; the
-     * server will coerce values above 1000.
-     *
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * A token for a page of results other than the first page. Obtained using
-     * ListTransferableOffersResponse.next_page_token of the previous
-     * CloudChannelService.ListTransferableOffers call.
-     *
-     * @var string
-     */
-    public $pageToken;
-    /**
-     * Required. The SKU to look up Offers for.
-     *
-     * @var string
-     */
-    public $sku;
-    /**
-     * Optional. The Billing Account to look up Offers for. Format:
-     * accounts/{account_id}/billingAccounts/{billing_account_id}. This field is
-     * only relevant for multi-currency accounts. It should be left empty for
-     * single currency accounts.
-     *
-     * @param string $billingAccount
-     */
-    public function setBillingAccount($billingAccount)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1ListTransferableOffersRequest extends \Google\Model
     {
+        /**
+         * Optional. The Billing Account to look up Offers for. Format:
+         * accounts/{account_id}/billingAccounts/{billing_account_id}. This field is
+         * only relevant for multi-currency accounts. It should be left empty for
+         * single currency accounts.
+         *
+         * @var string
+         */
+        public $billingAccount;
+        /**
+         * Customer's Cloud Identity ID
+         *
+         * @var string
+         */
+        public $cloudIdentityId;
+        /**
+         * A reseller should create a customer and use the resource name of that
+         * customer here.
+         *
+         * @var string
+         */
+        public $customerName;
+        /**
+         * Optional. The BCP-47 language code. For example, "en-US". The response will
+         * localize in the corresponding language code, if specified. The default
+         * value is "en-US".
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Requested page size. Server might return fewer results than requested. If
+         * unspecified, returns at most 100 offers. The maximum value is 1000; the
+         * server will coerce values above 1000.
+         *
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * A token for a page of results other than the first page. Obtained using
+         * ListTransferableOffersResponse.next_page_token of the previous
+         * CloudChannelService.ListTransferableOffers call.
+         *
+         * @var string
+         */
+        public $pageToken;
+        /**
+         * Required. The SKU to look up Offers for.
+         *
+         * @var string
+         */
+        public $sku;
+        /**
+         * Optional. The Billing Account to look up Offers for. Format:
+         * accounts/{account_id}/billingAccounts/{billing_account_id}. This field is
+         * only relevant for multi-currency accounts. It should be left empty for
+         * single currency accounts.
+         *
+         * @param string $billingAccount
+         */
+        public function setBillingAccount($billingAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBillingAccount()
+        {
+        }
+        /**
+         * Customer's Cloud Identity ID
+         *
+         * @param string $cloudIdentityId
+         */
+        public function setCloudIdentityId($cloudIdentityId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCloudIdentityId()
+        {
+        }
+        /**
+         * A reseller should create a customer and use the resource name of that
+         * customer here.
+         *
+         * @param string $customerName
+         */
+        public function setCustomerName($customerName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomerName()
+        {
+        }
+        /**
+         * Optional. The BCP-47 language code. For example, "en-US". The response will
+         * localize in the corresponding language code, if specified. The default
+         * value is "en-US".
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * Requested page size. Server might return fewer results than requested. If
+         * unspecified, returns at most 100 offers. The maximum value is 1000; the
+         * server will coerce values above 1000.
+         *
+         * @param int $pageSize
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * A token for a page of results other than the first page. Obtained using
+         * ListTransferableOffersResponse.next_page_token of the previous
+         * CloudChannelService.ListTransferableOffers call.
+         *
+         * @param string $pageToken
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
+        /**
+         * Required. The SKU to look up Offers for.
+         *
+         * @param string $sku
+         */
+        public function setSku($sku)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSku()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1ListTransferableOffersRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBillingAccount()
-    {
-    }
-    /**
-     * Customer's Cloud Identity ID
-     *
-     * @param string $cloudIdentityId
-     */
-    public function setCloudIdentityId($cloudIdentityId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCloudIdentityId()
-    {
-    }
-    /**
-     * A reseller should create a customer and use the resource name of that
-     * customer here.
-     *
-     * @param string $customerName
-     */
-    public function setCustomerName($customerName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomerName()
-    {
-    }
-    /**
-     * Optional. The BCP-47 language code. For example, "en-US". The response will
-     * localize in the corresponding language code, if specified. The default
-     * value is "en-US".
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * Requested page size. Server might return fewer results than requested. If
-     * unspecified, returns at most 100 offers. The maximum value is 1000; the
-     * server will coerce values above 1000.
-     *
-     * @param int $pageSize
-     */
-    public function setPageSize($pageSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPageSize()
-    {
-    }
-    /**
-     * A token for a page of results other than the first page. Obtained using
-     * ListTransferableOffersResponse.next_page_token of the previous
-     * CloudChannelService.ListTransferableOffers call.
-     *
-     * @param string $pageToken
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
-    {
-    }
-    /**
-     * Required. The SKU to look up Offers for.
-     *
-     * @param string $sku
-     */
-    public function setSku($sku)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSku()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1ListTransferableOffersRequest extends \Google\Service\Cloudchannel\GoogleCloudChannelV1ListTransferableOffersRequest
     {
     }
 }

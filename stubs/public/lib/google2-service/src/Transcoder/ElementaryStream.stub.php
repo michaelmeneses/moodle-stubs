@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class ElementaryStream extends \Google\Model
-{
-    protected $audioStreamType = AudioStream::class;
-    protected $audioStreamDataType = '';
-    /**
-     * A unique key for this elementary stream.
-     *
-     * @var string
-     */
-    public $key;
-    protected $textStreamType = TextStream::class;
-    protected $textStreamDataType = '';
-    protected $videoStreamType = VideoStream::class;
-    protected $videoStreamDataType = '';
-    /**
-     * Encoding of an audio stream.
-     *
-     * @param AudioStream $audioStream
-     */
-    public function setAudioStream(AudioStream $audioStream)
+namespace Google\Service\Transcoder {
+    class ElementaryStream extends \Google\Model
     {
+        protected $audioStreamType = AudioStream::class;
+        protected $audioStreamDataType = '';
+        /**
+         * A unique key for this elementary stream.
+         *
+         * @var string
+         */
+        public $key;
+        protected $textStreamType = TextStream::class;
+        protected $textStreamDataType = '';
+        protected $videoStreamType = VideoStream::class;
+        protected $videoStreamDataType = '';
+        /**
+         * Encoding of an audio stream.
+         *
+         * @param AudioStream $audioStream
+         */
+        public function setAudioStream(AudioStream $audioStream)
+        {
+        }
+        /**
+         * @return AudioStream
+         */
+        public function getAudioStream()
+        {
+        }
+        /**
+         * A unique key for this elementary stream.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Encoding of a text stream. For example, closed captions or subtitles.
+         *
+         * @param TextStream $textStream
+         */
+        public function setTextStream(TextStream $textStream)
+        {
+        }
+        /**
+         * @return TextStream
+         */
+        public function getTextStream()
+        {
+        }
+        /**
+         * Encoding of a video stream.
+         *
+         * @param VideoStream $videoStream
+         */
+        public function setVideoStream(VideoStream $videoStream)
+        {
+        }
+        /**
+         * @return VideoStream
+         */
+        public function getVideoStream()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AudioStream
+     * Runtime class alias of \Google\Service\Transcoder\ElementaryStream registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAudioStream()
-    {
-    }
-    /**
-     * A unique key for this elementary stream.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * Encoding of a text stream. For example, closed captions or subtitles.
-     *
-     * @param TextStream $textStream
-     */
-    public function setTextStream(TextStream $textStream)
-    {
-    }
-    /**
-     * @return TextStream
-     */
-    public function getTextStream()
-    {
-    }
-    /**
-     * Encoding of a video stream.
-     *
-     * @param VideoStream $videoStream
-     */
-    public function setVideoStream(VideoStream $videoStream)
-    {
-    }
-    /**
-     * @return VideoStream
-     */
-    public function getVideoStream()
+    class Google_Service_Transcoder_ElementaryStream extends \Google\Service\Transcoder\ElementaryStream
     {
     }
 }

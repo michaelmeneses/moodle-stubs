@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableCell extends \Google\Collection
-{
-    protected $collection_key = 'blocks';
-    protected $blocksType = GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlock::class;
-    protected $blocksDataType = 'array';
-    /**
-     * How many columns this cell spans.
-     *
-     * @var int
-     */
-    public $colSpan;
-    /**
-     * How many rows this cell spans.
-     *
-     * @var int
-     */
-    public $rowSpan;
-    /**
-     * A table cell is a list of blocks. Repeated blocks support further
-     * hierarchies and nested blocks.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlock[] $blocks
-     */
-    public function setBlocks($blocks)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableCell extends \Google\Collection
     {
+        protected $collection_key = 'blocks';
+        protected $blocksType = GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlock::class;
+        protected $blocksDataType = 'array';
+        /**
+         * How many columns this cell spans.
+         *
+         * @var int
+         */
+        public $colSpan;
+        /**
+         * How many rows this cell spans.
+         *
+         * @var int
+         */
+        public $rowSpan;
+        /**
+         * A table cell is a list of blocks. Repeated blocks support further
+         * hierarchies and nested blocks.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlock[] $blocks
+         */
+        public function setBlocks($blocks)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlock[]
+         */
+        public function getBlocks()
+        {
+        }
+        /**
+         * How many columns this cell spans.
+         *
+         * @param int $colSpan
+         */
+        public function setColSpan($colSpan)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColSpan()
+        {
+        }
+        /**
+         * How many rows this cell spans.
+         *
+         * @param int $rowSpan
+         */
+        public function setRowSpan($rowSpan)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRowSpan()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlock[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableCell registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlocks()
-    {
-    }
-    /**
-     * How many columns this cell spans.
-     *
-     * @param int $colSpan
-     */
-    public function setColSpan($colSpan)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getColSpan()
-    {
-    }
-    /**
-     * How many rows this cell spans.
-     *
-     * @param int $rowSpan
-     */
-    public function setRowSpan($rowSpan)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRowSpan()
+    class Google_Service_Contentwarehouse_GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableCell extends \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableCell
     {
     }
 }

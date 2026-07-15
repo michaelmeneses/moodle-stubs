@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class AddCreativeRequest extends \Google\Model
-{
-    /**
-     * Name of the creative to add to the finalized deal, in the format
-     * `buyers/{buyerAccountId}/creatives/{creativeId}`. See creative.name.
-     *
-     * @var string
-     */
-    public $creative;
-    /**
-     * Name of the creative to add to the finalized deal, in the format
-     * `buyers/{buyerAccountId}/creatives/{creativeId}`. See creative.name.
-     *
-     * @param string $creative
-     */
-    public function setCreative($creative)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class AddCreativeRequest extends \Google\Model
     {
+        /**
+         * Name of the creative to add to the finalized deal, in the format
+         * `buyers/{buyerAccountId}/creatives/{creativeId}`. See creative.name.
+         *
+         * @var string
+         */
+        public $creative;
+        /**
+         * Name of the creative to add to the finalized deal, in the format
+         * `buyers/{buyerAccountId}/creatives/{creativeId}`. See creative.name.
+         *
+         * @param string $creative
+         */
+        public function setCreative($creative)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreative()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\AddCreativeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreative()
+    class Google_Service_AuthorizedBuyersMarketplace_AddCreativeRequest extends \Google\Service\AuthorizedBuyersMarketplace\AddCreativeRequest
     {
     }
 }

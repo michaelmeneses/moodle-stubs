@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class SecurityPostureConfig extends \Google\Model
-{
-    /**
-     * Default value not specified.
-     */
-    public const MODE_MODE_UNSPECIFIED = 'MODE_UNSPECIFIED';
-    /**
-     * Disables Security Posture features on the cluster.
-     */
-    public const MODE_DISABLED = 'DISABLED';
-    /**
-     * Applies Security Posture features on the cluster.
-     */
-    public const MODE_BASIC = 'BASIC';
-    /**
-     * Applies the Security Posture off cluster Enterprise level features.
-     */
-    public const MODE_ENTERPRISE = 'ENTERPRISE';
-    /**
-     * Default value not specified.
-     */
-    public const VULNERABILITY_MODE_VULNERABILITY_MODE_UNSPECIFIED = 'VULNERABILITY_MODE_UNSPECIFIED';
-    /**
-     * Disables vulnerability scanning on the cluster.
-     */
-    public const VULNERABILITY_MODE_VULNERABILITY_DISABLED = 'VULNERABILITY_DISABLED';
-    /**
-     * Applies basic vulnerability scanning on the cluster.
-     */
-    public const VULNERABILITY_MODE_VULNERABILITY_BASIC = 'VULNERABILITY_BASIC';
-    /**
-     * Applies the Security Posture's vulnerability on cluster Enterprise level
-     * features.
-     */
-    public const VULNERABILITY_MODE_VULNERABILITY_ENTERPRISE = 'VULNERABILITY_ENTERPRISE';
-    /**
-     * Sets which mode to use for Security Posture features.
-     *
-     * @var string
-     */
-    public $mode;
-    /**
-     * Sets which mode to use for vulnerability scanning.
-     *
-     * @var string
-     */
-    public $vulnerabilityMode;
-    /**
-     * Sets which mode to use for Security Posture features.
-     *
-     * Accepted values: MODE_UNSPECIFIED, DISABLED, BASIC, ENTERPRISE
-     *
-     * @param self::MODE_* $mode
-     */
-    public function setMode($mode)
+namespace Google\Service\Container {
+    class SecurityPostureConfig extends \Google\Model
     {
+        /**
+         * Default value not specified.
+         */
+        public const MODE_MODE_UNSPECIFIED = 'MODE_UNSPECIFIED';
+        /**
+         * Disables Security Posture features on the cluster.
+         */
+        public const MODE_DISABLED = 'DISABLED';
+        /**
+         * Applies Security Posture features on the cluster.
+         */
+        public const MODE_BASIC = 'BASIC';
+        /**
+         * Applies the Security Posture off cluster Enterprise level features.
+         */
+        public const MODE_ENTERPRISE = 'ENTERPRISE';
+        /**
+         * Default value not specified.
+         */
+        public const VULNERABILITY_MODE_VULNERABILITY_MODE_UNSPECIFIED = 'VULNERABILITY_MODE_UNSPECIFIED';
+        /**
+         * Disables vulnerability scanning on the cluster.
+         */
+        public const VULNERABILITY_MODE_VULNERABILITY_DISABLED = 'VULNERABILITY_DISABLED';
+        /**
+         * Applies basic vulnerability scanning on the cluster.
+         */
+        public const VULNERABILITY_MODE_VULNERABILITY_BASIC = 'VULNERABILITY_BASIC';
+        /**
+         * Applies the Security Posture's vulnerability on cluster Enterprise level
+         * features.
+         */
+        public const VULNERABILITY_MODE_VULNERABILITY_ENTERPRISE = 'VULNERABILITY_ENTERPRISE';
+        /**
+         * Sets which mode to use for Security Posture features.
+         *
+         * @var string
+         */
+        public $mode;
+        /**
+         * Sets which mode to use for vulnerability scanning.
+         *
+         * @var string
+         */
+        public $vulnerabilityMode;
+        /**
+         * Sets which mode to use for Security Posture features.
+         *
+         * Accepted values: MODE_UNSPECIFIED, DISABLED, BASIC, ENTERPRISE
+         *
+         * @param self::MODE_* $mode
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return self::MODE_*
+         */
+        public function getMode()
+        {
+        }
+        /**
+         * Sets which mode to use for vulnerability scanning.
+         *
+         * Accepted values: VULNERABILITY_MODE_UNSPECIFIED, VULNERABILITY_DISABLED,
+         * VULNERABILITY_BASIC, VULNERABILITY_ENTERPRISE
+         *
+         * @param self::VULNERABILITY_MODE_* $vulnerabilityMode
+         */
+        public function setVulnerabilityMode($vulnerabilityMode)
+        {
+        }
+        /**
+         * @return self::VULNERABILITY_MODE_*
+         */
+        public function getVulnerabilityMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MODE_*
+     * Runtime class alias of \Google\Service\Container\SecurityPostureConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMode()
-    {
-    }
-    /**
-     * Sets which mode to use for vulnerability scanning.
-     *
-     * Accepted values: VULNERABILITY_MODE_UNSPECIFIED, VULNERABILITY_DISABLED,
-     * VULNERABILITY_BASIC, VULNERABILITY_ENTERPRISE
-     *
-     * @param self::VULNERABILITY_MODE_* $vulnerabilityMode
-     */
-    public function setVulnerabilityMode($vulnerabilityMode)
-    {
-    }
-    /**
-     * @return self::VULNERABILITY_MODE_*
-     */
-    public function getVulnerabilityMode()
+    class Google_Service_Container_SecurityPostureConfig extends \Google\Service\Container\SecurityPostureConfig
     {
     }
 }

@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedChatItem extends \Google\Collection
-{
-    protected $collection_key = 'activityInfo';
-    protected $activityInfoType = AppsDynamiteSharedChatItemActivityInfo::class;
-    protected $activityInfoDataType = 'array';
-    protected $groupInfoType = AppsDynamiteSharedChatItemGroupInfo::class;
-    protected $groupInfoDataType = '';
-    protected $messageInfoType = AppsDynamiteSharedMessageInfo::class;
-    protected $messageInfoDataType = '';
-    /**
-     * @param AppsDynamiteSharedChatItemActivityInfo[]
-     */
-    public function setActivityInfo($activityInfo)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedChatItem extends \Google\Collection
     {
+        protected $collection_key = 'activityInfo';
+        protected $activityInfoType = AppsDynamiteSharedChatItemActivityInfo::class;
+        protected $activityInfoDataType = 'array';
+        protected $groupInfoType = AppsDynamiteSharedChatItemGroupInfo::class;
+        protected $groupInfoDataType = '';
+        protected $messageInfoType = AppsDynamiteSharedMessageInfo::class;
+        protected $messageInfoDataType = '';
+        /**
+         * @param AppsDynamiteSharedChatItemActivityInfo[]
+         */
+        public function setActivityInfo($activityInfo)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedChatItemActivityInfo[]
+         */
+        public function getActivityInfo()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedChatItemGroupInfo
+         */
+        public function setGroupInfo(AppsDynamiteSharedChatItemGroupInfo $groupInfo)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedChatItemGroupInfo
+         */
+        public function getGroupInfo()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedMessageInfo
+         */
+        public function setMessageInfo(AppsDynamiteSharedMessageInfo $messageInfo)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedMessageInfo
+         */
+        public function getMessageInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedChatItemActivityInfo[]
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedChatItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivityInfo()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedChatItemGroupInfo
-     */
-    public function setGroupInfo(AppsDynamiteSharedChatItemGroupInfo $groupInfo)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedChatItemGroupInfo
-     */
-    public function getGroupInfo()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedMessageInfo
-     */
-    public function setMessageInfo(AppsDynamiteSharedMessageInfo $messageInfo)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedMessageInfo
-     */
-    public function getMessageInfo()
+    class Google_Service_CloudSearch_AppsDynamiteSharedChatItem extends \Google\Service\CloudSearch\AppsDynamiteSharedChatItem
     {
     }
 }

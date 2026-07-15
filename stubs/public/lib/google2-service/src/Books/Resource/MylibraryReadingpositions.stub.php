@@ -21,56 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books\Resource;
-
-/**
- * The "readingpositions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $booksService = new Google\Service\Books(...);
- *   $readingpositions = $booksService->mylibrary_readingpositions;
- *  </code>
- */
-class MylibraryReadingpositions extends \Google\Service\Resource
-{
+namespace Google\Service\Books\Resource {
+    use Google\Service\Books\BooksEmpty;
+    use Google\Service\Books\ReadingPosition;
     /**
-     * Retrieves my reading position information for a volume.
-     * (readingpositions.get)
-     *
-     * @param string $volumeId ID of volume for which to retrieve a reading
-     * position.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string contentVersion Volume content version for which this
-     * reading position is requested.
-     * @opt_param string source String to identify the originator of this request.
-     * @return ReadingPosition
-     * @throws \Google\Service\Exception
+     * The "readingpositions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $booksService = new Google\Service\Books(...);
+     *   $readingpositions = $booksService->mylibrary_readingpositions;
+     *  </code>
      */
-    public function get($volumeId, $optParams = [])
+    class MylibraryReadingpositions extends \Google\Service\Resource
     {
+        /**
+         * Retrieves my reading position information for a volume.
+         * (readingpositions.get)
+         *
+         * @param string $volumeId ID of volume for which to retrieve a reading
+         * position.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string contentVersion Volume content version for which this
+         * reading position is requested.
+         * @opt_param string source String to identify the originator of this request.
+         * @return ReadingPosition
+         * @throws \Google\Service\Exception
+         */
+        public function get($volumeId, $optParams = [])
+        {
+        }
+        /**
+         * Sets my reading position information for a volume.
+         * (readingpositions.setPosition)
+         *
+         * @param string $volumeId ID of volume for which to update the reading
+         * position.
+         * @param string $position Position string for the new volume reading position.
+         * @param string $timestamp RFC 3339 UTC format timestamp associated with this
+         * reading position.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string action Action that caused this reading position to be set.
+         * @opt_param string contentVersion Volume content version for which this
+         * reading position applies.
+         * @opt_param string deviceCookie Random persistent device cookie optional on
+         * set position.
+         * @opt_param string source String to identify the originator of this request.
+         * @return BooksEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function setPosition($volumeId, $position, $timestamp, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Sets my reading position information for a volume.
-     * (readingpositions.setPosition)
-     *
-     * @param string $volumeId ID of volume for which to update the reading
-     * position.
-     * @param string $position Position string for the new volume reading position.
-     * @param string $timestamp RFC 3339 UTC format timestamp associated with this
-     * reading position.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string action Action that caused this reading position to be set.
-     * @opt_param string contentVersion Volume content version for which this
-     * reading position applies.
-     * @opt_param string deviceCookie Random persistent device cookie optional on
-     * set position.
-     * @opt_param string source String to identify the originator of this request.
-     * @return BooksEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Books\Resource\MylibraryReadingpositions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setPosition($volumeId, $position, $timestamp, $optParams = [])
+    class Google_Service_Books_Resource_MylibraryReadingpositions extends \Google\Service\Books\Resource\MylibraryReadingpositions
     {
     }
 }

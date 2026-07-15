@@ -21,33 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking\Resource;
-
-/**
- * The "roles" collection of methods.
- * Typical usage is:
- *  <code>
- *   $servicenetworkingService = new Google\Service\ServiceNetworking(...);
- *   $roles = $servicenetworkingService->services_roles;
- *  </code>
- */
-class ServicesRoles extends \Google\Service\Resource
-{
+namespace Google\Service\ServiceNetworking\Resource {
+    use Google\Service\ServiceNetworking\AddRolesRequest;
+    use Google\Service\ServiceNetworking\Operation;
     /**
-     * Service producers can use this method to add roles in the shared VPC host
-     * project. Each role is bound to the provided member. Each role must be
-     * selected from within an allowlisted set of roles. Each role is applied at
-     * only the granularity specified in the allowlist. (roles.add)
-     *
-     * @param string $parent Required. This is in a form services/{service} where
-     * {service} is the name of the private access management service. For example
-     * 'service-peering.example.com'.
-     * @param AddRolesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "roles" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $servicenetworkingService = new Google\Service\ServiceNetworking(...);
+     *   $roles = $servicenetworkingService->services_roles;
+     *  </code>
      */
-    public function add($parent, AddRolesRequest $postBody, $optParams = [])
+    class ServicesRoles extends \Google\Service\Resource
+    {
+        /**
+         * Service producers can use this method to add roles in the shared VPC host
+         * project. Each role is bound to the provided member. Each role must be
+         * selected from within an allowlisted set of roles. Each role is applied at
+         * only the granularity specified in the allowlist. (roles.add)
+         *
+         * @param string $parent Required. This is in a form services/{service} where
+         * {service} is the name of the private access management service. For example
+         * 'service-peering.example.com'.
+         * @param AddRolesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function add($parent, AddRolesRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ServiceNetworking\Resource\ServicesRoles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ServiceNetworking_Resource_ServicesRoles extends \Google\Service\ServiceNetworking\Resource\ServicesRoles
     {
     }
 }

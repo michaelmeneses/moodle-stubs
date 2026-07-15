@@ -21,43 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dataflowService = new Google\Service\Dataflow(...);
- *   $projects = $dataflowService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\Dataflow\Resource {
+    use Google\Service\Dataflow\DeleteSnapshotResponse;
+    use Google\Service\Dataflow\SendWorkerMessagesRequest;
+    use Google\Service\Dataflow\SendWorkerMessagesResponse;
     /**
-     * Deletes a snapshot. (projects.deleteSnapshots)
-     *
-     * @param string $projectId The ID of the Cloud Platform project that the
-     * snapshot belongs to.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string location The location that contains this snapshot.
-     * @opt_param string snapshotId The ID of the snapshot.
-     * @return DeleteSnapshotResponse
-     * @throws \Google\Service\Exception
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dataflowService = new Google\Service\Dataflow(...);
+     *   $projects = $dataflowService->projects;
+     *  </code>
      */
-    public function deleteSnapshots($projectId, $optParams = [])
+    class Projects extends \Google\Service\Resource
     {
+        /**
+         * Deletes a snapshot. (projects.deleteSnapshots)
+         *
+         * @param string $projectId The ID of the Cloud Platform project that the
+         * snapshot belongs to.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string location The location that contains this snapshot.
+         * @opt_param string snapshotId The ID of the snapshot.
+         * @return DeleteSnapshotResponse
+         * @throws \Google\Service\Exception
+         */
+        public function deleteSnapshots($projectId, $optParams = [])
+        {
+        }
+        /**
+         * Send a worker_message to the service. (projects.workerMessages)
+         *
+         * @param string $projectId The project to send the WorkerMessages to.
+         * @param SendWorkerMessagesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SendWorkerMessagesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function workerMessages($projectId, SendWorkerMessagesRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Send a worker_message to the service. (projects.workerMessages)
-     *
-     * @param string $projectId The project to send the WorkerMessages to.
-     * @param SendWorkerMessagesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SendWorkerMessagesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dataflow\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function workerMessages($projectId, SendWorkerMessagesRequest $postBody, $optParams = [])
+    class Google_Service_Dataflow_Resource_Projects extends \Google\Service\Dataflow\Resource\Projects
     {
     }
 }

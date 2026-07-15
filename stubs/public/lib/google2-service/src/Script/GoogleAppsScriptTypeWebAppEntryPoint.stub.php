@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script;
-
-class GoogleAppsScriptTypeWebAppEntryPoint extends \Google\Model
-{
-    protected $entryPointConfigType = GoogleAppsScriptTypeWebAppConfig::class;
-    protected $entryPointConfigDataType = '';
-    /**
-     * The URL for the web application.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * The entry point's configuration.
-     *
-     * @param GoogleAppsScriptTypeWebAppConfig $entryPointConfig
-     */
-    public function setEntryPointConfig(GoogleAppsScriptTypeWebAppConfig $entryPointConfig)
+namespace Google\Service\Script {
+    class GoogleAppsScriptTypeWebAppEntryPoint extends \Google\Model
     {
+        protected $entryPointConfigType = GoogleAppsScriptTypeWebAppConfig::class;
+        protected $entryPointConfigDataType = '';
+        /**
+         * The URL for the web application.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * The entry point's configuration.
+         *
+         * @param GoogleAppsScriptTypeWebAppConfig $entryPointConfig
+         */
+        public function setEntryPointConfig(GoogleAppsScriptTypeWebAppConfig $entryPointConfig)
+        {
+        }
+        /**
+         * @return GoogleAppsScriptTypeWebAppConfig
+         */
+        public function getEntryPointConfig()
+        {
+        }
+        /**
+         * The URL for the web application.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsScriptTypeWebAppConfig
+     * Runtime class alias of \Google\Service\Script\GoogleAppsScriptTypeWebAppEntryPoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntryPointConfig()
-    {
-    }
-    /**
-     * The URL for the web application.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_Script_GoogleAppsScriptTypeWebAppEntryPoint extends \Google\Service\Script\GoogleAppsScriptTypeWebAppEntryPoint
     {
     }
 }

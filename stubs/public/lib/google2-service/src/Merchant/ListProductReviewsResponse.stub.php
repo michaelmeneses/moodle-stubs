@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Merchant;
-
-class ListProductReviewsResponse extends \Google\Collection
-{
-    protected $collection_key = 'productReviews';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $productReviewsType = ProductReview::class;
-    protected $productReviewsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Merchant {
+    class ListProductReviewsResponse extends \Google\Collection
     {
+        protected $collection_key = 'productReviews';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $productReviewsType = ProductReview::class;
+        protected $productReviewsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The product review.
+         *
+         * @param ProductReview[] $productReviews
+         */
+        public function setProductReviews($productReviews)
+        {
+        }
+        /**
+         * @return ProductReview[]
+         */
+        public function getProductReviews()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Merchant\ListProductReviewsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The product review.
-     *
-     * @param ProductReview[] $productReviews
-     */
-    public function setProductReviews($productReviews)
-    {
-    }
-    /**
-     * @return ProductReview[]
-     */
-    public function getProductReviews()
+    class Google_Service_Merchant_ListProductReviewsResponse extends \Google\Service\Merchant\ListProductReviewsResponse
     {
     }
 }

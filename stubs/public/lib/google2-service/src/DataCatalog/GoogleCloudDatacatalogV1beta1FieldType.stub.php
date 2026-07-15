@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1FieldType extends \Google\Model
-{
-    protected $enumTypeType = GoogleCloudDatacatalogV1beta1FieldTypeEnumType::class;
-    protected $enumTypeDataType = '';
-    public $primitiveType;
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1FieldType extends \Google\Model
+    {
+        protected $enumTypeType = GoogleCloudDatacatalogV1beta1FieldTypeEnumType::class;
+        protected $enumTypeDataType = '';
+        public $primitiveType;
+        /**
+         * @param GoogleCloudDatacatalogV1beta1FieldTypeEnumType
+         */
+        public function setEnumType(GoogleCloudDatacatalogV1beta1FieldTypeEnumType $enumType)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1FieldTypeEnumType
+         */
+        public function getEnumType()
+        {
+        }
+        public function setPrimitiveType($primitiveType)
+        {
+        }
+        public function getPrimitiveType()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param GoogleCloudDatacatalogV1beta1FieldTypeEnumType
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1FieldType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setEnumType(GoogleCloudDatacatalogV1beta1FieldTypeEnumType $enumType)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1beta1FieldTypeEnumType
-     */
-    public function getEnumType()
-    {
-    }
-    public function setPrimitiveType($primitiveType)
-    {
-    }
-    public function getPrimitiveType()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1FieldType extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1FieldType
     {
     }
 }

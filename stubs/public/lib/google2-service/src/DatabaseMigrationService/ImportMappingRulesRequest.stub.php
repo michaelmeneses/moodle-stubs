@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class ImportMappingRulesRequest extends \Google\Collection
-{
-    /**
-     * Unspecified rules format.
-     */
-    public const RULES_FORMAT_IMPORT_RULES_FILE_FORMAT_UNSPECIFIED = 'IMPORT_RULES_FILE_FORMAT_UNSPECIFIED';
-    /**
-     * HarbourBridge session file.
-     */
-    public const RULES_FORMAT_IMPORT_RULES_FILE_FORMAT_HARBOUR_BRIDGE_SESSION_FILE = 'IMPORT_RULES_FILE_FORMAT_HARBOUR_BRIDGE_SESSION_FILE';
-    /**
-     * Ora2Pg configuration file.
-     */
-    public const RULES_FORMAT_IMPORT_RULES_FILE_FORMAT_ORATOPG_CONFIG_FILE = 'IMPORT_RULES_FILE_FORMAT_ORATOPG_CONFIG_FILE';
-    protected $collection_key = 'rulesFiles';
-    /**
-     * Required. Should the conversion workspace be committed automatically after
-     * the import operation.
-     *
-     * @var bool
-     */
-    public $autoCommit;
-    protected $rulesFilesType = RulesFile::class;
-    protected $rulesFilesDataType = 'array';
-    /**
-     * Required. The format of the rules content file.
-     *
-     * @var string
-     */
-    public $rulesFormat;
-    /**
-     * Required. Should the conversion workspace be committed automatically after
-     * the import operation.
-     *
-     * @param bool $autoCommit
-     */
-    public function setAutoCommit($autoCommit)
+namespace Google\Service\DatabaseMigrationService {
+    class ImportMappingRulesRequest extends \Google\Collection
     {
+        /**
+         * Unspecified rules format.
+         */
+        public const RULES_FORMAT_IMPORT_RULES_FILE_FORMAT_UNSPECIFIED = 'IMPORT_RULES_FILE_FORMAT_UNSPECIFIED';
+        /**
+         * HarbourBridge session file.
+         */
+        public const RULES_FORMAT_IMPORT_RULES_FILE_FORMAT_HARBOUR_BRIDGE_SESSION_FILE = 'IMPORT_RULES_FILE_FORMAT_HARBOUR_BRIDGE_SESSION_FILE';
+        /**
+         * Ora2Pg configuration file.
+         */
+        public const RULES_FORMAT_IMPORT_RULES_FILE_FORMAT_ORATOPG_CONFIG_FILE = 'IMPORT_RULES_FILE_FORMAT_ORATOPG_CONFIG_FILE';
+        protected $collection_key = 'rulesFiles';
+        /**
+         * Required. Should the conversion workspace be committed automatically after
+         * the import operation.
+         *
+         * @var bool
+         */
+        public $autoCommit;
+        protected $rulesFilesType = RulesFile::class;
+        protected $rulesFilesDataType = 'array';
+        /**
+         * Required. The format of the rules content file.
+         *
+         * @var string
+         */
+        public $rulesFormat;
+        /**
+         * Required. Should the conversion workspace be committed automatically after
+         * the import operation.
+         *
+         * @param bool $autoCommit
+         */
+        public function setAutoCommit($autoCommit)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutoCommit()
+        {
+        }
+        /**
+         * Required. One or more rules files.
+         *
+         * @param RulesFile[] $rulesFiles
+         */
+        public function setRulesFiles($rulesFiles)
+        {
+        }
+        /**
+         * @return RulesFile[]
+         */
+        public function getRulesFiles()
+        {
+        }
+        /**
+         * Required. The format of the rules content file.
+         *
+         * Accepted values: IMPORT_RULES_FILE_FORMAT_UNSPECIFIED,
+         * IMPORT_RULES_FILE_FORMAT_HARBOUR_BRIDGE_SESSION_FILE,
+         * IMPORT_RULES_FILE_FORMAT_ORATOPG_CONFIG_FILE
+         *
+         * @param self::RULES_FORMAT_* $rulesFormat
+         */
+        public function setRulesFormat($rulesFormat)
+        {
+        }
+        /**
+         * @return self::RULES_FORMAT_*
+         */
+        public function getRulesFormat()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\ImportMappingRulesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoCommit()
-    {
-    }
-    /**
-     * Required. One or more rules files.
-     *
-     * @param RulesFile[] $rulesFiles
-     */
-    public function setRulesFiles($rulesFiles)
-    {
-    }
-    /**
-     * @return RulesFile[]
-     */
-    public function getRulesFiles()
-    {
-    }
-    /**
-     * Required. The format of the rules content file.
-     *
-     * Accepted values: IMPORT_RULES_FILE_FORMAT_UNSPECIFIED,
-     * IMPORT_RULES_FILE_FORMAT_HARBOUR_BRIDGE_SESSION_FILE,
-     * IMPORT_RULES_FILE_FORMAT_ORATOPG_CONFIG_FILE
-     *
-     * @param self::RULES_FORMAT_* $rulesFormat
-     */
-    public function setRulesFormat($rulesFormat)
-    {
-    }
-    /**
-     * @return self::RULES_FORMAT_*
-     */
-    public function getRulesFormat()
+    class Google_Service_DatabaseMigrationService_ImportMappingRulesRequest extends \Google\Service\DatabaseMigrationService\ImportMappingRulesRequest
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class ListVersionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'versions';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $versionsType = Version::class;
-    protected $versionsDataType = 'array';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Appengine {
+    class ListVersionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'versions';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $versionsType = Version::class;
+        protected $versionsDataType = 'array';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The versions belonging to the requested service.
+         *
+         * @param Version[] $versions
+         */
+        public function setVersions($versions)
+        {
+        }
+        /**
+         * @return Version[]
+         */
+        public function getVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Appengine\ListVersionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The versions belonging to the requested service.
-     *
-     * @param Version[] $versions
-     */
-    public function setVersions($versions)
-    {
-    }
-    /**
-     * @return Version[]
-     */
-    public function getVersions()
+    class Google_Service_Appengine_ListVersionsResponse extends \Google\Service\Appengine\ListVersionsResponse
     {
     }
 }

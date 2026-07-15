@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class TaskPushNotificationConfig extends \Google\Model
-{
-    /**
-     * The resource name of the config. Format:
-     * tasks/{task_id}/pushNotificationConfigs/{config_id}
-     *
-     * @var string
-     */
-    public $name;
-    protected $pushNotificationConfigType = PushNotificationConfig::class;
-    protected $pushNotificationConfigDataType = '';
-    /**
-     * The resource name of the config. Format:
-     * tasks/{task_id}/pushNotificationConfigs/{config_id}
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\WorkspaceEvents {
+    class TaskPushNotificationConfig extends \Google\Model
     {
+        /**
+         * The resource name of the config. Format:
+         * tasks/{task_id}/pushNotificationConfigs/{config_id}
+         *
+         * @var string
+         */
+        public $name;
+        protected $pushNotificationConfigType = PushNotificationConfig::class;
+        protected $pushNotificationConfigDataType = '';
+        /**
+         * The resource name of the config. Format:
+         * tasks/{task_id}/pushNotificationConfigs/{config_id}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The push notification configuration details.
+         *
+         * @param PushNotificationConfig $pushNotificationConfig
+         */
+        public function setPushNotificationConfig(PushNotificationConfig $pushNotificationConfig)
+        {
+        }
+        /**
+         * @return PushNotificationConfig
+         */
+        public function getPushNotificationConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkspaceEvents\TaskPushNotificationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The push notification configuration details.
-     *
-     * @param PushNotificationConfig $pushNotificationConfig
-     */
-    public function setPushNotificationConfig(PushNotificationConfig $pushNotificationConfig)
-    {
-    }
-    /**
-     * @return PushNotificationConfig
-     */
-    public function getPushNotificationConfig()
+    class Google_Service_WorkspaceEvents_TaskPushNotificationConfig extends \Google\Service\WorkspaceEvents\TaskPushNotificationConfig
     {
     }
 }

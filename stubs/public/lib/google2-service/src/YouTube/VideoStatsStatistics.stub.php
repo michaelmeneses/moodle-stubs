@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class VideoStatsStatistics extends \Google\Model
-{
-    /**
-     * Output only. The number of comments for the video.
-     *
-     * @var string
-     */
-    public $commentCount;
-    /**
-     * Output only. The number of users who have indicated that they liked the
-     * video by giving it a positive rating.
-     *
-     * @var string
-     */
-    public $likeCount;
-    /**
-     * Output only. The number of times the video has been viewed.
-     *
-     * @var string
-     */
-    public $viewCount;
-    /**
-     * Output only. The number of comments for the video.
-     *
-     * @param string $commentCount
-     */
-    public function setCommentCount($commentCount)
+namespace Google\Service\YouTube {
+    class VideoStatsStatistics extends \Google\Model
     {
+        /**
+         * Output only. The number of comments for the video.
+         *
+         * @var string
+         */
+        public $commentCount;
+        /**
+         * Output only. The number of users who have indicated that they liked the
+         * video by giving it a positive rating.
+         *
+         * @var string
+         */
+        public $likeCount;
+        /**
+         * Output only. The number of times the video has been viewed.
+         *
+         * @var string
+         */
+        public $viewCount;
+        /**
+         * Output only. The number of comments for the video.
+         *
+         * @param string $commentCount
+         */
+        public function setCommentCount($commentCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommentCount()
+        {
+        }
+        /**
+         * Output only. The number of users who have indicated that they liked the
+         * video by giving it a positive rating.
+         *
+         * @param string $likeCount
+         */
+        public function setLikeCount($likeCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLikeCount()
+        {
+        }
+        /**
+         * Output only. The number of times the video has been viewed.
+         *
+         * @param string $viewCount
+         */
+        public function setViewCount($viewCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getViewCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\VideoStatsStatistics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommentCount()
-    {
-    }
-    /**
-     * Output only. The number of users who have indicated that they liked the
-     * video by giving it a positive rating.
-     *
-     * @param string $likeCount
-     */
-    public function setLikeCount($likeCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLikeCount()
-    {
-    }
-    /**
-     * Output only. The number of times the video has been viewed.
-     *
-     * @param string $viewCount
-     */
-    public function setViewCount($viewCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getViewCount()
+    class Google_Service_YouTube_VideoStatsStatistics extends \Google\Service\YouTube\VideoStatsStatistics
     {
     }
 }

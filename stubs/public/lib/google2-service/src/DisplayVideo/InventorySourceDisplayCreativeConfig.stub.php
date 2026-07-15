@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class InventorySourceDisplayCreativeConfig extends \Google\Model
-{
-    protected $creativeSizeType = Dimensions::class;
-    protected $creativeSizeDataType = '';
-    /**
-     * The size requirements for display creatives that can be assigned to the
-     * inventory source.
-     *
-     * @param Dimensions $creativeSize
-     */
-    public function setCreativeSize(Dimensions $creativeSize)
+namespace Google\Service\DisplayVideo {
+    class InventorySourceDisplayCreativeConfig extends \Google\Model
     {
+        protected $creativeSizeType = Dimensions::class;
+        protected $creativeSizeDataType = '';
+        /**
+         * The size requirements for display creatives that can be assigned to the
+         * inventory source.
+         *
+         * @param Dimensions $creativeSize
+         */
+        public function setCreativeSize(Dimensions $creativeSize)
+        {
+        }
+        /**
+         * @return Dimensions
+         */
+        public function getCreativeSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Dimensions
+     * Runtime class alias of \Google\Service\DisplayVideo\InventorySourceDisplayCreativeConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreativeSize()
+    class Google_Service_DisplayVideo_InventorySourceDisplayCreativeConfig extends \Google\Service\DisplayVideo\InventorySourceDisplayCreativeConfig
     {
     }
 }

@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class ServicenetworkingEmpty extends \Google\Model
-{
+namespace Google\Service\ServiceNetworking {
+    class ServicenetworkingEmpty extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ServiceNetworking\ServicenetworkingEmpty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ServiceNetworking_ServicenetworkingEmpty extends \Google\Service\ServiceNetworking\ServicenetworkingEmpty
+    {
+    }
 }

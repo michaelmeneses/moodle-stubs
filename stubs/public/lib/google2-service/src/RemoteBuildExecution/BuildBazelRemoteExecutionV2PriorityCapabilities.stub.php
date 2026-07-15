@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2PriorityCapabilities extends \Google\Collection
-{
-    protected $collection_key = 'priorities';
-    protected $prioritiesType = BuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange::class;
-    protected $prioritiesDataType = 'array';
-    /**
-     * @param BuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange[]
-     */
-    public function setPriorities($priorities)
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2PriorityCapabilities extends \Google\Collection
     {
+        protected $collection_key = 'priorities';
+        protected $prioritiesType = BuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange::class;
+        protected $prioritiesDataType = 'array';
+        /**
+         * @param BuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange[]
+         */
+        public function setPriorities($priorities)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange[]
+         */
+        public function getPriorities()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange[]
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2PriorityCapabilities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPriorities()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2PriorityCapabilities extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2PriorityCapabilities
     {
     }
 }

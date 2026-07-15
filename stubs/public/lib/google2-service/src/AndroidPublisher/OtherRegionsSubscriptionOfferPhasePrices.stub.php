@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class OtherRegionsSubscriptionOfferPhasePrices extends \Google\Model
-{
-    protected $eurPriceType = Money::class;
-    protected $eurPriceDataType = '';
-    protected $usdPriceType = Money::class;
-    protected $usdPriceDataType = '';
-    /**
-     * Required. Price in EUR to use for any new locations Play may launch in.
-     *
-     * @param Money $eurPrice
-     */
-    public function setEurPrice(Money $eurPrice)
+namespace Google\Service\AndroidPublisher {
+    class OtherRegionsSubscriptionOfferPhasePrices extends \Google\Model
     {
+        protected $eurPriceType = Money::class;
+        protected $eurPriceDataType = '';
+        protected $usdPriceType = Money::class;
+        protected $usdPriceDataType = '';
+        /**
+         * Required. Price in EUR to use for any new locations Play may launch in.
+         *
+         * @param Money $eurPrice
+         */
+        public function setEurPrice(Money $eurPrice)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getEurPrice()
+        {
+        }
+        /**
+         * Required. Price in USD to use for any new locations Play may launch in.
+         *
+         * @param Money $usdPrice
+         */
+        public function setUsdPrice(Money $usdPrice)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getUsdPrice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Money
+     * Runtime class alias of \Google\Service\AndroidPublisher\OtherRegionsSubscriptionOfferPhasePrices registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEurPrice()
-    {
-    }
-    /**
-     * Required. Price in USD to use for any new locations Play may launch in.
-     *
-     * @param Money $usdPrice
-     */
-    public function setUsdPrice(Money $usdPrice)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getUsdPrice()
+    class Google_Service_AndroidPublisher_OtherRegionsSubscriptionOfferPhasePrices extends \Google\Service\AndroidPublisher\OtherRegionsSubscriptionOfferPhasePrices
     {
     }
 }

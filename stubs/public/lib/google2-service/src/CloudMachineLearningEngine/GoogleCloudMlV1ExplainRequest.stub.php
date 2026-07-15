@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1ExplainRequest extends \Google\Model
-{
-    protected $httpBodyType = GoogleApiHttpBody::class;
-    protected $httpBodyDataType = '';
-    /**
-     * Required. The explanation request body.
-     *
-     * @param GoogleApiHttpBody $httpBody
-     */
-    public function setHttpBody(GoogleApiHttpBody $httpBody)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1ExplainRequest extends \Google\Model
     {
+        protected $httpBodyType = GoogleApiHttpBody::class;
+        protected $httpBodyDataType = '';
+        /**
+         * Required. The explanation request body.
+         *
+         * @param GoogleApiHttpBody $httpBody
+         */
+        public function setHttpBody(GoogleApiHttpBody $httpBody)
+        {
+        }
+        /**
+         * @return GoogleApiHttpBody
+         */
+        public function getHttpBody()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleApiHttpBody
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ExplainRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHttpBody()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1ExplainRequest extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ExplainRequest
     {
     }
 }

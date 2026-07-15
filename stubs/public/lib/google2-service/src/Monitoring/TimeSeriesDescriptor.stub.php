@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class TimeSeriesDescriptor extends \Google\Collection
-{
-    protected $collection_key = 'pointDescriptors';
-    protected $labelDescriptorsType = LabelDescriptor::class;
-    protected $labelDescriptorsDataType = 'array';
-    protected $pointDescriptorsType = ValueDescriptor::class;
-    protected $pointDescriptorsDataType = 'array';
-    /**
-     * Descriptors for the labels.
-     *
-     * @param LabelDescriptor[] $labelDescriptors
-     */
-    public function setLabelDescriptors($labelDescriptors)
+namespace Google\Service\Monitoring {
+    class TimeSeriesDescriptor extends \Google\Collection
     {
+        protected $collection_key = 'pointDescriptors';
+        protected $labelDescriptorsType = LabelDescriptor::class;
+        protected $labelDescriptorsDataType = 'array';
+        protected $pointDescriptorsType = ValueDescriptor::class;
+        protected $pointDescriptorsDataType = 'array';
+        /**
+         * Descriptors for the labels.
+         *
+         * @param LabelDescriptor[] $labelDescriptors
+         */
+        public function setLabelDescriptors($labelDescriptors)
+        {
+        }
+        /**
+         * @return LabelDescriptor[]
+         */
+        public function getLabelDescriptors()
+        {
+        }
+        /**
+         * Descriptors for the point data value columns.
+         *
+         * @param ValueDescriptor[] $pointDescriptors
+         */
+        public function setPointDescriptors($pointDescriptors)
+        {
+        }
+        /**
+         * @return ValueDescriptor[]
+         */
+        public function getPointDescriptors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LabelDescriptor[]
+     * Runtime class alias of \Google\Service\Monitoring\TimeSeriesDescriptor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabelDescriptors()
-    {
-    }
-    /**
-     * Descriptors for the point data value columns.
-     *
-     * @param ValueDescriptor[] $pointDescriptors
-     */
-    public function setPointDescriptors($pointDescriptors)
-    {
-    }
-    /**
-     * @return ValueDescriptor[]
-     */
-    public function getPointDescriptors()
+    class Google_Service_Monitoring_TimeSeriesDescriptor extends \Google\Service\Monitoring\TimeSeriesDescriptor
     {
     }
 }

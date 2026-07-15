@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class HealthCheckLogConfig extends \Google\Model
-{
-    /**
-     * Indicates whether or not to export logs. This is false by default, which
-     * means no health check logging will be done.
-     *
-     * @var bool
-     */
-    public $enable;
-    /**
-     * Indicates whether or not to export logs. This is false by default, which
-     * means no health check logging will be done.
-     *
-     * @param bool $enable
-     */
-    public function setEnable($enable)
+namespace Google\Service\Compute {
+    class HealthCheckLogConfig extends \Google\Model
     {
+        /**
+         * Indicates whether or not to export logs. This is false by default, which
+         * means no health check logging will be done.
+         *
+         * @var bool
+         */
+        public $enable;
+        /**
+         * Indicates whether or not to export logs. This is false by default, which
+         * means no health check logging will be done.
+         *
+         * @param bool $enable
+         */
+        public function setEnable($enable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Compute\HealthCheckLogConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnable()
+    class Google_Service_Compute_HealthCheckLogConfig extends \Google\Service\Compute\HealthCheckLogConfig
     {
     }
 }

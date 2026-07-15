@@ -21,161 +21,170 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EventMetadata extends \Google\Collection
-{
-    protected $collection_key = 'longRunningToolIds';
-    /**
-     * Optional. The branch of the event. The format is like
-     * agent_1.agent_2.agent_3, where agent_1 is the parent of agent_2, and
-     * agent_2 is the parent of agent_3. Branch is used when multiple child agents
-     * shouldn't see their siblings' conversation history.
-     *
-     * @var string
-     */
-    public $branch;
-    /**
-     * The custom metadata of the LlmResponse.
-     *
-     * @var array[]
-     */
-    public $customMetadata;
-    protected $groundingMetadataType = GoogleCloudAiplatformV1GroundingMetadata::class;
-    protected $groundingMetadataDataType = '';
-    /**
-     * Optional. Flag indicating that LLM was interrupted when generating the
-     * content. Usually it's due to user interruption during a bidi streaming.
-     *
-     * @var bool
-     */
-    public $interrupted;
-    /**
-     * Optional. Set of ids of the long running function calls. Agent client will
-     * know from this field about which function call is long running. Only valid
-     * for function call event.
-     *
-     * @var string[]
-     */
-    public $longRunningToolIds;
-    /**
-     * Optional. Indicates whether the text content is part of a unfinished text
-     * stream. Only used for streaming mode and when the content is plain text.
-     *
-     * @var bool
-     */
-    public $partial;
-    /**
-     * Optional. Indicates whether the response from the model is complete. Only
-     * used for streaming mode.
-     *
-     * @var bool
-     */
-    public $turnComplete;
-    /**
-     * Optional. The branch of the event. The format is like
-     * agent_1.agent_2.agent_3, where agent_1 is the parent of agent_2, and
-     * agent_2 is the parent of agent_3. Branch is used when multiple child agents
-     * shouldn't see their siblings' conversation history.
-     *
-     * @param string $branch
-     */
-    public function setBranch($branch)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EventMetadata extends \Google\Collection
     {
+        protected $collection_key = 'longRunningToolIds';
+        /**
+         * Optional. The branch of the event. The format is like
+         * agent_1.agent_2.agent_3, where agent_1 is the parent of agent_2, and
+         * agent_2 is the parent of agent_3. Branch is used when multiple child agents
+         * shouldn't see their siblings' conversation history.
+         *
+         * @var string
+         */
+        public $branch;
+        /**
+         * The custom metadata of the LlmResponse.
+         *
+         * @var array[]
+         */
+        public $customMetadata;
+        protected $groundingMetadataType = GoogleCloudAiplatformV1GroundingMetadata::class;
+        protected $groundingMetadataDataType = '';
+        /**
+         * Optional. Flag indicating that LLM was interrupted when generating the
+         * content. Usually it's due to user interruption during a bidi streaming.
+         *
+         * @var bool
+         */
+        public $interrupted;
+        /**
+         * Optional. Set of ids of the long running function calls. Agent client will
+         * know from this field about which function call is long running. Only valid
+         * for function call event.
+         *
+         * @var string[]
+         */
+        public $longRunningToolIds;
+        /**
+         * Optional. Indicates whether the text content is part of a unfinished text
+         * stream. Only used for streaming mode and when the content is plain text.
+         *
+         * @var bool
+         */
+        public $partial;
+        /**
+         * Optional. Indicates whether the response from the model is complete. Only
+         * used for streaming mode.
+         *
+         * @var bool
+         */
+        public $turnComplete;
+        /**
+         * Optional. The branch of the event. The format is like
+         * agent_1.agent_2.agent_3, where agent_1 is the parent of agent_2, and
+         * agent_2 is the parent of agent_3. Branch is used when multiple child agents
+         * shouldn't see their siblings' conversation history.
+         *
+         * @param string $branch
+         */
+        public function setBranch($branch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBranch()
+        {
+        }
+        /**
+         * The custom metadata of the LlmResponse.
+         *
+         * @param array[] $customMetadata
+         */
+        public function setCustomMetadata($customMetadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getCustomMetadata()
+        {
+        }
+        /**
+         * Optional. Metadata returned to client when grounding is enabled.
+         *
+         * @param GoogleCloudAiplatformV1GroundingMetadata $groundingMetadata
+         */
+        public function setGroundingMetadata(GoogleCloudAiplatformV1GroundingMetadata $groundingMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GroundingMetadata
+         */
+        public function getGroundingMetadata()
+        {
+        }
+        /**
+         * Optional. Flag indicating that LLM was interrupted when generating the
+         * content. Usually it's due to user interruption during a bidi streaming.
+         *
+         * @param bool $interrupted
+         */
+        public function setInterrupted($interrupted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInterrupted()
+        {
+        }
+        /**
+         * Optional. Set of ids of the long running function calls. Agent client will
+         * know from this field about which function call is long running. Only valid
+         * for function call event.
+         *
+         * @param string[] $longRunningToolIds
+         */
+        public function setLongRunningToolIds($longRunningToolIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLongRunningToolIds()
+        {
+        }
+        /**
+         * Optional. Indicates whether the text content is part of a unfinished text
+         * stream. Only used for streaming mode and when the content is plain text.
+         *
+         * @param bool $partial
+         */
+        public function setPartial($partial)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPartial()
+        {
+        }
+        /**
+         * Optional. Indicates whether the response from the model is complete. Only
+         * used for streaming mode.
+         *
+         * @param bool $turnComplete
+         */
+        public function setTurnComplete($turnComplete)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTurnComplete()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EventMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBranch()
-    {
-    }
-    /**
-     * The custom metadata of the LlmResponse.
-     *
-     * @param array[] $customMetadata
-     */
-    public function setCustomMetadata($customMetadata)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getCustomMetadata()
-    {
-    }
-    /**
-     * Optional. Metadata returned to client when grounding is enabled.
-     *
-     * @param GoogleCloudAiplatformV1GroundingMetadata $groundingMetadata
-     */
-    public function setGroundingMetadata(GoogleCloudAiplatformV1GroundingMetadata $groundingMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1GroundingMetadata
-     */
-    public function getGroundingMetadata()
-    {
-    }
-    /**
-     * Optional. Flag indicating that LLM was interrupted when generating the
-     * content. Usually it's due to user interruption during a bidi streaming.
-     *
-     * @param bool $interrupted
-     */
-    public function setInterrupted($interrupted)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInterrupted()
-    {
-    }
-    /**
-     * Optional. Set of ids of the long running function calls. Agent client will
-     * know from this field about which function call is long running. Only valid
-     * for function call event.
-     *
-     * @param string[] $longRunningToolIds
-     */
-    public function setLongRunningToolIds($longRunningToolIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLongRunningToolIds()
-    {
-    }
-    /**
-     * Optional. Indicates whether the text content is part of a unfinished text
-     * stream. Only used for streaming mode and when the content is plain text.
-     *
-     * @param bool $partial
-     */
-    public function setPartial($partial)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPartial()
-    {
-    }
-    /**
-     * Optional. Indicates whether the response from the model is complete. Only
-     * used for streaming mode.
-     *
-     * @param bool $turnComplete
-     */
-    public function setTurnComplete($turnComplete)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTurnComplete()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EventMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EventMetadata
     {
     }
 }

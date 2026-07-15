@@ -21,145 +21,154 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class TableMetadataCacheUsage extends \Google\Model
-{
-    /**
-     * Unused reasons not specified.
-     */
-    public const UNUSED_REASON_UNUSED_REASON_UNSPECIFIED = 'UNUSED_REASON_UNSPECIFIED';
-    /**
-     * Metadata cache was outside the table's maxStaleness.
-     */
-    public const UNUSED_REASON_EXCEEDED_MAX_STALENESS = 'EXCEEDED_MAX_STALENESS';
-    /**
-     * Metadata caching feature is not enabled. [Update BigLake tables]
-     * (/bigquery/docs/create-cloud-storage-table-biglake#update-biglake-tables)
-     * to enable the metadata caching.
-     */
-    public const UNUSED_REASON_METADATA_CACHING_NOT_ENABLED = 'METADATA_CACHING_NOT_ENABLED';
-    /**
-     * Other unknown reason.
-     */
-    public const UNUSED_REASON_OTHER_REASON = 'OTHER_REASON';
-    /**
-     * Free form human-readable reason metadata caching was unused for the job.
-     *
-     * @var string
-     */
-    public $explanation;
-    protected $pruningStatsType = PruningStats::class;
-    protected $pruningStatsDataType = '';
-    /**
-     * Duration since last refresh as of this job for managed tables (indicates
-     * metadata cache staleness as seen by this job).
-     *
-     * @var string
-     */
-    public $staleness;
-    protected $tableReferenceType = TableReference::class;
-    protected $tableReferenceDataType = '';
-    /**
-     * [Table type](https://cloud.google.com/bigquery/docs/reference/rest/v2/table
-     * s#Table.FIELDS.type).
-     *
-     * @var string
-     */
-    public $tableType;
-    /**
-     * Reason for not using metadata caching for the table.
-     *
-     * @var string
-     */
-    public $unusedReason;
-    /**
-     * Free form human-readable reason metadata caching was unused for the job.
-     *
-     * @param string $explanation
-     */
-    public function setExplanation($explanation)
+namespace Google\Service\Bigquery {
+    class TableMetadataCacheUsage extends \Google\Model
     {
+        /**
+         * Unused reasons not specified.
+         */
+        public const UNUSED_REASON_UNUSED_REASON_UNSPECIFIED = 'UNUSED_REASON_UNSPECIFIED';
+        /**
+         * Metadata cache was outside the table's maxStaleness.
+         */
+        public const UNUSED_REASON_EXCEEDED_MAX_STALENESS = 'EXCEEDED_MAX_STALENESS';
+        /**
+         * Metadata caching feature is not enabled. [Update BigLake tables]
+         * (/bigquery/docs/create-cloud-storage-table-biglake#update-biglake-tables)
+         * to enable the metadata caching.
+         */
+        public const UNUSED_REASON_METADATA_CACHING_NOT_ENABLED = 'METADATA_CACHING_NOT_ENABLED';
+        /**
+         * Other unknown reason.
+         */
+        public const UNUSED_REASON_OTHER_REASON = 'OTHER_REASON';
+        /**
+         * Free form human-readable reason metadata caching was unused for the job.
+         *
+         * @var string
+         */
+        public $explanation;
+        protected $pruningStatsType = PruningStats::class;
+        protected $pruningStatsDataType = '';
+        /**
+         * Duration since last refresh as of this job for managed tables (indicates
+         * metadata cache staleness as seen by this job).
+         *
+         * @var string
+         */
+        public $staleness;
+        protected $tableReferenceType = TableReference::class;
+        protected $tableReferenceDataType = '';
+        /**
+         * [Table type](https://cloud.google.com/bigquery/docs/reference/rest/v2/table
+         * s#Table.FIELDS.type).
+         *
+         * @var string
+         */
+        public $tableType;
+        /**
+         * Reason for not using metadata caching for the table.
+         *
+         * @var string
+         */
+        public $unusedReason;
+        /**
+         * Free form human-readable reason metadata caching was unused for the job.
+         *
+         * @param string $explanation
+         */
+        public function setExplanation($explanation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExplanation()
+        {
+        }
+        /**
+         * The column metadata index pruning statistics.
+         *
+         * @param PruningStats $pruningStats
+         */
+        public function setPruningStats(PruningStats $pruningStats)
+        {
+        }
+        /**
+         * @return PruningStats
+         */
+        public function getPruningStats()
+        {
+        }
+        /**
+         * Duration since last refresh as of this job for managed tables (indicates
+         * metadata cache staleness as seen by this job).
+         *
+         * @param string $staleness
+         */
+        public function setStaleness($staleness)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStaleness()
+        {
+        }
+        /**
+         * Metadata caching eligible table referenced in the query.
+         *
+         * @param TableReference $tableReference
+         */
+        public function setTableReference(TableReference $tableReference)
+        {
+        }
+        /**
+         * @return TableReference
+         */
+        public function getTableReference()
+        {
+        }
+        /**
+         * [Table type](https://cloud.google.com/bigquery/docs/reference/rest/v2/table
+         * s#Table.FIELDS.type).
+         *
+         * @param string $tableType
+         */
+        public function setTableType($tableType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableType()
+        {
+        }
+        /**
+         * Reason for not using metadata caching for the table.
+         *
+         * Accepted values: UNUSED_REASON_UNSPECIFIED, EXCEEDED_MAX_STALENESS,
+         * METADATA_CACHING_NOT_ENABLED, OTHER_REASON
+         *
+         * @param self::UNUSED_REASON_* $unusedReason
+         */
+        public function setUnusedReason($unusedReason)
+        {
+        }
+        /**
+         * @return self::UNUSED_REASON_*
+         */
+        public function getUnusedReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\TableMetadataCacheUsage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExplanation()
-    {
-    }
-    /**
-     * The column metadata index pruning statistics.
-     *
-     * @param PruningStats $pruningStats
-     */
-    public function setPruningStats(PruningStats $pruningStats)
-    {
-    }
-    /**
-     * @return PruningStats
-     */
-    public function getPruningStats()
-    {
-    }
-    /**
-     * Duration since last refresh as of this job for managed tables (indicates
-     * metadata cache staleness as seen by this job).
-     *
-     * @param string $staleness
-     */
-    public function setStaleness($staleness)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStaleness()
-    {
-    }
-    /**
-     * Metadata caching eligible table referenced in the query.
-     *
-     * @param TableReference $tableReference
-     */
-    public function setTableReference(TableReference $tableReference)
-    {
-    }
-    /**
-     * @return TableReference
-     */
-    public function getTableReference()
-    {
-    }
-    /**
-     * [Table type](https://cloud.google.com/bigquery/docs/reference/rest/v2/table
-     * s#Table.FIELDS.type).
-     *
-     * @param string $tableType
-     */
-    public function setTableType($tableType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableType()
-    {
-    }
-    /**
-     * Reason for not using metadata caching for the table.
-     *
-     * Accepted values: UNUSED_REASON_UNSPECIFIED, EXCEEDED_MAX_STALENESS,
-     * METADATA_CACHING_NOT_ENABLED, OTHER_REASON
-     *
-     * @param self::UNUSED_REASON_* $unusedReason
-     */
-    public function setUnusedReason($unusedReason)
-    {
-    }
-    /**
-     * @return self::UNUSED_REASON_*
-     */
-    public function getUnusedReason()
+    class Google_Service_Bigquery_TableMetadataCacheUsage extends \Google\Service\Bigquery\TableMetadataCacheUsage
     {
     }
 }

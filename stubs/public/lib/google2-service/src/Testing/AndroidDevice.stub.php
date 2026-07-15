@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class AndroidDevice extends \Google\Model
-{
-    /**
-     * Required. The id of the Android device to be used. Use the
-     * TestEnvironmentDiscoveryService to get supported options.
-     *
-     * @var string
-     */
-    public $androidModelId;
-    /**
-     * Required. The id of the Android OS version to be used. Use the
-     * TestEnvironmentDiscoveryService to get supported options.
-     *
-     * @var string
-     */
-    public $androidVersionId;
-    /**
-     * Required. The locale the test device used for testing. Use the
-     * TestEnvironmentDiscoveryService to get supported options.
-     *
-     * @var string
-     */
-    public $locale;
-    /**
-     * Required. How the device is oriented during the test. Use the
-     * TestEnvironmentDiscoveryService to get supported options.
-     *
-     * @var string
-     */
-    public $orientation;
-    /**
-     * Required. The id of the Android device to be used. Use the
-     * TestEnvironmentDiscoveryService to get supported options.
-     *
-     * @param string $androidModelId
-     */
-    public function setAndroidModelId($androidModelId)
+namespace Google\Service\Testing {
+    class AndroidDevice extends \Google\Model
     {
+        /**
+         * Required. The id of the Android device to be used. Use the
+         * TestEnvironmentDiscoveryService to get supported options.
+         *
+         * @var string
+         */
+        public $androidModelId;
+        /**
+         * Required. The id of the Android OS version to be used. Use the
+         * TestEnvironmentDiscoveryService to get supported options.
+         *
+         * @var string
+         */
+        public $androidVersionId;
+        /**
+         * Required. The locale the test device used for testing. Use the
+         * TestEnvironmentDiscoveryService to get supported options.
+         *
+         * @var string
+         */
+        public $locale;
+        /**
+         * Required. How the device is oriented during the test. Use the
+         * TestEnvironmentDiscoveryService to get supported options.
+         *
+         * @var string
+         */
+        public $orientation;
+        /**
+         * Required. The id of the Android device to be used. Use the
+         * TestEnvironmentDiscoveryService to get supported options.
+         *
+         * @param string $androidModelId
+         */
+        public function setAndroidModelId($androidModelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAndroidModelId()
+        {
+        }
+        /**
+         * Required. The id of the Android OS version to be used. Use the
+         * TestEnvironmentDiscoveryService to get supported options.
+         *
+         * @param string $androidVersionId
+         */
+        public function setAndroidVersionId($androidVersionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAndroidVersionId()
+        {
+        }
+        /**
+         * Required. The locale the test device used for testing. Use the
+         * TestEnvironmentDiscoveryService to get supported options.
+         *
+         * @param string $locale
+         */
+        public function setLocale($locale)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocale()
+        {
+        }
+        /**
+         * Required. How the device is oriented during the test. Use the
+         * TestEnvironmentDiscoveryService to get supported options.
+         *
+         * @param string $orientation
+         */
+        public function setOrientation($orientation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrientation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Testing\AndroidDevice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndroidModelId()
-    {
-    }
-    /**
-     * Required. The id of the Android OS version to be used. Use the
-     * TestEnvironmentDiscoveryService to get supported options.
-     *
-     * @param string $androidVersionId
-     */
-    public function setAndroidVersionId($androidVersionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAndroidVersionId()
-    {
-    }
-    /**
-     * Required. The locale the test device used for testing. Use the
-     * TestEnvironmentDiscoveryService to get supported options.
-     *
-     * @param string $locale
-     */
-    public function setLocale($locale)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocale()
-    {
-    }
-    /**
-     * Required. How the device is oriented during the test. Use the
-     * TestEnvironmentDiscoveryService to get supported options.
-     *
-     * @param string $orientation
-     */
-    public function setOrientation($orientation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrientation()
+    class Google_Service_Testing_AndroidDevice extends \Google\Service\Testing\AndroidDevice
     {
     }
 }

@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class SplitApkVariant extends \Google\Collection
-{
-    protected $collection_key = 'apkSet';
-    protected $apkSetType = ApkSet::class;
-    protected $apkSetDataType = 'array';
-    protected $targetingType = VariantTargeting::class;
-    protected $targetingDataType = '';
-    /**
-     * Number of the variant, starting at 0 (unless overridden). A device will
-     * receive APKs from the first variant that matches the device configuration,
-     * with higher variant numbers having priority over lower variant numbers.
-     *
-     * @var int
-     */
-    public $variantNumber;
-    /**
-     * Set of APKs, one set per module.
-     *
-     * @param ApkSet[] $apkSet
-     */
-    public function setApkSet($apkSet)
+namespace Google\Service\AndroidPublisher {
+    class SplitApkVariant extends \Google\Collection
     {
+        protected $collection_key = 'apkSet';
+        protected $apkSetType = ApkSet::class;
+        protected $apkSetDataType = 'array';
+        protected $targetingType = VariantTargeting::class;
+        protected $targetingDataType = '';
+        /**
+         * Number of the variant, starting at 0 (unless overridden). A device will
+         * receive APKs from the first variant that matches the device configuration,
+         * with higher variant numbers having priority over lower variant numbers.
+         *
+         * @var int
+         */
+        public $variantNumber;
+        /**
+         * Set of APKs, one set per module.
+         *
+         * @param ApkSet[] $apkSet
+         */
+        public function setApkSet($apkSet)
+        {
+        }
+        /**
+         * @return ApkSet[]
+         */
+        public function getApkSet()
+        {
+        }
+        /**
+         * Variant-level targeting.
+         *
+         * @param VariantTargeting $targeting
+         */
+        public function setTargeting(VariantTargeting $targeting)
+        {
+        }
+        /**
+         * @return VariantTargeting
+         */
+        public function getTargeting()
+        {
+        }
+        /**
+         * Number of the variant, starting at 0 (unless overridden). A device will
+         * receive APKs from the first variant that matches the device configuration,
+         * with higher variant numbers having priority over lower variant numbers.
+         *
+         * @param int $variantNumber
+         */
+        public function setVariantNumber($variantNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVariantNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApkSet[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\SplitApkVariant registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApkSet()
-    {
-    }
-    /**
-     * Variant-level targeting.
-     *
-     * @param VariantTargeting $targeting
-     */
-    public function setTargeting(VariantTargeting $targeting)
-    {
-    }
-    /**
-     * @return VariantTargeting
-     */
-    public function getTargeting()
-    {
-    }
-    /**
-     * Number of the variant, starting at 0 (unless overridden). A device will
-     * receive APKs from the first variant that matches the device configuration,
-     * with higher variant numbers having priority over lower variant numbers.
-     *
-     * @param int $variantNumber
-     */
-    public function setVariantNumber($variantNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVariantNumber()
+    class Google_Service_AndroidPublisher_SplitApkVariant extends \Google\Service\AndroidPublisher\SplitApkVariant
     {
     }
 }

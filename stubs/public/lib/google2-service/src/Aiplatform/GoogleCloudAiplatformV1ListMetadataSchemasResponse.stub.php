@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListMetadataSchemasResponse extends \Google\Collection
-{
-    protected $collection_key = 'metadataSchemas';
-    protected $metadataSchemasType = GoogleCloudAiplatformV1MetadataSchema::class;
-    protected $metadataSchemasDataType = 'array';
-    /**
-     * A token, which can be sent as ListMetadataSchemasRequest.page_token to
-     * retrieve the next page. If this field is not populated, there are no
-     * subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The MetadataSchemas found for the MetadataStore.
-     *
-     * @param GoogleCloudAiplatformV1MetadataSchema[] $metadataSchemas
-     */
-    public function setMetadataSchemas($metadataSchemas)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListMetadataSchemasResponse extends \Google\Collection
     {
+        protected $collection_key = 'metadataSchemas';
+        protected $metadataSchemasType = GoogleCloudAiplatformV1MetadataSchema::class;
+        protected $metadataSchemasDataType = 'array';
+        /**
+         * A token, which can be sent as ListMetadataSchemasRequest.page_token to
+         * retrieve the next page. If this field is not populated, there are no
+         * subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The MetadataSchemas found for the MetadataStore.
+         *
+         * @param GoogleCloudAiplatformV1MetadataSchema[] $metadataSchemas
+         */
+        public function setMetadataSchemas($metadataSchemas)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MetadataSchema[]
+         */
+        public function getMetadataSchemas()
+        {
+        }
+        /**
+         * A token, which can be sent as ListMetadataSchemasRequest.page_token to
+         * retrieve the next page. If this field is not populated, there are no
+         * subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1MetadataSchema[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListMetadataSchemasResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadataSchemas()
-    {
-    }
-    /**
-     * A token, which can be sent as ListMetadataSchemasRequest.page_token to
-     * retrieve the next page. If this field is not populated, there are no
-     * subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListMetadataSchemasResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListMetadataSchemasResponse
     {
     }
 }

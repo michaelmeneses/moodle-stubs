@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudResourceManager;
-
-class SearchOrganizationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'organizations';
-    /**
-     * A pagination token to be used to retrieve the next page of results. If the
-     * result is too large to fit within the page size specified in the request,
-     * this field will be set with a token that can be used to fetch the next page
-     * of results. If this field is empty, it indicates that this response
-     * contains the last page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $organizationsType = Organization::class;
-    protected $organizationsDataType = 'array';
-    /**
-     * A pagination token to be used to retrieve the next page of results. If the
-     * result is too large to fit within the page size specified in the request,
-     * this field will be set with a token that can be used to fetch the next page
-     * of results. If this field is empty, it indicates that this response
-     * contains the last page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudResourceManager {
+    class SearchOrganizationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'organizations';
+        /**
+         * A pagination token to be used to retrieve the next page of results. If the
+         * result is too large to fit within the page size specified in the request,
+         * this field will be set with a token that can be used to fetch the next page
+         * of results. If this field is empty, it indicates that this response
+         * contains the last page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $organizationsType = Organization::class;
+        protected $organizationsDataType = 'array';
+        /**
+         * A pagination token to be used to retrieve the next page of results. If the
+         * result is too large to fit within the page size specified in the request,
+         * this field will be set with a token that can be used to fetch the next page
+         * of results. If this field is empty, it indicates that this response
+         * contains the last page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of Organizations that matched the search query, possibly
+         * paginated.
+         *
+         * @param Organization[] $organizations
+         */
+        public function setOrganizations($organizations)
+        {
+        }
+        /**
+         * @return Organization[]
+         */
+        public function getOrganizations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudResourceManager\SearchOrganizationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of Organizations that matched the search query, possibly
-     * paginated.
-     *
-     * @param Organization[] $organizations
-     */
-    public function setOrganizations($organizations)
-    {
-    }
-    /**
-     * @return Organization[]
-     */
-    public function getOrganizations()
+    class Google_Service_CloudResourceManager_SearchOrganizationsResponse extends \Google\Service\CloudResourceManager\SearchOrganizationsResponse
     {
     }
 }

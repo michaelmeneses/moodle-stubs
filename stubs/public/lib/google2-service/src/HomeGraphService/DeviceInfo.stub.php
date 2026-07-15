@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HomeGraphService;
-
-class DeviceInfo extends \Google\Model
-{
-    /**
-     * Device hardware version.
-     *
-     * @var string
-     */
-    public $hwVersion;
-    /**
-     * Device manufacturer.
-     *
-     * @var string
-     */
-    public $manufacturer;
-    /**
-     * Device model.
-     *
-     * @var string
-     */
-    public $model;
-    /**
-     * Device software version.
-     *
-     * @var string
-     */
-    public $swVersion;
-    /**
-     * Device hardware version.
-     *
-     * @param string $hwVersion
-     */
-    public function setHwVersion($hwVersion)
+namespace Google\Service\HomeGraphService {
+    class DeviceInfo extends \Google\Model
     {
+        /**
+         * Device hardware version.
+         *
+         * @var string
+         */
+        public $hwVersion;
+        /**
+         * Device manufacturer.
+         *
+         * @var string
+         */
+        public $manufacturer;
+        /**
+         * Device model.
+         *
+         * @var string
+         */
+        public $model;
+        /**
+         * Device software version.
+         *
+         * @var string
+         */
+        public $swVersion;
+        /**
+         * Device hardware version.
+         *
+         * @param string $hwVersion
+         */
+        public function setHwVersion($hwVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHwVersion()
+        {
+        }
+        /**
+         * Device manufacturer.
+         *
+         * @param string $manufacturer
+         */
+        public function setManufacturer($manufacturer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getManufacturer()
+        {
+        }
+        /**
+         * Device model.
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
+        /**
+         * Device software version.
+         *
+         * @param string $swVersion
+         */
+        public function setSwVersion($swVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSwVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HomeGraphService\DeviceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHwVersion()
-    {
-    }
-    /**
-     * Device manufacturer.
-     *
-     * @param string $manufacturer
-     */
-    public function setManufacturer($manufacturer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getManufacturer()
-    {
-    }
-    /**
-     * Device model.
-     *
-     * @param string $model
-     */
-    public function setModel($model)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModel()
-    {
-    }
-    /**
-     * Device software version.
-     *
-     * @param string $swVersion
-     */
-    public function setSwVersion($swVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSwVersion()
+    class Google_Service_HomeGraphService_DeviceInfo extends \Google\Service\HomeGraphService\DeviceInfo
     {
     }
 }

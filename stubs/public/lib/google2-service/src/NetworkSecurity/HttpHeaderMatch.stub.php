@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class HttpHeaderMatch extends \Google\Model
-{
-    /**
-     * Required. The name of the HTTP header to match. For matching against the
-     * HTTP request's authority, use a headerMatch with the header name
-     * ":authority". For matching a request's method, use the headerName
-     * ":method".
-     *
-     * @var string
-     */
-    public $headerName;
-    /**
-     * Required. The value of the header must match the regular expression
-     * specified in regexMatch. For regular expression grammar, please see:
-     * en.cppreference.com/w/cpp/regex/ecmascript For matching against a port
-     * specified in the HTTP request, use a headerMatch with headerName set to
-     * Host and a regular expression that satisfies the RFC2616 Host header's port
-     * specifier.
-     *
-     * @var string
-     */
-    public $regexMatch;
-    /**
-     * Required. The name of the HTTP header to match. For matching against the
-     * HTTP request's authority, use a headerMatch with the header name
-     * ":authority". For matching a request's method, use the headerName
-     * ":method".
-     *
-     * @param string $headerName
-     */
-    public function setHeaderName($headerName)
+namespace Google\Service\NetworkSecurity {
+    class HttpHeaderMatch extends \Google\Model
     {
+        /**
+         * Required. The name of the HTTP header to match. For matching against the
+         * HTTP request's authority, use a headerMatch with the header name
+         * ":authority". For matching a request's method, use the headerName
+         * ":method".
+         *
+         * @var string
+         */
+        public $headerName;
+        /**
+         * Required. The value of the header must match the regular expression
+         * specified in regexMatch. For regular expression grammar, please see:
+         * en.cppreference.com/w/cpp/regex/ecmascript For matching against a port
+         * specified in the HTTP request, use a headerMatch with headerName set to
+         * Host and a regular expression that satisfies the RFC2616 Host header's port
+         * specifier.
+         *
+         * @var string
+         */
+        public $regexMatch;
+        /**
+         * Required. The name of the HTTP header to match. For matching against the
+         * HTTP request's authority, use a headerMatch with the header name
+         * ":authority". For matching a request's method, use the headerName
+         * ":method".
+         *
+         * @param string $headerName
+         */
+        public function setHeaderName($headerName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeaderName()
+        {
+        }
+        /**
+         * Required. The value of the header must match the regular expression
+         * specified in regexMatch. For regular expression grammar, please see:
+         * en.cppreference.com/w/cpp/regex/ecmascript For matching against a port
+         * specified in the HTTP request, use a headerMatch with headerName set to
+         * Host and a regular expression that satisfies the RFC2616 Host header's port
+         * specifier.
+         *
+         * @param string $regexMatch
+         */
+        public function setRegexMatch($regexMatch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegexMatch()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkSecurity\HttpHeaderMatch registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeaderName()
-    {
-    }
-    /**
-     * Required. The value of the header must match the regular expression
-     * specified in regexMatch. For regular expression grammar, please see:
-     * en.cppreference.com/w/cpp/regex/ecmascript For matching against a port
-     * specified in the HTTP request, use a headerMatch with headerName set to
-     * Host and a regular expression that satisfies the RFC2616 Host header's port
-     * specifier.
-     *
-     * @param string $regexMatch
-     */
-    public function setRegexMatch($regexMatch)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegexMatch()
+    class Google_Service_NetworkSecurity_HttpHeaderMatch extends \Google\Service\NetworkSecurity\HttpHeaderMatch
     {
     }
 }

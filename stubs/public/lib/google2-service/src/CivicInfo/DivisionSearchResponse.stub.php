@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class DivisionSearchResponse extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $resultsType = DivisionSearchResult::class;
-    protected $resultsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setKind($kind)
+namespace Google\Service\CivicInfo {
+    class DivisionSearchResponse extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $resultsType = DivisionSearchResult::class;
+        protected $resultsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param DivisionSearchResult[]
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return DivisionSearchResult[]
+         */
+        public function getResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CivicInfo\DivisionSearchResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * @param DivisionSearchResult[]
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return DivisionSearchResult[]
-     */
-    public function getResults()
+    class Google_Service_CivicInfo_DivisionSearchResponse extends \Google\Service\CivicInfo\DivisionSearchResponse
     {
     }
 }

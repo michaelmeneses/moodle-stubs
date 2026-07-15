@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class BackendServicesScopedList extends \Google\Collection
-{
-    protected $collection_key = 'backendServices';
-    protected $backendServicesType = BackendService::class;
-    protected $backendServicesDataType = 'array';
-    protected $warningType = BackendServicesScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * A list of BackendServices contained in this scope.
-     *
-     * @param BackendService[] $backendServices
-     */
-    public function setBackendServices($backendServices)
+namespace Google\Service\Compute {
+    class BackendServicesScopedList extends \Google\Collection
     {
+        protected $collection_key = 'backendServices';
+        protected $backendServicesType = BackendService::class;
+        protected $backendServicesDataType = 'array';
+        protected $warningType = BackendServicesScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * A list of BackendServices contained in this scope.
+         *
+         * @param BackendService[] $backendServices
+         */
+        public function setBackendServices($backendServices)
+        {
+        }
+        /**
+         * @return BackendService[]
+         */
+        public function getBackendServices()
+        {
+        }
+        /**
+         * Informational warning which replaces the list of backend services when the
+         * list is empty.
+         *
+         * @param BackendServicesScopedListWarning $warning
+         */
+        public function setWarning(BackendServicesScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return BackendServicesScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BackendService[]
+     * Runtime class alias of \Google\Service\Compute\BackendServicesScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackendServices()
-    {
-    }
-    /**
-     * Informational warning which replaces the list of backend services when the
-     * list is empty.
-     *
-     * @param BackendServicesScopedListWarning $warning
-     */
-    public function setWarning(BackendServicesScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return BackendServicesScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_BackendServicesScopedList extends \Google\Service\Compute\BackendServicesScopedList
     {
     }
 }

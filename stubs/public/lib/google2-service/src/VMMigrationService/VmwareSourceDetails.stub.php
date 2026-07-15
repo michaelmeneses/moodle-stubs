@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class VmwareSourceDetails extends \Google\Model
-{
-    /**
-     * Input only. The credentials password. This is write only and can not be
-     * read in a GET operation.
-     *
-     * @var string
-     */
-    public $password;
-    /**
-     * The hostname of the vcenter.
-     *
-     * @var string
-     */
-    public $resolvedVcenterHost;
-    /**
-     * The thumbprint representing the certificate for the vcenter.
-     *
-     * @var string
-     */
-    public $thumbprint;
-    /**
-     * The credentials username.
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * The ip address of the vcenter this Source represents.
-     *
-     * @var string
-     */
-    public $vcenterIp;
-    /**
-     * Input only. The credentials password. This is write only and can not be
-     * read in a GET operation.
-     *
-     * @param string $password
-     */
-    public function setPassword($password)
+namespace Google\Service\VMMigrationService {
+    class VmwareSourceDetails extends \Google\Model
     {
+        /**
+         * Input only. The credentials password. This is write only and can not be
+         * read in a GET operation.
+         *
+         * @var string
+         */
+        public $password;
+        /**
+         * The hostname of the vcenter.
+         *
+         * @var string
+         */
+        public $resolvedVcenterHost;
+        /**
+         * The thumbprint representing the certificate for the vcenter.
+         *
+         * @var string
+         */
+        public $thumbprint;
+        /**
+         * The credentials username.
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * The ip address of the vcenter this Source represents.
+         *
+         * @var string
+         */
+        public $vcenterIp;
+        /**
+         * Input only. The credentials password. This is write only and can not be
+         * read in a GET operation.
+         *
+         * @param string $password
+         */
+        public function setPassword($password)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * The hostname of the vcenter.
+         *
+         * @param string $resolvedVcenterHost
+         */
+        public function setResolvedVcenterHost($resolvedVcenterHost)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResolvedVcenterHost()
+        {
+        }
+        /**
+         * The thumbprint representing the certificate for the vcenter.
+         *
+         * @param string $thumbprint
+         */
+        public function setThumbprint($thumbprint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThumbprint()
+        {
+        }
+        /**
+         * The credentials username.
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
+        /**
+         * The ip address of the vcenter this Source represents.
+         *
+         * @param string $vcenterIp
+         */
+        public function setVcenterIp($vcenterIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVcenterIp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\VmwareSourceDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPassword()
-    {
-    }
-    /**
-     * The hostname of the vcenter.
-     *
-     * @param string $resolvedVcenterHost
-     */
-    public function setResolvedVcenterHost($resolvedVcenterHost)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResolvedVcenterHost()
-    {
-    }
-    /**
-     * The thumbprint representing the certificate for the vcenter.
-     *
-     * @param string $thumbprint
-     */
-    public function setThumbprint($thumbprint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThumbprint()
-    {
-    }
-    /**
-     * The credentials username.
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
-    {
-    }
-    /**
-     * The ip address of the vcenter this Source represents.
-     *
-     * @param string $vcenterIp
-     */
-    public function setVcenterIp($vcenterIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVcenterIp()
+    class Google_Service_VMMigrationService_VmwareSourceDetails extends \Google\Service\VMMigrationService\VmwareSourceDetails
     {
     }
 }

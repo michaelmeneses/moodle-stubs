@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryComponent extends \Google\Collection
-{
-    protected $collection_key = 'fetchFilters';
-    /**
-     * @var string
-     */
-    public $borgTaskMetric;
-    /**
-     * @var string[]
-     */
-    public $dataFilters;
-    /**
-     * @var string[]
-     */
-    public $fetchFilters;
-    protected $groupByType = GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestGroupBy::class;
-    protected $groupByDataType = '';
-    public $groupBy;
-    /**
-     * @var string
-     */
-    public $pointOperation;
-    /**
-     * @var string
-     */
-    public $timeDelta;
-    /**
-     * @param string
-     */
-    public function setBorgTaskMetric($borgTaskMetric)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryComponent extends \Google\Collection
     {
+        protected $collection_key = 'fetchFilters';
+        /**
+         * @var string
+         */
+        public $borgTaskMetric;
+        /**
+         * @var string[]
+         */
+        public $dataFilters;
+        /**
+         * @var string[]
+         */
+        public $fetchFilters;
+        protected $groupByType = GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestGroupBy::class;
+        protected $groupByDataType = '';
+        public $groupBy;
+        /**
+         * @var string
+         */
+        public $pointOperation;
+        /**
+         * @var string
+         */
+        public $timeDelta;
+        /**
+         * @param string
+         */
+        public function setBorgTaskMetric($borgTaskMetric)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBorgTaskMetric()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setDataFilters($dataFilters)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDataFilters()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setFetchFilters($fetchFilters)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFetchFilters()
+        {
+        }
+        /**
+         * @param GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestGroupBy
+         */
+        public function setGroupBy(GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestGroupBy $groupBy)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestGroupBy
+         */
+        public function getGroupBy()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPointOperation($pointOperation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPointOperation()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTimeDelta($timeDelta)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeDelta()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryComponent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBorgTaskMetric()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setDataFilters($dataFilters)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDataFilters()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setFetchFilters($fetchFilters)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFetchFilters()
-    {
-    }
-    /**
-     * @param GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestGroupBy
-     */
-    public function setGroupBy(GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestGroupBy $groupBy)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestGroupBy
-     */
-    public function getGroupBy()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPointOperation($pointOperation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPointOperation()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTimeDelta($timeDelta)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeDelta()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryComponent extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryComponent
     {
     }
 }

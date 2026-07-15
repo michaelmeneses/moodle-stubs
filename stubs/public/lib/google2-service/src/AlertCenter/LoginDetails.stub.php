@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class LoginDetails extends \Google\Model
-{
-    /**
-     * Optional. The human-readable IP address (for example, `11.22.33.44`) that
-     * is associated with the warning event.
-     *
-     * @var string
-     */
-    public $ipAddress;
-    /**
-     * Optional. The successful login time that is associated with the warning
-     * event. This isn't present for blocked login attempts.
-     *
-     * @var string
-     */
-    public $loginTime;
-    /**
-     * Optional. The human-readable IP address (for example, `11.22.33.44`) that
-     * is associated with the warning event.
-     *
-     * @param string $ipAddress
-     */
-    public function setIpAddress($ipAddress)
+namespace Google\Service\AlertCenter {
+    class LoginDetails extends \Google\Model
     {
+        /**
+         * Optional. The human-readable IP address (for example, `11.22.33.44`) that
+         * is associated with the warning event.
+         *
+         * @var string
+         */
+        public $ipAddress;
+        /**
+         * Optional. The successful login time that is associated with the warning
+         * event. This isn't present for blocked login attempts.
+         *
+         * @var string
+         */
+        public $loginTime;
+        /**
+         * Optional. The human-readable IP address (for example, `11.22.33.44`) that
+         * is associated with the warning event.
+         *
+         * @param string $ipAddress
+         */
+        public function setIpAddress($ipAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpAddress()
+        {
+        }
+        /**
+         * Optional. The successful login time that is associated with the warning
+         * event. This isn't present for blocked login attempts.
+         *
+         * @param string $loginTime
+         */
+        public function setLoginTime($loginTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLoginTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AlertCenter\LoginDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpAddress()
-    {
-    }
-    /**
-     * Optional. The successful login time that is associated with the warning
-     * event. This isn't present for blocked login attempts.
-     *
-     * @param string $loginTime
-     */
-    public function setLoginTime($loginTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLoginTime()
+    class Google_Service_AlertCenter_LoginDetails extends \Google\Service\AlertCenter\LoginDetails
     {
     }
 }

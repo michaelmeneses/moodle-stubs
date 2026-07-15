@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataFusion;
-
-class ServiceData extends \Google\Model
-{
-    protected $pdType = PersistentDiskData::class;
-    protected $pdDataType = '';
-    /**
-     * @param PersistentDiskData
-     */
-    public function setPd(PersistentDiskData $pd)
+namespace Google\Service\DataFusion {
+    class ServiceData extends \Google\Model
     {
+        protected $pdType = PersistentDiskData::class;
+        protected $pdDataType = '';
+        /**
+         * @param PersistentDiskData
+         */
+        public function setPd(PersistentDiskData $pd)
+        {
+        }
+        /**
+         * @return PersistentDiskData
+         */
+        public function getPd()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PersistentDiskData
+     * Runtime class alias of \Google\Service\DataFusion\ServiceData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPd()
+    class Google_Service_DataFusion_ServiceData extends \Google\Service\DataFusion\ServiceData
     {
     }
 }

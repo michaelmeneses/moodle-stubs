@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ApiKeysService;
-
-class V2GetKeyStringResponse extends \Google\Model
-{
-    /**
-     * An encrypted and signed value of the key.
-     *
-     * @var string
-     */
-    public $keyString;
-    /**
-     * An encrypted and signed value of the key.
-     *
-     * @param string $keyString
-     */
-    public function setKeyString($keyString)
+namespace Google\Service\ApiKeysService {
+    class V2GetKeyStringResponse extends \Google\Model
     {
+        /**
+         * An encrypted and signed value of the key.
+         *
+         * @var string
+         */
+        public $keyString;
+        /**
+         * An encrypted and signed value of the key.
+         *
+         * @param string $keyString
+         */
+        public function setKeyString($keyString)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyString()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ApiKeysService\V2GetKeyStringResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeyString()
+    class Google_Service_ApiKeysService_V2GetKeyStringResponse extends \Google\Service\ApiKeysService\V2GetKeyStringResponse
     {
     }
 }

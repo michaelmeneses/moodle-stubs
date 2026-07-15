@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDataConnect;
-
-class GraphqlRequestExtensions extends \Google\Model
-{
-    protected $impersonateType = Impersonation::class;
-    protected $impersonateDataType = '';
-    /**
-     * Optional. If set, impersonate a request with given Firebase Auth context
-     * and evaluate the auth policies on the operation. If omitted, bypass any
-     * defined auth policies.
-     *
-     * @param Impersonation $impersonate
-     */
-    public function setImpersonate(Impersonation $impersonate)
+namespace Google\Service\FirebaseDataConnect {
+    class GraphqlRequestExtensions extends \Google\Model
     {
+        protected $impersonateType = Impersonation::class;
+        protected $impersonateDataType = '';
+        /**
+         * Optional. If set, impersonate a request with given Firebase Auth context
+         * and evaluate the auth policies on the operation. If omitted, bypass any
+         * defined auth policies.
+         *
+         * @param Impersonation $impersonate
+         */
+        public function setImpersonate(Impersonation $impersonate)
+        {
+        }
+        /**
+         * @return Impersonation
+         */
+        public function getImpersonate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Impersonation
+     * Runtime class alias of \Google\Service\FirebaseDataConnect\GraphqlRequestExtensions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImpersonate()
+    class Google_Service_FirebaseDataConnect_GraphqlRequestExtensions extends \Google\Service\FirebaseDataConnect\GraphqlRequestExtensions
     {
     }
 }

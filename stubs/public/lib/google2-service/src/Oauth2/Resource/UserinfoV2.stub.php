@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Oauth2\Resource;
-
-/**
- * The "v2" collection of methods.
- * Typical usage is:
- *  <code>
- *   $oauth2Service = new Google\Service\Oauth2(...);
- *   $v2 = $oauth2Service->userinfo_v2;
- *  </code>
- */
-class UserinfoV2 extends \Google\Service\Resource
-{
+namespace Google\Service\Oauth2\Resource {
+    /**
+     * The "v2" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $oauth2Service = new Google\Service\Oauth2(...);
+     *   $v2 = $oauth2Service->userinfo_v2;
+     *  </code>
+     */
+    class UserinfoV2 extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Oauth2\Resource\UserinfoV2 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Oauth2_Resource_UserinfoV2 extends \Google\Service\Oauth2\Resource\UserinfoV2
+    {
+    }
 }

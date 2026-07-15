@@ -16,6 +16,10 @@
  */
 namespace Monolog\Formatter;
 
+use Monolog\Level;
+use Gelf\Message;
+use Monolog\Utils;
+use Monolog\LogRecord;
 /**
  * Serializes a log message to GELF
  * @see http://docs.graylog.org/en/latest/pages/gelf.html

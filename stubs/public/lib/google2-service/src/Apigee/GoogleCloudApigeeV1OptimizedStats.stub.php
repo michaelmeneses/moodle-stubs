@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1OptimizedStats extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["response" => "Response"];
-    protected $responseType = GoogleCloudApigeeV1OptimizedStatsResponse::class;
-    protected $responseDataType = '';
-    /**
-     * Wraps the `stats` response for JavaScript Optimized Scenario with a
-     * response key. For example: ```{ "Response": { "TimeUnit": [], "metaData": {
-     * "errors": [], "notices": [ "Source:Postgres", "Table used:
-     * edge.api.aaxgroup001.agg_api", "PG
-     * Host:ruappg08-ro.production.apigeeks.net", "query served
-     * by:80c4ebca-6a10-4a2e-8faf-c60c1ee306ca" ] }, "resultTruncated": false,
-     * "stats": { "data": [ { "identifier": { "names": [ "apiproxy" ], "values": [
-     * "sirjee" ] }, "metric": [ { "env": "prod", "name": "sum(message_count)",
-     * "values": [ 36.0 ] }, { "env": "prod", "name": "sum(is_error)", "values": [
-     * 36.0 ] } ] } ] } } }```
-     *
-     * @param GoogleCloudApigeeV1OptimizedStatsResponse $response
-     */
-    public function setResponse(GoogleCloudApigeeV1OptimizedStatsResponse $response)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1OptimizedStats extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["response" => "Response"];
+        protected $responseType = GoogleCloudApigeeV1OptimizedStatsResponse::class;
+        protected $responseDataType = '';
+        /**
+         * Wraps the `stats` response for JavaScript Optimized Scenario with a
+         * response key. For example: ```{ "Response": { "TimeUnit": [], "metaData": {
+         * "errors": [], "notices": [ "Source:Postgres", "Table used:
+         * edge.api.aaxgroup001.agg_api", "PG
+         * Host:ruappg08-ro.production.apigeeks.net", "query served
+         * by:80c4ebca-6a10-4a2e-8faf-c60c1ee306ca" ] }, "resultTruncated": false,
+         * "stats": { "data": [ { "identifier": { "names": [ "apiproxy" ], "values": [
+         * "sirjee" ] }, "metric": [ { "env": "prod", "name": "sum(message_count)",
+         * "values": [ 36.0 ] }, { "env": "prod", "name": "sum(is_error)", "values": [
+         * 36.0 ] } ] } ] } } }```
+         *
+         * @param GoogleCloudApigeeV1OptimizedStatsResponse $response
+         */
+        public function setResponse(GoogleCloudApigeeV1OptimizedStatsResponse $response)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1OptimizedStatsResponse
+         */
+        public function getResponse()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1OptimizedStatsResponse
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1OptimizedStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResponse()
+    class Google_Service_Apigee_GoogleCloudApigeeV1OptimizedStats extends \Google\Service\Apigee\GoogleCloudApigeeV1OptimizedStats
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class CivicinfoApiprotosV2ElectionsQueryResponse extends \Google\Collection
-{
-    protected $collection_key = 'elections';
-    protected $electionsType = CivicinfoSchemaV2Election::class;
-    protected $electionsDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "civicinfo#electionsQueryResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * A list of available elections
-     *
-     * @param CivicinfoSchemaV2Election[] $elections
-     */
-    public function setElections($elections)
+namespace Google\Service\CivicInfo {
+    class CivicinfoApiprotosV2ElectionsQueryResponse extends \Google\Collection
     {
+        protected $collection_key = 'elections';
+        protected $electionsType = CivicinfoSchemaV2Election::class;
+        protected $electionsDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "civicinfo#electionsQueryResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * A list of available elections
+         *
+         * @param CivicinfoSchemaV2Election[] $elections
+         */
+        public function setElections($elections)
+        {
+        }
+        /**
+         * @return CivicinfoSchemaV2Election[]
+         */
+        public function getElections()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "civicinfo#electionsQueryResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CivicinfoSchemaV2Election[]
+     * Runtime class alias of \Google\Service\CivicInfo\CivicinfoApiprotosV2ElectionsQueryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getElections()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "civicinfo#electionsQueryResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_CivicInfo_CivicinfoApiprotosV2ElectionsQueryResponse extends \Google\Service\CivicInfo\CivicinfoApiprotosV2ElectionsQueryResponse
     {
     }
 }

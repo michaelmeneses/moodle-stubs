@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1MergeFieldsOptions extends \Google\Model
-{
-    /**
-     * When merging message fields, the default behavior is to merge the content
-     * of two message fields together. If you instead want to use the field from
-     * the source message to replace the corresponding field in the destination
-     * message, set this flag to true. When this flag is set, specified submessage
-     * fields that are missing in source will be cleared in destination.
-     *
-     * @var bool
-     */
-    public $replaceMessageFields;
-    /**
-     * When merging repeated fields, the default behavior is to append entries
-     * from the source repeated field to the destination repeated field. If you
-     * instead want to keep only the entries from the source repeated field, set
-     * this flag to true. If you want to replace a repeated field within a message
-     * field on the destination message, you must set both replace_repeated_fields
-     * and replace_message_fields to true, otherwise the repeated fields will be
-     * appended.
-     *
-     * @var bool
-     */
-    public $replaceRepeatedFields;
-    /**
-     * When merging message fields, the default behavior is to merge the content
-     * of two message fields together. If you instead want to use the field from
-     * the source message to replace the corresponding field in the destination
-     * message, set this flag to true. When this flag is set, specified submessage
-     * fields that are missing in source will be cleared in destination.
-     *
-     * @param bool $replaceMessageFields
-     */
-    public function setReplaceMessageFields($replaceMessageFields)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1MergeFieldsOptions extends \Google\Model
     {
+        /**
+         * When merging message fields, the default behavior is to merge the content
+         * of two message fields together. If you instead want to use the field from
+         * the source message to replace the corresponding field in the destination
+         * message, set this flag to true. When this flag is set, specified submessage
+         * fields that are missing in source will be cleared in destination.
+         *
+         * @var bool
+         */
+        public $replaceMessageFields;
+        /**
+         * When merging repeated fields, the default behavior is to append entries
+         * from the source repeated field to the destination repeated field. If you
+         * instead want to keep only the entries from the source repeated field, set
+         * this flag to true. If you want to replace a repeated field within a message
+         * field on the destination message, you must set both replace_repeated_fields
+         * and replace_message_fields to true, otherwise the repeated fields will be
+         * appended.
+         *
+         * @var bool
+         */
+        public $replaceRepeatedFields;
+        /**
+         * When merging message fields, the default behavior is to merge the content
+         * of two message fields together. If you instead want to use the field from
+         * the source message to replace the corresponding field in the destination
+         * message, set this flag to true. When this flag is set, specified submessage
+         * fields that are missing in source will be cleared in destination.
+         *
+         * @param bool $replaceMessageFields
+         */
+        public function setReplaceMessageFields($replaceMessageFields)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReplaceMessageFields()
+        {
+        }
+        /**
+         * When merging repeated fields, the default behavior is to append entries
+         * from the source repeated field to the destination repeated field. If you
+         * instead want to keep only the entries from the source repeated field, set
+         * this flag to true. If you want to replace a repeated field within a message
+         * field on the destination message, you must set both replace_repeated_fields
+         * and replace_message_fields to true, otherwise the repeated fields will be
+         * appended.
+         *
+         * @param bool $replaceRepeatedFields
+         */
+        public function setReplaceRepeatedFields($replaceRepeatedFields)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReplaceRepeatedFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1MergeFieldsOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReplaceMessageFields()
-    {
-    }
-    /**
-     * When merging repeated fields, the default behavior is to append entries
-     * from the source repeated field to the destination repeated field. If you
-     * instead want to keep only the entries from the source repeated field, set
-     * this flag to true. If you want to replace a repeated field within a message
-     * field on the destination message, you must set both replace_repeated_fields
-     * and replace_message_fields to true, otherwise the repeated fields will be
-     * appended.
-     *
-     * @param bool $replaceRepeatedFields
-     */
-    public function setReplaceRepeatedFields($replaceRepeatedFields)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReplaceRepeatedFields()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1MergeFieldsOptions extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1MergeFieldsOptions
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2Range extends \Google\Model
-{
-    /**
-     * Index of the last character of the range (exclusive).
-     *
-     * @var string
-     */
-    public $end;
-    /**
-     * Index of the first character of the range (inclusive).
-     *
-     * @var string
-     */
-    public $start;
-    /**
-     * Index of the last character of the range (exclusive).
-     *
-     * @param string $end
-     */
-    public function setEnd($end)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2Range extends \Google\Model
     {
+        /**
+         * Index of the last character of the range (exclusive).
+         *
+         * @var string
+         */
+        public $end;
+        /**
+         * Index of the first character of the range (inclusive).
+         *
+         * @var string
+         */
+        public $start;
+        /**
+         * Index of the last character of the range (exclusive).
+         *
+         * @param string $end
+         */
+        public function setEnd($end)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnd()
+        {
+        }
+        /**
+         * Index of the first character of the range (inclusive).
+         *
+         * @param string $start
+         */
+        public function setStart($start)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2Range registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnd()
-    {
-    }
-    /**
-     * Index of the first character of the range (inclusive).
-     *
-     * @param string $start
-     */
-    public function setStart($start)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStart()
+    class Google_Service_DLP_GooglePrivacyDlpV2Range extends \Google\Service\DLP\GooglePrivacyDlpV2Range
     {
     }
 }

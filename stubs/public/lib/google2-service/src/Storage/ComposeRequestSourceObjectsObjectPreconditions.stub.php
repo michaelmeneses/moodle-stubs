@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class ComposeRequestSourceObjectsObjectPreconditions extends \Google\Model
-{
-    /**
-     * Only perform the composition if the generation of the source object that
-     * would be used matches this value. If this value and a generation are both
-     * specified, they must be the same value or the call will fail.
-     *
-     * @var string
-     */
-    public $ifGenerationMatch;
-    /**
-     * Only perform the composition if the generation of the source object that
-     * would be used matches this value. If this value and a generation are both
-     * specified, they must be the same value or the call will fail.
-     *
-     * @param string $ifGenerationMatch
-     */
-    public function setIfGenerationMatch($ifGenerationMatch)
+namespace Google\Service\Storage {
+    class ComposeRequestSourceObjectsObjectPreconditions extends \Google\Model
     {
+        /**
+         * Only perform the composition if the generation of the source object that
+         * would be used matches this value. If this value and a generation are both
+         * specified, they must be the same value or the call will fail.
+         *
+         * @var string
+         */
+        public $ifGenerationMatch;
+        /**
+         * Only perform the composition if the generation of the source object that
+         * would be used matches this value. If this value and a generation are both
+         * specified, they must be the same value or the call will fail.
+         *
+         * @param string $ifGenerationMatch
+         */
+        public function setIfGenerationMatch($ifGenerationMatch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIfGenerationMatch()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storage\ComposeRequestSourceObjectsObjectPreconditions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIfGenerationMatch()
+    class Google_Service_Storage_ComposeRequestSourceObjectsObjectPreconditions extends \Google\Service\Storage\ComposeRequestSourceObjectsObjectPreconditions
     {
     }
 }

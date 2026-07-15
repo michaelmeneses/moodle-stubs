@@ -21,187 +21,196 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class Client extends \Google\Model
-{
-    /**
-     * A placeholder for an undefined client role. This value should never be
-     * specified in user input for create or update method, otherwise an error
-     * will be returned.
-     */
-    public const ROLE_CLIENT_ROLE_UNSPECIFIED = 'CLIENT_ROLE_UNSPECIFIED';
-    /**
-     * Users associated with this client role can only view proposals and deals in
-     * the Marketplace UI. They cannot negotiate or approve proposals and deals
-     * sent from publishers or send RFP to publishers.
-     */
-    public const ROLE_CLIENT_DEAL_VIEWER = 'CLIENT_DEAL_VIEWER';
-    /**
-     * Users associated with this client role can view and negotiate on the
-     * proposals and deals in the Marketplace UI sent from publishers and send RFP
-     * to publishers, but cannot approve the proposals and deals by themselves.
-     * The buyer can approve the proposals and deals on behalf of the client.
-     */
-    public const ROLE_CLIENT_DEAL_NEGOTIATOR = 'CLIENT_DEAL_NEGOTIATOR';
-    /**
-     * Users associated with this client role can view, negotiate and approve
-     * proposals and deals in the Marketplace UI and send RFP to publishers.
-     */
-    public const ROLE_CLIENT_DEAL_APPROVER = 'CLIENT_DEAL_APPROVER';
-    /**
-     * A placeholder for an undefined client state. Should not be used.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * A client that is currently active and allowed to access the Authorized
-     * Buyers UI.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * A client that is currently inactive and not allowed to access the
-     * Authorized Buyers UI.
-     */
-    public const STATE_INACTIVE = 'INACTIVE';
-    /**
-     * Required. Display name shown to publishers. Must be unique for clients
-     * without partnerClientId specified. Maximum length of 255 characters is
-     * allowed.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The resource name of the client. Format:
-     * `buyers/{accountId}/clients/{clientAccountId}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Arbitrary unique identifier provided by the buyer. This field can be used
-     * to associate a client with an identifier in the namespace of the buyer,
-     * lookup clients by that identifier and verify whether an Authorized Buyers
-     * account of the client already exists. If present, must be unique across all
-     * the clients.
-     *
-     * @var string
-     */
-    public $partnerClientId;
-    /**
-     * Required. The role assigned to the client. Each role implies a set of
-     * permissions granted to the client.
-     *
-     * @var string
-     */
-    public $role;
-    /**
-     * Whether the client will be visible to sellers.
-     *
-     * @var bool
-     */
-    public $sellerVisible;
-    /**
-     * Output only. The state of the client.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Required. Display name shown to publishers. Must be unique for clients
-     * without partnerClientId specified. Maximum length of 255 characters is
-     * allowed.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class Client extends \Google\Model
     {
+        /**
+         * A placeholder for an undefined client role. This value should never be
+         * specified in user input for create or update method, otherwise an error
+         * will be returned.
+         */
+        public const ROLE_CLIENT_ROLE_UNSPECIFIED = 'CLIENT_ROLE_UNSPECIFIED';
+        /**
+         * Users associated with this client role can only view proposals and deals in
+         * the Marketplace UI. They cannot negotiate or approve proposals and deals
+         * sent from publishers or send RFP to publishers.
+         */
+        public const ROLE_CLIENT_DEAL_VIEWER = 'CLIENT_DEAL_VIEWER';
+        /**
+         * Users associated with this client role can view and negotiate on the
+         * proposals and deals in the Marketplace UI sent from publishers and send RFP
+         * to publishers, but cannot approve the proposals and deals by themselves.
+         * The buyer can approve the proposals and deals on behalf of the client.
+         */
+        public const ROLE_CLIENT_DEAL_NEGOTIATOR = 'CLIENT_DEAL_NEGOTIATOR';
+        /**
+         * Users associated with this client role can view, negotiate and approve
+         * proposals and deals in the Marketplace UI and send RFP to publishers.
+         */
+        public const ROLE_CLIENT_DEAL_APPROVER = 'CLIENT_DEAL_APPROVER';
+        /**
+         * A placeholder for an undefined client state. Should not be used.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * A client that is currently active and allowed to access the Authorized
+         * Buyers UI.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * A client that is currently inactive and not allowed to access the
+         * Authorized Buyers UI.
+         */
+        public const STATE_INACTIVE = 'INACTIVE';
+        /**
+         * Required. Display name shown to publishers. Must be unique for clients
+         * without partnerClientId specified. Maximum length of 255 characters is
+         * allowed.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The resource name of the client. Format:
+         * `buyers/{accountId}/clients/{clientAccountId}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Arbitrary unique identifier provided by the buyer. This field can be used
+         * to associate a client with an identifier in the namespace of the buyer,
+         * lookup clients by that identifier and verify whether an Authorized Buyers
+         * account of the client already exists. If present, must be unique across all
+         * the clients.
+         *
+         * @var string
+         */
+        public $partnerClientId;
+        /**
+         * Required. The role assigned to the client. Each role implies a set of
+         * permissions granted to the client.
+         *
+         * @var string
+         */
+        public $role;
+        /**
+         * Whether the client will be visible to sellers.
+         *
+         * @var bool
+         */
+        public $sellerVisible;
+        /**
+         * Output only. The state of the client.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Required. Display name shown to publishers. Must be unique for clients
+         * without partnerClientId specified. Maximum length of 255 characters is
+         * allowed.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. The resource name of the client. Format:
+         * `buyers/{accountId}/clients/{clientAccountId}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Arbitrary unique identifier provided by the buyer. This field can be used
+         * to associate a client with an identifier in the namespace of the buyer,
+         * lookup clients by that identifier and verify whether an Authorized Buyers
+         * account of the client already exists. If present, must be unique across all
+         * the clients.
+         *
+         * @param string $partnerClientId
+         */
+        public function setPartnerClientId($partnerClientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartnerClientId()
+        {
+        }
+        /**
+         * Required. The role assigned to the client. Each role implies a set of
+         * permissions granted to the client.
+         *
+         * Accepted values: CLIENT_ROLE_UNSPECIFIED, CLIENT_DEAL_VIEWER,
+         * CLIENT_DEAL_NEGOTIATOR, CLIENT_DEAL_APPROVER
+         *
+         * @param self::ROLE_* $role
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return self::ROLE_*
+         */
+        public function getRole()
+        {
+        }
+        /**
+         * Whether the client will be visible to sellers.
+         *
+         * @param bool $sellerVisible
+         */
+        public function setSellerVisible($sellerVisible)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSellerVisible()
+        {
+        }
+        /**
+         * Output only. The state of the client.
+         *
+         * Accepted values: STATE_UNSPECIFIED, ACTIVE, INACTIVE
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\Client registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. The resource name of the client. Format:
-     * `buyers/{accountId}/clients/{clientAccountId}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Arbitrary unique identifier provided by the buyer. This field can be used
-     * to associate a client with an identifier in the namespace of the buyer,
-     * lookup clients by that identifier and verify whether an Authorized Buyers
-     * account of the client already exists. If present, must be unique across all
-     * the clients.
-     *
-     * @param string $partnerClientId
-     */
-    public function setPartnerClientId($partnerClientId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPartnerClientId()
-    {
-    }
-    /**
-     * Required. The role assigned to the client. Each role implies a set of
-     * permissions granted to the client.
-     *
-     * Accepted values: CLIENT_ROLE_UNSPECIFIED, CLIENT_DEAL_VIEWER,
-     * CLIENT_DEAL_NEGOTIATOR, CLIENT_DEAL_APPROVER
-     *
-     * @param self::ROLE_* $role
-     */
-    public function setRole($role)
-    {
-    }
-    /**
-     * @return self::ROLE_*
-     */
-    public function getRole()
-    {
-    }
-    /**
-     * Whether the client will be visible to sellers.
-     *
-     * @param bool $sellerVisible
-     */
-    public function setSellerVisible($sellerVisible)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSellerVisible()
-    {
-    }
-    /**
-     * Output only. The state of the client.
-     *
-     * Accepted values: STATE_UNSPECIFIED, ACTIVE, INACTIVE
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_AuthorizedBuyersMarketplace_Client extends \Google\Service\AuthorizedBuyersMarketplace\Client
     {
     }
 }

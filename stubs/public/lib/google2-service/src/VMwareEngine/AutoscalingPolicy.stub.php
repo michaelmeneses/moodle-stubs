@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class AutoscalingPolicy extends \Google\Model
-{
-    protected $consumedMemoryThresholdsType = Thresholds::class;
-    protected $consumedMemoryThresholdsDataType = '';
-    protected $cpuThresholdsType = Thresholds::class;
-    protected $cpuThresholdsDataType = '';
-    protected $grantedMemoryThresholdsType = Thresholds::class;
-    protected $grantedMemoryThresholdsDataType = '';
-    /**
-     * Required. The canonical identifier of the node type to add or remove.
-     * Corresponds to the `NodeType`.
-     *
-     * @var string
-     */
-    public $nodeTypeId;
-    /**
-     * Required. Number of nodes to add to a cluster during a scale-out operation.
-     * Must be divisible by 2 for stretched clusters. During a scale-in operation
-     * only one node (or 2 for stretched clusters) are removed in a single
-     * iteration.
-     *
-     * @var int
-     */
-    public $scaleOutSize;
-    protected $storageThresholdsType = Thresholds::class;
-    protected $storageThresholdsDataType = '';
-    /**
-     * Optional. Utilization thresholds pertaining to amount of consumed memory.
-     *
-     * @param Thresholds $consumedMemoryThresholds
-     */
-    public function setConsumedMemoryThresholds(Thresholds $consumedMemoryThresholds)
+namespace Google\Service\VMwareEngine {
+    class AutoscalingPolicy extends \Google\Model
     {
+        protected $consumedMemoryThresholdsType = Thresholds::class;
+        protected $consumedMemoryThresholdsDataType = '';
+        protected $cpuThresholdsType = Thresholds::class;
+        protected $cpuThresholdsDataType = '';
+        protected $grantedMemoryThresholdsType = Thresholds::class;
+        protected $grantedMemoryThresholdsDataType = '';
+        /**
+         * Required. The canonical identifier of the node type to add or remove.
+         * Corresponds to the `NodeType`.
+         *
+         * @var string
+         */
+        public $nodeTypeId;
+        /**
+         * Required. Number of nodes to add to a cluster during a scale-out operation.
+         * Must be divisible by 2 for stretched clusters. During a scale-in operation
+         * only one node (or 2 for stretched clusters) are removed in a single
+         * iteration.
+         *
+         * @var int
+         */
+        public $scaleOutSize;
+        protected $storageThresholdsType = Thresholds::class;
+        protected $storageThresholdsDataType = '';
+        /**
+         * Optional. Utilization thresholds pertaining to amount of consumed memory.
+         *
+         * @param Thresholds $consumedMemoryThresholds
+         */
+        public function setConsumedMemoryThresholds(Thresholds $consumedMemoryThresholds)
+        {
+        }
+        /**
+         * @return Thresholds
+         */
+        public function getConsumedMemoryThresholds()
+        {
+        }
+        /**
+         * Optional. Utilization thresholds pertaining to CPU utilization.
+         *
+         * @param Thresholds $cpuThresholds
+         */
+        public function setCpuThresholds(Thresholds $cpuThresholds)
+        {
+        }
+        /**
+         * @return Thresholds
+         */
+        public function getCpuThresholds()
+        {
+        }
+        /**
+         * Optional. Utilization thresholds pertaining to amount of granted memory.
+         *
+         * @param Thresholds $grantedMemoryThresholds
+         */
+        public function setGrantedMemoryThresholds(Thresholds $grantedMemoryThresholds)
+        {
+        }
+        /**
+         * @return Thresholds
+         */
+        public function getGrantedMemoryThresholds()
+        {
+        }
+        /**
+         * Required. The canonical identifier of the node type to add or remove.
+         * Corresponds to the `NodeType`.
+         *
+         * @param string $nodeTypeId
+         */
+        public function setNodeTypeId($nodeTypeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNodeTypeId()
+        {
+        }
+        /**
+         * Required. Number of nodes to add to a cluster during a scale-out operation.
+         * Must be divisible by 2 for stretched clusters. During a scale-in operation
+         * only one node (or 2 for stretched clusters) are removed in a single
+         * iteration.
+         *
+         * @param int $scaleOutSize
+         */
+        public function setScaleOutSize($scaleOutSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getScaleOutSize()
+        {
+        }
+        /**
+         * Optional. Utilization thresholds pertaining to amount of consumed storage.
+         *
+         * @param Thresholds $storageThresholds
+         */
+        public function setStorageThresholds(Thresholds $storageThresholds)
+        {
+        }
+        /**
+         * @return Thresholds
+         */
+        public function getStorageThresholds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Thresholds
+     * Runtime class alias of \Google\Service\VMwareEngine\AutoscalingPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsumedMemoryThresholds()
-    {
-    }
-    /**
-     * Optional. Utilization thresholds pertaining to CPU utilization.
-     *
-     * @param Thresholds $cpuThresholds
-     */
-    public function setCpuThresholds(Thresholds $cpuThresholds)
-    {
-    }
-    /**
-     * @return Thresholds
-     */
-    public function getCpuThresholds()
-    {
-    }
-    /**
-     * Optional. Utilization thresholds pertaining to amount of granted memory.
-     *
-     * @param Thresholds $grantedMemoryThresholds
-     */
-    public function setGrantedMemoryThresholds(Thresholds $grantedMemoryThresholds)
-    {
-    }
-    /**
-     * @return Thresholds
-     */
-    public function getGrantedMemoryThresholds()
-    {
-    }
-    /**
-     * Required. The canonical identifier of the node type to add or remove.
-     * Corresponds to the `NodeType`.
-     *
-     * @param string $nodeTypeId
-     */
-    public function setNodeTypeId($nodeTypeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNodeTypeId()
-    {
-    }
-    /**
-     * Required. Number of nodes to add to a cluster during a scale-out operation.
-     * Must be divisible by 2 for stretched clusters. During a scale-in operation
-     * only one node (or 2 for stretched clusters) are removed in a single
-     * iteration.
-     *
-     * @param int $scaleOutSize
-     */
-    public function setScaleOutSize($scaleOutSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getScaleOutSize()
-    {
-    }
-    /**
-     * Optional. Utilization thresholds pertaining to amount of consumed storage.
-     *
-     * @param Thresholds $storageThresholds
-     */
-    public function setStorageThresholds(Thresholds $storageThresholds)
-    {
-    }
-    /**
-     * @return Thresholds
-     */
-    public function getStorageThresholds()
+    class Google_Service_VMwareEngine_AutoscalingPolicy extends \Google\Service\VMwareEngine\AutoscalingPolicy
     {
     }
 }

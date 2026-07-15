@@ -21,116 +21,125 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS;
-
-class Location extends \Google\Model
-{
-    /**
-     * The friendly name for this location, typically a nearby city name. For
-     * example, "Tokyo".
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Cross-service attributes for the location. For example
-     * {"cloud.googleapis.com/region": "us-east1"}
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * The canonical id for this location. For example: `"us-east1"`.
-     *
-     * @var string
-     */
-    public $locationId;
-    /**
-     * Service-specific metadata. For example the available capacity at the given
-     * location.
-     *
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * Resource name for the location, which may vary between implementations. For
-     * example: `"projects/example-project/locations/us-east1"`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The friendly name for this location, typically a nearby city name. For
-     * example, "Tokyo".
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\CloudKMS {
+    class Location extends \Google\Model
     {
+        /**
+         * The friendly name for this location, typically a nearby city name. For
+         * example, "Tokyo".
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Cross-service attributes for the location. For example
+         * {"cloud.googleapis.com/region": "us-east1"}
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * The canonical id for this location. For example: `"us-east1"`.
+         *
+         * @var string
+         */
+        public $locationId;
+        /**
+         * Service-specific metadata. For example the available capacity at the given
+         * location.
+         *
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * Resource name for the location, which may vary between implementations. For
+         * example: `"projects/example-project/locations/us-east1"`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The friendly name for this location, typically a nearby city name. For
+         * example, "Tokyo".
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Cross-service attributes for the location. For example
+         * {"cloud.googleapis.com/region": "us-east1"}
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * The canonical id for this location. For example: `"us-east1"`.
+         *
+         * @param string $locationId
+         */
+        public function setLocationId($locationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocationId()
+        {
+        }
+        /**
+         * Service-specific metadata. For example the available capacity at the given
+         * location.
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Resource name for the location, which may vary between implementations. For
+         * example: `"projects/example-project/locations/us-east1"`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudKMS\Location registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Cross-service attributes for the location. For example
-     * {"cloud.googleapis.com/region": "us-east1"}
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * The canonical id for this location. For example: `"us-east1"`.
-     *
-     * @param string $locationId
-     */
-    public function setLocationId($locationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocationId()
-    {
-    }
-    /**
-     * Service-specific metadata. For example the available capacity at the given
-     * location.
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Resource name for the location, which may vary between implementations. For
-     * example: `"projects/example-project/locations/us-east1"`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudKMS_Location extends \Google\Service\CloudKMS\Location
     {
     }
 }

@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class LabelDescriptor extends \Google\Model
-{
-    /**
-     * A variable-length string. This is the default.
-     */
-    public const VALUE_TYPE_STRING = 'STRING';
-    /**
-     * Boolean; true or false.
-     */
-    public const VALUE_TYPE_BOOL = 'BOOL';
-    /**
-     * A 64-bit signed integer.
-     */
-    public const VALUE_TYPE_INT64 = 'INT64';
-    /**
-     * A human-readable description for the label.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The label key.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * The type of data that can be assigned to the label.
-     *
-     * @var string
-     */
-    public $valueType;
-    /**
-     * A human-readable description for the label.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Logging {
+    class LabelDescriptor extends \Google\Model
     {
+        /**
+         * A variable-length string. This is the default.
+         */
+        public const VALUE_TYPE_STRING = 'STRING';
+        /**
+         * Boolean; true or false.
+         */
+        public const VALUE_TYPE_BOOL = 'BOOL';
+        /**
+         * A 64-bit signed integer.
+         */
+        public const VALUE_TYPE_INT64 = 'INT64';
+        /**
+         * A human-readable description for the label.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The label key.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * The type of data that can be assigned to the label.
+         *
+         * @var string
+         */
+        public $valueType;
+        /**
+         * A human-readable description for the label.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The label key.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * The type of data that can be assigned to the label.
+         *
+         * Accepted values: STRING, BOOL, INT64
+         *
+         * @param self::VALUE_TYPE_* $valueType
+         */
+        public function setValueType($valueType)
+        {
+        }
+        /**
+         * @return self::VALUE_TYPE_*
+         */
+        public function getValueType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Logging\LabelDescriptor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The label key.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * The type of data that can be assigned to the label.
-     *
-     * Accepted values: STRING, BOOL, INT64
-     *
-     * @param self::VALUE_TYPE_* $valueType
-     */
-    public function setValueType($valueType)
-    {
-    }
-    /**
-     * @return self::VALUE_TYPE_*
-     */
-    public function getValueType()
+    class Google_Service_Logging_LabelDescriptor extends \Google\Service\Logging\LabelDescriptor
     {
     }
 }

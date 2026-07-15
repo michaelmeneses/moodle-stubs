@@ -21,144 +21,153 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class OracleAsmConfig extends \Google\Model
-{
-    /**
-     * Required. ASM service name for the Oracle ASM connection.
-     *
-     * @var string
-     */
-    public $asmService;
-    /**
-     * Required. Hostname for the Oracle ASM connection.
-     *
-     * @var string
-     */
-    public $hostname;
-    /**
-     * Required. Input only. Password for the Oracle ASM connection.
-     *
-     * @var string
-     */
-    public $password;
-    /**
-     * Output only. Indicates whether a new password is included in the request.
-     *
-     * @var bool
-     */
-    public $passwordSet;
-    /**
-     * Required. Port for the Oracle ASM connection.
-     *
-     * @var int
-     */
-    public $port;
-    protected $sslType = SslConfig::class;
-    protected $sslDataType = '';
-    /**
-     * Required. Username for the Oracle ASM connection.
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * Required. ASM service name for the Oracle ASM connection.
-     *
-     * @param string $asmService
-     */
-    public function setAsmService($asmService)
+namespace Google\Service\DatabaseMigrationService {
+    class OracleAsmConfig extends \Google\Model
     {
+        /**
+         * Required. ASM service name for the Oracle ASM connection.
+         *
+         * @var string
+         */
+        public $asmService;
+        /**
+         * Required. Hostname for the Oracle ASM connection.
+         *
+         * @var string
+         */
+        public $hostname;
+        /**
+         * Required. Input only. Password for the Oracle ASM connection.
+         *
+         * @var string
+         */
+        public $password;
+        /**
+         * Output only. Indicates whether a new password is included in the request.
+         *
+         * @var bool
+         */
+        public $passwordSet;
+        /**
+         * Required. Port for the Oracle ASM connection.
+         *
+         * @var int
+         */
+        public $port;
+        protected $sslType = SslConfig::class;
+        protected $sslDataType = '';
+        /**
+         * Required. Username for the Oracle ASM connection.
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * Required. ASM service name for the Oracle ASM connection.
+         *
+         * @param string $asmService
+         */
+        public function setAsmService($asmService)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAsmService()
+        {
+        }
+        /**
+         * Required. Hostname for the Oracle ASM connection.
+         *
+         * @param string $hostname
+         */
+        public function setHostname($hostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostname()
+        {
+        }
+        /**
+         * Required. Input only. Password for the Oracle ASM connection.
+         *
+         * @param string $password
+         */
+        public function setPassword($password)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * Output only. Indicates whether a new password is included in the request.
+         *
+         * @param bool $passwordSet
+         */
+        public function setPasswordSet($passwordSet)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPasswordSet()
+        {
+        }
+        /**
+         * Required. Port for the Oracle ASM connection.
+         *
+         * @param int $port
+         */
+        public function setPort($port)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPort()
+        {
+        }
+        /**
+         * Optional. SSL configuration for the Oracle connection.
+         *
+         * @param SslConfig $ssl
+         */
+        public function setSsl(SslConfig $ssl)
+        {
+        }
+        /**
+         * @return SslConfig
+         */
+        public function getSsl()
+        {
+        }
+        /**
+         * Required. Username for the Oracle ASM connection.
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\OracleAsmConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAsmService()
-    {
-    }
-    /**
-     * Required. Hostname for the Oracle ASM connection.
-     *
-     * @param string $hostname
-     */
-    public function setHostname($hostname)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostname()
-    {
-    }
-    /**
-     * Required. Input only. Password for the Oracle ASM connection.
-     *
-     * @param string $password
-     */
-    public function setPassword($password)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPassword()
-    {
-    }
-    /**
-     * Output only. Indicates whether a new password is included in the request.
-     *
-     * @param bool $passwordSet
-     */
-    public function setPasswordSet($passwordSet)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPasswordSet()
-    {
-    }
-    /**
-     * Required. Port for the Oracle ASM connection.
-     *
-     * @param int $port
-     */
-    public function setPort($port)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPort()
-    {
-    }
-    /**
-     * Optional. SSL configuration for the Oracle connection.
-     *
-     * @param SslConfig $ssl
-     */
-    public function setSsl(SslConfig $ssl)
-    {
-    }
-    /**
-     * @return SslConfig
-     */
-    public function getSsl()
-    {
-    }
-    /**
-     * Required. Username for the Oracle ASM connection.
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_DatabaseMigrationService_OracleAsmConfig extends \Google\Service\DatabaseMigrationService\OracleAsmConfig
     {
     }
 }

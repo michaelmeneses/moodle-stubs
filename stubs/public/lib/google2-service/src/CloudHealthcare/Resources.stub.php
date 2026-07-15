@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class Resources extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    /**
-     * List of resources IDs. For example, "Patient/1234".
-     *
-     * @var string[]
-     */
-    public $resources;
-    /**
-     * List of resources IDs. For example, "Patient/1234".
-     *
-     * @param string[] $resources
-     */
-    public function setResources($resources)
+namespace Google\Service\CloudHealthcare {
+    class Resources extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        /**
+         * List of resources IDs. For example, "Patient/1234".
+         *
+         * @var string[]
+         */
+        public $resources;
+        /**
+         * List of resources IDs. For example, "Patient/1234".
+         *
+         * @param string[] $resources
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudHealthcare\Resources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResources()
+    class Google_Service_CloudHealthcare_Resources extends \Google\Service\CloudHealthcare\Resources
     {
     }
 }

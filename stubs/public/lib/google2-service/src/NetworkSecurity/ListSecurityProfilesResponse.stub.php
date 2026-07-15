@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class ListSecurityProfilesResponse extends \Google\Collection
-{
-    protected $collection_key = 'securityProfiles';
-    /**
-     * If there might be more results than those appearing in this response, then
-     * `next_page_token` is included. To get the next set of results, call this
-     * method again using the value of `next_page_token` as `page_token`.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $securityProfilesType = SecurityProfile::class;
-    protected $securityProfilesDataType = 'array';
-    /**
-     * If there might be more results than those appearing in this response, then
-     * `next_page_token` is included. To get the next set of results, call this
-     * method again using the value of `next_page_token` as `page_token`.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\NetworkSecurity {
+    class ListSecurityProfilesResponse extends \Google\Collection
     {
+        protected $collection_key = 'securityProfiles';
+        /**
+         * If there might be more results than those appearing in this response, then
+         * `next_page_token` is included. To get the next set of results, call this
+         * method again using the value of `next_page_token` as `page_token`.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $securityProfilesType = SecurityProfile::class;
+        protected $securityProfilesDataType = 'array';
+        /**
+         * If there might be more results than those appearing in this response, then
+         * `next_page_token` is included. To get the next set of results, call this
+         * method again using the value of `next_page_token` as `page_token`.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of SecurityProfile resources.
+         *
+         * @param SecurityProfile[] $securityProfiles
+         */
+        public function setSecurityProfiles($securityProfiles)
+        {
+        }
+        /**
+         * @return SecurityProfile[]
+         */
+        public function getSecurityProfiles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkSecurity\ListSecurityProfilesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of SecurityProfile resources.
-     *
-     * @param SecurityProfile[] $securityProfiles
-     */
-    public function setSecurityProfiles($securityProfiles)
-    {
-    }
-    /**
-     * @return SecurityProfile[]
-     */
-    public function getSecurityProfiles()
+    class Google_Service_NetworkSecurity_ListSecurityProfilesResponse extends \Google\Service\NetworkSecurity\ListSecurityProfilesResponse
     {
     }
 }

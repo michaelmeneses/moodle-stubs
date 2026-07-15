@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class AppendCellsRequest extends \Google\Collection
-{
-    protected $collection_key = 'rows';
-    /**
-     * The fields of CellData that should be updated. At least one field must be
-     * specified. The root is the CellData; 'row.values.' should not be specified.
-     * A single `"*"` can be used as short-hand for listing every field.
-     *
-     * @var string
-     */
-    public $fields;
-    protected $rowsType = RowData::class;
-    protected $rowsDataType = 'array';
-    /**
-     * The sheet ID to append the data to.
-     *
-     * @var int
-     */
-    public $sheetId;
-    /**
-     * The ID of the table to append data to. The data will be only appended to
-     * the table body. This field also takes precedence over the `sheet_id` field.
-     *
-     * @var string
-     */
-    public $tableId;
-    /**
-     * The fields of CellData that should be updated. At least one field must be
-     * specified. The root is the CellData; 'row.values.' should not be specified.
-     * A single `"*"` can be used as short-hand for listing every field.
-     *
-     * @param string $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\Sheets {
+    class AppendCellsRequest extends \Google\Collection
     {
+        protected $collection_key = 'rows';
+        /**
+         * The fields of CellData that should be updated. At least one field must be
+         * specified. The root is the CellData; 'row.values.' should not be specified.
+         * A single `"*"` can be used as short-hand for listing every field.
+         *
+         * @var string
+         */
+        public $fields;
+        protected $rowsType = RowData::class;
+        protected $rowsDataType = 'array';
+        /**
+         * The sheet ID to append the data to.
+         *
+         * @var int
+         */
+        public $sheetId;
+        /**
+         * The ID of the table to append data to. The data will be only appended to
+         * the table body. This field also takes precedence over the `sheet_id` field.
+         *
+         * @var string
+         */
+        public $tableId;
+        /**
+         * The fields of CellData that should be updated. At least one field must be
+         * specified. The root is the CellData; 'row.values.' should not be specified.
+         * A single `"*"` can be used as short-hand for listing every field.
+         *
+         * @param string $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * The data to append.
+         *
+         * @param RowData[] $rows
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return RowData[]
+         */
+        public function getRows()
+        {
+        }
+        /**
+         * The sheet ID to append the data to.
+         *
+         * @param int $sheetId
+         */
+        public function setSheetId($sheetId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSheetId()
+        {
+        }
+        /**
+         * The ID of the table to append data to. The data will be only appended to
+         * the table body. This field also takes precedence over the `sheet_id` field.
+         *
+         * @param string $tableId
+         */
+        public function setTableId($tableId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sheets\AppendCellsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
-    {
-    }
-    /**
-     * The data to append.
-     *
-     * @param RowData[] $rows
-     */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return RowData[]
-     */
-    public function getRows()
-    {
-    }
-    /**
-     * The sheet ID to append the data to.
-     *
-     * @param int $sheetId
-     */
-    public function setSheetId($sheetId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSheetId()
-    {
-    }
-    /**
-     * The ID of the table to append data to. The data will be only appended to
-     * the table body. This field also takes precedence over the `sheet_id` field.
-     *
-     * @param string $tableId
-     */
-    public function setTableId($tableId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableId()
+    class Google_Service_Sheets_AppendCellsRequest extends \Google\Service\Sheets\AppendCellsRequest
     {
     }
 }

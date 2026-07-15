@@ -29,6 +29,9 @@
  */
 namespace mod_forum\local\entities;
 
+use mod_forum\local\entities\discussion as discussion_entity;
+use mod_forum\local\entities\post as post_entity;
+use mod_forum\local\entities\author as author_entity;
 /**
  * Discussion summary class.
  *

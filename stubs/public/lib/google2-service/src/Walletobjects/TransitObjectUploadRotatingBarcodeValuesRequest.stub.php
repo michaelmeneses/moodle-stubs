@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class TransitObjectUploadRotatingBarcodeValuesRequest extends \Google\Model
-{
-    protected $blobType = Media::class;
-    protected $blobDataType = '';
-    protected $mediaRequestInfoType = MediaRequestInfo::class;
-    protected $mediaRequestInfoDataType = '';
-    /**
-     * A reference to the rotating barcode values payload that was uploaded.
-     *
-     * @param Media $blob
-     */
-    public function setBlob(Media $blob)
+namespace Google\Service\Walletobjects {
+    class TransitObjectUploadRotatingBarcodeValuesRequest extends \Google\Model
     {
+        protected $blobType = Media::class;
+        protected $blobDataType = '';
+        protected $mediaRequestInfoType = MediaRequestInfo::class;
+        protected $mediaRequestInfoDataType = '';
+        /**
+         * A reference to the rotating barcode values payload that was uploaded.
+         *
+         * @param Media $blob
+         */
+        public function setBlob(Media $blob)
+        {
+        }
+        /**
+         * @return Media
+         */
+        public function getBlob()
+        {
+        }
+        /**
+         * Extra information about the uploaded media.
+         *
+         * @param MediaRequestInfo $mediaRequestInfo
+         */
+        public function setMediaRequestInfo(MediaRequestInfo $mediaRequestInfo)
+        {
+        }
+        /**
+         * @return MediaRequestInfo
+         */
+        public function getMediaRequestInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Media
+     * Runtime class alias of \Google\Service\Walletobjects\TransitObjectUploadRotatingBarcodeValuesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlob()
-    {
-    }
-    /**
-     * Extra information about the uploaded media.
-     *
-     * @param MediaRequestInfo $mediaRequestInfo
-     */
-    public function setMediaRequestInfo(MediaRequestInfo $mediaRequestInfo)
-    {
-    }
-    /**
-     * @return MediaRequestInfo
-     */
-    public function getMediaRequestInfo()
+    class Google_Service_Walletobjects_TransitObjectUploadRotatingBarcodeValuesRequest extends \Google\Service\Walletobjects\TransitObjectUploadRotatingBarcodeValuesRequest
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1ImportDocumentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'warnings';
-    protected $warningsType = GoogleRpcStatus::class;
-    protected $warningsDataType = 'array';
-    /**
-     * Includes details about skipped documents or any other warnings.
-     *
-     * @param GoogleRpcStatus[] $warnings
-     */
-    public function setWarnings($warnings)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1ImportDocumentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'warnings';
+        protected $warningsType = GoogleRpcStatus::class;
+        protected $warningsDataType = 'array';
+        /**
+         * Includes details about skipped documents or any other warnings.
+         *
+         * @param GoogleRpcStatus[] $warnings
+         */
+        public function setWarnings($warnings)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getWarnings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1ImportDocumentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWarnings()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1ImportDocumentsResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1ImportDocumentsResponse
     {
     }
 }

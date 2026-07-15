@@ -21,202 +21,211 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NetworkEndpoint extends \Google\Model
-{
-    /**
-     * Optional metadata defined as annotations on the network endpoint.
-     *
-     * @var string[]
-     */
-    public $annotations;
-    /**
-     * Represents the port number to which PSC consumer sends packets.
-     *
-     * Optional. Only valid for network endpoint groups created
-     * withGCE_VM_IP_PORTMAP endpoint type.
-     *
-     * @var int
-     */
-    public $clientDestinationPort;
-    /**
-     * Optional fully qualified domain name of network endpoint. This can only be
-     * specified when NetworkEndpointGroup.network_endpoint_type
-     * isNON_GCP_FQDN_PORT.
-     *
-     * @var string
-     */
-    public $fqdn;
-    /**
-     * The name or a URL of VM instance of this network endpoint. Optional, the
-     * field presence depends on the network endpoint type. The field is required
-     * for network endpoints of type GCE_VM_IP andGCE_VM_IP_PORT.
-     *
-     * The instance must be in the same zone of network endpoint group (for zonal
-     * NEGs) or in the zone within the region of the NEG (for regional NEGs). If
-     * the ipAddress is specified, it must belongs to the VM instance.
-     *
-     * The name must be 1-63 characters long, and comply withRFC1035 or be a valid
-     * URL pointing to an existing instance.
-     *
-     * @var string
-     */
-    public $instance;
-    /**
-     * Optional IPv4 address of network endpoint. The IP address must belong to a
-     * VM in Compute Engine (either the primary IP or as part of an aliased IP
-     * range). If the IP address is not specified, then the primary IP address for
-     * the VM instance in the network that the network endpoint group belongs to
-     * will be used.
-     *
-     * This field is redundant and need not be set for network endpoints of
-     * typeGCE_VM_IP. If set, it must be set to the primary internal IP address of
-     * the attached VM instance that matches the subnetwork of the NEG. The
-     * primary internal IP address from any NIC of a multi-NIC VM instance can be
-     * added to a NEG as long as it matches the NEG subnetwork.
-     *
-     * @var string
-     */
-    public $ipAddress;
-    /**
-     * Optional IPv6 address of network endpoint.
-     *
-     * @var string
-     */
-    public $ipv6Address;
-    /**
-     * Optional port number of network endpoint. If not specified, the defaultPort
-     * for the network endpoint group will be used.
-     *
-     * This field can not be set for network endpoints of typeGCE_VM_IP.
-     *
-     * @var int
-     */
-    public $port;
-    /**
-     * Optional metadata defined as annotations on the network endpoint.
-     *
-     * @param string[] $annotations
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\Compute {
+    class NetworkEndpoint extends \Google\Model
     {
+        /**
+         * Optional metadata defined as annotations on the network endpoint.
+         *
+         * @var string[]
+         */
+        public $annotations;
+        /**
+         * Represents the port number to which PSC consumer sends packets.
+         *
+         * Optional. Only valid for network endpoint groups created
+         * withGCE_VM_IP_PORTMAP endpoint type.
+         *
+         * @var int
+         */
+        public $clientDestinationPort;
+        /**
+         * Optional fully qualified domain name of network endpoint. This can only be
+         * specified when NetworkEndpointGroup.network_endpoint_type
+         * isNON_GCP_FQDN_PORT.
+         *
+         * @var string
+         */
+        public $fqdn;
+        /**
+         * The name or a URL of VM instance of this network endpoint. Optional, the
+         * field presence depends on the network endpoint type. The field is required
+         * for network endpoints of type GCE_VM_IP andGCE_VM_IP_PORT.
+         *
+         * The instance must be in the same zone of network endpoint group (for zonal
+         * NEGs) or in the zone within the region of the NEG (for regional NEGs). If
+         * the ipAddress is specified, it must belongs to the VM instance.
+         *
+         * The name must be 1-63 characters long, and comply withRFC1035 or be a valid
+         * URL pointing to an existing instance.
+         *
+         * @var string
+         */
+        public $instance;
+        /**
+         * Optional IPv4 address of network endpoint. The IP address must belong to a
+         * VM in Compute Engine (either the primary IP or as part of an aliased IP
+         * range). If the IP address is not specified, then the primary IP address for
+         * the VM instance in the network that the network endpoint group belongs to
+         * will be used.
+         *
+         * This field is redundant and need not be set for network endpoints of
+         * typeGCE_VM_IP. If set, it must be set to the primary internal IP address of
+         * the attached VM instance that matches the subnetwork of the NEG. The
+         * primary internal IP address from any NIC of a multi-NIC VM instance can be
+         * added to a NEG as long as it matches the NEG subnetwork.
+         *
+         * @var string
+         */
+        public $ipAddress;
+        /**
+         * Optional IPv6 address of network endpoint.
+         *
+         * @var string
+         */
+        public $ipv6Address;
+        /**
+         * Optional port number of network endpoint. If not specified, the defaultPort
+         * for the network endpoint group will be used.
+         *
+         * This field can not be set for network endpoints of typeGCE_VM_IP.
+         *
+         * @var int
+         */
+        public $port;
+        /**
+         * Optional metadata defined as annotations on the network endpoint.
+         *
+         * @param string[] $annotations
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * Represents the port number to which PSC consumer sends packets.
+         *
+         * Optional. Only valid for network endpoint groups created
+         * withGCE_VM_IP_PORTMAP endpoint type.
+         *
+         * @param int $clientDestinationPort
+         */
+        public function setClientDestinationPort($clientDestinationPort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getClientDestinationPort()
+        {
+        }
+        /**
+         * Optional fully qualified domain name of network endpoint. This can only be
+         * specified when NetworkEndpointGroup.network_endpoint_type
+         * isNON_GCP_FQDN_PORT.
+         *
+         * @param string $fqdn
+         */
+        public function setFqdn($fqdn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFqdn()
+        {
+        }
+        /**
+         * The name or a URL of VM instance of this network endpoint. Optional, the
+         * field presence depends on the network endpoint type. The field is required
+         * for network endpoints of type GCE_VM_IP andGCE_VM_IP_PORT.
+         *
+         * The instance must be in the same zone of network endpoint group (for zonal
+         * NEGs) or in the zone within the region of the NEG (for regional NEGs). If
+         * the ipAddress is specified, it must belongs to the VM instance.
+         *
+         * The name must be 1-63 characters long, and comply withRFC1035 or be a valid
+         * URL pointing to an existing instance.
+         *
+         * @param string $instance
+         */
+        public function setInstance($instance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * Optional IPv4 address of network endpoint. The IP address must belong to a
+         * VM in Compute Engine (either the primary IP or as part of an aliased IP
+         * range). If the IP address is not specified, then the primary IP address for
+         * the VM instance in the network that the network endpoint group belongs to
+         * will be used.
+         *
+         * This field is redundant and need not be set for network endpoints of
+         * typeGCE_VM_IP. If set, it must be set to the primary internal IP address of
+         * the attached VM instance that matches the subnetwork of the NEG. The
+         * primary internal IP address from any NIC of a multi-NIC VM instance can be
+         * added to a NEG as long as it matches the NEG subnetwork.
+         *
+         * @param string $ipAddress
+         */
+        public function setIpAddress($ipAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpAddress()
+        {
+        }
+        /**
+         * Optional IPv6 address of network endpoint.
+         *
+         * @param string $ipv6Address
+         */
+        public function setIpv6Address($ipv6Address)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpv6Address()
+        {
+        }
+        /**
+         * Optional port number of network endpoint. If not specified, the defaultPort
+         * for the network endpoint group will be used.
+         *
+         * This field can not be set for network endpoints of typeGCE_VM_IP.
+         *
+         * @param int $port
+         */
+        public function setPort($port)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPort()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\NetworkEndpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * Represents the port number to which PSC consumer sends packets.
-     *
-     * Optional. Only valid for network endpoint groups created
-     * withGCE_VM_IP_PORTMAP endpoint type.
-     *
-     * @param int $clientDestinationPort
-     */
-    public function setClientDestinationPort($clientDestinationPort)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getClientDestinationPort()
-    {
-    }
-    /**
-     * Optional fully qualified domain name of network endpoint. This can only be
-     * specified when NetworkEndpointGroup.network_endpoint_type
-     * isNON_GCP_FQDN_PORT.
-     *
-     * @param string $fqdn
-     */
-    public function setFqdn($fqdn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFqdn()
-    {
-    }
-    /**
-     * The name or a URL of VM instance of this network endpoint. Optional, the
-     * field presence depends on the network endpoint type. The field is required
-     * for network endpoints of type GCE_VM_IP andGCE_VM_IP_PORT.
-     *
-     * The instance must be in the same zone of network endpoint group (for zonal
-     * NEGs) or in the zone within the region of the NEG (for regional NEGs). If
-     * the ipAddress is specified, it must belongs to the VM instance.
-     *
-     * The name must be 1-63 characters long, and comply withRFC1035 or be a valid
-     * URL pointing to an existing instance.
-     *
-     * @param string $instance
-     */
-    public function setInstance($instance)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstance()
-    {
-    }
-    /**
-     * Optional IPv4 address of network endpoint. The IP address must belong to a
-     * VM in Compute Engine (either the primary IP or as part of an aliased IP
-     * range). If the IP address is not specified, then the primary IP address for
-     * the VM instance in the network that the network endpoint group belongs to
-     * will be used.
-     *
-     * This field is redundant and need not be set for network endpoints of
-     * typeGCE_VM_IP. If set, it must be set to the primary internal IP address of
-     * the attached VM instance that matches the subnetwork of the NEG. The
-     * primary internal IP address from any NIC of a multi-NIC VM instance can be
-     * added to a NEG as long as it matches the NEG subnetwork.
-     *
-     * @param string $ipAddress
-     */
-    public function setIpAddress($ipAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIpAddress()
-    {
-    }
-    /**
-     * Optional IPv6 address of network endpoint.
-     *
-     * @param string $ipv6Address
-     */
-    public function setIpv6Address($ipv6Address)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIpv6Address()
-    {
-    }
-    /**
-     * Optional port number of network endpoint. If not specified, the defaultPort
-     * for the network endpoint group will be used.
-     *
-     * This field can not be set for network endpoints of typeGCE_VM_IP.
-     *
-     * @param int $port
-     */
-    public function setPort($port)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPort()
+    class Google_Service_Compute_NetworkEndpoint extends \Google\Service\Compute\NetworkEndpoint
     {
     }
 }

@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class UpgradeDistribution extends \Google\Collection
-{
-    protected $collection_key = 'cve';
-    /**
-     * The operating system classification of this Upgrade, as specified by the
-     * upstream operating system upgrade feed. For Windows the classification is
-     * one of the category_ids listed at https://docs.microsoft.com/en-
-     * us/previous-versions/windows/desktop/ff357803(v=vs.85)
-     *
-     * @var string
-     */
-    public $classification;
-    /**
-     * Required - The specific operating system this metadata applies to. See
-     * https://cpe.mitre.org/specification/.
-     *
-     * @var string
-     */
-    public $cpeUri;
-    /**
-     * The cve tied to this Upgrade.
-     *
-     * @var string[]
-     */
-    public $cve;
-    /**
-     * The severity as specified by the upstream operating system.
-     *
-     * @var string
-     */
-    public $severity;
-    /**
-     * The operating system classification of this Upgrade, as specified by the
-     * upstream operating system upgrade feed. For Windows the classification is
-     * one of the category_ids listed at https://docs.microsoft.com/en-
-     * us/previous-versions/windows/desktop/ff357803(v=vs.85)
-     *
-     * @param string $classification
-     */
-    public function setClassification($classification)
+namespace Google\Service\OnDemandScanning {
+    class UpgradeDistribution extends \Google\Collection
     {
+        protected $collection_key = 'cve';
+        /**
+         * The operating system classification of this Upgrade, as specified by the
+         * upstream operating system upgrade feed. For Windows the classification is
+         * one of the category_ids listed at https://docs.microsoft.com/en-
+         * us/previous-versions/windows/desktop/ff357803(v=vs.85)
+         *
+         * @var string
+         */
+        public $classification;
+        /**
+         * Required - The specific operating system this metadata applies to. See
+         * https://cpe.mitre.org/specification/.
+         *
+         * @var string
+         */
+        public $cpeUri;
+        /**
+         * The cve tied to this Upgrade.
+         *
+         * @var string[]
+         */
+        public $cve;
+        /**
+         * The severity as specified by the upstream operating system.
+         *
+         * @var string
+         */
+        public $severity;
+        /**
+         * The operating system classification of this Upgrade, as specified by the
+         * upstream operating system upgrade feed. For Windows the classification is
+         * one of the category_ids listed at https://docs.microsoft.com/en-
+         * us/previous-versions/windows/desktop/ff357803(v=vs.85)
+         *
+         * @param string $classification
+         */
+        public function setClassification($classification)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClassification()
+        {
+        }
+        /**
+         * Required - The specific operating system this metadata applies to. See
+         * https://cpe.mitre.org/specification/.
+         *
+         * @param string $cpeUri
+         */
+        public function setCpeUri($cpeUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCpeUri()
+        {
+        }
+        /**
+         * The cve tied to this Upgrade.
+         *
+         * @param string[] $cve
+         */
+        public function setCve($cve)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCve()
+        {
+        }
+        /**
+         * The severity as specified by the upstream operating system.
+         *
+         * @param string $severity
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSeverity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OnDemandScanning\UpgradeDistribution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClassification()
-    {
-    }
-    /**
-     * Required - The specific operating system this metadata applies to. See
-     * https://cpe.mitre.org/specification/.
-     *
-     * @param string $cpeUri
-     */
-    public function setCpeUri($cpeUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCpeUri()
-    {
-    }
-    /**
-     * The cve tied to this Upgrade.
-     *
-     * @param string[] $cve
-     */
-    public function setCve($cve)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCve()
-    {
-    }
-    /**
-     * The severity as specified by the upstream operating system.
-     *
-     * @param string $severity
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSeverity()
+    class Google_Service_OnDemandScanning_UpgradeDistribution extends \Google\Service\OnDemandScanning\UpgradeDistribution
     {
     }
 }

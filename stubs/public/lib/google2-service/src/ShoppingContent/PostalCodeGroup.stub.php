@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class PostalCodeGroup extends \Google\Collection
-{
-    protected $collection_key = 'postalCodeRanges';
-    /**
-     * The CLDR territory code of the country the postal code group applies to.
-     * Required.
-     *
-     * @var string
-     */
-    public $country;
-    /**
-     * The name of the postal code group, referred to in headers. Required.
-     *
-     * @var string
-     */
-    public $name;
-    protected $postalCodeRangesType = PostalCodeRange::class;
-    protected $postalCodeRangesDataType = 'array';
-    /**
-     * The CLDR territory code of the country the postal code group applies to.
-     * Required.
-     *
-     * @param string $country
-     */
-    public function setCountry($country)
+namespace Google\Service\ShoppingContent {
+    class PostalCodeGroup extends \Google\Collection
     {
+        protected $collection_key = 'postalCodeRanges';
+        /**
+         * The CLDR territory code of the country the postal code group applies to.
+         * Required.
+         *
+         * @var string
+         */
+        public $country;
+        /**
+         * The name of the postal code group, referred to in headers. Required.
+         *
+         * @var string
+         */
+        public $name;
+        protected $postalCodeRangesType = PostalCodeRange::class;
+        protected $postalCodeRangesDataType = 'array';
+        /**
+         * The CLDR territory code of the country the postal code group applies to.
+         * Required.
+         *
+         * @param string $country
+         */
+        public function setCountry($country)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountry()
+        {
+        }
+        /**
+         * The name of the postal code group, referred to in headers. Required.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * A range of postal codes. Required.
+         *
+         * @param PostalCodeRange[] $postalCodeRanges
+         */
+        public function setPostalCodeRanges($postalCodeRanges)
+        {
+        }
+        /**
+         * @return PostalCodeRange[]
+         */
+        public function getPostalCodeRanges()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\PostalCodeGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountry()
-    {
-    }
-    /**
-     * The name of the postal code group, referred to in headers. Required.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * A range of postal codes. Required.
-     *
-     * @param PostalCodeRange[] $postalCodeRanges
-     */
-    public function setPostalCodeRanges($postalCodeRanges)
-    {
-    }
-    /**
-     * @return PostalCodeRange[]
-     */
-    public function getPostalCodeRanges()
+    class Google_Service_ShoppingContent_PostalCodeGroup extends \Google\Service\ShoppingContent\PostalCodeGroup
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EvaluationRunInferenceConfig extends \Google\Model
-{
-    protected $generationConfigType = GoogleCloudAiplatformV1GenerationConfig::class;
-    protected $generationConfigDataType = '';
-    /**
-     * Optional. The fully qualified name of the publisher model or endpoint to
-     * use. Publisher model format:
-     * `projects/{project}/locations/{location}/publishers/models` Endpoint
-     * format: `projects/{project}/locations/{location}/endpoints/{endpoint}`
-     *
-     * @var string
-     */
-    public $model;
-    /**
-     * Optional. Generation config.
-     *
-     * @param GoogleCloudAiplatformV1GenerationConfig $generationConfig
-     */
-    public function setGenerationConfig(GoogleCloudAiplatformV1GenerationConfig $generationConfig)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EvaluationRunInferenceConfig extends \Google\Model
     {
+        protected $generationConfigType = GoogleCloudAiplatformV1GenerationConfig::class;
+        protected $generationConfigDataType = '';
+        /**
+         * Optional. The fully qualified name of the publisher model or endpoint to
+         * use. Publisher model format:
+         * `projects/{project}/locations/{location}/publishers/models` Endpoint
+         * format: `projects/{project}/locations/{location}/endpoints/{endpoint}`
+         *
+         * @var string
+         */
+        public $model;
+        /**
+         * Optional. Generation config.
+         *
+         * @param GoogleCloudAiplatformV1GenerationConfig $generationConfig
+         */
+        public function setGenerationConfig(GoogleCloudAiplatformV1GenerationConfig $generationConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GenerationConfig
+         */
+        public function getGenerationConfig()
+        {
+        }
+        /**
+         * Optional. The fully qualified name of the publisher model or endpoint to
+         * use. Publisher model format:
+         * `projects/{project}/locations/{location}/publishers/models` Endpoint
+         * format: `projects/{project}/locations/{location}/endpoints/{endpoint}`
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1GenerationConfig
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationRunInferenceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGenerationConfig()
-    {
-    }
-    /**
-     * Optional. The fully qualified name of the publisher model or endpoint to
-     * use. Publisher model format:
-     * `projects/{project}/locations/{location}/publishers/models` Endpoint
-     * format: `projects/{project}/locations/{location}/endpoints/{endpoint}`
-     *
-     * @param string $model
-     */
-    public function setModel($model)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModel()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EvaluationRunInferenceConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationRunInferenceConfig
     {
     }
 }

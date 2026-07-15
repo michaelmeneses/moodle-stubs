@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class AndroidMatrix extends \Google\Collection
-{
-    protected $collection_key = 'orientations';
-    /**
-     * Required. The ids of the set of Android device to be used. Use the
-     * TestEnvironmentDiscoveryService to get supported options.
-     *
-     * @var string[]
-     */
-    public $androidModelIds;
-    /**
-     * Required. The ids of the set of Android OS version to be used. Use the
-     * TestEnvironmentDiscoveryService to get supported options.
-     *
-     * @var string[]
-     */
-    public $androidVersionIds;
-    /**
-     * Required. The set of locales the test device will enable for testing. Use
-     * the TestEnvironmentDiscoveryService to get supported options.
-     *
-     * @var string[]
-     */
-    public $locales;
-    /**
-     * Required. The set of orientations to test with. Use the
-     * TestEnvironmentDiscoveryService to get supported options.
-     *
-     * @var string[]
-     */
-    public $orientations;
-    /**
-     * Required. The ids of the set of Android device to be used. Use the
-     * TestEnvironmentDiscoveryService to get supported options.
-     *
-     * @param string[] $androidModelIds
-     */
-    public function setAndroidModelIds($androidModelIds)
+namespace Google\Service\Testing {
+    class AndroidMatrix extends \Google\Collection
     {
+        protected $collection_key = 'orientations';
+        /**
+         * Required. The ids of the set of Android device to be used. Use the
+         * TestEnvironmentDiscoveryService to get supported options.
+         *
+         * @var string[]
+         */
+        public $androidModelIds;
+        /**
+         * Required. The ids of the set of Android OS version to be used. Use the
+         * TestEnvironmentDiscoveryService to get supported options.
+         *
+         * @var string[]
+         */
+        public $androidVersionIds;
+        /**
+         * Required. The set of locales the test device will enable for testing. Use
+         * the TestEnvironmentDiscoveryService to get supported options.
+         *
+         * @var string[]
+         */
+        public $locales;
+        /**
+         * Required. The set of orientations to test with. Use the
+         * TestEnvironmentDiscoveryService to get supported options.
+         *
+         * @var string[]
+         */
+        public $orientations;
+        /**
+         * Required. The ids of the set of Android device to be used. Use the
+         * TestEnvironmentDiscoveryService to get supported options.
+         *
+         * @param string[] $androidModelIds
+         */
+        public function setAndroidModelIds($androidModelIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAndroidModelIds()
+        {
+        }
+        /**
+         * Required. The ids of the set of Android OS version to be used. Use the
+         * TestEnvironmentDiscoveryService to get supported options.
+         *
+         * @param string[] $androidVersionIds
+         */
+        public function setAndroidVersionIds($androidVersionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAndroidVersionIds()
+        {
+        }
+        /**
+         * Required. The set of locales the test device will enable for testing. Use
+         * the TestEnvironmentDiscoveryService to get supported options.
+         *
+         * @param string[] $locales
+         */
+        public function setLocales($locales)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLocales()
+        {
+        }
+        /**
+         * Required. The set of orientations to test with. Use the
+         * TestEnvironmentDiscoveryService to get supported options.
+         *
+         * @param string[] $orientations
+         */
+        public function setOrientations($orientations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOrientations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Testing\AndroidMatrix registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndroidModelIds()
-    {
-    }
-    /**
-     * Required. The ids of the set of Android OS version to be used. Use the
-     * TestEnvironmentDiscoveryService to get supported options.
-     *
-     * @param string[] $androidVersionIds
-     */
-    public function setAndroidVersionIds($androidVersionIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAndroidVersionIds()
-    {
-    }
-    /**
-     * Required. The set of locales the test device will enable for testing. Use
-     * the TestEnvironmentDiscoveryService to get supported options.
-     *
-     * @param string[] $locales
-     */
-    public function setLocales($locales)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLocales()
-    {
-    }
-    /**
-     * Required. The set of orientations to test with. Use the
-     * TestEnvironmentDiscoveryService to get supported options.
-     *
-     * @param string[] $orientations
-     */
-    public function setOrientations($orientations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOrientations()
+    class Google_Service_Testing_AndroidMatrix extends \Google\Service\Testing\AndroidMatrix
     {
     }
 }

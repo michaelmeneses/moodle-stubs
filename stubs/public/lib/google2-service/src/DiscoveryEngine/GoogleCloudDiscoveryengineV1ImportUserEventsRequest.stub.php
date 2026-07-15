@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ImportUserEventsRequest extends \Google\Model
-{
-    protected $bigquerySourceType = GoogleCloudDiscoveryengineV1BigQuerySource::class;
-    protected $bigquerySourceDataType = '';
-    protected $errorConfigType = GoogleCloudDiscoveryengineV1ImportErrorConfig::class;
-    protected $errorConfigDataType = '';
-    protected $gcsSourceType = GoogleCloudDiscoveryengineV1GcsSource::class;
-    protected $gcsSourceDataType = '';
-    protected $inlineSourceType = GoogleCloudDiscoveryengineV1ImportUserEventsRequestInlineSource::class;
-    protected $inlineSourceDataType = '';
-    /**
-     * BigQuery input source.
-     *
-     * @param GoogleCloudDiscoveryengineV1BigQuerySource $bigquerySource
-     */
-    public function setBigquerySource(GoogleCloudDiscoveryengineV1BigQuerySource $bigquerySource)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ImportUserEventsRequest extends \Google\Model
     {
+        protected $bigquerySourceType = GoogleCloudDiscoveryengineV1BigQuerySource::class;
+        protected $bigquerySourceDataType = '';
+        protected $errorConfigType = GoogleCloudDiscoveryengineV1ImportErrorConfig::class;
+        protected $errorConfigDataType = '';
+        protected $gcsSourceType = GoogleCloudDiscoveryengineV1GcsSource::class;
+        protected $gcsSourceDataType = '';
+        protected $inlineSourceType = GoogleCloudDiscoveryengineV1ImportUserEventsRequestInlineSource::class;
+        protected $inlineSourceDataType = '';
+        /**
+         * BigQuery input source.
+         *
+         * @param GoogleCloudDiscoveryengineV1BigQuerySource $bigquerySource
+         */
+        public function setBigquerySource(GoogleCloudDiscoveryengineV1BigQuerySource $bigquerySource)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1BigQuerySource
+         */
+        public function getBigquerySource()
+        {
+        }
+        /**
+         * The desired location of errors incurred during the Import. Cannot be set
+         * for inline user event imports.
+         *
+         * @param GoogleCloudDiscoveryengineV1ImportErrorConfig $errorConfig
+         */
+        public function setErrorConfig(GoogleCloudDiscoveryengineV1ImportErrorConfig $errorConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1ImportErrorConfig
+         */
+        public function getErrorConfig()
+        {
+        }
+        /**
+         * Cloud Storage location for the input content.
+         *
+         * @param GoogleCloudDiscoveryengineV1GcsSource $gcsSource
+         */
+        public function setGcsSource(GoogleCloudDiscoveryengineV1GcsSource $gcsSource)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1GcsSource
+         */
+        public function getGcsSource()
+        {
+        }
+        /**
+         * The Inline source for the input content for UserEvents.
+         *
+         * @param GoogleCloudDiscoveryengineV1ImportUserEventsRequestInlineSource $inlineSource
+         */
+        public function setInlineSource(GoogleCloudDiscoveryengineV1ImportUserEventsRequestInlineSource $inlineSource)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1ImportUserEventsRequestInlineSource
+         */
+        public function getInlineSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1BigQuerySource
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ImportUserEventsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigquerySource()
-    {
-    }
-    /**
-     * The desired location of errors incurred during the Import. Cannot be set
-     * for inline user event imports.
-     *
-     * @param GoogleCloudDiscoveryengineV1ImportErrorConfig $errorConfig
-     */
-    public function setErrorConfig(GoogleCloudDiscoveryengineV1ImportErrorConfig $errorConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1ImportErrorConfig
-     */
-    public function getErrorConfig()
-    {
-    }
-    /**
-     * Cloud Storage location for the input content.
-     *
-     * @param GoogleCloudDiscoveryengineV1GcsSource $gcsSource
-     */
-    public function setGcsSource(GoogleCloudDiscoveryengineV1GcsSource $gcsSource)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1GcsSource
-     */
-    public function getGcsSource()
-    {
-    }
-    /**
-     * The Inline source for the input content for UserEvents.
-     *
-     * @param GoogleCloudDiscoveryengineV1ImportUserEventsRequestInlineSource $inlineSource
-     */
-    public function setInlineSource(GoogleCloudDiscoveryengineV1ImportUserEventsRequestInlineSource $inlineSource)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1ImportUserEventsRequestInlineSource
-     */
-    public function getInlineSource()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ImportUserEventsRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ImportUserEventsRequest
     {
     }
 }

@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class PretargetingConfigPlacements extends \Google\Model
-{
-    public $token;
-    public $type;
-    public function setToken($token)
+namespace Google\Service\AdExchangeBuyer {
+    class PretargetingConfigPlacements extends \Google\Model
     {
+        public $token;
+        public $type;
+        public function setToken($token)
+        {
+        }
+        public function getToken()
+        {
+        }
+        public function setType($type)
+        {
+        }
+        public function getType()
+        {
+        }
     }
-    public function getToken()
-    {
-    }
-    public function setType($type)
-    {
-    }
-    public function getType()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\PretargetingConfigPlacements registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_PretargetingConfigPlacements extends \Google\Service\AdExchangeBuyer\PretargetingConfigPlacements
     {
     }
 }

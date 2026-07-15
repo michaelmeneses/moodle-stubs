@@ -21,170 +21,179 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesConfiguration;
-
-class LeaderboardConfiguration extends \Google\Model
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const SCORE_ORDER_SCORE_ORDER_UNSPECIFIED = 'SCORE_ORDER_UNSPECIFIED';
-    /**
-     * Larger scores posted are ranked higher.
-     */
-    public const SCORE_ORDER_LARGER_IS_BETTER = 'LARGER_IS_BETTER';
-    /**
-     * Smaller scores posted are ranked higher.
-     */
-    public const SCORE_ORDER_SMALLER_IS_BETTER = 'SMALLER_IS_BETTER';
-    protected $draftType = LeaderboardConfigurationDetail::class;
-    protected $draftDataType = '';
-    /**
-     * The ID of the leaderboard.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesConfiguration#leaderboardConfiguration`.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $publishedType = LeaderboardConfigurationDetail::class;
-    protected $publishedDataType = '';
-    /**
-     * Maximum score that can be posted to this leaderboard.
-     *
-     * @var string
-     */
-    public $scoreMax;
-    /**
-     * Minimum score that can be posted to this leaderboard.
-     *
-     * @var string
-     */
-    public $scoreMin;
-    /**
-     * @var string
-     */
-    public $scoreOrder;
-    /**
-     * The token for this resource.
-     *
-     * @var string
-     */
-    public $token;
-    /**
-     * The draft data of the leaderboard.
-     *
-     * @param LeaderboardConfigurationDetail $draft
-     */
-    public function setDraft(LeaderboardConfigurationDetail $draft)
+namespace Google\Service\GamesConfiguration {
+    class LeaderboardConfiguration extends \Google\Model
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const SCORE_ORDER_SCORE_ORDER_UNSPECIFIED = 'SCORE_ORDER_UNSPECIFIED';
+        /**
+         * Larger scores posted are ranked higher.
+         */
+        public const SCORE_ORDER_LARGER_IS_BETTER = 'LARGER_IS_BETTER';
+        /**
+         * Smaller scores posted are ranked higher.
+         */
+        public const SCORE_ORDER_SMALLER_IS_BETTER = 'SMALLER_IS_BETTER';
+        protected $draftType = LeaderboardConfigurationDetail::class;
+        protected $draftDataType = '';
+        /**
+         * The ID of the leaderboard.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesConfiguration#leaderboardConfiguration`.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $publishedType = LeaderboardConfigurationDetail::class;
+        protected $publishedDataType = '';
+        /**
+         * Maximum score that can be posted to this leaderboard.
+         *
+         * @var string
+         */
+        public $scoreMax;
+        /**
+         * Minimum score that can be posted to this leaderboard.
+         *
+         * @var string
+         */
+        public $scoreMin;
+        /**
+         * @var string
+         */
+        public $scoreOrder;
+        /**
+         * The token for this resource.
+         *
+         * @var string
+         */
+        public $token;
+        /**
+         * The draft data of the leaderboard.
+         *
+         * @param LeaderboardConfigurationDetail $draft
+         */
+        public function setDraft(LeaderboardConfigurationDetail $draft)
+        {
+        }
+        /**
+         * @return LeaderboardConfigurationDetail
+         */
+        public function getDraft()
+        {
+        }
+        /**
+         * The ID of the leaderboard.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesConfiguration#leaderboardConfiguration`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The read-only published data of the leaderboard.
+         *
+         * @param LeaderboardConfigurationDetail $published
+         */
+        public function setPublished(LeaderboardConfigurationDetail $published)
+        {
+        }
+        /**
+         * @return LeaderboardConfigurationDetail
+         */
+        public function getPublished()
+        {
+        }
+        /**
+         * Maximum score that can be posted to this leaderboard.
+         *
+         * @param string $scoreMax
+         */
+        public function setScoreMax($scoreMax)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScoreMax()
+        {
+        }
+        /**
+         * Minimum score that can be posted to this leaderboard.
+         *
+         * @param string $scoreMin
+         */
+        public function setScoreMin($scoreMin)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScoreMin()
+        {
+        }
+        /**
+         * @param self::SCORE_ORDER_* $scoreOrder
+         */
+        public function setScoreOrder($scoreOrder)
+        {
+        }
+        /**
+         * @return self::SCORE_ORDER_*
+         */
+        public function getScoreOrder()
+        {
+        }
+        /**
+         * The token for this resource.
+         *
+         * @param string $token
+         */
+        public function setToken($token)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LeaderboardConfigurationDetail
+     * Runtime class alias of \Google\Service\GamesConfiguration\LeaderboardConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDraft()
-    {
-    }
-    /**
-     * The ID of the leaderboard.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesConfiguration#leaderboardConfiguration`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The read-only published data of the leaderboard.
-     *
-     * @param LeaderboardConfigurationDetail $published
-     */
-    public function setPublished(LeaderboardConfigurationDetail $published)
-    {
-    }
-    /**
-     * @return LeaderboardConfigurationDetail
-     */
-    public function getPublished()
-    {
-    }
-    /**
-     * Maximum score that can be posted to this leaderboard.
-     *
-     * @param string $scoreMax
-     */
-    public function setScoreMax($scoreMax)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScoreMax()
-    {
-    }
-    /**
-     * Minimum score that can be posted to this leaderboard.
-     *
-     * @param string $scoreMin
-     */
-    public function setScoreMin($scoreMin)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScoreMin()
-    {
-    }
-    /**
-     * @param self::SCORE_ORDER_* $scoreOrder
-     */
-    public function setScoreOrder($scoreOrder)
-    {
-    }
-    /**
-     * @return self::SCORE_ORDER_*
-     */
-    public function getScoreOrder()
-    {
-    }
-    /**
-     * The token for this resource.
-     *
-     * @param string $token
-     */
-    public function setToken($token)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getToken()
+    class Google_Service_GamesConfiguration_LeaderboardConfiguration extends \Google\Service\GamesConfiguration\LeaderboardConfiguration
     {
     }
 }

@@ -21,45 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation\Resource;
-
-/**
- * The "chains" collection of methods.
- * Typical usage is:
- *  <code>
- *   $mybusinessbusinessinformationService = new Google\Service\MyBusinessBusinessInformation(...);
- *   $chains = $mybusinessbusinessinformationService->chains;
- *  </code>
- */
-class Chains extends \Google\Service\Resource
-{
+namespace Google\Service\MyBusinessBusinessInformation\Resource {
+    use Google\Service\MyBusinessBusinessInformation\Chain;
+    use Google\Service\MyBusinessBusinessInformation\SearchChainsResponse;
     /**
-     * Gets the specified chain. Returns `NOT_FOUND` if the chain does not exist.
-     * (chains.get)
-     *
-     * @param string $name Required. The chain's resource name, in the format
-     * `chains/{chain_place_id}`.
-     * @param array $optParams Optional parameters.
-     * @return Chain
-     * @throws \Google\Service\Exception
+     * The "chains" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $mybusinessbusinessinformationService = new Google\Service\MyBusinessBusinessInformation(...);
+     *   $chains = $mybusinessbusinessinformationService->chains;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class Chains extends \Google\Service\Resource
     {
+        /**
+         * Gets the specified chain. Returns `NOT_FOUND` if the chain does not exist.
+         * (chains.get)
+         *
+         * @param string $name Required. The chain's resource name, in the format
+         * `chains/{chain_place_id}`.
+         * @param array $optParams Optional parameters.
+         * @return Chain
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Searches the chain based on chain name. (chains.search)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string chainName Required. Search for a chain by its name.
+         * Exact/partial/fuzzy/related queries are supported. Examples: "walmart", "wal-
+         * mart", "walmmmart", "沃尔玛"
+         * @opt_param int pageSize The maximum number of matched chains to return from
+         * this query. The default is 10. The maximum possible value is 500.
+         * @return SearchChainsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function search($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Searches the chain based on chain name. (chains.search)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string chainName Required. Search for a chain by its name.
-     * Exact/partial/fuzzy/related queries are supported. Examples: "walmart", "wal-
-     * mart", "walmmmart", "沃尔玛"
-     * @opt_param int pageSize The maximum number of matched chains to return from
-     * this query. The default is 10. The maximum possible value is 500.
-     * @return SearchChainsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\Resource\Chains registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function search($optParams = [])
+    class Google_Service_MyBusinessBusinessInformation_Resource_Chains extends \Google\Service\MyBusinessBusinessInformation\Resource\Chains
     {
     }
 }

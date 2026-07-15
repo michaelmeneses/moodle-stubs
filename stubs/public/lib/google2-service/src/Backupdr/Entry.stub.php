@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class Entry extends \Google\Model
-{
-    /**
-     * Optional. Key for the metadata entry.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Optional. Value for the metadata entry. These are free-form strings, and
-     * only have meaning as interpreted by the image running in the instance. The
-     * only restriction placed on values is that their size must be less than or
-     * equal to 262144 bytes (256 KiB).
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Optional. Key for the metadata entry.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\Backupdr {
+    class Entry extends \Google\Model
     {
+        /**
+         * Optional. Key for the metadata entry.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Optional. Value for the metadata entry. These are free-form strings, and
+         * only have meaning as interpreted by the image running in the instance. The
+         * only restriction placed on values is that their size must be less than or
+         * equal to 262144 bytes (256 KiB).
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Optional. Key for the metadata entry.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Optional. Value for the metadata entry. These are free-form strings, and
+         * only have meaning as interpreted by the image running in the instance. The
+         * only restriction placed on values is that their size must be less than or
+         * equal to 262144 bytes (256 KiB).
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\Entry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * Optional. Value for the metadata entry. These are free-form strings, and
-     * only have meaning as interpreted by the image running in the instance. The
-     * only restriction placed on values is that their size must be less than or
-     * equal to 262144 bytes (256 KiB).
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Backupdr_Entry extends \Google\Service\Backupdr\Entry
     {
     }
 }

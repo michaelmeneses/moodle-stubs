@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1BatchGetDocumentsMetadataResponseDocumentMetadataMatcherValue extends \Google\Model
-{
-    /**
-     * Format: projects/{project}/locations/{location}/datasets/{dataset}/fhirStor
-     * es/{fhir_store}/fhir/{resource_type}/{fhir_resource_id}
-     *
-     * @var string
-     */
-    public $fhirResource;
-    /**
-     * If match by URI, the URI of the Document.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Format: projects/{project}/locations/{location}/datasets/{dataset}/fhirStor
-     * es/{fhir_store}/fhir/{resource_type}/{fhir_resource_id}
-     *
-     * @param string $fhirResource
-     */
-    public function setFhirResource($fhirResource)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1BatchGetDocumentsMetadataResponseDocumentMetadataMatcherValue extends \Google\Model
     {
+        /**
+         * Format: projects/{project}/locations/{location}/datasets/{dataset}/fhirStor
+         * es/{fhir_store}/fhir/{resource_type}/{fhir_resource_id}
+         *
+         * @var string
+         */
+        public $fhirResource;
+        /**
+         * If match by URI, the URI of the Document.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Format: projects/{project}/locations/{location}/datasets/{dataset}/fhirStor
+         * es/{fhir_store}/fhir/{resource_type}/{fhir_resource_id}
+         *
+         * @param string $fhirResource
+         */
+        public function setFhirResource($fhirResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFhirResource()
+        {
+        }
+        /**
+         * If match by URI, the URI of the Document.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1BatchGetDocumentsMetadataResponseDocumentMetadataMatcherValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFhirResource()
-    {
-    }
-    /**
-     * If match by URI, the URI of the Document.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1BatchGetDocumentsMetadataResponseDocumentMetadataMatcherValue extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1BatchGetDocumentsMetadataResponseDocumentMetadataMatcherValue
     {
     }
 }

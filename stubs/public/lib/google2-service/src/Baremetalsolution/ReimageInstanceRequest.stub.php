@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class ReimageInstanceRequest extends \Google\Collection
-{
-    protected $collection_key = 'sshKeys';
-    /**
-     * Optional. Name of the KMS crypto key version used to encrypt the initial
-     * passwords. The key has to have ASYMMETRIC_DECRYPT purpose. Format is `proje
-     * cts/{project}/locations/{location}/keyRings/{keyring}/cryptoKeys/{key}/cryp
-     * toKeyVersions/{version}`.
-     *
-     * @var string
-     */
-    public $kmsKeyVersion;
-    /**
-     * Required. The OS image code of the image which will be used in the reimage
-     * operation.
-     *
-     * @var string
-     */
-    public $osImage;
-    /**
-     * Optional. List of SSH Keys used during reimaging an instance.
-     *
-     * @var string[]
-     */
-    public $sshKeys;
-    /**
-     * Optional. Name of the KMS crypto key version used to encrypt the initial
-     * passwords. The key has to have ASYMMETRIC_DECRYPT purpose. Format is `proje
-     * cts/{project}/locations/{location}/keyRings/{keyring}/cryptoKeys/{key}/cryp
-     * toKeyVersions/{version}`.
-     *
-     * @param string $kmsKeyVersion
-     */
-    public function setKmsKeyVersion($kmsKeyVersion)
+namespace Google\Service\Baremetalsolution {
+    class ReimageInstanceRequest extends \Google\Collection
     {
+        protected $collection_key = 'sshKeys';
+        /**
+         * Optional. Name of the KMS crypto key version used to encrypt the initial
+         * passwords. The key has to have ASYMMETRIC_DECRYPT purpose. Format is `proje
+         * cts/{project}/locations/{location}/keyRings/{keyring}/cryptoKeys/{key}/cryp
+         * toKeyVersions/{version}`.
+         *
+         * @var string
+         */
+        public $kmsKeyVersion;
+        /**
+         * Required. The OS image code of the image which will be used in the reimage
+         * operation.
+         *
+         * @var string
+         */
+        public $osImage;
+        /**
+         * Optional. List of SSH Keys used during reimaging an instance.
+         *
+         * @var string[]
+         */
+        public $sshKeys;
+        /**
+         * Optional. Name of the KMS crypto key version used to encrypt the initial
+         * passwords. The key has to have ASYMMETRIC_DECRYPT purpose. Format is `proje
+         * cts/{project}/locations/{location}/keyRings/{keyring}/cryptoKeys/{key}/cryp
+         * toKeyVersions/{version}`.
+         *
+         * @param string $kmsKeyVersion
+         */
+        public function setKmsKeyVersion($kmsKeyVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyVersion()
+        {
+        }
+        /**
+         * Required. The OS image code of the image which will be used in the reimage
+         * operation.
+         *
+         * @param string $osImage
+         */
+        public function setOsImage($osImage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOsImage()
+        {
+        }
+        /**
+         * Optional. List of SSH Keys used during reimaging an instance.
+         *
+         * @param string[] $sshKeys
+         */
+        public function setSshKeys($sshKeys)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSshKeys()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Baremetalsolution\ReimageInstanceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKmsKeyVersion()
-    {
-    }
-    /**
-     * Required. The OS image code of the image which will be used in the reimage
-     * operation.
-     *
-     * @param string $osImage
-     */
-    public function setOsImage($osImage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOsImage()
-    {
-    }
-    /**
-     * Optional. List of SSH Keys used during reimaging an instance.
-     *
-     * @param string[] $sshKeys
-     */
-    public function setSshKeys($sshKeys)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSshKeys()
+    class Google_Service_Baremetalsolution_ReimageInstanceRequest extends \Google\Service\Baremetalsolution\ReimageInstanceRequest
     {
     }
 }

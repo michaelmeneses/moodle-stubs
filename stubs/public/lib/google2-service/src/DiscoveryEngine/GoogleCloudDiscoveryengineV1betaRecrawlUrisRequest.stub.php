@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaRecrawlUrisRequest extends \Google\Collection
-{
-    protected $collection_key = 'uris';
-    /**
-     * @var string[]
-     */
-    public $uris;
-    /**
-     * @param string[]
-     */
-    public function setUris($uris)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaRecrawlUrisRequest extends \Google\Collection
     {
+        protected $collection_key = 'uris';
+        /**
+         * @var string[]
+         */
+        public $uris;
+        /**
+         * @param string[]
+         */
+        public function setUris($uris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUris()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaRecrawlUrisRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUris()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaRecrawlUrisRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaRecrawlUrisRequest
     {
     }
 }

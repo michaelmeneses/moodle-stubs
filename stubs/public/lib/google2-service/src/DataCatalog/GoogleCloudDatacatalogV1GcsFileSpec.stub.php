@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1GcsFileSpec extends \Google\Model
-{
-    /**
-     * Required. Full file path. Example: `gs://bucket_name/a/b.txt`.
-     *
-     * @var string
-     */
-    public $filePath;
-    protected $gcsTimestampsType = GoogleCloudDatacatalogV1SystemTimestamps::class;
-    protected $gcsTimestampsDataType = '';
-    /**
-     * Output only. File size in bytes.
-     *
-     * @var string
-     */
-    public $sizeBytes;
-    /**
-     * Required. Full file path. Example: `gs://bucket_name/a/b.txt`.
-     *
-     * @param string $filePath
-     */
-    public function setFilePath($filePath)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1GcsFileSpec extends \Google\Model
     {
+        /**
+         * Required. Full file path. Example: `gs://bucket_name/a/b.txt`.
+         *
+         * @var string
+         */
+        public $filePath;
+        protected $gcsTimestampsType = GoogleCloudDatacatalogV1SystemTimestamps::class;
+        protected $gcsTimestampsDataType = '';
+        /**
+         * Output only. File size in bytes.
+         *
+         * @var string
+         */
+        public $sizeBytes;
+        /**
+         * Required. Full file path. Example: `gs://bucket_name/a/b.txt`.
+         *
+         * @param string $filePath
+         */
+        public function setFilePath($filePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilePath()
+        {
+        }
+        /**
+         * Output only. Creation, modification, and expiration timestamps of a Cloud
+         * Storage file.
+         *
+         * @param GoogleCloudDatacatalogV1SystemTimestamps $gcsTimestamps
+         */
+        public function setGcsTimestamps(GoogleCloudDatacatalogV1SystemTimestamps $gcsTimestamps)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1SystemTimestamps
+         */
+        public function getGcsTimestamps()
+        {
+        }
+        /**
+         * Output only. File size in bytes.
+         *
+         * @param string $sizeBytes
+         */
+        public function setSizeBytes($sizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSizeBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1GcsFileSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilePath()
-    {
-    }
-    /**
-     * Output only. Creation, modification, and expiration timestamps of a Cloud
-     * Storage file.
-     *
-     * @param GoogleCloudDatacatalogV1SystemTimestamps $gcsTimestamps
-     */
-    public function setGcsTimestamps(GoogleCloudDatacatalogV1SystemTimestamps $gcsTimestamps)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1SystemTimestamps
-     */
-    public function getGcsTimestamps()
-    {
-    }
-    /**
-     * Output only. File size in bytes.
-     *
-     * @param string $sizeBytes
-     */
-    public function setSizeBytes($sizeBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSizeBytes()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1GcsFileSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1GcsFileSpec
     {
     }
 }

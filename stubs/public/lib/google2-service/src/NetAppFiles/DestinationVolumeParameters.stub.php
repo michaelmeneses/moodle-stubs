@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class DestinationVolumeParameters extends \Google\Model
-{
-    /**
-     * Description for the destination volume.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Destination volume's share name. If not specified, source volume's share
-     * name will be used.
-     *
-     * @var string
-     */
-    public $shareName;
-    /**
-     * Required. Existing destination StoragePool name.
-     *
-     * @var string
-     */
-    public $storagePool;
-    protected $tieringPolicyType = TieringPolicy::class;
-    protected $tieringPolicyDataType = '';
-    /**
-     * Desired destination volume resource id. If not specified, source volume's
-     * resource id will be used. This value must start with a lowercase letter
-     * followed by up to 62 lowercase letters, numbers, or hyphens, and cannot end
-     * with a hyphen.
-     *
-     * @var string
-     */
-    public $volumeId;
-    /**
-     * Description for the destination volume.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\NetAppFiles {
+    class DestinationVolumeParameters extends \Google\Model
     {
+        /**
+         * Description for the destination volume.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Destination volume's share name. If not specified, source volume's share
+         * name will be used.
+         *
+         * @var string
+         */
+        public $shareName;
+        /**
+         * Required. Existing destination StoragePool name.
+         *
+         * @var string
+         */
+        public $storagePool;
+        protected $tieringPolicyType = TieringPolicy::class;
+        protected $tieringPolicyDataType = '';
+        /**
+         * Desired destination volume resource id. If not specified, source volume's
+         * resource id will be used. This value must start with a lowercase letter
+         * followed by up to 62 lowercase letters, numbers, or hyphens, and cannot end
+         * with a hyphen.
+         *
+         * @var string
+         */
+        public $volumeId;
+        /**
+         * Description for the destination volume.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Destination volume's share name. If not specified, source volume's share
+         * name will be used.
+         *
+         * @param string $shareName
+         */
+        public function setShareName($shareName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShareName()
+        {
+        }
+        /**
+         * Required. Existing destination StoragePool name.
+         *
+         * @param string $storagePool
+         */
+        public function setStoragePool($storagePool)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStoragePool()
+        {
+        }
+        /**
+         * Optional. Tiering policy for the volume.
+         *
+         * @param TieringPolicy $tieringPolicy
+         */
+        public function setTieringPolicy(TieringPolicy $tieringPolicy)
+        {
+        }
+        /**
+         * @return TieringPolicy
+         */
+        public function getTieringPolicy()
+        {
+        }
+        /**
+         * Desired destination volume resource id. If not specified, source volume's
+         * resource id will be used. This value must start with a lowercase letter
+         * followed by up to 62 lowercase letters, numbers, or hyphens, and cannot end
+         * with a hyphen.
+         *
+         * @param string $volumeId
+         */
+        public function setVolumeId($volumeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVolumeId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetAppFiles\DestinationVolumeParameters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Destination volume's share name. If not specified, source volume's share
-     * name will be used.
-     *
-     * @param string $shareName
-     */
-    public function setShareName($shareName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShareName()
-    {
-    }
-    /**
-     * Required. Existing destination StoragePool name.
-     *
-     * @param string $storagePool
-     */
-    public function setStoragePool($storagePool)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStoragePool()
-    {
-    }
-    /**
-     * Optional. Tiering policy for the volume.
-     *
-     * @param TieringPolicy $tieringPolicy
-     */
-    public function setTieringPolicy(TieringPolicy $tieringPolicy)
-    {
-    }
-    /**
-     * @return TieringPolicy
-     */
-    public function getTieringPolicy()
-    {
-    }
-    /**
-     * Desired destination volume resource id. If not specified, source volume's
-     * resource id will be used. This value must start with a lowercase letter
-     * followed by up to 62 lowercase letters, numbers, or hyphens, and cannot end
-     * with a hyphen.
-     *
-     * @param string $volumeId
-     */
-    public function setVolumeId($volumeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVolumeId()
+    class Google_Service_NetAppFiles_DestinationVolumeParameters extends \Google\Service\NetAppFiles\DestinationVolumeParameters
     {
     }
 }

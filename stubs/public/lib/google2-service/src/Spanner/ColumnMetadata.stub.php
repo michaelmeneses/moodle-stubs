@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class ColumnMetadata extends \Google\Model
-{
-    /**
-     * Indicates whether the column is a primary key column.
-     *
-     * @var bool
-     */
-    public $isPrimaryKey;
-    /**
-     * Name of the column.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Ordinal position of the column based on the original table definition in
-     * the schema starting with a value of 1.
-     *
-     * @var string
-     */
-    public $ordinalPosition;
-    protected $typeType = Type::class;
-    protected $typeDataType = '';
-    /**
-     * Indicates whether the column is a primary key column.
-     *
-     * @param bool $isPrimaryKey
-     */
-    public function setIsPrimaryKey($isPrimaryKey)
+namespace Google\Service\Spanner {
+    class ColumnMetadata extends \Google\Model
     {
+        /**
+         * Indicates whether the column is a primary key column.
+         *
+         * @var bool
+         */
+        public $isPrimaryKey;
+        /**
+         * Name of the column.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Ordinal position of the column based on the original table definition in
+         * the schema starting with a value of 1.
+         *
+         * @var string
+         */
+        public $ordinalPosition;
+        protected $typeType = Type::class;
+        protected $typeDataType = '';
+        /**
+         * Indicates whether the column is a primary key column.
+         *
+         * @param bool $isPrimaryKey
+         */
+        public function setIsPrimaryKey($isPrimaryKey)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsPrimaryKey()
+        {
+        }
+        /**
+         * Name of the column.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Ordinal position of the column based on the original table definition in
+         * the schema starting with a value of 1.
+         *
+         * @param string $ordinalPosition
+         */
+        public function setOrdinalPosition($ordinalPosition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrdinalPosition()
+        {
+        }
+        /**
+         * Type of the column.
+         *
+         * @param Type $type
+         */
+        public function setType(Type $type)
+        {
+        }
+        /**
+         * @return Type
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Spanner\ColumnMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsPrimaryKey()
-    {
-    }
-    /**
-     * Name of the column.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Ordinal position of the column based on the original table definition in
-     * the schema starting with a value of 1.
-     *
-     * @param string $ordinalPosition
-     */
-    public function setOrdinalPosition($ordinalPosition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrdinalPosition()
-    {
-    }
-    /**
-     * Type of the column.
-     *
-     * @param Type $type
-     */
-    public function setType(Type $type)
-    {
-    }
-    /**
-     * @return Type
-     */
-    public function getType()
+    class Google_Service_Spanner_ColumnMetadata extends \Google\Service\Spanner\ColumnMetadata
     {
     }
 }

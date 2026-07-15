@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeatureViewDataKey extends \Google\Model
-{
-    protected $compositeKeyType = GoogleCloudAiplatformV1FeatureViewDataKeyCompositeKey::class;
-    protected $compositeKeyDataType = '';
-    /**
-     * String key to use for lookup.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * The actual Entity ID will be composed from this struct. This should match
-     * with the way ID is defined in the FeatureView spec.
-     *
-     * @param GoogleCloudAiplatformV1FeatureViewDataKeyCompositeKey $compositeKey
-     */
-    public function setCompositeKey(GoogleCloudAiplatformV1FeatureViewDataKeyCompositeKey $compositeKey)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeatureViewDataKey extends \Google\Model
     {
+        protected $compositeKeyType = GoogleCloudAiplatformV1FeatureViewDataKeyCompositeKey::class;
+        protected $compositeKeyDataType = '';
+        /**
+         * String key to use for lookup.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * The actual Entity ID will be composed from this struct. This should match
+         * with the way ID is defined in the FeatureView spec.
+         *
+         * @param GoogleCloudAiplatformV1FeatureViewDataKeyCompositeKey $compositeKey
+         */
+        public function setCompositeKey(GoogleCloudAiplatformV1FeatureViewDataKeyCompositeKey $compositeKey)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeatureViewDataKeyCompositeKey
+         */
+        public function getCompositeKey()
+        {
+        }
+        /**
+         * String key to use for lookup.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1FeatureViewDataKeyCompositeKey
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewDataKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompositeKey()
-    {
-    }
-    /**
-     * String key to use for lookup.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeatureViewDataKey extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewDataKey
     {
     }
 }

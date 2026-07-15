@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BackupforGKE;
-
-class ListBackupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $backupsType = Backup::class;
-    protected $backupsDataType = 'array';
-    /**
-     * A token which may be sent as page_token in a subsequent `ListBackups` call
-     * to retrieve the next page of results. If this field is omitted or empty,
-     * then there are no more results to return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of Backups matching the given criteria.
-     *
-     * @param Backup[] $backups
-     */
-    public function setBackups($backups)
+namespace Google\Service\BackupforGKE {
+    class ListBackupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $backupsType = Backup::class;
+        protected $backupsDataType = 'array';
+        /**
+         * A token which may be sent as page_token in a subsequent `ListBackups` call
+         * to retrieve the next page of results. If this field is omitted or empty,
+         * then there are no more results to return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of Backups matching the given criteria.
+         *
+         * @param Backup[] $backups
+         */
+        public function setBackups($backups)
+        {
+        }
+        /**
+         * @return Backup[]
+         */
+        public function getBackups()
+        {
+        }
+        /**
+         * A token which may be sent as page_token in a subsequent `ListBackups` call
+         * to retrieve the next page of results. If this field is omitted or empty,
+         * then there are no more results to return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Backup[]
+     * Runtime class alias of \Google\Service\BackupforGKE\ListBackupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackups()
-    {
-    }
-    /**
-     * A token which may be sent as page_token in a subsequent `ListBackups` call
-     * to retrieve the next page of results. If this field is omitted or empty,
-     * then there are no more results to return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_BackupforGKE_ListBackupsResponse extends \Google\Service\BackupforGKE\ListBackupsResponse
     {
     }
 }

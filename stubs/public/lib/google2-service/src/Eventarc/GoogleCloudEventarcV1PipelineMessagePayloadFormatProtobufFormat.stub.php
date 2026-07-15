@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Eventarc;
-
-class GoogleCloudEventarcV1PipelineMessagePayloadFormatProtobufFormat extends \Google\Model
-{
-    /**
-     * Optional. The entire schema definition is stored in this field.
-     *
-     * @var string
-     */
-    public $schemaDefinition;
-    /**
-     * Optional. The entire schema definition is stored in this field.
-     *
-     * @param string $schemaDefinition
-     */
-    public function setSchemaDefinition($schemaDefinition)
+namespace Google\Service\Eventarc {
+    class GoogleCloudEventarcV1PipelineMessagePayloadFormatProtobufFormat extends \Google\Model
     {
+        /**
+         * Optional. The entire schema definition is stored in this field.
+         *
+         * @var string
+         */
+        public $schemaDefinition;
+        /**
+         * Optional. The entire schema definition is stored in this field.
+         *
+         * @param string $schemaDefinition
+         */
+        public function setSchemaDefinition($schemaDefinition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchemaDefinition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Eventarc\GoogleCloudEventarcV1PipelineMessagePayloadFormatProtobufFormat registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSchemaDefinition()
+    class Google_Service_Eventarc_GoogleCloudEventarcV1PipelineMessagePayloadFormatProtobufFormat extends \Google\Service\Eventarc\GoogleCloudEventarcV1PipelineMessagePayloadFormatProtobufFormat
     {
     }
 }

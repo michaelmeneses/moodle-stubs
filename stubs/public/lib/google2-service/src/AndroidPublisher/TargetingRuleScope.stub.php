@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class TargetingRuleScope extends \Google\Model
-{
-    protected $anySubscriptionInAppType = TargetingRuleScopeAnySubscriptionInApp::class;
-    protected $anySubscriptionInAppDataType = '';
-    /**
-     * The scope of the current targeting rule is the subscription with the
-     * specified subscription ID. Must be a subscription within the same parent
-     * app.
-     *
-     * @var string
-     */
-    public $specificSubscriptionInApp;
-    protected $thisSubscriptionType = TargetingRuleScopeThisSubscription::class;
-    protected $thisSubscriptionDataType = '';
-    /**
-     * The scope of the current targeting rule is any subscription in the parent
-     * app.
-     *
-     * @param TargetingRuleScopeAnySubscriptionInApp $anySubscriptionInApp
-     */
-    public function setAnySubscriptionInApp(TargetingRuleScopeAnySubscriptionInApp $anySubscriptionInApp)
+namespace Google\Service\AndroidPublisher {
+    class TargetingRuleScope extends \Google\Model
     {
+        protected $anySubscriptionInAppType = TargetingRuleScopeAnySubscriptionInApp::class;
+        protected $anySubscriptionInAppDataType = '';
+        /**
+         * The scope of the current targeting rule is the subscription with the
+         * specified subscription ID. Must be a subscription within the same parent
+         * app.
+         *
+         * @var string
+         */
+        public $specificSubscriptionInApp;
+        protected $thisSubscriptionType = TargetingRuleScopeThisSubscription::class;
+        protected $thisSubscriptionDataType = '';
+        /**
+         * The scope of the current targeting rule is any subscription in the parent
+         * app.
+         *
+         * @param TargetingRuleScopeAnySubscriptionInApp $anySubscriptionInApp
+         */
+        public function setAnySubscriptionInApp(TargetingRuleScopeAnySubscriptionInApp $anySubscriptionInApp)
+        {
+        }
+        /**
+         * @return TargetingRuleScopeAnySubscriptionInApp
+         */
+        public function getAnySubscriptionInApp()
+        {
+        }
+        /**
+         * The scope of the current targeting rule is the subscription with the
+         * specified subscription ID. Must be a subscription within the same parent
+         * app.
+         *
+         * @param string $specificSubscriptionInApp
+         */
+        public function setSpecificSubscriptionInApp($specificSubscriptionInApp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpecificSubscriptionInApp()
+        {
+        }
+        /**
+         * The scope of the current targeting rule is the subscription in which this
+         * offer is defined.
+         *
+         * @param TargetingRuleScopeThisSubscription $thisSubscription
+         */
+        public function setThisSubscription(TargetingRuleScopeThisSubscription $thisSubscription)
+        {
+        }
+        /**
+         * @return TargetingRuleScopeThisSubscription
+         */
+        public function getThisSubscription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TargetingRuleScopeAnySubscriptionInApp
+     * Runtime class alias of \Google\Service\AndroidPublisher\TargetingRuleScope registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnySubscriptionInApp()
-    {
-    }
-    /**
-     * The scope of the current targeting rule is the subscription with the
-     * specified subscription ID. Must be a subscription within the same parent
-     * app.
-     *
-     * @param string $specificSubscriptionInApp
-     */
-    public function setSpecificSubscriptionInApp($specificSubscriptionInApp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpecificSubscriptionInApp()
-    {
-    }
-    /**
-     * The scope of the current targeting rule is the subscription in which this
-     * offer is defined.
-     *
-     * @param TargetingRuleScopeThisSubscription $thisSubscription
-     */
-    public function setThisSubscription(TargetingRuleScopeThisSubscription $thisSubscription)
-    {
-    }
-    /**
-     * @return TargetingRuleScopeThisSubscription
-     */
-    public function getThisSubscription()
+    class Google_Service_AndroidPublisher_TargetingRuleScope extends \Google\Service\AndroidPublisher\TargetingRuleScope
     {
     }
 }

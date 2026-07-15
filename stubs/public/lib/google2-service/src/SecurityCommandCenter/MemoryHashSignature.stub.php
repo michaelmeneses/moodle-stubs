@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class MemoryHashSignature extends \Google\Collection
-{
-    protected $collection_key = 'detections';
-    /**
-     * The binary family.
-     *
-     * @var string
-     */
-    public $binaryFamily;
-    protected $detectionsType = Detection::class;
-    protected $detectionsDataType = 'array';
-    /**
-     * The binary family.
-     *
-     * @param string $binaryFamily
-     */
-    public function setBinaryFamily($binaryFamily)
+namespace Google\Service\SecurityCommandCenter {
+    class MemoryHashSignature extends \Google\Collection
     {
+        protected $collection_key = 'detections';
+        /**
+         * The binary family.
+         *
+         * @var string
+         */
+        public $binaryFamily;
+        protected $detectionsType = Detection::class;
+        protected $detectionsDataType = 'array';
+        /**
+         * The binary family.
+         *
+         * @param string $binaryFamily
+         */
+        public function setBinaryFamily($binaryFamily)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBinaryFamily()
+        {
+        }
+        /**
+         * The list of memory hash detections contributing to the binary family match.
+         *
+         * @param Detection[] $detections
+         */
+        public function setDetections($detections)
+        {
+        }
+        /**
+         * @return Detection[]
+         */
+        public function getDetections()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\MemoryHashSignature registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBinaryFamily()
-    {
-    }
-    /**
-     * The list of memory hash detections contributing to the binary family match.
-     *
-     * @param Detection[] $detections
-     */
-    public function setDetections($detections)
-    {
-    }
-    /**
-     * @return Detection[]
-     */
-    public function getDetections()
+    class Google_Service_SecurityCommandCenter_MemoryHashSignature extends \Google\Service\SecurityCommandCenter\MemoryHashSignature
     {
     }
 }

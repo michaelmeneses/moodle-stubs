@@ -21,94 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles\Resource;
-
-/**
- * The "hostGroups" collection of methods.
- * Typical usage is:
- *  <code>
- *   $netappService = new Google\Service\NetAppFiles(...);
- *   $hostGroups = $netappService->projects_locations_hostGroups;
- *  </code>
- */
-class ProjectsLocationsHostGroups extends \Google\Service\Resource
-{
+namespace Google\Service\NetAppFiles\Resource {
+    use Google\Service\NetAppFiles\HostGroup;
+    use Google\Service\NetAppFiles\ListHostGroupsResponse;
+    use Google\Service\NetAppFiles\Operation;
     /**
-     * Creates a new host group. (hostGroups.create)
-     *
-     * @param string $parent Required. Parent value for CreateHostGroupRequest
-     * @param HostGroup $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string hostGroupId Required. ID of the host group to create. Must
-     * be unique within the parent resource. Must contain only letters, numbers, and
-     * hyphen, with the first character a letter or underscore, the last a letter or
-     * underscore or a number, and a 63 character maximum.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "hostGroups" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $netappService = new Google\Service\NetAppFiles(...);
+     *   $hostGroups = $netappService->projects_locations_hostGroups;
+     *  </code>
      */
-    public function create($parent, HostGroup $postBody, $optParams = [])
+    class ProjectsLocationsHostGroups extends \Google\Service\Resource
     {
+        /**
+         * Creates a new host group. (hostGroups.create)
+         *
+         * @param string $parent Required. Parent value for CreateHostGroupRequest
+         * @param HostGroup $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string hostGroupId Required. ID of the host group to create. Must
+         * be unique within the parent resource. Must contain only letters, numbers, and
+         * hyphen, with the first character a letter or underscore, the last a letter or
+         * underscore or a number, and a 63 character maximum.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, HostGroup $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a host group. (hostGroups.delete)
+         *
+         * @param string $name Required. The resource name of the host group. Format: `p
+         * rojects/{project_number}/locations/{location_id}/hostGroups/{host_group_id}`.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns details of the specified host group. (hostGroups.get)
+         *
+         * @param string $name Required. The resource name of the host group. Format: `p
+         * rojects/{project_number}/locations/{location_id}/hostGroups/{host_group_id}`.
+         * @param array $optParams Optional parameters.
+         * @return HostGroup
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns a list of host groups in a `location`. Use `-` as location to list
+         * host groups across all locations.
+         * (hostGroups.listProjectsLocationsHostGroups)
+         *
+         * @param string $parent Required. Parent value for ListHostGroupsRequest
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filter to apply to the request.
+         * @opt_param string orderBy Optional. Hint for how to order the results
+         * @opt_param int pageSize Optional. Requested page size. Server may return
+         * fewer items than requested. If unspecified, the server will pick an
+         * appropriate default.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * the server should return.
+         * @return ListHostGroupsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsHostGroups($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing host group. (hostGroups.patch)
+         *
+         * @param string $name Identifier. The resource name of the host group. Format:
+         * `projects/{project_number}/locations/{location_id}/hostGroups/{host_group_id}
+         * `.
+         * @param HostGroup $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. The list of fields to update.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, HostGroup $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a host group. (hostGroups.delete)
-     *
-     * @param string $name Required. The resource name of the host group. Format: `p
-     * rojects/{project_number}/locations/{location_id}/hostGroups/{host_group_id}`.
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\NetAppFiles\Resource\ProjectsLocationsHostGroups registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns details of the specified host group. (hostGroups.get)
-     *
-     * @param string $name Required. The resource name of the host group. Format: `p
-     * rojects/{project_number}/locations/{location_id}/hostGroups/{host_group_id}`.
-     * @param array $optParams Optional parameters.
-     * @return HostGroup
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns a list of host groups in a `location`. Use `-` as location to list
-     * host groups across all locations.
-     * (hostGroups.listProjectsLocationsHostGroups)
-     *
-     * @param string $parent Required. Parent value for ListHostGroupsRequest
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filter to apply to the request.
-     * @opt_param string orderBy Optional. Hint for how to order the results
-     * @opt_param int pageSize Optional. Requested page size. Server may return
-     * fewer items than requested. If unspecified, the server will pick an
-     * appropriate default.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * the server should return.
-     * @return ListHostGroupsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsHostGroups($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing host group. (hostGroups.patch)
-     *
-     * @param string $name Identifier. The resource name of the host group. Format:
-     * `projects/{project_number}/locations/{location_id}/hostGroups/{host_group_id}
-     * `.
-     * @param HostGroup $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. The list of fields to update.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, HostGroup $postBody, $optParams = [])
+    class Google_Service_NetAppFiles_Resource_ProjectsLocationsHostGroups extends \Google\Service\NetAppFiles\Resource\ProjectsLocationsHostGroups
     {
     }
 }

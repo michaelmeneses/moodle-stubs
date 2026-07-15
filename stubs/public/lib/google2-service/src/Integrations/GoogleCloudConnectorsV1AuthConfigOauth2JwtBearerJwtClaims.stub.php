@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudConnectorsV1AuthConfigOauth2JwtBearerJwtClaims extends \Google\Model
-{
-    /**
-     * Optional. Value for the "aud" claim.
-     *
-     * @var string
-     */
-    public $audience;
-    /**
-     * Optional. Value for the "iss" claim.
-     *
-     * @var string
-     */
-    public $issuer;
-    /**
-     * Optional. Value for the "sub" claim.
-     *
-     * @var string
-     */
-    public $subject;
-    /**
-     * Optional. Value for the "aud" claim.
-     *
-     * @param string $audience
-     */
-    public function setAudience($audience)
+namespace Google\Service\Integrations {
+    class GoogleCloudConnectorsV1AuthConfigOauth2JwtBearerJwtClaims extends \Google\Model
     {
+        /**
+         * Optional. Value for the "aud" claim.
+         *
+         * @var string
+         */
+        public $audience;
+        /**
+         * Optional. Value for the "iss" claim.
+         *
+         * @var string
+         */
+        public $issuer;
+        /**
+         * Optional. Value for the "sub" claim.
+         *
+         * @var string
+         */
+        public $subject;
+        /**
+         * Optional. Value for the "aud" claim.
+         *
+         * @param string $audience
+         */
+        public function setAudience($audience)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAudience()
+        {
+        }
+        /**
+         * Optional. Value for the "iss" claim.
+         *
+         * @param string $issuer
+         */
+        public function setIssuer($issuer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssuer()
+        {
+        }
+        /**
+         * Optional. Value for the "sub" claim.
+         *
+         * @param string $subject
+         */
+        public function setSubject($subject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudConnectorsV1AuthConfigOauth2JwtBearerJwtClaims registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAudience()
-    {
-    }
-    /**
-     * Optional. Value for the "iss" claim.
-     *
-     * @param string $issuer
-     */
-    public function setIssuer($issuer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIssuer()
-    {
-    }
-    /**
-     * Optional. Value for the "sub" claim.
-     *
-     * @param string $subject
-     */
-    public function setSubject($subject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubject()
+    class Google_Service_Integrations_GoogleCloudConnectorsV1AuthConfigOauth2JwtBearerJwtClaims extends \Google\Service\Integrations\GoogleCloudConnectorsV1AuthConfigOauth2JwtBearerJwtClaims
     {
     }
 }

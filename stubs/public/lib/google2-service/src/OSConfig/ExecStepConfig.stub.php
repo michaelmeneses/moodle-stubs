@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class ExecStepConfig extends \Google\Collection
-{
-    protected $collection_key = 'allowedSuccessCodes';
-    /**
-     * @var int[]
-     */
-    public $allowedSuccessCodes;
-    protected $gcsObjectType = GcsObject::class;
-    protected $gcsObjectDataType = '';
-    /**
-     * @var string
-     */
-    public $interpreter;
-    /**
-     * @var string
-     */
-    public $localPath;
-    /**
-     * @param int[]
-     */
-    public function setAllowedSuccessCodes($allowedSuccessCodes)
+namespace Google\Service\OSConfig {
+    class ExecStepConfig extends \Google\Collection
     {
+        protected $collection_key = 'allowedSuccessCodes';
+        /**
+         * @var int[]
+         */
+        public $allowedSuccessCodes;
+        protected $gcsObjectType = GcsObject::class;
+        protected $gcsObjectDataType = '';
+        /**
+         * @var string
+         */
+        public $interpreter;
+        /**
+         * @var string
+         */
+        public $localPath;
+        /**
+         * @param int[]
+         */
+        public function setAllowedSuccessCodes($allowedSuccessCodes)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getAllowedSuccessCodes()
+        {
+        }
+        /**
+         * @param GcsObject
+         */
+        public function setGcsObject(GcsObject $gcsObject)
+        {
+        }
+        /**
+         * @return GcsObject
+         */
+        public function getGcsObject()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInterpreter($interpreter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInterpreter()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLocalPath($localPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int[]
+     * Runtime class alias of \Google\Service\OSConfig\ExecStepConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedSuccessCodes()
-    {
-    }
-    /**
-     * @param GcsObject
-     */
-    public function setGcsObject(GcsObject $gcsObject)
-    {
-    }
-    /**
-     * @return GcsObject
-     */
-    public function getGcsObject()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInterpreter($interpreter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInterpreter()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLocalPath($localPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocalPath()
+    class Google_Service_OSConfig_ExecStepConfig extends \Google\Service\OSConfig\ExecStepConfig
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SnapshotSettings extends \Google\Model
-{
-    protected $storageLocationType = SnapshotSettingsStorageLocationSettings::class;
-    protected $storageLocationDataType = '';
-    /**
-     * Policy of which storage location is going to be resolved, and additional
-     * data that particularizes how the policy is going to be carried out.
-     *
-     * @param SnapshotSettingsStorageLocationSettings $storageLocation
-     */
-    public function setStorageLocation(SnapshotSettingsStorageLocationSettings $storageLocation)
+namespace Google\Service\Compute {
+    class SnapshotSettings extends \Google\Model
     {
+        protected $storageLocationType = SnapshotSettingsStorageLocationSettings::class;
+        protected $storageLocationDataType = '';
+        /**
+         * Policy of which storage location is going to be resolved, and additional
+         * data that particularizes how the policy is going to be carried out.
+         *
+         * @param SnapshotSettingsStorageLocationSettings $storageLocation
+         */
+        public function setStorageLocation(SnapshotSettingsStorageLocationSettings $storageLocation)
+        {
+        }
+        /**
+         * @return SnapshotSettingsStorageLocationSettings
+         */
+        public function getStorageLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SnapshotSettingsStorageLocationSettings
+     * Runtime class alias of \Google\Service\Compute\SnapshotSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStorageLocation()
+    class Google_Service_Compute_SnapshotSettings extends \Google\Service\Compute\SnapshotSettings
     {
     }
 }

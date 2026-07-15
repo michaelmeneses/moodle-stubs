@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1Sku extends \Google\Model
-{
-    protected $marketingInfoType = GoogleCloudChannelV1MarketingInfo::class;
-    protected $marketingInfoDataType = '';
-    /**
-     * Resource Name of the SKU. Format: products/{product_id}/skus/{sku_id}
-     *
-     * @var string
-     */
-    public $name;
-    protected $productType = GoogleCloudChannelV1Product::class;
-    protected $productDataType = '';
-    /**
-     * Marketing information for the SKU.
-     *
-     * @param GoogleCloudChannelV1MarketingInfo $marketingInfo
-     */
-    public function setMarketingInfo(GoogleCloudChannelV1MarketingInfo $marketingInfo)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1Sku extends \Google\Model
     {
+        protected $marketingInfoType = GoogleCloudChannelV1MarketingInfo::class;
+        protected $marketingInfoDataType = '';
+        /**
+         * Resource Name of the SKU. Format: products/{product_id}/skus/{sku_id}
+         *
+         * @var string
+         */
+        public $name;
+        protected $productType = GoogleCloudChannelV1Product::class;
+        protected $productDataType = '';
+        /**
+         * Marketing information for the SKU.
+         *
+         * @param GoogleCloudChannelV1MarketingInfo $marketingInfo
+         */
+        public function setMarketingInfo(GoogleCloudChannelV1MarketingInfo $marketingInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1MarketingInfo
+         */
+        public function getMarketingInfo()
+        {
+        }
+        /**
+         * Resource Name of the SKU. Format: products/{product_id}/skus/{sku_id}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Product the SKU is associated with.
+         *
+         * @param GoogleCloudChannelV1Product $product
+         */
+        public function setProduct(GoogleCloudChannelV1Product $product)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1Product
+         */
+        public function getProduct()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1MarketingInfo
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1Sku registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMarketingInfo()
-    {
-    }
-    /**
-     * Resource Name of the SKU. Format: products/{product_id}/skus/{sku_id}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Product the SKU is associated with.
-     *
-     * @param GoogleCloudChannelV1Product $product
-     */
-    public function setProduct(GoogleCloudChannelV1Product $product)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1Product
-     */
-    public function getProduct()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1Sku extends \Google\Service\Cloudchannel\GoogleCloudChannelV1Sku
     {
     }
 }

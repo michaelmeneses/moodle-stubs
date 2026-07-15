@@ -21,43 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer\Resource;
-
-/**
- * The "marketplacenotes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adexchangebuyerService = new Google\Service\AdExchangeBuyer(...);
- *   $marketplacenotes = $adexchangebuyerService->marketplacenotes;
- *  </code>
- */
-class Marketplacenotes extends \Google\Service\Resource
-{
+namespace Google\Service\AdExchangeBuyer\Resource {
+    use Google\Service\AdExchangeBuyer\AddOrderNotesRequest;
+    use Google\Service\AdExchangeBuyer\AddOrderNotesResponse;
+    use Google\Service\AdExchangeBuyer\GetOrderNotesResponse;
     /**
-     * Add notes to the proposal (marketplacenotes.insert)
-     *
-     * @param string $proposalId The proposalId to add notes for.
-     * @param AddOrderNotesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return AddOrderNotesResponse
+     * The "marketplacenotes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adexchangebuyerService = new Google\Service\AdExchangeBuyer(...);
+     *   $marketplacenotes = $adexchangebuyerService->marketplacenotes;
+     *  </code>
      */
-    public function insert($proposalId, AddOrderNotesRequest $postBody, $optParams = [])
+    class Marketplacenotes extends \Google\Service\Resource
     {
+        /**
+         * Add notes to the proposal (marketplacenotes.insert)
+         *
+         * @param string $proposalId The proposalId to add notes for.
+         * @param AddOrderNotesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return AddOrderNotesResponse
+         */
+        public function insert($proposalId, AddOrderNotesRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Get all the notes associated with a proposal
+         * (marketplacenotes.listMarketplacenotes)
+         *
+         * @param string $proposalId The proposalId to get notes for. To search across
+         * all proposals specify order_id = '-' as part of the URL.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string pqlQuery Query string to retrieve specific notes. To search
+         * the text contents of notes, please use syntax like "WHERE note.note = "foo"
+         * or "WHERE note.note LIKE "%bar%"
+         * @return GetOrderNotesResponse
+         */
+        public function listMarketplacenotes($proposalId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Get all the notes associated with a proposal
-     * (marketplacenotes.listMarketplacenotes)
-     *
-     * @param string $proposalId The proposalId to get notes for. To search across
-     * all proposals specify order_id = '-' as part of the URL.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string pqlQuery Query string to retrieve specific notes. To search
-     * the text contents of notes, please use syntax like "WHERE note.note = "foo"
-     * or "WHERE note.note LIKE "%bar%"
-     * @return GetOrderNotesResponse
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\Resource\Marketplacenotes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listMarketplacenotes($proposalId, $optParams = [])
+    class Google_Service_AdExchangeBuyer_Resource_Marketplacenotes extends \Google\Service\AdExchangeBuyer\Resource\Marketplacenotes
     {
     }
 }

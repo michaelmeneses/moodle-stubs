@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1Alias extends \Google\Model
-{
-    /**
-     * Alias type is not specified.
-     */
-    public const TYPE_ALIAS_TYPE_UNSPECIFIED = 'ALIAS_TYPE_UNSPECIFIED';
-    /**
-     * Certificate.
-     */
-    public const TYPE_CERT = 'CERT';
-    /**
-     * Key/certificate pair.
-     */
-    public const TYPE_KEY_CERT = 'KEY_CERT';
-    /**
-     * Resource ID for this alias. Values must match the regular expression
-     * `[^/]{1,255}`.
-     *
-     * @var string
-     */
-    public $alias;
-    protected $certsInfoType = GoogleCloudApigeeV1Certificate::class;
-    protected $certsInfoDataType = '';
-    /**
-     * Type of alias.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Resource ID for this alias. Values must match the regular expression
-     * `[^/]{1,255}`.
-     *
-     * @param string $alias
-     */
-    public function setAlias($alias)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1Alias extends \Google\Model
     {
+        /**
+         * Alias type is not specified.
+         */
+        public const TYPE_ALIAS_TYPE_UNSPECIFIED = 'ALIAS_TYPE_UNSPECIFIED';
+        /**
+         * Certificate.
+         */
+        public const TYPE_CERT = 'CERT';
+        /**
+         * Key/certificate pair.
+         */
+        public const TYPE_KEY_CERT = 'KEY_CERT';
+        /**
+         * Resource ID for this alias. Values must match the regular expression
+         * `[^/]{1,255}`.
+         *
+         * @var string
+         */
+        public $alias;
+        protected $certsInfoType = GoogleCloudApigeeV1Certificate::class;
+        protected $certsInfoDataType = '';
+        /**
+         * Type of alias.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Resource ID for this alias. Values must match the regular expression
+         * `[^/]{1,255}`.
+         *
+         * @param string $alias
+         */
+        public function setAlias($alias)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAlias()
+        {
+        }
+        /**
+         * Chain of certificates under this alias.
+         *
+         * @param GoogleCloudApigeeV1Certificate $certsInfo
+         */
+        public function setCertsInfo(GoogleCloudApigeeV1Certificate $certsInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Certificate
+         */
+        public function getCertsInfo()
+        {
+        }
+        /**
+         * Type of alias.
+         *
+         * Accepted values: ALIAS_TYPE_UNSPECIFIED, CERT, KEY_CERT
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1Alias registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlias()
-    {
-    }
-    /**
-     * Chain of certificates under this alias.
-     *
-     * @param GoogleCloudApigeeV1Certificate $certsInfo
-     */
-    public function setCertsInfo(GoogleCloudApigeeV1Certificate $certsInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1Certificate
-     */
-    public function getCertsInfo()
-    {
-    }
-    /**
-     * Type of alias.
-     *
-     * Accepted values: ALIAS_TYPE_UNSPECIFIED, CERT, KEY_CERT
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Apigee_GoogleCloudApigeeV1Alias extends \Google\Service\Apigee\GoogleCloudApigeeV1Alias
     {
     }
 }

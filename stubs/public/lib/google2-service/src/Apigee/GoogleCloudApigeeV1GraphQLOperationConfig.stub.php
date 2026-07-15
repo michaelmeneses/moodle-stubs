@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1GraphQLOperationConfig extends \Google\Collection
-{
-    protected $collection_key = 'operations';
-    /**
-     * Required. Name of the API proxy endpoint or remote service with which the
-     * GraphQL operation and quota are associated.
-     *
-     * @var string
-     */
-    public $apiSource;
-    protected $attributesType = GoogleCloudApigeeV1Attribute::class;
-    protected $attributesDataType = 'array';
-    protected $operationsType = GoogleCloudApigeeV1GraphQLOperation::class;
-    protected $operationsDataType = 'array';
-    protected $quotaType = GoogleCloudApigeeV1Quota::class;
-    protected $quotaDataType = '';
-    /**
-     * Required. Name of the API proxy endpoint or remote service with which the
-     * GraphQL operation and quota are associated.
-     *
-     * @param string $apiSource
-     */
-    public function setApiSource($apiSource)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1GraphQLOperationConfig extends \Google\Collection
     {
+        protected $collection_key = 'operations';
+        /**
+         * Required. Name of the API proxy endpoint or remote service with which the
+         * GraphQL operation and quota are associated.
+         *
+         * @var string
+         */
+        public $apiSource;
+        protected $attributesType = GoogleCloudApigeeV1Attribute::class;
+        protected $attributesDataType = 'array';
+        protected $operationsType = GoogleCloudApigeeV1GraphQLOperation::class;
+        protected $operationsDataType = 'array';
+        protected $quotaType = GoogleCloudApigeeV1Quota::class;
+        protected $quotaDataType = '';
+        /**
+         * Required. Name of the API proxy endpoint or remote service with which the
+         * GraphQL operation and quota are associated.
+         *
+         * @param string $apiSource
+         */
+        public function setApiSource($apiSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiSource()
+        {
+        }
+        /**
+         * Custom attributes associated with the operation.
+         *
+         * @param GoogleCloudApigeeV1Attribute[] $attributes
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Attribute[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * Required. List of GraphQL name/operation type pairs for the proxy or remote
+         * service to which quota will be applied. If only operation types are
+         * specified, the quota will be applied to all GraphQL requests irrespective
+         * of the GraphQL name. **Note**: Currently, you can specify only a single
+         * GraphQLOperation. Specifying more than one will cause the operation to
+         * fail.
+         *
+         * @param GoogleCloudApigeeV1GraphQLOperation[] $operations
+         */
+        public function setOperations($operations)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1GraphQLOperation[]
+         */
+        public function getOperations()
+        {
+        }
+        /**
+         * Quota parameters to be enforced for the resources, methods, and API source
+         * combination. If none are specified, quota enforcement will not be done.
+         *
+         * @param GoogleCloudApigeeV1Quota $quota
+         */
+        public function setQuota(GoogleCloudApigeeV1Quota $quota)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Quota
+         */
+        public function getQuota()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1GraphQLOperationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiSource()
-    {
-    }
-    /**
-     * Custom attributes associated with the operation.
-     *
-     * @param GoogleCloudApigeeV1Attribute[] $attributes
-     */
-    public function setAttributes($attributes)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1Attribute[]
-     */
-    public function getAttributes()
-    {
-    }
-    /**
-     * Required. List of GraphQL name/operation type pairs for the proxy or remote
-     * service to which quota will be applied. If only operation types are
-     * specified, the quota will be applied to all GraphQL requests irrespective
-     * of the GraphQL name. **Note**: Currently, you can specify only a single
-     * GraphQLOperation. Specifying more than one will cause the operation to
-     * fail.
-     *
-     * @param GoogleCloudApigeeV1GraphQLOperation[] $operations
-     */
-    public function setOperations($operations)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1GraphQLOperation[]
-     */
-    public function getOperations()
-    {
-    }
-    /**
-     * Quota parameters to be enforced for the resources, methods, and API source
-     * combination. If none are specified, quota enforcement will not be done.
-     *
-     * @param GoogleCloudApigeeV1Quota $quota
-     */
-    public function setQuota(GoogleCloudApigeeV1Quota $quota)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1Quota
-     */
-    public function getQuota()
+    class Google_Service_Apigee_GoogleCloudApigeeV1GraphQLOperationConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1GraphQLOperationConfig
     {
     }
 }

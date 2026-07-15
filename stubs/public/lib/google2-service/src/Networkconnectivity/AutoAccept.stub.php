@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class AutoAccept extends \Google\Collection
-{
-    protected $collection_key = 'autoAcceptProjects';
-    /**
-     * Optional. A list of project ids or project numbers for which you want to
-     * enable auto-accept. The auto-accept setting is applied to spokes being
-     * created or updated in these projects.
-     *
-     * @var string[]
-     */
-    public $autoAcceptProjects;
-    /**
-     * Optional. A list of project ids or project numbers for which you want to
-     * enable auto-accept. The auto-accept setting is applied to spokes being
-     * created or updated in these projects.
-     *
-     * @param string[] $autoAcceptProjects
-     */
-    public function setAutoAcceptProjects($autoAcceptProjects)
+namespace Google\Service\Networkconnectivity {
+    class AutoAccept extends \Google\Collection
     {
+        protected $collection_key = 'autoAcceptProjects';
+        /**
+         * Optional. A list of project ids or project numbers for which you want to
+         * enable auto-accept. The auto-accept setting is applied to spokes being
+         * created or updated in these projects.
+         *
+         * @var string[]
+         */
+        public $autoAcceptProjects;
+        /**
+         * Optional. A list of project ids or project numbers for which you want to
+         * enable auto-accept. The auto-accept setting is applied to spokes being
+         * created or updated in these projects.
+         *
+         * @param string[] $autoAcceptProjects
+         */
+        public function setAutoAcceptProjects($autoAcceptProjects)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAutoAcceptProjects()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Networkconnectivity\AutoAccept registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoAcceptProjects()
+    class Google_Service_Networkconnectivity_AutoAccept extends \Google\Service\Networkconnectivity\AutoAccept
     {
     }
 }

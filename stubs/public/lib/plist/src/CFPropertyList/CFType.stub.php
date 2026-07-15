@@ -50,6 +50,9 @@
  */
 namespace CFPropertyList;
 
+use DOMDocument;
+use Iterator;
+use ArrayAccess;
 /**
  *Base-Class of all CFTypes used by CFPropertyList.
  * @example example-create-01.php Using the CFPropertyList API

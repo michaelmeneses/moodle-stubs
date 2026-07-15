@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1RunContinuousTestResponse extends \Google\Model
-{
-    protected $continuousTestResultType = GoogleCloudDialogflowCxV3beta1ContinuousTestResult::class;
-    protected $continuousTestResultDataType = '';
-    /**
-     * The result for a continuous test run.
-     *
-     * @param GoogleCloudDialogflowCxV3beta1ContinuousTestResult $continuousTestResult
-     */
-    public function setContinuousTestResult(GoogleCloudDialogflowCxV3beta1ContinuousTestResult $continuousTestResult)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1RunContinuousTestResponse extends \Google\Model
     {
+        protected $continuousTestResultType = GoogleCloudDialogflowCxV3beta1ContinuousTestResult::class;
+        protected $continuousTestResultDataType = '';
+        /**
+         * The result for a continuous test run.
+         *
+         * @param GoogleCloudDialogflowCxV3beta1ContinuousTestResult $continuousTestResult
+         */
+        public function setContinuousTestResult(GoogleCloudDialogflowCxV3beta1ContinuousTestResult $continuousTestResult)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3beta1ContinuousTestResult
+         */
+        public function getContinuousTestResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3beta1ContinuousTestResult
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1RunContinuousTestResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContinuousTestResult()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1RunContinuousTestResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1RunContinuousTestResponse
     {
     }
 }

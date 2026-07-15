@@ -21,30 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy\Resource;
-
-/**
- * The "policies" collection of methods.
- * Typical usage is:
- *  <code>
- *   $chromepolicyService = new Google\Service\ChromePolicy(...);
- *   $policies = $chromepolicyService->customers_policies;
- *  </code>
- */
-class CustomersPolicies extends \Google\Service\Resource
-{
+namespace Google\Service\ChromePolicy\Resource {
+    use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1ResolveRequest;
+    use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1ResolveResponse;
     /**
-     * Gets the resolved policy values for a list of policies that match a search
-     * query. (policies.resolve)
-     *
-     * @param string $customer ID of the G Suite account or literal "my_customer"
-     * for the customer associated to the request.
-     * @param GoogleChromePolicyVersionsV1ResolveRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleChromePolicyVersionsV1ResolveResponse
-     * @throws \Google\Service\Exception
+     * The "policies" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $chromepolicyService = new Google\Service\ChromePolicy(...);
+     *   $policies = $chromepolicyService->customers_policies;
+     *  </code>
      */
-    public function resolve($customer, GoogleChromePolicyVersionsV1ResolveRequest $postBody, $optParams = [])
+    class CustomersPolicies extends \Google\Service\Resource
+    {
+        /**
+         * Gets the resolved policy values for a list of policies that match a search
+         * query. (policies.resolve)
+         *
+         * @param string $customer ID of the G Suite account or literal "my_customer"
+         * for the customer associated to the request.
+         * @param GoogleChromePolicyVersionsV1ResolveRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleChromePolicyVersionsV1ResolveResponse
+         * @throws \Google\Service\Exception
+         */
+        public function resolve($customer, GoogleChromePolicyVersionsV1ResolveRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ChromePolicy\Resource\CustomersPolicies registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ChromePolicy_Resource_CustomersPolicies extends \Google\Service\ChromePolicy\Resource\CustomersPolicies
     {
     }
 }

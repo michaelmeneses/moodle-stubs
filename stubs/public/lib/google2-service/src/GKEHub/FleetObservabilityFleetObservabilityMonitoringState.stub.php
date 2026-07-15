@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class FleetObservabilityFleetObservabilityMonitoringState extends \Google\Model
-{
-    protected $stateType = FleetObservabilityFleetObservabilityBaseFeatureState::class;
-    protected $stateDataType = '';
-    /**
-     * @param FleetObservabilityFleetObservabilityBaseFeatureState
-     */
-    public function setState(FleetObservabilityFleetObservabilityBaseFeatureState $state)
+namespace Google\Service\GKEHub {
+    class FleetObservabilityFleetObservabilityMonitoringState extends \Google\Model
     {
+        protected $stateType = FleetObservabilityFleetObservabilityBaseFeatureState::class;
+        protected $stateDataType = '';
+        /**
+         * @param FleetObservabilityFleetObservabilityBaseFeatureState
+         */
+        public function setState(FleetObservabilityFleetObservabilityBaseFeatureState $state)
+        {
+        }
+        /**
+         * @return FleetObservabilityFleetObservabilityBaseFeatureState
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FleetObservabilityFleetObservabilityBaseFeatureState
+     * Runtime class alias of \Google\Service\GKEHub\FleetObservabilityFleetObservabilityMonitoringState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getState()
+    class Google_Service_GKEHub_FleetObservabilityFleetObservabilityMonitoringState extends \Google\Service\GKEHub\FleetObservabilityFleetObservabilityMonitoringState
     {
     }
 }

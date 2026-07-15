@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1AugmentPromptResponse extends \Google\Collection
-{
-    protected $collection_key = 'facts';
-    protected $augmentedPromptType = GoogleCloudAiplatformV1Content::class;
-    protected $augmentedPromptDataType = 'array';
-    protected $factsType = GoogleCloudAiplatformV1Fact::class;
-    protected $factsDataType = 'array';
-    /**
-     * Augmented prompt, only text format is supported for now.
-     *
-     * @param GoogleCloudAiplatformV1Content[] $augmentedPrompt
-     */
-    public function setAugmentedPrompt($augmentedPrompt)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1AugmentPromptResponse extends \Google\Collection
     {
+        protected $collection_key = 'facts';
+        protected $augmentedPromptType = GoogleCloudAiplatformV1Content::class;
+        protected $augmentedPromptDataType = 'array';
+        protected $factsType = GoogleCloudAiplatformV1Fact::class;
+        protected $factsDataType = 'array';
+        /**
+         * Augmented prompt, only text format is supported for now.
+         *
+         * @param GoogleCloudAiplatformV1Content[] $augmentedPrompt
+         */
+        public function setAugmentedPrompt($augmentedPrompt)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Content[]
+         */
+        public function getAugmentedPrompt()
+        {
+        }
+        /**
+         * Retrieved facts from RAG data sources.
+         *
+         * @param GoogleCloudAiplatformV1Fact[] $facts
+         */
+        public function setFacts($facts)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Fact[]
+         */
+        public function getFacts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Content[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1AugmentPromptResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAugmentedPrompt()
-    {
-    }
-    /**
-     * Retrieved facts from RAG data sources.
-     *
-     * @param GoogleCloudAiplatformV1Fact[] $facts
-     */
-    public function setFacts($facts)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1Fact[]
-     */
-    public function getFacts()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1AugmentPromptResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1AugmentPromptResponse
     {
     }
 }

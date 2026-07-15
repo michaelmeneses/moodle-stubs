@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1MediaInfo extends \Google\Model
-{
-    /**
-     * The media progress time in seconds, if applicable. For example, if the end
-     * user has finished 90 seconds of a playback video, then
-     * MediaInfo.media_progress_duration.seconds should be set to 90.
-     *
-     * @var string
-     */
-    public $mediaProgressDuration;
-    /**
-     * Media progress should be computed using only the media_progress_duration
-     * relative to the media total length. This value must be between `[0, 1.0]`
-     * inclusive. If this is not a playback or the progress cannot be computed
-     * (e.g. ongoing livestream), this field should be unset.
-     *
-     * @var float
-     */
-    public $mediaProgressPercentage;
-    /**
-     * The media progress time in seconds, if applicable. For example, if the end
-     * user has finished 90 seconds of a playback video, then
-     * MediaInfo.media_progress_duration.seconds should be set to 90.
-     *
-     * @param string $mediaProgressDuration
-     */
-    public function setMediaProgressDuration($mediaProgressDuration)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1MediaInfo extends \Google\Model
     {
+        /**
+         * The media progress time in seconds, if applicable. For example, if the end
+         * user has finished 90 seconds of a playback video, then
+         * MediaInfo.media_progress_duration.seconds should be set to 90.
+         *
+         * @var string
+         */
+        public $mediaProgressDuration;
+        /**
+         * Media progress should be computed using only the media_progress_duration
+         * relative to the media total length. This value must be between `[0, 1.0]`
+         * inclusive. If this is not a playback or the progress cannot be computed
+         * (e.g. ongoing livestream), this field should be unset.
+         *
+         * @var float
+         */
+        public $mediaProgressPercentage;
+        /**
+         * The media progress time in seconds, if applicable. For example, if the end
+         * user has finished 90 seconds of a playback video, then
+         * MediaInfo.media_progress_duration.seconds should be set to 90.
+         *
+         * @param string $mediaProgressDuration
+         */
+        public function setMediaProgressDuration($mediaProgressDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMediaProgressDuration()
+        {
+        }
+        /**
+         * Media progress should be computed using only the media_progress_duration
+         * relative to the media total length. This value must be between `[0, 1.0]`
+         * inclusive. If this is not a playback or the progress cannot be computed
+         * (e.g. ongoing livestream), this field should be unset.
+         *
+         * @param float $mediaProgressPercentage
+         */
+        public function setMediaProgressPercentage($mediaProgressPercentage)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMediaProgressPercentage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1MediaInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMediaProgressDuration()
-    {
-    }
-    /**
-     * Media progress should be computed using only the media_progress_duration
-     * relative to the media total length. This value must be between `[0, 1.0]`
-     * inclusive. If this is not a playback or the progress cannot be computed
-     * (e.g. ongoing livestream), this field should be unset.
-     *
-     * @param float $mediaProgressPercentage
-     */
-    public function setMediaProgressPercentage($mediaProgressPercentage)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getMediaProgressPercentage()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1MediaInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1MediaInfo
     {
     }
 }

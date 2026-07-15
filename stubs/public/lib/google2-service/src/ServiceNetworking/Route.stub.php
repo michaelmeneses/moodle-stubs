@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class Route extends \Google\Model
-{
-    /**
-     * Destination CIDR range that this route applies to.
-     *
-     * @var string
-     */
-    public $destRange;
-    /**
-     * Route name. See https://cloud.google.com/vpc/docs/routes
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Fully-qualified URL of the VPC network in the producer host tenant project
-     * that this route applies to. For example:
-     * `projects/123456/global/networks/host-network`
-     *
-     * @var string
-     */
-    public $network;
-    /**
-     * Fully-qualified URL of the gateway that should handle matching packets that
-     * this route applies to. For example:
-     * `projects/123456/global/gateways/default-internet-gateway`
-     *
-     * @var string
-     */
-    public $nextHopGateway;
-    /**
-     * Destination CIDR range that this route applies to.
-     *
-     * @param string $destRange
-     */
-    public function setDestRange($destRange)
+namespace Google\Service\ServiceNetworking {
+    class Route extends \Google\Model
     {
+        /**
+         * Destination CIDR range that this route applies to.
+         *
+         * @var string
+         */
+        public $destRange;
+        /**
+         * Route name. See https://cloud.google.com/vpc/docs/routes
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Fully-qualified URL of the VPC network in the producer host tenant project
+         * that this route applies to. For example:
+         * `projects/123456/global/networks/host-network`
+         *
+         * @var string
+         */
+        public $network;
+        /**
+         * Fully-qualified URL of the gateway that should handle matching packets that
+         * this route applies to. For example:
+         * `projects/123456/global/gateways/default-internet-gateway`
+         *
+         * @var string
+         */
+        public $nextHopGateway;
+        /**
+         * Destination CIDR range that this route applies to.
+         *
+         * @param string $destRange
+         */
+        public function setDestRange($destRange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestRange()
+        {
+        }
+        /**
+         * Route name. See https://cloud.google.com/vpc/docs/routes
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Fully-qualified URL of the VPC network in the producer host tenant project
+         * that this route applies to. For example:
+         * `projects/123456/global/networks/host-network`
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * Fully-qualified URL of the gateway that should handle matching packets that
+         * this route applies to. For example:
+         * `projects/123456/global/gateways/default-internet-gateway`
+         *
+         * @param string $nextHopGateway
+         */
+        public function setNextHopGateway($nextHopGateway)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextHopGateway()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceNetworking\Route registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestRange()
-    {
-    }
-    /**
-     * Route name. See https://cloud.google.com/vpc/docs/routes
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Fully-qualified URL of the VPC network in the producer host tenant project
-     * that this route applies to. For example:
-     * `projects/123456/global/networks/host-network`
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetwork()
-    {
-    }
-    /**
-     * Fully-qualified URL of the gateway that should handle matching packets that
-     * this route applies to. For example:
-     * `projects/123456/global/gateways/default-internet-gateway`
-     *
-     * @param string $nextHopGateway
-     */
-    public function setNextHopGateway($nextHopGateway)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextHopGateway()
+    class Google_Service_ServiceNetworking_Route extends \Google\Service\ServiceNetworking\Route
     {
     }
 }

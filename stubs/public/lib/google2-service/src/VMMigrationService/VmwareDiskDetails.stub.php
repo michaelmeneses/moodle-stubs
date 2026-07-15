@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class VmwareDiskDetails extends \Google\Model
-{
-    /**
-     * Output only. The ordinal number of the disk.
-     *
-     * @var int
-     */
-    public $diskNumber;
-    /**
-     * Output only. The disk label.
-     *
-     * @var string
-     */
-    public $label;
-    /**
-     * Output only. Size in GB.
-     *
-     * @var string
-     */
-    public $sizeGb;
-    /**
-     * Output only. The ordinal number of the disk.
-     *
-     * @param int $diskNumber
-     */
-    public function setDiskNumber($diskNumber)
+namespace Google\Service\VMMigrationService {
+    class VmwareDiskDetails extends \Google\Model
     {
+        /**
+         * Output only. The ordinal number of the disk.
+         *
+         * @var int
+         */
+        public $diskNumber;
+        /**
+         * Output only. The disk label.
+         *
+         * @var string
+         */
+        public $label;
+        /**
+         * Output only. Size in GB.
+         *
+         * @var string
+         */
+        public $sizeGb;
+        /**
+         * Output only. The ordinal number of the disk.
+         *
+         * @param int $diskNumber
+         */
+        public function setDiskNumber($diskNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDiskNumber()
+        {
+        }
+        /**
+         * Output only. The disk label.
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * Output only. Size in GB.
+         *
+         * @param string $sizeGb
+         */
+        public function setSizeGb($sizeGb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSizeGb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\VMMigrationService\VmwareDiskDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiskNumber()
-    {
-    }
-    /**
-     * Output only. The disk label.
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
-    {
-    }
-    /**
-     * Output only. Size in GB.
-     *
-     * @param string $sizeGb
-     */
-    public function setSizeGb($sizeGb)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSizeGb()
+    class Google_Service_VMMigrationService_VmwareDiskDetails extends \Google\Service\VMMigrationService\VmwareDiskDetails
     {
     }
 }

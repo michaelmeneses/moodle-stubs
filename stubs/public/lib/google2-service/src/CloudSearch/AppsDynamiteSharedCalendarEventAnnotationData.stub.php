@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedCalendarEventAnnotationData extends \Google\Model
-{
-    protected $calendarEventType = AppsDynamiteSharedCalendarEventAnnotationDataCalendarEvent::class;
-    protected $calendarEventDataType = '';
-    protected $eventCreationType = AppsDynamiteSharedCalendarEventAnnotationDataEventCreation::class;
-    protected $eventCreationDataType = '';
-    /**
-     * @param AppsDynamiteSharedCalendarEventAnnotationDataCalendarEvent
-     */
-    public function setCalendarEvent(AppsDynamiteSharedCalendarEventAnnotationDataCalendarEvent $calendarEvent)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedCalendarEventAnnotationData extends \Google\Model
     {
+        protected $calendarEventType = AppsDynamiteSharedCalendarEventAnnotationDataCalendarEvent::class;
+        protected $calendarEventDataType = '';
+        protected $eventCreationType = AppsDynamiteSharedCalendarEventAnnotationDataEventCreation::class;
+        protected $eventCreationDataType = '';
+        /**
+         * @param AppsDynamiteSharedCalendarEventAnnotationDataCalendarEvent
+         */
+        public function setCalendarEvent(AppsDynamiteSharedCalendarEventAnnotationDataCalendarEvent $calendarEvent)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedCalendarEventAnnotationDataCalendarEvent
+         */
+        public function getCalendarEvent()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedCalendarEventAnnotationDataEventCreation
+         */
+        public function setEventCreation(AppsDynamiteSharedCalendarEventAnnotationDataEventCreation $eventCreation)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedCalendarEventAnnotationDataEventCreation
+         */
+        public function getEventCreation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedCalendarEventAnnotationDataCalendarEvent
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedCalendarEventAnnotationData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCalendarEvent()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedCalendarEventAnnotationDataEventCreation
-     */
-    public function setEventCreation(AppsDynamiteSharedCalendarEventAnnotationDataEventCreation $eventCreation)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedCalendarEventAnnotationDataEventCreation
-     */
-    public function getEventCreation()
+    class Google_Service_CloudSearch_AppsDynamiteSharedCalendarEventAnnotationData extends \Google\Service\CloudSearch\AppsDynamiteSharedCalendarEventAnnotationData
     {
     }
 }

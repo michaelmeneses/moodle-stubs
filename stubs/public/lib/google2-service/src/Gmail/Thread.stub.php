@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class Thread extends \Google\Collection
-{
-    protected $collection_key = 'messages';
-    /**
-     * The ID of the last history record that modified this thread.
-     *
-     * @var string
-     */
-    public $historyId;
-    /**
-     * The unique ID of the thread.
-     *
-     * @var string
-     */
-    public $id;
-    protected $messagesType = Message::class;
-    protected $messagesDataType = 'array';
-    /**
-     * A short part of the message text.
-     *
-     * @var string
-     */
-    public $snippet;
-    /**
-     * The ID of the last history record that modified this thread.
-     *
-     * @param string $historyId
-     */
-    public function setHistoryId($historyId)
+namespace Google\Service\Gmail {
+    class Thread extends \Google\Collection
     {
+        protected $collection_key = 'messages';
+        /**
+         * The ID of the last history record that modified this thread.
+         *
+         * @var string
+         */
+        public $historyId;
+        /**
+         * The unique ID of the thread.
+         *
+         * @var string
+         */
+        public $id;
+        protected $messagesType = Message::class;
+        protected $messagesDataType = 'array';
+        /**
+         * A short part of the message text.
+         *
+         * @var string
+         */
+        public $snippet;
+        /**
+         * The ID of the last history record that modified this thread.
+         *
+         * @param string $historyId
+         */
+        public function setHistoryId($historyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHistoryId()
+        {
+        }
+        /**
+         * The unique ID of the thread.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The list of messages in the thread.
+         *
+         * @param Message[] $messages
+         */
+        public function setMessages($messages)
+        {
+        }
+        /**
+         * @return Message[]
+         */
+        public function getMessages()
+        {
+        }
+        /**
+         * A short part of the message text.
+         *
+         * @param string $snippet
+         */
+        public function setSnippet($snippet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnippet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Gmail\Thread registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHistoryId()
-    {
-    }
-    /**
-     * The unique ID of the thread.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The list of messages in the thread.
-     *
-     * @param Message[] $messages
-     */
-    public function setMessages($messages)
-    {
-    }
-    /**
-     * @return Message[]
-     */
-    public function getMessages()
-    {
-    }
-    /**
-     * A short part of the message text.
-     *
-     * @param string $snippet
-     */
-    public function setSnippet($snippet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnippet()
+    class Google_Service_Gmail_Thread extends \Google\Service\Gmail\Thread
     {
     }
 }

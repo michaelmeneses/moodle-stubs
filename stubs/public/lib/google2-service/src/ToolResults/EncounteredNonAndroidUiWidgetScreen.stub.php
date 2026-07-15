@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class EncounteredNonAndroidUiWidgetScreen extends \Google\Collection
-{
-    protected $collection_key = 'screenIds';
-    /**
-     * Number of encountered distinct screens with non Android UI widgets.
-     *
-     * @var int
-     */
-    public $distinctScreens;
-    /**
-     * Subset of screens which contain non Android UI widgets.
-     *
-     * @var string[]
-     */
-    public $screenIds;
-    /**
-     * Number of encountered distinct screens with non Android UI widgets.
-     *
-     * @param int $distinctScreens
-     */
-    public function setDistinctScreens($distinctScreens)
+namespace Google\Service\ToolResults {
+    class EncounteredNonAndroidUiWidgetScreen extends \Google\Collection
     {
+        protected $collection_key = 'screenIds';
+        /**
+         * Number of encountered distinct screens with non Android UI widgets.
+         *
+         * @var int
+         */
+        public $distinctScreens;
+        /**
+         * Subset of screens which contain non Android UI widgets.
+         *
+         * @var string[]
+         */
+        public $screenIds;
+        /**
+         * Number of encountered distinct screens with non Android UI widgets.
+         *
+         * @param int $distinctScreens
+         */
+        public function setDistinctScreens($distinctScreens)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDistinctScreens()
+        {
+        }
+        /**
+         * Subset of screens which contain non Android UI widgets.
+         *
+         * @param string[] $screenIds
+         */
+        public function setScreenIds($screenIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScreenIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\ToolResults\EncounteredNonAndroidUiWidgetScreen registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDistinctScreens()
-    {
-    }
-    /**
-     * Subset of screens which contain non Android UI widgets.
-     *
-     * @param string[] $screenIds
-     */
-    public function setScreenIds($screenIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getScreenIds()
+    class Google_Service_ToolResults_EncounteredNonAndroidUiWidgetScreen extends \Google\Service\ToolResults\EncounteredNonAndroidUiWidgetScreen
     {
     }
 }

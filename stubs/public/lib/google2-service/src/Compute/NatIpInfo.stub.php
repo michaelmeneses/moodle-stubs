@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NatIpInfo extends \Google\Collection
-{
-    protected $collection_key = 'natIpInfoMappings';
-    protected $natIpInfoMappingsType = NatIpInfoNatIpInfoMapping::class;
-    protected $natIpInfoMappingsDataType = 'array';
-    /**
-     * Output only. Name of the NAT config which the NAT IP belongs to.
-     *
-     * @var string
-     */
-    public $natName;
-    /**
-     * Output only. A list of all NAT IPs assigned to this NAT config.
-     *
-     * @param NatIpInfoNatIpInfoMapping[] $natIpInfoMappings
-     */
-    public function setNatIpInfoMappings($natIpInfoMappings)
+namespace Google\Service\Compute {
+    class NatIpInfo extends \Google\Collection
     {
+        protected $collection_key = 'natIpInfoMappings';
+        protected $natIpInfoMappingsType = NatIpInfoNatIpInfoMapping::class;
+        protected $natIpInfoMappingsDataType = 'array';
+        /**
+         * Output only. Name of the NAT config which the NAT IP belongs to.
+         *
+         * @var string
+         */
+        public $natName;
+        /**
+         * Output only. A list of all NAT IPs assigned to this NAT config.
+         *
+         * @param NatIpInfoNatIpInfoMapping[] $natIpInfoMappings
+         */
+        public function setNatIpInfoMappings($natIpInfoMappings)
+        {
+        }
+        /**
+         * @return NatIpInfoNatIpInfoMapping[]
+         */
+        public function getNatIpInfoMappings()
+        {
+        }
+        /**
+         * Output only. Name of the NAT config which the NAT IP belongs to.
+         *
+         * @param string $natName
+         */
+        public function setNatName($natName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNatName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NatIpInfoNatIpInfoMapping[]
+     * Runtime class alias of \Google\Service\Compute\NatIpInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNatIpInfoMappings()
-    {
-    }
-    /**
-     * Output only. Name of the NAT config which the NAT IP belongs to.
-     *
-     * @param string $natName
-     */
-    public function setNatName($natName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNatName()
+    class Google_Service_Compute_NatIpInfo extends \Google\Service\Compute\NatIpInfo
     {
     }
 }

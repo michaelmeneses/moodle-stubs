@@ -21,145 +21,162 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager\Resource;
-
-/**
- * The "accessPolicies" collection of methods.
- * Typical usage is:
- *  <code>
- *   $accesscontextmanagerService = new Google\Service\AccessContextManager(...);
- *   $accessPolicies = $accesscontextmanagerService->accessPolicies;
- *  </code>
- */
-class AccessPolicies extends \Google\Service\Resource
-{
+namespace Google\Service\AccessContextManager\Resource {
+    use Google\Service\AccessContextManager\AccessPolicy;
+    use Google\Service\AccessContextManager\GetIamPolicyRequest;
+    use Google\Service\AccessContextManager\ListAccessPoliciesResponse;
+    use Google\Service\AccessContextManager\Operation;
+    use Google\Service\AccessContextManager\Policy;
+    use Google\Service\AccessContextManager\SetIamPolicyRequest;
+    use Google\Service\AccessContextManager\TestIamPermissionsRequest;
+    use Google\Service\AccessContextManager\TestIamPermissionsResponse;
     /**
-     * Creates an access policy. This method fails if the organization already has
-     * an access policy. The long-running operation has a successful status after
-     * the access policy propagates to long-lasting storage. Syntactic and basic
-     * semantic errors are returned in `metadata` as a BadRequest proto.
-     * (accessPolicies.create)
-     *
-     * @param AccessPolicy $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "accessPolicies" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $accesscontextmanagerService = new Google\Service\AccessContextManager(...);
+     *   $accessPolicies = $accesscontextmanagerService->accessPolicies;
+     *  </code>
      */
-    public function create(AccessPolicy $postBody, $optParams = [])
+    class AccessPolicies extends \Google\Service\Resource
     {
+        /**
+         * Creates an access policy. This method fails if the organization already has
+         * an access policy. The long-running operation has a successful status after
+         * the access policy propagates to long-lasting storage. Syntactic and basic
+         * semantic errors are returned in `metadata` as a BadRequest proto.
+         * (accessPolicies.create)
+         *
+         * @param AccessPolicy $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create(AccessPolicy $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes an access policy based on the resource name. The long-running
+         * operation has a successful status after the access policy is removed from
+         * long-lasting storage. (accessPolicies.delete)
+         *
+         * @param string $name Required. Resource name for the access policy to delete.
+         * Format `accessPolicies/{policy_id}`
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns an access policy based on the name. (accessPolicies.get)
+         *
+         * @param string $name Required. Resource name for the access policy to get.
+         * Format `accessPolicies/{policy_id}`
+         * @param array $optParams Optional parameters.
+         * @return AccessPolicy
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the IAM policy for the specified Access Context Manager access policy.
+         * (accessPolicies.getIamPolicy)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy is being
+         * requested. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param GetIamPolicyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Policy
+         * @throws \Google\Service\Exception
+         */
+        public function getIamPolicy($resource, GetIamPolicyRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists all access policies in an organization.
+         * (accessPolicies.listAccessPolicies)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Number of AccessPolicy instances to include in the
+         * list. Default 100.
+         * @opt_param string pageToken Next page token for the next batch of
+         * AccessPolicy instances. Defaults to the first page of results.
+         * @opt_param string parent Required. Resource name for the container to list
+         * AccessPolicy instances from. Format: `organizations/{org_id}`
+         * @return ListAccessPoliciesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccessPolicies($optParams = [])
+        {
+        }
+        /**
+         * Updates an access policy. The long-running operation from this RPC has a
+         * successful status after the changes to the access policy propagate to long-
+         * lasting storage. (accessPolicies.patch)
+         *
+         * @param string $name Output only. Identifier. Resource name of the
+         * `AccessPolicy`. Format: `accessPolicies/{access_policy}`
+         * @param AccessPolicy $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. Mask to control which fields get
+         * updated. Must be non-empty.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, AccessPolicy $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Sets the IAM policy for the specified Access Context Manager access policy.
+         * This method replaces the existing IAM policy on the access policy. The IAM
+         * policy controls the set of users who can perform specific operations on the
+         * Access Context Manager access policy. (accessPolicies.setIamPolicy)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy is being
+         * specified. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param SetIamPolicyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Policy
+         * @throws \Google\Service\Exception
+         */
+        public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns the IAM permissions that the caller has on the specified Access
+         * Context Manager resource. The resource can be an AccessPolicy, AccessLevel,
+         * or ServicePerimeter. This method does not support other resources.
+         * (accessPolicies.testIamPermissions)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy detail is
+         * being requested. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param TestIamPermissionsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return TestIamPermissionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes an access policy based on the resource name. The long-running
-     * operation has a successful status after the access policy is removed from
-     * long-lasting storage. (accessPolicies.delete)
-     *
-     * @param string $name Required. Resource name for the access policy to delete.
-     * Format `accessPolicies/{policy_id}`
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AccessContextManager\Resource\AccessPolicies registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns an access policy based on the name. (accessPolicies.get)
-     *
-     * @param string $name Required. Resource name for the access policy to get.
-     * Format `accessPolicies/{policy_id}`
-     * @param array $optParams Optional parameters.
-     * @return AccessPolicy
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets the IAM policy for the specified Access Context Manager access policy.
-     * (accessPolicies.getIamPolicy)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy is being
-     * requested. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param GetIamPolicyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Policy
-     * @throws \Google\Service\Exception
-     */
-    public function getIamPolicy($resource, GetIamPolicyRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists all access policies in an organization.
-     * (accessPolicies.listAccessPolicies)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Number of AccessPolicy instances to include in the
-     * list. Default 100.
-     * @opt_param string pageToken Next page token for the next batch of
-     * AccessPolicy instances. Defaults to the first page of results.
-     * @opt_param string parent Required. Resource name for the container to list
-     * AccessPolicy instances from. Format: `organizations/{org_id}`
-     * @return ListAccessPoliciesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAccessPolicies($optParams = [])
-    {
-    }
-    /**
-     * Updates an access policy. The long-running operation from this RPC has a
-     * successful status after the changes to the access policy propagate to long-
-     * lasting storage. (accessPolicies.patch)
-     *
-     * @param string $name Output only. Identifier. Resource name of the
-     * `AccessPolicy`. Format: `accessPolicies/{access_policy}`
-     * @param AccessPolicy $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. Mask to control which fields get
-     * updated. Must be non-empty.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, AccessPolicy $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Sets the IAM policy for the specified Access Context Manager access policy.
-     * This method replaces the existing IAM policy on the access policy. The IAM
-     * policy controls the set of users who can perform specific operations on the
-     * Access Context Manager access policy. (accessPolicies.setIamPolicy)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy is being
-     * specified. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param SetIamPolicyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Policy
-     * @throws \Google\Service\Exception
-     */
-    public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Returns the IAM permissions that the caller has on the specified Access
-     * Context Manager resource. The resource can be an AccessPolicy, AccessLevel,
-     * or ServicePerimeter. This method does not support other resources.
-     * (accessPolicies.testIamPermissions)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy detail is
-     * being requested. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param TestIamPermissionsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return TestIamPermissionsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = [])
+    class Google_Service_AccessContextManager_Resource_AccessPolicies extends \Google\Service\AccessContextManager\Resource\AccessPolicies
     {
     }
 }

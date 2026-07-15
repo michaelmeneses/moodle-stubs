@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ValueInfo extends \Google\Model
-{
-    /**
-     * Annotation, comment or explanation why the property was set.
-     *
-     * @var string
-     */
-    public $annotation;
-    /**
-     * Optional. Value which was replaced by the corresponding component.
-     *
-     * @var string
-     */
-    public $overriddenValue;
-    /**
-     * Property value.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Annotation, comment or explanation why the property was set.
-     *
-     * @param string $annotation
-     */
-    public function setAnnotation($annotation)
+namespace Google\Service\Dataproc {
+    class ValueInfo extends \Google\Model
     {
+        /**
+         * Annotation, comment or explanation why the property was set.
+         *
+         * @var string
+         */
+        public $annotation;
+        /**
+         * Optional. Value which was replaced by the corresponding component.
+         *
+         * @var string
+         */
+        public $overriddenValue;
+        /**
+         * Property value.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Annotation, comment or explanation why the property was set.
+         *
+         * @param string $annotation
+         */
+        public function setAnnotation($annotation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotation()
+        {
+        }
+        /**
+         * Optional. Value which was replaced by the corresponding component.
+         *
+         * @param string $overriddenValue
+         */
+        public function setOverriddenValue($overriddenValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOverriddenValue()
+        {
+        }
+        /**
+         * Property value.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\ValueInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotation()
-    {
-    }
-    /**
-     * Optional. Value which was replaced by the corresponding component.
-     *
-     * @param string $overriddenValue
-     */
-    public function setOverriddenValue($overriddenValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOverriddenValue()
-    {
-    }
-    /**
-     * Property value.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Dataproc_ValueInfo extends \Google\Service\Dataproc\ValueInfo
     {
     }
 }

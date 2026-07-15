@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkflowExecutions;
-
-class StackTrace extends \Google\Collection
-{
-    protected $collection_key = 'elements';
-    protected $elementsType = StackTraceElement::class;
-    protected $elementsDataType = 'array';
-    /**
-     * An array of stack elements.
-     *
-     * @param StackTraceElement[] $elements
-     */
-    public function setElements($elements)
+namespace Google\Service\WorkflowExecutions {
+    class StackTrace extends \Google\Collection
     {
+        protected $collection_key = 'elements';
+        protected $elementsType = StackTraceElement::class;
+        protected $elementsDataType = 'array';
+        /**
+         * An array of stack elements.
+         *
+         * @param StackTraceElement[] $elements
+         */
+        public function setElements($elements)
+        {
+        }
+        /**
+         * @return StackTraceElement[]
+         */
+        public function getElements()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StackTraceElement[]
+     * Runtime class alias of \Google\Service\WorkflowExecutions\StackTrace registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getElements()
+    class Google_Service_WorkflowExecutions_StackTrace extends \Google\Service\WorkflowExecutions\StackTrace
     {
     }
 }

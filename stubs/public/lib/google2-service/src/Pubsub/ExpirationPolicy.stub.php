@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class ExpirationPolicy extends \Google\Model
-{
-    /**
-     * Optional. Specifies the "time-to-live" duration for an associated resource.
-     * The resource expires if it is not active for a period of `ttl`. The
-     * definition of "activity" depends on the type of the associated resource.
-     * The minimum and maximum allowed values for `ttl` depend on the type of the
-     * associated resource, as well. If `ttl` is not set, the associated resource
-     * never expires.
-     *
-     * @var string
-     */
-    public $ttl;
-    /**
-     * Optional. Specifies the "time-to-live" duration for an associated resource.
-     * The resource expires if it is not active for a period of `ttl`. The
-     * definition of "activity" depends on the type of the associated resource.
-     * The minimum and maximum allowed values for `ttl` depend on the type of the
-     * associated resource, as well. If `ttl` is not set, the associated resource
-     * never expires.
-     *
-     * @param string $ttl
-     */
-    public function setTtl($ttl)
+namespace Google\Service\Pubsub {
+    class ExpirationPolicy extends \Google\Model
     {
+        /**
+         * Optional. Specifies the "time-to-live" duration for an associated resource.
+         * The resource expires if it is not active for a period of `ttl`. The
+         * definition of "activity" depends on the type of the associated resource.
+         * The minimum and maximum allowed values for `ttl` depend on the type of the
+         * associated resource, as well. If `ttl` is not set, the associated resource
+         * never expires.
+         *
+         * @var string
+         */
+        public $ttl;
+        /**
+         * Optional. Specifies the "time-to-live" duration for an associated resource.
+         * The resource expires if it is not active for a period of `ttl`. The
+         * definition of "activity" depends on the type of the associated resource.
+         * The minimum and maximum allowed values for `ttl` depend on the type of the
+         * associated resource, as well. If `ttl` is not set, the associated resource
+         * never expires.
+         *
+         * @param string $ttl
+         */
+        public function setTtl($ttl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTtl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Pubsub\ExpirationPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTtl()
+    class Google_Service_Pubsub_ExpirationPolicy extends \Google\Service\Pubsub\ExpirationPolicy
     {
     }
 }

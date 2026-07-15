@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1ConfusionMatrix extends \Google\Collection
-{
-    protected $collection_key = 'row';
-    protected $rowType = GoogleCloudDatalabelingV1beta1Row::class;
-    protected $rowDataType = 'array';
-    /**
-     * @param GoogleCloudDatalabelingV1beta1Row[] $row
-     */
-    public function setRow($row)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1ConfusionMatrix extends \Google\Collection
     {
+        protected $collection_key = 'row';
+        protected $rowType = GoogleCloudDatalabelingV1beta1Row::class;
+        protected $rowDataType = 'array';
+        /**
+         * @param GoogleCloudDatalabelingV1beta1Row[] $row
+         */
+        public function setRow($row)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1Row[]
+         */
+        public function getRow()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1Row[]
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ConfusionMatrix registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRow()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1ConfusionMatrix extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ConfusionMatrix
     {
     }
 }

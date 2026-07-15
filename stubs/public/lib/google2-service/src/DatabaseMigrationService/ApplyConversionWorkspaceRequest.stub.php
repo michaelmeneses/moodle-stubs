@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class ApplyConversionWorkspaceRequest extends \Google\Model
-{
-    /**
-     * Optional. Specifies whether the conversion workspace is to be committed
-     * automatically after the apply.
-     *
-     * @var bool
-     */
-    public $autoCommit;
-    /**
-     * Optional. Fully qualified (Uri) name of the destination connection profile.
-     *
-     * @var string
-     */
-    public $connectionProfile;
-    /**
-     * Optional. Only validates the apply process, but doesn't change the
-     * destination database. Only works for PostgreSQL destination connection
-     * profile.
-     *
-     * @var bool
-     */
-    public $dryRun;
-    /**
-     * Filter which entities to apply. Leaving this field empty will apply all of
-     * the entities. Supports Google AIP 160 based filtering.
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * Optional. Specifies whether the conversion workspace is to be committed
-     * automatically after the apply.
-     *
-     * @param bool $autoCommit
-     */
-    public function setAutoCommit($autoCommit)
+namespace Google\Service\DatabaseMigrationService {
+    class ApplyConversionWorkspaceRequest extends \Google\Model
     {
+        /**
+         * Optional. Specifies whether the conversion workspace is to be committed
+         * automatically after the apply.
+         *
+         * @var bool
+         */
+        public $autoCommit;
+        /**
+         * Optional. Fully qualified (Uri) name of the destination connection profile.
+         *
+         * @var string
+         */
+        public $connectionProfile;
+        /**
+         * Optional. Only validates the apply process, but doesn't change the
+         * destination database. Only works for PostgreSQL destination connection
+         * profile.
+         *
+         * @var bool
+         */
+        public $dryRun;
+        /**
+         * Filter which entities to apply. Leaving this field empty will apply all of
+         * the entities. Supports Google AIP 160 based filtering.
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * Optional. Specifies whether the conversion workspace is to be committed
+         * automatically after the apply.
+         *
+         * @param bool $autoCommit
+         */
+        public function setAutoCommit($autoCommit)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutoCommit()
+        {
+        }
+        /**
+         * Optional. Fully qualified (Uri) name of the destination connection profile.
+         *
+         * @param string $connectionProfile
+         */
+        public function setConnectionProfile($connectionProfile)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConnectionProfile()
+        {
+        }
+        /**
+         * Optional. Only validates the apply process, but doesn't change the
+         * destination database. Only works for PostgreSQL destination connection
+         * profile.
+         *
+         * @param bool $dryRun
+         */
+        public function setDryRun($dryRun)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDryRun()
+        {
+        }
+        /**
+         * Filter which entities to apply. Leaving this field empty will apply all of
+         * the entities. Supports Google AIP 160 based filtering.
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\ApplyConversionWorkspaceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoCommit()
-    {
-    }
-    /**
-     * Optional. Fully qualified (Uri) name of the destination connection profile.
-     *
-     * @param string $connectionProfile
-     */
-    public function setConnectionProfile($connectionProfile)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConnectionProfile()
-    {
-    }
-    /**
-     * Optional. Only validates the apply process, but doesn't change the
-     * destination database. Only works for PostgreSQL destination connection
-     * profile.
-     *
-     * @param bool $dryRun
-     */
-    public function setDryRun($dryRun)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDryRun()
-    {
-    }
-    /**
-     * Filter which entities to apply. Leaving this field empty will apply all of
-     * the entities. Supports Google AIP 160 based filtering.
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilter()
+    class Google_Service_DatabaseMigrationService_ApplyConversionWorkspaceRequest extends \Google\Service\DatabaseMigrationService\ApplyConversionWorkspaceRequest
     {
     }
 }

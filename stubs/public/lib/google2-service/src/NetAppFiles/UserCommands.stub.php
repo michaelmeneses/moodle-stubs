@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class UserCommands extends \Google\Collection
-{
-    protected $collection_key = 'commands';
-    /**
-     * Output only. List of commands to be executed by the customer.
-     *
-     * @var string[]
-     */
-    public $commands;
-    /**
-     * Output only. List of commands to be executed by the customer.
-     *
-     * @param string[] $commands
-     */
-    public function setCommands($commands)
+namespace Google\Service\NetAppFiles {
+    class UserCommands extends \Google\Collection
     {
+        protected $collection_key = 'commands';
+        /**
+         * Output only. List of commands to be executed by the customer.
+         *
+         * @var string[]
+         */
+        public $commands;
+        /**
+         * Output only. List of commands to be executed by the customer.
+         *
+         * @param string[] $commands
+         */
+        public function setCommands($commands)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCommands()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\NetAppFiles\UserCommands registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommands()
+    class Google_Service_NetAppFiles_UserCommands extends \Google\Service\NetAppFiles\UserCommands
     {
     }
 }

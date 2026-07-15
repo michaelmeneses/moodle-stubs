@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2SaveToGcsFindingsOutput extends \Google\Collection
-{
-    protected $collection_key = 'findings';
-    protected $findingsType = GooglePrivacyDlpV2Finding::class;
-    protected $findingsDataType = 'array';
-    /**
-     * List of findings.
-     *
-     * @param GooglePrivacyDlpV2Finding[] $findings
-     */
-    public function setFindings($findings)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2SaveToGcsFindingsOutput extends \Google\Collection
     {
+        protected $collection_key = 'findings';
+        protected $findingsType = GooglePrivacyDlpV2Finding::class;
+        protected $findingsDataType = 'array';
+        /**
+         * List of findings.
+         *
+         * @param GooglePrivacyDlpV2Finding[] $findings
+         */
+        public function setFindings($findings)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Finding[]
+         */
+        public function getFindings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2Finding[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2SaveToGcsFindingsOutput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFindings()
+    class Google_Service_DLP_GooglePrivacyDlpV2SaveToGcsFindingsOutput extends \Google\Service\DLP\GooglePrivacyDlpV2SaveToGcsFindingsOutput
     {
     }
 }

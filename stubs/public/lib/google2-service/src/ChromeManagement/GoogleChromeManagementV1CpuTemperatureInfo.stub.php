@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1CpuTemperatureInfo extends \Google\Model
-{
-    /**
-     * Output only. CPU label. Example: Core 0
-     *
-     * @var string
-     */
-    public $label;
-    /**
-     * Output only. CPU temperature in Celsius.
-     *
-     * @var int
-     */
-    public $temperatureCelsius;
-    /**
-     * Output only. CPU label. Example: Core 0
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1CpuTemperatureInfo extends \Google\Model
     {
+        /**
+         * Output only. CPU label. Example: Core 0
+         *
+         * @var string
+         */
+        public $label;
+        /**
+         * Output only. CPU temperature in Celsius.
+         *
+         * @var int
+         */
+        public $temperatureCelsius;
+        /**
+         * Output only. CPU label. Example: Core 0
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * Output only. CPU temperature in Celsius.
+         *
+         * @param int $temperatureCelsius
+         */
+        public function setTemperatureCelsius($temperatureCelsius)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTemperatureCelsius()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1CpuTemperatureInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabel()
-    {
-    }
-    /**
-     * Output only. CPU temperature in Celsius.
-     *
-     * @param int $temperatureCelsius
-     */
-    public function setTemperatureCelsius($temperatureCelsius)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTemperatureCelsius()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1CpuTemperatureInfo extends \Google\Service\ChromeManagement\GoogleChromeManagementV1CpuTemperatureInfo
     {
     }
 }

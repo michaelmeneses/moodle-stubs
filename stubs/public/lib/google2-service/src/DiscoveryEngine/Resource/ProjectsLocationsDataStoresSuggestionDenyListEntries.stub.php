@@ -21,46 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine\Resource;
-
-/**
- * The "suggestionDenyListEntries" collection of methods.
- * Typical usage is:
- *  <code>
- *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
- *   $suggestionDenyListEntries = $discoveryengineService->projects_locations_dataStores_suggestionDenyListEntries;
- *  </code>
- */
-class ProjectsLocationsDataStoresSuggestionDenyListEntries extends \Google\Service\Resource
-{
+namespace Google\Service\DiscoveryEngine\Resource {
+    use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ImportSuggestionDenyListEntriesRequest;
+    use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1PurgeSuggestionDenyListEntriesRequest;
+    use Google\Service\DiscoveryEngine\GoogleLongrunningOperation;
     /**
-     * Imports all SuggestionDenyListEntry for a DataStore.
-     * (suggestionDenyListEntries.import)
-     *
-     * @param string $parent Required. The parent data store resource name for which
-     * to import denylist entries. Follows pattern
-     * projects/locations/collections/dataStores.
-     * @param GoogleCloudDiscoveryengineV1ImportSuggestionDenyListEntriesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "suggestionDenyListEntries" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
+     *   $suggestionDenyListEntries = $discoveryengineService->projects_locations_dataStores_suggestionDenyListEntries;
+     *  </code>
      */
-    public function import($parent, GoogleCloudDiscoveryengineV1ImportSuggestionDenyListEntriesRequest $postBody, $optParams = [])
+    class ProjectsLocationsDataStoresSuggestionDenyListEntries extends \Google\Service\Resource
     {
+        /**
+         * Imports all SuggestionDenyListEntry for a DataStore.
+         * (suggestionDenyListEntries.import)
+         *
+         * @param string $parent Required. The parent data store resource name for which
+         * to import denylist entries. Follows pattern
+         * projects/locations/collections/dataStores.
+         * @param GoogleCloudDiscoveryengineV1ImportSuggestionDenyListEntriesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function import($parent, GoogleCloudDiscoveryengineV1ImportSuggestionDenyListEntriesRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Permanently deletes all SuggestionDenyListEntry for a DataStore.
+         * (suggestionDenyListEntries.purge)
+         *
+         * @param string $parent Required. The parent data store resource name for which
+         * to import denylist entries. Follows pattern
+         * projects/locations/collections/dataStores.
+         * @param GoogleCloudDiscoveryengineV1PurgeSuggestionDenyListEntriesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function purge($parent, GoogleCloudDiscoveryengineV1PurgeSuggestionDenyListEntriesRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Permanently deletes all SuggestionDenyListEntry for a DataStore.
-     * (suggestionDenyListEntries.purge)
-     *
-     * @param string $parent Required. The parent data store resource name for which
-     * to import denylist entries. Follows pattern
-     * projects/locations/collections/dataStores.
-     * @param GoogleCloudDiscoveryengineV1PurgeSuggestionDenyListEntriesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsDataStoresSuggestionDenyListEntries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function purge($parent, GoogleCloudDiscoveryengineV1PurgeSuggestionDenyListEntriesRequest $postBody, $optParams = [])
+    class Google_Service_DiscoveryEngine_Resource_ProjectsLocationsDataStoresSuggestionDenyListEntries extends \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsDataStoresSuggestionDenyListEntries
     {
     }
 }

@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_badges;
 
+use context_course;
+use context_system;
 /**
  * Abstract base class for badge award selectors.
  *

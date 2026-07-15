@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class Status extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $code;
-    protected $detailsType = StatusDetails::class;
-    protected $detailsDataType = '';
-    /**
-     * @var string
-     */
-    public $message;
-    protected $metadataType = ListMeta::class;
-    protected $metadataDataType = '';
-    /**
-     * @var string
-     */
-    public $reason;
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @param int
-     */
-    public function setCode($code)
+namespace Google\Service\CloudRun {
+    class Status extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $code;
+        protected $detailsType = StatusDetails::class;
+        protected $detailsDataType = '';
+        /**
+         * @var string
+         */
+        public $message;
+        protected $metadataType = ListMeta::class;
+        protected $metadataDataType = '';
+        /**
+         * @var string
+         */
+        public $reason;
+        /**
+         * @var string
+         */
+        public $status;
+        /**
+         * @param int
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * @param StatusDetails
+         */
+        public function setDetails(StatusDetails $details)
+        {
+        }
+        /**
+         * @return StatusDetails
+         */
+        public function getDetails()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * @param ListMeta
+         */
+        public function setMetadata(ListMeta $metadata)
+        {
+        }
+        /**
+         * @return ListMeta
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudRun\Status registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * @param StatusDetails
-     */
-    public function setDetails(StatusDetails $details)
-    {
-    }
-    /**
-     * @return StatusDetails
-     */
-    public function getDetails()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * @param ListMeta
-     */
-    public function setMetadata(ListMeta $metadata)
-    {
-    }
-    /**
-     * @return ListMeta
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReason()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
+    class Google_Service_CloudRun_Status extends \Google\Service\CloudRun\Status
     {
     }
 }

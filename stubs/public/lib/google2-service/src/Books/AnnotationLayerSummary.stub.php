@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class AnnotationLayerSummary extends \Google\Model
-{
-    /**
-     * Maximum allowed characters on this layer, especially for the "copy" layer.
-     *
-     * @var int
-     */
-    public $allowedCharacterCount;
-    /**
-     * Type of limitation on this layer. "limited" or "unlimited" for the "copy"
-     * layer.
-     *
-     * @var string
-     */
-    public $limitType;
-    /**
-     * Remaining allowed characters on this layer, especially for the "copy"
-     * layer.
-     *
-     * @var int
-     */
-    public $remainingCharacterCount;
-    /**
-     * Maximum allowed characters on this layer, especially for the "copy" layer.
-     *
-     * @param int $allowedCharacterCount
-     */
-    public function setAllowedCharacterCount($allowedCharacterCount)
+namespace Google\Service\Books {
+    class AnnotationLayerSummary extends \Google\Model
     {
+        /**
+         * Maximum allowed characters on this layer, especially for the "copy" layer.
+         *
+         * @var int
+         */
+        public $allowedCharacterCount;
+        /**
+         * Type of limitation on this layer. "limited" or "unlimited" for the "copy"
+         * layer.
+         *
+         * @var string
+         */
+        public $limitType;
+        /**
+         * Remaining allowed characters on this layer, especially for the "copy"
+         * layer.
+         *
+         * @var int
+         */
+        public $remainingCharacterCount;
+        /**
+         * Maximum allowed characters on this layer, especially for the "copy" layer.
+         *
+         * @param int $allowedCharacterCount
+         */
+        public function setAllowedCharacterCount($allowedCharacterCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAllowedCharacterCount()
+        {
+        }
+        /**
+         * Type of limitation on this layer. "limited" or "unlimited" for the "copy"
+         * layer.
+         *
+         * @param string $limitType
+         */
+        public function setLimitType($limitType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLimitType()
+        {
+        }
+        /**
+         * Remaining allowed characters on this layer, especially for the "copy"
+         * layer.
+         *
+         * @param int $remainingCharacterCount
+         */
+        public function setRemainingCharacterCount($remainingCharacterCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRemainingCharacterCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Books\AnnotationLayerSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedCharacterCount()
-    {
-    }
-    /**
-     * Type of limitation on this layer. "limited" or "unlimited" for the "copy"
-     * layer.
-     *
-     * @param string $limitType
-     */
-    public function setLimitType($limitType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLimitType()
-    {
-    }
-    /**
-     * Remaining allowed characters on this layer, especially for the "copy"
-     * layer.
-     *
-     * @param int $remainingCharacterCount
-     */
-    public function setRemainingCharacterCount($remainingCharacterCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRemainingCharacterCount()
+    class Google_Service_Books_AnnotationLayerSummary extends \Google\Service\Books\AnnotationLayerSummary
     {
     }
 }

@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class GceTag extends \Google\Collection
-{
-    protected $collection_key = 'parent';
-    /**
-     * The parents(s) of the tag. Eg. projects/123, folders/456 It usually
-     * contains only one parent. But, in some corner cases, it can contain
-     * multiple parents. Currently, organizations are not supported.
-     *
-     * @var string[]
-     */
-    public $parent;
-    /**
-     * The administrative_tag name.
-     *
-     * @var string
-     */
-    public $tag;
-    /**
-     * The parents(s) of the tag. Eg. projects/123, folders/456 It usually
-     * contains only one parent. But, in some corner cases, it can contain
-     * multiple parents. Currently, organizations are not supported.
-     *
-     * @param string[] $parent
-     */
-    public function setParent($parent)
+namespace Google\Service\Appengine {
+    class GceTag extends \Google\Collection
     {
+        protected $collection_key = 'parent';
+        /**
+         * The parents(s) of the tag. Eg. projects/123, folders/456 It usually
+         * contains only one parent. But, in some corner cases, it can contain
+         * multiple parents. Currently, organizations are not supported.
+         *
+         * @var string[]
+         */
+        public $parent;
+        /**
+         * The administrative_tag name.
+         *
+         * @var string
+         */
+        public $tag;
+        /**
+         * The parents(s) of the tag. Eg. projects/123, folders/456 It usually
+         * contains only one parent. But, in some corner cases, it can contain
+         * multiple parents. Currently, organizations are not supported.
+         *
+         * @param string[] $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * The administrative_tag name.
+         *
+         * @param string $tag
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Appengine\GceTag registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParent()
-    {
-    }
-    /**
-     * The administrative_tag name.
-     *
-     * @param string $tag
-     */
-    public function setTag($tag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTag()
+    class Google_Service_Appengine_GceTag extends \Google\Service\Appengine\GceTag
     {
     }
 }

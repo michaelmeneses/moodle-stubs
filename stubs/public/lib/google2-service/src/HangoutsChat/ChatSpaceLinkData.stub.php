@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class ChatSpaceLinkData extends \Google\Model
-{
-    /**
-     * The message of the linked Chat space resource. Format:
-     * `spaces/{space}/messages/{message}`
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * The space of the linked Chat space resource. Format: `spaces/{space}`
-     *
-     * @var string
-     */
-    public $space;
-    /**
-     * The thread of the linked Chat space resource. Format:
-     * `spaces/{space}/threads/{thread}`
-     *
-     * @var string
-     */
-    public $thread;
-    /**
-     * The message of the linked Chat space resource. Format:
-     * `spaces/{space}/messages/{message}`
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
+namespace Google\Service\HangoutsChat {
+    class ChatSpaceLinkData extends \Google\Model
     {
+        /**
+         * The message of the linked Chat space resource. Format:
+         * `spaces/{space}/messages/{message}`
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * The space of the linked Chat space resource. Format: `spaces/{space}`
+         *
+         * @var string
+         */
+        public $space;
+        /**
+         * The thread of the linked Chat space resource. Format:
+         * `spaces/{space}/threads/{thread}`
+         *
+         * @var string
+         */
+        public $thread;
+        /**
+         * The message of the linked Chat space resource. Format:
+         * `spaces/{space}/messages/{message}`
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * The space of the linked Chat space resource. Format: `spaces/{space}`
+         *
+         * @param string $space
+         */
+        public function setSpace($space)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpace()
+        {
+        }
+        /**
+         * The thread of the linked Chat space resource. Format:
+         * `spaces/{space}/threads/{thread}`
+         *
+         * @param string $thread
+         */
+        public function setThread($thread)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThread()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\ChatSpaceLinkData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessage()
-    {
-    }
-    /**
-     * The space of the linked Chat space resource. Format: `spaces/{space}`
-     *
-     * @param string $space
-     */
-    public function setSpace($space)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpace()
-    {
-    }
-    /**
-     * The thread of the linked Chat space resource. Format:
-     * `spaces/{space}/threads/{thread}`
-     *
-     * @param string $thread
-     */
-    public function setThread($thread)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThread()
+    class Google_Service_HangoutsChat_ChatSpaceLinkData extends \Google\Service\HangoutsChat\ChatSpaceLinkData
     {
     }
 }

@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Style\ConditionalFormatting;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Statistical\Percentiles;
+use PhpOffice\PhpSpreadsheet\Style\Color;
 class ConditionalColorScale
 {
     private ?ConditionalFormatValueObject $minimumConditionalFormatValueObject = null;

@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class ConnectionDetails extends \Google\Collection
-{
-    protected $collection_key = 'recentMigVms';
-    protected $connectionType = Connection::class;
-    protected $connectionDataType = '';
-    /**
-     * @var string[]
-     */
-    public $recentMigVms;
-    /**
-     * @param Connection
-     */
-    public function setConnection(Connection $connection)
+namespace Google\Service\BeyondCorp {
+    class ConnectionDetails extends \Google\Collection
     {
+        protected $collection_key = 'recentMigVms';
+        protected $connectionType = Connection::class;
+        protected $connectionDataType = '';
+        /**
+         * @var string[]
+         */
+        public $recentMigVms;
+        /**
+         * @param Connection
+         */
+        public function setConnection(Connection $connection)
+        {
+        }
+        /**
+         * @return Connection
+         */
+        public function getConnection()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setRecentMigVms($recentMigVms)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRecentMigVms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Connection
+     * Runtime class alias of \Google\Service\BeyondCorp\ConnectionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnection()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setRecentMigVms($recentMigVms)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRecentMigVms()
+    class Google_Service_BeyondCorp_ConnectionDetails extends \Google\Service\BeyondCorp\ConnectionDetails
     {
     }
 }

@@ -16,6 +16,7 @@
  */
 namespace Mustache\Cache;
 
+use Mustache\Logger;
 /**
  * Mustache Cache in-memory implementation.
  *

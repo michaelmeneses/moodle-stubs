@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class GoogleUpdatedLocation extends \Google\Model
-{
-    /**
-     * The fields that Google updated.
-     *
-     * @var string
-     */
-    public $diffMask;
-    protected $locationType = Location::class;
-    protected $locationDataType = '';
-    /**
-     * The fields that have pending edits that haven't yet been pushed to Maps and
-     * Search.
-     *
-     * @var string
-     */
-    public $pendingMask;
-    /**
-     * The fields that Google updated.
-     *
-     * @param string $diffMask
-     */
-    public function setDiffMask($diffMask)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class GoogleUpdatedLocation extends \Google\Model
     {
+        /**
+         * The fields that Google updated.
+         *
+         * @var string
+         */
+        public $diffMask;
+        protected $locationType = Location::class;
+        protected $locationDataType = '';
+        /**
+         * The fields that have pending edits that haven't yet been pushed to Maps and
+         * Search.
+         *
+         * @var string
+         */
+        public $pendingMask;
+        /**
+         * The fields that Google updated.
+         *
+         * @param string $diffMask
+         */
+        public function setDiffMask($diffMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiffMask()
+        {
+        }
+        /**
+         * The Google-updated version of this location.
+         *
+         * @param Location $location
+         */
+        public function setLocation(Location $location)
+        {
+        }
+        /**
+         * @return Location
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The fields that have pending edits that haven't yet been pushed to Maps and
+         * Search.
+         *
+         * @param string $pendingMask
+         */
+        public function setPendingMask($pendingMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPendingMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\GoogleUpdatedLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiffMask()
-    {
-    }
-    /**
-     * The Google-updated version of this location.
-     *
-     * @param Location $location
-     */
-    public function setLocation(Location $location)
-    {
-    }
-    /**
-     * @return Location
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * The fields that have pending edits that haven't yet been pushed to Maps and
-     * Search.
-     *
-     * @param string $pendingMask
-     */
-    public function setPendingMask($pendingMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPendingMask()
+    class Google_Service_MyBusinessBusinessInformation_GoogleUpdatedLocation extends \Google\Service\MyBusinessBusinessInformation\GoogleUpdatedLocation
     {
     }
 }

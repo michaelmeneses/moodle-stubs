@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class ListInstancesResponse extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    /**
-     * Locations from which Instance information could not be retrieved, due to an
-     * outage or some other transient condition. Instances whose Clusters are all
-     * in one of the failed locations may be missing from `instances`, and
-     * Instances with at least one Cluster in a failed location may only have
-     * partial information returned. Values are of the form `projects//locations/`
-     *
-     * @var string[]
-     */
-    public $failedLocations;
-    protected $instancesType = Instance::class;
-    protected $instancesDataType = 'array';
-    /**
-     * DEPRECATED: This field is unused and ignored.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations from which Instance information could not be retrieved, due to an
-     * outage or some other transient condition. Instances whose Clusters are all
-     * in one of the failed locations may be missing from `instances`, and
-     * Instances with at least one Cluster in a failed location may only have
-     * partial information returned. Values are of the form `projects//locations/`
-     *
-     * @param string[] $failedLocations
-     */
-    public function setFailedLocations($failedLocations)
+namespace Google\Service\BigtableAdmin {
+    class ListInstancesResponse extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        /**
+         * Locations from which Instance information could not be retrieved, due to an
+         * outage or some other transient condition. Instances whose Clusters are all
+         * in one of the failed locations may be missing from `instances`, and
+         * Instances with at least one Cluster in a failed location may only have
+         * partial information returned. Values are of the form `projects//locations/`
+         *
+         * @var string[]
+         */
+        public $failedLocations;
+        protected $instancesType = Instance::class;
+        protected $instancesDataType = 'array';
+        /**
+         * DEPRECATED: This field is unused and ignored.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations from which Instance information could not be retrieved, due to an
+         * outage or some other transient condition. Instances whose Clusters are all
+         * in one of the failed locations may be missing from `instances`, and
+         * Instances with at least one Cluster in a failed location may only have
+         * partial information returned. Values are of the form `projects//locations/`
+         *
+         * @param string[] $failedLocations
+         */
+        public function setFailedLocations($failedLocations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFailedLocations()
+        {
+        }
+        /**
+         * The list of requested instances.
+         *
+         * @param Instance[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return Instance[]
+         */
+        public function getInstances()
+        {
+        }
+        /**
+         * DEPRECATED: This field is unused and ignored.
+         *
+         * @deprecated
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\BigtableAdmin\ListInstancesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailedLocations()
-    {
-    }
-    /**
-     * The list of requested instances.
-     *
-     * @param Instance[] $instances
-     */
-    public function setInstances($instances)
-    {
-    }
-    /**
-     * @return Instance[]
-     */
-    public function getInstances()
-    {
-    }
-    /**
-     * DEPRECATED: This field is unused and ignored.
-     *
-     * @deprecated
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_BigtableAdmin_ListInstancesResponse extends \Google\Service\BigtableAdmin\ListInstancesResponse
     {
     }
 }

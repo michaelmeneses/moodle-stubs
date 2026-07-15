@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RemoveContextChildrenRequest extends \Google\Collection
-{
-    protected $collection_key = 'childContexts';
-    /**
-     * The resource names of the child Contexts.
-     *
-     * @var string[]
-     */
-    public $childContexts;
-    /**
-     * The resource names of the child Contexts.
-     *
-     * @param string[] $childContexts
-     */
-    public function setChildContexts($childContexts)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RemoveContextChildrenRequest extends \Google\Collection
     {
+        protected $collection_key = 'childContexts';
+        /**
+         * The resource names of the child Contexts.
+         *
+         * @var string[]
+         */
+        public $childContexts;
+        /**
+         * The resource names of the child Contexts.
+         *
+         * @param string[] $childContexts
+         */
+        public function setChildContexts($childContexts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getChildContexts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RemoveContextChildrenRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChildContexts()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RemoveContextChildrenRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RemoveContextChildrenRequest
     {
     }
 }

@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ReplaceSitesRequest extends \Google\Collection
-{
-    protected $collection_key = 'newSites';
-    /**
-     * The ID of the advertiser that owns the parent channel.
-     *
-     * @var string
-     */
-    public $advertiserId;
-    protected $newSitesType = Site::class;
-    protected $newSitesDataType = 'array';
-    /**
-     * The ID of the partner that owns the parent channel.
-     *
-     * @var string
-     */
-    public $partnerId;
-    /**
-     * The ID of the advertiser that owns the parent channel.
-     *
-     * @param string $advertiserId
-     */
-    public function setAdvertiserId($advertiserId)
+namespace Google\Service\DisplayVideo {
+    class ReplaceSitesRequest extends \Google\Collection
     {
+        protected $collection_key = 'newSites';
+        /**
+         * The ID of the advertiser that owns the parent channel.
+         *
+         * @var string
+         */
+        public $advertiserId;
+        protected $newSitesType = Site::class;
+        protected $newSitesDataType = 'array';
+        /**
+         * The ID of the partner that owns the parent channel.
+         *
+         * @var string
+         */
+        public $partnerId;
+        /**
+         * The ID of the advertiser that owns the parent channel.
+         *
+         * @param string $advertiserId
+         */
+        public function setAdvertiserId($advertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserId()
+        {
+        }
+        /**
+         * The sites that will replace the existing sites assigned to the channel,
+         * specified as a list of Sites.
+         *
+         * @param Site[] $newSites
+         */
+        public function setNewSites($newSites)
+        {
+        }
+        /**
+         * @return Site[]
+         */
+        public function getNewSites()
+        {
+        }
+        /**
+         * The ID of the partner that owns the parent channel.
+         *
+         * @param string $partnerId
+         */
+        public function setPartnerId($partnerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartnerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\ReplaceSitesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvertiserId()
-    {
-    }
-    /**
-     * The sites that will replace the existing sites assigned to the channel,
-     * specified as a list of Sites.
-     *
-     * @param Site[] $newSites
-     */
-    public function setNewSites($newSites)
-    {
-    }
-    /**
-     * @return Site[]
-     */
-    public function getNewSites()
-    {
-    }
-    /**
-     * The ID of the partner that owns the parent channel.
-     *
-     * @param string $partnerId
-     */
-    public function setPartnerId($partnerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPartnerId()
+    class Google_Service_DisplayVideo_ReplaceSitesRequest extends \Google\Service\DisplayVideo\ReplaceSitesRequest
     {
     }
 }

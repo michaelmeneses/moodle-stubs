@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementVersionsV1ThirdPartyProfileUser extends \Google\Model
-{
-    /**
-     * Identifier. Format: customers/{customer_id}/thirdPartyProfileUsers/{third_p
-     * arty_profile_user_id}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The ID of the organizational unit assigned to the user.
-     *
-     * @var string
-     */
-    public $orgUnitId;
-    /**
-     * Identifier. Format: customers/{customer_id}/thirdPartyProfileUsers/{third_p
-     * arty_profile_user_id}
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementVersionsV1ThirdPartyProfileUser extends \Google\Model
     {
+        /**
+         * Identifier. Format: customers/{customer_id}/thirdPartyProfileUsers/{third_p
+         * arty_profile_user_id}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The ID of the organizational unit assigned to the user.
+         *
+         * @var string
+         */
+        public $orgUnitId;
+        /**
+         * Identifier. Format: customers/{customer_id}/thirdPartyProfileUsers/{third_p
+         * arty_profile_user_id}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The ID of the organizational unit assigned to the user.
+         *
+         * @param string $orgUnitId
+         */
+        public function setOrgUnitId($orgUnitId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrgUnitId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ThirdPartyProfileUser registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The ID of the organizational unit assigned to the user.
-     *
-     * @param string $orgUnitId
-     */
-    public function setOrgUnitId($orgUnitId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrgUnitId()
+    class Google_Service_ChromeManagement_GoogleChromeManagementVersionsV1ThirdPartyProfileUser extends \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ThirdPartyProfileUser
     {
     }
 }

@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class MetricFilterClause extends \Google\Collection
-{
-    protected $collection_key = 'filters';
-    protected $filtersType = MetricFilter::class;
-    protected $filtersDataType = 'array';
-    /**
-     * @var string
-     */
-    public $operator;
-    /**
-     * @param MetricFilter[]
-     */
-    public function setFilters($filters)
+namespace Google\Service\AnalyticsReporting {
+    class MetricFilterClause extends \Google\Collection
     {
+        protected $collection_key = 'filters';
+        protected $filtersType = MetricFilter::class;
+        protected $filtersDataType = 'array';
+        /**
+         * @var string
+         */
+        public $operator;
+        /**
+         * @param MetricFilter[]
+         */
+        public function setFilters($filters)
+        {
+        }
+        /**
+         * @return MetricFilter[]
+         */
+        public function getFilters()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOperator($operator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperator()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MetricFilter[]
+     * Runtime class alias of \Google\Service\AnalyticsReporting\MetricFilterClause registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilters()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOperator($operator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperator()
+    class Google_Service_AnalyticsReporting_MetricFilterClause extends \Google\Service\AnalyticsReporting\MetricFilterClause
     {
     }
 }

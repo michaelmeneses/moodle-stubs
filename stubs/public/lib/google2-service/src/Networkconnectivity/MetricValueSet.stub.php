@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class MetricValueSet extends \Google\Collection
-{
-    protected $collection_key = 'metricValues';
-    public $metricName;
-    protected $metricValuesType = MetricValue::class;
-    protected $metricValuesDataType = 'array';
-    public function setMetricName($metricName)
+namespace Google\Service\Networkconnectivity {
+    class MetricValueSet extends \Google\Collection
     {
+        protected $collection_key = 'metricValues';
+        public $metricName;
+        protected $metricValuesType = MetricValue::class;
+        protected $metricValuesDataType = 'array';
+        public function setMetricName($metricName)
+        {
+        }
+        public function getMetricName()
+        {
+        }
+        /**
+         * @param MetricValue[]
+         */
+        public function setMetricValues($metricValues)
+        {
+        }
+        /**
+         * @return MetricValue[]
+         */
+        public function getMetricValues()
+        {
+        }
     }
-    public function getMetricName()
-    {
-    }
+}
+namespace {
     /**
-     * @param MetricValue[]
+     * Runtime class alias of \Google\Service\Networkconnectivity\MetricValueSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setMetricValues($metricValues)
-    {
-    }
-    /**
-     * @return MetricValue[]
-     */
-    public function getMetricValues()
+    class Google_Service_Networkconnectivity_MetricValueSet extends \Google\Service\Networkconnectivity\MetricValueSet
     {
     }
 }

@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteMessageProps extends \Google\Model
-{
-    protected $babelPropsType = AppsDynamiteBabelMessageProps::class;
-    protected $babelPropsDataType = '';
-    /**
-     * @param AppsDynamiteBabelMessageProps
-     */
-    public function setBabelProps(AppsDynamiteBabelMessageProps $babelProps)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteMessageProps extends \Google\Model
     {
+        protected $babelPropsType = AppsDynamiteBabelMessageProps::class;
+        protected $babelPropsDataType = '';
+        /**
+         * @param AppsDynamiteBabelMessageProps
+         */
+        public function setBabelProps(AppsDynamiteBabelMessageProps $babelProps)
+        {
+        }
+        /**
+         * @return AppsDynamiteBabelMessageProps
+         */
+        public function getBabelProps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteBabelMessageProps
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteMessageProps registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBabelProps()
+    class Google_Service_CloudSearch_AppsDynamiteMessageProps extends \Google\Service\CloudSearch\AppsDynamiteMessageProps
     {
     }
 }

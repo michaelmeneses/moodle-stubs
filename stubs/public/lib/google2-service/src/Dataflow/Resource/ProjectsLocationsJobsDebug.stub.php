@@ -21,65 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow\Resource;
-
-/**
- * The "debug" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dataflowService = new Google\Service\Dataflow(...);
- *   $debug = $dataflowService->projects_locations_jobs_debug;
- *  </code>
- */
-class ProjectsLocationsJobsDebug extends \Google\Service\Resource
-{
+namespace Google\Service\Dataflow\Resource {
+    use Google\Service\Dataflow\GetDebugConfigRequest;
+    use Google\Service\Dataflow\GetDebugConfigResponse;
+    use Google\Service\Dataflow\GetWorkerStacktracesRequest;
+    use Google\Service\Dataflow\GetWorkerStacktracesResponse;
+    use Google\Service\Dataflow\SendDebugCaptureRequest;
+    use Google\Service\Dataflow\SendDebugCaptureResponse;
     /**
-     * Get encoded debug configuration for component. Not cacheable.
-     * (debug.getConfig)
-     *
-     * @param string $projectId The project id.
-     * @param string $location The [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
-     * contains the job specified by job_id.
-     * @param string $jobId The job id.
-     * @param GetDebugConfigRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GetDebugConfigResponse
-     * @throws \Google\Service\Exception
+     * The "debug" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dataflowService = new Google\Service\Dataflow(...);
+     *   $debug = $dataflowService->projects_locations_jobs_debug;
+     *  </code>
      */
-    public function getConfig($projectId, $location, $jobId, GetDebugConfigRequest $postBody, $optParams = [])
+    class ProjectsLocationsJobsDebug extends \Google\Service\Resource
     {
+        /**
+         * Get encoded debug configuration for component. Not cacheable.
+         * (debug.getConfig)
+         *
+         * @param string $projectId The project id.
+         * @param string $location The [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
+         * contains the job specified by job_id.
+         * @param string $jobId The job id.
+         * @param GetDebugConfigRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GetDebugConfigResponse
+         * @throws \Google\Service\Exception
+         */
+        public function getConfig($projectId, $location, $jobId, GetDebugConfigRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Get worker stacktraces from debug capture. (debug.getWorkerStacktraces)
+         *
+         * @param string $projectId The project id.
+         * @param string $location The [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
+         * contains the job specified by job_id.
+         * @param string $jobId The job for which to get stacktraces.
+         * @param GetWorkerStacktracesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GetWorkerStacktracesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function getWorkerStacktraces($projectId, $location, $jobId, GetWorkerStacktracesRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Send encoded debug capture data for component. (debug.sendCapture)
+         *
+         * @param string $projectId The project id.
+         * @param string $location The [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
+         * contains the job specified by job_id.
+         * @param string $jobId The job id.
+         * @param SendDebugCaptureRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SendDebugCaptureResponse
+         * @throws \Google\Service\Exception
+         */
+        public function sendCapture($projectId, $location, $jobId, SendDebugCaptureRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Get worker stacktraces from debug capture. (debug.getWorkerStacktraces)
-     *
-     * @param string $projectId The project id.
-     * @param string $location The [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
-     * contains the job specified by job_id.
-     * @param string $jobId The job for which to get stacktraces.
-     * @param GetWorkerStacktracesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GetWorkerStacktracesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dataflow\Resource\ProjectsLocationsJobsDebug registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWorkerStacktraces($projectId, $location, $jobId, GetWorkerStacktracesRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Send encoded debug capture data for component. (debug.sendCapture)
-     *
-     * @param string $projectId The project id.
-     * @param string $location The [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
-     * contains the job specified by job_id.
-     * @param string $jobId The job id.
-     * @param SendDebugCaptureRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SendDebugCaptureResponse
-     * @throws \Google\Service\Exception
-     */
-    public function sendCapture($projectId, $location, $jobId, SendDebugCaptureRequest $postBody, $optParams = [])
+    class Google_Service_Dataflow_Resource_ProjectsLocationsJobsDebug extends \Google\Service\Dataflow\Resource\ProjectsLocationsJobsDebug
     {
     }
 }

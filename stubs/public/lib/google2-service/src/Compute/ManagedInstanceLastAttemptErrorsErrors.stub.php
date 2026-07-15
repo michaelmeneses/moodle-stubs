@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ManagedInstanceLastAttemptErrorsErrors extends \Google\Collection
-{
-    protected $collection_key = 'errorDetails';
-    /**
-     * [Output Only] The error type identifier for this error.
-     *
-     * @var string
-     */
-    public $code;
-    protected $errorDetailsType = ManagedInstanceLastAttemptErrorsErrorsErrorDetails::class;
-    protected $errorDetailsDataType = 'array';
-    /**
-     * [Output Only] Indicates the field in the request that caused the error.
-     * This property is optional.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * [Output Only] An optional, human-readable error message.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * [Output Only] The error type identifier for this error.
-     *
-     * @param string $code
-     */
-    public function setCode($code)
+namespace Google\Service\Compute {
+    class ManagedInstanceLastAttemptErrorsErrors extends \Google\Collection
     {
+        protected $collection_key = 'errorDetails';
+        /**
+         * [Output Only] The error type identifier for this error.
+         *
+         * @var string
+         */
+        public $code;
+        protected $errorDetailsType = ManagedInstanceLastAttemptErrorsErrorsErrorDetails::class;
+        protected $errorDetailsDataType = 'array';
+        /**
+         * [Output Only] Indicates the field in the request that caused the error.
+         * This property is optional.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * [Output Only] An optional, human-readable error message.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * [Output Only] The error type identifier for this error.
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * [Output Only] An optional list of messages that contain the error details.
+         * There is a set of defined message types to use for providing details.The
+         * syntax depends on the error code. For example, QuotaExceededInfo will have
+         * details when the error code is QUOTA_EXCEEDED.
+         *
+         * @param ManagedInstanceLastAttemptErrorsErrorsErrorDetails[] $errorDetails
+         */
+        public function setErrorDetails($errorDetails)
+        {
+        }
+        /**
+         * @return ManagedInstanceLastAttemptErrorsErrorsErrorDetails[]
+         */
+        public function getErrorDetails()
+        {
+        }
+        /**
+         * [Output Only] Indicates the field in the request that caused the error.
+         * This property is optional.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * [Output Only] An optional, human-readable error message.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\ManagedInstanceLastAttemptErrorsErrors registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * [Output Only] An optional list of messages that contain the error details.
-     * There is a set of defined message types to use for providing details.The
-     * syntax depends on the error code. For example, QuotaExceededInfo will have
-     * details when the error code is QUOTA_EXCEEDED.
-     *
-     * @param ManagedInstanceLastAttemptErrorsErrorsErrorDetails[] $errorDetails
-     */
-    public function setErrorDetails($errorDetails)
-    {
-    }
-    /**
-     * @return ManagedInstanceLastAttemptErrorsErrorsErrorDetails[]
-     */
-    public function getErrorDetails()
-    {
-    }
-    /**
-     * [Output Only] Indicates the field in the request that caused the error.
-     * This property is optional.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * [Output Only] An optional, human-readable error message.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
+    class Google_Service_Compute_ManagedInstanceLastAttemptErrorsErrors extends \Google\Service\Compute\ManagedInstanceLastAttemptErrorsErrors
     {
     }
 }

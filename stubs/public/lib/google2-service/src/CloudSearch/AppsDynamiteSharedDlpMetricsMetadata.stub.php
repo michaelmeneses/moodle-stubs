@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedDlpMetricsMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $dlpStatus;
-    /**
-     * @param string
-     */
-    public function setDlpStatus($dlpStatus)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedDlpMetricsMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $dlpStatus;
+        /**
+         * @param string
+         */
+        public function setDlpStatus($dlpStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDlpStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedDlpMetricsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDlpStatus()
+    class Google_Service_CloudSearch_AppsDynamiteSharedDlpMetricsMetadata extends \Google\Service\CloudSearch\AppsDynamiteSharedDlpMetricsMetadata
     {
     }
 }

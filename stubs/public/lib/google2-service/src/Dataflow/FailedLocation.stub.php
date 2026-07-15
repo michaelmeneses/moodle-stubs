@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class FailedLocation extends \Google\Model
-{
-    /**
-     * The name of the [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
-     * failed to respond.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The name of the [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
-     * failed to respond.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Dataflow {
+    class FailedLocation extends \Google\Model
     {
+        /**
+         * The name of the [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
+         * failed to respond.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The name of the [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
+         * failed to respond.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\FailedLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_Dataflow_FailedLocation extends \Google\Service\Dataflow\FailedLocation
     {
     }
 }

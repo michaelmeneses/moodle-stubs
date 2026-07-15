@@ -21,92 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager\Resource;
-
-/**
- * The "environments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $tagmanagerService = new Google\Service\TagManager(...);
- *   $environments = $tagmanagerService->accounts_containers_environments;
- *  </code>
- */
-class AccountsContainersEnvironments extends \Google\Service\Resource
-{
+namespace Google\Service\TagManager\Resource {
+    use Google\Service\TagManager\Environment;
+    use Google\Service\TagManager\ListEnvironmentsResponse;
     /**
-     * Creates a GTM Environment. (environments.create)
-     *
-     * @param string $parent GTM Container's API relative path.
-     * @param Environment $postBody
-     * @param array $optParams Optional parameters.
-     * @return Environment
-     * @throws \Google\Service\Exception
+     * The "environments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $tagmanagerService = new Google\Service\TagManager(...);
+     *   $environments = $tagmanagerService->accounts_containers_environments;
+     *  </code>
      */
-    public function create($parent, Environment $postBody, $optParams = [])
+    class AccountsContainersEnvironments extends \Google\Service\Resource
     {
+        /**
+         * Creates a GTM Environment. (environments.create)
+         *
+         * @param string $parent GTM Container's API relative path.
+         * @param Environment $postBody
+         * @param array $optParams Optional parameters.
+         * @return Environment
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Environment $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a GTM Environment. (environments.delete)
+         *
+         * @param string $path GTM Environment's API relative path.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($path, $optParams = [])
+        {
+        }
+        /**
+         * Gets a GTM Environment. (environments.get)
+         *
+         * @param string $path GTM Environment's API relative path.
+         * @param array $optParams Optional parameters.
+         * @return Environment
+         * @throws \Google\Service\Exception
+         */
+        public function get($path, $optParams = [])
+        {
+        }
+        /**
+         * Lists all GTM Environments of a GTM Container.
+         * (environments.listAccountsContainersEnvironments)
+         *
+         * @param string $parent GTM Container's API relative path.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string pageToken Continuation token for fetching the next page of
+         * results.
+         * @return ListEnvironmentsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsContainersEnvironments($parent, $optParams = [])
+        {
+        }
+        /**
+         * Re-generates the authorization code for a GTM Environment.
+         * (environments.reauthorize)
+         *
+         * @param string $path GTM Environment's API relative path.
+         * @param Environment $postBody
+         * @param array $optParams Optional parameters.
+         * @return Environment
+         * @throws \Google\Service\Exception
+         */
+        public function reauthorize($path, Environment $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates a GTM Environment. (environments.update)
+         *
+         * @param string $path GTM Environment's API relative path.
+         * @param Environment $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string fingerprint When provided, this fingerprint must match the
+         * fingerprint of the environment in storage.
+         * @return Environment
+         * @throws \Google\Service\Exception
+         */
+        public function update($path, Environment $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a GTM Environment. (environments.delete)
-     *
-     * @param string $path GTM Environment's API relative path.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\TagManager\Resource\AccountsContainersEnvironments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($path, $optParams = [])
-    {
-    }
-    /**
-     * Gets a GTM Environment. (environments.get)
-     *
-     * @param string $path GTM Environment's API relative path.
-     * @param array $optParams Optional parameters.
-     * @return Environment
-     * @throws \Google\Service\Exception
-     */
-    public function get($path, $optParams = [])
-    {
-    }
-    /**
-     * Lists all GTM Environments of a GTM Container.
-     * (environments.listAccountsContainersEnvironments)
-     *
-     * @param string $parent GTM Container's API relative path.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string pageToken Continuation token for fetching the next page of
-     * results.
-     * @return ListEnvironmentsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAccountsContainersEnvironments($parent, $optParams = [])
-    {
-    }
-    /**
-     * Re-generates the authorization code for a GTM Environment.
-     * (environments.reauthorize)
-     *
-     * @param string $path GTM Environment's API relative path.
-     * @param Environment $postBody
-     * @param array $optParams Optional parameters.
-     * @return Environment
-     * @throws \Google\Service\Exception
-     */
-    public function reauthorize($path, Environment $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates a GTM Environment. (environments.update)
-     *
-     * @param string $path GTM Environment's API relative path.
-     * @param Environment $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string fingerprint When provided, this fingerprint must match the
-     * fingerprint of the environment in storage.
-     * @return Environment
-     * @throws \Google\Service\Exception
-     */
-    public function update($path, Environment $postBody, $optParams = [])
+    class Google_Service_TagManager_Resource_AccountsContainersEnvironments extends \Google\Service\TagManager\Resource\AccountsContainersEnvironments
     {
     }
 }

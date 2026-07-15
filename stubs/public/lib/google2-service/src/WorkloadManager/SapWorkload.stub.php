@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class SapWorkload extends \Google\Collection
-{
-    /**
-     * Unspecified architecture.
-     */
-    public const ARCHITECTURE_ARCHITECTURE_UNSPECIFIED = 'ARCHITECTURE_UNSPECIFIED';
-    /**
-     * Invaliad architecture.
-     */
-    public const ARCHITECTURE_INVALID = 'INVALID';
-    /**
-     * A centralized system.
-     */
-    public const ARCHITECTURE_CENTRALIZED = 'CENTRALIZED';
-    /**
-     * A distributed system.
-     */
-    public const ARCHITECTURE_DISTRIBUTED = 'DISTRIBUTED';
-    /**
-     * A distributed with HA system.
-     */
-    public const ARCHITECTURE_DISTRIBUTED_HA = 'DISTRIBUTED_HA';
-    /**
-     * A standalone database system.
-     */
-    public const ARCHITECTURE_STANDALONE_DATABASE = 'STANDALONE_DATABASE';
-    /**
-     * A standalone database with HA system.
-     */
-    public const ARCHITECTURE_STANDALONE_DATABASE_HA = 'STANDALONE_DATABASE_HA';
-    protected $collection_key = 'products';
-    protected $applicationType = SapComponent::class;
-    protected $applicationDataType = '';
-    /**
-     * Output only. the architecture
-     *
-     * @var string
-     */
-    public $architecture;
-    protected $databaseType = SapComponent::class;
-    protected $databaseDataType = '';
-    /**
-     * Output only. The metadata for SAP workload.
-     *
-     * @var string[]
-     */
-    public $metadata;
-    protected $productsType = Product::class;
-    protected $productsDataType = 'array';
-    /**
-     * Output only. the acsc componment
-     *
-     * @param SapComponent $application
-     */
-    public function setApplication(SapComponent $application)
+namespace Google\Service\WorkloadManager {
+    class SapWorkload extends \Google\Collection
     {
+        /**
+         * Unspecified architecture.
+         */
+        public const ARCHITECTURE_ARCHITECTURE_UNSPECIFIED = 'ARCHITECTURE_UNSPECIFIED';
+        /**
+         * Invaliad architecture.
+         */
+        public const ARCHITECTURE_INVALID = 'INVALID';
+        /**
+         * A centralized system.
+         */
+        public const ARCHITECTURE_CENTRALIZED = 'CENTRALIZED';
+        /**
+         * A distributed system.
+         */
+        public const ARCHITECTURE_DISTRIBUTED = 'DISTRIBUTED';
+        /**
+         * A distributed with HA system.
+         */
+        public const ARCHITECTURE_DISTRIBUTED_HA = 'DISTRIBUTED_HA';
+        /**
+         * A standalone database system.
+         */
+        public const ARCHITECTURE_STANDALONE_DATABASE = 'STANDALONE_DATABASE';
+        /**
+         * A standalone database with HA system.
+         */
+        public const ARCHITECTURE_STANDALONE_DATABASE_HA = 'STANDALONE_DATABASE_HA';
+        protected $collection_key = 'products';
+        protected $applicationType = SapComponent::class;
+        protected $applicationDataType = '';
+        /**
+         * Output only. the architecture
+         *
+         * @var string
+         */
+        public $architecture;
+        protected $databaseType = SapComponent::class;
+        protected $databaseDataType = '';
+        /**
+         * Output only. The metadata for SAP workload.
+         *
+         * @var string[]
+         */
+        public $metadata;
+        protected $productsType = Product::class;
+        protected $productsDataType = 'array';
+        /**
+         * Output only. the acsc componment
+         *
+         * @param SapComponent $application
+         */
+        public function setApplication(SapComponent $application)
+        {
+        }
+        /**
+         * @return SapComponent
+         */
+        public function getApplication()
+        {
+        }
+        /**
+         * Output only. the architecture
+         *
+         * Accepted values: ARCHITECTURE_UNSPECIFIED, INVALID, CENTRALIZED,
+         * DISTRIBUTED, DISTRIBUTED_HA, STANDALONE_DATABASE, STANDALONE_DATABASE_HA
+         *
+         * @param self::ARCHITECTURE_* $architecture
+         */
+        public function setArchitecture($architecture)
+        {
+        }
+        /**
+         * @return self::ARCHITECTURE_*
+         */
+        public function getArchitecture()
+        {
+        }
+        /**
+         * Output only. the database componment
+         *
+         * @param SapComponent $database
+         */
+        public function setDatabase(SapComponent $database)
+        {
+        }
+        /**
+         * @return SapComponent
+         */
+        public function getDatabase()
+        {
+        }
+        /**
+         * Output only. The metadata for SAP workload.
+         *
+         * @param string[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Output only. the products on this workload.
+         *
+         * @param Product[] $products
+         */
+        public function setProducts($products)
+        {
+        }
+        /**
+         * @return Product[]
+         */
+        public function getProducts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SapComponent
+     * Runtime class alias of \Google\Service\WorkloadManager\SapWorkload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplication()
-    {
-    }
-    /**
-     * Output only. the architecture
-     *
-     * Accepted values: ARCHITECTURE_UNSPECIFIED, INVALID, CENTRALIZED,
-     * DISTRIBUTED, DISTRIBUTED_HA, STANDALONE_DATABASE, STANDALONE_DATABASE_HA
-     *
-     * @param self::ARCHITECTURE_* $architecture
-     */
-    public function setArchitecture($architecture)
-    {
-    }
-    /**
-     * @return self::ARCHITECTURE_*
-     */
-    public function getArchitecture()
-    {
-    }
-    /**
-     * Output only. the database componment
-     *
-     * @param SapComponent $database
-     */
-    public function setDatabase(SapComponent $database)
-    {
-    }
-    /**
-     * @return SapComponent
-     */
-    public function getDatabase()
-    {
-    }
-    /**
-     * Output only. The metadata for SAP workload.
-     *
-     * @param string[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Output only. the products on this workload.
-     *
-     * @param Product[] $products
-     */
-    public function setProducts($products)
-    {
-    }
-    /**
-     * @return Product[]
-     */
-    public function getProducts()
+    class Google_Service_WorkloadManager_SapWorkload extends \Google\Service\WorkloadManager\SapWorkload
     {
     }
 }

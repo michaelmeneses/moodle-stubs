@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class TargetState extends \Google\Collection
-{
-    protected $collection_key = 'details';
-    protected $detailsType = TargetDetails::class;
-    protected $detailsDataType = 'array';
-    /**
-     * @param TargetDetails[]
-     */
-    public function setDetails($details)
+namespace Google\Service\GameServices {
+    class TargetState extends \Google\Collection
     {
+        protected $collection_key = 'details';
+        protected $detailsType = TargetDetails::class;
+        protected $detailsDataType = 'array';
+        /**
+         * @param TargetDetails[]
+         */
+        public function setDetails($details)
+        {
+        }
+        /**
+         * @return TargetDetails[]
+         */
+        public function getDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TargetDetails[]
+     * Runtime class alias of \Google\Service\GameServices\TargetState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetails()
+    class Google_Service_GameServices_TargetState extends \Google\Service\GameServices\TargetState
     {
     }
 }

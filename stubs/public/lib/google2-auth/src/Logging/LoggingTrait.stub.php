@@ -23,6 +23,7 @@
  */
 namespace Google\Auth\Logging;
 
+use Psr\Log\LogLevel;
 /**
  * A trait used to call a PSR-3 logging interface.
  *

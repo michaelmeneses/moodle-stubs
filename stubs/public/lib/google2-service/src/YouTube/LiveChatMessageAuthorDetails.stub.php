@@ -21,168 +21,177 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LiveChatMessageAuthorDetails extends \Google\Model
-{
-    /**
-     * The YouTube channel ID.
-     *
-     * @var string
-     */
-    public $channelId;
-    /**
-     * The channel's URL.
-     *
-     * @var string
-     */
-    public $channelUrl;
-    /**
-     * The channel's display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Whether the author is a moderator of the live chat.
-     *
-     * @var bool
-     */
-    public $isChatModerator;
-    /**
-     * Whether the author is the owner of the live chat.
-     *
-     * @var bool
-     */
-    public $isChatOwner;
-    /**
-     * Whether the author is a sponsor of the live chat.
-     *
-     * @var bool
-     */
-    public $isChatSponsor;
-    /**
-     * Whether the author's identity has been verified by YouTube.
-     *
-     * @var bool
-     */
-    public $isVerified;
-    /**
-     * The channels's avatar URL.
-     *
-     * @var string
-     */
-    public $profileImageUrl;
-    /**
-     * The YouTube channel ID.
-     *
-     * @param string $channelId
-     */
-    public function setChannelId($channelId)
+namespace Google\Service\YouTube {
+    class LiveChatMessageAuthorDetails extends \Google\Model
     {
+        /**
+         * The YouTube channel ID.
+         *
+         * @var string
+         */
+        public $channelId;
+        /**
+         * The channel's URL.
+         *
+         * @var string
+         */
+        public $channelUrl;
+        /**
+         * The channel's display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Whether the author is a moderator of the live chat.
+         *
+         * @var bool
+         */
+        public $isChatModerator;
+        /**
+         * Whether the author is the owner of the live chat.
+         *
+         * @var bool
+         */
+        public $isChatOwner;
+        /**
+         * Whether the author is a sponsor of the live chat.
+         *
+         * @var bool
+         */
+        public $isChatSponsor;
+        /**
+         * Whether the author's identity has been verified by YouTube.
+         *
+         * @var bool
+         */
+        public $isVerified;
+        /**
+         * The channels's avatar URL.
+         *
+         * @var string
+         */
+        public $profileImageUrl;
+        /**
+         * The YouTube channel ID.
+         *
+         * @param string $channelId
+         */
+        public function setChannelId($channelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChannelId()
+        {
+        }
+        /**
+         * The channel's URL.
+         *
+         * @param string $channelUrl
+         */
+        public function setChannelUrl($channelUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChannelUrl()
+        {
+        }
+        /**
+         * The channel's display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Whether the author is a moderator of the live chat.
+         *
+         * @param bool $isChatModerator
+         */
+        public function setIsChatModerator($isChatModerator)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsChatModerator()
+        {
+        }
+        /**
+         * Whether the author is the owner of the live chat.
+         *
+         * @param bool $isChatOwner
+         */
+        public function setIsChatOwner($isChatOwner)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsChatOwner()
+        {
+        }
+        /**
+         * Whether the author is a sponsor of the live chat.
+         *
+         * @param bool $isChatSponsor
+         */
+        public function setIsChatSponsor($isChatSponsor)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsChatSponsor()
+        {
+        }
+        /**
+         * Whether the author's identity has been verified by YouTube.
+         *
+         * @param bool $isVerified
+         */
+        public function setIsVerified($isVerified)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsVerified()
+        {
+        }
+        /**
+         * The channels's avatar URL.
+         *
+         * @param string $profileImageUrl
+         */
+        public function setProfileImageUrl($profileImageUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProfileImageUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\LiveChatMessageAuthorDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannelId()
-    {
-    }
-    /**
-     * The channel's URL.
-     *
-     * @param string $channelUrl
-     */
-    public function setChannelUrl($channelUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChannelUrl()
-    {
-    }
-    /**
-     * The channel's display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Whether the author is a moderator of the live chat.
-     *
-     * @param bool $isChatModerator
-     */
-    public function setIsChatModerator($isChatModerator)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsChatModerator()
-    {
-    }
-    /**
-     * Whether the author is the owner of the live chat.
-     *
-     * @param bool $isChatOwner
-     */
-    public function setIsChatOwner($isChatOwner)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsChatOwner()
-    {
-    }
-    /**
-     * Whether the author is a sponsor of the live chat.
-     *
-     * @param bool $isChatSponsor
-     */
-    public function setIsChatSponsor($isChatSponsor)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsChatSponsor()
-    {
-    }
-    /**
-     * Whether the author's identity has been verified by YouTube.
-     *
-     * @param bool $isVerified
-     */
-    public function setIsVerified($isVerified)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsVerified()
-    {
-    }
-    /**
-     * The channels's avatar URL.
-     *
-     * @param string $profileImageUrl
-     */
-    public function setProfileImageUrl($profileImageUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProfileImageUrl()
+    class Google_Service_YouTube_LiveChatMessageAuthorDetails extends \Google\Service\YouTube\LiveChatMessageAuthorDetails
     {
     }
 }

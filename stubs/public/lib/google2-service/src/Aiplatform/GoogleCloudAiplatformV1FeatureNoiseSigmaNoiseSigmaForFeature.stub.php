@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeatureNoiseSigmaNoiseSigmaForFeature extends \Google\Model
-{
-    /**
-     * The name of the input feature for which noise sigma is provided. The
-     * features are defined in explanation metadata inputs.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * This represents the standard deviation of the Gaussian kernel that will be
-     * used to add noise to the feature prior to computing gradients. Similar to
-     * noise_sigma but represents the noise added to the current feature. Defaults
-     * to 0.1.
-     *
-     * @var float
-     */
-    public $sigma;
-    /**
-     * The name of the input feature for which noise sigma is provided. The
-     * features are defined in explanation metadata inputs.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeatureNoiseSigmaNoiseSigmaForFeature extends \Google\Model
     {
+        /**
+         * The name of the input feature for which noise sigma is provided. The
+         * features are defined in explanation metadata inputs.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * This represents the standard deviation of the Gaussian kernel that will be
+         * used to add noise to the feature prior to computing gradients. Similar to
+         * noise_sigma but represents the noise added to the current feature. Defaults
+         * to 0.1.
+         *
+         * @var float
+         */
+        public $sigma;
+        /**
+         * The name of the input feature for which noise sigma is provided. The
+         * features are defined in explanation metadata inputs.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * This represents the standard deviation of the Gaussian kernel that will be
+         * used to add noise to the feature prior to computing gradients. Similar to
+         * noise_sigma but represents the noise added to the current feature. Defaults
+         * to 0.1.
+         *
+         * @param float $sigma
+         */
+        public function setSigma($sigma)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getSigma()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureNoiseSigmaNoiseSigmaForFeature registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * This represents the standard deviation of the Gaussian kernel that will be
-     * used to add noise to the feature prior to computing gradients. Similar to
-     * noise_sigma but represents the noise added to the current feature. Defaults
-     * to 0.1.
-     *
-     * @param float $sigma
-     */
-    public function setSigma($sigma)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getSigma()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeatureNoiseSigmaNoiseSigmaForFeature extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureNoiseSigmaNoiseSigmaForFeature
     {
     }
 }

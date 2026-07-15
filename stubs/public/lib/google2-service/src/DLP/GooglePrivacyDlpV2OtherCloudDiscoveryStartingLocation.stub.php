@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2OtherCloudDiscoveryStartingLocation extends \Google\Model
-{
-    protected $awsLocationType = GooglePrivacyDlpV2AwsDiscoveryStartingLocation::class;
-    protected $awsLocationDataType = '';
-    /**
-     * The AWS starting location for discovery.
-     *
-     * @param GooglePrivacyDlpV2AwsDiscoveryStartingLocation $awsLocation
-     */
-    public function setAwsLocation(GooglePrivacyDlpV2AwsDiscoveryStartingLocation $awsLocation)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2OtherCloudDiscoveryStartingLocation extends \Google\Model
     {
+        protected $awsLocationType = GooglePrivacyDlpV2AwsDiscoveryStartingLocation::class;
+        protected $awsLocationDataType = '';
+        /**
+         * The AWS starting location for discovery.
+         *
+         * @param GooglePrivacyDlpV2AwsDiscoveryStartingLocation $awsLocation
+         */
+        public function setAwsLocation(GooglePrivacyDlpV2AwsDiscoveryStartingLocation $awsLocation)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2AwsDiscoveryStartingLocation
+         */
+        public function getAwsLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2AwsDiscoveryStartingLocation
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2OtherCloudDiscoveryStartingLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAwsLocation()
+    class Google_Service_DLP_GooglePrivacyDlpV2OtherCloudDiscoveryStartingLocation extends \Google\Service\DLP\GooglePrivacyDlpV2OtherCloudDiscoveryStartingLocation
     {
     }
 }

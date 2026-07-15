@@ -21,63 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher\Resource;
-
-/**
- * The "products" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $products = $androidpublisherService->purchases_products;
- *  </code>
- */
-class PurchasesProducts extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidPublisher\Resource {
+    use Google\Service\AndroidPublisher\ProductPurchase;
+    use Google\Service\AndroidPublisher\ProductPurchasesAcknowledgeRequest;
     /**
-     * Acknowledges a purchase of an inapp item. (products.acknowledge)
-     *
-     * @param string $packageName The package name of the application the inapp
-     * product was sold in (for example, 'com.some.thing').
-     * @param string $productId The inapp product SKU (for example,
-     * 'com.some.thing.inapp1').
-     * @param string $token The token provided to the user's device when the inapp
-     * product was purchased.
-     * @param ProductPurchasesAcknowledgeRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "products" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
+     *   $products = $androidpublisherService->purchases_products;
+     *  </code>
      */
-    public function acknowledge($packageName, $productId, $token, ProductPurchasesAcknowledgeRequest $postBody, $optParams = [])
+    class PurchasesProducts extends \Google\Service\Resource
     {
+        /**
+         * Acknowledges a purchase of an inapp item. (products.acknowledge)
+         *
+         * @param string $packageName The package name of the application the inapp
+         * product was sold in (for example, 'com.some.thing').
+         * @param string $productId The inapp product SKU (for example,
+         * 'com.some.thing.inapp1').
+         * @param string $token The token provided to the user's device when the inapp
+         * product was purchased.
+         * @param ProductPurchasesAcknowledgeRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function acknowledge($packageName, $productId, $token, ProductPurchasesAcknowledgeRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Consumes a purchase for an inapp item. (products.consume)
+         *
+         * @param string $packageName The package name of the application the inapp
+         * product was sold in (for example, 'com.some.thing').
+         * @param string $productId The inapp product SKU (for example,
+         * 'com.some.thing.inapp1').
+         * @param string $token The token provided to the user's device when the inapp
+         * product was purchased.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function consume($packageName, $productId, $token, $optParams = [])
+        {
+        }
+        /**
+         * Checks the purchase and consumption status of an inapp item. (products.get)
+         *
+         * @param string $packageName The package name of the application the inapp
+         * product was sold in (for example, 'com.some.thing').
+         * @param string $productId The inapp product SKU (for example,
+         * 'com.some.thing.inapp1').
+         * @param string $token The token provided to the user's device when the inapp
+         * product was purchased.
+         * @param array $optParams Optional parameters.
+         * @return ProductPurchase
+         * @throws \Google\Service\Exception
+         */
+        public function get($packageName, $productId, $token, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Consumes a purchase for an inapp item. (products.consume)
-     *
-     * @param string $packageName The package name of the application the inapp
-     * product was sold in (for example, 'com.some.thing').
-     * @param string $productId The inapp product SKU (for example,
-     * 'com.some.thing.inapp1').
-     * @param string $token The token provided to the user's device when the inapp
-     * product was purchased.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidPublisher\Resource\PurchasesProducts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function consume($packageName, $productId, $token, $optParams = [])
-    {
-    }
-    /**
-     * Checks the purchase and consumption status of an inapp item. (products.get)
-     *
-     * @param string $packageName The package name of the application the inapp
-     * product was sold in (for example, 'com.some.thing').
-     * @param string $productId The inapp product SKU (for example,
-     * 'com.some.thing.inapp1').
-     * @param string $token The token provided to the user's device when the inapp
-     * product was purchased.
-     * @param array $optParams Optional parameters.
-     * @return ProductPurchase
-     * @throws \Google\Service\Exception
-     */
-    public function get($packageName, $productId, $token, $optParams = [])
+    class Google_Service_AndroidPublisher_Resource_PurchasesProducts extends \Google\Service\AndroidPublisher\Resource\PurchasesProducts
     {
     }
 }

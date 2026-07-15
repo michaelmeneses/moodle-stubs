@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class CpuUtilization extends \Google\Model
-{
-    /**
-     * Period of time over which CPU utilization is calculated.
-     *
-     * @var string
-     */
-    public $aggregationWindowLength;
-    /**
-     * Target CPU utilization ratio to maintain when scaling. Must be between 0
-     * and 1.
-     *
-     * @var 
-     */
-    public $targetUtilization;
-    /**
-     * Period of time over which CPU utilization is calculated.
-     *
-     * @param string $aggregationWindowLength
-     */
-    public function setAggregationWindowLength($aggregationWindowLength)
+namespace Google\Service\Appengine {
+    class CpuUtilization extends \Google\Model
     {
+        /**
+         * Period of time over which CPU utilization is calculated.
+         *
+         * @var string
+         */
+        public $aggregationWindowLength;
+        /**
+         * Target CPU utilization ratio to maintain when scaling. Must be between 0
+         * and 1.
+         *
+         * @var 
+         */
+        public $targetUtilization;
+        /**
+         * Period of time over which CPU utilization is calculated.
+         *
+         * @param string $aggregationWindowLength
+         */
+        public function setAggregationWindowLength($aggregationWindowLength)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAggregationWindowLength()
+        {
+        }
+        public function setTargetUtilization($targetUtilization)
+        {
+        }
+        public function getTargetUtilization()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Appengine\CpuUtilization registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAggregationWindowLength()
-    {
-    }
-    public function setTargetUtilization($targetUtilization)
-    {
-    }
-    public function getTargetUtilization()
+    class Google_Service_Appengine_CpuUtilization extends \Google\Service\Appengine\CpuUtilization
     {
     }
 }

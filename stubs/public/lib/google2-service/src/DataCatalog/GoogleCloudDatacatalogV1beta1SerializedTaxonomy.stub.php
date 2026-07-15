@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1SerializedTaxonomy extends \Google\Collection
-{
-    protected $collection_key = 'policyTags';
-    public $activatedPolicyTypes;
-    public $description;
-    public $displayName;
-    protected $policyTagsType = GoogleCloudDatacatalogV1beta1SerializedPolicyTag::class;
-    protected $policyTagsDataType = 'array';
-    public function setActivatedPolicyTypes($activatedPolicyTypes)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1SerializedTaxonomy extends \Google\Collection
     {
+        protected $collection_key = 'policyTags';
+        public $activatedPolicyTypes;
+        public $description;
+        public $displayName;
+        protected $policyTagsType = GoogleCloudDatacatalogV1beta1SerializedPolicyTag::class;
+        protected $policyTagsDataType = 'array';
+        public function setActivatedPolicyTypes($activatedPolicyTypes)
+        {
+        }
+        public function getActivatedPolicyTypes()
+        {
+        }
+        public function setDescription($description)
+        {
+        }
+        public function getDescription()
+        {
+        }
+        public function setDisplayName($displayName)
+        {
+        }
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param GoogleCloudDatacatalogV1beta1SerializedPolicyTag[]
+         */
+        public function setPolicyTags($policyTags)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1SerializedPolicyTag[]
+         */
+        public function getPolicyTags()
+        {
+        }
     }
-    public function getActivatedPolicyTypes()
-    {
-    }
-    public function setDescription($description)
-    {
-    }
-    public function getDescription()
-    {
-    }
-    public function setDisplayName($displayName)
-    {
-    }
-    public function getDisplayName()
-    {
-    }
+}
+namespace {
     /**
-     * @param GoogleCloudDatacatalogV1beta1SerializedPolicyTag[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1SerializedTaxonomy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setPolicyTags($policyTags)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1beta1SerializedPolicyTag[]
-     */
-    public function getPolicyTags()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1SerializedTaxonomy extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1SerializedTaxonomy
     {
     }
 }

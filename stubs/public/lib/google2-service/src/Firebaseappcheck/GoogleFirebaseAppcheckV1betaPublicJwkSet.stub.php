@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1betaPublicJwkSet extends \Google\Collection
-{
-    protected $collection_key = 'keys';
-    protected $keysType = GoogleFirebaseAppcheckV1betaPublicJwk::class;
-    protected $keysDataType = 'array';
-    /**
-     * @param GoogleFirebaseAppcheckV1betaPublicJwk[]
-     */
-    public function setKeys($keys)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1betaPublicJwkSet extends \Google\Collection
     {
+        protected $collection_key = 'keys';
+        protected $keysType = GoogleFirebaseAppcheckV1betaPublicJwk::class;
+        protected $keysDataType = 'array';
+        /**
+         * @param GoogleFirebaseAppcheckV1betaPublicJwk[]
+         */
+        public function setKeys($keys)
+        {
+        }
+        /**
+         * @return GoogleFirebaseAppcheckV1betaPublicJwk[]
+         */
+        public function getKeys()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFirebaseAppcheckV1betaPublicJwk[]
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaPublicJwkSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeys()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1betaPublicJwkSet extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaPublicJwkSet
     {
     }
 }

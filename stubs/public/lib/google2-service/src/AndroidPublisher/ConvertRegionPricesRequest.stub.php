@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ConvertRegionPricesRequest extends \Google\Model
-{
-    protected $priceType = Money::class;
-    protected $priceDataType = '';
-    /**
-     * The intital price to convert other regions from. Tax exclusive.
-     *
-     * @param Money $price
-     */
-    public function setPrice(Money $price)
+namespace Google\Service\AndroidPublisher {
+    class ConvertRegionPricesRequest extends \Google\Model
     {
+        protected $priceType = Money::class;
+        protected $priceDataType = '';
+        /**
+         * The intital price to convert other regions from. Tax exclusive.
+         *
+         * @param Money $price
+         */
+        public function setPrice(Money $price)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getPrice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Money
+     * Runtime class alias of \Google\Service\AndroidPublisher\ConvertRegionPricesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrice()
+    class Google_Service_AndroidPublisher_ConvertRegionPricesRequest extends \Google\Service\AndroidPublisher\ConvertRegionPricesRequest
     {
     }
 }

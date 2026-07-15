@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaDataSharingSettings extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var bool
-     */
-    public $sharingWithGoogleAnySalesEnabled;
-    /**
-     * @var bool
-     */
-    public $sharingWithGoogleAssignedSalesEnabled;
-    /**
-     * @var bool
-     */
-    public $sharingWithGoogleProductsEnabled;
-    /**
-     * @var bool
-     */
-    public $sharingWithGoogleSupportEnabled;
-    /**
-     * @var bool
-     */
-    public $sharingWithOthersEnabled;
-    /**
-     * @param string
-     */
-    public function setName($name)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaDataSharingSettings extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var bool
+         */
+        public $sharingWithGoogleAnySalesEnabled;
+        /**
+         * @var bool
+         */
+        public $sharingWithGoogleAssignedSalesEnabled;
+        /**
+         * @var bool
+         */
+        public $sharingWithGoogleProductsEnabled;
+        /**
+         * @var bool
+         */
+        public $sharingWithGoogleSupportEnabled;
+        /**
+         * @var bool
+         */
+        public $sharingWithOthersEnabled;
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setSharingWithGoogleAnySalesEnabled($sharingWithGoogleAnySalesEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSharingWithGoogleAnySalesEnabled()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setSharingWithGoogleAssignedSalesEnabled($sharingWithGoogleAssignedSalesEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSharingWithGoogleAssignedSalesEnabled()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setSharingWithGoogleProductsEnabled($sharingWithGoogleProductsEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSharingWithGoogleProductsEnabled()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setSharingWithGoogleSupportEnabled($sharingWithGoogleSupportEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSharingWithGoogleSupportEnabled()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setSharingWithOthersEnabled($sharingWithOthersEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSharingWithOthersEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaDataSharingSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setSharingWithGoogleAnySalesEnabled($sharingWithGoogleAnySalesEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSharingWithGoogleAnySalesEnabled()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setSharingWithGoogleAssignedSalesEnabled($sharingWithGoogleAssignedSalesEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSharingWithGoogleAssignedSalesEnabled()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setSharingWithGoogleProductsEnabled($sharingWithGoogleProductsEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSharingWithGoogleProductsEnabled()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setSharingWithGoogleSupportEnabled($sharingWithGoogleSupportEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSharingWithGoogleSupportEnabled()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setSharingWithOthersEnabled($sharingWithOthersEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSharingWithOthersEnabled()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaDataSharingSettings extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaDataSharingSettings
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FulfillmentResult extends \Google\Model
-{
-    /**
-     * Output only. Confidence for fulfillment score.
-     *
-     * @var float
-     */
-    public $confidence;
-    /**
-     * Output only. Explanation for fulfillment score.
-     *
-     * @var string
-     */
-    public $explanation;
-    /**
-     * Output only. Fulfillment score.
-     *
-     * @var float
-     */
-    public $score;
-    /**
-     * Output only. Confidence for fulfillment score.
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FulfillmentResult extends \Google\Model
     {
+        /**
+         * Output only. Confidence for fulfillment score.
+         *
+         * @var float
+         */
+        public $confidence;
+        /**
+         * Output only. Explanation for fulfillment score.
+         *
+         * @var string
+         */
+        public $explanation;
+        /**
+         * Output only. Fulfillment score.
+         *
+         * @var float
+         */
+        public $score;
+        /**
+         * Output only. Confidence for fulfillment score.
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * Output only. Explanation for fulfillment score.
+         *
+         * @param string $explanation
+         */
+        public function setExplanation($explanation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExplanation()
+        {
+        }
+        /**
+         * Output only. Fulfillment score.
+         *
+         * @param float $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FulfillmentResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidence()
-    {
-    }
-    /**
-     * Output only. Explanation for fulfillment score.
-     *
-     * @param string $explanation
-     */
-    public function setExplanation($explanation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExplanation()
-    {
-    }
-    /**
-     * Output only. Fulfillment score.
-     *
-     * @param float $score
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FulfillmentResult extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FulfillmentResult
     {
     }
 }

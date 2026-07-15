@@ -8,6 +8,13 @@
  */
 namespace core_reportbuilder\task;
 
+use core\{clock, di};
+use core\task\adhoc_task;
+use core_user;
+use core_reportbuilder\local\schedules\base;
+use core_reportbuilder\local\helpers\schedule as helper;
+use core_reportbuilder\local\models\schedule;
+use moodle_exception;
 /**
  * Ad-hoc task for sending a single report schedule
  *

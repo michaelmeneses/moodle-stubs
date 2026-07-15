@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StreetViewPublish;
-
-class Connection extends \Google\Model
-{
-    protected $targetType = PhotoId::class;
-    protected $targetDataType = '';
-    /**
-     * Required. The destination of the connection from the containing photo to
-     * another photo.
-     *
-     * @param PhotoId $target
-     */
-    public function setTarget(PhotoId $target)
+namespace Google\Service\StreetViewPublish {
+    class Connection extends \Google\Model
     {
+        protected $targetType = PhotoId::class;
+        protected $targetDataType = '';
+        /**
+         * Required. The destination of the connection from the containing photo to
+         * another photo.
+         *
+         * @param PhotoId $target
+         */
+        public function setTarget(PhotoId $target)
+        {
+        }
+        /**
+         * @return PhotoId
+         */
+        public function getTarget()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PhotoId
+     * Runtime class alias of \Google\Service\StreetViewPublish\Connection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTarget()
+    class Google_Service_StreetViewPublish_Connection extends \Google\Service\StreetViewPublish\Connection
     {
     }
 }

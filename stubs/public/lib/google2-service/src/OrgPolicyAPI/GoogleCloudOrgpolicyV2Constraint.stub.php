@@ -21,211 +21,220 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OrgPolicyAPI;
-
-class GoogleCloudOrgpolicyV2Constraint extends \Google\Model
-{
-    /**
-     * This is only used for distinguishing unset values and should never be used.
-     * Results in an error.
-     */
-    public const CONSTRAINT_DEFAULT_CONSTRAINT_DEFAULT_UNSPECIFIED = 'CONSTRAINT_DEFAULT_UNSPECIFIED';
-    /**
-     * Indicate that all values are allowed for list constraints. Indicate that
-     * enforcement is off for boolean constraints.
-     */
-    public const CONSTRAINT_DEFAULT_ALLOW = 'ALLOW';
-    /**
-     * Indicate that all values are denied for list constraints. Indicate that
-     * enforcement is on for boolean constraints.
-     */
-    public const CONSTRAINT_DEFAULT_DENY = 'DENY';
-    protected $booleanConstraintType = GoogleCloudOrgpolicyV2ConstraintBooleanConstraint::class;
-    protected $booleanConstraintDataType = '';
-    /**
-     * The evaluation behavior of this constraint in the absence of a policy.
-     *
-     * @var string
-     */
-    public $constraintDefault;
-    /**
-     * Detailed description of what this constraint controls as well as how and
-     * where it is enforced. Mutable.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The human readable name. Mutable.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Managed constraint and canned constraint sometimes can have equivalents.
-     * This field is used to store the equivalent constraint name.
-     *
-     * @var string
-     */
-    public $equivalentConstraint;
-    protected $listConstraintType = GoogleCloudOrgpolicyV2ConstraintListConstraint::class;
-    protected $listConstraintDataType = '';
-    /**
-     * Immutable. The resource name of the constraint. Must be in one of the
-     * following forms: *
-     * `projects/{project_number}/constraints/{constraint_name}` *
-     * `folders/{folder_id}/constraints/{constraint_name}` *
-     * `organizations/{organization_id}/constraints/{constraint_name}` For
-     * example, "/projects/123/constraints/compute.disableSerialPortAccess".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Shows if dry run is supported for this constraint or not.
-     *
-     * @var bool
-     */
-    public $supportsDryRun;
-    /**
-     * Shows if simulation is supported for this constraint or not.
-     *
-     * @var bool
-     */
-    public $supportsSimulation;
-    /**
-     * Defines this constraint as being a boolean constraint.
-     *
-     * @param GoogleCloudOrgpolicyV2ConstraintBooleanConstraint $booleanConstraint
-     */
-    public function setBooleanConstraint(GoogleCloudOrgpolicyV2ConstraintBooleanConstraint $booleanConstraint)
+namespace Google\Service\OrgPolicyAPI {
+    class GoogleCloudOrgpolicyV2Constraint extends \Google\Model
     {
+        /**
+         * This is only used for distinguishing unset values and should never be used.
+         * Results in an error.
+         */
+        public const CONSTRAINT_DEFAULT_CONSTRAINT_DEFAULT_UNSPECIFIED = 'CONSTRAINT_DEFAULT_UNSPECIFIED';
+        /**
+         * Indicate that all values are allowed for list constraints. Indicate that
+         * enforcement is off for boolean constraints.
+         */
+        public const CONSTRAINT_DEFAULT_ALLOW = 'ALLOW';
+        /**
+         * Indicate that all values are denied for list constraints. Indicate that
+         * enforcement is on for boolean constraints.
+         */
+        public const CONSTRAINT_DEFAULT_DENY = 'DENY';
+        protected $booleanConstraintType = GoogleCloudOrgpolicyV2ConstraintBooleanConstraint::class;
+        protected $booleanConstraintDataType = '';
+        /**
+         * The evaluation behavior of this constraint in the absence of a policy.
+         *
+         * @var string
+         */
+        public $constraintDefault;
+        /**
+         * Detailed description of what this constraint controls as well as how and
+         * where it is enforced. Mutable.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The human readable name. Mutable.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Managed constraint and canned constraint sometimes can have equivalents.
+         * This field is used to store the equivalent constraint name.
+         *
+         * @var string
+         */
+        public $equivalentConstraint;
+        protected $listConstraintType = GoogleCloudOrgpolicyV2ConstraintListConstraint::class;
+        protected $listConstraintDataType = '';
+        /**
+         * Immutable. The resource name of the constraint. Must be in one of the
+         * following forms: *
+         * `projects/{project_number}/constraints/{constraint_name}` *
+         * `folders/{folder_id}/constraints/{constraint_name}` *
+         * `organizations/{organization_id}/constraints/{constraint_name}` For
+         * example, "/projects/123/constraints/compute.disableSerialPortAccess".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Shows if dry run is supported for this constraint or not.
+         *
+         * @var bool
+         */
+        public $supportsDryRun;
+        /**
+         * Shows if simulation is supported for this constraint or not.
+         *
+         * @var bool
+         */
+        public $supportsSimulation;
+        /**
+         * Defines this constraint as being a boolean constraint.
+         *
+         * @param GoogleCloudOrgpolicyV2ConstraintBooleanConstraint $booleanConstraint
+         */
+        public function setBooleanConstraint(GoogleCloudOrgpolicyV2ConstraintBooleanConstraint $booleanConstraint)
+        {
+        }
+        /**
+         * @return GoogleCloudOrgpolicyV2ConstraintBooleanConstraint
+         */
+        public function getBooleanConstraint()
+        {
+        }
+        /**
+         * The evaluation behavior of this constraint in the absence of a policy.
+         *
+         * Accepted values: CONSTRAINT_DEFAULT_UNSPECIFIED, ALLOW, DENY
+         *
+         * @param self::CONSTRAINT_DEFAULT_* $constraintDefault
+         */
+        public function setConstraintDefault($constraintDefault)
+        {
+        }
+        /**
+         * @return self::CONSTRAINT_DEFAULT_*
+         */
+        public function getConstraintDefault()
+        {
+        }
+        /**
+         * Detailed description of what this constraint controls as well as how and
+         * where it is enforced. Mutable.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The human readable name. Mutable.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Managed constraint and canned constraint sometimes can have equivalents.
+         * This field is used to store the equivalent constraint name.
+         *
+         * @param string $equivalentConstraint
+         */
+        public function setEquivalentConstraint($equivalentConstraint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEquivalentConstraint()
+        {
+        }
+        /**
+         * Defines this constraint as being a list constraint.
+         *
+         * @param GoogleCloudOrgpolicyV2ConstraintListConstraint $listConstraint
+         */
+        public function setListConstraint(GoogleCloudOrgpolicyV2ConstraintListConstraint $listConstraint)
+        {
+        }
+        /**
+         * @return GoogleCloudOrgpolicyV2ConstraintListConstraint
+         */
+        public function getListConstraint()
+        {
+        }
+        /**
+         * Immutable. The resource name of the constraint. Must be in one of the
+         * following forms: *
+         * `projects/{project_number}/constraints/{constraint_name}` *
+         * `folders/{folder_id}/constraints/{constraint_name}` *
+         * `organizations/{organization_id}/constraints/{constraint_name}` For
+         * example, "/projects/123/constraints/compute.disableSerialPortAccess".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Shows if dry run is supported for this constraint or not.
+         *
+         * @param bool $supportsDryRun
+         */
+        public function setSupportsDryRun($supportsDryRun)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportsDryRun()
+        {
+        }
+        /**
+         * Shows if simulation is supported for this constraint or not.
+         *
+         * @param bool $supportsSimulation
+         */
+        public function setSupportsSimulation($supportsSimulation)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportsSimulation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudOrgpolicyV2ConstraintBooleanConstraint
+     * Runtime class alias of \Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2Constraint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBooleanConstraint()
-    {
-    }
-    /**
-     * The evaluation behavior of this constraint in the absence of a policy.
-     *
-     * Accepted values: CONSTRAINT_DEFAULT_UNSPECIFIED, ALLOW, DENY
-     *
-     * @param self::CONSTRAINT_DEFAULT_* $constraintDefault
-     */
-    public function setConstraintDefault($constraintDefault)
-    {
-    }
-    /**
-     * @return self::CONSTRAINT_DEFAULT_*
-     */
-    public function getConstraintDefault()
-    {
-    }
-    /**
-     * Detailed description of what this constraint controls as well as how and
-     * where it is enforced. Mutable.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * The human readable name. Mutable.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Managed constraint and canned constraint sometimes can have equivalents.
-     * This field is used to store the equivalent constraint name.
-     *
-     * @param string $equivalentConstraint
-     */
-    public function setEquivalentConstraint($equivalentConstraint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEquivalentConstraint()
-    {
-    }
-    /**
-     * Defines this constraint as being a list constraint.
-     *
-     * @param GoogleCloudOrgpolicyV2ConstraintListConstraint $listConstraint
-     */
-    public function setListConstraint(GoogleCloudOrgpolicyV2ConstraintListConstraint $listConstraint)
-    {
-    }
-    /**
-     * @return GoogleCloudOrgpolicyV2ConstraintListConstraint
-     */
-    public function getListConstraint()
-    {
-    }
-    /**
-     * Immutable. The resource name of the constraint. Must be in one of the
-     * following forms: *
-     * `projects/{project_number}/constraints/{constraint_name}` *
-     * `folders/{folder_id}/constraints/{constraint_name}` *
-     * `organizations/{organization_id}/constraints/{constraint_name}` For
-     * example, "/projects/123/constraints/compute.disableSerialPortAccess".
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Shows if dry run is supported for this constraint or not.
-     *
-     * @param bool $supportsDryRun
-     */
-    public function setSupportsDryRun($supportsDryRun)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportsDryRun()
-    {
-    }
-    /**
-     * Shows if simulation is supported for this constraint or not.
-     *
-     * @param bool $supportsSimulation
-     */
-    public function setSupportsSimulation($supportsSimulation)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportsSimulation()
+    class Google_Service_OrgPolicyAPI_GoogleCloudOrgpolicyV2Constraint extends \Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2Constraint
     {
     }
 }

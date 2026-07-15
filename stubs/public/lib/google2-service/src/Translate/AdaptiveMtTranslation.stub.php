@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class AdaptiveMtTranslation extends \Google\Model
-{
-    /**
-     * Output only. The translated text.
-     *
-     * @var string
-     */
-    public $translatedText;
-    /**
-     * Output only. The translated text.
-     *
-     * @param string $translatedText
-     */
-    public function setTranslatedText($translatedText)
+namespace Google\Service\Translate {
+    class AdaptiveMtTranslation extends \Google\Model
     {
+        /**
+         * Output only. The translated text.
+         *
+         * @var string
+         */
+        public $translatedText;
+        /**
+         * Output only. The translated text.
+         *
+         * @param string $translatedText
+         */
+        public function setTranslatedText($translatedText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTranslatedText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Translate\AdaptiveMtTranslation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTranslatedText()
+    class Google_Service_Translate_AdaptiveMtTranslation extends \Google\Service\Translate\AdaptiveMtTranslation
     {
     }
 }

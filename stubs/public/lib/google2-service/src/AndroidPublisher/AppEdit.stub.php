@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class AppEdit extends \Google\Model
-{
-    /**
-     * Output only. The time (as seconds since Epoch) at which the edit will
-     * expire and will be no longer valid for use.
-     *
-     * @var string
-     */
-    public $expiryTimeSeconds;
-    /**
-     * Output only. Identifier of the edit. Can be used in subsequent API calls.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Output only. The time (as seconds since Epoch) at which the edit will
-     * expire and will be no longer valid for use.
-     *
-     * @param string $expiryTimeSeconds
-     */
-    public function setExpiryTimeSeconds($expiryTimeSeconds)
+namespace Google\Service\AndroidPublisher {
+    class AppEdit extends \Google\Model
     {
+        /**
+         * Output only. The time (as seconds since Epoch) at which the edit will
+         * expire and will be no longer valid for use.
+         *
+         * @var string
+         */
+        public $expiryTimeSeconds;
+        /**
+         * Output only. Identifier of the edit. Can be used in subsequent API calls.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Output only. The time (as seconds since Epoch) at which the edit will
+         * expire and will be no longer valid for use.
+         *
+         * @param string $expiryTimeSeconds
+         */
+        public function setExpiryTimeSeconds($expiryTimeSeconds)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpiryTimeSeconds()
+        {
+        }
+        /**
+         * Output only. Identifier of the edit. Can be used in subsequent API calls.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\AppEdit registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpiryTimeSeconds()
-    {
-    }
-    /**
-     * Output only. Identifier of the edit. Can be used in subsequent API calls.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_AndroidPublisher_AppEdit extends \Google\Service\AndroidPublisher\AppEdit
     {
     }
 }

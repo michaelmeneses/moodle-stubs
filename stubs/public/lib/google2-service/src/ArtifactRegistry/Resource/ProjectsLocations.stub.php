@@ -21,78 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
- *   $locations = $artifactregistryService->projects_locations;
- *  </code>
- */
-class ProjectsLocations extends \Google\Service\Resource
-{
+namespace Google\Service\ArtifactRegistry\Resource {
+    use Google\Service\ArtifactRegistry\ListLocationsResponse;
+    use Google\Service\ArtifactRegistry\Location;
+    use Google\Service\ArtifactRegistry\VPCSCConfig;
     /**
-     * Gets information about a location. (locations.get)
-     *
-     * @param string $name Resource name for the location.
-     * @param array $optParams Optional parameters.
-     * @return Location
-     * @throws \Google\Service\Exception
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
+     *   $locations = $artifactregistryService->projects_locations;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocations extends \Google\Service\Resource
     {
+        /**
+         * Gets information about a location. (locations.get)
+         *
+         * @param string $name Resource name for the location.
+         * @param array $optParams Optional parameters.
+         * @return Location
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the VPCSC Config for the Project. (locations.getVpcscConfig)
+         *
+         * @param string $name Required. The name of the VPCSCConfig resource.
+         * @param array $optParams Optional parameters.
+         * @return VPCSCConfig
+         * @throws \Google\Service\Exception
+         */
+        public function getVpcscConfig($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists information about the supported locations for this service.
+         * (locations.listProjectsLocations)
+         *
+         * @param string $name The resource that owns the locations collection, if
+         * applicable.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string extraLocationTypes Optional. Do not use this field. It is
+         * unsupported and is ignored unless explicitly documented otherwise. This is
+         * primarily for internal usage.
+         * @opt_param string filter A filter to narrow down results to a preferred
+         * subset. The filtering language accepts strings like `"displayName=tokyo"`,
+         * and is documented in more detail in [AIP-160](https://google.aip.dev/160).
+         * @opt_param int pageSize The maximum number of results to return. If not set,
+         * the service selects a default.
+         * @opt_param string pageToken A page token received from the `next_page_token`
+         * field in the response. Send that page token to receive the subsequent page.
+         * @return ListLocationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocations($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates the VPCSC Config for the Project. (locations.updateVpcscConfig)
+         *
+         * @param string $name The name of the project's VPC SC Config. Always of the
+         * form: projects/{projectID}/locations/{location}/vpcscConfig In update
+         * request: never set In response: always set
+         * @param VPCSCConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Field mask to support partial updates.
+         * @return VPCSCConfig
+         * @throws \Google\Service\Exception
+         */
+        public function updateVpcscConfig($name, VPCSCConfig $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves the VPCSC Config for the Project. (locations.getVpcscConfig)
-     *
-     * @param string $name Required. The name of the VPCSCConfig resource.
-     * @param array $optParams Optional parameters.
-     * @return VPCSCConfig
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ArtifactRegistry\Resource\ProjectsLocations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVpcscConfig($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists information about the supported locations for this service.
-     * (locations.listProjectsLocations)
-     *
-     * @param string $name The resource that owns the locations collection, if
-     * applicable.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string extraLocationTypes Optional. Do not use this field. It is
-     * unsupported and is ignored unless explicitly documented otherwise. This is
-     * primarily for internal usage.
-     * @opt_param string filter A filter to narrow down results to a preferred
-     * subset. The filtering language accepts strings like `"displayName=tokyo"`,
-     * and is documented in more detail in [AIP-160](https://google.aip.dev/160).
-     * @opt_param int pageSize The maximum number of results to return. If not set,
-     * the service selects a default.
-     * @opt_param string pageToken A page token received from the `next_page_token`
-     * field in the response. Send that page token to receive the subsequent page.
-     * @return ListLocationsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocations($name, $optParams = [])
-    {
-    }
-    /**
-     * Updates the VPCSC Config for the Project. (locations.updateVpcscConfig)
-     *
-     * @param string $name The name of the project's VPC SC Config. Always of the
-     * form: projects/{projectID}/locations/{location}/vpcscConfig In update
-     * request: never set In response: always set
-     * @param VPCSCConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Field mask to support partial updates.
-     * @return VPCSCConfig
-     * @throws \Google\Service\Exception
-     */
-    public function updateVpcscConfig($name, VPCSCConfig $postBody, $optParams = [])
+    class Google_Service_ArtifactRegistry_Resource_ProjectsLocations extends \Google\Service\ArtifactRegistry\Resource\ProjectsLocations
     {
     }
 }

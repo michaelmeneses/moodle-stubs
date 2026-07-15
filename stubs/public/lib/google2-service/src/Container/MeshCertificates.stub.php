@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class MeshCertificates extends \Google\Model
-{
-    /**
-     * enable_certificates controls issuance of workload mTLS certificates. If
-     * set, the GKE Workload Identity Certificates controller and node agent will
-     * be deployed in the cluster, which can then be configured by creating a
-     * WorkloadCertificateConfig Custom Resource. Requires Workload Identity
-     * (workload_pool must be non-empty).
-     *
-     * @var bool
-     */
-    public $enableCertificates;
-    /**
-     * enable_certificates controls issuance of workload mTLS certificates. If
-     * set, the GKE Workload Identity Certificates controller and node agent will
-     * be deployed in the cluster, which can then be configured by creating a
-     * WorkloadCertificateConfig Custom Resource. Requires Workload Identity
-     * (workload_pool must be non-empty).
-     *
-     * @param bool $enableCertificates
-     */
-    public function setEnableCertificates($enableCertificates)
+namespace Google\Service\Container {
+    class MeshCertificates extends \Google\Model
     {
+        /**
+         * enable_certificates controls issuance of workload mTLS certificates. If
+         * set, the GKE Workload Identity Certificates controller and node agent will
+         * be deployed in the cluster, which can then be configured by creating a
+         * WorkloadCertificateConfig Custom Resource. Requires Workload Identity
+         * (workload_pool must be non-empty).
+         *
+         * @var bool
+         */
+        public $enableCertificates;
+        /**
+         * enable_certificates controls issuance of workload mTLS certificates. If
+         * set, the GKE Workload Identity Certificates controller and node agent will
+         * be deployed in the cluster, which can then be configured by creating a
+         * WorkloadCertificateConfig Custom Resource. Requires Workload Identity
+         * (workload_pool must be non-empty).
+         *
+         * @param bool $enableCertificates
+         */
+        public function setEnableCertificates($enableCertificates)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableCertificates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\MeshCertificates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableCertificates()
+    class Google_Service_Container_MeshCertificates extends \Google\Service\Container\MeshCertificates
     {
     }
 }

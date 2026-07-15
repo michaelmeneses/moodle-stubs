@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ApigeeRegistry;
-
-class ListApisResponse extends \Google\Collection
-{
-    protected $collection_key = 'apis';
-    protected $apisType = Api::class;
-    protected $apisDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The APIs from the specified publisher.
-     *
-     * @param Api[] $apis
-     */
-    public function setApis($apis)
+namespace Google\Service\ApigeeRegistry {
+    class ListApisResponse extends \Google\Collection
     {
+        protected $collection_key = 'apis';
+        protected $apisType = Api::class;
+        protected $apisDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The APIs from the specified publisher.
+         *
+         * @param Api[] $apis
+         */
+        public function setApis($apis)
+        {
+        }
+        /**
+         * @return Api[]
+         */
+        public function getApis()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Api[]
+     * Runtime class alias of \Google\Service\ApigeeRegistry\ListApisResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApis()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_ApigeeRegistry_ListApisResponse extends \Google\Service\ApigeeRegistry\ListApisResponse
     {
     }
 }

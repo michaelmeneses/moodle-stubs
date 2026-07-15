@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementVersionsV1alpha1ChromeOsUserSession extends \Google\Model
-{
-    protected $chromeOsDeviceType = GoogleChromeManagementVersionsV1alpha1ChromeOsDevice::class;
-    protected $chromeOsDeviceDataType = '';
-    /**
-     * @var string
-     */
-    public $userDirectoryApiId;
-    /**
-     * @var string
-     */
-    public $userPrimaryEmail;
-    /**
-     * @param GoogleChromeManagementVersionsV1alpha1ChromeOsDevice
-     */
-    public function setChromeOsDevice(GoogleChromeManagementVersionsV1alpha1ChromeOsDevice $chromeOsDevice)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementVersionsV1alpha1ChromeOsUserSession extends \Google\Model
     {
+        protected $chromeOsDeviceType = GoogleChromeManagementVersionsV1alpha1ChromeOsDevice::class;
+        protected $chromeOsDeviceDataType = '';
+        /**
+         * @var string
+         */
+        public $userDirectoryApiId;
+        /**
+         * @var string
+         */
+        public $userPrimaryEmail;
+        /**
+         * @param GoogleChromeManagementVersionsV1alpha1ChromeOsDevice
+         */
+        public function setChromeOsDevice(GoogleChromeManagementVersionsV1alpha1ChromeOsDevice $chromeOsDevice)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementVersionsV1alpha1ChromeOsDevice
+         */
+        public function getChromeOsDevice()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUserDirectoryApiId($userDirectoryApiId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserDirectoryApiId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUserPrimaryEmail($userPrimaryEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserPrimaryEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromeManagementVersionsV1alpha1ChromeOsDevice
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1alpha1ChromeOsUserSession registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChromeOsDevice()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUserDirectoryApiId($userDirectoryApiId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserDirectoryApiId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUserPrimaryEmail($userPrimaryEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserPrimaryEmail()
+    class Google_Service_ChromeManagement_GoogleChromeManagementVersionsV1alpha1ChromeOsUserSession extends \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1alpha1ChromeOsUserSession
     {
     }
 }

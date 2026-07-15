@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class ShadingSuggestionState extends \Google\Model
-{
-    /**
-     * Indicates if there was a suggested change to the Shading.
-     *
-     * @var bool
-     */
-    public $backgroundColorSuggested;
-    /**
-     * Indicates if there was a suggested change to the Shading.
-     *
-     * @param bool $backgroundColorSuggested
-     */
-    public function setBackgroundColorSuggested($backgroundColorSuggested)
+namespace Google\Service\Docs {
+    class ShadingSuggestionState extends \Google\Model
     {
+        /**
+         * Indicates if there was a suggested change to the Shading.
+         *
+         * @var bool
+         */
+        public $backgroundColorSuggested;
+        /**
+         * Indicates if there was a suggested change to the Shading.
+         *
+         * @param bool $backgroundColorSuggested
+         */
+        public function setBackgroundColorSuggested($backgroundColorSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBackgroundColorSuggested()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Docs\ShadingSuggestionState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackgroundColorSuggested()
+    class Google_Service_Docs_ShadingSuggestionState extends \Google\Service\Docs\ShadingSuggestionState
     {
     }
 }

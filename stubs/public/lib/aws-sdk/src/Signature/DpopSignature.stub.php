@@ -8,6 +8,9 @@
  */
 namespace Aws\Signature;
 
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\UriInterface;
+use Random\RandomException;
 final class DpopSignature
 {
     public const ALLOW_LISTED_SERVICES = ['signin' => true];

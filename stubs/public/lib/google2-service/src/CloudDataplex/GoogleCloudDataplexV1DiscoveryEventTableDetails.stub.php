@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DiscoveryEventTableDetails extends \Google\Model
-{
-    /**
-     * An unspecified table type.
-     */
-    public const TYPE_TABLE_TYPE_UNSPECIFIED = 'TABLE_TYPE_UNSPECIFIED';
-    /**
-     * External table type.
-     */
-    public const TYPE_EXTERNAL_TABLE = 'EXTERNAL_TABLE';
-    /**
-     * BigLake table type.
-     */
-    public const TYPE_BIGLAKE_TABLE = 'BIGLAKE_TABLE';
-    /**
-     * Object table type for unstructured data.
-     */
-    public const TYPE_OBJECT_TABLE = 'OBJECT_TABLE';
-    /**
-     * The fully-qualified resource name of the table resource.
-     *
-     * @var string
-     */
-    public $table;
-    /**
-     * The type of the table resource.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The fully-qualified resource name of the table resource.
-     *
-     * @param string $table
-     */
-    public function setTable($table)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DiscoveryEventTableDetails extends \Google\Model
     {
+        /**
+         * An unspecified table type.
+         */
+        public const TYPE_TABLE_TYPE_UNSPECIFIED = 'TABLE_TYPE_UNSPECIFIED';
+        /**
+         * External table type.
+         */
+        public const TYPE_EXTERNAL_TABLE = 'EXTERNAL_TABLE';
+        /**
+         * BigLake table type.
+         */
+        public const TYPE_BIGLAKE_TABLE = 'BIGLAKE_TABLE';
+        /**
+         * Object table type for unstructured data.
+         */
+        public const TYPE_OBJECT_TABLE = 'OBJECT_TABLE';
+        /**
+         * The fully-qualified resource name of the table resource.
+         *
+         * @var string
+         */
+        public $table;
+        /**
+         * The type of the table resource.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The fully-qualified resource name of the table resource.
+         *
+         * @param string $table
+         */
+        public function setTable($table)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTable()
+        {
+        }
+        /**
+         * The type of the table resource.
+         *
+         * Accepted values: TABLE_TYPE_UNSPECIFIED, EXTERNAL_TABLE, BIGLAKE_TABLE,
+         * OBJECT_TABLE
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DiscoveryEventTableDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTable()
-    {
-    }
-    /**
-     * The type of the table resource.
-     *
-     * Accepted values: TABLE_TYPE_UNSPECIFIED, EXTERNAL_TABLE, BIGLAKE_TABLE,
-     * OBJECT_TABLE
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DiscoveryEventTableDetails extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DiscoveryEventTableDetails
     {
     }
 }

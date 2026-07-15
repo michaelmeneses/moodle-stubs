@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class ListNotificationChannelsResponse extends \Google\Collection
-{
-    protected $collection_key = 'notificationChannels';
-    /**
-     * If not empty, indicates that there may be more results that match the
-     * request. Use the value in the page_token field in a subsequent request to
-     * fetch the next set of results. If empty, all results have been returned.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $notificationChannelsType = NotificationChannel::class;
-    protected $notificationChannelsDataType = 'array';
-    /**
-     * The total number of notification channels in all pages. This number is only
-     * an estimate, and may change in subsequent pages. https://aip.dev/158
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * If not empty, indicates that there may be more results that match the
-     * request. Use the value in the page_token field in a subsequent request to
-     * fetch the next set of results. If empty, all results have been returned.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Monitoring {
+    class ListNotificationChannelsResponse extends \Google\Collection
     {
+        protected $collection_key = 'notificationChannels';
+        /**
+         * If not empty, indicates that there may be more results that match the
+         * request. Use the value in the page_token field in a subsequent request to
+         * fetch the next set of results. If empty, all results have been returned.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $notificationChannelsType = NotificationChannel::class;
+        protected $notificationChannelsDataType = 'array';
+        /**
+         * The total number of notification channels in all pages. This number is only
+         * an estimate, and may change in subsequent pages. https://aip.dev/158
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * If not empty, indicates that there may be more results that match the
+         * request. Use the value in the page_token field in a subsequent request to
+         * fetch the next set of results. If empty, all results have been returned.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The notification channels defined for the specified project.
+         *
+         * @param NotificationChannel[] $notificationChannels
+         */
+        public function setNotificationChannels($notificationChannels)
+        {
+        }
+        /**
+         * @return NotificationChannel[]
+         */
+        public function getNotificationChannels()
+        {
+        }
+        /**
+         * The total number of notification channels in all pages. This number is only
+         * an estimate, and may change in subsequent pages. https://aip.dev/158
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\ListNotificationChannelsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The notification channels defined for the specified project.
-     *
-     * @param NotificationChannel[] $notificationChannels
-     */
-    public function setNotificationChannels($notificationChannels)
-    {
-    }
-    /**
-     * @return NotificationChannel[]
-     */
-    public function getNotificationChannels()
-    {
-    }
-    /**
-     * The total number of notification channels in all pages. This number is only
-     * an estimate, and may change in subsequent pages. https://aip.dev/158
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_Monitoring_ListNotificationChannelsResponse extends \Google\Service\Monitoring\ListNotificationChannelsResponse
     {
     }
 }

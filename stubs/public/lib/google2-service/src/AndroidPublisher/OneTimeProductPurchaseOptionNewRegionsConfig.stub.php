@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class OneTimeProductPurchaseOptionNewRegionsConfig extends \Google\Model
-{
-    /**
-     * Unspecified availability. Must not be used.
-     */
-    public const AVAILABILITY_AVAILABILITY_UNSPECIFIED = 'AVAILABILITY_UNSPECIFIED';
-    /**
-     * The config will be used for any new regions Play may launch in the future.
-     */
-    public const AVAILABILITY_AVAILABLE = 'AVAILABLE';
-    /**
-     * The config is not available anymore and will not be used for any new
-     * regions Play may launch in the future. This value can only be used if the
-     * availability was previously set as AVAILABLE.
-     */
-    public const AVAILABILITY_NO_LONGER_AVAILABLE = 'NO_LONGER_AVAILABLE';
-    /**
-     * Required. The regional availability for the new regions config. When set to
-     * AVAILABLE, the pricing information will be used for any new regions Play
-     * may launch in the future.
-     *
-     * @var string
-     */
-    public $availability;
-    protected $eurPriceType = Money::class;
-    protected $eurPriceDataType = '';
-    protected $usdPriceType = Money::class;
-    protected $usdPriceDataType = '';
-    /**
-     * Required. The regional availability for the new regions config. When set to
-     * AVAILABLE, the pricing information will be used for any new regions Play
-     * may launch in the future.
-     *
-     * Accepted values: AVAILABILITY_UNSPECIFIED, AVAILABLE, NO_LONGER_AVAILABLE
-     *
-     * @param self::AVAILABILITY_* $availability
-     */
-    public function setAvailability($availability)
+namespace Google\Service\AndroidPublisher {
+    class OneTimeProductPurchaseOptionNewRegionsConfig extends \Google\Model
     {
+        /**
+         * Unspecified availability. Must not be used.
+         */
+        public const AVAILABILITY_AVAILABILITY_UNSPECIFIED = 'AVAILABILITY_UNSPECIFIED';
+        /**
+         * The config will be used for any new regions Play may launch in the future.
+         */
+        public const AVAILABILITY_AVAILABLE = 'AVAILABLE';
+        /**
+         * The config is not available anymore and will not be used for any new
+         * regions Play may launch in the future. This value can only be used if the
+         * availability was previously set as AVAILABLE.
+         */
+        public const AVAILABILITY_NO_LONGER_AVAILABLE = 'NO_LONGER_AVAILABLE';
+        /**
+         * Required. The regional availability for the new regions config. When set to
+         * AVAILABLE, the pricing information will be used for any new regions Play
+         * may launch in the future.
+         *
+         * @var string
+         */
+        public $availability;
+        protected $eurPriceType = Money::class;
+        protected $eurPriceDataType = '';
+        protected $usdPriceType = Money::class;
+        protected $usdPriceDataType = '';
+        /**
+         * Required. The regional availability for the new regions config. When set to
+         * AVAILABLE, the pricing information will be used for any new regions Play
+         * may launch in the future.
+         *
+         * Accepted values: AVAILABILITY_UNSPECIFIED, AVAILABLE, NO_LONGER_AVAILABLE
+         *
+         * @param self::AVAILABILITY_* $availability
+         */
+        public function setAvailability($availability)
+        {
+        }
+        /**
+         * @return self::AVAILABILITY_*
+         */
+        public function getAvailability()
+        {
+        }
+        /**
+         * Required. Price in EUR to use for any new regions Play may launch in.
+         *
+         * @param Money $eurPrice
+         */
+        public function setEurPrice(Money $eurPrice)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getEurPrice()
+        {
+        }
+        /**
+         * Required. Price in USD to use for any new regions Play may launch in.
+         *
+         * @param Money $usdPrice
+         */
+        public function setUsdPrice(Money $usdPrice)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getUsdPrice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::AVAILABILITY_*
+     * Runtime class alias of \Google\Service\AndroidPublisher\OneTimeProductPurchaseOptionNewRegionsConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailability()
-    {
-    }
-    /**
-     * Required. Price in EUR to use for any new regions Play may launch in.
-     *
-     * @param Money $eurPrice
-     */
-    public function setEurPrice(Money $eurPrice)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getEurPrice()
-    {
-    }
-    /**
-     * Required. Price in USD to use for any new regions Play may launch in.
-     *
-     * @param Money $usdPrice
-     */
-    public function setUsdPrice(Money $usdPrice)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getUsdPrice()
+    class Google_Service_AndroidPublisher_OneTimeProductPurchaseOptionNewRegionsConfig extends \Google\Service\AndroidPublisher\OneTimeProductPurchaseOptionNewRegionsConfig
     {
     }
 }

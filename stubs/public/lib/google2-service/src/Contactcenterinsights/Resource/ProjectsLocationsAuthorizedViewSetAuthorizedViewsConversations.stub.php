@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights\Resource;
-
-/**
- * The "conversations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contactcenterinsightsService = new Google\Service\Contactcenterinsights(...);
- *   $conversations = $contactcenterinsightsService->projects_locations_authorizedViewSet_authorizedViews_conversations;
- *  </code>
- */
-class ProjectsLocationsAuthorizedViewSetAuthorizedViewsConversations extends \Google\Service\Resource
-{
+namespace Google\Service\Contactcenterinsights\Resource {
+    /**
+     * The "conversations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contactcenterinsightsService = new Google\Service\Contactcenterinsights(...);
+     *   $conversations = $contactcenterinsightsService->projects_locations_authorizedViewSet_authorizedViews_conversations;
+     *  </code>
+     */
+    class ProjectsLocationsAuthorizedViewSetAuthorizedViewsConversations extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Contactcenterinsights\Resource\ProjectsLocationsAuthorizedViewSetAuthorizedViewsConversations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Contactcenterinsights_Resource_ProjectsLocationsAuthorizedViewSetAuthorizedViewsConversations extends \Google\Service\Contactcenterinsights\Resource\ProjectsLocationsAuthorizedViewSetAuthorizedViewsConversations
+    {
+    }
 }

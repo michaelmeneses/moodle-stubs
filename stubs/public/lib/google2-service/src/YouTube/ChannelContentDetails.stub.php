@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ChannelContentDetails extends \Google\Model
-{
-    protected $relatedPlaylistsType = ChannelContentDetailsRelatedPlaylists::class;
-    protected $relatedPlaylistsDataType = '';
-    /**
-     * @param ChannelContentDetailsRelatedPlaylists $relatedPlaylists
-     */
-    public function setRelatedPlaylists(ChannelContentDetailsRelatedPlaylists $relatedPlaylists)
+namespace Google\Service\YouTube {
+    class ChannelContentDetails extends \Google\Model
     {
+        protected $relatedPlaylistsType = ChannelContentDetailsRelatedPlaylists::class;
+        protected $relatedPlaylistsDataType = '';
+        /**
+         * @param ChannelContentDetailsRelatedPlaylists $relatedPlaylists
+         */
+        public function setRelatedPlaylists(ChannelContentDetailsRelatedPlaylists $relatedPlaylists)
+        {
+        }
+        /**
+         * @return ChannelContentDetailsRelatedPlaylists
+         */
+        public function getRelatedPlaylists()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ChannelContentDetailsRelatedPlaylists
+     * Runtime class alias of \Google\Service\YouTube\ChannelContentDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRelatedPlaylists()
+    class Google_Service_YouTube_ChannelContentDetails extends \Google\Service\YouTube\ChannelContentDetails
     {
     }
 }

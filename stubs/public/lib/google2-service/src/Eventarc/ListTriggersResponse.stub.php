@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Eventarc;
-
-class ListTriggersResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * A page token that can be sent to `ListTriggers` to request the next page.
-     * If this is empty, then there are no more pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $triggersType = Trigger::class;
-    protected $triggersDataType = 'array';
-    /**
-     * Unreachable resources, if any.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A page token that can be sent to `ListTriggers` to request the next page.
-     * If this is empty, then there are no more pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Eventarc {
+    class ListTriggersResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * A page token that can be sent to `ListTriggers` to request the next page.
+         * If this is empty, then there are no more pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $triggersType = Trigger::class;
+        protected $triggersDataType = 'array';
+        /**
+         * Unreachable resources, if any.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A page token that can be sent to `ListTriggers` to request the next page.
+         * If this is empty, then there are no more pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The requested triggers, up to the number specified in `page_size`.
+         *
+         * @param Trigger[] $triggers
+         */
+        public function setTriggers($triggers)
+        {
+        }
+        /**
+         * @return Trigger[]
+         */
+        public function getTriggers()
+        {
+        }
+        /**
+         * Unreachable resources, if any.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Eventarc\ListTriggersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The requested triggers, up to the number specified in `page_size`.
-     *
-     * @param Trigger[] $triggers
-     */
-    public function setTriggers($triggers)
-    {
-    }
-    /**
-     * @return Trigger[]
-     */
-    public function getTriggers()
-    {
-    }
-    /**
-     * Unreachable resources, if any.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Eventarc_ListTriggersResponse extends \Google\Service\Eventarc\ListTriggersResponse
     {
     }
 }

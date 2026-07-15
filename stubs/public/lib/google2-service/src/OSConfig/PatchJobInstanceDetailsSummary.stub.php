@@ -21,248 +21,257 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class PatchJobInstanceDetailsSummary extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $ackedInstanceCount;
-    /**
-     * @var string
-     */
-    public $applyingPatchesInstanceCount;
-    /**
-     * @var string
-     */
-    public $downloadingPatchesInstanceCount;
-    /**
-     * @var string
-     */
-    public $failedInstanceCount;
-    /**
-     * @var string
-     */
-    public $inactiveInstanceCount;
-    /**
-     * @var string
-     */
-    public $noAgentDetectedInstanceCount;
-    /**
-     * @var string
-     */
-    public $notifiedInstanceCount;
-    /**
-     * @var string
-     */
-    public $pendingInstanceCount;
-    /**
-     * @var string
-     */
-    public $postPatchStepInstanceCount;
-    /**
-     * @var string
-     */
-    public $prePatchStepInstanceCount;
-    /**
-     * @var string
-     */
-    public $rebootingInstanceCount;
-    /**
-     * @var string
-     */
-    public $startedInstanceCount;
-    /**
-     * @var string
-     */
-    public $succeededInstanceCount;
-    /**
-     * @var string
-     */
-    public $succeededRebootRequiredInstanceCount;
-    /**
-     * @var string
-     */
-    public $timedOutInstanceCount;
-    /**
-     * @param string
-     */
-    public function setAckedInstanceCount($ackedInstanceCount)
+namespace Google\Service\OSConfig {
+    class PatchJobInstanceDetailsSummary extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $ackedInstanceCount;
+        /**
+         * @var string
+         */
+        public $applyingPatchesInstanceCount;
+        /**
+         * @var string
+         */
+        public $downloadingPatchesInstanceCount;
+        /**
+         * @var string
+         */
+        public $failedInstanceCount;
+        /**
+         * @var string
+         */
+        public $inactiveInstanceCount;
+        /**
+         * @var string
+         */
+        public $noAgentDetectedInstanceCount;
+        /**
+         * @var string
+         */
+        public $notifiedInstanceCount;
+        /**
+         * @var string
+         */
+        public $pendingInstanceCount;
+        /**
+         * @var string
+         */
+        public $postPatchStepInstanceCount;
+        /**
+         * @var string
+         */
+        public $prePatchStepInstanceCount;
+        /**
+         * @var string
+         */
+        public $rebootingInstanceCount;
+        /**
+         * @var string
+         */
+        public $startedInstanceCount;
+        /**
+         * @var string
+         */
+        public $succeededInstanceCount;
+        /**
+         * @var string
+         */
+        public $succeededRebootRequiredInstanceCount;
+        /**
+         * @var string
+         */
+        public $timedOutInstanceCount;
+        /**
+         * @param string
+         */
+        public function setAckedInstanceCount($ackedInstanceCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAckedInstanceCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setApplyingPatchesInstanceCount($applyingPatchesInstanceCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplyingPatchesInstanceCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDownloadingPatchesInstanceCount($downloadingPatchesInstanceCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDownloadingPatchesInstanceCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFailedInstanceCount($failedInstanceCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFailedInstanceCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInactiveInstanceCount($inactiveInstanceCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInactiveInstanceCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNoAgentDetectedInstanceCount($noAgentDetectedInstanceCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNoAgentDetectedInstanceCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNotifiedInstanceCount($notifiedInstanceCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotifiedInstanceCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPendingInstanceCount($pendingInstanceCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPendingInstanceCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPostPatchStepInstanceCount($postPatchStepInstanceCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostPatchStepInstanceCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPrePatchStepInstanceCount($prePatchStepInstanceCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrePatchStepInstanceCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRebootingInstanceCount($rebootingInstanceCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRebootingInstanceCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStartedInstanceCount($startedInstanceCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartedInstanceCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSucceededInstanceCount($succeededInstanceCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSucceededInstanceCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSucceededRebootRequiredInstanceCount($succeededRebootRequiredInstanceCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSucceededRebootRequiredInstanceCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTimedOutInstanceCount($timedOutInstanceCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimedOutInstanceCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\PatchJobInstanceDetailsSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAckedInstanceCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setApplyingPatchesInstanceCount($applyingPatchesInstanceCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getApplyingPatchesInstanceCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDownloadingPatchesInstanceCount($downloadingPatchesInstanceCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDownloadingPatchesInstanceCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFailedInstanceCount($failedInstanceCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFailedInstanceCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInactiveInstanceCount($inactiveInstanceCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInactiveInstanceCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNoAgentDetectedInstanceCount($noAgentDetectedInstanceCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNoAgentDetectedInstanceCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNotifiedInstanceCount($notifiedInstanceCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotifiedInstanceCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPendingInstanceCount($pendingInstanceCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPendingInstanceCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPostPatchStepInstanceCount($postPatchStepInstanceCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPostPatchStepInstanceCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPrePatchStepInstanceCount($prePatchStepInstanceCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrePatchStepInstanceCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRebootingInstanceCount($rebootingInstanceCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRebootingInstanceCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStartedInstanceCount($startedInstanceCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartedInstanceCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSucceededInstanceCount($succeededInstanceCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSucceededInstanceCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSucceededRebootRequiredInstanceCount($succeededRebootRequiredInstanceCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSucceededRebootRequiredInstanceCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTimedOutInstanceCount($timedOutInstanceCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimedOutInstanceCount()
+    class Google_Service_OSConfig_PatchJobInstanceDetailsSummary extends \Google\Service\OSConfig\PatchJobInstanceDetailsSummary
     {
     }
 }

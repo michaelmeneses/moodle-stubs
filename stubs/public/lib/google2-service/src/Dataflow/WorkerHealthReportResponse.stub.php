@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class WorkerHealthReportResponse extends \Google\Model
-{
-    /**
-     * A positive value indicates the worker should change its reporting interval
-     * to the specified value. The default value of zero means no change in report
-     * rate is requested by the server.
-     *
-     * @var string
-     */
-    public $reportInterval;
-    /**
-     * A positive value indicates the worker should change its reporting interval
-     * to the specified value. The default value of zero means no change in report
-     * rate is requested by the server.
-     *
-     * @param string $reportInterval
-     */
-    public function setReportInterval($reportInterval)
+namespace Google\Service\Dataflow {
+    class WorkerHealthReportResponse extends \Google\Model
     {
+        /**
+         * A positive value indicates the worker should change its reporting interval
+         * to the specified value. The default value of zero means no change in report
+         * rate is requested by the server.
+         *
+         * @var string
+         */
+        public $reportInterval;
+        /**
+         * A positive value indicates the worker should change its reporting interval
+         * to the specified value. The default value of zero means no change in report
+         * rate is requested by the server.
+         *
+         * @param string $reportInterval
+         */
+        public function setReportInterval($reportInterval)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportInterval()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\WorkerHealthReportResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReportInterval()
+    class Google_Service_Dataflow_WorkerHealthReportResponse extends \Google\Service\Dataflow\WorkerHealthReportResponse
     {
     }
 }

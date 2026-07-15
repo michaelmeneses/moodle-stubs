@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class RefreshRuntimeTokenInternalRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $vmId;
-    /**
-     * @param string
-     */
-    public function setVmId($vmId)
+namespace Google\Service\AIPlatformNotebooks {
+    class RefreshRuntimeTokenInternalRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $vmId;
+        /**
+         * @param string
+         */
+        public function setVmId($vmId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVmId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\RefreshRuntimeTokenInternalRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVmId()
+    class Google_Service_AIPlatformNotebooks_RefreshRuntimeTokenInternalRequest extends \Google\Service\AIPlatformNotebooks\RefreshRuntimeTokenInternalRequest
     {
     }
 }

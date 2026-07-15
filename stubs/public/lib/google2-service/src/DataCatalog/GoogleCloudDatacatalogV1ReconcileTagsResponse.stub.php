@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1ReconcileTagsResponse extends \Google\Model
-{
-    /**
-     * Number of tags created in the request.
-     *
-     * @var string
-     */
-    public $createdTagsCount;
-    /**
-     * Number of tags deleted in the request.
-     *
-     * @var string
-     */
-    public $deletedTagsCount;
-    /**
-     * Number of tags updated in the request.
-     *
-     * @var string
-     */
-    public $updatedTagsCount;
-    /**
-     * Number of tags created in the request.
-     *
-     * @param string $createdTagsCount
-     */
-    public function setCreatedTagsCount($createdTagsCount)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1ReconcileTagsResponse extends \Google\Model
     {
+        /**
+         * Number of tags created in the request.
+         *
+         * @var string
+         */
+        public $createdTagsCount;
+        /**
+         * Number of tags deleted in the request.
+         *
+         * @var string
+         */
+        public $deletedTagsCount;
+        /**
+         * Number of tags updated in the request.
+         *
+         * @var string
+         */
+        public $updatedTagsCount;
+        /**
+         * Number of tags created in the request.
+         *
+         * @param string $createdTagsCount
+         */
+        public function setCreatedTagsCount($createdTagsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatedTagsCount()
+        {
+        }
+        /**
+         * Number of tags deleted in the request.
+         *
+         * @param string $deletedTagsCount
+         */
+        public function setDeletedTagsCount($deletedTagsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeletedTagsCount()
+        {
+        }
+        /**
+         * Number of tags updated in the request.
+         *
+         * @param string $updatedTagsCount
+         */
+        public function setUpdatedTagsCount($updatedTagsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdatedTagsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ReconcileTagsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreatedTagsCount()
-    {
-    }
-    /**
-     * Number of tags deleted in the request.
-     *
-     * @param string $deletedTagsCount
-     */
-    public function setDeletedTagsCount($deletedTagsCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeletedTagsCount()
-    {
-    }
-    /**
-     * Number of tags updated in the request.
-     *
-     * @param string $updatedTagsCount
-     */
-    public function setUpdatedTagsCount($updatedTagsCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdatedTagsCount()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1ReconcileTagsResponse extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ReconcileTagsResponse
     {
     }
 }

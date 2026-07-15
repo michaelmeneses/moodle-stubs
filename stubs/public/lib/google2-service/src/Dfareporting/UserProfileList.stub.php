@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class UserProfileList extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * Etag of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $itemsType = UserProfile::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#userProfileList".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Etag of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Dfareporting {
+    class UserProfileList extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * Etag of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $itemsType = UserProfile::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#userProfileList".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Etag of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The user profiles returned in this response.
+         *
+         * @param UserProfile[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return UserProfile[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#userProfileList".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\UserProfileList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * The user profiles returned in this response.
-     *
-     * @param UserProfile[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return UserProfile[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#userProfileList".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Dfareporting_UserProfileList extends \Google\Service\Dfareporting\UserProfileList
     {
     }
 }

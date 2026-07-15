@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class CloudControl extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const TYPE_CLOUD_CONTROL_TYPE_UNSPECIFIED = 'CLOUD_CONTROL_TYPE_UNSPECIFIED';
-    /**
-     * Built in Cloud Control.
-     */
-    public const TYPE_BUILT_IN = 'BUILT_IN';
-    /**
-     * Custom Cloud Control.
-     */
-    public const TYPE_CUSTOM = 'CUSTOM';
-    /**
-     * Name of the CloudControl associated with the finding.
-     *
-     * @var string
-     */
-    public $cloudControlName;
-    /**
-     * Policy type of the CloudControl
-     *
-     * @var string
-     */
-    public $policyType;
-    /**
-     * Type of cloud control.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Version of the Cloud Control
-     *
-     * @var int
-     */
-    public $version;
-    /**
-     * Name of the CloudControl associated with the finding.
-     *
-     * @param string $cloudControlName
-     */
-    public function setCloudControlName($cloudControlName)
+namespace Google\Service\SecurityCommandCenter {
+    class CloudControl extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const TYPE_CLOUD_CONTROL_TYPE_UNSPECIFIED = 'CLOUD_CONTROL_TYPE_UNSPECIFIED';
+        /**
+         * Built in Cloud Control.
+         */
+        public const TYPE_BUILT_IN = 'BUILT_IN';
+        /**
+         * Custom Cloud Control.
+         */
+        public const TYPE_CUSTOM = 'CUSTOM';
+        /**
+         * Name of the CloudControl associated with the finding.
+         *
+         * @var string
+         */
+        public $cloudControlName;
+        /**
+         * Policy type of the CloudControl
+         *
+         * @var string
+         */
+        public $policyType;
+        /**
+         * Type of cloud control.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Version of the Cloud Control
+         *
+         * @var int
+         */
+        public $version;
+        /**
+         * Name of the CloudControl associated with the finding.
+         *
+         * @param string $cloudControlName
+         */
+        public function setCloudControlName($cloudControlName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCloudControlName()
+        {
+        }
+        /**
+         * Policy type of the CloudControl
+         *
+         * @param string $policyType
+         */
+        public function setPolicyType($policyType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicyType()
+        {
+        }
+        /**
+         * Type of cloud control.
+         *
+         * Accepted values: CLOUD_CONTROL_TYPE_UNSPECIFIED, BUILT_IN, CUSTOM
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Version of the Cloud Control
+         *
+         * @param int $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\CloudControl registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudControlName()
-    {
-    }
-    /**
-     * Policy type of the CloudControl
-     *
-     * @param string $policyType
-     */
-    public function setPolicyType($policyType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPolicyType()
-    {
-    }
-    /**
-     * Type of cloud control.
-     *
-     * Accepted values: CLOUD_CONTROL_TYPE_UNSPECIFIED, BUILT_IN, CUSTOM
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Version of the Cloud Control
-     *
-     * @param int $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVersion()
+    class Google_Service_SecurityCommandCenter_CloudControl extends \Google\Service\SecurityCommandCenter\CloudControl
     {
     }
 }

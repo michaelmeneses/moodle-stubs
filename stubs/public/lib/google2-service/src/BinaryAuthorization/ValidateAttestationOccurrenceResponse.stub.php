@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization;
-
-class ValidateAttestationOccurrenceResponse extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const RESULT_RESULT_UNSPECIFIED = 'RESULT_UNSPECIFIED';
-    /**
-     * The Attestation was able to verified by the Attestor.
-     */
-    public const RESULT_VERIFIED = 'VERIFIED';
-    /**
-     * The Attestation was not able to verified by the Attestor.
-     */
-    public const RESULT_ATTESTATION_NOT_VERIFIABLE = 'ATTESTATION_NOT_VERIFIABLE';
-    /**
-     * The reason for denial if the Attestation couldn't be validated.
-     *
-     * @var string
-     */
-    public $denialReason;
-    /**
-     * The result of the Attestation validation.
-     *
-     * @var string
-     */
-    public $result;
-    /**
-     * The reason for denial if the Attestation couldn't be validated.
-     *
-     * @param string $denialReason
-     */
-    public function setDenialReason($denialReason)
+namespace Google\Service\BinaryAuthorization {
+    class ValidateAttestationOccurrenceResponse extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const RESULT_RESULT_UNSPECIFIED = 'RESULT_UNSPECIFIED';
+        /**
+         * The Attestation was able to verified by the Attestor.
+         */
+        public const RESULT_VERIFIED = 'VERIFIED';
+        /**
+         * The Attestation was not able to verified by the Attestor.
+         */
+        public const RESULT_ATTESTATION_NOT_VERIFIABLE = 'ATTESTATION_NOT_VERIFIABLE';
+        /**
+         * The reason for denial if the Attestation couldn't be validated.
+         *
+         * @var string
+         */
+        public $denialReason;
+        /**
+         * The result of the Attestation validation.
+         *
+         * @var string
+         */
+        public $result;
+        /**
+         * The reason for denial if the Attestation couldn't be validated.
+         *
+         * @param string $denialReason
+         */
+        public function setDenialReason($denialReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDenialReason()
+        {
+        }
+        /**
+         * The result of the Attestation validation.
+         *
+         * Accepted values: RESULT_UNSPECIFIED, VERIFIED, ATTESTATION_NOT_VERIFIABLE
+         *
+         * @param self::RESULT_* $result
+         */
+        public function setResult($result)
+        {
+        }
+        /**
+         * @return self::RESULT_*
+         */
+        public function getResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BinaryAuthorization\ValidateAttestationOccurrenceResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDenialReason()
-    {
-    }
-    /**
-     * The result of the Attestation validation.
-     *
-     * Accepted values: RESULT_UNSPECIFIED, VERIFIED, ATTESTATION_NOT_VERIFIABLE
-     *
-     * @param self::RESULT_* $result
-     */
-    public function setResult($result)
-    {
-    }
-    /**
-     * @return self::RESULT_*
-     */
-    public function getResult()
+    class Google_Service_BinaryAuthorization_ValidateAttestationOccurrenceResponse extends \Google\Service\BinaryAuthorization\ValidateAttestationOccurrenceResponse
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FulfillmentInstance extends \Google\Model
-{
-    /**
-     * Required. Inference instruction prompt to compare prediction with.
-     *
-     * @var string
-     */
-    public $instruction;
-    /**
-     * Required. Output of the evaluated model.
-     *
-     * @var string
-     */
-    public $prediction;
-    /**
-     * Required. Inference instruction prompt to compare prediction with.
-     *
-     * @param string $instruction
-     */
-    public function setInstruction($instruction)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FulfillmentInstance extends \Google\Model
     {
+        /**
+         * Required. Inference instruction prompt to compare prediction with.
+         *
+         * @var string
+         */
+        public $instruction;
+        /**
+         * Required. Output of the evaluated model.
+         *
+         * @var string
+         */
+        public $prediction;
+        /**
+         * Required. Inference instruction prompt to compare prediction with.
+         *
+         * @param string $instruction
+         */
+        public function setInstruction($instruction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstruction()
+        {
+        }
+        /**
+         * Required. Output of the evaluated model.
+         *
+         * @param string $prediction
+         */
+        public function setPrediction($prediction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrediction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FulfillmentInstance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstruction()
-    {
-    }
-    /**
-     * Required. Output of the evaluated model.
-     *
-     * @param string $prediction
-     */
-    public function setPrediction($prediction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrediction()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FulfillmentInstance extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FulfillmentInstance
     {
     }
 }

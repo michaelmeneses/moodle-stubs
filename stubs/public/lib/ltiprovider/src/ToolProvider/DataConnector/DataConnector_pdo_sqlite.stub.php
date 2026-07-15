@@ -8,6 +8,10 @@
  */
 namespace IMSGlobal\LTI\ToolProvider\DataConnector;
 
+use IMSGlobal\LTI\ToolProvider;
+use IMSGlobal\LTI\ToolProvider\Context;
+use IMSGlobal\LTI\ToolProvider\ToolConsumer;
+use PDO;
 /**
  * Class to represent an LTI Data Connector for PDO variations for SQLite connections
  *

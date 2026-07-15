@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class ResumeSubscriptionRequest extends \Google\Model
-{
-    /**
-     * Reserved for invalid or unexpected value. Do not use.
-     */
-    public const RESUME_MODE_RESUME_MODE_UNSPECIFIED = 'RESUME_MODE_UNSPECIFIED';
-    /**
-     * Resume the subscription using the input from `cycle_options`.
-     */
-    public const RESUME_MODE_RESUME_MODE_CYCLE_OPTIONS = 'RESUME_MODE_CYCLE_OPTIONS';
-    /**
-     * Resume the subscription with the existing billing schedule. The
-     * subscription's next renewal time must still be in the future for this mode
-     * to be applicable.
-     */
-    public const RESUME_MODE_RESUME_MODE_RESTORE_EXISTING_BILLING_SCHEDULE = 'RESUME_MODE_RESTORE_EXISTING_BILLING_SCHEDULE';
-    protected $cycleOptionsType = CycleOptions::class;
-    protected $cycleOptionsDataType = '';
-    /**
-     * Required. The mode to resume the subscription.
-     *
-     * @var string
-     */
-    public $resumeMode;
-    /**
-     * Optional. The cycle options for the subscription.
-     *
-     * @param CycleOptions $cycleOptions
-     */
-    public function setCycleOptions(CycleOptions $cycleOptions)
+namespace Google\Service\PaymentsResellerSubscription {
+    class ResumeSubscriptionRequest extends \Google\Model
     {
+        /**
+         * Reserved for invalid or unexpected value. Do not use.
+         */
+        public const RESUME_MODE_RESUME_MODE_UNSPECIFIED = 'RESUME_MODE_UNSPECIFIED';
+        /**
+         * Resume the subscription using the input from `cycle_options`.
+         */
+        public const RESUME_MODE_RESUME_MODE_CYCLE_OPTIONS = 'RESUME_MODE_CYCLE_OPTIONS';
+        /**
+         * Resume the subscription with the existing billing schedule. The
+         * subscription's next renewal time must still be in the future for this mode
+         * to be applicable.
+         */
+        public const RESUME_MODE_RESUME_MODE_RESTORE_EXISTING_BILLING_SCHEDULE = 'RESUME_MODE_RESTORE_EXISTING_BILLING_SCHEDULE';
+        protected $cycleOptionsType = CycleOptions::class;
+        protected $cycleOptionsDataType = '';
+        /**
+         * Required. The mode to resume the subscription.
+         *
+         * @var string
+         */
+        public $resumeMode;
+        /**
+         * Optional. The cycle options for the subscription.
+         *
+         * @param CycleOptions $cycleOptions
+         */
+        public function setCycleOptions(CycleOptions $cycleOptions)
+        {
+        }
+        /**
+         * @return CycleOptions
+         */
+        public function getCycleOptions()
+        {
+        }
+        /**
+         * Required. The mode to resume the subscription.
+         *
+         * Accepted values: RESUME_MODE_UNSPECIFIED, RESUME_MODE_CYCLE_OPTIONS,
+         * RESUME_MODE_RESTORE_EXISTING_BILLING_SCHEDULE
+         *
+         * @param self::RESUME_MODE_* $resumeMode
+         */
+        public function setResumeMode($resumeMode)
+        {
+        }
+        /**
+         * @return self::RESUME_MODE_*
+         */
+        public function getResumeMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CycleOptions
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\ResumeSubscriptionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCycleOptions()
-    {
-    }
-    /**
-     * Required. The mode to resume the subscription.
-     *
-     * Accepted values: RESUME_MODE_UNSPECIFIED, RESUME_MODE_CYCLE_OPTIONS,
-     * RESUME_MODE_RESTORE_EXISTING_BILLING_SCHEDULE
-     *
-     * @param self::RESUME_MODE_* $resumeMode
-     */
-    public function setResumeMode($resumeMode)
-    {
-    }
-    /**
-     * @return self::RESUME_MODE_*
-     */
-    public function getResumeMode()
+    class Google_Service_PaymentsResellerSubscription_ResumeSubscriptionRequest extends \Google\Service\PaymentsResellerSubscription\ResumeSubscriptionRequest
     {
     }
 }

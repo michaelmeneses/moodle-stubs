@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class CartData extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = Item::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Optional. The Merchant Center feed label associated with the feed of the
-     * items.
-     *
-     * @var string
-     */
-    public $merchantFeedLabel;
-    /**
-     * Optional. The language code in ISO 639-1 associated with the Merchant
-     * Center feed of the items.where your items are uploaded.
-     *
-     * @var string
-     */
-    public $merchantFeedLanguageCode;
-    /**
-     * Optional. The Merchant Center ID associated with the items.
-     *
-     * @var string
-     */
-    public $merchantId;
-    /**
-     * Optional. The sum of all discounts associated with the transaction.
-     *
-     * @var 
-     */
-    public $transactionDiscount;
-    /**
-     * Optional. The list of items associated with the event.
-     *
-     * @param Item[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\DataManager {
+    class CartData extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = Item::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Optional. The Merchant Center feed label associated with the feed of the
+         * items.
+         *
+         * @var string
+         */
+        public $merchantFeedLabel;
+        /**
+         * Optional. The language code in ISO 639-1 associated with the Merchant
+         * Center feed of the items.where your items are uploaded.
+         *
+         * @var string
+         */
+        public $merchantFeedLanguageCode;
+        /**
+         * Optional. The Merchant Center ID associated with the items.
+         *
+         * @var string
+         */
+        public $merchantId;
+        /**
+         * Optional. The sum of all discounts associated with the transaction.
+         *
+         * @var 
+         */
+        public $transactionDiscount;
+        /**
+         * Optional. The list of items associated with the event.
+         *
+         * @param Item[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Item[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Optional. The Merchant Center feed label associated with the feed of the
+         * items.
+         *
+         * @param string $merchantFeedLabel
+         */
+        public function setMerchantFeedLabel($merchantFeedLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantFeedLabel()
+        {
+        }
+        /**
+         * Optional. The language code in ISO 639-1 associated with the Merchant
+         * Center feed of the items.where your items are uploaded.
+         *
+         * @param string $merchantFeedLanguageCode
+         */
+        public function setMerchantFeedLanguageCode($merchantFeedLanguageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantFeedLanguageCode()
+        {
+        }
+        /**
+         * Optional. The Merchant Center ID associated with the items.
+         *
+         * @param string $merchantId
+         */
+        public function setMerchantId($merchantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantId()
+        {
+        }
+        public function setTransactionDiscount($transactionDiscount)
+        {
+        }
+        public function getTransactionDiscount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Item[]
+     * Runtime class alias of \Google\Service\DataManager\CartData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * Optional. The Merchant Center feed label associated with the feed of the
-     * items.
-     *
-     * @param string $merchantFeedLabel
-     */
-    public function setMerchantFeedLabel($merchantFeedLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantFeedLabel()
-    {
-    }
-    /**
-     * Optional. The language code in ISO 639-1 associated with the Merchant
-     * Center feed of the items.where your items are uploaded.
-     *
-     * @param string $merchantFeedLanguageCode
-     */
-    public function setMerchantFeedLanguageCode($merchantFeedLanguageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantFeedLanguageCode()
-    {
-    }
-    /**
-     * Optional. The Merchant Center ID associated with the items.
-     *
-     * @param string $merchantId
-     */
-    public function setMerchantId($merchantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantId()
-    {
-    }
-    public function setTransactionDiscount($transactionDiscount)
-    {
-    }
-    public function getTransactionDiscount()
+    class Google_Service_DataManager_CartData extends \Google\Service\DataManager\CartData
     {
     }
 }

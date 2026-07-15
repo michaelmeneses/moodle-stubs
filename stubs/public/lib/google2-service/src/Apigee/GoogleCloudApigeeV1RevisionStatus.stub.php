@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1RevisionStatus extends \Google\Collection
-{
-    protected $collection_key = 'errors';
-    protected $errorsType = GoogleCloudApigeeV1UpdateError::class;
-    protected $errorsDataType = 'array';
-    /**
-     * The json content of the resource revision. Large specs should be sent
-     * individually via the spec field to avoid hitting request size limits.
-     *
-     * @var string
-     */
-    public $jsonSpec;
-    /**
-     * The number of replicas that have successfully loaded this revision.
-     *
-     * @var int
-     */
-    public $replicas;
-    /**
-     * The revision of the resource.
-     *
-     * @var string
-     */
-    public $revisionId;
-    /**
-     * Errors reported when attempting to load this revision.
-     *
-     * @param GoogleCloudApigeeV1UpdateError[] $errors
-     */
-    public function setErrors($errors)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1RevisionStatus extends \Google\Collection
     {
+        protected $collection_key = 'errors';
+        protected $errorsType = GoogleCloudApigeeV1UpdateError::class;
+        protected $errorsDataType = 'array';
+        /**
+         * The json content of the resource revision. Large specs should be sent
+         * individually via the spec field to avoid hitting request size limits.
+         *
+         * @var string
+         */
+        public $jsonSpec;
+        /**
+         * The number of replicas that have successfully loaded this revision.
+         *
+         * @var int
+         */
+        public $replicas;
+        /**
+         * The revision of the resource.
+         *
+         * @var string
+         */
+        public $revisionId;
+        /**
+         * Errors reported when attempting to load this revision.
+         *
+         * @param GoogleCloudApigeeV1UpdateError[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1UpdateError[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * The json content of the resource revision. Large specs should be sent
+         * individually via the spec field to avoid hitting request size limits.
+         *
+         * @param string $jsonSpec
+         */
+        public function setJsonSpec($jsonSpec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJsonSpec()
+        {
+        }
+        /**
+         * The number of replicas that have successfully loaded this revision.
+         *
+         * @param int $replicas
+         */
+        public function setReplicas($replicas)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getReplicas()
+        {
+        }
+        /**
+         * The revision of the resource.
+         *
+         * @param string $revisionId
+         */
+        public function setRevisionId($revisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1UpdateError[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1RevisionStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
-    {
-    }
-    /**
-     * The json content of the resource revision. Large specs should be sent
-     * individually via the spec field to avoid hitting request size limits.
-     *
-     * @param string $jsonSpec
-     */
-    public function setJsonSpec($jsonSpec)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJsonSpec()
-    {
-    }
-    /**
-     * The number of replicas that have successfully loaded this revision.
-     *
-     * @param int $replicas
-     */
-    public function setReplicas($replicas)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getReplicas()
-    {
-    }
-    /**
-     * The revision of the resource.
-     *
-     * @param string $revisionId
-     */
-    public function setRevisionId($revisionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionId()
+    class Google_Service_Apigee_GoogleCloudApigeeV1RevisionStatus extends \Google\Service\Apigee\GoogleCloudApigeeV1RevisionStatus
     {
     }
 }

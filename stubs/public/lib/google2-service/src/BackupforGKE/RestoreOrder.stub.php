@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BackupforGKE;
-
-class RestoreOrder extends \Google\Collection
-{
-    protected $collection_key = 'groupKindDependencies';
-    protected $groupKindDependenciesType = GroupKindDependency::class;
-    protected $groupKindDependenciesDataType = 'array';
-    /**
-     * Optional. Contains a list of group kind dependency pairs provided by the
-     * customer, that is used by Backup for GKE to generate a group kind restore
-     * order.
-     *
-     * @param GroupKindDependency[] $groupKindDependencies
-     */
-    public function setGroupKindDependencies($groupKindDependencies)
+namespace Google\Service\BackupforGKE {
+    class RestoreOrder extends \Google\Collection
     {
+        protected $collection_key = 'groupKindDependencies';
+        protected $groupKindDependenciesType = GroupKindDependency::class;
+        protected $groupKindDependenciesDataType = 'array';
+        /**
+         * Optional. Contains a list of group kind dependency pairs provided by the
+         * customer, that is used by Backup for GKE to generate a group kind restore
+         * order.
+         *
+         * @param GroupKindDependency[] $groupKindDependencies
+         */
+        public function setGroupKindDependencies($groupKindDependencies)
+        {
+        }
+        /**
+         * @return GroupKindDependency[]
+         */
+        public function getGroupKindDependencies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GroupKindDependency[]
+     * Runtime class alias of \Google\Service\BackupforGKE\RestoreOrder registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroupKindDependencies()
+    class Google_Service_BackupforGKE_RestoreOrder extends \Google\Service\BackupforGKE\RestoreOrder
     {
     }
 }

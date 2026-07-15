@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Merchant;
-
-class ItemIssue extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $resolution;
-    protected $severityType = ItemIssueSeverity::class;
-    protected $severityDataType = '';
-    protected $typeType = ItemIssueType::class;
-    protected $typeDataType = '';
-    /**
-     * @param string
-     */
-    public function setResolution($resolution)
+namespace Google\Service\Merchant {
+    class ItemIssue extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $resolution;
+        protected $severityType = ItemIssueSeverity::class;
+        protected $severityDataType = '';
+        protected $typeType = ItemIssueType::class;
+        protected $typeDataType = '';
+        /**
+         * @param string
+         */
+        public function setResolution($resolution)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResolution()
+        {
+        }
+        /**
+         * @param ItemIssueSeverity
+         */
+        public function setSeverity(ItemIssueSeverity $severity)
+        {
+        }
+        /**
+         * @return ItemIssueSeverity
+         */
+        public function getSeverity()
+        {
+        }
+        /**
+         * @param ItemIssueType
+         */
+        public function setType(ItemIssueType $type)
+        {
+        }
+        /**
+         * @return ItemIssueType
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Merchant\ItemIssue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResolution()
-    {
-    }
-    /**
-     * @param ItemIssueSeverity
-     */
-    public function setSeverity(ItemIssueSeverity $severity)
-    {
-    }
-    /**
-     * @return ItemIssueSeverity
-     */
-    public function getSeverity()
-    {
-    }
-    /**
-     * @param ItemIssueType
-     */
-    public function setType(ItemIssueType $type)
-    {
-    }
-    /**
-     * @return ItemIssueType
-     */
-    public function getType()
+    class Google_Service_Merchant_ItemIssue extends \Google\Service\Merchant\ItemIssue
     {
     }
 }

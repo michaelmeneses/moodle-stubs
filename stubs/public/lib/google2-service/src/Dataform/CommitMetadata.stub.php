@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class CommitMetadata extends \Google\Model
-{
-    protected $authorType = CommitAuthor::class;
-    protected $authorDataType = '';
-    /**
-     * Optional. The commit's message.
-     *
-     * @var string
-     */
-    public $commitMessage;
-    /**
-     * Required. The commit's author.
-     *
-     * @param CommitAuthor $author
-     */
-    public function setAuthor(CommitAuthor $author)
+namespace Google\Service\Dataform {
+    class CommitMetadata extends \Google\Model
     {
+        protected $authorType = CommitAuthor::class;
+        protected $authorDataType = '';
+        /**
+         * Optional. The commit's message.
+         *
+         * @var string
+         */
+        public $commitMessage;
+        /**
+         * Required. The commit's author.
+         *
+         * @param CommitAuthor $author
+         */
+        public function setAuthor(CommitAuthor $author)
+        {
+        }
+        /**
+         * @return CommitAuthor
+         */
+        public function getAuthor()
+        {
+        }
+        /**
+         * Optional. The commit's message.
+         *
+         * @param string $commitMessage
+         */
+        public function setCommitMessage($commitMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommitMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CommitAuthor
+     * Runtime class alias of \Google\Service\Dataform\CommitMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthor()
-    {
-    }
-    /**
-     * Optional. The commit's message.
-     *
-     * @param string $commitMessage
-     */
-    public function setCommitMessage($commitMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCommitMessage()
+    class Google_Service_Dataform_CommitMetadata extends \Google\Service\Dataform\CommitMetadata
     {
     }
 }

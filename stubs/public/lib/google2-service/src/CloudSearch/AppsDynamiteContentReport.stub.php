@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteContentReport extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $reportCreateTimestamp;
-    protected $reportJustificationType = AppsDynamiteContentReportJustification::class;
-    protected $reportJustificationDataType = '';
-    protected $reportTypeType = AppsDynamiteSharedContentReportType::class;
-    protected $reportTypeDataType = '';
-    protected $reporterUserIdType = AppsDynamiteUserId::class;
-    protected $reporterUserIdDataType = '';
-    /**
-     * @var string
-     */
-    public $revisionCreateTimestamp;
-    /**
-     * @param string
-     */
-    public function setReportCreateTimestamp($reportCreateTimestamp)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteContentReport extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $reportCreateTimestamp;
+        protected $reportJustificationType = AppsDynamiteContentReportJustification::class;
+        protected $reportJustificationDataType = '';
+        protected $reportTypeType = AppsDynamiteSharedContentReportType::class;
+        protected $reportTypeDataType = '';
+        protected $reporterUserIdType = AppsDynamiteUserId::class;
+        protected $reporterUserIdDataType = '';
+        /**
+         * @var string
+         */
+        public $revisionCreateTimestamp;
+        /**
+         * @param string
+         */
+        public function setReportCreateTimestamp($reportCreateTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportCreateTimestamp()
+        {
+        }
+        /**
+         * @param AppsDynamiteContentReportJustification
+         */
+        public function setReportJustification(AppsDynamiteContentReportJustification $reportJustification)
+        {
+        }
+        /**
+         * @return AppsDynamiteContentReportJustification
+         */
+        public function getReportJustification()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedContentReportType
+         */
+        public function setReportType(AppsDynamiteSharedContentReportType $reportType)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedContentReportType
+         */
+        public function getReportType()
+        {
+        }
+        /**
+         * @param AppsDynamiteUserId
+         */
+        public function setReporterUserId(AppsDynamiteUserId $reporterUserId)
+        {
+        }
+        /**
+         * @return AppsDynamiteUserId
+         */
+        public function getReporterUserId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRevisionCreateTimestamp($revisionCreateTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionCreateTimestamp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteContentReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReportCreateTimestamp()
-    {
-    }
-    /**
-     * @param AppsDynamiteContentReportJustification
-     */
-    public function setReportJustification(AppsDynamiteContentReportJustification $reportJustification)
-    {
-    }
-    /**
-     * @return AppsDynamiteContentReportJustification
-     */
-    public function getReportJustification()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedContentReportType
-     */
-    public function setReportType(AppsDynamiteSharedContentReportType $reportType)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedContentReportType
-     */
-    public function getReportType()
-    {
-    }
-    /**
-     * @param AppsDynamiteUserId
-     */
-    public function setReporterUserId(AppsDynamiteUserId $reporterUserId)
-    {
-    }
-    /**
-     * @return AppsDynamiteUserId
-     */
-    public function getReporterUserId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRevisionCreateTimestamp($revisionCreateTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionCreateTimestamp()
+    class Google_Service_CloudSearch_AppsDynamiteContentReport extends \Google\Service\CloudSearch\AppsDynamiteContentReport
     {
     }
 }

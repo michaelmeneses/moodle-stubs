@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Genomics;
-
-class WorkerReleasedEvent extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $instance;
-    /**
-     * @var string
-     */
-    public $zone;
-    /**
-     * @param string
-     */
-    public function setInstance($instance)
+namespace Google\Service\Genomics {
+    class WorkerReleasedEvent extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $instance;
+        /**
+         * @var string
+         */
+        public $zone;
+        /**
+         * @param string
+         */
+        public function setInstance($instance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Genomics\WorkerReleasedEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstance()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_Genomics_WorkerReleasedEvent extends \Google\Service\Genomics\WorkerReleasedEvent
     {
     }
 }

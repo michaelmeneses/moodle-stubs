@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonTextLabel extends \Google\Model
-{
-    /**
-     * Background color of the label in HEX format. This string must match the
-     * regular expression '^\#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$'. Note: The
-     * background color may not be visible for manager accounts.
-     *
-     * @var string
-     */
-    public $backgroundColor;
-    /**
-     * A short description of the label. The length must be no more than 200
-     * characters.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Background color of the label in HEX format. This string must match the
-     * regular expression '^\#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$'. Note: The
-     * background color may not be visible for manager accounts.
-     *
-     * @param string $backgroundColor
-     */
-    public function setBackgroundColor($backgroundColor)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonTextLabel extends \Google\Model
     {
+        /**
+         * Background color of the label in HEX format. This string must match the
+         * regular expression '^\#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$'. Note: The
+         * background color may not be visible for manager accounts.
+         *
+         * @var string
+         */
+        public $backgroundColor;
+        /**
+         * A short description of the label. The length must be no more than 200
+         * characters.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Background color of the label in HEX format. This string must match the
+         * regular expression '^\#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$'. Note: The
+         * background color may not be visible for manager accounts.
+         *
+         * @param string $backgroundColor
+         */
+        public function setBackgroundColor($backgroundColor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackgroundColor()
+        {
+        }
+        /**
+         * A short description of the label. The length must be no more than 200
+         * characters.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonTextLabel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackgroundColor()
-    {
-    }
-    /**
-     * A short description of the label. The length must be no more than 200
-     * characters.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonTextLabel extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonTextLabel
     {
     }
 }

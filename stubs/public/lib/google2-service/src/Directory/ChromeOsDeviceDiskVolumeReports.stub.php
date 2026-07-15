@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class ChromeOsDeviceDiskVolumeReports extends \Google\Collection
-{
-    protected $collection_key = 'volumeInfo';
-    protected $volumeInfoType = ChromeOsDeviceDiskVolumeReportsVolumeInfo::class;
-    protected $volumeInfoDataType = 'array';
-    /**
-     * Disk volumes
-     *
-     * @param ChromeOsDeviceDiskVolumeReportsVolumeInfo[] $volumeInfo
-     */
-    public function setVolumeInfo($volumeInfo)
+namespace Google\Service\Directory {
+    class ChromeOsDeviceDiskVolumeReports extends \Google\Collection
     {
+        protected $collection_key = 'volumeInfo';
+        protected $volumeInfoType = ChromeOsDeviceDiskVolumeReportsVolumeInfo::class;
+        protected $volumeInfoDataType = 'array';
+        /**
+         * Disk volumes
+         *
+         * @param ChromeOsDeviceDiskVolumeReportsVolumeInfo[] $volumeInfo
+         */
+        public function setVolumeInfo($volumeInfo)
+        {
+        }
+        /**
+         * @return ChromeOsDeviceDiskVolumeReportsVolumeInfo[]
+         */
+        public function getVolumeInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ChromeOsDeviceDiskVolumeReportsVolumeInfo[]
+     * Runtime class alias of \Google\Service\Directory\ChromeOsDeviceDiskVolumeReports registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVolumeInfo()
+    class Google_Service_Directory_ChromeOsDeviceDiskVolumeReports extends \Google\Service\Directory\ChromeOsDeviceDiskVolumeReports
     {
     }
 }

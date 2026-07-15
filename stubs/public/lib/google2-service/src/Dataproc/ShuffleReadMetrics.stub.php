@@ -21,150 +21,159 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ShuffleReadMetrics extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $fetchWaitTimeMillis;
-    /**
-     * @var string
-     */
-    public $localBlocksFetched;
-    /**
-     * @var string
-     */
-    public $localBytesRead;
-    /**
-     * @var string
-     */
-    public $recordsRead;
-    /**
-     * @var string
-     */
-    public $remoteBlocksFetched;
-    /**
-     * @var string
-     */
-    public $remoteBytesRead;
-    /**
-     * @var string
-     */
-    public $remoteBytesReadToDisk;
-    /**
-     * @var string
-     */
-    public $remoteReqsDuration;
-    protected $shufflePushReadMetricsType = ShufflePushReadMetrics::class;
-    protected $shufflePushReadMetricsDataType = '';
-    /**
-     * @param string $fetchWaitTimeMillis
-     */
-    public function setFetchWaitTimeMillis($fetchWaitTimeMillis)
+namespace Google\Service\Dataproc {
+    class ShuffleReadMetrics extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $fetchWaitTimeMillis;
+        /**
+         * @var string
+         */
+        public $localBlocksFetched;
+        /**
+         * @var string
+         */
+        public $localBytesRead;
+        /**
+         * @var string
+         */
+        public $recordsRead;
+        /**
+         * @var string
+         */
+        public $remoteBlocksFetched;
+        /**
+         * @var string
+         */
+        public $remoteBytesRead;
+        /**
+         * @var string
+         */
+        public $remoteBytesReadToDisk;
+        /**
+         * @var string
+         */
+        public $remoteReqsDuration;
+        protected $shufflePushReadMetricsType = ShufflePushReadMetrics::class;
+        protected $shufflePushReadMetricsDataType = '';
+        /**
+         * @param string $fetchWaitTimeMillis
+         */
+        public function setFetchWaitTimeMillis($fetchWaitTimeMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFetchWaitTimeMillis()
+        {
+        }
+        /**
+         * @param string $localBlocksFetched
+         */
+        public function setLocalBlocksFetched($localBlocksFetched)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalBlocksFetched()
+        {
+        }
+        /**
+         * @param string $localBytesRead
+         */
+        public function setLocalBytesRead($localBytesRead)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalBytesRead()
+        {
+        }
+        /**
+         * @param string $recordsRead
+         */
+        public function setRecordsRead($recordsRead)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecordsRead()
+        {
+        }
+        /**
+         * @param string $remoteBlocksFetched
+         */
+        public function setRemoteBlocksFetched($remoteBlocksFetched)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemoteBlocksFetched()
+        {
+        }
+        /**
+         * @param string $remoteBytesRead
+         */
+        public function setRemoteBytesRead($remoteBytesRead)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemoteBytesRead()
+        {
+        }
+        /**
+         * @param string $remoteBytesReadToDisk
+         */
+        public function setRemoteBytesReadToDisk($remoteBytesReadToDisk)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemoteBytesReadToDisk()
+        {
+        }
+        /**
+         * @param string $remoteReqsDuration
+         */
+        public function setRemoteReqsDuration($remoteReqsDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemoteReqsDuration()
+        {
+        }
+        /**
+         * @param ShufflePushReadMetrics $shufflePushReadMetrics
+         */
+        public function setShufflePushReadMetrics(ShufflePushReadMetrics $shufflePushReadMetrics)
+        {
+        }
+        /**
+         * @return ShufflePushReadMetrics
+         */
+        public function getShufflePushReadMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\ShuffleReadMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFetchWaitTimeMillis()
-    {
-    }
-    /**
-     * @param string $localBlocksFetched
-     */
-    public function setLocalBlocksFetched($localBlocksFetched)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocalBlocksFetched()
-    {
-    }
-    /**
-     * @param string $localBytesRead
-     */
-    public function setLocalBytesRead($localBytesRead)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocalBytesRead()
-    {
-    }
-    /**
-     * @param string $recordsRead
-     */
-    public function setRecordsRead($recordsRead)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecordsRead()
-    {
-    }
-    /**
-     * @param string $remoteBlocksFetched
-     */
-    public function setRemoteBlocksFetched($remoteBlocksFetched)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRemoteBlocksFetched()
-    {
-    }
-    /**
-     * @param string $remoteBytesRead
-     */
-    public function setRemoteBytesRead($remoteBytesRead)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRemoteBytesRead()
-    {
-    }
-    /**
-     * @param string $remoteBytesReadToDisk
-     */
-    public function setRemoteBytesReadToDisk($remoteBytesReadToDisk)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRemoteBytesReadToDisk()
-    {
-    }
-    /**
-     * @param string $remoteReqsDuration
-     */
-    public function setRemoteReqsDuration($remoteReqsDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRemoteReqsDuration()
-    {
-    }
-    /**
-     * @param ShufflePushReadMetrics $shufflePushReadMetrics
-     */
-    public function setShufflePushReadMetrics(ShufflePushReadMetrics $shufflePushReadMetrics)
-    {
-    }
-    /**
-     * @return ShufflePushReadMetrics
-     */
-    public function getShufflePushReadMetrics()
+    class Google_Service_Dataproc_ShuffleReadMetrics extends \Google\Service\Dataproc\ShuffleReadMetrics
     {
     }
 }

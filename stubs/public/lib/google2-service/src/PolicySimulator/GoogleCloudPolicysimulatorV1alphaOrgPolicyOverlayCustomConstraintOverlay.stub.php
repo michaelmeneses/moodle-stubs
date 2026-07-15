@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator;
-
-class GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlayCustomConstraintOverlay extends \Google\Model
-{
-    protected $customConstraintType = GoogleCloudOrgpolicyV2CustomConstraint::class;
-    protected $customConstraintDataType = '';
-    /**
-     * @var string
-     */
-    public $customConstraintParent;
-    /**
-     * @param GoogleCloudOrgpolicyV2CustomConstraint
-     */
-    public function setCustomConstraint(GoogleCloudOrgpolicyV2CustomConstraint $customConstraint)
+namespace Google\Service\PolicySimulator {
+    class GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlayCustomConstraintOverlay extends \Google\Model
     {
+        protected $customConstraintType = GoogleCloudOrgpolicyV2CustomConstraint::class;
+        protected $customConstraintDataType = '';
+        /**
+         * @var string
+         */
+        public $customConstraintParent;
+        /**
+         * @param GoogleCloudOrgpolicyV2CustomConstraint
+         */
+        public function setCustomConstraint(GoogleCloudOrgpolicyV2CustomConstraint $customConstraint)
+        {
+        }
+        /**
+         * @return GoogleCloudOrgpolicyV2CustomConstraint
+         */
+        public function getCustomConstraint()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCustomConstraintParent($customConstraintParent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomConstraintParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudOrgpolicyV2CustomConstraint
+     * Runtime class alias of \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlayCustomConstraintOverlay registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomConstraint()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCustomConstraintParent($customConstraintParent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomConstraintParent()
+    class Google_Service_PolicySimulator_GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlayCustomConstraintOverlay extends \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlayCustomConstraintOverlay
     {
     }
 }

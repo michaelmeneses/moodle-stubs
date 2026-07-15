@@ -21,251 +21,270 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container\Resource;
-
-/**
- * The "nodePools" collection of methods.
- * Typical usage is:
- *  <code>
- *   $containerService = new Google\Service\Container(...);
- *   $nodePools = $containerService->projects_zones_clusters_nodePools;
- *  </code>
- */
-class ProjectsZonesClustersNodePools extends \Google\Service\Resource
-{
+namespace Google\Service\Container\Resource {
+    use Google\Service\Container\CreateNodePoolRequest;
+    use Google\Service\Container\ListNodePoolsResponse;
+    use Google\Service\Container\NodePool;
+    use Google\Service\Container\NodePoolUpgradeInfo;
+    use Google\Service\Container\Operation;
+    use Google\Service\Container\RollbackNodePoolUpgradeRequest;
+    use Google\Service\Container\SetNodePoolAutoscalingRequest;
+    use Google\Service\Container\SetNodePoolManagementRequest;
+    use Google\Service\Container\SetNodePoolSizeRequest;
+    use Google\Service\Container\UpdateNodePoolRequest;
     /**
-     * Sets the autoscaling settings for the specified node pool.
-     * (nodePools.autoscaling)
-     *
-     * @param string $projectId Deprecated. The Google Developers Console [project
-     * ID or project number](https://cloud.google.com/resource-
-     * manager/docs/creating-managing-projects). This field has been deprecated and
-     * replaced by the name field.
-     * @param string $zone Deprecated. The name of the Google Compute Engine
-     * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
-     * cluster resides. This field has been deprecated and replaced by the name
-     * field.
-     * @param string $clusterId Deprecated. The name of the cluster to upgrade. This
-     * field has been deprecated and replaced by the name field.
-     * @param string $nodePoolId Deprecated. The name of the node pool to upgrade.
-     * This field has been deprecated and replaced by the name field.
-     * @param SetNodePoolAutoscalingRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "nodePools" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $containerService = new Google\Service\Container(...);
+     *   $nodePools = $containerService->projects_zones_clusters_nodePools;
+     *  </code>
      */
-    public function autoscaling($projectId, $zone, $clusterId, $nodePoolId, SetNodePoolAutoscalingRequest $postBody, $optParams = [])
+    class ProjectsZonesClustersNodePools extends \Google\Service\Resource
     {
+        /**
+         * Sets the autoscaling settings for the specified node pool.
+         * (nodePools.autoscaling)
+         *
+         * @param string $projectId Deprecated. The Google Developers Console [project
+         * ID or project number](https://cloud.google.com/resource-
+         * manager/docs/creating-managing-projects). This field has been deprecated and
+         * replaced by the name field.
+         * @param string $zone Deprecated. The name of the Google Compute Engine
+         * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
+         * cluster resides. This field has been deprecated and replaced by the name
+         * field.
+         * @param string $clusterId Deprecated. The name of the cluster to upgrade. This
+         * field has been deprecated and replaced by the name field.
+         * @param string $nodePoolId Deprecated. The name of the node pool to upgrade.
+         * This field has been deprecated and replaced by the name field.
+         * @param SetNodePoolAutoscalingRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function autoscaling($projectId, $zone, $clusterId, $nodePoolId, SetNodePoolAutoscalingRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Creates a node pool for a cluster. (nodePools.create)
+         *
+         * @param string $projectId Deprecated. The Google Developers Console [project
+         * ID or project number](https://cloud.google.com/resource-
+         * manager/docs/creating-managing-projects). This field has been deprecated and
+         * replaced by the parent field.
+         * @param string $zone Deprecated. The name of the Google Compute Engine
+         * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
+         * cluster resides. This field has been deprecated and replaced by the parent
+         * field.
+         * @param string $clusterId Deprecated. The name of the cluster. This field has
+         * been deprecated and replaced by the parent field.
+         * @param CreateNodePoolRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($projectId, $zone, $clusterId, CreateNodePoolRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a node pool from a cluster. (nodePools.delete)
+         *
+         * @param string $projectId Deprecated. The Google Developers Console [project
+         * ID or project number](https://cloud.google.com/resource-
+         * manager/docs/creating-managing-projects). This field has been deprecated and
+         * replaced by the name field.
+         * @param string $zone Deprecated. The name of the Google Compute Engine
+         * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
+         * cluster resides. This field has been deprecated and replaced by the name
+         * field.
+         * @param string $clusterId Deprecated. The name of the cluster. This field has
+         * been deprecated and replaced by the name field.
+         * @param string $nodePoolId Deprecated. The name of the node pool to delete.
+         * This field has been deprecated and replaced by the name field.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string name The name (project, location, cluster, node pool id) of
+         * the node pool to delete. Specified in the format
+         * `projects/locations/clusters/nodePools`.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($projectId, $zone, $clusterId, $nodePoolId, $optParams = [])
+        {
+        }
+        /**
+         * Fetch upgrade information of a specific nodepool.
+         * (nodePools.fetchNodePoolUpgradeInfo)
+         *
+         * @param string $name Required. The name (project, location, cluster, nodepool)
+         * of the nodepool to get. Specified in the format
+         * `projects/locations/clusters/nodePools` or
+         * `projects/zones/clusters/nodePools`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string version API request version that initiates this operation.
+         * @return NodePoolUpgradeInfo
+         * @throws \Google\Service\Exception
+         */
+        public function fetchNodePoolUpgradeInfo($name, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the requested node pool. (nodePools.get)
+         *
+         * @param string $projectId Deprecated. The Google Developers Console [project
+         * ID or project number](https://cloud.google.com/resource-
+         * manager/docs/creating-managing-projects). This field has been deprecated and
+         * replaced by the name field.
+         * @param string $zone Deprecated. The name of the Google Compute Engine
+         * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
+         * cluster resides. This field has been deprecated and replaced by the name
+         * field.
+         * @param string $clusterId Deprecated. The name of the cluster. This field has
+         * been deprecated and replaced by the name field.
+         * @param string $nodePoolId Deprecated. The name of the node pool. This field
+         * has been deprecated and replaced by the name field.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string name The name (project, location, cluster, node pool id) of
+         * the node pool to get. Specified in the format
+         * `projects/locations/clusters/nodePools`.
+         * @return NodePool
+         * @throws \Google\Service\Exception
+         */
+        public function get($projectId, $zone, $clusterId, $nodePoolId, $optParams = [])
+        {
+        }
+        /**
+         * Lists the node pools for a cluster.
+         * (nodePools.listProjectsZonesClustersNodePools)
+         *
+         * @param string $projectId Deprecated. The Google Developers Console [project
+         * ID or project number](https://cloud.google.com/resource-
+         * manager/docs/creating-managing-projects). This field has been deprecated and
+         * replaced by the parent field.
+         * @param string $zone Deprecated. The name of the Google Compute Engine
+         * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
+         * cluster resides. This field has been deprecated and replaced by the parent
+         * field.
+         * @param string $clusterId Deprecated. The name of the cluster. This field has
+         * been deprecated and replaced by the parent field.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string parent The parent (project, location, cluster name) where
+         * the node pools will be listed. Specified in the format
+         * `projects/locations/clusters`.
+         * @return ListNodePoolsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsZonesClustersNodePools($projectId, $zone, $clusterId, $optParams = [])
+        {
+        }
+        /**
+         * Rolls back a previously Aborted or Failed NodePool upgrade. This makes no
+         * changes if the last upgrade successfully completed. (nodePools.rollback)
+         *
+         * @param string $projectId Deprecated. The Google Developers Console [project
+         * ID or project number](https://cloud.google.com/resource-
+         * manager/docs/creating-managing-projects). This field has been deprecated and
+         * replaced by the name field.
+         * @param string $zone Deprecated. The name of the Google Compute Engine
+         * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
+         * cluster resides. This field has been deprecated and replaced by the name
+         * field.
+         * @param string $clusterId Deprecated. The name of the cluster to rollback.
+         * This field has been deprecated and replaced by the name field.
+         * @param string $nodePoolId Deprecated. The name of the node pool to rollback.
+         * This field has been deprecated and replaced by the name field.
+         * @param RollbackNodePoolUpgradeRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function rollback($projectId, $zone, $clusterId, $nodePoolId, RollbackNodePoolUpgradeRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Sets the NodeManagement options for a node pool. (nodePools.setManagement)
+         *
+         * @param string $projectId Deprecated. The Google Developers Console [project
+         * ID or project number](https://cloud.google.com/resource-
+         * manager/docs/creating-managing-projects). This field has been deprecated and
+         * replaced by the name field.
+         * @param string $zone Deprecated. The name of the Google Compute Engine
+         * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
+         * cluster resides. This field has been deprecated and replaced by the name
+         * field.
+         * @param string $clusterId Deprecated. The name of the cluster to update. This
+         * field has been deprecated and replaced by the name field.
+         * @param string $nodePoolId Deprecated. The name of the node pool to update.
+         * This field has been deprecated and replaced by the name field.
+         * @param SetNodePoolManagementRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function setManagement($projectId, $zone, $clusterId, $nodePoolId, SetNodePoolManagementRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Sets the size for a specific node pool. The new size will be used for all
+         * replicas, including future replicas created by modifying NodePool.locations.
+         * (nodePools.setSize)
+         *
+         * @param string $projectId Deprecated. The Google Developers Console [project
+         * ID or project number](https://cloud.google.com/resource-
+         * manager/docs/creating-managing-projects). This field has been deprecated and
+         * replaced by the name field.
+         * @param string $zone Deprecated. The name of the Google Compute Engine
+         * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
+         * cluster resides. This field has been deprecated and replaced by the name
+         * field.
+         * @param string $clusterId Deprecated. The name of the cluster to update. This
+         * field has been deprecated and replaced by the name field.
+         * @param string $nodePoolId Deprecated. The name of the node pool to update.
+         * This field has been deprecated and replaced by the name field.
+         * @param SetNodePoolSizeRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function setSize($projectId, $zone, $clusterId, $nodePoolId, SetNodePoolSizeRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates the version and/or image type for the specified node pool.
+         * (nodePools.update)
+         *
+         * @param string $projectId Deprecated. The Google Developers Console [project
+         * ID or project number](https://cloud.google.com/resource-
+         * manager/docs/creating-managing-projects). This field has been deprecated and
+         * replaced by the name field.
+         * @param string $zone Deprecated. The name of the Google Compute Engine
+         * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
+         * cluster resides. This field has been deprecated and replaced by the name
+         * field.
+         * @param string $clusterId Deprecated. The name of the cluster to upgrade. This
+         * field has been deprecated and replaced by the name field.
+         * @param string $nodePoolId Deprecated. The name of the node pool to upgrade.
+         * This field has been deprecated and replaced by the name field.
+         * @param UpdateNodePoolRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function update($projectId, $zone, $clusterId, $nodePoolId, UpdateNodePoolRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Creates a node pool for a cluster. (nodePools.create)
-     *
-     * @param string $projectId Deprecated. The Google Developers Console [project
-     * ID or project number](https://cloud.google.com/resource-
-     * manager/docs/creating-managing-projects). This field has been deprecated and
-     * replaced by the parent field.
-     * @param string $zone Deprecated. The name of the Google Compute Engine
-     * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
-     * cluster resides. This field has been deprecated and replaced by the parent
-     * field.
-     * @param string $clusterId Deprecated. The name of the cluster. This field has
-     * been deprecated and replaced by the parent field.
-     * @param CreateNodePoolRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Container\Resource\ProjectsZonesClustersNodePools registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function create($projectId, $zone, $clusterId, CreateNodePoolRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Deletes a node pool from a cluster. (nodePools.delete)
-     *
-     * @param string $projectId Deprecated. The Google Developers Console [project
-     * ID or project number](https://cloud.google.com/resource-
-     * manager/docs/creating-managing-projects). This field has been deprecated and
-     * replaced by the name field.
-     * @param string $zone Deprecated. The name of the Google Compute Engine
-     * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
-     * cluster resides. This field has been deprecated and replaced by the name
-     * field.
-     * @param string $clusterId Deprecated. The name of the cluster. This field has
-     * been deprecated and replaced by the name field.
-     * @param string $nodePoolId Deprecated. The name of the node pool to delete.
-     * This field has been deprecated and replaced by the name field.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string name The name (project, location, cluster, node pool id) of
-     * the node pool to delete. Specified in the format
-     * `projects/locations/clusters/nodePools`.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function delete($projectId, $zone, $clusterId, $nodePoolId, $optParams = [])
-    {
-    }
-    /**
-     * Fetch upgrade information of a specific nodepool.
-     * (nodePools.fetchNodePoolUpgradeInfo)
-     *
-     * @param string $name Required. The name (project, location, cluster, nodepool)
-     * of the nodepool to get. Specified in the format
-     * `projects/locations/clusters/nodePools` or
-     * `projects/zones/clusters/nodePools`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string version API request version that initiates this operation.
-     * @return NodePoolUpgradeInfo
-     * @throws \Google\Service\Exception
-     */
-    public function fetchNodePoolUpgradeInfo($name, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves the requested node pool. (nodePools.get)
-     *
-     * @param string $projectId Deprecated. The Google Developers Console [project
-     * ID or project number](https://cloud.google.com/resource-
-     * manager/docs/creating-managing-projects). This field has been deprecated and
-     * replaced by the name field.
-     * @param string $zone Deprecated. The name of the Google Compute Engine
-     * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
-     * cluster resides. This field has been deprecated and replaced by the name
-     * field.
-     * @param string $clusterId Deprecated. The name of the cluster. This field has
-     * been deprecated and replaced by the name field.
-     * @param string $nodePoolId Deprecated. The name of the node pool. This field
-     * has been deprecated and replaced by the name field.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string name The name (project, location, cluster, node pool id) of
-     * the node pool to get. Specified in the format
-     * `projects/locations/clusters/nodePools`.
-     * @return NodePool
-     * @throws \Google\Service\Exception
-     */
-    public function get($projectId, $zone, $clusterId, $nodePoolId, $optParams = [])
-    {
-    }
-    /**
-     * Lists the node pools for a cluster.
-     * (nodePools.listProjectsZonesClustersNodePools)
-     *
-     * @param string $projectId Deprecated. The Google Developers Console [project
-     * ID or project number](https://cloud.google.com/resource-
-     * manager/docs/creating-managing-projects). This field has been deprecated and
-     * replaced by the parent field.
-     * @param string $zone Deprecated. The name of the Google Compute Engine
-     * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
-     * cluster resides. This field has been deprecated and replaced by the parent
-     * field.
-     * @param string $clusterId Deprecated. The name of the cluster. This field has
-     * been deprecated and replaced by the parent field.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string parent The parent (project, location, cluster name) where
-     * the node pools will be listed. Specified in the format
-     * `projects/locations/clusters`.
-     * @return ListNodePoolsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsZonesClustersNodePools($projectId, $zone, $clusterId, $optParams = [])
-    {
-    }
-    /**
-     * Rolls back a previously Aborted or Failed NodePool upgrade. This makes no
-     * changes if the last upgrade successfully completed. (nodePools.rollback)
-     *
-     * @param string $projectId Deprecated. The Google Developers Console [project
-     * ID or project number](https://cloud.google.com/resource-
-     * manager/docs/creating-managing-projects). This field has been deprecated and
-     * replaced by the name field.
-     * @param string $zone Deprecated. The name of the Google Compute Engine
-     * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
-     * cluster resides. This field has been deprecated and replaced by the name
-     * field.
-     * @param string $clusterId Deprecated. The name of the cluster to rollback.
-     * This field has been deprecated and replaced by the name field.
-     * @param string $nodePoolId Deprecated. The name of the node pool to rollback.
-     * This field has been deprecated and replaced by the name field.
-     * @param RollbackNodePoolUpgradeRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function rollback($projectId, $zone, $clusterId, $nodePoolId, RollbackNodePoolUpgradeRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Sets the NodeManagement options for a node pool. (nodePools.setManagement)
-     *
-     * @param string $projectId Deprecated. The Google Developers Console [project
-     * ID or project number](https://cloud.google.com/resource-
-     * manager/docs/creating-managing-projects). This field has been deprecated and
-     * replaced by the name field.
-     * @param string $zone Deprecated. The name of the Google Compute Engine
-     * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
-     * cluster resides. This field has been deprecated and replaced by the name
-     * field.
-     * @param string $clusterId Deprecated. The name of the cluster to update. This
-     * field has been deprecated and replaced by the name field.
-     * @param string $nodePoolId Deprecated. The name of the node pool to update.
-     * This field has been deprecated and replaced by the name field.
-     * @param SetNodePoolManagementRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function setManagement($projectId, $zone, $clusterId, $nodePoolId, SetNodePoolManagementRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Sets the size for a specific node pool. The new size will be used for all
-     * replicas, including future replicas created by modifying NodePool.locations.
-     * (nodePools.setSize)
-     *
-     * @param string $projectId Deprecated. The Google Developers Console [project
-     * ID or project number](https://cloud.google.com/resource-
-     * manager/docs/creating-managing-projects). This field has been deprecated and
-     * replaced by the name field.
-     * @param string $zone Deprecated. The name of the Google Compute Engine
-     * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
-     * cluster resides. This field has been deprecated and replaced by the name
-     * field.
-     * @param string $clusterId Deprecated. The name of the cluster to update. This
-     * field has been deprecated and replaced by the name field.
-     * @param string $nodePoolId Deprecated. The name of the node pool to update.
-     * This field has been deprecated and replaced by the name field.
-     * @param SetNodePoolSizeRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function setSize($projectId, $zone, $clusterId, $nodePoolId, SetNodePoolSizeRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates the version and/or image type for the specified node pool.
-     * (nodePools.update)
-     *
-     * @param string $projectId Deprecated. The Google Developers Console [project
-     * ID or project number](https://cloud.google.com/resource-
-     * manager/docs/creating-managing-projects). This field has been deprecated and
-     * replaced by the name field.
-     * @param string $zone Deprecated. The name of the Google Compute Engine
-     * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
-     * cluster resides. This field has been deprecated and replaced by the name
-     * field.
-     * @param string $clusterId Deprecated. The name of the cluster to upgrade. This
-     * field has been deprecated and replaced by the name field.
-     * @param string $nodePoolId Deprecated. The name of the node pool to upgrade.
-     * This field has been deprecated and replaced by the name field.
-     * @param UpdateNodePoolRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function update($projectId, $zone, $clusterId, $nodePoolId, UpdateNodePoolRequest $postBody, $optParams = [])
+    class Google_Service_Container_Resource_ProjectsZonesClustersNodePools extends \Google\Service\Container\Resource\ProjectsZonesClustersNodePools
     {
     }
 }

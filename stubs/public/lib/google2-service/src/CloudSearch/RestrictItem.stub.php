@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class RestrictItem extends \Google\Model
-{
-    protected $driveFollowUpRestrictType = DriveFollowUpRestrict::class;
-    protected $driveFollowUpRestrictDataType = '';
-    protected $driveLocationRestrictType = DriveLocationRestrict::class;
-    protected $driveLocationRestrictDataType = '';
-    protected $driveMimeTypeRestrictType = DriveMimeTypeRestrict::class;
-    protected $driveMimeTypeRestrictDataType = '';
-    protected $driveTimeSpanRestrictType = DriveTimeSpanRestrict::class;
-    protected $driveTimeSpanRestrictDataType = '';
-    /**
-     * The search restrict (e.g. "after:2017-09-11 before:2017-09-12").
-     *
-     * @var string
-     */
-    public $searchOperator;
-    /**
-     * @param DriveFollowUpRestrict $driveFollowUpRestrict
-     */
-    public function setDriveFollowUpRestrict(DriveFollowUpRestrict $driveFollowUpRestrict)
+namespace Google\Service\CloudSearch {
+    class RestrictItem extends \Google\Model
     {
+        protected $driveFollowUpRestrictType = DriveFollowUpRestrict::class;
+        protected $driveFollowUpRestrictDataType = '';
+        protected $driveLocationRestrictType = DriveLocationRestrict::class;
+        protected $driveLocationRestrictDataType = '';
+        protected $driveMimeTypeRestrictType = DriveMimeTypeRestrict::class;
+        protected $driveMimeTypeRestrictDataType = '';
+        protected $driveTimeSpanRestrictType = DriveTimeSpanRestrict::class;
+        protected $driveTimeSpanRestrictDataType = '';
+        /**
+         * The search restrict (e.g. "after:2017-09-11 before:2017-09-12").
+         *
+         * @var string
+         */
+        public $searchOperator;
+        /**
+         * @param DriveFollowUpRestrict $driveFollowUpRestrict
+         */
+        public function setDriveFollowUpRestrict(DriveFollowUpRestrict $driveFollowUpRestrict)
+        {
+        }
+        /**
+         * @return DriveFollowUpRestrict
+         */
+        public function getDriveFollowUpRestrict()
+        {
+        }
+        /**
+         * @param DriveLocationRestrict $driveLocationRestrict
+         */
+        public function setDriveLocationRestrict(DriveLocationRestrict $driveLocationRestrict)
+        {
+        }
+        /**
+         * @return DriveLocationRestrict
+         */
+        public function getDriveLocationRestrict()
+        {
+        }
+        /**
+         * Drive Types.
+         *
+         * @param DriveMimeTypeRestrict $driveMimeTypeRestrict
+         */
+        public function setDriveMimeTypeRestrict(DriveMimeTypeRestrict $driveMimeTypeRestrict)
+        {
+        }
+        /**
+         * @return DriveMimeTypeRestrict
+         */
+        public function getDriveMimeTypeRestrict()
+        {
+        }
+        /**
+         * @param DriveTimeSpanRestrict $driveTimeSpanRestrict
+         */
+        public function setDriveTimeSpanRestrict(DriveTimeSpanRestrict $driveTimeSpanRestrict)
+        {
+        }
+        /**
+         * @return DriveTimeSpanRestrict
+         */
+        public function getDriveTimeSpanRestrict()
+        {
+        }
+        /**
+         * The search restrict (e.g. "after:2017-09-11 before:2017-09-12").
+         *
+         * @param string $searchOperator
+         */
+        public function setSearchOperator($searchOperator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSearchOperator()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DriveFollowUpRestrict
+     * Runtime class alias of \Google\Service\CloudSearch\RestrictItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDriveFollowUpRestrict()
-    {
-    }
-    /**
-     * @param DriveLocationRestrict $driveLocationRestrict
-     */
-    public function setDriveLocationRestrict(DriveLocationRestrict $driveLocationRestrict)
-    {
-    }
-    /**
-     * @return DriveLocationRestrict
-     */
-    public function getDriveLocationRestrict()
-    {
-    }
-    /**
-     * Drive Types.
-     *
-     * @param DriveMimeTypeRestrict $driveMimeTypeRestrict
-     */
-    public function setDriveMimeTypeRestrict(DriveMimeTypeRestrict $driveMimeTypeRestrict)
-    {
-    }
-    /**
-     * @return DriveMimeTypeRestrict
-     */
-    public function getDriveMimeTypeRestrict()
-    {
-    }
-    /**
-     * @param DriveTimeSpanRestrict $driveTimeSpanRestrict
-     */
-    public function setDriveTimeSpanRestrict(DriveTimeSpanRestrict $driveTimeSpanRestrict)
-    {
-    }
-    /**
-     * @return DriveTimeSpanRestrict
-     */
-    public function getDriveTimeSpanRestrict()
-    {
-    }
-    /**
-     * The search restrict (e.g. "after:2017-09-11 before:2017-09-12").
-     *
-     * @param string $searchOperator
-     */
-    public function setSearchOperator($searchOperator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSearchOperator()
+    class Google_Service_CloudSearch_RestrictItem extends \Google\Service\CloudSearch\RestrictItem
     {
     }
 }

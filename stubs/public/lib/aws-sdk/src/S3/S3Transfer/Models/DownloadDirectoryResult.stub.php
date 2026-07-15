@@ -8,6 +8,7 @@
  */
 namespace Aws\S3\S3Transfer\Models;
 
+use Throwable;
 final class DownloadDirectoryResult
 {
     /** @var int */

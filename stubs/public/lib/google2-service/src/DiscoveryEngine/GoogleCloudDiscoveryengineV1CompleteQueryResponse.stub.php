@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1CompleteQueryResponse extends \Google\Collection
-{
-    protected $collection_key = 'querySuggestions';
-    protected $querySuggestionsType = GoogleCloudDiscoveryengineV1CompleteQueryResponseQuerySuggestion::class;
-    protected $querySuggestionsDataType = 'array';
-    /**
-     * True if the returned suggestions are all tail suggestions. For tail
-     * matching to be triggered, include_tail_suggestions in the request must be
-     * true and there must be no suggestions that match the full query.
-     *
-     * @var bool
-     */
-    public $tailMatchTriggered;
-    /**
-     * Results of the matched query suggestions. The result list is ordered and
-     * the first result is a top suggestion.
-     *
-     * @param GoogleCloudDiscoveryengineV1CompleteQueryResponseQuerySuggestion[] $querySuggestions
-     */
-    public function setQuerySuggestions($querySuggestions)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1CompleteQueryResponse extends \Google\Collection
     {
+        protected $collection_key = 'querySuggestions';
+        protected $querySuggestionsType = GoogleCloudDiscoveryengineV1CompleteQueryResponseQuerySuggestion::class;
+        protected $querySuggestionsDataType = 'array';
+        /**
+         * True if the returned suggestions are all tail suggestions. For tail
+         * matching to be triggered, include_tail_suggestions in the request must be
+         * true and there must be no suggestions that match the full query.
+         *
+         * @var bool
+         */
+        public $tailMatchTriggered;
+        /**
+         * Results of the matched query suggestions. The result list is ordered and
+         * the first result is a top suggestion.
+         *
+         * @param GoogleCloudDiscoveryengineV1CompleteQueryResponseQuerySuggestion[] $querySuggestions
+         */
+        public function setQuerySuggestions($querySuggestions)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1CompleteQueryResponseQuerySuggestion[]
+         */
+        public function getQuerySuggestions()
+        {
+        }
+        /**
+         * True if the returned suggestions are all tail suggestions. For tail
+         * matching to be triggered, include_tail_suggestions in the request must be
+         * true and there must be no suggestions that match the full query.
+         *
+         * @param bool $tailMatchTriggered
+         */
+        public function setTailMatchTriggered($tailMatchTriggered)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTailMatchTriggered()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1CompleteQueryResponseQuerySuggestion[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CompleteQueryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQuerySuggestions()
-    {
-    }
-    /**
-     * True if the returned suggestions are all tail suggestions. For tail
-     * matching to be triggered, include_tail_suggestions in the request must be
-     * true and there must be no suggestions that match the full query.
-     *
-     * @param bool $tailMatchTriggered
-     */
-    public function setTailMatchTriggered($tailMatchTriggered)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTailMatchTriggered()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1CompleteQueryResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CompleteQueryResponse
     {
     }
 }

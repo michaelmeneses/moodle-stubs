@@ -21,44 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager\Resource;
-
-/**
- * The "version_headers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $tagmanagerService = new Google\Service\TagManager(...);
- *   $version_headers = $tagmanagerService->accounts_containers_version_headers;
- *  </code>
- */
-class AccountsContainersVersionHeaders extends \Google\Service\Resource
-{
+namespace Google\Service\TagManager\Resource {
+    use Google\Service\TagManager\ContainerVersionHeader;
+    use Google\Service\TagManager\ListContainerVersionsResponse;
     /**
-     * Gets the latest container version header (version_headers.latest)
-     *
-     * @param string $parent GTM Container's API relative path.
-     * @param array $optParams Optional parameters.
-     * @return ContainerVersionHeader
-     * @throws \Google\Service\Exception
+     * The "version_headers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $tagmanagerService = new Google\Service\TagManager(...);
+     *   $version_headers = $tagmanagerService->accounts_containers_version_headers;
+     *  </code>
      */
-    public function latest($parent, $optParams = [])
+    class AccountsContainersVersionHeaders extends \Google\Service\Resource
     {
+        /**
+         * Gets the latest container version header (version_headers.latest)
+         *
+         * @param string $parent GTM Container's API relative path.
+         * @param array $optParams Optional parameters.
+         * @return ContainerVersionHeader
+         * @throws \Google\Service\Exception
+         */
+        public function latest($parent, $optParams = [])
+        {
+        }
+        /**
+         * Lists all Container Versions of a GTM Container.
+         * (version_headers.listAccountsContainersVersionHeaders)
+         *
+         * @param string $parent GTM Container's API relative path.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool includeDeleted Also retrieve deleted (archived) versions when
+         * true.
+         * @opt_param string pageToken Continuation token for fetching the next page of
+         * results.
+         * @return ListContainerVersionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsContainersVersionHeaders($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists all Container Versions of a GTM Container.
-     * (version_headers.listAccountsContainersVersionHeaders)
-     *
-     * @param string $parent GTM Container's API relative path.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool includeDeleted Also retrieve deleted (archived) versions when
-     * true.
-     * @opt_param string pageToken Continuation token for fetching the next page of
-     * results.
-     * @return ListContainerVersionsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\TagManager\Resource\AccountsContainersVersionHeaders registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listAccountsContainersVersionHeaders($parent, $optParams = [])
+    class Google_Service_TagManager_Resource_AccountsContainersVersionHeaders extends \Google\Service\TagManager\Resource\AccountsContainersVersionHeaders
     {
     }
 }

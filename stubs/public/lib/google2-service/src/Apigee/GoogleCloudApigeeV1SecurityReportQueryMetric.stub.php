@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1SecurityReportQueryMetric extends \Google\Model
-{
-    /**
-     * Aggregation function: avg, min, max, or sum.
-     *
-     * @var string
-     */
-    public $aggregationFunction;
-    /**
-     * Alias for the metric. Alias will be used to replace metric name in query
-     * results.
-     *
-     * @var string
-     */
-    public $alias;
-    /**
-     * Required. Metric name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * One of `+`, `-`, `/`, `%`, `*`.
-     *
-     * @var string
-     */
-    public $operator;
-    /**
-     * Operand value should be provided when operator is set.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Aggregation function: avg, min, max, or sum.
-     *
-     * @param string $aggregationFunction
-     */
-    public function setAggregationFunction($aggregationFunction)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1SecurityReportQueryMetric extends \Google\Model
     {
+        /**
+         * Aggregation function: avg, min, max, or sum.
+         *
+         * @var string
+         */
+        public $aggregationFunction;
+        /**
+         * Alias for the metric. Alias will be used to replace metric name in query
+         * results.
+         *
+         * @var string
+         */
+        public $alias;
+        /**
+         * Required. Metric name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * One of `+`, `-`, `/`, `%`, `*`.
+         *
+         * @var string
+         */
+        public $operator;
+        /**
+         * Operand value should be provided when operator is set.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Aggregation function: avg, min, max, or sum.
+         *
+         * @param string $aggregationFunction
+         */
+        public function setAggregationFunction($aggregationFunction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAggregationFunction()
+        {
+        }
+        /**
+         * Alias for the metric. Alias will be used to replace metric name in query
+         * results.
+         *
+         * @param string $alias
+         */
+        public function setAlias($alias)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAlias()
+        {
+        }
+        /**
+         * Required. Metric name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * One of `+`, `-`, `/`, `%`, `*`.
+         *
+         * @param string $operator
+         */
+        public function setOperator($operator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperator()
+        {
+        }
+        /**
+         * Operand value should be provided when operator is set.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1SecurityReportQueryMetric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAggregationFunction()
-    {
-    }
-    /**
-     * Alias for the metric. Alias will be used to replace metric name in query
-     * results.
-     *
-     * @param string $alias
-     */
-    public function setAlias($alias)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAlias()
-    {
-    }
-    /**
-     * Required. Metric name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * One of `+`, `-`, `/`, `%`, `*`.
-     *
-     * @param string $operator
-     */
-    public function setOperator($operator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperator()
-    {
-    }
-    /**
-     * Operand value should be provided when operator is set.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Apigee_GoogleCloudApigeeV1SecurityReportQueryMetric extends \Google\Service\Apigee\GoogleCloudApigeeV1SecurityReportQueryMetric
     {
     }
 }

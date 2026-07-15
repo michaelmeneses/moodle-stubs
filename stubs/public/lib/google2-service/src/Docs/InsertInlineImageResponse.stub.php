@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class InsertInlineImageResponse extends \Google\Model
-{
-    /**
-     * The ID of the created InlineObject.
-     *
-     * @var string
-     */
-    public $objectId;
-    /**
-     * The ID of the created InlineObject.
-     *
-     * @param string $objectId
-     */
-    public function setObjectId($objectId)
+namespace Google\Service\Docs {
+    class InsertInlineImageResponse extends \Google\Model
     {
+        /**
+         * The ID of the created InlineObject.
+         *
+         * @var string
+         */
+        public $objectId;
+        /**
+         * The ID of the created InlineObject.
+         *
+         * @param string $objectId
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Docs\InsertInlineImageResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectId()
+    class Google_Service_Docs_InsertInlineImageResponse extends \Google\Service\Docs\InsertInlineImageResponse
     {
     }
 }

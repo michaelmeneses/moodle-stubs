@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudConnectorsV1AuthConfigUserPassword extends \Google\Model
-{
-    protected $passwordType = GoogleCloudConnectorsV1Secret::class;
-    protected $passwordDataType = '';
-    /**
-     * Optional. Username.
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * Optional. Secret version reference containing the password.
-     *
-     * @param GoogleCloudConnectorsV1Secret $password
-     */
-    public function setPassword(GoogleCloudConnectorsV1Secret $password)
+namespace Google\Service\Integrations {
+    class GoogleCloudConnectorsV1AuthConfigUserPassword extends \Google\Model
     {
+        protected $passwordType = GoogleCloudConnectorsV1Secret::class;
+        protected $passwordDataType = '';
+        /**
+         * Optional. Username.
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * Optional. Secret version reference containing the password.
+         *
+         * @param GoogleCloudConnectorsV1Secret $password
+         */
+        public function setPassword(GoogleCloudConnectorsV1Secret $password)
+        {
+        }
+        /**
+         * @return GoogleCloudConnectorsV1Secret
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * Optional. Username.
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudConnectorsV1Secret
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudConnectorsV1AuthConfigUserPassword registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPassword()
-    {
-    }
-    /**
-     * Optional. Username.
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_Integrations_GoogleCloudConnectorsV1AuthConfigUserPassword extends \Google\Service\Integrations\GoogleCloudConnectorsV1AuthConfigUserPassword
     {
     }
 }

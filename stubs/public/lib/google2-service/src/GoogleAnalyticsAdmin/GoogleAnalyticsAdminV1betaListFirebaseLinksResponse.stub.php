@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaListFirebaseLinksResponse extends \Google\Collection
-{
-    protected $collection_key = 'firebaseLinks';
-    protected $firebaseLinksType = GoogleAnalyticsAdminV1betaFirebaseLink::class;
-    protected $firebaseLinksDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages. Currently, Google
-     * Analytics supports only one FirebaseLink per property, so this will never
-     * be populated.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of FirebaseLinks. This will have at most one value.
-     *
-     * @param GoogleAnalyticsAdminV1betaFirebaseLink[] $firebaseLinks
-     */
-    public function setFirebaseLinks($firebaseLinks)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaListFirebaseLinksResponse extends \Google\Collection
     {
+        protected $collection_key = 'firebaseLinks';
+        protected $firebaseLinksType = GoogleAnalyticsAdminV1betaFirebaseLink::class;
+        protected $firebaseLinksDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages. Currently, Google
+         * Analytics supports only one FirebaseLink per property, so this will never
+         * be populated.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of FirebaseLinks. This will have at most one value.
+         *
+         * @param GoogleAnalyticsAdminV1betaFirebaseLink[] $firebaseLinks
+         */
+        public function setFirebaseLinks($firebaseLinks)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaFirebaseLink[]
+         */
+        public function getFirebaseLinks()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages. Currently, Google
+         * Analytics supports only one FirebaseLink per property, so this will never
+         * be populated.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1betaFirebaseLink[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListFirebaseLinksResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirebaseLinks()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages. Currently, Google
-     * Analytics supports only one FirebaseLink per property, so this will never
-     * be populated.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaListFirebaseLinksResponse extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListFirebaseLinksResponse
     {
     }
 }

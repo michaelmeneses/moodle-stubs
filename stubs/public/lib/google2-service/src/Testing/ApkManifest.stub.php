@@ -21,243 +21,252 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class ApkManifest extends \Google\Collection
-{
-    protected $collection_key = 'usesPermissionTags';
-    /**
-     * User-readable name for the application.
-     *
-     * @var string
-     */
-    public $applicationLabel;
-    protected $intentFiltersType = IntentFilter::class;
-    protected $intentFiltersDataType = 'array';
-    /**
-     * Maximum API level on which the application is designed to run.
-     *
-     * @var int
-     */
-    public $maxSdkVersion;
-    protected $metadataType = Metadata::class;
-    protected $metadataDataType = 'array';
-    /**
-     * Minimum API level required for the application to run.
-     *
-     * @var int
-     */
-    public $minSdkVersion;
-    /**
-     * Full Java-style package name for this application, e.g. "com.example.foo".
-     *
-     * @var string
-     */
-    public $packageName;
-    protected $servicesType = Service::class;
-    protected $servicesDataType = 'array';
-    /**
-     * Specifies the API Level on which the application is designed to run.
-     *
-     * @var int
-     */
-    public $targetSdkVersion;
-    protected $usesFeatureType = UsesFeature::class;
-    protected $usesFeatureDataType = 'array';
-    /**
-     * @var string[]
-     */
-    public $usesPermission;
-    protected $usesPermissionTagsType = UsesPermissionTag::class;
-    protected $usesPermissionTagsDataType = 'array';
-    /**
-     * Version number used internally by the app.
-     *
-     * @var string
-     */
-    public $versionCode;
-    /**
-     * Version number shown to users.
-     *
-     * @var string
-     */
-    public $versionName;
-    /**
-     * User-readable name for the application.
-     *
-     * @param string $applicationLabel
-     */
-    public function setApplicationLabel($applicationLabel)
+namespace Google\Service\Testing {
+    class ApkManifest extends \Google\Collection
     {
+        protected $collection_key = 'usesPermissionTags';
+        /**
+         * User-readable name for the application.
+         *
+         * @var string
+         */
+        public $applicationLabel;
+        protected $intentFiltersType = IntentFilter::class;
+        protected $intentFiltersDataType = 'array';
+        /**
+         * Maximum API level on which the application is designed to run.
+         *
+         * @var int
+         */
+        public $maxSdkVersion;
+        protected $metadataType = Metadata::class;
+        protected $metadataDataType = 'array';
+        /**
+         * Minimum API level required for the application to run.
+         *
+         * @var int
+         */
+        public $minSdkVersion;
+        /**
+         * Full Java-style package name for this application, e.g. "com.example.foo".
+         *
+         * @var string
+         */
+        public $packageName;
+        protected $servicesType = Service::class;
+        protected $servicesDataType = 'array';
+        /**
+         * Specifies the API Level on which the application is designed to run.
+         *
+         * @var int
+         */
+        public $targetSdkVersion;
+        protected $usesFeatureType = UsesFeature::class;
+        protected $usesFeatureDataType = 'array';
+        /**
+         * @var string[]
+         */
+        public $usesPermission;
+        protected $usesPermissionTagsType = UsesPermissionTag::class;
+        protected $usesPermissionTagsDataType = 'array';
+        /**
+         * Version number used internally by the app.
+         *
+         * @var string
+         */
+        public $versionCode;
+        /**
+         * Version number shown to users.
+         *
+         * @var string
+         */
+        public $versionName;
+        /**
+         * User-readable name for the application.
+         *
+         * @param string $applicationLabel
+         */
+        public function setApplicationLabel($applicationLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicationLabel()
+        {
+        }
+        /**
+         * @param IntentFilter[] $intentFilters
+         */
+        public function setIntentFilters($intentFilters)
+        {
+        }
+        /**
+         * @return IntentFilter[]
+         */
+        public function getIntentFilters()
+        {
+        }
+        /**
+         * Maximum API level on which the application is designed to run.
+         *
+         * @param int $maxSdkVersion
+         */
+        public function setMaxSdkVersion($maxSdkVersion)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxSdkVersion()
+        {
+        }
+        /**
+         * Meta-data tags defined in the manifest.
+         *
+         * @param Metadata[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return Metadata[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Minimum API level required for the application to run.
+         *
+         * @param int $minSdkVersion
+         */
+        public function setMinSdkVersion($minSdkVersion)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinSdkVersion()
+        {
+        }
+        /**
+         * Full Java-style package name for this application, e.g. "com.example.foo".
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
+        /**
+         * Services contained in the tag.
+         *
+         * @param Service[] $services
+         */
+        public function setServices($services)
+        {
+        }
+        /**
+         * @return Service[]
+         */
+        public function getServices()
+        {
+        }
+        /**
+         * Specifies the API Level on which the application is designed to run.
+         *
+         * @param int $targetSdkVersion
+         */
+        public function setTargetSdkVersion($targetSdkVersion)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTargetSdkVersion()
+        {
+        }
+        /**
+         * Feature usage tags defined in the manifest.
+         *
+         * @param UsesFeature[] $usesFeature
+         */
+        public function setUsesFeature($usesFeature)
+        {
+        }
+        /**
+         * @return UsesFeature[]
+         */
+        public function getUsesFeature()
+        {
+        }
+        /**
+         * @param string[] $usesPermission
+         */
+        public function setUsesPermission($usesPermission)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUsesPermission()
+        {
+        }
+        /**
+         * Permissions declared to be used by the application
+         *
+         * @param UsesPermissionTag[] $usesPermissionTags
+         */
+        public function setUsesPermissionTags($usesPermissionTags)
+        {
+        }
+        /**
+         * @return UsesPermissionTag[]
+         */
+        public function getUsesPermissionTags()
+        {
+        }
+        /**
+         * Version number used internally by the app.
+         *
+         * @param string $versionCode
+         */
+        public function setVersionCode($versionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionCode()
+        {
+        }
+        /**
+         * Version number shown to users.
+         *
+         * @param string $versionName
+         */
+        public function setVersionName($versionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Testing\ApkManifest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicationLabel()
-    {
-    }
-    /**
-     * @param IntentFilter[] $intentFilters
-     */
-    public function setIntentFilters($intentFilters)
-    {
-    }
-    /**
-     * @return IntentFilter[]
-     */
-    public function getIntentFilters()
-    {
-    }
-    /**
-     * Maximum API level on which the application is designed to run.
-     *
-     * @param int $maxSdkVersion
-     */
-    public function setMaxSdkVersion($maxSdkVersion)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxSdkVersion()
-    {
-    }
-    /**
-     * Meta-data tags defined in the manifest.
-     *
-     * @param Metadata[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return Metadata[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Minimum API level required for the application to run.
-     *
-     * @param int $minSdkVersion
-     */
-    public function setMinSdkVersion($minSdkVersion)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinSdkVersion()
-    {
-    }
-    /**
-     * Full Java-style package name for this application, e.g. "com.example.foo".
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
-    {
-    }
-    /**
-     * Services contained in the tag.
-     *
-     * @param Service[] $services
-     */
-    public function setServices($services)
-    {
-    }
-    /**
-     * @return Service[]
-     */
-    public function getServices()
-    {
-    }
-    /**
-     * Specifies the API Level on which the application is designed to run.
-     *
-     * @param int $targetSdkVersion
-     */
-    public function setTargetSdkVersion($targetSdkVersion)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTargetSdkVersion()
-    {
-    }
-    /**
-     * Feature usage tags defined in the manifest.
-     *
-     * @param UsesFeature[] $usesFeature
-     */
-    public function setUsesFeature($usesFeature)
-    {
-    }
-    /**
-     * @return UsesFeature[]
-     */
-    public function getUsesFeature()
-    {
-    }
-    /**
-     * @param string[] $usesPermission
-     */
-    public function setUsesPermission($usesPermission)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUsesPermission()
-    {
-    }
-    /**
-     * Permissions declared to be used by the application
-     *
-     * @param UsesPermissionTag[] $usesPermissionTags
-     */
-    public function setUsesPermissionTags($usesPermissionTags)
-    {
-    }
-    /**
-     * @return UsesPermissionTag[]
-     */
-    public function getUsesPermissionTags()
-    {
-    }
-    /**
-     * Version number used internally by the app.
-     *
-     * @param string $versionCode
-     */
-    public function setVersionCode($versionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionCode()
-    {
-    }
-    /**
-     * Version number shown to users.
-     *
-     * @param string $versionName
-     */
-    public function setVersionName($versionName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionName()
+    class Google_Service_Testing_ApkManifest extends \Google\Service\Testing\ApkManifest
     {
     }
 }

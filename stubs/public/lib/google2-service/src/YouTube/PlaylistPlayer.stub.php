@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class PlaylistPlayer extends \Google\Model
-{
-    /**
-     * An
-     *
-     * @var string
-     */
-    public $embedHtml;
-    /**
-     * An
-     *
-     * @param string $embedHtml
-     */
-    public function setEmbedHtml($embedHtml)
+namespace Google\Service\YouTube {
+    class PlaylistPlayer extends \Google\Model
     {
+        /**
+         * An
+         *
+         * @var string
+         */
+        public $embedHtml;
+        /**
+         * An
+         *
+         * @param string $embedHtml
+         */
+        public function setEmbedHtml($embedHtml)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmbedHtml()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\PlaylistPlayer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmbedHtml()
+    class Google_Service_YouTube_PlaylistPlayer extends \Google\Service\YouTube\PlaylistPlayer
     {
     }
 }

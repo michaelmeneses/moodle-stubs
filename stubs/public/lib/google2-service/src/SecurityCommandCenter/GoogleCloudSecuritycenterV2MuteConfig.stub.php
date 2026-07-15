@@ -21,263 +21,272 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2MuteConfig extends \Google\Model
-{
-    /**
-     * Unused.
-     */
-    public const TYPE_MUTE_CONFIG_TYPE_UNSPECIFIED = 'MUTE_CONFIG_TYPE_UNSPECIFIED';
-    /**
-     * A static mute config, which sets the static mute state of future matching
-     * findings to muted. Once the static mute state has been set, finding or
-     * config modifications will not affect the state.
-     */
-    public const TYPE_STATIC = 'STATIC';
-    /**
-     * A dynamic mute config, which is applied to existing and future matching
-     * findings, setting their dynamic mute state to "muted". If the config is
-     * updated or deleted, or a matching finding is updated, such that the finding
-     * doesn't match the config, the config will be removed from the finding, and
-     * the finding's dynamic mute state may become "unmuted" (unless other configs
-     * still match).
-     */
-    public const TYPE_DYNAMIC = 'DYNAMIC';
-    /**
-     * Output only. The time at which the mute config was created. This field is
-     * set by the server and will be ignored if provided on config creation.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The resource name of the Cloud KMS `CryptoKey` used to encrypt
-     * this configuration data, if CMEK was enabled during Security Command Center
-     * activation.
-     *
-     * @var string
-     */
-    public $cryptoKeyName;
-    /**
-     * A description of the mute config.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Optional. The expiry of the mute config. Only applicable for dynamic
-     * configs. If the expiry is set, when the config expires, it is removed from
-     * all findings.
-     *
-     * @var string
-     */
-    public $expiryTime;
-    /**
-     * Required. An expression that defines the filter to apply across
-     * create/update events of findings. While creating a filter string, be
-     * mindful of the scope in which the mute configuration is being created.
-     * E.g., If a filter contains project = X but is created under the project = Y
-     * scope, it might not match any findings. The following field and operator
-     * combinations are supported: * severity: `=`, `:` * category: `=`, `:` *
-     * resource.name: `=`, `:` * resource.project_name: `=`, `:` *
-     * resource.project_display_name: `=`, `:` * resource.folders.resource_folder:
-     * `=`, `:` * resource.parent_name: `=`, `:` * resource.parent_display_name:
-     * `=`, `:` * resource.type: `=`, `:` * finding_class: `=`, `:` *
-     * indicator.ip_addresses: `=`, `:` * indicator.domains: `=`, `:`
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * Output only. Email address of the user who last edited the mute config.
-     * This field is set by the server and will be ignored if provided on config
-     * creation or update.
-     *
-     * @var string
-     */
-    public $mostRecentEditor;
-    /**
-     * Identifier. This field will be ignored if provided on config creation. The
-     * following list shows some examples of the format: +
-     * `organizations/{organization}/muteConfigs/{mute_config}` + `organizations/{
-     * organization}locations/{location}//muteConfigs/{mute_config}` +
-     * `folders/{folder}/muteConfigs/{mute_config}` +
-     * `folders/{folder}/locations/{location}/muteConfigs/{mute_config}` +
-     * `projects/{project}/muteConfigs/{mute_config}` +
-     * `projects/{project}/locations/{location}/muteConfigs/{mute_config}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The type of the mute config, which determines what type of mute
-     * state the config affects. Immutable after creation.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. The most recent time at which the mute config was updated.
-     * This field is set by the server and will be ignored if provided on config
-     * creation or update.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The time at which the mute config was created. This field is
-     * set by the server and will be ignored if provided on config creation.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2MuteConfig extends \Google\Model
     {
+        /**
+         * Unused.
+         */
+        public const TYPE_MUTE_CONFIG_TYPE_UNSPECIFIED = 'MUTE_CONFIG_TYPE_UNSPECIFIED';
+        /**
+         * A static mute config, which sets the static mute state of future matching
+         * findings to muted. Once the static mute state has been set, finding or
+         * config modifications will not affect the state.
+         */
+        public const TYPE_STATIC = 'STATIC';
+        /**
+         * A dynamic mute config, which is applied to existing and future matching
+         * findings, setting their dynamic mute state to "muted". If the config is
+         * updated or deleted, or a matching finding is updated, such that the finding
+         * doesn't match the config, the config will be removed from the finding, and
+         * the finding's dynamic mute state may become "unmuted" (unless other configs
+         * still match).
+         */
+        public const TYPE_DYNAMIC = 'DYNAMIC';
+        /**
+         * Output only. The time at which the mute config was created. This field is
+         * set by the server and will be ignored if provided on config creation.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The resource name of the Cloud KMS `CryptoKey` used to encrypt
+         * this configuration data, if CMEK was enabled during Security Command Center
+         * activation.
+         *
+         * @var string
+         */
+        public $cryptoKeyName;
+        /**
+         * A description of the mute config.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Optional. The expiry of the mute config. Only applicable for dynamic
+         * configs. If the expiry is set, when the config expires, it is removed from
+         * all findings.
+         *
+         * @var string
+         */
+        public $expiryTime;
+        /**
+         * Required. An expression that defines the filter to apply across
+         * create/update events of findings. While creating a filter string, be
+         * mindful of the scope in which the mute configuration is being created.
+         * E.g., If a filter contains project = X but is created under the project = Y
+         * scope, it might not match any findings. The following field and operator
+         * combinations are supported: * severity: `=`, `:` * category: `=`, `:` *
+         * resource.name: `=`, `:` * resource.project_name: `=`, `:` *
+         * resource.project_display_name: `=`, `:` * resource.folders.resource_folder:
+         * `=`, `:` * resource.parent_name: `=`, `:` * resource.parent_display_name:
+         * `=`, `:` * resource.type: `=`, `:` * finding_class: `=`, `:` *
+         * indicator.ip_addresses: `=`, `:` * indicator.domains: `=`, `:`
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * Output only. Email address of the user who last edited the mute config.
+         * This field is set by the server and will be ignored if provided on config
+         * creation or update.
+         *
+         * @var string
+         */
+        public $mostRecentEditor;
+        /**
+         * Identifier. This field will be ignored if provided on config creation. The
+         * following list shows some examples of the format: +
+         * `organizations/{organization}/muteConfigs/{mute_config}` + `organizations/{
+         * organization}locations/{location}//muteConfigs/{mute_config}` +
+         * `folders/{folder}/muteConfigs/{mute_config}` +
+         * `folders/{folder}/locations/{location}/muteConfigs/{mute_config}` +
+         * `projects/{project}/muteConfigs/{mute_config}` +
+         * `projects/{project}/locations/{location}/muteConfigs/{mute_config}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The type of the mute config, which determines what type of mute
+         * state the config affects. Immutable after creation.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. The most recent time at which the mute config was updated.
+         * This field is set by the server and will be ignored if provided on config
+         * creation or update.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The time at which the mute config was created. This field is
+         * set by the server and will be ignored if provided on config creation.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The resource name of the Cloud KMS `CryptoKey` used to encrypt
+         * this configuration data, if CMEK was enabled during Security Command Center
+         * activation.
+         *
+         * @param string $cryptoKeyName
+         */
+        public function setCryptoKeyName($cryptoKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCryptoKeyName()
+        {
+        }
+        /**
+         * A description of the mute config.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. The expiry of the mute config. Only applicable for dynamic
+         * configs. If the expiry is set, when the config expires, it is removed from
+         * all findings.
+         *
+         * @param string $expiryTime
+         */
+        public function setExpiryTime($expiryTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpiryTime()
+        {
+        }
+        /**
+         * Required. An expression that defines the filter to apply across
+         * create/update events of findings. While creating a filter string, be
+         * mindful of the scope in which the mute configuration is being created.
+         * E.g., If a filter contains project = X but is created under the project = Y
+         * scope, it might not match any findings. The following field and operator
+         * combinations are supported: * severity: `=`, `:` * category: `=`, `:` *
+         * resource.name: `=`, `:` * resource.project_name: `=`, `:` *
+         * resource.project_display_name: `=`, `:` * resource.folders.resource_folder:
+         * `=`, `:` * resource.parent_name: `=`, `:` * resource.parent_display_name:
+         * `=`, `:` * resource.type: `=`, `:` * finding_class: `=`, `:` *
+         * indicator.ip_addresses: `=`, `:` * indicator.domains: `=`, `:`
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * Output only. Email address of the user who last edited the mute config.
+         * This field is set by the server and will be ignored if provided on config
+         * creation or update.
+         *
+         * @param string $mostRecentEditor
+         */
+        public function setMostRecentEditor($mostRecentEditor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMostRecentEditor()
+        {
+        }
+        /**
+         * Identifier. This field will be ignored if provided on config creation. The
+         * following list shows some examples of the format: +
+         * `organizations/{organization}/muteConfigs/{mute_config}` + `organizations/{
+         * organization}locations/{location}//muteConfigs/{mute_config}` +
+         * `folders/{folder}/muteConfigs/{mute_config}` +
+         * `folders/{folder}/locations/{location}/muteConfigs/{mute_config}` +
+         * `projects/{project}/muteConfigs/{mute_config}` +
+         * `projects/{project}/locations/{location}/muteConfigs/{mute_config}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. The type of the mute config, which determines what type of mute
+         * state the config affects. Immutable after creation.
+         *
+         * Accepted values: MUTE_CONFIG_TYPE_UNSPECIFIED, STATIC, DYNAMIC
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Output only. The most recent time at which the mute config was updated.
+         * This field is set by the server and will be ignored if provided on config
+         * creation or update.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2MuteConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The resource name of the Cloud KMS `CryptoKey` used to encrypt
-     * this configuration data, if CMEK was enabled during Security Command Center
-     * activation.
-     *
-     * @param string $cryptoKeyName
-     */
-    public function setCryptoKeyName($cryptoKeyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCryptoKeyName()
-    {
-    }
-    /**
-     * A description of the mute config.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. The expiry of the mute config. Only applicable for dynamic
-     * configs. If the expiry is set, when the config expires, it is removed from
-     * all findings.
-     *
-     * @param string $expiryTime
-     */
-    public function setExpiryTime($expiryTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpiryTime()
-    {
-    }
-    /**
-     * Required. An expression that defines the filter to apply across
-     * create/update events of findings. While creating a filter string, be
-     * mindful of the scope in which the mute configuration is being created.
-     * E.g., If a filter contains project = X but is created under the project = Y
-     * scope, it might not match any findings. The following field and operator
-     * combinations are supported: * severity: `=`, `:` * category: `=`, `:` *
-     * resource.name: `=`, `:` * resource.project_name: `=`, `:` *
-     * resource.project_display_name: `=`, `:` * resource.folders.resource_folder:
-     * `=`, `:` * resource.parent_name: `=`, `:` * resource.parent_display_name:
-     * `=`, `:` * resource.type: `=`, `:` * finding_class: `=`, `:` *
-     * indicator.ip_addresses: `=`, `:` * indicator.domains: `=`, `:`
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilter()
-    {
-    }
-    /**
-     * Output only. Email address of the user who last edited the mute config.
-     * This field is set by the server and will be ignored if provided on config
-     * creation or update.
-     *
-     * @param string $mostRecentEditor
-     */
-    public function setMostRecentEditor($mostRecentEditor)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMostRecentEditor()
-    {
-    }
-    /**
-     * Identifier. This field will be ignored if provided on config creation. The
-     * following list shows some examples of the format: +
-     * `organizations/{organization}/muteConfigs/{mute_config}` + `organizations/{
-     * organization}locations/{location}//muteConfigs/{mute_config}` +
-     * `folders/{folder}/muteConfigs/{mute_config}` +
-     * `folders/{folder}/locations/{location}/muteConfigs/{mute_config}` +
-     * `projects/{project}/muteConfigs/{mute_config}` +
-     * `projects/{project}/locations/{location}/muteConfigs/{mute_config}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. The type of the mute config, which determines what type of mute
-     * state the config affects. Immutable after creation.
-     *
-     * Accepted values: MUTE_CONFIG_TYPE_UNSPECIFIED, STATIC, DYNAMIC
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Output only. The most recent time at which the mute config was updated.
-     * This field is set by the server and will be ignored if provided on config
-     * creation or update.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2MuteConfig extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2MuteConfig
     {
     }
 }

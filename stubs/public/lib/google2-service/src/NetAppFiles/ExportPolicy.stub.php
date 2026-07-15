@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class ExportPolicy extends \Google\Collection
-{
-    protected $collection_key = 'rules';
-    protected $rulesType = SimpleExportPolicyRule::class;
-    protected $rulesDataType = 'array';
-    /**
-     * Required. List of export policy rules
-     *
-     * @param SimpleExportPolicyRule[] $rules
-     */
-    public function setRules($rules)
+namespace Google\Service\NetAppFiles {
+    class ExportPolicy extends \Google\Collection
     {
+        protected $collection_key = 'rules';
+        protected $rulesType = SimpleExportPolicyRule::class;
+        protected $rulesDataType = 'array';
+        /**
+         * Required. List of export policy rules
+         *
+         * @param SimpleExportPolicyRule[] $rules
+         */
+        public function setRules($rules)
+        {
+        }
+        /**
+         * @return SimpleExportPolicyRule[]
+         */
+        public function getRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SimpleExportPolicyRule[]
+     * Runtime class alias of \Google\Service\NetAppFiles\ExportPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRules()
+    class Google_Service_NetAppFiles_ExportPolicy extends \Google\Service\NetAppFiles\ExportPolicy
     {
     }
 }

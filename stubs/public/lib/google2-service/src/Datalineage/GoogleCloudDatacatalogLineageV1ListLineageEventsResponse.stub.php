@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datalineage;
-
-class GoogleCloudDatacatalogLineageV1ListLineageEventsResponse extends \Google\Collection
-{
-    protected $collection_key = 'lineageEvents';
-    protected $lineageEventsType = GoogleCloudDatacatalogLineageV1LineageEvent::class;
-    protected $lineageEventsDataType = 'array';
-    /**
-     * The token to specify as `page_token` in the next call to get the next page.
-     * If this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Lineage events from the specified project and location.
-     *
-     * @param GoogleCloudDatacatalogLineageV1LineageEvent[] $lineageEvents
-     */
-    public function setLineageEvents($lineageEvents)
+namespace Google\Service\Datalineage {
+    class GoogleCloudDatacatalogLineageV1ListLineageEventsResponse extends \Google\Collection
     {
+        protected $collection_key = 'lineageEvents';
+        protected $lineageEventsType = GoogleCloudDatacatalogLineageV1LineageEvent::class;
+        protected $lineageEventsDataType = 'array';
+        /**
+         * The token to specify as `page_token` in the next call to get the next page.
+         * If this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Lineage events from the specified project and location.
+         *
+         * @param GoogleCloudDatacatalogLineageV1LineageEvent[] $lineageEvents
+         */
+        public function setLineageEvents($lineageEvents)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogLineageV1LineageEvent[]
+         */
+        public function getLineageEvents()
+        {
+        }
+        /**
+         * The token to specify as `page_token` in the next call to get the next page.
+         * If this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogLineageV1LineageEvent[]
+     * Runtime class alias of \Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1ListLineageEventsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLineageEvents()
-    {
-    }
-    /**
-     * The token to specify as `page_token` in the next call to get the next page.
-     * If this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Datalineage_GoogleCloudDatacatalogLineageV1ListLineageEventsResponse extends \Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1ListLineageEventsResponse
     {
     }
 }

@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseRules;
-
-class Arg extends \Google\Model
-{
-    protected $anyValueType = FirebaserulesEmpty::class;
-    protected $anyValueDataType = '';
-    /**
-     * Argument exactly matches value provided.
-     *
-     * @var array
-     */
-    public $exactValue;
-    /**
-     * Argument matches any value provided.
-     *
-     * @param FirebaserulesEmpty $anyValue
-     */
-    public function setAnyValue(FirebaserulesEmpty $anyValue)
+namespace Google\Service\FirebaseRules {
+    class Arg extends \Google\Model
     {
+        protected $anyValueType = FirebaserulesEmpty::class;
+        protected $anyValueDataType = '';
+        /**
+         * Argument exactly matches value provided.
+         *
+         * @var array
+         */
+        public $exactValue;
+        /**
+         * Argument matches any value provided.
+         *
+         * @param FirebaserulesEmpty $anyValue
+         */
+        public function setAnyValue(FirebaserulesEmpty $anyValue)
+        {
+        }
+        /**
+         * @return FirebaserulesEmpty
+         */
+        public function getAnyValue()
+        {
+        }
+        /**
+         * Argument exactly matches value provided.
+         *
+         * @param array $exactValue
+         */
+        public function setExactValue($exactValue)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getExactValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FirebaserulesEmpty
+     * Runtime class alias of \Google\Service\FirebaseRules\Arg registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnyValue()
-    {
-    }
-    /**
-     * Argument exactly matches value provided.
-     *
-     * @param array $exactValue
-     */
-    public function setExactValue($exactValue)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getExactValue()
+    class Google_Service_FirebaseRules_Arg extends \Google\Service\FirebaseRules\Arg
     {
     }
 }

@@ -21,116 +21,125 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickGap extends \Google\Model
-{
-    /**
-     * Localized time string in the format: 1 hour 15 minutes
-     *
-     * @var string
-     */
-    public $displayRemainingTime;
-    /**
-     * Localized time string in the format:(Locale CZ) 8:30 odp.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * @var string
-     */
-    public $endTimeMs;
-    /**
-     * @var string
-     */
-    public $remainingTime;
-    /**
-     * Localized time string in the format:(Locale CZ) 8:30 odp.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * @var string
-     */
-    public $startTimeMs;
-    /**
-     * Localized time string in the format: 1 hour 15 minutes
-     *
-     * @param string $displayRemainingTime
-     */
-    public function setDisplayRemainingTime($displayRemainingTime)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickGap extends \Google\Model
     {
+        /**
+         * Localized time string in the format: 1 hour 15 minutes
+         *
+         * @var string
+         */
+        public $displayRemainingTime;
+        /**
+         * Localized time string in the format:(Locale CZ) 8:30 odp.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * @var string
+         */
+        public $endTimeMs;
+        /**
+         * @var string
+         */
+        public $remainingTime;
+        /**
+         * Localized time string in the format:(Locale CZ) 8:30 odp.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * @var string
+         */
+        public $startTimeMs;
+        /**
+         * Localized time string in the format: 1 hour 15 minutes
+         *
+         * @param string $displayRemainingTime
+         */
+        public function setDisplayRemainingTime($displayRemainingTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayRemainingTime()
+        {
+        }
+        /**
+         * Localized time string in the format:(Locale CZ) 8:30 odp.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * @param string $endTimeMs
+         */
+        public function setEndTimeMs($endTimeMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTimeMs()
+        {
+        }
+        /**
+         * @param string $remainingTime
+         */
+        public function setRemainingTime($remainingTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemainingTime()
+        {
+        }
+        /**
+         * Localized time string in the format:(Locale CZ) 8:30 odp.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * @param string $startTimeMs
+         */
+        public function setStartTimeMs($startTimeMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTimeMs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickGap registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayRemainingTime()
-    {
-    }
-    /**
-     * Localized time string in the format:(Locale CZ) 8:30 odp.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * @param string $endTimeMs
-     */
-    public function setEndTimeMs($endTimeMs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTimeMs()
-    {
-    }
-    /**
-     * @param string $remainingTime
-     */
-    public function setRemainingTime($remainingTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRemainingTime()
-    {
-    }
-    /**
-     * Localized time string in the format:(Locale CZ) 8:30 odp.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * @param string $startTimeMs
-     */
-    public function setStartTimeMs($startTimeMs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTimeMs()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickGap extends \Google\Service\CloudSearch\EnterpriseTopazSidekickGap
     {
     }
 }

@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GoogleChatV1ContextualAddOnMarkupCardCardAction extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $actionLabel;
-    protected $onClickType = GoogleChatV1WidgetMarkupOnClick::class;
-    protected $onClickDataType = '';
-    /**
-     * @param string
-     */
-    public function setActionLabel($actionLabel)
+namespace Google\Service\CloudSearch {
+    class GoogleChatV1ContextualAddOnMarkupCardCardAction extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $actionLabel;
+        protected $onClickType = GoogleChatV1WidgetMarkupOnClick::class;
+        protected $onClickDataType = '';
+        /**
+         * @param string
+         */
+        public function setActionLabel($actionLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActionLabel()
+        {
+        }
+        /**
+         * @param GoogleChatV1WidgetMarkupOnClick
+         */
+        public function setOnClick(GoogleChatV1WidgetMarkupOnClick $onClick)
+        {
+        }
+        /**
+         * @return GoogleChatV1WidgetMarkupOnClick
+         */
+        public function getOnClick()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\GoogleChatV1ContextualAddOnMarkupCardCardAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionLabel()
-    {
-    }
-    /**
-     * @param GoogleChatV1WidgetMarkupOnClick
-     */
-    public function setOnClick(GoogleChatV1WidgetMarkupOnClick $onClick)
-    {
-    }
-    /**
-     * @return GoogleChatV1WidgetMarkupOnClick
-     */
-    public function getOnClick()
+    class Google_Service_CloudSearch_GoogleChatV1ContextualAddOnMarkupCardCardAction extends \Google\Service\CloudSearch\GoogleChatV1ContextualAddOnMarkupCardCardAction
     {
     }
 }

@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class ReportAgentStateResponse extends \Google\Collection
-{
-    protected $collection_key = 'tasks';
-    /**
-     * Default report interval override
-     *
-     * @var string
-     */
-    public $defaultReportInterval;
-    /**
-     * Minimum report interval override
-     *
-     * @var string
-     */
-    public $minReportInterval;
-    protected $tasksType = AgentTask::class;
-    protected $tasksDataType = 'array';
-    /**
-     * If true, the cloud logging for batch agent will use
-     * batch.googleapis.com/Job as monitored resource for Batch job related
-     * logging.
-     *
-     * @var bool
-     */
-    public $useBatchMonitoredResource;
-    /**
-     * Default report interval override
-     *
-     * @param string $defaultReportInterval
-     */
-    public function setDefaultReportInterval($defaultReportInterval)
+namespace Google\Service\Batch {
+    class ReportAgentStateResponse extends \Google\Collection
     {
+        protected $collection_key = 'tasks';
+        /**
+         * Default report interval override
+         *
+         * @var string
+         */
+        public $defaultReportInterval;
+        /**
+         * Minimum report interval override
+         *
+         * @var string
+         */
+        public $minReportInterval;
+        protected $tasksType = AgentTask::class;
+        protected $tasksDataType = 'array';
+        /**
+         * If true, the cloud logging for batch agent will use
+         * batch.googleapis.com/Job as monitored resource for Batch job related
+         * logging.
+         *
+         * @var bool
+         */
+        public $useBatchMonitoredResource;
+        /**
+         * Default report interval override
+         *
+         * @param string $defaultReportInterval
+         */
+        public function setDefaultReportInterval($defaultReportInterval)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultReportInterval()
+        {
+        }
+        /**
+         * Minimum report interval override
+         *
+         * @param string $minReportInterval
+         */
+        public function setMinReportInterval($minReportInterval)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinReportInterval()
+        {
+        }
+        /**
+         * Tasks assigned to the agent
+         *
+         * @param AgentTask[] $tasks
+         */
+        public function setTasks($tasks)
+        {
+        }
+        /**
+         * @return AgentTask[]
+         */
+        public function getTasks()
+        {
+        }
+        /**
+         * If true, the cloud logging for batch agent will use
+         * batch.googleapis.com/Job as monitored resource for Batch job related
+         * logging.
+         *
+         * @param bool $useBatchMonitoredResource
+         */
+        public function setUseBatchMonitoredResource($useBatchMonitoredResource)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseBatchMonitoredResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Batch\ReportAgentStateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultReportInterval()
-    {
-    }
-    /**
-     * Minimum report interval override
-     *
-     * @param string $minReportInterval
-     */
-    public function setMinReportInterval($minReportInterval)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinReportInterval()
-    {
-    }
-    /**
-     * Tasks assigned to the agent
-     *
-     * @param AgentTask[] $tasks
-     */
-    public function setTasks($tasks)
-    {
-    }
-    /**
-     * @return AgentTask[]
-     */
-    public function getTasks()
-    {
-    }
-    /**
-     * If true, the cloud logging for batch agent will use
-     * batch.googleapis.com/Job as monitored resource for Batch job related
-     * logging.
-     *
-     * @param bool $useBatchMonitoredResource
-     */
-    public function setUseBatchMonitoredResource($useBatchMonitoredResource)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseBatchMonitoredResource()
+    class Google_Service_Batch_ReportAgentStateResponse extends \Google\Service\Batch\ReportAgentStateResponse
     {
     }
 }

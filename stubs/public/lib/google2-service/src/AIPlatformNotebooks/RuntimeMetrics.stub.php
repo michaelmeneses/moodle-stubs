@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class RuntimeMetrics extends \Google\Model
-{
-    /**
-     * @var string[]
-     */
-    public $systemMetrics = [];
-    /**
-     * @param string[]
-     */
-    public function setSystemMetrics($systemMetrics)
+namespace Google\Service\AIPlatformNotebooks {
+    class RuntimeMetrics extends \Google\Model
     {
+        /**
+         * @var string[]
+         */
+        public $systemMetrics = [];
+        /**
+         * @param string[]
+         */
+        public function setSystemMetrics($systemMetrics)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSystemMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\RuntimeMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSystemMetrics()
+    class Google_Service_AIPlatformNotebooks_RuntimeMetrics extends \Google\Service\AIPlatformNotebooks\RuntimeMetrics
     {
     }
 }

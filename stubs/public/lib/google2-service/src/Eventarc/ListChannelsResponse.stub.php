@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Eventarc;
-
-class ListChannelsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $channelsType = Channel::class;
-    protected $channelsDataType = 'array';
-    /**
-     * A page token that can be sent to `ListChannels` to request the next page.
-     * If this is empty, then there are no more pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Unreachable resources, if any.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The requested channels, up to the number specified in `page_size`.
-     *
-     * @param Channel[] $channels
-     */
-    public function setChannels($channels)
+namespace Google\Service\Eventarc {
+    class ListChannelsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $channelsType = Channel::class;
+        protected $channelsDataType = 'array';
+        /**
+         * A page token that can be sent to `ListChannels` to request the next page.
+         * If this is empty, then there are no more pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Unreachable resources, if any.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The requested channels, up to the number specified in `page_size`.
+         *
+         * @param Channel[] $channels
+         */
+        public function setChannels($channels)
+        {
+        }
+        /**
+         * @return Channel[]
+         */
+        public function getChannels()
+        {
+        }
+        /**
+         * A page token that can be sent to `ListChannels` to request the next page.
+         * If this is empty, then there are no more pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Unreachable resources, if any.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Channel[]
+     * Runtime class alias of \Google\Service\Eventarc\ListChannelsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannels()
-    {
-    }
-    /**
-     * A page token that can be sent to `ListChannels` to request the next page.
-     * If this is empty, then there are no more pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Unreachable resources, if any.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Eventarc_ListChannelsResponse extends \Google\Service\Eventarc\ListChannelsResponse
     {
     }
 }

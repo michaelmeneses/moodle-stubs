@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SourceResultCount extends \Google\Model
-{
-    /**
-     * Whether there are more search results for this source.
-     *
-     * @var bool
-     */
-    public $hasMoreResults;
-    /**
-     * The estimated result count for this source.
-     *
-     * @var string
-     */
-    public $resultCountEstimate;
-    /**
-     * The exact result count for this source.
-     *
-     * @var string
-     */
-    public $resultCountExact;
-    protected $sourceType = Source::class;
-    protected $sourceDataType = '';
-    /**
-     * Whether there are more search results for this source.
-     *
-     * @param bool $hasMoreResults
-     */
-    public function setHasMoreResults($hasMoreResults)
+namespace Google\Service\CloudSearch {
+    class SourceResultCount extends \Google\Model
     {
+        /**
+         * Whether there are more search results for this source.
+         *
+         * @var bool
+         */
+        public $hasMoreResults;
+        /**
+         * The estimated result count for this source.
+         *
+         * @var string
+         */
+        public $resultCountEstimate;
+        /**
+         * The exact result count for this source.
+         *
+         * @var string
+         */
+        public $resultCountExact;
+        protected $sourceType = Source::class;
+        protected $sourceDataType = '';
+        /**
+         * Whether there are more search results for this source.
+         *
+         * @param bool $hasMoreResults
+         */
+        public function setHasMoreResults($hasMoreResults)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasMoreResults()
+        {
+        }
+        /**
+         * The estimated result count for this source.
+         *
+         * @param string $resultCountEstimate
+         */
+        public function setResultCountEstimate($resultCountEstimate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultCountEstimate()
+        {
+        }
+        /**
+         * The exact result count for this source.
+         *
+         * @param string $resultCountExact
+         */
+        public function setResultCountExact($resultCountExact)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultCountExact()
+        {
+        }
+        /**
+         * The source the result count information is associated with.
+         *
+         * @param Source $source
+         */
+        public function setSource(Source $source)
+        {
+        }
+        /**
+         * @return Source
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\SourceResultCount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHasMoreResults()
-    {
-    }
-    /**
-     * The estimated result count for this source.
-     *
-     * @param string $resultCountEstimate
-     */
-    public function setResultCountEstimate($resultCountEstimate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResultCountEstimate()
-    {
-    }
-    /**
-     * The exact result count for this source.
-     *
-     * @param string $resultCountExact
-     */
-    public function setResultCountExact($resultCountExact)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResultCountExact()
-    {
-    }
-    /**
-     * The source the result count information is associated with.
-     *
-     * @param Source $source
-     */
-    public function setSource(Source $source)
-    {
-    }
-    /**
-     * @return Source
-     */
-    public function getSource()
+    class Google_Service_CloudSearch_SourceResultCount extends \Google\Service\CloudSearch\SourceResultCount
     {
     }
 }

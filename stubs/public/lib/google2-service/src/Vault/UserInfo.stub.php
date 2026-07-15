@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class UserInfo extends \Google\Model
-{
-    /**
-     * The displayed name of the user.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The email address of the user.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * The displayed name of the user.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Vault {
+    class UserInfo extends \Google\Model
     {
+        /**
+         * The displayed name of the user.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The email address of the user.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * The displayed name of the user.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The email address of the user.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vault\UserInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The email address of the user.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
+    class Google_Service_Vault_UserInfo extends \Google\Service\Vault\UserInfo
     {
     }
 }

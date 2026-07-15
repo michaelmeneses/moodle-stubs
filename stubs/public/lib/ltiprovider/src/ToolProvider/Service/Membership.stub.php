@@ -8,6 +8,7 @@
  */
 namespace IMSGlobal\LTI\ToolProvider\Service;
 
+use IMSGlobal\LTI\ToolProvider;
 /**
  * Class to implement the Membership service
  *

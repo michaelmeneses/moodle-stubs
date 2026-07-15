@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1QueryMetricsResponseSliceDataPointConversationMeasureQaTagScore extends \Google\Model
-{
-    /**
-     * Average tag normalized score per tag.
-     *
-     * @var 
-     */
-    public $averageTagNormalizedScore;
-    /**
-     * Tag name.
-     *
-     * @var string
-     */
-    public $tag;
-    public function setAverageTagNormalizedScore($averageTagNormalizedScore)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1QueryMetricsResponseSliceDataPointConversationMeasureQaTagScore extends \Google\Model
     {
+        /**
+         * Average tag normalized score per tag.
+         *
+         * @var 
+         */
+        public $averageTagNormalizedScore;
+        /**
+         * Tag name.
+         *
+         * @var string
+         */
+        public $tag;
+        public function setAverageTagNormalizedScore($averageTagNormalizedScore)
+        {
+        }
+        public function getAverageTagNormalizedScore()
+        {
+        }
+        /**
+         * Tag name.
+         *
+         * @param string $tag
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTag()
+        {
+        }
     }
-    public function getAverageTagNormalizedScore()
-    {
-    }
+}
+namespace {
     /**
-     * Tag name.
-     *
-     * @param string $tag
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QueryMetricsResponseSliceDataPointConversationMeasureQaTagScore registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setTag($tag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTag()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1QueryMetricsResponseSliceDataPointConversationMeasureQaTagScore extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QueryMetricsResponseSliceDataPointConversationMeasureQaTagScore
     {
     }
 }

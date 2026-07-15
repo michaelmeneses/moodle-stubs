@@ -8,6 +8,7 @@
  */
 namespace Aws\ManagedBlockchain;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Managed Blockchain** service.
  * @method \Aws\Result createAccessor(array $args = [])

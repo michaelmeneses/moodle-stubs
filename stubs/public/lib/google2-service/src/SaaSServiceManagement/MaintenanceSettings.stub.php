@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SaaSServiceManagement;
-
-class MaintenanceSettings extends \Google\Model
-{
-    /**
-     * Optional. If present, it fixes the release on the unit until the given
-     * time; i.e. changes to the release field will be rejected. Rollouts should
-     * and will also respect this by not requesting an upgrade in the first place.
-     *
-     * @var string
-     */
-    public $pinnedUntilTime;
-    /**
-     * Optional. If present, it fixes the release on the unit until the given
-     * time; i.e. changes to the release field will be rejected. Rollouts should
-     * and will also respect this by not requesting an upgrade in the first place.
-     *
-     * @param string $pinnedUntilTime
-     */
-    public function setPinnedUntilTime($pinnedUntilTime)
+namespace Google\Service\SaaSServiceManagement {
+    class MaintenanceSettings extends \Google\Model
     {
+        /**
+         * Optional. If present, it fixes the release on the unit until the given
+         * time; i.e. changes to the release field will be rejected. Rollouts should
+         * and will also respect this by not requesting an upgrade in the first place.
+         *
+         * @var string
+         */
+        public $pinnedUntilTime;
+        /**
+         * Optional. If present, it fixes the release on the unit until the given
+         * time; i.e. changes to the release field will be rejected. Rollouts should
+         * and will also respect this by not requesting an upgrade in the first place.
+         *
+         * @param string $pinnedUntilTime
+         */
+        public function setPinnedUntilTime($pinnedUntilTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPinnedUntilTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SaaSServiceManagement\MaintenanceSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPinnedUntilTime()
+    class Google_Service_SaaSServiceManagement_MaintenanceSettings extends \Google\Service\SaaSServiceManagement\MaintenanceSettings
     {
     }
 }

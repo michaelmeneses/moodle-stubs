@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BatchMigrateResourcesOperationMetadataPartialResult extends \Google\Model
-{
-    /**
-     * Migrated dataset resource name.
-     *
-     * @var string
-     */
-    public $dataset;
-    protected $errorType = GoogleRpcStatus::class;
-    protected $errorDataType = '';
-    /**
-     * Migrated model resource name.
-     *
-     * @var string
-     */
-    public $model;
-    protected $requestType = GoogleCloudAiplatformV1MigrateResourceRequest::class;
-    protected $requestDataType = '';
-    /**
-     * Migrated dataset resource name.
-     *
-     * @param string $dataset
-     */
-    public function setDataset($dataset)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BatchMigrateResourcesOperationMetadataPartialResult extends \Google\Model
     {
+        /**
+         * Migrated dataset resource name.
+         *
+         * @var string
+         */
+        public $dataset;
+        protected $errorType = GoogleRpcStatus::class;
+        protected $errorDataType = '';
+        /**
+         * Migrated model resource name.
+         *
+         * @var string
+         */
+        public $model;
+        protected $requestType = GoogleCloudAiplatformV1MigrateResourceRequest::class;
+        protected $requestDataType = '';
+        /**
+         * Migrated dataset resource name.
+         *
+         * @param string $dataset
+         */
+        public function setDataset($dataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataset()
+        {
+        }
+        /**
+         * The error result of the migration request in case of failure.
+         *
+         * @param GoogleRpcStatus $error
+         */
+        public function setError(GoogleRpcStatus $error)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getError()
+        {
+        }
+        /**
+         * Migrated model resource name.
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
+        /**
+         * It's the same as the value in
+         * BatchMigrateResourcesRequest.migrate_resource_requests.
+         *
+         * @param GoogleCloudAiplatformV1MigrateResourceRequest $request
+         */
+        public function setRequest(GoogleCloudAiplatformV1MigrateResourceRequest $request)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MigrateResourceRequest
+         */
+        public function getRequest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchMigrateResourcesOperationMetadataPartialResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataset()
-    {
-    }
-    /**
-     * The error result of the migration request in case of failure.
-     *
-     * @param GoogleRpcStatus $error
-     */
-    public function setError(GoogleRpcStatus $error)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getError()
-    {
-    }
-    /**
-     * Migrated model resource name.
-     *
-     * @param string $model
-     */
-    public function setModel($model)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModel()
-    {
-    }
-    /**
-     * It's the same as the value in
-     * BatchMigrateResourcesRequest.migrate_resource_requests.
-     *
-     * @param GoogleCloudAiplatformV1MigrateResourceRequest $request
-     */
-    public function setRequest(GoogleCloudAiplatformV1MigrateResourceRequest $request)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1MigrateResourceRequest
-     */
-    public function getRequest()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BatchMigrateResourcesOperationMetadataPartialResult extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchMigrateResourcesOperationMetadataPartialResult
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class CreateNamedRangeResponse extends \Google\Model
-{
-    /**
-     * The ID of the created named range.
-     *
-     * @var string
-     */
-    public $namedRangeId;
-    /**
-     * The ID of the created named range.
-     *
-     * @param string $namedRangeId
-     */
-    public function setNamedRangeId($namedRangeId)
+namespace Google\Service\Docs {
+    class CreateNamedRangeResponse extends \Google\Model
     {
+        /**
+         * The ID of the created named range.
+         *
+         * @var string
+         */
+        public $namedRangeId;
+        /**
+         * The ID of the created named range.
+         *
+         * @param string $namedRangeId
+         */
+        public function setNamedRangeId($namedRangeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNamedRangeId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Docs\CreateNamedRangeResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNamedRangeId()
+    class Google_Service_Docs_CreateNamedRangeResponse extends \Google\Service\Docs\CreateNamedRangeResponse
     {
     }
 }

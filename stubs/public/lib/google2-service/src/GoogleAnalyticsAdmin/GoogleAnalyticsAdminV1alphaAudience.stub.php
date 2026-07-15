@@ -21,133 +21,142 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaAudience extends \Google\Collection
-{
-    protected $collection_key = 'filterClauses';
-    /**
-     * @var bool
-     */
-    public $adsPersonalizationEnabled;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $displayName;
-    protected $eventTriggerType = GoogleAnalyticsAdminV1alphaAudienceEventTrigger::class;
-    protected $eventTriggerDataType = '';
-    /**
-     * @var string
-     */
-    public $exclusionDurationMode;
-    protected $filterClausesType = GoogleAnalyticsAdminV1alphaAudienceFilterClause::class;
-    protected $filterClausesDataType = 'array';
-    /**
-     * @var int
-     */
-    public $membershipDurationDays;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param bool
-     */
-    public function setAdsPersonalizationEnabled($adsPersonalizationEnabled)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaAudience extends \Google\Collection
     {
+        protected $collection_key = 'filterClauses';
+        /**
+         * @var bool
+         */
+        public $adsPersonalizationEnabled;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $displayName;
+        protected $eventTriggerType = GoogleAnalyticsAdminV1alphaAudienceEventTrigger::class;
+        protected $eventTriggerDataType = '';
+        /**
+         * @var string
+         */
+        public $exclusionDurationMode;
+        protected $filterClausesType = GoogleAnalyticsAdminV1alphaAudienceFilterClause::class;
+        protected $filterClausesDataType = 'array';
+        /**
+         * @var int
+         */
+        public $membershipDurationDays;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param bool
+         */
+        public function setAdsPersonalizationEnabled($adsPersonalizationEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAdsPersonalizationEnabled()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAudienceEventTrigger
+         */
+        public function setEventTrigger(GoogleAnalyticsAdminV1alphaAudienceEventTrigger $eventTrigger)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAudienceEventTrigger
+         */
+        public function getEventTrigger()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setExclusionDurationMode($exclusionDurationMode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExclusionDurationMode()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAudienceFilterClause[]
+         */
+        public function setFilterClauses($filterClauses)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAudienceFilterClause[]
+         */
+        public function getFilterClauses()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMembershipDurationDays($membershipDurationDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMembershipDurationDays()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAudience registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdsPersonalizationEnabled()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAudienceEventTrigger
-     */
-    public function setEventTrigger(GoogleAnalyticsAdminV1alphaAudienceEventTrigger $eventTrigger)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAudienceEventTrigger
-     */
-    public function getEventTrigger()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setExclusionDurationMode($exclusionDurationMode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExclusionDurationMode()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAudienceFilterClause[]
-     */
-    public function setFilterClauses($filterClauses)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAudienceFilterClause[]
-     */
-    public function getFilterClauses()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMembershipDurationDays($membershipDurationDays)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMembershipDurationDays()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaAudience extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAudience
     {
     }
 }

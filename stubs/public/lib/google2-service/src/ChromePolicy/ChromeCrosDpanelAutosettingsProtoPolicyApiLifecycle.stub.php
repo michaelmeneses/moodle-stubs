@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class ChromeCrosDpanelAutosettingsProtoPolicyApiLifecycle extends \Google\Collection
-{
-    protected $collection_key = 'deprecatedInFavorOf';
-    /**
-     * @var string[]
-     */
-    public $deprecatedInFavorOf;
-    /**
-     * @var string
-     */
-    public $description;
-    protected $endSupportType = GoogleTypeDate::class;
-    protected $endSupportDataType = '';
-    /**
-     * @var string
-     */
-    public $policyApiLifecycleStage;
-    /**
-     * @param string[]
-     */
-    public function setDeprecatedInFavorOf($deprecatedInFavorOf)
+namespace Google\Service\ChromePolicy {
+    class ChromeCrosDpanelAutosettingsProtoPolicyApiLifecycle extends \Google\Collection
     {
+        protected $collection_key = 'deprecatedInFavorOf';
+        /**
+         * @var string[]
+         */
+        public $deprecatedInFavorOf;
+        /**
+         * @var string
+         */
+        public $description;
+        protected $endSupportType = GoogleTypeDate::class;
+        protected $endSupportDataType = '';
+        /**
+         * @var string
+         */
+        public $policyApiLifecycleStage;
+        /**
+         * @param string[]
+         */
+        public function setDeprecatedInFavorOf($deprecatedInFavorOf)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDeprecatedInFavorOf()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param GoogleTypeDate
+         */
+        public function setEndSupport(GoogleTypeDate $endSupport)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getEndSupport()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPolicyApiLifecycleStage($policyApiLifecycleStage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicyApiLifecycleStage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ChromePolicy\ChromeCrosDpanelAutosettingsProtoPolicyApiLifecycle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeprecatedInFavorOf()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param GoogleTypeDate
-     */
-    public function setEndSupport(GoogleTypeDate $endSupport)
-    {
-    }
-    /**
-     * @return GoogleTypeDate
-     */
-    public function getEndSupport()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPolicyApiLifecycleStage($policyApiLifecycleStage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPolicyApiLifecycleStage()
+    class Google_Service_ChromePolicy_ChromeCrosDpanelAutosettingsProtoPolicyApiLifecycle extends \Google\Service\ChromePolicy\ChromeCrosDpanelAutosettingsProtoPolicyApiLifecycle
     {
     }
 }

@@ -21,189 +21,198 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class WorkItemDetails extends \Google\Collection
-{
-    /**
-     * The component state is unknown or unspecified.
-     */
-    public const STATE_EXECUTION_STATE_UNKNOWN = 'EXECUTION_STATE_UNKNOWN';
-    /**
-     * The component is not yet running.
-     */
-    public const STATE_EXECUTION_STATE_NOT_STARTED = 'EXECUTION_STATE_NOT_STARTED';
-    /**
-     * The component is currently running.
-     */
-    public const STATE_EXECUTION_STATE_RUNNING = 'EXECUTION_STATE_RUNNING';
-    /**
-     * The component succeeded.
-     */
-    public const STATE_EXECUTION_STATE_SUCCEEDED = 'EXECUTION_STATE_SUCCEEDED';
-    /**
-     * The component failed.
-     */
-    public const STATE_EXECUTION_STATE_FAILED = 'EXECUTION_STATE_FAILED';
-    /**
-     * Execution of the component was cancelled.
-     */
-    public const STATE_EXECUTION_STATE_CANCELLED = 'EXECUTION_STATE_CANCELLED';
-    protected $collection_key = 'metrics';
-    /**
-     * Attempt ID of this work item
-     *
-     * @var string
-     */
-    public $attemptId;
-    /**
-     * End time of this work item attempt. If the work item is completed, this is
-     * the actual end time of the work item. Otherwise, it is the predicted end
-     * time.
-     *
-     * @var string
-     */
-    public $endTime;
-    protected $metricsType = MetricUpdate::class;
-    protected $metricsDataType = 'array';
-    protected $progressType = ProgressTimeseries::class;
-    protected $progressDataType = '';
-    /**
-     * Start time of this work item attempt.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * State of this work item.
-     *
-     * @var string
-     */
-    public $state;
-    protected $stragglerInfoType = StragglerInfo::class;
-    protected $stragglerInfoDataType = '';
-    /**
-     * Name of this work item.
-     *
-     * @var string
-     */
-    public $taskId;
-    /**
-     * Attempt ID of this work item
-     *
-     * @param string $attemptId
-     */
-    public function setAttemptId($attemptId)
+namespace Google\Service\Dataflow {
+    class WorkItemDetails extends \Google\Collection
     {
+        /**
+         * The component state is unknown or unspecified.
+         */
+        public const STATE_EXECUTION_STATE_UNKNOWN = 'EXECUTION_STATE_UNKNOWN';
+        /**
+         * The component is not yet running.
+         */
+        public const STATE_EXECUTION_STATE_NOT_STARTED = 'EXECUTION_STATE_NOT_STARTED';
+        /**
+         * The component is currently running.
+         */
+        public const STATE_EXECUTION_STATE_RUNNING = 'EXECUTION_STATE_RUNNING';
+        /**
+         * The component succeeded.
+         */
+        public const STATE_EXECUTION_STATE_SUCCEEDED = 'EXECUTION_STATE_SUCCEEDED';
+        /**
+         * The component failed.
+         */
+        public const STATE_EXECUTION_STATE_FAILED = 'EXECUTION_STATE_FAILED';
+        /**
+         * Execution of the component was cancelled.
+         */
+        public const STATE_EXECUTION_STATE_CANCELLED = 'EXECUTION_STATE_CANCELLED';
+        protected $collection_key = 'metrics';
+        /**
+         * Attempt ID of this work item
+         *
+         * @var string
+         */
+        public $attemptId;
+        /**
+         * End time of this work item attempt. If the work item is completed, this is
+         * the actual end time of the work item. Otherwise, it is the predicted end
+         * time.
+         *
+         * @var string
+         */
+        public $endTime;
+        protected $metricsType = MetricUpdate::class;
+        protected $metricsDataType = 'array';
+        protected $progressType = ProgressTimeseries::class;
+        protected $progressDataType = '';
+        /**
+         * Start time of this work item attempt.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * State of this work item.
+         *
+         * @var string
+         */
+        public $state;
+        protected $stragglerInfoType = StragglerInfo::class;
+        protected $stragglerInfoDataType = '';
+        /**
+         * Name of this work item.
+         *
+         * @var string
+         */
+        public $taskId;
+        /**
+         * Attempt ID of this work item
+         *
+         * @param string $attemptId
+         */
+        public function setAttemptId($attemptId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttemptId()
+        {
+        }
+        /**
+         * End time of this work item attempt. If the work item is completed, this is
+         * the actual end time of the work item. Otherwise, it is the predicted end
+         * time.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Metrics for this work item.
+         *
+         * @param MetricUpdate[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return MetricUpdate[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * Progress of this work item.
+         *
+         * @param ProgressTimeseries $progress
+         */
+        public function setProgress(ProgressTimeseries $progress)
+        {
+        }
+        /**
+         * @return ProgressTimeseries
+         */
+        public function getProgress()
+        {
+        }
+        /**
+         * Start time of this work item attempt.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * State of this work item.
+         *
+         * Accepted values: EXECUTION_STATE_UNKNOWN, EXECUTION_STATE_NOT_STARTED,
+         * EXECUTION_STATE_RUNNING, EXECUTION_STATE_SUCCEEDED, EXECUTION_STATE_FAILED,
+         * EXECUTION_STATE_CANCELLED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Information about straggler detections for this work item.
+         *
+         * @param StragglerInfo $stragglerInfo
+         */
+        public function setStragglerInfo(StragglerInfo $stragglerInfo)
+        {
+        }
+        /**
+         * @return StragglerInfo
+         */
+        public function getStragglerInfo()
+        {
+        }
+        /**
+         * Name of this work item.
+         *
+         * @param string $taskId
+         */
+        public function setTaskId($taskId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTaskId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\WorkItemDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttemptId()
-    {
-    }
-    /**
-     * End time of this work item attempt. If the work item is completed, this is
-     * the actual end time of the work item. Otherwise, it is the predicted end
-     * time.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Metrics for this work item.
-     *
-     * @param MetricUpdate[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return MetricUpdate[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * Progress of this work item.
-     *
-     * @param ProgressTimeseries $progress
-     */
-    public function setProgress(ProgressTimeseries $progress)
-    {
-    }
-    /**
-     * @return ProgressTimeseries
-     */
-    public function getProgress()
-    {
-    }
-    /**
-     * Start time of this work item attempt.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * State of this work item.
-     *
-     * Accepted values: EXECUTION_STATE_UNKNOWN, EXECUTION_STATE_NOT_STARTED,
-     * EXECUTION_STATE_RUNNING, EXECUTION_STATE_SUCCEEDED, EXECUTION_STATE_FAILED,
-     * EXECUTION_STATE_CANCELLED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Information about straggler detections for this work item.
-     *
-     * @param StragglerInfo $stragglerInfo
-     */
-    public function setStragglerInfo(StragglerInfo $stragglerInfo)
-    {
-    }
-    /**
-     * @return StragglerInfo
-     */
-    public function getStragglerInfo()
-    {
-    }
-    /**
-     * Name of this work item.
-     *
-     * @param string $taskId
-     */
-    public function setTaskId($taskId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTaskId()
+    class Google_Service_Dataflow_WorkItemDetails extends \Google\Service\Dataflow\WorkItemDetails
     {
     }
 }

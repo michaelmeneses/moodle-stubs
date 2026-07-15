@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class Volume extends \Google\Model
-{
-    protected $configMapType = ConfigMapVolumeSource::class;
-    protected $configMapDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    protected $secretType = SecretVolumeSource::class;
-    protected $secretDataType = '';
-    /**
-     * @param ConfigMapVolumeSource
-     */
-    public function setConfigMap(ConfigMapVolumeSource $configMap)
+namespace Google\Service\CloudRun {
+    class Volume extends \Google\Model
     {
+        protected $configMapType = ConfigMapVolumeSource::class;
+        protected $configMapDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        protected $secretType = SecretVolumeSource::class;
+        protected $secretDataType = '';
+        /**
+         * @param ConfigMapVolumeSource
+         */
+        public function setConfigMap(ConfigMapVolumeSource $configMap)
+        {
+        }
+        /**
+         * @return ConfigMapVolumeSource
+         */
+        public function getConfigMap()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param SecretVolumeSource
+         */
+        public function setSecret(SecretVolumeSource $secret)
+        {
+        }
+        /**
+         * @return SecretVolumeSource
+         */
+        public function getSecret()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConfigMapVolumeSource
+     * Runtime class alias of \Google\Service\CloudRun\Volume registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigMap()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param SecretVolumeSource
-     */
-    public function setSecret(SecretVolumeSource $secret)
-    {
-    }
-    /**
-     * @return SecretVolumeSource
-     */
-    public function getSecret()
+    class Google_Service_CloudRun_Volume extends \Google\Service\CloudRun\Volume
     {
     }
 }

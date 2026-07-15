@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class TextAnnotation extends \Google\Collection
-{
-    protected $collection_key = 'pages';
-    protected $pagesType = Page::class;
-    protected $pagesDataType = 'array';
-    /**
-     * UTF-8 text detected on the pages.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * List of pages detected by OCR.
-     *
-     * @param Page[] $pages
-     */
-    public function setPages($pages)
+namespace Google\Service\Vision {
+    class TextAnnotation extends \Google\Collection
     {
+        protected $collection_key = 'pages';
+        protected $pagesType = Page::class;
+        protected $pagesDataType = 'array';
+        /**
+         * UTF-8 text detected on the pages.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * List of pages detected by OCR.
+         *
+         * @param Page[] $pages
+         */
+        public function setPages($pages)
+        {
+        }
+        /**
+         * @return Page[]
+         */
+        public function getPages()
+        {
+        }
+        /**
+         * UTF-8 text detected on the pages.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Page[]
+     * Runtime class alias of \Google\Service\Vision\TextAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPages()
-    {
-    }
-    /**
-     * UTF-8 text detected on the pages.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Vision_TextAnnotation extends \Google\Service\Vision\TextAnnotation
     {
     }
 }

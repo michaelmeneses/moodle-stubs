@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1UnstarEntryResponse extends \Google\Model
-{
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1UnstarEntryResponse extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1UnstarEntryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1UnstarEntryResponse extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1UnstarEntryResponse
+    {
+    }
 }

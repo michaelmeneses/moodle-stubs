@@ -21,250 +21,259 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class DbSystemShape extends \Google\Model
-{
-    /**
-     * Optional. Number of cores per node.
-     *
-     * @var int
-     */
-    public $availableCoreCountPerNode;
-    /**
-     * Optional. Storage per storage server in terabytes.
-     *
-     * @var int
-     */
-    public $availableDataStorageTb;
-    /**
-     * Optional. Memory per database server node in gigabytes.
-     *
-     * @var int
-     */
-    public $availableMemoryPerNodeGb;
-    /**
-     * Optional. Maximum number of database servers.
-     *
-     * @var int
-     */
-    public $maxNodeCount;
-    /**
-     * Optional. Maximum number of storage servers.
-     *
-     * @var int
-     */
-    public $maxStorageCount;
-    /**
-     * Optional. Minimum core count per node.
-     *
-     * @var int
-     */
-    public $minCoreCountPerNode;
-    /**
-     * Optional. Minimum node storage per database server in gigabytes.
-     *
-     * @var int
-     */
-    public $minDbNodeStoragePerNodeGb;
-    /**
-     * Optional. Minimum memory per node in gigabytes.
-     *
-     * @var int
-     */
-    public $minMemoryPerNodeGb;
-    /**
-     * Optional. Minimum number of database servers.
-     *
-     * @var int
-     */
-    public $minNodeCount;
-    /**
-     * Optional. Minimum number of storage servers.
-     *
-     * @var int
-     */
-    public $minStorageCount;
-    /**
-     * Identifier. The name of the Database System Shape resource with the format:
-     * projects/{project}/locations/{region}/dbSystemShapes/{db_system_shape}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. shape
-     *
-     * @var string
-     */
-    public $shape;
-    /**
-     * Optional. Number of cores per node.
-     *
-     * @param int $availableCoreCountPerNode
-     */
-    public function setAvailableCoreCountPerNode($availableCoreCountPerNode)
+namespace Google\Service\OracleDatabase {
+    class DbSystemShape extends \Google\Model
     {
+        /**
+         * Optional. Number of cores per node.
+         *
+         * @var int
+         */
+        public $availableCoreCountPerNode;
+        /**
+         * Optional. Storage per storage server in terabytes.
+         *
+         * @var int
+         */
+        public $availableDataStorageTb;
+        /**
+         * Optional. Memory per database server node in gigabytes.
+         *
+         * @var int
+         */
+        public $availableMemoryPerNodeGb;
+        /**
+         * Optional. Maximum number of database servers.
+         *
+         * @var int
+         */
+        public $maxNodeCount;
+        /**
+         * Optional. Maximum number of storage servers.
+         *
+         * @var int
+         */
+        public $maxStorageCount;
+        /**
+         * Optional. Minimum core count per node.
+         *
+         * @var int
+         */
+        public $minCoreCountPerNode;
+        /**
+         * Optional. Minimum node storage per database server in gigabytes.
+         *
+         * @var int
+         */
+        public $minDbNodeStoragePerNodeGb;
+        /**
+         * Optional. Minimum memory per node in gigabytes.
+         *
+         * @var int
+         */
+        public $minMemoryPerNodeGb;
+        /**
+         * Optional. Minimum number of database servers.
+         *
+         * @var int
+         */
+        public $minNodeCount;
+        /**
+         * Optional. Minimum number of storage servers.
+         *
+         * @var int
+         */
+        public $minStorageCount;
+        /**
+         * Identifier. The name of the Database System Shape resource with the format:
+         * projects/{project}/locations/{region}/dbSystemShapes/{db_system_shape}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. shape
+         *
+         * @var string
+         */
+        public $shape;
+        /**
+         * Optional. Number of cores per node.
+         *
+         * @param int $availableCoreCountPerNode
+         */
+        public function setAvailableCoreCountPerNode($availableCoreCountPerNode)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAvailableCoreCountPerNode()
+        {
+        }
+        /**
+         * Optional. Storage per storage server in terabytes.
+         *
+         * @param int $availableDataStorageTb
+         */
+        public function setAvailableDataStorageTb($availableDataStorageTb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAvailableDataStorageTb()
+        {
+        }
+        /**
+         * Optional. Memory per database server node in gigabytes.
+         *
+         * @param int $availableMemoryPerNodeGb
+         */
+        public function setAvailableMemoryPerNodeGb($availableMemoryPerNodeGb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAvailableMemoryPerNodeGb()
+        {
+        }
+        /**
+         * Optional. Maximum number of database servers.
+         *
+         * @param int $maxNodeCount
+         */
+        public function setMaxNodeCount($maxNodeCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxNodeCount()
+        {
+        }
+        /**
+         * Optional. Maximum number of storage servers.
+         *
+         * @param int $maxStorageCount
+         */
+        public function setMaxStorageCount($maxStorageCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxStorageCount()
+        {
+        }
+        /**
+         * Optional. Minimum core count per node.
+         *
+         * @param int $minCoreCountPerNode
+         */
+        public function setMinCoreCountPerNode($minCoreCountPerNode)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinCoreCountPerNode()
+        {
+        }
+        /**
+         * Optional. Minimum node storage per database server in gigabytes.
+         *
+         * @param int $minDbNodeStoragePerNodeGb
+         */
+        public function setMinDbNodeStoragePerNodeGb($minDbNodeStoragePerNodeGb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinDbNodeStoragePerNodeGb()
+        {
+        }
+        /**
+         * Optional. Minimum memory per node in gigabytes.
+         *
+         * @param int $minMemoryPerNodeGb
+         */
+        public function setMinMemoryPerNodeGb($minMemoryPerNodeGb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinMemoryPerNodeGb()
+        {
+        }
+        /**
+         * Optional. Minimum number of database servers.
+         *
+         * @param int $minNodeCount
+         */
+        public function setMinNodeCount($minNodeCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinNodeCount()
+        {
+        }
+        /**
+         * Optional. Minimum number of storage servers.
+         *
+         * @param int $minStorageCount
+         */
+        public function setMinStorageCount($minStorageCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinStorageCount()
+        {
+        }
+        /**
+         * Identifier. The name of the Database System Shape resource with the format:
+         * projects/{project}/locations/{region}/dbSystemShapes/{db_system_shape}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. shape
+         *
+         * @param string $shape
+         */
+        public function setShape($shape)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShape()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\OracleDatabase\DbSystemShape registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailableCoreCountPerNode()
-    {
-    }
-    /**
-     * Optional. Storage per storage server in terabytes.
-     *
-     * @param int $availableDataStorageTb
-     */
-    public function setAvailableDataStorageTb($availableDataStorageTb)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getAvailableDataStorageTb()
-    {
-    }
-    /**
-     * Optional. Memory per database server node in gigabytes.
-     *
-     * @param int $availableMemoryPerNodeGb
-     */
-    public function setAvailableMemoryPerNodeGb($availableMemoryPerNodeGb)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getAvailableMemoryPerNodeGb()
-    {
-    }
-    /**
-     * Optional. Maximum number of database servers.
-     *
-     * @param int $maxNodeCount
-     */
-    public function setMaxNodeCount($maxNodeCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxNodeCount()
-    {
-    }
-    /**
-     * Optional. Maximum number of storage servers.
-     *
-     * @param int $maxStorageCount
-     */
-    public function setMaxStorageCount($maxStorageCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxStorageCount()
-    {
-    }
-    /**
-     * Optional. Minimum core count per node.
-     *
-     * @param int $minCoreCountPerNode
-     */
-    public function setMinCoreCountPerNode($minCoreCountPerNode)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinCoreCountPerNode()
-    {
-    }
-    /**
-     * Optional. Minimum node storage per database server in gigabytes.
-     *
-     * @param int $minDbNodeStoragePerNodeGb
-     */
-    public function setMinDbNodeStoragePerNodeGb($minDbNodeStoragePerNodeGb)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinDbNodeStoragePerNodeGb()
-    {
-    }
-    /**
-     * Optional. Minimum memory per node in gigabytes.
-     *
-     * @param int $minMemoryPerNodeGb
-     */
-    public function setMinMemoryPerNodeGb($minMemoryPerNodeGb)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinMemoryPerNodeGb()
-    {
-    }
-    /**
-     * Optional. Minimum number of database servers.
-     *
-     * @param int $minNodeCount
-     */
-    public function setMinNodeCount($minNodeCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinNodeCount()
-    {
-    }
-    /**
-     * Optional. Minimum number of storage servers.
-     *
-     * @param int $minStorageCount
-     */
-    public function setMinStorageCount($minStorageCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinStorageCount()
-    {
-    }
-    /**
-     * Identifier. The name of the Database System Shape resource with the format:
-     * projects/{project}/locations/{region}/dbSystemShapes/{db_system_shape}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. shape
-     *
-     * @param string $shape
-     */
-    public function setShape($shape)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShape()
+    class Google_Service_OracleDatabase_DbSystemShape extends \Google\Service\OracleDatabase\DbSystemShape
     {
     }
 }

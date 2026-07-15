@@ -21,131 +21,140 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2Kubernetes extends \Google\Collection
-{
-    protected $collection_key = 'roles';
-    protected $accessReviewsType = GoogleCloudSecuritycenterV2AccessReview::class;
-    protected $accessReviewsDataType = 'array';
-    protected $bindingsType = GoogleCloudSecuritycenterV2Binding::class;
-    protected $bindingsDataType = 'array';
-    protected $nodePoolsType = GoogleCloudSecuritycenterV2NodePool::class;
-    protected $nodePoolsDataType = 'array';
-    protected $nodesType = GoogleCloudSecuritycenterV2Node::class;
-    protected $nodesDataType = 'array';
-    protected $objectsType = GoogleCloudSecuritycenterV2Object::class;
-    protected $objectsDataType = 'array';
-    protected $podsType = GoogleCloudSecuritycenterV2Pod::class;
-    protected $podsDataType = 'array';
-    protected $rolesType = GoogleCloudSecuritycenterV2Role::class;
-    protected $rolesDataType = 'array';
-    /**
-     * Provides information on any Kubernetes access reviews (privilege checks)
-     * relevant to the finding.
-     *
-     * @param GoogleCloudSecuritycenterV2AccessReview[] $accessReviews
-     */
-    public function setAccessReviews($accessReviews)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2Kubernetes extends \Google\Collection
     {
+        protected $collection_key = 'roles';
+        protected $accessReviewsType = GoogleCloudSecuritycenterV2AccessReview::class;
+        protected $accessReviewsDataType = 'array';
+        protected $bindingsType = GoogleCloudSecuritycenterV2Binding::class;
+        protected $bindingsDataType = 'array';
+        protected $nodePoolsType = GoogleCloudSecuritycenterV2NodePool::class;
+        protected $nodePoolsDataType = 'array';
+        protected $nodesType = GoogleCloudSecuritycenterV2Node::class;
+        protected $nodesDataType = 'array';
+        protected $objectsType = GoogleCloudSecuritycenterV2Object::class;
+        protected $objectsDataType = 'array';
+        protected $podsType = GoogleCloudSecuritycenterV2Pod::class;
+        protected $podsDataType = 'array';
+        protected $rolesType = GoogleCloudSecuritycenterV2Role::class;
+        protected $rolesDataType = 'array';
+        /**
+         * Provides information on any Kubernetes access reviews (privilege checks)
+         * relevant to the finding.
+         *
+         * @param GoogleCloudSecuritycenterV2AccessReview[] $accessReviews
+         */
+        public function setAccessReviews($accessReviews)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2AccessReview[]
+         */
+        public function getAccessReviews()
+        {
+        }
+        /**
+         * Provides Kubernetes role binding information for findings that involve
+         * [RoleBindings or ClusterRoleBindings](https://cloud.google.com/kubernetes-
+         * engine/docs/how-to/role-based-access-control).
+         *
+         * @param GoogleCloudSecuritycenterV2Binding[] $bindings
+         */
+        public function setBindings($bindings)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2Binding[]
+         */
+        public function getBindings()
+        {
+        }
+        /**
+         * GKE [node pools](https://cloud.google.com/kubernetes-
+         * engine/docs/concepts/node-pools) associated with the finding. This field
+         * contains node pool information for each node, when it is available.
+         *
+         * @param GoogleCloudSecuritycenterV2NodePool[] $nodePools
+         */
+        public function setNodePools($nodePools)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2NodePool[]
+         */
+        public function getNodePools()
+        {
+        }
+        /**
+         * Provides Kubernetes [node](https://cloud.google.com/kubernetes-
+         * engine/docs/concepts/cluster-architecture#nodes) information.
+         *
+         * @param GoogleCloudSecuritycenterV2Node[] $nodes
+         */
+        public function setNodes($nodes)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2Node[]
+         */
+        public function getNodes()
+        {
+        }
+        /**
+         * Kubernetes objects related to the finding.
+         *
+         * @param GoogleCloudSecuritycenterV2Object[] $objects
+         */
+        public function setObjects($objects)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2Object[]
+         */
+        public function getObjects()
+        {
+        }
+        /**
+         * Kubernetes [Pods](https://cloud.google.com/kubernetes-
+         * engine/docs/concepts/pod) associated with the finding. This field contains
+         * Pod records for each container that is owned by a Pod.
+         *
+         * @param GoogleCloudSecuritycenterV2Pod[] $pods
+         */
+        public function setPods($pods)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2Pod[]
+         */
+        public function getPods()
+        {
+        }
+        /**
+         * Provides Kubernetes role information for findings that involve [Roles or
+         * ClusterRoles](https://cloud.google.com/kubernetes-engine/docs/how-to/role-
+         * based-access-control).
+         *
+         * @param GoogleCloudSecuritycenterV2Role[] $roles
+         */
+        public function setRoles($roles)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2Role[]
+         */
+        public function getRoles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV2AccessReview[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Kubernetes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessReviews()
-    {
-    }
-    /**
-     * Provides Kubernetes role binding information for findings that involve
-     * [RoleBindings or ClusterRoleBindings](https://cloud.google.com/kubernetes-
-     * engine/docs/how-to/role-based-access-control).
-     *
-     * @param GoogleCloudSecuritycenterV2Binding[] $bindings
-     */
-    public function setBindings($bindings)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2Binding[]
-     */
-    public function getBindings()
-    {
-    }
-    /**
-     * GKE [node pools](https://cloud.google.com/kubernetes-
-     * engine/docs/concepts/node-pools) associated with the finding. This field
-     * contains node pool information for each node, when it is available.
-     *
-     * @param GoogleCloudSecuritycenterV2NodePool[] $nodePools
-     */
-    public function setNodePools($nodePools)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2NodePool[]
-     */
-    public function getNodePools()
-    {
-    }
-    /**
-     * Provides Kubernetes [node](https://cloud.google.com/kubernetes-
-     * engine/docs/concepts/cluster-architecture#nodes) information.
-     *
-     * @param GoogleCloudSecuritycenterV2Node[] $nodes
-     */
-    public function setNodes($nodes)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2Node[]
-     */
-    public function getNodes()
-    {
-    }
-    /**
-     * Kubernetes objects related to the finding.
-     *
-     * @param GoogleCloudSecuritycenterV2Object[] $objects
-     */
-    public function setObjects($objects)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2Object[]
-     */
-    public function getObjects()
-    {
-    }
-    /**
-     * Kubernetes [Pods](https://cloud.google.com/kubernetes-
-     * engine/docs/concepts/pod) associated with the finding. This field contains
-     * Pod records for each container that is owned by a Pod.
-     *
-     * @param GoogleCloudSecuritycenterV2Pod[] $pods
-     */
-    public function setPods($pods)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2Pod[]
-     */
-    public function getPods()
-    {
-    }
-    /**
-     * Provides Kubernetes role information for findings that involve [Roles or
-     * ClusterRoles](https://cloud.google.com/kubernetes-engine/docs/how-to/role-
-     * based-access-control).
-     *
-     * @param GoogleCloudSecuritycenterV2Role[] $roles
-     */
-    public function setRoles($roles)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2Role[]
-     */
-    public function getRoles()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2Kubernetes extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Kubernetes
     {
     }
 }

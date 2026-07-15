@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1LustreMount extends \Google\Model
-{
-    /**
-     * Required. The name of the Lustre filesystem.
-     *
-     * @var string
-     */
-    public $filesystem;
-    /**
-     * Required. IP address of the Lustre instance.
-     *
-     * @var string
-     */
-    public $instanceIp;
-    /**
-     * Required. Destination mount path. The Lustre file system will be mounted
-     * for the user under /mnt/lustre/
-     *
-     * @var string
-     */
-    public $mountPoint;
-    /**
-     * Required. The unique identifier of the Lustre volume.
-     *
-     * @var string
-     */
-    public $volumeHandle;
-    /**
-     * Required. The name of the Lustre filesystem.
-     *
-     * @param string $filesystem
-     */
-    public function setFilesystem($filesystem)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1LustreMount extends \Google\Model
     {
+        /**
+         * Required. The name of the Lustre filesystem.
+         *
+         * @var string
+         */
+        public $filesystem;
+        /**
+         * Required. IP address of the Lustre instance.
+         *
+         * @var string
+         */
+        public $instanceIp;
+        /**
+         * Required. Destination mount path. The Lustre file system will be mounted
+         * for the user under /mnt/lustre/
+         *
+         * @var string
+         */
+        public $mountPoint;
+        /**
+         * Required. The unique identifier of the Lustre volume.
+         *
+         * @var string
+         */
+        public $volumeHandle;
+        /**
+         * Required. The name of the Lustre filesystem.
+         *
+         * @param string $filesystem
+         */
+        public function setFilesystem($filesystem)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilesystem()
+        {
+        }
+        /**
+         * Required. IP address of the Lustre instance.
+         *
+         * @param string $instanceIp
+         */
+        public function setInstanceIp($instanceIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceIp()
+        {
+        }
+        /**
+         * Required. Destination mount path. The Lustre file system will be mounted
+         * for the user under /mnt/lustre/
+         *
+         * @param string $mountPoint
+         */
+        public function setMountPoint($mountPoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMountPoint()
+        {
+        }
+        /**
+         * Required. The unique identifier of the Lustre volume.
+         *
+         * @param string $volumeHandle
+         */
+        public function setVolumeHandle($volumeHandle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVolumeHandle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1LustreMount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilesystem()
-    {
-    }
-    /**
-     * Required. IP address of the Lustre instance.
-     *
-     * @param string $instanceIp
-     */
-    public function setInstanceIp($instanceIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceIp()
-    {
-    }
-    /**
-     * Required. Destination mount path. The Lustre file system will be mounted
-     * for the user under /mnt/lustre/
-     *
-     * @param string $mountPoint
-     */
-    public function setMountPoint($mountPoint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMountPoint()
-    {
-    }
-    /**
-     * Required. The unique identifier of the Lustre volume.
-     *
-     * @param string $volumeHandle
-     */
-    public function setVolumeHandle($volumeHandle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVolumeHandle()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1LustreMount extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1LustreMount
     {
     }
 }

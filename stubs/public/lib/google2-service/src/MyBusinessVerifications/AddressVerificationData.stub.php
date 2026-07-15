@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessVerifications;
-
-class AddressVerificationData extends \Google\Model
-{
-    protected $addressType = PostalAddress::class;
-    protected $addressDataType = '';
-    /**
-     * Merchant's business name.
-     *
-     * @var string
-     */
-    public $business;
-    /**
-     * Expected number of days it takes to deliver a postcard to the address's
-     * region.
-     *
-     * @var int
-     */
-    public $expectedDeliveryDaysRegion;
-    /**
-     * Address that a postcard can be sent to.
-     *
-     * @param PostalAddress $address
-     */
-    public function setAddress(PostalAddress $address)
+namespace Google\Service\MyBusinessVerifications {
+    class AddressVerificationData extends \Google\Model
     {
+        protected $addressType = PostalAddress::class;
+        protected $addressDataType = '';
+        /**
+         * Merchant's business name.
+         *
+         * @var string
+         */
+        public $business;
+        /**
+         * Expected number of days it takes to deliver a postcard to the address's
+         * region.
+         *
+         * @var int
+         */
+        public $expectedDeliveryDaysRegion;
+        /**
+         * Address that a postcard can be sent to.
+         *
+         * @param PostalAddress $address
+         */
+        public function setAddress(PostalAddress $address)
+        {
+        }
+        /**
+         * @return PostalAddress
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * Merchant's business name.
+         *
+         * @param string $business
+         */
+        public function setBusiness($business)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBusiness()
+        {
+        }
+        /**
+         * Expected number of days it takes to deliver a postcard to the address's
+         * region.
+         *
+         * @param int $expectedDeliveryDaysRegion
+         */
+        public function setExpectedDeliveryDaysRegion($expectedDeliveryDaysRegion)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getExpectedDeliveryDaysRegion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PostalAddress
+     * Runtime class alias of \Google\Service\MyBusinessVerifications\AddressVerificationData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * Merchant's business name.
-     *
-     * @param string $business
-     */
-    public function setBusiness($business)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBusiness()
-    {
-    }
-    /**
-     * Expected number of days it takes to deliver a postcard to the address's
-     * region.
-     *
-     * @param int $expectedDeliveryDaysRegion
-     */
-    public function setExpectedDeliveryDaysRegion($expectedDeliveryDaysRegion)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getExpectedDeliveryDaysRegion()
+    class Google_Service_MyBusinessVerifications_AddressVerificationData extends \Google\Service\MyBusinessVerifications\AddressVerificationData
     {
     }
 }

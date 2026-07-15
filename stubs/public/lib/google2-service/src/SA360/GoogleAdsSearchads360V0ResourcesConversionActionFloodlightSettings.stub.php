@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesConversionActionFloodlightSettings extends \Google\Model
-{
-    /**
-     * Output only. String used to identify a Floodlight activity group when
-     * reporting conversions.
-     *
-     * @var string
-     */
-    public $activityGroupTag;
-    /**
-     * Output only. ID of the Floodlight activity in DoubleClick Campaign Manager
-     * (DCM).
-     *
-     * @var string
-     */
-    public $activityId;
-    /**
-     * Output only. String used to identify a Floodlight activity when reporting
-     * conversions.
-     *
-     * @var string
-     */
-    public $activityTag;
-    /**
-     * Output only. String used to identify a Floodlight activity group when
-     * reporting conversions.
-     *
-     * @param string $activityGroupTag
-     */
-    public function setActivityGroupTag($activityGroupTag)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesConversionActionFloodlightSettings extends \Google\Model
     {
+        /**
+         * Output only. String used to identify a Floodlight activity group when
+         * reporting conversions.
+         *
+         * @var string
+         */
+        public $activityGroupTag;
+        /**
+         * Output only. ID of the Floodlight activity in DoubleClick Campaign Manager
+         * (DCM).
+         *
+         * @var string
+         */
+        public $activityId;
+        /**
+         * Output only. String used to identify a Floodlight activity when reporting
+         * conversions.
+         *
+         * @var string
+         */
+        public $activityTag;
+        /**
+         * Output only. String used to identify a Floodlight activity group when
+         * reporting conversions.
+         *
+         * @param string $activityGroupTag
+         */
+        public function setActivityGroupTag($activityGroupTag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActivityGroupTag()
+        {
+        }
+        /**
+         * Output only. ID of the Floodlight activity in DoubleClick Campaign Manager
+         * (DCM).
+         *
+         * @param string $activityId
+         */
+        public function setActivityId($activityId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActivityId()
+        {
+        }
+        /**
+         * Output only. String used to identify a Floodlight activity when reporting
+         * conversions.
+         *
+         * @param string $activityTag
+         */
+        public function setActivityTag($activityTag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActivityTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesConversionActionFloodlightSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivityGroupTag()
-    {
-    }
-    /**
-     * Output only. ID of the Floodlight activity in DoubleClick Campaign Manager
-     * (DCM).
-     *
-     * @param string $activityId
-     */
-    public function setActivityId($activityId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getActivityId()
-    {
-    }
-    /**
-     * Output only. String used to identify a Floodlight activity when reporting
-     * conversions.
-     *
-     * @param string $activityTag
-     */
-    public function setActivityTag($activityTag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getActivityTag()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesConversionActionFloodlightSettings extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesConversionActionFloodlightSettings
     {
     }
 }

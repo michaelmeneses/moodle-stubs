@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class ToolVersionSupportedCondition extends \Google\Model
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const TOOL_VERSION_SUPPORT_STATE_TOOL_VERSION_SUPPORT_STATE_UNSPECIFIED = 'TOOL_VERSION_SUPPORT_STATE_UNSPECIFIED';
-    /**
-     * This Tool version is currently supported.
-     */
-    public const TOOL_VERSION_SUPPORT_STATE_TOOL_VERSION_SUPPORT_STATE_SUPPORTED = 'TOOL_VERSION_SUPPORT_STATE_SUPPORTED';
-    /**
-     * This Tool version is in maintenance mode.
-     */
-    public const TOOL_VERSION_SUPPORT_STATE_TOOL_VERSION_SUPPORT_STATE_MAINTENANCE_MODE = 'TOOL_VERSION_SUPPORT_STATE_MAINTENANCE_MODE';
-    /**
-     * This Tool version is no longer supported.
-     */
-    public const TOOL_VERSION_SUPPORT_STATE_TOOL_VERSION_SUPPORT_STATE_UNSUPPORTED = 'TOOL_VERSION_SUPPORT_STATE_UNSUPPORTED';
-    /**
-     * Output only. The time at which this release's version of the Tool will
-     * enter maintenance mode.
-     *
-     * @var string
-     */
-    public $maintenanceModeTime;
-    /**
-     * Output only. True if the version of Tool used by this release is supported.
-     *
-     * @var bool
-     */
-    public $status;
-    /**
-     * Output only. The time at which this release's version of the Tool will no
-     * longer be supported.
-     *
-     * @var string
-     */
-    public $supportExpirationTime;
-    /**
-     * Output only. The Tool support state for this release's version of the Tool.
-     *
-     * @var string
-     */
-    public $toolVersionSupportState;
-    /**
-     * Output only. The time at which this release's version of the Tool will
-     * enter maintenance mode.
-     *
-     * @param string $maintenanceModeTime
-     */
-    public function setMaintenanceModeTime($maintenanceModeTime)
+namespace Google\Service\CloudDeploy {
+    class ToolVersionSupportedCondition extends \Google\Model
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const TOOL_VERSION_SUPPORT_STATE_TOOL_VERSION_SUPPORT_STATE_UNSPECIFIED = 'TOOL_VERSION_SUPPORT_STATE_UNSPECIFIED';
+        /**
+         * This Tool version is currently supported.
+         */
+        public const TOOL_VERSION_SUPPORT_STATE_TOOL_VERSION_SUPPORT_STATE_SUPPORTED = 'TOOL_VERSION_SUPPORT_STATE_SUPPORTED';
+        /**
+         * This Tool version is in maintenance mode.
+         */
+        public const TOOL_VERSION_SUPPORT_STATE_TOOL_VERSION_SUPPORT_STATE_MAINTENANCE_MODE = 'TOOL_VERSION_SUPPORT_STATE_MAINTENANCE_MODE';
+        /**
+         * This Tool version is no longer supported.
+         */
+        public const TOOL_VERSION_SUPPORT_STATE_TOOL_VERSION_SUPPORT_STATE_UNSUPPORTED = 'TOOL_VERSION_SUPPORT_STATE_UNSUPPORTED';
+        /**
+         * Output only. The time at which this release's version of the Tool will
+         * enter maintenance mode.
+         *
+         * @var string
+         */
+        public $maintenanceModeTime;
+        /**
+         * Output only. True if the version of Tool used by this release is supported.
+         *
+         * @var bool
+         */
+        public $status;
+        /**
+         * Output only. The time at which this release's version of the Tool will no
+         * longer be supported.
+         *
+         * @var string
+         */
+        public $supportExpirationTime;
+        /**
+         * Output only. The Tool support state for this release's version of the Tool.
+         *
+         * @var string
+         */
+        public $toolVersionSupportState;
+        /**
+         * Output only. The time at which this release's version of the Tool will
+         * enter maintenance mode.
+         *
+         * @param string $maintenanceModeTime
+         */
+        public function setMaintenanceModeTime($maintenanceModeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaintenanceModeTime()
+        {
+        }
+        /**
+         * Output only. True if the version of Tool used by this release is supported.
+         *
+         * @param bool $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Output only. The time at which this release's version of the Tool will no
+         * longer be supported.
+         *
+         * @param string $supportExpirationTime
+         */
+        public function setSupportExpirationTime($supportExpirationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSupportExpirationTime()
+        {
+        }
+        /**
+         * Output only. The Tool support state for this release's version of the Tool.
+         *
+         * Accepted values: TOOL_VERSION_SUPPORT_STATE_UNSPECIFIED,
+         * TOOL_VERSION_SUPPORT_STATE_SUPPORTED,
+         * TOOL_VERSION_SUPPORT_STATE_MAINTENANCE_MODE,
+         * TOOL_VERSION_SUPPORT_STATE_UNSUPPORTED
+         *
+         * @param self::TOOL_VERSION_SUPPORT_STATE_* $toolVersionSupportState
+         */
+        public function setToolVersionSupportState($toolVersionSupportState)
+        {
+        }
+        /**
+         * @return self::TOOL_VERSION_SUPPORT_STATE_*
+         */
+        public function getToolVersionSupportState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\ToolVersionSupportedCondition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaintenanceModeTime()
-    {
-    }
-    /**
-     * Output only. True if the version of Tool used by this release is supported.
-     *
-     * @param bool $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * Output only. The time at which this release's version of the Tool will no
-     * longer be supported.
-     *
-     * @param string $supportExpirationTime
-     */
-    public function setSupportExpirationTime($supportExpirationTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSupportExpirationTime()
-    {
-    }
-    /**
-     * Output only. The Tool support state for this release's version of the Tool.
-     *
-     * Accepted values: TOOL_VERSION_SUPPORT_STATE_UNSPECIFIED,
-     * TOOL_VERSION_SUPPORT_STATE_SUPPORTED,
-     * TOOL_VERSION_SUPPORT_STATE_MAINTENANCE_MODE,
-     * TOOL_VERSION_SUPPORT_STATE_UNSUPPORTED
-     *
-     * @param self::TOOL_VERSION_SUPPORT_STATE_* $toolVersionSupportState
-     */
-    public function setToolVersionSupportState($toolVersionSupportState)
-    {
-    }
-    /**
-     * @return self::TOOL_VERSION_SUPPORT_STATE_*
-     */
-    public function getToolVersionSupportState()
+    class Google_Service_CloudDeploy_ToolVersionSupportedCondition extends \Google\Service\CloudDeploy\ToolVersionSupportedCondition
     {
     }
 }

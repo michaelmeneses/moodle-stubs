@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1RegisterSubscriberResponse extends \Google\Model
-{
-    /**
-     * Name of the topic the subscriber will listen to.
-     *
-     * @var string
-     */
-    public $topic;
-    /**
-     * Name of the topic the subscriber will listen to.
-     *
-     * @param string $topic
-     */
-    public function setTopic($topic)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1RegisterSubscriberResponse extends \Google\Model
     {
+        /**
+         * Name of the topic the subscriber will listen to.
+         *
+         * @var string
+         */
+        public $topic;
+        /**
+         * Name of the topic the subscriber will listen to.
+         *
+         * @param string $topic
+         */
+        public function setTopic($topic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1RegisterSubscriberResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTopic()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1RegisterSubscriberResponse extends \Google\Service\Cloudchannel\GoogleCloudChannelV1RegisterSubscriberResponse
     {
     }
 }

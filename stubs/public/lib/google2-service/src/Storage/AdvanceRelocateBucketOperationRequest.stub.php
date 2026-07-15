@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class AdvanceRelocateBucketOperationRequest extends \Google\Model
-{
-    /**
-     * Specifies the time when the relocation will revert to the sync stage if the
-     * relocation hasn't succeeded.
-     *
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * Specifies the duration after which the relocation will revert to the sync
-     * stage if the relocation hasn't succeeded. Optional, if not supplied, a
-     * default value of 12h will be used.
-     *
-     * @var string
-     */
-    public $ttl;
-    /**
-     * Specifies the time when the relocation will revert to the sync stage if the
-     * relocation hasn't succeeded.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
+namespace Google\Service\Storage {
+    class AdvanceRelocateBucketOperationRequest extends \Google\Model
     {
+        /**
+         * Specifies the time when the relocation will revert to the sync stage if the
+         * relocation hasn't succeeded.
+         *
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * Specifies the duration after which the relocation will revert to the sync
+         * stage if the relocation hasn't succeeded. Optional, if not supplied, a
+         * default value of 12h will be used.
+         *
+         * @var string
+         */
+        public $ttl;
+        /**
+         * Specifies the time when the relocation will revert to the sync stage if the
+         * relocation hasn't succeeded.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * Specifies the duration after which the relocation will revert to the sync
+         * stage if the relocation hasn't succeeded. Optional, if not supplied, a
+         * default value of 12h will be used.
+         *
+         * @param string $ttl
+         */
+        public function setTtl($ttl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTtl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storage\AdvanceRelocateBucketOperationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * Specifies the duration after which the relocation will revert to the sync
-     * stage if the relocation hasn't succeeded. Optional, if not supplied, a
-     * default value of 12h will be used.
-     *
-     * @param string $ttl
-     */
-    public function setTtl($ttl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTtl()
+    class Google_Service_Storage_AdvanceRelocateBucketOperationRequest extends \Google\Service\Storage\AdvanceRelocateBucketOperationRequest
     {
     }
 }

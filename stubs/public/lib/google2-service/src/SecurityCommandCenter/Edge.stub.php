@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class Edge extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $destination;
-    /**
-     * @var string
-     */
-    public $source;
-    /**
-     * @param string
-     */
-    public function setDestination($destination)
+namespace Google\Service\SecurityCommandCenter {
+    class Edge extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $destination;
+        /**
+         * @var string
+         */
+        public $source;
+        /**
+         * @param string
+         */
+        public function setDestination($destination)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestination()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSource($source)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\Edge registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestination()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSource($source)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSource()
+    class Google_Service_SecurityCommandCenter_Edge extends \Google\Service\SecurityCommandCenter\Edge
     {
     }
 }

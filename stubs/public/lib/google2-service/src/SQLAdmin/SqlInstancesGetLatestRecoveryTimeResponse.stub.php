@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class SqlInstancesGetLatestRecoveryTimeResponse extends \Google\Model
-{
-    /**
-     * Timestamp, identifies the earliest recovery time of the source instance.
-     *
-     * @var string
-     */
-    public $earliestRecoveryTime;
-    /**
-     * This is always `sql#getLatestRecoveryTime`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Timestamp, identifies the latest recovery time of the source instance.
-     *
-     * @var string
-     */
-    public $latestRecoveryTime;
-    /**
-     * Timestamp, identifies the earliest recovery time of the source instance.
-     *
-     * @param string $earliestRecoveryTime
-     */
-    public function setEarliestRecoveryTime($earliestRecoveryTime)
+namespace Google\Service\SQLAdmin {
+    class SqlInstancesGetLatestRecoveryTimeResponse extends \Google\Model
     {
+        /**
+         * Timestamp, identifies the earliest recovery time of the source instance.
+         *
+         * @var string
+         */
+        public $earliestRecoveryTime;
+        /**
+         * This is always `sql#getLatestRecoveryTime`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Timestamp, identifies the latest recovery time of the source instance.
+         *
+         * @var string
+         */
+        public $latestRecoveryTime;
+        /**
+         * Timestamp, identifies the earliest recovery time of the source instance.
+         *
+         * @param string $earliestRecoveryTime
+         */
+        public function setEarliestRecoveryTime($earliestRecoveryTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEarliestRecoveryTime()
+        {
+        }
+        /**
+         * This is always `sql#getLatestRecoveryTime`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Timestamp, identifies the latest recovery time of the source instance.
+         *
+         * @param string $latestRecoveryTime
+         */
+        public function setLatestRecoveryTime($latestRecoveryTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLatestRecoveryTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\SqlInstancesGetLatestRecoveryTimeResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEarliestRecoveryTime()
-    {
-    }
-    /**
-     * This is always `sql#getLatestRecoveryTime`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Timestamp, identifies the latest recovery time of the source instance.
-     *
-     * @param string $latestRecoveryTime
-     */
-    public function setLatestRecoveryTime($latestRecoveryTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLatestRecoveryTime()
+    class Google_Service_SQLAdmin_SqlInstancesGetLatestRecoveryTimeResponse extends \Google\Service\SQLAdmin\SqlInstancesGetLatestRecoveryTimeResponse
     {
     }
 }

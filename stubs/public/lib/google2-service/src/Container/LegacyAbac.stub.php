@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class LegacyAbac extends \Google\Model
-{
-    /**
-     * Whether the ABAC authorizer is enabled for this cluster. When enabled,
-     * identities in the system, including service accounts, nodes, and
-     * controllers, will have statically granted permissions beyond those provided
-     * by the RBAC configuration or IAM.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Whether the ABAC authorizer is enabled for this cluster. When enabled,
-     * identities in the system, including service accounts, nodes, and
-     * controllers, will have statically granted permissions beyond those provided
-     * by the RBAC configuration or IAM.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\Container {
+    class LegacyAbac extends \Google\Model
     {
+        /**
+         * Whether the ABAC authorizer is enabled for this cluster. When enabled,
+         * identities in the system, including service accounts, nodes, and
+         * controllers, will have statically granted permissions beyond those provided
+         * by the RBAC configuration or IAM.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Whether the ABAC authorizer is enabled for this cluster. When enabled,
+         * identities in the system, including service accounts, nodes, and
+         * controllers, will have statically granted permissions beyond those provided
+         * by the RBAC configuration or IAM.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\LegacyAbac registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
+    class Google_Service_Container_LegacyAbac extends \Google\Service\Container\LegacyAbac
     {
     }
 }

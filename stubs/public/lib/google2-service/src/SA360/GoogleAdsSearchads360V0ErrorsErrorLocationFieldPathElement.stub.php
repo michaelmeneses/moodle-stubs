@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ErrorsErrorLocationFieldPathElement extends \Google\Model
-{
-    /**
-     * The name of a field or a oneof
-     *
-     * @var string
-     */
-    public $fieldName;
-    /**
-     * If field_name is a repeated field, this is the element that failed
-     *
-     * @var int
-     */
-    public $index;
-    /**
-     * The name of a field or a oneof
-     *
-     * @param string $fieldName
-     */
-    public function setFieldName($fieldName)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ErrorsErrorLocationFieldPathElement extends \Google\Model
     {
+        /**
+         * The name of a field or a oneof
+         *
+         * @var string
+         */
+        public $fieldName;
+        /**
+         * If field_name is a repeated field, this is the element that failed
+         *
+         * @var int
+         */
+        public $index;
+        /**
+         * The name of a field or a oneof
+         *
+         * @param string $fieldName
+         */
+        public function setFieldName($fieldName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldName()
+        {
+        }
+        /**
+         * If field_name is a repeated field, this is the element that failed
+         *
+         * @param int $index
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ErrorsErrorLocationFieldPathElement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldName()
-    {
-    }
-    /**
-     * If field_name is a repeated field, this is the element that failed
-     *
-     * @param int $index
-     */
-    public function setIndex($index)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIndex()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ErrorsErrorLocationFieldPathElement extends \Google\Service\SA360\GoogleAdsSearchads360V0ErrorsErrorLocationFieldPathElement
     {
     }
 }

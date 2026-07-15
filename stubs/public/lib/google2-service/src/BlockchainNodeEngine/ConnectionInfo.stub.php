@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BlockchainNodeEngine;
-
-class ConnectionInfo extends \Google\Model
-{
-    protected $endpointInfoType = EndpointInfo::class;
-    protected $endpointInfoDataType = '';
-    /**
-     * Output only. A service attachment that exposes a node, and has the
-     * following format: projects/{project}/regions/{region}/serviceAttachments/{s
-     * ervice_attachment_name}
-     *
-     * @var string
-     */
-    public $serviceAttachment;
-    /**
-     * Output only. The endpoint information through which to interact with a
-     * blockchain node.
-     *
-     * @param EndpointInfo $endpointInfo
-     */
-    public function setEndpointInfo(EndpointInfo $endpointInfo)
+namespace Google\Service\BlockchainNodeEngine {
+    class ConnectionInfo extends \Google\Model
     {
+        protected $endpointInfoType = EndpointInfo::class;
+        protected $endpointInfoDataType = '';
+        /**
+         * Output only. A service attachment that exposes a node, and has the
+         * following format: projects/{project}/regions/{region}/serviceAttachments/{s
+         * ervice_attachment_name}
+         *
+         * @var string
+         */
+        public $serviceAttachment;
+        /**
+         * Output only. The endpoint information through which to interact with a
+         * blockchain node.
+         *
+         * @param EndpointInfo $endpointInfo
+         */
+        public function setEndpointInfo(EndpointInfo $endpointInfo)
+        {
+        }
+        /**
+         * @return EndpointInfo
+         */
+        public function getEndpointInfo()
+        {
+        }
+        /**
+         * Output only. A service attachment that exposes a node, and has the
+         * following format: projects/{project}/regions/{region}/serviceAttachments/{s
+         * ervice_attachment_name}
+         *
+         * @param string $serviceAttachment
+         */
+        public function setServiceAttachment($serviceAttachment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAttachment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EndpointInfo
+     * Runtime class alias of \Google\Service\BlockchainNodeEngine\ConnectionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndpointInfo()
-    {
-    }
-    /**
-     * Output only. A service attachment that exposes a node, and has the
-     * following format: projects/{project}/regions/{region}/serviceAttachments/{s
-     * ervice_attachment_name}
-     *
-     * @param string $serviceAttachment
-     */
-    public function setServiceAttachment($serviceAttachment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAttachment()
+    class Google_Service_BlockchainNodeEngine_ConnectionInfo extends \Google\Service\BlockchainNodeEngine\ConnectionInfo
     {
     }
 }

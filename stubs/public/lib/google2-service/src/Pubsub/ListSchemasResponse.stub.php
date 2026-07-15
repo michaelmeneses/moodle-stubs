@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class ListSchemasResponse extends \Google\Collection
-{
-    protected $collection_key = 'schemas';
-    /**
-     * If not empty, indicates that there may be more schemas that match the
-     * request; this value should be passed in a new `ListSchemasRequest`.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $schemasType = Schema::class;
-    protected $schemasDataType = 'array';
-    /**
-     * If not empty, indicates that there may be more schemas that match the
-     * request; this value should be passed in a new `ListSchemasRequest`.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Pubsub {
+    class ListSchemasResponse extends \Google\Collection
     {
+        protected $collection_key = 'schemas';
+        /**
+         * If not empty, indicates that there may be more schemas that match the
+         * request; this value should be passed in a new `ListSchemasRequest`.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $schemasType = Schema::class;
+        protected $schemasDataType = 'array';
+        /**
+         * If not empty, indicates that there may be more schemas that match the
+         * request; this value should be passed in a new `ListSchemasRequest`.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The resulting schemas.
+         *
+         * @param Schema[] $schemas
+         */
+        public function setSchemas($schemas)
+        {
+        }
+        /**
+         * @return Schema[]
+         */
+        public function getSchemas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Pubsub\ListSchemasResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The resulting schemas.
-     *
-     * @param Schema[] $schemas
-     */
-    public function setSchemas($schemas)
-    {
-    }
-    /**
-     * @return Schema[]
-     */
-    public function getSchemas()
+    class Google_Service_Pubsub_ListSchemasResponse extends \Google\Service\Pubsub\ListSchemasResponse
     {
     }
 }

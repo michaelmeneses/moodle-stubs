@@ -21,200 +21,209 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class RuntimeSoftwareConfig extends \Google\Collection
-{
-    protected $collection_key = 'kernels';
-    /**
-     * @var string
-     */
-    public $customGpuDriverPath;
-    /**
-     * @var bool
-     */
-    public $disableTerminal;
-    /**
-     * @var bool
-     */
-    public $enableHealthMonitoring;
-    /**
-     * @var bool
-     */
-    public $idleShutdown;
-    /**
-     * @var int
-     */
-    public $idleShutdownTimeout;
-    /**
-     * @var bool
-     */
-    public $installGpuDriver;
-    protected $kernelsType = ContainerImage::class;
-    protected $kernelsDataType = 'array';
-    public $kernels = [];
-    /**
-     * @var string
-     */
-    public $notebookUpgradeSchedule;
-    /**
-     * @var string
-     */
-    public $postStartupScript;
-    /**
-     * @var string
-     */
-    public $postStartupScriptBehavior;
-    /**
-     * @var bool
-     */
-    public $upgradeable;
-    /**
-     * @var string
-     */
-    public $version;
-    /**
-     * @param string
-     */
-    public function setCustomGpuDriverPath($customGpuDriverPath)
+namespace Google\Service\AIPlatformNotebooks {
+    class RuntimeSoftwareConfig extends \Google\Collection
     {
+        protected $collection_key = 'kernels';
+        /**
+         * @var string
+         */
+        public $customGpuDriverPath;
+        /**
+         * @var bool
+         */
+        public $disableTerminal;
+        /**
+         * @var bool
+         */
+        public $enableHealthMonitoring;
+        /**
+         * @var bool
+         */
+        public $idleShutdown;
+        /**
+         * @var int
+         */
+        public $idleShutdownTimeout;
+        /**
+         * @var bool
+         */
+        public $installGpuDriver;
+        protected $kernelsType = ContainerImage::class;
+        protected $kernelsDataType = 'array';
+        public $kernels = [];
+        /**
+         * @var string
+         */
+        public $notebookUpgradeSchedule;
+        /**
+         * @var string
+         */
+        public $postStartupScript;
+        /**
+         * @var string
+         */
+        public $postStartupScriptBehavior;
+        /**
+         * @var bool
+         */
+        public $upgradeable;
+        /**
+         * @var string
+         */
+        public $version;
+        /**
+         * @param string
+         */
+        public function setCustomGpuDriverPath($customGpuDriverPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomGpuDriverPath()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setDisableTerminal($disableTerminal)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableTerminal()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setEnableHealthMonitoring($enableHealthMonitoring)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableHealthMonitoring()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIdleShutdown($idleShutdown)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIdleShutdown()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setIdleShutdownTimeout($idleShutdownTimeout)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIdleShutdownTimeout()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setInstallGpuDriver($installGpuDriver)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInstallGpuDriver()
+        {
+        }
+        /**
+         * @param ContainerImage[]
+         */
+        public function setKernels($kernels)
+        {
+        }
+        /**
+         * @return ContainerImage[]
+         */
+        public function getKernels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNotebookUpgradeSchedule($notebookUpgradeSchedule)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotebookUpgradeSchedule()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPostStartupScript($postStartupScript)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostStartupScript()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPostStartupScriptBehavior($postStartupScriptBehavior)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostStartupScriptBehavior()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setUpgradeable($upgradeable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUpgradeable()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\RuntimeSoftwareConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomGpuDriverPath()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setDisableTerminal($disableTerminal)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisableTerminal()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setEnableHealthMonitoring($enableHealthMonitoring)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableHealthMonitoring()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIdleShutdown($idleShutdown)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIdleShutdown()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setIdleShutdownTimeout($idleShutdownTimeout)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIdleShutdownTimeout()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setInstallGpuDriver($installGpuDriver)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInstallGpuDriver()
-    {
-    }
-    /**
-     * @param ContainerImage[]
-     */
-    public function setKernels($kernels)
-    {
-    }
-    /**
-     * @return ContainerImage[]
-     */
-    public function getKernels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNotebookUpgradeSchedule($notebookUpgradeSchedule)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotebookUpgradeSchedule()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPostStartupScript($postStartupScript)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPostStartupScript()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPostStartupScriptBehavior($postStartupScriptBehavior)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPostStartupScriptBehavior()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setUpgradeable($upgradeable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUpgradeable()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_AIPlatformNotebooks_RuntimeSoftwareConfig extends \Google\Service\AIPlatformNotebooks\RuntimeSoftwareConfig
     {
     }
 }

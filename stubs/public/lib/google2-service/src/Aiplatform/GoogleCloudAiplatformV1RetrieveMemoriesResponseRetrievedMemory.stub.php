@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RetrieveMemoriesResponseRetrievedMemory extends \Google\Model
-{
-    /**
-     * The distance between the query and the retrieved Memory. Smaller values
-     * indicate more similar memories. This is only set if similarity search was
-     * used for retrieval.
-     *
-     * @var 
-     */
-    public $distance;
-    protected $memoryType = GoogleCloudAiplatformV1Memory::class;
-    protected $memoryDataType = '';
-    public function setDistance($distance)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RetrieveMemoriesResponseRetrievedMemory extends \Google\Model
     {
+        /**
+         * The distance between the query and the retrieved Memory. Smaller values
+         * indicate more similar memories. This is only set if similarity search was
+         * used for retrieval.
+         *
+         * @var 
+         */
+        public $distance;
+        protected $memoryType = GoogleCloudAiplatformV1Memory::class;
+        protected $memoryDataType = '';
+        public function setDistance($distance)
+        {
+        }
+        public function getDistance()
+        {
+        }
+        /**
+         * The retrieved Memory.
+         *
+         * @param GoogleCloudAiplatformV1Memory $memory
+         */
+        public function setMemory(GoogleCloudAiplatformV1Memory $memory)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Memory
+         */
+        public function getMemory()
+        {
+        }
     }
-    public function getDistance()
-    {
-    }
+}
+namespace {
     /**
-     * The retrieved Memory.
-     *
-     * @param GoogleCloudAiplatformV1Memory $memory
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RetrieveMemoriesResponseRetrievedMemory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setMemory(GoogleCloudAiplatformV1Memory $memory)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1Memory
-     */
-    public function getMemory()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RetrieveMemoriesResponseRetrievedMemory extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RetrieveMemoriesResponseRetrievedMemory
     {
     }
 }

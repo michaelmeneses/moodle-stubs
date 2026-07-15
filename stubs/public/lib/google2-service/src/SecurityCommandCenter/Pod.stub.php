@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class Pod extends \Google\Collection
-{
-    protected $collection_key = 'labels';
-    protected $containersType = Container::class;
-    protected $containersDataType = 'array';
-    protected $labelsType = Label::class;
-    protected $labelsDataType = 'array';
-    /**
-     * Kubernetes Pod name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Kubernetes Pod namespace.
-     *
-     * @var string
-     */
-    public $ns;
-    /**
-     * Pod containers associated with this finding, if any.
-     *
-     * @param Container[] $containers
-     */
-    public function setContainers($containers)
+namespace Google\Service\SecurityCommandCenter {
+    class Pod extends \Google\Collection
     {
+        protected $collection_key = 'labels';
+        protected $containersType = Container::class;
+        protected $containersDataType = 'array';
+        protected $labelsType = Label::class;
+        protected $labelsDataType = 'array';
+        /**
+         * Kubernetes Pod name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Kubernetes Pod namespace.
+         *
+         * @var string
+         */
+        public $ns;
+        /**
+         * Pod containers associated with this finding, if any.
+         *
+         * @param Container[] $containers
+         */
+        public function setContainers($containers)
+        {
+        }
+        /**
+         * @return Container[]
+         */
+        public function getContainers()
+        {
+        }
+        /**
+         * Pod labels. For Kubernetes containers, these are applied to the container.
+         *
+         * @param Label[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return Label[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Kubernetes Pod name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Kubernetes Pod namespace.
+         *
+         * @param string $ns
+         */
+        public function setNs($ns)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Container[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\Pod registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainers()
-    {
-    }
-    /**
-     * Pod labels. For Kubernetes containers, these are applied to the container.
-     *
-     * @param Label[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return Label[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Kubernetes Pod name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Kubernetes Pod namespace.
-     *
-     * @param string $ns
-     */
-    public function setNs($ns)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNs()
+    class Google_Service_SecurityCommandCenter_Pod extends \Google\Service\SecurityCommandCenter\Pod
     {
     }
 }

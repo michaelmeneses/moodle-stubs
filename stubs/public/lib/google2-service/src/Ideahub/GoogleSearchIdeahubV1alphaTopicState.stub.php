@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Ideahub;
-
-class GoogleSearchIdeahubV1alphaTopicState extends \Google\Model
-{
-    public $dismissed;
-    public $name;
-    public $saved;
-    public function setDismissed($dismissed)
+namespace Google\Service\Ideahub {
+    class GoogleSearchIdeahubV1alphaTopicState extends \Google\Model
     {
+        public $dismissed;
+        public $name;
+        public $saved;
+        public function setDismissed($dismissed)
+        {
+        }
+        public function getDismissed()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        public function setSaved($saved)
+        {
+        }
+        public function getSaved()
+        {
+        }
     }
-    public function getDismissed()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    public function setSaved($saved)
-    {
-    }
-    public function getSaved()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Ideahub\GoogleSearchIdeahubV1alphaTopicState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Ideahub_GoogleSearchIdeahubV1alphaTopicState extends \Google\Service\Ideahub\GoogleSearchIdeahubV1alphaTopicState
     {
     }
 }

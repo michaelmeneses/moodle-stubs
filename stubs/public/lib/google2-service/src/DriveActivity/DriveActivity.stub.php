@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class DriveActivity extends \Google\Collection
-{
-    protected $collection_key = 'targets';
-    protected $actionsType = Action::class;
-    protected $actionsDataType = 'array';
-    protected $actorsType = Actor::class;
-    protected $actorsDataType = 'array';
-    protected $primaryActionDetailType = ActionDetail::class;
-    protected $primaryActionDetailDataType = '';
-    protected $targetsType = Target::class;
-    protected $targetsDataType = 'array';
-    protected $timeRangeType = TimeRange::class;
-    protected $timeRangeDataType = '';
-    /**
-     * The activity occurred at this specific time.
-     *
-     * @var string
-     */
-    public $timestamp;
-    /**
-     * Details on all actions in this activity.
-     *
-     * @param Action[] $actions
-     */
-    public function setActions($actions)
+namespace Google\Service\DriveActivity {
+    class DriveActivity extends \Google\Collection
     {
+        protected $collection_key = 'targets';
+        protected $actionsType = Action::class;
+        protected $actionsDataType = 'array';
+        protected $actorsType = Actor::class;
+        protected $actorsDataType = 'array';
+        protected $primaryActionDetailType = ActionDetail::class;
+        protected $primaryActionDetailDataType = '';
+        protected $targetsType = Target::class;
+        protected $targetsDataType = 'array';
+        protected $timeRangeType = TimeRange::class;
+        protected $timeRangeDataType = '';
+        /**
+         * The activity occurred at this specific time.
+         *
+         * @var string
+         */
+        public $timestamp;
+        /**
+         * Details on all actions in this activity.
+         *
+         * @param Action[] $actions
+         */
+        public function setActions($actions)
+        {
+        }
+        /**
+         * @return Action[]
+         */
+        public function getActions()
+        {
+        }
+        /**
+         * All actor(s) responsible for the activity.
+         *
+         * @param Actor[] $actors
+         */
+        public function setActors($actors)
+        {
+        }
+        /**
+         * @return Actor[]
+         */
+        public function getActors()
+        {
+        }
+        /**
+         * Key information about the primary action for this activity. This is either
+         * representative, or the most important, of all actions in the activity,
+         * according to the ConsolidationStrategy in the request.
+         *
+         * @param ActionDetail $primaryActionDetail
+         */
+        public function setPrimaryActionDetail(ActionDetail $primaryActionDetail)
+        {
+        }
+        /**
+         * @return ActionDetail
+         */
+        public function getPrimaryActionDetail()
+        {
+        }
+        /**
+         * All Google Drive objects this activity is about (e.g. file, folder, drive).
+         * This represents the state of the target immediately after the actions
+         * occurred.
+         *
+         * @param Target[] $targets
+         */
+        public function setTargets($targets)
+        {
+        }
+        /**
+         * @return Target[]
+         */
+        public function getTargets()
+        {
+        }
+        /**
+         * The activity occurred over this time range.
+         *
+         * @param TimeRange $timeRange
+         */
+        public function setTimeRange(TimeRange $timeRange)
+        {
+        }
+        /**
+         * @return TimeRange
+         */
+        public function getTimeRange()
+        {
+        }
+        /**
+         * The activity occurred at this specific time.
+         *
+         * @param string $timestamp
+         */
+        public function setTimestamp($timestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestamp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Action[]
+     * Runtime class alias of \Google\Service\DriveActivity\DriveActivity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActions()
-    {
-    }
-    /**
-     * All actor(s) responsible for the activity.
-     *
-     * @param Actor[] $actors
-     */
-    public function setActors($actors)
-    {
-    }
-    /**
-     * @return Actor[]
-     */
-    public function getActors()
-    {
-    }
-    /**
-     * Key information about the primary action for this activity. This is either
-     * representative, or the most important, of all actions in the activity,
-     * according to the ConsolidationStrategy in the request.
-     *
-     * @param ActionDetail $primaryActionDetail
-     */
-    public function setPrimaryActionDetail(ActionDetail $primaryActionDetail)
-    {
-    }
-    /**
-     * @return ActionDetail
-     */
-    public function getPrimaryActionDetail()
-    {
-    }
-    /**
-     * All Google Drive objects this activity is about (e.g. file, folder, drive).
-     * This represents the state of the target immediately after the actions
-     * occurred.
-     *
-     * @param Target[] $targets
-     */
-    public function setTargets($targets)
-    {
-    }
-    /**
-     * @return Target[]
-     */
-    public function getTargets()
-    {
-    }
-    /**
-     * The activity occurred over this time range.
-     *
-     * @param TimeRange $timeRange
-     */
-    public function setTimeRange(TimeRange $timeRange)
-    {
-    }
-    /**
-     * @return TimeRange
-     */
-    public function getTimeRange()
-    {
-    }
-    /**
-     * The activity occurred at this specific time.
-     *
-     * @param string $timestamp
-     */
-    public function setTimestamp($timestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestamp()
+    class Google_Service_DriveActivity_DriveActivity extends \Google\Service\DriveActivity\DriveActivity
     {
     }
 }

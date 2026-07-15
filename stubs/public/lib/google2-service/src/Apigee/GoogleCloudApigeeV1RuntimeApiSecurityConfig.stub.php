@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1RuntimeApiSecurityConfig extends \Google\Model
-{
-    /**
-     * If the API Security is enabled or not.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * If the API Security is enabled or not.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1RuntimeApiSecurityConfig extends \Google\Model
     {
+        /**
+         * If the API Security is enabled or not.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * If the API Security is enabled or not.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1RuntimeApiSecurityConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
+    class Google_Service_Apigee_GoogleCloudApigeeV1RuntimeApiSecurityConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1RuntimeApiSecurityConfig
     {
     }
 }

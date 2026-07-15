@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class CheckConsumerConfigRequest extends \Google\Model
-{
-    /**
-     * Default value. We will use IPv4 or IPv6 depending on the IP version of
-     * first available subnetwork.
-     */
-    public const REQUESTED_IP_VERSION_IP_VERSION_UNSPECIFIED = 'IP_VERSION_UNSPECIFIED';
-    /**
-     * Will use IPv4 only.
-     */
-    public const REQUESTED_IP_VERSION_IPV4 = 'IPV4';
-    /**
-     * Will use IPv6 only.
-     */
-    public const REQUESTED_IP_VERSION_IPV6 = 'IPV6';
-    /**
-     * Required. Full resource name of the consumer network. Example: -
-     * projects/{project}/global/networks/{network}.
-     *
-     * @var string
-     */
-    public $consumerNetwork;
-    /**
-     * The project number or ID where the PSC endpoint is to be created.
-     *
-     * @var string
-     */
-    public $endpointProject;
-    /**
-     * The requested IP Version
-     *
-     * @var string
-     */
-    public $requestedIpVersion;
-    /**
-     * Required. The service class identifier of the producer.
-     *
-     * @var string
-     */
-    public $serviceClass;
-    /**
-     * Required. Full resource name of the consumer network. Example: -
-     * projects/{project}/global/networks/{network}.
-     *
-     * @param string $consumerNetwork
-     */
-    public function setConsumerNetwork($consumerNetwork)
+namespace Google\Service\Networkconnectivity {
+    class CheckConsumerConfigRequest extends \Google\Model
     {
+        /**
+         * Default value. We will use IPv4 or IPv6 depending on the IP version of
+         * first available subnetwork.
+         */
+        public const REQUESTED_IP_VERSION_IP_VERSION_UNSPECIFIED = 'IP_VERSION_UNSPECIFIED';
+        /**
+         * Will use IPv4 only.
+         */
+        public const REQUESTED_IP_VERSION_IPV4 = 'IPV4';
+        /**
+         * Will use IPv6 only.
+         */
+        public const REQUESTED_IP_VERSION_IPV6 = 'IPV6';
+        /**
+         * Required. Full resource name of the consumer network. Example: -
+         * projects/{project}/global/networks/{network}.
+         *
+         * @var string
+         */
+        public $consumerNetwork;
+        /**
+         * The project number or ID where the PSC endpoint is to be created.
+         *
+         * @var string
+         */
+        public $endpointProject;
+        /**
+         * The requested IP Version
+         *
+         * @var string
+         */
+        public $requestedIpVersion;
+        /**
+         * Required. The service class identifier of the producer.
+         *
+         * @var string
+         */
+        public $serviceClass;
+        /**
+         * Required. Full resource name of the consumer network. Example: -
+         * projects/{project}/global/networks/{network}.
+         *
+         * @param string $consumerNetwork
+         */
+        public function setConsumerNetwork($consumerNetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsumerNetwork()
+        {
+        }
+        /**
+         * The project number or ID where the PSC endpoint is to be created.
+         *
+         * @param string $endpointProject
+         */
+        public function setEndpointProject($endpointProject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndpointProject()
+        {
+        }
+        /**
+         * The requested IP Version
+         *
+         * Accepted values: IP_VERSION_UNSPECIFIED, IPV4, IPV6
+         *
+         * @param self::REQUESTED_IP_VERSION_* $requestedIpVersion
+         */
+        public function setRequestedIpVersion($requestedIpVersion)
+        {
+        }
+        /**
+         * @return self::REQUESTED_IP_VERSION_*
+         */
+        public function getRequestedIpVersion()
+        {
+        }
+        /**
+         * Required. The service class identifier of the producer.
+         *
+         * @param string $serviceClass
+         */
+        public function setServiceClass($serviceClass)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceClass()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Networkconnectivity\CheckConsumerConfigRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsumerNetwork()
-    {
-    }
-    /**
-     * The project number or ID where the PSC endpoint is to be created.
-     *
-     * @param string $endpointProject
-     */
-    public function setEndpointProject($endpointProject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndpointProject()
-    {
-    }
-    /**
-     * The requested IP Version
-     *
-     * Accepted values: IP_VERSION_UNSPECIFIED, IPV4, IPV6
-     *
-     * @param self::REQUESTED_IP_VERSION_* $requestedIpVersion
-     */
-    public function setRequestedIpVersion($requestedIpVersion)
-    {
-    }
-    /**
-     * @return self::REQUESTED_IP_VERSION_*
-     */
-    public function getRequestedIpVersion()
-    {
-    }
-    /**
-     * Required. The service class identifier of the producer.
-     *
-     * @param string $serviceClass
-     */
-    public function setServiceClass($serviceClass)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceClass()
+    class Google_Service_Networkconnectivity_CheckConsumerConfigRequest extends \Google\Service\Networkconnectivity\CheckConsumerConfigRequest
     {
     }
 }

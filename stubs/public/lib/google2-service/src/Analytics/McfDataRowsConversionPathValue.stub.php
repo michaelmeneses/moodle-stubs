@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class McfDataRowsConversionPathValue extends \Google\Model
-{
-    /**
-     * Type of an interaction on conversion path. Such as CLICK, IMPRESSION etc.
-     *
-     * @var string
-     */
-    public $interactionType;
-    /**
-     * Node value of an interaction on conversion path. Such as source, medium
-     * etc.
-     *
-     * @var string
-     */
-    public $nodeValue;
-    /**
-     * Type of an interaction on conversion path. Such as CLICK, IMPRESSION etc.
-     *
-     * @param string $interactionType
-     */
-    public function setInteractionType($interactionType)
+namespace Google\Service\Analytics {
+    class McfDataRowsConversionPathValue extends \Google\Model
     {
+        /**
+         * Type of an interaction on conversion path. Such as CLICK, IMPRESSION etc.
+         *
+         * @var string
+         */
+        public $interactionType;
+        /**
+         * Node value of an interaction on conversion path. Such as source, medium
+         * etc.
+         *
+         * @var string
+         */
+        public $nodeValue;
+        /**
+         * Type of an interaction on conversion path. Such as CLICK, IMPRESSION etc.
+         *
+         * @param string $interactionType
+         */
+        public function setInteractionType($interactionType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInteractionType()
+        {
+        }
+        /**
+         * Node value of an interaction on conversion path. Such as source, medium
+         * etc.
+         *
+         * @param string $nodeValue
+         */
+        public function setNodeValue($nodeValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNodeValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\McfDataRowsConversionPathValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInteractionType()
-    {
-    }
-    /**
-     * Node value of an interaction on conversion path. Such as source, medium
-     * etc.
-     *
-     * @param string $nodeValue
-     */
-    public function setNodeValue($nodeValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNodeValue()
+    class Google_Service_Analytics_McfDataRowsConversionPathValue extends \Google\Service\Analytics\McfDataRowsConversionPathValue
     {
     }
 }

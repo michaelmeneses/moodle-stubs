@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class SyncWorkspaceResponse extends \Google\Collection
-{
-    protected $collection_key = 'mergeConflict';
-    protected $mergeConflictType = MergeConflict::class;
-    protected $mergeConflictDataType = 'array';
-    protected $syncStatusType = SyncStatus::class;
-    protected $syncStatusDataType = '';
-    /**
-     * The merge conflict after sync. If this field is not empty, the sync is
-     * still treated as successful. But a version cannot be created until all
-     * conflicts are resolved.
-     *
-     * @param MergeConflict[] $mergeConflict
-     */
-    public function setMergeConflict($mergeConflict)
+namespace Google\Service\TagManager {
+    class SyncWorkspaceResponse extends \Google\Collection
     {
+        protected $collection_key = 'mergeConflict';
+        protected $mergeConflictType = MergeConflict::class;
+        protected $mergeConflictDataType = 'array';
+        protected $syncStatusType = SyncStatus::class;
+        protected $syncStatusDataType = '';
+        /**
+         * The merge conflict after sync. If this field is not empty, the sync is
+         * still treated as successful. But a version cannot be created until all
+         * conflicts are resolved.
+         *
+         * @param MergeConflict[] $mergeConflict
+         */
+        public function setMergeConflict($mergeConflict)
+        {
+        }
+        /**
+         * @return MergeConflict[]
+         */
+        public function getMergeConflict()
+        {
+        }
+        /**
+         * Indicates whether synchronization caused a merge conflict or sync error.
+         *
+         * @param SyncStatus $syncStatus
+         */
+        public function setSyncStatus(SyncStatus $syncStatus)
+        {
+        }
+        /**
+         * @return SyncStatus
+         */
+        public function getSyncStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MergeConflict[]
+     * Runtime class alias of \Google\Service\TagManager\SyncWorkspaceResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMergeConflict()
-    {
-    }
-    /**
-     * Indicates whether synchronization caused a merge conflict or sync error.
-     *
-     * @param SyncStatus $syncStatus
-     */
-    public function setSyncStatus(SyncStatus $syncStatus)
-    {
-    }
-    /**
-     * @return SyncStatus
-     */
-    public function getSyncStatus()
+    class Google_Service_TagManager_SyncWorkspaceResponse extends \Google\Service\TagManager\SyncWorkspaceResponse
     {
     }
 }

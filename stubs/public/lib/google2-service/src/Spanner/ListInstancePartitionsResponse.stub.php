@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class ListInstancePartitionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $instancePartitionsType = InstancePartition::class;
-    protected $instancePartitionsDataType = 'array';
-    /**
-     * `next_page_token` can be sent in a subsequent ListInstancePartitions call
-     * to fetch more of the matching instance partitions.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of unreachable instances or instance partitions. It includes the
-     * names of instances or instance partitions whose metadata could not be
-     * retrieved within instance_partition_deadline.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of requested instancePartitions.
-     *
-     * @param InstancePartition[] $instancePartitions
-     */
-    public function setInstancePartitions($instancePartitions)
+namespace Google\Service\Spanner {
+    class ListInstancePartitionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $instancePartitionsType = InstancePartition::class;
+        protected $instancePartitionsDataType = 'array';
+        /**
+         * `next_page_token` can be sent in a subsequent ListInstancePartitions call
+         * to fetch more of the matching instance partitions.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of unreachable instances or instance partitions. It includes the
+         * names of instances or instance partitions whose metadata could not be
+         * retrieved within instance_partition_deadline.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of requested instancePartitions.
+         *
+         * @param InstancePartition[] $instancePartitions
+         */
+        public function setInstancePartitions($instancePartitions)
+        {
+        }
+        /**
+         * @return InstancePartition[]
+         */
+        public function getInstancePartitions()
+        {
+        }
+        /**
+         * `next_page_token` can be sent in a subsequent ListInstancePartitions call
+         * to fetch more of the matching instance partitions.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of unreachable instances or instance partitions. It includes the
+         * names of instances or instance partitions whose metadata could not be
+         * retrieved within instance_partition_deadline.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InstancePartition[]
+     * Runtime class alias of \Google\Service\Spanner\ListInstancePartitionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstancePartitions()
-    {
-    }
-    /**
-     * `next_page_token` can be sent in a subsequent ListInstancePartitions call
-     * to fetch more of the matching instance partitions.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of unreachable instances or instance partitions. It includes the
-     * names of instances or instance partitions whose metadata could not be
-     * retrieved within instance_partition_deadline.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Spanner_ListInstancePartitionsResponse extends \Google\Service\Spanner\ListInstancePartitionsResponse
     {
     }
 }

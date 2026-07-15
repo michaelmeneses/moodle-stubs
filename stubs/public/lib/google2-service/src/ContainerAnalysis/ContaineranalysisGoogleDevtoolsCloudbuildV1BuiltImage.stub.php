@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ContaineranalysisGoogleDevtoolsCloudbuildV1BuiltImage extends \Google\Model
-{
-    /**
-     * Output only. Path to the artifact in Artifact Registry.
-     *
-     * @var string
-     */
-    public $artifactRegistryPackage;
-    /**
-     * Docker Registry 2.0 digest.
-     *
-     * @var string
-     */
-    public $digest;
-    /**
-     * Name used to push the container image to Google Container Registry, as
-     * presented to `docker push`.
-     *
-     * @var string
-     */
-    public $name;
-    protected $pushTimingType = ContaineranalysisGoogleDevtoolsCloudbuildV1TimeSpan::class;
-    protected $pushTimingDataType = '';
-    /**
-     * Output only. Path to the artifact in Artifact Registry.
-     *
-     * @param string $artifactRegistryPackage
-     */
-    public function setArtifactRegistryPackage($artifactRegistryPackage)
+namespace Google\Service\ContainerAnalysis {
+    class ContaineranalysisGoogleDevtoolsCloudbuildV1BuiltImage extends \Google\Model
     {
+        /**
+         * Output only. Path to the artifact in Artifact Registry.
+         *
+         * @var string
+         */
+        public $artifactRegistryPackage;
+        /**
+         * Docker Registry 2.0 digest.
+         *
+         * @var string
+         */
+        public $digest;
+        /**
+         * Name used to push the container image to Google Container Registry, as
+         * presented to `docker push`.
+         *
+         * @var string
+         */
+        public $name;
+        protected $pushTimingType = ContaineranalysisGoogleDevtoolsCloudbuildV1TimeSpan::class;
+        protected $pushTimingDataType = '';
+        /**
+         * Output only. Path to the artifact in Artifact Registry.
+         *
+         * @param string $artifactRegistryPackage
+         */
+        public function setArtifactRegistryPackage($artifactRegistryPackage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArtifactRegistryPackage()
+        {
+        }
+        /**
+         * Docker Registry 2.0 digest.
+         *
+         * @param string $digest
+         */
+        public function setDigest($digest)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDigest()
+        {
+        }
+        /**
+         * Name used to push the container image to Google Container Registry, as
+         * presented to `docker push`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Stores timing information for pushing the specified image.
+         *
+         * @param ContaineranalysisGoogleDevtoolsCloudbuildV1TimeSpan $pushTiming
+         */
+        public function setPushTiming(ContaineranalysisGoogleDevtoolsCloudbuildV1TimeSpan $pushTiming)
+        {
+        }
+        /**
+         * @return ContaineranalysisGoogleDevtoolsCloudbuildV1TimeSpan
+         */
+        public function getPushTiming()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1BuiltImage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifactRegistryPackage()
-    {
-    }
-    /**
-     * Docker Registry 2.0 digest.
-     *
-     * @param string $digest
-     */
-    public function setDigest($digest)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDigest()
-    {
-    }
-    /**
-     * Name used to push the container image to Google Container Registry, as
-     * presented to `docker push`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Stores timing information for pushing the specified image.
-     *
-     * @param ContaineranalysisGoogleDevtoolsCloudbuildV1TimeSpan $pushTiming
-     */
-    public function setPushTiming(ContaineranalysisGoogleDevtoolsCloudbuildV1TimeSpan $pushTiming)
-    {
-    }
-    /**
-     * @return ContaineranalysisGoogleDevtoolsCloudbuildV1TimeSpan
-     */
-    public function getPushTiming()
+    class Google_Service_ContainerAnalysis_ContaineranalysisGoogleDevtoolsCloudbuildV1BuiltImage extends \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1BuiltImage
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaDocumentContent extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * @var string
-     */
-    public $rawBytes;
-    /**
-     * @var string
-     */
-    public $uri;
-    /**
-     * @param string
-     */
-    public function setMimeType($mimeType)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaDocumentContent extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * @var string
+         */
+        public $rawBytes;
+        /**
+         * @var string
+         */
+        public $uri;
+        /**
+         * @param string
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRawBytes($rawBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRawBytes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaDocumentContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMimeType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRawBytes($rawBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRawBytes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaDocumentContent extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaDocumentContent
     {
     }
 }

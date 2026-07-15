@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1QueryTabularStatsRequest extends \Google\Collection
-{
-    protected $collection_key = 'metrics';
-    /**
-     * Required. List of dimension names to group the aggregations by.
-     *
-     * @var string[]
-     */
-    public $dimensions;
-    /**
-     * Filter further on specific dimension values. Follows the same grammar as
-     * custom report's filter expressions. Example, apiproxy eq 'foobar'.
-     * https://cloud.google.com/apigee/docs/api-platform/analytics/analytics-
-     * reference#filters
-     *
-     * @var string
-     */
-    public $filter;
-    protected $metricsType = GoogleCloudApigeeV1MetricAggregation::class;
-    protected $metricsDataType = 'array';
-    /**
-     * Page size represents the number of rows.
-     *
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * Identifies a sequence of rows.
-     *
-     * @var string
-     */
-    public $pageToken;
-    protected $timeRangeType = GoogleTypeInterval::class;
-    protected $timeRangeDataType = '';
-    /**
-     * Required. List of dimension names to group the aggregations by.
-     *
-     * @param string[] $dimensions
-     */
-    public function setDimensions($dimensions)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1QueryTabularStatsRequest extends \Google\Collection
     {
+        protected $collection_key = 'metrics';
+        /**
+         * Required. List of dimension names to group the aggregations by.
+         *
+         * @var string[]
+         */
+        public $dimensions;
+        /**
+         * Filter further on specific dimension values. Follows the same grammar as
+         * custom report's filter expressions. Example, apiproxy eq 'foobar'.
+         * https://cloud.google.com/apigee/docs/api-platform/analytics/analytics-
+         * reference#filters
+         *
+         * @var string
+         */
+        public $filter;
+        protected $metricsType = GoogleCloudApigeeV1MetricAggregation::class;
+        protected $metricsDataType = 'array';
+        /**
+         * Page size represents the number of rows.
+         *
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * Identifies a sequence of rows.
+         *
+         * @var string
+         */
+        public $pageToken;
+        protected $timeRangeType = GoogleTypeInterval::class;
+        protected $timeRangeDataType = '';
+        /**
+         * Required. List of dimension names to group the aggregations by.
+         *
+         * @param string[] $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * Filter further on specific dimension values. Follows the same grammar as
+         * custom report's filter expressions. Example, apiproxy eq 'foobar'.
+         * https://cloud.google.com/apigee/docs/api-platform/analytics/analytics-
+         * reference#filters
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * Required. List of metrics and their aggregations.
+         *
+         * @param GoogleCloudApigeeV1MetricAggregation[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1MetricAggregation[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * Page size represents the number of rows.
+         *
+         * @param int $pageSize
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * Identifies a sequence of rows.
+         *
+         * @param string $pageToken
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
+        /**
+         * Time range for the stats.
+         *
+         * @param GoogleTypeInterval $timeRange
+         */
+        public function setTimeRange(GoogleTypeInterval $timeRange)
+        {
+        }
+        /**
+         * @return GoogleTypeInterval
+         */
+        public function getTimeRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1QueryTabularStatsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensions()
-    {
-    }
-    /**
-     * Filter further on specific dimension values. Follows the same grammar as
-     * custom report's filter expressions. Example, apiproxy eq 'foobar'.
-     * https://cloud.google.com/apigee/docs/api-platform/analytics/analytics-
-     * reference#filters
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilter()
-    {
-    }
-    /**
-     * Required. List of metrics and their aggregations.
-     *
-     * @param GoogleCloudApigeeV1MetricAggregation[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1MetricAggregation[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * Page size represents the number of rows.
-     *
-     * @param int $pageSize
-     */
-    public function setPageSize($pageSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPageSize()
-    {
-    }
-    /**
-     * Identifies a sequence of rows.
-     *
-     * @param string $pageToken
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
-    {
-    }
-    /**
-     * Time range for the stats.
-     *
-     * @param GoogleTypeInterval $timeRange
-     */
-    public function setTimeRange(GoogleTypeInterval $timeRange)
-    {
-    }
-    /**
-     * @return GoogleTypeInterval
-     */
-    public function getTimeRange()
+    class Google_Service_Apigee_GoogleCloudApigeeV1QueryTabularStatsRequest extends \Google\Service\Apigee\GoogleCloudApigeeV1QueryTabularStatsRequest
     {
     }
 }

@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta3UndeployProcessorVersionResponse extends \Google\Model
-{
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta3UndeployProcessorVersionResponse extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta3UndeployProcessorVersionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta3UndeployProcessorVersionResponse extends \Google\Service\Document\GoogleCloudDocumentaiV1beta3UndeployProcessorVersionResponse
+    {
+    }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class DataProvider extends \Google\Model
-{
-    /**
-     * Optional. Name of the data provider.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Email or URL of the data provider. Max Length: 1000 bytes.
-     *
-     * @var string
-     */
-    public $primaryContact;
-    /**
-     * Optional. Name of the data provider.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\AnalyticsHub {
+    class DataProvider extends \Google\Model
     {
+        /**
+         * Optional. Name of the data provider.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Email or URL of the data provider. Max Length: 1000 bytes.
+         *
+         * @var string
+         */
+        public $primaryContact;
+        /**
+         * Optional. Name of the data provider.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Email or URL of the data provider. Max Length: 1000 bytes.
+         *
+         * @param string $primaryContact
+         */
+        public function setPrimaryContact($primaryContact)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimaryContact()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsHub\DataProvider registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Email or URL of the data provider. Max Length: 1000 bytes.
-     *
-     * @param string $primaryContact
-     */
-    public function setPrimaryContact($primaryContact)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrimaryContact()
+    class Google_Service_AnalyticsHub_DataProvider extends \Google\Service\AnalyticsHub\DataProvider
     {
     }
 }

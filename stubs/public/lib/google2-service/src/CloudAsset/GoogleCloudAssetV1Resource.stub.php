@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class GoogleCloudAssetV1Resource extends \Google\Model
-{
-    protected $analysisStateType = IamPolicyAnalysisState::class;
-    protected $analysisStateDataType = '';
-    /**
-     * The [full resource name](https://cloud.google.com/asset-
-     * inventory/docs/resource-name-format)
-     *
-     * @var string
-     */
-    public $fullResourceName;
-    /**
-     * The analysis state of this resource.
-     *
-     * @param IamPolicyAnalysisState $analysisState
-     */
-    public function setAnalysisState(IamPolicyAnalysisState $analysisState)
+namespace Google\Service\CloudAsset {
+    class GoogleCloudAssetV1Resource extends \Google\Model
     {
+        protected $analysisStateType = IamPolicyAnalysisState::class;
+        protected $analysisStateDataType = '';
+        /**
+         * The [full resource name](https://cloud.google.com/asset-
+         * inventory/docs/resource-name-format)
+         *
+         * @var string
+         */
+        public $fullResourceName;
+        /**
+         * The analysis state of this resource.
+         *
+         * @param IamPolicyAnalysisState $analysisState
+         */
+        public function setAnalysisState(IamPolicyAnalysisState $analysisState)
+        {
+        }
+        /**
+         * @return IamPolicyAnalysisState
+         */
+        public function getAnalysisState()
+        {
+        }
+        /**
+         * The [full resource name](https://cloud.google.com/asset-
+         * inventory/docs/resource-name-format)
+         *
+         * @param string $fullResourceName
+         */
+        public function setFullResourceName($fullResourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IamPolicyAnalysisState
+     * Runtime class alias of \Google\Service\CloudAsset\GoogleCloudAssetV1Resource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalysisState()
-    {
-    }
-    /**
-     * The [full resource name](https://cloud.google.com/asset-
-     * inventory/docs/resource-name-format)
-     *
-     * @param string $fullResourceName
-     */
-    public function setFullResourceName($fullResourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFullResourceName()
+    class Google_Service_CloudAsset_GoogleCloudAssetV1Resource extends \Google\Service\CloudAsset\GoogleCloudAssetV1Resource
     {
     }
 }

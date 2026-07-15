@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppDistribution;
-
-class GoogleFirebaseAppdistroV1BatchRemoveTestersResponse extends \Google\Collection
-{
-    protected $collection_key = 'emails';
-    /**
-     * List of deleted tester emails
-     *
-     * @var string[]
-     */
-    public $emails;
-    /**
-     * List of deleted tester emails
-     *
-     * @param string[] $emails
-     */
-    public function setEmails($emails)
+namespace Google\Service\FirebaseAppDistribution {
+    class GoogleFirebaseAppdistroV1BatchRemoveTestersResponse extends \Google\Collection
     {
+        protected $collection_key = 'emails';
+        /**
+         * List of deleted tester emails
+         *
+         * @var string[]
+         */
+        public $emails;
+        /**
+         * List of deleted tester emails
+         *
+         * @param string[] $emails
+         */
+        public function setEmails($emails)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEmails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1BatchRemoveTestersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmails()
+    class Google_Service_FirebaseAppDistribution_GoogleFirebaseAppdistroV1BatchRemoveTestersResponse extends \Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1BatchRemoveTestersResponse
     {
     }
 }

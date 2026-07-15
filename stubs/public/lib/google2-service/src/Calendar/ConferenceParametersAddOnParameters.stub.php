@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class ConferenceParametersAddOnParameters extends \Google\Model
-{
-    /**
-     * @var string[]
-     */
-    public $parameters;
-    /**
-     * @param string[] $parameters
-     */
-    public function setParameters($parameters)
+namespace Google\Service\Calendar {
+    class ConferenceParametersAddOnParameters extends \Google\Model
     {
+        /**
+         * @var string[]
+         */
+        public $parameters;
+        /**
+         * @param string[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Calendar\ConferenceParametersAddOnParameters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParameters()
+    class Google_Service_Calendar_ConferenceParametersAddOnParameters extends \Google\Service\Calendar\ConferenceParametersAddOnParameters
     {
     }
 }

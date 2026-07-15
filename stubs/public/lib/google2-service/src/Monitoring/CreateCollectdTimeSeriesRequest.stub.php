@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class CreateCollectdTimeSeriesRequest extends \Google\Collection
-{
-    protected $collection_key = 'collectdPayloads';
-    protected $collectdPayloadsType = CollectdPayload::class;
-    protected $collectdPayloadsDataType = 'array';
-    /**
-     * The version of collectd that collected the data. Example: "5.3.0-192.el6".
-     *
-     * @var string
-     */
-    public $collectdVersion;
-    protected $resourceType = MonitoredResource::class;
-    protected $resourceDataType = '';
-    /**
-     * The collectd payloads representing the time series data. You must not
-     * include more than a single point for each time series, so no two payloads
-     * can have the same values for all of the fields plugin, plugin_instance,
-     * type, and type_instance.
-     *
-     * @param CollectdPayload[] $collectdPayloads
-     */
-    public function setCollectdPayloads($collectdPayloads)
+namespace Google\Service\Monitoring {
+    class CreateCollectdTimeSeriesRequest extends \Google\Collection
     {
+        protected $collection_key = 'collectdPayloads';
+        protected $collectdPayloadsType = CollectdPayload::class;
+        protected $collectdPayloadsDataType = 'array';
+        /**
+         * The version of collectd that collected the data. Example: "5.3.0-192.el6".
+         *
+         * @var string
+         */
+        public $collectdVersion;
+        protected $resourceType = MonitoredResource::class;
+        protected $resourceDataType = '';
+        /**
+         * The collectd payloads representing the time series data. You must not
+         * include more than a single point for each time series, so no two payloads
+         * can have the same values for all of the fields plugin, plugin_instance,
+         * type, and type_instance.
+         *
+         * @param CollectdPayload[] $collectdPayloads
+         */
+        public function setCollectdPayloads($collectdPayloads)
+        {
+        }
+        /**
+         * @return CollectdPayload[]
+         */
+        public function getCollectdPayloads()
+        {
+        }
+        /**
+         * The version of collectd that collected the data. Example: "5.3.0-192.el6".
+         *
+         * @param string $collectdVersion
+         */
+        public function setCollectdVersion($collectdVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCollectdVersion()
+        {
+        }
+        /**
+         * The monitored resource associated with the time series.
+         *
+         * @param MonitoredResource $resource
+         */
+        public function setResource(MonitoredResource $resource)
+        {
+        }
+        /**
+         * @return MonitoredResource
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CollectdPayload[]
+     * Runtime class alias of \Google\Service\Monitoring\CreateCollectdTimeSeriesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCollectdPayloads()
-    {
-    }
-    /**
-     * The version of collectd that collected the data. Example: "5.3.0-192.el6".
-     *
-     * @param string $collectdVersion
-     */
-    public function setCollectdVersion($collectdVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCollectdVersion()
-    {
-    }
-    /**
-     * The monitored resource associated with the time series.
-     *
-     * @param MonitoredResource $resource
-     */
-    public function setResource(MonitoredResource $resource)
-    {
-    }
-    /**
-     * @return MonitoredResource
-     */
-    public function getResource()
+    class Google_Service_Monitoring_CreateCollectdTimeSeriesRequest extends \Google\Service\Monitoring\CreateCollectdTimeSeriesRequest
     {
     }
 }

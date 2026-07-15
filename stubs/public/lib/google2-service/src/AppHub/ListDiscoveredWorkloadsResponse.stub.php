@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub;
-
-class ListDiscoveredWorkloadsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $discoveredWorkloadsType = DiscoveredWorkload::class;
-    protected $discoveredWorkloadsDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * List of Discovered Workloads.
-     *
-     * @param DiscoveredWorkload[] $discoveredWorkloads
-     */
-    public function setDiscoveredWorkloads($discoveredWorkloads)
+namespace Google\Service\AppHub {
+    class ListDiscoveredWorkloadsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $discoveredWorkloadsType = DiscoveredWorkload::class;
+        protected $discoveredWorkloadsDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * List of Discovered Workloads.
+         *
+         * @param DiscoveredWorkload[] $discoveredWorkloads
+         */
+        public function setDiscoveredWorkloads($discoveredWorkloads)
+        {
+        }
+        /**
+         * @return DiscoveredWorkload[]
+         */
+        public function getDiscoveredWorkloads()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DiscoveredWorkload[]
+     * Runtime class alias of \Google\Service\AppHub\ListDiscoveredWorkloadsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiscoveredWorkloads()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_AppHub_ListDiscoveredWorkloadsResponse extends \Google\Service\AppHub\ListDiscoveredWorkloadsResponse
     {
     }
 }

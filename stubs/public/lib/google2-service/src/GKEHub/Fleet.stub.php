@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class Fleet extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $createTime;
-    protected $defaultClusterConfigType = DefaultClusterConfig::class;
-    protected $defaultClusterConfigDataType = '';
-    /**
-     * @var string
-     */
-    public $deleteTime;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $stateType = FleetLifecycleState::class;
-    protected $stateDataType = '';
-    /**
-     * @var string
-     */
-    public $uid;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\GKEHub {
+    class Fleet extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $createTime;
+        protected $defaultClusterConfigType = DefaultClusterConfig::class;
+        protected $defaultClusterConfigDataType = '';
+        /**
+         * @var string
+         */
+        public $deleteTime;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $stateType = FleetLifecycleState::class;
+        protected $stateDataType = '';
+        /**
+         * @var string
+         */
+        public $uid;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param DefaultClusterConfig
+         */
+        public function setDefaultClusterConfig(DefaultClusterConfig $defaultClusterConfig)
+        {
+        }
+        /**
+         * @return DefaultClusterConfig
+         */
+        public function getDefaultClusterConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDeleteTime($deleteTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeleteTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param FleetLifecycleState
+         */
+        public function setState(FleetLifecycleState $state)
+        {
+        }
+        /**
+         * @return FleetLifecycleState
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\Fleet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param DefaultClusterConfig
-     */
-    public function setDefaultClusterConfig(DefaultClusterConfig $defaultClusterConfig)
-    {
-    }
-    /**
-     * @return DefaultClusterConfig
-     */
-    public function getDefaultClusterConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDeleteTime($deleteTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeleteTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param FleetLifecycleState
-     */
-    public function setState(FleetLifecycleState $state)
-    {
-    }
-    /**
-     * @return FleetLifecycleState
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_GKEHub_Fleet extends \Google\Service\GKEHub\Fleet
     {
     }
 }

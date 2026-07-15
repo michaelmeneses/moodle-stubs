@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class MeasurementConfig extends \Google\Model
-{
-    /**
-     * Whether or not to report DV360 cost to CM360.
-     *
-     * @var bool
-     */
-    public $dv360ToCmCostReportingEnabled;
-    /**
-     * Whether or not to include DV360 data in CM360 data transfer reports.
-     *
-     * @var bool
-     */
-    public $dv360ToCmDataSharingEnabled;
-    /**
-     * Whether or not to report DV360 cost to CM360.
-     *
-     * @param bool $dv360ToCmCostReportingEnabled
-     */
-    public function setDv360ToCmCostReportingEnabled($dv360ToCmCostReportingEnabled)
+namespace Google\Service\DisplayVideo {
+    class MeasurementConfig extends \Google\Model
     {
+        /**
+         * Whether or not to report DV360 cost to CM360.
+         *
+         * @var bool
+         */
+        public $dv360ToCmCostReportingEnabled;
+        /**
+         * Whether or not to include DV360 data in CM360 data transfer reports.
+         *
+         * @var bool
+         */
+        public $dv360ToCmDataSharingEnabled;
+        /**
+         * Whether or not to report DV360 cost to CM360.
+         *
+         * @param bool $dv360ToCmCostReportingEnabled
+         */
+        public function setDv360ToCmCostReportingEnabled($dv360ToCmCostReportingEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDv360ToCmCostReportingEnabled()
+        {
+        }
+        /**
+         * Whether or not to include DV360 data in CM360 data transfer reports.
+         *
+         * @param bool $dv360ToCmDataSharingEnabled
+         */
+        public function setDv360ToCmDataSharingEnabled($dv360ToCmDataSharingEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDv360ToCmDataSharingEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DisplayVideo\MeasurementConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDv360ToCmCostReportingEnabled()
-    {
-    }
-    /**
-     * Whether or not to include DV360 data in CM360 data transfer reports.
-     *
-     * @param bool $dv360ToCmDataSharingEnabled
-     */
-    public function setDv360ToCmDataSharingEnabled($dv360ToCmDataSharingEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDv360ToCmDataSharingEnabled()
+    class Google_Service_DisplayVideo_MeasurementConfig extends \Google\Service\DisplayVideo\MeasurementConfig
     {
     }
 }

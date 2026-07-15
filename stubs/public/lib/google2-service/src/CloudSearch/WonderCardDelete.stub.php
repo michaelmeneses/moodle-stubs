@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class WonderCardDelete extends \Google\Model
-{
-    protected $messageMappingsType = WonderMessageMapping::class;
-    protected $messageMappingsDataType = 'map';
-    /**
-     * @var string
-     */
-    public $msgId;
-    /**
-     * @param WonderMessageMapping[]
-     */
-    public function setMessageMappings($messageMappings)
+namespace Google\Service\CloudSearch {
+    class WonderCardDelete extends \Google\Model
     {
+        protected $messageMappingsType = WonderMessageMapping::class;
+        protected $messageMappingsDataType = 'map';
+        /**
+         * @var string
+         */
+        public $msgId;
+        /**
+         * @param WonderMessageMapping[]
+         */
+        public function setMessageMappings($messageMappings)
+        {
+        }
+        /**
+         * @return WonderMessageMapping[]
+         */
+        public function getMessageMappings()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMsgId($msgId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMsgId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return WonderMessageMapping[]
+     * Runtime class alias of \Google\Service\CloudSearch\WonderCardDelete registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessageMappings()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMsgId($msgId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMsgId()
+    class Google_Service_CloudSearch_WonderCardDelete extends \Google\Service\CloudSearch\WonderCardDelete
     {
     }
 }

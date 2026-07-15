@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class UpdateDnsRecordSetRequest extends \Google\Model
-{
-    /**
-     * Required. The network that the consumer is using to connect with services.
-     * Must be in the form of projects/{project}/global/networks/{network}
-     * {project} is the project number, as in '12345' {network} is the network
-     * name.
-     *
-     * @var string
-     */
-    public $consumerNetwork;
-    protected $existingDnsRecordSetType = DnsRecordSet::class;
-    protected $existingDnsRecordSetDataType = '';
-    protected $newDnsRecordSetType = DnsRecordSet::class;
-    protected $newDnsRecordSetDataType = '';
-    /**
-     * Required. The name of the private DNS zone in the shared producer host
-     * project from which the record set will be removed.
-     *
-     * @var string
-     */
-    public $zone;
-    /**
-     * Required. The network that the consumer is using to connect with services.
-     * Must be in the form of projects/{project}/global/networks/{network}
-     * {project} is the project number, as in '12345' {network} is the network
-     * name.
-     *
-     * @param string $consumerNetwork
-     */
-    public function setConsumerNetwork($consumerNetwork)
+namespace Google\Service\ServiceNetworking {
+    class UpdateDnsRecordSetRequest extends \Google\Model
     {
+        /**
+         * Required. The network that the consumer is using to connect with services.
+         * Must be in the form of projects/{project}/global/networks/{network}
+         * {project} is the project number, as in '12345' {network} is the network
+         * name.
+         *
+         * @var string
+         */
+        public $consumerNetwork;
+        protected $existingDnsRecordSetType = DnsRecordSet::class;
+        protected $existingDnsRecordSetDataType = '';
+        protected $newDnsRecordSetType = DnsRecordSet::class;
+        protected $newDnsRecordSetDataType = '';
+        /**
+         * Required. The name of the private DNS zone in the shared producer host
+         * project from which the record set will be removed.
+         *
+         * @var string
+         */
+        public $zone;
+        /**
+         * Required. The network that the consumer is using to connect with services.
+         * Must be in the form of projects/{project}/global/networks/{network}
+         * {project} is the project number, as in '12345' {network} is the network
+         * name.
+         *
+         * @param string $consumerNetwork
+         */
+        public function setConsumerNetwork($consumerNetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsumerNetwork()
+        {
+        }
+        /**
+         * Required. The existing DNS record set to update.
+         *
+         * @param DnsRecordSet $existingDnsRecordSet
+         */
+        public function setExistingDnsRecordSet(DnsRecordSet $existingDnsRecordSet)
+        {
+        }
+        /**
+         * @return DnsRecordSet
+         */
+        public function getExistingDnsRecordSet()
+        {
+        }
+        /**
+         * Required. The new values that the DNS record set should be updated to hold.
+         *
+         * @param DnsRecordSet $newDnsRecordSet
+         */
+        public function setNewDnsRecordSet(DnsRecordSet $newDnsRecordSet)
+        {
+        }
+        /**
+         * @return DnsRecordSet
+         */
+        public function getNewDnsRecordSet()
+        {
+        }
+        /**
+         * Required. The name of the private DNS zone in the shared producer host
+         * project from which the record set will be removed.
+         *
+         * @param string $zone
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceNetworking\UpdateDnsRecordSetRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsumerNetwork()
-    {
-    }
-    /**
-     * Required. The existing DNS record set to update.
-     *
-     * @param DnsRecordSet $existingDnsRecordSet
-     */
-    public function setExistingDnsRecordSet(DnsRecordSet $existingDnsRecordSet)
-    {
-    }
-    /**
-     * @return DnsRecordSet
-     */
-    public function getExistingDnsRecordSet()
-    {
-    }
-    /**
-     * Required. The new values that the DNS record set should be updated to hold.
-     *
-     * @param DnsRecordSet $newDnsRecordSet
-     */
-    public function setNewDnsRecordSet(DnsRecordSet $newDnsRecordSet)
-    {
-    }
-    /**
-     * @return DnsRecordSet
-     */
-    public function getNewDnsRecordSet()
-    {
-    }
-    /**
-     * Required. The name of the private DNS zone in the shared producer host
-     * project from which the record set will be removed.
-     *
-     * @param string $zone
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_ServiceNetworking_UpdateDnsRecordSetRequest extends \Google\Service\ServiceNetworking\UpdateDnsRecordSetRequest
     {
     }
 }

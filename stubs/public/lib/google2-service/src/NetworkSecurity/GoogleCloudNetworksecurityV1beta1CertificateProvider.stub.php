@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class GoogleCloudNetworksecurityV1beta1CertificateProvider extends \Google\Model
-{
-    protected $certificateProviderInstanceType = CertificateProviderInstance::class;
-    protected $certificateProviderInstanceDataType = '';
-    protected $grpcEndpointType = GoogleCloudNetworksecurityV1beta1GrpcEndpoint::class;
-    protected $grpcEndpointDataType = '';
-    /**
-     * @param CertificateProviderInstance
-     */
-    public function setCertificateProviderInstance(CertificateProviderInstance $certificateProviderInstance)
+namespace Google\Service\NetworkSecurity {
+    class GoogleCloudNetworksecurityV1beta1CertificateProvider extends \Google\Model
     {
+        protected $certificateProviderInstanceType = CertificateProviderInstance::class;
+        protected $certificateProviderInstanceDataType = '';
+        protected $grpcEndpointType = GoogleCloudNetworksecurityV1beta1GrpcEndpoint::class;
+        protected $grpcEndpointDataType = '';
+        /**
+         * @param CertificateProviderInstance
+         */
+        public function setCertificateProviderInstance(CertificateProviderInstance $certificateProviderInstance)
+        {
+        }
+        /**
+         * @return CertificateProviderInstance
+         */
+        public function getCertificateProviderInstance()
+        {
+        }
+        /**
+         * @param GoogleCloudNetworksecurityV1beta1GrpcEndpoint
+         */
+        public function setGrpcEndpoint(GoogleCloudNetworksecurityV1beta1GrpcEndpoint $grpcEndpoint)
+        {
+        }
+        /**
+         * @return GoogleCloudNetworksecurityV1beta1GrpcEndpoint
+         */
+        public function getGrpcEndpoint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CertificateProviderInstance
+     * Runtime class alias of \Google\Service\NetworkSecurity\GoogleCloudNetworksecurityV1beta1CertificateProvider registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificateProviderInstance()
-    {
-    }
-    /**
-     * @param GoogleCloudNetworksecurityV1beta1GrpcEndpoint
-     */
-    public function setGrpcEndpoint(GoogleCloudNetworksecurityV1beta1GrpcEndpoint $grpcEndpoint)
-    {
-    }
-    /**
-     * @return GoogleCloudNetworksecurityV1beta1GrpcEndpoint
-     */
-    public function getGrpcEndpoint()
+    class Google_Service_NetworkSecurity_GoogleCloudNetworksecurityV1beta1CertificateProvider extends \Google\Service\NetworkSecurity\GoogleCloudNetworksecurityV1beta1CertificateProvider
     {
     }
 }

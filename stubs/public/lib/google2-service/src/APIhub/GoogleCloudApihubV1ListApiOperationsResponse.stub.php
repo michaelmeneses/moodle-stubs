@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ListApiOperationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'apiOperations';
-    protected $apiOperationsType = GoogleCloudApihubV1ApiOperation::class;
-    protected $apiOperationsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The operations corresponding to an API version.
-     *
-     * @param GoogleCloudApihubV1ApiOperation[] $apiOperations
-     */
-    public function setApiOperations($apiOperations)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ListApiOperationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'apiOperations';
+        protected $apiOperationsType = GoogleCloudApihubV1ApiOperation::class;
+        protected $apiOperationsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The operations corresponding to an API version.
+         *
+         * @param GoogleCloudApihubV1ApiOperation[] $apiOperations
+         */
+        public function setApiOperations($apiOperations)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1ApiOperation[]
+         */
+        public function getApiOperations()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1ApiOperation[]
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ListApiOperationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiOperations()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_APIhub_GoogleCloudApihubV1ListApiOperationsResponse extends \Google\Service\APIhub\GoogleCloudApihubV1ListApiOperationsResponse
     {
     }
 }

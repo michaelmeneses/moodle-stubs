@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class OperationError extends \Google\Model
-{
-    /**
-     * UNSPECIFIED means product type is not known or available.
-     */
-    public const ERROR_TYPE_OPERATION_ERROR_TYPE_UNSPECIFIED = 'OPERATION_ERROR_TYPE_UNSPECIFIED';
-    /**
-     * key destroyed, expired, not found, unreachable or permission denied.
-     */
-    public const ERROR_TYPE_KMS_KEY_ERROR = 'KMS_KEY_ERROR';
-    /**
-     * Database is not accessible
-     */
-    public const ERROR_TYPE_DATABASE_ERROR = 'DATABASE_ERROR';
-    /**
-     * The zone or region does not have sufficient resources to handle the request
-     * at the moment
-     */
-    public const ERROR_TYPE_STOCKOUT_ERROR = 'STOCKOUT_ERROR';
-    /**
-     * User initiated cancellation
-     */
-    public const ERROR_TYPE_CANCELLATION_ERROR = 'CANCELLATION_ERROR';
-    /**
-     * SQL server specific error
-     */
-    public const ERROR_TYPE_SQLSERVER_ERROR = 'SQLSERVER_ERROR';
-    /**
-     * Any other internal error.
-     */
-    public const ERROR_TYPE_INTERNAL_ERROR = 'INTERNAL_ERROR';
-    /**
-     * Identifies the specific error that occurred. REQUIRED
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * @var string
-     */
-    public $errorType;
-    /**
-     * Additional information about the error encountered. REQUIRED
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Identifies the specific error that occurred. REQUIRED
-     *
-     * @param string $code
-     */
-    public function setCode($code)
+namespace Google\Service\CloudRedis {
+    class OperationError extends \Google\Model
     {
+        /**
+         * UNSPECIFIED means product type is not known or available.
+         */
+        public const ERROR_TYPE_OPERATION_ERROR_TYPE_UNSPECIFIED = 'OPERATION_ERROR_TYPE_UNSPECIFIED';
+        /**
+         * key destroyed, expired, not found, unreachable or permission denied.
+         */
+        public const ERROR_TYPE_KMS_KEY_ERROR = 'KMS_KEY_ERROR';
+        /**
+         * Database is not accessible
+         */
+        public const ERROR_TYPE_DATABASE_ERROR = 'DATABASE_ERROR';
+        /**
+         * The zone or region does not have sufficient resources to handle the request
+         * at the moment
+         */
+        public const ERROR_TYPE_STOCKOUT_ERROR = 'STOCKOUT_ERROR';
+        /**
+         * User initiated cancellation
+         */
+        public const ERROR_TYPE_CANCELLATION_ERROR = 'CANCELLATION_ERROR';
+        /**
+         * SQL server specific error
+         */
+        public const ERROR_TYPE_SQLSERVER_ERROR = 'SQLSERVER_ERROR';
+        /**
+         * Any other internal error.
+         */
+        public const ERROR_TYPE_INTERNAL_ERROR = 'INTERNAL_ERROR';
+        /**
+         * Identifies the specific error that occurred. REQUIRED
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * @var string
+         */
+        public $errorType;
+        /**
+         * Additional information about the error encountered. REQUIRED
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Identifies the specific error that occurred. REQUIRED
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * @param self::ERROR_TYPE_* $errorType
+         */
+        public function setErrorType($errorType)
+        {
+        }
+        /**
+         * @return self::ERROR_TYPE_*
+         */
+        public function getErrorType()
+        {
+        }
+        /**
+         * Additional information about the error encountered. REQUIRED
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRedis\OperationError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * @param self::ERROR_TYPE_* $errorType
-     */
-    public function setErrorType($errorType)
-    {
-    }
-    /**
-     * @return self::ERROR_TYPE_*
-     */
-    public function getErrorType()
-    {
-    }
-    /**
-     * Additional information about the error encountered. REQUIRED
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
+    class Google_Service_CloudRedis_OperationError extends \Google\Service\CloudRedis\OperationError
     {
     }
 }

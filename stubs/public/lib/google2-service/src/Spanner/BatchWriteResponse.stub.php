@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class BatchWriteResponse extends \Google\Collection
-{
-    protected $collection_key = 'indexes';
-    /**
-     * The commit timestamp of the transaction that applied this batch. Present if
-     * `status` is `OK`, absent otherwise.
-     *
-     * @var string
-     */
-    public $commitTimestamp;
-    /**
-     * The mutation groups applied in this batch. The values index into the
-     * `mutation_groups` field in the corresponding `BatchWriteRequest`.
-     *
-     * @var int[]
-     */
-    public $indexes;
-    protected $statusType = Status::class;
-    protected $statusDataType = '';
-    /**
-     * The commit timestamp of the transaction that applied this batch. Present if
-     * `status` is `OK`, absent otherwise.
-     *
-     * @param string $commitTimestamp
-     */
-    public function setCommitTimestamp($commitTimestamp)
+namespace Google\Service\Spanner {
+    class BatchWriteResponse extends \Google\Collection
     {
+        protected $collection_key = 'indexes';
+        /**
+         * The commit timestamp of the transaction that applied this batch. Present if
+         * `status` is `OK`, absent otherwise.
+         *
+         * @var string
+         */
+        public $commitTimestamp;
+        /**
+         * The mutation groups applied in this batch. The values index into the
+         * `mutation_groups` field in the corresponding `BatchWriteRequest`.
+         *
+         * @var int[]
+         */
+        public $indexes;
+        protected $statusType = Status::class;
+        protected $statusDataType = '';
+        /**
+         * The commit timestamp of the transaction that applied this batch. Present if
+         * `status` is `OK`, absent otherwise.
+         *
+         * @param string $commitTimestamp
+         */
+        public function setCommitTimestamp($commitTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommitTimestamp()
+        {
+        }
+        /**
+         * The mutation groups applied in this batch. The values index into the
+         * `mutation_groups` field in the corresponding `BatchWriteRequest`.
+         *
+         * @param int[] $indexes
+         */
+        public function setIndexes($indexes)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getIndexes()
+        {
+        }
+        /**
+         * An `OK` status indicates success. Any other status indicates a failure.
+         *
+         * @param Status $status
+         */
+        public function setStatus(Status $status)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\BatchWriteResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommitTimestamp()
-    {
-    }
-    /**
-     * The mutation groups applied in this batch. The values index into the
-     * `mutation_groups` field in the corresponding `BatchWriteRequest`.
-     *
-     * @param int[] $indexes
-     */
-    public function setIndexes($indexes)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getIndexes()
-    {
-    }
-    /**
-     * An `OK` status indicates success. Any other status indicates a failure.
-     *
-     * @param Status $status
-     */
-    public function setStatus(Status $status)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getStatus()
+    class Google_Service_Spanner_BatchWriteResponse extends \Google\Service\Spanner\BatchWriteResponse
     {
     }
 }

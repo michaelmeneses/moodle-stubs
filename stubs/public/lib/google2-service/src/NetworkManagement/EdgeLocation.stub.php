@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class EdgeLocation extends \Google\Model
-{
-    /**
-     * Name of the metropolitan area.
-     *
-     * @var string
-     */
-    public $metropolitanArea;
-    /**
-     * Name of the metropolitan area.
-     *
-     * @param string $metropolitanArea
-     */
-    public function setMetropolitanArea($metropolitanArea)
+namespace Google\Service\NetworkManagement {
+    class EdgeLocation extends \Google\Model
     {
+        /**
+         * Name of the metropolitan area.
+         *
+         * @var string
+         */
+        public $metropolitanArea;
+        /**
+         * Name of the metropolitan area.
+         *
+         * @param string $metropolitanArea
+         */
+        public function setMetropolitanArea($metropolitanArea)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetropolitanArea()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\EdgeLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetropolitanArea()
+    class Google_Service_NetworkManagement_EdgeLocation extends \Google\Service\NetworkManagement\EdgeLocation
     {
     }
 }

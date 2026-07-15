@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CCAIPlatform;
-
-class GenerateShiftsRequest extends \Google\Collection
-{
-    protected $collection_key = 'shiftTemplates';
-    protected $employeeInfoType = EmployeeInfo::class;
-    protected $employeeInfoDataType = 'array';
-    protected $planningHorizonType = PlanningHorizon::class;
-    protected $planningHorizonDataType = '';
-    protected $shiftTemplatesType = ShiftTemplate::class;
-    protected $shiftTemplatesDataType = 'array';
-    protected $solverConfigType = SolverConfig::class;
-    protected $solverConfigDataType = '';
-    protected $workforceDemandsType = WorkforceDemandList::class;
-    protected $workforceDemandsDataType = '';
-    /**
-     * Optional. Employee information that should be considered when generating
-     * shifts.
-     *
-     * @param EmployeeInfo[] $employeeInfo
-     */
-    public function setEmployeeInfo($employeeInfo)
+namespace Google\Service\CCAIPlatform {
+    class GenerateShiftsRequest extends \Google\Collection
     {
+        protected $collection_key = 'shiftTemplates';
+        protected $employeeInfoType = EmployeeInfo::class;
+        protected $employeeInfoDataType = 'array';
+        protected $planningHorizonType = PlanningHorizon::class;
+        protected $planningHorizonDataType = '';
+        protected $shiftTemplatesType = ShiftTemplate::class;
+        protected $shiftTemplatesDataType = 'array';
+        protected $solverConfigType = SolverConfig::class;
+        protected $solverConfigDataType = '';
+        protected $workforceDemandsType = WorkforceDemandList::class;
+        protected $workforceDemandsDataType = '';
+        /**
+         * Optional. Employee information that should be considered when generating
+         * shifts.
+         *
+         * @param EmployeeInfo[] $employeeInfo
+         */
+        public function setEmployeeInfo($employeeInfo)
+        {
+        }
+        /**
+         * @return EmployeeInfo[]
+         */
+        public function getEmployeeInfo()
+        {
+        }
+        /**
+         * Required. The solver will generate the maximum number of shifts per shift
+         * template.
+         *
+         * @param PlanningHorizon $planningHorizon
+         */
+        public function setPlanningHorizon(PlanningHorizon $planningHorizon)
+        {
+        }
+        /**
+         * @return PlanningHorizon
+         */
+        public function getPlanningHorizon()
+        {
+        }
+        /**
+         * Required. Set of shift templates specifying rules for generating shifts. A
+         * shift template can be used for generating multiple shifts.
+         *
+         * @param ShiftTemplate[] $shiftTemplates
+         */
+        public function setShiftTemplates($shiftTemplates)
+        {
+        }
+        /**
+         * @return ShiftTemplate[]
+         */
+        public function getShiftTemplates()
+        {
+        }
+        /**
+         * Optional. Parameters for the solver.
+         *
+         * @param SolverConfig $solverConfig
+         */
+        public function setSolverConfig(SolverConfig $solverConfig)
+        {
+        }
+        /**
+         * @return SolverConfig
+         */
+        public function getSolverConfig()
+        {
+        }
+        /**
+         * Required. All the workforce demands that the generated shifts need to
+         * cover. The planning horizon is defined between the earliest start time and
+         * the latest end time across all the entries. This field cannot be empty.
+         *
+         * @param WorkforceDemandList $workforceDemands
+         */
+        public function setWorkforceDemands(WorkforceDemandList $workforceDemands)
+        {
+        }
+        /**
+         * @return WorkforceDemandList
+         */
+        public function getWorkforceDemands()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EmployeeInfo[]
+     * Runtime class alias of \Google\Service\CCAIPlatform\GenerateShiftsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmployeeInfo()
-    {
-    }
-    /**
-     * Required. The solver will generate the maximum number of shifts per shift
-     * template.
-     *
-     * @param PlanningHorizon $planningHorizon
-     */
-    public function setPlanningHorizon(PlanningHorizon $planningHorizon)
-    {
-    }
-    /**
-     * @return PlanningHorizon
-     */
-    public function getPlanningHorizon()
-    {
-    }
-    /**
-     * Required. Set of shift templates specifying rules for generating shifts. A
-     * shift template can be used for generating multiple shifts.
-     *
-     * @param ShiftTemplate[] $shiftTemplates
-     */
-    public function setShiftTemplates($shiftTemplates)
-    {
-    }
-    /**
-     * @return ShiftTemplate[]
-     */
-    public function getShiftTemplates()
-    {
-    }
-    /**
-     * Optional. Parameters for the solver.
-     *
-     * @param SolverConfig $solverConfig
-     */
-    public function setSolverConfig(SolverConfig $solverConfig)
-    {
-    }
-    /**
-     * @return SolverConfig
-     */
-    public function getSolverConfig()
-    {
-    }
-    /**
-     * Required. All the workforce demands that the generated shifts need to
-     * cover. The planning horizon is defined between the earliest start time and
-     * the latest end time across all the entries. This field cannot be empty.
-     *
-     * @param WorkforceDemandList $workforceDemands
-     */
-    public function setWorkforceDemands(WorkforceDemandList $workforceDemands)
-    {
-    }
-    /**
-     * @return WorkforceDemandList
-     */
-    public function getWorkforceDemands()
+    class Google_Service_CCAIPlatform_GenerateShiftsRequest extends \Google\Service\CCAIPlatform\GenerateShiftsRequest
     {
     }
 }

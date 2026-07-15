@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class ListAnnouncementsResponse extends \Google\Collection
-{
-    protected $collection_key = 'announcements';
-    protected $announcementsType = Announcement::class;
-    protected $announcementsDataType = 'array';
-    /**
-     * Token identifying the next page of results to return. If empty, no further
-     * results are available.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Announcement items that match the request.
-     *
-     * @param Announcement[] $announcements
-     */
-    public function setAnnouncements($announcements)
+namespace Google\Service\Classroom {
+    class ListAnnouncementsResponse extends \Google\Collection
     {
+        protected $collection_key = 'announcements';
+        protected $announcementsType = Announcement::class;
+        protected $announcementsDataType = 'array';
+        /**
+         * Token identifying the next page of results to return. If empty, no further
+         * results are available.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Announcement items that match the request.
+         *
+         * @param Announcement[] $announcements
+         */
+        public function setAnnouncements($announcements)
+        {
+        }
+        /**
+         * @return Announcement[]
+         */
+        public function getAnnouncements()
+        {
+        }
+        /**
+         * Token identifying the next page of results to return. If empty, no further
+         * results are available.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Announcement[]
+     * Runtime class alias of \Google\Service\Classroom\ListAnnouncementsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnouncements()
-    {
-    }
-    /**
-     * Token identifying the next page of results to return. If empty, no further
-     * results are available.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Classroom_ListAnnouncementsResponse extends \Google\Service\Classroom\ListAnnouncementsResponse
     {
     }
 }

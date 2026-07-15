@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class FutureResourcesSpecLocalSsdPartition extends \Google\Model
-{
-    public const DISK_INTERFACE_NVME = 'NVME';
-    public const DISK_INTERFACE_SCSI = 'SCSI';
-    /**
-     * Disk interface. Defaults to SCSI.
-     *
-     * @var string
-     */
-    public $diskInterface;
-    /**
-     * The size of the disk in GB.
-     *
-     * @var string
-     */
-    public $diskSizeGb;
-    /**
-     * Disk interface. Defaults to SCSI.
-     *
-     * Accepted values: NVME, SCSI
-     *
-     * @param self::DISK_INTERFACE_* $diskInterface
-     */
-    public function setDiskInterface($diskInterface)
+namespace Google\Service\Compute {
+    class FutureResourcesSpecLocalSsdPartition extends \Google\Model
     {
+        public const DISK_INTERFACE_NVME = 'NVME';
+        public const DISK_INTERFACE_SCSI = 'SCSI';
+        /**
+         * Disk interface. Defaults to SCSI.
+         *
+         * @var string
+         */
+        public $diskInterface;
+        /**
+         * The size of the disk in GB.
+         *
+         * @var string
+         */
+        public $diskSizeGb;
+        /**
+         * Disk interface. Defaults to SCSI.
+         *
+         * Accepted values: NVME, SCSI
+         *
+         * @param self::DISK_INTERFACE_* $diskInterface
+         */
+        public function setDiskInterface($diskInterface)
+        {
+        }
+        /**
+         * @return self::DISK_INTERFACE_*
+         */
+        public function getDiskInterface()
+        {
+        }
+        /**
+         * The size of the disk in GB.
+         *
+         * @param string $diskSizeGb
+         */
+        public function setDiskSizeGb($diskSizeGb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskSizeGb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DISK_INTERFACE_*
+     * Runtime class alias of \Google\Service\Compute\FutureResourcesSpecLocalSsdPartition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiskInterface()
-    {
-    }
-    /**
-     * The size of the disk in GB.
-     *
-     * @param string $diskSizeGb
-     */
-    public function setDiskSizeGb($diskSizeGb)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiskSizeGb()
+    class Google_Service_Compute_FutureResourcesSpecLocalSsdPartition extends \Google\Service\Compute\FutureResourcesSpecLocalSsdPartition
     {
     }
 }

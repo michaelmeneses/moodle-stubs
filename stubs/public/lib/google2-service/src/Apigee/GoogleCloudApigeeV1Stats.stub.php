@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1Stats extends \Google\Collection
-{
-    protected $collection_key = 'hosts';
-    protected $environmentsType = GoogleCloudApigeeV1StatsEnvironmentStats::class;
-    protected $environmentsDataType = 'array';
-    protected $hostsType = GoogleCloudApigeeV1StatsHostStats::class;
-    protected $hostsDataType = 'array';
-    protected $metaDataType = GoogleCloudApigeeV1Metadata::class;
-    protected $metaDataDataType = '';
-    /**
-     * List of query results on the environment level.
-     *
-     * @param GoogleCloudApigeeV1StatsEnvironmentStats[] $environments
-     */
-    public function setEnvironments($environments)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1Stats extends \Google\Collection
     {
+        protected $collection_key = 'hosts';
+        protected $environmentsType = GoogleCloudApigeeV1StatsEnvironmentStats::class;
+        protected $environmentsDataType = 'array';
+        protected $hostsType = GoogleCloudApigeeV1StatsHostStats::class;
+        protected $hostsDataType = 'array';
+        protected $metaDataType = GoogleCloudApigeeV1Metadata::class;
+        protected $metaDataDataType = '';
+        /**
+         * List of query results on the environment level.
+         *
+         * @param GoogleCloudApigeeV1StatsEnvironmentStats[] $environments
+         */
+        public function setEnvironments($environments)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1StatsEnvironmentStats[]
+         */
+        public function getEnvironments()
+        {
+        }
+        /**
+         * List of query results grouped by host.
+         *
+         * @param GoogleCloudApigeeV1StatsHostStats[] $hosts
+         */
+        public function setHosts($hosts)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1StatsHostStats[]
+         */
+        public function getHosts()
+        {
+        }
+        /**
+         * Metadata information.
+         *
+         * @param GoogleCloudApigeeV1Metadata $metaData
+         */
+        public function setMetaData(GoogleCloudApigeeV1Metadata $metaData)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Metadata
+         */
+        public function getMetaData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1StatsEnvironmentStats[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1Stats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnvironments()
-    {
-    }
-    /**
-     * List of query results grouped by host.
-     *
-     * @param GoogleCloudApigeeV1StatsHostStats[] $hosts
-     */
-    public function setHosts($hosts)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1StatsHostStats[]
-     */
-    public function getHosts()
-    {
-    }
-    /**
-     * Metadata information.
-     *
-     * @param GoogleCloudApigeeV1Metadata $metaData
-     */
-    public function setMetaData(GoogleCloudApigeeV1Metadata $metaData)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1Metadata
-     */
-    public function getMetaData()
+    class Google_Service_Apigee_GoogleCloudApigeeV1Stats extends \Google\Service\Apigee\GoogleCloudApigeeV1Stats
     {
     }
 }

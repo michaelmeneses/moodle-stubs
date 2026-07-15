@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class OneTimeExternalTransaction extends \Google\Model
-{
-    /**
-     * Input only. Provided during the call to Create. Retrieved from the client
-     * when the alternative billing flow is launched.
-     *
-     * @var string
-     */
-    public $externalTransactionToken;
-    /**
-     * Input only. Provided during the call to Create. Retrieved from the client
-     * when the alternative billing flow is launched.
-     *
-     * @param string $externalTransactionToken
-     */
-    public function setExternalTransactionToken($externalTransactionToken)
+namespace Google\Service\AndroidPublisher {
+    class OneTimeExternalTransaction extends \Google\Model
     {
+        /**
+         * Input only. Provided during the call to Create. Retrieved from the client
+         * when the alternative billing flow is launched.
+         *
+         * @var string
+         */
+        public $externalTransactionToken;
+        /**
+         * Input only. Provided during the call to Create. Retrieved from the client
+         * when the alternative billing flow is launched.
+         *
+         * @param string $externalTransactionToken
+         */
+        public function setExternalTransactionToken($externalTransactionToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternalTransactionToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\OneTimeExternalTransaction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExternalTransactionToken()
+    class Google_Service_AndroidPublisher_OneTimeExternalTransaction extends \Google\Service\AndroidPublisher\OneTimeExternalTransaction
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class BeginTransactionResponse extends \Google\Model
-{
-    /**
-     * The transaction that was started.
-     *
-     * @var string
-     */
-    public $transaction;
-    /**
-     * The transaction that was started.
-     *
-     * @param string $transaction
-     */
-    public function setTransaction($transaction)
+namespace Google\Service\Firestore {
+    class BeginTransactionResponse extends \Google\Model
     {
+        /**
+         * The transaction that was started.
+         *
+         * @var string
+         */
+        public $transaction;
+        /**
+         * The transaction that was started.
+         *
+         * @param string $transaction
+         */
+        public function setTransaction($transaction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransaction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firestore\BeginTransactionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTransaction()
+    class Google_Service_Firestore_BeginTransactionResponse extends \Google\Service\Firestore\BeginTransactionResponse
     {
     }
 }

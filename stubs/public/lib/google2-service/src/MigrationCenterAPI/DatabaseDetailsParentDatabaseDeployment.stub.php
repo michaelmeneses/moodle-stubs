@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class DatabaseDetailsParentDatabaseDeployment extends \Google\Model
-{
-    /**
-     * Optional. The parent database deployment generated ID.
-     *
-     * @var string
-     */
-    public $generatedId;
-    /**
-     * Optional. The parent database deployment optional manual unique ID set by
-     * the user.
-     *
-     * @var string
-     */
-    public $manualUniqueId;
-    /**
-     * Optional. The parent database deployment generated ID.
-     *
-     * @param string $generatedId
-     */
-    public function setGeneratedId($generatedId)
+namespace Google\Service\MigrationCenterAPI {
+    class DatabaseDetailsParentDatabaseDeployment extends \Google\Model
     {
+        /**
+         * Optional. The parent database deployment generated ID.
+         *
+         * @var string
+         */
+        public $generatedId;
+        /**
+         * Optional. The parent database deployment optional manual unique ID set by
+         * the user.
+         *
+         * @var string
+         */
+        public $manualUniqueId;
+        /**
+         * Optional. The parent database deployment generated ID.
+         *
+         * @param string $generatedId
+         */
+        public function setGeneratedId($generatedId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeneratedId()
+        {
+        }
+        /**
+         * Optional. The parent database deployment optional manual unique ID set by
+         * the user.
+         *
+         * @param string $manualUniqueId
+         */
+        public function setManualUniqueId($manualUniqueId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getManualUniqueId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\DatabaseDetailsParentDatabaseDeployment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGeneratedId()
-    {
-    }
-    /**
-     * Optional. The parent database deployment optional manual unique ID set by
-     * the user.
-     *
-     * @param string $manualUniqueId
-     */
-    public function setManualUniqueId($manualUniqueId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getManualUniqueId()
+    class Google_Service_MigrationCenterAPI_DatabaseDetailsParentDatabaseDeployment extends \Google\Service\MigrationCenterAPI\DatabaseDetailsParentDatabaseDeployment
     {
     }
 }

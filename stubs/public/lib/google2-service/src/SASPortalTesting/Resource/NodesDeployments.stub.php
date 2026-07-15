@@ -21,84 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SASPortalTesting\Resource;
-
-/**
- * The "deployments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $prod_tt_sasportalService = new Google\Service\SASPortalTesting(...);
- *   $deployments = $prod_tt_sasportalService->nodes_deployments;
- *  </code>
- */
-class NodesDeployments extends \Google\Service\Resource
-{
+namespace Google\Service\SASPortalTesting\Resource {
+    use Google\Service\SASPortalTesting\SasPortalDeployment;
+    use Google\Service\SASPortalTesting\SasPortalEmpty;
+    use Google\Service\SASPortalTesting\SasPortalListDeploymentsResponse;
+    use Google\Service\SASPortalTesting\SasPortalMoveDeploymentRequest;
+    use Google\Service\SASPortalTesting\SasPortalOperation;
     /**
-     * Deletes a deployment. (deployments.delete)
-     *
-     * @param string $name Required. The name of the deployment.
-     * @param array $optParams Optional parameters.
-     * @return SasPortalEmpty
-     * @throws \Google\Service\Exception
+     * The "deployments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $prod_tt_sasportalService = new Google\Service\SASPortalTesting(...);
+     *   $deployments = $prod_tt_sasportalService->nodes_deployments;
+     *  </code>
      */
-    public function delete($name, $optParams = [])
+    class NodesDeployments extends \Google\Service\Resource
     {
+        /**
+         * Deletes a deployment. (deployments.delete)
+         *
+         * @param string $name Required. The name of the deployment.
+         * @param array $optParams Optional parameters.
+         * @return SasPortalEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns a requested deployment. (deployments.get)
+         *
+         * @param string $name Required. The name of the deployment.
+         * @param array $optParams Optional parameters.
+         * @return SasPortalDeployment
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists deployments. (deployments.listNodesDeployments)
+         *
+         * @param string $parent Required. The parent resource name, for example,
+         * "nodes/1", customer/1/nodes/2.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter The filter expression. The filter should have the
+         * following format: "DIRECT_CHILDREN" or format: "direct_children". The filter
+         * is case insensitive. If empty, then no deployments are filtered.
+         * @opt_param int pageSize The maximum number of deployments to return in the
+         * response.
+         * @opt_param string pageToken A pagination token returned from a previous call
+         * to ListDeployments that indicates where this listing should continue from.
+         * @return SasPortalListDeploymentsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listNodesDeployments($parent, $optParams = [])
+        {
+        }
+        /**
+         * Moves a deployment under another node or customer. (deployments.move)
+         *
+         * @param string $name Required. The name of the deployment to move.
+         * @param SasPortalMoveDeploymentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SasPortalOperation
+         * @throws \Google\Service\Exception
+         */
+        public function move($name, SasPortalMoveDeploymentRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing deployment. (deployments.patch)
+         *
+         * @param string $name Output only. Resource name.
+         * @param SasPortalDeployment $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Fields to be updated.
+         * @return SasPortalDeployment
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, SasPortalDeployment $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns a requested deployment. (deployments.get)
-     *
-     * @param string $name Required. The name of the deployment.
-     * @param array $optParams Optional parameters.
-     * @return SasPortalDeployment
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\SASPortalTesting\Resource\NodesDeployments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists deployments. (deployments.listNodesDeployments)
-     *
-     * @param string $parent Required. The parent resource name, for example,
-     * "nodes/1", customer/1/nodes/2.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter The filter expression. The filter should have the
-     * following format: "DIRECT_CHILDREN" or format: "direct_children". The filter
-     * is case insensitive. If empty, then no deployments are filtered.
-     * @opt_param int pageSize The maximum number of deployments to return in the
-     * response.
-     * @opt_param string pageToken A pagination token returned from a previous call
-     * to ListDeployments that indicates where this listing should continue from.
-     * @return SasPortalListDeploymentsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listNodesDeployments($parent, $optParams = [])
-    {
-    }
-    /**
-     * Moves a deployment under another node or customer. (deployments.move)
-     *
-     * @param string $name Required. The name of the deployment to move.
-     * @param SasPortalMoveDeploymentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SasPortalOperation
-     * @throws \Google\Service\Exception
-     */
-    public function move($name, SasPortalMoveDeploymentRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing deployment. (deployments.patch)
-     *
-     * @param string $name Output only. Resource name.
-     * @param SasPortalDeployment $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Fields to be updated.
-     * @return SasPortalDeployment
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, SasPortalDeployment $postBody, $optParams = [])
+    class Google_Service_SASPortalTesting_Resource_NodesDeployments extends \Google\Service\SASPortalTesting\Resource\NodesDeployments
     {
     }
 }

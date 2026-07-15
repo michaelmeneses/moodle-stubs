@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager;
-
-class FetchBlobResponse extends \Google\Model
-{
-    /**
-     * The content of the blob, encoded as base64.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * The SHA-1 hash of the blob.
-     *
-     * @var string
-     */
-    public $sha;
-    /**
-     * The content of the blob, encoded as base64.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\SecureSourceManager {
+    class FetchBlobResponse extends \Google\Model
     {
+        /**
+         * The content of the blob, encoded as base64.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * The SHA-1 hash of the blob.
+         *
+         * @var string
+         */
+        public $sha;
+        /**
+         * The content of the blob, encoded as base64.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * The SHA-1 hash of the blob.
+         *
+         * @param string $sha
+         */
+        public function setSha($sha)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSha()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecureSourceManager\FetchBlobResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * The SHA-1 hash of the blob.
-     *
-     * @param string $sha
-     */
-    public function setSha($sha)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSha()
+    class Google_Service_SecureSourceManager_FetchBlobResponse extends \Google\Service\SecureSourceManager\FetchBlobResponse
     {
     }
 }

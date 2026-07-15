@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite\Resource;
-
-/**
- * The "topicStats" collection of methods.
- * Typical usage is:
- *  <code>
- *   $pubsubliteService = new Google\Service\PubsubLite(...);
- *   $topicStats = $pubsubliteService->topicStats;
- *  </code>
- */
-class TopicStats extends \Google\Service\Resource
-{
+namespace Google\Service\PubsubLite\Resource {
+    /**
+     * The "topicStats" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $pubsubliteService = new Google\Service\PubsubLite(...);
+     *   $topicStats = $pubsubliteService->topicStats;
+     *  </code>
+     */
+    class TopicStats extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PubsubLite\Resource\TopicStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PubsubLite_Resource_TopicStats extends \Google\Service\PubsubLite\Resource\TopicStats
+    {
+    }
 }

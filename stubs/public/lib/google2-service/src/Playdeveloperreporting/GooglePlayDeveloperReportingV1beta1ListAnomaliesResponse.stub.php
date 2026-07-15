@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting;
-
-class GooglePlayDeveloperReportingV1beta1ListAnomaliesResponse extends \Google\Collection
-{
-    protected $collection_key = 'anomalies';
-    protected $anomaliesType = GooglePlayDeveloperReportingV1beta1Anomaly::class;
-    protected $anomaliesDataType = 'array';
-    /**
-     * Continuation token to fetch the next page of data.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Anomalies that were found.
-     *
-     * @param GooglePlayDeveloperReportingV1beta1Anomaly[] $anomalies
-     */
-    public function setAnomalies($anomalies)
+namespace Google\Service\Playdeveloperreporting {
+    class GooglePlayDeveloperReportingV1beta1ListAnomaliesResponse extends \Google\Collection
     {
+        protected $collection_key = 'anomalies';
+        protected $anomaliesType = GooglePlayDeveloperReportingV1beta1Anomaly::class;
+        protected $anomaliesDataType = 'array';
+        /**
+         * Continuation token to fetch the next page of data.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Anomalies that were found.
+         *
+         * @param GooglePlayDeveloperReportingV1beta1Anomaly[] $anomalies
+         */
+        public function setAnomalies($anomalies)
+        {
+        }
+        /**
+         * @return GooglePlayDeveloperReportingV1beta1Anomaly[]
+         */
+        public function getAnomalies()
+        {
+        }
+        /**
+         * Continuation token to fetch the next page of data.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePlayDeveloperReportingV1beta1Anomaly[]
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1ListAnomaliesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnomalies()
-    {
-    }
-    /**
-     * Continuation token to fetch the next page of data.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Playdeveloperreporting_GooglePlayDeveloperReportingV1beta1ListAnomaliesResponse extends \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1ListAnomaliesResponse
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1ListPipelinesResponse extends \Google\Collection
-{
-    protected $collection_key = 'pipelines';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $pipelinesType = GoogleCloudDatapipelinesV1Pipeline::class;
-    protected $pipelinesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1ListPipelinesResponse extends \Google\Collection
     {
+        protected $collection_key = 'pipelines';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $pipelinesType = GoogleCloudDatapipelinesV1Pipeline::class;
+        protected $pipelinesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Results that matched the filter criteria and were accessible to the caller.
+         * Results are always in descending order of pipeline creation date.
+         *
+         * @param GoogleCloudDatapipelinesV1Pipeline[] $pipelines
+         */
+        public function setPipelines($pipelines)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1Pipeline[]
+         */
+        public function getPipelines()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1ListPipelinesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Results that matched the filter criteria and were accessible to the caller.
-     * Results are always in descending order of pipeline creation date.
-     *
-     * @param GoogleCloudDatapipelinesV1Pipeline[] $pipelines
-     */
-    public function setPipelines($pipelines)
-    {
-    }
-    /**
-     * @return GoogleCloudDatapipelinesV1Pipeline[]
-     */
-    public function getPipelines()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1ListPipelinesResponse extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1ListPipelinesResponse
     {
     }
 }

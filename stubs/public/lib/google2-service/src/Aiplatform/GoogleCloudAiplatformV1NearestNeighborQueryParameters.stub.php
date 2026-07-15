@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1NearestNeighborQueryParameters extends \Google\Model
-{
-    /**
-     * Optional. The number of neighbors to find via approximate search before
-     * exact reordering is performed; if set, this value must be > neighbor_count.
-     *
-     * @var int
-     */
-    public $approximateNeighborCandidates;
-    /**
-     * Optional. The fraction of the number of leaves to search, set at query time
-     * allows user to tune search performance. This value increase result in both
-     * search accuracy and latency increase. The value should be between 0.0 and
-     * 1.0.
-     *
-     * @var 
-     */
-    public $leafNodesSearchFraction;
-    /**
-     * Optional. The number of neighbors to find via approximate search before
-     * exact reordering is performed; if set, this value must be > neighbor_count.
-     *
-     * @param int $approximateNeighborCandidates
-     */
-    public function setApproximateNeighborCandidates($approximateNeighborCandidates)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1NearestNeighborQueryParameters extends \Google\Model
     {
+        /**
+         * Optional. The number of neighbors to find via approximate search before
+         * exact reordering is performed; if set, this value must be > neighbor_count.
+         *
+         * @var int
+         */
+        public $approximateNeighborCandidates;
+        /**
+         * Optional. The fraction of the number of leaves to search, set at query time
+         * allows user to tune search performance. This value increase result in both
+         * search accuracy and latency increase. The value should be between 0.0 and
+         * 1.0.
+         *
+         * @var 
+         */
+        public $leafNodesSearchFraction;
+        /**
+         * Optional. The number of neighbors to find via approximate search before
+         * exact reordering is performed; if set, this value must be > neighbor_count.
+         *
+         * @param int $approximateNeighborCandidates
+         */
+        public function setApproximateNeighborCandidates($approximateNeighborCandidates)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getApproximateNeighborCandidates()
+        {
+        }
+        public function setLeafNodesSearchFraction($leafNodesSearchFraction)
+        {
+        }
+        public function getLeafNodesSearchFraction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1NearestNeighborQueryParameters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApproximateNeighborCandidates()
-    {
-    }
-    public function setLeafNodesSearchFraction($leafNodesSearchFraction)
-    {
-    }
-    public function getLeafNodesSearchFraction()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1NearestNeighborQueryParameters extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1NearestNeighborQueryParameters
     {
     }
 }

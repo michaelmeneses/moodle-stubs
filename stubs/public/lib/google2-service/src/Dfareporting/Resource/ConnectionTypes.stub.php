@@ -21,39 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "connectionTypes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $connectionTypes = $dfareportingService->connectionTypes;
- *  </code>
- */
-class ConnectionTypes extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\ConnectionType;
+    use Google\Service\Dfareporting\ConnectionTypesListResponse;
     /**
-     * Gets one connection type by ID. (connectionTypes.get)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $id Connection type ID.
-     * @param array $optParams Optional parameters.
-     * @return ConnectionType
-     * @throws \Google\Service\Exception
+     * The "connectionTypes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $connectionTypes = $dfareportingService->connectionTypes;
+     *  </code>
      */
-    public function get($profileId, $id, $optParams = [])
+    class ConnectionTypes extends \Google\Service\Resource
     {
+        /**
+         * Gets one connection type by ID. (connectionTypes.get)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $id Connection type ID.
+         * @param array $optParams Optional parameters.
+         * @return ConnectionType
+         * @throws \Google\Service\Exception
+         */
+        public function get($profileId, $id, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of connection types. (connectionTypes.listConnectionTypes)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         * @return ConnectionTypesListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listConnectionTypes($profileId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a list of connection types. (connectionTypes.listConnectionTypes)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     * @return ConnectionTypesListResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\ConnectionTypes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listConnectionTypes($profileId, $optParams = [])
+    class Google_Service_Dfareporting_Resource_ConnectionTypes extends \Google\Service\Dfareporting\Resource\ConnectionTypes
     {
     }
 }

@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub;
-
-class ListDiscoveredServicesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $discoveredServicesType = DiscoveredService::class;
-    protected $discoveredServicesDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * List of Discovered Services.
-     *
-     * @param DiscoveredService[] $discoveredServices
-     */
-    public function setDiscoveredServices($discoveredServices)
+namespace Google\Service\AppHub {
+    class ListDiscoveredServicesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $discoveredServicesType = DiscoveredService::class;
+        protected $discoveredServicesDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * List of Discovered Services.
+         *
+         * @param DiscoveredService[] $discoveredServices
+         */
+        public function setDiscoveredServices($discoveredServices)
+        {
+        }
+        /**
+         * @return DiscoveredService[]
+         */
+        public function getDiscoveredServices()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DiscoveredService[]
+     * Runtime class alias of \Google\Service\AppHub\ListDiscoveredServicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiscoveredServices()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_AppHub_ListDiscoveredServicesResponse extends \Google\Service\AppHub\ListDiscoveredServicesResponse
     {
     }
 }

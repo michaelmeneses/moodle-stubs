@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1FieldConstraints extends \Google\Model
-{
-    protected $numericRangeConstraintType = GoogleChromePolicyVersionsV1NumericRangeConstraint::class;
-    protected $numericRangeConstraintDataType = '';
-    protected $uploadedFileConstraintsType = GoogleChromePolicyVersionsV1UploadedFileConstraints::class;
-    protected $uploadedFileConstraintsDataType = '';
-    /**
-     * The allowed range for numeric fields.
-     *
-     * @param GoogleChromePolicyVersionsV1NumericRangeConstraint $numericRangeConstraint
-     */
-    public function setNumericRangeConstraint(GoogleChromePolicyVersionsV1NumericRangeConstraint $numericRangeConstraint)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1FieldConstraints extends \Google\Model
     {
+        protected $numericRangeConstraintType = GoogleChromePolicyVersionsV1NumericRangeConstraint::class;
+        protected $numericRangeConstraintDataType = '';
+        protected $uploadedFileConstraintsType = GoogleChromePolicyVersionsV1UploadedFileConstraints::class;
+        protected $uploadedFileConstraintsDataType = '';
+        /**
+         * The allowed range for numeric fields.
+         *
+         * @param GoogleChromePolicyVersionsV1NumericRangeConstraint $numericRangeConstraint
+         */
+        public function setNumericRangeConstraint(GoogleChromePolicyVersionsV1NumericRangeConstraint $numericRangeConstraint)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyVersionsV1NumericRangeConstraint
+         */
+        public function getNumericRangeConstraint()
+        {
+        }
+        /**
+         * Constraints on the uploaded file of a file policy. If present, this policy
+         * requires a URL that can be fetched by uploading a file with the constraints
+         * specified in this proto.
+         *
+         * @param GoogleChromePolicyVersionsV1UploadedFileConstraints $uploadedFileConstraints
+         */
+        public function setUploadedFileConstraints(GoogleChromePolicyVersionsV1UploadedFileConstraints $uploadedFileConstraints)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyVersionsV1UploadedFileConstraints
+         */
+        public function getUploadedFileConstraints()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromePolicyVersionsV1NumericRangeConstraint
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1FieldConstraints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNumericRangeConstraint()
-    {
-    }
-    /**
-     * Constraints on the uploaded file of a file policy. If present, this policy
-     * requires a URL that can be fetched by uploading a file with the constraints
-     * specified in this proto.
-     *
-     * @param GoogleChromePolicyVersionsV1UploadedFileConstraints $uploadedFileConstraints
-     */
-    public function setUploadedFileConstraints(GoogleChromePolicyVersionsV1UploadedFileConstraints $uploadedFileConstraints)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyVersionsV1UploadedFileConstraints
-     */
-    public function getUploadedFileConstraints()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1FieldConstraints extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1FieldConstraints
     {
     }
 }

@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaNextTask extends \Google\Model
-{
-    /**
-     * Standard filter expression for this task to become an eligible next task.
-     *
-     * @var string
-     */
-    public $condition;
-    /**
-     * User-provided description intended to give additional business context
-     * about the task.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * User-provided label that is attached to this edge in the UI.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * ID of the next task.
-     *
-     * @var string
-     */
-    public $taskConfigId;
-    /**
-     * Task number of the next task.
-     *
-     * @var string
-     */
-    public $taskId;
-    /**
-     * Standard filter expression for this task to become an eligible next task.
-     *
-     * @param string $condition
-     */
-    public function setCondition($condition)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaNextTask extends \Google\Model
     {
+        /**
+         * Standard filter expression for this task to become an eligible next task.
+         *
+         * @var string
+         */
+        public $condition;
+        /**
+         * User-provided description intended to give additional business context
+         * about the task.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * User-provided label that is attached to this edge in the UI.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * ID of the next task.
+         *
+         * @var string
+         */
+        public $taskConfigId;
+        /**
+         * Task number of the next task.
+         *
+         * @var string
+         */
+        public $taskId;
+        /**
+         * Standard filter expression for this task to become an eligible next task.
+         *
+         * @param string $condition
+         */
+        public function setCondition($condition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * User-provided description intended to give additional business context
+         * about the task.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * User-provided label that is attached to this edge in the UI.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * ID of the next task.
+         *
+         * @param string $taskConfigId
+         */
+        public function setTaskConfigId($taskConfigId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTaskConfigId()
+        {
+        }
+        /**
+         * Task number of the next task.
+         *
+         * @param string $taskId
+         */
+        public function setTaskId($taskId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTaskId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaNextTask registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCondition()
-    {
-    }
-    /**
-     * User-provided description intended to give additional business context
-     * about the task.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * User-provided label that is attached to this edge in the UI.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * ID of the next task.
-     *
-     * @param string $taskConfigId
-     */
-    public function setTaskConfigId($taskConfigId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTaskConfigId()
-    {
-    }
-    /**
-     * Task number of the next task.
-     *
-     * @param string $taskId
-     */
-    public function setTaskId($taskId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTaskId()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaNextTask extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaNextTask
     {
     }
 }

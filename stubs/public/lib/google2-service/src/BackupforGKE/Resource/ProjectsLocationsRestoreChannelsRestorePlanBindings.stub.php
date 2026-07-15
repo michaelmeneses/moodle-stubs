@@ -21,56 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BackupforGKE\Resource;
-
-/**
- * The "restorePlanBindings" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gkebackupService = new Google\Service\BackupforGKE(...);
- *   $restorePlanBindings = $gkebackupService->projects_locations_restoreChannels_restorePlanBindings;
- *  </code>
- */
-class ProjectsLocationsRestoreChannelsRestorePlanBindings extends \Google\Service\Resource
-{
+namespace Google\Service\BackupforGKE\Resource {
+    use Google\Service\BackupforGKE\ListRestorePlanBindingsResponse;
+    use Google\Service\BackupforGKE\RestorePlanBinding;
     /**
-     * Retrieve the details of a single RestorePlanBinding.
-     * (restorePlanBindings.get)
-     *
-     * @param string $name Required. Fully qualified RestorePlanBinding name.
-     * Format: `projects/locations/restoreChannels/restorePlanBindings`
-     * @param array $optParams Optional parameters.
-     * @return RestorePlanBinding
-     * @throws \Google\Service\Exception
+     * The "restorePlanBindings" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gkebackupService = new Google\Service\BackupforGKE(...);
+     *   $restorePlanBindings = $gkebackupService->projects_locations_restoreChannels_restorePlanBindings;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsRestoreChannelsRestorePlanBindings extends \Google\Service\Resource
     {
+        /**
+         * Retrieve the details of a single RestorePlanBinding.
+         * (restorePlanBindings.get)
+         *
+         * @param string $name Required. Fully qualified RestorePlanBinding name.
+         * Format: `projects/locations/restoreChannels/restorePlanBindings`
+         * @param array $optParams Optional parameters.
+         * @return RestorePlanBinding
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists RestorePlanBindings in a given location.
+         * (restorePlanBindings.listProjectsLocationsRestoreChannelsRestorePlanBindings)
+         *
+         * @param string $parent Required. The RestoreChannel that contains the
+         * ListRestorePlanBindings to list. Format: `projects/locations/restoreChannels`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Field match expression used to filter the
+         * results.
+         * @opt_param string orderBy Optional. Field by which to sort the results.
+         * @opt_param int pageSize Optional. The target number of results to return in a
+         * single response. If not specified, a default value will be chosen by the
+         * service. Note that the response may include a partial list and a caller
+         * should only rely on the response's next_page_token to determine if there are
+         * more instances left to be queried.
+         * @opt_param string pageToken Optional. The value of next_page_token received
+         * from a previous `ListRestorePlanBindings` call. Provide this to retrieve the
+         * subsequent page in a multi-page list of results. When paginating, all other
+         * parameters provided to `ListRestorePlanBindings` must match the call that
+         * provided the page token.
+         * @return ListRestorePlanBindingsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsRestoreChannelsRestorePlanBindings($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists RestorePlanBindings in a given location.
-     * (restorePlanBindings.listProjectsLocationsRestoreChannelsRestorePlanBindings)
-     *
-     * @param string $parent Required. The RestoreChannel that contains the
-     * ListRestorePlanBindings to list. Format: `projects/locations/restoreChannels`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Field match expression used to filter the
-     * results.
-     * @opt_param string orderBy Optional. Field by which to sort the results.
-     * @opt_param int pageSize Optional. The target number of results to return in a
-     * single response. If not specified, a default value will be chosen by the
-     * service. Note that the response may include a partial list and a caller
-     * should only rely on the response's next_page_token to determine if there are
-     * more instances left to be queried.
-     * @opt_param string pageToken Optional. The value of next_page_token received
-     * from a previous `ListRestorePlanBindings` call. Provide this to retrieve the
-     * subsequent page in a multi-page list of results. When paginating, all other
-     * parameters provided to `ListRestorePlanBindings` must match the call that
-     * provided the page token.
-     * @return ListRestorePlanBindingsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\BackupforGKE\Resource\ProjectsLocationsRestoreChannelsRestorePlanBindings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsRestoreChannelsRestorePlanBindings($parent, $optParams = [])
+    class Google_Service_BackupforGKE_Resource_ProjectsLocationsRestoreChannelsRestorePlanBindings extends \Google\Service\BackupforGKE\Resource\ProjectsLocationsRestoreChannelsRestorePlanBindings
     {
     }
 }

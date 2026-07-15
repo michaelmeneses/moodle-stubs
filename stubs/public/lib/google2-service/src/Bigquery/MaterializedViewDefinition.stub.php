@@ -21,144 +21,153 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class MaterializedViewDefinition extends \Google\Model
-{
-    /**
-     * Optional. This option declares the intention to construct a materialized
-     * view that isn't refreshed incrementally. Non-incremental materialized views
-     * support an expanded range of SQL queries. The
-     * `allow_non_incremental_definition` option can't be changed after the
-     * materialized view is created.
-     *
-     * @var bool
-     */
-    public $allowNonIncrementalDefinition;
-    /**
-     * Optional. Enable automatic refresh of the materialized view when the base
-     * table is updated. The default value is "true".
-     *
-     * @var bool
-     */
-    public $enableRefresh;
-    /**
-     * Output only. The time when this materialized view was last refreshed, in
-     * milliseconds since the epoch.
-     *
-     * @var string
-     */
-    public $lastRefreshTime;
-    /**
-     * [Optional] Max staleness of data that could be returned when materizlized
-     * view is queried (formatted as Google SQL Interval type).
-     *
-     * @var string
-     */
-    public $maxStaleness;
-    /**
-     * Required. A query whose results are persisted.
-     *
-     * @var string
-     */
-    public $query;
-    /**
-     * Optional. The maximum frequency at which this materialized view will be
-     * refreshed. The default value is "1800000" (30 minutes).
-     *
-     * @var string
-     */
-    public $refreshIntervalMs;
-    /**
-     * Optional. This option declares the intention to construct a materialized
-     * view that isn't refreshed incrementally. Non-incremental materialized views
-     * support an expanded range of SQL queries. The
-     * `allow_non_incremental_definition` option can't be changed after the
-     * materialized view is created.
-     *
-     * @param bool $allowNonIncrementalDefinition
-     */
-    public function setAllowNonIncrementalDefinition($allowNonIncrementalDefinition)
+namespace Google\Service\Bigquery {
+    class MaterializedViewDefinition extends \Google\Model
     {
+        /**
+         * Optional. This option declares the intention to construct a materialized
+         * view that isn't refreshed incrementally. Non-incremental materialized views
+         * support an expanded range of SQL queries. The
+         * `allow_non_incremental_definition` option can't be changed after the
+         * materialized view is created.
+         *
+         * @var bool
+         */
+        public $allowNonIncrementalDefinition;
+        /**
+         * Optional. Enable automatic refresh of the materialized view when the base
+         * table is updated. The default value is "true".
+         *
+         * @var bool
+         */
+        public $enableRefresh;
+        /**
+         * Output only. The time when this materialized view was last refreshed, in
+         * milliseconds since the epoch.
+         *
+         * @var string
+         */
+        public $lastRefreshTime;
+        /**
+         * [Optional] Max staleness of data that could be returned when materizlized
+         * view is queried (formatted as Google SQL Interval type).
+         *
+         * @var string
+         */
+        public $maxStaleness;
+        /**
+         * Required. A query whose results are persisted.
+         *
+         * @var string
+         */
+        public $query;
+        /**
+         * Optional. The maximum frequency at which this materialized view will be
+         * refreshed. The default value is "1800000" (30 minutes).
+         *
+         * @var string
+         */
+        public $refreshIntervalMs;
+        /**
+         * Optional. This option declares the intention to construct a materialized
+         * view that isn't refreshed incrementally. Non-incremental materialized views
+         * support an expanded range of SQL queries. The
+         * `allow_non_incremental_definition` option can't be changed after the
+         * materialized view is created.
+         *
+         * @param bool $allowNonIncrementalDefinition
+         */
+        public function setAllowNonIncrementalDefinition($allowNonIncrementalDefinition)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowNonIncrementalDefinition()
+        {
+        }
+        /**
+         * Optional. Enable automatic refresh of the materialized view when the base
+         * table is updated. The default value is "true".
+         *
+         * @param bool $enableRefresh
+         */
+        public function setEnableRefresh($enableRefresh)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableRefresh()
+        {
+        }
+        /**
+         * Output only. The time when this materialized view was last refreshed, in
+         * milliseconds since the epoch.
+         *
+         * @param string $lastRefreshTime
+         */
+        public function setLastRefreshTime($lastRefreshTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastRefreshTime()
+        {
+        }
+        /**
+         * [Optional] Max staleness of data that could be returned when materizlized
+         * view is queried (formatted as Google SQL Interval type).
+         *
+         * @param string $maxStaleness
+         */
+        public function setMaxStaleness($maxStaleness)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxStaleness()
+        {
+        }
+        /**
+         * Required. A query whose results are persisted.
+         *
+         * @param string $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
+        /**
+         * Optional. The maximum frequency at which this materialized view will be
+         * refreshed. The default value is "1800000" (30 minutes).
+         *
+         * @param string $refreshIntervalMs
+         */
+        public function setRefreshIntervalMs($refreshIntervalMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRefreshIntervalMs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Bigquery\MaterializedViewDefinition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowNonIncrementalDefinition()
-    {
-    }
-    /**
-     * Optional. Enable automatic refresh of the materialized view when the base
-     * table is updated. The default value is "true".
-     *
-     * @param bool $enableRefresh
-     */
-    public function setEnableRefresh($enableRefresh)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableRefresh()
-    {
-    }
-    /**
-     * Output only. The time when this materialized view was last refreshed, in
-     * milliseconds since the epoch.
-     *
-     * @param string $lastRefreshTime
-     */
-    public function setLastRefreshTime($lastRefreshTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastRefreshTime()
-    {
-    }
-    /**
-     * [Optional] Max staleness of data that could be returned when materizlized
-     * view is queried (formatted as Google SQL Interval type).
-     *
-     * @param string $maxStaleness
-     */
-    public function setMaxStaleness($maxStaleness)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxStaleness()
-    {
-    }
-    /**
-     * Required. A query whose results are persisted.
-     *
-     * @param string $query
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuery()
-    {
-    }
-    /**
-     * Optional. The maximum frequency at which this materialized view will be
-     * refreshed. The default value is "1800000" (30 minutes).
-     *
-     * @param string $refreshIntervalMs
-     */
-    public function setRefreshIntervalMs($refreshIntervalMs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRefreshIntervalMs()
+    class Google_Service_Bigquery_MaterializedViewDefinition extends \Google\Service\Bigquery\MaterializedViewDefinition
     {
     }
 }

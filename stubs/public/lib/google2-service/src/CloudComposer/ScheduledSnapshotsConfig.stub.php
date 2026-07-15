@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class ScheduledSnapshotsConfig extends \Google\Model
-{
-    /**
-     * Optional. Whether scheduled snapshots creation is enabled.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Optional. The cron expression representing the time when snapshots creation
-     * mechanism runs. This field is subject to additional validation around
-     * frequency of execution.
-     *
-     * @var string
-     */
-    public $snapshotCreationSchedule;
-    /**
-     * Optional. The Cloud Storage location for storing automatically created
-     * snapshots.
-     *
-     * @var string
-     */
-    public $snapshotLocation;
-    /**
-     * Optional. Time zone that sets the context to interpret
-     * snapshot_creation_schedule.
-     *
-     * @var string
-     */
-    public $timeZone;
-    /**
-     * Optional. Whether scheduled snapshots creation is enabled.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\CloudComposer {
+    class ScheduledSnapshotsConfig extends \Google\Model
     {
+        /**
+         * Optional. Whether scheduled snapshots creation is enabled.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Optional. The cron expression representing the time when snapshots creation
+         * mechanism runs. This field is subject to additional validation around
+         * frequency of execution.
+         *
+         * @var string
+         */
+        public $snapshotCreationSchedule;
+        /**
+         * Optional. The Cloud Storage location for storing automatically created
+         * snapshots.
+         *
+         * @var string
+         */
+        public $snapshotLocation;
+        /**
+         * Optional. Time zone that sets the context to interpret
+         * snapshot_creation_schedule.
+         *
+         * @var string
+         */
+        public $timeZone;
+        /**
+         * Optional. Whether scheduled snapshots creation is enabled.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * Optional. The cron expression representing the time when snapshots creation
+         * mechanism runs. This field is subject to additional validation around
+         * frequency of execution.
+         *
+         * @param string $snapshotCreationSchedule
+         */
+        public function setSnapshotCreationSchedule($snapshotCreationSchedule)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnapshotCreationSchedule()
+        {
+        }
+        /**
+         * Optional. The Cloud Storage location for storing automatically created
+         * snapshots.
+         *
+         * @param string $snapshotLocation
+         */
+        public function setSnapshotLocation($snapshotLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnapshotLocation()
+        {
+        }
+        /**
+         * Optional. Time zone that sets the context to interpret
+         * snapshot_creation_schedule.
+         *
+         * @param string $timeZone
+         */
+        public function setTimeZone($timeZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudComposer\ScheduledSnapshotsConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * Optional. The cron expression representing the time when snapshots creation
-     * mechanism runs. This field is subject to additional validation around
-     * frequency of execution.
-     *
-     * @param string $snapshotCreationSchedule
-     */
-    public function setSnapshotCreationSchedule($snapshotCreationSchedule)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnapshotCreationSchedule()
-    {
-    }
-    /**
-     * Optional. The Cloud Storage location for storing automatically created
-     * snapshots.
-     *
-     * @param string $snapshotLocation
-     */
-    public function setSnapshotLocation($snapshotLocation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnapshotLocation()
-    {
-    }
-    /**
-     * Optional. Time zone that sets the context to interpret
-     * snapshot_creation_schedule.
-     *
-     * @param string $timeZone
-     */
-    public function setTimeZone($timeZone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeZone()
+    class Google_Service_CloudComposer_ScheduledSnapshotsConfig extends \Google\Service\CloudComposer\ScheduledSnapshotsConfig
     {
     }
 }

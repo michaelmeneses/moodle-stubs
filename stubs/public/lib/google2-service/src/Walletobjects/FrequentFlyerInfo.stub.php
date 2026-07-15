@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class FrequentFlyerInfo extends \Google\Model
-{
-    /**
-     * Frequent flyer number. Required for each nested object of kind
-     * `walletobjects#frequentFlyerInfo`.
-     *
-     * @var string
-     */
-    public $frequentFlyerNumber;
-    protected $frequentFlyerProgramNameType = LocalizedString::class;
-    protected $frequentFlyerProgramNameDataType = '';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"walletobjects#frequentFlyerInfo"`.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $kind;
-    /**
-     * Frequent flyer number. Required for each nested object of kind
-     * `walletobjects#frequentFlyerInfo`.
-     *
-     * @param string $frequentFlyerNumber
-     */
-    public function setFrequentFlyerNumber($frequentFlyerNumber)
+namespace Google\Service\Walletobjects {
+    class FrequentFlyerInfo extends \Google\Model
     {
+        /**
+         * Frequent flyer number. Required for each nested object of kind
+         * `walletobjects#frequentFlyerInfo`.
+         *
+         * @var string
+         */
+        public $frequentFlyerNumber;
+        protected $frequentFlyerProgramNameType = LocalizedString::class;
+        protected $frequentFlyerProgramNameDataType = '';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"walletobjects#frequentFlyerInfo"`.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $kind;
+        /**
+         * Frequent flyer number. Required for each nested object of kind
+         * `walletobjects#frequentFlyerInfo`.
+         *
+         * @param string $frequentFlyerNumber
+         */
+        public function setFrequentFlyerNumber($frequentFlyerNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFrequentFlyerNumber()
+        {
+        }
+        /**
+         * Frequent flyer program name. eg: "Lufthansa Miles & More"
+         *
+         * @param LocalizedString $frequentFlyerProgramName
+         */
+        public function setFrequentFlyerProgramName(LocalizedString $frequentFlyerProgramName)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getFrequentFlyerProgramName()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"walletobjects#frequentFlyerInfo"`.
+         *
+         * @deprecated
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Walletobjects\FrequentFlyerInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFrequentFlyerNumber()
-    {
-    }
-    /**
-     * Frequent flyer program name. eg: "Lufthansa Miles & More"
-     *
-     * @param LocalizedString $frequentFlyerProgramName
-     */
-    public function setFrequentFlyerProgramName(LocalizedString $frequentFlyerProgramName)
-    {
-    }
-    /**
-     * @return LocalizedString
-     */
-    public function getFrequentFlyerProgramName()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"walletobjects#frequentFlyerInfo"`.
-     *
-     * @deprecated
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Walletobjects_FrequentFlyerInfo extends \Google\Service\Walletobjects\FrequentFlyerInfo
     {
     }
 }

@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2alphaMerchantCenterAccountLinkMerchantCenterFeedFilter extends \Google\Model
-{
-    /**
-     * AFM data source ID.
-     *
-     * @var string
-     */
-    public $dataSourceId;
-    /**
-     * Merchant Center primary feed ID. Deprecated: use data_source_id instead.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $primaryFeedId;
-    /**
-     * Merchant Center primary feed name. The name is used for the display
-     * purposes only.
-     *
-     * @var string
-     */
-    public $primaryFeedName;
-    /**
-     * AFM data source ID.
-     *
-     * @param string $dataSourceId
-     */
-    public function setDataSourceId($dataSourceId)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2alphaMerchantCenterAccountLinkMerchantCenterFeedFilter extends \Google\Model
     {
+        /**
+         * AFM data source ID.
+         *
+         * @var string
+         */
+        public $dataSourceId;
+        /**
+         * Merchant Center primary feed ID. Deprecated: use data_source_id instead.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $primaryFeedId;
+        /**
+         * Merchant Center primary feed name. The name is used for the display
+         * purposes only.
+         *
+         * @var string
+         */
+        public $primaryFeedName;
+        /**
+         * AFM data source ID.
+         *
+         * @param string $dataSourceId
+         */
+        public function setDataSourceId($dataSourceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataSourceId()
+        {
+        }
+        /**
+         * Merchant Center primary feed ID. Deprecated: use data_source_id instead.
+         *
+         * @deprecated
+         * @param string $primaryFeedId
+         */
+        public function setPrimaryFeedId($primaryFeedId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getPrimaryFeedId()
+        {
+        }
+        /**
+         * Merchant Center primary feed name. The name is used for the display
+         * purposes only.
+         *
+         * @param string $primaryFeedName
+         */
+        public function setPrimaryFeedName($primaryFeedName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimaryFeedName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2alphaMerchantCenterAccountLinkMerchantCenterFeedFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataSourceId()
-    {
-    }
-    /**
-     * Merchant Center primary feed ID. Deprecated: use data_source_id instead.
-     *
-     * @deprecated
-     * @param string $primaryFeedId
-     */
-    public function setPrimaryFeedId($primaryFeedId)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getPrimaryFeedId()
-    {
-    }
-    /**
-     * Merchant Center primary feed name. The name is used for the display
-     * purposes only.
-     *
-     * @param string $primaryFeedName
-     */
-    public function setPrimaryFeedName($primaryFeedName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrimaryFeedName()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2alphaMerchantCenterAccountLinkMerchantCenterFeedFilter extends \Google\Service\CloudRetail\GoogleCloudRetailV2alphaMerchantCenterAccountLinkMerchantCenterFeedFilter
     {
     }
 }

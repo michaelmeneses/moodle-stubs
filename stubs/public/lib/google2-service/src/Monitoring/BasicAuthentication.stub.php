@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class BasicAuthentication extends \Google\Model
-{
-    /**
-     * The password to use when authenticating with the HTTP server.
-     *
-     * @var string
-     */
-    public $password;
-    /**
-     * The username to use when authenticating with the HTTP server.
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * The password to use when authenticating with the HTTP server.
-     *
-     * @param string $password
-     */
-    public function setPassword($password)
+namespace Google\Service\Monitoring {
+    class BasicAuthentication extends \Google\Model
     {
+        /**
+         * The password to use when authenticating with the HTTP server.
+         *
+         * @var string
+         */
+        public $password;
+        /**
+         * The username to use when authenticating with the HTTP server.
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * The password to use when authenticating with the HTTP server.
+         *
+         * @param string $password
+         */
+        public function setPassword($password)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * The username to use when authenticating with the HTTP server.
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\BasicAuthentication registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPassword()
-    {
-    }
-    /**
-     * The username to use when authenticating with the HTTP server.
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_Monitoring_BasicAuthentication extends \Google\Service\Monitoring\BasicAuthentication
     {
     }
 }

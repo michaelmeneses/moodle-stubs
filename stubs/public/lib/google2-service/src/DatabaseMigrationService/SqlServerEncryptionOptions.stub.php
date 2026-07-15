@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class SqlServerEncryptionOptions extends \Google\Model
-{
-    /**
-     * Required. Path to the Certificate (.cer) in Cloud Storage, in the form
-     * `gs://bucketName/fileName`. The instance must have write permissions to the
-     * bucket and read access to the file.
-     *
-     * @var string
-     */
-    public $certPath;
-    /**
-     * Required. Input only. Password that encrypts the private key.
-     *
-     * @var string
-     */
-    public $pvkPassword;
-    /**
-     * Required. Path to the Certificate Private Key (.pvk) in Cloud Storage, in
-     * the form `gs://bucketName/fileName`. The instance must have write
-     * permissions to the bucket and read access to the file.
-     *
-     * @var string
-     */
-    public $pvkPath;
-    /**
-     * Required. Path to the Certificate (.cer) in Cloud Storage, in the form
-     * `gs://bucketName/fileName`. The instance must have write permissions to the
-     * bucket and read access to the file.
-     *
-     * @param string $certPath
-     */
-    public function setCertPath($certPath)
+namespace Google\Service\DatabaseMigrationService {
+    class SqlServerEncryptionOptions extends \Google\Model
     {
+        /**
+         * Required. Path to the Certificate (.cer) in Cloud Storage, in the form
+         * `gs://bucketName/fileName`. The instance must have write permissions to the
+         * bucket and read access to the file.
+         *
+         * @var string
+         */
+        public $certPath;
+        /**
+         * Required. Input only. Password that encrypts the private key.
+         *
+         * @var string
+         */
+        public $pvkPassword;
+        /**
+         * Required. Path to the Certificate Private Key (.pvk) in Cloud Storage, in
+         * the form `gs://bucketName/fileName`. The instance must have write
+         * permissions to the bucket and read access to the file.
+         *
+         * @var string
+         */
+        public $pvkPath;
+        /**
+         * Required. Path to the Certificate (.cer) in Cloud Storage, in the form
+         * `gs://bucketName/fileName`. The instance must have write permissions to the
+         * bucket and read access to the file.
+         *
+         * @param string $certPath
+         */
+        public function setCertPath($certPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertPath()
+        {
+        }
+        /**
+         * Required. Input only. Password that encrypts the private key.
+         *
+         * @param string $pvkPassword
+         */
+        public function setPvkPassword($pvkPassword)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPvkPassword()
+        {
+        }
+        /**
+         * Required. Path to the Certificate Private Key (.pvk) in Cloud Storage, in
+         * the form `gs://bucketName/fileName`. The instance must have write
+         * permissions to the bucket and read access to the file.
+         *
+         * @param string $pvkPath
+         */
+        public function setPvkPath($pvkPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPvkPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\SqlServerEncryptionOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertPath()
-    {
-    }
-    /**
-     * Required. Input only. Password that encrypts the private key.
-     *
-     * @param string $pvkPassword
-     */
-    public function setPvkPassword($pvkPassword)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPvkPassword()
-    {
-    }
-    /**
-     * Required. Path to the Certificate Private Key (.pvk) in Cloud Storage, in
-     * the form `gs://bucketName/fileName`. The instance must have write
-     * permissions to the bucket and read access to the file.
-     *
-     * @param string $pvkPath
-     */
-    public function setPvkPath($pvkPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPvkPath()
+    class Google_Service_DatabaseMigrationService_SqlServerEncryptionOptions extends \Google\Service\DatabaseMigrationService\SqlServerEncryptionOptions
     {
     }
 }

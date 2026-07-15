@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PurgeArtifactsResponse extends \Google\Collection
-{
-    protected $collection_key = 'purgeSample';
-    /**
-     * The number of Artifacts that this request deleted (or, if `force` is false,
-     * the number of Artifacts that will be deleted). This can be an estimate.
-     *
-     * @var string
-     */
-    public $purgeCount;
-    /**
-     * A sample of the Artifact names that will be deleted. Only populated if
-     * `force` is set to false. The maximum number of samples is 100 (it is
-     * possible to return fewer).
-     *
-     * @var string[]
-     */
-    public $purgeSample;
-    /**
-     * The number of Artifacts that this request deleted (or, if `force` is false,
-     * the number of Artifacts that will be deleted). This can be an estimate.
-     *
-     * @param string $purgeCount
-     */
-    public function setPurgeCount($purgeCount)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PurgeArtifactsResponse extends \Google\Collection
     {
+        protected $collection_key = 'purgeSample';
+        /**
+         * The number of Artifacts that this request deleted (or, if `force` is false,
+         * the number of Artifacts that will be deleted). This can be an estimate.
+         *
+         * @var string
+         */
+        public $purgeCount;
+        /**
+         * A sample of the Artifact names that will be deleted. Only populated if
+         * `force` is set to false. The maximum number of samples is 100 (it is
+         * possible to return fewer).
+         *
+         * @var string[]
+         */
+        public $purgeSample;
+        /**
+         * The number of Artifacts that this request deleted (or, if `force` is false,
+         * the number of Artifacts that will be deleted). This can be an estimate.
+         *
+         * @param string $purgeCount
+         */
+        public function setPurgeCount($purgeCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPurgeCount()
+        {
+        }
+        /**
+         * A sample of the Artifact names that will be deleted. Only populated if
+         * `force` is set to false. The maximum number of samples is 100 (it is
+         * possible to return fewer).
+         *
+         * @param string[] $purgeSample
+         */
+        public function setPurgeSample($purgeSample)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPurgeSample()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PurgeArtifactsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPurgeCount()
-    {
-    }
-    /**
-     * A sample of the Artifact names that will be deleted. Only populated if
-     * `force` is set to false. The maximum number of samples is 100 (it is
-     * possible to return fewer).
-     *
-     * @param string[] $purgeSample
-     */
-    public function setPurgeSample($purgeSample)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPurgeSample()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PurgeArtifactsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PurgeArtifactsResponse
     {
     }
 }

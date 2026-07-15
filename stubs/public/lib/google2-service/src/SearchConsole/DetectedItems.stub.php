@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SearchConsole;
-
-class DetectedItems extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = Item::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Rich Results type
-     *
-     * @var string
-     */
-    public $richResultType;
-    /**
-     * List of Rich Results items.
-     *
-     * @param Item[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\SearchConsole {
+    class DetectedItems extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = Item::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Rich Results type
+         *
+         * @var string
+         */
+        public $richResultType;
+        /**
+         * List of Rich Results items.
+         *
+         * @param Item[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Item[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Rich Results type
+         *
+         * @param string $richResultType
+         */
+        public function setRichResultType($richResultType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRichResultType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Item[]
+     * Runtime class alias of \Google\Service\SearchConsole\DetectedItems registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * Rich Results type
-     *
-     * @param string $richResultType
-     */
-    public function setRichResultType($richResultType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRichResultType()
+    class Google_Service_SearchConsole_DetectedItems extends \Google\Service\SearchConsole\DetectedItems
     {
     }
 }

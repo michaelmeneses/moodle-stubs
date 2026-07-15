@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class InstanceQuota extends \Google\Model
-{
-    /**
-     * Number of machines than can be created for the given location and
-     * instance_type.
-     *
-     * @var int
-     */
-    public $availableMachineCount;
-    /**
-     * The gcp service of the provisioning quota.
-     *
-     * @var string
-     */
-    public $gcpService;
-    /**
-     * Instance type. Deprecated: use gcp_service.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $instanceType;
-    /**
-     * Location where the quota applies.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Output only. The name of the instance quota.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Number of machines than can be created for the given location and
-     * instance_type.
-     *
-     * @param int $availableMachineCount
-     */
-    public function setAvailableMachineCount($availableMachineCount)
+namespace Google\Service\Baremetalsolution {
+    class InstanceQuota extends \Google\Model
     {
+        /**
+         * Number of machines than can be created for the given location and
+         * instance_type.
+         *
+         * @var int
+         */
+        public $availableMachineCount;
+        /**
+         * The gcp service of the provisioning quota.
+         *
+         * @var string
+         */
+        public $gcpService;
+        /**
+         * Instance type. Deprecated: use gcp_service.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $instanceType;
+        /**
+         * Location where the quota applies.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Output only. The name of the instance quota.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Number of machines than can be created for the given location and
+         * instance_type.
+         *
+         * @param int $availableMachineCount
+         */
+        public function setAvailableMachineCount($availableMachineCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAvailableMachineCount()
+        {
+        }
+        /**
+         * The gcp service of the provisioning quota.
+         *
+         * @param string $gcpService
+         */
+        public function setGcpService($gcpService)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcpService()
+        {
+        }
+        /**
+         * Instance type. Deprecated: use gcp_service.
+         *
+         * @deprecated
+         * @param string $instanceType
+         */
+        public function setInstanceType($instanceType)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getInstanceType()
+        {
+        }
+        /**
+         * Location where the quota applies.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Output only. The name of the instance quota.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Baremetalsolution\InstanceQuota registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailableMachineCount()
-    {
-    }
-    /**
-     * The gcp service of the provisioning quota.
-     *
-     * @param string $gcpService
-     */
-    public function setGcpService($gcpService)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcpService()
-    {
-    }
-    /**
-     * Instance type. Deprecated: use gcp_service.
-     *
-     * @deprecated
-     * @param string $instanceType
-     */
-    public function setInstanceType($instanceType)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getInstanceType()
-    {
-    }
-    /**
-     * Location where the quota applies.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Output only. The name of the instance quota.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Baremetalsolution_InstanceQuota extends \Google\Service\Baremetalsolution\InstanceQuota
     {
     }
 }

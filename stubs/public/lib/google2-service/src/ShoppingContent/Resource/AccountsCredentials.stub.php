@@ -21,31 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "credentials" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $credentials = $contentService->accounts_credentials;
- *  </code>
- */
-class AccountsCredentials extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\AccountCredentials;
     /**
-     * Uploads credentials for the Merchant Center account. If credentials already
-     * exist for this Merchant Center account and purpose, this method updates them.
-     * (credentials.create)
-     *
-     * @param string $accountId Required. The merchant id of the account these
-     * credentials belong to.
-     * @param AccountCredentials $postBody
-     * @param array $optParams Optional parameters.
-     * @return AccountCredentials
-     * @throws \Google\Service\Exception
+     * The "credentials" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $credentials = $contentService->accounts_credentials;
+     *  </code>
      */
-    public function create($accountId, AccountCredentials $postBody, $optParams = [])
+    class AccountsCredentials extends \Google\Service\Resource
+    {
+        /**
+         * Uploads credentials for the Merchant Center account. If credentials already
+         * exist for this Merchant Center account and purpose, this method updates them.
+         * (credentials.create)
+         *
+         * @param string $accountId Required. The merchant id of the account these
+         * credentials belong to.
+         * @param AccountCredentials $postBody
+         * @param array $optParams Optional parameters.
+         * @return AccountCredentials
+         * @throws \Google\Service\Exception
+         */
+        public function create($accountId, AccountCredentials $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\AccountsCredentials registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ShoppingContent_Resource_AccountsCredentials extends \Google\Service\ShoppingContent\Resource\AccountsCredentials
     {
     }
 }

@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class KerberosConfig extends \Google\Model
-{
-    protected $keytabType = Secret::class;
-    protected $keytabDataType = '';
-    /**
-     * @var string
-     */
-    public $krb5ConfigGcsUri;
-    /**
-     * @var string
-     */
-    public $principal;
-    /**
-     * @param Secret
-     */
-    public function setKeytab(Secret $keytab)
+namespace Google\Service\DataprocMetastore {
+    class KerberosConfig extends \Google\Model
     {
+        protected $keytabType = Secret::class;
+        protected $keytabDataType = '';
+        /**
+         * @var string
+         */
+        public $krb5ConfigGcsUri;
+        /**
+         * @var string
+         */
+        public $principal;
+        /**
+         * @param Secret
+         */
+        public function setKeytab(Secret $keytab)
+        {
+        }
+        /**
+         * @return Secret
+         */
+        public function getKeytab()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKrb5ConfigGcsUri($krb5ConfigGcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKrb5ConfigGcsUri()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPrincipal($principal)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrincipal()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Secret
+     * Runtime class alias of \Google\Service\DataprocMetastore\KerberosConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeytab()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKrb5ConfigGcsUri($krb5ConfigGcsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKrb5ConfigGcsUri()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPrincipal($principal)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrincipal()
+    class Google_Service_DataprocMetastore_KerberosConfig extends \Google\Service\DataprocMetastore\KerberosConfig
     {
     }
 }

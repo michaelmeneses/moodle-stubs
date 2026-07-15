@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class StateTimeline extends \Google\Collection
-{
-    protected $collection_key = 'states';
-    protected $statesType = StateMetadata::class;
-    protected $statesDataType = 'array';
-    /**
-     * Output only. The state and activation time details of the resource state.
-     *
-     * @param StateMetadata[] $states
-     */
-    public function setStates($states)
+namespace Google\Service\Networkconnectivity {
+    class StateTimeline extends \Google\Collection
     {
+        protected $collection_key = 'states';
+        protected $statesType = StateMetadata::class;
+        protected $statesDataType = 'array';
+        /**
+         * Output only. The state and activation time details of the resource state.
+         *
+         * @param StateMetadata[] $states
+         */
+        public function setStates($states)
+        {
+        }
+        /**
+         * @return StateMetadata[]
+         */
+        public function getStates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StateMetadata[]
+     * Runtime class alias of \Google\Service\Networkconnectivity\StateTimeline registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStates()
+    class Google_Service_Networkconnectivity_StateTimeline extends \Google\Service\Networkconnectivity\StateTimeline
     {
     }
 }

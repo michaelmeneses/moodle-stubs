@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1RiskAssessmentData extends \Google\Collection
-{
-    /**
-     * Risk level not specified.
-     */
-    public const OVERALL_RISK_LEVEL_RISK_LEVEL_UNSPECIFIED = 'RISK_LEVEL_UNSPECIFIED';
-    /**
-     * Extension that represents a low risk.
-     */
-    public const OVERALL_RISK_LEVEL_RISK_LEVEL_LOW = 'RISK_LEVEL_LOW';
-    /**
-     * Extension that represents a medium risk.
-     */
-    public const OVERALL_RISK_LEVEL_RISK_LEVEL_MEDIUM = 'RISK_LEVEL_MEDIUM';
-    /**
-     * Extension that represents a high risk.
-     */
-    public const OVERALL_RISK_LEVEL_RISK_LEVEL_HIGH = 'RISK_LEVEL_HIGH';
-    protected $collection_key = 'entries';
-    protected $entriesType = GoogleChromeManagementV1RiskAssessmentEntry::class;
-    protected $entriesDataType = 'array';
-    /**
-     * Overall assessed risk level across all entries. This will be the highest
-     * risk level from all entries.
-     *
-     * @var string
-     */
-    public $overallRiskLevel;
-    /**
-     * Individual risk assessments.
-     *
-     * @param GoogleChromeManagementV1RiskAssessmentEntry[] $entries
-     */
-    public function setEntries($entries)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1RiskAssessmentData extends \Google\Collection
     {
+        /**
+         * Risk level not specified.
+         */
+        public const OVERALL_RISK_LEVEL_RISK_LEVEL_UNSPECIFIED = 'RISK_LEVEL_UNSPECIFIED';
+        /**
+         * Extension that represents a low risk.
+         */
+        public const OVERALL_RISK_LEVEL_RISK_LEVEL_LOW = 'RISK_LEVEL_LOW';
+        /**
+         * Extension that represents a medium risk.
+         */
+        public const OVERALL_RISK_LEVEL_RISK_LEVEL_MEDIUM = 'RISK_LEVEL_MEDIUM';
+        /**
+         * Extension that represents a high risk.
+         */
+        public const OVERALL_RISK_LEVEL_RISK_LEVEL_HIGH = 'RISK_LEVEL_HIGH';
+        protected $collection_key = 'entries';
+        protected $entriesType = GoogleChromeManagementV1RiskAssessmentEntry::class;
+        protected $entriesDataType = 'array';
+        /**
+         * Overall assessed risk level across all entries. This will be the highest
+         * risk level from all entries.
+         *
+         * @var string
+         */
+        public $overallRiskLevel;
+        /**
+         * Individual risk assessments.
+         *
+         * @param GoogleChromeManagementV1RiskAssessmentEntry[] $entries
+         */
+        public function setEntries($entries)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1RiskAssessmentEntry[]
+         */
+        public function getEntries()
+        {
+        }
+        /**
+         * Overall assessed risk level across all entries. This will be the highest
+         * risk level from all entries.
+         *
+         * Accepted values: RISK_LEVEL_UNSPECIFIED, RISK_LEVEL_LOW, RISK_LEVEL_MEDIUM,
+         * RISK_LEVEL_HIGH
+         *
+         * @param self::OVERALL_RISK_LEVEL_* $overallRiskLevel
+         */
+        public function setOverallRiskLevel($overallRiskLevel)
+        {
+        }
+        /**
+         * @return self::OVERALL_RISK_LEVEL_*
+         */
+        public function getOverallRiskLevel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromeManagementV1RiskAssessmentEntry[]
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1RiskAssessmentData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntries()
-    {
-    }
-    /**
-     * Overall assessed risk level across all entries. This will be the highest
-     * risk level from all entries.
-     *
-     * Accepted values: RISK_LEVEL_UNSPECIFIED, RISK_LEVEL_LOW, RISK_LEVEL_MEDIUM,
-     * RISK_LEVEL_HIGH
-     *
-     * @param self::OVERALL_RISK_LEVEL_* $overallRiskLevel
-     */
-    public function setOverallRiskLevel($overallRiskLevel)
-    {
-    }
-    /**
-     * @return self::OVERALL_RISK_LEVEL_*
-     */
-    public function getOverallRiskLevel()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1RiskAssessmentData extends \Google\Service\ChromeManagement\GoogleChromeManagementV1RiskAssessmentData
     {
     }
 }

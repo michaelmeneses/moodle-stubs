@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2ExcludeByHotword extends \Google\Model
-{
-    protected $hotwordRegexType = GooglePrivacyDlpV2Regex::class;
-    protected $hotwordRegexDataType = '';
-    protected $proximityType = GooglePrivacyDlpV2Proximity::class;
-    protected $proximityDataType = '';
-    /**
-     * Regular expression pattern defining what qualifies as a hotword.
-     *
-     * @param GooglePrivacyDlpV2Regex $hotwordRegex
-     */
-    public function setHotwordRegex(GooglePrivacyDlpV2Regex $hotwordRegex)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2ExcludeByHotword extends \Google\Model
     {
+        protected $hotwordRegexType = GooglePrivacyDlpV2Regex::class;
+        protected $hotwordRegexDataType = '';
+        protected $proximityType = GooglePrivacyDlpV2Proximity::class;
+        protected $proximityDataType = '';
+        /**
+         * Regular expression pattern defining what qualifies as a hotword.
+         *
+         * @param GooglePrivacyDlpV2Regex $hotwordRegex
+         */
+        public function setHotwordRegex(GooglePrivacyDlpV2Regex $hotwordRegex)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Regex
+         */
+        public function getHotwordRegex()
+        {
+        }
+        /**
+         * Range of characters within which the entire hotword must reside. The total
+         * length of the window cannot exceed 1000 characters. The windowBefore
+         * property in proximity should be set to 1 if the hotword needs to be
+         * included in a column header.
+         *
+         * @param GooglePrivacyDlpV2Proximity $proximity
+         */
+        public function setProximity(GooglePrivacyDlpV2Proximity $proximity)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Proximity
+         */
+        public function getProximity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2Regex
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2ExcludeByHotword registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHotwordRegex()
-    {
-    }
-    /**
-     * Range of characters within which the entire hotword must reside. The total
-     * length of the window cannot exceed 1000 characters. The windowBefore
-     * property in proximity should be set to 1 if the hotword needs to be
-     * included in a column header.
-     *
-     * @param GooglePrivacyDlpV2Proximity $proximity
-     */
-    public function setProximity(GooglePrivacyDlpV2Proximity $proximity)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Proximity
-     */
-    public function getProximity()
+    class Google_Service_DLP_GooglePrivacyDlpV2ExcludeByHotword extends \Google\Service\DLP\GooglePrivacyDlpV2ExcludeByHotword
     {
     }
 }

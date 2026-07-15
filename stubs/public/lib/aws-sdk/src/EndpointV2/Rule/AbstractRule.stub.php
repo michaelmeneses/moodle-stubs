@@ -8,6 +8,7 @@
  */
 namespace Aws\EndpointV2\Rule;
 
+use Aws\EndpointV2\Ruleset\RulesetStandardLibrary;
 /**
  *  A rule within a rule set. All rules contain a conditions property,
  * which can be empty, and documentation about the rule.

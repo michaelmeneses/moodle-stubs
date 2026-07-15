@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2SearchResponseFacet extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * Whether the facet is dynamically generated.
-     *
-     * @var bool
-     */
-    public $dynamicFacet;
-    /**
-     * The key for this facet. E.g., "colorFamilies" or "price" or
-     * "attributes.attr1".
-     *
-     * @var string
-     */
-    public $key;
-    protected $valuesType = GoogleCloudRetailV2SearchResponseFacetFacetValue::class;
-    protected $valuesDataType = 'array';
-    /**
-     * Whether the facet is dynamically generated.
-     *
-     * @param bool $dynamicFacet
-     */
-    public function setDynamicFacet($dynamicFacet)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2SearchResponseFacet extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * Whether the facet is dynamically generated.
+         *
+         * @var bool
+         */
+        public $dynamicFacet;
+        /**
+         * The key for this facet. E.g., "colorFamilies" or "price" or
+         * "attributes.attr1".
+         *
+         * @var string
+         */
+        public $key;
+        protected $valuesType = GoogleCloudRetailV2SearchResponseFacetFacetValue::class;
+        protected $valuesDataType = 'array';
+        /**
+         * Whether the facet is dynamically generated.
+         *
+         * @param bool $dynamicFacet
+         */
+        public function setDynamicFacet($dynamicFacet)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDynamicFacet()
+        {
+        }
+        /**
+         * The key for this facet. E.g., "colorFamilies" or "price" or
+         * "attributes.attr1".
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * The facet values for this field.
+         *
+         * @param GoogleCloudRetailV2SearchResponseFacetFacetValue[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2SearchResponseFacetFacetValue[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2SearchResponseFacet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDynamicFacet()
-    {
-    }
-    /**
-     * The key for this facet. E.g., "colorFamilies" or "price" or
-     * "attributes.attr1".
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * The facet values for this field.
-     *
-     * @param GoogleCloudRetailV2SearchResponseFacetFacetValue[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2SearchResponseFacetFacetValue[]
-     */
-    public function getValues()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2SearchResponseFacet extends \Google\Service\CloudRetail\GoogleCloudRetailV2SearchResponseFacet
     {
     }
 }

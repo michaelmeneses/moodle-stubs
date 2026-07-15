@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2RuleRedirectAction extends \Google\Model
-{
-    /**
-     * URL must have length equal or less than 2000 characters.
-     *
-     * @var string
-     */
-    public $redirectUri;
-    /**
-     * URL must have length equal or less than 2000 characters.
-     *
-     * @param string $redirectUri
-     */
-    public function setRedirectUri($redirectUri)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2RuleRedirectAction extends \Google\Model
     {
+        /**
+         * URL must have length equal or less than 2000 characters.
+         *
+         * @var string
+         */
+        public $redirectUri;
+        /**
+         * URL must have length equal or less than 2000 characters.
+         *
+         * @param string $redirectUri
+         */
+        public function setRedirectUri($redirectUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRedirectUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2RuleRedirectAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRedirectUri()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2RuleRedirectAction extends \Google\Service\CloudRetail\GoogleCloudRetailV2RuleRedirectAction
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class GeneratedApksListResponse extends \Google\Collection
-{
-    protected $collection_key = 'generatedApks';
-    protected $generatedApksType = GeneratedApksPerSigningKey::class;
-    protected $generatedApksDataType = 'array';
-    /**
-     * All generated APKs, grouped by the APK signing key.
-     *
-     * @param GeneratedApksPerSigningKey[] $generatedApks
-     */
-    public function setGeneratedApks($generatedApks)
+namespace Google\Service\AndroidPublisher {
+    class GeneratedApksListResponse extends \Google\Collection
     {
+        protected $collection_key = 'generatedApks';
+        protected $generatedApksType = GeneratedApksPerSigningKey::class;
+        protected $generatedApksDataType = 'array';
+        /**
+         * All generated APKs, grouped by the APK signing key.
+         *
+         * @param GeneratedApksPerSigningKey[] $generatedApks
+         */
+        public function setGeneratedApks($generatedApks)
+        {
+        }
+        /**
+         * @return GeneratedApksPerSigningKey[]
+         */
+        public function getGeneratedApks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GeneratedApksPerSigningKey[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\GeneratedApksListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGeneratedApks()
+    class Google_Service_AndroidPublisher_GeneratedApksListResponse extends \Google\Service\AndroidPublisher\GeneratedApksListResponse
     {
     }
 }

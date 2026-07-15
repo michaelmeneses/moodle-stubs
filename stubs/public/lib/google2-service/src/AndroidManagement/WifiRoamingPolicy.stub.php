@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class WifiRoamingPolicy extends \Google\Collection
-{
-    protected $collection_key = 'wifiRoamingSettings';
-    protected $wifiRoamingSettingsType = WifiRoamingSetting::class;
-    protected $wifiRoamingSettingsDataType = 'array';
-    /**
-     * Optional. Wi-Fi roaming settings. SSIDs provided in this list must be
-     * unique, the policy will be rejected otherwise.
-     *
-     * @param WifiRoamingSetting[] $wifiRoamingSettings
-     */
-    public function setWifiRoamingSettings($wifiRoamingSettings)
+namespace Google\Service\AndroidManagement {
+    class WifiRoamingPolicy extends \Google\Collection
     {
+        protected $collection_key = 'wifiRoamingSettings';
+        protected $wifiRoamingSettingsType = WifiRoamingSetting::class;
+        protected $wifiRoamingSettingsDataType = 'array';
+        /**
+         * Optional. Wi-Fi roaming settings. SSIDs provided in this list must be
+         * unique, the policy will be rejected otherwise.
+         *
+         * @param WifiRoamingSetting[] $wifiRoamingSettings
+         */
+        public function setWifiRoamingSettings($wifiRoamingSettings)
+        {
+        }
+        /**
+         * @return WifiRoamingSetting[]
+         */
+        public function getWifiRoamingSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return WifiRoamingSetting[]
+     * Runtime class alias of \Google\Service\AndroidManagement\WifiRoamingPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWifiRoamingSettings()
+    class Google_Service_AndroidManagement_WifiRoamingPolicy extends \Google\Service\AndroidManagement\WifiRoamingPolicy
     {
     }
 }

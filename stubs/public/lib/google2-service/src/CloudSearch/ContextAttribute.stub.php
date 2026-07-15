@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ContextAttribute extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * The name of the attribute. It should not be empty. The maximum length is 32
-     * characters. The name must start with a letter and can only contain letters
-     * (A-Z, a-z) or numbers (0-9). The name will be normalized (lower-cased)
-     * before being matched.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Text values of the attribute. The maximum number of elements is 10. The
-     * maximum length of an element in the array is 32 characters. The value will
-     * be normalized (lower-cased) before being matched.
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * The name of the attribute. It should not be empty. The maximum length is 32
-     * characters. The name must start with a letter and can only contain letters
-     * (A-Z, a-z) or numbers (0-9). The name will be normalized (lower-cased)
-     * before being matched.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CloudSearch {
+    class ContextAttribute extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * The name of the attribute. It should not be empty. The maximum length is 32
+         * characters. The name must start with a letter and can only contain letters
+         * (A-Z, a-z) or numbers (0-9). The name will be normalized (lower-cased)
+         * before being matched.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Text values of the attribute. The maximum number of elements is 10. The
+         * maximum length of an element in the array is 32 characters. The value will
+         * be normalized (lower-cased) before being matched.
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * The name of the attribute. It should not be empty. The maximum length is 32
+         * characters. The name must start with a letter and can only contain letters
+         * (A-Z, a-z) or numbers (0-9). The name will be normalized (lower-cased)
+         * before being matched.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Text values of the attribute. The maximum number of elements is 10. The
+         * maximum length of an element in the array is 32 characters. The value will
+         * be normalized (lower-cased) before being matched.
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\ContextAttribute registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Text values of the attribute. The maximum number of elements is 10. The
-     * maximum length of an element in the array is 32 characters. The value will
-     * be normalized (lower-cased) before being matched.
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValues()
+    class Google_Service_CloudSearch_ContextAttribute extends \Google\Service\CloudSearch\ContextAttribute
     {
     }
 }

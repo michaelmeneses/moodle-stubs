@@ -21,135 +21,144 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ContaineranalysisGoogleDevtoolsCloudbuildV1Artifacts extends \Google\Collection
-{
-    protected $collection_key = 'pythonPackages';
-    protected $goModulesType = ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsGoModule::class;
-    protected $goModulesDataType = 'array';
-    /**
-     * A list of images to be pushed upon the successful completion of all build
-     * steps. The images will be pushed using the builder service account's
-     * credentials. The digests of the pushed images will be stored in the Build
-     * resource's results field. If any of the images fail to be pushed, the build
-     * is marked FAILURE.
-     *
-     * @var string[]
-     */
-    public $images;
-    protected $mavenArtifactsType = ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsMavenArtifact::class;
-    protected $mavenArtifactsDataType = 'array';
-    protected $npmPackagesType = ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsNpmPackage::class;
-    protected $npmPackagesDataType = 'array';
-    protected $objectsType = ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsArtifactObjects::class;
-    protected $objectsDataType = '';
-    protected $pythonPackagesType = ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsPythonPackage::class;
-    protected $pythonPackagesDataType = 'array';
-    /**
-     * Optional. A list of Go modules to be uploaded to Artifact Registry upon
-     * successful completion of all build steps. If any objects fail to be pushed,
-     * the build is marked FAILURE.
-     *
-     * @param ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsGoModule[] $goModules
-     */
-    public function setGoModules($goModules)
+namespace Google\Service\ContainerAnalysis {
+    class ContaineranalysisGoogleDevtoolsCloudbuildV1Artifacts extends \Google\Collection
     {
+        protected $collection_key = 'pythonPackages';
+        protected $goModulesType = ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsGoModule::class;
+        protected $goModulesDataType = 'array';
+        /**
+         * A list of images to be pushed upon the successful completion of all build
+         * steps. The images will be pushed using the builder service account's
+         * credentials. The digests of the pushed images will be stored in the Build
+         * resource's results field. If any of the images fail to be pushed, the build
+         * is marked FAILURE.
+         *
+         * @var string[]
+         */
+        public $images;
+        protected $mavenArtifactsType = ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsMavenArtifact::class;
+        protected $mavenArtifactsDataType = 'array';
+        protected $npmPackagesType = ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsNpmPackage::class;
+        protected $npmPackagesDataType = 'array';
+        protected $objectsType = ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsArtifactObjects::class;
+        protected $objectsDataType = '';
+        protected $pythonPackagesType = ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsPythonPackage::class;
+        protected $pythonPackagesDataType = 'array';
+        /**
+         * Optional. A list of Go modules to be uploaded to Artifact Registry upon
+         * successful completion of all build steps. If any objects fail to be pushed,
+         * the build is marked FAILURE.
+         *
+         * @param ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsGoModule[] $goModules
+         */
+        public function setGoModules($goModules)
+        {
+        }
+        /**
+         * @return ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsGoModule[]
+         */
+        public function getGoModules()
+        {
+        }
+        /**
+         * A list of images to be pushed upon the successful completion of all build
+         * steps. The images will be pushed using the builder service account's
+         * credentials. The digests of the pushed images will be stored in the Build
+         * resource's results field. If any of the images fail to be pushed, the build
+         * is marked FAILURE.
+         *
+         * @param string[] $images
+         */
+        public function setImages($images)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getImages()
+        {
+        }
+        /**
+         * A list of Maven artifacts to be uploaded to Artifact Registry upon
+         * successful completion of all build steps. Artifacts in the workspace
+         * matching specified paths globs will be uploaded to the specified Artifact
+         * Registry repository using the builder service account's credentials. If any
+         * artifacts fail to be pushed, the build is marked FAILURE.
+         *
+         * @param ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsMavenArtifact[] $mavenArtifacts
+         */
+        public function setMavenArtifacts($mavenArtifacts)
+        {
+        }
+        /**
+         * @return ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsMavenArtifact[]
+         */
+        public function getMavenArtifacts()
+        {
+        }
+        /**
+         * A list of npm packages to be uploaded to Artifact Registry upon successful
+         * completion of all build steps. Npm packages in the specified paths will be
+         * uploaded to the specified Artifact Registry repository using the builder
+         * service account's credentials. If any packages fail to be pushed, the build
+         * is marked FAILURE.
+         *
+         * @param ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsNpmPackage[] $npmPackages
+         */
+        public function setNpmPackages($npmPackages)
+        {
+        }
+        /**
+         * @return ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsNpmPackage[]
+         */
+        public function getNpmPackages()
+        {
+        }
+        /**
+         * A list of objects to be uploaded to Cloud Storage upon successful
+         * completion of all build steps. Files in the workspace matching specified
+         * paths globs will be uploaded to the specified Cloud Storage location using
+         * the builder service account's credentials. The location and generation of
+         * the uploaded objects will be stored in the Build resource's results field.
+         * If any objects fail to be pushed, the build is marked FAILURE.
+         *
+         * @param ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsArtifactObjects $objects
+         */
+        public function setObjects(ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsArtifactObjects $objects)
+        {
+        }
+        /**
+         * @return ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsArtifactObjects
+         */
+        public function getObjects()
+        {
+        }
+        /**
+         * A list of Python packages to be uploaded to Artifact Registry upon
+         * successful completion of all build steps. The build service account
+         * credentials will be used to perform the upload. If any objects fail to be
+         * pushed, the build is marked FAILURE.
+         *
+         * @param ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsPythonPackage[] $pythonPackages
+         */
+        public function setPythonPackages($pythonPackages)
+        {
+        }
+        /**
+         * @return ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsPythonPackage[]
+         */
+        public function getPythonPackages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsGoModule[]
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1Artifacts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGoModules()
-    {
-    }
-    /**
-     * A list of images to be pushed upon the successful completion of all build
-     * steps. The images will be pushed using the builder service account's
-     * credentials. The digests of the pushed images will be stored in the Build
-     * resource's results field. If any of the images fail to be pushed, the build
-     * is marked FAILURE.
-     *
-     * @param string[] $images
-     */
-    public function setImages($images)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getImages()
-    {
-    }
-    /**
-     * A list of Maven artifacts to be uploaded to Artifact Registry upon
-     * successful completion of all build steps. Artifacts in the workspace
-     * matching specified paths globs will be uploaded to the specified Artifact
-     * Registry repository using the builder service account's credentials. If any
-     * artifacts fail to be pushed, the build is marked FAILURE.
-     *
-     * @param ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsMavenArtifact[] $mavenArtifacts
-     */
-    public function setMavenArtifacts($mavenArtifacts)
-    {
-    }
-    /**
-     * @return ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsMavenArtifact[]
-     */
-    public function getMavenArtifacts()
-    {
-    }
-    /**
-     * A list of npm packages to be uploaded to Artifact Registry upon successful
-     * completion of all build steps. Npm packages in the specified paths will be
-     * uploaded to the specified Artifact Registry repository using the builder
-     * service account's credentials. If any packages fail to be pushed, the build
-     * is marked FAILURE.
-     *
-     * @param ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsNpmPackage[] $npmPackages
-     */
-    public function setNpmPackages($npmPackages)
-    {
-    }
-    /**
-     * @return ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsNpmPackage[]
-     */
-    public function getNpmPackages()
-    {
-    }
-    /**
-     * A list of objects to be uploaded to Cloud Storage upon successful
-     * completion of all build steps. Files in the workspace matching specified
-     * paths globs will be uploaded to the specified Cloud Storage location using
-     * the builder service account's credentials. The location and generation of
-     * the uploaded objects will be stored in the Build resource's results field.
-     * If any objects fail to be pushed, the build is marked FAILURE.
-     *
-     * @param ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsArtifactObjects $objects
-     */
-    public function setObjects(ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsArtifactObjects $objects)
-    {
-    }
-    /**
-     * @return ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsArtifactObjects
-     */
-    public function getObjects()
-    {
-    }
-    /**
-     * A list of Python packages to be uploaded to Artifact Registry upon
-     * successful completion of all build steps. The build service account
-     * credentials will be used to perform the upload. If any objects fail to be
-     * pushed, the build is marked FAILURE.
-     *
-     * @param ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsPythonPackage[] $pythonPackages
-     */
-    public function setPythonPackages($pythonPackages)
-    {
-    }
-    /**
-     * @return ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsPythonPackage[]
-     */
-    public function getPythonPackages()
+    class Google_Service_ContainerAnalysis_ContaineranalysisGoogleDevtoolsCloudbuildV1Artifacts extends \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1Artifacts
     {
     }
 }

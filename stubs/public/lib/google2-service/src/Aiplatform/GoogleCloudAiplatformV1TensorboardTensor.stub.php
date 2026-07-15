@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1TensorboardTensor extends \Google\Model
-{
-    /**
-     * Required. Serialized form of https://github.com/tensorflow/tensorflow/blob/
-     * master/tensorflow/core/framework/tensor.proto
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Optional. Version number of TensorProto used to serialize value.
-     *
-     * @var int
-     */
-    public $versionNumber;
-    /**
-     * Required. Serialized form of https://github.com/tensorflow/tensorflow/blob/
-     * master/tensorflow/core/framework/tensor.proto
-     *
-     * @param string $value
-     */
-    public function setValue($value)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1TensorboardTensor extends \Google\Model
     {
+        /**
+         * Required. Serialized form of https://github.com/tensorflow/tensorflow/blob/
+         * master/tensorflow/core/framework/tensor.proto
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Optional. Version number of TensorProto used to serialize value.
+         *
+         * @var int
+         */
+        public $versionNumber;
+        /**
+         * Required. Serialized form of https://github.com/tensorflow/tensorflow/blob/
+         * master/tensorflow/core/framework/tensor.proto
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
+        /**
+         * Optional. Version number of TensorProto used to serialize value.
+         *
+         * @param int $versionNumber
+         */
+        public function setVersionNumber($versionNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVersionNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1TensorboardTensor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValue()
-    {
-    }
-    /**
-     * Optional. Version number of TensorProto used to serialize value.
-     *
-     * @param int $versionNumber
-     */
-    public function setVersionNumber($versionNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVersionNumber()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1TensorboardTensor extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1TensorboardTensor
     {
     }
 }

@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1ExchangeDeviceCheckTokenRequest extends \Google\Model
-{
-    /**
-     * Required. The `device_token` as returned by Apple's client-side
-     * [DeviceCheck
-     * API](https://developer.apple.com/documentation/devicecheck/dcdevice). This
-     * is the base64 encoded `Data` (Swift) or `NSData` (ObjC) object.
-     *
-     * @var string
-     */
-    public $deviceToken;
-    /**
-     * Specifies whether this attestation is for use in a *limited use* (`true`)
-     * or *session based* (`false`) context. To enable this attestation to be used
-     * with the *replay protection* feature, set this to `true`. The default value
-     * is `false`.
-     *
-     * @var bool
-     */
-    public $limitedUse;
-    /**
-     * Required. The `device_token` as returned by Apple's client-side
-     * [DeviceCheck
-     * API](https://developer.apple.com/documentation/devicecheck/dcdevice). This
-     * is the base64 encoded `Data` (Swift) or `NSData` (ObjC) object.
-     *
-     * @param string $deviceToken
-     */
-    public function setDeviceToken($deviceToken)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1ExchangeDeviceCheckTokenRequest extends \Google\Model
     {
+        /**
+         * Required. The `device_token` as returned by Apple's client-side
+         * [DeviceCheck
+         * API](https://developer.apple.com/documentation/devicecheck/dcdevice). This
+         * is the base64 encoded `Data` (Swift) or `NSData` (ObjC) object.
+         *
+         * @var string
+         */
+        public $deviceToken;
+        /**
+         * Specifies whether this attestation is for use in a *limited use* (`true`)
+         * or *session based* (`false`) context. To enable this attestation to be used
+         * with the *replay protection* feature, set this to `true`. The default value
+         * is `false`.
+         *
+         * @var bool
+         */
+        public $limitedUse;
+        /**
+         * Required. The `device_token` as returned by Apple's client-side
+         * [DeviceCheck
+         * API](https://developer.apple.com/documentation/devicecheck/dcdevice). This
+         * is the base64 encoded `Data` (Swift) or `NSData` (ObjC) object.
+         *
+         * @param string $deviceToken
+         */
+        public function setDeviceToken($deviceToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceToken()
+        {
+        }
+        /**
+         * Specifies whether this attestation is for use in a *limited use* (`true`)
+         * or *session based* (`false`) context. To enable this attestation to be used
+         * with the *replay protection* feature, set this to `true`. The default value
+         * is `false`.
+         *
+         * @param bool $limitedUse
+         */
+        public function setLimitedUse($limitedUse)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLimitedUse()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeDeviceCheckTokenRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceToken()
-    {
-    }
-    /**
-     * Specifies whether this attestation is for use in a *limited use* (`true`)
-     * or *session based* (`false`) context. To enable this attestation to be used
-     * with the *replay protection* feature, set this to `true`. The default value
-     * is `false`.
-     *
-     * @param bool $limitedUse
-     */
-    public function setLimitedUse($limitedUse)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getLimitedUse()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1ExchangeDeviceCheckTokenRequest extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeDeviceCheckTokenRequest
     {
     }
 }

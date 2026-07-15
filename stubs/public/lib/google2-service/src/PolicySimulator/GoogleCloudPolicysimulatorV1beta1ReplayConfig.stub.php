@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator;
-
-class GoogleCloudPolicysimulatorV1beta1ReplayConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $logSource;
-    protected $policyOverlayType = GoogleIamV1Policy::class;
-    protected $policyOverlayDataType = 'map';
-    /**
-     * @param string
-     */
-    public function setLogSource($logSource)
+namespace Google\Service\PolicySimulator {
+    class GoogleCloudPolicysimulatorV1beta1ReplayConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $logSource;
+        protected $policyOverlayType = GoogleIamV1Policy::class;
+        protected $policyOverlayDataType = 'map';
+        /**
+         * @param string
+         */
+        public function setLogSource($logSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLogSource()
+        {
+        }
+        /**
+         * @param GoogleIamV1Policy[]
+         */
+        public function setPolicyOverlay($policyOverlay)
+        {
+        }
+        /**
+         * @return GoogleIamV1Policy[]
+         */
+        public function getPolicyOverlay()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1beta1ReplayConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLogSource()
-    {
-    }
-    /**
-     * @param GoogleIamV1Policy[]
-     */
-    public function setPolicyOverlay($policyOverlay)
-    {
-    }
-    /**
-     * @return GoogleIamV1Policy[]
-     */
-    public function getPolicyOverlay()
+    class Google_Service_PolicySimulator_GoogleCloudPolicysimulatorV1beta1ReplayConfig extends \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1beta1ReplayConfig
     {
     }
 }

@@ -21,164 +21,173 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class EvictionGracePeriod extends \Google\Model
-{
-    /**
-     * Optional. Grace period for eviction due to imagefs available signal. Sample
-     * format: "10s". Must be >= 0. See
-     * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @var string
-     */
-    public $imagefsAvailable;
-    /**
-     * Optional. Grace period for eviction due to imagefs inodes free signal.
-     * Sample format: "10s". Must be >= 0. See
-     * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @var string
-     */
-    public $imagefsInodesFree;
-    /**
-     * Optional. Grace period for eviction due to memory available signal. Sample
-     * format: "10s". Must be >= 0. See
-     * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @var string
-     */
-    public $memoryAvailable;
-    /**
-     * Optional. Grace period for eviction due to nodefs available signal. Sample
-     * format: "10s". Must be >= 0. See
-     * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @var string
-     */
-    public $nodefsAvailable;
-    /**
-     * Optional. Grace period for eviction due to nodefs inodes free signal.
-     * Sample format: "10s". Must be >= 0. See
-     * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @var string
-     */
-    public $nodefsInodesFree;
-    /**
-     * Optional. Grace period for eviction due to pid available signal. Sample
-     * format: "10s". Must be >= 0. See
-     * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @var string
-     */
-    public $pidAvailable;
-    /**
-     * Optional. Grace period for eviction due to imagefs available signal. Sample
-     * format: "10s". Must be >= 0. See
-     * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @param string $imagefsAvailable
-     */
-    public function setImagefsAvailable($imagefsAvailable)
+namespace Google\Service\Container {
+    class EvictionGracePeriod extends \Google\Model
     {
+        /**
+         * Optional. Grace period for eviction due to imagefs available signal. Sample
+         * format: "10s". Must be >= 0. See
+         * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @var string
+         */
+        public $imagefsAvailable;
+        /**
+         * Optional. Grace period for eviction due to imagefs inodes free signal.
+         * Sample format: "10s". Must be >= 0. See
+         * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @var string
+         */
+        public $imagefsInodesFree;
+        /**
+         * Optional. Grace period for eviction due to memory available signal. Sample
+         * format: "10s". Must be >= 0. See
+         * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @var string
+         */
+        public $memoryAvailable;
+        /**
+         * Optional. Grace period for eviction due to nodefs available signal. Sample
+         * format: "10s". Must be >= 0. See
+         * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @var string
+         */
+        public $nodefsAvailable;
+        /**
+         * Optional. Grace period for eviction due to nodefs inodes free signal.
+         * Sample format: "10s". Must be >= 0. See
+         * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @var string
+         */
+        public $nodefsInodesFree;
+        /**
+         * Optional. Grace period for eviction due to pid available signal. Sample
+         * format: "10s". Must be >= 0. See
+         * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @var string
+         */
+        public $pidAvailable;
+        /**
+         * Optional. Grace period for eviction due to imagefs available signal. Sample
+         * format: "10s". Must be >= 0. See
+         * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @param string $imagefsAvailable
+         */
+        public function setImagefsAvailable($imagefsAvailable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImagefsAvailable()
+        {
+        }
+        /**
+         * Optional. Grace period for eviction due to imagefs inodes free signal.
+         * Sample format: "10s". Must be >= 0. See
+         * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @param string $imagefsInodesFree
+         */
+        public function setImagefsInodesFree($imagefsInodesFree)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImagefsInodesFree()
+        {
+        }
+        /**
+         * Optional. Grace period for eviction due to memory available signal. Sample
+         * format: "10s". Must be >= 0. See
+         * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @param string $memoryAvailable
+         */
+        public function setMemoryAvailable($memoryAvailable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemoryAvailable()
+        {
+        }
+        /**
+         * Optional. Grace period for eviction due to nodefs available signal. Sample
+         * format: "10s". Must be >= 0. See
+         * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @param string $nodefsAvailable
+         */
+        public function setNodefsAvailable($nodefsAvailable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNodefsAvailable()
+        {
+        }
+        /**
+         * Optional. Grace period for eviction due to nodefs inodes free signal.
+         * Sample format: "10s". Must be >= 0. See
+         * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @param string $nodefsInodesFree
+         */
+        public function setNodefsInodesFree($nodefsInodesFree)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNodefsInodesFree()
+        {
+        }
+        /**
+         * Optional. Grace period for eviction due to pid available signal. Sample
+         * format: "10s". Must be >= 0. See
+         * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @param string $pidAvailable
+         */
+        public function setPidAvailable($pidAvailable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPidAvailable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\EvictionGracePeriod registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImagefsAvailable()
-    {
-    }
-    /**
-     * Optional. Grace period for eviction due to imagefs inodes free signal.
-     * Sample format: "10s". Must be >= 0. See
-     * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @param string $imagefsInodesFree
-     */
-    public function setImagefsInodesFree($imagefsInodesFree)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImagefsInodesFree()
-    {
-    }
-    /**
-     * Optional. Grace period for eviction due to memory available signal. Sample
-     * format: "10s". Must be >= 0. See
-     * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @param string $memoryAvailable
-     */
-    public function setMemoryAvailable($memoryAvailable)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMemoryAvailable()
-    {
-    }
-    /**
-     * Optional. Grace period for eviction due to nodefs available signal. Sample
-     * format: "10s". Must be >= 0. See
-     * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @param string $nodefsAvailable
-     */
-    public function setNodefsAvailable($nodefsAvailable)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNodefsAvailable()
-    {
-    }
-    /**
-     * Optional. Grace period for eviction due to nodefs inodes free signal.
-     * Sample format: "10s". Must be >= 0. See
-     * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @param string $nodefsInodesFree
-     */
-    public function setNodefsInodesFree($nodefsInodesFree)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNodefsInodesFree()
-    {
-    }
-    /**
-     * Optional. Grace period for eviction due to pid available signal. Sample
-     * format: "10s". Must be >= 0. See
-     * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @param string $pidAvailable
-     */
-    public function setPidAvailable($pidAvailable)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPidAvailable()
+    class Google_Service_Container_EvictionGracePeriod extends \Google\Service\Container\EvictionGracePeriod
     {
     }
 }

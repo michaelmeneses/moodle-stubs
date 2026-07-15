@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class NodeTaint extends \Google\Model
-{
-    /**
-     * Not set
-     */
-    public const EFFECT_EFFECT_UNSPECIFIED = 'EFFECT_UNSPECIFIED';
-    /**
-     * NoSchedule
-     */
-    public const EFFECT_NO_SCHEDULE = 'NO_SCHEDULE';
-    /**
-     * PreferNoSchedule
-     */
-    public const EFFECT_PREFER_NO_SCHEDULE = 'PREFER_NO_SCHEDULE';
-    /**
-     * NoExecute
-     */
-    public const EFFECT_NO_EXECUTE = 'NO_EXECUTE';
-    /**
-     * Effect for taint.
-     *
-     * @var string
-     */
-    public $effect;
-    /**
-     * Key for taint.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Value for taint.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Effect for taint.
-     *
-     * Accepted values: EFFECT_UNSPECIFIED, NO_SCHEDULE, PREFER_NO_SCHEDULE,
-     * NO_EXECUTE
-     *
-     * @param self::EFFECT_* $effect
-     */
-    public function setEffect($effect)
+namespace Google\Service\Container {
+    class NodeTaint extends \Google\Model
     {
+        /**
+         * Not set
+         */
+        public const EFFECT_EFFECT_UNSPECIFIED = 'EFFECT_UNSPECIFIED';
+        /**
+         * NoSchedule
+         */
+        public const EFFECT_NO_SCHEDULE = 'NO_SCHEDULE';
+        /**
+         * PreferNoSchedule
+         */
+        public const EFFECT_PREFER_NO_SCHEDULE = 'PREFER_NO_SCHEDULE';
+        /**
+         * NoExecute
+         */
+        public const EFFECT_NO_EXECUTE = 'NO_EXECUTE';
+        /**
+         * Effect for taint.
+         *
+         * @var string
+         */
+        public $effect;
+        /**
+         * Key for taint.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Value for taint.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Effect for taint.
+         *
+         * Accepted values: EFFECT_UNSPECIFIED, NO_SCHEDULE, PREFER_NO_SCHEDULE,
+         * NO_EXECUTE
+         *
+         * @param self::EFFECT_* $effect
+         */
+        public function setEffect($effect)
+        {
+        }
+        /**
+         * @return self::EFFECT_*
+         */
+        public function getEffect()
+        {
+        }
+        /**
+         * Key for taint.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Value for taint.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::EFFECT_*
+     * Runtime class alias of \Google\Service\Container\NodeTaint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEffect()
-    {
-    }
-    /**
-     * Key for taint.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * Value for taint.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Container_NodeTaint extends \Google\Service\Container\NodeTaint
     {
     }
 }

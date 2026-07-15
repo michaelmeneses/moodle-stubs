@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\task;
 
+use context_module;
+use core_user;
+use mod_quiz\quiz_attempt;
+use moodle_recordset;
+use question_display_options;
+use mod_quiz\question\display_options;
 /**
  * Cron Quiz Notify Attempts Graded Task.
  *

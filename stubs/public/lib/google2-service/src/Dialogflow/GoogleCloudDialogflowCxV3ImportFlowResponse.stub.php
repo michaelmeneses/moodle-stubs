@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ImportFlowResponse extends \Google\Model
-{
-    /**
-     * The unique identifier of the new flow. Format:
-     * `projects//locations//agents//flows/`.
-     *
-     * @var string
-     */
-    public $flow;
-    /**
-     * The unique identifier of the new flow. Format:
-     * `projects//locations//agents//flows/`.
-     *
-     * @param string $flow
-     */
-    public function setFlow($flow)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ImportFlowResponse extends \Google\Model
     {
+        /**
+         * The unique identifier of the new flow. Format:
+         * `projects//locations//agents//flows/`.
+         *
+         * @var string
+         */
+        public $flow;
+        /**
+         * The unique identifier of the new flow. Format:
+         * `projects//locations//agents//flows/`.
+         *
+         * @param string $flow
+         */
+        public function setFlow($flow)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFlow()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ImportFlowResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFlow()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ImportFlowResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ImportFlowResponse
     {
     }
 }

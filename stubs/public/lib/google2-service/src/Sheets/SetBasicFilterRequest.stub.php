@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class SetBasicFilterRequest extends \Google\Model
-{
-    protected $filterType = BasicFilter::class;
-    protected $filterDataType = '';
-    /**
-     * The filter to set.
-     *
-     * @param BasicFilter $filter
-     */
-    public function setFilter(BasicFilter $filter)
+namespace Google\Service\Sheets {
+    class SetBasicFilterRequest extends \Google\Model
     {
+        protected $filterType = BasicFilter::class;
+        protected $filterDataType = '';
+        /**
+         * The filter to set.
+         *
+         * @param BasicFilter $filter
+         */
+        public function setFilter(BasicFilter $filter)
+        {
+        }
+        /**
+         * @return BasicFilter
+         */
+        public function getFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BasicFilter
+     * Runtime class alias of \Google\Service\Sheets\SetBasicFilterRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
+    class Google_Service_Sheets_SetBasicFilterRequest extends \Google\Service\Sheets\SetBasicFilterRequest
     {
     }
 }

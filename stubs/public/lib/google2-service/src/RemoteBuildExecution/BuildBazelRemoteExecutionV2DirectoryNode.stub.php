@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2DirectoryNode extends \Google\Model
-{
-    protected $digestType = BuildBazelRemoteExecutionV2Digest::class;
-    protected $digestDataType = '';
-    public $name;
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2DirectoryNode extends \Google\Model
+    {
+        protected $digestType = BuildBazelRemoteExecutionV2Digest::class;
+        protected $digestDataType = '';
+        public $name;
+        /**
+         * @param BuildBazelRemoteExecutionV2Digest
+         */
+        public function setDigest(BuildBazelRemoteExecutionV2Digest $digest)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2Digest
+         */
+        public function getDigest()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param BuildBazelRemoteExecutionV2Digest
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2DirectoryNode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setDigest(BuildBazelRemoteExecutionV2Digest $digest)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2Digest
-     */
-    public function getDigest()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2DirectoryNode extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2DirectoryNode
     {
     }
 }

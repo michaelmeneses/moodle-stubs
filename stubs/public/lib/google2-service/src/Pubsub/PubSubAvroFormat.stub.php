@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class PubSubAvroFormat extends \Google\Model
-{
+namespace Google\Service\Pubsub {
+    class PubSubAvroFormat extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Pubsub\PubSubAvroFormat registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Pubsub_PubSubAvroFormat extends \Google\Service\Pubsub\PubSubAvroFormat
+    {
+    }
 }

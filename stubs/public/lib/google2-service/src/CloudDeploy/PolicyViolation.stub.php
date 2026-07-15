@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class PolicyViolation extends \Google\Collection
-{
-    protected $collection_key = 'policyViolationDetails';
-    protected $policyViolationDetailsType = PolicyViolationDetails::class;
-    protected $policyViolationDetailsDataType = 'array';
-    /**
-     * Policy violation details.
-     *
-     * @param PolicyViolationDetails[] $policyViolationDetails
-     */
-    public function setPolicyViolationDetails($policyViolationDetails)
+namespace Google\Service\CloudDeploy {
+    class PolicyViolation extends \Google\Collection
     {
+        protected $collection_key = 'policyViolationDetails';
+        protected $policyViolationDetailsType = PolicyViolationDetails::class;
+        protected $policyViolationDetailsDataType = 'array';
+        /**
+         * Policy violation details.
+         *
+         * @param PolicyViolationDetails[] $policyViolationDetails
+         */
+        public function setPolicyViolationDetails($policyViolationDetails)
+        {
+        }
+        /**
+         * @return PolicyViolationDetails[]
+         */
+        public function getPolicyViolationDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PolicyViolationDetails[]
+     * Runtime class alias of \Google\Service\CloudDeploy\PolicyViolation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicyViolationDetails()
+    class Google_Service_CloudDeploy_PolicyViolation extends \Google\Service\CloudDeploy\PolicyViolation
     {
     }
 }

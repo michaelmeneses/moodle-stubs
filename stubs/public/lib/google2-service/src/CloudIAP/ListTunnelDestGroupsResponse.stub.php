@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIAP;
-
-class ListTunnelDestGroupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'tunnelDestGroups';
-    /**
-     * A token that you can send as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $tunnelDestGroupsType = TunnelDestGroup::class;
-    protected $tunnelDestGroupsDataType = 'array';
-    /**
-     * A token that you can send as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudIAP {
+    class ListTunnelDestGroupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'tunnelDestGroups';
+        /**
+         * A token that you can send as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $tunnelDestGroupsType = TunnelDestGroup::class;
+        protected $tunnelDestGroupsDataType = 'array';
+        /**
+         * A token that you can send as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * TunnelDestGroup existing in the project.
+         *
+         * @param TunnelDestGroup[] $tunnelDestGroups
+         */
+        public function setTunnelDestGroups($tunnelDestGroups)
+        {
+        }
+        /**
+         * @return TunnelDestGroup[]
+         */
+        public function getTunnelDestGroups()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIAP\ListTunnelDestGroupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * TunnelDestGroup existing in the project.
-     *
-     * @param TunnelDestGroup[] $tunnelDestGroups
-     */
-    public function setTunnelDestGroups($tunnelDestGroups)
-    {
-    }
-    /**
-     * @return TunnelDestGroup[]
-     */
-    public function getTunnelDestGroups()
+    class Google_Service_CloudIAP_ListTunnelDestGroupsResponse extends \Google\Service\CloudIAP\ListTunnelDestGroupsResponse
     {
     }
 }

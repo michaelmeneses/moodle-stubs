@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class TruncateLogContext extends \Google\Model
-{
-    /**
-     * This is always `sql#truncateLogContext`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The type of log to truncate. Valid values are `MYSQL_GENERAL_TABLE` and
-     * `MYSQL_SLOW_TABLE`.
-     *
-     * @var string
-     */
-    public $logType;
-    /**
-     * This is always `sql#truncateLogContext`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\SQLAdmin {
+    class TruncateLogContext extends \Google\Model
     {
+        /**
+         * This is always `sql#truncateLogContext`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The type of log to truncate. Valid values are `MYSQL_GENERAL_TABLE` and
+         * `MYSQL_SLOW_TABLE`.
+         *
+         * @var string
+         */
+        public $logType;
+        /**
+         * This is always `sql#truncateLogContext`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The type of log to truncate. Valid values are `MYSQL_GENERAL_TABLE` and
+         * `MYSQL_SLOW_TABLE`.
+         *
+         * @param string $logType
+         */
+        public function setLogType($logType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLogType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\TruncateLogContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The type of log to truncate. Valid values are `MYSQL_GENERAL_TABLE` and
-     * `MYSQL_SLOW_TABLE`.
-     *
-     * @param string $logType
-     */
-    public function setLogType($logType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLogType()
+    class Google_Service_SQLAdmin_TruncateLogContext extends \Google\Service\SQLAdmin\TruncateLogContext
     {
     }
 }

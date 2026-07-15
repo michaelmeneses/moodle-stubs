@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2PurgeUserEventsResponse extends \Google\Model
-{
-    /**
-     * The total count of events purged as a result of the operation.
-     *
-     * @var string
-     */
-    public $purgedEventsCount;
-    /**
-     * The total count of events purged as a result of the operation.
-     *
-     * @param string $purgedEventsCount
-     */
-    public function setPurgedEventsCount($purgedEventsCount)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2PurgeUserEventsResponse extends \Google\Model
     {
+        /**
+         * The total count of events purged as a result of the operation.
+         *
+         * @var string
+         */
+        public $purgedEventsCount;
+        /**
+         * The total count of events purged as a result of the operation.
+         *
+         * @param string $purgedEventsCount
+         */
+        public function setPurgedEventsCount($purgedEventsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPurgedEventsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2PurgeUserEventsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPurgedEventsCount()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2PurgeUserEventsResponse extends \Google\Service\CloudRetail\GoogleCloudRetailV2PurgeUserEventsResponse
     {
     }
 }

@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class VideoSuggestionsTagSuggestion extends \Google\Collection
-{
-    protected $collection_key = 'categoryRestricts';
-    /**
-     * A set of video categories for which the tag is relevant. You can use this
-     * information to display appropriate tag suggestions based on the video
-     * category that the video uploader associates with the video. By default, tag
-     * suggestions are relevant for all categories if there are no restricts
-     * defined for the keyword.
-     *
-     * @var string[]
-     */
-    public $categoryRestricts;
-    /**
-     * The keyword tag suggested for the video.
-     *
-     * @var string
-     */
-    public $tag;
-    /**
-     * A set of video categories for which the tag is relevant. You can use this
-     * information to display appropriate tag suggestions based on the video
-     * category that the video uploader associates with the video. By default, tag
-     * suggestions are relevant for all categories if there are no restricts
-     * defined for the keyword.
-     *
-     * @param string[] $categoryRestricts
-     */
-    public function setCategoryRestricts($categoryRestricts)
+namespace Google\Service\YouTube {
+    class VideoSuggestionsTagSuggestion extends \Google\Collection
     {
+        protected $collection_key = 'categoryRestricts';
+        /**
+         * A set of video categories for which the tag is relevant. You can use this
+         * information to display appropriate tag suggestions based on the video
+         * category that the video uploader associates with the video. By default, tag
+         * suggestions are relevant for all categories if there are no restricts
+         * defined for the keyword.
+         *
+         * @var string[]
+         */
+        public $categoryRestricts;
+        /**
+         * The keyword tag suggested for the video.
+         *
+         * @var string
+         */
+        public $tag;
+        /**
+         * A set of video categories for which the tag is relevant. You can use this
+         * information to display appropriate tag suggestions based on the video
+         * category that the video uploader associates with the video. By default, tag
+         * suggestions are relevant for all categories if there are no restricts
+         * defined for the keyword.
+         *
+         * @param string[] $categoryRestricts
+         */
+        public function setCategoryRestricts($categoryRestricts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCategoryRestricts()
+        {
+        }
+        /**
+         * The keyword tag suggested for the video.
+         *
+         * @param string $tag
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\YouTube\VideoSuggestionsTagSuggestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategoryRestricts()
-    {
-    }
-    /**
-     * The keyword tag suggested for the video.
-     *
-     * @param string $tag
-     */
-    public function setTag($tag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTag()
+    class Google_Service_YouTube_VideoSuggestionsTagSuggestion extends \Google\Service\YouTube\VideoSuggestionsTagSuggestion
     {
     }
 }

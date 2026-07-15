@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class DayPart extends \Google\Model
-{
-    /**
-     * A placeholder for when the day of the week is not specified.
-     */
-    public const DAY_OF_WEEK_DAY_OF_WEEK_UNSPECIFIED = 'DAY_OF_WEEK_UNSPECIFIED';
-    /**
-     * Monday
-     */
-    public const DAY_OF_WEEK_MONDAY = 'MONDAY';
-    /**
-     * Tuesday
-     */
-    public const DAY_OF_WEEK_TUESDAY = 'TUESDAY';
-    /**
-     * Wednesday
-     */
-    public const DAY_OF_WEEK_WEDNESDAY = 'WEDNESDAY';
-    /**
-     * Thursday
-     */
-    public const DAY_OF_WEEK_THURSDAY = 'THURSDAY';
-    /**
-     * Friday
-     */
-    public const DAY_OF_WEEK_FRIDAY = 'FRIDAY';
-    /**
-     * Saturday
-     */
-    public const DAY_OF_WEEK_SATURDAY = 'SATURDAY';
-    /**
-     * Sunday
-     */
-    public const DAY_OF_WEEK_SUNDAY = 'SUNDAY';
-    /**
-     * The day of the week to target. If unspecified, applicable to all days.
-     *
-     * @var string
-     */
-    public $dayOfWeek;
-    protected $endTimeType = TimeOfDay::class;
-    protected $endTimeDataType = '';
-    protected $startTimeType = TimeOfDay::class;
-    protected $startTimeDataType = '';
-    /**
-     * The day of the week to target. If unspecified, applicable to all days.
-     *
-     * Accepted values: DAY_OF_WEEK_UNSPECIFIED, MONDAY, TUESDAY, WEDNESDAY,
-     * THURSDAY, FRIDAY, SATURDAY, SUNDAY
-     *
-     * @param self::DAY_OF_WEEK_* $dayOfWeek
-     */
-    public function setDayOfWeek($dayOfWeek)
+namespace Google\Service\AdExchangeBuyerII {
+    class DayPart extends \Google\Model
     {
+        /**
+         * A placeholder for when the day of the week is not specified.
+         */
+        public const DAY_OF_WEEK_DAY_OF_WEEK_UNSPECIFIED = 'DAY_OF_WEEK_UNSPECIFIED';
+        /**
+         * Monday
+         */
+        public const DAY_OF_WEEK_MONDAY = 'MONDAY';
+        /**
+         * Tuesday
+         */
+        public const DAY_OF_WEEK_TUESDAY = 'TUESDAY';
+        /**
+         * Wednesday
+         */
+        public const DAY_OF_WEEK_WEDNESDAY = 'WEDNESDAY';
+        /**
+         * Thursday
+         */
+        public const DAY_OF_WEEK_THURSDAY = 'THURSDAY';
+        /**
+         * Friday
+         */
+        public const DAY_OF_WEEK_FRIDAY = 'FRIDAY';
+        /**
+         * Saturday
+         */
+        public const DAY_OF_WEEK_SATURDAY = 'SATURDAY';
+        /**
+         * Sunday
+         */
+        public const DAY_OF_WEEK_SUNDAY = 'SUNDAY';
+        /**
+         * The day of the week to target. If unspecified, applicable to all days.
+         *
+         * @var string
+         */
+        public $dayOfWeek;
+        protected $endTimeType = TimeOfDay::class;
+        protected $endTimeDataType = '';
+        protected $startTimeType = TimeOfDay::class;
+        protected $startTimeDataType = '';
+        /**
+         * The day of the week to target. If unspecified, applicable to all days.
+         *
+         * Accepted values: DAY_OF_WEEK_UNSPECIFIED, MONDAY, TUESDAY, WEDNESDAY,
+         * THURSDAY, FRIDAY, SATURDAY, SUNDAY
+         *
+         * @param self::DAY_OF_WEEK_* $dayOfWeek
+         */
+        public function setDayOfWeek($dayOfWeek)
+        {
+        }
+        /**
+         * @return self::DAY_OF_WEEK_*
+         */
+        public function getDayOfWeek()
+        {
+        }
+        /**
+         * The ending time of the day for the ad to show (minute level granularity).
+         * The end time is exclusive. This field is not available for filtering in PQL
+         * queries.
+         *
+         * @param TimeOfDay $endTime
+         */
+        public function setEndTime(TimeOfDay $endTime)
+        {
+        }
+        /**
+         * @return TimeOfDay
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The starting time of day for the ad to show (minute level granularity). The
+         * start time is inclusive. This field is not available for filtering in PQL
+         * queries.
+         *
+         * @param TimeOfDay $startTime
+         */
+        public function setStartTime(TimeOfDay $startTime)
+        {
+        }
+        /**
+         * @return TimeOfDay
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DAY_OF_WEEK_*
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\DayPart registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDayOfWeek()
-    {
-    }
-    /**
-     * The ending time of the day for the ad to show (minute level granularity).
-     * The end time is exclusive. This field is not available for filtering in PQL
-     * queries.
-     *
-     * @param TimeOfDay $endTime
-     */
-    public function setEndTime(TimeOfDay $endTime)
-    {
-    }
-    /**
-     * @return TimeOfDay
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The starting time of day for the ad to show (minute level granularity). The
-     * start time is inclusive. This field is not available for filtering in PQL
-     * queries.
-     *
-     * @param TimeOfDay $startTime
-     */
-    public function setStartTime(TimeOfDay $startTime)
-    {
-    }
-    /**
-     * @return TimeOfDay
-     */
-    public function getStartTime()
+    class Google_Service_AdExchangeBuyerII_DayPart extends \Google\Service\AdExchangeBuyerII\DayPart
     {
     }
 }

@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceManagedByIgmError extends \Google\Model
-{
-    protected $errorType = InstanceManagedByIgmErrorManagedInstanceError::class;
-    protected $errorDataType = '';
-    protected $instanceActionDetailsType = InstanceManagedByIgmErrorInstanceActionDetails::class;
-    protected $instanceActionDetailsDataType = '';
-    /**
-     * Output only. [Output Only] The time that this error occurred. This value is
-     * in RFC3339 text format.
-     *
-     * @var string
-     */
-    public $timestamp;
-    /**
-     * Output only. [Output Only] Contents of the error.
-     *
-     * @param InstanceManagedByIgmErrorManagedInstanceError $error
-     */
-    public function setError(InstanceManagedByIgmErrorManagedInstanceError $error)
+namespace Google\Service\Compute {
+    class InstanceManagedByIgmError extends \Google\Model
     {
+        protected $errorType = InstanceManagedByIgmErrorManagedInstanceError::class;
+        protected $errorDataType = '';
+        protected $instanceActionDetailsType = InstanceManagedByIgmErrorInstanceActionDetails::class;
+        protected $instanceActionDetailsDataType = '';
+        /**
+         * Output only. [Output Only] The time that this error occurred. This value is
+         * in RFC3339 text format.
+         *
+         * @var string
+         */
+        public $timestamp;
+        /**
+         * Output only. [Output Only] Contents of the error.
+         *
+         * @param InstanceManagedByIgmErrorManagedInstanceError $error
+         */
+        public function setError(InstanceManagedByIgmErrorManagedInstanceError $error)
+        {
+        }
+        /**
+         * @return InstanceManagedByIgmErrorManagedInstanceError
+         */
+        public function getError()
+        {
+        }
+        /**
+         * Output only. [Output Only] Details of the instance action that triggered
+         * this error. May be null, if the error was not caused by an action on an
+         * instance. This field is optional.
+         *
+         * @param InstanceManagedByIgmErrorInstanceActionDetails $instanceActionDetails
+         */
+        public function setInstanceActionDetails(InstanceManagedByIgmErrorInstanceActionDetails $instanceActionDetails)
+        {
+        }
+        /**
+         * @return InstanceManagedByIgmErrorInstanceActionDetails
+         */
+        public function getInstanceActionDetails()
+        {
+        }
+        /**
+         * Output only. [Output Only] The time that this error occurred. This value is
+         * in RFC3339 text format.
+         *
+         * @param string $timestamp
+         */
+        public function setTimestamp($timestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestamp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InstanceManagedByIgmErrorManagedInstanceError
+     * Runtime class alias of \Google\Service\Compute\InstanceManagedByIgmError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * Output only. [Output Only] Details of the instance action that triggered
-     * this error. May be null, if the error was not caused by an action on an
-     * instance. This field is optional.
-     *
-     * @param InstanceManagedByIgmErrorInstanceActionDetails $instanceActionDetails
-     */
-    public function setInstanceActionDetails(InstanceManagedByIgmErrorInstanceActionDetails $instanceActionDetails)
-    {
-    }
-    /**
-     * @return InstanceManagedByIgmErrorInstanceActionDetails
-     */
-    public function getInstanceActionDetails()
-    {
-    }
-    /**
-     * Output only. [Output Only] The time that this error occurred. This value is
-     * in RFC3339 text format.
-     *
-     * @param string $timestamp
-     */
-    public function setTimestamp($timestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestamp()
+    class Google_Service_Compute_InstanceManagedByIgmError extends \Google\Service\Compute\InstanceManagedByIgmError
     {
     }
 }

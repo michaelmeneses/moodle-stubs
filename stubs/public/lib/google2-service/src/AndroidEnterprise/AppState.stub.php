@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class AppState extends \Google\Collection
-{
-    protected $collection_key = 'keyedAppState';
-    protected $keyedAppStateType = KeyedAppState::class;
-    protected $keyedAppStateDataType = 'array';
-    /**
-     * The package name of the app. This field will always be present.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * List of keyed app states. This field will always be present.
-     *
-     * @param KeyedAppState[] $keyedAppState
-     */
-    public function setKeyedAppState($keyedAppState)
+namespace Google\Service\AndroidEnterprise {
+    class AppState extends \Google\Collection
     {
+        protected $collection_key = 'keyedAppState';
+        protected $keyedAppStateType = KeyedAppState::class;
+        protected $keyedAppStateDataType = 'array';
+        /**
+         * The package name of the app. This field will always be present.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * List of keyed app states. This field will always be present.
+         *
+         * @param KeyedAppState[] $keyedAppState
+         */
+        public function setKeyedAppState($keyedAppState)
+        {
+        }
+        /**
+         * @return KeyedAppState[]
+         */
+        public function getKeyedAppState()
+        {
+        }
+        /**
+         * The package name of the app. This field will always be present.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return KeyedAppState[]
+     * Runtime class alias of \Google\Service\AndroidEnterprise\AppState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeyedAppState()
-    {
-    }
-    /**
-     * The package name of the app. This field will always be present.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
+    class Google_Service_AndroidEnterprise_AppState extends \Google\Service\AndroidEnterprise\AppState
     {
     }
 }

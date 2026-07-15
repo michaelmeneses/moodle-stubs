@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3FulfillIntentRequest extends \Google\Model
-{
-    protected $matchType = GoogleCloudDialogflowCxV3Match::class;
-    protected $matchDataType = '';
-    protected $matchIntentRequestType = GoogleCloudDialogflowCxV3MatchIntentRequest::class;
-    protected $matchIntentRequestDataType = '';
-    protected $outputAudioConfigType = GoogleCloudDialogflowCxV3OutputAudioConfig::class;
-    protected $outputAudioConfigDataType = '';
-    /**
-     * The matched intent/event to fulfill.
-     *
-     * @param GoogleCloudDialogflowCxV3Match $match
-     */
-    public function setMatch(GoogleCloudDialogflowCxV3Match $match)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3FulfillIntentRequest extends \Google\Model
     {
+        protected $matchType = GoogleCloudDialogflowCxV3Match::class;
+        protected $matchDataType = '';
+        protected $matchIntentRequestType = GoogleCloudDialogflowCxV3MatchIntentRequest::class;
+        protected $matchIntentRequestDataType = '';
+        protected $outputAudioConfigType = GoogleCloudDialogflowCxV3OutputAudioConfig::class;
+        protected $outputAudioConfigDataType = '';
+        /**
+         * The matched intent/event to fulfill.
+         *
+         * @param GoogleCloudDialogflowCxV3Match $match
+         */
+        public function setMatch(GoogleCloudDialogflowCxV3Match $match)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3Match
+         */
+        public function getMatch()
+        {
+        }
+        /**
+         * Must be same as the corresponding MatchIntent request, otherwise the
+         * behavior is undefined.
+         *
+         * @param GoogleCloudDialogflowCxV3MatchIntentRequest $matchIntentRequest
+         */
+        public function setMatchIntentRequest(GoogleCloudDialogflowCxV3MatchIntentRequest $matchIntentRequest)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3MatchIntentRequest
+         */
+        public function getMatchIntentRequest()
+        {
+        }
+        /**
+         * Instructs the speech synthesizer how to generate output audio.
+         *
+         * @param GoogleCloudDialogflowCxV3OutputAudioConfig $outputAudioConfig
+         */
+        public function setOutputAudioConfig(GoogleCloudDialogflowCxV3OutputAudioConfig $outputAudioConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3OutputAudioConfig
+         */
+        public function getOutputAudioConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3Match
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3FulfillIntentRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMatch()
-    {
-    }
-    /**
-     * Must be same as the corresponding MatchIntent request, otherwise the
-     * behavior is undefined.
-     *
-     * @param GoogleCloudDialogflowCxV3MatchIntentRequest $matchIntentRequest
-     */
-    public function setMatchIntentRequest(GoogleCloudDialogflowCxV3MatchIntentRequest $matchIntentRequest)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3MatchIntentRequest
-     */
-    public function getMatchIntentRequest()
-    {
-    }
-    /**
-     * Instructs the speech synthesizer how to generate output audio.
-     *
-     * @param GoogleCloudDialogflowCxV3OutputAudioConfig $outputAudioConfig
-     */
-    public function setOutputAudioConfig(GoogleCloudDialogflowCxV3OutputAudioConfig $outputAudioConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3OutputAudioConfig
-     */
-    public function getOutputAudioConfig()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3FulfillIntentRequest extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3FulfillIntentRequest
     {
     }
 }

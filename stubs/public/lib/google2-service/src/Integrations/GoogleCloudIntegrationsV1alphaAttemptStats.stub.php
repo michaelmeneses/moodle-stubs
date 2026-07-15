@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaAttemptStats extends \Google\Model
-{
-    /**
-     * The end time of the integration execution for current attempt.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * The start time of the integration execution for current attempt. This could
-     * be in the future if it's been scheduled.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * The end time of the integration execution for current attempt.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaAttemptStats extends \Google\Model
     {
+        /**
+         * The end time of the integration execution for current attempt.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * The start time of the integration execution for current attempt. This could
+         * be in the future if it's been scheduled.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * The end time of the integration execution for current attempt.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The start time of the integration execution for current attempt. This could
+         * be in the future if it's been scheduled.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaAttemptStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The start time of the integration execution for current attempt. This could
-     * be in the future if it's been scheduled.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaAttemptStats extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaAttemptStats
     {
     }
 }

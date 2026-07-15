@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class EventRecordFailure extends \Google\Model
-{
-    /**
-     * An attempt was made to set an event that was not defined.
-     */
-    public const FAILURE_CAUSE_NOT_FOUND = 'NOT_FOUND';
-    /**
-     * An attempt was made to increment an event by a non-positive value.
-     */
-    public const FAILURE_CAUSE_INVALID_UPDATE_VALUE = 'INVALID_UPDATE_VALUE';
-    /**
-     * The ID of the event that was not updated.
-     *
-     * @var string
-     */
-    public $eventId;
-    /**
-     * The cause for the update failure.
-     *
-     * @var string
-     */
-    public $failureCause;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#eventRecordFailure`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The ID of the event that was not updated.
-     *
-     * @param string $eventId
-     */
-    public function setEventId($eventId)
+namespace Google\Service\Games {
+    class EventRecordFailure extends \Google\Model
     {
+        /**
+         * An attempt was made to set an event that was not defined.
+         */
+        public const FAILURE_CAUSE_NOT_FOUND = 'NOT_FOUND';
+        /**
+         * An attempt was made to increment an event by a non-positive value.
+         */
+        public const FAILURE_CAUSE_INVALID_UPDATE_VALUE = 'INVALID_UPDATE_VALUE';
+        /**
+         * The ID of the event that was not updated.
+         *
+         * @var string
+         */
+        public $eventId;
+        /**
+         * The cause for the update failure.
+         *
+         * @var string
+         */
+        public $failureCause;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#eventRecordFailure`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The ID of the event that was not updated.
+         *
+         * @param string $eventId
+         */
+        public function setEventId($eventId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventId()
+        {
+        }
+        /**
+         * The cause for the update failure.
+         *
+         * Accepted values: NOT_FOUND, INVALID_UPDATE_VALUE
+         *
+         * @param self::FAILURE_CAUSE_* $failureCause
+         */
+        public function setFailureCause($failureCause)
+        {
+        }
+        /**
+         * @return self::FAILURE_CAUSE_*
+         */
+        public function getFailureCause()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#eventRecordFailure`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\EventRecordFailure registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventId()
-    {
-    }
-    /**
-     * The cause for the update failure.
-     *
-     * Accepted values: NOT_FOUND, INVALID_UPDATE_VALUE
-     *
-     * @param self::FAILURE_CAUSE_* $failureCause
-     */
-    public function setFailureCause($failureCause)
-    {
-    }
-    /**
-     * @return self::FAILURE_CAUSE_*
-     */
-    public function getFailureCause()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#eventRecordFailure`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Games_EventRecordFailure extends \Google\Service\Games\EventRecordFailure
     {
     }
 }

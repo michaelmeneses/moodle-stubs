@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Eventarc;
-
-class Pubsub extends \Google\Model
-{
-    /**
-     * Output only. The name of the Pub/Sub subscription created and managed by
-     * Eventarc as a transport for the event delivery. Format:
-     * `projects/{PROJECT_ID}/subscriptions/{SUBSCRIPTION_NAME}`.
-     *
-     * @var string
-     */
-    public $subscription;
-    /**
-     * Optional. The name of the Pub/Sub topic created and managed by Eventarc as
-     * a transport for the event delivery. Format:
-     * `projects/{PROJECT_ID}/topics/{TOPIC_NAME}`. You can set an existing topic
-     * for triggers of the type `google.cloud.pubsub.topic.v1.messagePublished`.
-     * The topic you provide here is not deleted by Eventarc at trigger deletion.
-     *
-     * @var string
-     */
-    public $topic;
-    /**
-     * Output only. The name of the Pub/Sub subscription created and managed by
-     * Eventarc as a transport for the event delivery. Format:
-     * `projects/{PROJECT_ID}/subscriptions/{SUBSCRIPTION_NAME}`.
-     *
-     * @param string $subscription
-     */
-    public function setSubscription($subscription)
+namespace Google\Service\Eventarc {
+    class Pubsub extends \Google\Model
     {
+        /**
+         * Output only. The name of the Pub/Sub subscription created and managed by
+         * Eventarc as a transport for the event delivery. Format:
+         * `projects/{PROJECT_ID}/subscriptions/{SUBSCRIPTION_NAME}`.
+         *
+         * @var string
+         */
+        public $subscription;
+        /**
+         * Optional. The name of the Pub/Sub topic created and managed by Eventarc as
+         * a transport for the event delivery. Format:
+         * `projects/{PROJECT_ID}/topics/{TOPIC_NAME}`. You can set an existing topic
+         * for triggers of the type `google.cloud.pubsub.topic.v1.messagePublished`.
+         * The topic you provide here is not deleted by Eventarc at trigger deletion.
+         *
+         * @var string
+         */
+        public $topic;
+        /**
+         * Output only. The name of the Pub/Sub subscription created and managed by
+         * Eventarc as a transport for the event delivery. Format:
+         * `projects/{PROJECT_ID}/subscriptions/{SUBSCRIPTION_NAME}`.
+         *
+         * @param string $subscription
+         */
+        public function setSubscription($subscription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubscription()
+        {
+        }
+        /**
+         * Optional. The name of the Pub/Sub topic created and managed by Eventarc as
+         * a transport for the event delivery. Format:
+         * `projects/{PROJECT_ID}/topics/{TOPIC_NAME}`. You can set an existing topic
+         * for triggers of the type `google.cloud.pubsub.topic.v1.messagePublished`.
+         * The topic you provide here is not deleted by Eventarc at trigger deletion.
+         *
+         * @param string $topic
+         */
+        public function setTopic($topic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Eventarc\Pubsub registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSubscription()
-    {
-    }
-    /**
-     * Optional. The name of the Pub/Sub topic created and managed by Eventarc as
-     * a transport for the event delivery. Format:
-     * `projects/{PROJECT_ID}/topics/{TOPIC_NAME}`. You can set an existing topic
-     * for triggers of the type `google.cloud.pubsub.topic.v1.messagePublished`.
-     * The topic you provide here is not deleted by Eventarc at trigger deletion.
-     *
-     * @param string $topic
-     */
-    public function setTopic($topic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopic()
+    class Google_Service_Eventarc_Pubsub extends \Google\Service\Eventarc\Pubsub
     {
     }
 }

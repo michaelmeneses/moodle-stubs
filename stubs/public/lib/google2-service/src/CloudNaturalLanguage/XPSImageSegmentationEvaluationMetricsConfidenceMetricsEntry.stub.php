@@ -21,126 +21,135 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSImageSegmentationEvaluationMetricsConfidenceMetricsEntry extends \Google\Model
-{
-    /**
-     * The confidence threshold value used to compute the metrics.
-     *
-     * @var float
-     */
-    public $confidenceThreshold;
-    protected $confusionMatrixType = XPSConfusionMatrix::class;
-    protected $confusionMatrixDataType = '';
-    /**
-     * DSC or the F1 score: The harmonic mean of recall and precision.
-     *
-     * @var float
-     */
-    public $diceScoreCoefficient;
-    /**
-     * IOU score.
-     *
-     * @var float
-     */
-    public $iouScore;
-    /**
-     * Precision for the given confidence threshold.
-     *
-     * @var float
-     */
-    public $precision;
-    /**
-     * Recall for the given confidence threshold.
-     *
-     * @var float
-     */
-    public $recall;
-    /**
-     * The confidence threshold value used to compute the metrics.
-     *
-     * @param float $confidenceThreshold
-     */
-    public function setConfidenceThreshold($confidenceThreshold)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSImageSegmentationEvaluationMetricsConfidenceMetricsEntry extends \Google\Model
     {
+        /**
+         * The confidence threshold value used to compute the metrics.
+         *
+         * @var float
+         */
+        public $confidenceThreshold;
+        protected $confusionMatrixType = XPSConfusionMatrix::class;
+        protected $confusionMatrixDataType = '';
+        /**
+         * DSC or the F1 score: The harmonic mean of recall and precision.
+         *
+         * @var float
+         */
+        public $diceScoreCoefficient;
+        /**
+         * IOU score.
+         *
+         * @var float
+         */
+        public $iouScore;
+        /**
+         * Precision for the given confidence threshold.
+         *
+         * @var float
+         */
+        public $precision;
+        /**
+         * Recall for the given confidence threshold.
+         *
+         * @var float
+         */
+        public $recall;
+        /**
+         * The confidence threshold value used to compute the metrics.
+         *
+         * @param float $confidenceThreshold
+         */
+        public function setConfidenceThreshold($confidenceThreshold)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidenceThreshold()
+        {
+        }
+        /**
+         * Confusion matrix of the per confidence_threshold evaluation. Pixel counts
+         * are set here. Only set for model level evaluation, not for evaluation per
+         * label.
+         *
+         * @param XPSConfusionMatrix $confusionMatrix
+         */
+        public function setConfusionMatrix(XPSConfusionMatrix $confusionMatrix)
+        {
+        }
+        /**
+         * @return XPSConfusionMatrix
+         */
+        public function getConfusionMatrix()
+        {
+        }
+        /**
+         * DSC or the F1 score: The harmonic mean of recall and precision.
+         *
+         * @param float $diceScoreCoefficient
+         */
+        public function setDiceScoreCoefficient($diceScoreCoefficient)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getDiceScoreCoefficient()
+        {
+        }
+        /**
+         * IOU score.
+         *
+         * @param float $iouScore
+         */
+        public function setIouScore($iouScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getIouScore()
+        {
+        }
+        /**
+         * Precision for the given confidence threshold.
+         *
+         * @param float $precision
+         */
+        public function setPrecision($precision)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getPrecision()
+        {
+        }
+        /**
+         * Recall for the given confidence threshold.
+         *
+         * @param float $recall
+         */
+        public function setRecall($recall)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getRecall()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSImageSegmentationEvaluationMetricsConfidenceMetricsEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidenceThreshold()
-    {
-    }
-    /**
-     * Confusion matrix of the per confidence_threshold evaluation. Pixel counts
-     * are set here. Only set for model level evaluation, not for evaluation per
-     * label.
-     *
-     * @param XPSConfusionMatrix $confusionMatrix
-     */
-    public function setConfusionMatrix(XPSConfusionMatrix $confusionMatrix)
-    {
-    }
-    /**
-     * @return XPSConfusionMatrix
-     */
-    public function getConfusionMatrix()
-    {
-    }
-    /**
-     * DSC or the F1 score: The harmonic mean of recall and precision.
-     *
-     * @param float $diceScoreCoefficient
-     */
-    public function setDiceScoreCoefficient($diceScoreCoefficient)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getDiceScoreCoefficient()
-    {
-    }
-    /**
-     * IOU score.
-     *
-     * @param float $iouScore
-     */
-    public function setIouScore($iouScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getIouScore()
-    {
-    }
-    /**
-     * Precision for the given confidence threshold.
-     *
-     * @param float $precision
-     */
-    public function setPrecision($precision)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getPrecision()
-    {
-    }
-    /**
-     * Recall for the given confidence threshold.
-     *
-     * @param float $recall
-     */
-    public function setRecall($recall)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getRecall()
+    class Google_Service_CloudNaturalLanguage_XPSImageSegmentationEvaluationMetricsConfidenceMetricsEntry extends \Google\Service\CloudNaturalLanguage\XPSImageSegmentationEvaluationMetricsConfidenceMetricsEntry
     {
     }
 }

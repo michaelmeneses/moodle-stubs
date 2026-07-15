@@ -21,47 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Dataform (v1).
- *
- * <p>
- * Service to develop, version control, and operationalize SQL pipelines in
- * BigQuery.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/dataform/docs" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Dataform extends \Google\Service
-{
-    /** View and manage your data in Google BigQuery and see the email address for your Google Account. */
-    const BIGQUERY = "https://www.googleapis.com/auth/bigquery";
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $projects_locations;
-    public $projects_locations_folders;
-    public $projects_locations_operations;
-    public $projects_locations_repositories;
-    public $projects_locations_repositories_compilationResults;
-    public $projects_locations_repositories_releaseConfigs;
-    public $projects_locations_repositories_workflowConfigs;
-    public $projects_locations_repositories_workflowInvocations;
-    public $projects_locations_repositories_workspaces;
-    public $projects_locations_teamFolders;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Dataform service.
+     * Service definition for Dataform (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Service to develop, version control, and operationalize SQL pipelines in
+     * BigQuery.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/dataform/docs" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Dataform extends \Google\Service
+    {
+        /** View and manage your data in Google BigQuery and see the email address for your Google Account. */
+        const BIGQUERY = "https://www.googleapis.com/auth/bigquery";
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $projects_locations;
+        public $projects_locations_folders;
+        public $projects_locations_operations;
+        public $projects_locations_repositories;
+        public $projects_locations_repositories_compilationResults;
+        public $projects_locations_repositories_releaseConfigs;
+        public $projects_locations_repositories_workflowConfigs;
+        public $projects_locations_repositories_workflowInvocations;
+        public $projects_locations_repositories_workspaces;
+        public $projects_locations_teamFolders;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Dataform service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dataform registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dataform extends \Google\Service\Dataform
     {
     }
 }

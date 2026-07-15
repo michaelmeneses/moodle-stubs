@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class HealthChecksScopedList extends \Google\Collection
-{
-    protected $collection_key = 'healthChecks';
-    protected $healthChecksType = HealthCheck::class;
-    protected $healthChecksDataType = 'array';
-    protected $warningType = HealthChecksScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * A list of HealthChecks contained in this scope.
-     *
-     * @param HealthCheck[] $healthChecks
-     */
-    public function setHealthChecks($healthChecks)
+namespace Google\Service\Compute {
+    class HealthChecksScopedList extends \Google\Collection
     {
+        protected $collection_key = 'healthChecks';
+        protected $healthChecksType = HealthCheck::class;
+        protected $healthChecksDataType = 'array';
+        protected $warningType = HealthChecksScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * A list of HealthChecks contained in this scope.
+         *
+         * @param HealthCheck[] $healthChecks
+         */
+        public function setHealthChecks($healthChecks)
+        {
+        }
+        /**
+         * @return HealthCheck[]
+         */
+        public function getHealthChecks()
+        {
+        }
+        /**
+         * Informational warning which replaces the list of backend services when the
+         * list is empty.
+         *
+         * @param HealthChecksScopedListWarning $warning
+         */
+        public function setWarning(HealthChecksScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return HealthChecksScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HealthCheck[]
+     * Runtime class alias of \Google\Service\Compute\HealthChecksScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHealthChecks()
-    {
-    }
-    /**
-     * Informational warning which replaces the list of backend services when the
-     * list is empty.
-     *
-     * @param HealthChecksScopedListWarning $warning
-     */
-    public function setWarning(HealthChecksScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return HealthChecksScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_HealthChecksScopedList extends \Google\Service\Compute\HealthChecksScopedList
     {
     }
 }

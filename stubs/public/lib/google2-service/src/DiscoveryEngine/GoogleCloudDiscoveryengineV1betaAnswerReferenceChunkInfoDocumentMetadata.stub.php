@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaAnswerReferenceChunkInfoDocumentMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $document;
-    /**
-     * @var string
-     */
-    public $pageIdentifier;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @var string
-     */
-    public $uri;
-    /**
-     * @param string
-     */
-    public function setDocument($document)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaAnswerReferenceChunkInfoDocumentMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $document;
+        /**
+         * @var string
+         */
+        public $pageIdentifier;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @var string
+         */
+        public $uri;
+        /**
+         * @param string
+         */
+        public function setDocument($document)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPageIdentifier($pageIdentifier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageIdentifier()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerReferenceChunkInfoDocumentMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocument()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPageIdentifier($pageIdentifier)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageIdentifier()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaAnswerReferenceChunkInfoDocumentMetadata extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerReferenceChunkInfoDocumentMetadata
     {
     }
 }

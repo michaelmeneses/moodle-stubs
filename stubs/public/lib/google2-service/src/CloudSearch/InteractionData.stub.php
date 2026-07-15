@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class InteractionData extends \Google\Model
-{
-    protected $urlType = SafeUrlProto::class;
-    protected $urlDataType = '';
-    /**
-     * @param SafeUrlProto
-     */
-    public function setUrl(SafeUrlProto $url)
+namespace Google\Service\CloudSearch {
+    class InteractionData extends \Google\Model
     {
+        protected $urlType = SafeUrlProto::class;
+        protected $urlDataType = '';
+        /**
+         * @param SafeUrlProto
+         */
+        public function setUrl(SafeUrlProto $url)
+        {
+        }
+        /**
+         * @return SafeUrlProto
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SafeUrlProto
+     * Runtime class alias of \Google\Service\CloudSearch\InteractionData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUrl()
+    class Google_Service_CloudSearch_InteractionData extends \Google\Service\CloudSearch\InteractionData
     {
     }
 }

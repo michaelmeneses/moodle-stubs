@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudbilling;
-
-class ListServicesResponse extends \Google\Collection
-{
-    protected $collection_key = 'services';
-    /**
-     * A token to retrieve the next page of results. To retrieve the next page,
-     * call `ListServices` again with the `page_token` field set to this value.
-     * This field is empty if there are no more results to retrieve.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $servicesType = Service::class;
-    protected $servicesDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. To retrieve the next page,
-     * call `ListServices` again with the `page_token` field set to this value.
-     * This field is empty if there are no more results to retrieve.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Cloudbilling {
+    class ListServicesResponse extends \Google\Collection
     {
+        protected $collection_key = 'services';
+        /**
+         * A token to retrieve the next page of results. To retrieve the next page,
+         * call `ListServices` again with the `page_token` field set to this value.
+         * This field is empty if there are no more results to retrieve.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $servicesType = Service::class;
+        protected $servicesDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. To retrieve the next page,
+         * call `ListServices` again with the `page_token` field set to this value.
+         * This field is empty if there are no more results to retrieve.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of services.
+         *
+         * @param Service[] $services
+         */
+        public function setServices($services)
+        {
+        }
+        /**
+         * @return Service[]
+         */
+        public function getServices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudbilling\ListServicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of services.
-     *
-     * @param Service[] $services
-     */
-    public function setServices($services)
-    {
-    }
-    /**
-     * @return Service[]
-     */
-    public function getServices()
+    class Google_Service_Cloudbilling_ListServicesResponse extends \Google\Service\Cloudbilling\ListServicesResponse
     {
     }
 }

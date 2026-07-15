@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class Election extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $electionDay;
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $ocdDivisionId;
-    /**
-     * @var string
-     */
-    public $shapeLookupBehavior;
-    /**
-     * @param string
-     */
-    public function setElectionDay($electionDay)
+namespace Google\Service\CivicInfo {
+    class Election extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $electionDay;
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $ocdDivisionId;
+        /**
+         * @var string
+         */
+        public $shapeLookupBehavior;
+        /**
+         * @param string
+         */
+        public function setElectionDay($electionDay)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getElectionDay()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOcdDivisionId($ocdDivisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOcdDivisionId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setShapeLookupBehavior($shapeLookupBehavior)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShapeLookupBehavior()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CivicInfo\Election registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getElectionDay()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOcdDivisionId($ocdDivisionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOcdDivisionId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setShapeLookupBehavior($shapeLookupBehavior)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShapeLookupBehavior()
+    class Google_Service_CivicInfo_Election extends \Google\Service\CivicInfo\Election
     {
     }
 }

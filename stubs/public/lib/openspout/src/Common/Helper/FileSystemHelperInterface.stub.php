@@ -8,6 +8,7 @@
  */
 namespace OpenSpout\Common\Helper;
 
+use OpenSpout\Common\Exception\IOException;
 /**
  * @internal
  */

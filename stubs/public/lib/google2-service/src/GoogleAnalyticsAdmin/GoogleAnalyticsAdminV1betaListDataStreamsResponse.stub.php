@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaListDataStreamsResponse extends \Google\Collection
-{
-    protected $collection_key = 'dataStreams';
-    protected $dataStreamsType = GoogleAnalyticsAdminV1betaDataStream::class;
-    protected $dataStreamsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of DataStreams.
-     *
-     * @param GoogleAnalyticsAdminV1betaDataStream[] $dataStreams
-     */
-    public function setDataStreams($dataStreams)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaListDataStreamsResponse extends \Google\Collection
     {
+        protected $collection_key = 'dataStreams';
+        protected $dataStreamsType = GoogleAnalyticsAdminV1betaDataStream::class;
+        protected $dataStreamsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of DataStreams.
+         *
+         * @param GoogleAnalyticsAdminV1betaDataStream[] $dataStreams
+         */
+        public function setDataStreams($dataStreams)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaDataStream[]
+         */
+        public function getDataStreams()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1betaDataStream[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListDataStreamsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataStreams()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaListDataStreamsResponse extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListDataStreamsResponse
     {
     }
 }

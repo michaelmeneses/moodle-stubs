@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Css;
-
-class ProductDimension extends \Google\Model
-{
-    /**
-     * Required. The dimension units. Acceptable values are: * "`in`" * "`cm`"
-     *
-     * @var string
-     */
-    public $unit;
-    /**
-     * Required. The dimension value represented as a number. The value can have a
-     * maximum precision of four decimal places.
-     *
-     * @var 
-     */
-    public $value;
-    /**
-     * Required. The dimension units. Acceptable values are: * "`in`" * "`cm`"
-     *
-     * @param string $unit
-     */
-    public function setUnit($unit)
+namespace Google\Service\Css {
+    class ProductDimension extends \Google\Model
     {
+        /**
+         * Required. The dimension units. Acceptable values are: * "`in`" * "`cm`"
+         *
+         * @var string
+         */
+        public $unit;
+        /**
+         * Required. The dimension value represented as a number. The value can have a
+         * maximum precision of four decimal places.
+         *
+         * @var 
+         */
+        public $value;
+        /**
+         * Required. The dimension units. Acceptable values are: * "`in`" * "`cm`"
+         *
+         * @param string $unit
+         */
+        public function setUnit($unit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnit()
+        {
+        }
+        public function setValue($value)
+        {
+        }
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Css\ProductDimension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUnit()
-    {
-    }
-    public function setValue($value)
-    {
-    }
-    public function getValue()
+    class Google_Service_Css_ProductDimension extends \Google\Service\Css\ProductDimension
     {
     }
 }

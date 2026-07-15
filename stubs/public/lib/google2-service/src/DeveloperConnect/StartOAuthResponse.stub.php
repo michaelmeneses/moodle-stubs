@@ -21,199 +21,208 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class StartOAuthResponse extends \Google\Collection
-{
-    /**
-     * No system provider specified.
-     */
-    public const SYSTEM_PROVIDER_ID_SYSTEM_PROVIDER_UNSPECIFIED = 'SYSTEM_PROVIDER_UNSPECIFIED';
-    /**
-     * GitHub provider. Scopes can be found at
-     * https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/scopes-for-
-     * oauth-apps#available-scopes
-     */
-    public const SYSTEM_PROVIDER_ID_GITHUB = 'GITHUB';
-    /**
-     * GitLab provider. Scopes can be found at
-     * https://docs.gitlab.com/user/profile/personal_access_tokens/#personal-
-     * access-token-scopes
-     */
-    public const SYSTEM_PROVIDER_ID_GITLAB = 'GITLAB';
-    /**
-     * Google provider. Recommended scopes:
-     * "https://www.googleapis.com/auth/drive.readonly",
-     * "https://www.googleapis.com/auth/documents.readonly"
-     */
-    public const SYSTEM_PROVIDER_ID_GOOGLE = 'GOOGLE';
-    /**
-     * Sentry provider. Scopes can be found at
-     * https://docs.sentry.io/api/permissions/
-     */
-    public const SYSTEM_PROVIDER_ID_SENTRY = 'SENTRY';
-    /**
-     * Rovo provider. Must select the "rovo" scope.
-     */
-    public const SYSTEM_PROVIDER_ID_ROVO = 'ROVO';
-    /**
-     * New Relic provider. No scopes are allowed.
-     */
-    public const SYSTEM_PROVIDER_ID_NEW_RELIC = 'NEW_RELIC';
-    /**
-     * Datastax provider. No scopes are allowed.
-     */
-    public const SYSTEM_PROVIDER_ID_DATASTAX = 'DATASTAX';
-    /**
-     * Dynatrace provider.
-     */
-    public const SYSTEM_PROVIDER_ID_DYNATRACE = 'DYNATRACE';
-    protected $collection_key = 'scopes';
-    /**
-     * The authorization server URL to the OAuth flow of the service provider.
-     *
-     * @var string
-     */
-    public $authUri;
-    /**
-     * The client ID to the OAuth App of the service provider.
-     *
-     * @var string
-     */
-    public $clientId;
-    /**
-     * https://datatracker.ietf.org/doc/html/rfc7636#section-4.1 Follow
-     * http://shortn/_WFYl6U0NyC to include it in the AutoCodeURL.
-     *
-     * @var string
-     */
-    public $codeChallenge;
-    /**
-     * https://datatracker.ietf.org/doc/html/rfc7636#section-4.2
-     *
-     * @var string
-     */
-    public $codeChallengeMethod;
-    /**
-     * The list of scopes requested by the application.
-     *
-     * @var string[]
-     */
-    public $scopes;
-    /**
-     * The ID of the system provider.
-     *
-     * @var string
-     */
-    public $systemProviderId;
-    /**
-     * The ticket to be used for post processing the callback from the service
-     * provider.
-     *
-     * @var string
-     */
-    public $ticket;
-    /**
-     * The authorization server URL to the OAuth flow of the service provider.
-     *
-     * @param string $authUri
-     */
-    public function setAuthUri($authUri)
+namespace Google\Service\DeveloperConnect {
+    class StartOAuthResponse extends \Google\Collection
     {
+        /**
+         * No system provider specified.
+         */
+        public const SYSTEM_PROVIDER_ID_SYSTEM_PROVIDER_UNSPECIFIED = 'SYSTEM_PROVIDER_UNSPECIFIED';
+        /**
+         * GitHub provider. Scopes can be found at
+         * https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/scopes-for-
+         * oauth-apps#available-scopes
+         */
+        public const SYSTEM_PROVIDER_ID_GITHUB = 'GITHUB';
+        /**
+         * GitLab provider. Scopes can be found at
+         * https://docs.gitlab.com/user/profile/personal_access_tokens/#personal-
+         * access-token-scopes
+         */
+        public const SYSTEM_PROVIDER_ID_GITLAB = 'GITLAB';
+        /**
+         * Google provider. Recommended scopes:
+         * "https://www.googleapis.com/auth/drive.readonly",
+         * "https://www.googleapis.com/auth/documents.readonly"
+         */
+        public const SYSTEM_PROVIDER_ID_GOOGLE = 'GOOGLE';
+        /**
+         * Sentry provider. Scopes can be found at
+         * https://docs.sentry.io/api/permissions/
+         */
+        public const SYSTEM_PROVIDER_ID_SENTRY = 'SENTRY';
+        /**
+         * Rovo provider. Must select the "rovo" scope.
+         */
+        public const SYSTEM_PROVIDER_ID_ROVO = 'ROVO';
+        /**
+         * New Relic provider. No scopes are allowed.
+         */
+        public const SYSTEM_PROVIDER_ID_NEW_RELIC = 'NEW_RELIC';
+        /**
+         * Datastax provider. No scopes are allowed.
+         */
+        public const SYSTEM_PROVIDER_ID_DATASTAX = 'DATASTAX';
+        /**
+         * Dynatrace provider.
+         */
+        public const SYSTEM_PROVIDER_ID_DYNATRACE = 'DYNATRACE';
+        protected $collection_key = 'scopes';
+        /**
+         * The authorization server URL to the OAuth flow of the service provider.
+         *
+         * @var string
+         */
+        public $authUri;
+        /**
+         * The client ID to the OAuth App of the service provider.
+         *
+         * @var string
+         */
+        public $clientId;
+        /**
+         * https://datatracker.ietf.org/doc/html/rfc7636#section-4.1 Follow
+         * http://shortn/_WFYl6U0NyC to include it in the AutoCodeURL.
+         *
+         * @var string
+         */
+        public $codeChallenge;
+        /**
+         * https://datatracker.ietf.org/doc/html/rfc7636#section-4.2
+         *
+         * @var string
+         */
+        public $codeChallengeMethod;
+        /**
+         * The list of scopes requested by the application.
+         *
+         * @var string[]
+         */
+        public $scopes;
+        /**
+         * The ID of the system provider.
+         *
+         * @var string
+         */
+        public $systemProviderId;
+        /**
+         * The ticket to be used for post processing the callback from the service
+         * provider.
+         *
+         * @var string
+         */
+        public $ticket;
+        /**
+         * The authorization server URL to the OAuth flow of the service provider.
+         *
+         * @param string $authUri
+         */
+        public function setAuthUri($authUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthUri()
+        {
+        }
+        /**
+         * The client ID to the OAuth App of the service provider.
+         *
+         * @param string $clientId
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
+        /**
+         * https://datatracker.ietf.org/doc/html/rfc7636#section-4.1 Follow
+         * http://shortn/_WFYl6U0NyC to include it in the AutoCodeURL.
+         *
+         * @param string $codeChallenge
+         */
+        public function setCodeChallenge($codeChallenge)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCodeChallenge()
+        {
+        }
+        /**
+         * https://datatracker.ietf.org/doc/html/rfc7636#section-4.2
+         *
+         * @param string $codeChallengeMethod
+         */
+        public function setCodeChallengeMethod($codeChallengeMethod)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCodeChallengeMethod()
+        {
+        }
+        /**
+         * The list of scopes requested by the application.
+         *
+         * @param string[] $scopes
+         */
+        public function setScopes($scopes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScopes()
+        {
+        }
+        /**
+         * The ID of the system provider.
+         *
+         * Accepted values: SYSTEM_PROVIDER_UNSPECIFIED, GITHUB, GITLAB, GOOGLE,
+         * SENTRY, ROVO, NEW_RELIC, DATASTAX, DYNATRACE
+         *
+         * @param self::SYSTEM_PROVIDER_ID_* $systemProviderId
+         */
+        public function setSystemProviderId($systemProviderId)
+        {
+        }
+        /**
+         * @return self::SYSTEM_PROVIDER_ID_*
+         */
+        public function getSystemProviderId()
+        {
+        }
+        /**
+         * The ticket to be used for post processing the callback from the service
+         * provider.
+         *
+         * @param string $ticket
+         */
+        public function setTicket($ticket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTicket()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DeveloperConnect\StartOAuthResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthUri()
-    {
-    }
-    /**
-     * The client ID to the OAuth App of the service provider.
-     *
-     * @param string $clientId
-     */
-    public function setClientId($clientId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClientId()
-    {
-    }
-    /**
-     * https://datatracker.ietf.org/doc/html/rfc7636#section-4.1 Follow
-     * http://shortn/_WFYl6U0NyC to include it in the AutoCodeURL.
-     *
-     * @param string $codeChallenge
-     */
-    public function setCodeChallenge($codeChallenge)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCodeChallenge()
-    {
-    }
-    /**
-     * https://datatracker.ietf.org/doc/html/rfc7636#section-4.2
-     *
-     * @param string $codeChallengeMethod
-     */
-    public function setCodeChallengeMethod($codeChallengeMethod)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCodeChallengeMethod()
-    {
-    }
-    /**
-     * The list of scopes requested by the application.
-     *
-     * @param string[] $scopes
-     */
-    public function setScopes($scopes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getScopes()
-    {
-    }
-    /**
-     * The ID of the system provider.
-     *
-     * Accepted values: SYSTEM_PROVIDER_UNSPECIFIED, GITHUB, GITLAB, GOOGLE,
-     * SENTRY, ROVO, NEW_RELIC, DATASTAX, DYNATRACE
-     *
-     * @param self::SYSTEM_PROVIDER_ID_* $systemProviderId
-     */
-    public function setSystemProviderId($systemProviderId)
-    {
-    }
-    /**
-     * @return self::SYSTEM_PROVIDER_ID_*
-     */
-    public function getSystemProviderId()
-    {
-    }
-    /**
-     * The ticket to be used for post processing the callback from the service
-     * provider.
-     *
-     * @param string $ticket
-     */
-    public function setTicket($ticket)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTicket()
+    class Google_Service_DeveloperConnect_StartOAuthResponse extends \Google\Service\DeveloperConnect\StartOAuthResponse
     {
     }
 }

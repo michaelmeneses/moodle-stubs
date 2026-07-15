@@ -21,51 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects\Resource;
-
-/**
- * The "media" collection of methods.
- * Typical usage is:
- *  <code>
- *   $walletobjectsService = new Google\Service\Walletobjects(...);
- *   $media = $walletobjectsService->media;
- *  </code>
- */
-class Media extends \Google\Service\Resource
-{
+namespace Google\Service\Walletobjects\Resource {
+    use Google\Service\Walletobjects\Media as MediaModel;
+    use Google\Service\Walletobjects\TransitObjectUploadRotatingBarcodeValuesRequest;
+    use Google\Service\Walletobjects\TransitObjectUploadRotatingBarcodeValuesResponse;
     /**
-     * Downloads rotating barcode values for the transit object referenced by the
-     * given object ID. (media.download)
-     *
-     * @param string $resourceId The unique identifier for an object. This ID must
-     * be unique across all objects from an issuer. This value should follow the
-     * format issuer ID. identifier where the former is issued by Google and latter
-     * is chosen by you. Your unique identifier should only include alphanumeric
-     * characters, '.', '_', or '-'.
-     * @param array $optParams Optional parameters.
-     * @return MediaModel
-     * @throws \Google\Service\Exception
+     * The "media" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $walletobjectsService = new Google\Service\Walletobjects(...);
+     *   $media = $walletobjectsService->media;
+     *  </code>
      */
-    public function download($resourceId, $optParams = [])
+    class Media extends \Google\Service\Resource
     {
+        /**
+         * Downloads rotating barcode values for the transit object referenced by the
+         * given object ID. (media.download)
+         *
+         * @param string $resourceId The unique identifier for an object. This ID must
+         * be unique across all objects from an issuer. This value should follow the
+         * format issuer ID. identifier where the former is issued by Google and latter
+         * is chosen by you. Your unique identifier should only include alphanumeric
+         * characters, '.', '_', or '-'.
+         * @param array $optParams Optional parameters.
+         * @return MediaModel
+         * @throws \Google\Service\Exception
+         */
+        public function download($resourceId, $optParams = [])
+        {
+        }
+        /**
+         * Uploads rotating barcode values for the transit object referenced by the
+         * given object ID. Note the max upload size is specified in
+         * google3/production/config/cdd/apps-upload/customers/payments-consumer-
+         * passes/config.gcl and enforced by Scotty. (media.upload)
+         *
+         * @param string $resourceId The unique identifier for an object. This ID must
+         * be unique across all objects from an issuer. This value should follow the
+         * format issuer ID. identifier where the former is issued by Google and latter
+         * is chosen by you. Your unique identifier should only include alphanumeric
+         * characters, '.', '_', or '-'.
+         * @param TransitObjectUploadRotatingBarcodeValuesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return TransitObjectUploadRotatingBarcodeValuesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function upload($resourceId, TransitObjectUploadRotatingBarcodeValuesRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Uploads rotating barcode values for the transit object referenced by the
-     * given object ID. Note the max upload size is specified in
-     * google3/production/config/cdd/apps-upload/customers/payments-consumer-
-     * passes/config.gcl and enforced by Scotty. (media.upload)
-     *
-     * @param string $resourceId The unique identifier for an object. This ID must
-     * be unique across all objects from an issuer. This value should follow the
-     * format issuer ID. identifier where the former is issued by Google and latter
-     * is chosen by you. Your unique identifier should only include alphanumeric
-     * characters, '.', '_', or '-'.
-     * @param TransitObjectUploadRotatingBarcodeValuesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return TransitObjectUploadRotatingBarcodeValuesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Walletobjects\Resource\Media registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function upload($resourceId, TransitObjectUploadRotatingBarcodeValuesRequest $postBody, $optParams = [])
+    class Google_Service_Walletobjects_Resource_Media extends \Google\Service\Walletobjects\Resource\Media
     {
     }
 }

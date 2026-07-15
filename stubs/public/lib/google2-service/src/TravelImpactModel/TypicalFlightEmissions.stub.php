@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TravelImpactModel;
-
-class TypicalFlightEmissions extends \Google\Model
-{
-    protected $emissionsGramsPerPaxType = EmissionsGramsPerPax::class;
-    protected $emissionsGramsPerPaxDataType = '';
-    protected $marketType = Market::class;
-    protected $marketDataType = '';
-    /**
-     * Optional. Typical flight emissions per passenger for requested market. Will
-     * not be present if a typical emissions could not be computed. For the list
-     * of reasons why typical flight emissions could not be computed, see
-     * [GitHub](https://github.com/google/travel-impact-
-     * model/blob/main/projects/typical_flight_emissions.md#step-7-validate-
-     * dataset).
-     *
-     * @param EmissionsGramsPerPax $emissionsGramsPerPax
-     */
-    public function setEmissionsGramsPerPax(EmissionsGramsPerPax $emissionsGramsPerPax)
+namespace Google\Service\TravelImpactModel {
+    class TypicalFlightEmissions extends \Google\Model
     {
+        protected $emissionsGramsPerPaxType = EmissionsGramsPerPax::class;
+        protected $emissionsGramsPerPaxDataType = '';
+        protected $marketType = Market::class;
+        protected $marketDataType = '';
+        /**
+         * Optional. Typical flight emissions per passenger for requested market. Will
+         * not be present if a typical emissions could not be computed. For the list
+         * of reasons why typical flight emissions could not be computed, see
+         * [GitHub](https://github.com/google/travel-impact-
+         * model/blob/main/projects/typical_flight_emissions.md#step-7-validate-
+         * dataset).
+         *
+         * @param EmissionsGramsPerPax $emissionsGramsPerPax
+         */
+        public function setEmissionsGramsPerPax(EmissionsGramsPerPax $emissionsGramsPerPax)
+        {
+        }
+        /**
+         * @return EmissionsGramsPerPax
+         */
+        public function getEmissionsGramsPerPax()
+        {
+        }
+        /**
+         * Required. Matches the flight identifiers in the request. Note: all IATA
+         * codes are capitalized.
+         *
+         * @param Market $market
+         */
+        public function setMarket(Market $market)
+        {
+        }
+        /**
+         * @return Market
+         */
+        public function getMarket()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EmissionsGramsPerPax
+     * Runtime class alias of \Google\Service\TravelImpactModel\TypicalFlightEmissions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmissionsGramsPerPax()
-    {
-    }
-    /**
-     * Required. Matches the flight identifiers in the request. Note: all IATA
-     * codes are capitalized.
-     *
-     * @param Market $market
-     */
-    public function setMarket(Market $market)
-    {
-    }
-    /**
-     * @return Market
-     */
-    public function getMarket()
+    class Google_Service_TravelImpactModel_TypicalFlightEmissions extends \Google\Service\TravelImpactModel\TypicalFlightEmissions
     {
     }
 }

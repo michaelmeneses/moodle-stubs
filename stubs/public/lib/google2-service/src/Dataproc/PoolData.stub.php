@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class PoolData extends \Google\Collection
-{
-    protected $collection_key = 'stageIds';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string[]
-     */
-    public $stageIds;
-    /**
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Dataproc {
+    class PoolData extends \Google\Collection
     {
+        protected $collection_key = 'stageIds';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string[]
+         */
+        public $stageIds;
+        /**
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string[] $stageIds
+         */
+        public function setStageIds($stageIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getStageIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\PoolData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * @param string[] $stageIds
-     */
-    public function setStageIds($stageIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getStageIds()
+    class Google_Service_Dataproc_PoolData extends \Google\Service\Dataproc\PoolData
     {
     }
 }

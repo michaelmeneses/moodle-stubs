@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoBuganizerNotification extends \Google\Model
-{
-    /**
-     * Whom to assign the new bug. Optional.
-     *
-     * @var string
-     */
-    public $assigneeEmailAddress;
-    /**
-     * ID of the buganizer component within which to create a new issue. Required.
-     *
-     * @var string
-     */
-    public $componentId;
-    /**
-     * ID of the buganizer template to use. Optional.
-     *
-     * @var string
-     */
-    public $templateId;
-    /**
-     * Title of the issue to be created. Required.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Whom to assign the new bug. Optional.
-     *
-     * @param string $assigneeEmailAddress
-     */
-    public function setAssigneeEmailAddress($assigneeEmailAddress)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoBuganizerNotification extends \Google\Model
     {
+        /**
+         * Whom to assign the new bug. Optional.
+         *
+         * @var string
+         */
+        public $assigneeEmailAddress;
+        /**
+         * ID of the buganizer component within which to create a new issue. Required.
+         *
+         * @var string
+         */
+        public $componentId;
+        /**
+         * ID of the buganizer template to use. Optional.
+         *
+         * @var string
+         */
+        public $templateId;
+        /**
+         * Title of the issue to be created. Required.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Whom to assign the new bug. Optional.
+         *
+         * @param string $assigneeEmailAddress
+         */
+        public function setAssigneeEmailAddress($assigneeEmailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssigneeEmailAddress()
+        {
+        }
+        /**
+         * ID of the buganizer component within which to create a new issue. Required.
+         *
+         * @param string $componentId
+         */
+        public function setComponentId($componentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComponentId()
+        {
+        }
+        /**
+         * ID of the buganizer template to use. Optional.
+         *
+         * @param string $templateId
+         */
+        public function setTemplateId($templateId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTemplateId()
+        {
+        }
+        /**
+         * Title of the issue to be created. Required.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoBuganizerNotification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssigneeEmailAddress()
-    {
-    }
-    /**
-     * ID of the buganizer component within which to create a new issue. Required.
-     *
-     * @param string $componentId
-     */
-    public function setComponentId($componentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getComponentId()
-    {
-    }
-    /**
-     * ID of the buganizer template to use. Optional.
-     *
-     * @param string $templateId
-     */
-    public function setTemplateId($templateId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTemplateId()
-    {
-    }
-    /**
-     * Title of the issue to be created. Required.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoBuganizerNotification extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoBuganizerNotification
     {
     }
 }

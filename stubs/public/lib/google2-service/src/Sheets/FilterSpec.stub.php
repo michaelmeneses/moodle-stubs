@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class FilterSpec extends \Google\Model
-{
-    /**
-     * The zero-based column index.
-     *
-     * @var int
-     */
-    public $columnIndex;
-    protected $dataSourceColumnReferenceType = DataSourceColumnReference::class;
-    protected $dataSourceColumnReferenceDataType = '';
-    protected $filterCriteriaType = FilterCriteria::class;
-    protected $filterCriteriaDataType = '';
-    /**
-     * The zero-based column index.
-     *
-     * @param int $columnIndex
-     */
-    public function setColumnIndex($columnIndex)
+namespace Google\Service\Sheets {
+    class FilterSpec extends \Google\Model
     {
+        /**
+         * The zero-based column index.
+         *
+         * @var int
+         */
+        public $columnIndex;
+        protected $dataSourceColumnReferenceType = DataSourceColumnReference::class;
+        protected $dataSourceColumnReferenceDataType = '';
+        protected $filterCriteriaType = FilterCriteria::class;
+        protected $filterCriteriaDataType = '';
+        /**
+         * The zero-based column index.
+         *
+         * @param int $columnIndex
+         */
+        public function setColumnIndex($columnIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColumnIndex()
+        {
+        }
+        /**
+         * Reference to a data source column.
+         *
+         * @param DataSourceColumnReference $dataSourceColumnReference
+         */
+        public function setDataSourceColumnReference(DataSourceColumnReference $dataSourceColumnReference)
+        {
+        }
+        /**
+         * @return DataSourceColumnReference
+         */
+        public function getDataSourceColumnReference()
+        {
+        }
+        /**
+         * The criteria for the column.
+         *
+         * @param FilterCriteria $filterCriteria
+         */
+        public function setFilterCriteria(FilterCriteria $filterCriteria)
+        {
+        }
+        /**
+         * @return FilterCriteria
+         */
+        public function getFilterCriteria()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Sheets\FilterSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnIndex()
-    {
-    }
-    /**
-     * Reference to a data source column.
-     *
-     * @param DataSourceColumnReference $dataSourceColumnReference
-     */
-    public function setDataSourceColumnReference(DataSourceColumnReference $dataSourceColumnReference)
-    {
-    }
-    /**
-     * @return DataSourceColumnReference
-     */
-    public function getDataSourceColumnReference()
-    {
-    }
-    /**
-     * The criteria for the column.
-     *
-     * @param FilterCriteria $filterCriteria
-     */
-    public function setFilterCriteria(FilterCriteria $filterCriteria)
-    {
-    }
-    /**
-     * @return FilterCriteria
-     */
-    public function getFilterCriteria()
+    class Google_Service_Sheets_FilterSpec extends \Google\Service\Sheets\FilterSpec
     {
     }
 }

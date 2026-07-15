@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3Form extends \Google\Collection
-{
-    protected $collection_key = 'parameters';
-    protected $parametersType = GoogleCloudDialogflowCxV3FormParameter::class;
-    protected $parametersDataType = 'array';
-    /**
-     * Parameters to collect from the user.
-     *
-     * @param GoogleCloudDialogflowCxV3FormParameter[] $parameters
-     */
-    public function setParameters($parameters)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3Form extends \Google\Collection
     {
+        protected $collection_key = 'parameters';
+        protected $parametersType = GoogleCloudDialogflowCxV3FormParameter::class;
+        protected $parametersDataType = 'array';
+        /**
+         * Parameters to collect from the user.
+         *
+         * @param GoogleCloudDialogflowCxV3FormParameter[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3FormParameter[]
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3FormParameter[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Form registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParameters()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3Form extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Form
     {
     }
 }

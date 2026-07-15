@@ -8,6 +8,10 @@
  */
 namespace mod_forum\reportbuilder\datasource;
 
+use core_course\reportbuilder\local\entities\{course_category, course_module};
+use core_reportbuilder\datasource;
+use core_reportbuilder\local\entities\{course, user};
+use mod_forum\reportbuilder\local\entities\{forum, discussion, post};
 /**
  * Forums datasource
  *

@@ -21,60 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataPortability\Resource;
-
-/**
- * The "archiveJobs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dataportabilityService = new Google\Service\DataPortability(...);
- *   $archiveJobs = $dataportabilityService->archiveJobs;
- *  </code>
- */
-class ArchiveJobs extends \Google\Service\Resource
-{
+namespace Google\Service\DataPortability\Resource {
+    use Google\Service\DataPortability\CancelPortabilityArchiveRequest;
+    use Google\Service\DataPortability\CancelPortabilityArchiveResponse;
+    use Google\Service\DataPortability\PortabilityArchiveState;
+    use Google\Service\DataPortability\RetryPortabilityArchiveRequest;
+    use Google\Service\DataPortability\RetryPortabilityArchiveResponse;
     /**
-     * Cancels a Portability Archive job. (archiveJobs.cancel)
-     *
-     * @param string $name Required. The Archive job ID you're canceling. This is
-     * returned by the InitiatePortabilityArchive response. The format is:
-     * archiveJobs/{archive_job}. Canceling is only executed if the job is in
-     * progress.
-     * @param CancelPortabilityArchiveRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return CancelPortabilityArchiveResponse
-     * @throws \Google\Service\Exception
+     * The "archiveJobs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dataportabilityService = new Google\Service\DataPortability(...);
+     *   $archiveJobs = $dataportabilityService->archiveJobs;
+     *  </code>
      */
-    public function cancel($name, CancelPortabilityArchiveRequest $postBody, $optParams = [])
+    class ArchiveJobs extends \Google\Service\Resource
     {
+        /**
+         * Cancels a Portability Archive job. (archiveJobs.cancel)
+         *
+         * @param string $name Required. The Archive job ID you're canceling. This is
+         * returned by the InitiatePortabilityArchive response. The format is:
+         * archiveJobs/{archive_job}. Canceling is only executed if the job is in
+         * progress.
+         * @param CancelPortabilityArchiveRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return CancelPortabilityArchiveResponse
+         * @throws \Google\Service\Exception
+         */
+        public function cancel($name, CancelPortabilityArchiveRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the state of an Archive job for the Portability API.
+         * (archiveJobs.getPortabilityArchiveState)
+         *
+         * @param string $name Required. The archive job ID that is returned when you
+         * request the state of the job. The format is:
+         * archiveJobs/{archive_job}/portabilityArchiveState. archive_job is the job ID
+         * returned by the InitiatePortabilityArchiveResponse.
+         * @param array $optParams Optional parameters.
+         * @return PortabilityArchiveState
+         * @throws \Google\Service\Exception
+         */
+        public function getPortabilityArchiveState($name, $optParams = [])
+        {
+        }
+        /**
+         * Retries a failed Portability Archive job. (archiveJobs.retry)
+         *
+         * @param string $name Required. The Archive job ID you're retrying. This is
+         * returned by the InitiatePortabilityArchiveResponse. Retrying is only executed
+         * if the initial job failed.
+         * @param RetryPortabilityArchiveRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return RetryPortabilityArchiveResponse
+         * @throws \Google\Service\Exception
+         */
+        public function retry($name, RetryPortabilityArchiveRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves the state of an Archive job for the Portability API.
-     * (archiveJobs.getPortabilityArchiveState)
-     *
-     * @param string $name Required. The archive job ID that is returned when you
-     * request the state of the job. The format is:
-     * archiveJobs/{archive_job}/portabilityArchiveState. archive_job is the job ID
-     * returned by the InitiatePortabilityArchiveResponse.
-     * @param array $optParams Optional parameters.
-     * @return PortabilityArchiveState
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\DataPortability\Resource\ArchiveJobs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPortabilityArchiveState($name, $optParams = [])
-    {
-    }
-    /**
-     * Retries a failed Portability Archive job. (archiveJobs.retry)
-     *
-     * @param string $name Required. The Archive job ID you're retrying. This is
-     * returned by the InitiatePortabilityArchiveResponse. Retrying is only executed
-     * if the initial job failed.
-     * @param RetryPortabilityArchiveRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return RetryPortabilityArchiveResponse
-     * @throws \Google\Service\Exception
-     */
-    public function retry($name, RetryPortabilityArchiveRequest $postBody, $optParams = [])
+    class Google_Service_DataPortability_Resource_ArchiveJobs extends \Google\Service\DataPortability\Resource\ArchiveJobs
     {
     }
 }

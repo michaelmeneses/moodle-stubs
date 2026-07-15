@@ -21,173 +21,182 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppHosting;
-
-class CodebaseSource extends \Google\Model
-{
-    protected $authorType = UserMetadata::class;
-    protected $authorDataType = '';
-    /**
-     * The branch in the codebase to build from, using the latest commit.
-     *
-     * @var string
-     */
-    public $branch;
-    /**
-     * The commit in the codebase to build from.
-     *
-     * @var string
-     */
-    public $commit;
-    /**
-     * Output only. The message of a codebase change.
-     *
-     * @var string
-     */
-    public $commitMessage;
-    /**
-     * Output only. The time the change was made.
-     *
-     * @var string
-     */
-    public $commitTime;
-    /**
-     * Output only. The human-friendly name to use for this Codebase when
-     * displaying a build. We use the first eight characters of the SHA-1 hash for
-     * GitHub.com.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The full SHA-1 hash of a Git commit, if available.
-     *
-     * @var string
-     */
-    public $hash;
-    /**
-     * Output only. A URI linking to the codebase on an hosting provider's
-     * website. May not be valid if the commit has been rebased or force-pushed
-     * out of existence in the linked repository.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Output only. The author contained in the metadata of a version control
-     * change.
-     *
-     * @param UserMetadata $author
-     */
-    public function setAuthor(UserMetadata $author)
+namespace Google\Service\FirebaseAppHosting {
+    class CodebaseSource extends \Google\Model
     {
+        protected $authorType = UserMetadata::class;
+        protected $authorDataType = '';
+        /**
+         * The branch in the codebase to build from, using the latest commit.
+         *
+         * @var string
+         */
+        public $branch;
+        /**
+         * The commit in the codebase to build from.
+         *
+         * @var string
+         */
+        public $commit;
+        /**
+         * Output only. The message of a codebase change.
+         *
+         * @var string
+         */
+        public $commitMessage;
+        /**
+         * Output only. The time the change was made.
+         *
+         * @var string
+         */
+        public $commitTime;
+        /**
+         * Output only. The human-friendly name to use for this Codebase when
+         * displaying a build. We use the first eight characters of the SHA-1 hash for
+         * GitHub.com.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The full SHA-1 hash of a Git commit, if available.
+         *
+         * @var string
+         */
+        public $hash;
+        /**
+         * Output only. A URI linking to the codebase on an hosting provider's
+         * website. May not be valid if the commit has been rebased or force-pushed
+         * out of existence in the linked repository.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Output only. The author contained in the metadata of a version control
+         * change.
+         *
+         * @param UserMetadata $author
+         */
+        public function setAuthor(UserMetadata $author)
+        {
+        }
+        /**
+         * @return UserMetadata
+         */
+        public function getAuthor()
+        {
+        }
+        /**
+         * The branch in the codebase to build from, using the latest commit.
+         *
+         * @param string $branch
+         */
+        public function setBranch($branch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBranch()
+        {
+        }
+        /**
+         * The commit in the codebase to build from.
+         *
+         * @param string $commit
+         */
+        public function setCommit($commit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommit()
+        {
+        }
+        /**
+         * Output only. The message of a codebase change.
+         *
+         * @param string $commitMessage
+         */
+        public function setCommitMessage($commitMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommitMessage()
+        {
+        }
+        /**
+         * Output only. The time the change was made.
+         *
+         * @param string $commitTime
+         */
+        public function setCommitTime($commitTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommitTime()
+        {
+        }
+        /**
+         * Output only. The human-friendly name to use for this Codebase when
+         * displaying a build. We use the first eight characters of the SHA-1 hash for
+         * GitHub.com.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. The full SHA-1 hash of a Git commit, if available.
+         *
+         * @param string $hash
+         */
+        public function setHash($hash)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHash()
+        {
+        }
+        /**
+         * Output only. A URI linking to the codebase on an hosting provider's
+         * website. May not be valid if the commit has been rebased or force-pushed
+         * out of existence in the linked repository.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UserMetadata
+     * Runtime class alias of \Google\Service\FirebaseAppHosting\CodebaseSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthor()
-    {
-    }
-    /**
-     * The branch in the codebase to build from, using the latest commit.
-     *
-     * @param string $branch
-     */
-    public function setBranch($branch)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBranch()
-    {
-    }
-    /**
-     * The commit in the codebase to build from.
-     *
-     * @param string $commit
-     */
-    public function setCommit($commit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCommit()
-    {
-    }
-    /**
-     * Output only. The message of a codebase change.
-     *
-     * @param string $commitMessage
-     */
-    public function setCommitMessage($commitMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCommitMessage()
-    {
-    }
-    /**
-     * Output only. The time the change was made.
-     *
-     * @param string $commitTime
-     */
-    public function setCommitTime($commitTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCommitTime()
-    {
-    }
-    /**
-     * Output only. The human-friendly name to use for this Codebase when
-     * displaying a build. We use the first eight characters of the SHA-1 hash for
-     * GitHub.com.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. The full SHA-1 hash of a Git commit, if available.
-     *
-     * @param string $hash
-     */
-    public function setHash($hash)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHash()
-    {
-    }
-    /**
-     * Output only. A URI linking to the codebase on an hosting provider's
-     * website. May not be valid if the commit has been rebased or force-pushed
-     * out of existence in the linked repository.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_FirebaseAppHosting_CodebaseSource extends \Google\Service\FirebaseAppHosting\CodebaseSource
     {
     }
 }

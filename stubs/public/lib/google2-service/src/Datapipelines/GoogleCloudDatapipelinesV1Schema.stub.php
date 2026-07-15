@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1Schema extends \Google\Collection
-{
-    protected $collection_key = 'fields';
-    protected $fieldsType = GoogleCloudDatapipelinesV1Field::class;
-    protected $fieldsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $referenceId;
-    /**
-     * @param GoogleCloudDatapipelinesV1Field[]
-     */
-    public function setFields($fields)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1Schema extends \Google\Collection
     {
+        protected $collection_key = 'fields';
+        protected $fieldsType = GoogleCloudDatapipelinesV1Field::class;
+        protected $fieldsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $referenceId;
+        /**
+         * @param GoogleCloudDatapipelinesV1Field[]
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1Field[]
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReferenceId($referenceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferenceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatapipelinesV1Field[]
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1Schema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReferenceId($referenceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferenceId()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1Schema extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1Schema
     {
     }
 }

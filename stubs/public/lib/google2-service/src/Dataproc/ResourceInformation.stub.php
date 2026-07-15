@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ResourceInformation extends \Google\Collection
-{
-    protected $collection_key = 'addresses';
-    /**
-     * @var string[]
-     */
-    public $addresses;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param string[] $addresses
-     */
-    public function setAddresses($addresses)
+namespace Google\Service\Dataproc {
+    class ResourceInformation extends \Google\Collection
     {
+        protected $collection_key = 'addresses';
+        /**
+         * @var string[]
+         */
+        public $addresses;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param string[] $addresses
+         */
+        public function setAddresses($addresses)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAddresses()
+        {
+        }
+        /**
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataproc\ResourceInformation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddresses()
-    {
-    }
-    /**
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Dataproc_ResourceInformation extends \Google\Service\Dataproc\ResourceInformation
     {
     }
 }

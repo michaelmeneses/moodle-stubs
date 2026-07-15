@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Chromewebstore;
-
-class UploadItemPackageResponse extends \Google\Model
-{
-    /**
-     * The default value.
-     */
-    public const UPLOAD_STATE_UPLOAD_STATE_UNSPECIFIED = 'UPLOAD_STATE_UNSPECIFIED';
-    /**
-     * The upload succeeded.
-     */
-    public const UPLOAD_STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * The upload is currently being processed.
-     */
-    public const UPLOAD_STATE_IN_PROGRESS = 'IN_PROGRESS';
-    /**
-     * The upload failed.
-     */
-    public const UPLOAD_STATE_FAILED = 'FAILED';
-    /**
-     * Used as the value of `lastAsyncUploadState` in a `fetchStatus` response
-     * indicating that an upload attempt was not found.
-     */
-    public const UPLOAD_STATE_NOT_FOUND = 'NOT_FOUND';
-    /**
-     * The extension version provided in the manifest of the uploaded package.
-     * This will not be set if the upload is still in progress (`upload_state` is
-     * `UPLOAD_IN_PROGRESS`).
-     *
-     * @var string
-     */
-    public $crxVersion;
-    /**
-     * Output only. The ID of the item the package was uploaded to.
-     *
-     * @var string
-     */
-    public $itemId;
-    /**
-     * The name of the item the package was uploaded to.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The state of the upload. If `upload_state` is
-     * `UPLOAD_IN_PROGRESS`, you can poll for updates using the fetchStatus
-     * method.
-     *
-     * @var string
-     */
-    public $uploadState;
-    /**
-     * The extension version provided in the manifest of the uploaded package.
-     * This will not be set if the upload is still in progress (`upload_state` is
-     * `UPLOAD_IN_PROGRESS`).
-     *
-     * @param string $crxVersion
-     */
-    public function setCrxVersion($crxVersion)
+namespace Google\Service\Chromewebstore {
+    class UploadItemPackageResponse extends \Google\Model
     {
+        /**
+         * The default value.
+         */
+        public const UPLOAD_STATE_UPLOAD_STATE_UNSPECIFIED = 'UPLOAD_STATE_UNSPECIFIED';
+        /**
+         * The upload succeeded.
+         */
+        public const UPLOAD_STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * The upload is currently being processed.
+         */
+        public const UPLOAD_STATE_IN_PROGRESS = 'IN_PROGRESS';
+        /**
+         * The upload failed.
+         */
+        public const UPLOAD_STATE_FAILED = 'FAILED';
+        /**
+         * Used as the value of `lastAsyncUploadState` in a `fetchStatus` response
+         * indicating that an upload attempt was not found.
+         */
+        public const UPLOAD_STATE_NOT_FOUND = 'NOT_FOUND';
+        /**
+         * The extension version provided in the manifest of the uploaded package.
+         * This will not be set if the upload is still in progress (`upload_state` is
+         * `UPLOAD_IN_PROGRESS`).
+         *
+         * @var string
+         */
+        public $crxVersion;
+        /**
+         * Output only. The ID of the item the package was uploaded to.
+         *
+         * @var string
+         */
+        public $itemId;
+        /**
+         * The name of the item the package was uploaded to.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The state of the upload. If `upload_state` is
+         * `UPLOAD_IN_PROGRESS`, you can poll for updates using the fetchStatus
+         * method.
+         *
+         * @var string
+         */
+        public $uploadState;
+        /**
+         * The extension version provided in the manifest of the uploaded package.
+         * This will not be set if the upload is still in progress (`upload_state` is
+         * `UPLOAD_IN_PROGRESS`).
+         *
+         * @param string $crxVersion
+         */
+        public function setCrxVersion($crxVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCrxVersion()
+        {
+        }
+        /**
+         * Output only. The ID of the item the package was uploaded to.
+         *
+         * @param string $itemId
+         */
+        public function setItemId($itemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getItemId()
+        {
+        }
+        /**
+         * The name of the item the package was uploaded to.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The state of the upload. If `upload_state` is
+         * `UPLOAD_IN_PROGRESS`, you can poll for updates using the fetchStatus
+         * method.
+         *
+         * Accepted values: UPLOAD_STATE_UNSPECIFIED, SUCCEEDED, IN_PROGRESS, FAILED,
+         * NOT_FOUND
+         *
+         * @param self::UPLOAD_STATE_* $uploadState
+         */
+        public function setUploadState($uploadState)
+        {
+        }
+        /**
+         * @return self::UPLOAD_STATE_*
+         */
+        public function getUploadState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Chromewebstore\UploadItemPackageResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCrxVersion()
-    {
-    }
-    /**
-     * Output only. The ID of the item the package was uploaded to.
-     *
-     * @param string $itemId
-     */
-    public function setItemId($itemId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getItemId()
-    {
-    }
-    /**
-     * The name of the item the package was uploaded to.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The state of the upload. If `upload_state` is
-     * `UPLOAD_IN_PROGRESS`, you can poll for updates using the fetchStatus
-     * method.
-     *
-     * Accepted values: UPLOAD_STATE_UNSPECIFIED, SUCCEEDED, IN_PROGRESS, FAILED,
-     * NOT_FOUND
-     *
-     * @param self::UPLOAD_STATE_* $uploadState
-     */
-    public function setUploadState($uploadState)
-    {
-    }
-    /**
-     * @return self::UPLOAD_STATE_*
-     */
-    public function getUploadState()
+    class Google_Service_Chromewebstore_UploadItemPackageResponse extends \Google\Service\Chromewebstore\UploadItemPackageResponse
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class ManagedZoneReverseLookupConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dns {
+    class ManagedZoneReverseLookupConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dns\ManagedZoneReverseLookupConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
+    class Google_Service_Dns_ManagedZoneReverseLookupConfig extends \Google\Service\Dns\ManagedZoneReverseLookupConfig
     {
     }
 }

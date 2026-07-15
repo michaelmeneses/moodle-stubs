@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesCampaignDynamicSearchAdsSetting extends \Google\Model
-{
-    /**
-     * Required. The Internet domain name that this setting represents, for
-     * example, "google.com" or "www.google.com".
-     *
-     * @var string
-     */
-    public $domainName;
-    /**
-     * Required. The language code specifying the language of the domain, for
-     * example, "en".
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Whether the campaign uses advertiser supplied URLs exclusively.
-     *
-     * @var bool
-     */
-    public $useSuppliedUrlsOnly;
-    /**
-     * Required. The Internet domain name that this setting represents, for
-     * example, "google.com" or "www.google.com".
-     *
-     * @param string $domainName
-     */
-    public function setDomainName($domainName)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesCampaignDynamicSearchAdsSetting extends \Google\Model
     {
+        /**
+         * Required. The Internet domain name that this setting represents, for
+         * example, "google.com" or "www.google.com".
+         *
+         * @var string
+         */
+        public $domainName;
+        /**
+         * Required. The language code specifying the language of the domain, for
+         * example, "en".
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Whether the campaign uses advertiser supplied URLs exclusively.
+         *
+         * @var bool
+         */
+        public $useSuppliedUrlsOnly;
+        /**
+         * Required. The Internet domain name that this setting represents, for
+         * example, "google.com" or "www.google.com".
+         *
+         * @param string $domainName
+         */
+        public function setDomainName($domainName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomainName()
+        {
+        }
+        /**
+         * Required. The language code specifying the language of the domain, for
+         * example, "en".
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * Whether the campaign uses advertiser supplied URLs exclusively.
+         *
+         * @param bool $useSuppliedUrlsOnly
+         */
+        public function setUseSuppliedUrlsOnly($useSuppliedUrlsOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseSuppliedUrlsOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesCampaignDynamicSearchAdsSetting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomainName()
-    {
-    }
-    /**
-     * Required. The language code specifying the language of the domain, for
-     * example, "en".
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * Whether the campaign uses advertiser supplied URLs exclusively.
-     *
-     * @param bool $useSuppliedUrlsOnly
-     */
-    public function setUseSuppliedUrlsOnly($useSuppliedUrlsOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseSuppliedUrlsOnly()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesCampaignDynamicSearchAdsSetting extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesCampaignDynamicSearchAdsSetting
     {
     }
 }

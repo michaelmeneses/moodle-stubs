@@ -8,6 +8,13 @@
  */
 namespace Slim\Routing;
 
+use Psr\Container\ContainerInterface;
+use Psr\Http\Message\ResponseFactoryInterface;
+use Slim\Interfaces\CallableResolverInterface;
+use Slim\Interfaces\RouteCollectorInterface;
+use Slim\Interfaces\RouteCollectorProxyInterface;
+use Slim\Interfaces\RouteGroupInterface;
+use Slim\Interfaces\RouteInterface;
 /**
  * @template TContainerInterface of (ContainerInterface|null)
  * @template-implements RouteCollectorProxyInterface<TContainerInterface>

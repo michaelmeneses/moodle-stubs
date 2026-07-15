@@ -21,389 +21,398 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessLodging;
-
-class Lodging extends \Google\Collection
-{
-    protected $collection_key = 'guestUnits';
-    protected $accessibilityType = Accessibility::class;
-    protected $accessibilityDataType = '';
-    protected $activitiesType = Activities::class;
-    protected $activitiesDataType = '';
-    protected $allUnitsType = GuestUnitFeatures::class;
-    protected $allUnitsDataType = '';
-    protected $businessType = Business::class;
-    protected $businessDataType = '';
-    protected $commonLivingAreaType = LivingArea::class;
-    protected $commonLivingAreaDataType = '';
-    protected $connectivityType = Connectivity::class;
-    protected $connectivityDataType = '';
-    protected $familiesType = Families::class;
-    protected $familiesDataType = '';
-    protected $foodAndDrinkType = FoodAndDrink::class;
-    protected $foodAndDrinkDataType = '';
-    protected $guestUnitsType = GuestUnitType::class;
-    protected $guestUnitsDataType = 'array';
-    protected $healthAndSafetyType = HealthAndSafety::class;
-    protected $healthAndSafetyDataType = '';
-    protected $housekeepingType = Housekeeping::class;
-    protected $housekeepingDataType = '';
-    protected $metadataType = LodgingMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * Required. Google identifier for this location in the form:
-     * `locations/{location_id}/lodging`
-     *
-     * @var string
-     */
-    public $name;
-    protected $parkingType = Parking::class;
-    protected $parkingDataType = '';
-    protected $petsType = Pets::class;
-    protected $petsDataType = '';
-    protected $policiesType = Policies::class;
-    protected $policiesDataType = '';
-    protected $poolsType = Pools::class;
-    protected $poolsDataType = '';
-    protected $propertyType = Property::class;
-    protected $propertyDataType = '';
-    protected $servicesType = Services::class;
-    protected $servicesDataType = '';
-    protected $someUnitsType = GuestUnitFeatures::class;
-    protected $someUnitsDataType = '';
-    protected $sustainabilityType = Sustainability::class;
-    protected $sustainabilityDataType = '';
-    protected $transportationType = Transportation::class;
-    protected $transportationDataType = '';
-    protected $wellnessType = Wellness::class;
-    protected $wellnessDataType = '';
-    /**
-     * Physical adaptations made to the property in consideration of varying
-     * levels of human physical ability.
-     *
-     * @param Accessibility $accessibility
-     */
-    public function setAccessibility(Accessibility $accessibility)
+namespace Google\Service\MyBusinessLodging {
+    class Lodging extends \Google\Collection
     {
+        protected $collection_key = 'guestUnits';
+        protected $accessibilityType = Accessibility::class;
+        protected $accessibilityDataType = '';
+        protected $activitiesType = Activities::class;
+        protected $activitiesDataType = '';
+        protected $allUnitsType = GuestUnitFeatures::class;
+        protected $allUnitsDataType = '';
+        protected $businessType = Business::class;
+        protected $businessDataType = '';
+        protected $commonLivingAreaType = LivingArea::class;
+        protected $commonLivingAreaDataType = '';
+        protected $connectivityType = Connectivity::class;
+        protected $connectivityDataType = '';
+        protected $familiesType = Families::class;
+        protected $familiesDataType = '';
+        protected $foodAndDrinkType = FoodAndDrink::class;
+        protected $foodAndDrinkDataType = '';
+        protected $guestUnitsType = GuestUnitType::class;
+        protected $guestUnitsDataType = 'array';
+        protected $healthAndSafetyType = HealthAndSafety::class;
+        protected $healthAndSafetyDataType = '';
+        protected $housekeepingType = Housekeeping::class;
+        protected $housekeepingDataType = '';
+        protected $metadataType = LodgingMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * Required. Google identifier for this location in the form:
+         * `locations/{location_id}/lodging`
+         *
+         * @var string
+         */
+        public $name;
+        protected $parkingType = Parking::class;
+        protected $parkingDataType = '';
+        protected $petsType = Pets::class;
+        protected $petsDataType = '';
+        protected $policiesType = Policies::class;
+        protected $policiesDataType = '';
+        protected $poolsType = Pools::class;
+        protected $poolsDataType = '';
+        protected $propertyType = Property::class;
+        protected $propertyDataType = '';
+        protected $servicesType = Services::class;
+        protected $servicesDataType = '';
+        protected $someUnitsType = GuestUnitFeatures::class;
+        protected $someUnitsDataType = '';
+        protected $sustainabilityType = Sustainability::class;
+        protected $sustainabilityDataType = '';
+        protected $transportationType = Transportation::class;
+        protected $transportationDataType = '';
+        protected $wellnessType = Wellness::class;
+        protected $wellnessDataType = '';
+        /**
+         * Physical adaptations made to the property in consideration of varying
+         * levels of human physical ability.
+         *
+         * @param Accessibility $accessibility
+         */
+        public function setAccessibility(Accessibility $accessibility)
+        {
+        }
+        /**
+         * @return Accessibility
+         */
+        public function getAccessibility()
+        {
+        }
+        /**
+         * Amenities and features related to leisure and play.
+         *
+         * @param Activities $activities
+         */
+        public function setActivities(Activities $activities)
+        {
+        }
+        /**
+         * @return Activities
+         */
+        public function getActivities()
+        {
+        }
+        /**
+         * Output only. All units on the property have at least these attributes.
+         *
+         * @param GuestUnitFeatures $allUnits
+         */
+        public function setAllUnits(GuestUnitFeatures $allUnits)
+        {
+        }
+        /**
+         * @return GuestUnitFeatures
+         */
+        public function getAllUnits()
+        {
+        }
+        /**
+         * Features of the property of specific interest to the business traveler.
+         *
+         * @param Business $business
+         */
+        public function setBusiness(Business $business)
+        {
+        }
+        /**
+         * @return Business
+         */
+        public function getBusiness()
+        {
+        }
+        /**
+         * Features of the shared living areas available in this Lodging.
+         *
+         * @param LivingArea $commonLivingArea
+         */
+        public function setCommonLivingArea(LivingArea $commonLivingArea)
+        {
+        }
+        /**
+         * @return LivingArea
+         */
+        public function getCommonLivingArea()
+        {
+        }
+        /**
+         * The ways in which the property provides guests with the ability to access
+         * the internet.
+         *
+         * @param Connectivity $connectivity
+         */
+        public function setConnectivity(Connectivity $connectivity)
+        {
+        }
+        /**
+         * @return Connectivity
+         */
+        public function getConnectivity()
+        {
+        }
+        /**
+         * Services and amenities for families and young guests.
+         *
+         * @param Families $families
+         */
+        public function setFamilies(Families $families)
+        {
+        }
+        /**
+         * @return Families
+         */
+        public function getFamilies()
+        {
+        }
+        /**
+         * Meals, snacks, and beverages available at the property.
+         *
+         * @param FoodAndDrink $foodAndDrink
+         */
+        public function setFoodAndDrink(FoodAndDrink $foodAndDrink)
+        {
+        }
+        /**
+         * @return FoodAndDrink
+         */
+        public function getFoodAndDrink()
+        {
+        }
+        /**
+         * Individual GuestUnitTypes that are available in this Lodging.
+         *
+         * @param GuestUnitType[] $guestUnits
+         */
+        public function setGuestUnits($guestUnits)
+        {
+        }
+        /**
+         * @return GuestUnitType[]
+         */
+        public function getGuestUnits()
+        {
+        }
+        /**
+         * Health and safety measures implemented by the hotel during COVID-19.
+         *
+         * @param HealthAndSafety $healthAndSafety
+         */
+        public function setHealthAndSafety(HealthAndSafety $healthAndSafety)
+        {
+        }
+        /**
+         * @return HealthAndSafety
+         */
+        public function getHealthAndSafety()
+        {
+        }
+        /**
+         * Conveniences provided in guest units to facilitate an easier, more
+         * comfortable stay.
+         *
+         * @param Housekeeping $housekeeping
+         */
+        public function setHousekeeping(Housekeeping $housekeeping)
+        {
+        }
+        /**
+         * @return Housekeeping
+         */
+        public function getHousekeeping()
+        {
+        }
+        /**
+         * Required. Metadata for the lodging.
+         *
+         * @param LodgingMetadata $metadata
+         */
+        public function setMetadata(LodgingMetadata $metadata)
+        {
+        }
+        /**
+         * @return LodgingMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Required. Google identifier for this location in the form:
+         * `locations/{location_id}/lodging`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Parking options at the property.
+         *
+         * @param Parking $parking
+         */
+        public function setParking(Parking $parking)
+        {
+        }
+        /**
+         * @return Parking
+         */
+        public function getParking()
+        {
+        }
+        /**
+         * Policies regarding guest-owned animals.
+         *
+         * @param Pets $pets
+         */
+        public function setPets(Pets $pets)
+        {
+        }
+        /**
+         * @return Pets
+         */
+        public function getPets()
+        {
+        }
+        /**
+         * Property rules that impact guests.
+         *
+         * @param Policies $policies
+         */
+        public function setPolicies(Policies $policies)
+        {
+        }
+        /**
+         * @return Policies
+         */
+        public function getPolicies()
+        {
+        }
+        /**
+         * Swimming pool or recreational water facilities available at the hotel.
+         *
+         * @param Pools $pools
+         */
+        public function setPools(Pools $pools)
+        {
+        }
+        /**
+         * @return Pools
+         */
+        public function getPools()
+        {
+        }
+        /**
+         * General factual information about the property's physical structure and
+         * important dates.
+         *
+         * @param Property $property
+         */
+        public function setProperty(Property $property)
+        {
+        }
+        /**
+         * @return Property
+         */
+        public function getProperty()
+        {
+        }
+        /**
+         * Conveniences or help provided by the property to facilitate an easier, more
+         * comfortable stay.
+         *
+         * @param Services $services
+         */
+        public function setServices(Services $services)
+        {
+        }
+        /**
+         * @return Services
+         */
+        public function getServices()
+        {
+        }
+        /**
+         * Output only. Some units on the property have as much as these attributes.
+         *
+         * @param GuestUnitFeatures $someUnits
+         */
+        public function setSomeUnits(GuestUnitFeatures $someUnits)
+        {
+        }
+        /**
+         * @return GuestUnitFeatures
+         */
+        public function getSomeUnits()
+        {
+        }
+        /**
+         * Sustainability practices implemented at the hotel.
+         *
+         * @param Sustainability $sustainability
+         */
+        public function setSustainability(Sustainability $sustainability)
+        {
+        }
+        /**
+         * @return Sustainability
+         */
+        public function getSustainability()
+        {
+        }
+        /**
+         * Vehicles or vehicular services facilitated or owned by the property.
+         *
+         * @param Transportation $transportation
+         */
+        public function setTransportation(Transportation $transportation)
+        {
+        }
+        /**
+         * @return Transportation
+         */
+        public function getTransportation()
+        {
+        }
+        /**
+         * Guest facilities at the property to promote or maintain health, beauty, and
+         * fitness.
+         *
+         * @param Wellness $wellness
+         */
+        public function setWellness(Wellness $wellness)
+        {
+        }
+        /**
+         * @return Wellness
+         */
+        public function getWellness()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Accessibility
+     * Runtime class alias of \Google\Service\MyBusinessLodging\Lodging registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessibility()
-    {
-    }
-    /**
-     * Amenities and features related to leisure and play.
-     *
-     * @param Activities $activities
-     */
-    public function setActivities(Activities $activities)
-    {
-    }
-    /**
-     * @return Activities
-     */
-    public function getActivities()
-    {
-    }
-    /**
-     * Output only. All units on the property have at least these attributes.
-     *
-     * @param GuestUnitFeatures $allUnits
-     */
-    public function setAllUnits(GuestUnitFeatures $allUnits)
-    {
-    }
-    /**
-     * @return GuestUnitFeatures
-     */
-    public function getAllUnits()
-    {
-    }
-    /**
-     * Features of the property of specific interest to the business traveler.
-     *
-     * @param Business $business
-     */
-    public function setBusiness(Business $business)
-    {
-    }
-    /**
-     * @return Business
-     */
-    public function getBusiness()
-    {
-    }
-    /**
-     * Features of the shared living areas available in this Lodging.
-     *
-     * @param LivingArea $commonLivingArea
-     */
-    public function setCommonLivingArea(LivingArea $commonLivingArea)
-    {
-    }
-    /**
-     * @return LivingArea
-     */
-    public function getCommonLivingArea()
-    {
-    }
-    /**
-     * The ways in which the property provides guests with the ability to access
-     * the internet.
-     *
-     * @param Connectivity $connectivity
-     */
-    public function setConnectivity(Connectivity $connectivity)
-    {
-    }
-    /**
-     * @return Connectivity
-     */
-    public function getConnectivity()
-    {
-    }
-    /**
-     * Services and amenities for families and young guests.
-     *
-     * @param Families $families
-     */
-    public function setFamilies(Families $families)
-    {
-    }
-    /**
-     * @return Families
-     */
-    public function getFamilies()
-    {
-    }
-    /**
-     * Meals, snacks, and beverages available at the property.
-     *
-     * @param FoodAndDrink $foodAndDrink
-     */
-    public function setFoodAndDrink(FoodAndDrink $foodAndDrink)
-    {
-    }
-    /**
-     * @return FoodAndDrink
-     */
-    public function getFoodAndDrink()
-    {
-    }
-    /**
-     * Individual GuestUnitTypes that are available in this Lodging.
-     *
-     * @param GuestUnitType[] $guestUnits
-     */
-    public function setGuestUnits($guestUnits)
-    {
-    }
-    /**
-     * @return GuestUnitType[]
-     */
-    public function getGuestUnits()
-    {
-    }
-    /**
-     * Health and safety measures implemented by the hotel during COVID-19.
-     *
-     * @param HealthAndSafety $healthAndSafety
-     */
-    public function setHealthAndSafety(HealthAndSafety $healthAndSafety)
-    {
-    }
-    /**
-     * @return HealthAndSafety
-     */
-    public function getHealthAndSafety()
-    {
-    }
-    /**
-     * Conveniences provided in guest units to facilitate an easier, more
-     * comfortable stay.
-     *
-     * @param Housekeeping $housekeeping
-     */
-    public function setHousekeeping(Housekeeping $housekeeping)
-    {
-    }
-    /**
-     * @return Housekeeping
-     */
-    public function getHousekeeping()
-    {
-    }
-    /**
-     * Required. Metadata for the lodging.
-     *
-     * @param LodgingMetadata $metadata
-     */
-    public function setMetadata(LodgingMetadata $metadata)
-    {
-    }
-    /**
-     * @return LodgingMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Required. Google identifier for this location in the form:
-     * `locations/{location_id}/lodging`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Parking options at the property.
-     *
-     * @param Parking $parking
-     */
-    public function setParking(Parking $parking)
-    {
-    }
-    /**
-     * @return Parking
-     */
-    public function getParking()
-    {
-    }
-    /**
-     * Policies regarding guest-owned animals.
-     *
-     * @param Pets $pets
-     */
-    public function setPets(Pets $pets)
-    {
-    }
-    /**
-     * @return Pets
-     */
-    public function getPets()
-    {
-    }
-    /**
-     * Property rules that impact guests.
-     *
-     * @param Policies $policies
-     */
-    public function setPolicies(Policies $policies)
-    {
-    }
-    /**
-     * @return Policies
-     */
-    public function getPolicies()
-    {
-    }
-    /**
-     * Swimming pool or recreational water facilities available at the hotel.
-     *
-     * @param Pools $pools
-     */
-    public function setPools(Pools $pools)
-    {
-    }
-    /**
-     * @return Pools
-     */
-    public function getPools()
-    {
-    }
-    /**
-     * General factual information about the property's physical structure and
-     * important dates.
-     *
-     * @param Property $property
-     */
-    public function setProperty(Property $property)
-    {
-    }
-    /**
-     * @return Property
-     */
-    public function getProperty()
-    {
-    }
-    /**
-     * Conveniences or help provided by the property to facilitate an easier, more
-     * comfortable stay.
-     *
-     * @param Services $services
-     */
-    public function setServices(Services $services)
-    {
-    }
-    /**
-     * @return Services
-     */
-    public function getServices()
-    {
-    }
-    /**
-     * Output only. Some units on the property have as much as these attributes.
-     *
-     * @param GuestUnitFeatures $someUnits
-     */
-    public function setSomeUnits(GuestUnitFeatures $someUnits)
-    {
-    }
-    /**
-     * @return GuestUnitFeatures
-     */
-    public function getSomeUnits()
-    {
-    }
-    /**
-     * Sustainability practices implemented at the hotel.
-     *
-     * @param Sustainability $sustainability
-     */
-    public function setSustainability(Sustainability $sustainability)
-    {
-    }
-    /**
-     * @return Sustainability
-     */
-    public function getSustainability()
-    {
-    }
-    /**
-     * Vehicles or vehicular services facilitated or owned by the property.
-     *
-     * @param Transportation $transportation
-     */
-    public function setTransportation(Transportation $transportation)
-    {
-    }
-    /**
-     * @return Transportation
-     */
-    public function getTransportation()
-    {
-    }
-    /**
-     * Guest facilities at the property to promote or maintain health, beauty, and
-     * fitness.
-     *
-     * @param Wellness $wellness
-     */
-    public function setWellness(Wellness $wellness)
-    {
-    }
-    /**
-     * @return Wellness
-     */
-    public function getWellness()
+    class Google_Service_MyBusinessLodging_Lodging extends \Google\Service\MyBusinessLodging\Lodging
     {
     }
 }

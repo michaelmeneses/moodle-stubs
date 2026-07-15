@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1CardAction extends \Google\Model
-{
-    /**
-     * The label that displays as the action menu item.
-     *
-     * @var string
-     */
-    public $actionLabel;
-    protected $onClickType = GoogleAppsCardV1OnClick::class;
-    protected $onClickDataType = '';
-    /**
-     * The label that displays as the action menu item.
-     *
-     * @param string $actionLabel
-     */
-    public function setActionLabel($actionLabel)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1CardAction extends \Google\Model
     {
+        /**
+         * The label that displays as the action menu item.
+         *
+         * @var string
+         */
+        public $actionLabel;
+        protected $onClickType = GoogleAppsCardV1OnClick::class;
+        protected $onClickDataType = '';
+        /**
+         * The label that displays as the action menu item.
+         *
+         * @param string $actionLabel
+         */
+        public function setActionLabel($actionLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActionLabel()
+        {
+        }
+        /**
+         * The `onClick` action for this action item.
+         *
+         * @param GoogleAppsCardV1OnClick $onClick
+         */
+        public function setOnClick(GoogleAppsCardV1OnClick $onClick)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1OnClick
+         */
+        public function getOnClick()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1CardAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionLabel()
-    {
-    }
-    /**
-     * The `onClick` action for this action item.
-     *
-     * @param GoogleAppsCardV1OnClick $onClick
-     */
-    public function setOnClick(GoogleAppsCardV1OnClick $onClick)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1OnClick
-     */
-    public function getOnClick()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1CardAction extends \Google\Service\HangoutsChat\GoogleAppsCardV1CardAction
     {
     }
 }

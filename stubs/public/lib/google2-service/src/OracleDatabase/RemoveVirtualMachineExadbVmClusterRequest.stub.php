@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class RemoveVirtualMachineExadbVmClusterRequest extends \Google\Collection
-{
-    protected $collection_key = 'hostnames';
-    /**
-     * Required. The list of host names of db nodes to be removed from the
-     * ExadbVmCluster.
-     *
-     * @var string[]
-     */
-    public $hostnames;
-    /**
-     * Optional. An optional ID to identify the request. This value is used to
-     * identify duplicate requests. If you make a request with the same request ID
-     * and the original request is still in progress or completed, the server
-     * ignores the second request. This prevents clients from accidentally
-     * creating duplicate commitments. The request ID must be a valid UUID with
-     * the exception that zero UUID is not supported
-     * (00000000-0000-0000-0000-000000000000).
-     *
-     * @var string
-     */
-    public $requestId;
-    /**
-     * Required. The list of host names of db nodes to be removed from the
-     * ExadbVmCluster.
-     *
-     * @param string[] $hostnames
-     */
-    public function setHostnames($hostnames)
+namespace Google\Service\OracleDatabase {
+    class RemoveVirtualMachineExadbVmClusterRequest extends \Google\Collection
     {
+        protected $collection_key = 'hostnames';
+        /**
+         * Required. The list of host names of db nodes to be removed from the
+         * ExadbVmCluster.
+         *
+         * @var string[]
+         */
+        public $hostnames;
+        /**
+         * Optional. An optional ID to identify the request. This value is used to
+         * identify duplicate requests. If you make a request with the same request ID
+         * and the original request is still in progress or completed, the server
+         * ignores the second request. This prevents clients from accidentally
+         * creating duplicate commitments. The request ID must be a valid UUID with
+         * the exception that zero UUID is not supported
+         * (00000000-0000-0000-0000-000000000000).
+         *
+         * @var string
+         */
+        public $requestId;
+        /**
+         * Required. The list of host names of db nodes to be removed from the
+         * ExadbVmCluster.
+         *
+         * @param string[] $hostnames
+         */
+        public function setHostnames($hostnames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getHostnames()
+        {
+        }
+        /**
+         * Optional. An optional ID to identify the request. This value is used to
+         * identify duplicate requests. If you make a request with the same request ID
+         * and the original request is still in progress or completed, the server
+         * ignores the second request. This prevents clients from accidentally
+         * creating duplicate commitments. The request ID must be a valid UUID with
+         * the exception that zero UUID is not supported
+         * (00000000-0000-0000-0000-000000000000).
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\OracleDatabase\RemoveVirtualMachineExadbVmClusterRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHostnames()
-    {
-    }
-    /**
-     * Optional. An optional ID to identify the request. This value is used to
-     * identify duplicate requests. If you make a request with the same request ID
-     * and the original request is still in progress or completed, the server
-     * ignores the second request. This prevents clients from accidentally
-     * creating duplicate commitments. The request ID must be a valid UUID with
-     * the exception that zero UUID is not supported
-     * (00000000-0000-0000-0000-000000000000).
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
+    class Google_Service_OracleDatabase_RemoveVirtualMachineExadbVmClusterRequest extends \Google\Service\OracleDatabase\RemoveVirtualMachineExadbVmClusterRequest
     {
     }
 }

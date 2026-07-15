@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class UrlList extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * Output only. Time when the security policy was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. Free-text description of the resource.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. Name of the resource provided by the user. Name is of the form
-     * projects/{project}/locations/{location}/urlLists/{url_list} url_list should
-     * match the pattern:(^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$).
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Time when the security policy was updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Required. FQDNs and URLs.
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * Output only. Time when the security policy was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\NetworkSecurity {
+    class UrlList extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * Output only. Time when the security policy was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. Free-text description of the resource.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. Name of the resource provided by the user. Name is of the form
+         * projects/{project}/locations/{location}/urlLists/{url_list} url_list should
+         * match the pattern:(^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$).
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Time when the security policy was updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Required. FQDNs and URLs.
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * Output only. Time when the security policy was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Free-text description of the resource.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. Name of the resource provided by the user. Name is of the form
+         * projects/{project}/locations/{location}/urlLists/{url_list} url_list should
+         * match the pattern:(^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$).
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Time when the security policy was updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * Required. FQDNs and URLs.
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkSecurity\UrlList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Free-text description of the resource.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. Name of the resource provided by the user. Name is of the form
-     * projects/{project}/locations/{location}/urlLists/{url_list} url_list should
-     * match the pattern:(^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$).
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Time when the security policy was updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * Required. FQDNs and URLs.
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValues()
+    class Google_Service_NetworkSecurity_UrlList extends \Google\Service\NetworkSecurity\UrlList
     {
     }
 }

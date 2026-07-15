@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class RddOperationEdge extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $fromId;
-    /**
-     * @var int
-     */
-    public $toId;
-    /**
-     * @param int $fromId
-     */
-    public function setFromId($fromId)
+namespace Google\Service\Dataproc {
+    class RddOperationEdge extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $fromId;
+        /**
+         * @var int
+         */
+        public $toId;
+        /**
+         * @param int $fromId
+         */
+        public function setFromId($fromId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFromId()
+        {
+        }
+        /**
+         * @param int $toId
+         */
+        public function setToId($toId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getToId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dataproc\RddOperationEdge registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFromId()
-    {
-    }
-    /**
-     * @param int $toId
-     */
-    public function setToId($toId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getToId()
+    class Google_Service_Dataproc_RddOperationEdge extends \Google\Service\Dataproc\RddOperationEdge
     {
     }
 }

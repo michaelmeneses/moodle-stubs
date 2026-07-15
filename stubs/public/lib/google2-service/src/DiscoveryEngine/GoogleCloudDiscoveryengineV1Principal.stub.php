@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1Principal extends \Google\Model
-{
-    /**
-     * For 3P application identities which are not present in the customer
-     * identity provider.
-     *
-     * @var string
-     */
-    public $externalEntityId;
-    /**
-     * Group identifier. For Google Workspace user account, group_id should be the
-     * google workspace group email. For non-google identity provider user
-     * account, group_id is the mapped group identifier configured during the
-     * workforcepool config.
-     *
-     * @var string
-     */
-    public $groupId;
-    /**
-     * User identifier. For Google Workspace user account, user_id should be the
-     * google workspace user email. For non-google identity provider user account,
-     * user_id is the mapped user identifier configured during the workforcepool
-     * config.
-     *
-     * @var string
-     */
-    public $userId;
-    /**
-     * For 3P application identities which are not present in the customer
-     * identity provider.
-     *
-     * @param string $externalEntityId
-     */
-    public function setExternalEntityId($externalEntityId)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1Principal extends \Google\Model
     {
+        /**
+         * For 3P application identities which are not present in the customer
+         * identity provider.
+         *
+         * @var string
+         */
+        public $externalEntityId;
+        /**
+         * Group identifier. For Google Workspace user account, group_id should be the
+         * google workspace group email. For non-google identity provider user
+         * account, group_id is the mapped group identifier configured during the
+         * workforcepool config.
+         *
+         * @var string
+         */
+        public $groupId;
+        /**
+         * User identifier. For Google Workspace user account, user_id should be the
+         * google workspace user email. For non-google identity provider user account,
+         * user_id is the mapped user identifier configured during the workforcepool
+         * config.
+         *
+         * @var string
+         */
+        public $userId;
+        /**
+         * For 3P application identities which are not present in the customer
+         * identity provider.
+         *
+         * @param string $externalEntityId
+         */
+        public function setExternalEntityId($externalEntityId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternalEntityId()
+        {
+        }
+        /**
+         * Group identifier. For Google Workspace user account, group_id should be the
+         * google workspace group email. For non-google identity provider user
+         * account, group_id is the mapped group identifier configured during the
+         * workforcepool config.
+         *
+         * @param string $groupId
+         */
+        public function setGroupId($groupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroupId()
+        {
+        }
+        /**
+         * User identifier. For Google Workspace user account, user_id should be the
+         * google workspace user email. For non-google identity provider user account,
+         * user_id is the mapped user identifier configured during the workforcepool
+         * config.
+         *
+         * @param string $userId
+         */
+        public function setUserId($userId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1Principal registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExternalEntityId()
-    {
-    }
-    /**
-     * Group identifier. For Google Workspace user account, group_id should be the
-     * google workspace group email. For non-google identity provider user
-     * account, group_id is the mapped group identifier configured during the
-     * workforcepool config.
-     *
-     * @param string $groupId
-     */
-    public function setGroupId($groupId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGroupId()
-    {
-    }
-    /**
-     * User identifier. For Google Workspace user account, user_id should be the
-     * google workspace user email. For non-google identity provider user account,
-     * user_id is the mapped user identifier configured during the workforcepool
-     * config.
-     *
-     * @param string $userId
-     */
-    public function setUserId($userId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserId()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1Principal extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1Principal
     {
     }
 }

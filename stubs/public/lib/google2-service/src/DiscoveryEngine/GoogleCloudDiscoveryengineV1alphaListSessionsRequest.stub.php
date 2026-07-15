@@ -21,132 +21,141 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaListSessionsRequest extends \Google\Model
-{
-    /**
-     * A comma-separated list of fields to filter by, in EBNF grammar. The
-     * supported fields are: * `user_pseudo_id` * `state` * `display_name` *
-     * `starred` * `is_pinned` * `labels` * `create_time` * `update_time`
-     * Examples: * `user_pseudo_id = some_id` * `display_name = "some_name"` *
-     * `starred = true` * `is_pinned=true AND (NOT labels:hidden)` * `create_time
-     * > "1970-01-01T12:00:00Z"`
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * A comma-separated list of fields to order by, sorted in ascending order.
-     * Use "desc" after a field name for descending. Supported fields: *
-     * `update_time` * `create_time` * `session_name` * `is_pinned` Example: *
-     * `update_time desc` * `create_time` * `is_pinned desc,update_time desc`:
-     * list sessions by is_pinned first, then by update_time.
-     *
-     * @var string
-     */
-    public $orderBy;
-    /**
-     * Maximum number of results to return. If unspecified, defaults to 50. Max
-     * allowed value is 1000.
-     *
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * A page token, received from a previous `ListSessions` call. Provide this to
-     * retrieve the subsequent page.
-     *
-     * @var string
-     */
-    public $pageToken;
-    /**
-     * Required. The data store resource name. Format: `projects/{project}/locatio
-     * ns/{location}/collections/{collection}/dataStores/{data_store_id}`
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * A comma-separated list of fields to filter by, in EBNF grammar. The
-     * supported fields are: * `user_pseudo_id` * `state` * `display_name` *
-     * `starred` * `is_pinned` * `labels` * `create_time` * `update_time`
-     * Examples: * `user_pseudo_id = some_id` * `display_name = "some_name"` *
-     * `starred = true` * `is_pinned=true AND (NOT labels:hidden)` * `create_time
-     * > "1970-01-01T12:00:00Z"`
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaListSessionsRequest extends \Google\Model
     {
+        /**
+         * A comma-separated list of fields to filter by, in EBNF grammar. The
+         * supported fields are: * `user_pseudo_id` * `state` * `display_name` *
+         * `starred` * `is_pinned` * `labels` * `create_time` * `update_time`
+         * Examples: * `user_pseudo_id = some_id` * `display_name = "some_name"` *
+         * `starred = true` * `is_pinned=true AND (NOT labels:hidden)` * `create_time
+         * > "1970-01-01T12:00:00Z"`
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * A comma-separated list of fields to order by, sorted in ascending order.
+         * Use "desc" after a field name for descending. Supported fields: *
+         * `update_time` * `create_time` * `session_name` * `is_pinned` Example: *
+         * `update_time desc` * `create_time` * `is_pinned desc,update_time desc`:
+         * list sessions by is_pinned first, then by update_time.
+         *
+         * @var string
+         */
+        public $orderBy;
+        /**
+         * Maximum number of results to return. If unspecified, defaults to 50. Max
+         * allowed value is 1000.
+         *
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * A page token, received from a previous `ListSessions` call. Provide this to
+         * retrieve the subsequent page.
+         *
+         * @var string
+         */
+        public $pageToken;
+        /**
+         * Required. The data store resource name. Format: `projects/{project}/locatio
+         * ns/{location}/collections/{collection}/dataStores/{data_store_id}`
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * A comma-separated list of fields to filter by, in EBNF grammar. The
+         * supported fields are: * `user_pseudo_id` * `state` * `display_name` *
+         * `starred` * `is_pinned` * `labels` * `create_time` * `update_time`
+         * Examples: * `user_pseudo_id = some_id` * `display_name = "some_name"` *
+         * `starred = true` * `is_pinned=true AND (NOT labels:hidden)` * `create_time
+         * > "1970-01-01T12:00:00Z"`
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * A comma-separated list of fields to order by, sorted in ascending order.
+         * Use "desc" after a field name for descending. Supported fields: *
+         * `update_time` * `create_time` * `session_name` * `is_pinned` Example: *
+         * `update_time desc` * `create_time` * `is_pinned desc,update_time desc`:
+         * list sessions by is_pinned first, then by update_time.
+         *
+         * @param string $orderBy
+         */
+        public function setOrderBy($orderBy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrderBy()
+        {
+        }
+        /**
+         * Maximum number of results to return. If unspecified, defaults to 50. Max
+         * allowed value is 1000.
+         *
+         * @param int $pageSize
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * A page token, received from a previous `ListSessions` call. Provide this to
+         * retrieve the subsequent page.
+         *
+         * @param string $pageToken
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
+        /**
+         * Required. The data store resource name. Format: `projects/{project}/locatio
+         * ns/{location}/collections/{collection}/dataStores/{data_store_id}`
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaListSessionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
-    {
-    }
-    /**
-     * A comma-separated list of fields to order by, sorted in ascending order.
-     * Use "desc" after a field name for descending. Supported fields: *
-     * `update_time` * `create_time` * `session_name` * `is_pinned` Example: *
-     * `update_time desc` * `create_time` * `is_pinned desc,update_time desc`:
-     * list sessions by is_pinned first, then by update_time.
-     *
-     * @param string $orderBy
-     */
-    public function setOrderBy($orderBy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrderBy()
-    {
-    }
-    /**
-     * Maximum number of results to return. If unspecified, defaults to 50. Max
-     * allowed value is 1000.
-     *
-     * @param int $pageSize
-     */
-    public function setPageSize($pageSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPageSize()
-    {
-    }
-    /**
-     * A page token, received from a previous `ListSessions` call. Provide this to
-     * retrieve the subsequent page.
-     *
-     * @param string $pageToken
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
-    {
-    }
-    /**
-     * Required. The data store resource name. Format: `projects/{project}/locatio
-     * ns/{location}/collections/{collection}/dataStores/{data_store_id}`
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaListSessionsRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaListSessionsRequest
     {
     }
 }

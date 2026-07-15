@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1beta2FaceFrame extends \Google\Collection
-{
-    protected $collection_key = 'normalizedBoundingBoxes';
-    protected $normalizedBoundingBoxesType = GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox::class;
-    protected $normalizedBoundingBoxesDataType = 'array';
-    /**
-     * Time-offset, relative to the beginning of the video, corresponding to the
-     * video frame for this location.
-     *
-     * @var string
-     */
-    public $timeOffset;
-    /**
-     * Normalized Bounding boxes in a frame. There can be more than one boxes if
-     * the same face is detected in multiple locations within the current frame.
-     *
-     * @param GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox[] $normalizedBoundingBoxes
-     */
-    public function setNormalizedBoundingBoxes($normalizedBoundingBoxes)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1beta2FaceFrame extends \Google\Collection
     {
+        protected $collection_key = 'normalizedBoundingBoxes';
+        protected $normalizedBoundingBoxesType = GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox::class;
+        protected $normalizedBoundingBoxesDataType = 'array';
+        /**
+         * Time-offset, relative to the beginning of the video, corresponding to the
+         * video frame for this location.
+         *
+         * @var string
+         */
+        public $timeOffset;
+        /**
+         * Normalized Bounding boxes in a frame. There can be more than one boxes if
+         * the same face is detected in multiple locations within the current frame.
+         *
+         * @param GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox[] $normalizedBoundingBoxes
+         */
+        public function setNormalizedBoundingBoxes($normalizedBoundingBoxes)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox[]
+         */
+        public function getNormalizedBoundingBoxes()
+        {
+        }
+        /**
+         * Time-offset, relative to the beginning of the video, corresponding to the
+         * video frame for this location.
+         *
+         * @param string $timeOffset
+         */
+        public function setTimeOffset($timeOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeOffset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox[]
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1beta2FaceFrame registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNormalizedBoundingBoxes()
-    {
-    }
-    /**
-     * Time-offset, relative to the beginning of the video, corresponding to the
-     * video frame for this location.
-     *
-     * @param string $timeOffset
-     */
-    public function setTimeOffset($timeOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeOffset()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1beta2FaceFrame extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1beta2FaceFrame
     {
     }
 }

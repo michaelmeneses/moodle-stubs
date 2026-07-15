@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaListGoogleAdsLinksResponse extends \Google\Collection
-{
-    protected $collection_key = 'googleAdsLinks';
-    protected $googleAdsLinksType = GoogleAnalyticsAdminV1betaGoogleAdsLink::class;
-    protected $googleAdsLinksDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of GoogleAdsLinks.
-     *
-     * @param GoogleAnalyticsAdminV1betaGoogleAdsLink[] $googleAdsLinks
-     */
-    public function setGoogleAdsLinks($googleAdsLinks)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaListGoogleAdsLinksResponse extends \Google\Collection
     {
+        protected $collection_key = 'googleAdsLinks';
+        protected $googleAdsLinksType = GoogleAnalyticsAdminV1betaGoogleAdsLink::class;
+        protected $googleAdsLinksDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of GoogleAdsLinks.
+         *
+         * @param GoogleAnalyticsAdminV1betaGoogleAdsLink[] $googleAdsLinks
+         */
+        public function setGoogleAdsLinks($googleAdsLinks)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaGoogleAdsLink[]
+         */
+        public function getGoogleAdsLinks()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1betaGoogleAdsLink[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListGoogleAdsLinksResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGoogleAdsLinks()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaListGoogleAdsLinksResponse extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListGoogleAdsLinksResponse
     {
     }
 }

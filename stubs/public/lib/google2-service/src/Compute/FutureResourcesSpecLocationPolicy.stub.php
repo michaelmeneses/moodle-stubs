@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class FutureResourcesSpecLocationPolicy extends \Google\Model
-{
-    protected $locationsType = FutureResourcesSpecLocationPolicyLocation::class;
-    protected $locationsDataType = 'map';
-    /**
-     * Preferences for specified locations. Keys of the map are locations - zones,
-     * in format of 'zones/'. Values are preferences for the zones. If a zone is
-     * not specified in this map, it is ALLOWed.
-     *
-     * @param FutureResourcesSpecLocationPolicyLocation[] $locations
-     */
-    public function setLocations($locations)
+namespace Google\Service\Compute {
+    class FutureResourcesSpecLocationPolicy extends \Google\Model
     {
+        protected $locationsType = FutureResourcesSpecLocationPolicyLocation::class;
+        protected $locationsDataType = 'map';
+        /**
+         * Preferences for specified locations. Keys of the map are locations - zones,
+         * in format of 'zones/'. Values are preferences for the zones. If a zone is
+         * not specified in this map, it is ALLOWed.
+         *
+         * @param FutureResourcesSpecLocationPolicyLocation[] $locations
+         */
+        public function setLocations($locations)
+        {
+        }
+        /**
+         * @return FutureResourcesSpecLocationPolicyLocation[]
+         */
+        public function getLocations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FutureResourcesSpecLocationPolicyLocation[]
+     * Runtime class alias of \Google\Service\Compute\FutureResourcesSpecLocationPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocations()
+    class Google_Service_Compute_FutureResourcesSpecLocationPolicy extends \Google\Service\Compute\FutureResourcesSpecLocationPolicy
     {
     }
 }

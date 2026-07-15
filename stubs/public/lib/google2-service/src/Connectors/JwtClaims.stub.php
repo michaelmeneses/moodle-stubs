@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class JwtClaims extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $audience;
-    /**
-     * @var string
-     */
-    public $issuer;
-    /**
-     * @var string
-     */
-    public $subject;
-    /**
-     * @param string
-     */
-    public function setAudience($audience)
+namespace Google\Service\Connectors {
+    class JwtClaims extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $audience;
+        /**
+         * @var string
+         */
+        public $issuer;
+        /**
+         * @var string
+         */
+        public $subject;
+        /**
+         * @param string
+         */
+        public function setAudience($audience)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAudience()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIssuer($issuer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssuer()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSubject($subject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Connectors\JwtClaims registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAudience()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIssuer($issuer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIssuer()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSubject($subject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubject()
+    class Google_Service_Connectors_JwtClaims extends \Google\Service\Connectors\JwtClaims
     {
     }
 }

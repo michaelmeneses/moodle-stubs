@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class AppendValuesResponse extends \Google\Model
-{
-    /**
-     * The spreadsheet the updates were applied to.
-     *
-     * @var string
-     */
-    public $spreadsheetId;
-    /**
-     * The range (in A1 notation) of the table that values are being appended to
-     * (before the values were appended). Empty if no table was found.
-     *
-     * @var string
-     */
-    public $tableRange;
-    protected $updatesType = UpdateValuesResponse::class;
-    protected $updatesDataType = '';
-    /**
-     * The spreadsheet the updates were applied to.
-     *
-     * @param string $spreadsheetId
-     */
-    public function setSpreadsheetId($spreadsheetId)
+namespace Google\Service\Sheets {
+    class AppendValuesResponse extends \Google\Model
     {
+        /**
+         * The spreadsheet the updates were applied to.
+         *
+         * @var string
+         */
+        public $spreadsheetId;
+        /**
+         * The range (in A1 notation) of the table that values are being appended to
+         * (before the values were appended). Empty if no table was found.
+         *
+         * @var string
+         */
+        public $tableRange;
+        protected $updatesType = UpdateValuesResponse::class;
+        protected $updatesDataType = '';
+        /**
+         * The spreadsheet the updates were applied to.
+         *
+         * @param string $spreadsheetId
+         */
+        public function setSpreadsheetId($spreadsheetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpreadsheetId()
+        {
+        }
+        /**
+         * The range (in A1 notation) of the table that values are being appended to
+         * (before the values were appended). Empty if no table was found.
+         *
+         * @param string $tableRange
+         */
+        public function setTableRange($tableRange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableRange()
+        {
+        }
+        /**
+         * Information about the updates that were applied.
+         *
+         * @param UpdateValuesResponse $updates
+         */
+        public function setUpdates(UpdateValuesResponse $updates)
+        {
+        }
+        /**
+         * @return UpdateValuesResponse
+         */
+        public function getUpdates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sheets\AppendValuesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSpreadsheetId()
-    {
-    }
-    /**
-     * The range (in A1 notation) of the table that values are being appended to
-     * (before the values were appended). Empty if no table was found.
-     *
-     * @param string $tableRange
-     */
-    public function setTableRange($tableRange)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableRange()
-    {
-    }
-    /**
-     * Information about the updates that were applied.
-     *
-     * @param UpdateValuesResponse $updates
-     */
-    public function setUpdates(UpdateValuesResponse $updates)
-    {
-    }
-    /**
-     * @return UpdateValuesResponse
-     */
-    public function getUpdates()
+    class Google_Service_Sheets_AppendValuesResponse extends \Google\Service\Sheets\AppendValuesResponse
     {
     }
 }

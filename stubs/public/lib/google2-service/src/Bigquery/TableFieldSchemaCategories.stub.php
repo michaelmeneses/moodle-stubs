@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class TableFieldSchemaCategories extends \Google\Collection
-{
-    protected $collection_key = 'names';
-    /**
-     * Deprecated.
-     *
-     * @var string[]
-     */
-    public $names;
-    /**
-     * Deprecated.
-     *
-     * @param string[] $names
-     */
-    public function setNames($names)
+namespace Google\Service\Bigquery {
+    class TableFieldSchemaCategories extends \Google\Collection
     {
+        protected $collection_key = 'names';
+        /**
+         * Deprecated.
+         *
+         * @var string[]
+         */
+        public $names;
+        /**
+         * Deprecated.
+         *
+         * @param string[] $names
+         */
+        public function setNames($names)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Bigquery\TableFieldSchemaCategories registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNames()
+    class Google_Service_Bigquery_TableFieldSchemaCategories extends \Google\Service\Bigquery\TableFieldSchemaCategories
     {
     }
 }

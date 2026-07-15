@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class Targets extends \Google\Model
-{
-    /**
-     * Optional. The destination target ID.
-     *
-     * @var string
-     */
-    public $destinationTargetId;
-    /**
-     * Optional. The source target ID.
-     *
-     * @var string
-     */
-    public $sourceTargetId;
-    /**
-     * Optional. The destination target ID.
-     *
-     * @param string $destinationTargetId
-     */
-    public function setDestinationTargetId($destinationTargetId)
+namespace Google\Service\CloudDeploy {
+    class Targets extends \Google\Model
     {
+        /**
+         * Optional. The destination target ID.
+         *
+         * @var string
+         */
+        public $destinationTargetId;
+        /**
+         * Optional. The source target ID.
+         *
+         * @var string
+         */
+        public $sourceTargetId;
+        /**
+         * Optional. The destination target ID.
+         *
+         * @param string $destinationTargetId
+         */
+        public function setDestinationTargetId($destinationTargetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationTargetId()
+        {
+        }
+        /**
+         * Optional. The source target ID.
+         *
+         * @param string $sourceTargetId
+         */
+        public function setSourceTargetId($sourceTargetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceTargetId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\Targets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationTargetId()
-    {
-    }
-    /**
-     * Optional. The source target ID.
-     *
-     * @param string $sourceTargetId
-     */
-    public function setSourceTargetId($sourceTargetId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceTargetId()
+    class Google_Service_CloudDeploy_Targets extends \Google\Service\CloudDeploy\Targets
     {
     }
 }

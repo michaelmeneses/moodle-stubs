@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class AddSlicerResponse extends \Google\Model
-{
-    protected $slicerType = Slicer::class;
-    protected $slicerDataType = '';
-    /**
-     * The newly added slicer.
-     *
-     * @param Slicer $slicer
-     */
-    public function setSlicer(Slicer $slicer)
+namespace Google\Service\Sheets {
+    class AddSlicerResponse extends \Google\Model
     {
+        protected $slicerType = Slicer::class;
+        protected $slicerDataType = '';
+        /**
+         * The newly added slicer.
+         *
+         * @param Slicer $slicer
+         */
+        public function setSlicer(Slicer $slicer)
+        {
+        }
+        /**
+         * @return Slicer
+         */
+        public function getSlicer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Slicer
+     * Runtime class alias of \Google\Service\Sheets\AddSlicerResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSlicer()
+    class Google_Service_Sheets_AddSlicerResponse extends \Google\Service\Sheets\AddSlicerResponse
     {
     }
 }

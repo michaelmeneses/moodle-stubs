@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessQA;
-
-class UpsertAnswerRequest extends \Google\Model
-{
-    protected $answerType = Answer::class;
-    protected $answerDataType = '';
-    /**
-     * Required. The new answer.
-     *
-     * @param Answer $answer
-     */
-    public function setAnswer(Answer $answer)
+namespace Google\Service\MyBusinessQA {
+    class UpsertAnswerRequest extends \Google\Model
     {
+        protected $answerType = Answer::class;
+        protected $answerDataType = '';
+        /**
+         * Required. The new answer.
+         *
+         * @param Answer $answer
+         */
+        public function setAnswer(Answer $answer)
+        {
+        }
+        /**
+         * @return Answer
+         */
+        public function getAnswer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Answer
+     * Runtime class alias of \Google\Service\MyBusinessQA\UpsertAnswerRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswer()
+    class Google_Service_MyBusinessQA_UpsertAnswerRequest extends \Google\Service\MyBusinessQA\UpsertAnswerRequest
     {
     }
 }

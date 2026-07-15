@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigGenerationConfig extends \Google\Model
-{
-    /**
-     * Required. The model used to generate memories. Format:
-     * `projects/{project}/locations/{location}/publishers/google/models/{model}`.
-     *
-     * @var string
-     */
-    public $model;
-    /**
-     * Required. The model used to generate memories. Format:
-     * `projects/{project}/locations/{location}/publishers/google/models/{model}`.
-     *
-     * @param string $model
-     */
-    public function setModel($model)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigGenerationConfig extends \Google\Model
     {
+        /**
+         * Required. The model used to generate memories. Format:
+         * `projects/{project}/locations/{location}/publishers/google/models/{model}`.
+         *
+         * @var string
+         */
+        public $model;
+        /**
+         * Required. The model used to generate memories. Format:
+         * `projects/{project}/locations/{location}/publishers/google/models/{model}`.
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigGenerationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModel()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigGenerationConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigGenerationConfig
     {
     }
 }

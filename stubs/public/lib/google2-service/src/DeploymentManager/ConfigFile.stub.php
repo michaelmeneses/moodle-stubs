@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeploymentManager;
-
-class ConfigFile extends \Google\Model
-{
-    /**
-     * The contents of the file.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * The contents of the file.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\DeploymentManager {
+    class ConfigFile extends \Google\Model
     {
+        /**
+         * The contents of the file.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * The contents of the file.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DeploymentManager\ConfigFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
+    class Google_Service_DeploymentManager_ConfigFile extends \Google\Service\DeploymentManager\ConfigFile
     {
     }
 }

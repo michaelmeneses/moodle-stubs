@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class MongodbCluster extends \Google\Collection
-{
-    protected $collection_key = 'databases';
-    protected $databasesType = MongodbDatabase::class;
-    protected $databasesDataType = 'array';
-    /**
-     * MongoDB databases in the cluster.
-     *
-     * @param MongodbDatabase[] $databases
-     */
-    public function setDatabases($databases)
+namespace Google\Service\Datastream {
+    class MongodbCluster extends \Google\Collection
     {
+        protected $collection_key = 'databases';
+        protected $databasesType = MongodbDatabase::class;
+        protected $databasesDataType = 'array';
+        /**
+         * MongoDB databases in the cluster.
+         *
+         * @param MongodbDatabase[] $databases
+         */
+        public function setDatabases($databases)
+        {
+        }
+        /**
+         * @return MongodbDatabase[]
+         */
+        public function getDatabases()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MongodbDatabase[]
+     * Runtime class alias of \Google\Service\Datastream\MongodbCluster registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabases()
+    class Google_Service_Datastream_MongodbCluster extends \Google\Service\Datastream\MongodbCluster
     {
     }
 }

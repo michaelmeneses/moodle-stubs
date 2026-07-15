@@ -21,117 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class GameServerConfig extends \Google\Collection
-{
-    protected $collection_key = 'scalingConfigs';
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $description;
-    protected $fleetConfigsType = FleetConfig::class;
-    protected $fleetConfigsDataType = 'array';
-    /**
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $scalingConfigsType = ScalingConfig::class;
-    protected $scalingConfigsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\GameServices {
+    class GameServerConfig extends \Google\Collection
     {
+        protected $collection_key = 'scalingConfigs';
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $description;
+        protected $fleetConfigsType = FleetConfig::class;
+        protected $fleetConfigsDataType = 'array';
+        /**
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $scalingConfigsType = ScalingConfig::class;
+        protected $scalingConfigsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param FleetConfig[]
+         */
+        public function setFleetConfigs($fleetConfigs)
+        {
+        }
+        /**
+         * @return FleetConfig[]
+         */
+        public function getFleetConfigs()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param ScalingConfig[]
+         */
+        public function setScalingConfigs($scalingConfigs)
+        {
+        }
+        /**
+         * @return ScalingConfig[]
+         */
+        public function getScalingConfigs()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GameServices\GameServerConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param FleetConfig[]
-     */
-    public function setFleetConfigs($fleetConfigs)
-    {
-    }
-    /**
-     * @return FleetConfig[]
-     */
-    public function getFleetConfigs()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param ScalingConfig[]
-     */
-    public function setScalingConfigs($scalingConfigs)
-    {
-    }
-    /**
-     * @return ScalingConfig[]
-     */
-    public function getScalingConfigs()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_GameServices_GameServerConfig extends \Google\Service\GameServices\GameServerConfig
     {
     }
 }

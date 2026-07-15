@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "apis" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $apis = $apigeeService->organizations_environments_apis;
- *  </code>
- */
-class OrganizationsEnvironmentsApis extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    /**
+     * The "apis" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $apis = $apigeeService->organizations_environments_apis;
+     *  </code>
+     */
+    class OrganizationsEnvironmentsApis extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsEnvironmentsApis registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Apigee_Resource_OrganizationsEnvironmentsApis extends \Google\Service\Apigee\Resource\OrganizationsEnvironmentsApis
+    {
+    }
 }

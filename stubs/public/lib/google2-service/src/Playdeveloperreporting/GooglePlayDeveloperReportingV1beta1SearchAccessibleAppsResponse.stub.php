@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting;
-
-class GooglePlayDeveloperReportingV1beta1SearchAccessibleAppsResponse extends \Google\Collection
-{
-    protected $collection_key = 'apps';
-    protected $appsType = GooglePlayDeveloperReportingV1beta1App::class;
-    protected $appsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The apps accessible to the user calling the endpoint.
-     *
-     * @param GooglePlayDeveloperReportingV1beta1App[] $apps
-     */
-    public function setApps($apps)
+namespace Google\Service\Playdeveloperreporting {
+    class GooglePlayDeveloperReportingV1beta1SearchAccessibleAppsResponse extends \Google\Collection
     {
+        protected $collection_key = 'apps';
+        protected $appsType = GooglePlayDeveloperReportingV1beta1App::class;
+        protected $appsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The apps accessible to the user calling the endpoint.
+         *
+         * @param GooglePlayDeveloperReportingV1beta1App[] $apps
+         */
+        public function setApps($apps)
+        {
+        }
+        /**
+         * @return GooglePlayDeveloperReportingV1beta1App[]
+         */
+        public function getApps()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePlayDeveloperReportingV1beta1App[]
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1SearchAccessibleAppsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApps()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Playdeveloperreporting_GooglePlayDeveloperReportingV1beta1SearchAccessibleAppsResponse extends \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1SearchAccessibleAppsResponse
     {
     }
 }

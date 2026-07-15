@@ -21,76 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns\Resource;
-
-/**
- * The "changes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dnsService = new Google\Service\Dns(...);
- *   $changes = $dnsService->changes;
- *  </code>
- */
-class Changes extends \Google\Service\Resource
-{
+namespace Google\Service\Dns\Resource {
+    use Google\Service\Dns\Change;
+    use Google\Service\Dns\ChangesListResponse;
     /**
-     * Atomically updates the ResourceRecordSet collection. (changes.create)
-     *
-     * @param string $project Identifies the project addressed by this request.
-     * @param string $managedZone Identifies the managed zone addressed by this
-     * request. Can be the managed zone name or ID.
-     * @param Change $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string clientOperationId For mutating operation requests only. An
-     * optional identifier specified by the client. Must be unique for operation
-     * resources in the Operations collection.
-     * @return Change
-     * @throws \Google\Service\Exception
+     * The "changes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dnsService = new Google\Service\Dns(...);
+     *   $changes = $dnsService->changes;
+     *  </code>
      */
-    public function create($project, $managedZone, Change $postBody, $optParams = [])
+    class Changes extends \Google\Service\Resource
     {
+        /**
+         * Atomically updates the ResourceRecordSet collection. (changes.create)
+         *
+         * @param string $project Identifies the project addressed by this request.
+         * @param string $managedZone Identifies the managed zone addressed by this
+         * request. Can be the managed zone name or ID.
+         * @param Change $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string clientOperationId For mutating operation requests only. An
+         * optional identifier specified by the client. Must be unique for operation
+         * resources in the Operations collection.
+         * @return Change
+         * @throws \Google\Service\Exception
+         */
+        public function create($project, $managedZone, Change $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Fetches the representation of an existing Change. (changes.get)
+         *
+         * @param string $project Identifies the project addressed by this request.
+         * @param string $managedZone Identifies the managed zone addressed by this
+         * request. Can be the managed zone name or ID.
+         * @param string $changeId The identifier of the requested change, from a
+         * previous ResourceRecordSetsChangeResponse.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string clientOperationId For mutating operation requests only. An
+         * optional identifier specified by the client. Must be unique for operation
+         * resources in the Operations collection.
+         * @return Change
+         * @throws \Google\Service\Exception
+         */
+        public function get($project, $managedZone, $changeId, $optParams = [])
+        {
+        }
+        /**
+         * Enumerates Changes to a ResourceRecordSet collection. (changes.listChanges)
+         *
+         * @param string $project Identifies the project addressed by this request.
+         * @param string $managedZone Identifies the managed zone addressed by this
+         * request. Can be the managed zone name or ID.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int maxResults Optional. Maximum number of results to be returned.
+         * If unspecified, the server decides how many results to return.
+         * @opt_param string pageToken Optional. A tag returned by a previous list
+         * request that was truncated. Use this parameter to continue a previous list
+         * request.
+         * @opt_param string sortBy Sorting criterion. The only supported value is
+         * change sequence.
+         * @opt_param string sortOrder Sorting order direction: 'ascending' or
+         * 'descending'.
+         * @return ChangesListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listChanges($project, $managedZone, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Fetches the representation of an existing Change. (changes.get)
-     *
-     * @param string $project Identifies the project addressed by this request.
-     * @param string $managedZone Identifies the managed zone addressed by this
-     * request. Can be the managed zone name or ID.
-     * @param string $changeId The identifier of the requested change, from a
-     * previous ResourceRecordSetsChangeResponse.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string clientOperationId For mutating operation requests only. An
-     * optional identifier specified by the client. Must be unique for operation
-     * resources in the Operations collection.
-     * @return Change
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dns\Resource\Changes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($project, $managedZone, $changeId, $optParams = [])
-    {
-    }
-    /**
-     * Enumerates Changes to a ResourceRecordSet collection. (changes.listChanges)
-     *
-     * @param string $project Identifies the project addressed by this request.
-     * @param string $managedZone Identifies the managed zone addressed by this
-     * request. Can be the managed zone name or ID.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int maxResults Optional. Maximum number of results to be returned.
-     * If unspecified, the server decides how many results to return.
-     * @opt_param string pageToken Optional. A tag returned by a previous list
-     * request that was truncated. Use this parameter to continue a previous list
-     * request.
-     * @opt_param string sortBy Sorting criterion. The only supported value is
-     * change sequence.
-     * @opt_param string sortOrder Sorting order direction: 'ascending' or
-     * 'descending'.
-     * @return ChangesListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listChanges($project, $managedZone, $optParams = [])
+    class Google_Service_Dns_Resource_Changes extends \Google\Service\Dns\Resource\Changes
     {
     }
 }

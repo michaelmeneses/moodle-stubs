@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio extends \Google\Model
-{
-    /**
-     * Required. URI to a Google Cloud Storage object containing the audio to
-     * play, e.g., "gs://bucket/object". The object must contain a single channel
-     * (mono) of linear PCM audio (2 bytes / sample) at 8kHz. This object must be
-     * readable by the `service-@gcp-sa-dialogflow.iam.gserviceaccount.com`
-     * service account where is the number of the Telephony Gateway project
-     * (usually the same as the Dialogflow agent project). If the Google Cloud
-     * Storage bucket is in the Telephony Gateway project, this permission is
-     * added by default when enabling the Dialogflow V2 API. For audio from other
-     * sources, consider using the `TelephonySynthesizeSpeech` message with SSML.
-     *
-     * @var string
-     */
-    public $audioUri;
-    /**
-     * Required. URI to a Google Cloud Storage object containing the audio to
-     * play, e.g., "gs://bucket/object". The object must contain a single channel
-     * (mono) of linear PCM audio (2 bytes / sample) at 8kHz. This object must be
-     * readable by the `service-@gcp-sa-dialogflow.iam.gserviceaccount.com`
-     * service account where is the number of the Telephony Gateway project
-     * (usually the same as the Dialogflow agent project). If the Google Cloud
-     * Storage bucket is in the Telephony Gateway project, this permission is
-     * added by default when enabling the Dialogflow V2 API. For audio from other
-     * sources, consider using the `TelephonySynthesizeSpeech` message with SSML.
-     *
-     * @param string $audioUri
-     */
-    public function setAudioUri($audioUri)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio extends \Google\Model
     {
+        /**
+         * Required. URI to a Google Cloud Storage object containing the audio to
+         * play, e.g., "gs://bucket/object". The object must contain a single channel
+         * (mono) of linear PCM audio (2 bytes / sample) at 8kHz. This object must be
+         * readable by the `service-@gcp-sa-dialogflow.iam.gserviceaccount.com`
+         * service account where is the number of the Telephony Gateway project
+         * (usually the same as the Dialogflow agent project). If the Google Cloud
+         * Storage bucket is in the Telephony Gateway project, this permission is
+         * added by default when enabling the Dialogflow V2 API. For audio from other
+         * sources, consider using the `TelephonySynthesizeSpeech` message with SSML.
+         *
+         * @var string
+         */
+        public $audioUri;
+        /**
+         * Required. URI to a Google Cloud Storage object containing the audio to
+         * play, e.g., "gs://bucket/object". The object must contain a single channel
+         * (mono) of linear PCM audio (2 bytes / sample) at 8kHz. This object must be
+         * readable by the `service-@gcp-sa-dialogflow.iam.gserviceaccount.com`
+         * service account where is the number of the Telephony Gateway project
+         * (usually the same as the Dialogflow agent project). If the Google Cloud
+         * Storage bucket is in the Telephony Gateway project, this permission is
+         * added by default when enabling the Dialogflow V2 API. For audio from other
+         * sources, consider using the `TelephonySynthesizeSpeech` message with SSML.
+         *
+         * @param string $audioUri
+         */
+        public function setAudioUri($audioUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAudioUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAudioUri()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio
     {
     }
 }

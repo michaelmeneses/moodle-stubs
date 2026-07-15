@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class InputQuantileMetrics extends \Google\Model
-{
-    protected $bytesReadType = Quantiles::class;
-    protected $bytesReadDataType = '';
-    protected $recordsReadType = Quantiles::class;
-    protected $recordsReadDataType = '';
-    /**
-     * @param Quantiles $bytesRead
-     */
-    public function setBytesRead(Quantiles $bytesRead)
+namespace Google\Service\Dataproc {
+    class InputQuantileMetrics extends \Google\Model
     {
+        protected $bytesReadType = Quantiles::class;
+        protected $bytesReadDataType = '';
+        protected $recordsReadType = Quantiles::class;
+        protected $recordsReadDataType = '';
+        /**
+         * @param Quantiles $bytesRead
+         */
+        public function setBytesRead(Quantiles $bytesRead)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getBytesRead()
+        {
+        }
+        /**
+         * @param Quantiles $recordsRead
+         */
+        public function setRecordsRead(Quantiles $recordsRead)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getRecordsRead()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Quantiles
+     * Runtime class alias of \Google\Service\Dataproc\InputQuantileMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBytesRead()
-    {
-    }
-    /**
-     * @param Quantiles $recordsRead
-     */
-    public function setRecordsRead(Quantiles $recordsRead)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getRecordsRead()
+    class Google_Service_Dataproc_InputQuantileMetrics extends \Google\Service\Dataproc\InputQuantileMetrics
     {
     }
 }

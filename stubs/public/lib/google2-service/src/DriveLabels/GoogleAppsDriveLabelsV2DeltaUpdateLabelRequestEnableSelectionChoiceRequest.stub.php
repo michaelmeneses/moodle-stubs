@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestEnableSelectionChoiceRequest extends \Google\Model
-{
-    /**
-     * Required. The selection field in which a choice will be enabled.
-     *
-     * @var string
-     */
-    public $fieldId;
-    /**
-     * Required. Choice to enable.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Required. The selection field in which a choice will be enabled.
-     *
-     * @param string $fieldId
-     */
-    public function setFieldId($fieldId)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestEnableSelectionChoiceRequest extends \Google\Model
     {
+        /**
+         * Required. The selection field in which a choice will be enabled.
+         *
+         * @var string
+         */
+        public $fieldId;
+        /**
+         * Required. Choice to enable.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Required. The selection field in which a choice will be enabled.
+         *
+         * @param string $fieldId
+         */
+        public function setFieldId($fieldId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldId()
+        {
+        }
+        /**
+         * Required. Choice to enable.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestEnableSelectionChoiceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldId()
-    {
-    }
-    /**
-     * Required. Choice to enable.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestEnableSelectionChoiceRequest extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestEnableSelectionChoiceRequest
     {
     }
 }

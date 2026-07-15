@@ -21,53 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Dataflow (v1b3).
- *
- * <p>
- * Manages Google Cloud Dataflow projects on Google Cloud Platform.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/dataflow" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Dataflow extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    /** View and manage your Google Compute Engine resources. */
-    const COMPUTE = "https://www.googleapis.com/auth/compute";
-    public $projects;
-    public $projects_jobs;
-    public $projects_jobs_debug;
-    public $projects_jobs_messages;
-    public $projects_jobs_workItems;
-    public $projects_locations;
-    public $projects_locations_flexTemplates;
-    public $projects_locations_jobs;
-    public $projects_locations_jobs_debug;
-    public $projects_locations_jobs_messages;
-    public $projects_locations_jobs_snapshots;
-    public $projects_locations_jobs_stages;
-    public $projects_locations_jobs_workItems;
-    public $projects_locations_snapshots;
-    public $projects_locations_templates;
-    public $projects_snapshots;
-    public $projects_templates;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Dataflow service.
+     * Service definition for Dataflow (v1b3).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Manages Google Cloud Dataflow projects on Google Cloud Platform.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/dataflow" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Dataflow extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        /** View and manage your Google Compute Engine resources. */
+        const COMPUTE = "https://www.googleapis.com/auth/compute";
+        public $projects;
+        public $projects_jobs;
+        public $projects_jobs_debug;
+        public $projects_jobs_messages;
+        public $projects_jobs_workItems;
+        public $projects_locations;
+        public $projects_locations_flexTemplates;
+        public $projects_locations_jobs;
+        public $projects_locations_jobs_debug;
+        public $projects_locations_jobs_messages;
+        public $projects_locations_jobs_snapshots;
+        public $projects_locations_jobs_stages;
+        public $projects_locations_jobs_workItems;
+        public $projects_locations_snapshots;
+        public $projects_locations_templates;
+        public $projects_snapshots;
+        public $projects_templates;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Dataflow service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dataflow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dataflow extends \Google\Service\Dataflow
     {
     }
 }

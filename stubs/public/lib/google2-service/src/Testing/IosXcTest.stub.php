@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class IosXcTest extends \Google\Model
-{
-    /**
-     * Output only. The bundle id for the application under test.
-     *
-     * @var string
-     */
-    public $appBundleId;
-    /**
-     * The option to test special app entitlements. Setting this would re-sign the
-     * app having special entitlements with an explicit application-identifier.
-     * Currently supports testing aps-environment entitlement.
-     *
-     * @var bool
-     */
-    public $testSpecialEntitlements;
-    protected $testsZipType = FileReference::class;
-    protected $testsZipDataType = '';
-    /**
-     * The Xcode version that should be used for the test. Use the
-     * TestEnvironmentDiscoveryService to get supported options. Defaults to the
-     * latest Xcode version Firebase Test Lab supports.
-     *
-     * @var string
-     */
-    public $xcodeVersion;
-    protected $xctestrunType = FileReference::class;
-    protected $xctestrunDataType = '';
-    /**
-     * Output only. The bundle id for the application under test.
-     *
-     * @param string $appBundleId
-     */
-    public function setAppBundleId($appBundleId)
+namespace Google\Service\Testing {
+    class IosXcTest extends \Google\Model
     {
+        /**
+         * Output only. The bundle id for the application under test.
+         *
+         * @var string
+         */
+        public $appBundleId;
+        /**
+         * The option to test special app entitlements. Setting this would re-sign the
+         * app having special entitlements with an explicit application-identifier.
+         * Currently supports testing aps-environment entitlement.
+         *
+         * @var bool
+         */
+        public $testSpecialEntitlements;
+        protected $testsZipType = FileReference::class;
+        protected $testsZipDataType = '';
+        /**
+         * The Xcode version that should be used for the test. Use the
+         * TestEnvironmentDiscoveryService to get supported options. Defaults to the
+         * latest Xcode version Firebase Test Lab supports.
+         *
+         * @var string
+         */
+        public $xcodeVersion;
+        protected $xctestrunType = FileReference::class;
+        protected $xctestrunDataType = '';
+        /**
+         * Output only. The bundle id for the application under test.
+         *
+         * @param string $appBundleId
+         */
+        public function setAppBundleId($appBundleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppBundleId()
+        {
+        }
+        /**
+         * The option to test special app entitlements. Setting this would re-sign the
+         * app having special entitlements with an explicit application-identifier.
+         * Currently supports testing aps-environment entitlement.
+         *
+         * @param bool $testSpecialEntitlements
+         */
+        public function setTestSpecialEntitlements($testSpecialEntitlements)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTestSpecialEntitlements()
+        {
+        }
+        /**
+         * Required. The .zip containing the .xctestrun file and the contents of the
+         * DerivedData/Build/Products directory. The .xctestrun file in this zip is
+         * ignored if the xctestrun field is specified.
+         *
+         * @param FileReference $testsZip
+         */
+        public function setTestsZip(FileReference $testsZip)
+        {
+        }
+        /**
+         * @return FileReference
+         */
+        public function getTestsZip()
+        {
+        }
+        /**
+         * The Xcode version that should be used for the test. Use the
+         * TestEnvironmentDiscoveryService to get supported options. Defaults to the
+         * latest Xcode version Firebase Test Lab supports.
+         *
+         * @param string $xcodeVersion
+         */
+        public function setXcodeVersion($xcodeVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getXcodeVersion()
+        {
+        }
+        /**
+         * An .xctestrun file that will override the .xctestrun file in the tests zip.
+         * Because the .xctestrun file contains environment variables along with test
+         * methods to run and/or ignore, this can be useful for sharding tests.
+         * Default is taken from the tests zip.
+         *
+         * @param FileReference $xctestrun
+         */
+        public function setXctestrun(FileReference $xctestrun)
+        {
+        }
+        /**
+         * @return FileReference
+         */
+        public function getXctestrun()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Testing\IosXcTest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppBundleId()
-    {
-    }
-    /**
-     * The option to test special app entitlements. Setting this would re-sign the
-     * app having special entitlements with an explicit application-identifier.
-     * Currently supports testing aps-environment entitlement.
-     *
-     * @param bool $testSpecialEntitlements
-     */
-    public function setTestSpecialEntitlements($testSpecialEntitlements)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTestSpecialEntitlements()
-    {
-    }
-    /**
-     * Required. The .zip containing the .xctestrun file and the contents of the
-     * DerivedData/Build/Products directory. The .xctestrun file in this zip is
-     * ignored if the xctestrun field is specified.
-     *
-     * @param FileReference $testsZip
-     */
-    public function setTestsZip(FileReference $testsZip)
-    {
-    }
-    /**
-     * @return FileReference
-     */
-    public function getTestsZip()
-    {
-    }
-    /**
-     * The Xcode version that should be used for the test. Use the
-     * TestEnvironmentDiscoveryService to get supported options. Defaults to the
-     * latest Xcode version Firebase Test Lab supports.
-     *
-     * @param string $xcodeVersion
-     */
-    public function setXcodeVersion($xcodeVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getXcodeVersion()
-    {
-    }
-    /**
-     * An .xctestrun file that will override the .xctestrun file in the tests zip.
-     * Because the .xctestrun file contains environment variables along with test
-     * methods to run and/or ignore, this can be useful for sharding tests.
-     * Default is taken from the tests zip.
-     *
-     * @param FileReference $xctestrun
-     */
-    public function setXctestrun(FileReference $xctestrun)
-    {
-    }
-    /**
-     * @return FileReference
-     */
-    public function getXctestrun()
+    class Google_Service_Testing_IosXcTest extends \Google\Service\Testing\IosXcTest
     {
     }
 }

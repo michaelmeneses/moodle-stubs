@@ -21,142 +21,151 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1ConversationParticipant extends \Google\Model
-{
-    /**
-     * Participant's role is not set.
-     */
-    public const ROLE_ROLE_UNSPECIFIED = 'ROLE_UNSPECIFIED';
-    /**
-     * Participant is a human agent.
-     */
-    public const ROLE_HUMAN_AGENT = 'HUMAN_AGENT';
-    /**
-     * Participant is an automated agent.
-     */
-    public const ROLE_AUTOMATED_AGENT = 'AUTOMATED_AGENT';
-    /**
-     * Participant is an end user who conversed with the contact center.
-     */
-    public const ROLE_END_USER = 'END_USER';
-    /**
-     * Participant is either a human or automated agent.
-     */
-    public const ROLE_ANY_AGENT = 'ANY_AGENT';
-    /**
-     * Deprecated. Use `dialogflow_participant_name` instead. The name of the
-     * Dialogflow participant. Format: projects/{project}/locations/{location}/con
-     * versations/{conversation}/participants/{participant}
-     *
-     * @deprecated
-     * @var string
-     */
-    public $dialogflowParticipant;
-    /**
-     * The name of the participant provided by Dialogflow. Format: projects/{proje
-     * ct}/locations/{location}/conversations/{conversation}/participants/{partici
-     * pant}
-     *
-     * @var string
-     */
-    public $dialogflowParticipantName;
-    /**
-     * Obfuscated user ID from Dialogflow.
-     *
-     * @var string
-     */
-    public $obfuscatedExternalUserId;
-    /**
-     * The role of the participant.
-     *
-     * @var string
-     */
-    public $role;
-    /**
-     * A user-specified ID representing the participant.
-     *
-     * @var string
-     */
-    public $userId;
-    /**
-     * Deprecated. Use `dialogflow_participant_name` instead. The name of the
-     * Dialogflow participant. Format: projects/{project}/locations/{location}/con
-     * versations/{conversation}/participants/{participant}
-     *
-     * @deprecated
-     * @param string $dialogflowParticipant
-     */
-    public function setDialogflowParticipant($dialogflowParticipant)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1ConversationParticipant extends \Google\Model
     {
+        /**
+         * Participant's role is not set.
+         */
+        public const ROLE_ROLE_UNSPECIFIED = 'ROLE_UNSPECIFIED';
+        /**
+         * Participant is a human agent.
+         */
+        public const ROLE_HUMAN_AGENT = 'HUMAN_AGENT';
+        /**
+         * Participant is an automated agent.
+         */
+        public const ROLE_AUTOMATED_AGENT = 'AUTOMATED_AGENT';
+        /**
+         * Participant is an end user who conversed with the contact center.
+         */
+        public const ROLE_END_USER = 'END_USER';
+        /**
+         * Participant is either a human or automated agent.
+         */
+        public const ROLE_ANY_AGENT = 'ANY_AGENT';
+        /**
+         * Deprecated. Use `dialogflow_participant_name` instead. The name of the
+         * Dialogflow participant. Format: projects/{project}/locations/{location}/con
+         * versations/{conversation}/participants/{participant}
+         *
+         * @deprecated
+         * @var string
+         */
+        public $dialogflowParticipant;
+        /**
+         * The name of the participant provided by Dialogflow. Format: projects/{proje
+         * ct}/locations/{location}/conversations/{conversation}/participants/{partici
+         * pant}
+         *
+         * @var string
+         */
+        public $dialogflowParticipantName;
+        /**
+         * Obfuscated user ID from Dialogflow.
+         *
+         * @var string
+         */
+        public $obfuscatedExternalUserId;
+        /**
+         * The role of the participant.
+         *
+         * @var string
+         */
+        public $role;
+        /**
+         * A user-specified ID representing the participant.
+         *
+         * @var string
+         */
+        public $userId;
+        /**
+         * Deprecated. Use `dialogflow_participant_name` instead. The name of the
+         * Dialogflow participant. Format: projects/{project}/locations/{location}/con
+         * versations/{conversation}/participants/{participant}
+         *
+         * @deprecated
+         * @param string $dialogflowParticipant
+         */
+        public function setDialogflowParticipant($dialogflowParticipant)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getDialogflowParticipant()
+        {
+        }
+        /**
+         * The name of the participant provided by Dialogflow. Format: projects/{proje
+         * ct}/locations/{location}/conversations/{conversation}/participants/{partici
+         * pant}
+         *
+         * @param string $dialogflowParticipantName
+         */
+        public function setDialogflowParticipantName($dialogflowParticipantName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDialogflowParticipantName()
+        {
+        }
+        /**
+         * Obfuscated user ID from Dialogflow.
+         *
+         * @param string $obfuscatedExternalUserId
+         */
+        public function setObfuscatedExternalUserId($obfuscatedExternalUserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObfuscatedExternalUserId()
+        {
+        }
+        /**
+         * The role of the participant.
+         *
+         * Accepted values: ROLE_UNSPECIFIED, HUMAN_AGENT, AUTOMATED_AGENT, END_USER,
+         * ANY_AGENT
+         *
+         * @param self::ROLE_* $role
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return self::ROLE_*
+         */
+        public function getRole()
+        {
+        }
+        /**
+         * A user-specified ID representing the participant.
+         *
+         * @param string $userId
+         */
+        public function setUserId($userId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ConversationParticipant registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDialogflowParticipant()
-    {
-    }
-    /**
-     * The name of the participant provided by Dialogflow. Format: projects/{proje
-     * ct}/locations/{location}/conversations/{conversation}/participants/{partici
-     * pant}
-     *
-     * @param string $dialogflowParticipantName
-     */
-    public function setDialogflowParticipantName($dialogflowParticipantName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDialogflowParticipantName()
-    {
-    }
-    /**
-     * Obfuscated user ID from Dialogflow.
-     *
-     * @param string $obfuscatedExternalUserId
-     */
-    public function setObfuscatedExternalUserId($obfuscatedExternalUserId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObfuscatedExternalUserId()
-    {
-    }
-    /**
-     * The role of the participant.
-     *
-     * Accepted values: ROLE_UNSPECIFIED, HUMAN_AGENT, AUTOMATED_AGENT, END_USER,
-     * ANY_AGENT
-     *
-     * @param self::ROLE_* $role
-     */
-    public function setRole($role)
-    {
-    }
-    /**
-     * @return self::ROLE_*
-     */
-    public function getRole()
-    {
-    }
-    /**
-     * A user-specified ID representing the participant.
-     *
-     * @param string $userId
-     */
-    public function setUserId($userId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserId()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1ConversationParticipant extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ConversationParticipant
     {
     }
 }

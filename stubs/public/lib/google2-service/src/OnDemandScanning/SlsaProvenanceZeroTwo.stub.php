@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class SlsaProvenanceZeroTwo extends \Google\Collection
-{
-    protected $collection_key = 'materials';
-    /**
-     * @var array[]
-     */
-    public $buildConfig;
-    /**
-     * @var string
-     */
-    public $buildType;
-    protected $builderType = GrafeasV1SlsaProvenanceZeroTwoSlsaBuilder::class;
-    protected $builderDataType = '';
-    protected $invocationType = GrafeasV1SlsaProvenanceZeroTwoSlsaInvocation::class;
-    protected $invocationDataType = '';
-    protected $materialsType = GrafeasV1SlsaProvenanceZeroTwoSlsaMaterial::class;
-    protected $materialsDataType = 'array';
-    protected $metadataType = GrafeasV1SlsaProvenanceZeroTwoSlsaMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * @param array[] $buildConfig
-     */
-    public function setBuildConfig($buildConfig)
+namespace Google\Service\OnDemandScanning {
+    class SlsaProvenanceZeroTwo extends \Google\Collection
     {
+        protected $collection_key = 'materials';
+        /**
+         * @var array[]
+         */
+        public $buildConfig;
+        /**
+         * @var string
+         */
+        public $buildType;
+        protected $builderType = GrafeasV1SlsaProvenanceZeroTwoSlsaBuilder::class;
+        protected $builderDataType = '';
+        protected $invocationType = GrafeasV1SlsaProvenanceZeroTwoSlsaInvocation::class;
+        protected $invocationDataType = '';
+        protected $materialsType = GrafeasV1SlsaProvenanceZeroTwoSlsaMaterial::class;
+        protected $materialsDataType = 'array';
+        protected $metadataType = GrafeasV1SlsaProvenanceZeroTwoSlsaMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * @param array[] $buildConfig
+         */
+        public function setBuildConfig($buildConfig)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getBuildConfig()
+        {
+        }
+        /**
+         * @param string $buildType
+         */
+        public function setBuildType($buildType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuildType()
+        {
+        }
+        /**
+         * @param GrafeasV1SlsaProvenanceZeroTwoSlsaBuilder $builder
+         */
+        public function setBuilder(GrafeasV1SlsaProvenanceZeroTwoSlsaBuilder $builder)
+        {
+        }
+        /**
+         * @return GrafeasV1SlsaProvenanceZeroTwoSlsaBuilder
+         */
+        public function getBuilder()
+        {
+        }
+        /**
+         * @param GrafeasV1SlsaProvenanceZeroTwoSlsaInvocation $invocation
+         */
+        public function setInvocation(GrafeasV1SlsaProvenanceZeroTwoSlsaInvocation $invocation)
+        {
+        }
+        /**
+         * @return GrafeasV1SlsaProvenanceZeroTwoSlsaInvocation
+         */
+        public function getInvocation()
+        {
+        }
+        /**
+         * @param GrafeasV1SlsaProvenanceZeroTwoSlsaMaterial[] $materials
+         */
+        public function setMaterials($materials)
+        {
+        }
+        /**
+         * @return GrafeasV1SlsaProvenanceZeroTwoSlsaMaterial[]
+         */
+        public function getMaterials()
+        {
+        }
+        /**
+         * @param GrafeasV1SlsaProvenanceZeroTwoSlsaMetadata $metadata
+         */
+        public function setMetadata(GrafeasV1SlsaProvenanceZeroTwoSlsaMetadata $metadata)
+        {
+        }
+        /**
+         * @return GrafeasV1SlsaProvenanceZeroTwoSlsaMetadata
+         */
+        public function getMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\OnDemandScanning\SlsaProvenanceZeroTwo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuildConfig()
-    {
-    }
-    /**
-     * @param string $buildType
-     */
-    public function setBuildType($buildType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBuildType()
-    {
-    }
-    /**
-     * @param GrafeasV1SlsaProvenanceZeroTwoSlsaBuilder $builder
-     */
-    public function setBuilder(GrafeasV1SlsaProvenanceZeroTwoSlsaBuilder $builder)
-    {
-    }
-    /**
-     * @return GrafeasV1SlsaProvenanceZeroTwoSlsaBuilder
-     */
-    public function getBuilder()
-    {
-    }
-    /**
-     * @param GrafeasV1SlsaProvenanceZeroTwoSlsaInvocation $invocation
-     */
-    public function setInvocation(GrafeasV1SlsaProvenanceZeroTwoSlsaInvocation $invocation)
-    {
-    }
-    /**
-     * @return GrafeasV1SlsaProvenanceZeroTwoSlsaInvocation
-     */
-    public function getInvocation()
-    {
-    }
-    /**
-     * @param GrafeasV1SlsaProvenanceZeroTwoSlsaMaterial[] $materials
-     */
-    public function setMaterials($materials)
-    {
-    }
-    /**
-     * @return GrafeasV1SlsaProvenanceZeroTwoSlsaMaterial[]
-     */
-    public function getMaterials()
-    {
-    }
-    /**
-     * @param GrafeasV1SlsaProvenanceZeroTwoSlsaMetadata $metadata
-     */
-    public function setMetadata(GrafeasV1SlsaProvenanceZeroTwoSlsaMetadata $metadata)
-    {
-    }
-    /**
-     * @return GrafeasV1SlsaProvenanceZeroTwoSlsaMetadata
-     */
-    public function getMetadata()
+    class Google_Service_OnDemandScanning_SlsaProvenanceZeroTwo extends \Google\Service\OnDemandScanning\SlsaProvenanceZeroTwo
     {
     }
 }

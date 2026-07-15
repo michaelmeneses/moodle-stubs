@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class InputFile extends \Google\Model
-{
-    protected $gcsSourceType = GcsInputSource::class;
-    protected $gcsSourceDataType = '';
-    /**
-     * Optional. Usage of the file contents. Options are TRAIN|VALIDATION|TEST, or
-     * UNASSIGNED (by default) for auto split.
-     *
-     * @var string
-     */
-    public $usage;
-    /**
-     * Google Cloud Storage file source.
-     *
-     * @param GcsInputSource $gcsSource
-     */
-    public function setGcsSource(GcsInputSource $gcsSource)
+namespace Google\Service\Translate {
+    class InputFile extends \Google\Model
     {
+        protected $gcsSourceType = GcsInputSource::class;
+        protected $gcsSourceDataType = '';
+        /**
+         * Optional. Usage of the file contents. Options are TRAIN|VALIDATION|TEST, or
+         * UNASSIGNED (by default) for auto split.
+         *
+         * @var string
+         */
+        public $usage;
+        /**
+         * Google Cloud Storage file source.
+         *
+         * @param GcsInputSource $gcsSource
+         */
+        public function setGcsSource(GcsInputSource $gcsSource)
+        {
+        }
+        /**
+         * @return GcsInputSource
+         */
+        public function getGcsSource()
+        {
+        }
+        /**
+         * Optional. Usage of the file contents. Options are TRAIN|VALIDATION|TEST, or
+         * UNASSIGNED (by default) for auto split.
+         *
+         * @param string $usage
+         */
+        public function setUsage($usage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GcsInputSource
+     * Runtime class alias of \Google\Service\Translate\InputFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsSource()
-    {
-    }
-    /**
-     * Optional. Usage of the file contents. Options are TRAIN|VALIDATION|TEST, or
-     * UNASSIGNED (by default) for auto split.
-     *
-     * @param string $usage
-     */
-    public function setUsage($usage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsage()
+    class Google_Service_Translate_InputFile extends \Google\Service\Translate\InputFile
     {
     }
 }

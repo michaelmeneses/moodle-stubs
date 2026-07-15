@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class OSPolicyAssignmentReportOSPolicyCompliance extends \Google\Collection
-{
-    protected $collection_key = 'osPolicyResourceCompliances';
-    /**
-     * @var string
-     */
-    public $complianceState;
-    /**
-     * @var string
-     */
-    public $complianceStateReason;
-    /**
-     * @var string
-     */
-    public $osPolicyId;
-    protected $osPolicyResourceCompliancesType = OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceCompliance::class;
-    protected $osPolicyResourceCompliancesDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setComplianceState($complianceState)
+namespace Google\Service\OSConfig {
+    class OSPolicyAssignmentReportOSPolicyCompliance extends \Google\Collection
     {
+        protected $collection_key = 'osPolicyResourceCompliances';
+        /**
+         * @var string
+         */
+        public $complianceState;
+        /**
+         * @var string
+         */
+        public $complianceStateReason;
+        /**
+         * @var string
+         */
+        public $osPolicyId;
+        protected $osPolicyResourceCompliancesType = OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceCompliance::class;
+        protected $osPolicyResourceCompliancesDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setComplianceState($complianceState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComplianceState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setComplianceStateReason($complianceStateReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComplianceStateReason()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOsPolicyId($osPolicyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOsPolicyId()
+        {
+        }
+        /**
+         * @param OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceCompliance[]
+         */
+        public function setOsPolicyResourceCompliances($osPolicyResourceCompliances)
+        {
+        }
+        /**
+         * @return OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceCompliance[]
+         */
+        public function getOsPolicyResourceCompliances()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\OSPolicyAssignmentReportOSPolicyCompliance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComplianceState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setComplianceStateReason($complianceStateReason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getComplianceStateReason()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOsPolicyId($osPolicyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOsPolicyId()
-    {
-    }
-    /**
-     * @param OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceCompliance[]
-     */
-    public function setOsPolicyResourceCompliances($osPolicyResourceCompliances)
-    {
-    }
-    /**
-     * @return OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceCompliance[]
-     */
-    public function getOsPolicyResourceCompliances()
+    class Google_Service_OSConfig_OSPolicyAssignmentReportOSPolicyCompliance extends \Google\Service\OSConfig\OSPolicyAssignmentReportOSPolicyCompliance
     {
     }
 }

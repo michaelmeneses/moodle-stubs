@@ -21,28 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher\Resource;
-
-/**
- * The "applications" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $applications = $androidpublisherService->applications;
- *  </code>
- */
-class Applications extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidPublisher\Resource {
+    use Google\Service\AndroidPublisher\SafetyLabelsUpdateRequest;
+    use Google\Service\AndroidPublisher\SafetyLabelsUpdateResponse;
     /**
-     * Writes the Safety Labels declaration of an app. (applications.dataSafety)
-     *
-     * @param string $packageName Required. Package name of the app.
-     * @param SafetyLabelsUpdateRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SafetyLabelsUpdateResponse
-     * @throws \Google\Service\Exception
+     * The "applications" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
+     *   $applications = $androidpublisherService->applications;
+     *  </code>
      */
-    public function dataSafety($packageName, SafetyLabelsUpdateRequest $postBody, $optParams = [])
+    class Applications extends \Google\Service\Resource
+    {
+        /**
+         * Writes the Safety Labels declaration of an app. (applications.dataSafety)
+         *
+         * @param string $packageName Required. Package name of the app.
+         * @param SafetyLabelsUpdateRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SafetyLabelsUpdateResponse
+         * @throws \Google\Service\Exception
+         */
+        public function dataSafety($packageName, SafetyLabelsUpdateRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AndroidPublisher\Resource\Applications registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AndroidPublisher_Resource_Applications extends \Google\Service\AndroidPublisher\Resource\Applications
     {
     }
 }

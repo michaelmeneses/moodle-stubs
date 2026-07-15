@@ -21,144 +21,153 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class SynonymEntity extends \Google\Model
-{
-    /**
-     * Unspecified database entity type.
-     */
-    public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_UNSPECIFIED = 'DATABASE_ENTITY_TYPE_UNSPECIFIED';
-    /**
-     * Schema.
-     */
-    public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_SCHEMA = 'DATABASE_ENTITY_TYPE_SCHEMA';
-    /**
-     * Table.
-     */
-    public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_TABLE = 'DATABASE_ENTITY_TYPE_TABLE';
-    /**
-     * Column.
-     */
-    public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_COLUMN = 'DATABASE_ENTITY_TYPE_COLUMN';
-    /**
-     * Constraint.
-     */
-    public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_CONSTRAINT = 'DATABASE_ENTITY_TYPE_CONSTRAINT';
-    /**
-     * Index.
-     */
-    public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_INDEX = 'DATABASE_ENTITY_TYPE_INDEX';
-    /**
-     * Trigger.
-     */
-    public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_TRIGGER = 'DATABASE_ENTITY_TYPE_TRIGGER';
-    /**
-     * View.
-     */
-    public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_VIEW = 'DATABASE_ENTITY_TYPE_VIEW';
-    /**
-     * Sequence.
-     */
-    public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_SEQUENCE = 'DATABASE_ENTITY_TYPE_SEQUENCE';
-    /**
-     * Stored Procedure.
-     */
-    public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_STORED_PROCEDURE = 'DATABASE_ENTITY_TYPE_STORED_PROCEDURE';
-    /**
-     * Function.
-     */
-    public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_FUNCTION = 'DATABASE_ENTITY_TYPE_FUNCTION';
-    /**
-     * Synonym.
-     */
-    public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_SYNONYM = 'DATABASE_ENTITY_TYPE_SYNONYM';
-    /**
-     * Package.
-     */
-    public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_DATABASE_PACKAGE = 'DATABASE_ENTITY_TYPE_DATABASE_PACKAGE';
-    /**
-     * UDT.
-     */
-    public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_UDT = 'DATABASE_ENTITY_TYPE_UDT';
-    /**
-     * Materialized View.
-     */
-    public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_MATERIALIZED_VIEW = 'DATABASE_ENTITY_TYPE_MATERIALIZED_VIEW';
-    /**
-     * Database.
-     */
-    public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_DATABASE = 'DATABASE_ENTITY_TYPE_DATABASE';
-    /**
-     * Custom engine specific features.
-     *
-     * @var array[]
-     */
-    public $customFeatures;
-    /**
-     * The name of the entity for which the synonym is being created (the source).
-     *
-     * @var string
-     */
-    public $sourceEntity;
-    /**
-     * The type of the entity for which the synonym is being created (usually a
-     * table or a sequence).
-     *
-     * @var string
-     */
-    public $sourceType;
-    /**
-     * Custom engine specific features.
-     *
-     * @param array[] $customFeatures
-     */
-    public function setCustomFeatures($customFeatures)
+namespace Google\Service\DatabaseMigrationService {
+    class SynonymEntity extends \Google\Model
     {
+        /**
+         * Unspecified database entity type.
+         */
+        public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_UNSPECIFIED = 'DATABASE_ENTITY_TYPE_UNSPECIFIED';
+        /**
+         * Schema.
+         */
+        public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_SCHEMA = 'DATABASE_ENTITY_TYPE_SCHEMA';
+        /**
+         * Table.
+         */
+        public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_TABLE = 'DATABASE_ENTITY_TYPE_TABLE';
+        /**
+         * Column.
+         */
+        public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_COLUMN = 'DATABASE_ENTITY_TYPE_COLUMN';
+        /**
+         * Constraint.
+         */
+        public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_CONSTRAINT = 'DATABASE_ENTITY_TYPE_CONSTRAINT';
+        /**
+         * Index.
+         */
+        public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_INDEX = 'DATABASE_ENTITY_TYPE_INDEX';
+        /**
+         * Trigger.
+         */
+        public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_TRIGGER = 'DATABASE_ENTITY_TYPE_TRIGGER';
+        /**
+         * View.
+         */
+        public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_VIEW = 'DATABASE_ENTITY_TYPE_VIEW';
+        /**
+         * Sequence.
+         */
+        public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_SEQUENCE = 'DATABASE_ENTITY_TYPE_SEQUENCE';
+        /**
+         * Stored Procedure.
+         */
+        public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_STORED_PROCEDURE = 'DATABASE_ENTITY_TYPE_STORED_PROCEDURE';
+        /**
+         * Function.
+         */
+        public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_FUNCTION = 'DATABASE_ENTITY_TYPE_FUNCTION';
+        /**
+         * Synonym.
+         */
+        public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_SYNONYM = 'DATABASE_ENTITY_TYPE_SYNONYM';
+        /**
+         * Package.
+         */
+        public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_DATABASE_PACKAGE = 'DATABASE_ENTITY_TYPE_DATABASE_PACKAGE';
+        /**
+         * UDT.
+         */
+        public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_UDT = 'DATABASE_ENTITY_TYPE_UDT';
+        /**
+         * Materialized View.
+         */
+        public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_MATERIALIZED_VIEW = 'DATABASE_ENTITY_TYPE_MATERIALIZED_VIEW';
+        /**
+         * Database.
+         */
+        public const SOURCE_TYPE_DATABASE_ENTITY_TYPE_DATABASE = 'DATABASE_ENTITY_TYPE_DATABASE';
+        /**
+         * Custom engine specific features.
+         *
+         * @var array[]
+         */
+        public $customFeatures;
+        /**
+         * The name of the entity for which the synonym is being created (the source).
+         *
+         * @var string
+         */
+        public $sourceEntity;
+        /**
+         * The type of the entity for which the synonym is being created (usually a
+         * table or a sequence).
+         *
+         * @var string
+         */
+        public $sourceType;
+        /**
+         * Custom engine specific features.
+         *
+         * @param array[] $customFeatures
+         */
+        public function setCustomFeatures($customFeatures)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getCustomFeatures()
+        {
+        }
+        /**
+         * The name of the entity for which the synonym is being created (the source).
+         *
+         * @param string $sourceEntity
+         */
+        public function setSourceEntity($sourceEntity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceEntity()
+        {
+        }
+        /**
+         * The type of the entity for which the synonym is being created (usually a
+         * table or a sequence).
+         *
+         * Accepted values: DATABASE_ENTITY_TYPE_UNSPECIFIED,
+         * DATABASE_ENTITY_TYPE_SCHEMA, DATABASE_ENTITY_TYPE_TABLE,
+         * DATABASE_ENTITY_TYPE_COLUMN, DATABASE_ENTITY_TYPE_CONSTRAINT,
+         * DATABASE_ENTITY_TYPE_INDEX, DATABASE_ENTITY_TYPE_TRIGGER,
+         * DATABASE_ENTITY_TYPE_VIEW, DATABASE_ENTITY_TYPE_SEQUENCE,
+         * DATABASE_ENTITY_TYPE_STORED_PROCEDURE, DATABASE_ENTITY_TYPE_FUNCTION,
+         * DATABASE_ENTITY_TYPE_SYNONYM, DATABASE_ENTITY_TYPE_DATABASE_PACKAGE,
+         * DATABASE_ENTITY_TYPE_UDT, DATABASE_ENTITY_TYPE_MATERIALIZED_VIEW,
+         * DATABASE_ENTITY_TYPE_DATABASE
+         *
+         * @param self::SOURCE_TYPE_* $sourceType
+         */
+        public function setSourceType($sourceType)
+        {
+        }
+        /**
+         * @return self::SOURCE_TYPE_*
+         */
+        public function getSourceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\SynonymEntity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomFeatures()
-    {
-    }
-    /**
-     * The name of the entity for which the synonym is being created (the source).
-     *
-     * @param string $sourceEntity
-     */
-    public function setSourceEntity($sourceEntity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceEntity()
-    {
-    }
-    /**
-     * The type of the entity for which the synonym is being created (usually a
-     * table or a sequence).
-     *
-     * Accepted values: DATABASE_ENTITY_TYPE_UNSPECIFIED,
-     * DATABASE_ENTITY_TYPE_SCHEMA, DATABASE_ENTITY_TYPE_TABLE,
-     * DATABASE_ENTITY_TYPE_COLUMN, DATABASE_ENTITY_TYPE_CONSTRAINT,
-     * DATABASE_ENTITY_TYPE_INDEX, DATABASE_ENTITY_TYPE_TRIGGER,
-     * DATABASE_ENTITY_TYPE_VIEW, DATABASE_ENTITY_TYPE_SEQUENCE,
-     * DATABASE_ENTITY_TYPE_STORED_PROCEDURE, DATABASE_ENTITY_TYPE_FUNCTION,
-     * DATABASE_ENTITY_TYPE_SYNONYM, DATABASE_ENTITY_TYPE_DATABASE_PACKAGE,
-     * DATABASE_ENTITY_TYPE_UDT, DATABASE_ENTITY_TYPE_MATERIALIZED_VIEW,
-     * DATABASE_ENTITY_TYPE_DATABASE
-     *
-     * @param self::SOURCE_TYPE_* $sourceType
-     */
-    public function setSourceType($sourceType)
-    {
-    }
-    /**
-     * @return self::SOURCE_TYPE_*
-     */
-    public function getSourceType()
+    class Google_Service_DatabaseMigrationService_SynonymEntity extends \Google\Service\DatabaseMigrationService\SynonymEntity
     {
     }
 }

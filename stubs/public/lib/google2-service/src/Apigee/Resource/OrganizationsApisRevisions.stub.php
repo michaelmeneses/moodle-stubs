@@ -21,85 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "revisions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $revisions = $apigeeService->organizations_apis_revisions;
- *  </code>
- */
-class OrganizationsApisRevisions extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleApiHttpBody;
+    use Google\Service\Apigee\GoogleCloudApigeeV1ApiProxyRevision;
     /**
-     * Deletes an API proxy revision and all policies, resources, endpoints, and
-     * revisions associated with it. The API proxy revision must be undeployed
-     * before you can delete it. (revisions.delete)
-     *
-     * @param string $name Required. API proxy revision in the following format:
-     * `organizations/{org}/apis/{api}/revisions/{rev}` If the API Proxy resource
-     * has the `space` attribute set, IAM permissions are checked against the Space
-     * resource path. To learn more, read the [Apigee Spaces
-     * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
-     * administration/spaces/apigee-spaces-overview).
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1ApiProxyRevision
-     * @throws \Google\Service\Exception
+     * The "revisions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $revisions = $apigeeService->organizations_apis_revisions;
+     *  </code>
      */
-    public function delete($name, $optParams = [])
+    class OrganizationsApisRevisions extends \Google\Service\Resource
     {
+        /**
+         * Deletes an API proxy revision and all policies, resources, endpoints, and
+         * revisions associated with it. The API proxy revision must be undeployed
+         * before you can delete it. (revisions.delete)
+         *
+         * @param string $name Required. API proxy revision in the following format:
+         * `organizations/{org}/apis/{api}/revisions/{rev}` If the API Proxy resource
+         * has the `space` attribute set, IAM permissions are checked against the Space
+         * resource path. To learn more, read the [Apigee Spaces
+         * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
+         * administration/spaces/apigee-spaces-overview).
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1ApiProxyRevision
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets an API proxy revision. To download the API proxy configuration bundle
+         * for the specified revision as a zip file, set the `format` query parameter to
+         * `bundle`. If you are using curl, specify `-o filename.zip` to save the output
+         * to a file; otherwise, it displays to `stdout`. Then, develop the API proxy
+         * configuration locally and upload the updated API proxy configuration
+         * revision, as described in [updateApiProxyRevision](updateApiProxyRevision).
+         * (revisions.get)
+         *
+         * @param string $name Required. API proxy revision in the following format:
+         * `organizations/{org}/apis/{api}/revisions/{rev}` If the API Proxy resource
+         * has the `space` attribute set, IAM permissions are checked against the Space
+         * resource path. To learn more, read the [Apigee Spaces
+         * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
+         * administration/spaces/apigee-spaces-overview).
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string format Format used when downloading the API proxy
+         * configuration revision. Set to `bundle` to download the API proxy
+         * configuration revision as a zip file.
+         * @return GoogleApiHttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing API proxy revision by uploading the API proxy
+         * configuration bundle as a zip file from your local machine. You can update
+         * only API proxy revisions that have never been deployed. After deployment, an
+         * API proxy revision becomes immutable, even if it is undeployed. Set the
+         * `Content-Type` header to either `multipart/form-data` or `application/octet-
+         * stream`. (revisions.updateApiProxyRevision)
+         *
+         * @param string $name Required. API proxy revision to update in the following
+         * format: `organizations/{org}/apis/{api}/revisions/{rev}` If the API Proxy
+         * resource has the `space` attribute set, IAM permissions are checked against
+         * the Space resource path. To learn more, read the [Apigee Spaces
+         * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
+         * administration/spaces/apigee-spaces-overview).
+         * @param GoogleApiHttpBody $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool validate Ignored. All uploads are validated regardless of the
+         * value of this field. Maintained for compatibility with Apigee Edge API.
+         * @return GoogleCloudApigeeV1ApiProxyRevision
+         * @throws \Google\Service\Exception
+         */
+        public function updateApiProxyRevision($name, GoogleApiHttpBody $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets an API proxy revision. To download the API proxy configuration bundle
-     * for the specified revision as a zip file, set the `format` query parameter to
-     * `bundle`. If you are using curl, specify `-o filename.zip` to save the output
-     * to a file; otherwise, it displays to `stdout`. Then, develop the API proxy
-     * configuration locally and upload the updated API proxy configuration
-     * revision, as described in [updateApiProxyRevision](updateApiProxyRevision).
-     * (revisions.get)
-     *
-     * @param string $name Required. API proxy revision in the following format:
-     * `organizations/{org}/apis/{api}/revisions/{rev}` If the API Proxy resource
-     * has the `space` attribute set, IAM permissions are checked against the Space
-     * resource path. To learn more, read the [Apigee Spaces
-     * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
-     * administration/spaces/apigee-spaces-overview).
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string format Format used when downloading the API proxy
-     * configuration revision. Set to `bundle` to download the API proxy
-     * configuration revision as a zip file.
-     * @return GoogleApiHttpBody
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsApisRevisions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing API proxy revision by uploading the API proxy
-     * configuration bundle as a zip file from your local machine. You can update
-     * only API proxy revisions that have never been deployed. After deployment, an
-     * API proxy revision becomes immutable, even if it is undeployed. Set the
-     * `Content-Type` header to either `multipart/form-data` or `application/octet-
-     * stream`. (revisions.updateApiProxyRevision)
-     *
-     * @param string $name Required. API proxy revision to update in the following
-     * format: `organizations/{org}/apis/{api}/revisions/{rev}` If the API Proxy
-     * resource has the `space` attribute set, IAM permissions are checked against
-     * the Space resource path. To learn more, read the [Apigee Spaces
-     * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
-     * administration/spaces/apigee-spaces-overview).
-     * @param GoogleApiHttpBody $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool validate Ignored. All uploads are validated regardless of the
-     * value of this field. Maintained for compatibility with Apigee Edge API.
-     * @return GoogleCloudApigeeV1ApiProxyRevision
-     * @throws \Google\Service\Exception
-     */
-    public function updateApiProxyRevision($name, GoogleApiHttpBody $postBody, $optParams = [])
+    class Google_Service_Apigee_Resource_OrganizationsApisRevisions extends \Google\Service\Apigee\Resource\OrganizationsApisRevisions
     {
     }
 }

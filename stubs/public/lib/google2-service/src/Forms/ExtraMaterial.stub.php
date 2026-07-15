@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class ExtraMaterial extends \Google\Model
-{
-    protected $linkType = TextLink::class;
-    protected $linkDataType = '';
-    protected $videoType = VideoLink::class;
-    protected $videoDataType = '';
-    /**
-     * Text feedback.
-     *
-     * @param TextLink $link
-     */
-    public function setLink(TextLink $link)
+namespace Google\Service\Forms {
+    class ExtraMaterial extends \Google\Model
     {
+        protected $linkType = TextLink::class;
+        protected $linkDataType = '';
+        protected $videoType = VideoLink::class;
+        protected $videoDataType = '';
+        /**
+         * Text feedback.
+         *
+         * @param TextLink $link
+         */
+        public function setLink(TextLink $link)
+        {
+        }
+        /**
+         * @return TextLink
+         */
+        public function getLink()
+        {
+        }
+        /**
+         * Video feedback.
+         *
+         * @param VideoLink $video
+         */
+        public function setVideo(VideoLink $video)
+        {
+        }
+        /**
+         * @return VideoLink
+         */
+        public function getVideo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TextLink
+     * Runtime class alias of \Google\Service\Forms\ExtraMaterial registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLink()
-    {
-    }
-    /**
-     * Video feedback.
-     *
-     * @param VideoLink $video
-     */
-    public function setVideo(VideoLink $video)
-    {
-    }
-    /**
-     * @return VideoLink
-     */
-    public function getVideo()
+    class Google_Service_Forms_ExtraMaterial extends \Google\Service\Forms\ExtraMaterial
     {
     }
 }

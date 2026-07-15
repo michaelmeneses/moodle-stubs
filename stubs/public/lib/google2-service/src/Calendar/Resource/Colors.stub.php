@@ -21,26 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar\Resource;
-
-/**
- * The "colors" collection of methods.
- * Typical usage is:
- *  <code>
- *   $calendarService = new Google\Service\Calendar(...);
- *   $colors = $calendarService->colors;
- *  </code>
- */
-class Colors extends \Google\Service\Resource
-{
+namespace Google\Service\Calendar\Resource {
+    use Google\Service\Calendar\Colors as ColorsModel;
     /**
-     * Returns the color definitions for calendars and events. (colors.get)
-     *
-     * @param array $optParams Optional parameters.
-     * @return ColorsModel
-     * @throws \Google\Service\Exception
+     * The "colors" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $calendarService = new Google\Service\Calendar(...);
+     *   $colors = $calendarService->colors;
+     *  </code>
      */
-    public function get($optParams = [])
+    class Colors extends \Google\Service\Resource
+    {
+        /**
+         * Returns the color definitions for calendars and events. (colors.get)
+         *
+         * @param array $optParams Optional parameters.
+         * @return ColorsModel
+         * @throws \Google\Service\Exception
+         */
+        public function get($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Calendar\Resource\Colors registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Calendar_Resource_Colors extends \Google\Service\Calendar\Resource\Colors
     {
     }
 }

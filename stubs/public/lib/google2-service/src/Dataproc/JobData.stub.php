@@ -21,366 +21,375 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class JobData extends \Google\Collection
-{
-    public const STATUS_JOB_EXECUTION_STATUS_UNSPECIFIED = 'JOB_EXECUTION_STATUS_UNSPECIFIED';
-    public const STATUS_JOB_EXECUTION_STATUS_RUNNING = 'JOB_EXECUTION_STATUS_RUNNING';
-    public const STATUS_JOB_EXECUTION_STATUS_SUCCEEDED = 'JOB_EXECUTION_STATUS_SUCCEEDED';
-    public const STATUS_JOB_EXECUTION_STATUS_FAILED = 'JOB_EXECUTION_STATUS_FAILED';
-    public const STATUS_JOB_EXECUTION_STATUS_UNKNOWN = 'JOB_EXECUTION_STATUS_UNKNOWN';
-    protected $collection_key = 'stageIds';
-    /**
-     * @var string
-     */
-    public $completionTime;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $jobGroup;
-    /**
-     * @var string
-     */
-    public $jobId;
-    /**
-     * @var int[]
-     */
-    public $killTasksSummary;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var int
-     */
-    public $numActiveStages;
-    /**
-     * @var int
-     */
-    public $numActiveTasks;
-    /**
-     * @var int
-     */
-    public $numCompletedIndices;
-    /**
-     * @var int
-     */
-    public $numCompletedStages;
-    /**
-     * @var int
-     */
-    public $numCompletedTasks;
-    /**
-     * @var int
-     */
-    public $numFailedStages;
-    /**
-     * @var int
-     */
-    public $numFailedTasks;
-    /**
-     * @var int
-     */
-    public $numKilledTasks;
-    /**
-     * @var int
-     */
-    public $numSkippedStages;
-    /**
-     * @var int
-     */
-    public $numSkippedTasks;
-    /**
-     * @var int
-     */
-    public $numTasks;
-    /**
-     * @var int[]
-     */
-    public $skippedStages;
-    /**
-     * @var string
-     */
-    public $sqlExecutionId;
-    /**
-     * @var string[]
-     */
-    public $stageIds;
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @var string
-     */
-    public $submissionTime;
-    /**
-     * @param string $completionTime
-     */
-    public function setCompletionTime($completionTime)
+namespace Google\Service\Dataproc {
+    class JobData extends \Google\Collection
     {
+        public const STATUS_JOB_EXECUTION_STATUS_UNSPECIFIED = 'JOB_EXECUTION_STATUS_UNSPECIFIED';
+        public const STATUS_JOB_EXECUTION_STATUS_RUNNING = 'JOB_EXECUTION_STATUS_RUNNING';
+        public const STATUS_JOB_EXECUTION_STATUS_SUCCEEDED = 'JOB_EXECUTION_STATUS_SUCCEEDED';
+        public const STATUS_JOB_EXECUTION_STATUS_FAILED = 'JOB_EXECUTION_STATUS_FAILED';
+        public const STATUS_JOB_EXECUTION_STATUS_UNKNOWN = 'JOB_EXECUTION_STATUS_UNKNOWN';
+        protected $collection_key = 'stageIds';
+        /**
+         * @var string
+         */
+        public $completionTime;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $jobGroup;
+        /**
+         * @var string
+         */
+        public $jobId;
+        /**
+         * @var int[]
+         */
+        public $killTasksSummary;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var int
+         */
+        public $numActiveStages;
+        /**
+         * @var int
+         */
+        public $numActiveTasks;
+        /**
+         * @var int
+         */
+        public $numCompletedIndices;
+        /**
+         * @var int
+         */
+        public $numCompletedStages;
+        /**
+         * @var int
+         */
+        public $numCompletedTasks;
+        /**
+         * @var int
+         */
+        public $numFailedStages;
+        /**
+         * @var int
+         */
+        public $numFailedTasks;
+        /**
+         * @var int
+         */
+        public $numKilledTasks;
+        /**
+         * @var int
+         */
+        public $numSkippedStages;
+        /**
+         * @var int
+         */
+        public $numSkippedTasks;
+        /**
+         * @var int
+         */
+        public $numTasks;
+        /**
+         * @var int[]
+         */
+        public $skippedStages;
+        /**
+         * @var string
+         */
+        public $sqlExecutionId;
+        /**
+         * @var string[]
+         */
+        public $stageIds;
+        /**
+         * @var string
+         */
+        public $status;
+        /**
+         * @var string
+         */
+        public $submissionTime;
+        /**
+         * @param string $completionTime
+         */
+        public function setCompletionTime($completionTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompletionTime()
+        {
+        }
+        /**
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string $jobGroup
+         */
+        public function setJobGroup($jobGroup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobGroup()
+        {
+        }
+        /**
+         * @param string $jobId
+         */
+        public function setJobId($jobId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobId()
+        {
+        }
+        /**
+         * @param int[] $killTasksSummary
+         */
+        public function setKillTasksSummary($killTasksSummary)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getKillTasksSummary()
+        {
+        }
+        /**
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param int $numActiveStages
+         */
+        public function setNumActiveStages($numActiveStages)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumActiveStages()
+        {
+        }
+        /**
+         * @param int $numActiveTasks
+         */
+        public function setNumActiveTasks($numActiveTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumActiveTasks()
+        {
+        }
+        /**
+         * @param int $numCompletedIndices
+         */
+        public function setNumCompletedIndices($numCompletedIndices)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumCompletedIndices()
+        {
+        }
+        /**
+         * @param int $numCompletedStages
+         */
+        public function setNumCompletedStages($numCompletedStages)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumCompletedStages()
+        {
+        }
+        /**
+         * @param int $numCompletedTasks
+         */
+        public function setNumCompletedTasks($numCompletedTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumCompletedTasks()
+        {
+        }
+        /**
+         * @param int $numFailedStages
+         */
+        public function setNumFailedStages($numFailedStages)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumFailedStages()
+        {
+        }
+        /**
+         * @param int $numFailedTasks
+         */
+        public function setNumFailedTasks($numFailedTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumFailedTasks()
+        {
+        }
+        /**
+         * @param int $numKilledTasks
+         */
+        public function setNumKilledTasks($numKilledTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumKilledTasks()
+        {
+        }
+        /**
+         * @param int $numSkippedStages
+         */
+        public function setNumSkippedStages($numSkippedStages)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumSkippedStages()
+        {
+        }
+        /**
+         * @param int $numSkippedTasks
+         */
+        public function setNumSkippedTasks($numSkippedTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumSkippedTasks()
+        {
+        }
+        /**
+         * @param int $numTasks
+         */
+        public function setNumTasks($numTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumTasks()
+        {
+        }
+        /**
+         * @param int[] $skippedStages
+         */
+        public function setSkippedStages($skippedStages)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getSkippedStages()
+        {
+        }
+        /**
+         * @param string $sqlExecutionId
+         */
+        public function setSqlExecutionId($sqlExecutionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSqlExecutionId()
+        {
+        }
+        /**
+         * @param string[] $stageIds
+         */
+        public function setStageIds($stageIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getStageIds()
+        {
+        }
+        /**
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * @param string $submissionTime
+         */
+        public function setSubmissionTime($submissionTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubmissionTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\JobData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompletionTime()
-    {
-    }
-    /**
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string $jobGroup
-     */
-    public function setJobGroup($jobGroup)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJobGroup()
-    {
-    }
-    /**
-     * @param string $jobId
-     */
-    public function setJobId($jobId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJobId()
-    {
-    }
-    /**
-     * @param int[] $killTasksSummary
-     */
-    public function setKillTasksSummary($killTasksSummary)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getKillTasksSummary()
-    {
-    }
-    /**
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param int $numActiveStages
-     */
-    public function setNumActiveStages($numActiveStages)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumActiveStages()
-    {
-    }
-    /**
-     * @param int $numActiveTasks
-     */
-    public function setNumActiveTasks($numActiveTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumActiveTasks()
-    {
-    }
-    /**
-     * @param int $numCompletedIndices
-     */
-    public function setNumCompletedIndices($numCompletedIndices)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumCompletedIndices()
-    {
-    }
-    /**
-     * @param int $numCompletedStages
-     */
-    public function setNumCompletedStages($numCompletedStages)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumCompletedStages()
-    {
-    }
-    /**
-     * @param int $numCompletedTasks
-     */
-    public function setNumCompletedTasks($numCompletedTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumCompletedTasks()
-    {
-    }
-    /**
-     * @param int $numFailedStages
-     */
-    public function setNumFailedStages($numFailedStages)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumFailedStages()
-    {
-    }
-    /**
-     * @param int $numFailedTasks
-     */
-    public function setNumFailedTasks($numFailedTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumFailedTasks()
-    {
-    }
-    /**
-     * @param int $numKilledTasks
-     */
-    public function setNumKilledTasks($numKilledTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumKilledTasks()
-    {
-    }
-    /**
-     * @param int $numSkippedStages
-     */
-    public function setNumSkippedStages($numSkippedStages)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumSkippedStages()
-    {
-    }
-    /**
-     * @param int $numSkippedTasks
-     */
-    public function setNumSkippedTasks($numSkippedTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumSkippedTasks()
-    {
-    }
-    /**
-     * @param int $numTasks
-     */
-    public function setNumTasks($numTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumTasks()
-    {
-    }
-    /**
-     * @param int[] $skippedStages
-     */
-    public function setSkippedStages($skippedStages)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getSkippedStages()
-    {
-    }
-    /**
-     * @param string $sqlExecutionId
-     */
-    public function setSqlExecutionId($sqlExecutionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSqlExecutionId()
-    {
-    }
-    /**
-     * @param string[] $stageIds
-     */
-    public function setStageIds($stageIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getStageIds()
-    {
-    }
-    /**
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * @param string $submissionTime
-     */
-    public function setSubmissionTime($submissionTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubmissionTime()
+    class Google_Service_Dataproc_JobData extends \Google\Service\Dataproc\JobData
     {
     }
 }

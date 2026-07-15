@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayIntegrity;
-
-class WriteDeviceRecallRequest extends \Google\Model
-{
-    /**
-     * Required. Integrity token obtained from calling Play Integrity API.
-     *
-     * @var string
-     */
-    public $integrityToken;
-    protected $newValuesType = Values::class;
-    protected $newValuesDataType = '';
-    /**
-     * Required. Integrity token obtained from calling Play Integrity API.
-     *
-     * @param string $integrityToken
-     */
-    public function setIntegrityToken($integrityToken)
+namespace Google\Service\PlayIntegrity {
+    class WriteDeviceRecallRequest extends \Google\Model
     {
+        /**
+         * Required. Integrity token obtained from calling Play Integrity API.
+         *
+         * @var string
+         */
+        public $integrityToken;
+        protected $newValuesType = Values::class;
+        protected $newValuesDataType = '';
+        /**
+         * Required. Integrity token obtained from calling Play Integrity API.
+         *
+         * @param string $integrityToken
+         */
+        public function setIntegrityToken($integrityToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntegrityToken()
+        {
+        }
+        /**
+         * Required. The new values for the device recall bits to be written.
+         *
+         * @param Values $newValues
+         */
+        public function setNewValues(Values $newValues)
+        {
+        }
+        /**
+         * @return Values
+         */
+        public function getNewValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PlayIntegrity\WriteDeviceRecallRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntegrityToken()
-    {
-    }
-    /**
-     * Required. The new values for the device recall bits to be written.
-     *
-     * @param Values $newValues
-     */
-    public function setNewValues(Values $newValues)
-    {
-    }
-    /**
-     * @return Values
-     */
-    public function getNewValues()
+    class Google_Service_PlayIntegrity_WriteDeviceRecallRequest extends \Google\Service\PlayIntegrity\WriteDeviceRecallRequest
     {
     }
 }

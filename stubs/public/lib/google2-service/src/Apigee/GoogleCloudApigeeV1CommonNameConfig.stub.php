@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1CommonNameConfig extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $matchWildCards;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param bool $matchWildCards
-     */
-    public function setMatchWildCards($matchWildCards)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1CommonNameConfig extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $matchWildCards;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param bool $matchWildCards
+         */
+        public function setMatchWildCards($matchWildCards)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMatchWildCards()
+        {
+        }
+        /**
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1CommonNameConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMatchWildCards()
-    {
-    }
-    /**
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Apigee_GoogleCloudApigeeV1CommonNameConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1CommonNameConfig
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1DeleteFeatureValuesRequestSelectEntity extends \Google\Model
-{
-    protected $entityIdSelectorType = GoogleCloudAiplatformV1EntityIdSelector::class;
-    protected $entityIdSelectorDataType = '';
-    /**
-     * Required. Selectors choosing feature values of which entity id to be
-     * deleted from the EntityType.
-     *
-     * @param GoogleCloudAiplatformV1EntityIdSelector $entityIdSelector
-     */
-    public function setEntityIdSelector(GoogleCloudAiplatformV1EntityIdSelector $entityIdSelector)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1DeleteFeatureValuesRequestSelectEntity extends \Google\Model
     {
+        protected $entityIdSelectorType = GoogleCloudAiplatformV1EntityIdSelector::class;
+        protected $entityIdSelectorDataType = '';
+        /**
+         * Required. Selectors choosing feature values of which entity id to be
+         * deleted from the EntityType.
+         *
+         * @param GoogleCloudAiplatformV1EntityIdSelector $entityIdSelector
+         */
+        public function setEntityIdSelector(GoogleCloudAiplatformV1EntityIdSelector $entityIdSelector)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EntityIdSelector
+         */
+        public function getEntityIdSelector()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1EntityIdSelector
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1DeleteFeatureValuesRequestSelectEntity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntityIdSelector()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1DeleteFeatureValuesRequestSelectEntity extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1DeleteFeatureValuesRequestSelectEntity
     {
     }
 }

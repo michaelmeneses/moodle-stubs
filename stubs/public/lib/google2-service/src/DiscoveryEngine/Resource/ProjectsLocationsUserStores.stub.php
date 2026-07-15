@@ -21,88 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine\Resource;
-
-/**
- * The "userStores" collection of methods.
- * Typical usage is:
- *  <code>
- *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
- *   $userStores = $discoveryengineService->projects_locations_userStores;
- *  </code>
- */
-class ProjectsLocationsUserStores extends \Google\Service\Resource
-{
+namespace Google\Service\DiscoveryEngine\Resource {
+    use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesRequest;
+    use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1UserStore;
+    use Google\Service\DiscoveryEngine\GoogleLongrunningOperation;
     /**
-     * Updates the User License. This method is used for batch assign/unassign
-     * licenses to users. (userStores.batchUpdateUserLicenses)
-     *
-     * @param string $parent Required. The parent UserStore resource name, format:
-     * `projects/{project}/locations/{location}/userStores/{user_store_id}`.
-     * @param GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "userStores" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
+     *   $userStores = $discoveryengineService->projects_locations_userStores;
+     *  </code>
      */
-    public function batchUpdateUserLicenses($parent, GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesRequest $postBody, $optParams = [])
+    class ProjectsLocationsUserStores extends \Google\Service\Resource
     {
+        /**
+         * Updates the User License. This method is used for batch assign/unassign
+         * licenses to users. (userStores.batchUpdateUserLicenses)
+         *
+         * @param string $parent Required. The parent UserStore resource name, format:
+         * `projects/{project}/locations/{location}/userStores/{user_store_id}`.
+         * @param GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function batchUpdateUserLicenses($parent, GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Creates a new User Store. (userStores.create)
+         *
+         * @param string $parent Required. The parent collection resource name, such as
+         * `projects/{project}/locations/{location}`.
+         * @param GoogleCloudDiscoveryengineV1UserStore $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string userStoreId Required. The ID of the User Store to create.
+         * The ID must contain only letters (a-z, A-Z), numbers (0-9), underscores (_),
+         * and hyphens (-). The maximum length is 63 characters.
+         * @return GoogleCloudDiscoveryengineV1UserStore
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudDiscoveryengineV1UserStore $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes the User Store. (userStores.delete)
+         *
+         * @param string $name Required. The name of the User Store to delete. Format:
+         * `projects/{project}/locations/{location}/userStores/{user_store_id}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the User Store. (userStores.get)
+         *
+         * @param string $name Required. The name of the User Store to get. Format:
+         * `projects/{project}/locations/{location}/userStores/{user_store_id}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDiscoveryengineV1UserStore
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates the User Store. (userStores.patch)
+         *
+         * @param string $name Immutable. The full resource name of the User Store, in
+         * the format of
+         * `projects/{project}/locations/{location}/userStores/{user_store}`. This field
+         * must be a UTF-8 encoded string with a length limit of 1024 characters.
+         * @param GoogleCloudDiscoveryengineV1UserStore $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. The list of fields to update.
+         * @return GoogleCloudDiscoveryengineV1UserStore
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleCloudDiscoveryengineV1UserStore $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Creates a new User Store. (userStores.create)
-     *
-     * @param string $parent Required. The parent collection resource name, such as
-     * `projects/{project}/locations/{location}`.
-     * @param GoogleCloudDiscoveryengineV1UserStore $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string userStoreId Required. The ID of the User Store to create.
-     * The ID must contain only letters (a-z, A-Z), numbers (0-9), underscores (_),
-     * and hyphens (-). The maximum length is 63 characters.
-     * @return GoogleCloudDiscoveryengineV1UserStore
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsUserStores registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function create($parent, GoogleCloudDiscoveryengineV1UserStore $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Deletes the User Store. (userStores.delete)
-     *
-     * @param string $name Required. The name of the User Store to delete. Format:
-     * `projects/{project}/locations/{location}/userStores/{user_store_id}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets the User Store. (userStores.get)
-     *
-     * @param string $name Required. The name of the User Store to get. Format:
-     * `projects/{project}/locations/{location}/userStores/{user_store_id}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDiscoveryengineV1UserStore
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Updates the User Store. (userStores.patch)
-     *
-     * @param string $name Immutable. The full resource name of the User Store, in
-     * the format of
-     * `projects/{project}/locations/{location}/userStores/{user_store}`. This field
-     * must be a UTF-8 encoded string with a length limit of 1024 characters.
-     * @param GoogleCloudDiscoveryengineV1UserStore $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. The list of fields to update.
-     * @return GoogleCloudDiscoveryengineV1UserStore
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleCloudDiscoveryengineV1UserStore $postBody, $optParams = [])
+    class Google_Service_DiscoveryEngine_Resource_ProjectsLocationsUserStores extends \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsUserStores
     {
     }
 }

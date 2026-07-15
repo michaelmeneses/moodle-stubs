@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountConversionSettings extends \Google\Model
-{
-    /**
-     * When enabled, free listing URLs have a parameter to enable conversion
-     * tracking for products owned by the current merchant account. See [auto-
-     * tagging](https://support.google.com/merchants/answer/11127659).
-     *
-     * @var bool
-     */
-    public $freeListingsAutoTaggingEnabled;
-    /**
-     * When enabled, free listing URLs have a parameter to enable conversion
-     * tracking for products owned by the current merchant account. See [auto-
-     * tagging](https://support.google.com/merchants/answer/11127659).
-     *
-     * @param bool $freeListingsAutoTaggingEnabled
-     */
-    public function setFreeListingsAutoTaggingEnabled($freeListingsAutoTaggingEnabled)
+namespace Google\Service\ShoppingContent {
+    class AccountConversionSettings extends \Google\Model
     {
+        /**
+         * When enabled, free listing URLs have a parameter to enable conversion
+         * tracking for products owned by the current merchant account. See [auto-
+         * tagging](https://support.google.com/merchants/answer/11127659).
+         *
+         * @var bool
+         */
+        public $freeListingsAutoTaggingEnabled;
+        /**
+         * When enabled, free listing URLs have a parameter to enable conversion
+         * tracking for products owned by the current merchant account. See [auto-
+         * tagging](https://support.google.com/merchants/answer/11127659).
+         *
+         * @param bool $freeListingsAutoTaggingEnabled
+         */
+        public function setFreeListingsAutoTaggingEnabled($freeListingsAutoTaggingEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFreeListingsAutoTaggingEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountConversionSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFreeListingsAutoTaggingEnabled()
+    class Google_Service_ShoppingContent_AccountConversionSettings extends \Google\Service\ShoppingContent\AccountConversionSettings
     {
     }
 }

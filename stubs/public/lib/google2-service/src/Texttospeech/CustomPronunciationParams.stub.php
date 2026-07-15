@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Texttospeech;
-
-class CustomPronunciationParams extends \Google\Model
-{
-    /**
-     * Not specified.
-     */
-    public const PHONETIC_ENCODING_PHONETIC_ENCODING_UNSPECIFIED = 'PHONETIC_ENCODING_UNSPECIFIED';
-    /**
-     * IPA, such as apple -> ˈæpəl.
-     * https://en.wikipedia.org/wiki/International_Phonetic_Alphabet
-     */
-    public const PHONETIC_ENCODING_PHONETIC_ENCODING_IPA = 'PHONETIC_ENCODING_IPA';
-    /**
-     * X-SAMPA, such as apple -> "{p@l". https://en.wikipedia.org/wiki/X-SAMPA
-     */
-    public const PHONETIC_ENCODING_PHONETIC_ENCODING_X_SAMPA = 'PHONETIC_ENCODING_X_SAMPA';
-    /**
-     * For reading-to-pron conversion to work well, the `pronunciation` field
-     * should only contain Kanji, Hiragana, and Katakana. The pronunciation can
-     * also contain pitch accents. The start of a pitch phrase is specified with
-     * `^` and the down-pitch position is specified with `!`, for example:
-     * phrase:端 pronunciation:^はし phrase:箸 pronunciation:^は!し phrase:橋
-     * pronunciation:^はし! We currently only support the Tokyo dialect, which
-     * allows at most one down-pitch per phrase (i.e. at most one `!` between
-     * `^`).
-     */
-    public const PHONETIC_ENCODING_PHONETIC_ENCODING_JAPANESE_YOMIGANA = 'PHONETIC_ENCODING_JAPANESE_YOMIGANA';
-    /**
-     * Used to specify pronunciations for Mandarin words. See
-     * https://en.wikipedia.org/wiki/Pinyin. For example: 朝阳, the pronunciation is
-     * "chao2 yang2". The number represents the tone, and there is a space between
-     * syllables. Neutral tones are represented by 5, for example 孩子 "hai2 zi5".
-     */
-    public const PHONETIC_ENCODING_PHONETIC_ENCODING_PINYIN = 'PHONETIC_ENCODING_PINYIN';
-    /**
-     * The phonetic encoding of the phrase.
-     *
-     * @var string
-     */
-    public $phoneticEncoding;
-    /**
-     * The phrase to which the customization is applied. The phrase can be
-     * multiple words, such as proper nouns, but shouldn't span the length of the
-     * sentence.
-     *
-     * @var string
-     */
-    public $phrase;
-    /**
-     * The pronunciation of the phrase. This must be in the phonetic encoding
-     * specified above.
-     *
-     * @var string
-     */
-    public $pronunciation;
-    /**
-     * The phonetic encoding of the phrase.
-     *
-     * Accepted values: PHONETIC_ENCODING_UNSPECIFIED, PHONETIC_ENCODING_IPA,
-     * PHONETIC_ENCODING_X_SAMPA, PHONETIC_ENCODING_JAPANESE_YOMIGANA,
-     * PHONETIC_ENCODING_PINYIN
-     *
-     * @param self::PHONETIC_ENCODING_* $phoneticEncoding
-     */
-    public function setPhoneticEncoding($phoneticEncoding)
+namespace Google\Service\Texttospeech {
+    class CustomPronunciationParams extends \Google\Model
     {
+        /**
+         * Not specified.
+         */
+        public const PHONETIC_ENCODING_PHONETIC_ENCODING_UNSPECIFIED = 'PHONETIC_ENCODING_UNSPECIFIED';
+        /**
+         * IPA, such as apple -> ˈæpəl.
+         * https://en.wikipedia.org/wiki/International_Phonetic_Alphabet
+         */
+        public const PHONETIC_ENCODING_PHONETIC_ENCODING_IPA = 'PHONETIC_ENCODING_IPA';
+        /**
+         * X-SAMPA, such as apple -> "{p@l". https://en.wikipedia.org/wiki/X-SAMPA
+         */
+        public const PHONETIC_ENCODING_PHONETIC_ENCODING_X_SAMPA = 'PHONETIC_ENCODING_X_SAMPA';
+        /**
+         * For reading-to-pron conversion to work well, the `pronunciation` field
+         * should only contain Kanji, Hiragana, and Katakana. The pronunciation can
+         * also contain pitch accents. The start of a pitch phrase is specified with
+         * `^` and the down-pitch position is specified with `!`, for example:
+         * phrase:端 pronunciation:^はし phrase:箸 pronunciation:^は!し phrase:橋
+         * pronunciation:^はし! We currently only support the Tokyo dialect, which
+         * allows at most one down-pitch per phrase (i.e. at most one `!` between
+         * `^`).
+         */
+        public const PHONETIC_ENCODING_PHONETIC_ENCODING_JAPANESE_YOMIGANA = 'PHONETIC_ENCODING_JAPANESE_YOMIGANA';
+        /**
+         * Used to specify pronunciations for Mandarin words. See
+         * https://en.wikipedia.org/wiki/Pinyin. For example: 朝阳, the pronunciation is
+         * "chao2 yang2". The number represents the tone, and there is a space between
+         * syllables. Neutral tones are represented by 5, for example 孩子 "hai2 zi5".
+         */
+        public const PHONETIC_ENCODING_PHONETIC_ENCODING_PINYIN = 'PHONETIC_ENCODING_PINYIN';
+        /**
+         * The phonetic encoding of the phrase.
+         *
+         * @var string
+         */
+        public $phoneticEncoding;
+        /**
+         * The phrase to which the customization is applied. The phrase can be
+         * multiple words, such as proper nouns, but shouldn't span the length of the
+         * sentence.
+         *
+         * @var string
+         */
+        public $phrase;
+        /**
+         * The pronunciation of the phrase. This must be in the phonetic encoding
+         * specified above.
+         *
+         * @var string
+         */
+        public $pronunciation;
+        /**
+         * The phonetic encoding of the phrase.
+         *
+         * Accepted values: PHONETIC_ENCODING_UNSPECIFIED, PHONETIC_ENCODING_IPA,
+         * PHONETIC_ENCODING_X_SAMPA, PHONETIC_ENCODING_JAPANESE_YOMIGANA,
+         * PHONETIC_ENCODING_PINYIN
+         *
+         * @param self::PHONETIC_ENCODING_* $phoneticEncoding
+         */
+        public function setPhoneticEncoding($phoneticEncoding)
+        {
+        }
+        /**
+         * @return self::PHONETIC_ENCODING_*
+         */
+        public function getPhoneticEncoding()
+        {
+        }
+        /**
+         * The phrase to which the customization is applied. The phrase can be
+         * multiple words, such as proper nouns, but shouldn't span the length of the
+         * sentence.
+         *
+         * @param string $phrase
+         */
+        public function setPhrase($phrase)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhrase()
+        {
+        }
+        /**
+         * The pronunciation of the phrase. This must be in the phonetic encoding
+         * specified above.
+         *
+         * @param string $pronunciation
+         */
+        public function setPronunciation($pronunciation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPronunciation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::PHONETIC_ENCODING_*
+     * Runtime class alias of \Google\Service\Texttospeech\CustomPronunciationParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPhoneticEncoding()
-    {
-    }
-    /**
-     * The phrase to which the customization is applied. The phrase can be
-     * multiple words, such as proper nouns, but shouldn't span the length of the
-     * sentence.
-     *
-     * @param string $phrase
-     */
-    public function setPhrase($phrase)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhrase()
-    {
-    }
-    /**
-     * The pronunciation of the phrase. This must be in the phonetic encoding
-     * specified above.
-     *
-     * @param string $pronunciation
-     */
-    public function setPronunciation($pronunciation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPronunciation()
+    class Google_Service_Texttospeech_CustomPronunciationParams extends \Google\Service\Texttospeech\CustomPronunciationParams
     {
     }
 }

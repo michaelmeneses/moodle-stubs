@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1LogprobsResult extends \Google\Collection
-{
-    protected $collection_key = 'topCandidates';
-    protected $chosenCandidatesType = GoogleCloudAiplatformV1LogprobsResultCandidate::class;
-    protected $chosenCandidatesDataType = 'array';
-    protected $topCandidatesType = GoogleCloudAiplatformV1LogprobsResultTopCandidates::class;
-    protected $topCandidatesDataType = 'array';
-    /**
-     * A list of the chosen candidate tokens at each decoding step. The length of
-     * this list is equal to the total number of decoding steps. Note that the
-     * chosen candidate might not be in `top_candidates`.
-     *
-     * @param GoogleCloudAiplatformV1LogprobsResultCandidate[] $chosenCandidates
-     */
-    public function setChosenCandidates($chosenCandidates)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1LogprobsResult extends \Google\Collection
     {
+        protected $collection_key = 'topCandidates';
+        protected $chosenCandidatesType = GoogleCloudAiplatformV1LogprobsResultCandidate::class;
+        protected $chosenCandidatesDataType = 'array';
+        protected $topCandidatesType = GoogleCloudAiplatformV1LogprobsResultTopCandidates::class;
+        protected $topCandidatesDataType = 'array';
+        /**
+         * A list of the chosen candidate tokens at each decoding step. The length of
+         * this list is equal to the total number of decoding steps. Note that the
+         * chosen candidate might not be in `top_candidates`.
+         *
+         * @param GoogleCloudAiplatformV1LogprobsResultCandidate[] $chosenCandidates
+         */
+        public function setChosenCandidates($chosenCandidates)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1LogprobsResultCandidate[]
+         */
+        public function getChosenCandidates()
+        {
+        }
+        /**
+         * A list of the top candidate tokens at each decoding step. The length of
+         * this list is equal to the total number of decoding steps.
+         *
+         * @param GoogleCloudAiplatformV1LogprobsResultTopCandidates[] $topCandidates
+         */
+        public function setTopCandidates($topCandidates)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1LogprobsResultTopCandidates[]
+         */
+        public function getTopCandidates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1LogprobsResultCandidate[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1LogprobsResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChosenCandidates()
-    {
-    }
-    /**
-     * A list of the top candidate tokens at each decoding step. The length of
-     * this list is equal to the total number of decoding steps.
-     *
-     * @param GoogleCloudAiplatformV1LogprobsResultTopCandidates[] $topCandidates
-     */
-    public function setTopCandidates($topCandidates)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1LogprobsResultTopCandidates[]
-     */
-    public function getTopCandidates()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1LogprobsResult extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1LogprobsResult
     {
     }
 }

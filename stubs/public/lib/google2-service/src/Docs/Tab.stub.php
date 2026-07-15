@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class Tab extends \Google\Collection
-{
-    protected $collection_key = 'childTabs';
-    protected $childTabsType = Tab::class;
-    protected $childTabsDataType = 'array';
-    protected $documentTabType = DocumentTab::class;
-    protected $documentTabDataType = '';
-    protected $tabPropertiesType = TabProperties::class;
-    protected $tabPropertiesDataType = '';
-    /**
-     * The child tabs nested within this tab.
-     *
-     * @param Tab[] $childTabs
-     */
-    public function setChildTabs($childTabs)
+namespace Google\Service\Docs {
+    class Tab extends \Google\Collection
     {
+        protected $collection_key = 'childTabs';
+        protected $childTabsType = Tab::class;
+        protected $childTabsDataType = 'array';
+        protected $documentTabType = DocumentTab::class;
+        protected $documentTabDataType = '';
+        protected $tabPropertiesType = TabProperties::class;
+        protected $tabPropertiesDataType = '';
+        /**
+         * The child tabs nested within this tab.
+         *
+         * @param Tab[] $childTabs
+         */
+        public function setChildTabs($childTabs)
+        {
+        }
+        /**
+         * @return Tab[]
+         */
+        public function getChildTabs()
+        {
+        }
+        /**
+         * A tab with document contents, like text and images.
+         *
+         * @param DocumentTab $documentTab
+         */
+        public function setDocumentTab(DocumentTab $documentTab)
+        {
+        }
+        /**
+         * @return DocumentTab
+         */
+        public function getDocumentTab()
+        {
+        }
+        /**
+         * The properties of the tab, like ID and title.
+         *
+         * @param TabProperties $tabProperties
+         */
+        public function setTabProperties(TabProperties $tabProperties)
+        {
+        }
+        /**
+         * @return TabProperties
+         */
+        public function getTabProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Tab[]
+     * Runtime class alias of \Google\Service\Docs\Tab registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChildTabs()
-    {
-    }
-    /**
-     * A tab with document contents, like text and images.
-     *
-     * @param DocumentTab $documentTab
-     */
-    public function setDocumentTab(DocumentTab $documentTab)
-    {
-    }
-    /**
-     * @return DocumentTab
-     */
-    public function getDocumentTab()
-    {
-    }
-    /**
-     * The properties of the tab, like ID and title.
-     *
-     * @param TabProperties $tabProperties
-     */
-    public function setTabProperties(TabProperties $tabProperties)
-    {
-    }
-    /**
-     * @return TabProperties
-     */
-    public function getTabProperties()
+    class Google_Service_Docs_Tab extends \Google\Service\Docs\Tab
     {
     }
 }

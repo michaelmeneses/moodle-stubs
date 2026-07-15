@@ -21,172 +21,181 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class PricingSchedule extends \Google\Collection
-{
-    public const CAP_COST_OPTION_CAP_COST_NONE = 'CAP_COST_NONE';
-    public const CAP_COST_OPTION_CAP_COST_MONTHLY = 'CAP_COST_MONTHLY';
-    public const CAP_COST_OPTION_CAP_COST_CUMULATIVE = 'CAP_COST_CUMULATIVE';
-    public const PRICING_TYPE_PRICING_TYPE_CPM = 'PRICING_TYPE_CPM';
-    public const PRICING_TYPE_PRICING_TYPE_CPC = 'PRICING_TYPE_CPC';
-    public const PRICING_TYPE_PRICING_TYPE_CPA = 'PRICING_TYPE_CPA';
-    public const PRICING_TYPE_PRICING_TYPE_FLAT_RATE_IMPRESSIONS = 'PRICING_TYPE_FLAT_RATE_IMPRESSIONS';
-    public const PRICING_TYPE_PRICING_TYPE_FLAT_RATE_CLICKS = 'PRICING_TYPE_FLAT_RATE_CLICKS';
-    public const PRICING_TYPE_PRICING_TYPE_CPM_ACTIVEVIEW = 'PRICING_TYPE_CPM_ACTIVEVIEW';
-    protected $collection_key = 'pricingPeriods';
-    /**
-     * Placement cap cost option.
-     *
-     * @var string
-     */
-    public $capCostOption;
-    /**
-     * @var string
-     */
-    public $endDate;
-    /**
-     * Whether this placement is flighted. If true, pricing periods will be
-     * computed automatically.
-     *
-     * @var bool
-     */
-    public $flighted;
-    /**
-     * Floodlight activity ID associated with this placement. This field should be
-     * set when placement pricing type is set to PRICING_TYPE_CPA.
-     *
-     * @var string
-     */
-    public $floodlightActivityId;
-    protected $pricingPeriodsType = PricingSchedulePricingPeriod::class;
-    protected $pricingPeriodsDataType = 'array';
-    /**
-     * Placement pricing type. This field is required on insertion.
-     *
-     * @var string
-     */
-    public $pricingType;
-    /**
-     * @var string
-     */
-    public $startDate;
-    /**
-     * @var string
-     */
-    public $testingStartDate;
-    /**
-     * Placement cap cost option.
-     *
-     * Accepted values: CAP_COST_NONE, CAP_COST_MONTHLY, CAP_COST_CUMULATIVE
-     *
-     * @param self::CAP_COST_OPTION_* $capCostOption
-     */
-    public function setCapCostOption($capCostOption)
+namespace Google\Service\Dfareporting {
+    class PricingSchedule extends \Google\Collection
     {
+        public const CAP_COST_OPTION_CAP_COST_NONE = 'CAP_COST_NONE';
+        public const CAP_COST_OPTION_CAP_COST_MONTHLY = 'CAP_COST_MONTHLY';
+        public const CAP_COST_OPTION_CAP_COST_CUMULATIVE = 'CAP_COST_CUMULATIVE';
+        public const PRICING_TYPE_PRICING_TYPE_CPM = 'PRICING_TYPE_CPM';
+        public const PRICING_TYPE_PRICING_TYPE_CPC = 'PRICING_TYPE_CPC';
+        public const PRICING_TYPE_PRICING_TYPE_CPA = 'PRICING_TYPE_CPA';
+        public const PRICING_TYPE_PRICING_TYPE_FLAT_RATE_IMPRESSIONS = 'PRICING_TYPE_FLAT_RATE_IMPRESSIONS';
+        public const PRICING_TYPE_PRICING_TYPE_FLAT_RATE_CLICKS = 'PRICING_TYPE_FLAT_RATE_CLICKS';
+        public const PRICING_TYPE_PRICING_TYPE_CPM_ACTIVEVIEW = 'PRICING_TYPE_CPM_ACTIVEVIEW';
+        protected $collection_key = 'pricingPeriods';
+        /**
+         * Placement cap cost option.
+         *
+         * @var string
+         */
+        public $capCostOption;
+        /**
+         * @var string
+         */
+        public $endDate;
+        /**
+         * Whether this placement is flighted. If true, pricing periods will be
+         * computed automatically.
+         *
+         * @var bool
+         */
+        public $flighted;
+        /**
+         * Floodlight activity ID associated with this placement. This field should be
+         * set when placement pricing type is set to PRICING_TYPE_CPA.
+         *
+         * @var string
+         */
+        public $floodlightActivityId;
+        protected $pricingPeriodsType = PricingSchedulePricingPeriod::class;
+        protected $pricingPeriodsDataType = 'array';
+        /**
+         * Placement pricing type. This field is required on insertion.
+         *
+         * @var string
+         */
+        public $pricingType;
+        /**
+         * @var string
+         */
+        public $startDate;
+        /**
+         * @var string
+         */
+        public $testingStartDate;
+        /**
+         * Placement cap cost option.
+         *
+         * Accepted values: CAP_COST_NONE, CAP_COST_MONTHLY, CAP_COST_CUMULATIVE
+         *
+         * @param self::CAP_COST_OPTION_* $capCostOption
+         */
+        public function setCapCostOption($capCostOption)
+        {
+        }
+        /**
+         * @return self::CAP_COST_OPTION_*
+         */
+        public function getCapCostOption()
+        {
+        }
+        /**
+         * @param string $endDate
+         */
+        public function setEndDate($endDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * Whether this placement is flighted. If true, pricing periods will be
+         * computed automatically.
+         *
+         * @param bool $flighted
+         */
+        public function setFlighted($flighted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFlighted()
+        {
+        }
+        /**
+         * Floodlight activity ID associated with this placement. This field should be
+         * set when placement pricing type is set to PRICING_TYPE_CPA.
+         *
+         * @param string $floodlightActivityId
+         */
+        public function setFloodlightActivityId($floodlightActivityId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFloodlightActivityId()
+        {
+        }
+        /**
+         * Pricing periods for this placement.
+         *
+         * @param PricingSchedulePricingPeriod[] $pricingPeriods
+         */
+        public function setPricingPeriods($pricingPeriods)
+        {
+        }
+        /**
+         * @return PricingSchedulePricingPeriod[]
+         */
+        public function getPricingPeriods()
+        {
+        }
+        /**
+         * Placement pricing type. This field is required on insertion.
+         *
+         * Accepted values: PRICING_TYPE_CPM, PRICING_TYPE_CPC, PRICING_TYPE_CPA,
+         * PRICING_TYPE_FLAT_RATE_IMPRESSIONS, PRICING_TYPE_FLAT_RATE_CLICKS,
+         * PRICING_TYPE_CPM_ACTIVEVIEW
+         *
+         * @param self::PRICING_TYPE_* $pricingType
+         */
+        public function setPricingType($pricingType)
+        {
+        }
+        /**
+         * @return self::PRICING_TYPE_*
+         */
+        public function getPricingType()
+        {
+        }
+        /**
+         * @param string $startDate
+         */
+        public function setStartDate($startDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartDate()
+        {
+        }
+        /**
+         * @param string $testingStartDate
+         */
+        public function setTestingStartDate($testingStartDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTestingStartDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CAP_COST_OPTION_*
+     * Runtime class alias of \Google\Service\Dfareporting\PricingSchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCapCostOption()
-    {
-    }
-    /**
-     * @param string $endDate
-     */
-    public function setEndDate($endDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndDate()
-    {
-    }
-    /**
-     * Whether this placement is flighted. If true, pricing periods will be
-     * computed automatically.
-     *
-     * @param bool $flighted
-     */
-    public function setFlighted($flighted)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getFlighted()
-    {
-    }
-    /**
-     * Floodlight activity ID associated with this placement. This field should be
-     * set when placement pricing type is set to PRICING_TYPE_CPA.
-     *
-     * @param string $floodlightActivityId
-     */
-    public function setFloodlightActivityId($floodlightActivityId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFloodlightActivityId()
-    {
-    }
-    /**
-     * Pricing periods for this placement.
-     *
-     * @param PricingSchedulePricingPeriod[] $pricingPeriods
-     */
-    public function setPricingPeriods($pricingPeriods)
-    {
-    }
-    /**
-     * @return PricingSchedulePricingPeriod[]
-     */
-    public function getPricingPeriods()
-    {
-    }
-    /**
-     * Placement pricing type. This field is required on insertion.
-     *
-     * Accepted values: PRICING_TYPE_CPM, PRICING_TYPE_CPC, PRICING_TYPE_CPA,
-     * PRICING_TYPE_FLAT_RATE_IMPRESSIONS, PRICING_TYPE_FLAT_RATE_CLICKS,
-     * PRICING_TYPE_CPM_ACTIVEVIEW
-     *
-     * @param self::PRICING_TYPE_* $pricingType
-     */
-    public function setPricingType($pricingType)
-    {
-    }
-    /**
-     * @return self::PRICING_TYPE_*
-     */
-    public function getPricingType()
-    {
-    }
-    /**
-     * @param string $startDate
-     */
-    public function setStartDate($startDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartDate()
-    {
-    }
-    /**
-     * @param string $testingStartDate
-     */
-    public function setTestingStartDate($testingStartDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTestingStartDate()
+    class Google_Service_Dfareporting_PricingSchedule extends \Google\Service\Dfareporting\PricingSchedule
     {
     }
 }

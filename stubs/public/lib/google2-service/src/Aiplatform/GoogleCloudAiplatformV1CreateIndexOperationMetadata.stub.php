@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1CreateIndexOperationMetadata extends \Google\Model
-{
-    protected $genericMetadataType = GoogleCloudAiplatformV1GenericOperationMetadata::class;
-    protected $genericMetadataDataType = '';
-    protected $nearestNeighborSearchOperationMetadataType = GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadata::class;
-    protected $nearestNeighborSearchOperationMetadataDataType = '';
-    /**
-     * The operation generic information.
-     *
-     * @param GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata
-     */
-    public function setGenericMetadata(GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1CreateIndexOperationMetadata extends \Google\Model
     {
+        protected $genericMetadataType = GoogleCloudAiplatformV1GenericOperationMetadata::class;
+        protected $genericMetadataDataType = '';
+        protected $nearestNeighborSearchOperationMetadataType = GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadata::class;
+        protected $nearestNeighborSearchOperationMetadataDataType = '';
+        /**
+         * The operation generic information.
+         *
+         * @param GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata
+         */
+        public function setGenericMetadata(GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GenericOperationMetadata
+         */
+        public function getGenericMetadata()
+        {
+        }
+        /**
+         * The operation metadata with regard to Matching Engine Index operation.
+         *
+         * @param GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadata $nearestNeighborSearchOperationMetadata
+         */
+        public function setNearestNeighborSearchOperationMetadata(GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadata $nearestNeighborSearchOperationMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadata
+         */
+        public function getNearestNeighborSearchOperationMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1GenericOperationMetadata
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1CreateIndexOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGenericMetadata()
-    {
-    }
-    /**
-     * The operation metadata with regard to Matching Engine Index operation.
-     *
-     * @param GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadata $nearestNeighborSearchOperationMetadata
-     */
-    public function setNearestNeighborSearchOperationMetadata(GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadata $nearestNeighborSearchOperationMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadata
-     */
-    public function getNearestNeighborSearchOperationMetadata()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1CreateIndexOperationMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1CreateIndexOperationMetadata
     {
     }
 }

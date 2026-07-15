@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class ListContainersResponse extends \Google\Collection
-{
-    protected $collection_key = 'container';
-    protected $containerType = Container::class;
-    protected $containerDataType = 'array';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * All Containers of a GTM Account.
-     *
-     * @param Container[] $container
-     */
-    public function setContainer($container)
+namespace Google\Service\TagManager {
+    class ListContainersResponse extends \Google\Collection
     {
+        protected $collection_key = 'container';
+        protected $containerType = Container::class;
+        protected $containerDataType = 'array';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * All Containers of a GTM Account.
+         *
+         * @param Container[] $container
+         */
+        public function setContainer($container)
+        {
+        }
+        /**
+         * @return Container[]
+         */
+        public function getContainer()
+        {
+        }
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Container[]
+     * Runtime class alias of \Google\Service\TagManager\ListContainersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainer()
-    {
-    }
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_TagManager_ListContainersResponse extends \Google\Service\TagManager\ListContainersResponse
     {
     }
 }

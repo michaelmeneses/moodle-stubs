@@ -21,51 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory\Resource;
-
-/**
- * The "customers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adminService = new Google\Service\Directory(...);
- *   $customers = $adminService->customers;
- *  </code>
- */
-class Customers extends \Google\Service\Resource
-{
+namespace Google\Service\Directory\Resource {
+    use Google\Service\Directory\Customer as CustomerModel;
     /**
-     * Retrieves a customer. (customers.get)
-     *
-     * @param string $customerKey Id of the customer to be retrieved
-     * @param array $optParams Optional parameters.
-     * @return CustomerModel
-     * @throws \Google\Service\Exception
+     * The "customers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adminService = new Google\Service\Directory(...);
+     *   $customers = $adminService->customers;
+     *  </code>
      */
-    public function get($customerKey, $optParams = [])
+    class Customers extends \Google\Service\Resource
     {
+        /**
+         * Retrieves a customer. (customers.get)
+         *
+         * @param string $customerKey Id of the customer to be retrieved
+         * @param array $optParams Optional parameters.
+         * @return CustomerModel
+         * @throws \Google\Service\Exception
+         */
+        public function get($customerKey, $optParams = [])
+        {
+        }
+        /**
+         * Patches a customer. (customers.patch)
+         *
+         * @param string $customerKey Id of the customer to be updated
+         * @param CustomerModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return CustomerModel
+         * @throws \Google\Service\Exception
+         */
+        public function patch($customerKey, CustomerModel $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates a customer. (customers.update)
+         *
+         * @param string $customerKey Id of the customer to be updated
+         * @param CustomerModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return CustomerModel
+         * @throws \Google\Service\Exception
+         */
+        public function update($customerKey, CustomerModel $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Patches a customer. (customers.patch)
-     *
-     * @param string $customerKey Id of the customer to be updated
-     * @param CustomerModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return CustomerModel
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Directory\Resource\Customers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function patch($customerKey, CustomerModel $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates a customer. (customers.update)
-     *
-     * @param string $customerKey Id of the customer to be updated
-     * @param CustomerModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return CustomerModel
-     * @throws \Google\Service\Exception
-     */
-    public function update($customerKey, CustomerModel $postBody, $optParams = [])
+    class Google_Service_Directory_Resource_Customers extends \Google\Service\Directory\Resource\Customers
     {
     }
 }

@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class Topic extends \Google\Model
-{
-    /**
-     * The name of the topic. Structured like:
-     * projects/{project_number}/locations/{location}/topics/{topic_id}
-     *
-     * @var string
-     */
-    public $name;
-    protected $partitionConfigType = PartitionConfig::class;
-    protected $partitionConfigDataType = '';
-    protected $reservationConfigType = ReservationConfig::class;
-    protected $reservationConfigDataType = '';
-    protected $retentionConfigType = RetentionConfig::class;
-    protected $retentionConfigDataType = '';
-    /**
-     * The name of the topic. Structured like:
-     * projects/{project_number}/locations/{location}/topics/{topic_id}
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\PubsubLite {
+    class Topic extends \Google\Model
     {
+        /**
+         * The name of the topic. Structured like:
+         * projects/{project_number}/locations/{location}/topics/{topic_id}
+         *
+         * @var string
+         */
+        public $name;
+        protected $partitionConfigType = PartitionConfig::class;
+        protected $partitionConfigDataType = '';
+        protected $reservationConfigType = ReservationConfig::class;
+        protected $reservationConfigDataType = '';
+        protected $retentionConfigType = RetentionConfig::class;
+        protected $retentionConfigDataType = '';
+        /**
+         * The name of the topic. Structured like:
+         * projects/{project_number}/locations/{location}/topics/{topic_id}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The settings for this topic's partitions.
+         *
+         * @param PartitionConfig $partitionConfig
+         */
+        public function setPartitionConfig(PartitionConfig $partitionConfig)
+        {
+        }
+        /**
+         * @return PartitionConfig
+         */
+        public function getPartitionConfig()
+        {
+        }
+        /**
+         * The settings for this topic's Reservation usage.
+         *
+         * @param ReservationConfig $reservationConfig
+         */
+        public function setReservationConfig(ReservationConfig $reservationConfig)
+        {
+        }
+        /**
+         * @return ReservationConfig
+         */
+        public function getReservationConfig()
+        {
+        }
+        /**
+         * The settings for this topic's message retention.
+         *
+         * @param RetentionConfig $retentionConfig
+         */
+        public function setRetentionConfig(RetentionConfig $retentionConfig)
+        {
+        }
+        /**
+         * @return RetentionConfig
+         */
+        public function getRetentionConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PubsubLite\Topic registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The settings for this topic's partitions.
-     *
-     * @param PartitionConfig $partitionConfig
-     */
-    public function setPartitionConfig(PartitionConfig $partitionConfig)
-    {
-    }
-    /**
-     * @return PartitionConfig
-     */
-    public function getPartitionConfig()
-    {
-    }
-    /**
-     * The settings for this topic's Reservation usage.
-     *
-     * @param ReservationConfig $reservationConfig
-     */
-    public function setReservationConfig(ReservationConfig $reservationConfig)
-    {
-    }
-    /**
-     * @return ReservationConfig
-     */
-    public function getReservationConfig()
-    {
-    }
-    /**
-     * The settings for this topic's message retention.
-     *
-     * @param RetentionConfig $retentionConfig
-     */
-    public function setRetentionConfig(RetentionConfig $retentionConfig)
-    {
-    }
-    /**
-     * @return RetentionConfig
-     */
-    public function getRetentionConfig()
+    class Google_Service_PubsubLite_Topic extends \Google\Service\PubsubLite\Topic
     {
     }
 }

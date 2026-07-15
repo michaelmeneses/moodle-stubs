@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSensePlatform;
-
-class EventInfo extends \Google\Model
-{
-    protected $billingAddressType = Address::class;
-    protected $billingAddressDataType = '';
-    /**
-     * Required. The email address that is associated with the publisher when
-     * performing the event.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * The billing address of the publisher associated with this event, if
-     * available.
-     *
-     * @param Address $billingAddress
-     */
-    public function setBillingAddress(Address $billingAddress)
+namespace Google\Service\AdSensePlatform {
+    class EventInfo extends \Google\Model
     {
+        protected $billingAddressType = Address::class;
+        protected $billingAddressDataType = '';
+        /**
+         * Required. The email address that is associated with the publisher when
+         * performing the event.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * The billing address of the publisher associated with this event, if
+         * available.
+         *
+         * @param Address $billingAddress
+         */
+        public function setBillingAddress(Address $billingAddress)
+        {
+        }
+        /**
+         * @return Address
+         */
+        public function getBillingAddress()
+        {
+        }
+        /**
+         * Required. The email address that is associated with the publisher when
+         * performing the event.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Address
+     * Runtime class alias of \Google\Service\AdSensePlatform\EventInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBillingAddress()
-    {
-    }
-    /**
-     * Required. The email address that is associated with the publisher when
-     * performing the event.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
+    class Google_Service_AdSensePlatform_EventInfo extends \Google\Service\AdSensePlatform\EventInfo
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class ProductsApproveRequest extends \Google\Model
-{
-    /**
-     * Approve only the permissions the product requires at approval time. If an
-     * update requires additional permissions, the app will not be updated on
-     * devices associated with enterprise users until the additional permissions
-     * are approved.
-     */
-    public const APPROVED_PERMISSIONS_currentPermissionsOnly = 'currentPermissionsOnly';
-    /**
-     * All current and future permissions the app requires are automatically
-     * approved.
-     */
-    public const APPROVED_PERMISSIONS_allPermissions = 'allPermissions';
-    protected $approvalUrlInfoType = ApprovalUrlInfo::class;
-    protected $approvalUrlInfoDataType = '';
-    /**
-     * Sets how new permission requests for the product are handled.
-     * "allPermissions" automatically approves all current and future permissions
-     * for the product. "currentPermissionsOnly" approves the current set of
-     * permissions for the product, but any future permissions added through
-     * updates will require manual reapproval. If not specified, only the current
-     * set of permissions will be approved.
-     *
-     * @var string
-     */
-    public $approvedPermissions;
-    /**
-     * The approval URL that was shown to the user. Only the permissions shown to
-     * the user with that URL will be accepted, which may not be the product's
-     * entire set of permissions. For example, the URL may only display new
-     * permissions from an update after the product was approved, or not include
-     * new permissions if the product was updated since the URL was generated.
-     *
-     * @param ApprovalUrlInfo $approvalUrlInfo
-     */
-    public function setApprovalUrlInfo(ApprovalUrlInfo $approvalUrlInfo)
+namespace Google\Service\AndroidEnterprise {
+    class ProductsApproveRequest extends \Google\Model
     {
+        /**
+         * Approve only the permissions the product requires at approval time. If an
+         * update requires additional permissions, the app will not be updated on
+         * devices associated with enterprise users until the additional permissions
+         * are approved.
+         */
+        public const APPROVED_PERMISSIONS_currentPermissionsOnly = 'currentPermissionsOnly';
+        /**
+         * All current and future permissions the app requires are automatically
+         * approved.
+         */
+        public const APPROVED_PERMISSIONS_allPermissions = 'allPermissions';
+        protected $approvalUrlInfoType = ApprovalUrlInfo::class;
+        protected $approvalUrlInfoDataType = '';
+        /**
+         * Sets how new permission requests for the product are handled.
+         * "allPermissions" automatically approves all current and future permissions
+         * for the product. "currentPermissionsOnly" approves the current set of
+         * permissions for the product, but any future permissions added through
+         * updates will require manual reapproval. If not specified, only the current
+         * set of permissions will be approved.
+         *
+         * @var string
+         */
+        public $approvedPermissions;
+        /**
+         * The approval URL that was shown to the user. Only the permissions shown to
+         * the user with that URL will be accepted, which may not be the product's
+         * entire set of permissions. For example, the URL may only display new
+         * permissions from an update after the product was approved, or not include
+         * new permissions if the product was updated since the URL was generated.
+         *
+         * @param ApprovalUrlInfo $approvalUrlInfo
+         */
+        public function setApprovalUrlInfo(ApprovalUrlInfo $approvalUrlInfo)
+        {
+        }
+        /**
+         * @return ApprovalUrlInfo
+         */
+        public function getApprovalUrlInfo()
+        {
+        }
+        /**
+         * Sets how new permission requests for the product are handled.
+         * "allPermissions" automatically approves all current and future permissions
+         * for the product. "currentPermissionsOnly" approves the current set of
+         * permissions for the product, but any future permissions added through
+         * updates will require manual reapproval. If not specified, only the current
+         * set of permissions will be approved.
+         *
+         * Accepted values: currentPermissionsOnly, allPermissions
+         *
+         * @param self::APPROVED_PERMISSIONS_* $approvedPermissions
+         */
+        public function setApprovedPermissions($approvedPermissions)
+        {
+        }
+        /**
+         * @return self::APPROVED_PERMISSIONS_*
+         */
+        public function getApprovedPermissions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApprovalUrlInfo
+     * Runtime class alias of \Google\Service\AndroidEnterprise\ProductsApproveRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApprovalUrlInfo()
-    {
-    }
-    /**
-     * Sets how new permission requests for the product are handled.
-     * "allPermissions" automatically approves all current and future permissions
-     * for the product. "currentPermissionsOnly" approves the current set of
-     * permissions for the product, but any future permissions added through
-     * updates will require manual reapproval. If not specified, only the current
-     * set of permissions will be approved.
-     *
-     * Accepted values: currentPermissionsOnly, allPermissions
-     *
-     * @param self::APPROVED_PERMISSIONS_* $approvedPermissions
-     */
-    public function setApprovedPermissions($approvedPermissions)
-    {
-    }
-    /**
-     * @return self::APPROVED_PERMISSIONS_*
-     */
-    public function getApprovedPermissions()
+    class Google_Service_AndroidEnterprise_ProductsApproveRequest extends \Google\Service\AndroidEnterprise\ProductsApproveRequest
     {
     }
 }

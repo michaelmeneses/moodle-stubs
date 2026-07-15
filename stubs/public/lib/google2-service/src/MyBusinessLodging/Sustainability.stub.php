@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessLodging;
-
-class Sustainability extends \Google\Model
-{
-    protected $energyEfficiencyType = EnergyEfficiency::class;
-    protected $energyEfficiencyDataType = '';
-    protected $sustainabilityCertificationsType = SustainabilityCertifications::class;
-    protected $sustainabilityCertificationsDataType = '';
-    protected $sustainableSourcingType = SustainableSourcing::class;
-    protected $sustainableSourcingDataType = '';
-    protected $wasteReductionType = WasteReduction::class;
-    protected $wasteReductionDataType = '';
-    protected $waterConservationType = WaterConservation::class;
-    protected $waterConservationDataType = '';
-    /**
-     * Energy efficiency practices implemented at the hotel.
-     *
-     * @param EnergyEfficiency $energyEfficiency
-     */
-    public function setEnergyEfficiency(EnergyEfficiency $energyEfficiency)
+namespace Google\Service\MyBusinessLodging {
+    class Sustainability extends \Google\Model
     {
+        protected $energyEfficiencyType = EnergyEfficiency::class;
+        protected $energyEfficiencyDataType = '';
+        protected $sustainabilityCertificationsType = SustainabilityCertifications::class;
+        protected $sustainabilityCertificationsDataType = '';
+        protected $sustainableSourcingType = SustainableSourcing::class;
+        protected $sustainableSourcingDataType = '';
+        protected $wasteReductionType = WasteReduction::class;
+        protected $wasteReductionDataType = '';
+        protected $waterConservationType = WaterConservation::class;
+        protected $waterConservationDataType = '';
+        /**
+         * Energy efficiency practices implemented at the hotel.
+         *
+         * @param EnergyEfficiency $energyEfficiency
+         */
+        public function setEnergyEfficiency(EnergyEfficiency $energyEfficiency)
+        {
+        }
+        /**
+         * @return EnergyEfficiency
+         */
+        public function getEnergyEfficiency()
+        {
+        }
+        /**
+         * Sustainability certifications the hotel has been awarded. Deprecated: this
+         * field is no longer populated. All certification data is now provided by
+         * BeCause.
+         *
+         * @deprecated
+         * @param SustainabilityCertifications $sustainabilityCertifications
+         */
+        public function setSustainabilityCertifications(SustainabilityCertifications $sustainabilityCertifications)
+        {
+        }
+        /**
+         * @deprecated
+         * @return SustainabilityCertifications
+         */
+        public function getSustainabilityCertifications()
+        {
+        }
+        /**
+         * Sustainable sourcing practices implemented at the hotel.
+         *
+         * @param SustainableSourcing $sustainableSourcing
+         */
+        public function setSustainableSourcing(SustainableSourcing $sustainableSourcing)
+        {
+        }
+        /**
+         * @return SustainableSourcing
+         */
+        public function getSustainableSourcing()
+        {
+        }
+        /**
+         * Waste reduction practices implemented at the hotel.
+         *
+         * @param WasteReduction $wasteReduction
+         */
+        public function setWasteReduction(WasteReduction $wasteReduction)
+        {
+        }
+        /**
+         * @return WasteReduction
+         */
+        public function getWasteReduction()
+        {
+        }
+        /**
+         * Water conservation practices implemented at the hotel.
+         *
+         * @param WaterConservation $waterConservation
+         */
+        public function setWaterConservation(WaterConservation $waterConservation)
+        {
+        }
+        /**
+         * @return WaterConservation
+         */
+        public function getWaterConservation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnergyEfficiency
+     * Runtime class alias of \Google\Service\MyBusinessLodging\Sustainability registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnergyEfficiency()
-    {
-    }
-    /**
-     * Sustainability certifications the hotel has been awarded. Deprecated: this
-     * field is no longer populated. All certification data is now provided by
-     * BeCause.
-     *
-     * @deprecated
-     * @param SustainabilityCertifications $sustainabilityCertifications
-     */
-    public function setSustainabilityCertifications(SustainabilityCertifications $sustainabilityCertifications)
-    {
-    }
-    /**
-     * @deprecated
-     * @return SustainabilityCertifications
-     */
-    public function getSustainabilityCertifications()
-    {
-    }
-    /**
-     * Sustainable sourcing practices implemented at the hotel.
-     *
-     * @param SustainableSourcing $sustainableSourcing
-     */
-    public function setSustainableSourcing(SustainableSourcing $sustainableSourcing)
-    {
-    }
-    /**
-     * @return SustainableSourcing
-     */
-    public function getSustainableSourcing()
-    {
-    }
-    /**
-     * Waste reduction practices implemented at the hotel.
-     *
-     * @param WasteReduction $wasteReduction
-     */
-    public function setWasteReduction(WasteReduction $wasteReduction)
-    {
-    }
-    /**
-     * @return WasteReduction
-     */
-    public function getWasteReduction()
-    {
-    }
-    /**
-     * Water conservation practices implemented at the hotel.
-     *
-     * @param WaterConservation $waterConservation
-     */
-    public function setWaterConservation(WaterConservation $waterConservation)
-    {
-    }
-    /**
-     * @return WaterConservation
-     */
-    public function getWaterConservation()
+    class Google_Service_MyBusinessLodging_Sustainability extends \Google\Service\MyBusinessLodging\Sustainability
     {
     }
 }

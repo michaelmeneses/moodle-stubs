@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class NetworkConfigurationCatalog extends \Google\Collection
-{
-    protected $collection_key = 'configurations';
-    protected $configurationsType = NetworkConfiguration::class;
-    protected $configurationsDataType = 'array';
-    /**
-     * @param NetworkConfiguration[] $configurations
-     */
-    public function setConfigurations($configurations)
+namespace Google\Service\Testing {
+    class NetworkConfigurationCatalog extends \Google\Collection
     {
+        protected $collection_key = 'configurations';
+        protected $configurationsType = NetworkConfiguration::class;
+        protected $configurationsDataType = 'array';
+        /**
+         * @param NetworkConfiguration[] $configurations
+         */
+        public function setConfigurations($configurations)
+        {
+        }
+        /**
+         * @return NetworkConfiguration[]
+         */
+        public function getConfigurations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NetworkConfiguration[]
+     * Runtime class alias of \Google\Service\Testing\NetworkConfigurationCatalog registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigurations()
+    class Google_Service_Testing_NetworkConfigurationCatalog extends \Google\Service\Testing\NetworkConfigurationCatalog
     {
     }
 }

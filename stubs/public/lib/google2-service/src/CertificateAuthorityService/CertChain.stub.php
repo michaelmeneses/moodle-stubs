@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class CertChain extends \Google\Collection
-{
-    protected $collection_key = 'certificates';
-    /**
-     * The certificates that form the CA chain, from leaf to root order.
-     *
-     * @var string[]
-     */
-    public $certificates;
-    /**
-     * The certificates that form the CA chain, from leaf to root order.
-     *
-     * @param string[] $certificates
-     */
-    public function setCertificates($certificates)
+namespace Google\Service\CertificateAuthorityService {
+    class CertChain extends \Google\Collection
     {
+        protected $collection_key = 'certificates';
+        /**
+         * The certificates that form the CA chain, from leaf to root order.
+         *
+         * @var string[]
+         */
+        public $certificates;
+        /**
+         * The certificates that form the CA chain, from leaf to root order.
+         *
+         * @param string[] $certificates
+         */
+        public function setCertificates($certificates)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCertificates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\CertChain registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificates()
+    class Google_Service_CertificateAuthorityService_CertChain extends \Google\Service\CertificateAuthorityService\CertChain
     {
     }
 }

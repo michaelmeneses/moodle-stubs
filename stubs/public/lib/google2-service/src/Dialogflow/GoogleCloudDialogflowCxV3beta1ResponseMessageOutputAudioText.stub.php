@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1ResponseMessageOutputAudioText extends \Google\Model
-{
-    /**
-     * Output only. Whether the playback of this message can be interrupted by the
-     * end user's speech and the client can then starts the next Dialogflow
-     * request.
-     *
-     * @var bool
-     */
-    public $allowPlaybackInterruption;
-    /**
-     * The SSML text to be synthesized. For more information, see
-     * [SSML](/speech/text-to-speech/docs/ssml).
-     *
-     * @var string
-     */
-    public $ssml;
-    /**
-     * The raw text to be synthesized.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Output only. Whether the playback of this message can be interrupted by the
-     * end user's speech and the client can then starts the next Dialogflow
-     * request.
-     *
-     * @param bool $allowPlaybackInterruption
-     */
-    public function setAllowPlaybackInterruption($allowPlaybackInterruption)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1ResponseMessageOutputAudioText extends \Google\Model
     {
+        /**
+         * Output only. Whether the playback of this message can be interrupted by the
+         * end user's speech and the client can then starts the next Dialogflow
+         * request.
+         *
+         * @var bool
+         */
+        public $allowPlaybackInterruption;
+        /**
+         * The SSML text to be synthesized. For more information, see
+         * [SSML](/speech/text-to-speech/docs/ssml).
+         *
+         * @var string
+         */
+        public $ssml;
+        /**
+         * The raw text to be synthesized.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Output only. Whether the playback of this message can be interrupted by the
+         * end user's speech and the client can then starts the next Dialogflow
+         * request.
+         *
+         * @param bool $allowPlaybackInterruption
+         */
+        public function setAllowPlaybackInterruption($allowPlaybackInterruption)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowPlaybackInterruption()
+        {
+        }
+        /**
+         * The SSML text to be synthesized. For more information, see
+         * [SSML](/speech/text-to-speech/docs/ssml).
+         *
+         * @param string $ssml
+         */
+        public function setSsml($ssml)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSsml()
+        {
+        }
+        /**
+         * The raw text to be synthesized.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1ResponseMessageOutputAudioText registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowPlaybackInterruption()
-    {
-    }
-    /**
-     * The SSML text to be synthesized. For more information, see
-     * [SSML](/speech/text-to-speech/docs/ssml).
-     *
-     * @param string $ssml
-     */
-    public function setSsml($ssml)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSsml()
-    {
-    }
-    /**
-     * The raw text to be synthesized.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1ResponseMessageOutputAudioText extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1ResponseMessageOutputAudioText
     {
     }
 }

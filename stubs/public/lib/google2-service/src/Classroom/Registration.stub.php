@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class Registration extends \Google\Model
-{
-    protected $cloudPubsubTopicType = CloudPubsubTopic::class;
-    protected $cloudPubsubTopicDataType = '';
-    /**
-     * The time until which the `Registration` is effective. This is a read-only
-     * field assigned by the server.
-     *
-     * @var string
-     */
-    public $expiryTime;
-    protected $feedType = Feed::class;
-    protected $feedDataType = '';
-    /**
-     * A server-generated unique identifier for this `Registration`. Read-only.
-     *
-     * @var string
-     */
-    public $registrationId;
-    /**
-     * The Cloud Pub/Sub topic that notifications are to be sent to.
-     *
-     * @param CloudPubsubTopic $cloudPubsubTopic
-     */
-    public function setCloudPubsubTopic(CloudPubsubTopic $cloudPubsubTopic)
+namespace Google\Service\Classroom {
+    class Registration extends \Google\Model
     {
+        protected $cloudPubsubTopicType = CloudPubsubTopic::class;
+        protected $cloudPubsubTopicDataType = '';
+        /**
+         * The time until which the `Registration` is effective. This is a read-only
+         * field assigned by the server.
+         *
+         * @var string
+         */
+        public $expiryTime;
+        protected $feedType = Feed::class;
+        protected $feedDataType = '';
+        /**
+         * A server-generated unique identifier for this `Registration`. Read-only.
+         *
+         * @var string
+         */
+        public $registrationId;
+        /**
+         * The Cloud Pub/Sub topic that notifications are to be sent to.
+         *
+         * @param CloudPubsubTopic $cloudPubsubTopic
+         */
+        public function setCloudPubsubTopic(CloudPubsubTopic $cloudPubsubTopic)
+        {
+        }
+        /**
+         * @return CloudPubsubTopic
+         */
+        public function getCloudPubsubTopic()
+        {
+        }
+        /**
+         * The time until which the `Registration` is effective. This is a read-only
+         * field assigned by the server.
+         *
+         * @param string $expiryTime
+         */
+        public function setExpiryTime($expiryTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpiryTime()
+        {
+        }
+        /**
+         * Specification for the class of notifications that Classroom should deliver
+         * to the destination.
+         *
+         * @param Feed $feed
+         */
+        public function setFeed(Feed $feed)
+        {
+        }
+        /**
+         * @return Feed
+         */
+        public function getFeed()
+        {
+        }
+        /**
+         * A server-generated unique identifier for this `Registration`. Read-only.
+         *
+         * @param string $registrationId
+         */
+        public function setRegistrationId($registrationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegistrationId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudPubsubTopic
+     * Runtime class alias of \Google\Service\Classroom\Registration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudPubsubTopic()
-    {
-    }
-    /**
-     * The time until which the `Registration` is effective. This is a read-only
-     * field assigned by the server.
-     *
-     * @param string $expiryTime
-     */
-    public function setExpiryTime($expiryTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpiryTime()
-    {
-    }
-    /**
-     * Specification for the class of notifications that Classroom should deliver
-     * to the destination.
-     *
-     * @param Feed $feed
-     */
-    public function setFeed(Feed $feed)
-    {
-    }
-    /**
-     * @return Feed
-     */
-    public function getFeed()
-    {
-    }
-    /**
-     * A server-generated unique identifier for this `Registration`. Read-only.
-     *
-     * @param string $registrationId
-     */
-    public function setRegistrationId($registrationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegistrationId()
+    class Google_Service_Classroom_Registration extends \Google\Service\Classroom\Registration
     {
     }
 }

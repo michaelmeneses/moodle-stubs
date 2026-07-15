@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class LoadBalancerServer extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $ip;
-    /**
-     * @var string
-     */
-    public $vm;
-    /**
-     * @param string
-     */
-    public function setIp($ip)
+namespace Google\Service\WorkloadManager {
+    class LoadBalancerServer extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $ip;
+        /**
+         * @var string
+         */
+        public $vm;
+        /**
+         * @param string
+         */
+        public function setIp($ip)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIp()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVm($vm)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVm()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\LoadBalancerServer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIp()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVm($vm)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVm()
+    class Google_Service_WorkloadManager_LoadBalancerServer extends \Google\Service\WorkloadManager\LoadBalancerServer
     {
     }
 }

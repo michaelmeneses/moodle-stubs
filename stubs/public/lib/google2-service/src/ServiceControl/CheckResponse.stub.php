@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceControl;
-
-class CheckResponse extends \Google\Model
-{
-    /**
-     * Optional response metadata that will be emitted as dynamic metadata to be
-     * consumed by the caller of ServiceController. For compatibility with the
-     * ext_authz interface.
-     *
-     * @var array[]
-     */
-    public $dynamicMetadata;
-    /**
-     * Returns a set of request contexts generated from the `CheckRequest`.
-     *
-     * @var string[]
-     */
-    public $headers;
-    protected $statusType = Status::class;
-    protected $statusDataType = '';
-    /**
-     * Optional response metadata that will be emitted as dynamic metadata to be
-     * consumed by the caller of ServiceController. For compatibility with the
-     * ext_authz interface.
-     *
-     * @param array[] $dynamicMetadata
-     */
-    public function setDynamicMetadata($dynamicMetadata)
+namespace Google\Service\ServiceControl {
+    class CheckResponse extends \Google\Model
     {
+        /**
+         * Optional response metadata that will be emitted as dynamic metadata to be
+         * consumed by the caller of ServiceController. For compatibility with the
+         * ext_authz interface.
+         *
+         * @var array[]
+         */
+        public $dynamicMetadata;
+        /**
+         * Returns a set of request contexts generated from the `CheckRequest`.
+         *
+         * @var string[]
+         */
+        public $headers;
+        protected $statusType = Status::class;
+        protected $statusDataType = '';
+        /**
+         * Optional response metadata that will be emitted as dynamic metadata to be
+         * consumed by the caller of ServiceController. For compatibility with the
+         * ext_authz interface.
+         *
+         * @param array[] $dynamicMetadata
+         */
+        public function setDynamicMetadata($dynamicMetadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getDynamicMetadata()
+        {
+        }
+        /**
+         * Returns a set of request contexts generated from the `CheckRequest`.
+         *
+         * @param string[] $headers
+         */
+        public function setHeaders($headers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getHeaders()
+        {
+        }
+        /**
+         * Operation is allowed when this field is not set. Any non-'OK' status
+         * indicates a denial; google.rpc.Status.details would contain additional
+         * details about the denial.
+         *
+         * @param Status $status
+         */
+        public function setStatus(Status $status)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\ServiceControl\CheckResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDynamicMetadata()
-    {
-    }
-    /**
-     * Returns a set of request contexts generated from the `CheckRequest`.
-     *
-     * @param string[] $headers
-     */
-    public function setHeaders($headers)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getHeaders()
-    {
-    }
-    /**
-     * Operation is allowed when this field is not set. Any non-'OK' status
-     * indicates a denial; google.rpc.Status.details would contain additional
-     * details about the denial.
-     *
-     * @param Status $status
-     */
-    public function setStatus(Status $status)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getStatus()
+    class Google_Service_ServiceControl_CheckResponse extends \Google\Service\ServiceControl\CheckResponse
     {
     }
 }

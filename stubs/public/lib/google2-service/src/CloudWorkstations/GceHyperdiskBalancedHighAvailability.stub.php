@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudWorkstations;
-
-class GceHyperdiskBalancedHighAvailability extends \Google\Model
-{
-    /**
-     * Do not use.
-     */
-    public const RECLAIM_POLICY_RECLAIM_POLICY_UNSPECIFIED = 'RECLAIM_POLICY_UNSPECIFIED';
-    /**
-     * Delete the persistent disk when deleting the workstation.
-     */
-    public const RECLAIM_POLICY_DELETE = 'DELETE';
-    /**
-     * Keep the persistent disk when deleting the workstation. An administrator
-     * must manually delete the disk.
-     */
-    public const RECLAIM_POLICY_RETAIN = 'RETAIN';
-    /**
-     * Optional. Number of seconds to wait after initially creating or
-     * subsequently shutting down the workstation before converting its disk into
-     * a snapshot. This generally saves costs at the expense of greater startup
-     * time on next workstation start, as the service will need to create a disk
-     * from the archival snapshot. A value of `"0s"` indicates that the disk will
-     * never be archived.
-     *
-     * @var string
-     */
-    public $archiveTimeout;
-    /**
-     * Optional. Whether the persistent disk should be deleted when the
-     * workstation is deleted. Valid values are `DELETE` and `RETAIN`. Defaults to
-     * `DELETE`.
-     *
-     * @var string
-     */
-    public $reclaimPolicy;
-    /**
-     * Optional. The GB capacity of a persistent home directory for each
-     * workstation created with this configuration. Must be empty if
-     * source_snapshot is set. Valid values are `10`, `50`, `100`, `200`, `500`,
-     * or `1000`. Defaults to `200`.
-     *
-     * @var int
-     */
-    public $sizeGb;
-    /**
-     * Optional. Name of the snapshot to use as the source for the disk. If set,
-     * size_gb must be empty. Must be formatted as ext4 file system with no
-     * partitions.
-     *
-     * @var string
-     */
-    public $sourceSnapshot;
-    /**
-     * Optional. Number of seconds to wait after initially creating or
-     * subsequently shutting down the workstation before converting its disk into
-     * a snapshot. This generally saves costs at the expense of greater startup
-     * time on next workstation start, as the service will need to create a disk
-     * from the archival snapshot. A value of `"0s"` indicates that the disk will
-     * never be archived.
-     *
-     * @param string $archiveTimeout
-     */
-    public function setArchiveTimeout($archiveTimeout)
+namespace Google\Service\CloudWorkstations {
+    class GceHyperdiskBalancedHighAvailability extends \Google\Model
     {
+        /**
+         * Do not use.
+         */
+        public const RECLAIM_POLICY_RECLAIM_POLICY_UNSPECIFIED = 'RECLAIM_POLICY_UNSPECIFIED';
+        /**
+         * Delete the persistent disk when deleting the workstation.
+         */
+        public const RECLAIM_POLICY_DELETE = 'DELETE';
+        /**
+         * Keep the persistent disk when deleting the workstation. An administrator
+         * must manually delete the disk.
+         */
+        public const RECLAIM_POLICY_RETAIN = 'RETAIN';
+        /**
+         * Optional. Number of seconds to wait after initially creating or
+         * subsequently shutting down the workstation before converting its disk into
+         * a snapshot. This generally saves costs at the expense of greater startup
+         * time on next workstation start, as the service will need to create a disk
+         * from the archival snapshot. A value of `"0s"` indicates that the disk will
+         * never be archived.
+         *
+         * @var string
+         */
+        public $archiveTimeout;
+        /**
+         * Optional. Whether the persistent disk should be deleted when the
+         * workstation is deleted. Valid values are `DELETE` and `RETAIN`. Defaults to
+         * `DELETE`.
+         *
+         * @var string
+         */
+        public $reclaimPolicy;
+        /**
+         * Optional. The GB capacity of a persistent home directory for each
+         * workstation created with this configuration. Must be empty if
+         * source_snapshot is set. Valid values are `10`, `50`, `100`, `200`, `500`,
+         * or `1000`. Defaults to `200`.
+         *
+         * @var int
+         */
+        public $sizeGb;
+        /**
+         * Optional. Name of the snapshot to use as the source for the disk. If set,
+         * size_gb must be empty. Must be formatted as ext4 file system with no
+         * partitions.
+         *
+         * @var string
+         */
+        public $sourceSnapshot;
+        /**
+         * Optional. Number of seconds to wait after initially creating or
+         * subsequently shutting down the workstation before converting its disk into
+         * a snapshot. This generally saves costs at the expense of greater startup
+         * time on next workstation start, as the service will need to create a disk
+         * from the archival snapshot. A value of `"0s"` indicates that the disk will
+         * never be archived.
+         *
+         * @param string $archiveTimeout
+         */
+        public function setArchiveTimeout($archiveTimeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArchiveTimeout()
+        {
+        }
+        /**
+         * Optional. Whether the persistent disk should be deleted when the
+         * workstation is deleted. Valid values are `DELETE` and `RETAIN`. Defaults to
+         * `DELETE`.
+         *
+         * Accepted values: RECLAIM_POLICY_UNSPECIFIED, DELETE, RETAIN
+         *
+         * @param self::RECLAIM_POLICY_* $reclaimPolicy
+         */
+        public function setReclaimPolicy($reclaimPolicy)
+        {
+        }
+        /**
+         * @return self::RECLAIM_POLICY_*
+         */
+        public function getReclaimPolicy()
+        {
+        }
+        /**
+         * Optional. The GB capacity of a persistent home directory for each
+         * workstation created with this configuration. Must be empty if
+         * source_snapshot is set. Valid values are `10`, `50`, `100`, `200`, `500`,
+         * or `1000`. Defaults to `200`.
+         *
+         * @param int $sizeGb
+         */
+        public function setSizeGb($sizeGb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSizeGb()
+        {
+        }
+        /**
+         * Optional. Name of the snapshot to use as the source for the disk. If set,
+         * size_gb must be empty. Must be formatted as ext4 file system with no
+         * partitions.
+         *
+         * @param string $sourceSnapshot
+         */
+        public function setSourceSnapshot($sourceSnapshot)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceSnapshot()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudWorkstations\GceHyperdiskBalancedHighAvailability registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArchiveTimeout()
-    {
-    }
-    /**
-     * Optional. Whether the persistent disk should be deleted when the
-     * workstation is deleted. Valid values are `DELETE` and `RETAIN`. Defaults to
-     * `DELETE`.
-     *
-     * Accepted values: RECLAIM_POLICY_UNSPECIFIED, DELETE, RETAIN
-     *
-     * @param self::RECLAIM_POLICY_* $reclaimPolicy
-     */
-    public function setReclaimPolicy($reclaimPolicy)
-    {
-    }
-    /**
-     * @return self::RECLAIM_POLICY_*
-     */
-    public function getReclaimPolicy()
-    {
-    }
-    /**
-     * Optional. The GB capacity of a persistent home directory for each
-     * workstation created with this configuration. Must be empty if
-     * source_snapshot is set. Valid values are `10`, `50`, `100`, `200`, `500`,
-     * or `1000`. Defaults to `200`.
-     *
-     * @param int $sizeGb
-     */
-    public function setSizeGb($sizeGb)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSizeGb()
-    {
-    }
-    /**
-     * Optional. Name of the snapshot to use as the source for the disk. If set,
-     * size_gb must be empty. Must be formatted as ext4 file system with no
-     * partitions.
-     *
-     * @param string $sourceSnapshot
-     */
-    public function setSourceSnapshot($sourceSnapshot)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceSnapshot()
+    class Google_Service_CloudWorkstations_GceHyperdiskBalancedHighAvailability extends \Google\Service\CloudWorkstations\GceHyperdiskBalancedHighAvailability
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class OSPolicyAssignmentLabelSet extends \Google\Model
-{
-    /**
-     * Labels are identified by key/value pairs in this map. A VM should contain
-     * all the key/value pairs specified in this map to be selected.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Labels are identified by key/value pairs in this map. A VM should contain
-     * all the key/value pairs specified in this map to be selected.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
+namespace Google\Service\OSConfig {
+    class OSPolicyAssignmentLabelSet extends \Google\Model
     {
+        /**
+         * Labels are identified by key/value pairs in this map. A VM should contain
+         * all the key/value pairs specified in this map to be selected.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Labels are identified by key/value pairs in this map. A VM should contain
+         * all the key/value pairs specified in this map to be selected.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\OSConfig\OSPolicyAssignmentLabelSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabels()
+    class Google_Service_OSConfig_OSPolicyAssignmentLabelSet extends \Google\Service\OSConfig\OSPolicyAssignmentLabelSet
     {
     }
 }

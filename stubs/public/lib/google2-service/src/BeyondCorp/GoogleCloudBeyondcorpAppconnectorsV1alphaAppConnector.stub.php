@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpAppconnectorsV1alphaAppConnector extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $principalInfoType = GoogleCloudBeyondcorpAppconnectorsV1alphaAppConnectorPrincipalInfo::class;
-    protected $principalInfoDataType = '';
-    protected $resourceInfoType = GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo::class;
-    protected $resourceInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @var string
-     */
-    public $uid;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpAppconnectorsV1alphaAppConnector extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $principalInfoType = GoogleCloudBeyondcorpAppconnectorsV1alphaAppConnectorPrincipalInfo::class;
+        protected $principalInfoDataType = '';
+        protected $resourceInfoType = GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo::class;
+        protected $resourceInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @var string
+         */
+        public $uid;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param GoogleCloudBeyondcorpAppconnectorsV1alphaAppConnectorPrincipalInfo
+         */
+        public function setPrincipalInfo(GoogleCloudBeyondcorpAppconnectorsV1alphaAppConnectorPrincipalInfo $principalInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpAppconnectorsV1alphaAppConnectorPrincipalInfo
+         */
+        public function getPrincipalInfo()
+        {
+        }
+        /**
+         * @param GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo
+         */
+        public function setResourceInfo(GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo $resourceInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo
+         */
+        public function getResourceInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1alphaAppConnector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param GoogleCloudBeyondcorpAppconnectorsV1alphaAppConnectorPrincipalInfo
-     */
-    public function setPrincipalInfo(GoogleCloudBeyondcorpAppconnectorsV1alphaAppConnectorPrincipalInfo $principalInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudBeyondcorpAppconnectorsV1alphaAppConnectorPrincipalInfo
-     */
-    public function getPrincipalInfo()
-    {
-    }
-    /**
-     * @param GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo
-     */
-    public function setResourceInfo(GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo $resourceInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo
-     */
-    public function getResourceInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpAppconnectorsV1alphaAppConnector extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1alphaAppConnector
     {
     }
 }

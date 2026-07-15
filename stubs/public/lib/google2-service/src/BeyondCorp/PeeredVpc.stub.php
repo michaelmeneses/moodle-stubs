@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class PeeredVpc extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $networkVpc;
-    /**
-     * @param string
-     */
-    public function setNetworkVpc($networkVpc)
+namespace Google\Service\BeyondCorp {
+    class PeeredVpc extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $networkVpc;
+        /**
+         * @param string
+         */
+        public function setNetworkVpc($networkVpc)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkVpc()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BeyondCorp\PeeredVpc registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkVpc()
+    class Google_Service_BeyondCorp_PeeredVpc extends \Google\Service\BeyondCorp\PeeredVpc
     {
     }
 }

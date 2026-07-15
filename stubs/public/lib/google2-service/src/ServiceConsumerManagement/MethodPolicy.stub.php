@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceConsumerManagement;
-
-class MethodPolicy extends \Google\Collection
-{
-    protected $collection_key = 'requestPolicies';
-    protected $requestPoliciesType = FieldPolicy::class;
-    protected $requestPoliciesDataType = 'array';
-    /**
-     * Selects a method to which these policies should be enforced, for example,
-     * "google.pubsub.v1.Subscriber.CreateSubscription". Refer to selector for
-     * syntax details. NOTE: This field must not be set in the proto annotation.
-     * It will be automatically filled by the service config compiler .
-     *
-     * @var string
-     */
-    public $selector;
-    /**
-     * Policies that are applicable to the request message.
-     *
-     * @param FieldPolicy[] $requestPolicies
-     */
-    public function setRequestPolicies($requestPolicies)
+namespace Google\Service\ServiceConsumerManagement {
+    class MethodPolicy extends \Google\Collection
     {
+        protected $collection_key = 'requestPolicies';
+        protected $requestPoliciesType = FieldPolicy::class;
+        protected $requestPoliciesDataType = 'array';
+        /**
+         * Selects a method to which these policies should be enforced, for example,
+         * "google.pubsub.v1.Subscriber.CreateSubscription". Refer to selector for
+         * syntax details. NOTE: This field must not be set in the proto annotation.
+         * It will be automatically filled by the service config compiler .
+         *
+         * @var string
+         */
+        public $selector;
+        /**
+         * Policies that are applicable to the request message.
+         *
+         * @param FieldPolicy[] $requestPolicies
+         */
+        public function setRequestPolicies($requestPolicies)
+        {
+        }
+        /**
+         * @return FieldPolicy[]
+         */
+        public function getRequestPolicies()
+        {
+        }
+        /**
+         * Selects a method to which these policies should be enforced, for example,
+         * "google.pubsub.v1.Subscriber.CreateSubscription". Refer to selector for
+         * syntax details. NOTE: This field must not be set in the proto annotation.
+         * It will be automatically filled by the service config compiler .
+         *
+         * @param string $selector
+         */
+        public function setSelector($selector)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelector()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FieldPolicy[]
+     * Runtime class alias of \Google\Service\ServiceConsumerManagement\MethodPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequestPolicies()
-    {
-    }
-    /**
-     * Selects a method to which these policies should be enforced, for example,
-     * "google.pubsub.v1.Subscriber.CreateSubscription". Refer to selector for
-     * syntax details. NOTE: This field must not be set in the proto annotation.
-     * It will be automatically filled by the service config compiler .
-     *
-     * @param string $selector
-     */
-    public function setSelector($selector)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelector()
+    class Google_Service_ServiceConsumerManagement_MethodPolicy extends \Google\Service\ServiceConsumerManagement\MethodPolicy
     {
     }
 }

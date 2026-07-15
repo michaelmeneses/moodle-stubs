@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class BucketRetentionPolicy extends \Google\Model
-{
-    /**
-     * Server-determined value that indicates the time from which policy was
-     * enforced and effective. This value is in RFC 3339 format.
-     *
-     * @var string
-     */
-    public $effectiveTime;
-    /**
-     * Once locked, an object retention policy cannot be modified.
-     *
-     * @var bool
-     */
-    public $isLocked;
-    /**
-     * The duration in seconds that objects need to be retained. Retention
-     * duration must be greater than zero and less than 100 years. Note that
-     * enforcement of retention periods less than a day is not guaranteed. Such
-     * periods should only be used for testing purposes.
-     *
-     * @var string
-     */
-    public $retentionPeriod;
-    /**
-     * Server-determined value that indicates the time from which policy was
-     * enforced and effective. This value is in RFC 3339 format.
-     *
-     * @param string $effectiveTime
-     */
-    public function setEffectiveTime($effectiveTime)
+namespace Google\Service\Storage {
+    class BucketRetentionPolicy extends \Google\Model
     {
+        /**
+         * Server-determined value that indicates the time from which policy was
+         * enforced and effective. This value is in RFC 3339 format.
+         *
+         * @var string
+         */
+        public $effectiveTime;
+        /**
+         * Once locked, an object retention policy cannot be modified.
+         *
+         * @var bool
+         */
+        public $isLocked;
+        /**
+         * The duration in seconds that objects need to be retained. Retention
+         * duration must be greater than zero and less than 100 years. Note that
+         * enforcement of retention periods less than a day is not guaranteed. Such
+         * periods should only be used for testing purposes.
+         *
+         * @var string
+         */
+        public $retentionPeriod;
+        /**
+         * Server-determined value that indicates the time from which policy was
+         * enforced and effective. This value is in RFC 3339 format.
+         *
+         * @param string $effectiveTime
+         */
+        public function setEffectiveTime($effectiveTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEffectiveTime()
+        {
+        }
+        /**
+         * Once locked, an object retention policy cannot be modified.
+         *
+         * @param bool $isLocked
+         */
+        public function setIsLocked($isLocked)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsLocked()
+        {
+        }
+        /**
+         * The duration in seconds that objects need to be retained. Retention
+         * duration must be greater than zero and less than 100 years. Note that
+         * enforcement of retention periods less than a day is not guaranteed. Such
+         * periods should only be used for testing purposes.
+         *
+         * @param string $retentionPeriod
+         */
+        public function setRetentionPeriod($retentionPeriod)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRetentionPeriod()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storage\BucketRetentionPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEffectiveTime()
-    {
-    }
-    /**
-     * Once locked, an object retention policy cannot be modified.
-     *
-     * @param bool $isLocked
-     */
-    public function setIsLocked($isLocked)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsLocked()
-    {
-    }
-    /**
-     * The duration in seconds that objects need to be retained. Retention
-     * duration must be greater than zero and less than 100 years. Note that
-     * enforcement of retention periods less than a day is not guaranteed. Such
-     * periods should only be used for testing purposes.
-     *
-     * @param string $retentionPeriod
-     */
-    public function setRetentionPeriod($retentionPeriod)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRetentionPeriod()
+    class Google_Service_Storage_BucketRetentionPolicy extends \Google\Service\Storage\BucketRetentionPolicy
     {
     }
 }

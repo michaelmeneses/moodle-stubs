@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class FilterOptions extends \Google\Model
-{
-    protected $filterType = Filter::class;
-    protected $filterDataType = '';
-    /**
-     * If object_type is set, only objects of that type are returned. This should
-     * correspond to the name of the object that was registered within the
-     * definition of schema. The maximum length is 256 characters.
-     *
-     * @var string
-     */
-    public $objectType;
-    /**
-     * Generic filter to restrict the search, such as `lang:en`, `site:xyz`.
-     *
-     * @param Filter $filter
-     */
-    public function setFilter(Filter $filter)
+namespace Google\Service\CloudSearch {
+    class FilterOptions extends \Google\Model
     {
+        protected $filterType = Filter::class;
+        protected $filterDataType = '';
+        /**
+         * If object_type is set, only objects of that type are returned. This should
+         * correspond to the name of the object that was registered within the
+         * definition of schema. The maximum length is 256 characters.
+         *
+         * @var string
+         */
+        public $objectType;
+        /**
+         * Generic filter to restrict the search, such as `lang:en`, `site:xyz`.
+         *
+         * @param Filter $filter
+         */
+        public function setFilter(Filter $filter)
+        {
+        }
+        /**
+         * @return Filter
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * If object_type is set, only objects of that type are returned. This should
+         * correspond to the name of the object that was registered within the
+         * definition of schema. The maximum length is 256 characters.
+         *
+         * @param string $objectType
+         */
+        public function setObjectType($objectType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Filter
+     * Runtime class alias of \Google\Service\CloudSearch\FilterOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
-    {
-    }
-    /**
-     * If object_type is set, only objects of that type are returned. This should
-     * correspond to the name of the object that was registered within the
-     * definition of schema. The maximum length is 256 characters.
-     *
-     * @param string $objectType
-     */
-    public function setObjectType($objectType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectType()
+    class Google_Service_CloudSearch_FilterOptions extends \Google\Service\CloudSearch\FilterOptions
     {
     }
 }

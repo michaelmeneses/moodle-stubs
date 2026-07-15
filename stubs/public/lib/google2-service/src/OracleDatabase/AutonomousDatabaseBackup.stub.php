@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class AutonomousDatabaseBackup extends \Google\Model
-{
-    /**
-     * Required. The name of the Autonomous Database resource for which the backup
-     * is being created. Format: projects/{project}/locations/{region}/autonomousD
-     * atabases/{autonomous_database}
-     *
-     * @var string
-     */
-    public $autonomousDatabase;
-    /**
-     * Optional. User friendly name for the Backup. The name does not have to be
-     * unique.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Optional. labels or tags associated with the resource.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Identifier. The name of the Autonomous Database Backup resource with the
-     * format: projects/{project}/locations/{region}/autonomousDatabaseBackups/{au
-     * tonomous_database_backup}
-     *
-     * @var string
-     */
-    public $name;
-    protected $propertiesType = AutonomousDatabaseBackupProperties::class;
-    protected $propertiesDataType = '';
-    /**
-     * Required. The name of the Autonomous Database resource for which the backup
-     * is being created. Format: projects/{project}/locations/{region}/autonomousD
-     * atabases/{autonomous_database}
-     *
-     * @param string $autonomousDatabase
-     */
-    public function setAutonomousDatabase($autonomousDatabase)
+namespace Google\Service\OracleDatabase {
+    class AutonomousDatabaseBackup extends \Google\Model
     {
+        /**
+         * Required. The name of the Autonomous Database resource for which the backup
+         * is being created. Format: projects/{project}/locations/{region}/autonomousD
+         * atabases/{autonomous_database}
+         *
+         * @var string
+         */
+        public $autonomousDatabase;
+        /**
+         * Optional. User friendly name for the Backup. The name does not have to be
+         * unique.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Optional. labels or tags associated with the resource.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Identifier. The name of the Autonomous Database Backup resource with the
+         * format: projects/{project}/locations/{region}/autonomousDatabaseBackups/{au
+         * tonomous_database_backup}
+         *
+         * @var string
+         */
+        public $name;
+        protected $propertiesType = AutonomousDatabaseBackupProperties::class;
+        protected $propertiesDataType = '';
+        /**
+         * Required. The name of the Autonomous Database resource for which the backup
+         * is being created. Format: projects/{project}/locations/{region}/autonomousD
+         * atabases/{autonomous_database}
+         *
+         * @param string $autonomousDatabase
+         */
+        public function setAutonomousDatabase($autonomousDatabase)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAutonomousDatabase()
+        {
+        }
+        /**
+         * Optional. User friendly name for the Backup. The name does not have to be
+         * unique.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Optional. labels or tags associated with the resource.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Identifier. The name of the Autonomous Database Backup resource with the
+         * format: projects/{project}/locations/{region}/autonomousDatabaseBackups/{au
+         * tonomous_database_backup}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Various properties of the backup.
+         *
+         * @param AutonomousDatabaseBackupProperties $properties
+         */
+        public function setProperties(AutonomousDatabaseBackupProperties $properties)
+        {
+        }
+        /**
+         * @return AutonomousDatabaseBackupProperties
+         */
+        public function getProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OracleDatabase\AutonomousDatabaseBackup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutonomousDatabase()
-    {
-    }
-    /**
-     * Optional. User friendly name for the Backup. The name does not have to be
-     * unique.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Optional. labels or tags associated with the resource.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Identifier. The name of the Autonomous Database Backup resource with the
-     * format: projects/{project}/locations/{region}/autonomousDatabaseBackups/{au
-     * tonomous_database_backup}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Various properties of the backup.
-     *
-     * @param AutonomousDatabaseBackupProperties $properties
-     */
-    public function setProperties(AutonomousDatabaseBackupProperties $properties)
-    {
-    }
-    /**
-     * @return AutonomousDatabaseBackupProperties
-     */
-    public function getProperties()
+    class Google_Service_OracleDatabase_AutonomousDatabaseBackup extends \Google\Service\OracleDatabase\AutonomousDatabaseBackup
     {
     }
 }

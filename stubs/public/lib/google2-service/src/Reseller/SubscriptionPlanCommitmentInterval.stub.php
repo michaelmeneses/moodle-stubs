@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reseller;
-
-class SubscriptionPlanCommitmentInterval extends \Google\Model
-{
-    /**
-     * An annual commitment plan's interval's `endTime` in milliseconds using the
-     * UNIX Epoch format. See an example Epoch converter.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * An annual commitment plan's interval's `startTime` in milliseconds using
-     * UNIX Epoch format. See an example Epoch converter.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * An annual commitment plan's interval's `endTime` in milliseconds using the
-     * UNIX Epoch format. See an example Epoch converter.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Reseller {
+    class SubscriptionPlanCommitmentInterval extends \Google\Model
     {
+        /**
+         * An annual commitment plan's interval's `endTime` in milliseconds using the
+         * UNIX Epoch format. See an example Epoch converter.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * An annual commitment plan's interval's `startTime` in milliseconds using
+         * UNIX Epoch format. See an example Epoch converter.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * An annual commitment plan's interval's `endTime` in milliseconds using the
+         * UNIX Epoch format. See an example Epoch converter.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * An annual commitment plan's interval's `startTime` in milliseconds using
+         * UNIX Epoch format. See an example Epoch converter.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Reseller\SubscriptionPlanCommitmentInterval registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * An annual commitment plan's interval's `startTime` in milliseconds using
-     * UNIX Epoch format. See an example Epoch converter.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Reseller_SubscriptionPlanCommitmentInterval extends \Google\Service\Reseller\SubscriptionPlanCommitmentInterval
     {
     }
 }

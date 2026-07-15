@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class ImportClusterRequest extends \Google\Model
-{
-    protected $csvImportOptionsType = CsvImportOptions::class;
-    protected $csvImportOptionsDataType = '';
-    /**
-     * Optional. Name of the database to which the import will be done. For import
-     * from SQL file, this is required only if the file does not specify a
-     * database. Note - Value provided should be the same as expected from `SELECT
-     * current_database();` and NOT as a resource reference.
-     *
-     * @var string
-     */
-    public $database;
-    /**
-     * Required. The path to the file in Google Cloud Storage where the source
-     * file for import will be stored. The URI is in the form
-     * `gs://bucketName/fileName`.
-     *
-     * @var string
-     */
-    public $gcsUri;
-    protected $sqlImportOptionsType = SqlImportOptions::class;
-    protected $sqlImportOptionsDataType = '';
-    /**
-     * Optional. Database user to be used for importing the data. Note - Value
-     * provided should be the same as expected from `SELECT current_user;` and NOT
-     * as a resource reference.
-     *
-     * @var string
-     */
-    public $user;
-    /**
-     * Options for importing data in CSV format.
-     *
-     * @param CsvImportOptions $csvImportOptions
-     */
-    public function setCsvImportOptions(CsvImportOptions $csvImportOptions)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class ImportClusterRequest extends \Google\Model
     {
+        protected $csvImportOptionsType = CsvImportOptions::class;
+        protected $csvImportOptionsDataType = '';
+        /**
+         * Optional. Name of the database to which the import will be done. For import
+         * from SQL file, this is required only if the file does not specify a
+         * database. Note - Value provided should be the same as expected from `SELECT
+         * current_database();` and NOT as a resource reference.
+         *
+         * @var string
+         */
+        public $database;
+        /**
+         * Required. The path to the file in Google Cloud Storage where the source
+         * file for import will be stored. The URI is in the form
+         * `gs://bucketName/fileName`.
+         *
+         * @var string
+         */
+        public $gcsUri;
+        protected $sqlImportOptionsType = SqlImportOptions::class;
+        protected $sqlImportOptionsDataType = '';
+        /**
+         * Optional. Database user to be used for importing the data. Note - Value
+         * provided should be the same as expected from `SELECT current_user;` and NOT
+         * as a resource reference.
+         *
+         * @var string
+         */
+        public $user;
+        /**
+         * Options for importing data in CSV format.
+         *
+         * @param CsvImportOptions $csvImportOptions
+         */
+        public function setCsvImportOptions(CsvImportOptions $csvImportOptions)
+        {
+        }
+        /**
+         * @return CsvImportOptions
+         */
+        public function getCsvImportOptions()
+        {
+        }
+        /**
+         * Optional. Name of the database to which the import will be done. For import
+         * from SQL file, this is required only if the file does not specify a
+         * database. Note - Value provided should be the same as expected from `SELECT
+         * current_database();` and NOT as a resource reference.
+         *
+         * @param string $database
+         */
+        public function setDatabase($database)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabase()
+        {
+        }
+        /**
+         * Required. The path to the file in Google Cloud Storage where the source
+         * file for import will be stored. The URI is in the form
+         * `gs://bucketName/fileName`.
+         *
+         * @param string $gcsUri
+         */
+        public function setGcsUri($gcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsUri()
+        {
+        }
+        /**
+         * Options for importing data in SQL format.
+         *
+         * @param SqlImportOptions $sqlImportOptions
+         */
+        public function setSqlImportOptions(SqlImportOptions $sqlImportOptions)
+        {
+        }
+        /**
+         * @return SqlImportOptions
+         */
+        public function getSqlImportOptions()
+        {
+        }
+        /**
+         * Optional. Database user to be used for importing the data. Note - Value
+         * provided should be the same as expected from `SELECT current_user;` and NOT
+         * as a resource reference.
+         *
+         * @param string $user
+         */
+        public function setUser($user)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CsvImportOptions
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\ImportClusterRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCsvImportOptions()
-    {
-    }
-    /**
-     * Optional. Name of the database to which the import will be done. For import
-     * from SQL file, this is required only if the file does not specify a
-     * database. Note - Value provided should be the same as expected from `SELECT
-     * current_database();` and NOT as a resource reference.
-     *
-     * @param string $database
-     */
-    public function setDatabase($database)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatabase()
-    {
-    }
-    /**
-     * Required. The path to the file in Google Cloud Storage where the source
-     * file for import will be stored. The URI is in the form
-     * `gs://bucketName/fileName`.
-     *
-     * @param string $gcsUri
-     */
-    public function setGcsUri($gcsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcsUri()
-    {
-    }
-    /**
-     * Options for importing data in SQL format.
-     *
-     * @param SqlImportOptions $sqlImportOptions
-     */
-    public function setSqlImportOptions(SqlImportOptions $sqlImportOptions)
-    {
-    }
-    /**
-     * @return SqlImportOptions
-     */
-    public function getSqlImportOptions()
-    {
-    }
-    /**
-     * Optional. Database user to be used for importing the data. Note - Value
-     * provided should be the same as expected from `SELECT current_user;` and NOT
-     * as a resource reference.
-     *
-     * @param string $user
-     */
-    public function setUser($user)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUser()
+    class Google_Service_CloudAlloyDBAdmin_ImportClusterRequest extends \Google\Service\CloudAlloyDBAdmin\ImportClusterRequest
     {
     }
 }

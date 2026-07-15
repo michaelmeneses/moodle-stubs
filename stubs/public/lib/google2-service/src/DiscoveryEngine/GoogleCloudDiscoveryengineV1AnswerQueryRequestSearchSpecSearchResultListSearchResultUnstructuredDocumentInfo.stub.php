@@ -21,123 +21,132 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfo extends \Google\Collection
-{
-    protected $collection_key = 'extractiveSegments';
-    /**
-     * Document resource name.
-     *
-     * @var string
-     */
-    public $document;
-    protected $documentContextsType = GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoDocumentContext::class;
-    protected $documentContextsDataType = 'array';
-    protected $extractiveAnswersType = GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoExtractiveAnswer::class;
-    protected $extractiveAnswersDataType = 'array';
-    protected $extractiveSegmentsType = GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoExtractiveSegment::class;
-    protected $extractiveSegmentsDataType = 'array';
-    /**
-     * Title.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * URI for the document.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Document resource name.
-     *
-     * @param string $document
-     */
-    public function setDocument($document)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfo extends \Google\Collection
     {
+        protected $collection_key = 'extractiveSegments';
+        /**
+         * Document resource name.
+         *
+         * @var string
+         */
+        public $document;
+        protected $documentContextsType = GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoDocumentContext::class;
+        protected $documentContextsDataType = 'array';
+        protected $extractiveAnswersType = GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoExtractiveAnswer::class;
+        protected $extractiveAnswersDataType = 'array';
+        protected $extractiveSegmentsType = GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoExtractiveSegment::class;
+        protected $extractiveSegmentsDataType = 'array';
+        /**
+         * Title.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * URI for the document.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Document resource name.
+         *
+         * @param string $document
+         */
+        public function setDocument($document)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * List of document contexts. The content will be used for Answer Generation.
+         * This is supposed to be the main content of the document that can be long
+         * and comprehensive.
+         *
+         * @param GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoDocumentContext[] $documentContexts
+         */
+        public function setDocumentContexts($documentContexts)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoDocumentContext[]
+         */
+        public function getDocumentContexts()
+        {
+        }
+        /**
+         * Deprecated: This field is deprecated and will have no effect on the Answer
+         * generation. Please use document_contexts and extractive_segments fields.
+         * List of extractive answers.
+         *
+         * @deprecated
+         * @param GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoExtractiveAnswer[] $extractiveAnswers
+         */
+        public function setExtractiveAnswers($extractiveAnswers)
+        {
+        }
+        /**
+         * @deprecated
+         * @return GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoExtractiveAnswer[]
+         */
+        public function getExtractiveAnswers()
+        {
+        }
+        /**
+         * List of extractive segments.
+         *
+         * @param GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoExtractiveSegment[] $extractiveSegments
+         */
+        public function setExtractiveSegments($extractiveSegments)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoExtractiveSegment[]
+         */
+        public function getExtractiveSegments()
+        {
+        }
+        /**
+         * Title.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * URI for the document.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocument()
-    {
-    }
-    /**
-     * List of document contexts. The content will be used for Answer Generation.
-     * This is supposed to be the main content of the document that can be long
-     * and comprehensive.
-     *
-     * @param GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoDocumentContext[] $documentContexts
-     */
-    public function setDocumentContexts($documentContexts)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoDocumentContext[]
-     */
-    public function getDocumentContexts()
-    {
-    }
-    /**
-     * Deprecated: This field is deprecated and will have no effect on the Answer
-     * generation. Please use document_contexts and extractive_segments fields.
-     * List of extractive answers.
-     *
-     * @deprecated
-     * @param GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoExtractiveAnswer[] $extractiveAnswers
-     */
-    public function setExtractiveAnswers($extractiveAnswers)
-    {
-    }
-    /**
-     * @deprecated
-     * @return GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoExtractiveAnswer[]
-     */
-    public function getExtractiveAnswers()
-    {
-    }
-    /**
-     * List of extractive segments.
-     *
-     * @param GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoExtractiveSegment[] $extractiveSegments
-     */
-    public function setExtractiveSegments($extractiveSegments)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoExtractiveSegment[]
-     */
-    public function getExtractiveSegments()
-    {
-    }
-    /**
-     * Title.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * URI for the document.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfo
     {
     }
 }

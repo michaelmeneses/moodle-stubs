@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sasportal;
-
-class SasPortalSetupSasAnalyticsRequest extends \Google\Model
-{
-    /**
-     * Optional. User id to setup analytics for, if not provided the user id
-     * associated with the project is used. optional
-     *
-     * @var string
-     */
-    public $userId;
-    /**
-     * Optional. User id to setup analytics for, if not provided the user id
-     * associated with the project is used. optional
-     *
-     * @param string $userId
-     */
-    public function setUserId($userId)
+namespace Google\Service\Sasportal {
+    class SasPortalSetupSasAnalyticsRequest extends \Google\Model
     {
+        /**
+         * Optional. User id to setup analytics for, if not provided the user id
+         * associated with the project is used. optional
+         *
+         * @var string
+         */
+        public $userId;
+        /**
+         * Optional. User id to setup analytics for, if not provided the user id
+         * associated with the project is used. optional
+         *
+         * @param string $userId
+         */
+        public function setUserId($userId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sasportal\SasPortalSetupSasAnalyticsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUserId()
+    class Google_Service_Sasportal_SasPortalSetupSasAnalyticsRequest extends \Google\Service\Sasportal\SasPortalSetupSasAnalyticsRequest
     {
     }
 }

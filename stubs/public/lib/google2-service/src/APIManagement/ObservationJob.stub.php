@@ -21,146 +21,155 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIManagement;
-
-class ObservationJob extends \Google\Collection
-{
-    /**
-     * Unspecified state
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Job is in the creating state
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * Job is in the enabling state
-     */
-    public const STATE_ENABLING = 'ENABLING';
-    /**
-     * Job is enabled
-     */
-    public const STATE_ENABLED = 'ENABLED';
-    /**
-     * Job is in the disabling state
-     */
-    public const STATE_DISABLING = 'DISABLING';
-    /**
-     * Job is disabled
-     */
-    public const STATE_DISABLED = 'DISABLED';
-    /**
-     * Job is being deleted
-     */
-    public const STATE_DELETING = 'DELETING';
-    /**
-     * Job is in an error state
-     */
-    public const STATE_ERROR = 'ERROR';
-    protected $collection_key = 'sources';
-    /**
-     * Output only. [Output only] Create time stamp
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Identifier. name of resource Format:
-     * projects/{project}/locations/{location}/observationJobs/{observation_job}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. These should be of the same kind of source.
-     *
-     * @var string[]
-     */
-    public $sources;
-    /**
-     * Output only. The observation job state
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. [Output only] Update time stamp
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. [Output only] Create time stamp
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\APIManagement {
+    class ObservationJob extends \Google\Collection
     {
+        /**
+         * Unspecified state
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Job is in the creating state
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * Job is in the enabling state
+         */
+        public const STATE_ENABLING = 'ENABLING';
+        /**
+         * Job is enabled
+         */
+        public const STATE_ENABLED = 'ENABLED';
+        /**
+         * Job is in the disabling state
+         */
+        public const STATE_DISABLING = 'DISABLING';
+        /**
+         * Job is disabled
+         */
+        public const STATE_DISABLED = 'DISABLED';
+        /**
+         * Job is being deleted
+         */
+        public const STATE_DELETING = 'DELETING';
+        /**
+         * Job is in an error state
+         */
+        public const STATE_ERROR = 'ERROR';
+        protected $collection_key = 'sources';
+        /**
+         * Output only. [Output only] Create time stamp
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Identifier. name of resource Format:
+         * projects/{project}/locations/{location}/observationJobs/{observation_job}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. These should be of the same kind of source.
+         *
+         * @var string[]
+         */
+        public $sources;
+        /**
+         * Output only. The observation job state
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. [Output only] Update time stamp
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. [Output only] Create time stamp
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Identifier. name of resource Format:
+         * projects/{project}/locations/{location}/observationJobs/{observation_job}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. These should be of the same kind of source.
+         *
+         * @param string[] $sources
+         */
+        public function setSources($sources)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSources()
+        {
+        }
+        /**
+         * Output only. The observation job state
+         *
+         * Accepted values: STATE_UNSPECIFIED, CREATING, ENABLING, ENABLED, DISABLING,
+         * DISABLED, DELETING, ERROR
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. [Output only] Update time stamp
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIManagement\ObservationJob registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Identifier. name of resource Format:
-     * projects/{project}/locations/{location}/observationJobs/{observation_job}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. These should be of the same kind of source.
-     *
-     * @param string[] $sources
-     */
-    public function setSources($sources)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSources()
-    {
-    }
-    /**
-     * Output only. The observation job state
-     *
-     * Accepted values: STATE_UNSPECIFIED, CREATING, ENABLING, ENABLED, DISABLING,
-     * DISABLED, DELETING, ERROR
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. [Output only] Update time stamp
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_APIManagement_ObservationJob extends \Google\Service\APIManagement\ObservationJob
     {
     }
 }

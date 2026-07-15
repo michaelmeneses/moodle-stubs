@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class GKEMasterInfo extends \Google\Model
-{
-    /**
-     * URI of a GKE cluster network.
-     *
-     * @var string
-     */
-    public $clusterNetworkUri;
-    /**
-     * URI of a GKE cluster.
-     *
-     * @var string
-     */
-    public $clusterUri;
-    /**
-     * DNS endpoint of a GKE cluster control plane.
-     *
-     * @var string
-     */
-    public $dnsEndpoint;
-    /**
-     * External IP address of a GKE cluster control plane.
-     *
-     * @var string
-     */
-    public $externalIp;
-    /**
-     * Internal IP address of a GKE cluster control plane.
-     *
-     * @var string
-     */
-    public $internalIp;
-    /**
-     * URI of a GKE cluster network.
-     *
-     * @param string $clusterNetworkUri
-     */
-    public function setClusterNetworkUri($clusterNetworkUri)
+namespace Google\Service\NetworkManagement {
+    class GKEMasterInfo extends \Google\Model
     {
+        /**
+         * URI of a GKE cluster network.
+         *
+         * @var string
+         */
+        public $clusterNetworkUri;
+        /**
+         * URI of a GKE cluster.
+         *
+         * @var string
+         */
+        public $clusterUri;
+        /**
+         * DNS endpoint of a GKE cluster control plane.
+         *
+         * @var string
+         */
+        public $dnsEndpoint;
+        /**
+         * External IP address of a GKE cluster control plane.
+         *
+         * @var string
+         */
+        public $externalIp;
+        /**
+         * Internal IP address of a GKE cluster control plane.
+         *
+         * @var string
+         */
+        public $internalIp;
+        /**
+         * URI of a GKE cluster network.
+         *
+         * @param string $clusterNetworkUri
+         */
+        public function setClusterNetworkUri($clusterNetworkUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterNetworkUri()
+        {
+        }
+        /**
+         * URI of a GKE cluster.
+         *
+         * @param string $clusterUri
+         */
+        public function setClusterUri($clusterUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterUri()
+        {
+        }
+        /**
+         * DNS endpoint of a GKE cluster control plane.
+         *
+         * @param string $dnsEndpoint
+         */
+        public function setDnsEndpoint($dnsEndpoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDnsEndpoint()
+        {
+        }
+        /**
+         * External IP address of a GKE cluster control plane.
+         *
+         * @param string $externalIp
+         */
+        public function setExternalIp($externalIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternalIp()
+        {
+        }
+        /**
+         * Internal IP address of a GKE cluster control plane.
+         *
+         * @param string $internalIp
+         */
+        public function setInternalIp($internalIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInternalIp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\GKEMasterInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterNetworkUri()
-    {
-    }
-    /**
-     * URI of a GKE cluster.
-     *
-     * @param string $clusterUri
-     */
-    public function setClusterUri($clusterUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClusterUri()
-    {
-    }
-    /**
-     * DNS endpoint of a GKE cluster control plane.
-     *
-     * @param string $dnsEndpoint
-     */
-    public function setDnsEndpoint($dnsEndpoint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDnsEndpoint()
-    {
-    }
-    /**
-     * External IP address of a GKE cluster control plane.
-     *
-     * @param string $externalIp
-     */
-    public function setExternalIp($externalIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExternalIp()
-    {
-    }
-    /**
-     * Internal IP address of a GKE cluster control plane.
-     *
-     * @param string $internalIp
-     */
-    public function setInternalIp($internalIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInternalIp()
+    class Google_Service_NetworkManagement_GKEMasterInfo extends \Google\Service\NetworkManagement\GKEMasterInfo
     {
     }
 }

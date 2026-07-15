@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class OSPolicyResource extends \Google\Model
-{
-    protected $execType = OSPolicyResourceExecResource::class;
-    protected $execDataType = '';
-    protected $fileType = OSPolicyResourceFileResource::class;
-    protected $fileDataType = '';
-    /**
-     * Required. The id of the resource with the following restrictions: * Must
-     * contain only lowercase letters, numbers, and hyphens. * Must start with a
-     * letter. * Must be between 1-63 characters. * Must end with a number or a
-     * letter. * Must be unique within the OS policy.
-     *
-     * @var string
-     */
-    public $id;
-    protected $pkgType = OSPolicyResourcePackageResource::class;
-    protected $pkgDataType = '';
-    protected $repositoryType = OSPolicyResourceRepositoryResource::class;
-    protected $repositoryDataType = '';
-    /**
-     * Exec resource
-     *
-     * @param OSPolicyResourceExecResource $exec
-     */
-    public function setExec(OSPolicyResourceExecResource $exec)
+namespace Google\Service\OSConfig {
+    class OSPolicyResource extends \Google\Model
     {
+        protected $execType = OSPolicyResourceExecResource::class;
+        protected $execDataType = '';
+        protected $fileType = OSPolicyResourceFileResource::class;
+        protected $fileDataType = '';
+        /**
+         * Required. The id of the resource with the following restrictions: * Must
+         * contain only lowercase letters, numbers, and hyphens. * Must start with a
+         * letter. * Must be between 1-63 characters. * Must end with a number or a
+         * letter. * Must be unique within the OS policy.
+         *
+         * @var string
+         */
+        public $id;
+        protected $pkgType = OSPolicyResourcePackageResource::class;
+        protected $pkgDataType = '';
+        protected $repositoryType = OSPolicyResourceRepositoryResource::class;
+        protected $repositoryDataType = '';
+        /**
+         * Exec resource
+         *
+         * @param OSPolicyResourceExecResource $exec
+         */
+        public function setExec(OSPolicyResourceExecResource $exec)
+        {
+        }
+        /**
+         * @return OSPolicyResourceExecResource
+         */
+        public function getExec()
+        {
+        }
+        /**
+         * File resource
+         *
+         * @param OSPolicyResourceFileResource $file
+         */
+        public function setFile(OSPolicyResourceFileResource $file)
+        {
+        }
+        /**
+         * @return OSPolicyResourceFileResource
+         */
+        public function getFile()
+        {
+        }
+        /**
+         * Required. The id of the resource with the following restrictions: * Must
+         * contain only lowercase letters, numbers, and hyphens. * Must start with a
+         * letter. * Must be between 1-63 characters. * Must end with a number or a
+         * letter. * Must be unique within the OS policy.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Package resource
+         *
+         * @param OSPolicyResourcePackageResource $pkg
+         */
+        public function setPkg(OSPolicyResourcePackageResource $pkg)
+        {
+        }
+        /**
+         * @return OSPolicyResourcePackageResource
+         */
+        public function getPkg()
+        {
+        }
+        /**
+         * Package repository resource
+         *
+         * @param OSPolicyResourceRepositoryResource $repository
+         */
+        public function setRepository(OSPolicyResourceRepositoryResource $repository)
+        {
+        }
+        /**
+         * @return OSPolicyResourceRepositoryResource
+         */
+        public function getRepository()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OSPolicyResourceExecResource
+     * Runtime class alias of \Google\Service\OSConfig\OSPolicyResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExec()
-    {
-    }
-    /**
-     * File resource
-     *
-     * @param OSPolicyResourceFileResource $file
-     */
-    public function setFile(OSPolicyResourceFileResource $file)
-    {
-    }
-    /**
-     * @return OSPolicyResourceFileResource
-     */
-    public function getFile()
-    {
-    }
-    /**
-     * Required. The id of the resource with the following restrictions: * Must
-     * contain only lowercase letters, numbers, and hyphens. * Must start with a
-     * letter. * Must be between 1-63 characters. * Must end with a number or a
-     * letter. * Must be unique within the OS policy.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Package resource
-     *
-     * @param OSPolicyResourcePackageResource $pkg
-     */
-    public function setPkg(OSPolicyResourcePackageResource $pkg)
-    {
-    }
-    /**
-     * @return OSPolicyResourcePackageResource
-     */
-    public function getPkg()
-    {
-    }
-    /**
-     * Package repository resource
-     *
-     * @param OSPolicyResourceRepositoryResource $repository
-     */
-    public function setRepository(OSPolicyResourceRepositoryResource $repository)
-    {
-    }
-    /**
-     * @return OSPolicyResourceRepositoryResource
-     */
-    public function getRepository()
+    class Google_Service_OSConfig_OSPolicyResource extends \Google\Service\OSConfig\OSPolicyResource
     {
     }
 }

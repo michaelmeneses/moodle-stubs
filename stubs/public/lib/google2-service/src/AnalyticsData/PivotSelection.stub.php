@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class PivotSelection extends \Google\Model
-{
-    /**
-     * Must be a dimension name from the request.
-     *
-     * @var string
-     */
-    public $dimensionName;
-    /**
-     * Order by only when the named dimension is this value.
-     *
-     * @var string
-     */
-    public $dimensionValue;
-    /**
-     * Must be a dimension name from the request.
-     *
-     * @param string $dimensionName
-     */
-    public function setDimensionName($dimensionName)
+namespace Google\Service\AnalyticsData {
+    class PivotSelection extends \Google\Model
     {
+        /**
+         * Must be a dimension name from the request.
+         *
+         * @var string
+         */
+        public $dimensionName;
+        /**
+         * Order by only when the named dimension is this value.
+         *
+         * @var string
+         */
+        public $dimensionValue;
+        /**
+         * Must be a dimension name from the request.
+         *
+         * @param string $dimensionName
+         */
+        public function setDimensionName($dimensionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDimensionName()
+        {
+        }
+        /**
+         * Order by only when the named dimension is this value.
+         *
+         * @param string $dimensionValue
+         */
+        public function setDimensionValue($dimensionValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDimensionValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsData\PivotSelection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionName()
-    {
-    }
-    /**
-     * Order by only when the named dimension is this value.
-     *
-     * @param string $dimensionValue
-     */
-    public function setDimensionValue($dimensionValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDimensionValue()
+    class Google_Service_AnalyticsData_PivotSelection extends \Google\Service\AnalyticsData\PivotSelection
     {
     }
 }

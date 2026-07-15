@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class MobileAppsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'mobileApps';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#mobileAppsListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $mobileAppsType = MobileApp::class;
-    protected $mobileAppsDataType = 'array';
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#mobileAppsListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class MobileAppsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'mobileApps';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#mobileAppsListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $mobileAppsType = MobileApp::class;
+        protected $mobileAppsDataType = 'array';
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#mobileAppsListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Mobile apps collection.
+         *
+         * @param MobileApp[] $mobileApps
+         */
+        public function setMobileApps($mobileApps)
+        {
+        }
+        /**
+         * @return MobileApp[]
+         */
+        public function getMobileApps()
+        {
+        }
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\MobileAppsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Mobile apps collection.
-     *
-     * @param MobileApp[] $mobileApps
-     */
-    public function setMobileApps($mobileApps)
-    {
-    }
-    /**
-     * @return MobileApp[]
-     */
-    public function getMobileApps()
-    {
-    }
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dfareporting_MobileAppsListResponse extends \Google\Service\Dfareporting\MobileAppsListResponse
     {
     }
 }

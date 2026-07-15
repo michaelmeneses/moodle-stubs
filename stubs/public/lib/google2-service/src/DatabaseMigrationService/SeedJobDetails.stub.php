@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class SeedJobDetails extends \Google\Model
-{
-    /**
-     * Output only. The connection profile which was used for the seed job.
-     *
-     * @var string
-     */
-    public $connectionProfile;
-    /**
-     * Output only. The connection profile which was used for the seed job.
-     *
-     * @param string $connectionProfile
-     */
-    public function setConnectionProfile($connectionProfile)
+namespace Google\Service\DatabaseMigrationService {
+    class SeedJobDetails extends \Google\Model
     {
+        /**
+         * Output only. The connection profile which was used for the seed job.
+         *
+         * @var string
+         */
+        public $connectionProfile;
+        /**
+         * Output only. The connection profile which was used for the seed job.
+         *
+         * @param string $connectionProfile
+         */
+        public function setConnectionProfile($connectionProfile)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConnectionProfile()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\SeedJobDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectionProfile()
+    class Google_Service_DatabaseMigrationService_SeedJobDetails extends \Google\Service\DatabaseMigrationService\SeedJobDetails
     {
     }
 }

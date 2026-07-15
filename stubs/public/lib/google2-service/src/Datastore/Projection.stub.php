@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class Projection extends \Google\Model
-{
-    protected $propertyType = PropertyReference::class;
-    protected $propertyDataType = '';
-    /**
-     * The property to project.
-     *
-     * @param PropertyReference $property
-     */
-    public function setProperty(PropertyReference $property)
+namespace Google\Service\Datastore {
+    class Projection extends \Google\Model
     {
+        protected $propertyType = PropertyReference::class;
+        protected $propertyDataType = '';
+        /**
+         * The property to project.
+         *
+         * @param PropertyReference $property
+         */
+        public function setProperty(PropertyReference $property)
+        {
+        }
+        /**
+         * @return PropertyReference
+         */
+        public function getProperty()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PropertyReference
+     * Runtime class alias of \Google\Service\Datastore\Projection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProperty()
+    class Google_Service_Datastore_Projection extends \Google\Service\Datastore\Projection
     {
     }
 }

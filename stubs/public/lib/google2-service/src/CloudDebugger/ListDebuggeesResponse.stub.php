@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDebugger;
-
-class ListDebuggeesResponse extends \Google\Collection
-{
-    protected $collection_key = 'debuggees';
-    protected $debuggeesType = Debuggee::class;
-    protected $debuggeesDataType = 'array';
-    /**
-     * @param Debuggee[]
-     */
-    public function setDebuggees($debuggees)
+namespace Google\Service\CloudDebugger {
+    class ListDebuggeesResponse extends \Google\Collection
     {
+        protected $collection_key = 'debuggees';
+        protected $debuggeesType = Debuggee::class;
+        protected $debuggeesDataType = 'array';
+        /**
+         * @param Debuggee[]
+         */
+        public function setDebuggees($debuggees)
+        {
+        }
+        /**
+         * @return Debuggee[]
+         */
+        public function getDebuggees()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Debuggee[]
+     * Runtime class alias of \Google\Service\CloudDebugger\ListDebuggeesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDebuggees()
+    class Google_Service_CloudDebugger_ListDebuggeesResponse extends \Google\Service\CloudDebugger\ListDebuggeesResponse
     {
     }
 }

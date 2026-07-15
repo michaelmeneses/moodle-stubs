@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RegionNetworkFirewallPoliciesGetEffectiveFirewallsResponse extends \Google\Collection
-{
-    protected $collection_key = 'firewalls';
-    protected $firewallPolicysType = RegionNetworkFirewallPoliciesGetEffectiveFirewallsResponseEffectiveFirewallPolicy::class;
-    protected $firewallPolicysDataType = 'array';
-    protected $firewallsType = Firewall::class;
-    protected $firewallsDataType = 'array';
-    /**
-     * Output only. [Output only] Effective firewalls from firewall policy. It
-     * applies to Regional Network Firewall Policies in the specified region,
-     * Global Network Firewall Policies and Hierachial Firewall Policies which are
-     * associated with the network.
-     *
-     * @param RegionNetworkFirewallPoliciesGetEffectiveFirewallsResponseEffectiveFirewallPolicy[] $firewallPolicys
-     */
-    public function setFirewallPolicys($firewallPolicys)
+namespace Google\Service\Compute {
+    class RegionNetworkFirewallPoliciesGetEffectiveFirewallsResponse extends \Google\Collection
     {
+        protected $collection_key = 'firewalls';
+        protected $firewallPolicysType = RegionNetworkFirewallPoliciesGetEffectiveFirewallsResponseEffectiveFirewallPolicy::class;
+        protected $firewallPolicysDataType = 'array';
+        protected $firewallsType = Firewall::class;
+        protected $firewallsDataType = 'array';
+        /**
+         * Output only. [Output only] Effective firewalls from firewall policy. It
+         * applies to Regional Network Firewall Policies in the specified region,
+         * Global Network Firewall Policies and Hierachial Firewall Policies which are
+         * associated with the network.
+         *
+         * @param RegionNetworkFirewallPoliciesGetEffectiveFirewallsResponseEffectiveFirewallPolicy[] $firewallPolicys
+         */
+        public function setFirewallPolicys($firewallPolicys)
+        {
+        }
+        /**
+         * @return RegionNetworkFirewallPoliciesGetEffectiveFirewallsResponseEffectiveFirewallPolicy[]
+         */
+        public function getFirewallPolicys()
+        {
+        }
+        /**
+         * Effective firewalls on the network.
+         *
+         * @param Firewall[] $firewalls
+         */
+        public function setFirewalls($firewalls)
+        {
+        }
+        /**
+         * @return Firewall[]
+         */
+        public function getFirewalls()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RegionNetworkFirewallPoliciesGetEffectiveFirewallsResponseEffectiveFirewallPolicy[]
+     * Runtime class alias of \Google\Service\Compute\RegionNetworkFirewallPoliciesGetEffectiveFirewallsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirewallPolicys()
-    {
-    }
-    /**
-     * Effective firewalls on the network.
-     *
-     * @param Firewall[] $firewalls
-     */
-    public function setFirewalls($firewalls)
-    {
-    }
-    /**
-     * @return Firewall[]
-     */
-    public function getFirewalls()
+    class Google_Service_Compute_RegionNetworkFirewallPoliciesGetEffectiveFirewallsResponse extends \Google\Service\Compute\RegionNetworkFirewallPoliciesGetEffectiveFirewallsResponse
     {
     }
 }

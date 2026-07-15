@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataQualityRuleRangeExpectation extends \Google\Model
-{
-    /**
-     * Optional. The maximum column value allowed for a row to pass this
-     * validation. At least one of min_value and max_value need to be provided.
-     *
-     * @var string
-     */
-    public $maxValue;
-    /**
-     * Optional. The minimum column value allowed for a row to pass this
-     * validation. At least one of min_value and max_value need to be provided.
-     *
-     * @var string
-     */
-    public $minValue;
-    /**
-     * Optional. Whether each value needs to be strictly lesser than ('<') the
-     * maximum, or if equality is allowed.Only relevant if a max_value has been
-     * defined. Default = false.
-     *
-     * @var bool
-     */
-    public $strictMaxEnabled;
-    /**
-     * Optional. Whether each value needs to be strictly greater than ('>') the
-     * minimum, or if equality is allowed.Only relevant if a min_value has been
-     * defined. Default = false.
-     *
-     * @var bool
-     */
-    public $strictMinEnabled;
-    /**
-     * Optional. The maximum column value allowed for a row to pass this
-     * validation. At least one of min_value and max_value need to be provided.
-     *
-     * @param string $maxValue
-     */
-    public function setMaxValue($maxValue)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataQualityRuleRangeExpectation extends \Google\Model
     {
+        /**
+         * Optional. The maximum column value allowed for a row to pass this
+         * validation. At least one of min_value and max_value need to be provided.
+         *
+         * @var string
+         */
+        public $maxValue;
+        /**
+         * Optional. The minimum column value allowed for a row to pass this
+         * validation. At least one of min_value and max_value need to be provided.
+         *
+         * @var string
+         */
+        public $minValue;
+        /**
+         * Optional. Whether each value needs to be strictly lesser than ('<') the
+         * maximum, or if equality is allowed.Only relevant if a max_value has been
+         * defined. Default = false.
+         *
+         * @var bool
+         */
+        public $strictMaxEnabled;
+        /**
+         * Optional. Whether each value needs to be strictly greater than ('>') the
+         * minimum, or if equality is allowed.Only relevant if a min_value has been
+         * defined. Default = false.
+         *
+         * @var bool
+         */
+        public $strictMinEnabled;
+        /**
+         * Optional. The maximum column value allowed for a row to pass this
+         * validation. At least one of min_value and max_value need to be provided.
+         *
+         * @param string $maxValue
+         */
+        public function setMaxValue($maxValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxValue()
+        {
+        }
+        /**
+         * Optional. The minimum column value allowed for a row to pass this
+         * validation. At least one of min_value and max_value need to be provided.
+         *
+         * @param string $minValue
+         */
+        public function setMinValue($minValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinValue()
+        {
+        }
+        /**
+         * Optional. Whether each value needs to be strictly lesser than ('<') the
+         * maximum, or if equality is allowed.Only relevant if a max_value has been
+         * defined. Default = false.
+         *
+         * @param bool $strictMaxEnabled
+         */
+        public function setStrictMaxEnabled($strictMaxEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStrictMaxEnabled()
+        {
+        }
+        /**
+         * Optional. Whether each value needs to be strictly greater than ('>') the
+         * minimum, or if equality is allowed.Only relevant if a min_value has been
+         * defined. Default = false.
+         *
+         * @param bool $strictMinEnabled
+         */
+        public function setStrictMinEnabled($strictMinEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStrictMinEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualityRuleRangeExpectation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxValue()
-    {
-    }
-    /**
-     * Optional. The minimum column value allowed for a row to pass this
-     * validation. At least one of min_value and max_value need to be provided.
-     *
-     * @param string $minValue
-     */
-    public function setMinValue($minValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinValue()
-    {
-    }
-    /**
-     * Optional. Whether each value needs to be strictly lesser than ('<') the
-     * maximum, or if equality is allowed.Only relevant if a max_value has been
-     * defined. Default = false.
-     *
-     * @param bool $strictMaxEnabled
-     */
-    public function setStrictMaxEnabled($strictMaxEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getStrictMaxEnabled()
-    {
-    }
-    /**
-     * Optional. Whether each value needs to be strictly greater than ('>') the
-     * minimum, or if equality is allowed.Only relevant if a min_value has been
-     * defined. Default = false.
-     *
-     * @param bool $strictMinEnabled
-     */
-    public function setStrictMinEnabled($strictMinEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getStrictMinEnabled()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataQualityRuleRangeExpectation extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualityRuleRangeExpectation
     {
     }
 }

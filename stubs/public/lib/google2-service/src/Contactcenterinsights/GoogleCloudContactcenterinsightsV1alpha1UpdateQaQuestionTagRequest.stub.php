@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1UpdateQaQuestionTagRequest extends \Google\Model
-{
-    protected $qaQuestionTagType = GoogleCloudContactcenterinsightsV1alpha1QaQuestionTag::class;
-    protected $qaQuestionTagDataType = '';
-    /**
-     * Optional. The list of fields to be updated. All possible fields can be
-     * updated by passing `*`, or a subset of the following updateable fields can
-     * be provided: * `qa_question_tag_name` - the name of the tag *
-     * `qa_question_ids` - the list of questions the tag applies to
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. The QaQuestionTag to update.
-     *
-     * @param GoogleCloudContactcenterinsightsV1alpha1QaQuestionTag $qaQuestionTag
-     */
-    public function setQaQuestionTag(GoogleCloudContactcenterinsightsV1alpha1QaQuestionTag $qaQuestionTag)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1UpdateQaQuestionTagRequest extends \Google\Model
     {
+        protected $qaQuestionTagType = GoogleCloudContactcenterinsightsV1alpha1QaQuestionTag::class;
+        protected $qaQuestionTagDataType = '';
+        /**
+         * Optional. The list of fields to be updated. All possible fields can be
+         * updated by passing `*`, or a subset of the following updateable fields can
+         * be provided: * `qa_question_tag_name` - the name of the tag *
+         * `qa_question_ids` - the list of questions the tag applies to
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. The QaQuestionTag to update.
+         *
+         * @param GoogleCloudContactcenterinsightsV1alpha1QaQuestionTag $qaQuestionTag
+         */
+        public function setQaQuestionTag(GoogleCloudContactcenterinsightsV1alpha1QaQuestionTag $qaQuestionTag)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1QaQuestionTag
+         */
+        public function getQaQuestionTag()
+        {
+        }
+        /**
+         * Optional. The list of fields to be updated. All possible fields can be
+         * updated by passing `*`, or a subset of the following updateable fields can
+         * be provided: * `qa_question_tag_name` - the name of the tag *
+         * `qa_question_ids` - the list of questions the tag applies to
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1QaQuestionTag
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1UpdateQaQuestionTagRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQaQuestionTag()
-    {
-    }
-    /**
-     * Optional. The list of fields to be updated. All possible fields can be
-     * updated by passing `*`, or a subset of the following updateable fields can
-     * be provided: * `qa_question_tag_name` - the name of the tag *
-     * `qa_question_ids` - the list of questions the tag applies to
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1UpdateQaQuestionTagRequest extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1UpdateQaQuestionTagRequest
     {
     }
 }

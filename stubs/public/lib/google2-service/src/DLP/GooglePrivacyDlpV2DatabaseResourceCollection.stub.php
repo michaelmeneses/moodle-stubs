@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DatabaseResourceCollection extends \Google\Model
-{
-    protected $includeRegexesType = GooglePrivacyDlpV2DatabaseResourceRegexes::class;
-    protected $includeRegexesDataType = '';
-    /**
-     * A collection of regular expressions to match a database resource against.
-     *
-     * @param GooglePrivacyDlpV2DatabaseResourceRegexes $includeRegexes
-     */
-    public function setIncludeRegexes(GooglePrivacyDlpV2DatabaseResourceRegexes $includeRegexes)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DatabaseResourceCollection extends \Google\Model
     {
+        protected $includeRegexesType = GooglePrivacyDlpV2DatabaseResourceRegexes::class;
+        protected $includeRegexesDataType = '';
+        /**
+         * A collection of regular expressions to match a database resource against.
+         *
+         * @param GooglePrivacyDlpV2DatabaseResourceRegexes $includeRegexes
+         */
+        public function setIncludeRegexes(GooglePrivacyDlpV2DatabaseResourceRegexes $includeRegexes)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DatabaseResourceRegexes
+         */
+        public function getIncludeRegexes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2DatabaseResourceRegexes
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DatabaseResourceCollection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludeRegexes()
+    class Google_Service_DLP_GooglePrivacyDlpV2DatabaseResourceCollection extends \Google\Service\DLP\GooglePrivacyDlpV2DatabaseResourceCollection
     {
     }
 }

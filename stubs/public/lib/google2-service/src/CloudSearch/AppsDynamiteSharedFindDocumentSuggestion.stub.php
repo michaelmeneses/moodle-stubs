@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedFindDocumentSuggestion extends \Google\Collection
-{
-    protected $collection_key = 'documentSuggestions';
-    protected $documentSuggestionsType = AppsDynamiteSharedDocument::class;
-    protected $documentSuggestionsDataType = 'array';
-    /**
-     * @var bool
-     */
-    public $showActionButtons;
-    /**
-     * @param AppsDynamiteSharedDocument[]
-     */
-    public function setDocumentSuggestions($documentSuggestions)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedFindDocumentSuggestion extends \Google\Collection
     {
+        protected $collection_key = 'documentSuggestions';
+        protected $documentSuggestionsType = AppsDynamiteSharedDocument::class;
+        protected $documentSuggestionsDataType = 'array';
+        /**
+         * @var bool
+         */
+        public $showActionButtons;
+        /**
+         * @param AppsDynamiteSharedDocument[]
+         */
+        public function setDocumentSuggestions($documentSuggestions)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedDocument[]
+         */
+        public function getDocumentSuggestions()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setShowActionButtons($showActionButtons)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getShowActionButtons()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedDocument[]
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedFindDocumentSuggestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentSuggestions()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setShowActionButtons($showActionButtons)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getShowActionButtons()
+    class Google_Service_CloudSearch_AppsDynamiteSharedFindDocumentSuggestion extends \Google\Service\CloudSearch\AppsDynamiteSharedFindDocumentSuggestion
     {
     }
 }

@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1IntentPayload extends \Google\Model
-{
-    protected $createIntentType = GoogleCloudPaymentsResellerSubscriptionV1CreateSubscriptionIntent::class;
-    protected $createIntentDataType = '';
-    protected $entitleIntentType = GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionIntent::class;
-    protected $entitleIntentDataType = '';
-    /**
-     * @param GoogleCloudPaymentsResellerSubscriptionV1CreateSubscriptionIntent
-     */
-    public function setCreateIntent(GoogleCloudPaymentsResellerSubscriptionV1CreateSubscriptionIntent $createIntent)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1IntentPayload extends \Google\Model
     {
+        protected $createIntentType = GoogleCloudPaymentsResellerSubscriptionV1CreateSubscriptionIntent::class;
+        protected $createIntentDataType = '';
+        protected $entitleIntentType = GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionIntent::class;
+        protected $entitleIntentDataType = '';
+        /**
+         * @param GoogleCloudPaymentsResellerSubscriptionV1CreateSubscriptionIntent
+         */
+        public function setCreateIntent(GoogleCloudPaymentsResellerSubscriptionV1CreateSubscriptionIntent $createIntent)
+        {
+        }
+        /**
+         * @return GoogleCloudPaymentsResellerSubscriptionV1CreateSubscriptionIntent
+         */
+        public function getCreateIntent()
+        {
+        }
+        /**
+         * @param GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionIntent
+         */
+        public function setEntitleIntent(GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionIntent $entitleIntent)
+        {
+        }
+        /**
+         * @return GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionIntent
+         */
+        public function getEntitleIntent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudPaymentsResellerSubscriptionV1CreateSubscriptionIntent
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1IntentPayload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateIntent()
-    {
-    }
-    /**
-     * @param GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionIntent
-     */
-    public function setEntitleIntent(GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionIntent $entitleIntent)
-    {
-    }
-    /**
-     * @return GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionIntent
-     */
-    public function getEntitleIntent()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1IntentPayload extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1IntentPayload
     {
     }
 }

@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1LockDocumentRequest extends \Google\Model
-{
-    /**
-     * The collection the document connects to.
-     *
-     * @var string
-     */
-    public $collectionId;
-    protected $lockingUserType = GoogleCloudContentwarehouseV1UserInfo::class;
-    protected $lockingUserDataType = '';
-    /**
-     * The collection the document connects to.
-     *
-     * @param string $collectionId
-     */
-    public function setCollectionId($collectionId)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1LockDocumentRequest extends \Google\Model
     {
+        /**
+         * The collection the document connects to.
+         *
+         * @var string
+         */
+        public $collectionId;
+        protected $lockingUserType = GoogleCloudContentwarehouseV1UserInfo::class;
+        protected $lockingUserDataType = '';
+        /**
+         * The collection the document connects to.
+         *
+         * @param string $collectionId
+         */
+        public function setCollectionId($collectionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCollectionId()
+        {
+        }
+        /**
+         * The user information who locks the document.
+         *
+         * @param GoogleCloudContentwarehouseV1UserInfo $lockingUser
+         */
+        public function setLockingUser(GoogleCloudContentwarehouseV1UserInfo $lockingUser)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1UserInfo
+         */
+        public function getLockingUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1LockDocumentRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCollectionId()
-    {
-    }
-    /**
-     * The user information who locks the document.
-     *
-     * @param GoogleCloudContentwarehouseV1UserInfo $lockingUser
-     */
-    public function setLockingUser(GoogleCloudContentwarehouseV1UserInfo $lockingUser)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1UserInfo
-     */
-    public function getLockingUser()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1LockDocumentRequest extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1LockDocumentRequest
     {
     }
 }

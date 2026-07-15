@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ChunkDocumentMetadata extends \Google\Model
-{
-    /**
-     * The mime type of the document. https://www.iana.org/assignments/media-
-     * types/media-types.xhtml.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * Data representation. The structured JSON data for the document. It should
-     * conform to the registered Schema or an `INVALID_ARGUMENT` error is thrown.
-     *
-     * @var array[]
-     */
-    public $structData;
-    /**
-     * Title of the document.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Uri of the document.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * The mime type of the document. https://www.iana.org/assignments/media-
-     * types/media-types.xhtml.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ChunkDocumentMetadata extends \Google\Model
     {
+        /**
+         * The mime type of the document. https://www.iana.org/assignments/media-
+         * types/media-types.xhtml.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * Data representation. The structured JSON data for the document. It should
+         * conform to the registered Schema or an `INVALID_ARGUMENT` error is thrown.
+         *
+         * @var array[]
+         */
+        public $structData;
+        /**
+         * Title of the document.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Uri of the document.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * The mime type of the document. https://www.iana.org/assignments/media-
+         * types/media-types.xhtml.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * Data representation. The structured JSON data for the document. It should
+         * conform to the registered Schema or an `INVALID_ARGUMENT` error is thrown.
+         *
+         * @param array[] $structData
+         */
+        public function setStructData($structData)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getStructData()
+        {
+        }
+        /**
+         * Title of the document.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * Uri of the document.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ChunkDocumentMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMimeType()
-    {
-    }
-    /**
-     * Data representation. The structured JSON data for the document. It should
-     * conform to the registered Schema or an `INVALID_ARGUMENT` error is thrown.
-     *
-     * @param array[] $structData
-     */
-    public function setStructData($structData)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getStructData()
-    {
-    }
-    /**
-     * Title of the document.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * Uri of the document.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ChunkDocumentMetadata extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ChunkDocumentMetadata
     {
     }
 }

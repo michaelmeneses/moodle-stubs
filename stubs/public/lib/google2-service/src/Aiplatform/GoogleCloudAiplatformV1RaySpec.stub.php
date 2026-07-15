@@ -21,124 +21,133 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RaySpec extends \Google\Model
-{
-    /**
-     * Optional. This will be used to indicate which resource pool will serve as
-     * the Ray head node(the first node within that pool). Will use the machine
-     * from the first workerpool as the head node by default if this field isn't
-     * set.
-     *
-     * @var string
-     */
-    public $headNodeResourcePoolId;
-    /**
-     * Optional. Default image for user to choose a preferred ML framework (for
-     * example, TensorFlow or Pytorch) by choosing from [Vertex prebuilt
-     * images](https://cloud.google.com/vertex-ai/docs/training/pre-built-
-     * containers). Either this or the resource_pool_images is required. Use this
-     * field if you need all the resource pools to have the same Ray image.
-     * Otherwise, use the {@code resource_pool_images} field.
-     *
-     * @var string
-     */
-    public $imageUri;
-    protected $rayLogsSpecType = GoogleCloudAiplatformV1RayLogsSpec::class;
-    protected $rayLogsSpecDataType = '';
-    protected $rayMetricSpecType = GoogleCloudAiplatformV1RayMetricSpec::class;
-    protected $rayMetricSpecDataType = '';
-    /**
-     * Optional. Required if image_uri isn't set. A map of resource_pool_id to
-     * prebuild Ray image if user need to use different images for different
-     * head/worker pools. This map needs to cover all the resource pool ids.
-     * Example: { "ray_head_node_pool": "head image" "ray_worker_node_pool1":
-     * "worker image" "ray_worker_node_pool2": "another worker image" }
-     *
-     * @var string[]
-     */
-    public $resourcePoolImages;
-    /**
-     * Optional. This will be used to indicate which resource pool will serve as
-     * the Ray head node(the first node within that pool). Will use the machine
-     * from the first workerpool as the head node by default if this field isn't
-     * set.
-     *
-     * @param string $headNodeResourcePoolId
-     */
-    public function setHeadNodeResourcePoolId($headNodeResourcePoolId)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RaySpec extends \Google\Model
     {
+        /**
+         * Optional. This will be used to indicate which resource pool will serve as
+         * the Ray head node(the first node within that pool). Will use the machine
+         * from the first workerpool as the head node by default if this field isn't
+         * set.
+         *
+         * @var string
+         */
+        public $headNodeResourcePoolId;
+        /**
+         * Optional. Default image for user to choose a preferred ML framework (for
+         * example, TensorFlow or Pytorch) by choosing from [Vertex prebuilt
+         * images](https://cloud.google.com/vertex-ai/docs/training/pre-built-
+         * containers). Either this or the resource_pool_images is required. Use this
+         * field if you need all the resource pools to have the same Ray image.
+         * Otherwise, use the {@code resource_pool_images} field.
+         *
+         * @var string
+         */
+        public $imageUri;
+        protected $rayLogsSpecType = GoogleCloudAiplatformV1RayLogsSpec::class;
+        protected $rayLogsSpecDataType = '';
+        protected $rayMetricSpecType = GoogleCloudAiplatformV1RayMetricSpec::class;
+        protected $rayMetricSpecDataType = '';
+        /**
+         * Optional. Required if image_uri isn't set. A map of resource_pool_id to
+         * prebuild Ray image if user need to use different images for different
+         * head/worker pools. This map needs to cover all the resource pool ids.
+         * Example: { "ray_head_node_pool": "head image" "ray_worker_node_pool1":
+         * "worker image" "ray_worker_node_pool2": "another worker image" }
+         *
+         * @var string[]
+         */
+        public $resourcePoolImages;
+        /**
+         * Optional. This will be used to indicate which resource pool will serve as
+         * the Ray head node(the first node within that pool). Will use the machine
+         * from the first workerpool as the head node by default if this field isn't
+         * set.
+         *
+         * @param string $headNodeResourcePoolId
+         */
+        public function setHeadNodeResourcePoolId($headNodeResourcePoolId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeadNodeResourcePoolId()
+        {
+        }
+        /**
+         * Optional. Default image for user to choose a preferred ML framework (for
+         * example, TensorFlow or Pytorch) by choosing from [Vertex prebuilt
+         * images](https://cloud.google.com/vertex-ai/docs/training/pre-built-
+         * containers). Either this or the resource_pool_images is required. Use this
+         * field if you need all the resource pools to have the same Ray image.
+         * Otherwise, use the {@code resource_pool_images} field.
+         *
+         * @param string $imageUri
+         */
+        public function setImageUri($imageUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUri()
+        {
+        }
+        /**
+         * Optional. OSS Ray logging configurations.
+         *
+         * @param GoogleCloudAiplatformV1RayLogsSpec $rayLogsSpec
+         */
+        public function setRayLogsSpec(GoogleCloudAiplatformV1RayLogsSpec $rayLogsSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RayLogsSpec
+         */
+        public function getRayLogsSpec()
+        {
+        }
+        /**
+         * Optional. Ray metrics configurations.
+         *
+         * @param GoogleCloudAiplatformV1RayMetricSpec $rayMetricSpec
+         */
+        public function setRayMetricSpec(GoogleCloudAiplatformV1RayMetricSpec $rayMetricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RayMetricSpec
+         */
+        public function getRayMetricSpec()
+        {
+        }
+        /**
+         * Optional. Required if image_uri isn't set. A map of resource_pool_id to
+         * prebuild Ray image if user need to use different images for different
+         * head/worker pools. This map needs to cover all the resource pool ids.
+         * Example: { "ray_head_node_pool": "head image" "ray_worker_node_pool1":
+         * "worker image" "ray_worker_node_pool2": "another worker image" }
+         *
+         * @param string[] $resourcePoolImages
+         */
+        public function setResourcePoolImages($resourcePoolImages)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourcePoolImages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RaySpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeadNodeResourcePoolId()
-    {
-    }
-    /**
-     * Optional. Default image for user to choose a preferred ML framework (for
-     * example, TensorFlow or Pytorch) by choosing from [Vertex prebuilt
-     * images](https://cloud.google.com/vertex-ai/docs/training/pre-built-
-     * containers). Either this or the resource_pool_images is required. Use this
-     * field if you need all the resource pools to have the same Ray image.
-     * Otherwise, use the {@code resource_pool_images} field.
-     *
-     * @param string $imageUri
-     */
-    public function setImageUri($imageUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUri()
-    {
-    }
-    /**
-     * Optional. OSS Ray logging configurations.
-     *
-     * @param GoogleCloudAiplatformV1RayLogsSpec $rayLogsSpec
-     */
-    public function setRayLogsSpec(GoogleCloudAiplatformV1RayLogsSpec $rayLogsSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RayLogsSpec
-     */
-    public function getRayLogsSpec()
-    {
-    }
-    /**
-     * Optional. Ray metrics configurations.
-     *
-     * @param GoogleCloudAiplatformV1RayMetricSpec $rayMetricSpec
-     */
-    public function setRayMetricSpec(GoogleCloudAiplatformV1RayMetricSpec $rayMetricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RayMetricSpec
-     */
-    public function getRayMetricSpec()
-    {
-    }
-    /**
-     * Optional. Required if image_uri isn't set. A map of resource_pool_id to
-     * prebuild Ray image if user need to use different images for different
-     * head/worker pools. This map needs to cover all the resource pool ids.
-     * Example: { "ray_head_node_pool": "head image" "ray_worker_node_pool1":
-     * "worker image" "ray_worker_node_pool2": "another worker image" }
-     *
-     * @param string[] $resourcePoolImages
-     */
-    public function setResourcePoolImages($resourcePoolImages)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResourcePoolImages()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RaySpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RaySpec
     {
     }
 }

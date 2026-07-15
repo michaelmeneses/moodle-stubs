@@ -21,187 +21,196 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class GtagConfig extends \Google\Collection
-{
-    protected $collection_key = 'parameter';
-    /**
-     * Google tag account ID.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * Google tag container ID.
-     *
-     * @var string
-     */
-    public $containerId;
-    /**
-     * The fingerprint of the Google tag config as computed at storage time. This
-     * value is recomputed whenever the config is modified.
-     *
-     * @var string
-     */
-    public $fingerprint;
-    /**
-     * The ID uniquely identifies the Google tag config.
-     *
-     * @var string
-     */
-    public $gtagConfigId;
-    protected $parameterType = Parameter::class;
-    protected $parameterDataType = 'array';
-    /**
-     * Google tag config's API relative path.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Auto generated link to the tag manager UI
-     *
-     * @var string
-     */
-    public $tagManagerUrl;
-    /**
-     * Google tag config type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Google tag workspace ID. Only used by GTM containers. Set to 0 otherwise.
-     *
-     * @var string
-     */
-    public $workspaceId;
-    /**
-     * Google tag account ID.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\TagManager {
+    class GtagConfig extends \Google\Collection
     {
+        protected $collection_key = 'parameter';
+        /**
+         * Google tag account ID.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * Google tag container ID.
+         *
+         * @var string
+         */
+        public $containerId;
+        /**
+         * The fingerprint of the Google tag config as computed at storage time. This
+         * value is recomputed whenever the config is modified.
+         *
+         * @var string
+         */
+        public $fingerprint;
+        /**
+         * The ID uniquely identifies the Google tag config.
+         *
+         * @var string
+         */
+        public $gtagConfigId;
+        protected $parameterType = Parameter::class;
+        protected $parameterDataType = 'array';
+        /**
+         * Google tag config's API relative path.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Auto generated link to the tag manager UI
+         *
+         * @var string
+         */
+        public $tagManagerUrl;
+        /**
+         * Google tag config type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Google tag workspace ID. Only used by GTM containers. Set to 0 otherwise.
+         *
+         * @var string
+         */
+        public $workspaceId;
+        /**
+         * Google tag account ID.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * Google tag container ID.
+         *
+         * @param string $containerId
+         */
+        public function setContainerId($containerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContainerId()
+        {
+        }
+        /**
+         * The fingerprint of the Google tag config as computed at storage time. This
+         * value is recomputed whenever the config is modified.
+         *
+         * @param string $fingerprint
+         */
+        public function setFingerprint($fingerprint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFingerprint()
+        {
+        }
+        /**
+         * The ID uniquely identifies the Google tag config.
+         *
+         * @param string $gtagConfigId
+         */
+        public function setGtagConfigId($gtagConfigId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGtagConfigId()
+        {
+        }
+        /**
+         * The Google tag config's parameters.
+         *
+         * @param Parameter[] $parameter
+         */
+        public function setParameter($parameter)
+        {
+        }
+        /**
+         * @return Parameter[]
+         */
+        public function getParameter()
+        {
+        }
+        /**
+         * Google tag config's API relative path.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Auto generated link to the tag manager UI
+         *
+         * @param string $tagManagerUrl
+         */
+        public function setTagManagerUrl($tagManagerUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTagManagerUrl()
+        {
+        }
+        /**
+         * Google tag config type.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Google tag workspace ID. Only used by GTM containers. Set to 0 otherwise.
+         *
+         * @param string $workspaceId
+         */
+        public function setWorkspaceId($workspaceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkspaceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TagManager\GtagConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * Google tag container ID.
-     *
-     * @param string $containerId
-     */
-    public function setContainerId($containerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContainerId()
-    {
-    }
-    /**
-     * The fingerprint of the Google tag config as computed at storage time. This
-     * value is recomputed whenever the config is modified.
-     *
-     * @param string $fingerprint
-     */
-    public function setFingerprint($fingerprint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFingerprint()
-    {
-    }
-    /**
-     * The ID uniquely identifies the Google tag config.
-     *
-     * @param string $gtagConfigId
-     */
-    public function setGtagConfigId($gtagConfigId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGtagConfigId()
-    {
-    }
-    /**
-     * The Google tag config's parameters.
-     *
-     * @param Parameter[] $parameter
-     */
-    public function setParameter($parameter)
-    {
-    }
-    /**
-     * @return Parameter[]
-     */
-    public function getParameter()
-    {
-    }
-    /**
-     * Google tag config's API relative path.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Auto generated link to the tag manager UI
-     *
-     * @param string $tagManagerUrl
-     */
-    public function setTagManagerUrl($tagManagerUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTagManagerUrl()
-    {
-    }
-    /**
-     * Google tag config type.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Google tag workspace ID. Only used by GTM containers. Set to 0 otherwise.
-     *
-     * @param string $workspaceId
-     */
-    public function setWorkspaceId($workspaceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkspaceId()
+    class Google_Service_TagManager_GtagConfig extends \Google\Service\TagManager\GtagConfig
     {
     }
 }

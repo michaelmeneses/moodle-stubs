@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class HolidayCutoff extends \Google\Model
-{
-    /**
-     * Date of the order deadline, in ISO 8601 format. For example, "2016-11-29"
-     * for 29th November 2016. Required.
-     *
-     * @var string
-     */
-    public $deadlineDate;
-    /**
-     * Hour of the day on the deadline date until which the order has to be placed
-     * to qualify for the delivery guarantee. Possible values are: 0 (midnight),
-     * 1, ..., 12 (noon), 13, ..., 23. Required.
-     *
-     * @var string
-     */
-    public $deadlineHour;
-    /**
-     * Timezone identifier for the deadline hour (for example, "Europe/Zurich").
-     * List of identifiers. Required.
-     *
-     * @var string
-     */
-    public $deadlineTimezone;
-    /**
-     * Unique identifier for the holiday. Required.
-     *
-     * @var string
-     */
-    public $holidayId;
-    /**
-     * Date on which the deadline will become visible to consumers in ISO 8601
-     * format. For example, "2016-10-31" for 31st October 2016. Required.
-     *
-     * @var string
-     */
-    public $visibleFromDate;
-    /**
-     * Date of the order deadline, in ISO 8601 format. For example, "2016-11-29"
-     * for 29th November 2016. Required.
-     *
-     * @param string $deadlineDate
-     */
-    public function setDeadlineDate($deadlineDate)
+namespace Google\Service\ShoppingContent {
+    class HolidayCutoff extends \Google\Model
     {
+        /**
+         * Date of the order deadline, in ISO 8601 format. For example, "2016-11-29"
+         * for 29th November 2016. Required.
+         *
+         * @var string
+         */
+        public $deadlineDate;
+        /**
+         * Hour of the day on the deadline date until which the order has to be placed
+         * to qualify for the delivery guarantee. Possible values are: 0 (midnight),
+         * 1, ..., 12 (noon), 13, ..., 23. Required.
+         *
+         * @var string
+         */
+        public $deadlineHour;
+        /**
+         * Timezone identifier for the deadline hour (for example, "Europe/Zurich").
+         * List of identifiers. Required.
+         *
+         * @var string
+         */
+        public $deadlineTimezone;
+        /**
+         * Unique identifier for the holiday. Required.
+         *
+         * @var string
+         */
+        public $holidayId;
+        /**
+         * Date on which the deadline will become visible to consumers in ISO 8601
+         * format. For example, "2016-10-31" for 31st October 2016. Required.
+         *
+         * @var string
+         */
+        public $visibleFromDate;
+        /**
+         * Date of the order deadline, in ISO 8601 format. For example, "2016-11-29"
+         * for 29th November 2016. Required.
+         *
+         * @param string $deadlineDate
+         */
+        public function setDeadlineDate($deadlineDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeadlineDate()
+        {
+        }
+        /**
+         * Hour of the day on the deadline date until which the order has to be placed
+         * to qualify for the delivery guarantee. Possible values are: 0 (midnight),
+         * 1, ..., 12 (noon), 13, ..., 23. Required.
+         *
+         * @param string $deadlineHour
+         */
+        public function setDeadlineHour($deadlineHour)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeadlineHour()
+        {
+        }
+        /**
+         * Timezone identifier for the deadline hour (for example, "Europe/Zurich").
+         * List of identifiers. Required.
+         *
+         * @param string $deadlineTimezone
+         */
+        public function setDeadlineTimezone($deadlineTimezone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeadlineTimezone()
+        {
+        }
+        /**
+         * Unique identifier for the holiday. Required.
+         *
+         * @param string $holidayId
+         */
+        public function setHolidayId($holidayId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHolidayId()
+        {
+        }
+        /**
+         * Date on which the deadline will become visible to consumers in ISO 8601
+         * format. For example, "2016-10-31" for 31st October 2016. Required.
+         *
+         * @param string $visibleFromDate
+         */
+        public function setVisibleFromDate($visibleFromDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVisibleFromDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\HolidayCutoff registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeadlineDate()
-    {
-    }
-    /**
-     * Hour of the day on the deadline date until which the order has to be placed
-     * to qualify for the delivery guarantee. Possible values are: 0 (midnight),
-     * 1, ..., 12 (noon), 13, ..., 23. Required.
-     *
-     * @param string $deadlineHour
-     */
-    public function setDeadlineHour($deadlineHour)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeadlineHour()
-    {
-    }
-    /**
-     * Timezone identifier for the deadline hour (for example, "Europe/Zurich").
-     * List of identifiers. Required.
-     *
-     * @param string $deadlineTimezone
-     */
-    public function setDeadlineTimezone($deadlineTimezone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeadlineTimezone()
-    {
-    }
-    /**
-     * Unique identifier for the holiday. Required.
-     *
-     * @param string $holidayId
-     */
-    public function setHolidayId($holidayId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHolidayId()
-    {
-    }
-    /**
-     * Date on which the deadline will become visible to consumers in ISO 8601
-     * format. For example, "2016-10-31" for 31st October 2016. Required.
-     *
-     * @param string $visibleFromDate
-     */
-    public function setVisibleFromDate($visibleFromDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVisibleFromDate()
+    class Google_Service_ShoppingContent_HolidayCutoff extends \Google\Service\ShoppingContent\HolidayCutoff
     {
     }
 }

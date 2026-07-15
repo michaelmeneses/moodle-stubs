@@ -21,115 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class BulkEditAssignedTargetingOptionsRequest extends \Google\Collection
-{
-    protected $collection_key = 'lineItemIds';
-    protected $createRequestsType = CreateAssignedTargetingOptionsRequest::class;
-    protected $createRequestsDataType = 'array';
-    protected $deleteRequestsType = DeleteAssignedTargetingOptionsRequest::class;
-    protected $deleteRequestsDataType = 'array';
-    /**
-     * Required. The ID of the line items whose targeting is being updated.
-     *
-     * @var string[]
-     */
-    public $lineItemIds;
-    /**
-     * The assigned targeting options to create in batch, specified as a list of
-     * CreateAssignedTargetingOptionsRequest. Supported targeting types include: *
-     * `TARGETING_TYPE_AGE_RANGE` * `TARGETING_TYPE_APP` *
-     * `TARGETING_TYPE_APP_CATEGORY` * `TARGETING_TYPE_AUDIENCE_GROUP` *
-     * `TARGETING_TYPE_AUDIO_CONTENT_TYPE` *
-     * `TARGETING_TYPE_AUTHORIZED_SELLER_STATUS` * `TARGETING_TYPE_BROWSER` *
-     * `TARGETING_TYPE_BUSINESS_CHAIN` * `TARGETING_TYPE_CARRIER_AND_ISP` *
-     * `TARGETING_TYPE_CATEGORY` * `TARGETING_TYPE_CHANNEL` *
-     * `TARGETING_TYPE_CONTENT_DURATION` * `TARGETING_TYPE_CONTENT_GENRE` *
-     * `TARGETING_TYPE_CONTENT_INSTREAM_POSITION` *
-     * `TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION` *
-     * `TARGETING_TYPE_CONTENT_STREAM_TYPE` * `TARGETING_TYPE_DAY_AND_TIME` *
-     * `TARGETING_TYPE_DEVICE_MAKE_MODEL` * `TARGETING_TYPE_DEVICE_TYPE` *
-     * `TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION` *
-     * `TARGETING_TYPE_ENVIRONMENT` * `TARGETING_TYPE_EXCHANGE` *
-     * `TARGETING_TYPE_GENDER` * `TARGETING_TYPE_GEO_REGION` *
-     * `TARGETING_TYPE_HOUSEHOLD_INCOME` * `TARGETING_TYPE_INVENTORY_SOURCE` *
-     * `TARGETING_TYPE_INVENTORY_SOURCE_GROUP` * `TARGETING_TYPE_KEYWORD` *
-     * `TARGETING_TYPE_LANGUAGE` * `TARGETING_TYPE_NATIVE_CONTENT_POSITION` *
-     * `TARGETING_TYPE_NEGATIVE_KEYWORD_LIST` * `TARGETING_TYPE_OMID` *
-     * `TARGETING_TYPE_ON_SCREEN_POSITION` * `TARGETING_TYPE_OPERATING_SYSTEM` *
-     * `TARGETING_TYPE_PARENTAL_STATUS` * `TARGETING_TYPE_POI` *
-     * `TARGETING_TYPE_PROXIMITY_LOCATION_LIST` *
-     * `TARGETING_TYPE_REGIONAL_LOCATION_LIST` *
-     * `TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION` *
-     * `TARGETING_TYPE_SUB_EXCHANGE` * `TARGETING_TYPE_THIRD_PARTY_VERIFIER` *
-     * `TARGETING_TYPE_URL` * `TARGETING_TYPE_USER_REWARDED_CONTENT` *
-     * `TARGETING_TYPE_VIDEO_PLAYER_SIZE` * `TARGETING_TYPE_VIEWABILITY`
-     *
-     * @param CreateAssignedTargetingOptionsRequest[] $createRequests
-     */
-    public function setCreateRequests($createRequests)
+namespace Google\Service\DisplayVideo {
+    class BulkEditAssignedTargetingOptionsRequest extends \Google\Collection
     {
+        protected $collection_key = 'lineItemIds';
+        protected $createRequestsType = CreateAssignedTargetingOptionsRequest::class;
+        protected $createRequestsDataType = 'array';
+        protected $deleteRequestsType = DeleteAssignedTargetingOptionsRequest::class;
+        protected $deleteRequestsDataType = 'array';
+        /**
+         * Required. The ID of the line items whose targeting is being updated.
+         *
+         * @var string[]
+         */
+        public $lineItemIds;
+        /**
+         * The assigned targeting options to create in batch, specified as a list of
+         * CreateAssignedTargetingOptionsRequest. Supported targeting types include: *
+         * `TARGETING_TYPE_AGE_RANGE` * `TARGETING_TYPE_APP` *
+         * `TARGETING_TYPE_APP_CATEGORY` * `TARGETING_TYPE_AUDIENCE_GROUP` *
+         * `TARGETING_TYPE_AUDIO_CONTENT_TYPE` *
+         * `TARGETING_TYPE_AUTHORIZED_SELLER_STATUS` * `TARGETING_TYPE_BROWSER` *
+         * `TARGETING_TYPE_BUSINESS_CHAIN` * `TARGETING_TYPE_CARRIER_AND_ISP` *
+         * `TARGETING_TYPE_CATEGORY` * `TARGETING_TYPE_CHANNEL` *
+         * `TARGETING_TYPE_CONTENT_DURATION` * `TARGETING_TYPE_CONTENT_GENRE` *
+         * `TARGETING_TYPE_CONTENT_INSTREAM_POSITION` *
+         * `TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION` *
+         * `TARGETING_TYPE_CONTENT_STREAM_TYPE` * `TARGETING_TYPE_DAY_AND_TIME` *
+         * `TARGETING_TYPE_DEVICE_MAKE_MODEL` * `TARGETING_TYPE_DEVICE_TYPE` *
+         * `TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION` *
+         * `TARGETING_TYPE_ENVIRONMENT` * `TARGETING_TYPE_EXCHANGE` *
+         * `TARGETING_TYPE_GENDER` * `TARGETING_TYPE_GEO_REGION` *
+         * `TARGETING_TYPE_HOUSEHOLD_INCOME` * `TARGETING_TYPE_INVENTORY_SOURCE` *
+         * `TARGETING_TYPE_INVENTORY_SOURCE_GROUP` * `TARGETING_TYPE_KEYWORD` *
+         * `TARGETING_TYPE_LANGUAGE` * `TARGETING_TYPE_NATIVE_CONTENT_POSITION` *
+         * `TARGETING_TYPE_NEGATIVE_KEYWORD_LIST` * `TARGETING_TYPE_OMID` *
+         * `TARGETING_TYPE_ON_SCREEN_POSITION` * `TARGETING_TYPE_OPERATING_SYSTEM` *
+         * `TARGETING_TYPE_PARENTAL_STATUS` * `TARGETING_TYPE_POI` *
+         * `TARGETING_TYPE_PROXIMITY_LOCATION_LIST` *
+         * `TARGETING_TYPE_REGIONAL_LOCATION_LIST` *
+         * `TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION` *
+         * `TARGETING_TYPE_SUB_EXCHANGE` * `TARGETING_TYPE_THIRD_PARTY_VERIFIER` *
+         * `TARGETING_TYPE_URL` * `TARGETING_TYPE_USER_REWARDED_CONTENT` *
+         * `TARGETING_TYPE_VIDEO_PLAYER_SIZE` * `TARGETING_TYPE_VIEWABILITY`
+         *
+         * @param CreateAssignedTargetingOptionsRequest[] $createRequests
+         */
+        public function setCreateRequests($createRequests)
+        {
+        }
+        /**
+         * @return CreateAssignedTargetingOptionsRequest[]
+         */
+        public function getCreateRequests()
+        {
+        }
+        /**
+         * The assigned targeting options to delete in batch, specified as a list of
+         * DeleteAssignedTargetingOptionsRequest. Supported targeting types include: *
+         * `TARGETING_TYPE_AGE_RANGE` * `TARGETING_TYPE_APP` *
+         * `TARGETING_TYPE_APP_CATEGORY` * `TARGETING_TYPE_AUDIENCE_GROUP` *
+         * `TARGETING_TYPE_AUDIO_CONTENT_TYPE` *
+         * `TARGETING_TYPE_AUTHORIZED_SELLER_STATUS` * `TARGETING_TYPE_BROWSER` *
+         * `TARGETING_TYPE_BUSINESS_CHAIN` * `TARGETING_TYPE_CARRIER_AND_ISP` *
+         * `TARGETING_TYPE_CATEGORY` * `TARGETING_TYPE_CHANNEL` *
+         * `TARGETING_TYPE_CONTENT_DURATION` * `TARGETING_TYPE_CONTENT_GENRE` *
+         * `TARGETING_TYPE_CONTENT_INSTREAM_POSITION` *
+         * `TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION` *
+         * `TARGETING_TYPE_CONTENT_STREAM_TYPE` * `TARGETING_TYPE_DAY_AND_TIME` *
+         * `TARGETING_TYPE_DEVICE_MAKE_MODEL` * `TARGETING_TYPE_DEVICE_TYPE` *
+         * `TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION` *
+         * `TARGETING_TYPE_ENVIRONMENT` * `TARGETING_TYPE_EXCHANGE` *
+         * `TARGETING_TYPE_GENDER` * `TARGETING_TYPE_GEO_REGION` *
+         * `TARGETING_TYPE_HOUSEHOLD_INCOME` * `TARGETING_TYPE_INVENTORY_SOURCE` *
+         * `TARGETING_TYPE_INVENTORY_SOURCE_GROUP` * `TARGETING_TYPE_KEYWORD` *
+         * `TARGETING_TYPE_LANGUAGE` * `TARGETING_TYPE_NATIVE_CONTENT_POSITION` *
+         * `TARGETING_TYPE_NEGATIVE_KEYWORD_LIST` * `TARGETING_TYPE_OMID` *
+         * `TARGETING_TYPE_ON_SCREEN_POSITION` * `TARGETING_TYPE_OPERATING_SYSTEM` *
+         * `TARGETING_TYPE_PARENTAL_STATUS` * `TARGETING_TYPE_POI` *
+         * `TARGETING_TYPE_PROXIMITY_LOCATION_LIST` *
+         * `TARGETING_TYPE_REGIONAL_LOCATION_LIST` *
+         * `TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION` *
+         * `TARGETING_TYPE_SUB_EXCHANGE` * `TARGETING_TYPE_THIRD_PARTY_VERIFIER` *
+         * `TARGETING_TYPE_URL` * `TARGETING_TYPE_USER_REWARDED_CONTENT` *
+         * `TARGETING_TYPE_VIDEO_PLAYER_SIZE` * `TARGETING_TYPE_VIEWABILITY`
+         *
+         * @param DeleteAssignedTargetingOptionsRequest[] $deleteRequests
+         */
+        public function setDeleteRequests($deleteRequests)
+        {
+        }
+        /**
+         * @return DeleteAssignedTargetingOptionsRequest[]
+         */
+        public function getDeleteRequests()
+        {
+        }
+        /**
+         * Required. The ID of the line items whose targeting is being updated.
+         *
+         * @param string[] $lineItemIds
+         */
+        public function setLineItemIds($lineItemIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLineItemIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CreateAssignedTargetingOptionsRequest[]
+     * Runtime class alias of \Google\Service\DisplayVideo\BulkEditAssignedTargetingOptionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateRequests()
-    {
-    }
-    /**
-     * The assigned targeting options to delete in batch, specified as a list of
-     * DeleteAssignedTargetingOptionsRequest. Supported targeting types include: *
-     * `TARGETING_TYPE_AGE_RANGE` * `TARGETING_TYPE_APP` *
-     * `TARGETING_TYPE_APP_CATEGORY` * `TARGETING_TYPE_AUDIENCE_GROUP` *
-     * `TARGETING_TYPE_AUDIO_CONTENT_TYPE` *
-     * `TARGETING_TYPE_AUTHORIZED_SELLER_STATUS` * `TARGETING_TYPE_BROWSER` *
-     * `TARGETING_TYPE_BUSINESS_CHAIN` * `TARGETING_TYPE_CARRIER_AND_ISP` *
-     * `TARGETING_TYPE_CATEGORY` * `TARGETING_TYPE_CHANNEL` *
-     * `TARGETING_TYPE_CONTENT_DURATION` * `TARGETING_TYPE_CONTENT_GENRE` *
-     * `TARGETING_TYPE_CONTENT_INSTREAM_POSITION` *
-     * `TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION` *
-     * `TARGETING_TYPE_CONTENT_STREAM_TYPE` * `TARGETING_TYPE_DAY_AND_TIME` *
-     * `TARGETING_TYPE_DEVICE_MAKE_MODEL` * `TARGETING_TYPE_DEVICE_TYPE` *
-     * `TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION` *
-     * `TARGETING_TYPE_ENVIRONMENT` * `TARGETING_TYPE_EXCHANGE` *
-     * `TARGETING_TYPE_GENDER` * `TARGETING_TYPE_GEO_REGION` *
-     * `TARGETING_TYPE_HOUSEHOLD_INCOME` * `TARGETING_TYPE_INVENTORY_SOURCE` *
-     * `TARGETING_TYPE_INVENTORY_SOURCE_GROUP` * `TARGETING_TYPE_KEYWORD` *
-     * `TARGETING_TYPE_LANGUAGE` * `TARGETING_TYPE_NATIVE_CONTENT_POSITION` *
-     * `TARGETING_TYPE_NEGATIVE_KEYWORD_LIST` * `TARGETING_TYPE_OMID` *
-     * `TARGETING_TYPE_ON_SCREEN_POSITION` * `TARGETING_TYPE_OPERATING_SYSTEM` *
-     * `TARGETING_TYPE_PARENTAL_STATUS` * `TARGETING_TYPE_POI` *
-     * `TARGETING_TYPE_PROXIMITY_LOCATION_LIST` *
-     * `TARGETING_TYPE_REGIONAL_LOCATION_LIST` *
-     * `TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION` *
-     * `TARGETING_TYPE_SUB_EXCHANGE` * `TARGETING_TYPE_THIRD_PARTY_VERIFIER` *
-     * `TARGETING_TYPE_URL` * `TARGETING_TYPE_USER_REWARDED_CONTENT` *
-     * `TARGETING_TYPE_VIDEO_PLAYER_SIZE` * `TARGETING_TYPE_VIEWABILITY`
-     *
-     * @param DeleteAssignedTargetingOptionsRequest[] $deleteRequests
-     */
-    public function setDeleteRequests($deleteRequests)
-    {
-    }
-    /**
-     * @return DeleteAssignedTargetingOptionsRequest[]
-     */
-    public function getDeleteRequests()
-    {
-    }
-    /**
-     * Required. The ID of the line items whose targeting is being updated.
-     *
-     * @param string[] $lineItemIds
-     */
-    public function setLineItemIds($lineItemIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLineItemIds()
+    class Google_Service_DisplayVideo_BulkEditAssignedTargetingOptionsRequest extends \Google\Service\DisplayVideo\BulkEditAssignedTargetingOptionsRequest
     {
     }
 }

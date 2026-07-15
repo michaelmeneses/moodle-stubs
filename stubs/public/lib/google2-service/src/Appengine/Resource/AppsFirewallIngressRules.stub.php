@@ -21,110 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine\Resource;
-
-/**
- * The "ingressRules" collection of methods.
- * Typical usage is:
- *  <code>
- *   $appengineService = new Google\Service\Appengine(...);
- *   $ingressRules = $appengineService->apps_firewall_ingressRules;
- *  </code>
- */
-class AppsFirewallIngressRules extends \Google\Service\Resource
-{
+namespace Google\Service\Appengine\Resource {
+    use Google\Service\Appengine\AppengineEmpty;
+    use Google\Service\Appengine\BatchUpdateIngressRulesRequest;
+    use Google\Service\Appengine\BatchUpdateIngressRulesResponse;
+    use Google\Service\Appengine\FirewallRule;
+    use Google\Service\Appengine\ListIngressRulesResponse;
     /**
-     * Replaces the entire firewall ruleset in one bulk operation. This overrides
-     * and replaces the rules of an existing firewall with the new rules.If the
-     * final rule does not match traffic with the '*' wildcard IP range, then an
-     * "allow all" rule is explicitly added to the end of the list.
-     * (ingressRules.batchUpdate)
-     *
-     * @param string $appsId Part of `name`. Name of the Firewall collection to set.
-     * Example: apps/myapp/firewall/ingressRules.
-     * @param BatchUpdateIngressRulesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return BatchUpdateIngressRulesResponse
-     * @throws \Google\Service\Exception
+     * The "ingressRules" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $appengineService = new Google\Service\Appengine(...);
+     *   $ingressRules = $appengineService->apps_firewall_ingressRules;
+     *  </code>
      */
-    public function batchUpdate($appsId, BatchUpdateIngressRulesRequest $postBody, $optParams = [])
+    class AppsFirewallIngressRules extends \Google\Service\Resource
     {
+        /**
+         * Replaces the entire firewall ruleset in one bulk operation. This overrides
+         * and replaces the rules of an existing firewall with the new rules.If the
+         * final rule does not match traffic with the '*' wildcard IP range, then an
+         * "allow all" rule is explicitly added to the end of the list.
+         * (ingressRules.batchUpdate)
+         *
+         * @param string $appsId Part of `name`. Name of the Firewall collection to set.
+         * Example: apps/myapp/firewall/ingressRules.
+         * @param BatchUpdateIngressRulesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return BatchUpdateIngressRulesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function batchUpdate($appsId, BatchUpdateIngressRulesRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Creates a firewall rule for the application. (ingressRules.create)
+         *
+         * @param string $appsId Part of `parent`. Required. Name of the parent Firewall
+         * collection in which to create a new rule. Example:
+         * apps/myapp/firewall/ingressRules.
+         * @param FirewallRule $postBody
+         * @param array $optParams Optional parameters.
+         * @return FirewallRule
+         * @throws \Google\Service\Exception
+         */
+        public function create($appsId, FirewallRule $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes the specified firewall rule. (ingressRules.delete)
+         *
+         * @param string $appsId Part of `name`. Name of the Firewall resource to
+         * delete. Example: apps/myapp/firewall/ingressRules/100.
+         * @param string $ingressRulesId Part of `name`. See documentation of `appsId`.
+         * @param array $optParams Optional parameters.
+         * @return AppengineEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($appsId, $ingressRulesId, $optParams = [])
+        {
+        }
+        /**
+         * Gets the specified firewall rule. (ingressRules.get)
+         *
+         * @param string $appsId Part of `name`. Name of the Firewall resource to
+         * retrieve. Example: apps/myapp/firewall/ingressRules/100.
+         * @param string $ingressRulesId Part of `name`. See documentation of `appsId`.
+         * @param array $optParams Optional parameters.
+         * @return FirewallRule
+         * @throws \Google\Service\Exception
+         */
+        public function get($appsId, $ingressRulesId, $optParams = [])
+        {
+        }
+        /**
+         * Lists the firewall rules of an application.
+         * (ingressRules.listAppsFirewallIngressRules)
+         *
+         * @param string $appsId Part of `parent`. Name of the Firewall collection to
+         * retrieve. Example: apps/myapp/firewall/ingressRules.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string matchingAddress A valid IP Address. If set, only rules
+         * matching this address will be returned. The first returned rule will be the
+         * rule that fires on requests from this IP.
+         * @opt_param int pageSize Maximum results to return per page.
+         * @opt_param string pageToken Continuation token for fetching the next page of
+         * results.
+         * @return ListIngressRulesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAppsFirewallIngressRules($appsId, $optParams = [])
+        {
+        }
+        /**
+         * Updates the specified firewall rule. (ingressRules.patch)
+         *
+         * @param string $appsId Part of `name`. Name of the Firewall resource to
+         * update. Example: apps/myapp/firewall/ingressRules/100.
+         * @param string $ingressRulesId Part of `name`. See documentation of `appsId`.
+         * @param FirewallRule $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Standard field mask for the set of fields to be
+         * updated.
+         * @return FirewallRule
+         * @throws \Google\Service\Exception
+         */
+        public function patch($appsId, $ingressRulesId, FirewallRule $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Creates a firewall rule for the application. (ingressRules.create)
-     *
-     * @param string $appsId Part of `parent`. Required. Name of the parent Firewall
-     * collection in which to create a new rule. Example:
-     * apps/myapp/firewall/ingressRules.
-     * @param FirewallRule $postBody
-     * @param array $optParams Optional parameters.
-     * @return FirewallRule
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Appengine\Resource\AppsFirewallIngressRules registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function create($appsId, FirewallRule $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Deletes the specified firewall rule. (ingressRules.delete)
-     *
-     * @param string $appsId Part of `name`. Name of the Firewall resource to
-     * delete. Example: apps/myapp/firewall/ingressRules/100.
-     * @param string $ingressRulesId Part of `name`. See documentation of `appsId`.
-     * @param array $optParams Optional parameters.
-     * @return AppengineEmpty
-     * @throws \Google\Service\Exception
-     */
-    public function delete($appsId, $ingressRulesId, $optParams = [])
-    {
-    }
-    /**
-     * Gets the specified firewall rule. (ingressRules.get)
-     *
-     * @param string $appsId Part of `name`. Name of the Firewall resource to
-     * retrieve. Example: apps/myapp/firewall/ingressRules/100.
-     * @param string $ingressRulesId Part of `name`. See documentation of `appsId`.
-     * @param array $optParams Optional parameters.
-     * @return FirewallRule
-     * @throws \Google\Service\Exception
-     */
-    public function get($appsId, $ingressRulesId, $optParams = [])
-    {
-    }
-    /**
-     * Lists the firewall rules of an application.
-     * (ingressRules.listAppsFirewallIngressRules)
-     *
-     * @param string $appsId Part of `parent`. Name of the Firewall collection to
-     * retrieve. Example: apps/myapp/firewall/ingressRules.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string matchingAddress A valid IP Address. If set, only rules
-     * matching this address will be returned. The first returned rule will be the
-     * rule that fires on requests from this IP.
-     * @opt_param int pageSize Maximum results to return per page.
-     * @opt_param string pageToken Continuation token for fetching the next page of
-     * results.
-     * @return ListIngressRulesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAppsFirewallIngressRules($appsId, $optParams = [])
-    {
-    }
-    /**
-     * Updates the specified firewall rule. (ingressRules.patch)
-     *
-     * @param string $appsId Part of `name`. Name of the Firewall resource to
-     * update. Example: apps/myapp/firewall/ingressRules/100.
-     * @param string $ingressRulesId Part of `name`. See documentation of `appsId`.
-     * @param FirewallRule $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Standard field mask for the set of fields to be
-     * updated.
-     * @return FirewallRule
-     * @throws \Google\Service\Exception
-     */
-    public function patch($appsId, $ingressRulesId, FirewallRule $postBody, $optParams = [])
+    class Google_Service_Appengine_Resource_AppsFirewallIngressRules extends \Google\Service\Appengine\Resource\AppsFirewallIngressRules
     {
     }
 }

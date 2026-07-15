@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class TableDataInsertAllRequestRows extends \Google\Model
-{
-    /**
-     * Insertion ID for best-effort deduplication. This feature is not
-     * recommended, and users seeking stronger insertion semantics are encouraged
-     * to use other mechanisms such as the BigQuery Write API.
-     *
-     * @var string
-     */
-    public $insertId;
-    /**
-     * Data for a single row.
-     *
-     * @var array[]
-     */
-    public $json;
-    /**
-     * Insertion ID for best-effort deduplication. This feature is not
-     * recommended, and users seeking stronger insertion semantics are encouraged
-     * to use other mechanisms such as the BigQuery Write API.
-     *
-     * @param string $insertId
-     */
-    public function setInsertId($insertId)
+namespace Google\Service\Bigquery {
+    class TableDataInsertAllRequestRows extends \Google\Model
     {
+        /**
+         * Insertion ID for best-effort deduplication. This feature is not
+         * recommended, and users seeking stronger insertion semantics are encouraged
+         * to use other mechanisms such as the BigQuery Write API.
+         *
+         * @var string
+         */
+        public $insertId;
+        /**
+         * Data for a single row.
+         *
+         * @var array[]
+         */
+        public $json;
+        /**
+         * Insertion ID for best-effort deduplication. This feature is not
+         * recommended, and users seeking stronger insertion semantics are encouraged
+         * to use other mechanisms such as the BigQuery Write API.
+         *
+         * @param string $insertId
+         */
+        public function setInsertId($insertId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInsertId()
+        {
+        }
+        /**
+         * Data for a single row.
+         *
+         * @param array[] $json
+         */
+        public function setJson($json)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getJson()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\TableDataInsertAllRequestRows registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInsertId()
-    {
-    }
-    /**
-     * Data for a single row.
-     *
-     * @param array[] $json
-     */
-    public function setJson($json)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getJson()
+    class Google_Service_Bigquery_TableDataInsertAllRequestRows extends \Google\Service\Bigquery\TableDataInsertAllRequestRows
     {
     }
 }

@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class WebAppIcon extends \Google\Model
-{
-    /**
-     * The actual bytes of the image in a base64url encoded string (c.f. RFC4648,
-     * section 5 "Base 64 Encoding with URL and Filename Safe Alphabet"). - The
-     * image type can be png or jpg. - The image should ideally be square. - The
-     * image should ideally have a size of 512x512.
-     *
-     * @var string
-     */
-    public $imageData;
-    /**
-     * The actual bytes of the image in a base64url encoded string (c.f. RFC4648,
-     * section 5 "Base 64 Encoding with URL and Filename Safe Alphabet"). - The
-     * image type can be png or jpg. - The image should ideally be square. - The
-     * image should ideally have a size of 512x512.
-     *
-     * @param string $imageData
-     */
-    public function setImageData($imageData)
+namespace Google\Service\AndroidEnterprise {
+    class WebAppIcon extends \Google\Model
     {
+        /**
+         * The actual bytes of the image in a base64url encoded string (c.f. RFC4648,
+         * section 5 "Base 64 Encoding with URL and Filename Safe Alphabet"). - The
+         * image type can be png or jpg. - The image should ideally be square. - The
+         * image should ideally have a size of 512x512.
+         *
+         * @var string
+         */
+        public $imageData;
+        /**
+         * The actual bytes of the image in a base64url encoded string (c.f. RFC4648,
+         * section 5 "Base 64 Encoding with URL and Filename Safe Alphabet"). - The
+         * image type can be png or jpg. - The image should ideally be square. - The
+         * image should ideally have a size of 512x512.
+         *
+         * @param string $imageData
+         */
+        public function setImageData($imageData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidEnterprise\WebAppIcon registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImageData()
+    class Google_Service_AndroidEnterprise_WebAppIcon extends \Google\Service\AndroidEnterprise\WebAppIcon
     {
     }
 }

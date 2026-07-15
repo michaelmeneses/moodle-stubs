@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksReportV1alphaCheckSdkIssueEvidence extends \Google\Model
-{
-    protected $sdkType = GoogleChecksReportV1alphaSdk::class;
-    protected $sdkDataType = '';
-    /**
-     * The SDK version.
-     *
-     * @var string
-     */
-    public $sdkVersion;
-    /**
-     * The SDK with an issue.
-     *
-     * @param GoogleChecksReportV1alphaSdk $sdk
-     */
-    public function setSdk(GoogleChecksReportV1alphaSdk $sdk)
+namespace Google\Service\ChecksService {
+    class GoogleChecksReportV1alphaCheckSdkIssueEvidence extends \Google\Model
     {
+        protected $sdkType = GoogleChecksReportV1alphaSdk::class;
+        protected $sdkDataType = '';
+        /**
+         * The SDK version.
+         *
+         * @var string
+         */
+        public $sdkVersion;
+        /**
+         * The SDK with an issue.
+         *
+         * @param GoogleChecksReportV1alphaSdk $sdk
+         */
+        public function setSdk(GoogleChecksReportV1alphaSdk $sdk)
+        {
+        }
+        /**
+         * @return GoogleChecksReportV1alphaSdk
+         */
+        public function getSdk()
+        {
+        }
+        /**
+         * The SDK version.
+         *
+         * @param string $sdkVersion
+         */
+        public function setSdkVersion($sdkVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSdkVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChecksReportV1alphaSdk
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksReportV1alphaCheckSdkIssueEvidence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSdk()
-    {
-    }
-    /**
-     * The SDK version.
-     *
-     * @param string $sdkVersion
-     */
-    public function setSdkVersion($sdkVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSdkVersion()
+    class Google_Service_ChecksService_GoogleChecksReportV1alphaCheckSdkIssueEvidence extends \Google\Service\ChecksService\GoogleChecksReportV1alphaCheckSdkIssueEvidence
     {
     }
 }

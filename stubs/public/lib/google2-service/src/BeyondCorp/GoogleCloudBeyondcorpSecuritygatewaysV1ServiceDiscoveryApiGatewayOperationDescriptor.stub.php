@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscoveryApiGatewayOperationDescriptor extends \Google\Model
-{
-    /**
-     * Required. Contains the URI path fragment where HTTP request is sent.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Required. Contains the URI path fragment where HTTP request is sent.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscoveryApiGatewayOperationDescriptor extends \Google\Model
     {
+        /**
+         * Required. Contains the URI path fragment where HTTP request is sent.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Required. Contains the URI path fragment where HTTP request is sent.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscoveryApiGatewayOperationDescriptor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPath()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscoveryApiGatewayOperationDescriptor extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscoveryApiGatewayOperationDescriptor
     {
     }
 }

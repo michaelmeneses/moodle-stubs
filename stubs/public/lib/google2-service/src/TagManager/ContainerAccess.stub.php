@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class ContainerAccess extends \Google\Model
-{
-    public const PERMISSION_containerPermissionUnspecified = 'containerPermissionUnspecified';
-    public const PERMISSION_noAccess = 'noAccess';
-    public const PERMISSION_read = 'read';
-    public const PERMISSION_edit = 'edit';
-    public const PERMISSION_approve = 'approve';
-    public const PERMISSION_publish = 'publish';
-    /**
-     * GTM Container ID.
-     *
-     * @var string
-     */
-    public $containerId;
-    /**
-     * List of Container permissions.
-     *
-     * @var string
-     */
-    public $permission;
-    /**
-     * GTM Container ID.
-     *
-     * @param string $containerId
-     */
-    public function setContainerId($containerId)
+namespace Google\Service\TagManager {
+    class ContainerAccess extends \Google\Model
     {
+        public const PERMISSION_containerPermissionUnspecified = 'containerPermissionUnspecified';
+        public const PERMISSION_noAccess = 'noAccess';
+        public const PERMISSION_read = 'read';
+        public const PERMISSION_edit = 'edit';
+        public const PERMISSION_approve = 'approve';
+        public const PERMISSION_publish = 'publish';
+        /**
+         * GTM Container ID.
+         *
+         * @var string
+         */
+        public $containerId;
+        /**
+         * List of Container permissions.
+         *
+         * @var string
+         */
+        public $permission;
+        /**
+         * GTM Container ID.
+         *
+         * @param string $containerId
+         */
+        public function setContainerId($containerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContainerId()
+        {
+        }
+        /**
+         * List of Container permissions.
+         *
+         * Accepted values: containerPermissionUnspecified, noAccess, read, edit,
+         * approve, publish
+         *
+         * @param self::PERMISSION_* $permission
+         */
+        public function setPermission($permission)
+        {
+        }
+        /**
+         * @return self::PERMISSION_*
+         */
+        public function getPermission()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TagManager\ContainerAccess registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainerId()
-    {
-    }
-    /**
-     * List of Container permissions.
-     *
-     * Accepted values: containerPermissionUnspecified, noAccess, read, edit,
-     * approve, publish
-     *
-     * @param self::PERMISSION_* $permission
-     */
-    public function setPermission($permission)
-    {
-    }
-    /**
-     * @return self::PERMISSION_*
-     */
-    public function getPermission()
+    class Google_Service_TagManager_ContainerAccess extends \Google\Service\TagManager\ContainerAccess
     {
     }
 }

@@ -21,126 +21,135 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1PageInfo extends \Google\Model
-{
-    /**
-     * The most specific category associated with a category page. To represent
-     * full path of category, use '>' sign to separate different hierarchies. If
-     * '>' is part of the category name, replace it with other character(s).
-     * Category pages include special pages such as sales or promotions. For
-     * instance, a special sale page may have the category hierarchy:
-     * `"pageCategory" : "Sales > 2017 Black Friday Deals"`. Required for `view-
-     * category-page` events. Other event types should not set this field.
-     * Otherwise, an `INVALID_ARGUMENT` error is returned.
-     *
-     * @var string
-     */
-    public $pageCategory;
-    /**
-     * A unique ID of a web page view. This should be kept the same for all user
-     * events triggered from the same pageview. For example, an item detail page
-     * view could trigger multiple events as the user is browsing the page. The
-     * `pageview_id` property should be kept the same for all these events so that
-     * they can be grouped together properly. When using the client side event
-     * reporting with JavaScript pixel and Google Tag Manager, this value is
-     * filled in automatically.
-     *
-     * @var string
-     */
-    public $pageviewId;
-    /**
-     * The referrer URL of the current page. When using the client side event
-     * reporting with JavaScript pixel and Google Tag Manager, this value is
-     * filled in automatically. However, some browser privacy restrictions may
-     * cause this field to be empty.
-     *
-     * @var string
-     */
-    public $referrerUri;
-    /**
-     * Complete URL (window.location.href) of the user's current page. When using
-     * the client side event reporting with JavaScript pixel and Google Tag
-     * Manager, this value is filled in automatically. Maximum length 5,000
-     * characters.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * The most specific category associated with a category page. To represent
-     * full path of category, use '>' sign to separate different hierarchies. If
-     * '>' is part of the category name, replace it with other character(s).
-     * Category pages include special pages such as sales or promotions. For
-     * instance, a special sale page may have the category hierarchy:
-     * `"pageCategory" : "Sales > 2017 Black Friday Deals"`. Required for `view-
-     * category-page` events. Other event types should not set this field.
-     * Otherwise, an `INVALID_ARGUMENT` error is returned.
-     *
-     * @param string $pageCategory
-     */
-    public function setPageCategory($pageCategory)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1PageInfo extends \Google\Model
     {
+        /**
+         * The most specific category associated with a category page. To represent
+         * full path of category, use '>' sign to separate different hierarchies. If
+         * '>' is part of the category name, replace it with other character(s).
+         * Category pages include special pages such as sales or promotions. For
+         * instance, a special sale page may have the category hierarchy:
+         * `"pageCategory" : "Sales > 2017 Black Friday Deals"`. Required for `view-
+         * category-page` events. Other event types should not set this field.
+         * Otherwise, an `INVALID_ARGUMENT` error is returned.
+         *
+         * @var string
+         */
+        public $pageCategory;
+        /**
+         * A unique ID of a web page view. This should be kept the same for all user
+         * events triggered from the same pageview. For example, an item detail page
+         * view could trigger multiple events as the user is browsing the page. The
+         * `pageview_id` property should be kept the same for all these events so that
+         * they can be grouped together properly. When using the client side event
+         * reporting with JavaScript pixel and Google Tag Manager, this value is
+         * filled in automatically.
+         *
+         * @var string
+         */
+        public $pageviewId;
+        /**
+         * The referrer URL of the current page. When using the client side event
+         * reporting with JavaScript pixel and Google Tag Manager, this value is
+         * filled in automatically. However, some browser privacy restrictions may
+         * cause this field to be empty.
+         *
+         * @var string
+         */
+        public $referrerUri;
+        /**
+         * Complete URL (window.location.href) of the user's current page. When using
+         * the client side event reporting with JavaScript pixel and Google Tag
+         * Manager, this value is filled in automatically. Maximum length 5,000
+         * characters.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * The most specific category associated with a category page. To represent
+         * full path of category, use '>' sign to separate different hierarchies. If
+         * '>' is part of the category name, replace it with other character(s).
+         * Category pages include special pages such as sales or promotions. For
+         * instance, a special sale page may have the category hierarchy:
+         * `"pageCategory" : "Sales > 2017 Black Friday Deals"`. Required for `view-
+         * category-page` events. Other event types should not set this field.
+         * Otherwise, an `INVALID_ARGUMENT` error is returned.
+         *
+         * @param string $pageCategory
+         */
+        public function setPageCategory($pageCategory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageCategory()
+        {
+        }
+        /**
+         * A unique ID of a web page view. This should be kept the same for all user
+         * events triggered from the same pageview. For example, an item detail page
+         * view could trigger multiple events as the user is browsing the page. The
+         * `pageview_id` property should be kept the same for all these events so that
+         * they can be grouped together properly. When using the client side event
+         * reporting with JavaScript pixel and Google Tag Manager, this value is
+         * filled in automatically.
+         *
+         * @param string $pageviewId
+         */
+        public function setPageviewId($pageviewId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageviewId()
+        {
+        }
+        /**
+         * The referrer URL of the current page. When using the client side event
+         * reporting with JavaScript pixel and Google Tag Manager, this value is
+         * filled in automatically. However, some browser privacy restrictions may
+         * cause this field to be empty.
+         *
+         * @param string $referrerUri
+         */
+        public function setReferrerUri($referrerUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferrerUri()
+        {
+        }
+        /**
+         * Complete URL (window.location.href) of the user's current page. When using
+         * the client side event reporting with JavaScript pixel and Google Tag
+         * Manager, this value is filled in automatically. Maximum length 5,000
+         * characters.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1PageInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageCategory()
-    {
-    }
-    /**
-     * A unique ID of a web page view. This should be kept the same for all user
-     * events triggered from the same pageview. For example, an item detail page
-     * view could trigger multiple events as the user is browsing the page. The
-     * `pageview_id` property should be kept the same for all these events so that
-     * they can be grouped together properly. When using the client side event
-     * reporting with JavaScript pixel and Google Tag Manager, this value is
-     * filled in automatically.
-     *
-     * @param string $pageviewId
-     */
-    public function setPageviewId($pageviewId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageviewId()
-    {
-    }
-    /**
-     * The referrer URL of the current page. When using the client side event
-     * reporting with JavaScript pixel and Google Tag Manager, this value is
-     * filled in automatically. However, some browser privacy restrictions may
-     * cause this field to be empty.
-     *
-     * @param string $referrerUri
-     */
-    public function setReferrerUri($referrerUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferrerUri()
-    {
-    }
-    /**
-     * Complete URL (window.location.href) of the user's current page. When using
-     * the client side event reporting with JavaScript pixel and Google Tag
-     * Manager, this value is filled in automatically. Maximum length 5,000
-     * characters.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1PageInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1PageInfo
     {
     }
 }

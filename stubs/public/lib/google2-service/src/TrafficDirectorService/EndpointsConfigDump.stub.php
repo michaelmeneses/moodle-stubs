@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class EndpointsConfigDump extends \Google\Collection
-{
-    protected $collection_key = 'staticEndpointConfigs';
-    protected $dynamicEndpointConfigsType = DynamicEndpointConfig::class;
-    protected $dynamicEndpointConfigsDataType = 'array';
-    protected $staticEndpointConfigsType = StaticEndpointConfig::class;
-    protected $staticEndpointConfigsDataType = 'array';
-    /**
-     * The dynamically loaded endpoint configs.
-     *
-     * @param DynamicEndpointConfig[] $dynamicEndpointConfigs
-     */
-    public function setDynamicEndpointConfigs($dynamicEndpointConfigs)
+namespace Google\Service\TrafficDirectorService {
+    class EndpointsConfigDump extends \Google\Collection
     {
+        protected $collection_key = 'staticEndpointConfigs';
+        protected $dynamicEndpointConfigsType = DynamicEndpointConfig::class;
+        protected $dynamicEndpointConfigsDataType = 'array';
+        protected $staticEndpointConfigsType = StaticEndpointConfig::class;
+        protected $staticEndpointConfigsDataType = 'array';
+        /**
+         * The dynamically loaded endpoint configs.
+         *
+         * @param DynamicEndpointConfig[] $dynamicEndpointConfigs
+         */
+        public function setDynamicEndpointConfigs($dynamicEndpointConfigs)
+        {
+        }
+        /**
+         * @return DynamicEndpointConfig[]
+         */
+        public function getDynamicEndpointConfigs()
+        {
+        }
+        /**
+         * The statically loaded endpoint configs.
+         *
+         * @param StaticEndpointConfig[] $staticEndpointConfigs
+         */
+        public function setStaticEndpointConfigs($staticEndpointConfigs)
+        {
+        }
+        /**
+         * @return StaticEndpointConfig[]
+         */
+        public function getStaticEndpointConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DynamicEndpointConfig[]
+     * Runtime class alias of \Google\Service\TrafficDirectorService\EndpointsConfigDump registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDynamicEndpointConfigs()
-    {
-    }
-    /**
-     * The statically loaded endpoint configs.
-     *
-     * @param StaticEndpointConfig[] $staticEndpointConfigs
-     */
-    public function setStaticEndpointConfigs($staticEndpointConfigs)
-    {
-    }
-    /**
-     * @return StaticEndpointConfig[]
-     */
-    public function getStaticEndpointConfigs()
+    class Google_Service_TrafficDirectorService_EndpointsConfigDump extends \Google\Service\TrafficDirectorService\EndpointsConfigDump
     {
     }
 }

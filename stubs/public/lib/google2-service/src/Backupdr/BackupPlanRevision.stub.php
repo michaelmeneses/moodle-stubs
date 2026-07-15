@@ -21,132 +21,141 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class BackupPlanRevision extends \Google\Model
-{
-    /**
-     * State not set.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The resource is being created.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * The resource has been created and is fully usable.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * The resource is being deleted.
-     */
-    public const STATE_DELETING = 'DELETING';
-    /**
-     * The resource has been created but is not usable.
-     */
-    public const STATE_INACTIVE = 'INACTIVE';
-    protected $backupPlanSnapshotType = BackupPlan::class;
-    protected $backupPlanSnapshotDataType = '';
-    /**
-     * Output only. The timestamp that the revision was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. Identifier. The resource name of the `BackupPlanRevision`.
-     * Format: `projects/{project}/locations/{location}/backupPlans/{backup_plan}/
-     * revisions/{revision}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The user friendly revision ID of the `BackupPlanRevision`.
-     * Example: v0, v1, v2, etc.
-     *
-     * @var string
-     */
-    public $revisionId;
-    /**
-     * Output only. Resource State
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * The Backup Plan being encompassed by this revision.
-     *
-     * @param BackupPlan $backupPlanSnapshot
-     */
-    public function setBackupPlanSnapshot(BackupPlan $backupPlanSnapshot)
+namespace Google\Service\Backupdr {
+    class BackupPlanRevision extends \Google\Model
     {
+        /**
+         * State not set.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The resource is being created.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * The resource has been created and is fully usable.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * The resource is being deleted.
+         */
+        public const STATE_DELETING = 'DELETING';
+        /**
+         * The resource has been created but is not usable.
+         */
+        public const STATE_INACTIVE = 'INACTIVE';
+        protected $backupPlanSnapshotType = BackupPlan::class;
+        protected $backupPlanSnapshotDataType = '';
+        /**
+         * Output only. The timestamp that the revision was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. Identifier. The resource name of the `BackupPlanRevision`.
+         * Format: `projects/{project}/locations/{location}/backupPlans/{backup_plan}/
+         * revisions/{revision}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The user friendly revision ID of the `BackupPlanRevision`.
+         * Example: v0, v1, v2, etc.
+         *
+         * @var string
+         */
+        public $revisionId;
+        /**
+         * Output only. Resource State
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * The Backup Plan being encompassed by this revision.
+         *
+         * @param BackupPlan $backupPlanSnapshot
+         */
+        public function setBackupPlanSnapshot(BackupPlan $backupPlanSnapshot)
+        {
+        }
+        /**
+         * @return BackupPlan
+         */
+        public function getBackupPlanSnapshot()
+        {
+        }
+        /**
+         * Output only. The timestamp that the revision was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. Identifier. The resource name of the `BackupPlanRevision`.
+         * Format: `projects/{project}/locations/{location}/backupPlans/{backup_plan}/
+         * revisions/{revision}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The user friendly revision ID of the `BackupPlanRevision`.
+         * Example: v0, v1, v2, etc.
+         *
+         * @param string $revisionId
+         */
+        public function setRevisionId($revisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionId()
+        {
+        }
+        /**
+         * Output only. Resource State
+         *
+         * Accepted values: STATE_UNSPECIFIED, CREATING, ACTIVE, DELETING, INACTIVE
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BackupPlan
+     * Runtime class alias of \Google\Service\Backupdr\BackupPlanRevision registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupPlanSnapshot()
-    {
-    }
-    /**
-     * Output only. The timestamp that the revision was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. Identifier. The resource name of the `BackupPlanRevision`.
-     * Format: `projects/{project}/locations/{location}/backupPlans/{backup_plan}/
-     * revisions/{revision}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The user friendly revision ID of the `BackupPlanRevision`.
-     * Example: v0, v1, v2, etc.
-     *
-     * @param string $revisionId
-     */
-    public function setRevisionId($revisionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionId()
-    {
-    }
-    /**
-     * Output only. Resource State
-     *
-     * Accepted values: STATE_UNSPECIFIED, CREATING, ACTIVE, DELETING, INACTIVE
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Backupdr_BackupPlanRevision extends \Google\Service\Backupdr\BackupPlanRevision
     {
     }
 }

@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ProcessingError extends \Google\Collection
-{
-    /**
-     * Input only value. Use this value in Items.
-     */
-    public const CODE_PROCESSING_ERROR_CODE_UNSPECIFIED = 'PROCESSING_ERROR_CODE_UNSPECIFIED';
-    /**
-     * Item's ACL, metadata, or content is malformed or in invalid state.
-     * FieldViolations contains more details on where the problem is.
-     */
-    public const CODE_MALFORMED_REQUEST = 'MALFORMED_REQUEST';
-    /**
-     * Countent format is unsupported.
-     */
-    public const CODE_UNSUPPORTED_CONTENT_FORMAT = 'UNSUPPORTED_CONTENT_FORMAT';
-    /**
-     * Items with incomplete ACL information due to inheriting other items with
-     * broken ACL or having groups with unmapped descendants.
-     */
-    public const CODE_INDIRECT_BROKEN_ACL = 'INDIRECT_BROKEN_ACL';
-    /**
-     * ACL inheritance graph formed a cycle.
-     */
-    public const CODE_ACL_CYCLE = 'ACL_CYCLE';
-    protected $collection_key = 'fieldViolations';
-    /**
-     * Error code indicating the nature of the error.
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * The description of the error.
-     *
-     * @var string
-     */
-    public $errorMessage;
-    protected $fieldViolationsType = FieldViolation::class;
-    protected $fieldViolationsDataType = 'array';
-    /**
-     * Error code indicating the nature of the error.
-     *
-     * Accepted values: PROCESSING_ERROR_CODE_UNSPECIFIED, MALFORMED_REQUEST,
-     * UNSUPPORTED_CONTENT_FORMAT, INDIRECT_BROKEN_ACL, ACL_CYCLE
-     *
-     * @param self::CODE_* $code
-     */
-    public function setCode($code)
+namespace Google\Service\CloudSearch {
+    class ProcessingError extends \Google\Collection
     {
+        /**
+         * Input only value. Use this value in Items.
+         */
+        public const CODE_PROCESSING_ERROR_CODE_UNSPECIFIED = 'PROCESSING_ERROR_CODE_UNSPECIFIED';
+        /**
+         * Item's ACL, metadata, or content is malformed or in invalid state.
+         * FieldViolations contains more details on where the problem is.
+         */
+        public const CODE_MALFORMED_REQUEST = 'MALFORMED_REQUEST';
+        /**
+         * Countent format is unsupported.
+         */
+        public const CODE_UNSUPPORTED_CONTENT_FORMAT = 'UNSUPPORTED_CONTENT_FORMAT';
+        /**
+         * Items with incomplete ACL information due to inheriting other items with
+         * broken ACL or having groups with unmapped descendants.
+         */
+        public const CODE_INDIRECT_BROKEN_ACL = 'INDIRECT_BROKEN_ACL';
+        /**
+         * ACL inheritance graph formed a cycle.
+         */
+        public const CODE_ACL_CYCLE = 'ACL_CYCLE';
+        protected $collection_key = 'fieldViolations';
+        /**
+         * Error code indicating the nature of the error.
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * The description of the error.
+         *
+         * @var string
+         */
+        public $errorMessage;
+        protected $fieldViolationsType = FieldViolation::class;
+        protected $fieldViolationsDataType = 'array';
+        /**
+         * Error code indicating the nature of the error.
+         *
+         * Accepted values: PROCESSING_ERROR_CODE_UNSPECIFIED, MALFORMED_REQUEST,
+         * UNSUPPORTED_CONTENT_FORMAT, INDIRECT_BROKEN_ACL, ACL_CYCLE
+         *
+         * @param self::CODE_* $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return self::CODE_*
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * The description of the error.
+         *
+         * @param string $errorMessage
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
+        /**
+         * In case the item fields are invalid, this field contains the details about
+         * the validation errors.
+         *
+         * @param FieldViolation[] $fieldViolations
+         */
+        public function setFieldViolations($fieldViolations)
+        {
+        }
+        /**
+         * @return FieldViolation[]
+         */
+        public function getFieldViolations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CODE_*
+     * Runtime class alias of \Google\Service\CloudSearch\ProcessingError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * The description of the error.
-     *
-     * @param string $errorMessage
-     */
-    public function setErrorMessage($errorMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorMessage()
-    {
-    }
-    /**
-     * In case the item fields are invalid, this field contains the details about
-     * the validation errors.
-     *
-     * @param FieldViolation[] $fieldViolations
-     */
-    public function setFieldViolations($fieldViolations)
-    {
-    }
-    /**
-     * @return FieldViolation[]
-     */
-    public function getFieldViolations()
+    class Google_Service_CloudSearch_ProcessingError extends \Google\Service\CloudSearch\ProcessingError
     {
     }
 }

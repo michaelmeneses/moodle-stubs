@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ImportProductsResponse extends \Google\Collection
-{
-    protected $collection_key = 'errorSamples';
-    protected $errorSamplesType = GoogleRpcStatus::class;
-    protected $errorSamplesDataType = 'array';
-    protected $errorsConfigType = GoogleCloudRetailV2ImportErrorsConfig::class;
-    protected $errorsConfigDataType = '';
-    /**
-     * A sample of errors encountered while processing the request.
-     *
-     * @param GoogleRpcStatus[] $errorSamples
-     */
-    public function setErrorSamples($errorSamples)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ImportProductsResponse extends \Google\Collection
     {
+        protected $collection_key = 'errorSamples';
+        protected $errorSamplesType = GoogleRpcStatus::class;
+        protected $errorSamplesDataType = 'array';
+        protected $errorsConfigType = GoogleCloudRetailV2ImportErrorsConfig::class;
+        protected $errorsConfigDataType = '';
+        /**
+         * A sample of errors encountered while processing the request.
+         *
+         * @param GoogleRpcStatus[] $errorSamples
+         */
+        public function setErrorSamples($errorSamples)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getErrorSamples()
+        {
+        }
+        /**
+         * Echoes the destination for the complete errors in the request if set.
+         *
+         * @param GoogleCloudRetailV2ImportErrorsConfig $errorsConfig
+         */
+        public function setErrorsConfig(GoogleCloudRetailV2ImportErrorsConfig $errorsConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2ImportErrorsConfig
+         */
+        public function getErrorsConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ImportProductsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorSamples()
-    {
-    }
-    /**
-     * Echoes the destination for the complete errors in the request if set.
-     *
-     * @param GoogleCloudRetailV2ImportErrorsConfig $errorsConfig
-     */
-    public function setErrorsConfig(GoogleCloudRetailV2ImportErrorsConfig $errorsConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2ImportErrorsConfig
-     */
-    public function getErrorsConfig()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ImportProductsResponse extends \Google\Service\CloudRetail\GoogleCloudRetailV2ImportProductsResponse
     {
     }
 }

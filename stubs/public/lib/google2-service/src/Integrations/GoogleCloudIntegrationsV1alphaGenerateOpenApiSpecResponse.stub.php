@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaGenerateOpenApiSpecResponse extends \Google\Model
-{
-    /**
-     * Open API spec as per the required format
-     *
-     * @var string
-     */
-    public $openApiSpec;
-    /**
-     * Open API spec as per the required format
-     *
-     * @param string $openApiSpec
-     */
-    public function setOpenApiSpec($openApiSpec)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaGenerateOpenApiSpecResponse extends \Google\Model
     {
+        /**
+         * Open API spec as per the required format
+         *
+         * @var string
+         */
+        public $openApiSpec;
+        /**
+         * Open API spec as per the required format
+         *
+         * @param string $openApiSpec
+         */
+        public function setOpenApiSpec($openApiSpec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOpenApiSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaGenerateOpenApiSpecResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOpenApiSpec()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaGenerateOpenApiSpecResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaGenerateOpenApiSpecResponse
     {
     }
 }

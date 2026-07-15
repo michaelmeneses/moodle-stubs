@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class GetJSONWebKeysResponse extends \Google\Collection
-{
-    protected $collection_key = 'keys';
-    protected $cacheHeaderType = HttpCacheControlResponseHeader::class;
-    protected $cacheHeaderDataType = '';
-    protected $keysType = Jwk::class;
-    protected $keysDataType = 'array';
-    /**
-     * For HTTP requests, this field is automatically extracted into the Cache-
-     * Control HTTP header.
-     *
-     * @param HttpCacheControlResponseHeader $cacheHeader
-     */
-    public function setCacheHeader(HttpCacheControlResponseHeader $cacheHeader)
+namespace Google\Service\Container {
+    class GetJSONWebKeysResponse extends \Google\Collection
     {
+        protected $collection_key = 'keys';
+        protected $cacheHeaderType = HttpCacheControlResponseHeader::class;
+        protected $cacheHeaderDataType = '';
+        protected $keysType = Jwk::class;
+        protected $keysDataType = 'array';
+        /**
+         * For HTTP requests, this field is automatically extracted into the Cache-
+         * Control HTTP header.
+         *
+         * @param HttpCacheControlResponseHeader $cacheHeader
+         */
+        public function setCacheHeader(HttpCacheControlResponseHeader $cacheHeader)
+        {
+        }
+        /**
+         * @return HttpCacheControlResponseHeader
+         */
+        public function getCacheHeader()
+        {
+        }
+        /**
+         * The public component of the keys used by the cluster to sign token
+         * requests.
+         *
+         * @param Jwk[] $keys
+         */
+        public function setKeys($keys)
+        {
+        }
+        /**
+         * @return Jwk[]
+         */
+        public function getKeys()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HttpCacheControlResponseHeader
+     * Runtime class alias of \Google\Service\Container\GetJSONWebKeysResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCacheHeader()
-    {
-    }
-    /**
-     * The public component of the keys used by the cluster to sign token
-     * requests.
-     *
-     * @param Jwk[] $keys
-     */
-    public function setKeys($keys)
-    {
-    }
-    /**
-     * @return Jwk[]
-     */
-    public function getKeys()
+    class Google_Service_Container_GetJSONWebKeysResponse extends \Google\Service\Container\GetJSONWebKeysResponse
     {
     }
 }

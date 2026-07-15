@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class ProgressCounter extends \Google\Model
-{
-    /**
-     * The number of units that failed in the operation.
-     *
-     * @var string
-     */
-    public $failure;
-    /**
-     * The number of units that are pending in the operation.
-     *
-     * @var string
-     */
-    public $pending;
-    /**
-     * The number of secondary units that failed in the operation.
-     *
-     * @var string
-     */
-    public $secondaryFailure;
-    /**
-     * The number of secondary units that succeeded in the operation.
-     *
-     * @var string
-     */
-    public $secondarySuccess;
-    /**
-     * The number of units that succeeded in the operation.
-     *
-     * @var string
-     */
-    public $success;
-    /**
-     * The number of units that failed in the operation.
-     *
-     * @param string $failure
-     */
-    public function setFailure($failure)
+namespace Google\Service\CloudHealthcare {
+    class ProgressCounter extends \Google\Model
     {
+        /**
+         * The number of units that failed in the operation.
+         *
+         * @var string
+         */
+        public $failure;
+        /**
+         * The number of units that are pending in the operation.
+         *
+         * @var string
+         */
+        public $pending;
+        /**
+         * The number of secondary units that failed in the operation.
+         *
+         * @var string
+         */
+        public $secondaryFailure;
+        /**
+         * The number of secondary units that succeeded in the operation.
+         *
+         * @var string
+         */
+        public $secondarySuccess;
+        /**
+         * The number of units that succeeded in the operation.
+         *
+         * @var string
+         */
+        public $success;
+        /**
+         * The number of units that failed in the operation.
+         *
+         * @param string $failure
+         */
+        public function setFailure($failure)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFailure()
+        {
+        }
+        /**
+         * The number of units that are pending in the operation.
+         *
+         * @param string $pending
+         */
+        public function setPending($pending)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPending()
+        {
+        }
+        /**
+         * The number of secondary units that failed in the operation.
+         *
+         * @param string $secondaryFailure
+         */
+        public function setSecondaryFailure($secondaryFailure)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecondaryFailure()
+        {
+        }
+        /**
+         * The number of secondary units that succeeded in the operation.
+         *
+         * @param string $secondarySuccess
+         */
+        public function setSecondarySuccess($secondarySuccess)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecondarySuccess()
+        {
+        }
+        /**
+         * The number of units that succeeded in the operation.
+         *
+         * @param string $success
+         */
+        public function setSuccess($success)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSuccess()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\ProgressCounter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailure()
-    {
-    }
-    /**
-     * The number of units that are pending in the operation.
-     *
-     * @param string $pending
-     */
-    public function setPending($pending)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPending()
-    {
-    }
-    /**
-     * The number of secondary units that failed in the operation.
-     *
-     * @param string $secondaryFailure
-     */
-    public function setSecondaryFailure($secondaryFailure)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecondaryFailure()
-    {
-    }
-    /**
-     * The number of secondary units that succeeded in the operation.
-     *
-     * @param string $secondarySuccess
-     */
-    public function setSecondarySuccess($secondarySuccess)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecondarySuccess()
-    {
-    }
-    /**
-     * The number of units that succeeded in the operation.
-     *
-     * @param string $success
-     */
-    public function setSuccess($success)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSuccess()
+    class Google_Service_CloudHealthcare_ProgressCounter extends \Google\Service\CloudHealthcare\ProgressCounter
     {
     }
 }

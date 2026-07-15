@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reports;
-
-class ActivityNetworkInfo extends \Google\Collection
-{
-    protected $collection_key = 'ipAsn';
-    /**
-     * IP Address of the user doing the action.
-     *
-     * @var int[]
-     */
-    public $ipAsn;
-    /**
-     * ISO 3166-1 alpha-2 region code of the user doing the action.
-     *
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * ISO 3166-2 region code (states and provinces) for countries of the user
-     * doing the action.
-     *
-     * @var string
-     */
-    public $subdivisionCode;
-    /**
-     * IP Address of the user doing the action.
-     *
-     * @param int[] $ipAsn
-     */
-    public function setIpAsn($ipAsn)
+namespace Google\Service\Reports {
+    class ActivityNetworkInfo extends \Google\Collection
     {
+        protected $collection_key = 'ipAsn';
+        /**
+         * IP Address of the user doing the action.
+         *
+         * @var int[]
+         */
+        public $ipAsn;
+        /**
+         * ISO 3166-1 alpha-2 region code of the user doing the action.
+         *
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * ISO 3166-2 region code (states and provinces) for countries of the user
+         * doing the action.
+         *
+         * @var string
+         */
+        public $subdivisionCode;
+        /**
+         * IP Address of the user doing the action.
+         *
+         * @param int[] $ipAsn
+         */
+        public function setIpAsn($ipAsn)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getIpAsn()
+        {
+        }
+        /**
+         * ISO 3166-1 alpha-2 region code of the user doing the action.
+         *
+         * @param string $regionCode
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
+        /**
+         * ISO 3166-2 region code (states and provinces) for countries of the user
+         * doing the action.
+         *
+         * @param string $subdivisionCode
+         */
+        public function setSubdivisionCode($subdivisionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubdivisionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int[]
+     * Runtime class alias of \Google\Service\Reports\ActivityNetworkInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpAsn()
-    {
-    }
-    /**
-     * ISO 3166-1 alpha-2 region code of the user doing the action.
-     *
-     * @param string $regionCode
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
-    {
-    }
-    /**
-     * ISO 3166-2 region code (states and provinces) for countries of the user
-     * doing the action.
-     *
-     * @param string $subdivisionCode
-     */
-    public function setSubdivisionCode($subdivisionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubdivisionCode()
+    class Google_Service_Reports_ActivityNetworkInfo extends \Google\Service\Reports\ActivityNetworkInfo
     {
     }
 }

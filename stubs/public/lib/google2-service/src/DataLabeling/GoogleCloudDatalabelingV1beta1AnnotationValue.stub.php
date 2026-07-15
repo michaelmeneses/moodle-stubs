@@ -21,155 +21,164 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1AnnotationValue extends \Google\Model
-{
-    protected $imageBoundingPolyAnnotationType = GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotation::class;
-    protected $imageBoundingPolyAnnotationDataType = '';
-    protected $imageClassificationAnnotationType = GoogleCloudDatalabelingV1beta1ImageClassificationAnnotation::class;
-    protected $imageClassificationAnnotationDataType = '';
-    protected $imagePolylineAnnotationType = GoogleCloudDatalabelingV1beta1ImagePolylineAnnotation::class;
-    protected $imagePolylineAnnotationDataType = '';
-    protected $imageSegmentationAnnotationType = GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation::class;
-    protected $imageSegmentationAnnotationDataType = '';
-    protected $textClassificationAnnotationType = GoogleCloudDatalabelingV1beta1TextClassificationAnnotation::class;
-    protected $textClassificationAnnotationDataType = '';
-    protected $textEntityExtractionAnnotationType = GoogleCloudDatalabelingV1beta1TextEntityExtractionAnnotation::class;
-    protected $textEntityExtractionAnnotationDataType = '';
-    protected $videoClassificationAnnotationType = GoogleCloudDatalabelingV1beta1VideoClassificationAnnotation::class;
-    protected $videoClassificationAnnotationDataType = '';
-    protected $videoEventAnnotationType = GoogleCloudDatalabelingV1beta1VideoEventAnnotation::class;
-    protected $videoEventAnnotationDataType = '';
-    protected $videoObjectTrackingAnnotationType = GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation::class;
-    protected $videoObjectTrackingAnnotationDataType = '';
-    /**
-     * Annotation value for image bounding box, oriented bounding box and polygon
-     * cases.
-     *
-     * @param GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotation $imageBoundingPolyAnnotation
-     */
-    public function setImageBoundingPolyAnnotation(GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotation $imageBoundingPolyAnnotation)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1AnnotationValue extends \Google\Model
     {
+        protected $imageBoundingPolyAnnotationType = GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotation::class;
+        protected $imageBoundingPolyAnnotationDataType = '';
+        protected $imageClassificationAnnotationType = GoogleCloudDatalabelingV1beta1ImageClassificationAnnotation::class;
+        protected $imageClassificationAnnotationDataType = '';
+        protected $imagePolylineAnnotationType = GoogleCloudDatalabelingV1beta1ImagePolylineAnnotation::class;
+        protected $imagePolylineAnnotationDataType = '';
+        protected $imageSegmentationAnnotationType = GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation::class;
+        protected $imageSegmentationAnnotationDataType = '';
+        protected $textClassificationAnnotationType = GoogleCloudDatalabelingV1beta1TextClassificationAnnotation::class;
+        protected $textClassificationAnnotationDataType = '';
+        protected $textEntityExtractionAnnotationType = GoogleCloudDatalabelingV1beta1TextEntityExtractionAnnotation::class;
+        protected $textEntityExtractionAnnotationDataType = '';
+        protected $videoClassificationAnnotationType = GoogleCloudDatalabelingV1beta1VideoClassificationAnnotation::class;
+        protected $videoClassificationAnnotationDataType = '';
+        protected $videoEventAnnotationType = GoogleCloudDatalabelingV1beta1VideoEventAnnotation::class;
+        protected $videoEventAnnotationDataType = '';
+        protected $videoObjectTrackingAnnotationType = GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation::class;
+        protected $videoObjectTrackingAnnotationDataType = '';
+        /**
+         * Annotation value for image bounding box, oriented bounding box and polygon
+         * cases.
+         *
+         * @param GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotation $imageBoundingPolyAnnotation
+         */
+        public function setImageBoundingPolyAnnotation(GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotation $imageBoundingPolyAnnotation)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotation
+         */
+        public function getImageBoundingPolyAnnotation()
+        {
+        }
+        /**
+         * Annotation value for image classification case.
+         *
+         * @param GoogleCloudDatalabelingV1beta1ImageClassificationAnnotation $imageClassificationAnnotation
+         */
+        public function setImageClassificationAnnotation(GoogleCloudDatalabelingV1beta1ImageClassificationAnnotation $imageClassificationAnnotation)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1ImageClassificationAnnotation
+         */
+        public function getImageClassificationAnnotation()
+        {
+        }
+        /**
+         * Annotation value for image polyline cases. Polyline here is different from
+         * BoundingPoly. It is formed by line segments connected to each other but not
+         * closed form(Bounding Poly). The line segments can cross each other.
+         *
+         * @param GoogleCloudDatalabelingV1beta1ImagePolylineAnnotation $imagePolylineAnnotation
+         */
+        public function setImagePolylineAnnotation(GoogleCloudDatalabelingV1beta1ImagePolylineAnnotation $imagePolylineAnnotation)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1ImagePolylineAnnotation
+         */
+        public function getImagePolylineAnnotation()
+        {
+        }
+        /**
+         * Annotation value for image segmentation.
+         *
+         * @param GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation $imageSegmentationAnnotation
+         */
+        public function setImageSegmentationAnnotation(GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation $imageSegmentationAnnotation)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation
+         */
+        public function getImageSegmentationAnnotation()
+        {
+        }
+        /**
+         * Annotation value for text classification case.
+         *
+         * @param GoogleCloudDatalabelingV1beta1TextClassificationAnnotation $textClassificationAnnotation
+         */
+        public function setTextClassificationAnnotation(GoogleCloudDatalabelingV1beta1TextClassificationAnnotation $textClassificationAnnotation)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1TextClassificationAnnotation
+         */
+        public function getTextClassificationAnnotation()
+        {
+        }
+        /**
+         * Annotation value for text entity extraction case.
+         *
+         * @param GoogleCloudDatalabelingV1beta1TextEntityExtractionAnnotation $textEntityExtractionAnnotation
+         */
+        public function setTextEntityExtractionAnnotation(GoogleCloudDatalabelingV1beta1TextEntityExtractionAnnotation $textEntityExtractionAnnotation)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1TextEntityExtractionAnnotation
+         */
+        public function getTextEntityExtractionAnnotation()
+        {
+        }
+        /**
+         * Annotation value for video classification case.
+         *
+         * @param GoogleCloudDatalabelingV1beta1VideoClassificationAnnotation $videoClassificationAnnotation
+         */
+        public function setVideoClassificationAnnotation(GoogleCloudDatalabelingV1beta1VideoClassificationAnnotation $videoClassificationAnnotation)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1VideoClassificationAnnotation
+         */
+        public function getVideoClassificationAnnotation()
+        {
+        }
+        /**
+         * Annotation value for video event case.
+         *
+         * @param GoogleCloudDatalabelingV1beta1VideoEventAnnotation $videoEventAnnotation
+         */
+        public function setVideoEventAnnotation(GoogleCloudDatalabelingV1beta1VideoEventAnnotation $videoEventAnnotation)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1VideoEventAnnotation
+         */
+        public function getVideoEventAnnotation()
+        {
+        }
+        /**
+         * Annotation value for video object detection and tracking case.
+         *
+         * @param GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation $videoObjectTrackingAnnotation
+         */
+        public function setVideoObjectTrackingAnnotation(GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation $videoObjectTrackingAnnotation)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation
+         */
+        public function getVideoObjectTrackingAnnotation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotation
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1AnnotationValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImageBoundingPolyAnnotation()
-    {
-    }
-    /**
-     * Annotation value for image classification case.
-     *
-     * @param GoogleCloudDatalabelingV1beta1ImageClassificationAnnotation $imageClassificationAnnotation
-     */
-    public function setImageClassificationAnnotation(GoogleCloudDatalabelingV1beta1ImageClassificationAnnotation $imageClassificationAnnotation)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1ImageClassificationAnnotation
-     */
-    public function getImageClassificationAnnotation()
-    {
-    }
-    /**
-     * Annotation value for image polyline cases. Polyline here is different from
-     * BoundingPoly. It is formed by line segments connected to each other but not
-     * closed form(Bounding Poly). The line segments can cross each other.
-     *
-     * @param GoogleCloudDatalabelingV1beta1ImagePolylineAnnotation $imagePolylineAnnotation
-     */
-    public function setImagePolylineAnnotation(GoogleCloudDatalabelingV1beta1ImagePolylineAnnotation $imagePolylineAnnotation)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1ImagePolylineAnnotation
-     */
-    public function getImagePolylineAnnotation()
-    {
-    }
-    /**
-     * Annotation value for image segmentation.
-     *
-     * @param GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation $imageSegmentationAnnotation
-     */
-    public function setImageSegmentationAnnotation(GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation $imageSegmentationAnnotation)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation
-     */
-    public function getImageSegmentationAnnotation()
-    {
-    }
-    /**
-     * Annotation value for text classification case.
-     *
-     * @param GoogleCloudDatalabelingV1beta1TextClassificationAnnotation $textClassificationAnnotation
-     */
-    public function setTextClassificationAnnotation(GoogleCloudDatalabelingV1beta1TextClassificationAnnotation $textClassificationAnnotation)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1TextClassificationAnnotation
-     */
-    public function getTextClassificationAnnotation()
-    {
-    }
-    /**
-     * Annotation value for text entity extraction case.
-     *
-     * @param GoogleCloudDatalabelingV1beta1TextEntityExtractionAnnotation $textEntityExtractionAnnotation
-     */
-    public function setTextEntityExtractionAnnotation(GoogleCloudDatalabelingV1beta1TextEntityExtractionAnnotation $textEntityExtractionAnnotation)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1TextEntityExtractionAnnotation
-     */
-    public function getTextEntityExtractionAnnotation()
-    {
-    }
-    /**
-     * Annotation value for video classification case.
-     *
-     * @param GoogleCloudDatalabelingV1beta1VideoClassificationAnnotation $videoClassificationAnnotation
-     */
-    public function setVideoClassificationAnnotation(GoogleCloudDatalabelingV1beta1VideoClassificationAnnotation $videoClassificationAnnotation)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1VideoClassificationAnnotation
-     */
-    public function getVideoClassificationAnnotation()
-    {
-    }
-    /**
-     * Annotation value for video event case.
-     *
-     * @param GoogleCloudDatalabelingV1beta1VideoEventAnnotation $videoEventAnnotation
-     */
-    public function setVideoEventAnnotation(GoogleCloudDatalabelingV1beta1VideoEventAnnotation $videoEventAnnotation)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1VideoEventAnnotation
-     */
-    public function getVideoEventAnnotation()
-    {
-    }
-    /**
-     * Annotation value for video object detection and tracking case.
-     *
-     * @param GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation $videoObjectTrackingAnnotation
-     */
-    public function setVideoObjectTrackingAnnotation(GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation $videoObjectTrackingAnnotation)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation
-     */
-    public function getVideoObjectTrackingAnnotation()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1AnnotationValue extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1AnnotationValue
     {
     }
 }

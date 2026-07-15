@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class ScriptHandler extends \Google\Model
-{
-    /**
-     * Path to the script from the application root directory.
-     *
-     * @var string
-     */
-    public $scriptPath;
-    /**
-     * Path to the script from the application root directory.
-     *
-     * @param string $scriptPath
-     */
-    public function setScriptPath($scriptPath)
+namespace Google\Service\Appengine {
+    class ScriptHandler extends \Google\Model
     {
+        /**
+         * Path to the script from the application root directory.
+         *
+         * @var string
+         */
+        public $scriptPath;
+        /**
+         * Path to the script from the application root directory.
+         *
+         * @param string $scriptPath
+         */
+        public function setScriptPath($scriptPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScriptPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Appengine\ScriptHandler registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScriptPath()
+    class Google_Service_Appengine_ScriptHandler extends \Google\Service\Appengine\ScriptHandler
     {
     }
 }

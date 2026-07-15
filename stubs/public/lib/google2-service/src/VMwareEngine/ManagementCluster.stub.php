@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class ManagementCluster extends \Google\Model
-{
-    /**
-     * Required. The user-provided identifier of the new `Cluster`. The identifier
-     * must meet the following requirements: * Only contains 1-63 alphanumeric
-     * characters and hyphens * Begins with an alphabetical character * Ends with
-     * a non-hyphen character * Not formatted as a UUID * Complies with [RFC
-     * 1034](https://datatracker.ietf.org/doc/html/rfc1034) (section 3.5)
-     *
-     * @var string
-     */
-    public $clusterId;
-    protected $nodeTypeConfigsType = NodeTypeConfig::class;
-    protected $nodeTypeConfigsDataType = 'map';
-    protected $stretchedClusterConfigType = StretchedClusterConfig::class;
-    protected $stretchedClusterConfigDataType = '';
-    /**
-     * Required. The user-provided identifier of the new `Cluster`. The identifier
-     * must meet the following requirements: * Only contains 1-63 alphanumeric
-     * characters and hyphens * Begins with an alphabetical character * Ends with
-     * a non-hyphen character * Not formatted as a UUID * Complies with [RFC
-     * 1034](https://datatracker.ietf.org/doc/html/rfc1034) (section 3.5)
-     *
-     * @param string $clusterId
-     */
-    public function setClusterId($clusterId)
+namespace Google\Service\VMwareEngine {
+    class ManagementCluster extends \Google\Model
     {
+        /**
+         * Required. The user-provided identifier of the new `Cluster`. The identifier
+         * must meet the following requirements: * Only contains 1-63 alphanumeric
+         * characters and hyphens * Begins with an alphabetical character * Ends with
+         * a non-hyphen character * Not formatted as a UUID * Complies with [RFC
+         * 1034](https://datatracker.ietf.org/doc/html/rfc1034) (section 3.5)
+         *
+         * @var string
+         */
+        public $clusterId;
+        protected $nodeTypeConfigsType = NodeTypeConfig::class;
+        protected $nodeTypeConfigsDataType = 'map';
+        protected $stretchedClusterConfigType = StretchedClusterConfig::class;
+        protected $stretchedClusterConfigDataType = '';
+        /**
+         * Required. The user-provided identifier of the new `Cluster`. The identifier
+         * must meet the following requirements: * Only contains 1-63 alphanumeric
+         * characters and hyphens * Begins with an alphabetical character * Ends with
+         * a non-hyphen character * Not formatted as a UUID * Complies with [RFC
+         * 1034](https://datatracker.ietf.org/doc/html/rfc1034) (section 3.5)
+         *
+         * @param string $clusterId
+         */
+        public function setClusterId($clusterId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterId()
+        {
+        }
+        /**
+         * Required. The map of cluster node types in this cluster, where the key is
+         * canonical identifier of the node type (corresponds to the `NodeType`).
+         *
+         * @param NodeTypeConfig[] $nodeTypeConfigs
+         */
+        public function setNodeTypeConfigs($nodeTypeConfigs)
+        {
+        }
+        /**
+         * @return NodeTypeConfig[]
+         */
+        public function getNodeTypeConfigs()
+        {
+        }
+        /**
+         * Optional. Configuration of a stretched cluster. Required for STRETCHED
+         * private clouds.
+         *
+         * @param StretchedClusterConfig $stretchedClusterConfig
+         */
+        public function setStretchedClusterConfig(StretchedClusterConfig $stretchedClusterConfig)
+        {
+        }
+        /**
+         * @return StretchedClusterConfig
+         */
+        public function getStretchedClusterConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMwareEngine\ManagementCluster registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterId()
-    {
-    }
-    /**
-     * Required. The map of cluster node types in this cluster, where the key is
-     * canonical identifier of the node type (corresponds to the `NodeType`).
-     *
-     * @param NodeTypeConfig[] $nodeTypeConfigs
-     */
-    public function setNodeTypeConfigs($nodeTypeConfigs)
-    {
-    }
-    /**
-     * @return NodeTypeConfig[]
-     */
-    public function getNodeTypeConfigs()
-    {
-    }
-    /**
-     * Optional. Configuration of a stretched cluster. Required for STRETCHED
-     * private clouds.
-     *
-     * @param StretchedClusterConfig $stretchedClusterConfig
-     */
-    public function setStretchedClusterConfig(StretchedClusterConfig $stretchedClusterConfig)
-    {
-    }
-    /**
-     * @return StretchedClusterConfig
-     */
-    public function getStretchedClusterConfig()
+    class Google_Service_VMwareEngine_ManagementCluster extends \Google\Service\VMwareEngine\ManagementCluster
     {
     }
 }

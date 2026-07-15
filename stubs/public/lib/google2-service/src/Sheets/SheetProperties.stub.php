@@ -21,236 +21,245 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class SheetProperties extends \Google\Model
-{
-    /**
-     * Default value, do not use.
-     */
-    public const SHEET_TYPE_SHEET_TYPE_UNSPECIFIED = 'SHEET_TYPE_UNSPECIFIED';
-    /**
-     * The sheet is a grid.
-     */
-    public const SHEET_TYPE_GRID = 'GRID';
-    /**
-     * The sheet has no grid and instead has an object like a chart or image.
-     */
-    public const SHEET_TYPE_OBJECT = 'OBJECT';
-    /**
-     * The sheet connects with an external DataSource and shows the preview of
-     * data.
-     */
-    public const SHEET_TYPE_DATA_SOURCE = 'DATA_SOURCE';
-    protected $dataSourceSheetPropertiesType = DataSourceSheetProperties::class;
-    protected $dataSourceSheetPropertiesDataType = '';
-    protected $gridPropertiesType = GridProperties::class;
-    protected $gridPropertiesDataType = '';
-    /**
-     * True if the sheet is hidden in the UI, false if it's visible.
-     *
-     * @var bool
-     */
-    public $hidden;
-    /**
-     * The index of the sheet within the spreadsheet. When adding or updating
-     * sheet properties, if this field is excluded then the sheet is added or
-     * moved to the end of the sheet list. When updating sheet indices or
-     * inserting sheets, movement is considered in "before the move" indexes. For
-     * example, if there were three sheets (S1, S2, S3) in order to move S1 ahead
-     * of S2 the index would have to be set to 2. A sheet index update request is
-     * ignored if the requested index is identical to the sheets current index or
-     * if the requested new index is equal to the current sheet index + 1.
-     *
-     * @var int
-     */
-    public $index;
-    /**
-     * True if the sheet is an RTL sheet instead of an LTR sheet.
-     *
-     * @var bool
-     */
-    public $rightToLeft;
-    /**
-     * The ID of the sheet. Must be non-negative. This field cannot be changed
-     * once set.
-     *
-     * @var int
-     */
-    public $sheetId;
-    /**
-     * The type of sheet. Defaults to GRID. This field cannot be changed once set.
-     *
-     * @var string
-     */
-    public $sheetType;
-    protected $tabColorType = Color::class;
-    protected $tabColorDataType = '';
-    protected $tabColorStyleType = ColorStyle::class;
-    protected $tabColorStyleDataType = '';
-    /**
-     * The name of the sheet.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Output only. If present, the field contains DATA_SOURCE sheet specific
-     * properties.
-     *
-     * @param DataSourceSheetProperties $dataSourceSheetProperties
-     */
-    public function setDataSourceSheetProperties(DataSourceSheetProperties $dataSourceSheetProperties)
+namespace Google\Service\Sheets {
+    class SheetProperties extends \Google\Model
     {
+        /**
+         * Default value, do not use.
+         */
+        public const SHEET_TYPE_SHEET_TYPE_UNSPECIFIED = 'SHEET_TYPE_UNSPECIFIED';
+        /**
+         * The sheet is a grid.
+         */
+        public const SHEET_TYPE_GRID = 'GRID';
+        /**
+         * The sheet has no grid and instead has an object like a chart or image.
+         */
+        public const SHEET_TYPE_OBJECT = 'OBJECT';
+        /**
+         * The sheet connects with an external DataSource and shows the preview of
+         * data.
+         */
+        public const SHEET_TYPE_DATA_SOURCE = 'DATA_SOURCE';
+        protected $dataSourceSheetPropertiesType = DataSourceSheetProperties::class;
+        protected $dataSourceSheetPropertiesDataType = '';
+        protected $gridPropertiesType = GridProperties::class;
+        protected $gridPropertiesDataType = '';
+        /**
+         * True if the sheet is hidden in the UI, false if it's visible.
+         *
+         * @var bool
+         */
+        public $hidden;
+        /**
+         * The index of the sheet within the spreadsheet. When adding or updating
+         * sheet properties, if this field is excluded then the sheet is added or
+         * moved to the end of the sheet list. When updating sheet indices or
+         * inserting sheets, movement is considered in "before the move" indexes. For
+         * example, if there were three sheets (S1, S2, S3) in order to move S1 ahead
+         * of S2 the index would have to be set to 2. A sheet index update request is
+         * ignored if the requested index is identical to the sheets current index or
+         * if the requested new index is equal to the current sheet index + 1.
+         *
+         * @var int
+         */
+        public $index;
+        /**
+         * True if the sheet is an RTL sheet instead of an LTR sheet.
+         *
+         * @var bool
+         */
+        public $rightToLeft;
+        /**
+         * The ID of the sheet. Must be non-negative. This field cannot be changed
+         * once set.
+         *
+         * @var int
+         */
+        public $sheetId;
+        /**
+         * The type of sheet. Defaults to GRID. This field cannot be changed once set.
+         *
+         * @var string
+         */
+        public $sheetType;
+        protected $tabColorType = Color::class;
+        protected $tabColorDataType = '';
+        protected $tabColorStyleType = ColorStyle::class;
+        protected $tabColorStyleDataType = '';
+        /**
+         * The name of the sheet.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Output only. If present, the field contains DATA_SOURCE sheet specific
+         * properties.
+         *
+         * @param DataSourceSheetProperties $dataSourceSheetProperties
+         */
+        public function setDataSourceSheetProperties(DataSourceSheetProperties $dataSourceSheetProperties)
+        {
+        }
+        /**
+         * @return DataSourceSheetProperties
+         */
+        public function getDataSourceSheetProperties()
+        {
+        }
+        /**
+         * Additional properties of the sheet if this sheet is a grid. (If the sheet
+         * is an object sheet, containing a chart or image, then this field will be
+         * absent.) When writing it is an error to set any grid properties on non-grid
+         * sheets. If this sheet is a DATA_SOURCE sheet, this field is output only but
+         * contains the properties that reflect how a data source sheet is rendered in
+         * the UI, e.g. row_count.
+         *
+         * @param GridProperties $gridProperties
+         */
+        public function setGridProperties(GridProperties $gridProperties)
+        {
+        }
+        /**
+         * @return GridProperties
+         */
+        public function getGridProperties()
+        {
+        }
+        /**
+         * True if the sheet is hidden in the UI, false if it's visible.
+         *
+         * @param bool $hidden
+         */
+        public function setHidden($hidden)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHidden()
+        {
+        }
+        /**
+         * The index of the sheet within the spreadsheet. When adding or updating
+         * sheet properties, if this field is excluded then the sheet is added or
+         * moved to the end of the sheet list. When updating sheet indices or
+         * inserting sheets, movement is considered in "before the move" indexes. For
+         * example, if there were three sheets (S1, S2, S3) in order to move S1 ahead
+         * of S2 the index would have to be set to 2. A sheet index update request is
+         * ignored if the requested index is identical to the sheets current index or
+         * if the requested new index is equal to the current sheet index + 1.
+         *
+         * @param int $index
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIndex()
+        {
+        }
+        /**
+         * True if the sheet is an RTL sheet instead of an LTR sheet.
+         *
+         * @param bool $rightToLeft
+         */
+        public function setRightToLeft($rightToLeft)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRightToLeft()
+        {
+        }
+        /**
+         * The ID of the sheet. Must be non-negative. This field cannot be changed
+         * once set.
+         *
+         * @param int $sheetId
+         */
+        public function setSheetId($sheetId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSheetId()
+        {
+        }
+        /**
+         * The type of sheet. Defaults to GRID. This field cannot be changed once set.
+         *
+         * Accepted values: SHEET_TYPE_UNSPECIFIED, GRID, OBJECT, DATA_SOURCE
+         *
+         * @param self::SHEET_TYPE_* $sheetType
+         */
+        public function setSheetType($sheetType)
+        {
+        }
+        /**
+         * @return self::SHEET_TYPE_*
+         */
+        public function getSheetType()
+        {
+        }
+        /**
+         * The color of the tab in the UI. Deprecated: Use tab_color_style.
+         *
+         * @deprecated
+         * @param Color $tabColor
+         */
+        public function setTabColor(Color $tabColor)
+        {
+        }
+        /**
+         * @deprecated
+         * @return Color
+         */
+        public function getTabColor()
+        {
+        }
+        /**
+         * The color of the tab in the UI. If tab_color is also set, this field takes
+         * precedence.
+         *
+         * @param ColorStyle $tabColorStyle
+         */
+        public function setTabColorStyle(ColorStyle $tabColorStyle)
+        {
+        }
+        /**
+         * @return ColorStyle
+         */
+        public function getTabColorStyle()
+        {
+        }
+        /**
+         * The name of the sheet.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataSourceSheetProperties
+     * Runtime class alias of \Google\Service\Sheets\SheetProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataSourceSheetProperties()
-    {
-    }
-    /**
-     * Additional properties of the sheet if this sheet is a grid. (If the sheet
-     * is an object sheet, containing a chart or image, then this field will be
-     * absent.) When writing it is an error to set any grid properties on non-grid
-     * sheets. If this sheet is a DATA_SOURCE sheet, this field is output only but
-     * contains the properties that reflect how a data source sheet is rendered in
-     * the UI, e.g. row_count.
-     *
-     * @param GridProperties $gridProperties
-     */
-    public function setGridProperties(GridProperties $gridProperties)
-    {
-    }
-    /**
-     * @return GridProperties
-     */
-    public function getGridProperties()
-    {
-    }
-    /**
-     * True if the sheet is hidden in the UI, false if it's visible.
-     *
-     * @param bool $hidden
-     */
-    public function setHidden($hidden)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHidden()
-    {
-    }
-    /**
-     * The index of the sheet within the spreadsheet. When adding or updating
-     * sheet properties, if this field is excluded then the sheet is added or
-     * moved to the end of the sheet list. When updating sheet indices or
-     * inserting sheets, movement is considered in "before the move" indexes. For
-     * example, if there were three sheets (S1, S2, S3) in order to move S1 ahead
-     * of S2 the index would have to be set to 2. A sheet index update request is
-     * ignored if the requested index is identical to the sheets current index or
-     * if the requested new index is equal to the current sheet index + 1.
-     *
-     * @param int $index
-     */
-    public function setIndex($index)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIndex()
-    {
-    }
-    /**
-     * True if the sheet is an RTL sheet instead of an LTR sheet.
-     *
-     * @param bool $rightToLeft
-     */
-    public function setRightToLeft($rightToLeft)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRightToLeft()
-    {
-    }
-    /**
-     * The ID of the sheet. Must be non-negative. This field cannot be changed
-     * once set.
-     *
-     * @param int $sheetId
-     */
-    public function setSheetId($sheetId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSheetId()
-    {
-    }
-    /**
-     * The type of sheet. Defaults to GRID. This field cannot be changed once set.
-     *
-     * Accepted values: SHEET_TYPE_UNSPECIFIED, GRID, OBJECT, DATA_SOURCE
-     *
-     * @param self::SHEET_TYPE_* $sheetType
-     */
-    public function setSheetType($sheetType)
-    {
-    }
-    /**
-     * @return self::SHEET_TYPE_*
-     */
-    public function getSheetType()
-    {
-    }
-    /**
-     * The color of the tab in the UI. Deprecated: Use tab_color_style.
-     *
-     * @deprecated
-     * @param Color $tabColor
-     */
-    public function setTabColor(Color $tabColor)
-    {
-    }
-    /**
-     * @deprecated
-     * @return Color
-     */
-    public function getTabColor()
-    {
-    }
-    /**
-     * The color of the tab in the UI. If tab_color is also set, this field takes
-     * precedence.
-     *
-     * @param ColorStyle $tabColorStyle
-     */
-    public function setTabColorStyle(ColorStyle $tabColorStyle)
-    {
-    }
-    /**
-     * @return ColorStyle
-     */
-    public function getTabColorStyle()
-    {
-    }
-    /**
-     * The name of the sheet.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Sheets_SheetProperties extends \Google\Service\Sheets\SheetProperties
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class ListBidMetricsResponse extends \Google\Collection
-{
-    protected $collection_key = 'bidMetricsRows';
-    protected $bidMetricsRowsType = BidMetricsRow::class;
-    protected $bidMetricsRowsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * ListBidMetricsRequest.pageToken field in the subsequent call to the
-     * bidMetrics.list method to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of rows, each containing a set of bid metrics.
-     *
-     * @param BidMetricsRow[] $bidMetricsRows
-     */
-    public function setBidMetricsRows($bidMetricsRows)
+namespace Google\Service\AdExchangeBuyerII {
+    class ListBidMetricsResponse extends \Google\Collection
     {
+        protected $collection_key = 'bidMetricsRows';
+        protected $bidMetricsRowsType = BidMetricsRow::class;
+        protected $bidMetricsRowsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * ListBidMetricsRequest.pageToken field in the subsequent call to the
+         * bidMetrics.list method to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of rows, each containing a set of bid metrics.
+         *
+         * @param BidMetricsRow[] $bidMetricsRows
+         */
+        public function setBidMetricsRows($bidMetricsRows)
+        {
+        }
+        /**
+         * @return BidMetricsRow[]
+         */
+        public function getBidMetricsRows()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * ListBidMetricsRequest.pageToken field in the subsequent call to the
+         * bidMetrics.list method to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BidMetricsRow[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\ListBidMetricsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBidMetricsRows()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * ListBidMetricsRequest.pageToken field in the subsequent call to the
-     * bidMetrics.list method to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AdExchangeBuyerII_ListBidMetricsResponse extends \Google\Service\AdExchangeBuyerII\ListBidMetricsResponse
     {
     }
 }

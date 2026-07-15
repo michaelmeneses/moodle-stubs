@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectsGetMacsecConfigResponse extends \Google\Model
-{
-    /**
-     * end_interface: MixerGetResponseWithEtagBuilder
-     *
-     * @var string
-     */
-    public $etag;
-    protected $resultType = InterconnectMacsecConfig::class;
-    protected $resultDataType = '';
-    /**
-     * end_interface: MixerGetResponseWithEtagBuilder
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Compute {
+    class InterconnectsGetMacsecConfigResponse extends \Google\Model
     {
+        /**
+         * end_interface: MixerGetResponseWithEtagBuilder
+         *
+         * @var string
+         */
+        public $etag;
+        protected $resultType = InterconnectMacsecConfig::class;
+        protected $resultDataType = '';
+        /**
+         * end_interface: MixerGetResponseWithEtagBuilder
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * @param InterconnectMacsecConfig $result
+         */
+        public function setResult(InterconnectMacsecConfig $result)
+        {
+        }
+        /**
+         * @return InterconnectMacsecConfig
+         */
+        public function getResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InterconnectsGetMacsecConfigResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * @param InterconnectMacsecConfig $result
-     */
-    public function setResult(InterconnectMacsecConfig $result)
-    {
-    }
-    /**
-     * @return InterconnectMacsecConfig
-     */
-    public function getResult()
+    class Google_Service_Compute_InterconnectsGetMacsecConfigResponse extends \Google\Service\Compute\InterconnectsGetMacsecConfigResponse
     {
     }
 }

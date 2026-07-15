@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2IntentMessageTableCard extends \Google\Collection
-{
-    protected $collection_key = 'rows';
-    protected $buttonsType = GoogleCloudDialogflowV2IntentMessageBasicCardButton::class;
-    protected $buttonsDataType = 'array';
-    protected $columnPropertiesType = GoogleCloudDialogflowV2IntentMessageColumnProperties::class;
-    protected $columnPropertiesDataType = 'array';
-    protected $imageType = GoogleCloudDialogflowV2IntentMessageImage::class;
-    protected $imageDataType = '';
-    protected $rowsType = GoogleCloudDialogflowV2IntentMessageTableCardRow::class;
-    protected $rowsDataType = 'array';
-    /**
-     * Optional. Subtitle to the title.
-     *
-     * @var string
-     */
-    public $subtitle;
-    /**
-     * Required. Title of the card.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Optional. List of buttons for the card.
-     *
-     * @param GoogleCloudDialogflowV2IntentMessageBasicCardButton[] $buttons
-     */
-    public function setButtons($buttons)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2IntentMessageTableCard extends \Google\Collection
     {
+        protected $collection_key = 'rows';
+        protected $buttonsType = GoogleCloudDialogflowV2IntentMessageBasicCardButton::class;
+        protected $buttonsDataType = 'array';
+        protected $columnPropertiesType = GoogleCloudDialogflowV2IntentMessageColumnProperties::class;
+        protected $columnPropertiesDataType = 'array';
+        protected $imageType = GoogleCloudDialogflowV2IntentMessageImage::class;
+        protected $imageDataType = '';
+        protected $rowsType = GoogleCloudDialogflowV2IntentMessageTableCardRow::class;
+        protected $rowsDataType = 'array';
+        /**
+         * Optional. Subtitle to the title.
+         *
+         * @var string
+         */
+        public $subtitle;
+        /**
+         * Required. Title of the card.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Optional. List of buttons for the card.
+         *
+         * @param GoogleCloudDialogflowV2IntentMessageBasicCardButton[] $buttons
+         */
+        public function setButtons($buttons)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2IntentMessageBasicCardButton[]
+         */
+        public function getButtons()
+        {
+        }
+        /**
+         * Optional. Display properties for the columns in this table.
+         *
+         * @param GoogleCloudDialogflowV2IntentMessageColumnProperties[] $columnProperties
+         */
+        public function setColumnProperties($columnProperties)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2IntentMessageColumnProperties[]
+         */
+        public function getColumnProperties()
+        {
+        }
+        /**
+         * Optional. Image which should be displayed on the card.
+         *
+         * @param GoogleCloudDialogflowV2IntentMessageImage $image
+         */
+        public function setImage(GoogleCloudDialogflowV2IntentMessageImage $image)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2IntentMessageImage
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * Optional. Rows in this table of data.
+         *
+         * @param GoogleCloudDialogflowV2IntentMessageTableCardRow[] $rows
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2IntentMessageTableCardRow[]
+         */
+        public function getRows()
+        {
+        }
+        /**
+         * Optional. Subtitle to the title.
+         *
+         * @param string $subtitle
+         */
+        public function setSubtitle($subtitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubtitle()
+        {
+        }
+        /**
+         * Required. Title of the card.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2IntentMessageBasicCardButton[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2IntentMessageTableCard registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getButtons()
-    {
-    }
-    /**
-     * Optional. Display properties for the columns in this table.
-     *
-     * @param GoogleCloudDialogflowV2IntentMessageColumnProperties[] $columnProperties
-     */
-    public function setColumnProperties($columnProperties)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2IntentMessageColumnProperties[]
-     */
-    public function getColumnProperties()
-    {
-    }
-    /**
-     * Optional. Image which should be displayed on the card.
-     *
-     * @param GoogleCloudDialogflowV2IntentMessageImage $image
-     */
-    public function setImage(GoogleCloudDialogflowV2IntentMessageImage $image)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2IntentMessageImage
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * Optional. Rows in this table of data.
-     *
-     * @param GoogleCloudDialogflowV2IntentMessageTableCardRow[] $rows
-     */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2IntentMessageTableCardRow[]
-     */
-    public function getRows()
-    {
-    }
-    /**
-     * Optional. Subtitle to the title.
-     *
-     * @param string $subtitle
-     */
-    public function setSubtitle($subtitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubtitle()
-    {
-    }
-    /**
-     * Required. Title of the card.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2IntentMessageTableCard extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2IntentMessageTableCard
     {
     }
 }

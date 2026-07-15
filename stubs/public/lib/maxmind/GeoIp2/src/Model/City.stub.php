@@ -8,6 +8,10 @@
  */
 namespace GeoIp2\Model;
 
+use GeoIp2\Record\City as CityRecord;
+use GeoIp2\Record\Location;
+use GeoIp2\Record\Postal;
+use GeoIp2\Record\Subdivision;
 /**
  * Model class for the data returned by City Plus web service and City
  * database.

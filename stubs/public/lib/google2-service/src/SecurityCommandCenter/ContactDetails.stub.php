@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class ContactDetails extends \Google\Collection
-{
-    protected $collection_key = 'contacts';
-    protected $contactsType = Contact::class;
-    protected $contactsDataType = 'array';
-    /**
-     * A list of contacts
-     *
-     * @param Contact[] $contacts
-     */
-    public function setContacts($contacts)
+namespace Google\Service\SecurityCommandCenter {
+    class ContactDetails extends \Google\Collection
     {
+        protected $collection_key = 'contacts';
+        protected $contactsType = Contact::class;
+        protected $contactsDataType = 'array';
+        /**
+         * A list of contacts
+         *
+         * @param Contact[] $contacts
+         */
+        public function setContacts($contacts)
+        {
+        }
+        /**
+         * @return Contact[]
+         */
+        public function getContacts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Contact[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\ContactDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContacts()
+    class Google_Service_SecurityCommandCenter_ContactDetails extends \Google\Service\SecurityCommandCenter\ContactDetails
     {
     }
 }

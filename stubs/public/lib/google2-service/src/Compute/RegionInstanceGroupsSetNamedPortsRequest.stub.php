@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RegionInstanceGroupsSetNamedPortsRequest extends \Google\Collection
-{
-    protected $collection_key = 'namedPorts';
-    /**
-     * The fingerprint of the named ports information for this instance group. Use
-     * this optional property to prevent conflicts when multiple users change the
-     * named ports settings concurrently. Obtain the fingerprint with
-     * theinstanceGroups.get method. Then, include the fingerprint in your request
-     * to ensure that you do not overwrite changes that were applied from another
-     * concurrent request.
-     *
-     * @var string
-     */
-    public $fingerprint;
-    protected $namedPortsType = NamedPort::class;
-    protected $namedPortsDataType = 'array';
-    /**
-     * The fingerprint of the named ports information for this instance group. Use
-     * this optional property to prevent conflicts when multiple users change the
-     * named ports settings concurrently. Obtain the fingerprint with
-     * theinstanceGroups.get method. Then, include the fingerprint in your request
-     * to ensure that you do not overwrite changes that were applied from another
-     * concurrent request.
-     *
-     * @param string $fingerprint
-     */
-    public function setFingerprint($fingerprint)
+namespace Google\Service\Compute {
+    class RegionInstanceGroupsSetNamedPortsRequest extends \Google\Collection
     {
+        protected $collection_key = 'namedPorts';
+        /**
+         * The fingerprint of the named ports information for this instance group. Use
+         * this optional property to prevent conflicts when multiple users change the
+         * named ports settings concurrently. Obtain the fingerprint with
+         * theinstanceGroups.get method. Then, include the fingerprint in your request
+         * to ensure that you do not overwrite changes that were applied from another
+         * concurrent request.
+         *
+         * @var string
+         */
+        public $fingerprint;
+        protected $namedPortsType = NamedPort::class;
+        protected $namedPortsDataType = 'array';
+        /**
+         * The fingerprint of the named ports information for this instance group. Use
+         * this optional property to prevent conflicts when multiple users change the
+         * named ports settings concurrently. Obtain the fingerprint with
+         * theinstanceGroups.get method. Then, include the fingerprint in your request
+         * to ensure that you do not overwrite changes that were applied from another
+         * concurrent request.
+         *
+         * @param string $fingerprint
+         */
+        public function setFingerprint($fingerprint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFingerprint()
+        {
+        }
+        /**
+         * The list of named ports to set for this instance group.
+         *
+         * @param NamedPort[] $namedPorts
+         */
+        public function setNamedPorts($namedPorts)
+        {
+        }
+        /**
+         * @return NamedPort[]
+         */
+        public function getNamedPorts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\RegionInstanceGroupsSetNamedPortsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFingerprint()
-    {
-    }
-    /**
-     * The list of named ports to set for this instance group.
-     *
-     * @param NamedPort[] $namedPorts
-     */
-    public function setNamedPorts($namedPorts)
-    {
-    }
-    /**
-     * @return NamedPort[]
-     */
-    public function getNamedPorts()
+    class Google_Service_Compute_RegionInstanceGroupsSetNamedPortsRequest extends \Google\Service\Compute\RegionInstanceGroupsSetNamedPortsRequest
     {
     }
 }

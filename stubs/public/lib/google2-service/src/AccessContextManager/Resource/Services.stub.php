@@ -21,44 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager\Resource;
-
-/**
- * The "services" collection of methods.
- * Typical usage is:
- *  <code>
- *   $accesscontextmanagerService = new Google\Service\AccessContextManager(...);
- *   $services = $accesscontextmanagerService->services;
- *  </code>
- */
-class Services extends \Google\Service\Resource
-{
+namespace Google\Service\AccessContextManager\Resource {
+    use Google\Service\AccessContextManager\ListSupportedServicesResponse;
+    use Google\Service\AccessContextManager\SupportedService;
     /**
-     * Returns a VPC-SC supported service based on the service name. (services.get)
-     *
-     * @param string $name The name of the service to get information about. The
-     * names must be in the same format as used in defining a service perimeter, for
-     * example, `storage.googleapis.com`.
-     * @param array $optParams Optional parameters.
-     * @return SupportedService
-     * @throws \Google\Service\Exception
+     * The "services" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $accesscontextmanagerService = new Google\Service\AccessContextManager(...);
+     *   $services = $accesscontextmanagerService->services;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class Services extends \Google\Service\Resource
     {
+        /**
+         * Returns a VPC-SC supported service based on the service name. (services.get)
+         *
+         * @param string $name The name of the service to get information about. The
+         * names must be in the same format as used in defining a service perimeter, for
+         * example, `storage.googleapis.com`.
+         * @param array $optParams Optional parameters.
+         * @return SupportedService
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all VPC-SC supported services. (services.listServices)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize This flag specifies the maximum number of services to
+         * return per page. Default is 100.
+         * @opt_param string pageToken Token to start on a later page. Default is the
+         * first page.
+         * @return ListSupportedServicesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listServices($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists all VPC-SC supported services. (services.listServices)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize This flag specifies the maximum number of services to
-     * return per page. Default is 100.
-     * @opt_param string pageToken Token to start on a later page. Default is the
-     * first page.
-     * @return ListSupportedServicesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AccessContextManager\Resource\Services registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listServices($optParams = [])
+    class Google_Service_AccessContextManager_Resource_Services extends \Google\Service\AccessContextManager\Resource\Services
     {
     }
 }

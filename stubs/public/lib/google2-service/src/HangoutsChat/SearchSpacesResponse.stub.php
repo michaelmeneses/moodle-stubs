@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class SearchSpacesResponse extends \Google\Collection
-{
-    protected $collection_key = 'spaces';
-    /**
-     * A token that can be used to retrieve the next page. If this field is empty,
-     * there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $spacesType = Space::class;
-    protected $spacesDataType = 'array';
-    /**
-     * The total number of spaces that match the query, across all pages. If the
-     * result is over 10,000 spaces, this value is an estimate.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * A token that can be used to retrieve the next page. If this field is empty,
-     * there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\HangoutsChat {
+    class SearchSpacesResponse extends \Google\Collection
     {
+        protected $collection_key = 'spaces';
+        /**
+         * A token that can be used to retrieve the next page. If this field is empty,
+         * there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $spacesType = Space::class;
+        protected $spacesDataType = 'array';
+        /**
+         * The total number of spaces that match the query, across all pages. If the
+         * result is over 10,000 spaces, this value is an estimate.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * A token that can be used to retrieve the next page. If this field is empty,
+         * there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A page of the requested spaces.
+         *
+         * @param Space[] $spaces
+         */
+        public function setSpaces($spaces)
+        {
+        }
+        /**
+         * @return Space[]
+         */
+        public function getSpaces()
+        {
+        }
+        /**
+         * The total number of spaces that match the query, across all pages. If the
+         * result is over 10,000 spaces, this value is an estimate.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\SearchSpacesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A page of the requested spaces.
-     *
-     * @param Space[] $spaces
-     */
-    public function setSpaces($spaces)
-    {
-    }
-    /**
-     * @return Space[]
-     */
-    public function getSpaces()
-    {
-    }
-    /**
-     * The total number of spaces that match the query, across all pages. If the
-     * result is over 10,000 spaces, this value is an estimate.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_HangoutsChat_SearchSpacesResponse extends \Google\Service\HangoutsChat\SearchSpacesResponse
     {
     }
 }

@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class MaintenanceUpdatePolicy extends \Google\Collection
-{
-    protected $collection_key = 'maintenanceWindows';
-    protected $denyMaintenancePeriodsType = DenyMaintenancePeriod::class;
-    protected $denyMaintenancePeriodsDataType = 'array';
-    protected $maintenanceWindowsType = MaintenanceWindow::class;
-    protected $maintenanceWindowsDataType = 'array';
-    /**
-     * Periods to deny maintenance. Currently limited to 1.
-     *
-     * @param DenyMaintenancePeriod[] $denyMaintenancePeriods
-     */
-    public function setDenyMaintenancePeriods($denyMaintenancePeriods)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class MaintenanceUpdatePolicy extends \Google\Collection
     {
+        protected $collection_key = 'maintenanceWindows';
+        protected $denyMaintenancePeriodsType = DenyMaintenancePeriod::class;
+        protected $denyMaintenancePeriodsDataType = 'array';
+        protected $maintenanceWindowsType = MaintenanceWindow::class;
+        protected $maintenanceWindowsDataType = 'array';
+        /**
+         * Periods to deny maintenance. Currently limited to 1.
+         *
+         * @param DenyMaintenancePeriod[] $denyMaintenancePeriods
+         */
+        public function setDenyMaintenancePeriods($denyMaintenancePeriods)
+        {
+        }
+        /**
+         * @return DenyMaintenancePeriod[]
+         */
+        public function getDenyMaintenancePeriods()
+        {
+        }
+        /**
+         * Preferred windows to perform maintenance. Currently limited to 1.
+         *
+         * @param MaintenanceWindow[] $maintenanceWindows
+         */
+        public function setMaintenanceWindows($maintenanceWindows)
+        {
+        }
+        /**
+         * @return MaintenanceWindow[]
+         */
+        public function getMaintenanceWindows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DenyMaintenancePeriod[]
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\MaintenanceUpdatePolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDenyMaintenancePeriods()
-    {
-    }
-    /**
-     * Preferred windows to perform maintenance. Currently limited to 1.
-     *
-     * @param MaintenanceWindow[] $maintenanceWindows
-     */
-    public function setMaintenanceWindows($maintenanceWindows)
-    {
-    }
-    /**
-     * @return MaintenanceWindow[]
-     */
-    public function getMaintenanceWindows()
+    class Google_Service_CloudAlloyDBAdmin_MaintenanceUpdatePolicy extends \Google\Service\CloudAlloyDBAdmin\MaintenanceUpdatePolicy
     {
     }
 }

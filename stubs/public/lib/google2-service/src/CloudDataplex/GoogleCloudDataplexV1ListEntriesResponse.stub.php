@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1ListEntriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'entries';
-    protected $entriesType = GoogleCloudDataplexV1Entry::class;
-    protected $entriesDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of entries under the given parent location.
-     *
-     * @param GoogleCloudDataplexV1Entry[] $entries
-     */
-    public function setEntries($entries)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1ListEntriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'entries';
+        protected $entriesType = GoogleCloudDataplexV1Entry::class;
+        protected $entriesDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of entries under the given parent location.
+         *
+         * @param GoogleCloudDataplexV1Entry[] $entries
+         */
+        public function setEntries($entries)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1Entry[]
+         */
+        public function getEntries()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1Entry[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListEntriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntries()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1ListEntriesResponse extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListEntriesResponse
     {
     }
 }

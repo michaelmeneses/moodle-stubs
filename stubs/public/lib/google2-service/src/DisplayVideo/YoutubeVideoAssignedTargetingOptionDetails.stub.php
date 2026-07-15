@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class YoutubeVideoAssignedTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * Indicates if this option is being negatively targeted.
-     *
-     * @var bool
-     */
-    public $negative;
-    /**
-     * YouTube video id as it appears on the YouTube watch page.
-     *
-     * @var string
-     */
-    public $videoId;
-    /**
-     * Indicates if this option is being negatively targeted.
-     *
-     * @param bool $negative
-     */
-    public function setNegative($negative)
+namespace Google\Service\DisplayVideo {
+    class YoutubeVideoAssignedTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * Indicates if this option is being negatively targeted.
+         *
+         * @var bool
+         */
+        public $negative;
+        /**
+         * YouTube video id as it appears on the YouTube watch page.
+         *
+         * @var string
+         */
+        public $videoId;
+        /**
+         * Indicates if this option is being negatively targeted.
+         *
+         * @param bool $negative
+         */
+        public function setNegative($negative)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNegative()
+        {
+        }
+        /**
+         * YouTube video id as it appears on the YouTube watch page.
+         *
+         * @param string $videoId
+         */
+        public function setVideoId($videoId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVideoId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DisplayVideo\YoutubeVideoAssignedTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNegative()
-    {
-    }
-    /**
-     * YouTube video id as it appears on the YouTube watch page.
-     *
-     * @param string $videoId
-     */
-    public function setVideoId($videoId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVideoId()
+    class Google_Service_DisplayVideo_YoutubeVideoAssignedTargetingOptionDetails extends \Google\Service\DisplayVideo\YoutubeVideoAssignedTargetingOptionDetails
     {
     }
 }

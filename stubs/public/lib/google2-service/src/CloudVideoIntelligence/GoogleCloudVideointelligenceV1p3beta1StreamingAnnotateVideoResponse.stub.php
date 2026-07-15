@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1p3beta1StreamingAnnotateVideoResponse extends \Google\Model
-{
-    protected $annotationResultsType = GoogleCloudVideointelligenceV1p3beta1StreamingVideoAnnotationResults::class;
-    protected $annotationResultsDataType = '';
-    /**
-     * Google Cloud Storage URI that stores annotation results of one streaming
-     * session in JSON format. It is the annotation_result_storage_directory from
-     * the request followed by '/cloud_project_number-session_id'.
-     *
-     * @var string
-     */
-    public $annotationResultsUri;
-    protected $errorType = GoogleRpcStatus::class;
-    protected $errorDataType = '';
-    /**
-     * Streaming annotation results.
-     *
-     * @param GoogleCloudVideointelligenceV1p3beta1StreamingVideoAnnotationResults $annotationResults
-     */
-    public function setAnnotationResults(GoogleCloudVideointelligenceV1p3beta1StreamingVideoAnnotationResults $annotationResults)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1p3beta1StreamingAnnotateVideoResponse extends \Google\Model
     {
+        protected $annotationResultsType = GoogleCloudVideointelligenceV1p3beta1StreamingVideoAnnotationResults::class;
+        protected $annotationResultsDataType = '';
+        /**
+         * Google Cloud Storage URI that stores annotation results of one streaming
+         * session in JSON format. It is the annotation_result_storage_directory from
+         * the request followed by '/cloud_project_number-session_id'.
+         *
+         * @var string
+         */
+        public $annotationResultsUri;
+        protected $errorType = GoogleRpcStatus::class;
+        protected $errorDataType = '';
+        /**
+         * Streaming annotation results.
+         *
+         * @param GoogleCloudVideointelligenceV1p3beta1StreamingVideoAnnotationResults $annotationResults
+         */
+        public function setAnnotationResults(GoogleCloudVideointelligenceV1p3beta1StreamingVideoAnnotationResults $annotationResults)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1p3beta1StreamingVideoAnnotationResults
+         */
+        public function getAnnotationResults()
+        {
+        }
+        /**
+         * Google Cloud Storage URI that stores annotation results of one streaming
+         * session in JSON format. It is the annotation_result_storage_directory from
+         * the request followed by '/cloud_project_number-session_id'.
+         *
+         * @param string $annotationResultsUri
+         */
+        public function setAnnotationResultsUri($annotationResultsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotationResultsUri()
+        {
+        }
+        /**
+         * If set, returns a google.rpc.Status message that specifies the error for
+         * the operation.
+         *
+         * @param GoogleRpcStatus $error
+         */
+        public function setError(GoogleRpcStatus $error)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getError()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVideointelligenceV1p3beta1StreamingVideoAnnotationResults
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p3beta1StreamingAnnotateVideoResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationResults()
-    {
-    }
-    /**
-     * Google Cloud Storage URI that stores annotation results of one streaming
-     * session in JSON format. It is the annotation_result_storage_directory from
-     * the request followed by '/cloud_project_number-session_id'.
-     *
-     * @param string $annotationResultsUri
-     */
-    public function setAnnotationResultsUri($annotationResultsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAnnotationResultsUri()
-    {
-    }
-    /**
-     * If set, returns a google.rpc.Status message that specifies the error for
-     * the operation.
-     *
-     * @param GoogleRpcStatus $error
-     */
-    public function setError(GoogleRpcStatus $error)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getError()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1StreamingAnnotateVideoResponse extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p3beta1StreamingAnnotateVideoResponse
     {
     }
 }

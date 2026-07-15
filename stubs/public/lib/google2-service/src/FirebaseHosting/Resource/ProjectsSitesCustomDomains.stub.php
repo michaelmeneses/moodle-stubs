@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseHosting\Resource;
-
-/**
- * The "customDomains" collection of methods.
- * Typical usage is:
- *  <code>
- *   $firebasehostingService = new Google\Service\FirebaseHosting(...);
- *   $customDomains = $firebasehostingService->projects_sites_customDomains;
- *  </code>
- */
-class ProjectsSitesCustomDomains extends \Google\Service\Resource
-{
+namespace Google\Service\FirebaseHosting\Resource {
+    /**
+     * The "customDomains" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $firebasehostingService = new Google\Service\FirebaseHosting(...);
+     *   $customDomains = $firebasehostingService->projects_sites_customDomains;
+     *  </code>
+     */
+    class ProjectsSitesCustomDomains extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\FirebaseHosting\Resource\ProjectsSitesCustomDomains registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_FirebaseHosting_Resource_ProjectsSitesCustomDomains extends \Google\Service\FirebaseHosting\Resource\ProjectsSitesCustomDomains
+    {
+    }
 }

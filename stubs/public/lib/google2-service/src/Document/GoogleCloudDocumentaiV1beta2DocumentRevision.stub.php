@@ -21,119 +21,128 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta2DocumentRevision extends \Google\Collection
-{
-    protected $collection_key = 'parentIds';
-    /**
-     * @var string
-     */
-    public $agent;
-    /**
-     * @var string
-     */
-    public $createTime;
-    protected $humanReviewType = GoogleCloudDocumentaiV1beta2DocumentRevisionHumanReview::class;
-    protected $humanReviewDataType = '';
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var int[]
-     */
-    public $parent;
-    /**
-     * @var string[]
-     */
-    public $parentIds;
-    /**
-     * @var string
-     */
-    public $processor;
-    /**
-     * @param string
-     */
-    public function setAgent($agent)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta2DocumentRevision extends \Google\Collection
     {
+        protected $collection_key = 'parentIds';
+        /**
+         * @var string
+         */
+        public $agent;
+        /**
+         * @var string
+         */
+        public $createTime;
+        protected $humanReviewType = GoogleCloudDocumentaiV1beta2DocumentRevisionHumanReview::class;
+        protected $humanReviewDataType = '';
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var int[]
+         */
+        public $parent;
+        /**
+         * @var string[]
+         */
+        public $parentIds;
+        /**
+         * @var string
+         */
+        public $processor;
+        /**
+         * @param string
+         */
+        public function setAgent($agent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgent()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentRevisionHumanReview
+         */
+        public function setHumanReview(GoogleCloudDocumentaiV1beta2DocumentRevisionHumanReview $humanReview)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentRevisionHumanReview
+         */
+        public function getHumanReview()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param int[]
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setParentIds($parentIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getParentIds()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProcessor($processor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProcessor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentRevision registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgent()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentRevisionHumanReview
-     */
-    public function setHumanReview(GoogleCloudDocumentaiV1beta2DocumentRevisionHumanReview $humanReview)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentRevisionHumanReview
-     */
-    public function getHumanReview()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param int[]
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getParent()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setParentIds($parentIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getParentIds()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProcessor($processor)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProcessor()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta2DocumentRevision extends \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentRevision
     {
     }
 }

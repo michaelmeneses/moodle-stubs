@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FetchFeatureValuesResponse extends \Google\Model
-{
-    protected $dataKeyType = GoogleCloudAiplatformV1FeatureViewDataKey::class;
-    protected $dataKeyDataType = '';
-    protected $keyValuesType = GoogleCloudAiplatformV1FetchFeatureValuesResponseFeatureNameValuePairList::class;
-    protected $keyValuesDataType = '';
-    /**
-     * Feature values in proto Struct format.
-     *
-     * @var array[]
-     */
-    public $protoStruct;
-    /**
-     * The data key associated with this response. Will only be populated for
-     * FeatureOnlineStoreService.StreamingFetchFeatureValues RPCs.
-     *
-     * @param GoogleCloudAiplatformV1FeatureViewDataKey $dataKey
-     */
-    public function setDataKey(GoogleCloudAiplatformV1FeatureViewDataKey $dataKey)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FetchFeatureValuesResponse extends \Google\Model
     {
+        protected $dataKeyType = GoogleCloudAiplatformV1FeatureViewDataKey::class;
+        protected $dataKeyDataType = '';
+        protected $keyValuesType = GoogleCloudAiplatformV1FetchFeatureValuesResponseFeatureNameValuePairList::class;
+        protected $keyValuesDataType = '';
+        /**
+         * Feature values in proto Struct format.
+         *
+         * @var array[]
+         */
+        public $protoStruct;
+        /**
+         * The data key associated with this response. Will only be populated for
+         * FeatureOnlineStoreService.StreamingFetchFeatureValues RPCs.
+         *
+         * @param GoogleCloudAiplatformV1FeatureViewDataKey $dataKey
+         */
+        public function setDataKey(GoogleCloudAiplatformV1FeatureViewDataKey $dataKey)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeatureViewDataKey
+         */
+        public function getDataKey()
+        {
+        }
+        /**
+         * Feature values in KeyValue format.
+         *
+         * @param GoogleCloudAiplatformV1FetchFeatureValuesResponseFeatureNameValuePairList $keyValues
+         */
+        public function setKeyValues(GoogleCloudAiplatformV1FetchFeatureValuesResponseFeatureNameValuePairList $keyValues)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FetchFeatureValuesResponseFeatureNameValuePairList
+         */
+        public function getKeyValues()
+        {
+        }
+        /**
+         * Feature values in proto Struct format.
+         *
+         * @param array[] $protoStruct
+         */
+        public function setProtoStruct($protoStruct)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getProtoStruct()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1FeatureViewDataKey
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FetchFeatureValuesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataKey()
-    {
-    }
-    /**
-     * Feature values in KeyValue format.
-     *
-     * @param GoogleCloudAiplatformV1FetchFeatureValuesResponseFeatureNameValuePairList $keyValues
-     */
-    public function setKeyValues(GoogleCloudAiplatformV1FetchFeatureValuesResponseFeatureNameValuePairList $keyValues)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FetchFeatureValuesResponseFeatureNameValuePairList
-     */
-    public function getKeyValues()
-    {
-    }
-    /**
-     * Feature values in proto Struct format.
-     *
-     * @param array[] $protoStruct
-     */
-    public function setProtoStruct($protoStruct)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getProtoStruct()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FetchFeatureValuesResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FetchFeatureValuesResponse
     {
     }
 }

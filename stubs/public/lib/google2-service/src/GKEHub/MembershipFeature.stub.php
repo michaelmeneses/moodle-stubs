@@ -21,162 +21,171 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class MembershipFeature extends \Google\Model
-{
-    /**
-     * Output only. When the MembershipFeature resource was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. When the MembershipFeature resource was deleted.
-     *
-     * @var string
-     */
-    public $deleteTime;
-    /**
-     * GCP labels for this MembershipFeature.
-     *
-     * @var string[]
-     */
-    public $labels;
-    protected $lifecycleStateType = LifecycleState::class;
-    protected $lifecycleStateDataType = '';
-    /**
-     * Output only. The resource name of the membershipFeature, in the format: `pr
-     * ojects/{project}/locations/{location}/memberships/{membership}/features/{fe
-     * ature}`. Note that `membershipFeatures` is shortened to `features` in the
-     * resource name. (see http://go/aip/122#collection-identifiers)
-     *
-     * @var string
-     */
-    public $name;
-    protected $specType = FeatureSpec::class;
-    protected $specDataType = '';
-    protected $stateType = FeatureState::class;
-    protected $stateDataType = '';
-    /**
-     * Output only. When the MembershipFeature resource was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. When the MembershipFeature resource was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\GKEHub {
+    class MembershipFeature extends \Google\Model
     {
+        /**
+         * Output only. When the MembershipFeature resource was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. When the MembershipFeature resource was deleted.
+         *
+         * @var string
+         */
+        public $deleteTime;
+        /**
+         * GCP labels for this MembershipFeature.
+         *
+         * @var string[]
+         */
+        public $labels;
+        protected $lifecycleStateType = LifecycleState::class;
+        protected $lifecycleStateDataType = '';
+        /**
+         * Output only. The resource name of the membershipFeature, in the format: `pr
+         * ojects/{project}/locations/{location}/memberships/{membership}/features/{fe
+         * ature}`. Note that `membershipFeatures` is shortened to `features` in the
+         * resource name. (see http://go/aip/122#collection-identifiers)
+         *
+         * @var string
+         */
+        public $name;
+        protected $specType = FeatureSpec::class;
+        protected $specDataType = '';
+        protected $stateType = FeatureState::class;
+        protected $stateDataType = '';
+        /**
+         * Output only. When the MembershipFeature resource was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. When the MembershipFeature resource was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. When the MembershipFeature resource was deleted.
+         *
+         * @param string $deleteTime
+         */
+        public function setDeleteTime($deleteTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeleteTime()
+        {
+        }
+        /**
+         * GCP labels for this MembershipFeature.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Output only. Lifecycle information of the resource itself.
+         *
+         * @param LifecycleState $lifecycleState
+         */
+        public function setLifecycleState(LifecycleState $lifecycleState)
+        {
+        }
+        /**
+         * @return LifecycleState
+         */
+        public function getLifecycleState()
+        {
+        }
+        /**
+         * Output only. The resource name of the membershipFeature, in the format: `pr
+         * ojects/{project}/locations/{location}/memberships/{membership}/features/{fe
+         * ature}`. Note that `membershipFeatures` is shortened to `features` in the
+         * resource name. (see http://go/aip/122#collection-identifiers)
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Spec of this membershipFeature.
+         *
+         * @param FeatureSpec $spec
+         */
+        public function setSpec(FeatureSpec $spec)
+        {
+        }
+        /**
+         * @return FeatureSpec
+         */
+        public function getSpec()
+        {
+        }
+        /**
+         * Output only. State of the this membershipFeature.
+         *
+         * @param FeatureState $state
+         */
+        public function setState(FeatureState $state)
+        {
+        }
+        /**
+         * @return FeatureState
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. When the MembershipFeature resource was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\MembershipFeature registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. When the MembershipFeature resource was deleted.
-     *
-     * @param string $deleteTime
-     */
-    public function setDeleteTime($deleteTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeleteTime()
-    {
-    }
-    /**
-     * GCP labels for this MembershipFeature.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Output only. Lifecycle information of the resource itself.
-     *
-     * @param LifecycleState $lifecycleState
-     */
-    public function setLifecycleState(LifecycleState $lifecycleState)
-    {
-    }
-    /**
-     * @return LifecycleState
-     */
-    public function getLifecycleState()
-    {
-    }
-    /**
-     * Output only. The resource name of the membershipFeature, in the format: `pr
-     * ojects/{project}/locations/{location}/memberships/{membership}/features/{fe
-     * ature}`. Note that `membershipFeatures` is shortened to `features` in the
-     * resource name. (see http://go/aip/122#collection-identifiers)
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Spec of this membershipFeature.
-     *
-     * @param FeatureSpec $spec
-     */
-    public function setSpec(FeatureSpec $spec)
-    {
-    }
-    /**
-     * @return FeatureSpec
-     */
-    public function getSpec()
-    {
-    }
-    /**
-     * Output only. State of the this membershipFeature.
-     *
-     * @param FeatureState $state
-     */
-    public function setState(FeatureState $state)
-    {
-    }
-    /**
-     * @return FeatureState
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. When the MembershipFeature resource was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_GKEHub_MembershipFeature extends \Google\Service\GKEHub\MembershipFeature
     {
     }
 }

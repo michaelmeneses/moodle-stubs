@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI;
-
-class RestoreDomainRequest extends \Google\Model
-{
-    /**
-     * Required. ID of the backup to be restored
-     *
-     * @var string
-     */
-    public $backupId;
-    /**
-     * Required. ID of the backup to be restored
-     *
-     * @param string $backupId
-     */
-    public function setBackupId($backupId)
+namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI {
+    class RestoreDomainRequest extends \Google\Model
     {
+        /**
+         * Required. ID of the backup to be restored
+         *
+         * @var string
+         */
+        public $backupId;
+        /**
+         * Required. ID of the backup to be restored
+         *
+         * @param string $backupId
+         */
+        public function setBackupId($backupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackupId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\RestoreDomainRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupId()
+    class Google_Service_ManagedServiceforMicrosoftActiveDirectoryConsumerAPI_RestoreDomainRequest extends \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\RestoreDomainRequest
     {
     }
 }

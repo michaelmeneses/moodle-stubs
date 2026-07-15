@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_user\form;
 
+use core_contentbank\content;
 /**
  * Form to edit a user's preferences concerning the content bank.
  *

@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeatureOnlineStoreBigtable extends \Google\Model
-{
-    protected $autoScalingType = GoogleCloudAiplatformV1FeatureOnlineStoreBigtableAutoScaling::class;
-    protected $autoScalingDataType = '';
-    protected $bigtableMetadataType = GoogleCloudAiplatformV1FeatureOnlineStoreBigtableBigtableMetadata::class;
-    protected $bigtableMetadataDataType = '';
-    /**
-     * Optional. It true, enable direct access to the Bigtable instance.
-     *
-     * @var bool
-     */
-    public $enableDirectBigtableAccess;
-    /**
-     * Optional. The zone where the underlying Bigtable cluster for the primary
-     * Bigtable instance will be provisioned. Only the zone must be provided. For
-     * example, only "us-central1-a" should be provided.
-     *
-     * @var string
-     */
-    public $zone;
-    /**
-     * Required. Autoscaling config applied to Bigtable Instance.
-     *
-     * @param GoogleCloudAiplatformV1FeatureOnlineStoreBigtableAutoScaling $autoScaling
-     */
-    public function setAutoScaling(GoogleCloudAiplatformV1FeatureOnlineStoreBigtableAutoScaling $autoScaling)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeatureOnlineStoreBigtable extends \Google\Model
     {
+        protected $autoScalingType = GoogleCloudAiplatformV1FeatureOnlineStoreBigtableAutoScaling::class;
+        protected $autoScalingDataType = '';
+        protected $bigtableMetadataType = GoogleCloudAiplatformV1FeatureOnlineStoreBigtableBigtableMetadata::class;
+        protected $bigtableMetadataDataType = '';
+        /**
+         * Optional. It true, enable direct access to the Bigtable instance.
+         *
+         * @var bool
+         */
+        public $enableDirectBigtableAccess;
+        /**
+         * Optional. The zone where the underlying Bigtable cluster for the primary
+         * Bigtable instance will be provisioned. Only the zone must be provided. For
+         * example, only "us-central1-a" should be provided.
+         *
+         * @var string
+         */
+        public $zone;
+        /**
+         * Required. Autoscaling config applied to Bigtable Instance.
+         *
+         * @param GoogleCloudAiplatformV1FeatureOnlineStoreBigtableAutoScaling $autoScaling
+         */
+        public function setAutoScaling(GoogleCloudAiplatformV1FeatureOnlineStoreBigtableAutoScaling $autoScaling)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeatureOnlineStoreBigtableAutoScaling
+         */
+        public function getAutoScaling()
+        {
+        }
+        /**
+         * Output only. Metadata of the Bigtable instance. Output only.
+         *
+         * @param GoogleCloudAiplatformV1FeatureOnlineStoreBigtableBigtableMetadata $bigtableMetadata
+         */
+        public function setBigtableMetadata(GoogleCloudAiplatformV1FeatureOnlineStoreBigtableBigtableMetadata $bigtableMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeatureOnlineStoreBigtableBigtableMetadata
+         */
+        public function getBigtableMetadata()
+        {
+        }
+        /**
+         * Optional. It true, enable direct access to the Bigtable instance.
+         *
+         * @param bool $enableDirectBigtableAccess
+         */
+        public function setEnableDirectBigtableAccess($enableDirectBigtableAccess)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableDirectBigtableAccess()
+        {
+        }
+        /**
+         * Optional. The zone where the underlying Bigtable cluster for the primary
+         * Bigtable instance will be provisioned. Only the zone must be provided. For
+         * example, only "us-central1-a" should be provided.
+         *
+         * @param string $zone
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1FeatureOnlineStoreBigtableAutoScaling
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureOnlineStoreBigtable registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoScaling()
-    {
-    }
-    /**
-     * Output only. Metadata of the Bigtable instance. Output only.
-     *
-     * @param GoogleCloudAiplatformV1FeatureOnlineStoreBigtableBigtableMetadata $bigtableMetadata
-     */
-    public function setBigtableMetadata(GoogleCloudAiplatformV1FeatureOnlineStoreBigtableBigtableMetadata $bigtableMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FeatureOnlineStoreBigtableBigtableMetadata
-     */
-    public function getBigtableMetadata()
-    {
-    }
-    /**
-     * Optional. It true, enable direct access to the Bigtable instance.
-     *
-     * @param bool $enableDirectBigtableAccess
-     */
-    public function setEnableDirectBigtableAccess($enableDirectBigtableAccess)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableDirectBigtableAccess()
-    {
-    }
-    /**
-     * Optional. The zone where the underlying Bigtable cluster for the primary
-     * Bigtable instance will be provisioned. Only the zone must be provided. For
-     * example, only "us-central1-a" should be provided.
-     *
-     * @param string $zone
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeatureOnlineStoreBigtable extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureOnlineStoreBigtable
     {
     }
 }

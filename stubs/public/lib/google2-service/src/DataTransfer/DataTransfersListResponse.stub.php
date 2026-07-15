@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataTransfer;
-
-class DataTransfersListResponse extends \Google\Collection
-{
-    protected $collection_key = 'dataTransfers';
-    protected $dataTransfersType = DataTransfer::class;
-    protected $dataTransfersDataType = 'array';
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Identifies the resource as a collection of data transfer requests.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Token to specify the next page in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of data transfer requests.
-     *
-     * @param DataTransfer[] $dataTransfers
-     */
-    public function setDataTransfers($dataTransfers)
+namespace Google\Service\DataTransfer {
+    class DataTransfersListResponse extends \Google\Collection
     {
+        protected $collection_key = 'dataTransfers';
+        protected $dataTransfersType = DataTransfer::class;
+        protected $dataTransfersDataType = 'array';
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Identifies the resource as a collection of data transfer requests.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Token to specify the next page in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of data transfer requests.
+         *
+         * @param DataTransfer[] $dataTransfers
+         */
+        public function setDataTransfers($dataTransfers)
+        {
+        }
+        /**
+         * @return DataTransfer[]
+         */
+        public function getDataTransfers()
+        {
+        }
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Identifies the resource as a collection of data transfer requests.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Token to specify the next page in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataTransfer[]
+     * Runtime class alias of \Google\Service\DataTransfer\DataTransfersListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataTransfers()
-    {
-    }
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Identifies the resource as a collection of data transfer requests.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Token to specify the next page in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DataTransfer_DataTransfersListResponse extends \Google\Service\DataTransfer\DataTransfersListResponse
     {
     }
 }

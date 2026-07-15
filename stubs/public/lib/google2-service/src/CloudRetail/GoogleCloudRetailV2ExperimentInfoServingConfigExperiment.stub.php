@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ExperimentInfoServingConfigExperiment extends \Google\Model
-{
-    /**
-     * The fully qualified resource name of the serving config
-     * `Experiment.VariantArm.serving_config_id` responsible for generating the
-     * search response. For example: `projects/locations/catalogs/servingConfigs`.
-     *
-     * @var string
-     */
-    public $experimentServingConfig;
-    /**
-     * The fully qualified resource name of the original SearchRequest.placement
-     * in the search request prior to reassignment by experiment API. For example:
-     * `projects/locations/catalogs/servingConfigs`.
-     *
-     * @var string
-     */
-    public $originalServingConfig;
-    /**
-     * The fully qualified resource name of the serving config
-     * `Experiment.VariantArm.serving_config_id` responsible for generating the
-     * search response. For example: `projects/locations/catalogs/servingConfigs`.
-     *
-     * @param string $experimentServingConfig
-     */
-    public function setExperimentServingConfig($experimentServingConfig)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ExperimentInfoServingConfigExperiment extends \Google\Model
     {
+        /**
+         * The fully qualified resource name of the serving config
+         * `Experiment.VariantArm.serving_config_id` responsible for generating the
+         * search response. For example: `projects/locations/catalogs/servingConfigs`.
+         *
+         * @var string
+         */
+        public $experimentServingConfig;
+        /**
+         * The fully qualified resource name of the original SearchRequest.placement
+         * in the search request prior to reassignment by experiment API. For example:
+         * `projects/locations/catalogs/servingConfigs`.
+         *
+         * @var string
+         */
+        public $originalServingConfig;
+        /**
+         * The fully qualified resource name of the serving config
+         * `Experiment.VariantArm.serving_config_id` responsible for generating the
+         * search response. For example: `projects/locations/catalogs/servingConfigs`.
+         *
+         * @param string $experimentServingConfig
+         */
+        public function setExperimentServingConfig($experimentServingConfig)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExperimentServingConfig()
+        {
+        }
+        /**
+         * The fully qualified resource name of the original SearchRequest.placement
+         * in the search request prior to reassignment by experiment API. For example:
+         * `projects/locations/catalogs/servingConfigs`.
+         *
+         * @param string $originalServingConfig
+         */
+        public function setOriginalServingConfig($originalServingConfig)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOriginalServingConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ExperimentInfoServingConfigExperiment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExperimentServingConfig()
-    {
-    }
-    /**
-     * The fully qualified resource name of the original SearchRequest.placement
-     * in the search request prior to reassignment by experiment API. For example:
-     * `projects/locations/catalogs/servingConfigs`.
-     *
-     * @param string $originalServingConfig
-     */
-    public function setOriginalServingConfig($originalServingConfig)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOriginalServingConfig()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ExperimentInfoServingConfigExperiment extends \Google\Service\CloudRetail\GoogleCloudRetailV2ExperimentInfoServingConfigExperiment
     {
     }
 }

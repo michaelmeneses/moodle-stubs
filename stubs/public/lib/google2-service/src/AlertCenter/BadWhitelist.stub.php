@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class BadWhitelist extends \Google\Collection
-{
-    protected $collection_key = 'messages';
-    protected $domainIdType = DomainId::class;
-    protected $domainIdDataType = '';
-    protected $maliciousEntityType = MaliciousEntity::class;
-    protected $maliciousEntityDataType = '';
-    protected $messagesType = GmailMessageInfo::class;
-    protected $messagesDataType = 'array';
-    /**
-     * The source IP address of the malicious email, for example, `127.0.0.1`.
-     *
-     * @var string
-     */
-    public $sourceIp;
-    /**
-     * The domain ID.
-     *
-     * @param DomainId $domainId
-     */
-    public function setDomainId(DomainId $domainId)
+namespace Google\Service\AlertCenter {
+    class BadWhitelist extends \Google\Collection
     {
+        protected $collection_key = 'messages';
+        protected $domainIdType = DomainId::class;
+        protected $domainIdDataType = '';
+        protected $maliciousEntityType = MaliciousEntity::class;
+        protected $maliciousEntityDataType = '';
+        protected $messagesType = GmailMessageInfo::class;
+        protected $messagesDataType = 'array';
+        /**
+         * The source IP address of the malicious email, for example, `127.0.0.1`.
+         *
+         * @var string
+         */
+        public $sourceIp;
+        /**
+         * The domain ID.
+         *
+         * @param DomainId $domainId
+         */
+        public function setDomainId(DomainId $domainId)
+        {
+        }
+        /**
+         * @return DomainId
+         */
+        public function getDomainId()
+        {
+        }
+        /**
+         * The entity whose actions triggered a Gmail phishing alert.
+         *
+         * @param MaliciousEntity $maliciousEntity
+         */
+        public function setMaliciousEntity(MaliciousEntity $maliciousEntity)
+        {
+        }
+        /**
+         * @return MaliciousEntity
+         */
+        public function getMaliciousEntity()
+        {
+        }
+        /**
+         * The list of messages contained by this alert.
+         *
+         * @param GmailMessageInfo[] $messages
+         */
+        public function setMessages($messages)
+        {
+        }
+        /**
+         * @return GmailMessageInfo[]
+         */
+        public function getMessages()
+        {
+        }
+        /**
+         * The source IP address of the malicious email, for example, `127.0.0.1`.
+         *
+         * @param string $sourceIp
+         */
+        public function setSourceIp($sourceIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceIp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DomainId
+     * Runtime class alias of \Google\Service\AlertCenter\BadWhitelist registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomainId()
-    {
-    }
-    /**
-     * The entity whose actions triggered a Gmail phishing alert.
-     *
-     * @param MaliciousEntity $maliciousEntity
-     */
-    public function setMaliciousEntity(MaliciousEntity $maliciousEntity)
-    {
-    }
-    /**
-     * @return MaliciousEntity
-     */
-    public function getMaliciousEntity()
-    {
-    }
-    /**
-     * The list of messages contained by this alert.
-     *
-     * @param GmailMessageInfo[] $messages
-     */
-    public function setMessages($messages)
-    {
-    }
-    /**
-     * @return GmailMessageInfo[]
-     */
-    public function getMessages()
-    {
-    }
-    /**
-     * The source IP address of the malicious email, for example, `127.0.0.1`.
-     *
-     * @param string $sourceIp
-     */
-    public function setSourceIp($sourceIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceIp()
+    class Google_Service_AlertCenter_BadWhitelist extends \Google\Service\AlertCenter\BadWhitelist
     {
     }
 }

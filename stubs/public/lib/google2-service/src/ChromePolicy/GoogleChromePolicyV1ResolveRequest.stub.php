@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyV1ResolveRequest extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * @var string
-     */
-    public $pageToken;
-    /**
-     * @var string
-     */
-    public $policySchemaFilter;
-    protected $policyTargetKeyType = GoogleChromePolicyV1PolicyTargetKey::class;
-    protected $policyTargetKeyDataType = '';
-    /**
-     * @param int
-     */
-    public function setPageSize($pageSize)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyV1ResolveRequest extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * @var string
+         */
+        public $pageToken;
+        /**
+         * @var string
+         */
+        public $policySchemaFilter;
+        protected $policyTargetKeyType = GoogleChromePolicyV1PolicyTargetKey::class;
+        protected $policyTargetKeyDataType = '';
+        /**
+         * @param int
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPolicySchemaFilter($policySchemaFilter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicySchemaFilter()
+        {
+        }
+        /**
+         * @param GoogleChromePolicyV1PolicyTargetKey
+         */
+        public function setPolicyTargetKey(GoogleChromePolicyV1PolicyTargetKey $policyTargetKey)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyV1PolicyTargetKey
+         */
+        public function getPolicyTargetKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyV1ResolveRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageSize()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPolicySchemaFilter($policySchemaFilter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPolicySchemaFilter()
-    {
-    }
-    /**
-     * @param GoogleChromePolicyV1PolicyTargetKey
-     */
-    public function setPolicyTargetKey(GoogleChromePolicyV1PolicyTargetKey $policyTargetKey)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyV1PolicyTargetKey
-     */
-    public function getPolicyTargetKey()
+    class Google_Service_ChromePolicy_GoogleChromePolicyV1ResolveRequest extends \Google\Service\ChromePolicy\GoogleChromePolicyV1ResolveRequest
     {
     }
 }

@@ -21,119 +21,128 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class ContextRule extends \Google\Collection
-{
-    protected $collection_key = 'requested';
-    /**
-     * A list of full type names or extension IDs of extensions allowed in grpc
-     * side channel from client to backend.
-     *
-     * @var string[]
-     */
-    public $allowedRequestExtensions;
-    /**
-     * A list of full type names or extension IDs of extensions allowed in grpc
-     * side channel from backend to client.
-     *
-     * @var string[]
-     */
-    public $allowedResponseExtensions;
-    /**
-     * A list of full type names of provided contexts. It is used to support
-     * propagating HTTP headers and ETags from the response extension.
-     *
-     * @var string[]
-     */
-    public $provided;
-    /**
-     * A list of full type names of requested contexts, only the requested context
-     * will be made available to the backend.
-     *
-     * @var string[]
-     */
-    public $requested;
-    /**
-     * Selects the methods to which this rule applies. Refer to selector for
-     * syntax details.
-     *
-     * @var string
-     */
-    public $selector;
-    /**
-     * A list of full type names or extension IDs of extensions allowed in grpc
-     * side channel from client to backend.
-     *
-     * @param string[] $allowedRequestExtensions
-     */
-    public function setAllowedRequestExtensions($allowedRequestExtensions)
+namespace Google\Service\ServiceUsage {
+    class ContextRule extends \Google\Collection
     {
+        protected $collection_key = 'requested';
+        /**
+         * A list of full type names or extension IDs of extensions allowed in grpc
+         * side channel from client to backend.
+         *
+         * @var string[]
+         */
+        public $allowedRequestExtensions;
+        /**
+         * A list of full type names or extension IDs of extensions allowed in grpc
+         * side channel from backend to client.
+         *
+         * @var string[]
+         */
+        public $allowedResponseExtensions;
+        /**
+         * A list of full type names of provided contexts. It is used to support
+         * propagating HTTP headers and ETags from the response extension.
+         *
+         * @var string[]
+         */
+        public $provided;
+        /**
+         * A list of full type names of requested contexts, only the requested context
+         * will be made available to the backend.
+         *
+         * @var string[]
+         */
+        public $requested;
+        /**
+         * Selects the methods to which this rule applies. Refer to selector for
+         * syntax details.
+         *
+         * @var string
+         */
+        public $selector;
+        /**
+         * A list of full type names or extension IDs of extensions allowed in grpc
+         * side channel from client to backend.
+         *
+         * @param string[] $allowedRequestExtensions
+         */
+        public function setAllowedRequestExtensions($allowedRequestExtensions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowedRequestExtensions()
+        {
+        }
+        /**
+         * A list of full type names or extension IDs of extensions allowed in grpc
+         * side channel from backend to client.
+         *
+         * @param string[] $allowedResponseExtensions
+         */
+        public function setAllowedResponseExtensions($allowedResponseExtensions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowedResponseExtensions()
+        {
+        }
+        /**
+         * A list of full type names of provided contexts. It is used to support
+         * propagating HTTP headers and ETags from the response extension.
+         *
+         * @param string[] $provided
+         */
+        public function setProvided($provided)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProvided()
+        {
+        }
+        /**
+         * A list of full type names of requested contexts, only the requested context
+         * will be made available to the backend.
+         *
+         * @param string[] $requested
+         */
+        public function setRequested($requested)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRequested()
+        {
+        }
+        /**
+         * Selects the methods to which this rule applies. Refer to selector for
+         * syntax details.
+         *
+         * @param string $selector
+         */
+        public function setSelector($selector)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelector()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ServiceUsage\ContextRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedRequestExtensions()
-    {
-    }
-    /**
-     * A list of full type names or extension IDs of extensions allowed in grpc
-     * side channel from backend to client.
-     *
-     * @param string[] $allowedResponseExtensions
-     */
-    public function setAllowedResponseExtensions($allowedResponseExtensions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAllowedResponseExtensions()
-    {
-    }
-    /**
-     * A list of full type names of provided contexts. It is used to support
-     * propagating HTTP headers and ETags from the response extension.
-     *
-     * @param string[] $provided
-     */
-    public function setProvided($provided)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProvided()
-    {
-    }
-    /**
-     * A list of full type names of requested contexts, only the requested context
-     * will be made available to the backend.
-     *
-     * @param string[] $requested
-     */
-    public function setRequested($requested)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRequested()
-    {
-    }
-    /**
-     * Selects the methods to which this rule applies. Refer to selector for
-     * syntax details.
-     *
-     * @param string $selector
-     */
-    public function setSelector($selector)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelector()
+    class Google_Service_ServiceUsage_ContextRule extends \Google\Service\ServiceUsage\ContextRule
     {
     }
 }

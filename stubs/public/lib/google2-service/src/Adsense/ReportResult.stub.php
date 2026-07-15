@@ -21,151 +21,160 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Adsense;
-
-class ReportResult extends \Google\Collection
-{
-    protected $collection_key = 'warnings';
-    protected $averagesType = Row::class;
-    protected $averagesDataType = '';
-    protected $endDateType = Date::class;
-    protected $endDateDataType = '';
-    protected $headersType = Header::class;
-    protected $headersDataType = 'array';
-    protected $rowsType = Row::class;
-    protected $rowsDataType = 'array';
-    protected $startDateType = Date::class;
-    protected $startDateDataType = '';
-    /**
-     * The total number of rows matched by the report request.
-     *
-     * @var string
-     */
-    public $totalMatchedRows;
-    protected $totalsType = Row::class;
-    protected $totalsDataType = '';
-    /**
-     * Any warnings associated with generation of the report. These warnings are
-     * always returned in English.
-     *
-     * @var string[]
-     */
-    public $warnings;
-    /**
-     * The averages of the report. This is the same length as any other row in the
-     * report; cells corresponding to dimension columns are empty.
-     *
-     * @param Row $averages
-     */
-    public function setAverages(Row $averages)
+namespace Google\Service\Adsense {
+    class ReportResult extends \Google\Collection
     {
+        protected $collection_key = 'warnings';
+        protected $averagesType = Row::class;
+        protected $averagesDataType = '';
+        protected $endDateType = Date::class;
+        protected $endDateDataType = '';
+        protected $headersType = Header::class;
+        protected $headersDataType = 'array';
+        protected $rowsType = Row::class;
+        protected $rowsDataType = 'array';
+        protected $startDateType = Date::class;
+        protected $startDateDataType = '';
+        /**
+         * The total number of rows matched by the report request.
+         *
+         * @var string
+         */
+        public $totalMatchedRows;
+        protected $totalsType = Row::class;
+        protected $totalsDataType = '';
+        /**
+         * Any warnings associated with generation of the report. These warnings are
+         * always returned in English.
+         *
+         * @var string[]
+         */
+        public $warnings;
+        /**
+         * The averages of the report. This is the same length as any other row in the
+         * report; cells corresponding to dimension columns are empty.
+         *
+         * @param Row $averages
+         */
+        public function setAverages(Row $averages)
+        {
+        }
+        /**
+         * @return Row
+         */
+        public function getAverages()
+        {
+        }
+        /**
+         * Required. End date of the range (inclusive).
+         *
+         * @param Date $endDate
+         */
+        public function setEndDate(Date $endDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * The header information; one for each dimension in the request, followed by
+         * one for each metric in the request.
+         *
+         * @param Header[] $headers
+         */
+        public function setHeaders($headers)
+        {
+        }
+        /**
+         * @return Header[]
+         */
+        public function getHeaders()
+        {
+        }
+        /**
+         * The output rows of the report. Each row is a list of cells; one for each
+         * dimension in the request, followed by one for each metric in the request.
+         *
+         * @param Row[] $rows
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return Row[]
+         */
+        public function getRows()
+        {
+        }
+        /**
+         * Required. Start date of the range (inclusive).
+         *
+         * @param Date $startDate
+         */
+        public function setStartDate(Date $startDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getStartDate()
+        {
+        }
+        /**
+         * The total number of rows matched by the report request.
+         *
+         * @param string $totalMatchedRows
+         */
+        public function setTotalMatchedRows($totalMatchedRows)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalMatchedRows()
+        {
+        }
+        /**
+         * The totals of the report. This is the same length as any other row in the
+         * report; cells corresponding to dimension columns are empty.
+         *
+         * @param Row $totals
+         */
+        public function setTotals(Row $totals)
+        {
+        }
+        /**
+         * @return Row
+         */
+        public function getTotals()
+        {
+        }
+        /**
+         * Any warnings associated with generation of the report. These warnings are
+         * always returned in English.
+         *
+         * @param string[] $warnings
+         */
+        public function setWarnings($warnings)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getWarnings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Row
+     * Runtime class alias of \Google\Service\Adsense\ReportResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAverages()
-    {
-    }
-    /**
-     * Required. End date of the range (inclusive).
-     *
-     * @param Date $endDate
-     */
-    public function setEndDate(Date $endDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getEndDate()
-    {
-    }
-    /**
-     * The header information; one for each dimension in the request, followed by
-     * one for each metric in the request.
-     *
-     * @param Header[] $headers
-     */
-    public function setHeaders($headers)
-    {
-    }
-    /**
-     * @return Header[]
-     */
-    public function getHeaders()
-    {
-    }
-    /**
-     * The output rows of the report. Each row is a list of cells; one for each
-     * dimension in the request, followed by one for each metric in the request.
-     *
-     * @param Row[] $rows
-     */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return Row[]
-     */
-    public function getRows()
-    {
-    }
-    /**
-     * Required. Start date of the range (inclusive).
-     *
-     * @param Date $startDate
-     */
-    public function setStartDate(Date $startDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getStartDate()
-    {
-    }
-    /**
-     * The total number of rows matched by the report request.
-     *
-     * @param string $totalMatchedRows
-     */
-    public function setTotalMatchedRows($totalMatchedRows)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalMatchedRows()
-    {
-    }
-    /**
-     * The totals of the report. This is the same length as any other row in the
-     * report; cells corresponding to dimension columns are empty.
-     *
-     * @param Row $totals
-     */
-    public function setTotals(Row $totals)
-    {
-    }
-    /**
-     * @return Row
-     */
-    public function getTotals()
-    {
-    }
-    /**
-     * Any warnings associated with generation of the report. These warnings are
-     * always returned in English.
-     *
-     * @param string[] $warnings
-     */
-    public function setWarnings($warnings)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getWarnings()
+    class Google_Service_Adsense_ReportResult extends \Google\Service\Adsense\ReportResult
     {
     }
 }

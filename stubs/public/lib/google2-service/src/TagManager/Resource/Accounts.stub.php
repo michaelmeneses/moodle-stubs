@@ -21,57 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager\Resource;
-
-/**
- * The "accounts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $tagmanagerService = new Google\Service\TagManager(...);
- *   $accounts = $tagmanagerService->accounts;
- *  </code>
- */
-class Accounts extends \Google\Service\Resource
-{
+namespace Google\Service\TagManager\Resource {
+    use Google\Service\TagManager\Account;
+    use Google\Service\TagManager\ListAccountsResponse;
     /**
-     * Gets a GTM Account. (accounts.get)
-     *
-     * @param string $path GTM Account's API relative path.
-     * @param array $optParams Optional parameters.
-     * @return Account
-     * @throws \Google\Service\Exception
+     * The "accounts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $tagmanagerService = new Google\Service\TagManager(...);
+     *   $accounts = $tagmanagerService->accounts;
+     *  </code>
      */
-    public function get($path, $optParams = [])
+    class Accounts extends \Google\Service\Resource
     {
+        /**
+         * Gets a GTM Account. (accounts.get)
+         *
+         * @param string $path GTM Account's API relative path.
+         * @param array $optParams Optional parameters.
+         * @return Account
+         * @throws \Google\Service\Exception
+         */
+        public function get($path, $optParams = [])
+        {
+        }
+        /**
+         * Lists all GTM Accounts that a user has access to. (accounts.listAccounts)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool includeGoogleTags Also retrieve accounts associated with
+         * Google Tag when true.
+         * @opt_param string pageToken Continuation token for fetching the next page of
+         * results.
+         * @return ListAccountsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccounts($optParams = [])
+        {
+        }
+        /**
+         * Updates a GTM Account. (accounts.update)
+         *
+         * @param string $path GTM Account's API relative path.
+         * @param Account $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string fingerprint When provided, this fingerprint must match the
+         * fingerprint of the account in storage.
+         * @return Account
+         * @throws \Google\Service\Exception
+         */
+        public function update($path, Account $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists all GTM Accounts that a user has access to. (accounts.listAccounts)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool includeGoogleTags Also retrieve accounts associated with
-     * Google Tag when true.
-     * @opt_param string pageToken Continuation token for fetching the next page of
-     * results.
-     * @return ListAccountsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\TagManager\Resource\Accounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listAccounts($optParams = [])
-    {
-    }
-    /**
-     * Updates a GTM Account. (accounts.update)
-     *
-     * @param string $path GTM Account's API relative path.
-     * @param Account $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string fingerprint When provided, this fingerprint must match the
-     * fingerprint of the account in storage.
-     * @return Account
-     * @throws \Google\Service\Exception
-     */
-    public function update($path, Account $postBody, $optParams = [])
+    class Google_Service_TagManager_Resource_Accounts extends \Google\Service\TagManager\Resource\Accounts
     {
     }
 }

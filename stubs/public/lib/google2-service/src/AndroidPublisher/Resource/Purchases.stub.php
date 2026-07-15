@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher\Resource;
-
-/**
- * The "purchases" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $purchases = $androidpublisherService->purchases;
- *  </code>
- */
-class Purchases extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidPublisher\Resource {
+    /**
+     * The "purchases" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
+     *   $purchases = $androidpublisherService->purchases;
+     *  </code>
+     */
+    class Purchases extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AndroidPublisher\Resource\Purchases registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AndroidPublisher_Resource_Purchases extends \Google\Service\AndroidPublisher\Resource\Purchases
+    {
+    }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class TransactionInfo extends \Google\Model
-{
-    /**
-     * Output only. [Alpha] Id of the transaction.
-     *
-     * @var string
-     */
-    public $transactionId;
-    /**
-     * Output only. [Alpha] Id of the transaction.
-     *
-     * @param string $transactionId
-     */
-    public function setTransactionId($transactionId)
+namespace Google\Service\Bigquery {
+    class TransactionInfo extends \Google\Model
     {
+        /**
+         * Output only. [Alpha] Id of the transaction.
+         *
+         * @var string
+         */
+        public $transactionId;
+        /**
+         * Output only. [Alpha] Id of the transaction.
+         *
+         * @param string $transactionId
+         */
+        public function setTransactionId($transactionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransactionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\TransactionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTransactionId()
+    class Google_Service_Bigquery_TransactionInfo extends \Google\Service\Bigquery\TransactionInfo
     {
     }
 }

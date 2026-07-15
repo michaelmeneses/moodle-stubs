@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1CorroborateContentResponse extends \Google\Collection
-{
-    protected $collection_key = 'claims';
-    protected $claimsType = GoogleCloudAiplatformV1Claim::class;
-    protected $claimsDataType = 'array';
-    /**
-     * Confidence score of corroborating content. Value is [0,1] with 1 is the
-     * most confidence.
-     *
-     * @var float
-     */
-    public $corroborationScore;
-    /**
-     * Claims that are extracted from the input content and facts that support the
-     * claims.
-     *
-     * @param GoogleCloudAiplatformV1Claim[] $claims
-     */
-    public function setClaims($claims)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1CorroborateContentResponse extends \Google\Collection
     {
+        protected $collection_key = 'claims';
+        protected $claimsType = GoogleCloudAiplatformV1Claim::class;
+        protected $claimsDataType = 'array';
+        /**
+         * Confidence score of corroborating content. Value is [0,1] with 1 is the
+         * most confidence.
+         *
+         * @var float
+         */
+        public $corroborationScore;
+        /**
+         * Claims that are extracted from the input content and facts that support the
+         * claims.
+         *
+         * @param GoogleCloudAiplatformV1Claim[] $claims
+         */
+        public function setClaims($claims)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Claim[]
+         */
+        public function getClaims()
+        {
+        }
+        /**
+         * Confidence score of corroborating content. Value is [0,1] with 1 is the
+         * most confidence.
+         *
+         * @param float $corroborationScore
+         */
+        public function setCorroborationScore($corroborationScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getCorroborationScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Claim[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1CorroborateContentResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClaims()
-    {
-    }
-    /**
-     * Confidence score of corroborating content. Value is [0,1] with 1 is the
-     * most confidence.
-     *
-     * @param float $corroborationScore
-     */
-    public function setCorroborationScore($corroborationScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getCorroborationScore()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1CorroborateContentResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1CorroborateContentResponse
     {
     }
 }

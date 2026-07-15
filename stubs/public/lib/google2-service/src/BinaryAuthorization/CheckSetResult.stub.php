@@ -21,119 +21,128 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization;
-
-class CheckSetResult extends \Google\Model
-{
-    protected $allowlistResultType = AllowlistResult::class;
-    protected $allowlistResultDataType = '';
-    protected $checkResultsType = CheckResults::class;
-    protected $checkResultsDataType = '';
-    /**
-     * The name of the check set.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Explanation of this check set result. Only populated if no checks were
-     * evaluated.
-     *
-     * @var string
-     */
-    public $explanation;
-    /**
-     * The index of the check set.
-     *
-     * @var string
-     */
-    public $index;
-    protected $scopeType = Scope::class;
-    protected $scopeDataType = '';
-    /**
-     * If the image was exempted by an allow_pattern in the check set, contains
-     * the pattern that the image name matched.
-     *
-     * @param AllowlistResult $allowlistResult
-     */
-    public function setAllowlistResult(AllowlistResult $allowlistResult)
+namespace Google\Service\BinaryAuthorization {
+    class CheckSetResult extends \Google\Model
     {
+        protected $allowlistResultType = AllowlistResult::class;
+        protected $allowlistResultDataType = '';
+        protected $checkResultsType = CheckResults::class;
+        protected $checkResultsDataType = '';
+        /**
+         * The name of the check set.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Explanation of this check set result. Only populated if no checks were
+         * evaluated.
+         *
+         * @var string
+         */
+        public $explanation;
+        /**
+         * The index of the check set.
+         *
+         * @var string
+         */
+        public $index;
+        protected $scopeType = Scope::class;
+        protected $scopeDataType = '';
+        /**
+         * If the image was exempted by an allow_pattern in the check set, contains
+         * the pattern that the image name matched.
+         *
+         * @param AllowlistResult $allowlistResult
+         */
+        public function setAllowlistResult(AllowlistResult $allowlistResult)
+        {
+        }
+        /**
+         * @return AllowlistResult
+         */
+        public function getAllowlistResult()
+        {
+        }
+        /**
+         * If checks were evaluated, contains the results of evaluating each check.
+         *
+         * @param CheckResults $checkResults
+         */
+        public function setCheckResults(CheckResults $checkResults)
+        {
+        }
+        /**
+         * @return CheckResults
+         */
+        public function getCheckResults()
+        {
+        }
+        /**
+         * The name of the check set.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Explanation of this check set result. Only populated if no checks were
+         * evaluated.
+         *
+         * @param string $explanation
+         */
+        public function setExplanation($explanation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExplanation()
+        {
+        }
+        /**
+         * The index of the check set.
+         *
+         * @param string $index
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIndex()
+        {
+        }
+        /**
+         * The scope of the check set.
+         *
+         * @param Scope $scope
+         */
+        public function setScope(Scope $scope)
+        {
+        }
+        /**
+         * @return Scope
+         */
+        public function getScope()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AllowlistResult
+     * Runtime class alias of \Google\Service\BinaryAuthorization\CheckSetResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowlistResult()
-    {
-    }
-    /**
-     * If checks were evaluated, contains the results of evaluating each check.
-     *
-     * @param CheckResults $checkResults
-     */
-    public function setCheckResults(CheckResults $checkResults)
-    {
-    }
-    /**
-     * @return CheckResults
-     */
-    public function getCheckResults()
-    {
-    }
-    /**
-     * The name of the check set.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Explanation of this check set result. Only populated if no checks were
-     * evaluated.
-     *
-     * @param string $explanation
-     */
-    public function setExplanation($explanation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExplanation()
-    {
-    }
-    /**
-     * The index of the check set.
-     *
-     * @param string $index
-     */
-    public function setIndex($index)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIndex()
-    {
-    }
-    /**
-     * The scope of the check set.
-     *
-     * @param Scope $scope
-     */
-    public function setScope(Scope $scope)
-    {
-    }
-    /**
-     * @return Scope
-     */
-    public function getScope()
+    class Google_Service_BinaryAuthorization_CheckSetResult extends \Google\Service\BinaryAuthorization\CheckSetResult
     {
     }
 }

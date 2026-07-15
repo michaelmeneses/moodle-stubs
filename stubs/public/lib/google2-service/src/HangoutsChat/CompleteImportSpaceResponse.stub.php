@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class CompleteImportSpaceResponse extends \Google\Model
-{
-    protected $spaceType = Space::class;
-    protected $spaceDataType = '';
-    /**
-     * The import mode space.
-     *
-     * @param Space $space
-     */
-    public function setSpace(Space $space)
+namespace Google\Service\HangoutsChat {
+    class CompleteImportSpaceResponse extends \Google\Model
     {
+        protected $spaceType = Space::class;
+        protected $spaceDataType = '';
+        /**
+         * The import mode space.
+         *
+         * @param Space $space
+         */
+        public function setSpace(Space $space)
+        {
+        }
+        /**
+         * @return Space
+         */
+        public function getSpace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Space
+     * Runtime class alias of \Google\Service\HangoutsChat\CompleteImportSpaceResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSpace()
+    class Google_Service_HangoutsChat_CompleteImportSpaceResponse extends \Google\Service\HangoutsChat\CompleteImportSpaceResponse
     {
     }
 }

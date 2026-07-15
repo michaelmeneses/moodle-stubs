@@ -21,40 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebasestorage\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $firebasestorageService = new Google\Service\Firebasestorage(...);
- *   $projects = $firebasestorageService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\Firebasestorage\Resource {
+    use Google\Service\Firebasestorage\DefaultBucket;
+    use Google\Service\Firebasestorage\FirebasestorageEmpty;
     /**
-     * Unlinks and deletes the default bucket. (projects.deleteDefaultBucket)
-     *
-     * @param string $name Required. The name of the default bucket to delete,
-     * `projects/{project_id_or_number}/defaultBucket`.
-     * @param array $optParams Optional parameters.
-     * @return FirebasestorageEmpty
-     * @throws \Google\Service\Exception
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $firebasestorageService = new Google\Service\Firebasestorage(...);
+     *   $projects = $firebasestorageService->projects;
+     *  </code>
      */
-    public function deleteDefaultBucket($name, $optParams = [])
+    class Projects extends \Google\Service\Resource
     {
+        /**
+         * Unlinks and deletes the default bucket. (projects.deleteDefaultBucket)
+         *
+         * @param string $name Required. The name of the default bucket to delete,
+         * `projects/{project_id_or_number}/defaultBucket`.
+         * @param array $optParams Optional parameters.
+         * @return FirebasestorageEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function deleteDefaultBucket($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the default bucket. (projects.getDefaultBucket)
+         *
+         * @param string $name Required. The name of the default bucket to retrieve,
+         * `projects/{project_id_or_number}/defaultBucket`.
+         * @param array $optParams Optional parameters.
+         * @return DefaultBucket
+         * @throws \Google\Service\Exception
+         */
+        public function getDefaultBucket($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the default bucket. (projects.getDefaultBucket)
-     *
-     * @param string $name Required. The name of the default bucket to retrieve,
-     * `projects/{project_id_or_number}/defaultBucket`.
-     * @param array $optParams Optional parameters.
-     * @return DefaultBucket
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Firebasestorage\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultBucket($name, $optParams = [])
+    class Google_Service_Firebasestorage_Resource_Projects extends \Google\Service\Firebasestorage\Resource\Projects
     {
     }
 }

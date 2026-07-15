@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1ScheduleSpec extends \Google\Model
-{
-    /**
-     * Output only. When the next Scheduler job is going to run.
-     *
-     * @var string
-     */
-    public $nextJobTime;
-    /**
-     * Unix-cron format of the schedule. This information is retrieved from the
-     * linked Cloud Scheduler.
-     *
-     * @var string
-     */
-    public $schedule;
-    /**
-     * Timezone ID. This matches the timezone IDs used by the Cloud Scheduler API.
-     * If empty, UTC time is assumed.
-     *
-     * @var string
-     */
-    public $timeZone;
-    /**
-     * Output only. When the next Scheduler job is going to run.
-     *
-     * @param string $nextJobTime
-     */
-    public function setNextJobTime($nextJobTime)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1ScheduleSpec extends \Google\Model
     {
+        /**
+         * Output only. When the next Scheduler job is going to run.
+         *
+         * @var string
+         */
+        public $nextJobTime;
+        /**
+         * Unix-cron format of the schedule. This information is retrieved from the
+         * linked Cloud Scheduler.
+         *
+         * @var string
+         */
+        public $schedule;
+        /**
+         * Timezone ID. This matches the timezone IDs used by the Cloud Scheduler API.
+         * If empty, UTC time is assumed.
+         *
+         * @var string
+         */
+        public $timeZone;
+        /**
+         * Output only. When the next Scheduler job is going to run.
+         *
+         * @param string $nextJobTime
+         */
+        public function setNextJobTime($nextJobTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextJobTime()
+        {
+        }
+        /**
+         * Unix-cron format of the schedule. This information is retrieved from the
+         * linked Cloud Scheduler.
+         *
+         * @param string $schedule
+         */
+        public function setSchedule($schedule)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchedule()
+        {
+        }
+        /**
+         * Timezone ID. This matches the timezone IDs used by the Cloud Scheduler API.
+         * If empty, UTC time is assumed.
+         *
+         * @param string $timeZone
+         */
+        public function setTimeZone($timeZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1ScheduleSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextJobTime()
-    {
-    }
-    /**
-     * Unix-cron format of the schedule. This information is retrieved from the
-     * linked Cloud Scheduler.
-     *
-     * @param string $schedule
-     */
-    public function setSchedule($schedule)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchedule()
-    {
-    }
-    /**
-     * Timezone ID. This matches the timezone IDs used by the Cloud Scheduler API.
-     * If empty, UTC time is assumed.
-     *
-     * @param string $timeZone
-     */
-    public function setTimeZone($timeZone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeZone()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1ScheduleSpec extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1ScheduleSpec
     {
     }
 }

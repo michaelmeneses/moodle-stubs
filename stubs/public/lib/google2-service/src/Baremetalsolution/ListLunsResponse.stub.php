@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class ListLunsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $lunsType = Lun::class;
-    protected $lunsDataType = 'array';
-    /**
-     * A token identifying a page of results from the server.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of luns.
-     *
-     * @param Lun[] $luns
-     */
-    public function setLuns($luns)
+namespace Google\Service\Baremetalsolution {
+    class ListLunsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $lunsType = Lun::class;
+        protected $lunsDataType = 'array';
+        /**
+         * A token identifying a page of results from the server.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of luns.
+         *
+         * @param Lun[] $luns
+         */
+        public function setLuns($luns)
+        {
+        }
+        /**
+         * @return Lun[]
+         */
+        public function getLuns()
+        {
+        }
+        /**
+         * A token identifying a page of results from the server.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Lun[]
+     * Runtime class alias of \Google\Service\Baremetalsolution\ListLunsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLuns()
-    {
-    }
-    /**
-     * A token identifying a page of results from the server.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Baremetalsolution_ListLunsResponse extends \Google\Service\Baremetalsolution\ListLunsResponse
     {
     }
 }

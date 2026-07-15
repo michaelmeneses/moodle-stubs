@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class KeyRange extends \Google\Collection
-{
-    protected $collection_key = 'startOpen';
-    /**
-     * If the end is closed, then the range includes all rows whose first
-     * `len(end_closed)` key columns exactly match `end_closed`.
-     *
-     * @var array[]
-     */
-    public $endClosed;
-    /**
-     * If the end is open, then the range excludes rows whose first
-     * `len(end_open)` key columns exactly match `end_open`.
-     *
-     * @var array[]
-     */
-    public $endOpen;
-    /**
-     * If the start is closed, then the range includes all rows whose first
-     * `len(start_closed)` key columns exactly match `start_closed`.
-     *
-     * @var array[]
-     */
-    public $startClosed;
-    /**
-     * If the start is open, then the range excludes rows whose first
-     * `len(start_open)` key columns exactly match `start_open`.
-     *
-     * @var array[]
-     */
-    public $startOpen;
-    /**
-     * If the end is closed, then the range includes all rows whose first
-     * `len(end_closed)` key columns exactly match `end_closed`.
-     *
-     * @param array[] $endClosed
-     */
-    public function setEndClosed($endClosed)
+namespace Google\Service\Spanner {
+    class KeyRange extends \Google\Collection
     {
+        protected $collection_key = 'startOpen';
+        /**
+         * If the end is closed, then the range includes all rows whose first
+         * `len(end_closed)` key columns exactly match `end_closed`.
+         *
+         * @var array[]
+         */
+        public $endClosed;
+        /**
+         * If the end is open, then the range excludes rows whose first
+         * `len(end_open)` key columns exactly match `end_open`.
+         *
+         * @var array[]
+         */
+        public $endOpen;
+        /**
+         * If the start is closed, then the range includes all rows whose first
+         * `len(start_closed)` key columns exactly match `start_closed`.
+         *
+         * @var array[]
+         */
+        public $startClosed;
+        /**
+         * If the start is open, then the range excludes rows whose first
+         * `len(start_open)` key columns exactly match `start_open`.
+         *
+         * @var array[]
+         */
+        public $startOpen;
+        /**
+         * If the end is closed, then the range includes all rows whose first
+         * `len(end_closed)` key columns exactly match `end_closed`.
+         *
+         * @param array[] $endClosed
+         */
+        public function setEndClosed($endClosed)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getEndClosed()
+        {
+        }
+        /**
+         * If the end is open, then the range excludes rows whose first
+         * `len(end_open)` key columns exactly match `end_open`.
+         *
+         * @param array[] $endOpen
+         */
+        public function setEndOpen($endOpen)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getEndOpen()
+        {
+        }
+        /**
+         * If the start is closed, then the range includes all rows whose first
+         * `len(start_closed)` key columns exactly match `start_closed`.
+         *
+         * @param array[] $startClosed
+         */
+        public function setStartClosed($startClosed)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getStartClosed()
+        {
+        }
+        /**
+         * If the start is open, then the range excludes rows whose first
+         * `len(start_open)` key columns exactly match `start_open`.
+         *
+         * @param array[] $startOpen
+         */
+        public function setStartOpen($startOpen)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getStartOpen()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Spanner\KeyRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndClosed()
-    {
-    }
-    /**
-     * If the end is open, then the range excludes rows whose first
-     * `len(end_open)` key columns exactly match `end_open`.
-     *
-     * @param array[] $endOpen
-     */
-    public function setEndOpen($endOpen)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getEndOpen()
-    {
-    }
-    /**
-     * If the start is closed, then the range includes all rows whose first
-     * `len(start_closed)` key columns exactly match `start_closed`.
-     *
-     * @param array[] $startClosed
-     */
-    public function setStartClosed($startClosed)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getStartClosed()
-    {
-    }
-    /**
-     * If the start is open, then the range excludes rows whose first
-     * `len(start_open)` key columns exactly match `start_open`.
-     *
-     * @param array[] $startOpen
-     */
-    public function setStartOpen($startOpen)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getStartOpen()
+    class Google_Service_Spanner_KeyRange extends \Google\Service\Spanner\KeyRange
     {
     }
 }

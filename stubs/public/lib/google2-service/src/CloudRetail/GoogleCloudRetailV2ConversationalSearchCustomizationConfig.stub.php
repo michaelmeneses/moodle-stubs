@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ConversationalSearchCustomizationConfig extends \Google\Model
-{
-    /**
-     * Required. Resource name of the catalog. Format:
-     * projects/{project}/locations/{location}/catalogs/{catalog}
-     *
-     * @var string
-     */
-    public $catalog;
-    protected $intentClassificationConfigType = GoogleCloudRetailV2IntentClassificationConfig::class;
-    protected $intentClassificationConfigDataType = '';
-    /**
-     * Optional. The retailer's display name that could be used in our LLM
-     * answers. Example - "Google"
-     *
-     * @var string
-     */
-    public $retailerDisplayName;
-    /**
-     * Required. Resource name of the catalog. Format:
-     * projects/{project}/locations/{location}/catalogs/{catalog}
-     *
-     * @param string $catalog
-     */
-    public function setCatalog($catalog)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ConversationalSearchCustomizationConfig extends \Google\Model
     {
+        /**
+         * Required. Resource name of the catalog. Format:
+         * projects/{project}/locations/{location}/catalogs/{catalog}
+         *
+         * @var string
+         */
+        public $catalog;
+        protected $intentClassificationConfigType = GoogleCloudRetailV2IntentClassificationConfig::class;
+        protected $intentClassificationConfigDataType = '';
+        /**
+         * Optional. The retailer's display name that could be used in our LLM
+         * answers. Example - "Google"
+         *
+         * @var string
+         */
+        public $retailerDisplayName;
+        /**
+         * Required. Resource name of the catalog. Format:
+         * projects/{project}/locations/{location}/catalogs/{catalog}
+         *
+         * @param string $catalog
+         */
+        public function setCatalog($catalog)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCatalog()
+        {
+        }
+        /**
+         * Optional. The configs for intent classification.
+         *
+         * @param GoogleCloudRetailV2IntentClassificationConfig $intentClassificationConfig
+         */
+        public function setIntentClassificationConfig(GoogleCloudRetailV2IntentClassificationConfig $intentClassificationConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2IntentClassificationConfig
+         */
+        public function getIntentClassificationConfig()
+        {
+        }
+        /**
+         * Optional. The retailer's display name that could be used in our LLM
+         * answers. Example - "Google"
+         *
+         * @param string $retailerDisplayName
+         */
+        public function setRetailerDisplayName($retailerDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRetailerDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ConversationalSearchCustomizationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCatalog()
-    {
-    }
-    /**
-     * Optional. The configs for intent classification.
-     *
-     * @param GoogleCloudRetailV2IntentClassificationConfig $intentClassificationConfig
-     */
-    public function setIntentClassificationConfig(GoogleCloudRetailV2IntentClassificationConfig $intentClassificationConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2IntentClassificationConfig
-     */
-    public function getIntentClassificationConfig()
-    {
-    }
-    /**
-     * Optional. The retailer's display name that could be used in our LLM
-     * answers. Example - "Google"
-     *
-     * @param string $retailerDisplayName
-     */
-    public function setRetailerDisplayName($retailerDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRetailerDisplayName()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ConversationalSearchCustomizationConfig extends \Google\Service\CloudRetail\GoogleCloudRetailV2ConversationalSearchCustomizationConfig
     {
     }
 }

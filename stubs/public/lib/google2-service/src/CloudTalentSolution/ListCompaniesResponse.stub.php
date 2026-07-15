@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTalentSolution;
-
-class ListCompaniesResponse extends \Google\Collection
-{
-    protected $collection_key = 'companies';
-    protected $companiesType = Company::class;
-    protected $companiesDataType = 'array';
-    protected $metadataType = ResponseMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * A token to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Companies for the current client.
-     *
-     * @param Company[] $companies
-     */
-    public function setCompanies($companies)
+namespace Google\Service\CloudTalentSolution {
+    class ListCompaniesResponse extends \Google\Collection
     {
+        protected $collection_key = 'companies';
+        protected $companiesType = Company::class;
+        protected $companiesDataType = 'array';
+        protected $metadataType = ResponseMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * A token to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Companies for the current client.
+         *
+         * @param Company[] $companies
+         */
+        public function setCompanies($companies)
+        {
+        }
+        /**
+         * @return Company[]
+         */
+        public function getCompanies()
+        {
+        }
+        /**
+         * Additional information for the API invocation, such as the request tracking
+         * id.
+         *
+         * @param ResponseMetadata $metadata
+         */
+        public function setMetadata(ResponseMetadata $metadata)
+        {
+        }
+        /**
+         * @return ResponseMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Company[]
+     * Runtime class alias of \Google\Service\CloudTalentSolution\ListCompaniesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompanies()
-    {
-    }
-    /**
-     * Additional information for the API invocation, such as the request tracking
-     * id.
-     *
-     * @param ResponseMetadata $metadata
-     */
-    public function setMetadata(ResponseMetadata $metadata)
-    {
-    }
-    /**
-     * @return ResponseMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudTalentSolution_ListCompaniesResponse extends \Google\Service\CloudTalentSolution\ListCompaniesResponse
     {
     }
 }

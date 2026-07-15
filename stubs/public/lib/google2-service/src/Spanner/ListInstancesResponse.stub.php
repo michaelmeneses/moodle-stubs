@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class ListInstancesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $instancesType = Instance::class;
-    protected $instancesDataType = 'array';
-    /**
-     * `next_page_token` can be sent in a subsequent ListInstances call to fetch
-     * more of the matching instances.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of unreachable instances. It includes the names of instances whose
-     * metadata could not be retrieved within instance_deadline.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of requested instances.
-     *
-     * @param Instance[] $instances
-     */
-    public function setInstances($instances)
+namespace Google\Service\Spanner {
+    class ListInstancesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $instancesType = Instance::class;
+        protected $instancesDataType = 'array';
+        /**
+         * `next_page_token` can be sent in a subsequent ListInstances call to fetch
+         * more of the matching instances.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of unreachable instances. It includes the names of instances whose
+         * metadata could not be retrieved within instance_deadline.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of requested instances.
+         *
+         * @param Instance[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return Instance[]
+         */
+        public function getInstances()
+        {
+        }
+        /**
+         * `next_page_token` can be sent in a subsequent ListInstances call to fetch
+         * more of the matching instances.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of unreachable instances. It includes the names of instances whose
+         * metadata could not be retrieved within instance_deadline.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Instance[]
+     * Runtime class alias of \Google\Service\Spanner\ListInstancesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstances()
-    {
-    }
-    /**
-     * `next_page_token` can be sent in a subsequent ListInstances call to fetch
-     * more of the matching instances.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of unreachable instances. It includes the names of instances whose
-     * metadata could not be retrieved within instance_deadline.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Spanner_ListInstancesResponse extends \Google\Service\Spanner\ListInstancesResponse
     {
     }
 }

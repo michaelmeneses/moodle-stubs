@@ -29,6 +29,8 @@
  */
 namespace tool_dataprivacy;
 
+use lang_string;
+use core\persistent;
 /**
  * Class for loading/storing data requests from the DB.
  *

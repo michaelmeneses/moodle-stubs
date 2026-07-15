@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class Offers extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = OffersItems::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Resource type.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * A list of offers.
-     *
-     * @param OffersItems[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Books {
+    class Offers extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = OffersItems::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Resource type.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * A list of offers.
+         *
+         * @param OffersItems[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return OffersItems[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Resource type.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OffersItems[]
+     * Runtime class alias of \Google\Service\Books\Offers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * Resource type.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Books_Offers extends \Google\Service\Books\Offers
     {
     }
 }

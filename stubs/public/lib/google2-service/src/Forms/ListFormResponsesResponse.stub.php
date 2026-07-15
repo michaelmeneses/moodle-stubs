@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class ListFormResponsesResponse extends \Google\Collection
-{
-    protected $collection_key = 'responses';
-    /**
-     * If set, there are more responses. To get the next page of responses,
-     * provide this as `page_token` in a future request.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $responsesType = FormResponse::class;
-    protected $responsesDataType = 'array';
-    /**
-     * If set, there are more responses. To get the next page of responses,
-     * provide this as `page_token` in a future request.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Forms {
+    class ListFormResponsesResponse extends \Google\Collection
     {
+        protected $collection_key = 'responses';
+        /**
+         * If set, there are more responses. To get the next page of responses,
+         * provide this as `page_token` in a future request.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $responsesType = FormResponse::class;
+        protected $responsesDataType = 'array';
+        /**
+         * If set, there are more responses. To get the next page of responses,
+         * provide this as `page_token` in a future request.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The returned form responses. Note: The `formId` field is not returned in
+         * the `FormResponse` object for list requests.
+         *
+         * @param FormResponse[] $responses
+         */
+        public function setResponses($responses)
+        {
+        }
+        /**
+         * @return FormResponse[]
+         */
+        public function getResponses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Forms\ListFormResponsesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The returned form responses. Note: The `formId` field is not returned in
-     * the `FormResponse` object for list requests.
-     *
-     * @param FormResponse[] $responses
-     */
-    public function setResponses($responses)
-    {
-    }
-    /**
-     * @return FormResponse[]
-     */
-    public function getResponses()
+    class Google_Service_Forms_ListFormResponsesResponse extends \Google\Service\Forms\ListFormResponsesResponse
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessApproval;
-
-class DismissDecision extends \Google\Model
-{
-    /**
-     * The time at which the approval request was dismissed.
-     *
-     * @var string
-     */
-    public $dismissTime;
-    /**
-     * This field will be true if the ApprovalRequest was implicitly dismissed due
-     * to inaction by the access approval approvers (the request is not acted on
-     * by the approvers before the exiration time).
-     *
-     * @var bool
-     */
-    public $implicit;
-    /**
-     * The time at which the approval request was dismissed.
-     *
-     * @param string $dismissTime
-     */
-    public function setDismissTime($dismissTime)
+namespace Google\Service\AccessApproval {
+    class DismissDecision extends \Google\Model
     {
+        /**
+         * The time at which the approval request was dismissed.
+         *
+         * @var string
+         */
+        public $dismissTime;
+        /**
+         * This field will be true if the ApprovalRequest was implicitly dismissed due
+         * to inaction by the access approval approvers (the request is not acted on
+         * by the approvers before the exiration time).
+         *
+         * @var bool
+         */
+        public $implicit;
+        /**
+         * The time at which the approval request was dismissed.
+         *
+         * @param string $dismissTime
+         */
+        public function setDismissTime($dismissTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDismissTime()
+        {
+        }
+        /**
+         * This field will be true if the ApprovalRequest was implicitly dismissed due
+         * to inaction by the access approval approvers (the request is not acted on
+         * by the approvers before the exiration time).
+         *
+         * @param bool $implicit
+         */
+        public function setImplicit($implicit)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getImplicit()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AccessApproval\DismissDecision registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDismissTime()
-    {
-    }
-    /**
-     * This field will be true if the ApprovalRequest was implicitly dismissed due
-     * to inaction by the access approval approvers (the request is not acted on
-     * by the approvers before the exiration time).
-     *
-     * @param bool $implicit
-     */
-    public function setImplicit($implicit)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getImplicit()
+    class Google_Service_AccessApproval_DismissDecision extends \Google\Service\AccessApproval\DismissDecision
     {
     }
 }

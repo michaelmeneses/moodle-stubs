@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ListBoundMembershipsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $membershipsType = Membership::class;
-    protected $membershipsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * @param Membership[]
-     */
-    public function setMemberships($memberships)
+namespace Google\Service\GKEHub {
+    class ListBoundMembershipsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $membershipsType = Membership::class;
+        protected $membershipsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * @param Membership[]
+         */
+        public function setMemberships($memberships)
+        {
+        }
+        /**
+         * @return Membership[]
+         */
+        public function getMemberships()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Membership[]
+     * Runtime class alias of \Google\Service\GKEHub\ListBoundMembershipsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMemberships()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_GKEHub_ListBoundMembershipsResponse extends \Google\Service\GKEHub\ListBoundMembershipsResponse
     {
     }
 }

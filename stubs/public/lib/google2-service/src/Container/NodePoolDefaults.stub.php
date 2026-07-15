@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class NodePoolDefaults extends \Google\Model
-{
-    protected $nodeConfigDefaultsType = NodeConfigDefaults::class;
-    protected $nodeConfigDefaultsDataType = '';
-    /**
-     * Subset of NodeConfig message that has defaults.
-     *
-     * @param NodeConfigDefaults $nodeConfigDefaults
-     */
-    public function setNodeConfigDefaults(NodeConfigDefaults $nodeConfigDefaults)
+namespace Google\Service\Container {
+    class NodePoolDefaults extends \Google\Model
     {
+        protected $nodeConfigDefaultsType = NodeConfigDefaults::class;
+        protected $nodeConfigDefaultsDataType = '';
+        /**
+         * Subset of NodeConfig message that has defaults.
+         *
+         * @param NodeConfigDefaults $nodeConfigDefaults
+         */
+        public function setNodeConfigDefaults(NodeConfigDefaults $nodeConfigDefaults)
+        {
+        }
+        /**
+         * @return NodeConfigDefaults
+         */
+        public function getNodeConfigDefaults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NodeConfigDefaults
+     * Runtime class alias of \Google\Service\Container\NodePoolDefaults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNodeConfigDefaults()
+    class Google_Service_Container_NodePoolDefaults extends \Google\Service\Container\NodePoolDefaults
     {
     }
 }

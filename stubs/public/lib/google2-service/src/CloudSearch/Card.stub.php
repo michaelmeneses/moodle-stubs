@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Card extends \Google\Collection
-{
-    protected $collection_key = 'sections';
-    protected $cardActionsType = CardAction::class;
-    protected $cardActionsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $displayStyle;
-    protected $fixedFooterType = FixedFooter::class;
-    protected $fixedFooterDataType = '';
-    protected $headerType = CardHeader::class;
-    protected $headerDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    protected $peekCardHeaderType = CardHeader::class;
-    protected $peekCardHeaderDataType = '';
-    protected $sectionsType = Section::class;
-    protected $sectionsDataType = 'array';
-    /**
-     * @param CardAction[]
-     */
-    public function setCardActions($cardActions)
+namespace Google\Service\CloudSearch {
+    class Card extends \Google\Collection
     {
+        protected $collection_key = 'sections';
+        protected $cardActionsType = CardAction::class;
+        protected $cardActionsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $displayStyle;
+        protected $fixedFooterType = FixedFooter::class;
+        protected $fixedFooterDataType = '';
+        protected $headerType = CardHeader::class;
+        protected $headerDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        protected $peekCardHeaderType = CardHeader::class;
+        protected $peekCardHeaderDataType = '';
+        protected $sectionsType = Section::class;
+        protected $sectionsDataType = 'array';
+        /**
+         * @param CardAction[]
+         */
+        public function setCardActions($cardActions)
+        {
+        }
+        /**
+         * @return CardAction[]
+         */
+        public function getCardActions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayStyle($displayStyle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayStyle()
+        {
+        }
+        /**
+         * @param FixedFooter
+         */
+        public function setFixedFooter(FixedFooter $fixedFooter)
+        {
+        }
+        /**
+         * @return FixedFooter
+         */
+        public function getFixedFooter()
+        {
+        }
+        /**
+         * @param CardHeader
+         */
+        public function setHeader(CardHeader $header)
+        {
+        }
+        /**
+         * @return CardHeader
+         */
+        public function getHeader()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param CardHeader
+         */
+        public function setPeekCardHeader(CardHeader $peekCardHeader)
+        {
+        }
+        /**
+         * @return CardHeader
+         */
+        public function getPeekCardHeader()
+        {
+        }
+        /**
+         * @param Section[]
+         */
+        public function setSections($sections)
+        {
+        }
+        /**
+         * @return Section[]
+         */
+        public function getSections()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CardAction[]
+     * Runtime class alias of \Google\Service\CloudSearch\Card registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCardActions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayStyle($displayStyle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayStyle()
-    {
-    }
-    /**
-     * @param FixedFooter
-     */
-    public function setFixedFooter(FixedFooter $fixedFooter)
-    {
-    }
-    /**
-     * @return FixedFooter
-     */
-    public function getFixedFooter()
-    {
-    }
-    /**
-     * @param CardHeader
-     */
-    public function setHeader(CardHeader $header)
-    {
-    }
-    /**
-     * @return CardHeader
-     */
-    public function getHeader()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param CardHeader
-     */
-    public function setPeekCardHeader(CardHeader $peekCardHeader)
-    {
-    }
-    /**
-     * @return CardHeader
-     */
-    public function getPeekCardHeader()
-    {
-    }
-    /**
-     * @param Section[]
-     */
-    public function setSections($sections)
-    {
-    }
-    /**
-     * @return Section[]
-     */
-    public function getSections()
+    class Google_Service_CloudSearch_Card extends \Google\Service\CloudSearch\Card
     {
     }
 }

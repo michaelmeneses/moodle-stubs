@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog\Resource;
-
-/**
- * The "organizations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $datacatalogService = new Google\Service\DataCatalog(...);
- *   $organizations = $datacatalogService->organizations;
- *  </code>
- */
-class Organizations extends \Google\Service\Resource
-{
+namespace Google\Service\DataCatalog\Resource {
+    /**
+     * The "organizations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $datacatalogService = new Google\Service\DataCatalog(...);
+     *   $organizations = $datacatalogService->organizations;
+     *  </code>
+     */
+    class Organizations extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataCatalog\Resource\Organizations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataCatalog_Resource_Organizations extends \Google\Service\DataCatalog\Resource\Organizations
+    {
+    }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1ViolationRemediationInstructions extends \Google\Model
-{
-    protected $consoleInstructionsType = GoogleCloudAssuredworkloadsV1ViolationRemediationInstructionsConsole::class;
-    protected $consoleInstructionsDataType = '';
-    protected $gcloudInstructionsType = GoogleCloudAssuredworkloadsV1ViolationRemediationInstructionsGcloud::class;
-    protected $gcloudInstructionsDataType = '';
-    /**
-     * Remediation instructions to resolve violation via cloud console
-     *
-     * @param GoogleCloudAssuredworkloadsV1ViolationRemediationInstructionsConsole $consoleInstructions
-     */
-    public function setConsoleInstructions(GoogleCloudAssuredworkloadsV1ViolationRemediationInstructionsConsole $consoleInstructions)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1ViolationRemediationInstructions extends \Google\Model
     {
+        protected $consoleInstructionsType = GoogleCloudAssuredworkloadsV1ViolationRemediationInstructionsConsole::class;
+        protected $consoleInstructionsDataType = '';
+        protected $gcloudInstructionsType = GoogleCloudAssuredworkloadsV1ViolationRemediationInstructionsGcloud::class;
+        protected $gcloudInstructionsDataType = '';
+        /**
+         * Remediation instructions to resolve violation via cloud console
+         *
+         * @param GoogleCloudAssuredworkloadsV1ViolationRemediationInstructionsConsole $consoleInstructions
+         */
+        public function setConsoleInstructions(GoogleCloudAssuredworkloadsV1ViolationRemediationInstructionsConsole $consoleInstructions)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1ViolationRemediationInstructionsConsole
+         */
+        public function getConsoleInstructions()
+        {
+        }
+        /**
+         * Remediation instructions to resolve violation via gcloud cli
+         *
+         * @param GoogleCloudAssuredworkloadsV1ViolationRemediationInstructionsGcloud $gcloudInstructions
+         */
+        public function setGcloudInstructions(GoogleCloudAssuredworkloadsV1ViolationRemediationInstructionsGcloud $gcloudInstructions)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1ViolationRemediationInstructionsGcloud
+         */
+        public function getGcloudInstructions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAssuredworkloadsV1ViolationRemediationInstructionsConsole
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1ViolationRemediationInstructions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsoleInstructions()
-    {
-    }
-    /**
-     * Remediation instructions to resolve violation via gcloud cli
-     *
-     * @param GoogleCloudAssuredworkloadsV1ViolationRemediationInstructionsGcloud $gcloudInstructions
-     */
-    public function setGcloudInstructions(GoogleCloudAssuredworkloadsV1ViolationRemediationInstructionsGcloud $gcloudInstructions)
-    {
-    }
-    /**
-     * @return GoogleCloudAssuredworkloadsV1ViolationRemediationInstructionsGcloud
-     */
-    public function getGcloudInstructions()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1ViolationRemediationInstructions extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1ViolationRemediationInstructions
     {
     }
 }

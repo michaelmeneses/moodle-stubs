@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class SetInstanceMachineTypeRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $machineType;
-    /**
-     * @param string
-     */
-    public function setMachineType($machineType)
+namespace Google\Service\AIPlatformNotebooks {
+    class SetInstanceMachineTypeRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $machineType;
+        /**
+         * @param string
+         */
+        public function setMachineType($machineType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMachineType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\SetInstanceMachineTypeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMachineType()
+    class Google_Service_AIPlatformNotebooks_SetInstanceMachineTypeRequest extends \Google\Service\AIPlatformNotebooks\SetInstanceMachineTypeRequest
     {
     }
 }

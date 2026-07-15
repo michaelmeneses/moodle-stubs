@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class BrowsersListResponse extends \Google\Collection
-{
-    protected $collection_key = 'browsers';
-    protected $browsersType = Browser::class;
-    protected $browsersDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#browsersListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Browser collection.
-     *
-     * @param Browser[] $browsers
-     */
-    public function setBrowsers($browsers)
+namespace Google\Service\Dfareporting {
+    class BrowsersListResponse extends \Google\Collection
     {
+        protected $collection_key = 'browsers';
+        protected $browsersType = Browser::class;
+        protected $browsersDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#browsersListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Browser collection.
+         *
+         * @param Browser[] $browsers
+         */
+        public function setBrowsers($browsers)
+        {
+        }
+        /**
+         * @return Browser[]
+         */
+        public function getBrowsers()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#browsersListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Browser[]
+     * Runtime class alias of \Google\Service\Dfareporting\BrowsersListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBrowsers()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#browsersListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Dfareporting_BrowsersListResponse extends \Google\Service\Dfareporting\BrowsersListResponse
     {
     }
 }

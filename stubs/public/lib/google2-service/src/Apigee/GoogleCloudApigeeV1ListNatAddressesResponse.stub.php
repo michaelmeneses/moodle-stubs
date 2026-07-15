@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListNatAddressesResponse extends \Google\Collection
-{
-    protected $collection_key = 'natAddresses';
-    protected $natAddressesType = GoogleCloudApigeeV1NatAddress::class;
-    protected $natAddressesDataType = 'array';
-    /**
-     * Page token that you can include in a ListNatAddresses request to retrieve
-     * the next page of content. If omitted, no subsequent pages exist.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of NAT Addresses for the instance.
-     *
-     * @param GoogleCloudApigeeV1NatAddress[] $natAddresses
-     */
-    public function setNatAddresses($natAddresses)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListNatAddressesResponse extends \Google\Collection
     {
+        protected $collection_key = 'natAddresses';
+        protected $natAddressesType = GoogleCloudApigeeV1NatAddress::class;
+        protected $natAddressesDataType = 'array';
+        /**
+         * Page token that you can include in a ListNatAddresses request to retrieve
+         * the next page of content. If omitted, no subsequent pages exist.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of NAT Addresses for the instance.
+         *
+         * @param GoogleCloudApigeeV1NatAddress[] $natAddresses
+         */
+        public function setNatAddresses($natAddresses)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1NatAddress[]
+         */
+        public function getNatAddresses()
+        {
+        }
+        /**
+         * Page token that you can include in a ListNatAddresses request to retrieve
+         * the next page of content. If omitted, no subsequent pages exist.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1NatAddress[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListNatAddressesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNatAddresses()
-    {
-    }
-    /**
-     * Page token that you can include in a ListNatAddresses request to retrieve
-     * the next page of content. If omitted, no subsequent pages exist.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListNatAddressesResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListNatAddressesResponse
     {
     }
 }

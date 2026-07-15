@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayGrouping;
-
-class CreateOrUpdateTagsRequest extends \Google\Collection
-{
-    protected $collection_key = 'tags';
-    protected $tagsType = Tag::class;
-    protected $tagsDataType = 'array';
-    /**
-     * Tags to be inserted or updated.
-     *
-     * @param Tag[] $tags
-     */
-    public function setTags($tags)
+namespace Google\Service\PlayGrouping {
+    class CreateOrUpdateTagsRequest extends \Google\Collection
     {
+        protected $collection_key = 'tags';
+        protected $tagsType = Tag::class;
+        protected $tagsDataType = 'array';
+        /**
+         * Tags to be inserted or updated.
+         *
+         * @param Tag[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return Tag[]
+         */
+        public function getTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Tag[]
+     * Runtime class alias of \Google\Service\PlayGrouping\CreateOrUpdateTagsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTags()
+    class Google_Service_PlayGrouping_CreateOrUpdateTagsRequest extends \Google\Service\PlayGrouping\CreateOrUpdateTagsRequest
     {
     }
 }

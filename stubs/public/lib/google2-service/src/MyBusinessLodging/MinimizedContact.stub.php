@@ -21,428 +21,437 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessLodging;
-
-class MinimizedContact extends \Google\Model
-{
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const CONTACTLESS_CHECKIN_CHECKOUT_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const CONTACTLESS_CHECKIN_CHECKOUT_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const CONTACTLESS_CHECKIN_CHECKOUT_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const CONTACTLESS_CHECKIN_CHECKOUT_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const DIGITAL_GUEST_ROOM_KEYS_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const DIGITAL_GUEST_ROOM_KEYS_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const DIGITAL_GUEST_ROOM_KEYS_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const DIGITAL_GUEST_ROOM_KEYS_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const HOUSEKEEPING_SCHEDULED_REQUEST_ONLY_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const HOUSEKEEPING_SCHEDULED_REQUEST_ONLY_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const HOUSEKEEPING_SCHEDULED_REQUEST_ONLY_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const HOUSEKEEPING_SCHEDULED_REQUEST_ONLY_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const NO_HIGH_TOUCH_ITEMS_COMMON_AREAS_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const NO_HIGH_TOUCH_ITEMS_COMMON_AREAS_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const NO_HIGH_TOUCH_ITEMS_COMMON_AREAS_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const NO_HIGH_TOUCH_ITEMS_COMMON_AREAS_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const NO_HIGH_TOUCH_ITEMS_GUEST_ROOMS_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const NO_HIGH_TOUCH_ITEMS_GUEST_ROOMS_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const NO_HIGH_TOUCH_ITEMS_GUEST_ROOMS_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const NO_HIGH_TOUCH_ITEMS_GUEST_ROOMS_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const PLASTIC_KEYCARDS_DISINFECTED_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const PLASTIC_KEYCARDS_DISINFECTED_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const PLASTIC_KEYCARDS_DISINFECTED_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const PLASTIC_KEYCARDS_DISINFECTED_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const ROOM_BOOKINGS_BUFFER_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const ROOM_BOOKINGS_BUFFER_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const ROOM_BOOKINGS_BUFFER_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const ROOM_BOOKINGS_BUFFER_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * No-contact check-in and check-out.
-     *
-     * @var bool
-     */
-    public $contactlessCheckinCheckout;
-    /**
-     * Contactless check-in check-out exception.
-     *
-     * @var string
-     */
-    public $contactlessCheckinCheckoutException;
-    /**
-     * Keyless mobile entry to guest rooms.
-     *
-     * @var bool
-     */
-    public $digitalGuestRoomKeys;
-    /**
-     * Digital guest room keys exception.
-     *
-     * @var string
-     */
-    public $digitalGuestRoomKeysException;
-    /**
-     * Housekeeping scheduled by request only.
-     *
-     * @var bool
-     */
-    public $housekeepingScheduledRequestOnly;
-    /**
-     * Housekeeping scheduled request only exception.
-     *
-     * @var string
-     */
-    public $housekeepingScheduledRequestOnlyException;
-    /**
-     * High-touch items, such as magazines, removed from common areas.
-     *
-     * @var bool
-     */
-    public $noHighTouchItemsCommonAreas;
-    /**
-     * No high touch items common areas exception.
-     *
-     * @var string
-     */
-    public $noHighTouchItemsCommonAreasException;
-    /**
-     * High-touch items, such as decorative pillows, removed from guest rooms.
-     *
-     * @var bool
-     */
-    public $noHighTouchItemsGuestRooms;
-    /**
-     * No high touch items guest rooms exception.
-     *
-     * @var string
-     */
-    public $noHighTouchItemsGuestRoomsException;
-    /**
-     * Plastic key cards are disinfected or discarded.
-     *
-     * @var bool
-     */
-    public $plasticKeycardsDisinfected;
-    /**
-     * Plastic keycards disinfected exception.
-     *
-     * @var string
-     */
-    public $plasticKeycardsDisinfectedException;
-    /**
-     * Buffer maintained between room bookings.
-     *
-     * @var bool
-     */
-    public $roomBookingsBuffer;
-    /**
-     * Room bookings buffer exception.
-     *
-     * @var string
-     */
-    public $roomBookingsBufferException;
-    /**
-     * No-contact check-in and check-out.
-     *
-     * @param bool $contactlessCheckinCheckout
-     */
-    public function setContactlessCheckinCheckout($contactlessCheckinCheckout)
+namespace Google\Service\MyBusinessLodging {
+    class MinimizedContact extends \Google\Model
     {
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const CONTACTLESS_CHECKIN_CHECKOUT_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const CONTACTLESS_CHECKIN_CHECKOUT_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const CONTACTLESS_CHECKIN_CHECKOUT_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const CONTACTLESS_CHECKIN_CHECKOUT_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const DIGITAL_GUEST_ROOM_KEYS_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const DIGITAL_GUEST_ROOM_KEYS_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const DIGITAL_GUEST_ROOM_KEYS_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const DIGITAL_GUEST_ROOM_KEYS_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const HOUSEKEEPING_SCHEDULED_REQUEST_ONLY_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const HOUSEKEEPING_SCHEDULED_REQUEST_ONLY_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const HOUSEKEEPING_SCHEDULED_REQUEST_ONLY_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const HOUSEKEEPING_SCHEDULED_REQUEST_ONLY_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const NO_HIGH_TOUCH_ITEMS_COMMON_AREAS_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const NO_HIGH_TOUCH_ITEMS_COMMON_AREAS_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const NO_HIGH_TOUCH_ITEMS_COMMON_AREAS_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const NO_HIGH_TOUCH_ITEMS_COMMON_AREAS_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const NO_HIGH_TOUCH_ITEMS_GUEST_ROOMS_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const NO_HIGH_TOUCH_ITEMS_GUEST_ROOMS_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const NO_HIGH_TOUCH_ITEMS_GUEST_ROOMS_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const NO_HIGH_TOUCH_ITEMS_GUEST_ROOMS_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const PLASTIC_KEYCARDS_DISINFECTED_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const PLASTIC_KEYCARDS_DISINFECTED_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const PLASTIC_KEYCARDS_DISINFECTED_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const PLASTIC_KEYCARDS_DISINFECTED_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const ROOM_BOOKINGS_BUFFER_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const ROOM_BOOKINGS_BUFFER_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const ROOM_BOOKINGS_BUFFER_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const ROOM_BOOKINGS_BUFFER_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * No-contact check-in and check-out.
+         *
+         * @var bool
+         */
+        public $contactlessCheckinCheckout;
+        /**
+         * Contactless check-in check-out exception.
+         *
+         * @var string
+         */
+        public $contactlessCheckinCheckoutException;
+        /**
+         * Keyless mobile entry to guest rooms.
+         *
+         * @var bool
+         */
+        public $digitalGuestRoomKeys;
+        /**
+         * Digital guest room keys exception.
+         *
+         * @var string
+         */
+        public $digitalGuestRoomKeysException;
+        /**
+         * Housekeeping scheduled by request only.
+         *
+         * @var bool
+         */
+        public $housekeepingScheduledRequestOnly;
+        /**
+         * Housekeeping scheduled request only exception.
+         *
+         * @var string
+         */
+        public $housekeepingScheduledRequestOnlyException;
+        /**
+         * High-touch items, such as magazines, removed from common areas.
+         *
+         * @var bool
+         */
+        public $noHighTouchItemsCommonAreas;
+        /**
+         * No high touch items common areas exception.
+         *
+         * @var string
+         */
+        public $noHighTouchItemsCommonAreasException;
+        /**
+         * High-touch items, such as decorative pillows, removed from guest rooms.
+         *
+         * @var bool
+         */
+        public $noHighTouchItemsGuestRooms;
+        /**
+         * No high touch items guest rooms exception.
+         *
+         * @var string
+         */
+        public $noHighTouchItemsGuestRoomsException;
+        /**
+         * Plastic key cards are disinfected or discarded.
+         *
+         * @var bool
+         */
+        public $plasticKeycardsDisinfected;
+        /**
+         * Plastic keycards disinfected exception.
+         *
+         * @var string
+         */
+        public $plasticKeycardsDisinfectedException;
+        /**
+         * Buffer maintained between room bookings.
+         *
+         * @var bool
+         */
+        public $roomBookingsBuffer;
+        /**
+         * Room bookings buffer exception.
+         *
+         * @var string
+         */
+        public $roomBookingsBufferException;
+        /**
+         * No-contact check-in and check-out.
+         *
+         * @param bool $contactlessCheckinCheckout
+         */
+        public function setContactlessCheckinCheckout($contactlessCheckinCheckout)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getContactlessCheckinCheckout()
+        {
+        }
+        /**
+         * Contactless check-in check-out exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::CONTACTLESS_CHECKIN_CHECKOUT_EXCEPTION_* $contactlessCheckinCheckoutException
+         */
+        public function setContactlessCheckinCheckoutException($contactlessCheckinCheckoutException)
+        {
+        }
+        /**
+         * @return self::CONTACTLESS_CHECKIN_CHECKOUT_EXCEPTION_*
+         */
+        public function getContactlessCheckinCheckoutException()
+        {
+        }
+        /**
+         * Keyless mobile entry to guest rooms.
+         *
+         * @param bool $digitalGuestRoomKeys
+         */
+        public function setDigitalGuestRoomKeys($digitalGuestRoomKeys)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDigitalGuestRoomKeys()
+        {
+        }
+        /**
+         * Digital guest room keys exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::DIGITAL_GUEST_ROOM_KEYS_EXCEPTION_* $digitalGuestRoomKeysException
+         */
+        public function setDigitalGuestRoomKeysException($digitalGuestRoomKeysException)
+        {
+        }
+        /**
+         * @return self::DIGITAL_GUEST_ROOM_KEYS_EXCEPTION_*
+         */
+        public function getDigitalGuestRoomKeysException()
+        {
+        }
+        /**
+         * Housekeeping scheduled by request only.
+         *
+         * @param bool $housekeepingScheduledRequestOnly
+         */
+        public function setHousekeepingScheduledRequestOnly($housekeepingScheduledRequestOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHousekeepingScheduledRequestOnly()
+        {
+        }
+        /**
+         * Housekeeping scheduled request only exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::HOUSEKEEPING_SCHEDULED_REQUEST_ONLY_EXCEPTION_* $housekeepingScheduledRequestOnlyException
+         */
+        public function setHousekeepingScheduledRequestOnlyException($housekeepingScheduledRequestOnlyException)
+        {
+        }
+        /**
+         * @return self::HOUSEKEEPING_SCHEDULED_REQUEST_ONLY_EXCEPTION_*
+         */
+        public function getHousekeepingScheduledRequestOnlyException()
+        {
+        }
+        /**
+         * High-touch items, such as magazines, removed from common areas.
+         *
+         * @param bool $noHighTouchItemsCommonAreas
+         */
+        public function setNoHighTouchItemsCommonAreas($noHighTouchItemsCommonAreas)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNoHighTouchItemsCommonAreas()
+        {
+        }
+        /**
+         * No high touch items common areas exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::NO_HIGH_TOUCH_ITEMS_COMMON_AREAS_EXCEPTION_* $noHighTouchItemsCommonAreasException
+         */
+        public function setNoHighTouchItemsCommonAreasException($noHighTouchItemsCommonAreasException)
+        {
+        }
+        /**
+         * @return self::NO_HIGH_TOUCH_ITEMS_COMMON_AREAS_EXCEPTION_*
+         */
+        public function getNoHighTouchItemsCommonAreasException()
+        {
+        }
+        /**
+         * High-touch items, such as decorative pillows, removed from guest rooms.
+         *
+         * @param bool $noHighTouchItemsGuestRooms
+         */
+        public function setNoHighTouchItemsGuestRooms($noHighTouchItemsGuestRooms)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNoHighTouchItemsGuestRooms()
+        {
+        }
+        /**
+         * No high touch items guest rooms exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::NO_HIGH_TOUCH_ITEMS_GUEST_ROOMS_EXCEPTION_* $noHighTouchItemsGuestRoomsException
+         */
+        public function setNoHighTouchItemsGuestRoomsException($noHighTouchItemsGuestRoomsException)
+        {
+        }
+        /**
+         * @return self::NO_HIGH_TOUCH_ITEMS_GUEST_ROOMS_EXCEPTION_*
+         */
+        public function getNoHighTouchItemsGuestRoomsException()
+        {
+        }
+        /**
+         * Plastic key cards are disinfected or discarded.
+         *
+         * @param bool $plasticKeycardsDisinfected
+         */
+        public function setPlasticKeycardsDisinfected($plasticKeycardsDisinfected)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPlasticKeycardsDisinfected()
+        {
+        }
+        /**
+         * Plastic keycards disinfected exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::PLASTIC_KEYCARDS_DISINFECTED_EXCEPTION_* $plasticKeycardsDisinfectedException
+         */
+        public function setPlasticKeycardsDisinfectedException($plasticKeycardsDisinfectedException)
+        {
+        }
+        /**
+         * @return self::PLASTIC_KEYCARDS_DISINFECTED_EXCEPTION_*
+         */
+        public function getPlasticKeycardsDisinfectedException()
+        {
+        }
+        /**
+         * Buffer maintained between room bookings.
+         *
+         * @param bool $roomBookingsBuffer
+         */
+        public function setRoomBookingsBuffer($roomBookingsBuffer)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRoomBookingsBuffer()
+        {
+        }
+        /**
+         * Room bookings buffer exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::ROOM_BOOKINGS_BUFFER_EXCEPTION_* $roomBookingsBufferException
+         */
+        public function setRoomBookingsBufferException($roomBookingsBufferException)
+        {
+        }
+        /**
+         * @return self::ROOM_BOOKINGS_BUFFER_EXCEPTION_*
+         */
+        public function getRoomBookingsBufferException()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\MyBusinessLodging\MinimizedContact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContactlessCheckinCheckout()
-    {
-    }
-    /**
-     * Contactless check-in check-out exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::CONTACTLESS_CHECKIN_CHECKOUT_EXCEPTION_* $contactlessCheckinCheckoutException
-     */
-    public function setContactlessCheckinCheckoutException($contactlessCheckinCheckoutException)
-    {
-    }
-    /**
-     * @return self::CONTACTLESS_CHECKIN_CHECKOUT_EXCEPTION_*
-     */
-    public function getContactlessCheckinCheckoutException()
-    {
-    }
-    /**
-     * Keyless mobile entry to guest rooms.
-     *
-     * @param bool $digitalGuestRoomKeys
-     */
-    public function setDigitalGuestRoomKeys($digitalGuestRoomKeys)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDigitalGuestRoomKeys()
-    {
-    }
-    /**
-     * Digital guest room keys exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::DIGITAL_GUEST_ROOM_KEYS_EXCEPTION_* $digitalGuestRoomKeysException
-     */
-    public function setDigitalGuestRoomKeysException($digitalGuestRoomKeysException)
-    {
-    }
-    /**
-     * @return self::DIGITAL_GUEST_ROOM_KEYS_EXCEPTION_*
-     */
-    public function getDigitalGuestRoomKeysException()
-    {
-    }
-    /**
-     * Housekeeping scheduled by request only.
-     *
-     * @param bool $housekeepingScheduledRequestOnly
-     */
-    public function setHousekeepingScheduledRequestOnly($housekeepingScheduledRequestOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHousekeepingScheduledRequestOnly()
-    {
-    }
-    /**
-     * Housekeeping scheduled request only exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::HOUSEKEEPING_SCHEDULED_REQUEST_ONLY_EXCEPTION_* $housekeepingScheduledRequestOnlyException
-     */
-    public function setHousekeepingScheduledRequestOnlyException($housekeepingScheduledRequestOnlyException)
-    {
-    }
-    /**
-     * @return self::HOUSEKEEPING_SCHEDULED_REQUEST_ONLY_EXCEPTION_*
-     */
-    public function getHousekeepingScheduledRequestOnlyException()
-    {
-    }
-    /**
-     * High-touch items, such as magazines, removed from common areas.
-     *
-     * @param bool $noHighTouchItemsCommonAreas
-     */
-    public function setNoHighTouchItemsCommonAreas($noHighTouchItemsCommonAreas)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNoHighTouchItemsCommonAreas()
-    {
-    }
-    /**
-     * No high touch items common areas exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::NO_HIGH_TOUCH_ITEMS_COMMON_AREAS_EXCEPTION_* $noHighTouchItemsCommonAreasException
-     */
-    public function setNoHighTouchItemsCommonAreasException($noHighTouchItemsCommonAreasException)
-    {
-    }
-    /**
-     * @return self::NO_HIGH_TOUCH_ITEMS_COMMON_AREAS_EXCEPTION_*
-     */
-    public function getNoHighTouchItemsCommonAreasException()
-    {
-    }
-    /**
-     * High-touch items, such as decorative pillows, removed from guest rooms.
-     *
-     * @param bool $noHighTouchItemsGuestRooms
-     */
-    public function setNoHighTouchItemsGuestRooms($noHighTouchItemsGuestRooms)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNoHighTouchItemsGuestRooms()
-    {
-    }
-    /**
-     * No high touch items guest rooms exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::NO_HIGH_TOUCH_ITEMS_GUEST_ROOMS_EXCEPTION_* $noHighTouchItemsGuestRoomsException
-     */
-    public function setNoHighTouchItemsGuestRoomsException($noHighTouchItemsGuestRoomsException)
-    {
-    }
-    /**
-     * @return self::NO_HIGH_TOUCH_ITEMS_GUEST_ROOMS_EXCEPTION_*
-     */
-    public function getNoHighTouchItemsGuestRoomsException()
-    {
-    }
-    /**
-     * Plastic key cards are disinfected or discarded.
-     *
-     * @param bool $plasticKeycardsDisinfected
-     */
-    public function setPlasticKeycardsDisinfected($plasticKeycardsDisinfected)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPlasticKeycardsDisinfected()
-    {
-    }
-    /**
-     * Plastic keycards disinfected exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::PLASTIC_KEYCARDS_DISINFECTED_EXCEPTION_* $plasticKeycardsDisinfectedException
-     */
-    public function setPlasticKeycardsDisinfectedException($plasticKeycardsDisinfectedException)
-    {
-    }
-    /**
-     * @return self::PLASTIC_KEYCARDS_DISINFECTED_EXCEPTION_*
-     */
-    public function getPlasticKeycardsDisinfectedException()
-    {
-    }
-    /**
-     * Buffer maintained between room bookings.
-     *
-     * @param bool $roomBookingsBuffer
-     */
-    public function setRoomBookingsBuffer($roomBookingsBuffer)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRoomBookingsBuffer()
-    {
-    }
-    /**
-     * Room bookings buffer exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::ROOM_BOOKINGS_BUFFER_EXCEPTION_* $roomBookingsBufferException
-     */
-    public function setRoomBookingsBufferException($roomBookingsBufferException)
-    {
-    }
-    /**
-     * @return self::ROOM_BOOKINGS_BUFFER_EXCEPTION_*
-     */
-    public function getRoomBookingsBufferException()
+    class Google_Service_MyBusinessLodging_MinimizedContact extends \Google\Service\MyBusinessLodging\MinimizedContact
     {
     }
 }

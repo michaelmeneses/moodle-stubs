@@ -21,40 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for CloudRuntimeConfig (v1).
- *
- * <p>
- * The Runtime Configurator allows you to dynamically configure and expose
- * variables through Google Cloud Platform. In addition, you can also set
- * Watchers and Waiters that will watch for changes to your data and return
- * based on certain conditions.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/deployment-manager/runtime-configurator/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class CloudRuntimeConfig extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    /** Manage your Google Cloud Platform services' runtime configuration. */
-    const CLOUDRUNTIMECONFIG = "https://www.googleapis.com/auth/cloudruntimeconfig";
-    public $operations;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the CloudRuntimeConfig service.
+     * Service definition for CloudRuntimeConfig (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * The Runtime Configurator allows you to dynamically configure and expose
+     * variables through Google Cloud Platform. In addition, you can also set
+     * Watchers and Waiters that will watch for changes to your data and return
+     * based on certain conditions.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/deployment-manager/runtime-configurator/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class CloudRuntimeConfig extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        /** Manage your Google Cloud Platform services' runtime configuration. */
+        const CLOUDRUNTIMECONFIG = "https://www.googleapis.com/auth/cloudruntimeconfig";
+        public $operations;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the CloudRuntimeConfig service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudRuntimeConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudRuntimeConfig extends \Google\Service\CloudRuntimeConfig
     {
     }
 }

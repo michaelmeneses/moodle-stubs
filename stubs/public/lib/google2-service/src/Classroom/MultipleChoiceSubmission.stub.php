@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class MultipleChoiceSubmission extends \Google\Model
-{
-    /**
-     * Student's select choice.
-     *
-     * @var string
-     */
-    public $answer;
-    /**
-     * Student's select choice.
-     *
-     * @param string $answer
-     */
-    public function setAnswer($answer)
+namespace Google\Service\Classroom {
+    class MultipleChoiceSubmission extends \Google\Model
     {
+        /**
+         * Student's select choice.
+         *
+         * @var string
+         */
+        public $answer;
+        /**
+         * Student's select choice.
+         *
+         * @param string $answer
+         */
+        public function setAnswer($answer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\MultipleChoiceSubmission registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswer()
+    class Google_Service_Classroom_MultipleChoiceSubmission extends \Google\Service\Classroom\MultipleChoiceSubmission
     {
     }
 }

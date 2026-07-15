@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ArimaOrder extends \Google\Model
-{
-    /**
-     * Order of the differencing part.
-     *
-     * @var string
-     */
-    public $d;
-    /**
-     * Order of the autoregressive part.
-     *
-     * @var string
-     */
-    public $p;
-    /**
-     * Order of the moving-average part.
-     *
-     * @var string
-     */
-    public $q;
-    /**
-     * Order of the differencing part.
-     *
-     * @param string $d
-     */
-    public function setD($d)
+namespace Google\Service\Bigquery {
+    class ArimaOrder extends \Google\Model
     {
+        /**
+         * Order of the differencing part.
+         *
+         * @var string
+         */
+        public $d;
+        /**
+         * Order of the autoregressive part.
+         *
+         * @var string
+         */
+        public $p;
+        /**
+         * Order of the moving-average part.
+         *
+         * @var string
+         */
+        public $q;
+        /**
+         * Order of the differencing part.
+         *
+         * @param string $d
+         */
+        public function setD($d)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getD()
+        {
+        }
+        /**
+         * Order of the autoregressive part.
+         *
+         * @param string $p
+         */
+        public function setP($p)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getP()
+        {
+        }
+        /**
+         * Order of the moving-average part.
+         *
+         * @param string $q
+         */
+        public function setQ($q)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQ()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\ArimaOrder registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getD()
-    {
-    }
-    /**
-     * Order of the autoregressive part.
-     *
-     * @param string $p
-     */
-    public function setP($p)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getP()
-    {
-    }
-    /**
-     * Order of the moving-average part.
-     *
-     * @param string $q
-     */
-    public function setQ($q)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQ()
+    class Google_Service_Bigquery_ArimaOrder extends \Google\Service\Bigquery\ArimaOrder
     {
     }
 }

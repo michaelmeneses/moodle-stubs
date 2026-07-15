@@ -21,90 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "attributes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $attributes = $apigeeService->organizations_apiproducts_attributes;
- *  </code>
- */
-class OrganizationsApiproductsAttributes extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1Attribute;
+    use Google\Service\Apigee\GoogleCloudApigeeV1Attributes;
     /**
-     * Deletes an API product attribute. (attributes.delete)
-     *
-     * @param string $name Required. Name of the API product attribute. Use the
-     * following structure in your request:
-     * `organizations/{org}/apiproducts/{apiproduct}/attributes/{attribute}` If the
-     * API Product resource has the `space` attribute set, IAM permissions are
-     * checked against the Space resource path. To learn more, read the [Apigee
-     * Spaces Overview](https://cloud.google.com/apigee/docs/api-platform/system-
-     * administration/spaces/apigee-spaces-overview).
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1Attribute
-     * @throws \Google\Service\Exception
+     * The "attributes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $attributes = $apigeeService->organizations_apiproducts_attributes;
+     *  </code>
      */
-    public function delete($name, $optParams = [])
+    class OrganizationsApiproductsAttributes extends \Google\Service\Resource
     {
+        /**
+         * Deletes an API product attribute. (attributes.delete)
+         *
+         * @param string $name Required. Name of the API product attribute. Use the
+         * following structure in your request:
+         * `organizations/{org}/apiproducts/{apiproduct}/attributes/{attribute}` If the
+         * API Product resource has the `space` attribute set, IAM permissions are
+         * checked against the Space resource path. To learn more, read the [Apigee
+         * Spaces Overview](https://cloud.google.com/apigee/docs/api-platform/system-
+         * administration/spaces/apigee-spaces-overview).
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1Attribute
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the value of an API product attribute. (attributes.get)
+         *
+         * @param string $name Required. Name of the API product attribute. Use the
+         * following structure in your request:
+         * `organizations/{org}/apiproducts/{apiproduct}/attributes/{attribute}` If the
+         * API Product resource has the `space` attribute set, IAM permissions are
+         * checked against the Space resource path. To learn more, read the [Apigee
+         * Spaces Overview](https://cloud.google.com/apigee/docs/api-platform/system-
+         * administration/spaces/apigee-spaces-overview).
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1Attribute
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all API product attributes.
+         * (attributes.listOrganizationsApiproductsAttributes)
+         *
+         * @param string $parent Required. Name of the API product. Use the following
+         * structure in your request: `organizations/{org}/apiproducts/{apiproduct}` If
+         * the API Product resource has the `space` attribute set, IAM permissions are
+         * checked against the Space resource path. To learn more, read the [Apigee
+         * Spaces Overview](https://cloud.google.com/apigee/docs/api-platform/system-
+         * administration/spaces/apigee-spaces-overview).
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1Attributes
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsApiproductsAttributes($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates the value of an API product attribute. **Note**: OAuth access tokens
+         * and Key Management Service (KMS) entities (apps, developers, and API
+         * products) are cached for 180 seconds (current default). Any custom attributes
+         * associated with entities also get cached for at least 180 seconds after
+         * entity is accessed during runtime. In this case, the `ExpiresIn` element on
+         * the OAuthV2 policy won't be able to expire an access token in less than 180
+         * seconds. (attributes.updateApiProductAttribute)
+         *
+         * @param string $name Required. Name of the API product. Use the following
+         * structure in your request: `organizations/{org}/apiproducts/{apiproduct}` If
+         * the API Product resource has the `space` attribute set, IAM permissions are
+         * checked against the Space resource path. To learn more, read the [Apigee
+         * Spaces Overview](https://cloud.google.com/apigee/docs/api-platform/system-
+         * administration/spaces/apigee-spaces-overview).
+         * @param GoogleCloudApigeeV1Attribute $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1Attribute
+         * @throws \Google\Service\Exception
+         */
+        public function updateApiProductAttribute($name, GoogleCloudApigeeV1Attribute $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the value of an API product attribute. (attributes.get)
-     *
-     * @param string $name Required. Name of the API product attribute. Use the
-     * following structure in your request:
-     * `organizations/{org}/apiproducts/{apiproduct}/attributes/{attribute}` If the
-     * API Product resource has the `space` attribute set, IAM permissions are
-     * checked against the Space resource path. To learn more, read the [Apigee
-     * Spaces Overview](https://cloud.google.com/apigee/docs/api-platform/system-
-     * administration/spaces/apigee-spaces-overview).
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1Attribute
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsApiproductsAttributes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists all API product attributes.
-     * (attributes.listOrganizationsApiproductsAttributes)
-     *
-     * @param string $parent Required. Name of the API product. Use the following
-     * structure in your request: `organizations/{org}/apiproducts/{apiproduct}` If
-     * the API Product resource has the `space` attribute set, IAM permissions are
-     * checked against the Space resource path. To learn more, read the [Apigee
-     * Spaces Overview](https://cloud.google.com/apigee/docs/api-platform/system-
-     * administration/spaces/apigee-spaces-overview).
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1Attributes
-     * @throws \Google\Service\Exception
-     */
-    public function listOrganizationsApiproductsAttributes($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates the value of an API product attribute. **Note**: OAuth access tokens
-     * and Key Management Service (KMS) entities (apps, developers, and API
-     * products) are cached for 180 seconds (current default). Any custom attributes
-     * associated with entities also get cached for at least 180 seconds after
-     * entity is accessed during runtime. In this case, the `ExpiresIn` element on
-     * the OAuthV2 policy won't be able to expire an access token in less than 180
-     * seconds. (attributes.updateApiProductAttribute)
-     *
-     * @param string $name Required. Name of the API product. Use the following
-     * structure in your request: `organizations/{org}/apiproducts/{apiproduct}` If
-     * the API Product resource has the `space` attribute set, IAM permissions are
-     * checked against the Space resource path. To learn more, read the [Apigee
-     * Spaces Overview](https://cloud.google.com/apigee/docs/api-platform/system-
-     * administration/spaces/apigee-spaces-overview).
-     * @param GoogleCloudApigeeV1Attribute $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1Attribute
-     * @throws \Google\Service\Exception
-     */
-    public function updateApiProductAttribute($name, GoogleCloudApigeeV1Attribute $postBody, $optParams = [])
+    class Google_Service_Apigee_Resource_OrganizationsApiproductsAttributes extends \Google\Service\Apigee\Resource\OrganizationsApiproductsAttributes
     {
     }
 }

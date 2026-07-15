@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class DeleteTableRowRequest extends \Google\Model
-{
-    protected $cellLocationType = TableCellLocation::class;
-    protected $cellLocationDataType = '';
-    /**
-     * The table to delete rows from.
-     *
-     * @var string
-     */
-    public $tableObjectId;
-    /**
-     * The reference table cell location from which a row will be deleted. The row
-     * this cell spans will be deleted. If this is a merged cell, multiple rows
-     * will be deleted. If no rows remain in the table after this deletion, the
-     * whole table is deleted.
-     *
-     * @param TableCellLocation $cellLocation
-     */
-    public function setCellLocation(TableCellLocation $cellLocation)
+namespace Google\Service\Slides {
+    class DeleteTableRowRequest extends \Google\Model
     {
+        protected $cellLocationType = TableCellLocation::class;
+        protected $cellLocationDataType = '';
+        /**
+         * The table to delete rows from.
+         *
+         * @var string
+         */
+        public $tableObjectId;
+        /**
+         * The reference table cell location from which a row will be deleted. The row
+         * this cell spans will be deleted. If this is a merged cell, multiple rows
+         * will be deleted. If no rows remain in the table after this deletion, the
+         * whole table is deleted.
+         *
+         * @param TableCellLocation $cellLocation
+         */
+        public function setCellLocation(TableCellLocation $cellLocation)
+        {
+        }
+        /**
+         * @return TableCellLocation
+         */
+        public function getCellLocation()
+        {
+        }
+        /**
+         * The table to delete rows from.
+         *
+         * @param string $tableObjectId
+         */
+        public function setTableObjectId($tableObjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableObjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TableCellLocation
+     * Runtime class alias of \Google\Service\Slides\DeleteTableRowRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCellLocation()
-    {
-    }
-    /**
-     * The table to delete rows from.
-     *
-     * @param string $tableObjectId
-     */
-    public function setTableObjectId($tableObjectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableObjectId()
+    class Google_Service_Slides_DeleteTableRowRequest extends \Google\Service\Slides\DeleteTableRowRequest
     {
     }
 }

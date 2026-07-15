@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SuggestResponse extends \Google\Collection
-{
-    protected $collection_key = 'suggestResults';
-    protected $suggestResultsType = SuggestResult::class;
-    protected $suggestResultsDataType = 'array';
-    /**
-     * List of suggestions.
-     *
-     * @param SuggestResult[] $suggestResults
-     */
-    public function setSuggestResults($suggestResults)
+namespace Google\Service\CloudSearch {
+    class SuggestResponse extends \Google\Collection
     {
+        protected $collection_key = 'suggestResults';
+        protected $suggestResultsType = SuggestResult::class;
+        protected $suggestResultsDataType = 'array';
+        /**
+         * List of suggestions.
+         *
+         * @param SuggestResult[] $suggestResults
+         */
+        public function setSuggestResults($suggestResults)
+        {
+        }
+        /**
+         * @return SuggestResult[]
+         */
+        public function getSuggestResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SuggestResult[]
+     * Runtime class alias of \Google\Service\CloudSearch\SuggestResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSuggestResults()
+    class Google_Service_CloudSearch_SuggestResponse extends \Google\Service\CloudSearch\SuggestResponse
     {
     }
 }

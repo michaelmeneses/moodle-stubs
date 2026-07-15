@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class WindowsUpdateSettings extends \Google\Collection
-{
-    protected $collection_key = 'exclusivePatches';
-    /**
-     * @var string[]
-     */
-    public $classifications;
-    /**
-     * @var string[]
-     */
-    public $excludes;
-    /**
-     * @var string[]
-     */
-    public $exclusivePatches;
-    /**
-     * @param string[]
-     */
-    public function setClassifications($classifications)
+namespace Google\Service\OSConfig {
+    class WindowsUpdateSettings extends \Google\Collection
     {
+        protected $collection_key = 'exclusivePatches';
+        /**
+         * @var string[]
+         */
+        public $classifications;
+        /**
+         * @var string[]
+         */
+        public $excludes;
+        /**
+         * @var string[]
+         */
+        public $exclusivePatches;
+        /**
+         * @param string[]
+         */
+        public function setClassifications($classifications)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getClassifications()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setExcludes($excludes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludes()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setExclusivePatches($exclusivePatches)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExclusivePatches()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\OSConfig\WindowsUpdateSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClassifications()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setExcludes($excludes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExcludes()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setExclusivePatches($exclusivePatches)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExclusivePatches()
+    class Google_Service_OSConfig_WindowsUpdateSettings extends \Google\Service\OSConfig\WindowsUpdateSettings
     {
     }
 }

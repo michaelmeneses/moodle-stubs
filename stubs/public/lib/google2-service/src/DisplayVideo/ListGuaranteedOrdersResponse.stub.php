@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ListGuaranteedOrdersResponse extends \Google\Collection
-{
-    protected $collection_key = 'guaranteedOrders';
-    protected $guaranteedOrdersType = GuaranteedOrder::class;
-    protected $guaranteedOrdersDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListGuaranteedOrders` method to
-     * retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of guaranteed orders. This list will be absent if empty.
-     *
-     * @param GuaranteedOrder[] $guaranteedOrders
-     */
-    public function setGuaranteedOrders($guaranteedOrders)
+namespace Google\Service\DisplayVideo {
+    class ListGuaranteedOrdersResponse extends \Google\Collection
     {
+        protected $collection_key = 'guaranteedOrders';
+        protected $guaranteedOrdersType = GuaranteedOrder::class;
+        protected $guaranteedOrdersDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListGuaranteedOrders` method to
+         * retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of guaranteed orders. This list will be absent if empty.
+         *
+         * @param GuaranteedOrder[] $guaranteedOrders
+         */
+        public function setGuaranteedOrders($guaranteedOrders)
+        {
+        }
+        /**
+         * @return GuaranteedOrder[]
+         */
+        public function getGuaranteedOrders()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListGuaranteedOrders` method to
+         * retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GuaranteedOrder[]
+     * Runtime class alias of \Google\Service\DisplayVideo\ListGuaranteedOrdersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGuaranteedOrders()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListGuaranteedOrders` method to
-     * retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DisplayVideo_ListGuaranteedOrdersResponse extends \Google\Service\DisplayVideo\ListGuaranteedOrdersResponse
     {
     }
 }

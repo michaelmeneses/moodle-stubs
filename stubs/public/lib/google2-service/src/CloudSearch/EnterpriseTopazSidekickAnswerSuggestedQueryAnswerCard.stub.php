@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickAnswerSuggestedQueryAnswerCard extends \Google\Collection
-{
-    protected $collection_key = 'suggestedQueryCategory';
-    protected $suggestedQueryCategoryType = EnterpriseTopazSidekickAnswerSuggestedQueryCategory::class;
-    protected $suggestedQueryCategoryDataType = 'array';
-    /**
-     * A list of queries to suggest.
-     *
-     * @param EnterpriseTopazSidekickAnswerSuggestedQueryCategory[] $suggestedQueryCategory
-     */
-    public function setSuggestedQueryCategory($suggestedQueryCategory)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickAnswerSuggestedQueryAnswerCard extends \Google\Collection
     {
+        protected $collection_key = 'suggestedQueryCategory';
+        protected $suggestedQueryCategoryType = EnterpriseTopazSidekickAnswerSuggestedQueryCategory::class;
+        protected $suggestedQueryCategoryDataType = 'array';
+        /**
+         * A list of queries to suggest.
+         *
+         * @param EnterpriseTopazSidekickAnswerSuggestedQueryCategory[] $suggestedQueryCategory
+         */
+        public function setSuggestedQueryCategory($suggestedQueryCategory)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickAnswerSuggestedQueryCategory[]
+         */
+        public function getSuggestedQueryCategory()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseTopazSidekickAnswerSuggestedQueryCategory[]
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickAnswerSuggestedQueryAnswerCard registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSuggestedQueryCategory()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickAnswerSuggestedQueryAnswerCard extends \Google\Service\CloudSearch\EnterpriseTopazSidekickAnswerSuggestedQueryAnswerCard
     {
     }
 }

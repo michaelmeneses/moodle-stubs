@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ExternalCatalogTableOptions extends \Google\Model
-{
-    /**
-     * Optional. A connection ID that specifies the credentials to be used to read
-     * external storage, such as Azure Blob, Cloud Storage, or Amazon S3. This
-     * connection is needed to read the open source table from BigQuery. The
-     * connection_id format must be either `..` or
-     * `projects//locations//connections/`.
-     *
-     * @var string
-     */
-    public $connectionId;
-    /**
-     * Optional. A map of the key-value pairs defining the parameters and
-     * properties of the open source table. Corresponds with Hive metastore table
-     * parameters. Maximum size of 4MiB.
-     *
-     * @var string[]
-     */
-    public $parameters;
-    protected $storageDescriptorType = StorageDescriptor::class;
-    protected $storageDescriptorDataType = '';
-    /**
-     * Optional. A connection ID that specifies the credentials to be used to read
-     * external storage, such as Azure Blob, Cloud Storage, or Amazon S3. This
-     * connection is needed to read the open source table from BigQuery. The
-     * connection_id format must be either `..` or
-     * `projects//locations//connections/`.
-     *
-     * @param string $connectionId
-     */
-    public function setConnectionId($connectionId)
+namespace Google\Service\Bigquery {
+    class ExternalCatalogTableOptions extends \Google\Model
     {
+        /**
+         * Optional. A connection ID that specifies the credentials to be used to read
+         * external storage, such as Azure Blob, Cloud Storage, or Amazon S3. This
+         * connection is needed to read the open source table from BigQuery. The
+         * connection_id format must be either `..` or
+         * `projects//locations//connections/`.
+         *
+         * @var string
+         */
+        public $connectionId;
+        /**
+         * Optional. A map of the key-value pairs defining the parameters and
+         * properties of the open source table. Corresponds with Hive metastore table
+         * parameters. Maximum size of 4MiB.
+         *
+         * @var string[]
+         */
+        public $parameters;
+        protected $storageDescriptorType = StorageDescriptor::class;
+        protected $storageDescriptorDataType = '';
+        /**
+         * Optional. A connection ID that specifies the credentials to be used to read
+         * external storage, such as Azure Blob, Cloud Storage, or Amazon S3. This
+         * connection is needed to read the open source table from BigQuery. The
+         * connection_id format must be either `..` or
+         * `projects//locations//connections/`.
+         *
+         * @param string $connectionId
+         */
+        public function setConnectionId($connectionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConnectionId()
+        {
+        }
+        /**
+         * Optional. A map of the key-value pairs defining the parameters and
+         * properties of the open source table. Corresponds with Hive metastore table
+         * parameters. Maximum size of 4MiB.
+         *
+         * @param string[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getParameters()
+        {
+        }
+        /**
+         * Optional. A storage descriptor containing information about the physical
+         * storage of this table.
+         *
+         * @param StorageDescriptor $storageDescriptor
+         */
+        public function setStorageDescriptor(StorageDescriptor $storageDescriptor)
+        {
+        }
+        /**
+         * @return StorageDescriptor
+         */
+        public function getStorageDescriptor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\ExternalCatalogTableOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectionId()
-    {
-    }
-    /**
-     * Optional. A map of the key-value pairs defining the parameters and
-     * properties of the open source table. Corresponds with Hive metastore table
-     * parameters. Maximum size of 4MiB.
-     *
-     * @param string[] $parameters
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getParameters()
-    {
-    }
-    /**
-     * Optional. A storage descriptor containing information about the physical
-     * storage of this table.
-     *
-     * @param StorageDescriptor $storageDescriptor
-     */
-    public function setStorageDescriptor(StorageDescriptor $storageDescriptor)
-    {
-    }
-    /**
-     * @return StorageDescriptor
-     */
-    public function getStorageDescriptor()
+    class Google_Service_Bigquery_ExternalCatalogTableOptions extends \Google\Service\Bigquery\ExternalCatalogTableOptions
     {
     }
 }

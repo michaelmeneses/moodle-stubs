@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ModelDefinitionModelOptions extends \Google\Collection
-{
-    protected $collection_key = 'labels';
-    /**
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * @var string
-     */
-    public $lossType;
-    /**
-     * @var string
-     */
-    public $modelType;
-    /**
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
+namespace Google\Service\Bigquery {
+    class ModelDefinitionModelOptions extends \Google\Collection
     {
+        protected $collection_key = 'labels';
+        /**
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * @var string
+         */
+        public $lossType;
+        /**
+         * @var string
+         */
+        public $modelType;
+        /**
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param string $lossType
+         */
+        public function setLossType($lossType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLossType()
+        {
+        }
+        /**
+         * @param string $modelType
+         */
+        public function setModelType($modelType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Bigquery\ModelDefinitionModelOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param string $lossType
-     */
-    public function setLossType($lossType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLossType()
-    {
-    }
-    /**
-     * @param string $modelType
-     */
-    public function setModelType($modelType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModelType()
+    class Google_Service_Bigquery_ModelDefinitionModelOptions extends \Google\Service\Bigquery\ModelDefinitionModelOptions
     {
     }
 }

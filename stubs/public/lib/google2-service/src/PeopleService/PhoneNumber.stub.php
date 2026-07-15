@@ -21,116 +21,125 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class PhoneNumber extends \Google\Model
-{
-    /**
-     * Output only. The canonicalized [ITU-T
-     * E.164](https://law.resource.org/pub/us/cfr/ibr/004/itu-t.E.164.1.2008.pdf)
-     * form of the phone number.
-     *
-     * @var string
-     */
-    public $canonicalForm;
-    /**
-     * Output only. The type of the phone number translated and formatted in the
-     * viewer's account locale or the `Accept-Language` HTTP header locale.
-     *
-     * @var string
-     */
-    public $formattedType;
-    protected $metadataType = FieldMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * The type of the phone number. The type can be custom or one of these
-     * predefined values: * `home` * `work` * `mobile` * `homeFax` * `workFax` *
-     * `otherFax` * `pager` * `workMobile` * `workPager` * `main` * `googleVoice`
-     * * `other`
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The phone number.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Output only. The canonicalized [ITU-T
-     * E.164](https://law.resource.org/pub/us/cfr/ibr/004/itu-t.E.164.1.2008.pdf)
-     * form of the phone number.
-     *
-     * @param string $canonicalForm
-     */
-    public function setCanonicalForm($canonicalForm)
+namespace Google\Service\PeopleService {
+    class PhoneNumber extends \Google\Model
     {
+        /**
+         * Output only. The canonicalized [ITU-T
+         * E.164](https://law.resource.org/pub/us/cfr/ibr/004/itu-t.E.164.1.2008.pdf)
+         * form of the phone number.
+         *
+         * @var string
+         */
+        public $canonicalForm;
+        /**
+         * Output only. The type of the phone number translated and formatted in the
+         * viewer's account locale or the `Accept-Language` HTTP header locale.
+         *
+         * @var string
+         */
+        public $formattedType;
+        protected $metadataType = FieldMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * The type of the phone number. The type can be custom or one of these
+         * predefined values: * `home` * `work` * `mobile` * `homeFax` * `workFax` *
+         * `otherFax` * `pager` * `workMobile` * `workPager` * `main` * `googleVoice`
+         * * `other`
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The phone number.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Output only. The canonicalized [ITU-T
+         * E.164](https://law.resource.org/pub/us/cfr/ibr/004/itu-t.E.164.1.2008.pdf)
+         * form of the phone number.
+         *
+         * @param string $canonicalForm
+         */
+        public function setCanonicalForm($canonicalForm)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCanonicalForm()
+        {
+        }
+        /**
+         * Output only. The type of the phone number translated and formatted in the
+         * viewer's account locale or the `Accept-Language` HTTP header locale.
+         *
+         * @param string $formattedType
+         */
+        public function setFormattedType($formattedType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormattedType()
+        {
+        }
+        /**
+         * Metadata about the phone number.
+         *
+         * @param FieldMetadata $metadata
+         */
+        public function setMetadata(FieldMetadata $metadata)
+        {
+        }
+        /**
+         * @return FieldMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The type of the phone number. The type can be custom or one of these
+         * predefined values: * `home` * `work` * `mobile` * `homeFax` * `workFax` *
+         * `otherFax` * `pager` * `workMobile` * `workPager` * `main` * `googleVoice`
+         * * `other`
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The phone number.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PeopleService\PhoneNumber registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanonicalForm()
-    {
-    }
-    /**
-     * Output only. The type of the phone number translated and formatted in the
-     * viewer's account locale or the `Accept-Language` HTTP header locale.
-     *
-     * @param string $formattedType
-     */
-    public function setFormattedType($formattedType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFormattedType()
-    {
-    }
-    /**
-     * Metadata about the phone number.
-     *
-     * @param FieldMetadata $metadata
-     */
-    public function setMetadata(FieldMetadata $metadata)
-    {
-    }
-    /**
-     * @return FieldMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The type of the phone number. The type can be custom or one of these
-     * predefined values: * `home` * `work` * `mobile` * `homeFax` * `workFax` *
-     * `otherFax` * `pager` * `workMobile` * `workPager` * `main` * `googleVoice`
-     * * `other`
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * The phone number.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_PeopleService_PhoneNumber extends \Google\Service\PeopleService\PhoneNumber
     {
     }
 }

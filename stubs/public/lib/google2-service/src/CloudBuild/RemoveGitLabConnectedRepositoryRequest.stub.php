@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class RemoveGitLabConnectedRepositoryRequest extends \Google\Model
-{
-    protected $connectedRepositoryType = GitLabRepositoryId::class;
-    protected $connectedRepositoryDataType = '';
-    /**
-     * @param GitLabRepositoryId
-     */
-    public function setConnectedRepository(GitLabRepositoryId $connectedRepository)
+namespace Google\Service\CloudBuild {
+    class RemoveGitLabConnectedRepositoryRequest extends \Google\Model
     {
+        protected $connectedRepositoryType = GitLabRepositoryId::class;
+        protected $connectedRepositoryDataType = '';
+        /**
+         * @param GitLabRepositoryId
+         */
+        public function setConnectedRepository(GitLabRepositoryId $connectedRepository)
+        {
+        }
+        /**
+         * @return GitLabRepositoryId
+         */
+        public function getConnectedRepository()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GitLabRepositoryId
+     * Runtime class alias of \Google\Service\CloudBuild\RemoveGitLabConnectedRepositoryRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectedRepository()
+    class Google_Service_CloudBuild_RemoveGitLabConnectedRepositoryRequest extends \Google\Service\CloudBuild\RemoveGitLabConnectedRepositoryRequest
     {
     }
 }

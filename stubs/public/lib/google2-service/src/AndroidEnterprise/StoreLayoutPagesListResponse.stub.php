@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class StoreLayoutPagesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'page';
-    protected $pageType = StorePage::class;
-    protected $pageDataType = 'array';
-    /**
-     * A store page of an enterprise.
-     *
-     * @param StorePage[] $page
-     */
-    public function setPage($page)
+namespace Google\Service\AndroidEnterprise {
+    class StoreLayoutPagesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'page';
+        protected $pageType = StorePage::class;
+        protected $pageDataType = 'array';
+        /**
+         * A store page of an enterprise.
+         *
+         * @param StorePage[] $page
+         */
+        public function setPage($page)
+        {
+        }
+        /**
+         * @return StorePage[]
+         */
+        public function getPage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StorePage[]
+     * Runtime class alias of \Google\Service\AndroidEnterprise\StoreLayoutPagesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPage()
+    class Google_Service_AndroidEnterprise_StoreLayoutPagesListResponse extends \Google\Service\AndroidEnterprise\StoreLayoutPagesListResponse
     {
     }
 }

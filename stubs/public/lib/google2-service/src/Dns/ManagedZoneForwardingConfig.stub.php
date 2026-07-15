@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class ManagedZoneForwardingConfig extends \Google\Collection
-{
-    protected $collection_key = 'targetNameServers';
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $targetNameServersType = ManagedZoneForwardingConfigNameServerTarget::class;
-    protected $targetNameServersDataType = 'array';
-    /**
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dns {
+    class ManagedZoneForwardingConfig extends \Google\Collection
     {
+        protected $collection_key = 'targetNameServers';
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $targetNameServersType = ManagedZoneForwardingConfigNameServerTarget::class;
+        protected $targetNameServersDataType = 'array';
+        /**
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * List of target name servers to forward to. Cloud DNS selects the best
+         * available name server if more than one target is given.
+         *
+         * @param ManagedZoneForwardingConfigNameServerTarget[] $targetNameServers
+         */
+        public function setTargetNameServers($targetNameServers)
+        {
+        }
+        /**
+         * @return ManagedZoneForwardingConfigNameServerTarget[]
+         */
+        public function getTargetNameServers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dns\ManagedZoneForwardingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * List of target name servers to forward to. Cloud DNS selects the best
-     * available name server if more than one target is given.
-     *
-     * @param ManagedZoneForwardingConfigNameServerTarget[] $targetNameServers
-     */
-    public function setTargetNameServers($targetNameServers)
-    {
-    }
-    /**
-     * @return ManagedZoneForwardingConfigNameServerTarget[]
-     */
-    public function getTargetNameServers()
+    class Google_Service_Dns_ManagedZoneForwardingConfig extends \Google\Service\Dns\ManagedZoneForwardingConfig
     {
     }
 }

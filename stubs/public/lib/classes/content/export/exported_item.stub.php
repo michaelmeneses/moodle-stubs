@@ -8,6 +8,7 @@
  */
 namespace core\content\export;
 
+use stdClass;
 /**
  * This class describes the files which were exported, and any text content that those files were contained in.
  *

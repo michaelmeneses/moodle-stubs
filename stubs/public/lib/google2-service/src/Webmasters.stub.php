@@ -21,38 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Webmasters (v3).
- *
- * <p>
- * View Google Search Console data for your verified sites.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/webmaster-tools/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Webmasters extends \Google\Service
-{
-    /** View and manage Search Console data for your verified sites. */
-    const WEBMASTERS = "https://www.googleapis.com/auth/webmasters";
-    /** View Search Console data for your verified sites. */
-    const WEBMASTERS_READONLY = "https://www.googleapis.com/auth/webmasters.readonly";
-    public $searchanalytics;
-    public $sitemaps;
-    public $sites;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Webmasters service.
+     * Service definition for Webmasters (v3).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * View Google Search Console data for your verified sites.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/webmaster-tools/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Webmasters extends \Google\Service
+    {
+        /** View and manage Search Console data for your verified sites. */
+        const WEBMASTERS = "https://www.googleapis.com/auth/webmasters";
+        /** View Search Console data for your verified sites. */
+        const WEBMASTERS_READONLY = "https://www.googleapis.com/auth/webmasters.readonly";
+        public $searchanalytics;
+        public $sitemaps;
+        public $sites;
+        /**
+         * Constructs the internal representation of the Webmasters service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Webmasters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Webmasters extends \Google\Service\Webmasters
     {
     }
 }

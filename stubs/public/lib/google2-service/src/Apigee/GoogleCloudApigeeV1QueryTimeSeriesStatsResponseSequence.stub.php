@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1QueryTimeSeriesStatsResponseSequence extends \Google\Collection
-{
-    protected $collection_key = 'points';
-    /**
-     * Map of dimensions and their values that uniquely identifies a time series
-     * sequence.
-     *
-     * @var string[]
-     */
-    public $dimensions;
-    /**
-     * List of points. First value of each inner list is a timestamp.
-     *
-     * @var array[]
-     */
-    public $points;
-    /**
-     * Map of dimensions and their values that uniquely identifies a time series
-     * sequence.
-     *
-     * @param string[] $dimensions
-     */
-    public function setDimensions($dimensions)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1QueryTimeSeriesStatsResponseSequence extends \Google\Collection
     {
+        protected $collection_key = 'points';
+        /**
+         * Map of dimensions and their values that uniquely identifies a time series
+         * sequence.
+         *
+         * @var string[]
+         */
+        public $dimensions;
+        /**
+         * List of points. First value of each inner list is a timestamp.
+         *
+         * @var array[]
+         */
+        public $points;
+        /**
+         * Map of dimensions and their values that uniquely identifies a time series
+         * sequence.
+         *
+         * @param string[] $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * List of points. First value of each inner list is a timestamp.
+         *
+         * @param array[] $points
+         */
+        public function setPoints($points)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getPoints()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1QueryTimeSeriesStatsResponseSequence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensions()
-    {
-    }
-    /**
-     * List of points. First value of each inner list is a timestamp.
-     *
-     * @param array[] $points
-     */
-    public function setPoints($points)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getPoints()
+    class Google_Service_Apigee_GoogleCloudApigeeV1QueryTimeSeriesStatsResponseSequence extends \Google\Service\Apigee\GoogleCloudApigeeV1QueryTimeSeriesStatsResponseSequence
     {
     }
 }

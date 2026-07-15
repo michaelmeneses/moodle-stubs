@@ -21,232 +21,241 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class ForwardingRuleInfo extends \Google\Model
-{
-    /**
-     * Name of the forwarding rule.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Name of the load balancer the forwarding rule belongs to. Empty for
-     * forwarding rules not related to load balancers (like PSC forwarding rules).
-     *
-     * @var string
-     */
-    public $loadBalancerName;
-    /**
-     * Port range defined in the forwarding rule that matches the packet.
-     *
-     * @var string
-     */
-    public $matchedPortRange;
-    /**
-     * Protocol defined in the forwarding rule that matches the packet.
-     *
-     * @var string
-     */
-    public $matchedProtocol;
-    /**
-     * Network URI.
-     *
-     * @var string
-     */
-    public $networkUri;
-    /**
-     * PSC Google API target this forwarding rule targets (if applicable).
-     *
-     * @var string
-     */
-    public $pscGoogleApiTarget;
-    /**
-     * URI of the PSC service attachment this forwarding rule targets (if
-     * applicable).
-     *
-     * @var string
-     */
-    public $pscServiceAttachmentUri;
-    /**
-     * Region of the forwarding rule. Set only for regional forwarding rules.
-     *
-     * @var string
-     */
-    public $region;
-    /**
-     * Target type of the forwarding rule.
-     *
-     * @var string
-     */
-    public $target;
-    /**
-     * URI of the forwarding rule.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * VIP of the forwarding rule.
-     *
-     * @var string
-     */
-    public $vip;
-    /**
-     * Name of the forwarding rule.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\NetworkManagement {
+    class ForwardingRuleInfo extends \Google\Model
     {
+        /**
+         * Name of the forwarding rule.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Name of the load balancer the forwarding rule belongs to. Empty for
+         * forwarding rules not related to load balancers (like PSC forwarding rules).
+         *
+         * @var string
+         */
+        public $loadBalancerName;
+        /**
+         * Port range defined in the forwarding rule that matches the packet.
+         *
+         * @var string
+         */
+        public $matchedPortRange;
+        /**
+         * Protocol defined in the forwarding rule that matches the packet.
+         *
+         * @var string
+         */
+        public $matchedProtocol;
+        /**
+         * Network URI.
+         *
+         * @var string
+         */
+        public $networkUri;
+        /**
+         * PSC Google API target this forwarding rule targets (if applicable).
+         *
+         * @var string
+         */
+        public $pscGoogleApiTarget;
+        /**
+         * URI of the PSC service attachment this forwarding rule targets (if
+         * applicable).
+         *
+         * @var string
+         */
+        public $pscServiceAttachmentUri;
+        /**
+         * Region of the forwarding rule. Set only for regional forwarding rules.
+         *
+         * @var string
+         */
+        public $region;
+        /**
+         * Target type of the forwarding rule.
+         *
+         * @var string
+         */
+        public $target;
+        /**
+         * URI of the forwarding rule.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * VIP of the forwarding rule.
+         *
+         * @var string
+         */
+        public $vip;
+        /**
+         * Name of the forwarding rule.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Name of the load balancer the forwarding rule belongs to. Empty for
+         * forwarding rules not related to load balancers (like PSC forwarding rules).
+         *
+         * @param string $loadBalancerName
+         */
+        public function setLoadBalancerName($loadBalancerName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLoadBalancerName()
+        {
+        }
+        /**
+         * Port range defined in the forwarding rule that matches the packet.
+         *
+         * @param string $matchedPortRange
+         */
+        public function setMatchedPortRange($matchedPortRange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatchedPortRange()
+        {
+        }
+        /**
+         * Protocol defined in the forwarding rule that matches the packet.
+         *
+         * @param string $matchedProtocol
+         */
+        public function setMatchedProtocol($matchedProtocol)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatchedProtocol()
+        {
+        }
+        /**
+         * Network URI.
+         *
+         * @param string $networkUri
+         */
+        public function setNetworkUri($networkUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkUri()
+        {
+        }
+        /**
+         * PSC Google API target this forwarding rule targets (if applicable).
+         *
+         * @param string $pscGoogleApiTarget
+         */
+        public function setPscGoogleApiTarget($pscGoogleApiTarget)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPscGoogleApiTarget()
+        {
+        }
+        /**
+         * URI of the PSC service attachment this forwarding rule targets (if
+         * applicable).
+         *
+         * @param string $pscServiceAttachmentUri
+         */
+        public function setPscServiceAttachmentUri($pscServiceAttachmentUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPscServiceAttachmentUri()
+        {
+        }
+        /**
+         * Region of the forwarding rule. Set only for regional forwarding rules.
+         *
+         * @param string $region
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
+        /**
+         * Target type of the forwarding rule.
+         *
+         * @param string $target
+         */
+        public function setTarget($target)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTarget()
+        {
+        }
+        /**
+         * URI of the forwarding rule.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
+        /**
+         * VIP of the forwarding rule.
+         *
+         * @param string $vip
+         */
+        public function setVip($vip)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVip()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\ForwardingRuleInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Name of the load balancer the forwarding rule belongs to. Empty for
-     * forwarding rules not related to load balancers (like PSC forwarding rules).
-     *
-     * @param string $loadBalancerName
-     */
-    public function setLoadBalancerName($loadBalancerName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLoadBalancerName()
-    {
-    }
-    /**
-     * Port range defined in the forwarding rule that matches the packet.
-     *
-     * @param string $matchedPortRange
-     */
-    public function setMatchedPortRange($matchedPortRange)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMatchedPortRange()
-    {
-    }
-    /**
-     * Protocol defined in the forwarding rule that matches the packet.
-     *
-     * @param string $matchedProtocol
-     */
-    public function setMatchedProtocol($matchedProtocol)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMatchedProtocol()
-    {
-    }
-    /**
-     * Network URI.
-     *
-     * @param string $networkUri
-     */
-    public function setNetworkUri($networkUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetworkUri()
-    {
-    }
-    /**
-     * PSC Google API target this forwarding rule targets (if applicable).
-     *
-     * @param string $pscGoogleApiTarget
-     */
-    public function setPscGoogleApiTarget($pscGoogleApiTarget)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPscGoogleApiTarget()
-    {
-    }
-    /**
-     * URI of the PSC service attachment this forwarding rule targets (if
-     * applicable).
-     *
-     * @param string $pscServiceAttachmentUri
-     */
-    public function setPscServiceAttachmentUri($pscServiceAttachmentUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPscServiceAttachmentUri()
-    {
-    }
-    /**
-     * Region of the forwarding rule. Set only for regional forwarding rules.
-     *
-     * @param string $region
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegion()
-    {
-    }
-    /**
-     * Target type of the forwarding rule.
-     *
-     * @param string $target
-     */
-    public function setTarget($target)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTarget()
-    {
-    }
-    /**
-     * URI of the forwarding rule.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
-    {
-    }
-    /**
-     * VIP of the forwarding rule.
-     *
-     * @param string $vip
-     */
-    public function setVip($vip)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVip()
+    class Google_Service_NetworkManagement_ForwardingRuleInfo extends \Google\Service\NetworkManagement\ForwardingRuleInfo
     {
     }
 }

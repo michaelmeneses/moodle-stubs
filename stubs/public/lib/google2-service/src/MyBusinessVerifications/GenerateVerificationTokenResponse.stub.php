@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessVerifications;
-
-class GenerateVerificationTokenResponse extends \Google\Model
-{
-    protected $tokenType = VerificationToken::class;
-    protected $tokenDataType = '';
-    /**
-     * @param VerificationToken
-     */
-    public function setToken(VerificationToken $token)
+namespace Google\Service\MyBusinessVerifications {
+    class GenerateVerificationTokenResponse extends \Google\Model
     {
+        protected $tokenType = VerificationToken::class;
+        protected $tokenDataType = '';
+        /**
+         * @param VerificationToken
+         */
+        public function setToken(VerificationToken $token)
+        {
+        }
+        /**
+         * @return VerificationToken
+         */
+        public function getToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VerificationToken
+     * Runtime class alias of \Google\Service\MyBusinessVerifications\GenerateVerificationTokenResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getToken()
+    class Google_Service_MyBusinessVerifications_GenerateVerificationTokenResponse extends \Google\Service\MyBusinessVerifications\GenerateVerificationTokenResponse
     {
     }
 }

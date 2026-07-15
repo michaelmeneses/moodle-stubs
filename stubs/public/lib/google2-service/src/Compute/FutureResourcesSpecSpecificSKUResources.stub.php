@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class FutureResourcesSpecSpecificSKUResources extends \Google\Collection
-{
-    protected $collection_key = 'localSsdPartitions';
-    /**
-     * Size of the request, in instance count.
-     *
-     * @var string
-     */
-    public $instanceCount;
-    protected $localSsdPartitionsType = FutureResourcesSpecLocalSsdPartition::class;
-    protected $localSsdPartitionsDataType = 'array';
-    /**
-     * The machine type to use for instances that will use the reservation. This
-     * field only accepts machine type names. e.g. n2-standard-4 and does not
-     * accept machine type full or partial url. e.g. projects/my-l7ilb-
-     * project/zones/us-central1-a/machineTypes/n2-standard-4. Use for GPU
-     * reservations.
-     *
-     * @var string
-     */
-    public $machineType;
-    /**
-     * Size of the request, in instance count.
-     *
-     * @param string $instanceCount
-     */
-    public function setInstanceCount($instanceCount)
+namespace Google\Service\Compute {
+    class FutureResourcesSpecSpecificSKUResources extends \Google\Collection
     {
+        protected $collection_key = 'localSsdPartitions';
+        /**
+         * Size of the request, in instance count.
+         *
+         * @var string
+         */
+        public $instanceCount;
+        protected $localSsdPartitionsType = FutureResourcesSpecLocalSsdPartition::class;
+        protected $localSsdPartitionsDataType = 'array';
+        /**
+         * The machine type to use for instances that will use the reservation. This
+         * field only accepts machine type names. e.g. n2-standard-4 and does not
+         * accept machine type full or partial url. e.g. projects/my-l7ilb-
+         * project/zones/us-central1-a/machineTypes/n2-standard-4. Use for GPU
+         * reservations.
+         *
+         * @var string
+         */
+        public $machineType;
+        /**
+         * Size of the request, in instance count.
+         *
+         * @param string $instanceCount
+         */
+        public function setInstanceCount($instanceCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceCount()
+        {
+        }
+        /**
+         * Local SSD partitions. You do not have to include SSD partitions that are
+         * built in the machine type.
+         *
+         * @param FutureResourcesSpecLocalSsdPartition[] $localSsdPartitions
+         */
+        public function setLocalSsdPartitions($localSsdPartitions)
+        {
+        }
+        /**
+         * @return FutureResourcesSpecLocalSsdPartition[]
+         */
+        public function getLocalSsdPartitions()
+        {
+        }
+        /**
+         * The machine type to use for instances that will use the reservation. This
+         * field only accepts machine type names. e.g. n2-standard-4 and does not
+         * accept machine type full or partial url. e.g. projects/my-l7ilb-
+         * project/zones/us-central1-a/machineTypes/n2-standard-4. Use for GPU
+         * reservations.
+         *
+         * @param string $machineType
+         */
+        public function setMachineType($machineType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMachineType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\FutureResourcesSpecSpecificSKUResources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceCount()
-    {
-    }
-    /**
-     * Local SSD partitions. You do not have to include SSD partitions that are
-     * built in the machine type.
-     *
-     * @param FutureResourcesSpecLocalSsdPartition[] $localSsdPartitions
-     */
-    public function setLocalSsdPartitions($localSsdPartitions)
-    {
-    }
-    /**
-     * @return FutureResourcesSpecLocalSsdPartition[]
-     */
-    public function getLocalSsdPartitions()
-    {
-    }
-    /**
-     * The machine type to use for instances that will use the reservation. This
-     * field only accepts machine type names. e.g. n2-standard-4 and does not
-     * accept machine type full or partial url. e.g. projects/my-l7ilb-
-     * project/zones/us-central1-a/machineTypes/n2-standard-4. Use for GPU
-     * reservations.
-     *
-     * @param string $machineType
-     */
-    public function setMachineType($machineType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMachineType()
+    class Google_Service_Compute_FutureResourcesSpecSpecificSKUResources extends \Google\Service\Compute\FutureResourcesSpecSpecificSKUResources
     {
     }
 }

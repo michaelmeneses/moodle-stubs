@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class OtrChatMessageEvent extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $expirationTimestampUsec;
-    /**
-     * @var string
-     */
-    public $kansasRowId;
-    /**
-     * @var string
-     */
-    public $kansasVersionInfo;
-    /**
-     * @var string
-     */
-    public $messageOtrStatus;
-    /**
-     * @param string
-     */
-    public function setExpirationTimestampUsec($expirationTimestampUsec)
+namespace Google\Service\CloudSearch {
+    class OtrChatMessageEvent extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $expirationTimestampUsec;
+        /**
+         * @var string
+         */
+        public $kansasRowId;
+        /**
+         * @var string
+         */
+        public $kansasVersionInfo;
+        /**
+         * @var string
+         */
+        public $messageOtrStatus;
+        /**
+         * @param string
+         */
+        public function setExpirationTimestampUsec($expirationTimestampUsec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpirationTimestampUsec()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKansasRowId($kansasRowId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKansasRowId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKansasVersionInfo($kansasVersionInfo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKansasVersionInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMessageOtrStatus($messageOtrStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessageOtrStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\OtrChatMessageEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpirationTimestampUsec()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKansasRowId($kansasRowId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKansasRowId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKansasVersionInfo($kansasVersionInfo)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKansasVersionInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMessageOtrStatus($messageOtrStatus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessageOtrStatus()
+    class Google_Service_CloudSearch_OtrChatMessageEvent extends \Google\Service\CloudSearch\OtrChatMessageEvent
     {
     }
 }

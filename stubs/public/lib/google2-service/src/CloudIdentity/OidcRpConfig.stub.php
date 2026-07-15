@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class OidcRpConfig extends \Google\Collection
-{
-    protected $collection_key = 'redirectUris';
-    /**
-     * OAuth2 client ID for OIDC.
-     *
-     * @var string
-     */
-    public $clientId;
-    /**
-     * Input only. OAuth2 client secret for OIDC.
-     *
-     * @var string
-     */
-    public $clientSecret;
-    /**
-     * Output only. The URL(s) that this client may use in authentication
-     * requests.
-     *
-     * @var string[]
-     */
-    public $redirectUris;
-    /**
-     * OAuth2 client ID for OIDC.
-     *
-     * @param string $clientId
-     */
-    public function setClientId($clientId)
+namespace Google\Service\CloudIdentity {
+    class OidcRpConfig extends \Google\Collection
     {
+        protected $collection_key = 'redirectUris';
+        /**
+         * OAuth2 client ID for OIDC.
+         *
+         * @var string
+         */
+        public $clientId;
+        /**
+         * Input only. OAuth2 client secret for OIDC.
+         *
+         * @var string
+         */
+        public $clientSecret;
+        /**
+         * Output only. The URL(s) that this client may use in authentication
+         * requests.
+         *
+         * @var string[]
+         */
+        public $redirectUris;
+        /**
+         * OAuth2 client ID for OIDC.
+         *
+         * @param string $clientId
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
+        /**
+         * Input only. OAuth2 client secret for OIDC.
+         *
+         * @param string $clientSecret
+         */
+        public function setClientSecret($clientSecret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientSecret()
+        {
+        }
+        /**
+         * Output only. The URL(s) that this client may use in authentication
+         * requests.
+         *
+         * @param string[] $redirectUris
+         */
+        public function setRedirectUris($redirectUris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRedirectUris()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIdentity\OidcRpConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientId()
-    {
-    }
-    /**
-     * Input only. OAuth2 client secret for OIDC.
-     *
-     * @param string $clientSecret
-     */
-    public function setClientSecret($clientSecret)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClientSecret()
-    {
-    }
-    /**
-     * Output only. The URL(s) that this client may use in authentication
-     * requests.
-     *
-     * @param string[] $redirectUris
-     */
-    public function setRedirectUris($redirectUris)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRedirectUris()
+    class Google_Service_CloudIdentity_OidcRpConfig extends \Google\Service\CloudIdentity\OidcRpConfig
     {
     }
 }

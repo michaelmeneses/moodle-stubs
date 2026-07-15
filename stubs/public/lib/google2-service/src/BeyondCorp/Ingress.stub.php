@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class Ingress extends \Google\Model
-{
-    protected $configType = Config::class;
-    protected $configDataType = '';
-    /**
-     * @param Config
-     */
-    public function setConfig(Config $config)
+namespace Google\Service\BeyondCorp {
+    class Ingress extends \Google\Model
     {
+        protected $configType = Config::class;
+        protected $configDataType = '';
+        /**
+         * @param Config
+         */
+        public function setConfig(Config $config)
+        {
+        }
+        /**
+         * @return Config
+         */
+        public function getConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Config
+     * Runtime class alias of \Google\Service\BeyondCorp\Ingress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfig()
+    class Google_Service_BeyondCorp_Ingress extends \Google\Service\BeyondCorp\Ingress
     {
     }
 }

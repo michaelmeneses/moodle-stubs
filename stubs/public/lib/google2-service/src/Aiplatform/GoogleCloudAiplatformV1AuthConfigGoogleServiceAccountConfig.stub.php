@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1AuthConfigGoogleServiceAccountConfig extends \Google\Model
-{
-    /**
-     * Optional. The service account that the extension execution service runs as.
-     * - If the service account is specified, the
-     * `iam.serviceAccounts.getAccessToken` permission should be granted to Vertex
-     * AI Extension Service Agent (https://cloud.google.com/vertex-
-     * ai/docs/general/access-control#service-agents) on the specified service
-     * account. - If not specified, the Vertex AI Extension Service Agent will be
-     * used to execute the Extension.
-     *
-     * @var string
-     */
-    public $serviceAccount;
-    /**
-     * Optional. The service account that the extension execution service runs as.
-     * - If the service account is specified, the
-     * `iam.serviceAccounts.getAccessToken` permission should be granted to Vertex
-     * AI Extension Service Agent (https://cloud.google.com/vertex-
-     * ai/docs/general/access-control#service-agents) on the specified service
-     * account. - If not specified, the Vertex AI Extension Service Agent will be
-     * used to execute the Extension.
-     *
-     * @param string $serviceAccount
-     */
-    public function setServiceAccount($serviceAccount)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1AuthConfigGoogleServiceAccountConfig extends \Google\Model
     {
+        /**
+         * Optional. The service account that the extension execution service runs as.
+         * - If the service account is specified, the
+         * `iam.serviceAccounts.getAccessToken` permission should be granted to Vertex
+         * AI Extension Service Agent (https://cloud.google.com/vertex-
+         * ai/docs/general/access-control#service-agents) on the specified service
+         * account. - If not specified, the Vertex AI Extension Service Agent will be
+         * used to execute the Extension.
+         *
+         * @var string
+         */
+        public $serviceAccount;
+        /**
+         * Optional. The service account that the extension execution service runs as.
+         * - If the service account is specified, the
+         * `iam.serviceAccounts.getAccessToken` permission should be granted to Vertex
+         * AI Extension Service Agent (https://cloud.google.com/vertex-
+         * ai/docs/general/access-control#service-agents) on the specified service
+         * account. - If not specified, the Vertex AI Extension Service Agent will be
+         * used to execute the Extension.
+         *
+         * @param string $serviceAccount
+         */
+        public function setServiceAccount($serviceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1AuthConfigGoogleServiceAccountConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServiceAccount()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1AuthConfigGoogleServiceAccountConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1AuthConfigGoogleServiceAccountConfig
     {
     }
 }

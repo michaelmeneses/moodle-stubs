@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceGroupManagersScopedList extends \Google\Collection
-{
-    protected $collection_key = 'instanceGroupManagers';
-    protected $instanceGroupManagersType = InstanceGroupManager::class;
-    protected $instanceGroupManagersDataType = 'array';
-    protected $warningType = InstanceGroupManagersScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * Output only. [Output Only] The list of managed instance groups that are
-     * contained in the specified project and zone.
-     *
-     * @param InstanceGroupManager[] $instanceGroupManagers
-     */
-    public function setInstanceGroupManagers($instanceGroupManagers)
+namespace Google\Service\Compute {
+    class InstanceGroupManagersScopedList extends \Google\Collection
     {
+        protected $collection_key = 'instanceGroupManagers';
+        protected $instanceGroupManagersType = InstanceGroupManager::class;
+        protected $instanceGroupManagersDataType = 'array';
+        protected $warningType = InstanceGroupManagersScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * Output only. [Output Only] The list of managed instance groups that are
+         * contained in the specified project and zone.
+         *
+         * @param InstanceGroupManager[] $instanceGroupManagers
+         */
+        public function setInstanceGroupManagers($instanceGroupManagers)
+        {
+        }
+        /**
+         * @return InstanceGroupManager[]
+         */
+        public function getInstanceGroupManagers()
+        {
+        }
+        /**
+         * Output only. [Output Only] The warning that replaces the list of managed
+         * instance groups when the list is empty.
+         *
+         * @param InstanceGroupManagersScopedListWarning $warning
+         */
+        public function setWarning(InstanceGroupManagersScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return InstanceGroupManagersScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InstanceGroupManager[]
+     * Runtime class alias of \Google\Service\Compute\InstanceGroupManagersScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceGroupManagers()
-    {
-    }
-    /**
-     * Output only. [Output Only] The warning that replaces the list of managed
-     * instance groups when the list is empty.
-     *
-     * @param InstanceGroupManagersScopedListWarning $warning
-     */
-    public function setWarning(InstanceGroupManagersScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return InstanceGroupManagersScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_InstanceGroupManagersScopedList extends \Google\Service\Compute\InstanceGroupManagersScopedList
     {
     }
 }

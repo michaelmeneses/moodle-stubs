@@ -21,45 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books\Resource;
-
-/**
- * The "bookshelves" collection of methods.
- * Typical usage is:
- *  <code>
- *   $booksService = new Google\Service\Books(...);
- *   $bookshelves = $booksService->bookshelves;
- *  </code>
- */
-class Bookshelves extends \Google\Service\Resource
-{
+namespace Google\Service\Books\Resource {
+    use Google\Service\Books\Bookshelf;
+    use Google\Service\Books\Bookshelves as BookshelvesModel;
     /**
-     * Retrieves metadata for a specific bookshelf for the specified user.
-     * (bookshelves.get)
-     *
-     * @param string $userId ID of user for whom to retrieve bookshelves.
-     * @param string $shelf ID of bookshelf to retrieve.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string source String to identify the originator of this request.
-     * @return Bookshelf
-     * @throws \Google\Service\Exception
+     * The "bookshelves" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $booksService = new Google\Service\Books(...);
+     *   $bookshelves = $booksService->bookshelves;
+     *  </code>
      */
-    public function get($userId, $shelf, $optParams = [])
+    class Bookshelves extends \Google\Service\Resource
     {
+        /**
+         * Retrieves metadata for a specific bookshelf for the specified user.
+         * (bookshelves.get)
+         *
+         * @param string $userId ID of user for whom to retrieve bookshelves.
+         * @param string $shelf ID of bookshelf to retrieve.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string source String to identify the originator of this request.
+         * @return Bookshelf
+         * @throws \Google\Service\Exception
+         */
+        public function get($userId, $shelf, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of public bookshelves for the specified user.
+         * (bookshelves.listBookshelves)
+         *
+         * @param string $userId ID of user for whom to retrieve bookshelves.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string source String to identify the originator of this request.
+         * @return BookshelvesModel
+         * @throws \Google\Service\Exception
+         */
+        public function listBookshelves($userId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a list of public bookshelves for the specified user.
-     * (bookshelves.listBookshelves)
-     *
-     * @param string $userId ID of user for whom to retrieve bookshelves.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string source String to identify the originator of this request.
-     * @return BookshelvesModel
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Books\Resource\Bookshelves registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listBookshelves($userId, $optParams = [])
+    class Google_Service_Books_Resource_Bookshelves extends \Google\Service\Books\Resource\Bookshelves
     {
     }
 }

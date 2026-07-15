@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GroundingMetadataSourceFlaggingUri extends \Google\Model
-{
-    /**
-     * The URI that can be used to flag the content.
-     *
-     * @var string
-     */
-    public $flagContentUri;
-    /**
-     * The ID of the place or review.
-     *
-     * @var string
-     */
-    public $sourceId;
-    /**
-     * The URI that can be used to flag the content.
-     *
-     * @param string $flagContentUri
-     */
-    public function setFlagContentUri($flagContentUri)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GroundingMetadataSourceFlaggingUri extends \Google\Model
     {
+        /**
+         * The URI that can be used to flag the content.
+         *
+         * @var string
+         */
+        public $flagContentUri;
+        /**
+         * The ID of the place or review.
+         *
+         * @var string
+         */
+        public $sourceId;
+        /**
+         * The URI that can be used to flag the content.
+         *
+         * @param string $flagContentUri
+         */
+        public function setFlagContentUri($flagContentUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFlagContentUri()
+        {
+        }
+        /**
+         * The ID of the place or review.
+         *
+         * @param string $sourceId
+         */
+        public function setSourceId($sourceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GroundingMetadataSourceFlaggingUri registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFlagContentUri()
-    {
-    }
-    /**
-     * The ID of the place or review.
-     *
-     * @param string $sourceId
-     */
-    public function setSourceId($sourceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceId()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GroundingMetadataSourceFlaggingUri extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GroundingMetadataSourceFlaggingUri
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DiscoveryEventConfigDetails extends \Google\Model
-{
-    /**
-     * A list of discovery configuration parameters in effect. The keys are the
-     * field paths within DiscoverySpec. Eg. includePatterns, excludePatterns,
-     * csvOptions.disableTypeInference, etc.
-     *
-     * @var string[]
-     */
-    public $parameters;
-    /**
-     * A list of discovery configuration parameters in effect. The keys are the
-     * field paths within DiscoverySpec. Eg. includePatterns, excludePatterns,
-     * csvOptions.disableTypeInference, etc.
-     *
-     * @param string[] $parameters
-     */
-    public function setParameters($parameters)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DiscoveryEventConfigDetails extends \Google\Model
     {
+        /**
+         * A list of discovery configuration parameters in effect. The keys are the
+         * field paths within DiscoverySpec. Eg. includePatterns, excludePatterns,
+         * csvOptions.disableTypeInference, etc.
+         *
+         * @var string[]
+         */
+        public $parameters;
+        /**
+         * A list of discovery configuration parameters in effect. The keys are the
+         * field paths within DiscoverySpec. Eg. includePatterns, excludePatterns,
+         * csvOptions.disableTypeInference, etc.
+         *
+         * @param string[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DiscoveryEventConfigDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParameters()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DiscoveryEventConfigDetails extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DiscoveryEventConfigDetails
     {
     }
 }

@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Genomics;
-
-class WorkerStatus extends \Google\Model
-{
-    protected $attachedDisksType = DiskStatus::class;
-    protected $attachedDisksDataType = 'map';
-    protected $bootDiskType = DiskStatus::class;
-    protected $bootDiskDataType = '';
-    /**
-     * @var string
-     */
-    public $freeRamBytes;
-    /**
-     * @var string
-     */
-    public $totalRamBytes;
-    /**
-     * @var string
-     */
-    public $uptimeSeconds;
-    /**
-     * @param DiskStatus[]
-     */
-    public function setAttachedDisks($attachedDisks)
+namespace Google\Service\Genomics {
+    class WorkerStatus extends \Google\Model
     {
+        protected $attachedDisksType = DiskStatus::class;
+        protected $attachedDisksDataType = 'map';
+        protected $bootDiskType = DiskStatus::class;
+        protected $bootDiskDataType = '';
+        /**
+         * @var string
+         */
+        public $freeRamBytes;
+        /**
+         * @var string
+         */
+        public $totalRamBytes;
+        /**
+         * @var string
+         */
+        public $uptimeSeconds;
+        /**
+         * @param DiskStatus[]
+         */
+        public function setAttachedDisks($attachedDisks)
+        {
+        }
+        /**
+         * @return DiskStatus[]
+         */
+        public function getAttachedDisks()
+        {
+        }
+        /**
+         * @param DiskStatus
+         */
+        public function setBootDisk(DiskStatus $bootDisk)
+        {
+        }
+        /**
+         * @return DiskStatus
+         */
+        public function getBootDisk()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFreeRamBytes($freeRamBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFreeRamBytes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTotalRamBytes($totalRamBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalRamBytes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUptimeSeconds($uptimeSeconds)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUptimeSeconds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DiskStatus[]
+     * Runtime class alias of \Google\Service\Genomics\WorkerStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachedDisks()
-    {
-    }
-    /**
-     * @param DiskStatus
-     */
-    public function setBootDisk(DiskStatus $bootDisk)
-    {
-    }
-    /**
-     * @return DiskStatus
-     */
-    public function getBootDisk()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFreeRamBytes($freeRamBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFreeRamBytes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTotalRamBytes($totalRamBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalRamBytes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUptimeSeconds($uptimeSeconds)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUptimeSeconds()
+    class Google_Service_Genomics_WorkerStatus extends \Google\Service\Genomics\WorkerStatus
     {
     }
 }

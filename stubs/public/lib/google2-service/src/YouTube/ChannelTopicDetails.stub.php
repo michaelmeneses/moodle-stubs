@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ChannelTopicDetails extends \Google\Collection
-{
-    protected $collection_key = 'topicIds';
-    /**
-     * A list of Wikipedia URLs that describe the channel's content.
-     *
-     * @var string[]
-     */
-    public $topicCategories;
-    /**
-     * A list of Freebase topic IDs associated with the channel. You can retrieve
-     * information about each topic using the Freebase Topic API.
-     *
-     * @deprecated
-     * @var string[]
-     */
-    public $topicIds;
-    /**
-     * A list of Wikipedia URLs that describe the channel's content.
-     *
-     * @param string[] $topicCategories
-     */
-    public function setTopicCategories($topicCategories)
+namespace Google\Service\YouTube {
+    class ChannelTopicDetails extends \Google\Collection
     {
+        protected $collection_key = 'topicIds';
+        /**
+         * A list of Wikipedia URLs that describe the channel's content.
+         *
+         * @var string[]
+         */
+        public $topicCategories;
+        /**
+         * A list of Freebase topic IDs associated with the channel. You can retrieve
+         * information about each topic using the Freebase Topic API.
+         *
+         * @deprecated
+         * @var string[]
+         */
+        public $topicIds;
+        /**
+         * A list of Wikipedia URLs that describe the channel's content.
+         *
+         * @param string[] $topicCategories
+         */
+        public function setTopicCategories($topicCategories)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTopicCategories()
+        {
+        }
+        /**
+         * A list of Freebase topic IDs associated with the channel. You can retrieve
+         * information about each topic using the Freebase Topic API.
+         *
+         * @deprecated
+         * @param string[] $topicIds
+         */
+        public function setTopicIds($topicIds)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string[]
+         */
+        public function getTopicIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\YouTube\ChannelTopicDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTopicCategories()
-    {
-    }
-    /**
-     * A list of Freebase topic IDs associated with the channel. You can retrieve
-     * information about each topic using the Freebase Topic API.
-     *
-     * @deprecated
-     * @param string[] $topicIds
-     */
-    public function setTopicIds($topicIds)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string[]
-     */
-    public function getTopicIds()
+    class Google_Service_YouTube_ChannelTopicDetails extends \Google\Service\YouTube\ChannelTopicDetails
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPromptSpecReferenceSentencePair extends \Google\Model
-{
-    /**
-     * Source sentence in the sentence pair.
-     *
-     * @var string
-     */
-    public $sourceSentence;
-    /**
-     * Target sentence in the sentence pair.
-     *
-     * @var string
-     */
-    public $targetSentence;
-    /**
-     * Source sentence in the sentence pair.
-     *
-     * @param string $sourceSentence
-     */
-    public function setSourceSentence($sourceSentence)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPromptSpecReferenceSentencePair extends \Google\Model
     {
+        /**
+         * Source sentence in the sentence pair.
+         *
+         * @var string
+         */
+        public $sourceSentence;
+        /**
+         * Target sentence in the sentence pair.
+         *
+         * @var string
+         */
+        public $targetSentence;
+        /**
+         * Source sentence in the sentence pair.
+         *
+         * @param string $sourceSentence
+         */
+        public function setSourceSentence($sourceSentence)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceSentence()
+        {
+        }
+        /**
+         * Target sentence in the sentence pair.
+         *
+         * @param string $targetSentence
+         */
+        public function setTargetSentence($targetSentence)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetSentence()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPromptSpecReferenceSentencePair registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSourceSentence()
-    {
-    }
-    /**
-     * Target sentence in the sentence pair.
-     *
-     * @param string $targetSentence
-     */
-    public function setTargetSentence($targetSentence)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetSentence()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPromptSpecReferenceSentencePair extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPromptSpecReferenceSentencePair
     {
     }
 }

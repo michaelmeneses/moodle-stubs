@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleDevtoolsCloudbuildV1ArtifactObjects extends \Google\Collection
-{
-    protected $collection_key = 'paths';
-    /**
-     * Cloud Storage bucket and optional object path, in the form
-     * "gs://bucket/path/to/somewhere/". (see [Bucket Name
-     * Requirements](https://cloud.google.com/storage/docs/bucket-
-     * naming#requirements)). Files in the workspace matching any path pattern
-     * will be uploaded to Cloud Storage with this location as a prefix.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Path globs used to match files in the build's workspace.
-     *
-     * @var string[]
-     */
-    public $paths;
-    protected $timingType = GoogleDevtoolsCloudbuildV1TimeSpan::class;
-    protected $timingDataType = '';
-    /**
-     * Cloud Storage bucket and optional object path, in the form
-     * "gs://bucket/path/to/somewhere/". (see [Bucket Name
-     * Requirements](https://cloud.google.com/storage/docs/bucket-
-     * naming#requirements)). Files in the workspace matching any path pattern
-     * will be uploaded to Cloud Storage with this location as a prefix.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
+namespace Google\Service\CloudRun {
+    class GoogleDevtoolsCloudbuildV1ArtifactObjects extends \Google\Collection
     {
+        protected $collection_key = 'paths';
+        /**
+         * Cloud Storage bucket and optional object path, in the form
+         * "gs://bucket/path/to/somewhere/". (see [Bucket Name
+         * Requirements](https://cloud.google.com/storage/docs/bucket-
+         * naming#requirements)). Files in the workspace matching any path pattern
+         * will be uploaded to Cloud Storage with this location as a prefix.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Path globs used to match files in the build's workspace.
+         *
+         * @var string[]
+         */
+        public $paths;
+        protected $timingType = GoogleDevtoolsCloudbuildV1TimeSpan::class;
+        protected $timingDataType = '';
+        /**
+         * Cloud Storage bucket and optional object path, in the form
+         * "gs://bucket/path/to/somewhere/". (see [Bucket Name
+         * Requirements](https://cloud.google.com/storage/docs/bucket-
+         * naming#requirements)). Files in the workspace matching any path pattern
+         * will be uploaded to Cloud Storage with this location as a prefix.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Path globs used to match files in the build's workspace.
+         *
+         * @param string[] $paths
+         */
+        public function setPaths($paths)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPaths()
+        {
+        }
+        /**
+         * Output only. Stores timing information for pushing all artifact objects.
+         *
+         * @param GoogleDevtoolsCloudbuildV1TimeSpan $timing
+         */
+        public function setTiming(GoogleDevtoolsCloudbuildV1TimeSpan $timing)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsCloudbuildV1TimeSpan
+         */
+        public function getTiming()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1ArtifactObjects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
-    {
-    }
-    /**
-     * Path globs used to match files in the build's workspace.
-     *
-     * @param string[] $paths
-     */
-    public function setPaths($paths)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPaths()
-    {
-    }
-    /**
-     * Output only. Stores timing information for pushing all artifact objects.
-     *
-     * @param GoogleDevtoolsCloudbuildV1TimeSpan $timing
-     */
-    public function setTiming(GoogleDevtoolsCloudbuildV1TimeSpan $timing)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsCloudbuildV1TimeSpan
-     */
-    public function getTiming()
+    class Google_Service_CloudRun_GoogleDevtoolsCloudbuildV1ArtifactObjects extends \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1ArtifactObjects
     {
     }
 }

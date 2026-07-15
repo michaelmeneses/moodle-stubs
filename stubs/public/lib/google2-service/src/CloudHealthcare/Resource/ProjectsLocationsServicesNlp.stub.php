@@ -21,31 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare\Resource;
-
-/**
- * The "nlp" collection of methods.
- * Typical usage is:
- *  <code>
- *   $healthcareService = new Google\Service\CloudHealthcare(...);
- *   $nlp = $healthcareService->projects_locations_services_nlp;
- *  </code>
- */
-class ProjectsLocationsServicesNlp extends \Google\Service\Resource
-{
+namespace Google\Service\CloudHealthcare\Resource {
+    use Google\Service\CloudHealthcare\AnalyzeEntitiesRequest;
+    use Google\Service\CloudHealthcare\AnalyzeEntitiesResponse;
     /**
-     * Analyze heathcare entity in a document. Its response includes the recognized
-     * entity mentions and the relationships between them. AnalyzeEntities uses
-     * context aware models to detect entities. (nlp.analyzeEntities)
-     *
-     * @param string $nlpService The resource name of the service of the form:
-     * "projects/{project_id}/locations/{location_id}/services/nlp".
-     * @param AnalyzeEntitiesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return AnalyzeEntitiesResponse
-     * @throws \Google\Service\Exception
+     * The "nlp" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $healthcareService = new Google\Service\CloudHealthcare(...);
+     *   $nlp = $healthcareService->projects_locations_services_nlp;
+     *  </code>
      */
-    public function analyzeEntities($nlpService, AnalyzeEntitiesRequest $postBody, $optParams = [])
+    class ProjectsLocationsServicesNlp extends \Google\Service\Resource
+    {
+        /**
+         * Analyze heathcare entity in a document. Its response includes the recognized
+         * entity mentions and the relationships between them. AnalyzeEntities uses
+         * context aware models to detect entities. (nlp.analyzeEntities)
+         *
+         * @param string $nlpService The resource name of the service of the form:
+         * "projects/{project_id}/locations/{location_id}/services/nlp".
+         * @param AnalyzeEntitiesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return AnalyzeEntitiesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function analyzeEntities($nlpService, AnalyzeEntitiesRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudHealthcare\Resource\ProjectsLocationsServicesNlp registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudHealthcare_Resource_ProjectsLocationsServicesNlp extends \Google\Service\CloudHealthcare\Resource\ProjectsLocationsServicesNlp
     {
     }
 }

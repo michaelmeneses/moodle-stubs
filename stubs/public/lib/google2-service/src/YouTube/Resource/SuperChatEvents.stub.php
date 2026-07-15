@@ -21,38 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube\Resource;
-
-/**
- * The "superChatEvents" collection of methods.
- * Typical usage is:
- *  <code>
- *   $youtubeService = new Google\Service\YouTube(...);
- *   $superChatEvents = $youtubeService->superChatEvents;
- *  </code>
- */
-class SuperChatEvents extends \Google\Service\Resource
-{
+namespace Google\Service\YouTube\Resource {
+    use Google\Service\YouTube\SuperChatEventListResponse;
     /**
-     * Retrieves a list of resources, possibly filtered.
-     * (superChatEvents.listSuperChatEvents)
-     *
-     * @param string|array $part The *part* parameter specifies the superChatEvent
-     * resource parts that the API response will include. This parameter is
-     * currently not supported.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string hl Return rendered funding amounts in specified language.
-     * @opt_param string maxResults The *maxResults* parameter specifies the maximum
-     * number of items that should be returned in the result set.
-     * @opt_param string pageToken The *pageToken* parameter identifies a specific
-     * page in the result set that should be returned. In an API response, the
-     * nextPageToken and prevPageToken properties identify other pages that could be
-     * retrieved.
-     * @return SuperChatEventListResponse
-     * @throws \Google\Service\Exception
+     * The "superChatEvents" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $youtubeService = new Google\Service\YouTube(...);
+     *   $superChatEvents = $youtubeService->superChatEvents;
+     *  </code>
      */
-    public function listSuperChatEvents($part, $optParams = [])
+    class SuperChatEvents extends \Google\Service\Resource
+    {
+        /**
+         * Retrieves a list of resources, possibly filtered.
+         * (superChatEvents.listSuperChatEvents)
+         *
+         * @param string|array $part The *part* parameter specifies the superChatEvent
+         * resource parts that the API response will include. This parameter is
+         * currently not supported.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string hl Return rendered funding amounts in specified language.
+         * @opt_param string maxResults The *maxResults* parameter specifies the maximum
+         * number of items that should be returned in the result set.
+         * @opt_param string pageToken The *pageToken* parameter identifies a specific
+         * page in the result set that should be returned. In an API response, the
+         * nextPageToken and prevPageToken properties identify other pages that could be
+         * retrieved.
+         * @return SuperChatEventListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listSuperChatEvents($part, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\YouTube\Resource\SuperChatEvents registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_YouTube_Resource_SuperChatEvents extends \Google\Service\YouTube\Resource\SuperChatEvents
     {
     }
 }

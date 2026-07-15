@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class AllConnectionStrings extends \Google\Model
-{
-    /**
-     * Output only. The database service provides the highest level of resources
-     * to each SQL statement.
-     *
-     * @var string
-     */
-    public $high;
-    /**
-     * Output only. The database service provides the least level of resources to
-     * each SQL statement.
-     *
-     * @var string
-     */
-    public $low;
-    /**
-     * Output only. The database service provides a lower level of resources to
-     * each SQL statement.
-     *
-     * @var string
-     */
-    public $medium;
-    /**
-     * Output only. The database service provides the highest level of resources
-     * to each SQL statement.
-     *
-     * @param string $high
-     */
-    public function setHigh($high)
+namespace Google\Service\OracleDatabase {
+    class AllConnectionStrings extends \Google\Model
     {
+        /**
+         * Output only. The database service provides the highest level of resources
+         * to each SQL statement.
+         *
+         * @var string
+         */
+        public $high;
+        /**
+         * Output only. The database service provides the least level of resources to
+         * each SQL statement.
+         *
+         * @var string
+         */
+        public $low;
+        /**
+         * Output only. The database service provides a lower level of resources to
+         * each SQL statement.
+         *
+         * @var string
+         */
+        public $medium;
+        /**
+         * Output only. The database service provides the highest level of resources
+         * to each SQL statement.
+         *
+         * @param string $high
+         */
+        public function setHigh($high)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHigh()
+        {
+        }
+        /**
+         * Output only. The database service provides the least level of resources to
+         * each SQL statement.
+         *
+         * @param string $low
+         */
+        public function setLow($low)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLow()
+        {
+        }
+        /**
+         * Output only. The database service provides a lower level of resources to
+         * each SQL statement.
+         *
+         * @param string $medium
+         */
+        public function setMedium($medium)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMedium()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OracleDatabase\AllConnectionStrings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHigh()
-    {
-    }
-    /**
-     * Output only. The database service provides the least level of resources to
-     * each SQL statement.
-     *
-     * @param string $low
-     */
-    public function setLow($low)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLow()
-    {
-    }
-    /**
-     * Output only. The database service provides a lower level of resources to
-     * each SQL statement.
-     *
-     * @param string $medium
-     */
-    public function setMedium($medium)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMedium()
+    class Google_Service_OracleDatabase_AllConnectionStrings extends \Google\Service\OracleDatabase\AllConnectionStrings
     {
     }
 }

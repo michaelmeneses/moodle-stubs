@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class GoogleAppsCloudidentityDevicesV1LookupSelfDeviceUsersResponse extends \Google\Collection
-{
-    protected $collection_key = 'names';
-    /**
-     * The customer resource name that may be passed back to other Devices API
-     * methods such as List, Get, etc.
-     *
-     * @var string
-     */
-    public $customer;
-    /**
-     * [Resource names](https://cloud.google.com/apis/design/resource_names) of
-     * the DeviceUsers in the format:
-     * `devices/{device}/deviceUsers/{user_resource}`, where device is the unique
-     * ID assigned to a Device and user_resource is the unique user ID
-     *
-     * @var string[]
-     */
-    public $names;
-    /**
-     * Token to retrieve the next page of results. Empty if there are no more
-     * results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The customer resource name that may be passed back to other Devices API
-     * methods such as List, Get, etc.
-     *
-     * @param string $customer
-     */
-    public function setCustomer($customer)
+namespace Google\Service\CloudIdentity {
+    class GoogleAppsCloudidentityDevicesV1LookupSelfDeviceUsersResponse extends \Google\Collection
     {
+        protected $collection_key = 'names';
+        /**
+         * The customer resource name that may be passed back to other Devices API
+         * methods such as List, Get, etc.
+         *
+         * @var string
+         */
+        public $customer;
+        /**
+         * [Resource names](https://cloud.google.com/apis/design/resource_names) of
+         * the DeviceUsers in the format:
+         * `devices/{device}/deviceUsers/{user_resource}`, where device is the unique
+         * ID assigned to a Device and user_resource is the unique user ID
+         *
+         * @var string[]
+         */
+        public $names;
+        /**
+         * Token to retrieve the next page of results. Empty if there are no more
+         * results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The customer resource name that may be passed back to other Devices API
+         * methods such as List, Get, etc.
+         *
+         * @param string $customer
+         */
+        public function setCustomer($customer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomer()
+        {
+        }
+        /**
+         * [Resource names](https://cloud.google.com/apis/design/resource_names) of
+         * the DeviceUsers in the format:
+         * `devices/{device}/deviceUsers/{user_resource}`, where device is the unique
+         * ID assigned to a Device and user_resource is the unique user ID
+         *
+         * @param string[] $names
+         */
+        public function setNames($names)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNames()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results. Empty if there are no more
+         * results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1LookupSelfDeviceUsersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomer()
-    {
-    }
-    /**
-     * [Resource names](https://cloud.google.com/apis/design/resource_names) of
-     * the DeviceUsers in the format:
-     * `devices/{device}/deviceUsers/{user_resource}`, where device is the unique
-     * ID assigned to a Device and user_resource is the unique user ID
-     *
-     * @param string[] $names
-     */
-    public function setNames($names)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNames()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results. Empty if there are no more
-     * results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudIdentity_GoogleAppsCloudidentityDevicesV1LookupSelfDeviceUsersResponse extends \Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1LookupSelfDeviceUsersResponse
     {
     }
 }

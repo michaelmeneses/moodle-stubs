@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class RepeatCellRequest extends \Google\Model
-{
-    protected $cellType = CellData::class;
-    protected $cellDataType = '';
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `cell` is implied and should not be specified. A single `"*"` can
-     * be used as short-hand for listing every field.
-     *
-     * @var string
-     */
-    public $fields;
-    protected $rangeType = GridRange::class;
-    protected $rangeDataType = '';
-    /**
-     * The data to write.
-     *
-     * @param CellData $cell
-     */
-    public function setCell(CellData $cell)
+namespace Google\Service\Sheets {
+    class RepeatCellRequest extends \Google\Model
     {
+        protected $cellType = CellData::class;
+        protected $cellDataType = '';
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `cell` is implied and should not be specified. A single `"*"` can
+         * be used as short-hand for listing every field.
+         *
+         * @var string
+         */
+        public $fields;
+        protected $rangeType = GridRange::class;
+        protected $rangeDataType = '';
+        /**
+         * The data to write.
+         *
+         * @param CellData $cell
+         */
+        public function setCell(CellData $cell)
+        {
+        }
+        /**
+         * @return CellData
+         */
+        public function getCell()
+        {
+        }
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `cell` is implied and should not be specified. A single `"*"` can
+         * be used as short-hand for listing every field.
+         *
+         * @param string $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * The range to repeat the cell in.
+         *
+         * @param GridRange $range
+         */
+        public function setRange(GridRange $range)
+        {
+        }
+        /**
+         * @return GridRange
+         */
+        public function getRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CellData
+     * Runtime class alias of \Google\Service\Sheets\RepeatCellRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCell()
-    {
-    }
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `cell` is implied and should not be specified. A single `"*"` can
-     * be used as short-hand for listing every field.
-     *
-     * @param string $fields
-     */
-    public function setFields($fields)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFields()
-    {
-    }
-    /**
-     * The range to repeat the cell in.
-     *
-     * @param GridRange $range
-     */
-    public function setRange(GridRange $range)
-    {
-    }
-    /**
-     * @return GridRange
-     */
-    public function getRange()
+    class Google_Service_Sheets_RepeatCellRequest extends \Google\Service\Sheets\RepeatCellRequest
     {
     }
 }

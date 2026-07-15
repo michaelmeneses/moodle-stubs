@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineLoggingErrorContext extends \Google\Model
-{
-    protected $httpRequestType = GoogleCloudDiscoveryengineLoggingHttpRequestContext::class;
-    protected $httpRequestDataType = '';
-    protected $reportLocationType = GoogleCloudDiscoveryengineLoggingSourceLocation::class;
-    protected $reportLocationDataType = '';
-    /**
-     * The HTTP request which was processed when the error was triggered.
-     *
-     * @param GoogleCloudDiscoveryengineLoggingHttpRequestContext $httpRequest
-     */
-    public function setHttpRequest(GoogleCloudDiscoveryengineLoggingHttpRequestContext $httpRequest)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineLoggingErrorContext extends \Google\Model
     {
+        protected $httpRequestType = GoogleCloudDiscoveryengineLoggingHttpRequestContext::class;
+        protected $httpRequestDataType = '';
+        protected $reportLocationType = GoogleCloudDiscoveryengineLoggingSourceLocation::class;
+        protected $reportLocationDataType = '';
+        /**
+         * The HTTP request which was processed when the error was triggered.
+         *
+         * @param GoogleCloudDiscoveryengineLoggingHttpRequestContext $httpRequest
+         */
+        public function setHttpRequest(GoogleCloudDiscoveryengineLoggingHttpRequestContext $httpRequest)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineLoggingHttpRequestContext
+         */
+        public function getHttpRequest()
+        {
+        }
+        /**
+         * The location in the source code where the decision was made to report the
+         * error, usually the place where it was logged.
+         *
+         * @param GoogleCloudDiscoveryengineLoggingSourceLocation $reportLocation
+         */
+        public function setReportLocation(GoogleCloudDiscoveryengineLoggingSourceLocation $reportLocation)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineLoggingSourceLocation
+         */
+        public function getReportLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineLoggingHttpRequestContext
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineLoggingErrorContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHttpRequest()
-    {
-    }
-    /**
-     * The location in the source code where the decision was made to report the
-     * error, usually the place where it was logged.
-     *
-     * @param GoogleCloudDiscoveryengineLoggingSourceLocation $reportLocation
-     */
-    public function setReportLocation(GoogleCloudDiscoveryengineLoggingSourceLocation $reportLocation)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineLoggingSourceLocation
-     */
-    public function getReportLocation()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineLoggingErrorContext extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineLoggingErrorContext
     {
     }
 }

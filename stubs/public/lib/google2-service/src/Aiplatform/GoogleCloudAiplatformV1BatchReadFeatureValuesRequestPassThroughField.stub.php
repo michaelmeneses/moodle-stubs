@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BatchReadFeatureValuesRequestPassThroughField extends \Google\Model
-{
-    /**
-     * Required. The name of the field in the CSV header or the name of the column
-     * in BigQuery table. The naming restriction is the same as Feature.name.
-     *
-     * @var string
-     */
-    public $fieldName;
-    /**
-     * Required. The name of the field in the CSV header or the name of the column
-     * in BigQuery table. The naming restriction is the same as Feature.name.
-     *
-     * @param string $fieldName
-     */
-    public function setFieldName($fieldName)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BatchReadFeatureValuesRequestPassThroughField extends \Google\Model
     {
+        /**
+         * Required. The name of the field in the CSV header or the name of the column
+         * in BigQuery table. The naming restriction is the same as Feature.name.
+         *
+         * @var string
+         */
+        public $fieldName;
+        /**
+         * Required. The name of the field in the CSV header or the name of the column
+         * in BigQuery table. The naming restriction is the same as Feature.name.
+         *
+         * @param string $fieldName
+         */
+        public function setFieldName($fieldName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchReadFeatureValuesRequestPassThroughField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BatchReadFeatureValuesRequestPassThroughField extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchReadFeatureValuesRequestPassThroughField
     {
     }
 }

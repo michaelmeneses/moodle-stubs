@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListAsyncQueriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'queries';
-    protected $queriesType = GoogleCloudApigeeV1AsyncQuery::class;
-    protected $queriesDataType = 'array';
-    /**
-     * The asynchronous queries belong to requested resource name.
-     *
-     * @param GoogleCloudApigeeV1AsyncQuery[] $queries
-     */
-    public function setQueries($queries)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListAsyncQueriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'queries';
+        protected $queriesType = GoogleCloudApigeeV1AsyncQuery::class;
+        protected $queriesDataType = 'array';
+        /**
+         * The asynchronous queries belong to requested resource name.
+         *
+         * @param GoogleCloudApigeeV1AsyncQuery[] $queries
+         */
+        public function setQueries($queries)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1AsyncQuery[]
+         */
+        public function getQueries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1AsyncQuery[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListAsyncQueriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQueries()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListAsyncQueriesResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListAsyncQueriesResponse
     {
     }
 }

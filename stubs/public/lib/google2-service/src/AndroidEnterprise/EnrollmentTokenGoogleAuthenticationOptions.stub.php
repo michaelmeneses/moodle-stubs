@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class EnrollmentTokenGoogleAuthenticationOptions extends \Google\Model
-{
-    /**
-     * The value is unused.
-     */
-    public const AUTHENTICATION_REQUIREMENT_authenticationRequirementUnspecified = 'authenticationRequirementUnspecified';
-    /**
-     * Google authentication is optional for the user. This means the user can
-     * choose to skip Google authentication during enrollment.
-     */
-    public const AUTHENTICATION_REQUIREMENT_optional = 'optional';
-    /**
-     * Google authentication is required for the user. This means the user must
-     * authenticate with a Google account to proceed.
-     */
-    public const AUTHENTICATION_REQUIREMENT_required = 'required';
-    /**
-     * [Optional] Specifies whether user should authenticate with Google during
-     * enrollment. This setting, if specified,`GoogleAuthenticationSettings`
-     * specified for the enterprise resource is ignored for devices enrolled with
-     * this token.
-     *
-     * @var string
-     */
-    public $authenticationRequirement;
-    /**
-     * [Optional] Specifies the managed Google account that the user must use
-     * during enrollment.`AuthenticationRequirement` must be set to`REQUIRED` if
-     * this field is set.
-     *
-     * @var string
-     */
-    public $requiredAccountEmail;
-    /**
-     * [Optional] Specifies whether user should authenticate with Google during
-     * enrollment. This setting, if specified,`GoogleAuthenticationSettings`
-     * specified for the enterprise resource is ignored for devices enrolled with
-     * this token.
-     *
-     * Accepted values: authenticationRequirementUnspecified, optional, required
-     *
-     * @param self::AUTHENTICATION_REQUIREMENT_* $authenticationRequirement
-     */
-    public function setAuthenticationRequirement($authenticationRequirement)
+namespace Google\Service\AndroidEnterprise {
+    class EnrollmentTokenGoogleAuthenticationOptions extends \Google\Model
     {
+        /**
+         * The value is unused.
+         */
+        public const AUTHENTICATION_REQUIREMENT_authenticationRequirementUnspecified = 'authenticationRequirementUnspecified';
+        /**
+         * Google authentication is optional for the user. This means the user can
+         * choose to skip Google authentication during enrollment.
+         */
+        public const AUTHENTICATION_REQUIREMENT_optional = 'optional';
+        /**
+         * Google authentication is required for the user. This means the user must
+         * authenticate with a Google account to proceed.
+         */
+        public const AUTHENTICATION_REQUIREMENT_required = 'required';
+        /**
+         * [Optional] Specifies whether user should authenticate with Google during
+         * enrollment. This setting, if specified,`GoogleAuthenticationSettings`
+         * specified for the enterprise resource is ignored for devices enrolled with
+         * this token.
+         *
+         * @var string
+         */
+        public $authenticationRequirement;
+        /**
+         * [Optional] Specifies the managed Google account that the user must use
+         * during enrollment.`AuthenticationRequirement` must be set to`REQUIRED` if
+         * this field is set.
+         *
+         * @var string
+         */
+        public $requiredAccountEmail;
+        /**
+         * [Optional] Specifies whether user should authenticate with Google during
+         * enrollment. This setting, if specified,`GoogleAuthenticationSettings`
+         * specified for the enterprise resource is ignored for devices enrolled with
+         * this token.
+         *
+         * Accepted values: authenticationRequirementUnspecified, optional, required
+         *
+         * @param self::AUTHENTICATION_REQUIREMENT_* $authenticationRequirement
+         */
+        public function setAuthenticationRequirement($authenticationRequirement)
+        {
+        }
+        /**
+         * @return self::AUTHENTICATION_REQUIREMENT_*
+         */
+        public function getAuthenticationRequirement()
+        {
+        }
+        /**
+         * [Optional] Specifies the managed Google account that the user must use
+         * during enrollment.`AuthenticationRequirement` must be set to`REQUIRED` if
+         * this field is set.
+         *
+         * @param string $requiredAccountEmail
+         */
+        public function setRequiredAccountEmail($requiredAccountEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequiredAccountEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::AUTHENTICATION_REQUIREMENT_*
+     * Runtime class alias of \Google\Service\AndroidEnterprise\EnrollmentTokenGoogleAuthenticationOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthenticationRequirement()
-    {
-    }
-    /**
-     * [Optional] Specifies the managed Google account that the user must use
-     * during enrollment.`AuthenticationRequirement` must be set to`REQUIRED` if
-     * this field is set.
-     *
-     * @param string $requiredAccountEmail
-     */
-    public function setRequiredAccountEmail($requiredAccountEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequiredAccountEmail()
+    class Google_Service_AndroidEnterprise_EnrollmentTokenGoogleAuthenticationOptions extends \Google\Service\AndroidEnterprise\EnrollmentTokenGoogleAuthenticationOptions
     {
     }
 }

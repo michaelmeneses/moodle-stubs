@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FunctionResponseBlob extends \Google\Model
-{
-    /**
-     * Required. Raw bytes.
-     *
-     * @var string
-     */
-    public $data;
-    /**
-     * Optional. Display name of the blob. Used to provide a label or filename to
-     * distinguish blobs. This field is only returned in PromptMessage for prompt
-     * management. It is currently used in the Gemini GenerateContent calls only
-     * when server side tools (code_execution, google_search, and url_context) are
-     * enabled.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Required. The IANA standard MIME type of the source data.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * Required. Raw bytes.
-     *
-     * @param string $data
-     */
-    public function setData($data)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FunctionResponseBlob extends \Google\Model
     {
+        /**
+         * Required. Raw bytes.
+         *
+         * @var string
+         */
+        public $data;
+        /**
+         * Optional. Display name of the blob. Used to provide a label or filename to
+         * distinguish blobs. This field is only returned in PromptMessage for prompt
+         * management. It is currently used in the Gemini GenerateContent calls only
+         * when server side tools (code_execution, google_search, and url_context) are
+         * enabled.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Required. The IANA standard MIME type of the source data.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * Required. Raw bytes.
+         *
+         * @param string $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getData()
+        {
+        }
+        /**
+         * Optional. Display name of the blob. Used to provide a label or filename to
+         * distinguish blobs. This field is only returned in PromptMessage for prompt
+         * management. It is currently used in the Gemini GenerateContent calls only
+         * when server side tools (code_execution, google_search, and url_context) are
+         * enabled.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Required. The IANA standard MIME type of the source data.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FunctionResponseBlob registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
-    {
-    }
-    /**
-     * Optional. Display name of the blob. Used to provide a label or filename to
-     * distinguish blobs. This field is only returned in PromptMessage for prompt
-     * management. It is currently used in the Gemini GenerateContent calls only
-     * when server side tools (code_execution, google_search, and url_context) are
-     * enabled.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Required. The IANA standard MIME type of the source data.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FunctionResponseBlob extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FunctionResponseBlob
     {
     }
 }

@@ -21,94 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager\Resource;
-
-/**
- * The "transformations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $tagmanagerService = new Google\Service\TagManager(...);
- *   $transformations = $tagmanagerService->accounts_containers_workspaces_transformations;
- *  </code>
- */
-class AccountsContainersWorkspacesTransformations extends \Google\Service\Resource
-{
+namespace Google\Service\TagManager\Resource {
+    use Google\Service\TagManager\ListTransformationsResponse;
+    use Google\Service\TagManager\RevertTransformationResponse;
+    use Google\Service\TagManager\Transformation;
     /**
-     * Creates a GTM Transformation. (transformations.create)
-     *
-     * @param string $parent GTM Workspace's API relative path.
-     * @param Transformation $postBody
-     * @param array $optParams Optional parameters.
-     * @return Transformation
-     * @throws \Google\Service\Exception
+     * The "transformations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $tagmanagerService = new Google\Service\TagManager(...);
+     *   $transformations = $tagmanagerService->accounts_containers_workspaces_transformations;
+     *  </code>
      */
-    public function create($parent, Transformation $postBody, $optParams = [])
+    class AccountsContainersWorkspacesTransformations extends \Google\Service\Resource
     {
+        /**
+         * Creates a GTM Transformation. (transformations.create)
+         *
+         * @param string $parent GTM Workspace's API relative path.
+         * @param Transformation $postBody
+         * @param array $optParams Optional parameters.
+         * @return Transformation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Transformation $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a GTM Transformation. (transformations.delete)
+         *
+         * @param string $path GTM Transformation's API relative path.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($path, $optParams = [])
+        {
+        }
+        /**
+         * Gets a GTM Transformation. (transformations.get)
+         *
+         * @param string $path GTM Transformation's API relative path.
+         * @param array $optParams Optional parameters.
+         * @return Transformation
+         * @throws \Google\Service\Exception
+         */
+        public function get($path, $optParams = [])
+        {
+        }
+        /**
+         * Lists all GTM Transformations of a GTM container workspace.
+         * (transformations.listAccountsContainersWorkspacesTransformations)
+         *
+         * @param string $parent GTM Workspace's API relative path.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string pageToken Continuation token for fetching the next page of
+         * results.
+         * @return ListTransformationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsContainersWorkspacesTransformations($parent, $optParams = [])
+        {
+        }
+        /**
+         * Reverts changes to a GTM Transformation in a GTM Workspace.
+         * (transformations.revert)
+         *
+         * @param string $path GTM Transformation's API relative path.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string fingerprint When provided, this fingerprint must match the
+         * fingerprint of the transformation in storage.
+         * @return RevertTransformationResponse
+         * @throws \Google\Service\Exception
+         */
+        public function revert($path, $optParams = [])
+        {
+        }
+        /**
+         * Updates a GTM Transformation. (transformations.update)
+         *
+         * @param string $path GTM Transformation's API relative path.
+         * @param Transformation $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string fingerprint When provided, this fingerprint must match the
+         * fingerprint of the transformation in storage.
+         * @return Transformation
+         * @throws \Google\Service\Exception
+         */
+        public function update($path, Transformation $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a GTM Transformation. (transformations.delete)
-     *
-     * @param string $path GTM Transformation's API relative path.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\TagManager\Resource\AccountsContainersWorkspacesTransformations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($path, $optParams = [])
-    {
-    }
-    /**
-     * Gets a GTM Transformation. (transformations.get)
-     *
-     * @param string $path GTM Transformation's API relative path.
-     * @param array $optParams Optional parameters.
-     * @return Transformation
-     * @throws \Google\Service\Exception
-     */
-    public function get($path, $optParams = [])
-    {
-    }
-    /**
-     * Lists all GTM Transformations of a GTM container workspace.
-     * (transformations.listAccountsContainersWorkspacesTransformations)
-     *
-     * @param string $parent GTM Workspace's API relative path.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string pageToken Continuation token for fetching the next page of
-     * results.
-     * @return ListTransformationsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAccountsContainersWorkspacesTransformations($parent, $optParams = [])
-    {
-    }
-    /**
-     * Reverts changes to a GTM Transformation in a GTM Workspace.
-     * (transformations.revert)
-     *
-     * @param string $path GTM Transformation's API relative path.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string fingerprint When provided, this fingerprint must match the
-     * fingerprint of the transformation in storage.
-     * @return RevertTransformationResponse
-     * @throws \Google\Service\Exception
-     */
-    public function revert($path, $optParams = [])
-    {
-    }
-    /**
-     * Updates a GTM Transformation. (transformations.update)
-     *
-     * @param string $path GTM Transformation's API relative path.
-     * @param Transformation $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string fingerprint When provided, this fingerprint must match the
-     * fingerprint of the transformation in storage.
-     * @return Transformation
-     * @throws \Google\Service\Exception
-     */
-    public function update($path, Transformation $postBody, $optParams = [])
+    class Google_Service_TagManager_Resource_AccountsContainersWorkspacesTransformations extends \Google\Service\TagManager\Resource\AccountsContainersWorkspacesTransformations
     {
     }
 }

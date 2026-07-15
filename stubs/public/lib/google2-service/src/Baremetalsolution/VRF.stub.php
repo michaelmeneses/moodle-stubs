@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class VRF extends \Google\Collection
-{
-    /**
-     * The unspecified state.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The vrf is provisioning.
-     */
-    public const STATE_PROVISIONING = 'PROVISIONING';
-    /**
-     * The vrf is provisioned.
-     */
-    public const STATE_PROVISIONED = 'PROVISIONED';
-    protected $collection_key = 'vlanAttachments';
-    /**
-     * The name of the VRF.
-     *
-     * @var string
-     */
-    public $name;
-    protected $qosPolicyType = QosPolicy::class;
-    protected $qosPolicyDataType = '';
-    /**
-     * The possible state of VRF.
-     *
-     * @var string
-     */
-    public $state;
-    protected $vlanAttachmentsType = VlanAttachment::class;
-    protected $vlanAttachmentsDataType = 'array';
-    /**
-     * The name of the VRF.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Baremetalsolution {
+    class VRF extends \Google\Collection
     {
+        /**
+         * The unspecified state.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The vrf is provisioning.
+         */
+        public const STATE_PROVISIONING = 'PROVISIONING';
+        /**
+         * The vrf is provisioned.
+         */
+        public const STATE_PROVISIONED = 'PROVISIONED';
+        protected $collection_key = 'vlanAttachments';
+        /**
+         * The name of the VRF.
+         *
+         * @var string
+         */
+        public $name;
+        protected $qosPolicyType = QosPolicy::class;
+        protected $qosPolicyDataType = '';
+        /**
+         * The possible state of VRF.
+         *
+         * @var string
+         */
+        public $state;
+        protected $vlanAttachmentsType = VlanAttachment::class;
+        protected $vlanAttachmentsDataType = 'array';
+        /**
+         * The name of the VRF.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The QOS policy applied to this VRF. The value is only meaningful when all
+         * the vlan attachments have the same QoS. This field should not be used for
+         * new integrations, use vlan attachment level qos instead. The field is left
+         * for backward-compatibility.
+         *
+         * @param QosPolicy $qosPolicy
+         */
+        public function setQosPolicy(QosPolicy $qosPolicy)
+        {
+        }
+        /**
+         * @return QosPolicy
+         */
+        public function getQosPolicy()
+        {
+        }
+        /**
+         * The possible state of VRF.
+         *
+         * Accepted values: STATE_UNSPECIFIED, PROVISIONING, PROVISIONED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * The list of VLAN attachments for the VRF.
+         *
+         * @param VlanAttachment[] $vlanAttachments
+         */
+        public function setVlanAttachments($vlanAttachments)
+        {
+        }
+        /**
+         * @return VlanAttachment[]
+         */
+        public function getVlanAttachments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Baremetalsolution\VRF registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The QOS policy applied to this VRF. The value is only meaningful when all
-     * the vlan attachments have the same QoS. This field should not be used for
-     * new integrations, use vlan attachment level qos instead. The field is left
-     * for backward-compatibility.
-     *
-     * @param QosPolicy $qosPolicy
-     */
-    public function setQosPolicy(QosPolicy $qosPolicy)
-    {
-    }
-    /**
-     * @return QosPolicy
-     */
-    public function getQosPolicy()
-    {
-    }
-    /**
-     * The possible state of VRF.
-     *
-     * Accepted values: STATE_UNSPECIFIED, PROVISIONING, PROVISIONED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * The list of VLAN attachments for the VRF.
-     *
-     * @param VlanAttachment[] $vlanAttachments
-     */
-    public function setVlanAttachments($vlanAttachments)
-    {
-    }
-    /**
-     * @return VlanAttachment[]
-     */
-    public function getVlanAttachments()
+    class Google_Service_Baremetalsolution_VRF extends \Google\Service\Baremetalsolution\VRF
     {
     }
 }

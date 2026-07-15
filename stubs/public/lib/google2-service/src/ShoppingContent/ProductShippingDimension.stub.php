@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ProductShippingDimension extends \Google\Model
-{
-    /**
-     * The unit of value.
-     *
-     * @var string
-     */
-    public $unit;
-    /**
-     * The dimension of the product used to calculate the shipping cost of the
-     * item.
-     *
-     * @var 
-     */
-    public $value;
-    /**
-     * The unit of value.
-     *
-     * @param string $unit
-     */
-    public function setUnit($unit)
+namespace Google\Service\ShoppingContent {
+    class ProductShippingDimension extends \Google\Model
     {
+        /**
+         * The unit of value.
+         *
+         * @var string
+         */
+        public $unit;
+        /**
+         * The dimension of the product used to calculate the shipping cost of the
+         * item.
+         *
+         * @var 
+         */
+        public $value;
+        /**
+         * The unit of value.
+         *
+         * @param string $unit
+         */
+        public function setUnit($unit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnit()
+        {
+        }
+        public function setValue($value)
+        {
+        }
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ProductShippingDimension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUnit()
-    {
-    }
-    public function setValue($value)
-    {
-    }
-    public function getValue()
+    class Google_Service_ShoppingContent_ProductShippingDimension extends \Google\Service\ShoppingContent\ProductShippingDimension
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class AnthosVMSubFeatureState extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $installationState;
-    protected $migrateStateType = MigrateState::class;
-    protected $migrateStateDataType = '';
-    protected $serviceMeshStateType = ServiceMeshState::class;
-    protected $serviceMeshStateDataType = '';
-    /**
-     * @param string
-     */
-    public function setDescription($description)
+namespace Google\Service\GKEHub {
+    class AnthosVMSubFeatureState extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $installationState;
+        protected $migrateStateType = MigrateState::class;
+        protected $migrateStateDataType = '';
+        protected $serviceMeshStateType = ServiceMeshState::class;
+        protected $serviceMeshStateDataType = '';
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInstallationState($installationState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstallationState()
+        {
+        }
+        /**
+         * @param MigrateState
+         */
+        public function setMigrateState(MigrateState $migrateState)
+        {
+        }
+        /**
+         * @return MigrateState
+         */
+        public function getMigrateState()
+        {
+        }
+        /**
+         * @param ServiceMeshState
+         */
+        public function setServiceMeshState(ServiceMeshState $serviceMeshState)
+        {
+        }
+        /**
+         * @return ServiceMeshState
+         */
+        public function getServiceMeshState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\AnthosVMSubFeatureState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInstallationState($installationState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstallationState()
-    {
-    }
-    /**
-     * @param MigrateState
-     */
-    public function setMigrateState(MigrateState $migrateState)
-    {
-    }
-    /**
-     * @return MigrateState
-     */
-    public function getMigrateState()
-    {
-    }
-    /**
-     * @param ServiceMeshState
-     */
-    public function setServiceMeshState(ServiceMeshState $serviceMeshState)
-    {
-    }
-    /**
-     * @return ServiceMeshState
-     */
-    public function getServiceMeshState()
+    class Google_Service_GKEHub_AnthosVMSubFeatureState extends \Google\Service\GKEHub\AnthosVMSubFeatureState
     {
     }
 }

@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class LintPolicyRequest extends \Google\Model
-{
-    protected $conditionType = Expr::class;
-    protected $conditionDataType = '';
-    public $condition;
-    /**
-     * @var string
-     */
-    public $fullResourceName;
-    /**
-     * @param Expr
-     */
-    public function setCondition(Expr $condition)
+namespace Google\Service\Iam {
+    class LintPolicyRequest extends \Google\Model
     {
+        protected $conditionType = Expr::class;
+        protected $conditionDataType = '';
+        public $condition;
+        /**
+         * @var string
+         */
+        public $fullResourceName;
+        /**
+         * @param Expr
+         */
+        public function setCondition(Expr $condition)
+        {
+        }
+        /**
+         * @return Expr
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFullResourceName($fullResourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Expr
+     * Runtime class alias of \Google\Service\Iam\LintPolicyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCondition()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFullResourceName($fullResourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFullResourceName()
+    class Google_Service_Iam_LintPolicyRequest extends \Google\Service\Iam\LintPolicyRequest
     {
     }
 }

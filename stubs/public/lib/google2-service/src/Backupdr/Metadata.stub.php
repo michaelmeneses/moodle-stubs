@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class Metadata extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = Entry::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Optional. Array of key/value pairs. The total size of all keys and values
-     * must be less than 512 KB.
-     *
-     * @param Entry[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Backupdr {
+    class Metadata extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = Entry::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Optional. Array of key/value pairs. The total size of all keys and values
+         * must be less than 512 KB.
+         *
+         * @param Entry[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Entry[]
+         */
+        public function getItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Entry[]
+     * Runtime class alias of \Google\Service\Backupdr\Metadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
+    class Google_Service_Backupdr_Metadata extends \Google\Service\Backupdr\Metadata
     {
     }
 }

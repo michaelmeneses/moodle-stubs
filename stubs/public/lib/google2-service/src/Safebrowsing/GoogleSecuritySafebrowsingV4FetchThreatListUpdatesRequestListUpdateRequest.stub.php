@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequest extends \Google\Model
-{
-    protected $constraintsType = GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequestConstraints::class;
-    protected $constraintsDataType = '';
-    /**
-     * @var string
-     */
-    public $platformType;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @var string
-     */
-    public $threatEntryType;
-    /**
-     * @var string
-     */
-    public $threatType;
-    /**
-     * @param GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequestConstraints
-     */
-    public function setConstraints(GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequestConstraints $constraints)
+namespace Google\Service\Safebrowsing {
+    class GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequest extends \Google\Model
     {
+        protected $constraintsType = GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequestConstraints::class;
+        protected $constraintsDataType = '';
+        /**
+         * @var string
+         */
+        public $platformType;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @var string
+         */
+        public $threatEntryType;
+        /**
+         * @var string
+         */
+        public $threatType;
+        /**
+         * @param GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequestConstraints
+         */
+        public function setConstraints(GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequestConstraints $constraints)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequestConstraints
+         */
+        public function getConstraints()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPlatformType($platformType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlatformType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setThreatEntryType($threatEntryType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThreatEntryType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setThreatType($threatType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThreatType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequestConstraints
+     * Runtime class alias of \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConstraints()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPlatformType($platformType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlatformType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setThreatEntryType($threatEntryType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThreatEntryType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setThreatType($threatType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThreatType()
+    class Google_Service_Safebrowsing_GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequest extends \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequest
     {
     }
 }

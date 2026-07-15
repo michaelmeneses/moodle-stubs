@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ScoreComponentRecommendationAction extends \Google\Model
-{
-    protected $actionContextType = GoogleCloudApigeeV1ScoreComponentRecommendationActionActionContext::class;
-    protected $actionContextDataType = '';
-    /**
-     * Description of the action.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Action context for the action.
-     *
-     * @param GoogleCloudApigeeV1ScoreComponentRecommendationActionActionContext $actionContext
-     */
-    public function setActionContext(GoogleCloudApigeeV1ScoreComponentRecommendationActionActionContext $actionContext)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ScoreComponentRecommendationAction extends \Google\Model
     {
+        protected $actionContextType = GoogleCloudApigeeV1ScoreComponentRecommendationActionActionContext::class;
+        protected $actionContextDataType = '';
+        /**
+         * Description of the action.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Action context for the action.
+         *
+         * @param GoogleCloudApigeeV1ScoreComponentRecommendationActionActionContext $actionContext
+         */
+        public function setActionContext(GoogleCloudApigeeV1ScoreComponentRecommendationActionActionContext $actionContext)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1ScoreComponentRecommendationActionActionContext
+         */
+        public function getActionContext()
+        {
+        }
+        /**
+         * Description of the action.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1ScoreComponentRecommendationActionActionContext
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ScoreComponentRecommendationAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionContext()
-    {
-    }
-    /**
-     * Description of the action.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ScoreComponentRecommendationAction extends \Google\Service\Apigee\GoogleCloudApigeeV1ScoreComponentRecommendationAction
     {
     }
 }

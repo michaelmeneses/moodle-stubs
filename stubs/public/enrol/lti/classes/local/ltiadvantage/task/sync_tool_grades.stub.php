@@ -22,6 +22,19 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace enrol_lti\local\ltiadvantage\task;
 
+use core\http_client;
+use core\task\adhoc_task;
+use enrol_lti\local\ltiadvantage\lib\issuer_database;
+use enrol_lti\local\ltiadvantage\lib\launch_cache_session;
+use enrol_lti\local\ltiadvantage\repository\application_registration_repository;
+use enrol_lti\local\ltiadvantage\repository\deployment_repository;
+use enrol_lti\local\ltiadvantage\repository\resource_link_repository;
+use enrol_lti\local\ltiadvantage\repository\user_repository;
+use Packback\Lti1p3\LtiAssignmentsGradesService;
+use Packback\Lti1p3\LtiGrade;
+use Packback\Lti1p3\LtiLineitem;
+use Packback\Lti1p3\LtiRegistration;
+use Packback\Lti1p3\LtiServiceConnector;
 /**
  * LTI Advantage task responsible for pushing grades to tool platforms.
  *

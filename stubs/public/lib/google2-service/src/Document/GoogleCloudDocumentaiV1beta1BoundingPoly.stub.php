@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta1BoundingPoly extends \Google\Collection
-{
-    protected $collection_key = 'vertices';
-    protected $normalizedVerticesType = GoogleCloudDocumentaiV1beta1NormalizedVertex::class;
-    protected $normalizedVerticesDataType = 'array';
-    protected $verticesType = GoogleCloudDocumentaiV1beta1Vertex::class;
-    protected $verticesDataType = 'array';
-    /**
-     * @param GoogleCloudDocumentaiV1beta1NormalizedVertex[]
-     */
-    public function setNormalizedVertices($normalizedVertices)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta1BoundingPoly extends \Google\Collection
     {
+        protected $collection_key = 'vertices';
+        protected $normalizedVerticesType = GoogleCloudDocumentaiV1beta1NormalizedVertex::class;
+        protected $normalizedVerticesDataType = 'array';
+        protected $verticesType = GoogleCloudDocumentaiV1beta1Vertex::class;
+        protected $verticesDataType = 'array';
+        /**
+         * @param GoogleCloudDocumentaiV1beta1NormalizedVertex[]
+         */
+        public function setNormalizedVertices($normalizedVertices)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1NormalizedVertex[]
+         */
+        public function getNormalizedVertices()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1Vertex[]
+         */
+        public function setVertices($vertices)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1Vertex[]
+         */
+        public function getVertices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1beta1NormalizedVertex[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta1BoundingPoly registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNormalizedVertices()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1Vertex[]
-     */
-    public function setVertices($vertices)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1Vertex[]
-     */
-    public function getVertices()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta1BoundingPoly extends \Google\Service\Document\GoogleCloudDocumentaiV1beta1BoundingPoly
     {
     }
 }

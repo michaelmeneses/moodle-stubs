@@ -21,270 +21,279 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class FilterAdvancedDetails extends \Google\Model
-{
-    /**
-     * Indicates if the filter expressions are case sensitive.
-     *
-     * @var bool
-     */
-    public $caseSensitive;
-    /**
-     * Expression to extract from field A.
-     *
-     * @var string
-     */
-    public $extractA;
-    /**
-     * Expression to extract from field B.
-     *
-     * @var string
-     */
-    public $extractB;
-    /**
-     * Field A.
-     *
-     * @var string
-     */
-    public $fieldA;
-    /**
-     * The Index of the custom dimension. Required if field is a CUSTOM_DIMENSION.
-     *
-     * @var int
-     */
-    public $fieldAIndex;
-    /**
-     * Indicates if field A is required to match.
-     *
-     * @var bool
-     */
-    public $fieldARequired;
-    /**
-     * Field B.
-     *
-     * @var string
-     */
-    public $fieldB;
-    /**
-     * The Index of the custom dimension. Required if field is a CUSTOM_DIMENSION.
-     *
-     * @var int
-     */
-    public $fieldBIndex;
-    /**
-     * Indicates if field B is required to match.
-     *
-     * @var bool
-     */
-    public $fieldBRequired;
-    /**
-     * Expression used to construct the output value.
-     *
-     * @var string
-     */
-    public $outputConstructor;
-    /**
-     * Output field.
-     *
-     * @var string
-     */
-    public $outputToField;
-    /**
-     * The Index of the custom dimension. Required if field is a CUSTOM_DIMENSION.
-     *
-     * @var int
-     */
-    public $outputToFieldIndex;
-    /**
-     * Indicates if the existing value of the output field, if any, should be
-     * overridden by the output expression.
-     *
-     * @var bool
-     */
-    public $overrideOutputField;
-    /**
-     * Indicates if the filter expressions are case sensitive.
-     *
-     * @param bool $caseSensitive
-     */
-    public function setCaseSensitive($caseSensitive)
+namespace Google\Service\Analytics {
+    class FilterAdvancedDetails extends \Google\Model
     {
+        /**
+         * Indicates if the filter expressions are case sensitive.
+         *
+         * @var bool
+         */
+        public $caseSensitive;
+        /**
+         * Expression to extract from field A.
+         *
+         * @var string
+         */
+        public $extractA;
+        /**
+         * Expression to extract from field B.
+         *
+         * @var string
+         */
+        public $extractB;
+        /**
+         * Field A.
+         *
+         * @var string
+         */
+        public $fieldA;
+        /**
+         * The Index of the custom dimension. Required if field is a CUSTOM_DIMENSION.
+         *
+         * @var int
+         */
+        public $fieldAIndex;
+        /**
+         * Indicates if field A is required to match.
+         *
+         * @var bool
+         */
+        public $fieldARequired;
+        /**
+         * Field B.
+         *
+         * @var string
+         */
+        public $fieldB;
+        /**
+         * The Index of the custom dimension. Required if field is a CUSTOM_DIMENSION.
+         *
+         * @var int
+         */
+        public $fieldBIndex;
+        /**
+         * Indicates if field B is required to match.
+         *
+         * @var bool
+         */
+        public $fieldBRequired;
+        /**
+         * Expression used to construct the output value.
+         *
+         * @var string
+         */
+        public $outputConstructor;
+        /**
+         * Output field.
+         *
+         * @var string
+         */
+        public $outputToField;
+        /**
+         * The Index of the custom dimension. Required if field is a CUSTOM_DIMENSION.
+         *
+         * @var int
+         */
+        public $outputToFieldIndex;
+        /**
+         * Indicates if the existing value of the output field, if any, should be
+         * overridden by the output expression.
+         *
+         * @var bool
+         */
+        public $overrideOutputField;
+        /**
+         * Indicates if the filter expressions are case sensitive.
+         *
+         * @param bool $caseSensitive
+         */
+        public function setCaseSensitive($caseSensitive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCaseSensitive()
+        {
+        }
+        /**
+         * Expression to extract from field A.
+         *
+         * @param string $extractA
+         */
+        public function setExtractA($extractA)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExtractA()
+        {
+        }
+        /**
+         * Expression to extract from field B.
+         *
+         * @param string $extractB
+         */
+        public function setExtractB($extractB)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExtractB()
+        {
+        }
+        /**
+         * Field A.
+         *
+         * @param string $fieldA
+         */
+        public function setFieldA($fieldA)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldA()
+        {
+        }
+        /**
+         * The Index of the custom dimension. Required if field is a CUSTOM_DIMENSION.
+         *
+         * @param int $fieldAIndex
+         */
+        public function setFieldAIndex($fieldAIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFieldAIndex()
+        {
+        }
+        /**
+         * Indicates if field A is required to match.
+         *
+         * @param bool $fieldARequired
+         */
+        public function setFieldARequired($fieldARequired)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFieldARequired()
+        {
+        }
+        /**
+         * Field B.
+         *
+         * @param string $fieldB
+         */
+        public function setFieldB($fieldB)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldB()
+        {
+        }
+        /**
+         * The Index of the custom dimension. Required if field is a CUSTOM_DIMENSION.
+         *
+         * @param int $fieldBIndex
+         */
+        public function setFieldBIndex($fieldBIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFieldBIndex()
+        {
+        }
+        /**
+         * Indicates if field B is required to match.
+         *
+         * @param bool $fieldBRequired
+         */
+        public function setFieldBRequired($fieldBRequired)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFieldBRequired()
+        {
+        }
+        /**
+         * Expression used to construct the output value.
+         *
+         * @param string $outputConstructor
+         */
+        public function setOutputConstructor($outputConstructor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputConstructor()
+        {
+        }
+        /**
+         * Output field.
+         *
+         * @param string $outputToField
+         */
+        public function setOutputToField($outputToField)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputToField()
+        {
+        }
+        /**
+         * The Index of the custom dimension. Required if field is a CUSTOM_DIMENSION.
+         *
+         * @param int $outputToFieldIndex
+         */
+        public function setOutputToFieldIndex($outputToFieldIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOutputToFieldIndex()
+        {
+        }
+        /**
+         * Indicates if the existing value of the output field, if any, should be
+         * overridden by the output expression.
+         *
+         * @param bool $overrideOutputField
+         */
+        public function setOverrideOutputField($overrideOutputField)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOverrideOutputField()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Analytics\FilterAdvancedDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaseSensitive()
-    {
-    }
-    /**
-     * Expression to extract from field A.
-     *
-     * @param string $extractA
-     */
-    public function setExtractA($extractA)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExtractA()
-    {
-    }
-    /**
-     * Expression to extract from field B.
-     *
-     * @param string $extractB
-     */
-    public function setExtractB($extractB)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExtractB()
-    {
-    }
-    /**
-     * Field A.
-     *
-     * @param string $fieldA
-     */
-    public function setFieldA($fieldA)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldA()
-    {
-    }
-    /**
-     * The Index of the custom dimension. Required if field is a CUSTOM_DIMENSION.
-     *
-     * @param int $fieldAIndex
-     */
-    public function setFieldAIndex($fieldAIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFieldAIndex()
-    {
-    }
-    /**
-     * Indicates if field A is required to match.
-     *
-     * @param bool $fieldARequired
-     */
-    public function setFieldARequired($fieldARequired)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getFieldARequired()
-    {
-    }
-    /**
-     * Field B.
-     *
-     * @param string $fieldB
-     */
-    public function setFieldB($fieldB)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldB()
-    {
-    }
-    /**
-     * The Index of the custom dimension. Required if field is a CUSTOM_DIMENSION.
-     *
-     * @param int $fieldBIndex
-     */
-    public function setFieldBIndex($fieldBIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFieldBIndex()
-    {
-    }
-    /**
-     * Indicates if field B is required to match.
-     *
-     * @param bool $fieldBRequired
-     */
-    public function setFieldBRequired($fieldBRequired)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getFieldBRequired()
-    {
-    }
-    /**
-     * Expression used to construct the output value.
-     *
-     * @param string $outputConstructor
-     */
-    public function setOutputConstructor($outputConstructor)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutputConstructor()
-    {
-    }
-    /**
-     * Output field.
-     *
-     * @param string $outputToField
-     */
-    public function setOutputToField($outputToField)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutputToField()
-    {
-    }
-    /**
-     * The Index of the custom dimension. Required if field is a CUSTOM_DIMENSION.
-     *
-     * @param int $outputToFieldIndex
-     */
-    public function setOutputToFieldIndex($outputToFieldIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getOutputToFieldIndex()
-    {
-    }
-    /**
-     * Indicates if the existing value of the output field, if any, should be
-     * overridden by the output expression.
-     *
-     * @param bool $overrideOutputField
-     */
-    public function setOverrideOutputField($overrideOutputField)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOverrideOutputField()
+    class Google_Service_Analytics_FilterAdvancedDetails extends \Google\Service\Analytics\FilterAdvancedDetails
     {
     }
 }

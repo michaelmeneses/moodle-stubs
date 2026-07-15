@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class QueryAccessibleDataRequest extends \Google\Model
-{
-    protected $gcsDestinationType = GoogleCloudHealthcareV1ConsentGcsDestination::class;
-    protected $gcsDestinationDataType = '';
-    /**
-     * The values of request attributes associated with this access request.
-     *
-     * @var string[]
-     */
-    public $requestAttributes;
-    /**
-     * Optional. The values of resource attributes associated with the type of
-     * resources being requested. If no values are specified, then all resource
-     * types are included in the output.
-     *
-     * @var string[]
-     */
-    public $resourceAttributes;
-    /**
-     * The Cloud Storage destination. The Cloud Healthcare API service account
-     * must have the `roles/storage.objectAdmin` Cloud IAM role for this Cloud
-     * Storage location.
-     *
-     * @param GoogleCloudHealthcareV1ConsentGcsDestination $gcsDestination
-     */
-    public function setGcsDestination(GoogleCloudHealthcareV1ConsentGcsDestination $gcsDestination)
+namespace Google\Service\CloudHealthcare {
+    class QueryAccessibleDataRequest extends \Google\Model
     {
+        protected $gcsDestinationType = GoogleCloudHealthcareV1ConsentGcsDestination::class;
+        protected $gcsDestinationDataType = '';
+        /**
+         * The values of request attributes associated with this access request.
+         *
+         * @var string[]
+         */
+        public $requestAttributes;
+        /**
+         * Optional. The values of resource attributes associated with the type of
+         * resources being requested. If no values are specified, then all resource
+         * types are included in the output.
+         *
+         * @var string[]
+         */
+        public $resourceAttributes;
+        /**
+         * The Cloud Storage destination. The Cloud Healthcare API service account
+         * must have the `roles/storage.objectAdmin` Cloud IAM role for this Cloud
+         * Storage location.
+         *
+         * @param GoogleCloudHealthcareV1ConsentGcsDestination $gcsDestination
+         */
+        public function setGcsDestination(GoogleCloudHealthcareV1ConsentGcsDestination $gcsDestination)
+        {
+        }
+        /**
+         * @return GoogleCloudHealthcareV1ConsentGcsDestination
+         */
+        public function getGcsDestination()
+        {
+        }
+        /**
+         * The values of request attributes associated with this access request.
+         *
+         * @param string[] $requestAttributes
+         */
+        public function setRequestAttributes($requestAttributes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRequestAttributes()
+        {
+        }
+        /**
+         * Optional. The values of resource attributes associated with the type of
+         * resources being requested. If no values are specified, then all resource
+         * types are included in the output.
+         *
+         * @param string[] $resourceAttributes
+         */
+        public function setResourceAttributes($resourceAttributes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceAttributes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudHealthcareV1ConsentGcsDestination
+     * Runtime class alias of \Google\Service\CloudHealthcare\QueryAccessibleDataRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsDestination()
-    {
-    }
-    /**
-     * The values of request attributes associated with this access request.
-     *
-     * @param string[] $requestAttributes
-     */
-    public function setRequestAttributes($requestAttributes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRequestAttributes()
-    {
-    }
-    /**
-     * Optional. The values of resource attributes associated with the type of
-     * resources being requested. If no values are specified, then all resource
-     * types are included in the output.
-     *
-     * @param string[] $resourceAttributes
-     */
-    public function setResourceAttributes($resourceAttributes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResourceAttributes()
+    class Google_Service_CloudHealthcare_QueryAccessibleDataRequest extends \Google\Service\CloudHealthcare\QueryAccessibleDataRequest
     {
     }
 }

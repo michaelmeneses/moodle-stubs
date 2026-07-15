@@ -21,122 +21,131 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class BucketStorageLayout extends \Google\Model
-{
-    /**
-     * The name of the bucket.
-     *
-     * @var string
-     */
-    public $bucket;
-    protected $customPlacementConfigType = BucketStorageLayoutCustomPlacementConfig::class;
-    protected $customPlacementConfigDataType = '';
-    protected $hierarchicalNamespaceType = BucketStorageLayoutHierarchicalNamespace::class;
-    protected $hierarchicalNamespaceDataType = '';
-    /**
-     * The kind of item this is. For storage layout, this is always
-     * storage#storageLayout.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The location of the bucket.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * The type of the bucket location.
-     *
-     * @var string
-     */
-    public $locationType;
-    /**
-     * The name of the bucket.
-     *
-     * @param string $bucket
-     */
-    public function setBucket($bucket)
+namespace Google\Service\Storage {
+    class BucketStorageLayout extends \Google\Model
     {
+        /**
+         * The name of the bucket.
+         *
+         * @var string
+         */
+        public $bucket;
+        protected $customPlacementConfigType = BucketStorageLayoutCustomPlacementConfig::class;
+        protected $customPlacementConfigDataType = '';
+        protected $hierarchicalNamespaceType = BucketStorageLayoutHierarchicalNamespace::class;
+        protected $hierarchicalNamespaceDataType = '';
+        /**
+         * The kind of item this is. For storage layout, this is always
+         * storage#storageLayout.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The location of the bucket.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * The type of the bucket location.
+         *
+         * @var string
+         */
+        public $locationType;
+        /**
+         * The name of the bucket.
+         *
+         * @param string $bucket
+         */
+        public function setBucket($bucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucket()
+        {
+        }
+        /**
+         * The bucket's custom placement configuration for Custom Dual Regions.
+         *
+         * @param BucketStorageLayoutCustomPlacementConfig $customPlacementConfig
+         */
+        public function setCustomPlacementConfig(BucketStorageLayoutCustomPlacementConfig $customPlacementConfig)
+        {
+        }
+        /**
+         * @return BucketStorageLayoutCustomPlacementConfig
+         */
+        public function getCustomPlacementConfig()
+        {
+        }
+        /**
+         * The bucket's hierarchical namespace configuration.
+         *
+         * @param BucketStorageLayoutHierarchicalNamespace $hierarchicalNamespace
+         */
+        public function setHierarchicalNamespace(BucketStorageLayoutHierarchicalNamespace $hierarchicalNamespace)
+        {
+        }
+        /**
+         * @return BucketStorageLayoutHierarchicalNamespace
+         */
+        public function getHierarchicalNamespace()
+        {
+        }
+        /**
+         * The kind of item this is. For storage layout, this is always
+         * storage#storageLayout.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The location of the bucket.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The type of the bucket location.
+         *
+         * @param string $locationType
+         */
+        public function setLocationType($locationType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocationType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storage\BucketStorageLayout registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucket()
-    {
-    }
-    /**
-     * The bucket's custom placement configuration for Custom Dual Regions.
-     *
-     * @param BucketStorageLayoutCustomPlacementConfig $customPlacementConfig
-     */
-    public function setCustomPlacementConfig(BucketStorageLayoutCustomPlacementConfig $customPlacementConfig)
-    {
-    }
-    /**
-     * @return BucketStorageLayoutCustomPlacementConfig
-     */
-    public function getCustomPlacementConfig()
-    {
-    }
-    /**
-     * The bucket's hierarchical namespace configuration.
-     *
-     * @param BucketStorageLayoutHierarchicalNamespace $hierarchicalNamespace
-     */
-    public function setHierarchicalNamespace(BucketStorageLayoutHierarchicalNamespace $hierarchicalNamespace)
-    {
-    }
-    /**
-     * @return BucketStorageLayoutHierarchicalNamespace
-     */
-    public function getHierarchicalNamespace()
-    {
-    }
-    /**
-     * The kind of item this is. For storage layout, this is always
-     * storage#storageLayout.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The location of the bucket.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * The type of the bucket location.
-     *
-     * @param string $locationType
-     */
-    public function setLocationType($locationType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocationType()
+    class Google_Service_Storage_BucketStorageLayout extends \Google\Service\Storage\BucketStorageLayout
     {
     }
 }

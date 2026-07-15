@@ -21,291 +21,300 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1Execution extends \Google\Model
-{
-    /**
-     * Unspecified Execution state
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The Execution is new
-     */
-    public const STATE_NEW = 'NEW';
-    /**
-     * The Execution is running
-     */
-    public const STATE_RUNNING = 'RUNNING';
-    /**
-     * The Execution has finished running
-     */
-    public const STATE_COMPLETE = 'COMPLETE';
-    /**
-     * The Execution has failed
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * The Execution completed through Cache hit.
-     */
-    public const STATE_CACHED = 'CACHED';
-    /**
-     * The Execution was cancelled.
-     */
-    public const STATE_CANCELLED = 'CANCELLED';
-    /**
-     * Output only. Timestamp when this Execution was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Description of the Execution
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * User provided display name of the Execution. May be up to 128 Unicode
-     * characters.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * An eTag used to perform consistent read-modify-write updates. If not set, a
-     * blind "overwrite" update happens.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The labels with user-defined metadata to organize your Executions. Label
-     * keys and values can be no longer than 64 characters (Unicode codepoints),
-     * can only contain lowercase letters, numeric characters, underscores and
-     * dashes. International characters are allowed. No more than 64 user labels
-     * can be associated with one Execution (System labels are excluded).
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Properties of the Execution. Top level metadata keys' heading and trailing
-     * spaces will be trimmed. The size of this field should not exceed 200KB.
-     *
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * Output only. The resource name of the Execution.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The title of the schema describing the metadata. Schema title and version
-     * is expected to be registered in earlier Create Schema calls. And both are
-     * used together as unique identifiers to identify schemas within the local
-     * metadata store.
-     *
-     * @var string
-     */
-    public $schemaTitle;
-    /**
-     * The version of the schema in `schema_title` to use. Schema title and
-     * version is expected to be registered in earlier Create Schema calls. And
-     * both are used together as unique identifiers to identify schemas within the
-     * local metadata store.
-     *
-     * @var string
-     */
-    public $schemaVersion;
-    /**
-     * The state of this Execution. This is a property of the Execution, and does
-     * not imply or capture any ongoing process. This property is managed by
-     * clients (such as Vertex AI Pipelines) and the system does not prescribe or
-     * check the validity of state transitions.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. Timestamp when this Execution was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Timestamp when this Execution was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1Execution extends \Google\Model
     {
+        /**
+         * Unspecified Execution state
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The Execution is new
+         */
+        public const STATE_NEW = 'NEW';
+        /**
+         * The Execution is running
+         */
+        public const STATE_RUNNING = 'RUNNING';
+        /**
+         * The Execution has finished running
+         */
+        public const STATE_COMPLETE = 'COMPLETE';
+        /**
+         * The Execution has failed
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * The Execution completed through Cache hit.
+         */
+        public const STATE_CACHED = 'CACHED';
+        /**
+         * The Execution was cancelled.
+         */
+        public const STATE_CANCELLED = 'CANCELLED';
+        /**
+         * Output only. Timestamp when this Execution was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Description of the Execution
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * User provided display name of the Execution. May be up to 128 Unicode
+         * characters.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * An eTag used to perform consistent read-modify-write updates. If not set, a
+         * blind "overwrite" update happens.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The labels with user-defined metadata to organize your Executions. Label
+         * keys and values can be no longer than 64 characters (Unicode codepoints),
+         * can only contain lowercase letters, numeric characters, underscores and
+         * dashes. International characters are allowed. No more than 64 user labels
+         * can be associated with one Execution (System labels are excluded).
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Properties of the Execution. Top level metadata keys' heading and trailing
+         * spaces will be trimmed. The size of this field should not exceed 200KB.
+         *
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * Output only. The resource name of the Execution.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The title of the schema describing the metadata. Schema title and version
+         * is expected to be registered in earlier Create Schema calls. And both are
+         * used together as unique identifiers to identify schemas within the local
+         * metadata store.
+         *
+         * @var string
+         */
+        public $schemaTitle;
+        /**
+         * The version of the schema in `schema_title` to use. Schema title and
+         * version is expected to be registered in earlier Create Schema calls. And
+         * both are used together as unique identifiers to identify schemas within the
+         * local metadata store.
+         *
+         * @var string
+         */
+        public $schemaVersion;
+        /**
+         * The state of this Execution. This is a property of the Execution, and does
+         * not imply or capture any ongoing process. This property is managed by
+         * clients (such as Vertex AI Pipelines) and the system does not prescribe or
+         * check the validity of state transitions.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. Timestamp when this Execution was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Timestamp when this Execution was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Description of the Execution
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * User provided display name of the Execution. May be up to 128 Unicode
+         * characters.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * An eTag used to perform consistent read-modify-write updates. If not set, a
+         * blind "overwrite" update happens.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The labels with user-defined metadata to organize your Executions. Label
+         * keys and values can be no longer than 64 characters (Unicode codepoints),
+         * can only contain lowercase letters, numeric characters, underscores and
+         * dashes. International characters are allowed. No more than 64 user labels
+         * can be associated with one Execution (System labels are excluded).
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Properties of the Execution. Top level metadata keys' heading and trailing
+         * spaces will be trimmed. The size of this field should not exceed 200KB.
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Output only. The resource name of the Execution.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The title of the schema describing the metadata. Schema title and version
+         * is expected to be registered in earlier Create Schema calls. And both are
+         * used together as unique identifiers to identify schemas within the local
+         * metadata store.
+         *
+         * @param string $schemaTitle
+         */
+        public function setSchemaTitle($schemaTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchemaTitle()
+        {
+        }
+        /**
+         * The version of the schema in `schema_title` to use. Schema title and
+         * version is expected to be registered in earlier Create Schema calls. And
+         * both are used together as unique identifiers to identify schemas within the
+         * local metadata store.
+         *
+         * @param string $schemaVersion
+         */
+        public function setSchemaVersion($schemaVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchemaVersion()
+        {
+        }
+        /**
+         * The state of this Execution. This is a property of the Execution, and does
+         * not imply or capture any ongoing process. This property is managed by
+         * clients (such as Vertex AI Pipelines) and the system does not prescribe or
+         * check the validity of state transitions.
+         *
+         * Accepted values: STATE_UNSPECIFIED, NEW, RUNNING, COMPLETE, FAILED, CACHED,
+         * CANCELLED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. Timestamp when this Execution was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1Execution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Description of the Execution
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * User provided display name of the Execution. May be up to 128 Unicode
-     * characters.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * An eTag used to perform consistent read-modify-write updates. If not set, a
-     * blind "overwrite" update happens.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * The labels with user-defined metadata to organize your Executions. Label
-     * keys and values can be no longer than 64 characters (Unicode codepoints),
-     * can only contain lowercase letters, numeric characters, underscores and
-     * dashes. International characters are allowed. No more than 64 user labels
-     * can be associated with one Execution (System labels are excluded).
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Properties of the Execution. Top level metadata keys' heading and trailing
-     * spaces will be trimmed. The size of this field should not exceed 200KB.
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Output only. The resource name of the Execution.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The title of the schema describing the metadata. Schema title and version
-     * is expected to be registered in earlier Create Schema calls. And both are
-     * used together as unique identifiers to identify schemas within the local
-     * metadata store.
-     *
-     * @param string $schemaTitle
-     */
-    public function setSchemaTitle($schemaTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchemaTitle()
-    {
-    }
-    /**
-     * The version of the schema in `schema_title` to use. Schema title and
-     * version is expected to be registered in earlier Create Schema calls. And
-     * both are used together as unique identifiers to identify schemas within the
-     * local metadata store.
-     *
-     * @param string $schemaVersion
-     */
-    public function setSchemaVersion($schemaVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchemaVersion()
-    {
-    }
-    /**
-     * The state of this Execution. This is a property of the Execution, and does
-     * not imply or capture any ongoing process. This property is managed by
-     * clients (such as Vertex AI Pipelines) and the system does not prescribe or
-     * check the validity of state transitions.
-     *
-     * Accepted values: STATE_UNSPECIFIED, NEW, RUNNING, COMPLETE, FAILED, CACHED,
-     * CANCELLED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. Timestamp when this Execution was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1Execution extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1Execution
     {
     }
 }

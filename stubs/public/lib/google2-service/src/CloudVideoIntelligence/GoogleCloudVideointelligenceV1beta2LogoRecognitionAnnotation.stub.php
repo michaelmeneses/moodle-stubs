@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1beta2LogoRecognitionAnnotation extends \Google\Collection
-{
-    protected $collection_key = 'tracks';
-    protected $entityType = GoogleCloudVideointelligenceV1beta2Entity::class;
-    protected $entityDataType = '';
-    protected $segmentsType = GoogleCloudVideointelligenceV1beta2VideoSegment::class;
-    protected $segmentsDataType = 'array';
-    protected $tracksType = GoogleCloudVideointelligenceV1beta2Track::class;
-    protected $tracksDataType = 'array';
-    /**
-     * Entity category information to specify the logo class that all the logo
-     * tracks within this LogoRecognitionAnnotation are recognized as.
-     *
-     * @param GoogleCloudVideointelligenceV1beta2Entity $entity
-     */
-    public function setEntity(GoogleCloudVideointelligenceV1beta2Entity $entity)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1beta2LogoRecognitionAnnotation extends \Google\Collection
     {
+        protected $collection_key = 'tracks';
+        protected $entityType = GoogleCloudVideointelligenceV1beta2Entity::class;
+        protected $entityDataType = '';
+        protected $segmentsType = GoogleCloudVideointelligenceV1beta2VideoSegment::class;
+        protected $segmentsDataType = 'array';
+        protected $tracksType = GoogleCloudVideointelligenceV1beta2Track::class;
+        protected $tracksDataType = 'array';
+        /**
+         * Entity category information to specify the logo class that all the logo
+         * tracks within this LogoRecognitionAnnotation are recognized as.
+         *
+         * @param GoogleCloudVideointelligenceV1beta2Entity $entity
+         */
+        public function setEntity(GoogleCloudVideointelligenceV1beta2Entity $entity)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1beta2Entity
+         */
+        public function getEntity()
+        {
+        }
+        /**
+         * All video segments where the recognized logo appears. There might be
+         * multiple instances of the same logo class appearing in one VideoSegment.
+         *
+         * @param GoogleCloudVideointelligenceV1beta2VideoSegment[] $segments
+         */
+        public function setSegments($segments)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1beta2VideoSegment[]
+         */
+        public function getSegments()
+        {
+        }
+        /**
+         * All logo tracks where the recognized logo appears. Each track corresponds
+         * to one logo instance appearing in consecutive frames.
+         *
+         * @param GoogleCloudVideointelligenceV1beta2Track[] $tracks
+         */
+        public function setTracks($tracks)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1beta2Track[]
+         */
+        public function getTracks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVideointelligenceV1beta2Entity
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1beta2LogoRecognitionAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntity()
-    {
-    }
-    /**
-     * All video segments where the recognized logo appears. There might be
-     * multiple instances of the same logo class appearing in one VideoSegment.
-     *
-     * @param GoogleCloudVideointelligenceV1beta2VideoSegment[] $segments
-     */
-    public function setSegments($segments)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1beta2VideoSegment[]
-     */
-    public function getSegments()
-    {
-    }
-    /**
-     * All logo tracks where the recognized logo appears. Each track corresponds
-     * to one logo instance appearing in consecutive frames.
-     *
-     * @param GoogleCloudVideointelligenceV1beta2Track[] $tracks
-     */
-    public function setTracks($tracks)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1beta2Track[]
-     */
-    public function getTracks()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1beta2LogoRecognitionAnnotation extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1beta2LogoRecognitionAnnotation
     {
     }
 }

@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class BatchDeleteVersionsMetadata extends \Google\Collection
-{
-    protected $collection_key = 'failedVersions';
-    /**
-     * The versions the operation failed to delete.
-     *
-     * @var string[]
-     */
-    public $failedVersions;
-    /**
-     * The versions the operation failed to delete.
-     *
-     * @param string[] $failedVersions
-     */
-    public function setFailedVersions($failedVersions)
+namespace Google\Service\ArtifactRegistry {
+    class BatchDeleteVersionsMetadata extends \Google\Collection
     {
+        protected $collection_key = 'failedVersions';
+        /**
+         * The versions the operation failed to delete.
+         *
+         * @var string[]
+         */
+        public $failedVersions;
+        /**
+         * The versions the operation failed to delete.
+         *
+         * @param string[] $failedVersions
+         */
+        public function setFailedVersions($failedVersions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFailedVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ArtifactRegistry\BatchDeleteVersionsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailedVersions()
+    class Google_Service_ArtifactRegistry_BatchDeleteVersionsMetadata extends \Google\Service\ArtifactRegistry\BatchDeleteVersionsMetadata
     {
     }
 }

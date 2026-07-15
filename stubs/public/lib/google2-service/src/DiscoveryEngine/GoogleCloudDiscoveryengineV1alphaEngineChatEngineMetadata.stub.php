@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaEngineChatEngineMetadata extends \Google\Model
-{
-    /**
-     * The resource name of a Dialogflow agent, that this Chat Engine refers to.
-     * Format: `projects//locations//agents/`.
-     *
-     * @var string
-     */
-    public $dialogflowAgent;
-    /**
-     * The resource name of a Dialogflow agent, that this Chat Engine refers to.
-     * Format: `projects//locations//agents/`.
-     *
-     * @param string $dialogflowAgent
-     */
-    public function setDialogflowAgent($dialogflowAgent)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaEngineChatEngineMetadata extends \Google\Model
     {
+        /**
+         * The resource name of a Dialogflow agent, that this Chat Engine refers to.
+         * Format: `projects//locations//agents/`.
+         *
+         * @var string
+         */
+        public $dialogflowAgent;
+        /**
+         * The resource name of a Dialogflow agent, that this Chat Engine refers to.
+         * Format: `projects//locations//agents/`.
+         *
+         * @param string $dialogflowAgent
+         */
+        public function setDialogflowAgent($dialogflowAgent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDialogflowAgent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaEngineChatEngineMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDialogflowAgent()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaEngineChatEngineMetadata extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaEngineChatEngineMetadata
     {
     }
 }

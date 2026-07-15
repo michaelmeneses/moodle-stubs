@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class ManagedZoneServiceDirectoryConfigNamespace extends \Google\Model
-{
-    /**
-     * The time that the namespace backing this zone was deleted; an empty string
-     * if it still exists. This is in RFC3339 text format. Output only.
-     *
-     * @var string
-     */
-    public $deletionTime;
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * The fully qualified URL of the namespace associated with the zone. Format
-     * must be `https://servicedirectory.googleapis.com/v1/projects/{project}/loca
-     * tions/{location}/namespaces/{namespace}`
-     *
-     * @var string
-     */
-    public $namespaceUrl;
-    /**
-     * The time that the namespace backing this zone was deleted; an empty string
-     * if it still exists. This is in RFC3339 text format. Output only.
-     *
-     * @param string $deletionTime
-     */
-    public function setDeletionTime($deletionTime)
+namespace Google\Service\Dns {
+    class ManagedZoneServiceDirectoryConfigNamespace extends \Google\Model
     {
+        /**
+         * The time that the namespace backing this zone was deleted; an empty string
+         * if it still exists. This is in RFC3339 text format. Output only.
+         *
+         * @var string
+         */
+        public $deletionTime;
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * The fully qualified URL of the namespace associated with the zone. Format
+         * must be `https://servicedirectory.googleapis.com/v1/projects/{project}/loca
+         * tions/{location}/namespaces/{namespace}`
+         *
+         * @var string
+         */
+        public $namespaceUrl;
+        /**
+         * The time that the namespace backing this zone was deleted; an empty string
+         * if it still exists. This is in RFC3339 text format. Output only.
+         *
+         * @param string $deletionTime
+         */
+        public function setDeletionTime($deletionTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeletionTime()
+        {
+        }
+        /**
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The fully qualified URL of the namespace associated with the zone. Format
+         * must be `https://servicedirectory.googleapis.com/v1/projects/{project}/loca
+         * tions/{location}/namespaces/{namespace}`
+         *
+         * @param string $namespaceUrl
+         */
+        public function setNamespaceUrl($namespaceUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNamespaceUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dns\ManagedZoneServiceDirectoryConfigNamespace registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeletionTime()
-    {
-    }
-    /**
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The fully qualified URL of the namespace associated with the zone. Format
-     * must be `https://servicedirectory.googleapis.com/v1/projects/{project}/loca
-     * tions/{location}/namespaces/{namespace}`
-     *
-     * @param string $namespaceUrl
-     */
-    public function setNamespaceUrl($namespaceUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNamespaceUrl()
+    class Google_Service_Dns_ManagedZoneServiceDirectoryConfigNamespace extends \Google\Service\Dns\ManagedZoneServiceDirectoryConfigNamespace
     {
     }
 }

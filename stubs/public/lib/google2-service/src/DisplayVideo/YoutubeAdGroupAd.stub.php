@@ -21,231 +21,240 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class YoutubeAdGroupAd extends \Google\Collection
-{
-    protected $collection_key = 'adUrls';
-    /**
-     * @var string
-     */
-    public $adGroupAdId;
-    /**
-     * @var string
-     */
-    public $adGroupId;
-    protected $adUrlsType = AdUrl::class;
-    protected $adUrlsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $advertiserId;
-    protected $audioAdType = AudioAd::class;
-    protected $audioAdDataType = '';
-    protected $bumperAdType = BumperAd::class;
-    protected $bumperAdDataType = '';
-    /**
-     * @var string
-     */
-    public $displayName;
-    protected $displayVideoSourceAdType = DisplayVideoSourceAd::class;
-    protected $displayVideoSourceAdDataType = '';
-    /**
-     * @var string
-     */
-    public $entityStatus;
-    protected $inStreamAdType = InStreamAd::class;
-    protected $inStreamAdDataType = '';
-    protected $mastheadAdType = MastheadAd::class;
-    protected $mastheadAdDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    protected $nonSkippableAdType = NonSkippableAd::class;
-    protected $nonSkippableAdDataType = '';
-    protected $videoDiscoverAdType = VideoDiscoveryAd::class;
-    protected $videoDiscoverAdDataType = '';
-    protected $videoPerformanceAdType = VideoPerformanceAd::class;
-    protected $videoPerformanceAdDataType = '';
-    /**
-     * @param string
-     */
-    public function setAdGroupAdId($adGroupAdId)
+namespace Google\Service\DisplayVideo {
+    class YoutubeAdGroupAd extends \Google\Collection
     {
+        protected $collection_key = 'adUrls';
+        /**
+         * @var string
+         */
+        public $adGroupAdId;
+        /**
+         * @var string
+         */
+        public $adGroupId;
+        protected $adUrlsType = AdUrl::class;
+        protected $adUrlsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $advertiserId;
+        protected $audioAdType = AudioAd::class;
+        protected $audioAdDataType = '';
+        protected $bumperAdType = BumperAd::class;
+        protected $bumperAdDataType = '';
+        /**
+         * @var string
+         */
+        public $displayName;
+        protected $displayVideoSourceAdType = DisplayVideoSourceAd::class;
+        protected $displayVideoSourceAdDataType = '';
+        /**
+         * @var string
+         */
+        public $entityStatus;
+        protected $inStreamAdType = InStreamAd::class;
+        protected $inStreamAdDataType = '';
+        protected $mastheadAdType = MastheadAd::class;
+        protected $mastheadAdDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        protected $nonSkippableAdType = NonSkippableAd::class;
+        protected $nonSkippableAdDataType = '';
+        protected $videoDiscoverAdType = VideoDiscoveryAd::class;
+        protected $videoDiscoverAdDataType = '';
+        protected $videoPerformanceAdType = VideoPerformanceAd::class;
+        protected $videoPerformanceAdDataType = '';
+        /**
+         * @param string
+         */
+        public function setAdGroupAdId($adGroupAdId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdGroupAdId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAdGroupId($adGroupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdGroupId()
+        {
+        }
+        /**
+         * @param AdUrl[]
+         */
+        public function setAdUrls($adUrls)
+        {
+        }
+        /**
+         * @return AdUrl[]
+         */
+        public function getAdUrls()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAdvertiserId($advertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserId()
+        {
+        }
+        /**
+         * @param AudioAd
+         */
+        public function setAudioAd(AudioAd $audioAd)
+        {
+        }
+        /**
+         * @return AudioAd
+         */
+        public function getAudioAd()
+        {
+        }
+        /**
+         * @param BumperAd
+         */
+        public function setBumperAd(BumperAd $bumperAd)
+        {
+        }
+        /**
+         * @return BumperAd
+         */
+        public function getBumperAd()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param DisplayVideoSourceAd
+         */
+        public function setDisplayVideoSourceAd(DisplayVideoSourceAd $displayVideoSourceAd)
+        {
+        }
+        /**
+         * @return DisplayVideoSourceAd
+         */
+        public function getDisplayVideoSourceAd()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEntityStatus($entityStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityStatus()
+        {
+        }
+        /**
+         * @param InStreamAd
+         */
+        public function setInStreamAd(InStreamAd $inStreamAd)
+        {
+        }
+        /**
+         * @return InStreamAd
+         */
+        public function getInStreamAd()
+        {
+        }
+        /**
+         * @param MastheadAd
+         */
+        public function setMastheadAd(MastheadAd $mastheadAd)
+        {
+        }
+        /**
+         * @return MastheadAd
+         */
+        public function getMastheadAd()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param NonSkippableAd
+         */
+        public function setNonSkippableAd(NonSkippableAd $nonSkippableAd)
+        {
+        }
+        /**
+         * @return NonSkippableAd
+         */
+        public function getNonSkippableAd()
+        {
+        }
+        /**
+         * @param VideoDiscoveryAd
+         */
+        public function setVideoDiscoverAd(VideoDiscoveryAd $videoDiscoverAd)
+        {
+        }
+        /**
+         * @return VideoDiscoveryAd
+         */
+        public function getVideoDiscoverAd()
+        {
+        }
+        /**
+         * @param VideoPerformanceAd
+         */
+        public function setVideoPerformanceAd(VideoPerformanceAd $videoPerformanceAd)
+        {
+        }
+        /**
+         * @return VideoPerformanceAd
+         */
+        public function getVideoPerformanceAd()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\YoutubeAdGroupAd registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdGroupAdId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAdGroupId($adGroupId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAdGroupId()
-    {
-    }
-    /**
-     * @param AdUrl[]
-     */
-    public function setAdUrls($adUrls)
-    {
-    }
-    /**
-     * @return AdUrl[]
-     */
-    public function getAdUrls()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAdvertiserId($advertiserId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAdvertiserId()
-    {
-    }
-    /**
-     * @param AudioAd
-     */
-    public function setAudioAd(AudioAd $audioAd)
-    {
-    }
-    /**
-     * @return AudioAd
-     */
-    public function getAudioAd()
-    {
-    }
-    /**
-     * @param BumperAd
-     */
-    public function setBumperAd(BumperAd $bumperAd)
-    {
-    }
-    /**
-     * @return BumperAd
-     */
-    public function getBumperAd()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param DisplayVideoSourceAd
-     */
-    public function setDisplayVideoSourceAd(DisplayVideoSourceAd $displayVideoSourceAd)
-    {
-    }
-    /**
-     * @return DisplayVideoSourceAd
-     */
-    public function getDisplayVideoSourceAd()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEntityStatus($entityStatus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntityStatus()
-    {
-    }
-    /**
-     * @param InStreamAd
-     */
-    public function setInStreamAd(InStreamAd $inStreamAd)
-    {
-    }
-    /**
-     * @return InStreamAd
-     */
-    public function getInStreamAd()
-    {
-    }
-    /**
-     * @param MastheadAd
-     */
-    public function setMastheadAd(MastheadAd $mastheadAd)
-    {
-    }
-    /**
-     * @return MastheadAd
-     */
-    public function getMastheadAd()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param NonSkippableAd
-     */
-    public function setNonSkippableAd(NonSkippableAd $nonSkippableAd)
-    {
-    }
-    /**
-     * @return NonSkippableAd
-     */
-    public function getNonSkippableAd()
-    {
-    }
-    /**
-     * @param VideoDiscoveryAd
-     */
-    public function setVideoDiscoverAd(VideoDiscoveryAd $videoDiscoverAd)
-    {
-    }
-    /**
-     * @return VideoDiscoveryAd
-     */
-    public function getVideoDiscoverAd()
-    {
-    }
-    /**
-     * @param VideoPerformanceAd
-     */
-    public function setVideoPerformanceAd(VideoPerformanceAd $videoPerformanceAd)
-    {
-    }
-    /**
-     * @return VideoPerformanceAd
-     */
-    public function getVideoPerformanceAd()
+    class Google_Service_DisplayVideo_YoutubeAdGroupAd extends \Google\Service\DisplayVideo\YoutubeAdGroupAd
     {
     }
 }

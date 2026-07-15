@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class DimensionValueList extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * The eTag of this response for caching purposes.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $itemsType = DimensionValue::class;
-    protected $itemsDataType = 'array';
-    /**
-     * The kind of list this is, in this case dfareporting#dimensionValueList.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Continuation token used to page through dimension values. To retrieve the
-     * next page of results, set the next request's "pageToken" to the value of
-     * this field. The page token is only valid for a limited amount of time and
-     * should not be persisted.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The eTag of this response for caching purposes.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Dfareporting {
+    class DimensionValueList extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * The eTag of this response for caching purposes.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $itemsType = DimensionValue::class;
+        protected $itemsDataType = 'array';
+        /**
+         * The kind of list this is, in this case dfareporting#dimensionValueList.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Continuation token used to page through dimension values. To retrieve the
+         * next page of results, set the next request's "pageToken" to the value of
+         * this field. The page token is only valid for a limited amount of time and
+         * should not be persisted.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The eTag of this response for caching purposes.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The dimension values returned in this response.
+         *
+         * @param DimensionValue[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return DimensionValue[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * The kind of list this is, in this case dfareporting#dimensionValueList.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Continuation token used to page through dimension values. To retrieve the
+         * next page of results, set the next request's "pageToken" to the value of
+         * this field. The page token is only valid for a limited amount of time and
+         * should not be persisted.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\DimensionValueList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * The dimension values returned in this response.
-     *
-     * @param DimensionValue[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return DimensionValue[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * The kind of list this is, in this case dfareporting#dimensionValueList.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Continuation token used to page through dimension values. To retrieve the
-     * next page of results, set the next request's "pageToken" to the value of
-     * this field. The page token is only valid for a limited amount of time and
-     * should not be persisted.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dfareporting_DimensionValueList extends \Google\Service\Dfareporting\DimensionValueList
     {
     }
 }

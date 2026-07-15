@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ApiKeysService;
-
-class V2ListKeysResponse extends \Google\Collection
-{
-    protected $collection_key = 'keys';
-    protected $keysType = V2Key::class;
-    protected $keysDataType = 'array';
-    /**
-     * The pagination token for the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of API keys.
-     *
-     * @param V2Key[] $keys
-     */
-    public function setKeys($keys)
+namespace Google\Service\ApiKeysService {
+    class V2ListKeysResponse extends \Google\Collection
     {
+        protected $collection_key = 'keys';
+        protected $keysType = V2Key::class;
+        protected $keysDataType = 'array';
+        /**
+         * The pagination token for the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of API keys.
+         *
+         * @param V2Key[] $keys
+         */
+        public function setKeys($keys)
+        {
+        }
+        /**
+         * @return V2Key[]
+         */
+        public function getKeys()
+        {
+        }
+        /**
+         * The pagination token for the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return V2Key[]
+     * Runtime class alias of \Google\Service\ApiKeysService\V2ListKeysResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeys()
-    {
-    }
-    /**
-     * The pagination token for the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_ApiKeysService_V2ListKeysResponse extends \Google\Service\ApiKeysService\V2ListKeysResponse
     {
     }
 }

@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class FetchStorageInventoryResponse extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    /**
-     * Output only. A token, which can be sent as `page_token` to retrieve the
-     * next page. If this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resourcesType = SourceStorageResource::class;
-    protected $resourcesDataType = 'array';
-    /**
-     * Output only. The timestamp when the source was last queried (if the result
-     * is from the cache).
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. A token, which can be sent as `page_token` to retrieve the
-     * next page. If this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\VMMigrationService {
+    class FetchStorageInventoryResponse extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        /**
+         * Output only. A token, which can be sent as `page_token` to retrieve the
+         * next page. If this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resourcesType = SourceStorageResource::class;
+        protected $resourcesDataType = 'array';
+        /**
+         * Output only. The timestamp when the source was last queried (if the result
+         * is from the cache).
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. A token, which can be sent as `page_token` to retrieve the
+         * next page. If this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of storage resources in the source.
+         *
+         * @param SourceStorageResource[] $resources
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return SourceStorageResource[]
+         */
+        public function getResources()
+        {
+        }
+        /**
+         * Output only. The timestamp when the source was last queried (if the result
+         * is from the cache).
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\FetchStorageInventoryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of storage resources in the source.
-     *
-     * @param SourceStorageResource[] $resources
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return SourceStorageResource[]
-     */
-    public function getResources()
-    {
-    }
-    /**
-     * Output only. The timestamp when the source was last queried (if the result
-     * is from the cache).
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_VMMigrationService_FetchStorageInventoryResponse extends \Google\Service\VMMigrationService\FetchStorageInventoryResponse
     {
     }
 }

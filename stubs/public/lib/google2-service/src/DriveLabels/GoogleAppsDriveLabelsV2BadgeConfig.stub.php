@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2BadgeConfig extends \Google\Model
-{
-    protected $colorType = GoogleTypeColor::class;
-    protected $colorDataType = '';
-    /**
-     * Override the default global priority of this badge. When set to 0, the
-     * default priority heuristic is used.
-     *
-     * @var string
-     */
-    public $priorityOverride;
-    /**
-     * The color of the badge. When not specified, no badge is rendered. The
-     * background, foreground, and solo (light and dark mode) colors set here are
-     * changed in the Drive UI into the closest recommended supported color.
-     *
-     * @param GoogleTypeColor $color
-     */
-    public function setColor(GoogleTypeColor $color)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2BadgeConfig extends \Google\Model
     {
+        protected $colorType = GoogleTypeColor::class;
+        protected $colorDataType = '';
+        /**
+         * Override the default global priority of this badge. When set to 0, the
+         * default priority heuristic is used.
+         *
+         * @var string
+         */
+        public $priorityOverride;
+        /**
+         * The color of the badge. When not specified, no badge is rendered. The
+         * background, foreground, and solo (light and dark mode) colors set here are
+         * changed in the Drive UI into the closest recommended supported color.
+         *
+         * @param GoogleTypeColor $color
+         */
+        public function setColor(GoogleTypeColor $color)
+        {
+        }
+        /**
+         * @return GoogleTypeColor
+         */
+        public function getColor()
+        {
+        }
+        /**
+         * Override the default global priority of this badge. When set to 0, the
+         * default priority heuristic is used.
+         *
+         * @param string $priorityOverride
+         */
+        public function setPriorityOverride($priorityOverride)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPriorityOverride()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeColor
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2BadgeConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColor()
-    {
-    }
-    /**
-     * Override the default global priority of this badge. When set to 0, the
-     * default priority heuristic is used.
-     *
-     * @param string $priorityOverride
-     */
-    public function setPriorityOverride($priorityOverride)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPriorityOverride()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2BadgeConfig extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2BadgeConfig
     {
     }
 }

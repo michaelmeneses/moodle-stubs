@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sasportal;
-
-class SasPortalSetPolicyRequest extends \Google\Model
-{
-    /**
-     * Optional. Set the field as `true` to disable the onboarding notification.
-     *
-     * @var bool
-     */
-    public $disableNotification;
-    protected $policyType = SasPortalPolicy::class;
-    protected $policyDataType = '';
-    /**
-     * Required. The resource for which the policy is being specified. This policy
-     * replaces any existing policy.
-     *
-     * @var string
-     */
-    public $resource;
-    /**
-     * Optional. Set the field as `true` to disable the onboarding notification.
-     *
-     * @param bool $disableNotification
-     */
-    public function setDisableNotification($disableNotification)
+namespace Google\Service\Sasportal {
+    class SasPortalSetPolicyRequest extends \Google\Model
     {
+        /**
+         * Optional. Set the field as `true` to disable the onboarding notification.
+         *
+         * @var bool
+         */
+        public $disableNotification;
+        protected $policyType = SasPortalPolicy::class;
+        protected $policyDataType = '';
+        /**
+         * Required. The resource for which the policy is being specified. This policy
+         * replaces any existing policy.
+         *
+         * @var string
+         */
+        public $resource;
+        /**
+         * Optional. Set the field as `true` to disable the onboarding notification.
+         *
+         * @param bool $disableNotification
+         */
+        public function setDisableNotification($disableNotification)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableNotification()
+        {
+        }
+        /**
+         * Required. The policy to be applied to the `resource`.
+         *
+         * @param SasPortalPolicy $policy
+         */
+        public function setPolicy(SasPortalPolicy $policy)
+        {
+        }
+        /**
+         * @return SasPortalPolicy
+         */
+        public function getPolicy()
+        {
+        }
+        /**
+         * Required. The resource for which the policy is being specified. This policy
+         * replaces any existing policy.
+         *
+         * @param string $resource
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Sasportal\SasPortalSetPolicyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisableNotification()
-    {
-    }
-    /**
-     * Required. The policy to be applied to the `resource`.
-     *
-     * @param SasPortalPolicy $policy
-     */
-    public function setPolicy(SasPortalPolicy $policy)
-    {
-    }
-    /**
-     * @return SasPortalPolicy
-     */
-    public function getPolicy()
-    {
-    }
-    /**
-     * Required. The resource for which the policy is being specified. This policy
-     * replaces any existing policy.
-     *
-     * @param string $resource
-     */
-    public function setResource($resource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResource()
+    class Google_Service_Sasportal_SasPortalSetPolicyRequest extends \Google\Service\Sasportal\SasPortalSetPolicyRequest
     {
     }
 }

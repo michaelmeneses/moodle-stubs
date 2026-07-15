@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class Invitation extends \Google\Model
-{
-    /**
-     * No course role.
-     */
-    public const ROLE_COURSE_ROLE_UNSPECIFIED = 'COURSE_ROLE_UNSPECIFIED';
-    /**
-     * Student in the course.
-     */
-    public const ROLE_STUDENT = 'STUDENT';
-    /**
-     * Teacher of the course.
-     */
-    public const ROLE_TEACHER = 'TEACHER';
-    /**
-     * Owner of the course.
-     */
-    public const ROLE_OWNER = 'OWNER';
-    /**
-     * Identifier of the course to invite the user to.
-     *
-     * @var string
-     */
-    public $courseId;
-    /**
-     * Identifier assigned by Classroom. Read-only.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Role to invite the user to have. Must not be `COURSE_ROLE_UNSPECIFIED`.
-     *
-     * @var string
-     */
-    public $role;
-    /**
-     * Identifier of the invited user. When specified as a parameter of a request,
-     * this identifier can be set to one of the following: * the numeric
-     * identifier for the user * the email address of the user * the string
-     * literal `"me"`, indicating the requesting user
-     *
-     * @var string
-     */
-    public $userId;
-    /**
-     * Identifier of the course to invite the user to.
-     *
-     * @param string $courseId
-     */
-    public function setCourseId($courseId)
+namespace Google\Service\Classroom {
+    class Invitation extends \Google\Model
     {
+        /**
+         * No course role.
+         */
+        public const ROLE_COURSE_ROLE_UNSPECIFIED = 'COURSE_ROLE_UNSPECIFIED';
+        /**
+         * Student in the course.
+         */
+        public const ROLE_STUDENT = 'STUDENT';
+        /**
+         * Teacher of the course.
+         */
+        public const ROLE_TEACHER = 'TEACHER';
+        /**
+         * Owner of the course.
+         */
+        public const ROLE_OWNER = 'OWNER';
+        /**
+         * Identifier of the course to invite the user to.
+         *
+         * @var string
+         */
+        public $courseId;
+        /**
+         * Identifier assigned by Classroom. Read-only.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Role to invite the user to have. Must not be `COURSE_ROLE_UNSPECIFIED`.
+         *
+         * @var string
+         */
+        public $role;
+        /**
+         * Identifier of the invited user. When specified as a parameter of a request,
+         * this identifier can be set to one of the following: * the numeric
+         * identifier for the user * the email address of the user * the string
+         * literal `"me"`, indicating the requesting user
+         *
+         * @var string
+         */
+        public $userId;
+        /**
+         * Identifier of the course to invite the user to.
+         *
+         * @param string $courseId
+         */
+        public function setCourseId($courseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCourseId()
+        {
+        }
+        /**
+         * Identifier assigned by Classroom. Read-only.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Role to invite the user to have. Must not be `COURSE_ROLE_UNSPECIFIED`.
+         *
+         * Accepted values: COURSE_ROLE_UNSPECIFIED, STUDENT, TEACHER, OWNER
+         *
+         * @param self::ROLE_* $role
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return self::ROLE_*
+         */
+        public function getRole()
+        {
+        }
+        /**
+         * Identifier of the invited user. When specified as a parameter of a request,
+         * this identifier can be set to one of the following: * the numeric
+         * identifier for the user * the email address of the user * the string
+         * literal `"me"`, indicating the requesting user
+         *
+         * @param string $userId
+         */
+        public function setUserId($userId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\Invitation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCourseId()
-    {
-    }
-    /**
-     * Identifier assigned by Classroom. Read-only.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Role to invite the user to have. Must not be `COURSE_ROLE_UNSPECIFIED`.
-     *
-     * Accepted values: COURSE_ROLE_UNSPECIFIED, STUDENT, TEACHER, OWNER
-     *
-     * @param self::ROLE_* $role
-     */
-    public function setRole($role)
-    {
-    }
-    /**
-     * @return self::ROLE_*
-     */
-    public function getRole()
-    {
-    }
-    /**
-     * Identifier of the invited user. When specified as a parameter of a request,
-     * this identifier can be set to one of the following: * the numeric
-     * identifier for the user * the email address of the user * the string
-     * literal `"me"`, indicating the requesting user
-     *
-     * @param string $userId
-     */
-    public function setUserId($userId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserId()
+    class Google_Service_Classroom_Invitation extends \Google\Service\Classroom\Invitation
     {
     }
 }

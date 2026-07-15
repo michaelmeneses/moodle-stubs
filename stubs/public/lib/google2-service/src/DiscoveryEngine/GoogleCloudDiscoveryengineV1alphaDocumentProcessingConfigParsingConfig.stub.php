@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfig extends \Google\Model
-{
-    protected $digitalParsingConfigType = GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigDigitalParsingConfig::class;
-    protected $digitalParsingConfigDataType = '';
-    protected $layoutParsingConfigType = GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigLayoutParsingConfig::class;
-    protected $layoutParsingConfigDataType = '';
-    protected $ocrParsingConfigType = GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigOcrParsingConfig::class;
-    protected $ocrParsingConfigDataType = '';
-    /**
-     * Configurations applied to digital parser.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigDigitalParsingConfig $digitalParsingConfig
-     */
-    public function setDigitalParsingConfig(GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigDigitalParsingConfig $digitalParsingConfig)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfig extends \Google\Model
     {
+        protected $digitalParsingConfigType = GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigDigitalParsingConfig::class;
+        protected $digitalParsingConfigDataType = '';
+        protected $layoutParsingConfigType = GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigLayoutParsingConfig::class;
+        protected $layoutParsingConfigDataType = '';
+        protected $ocrParsingConfigType = GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigOcrParsingConfig::class;
+        protected $ocrParsingConfigDataType = '';
+        /**
+         * Configurations applied to digital parser.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigDigitalParsingConfig $digitalParsingConfig
+         */
+        public function setDigitalParsingConfig(GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigDigitalParsingConfig $digitalParsingConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigDigitalParsingConfig
+         */
+        public function getDigitalParsingConfig()
+        {
+        }
+        /**
+         * Configurations applied to layout parser.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigLayoutParsingConfig $layoutParsingConfig
+         */
+        public function setLayoutParsingConfig(GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigLayoutParsingConfig $layoutParsingConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigLayoutParsingConfig
+         */
+        public function getLayoutParsingConfig()
+        {
+        }
+        /**
+         * Configurations applied to OCR parser. Currently it only applies to PDFs.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigOcrParsingConfig $ocrParsingConfig
+         */
+        public function setOcrParsingConfig(GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigOcrParsingConfig $ocrParsingConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigOcrParsingConfig
+         */
+        public function getOcrParsingConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigDigitalParsingConfig
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDigitalParsingConfig()
-    {
-    }
-    /**
-     * Configurations applied to layout parser.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigLayoutParsingConfig $layoutParsingConfig
-     */
-    public function setLayoutParsingConfig(GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigLayoutParsingConfig $layoutParsingConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigLayoutParsingConfig
-     */
-    public function getLayoutParsingConfig()
-    {
-    }
-    /**
-     * Configurations applied to OCR parser. Currently it only applies to PDFs.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigOcrParsingConfig $ocrParsingConfig
-     */
-    public function setOcrParsingConfig(GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigOcrParsingConfig $ocrParsingConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigOcrParsingConfig
-     */
-    public function getOcrParsingConfig()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfig
     {
     }
 }

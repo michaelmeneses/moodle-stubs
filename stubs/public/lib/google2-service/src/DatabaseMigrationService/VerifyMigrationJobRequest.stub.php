@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class VerifyMigrationJobRequest extends \Google\Model
-{
-    protected $migrationJobType = MigrationJob::class;
-    protected $migrationJobDataType = '';
-    /**
-     * Optional. Field mask is used to specify the changed fields to be verified.
-     * It will not update the migration job.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Optional. The changed migration job parameters to verify. It will not
-     * update the migration job.
-     *
-     * @param MigrationJob $migrationJob
-     */
-    public function setMigrationJob(MigrationJob $migrationJob)
+namespace Google\Service\DatabaseMigrationService {
+    class VerifyMigrationJobRequest extends \Google\Model
     {
+        protected $migrationJobType = MigrationJob::class;
+        protected $migrationJobDataType = '';
+        /**
+         * Optional. Field mask is used to specify the changed fields to be verified.
+         * It will not update the migration job.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Optional. The changed migration job parameters to verify. It will not
+         * update the migration job.
+         *
+         * @param MigrationJob $migrationJob
+         */
+        public function setMigrationJob(MigrationJob $migrationJob)
+        {
+        }
+        /**
+         * @return MigrationJob
+         */
+        public function getMigrationJob()
+        {
+        }
+        /**
+         * Optional. Field mask is used to specify the changed fields to be verified.
+         * It will not update the migration job.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MigrationJob
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\VerifyMigrationJobRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMigrationJob()
-    {
-    }
-    /**
-     * Optional. Field mask is used to specify the changed fields to be verified.
-     * It will not update the migration job.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_DatabaseMigrationService_VerifyMigrationJobRequest extends \Google\Service\DatabaseMigrationService\VerifyMigrationJobRequest
     {
     }
 }

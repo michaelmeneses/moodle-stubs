@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2VertexDatasetCollection extends \Google\Model
-{
-    protected $vertexDatasetRegexesType = GooglePrivacyDlpV2VertexDatasetRegexes::class;
-    protected $vertexDatasetRegexesDataType = '';
-    /**
-     * The regex used to filter dataset resources.
-     *
-     * @param GooglePrivacyDlpV2VertexDatasetRegexes $vertexDatasetRegexes
-     */
-    public function setVertexDatasetRegexes(GooglePrivacyDlpV2VertexDatasetRegexes $vertexDatasetRegexes)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2VertexDatasetCollection extends \Google\Model
     {
+        protected $vertexDatasetRegexesType = GooglePrivacyDlpV2VertexDatasetRegexes::class;
+        protected $vertexDatasetRegexesDataType = '';
+        /**
+         * The regex used to filter dataset resources.
+         *
+         * @param GooglePrivacyDlpV2VertexDatasetRegexes $vertexDatasetRegexes
+         */
+        public function setVertexDatasetRegexes(GooglePrivacyDlpV2VertexDatasetRegexes $vertexDatasetRegexes)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2VertexDatasetRegexes
+         */
+        public function getVertexDatasetRegexes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2VertexDatasetRegexes
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2VertexDatasetCollection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVertexDatasetRegexes()
+    class Google_Service_DLP_GooglePrivacyDlpV2VertexDatasetCollection extends \Google\Service\DLP\GooglePrivacyDlpV2VertexDatasetCollection
     {
     }
 }

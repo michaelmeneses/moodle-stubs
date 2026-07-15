@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1ListPartitionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'partitions';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no
-     * remaining results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $partitionsType = GoogleCloudDataplexV1Partition::class;
-    protected $partitionsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no
-     * remaining results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1ListPartitionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'partitions';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no
+         * remaining results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $partitionsType = GoogleCloudDataplexV1Partition::class;
+        protected $partitionsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no
+         * remaining results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Partitions under the specified parent entity.
+         *
+         * @param GoogleCloudDataplexV1Partition[] $partitions
+         */
+        public function setPartitions($partitions)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1Partition[]
+         */
+        public function getPartitions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListPartitionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Partitions under the specified parent entity.
-     *
-     * @param GoogleCloudDataplexV1Partition[] $partitions
-     */
-    public function setPartitions($partitions)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1Partition[]
-     */
-    public function getPartitions()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1ListPartitionsResponse extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListPartitionsResponse
     {
     }
 }

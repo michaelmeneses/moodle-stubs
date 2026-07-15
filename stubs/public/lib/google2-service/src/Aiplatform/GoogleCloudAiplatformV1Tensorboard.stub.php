@@ -21,294 +21,303 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1Tensorboard extends \Google\Model
-{
-    /**
-     * Output only. Consumer project Cloud Storage path prefix used to store blob
-     * data, which can either be a bucket or directory. Does not end with a '/'.
-     *
-     * @var string
-     */
-    public $blobStoragePathPrefix;
-    /**
-     * Output only. Timestamp when this Tensorboard was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Description of this Tensorboard.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. User provided name of this Tensorboard.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $encryptionSpecType = GoogleCloudAiplatformV1EncryptionSpec::class;
-    protected $encryptionSpecDataType = '';
-    /**
-     * Used to perform a consistent read-modify-write updates. If not set, a blind
-     * "overwrite" update happens.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Used to indicate if the TensorBoard instance is the default one. Each
-     * project & region can have at most one default TensorBoard instance.
-     * Creation of a default TensorBoard instance and updating an existing
-     * TensorBoard instance to be default will mark all other TensorBoard
-     * instances (if any) as non default.
-     *
-     * @var bool
-     */
-    public $isDefault;
-    /**
-     * The labels with user-defined metadata to organize your Tensorboards. Label
-     * keys and values can be no longer than 64 characters (Unicode codepoints),
-     * can only contain lowercase letters, numeric characters, underscores and
-     * dashes. International characters are allowed. No more than 64 user labels
-     * can be associated with one Tensorboard (System labels are excluded). See
-     * https://goo.gl/xmQnxf for more information and examples of labels. System
-     * reserved label keys are prefixed with "aiplatform.googleapis.com/" and are
-     * immutable.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Output only. Name of the Tensorboard. Format:
-     * `projects/{project}/locations/{location}/tensorboards/{tensorboard}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The number of Runs stored in this Tensorboard.
-     *
-     * @var int
-     */
-    public $runCount;
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @var bool
-     */
-    public $satisfiesPzi;
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @var bool
-     */
-    public $satisfiesPzs;
-    /**
-     * Output only. Timestamp when this Tensorboard was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Consumer project Cloud Storage path prefix used to store blob
-     * data, which can either be a bucket or directory. Does not end with a '/'.
-     *
-     * @param string $blobStoragePathPrefix
-     */
-    public function setBlobStoragePathPrefix($blobStoragePathPrefix)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1Tensorboard extends \Google\Model
     {
+        /**
+         * Output only. Consumer project Cloud Storage path prefix used to store blob
+         * data, which can either be a bucket or directory. Does not end with a '/'.
+         *
+         * @var string
+         */
+        public $blobStoragePathPrefix;
+        /**
+         * Output only. Timestamp when this Tensorboard was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Description of this Tensorboard.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. User provided name of this Tensorboard.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $encryptionSpecType = GoogleCloudAiplatformV1EncryptionSpec::class;
+        protected $encryptionSpecDataType = '';
+        /**
+         * Used to perform a consistent read-modify-write updates. If not set, a blind
+         * "overwrite" update happens.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Used to indicate if the TensorBoard instance is the default one. Each
+         * project & region can have at most one default TensorBoard instance.
+         * Creation of a default TensorBoard instance and updating an existing
+         * TensorBoard instance to be default will mark all other TensorBoard
+         * instances (if any) as non default.
+         *
+         * @var bool
+         */
+        public $isDefault;
+        /**
+         * The labels with user-defined metadata to organize your Tensorboards. Label
+         * keys and values can be no longer than 64 characters (Unicode codepoints),
+         * can only contain lowercase letters, numeric characters, underscores and
+         * dashes. International characters are allowed. No more than 64 user labels
+         * can be associated with one Tensorboard (System labels are excluded). See
+         * https://goo.gl/xmQnxf for more information and examples of labels. System
+         * reserved label keys are prefixed with "aiplatform.googleapis.com/" and are
+         * immutable.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Output only. Name of the Tensorboard. Format:
+         * `projects/{project}/locations/{location}/tensorboards/{tensorboard}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The number of Runs stored in this Tensorboard.
+         *
+         * @var int
+         */
+        public $runCount;
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @var bool
+         */
+        public $satisfiesPzi;
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @var bool
+         */
+        public $satisfiesPzs;
+        /**
+         * Output only. Timestamp when this Tensorboard was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Consumer project Cloud Storage path prefix used to store blob
+         * data, which can either be a bucket or directory. Does not end with a '/'.
+         *
+         * @param string $blobStoragePathPrefix
+         */
+        public function setBlobStoragePathPrefix($blobStoragePathPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBlobStoragePathPrefix()
+        {
+        }
+        /**
+         * Output only. Timestamp when this Tensorboard was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Description of this Tensorboard.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. User provided name of this Tensorboard.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Customer-managed encryption key spec for a Tensorboard. If set, this
+         * Tensorboard and all sub-resources of this Tensorboard will be secured by
+         * this key.
+         *
+         * @param GoogleCloudAiplatformV1EncryptionSpec $encryptionSpec
+         */
+        public function setEncryptionSpec(GoogleCloudAiplatformV1EncryptionSpec $encryptionSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EncryptionSpec
+         */
+        public function getEncryptionSpec()
+        {
+        }
+        /**
+         * Used to perform a consistent read-modify-write updates. If not set, a blind
+         * "overwrite" update happens.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Used to indicate if the TensorBoard instance is the default one. Each
+         * project & region can have at most one default TensorBoard instance.
+         * Creation of a default TensorBoard instance and updating an existing
+         * TensorBoard instance to be default will mark all other TensorBoard
+         * instances (if any) as non default.
+         *
+         * @param bool $isDefault
+         */
+        public function setIsDefault($isDefault)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsDefault()
+        {
+        }
+        /**
+         * The labels with user-defined metadata to organize your Tensorboards. Label
+         * keys and values can be no longer than 64 characters (Unicode codepoints),
+         * can only contain lowercase letters, numeric characters, underscores and
+         * dashes. International characters are allowed. No more than 64 user labels
+         * can be associated with one Tensorboard (System labels are excluded). See
+         * https://goo.gl/xmQnxf for more information and examples of labels. System
+         * reserved label keys are prefixed with "aiplatform.googleapis.com/" and are
+         * immutable.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Output only. Name of the Tensorboard. Format:
+         * `projects/{project}/locations/{location}/tensorboards/{tensorboard}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The number of Runs stored in this Tensorboard.
+         *
+         * @param int $runCount
+         */
+        public function setRunCount($runCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRunCount()
+        {
+        }
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @param bool $satisfiesPzi
+         */
+        public function setSatisfiesPzi($satisfiesPzi)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSatisfiesPzi()
+        {
+        }
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @param bool $satisfiesPzs
+         */
+        public function setSatisfiesPzs($satisfiesPzs)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSatisfiesPzs()
+        {
+        }
+        /**
+         * Output only. Timestamp when this Tensorboard was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1Tensorboard registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlobStoragePathPrefix()
-    {
-    }
-    /**
-     * Output only. Timestamp when this Tensorboard was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Description of this Tensorboard.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. User provided name of this Tensorboard.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Customer-managed encryption key spec for a Tensorboard. If set, this
-     * Tensorboard and all sub-resources of this Tensorboard will be secured by
-     * this key.
-     *
-     * @param GoogleCloudAiplatformV1EncryptionSpec $encryptionSpec
-     */
-    public function setEncryptionSpec(GoogleCloudAiplatformV1EncryptionSpec $encryptionSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1EncryptionSpec
-     */
-    public function getEncryptionSpec()
-    {
-    }
-    /**
-     * Used to perform a consistent read-modify-write updates. If not set, a blind
-     * "overwrite" update happens.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Used to indicate if the TensorBoard instance is the default one. Each
-     * project & region can have at most one default TensorBoard instance.
-     * Creation of a default TensorBoard instance and updating an existing
-     * TensorBoard instance to be default will mark all other TensorBoard
-     * instances (if any) as non default.
-     *
-     * @param bool $isDefault
-     */
-    public function setIsDefault($isDefault)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsDefault()
-    {
-    }
-    /**
-     * The labels with user-defined metadata to organize your Tensorboards. Label
-     * keys and values can be no longer than 64 characters (Unicode codepoints),
-     * can only contain lowercase letters, numeric characters, underscores and
-     * dashes. International characters are allowed. No more than 64 user labels
-     * can be associated with one Tensorboard (System labels are excluded). See
-     * https://goo.gl/xmQnxf for more information and examples of labels. System
-     * reserved label keys are prefixed with "aiplatform.googleapis.com/" and are
-     * immutable.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Output only. Name of the Tensorboard. Format:
-     * `projects/{project}/locations/{location}/tensorboards/{tensorboard}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The number of Runs stored in this Tensorboard.
-     *
-     * @param int $runCount
-     */
-    public function setRunCount($runCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRunCount()
-    {
-    }
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @param bool $satisfiesPzi
-     */
-    public function setSatisfiesPzi($satisfiesPzi)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSatisfiesPzi()
-    {
-    }
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @param bool $satisfiesPzs
-     */
-    public function setSatisfiesPzs($satisfiesPzs)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSatisfiesPzs()
-    {
-    }
-    /**
-     * Output only. Timestamp when this Tensorboard was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1Tensorboard extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1Tensorboard
     {
     }
 }

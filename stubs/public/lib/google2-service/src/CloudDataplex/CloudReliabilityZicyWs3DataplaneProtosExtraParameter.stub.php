@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class CloudReliabilityZicyWs3DataplaneProtosExtraParameter extends \Google\Model
-{
-    protected $regionalMigDistributionPolicyType = CloudReliabilityZicyWs3DataplaneProtosRegionalMigDistributionPolicy::class;
-    protected $regionalMigDistributionPolicyDataType = '';
-    /**
-     * @param CloudReliabilityZicyWs3DataplaneProtosRegionalMigDistributionPolicy
-     */
-    public function setRegionalMigDistributionPolicy(CloudReliabilityZicyWs3DataplaneProtosRegionalMigDistributionPolicy $regionalMigDistributionPolicy)
+namespace Google\Service\CloudDataplex {
+    class CloudReliabilityZicyWs3DataplaneProtosExtraParameter extends \Google\Model
     {
+        protected $regionalMigDistributionPolicyType = CloudReliabilityZicyWs3DataplaneProtosRegionalMigDistributionPolicy::class;
+        protected $regionalMigDistributionPolicyDataType = '';
+        /**
+         * @param CloudReliabilityZicyWs3DataplaneProtosRegionalMigDistributionPolicy
+         */
+        public function setRegionalMigDistributionPolicy(CloudReliabilityZicyWs3DataplaneProtosRegionalMigDistributionPolicy $regionalMigDistributionPolicy)
+        {
+        }
+        /**
+         * @return CloudReliabilityZicyWs3DataplaneProtosRegionalMigDistributionPolicy
+         */
+        public function getRegionalMigDistributionPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudReliabilityZicyWs3DataplaneProtosRegionalMigDistributionPolicy
+     * Runtime class alias of \Google\Service\CloudDataplex\CloudReliabilityZicyWs3DataplaneProtosExtraParameter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRegionalMigDistributionPolicy()
+    class Google_Service_CloudDataplex_CloudReliabilityZicyWs3DataplaneProtosExtraParameter extends \Google\Service\CloudDataplex\CloudReliabilityZicyWs3DataplaneProtosExtraParameter
     {
     }
 }

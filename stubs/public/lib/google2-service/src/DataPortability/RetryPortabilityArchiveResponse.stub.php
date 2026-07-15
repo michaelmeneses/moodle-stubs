@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataPortability;
-
-class RetryPortabilityArchiveResponse extends \Google\Model
-{
-    /**
-     * The archive job ID that is initiated by the retry endpoint. This can be
-     * used to get the state of the new job.
-     *
-     * @var string
-     */
-    public $archiveJobId;
-    /**
-     * The archive job ID that is initiated by the retry endpoint. This can be
-     * used to get the state of the new job.
-     *
-     * @param string $archiveJobId
-     */
-    public function setArchiveJobId($archiveJobId)
+namespace Google\Service\DataPortability {
+    class RetryPortabilityArchiveResponse extends \Google\Model
     {
+        /**
+         * The archive job ID that is initiated by the retry endpoint. This can be
+         * used to get the state of the new job.
+         *
+         * @var string
+         */
+        public $archiveJobId;
+        /**
+         * The archive job ID that is initiated by the retry endpoint. This can be
+         * used to get the state of the new job.
+         *
+         * @param string $archiveJobId
+         */
+        public function setArchiveJobId($archiveJobId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArchiveJobId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataPortability\RetryPortabilityArchiveResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArchiveJobId()
+    class Google_Service_DataPortability_RetryPortabilityArchiveResponse extends \Google\Service\DataPortability\RetryPortabilityArchiveResponse
     {
     }
 }

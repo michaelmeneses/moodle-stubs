@@ -21,26 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Oauth2\Resource;
-
-/**
- * The "me" collection of methods.
- * Typical usage is:
- *  <code>
- *   $oauth2Service = new Google\Service\Oauth2(...);
- *   $me = $oauth2Service->userinfo_v2_me;
- *  </code>
- */
-class UserinfoV2Me extends \Google\Service\Resource
-{
+namespace Google\Service\Oauth2\Resource {
+    use Google\Service\Oauth2\Userinfo as UserinfoModel;
     /**
-     * (me.get)
-     *
-     * @param array $optParams Optional parameters.
-     * @return UserinfoModel
-     * @throws \Google\Service\Exception
+     * The "me" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $oauth2Service = new Google\Service\Oauth2(...);
+     *   $me = $oauth2Service->userinfo_v2_me;
+     *  </code>
      */
-    public function get($optParams = [])
+    class UserinfoV2Me extends \Google\Service\Resource
+    {
+        /**
+         * (me.get)
+         *
+         * @param array $optParams Optional parameters.
+         * @return UserinfoModel
+         * @throws \Google\Service\Exception
+         */
+        public function get($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Oauth2\Resource\UserinfoV2Me registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Oauth2_Resource_UserinfoV2Me extends \Google\Service\Oauth2\Resource\UserinfoV2Me
     {
     }
 }

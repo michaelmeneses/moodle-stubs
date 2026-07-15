@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataProductPrincipal extends \Google\Model
-{
-    /**
-     * Email of the Google Group, as per
-     * https://cloud.google.com/iam/docs/principals-overview#google-group.
-     *
-     * @var string
-     */
-    public $googleGroup;
-    /**
-     * Email of the Google Group, as per
-     * https://cloud.google.com/iam/docs/principals-overview#google-group.
-     *
-     * @param string $googleGroup
-     */
-    public function setGoogleGroup($googleGroup)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataProductPrincipal extends \Google\Model
     {
+        /**
+         * Email of the Google Group, as per
+         * https://cloud.google.com/iam/docs/principals-overview#google-group.
+         *
+         * @var string
+         */
+        public $googleGroup;
+        /**
+         * Email of the Google Group, as per
+         * https://cloud.google.com/iam/docs/principals-overview#google-group.
+         *
+         * @param string $googleGroup
+         */
+        public function setGoogleGroup($googleGroup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGoogleGroup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataProductPrincipal registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGoogleGroup()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataProductPrincipal extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataProductPrincipal
     {
     }
 }

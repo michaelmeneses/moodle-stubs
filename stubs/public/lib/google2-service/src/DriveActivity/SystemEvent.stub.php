@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class SystemEvent extends \Google\Model
-{
-    /**
-     * The event type is unspecified.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * The event is a consequence of a user account being deleted.
-     */
-    public const TYPE_USER_DELETION = 'USER_DELETION';
-    /**
-     * The event is due to the system automatically purging trash.
-     */
-    public const TYPE_TRASH_AUTO_PURGE = 'TRASH_AUTO_PURGE';
-    /**
-     * The type of the system event that may triggered activity.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The type of the system event that may triggered activity.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, USER_DELETION, TRASH_AUTO_PURGE
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\DriveActivity {
+    class SystemEvent extends \Google\Model
     {
+        /**
+         * The event type is unspecified.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * The event is a consequence of a user account being deleted.
+         */
+        public const TYPE_USER_DELETION = 'USER_DELETION';
+        /**
+         * The event is due to the system automatically purging trash.
+         */
+        public const TYPE_TRASH_AUTO_PURGE = 'TRASH_AUTO_PURGE';
+        /**
+         * The type of the system event that may triggered activity.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The type of the system event that may triggered activity.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, USER_DELETION, TRASH_AUTO_PURGE
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\DriveActivity\SystemEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_DriveActivity_SystemEvent extends \Google\Service\DriveActivity\SystemEvent
     {
     }
 }

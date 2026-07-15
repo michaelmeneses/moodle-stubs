@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class CustomBiddingModelReadinessState extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $advertiserId;
-    /**
-     * @var string
-     */
-    public $readinessState;
-    /**
-     * @param string
-     */
-    public function setAdvertiserId($advertiserId)
+namespace Google\Service\DisplayVideo {
+    class CustomBiddingModelReadinessState extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $advertiserId;
+        /**
+         * @var string
+         */
+        public $readinessState;
+        /**
+         * @param string
+         */
+        public function setAdvertiserId($advertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReadinessState($readinessState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadinessState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\CustomBiddingModelReadinessState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvertiserId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReadinessState($readinessState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadinessState()
+    class Google_Service_DisplayVideo_CustomBiddingModelReadinessState extends \Google\Service\DisplayVideo\CustomBiddingModelReadinessState
     {
     }
 }

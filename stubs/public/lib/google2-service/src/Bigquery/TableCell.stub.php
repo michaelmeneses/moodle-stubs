@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class TableCell extends \Google\Model
-{
-    /**
-     * @var array
-     */
-    public $v;
-    /**
-     * @param array $v
-     */
-    public function setV($v)
+namespace Google\Service\Bigquery {
+    class TableCell extends \Google\Model
     {
+        /**
+         * @var array
+         */
+        public $v;
+        /**
+         * @param array $v
+         */
+        public function setV($v)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getV()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array
+     * Runtime class alias of \Google\Service\Bigquery\TableCell registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getV()
+    class Google_Service_Bigquery_TableCell extends \Google\Service\Bigquery\TableCell
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class ProcessBitbucketDataCenterWebhookRequest extends \Google\Model
-{
-    protected $bodyType = HttpBody::class;
-    protected $bodyDataType = '';
-    /**
-     * Required. HTTP request body.
-     *
-     * @param HttpBody $body
-     */
-    public function setBody(HttpBody $body)
+namespace Google\Service\DeveloperConnect {
+    class ProcessBitbucketDataCenterWebhookRequest extends \Google\Model
     {
+        protected $bodyType = HttpBody::class;
+        protected $bodyDataType = '';
+        /**
+         * Required. HTTP request body.
+         *
+         * @param HttpBody $body
+         */
+        public function setBody(HttpBody $body)
+        {
+        }
+        /**
+         * @return HttpBody
+         */
+        public function getBody()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HttpBody
+     * Runtime class alias of \Google\Service\DeveloperConnect\ProcessBitbucketDataCenterWebhookRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBody()
+    class Google_Service_DeveloperConnect_ProcessBitbucketDataCenterWebhookRequest extends \Google\Service\DeveloperConnect\ProcessBitbucketDataCenterWebhookRequest
     {
     }
 }

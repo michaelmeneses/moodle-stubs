@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1InputConfig extends \Google\Model
-{
-    protected $bigQuerySourceType = GoogleCloudRecommendationengineV1beta1BigQuerySource::class;
-    protected $bigQuerySourceDataType = '';
-    protected $catalogInlineSourceType = GoogleCloudRecommendationengineV1beta1CatalogInlineSource::class;
-    protected $catalogInlineSourceDataType = '';
-    protected $gcsSourceType = GoogleCloudRecommendationengineV1beta1GcsSource::class;
-    protected $gcsSourceDataType = '';
-    protected $userEventInlineSourceType = GoogleCloudRecommendationengineV1beta1UserEventInlineSource::class;
-    protected $userEventInlineSourceDataType = '';
-    /**
-     * BigQuery input source.
-     *
-     * @param GoogleCloudRecommendationengineV1beta1BigQuerySource $bigQuerySource
-     */
-    public function setBigQuerySource(GoogleCloudRecommendationengineV1beta1BigQuerySource $bigQuerySource)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1InputConfig extends \Google\Model
     {
+        protected $bigQuerySourceType = GoogleCloudRecommendationengineV1beta1BigQuerySource::class;
+        protected $bigQuerySourceDataType = '';
+        protected $catalogInlineSourceType = GoogleCloudRecommendationengineV1beta1CatalogInlineSource::class;
+        protected $catalogInlineSourceDataType = '';
+        protected $gcsSourceType = GoogleCloudRecommendationengineV1beta1GcsSource::class;
+        protected $gcsSourceDataType = '';
+        protected $userEventInlineSourceType = GoogleCloudRecommendationengineV1beta1UserEventInlineSource::class;
+        protected $userEventInlineSourceDataType = '';
+        /**
+         * BigQuery input source.
+         *
+         * @param GoogleCloudRecommendationengineV1beta1BigQuerySource $bigQuerySource
+         */
+        public function setBigQuerySource(GoogleCloudRecommendationengineV1beta1BigQuerySource $bigQuerySource)
+        {
+        }
+        /**
+         * @return GoogleCloudRecommendationengineV1beta1BigQuerySource
+         */
+        public function getBigQuerySource()
+        {
+        }
+        /**
+         * The Inline source for the input content for Catalog items.
+         *
+         * @param GoogleCloudRecommendationengineV1beta1CatalogInlineSource $catalogInlineSource
+         */
+        public function setCatalogInlineSource(GoogleCloudRecommendationengineV1beta1CatalogInlineSource $catalogInlineSource)
+        {
+        }
+        /**
+         * @return GoogleCloudRecommendationengineV1beta1CatalogInlineSource
+         */
+        public function getCatalogInlineSource()
+        {
+        }
+        /**
+         * Google Cloud Storage location for the input content.
+         *
+         * @param GoogleCloudRecommendationengineV1beta1GcsSource $gcsSource
+         */
+        public function setGcsSource(GoogleCloudRecommendationengineV1beta1GcsSource $gcsSource)
+        {
+        }
+        /**
+         * @return GoogleCloudRecommendationengineV1beta1GcsSource
+         */
+        public function getGcsSource()
+        {
+        }
+        /**
+         * The Inline source for the input content for UserEvents.
+         *
+         * @param GoogleCloudRecommendationengineV1beta1UserEventInlineSource $userEventInlineSource
+         */
+        public function setUserEventInlineSource(GoogleCloudRecommendationengineV1beta1UserEventInlineSource $userEventInlineSource)
+        {
+        }
+        /**
+         * @return GoogleCloudRecommendationengineV1beta1UserEventInlineSource
+         */
+        public function getUserEventInlineSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRecommendationengineV1beta1BigQuerySource
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1InputConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigQuerySource()
-    {
-    }
-    /**
-     * The Inline source for the input content for Catalog items.
-     *
-     * @param GoogleCloudRecommendationengineV1beta1CatalogInlineSource $catalogInlineSource
-     */
-    public function setCatalogInlineSource(GoogleCloudRecommendationengineV1beta1CatalogInlineSource $catalogInlineSource)
-    {
-    }
-    /**
-     * @return GoogleCloudRecommendationengineV1beta1CatalogInlineSource
-     */
-    public function getCatalogInlineSource()
-    {
-    }
-    /**
-     * Google Cloud Storage location for the input content.
-     *
-     * @param GoogleCloudRecommendationengineV1beta1GcsSource $gcsSource
-     */
-    public function setGcsSource(GoogleCloudRecommendationengineV1beta1GcsSource $gcsSource)
-    {
-    }
-    /**
-     * @return GoogleCloudRecommendationengineV1beta1GcsSource
-     */
-    public function getGcsSource()
-    {
-    }
-    /**
-     * The Inline source for the input content for UserEvents.
-     *
-     * @param GoogleCloudRecommendationengineV1beta1UserEventInlineSource $userEventInlineSource
-     */
-    public function setUserEventInlineSource(GoogleCloudRecommendationengineV1beta1UserEventInlineSource $userEventInlineSource)
-    {
-    }
-    /**
-     * @return GoogleCloudRecommendationengineV1beta1UserEventInlineSource
-     */
-    public function getUserEventInlineSource()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1InputConfig extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1InputConfig
     {
     }
 }

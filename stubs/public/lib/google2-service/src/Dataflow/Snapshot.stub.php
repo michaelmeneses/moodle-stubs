@@ -21,235 +21,244 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class Snapshot extends \Google\Collection
-{
-    /**
-     * Unknown state.
-     */
-    public const STATE_UNKNOWN_SNAPSHOT_STATE = 'UNKNOWN_SNAPSHOT_STATE';
-    /**
-     * Snapshot intent to create has been persisted, snapshotting of state has not
-     * yet started.
-     */
-    public const STATE_PENDING = 'PENDING';
-    /**
-     * Snapshotting is being performed.
-     */
-    public const STATE_RUNNING = 'RUNNING';
-    /**
-     * Snapshot has been created and is ready to be used.
-     */
-    public const STATE_READY = 'READY';
-    /**
-     * Snapshot failed to be created.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * Snapshot has been deleted.
-     */
-    public const STATE_DELETED = 'DELETED';
-    protected $collection_key = 'pubsubMetadata';
-    /**
-     * The time this snapshot was created.
-     *
-     * @var string
-     */
-    public $creationTime;
-    /**
-     * User specified description of the snapshot. Maybe empty.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The disk byte size of the snapshot. Only available for snapshots in READY
-     * state.
-     *
-     * @var string
-     */
-    public $diskSizeBytes;
-    /**
-     * The unique ID of this snapshot.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The project this snapshot belongs to.
-     *
-     * @var string
-     */
-    public $projectId;
-    protected $pubsubMetadataType = PubsubSnapshotMetadata::class;
-    protected $pubsubMetadataDataType = 'array';
-    /**
-     * Cloud region where this snapshot lives in, e.g., "us-central1".
-     *
-     * @var string
-     */
-    public $region;
-    /**
-     * The job this snapshot was created from.
-     *
-     * @var string
-     */
-    public $sourceJobId;
-    /**
-     * State of the snapshot.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * The time after which this snapshot will be automatically deleted.
-     *
-     * @var string
-     */
-    public $ttl;
-    /**
-     * The time this snapshot was created.
-     *
-     * @param string $creationTime
-     */
-    public function setCreationTime($creationTime)
+namespace Google\Service\Dataflow {
+    class Snapshot extends \Google\Collection
     {
+        /**
+         * Unknown state.
+         */
+        public const STATE_UNKNOWN_SNAPSHOT_STATE = 'UNKNOWN_SNAPSHOT_STATE';
+        /**
+         * Snapshot intent to create has been persisted, snapshotting of state has not
+         * yet started.
+         */
+        public const STATE_PENDING = 'PENDING';
+        /**
+         * Snapshotting is being performed.
+         */
+        public const STATE_RUNNING = 'RUNNING';
+        /**
+         * Snapshot has been created and is ready to be used.
+         */
+        public const STATE_READY = 'READY';
+        /**
+         * Snapshot failed to be created.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * Snapshot has been deleted.
+         */
+        public const STATE_DELETED = 'DELETED';
+        protected $collection_key = 'pubsubMetadata';
+        /**
+         * The time this snapshot was created.
+         *
+         * @var string
+         */
+        public $creationTime;
+        /**
+         * User specified description of the snapshot. Maybe empty.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The disk byte size of the snapshot. Only available for snapshots in READY
+         * state.
+         *
+         * @var string
+         */
+        public $diskSizeBytes;
+        /**
+         * The unique ID of this snapshot.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The project this snapshot belongs to.
+         *
+         * @var string
+         */
+        public $projectId;
+        protected $pubsubMetadataType = PubsubSnapshotMetadata::class;
+        protected $pubsubMetadataDataType = 'array';
+        /**
+         * Cloud region where this snapshot lives in, e.g., "us-central1".
+         *
+         * @var string
+         */
+        public $region;
+        /**
+         * The job this snapshot was created from.
+         *
+         * @var string
+         */
+        public $sourceJobId;
+        /**
+         * State of the snapshot.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * The time after which this snapshot will be automatically deleted.
+         *
+         * @var string
+         */
+        public $ttl;
+        /**
+         * The time this snapshot was created.
+         *
+         * @param string $creationTime
+         */
+        public function setCreationTime($creationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationTime()
+        {
+        }
+        /**
+         * User specified description of the snapshot. Maybe empty.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The disk byte size of the snapshot. Only available for snapshots in READY
+         * state.
+         *
+         * @param string $diskSizeBytes
+         */
+        public function setDiskSizeBytes($diskSizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskSizeBytes()
+        {
+        }
+        /**
+         * The unique ID of this snapshot.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The project this snapshot belongs to.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Pub/Sub snapshot metadata.
+         *
+         * @param PubsubSnapshotMetadata[] $pubsubMetadata
+         */
+        public function setPubsubMetadata($pubsubMetadata)
+        {
+        }
+        /**
+         * @return PubsubSnapshotMetadata[]
+         */
+        public function getPubsubMetadata()
+        {
+        }
+        /**
+         * Cloud region where this snapshot lives in, e.g., "us-central1".
+         *
+         * @param string $region
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
+        /**
+         * The job this snapshot was created from.
+         *
+         * @param string $sourceJobId
+         */
+        public function setSourceJobId($sourceJobId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceJobId()
+        {
+        }
+        /**
+         * State of the snapshot.
+         *
+         * Accepted values: UNKNOWN_SNAPSHOT_STATE, PENDING, RUNNING, READY, FAILED,
+         * DELETED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * The time after which this snapshot will be automatically deleted.
+         *
+         * @param string $ttl
+         */
+        public function setTtl($ttl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTtl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\Snapshot registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreationTime()
-    {
-    }
-    /**
-     * User specified description of the snapshot. Maybe empty.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * The disk byte size of the snapshot. Only available for snapshots in READY
-     * state.
-     *
-     * @param string $diskSizeBytes
-     */
-    public function setDiskSizeBytes($diskSizeBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiskSizeBytes()
-    {
-    }
-    /**
-     * The unique ID of this snapshot.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The project this snapshot belongs to.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Pub/Sub snapshot metadata.
-     *
-     * @param PubsubSnapshotMetadata[] $pubsubMetadata
-     */
-    public function setPubsubMetadata($pubsubMetadata)
-    {
-    }
-    /**
-     * @return PubsubSnapshotMetadata[]
-     */
-    public function getPubsubMetadata()
-    {
-    }
-    /**
-     * Cloud region where this snapshot lives in, e.g., "us-central1".
-     *
-     * @param string $region
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegion()
-    {
-    }
-    /**
-     * The job this snapshot was created from.
-     *
-     * @param string $sourceJobId
-     */
-    public function setSourceJobId($sourceJobId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceJobId()
-    {
-    }
-    /**
-     * State of the snapshot.
-     *
-     * Accepted values: UNKNOWN_SNAPSHOT_STATE, PENDING, RUNNING, READY, FAILED,
-     * DELETED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * The time after which this snapshot will be automatically deleted.
-     *
-     * @param string $ttl
-     */
-    public function setTtl($ttl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTtl()
+    class Google_Service_Dataflow_Snapshot extends \Google\Service\Dataflow\Snapshot
     {
     }
 }

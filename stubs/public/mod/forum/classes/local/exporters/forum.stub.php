@@ -29,6 +29,11 @@
  */
 namespace mod_forum\local\exporters;
 
+use mod_forum\local\entities\forum as forum_entity;
+use mod_forum\local\exporters\post as post_exporter;
+use core\external\exporter;
+use renderer_base;
+use stdClass;
 /**
  * Forum class.
  *

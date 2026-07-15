@@ -21,124 +21,140 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo\Resource;
-
-/**
- * The "negativeKeywords" collection of methods.
- * Typical usage is:
- *  <code>
- *   $displayvideoService = new Google\Service\DisplayVideo(...);
- *   $negativeKeywords = $displayvideoService->advertisers_negativeKeywordLists_negativeKeywords;
- *  </code>
- */
-class AdvertisersNegativeKeywordListsNegativeKeywords extends \Google\Service\Resource
-{
+namespace Google\Service\DisplayVideo\Resource {
+    use Google\Service\DisplayVideo\BulkEditNegativeKeywordsRequest;
+    use Google\Service\DisplayVideo\BulkEditNegativeKeywordsResponse;
+    use Google\Service\DisplayVideo\DisplayvideoEmpty;
+    use Google\Service\DisplayVideo\ListNegativeKeywordsResponse;
+    use Google\Service\DisplayVideo\NegativeKeyword;
+    use Google\Service\DisplayVideo\ReplaceNegativeKeywordsRequest;
+    use Google\Service\DisplayVideo\ReplaceNegativeKeywordsResponse;
     /**
-     * Bulk edits negative keywords in a single negative keyword list. The operation
-     * will delete the negative keywords provided in
-     * BulkEditNegativeKeywordsRequest.deleted_negative_keywords and then create the
-     * negative keywords provided in
-     * BulkEditNegativeKeywordsRequest.created_negative_keywords. This operation is
-     * guaranteed to be atomic and will never result in a partial success or partial
-     * failure. (negativeKeywords.bulkEdit)
-     *
-     * @param string $advertiserId Required. The ID of the DV360 advertiser to which
-     * the parent negative keyword list belongs.
-     * @param string $negativeKeywordListId Required. The ID of the parent negative
-     * keyword list to which the negative keywords belong.
-     * @param BulkEditNegativeKeywordsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return BulkEditNegativeKeywordsResponse
-     * @throws \Google\Service\Exception
+     * The "negativeKeywords" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $displayvideoService = new Google\Service\DisplayVideo(...);
+     *   $negativeKeywords = $displayvideoService->advertisers_negativeKeywordLists_negativeKeywords;
+     *  </code>
      */
-    public function bulkEdit($advertiserId, $negativeKeywordListId, BulkEditNegativeKeywordsRequest $postBody, $optParams = [])
+    class AdvertisersNegativeKeywordListsNegativeKeywords extends \Google\Service\Resource
     {
+        /**
+         * Bulk edits negative keywords in a single negative keyword list. The operation
+         * will delete the negative keywords provided in
+         * BulkEditNegativeKeywordsRequest.deleted_negative_keywords and then create the
+         * negative keywords provided in
+         * BulkEditNegativeKeywordsRequest.created_negative_keywords. This operation is
+         * guaranteed to be atomic and will never result in a partial success or partial
+         * failure. (negativeKeywords.bulkEdit)
+         *
+         * @param string $advertiserId Required. The ID of the DV360 advertiser to which
+         * the parent negative keyword list belongs.
+         * @param string $negativeKeywordListId Required. The ID of the parent negative
+         * keyword list to which the negative keywords belong.
+         * @param BulkEditNegativeKeywordsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return BulkEditNegativeKeywordsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function bulkEdit($advertiserId, $negativeKeywordListId, BulkEditNegativeKeywordsRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Creates a negative keyword in a negative keyword list.
+         * (negativeKeywords.create)
+         *
+         * @param string $advertiserId Required. The ID of the DV360 advertiser to which
+         * the parent negative keyword list belongs.
+         * @param string $negativeKeywordListId Required. The ID of the parent negative
+         * keyword list in which the negative keyword will be created.
+         * @param NegativeKeyword $postBody
+         * @param array $optParams Optional parameters.
+         * @return NegativeKeyword
+         * @throws \Google\Service\Exception
+         */
+        public function create($advertiserId, $negativeKeywordListId, NegativeKeyword $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a negative keyword from a negative keyword list.
+         * (negativeKeywords.delete)
+         *
+         * @param string $advertiserId Required. The ID of the DV360 advertiser to which
+         * the parent negative keyword list belongs.
+         * @param string $negativeKeywordListId Required. The ID of the parent negative
+         * keyword list to which the negative keyword belongs.
+         * @param string $keywordValue Required. The keyword value of the negative
+         * keyword to delete.
+         * @param array $optParams Optional parameters.
+         * @return DisplayvideoEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($advertiserId, $negativeKeywordListId, $keywordValue, $optParams = [])
+        {
+        }
+        /**
+         * Lists negative keywords in a negative keyword list.
+         * (negativeKeywords.listAdvertisersNegativeKeywordListsNegativeKeywords)
+         *
+         * @param string $advertiserId Required. The ID of the DV360 advertiser to which
+         * the parent negative keyword list belongs.
+         * @param string $negativeKeywordListId Required. The ID of the parent negative
+         * keyword list to which the requested negative keywords belong.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Allows filtering by negative keyword fields.
+         * Supported syntax: * Filter expressions for negative keywords can only contain
+         * at most one restriction. * A restriction has the form of `{field} {operator}
+         * {value}`. * All fields must use the `HAS (:)` operator. Supported fields: *
+         * `keywordValue` Examples: * All negative keywords for which the keyword value
+         * contains "google": `keywordValue : "google"` The length of this field should
+         * be no more than 500 characters. Reference our [filter `LIST`
+         * requests](/display-video/api/guides/how-tos/filters) guide for more
+         * information.
+         * @opt_param string orderBy Field by which to sort the list. Acceptable values
+         * are: * `keywordValue` (default) The default sorting order is ascending. To
+         * specify descending order for a field, a suffix " desc" should be added to the
+         * field name. Example: `keywordValue desc`.
+         * @opt_param int pageSize Requested page size. Must be between `1` and `1000`.
+         * If unspecified will default to `100`. Returns error code `INVALID_ARGUMENT`
+         * if an invalid value is specified.
+         * @opt_param string pageToken A token identifying a page of results the server
+         * should return. Typically, this is the value of next_page_token returned from
+         * the previous call to `ListNegativeKeywords` method. If not specified, the
+         * first page of results will be returned.
+         * @return ListNegativeKeywordsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAdvertisersNegativeKeywordListsNegativeKeywords($advertiserId, $negativeKeywordListId, $optParams = [])
+        {
+        }
+        /**
+         * Replaces all negative keywords in a single negative keyword list. The
+         * operation will replace the keywords in a negative keyword list with keywords
+         * provided in ReplaceNegativeKeywordsRequest.new_negative_keywords.
+         * (negativeKeywords.replace)
+         *
+         * @param string $advertiserId Required. The ID of the DV360 advertiser to which
+         * the parent negative keyword list belongs.
+         * @param string $negativeKeywordListId Required. The ID of the parent negative
+         * keyword list to which the negative keywords belong.
+         * @param ReplaceNegativeKeywordsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ReplaceNegativeKeywordsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function replace($advertiserId, $negativeKeywordListId, ReplaceNegativeKeywordsRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Creates a negative keyword in a negative keyword list.
-     * (negativeKeywords.create)
-     *
-     * @param string $advertiserId Required. The ID of the DV360 advertiser to which
-     * the parent negative keyword list belongs.
-     * @param string $negativeKeywordListId Required. The ID of the parent negative
-     * keyword list in which the negative keyword will be created.
-     * @param NegativeKeyword $postBody
-     * @param array $optParams Optional parameters.
-     * @return NegativeKeyword
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\DisplayVideo\Resource\AdvertisersNegativeKeywordListsNegativeKeywords registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function create($advertiserId, $negativeKeywordListId, NegativeKeyword $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Deletes a negative keyword from a negative keyword list.
-     * (negativeKeywords.delete)
-     *
-     * @param string $advertiserId Required. The ID of the DV360 advertiser to which
-     * the parent negative keyword list belongs.
-     * @param string $negativeKeywordListId Required. The ID of the parent negative
-     * keyword list to which the negative keyword belongs.
-     * @param string $keywordValue Required. The keyword value of the negative
-     * keyword to delete.
-     * @param array $optParams Optional parameters.
-     * @return DisplayvideoEmpty
-     * @throws \Google\Service\Exception
-     */
-    public function delete($advertiserId, $negativeKeywordListId, $keywordValue, $optParams = [])
-    {
-    }
-    /**
-     * Lists negative keywords in a negative keyword list.
-     * (negativeKeywords.listAdvertisersNegativeKeywordListsNegativeKeywords)
-     *
-     * @param string $advertiserId Required. The ID of the DV360 advertiser to which
-     * the parent negative keyword list belongs.
-     * @param string $negativeKeywordListId Required. The ID of the parent negative
-     * keyword list to which the requested negative keywords belong.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Allows filtering by negative keyword fields.
-     * Supported syntax: * Filter expressions for negative keywords can only contain
-     * at most one restriction. * A restriction has the form of `{field} {operator}
-     * {value}`. * All fields must use the `HAS (:)` operator. Supported fields: *
-     * `keywordValue` Examples: * All negative keywords for which the keyword value
-     * contains "google": `keywordValue : "google"` The length of this field should
-     * be no more than 500 characters. Reference our [filter `LIST`
-     * requests](/display-video/api/guides/how-tos/filters) guide for more
-     * information.
-     * @opt_param string orderBy Field by which to sort the list. Acceptable values
-     * are: * `keywordValue` (default) The default sorting order is ascending. To
-     * specify descending order for a field, a suffix " desc" should be added to the
-     * field name. Example: `keywordValue desc`.
-     * @opt_param int pageSize Requested page size. Must be between `1` and `1000`.
-     * If unspecified will default to `100`. Returns error code `INVALID_ARGUMENT`
-     * if an invalid value is specified.
-     * @opt_param string pageToken A token identifying a page of results the server
-     * should return. Typically, this is the value of next_page_token returned from
-     * the previous call to `ListNegativeKeywords` method. If not specified, the
-     * first page of results will be returned.
-     * @return ListNegativeKeywordsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAdvertisersNegativeKeywordListsNegativeKeywords($advertiserId, $negativeKeywordListId, $optParams = [])
-    {
-    }
-    /**
-     * Replaces all negative keywords in a single negative keyword list. The
-     * operation will replace the keywords in a negative keyword list with keywords
-     * provided in ReplaceNegativeKeywordsRequest.new_negative_keywords.
-     * (negativeKeywords.replace)
-     *
-     * @param string $advertiserId Required. The ID of the DV360 advertiser to which
-     * the parent negative keyword list belongs.
-     * @param string $negativeKeywordListId Required. The ID of the parent negative
-     * keyword list to which the negative keywords belong.
-     * @param ReplaceNegativeKeywordsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ReplaceNegativeKeywordsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function replace($advertiserId, $negativeKeywordListId, ReplaceNegativeKeywordsRequest $postBody, $optParams = [])
+    class Google_Service_DisplayVideo_Resource_AdvertisersNegativeKeywordListsNegativeKeywords extends \Google\Service\DisplayVideo\Resource\AdvertisersNegativeKeywordListsNegativeKeywords
     {
     }
 }

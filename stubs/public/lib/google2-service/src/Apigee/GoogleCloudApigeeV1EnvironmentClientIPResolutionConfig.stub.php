@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1EnvironmentClientIPResolutionConfig extends \Google\Model
-{
-    protected $headerIndexAlgorithmType = GoogleCloudApigeeV1EnvironmentClientIPResolutionConfigHeaderIndexAlgorithm::class;
-    protected $headerIndexAlgorithmDataType = '';
-    /**
-     * Resolves the client ip based on a custom header.
-     *
-     * @param GoogleCloudApigeeV1EnvironmentClientIPResolutionConfigHeaderIndexAlgorithm $headerIndexAlgorithm
-     */
-    public function setHeaderIndexAlgorithm(GoogleCloudApigeeV1EnvironmentClientIPResolutionConfigHeaderIndexAlgorithm $headerIndexAlgorithm)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1EnvironmentClientIPResolutionConfig extends \Google\Model
     {
+        protected $headerIndexAlgorithmType = GoogleCloudApigeeV1EnvironmentClientIPResolutionConfigHeaderIndexAlgorithm::class;
+        protected $headerIndexAlgorithmDataType = '';
+        /**
+         * Resolves the client ip based on a custom header.
+         *
+         * @param GoogleCloudApigeeV1EnvironmentClientIPResolutionConfigHeaderIndexAlgorithm $headerIndexAlgorithm
+         */
+        public function setHeaderIndexAlgorithm(GoogleCloudApigeeV1EnvironmentClientIPResolutionConfigHeaderIndexAlgorithm $headerIndexAlgorithm)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1EnvironmentClientIPResolutionConfigHeaderIndexAlgorithm
+         */
+        public function getHeaderIndexAlgorithm()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1EnvironmentClientIPResolutionConfigHeaderIndexAlgorithm
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1EnvironmentClientIPResolutionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeaderIndexAlgorithm()
+    class Google_Service_Apigee_GoogleCloudApigeeV1EnvironmentClientIPResolutionConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1EnvironmentClientIPResolutionConfig
     {
     }
 }

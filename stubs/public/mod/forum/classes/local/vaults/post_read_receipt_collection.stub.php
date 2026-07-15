@@ -29,6 +29,7 @@
  */
 namespace mod_forum\local\vaults;
 
+use stdClass;
 /**
  * Post read receipt collection class.
  *

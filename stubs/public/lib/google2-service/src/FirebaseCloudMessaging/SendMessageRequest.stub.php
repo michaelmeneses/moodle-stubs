@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseCloudMessaging;
-
-class SendMessageRequest extends \Google\Model
-{
-    protected $messageType = Message::class;
-    protected $messageDataType = '';
-    /**
-     * Flag for testing the request without actually delivering the message.
-     *
-     * @var bool
-     */
-    public $validateOnly;
-    /**
-     * Required. Message to send.
-     *
-     * @param Message $message
-     */
-    public function setMessage(Message $message)
+namespace Google\Service\FirebaseCloudMessaging {
+    class SendMessageRequest extends \Google\Model
     {
+        protected $messageType = Message::class;
+        protected $messageDataType = '';
+        /**
+         * Flag for testing the request without actually delivering the message.
+         *
+         * @var bool
+         */
+        public $validateOnly;
+        /**
+         * Required. Message to send.
+         *
+         * @param Message $message
+         */
+        public function setMessage(Message $message)
+        {
+        }
+        /**
+         * @return Message
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * Flag for testing the request without actually delivering the message.
+         *
+         * @param bool $validateOnly
+         */
+        public function setValidateOnly($validateOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Message
+     * Runtime class alias of \Google\Service\FirebaseCloudMessaging\SendMessageRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessage()
-    {
-    }
-    /**
-     * Flag for testing the request without actually delivering the message.
-     *
-     * @param bool $validateOnly
-     */
-    public function setValidateOnly($validateOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidateOnly()
+    class Google_Service_FirebaseCloudMessaging_SendMessageRequest extends \Google\Service\FirebaseCloudMessaging\SendMessageRequest
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityPosture;
-
-class Constraint extends \Google\Model
-{
-    protected $orgPolicyConstraintType = OrgPolicyConstraint::class;
-    protected $orgPolicyConstraintDataType = '';
-    protected $orgPolicyConstraintCustomType = OrgPolicyConstraintCustom::class;
-    protected $orgPolicyConstraintCustomDataType = '';
-    protected $securityHealthAnalyticsCustomModuleType = SecurityHealthAnalyticsCustomModule::class;
-    protected $securityHealthAnalyticsCustomModuleDataType = '';
-    protected $securityHealthAnalyticsModuleType = SecurityHealthAnalyticsModule::class;
-    protected $securityHealthAnalyticsModuleDataType = '';
-    /**
-     * Optional. A predefined organization policy constraint.
-     *
-     * @param OrgPolicyConstraint $orgPolicyConstraint
-     */
-    public function setOrgPolicyConstraint(OrgPolicyConstraint $orgPolicyConstraint)
+namespace Google\Service\SecurityPosture {
+    class Constraint extends \Google\Model
     {
+        protected $orgPolicyConstraintType = OrgPolicyConstraint::class;
+        protected $orgPolicyConstraintDataType = '';
+        protected $orgPolicyConstraintCustomType = OrgPolicyConstraintCustom::class;
+        protected $orgPolicyConstraintCustomDataType = '';
+        protected $securityHealthAnalyticsCustomModuleType = SecurityHealthAnalyticsCustomModule::class;
+        protected $securityHealthAnalyticsCustomModuleDataType = '';
+        protected $securityHealthAnalyticsModuleType = SecurityHealthAnalyticsModule::class;
+        protected $securityHealthAnalyticsModuleDataType = '';
+        /**
+         * Optional. A predefined organization policy constraint.
+         *
+         * @param OrgPolicyConstraint $orgPolicyConstraint
+         */
+        public function setOrgPolicyConstraint(OrgPolicyConstraint $orgPolicyConstraint)
+        {
+        }
+        /**
+         * @return OrgPolicyConstraint
+         */
+        public function getOrgPolicyConstraint()
+        {
+        }
+        /**
+         * Optional. A custom organization policy constraint.
+         *
+         * @param OrgPolicyConstraintCustom $orgPolicyConstraintCustom
+         */
+        public function setOrgPolicyConstraintCustom(OrgPolicyConstraintCustom $orgPolicyConstraintCustom)
+        {
+        }
+        /**
+         * @return OrgPolicyConstraintCustom
+         */
+        public function getOrgPolicyConstraintCustom()
+        {
+        }
+        /**
+         * Optional. A custom module for Security Health Analytics.
+         *
+         * @param SecurityHealthAnalyticsCustomModule $securityHealthAnalyticsCustomModule
+         */
+        public function setSecurityHealthAnalyticsCustomModule(SecurityHealthAnalyticsCustomModule $securityHealthAnalyticsCustomModule)
+        {
+        }
+        /**
+         * @return SecurityHealthAnalyticsCustomModule
+         */
+        public function getSecurityHealthAnalyticsCustomModule()
+        {
+        }
+        /**
+         * Optional. A built-in detector for Security Health Analytics.
+         *
+         * @param SecurityHealthAnalyticsModule $securityHealthAnalyticsModule
+         */
+        public function setSecurityHealthAnalyticsModule(SecurityHealthAnalyticsModule $securityHealthAnalyticsModule)
+        {
+        }
+        /**
+         * @return SecurityHealthAnalyticsModule
+         */
+        public function getSecurityHealthAnalyticsModule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OrgPolicyConstraint
+     * Runtime class alias of \Google\Service\SecurityPosture\Constraint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOrgPolicyConstraint()
-    {
-    }
-    /**
-     * Optional. A custom organization policy constraint.
-     *
-     * @param OrgPolicyConstraintCustom $orgPolicyConstraintCustom
-     */
-    public function setOrgPolicyConstraintCustom(OrgPolicyConstraintCustom $orgPolicyConstraintCustom)
-    {
-    }
-    /**
-     * @return OrgPolicyConstraintCustom
-     */
-    public function getOrgPolicyConstraintCustom()
-    {
-    }
-    /**
-     * Optional. A custom module for Security Health Analytics.
-     *
-     * @param SecurityHealthAnalyticsCustomModule $securityHealthAnalyticsCustomModule
-     */
-    public function setSecurityHealthAnalyticsCustomModule(SecurityHealthAnalyticsCustomModule $securityHealthAnalyticsCustomModule)
-    {
-    }
-    /**
-     * @return SecurityHealthAnalyticsCustomModule
-     */
-    public function getSecurityHealthAnalyticsCustomModule()
-    {
-    }
-    /**
-     * Optional. A built-in detector for Security Health Analytics.
-     *
-     * @param SecurityHealthAnalyticsModule $securityHealthAnalyticsModule
-     */
-    public function setSecurityHealthAnalyticsModule(SecurityHealthAnalyticsModule $securityHealthAnalyticsModule)
-    {
-    }
-    /**
-     * @return SecurityHealthAnalyticsModule
-     */
-    public function getSecurityHealthAnalyticsModule()
+    class Google_Service_SecurityPosture_Constraint extends \Google\Service\SecurityPosture\Constraint
     {
     }
 }

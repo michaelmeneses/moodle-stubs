@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1PublicJwkSet extends \Google\Collection
-{
-    protected $collection_key = 'keys';
-    protected $keysType = GoogleFirebaseAppcheckV1PublicJwk::class;
-    protected $keysDataType = 'array';
-    /**
-     * The set of public keys. See [section 5.1 of RFC
-     * 7517](https://tools.ietf.org/html/rfc7517#section-5).
-     *
-     * @param GoogleFirebaseAppcheckV1PublicJwk[] $keys
-     */
-    public function setKeys($keys)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1PublicJwkSet extends \Google\Collection
     {
+        protected $collection_key = 'keys';
+        protected $keysType = GoogleFirebaseAppcheckV1PublicJwk::class;
+        protected $keysDataType = 'array';
+        /**
+         * The set of public keys. See [section 5.1 of RFC
+         * 7517](https://tools.ietf.org/html/rfc7517#section-5).
+         *
+         * @param GoogleFirebaseAppcheckV1PublicJwk[] $keys
+         */
+        public function setKeys($keys)
+        {
+        }
+        /**
+         * @return GoogleFirebaseAppcheckV1PublicJwk[]
+         */
+        public function getKeys()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFirebaseAppcheckV1PublicJwk[]
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1PublicJwkSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeys()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1PublicJwkSet extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1PublicJwkSet
     {
     }
 }

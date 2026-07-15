@@ -21,182 +21,191 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class GroupLicense extends \Google\Model
-{
-    public const ACQUISITION_KIND_free = 'free';
-    public const ACQUISITION_KIND_bulkPurchase = 'bulkPurchase';
-    public const APPROVAL_approved = 'approved';
-    public const APPROVAL_unapproved = 'unapproved';
-    public const PERMISSIONS_currentApproved = 'currentApproved';
-    public const PERMISSIONS_needsReapproval = 'needsReapproval';
-    public const PERMISSIONS_allCurrentAndFutureApproved = 'allCurrentAndFutureApproved';
-    /**
-     * How this group license was acquired. "bulkPurchase" means that this
-     * Grouplicenses resource was created because the enterprise purchased
-     * licenses for this product; otherwise, the value is "free" (for free
-     * products).
-     *
-     * @var string
-     */
-    public $acquisitionKind;
-    /**
-     * Whether the product to which this group license relates is currently
-     * approved by the enterprise. Products are approved when a group license is
-     * first created, but this approval may be revoked by an enterprise admin via
-     * Google Play. Unapproved products will not be visible to end users in
-     * collections, and new entitlements to them should not normally be created.
-     *
-     * @var string
-     */
-    public $approval;
-    /**
-     * The total number of provisioned licenses for this product. Returned by read
-     * operations, but ignored in write operations.
-     *
-     * @var int
-     */
-    public $numProvisioned;
-    /**
-     * The number of purchased licenses (possibly in multiple purchases). If this
-     * field is omitted, then there is no limit on the number of licenses that can
-     * be provisioned (for example, if the acquisition kind is "free").
-     *
-     * @var int
-     */
-    public $numPurchased;
-    /**
-     * The permission approval status of the product. This field is only set if
-     * the product is approved. Possible states are: - "currentApproved", the
-     * current set of permissions is approved, but additional permissions will
-     * require the administrator to reapprove the product (If the product was
-     * approved without specifying the approved permissions setting, then this is
-     * the default behavior.), - "needsReapproval", the product has unapproved
-     * permissions. No additional product licenses can be assigned until the
-     * product is reapproved, - "allCurrentAndFutureApproved", the current
-     * permissions are approved and any future permission updates will be
-     * automatically approved without administrator review.
-     *
-     * @var string
-     */
-    public $permissions;
-    /**
-     * The ID of the product that the license is for. For example,
-     * "app:com.google.android.gm".
-     *
-     * @var string
-     */
-    public $productId;
-    /**
-     * How this group license was acquired. "bulkPurchase" means that this
-     * Grouplicenses resource was created because the enterprise purchased
-     * licenses for this product; otherwise, the value is "free" (for free
-     * products).
-     *
-     * Accepted values: free, bulkPurchase
-     *
-     * @param self::ACQUISITION_KIND_* $acquisitionKind
-     */
-    public function setAcquisitionKind($acquisitionKind)
+namespace Google\Service\AndroidEnterprise {
+    class GroupLicense extends \Google\Model
     {
+        public const ACQUISITION_KIND_free = 'free';
+        public const ACQUISITION_KIND_bulkPurchase = 'bulkPurchase';
+        public const APPROVAL_approved = 'approved';
+        public const APPROVAL_unapproved = 'unapproved';
+        public const PERMISSIONS_currentApproved = 'currentApproved';
+        public const PERMISSIONS_needsReapproval = 'needsReapproval';
+        public const PERMISSIONS_allCurrentAndFutureApproved = 'allCurrentAndFutureApproved';
+        /**
+         * How this group license was acquired. "bulkPurchase" means that this
+         * Grouplicenses resource was created because the enterprise purchased
+         * licenses for this product; otherwise, the value is "free" (for free
+         * products).
+         *
+         * @var string
+         */
+        public $acquisitionKind;
+        /**
+         * Whether the product to which this group license relates is currently
+         * approved by the enterprise. Products are approved when a group license is
+         * first created, but this approval may be revoked by an enterprise admin via
+         * Google Play. Unapproved products will not be visible to end users in
+         * collections, and new entitlements to them should not normally be created.
+         *
+         * @var string
+         */
+        public $approval;
+        /**
+         * The total number of provisioned licenses for this product. Returned by read
+         * operations, but ignored in write operations.
+         *
+         * @var int
+         */
+        public $numProvisioned;
+        /**
+         * The number of purchased licenses (possibly in multiple purchases). If this
+         * field is omitted, then there is no limit on the number of licenses that can
+         * be provisioned (for example, if the acquisition kind is "free").
+         *
+         * @var int
+         */
+        public $numPurchased;
+        /**
+         * The permission approval status of the product. This field is only set if
+         * the product is approved. Possible states are: - "currentApproved", the
+         * current set of permissions is approved, but additional permissions will
+         * require the administrator to reapprove the product (If the product was
+         * approved without specifying the approved permissions setting, then this is
+         * the default behavior.), - "needsReapproval", the product has unapproved
+         * permissions. No additional product licenses can be assigned until the
+         * product is reapproved, - "allCurrentAndFutureApproved", the current
+         * permissions are approved and any future permission updates will be
+         * automatically approved without administrator review.
+         *
+         * @var string
+         */
+        public $permissions;
+        /**
+         * The ID of the product that the license is for. For example,
+         * "app:com.google.android.gm".
+         *
+         * @var string
+         */
+        public $productId;
+        /**
+         * How this group license was acquired. "bulkPurchase" means that this
+         * Grouplicenses resource was created because the enterprise purchased
+         * licenses for this product; otherwise, the value is "free" (for free
+         * products).
+         *
+         * Accepted values: free, bulkPurchase
+         *
+         * @param self::ACQUISITION_KIND_* $acquisitionKind
+         */
+        public function setAcquisitionKind($acquisitionKind)
+        {
+        }
+        /**
+         * @return self::ACQUISITION_KIND_*
+         */
+        public function getAcquisitionKind()
+        {
+        }
+        /**
+         * Whether the product to which this group license relates is currently
+         * approved by the enterprise. Products are approved when a group license is
+         * first created, but this approval may be revoked by an enterprise admin via
+         * Google Play. Unapproved products will not be visible to end users in
+         * collections, and new entitlements to them should not normally be created.
+         *
+         * Accepted values: approved, unapproved
+         *
+         * @param self::APPROVAL_* $approval
+         */
+        public function setApproval($approval)
+        {
+        }
+        /**
+         * @return self::APPROVAL_*
+         */
+        public function getApproval()
+        {
+        }
+        /**
+         * The total number of provisioned licenses for this product. Returned by read
+         * operations, but ignored in write operations.
+         *
+         * @param int $numProvisioned
+         */
+        public function setNumProvisioned($numProvisioned)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumProvisioned()
+        {
+        }
+        /**
+         * The number of purchased licenses (possibly in multiple purchases). If this
+         * field is omitted, then there is no limit on the number of licenses that can
+         * be provisioned (for example, if the acquisition kind is "free").
+         *
+         * @param int $numPurchased
+         */
+        public function setNumPurchased($numPurchased)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumPurchased()
+        {
+        }
+        /**
+         * The permission approval status of the product. This field is only set if
+         * the product is approved. Possible states are: - "currentApproved", the
+         * current set of permissions is approved, but additional permissions will
+         * require the administrator to reapprove the product (If the product was
+         * approved without specifying the approved permissions setting, then this is
+         * the default behavior.), - "needsReapproval", the product has unapproved
+         * permissions. No additional product licenses can be assigned until the
+         * product is reapproved, - "allCurrentAndFutureApproved", the current
+         * permissions are approved and any future permission updates will be
+         * automatically approved without administrator review.
+         *
+         * Accepted values: currentApproved, needsReapproval,
+         * allCurrentAndFutureApproved
+         *
+         * @param self::PERMISSIONS_* $permissions
+         */
+        public function setPermissions($permissions)
+        {
+        }
+        /**
+         * @return self::PERMISSIONS_*
+         */
+        public function getPermissions()
+        {
+        }
+        /**
+         * The ID of the product that the license is for. For example,
+         * "app:com.google.android.gm".
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACQUISITION_KIND_*
+     * Runtime class alias of \Google\Service\AndroidEnterprise\GroupLicense registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcquisitionKind()
-    {
-    }
-    /**
-     * Whether the product to which this group license relates is currently
-     * approved by the enterprise. Products are approved when a group license is
-     * first created, but this approval may be revoked by an enterprise admin via
-     * Google Play. Unapproved products will not be visible to end users in
-     * collections, and new entitlements to them should not normally be created.
-     *
-     * Accepted values: approved, unapproved
-     *
-     * @param self::APPROVAL_* $approval
-     */
-    public function setApproval($approval)
-    {
-    }
-    /**
-     * @return self::APPROVAL_*
-     */
-    public function getApproval()
-    {
-    }
-    /**
-     * The total number of provisioned licenses for this product. Returned by read
-     * operations, but ignored in write operations.
-     *
-     * @param int $numProvisioned
-     */
-    public function setNumProvisioned($numProvisioned)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumProvisioned()
-    {
-    }
-    /**
-     * The number of purchased licenses (possibly in multiple purchases). If this
-     * field is omitted, then there is no limit on the number of licenses that can
-     * be provisioned (for example, if the acquisition kind is "free").
-     *
-     * @param int $numPurchased
-     */
-    public function setNumPurchased($numPurchased)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumPurchased()
-    {
-    }
-    /**
-     * The permission approval status of the product. This field is only set if
-     * the product is approved. Possible states are: - "currentApproved", the
-     * current set of permissions is approved, but additional permissions will
-     * require the administrator to reapprove the product (If the product was
-     * approved without specifying the approved permissions setting, then this is
-     * the default behavior.), - "needsReapproval", the product has unapproved
-     * permissions. No additional product licenses can be assigned until the
-     * product is reapproved, - "allCurrentAndFutureApproved", the current
-     * permissions are approved and any future permission updates will be
-     * automatically approved without administrator review.
-     *
-     * Accepted values: currentApproved, needsReapproval,
-     * allCurrentAndFutureApproved
-     *
-     * @param self::PERMISSIONS_* $permissions
-     */
-    public function setPermissions($permissions)
-    {
-    }
-    /**
-     * @return self::PERMISSIONS_*
-     */
-    public function getPermissions()
-    {
-    }
-    /**
-     * The ID of the product that the license is for. For example,
-     * "app:com.google.android.gm".
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
+    class Google_Service_AndroidEnterprise_GroupLicense extends \Google\Service\AndroidEnterprise\GroupLicense
     {
     }
 }

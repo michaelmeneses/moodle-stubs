@@ -21,124 +21,133 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class TaskArtifactUpdateEvent extends \Google\Model
-{
-    /**
-     * Whether this should be appended to a prior one produced
-     *
-     * @var bool
-     */
-    public $append;
-    protected $artifactType = Artifact::class;
-    protected $artifactDataType = '';
-    /**
-     * The id of the context that this task belongs too
-     *
-     * @var string
-     */
-    public $contextId;
-    /**
-     * Whether this represents the last part of an artifact
-     *
-     * @var bool
-     */
-    public $lastChunk;
-    /**
-     * Optional metadata associated with the artifact update.
-     *
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * The id of the task for this artifact
-     *
-     * @var string
-     */
-    public $taskId;
-    /**
-     * Whether this should be appended to a prior one produced
-     *
-     * @param bool $append
-     */
-    public function setAppend($append)
+namespace Google\Service\WorkspaceEvents {
+    class TaskArtifactUpdateEvent extends \Google\Model
     {
+        /**
+         * Whether this should be appended to a prior one produced
+         *
+         * @var bool
+         */
+        public $append;
+        protected $artifactType = Artifact::class;
+        protected $artifactDataType = '';
+        /**
+         * The id of the context that this task belongs too
+         *
+         * @var string
+         */
+        public $contextId;
+        /**
+         * Whether this represents the last part of an artifact
+         *
+         * @var bool
+         */
+        public $lastChunk;
+        /**
+         * Optional metadata associated with the artifact update.
+         *
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * The id of the task for this artifact
+         *
+         * @var string
+         */
+        public $taskId;
+        /**
+         * Whether this should be appended to a prior one produced
+         *
+         * @param bool $append
+         */
+        public function setAppend($append)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAppend()
+        {
+        }
+        /**
+         * The artifact itself
+         *
+         * @param Artifact $artifact
+         */
+        public function setArtifact(Artifact $artifact)
+        {
+        }
+        /**
+         * @return Artifact
+         */
+        public function getArtifact()
+        {
+        }
+        /**
+         * The id of the context that this task belongs too
+         *
+         * @param string $contextId
+         */
+        public function setContextId($contextId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContextId()
+        {
+        }
+        /**
+         * Whether this represents the last part of an artifact
+         *
+         * @param bool $lastChunk
+         */
+        public function setLastChunk($lastChunk)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLastChunk()
+        {
+        }
+        /**
+         * Optional metadata associated with the artifact update.
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The id of the task for this artifact
+         *
+         * @param string $taskId
+         */
+        public function setTaskId($taskId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTaskId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\WorkspaceEvents\TaskArtifactUpdateEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppend()
-    {
-    }
-    /**
-     * The artifact itself
-     *
-     * @param Artifact $artifact
-     */
-    public function setArtifact(Artifact $artifact)
-    {
-    }
-    /**
-     * @return Artifact
-     */
-    public function getArtifact()
-    {
-    }
-    /**
-     * The id of the context that this task belongs too
-     *
-     * @param string $contextId
-     */
-    public function setContextId($contextId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContextId()
-    {
-    }
-    /**
-     * Whether this represents the last part of an artifact
-     *
-     * @param bool $lastChunk
-     */
-    public function setLastChunk($lastChunk)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getLastChunk()
-    {
-    }
-    /**
-     * Optional metadata associated with the artifact update.
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The id of the task for this artifact
-     *
-     * @param string $taskId
-     */
-    public function setTaskId($taskId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTaskId()
+    class Google_Service_WorkspaceEvents_TaskArtifactUpdateEvent extends \Google\Service\WorkspaceEvents\TaskArtifactUpdateEvent
     {
     }
 }

@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1OptimizedStatsNode extends \Google\Collection
-{
-    protected $collection_key = 'data';
-    /**
-     * List of data values.
-     *
-     * @var array[]
-     */
-    public $data;
-    /**
-     * List of data values.
-     *
-     * @param array[] $data
-     */
-    public function setData($data)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1OptimizedStatsNode extends \Google\Collection
     {
+        protected $collection_key = 'data';
+        /**
+         * List of data values.
+         *
+         * @var array[]
+         */
+        public $data;
+        /**
+         * List of data values.
+         *
+         * @param array[] $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1OptimizedStatsNode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
+    class Google_Service_Apigee_GoogleCloudApigeeV1OptimizedStatsNode extends \Google\Service\Apigee\GoogleCloudApigeeV1OptimizedStatsNode
     {
     }
 }

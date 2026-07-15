@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class BulkEditAdvertiserAssignedTargetingOptionsRequest extends \Google\Collection
-{
-    protected $collection_key = 'deleteRequests';
-    protected $createRequestsType = CreateAssignedTargetingOptionsRequest::class;
-    protected $createRequestsDataType = 'array';
-    protected $deleteRequestsType = DeleteAssignedTargetingOptionsRequest::class;
-    protected $deleteRequestsDataType = 'array';
-    /**
-     * The assigned targeting options to create in batch, specified as a list of
-     * `CreateAssignedTargetingOptionsRequest`. Supported targeting types: *
-     * `TARGETING_TYPE_CHANNEL` * `TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION`
-     * * `TARGETING_TYPE_OMID` * `TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION` *
-     * `TARGETING_TYPE_KEYWORD` * `TARGETING_TYPE_INVENTORY_MODE`
-     *
-     * @param CreateAssignedTargetingOptionsRequest[] $createRequests
-     */
-    public function setCreateRequests($createRequests)
+namespace Google\Service\DisplayVideo {
+    class BulkEditAdvertiserAssignedTargetingOptionsRequest extends \Google\Collection
     {
+        protected $collection_key = 'deleteRequests';
+        protected $createRequestsType = CreateAssignedTargetingOptionsRequest::class;
+        protected $createRequestsDataType = 'array';
+        protected $deleteRequestsType = DeleteAssignedTargetingOptionsRequest::class;
+        protected $deleteRequestsDataType = 'array';
+        /**
+         * The assigned targeting options to create in batch, specified as a list of
+         * `CreateAssignedTargetingOptionsRequest`. Supported targeting types: *
+         * `TARGETING_TYPE_CHANNEL` * `TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION`
+         * * `TARGETING_TYPE_OMID` * `TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION` *
+         * `TARGETING_TYPE_KEYWORD` * `TARGETING_TYPE_INVENTORY_MODE`
+         *
+         * @param CreateAssignedTargetingOptionsRequest[] $createRequests
+         */
+        public function setCreateRequests($createRequests)
+        {
+        }
+        /**
+         * @return CreateAssignedTargetingOptionsRequest[]
+         */
+        public function getCreateRequests()
+        {
+        }
+        /**
+         * The assigned targeting options to delete in batch, specified as a list of
+         * `DeleteAssignedTargetingOptionsRequest`. Supported targeting types: *
+         * `TARGETING_TYPE_CHANNEL` * `TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION`
+         * * `TARGETING_TYPE_OMID` * `TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION` *
+         * `TARGETING_TYPE_KEYWORD` * `TARGETING_TYPE_INVENTORY_MODE`
+         *
+         * @param DeleteAssignedTargetingOptionsRequest[] $deleteRequests
+         */
+        public function setDeleteRequests($deleteRequests)
+        {
+        }
+        /**
+         * @return DeleteAssignedTargetingOptionsRequest[]
+         */
+        public function getDeleteRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CreateAssignedTargetingOptionsRequest[]
+     * Runtime class alias of \Google\Service\DisplayVideo\BulkEditAdvertiserAssignedTargetingOptionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateRequests()
-    {
-    }
-    /**
-     * The assigned targeting options to delete in batch, specified as a list of
-     * `DeleteAssignedTargetingOptionsRequest`. Supported targeting types: *
-     * `TARGETING_TYPE_CHANNEL` * `TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION`
-     * * `TARGETING_TYPE_OMID` * `TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION` *
-     * `TARGETING_TYPE_KEYWORD` * `TARGETING_TYPE_INVENTORY_MODE`
-     *
-     * @param DeleteAssignedTargetingOptionsRequest[] $deleteRequests
-     */
-    public function setDeleteRequests($deleteRequests)
-    {
-    }
-    /**
-     * @return DeleteAssignedTargetingOptionsRequest[]
-     */
-    public function getDeleteRequests()
+    class Google_Service_DisplayVideo_BulkEditAdvertiserAssignedTargetingOptionsRequest extends \Google\Service\DisplayVideo\BulkEditAdvertiserAssignedTargetingOptionsRequest
     {
     }
 }

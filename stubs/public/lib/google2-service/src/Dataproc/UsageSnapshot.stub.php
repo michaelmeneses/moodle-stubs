@@ -21,164 +21,173 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class UsageSnapshot extends \Google\Model
-{
-    /**
-     * Optional. Accelerator type being used, if any
-     *
-     * @var string
-     */
-    public $acceleratorType;
-    /**
-     * Optional. Milli (one-thousandth) accelerator. (see Dataproc Serverless
-     * pricing (https://cloud.google.com/dataproc-serverless/pricing))
-     *
-     * @var string
-     */
-    public $milliAccelerator;
-    /**
-     * Optional. Milli (one-thousandth) Dataproc Compute Units (DCUs) (see
-     * Dataproc Serverless pricing (https://cloud.google.com/dataproc-
-     * serverless/pricing)).
-     *
-     * @var string
-     */
-    public $milliDcu;
-    /**
-     * Optional. Milli (one-thousandth) Dataproc Compute Units (DCUs) charged at
-     * premium tier (see Dataproc Serverless pricing
-     * (https://cloud.google.com/dataproc-serverless/pricing)).
-     *
-     * @var string
-     */
-    public $milliDcuPremium;
-    /**
-     * Optional. Shuffle Storage in gigabytes (GB). (see Dataproc Serverless
-     * pricing (https://cloud.google.com/dataproc-serverless/pricing))
-     *
-     * @var string
-     */
-    public $shuffleStorageGb;
-    /**
-     * Optional. Shuffle Storage in gigabytes (GB) charged at premium tier. (see
-     * Dataproc Serverless pricing (https://cloud.google.com/dataproc-
-     * serverless/pricing))
-     *
-     * @var string
-     */
-    public $shuffleStorageGbPremium;
-    /**
-     * Optional. The timestamp of the usage snapshot.
-     *
-     * @var string
-     */
-    public $snapshotTime;
-    /**
-     * Optional. Accelerator type being used, if any
-     *
-     * @param string $acceleratorType
-     */
-    public function setAcceleratorType($acceleratorType)
+namespace Google\Service\Dataproc {
+    class UsageSnapshot extends \Google\Model
     {
+        /**
+         * Optional. Accelerator type being used, if any
+         *
+         * @var string
+         */
+        public $acceleratorType;
+        /**
+         * Optional. Milli (one-thousandth) accelerator. (see Dataproc Serverless
+         * pricing (https://cloud.google.com/dataproc-serverless/pricing))
+         *
+         * @var string
+         */
+        public $milliAccelerator;
+        /**
+         * Optional. Milli (one-thousandth) Dataproc Compute Units (DCUs) (see
+         * Dataproc Serverless pricing (https://cloud.google.com/dataproc-
+         * serverless/pricing)).
+         *
+         * @var string
+         */
+        public $milliDcu;
+        /**
+         * Optional. Milli (one-thousandth) Dataproc Compute Units (DCUs) charged at
+         * premium tier (see Dataproc Serverless pricing
+         * (https://cloud.google.com/dataproc-serverless/pricing)).
+         *
+         * @var string
+         */
+        public $milliDcuPremium;
+        /**
+         * Optional. Shuffle Storage in gigabytes (GB). (see Dataproc Serverless
+         * pricing (https://cloud.google.com/dataproc-serverless/pricing))
+         *
+         * @var string
+         */
+        public $shuffleStorageGb;
+        /**
+         * Optional. Shuffle Storage in gigabytes (GB) charged at premium tier. (see
+         * Dataproc Serverless pricing (https://cloud.google.com/dataproc-
+         * serverless/pricing))
+         *
+         * @var string
+         */
+        public $shuffleStorageGbPremium;
+        /**
+         * Optional. The timestamp of the usage snapshot.
+         *
+         * @var string
+         */
+        public $snapshotTime;
+        /**
+         * Optional. Accelerator type being used, if any
+         *
+         * @param string $acceleratorType
+         */
+        public function setAcceleratorType($acceleratorType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAcceleratorType()
+        {
+        }
+        /**
+         * Optional. Milli (one-thousandth) accelerator. (see Dataproc Serverless
+         * pricing (https://cloud.google.com/dataproc-serverless/pricing))
+         *
+         * @param string $milliAccelerator
+         */
+        public function setMilliAccelerator($milliAccelerator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMilliAccelerator()
+        {
+        }
+        /**
+         * Optional. Milli (one-thousandth) Dataproc Compute Units (DCUs) (see
+         * Dataproc Serverless pricing (https://cloud.google.com/dataproc-
+         * serverless/pricing)).
+         *
+         * @param string $milliDcu
+         */
+        public function setMilliDcu($milliDcu)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMilliDcu()
+        {
+        }
+        /**
+         * Optional. Milli (one-thousandth) Dataproc Compute Units (DCUs) charged at
+         * premium tier (see Dataproc Serverless pricing
+         * (https://cloud.google.com/dataproc-serverless/pricing)).
+         *
+         * @param string $milliDcuPremium
+         */
+        public function setMilliDcuPremium($milliDcuPremium)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMilliDcuPremium()
+        {
+        }
+        /**
+         * Optional. Shuffle Storage in gigabytes (GB). (see Dataproc Serverless
+         * pricing (https://cloud.google.com/dataproc-serverless/pricing))
+         *
+         * @param string $shuffleStorageGb
+         */
+        public function setShuffleStorageGb($shuffleStorageGb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShuffleStorageGb()
+        {
+        }
+        /**
+         * Optional. Shuffle Storage in gigabytes (GB) charged at premium tier. (see
+         * Dataproc Serverless pricing (https://cloud.google.com/dataproc-
+         * serverless/pricing))
+         *
+         * @param string $shuffleStorageGbPremium
+         */
+        public function setShuffleStorageGbPremium($shuffleStorageGbPremium)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShuffleStorageGbPremium()
+        {
+        }
+        /**
+         * Optional. The timestamp of the usage snapshot.
+         *
+         * @param string $snapshotTime
+         */
+        public function setSnapshotTime($snapshotTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnapshotTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\UsageSnapshot registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcceleratorType()
-    {
-    }
-    /**
-     * Optional. Milli (one-thousandth) accelerator. (see Dataproc Serverless
-     * pricing (https://cloud.google.com/dataproc-serverless/pricing))
-     *
-     * @param string $milliAccelerator
-     */
-    public function setMilliAccelerator($milliAccelerator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMilliAccelerator()
-    {
-    }
-    /**
-     * Optional. Milli (one-thousandth) Dataproc Compute Units (DCUs) (see
-     * Dataproc Serverless pricing (https://cloud.google.com/dataproc-
-     * serverless/pricing)).
-     *
-     * @param string $milliDcu
-     */
-    public function setMilliDcu($milliDcu)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMilliDcu()
-    {
-    }
-    /**
-     * Optional. Milli (one-thousandth) Dataproc Compute Units (DCUs) charged at
-     * premium tier (see Dataproc Serverless pricing
-     * (https://cloud.google.com/dataproc-serverless/pricing)).
-     *
-     * @param string $milliDcuPremium
-     */
-    public function setMilliDcuPremium($milliDcuPremium)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMilliDcuPremium()
-    {
-    }
-    /**
-     * Optional. Shuffle Storage in gigabytes (GB). (see Dataproc Serverless
-     * pricing (https://cloud.google.com/dataproc-serverless/pricing))
-     *
-     * @param string $shuffleStorageGb
-     */
-    public function setShuffleStorageGb($shuffleStorageGb)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShuffleStorageGb()
-    {
-    }
-    /**
-     * Optional. Shuffle Storage in gigabytes (GB) charged at premium tier. (see
-     * Dataproc Serverless pricing (https://cloud.google.com/dataproc-
-     * serverless/pricing))
-     *
-     * @param string $shuffleStorageGbPremium
-     */
-    public function setShuffleStorageGbPremium($shuffleStorageGbPremium)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShuffleStorageGbPremium()
-    {
-    }
-    /**
-     * Optional. The timestamp of the usage snapshot.
-     *
-     * @param string $snapshotTime
-     */
-    public function setSnapshotTime($snapshotTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnapshotTime()
+    class Google_Service_Dataproc_UsageSnapshot extends \Google\Service\Dataproc\UsageSnapshot
     {
     }
 }

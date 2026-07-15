@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class CloudLoggingEntry extends \Google\Model
-{
-    /**
-     * A unique identifier for the log entry.
-     *
-     * @var string
-     */
-    public $insertId;
-    /**
-     * The type of the log (part of `log_name`. `log_name` is the resource name of
-     * the log to which this log entry belongs). For example:
-     * `cloudresourcemanager.googleapis.com/activity`. Note that this field is not
-     * URL-encoded, unlike the `LOG_ID` field in `LogEntry`.
-     *
-     * @var string
-     */
-    public $logId;
-    /**
-     * The organization, folder, or project of the monitored resource that
-     * produced this log entry.
-     *
-     * @var string
-     */
-    public $resourceContainer;
-    /**
-     * The time the event described by the log entry occurred.
-     *
-     * @var string
-     */
-    public $timestamp;
-    /**
-     * A unique identifier for the log entry.
-     *
-     * @param string $insertId
-     */
-    public function setInsertId($insertId)
+namespace Google\Service\SecurityCommandCenter {
+    class CloudLoggingEntry extends \Google\Model
     {
+        /**
+         * A unique identifier for the log entry.
+         *
+         * @var string
+         */
+        public $insertId;
+        /**
+         * The type of the log (part of `log_name`. `log_name` is the resource name of
+         * the log to which this log entry belongs). For example:
+         * `cloudresourcemanager.googleapis.com/activity`. Note that this field is not
+         * URL-encoded, unlike the `LOG_ID` field in `LogEntry`.
+         *
+         * @var string
+         */
+        public $logId;
+        /**
+         * The organization, folder, or project of the monitored resource that
+         * produced this log entry.
+         *
+         * @var string
+         */
+        public $resourceContainer;
+        /**
+         * The time the event described by the log entry occurred.
+         *
+         * @var string
+         */
+        public $timestamp;
+        /**
+         * A unique identifier for the log entry.
+         *
+         * @param string $insertId
+         */
+        public function setInsertId($insertId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInsertId()
+        {
+        }
+        /**
+         * The type of the log (part of `log_name`. `log_name` is the resource name of
+         * the log to which this log entry belongs). For example:
+         * `cloudresourcemanager.googleapis.com/activity`. Note that this field is not
+         * URL-encoded, unlike the `LOG_ID` field in `LogEntry`.
+         *
+         * @param string $logId
+         */
+        public function setLogId($logId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLogId()
+        {
+        }
+        /**
+         * The organization, folder, or project of the monitored resource that
+         * produced this log entry.
+         *
+         * @param string $resourceContainer
+         */
+        public function setResourceContainer($resourceContainer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceContainer()
+        {
+        }
+        /**
+         * The time the event described by the log entry occurred.
+         *
+         * @param string $timestamp
+         */
+        public function setTimestamp($timestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestamp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\CloudLoggingEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInsertId()
-    {
-    }
-    /**
-     * The type of the log (part of `log_name`. `log_name` is the resource name of
-     * the log to which this log entry belongs). For example:
-     * `cloudresourcemanager.googleapis.com/activity`. Note that this field is not
-     * URL-encoded, unlike the `LOG_ID` field in `LogEntry`.
-     *
-     * @param string $logId
-     */
-    public function setLogId($logId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLogId()
-    {
-    }
-    /**
-     * The organization, folder, or project of the monitored resource that
-     * produced this log entry.
-     *
-     * @param string $resourceContainer
-     */
-    public function setResourceContainer($resourceContainer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceContainer()
-    {
-    }
-    /**
-     * The time the event described by the log entry occurred.
-     *
-     * @param string $timestamp
-     */
-    public function setTimestamp($timestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestamp()
+    class Google_Service_SecurityCommandCenter_CloudLoggingEntry extends \Google\Service\SecurityCommandCenter\CloudLoggingEntry
     {
     }
 }

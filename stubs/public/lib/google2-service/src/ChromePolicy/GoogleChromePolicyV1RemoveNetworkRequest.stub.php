@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyV1RemoveNetworkRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $networkId;
-    /**
-     * @var string
-     */
-    public $targetResource;
-    /**
-     * @param string
-     */
-    public function setNetworkId($networkId)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyV1RemoveNetworkRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $networkId;
+        /**
+         * @var string
+         */
+        public $targetResource;
+        /**
+         * @param string
+         */
+        public function setNetworkId($networkId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTargetResource($targetResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyV1RemoveNetworkRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTargetResource($targetResource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetResource()
+    class Google_Service_ChromePolicy_GoogleChromePolicyV1RemoveNetworkRequest extends \Google\Service\ChromePolicy\GoogleChromePolicyV1RemoveNetworkRequest
     {
     }
 }

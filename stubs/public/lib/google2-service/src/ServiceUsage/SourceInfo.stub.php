@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class SourceInfo extends \Google\Collection
-{
-    protected $collection_key = 'sourceFiles';
-    /**
-     * All files used during config generation.
-     *
-     * @var array[]
-     */
-    public $sourceFiles;
-    /**
-     * All files used during config generation.
-     *
-     * @param array[] $sourceFiles
-     */
-    public function setSourceFiles($sourceFiles)
+namespace Google\Service\ServiceUsage {
+    class SourceInfo extends \Google\Collection
     {
+        protected $collection_key = 'sourceFiles';
+        /**
+         * All files used during config generation.
+         *
+         * @var array[]
+         */
+        public $sourceFiles;
+        /**
+         * All files used during config generation.
+         *
+         * @param array[] $sourceFiles
+         */
+        public function setSourceFiles($sourceFiles)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getSourceFiles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\ServiceUsage\SourceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSourceFiles()
+    class Google_Service_ServiceUsage_SourceInfo extends \Google\Service\ServiceUsage\SourceInfo
     {
     }
 }

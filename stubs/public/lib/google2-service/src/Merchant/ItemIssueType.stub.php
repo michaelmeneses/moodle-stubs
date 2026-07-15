@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Merchant;
-
-class ItemIssueType extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $canonicalAttribute;
-    /**
-     * @var string
-     */
-    public $code;
-    /**
-     * @param string
-     */
-    public function setCanonicalAttribute($canonicalAttribute)
+namespace Google\Service\Merchant {
+    class ItemIssueType extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $canonicalAttribute;
+        /**
+         * @var string
+         */
+        public $code;
+        /**
+         * @param string
+         */
+        public function setCanonicalAttribute($canonicalAttribute)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCanonicalAttribute()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Merchant\ItemIssueType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanonicalAttribute()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCode($code)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCode()
+    class Google_Service_Merchant_ItemIssueType extends \Google\Service\Merchant\ItemIssueType
     {
     }
 }

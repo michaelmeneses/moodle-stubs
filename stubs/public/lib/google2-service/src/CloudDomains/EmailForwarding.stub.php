@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDomains;
-
-class EmailForwarding extends \Google\Model
-{
-    /**
-     * An alias recipient email that forwards emails to the
-     * `target_email_address`. For example, `admin@example.com` or `*@example.com`
-     * (wildcard alias forwards all the emails under the registered domain).
-     *
-     * @var string
-     */
-    public $alias;
-    /**
-     * Target email that receives emails sent to the `alias`.
-     *
-     * @var string
-     */
-    public $targetEmailAddress;
-    /**
-     * An alias recipient email that forwards emails to the
-     * `target_email_address`. For example, `admin@example.com` or `*@example.com`
-     * (wildcard alias forwards all the emails under the registered domain).
-     *
-     * @param string $alias
-     */
-    public function setAlias($alias)
+namespace Google\Service\CloudDomains {
+    class EmailForwarding extends \Google\Model
     {
+        /**
+         * An alias recipient email that forwards emails to the
+         * `target_email_address`. For example, `admin@example.com` or `*@example.com`
+         * (wildcard alias forwards all the emails under the registered domain).
+         *
+         * @var string
+         */
+        public $alias;
+        /**
+         * Target email that receives emails sent to the `alias`.
+         *
+         * @var string
+         */
+        public $targetEmailAddress;
+        /**
+         * An alias recipient email that forwards emails to the
+         * `target_email_address`. For example, `admin@example.com` or `*@example.com`
+         * (wildcard alias forwards all the emails under the registered domain).
+         *
+         * @param string $alias
+         */
+        public function setAlias($alias)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAlias()
+        {
+        }
+        /**
+         * Target email that receives emails sent to the `alias`.
+         *
+         * @param string $targetEmailAddress
+         */
+        public function setTargetEmailAddress($targetEmailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetEmailAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDomains\EmailForwarding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlias()
-    {
-    }
-    /**
-     * Target email that receives emails sent to the `alias`.
-     *
-     * @param string $targetEmailAddress
-     */
-    public function setTargetEmailAddress($targetEmailAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetEmailAddress()
+    class Google_Service_CloudDomains_EmailForwarding extends \Google\Service\CloudDomains\EmailForwarding
     {
     }
 }

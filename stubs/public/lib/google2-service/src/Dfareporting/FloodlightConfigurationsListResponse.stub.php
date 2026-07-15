@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class FloodlightConfigurationsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'floodlightConfigurations';
-    protected $floodlightConfigurationsType = FloodlightConfiguration::class;
-    protected $floodlightConfigurationsDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#floodlightConfigurationsListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Floodlight configuration collection.
-     *
-     * @param FloodlightConfiguration[] $floodlightConfigurations
-     */
-    public function setFloodlightConfigurations($floodlightConfigurations)
+namespace Google\Service\Dfareporting {
+    class FloodlightConfigurationsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'floodlightConfigurations';
+        protected $floodlightConfigurationsType = FloodlightConfiguration::class;
+        protected $floodlightConfigurationsDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#floodlightConfigurationsListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Floodlight configuration collection.
+         *
+         * @param FloodlightConfiguration[] $floodlightConfigurations
+         */
+        public function setFloodlightConfigurations($floodlightConfigurations)
+        {
+        }
+        /**
+         * @return FloodlightConfiguration[]
+         */
+        public function getFloodlightConfigurations()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#floodlightConfigurationsListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FloodlightConfiguration[]
+     * Runtime class alias of \Google\Service\Dfareporting\FloodlightConfigurationsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFloodlightConfigurations()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#floodlightConfigurationsListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Dfareporting_FloodlightConfigurationsListResponse extends \Google\Service\Dfareporting\FloodlightConfigurationsListResponse
     {
     }
 }

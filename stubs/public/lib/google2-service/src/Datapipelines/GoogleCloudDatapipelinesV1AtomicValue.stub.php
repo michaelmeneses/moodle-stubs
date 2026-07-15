@@ -21,171 +21,180 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1AtomicValue extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $booleanValue;
-    /**
-     * @var int
-     */
-    public $byteValue;
-    /**
-     * @var string
-     */
-    public $bytesValue;
-    protected $datetimeValueType = GoogleTypeDateTime::class;
-    protected $datetimeValueDataType = '';
-    protected $decimalValueType = GoogleTypeDecimal::class;
-    protected $decimalValueDataType = '';
-    public $doubleValue;
-    /**
-     * @var float
-     */
-    public $floatValue;
-    /**
-     * @var int
-     */
-    public $int16Value;
-    /**
-     * @var int
-     */
-    public $int32Value;
-    /**
-     * @var string
-     */
-    public $int64Value;
-    /**
-     * @var string
-     */
-    public $stringValue;
-    /**
-     * @param bool
-     */
-    public function setBooleanValue($booleanValue)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1AtomicValue extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $booleanValue;
+        /**
+         * @var int
+         */
+        public $byteValue;
+        /**
+         * @var string
+         */
+        public $bytesValue;
+        protected $datetimeValueType = GoogleTypeDateTime::class;
+        protected $datetimeValueDataType = '';
+        protected $decimalValueType = GoogleTypeDecimal::class;
+        protected $decimalValueDataType = '';
+        public $doubleValue;
+        /**
+         * @var float
+         */
+        public $floatValue;
+        /**
+         * @var int
+         */
+        public $int16Value;
+        /**
+         * @var int
+         */
+        public $int32Value;
+        /**
+         * @var string
+         */
+        public $int64Value;
+        /**
+         * @var string
+         */
+        public $stringValue;
+        /**
+         * @param bool
+         */
+        public function setBooleanValue($booleanValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBooleanValue()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setByteValue($byteValue)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getByteValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBytesValue($bytesValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBytesValue()
+        {
+        }
+        /**
+         * @param GoogleTypeDateTime
+         */
+        public function setDatetimeValue(GoogleTypeDateTime $datetimeValue)
+        {
+        }
+        /**
+         * @return GoogleTypeDateTime
+         */
+        public function getDatetimeValue()
+        {
+        }
+        /**
+         * @param GoogleTypeDecimal
+         */
+        public function setDecimalValue(GoogleTypeDecimal $decimalValue)
+        {
+        }
+        /**
+         * @return GoogleTypeDecimal
+         */
+        public function getDecimalValue()
+        {
+        }
+        public function setDoubleValue($doubleValue)
+        {
+        }
+        public function getDoubleValue()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setFloatValue($floatValue)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getFloatValue()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setInt16Value($int16Value)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getInt16Value()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setInt32Value($int32Value)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getInt32Value()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInt64Value($int64Value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInt64Value()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1AtomicValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBooleanValue()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setByteValue($byteValue)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getByteValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBytesValue($bytesValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBytesValue()
-    {
-    }
-    /**
-     * @param GoogleTypeDateTime
-     */
-    public function setDatetimeValue(GoogleTypeDateTime $datetimeValue)
-    {
-    }
-    /**
-     * @return GoogleTypeDateTime
-     */
-    public function getDatetimeValue()
-    {
-    }
-    /**
-     * @param GoogleTypeDecimal
-     */
-    public function setDecimalValue(GoogleTypeDecimal $decimalValue)
-    {
-    }
-    /**
-     * @return GoogleTypeDecimal
-     */
-    public function getDecimalValue()
-    {
-    }
-    public function setDoubleValue($doubleValue)
-    {
-    }
-    public function getDoubleValue()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setFloatValue($floatValue)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getFloatValue()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setInt16Value($int16Value)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getInt16Value()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setInt32Value($int32Value)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getInt32Value()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInt64Value($int64Value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInt64Value()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1AtomicValue extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1AtomicValue
     {
     }
 }

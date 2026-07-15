@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class TextButton extends \Google\Model
-{
-    protected $onClickType = OnClick::class;
-    protected $onClickDataType = '';
-    /**
-     * The text of the button.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * The `onclick` action of the button.
-     *
-     * @param OnClick $onClick
-     */
-    public function setOnClick(OnClick $onClick)
+namespace Google\Service\HangoutsChat {
+    class TextButton extends \Google\Model
     {
+        protected $onClickType = OnClick::class;
+        protected $onClickDataType = '';
+        /**
+         * The text of the button.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * The `onclick` action of the button.
+         *
+         * @param OnClick $onClick
+         */
+        public function setOnClick(OnClick $onClick)
+        {
+        }
+        /**
+         * @return OnClick
+         */
+        public function getOnClick()
+        {
+        }
+        /**
+         * The text of the button.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OnClick
+     * Runtime class alias of \Google\Service\HangoutsChat\TextButton registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOnClick()
-    {
-    }
-    /**
-     * The text of the button.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_HangoutsChat_TextButton extends \Google\Service\HangoutsChat\TextButton
     {
     }
 }

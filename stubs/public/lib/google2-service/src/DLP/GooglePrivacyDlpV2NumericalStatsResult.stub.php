@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2NumericalStatsResult extends \Google\Collection
-{
-    protected $collection_key = 'quantileValues';
-    protected $maxValueType = GooglePrivacyDlpV2Value::class;
-    protected $maxValueDataType = '';
-    protected $minValueType = GooglePrivacyDlpV2Value::class;
-    protected $minValueDataType = '';
-    protected $quantileValuesType = GooglePrivacyDlpV2Value::class;
-    protected $quantileValuesDataType = 'array';
-    /**
-     * Maximum value appearing in the column.
-     *
-     * @param GooglePrivacyDlpV2Value $maxValue
-     */
-    public function setMaxValue(GooglePrivacyDlpV2Value $maxValue)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2NumericalStatsResult extends \Google\Collection
     {
+        protected $collection_key = 'quantileValues';
+        protected $maxValueType = GooglePrivacyDlpV2Value::class;
+        protected $maxValueDataType = '';
+        protected $minValueType = GooglePrivacyDlpV2Value::class;
+        protected $minValueDataType = '';
+        protected $quantileValuesType = GooglePrivacyDlpV2Value::class;
+        protected $quantileValuesDataType = 'array';
+        /**
+         * Maximum value appearing in the column.
+         *
+         * @param GooglePrivacyDlpV2Value $maxValue
+         */
+        public function setMaxValue(GooglePrivacyDlpV2Value $maxValue)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Value
+         */
+        public function getMaxValue()
+        {
+        }
+        /**
+         * Minimum value appearing in the column.
+         *
+         * @param GooglePrivacyDlpV2Value $minValue
+         */
+        public function setMinValue(GooglePrivacyDlpV2Value $minValue)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Value
+         */
+        public function getMinValue()
+        {
+        }
+        /**
+         * List of 99 values that partition the set of field values into 100 equal
+         * sized buckets.
+         *
+         * @param GooglePrivacyDlpV2Value[] $quantileValues
+         */
+        public function setQuantileValues($quantileValues)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Value[]
+         */
+        public function getQuantileValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2Value
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2NumericalStatsResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxValue()
-    {
-    }
-    /**
-     * Minimum value appearing in the column.
-     *
-     * @param GooglePrivacyDlpV2Value $minValue
-     */
-    public function setMinValue(GooglePrivacyDlpV2Value $minValue)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Value
-     */
-    public function getMinValue()
-    {
-    }
-    /**
-     * List of 99 values that partition the set of field values into 100 equal
-     * sized buckets.
-     *
-     * @param GooglePrivacyDlpV2Value[] $quantileValues
-     */
-    public function setQuantileValues($quantileValues)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Value[]
-     */
-    public function getQuantileValues()
+    class Google_Service_DLP_GooglePrivacyDlpV2NumericalStatsResult extends \Google\Service\DLP\GooglePrivacyDlpV2NumericalStatsResult
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class ApplyJobDetails extends \Google\Model
-{
-    /**
-     * Output only. The connection profile which was used for the apply job.
-     *
-     * @var string
-     */
-    public $connectionProfile;
-    /**
-     * Output only. AIP-160 based filter used to specify the entities to apply
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * Output only. The connection profile which was used for the apply job.
-     *
-     * @param string $connectionProfile
-     */
-    public function setConnectionProfile($connectionProfile)
+namespace Google\Service\DatabaseMigrationService {
+    class ApplyJobDetails extends \Google\Model
     {
+        /**
+         * Output only. The connection profile which was used for the apply job.
+         *
+         * @var string
+         */
+        public $connectionProfile;
+        /**
+         * Output only. AIP-160 based filter used to specify the entities to apply
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * Output only. The connection profile which was used for the apply job.
+         *
+         * @param string $connectionProfile
+         */
+        public function setConnectionProfile($connectionProfile)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConnectionProfile()
+        {
+        }
+        /**
+         * Output only. AIP-160 based filter used to specify the entities to apply
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\ApplyJobDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectionProfile()
-    {
-    }
-    /**
-     * Output only. AIP-160 based filter used to specify the entities to apply
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilter()
+    class Google_Service_DatabaseMigrationService_ApplyJobDetails extends \Google\Service\DatabaseMigrationService\ApplyJobDetails
     {
     }
 }

@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksReportV1alphaDataTypeEvidence extends \Google\Collection
-{
-    protected $collection_key = 'privacyPolicyTexts';
-    protected $endpointsType = GoogleChecksReportV1alphaDataTypeEndpointEvidence::class;
-    protected $endpointsDataType = 'array';
-    protected $permissionsType = GoogleChecksReportV1alphaDataTypePermissionEvidence::class;
-    protected $permissionsDataType = 'array';
-    protected $privacyPolicyTextsType = GoogleChecksReportV1alphaDataTypePrivacyPolicyTextEvidence::class;
-    protected $privacyPolicyTextsDataType = 'array';
-    /**
-     * List of endpoints the data type was sent to.
-     *
-     * @param GoogleChecksReportV1alphaDataTypeEndpointEvidence[] $endpoints
-     */
-    public function setEndpoints($endpoints)
+namespace Google\Service\ChecksService {
+    class GoogleChecksReportV1alphaDataTypeEvidence extends \Google\Collection
     {
+        protected $collection_key = 'privacyPolicyTexts';
+        protected $endpointsType = GoogleChecksReportV1alphaDataTypeEndpointEvidence::class;
+        protected $endpointsDataType = 'array';
+        protected $permissionsType = GoogleChecksReportV1alphaDataTypePermissionEvidence::class;
+        protected $permissionsDataType = 'array';
+        protected $privacyPolicyTextsType = GoogleChecksReportV1alphaDataTypePrivacyPolicyTextEvidence::class;
+        protected $privacyPolicyTextsDataType = 'array';
+        /**
+         * List of endpoints the data type was sent to.
+         *
+         * @param GoogleChecksReportV1alphaDataTypeEndpointEvidence[] $endpoints
+         */
+        public function setEndpoints($endpoints)
+        {
+        }
+        /**
+         * @return GoogleChecksReportV1alphaDataTypeEndpointEvidence[]
+         */
+        public function getEndpoints()
+        {
+        }
+        /**
+         * List of included permissions that imply collection of the data type.
+         *
+         * @param GoogleChecksReportV1alphaDataTypePermissionEvidence[] $permissions
+         */
+        public function setPermissions($permissions)
+        {
+        }
+        /**
+         * @return GoogleChecksReportV1alphaDataTypePermissionEvidence[]
+         */
+        public function getPermissions()
+        {
+        }
+        /**
+         * List of privacy policy texts that imply collection of the data type.
+         *
+         * @param GoogleChecksReportV1alphaDataTypePrivacyPolicyTextEvidence[] $privacyPolicyTexts
+         */
+        public function setPrivacyPolicyTexts($privacyPolicyTexts)
+        {
+        }
+        /**
+         * @return GoogleChecksReportV1alphaDataTypePrivacyPolicyTextEvidence[]
+         */
+        public function getPrivacyPolicyTexts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChecksReportV1alphaDataTypeEndpointEvidence[]
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksReportV1alphaDataTypeEvidence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndpoints()
-    {
-    }
-    /**
-     * List of included permissions that imply collection of the data type.
-     *
-     * @param GoogleChecksReportV1alphaDataTypePermissionEvidence[] $permissions
-     */
-    public function setPermissions($permissions)
-    {
-    }
-    /**
-     * @return GoogleChecksReportV1alphaDataTypePermissionEvidence[]
-     */
-    public function getPermissions()
-    {
-    }
-    /**
-     * List of privacy policy texts that imply collection of the data type.
-     *
-     * @param GoogleChecksReportV1alphaDataTypePrivacyPolicyTextEvidence[] $privacyPolicyTexts
-     */
-    public function setPrivacyPolicyTexts($privacyPolicyTexts)
-    {
-    }
-    /**
-     * @return GoogleChecksReportV1alphaDataTypePrivacyPolicyTextEvidence[]
-     */
-    public function getPrivacyPolicyTexts()
+    class Google_Service_ChecksService_GoogleChecksReportV1alphaDataTypeEvidence extends \Google\Service\ChecksService\GoogleChecksReportV1alphaDataTypeEvidence
     {
     }
 }

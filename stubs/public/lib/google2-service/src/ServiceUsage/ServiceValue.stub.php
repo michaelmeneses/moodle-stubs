@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class ServiceValue extends \Google\Collection
-{
-    protected $collection_key = 'tos';
-    /**
-     * @var string
-     */
-    public $dnsAddress;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $pricingLink;
-    protected $tosType = TermsOfService::class;
-    protected $tosDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setDnsAddress($dnsAddress)
+namespace Google\Service\ServiceUsage {
+    class ServiceValue extends \Google\Collection
     {
+        protected $collection_key = 'tos';
+        /**
+         * @var string
+         */
+        public $dnsAddress;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $pricingLink;
+        protected $tosType = TermsOfService::class;
+        protected $tosDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setDnsAddress($dnsAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDnsAddress()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPricingLink($pricingLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPricingLink()
+        {
+        }
+        /**
+         * @param TermsOfService[]
+         */
+        public function setTos($tos)
+        {
+        }
+        /**
+         * @return TermsOfService[]
+         */
+        public function getTos()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceUsage\ServiceValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDnsAddress()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPricingLink($pricingLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPricingLink()
-    {
-    }
-    /**
-     * @param TermsOfService[]
-     */
-    public function setTos($tos)
-    {
-    }
-    /**
-     * @return TermsOfService[]
-     */
-    public function getTos()
+    class Google_Service_ServiceUsage_ServiceValue extends \Google\Service\ServiceUsage\ServiceValue
     {
     }
 }

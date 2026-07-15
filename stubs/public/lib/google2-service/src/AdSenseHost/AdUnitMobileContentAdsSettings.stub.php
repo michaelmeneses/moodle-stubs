@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSenseHost;
-
-class AdUnitMobileContentAdsSettings extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $markupLanguage;
-    /**
-     * @var string
-     */
-    public $scriptingLanguage;
-    /**
-     * @var string
-     */
-    public $size;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string
-     */
-    public function setMarkupLanguage($markupLanguage)
+namespace Google\Service\AdSenseHost {
+    class AdUnitMobileContentAdsSettings extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $markupLanguage;
+        /**
+         * @var string
+         */
+        public $scriptingLanguage;
+        /**
+         * @var string
+         */
+        public $size;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string
+         */
+        public function setMarkupLanguage($markupLanguage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMarkupLanguage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setScriptingLanguage($scriptingLanguage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScriptingLanguage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSize($size)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSize()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdSenseHost\AdUnitMobileContentAdsSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMarkupLanguage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setScriptingLanguage($scriptingLanguage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScriptingLanguage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSize($size)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSize()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_AdSenseHost_AdUnitMobileContentAdsSettings extends \Google\Service\AdSenseHost\AdUnitMobileContentAdsSettings
     {
     }
 }

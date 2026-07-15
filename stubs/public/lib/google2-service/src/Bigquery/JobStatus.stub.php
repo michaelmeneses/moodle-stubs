@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class JobStatus extends \Google\Collection
-{
-    protected $collection_key = 'errors';
-    protected $errorResultType = ErrorProto::class;
-    protected $errorResultDataType = '';
-    protected $errorsType = ErrorProto::class;
-    protected $errorsDataType = 'array';
-    /**
-     * Output only. Running state of the job. Valid states include 'PENDING',
-     * 'RUNNING', and 'DONE'.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. Final error result of the job. If present, indicates that the
-     * job has completed and was unsuccessful.
-     *
-     * @param ErrorProto $errorResult
-     */
-    public function setErrorResult(ErrorProto $errorResult)
+namespace Google\Service\Bigquery {
+    class JobStatus extends \Google\Collection
     {
+        protected $collection_key = 'errors';
+        protected $errorResultType = ErrorProto::class;
+        protected $errorResultDataType = '';
+        protected $errorsType = ErrorProto::class;
+        protected $errorsDataType = 'array';
+        /**
+         * Output only. Running state of the job. Valid states include 'PENDING',
+         * 'RUNNING', and 'DONE'.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. Final error result of the job. If present, indicates that the
+         * job has completed and was unsuccessful.
+         *
+         * @param ErrorProto $errorResult
+         */
+        public function setErrorResult(ErrorProto $errorResult)
+        {
+        }
+        /**
+         * @return ErrorProto
+         */
+        public function getErrorResult()
+        {
+        }
+        /**
+         * Output only. The first errors encountered during the running of the job.
+         * The final message includes the number of errors that caused the process to
+         * stop. Errors here do not necessarily mean that the job has not completed or
+         * was unsuccessful.
+         *
+         * @param ErrorProto[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return ErrorProto[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * Output only. Running state of the job. Valid states include 'PENDING',
+         * 'RUNNING', and 'DONE'.
+         *
+         * @param string $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ErrorProto
+     * Runtime class alias of \Google\Service\Bigquery\JobStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorResult()
-    {
-    }
-    /**
-     * Output only. The first errors encountered during the running of the job.
-     * The final message includes the number of errors that caused the process to
-     * stop. Errors here do not necessarily mean that the job has not completed or
-     * was unsuccessful.
-     *
-     * @param ErrorProto[] $errors
-     */
-    public function setErrors($errors)
-    {
-    }
-    /**
-     * @return ErrorProto[]
-     */
-    public function getErrors()
-    {
-    }
-    /**
-     * Output only. Running state of the job. Valid states include 'PENDING',
-     * 'RUNNING', and 'DONE'.
-     *
-     * @param string $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
+    class Google_Service_Bigquery_JobStatus extends \Google\Service\Bigquery\JobStatus
     {
     }
 }

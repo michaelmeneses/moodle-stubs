@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1ListGroupPriorityOrderingResponse extends \Google\Collection
-{
-    protected $collection_key = 'groupIds';
-    /**
-     * Output only. The group IDs, in priority ordering.
-     *
-     * @var string[]
-     */
-    public $groupIds;
-    /**
-     * Output only. The namespace of the policy type of the group IDs.
-     *
-     * @var string
-     */
-    public $policyNamespace;
-    /**
-     * Output only. The schema name of the policy for the group IDs.
-     *
-     * @var string
-     */
-    public $policySchema;
-    protected $policyTargetKeyType = GoogleChromePolicyVersionsV1PolicyTargetKey::class;
-    protected $policyTargetKeyDataType = '';
-    /**
-     * Output only. The group IDs, in priority ordering.
-     *
-     * @param string[] $groupIds
-     */
-    public function setGroupIds($groupIds)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1ListGroupPriorityOrderingResponse extends \Google\Collection
     {
+        protected $collection_key = 'groupIds';
+        /**
+         * Output only. The group IDs, in priority ordering.
+         *
+         * @var string[]
+         */
+        public $groupIds;
+        /**
+         * Output only. The namespace of the policy type of the group IDs.
+         *
+         * @var string
+         */
+        public $policyNamespace;
+        /**
+         * Output only. The schema name of the policy for the group IDs.
+         *
+         * @var string
+         */
+        public $policySchema;
+        protected $policyTargetKeyType = GoogleChromePolicyVersionsV1PolicyTargetKey::class;
+        protected $policyTargetKeyDataType = '';
+        /**
+         * Output only. The group IDs, in priority ordering.
+         *
+         * @param string[] $groupIds
+         */
+        public function setGroupIds($groupIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getGroupIds()
+        {
+        }
+        /**
+         * Output only. The namespace of the policy type of the group IDs.
+         *
+         * @param string $policyNamespace
+         */
+        public function setPolicyNamespace($policyNamespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicyNamespace()
+        {
+        }
+        /**
+         * Output only. The schema name of the policy for the group IDs.
+         *
+         * @param string $policySchema
+         */
+        public function setPolicySchema($policySchema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicySchema()
+        {
+        }
+        /**
+         * Output only. The target resource for which the group priority ordering has
+         * been retrieved.
+         *
+         * @param GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey
+         */
+        public function setPolicyTargetKey(GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyVersionsV1PolicyTargetKey
+         */
+        public function getPolicyTargetKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1ListGroupPriorityOrderingResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroupIds()
-    {
-    }
-    /**
-     * Output only. The namespace of the policy type of the group IDs.
-     *
-     * @param string $policyNamespace
-     */
-    public function setPolicyNamespace($policyNamespace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPolicyNamespace()
-    {
-    }
-    /**
-     * Output only. The schema name of the policy for the group IDs.
-     *
-     * @param string $policySchema
-     */
-    public function setPolicySchema($policySchema)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPolicySchema()
-    {
-    }
-    /**
-     * Output only. The target resource for which the group priority ordering has
-     * been retrieved.
-     *
-     * @param GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey
-     */
-    public function setPolicyTargetKey(GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyVersionsV1PolicyTargetKey
-     */
-    public function getPolicyTargetKey()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1ListGroupPriorityOrderingResponse extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1ListGroupPriorityOrderingResponse
     {
     }
 }

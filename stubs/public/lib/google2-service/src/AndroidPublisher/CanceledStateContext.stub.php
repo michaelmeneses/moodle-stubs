@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class CanceledStateContext extends \Google\Model
-{
-    protected $developerInitiatedCancellationType = DeveloperInitiatedCancellation::class;
-    protected $developerInitiatedCancellationDataType = '';
-    protected $replacementCancellationType = ReplacementCancellation::class;
-    protected $replacementCancellationDataType = '';
-    protected $systemInitiatedCancellationType = SystemInitiatedCancellation::class;
-    protected $systemInitiatedCancellationDataType = '';
-    protected $userInitiatedCancellationType = UserInitiatedCancellation::class;
-    protected $userInitiatedCancellationDataType = '';
-    /**
-     * Subscription was canceled by the developer.
-     *
-     * @param DeveloperInitiatedCancellation $developerInitiatedCancellation
-     */
-    public function setDeveloperInitiatedCancellation(DeveloperInitiatedCancellation $developerInitiatedCancellation)
+namespace Google\Service\AndroidPublisher {
+    class CanceledStateContext extends \Google\Model
     {
+        protected $developerInitiatedCancellationType = DeveloperInitiatedCancellation::class;
+        protected $developerInitiatedCancellationDataType = '';
+        protected $replacementCancellationType = ReplacementCancellation::class;
+        protected $replacementCancellationDataType = '';
+        protected $systemInitiatedCancellationType = SystemInitiatedCancellation::class;
+        protected $systemInitiatedCancellationDataType = '';
+        protected $userInitiatedCancellationType = UserInitiatedCancellation::class;
+        protected $userInitiatedCancellationDataType = '';
+        /**
+         * Subscription was canceled by the developer.
+         *
+         * @param DeveloperInitiatedCancellation $developerInitiatedCancellation
+         */
+        public function setDeveloperInitiatedCancellation(DeveloperInitiatedCancellation $developerInitiatedCancellation)
+        {
+        }
+        /**
+         * @return DeveloperInitiatedCancellation
+         */
+        public function getDeveloperInitiatedCancellation()
+        {
+        }
+        /**
+         * Subscription was replaced by a new subscription.
+         *
+         * @param ReplacementCancellation $replacementCancellation
+         */
+        public function setReplacementCancellation(ReplacementCancellation $replacementCancellation)
+        {
+        }
+        /**
+         * @return ReplacementCancellation
+         */
+        public function getReplacementCancellation()
+        {
+        }
+        /**
+         * Subscription was canceled by the system, for example because of a billing
+         * problem.
+         *
+         * @param SystemInitiatedCancellation $systemInitiatedCancellation
+         */
+        public function setSystemInitiatedCancellation(SystemInitiatedCancellation $systemInitiatedCancellation)
+        {
+        }
+        /**
+         * @return SystemInitiatedCancellation
+         */
+        public function getSystemInitiatedCancellation()
+        {
+        }
+        /**
+         * Subscription was canceled by user.
+         *
+         * @param UserInitiatedCancellation $userInitiatedCancellation
+         */
+        public function setUserInitiatedCancellation(UserInitiatedCancellation $userInitiatedCancellation)
+        {
+        }
+        /**
+         * @return UserInitiatedCancellation
+         */
+        public function getUserInitiatedCancellation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeveloperInitiatedCancellation
+     * Runtime class alias of \Google\Service\AndroidPublisher\CanceledStateContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeveloperInitiatedCancellation()
-    {
-    }
-    /**
-     * Subscription was replaced by a new subscription.
-     *
-     * @param ReplacementCancellation $replacementCancellation
-     */
-    public function setReplacementCancellation(ReplacementCancellation $replacementCancellation)
-    {
-    }
-    /**
-     * @return ReplacementCancellation
-     */
-    public function getReplacementCancellation()
-    {
-    }
-    /**
-     * Subscription was canceled by the system, for example because of a billing
-     * problem.
-     *
-     * @param SystemInitiatedCancellation $systemInitiatedCancellation
-     */
-    public function setSystemInitiatedCancellation(SystemInitiatedCancellation $systemInitiatedCancellation)
-    {
-    }
-    /**
-     * @return SystemInitiatedCancellation
-     */
-    public function getSystemInitiatedCancellation()
-    {
-    }
-    /**
-     * Subscription was canceled by user.
-     *
-     * @param UserInitiatedCancellation $userInitiatedCancellation
-     */
-    public function setUserInitiatedCancellation(UserInitiatedCancellation $userInitiatedCancellation)
-    {
-    }
-    /**
-     * @return UserInitiatedCancellation
-     */
-    public function getUserInitiatedCancellation()
+    class Google_Service_AndroidPublisher_CanceledStateContext extends \Google\Service\AndroidPublisher\CanceledStateContext
     {
     }
 }

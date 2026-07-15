@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ConversationTurnUserInput extends \Google\Model
-{
-    /**
-     * Whether sentiment analysis is enabled.
-     *
-     * @var bool
-     */
-    public $enableSentimentAnalysis;
-    /**
-     * Parameters that need to be injected into the conversation during intent
-     * detection.
-     *
-     * @var array[]
-     */
-    public $injectedParameters;
-    protected $inputType = GoogleCloudDialogflowCxV3QueryInput::class;
-    protected $inputDataType = '';
-    /**
-     * If webhooks should be allowed to trigger in response to the user utterance.
-     * Often if parameters are injected, webhooks should not be enabled.
-     *
-     * @var bool
-     */
-    public $isWebhookEnabled;
-    /**
-     * Whether sentiment analysis is enabled.
-     *
-     * @param bool $enableSentimentAnalysis
-     */
-    public function setEnableSentimentAnalysis($enableSentimentAnalysis)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ConversationTurnUserInput extends \Google\Model
     {
+        /**
+         * Whether sentiment analysis is enabled.
+         *
+         * @var bool
+         */
+        public $enableSentimentAnalysis;
+        /**
+         * Parameters that need to be injected into the conversation during intent
+         * detection.
+         *
+         * @var array[]
+         */
+        public $injectedParameters;
+        protected $inputType = GoogleCloudDialogflowCxV3QueryInput::class;
+        protected $inputDataType = '';
+        /**
+         * If webhooks should be allowed to trigger in response to the user utterance.
+         * Often if parameters are injected, webhooks should not be enabled.
+         *
+         * @var bool
+         */
+        public $isWebhookEnabled;
+        /**
+         * Whether sentiment analysis is enabled.
+         *
+         * @param bool $enableSentimentAnalysis
+         */
+        public function setEnableSentimentAnalysis($enableSentimentAnalysis)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableSentimentAnalysis()
+        {
+        }
+        /**
+         * Parameters that need to be injected into the conversation during intent
+         * detection.
+         *
+         * @param array[] $injectedParameters
+         */
+        public function setInjectedParameters($injectedParameters)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getInjectedParameters()
+        {
+        }
+        /**
+         * Supports text input, event input, dtmf input in the test case.
+         *
+         * @param GoogleCloudDialogflowCxV3QueryInput $input
+         */
+        public function setInput(GoogleCloudDialogflowCxV3QueryInput $input)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3QueryInput
+         */
+        public function getInput()
+        {
+        }
+        /**
+         * If webhooks should be allowed to trigger in response to the user utterance.
+         * Often if parameters are injected, webhooks should not be enabled.
+         *
+         * @param bool $isWebhookEnabled
+         */
+        public function setIsWebhookEnabled($isWebhookEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsWebhookEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ConversationTurnUserInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableSentimentAnalysis()
-    {
-    }
-    /**
-     * Parameters that need to be injected into the conversation during intent
-     * detection.
-     *
-     * @param array[] $injectedParameters
-     */
-    public function setInjectedParameters($injectedParameters)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getInjectedParameters()
-    {
-    }
-    /**
-     * Supports text input, event input, dtmf input in the test case.
-     *
-     * @param GoogleCloudDialogflowCxV3QueryInput $input
-     */
-    public function setInput(GoogleCloudDialogflowCxV3QueryInput $input)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3QueryInput
-     */
-    public function getInput()
-    {
-    }
-    /**
-     * If webhooks should be allowed to trigger in response to the user utterance.
-     * Often if parameters are injected, webhooks should not be enabled.
-     *
-     * @param bool $isWebhookEnabled
-     */
-    public function setIsWebhookEnabled($isWebhookEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsWebhookEnabled()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ConversationTurnUserInput extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ConversationTurnUserInput
     {
     }
 }

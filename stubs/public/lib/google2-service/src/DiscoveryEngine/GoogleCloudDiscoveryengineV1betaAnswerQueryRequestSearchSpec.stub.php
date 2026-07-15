@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpec extends \Google\Model
-{
-    protected $searchParamsType = GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpecSearchParams::class;
-    protected $searchParamsDataType = '';
-    protected $searchResultListType = GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpecSearchResultList::class;
-    protected $searchResultListDataType = '';
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpecSearchParams
-     */
-    public function setSearchParams(GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpecSearchParams $searchParams)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpec extends \Google\Model
     {
+        protected $searchParamsType = GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpecSearchParams::class;
+        protected $searchParamsDataType = '';
+        protected $searchResultListType = GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpecSearchResultList::class;
+        protected $searchResultListDataType = '';
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpecSearchParams
+         */
+        public function setSearchParams(GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpecSearchParams $searchParams)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpecSearchParams
+         */
+        public function getSearchParams()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpecSearchResultList
+         */
+        public function setSearchResultList(GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpecSearchResultList $searchResultList)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpecSearchResultList
+         */
+        public function getSearchResultList()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpecSearchParams
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSearchParams()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpecSearchResultList
-     */
-    public function setSearchResultList(GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpecSearchResultList $searchResultList)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpecSearchResultList
-     */
-    public function getSearchResultList()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpec
     {
     }
 }

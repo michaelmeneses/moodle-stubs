@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ConversationalSearchRequestSearchParams extends \Google\Model
-{
-    protected $boostSpecType = GoogleCloudRetailV2SearchRequestBoostSpec::class;
-    protected $boostSpecDataType = '';
-    /**
-     * Optional. The canonical filter string to restrict search results. The
-     * syntax of the canonical filter string is the same as
-     * SearchRequest.canonical_filter.
-     *
-     * @var string
-     */
-    public $canonicalFilter;
-    /**
-     * Optional. The filter string to restrict search results. The syntax of the
-     * filter string is the same as SearchRequest.filter.
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * Optional. The sort string to specify the sorting of search results. The
-     * syntax of the sort string is the same as SearchRequest.sort.
-     *
-     * @var string
-     */
-    public $sortBy;
-    /**
-     * Optional. The boost spec to specify the boosting of search results. The
-     * syntax of the boost spec is the same as SearchRequest.boost_spec.
-     *
-     * @param GoogleCloudRetailV2SearchRequestBoostSpec $boostSpec
-     */
-    public function setBoostSpec(GoogleCloudRetailV2SearchRequestBoostSpec $boostSpec)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ConversationalSearchRequestSearchParams extends \Google\Model
     {
+        protected $boostSpecType = GoogleCloudRetailV2SearchRequestBoostSpec::class;
+        protected $boostSpecDataType = '';
+        /**
+         * Optional. The canonical filter string to restrict search results. The
+         * syntax of the canonical filter string is the same as
+         * SearchRequest.canonical_filter.
+         *
+         * @var string
+         */
+        public $canonicalFilter;
+        /**
+         * Optional. The filter string to restrict search results. The syntax of the
+         * filter string is the same as SearchRequest.filter.
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * Optional. The sort string to specify the sorting of search results. The
+         * syntax of the sort string is the same as SearchRequest.sort.
+         *
+         * @var string
+         */
+        public $sortBy;
+        /**
+         * Optional. The boost spec to specify the boosting of search results. The
+         * syntax of the boost spec is the same as SearchRequest.boost_spec.
+         *
+         * @param GoogleCloudRetailV2SearchRequestBoostSpec $boostSpec
+         */
+        public function setBoostSpec(GoogleCloudRetailV2SearchRequestBoostSpec $boostSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2SearchRequestBoostSpec
+         */
+        public function getBoostSpec()
+        {
+        }
+        /**
+         * Optional. The canonical filter string to restrict search results. The
+         * syntax of the canonical filter string is the same as
+         * SearchRequest.canonical_filter.
+         *
+         * @param string $canonicalFilter
+         */
+        public function setCanonicalFilter($canonicalFilter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCanonicalFilter()
+        {
+        }
+        /**
+         * Optional. The filter string to restrict search results. The syntax of the
+         * filter string is the same as SearchRequest.filter.
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * Optional. The sort string to specify the sorting of search results. The
+         * syntax of the sort string is the same as SearchRequest.sort.
+         *
+         * @param string $sortBy
+         */
+        public function setSortBy($sortBy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSortBy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2SearchRequestBoostSpec
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ConversationalSearchRequestSearchParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoostSpec()
-    {
-    }
-    /**
-     * Optional. The canonical filter string to restrict search results. The
-     * syntax of the canonical filter string is the same as
-     * SearchRequest.canonical_filter.
-     *
-     * @param string $canonicalFilter
-     */
-    public function setCanonicalFilter($canonicalFilter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCanonicalFilter()
-    {
-    }
-    /**
-     * Optional. The filter string to restrict search results. The syntax of the
-     * filter string is the same as SearchRequest.filter.
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilter()
-    {
-    }
-    /**
-     * Optional. The sort string to specify the sorting of search results. The
-     * syntax of the sort string is the same as SearchRequest.sort.
-     *
-     * @param string $sortBy
-     */
-    public function setSortBy($sortBy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSortBy()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ConversationalSearchRequestSearchParams extends \Google\Service\CloudRetail\GoogleCloudRetailV2ConversationalSearchRequestSearchParams
     {
     }
 }

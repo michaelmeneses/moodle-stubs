@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class AdaptiveMtFile extends \Google\Model
-{
-    /**
-     * Output only. Timestamp when this file was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The file's display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The number of entries that the file contains.
-     *
-     * @var int
-     */
-    public $entryCount;
-    /**
-     * Required. The resource name of the file, in form of `projects/{project-
-     * number-or-id}/locations/{location_id}/adaptiveMtDatasets/{dataset}/adaptive
-     * MtFiles/{file}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Timestamp when this file was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Timestamp when this file was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Translate {
+    class AdaptiveMtFile extends \Google\Model
     {
+        /**
+         * Output only. Timestamp when this file was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The file's display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The number of entries that the file contains.
+         *
+         * @var int
+         */
+        public $entryCount;
+        /**
+         * Required. The resource name of the file, in form of `projects/{project-
+         * number-or-id}/locations/{location_id}/adaptiveMtDatasets/{dataset}/adaptive
+         * MtFiles/{file}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Timestamp when this file was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Timestamp when this file was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The file's display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The number of entries that the file contains.
+         *
+         * @param int $entryCount
+         */
+        public function setEntryCount($entryCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEntryCount()
+        {
+        }
+        /**
+         * Required. The resource name of the file, in form of `projects/{project-
+         * number-or-id}/locations/{location_id}/adaptiveMtDatasets/{dataset}/adaptive
+         * MtFiles/{file}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Timestamp when this file was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Translate\AdaptiveMtFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The file's display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The number of entries that the file contains.
-     *
-     * @param int $entryCount
-     */
-    public function setEntryCount($entryCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getEntryCount()
-    {
-    }
-    /**
-     * Required. The resource name of the file, in form of `projects/{project-
-     * number-or-id}/locations/{location_id}/adaptiveMtDatasets/{dataset}/adaptive
-     * MtFiles/{file}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Timestamp when this file was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Translate_AdaptiveMtFile extends \Google\Service\Translate\AdaptiveMtFile
     {
     }
 }

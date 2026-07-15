@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecretManager;
-
-class Replication extends \Google\Model
-{
-    protected $automaticType = Automatic::class;
-    protected $automaticDataType = '';
-    protected $userManagedType = UserManaged::class;
-    protected $userManagedDataType = '';
-    /**
-     * The Secret will automatically be replicated without any restrictions.
-     *
-     * @param Automatic $automatic
-     */
-    public function setAutomatic(Automatic $automatic)
+namespace Google\Service\SecretManager {
+    class Replication extends \Google\Model
     {
+        protected $automaticType = Automatic::class;
+        protected $automaticDataType = '';
+        protected $userManagedType = UserManaged::class;
+        protected $userManagedDataType = '';
+        /**
+         * The Secret will automatically be replicated without any restrictions.
+         *
+         * @param Automatic $automatic
+         */
+        public function setAutomatic(Automatic $automatic)
+        {
+        }
+        /**
+         * @return Automatic
+         */
+        public function getAutomatic()
+        {
+        }
+        /**
+         * The Secret will only be replicated into the locations specified.
+         *
+         * @param UserManaged $userManaged
+         */
+        public function setUserManaged(UserManaged $userManaged)
+        {
+        }
+        /**
+         * @return UserManaged
+         */
+        public function getUserManaged()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Automatic
+     * Runtime class alias of \Google\Service\SecretManager\Replication registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutomatic()
-    {
-    }
-    /**
-     * The Secret will only be replicated into the locations specified.
-     *
-     * @param UserManaged $userManaged
-     */
-    public function setUserManaged(UserManaged $userManaged)
-    {
-    }
-    /**
-     * @return UserManaged
-     */
-    public function getUserManaged()
+    class Google_Service_SecretManager_Replication extends \Google\Service\SecretManager\Replication
     {
     }
 }

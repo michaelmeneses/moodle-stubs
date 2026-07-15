@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceConsumptionData extends \Google\Model
-{
-    protected $consumptionInfoType = InstanceConsumptionInfo::class;
-    protected $consumptionInfoDataType = '';
-    /**
-     * Output only. Server-defined URL for the instance.
-     *
-     * @var string
-     */
-    public $instance;
-    /**
-     * Output only. Resources consumed by the instance.
-     *
-     * @param InstanceConsumptionInfo $consumptionInfo
-     */
-    public function setConsumptionInfo(InstanceConsumptionInfo $consumptionInfo)
+namespace Google\Service\Compute {
+    class InstanceConsumptionData extends \Google\Model
     {
+        protected $consumptionInfoType = InstanceConsumptionInfo::class;
+        protected $consumptionInfoDataType = '';
+        /**
+         * Output only. Server-defined URL for the instance.
+         *
+         * @var string
+         */
+        public $instance;
+        /**
+         * Output only. Resources consumed by the instance.
+         *
+         * @param InstanceConsumptionInfo $consumptionInfo
+         */
+        public function setConsumptionInfo(InstanceConsumptionInfo $consumptionInfo)
+        {
+        }
+        /**
+         * @return InstanceConsumptionInfo
+         */
+        public function getConsumptionInfo()
+        {
+        }
+        /**
+         * Output only. Server-defined URL for the instance.
+         *
+         * @param string $instance
+         */
+        public function setInstance($instance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InstanceConsumptionInfo
+     * Runtime class alias of \Google\Service\Compute\InstanceConsumptionData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsumptionInfo()
-    {
-    }
-    /**
-     * Output only. Server-defined URL for the instance.
-     *
-     * @param string $instance
-     */
-    public function setInstance($instance)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstance()
+    class Google_Service_Compute_InstanceConsumptionData extends \Google\Service\Compute\InstanceConsumptionData
     {
     }
 }

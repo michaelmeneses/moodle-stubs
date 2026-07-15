@@ -21,140 +21,151 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive\Resource;
-
-/**
- * The "drives" collection of methods.
- * Typical usage is:
- *  <code>
- *   $driveService = new Google\Service\Drive(...);
- *   $drives = $driveService->drives;
- *  </code>
- */
-class Drives extends \Google\Service\Resource
-{
+namespace Google\Service\Drive\Resource {
+    use Google\Service\Drive\Drive;
+    use Google\Service\Drive\DriveList;
     /**
-     * Creates a shared drive. For more information, see [Manage shared
-     * drives](https://developers.google.com/workspace/drive/api/guides/manage-
-     * shareddrives). (drives.create)
-     *
-     * @param string $requestId Required. An ID, such as a random UUID, which
-     * uniquely identifies this user's request for idempotent creation of a shared
-     * drive. A repeated request by the same user and with the same request ID will
-     * avoid creating duplicates by attempting to create the same shared drive. If
-     * the shared drive already exists a 409 error will be returned.
-     * @param Drive $postBody
-     * @param array $optParams Optional parameters.
-     * @return Drive
-     * @throws \Google\Service\Exception
+     * The "drives" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $driveService = new Google\Service\Drive(...);
+     *   $drives = $driveService->drives;
+     *  </code>
      */
-    public function create($requestId, Drive $postBody, $optParams = [])
+    class Drives extends \Google\Service\Resource
     {
+        /**
+         * Creates a shared drive. For more information, see [Manage shared
+         * drives](https://developers.google.com/workspace/drive/api/guides/manage-
+         * shareddrives). (drives.create)
+         *
+         * @param string $requestId Required. An ID, such as a random UUID, which
+         * uniquely identifies this user's request for idempotent creation of a shared
+         * drive. A repeated request by the same user and with the same request ID will
+         * avoid creating duplicates by attempting to create the same shared drive. If
+         * the shared drive already exists a 409 error will be returned.
+         * @param Drive $postBody
+         * @param array $optParams Optional parameters.
+         * @return Drive
+         * @throws \Google\Service\Exception
+         */
+        public function create($requestId, Drive $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Permanently deletes a shared drive for which the user is an `organizer`. The
+         * shared drive cannot contain any untrashed items. For more information, see
+         * [Manage shared
+         * drives](https://developers.google.com/workspace/drive/api/guides/manage-
+         * shareddrives). (drives.delete)
+         *
+         * @param string $driveId The ID of the shared drive.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool allowItemDeletion Whether any items inside the shared drive
+         * should also be deleted. This option is only supported when
+         * `useDomainAdminAccess` is also set to `true`.
+         * @opt_param bool useDomainAdminAccess Issue the request as a domain
+         * administrator; if set to true, then the requester will be granted access if
+         * they are an administrator of the domain to which the shared drive belongs.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($driveId, $optParams = [])
+        {
+        }
+        /**
+         * Gets a shared drive's metadata by ID. For more information, see [Manage
+         * shared
+         * drives](https://developers.google.com/workspace/drive/api/guides/manage-
+         * shareddrives). (drives.get)
+         *
+         * @param string $driveId The ID of the shared drive.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool useDomainAdminAccess Issue the request as a domain
+         * administrator; if set to true, then the requester will be granted access if
+         * they are an administrator of the domain to which the shared drive belongs.
+         * @return Drive
+         * @throws \Google\Service\Exception
+         */
+        public function get($driveId, $optParams = [])
+        {
+        }
+        /**
+         * Hides a shared drive from the default view. For more information, see [Manage
+         * shared
+         * drives](https://developers.google.com/workspace/drive/api/guides/manage-
+         * shareddrives). (drives.hide)
+         *
+         * @param string $driveId The ID of the shared drive.
+         * @param array $optParams Optional parameters.
+         * @return Drive
+         * @throws \Google\Service\Exception
+         */
+        public function hide($driveId, $optParams = [])
+        {
+        }
+        /**
+         * Lists the user's shared drives. This method accepts the `q` parameter, which
+         * is a search query combining one or more search terms. For more information,
+         * see the [Search for shared drives](/workspace/drive/api/guides/search-
+         * shareddrives) guide. (drives.listDrives)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum number of shared drives to return per page.
+         * @opt_param string pageToken Page token for shared drives.
+         * @opt_param string q Query string for searching shared drives.
+         * @opt_param bool useDomainAdminAccess Issue the request as a domain
+         * administrator; if set to true, then all shared drives of the domain in which
+         * the requester is an administrator are returned.
+         * @return DriveList
+         * @throws \Google\Service\Exception
+         */
+        public function listDrives($optParams = [])
+        {
+        }
+        /**
+         * Restores a shared drive to the default view. For more information, see
+         * [Manage shared
+         * drives](https://developers.google.com/workspace/drive/api/guides/manage-
+         * shareddrives). (drives.unhide)
+         *
+         * @param string $driveId The ID of the shared drive.
+         * @param array $optParams Optional parameters.
+         * @return Drive
+         * @throws \Google\Service\Exception
+         */
+        public function unhide($driveId, $optParams = [])
+        {
+        }
+        /**
+         * Updates the metadata for a shared drive. For more information, see [Manage
+         * shared
+         * drives](https://developers.google.com/workspace/drive/api/guides/manage-
+         * shareddrives). (drives.update)
+         *
+         * @param string $driveId The ID of the shared drive.
+         * @param Drive $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool useDomainAdminAccess Issue the request as a domain
+         * administrator; if set to true, then the requester will be granted access if
+         * they are an administrator of the domain to which the shared drive belongs.
+         * @return Drive
+         * @throws \Google\Service\Exception
+         */
+        public function update($driveId, Drive $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Permanently deletes a shared drive for which the user is an `organizer`. The
-     * shared drive cannot contain any untrashed items. For more information, see
-     * [Manage shared
-     * drives](https://developers.google.com/workspace/drive/api/guides/manage-
-     * shareddrives). (drives.delete)
-     *
-     * @param string $driveId The ID of the shared drive.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool allowItemDeletion Whether any items inside the shared drive
-     * should also be deleted. This option is only supported when
-     * `useDomainAdminAccess` is also set to `true`.
-     * @opt_param bool useDomainAdminAccess Issue the request as a domain
-     * administrator; if set to true, then the requester will be granted access if
-     * they are an administrator of the domain to which the shared drive belongs.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Drive\Resource\Drives registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($driveId, $optParams = [])
-    {
-    }
-    /**
-     * Gets a shared drive's metadata by ID. For more information, see [Manage
-     * shared
-     * drives](https://developers.google.com/workspace/drive/api/guides/manage-
-     * shareddrives). (drives.get)
-     *
-     * @param string $driveId The ID of the shared drive.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool useDomainAdminAccess Issue the request as a domain
-     * administrator; if set to true, then the requester will be granted access if
-     * they are an administrator of the domain to which the shared drive belongs.
-     * @return Drive
-     * @throws \Google\Service\Exception
-     */
-    public function get($driveId, $optParams = [])
-    {
-    }
-    /**
-     * Hides a shared drive from the default view. For more information, see [Manage
-     * shared
-     * drives](https://developers.google.com/workspace/drive/api/guides/manage-
-     * shareddrives). (drives.hide)
-     *
-     * @param string $driveId The ID of the shared drive.
-     * @param array $optParams Optional parameters.
-     * @return Drive
-     * @throws \Google\Service\Exception
-     */
-    public function hide($driveId, $optParams = [])
-    {
-    }
-    /**
-     * Lists the user's shared drives. This method accepts the `q` parameter, which
-     * is a search query combining one or more search terms. For more information,
-     * see the [Search for shared drives](/workspace/drive/api/guides/search-
-     * shareddrives) guide. (drives.listDrives)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum number of shared drives to return per page.
-     * @opt_param string pageToken Page token for shared drives.
-     * @opt_param string q Query string for searching shared drives.
-     * @opt_param bool useDomainAdminAccess Issue the request as a domain
-     * administrator; if set to true, then all shared drives of the domain in which
-     * the requester is an administrator are returned.
-     * @return DriveList
-     * @throws \Google\Service\Exception
-     */
-    public function listDrives($optParams = [])
-    {
-    }
-    /**
-     * Restores a shared drive to the default view. For more information, see
-     * [Manage shared
-     * drives](https://developers.google.com/workspace/drive/api/guides/manage-
-     * shareddrives). (drives.unhide)
-     *
-     * @param string $driveId The ID of the shared drive.
-     * @param array $optParams Optional parameters.
-     * @return Drive
-     * @throws \Google\Service\Exception
-     */
-    public function unhide($driveId, $optParams = [])
-    {
-    }
-    /**
-     * Updates the metadata for a shared drive. For more information, see [Manage
-     * shared
-     * drives](https://developers.google.com/workspace/drive/api/guides/manage-
-     * shareddrives). (drives.update)
-     *
-     * @param string $driveId The ID of the shared drive.
-     * @param Drive $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool useDomainAdminAccess Issue the request as a domain
-     * administrator; if set to true, then the requester will be granted access if
-     * they are an administrator of the domain to which the shared drive belongs.
-     * @return Drive
-     * @throws \Google\Service\Exception
-     */
-    public function update($driveId, Drive $postBody, $optParams = [])
+    class Google_Service_Drive_Resource_Drives extends \Google\Service\Drive\Resource\Drives
     {
     }
 }

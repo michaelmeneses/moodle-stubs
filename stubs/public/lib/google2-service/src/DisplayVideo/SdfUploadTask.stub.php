@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class SdfUploadTask extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * @param string
-     */
-    public function setResourceName($resourceName)
+namespace Google\Service\DisplayVideo {
+    class SdfUploadTask extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * @param string
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\SdfUploadTask registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceName()
+    class Google_Service_DisplayVideo_SdfUploadTask extends \Google\Service\DisplayVideo\SdfUploadTask
     {
     }
 }

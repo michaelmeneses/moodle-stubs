@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaAccessMetric extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $metricName;
-    /**
-     * @param string
-     */
-    public function setMetricName($metricName)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaAccessMetric extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $metricName;
+        /**
+         * @param string
+         */
+        public function setMetricName($metricName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetricName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAccessMetric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetricName()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaAccessMetric extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAccessMetric
     {
     }
 }

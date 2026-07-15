@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EvaluationRubricConfig extends \Google\Model
-{
-    protected $predefinedRubricGenerationSpecType = GoogleCloudAiplatformV1EvaluationRunMetricPredefinedMetricSpec::class;
-    protected $predefinedRubricGenerationSpecDataType = '';
-    protected $rubricGenerationSpecType = GoogleCloudAiplatformV1EvaluationRunMetricRubricGenerationSpec::class;
-    protected $rubricGenerationSpecDataType = '';
-    /**
-     * Required. The key used to save the generated rubrics. If a generation spec
-     * is provided, this key will be used for the name of the generated rubric
-     * group. Otherwise, this key will be used to look up the existing rubric
-     * group on the evaluation item. Note that if a rubric group key is specified
-     * on both a rubric config and an evaluation metric, the key from the metric
-     * will be used to select the rubrics for evaluation.
-     *
-     * @var string
-     */
-    public $rubricGroupKey;
-    /**
-     * Dynamically generate rubrics using a predefined spec.
-     *
-     * @param GoogleCloudAiplatformV1EvaluationRunMetricPredefinedMetricSpec $predefinedRubricGenerationSpec
-     */
-    public function setPredefinedRubricGenerationSpec(GoogleCloudAiplatformV1EvaluationRunMetricPredefinedMetricSpec $predefinedRubricGenerationSpec)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EvaluationRubricConfig extends \Google\Model
     {
+        protected $predefinedRubricGenerationSpecType = GoogleCloudAiplatformV1EvaluationRunMetricPredefinedMetricSpec::class;
+        protected $predefinedRubricGenerationSpecDataType = '';
+        protected $rubricGenerationSpecType = GoogleCloudAiplatformV1EvaluationRunMetricRubricGenerationSpec::class;
+        protected $rubricGenerationSpecDataType = '';
+        /**
+         * Required. The key used to save the generated rubrics. If a generation spec
+         * is provided, this key will be used for the name of the generated rubric
+         * group. Otherwise, this key will be used to look up the existing rubric
+         * group on the evaluation item. Note that if a rubric group key is specified
+         * on both a rubric config and an evaluation metric, the key from the metric
+         * will be used to select the rubrics for evaluation.
+         *
+         * @var string
+         */
+        public $rubricGroupKey;
+        /**
+         * Dynamically generate rubrics using a predefined spec.
+         *
+         * @param GoogleCloudAiplatformV1EvaluationRunMetricPredefinedMetricSpec $predefinedRubricGenerationSpec
+         */
+        public function setPredefinedRubricGenerationSpec(GoogleCloudAiplatformV1EvaluationRunMetricPredefinedMetricSpec $predefinedRubricGenerationSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EvaluationRunMetricPredefinedMetricSpec
+         */
+        public function getPredefinedRubricGenerationSpec()
+        {
+        }
+        /**
+         * Dynamically generate rubrics using this specification.
+         *
+         * @param GoogleCloudAiplatformV1EvaluationRunMetricRubricGenerationSpec $rubricGenerationSpec
+         */
+        public function setRubricGenerationSpec(GoogleCloudAiplatformV1EvaluationRunMetricRubricGenerationSpec $rubricGenerationSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EvaluationRunMetricRubricGenerationSpec
+         */
+        public function getRubricGenerationSpec()
+        {
+        }
+        /**
+         * Required. The key used to save the generated rubrics. If a generation spec
+         * is provided, this key will be used for the name of the generated rubric
+         * group. Otherwise, this key will be used to look up the existing rubric
+         * group on the evaluation item. Note that if a rubric group key is specified
+         * on both a rubric config and an evaluation metric, the key from the metric
+         * will be used to select the rubrics for evaluation.
+         *
+         * @param string $rubricGroupKey
+         */
+        public function setRubricGroupKey($rubricGroupKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRubricGroupKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1EvaluationRunMetricPredefinedMetricSpec
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationRubricConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPredefinedRubricGenerationSpec()
-    {
-    }
-    /**
-     * Dynamically generate rubrics using this specification.
-     *
-     * @param GoogleCloudAiplatformV1EvaluationRunMetricRubricGenerationSpec $rubricGenerationSpec
-     */
-    public function setRubricGenerationSpec(GoogleCloudAiplatformV1EvaluationRunMetricRubricGenerationSpec $rubricGenerationSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1EvaluationRunMetricRubricGenerationSpec
-     */
-    public function getRubricGenerationSpec()
-    {
-    }
-    /**
-     * Required. The key used to save the generated rubrics. If a generation spec
-     * is provided, this key will be used for the name of the generated rubric
-     * group. Otherwise, this key will be used to look up the existing rubric
-     * group on the evaluation item. Note that if a rubric group key is specified
-     * on both a rubric config and an evaluation metric, the key from the metric
-     * will be used to select the rubrics for evaluation.
-     *
-     * @param string $rubricGroupKey
-     */
-    public function setRubricGroupKey($rubricGroupKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRubricGroupKey()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EvaluationRubricConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationRubricConfig
     {
     }
 }

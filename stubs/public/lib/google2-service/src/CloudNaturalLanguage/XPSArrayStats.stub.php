@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSArrayStats extends \Google\Model
-{
-    protected $commonStatsType = XPSCommonStats::class;
-    protected $commonStatsDataType = '';
-    protected $memberStatsType = XPSDataStats::class;
-    protected $memberStatsDataType = '';
-    /**
-     * @param XPSCommonStats $commonStats
-     */
-    public function setCommonStats(XPSCommonStats $commonStats)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSArrayStats extends \Google\Model
     {
+        protected $commonStatsType = XPSCommonStats::class;
+        protected $commonStatsDataType = '';
+        protected $memberStatsType = XPSDataStats::class;
+        protected $memberStatsDataType = '';
+        /**
+         * @param XPSCommonStats $commonStats
+         */
+        public function setCommonStats(XPSCommonStats $commonStats)
+        {
+        }
+        /**
+         * @return XPSCommonStats
+         */
+        public function getCommonStats()
+        {
+        }
+        /**
+         * Stats of all the values of all arrays, as if they were a single long series
+         * of data. The type depends on the element type of the array.
+         *
+         * @param XPSDataStats $memberStats
+         */
+        public function setMemberStats(XPSDataStats $memberStats)
+        {
+        }
+        /**
+         * @return XPSDataStats
+         */
+        public function getMemberStats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSCommonStats
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSArrayStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommonStats()
-    {
-    }
-    /**
-     * Stats of all the values of all arrays, as if they were a single long series
-     * of data. The type depends on the element type of the array.
-     *
-     * @param XPSDataStats $memberStats
-     */
-    public function setMemberStats(XPSDataStats $memberStats)
-    {
-    }
-    /**
-     * @return XPSDataStats
-     */
-    public function getMemberStats()
+    class Google_Service_CloudNaturalLanguage_XPSArrayStats extends \Google\Service\CloudNaturalLanguage\XPSArrayStats
     {
     }
 }

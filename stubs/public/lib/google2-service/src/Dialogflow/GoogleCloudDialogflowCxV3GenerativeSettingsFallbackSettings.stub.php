@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3GenerativeSettingsFallbackSettings extends \Google\Collection
-{
-    protected $collection_key = 'promptTemplates';
-    protected $promptTemplatesType = GoogleCloudDialogflowCxV3GenerativeSettingsFallbackSettingsPromptTemplate::class;
-    protected $promptTemplatesDataType = 'array';
-    /**
-     * Display name of the selected prompt.
-     *
-     * @var string
-     */
-    public $selectedPrompt;
-    /**
-     * Stored prompts that can be selected, for example default templates like
-     * "conservative" or "chatty", or user defined ones.
-     *
-     * @param GoogleCloudDialogflowCxV3GenerativeSettingsFallbackSettingsPromptTemplate[] $promptTemplates
-     */
-    public function setPromptTemplates($promptTemplates)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3GenerativeSettingsFallbackSettings extends \Google\Collection
     {
+        protected $collection_key = 'promptTemplates';
+        protected $promptTemplatesType = GoogleCloudDialogflowCxV3GenerativeSettingsFallbackSettingsPromptTemplate::class;
+        protected $promptTemplatesDataType = 'array';
+        /**
+         * Display name of the selected prompt.
+         *
+         * @var string
+         */
+        public $selectedPrompt;
+        /**
+         * Stored prompts that can be selected, for example default templates like
+         * "conservative" or "chatty", or user defined ones.
+         *
+         * @param GoogleCloudDialogflowCxV3GenerativeSettingsFallbackSettingsPromptTemplate[] $promptTemplates
+         */
+        public function setPromptTemplates($promptTemplates)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3GenerativeSettingsFallbackSettingsPromptTemplate[]
+         */
+        public function getPromptTemplates()
+        {
+        }
+        /**
+         * Display name of the selected prompt.
+         *
+         * @param string $selectedPrompt
+         */
+        public function setSelectedPrompt($selectedPrompt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelectedPrompt()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3GenerativeSettingsFallbackSettingsPromptTemplate[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3GenerativeSettingsFallbackSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPromptTemplates()
-    {
-    }
-    /**
-     * Display name of the selected prompt.
-     *
-     * @param string $selectedPrompt
-     */
-    public function setSelectedPrompt($selectedPrompt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelectedPrompt()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3GenerativeSettingsFallbackSettings extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3GenerativeSettingsFallbackSettings
     {
     }
 }

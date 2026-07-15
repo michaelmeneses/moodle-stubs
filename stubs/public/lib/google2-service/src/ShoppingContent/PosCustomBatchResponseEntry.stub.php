@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class PosCustomBatchResponseEntry extends \Google\Model
-{
-    /**
-     * The ID of the request entry to which this entry responds.
-     *
-     * @var string
-     */
-    public $batchId;
-    protected $errorsType = Errors::class;
-    protected $errorsDataType = '';
-    protected $inventoryType = PosInventory::class;
-    protected $inventoryDataType = '';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#posCustomBatchResponseEntry`"
-     *
-     * @var string
-     */
-    public $kind;
-    protected $saleType = PosSale::class;
-    protected $saleDataType = '';
-    protected $storeType = PosStore::class;
-    protected $storeDataType = '';
-    /**
-     * The ID of the request entry to which this entry responds.
-     *
-     * @param string $batchId
-     */
-    public function setBatchId($batchId)
+namespace Google\Service\ShoppingContent {
+    class PosCustomBatchResponseEntry extends \Google\Model
     {
+        /**
+         * The ID of the request entry to which this entry responds.
+         *
+         * @var string
+         */
+        public $batchId;
+        protected $errorsType = Errors::class;
+        protected $errorsDataType = '';
+        protected $inventoryType = PosInventory::class;
+        protected $inventoryDataType = '';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#posCustomBatchResponseEntry`"
+         *
+         * @var string
+         */
+        public $kind;
+        protected $saleType = PosSale::class;
+        protected $saleDataType = '';
+        protected $storeType = PosStore::class;
+        protected $storeDataType = '';
+        /**
+         * The ID of the request entry to which this entry responds.
+         *
+         * @param string $batchId
+         */
+        public function setBatchId($batchId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBatchId()
+        {
+        }
+        /**
+         * A list of errors defined if, and only if, the request failed.
+         *
+         * @param Errors $errors
+         */
+        public function setErrors(Errors $errors)
+        {
+        }
+        /**
+         * @return Errors
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * The updated inventory information.
+         *
+         * @param PosInventory $inventory
+         */
+        public function setInventory(PosInventory $inventory)
+        {
+        }
+        /**
+         * @return PosInventory
+         */
+        public function getInventory()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#posCustomBatchResponseEntry`"
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The updated sale information.
+         *
+         * @param PosSale $sale
+         */
+        public function setSale(PosSale $sale)
+        {
+        }
+        /**
+         * @return PosSale
+         */
+        public function getSale()
+        {
+        }
+        /**
+         * The retrieved or updated store information.
+         *
+         * @param PosStore $store
+         */
+        public function setStore(PosStore $store)
+        {
+        }
+        /**
+         * @return PosStore
+         */
+        public function getStore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\PosCustomBatchResponseEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBatchId()
-    {
-    }
-    /**
-     * A list of errors defined if, and only if, the request failed.
-     *
-     * @param Errors $errors
-     */
-    public function setErrors(Errors $errors)
-    {
-    }
-    /**
-     * @return Errors
-     */
-    public function getErrors()
-    {
-    }
-    /**
-     * The updated inventory information.
-     *
-     * @param PosInventory $inventory
-     */
-    public function setInventory(PosInventory $inventory)
-    {
-    }
-    /**
-     * @return PosInventory
-     */
-    public function getInventory()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#posCustomBatchResponseEntry`"
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The updated sale information.
-     *
-     * @param PosSale $sale
-     */
-    public function setSale(PosSale $sale)
-    {
-    }
-    /**
-     * @return PosSale
-     */
-    public function getSale()
-    {
-    }
-    /**
-     * The retrieved or updated store information.
-     *
-     * @param PosStore $store
-     */
-    public function setStore(PosStore $store)
-    {
-    }
-    /**
-     * @return PosStore
-     */
-    public function getStore()
+    class Google_Service_ShoppingContent_PosCustomBatchResponseEntry extends \Google\Service\ShoppingContent\PosCustomBatchResponseEntry
     {
     }
 }

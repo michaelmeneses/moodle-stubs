@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class SloEligibility extends \Google\Model
-{
-    /**
-     * Whether an instance is eligible or ineligible.
-     *
-     * @var bool
-     */
-    public $eligible;
-    /**
-     * User-defined reason for the current value of instance eligibility. Usually,
-     * this can be directly mapped to the internal state. An empty reason is
-     * allowed.
-     *
-     * @var string
-     */
-    public $reason;
-    /**
-     * Whether an instance is eligible or ineligible.
-     *
-     * @param bool $eligible
-     */
-    public function setEligible($eligible)
+namespace Google\Service\Connectors {
+    class SloEligibility extends \Google\Model
     {
+        /**
+         * Whether an instance is eligible or ineligible.
+         *
+         * @var bool
+         */
+        public $eligible;
+        /**
+         * User-defined reason for the current value of instance eligibility. Usually,
+         * this can be directly mapped to the internal state. An empty reason is
+         * allowed.
+         *
+         * @var string
+         */
+        public $reason;
+        /**
+         * Whether an instance is eligible or ineligible.
+         *
+         * @param bool $eligible
+         */
+        public function setEligible($eligible)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEligible()
+        {
+        }
+        /**
+         * User-defined reason for the current value of instance eligibility. Usually,
+         * this can be directly mapped to the internal state. An empty reason is
+         * allowed.
+         *
+         * @param string $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Connectors\SloEligibility registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEligible()
-    {
-    }
-    /**
-     * User-defined reason for the current value of instance eligibility. Usually,
-     * this can be directly mapped to the internal state. An empty reason is
-     * allowed.
-     *
-     * @param string $reason
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReason()
+    class Google_Service_Connectors_SloEligibility extends \Google\Service\Connectors\SloEligibility
     {
     }
 }

@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDebugger;
-
-class SetBreakpointResponse extends \Google\Model
-{
-    protected $breakpointType = Breakpoint::class;
-    protected $breakpointDataType = '';
-    /**
-     * @param Breakpoint
-     */
-    public function setBreakpoint(Breakpoint $breakpoint)
+namespace Google\Service\CloudDebugger {
+    class SetBreakpointResponse extends \Google\Model
     {
+        protected $breakpointType = Breakpoint::class;
+        protected $breakpointDataType = '';
+        /**
+         * @param Breakpoint
+         */
+        public function setBreakpoint(Breakpoint $breakpoint)
+        {
+        }
+        /**
+         * @return Breakpoint
+         */
+        public function getBreakpoint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Breakpoint
+     * Runtime class alias of \Google\Service\CloudDebugger\SetBreakpointResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBreakpoint()
+    class Google_Service_CloudDebugger_SetBreakpointResponse extends \Google\Service\CloudDebugger\SetBreakpointResponse
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MetricxInput extends \Google\Model
-{
-    protected $instanceType = GoogleCloudAiplatformV1MetricxInstance::class;
-    protected $instanceDataType = '';
-    protected $metricSpecType = GoogleCloudAiplatformV1MetricxSpec::class;
-    protected $metricSpecDataType = '';
-    /**
-     * Required. Metricx instance.
-     *
-     * @param GoogleCloudAiplatformV1MetricxInstance $instance
-     */
-    public function setInstance(GoogleCloudAiplatformV1MetricxInstance $instance)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MetricxInput extends \Google\Model
     {
+        protected $instanceType = GoogleCloudAiplatformV1MetricxInstance::class;
+        protected $instanceDataType = '';
+        protected $metricSpecType = GoogleCloudAiplatformV1MetricxSpec::class;
+        protected $metricSpecDataType = '';
+        /**
+         * Required. Metricx instance.
+         *
+         * @param GoogleCloudAiplatformV1MetricxInstance $instance
+         */
+        public function setInstance(GoogleCloudAiplatformV1MetricxInstance $instance)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MetricxInstance
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * Required. Spec for Metricx metric.
+         *
+         * @param GoogleCloudAiplatformV1MetricxSpec $metricSpec
+         */
+        public function setMetricSpec(GoogleCloudAiplatformV1MetricxSpec $metricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MetricxSpec
+         */
+        public function getMetricSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1MetricxInstance
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MetricxInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstance()
-    {
-    }
-    /**
-     * Required. Spec for Metricx metric.
-     *
-     * @param GoogleCloudAiplatformV1MetricxSpec $metricSpec
-     */
-    public function setMetricSpec(GoogleCloudAiplatformV1MetricxSpec $metricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1MetricxSpec
-     */
-    public function getMetricSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MetricxInput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MetricxInput
     {
     }
 }

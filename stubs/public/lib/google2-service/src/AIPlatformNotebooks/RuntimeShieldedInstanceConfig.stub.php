@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class RuntimeShieldedInstanceConfig extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $enableIntegrityMonitoring;
-    /**
-     * @var bool
-     */
-    public $enableSecureBoot;
-    /**
-     * @var bool
-     */
-    public $enableVtpm;
-    /**
-     * @param bool
-     */
-    public function setEnableIntegrityMonitoring($enableIntegrityMonitoring)
+namespace Google\Service\AIPlatformNotebooks {
+    class RuntimeShieldedInstanceConfig extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $enableIntegrityMonitoring;
+        /**
+         * @var bool
+         */
+        public $enableSecureBoot;
+        /**
+         * @var bool
+         */
+        public $enableVtpm;
+        /**
+         * @param bool
+         */
+        public function setEnableIntegrityMonitoring($enableIntegrityMonitoring)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableIntegrityMonitoring()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setEnableSecureBoot($enableSecureBoot)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableSecureBoot()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setEnableVtpm($enableVtpm)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableVtpm()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\RuntimeShieldedInstanceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableIntegrityMonitoring()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setEnableSecureBoot($enableSecureBoot)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableSecureBoot()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setEnableVtpm($enableVtpm)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableVtpm()
+    class Google_Service_AIPlatformNotebooks_RuntimeShieldedInstanceConfig extends \Google\Service\AIPlatformNotebooks\RuntimeShieldedInstanceConfig
     {
     }
 }

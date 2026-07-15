@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo\Resource;
-
-/**
- * The "youtubeAssetTypes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $displayvideoService = new Google\Service\DisplayVideo(...);
- *   $youtubeAssetTypes = $displayvideoService->advertisers_lineItems_youtubeAssetTypes;
- *  </code>
- */
-class AdvertisersLineItemsYoutubeAssetTypes extends \Google\Service\Resource
-{
+namespace Google\Service\DisplayVideo\Resource {
+    /**
+     * The "youtubeAssetTypes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $displayvideoService = new Google\Service\DisplayVideo(...);
+     *   $youtubeAssetTypes = $displayvideoService->advertisers_lineItems_youtubeAssetTypes;
+     *  </code>
+     */
+    class AdvertisersLineItemsYoutubeAssetTypes extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DisplayVideo\Resource\AdvertisersLineItemsYoutubeAssetTypes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DisplayVideo_Resource_AdvertisersLineItemsYoutubeAssetTypes extends \Google\Service\DisplayVideo\Resource\AdvertisersLineItemsYoutubeAssetTypes
+    {
+    }
 }

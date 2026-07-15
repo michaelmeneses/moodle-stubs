@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SslPoliciesScopedList extends \Google\Collection
-{
-    protected $collection_key = 'sslPolicies';
-    protected $sslPoliciesType = SslPolicy::class;
-    protected $sslPoliciesDataType = 'array';
-    protected $warningType = SslPoliciesScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * A list of SslPolicies contained in this scope.
-     *
-     * @param SslPolicy[] $sslPolicies
-     */
-    public function setSslPolicies($sslPolicies)
+namespace Google\Service\Compute {
+    class SslPoliciesScopedList extends \Google\Collection
     {
+        protected $collection_key = 'sslPolicies';
+        protected $sslPoliciesType = SslPolicy::class;
+        protected $sslPoliciesDataType = 'array';
+        protected $warningType = SslPoliciesScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * A list of SslPolicies contained in this scope.
+         *
+         * @param SslPolicy[] $sslPolicies
+         */
+        public function setSslPolicies($sslPolicies)
+        {
+        }
+        /**
+         * @return SslPolicy[]
+         */
+        public function getSslPolicies()
+        {
+        }
+        /**
+         * Informational warning which replaces the list of SSL policies when the list
+         * is empty.
+         *
+         * @param SslPoliciesScopedListWarning $warning
+         */
+        public function setWarning(SslPoliciesScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return SslPoliciesScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SslPolicy[]
+     * Runtime class alias of \Google\Service\Compute\SslPoliciesScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSslPolicies()
-    {
-    }
-    /**
-     * Informational warning which replaces the list of SSL policies when the list
-     * is empty.
-     *
-     * @param SslPoliciesScopedListWarning $warning
-     */
-    public function setWarning(SslPoliciesScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return SslPoliciesScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_SslPoliciesScopedList extends \Google\Service\Compute\SslPoliciesScopedList
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SafeHtmlProto extends \Google\Model
-{
-    /**
-     * IMPORTANT: Never set or read this field, even from tests, it is private.
-     * See documentation at the top of .proto file for programming language
-     * packages with which to create or read this message.
-     *
-     * @var string
-     */
-    public $privateDoNotAccessOrElseSafeHtmlWrappedValue;
-    /**
-     * IMPORTANT: Never set or read this field, even from tests, it is private.
-     * See documentation at the top of .proto file for programming language
-     * packages with which to create or read this message.
-     *
-     * @param string $privateDoNotAccessOrElseSafeHtmlWrappedValue
-     */
-    public function setPrivateDoNotAccessOrElseSafeHtmlWrappedValue($privateDoNotAccessOrElseSafeHtmlWrappedValue)
+namespace Google\Service\CloudSearch {
+    class SafeHtmlProto extends \Google\Model
     {
+        /**
+         * IMPORTANT: Never set or read this field, even from tests, it is private.
+         * See documentation at the top of .proto file for programming language
+         * packages with which to create or read this message.
+         *
+         * @var string
+         */
+        public $privateDoNotAccessOrElseSafeHtmlWrappedValue;
+        /**
+         * IMPORTANT: Never set or read this field, even from tests, it is private.
+         * See documentation at the top of .proto file for programming language
+         * packages with which to create or read this message.
+         *
+         * @param string $privateDoNotAccessOrElseSafeHtmlWrappedValue
+         */
+        public function setPrivateDoNotAccessOrElseSafeHtmlWrappedValue($privateDoNotAccessOrElseSafeHtmlWrappedValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivateDoNotAccessOrElseSafeHtmlWrappedValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\SafeHtmlProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrivateDoNotAccessOrElseSafeHtmlWrappedValue()
+    class Google_Service_CloudSearch_SafeHtmlProto extends \Google\Service\CloudSearch\SafeHtmlProto
     {
     }
 }

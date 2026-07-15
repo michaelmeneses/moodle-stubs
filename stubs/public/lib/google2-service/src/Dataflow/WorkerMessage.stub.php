@@ -21,202 +21,211 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class WorkerMessage extends \Google\Model
-{
-    protected $dataSamplingReportType = DataSamplingReport::class;
-    protected $dataSamplingReportDataType = '';
-    /**
-     * Labels are used to group WorkerMessages. For example, a worker_message
-     * about a particular container might have the labels: { "JOB_ID":
-     * "2015-04-22", "WORKER_ID": "wordcount-vm-2015…" "CONTAINER_TYPE": "worker",
-     * "CONTAINER_ID": "ac1234def"} Label tags typically correspond to Label enum
-     * values. However, for ease of development other strings can be used as tags.
-     * LABEL_UNSPECIFIED should not be used here.
-     *
-     * @var string[]
-     */
-    public $labels;
-    protected $perWorkerMetricsType = PerWorkerMetrics::class;
-    protected $perWorkerMetricsDataType = '';
-    protected $streamingScalingReportType = StreamingScalingReport::class;
-    protected $streamingScalingReportDataType = '';
-    /**
-     * The timestamp of the worker_message.
-     *
-     * @var string
-     */
-    public $time;
-    protected $workerHealthReportType = WorkerHealthReport::class;
-    protected $workerHealthReportDataType = '';
-    protected $workerLifecycleEventType = WorkerLifecycleEvent::class;
-    protected $workerLifecycleEventDataType = '';
-    protected $workerMessageCodeType = WorkerMessageCode::class;
-    protected $workerMessageCodeDataType = '';
-    protected $workerMetricsType = ResourceUtilizationReport::class;
-    protected $workerMetricsDataType = '';
-    protected $workerShutdownNoticeType = WorkerShutdownNotice::class;
-    protected $workerShutdownNoticeDataType = '';
-    protected $workerThreadScalingReportType = WorkerThreadScalingReport::class;
-    protected $workerThreadScalingReportDataType = '';
-    /**
-     * Optional. Contains metrics related to go/dataflow-data-sampling-telemetry.
-     *
-     * @param DataSamplingReport $dataSamplingReport
-     */
-    public function setDataSamplingReport(DataSamplingReport $dataSamplingReport)
+namespace Google\Service\Dataflow {
+    class WorkerMessage extends \Google\Model
     {
+        protected $dataSamplingReportType = DataSamplingReport::class;
+        protected $dataSamplingReportDataType = '';
+        /**
+         * Labels are used to group WorkerMessages. For example, a worker_message
+         * about a particular container might have the labels: { "JOB_ID":
+         * "2015-04-22", "WORKER_ID": "wordcount-vm-2015…" "CONTAINER_TYPE": "worker",
+         * "CONTAINER_ID": "ac1234def"} Label tags typically correspond to Label enum
+         * values. However, for ease of development other strings can be used as tags.
+         * LABEL_UNSPECIFIED should not be used here.
+         *
+         * @var string[]
+         */
+        public $labels;
+        protected $perWorkerMetricsType = PerWorkerMetrics::class;
+        protected $perWorkerMetricsDataType = '';
+        protected $streamingScalingReportType = StreamingScalingReport::class;
+        protected $streamingScalingReportDataType = '';
+        /**
+         * The timestamp of the worker_message.
+         *
+         * @var string
+         */
+        public $time;
+        protected $workerHealthReportType = WorkerHealthReport::class;
+        protected $workerHealthReportDataType = '';
+        protected $workerLifecycleEventType = WorkerLifecycleEvent::class;
+        protected $workerLifecycleEventDataType = '';
+        protected $workerMessageCodeType = WorkerMessageCode::class;
+        protected $workerMessageCodeDataType = '';
+        protected $workerMetricsType = ResourceUtilizationReport::class;
+        protected $workerMetricsDataType = '';
+        protected $workerShutdownNoticeType = WorkerShutdownNotice::class;
+        protected $workerShutdownNoticeDataType = '';
+        protected $workerThreadScalingReportType = WorkerThreadScalingReport::class;
+        protected $workerThreadScalingReportDataType = '';
+        /**
+         * Optional. Contains metrics related to go/dataflow-data-sampling-telemetry.
+         *
+         * @param DataSamplingReport $dataSamplingReport
+         */
+        public function setDataSamplingReport(DataSamplingReport $dataSamplingReport)
+        {
+        }
+        /**
+         * @return DataSamplingReport
+         */
+        public function getDataSamplingReport()
+        {
+        }
+        /**
+         * Labels are used to group WorkerMessages. For example, a worker_message
+         * about a particular container might have the labels: { "JOB_ID":
+         * "2015-04-22", "WORKER_ID": "wordcount-vm-2015…" "CONTAINER_TYPE": "worker",
+         * "CONTAINER_ID": "ac1234def"} Label tags typically correspond to Label enum
+         * values. However, for ease of development other strings can be used as tags.
+         * LABEL_UNSPECIFIED should not be used here.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * System defined metrics for this worker.
+         *
+         * @param PerWorkerMetrics $perWorkerMetrics
+         */
+        public function setPerWorkerMetrics(PerWorkerMetrics $perWorkerMetrics)
+        {
+        }
+        /**
+         * @return PerWorkerMetrics
+         */
+        public function getPerWorkerMetrics()
+        {
+        }
+        /**
+         * Contains per-user worker telemetry used in streaming autoscaling.
+         *
+         * @param StreamingScalingReport $streamingScalingReport
+         */
+        public function setStreamingScalingReport(StreamingScalingReport $streamingScalingReport)
+        {
+        }
+        /**
+         * @return StreamingScalingReport
+         */
+        public function getStreamingScalingReport()
+        {
+        }
+        /**
+         * The timestamp of the worker_message.
+         *
+         * @param string $time
+         */
+        public function setTime($time)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTime()
+        {
+        }
+        /**
+         * The health of a worker.
+         *
+         * @param WorkerHealthReport $workerHealthReport
+         */
+        public function setWorkerHealthReport(WorkerHealthReport $workerHealthReport)
+        {
+        }
+        /**
+         * @return WorkerHealthReport
+         */
+        public function getWorkerHealthReport()
+        {
+        }
+        /**
+         * Record of worker lifecycle events.
+         *
+         * @param WorkerLifecycleEvent $workerLifecycleEvent
+         */
+        public function setWorkerLifecycleEvent(WorkerLifecycleEvent $workerLifecycleEvent)
+        {
+        }
+        /**
+         * @return WorkerLifecycleEvent
+         */
+        public function getWorkerLifecycleEvent()
+        {
+        }
+        /**
+         * A worker message code.
+         *
+         * @param WorkerMessageCode $workerMessageCode
+         */
+        public function setWorkerMessageCode(WorkerMessageCode $workerMessageCode)
+        {
+        }
+        /**
+         * @return WorkerMessageCode
+         */
+        public function getWorkerMessageCode()
+        {
+        }
+        /**
+         * Resource metrics reported by workers.
+         *
+         * @param ResourceUtilizationReport $workerMetrics
+         */
+        public function setWorkerMetrics(ResourceUtilizationReport $workerMetrics)
+        {
+        }
+        /**
+         * @return ResourceUtilizationReport
+         */
+        public function getWorkerMetrics()
+        {
+        }
+        /**
+         * Shutdown notice by workers.
+         *
+         * @param WorkerShutdownNotice $workerShutdownNotice
+         */
+        public function setWorkerShutdownNotice(WorkerShutdownNotice $workerShutdownNotice)
+        {
+        }
+        /**
+         * @return WorkerShutdownNotice
+         */
+        public function getWorkerShutdownNotice()
+        {
+        }
+        /**
+         * Thread scaling information reported by workers.
+         *
+         * @param WorkerThreadScalingReport $workerThreadScalingReport
+         */
+        public function setWorkerThreadScalingReport(WorkerThreadScalingReport $workerThreadScalingReport)
+        {
+        }
+        /**
+         * @return WorkerThreadScalingReport
+         */
+        public function getWorkerThreadScalingReport()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataSamplingReport
+     * Runtime class alias of \Google\Service\Dataflow\WorkerMessage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataSamplingReport()
-    {
-    }
-    /**
-     * Labels are used to group WorkerMessages. For example, a worker_message
-     * about a particular container might have the labels: { "JOB_ID":
-     * "2015-04-22", "WORKER_ID": "wordcount-vm-2015…" "CONTAINER_TYPE": "worker",
-     * "CONTAINER_ID": "ac1234def"} Label tags typically correspond to Label enum
-     * values. However, for ease of development other strings can be used as tags.
-     * LABEL_UNSPECIFIED should not be used here.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * System defined metrics for this worker.
-     *
-     * @param PerWorkerMetrics $perWorkerMetrics
-     */
-    public function setPerWorkerMetrics(PerWorkerMetrics $perWorkerMetrics)
-    {
-    }
-    /**
-     * @return PerWorkerMetrics
-     */
-    public function getPerWorkerMetrics()
-    {
-    }
-    /**
-     * Contains per-user worker telemetry used in streaming autoscaling.
-     *
-     * @param StreamingScalingReport $streamingScalingReport
-     */
-    public function setStreamingScalingReport(StreamingScalingReport $streamingScalingReport)
-    {
-    }
-    /**
-     * @return StreamingScalingReport
-     */
-    public function getStreamingScalingReport()
-    {
-    }
-    /**
-     * The timestamp of the worker_message.
-     *
-     * @param string $time
-     */
-    public function setTime($time)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTime()
-    {
-    }
-    /**
-     * The health of a worker.
-     *
-     * @param WorkerHealthReport $workerHealthReport
-     */
-    public function setWorkerHealthReport(WorkerHealthReport $workerHealthReport)
-    {
-    }
-    /**
-     * @return WorkerHealthReport
-     */
-    public function getWorkerHealthReport()
-    {
-    }
-    /**
-     * Record of worker lifecycle events.
-     *
-     * @param WorkerLifecycleEvent $workerLifecycleEvent
-     */
-    public function setWorkerLifecycleEvent(WorkerLifecycleEvent $workerLifecycleEvent)
-    {
-    }
-    /**
-     * @return WorkerLifecycleEvent
-     */
-    public function getWorkerLifecycleEvent()
-    {
-    }
-    /**
-     * A worker message code.
-     *
-     * @param WorkerMessageCode $workerMessageCode
-     */
-    public function setWorkerMessageCode(WorkerMessageCode $workerMessageCode)
-    {
-    }
-    /**
-     * @return WorkerMessageCode
-     */
-    public function getWorkerMessageCode()
-    {
-    }
-    /**
-     * Resource metrics reported by workers.
-     *
-     * @param ResourceUtilizationReport $workerMetrics
-     */
-    public function setWorkerMetrics(ResourceUtilizationReport $workerMetrics)
-    {
-    }
-    /**
-     * @return ResourceUtilizationReport
-     */
-    public function getWorkerMetrics()
-    {
-    }
-    /**
-     * Shutdown notice by workers.
-     *
-     * @param WorkerShutdownNotice $workerShutdownNotice
-     */
-    public function setWorkerShutdownNotice(WorkerShutdownNotice $workerShutdownNotice)
-    {
-    }
-    /**
-     * @return WorkerShutdownNotice
-     */
-    public function getWorkerShutdownNotice()
-    {
-    }
-    /**
-     * Thread scaling information reported by workers.
-     *
-     * @param WorkerThreadScalingReport $workerThreadScalingReport
-     */
-    public function setWorkerThreadScalingReport(WorkerThreadScalingReport $workerThreadScalingReport)
-    {
-    }
-    /**
-     * @return WorkerThreadScalingReport
-     */
-    public function getWorkerThreadScalingReport()
+    class Google_Service_Dataflow_WorkerMessage extends \Google\Service\Dataflow\WorkerMessage
     {
     }
 }

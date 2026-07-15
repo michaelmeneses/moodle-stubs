@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class Frame extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $targetName;
-    /**
-     * @var string
-     */
-    public $workflowGuid;
-    /**
-     * @var string
-     */
-    public $zoneId;
-    /**
-     * @param string
-     */
-    public function setTargetName($targetName)
+namespace Google\Service\BigtableAdmin {
+    class Frame extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $targetName;
+        /**
+         * @var string
+         */
+        public $workflowGuid;
+        /**
+         * @var string
+         */
+        public $zoneId;
+        /**
+         * @param string
+         */
+        public function setTargetName($targetName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWorkflowGuid($workflowGuid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkflowGuid()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setZoneId($zoneId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZoneId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigtableAdmin\Frame registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWorkflowGuid($workflowGuid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkflowGuid()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setZoneId($zoneId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZoneId()
+    class Google_Service_BigtableAdmin_Frame extends \Google\Service\BigtableAdmin\Frame
     {
     }
 }

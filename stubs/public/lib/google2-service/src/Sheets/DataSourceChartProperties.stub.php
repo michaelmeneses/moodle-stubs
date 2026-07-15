@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DataSourceChartProperties extends \Google\Model
-{
-    protected $dataExecutionStatusType = DataExecutionStatus::class;
-    protected $dataExecutionStatusDataType = '';
-    /**
-     * ID of the data source that the chart is associated with.
-     *
-     * @var string
-     */
-    public $dataSourceId;
-    /**
-     * Output only. The data execution status.
-     *
-     * @param DataExecutionStatus $dataExecutionStatus
-     */
-    public function setDataExecutionStatus(DataExecutionStatus $dataExecutionStatus)
+namespace Google\Service\Sheets {
+    class DataSourceChartProperties extends \Google\Model
     {
+        protected $dataExecutionStatusType = DataExecutionStatus::class;
+        protected $dataExecutionStatusDataType = '';
+        /**
+         * ID of the data source that the chart is associated with.
+         *
+         * @var string
+         */
+        public $dataSourceId;
+        /**
+         * Output only. The data execution status.
+         *
+         * @param DataExecutionStatus $dataExecutionStatus
+         */
+        public function setDataExecutionStatus(DataExecutionStatus $dataExecutionStatus)
+        {
+        }
+        /**
+         * @return DataExecutionStatus
+         */
+        public function getDataExecutionStatus()
+        {
+        }
+        /**
+         * ID of the data source that the chart is associated with.
+         *
+         * @param string $dataSourceId
+         */
+        public function setDataSourceId($dataSourceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataSourceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataExecutionStatus
+     * Runtime class alias of \Google\Service\Sheets\DataSourceChartProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataExecutionStatus()
-    {
-    }
-    /**
-     * ID of the data source that the chart is associated with.
-     *
-     * @param string $dataSourceId
-     */
-    public function setDataSourceId($dataSourceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataSourceId()
+    class Google_Service_Sheets_DataSourceChartProperties extends \Google\Service\Sheets\DataSourceChartProperties
     {
     }
 }

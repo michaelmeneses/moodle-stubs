@@ -8,6 +8,16 @@
  */
 namespace core_reportbuilder\table;
 
+use core\output\notification;
+use html_writer;
+use moodle_exception;
+use moodle_url;
+use stdClass;
+use core_reportbuilder\{datasource, manager};
+use core_reportbuilder\local\models\report;
+use core_reportbuilder\local\report\column;
+use core_reportbuilder\output\column_aggregation_editable;
+use core_reportbuilder\output\column_heading_editable;
 /**
  * Custom report dynamic table class
  *

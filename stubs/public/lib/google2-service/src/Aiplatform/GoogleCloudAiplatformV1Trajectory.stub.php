@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1Trajectory extends \Google\Collection
-{
-    protected $collection_key = 'toolCalls';
-    protected $toolCallsType = GoogleCloudAiplatformV1ToolCall::class;
-    protected $toolCallsDataType = 'array';
-    /**
-     * Required. Tool calls in the trajectory.
-     *
-     * @param GoogleCloudAiplatformV1ToolCall[] $toolCalls
-     */
-    public function setToolCalls($toolCalls)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1Trajectory extends \Google\Collection
     {
+        protected $collection_key = 'toolCalls';
+        protected $toolCallsType = GoogleCloudAiplatformV1ToolCall::class;
+        protected $toolCallsDataType = 'array';
+        /**
+         * Required. Tool calls in the trajectory.
+         *
+         * @param GoogleCloudAiplatformV1ToolCall[] $toolCalls
+         */
+        public function setToolCalls($toolCalls)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ToolCall[]
+         */
+        public function getToolCalls()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ToolCall[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1Trajectory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getToolCalls()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1Trajectory extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1Trajectory
     {
     }
 }

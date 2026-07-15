@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class PersistentPreferredActivity extends \Google\Collection
-{
-    protected $collection_key = 'categories';
-    /**
-     * The intent actions to match in the filter. If any actions are included in
-     * the filter, then an intent's action must be one of those values for it to
-     * match. If no actions are included, the intent action is ignored.
-     *
-     * @var string[]
-     */
-    public $actions;
-    /**
-     * The intent categories to match in the filter. An intent includes the
-     * categories that it requires, all of which must be included in the filter in
-     * order to match. In other words, adding a category to the filter has no
-     * impact on matching unless that category is specified in the intent.
-     *
-     * @var string[]
-     */
-    public $categories;
-    /**
-     * The activity that should be the default intent handler. This should be an
-     * Android component name, e.g. com.android.enterprise.app/.MainActivity.
-     * Alternatively, the value may be the package name of an app, which causes
-     * Android Device Policy to choose an appropriate activity from the app to
-     * handle the intent.
-     *
-     * @var string
-     */
-    public $receiverActivity;
-    /**
-     * The intent actions to match in the filter. If any actions are included in
-     * the filter, then an intent's action must be one of those values for it to
-     * match. If no actions are included, the intent action is ignored.
-     *
-     * @param string[] $actions
-     */
-    public function setActions($actions)
+namespace Google\Service\AndroidManagement {
+    class PersistentPreferredActivity extends \Google\Collection
     {
+        protected $collection_key = 'categories';
+        /**
+         * The intent actions to match in the filter. If any actions are included in
+         * the filter, then an intent's action must be one of those values for it to
+         * match. If no actions are included, the intent action is ignored.
+         *
+         * @var string[]
+         */
+        public $actions;
+        /**
+         * The intent categories to match in the filter. An intent includes the
+         * categories that it requires, all of which must be included in the filter in
+         * order to match. In other words, adding a category to the filter has no
+         * impact on matching unless that category is specified in the intent.
+         *
+         * @var string[]
+         */
+        public $categories;
+        /**
+         * The activity that should be the default intent handler. This should be an
+         * Android component name, e.g. com.android.enterprise.app/.MainActivity.
+         * Alternatively, the value may be the package name of an app, which causes
+         * Android Device Policy to choose an appropriate activity from the app to
+         * handle the intent.
+         *
+         * @var string
+         */
+        public $receiverActivity;
+        /**
+         * The intent actions to match in the filter. If any actions are included in
+         * the filter, then an intent's action must be one of those values for it to
+         * match. If no actions are included, the intent action is ignored.
+         *
+         * @param string[] $actions
+         */
+        public function setActions($actions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getActions()
+        {
+        }
+        /**
+         * The intent categories to match in the filter. An intent includes the
+         * categories that it requires, all of which must be included in the filter in
+         * order to match. In other words, adding a category to the filter has no
+         * impact on matching unless that category is specified in the intent.
+         *
+         * @param string[] $categories
+         */
+        public function setCategories($categories)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCategories()
+        {
+        }
+        /**
+         * The activity that should be the default intent handler. This should be an
+         * Android component name, e.g. com.android.enterprise.app/.MainActivity.
+         * Alternatively, the value may be the package name of an app, which causes
+         * Android Device Policy to choose an appropriate activity from the app to
+         * handle the intent.
+         *
+         * @param string $receiverActivity
+         */
+        public function setReceiverActivity($receiverActivity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReceiverActivity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AndroidManagement\PersistentPreferredActivity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActions()
-    {
-    }
-    /**
-     * The intent categories to match in the filter. An intent includes the
-     * categories that it requires, all of which must be included in the filter in
-     * order to match. In other words, adding a category to the filter has no
-     * impact on matching unless that category is specified in the intent.
-     *
-     * @param string[] $categories
-     */
-    public function setCategories($categories)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCategories()
-    {
-    }
-    /**
-     * The activity that should be the default intent handler. This should be an
-     * Android component name, e.g. com.android.enterprise.app/.MainActivity.
-     * Alternatively, the value may be the package name of an app, which causes
-     * Android Device Policy to choose an appropriate activity from the app to
-     * handle the intent.
-     *
-     * @param string $receiverActivity
-     */
-    public function setReceiverActivity($receiverActivity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReceiverActivity()
+    class Google_Service_AndroidManagement_PersistentPreferredActivity extends \Google\Service\AndroidManagement\PersistentPreferredActivity
     {
     }
 }

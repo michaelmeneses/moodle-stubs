@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ExportFlowResponse extends \Google\Model
-{
-    /**
-     * Uncompressed raw byte content for flow.
-     *
-     * @var string
-     */
-    public $flowContent;
-    /**
-     * The URI to a file containing the exported flow. This field is populated
-     * only if `flow_uri` is specified in ExportFlowRequest.
-     *
-     * @var string
-     */
-    public $flowUri;
-    /**
-     * Uncompressed raw byte content for flow.
-     *
-     * @param string $flowContent
-     */
-    public function setFlowContent($flowContent)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ExportFlowResponse extends \Google\Model
     {
+        /**
+         * Uncompressed raw byte content for flow.
+         *
+         * @var string
+         */
+        public $flowContent;
+        /**
+         * The URI to a file containing the exported flow. This field is populated
+         * only if `flow_uri` is specified in ExportFlowRequest.
+         *
+         * @var string
+         */
+        public $flowUri;
+        /**
+         * Uncompressed raw byte content for flow.
+         *
+         * @param string $flowContent
+         */
+        public function setFlowContent($flowContent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFlowContent()
+        {
+        }
+        /**
+         * The URI to a file containing the exported flow. This field is populated
+         * only if `flow_uri` is specified in ExportFlowRequest.
+         *
+         * @param string $flowUri
+         */
+        public function setFlowUri($flowUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFlowUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ExportFlowResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFlowContent()
-    {
-    }
-    /**
-     * The URI to a file containing the exported flow. This field is populated
-     * only if `flow_uri` is specified in ExportFlowRequest.
-     *
-     * @param string $flowUri
-     */
-    public function setFlowUri($flowUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFlowUri()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ExportFlowResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ExportFlowResponse
     {
     }
 }

@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1ListTasksResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachableLocations';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $tasksType = GoogleCloudDataplexV1Task::class;
-    protected $tasksDataType = 'array';
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachableLocations;
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1ListTasksResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachableLocations';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $tasksType = GoogleCloudDataplexV1Task::class;
+        protected $tasksDataType = 'array';
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachableLocations;
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Tasks under the given parent lake.
+         *
+         * @param GoogleCloudDataplexV1Task[] $tasks
+         */
+        public function setTasks($tasks)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1Task[]
+         */
+        public function getTasks()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachableLocations
+         */
+        public function setUnreachableLocations($unreachableLocations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachableLocations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListTasksResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Tasks under the given parent lake.
-     *
-     * @param GoogleCloudDataplexV1Task[] $tasks
-     */
-    public function setTasks($tasks)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1Task[]
-     */
-    public function getTasks()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachableLocations
-     */
-    public function setUnreachableLocations($unreachableLocations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachableLocations()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1ListTasksResponse extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListTasksResponse
     {
     }
 }

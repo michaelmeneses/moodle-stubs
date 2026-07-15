@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3IntentParameter extends \Google\Model
-{
-    /**
-     * Required. The entity type of the parameter. Format:
-     * `projects/-/locations/-/agents/-/entityTypes/` for system entity types (for
-     * example, `projects/-/locations/-/agents/-/entityTypes/sys.date`), or
-     * `projects//locations//agents//entityTypes/` for developer entity types.
-     *
-     * @var string
-     */
-    public $entityType;
-    /**
-     * Required. The unique identifier of the parameter. This field is used by
-     * training phrases to annotate their parts.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Indicates whether the parameter represents a list of values.
-     *
-     * @var bool
-     */
-    public $isList;
-    /**
-     * Indicates whether the parameter content should be redacted in log. If
-     * redaction is enabled, the parameter content will be replaced by parameter
-     * name during logging. Note: the parameter content is subject to redaction if
-     * either parameter level redaction or entity type level redaction is enabled.
-     *
-     * @var bool
-     */
-    public $redact;
-    /**
-     * Required. The entity type of the parameter. Format:
-     * `projects/-/locations/-/agents/-/entityTypes/` for system entity types (for
-     * example, `projects/-/locations/-/agents/-/entityTypes/sys.date`), or
-     * `projects//locations//agents//entityTypes/` for developer entity types.
-     *
-     * @param string $entityType
-     */
-    public function setEntityType($entityType)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3IntentParameter extends \Google\Model
     {
+        /**
+         * Required. The entity type of the parameter. Format:
+         * `projects/-/locations/-/agents/-/entityTypes/` for system entity types (for
+         * example, `projects/-/locations/-/agents/-/entityTypes/sys.date`), or
+         * `projects//locations//agents//entityTypes/` for developer entity types.
+         *
+         * @var string
+         */
+        public $entityType;
+        /**
+         * Required. The unique identifier of the parameter. This field is used by
+         * training phrases to annotate their parts.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Indicates whether the parameter represents a list of values.
+         *
+         * @var bool
+         */
+        public $isList;
+        /**
+         * Indicates whether the parameter content should be redacted in log. If
+         * redaction is enabled, the parameter content will be replaced by parameter
+         * name during logging. Note: the parameter content is subject to redaction if
+         * either parameter level redaction or entity type level redaction is enabled.
+         *
+         * @var bool
+         */
+        public $redact;
+        /**
+         * Required. The entity type of the parameter. Format:
+         * `projects/-/locations/-/agents/-/entityTypes/` for system entity types (for
+         * example, `projects/-/locations/-/agents/-/entityTypes/sys.date`), or
+         * `projects//locations//agents//entityTypes/` for developer entity types.
+         *
+         * @param string $entityType
+         */
+        public function setEntityType($entityType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityType()
+        {
+        }
+        /**
+         * Required. The unique identifier of the parameter. This field is used by
+         * training phrases to annotate their parts.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Indicates whether the parameter represents a list of values.
+         *
+         * @param bool $isList
+         */
+        public function setIsList($isList)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsList()
+        {
+        }
+        /**
+         * Indicates whether the parameter content should be redacted in log. If
+         * redaction is enabled, the parameter content will be replaced by parameter
+         * name during logging. Note: the parameter content is subject to redaction if
+         * either parameter level redaction or entity type level redaction is enabled.
+         *
+         * @param bool $redact
+         */
+        public function setRedact($redact)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRedact()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3IntentParameter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntityType()
-    {
-    }
-    /**
-     * Required. The unique identifier of the parameter. This field is used by
-     * training phrases to annotate their parts.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Indicates whether the parameter represents a list of values.
-     *
-     * @param bool $isList
-     */
-    public function setIsList($isList)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsList()
-    {
-    }
-    /**
-     * Indicates whether the parameter content should be redacted in log. If
-     * redaction is enabled, the parameter content will be replaced by parameter
-     * name during logging. Note: the parameter content is subject to redaction if
-     * either parameter level redaction or entity type level redaction is enabled.
-     *
-     * @param bool $redact
-     */
-    public function setRedact($redact)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRedact()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3IntentParameter extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3IntentParameter
     {
     }
 }

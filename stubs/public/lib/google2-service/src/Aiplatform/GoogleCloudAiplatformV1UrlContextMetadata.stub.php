@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1UrlContextMetadata extends \Google\Collection
-{
-    protected $collection_key = 'urlMetadata';
-    protected $urlMetadataType = GoogleCloudAiplatformV1UrlMetadata::class;
-    protected $urlMetadataDataType = 'array';
-    /**
-     * Output only. A list of URL metadata, with one entry for each URL retrieved
-     * by the tool.
-     *
-     * @param GoogleCloudAiplatformV1UrlMetadata[] $urlMetadata
-     */
-    public function setUrlMetadata($urlMetadata)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1UrlContextMetadata extends \Google\Collection
     {
+        protected $collection_key = 'urlMetadata';
+        protected $urlMetadataType = GoogleCloudAiplatformV1UrlMetadata::class;
+        protected $urlMetadataDataType = 'array';
+        /**
+         * Output only. A list of URL metadata, with one entry for each URL retrieved
+         * by the tool.
+         *
+         * @param GoogleCloudAiplatformV1UrlMetadata[] $urlMetadata
+         */
+        public function setUrlMetadata($urlMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1UrlMetadata[]
+         */
+        public function getUrlMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1UrlMetadata[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1UrlContextMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUrlMetadata()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1UrlContextMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1UrlContextMetadata
     {
     }
 }

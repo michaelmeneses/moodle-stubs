@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore\Resource;
-
-/**
- * The "collectionGroups" collection of methods.
- * Typical usage is:
- *  <code>
- *   $firestoreService = new Google\Service\Firestore(...);
- *   $collectionGroups = $firestoreService->projects_databases_collectionGroups;
- *  </code>
- */
-class ProjectsDatabasesCollectionGroups extends \Google\Service\Resource
-{
+namespace Google\Service\Firestore\Resource {
+    /**
+     * The "collectionGroups" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $firestoreService = new Google\Service\Firestore(...);
+     *   $collectionGroups = $firestoreService->projects_databases_collectionGroups;
+     *  </code>
+     */
+    class ProjectsDatabasesCollectionGroups extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Firestore\Resource\ProjectsDatabasesCollectionGroups registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Firestore_Resource_ProjectsDatabasesCollectionGroups extends \Google\Service\Firestore\Resource\ProjectsDatabasesCollectionGroups
+    {
+    }
 }

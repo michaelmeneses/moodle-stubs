@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class PartitioningDefinition extends \Google\Collection
-{
-    protected $collection_key = 'partitionedColumn';
-    protected $partitionedColumnType = PartitionedColumn::class;
-    protected $partitionedColumnDataType = 'array';
-    /**
-     * Optional. Details about each partitioning column. This field is output only
-     * for all partitioning types other than metastore partitioned tables.
-     * BigQuery native tables only support 1 partitioning column. Other table
-     * types may support 0, 1 or more partitioning columns. For metastore
-     * partitioned tables, the order must match the definition order in the Hive
-     * Metastore, where it must match the physical layout of the table. For
-     * example, CREATE TABLE a_table(id BIGINT, name STRING) PARTITIONED BY (city
-     * STRING, state STRING). In this case the values must be ['city', 'state'] in
-     * that order.
-     *
-     * @param PartitionedColumn[] $partitionedColumn
-     */
-    public function setPartitionedColumn($partitionedColumn)
+namespace Google\Service\Bigquery {
+    class PartitioningDefinition extends \Google\Collection
     {
+        protected $collection_key = 'partitionedColumn';
+        protected $partitionedColumnType = PartitionedColumn::class;
+        protected $partitionedColumnDataType = 'array';
+        /**
+         * Optional. Details about each partitioning column. This field is output only
+         * for all partitioning types other than metastore partitioned tables.
+         * BigQuery native tables only support 1 partitioning column. Other table
+         * types may support 0, 1 or more partitioning columns. For metastore
+         * partitioned tables, the order must match the definition order in the Hive
+         * Metastore, where it must match the physical layout of the table. For
+         * example, CREATE TABLE a_table(id BIGINT, name STRING) PARTITIONED BY (city
+         * STRING, state STRING). In this case the values must be ['city', 'state'] in
+         * that order.
+         *
+         * @param PartitionedColumn[] $partitionedColumn
+         */
+        public function setPartitionedColumn($partitionedColumn)
+        {
+        }
+        /**
+         * @return PartitionedColumn[]
+         */
+        public function getPartitionedColumn()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PartitionedColumn[]
+     * Runtime class alias of \Google\Service\Bigquery\PartitioningDefinition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPartitionedColumn()
+    class Google_Service_Bigquery_PartitioningDefinition extends \Google\Service\Bigquery\PartitioningDefinition
     {
     }
 }

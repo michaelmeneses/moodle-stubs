@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RubricBasedInstructionFollowingResult extends \Google\Collection
-{
-    protected $collection_key = 'rubricCritiqueResults';
-    protected $rubricCritiqueResultsType = GoogleCloudAiplatformV1RubricCritiqueResult::class;
-    protected $rubricCritiqueResultsDataType = 'array';
-    /**
-     * Output only. Overall score for the instruction following.
-     *
-     * @var float
-     */
-    public $score;
-    /**
-     * Output only. List of per rubric critique results.
-     *
-     * @param GoogleCloudAiplatformV1RubricCritiqueResult[] $rubricCritiqueResults
-     */
-    public function setRubricCritiqueResults($rubricCritiqueResults)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RubricBasedInstructionFollowingResult extends \Google\Collection
     {
+        protected $collection_key = 'rubricCritiqueResults';
+        protected $rubricCritiqueResultsType = GoogleCloudAiplatformV1RubricCritiqueResult::class;
+        protected $rubricCritiqueResultsDataType = 'array';
+        /**
+         * Output only. Overall score for the instruction following.
+         *
+         * @var float
+         */
+        public $score;
+        /**
+         * Output only. List of per rubric critique results.
+         *
+         * @param GoogleCloudAiplatformV1RubricCritiqueResult[] $rubricCritiqueResults
+         */
+        public function setRubricCritiqueResults($rubricCritiqueResults)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RubricCritiqueResult[]
+         */
+        public function getRubricCritiqueResults()
+        {
+        }
+        /**
+         * Output only. Overall score for the instruction following.
+         *
+         * @param float $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1RubricCritiqueResult[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RubricBasedInstructionFollowingResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRubricCritiqueResults()
-    {
-    }
-    /**
-     * Output only. Overall score for the instruction following.
-     *
-     * @param float $score
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RubricBasedInstructionFollowingResult extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RubricBasedInstructionFollowingResult
     {
     }
 }

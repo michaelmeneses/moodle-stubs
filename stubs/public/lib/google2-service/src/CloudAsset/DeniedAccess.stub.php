@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class DeniedAccess extends \Google\Collection
-{
-    protected $collection_key = 'denyDetails';
-    protected $deniedAccessTupleType = GoogleCloudAssetV1DeniedAccessAccessTuple::class;
-    protected $deniedAccessTupleDataType = '';
-    protected $denyDetailsType = GoogleCloudAssetV1DeniedAccessDenyDetail::class;
-    protected $denyDetailsDataType = 'array';
-    /**
-     * @param GoogleCloudAssetV1DeniedAccessAccessTuple
-     */
-    public function setDeniedAccessTuple(GoogleCloudAssetV1DeniedAccessAccessTuple $deniedAccessTuple)
+namespace Google\Service\CloudAsset {
+    class DeniedAccess extends \Google\Collection
     {
+        protected $collection_key = 'denyDetails';
+        protected $deniedAccessTupleType = GoogleCloudAssetV1DeniedAccessAccessTuple::class;
+        protected $deniedAccessTupleDataType = '';
+        protected $denyDetailsType = GoogleCloudAssetV1DeniedAccessDenyDetail::class;
+        protected $denyDetailsDataType = 'array';
+        /**
+         * @param GoogleCloudAssetV1DeniedAccessAccessTuple
+         */
+        public function setDeniedAccessTuple(GoogleCloudAssetV1DeniedAccessAccessTuple $deniedAccessTuple)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1DeniedAccessAccessTuple
+         */
+        public function getDeniedAccessTuple()
+        {
+        }
+        /**
+         * @param GoogleCloudAssetV1DeniedAccessDenyDetail[]
+         */
+        public function setDenyDetails($denyDetails)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1DeniedAccessDenyDetail[]
+         */
+        public function getDenyDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAssetV1DeniedAccessAccessTuple
+     * Runtime class alias of \Google\Service\CloudAsset\DeniedAccess registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeniedAccessTuple()
-    {
-    }
-    /**
-     * @param GoogleCloudAssetV1DeniedAccessDenyDetail[]
-     */
-    public function setDenyDetails($denyDetails)
-    {
-    }
-    /**
-     * @return GoogleCloudAssetV1DeniedAccessDenyDetail[]
-     */
-    public function getDenyDetails()
+    class Google_Service_CloudAsset_DeniedAccess extends \Google\Service\CloudAsset\DeniedAccess
     {
     }
 }

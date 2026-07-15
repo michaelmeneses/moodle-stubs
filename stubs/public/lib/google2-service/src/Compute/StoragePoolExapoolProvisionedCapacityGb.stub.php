@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class StoragePoolExapoolProvisionedCapacityGb extends \Google\Model
-{
-    /**
-     * Output only. Size, in GiB, of provisioned capacity-optimized capacity for
-     * this Exapool
-     *
-     * @var string
-     */
-    public $capacityOptimized;
-    /**
-     * Output only. Size, in GiB, of provisioned read-optimized capacity for this
-     * Exapool
-     *
-     * @var string
-     */
-    public $readOptimized;
-    /**
-     * Output only. Size, in GiB, of provisioned write-optimized capacity for this
-     * Exapool
-     *
-     * @var string
-     */
-    public $writeOptimized;
-    /**
-     * Output only. Size, in GiB, of provisioned capacity-optimized capacity for
-     * this Exapool
-     *
-     * @param string $capacityOptimized
-     */
-    public function setCapacityOptimized($capacityOptimized)
+namespace Google\Service\Compute {
+    class StoragePoolExapoolProvisionedCapacityGb extends \Google\Model
     {
+        /**
+         * Output only. Size, in GiB, of provisioned capacity-optimized capacity for
+         * this Exapool
+         *
+         * @var string
+         */
+        public $capacityOptimized;
+        /**
+         * Output only. Size, in GiB, of provisioned read-optimized capacity for this
+         * Exapool
+         *
+         * @var string
+         */
+        public $readOptimized;
+        /**
+         * Output only. Size, in GiB, of provisioned write-optimized capacity for this
+         * Exapool
+         *
+         * @var string
+         */
+        public $writeOptimized;
+        /**
+         * Output only. Size, in GiB, of provisioned capacity-optimized capacity for
+         * this Exapool
+         *
+         * @param string $capacityOptimized
+         */
+        public function setCapacityOptimized($capacityOptimized)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCapacityOptimized()
+        {
+        }
+        /**
+         * Output only. Size, in GiB, of provisioned read-optimized capacity for this
+         * Exapool
+         *
+         * @param string $readOptimized
+         */
+        public function setReadOptimized($readOptimized)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadOptimized()
+        {
+        }
+        /**
+         * Output only. Size, in GiB, of provisioned write-optimized capacity for this
+         * Exapool
+         *
+         * @param string $writeOptimized
+         */
+        public function setWriteOptimized($writeOptimized)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWriteOptimized()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\StoragePoolExapoolProvisionedCapacityGb registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCapacityOptimized()
-    {
-    }
-    /**
-     * Output only. Size, in GiB, of provisioned read-optimized capacity for this
-     * Exapool
-     *
-     * @param string $readOptimized
-     */
-    public function setReadOptimized($readOptimized)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadOptimized()
-    {
-    }
-    /**
-     * Output only. Size, in GiB, of provisioned write-optimized capacity for this
-     * Exapool
-     *
-     * @param string $writeOptimized
-     */
-    public function setWriteOptimized($writeOptimized)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWriteOptimized()
+    class Google_Service_Compute_StoragePoolExapoolProvisionedCapacityGb extends \Google\Service\Compute\StoragePoolExapoolProvisionedCapacityGb
     {
     }
 }

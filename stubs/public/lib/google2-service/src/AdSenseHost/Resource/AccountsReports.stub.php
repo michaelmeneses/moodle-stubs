@@ -21,45 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSenseHost\Resource;
-
-/**
- * The "reports" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adsensehostService = new Google\Service\AdSenseHost(...);
- *   $reports = $adsensehostService->accounts_reports;
- *  </code>
- */
-class AccountsReports extends \Google\Service\Resource
-{
+namespace Google\Service\AdSenseHost\Resource {
+    use Google\Service\AdSenseHost\Report;
     /**
-     * Generate an AdSense report based on the report request sent in the query
-     * parameters. Returns the result as JSON; to retrieve output in CSV format
-     * specify "alt=csv" as a query parameter. (reports.generate)
-     *
-     * @param string $accountId Hosted account upon which to report.
-     * @param string $startDate Start of the date range to report on in "YYYY-MM-DD"
-     * format, inclusive.
-     * @param string $endDate End of the date range to report on in "YYYY-MM-DD"
-     * format, inclusive.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string dimension Dimensions to base the report on.
-     * @opt_param string filter Filters to be run on the report.
-     * @opt_param string locale Optional locale to use for translating report output
-     * to a local language. Defaults to "en_US" if not specified.
-     * @opt_param string maxResults The maximum number of rows of report data to
-     * return.
-     * @opt_param string metric Numeric columns to include in the report.
-     * @opt_param string sort The name of a dimension or metric to sort the
-     * resulting report on, optionally prefixed with "+" to sort ascending or "-" to
-     * sort descending. If no prefix is specified, the column is sorted ascending.
-     * @opt_param string startIndex Index of the first row of report data to return.
-     * @return Report
-     * @throws \Google\Service\Exception
+     * The "reports" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adsensehostService = new Google\Service\AdSenseHost(...);
+     *   $reports = $adsensehostService->accounts_reports;
+     *  </code>
      */
-    public function generate($accountId, $startDate, $endDate, $optParams = [])
+    class AccountsReports extends \Google\Service\Resource
+    {
+        /**
+         * Generate an AdSense report based on the report request sent in the query
+         * parameters. Returns the result as JSON; to retrieve output in CSV format
+         * specify "alt=csv" as a query parameter. (reports.generate)
+         *
+         * @param string $accountId Hosted account upon which to report.
+         * @param string $startDate Start of the date range to report on in "YYYY-MM-DD"
+         * format, inclusive.
+         * @param string $endDate End of the date range to report on in "YYYY-MM-DD"
+         * format, inclusive.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string dimension Dimensions to base the report on.
+         * @opt_param string filter Filters to be run on the report.
+         * @opt_param string locale Optional locale to use for translating report output
+         * to a local language. Defaults to "en_US" if not specified.
+         * @opt_param string maxResults The maximum number of rows of report data to
+         * return.
+         * @opt_param string metric Numeric columns to include in the report.
+         * @opt_param string sort The name of a dimension or metric to sort the
+         * resulting report on, optionally prefixed with "+" to sort ascending or "-" to
+         * sort descending. If no prefix is specified, the column is sorted ascending.
+         * @opt_param string startIndex Index of the first row of report data to return.
+         * @return Report
+         * @throws \Google\Service\Exception
+         */
+        public function generate($accountId, $startDate, $endDate, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdSenseHost\Resource\AccountsReports registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdSenseHost_Resource_AccountsReports extends \Google\Service\AdSenseHost\Resource\AccountsReports
     {
     }
 }

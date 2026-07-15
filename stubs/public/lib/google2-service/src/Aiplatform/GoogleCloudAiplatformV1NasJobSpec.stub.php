@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1NasJobSpec extends \Google\Model
-{
-    protected $multiTrialAlgorithmSpecType = GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpec::class;
-    protected $multiTrialAlgorithmSpecDataType = '';
-    /**
-     * The ID of the existing NasJob in the same Project and Location which will
-     * be used to resume search. search_space_spec and nas_algorithm_spec are
-     * obtained from previous NasJob hence should not provide them again for this
-     * NasJob.
-     *
-     * @var string
-     */
-    public $resumeNasJobId;
-    /**
-     * It defines the search space for Neural Architecture Search (NAS).
-     *
-     * @var string
-     */
-    public $searchSpaceSpec;
-    /**
-     * The spec of multi-trial algorithms.
-     *
-     * @param GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpec $multiTrialAlgorithmSpec
-     */
-    public function setMultiTrialAlgorithmSpec(GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpec $multiTrialAlgorithmSpec)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1NasJobSpec extends \Google\Model
     {
+        protected $multiTrialAlgorithmSpecType = GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpec::class;
+        protected $multiTrialAlgorithmSpecDataType = '';
+        /**
+         * The ID of the existing NasJob in the same Project and Location which will
+         * be used to resume search. search_space_spec and nas_algorithm_spec are
+         * obtained from previous NasJob hence should not provide them again for this
+         * NasJob.
+         *
+         * @var string
+         */
+        public $resumeNasJobId;
+        /**
+         * It defines the search space for Neural Architecture Search (NAS).
+         *
+         * @var string
+         */
+        public $searchSpaceSpec;
+        /**
+         * The spec of multi-trial algorithms.
+         *
+         * @param GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpec $multiTrialAlgorithmSpec
+         */
+        public function setMultiTrialAlgorithmSpec(GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpec $multiTrialAlgorithmSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpec
+         */
+        public function getMultiTrialAlgorithmSpec()
+        {
+        }
+        /**
+         * The ID of the existing NasJob in the same Project and Location which will
+         * be used to resume search. search_space_spec and nas_algorithm_spec are
+         * obtained from previous NasJob hence should not provide them again for this
+         * NasJob.
+         *
+         * @param string $resumeNasJobId
+         */
+        public function setResumeNasJobId($resumeNasJobId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResumeNasJobId()
+        {
+        }
+        /**
+         * It defines the search space for Neural Architecture Search (NAS).
+         *
+         * @param string $searchSpaceSpec
+         */
+        public function setSearchSpaceSpec($searchSpaceSpec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSearchSpaceSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1NasJobSpecMultiTrialAlgorithmSpec
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1NasJobSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMultiTrialAlgorithmSpec()
-    {
-    }
-    /**
-     * The ID of the existing NasJob in the same Project and Location which will
-     * be used to resume search. search_space_spec and nas_algorithm_spec are
-     * obtained from previous NasJob hence should not provide them again for this
-     * NasJob.
-     *
-     * @param string $resumeNasJobId
-     */
-    public function setResumeNasJobId($resumeNasJobId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResumeNasJobId()
-    {
-    }
-    /**
-     * It defines the search space for Neural Architecture Search (NAS).
-     *
-     * @param string $searchSpaceSpec
-     */
-    public function setSearchSpaceSpec($searchSpaceSpec)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSearchSpaceSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1NasJobSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1NasJobSpec
     {
     }
 }

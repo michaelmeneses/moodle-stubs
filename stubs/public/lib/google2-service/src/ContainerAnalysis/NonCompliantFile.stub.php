@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class NonCompliantFile extends \Google\Model
-{
-    /**
-     * Command to display the non-compliant files.
-     *
-     * @var string
-     */
-    public $displayCommand;
-    /**
-     * Empty if `display_command` is set.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Explains why a file is non compliant for a CIS check.
-     *
-     * @var string
-     */
-    public $reason;
-    /**
-     * Command to display the non-compliant files.
-     *
-     * @param string $displayCommand
-     */
-    public function setDisplayCommand($displayCommand)
+namespace Google\Service\ContainerAnalysis {
+    class NonCompliantFile extends \Google\Model
     {
+        /**
+         * Command to display the non-compliant files.
+         *
+         * @var string
+         */
+        public $displayCommand;
+        /**
+         * Empty if `display_command` is set.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Explains why a file is non compliant for a CIS check.
+         *
+         * @var string
+         */
+        public $reason;
+        /**
+         * Command to display the non-compliant files.
+         *
+         * @param string $displayCommand
+         */
+        public function setDisplayCommand($displayCommand)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayCommand()
+        {
+        }
+        /**
+         * Empty if `display_command` is set.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Explains why a file is non compliant for a CIS check.
+         *
+         * @param string $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\NonCompliantFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayCommand()
-    {
-    }
-    /**
-     * Empty if `display_command` is set.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Explains why a file is non compliant for a CIS check.
-     *
-     * @param string $reason
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReason()
+    class Google_Service_ContainerAnalysis_NonCompliantFile extends \Google\Service\ContainerAnalysis\NonCompliantFile
     {
     }
 }

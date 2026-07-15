@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class Outcome extends \Google\Model
-{
-    /**
-     * Do not use. For proto versioning only.
-     */
-    public const SUMMARY_unset = 'unset';
-    /**
-     * The test matrix run was successful, for instance: - All the test cases
-     * passed. - Robo did not detect a crash of the application under test.
-     */
-    public const SUMMARY_success = 'success';
-    /**
-     * A run failed, for instance: - One or more test case failed. - A test timed
-     * out. - The application under test crashed.
-     */
-    public const SUMMARY_failure = 'failure';
-    /**
-     * Something unexpected happened. The run should still be considered
-     * unsuccessful but this is likely a transient problem and re-running the test
-     * might be successful.
-     */
-    public const SUMMARY_inconclusive = 'inconclusive';
-    /**
-     * All tests were skipped, for instance: - All device configurations were
-     * incompatible.
-     */
-    public const SUMMARY_skipped = 'skipped';
-    /**
-     * A group of steps that were run with the same configuration had both failure
-     * and success outcomes.
-     */
-    public const SUMMARY_flaky = 'flaky';
-    protected $failureDetailType = FailureDetail::class;
-    protected $failureDetailDataType = '';
-    protected $inconclusiveDetailType = InconclusiveDetail::class;
-    protected $inconclusiveDetailDataType = '';
-    protected $skippedDetailType = SkippedDetail::class;
-    protected $skippedDetailDataType = '';
-    protected $successDetailType = SuccessDetail::class;
-    protected $successDetailDataType = '';
-    /**
-     * The simplest way to interpret a result. Required
-     *
-     * @var string
-     */
-    public $summary;
-    /**
-     * More information about a FAILURE outcome. Returns INVALID_ARGUMENT if this
-     * field is set but the summary is not FAILURE. Optional
-     *
-     * @param FailureDetail $failureDetail
-     */
-    public function setFailureDetail(FailureDetail $failureDetail)
+namespace Google\Service\ToolResults {
+    class Outcome extends \Google\Model
     {
+        /**
+         * Do not use. For proto versioning only.
+         */
+        public const SUMMARY_unset = 'unset';
+        /**
+         * The test matrix run was successful, for instance: - All the test cases
+         * passed. - Robo did not detect a crash of the application under test.
+         */
+        public const SUMMARY_success = 'success';
+        /**
+         * A run failed, for instance: - One or more test case failed. - A test timed
+         * out. - The application under test crashed.
+         */
+        public const SUMMARY_failure = 'failure';
+        /**
+         * Something unexpected happened. The run should still be considered
+         * unsuccessful but this is likely a transient problem and re-running the test
+         * might be successful.
+         */
+        public const SUMMARY_inconclusive = 'inconclusive';
+        /**
+         * All tests were skipped, for instance: - All device configurations were
+         * incompatible.
+         */
+        public const SUMMARY_skipped = 'skipped';
+        /**
+         * A group of steps that were run with the same configuration had both failure
+         * and success outcomes.
+         */
+        public const SUMMARY_flaky = 'flaky';
+        protected $failureDetailType = FailureDetail::class;
+        protected $failureDetailDataType = '';
+        protected $inconclusiveDetailType = InconclusiveDetail::class;
+        protected $inconclusiveDetailDataType = '';
+        protected $skippedDetailType = SkippedDetail::class;
+        protected $skippedDetailDataType = '';
+        protected $successDetailType = SuccessDetail::class;
+        protected $successDetailDataType = '';
+        /**
+         * The simplest way to interpret a result. Required
+         *
+         * @var string
+         */
+        public $summary;
+        /**
+         * More information about a FAILURE outcome. Returns INVALID_ARGUMENT if this
+         * field is set but the summary is not FAILURE. Optional
+         *
+         * @param FailureDetail $failureDetail
+         */
+        public function setFailureDetail(FailureDetail $failureDetail)
+        {
+        }
+        /**
+         * @return FailureDetail
+         */
+        public function getFailureDetail()
+        {
+        }
+        /**
+         * More information about an INCONCLUSIVE outcome. Returns INVALID_ARGUMENT if
+         * this field is set but the summary is not INCONCLUSIVE. Optional
+         *
+         * @param InconclusiveDetail $inconclusiveDetail
+         */
+        public function setInconclusiveDetail(InconclusiveDetail $inconclusiveDetail)
+        {
+        }
+        /**
+         * @return InconclusiveDetail
+         */
+        public function getInconclusiveDetail()
+        {
+        }
+        /**
+         * More information about a SKIPPED outcome. Returns INVALID_ARGUMENT if this
+         * field is set but the summary is not SKIPPED. Optional
+         *
+         * @param SkippedDetail $skippedDetail
+         */
+        public function setSkippedDetail(SkippedDetail $skippedDetail)
+        {
+        }
+        /**
+         * @return SkippedDetail
+         */
+        public function getSkippedDetail()
+        {
+        }
+        /**
+         * More information about a SUCCESS outcome. Returns INVALID_ARGUMENT if this
+         * field is set but the summary is not SUCCESS. Optional
+         *
+         * @param SuccessDetail $successDetail
+         */
+        public function setSuccessDetail(SuccessDetail $successDetail)
+        {
+        }
+        /**
+         * @return SuccessDetail
+         */
+        public function getSuccessDetail()
+        {
+        }
+        /**
+         * The simplest way to interpret a result. Required
+         *
+         * Accepted values: unset, success, failure, inconclusive, skipped, flaky
+         *
+         * @param self::SUMMARY_* $summary
+         */
+        public function setSummary($summary)
+        {
+        }
+        /**
+         * @return self::SUMMARY_*
+         */
+        public function getSummary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FailureDetail
+     * Runtime class alias of \Google\Service\ToolResults\Outcome registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailureDetail()
-    {
-    }
-    /**
-     * More information about an INCONCLUSIVE outcome. Returns INVALID_ARGUMENT if
-     * this field is set but the summary is not INCONCLUSIVE. Optional
-     *
-     * @param InconclusiveDetail $inconclusiveDetail
-     */
-    public function setInconclusiveDetail(InconclusiveDetail $inconclusiveDetail)
-    {
-    }
-    /**
-     * @return InconclusiveDetail
-     */
-    public function getInconclusiveDetail()
-    {
-    }
-    /**
-     * More information about a SKIPPED outcome. Returns INVALID_ARGUMENT if this
-     * field is set but the summary is not SKIPPED. Optional
-     *
-     * @param SkippedDetail $skippedDetail
-     */
-    public function setSkippedDetail(SkippedDetail $skippedDetail)
-    {
-    }
-    /**
-     * @return SkippedDetail
-     */
-    public function getSkippedDetail()
-    {
-    }
-    /**
-     * More information about a SUCCESS outcome. Returns INVALID_ARGUMENT if this
-     * field is set but the summary is not SUCCESS. Optional
-     *
-     * @param SuccessDetail $successDetail
-     */
-    public function setSuccessDetail(SuccessDetail $successDetail)
-    {
-    }
-    /**
-     * @return SuccessDetail
-     */
-    public function getSuccessDetail()
-    {
-    }
-    /**
-     * The simplest way to interpret a result. Required
-     *
-     * Accepted values: unset, success, failure, inconclusive, skipped, flaky
-     *
-     * @param self::SUMMARY_* $summary
-     */
-    public function setSummary($summary)
-    {
-    }
-    /**
-     * @return self::SUMMARY_*
-     */
-    public function getSummary()
+    class Google_Service_ToolResults_Outcome extends \Google\Service\ToolResults\Outcome
     {
     }
 }

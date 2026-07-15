@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteUserId extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $actingUserId;
-    /**
-     * @var string
-     */
-    public $id;
-    protected $originAppIdType = AppsDynamiteAppId::class;
-    protected $originAppIdDataType = '';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string
-     */
-    public function setActingUserId($actingUserId)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteUserId extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $actingUserId;
+        /**
+         * @var string
+         */
+        public $id;
+        protected $originAppIdType = AppsDynamiteAppId::class;
+        protected $originAppIdDataType = '';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string
+         */
+        public function setActingUserId($actingUserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActingUserId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param AppsDynamiteAppId
+         */
+        public function setOriginAppId(AppsDynamiteAppId $originAppId)
+        {
+        }
+        /**
+         * @return AppsDynamiteAppId
+         */
+        public function getOriginAppId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteUserId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActingUserId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param AppsDynamiteAppId
-     */
-    public function setOriginAppId(AppsDynamiteAppId $originAppId)
-    {
-    }
-    /**
-     * @return AppsDynamiteAppId
-     */
-    public function getOriginAppId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudSearch_AppsDynamiteUserId extends \Google\Service\CloudSearch\AppsDynamiteUserId
     {
     }
 }

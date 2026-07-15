@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1RoutingSummaryLeg extends \Google\Model
-{
-    /**
-     * The distance of this leg of the trip.
-     *
-     * @var int
-     */
-    public $distanceMeters;
-    /**
-     * The time it takes to complete this leg of the trip.
-     *
-     * @var string
-     */
-    public $duration;
-    /**
-     * The distance of this leg of the trip.
-     *
-     * @param int $distanceMeters
-     */
-    public function setDistanceMeters($distanceMeters)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1RoutingSummaryLeg extends \Google\Model
     {
+        /**
+         * The distance of this leg of the trip.
+         *
+         * @var int
+         */
+        public $distanceMeters;
+        /**
+         * The time it takes to complete this leg of the trip.
+         *
+         * @var string
+         */
+        public $duration;
+        /**
+         * The distance of this leg of the trip.
+         *
+         * @param int $distanceMeters
+         */
+        public function setDistanceMeters($distanceMeters)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDistanceMeters()
+        {
+        }
+        /**
+         * The time it takes to complete this leg of the trip.
+         *
+         * @param string $duration
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1RoutingSummaryLeg registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDistanceMeters()
-    {
-    }
-    /**
-     * The time it takes to complete this leg of the trip.
-     *
-     * @param string $duration
-     */
-    public function setDuration($duration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDuration()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1RoutingSummaryLeg extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1RoutingSummaryLeg
     {
     }
 }

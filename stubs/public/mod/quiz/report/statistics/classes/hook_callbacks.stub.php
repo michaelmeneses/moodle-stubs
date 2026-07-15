@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace quiz_statistics;
 
+use core\dml\sql_join;
+use mod_quiz\hook\attempt_state_changed;
+use mod_quiz\hook\structure_modified;
+use mod_quiz\quiz_attempt;
+use quiz_statistics\task\recalculate;
 /**
  * Hook callbacks
  *

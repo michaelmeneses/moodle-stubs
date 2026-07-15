@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class GkeNodePoolAcceleratorConfig extends \Google\Model
-{
-    /**
-     * The number of accelerator cards exposed to an instance.
-     *
-     * @var string
-     */
-    public $acceleratorCount;
-    /**
-     * The accelerator type resource namename (see GPUs on Compute Engine).
-     *
-     * @var string
-     */
-    public $acceleratorType;
-    /**
-     * Size of partitions to create on the GPU. Valid values are described in the
-     * NVIDIA mig user guide (https://docs.nvidia.com/datacenter/tesla/mig-user-
-     * guide/#partitioning).
-     *
-     * @var string
-     */
-    public $gpuPartitionSize;
-    /**
-     * The number of accelerator cards exposed to an instance.
-     *
-     * @param string $acceleratorCount
-     */
-    public function setAcceleratorCount($acceleratorCount)
+namespace Google\Service\Dataproc {
+    class GkeNodePoolAcceleratorConfig extends \Google\Model
     {
+        /**
+         * The number of accelerator cards exposed to an instance.
+         *
+         * @var string
+         */
+        public $acceleratorCount;
+        /**
+         * The accelerator type resource namename (see GPUs on Compute Engine).
+         *
+         * @var string
+         */
+        public $acceleratorType;
+        /**
+         * Size of partitions to create on the GPU. Valid values are described in the
+         * NVIDIA mig user guide (https://docs.nvidia.com/datacenter/tesla/mig-user-
+         * guide/#partitioning).
+         *
+         * @var string
+         */
+        public $gpuPartitionSize;
+        /**
+         * The number of accelerator cards exposed to an instance.
+         *
+         * @param string $acceleratorCount
+         */
+        public function setAcceleratorCount($acceleratorCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAcceleratorCount()
+        {
+        }
+        /**
+         * The accelerator type resource namename (see GPUs on Compute Engine).
+         *
+         * @param string $acceleratorType
+         */
+        public function setAcceleratorType($acceleratorType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAcceleratorType()
+        {
+        }
+        /**
+         * Size of partitions to create on the GPU. Valid values are described in the
+         * NVIDIA mig user guide (https://docs.nvidia.com/datacenter/tesla/mig-user-
+         * guide/#partitioning).
+         *
+         * @param string $gpuPartitionSize
+         */
+        public function setGpuPartitionSize($gpuPartitionSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGpuPartitionSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\GkeNodePoolAcceleratorConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcceleratorCount()
-    {
-    }
-    /**
-     * The accelerator type resource namename (see GPUs on Compute Engine).
-     *
-     * @param string $acceleratorType
-     */
-    public function setAcceleratorType($acceleratorType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAcceleratorType()
-    {
-    }
-    /**
-     * Size of partitions to create on the GPU. Valid values are described in the
-     * NVIDIA mig user guide (https://docs.nvidia.com/datacenter/tesla/mig-user-
-     * guide/#partitioning).
-     *
-     * @param string $gpuPartitionSize
-     */
-    public function setGpuPartitionSize($gpuPartitionSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGpuPartitionSize()
+    class Google_Service_Dataproc_GkeNodePoolAcceleratorConfig extends \Google\Service\Dataproc\GkeNodePoolAcceleratorConfig
     {
     }
 }

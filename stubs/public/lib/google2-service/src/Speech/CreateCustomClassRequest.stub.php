@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Speech;
-
-class CreateCustomClassRequest extends \Google\Model
-{
-    protected $customClassType = CustomClass::class;
-    protected $customClassDataType = '';
-    /**
-     * Required. The ID to use for the custom class, which will become the final
-     * component of the custom class' resource name. This value should restrict to
-     * letters, numbers, and hyphens, with the first character a letter, the last
-     * a letter or a number, and be 4-63 characters.
-     *
-     * @var string
-     */
-    public $customClassId;
-    /**
-     * Required. The custom class to create.
-     *
-     * @param CustomClass $customClass
-     */
-    public function setCustomClass(CustomClass $customClass)
+namespace Google\Service\Speech {
+    class CreateCustomClassRequest extends \Google\Model
     {
+        protected $customClassType = CustomClass::class;
+        protected $customClassDataType = '';
+        /**
+         * Required. The ID to use for the custom class, which will become the final
+         * component of the custom class' resource name. This value should restrict to
+         * letters, numbers, and hyphens, with the first character a letter, the last
+         * a letter or a number, and be 4-63 characters.
+         *
+         * @var string
+         */
+        public $customClassId;
+        /**
+         * Required. The custom class to create.
+         *
+         * @param CustomClass $customClass
+         */
+        public function setCustomClass(CustomClass $customClass)
+        {
+        }
+        /**
+         * @return CustomClass
+         */
+        public function getCustomClass()
+        {
+        }
+        /**
+         * Required. The ID to use for the custom class, which will become the final
+         * component of the custom class' resource name. This value should restrict to
+         * letters, numbers, and hyphens, with the first character a letter, the last
+         * a letter or a number, and be 4-63 characters.
+         *
+         * @param string $customClassId
+         */
+        public function setCustomClassId($customClassId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomClassId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomClass
+     * Runtime class alias of \Google\Service\Speech\CreateCustomClassRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomClass()
-    {
-    }
-    /**
-     * Required. The ID to use for the custom class, which will become the final
-     * component of the custom class' resource name. This value should restrict to
-     * letters, numbers, and hyphens, with the first character a letter, the last
-     * a letter or a number, and be 4-63 characters.
-     *
-     * @param string $customClassId
-     */
-    public function setCustomClassId($customClassId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomClassId()
+    class Google_Service_Speech_CreateCustomClassRequest extends \Google\Service\Speech\CreateCustomClassRequest
     {
     }
 }

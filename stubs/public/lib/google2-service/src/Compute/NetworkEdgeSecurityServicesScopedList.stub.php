@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NetworkEdgeSecurityServicesScopedList extends \Google\Collection
-{
-    protected $collection_key = 'networkEdgeSecurityServices';
-    protected $networkEdgeSecurityServicesType = NetworkEdgeSecurityService::class;
-    protected $networkEdgeSecurityServicesDataType = 'array';
-    protected $warningType = NetworkEdgeSecurityServicesScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * A list of NetworkEdgeSecurityServices contained in this scope.
-     *
-     * @param NetworkEdgeSecurityService[] $networkEdgeSecurityServices
-     */
-    public function setNetworkEdgeSecurityServices($networkEdgeSecurityServices)
+namespace Google\Service\Compute {
+    class NetworkEdgeSecurityServicesScopedList extends \Google\Collection
     {
+        protected $collection_key = 'networkEdgeSecurityServices';
+        protected $networkEdgeSecurityServicesType = NetworkEdgeSecurityService::class;
+        protected $networkEdgeSecurityServicesDataType = 'array';
+        protected $warningType = NetworkEdgeSecurityServicesScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * A list of NetworkEdgeSecurityServices contained in this scope.
+         *
+         * @param NetworkEdgeSecurityService[] $networkEdgeSecurityServices
+         */
+        public function setNetworkEdgeSecurityServices($networkEdgeSecurityServices)
+        {
+        }
+        /**
+         * @return NetworkEdgeSecurityService[]
+         */
+        public function getNetworkEdgeSecurityServices()
+        {
+        }
+        /**
+         * Informational warning which replaces the list of security policies when the
+         * list is empty.
+         *
+         * @param NetworkEdgeSecurityServicesScopedListWarning $warning
+         */
+        public function setWarning(NetworkEdgeSecurityServicesScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return NetworkEdgeSecurityServicesScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NetworkEdgeSecurityService[]
+     * Runtime class alias of \Google\Service\Compute\NetworkEdgeSecurityServicesScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkEdgeSecurityServices()
-    {
-    }
-    /**
-     * Informational warning which replaces the list of security policies when the
-     * list is empty.
-     *
-     * @param NetworkEdgeSecurityServicesScopedListWarning $warning
-     */
-    public function setWarning(NetworkEdgeSecurityServicesScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return NetworkEdgeSecurityServicesScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_NetworkEdgeSecurityServicesScopedList extends \Google\Service\Compute\NetworkEdgeSecurityServicesScopedList
     {
     }
 }

@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1AcknowledgeViolationRequest extends \Google\Model
-{
-    /**
-     * Acknowledge type unspecified.
-     */
-    public const ACKNOWLEDGE_TYPE_ACKNOWLEDGE_TYPE_UNSPECIFIED = 'ACKNOWLEDGE_TYPE_UNSPECIFIED';
-    /**
-     * Acknowledge only the specific violation.
-     */
-    public const ACKNOWLEDGE_TYPE_SINGLE_VIOLATION = 'SINGLE_VIOLATION';
-    /**
-     * Acknowledge specified orgPolicy violation and also associated resource
-     * violations.
-     */
-    public const ACKNOWLEDGE_TYPE_EXISTING_CHILD_RESOURCE_VIOLATIONS = 'EXISTING_CHILD_RESOURCE_VIOLATIONS';
-    /**
-     * Optional. Acknowledge type of specified violation.
-     *
-     * @var string
-     */
-    public $acknowledgeType;
-    /**
-     * Required. Business justification explaining the need for violation
-     * acknowledgement
-     *
-     * @var string
-     */
-    public $comment;
-    /**
-     * Optional. This field is deprecated and will be removed in future version of
-     * the API. Name of the OrgPolicy which was modified with non-compliant change
-     * and resulted in this violation. Format:
-     * projects/{project_number}/policies/{constraint_name}
-     * folders/{folder_id}/policies/{constraint_name}
-     * organizations/{organization_id}/policies/{constraint_name}
-     *
-     * @deprecated
-     * @var string
-     */
-    public $nonCompliantOrgPolicy;
-    /**
-     * Optional. Acknowledge type of specified violation.
-     *
-     * Accepted values: ACKNOWLEDGE_TYPE_UNSPECIFIED, SINGLE_VIOLATION,
-     * EXISTING_CHILD_RESOURCE_VIOLATIONS
-     *
-     * @param self::ACKNOWLEDGE_TYPE_* $acknowledgeType
-     */
-    public function setAcknowledgeType($acknowledgeType)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1AcknowledgeViolationRequest extends \Google\Model
     {
+        /**
+         * Acknowledge type unspecified.
+         */
+        public const ACKNOWLEDGE_TYPE_ACKNOWLEDGE_TYPE_UNSPECIFIED = 'ACKNOWLEDGE_TYPE_UNSPECIFIED';
+        /**
+         * Acknowledge only the specific violation.
+         */
+        public const ACKNOWLEDGE_TYPE_SINGLE_VIOLATION = 'SINGLE_VIOLATION';
+        /**
+         * Acknowledge specified orgPolicy violation and also associated resource
+         * violations.
+         */
+        public const ACKNOWLEDGE_TYPE_EXISTING_CHILD_RESOURCE_VIOLATIONS = 'EXISTING_CHILD_RESOURCE_VIOLATIONS';
+        /**
+         * Optional. Acknowledge type of specified violation.
+         *
+         * @var string
+         */
+        public $acknowledgeType;
+        /**
+         * Required. Business justification explaining the need for violation
+         * acknowledgement
+         *
+         * @var string
+         */
+        public $comment;
+        /**
+         * Optional. This field is deprecated and will be removed in future version of
+         * the API. Name of the OrgPolicy which was modified with non-compliant change
+         * and resulted in this violation. Format:
+         * projects/{project_number}/policies/{constraint_name}
+         * folders/{folder_id}/policies/{constraint_name}
+         * organizations/{organization_id}/policies/{constraint_name}
+         *
+         * @deprecated
+         * @var string
+         */
+        public $nonCompliantOrgPolicy;
+        /**
+         * Optional. Acknowledge type of specified violation.
+         *
+         * Accepted values: ACKNOWLEDGE_TYPE_UNSPECIFIED, SINGLE_VIOLATION,
+         * EXISTING_CHILD_RESOURCE_VIOLATIONS
+         *
+         * @param self::ACKNOWLEDGE_TYPE_* $acknowledgeType
+         */
+        public function setAcknowledgeType($acknowledgeType)
+        {
+        }
+        /**
+         * @return self::ACKNOWLEDGE_TYPE_*
+         */
+        public function getAcknowledgeType()
+        {
+        }
+        /**
+         * Required. Business justification explaining the need for violation
+         * acknowledgement
+         *
+         * @param string $comment
+         */
+        public function setComment($comment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComment()
+        {
+        }
+        /**
+         * Optional. This field is deprecated and will be removed in future version of
+         * the API. Name of the OrgPolicy which was modified with non-compliant change
+         * and resulted in this violation. Format:
+         * projects/{project_number}/policies/{constraint_name}
+         * folders/{folder_id}/policies/{constraint_name}
+         * organizations/{organization_id}/policies/{constraint_name}
+         *
+         * @deprecated
+         * @param string $nonCompliantOrgPolicy
+         */
+        public function setNonCompliantOrgPolicy($nonCompliantOrgPolicy)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getNonCompliantOrgPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACKNOWLEDGE_TYPE_*
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1AcknowledgeViolationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcknowledgeType()
-    {
-    }
-    /**
-     * Required. Business justification explaining the need for violation
-     * acknowledgement
-     *
-     * @param string $comment
-     */
-    public function setComment($comment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getComment()
-    {
-    }
-    /**
-     * Optional. This field is deprecated and will be removed in future version of
-     * the API. Name of the OrgPolicy which was modified with non-compliant change
-     * and resulted in this violation. Format:
-     * projects/{project_number}/policies/{constraint_name}
-     * folders/{folder_id}/policies/{constraint_name}
-     * organizations/{organization_id}/policies/{constraint_name}
-     *
-     * @deprecated
-     * @param string $nonCompliantOrgPolicy
-     */
-    public function setNonCompliantOrgPolicy($nonCompliantOrgPolicy)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getNonCompliantOrgPolicy()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1AcknowledgeViolationRequest extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1AcknowledgeViolationRequest
     {
     }
 }

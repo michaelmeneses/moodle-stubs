@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class IngestionStatus extends \Google\Model
-{
-    /**
-     * Output only. The number of active rows in the feed.
-     *
-     * @var string
-     */
-    public $numActiveRows;
-    /**
-     * Output only. The number of rows processed in the feed.
-     *
-     * @var string
-     */
-    public $numRowsProcessed;
-    /**
-     * Output only. The total number of rows in the feed.
-     *
-     * @var string
-     */
-    public $numRowsTotal;
-    /**
-     * Output only. The number of rows with errors in the feed.
-     *
-     * @var string
-     */
-    public $numRowsWithErrors;
-    /**
-     * Output only. The total number of warnings in the feed.
-     *
-     * @var string
-     */
-    public $numWarningsTotal;
-    /**
-     * Output only. The number of active rows in the feed.
-     *
-     * @param string $numActiveRows
-     */
-    public function setNumActiveRows($numActiveRows)
+namespace Google\Service\Dfareporting {
+    class IngestionStatus extends \Google\Model
     {
+        /**
+         * Output only. The number of active rows in the feed.
+         *
+         * @var string
+         */
+        public $numActiveRows;
+        /**
+         * Output only. The number of rows processed in the feed.
+         *
+         * @var string
+         */
+        public $numRowsProcessed;
+        /**
+         * Output only. The total number of rows in the feed.
+         *
+         * @var string
+         */
+        public $numRowsTotal;
+        /**
+         * Output only. The number of rows with errors in the feed.
+         *
+         * @var string
+         */
+        public $numRowsWithErrors;
+        /**
+         * Output only. The total number of warnings in the feed.
+         *
+         * @var string
+         */
+        public $numWarningsTotal;
+        /**
+         * Output only. The number of active rows in the feed.
+         *
+         * @param string $numActiveRows
+         */
+        public function setNumActiveRows($numActiveRows)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumActiveRows()
+        {
+        }
+        /**
+         * Output only. The number of rows processed in the feed.
+         *
+         * @param string $numRowsProcessed
+         */
+        public function setNumRowsProcessed($numRowsProcessed)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumRowsProcessed()
+        {
+        }
+        /**
+         * Output only. The total number of rows in the feed.
+         *
+         * @param string $numRowsTotal
+         */
+        public function setNumRowsTotal($numRowsTotal)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumRowsTotal()
+        {
+        }
+        /**
+         * Output only. The number of rows with errors in the feed.
+         *
+         * @param string $numRowsWithErrors
+         */
+        public function setNumRowsWithErrors($numRowsWithErrors)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumRowsWithErrors()
+        {
+        }
+        /**
+         * Output only. The total number of warnings in the feed.
+         *
+         * @param string $numWarningsTotal
+         */
+        public function setNumWarningsTotal($numWarningsTotal)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumWarningsTotal()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\IngestionStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNumActiveRows()
-    {
-    }
-    /**
-     * Output only. The number of rows processed in the feed.
-     *
-     * @param string $numRowsProcessed
-     */
-    public function setNumRowsProcessed($numRowsProcessed)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumRowsProcessed()
-    {
-    }
-    /**
-     * Output only. The total number of rows in the feed.
-     *
-     * @param string $numRowsTotal
-     */
-    public function setNumRowsTotal($numRowsTotal)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumRowsTotal()
-    {
-    }
-    /**
-     * Output only. The number of rows with errors in the feed.
-     *
-     * @param string $numRowsWithErrors
-     */
-    public function setNumRowsWithErrors($numRowsWithErrors)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumRowsWithErrors()
-    {
-    }
-    /**
-     * Output only. The total number of warnings in the feed.
-     *
-     * @param string $numWarningsTotal
-     */
-    public function setNumWarningsTotal($numWarningsTotal)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumWarningsTotal()
+    class Google_Service_Dfareporting_IngestionStatus extends \Google\Service\Dfareporting\IngestionStatus
     {
     }
 }

@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class GoogleAudienceGroup extends \Google\Collection
-{
-    protected $collection_key = 'settings';
-    protected $settingsType = GoogleAudienceTargetingSetting::class;
-    protected $settingsDataType = 'array';
-    /**
-     * Required. All Google audience targeting settings in Google audience group.
-     * Repeated settings with the same id will be ignored.
-     *
-     * @param GoogleAudienceTargetingSetting[] $settings
-     */
-    public function setSettings($settings)
+namespace Google\Service\DisplayVideo {
+    class GoogleAudienceGroup extends \Google\Collection
     {
+        protected $collection_key = 'settings';
+        protected $settingsType = GoogleAudienceTargetingSetting::class;
+        protected $settingsDataType = 'array';
+        /**
+         * Required. All Google audience targeting settings in Google audience group.
+         * Repeated settings with the same id will be ignored.
+         *
+         * @param GoogleAudienceTargetingSetting[] $settings
+         */
+        public function setSettings($settings)
+        {
+        }
+        /**
+         * @return GoogleAudienceTargetingSetting[]
+         */
+        public function getSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAudienceTargetingSetting[]
+     * Runtime class alias of \Google\Service\DisplayVideo\GoogleAudienceGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSettings()
+    class Google_Service_DisplayVideo_GoogleAudienceGroup extends \Google\Service\DisplayVideo\GoogleAudienceGroup
     {
     }
 }

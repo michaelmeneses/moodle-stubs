@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class DatabaseInstanceNetwork extends \Google\Collection
-{
-    protected $collection_key = 'ipAddresses';
-    /**
-     * Optional. The instance's host names.
-     *
-     * @var string[]
-     */
-    public $hostNames;
-    /**
-     * Optional. The instance's IP addresses.
-     *
-     * @var string[]
-     */
-    public $ipAddresses;
-    /**
-     * Optional. The instance's primary MAC address.
-     *
-     * @var string
-     */
-    public $primaryMacAddress;
-    /**
-     * Optional. The instance's host names.
-     *
-     * @param string[] $hostNames
-     */
-    public function setHostNames($hostNames)
+namespace Google\Service\MigrationCenterAPI {
+    class DatabaseInstanceNetwork extends \Google\Collection
     {
+        protected $collection_key = 'ipAddresses';
+        /**
+         * Optional. The instance's host names.
+         *
+         * @var string[]
+         */
+        public $hostNames;
+        /**
+         * Optional. The instance's IP addresses.
+         *
+         * @var string[]
+         */
+        public $ipAddresses;
+        /**
+         * Optional. The instance's primary MAC address.
+         *
+         * @var string
+         */
+        public $primaryMacAddress;
+        /**
+         * Optional. The instance's host names.
+         *
+         * @param string[] $hostNames
+         */
+        public function setHostNames($hostNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getHostNames()
+        {
+        }
+        /**
+         * Optional. The instance's IP addresses.
+         *
+         * @param string[] $ipAddresses
+         */
+        public function setIpAddresses($ipAddresses)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIpAddresses()
+        {
+        }
+        /**
+         * Optional. The instance's primary MAC address.
+         *
+         * @param string $primaryMacAddress
+         */
+        public function setPrimaryMacAddress($primaryMacAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimaryMacAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\DatabaseInstanceNetwork registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHostNames()
-    {
-    }
-    /**
-     * Optional. The instance's IP addresses.
-     *
-     * @param string[] $ipAddresses
-     */
-    public function setIpAddresses($ipAddresses)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIpAddresses()
-    {
-    }
-    /**
-     * Optional. The instance's primary MAC address.
-     *
-     * @param string $primaryMacAddress
-     */
-    public function setPrimaryMacAddress($primaryMacAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrimaryMacAddress()
+    class Google_Service_MigrationCenterAPI_DatabaseInstanceNetwork extends \Google\Service\MigrationCenterAPI\DatabaseInstanceNetwork
     {
     }
 }

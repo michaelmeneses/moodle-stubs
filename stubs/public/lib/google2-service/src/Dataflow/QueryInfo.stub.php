@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class QueryInfo extends \Google\Collection
-{
-    protected $collection_key = 'queryProperty';
-    /**
-     * @var string[]
-     */
-    public $queryProperty;
-    /**
-     * @param string[]
-     */
-    public function setQueryProperty($queryProperty)
+namespace Google\Service\Dataflow {
+    class QueryInfo extends \Google\Collection
     {
+        protected $collection_key = 'queryProperty';
+        /**
+         * @var string[]
+         */
+        public $queryProperty;
+        /**
+         * @param string[]
+         */
+        public function setQueryProperty($queryProperty)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getQueryProperty()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataflow\QueryInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQueryProperty()
+    class Google_Service_Dataflow_QueryInfo extends \Google\Service\Dataflow\QueryInfo
     {
     }
 }

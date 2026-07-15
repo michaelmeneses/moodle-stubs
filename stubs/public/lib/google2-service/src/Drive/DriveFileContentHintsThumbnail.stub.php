@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class DriveFileContentHintsThumbnail extends \Google\Model
-{
-    /**
-     * The thumbnail data encoded with URL-safe Base64 ([RFC 4648 section
-     * 5](https://datatracker.ietf.org/doc/html/rfc4648#section-5)).
-     *
-     * @var string
-     */
-    public $image;
-    /**
-     * The MIME type of the thumbnail.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * The thumbnail data encoded with URL-safe Base64 ([RFC 4648 section
-     * 5](https://datatracker.ietf.org/doc/html/rfc4648#section-5)).
-     *
-     * @param string $image
-     */
-    public function setImage($image)
+namespace Google\Service\Drive {
+    class DriveFileContentHintsThumbnail extends \Google\Model
     {
+        /**
+         * The thumbnail data encoded with URL-safe Base64 ([RFC 4648 section
+         * 5](https://datatracker.ietf.org/doc/html/rfc4648#section-5)).
+         *
+         * @var string
+         */
+        public $image;
+        /**
+         * The MIME type of the thumbnail.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * The thumbnail data encoded with URL-safe Base64 ([RFC 4648 section
+         * 5](https://datatracker.ietf.org/doc/html/rfc4648#section-5)).
+         *
+         * @param string $image
+         */
+        public function setImage($image)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * The MIME type of the thumbnail.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Drive\DriveFileContentHintsThumbnail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImage()
-    {
-    }
-    /**
-     * The MIME type of the thumbnail.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_Drive_DriveFileContentHintsThumbnail extends \Google\Service\Drive\DriveFileContentHintsThumbnail
     {
     }
 }

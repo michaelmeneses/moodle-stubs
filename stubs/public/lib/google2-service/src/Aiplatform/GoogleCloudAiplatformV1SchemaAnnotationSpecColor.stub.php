@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaAnnotationSpecColor extends \Google\Model
-{
-    protected $colorType = GoogleTypeColor::class;
-    protected $colorDataType = '';
-    /**
-     * The display name of the AnnotationSpec represented by the color in the
-     * segmentation mask.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The ID of the AnnotationSpec represented by the color in the segmentation
-     * mask.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The color of the AnnotationSpec in a segmentation mask.
-     *
-     * @param GoogleTypeColor $color
-     */
-    public function setColor(GoogleTypeColor $color)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaAnnotationSpecColor extends \Google\Model
     {
+        protected $colorType = GoogleTypeColor::class;
+        protected $colorDataType = '';
+        /**
+         * The display name of the AnnotationSpec represented by the color in the
+         * segmentation mask.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The ID of the AnnotationSpec represented by the color in the segmentation
+         * mask.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The color of the AnnotationSpec in a segmentation mask.
+         *
+         * @param GoogleTypeColor $color
+         */
+        public function setColor(GoogleTypeColor $color)
+        {
+        }
+        /**
+         * @return GoogleTypeColor
+         */
+        public function getColor()
+        {
+        }
+        /**
+         * The display name of the AnnotationSpec represented by the color in the
+         * segmentation mask.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The ID of the AnnotationSpec represented by the color in the segmentation
+         * mask.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeColor
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaAnnotationSpecColor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColor()
-    {
-    }
-    /**
-     * The display name of the AnnotationSpec represented by the color in the
-     * segmentation mask.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The ID of the AnnotationSpec represented by the color in the segmentation
-     * mask.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaAnnotationSpecColor extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaAnnotationSpecColor
     {
     }
 }

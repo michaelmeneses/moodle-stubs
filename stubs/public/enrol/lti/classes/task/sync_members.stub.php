@@ -29,6 +29,15 @@
  */
 namespace enrol_lti\task;
 
+use core\task\scheduled_task;
+use core_user;
+use enrol_lti\data_connector;
+use enrol_lti\helper;
+use IMSGlobal\LTI\ToolProvider\Context;
+use IMSGlobal\LTI\ToolProvider\ResourceLink;
+use IMSGlobal\LTI\ToolProvider\ToolConsumer;
+use IMSGlobal\LTI\ToolProvider\User;
+use stdClass;
 /**
  * Task for synchronising members using the enrolment LTI.
  *

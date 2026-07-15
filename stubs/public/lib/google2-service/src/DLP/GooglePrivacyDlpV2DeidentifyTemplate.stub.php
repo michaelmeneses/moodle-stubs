@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DeidentifyTemplate extends \Google\Model
-{
-    /**
-     * Output only. The creation timestamp of an inspectTemplate.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $deidentifyConfigType = GooglePrivacyDlpV2DeidentifyConfig::class;
-    protected $deidentifyConfigDataType = '';
-    /**
-     * Short description (max 256 chars).
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Display name (max 256 chars).
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The template name. The template will have one of the following
-     * formats: `projects/PROJECT_ID/deidentifyTemplates/TEMPLATE_ID` OR
-     * `organizations/ORGANIZATION_ID/deidentifyTemplates/TEMPLATE_ID`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The last update timestamp of an inspectTemplate.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The creation timestamp of an inspectTemplate.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DeidentifyTemplate extends \Google\Model
     {
+        /**
+         * Output only. The creation timestamp of an inspectTemplate.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $deidentifyConfigType = GooglePrivacyDlpV2DeidentifyConfig::class;
+        protected $deidentifyConfigDataType = '';
+        /**
+         * Short description (max 256 chars).
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Display name (max 256 chars).
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The template name. The template will have one of the following
+         * formats: `projects/PROJECT_ID/deidentifyTemplates/TEMPLATE_ID` OR
+         * `organizations/ORGANIZATION_ID/deidentifyTemplates/TEMPLATE_ID`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The last update timestamp of an inspectTemplate.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The creation timestamp of an inspectTemplate.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The core content of the template.
+         *
+         * @param GooglePrivacyDlpV2DeidentifyConfig $deidentifyConfig
+         */
+        public function setDeidentifyConfig(GooglePrivacyDlpV2DeidentifyConfig $deidentifyConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DeidentifyConfig
+         */
+        public function getDeidentifyConfig()
+        {
+        }
+        /**
+         * Short description (max 256 chars).
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Display name (max 256 chars).
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. The template name. The template will have one of the following
+         * formats: `projects/PROJECT_ID/deidentifyTemplates/TEMPLATE_ID` OR
+         * `organizations/ORGANIZATION_ID/deidentifyTemplates/TEMPLATE_ID`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The last update timestamp of an inspectTemplate.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DeidentifyTemplate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The core content of the template.
-     *
-     * @param GooglePrivacyDlpV2DeidentifyConfig $deidentifyConfig
-     */
-    public function setDeidentifyConfig(GooglePrivacyDlpV2DeidentifyConfig $deidentifyConfig)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2DeidentifyConfig
-     */
-    public function getDeidentifyConfig()
-    {
-    }
-    /**
-     * Short description (max 256 chars).
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Display name (max 256 chars).
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. The template name. The template will have one of the following
-     * formats: `projects/PROJECT_ID/deidentifyTemplates/TEMPLATE_ID` OR
-     * `organizations/ORGANIZATION_ID/deidentifyTemplates/TEMPLATE_ID`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The last update timestamp of an inspectTemplate.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_DLP_GooglePrivacyDlpV2DeidentifyTemplate extends \Google\Service\DLP\GooglePrivacyDlpV2DeidentifyTemplate
     {
     }
 }

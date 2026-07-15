@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudControlsPartnerService;
-
-class EkmConnections extends \Google\Collection
-{
-    protected $collection_key = 'ekmConnections';
-    protected $ekmConnectionsType = EkmConnection::class;
-    protected $ekmConnectionsDataType = 'array';
-    /**
-     * Identifier. Format: `organizations/{organization}/locations/{location}/cust
-     * omers/{customer}/workloads/{workload}/ekmConnections`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The EKM connections associated with the workload
-     *
-     * @param EkmConnection[] $ekmConnections
-     */
-    public function setEkmConnections($ekmConnections)
+namespace Google\Service\CloudControlsPartnerService {
+    class EkmConnections extends \Google\Collection
     {
+        protected $collection_key = 'ekmConnections';
+        protected $ekmConnectionsType = EkmConnection::class;
+        protected $ekmConnectionsDataType = 'array';
+        /**
+         * Identifier. Format: `organizations/{organization}/locations/{location}/cust
+         * omers/{customer}/workloads/{workload}/ekmConnections`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The EKM connections associated with the workload
+         *
+         * @param EkmConnection[] $ekmConnections
+         */
+        public function setEkmConnections($ekmConnections)
+        {
+        }
+        /**
+         * @return EkmConnection[]
+         */
+        public function getEkmConnections()
+        {
+        }
+        /**
+         * Identifier. Format: `organizations/{organization}/locations/{location}/cust
+         * omers/{customer}/workloads/{workload}/ekmConnections`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EkmConnection[]
+     * Runtime class alias of \Google\Service\CloudControlsPartnerService\EkmConnections registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEkmConnections()
-    {
-    }
-    /**
-     * Identifier. Format: `organizations/{organization}/locations/{location}/cust
-     * omers/{customer}/workloads/{workload}/ekmConnections`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudControlsPartnerService_EkmConnections extends \Google\Service\CloudControlsPartnerService\EkmConnections
     {
     }
 }

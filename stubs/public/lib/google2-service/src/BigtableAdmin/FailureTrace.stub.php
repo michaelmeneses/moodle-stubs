@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class FailureTrace extends \Google\Collection
-{
-    protected $collection_key = 'frames';
-    protected $framesType = Frame::class;
-    protected $framesDataType = 'array';
-    /**
-     * @param Frame[]
-     */
-    public function setFrames($frames)
+namespace Google\Service\BigtableAdmin {
+    class FailureTrace extends \Google\Collection
     {
+        protected $collection_key = 'frames';
+        protected $framesType = Frame::class;
+        protected $framesDataType = 'array';
+        /**
+         * @param Frame[]
+         */
+        public function setFrames($frames)
+        {
+        }
+        /**
+         * @return Frame[]
+         */
+        public function getFrames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Frame[]
+     * Runtime class alias of \Google\Service\BigtableAdmin\FailureTrace registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFrames()
+    class Google_Service_BigtableAdmin_FailureTrace extends \Google\Service\BigtableAdmin\FailureTrace
     {
     }
 }

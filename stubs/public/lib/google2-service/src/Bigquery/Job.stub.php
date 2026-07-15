@@ -21,215 +21,224 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class Job extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["principalSubject" => "principal_subject", "userEmail" => "user_email"];
-    protected $configurationType = JobConfiguration::class;
-    protected $configurationDataType = '';
-    /**
-     * Output only. A hash of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Output only. Opaque ID field of the job.
-     *
-     * @var string
-     */
-    public $id;
-    protected $jobCreationReasonType = JobCreationReason::class;
-    protected $jobCreationReasonDataType = '';
-    protected $jobReferenceType = JobReference::class;
-    protected $jobReferenceDataType = '';
-    /**
-     * Output only. The type of the resource.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Output only. [Full-projection-only] String representation of identity of
-     * requesting party. Populated for both first- and third-party identities.
-     * Only present for APIs that support third-party identities.
-     *
-     * @var string
-     */
-    public $principalSubject;
-    /**
-     * Output only. A URL that can be used to access the resource again.
-     *
-     * @var string
-     */
-    public $selfLink;
-    protected $statisticsType = JobStatistics::class;
-    protected $statisticsDataType = '';
-    protected $statusType = JobStatus::class;
-    protected $statusDataType = '';
-    /**
-     * Output only. Email address of the user who ran the job.
-     *
-     * @var string
-     */
-    public $userEmail;
-    /**
-     * Required. Describes the job configuration.
-     *
-     * @param JobConfiguration $configuration
-     */
-    public function setConfiguration(JobConfiguration $configuration)
+namespace Google\Service\Bigquery {
+    class Job extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["principalSubject" => "principal_subject", "userEmail" => "user_email"];
+        protected $configurationType = JobConfiguration::class;
+        protected $configurationDataType = '';
+        /**
+         * Output only. A hash of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Output only. Opaque ID field of the job.
+         *
+         * @var string
+         */
+        public $id;
+        protected $jobCreationReasonType = JobCreationReason::class;
+        protected $jobCreationReasonDataType = '';
+        protected $jobReferenceType = JobReference::class;
+        protected $jobReferenceDataType = '';
+        /**
+         * Output only. The type of the resource.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Output only. [Full-projection-only] String representation of identity of
+         * requesting party. Populated for both first- and third-party identities.
+         * Only present for APIs that support third-party identities.
+         *
+         * @var string
+         */
+        public $principalSubject;
+        /**
+         * Output only. A URL that can be used to access the resource again.
+         *
+         * @var string
+         */
+        public $selfLink;
+        protected $statisticsType = JobStatistics::class;
+        protected $statisticsDataType = '';
+        protected $statusType = JobStatus::class;
+        protected $statusDataType = '';
+        /**
+         * Output only. Email address of the user who ran the job.
+         *
+         * @var string
+         */
+        public $userEmail;
+        /**
+         * Required. Describes the job configuration.
+         *
+         * @param JobConfiguration $configuration
+         */
+        public function setConfiguration(JobConfiguration $configuration)
+        {
+        }
+        /**
+         * @return JobConfiguration
+         */
+        public function getConfiguration()
+        {
+        }
+        /**
+         * Output only. A hash of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Output only. Opaque ID field of the job.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Output only. The reason why a Job was created.
+         *
+         * @param JobCreationReason $jobCreationReason
+         */
+        public function setJobCreationReason(JobCreationReason $jobCreationReason)
+        {
+        }
+        /**
+         * @return JobCreationReason
+         */
+        public function getJobCreationReason()
+        {
+        }
+        /**
+         * Optional. Reference describing the unique-per-user name of the job.
+         *
+         * @param JobReference $jobReference
+         */
+        public function setJobReference(JobReference $jobReference)
+        {
+        }
+        /**
+         * @return JobReference
+         */
+        public function getJobReference()
+        {
+        }
+        /**
+         * Output only. The type of the resource.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Output only. [Full-projection-only] String representation of identity of
+         * requesting party. Populated for both first- and third-party identities.
+         * Only present for APIs that support third-party identities.
+         *
+         * @param string $principalSubject
+         */
+        public function setPrincipalSubject($principalSubject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrincipalSubject()
+        {
+        }
+        /**
+         * Output only. A URL that can be used to access the resource again.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * Output only. Information about the job, including starting time and ending
+         * time of the job.
+         *
+         * @param JobStatistics $statistics
+         */
+        public function setStatistics(JobStatistics $statistics)
+        {
+        }
+        /**
+         * @return JobStatistics
+         */
+        public function getStatistics()
+        {
+        }
+        /**
+         * Output only. The status of this job. Examine this value when polling an
+         * asynchronous job to see if the job is complete.
+         *
+         * @param JobStatus $status
+         */
+        public function setStatus(JobStatus $status)
+        {
+        }
+        /**
+         * @return JobStatus
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Output only. Email address of the user who ran the job.
+         *
+         * @param string $userEmail
+         */
+        public function setUserEmail($userEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return JobConfiguration
+     * Runtime class alias of \Google\Service\Bigquery\Job registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfiguration()
-    {
-    }
-    /**
-     * Output only. A hash of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Output only. Opaque ID field of the job.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Output only. The reason why a Job was created.
-     *
-     * @param JobCreationReason $jobCreationReason
-     */
-    public function setJobCreationReason(JobCreationReason $jobCreationReason)
-    {
-    }
-    /**
-     * @return JobCreationReason
-     */
-    public function getJobCreationReason()
-    {
-    }
-    /**
-     * Optional. Reference describing the unique-per-user name of the job.
-     *
-     * @param JobReference $jobReference
-     */
-    public function setJobReference(JobReference $jobReference)
-    {
-    }
-    /**
-     * @return JobReference
-     */
-    public function getJobReference()
-    {
-    }
-    /**
-     * Output only. The type of the resource.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Output only. [Full-projection-only] String representation of identity of
-     * requesting party. Populated for both first- and third-party identities.
-     * Only present for APIs that support third-party identities.
-     *
-     * @param string $principalSubject
-     */
-    public function setPrincipalSubject($principalSubject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrincipalSubject()
-    {
-    }
-    /**
-     * Output only. A URL that can be used to access the resource again.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * Output only. Information about the job, including starting time and ending
-     * time of the job.
-     *
-     * @param JobStatistics $statistics
-     */
-    public function setStatistics(JobStatistics $statistics)
-    {
-    }
-    /**
-     * @return JobStatistics
-     */
-    public function getStatistics()
-    {
-    }
-    /**
-     * Output only. The status of this job. Examine this value when polling an
-     * asynchronous job to see if the job is complete.
-     *
-     * @param JobStatus $status
-     */
-    public function setStatus(JobStatus $status)
-    {
-    }
-    /**
-     * @return JobStatus
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * Output only. Email address of the user who ran the job.
-     *
-     * @param string $userEmail
-     */
-    public function setUserEmail($userEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserEmail()
+    class Google_Service_Bigquery_Job extends \Google\Service\Bigquery\Job
     {
     }
 }

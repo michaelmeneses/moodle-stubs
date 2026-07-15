@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class AttributeValueMetadata extends \Google\Model
-{
-    /**
-     * The display name for this value, localized where available; otherwise, in
-     * English. The value display name is intended to be used in context with the
-     * attribute display name. For example, for a "WiFi" enum attribute, this
-     * could contain "Paid" to represent paid Wi-Fi.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The attribute value.
-     *
-     * @var array
-     */
-    public $value;
-    /**
-     * The display name for this value, localized where available; otherwise, in
-     * English. The value display name is intended to be used in context with the
-     * attribute display name. For example, for a "WiFi" enum attribute, this
-     * could contain "Paid" to represent paid Wi-Fi.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class AttributeValueMetadata extends \Google\Model
     {
+        /**
+         * The display name for this value, localized where available; otherwise, in
+         * English. The value display name is intended to be used in context with the
+         * attribute display name. For example, for a "WiFi" enum attribute, this
+         * could contain "Paid" to represent paid Wi-Fi.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The attribute value.
+         *
+         * @var array
+         */
+        public $value;
+        /**
+         * The display name for this value, localized where available; otherwise, in
+         * English. The value display name is intended to be used in context with the
+         * attribute display name. For example, for a "WiFi" enum attribute, this
+         * could contain "Paid" to represent paid Wi-Fi.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The attribute value.
+         *
+         * @param array $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\AttributeValueMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The attribute value.
-     *
-     * @param array $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getValue()
+    class Google_Service_MyBusinessBusinessInformation_AttributeValueMetadata extends \Google\Service\MyBusinessBusinessInformation\AttributeValueMetadata
     {
     }
 }

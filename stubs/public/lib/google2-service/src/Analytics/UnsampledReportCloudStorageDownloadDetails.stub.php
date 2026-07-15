@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class UnsampledReportCloudStorageDownloadDetails extends \Google\Model
-{
-    /**
-     * Id of the bucket the file object is stored in.
-     *
-     * @var string
-     */
-    public $bucketId;
-    /**
-     * Id of the file object containing the report data.
-     *
-     * @var string
-     */
-    public $objectId;
-    /**
-     * Id of the bucket the file object is stored in.
-     *
-     * @param string $bucketId
-     */
-    public function setBucketId($bucketId)
+namespace Google\Service\Analytics {
+    class UnsampledReportCloudStorageDownloadDetails extends \Google\Model
     {
+        /**
+         * Id of the bucket the file object is stored in.
+         *
+         * @var string
+         */
+        public $bucketId;
+        /**
+         * Id of the file object containing the report data.
+         *
+         * @var string
+         */
+        public $objectId;
+        /**
+         * Id of the bucket the file object is stored in.
+         *
+         * @param string $bucketId
+         */
+        public function setBucketId($bucketId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucketId()
+        {
+        }
+        /**
+         * Id of the file object containing the report data.
+         *
+         * @param string $objectId
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\UnsampledReportCloudStorageDownloadDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucketId()
-    {
-    }
-    /**
-     * Id of the file object containing the report data.
-     *
-     * @param string $objectId
-     */
-    public function setObjectId($objectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectId()
+    class Google_Service_Analytics_UnsampledReportCloudStorageDownloadDetails extends \Google\Service\Analytics\UnsampledReportCloudStorageDownloadDetails
     {
     }
 }

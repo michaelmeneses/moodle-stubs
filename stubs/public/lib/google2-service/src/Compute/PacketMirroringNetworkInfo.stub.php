@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class PacketMirroringNetworkInfo extends \Google\Model
-{
-    /**
-     * Output only. [Output Only] Unique identifier for the network; defined by
-     * the server.
-     *
-     * @var string
-     */
-    public $canonicalUrl;
-    /**
-     * URL of the network resource.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Output only. [Output Only] Unique identifier for the network; defined by
-     * the server.
-     *
-     * @param string $canonicalUrl
-     */
-    public function setCanonicalUrl($canonicalUrl)
+namespace Google\Service\Compute {
+    class PacketMirroringNetworkInfo extends \Google\Model
     {
+        /**
+         * Output only. [Output Only] Unique identifier for the network; defined by
+         * the server.
+         *
+         * @var string
+         */
+        public $canonicalUrl;
+        /**
+         * URL of the network resource.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Output only. [Output Only] Unique identifier for the network; defined by
+         * the server.
+         *
+         * @param string $canonicalUrl
+         */
+        public function setCanonicalUrl($canonicalUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCanonicalUrl()
+        {
+        }
+        /**
+         * URL of the network resource.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\PacketMirroringNetworkInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanonicalUrl()
-    {
-    }
-    /**
-     * URL of the network resource.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_Compute_PacketMirroringNetworkInfo extends \Google\Service\Compute\PacketMirroringNetworkInfo
     {
     }
 }

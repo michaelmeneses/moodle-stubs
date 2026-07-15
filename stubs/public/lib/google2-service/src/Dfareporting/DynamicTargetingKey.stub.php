@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class DynamicTargetingKey extends \Google\Model
-{
-    public const OBJECT_TYPE_OBJECT_ADVERTISER = 'OBJECT_ADVERTISER';
-    public const OBJECT_TYPE_OBJECT_AD = 'OBJECT_AD';
-    public const OBJECT_TYPE_OBJECT_CREATIVE = 'OBJECT_CREATIVE';
-    public const OBJECT_TYPE_OBJECT_PLACEMENT = 'OBJECT_PLACEMENT';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#dynamicTargetingKey".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Name of this dynamic targeting key. This is a required field. Must be less
-     * than 256 characters long and cannot contain commas. All characters are
-     * converted to lowercase.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * ID of the object of this dynamic targeting key. This is a required field.
-     *
-     * @var string
-     */
-    public $objectId;
-    /**
-     * Type of the object of this dynamic targeting key. This is a required field.
-     *
-     * @var string
-     */
-    public $objectType;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#dynamicTargetingKey".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class DynamicTargetingKey extends \Google\Model
     {
+        public const OBJECT_TYPE_OBJECT_ADVERTISER = 'OBJECT_ADVERTISER';
+        public const OBJECT_TYPE_OBJECT_AD = 'OBJECT_AD';
+        public const OBJECT_TYPE_OBJECT_CREATIVE = 'OBJECT_CREATIVE';
+        public const OBJECT_TYPE_OBJECT_PLACEMENT = 'OBJECT_PLACEMENT';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#dynamicTargetingKey".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Name of this dynamic targeting key. This is a required field. Must be less
+         * than 256 characters long and cannot contain commas. All characters are
+         * converted to lowercase.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * ID of the object of this dynamic targeting key. This is a required field.
+         *
+         * @var string
+         */
+        public $objectId;
+        /**
+         * Type of the object of this dynamic targeting key. This is a required field.
+         *
+         * @var string
+         */
+        public $objectType;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#dynamicTargetingKey".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Name of this dynamic targeting key. This is a required field. Must be less
+         * than 256 characters long and cannot contain commas. All characters are
+         * converted to lowercase.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * ID of the object of this dynamic targeting key. This is a required field.
+         *
+         * @param string $objectId
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectId()
+        {
+        }
+        /**
+         * Type of the object of this dynamic targeting key. This is a required field.
+         *
+         * Accepted values: OBJECT_ADVERTISER, OBJECT_AD, OBJECT_CREATIVE,
+         * OBJECT_PLACEMENT
+         *
+         * @param self::OBJECT_TYPE_* $objectType
+         */
+        public function setObjectType($objectType)
+        {
+        }
+        /**
+         * @return self::OBJECT_TYPE_*
+         */
+        public function getObjectType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\DynamicTargetingKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Name of this dynamic targeting key. This is a required field. Must be less
-     * than 256 characters long and cannot contain commas. All characters are
-     * converted to lowercase.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * ID of the object of this dynamic targeting key. This is a required field.
-     *
-     * @param string $objectId
-     */
-    public function setObjectId($objectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectId()
-    {
-    }
-    /**
-     * Type of the object of this dynamic targeting key. This is a required field.
-     *
-     * Accepted values: OBJECT_ADVERTISER, OBJECT_AD, OBJECT_CREATIVE,
-     * OBJECT_PLACEMENT
-     *
-     * @param self::OBJECT_TYPE_* $objectType
-     */
-    public function setObjectType($objectType)
-    {
-    }
-    /**
-     * @return self::OBJECT_TYPE_*
-     */
-    public function getObjectType()
+    class Google_Service_Dfareporting_DynamicTargetingKey extends \Google\Service\Dfareporting\DynamicTargetingKey
     {
     }
 }

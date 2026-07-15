@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class YoutubeAssetAssociationAffiliateLocationAssetFilterAffiliateLocationMatchingFunction extends \Google\Collection
-{
-    protected $collection_key = 'chains';
-    protected $chainsType = YoutubeAssetAssociationAffiliateLocationAssetFilterAffiliateLocationChain::class;
-    protected $chainsDataType = 'array';
-    /**
-     * Optional. The selected affiliate location chain IDs. This field is required
-     * if affiliate_location_matching_type is `SELECTED_CHAINS`.
-     *
-     * @param YoutubeAssetAssociationAffiliateLocationAssetFilterAffiliateLocationChain[] $chains
-     */
-    public function setChains($chains)
+namespace Google\Service\DisplayVideo {
+    class YoutubeAssetAssociationAffiliateLocationAssetFilterAffiliateLocationMatchingFunction extends \Google\Collection
     {
+        protected $collection_key = 'chains';
+        protected $chainsType = YoutubeAssetAssociationAffiliateLocationAssetFilterAffiliateLocationChain::class;
+        protected $chainsDataType = 'array';
+        /**
+         * Optional. The selected affiliate location chain IDs. This field is required
+         * if affiliate_location_matching_type is `SELECTED_CHAINS`.
+         *
+         * @param YoutubeAssetAssociationAffiliateLocationAssetFilterAffiliateLocationChain[] $chains
+         */
+        public function setChains($chains)
+        {
+        }
+        /**
+         * @return YoutubeAssetAssociationAffiliateLocationAssetFilterAffiliateLocationChain[]
+         */
+        public function getChains()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return YoutubeAssetAssociationAffiliateLocationAssetFilterAffiliateLocationChain[]
+     * Runtime class alias of \Google\Service\DisplayVideo\YoutubeAssetAssociationAffiliateLocationAssetFilterAffiliateLocationMatchingFunction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChains()
+    class Google_Service_DisplayVideo_YoutubeAssetAssociationAffiliateLocationAssetFilterAffiliateLocationMatchingFunction extends \Google\Service\DisplayVideo\YoutubeAssetAssociationAffiliateLocationAssetFilterAffiliateLocationMatchingFunction
     {
     }
 }

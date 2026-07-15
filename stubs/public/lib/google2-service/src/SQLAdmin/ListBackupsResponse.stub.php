@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class ListBackupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'warnings';
-    protected $backupsType = Backup::class;
-    protected $backupsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, then there aren't subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $warningsType = ApiWarning::class;
-    protected $warningsDataType = 'array';
-    /**
-     * A list of backups.
-     *
-     * @param Backup[] $backups
-     */
-    public function setBackups($backups)
+namespace Google\Service\SQLAdmin {
+    class ListBackupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'warnings';
+        protected $backupsType = Backup::class;
+        protected $backupsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, then there aren't subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $warningsType = ApiWarning::class;
+        protected $warningsDataType = 'array';
+        /**
+         * A list of backups.
+         *
+         * @param Backup[] $backups
+         */
+        public function setBackups($backups)
+        {
+        }
+        /**
+         * @return Backup[]
+         */
+        public function getBackups()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, then there aren't subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * If a region isn't unavailable or if an unknown error occurs, then a warning
+         * message is returned.
+         *
+         * @param ApiWarning[] $warnings
+         */
+        public function setWarnings($warnings)
+        {
+        }
+        /**
+         * @return ApiWarning[]
+         */
+        public function getWarnings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Backup[]
+     * Runtime class alias of \Google\Service\SQLAdmin\ListBackupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackups()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, then there aren't subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * If a region isn't unavailable or if an unknown error occurs, then a warning
-     * message is returned.
-     *
-     * @param ApiWarning[] $warnings
-     */
-    public function setWarnings($warnings)
-    {
-    }
-    /**
-     * @return ApiWarning[]
-     */
-    public function getWarnings()
+    class Google_Service_SQLAdmin_ListBackupsResponse extends \Google\Service\SQLAdmin\ListBackupsResponse
     {
     }
 }

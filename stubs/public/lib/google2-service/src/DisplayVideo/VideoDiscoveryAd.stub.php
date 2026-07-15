@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class VideoDiscoveryAd extends \Google\Model
-{
-    /**
-     * Unknown or unspecified.
-     */
-    public const THUMBNAIL_THUMBNAIL_UNSPECIFIED = 'THUMBNAIL_UNSPECIFIED';
-    /**
-     * The default thumbnail, can be auto-generated or user-uploaded.
-     */
-    public const THUMBNAIL_THUMBNAIL_DEFAULT = 'THUMBNAIL_DEFAULT';
-    /**
-     * Thumbnail 1, generated from the video.
-     */
-    public const THUMBNAIL_THUMBNAIL_1 = 'THUMBNAIL_1';
-    /**
-     * Thumbnail 2, generated from the video.
-     */
-    public const THUMBNAIL_THUMBNAIL_2 = 'THUMBNAIL_2';
-    /**
-     * Thumbnail 3, generated from the video.
-     */
-    public const THUMBNAIL_THUMBNAIL_3 = 'THUMBNAIL_3';
-    /**
-     * First text line for the ad.
-     *
-     * @var string
-     */
-    public $description1;
-    /**
-     * Second text line for the ad.
-     *
-     * @var string
-     */
-    public $description2;
-    /**
-     * The headline of ad.
-     *
-     * @var string
-     */
-    public $headline;
-    /**
-     * Thumbnail image used in the ad.
-     *
-     * @var string
-     */
-    public $thumbnail;
-    protected $videoType = YoutubeVideoDetails::class;
-    protected $videoDataType = '';
-    /**
-     * First text line for the ad.
-     *
-     * @param string $description1
-     */
-    public function setDescription1($description1)
+namespace Google\Service\DisplayVideo {
+    class VideoDiscoveryAd extends \Google\Model
     {
+        /**
+         * Unknown or unspecified.
+         */
+        public const THUMBNAIL_THUMBNAIL_UNSPECIFIED = 'THUMBNAIL_UNSPECIFIED';
+        /**
+         * The default thumbnail, can be auto-generated or user-uploaded.
+         */
+        public const THUMBNAIL_THUMBNAIL_DEFAULT = 'THUMBNAIL_DEFAULT';
+        /**
+         * Thumbnail 1, generated from the video.
+         */
+        public const THUMBNAIL_THUMBNAIL_1 = 'THUMBNAIL_1';
+        /**
+         * Thumbnail 2, generated from the video.
+         */
+        public const THUMBNAIL_THUMBNAIL_2 = 'THUMBNAIL_2';
+        /**
+         * Thumbnail 3, generated from the video.
+         */
+        public const THUMBNAIL_THUMBNAIL_3 = 'THUMBNAIL_3';
+        /**
+         * First text line for the ad.
+         *
+         * @var string
+         */
+        public $description1;
+        /**
+         * Second text line for the ad.
+         *
+         * @var string
+         */
+        public $description2;
+        /**
+         * The headline of ad.
+         *
+         * @var string
+         */
+        public $headline;
+        /**
+         * Thumbnail image used in the ad.
+         *
+         * @var string
+         */
+        public $thumbnail;
+        protected $videoType = YoutubeVideoDetails::class;
+        protected $videoDataType = '';
+        /**
+         * First text line for the ad.
+         *
+         * @param string $description1
+         */
+        public function setDescription1($description1)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription1()
+        {
+        }
+        /**
+         * Second text line for the ad.
+         *
+         * @param string $description2
+         */
+        public function setDescription2($description2)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription2()
+        {
+        }
+        /**
+         * The headline of ad.
+         *
+         * @param string $headline
+         */
+        public function setHeadline($headline)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeadline()
+        {
+        }
+        /**
+         * Thumbnail image used in the ad.
+         *
+         * Accepted values: THUMBNAIL_UNSPECIFIED, THUMBNAIL_DEFAULT, THUMBNAIL_1,
+         * THUMBNAIL_2, THUMBNAIL_3
+         *
+         * @param self::THUMBNAIL_* $thumbnail
+         */
+        public function setThumbnail($thumbnail)
+        {
+        }
+        /**
+         * @return self::THUMBNAIL_*
+         */
+        public function getThumbnail()
+        {
+        }
+        /**
+         * The YouTube video the ad promotes.
+         *
+         * @param YoutubeVideoDetails $video
+         */
+        public function setVideo(YoutubeVideoDetails $video)
+        {
+        }
+        /**
+         * @return YoutubeVideoDetails
+         */
+        public function getVideo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\VideoDiscoveryAd registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription1()
-    {
-    }
-    /**
-     * Second text line for the ad.
-     *
-     * @param string $description2
-     */
-    public function setDescription2($description2)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription2()
-    {
-    }
-    /**
-     * The headline of ad.
-     *
-     * @param string $headline
-     */
-    public function setHeadline($headline)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHeadline()
-    {
-    }
-    /**
-     * Thumbnail image used in the ad.
-     *
-     * Accepted values: THUMBNAIL_UNSPECIFIED, THUMBNAIL_DEFAULT, THUMBNAIL_1,
-     * THUMBNAIL_2, THUMBNAIL_3
-     *
-     * @param self::THUMBNAIL_* $thumbnail
-     */
-    public function setThumbnail($thumbnail)
-    {
-    }
-    /**
-     * @return self::THUMBNAIL_*
-     */
-    public function getThumbnail()
-    {
-    }
-    /**
-     * The YouTube video the ad promotes.
-     *
-     * @param YoutubeVideoDetails $video
-     */
-    public function setVideo(YoutubeVideoDetails $video)
-    {
-    }
-    /**
-     * @return YoutubeVideoDetails
-     */
-    public function getVideo()
+    class Google_Service_DisplayVideo_VideoDiscoveryAd extends \Google\Service\DisplayVideo\VideoDiscoveryAd
     {
     }
 }

@@ -29,6 +29,8 @@
  */
 namespace mod_page\content;
 
+use core\content\export\exportable_items\exportable_textarea;
+use core\content\export\exporters\abstract_mod_exporter;
 /**
  * A class which assists a component to export content.
  *

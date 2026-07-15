@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ExportFeatureValuesRequestFullExport extends \Google\Model
-{
-    /**
-     * Exports Feature values as of this timestamp. If not set, retrieve values as
-     * of now. Timestamp, if present, must not have higher than millisecond
-     * precision.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Excludes Feature values with feature generation timestamp before this
-     * timestamp. If not set, retrieve oldest values kept in Feature Store.
-     * Timestamp, if present, must not have higher than millisecond precision.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Exports Feature values as of this timestamp. If not set, retrieve values as
-     * of now. Timestamp, if present, must not have higher than millisecond
-     * precision.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ExportFeatureValuesRequestFullExport extends \Google\Model
     {
+        /**
+         * Exports Feature values as of this timestamp. If not set, retrieve values as
+         * of now. Timestamp, if present, must not have higher than millisecond
+         * precision.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Excludes Feature values with feature generation timestamp before this
+         * timestamp. If not set, retrieve oldest values kept in Feature Store.
+         * Timestamp, if present, must not have higher than millisecond precision.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Exports Feature values as of this timestamp. If not set, retrieve values as
+         * of now. Timestamp, if present, must not have higher than millisecond
+         * precision.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Excludes Feature values with feature generation timestamp before this
+         * timestamp. If not set, retrieve oldest values kept in Feature Store.
+         * Timestamp, if present, must not have higher than millisecond precision.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExportFeatureValuesRequestFullExport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Excludes Feature values with feature generation timestamp before this
-     * timestamp. If not set, retrieve oldest values kept in Feature Store.
-     * Timestamp, if present, must not have higher than millisecond precision.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ExportFeatureValuesRequestFullExport extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExportFeatureValuesRequestFullExport
     {
     }
 }

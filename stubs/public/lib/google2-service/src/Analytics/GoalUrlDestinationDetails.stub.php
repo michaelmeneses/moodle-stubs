@@ -21,107 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class GoalUrlDestinationDetails extends \Google\Collection
-{
-    protected $collection_key = 'steps';
-    /**
-     * Determines if the goal URL must exactly match the capitalization of visited
-     * URLs.
-     *
-     * @var bool
-     */
-    public $caseSensitive;
-    /**
-     * Determines if the first step in this goal is required.
-     *
-     * @var bool
-     */
-    public $firstStepRequired;
-    /**
-     * Match type for the goal URL. Possible values are HEAD, EXACT, or REGEX.
-     *
-     * @var string
-     */
-    public $matchType;
-    protected $stepsType = GoalUrlDestinationDetailsSteps::class;
-    protected $stepsDataType = 'array';
-    /**
-     * URL for this goal.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Determines if the goal URL must exactly match the capitalization of visited
-     * URLs.
-     *
-     * @param bool $caseSensitive
-     */
-    public function setCaseSensitive($caseSensitive)
+namespace Google\Service\Analytics {
+    class GoalUrlDestinationDetails extends \Google\Collection
     {
+        protected $collection_key = 'steps';
+        /**
+         * Determines if the goal URL must exactly match the capitalization of visited
+         * URLs.
+         *
+         * @var bool
+         */
+        public $caseSensitive;
+        /**
+         * Determines if the first step in this goal is required.
+         *
+         * @var bool
+         */
+        public $firstStepRequired;
+        /**
+         * Match type for the goal URL. Possible values are HEAD, EXACT, or REGEX.
+         *
+         * @var string
+         */
+        public $matchType;
+        protected $stepsType = GoalUrlDestinationDetailsSteps::class;
+        protected $stepsDataType = 'array';
+        /**
+         * URL for this goal.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Determines if the goal URL must exactly match the capitalization of visited
+         * URLs.
+         *
+         * @param bool $caseSensitive
+         */
+        public function setCaseSensitive($caseSensitive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCaseSensitive()
+        {
+        }
+        /**
+         * Determines if the first step in this goal is required.
+         *
+         * @param bool $firstStepRequired
+         */
+        public function setFirstStepRequired($firstStepRequired)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFirstStepRequired()
+        {
+        }
+        /**
+         * Match type for the goal URL. Possible values are HEAD, EXACT, or REGEX.
+         *
+         * @param string $matchType
+         */
+        public function setMatchType($matchType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatchType()
+        {
+        }
+        /**
+         * List of steps configured for this goal funnel.
+         *
+         * @param GoalUrlDestinationDetailsSteps[] $steps
+         */
+        public function setSteps($steps)
+        {
+        }
+        /**
+         * @return GoalUrlDestinationDetailsSteps[]
+         */
+        public function getSteps()
+        {
+        }
+        /**
+         * URL for this goal.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Analytics\GoalUrlDestinationDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaseSensitive()
-    {
-    }
-    /**
-     * Determines if the first step in this goal is required.
-     *
-     * @param bool $firstStepRequired
-     */
-    public function setFirstStepRequired($firstStepRequired)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getFirstStepRequired()
-    {
-    }
-    /**
-     * Match type for the goal URL. Possible values are HEAD, EXACT, or REGEX.
-     *
-     * @param string $matchType
-     */
-    public function setMatchType($matchType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMatchType()
-    {
-    }
-    /**
-     * List of steps configured for this goal funnel.
-     *
-     * @param GoalUrlDestinationDetailsSteps[] $steps
-     */
-    public function setSteps($steps)
-    {
-    }
-    /**
-     * @return GoalUrlDestinationDetailsSteps[]
-     */
-    public function getSteps()
-    {
-    }
-    /**
-     * URL for this goal.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_Analytics_GoalUrlDestinationDetails extends \Google\Service\Analytics\GoalUrlDestinationDetails
     {
     }
 }

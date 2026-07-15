@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class SettlementTransactionAmountCommission extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $category;
-    /**
-     * @var string
-     */
-    public $rate;
-    /**
-     * @param string
-     */
-    public function setCategory($category)
+namespace Google\Service\ShoppingContent {
+    class SettlementTransactionAmountCommission extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $category;
+        /**
+         * @var string
+         */
+        public $rate;
+        /**
+         * @param string
+         */
+        public function setCategory($category)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategory()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRate($rate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\SettlementTransactionAmountCommission registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategory()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRate($rate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRate()
+    class Google_Service_ShoppingContent_SettlementTransactionAmountCommission extends \Google\Service\ShoppingContent\SettlementTransactionAmountCommission
     {
     }
 }

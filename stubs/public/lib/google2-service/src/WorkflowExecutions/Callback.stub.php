@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkflowExecutions;
-
-class Callback extends \Google\Collection
-{
-    protected $collection_key = 'availablePayloads';
-    /**
-     * Output only. The payloads received by the callback that have not been
-     * processed by a waiting execution step.
-     *
-     * @var string[]
-     */
-    public $availablePayloads;
-    /**
-     * Output only. The method accepted by the callback. For example: GET, POST,
-     * PUT.
-     *
-     * @var string
-     */
-    public $method;
-    /**
-     * Output only. The resource name of the callback. Format: projects/{project}/
-     * locations/{location}/workflows/{workflow}/executions/{execution}/callback/{
-     * callback}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Number of execution steps waiting on this callback.
-     *
-     * @var string
-     */
-    public $waiters;
-    /**
-     * Output only. The payloads received by the callback that have not been
-     * processed by a waiting execution step.
-     *
-     * @param string[] $availablePayloads
-     */
-    public function setAvailablePayloads($availablePayloads)
+namespace Google\Service\WorkflowExecutions {
+    class Callback extends \Google\Collection
     {
+        protected $collection_key = 'availablePayloads';
+        /**
+         * Output only. The payloads received by the callback that have not been
+         * processed by a waiting execution step.
+         *
+         * @var string[]
+         */
+        public $availablePayloads;
+        /**
+         * Output only. The method accepted by the callback. For example: GET, POST,
+         * PUT.
+         *
+         * @var string
+         */
+        public $method;
+        /**
+         * Output only. The resource name of the callback. Format: projects/{project}/
+         * locations/{location}/workflows/{workflow}/executions/{execution}/callback/{
+         * callback}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Number of execution steps waiting on this callback.
+         *
+         * @var string
+         */
+        public $waiters;
+        /**
+         * Output only. The payloads received by the callback that have not been
+         * processed by a waiting execution step.
+         *
+         * @param string[] $availablePayloads
+         */
+        public function setAvailablePayloads($availablePayloads)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAvailablePayloads()
+        {
+        }
+        /**
+         * Output only. The method accepted by the callback. For example: GET, POST,
+         * PUT.
+         *
+         * @param string $method
+         */
+        public function setMethod($method)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMethod()
+        {
+        }
+        /**
+         * Output only. The resource name of the callback. Format: projects/{project}/
+         * locations/{location}/workflows/{workflow}/executions/{execution}/callback/{
+         * callback}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Number of execution steps waiting on this callback.
+         *
+         * @param string $waiters
+         */
+        public function setWaiters($waiters)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWaiters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\WorkflowExecutions\Callback registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailablePayloads()
-    {
-    }
-    /**
-     * Output only. The method accepted by the callback. For example: GET, POST,
-     * PUT.
-     *
-     * @param string $method
-     */
-    public function setMethod($method)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMethod()
-    {
-    }
-    /**
-     * Output only. The resource name of the callback. Format: projects/{project}/
-     * locations/{location}/workflows/{workflow}/executions/{execution}/callback/{
-     * callback}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Number of execution steps waiting on this callback.
-     *
-     * @param string $waiters
-     */
-    public function setWaiters($waiters)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWaiters()
+    class Google_Service_WorkflowExecutions_Callback extends \Google\Service\WorkflowExecutions\Callback
     {
     }
 }

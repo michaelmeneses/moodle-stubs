@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTubeAnalytics;
-
-class GroupSnippet extends \Google\Model
-{
-    /**
-     * The date and time that the group was created. The value is specified in ISO
-     * 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
-     *
-     * @var string
-     */
-    public $publishedAt;
-    /**
-     * The group name. The value must be a non-empty string.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The date and time that the group was created. The value is specified in ISO
-     * 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
-     *
-     * @param string $publishedAt
-     */
-    public function setPublishedAt($publishedAt)
+namespace Google\Service\YouTubeAnalytics {
+    class GroupSnippet extends \Google\Model
     {
+        /**
+         * The date and time that the group was created. The value is specified in ISO
+         * 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
+         *
+         * @var string
+         */
+        public $publishedAt;
+        /**
+         * The group name. The value must be a non-empty string.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The date and time that the group was created. The value is specified in ISO
+         * 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
+         *
+         * @param string $publishedAt
+         */
+        public function setPublishedAt($publishedAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublishedAt()
+        {
+        }
+        /**
+         * The group name. The value must be a non-empty string.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTubeAnalytics\GroupSnippet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPublishedAt()
-    {
-    }
-    /**
-     * The group name. The value must be a non-empty string.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_YouTubeAnalytics_GroupSnippet extends \Google\Service\YouTubeAnalytics\GroupSnippet
     {
     }
 }

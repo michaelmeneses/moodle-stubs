@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudOSLogin;
-
-class LoginProfile extends \Google\Collection
-{
-    protected $collection_key = 'posixAccounts';
-    /**
-     * Required. A unique user ID.
-     *
-     * @var string
-     */
-    public $name;
-    protected $posixAccountsType = PosixAccount::class;
-    protected $posixAccountsDataType = 'array';
-    protected $sshPublicKeysType = SshPublicKey::class;
-    protected $sshPublicKeysDataType = 'map';
-    /**
-     * Required. A unique user ID.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CloudOSLogin {
+    class LoginProfile extends \Google\Collection
     {
+        protected $collection_key = 'posixAccounts';
+        /**
+         * Required. A unique user ID.
+         *
+         * @var string
+         */
+        public $name;
+        protected $posixAccountsType = PosixAccount::class;
+        protected $posixAccountsDataType = 'array';
+        protected $sshPublicKeysType = SshPublicKey::class;
+        protected $sshPublicKeysDataType = 'map';
+        /**
+         * Required. A unique user ID.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The list of POSIX accounts associated with the user.
+         *
+         * @param PosixAccount[] $posixAccounts
+         */
+        public function setPosixAccounts($posixAccounts)
+        {
+        }
+        /**
+         * @return PosixAccount[]
+         */
+        public function getPosixAccounts()
+        {
+        }
+        /**
+         * A map from SSH public key fingerprint to the associated key object.
+         *
+         * @param SshPublicKey[] $sshPublicKeys
+         */
+        public function setSshPublicKeys($sshPublicKeys)
+        {
+        }
+        /**
+         * @return SshPublicKey[]
+         */
+        public function getSshPublicKeys()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudOSLogin\LoginProfile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The list of POSIX accounts associated with the user.
-     *
-     * @param PosixAccount[] $posixAccounts
-     */
-    public function setPosixAccounts($posixAccounts)
-    {
-    }
-    /**
-     * @return PosixAccount[]
-     */
-    public function getPosixAccounts()
-    {
-    }
-    /**
-     * A map from SSH public key fingerprint to the associated key object.
-     *
-     * @param SshPublicKey[] $sshPublicKeys
-     */
-    public function setSshPublicKeys($sshPublicKeys)
-    {
-    }
-    /**
-     * @return SshPublicKey[]
-     */
-    public function getSshPublicKeys()
+    class Google_Service_CloudOSLogin_LoginProfile extends \Google\Service\CloudOSLogin\LoginProfile
     {
     }
 }

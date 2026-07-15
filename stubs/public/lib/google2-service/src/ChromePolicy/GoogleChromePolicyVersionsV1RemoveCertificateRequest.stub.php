@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1RemoveCertificateRequest extends \Google\Model
-{
-    /**
-     * Required. The GUID of the certificate to remove.
-     *
-     * @var string
-     */
-    public $networkId;
-    /**
-     * Required. The target resource on which this certificate will be removed.
-     * The following resources are supported: * Organizational Unit
-     * ("orgunits/{orgunit_id}")
-     *
-     * @var string
-     */
-    public $targetResource;
-    /**
-     * Required. The GUID of the certificate to remove.
-     *
-     * @param string $networkId
-     */
-    public function setNetworkId($networkId)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1RemoveCertificateRequest extends \Google\Model
     {
+        /**
+         * Required. The GUID of the certificate to remove.
+         *
+         * @var string
+         */
+        public $networkId;
+        /**
+         * Required. The target resource on which this certificate will be removed.
+         * The following resources are supported: * Organizational Unit
+         * ("orgunits/{orgunit_id}")
+         *
+         * @var string
+         */
+        public $targetResource;
+        /**
+         * Required. The GUID of the certificate to remove.
+         *
+         * @param string $networkId
+         */
+        public function setNetworkId($networkId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkId()
+        {
+        }
+        /**
+         * Required. The target resource on which this certificate will be removed.
+         * The following resources are supported: * Organizational Unit
+         * ("orgunits/{orgunit_id}")
+         *
+         * @param string $targetResource
+         */
+        public function setTargetResource($targetResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1RemoveCertificateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkId()
-    {
-    }
-    /**
-     * Required. The target resource on which this certificate will be removed.
-     * The following resources are supported: * Organizational Unit
-     * ("orgunits/{orgunit_id}")
-     *
-     * @param string $targetResource
-     */
-    public function setTargetResource($targetResource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetResource()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1RemoveCertificateRequest extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1RemoveCertificateRequest
     {
     }
 }

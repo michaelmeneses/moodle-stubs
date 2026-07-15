@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2TransformationConfig extends \Google\Model
-{
-    /**
-     * De-identify template. If this template is specified, it will serve as the
-     * default de-identify template. This template cannot contain
-     * `record_transformations` since it can be used for unstructured content such
-     * as free-form text files. If this template is not set, a default
-     * `ReplaceWithInfoTypeConfig` will be used to de-identify unstructured
-     * content.
-     *
-     * @var string
-     */
-    public $deidentifyTemplate;
-    /**
-     * Image redact template. If this template is specified, it will serve as the
-     * de-identify template for images. If this template is not set, all findings
-     * in the image will be redacted with a black box.
-     *
-     * @var string
-     */
-    public $imageRedactTemplate;
-    /**
-     * Structured de-identify template. If this template is specified, it will
-     * serve as the de-identify template for structured content such as delimited
-     * files and tables. If this template is not set but the `deidentify_template`
-     * is set, then `deidentify_template` will also apply to the structured
-     * content. If neither template is set, a default `ReplaceWithInfoTypeConfig`
-     * will be used to de-identify structured content.
-     *
-     * @var string
-     */
-    public $structuredDeidentifyTemplate;
-    /**
-     * De-identify template. If this template is specified, it will serve as the
-     * default de-identify template. This template cannot contain
-     * `record_transformations` since it can be used for unstructured content such
-     * as free-form text files. If this template is not set, a default
-     * `ReplaceWithInfoTypeConfig` will be used to de-identify unstructured
-     * content.
-     *
-     * @param string $deidentifyTemplate
-     */
-    public function setDeidentifyTemplate($deidentifyTemplate)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2TransformationConfig extends \Google\Model
     {
+        /**
+         * De-identify template. If this template is specified, it will serve as the
+         * default de-identify template. This template cannot contain
+         * `record_transformations` since it can be used for unstructured content such
+         * as free-form text files. If this template is not set, a default
+         * `ReplaceWithInfoTypeConfig` will be used to de-identify unstructured
+         * content.
+         *
+         * @var string
+         */
+        public $deidentifyTemplate;
+        /**
+         * Image redact template. If this template is specified, it will serve as the
+         * de-identify template for images. If this template is not set, all findings
+         * in the image will be redacted with a black box.
+         *
+         * @var string
+         */
+        public $imageRedactTemplate;
+        /**
+         * Structured de-identify template. If this template is specified, it will
+         * serve as the de-identify template for structured content such as delimited
+         * files and tables. If this template is not set but the `deidentify_template`
+         * is set, then `deidentify_template` will also apply to the structured
+         * content. If neither template is set, a default `ReplaceWithInfoTypeConfig`
+         * will be used to de-identify structured content.
+         *
+         * @var string
+         */
+        public $structuredDeidentifyTemplate;
+        /**
+         * De-identify template. If this template is specified, it will serve as the
+         * default de-identify template. This template cannot contain
+         * `record_transformations` since it can be used for unstructured content such
+         * as free-form text files. If this template is not set, a default
+         * `ReplaceWithInfoTypeConfig` will be used to de-identify unstructured
+         * content.
+         *
+         * @param string $deidentifyTemplate
+         */
+        public function setDeidentifyTemplate($deidentifyTemplate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeidentifyTemplate()
+        {
+        }
+        /**
+         * Image redact template. If this template is specified, it will serve as the
+         * de-identify template for images. If this template is not set, all findings
+         * in the image will be redacted with a black box.
+         *
+         * @param string $imageRedactTemplate
+         */
+        public function setImageRedactTemplate($imageRedactTemplate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageRedactTemplate()
+        {
+        }
+        /**
+         * Structured de-identify template. If this template is specified, it will
+         * serve as the de-identify template for structured content such as delimited
+         * files and tables. If this template is not set but the `deidentify_template`
+         * is set, then `deidentify_template` will also apply to the structured
+         * content. If neither template is set, a default `ReplaceWithInfoTypeConfig`
+         * will be used to de-identify structured content.
+         *
+         * @param string $structuredDeidentifyTemplate
+         */
+        public function setStructuredDeidentifyTemplate($structuredDeidentifyTemplate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStructuredDeidentifyTemplate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2TransformationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeidentifyTemplate()
-    {
-    }
-    /**
-     * Image redact template. If this template is specified, it will serve as the
-     * de-identify template for images. If this template is not set, all findings
-     * in the image will be redacted with a black box.
-     *
-     * @param string $imageRedactTemplate
-     */
-    public function setImageRedactTemplate($imageRedactTemplate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageRedactTemplate()
-    {
-    }
-    /**
-     * Structured de-identify template. If this template is specified, it will
-     * serve as the de-identify template for structured content such as delimited
-     * files and tables. If this template is not set but the `deidentify_template`
-     * is set, then `deidentify_template` will also apply to the structured
-     * content. If neither template is set, a default `ReplaceWithInfoTypeConfig`
-     * will be used to de-identify structured content.
-     *
-     * @param string $structuredDeidentifyTemplate
-     */
-    public function setStructuredDeidentifyTemplate($structuredDeidentifyTemplate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStructuredDeidentifyTemplate()
+    class Google_Service_DLP_GooglePrivacyDlpV2TransformationConfig extends \Google\Service\DLP\GooglePrivacyDlpV2TransformationConfig
     {
     }
 }

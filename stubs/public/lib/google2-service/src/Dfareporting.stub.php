@@ -21,107 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Dfareporting (v5).
- *
- * <p>
- * Build applications to efficiently manage large or complex trafficking,
- * reporting, and attribution workflows for Campaign Manager 360.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/doubleclick-advertisers/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Dfareporting extends \Google\Service
-{
-    /** Manage DoubleClick Digital Marketing conversions. */
-    const DDMCONVERSIONS = "https://www.googleapis.com/auth/ddmconversions";
-    /** View and manage DoubleClick for Advertisers reports. */
-    const DFAREPORTING = "https://www.googleapis.com/auth/dfareporting";
-    /** View and manage your DoubleClick Campaign Manager's (DCM) display ad campaigns. */
-    const DFATRAFFICKING = "https://www.googleapis.com/auth/dfatrafficking";
-    public $accountActiveAdSummaries;
-    public $accountPermissionGroups;
-    public $accountPermissions;
-    public $accountUserProfiles;
-    public $accounts;
-    public $ads;
-    public $advertiserGroups;
-    public $advertiserInvoices;
-    public $advertiserLandingPages;
-    public $advertisers;
-    public $billingAssignments;
-    public $billingProfiles;
-    public $billingRates;
-    public $browsers;
-    public $campaignCreativeAssociations;
-    public $campaigns;
-    public $changeLogs;
-    public $cities;
-    public $connectionTypes;
-    public $contentCategories;
-    public $conversions;
-    public $countries;
-    public $creativeAssets;
-    public $creativeFieldValues;
-    public $creativeFields;
-    public $creativeGroups;
-    public $creatives;
-    public $dimensionValues;
-    public $directorySites;
-    public $dynamicFeeds;
-    public $dynamicProfiles;
-    public $dynamicTargetingKeys;
-    public $eventTags;
-    public $files;
-    public $floodlightActivities;
-    public $floodlightActivityGroups;
-    public $floodlightConfigurations;
-    public $languages;
-    public $metros;
-    public $mobileApps;
-    public $mobileCarriers;
-    public $operatingSystemVersions;
-    public $operatingSystems;
-    public $placementGroups;
-    public $placementStrategies;
-    public $placements;
-    public $platformTypes;
-    public $postalCodes;
-    public $regions;
-    public $remarketingListShares;
-    public $remarketingLists;
-    public $reports;
-    public $reports_compatibleFields;
-    public $reports_files;
-    public $sites;
-    public $sizes;
-    public $studioCreativeAssets;
-    public $studioCreatives;
-    public $subaccounts;
-    public $targetableRemarketingLists;
-    public $targetingTemplates;
-    public $tvCampaignDetails;
-    public $tvCampaignSummaries;
-    public $userProfiles;
-    public $userRolePermissionGroups;
-    public $userRolePermissions;
-    public $userRoles;
-    public $videoFormats;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Dfareporting service.
+     * Service definition for Dfareporting (v5).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Build applications to efficiently manage large or complex trafficking,
+     * reporting, and attribution workflows for Campaign Manager 360.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/doubleclick-advertisers/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Dfareporting extends \Google\Service
+    {
+        /** Manage DoubleClick Digital Marketing conversions. */
+        const DDMCONVERSIONS = "https://www.googleapis.com/auth/ddmconversions";
+        /** View and manage DoubleClick for Advertisers reports. */
+        const DFAREPORTING = "https://www.googleapis.com/auth/dfareporting";
+        /** View and manage your DoubleClick Campaign Manager's (DCM) display ad campaigns. */
+        const DFATRAFFICKING = "https://www.googleapis.com/auth/dfatrafficking";
+        public $accountActiveAdSummaries;
+        public $accountPermissionGroups;
+        public $accountPermissions;
+        public $accountUserProfiles;
+        public $accounts;
+        public $ads;
+        public $advertiserGroups;
+        public $advertiserInvoices;
+        public $advertiserLandingPages;
+        public $advertisers;
+        public $billingAssignments;
+        public $billingProfiles;
+        public $billingRates;
+        public $browsers;
+        public $campaignCreativeAssociations;
+        public $campaigns;
+        public $changeLogs;
+        public $cities;
+        public $connectionTypes;
+        public $contentCategories;
+        public $conversions;
+        public $countries;
+        public $creativeAssets;
+        public $creativeFieldValues;
+        public $creativeFields;
+        public $creativeGroups;
+        public $creatives;
+        public $dimensionValues;
+        public $directorySites;
+        public $dynamicFeeds;
+        public $dynamicProfiles;
+        public $dynamicTargetingKeys;
+        public $eventTags;
+        public $files;
+        public $floodlightActivities;
+        public $floodlightActivityGroups;
+        public $floodlightConfigurations;
+        public $languages;
+        public $metros;
+        public $mobileApps;
+        public $mobileCarriers;
+        public $operatingSystemVersions;
+        public $operatingSystems;
+        public $placementGroups;
+        public $placementStrategies;
+        public $placements;
+        public $platformTypes;
+        public $postalCodes;
+        public $regions;
+        public $remarketingListShares;
+        public $remarketingLists;
+        public $reports;
+        public $reports_compatibleFields;
+        public $reports_files;
+        public $sites;
+        public $sizes;
+        public $studioCreativeAssets;
+        public $studioCreatives;
+        public $subaccounts;
+        public $targetableRemarketingLists;
+        public $targetingTemplates;
+        public $tvCampaignDetails;
+        public $tvCampaignSummaries;
+        public $userProfiles;
+        public $userRolePermissionGroups;
+        public $userRolePermissions;
+        public $userRoles;
+        public $videoFormats;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Dfareporting service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dfareporting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dfareporting extends \Google\Service\Dfareporting
     {
     }
 }

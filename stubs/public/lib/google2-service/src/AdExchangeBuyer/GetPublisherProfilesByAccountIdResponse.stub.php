@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class GetPublisherProfilesByAccountIdResponse extends \Google\Collection
-{
-    protected $collection_key = 'profiles';
-    protected $profilesType = PublisherProfileApiProto::class;
-    protected $profilesDataType = 'array';
-    /**
-     * @param PublisherProfileApiProto[]
-     */
-    public function setProfiles($profiles)
+namespace Google\Service\AdExchangeBuyer {
+    class GetPublisherProfilesByAccountIdResponse extends \Google\Collection
     {
+        protected $collection_key = 'profiles';
+        protected $profilesType = PublisherProfileApiProto::class;
+        protected $profilesDataType = 'array';
+        /**
+         * @param PublisherProfileApiProto[]
+         */
+        public function setProfiles($profiles)
+        {
+        }
+        /**
+         * @return PublisherProfileApiProto[]
+         */
+        public function getProfiles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PublisherProfileApiProto[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\GetPublisherProfilesByAccountIdResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProfiles()
+    class Google_Service_AdExchangeBuyer_GetPublisherProfilesByAccountIdResponse extends \Google\Service\AdExchangeBuyer\GetPublisherProfilesByAccountIdResponse
     {
     }
 }

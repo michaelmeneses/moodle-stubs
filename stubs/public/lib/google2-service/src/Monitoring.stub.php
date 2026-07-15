@@ -21,57 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Monitoring (v3).
- *
- * <p>
- * Manages your Cloud Monitoring data and configurations.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/monitoring/api/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Monitoring extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    /** View and write monitoring data for all of your Google and third-party Cloud and API projects. */
-    const MONITORING = "https://www.googleapis.com/auth/monitoring";
-    /** View monitoring data for all of your Google Cloud and third-party projects. */
-    const MONITORING_READ = "https://www.googleapis.com/auth/monitoring.read";
-    /** Publish metric data to your Google Cloud projects. */
-    const MONITORING_WRITE = "https://www.googleapis.com/auth/monitoring.write";
-    public $folders_timeSeries;
-    public $organizations_timeSeries;
-    public $projects_alertPolicies;
-    public $projects_alerts;
-    public $projects_collectdTimeSeries;
-    public $projects_groups;
-    public $projects_groups_members;
-    public $projects_metricDescriptors;
-    public $projects_monitoredResourceDescriptors;
-    public $projects_notificationChannelDescriptors;
-    public $projects_notificationChannels;
-    public $projects_snoozes;
-    public $projects_timeSeries;
-    public $projects_uptimeCheckConfigs;
-    public $services;
-    public $services_serviceLevelObjectives;
-    public $uptimeCheckIps;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Monitoring service.
+     * Service definition for Monitoring (v3).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Manages your Cloud Monitoring data and configurations.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/monitoring/api/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Monitoring extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        /** View and write monitoring data for all of your Google and third-party Cloud and API projects. */
+        const MONITORING = "https://www.googleapis.com/auth/monitoring";
+        /** View monitoring data for all of your Google Cloud and third-party projects. */
+        const MONITORING_READ = "https://www.googleapis.com/auth/monitoring.read";
+        /** Publish metric data to your Google Cloud projects. */
+        const MONITORING_WRITE = "https://www.googleapis.com/auth/monitoring.write";
+        public $folders_timeSeries;
+        public $organizations_timeSeries;
+        public $projects_alertPolicies;
+        public $projects_alerts;
+        public $projects_collectdTimeSeries;
+        public $projects_groups;
+        public $projects_groups_members;
+        public $projects_metricDescriptors;
+        public $projects_monitoredResourceDescriptors;
+        public $projects_notificationChannelDescriptors;
+        public $projects_notificationChannels;
+        public $projects_snoozes;
+        public $projects_timeSeries;
+        public $projects_uptimeCheckConfigs;
+        public $services;
+        public $services_serviceLevelObjectives;
+        public $uptimeCheckIps;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Monitoring service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Monitoring registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Monitoring extends \Google\Service\Monitoring
     {
     }
 }

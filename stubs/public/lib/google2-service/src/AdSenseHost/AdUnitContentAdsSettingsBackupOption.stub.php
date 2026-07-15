@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSenseHost;
-
-class AdUnitContentAdsSettingsBackupOption extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $color;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $url;
-    /**
-     * @param string
-     */
-    public function setColor($color)
+namespace Google\Service\AdSenseHost {
+    class AdUnitContentAdsSettingsBackupOption extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $color;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @var string
+         */
+        public $url;
+        /**
+         * @param string
+         */
+        public function setColor($color)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getColor()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdSenseHost\AdUnitContentAdsSettingsBackupOption registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColor()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_AdSenseHost_AdUnitContentAdsSettingsBackupOption extends \Google\Service\AdSenseHost\AdUnitContentAdsSettingsBackupOption
     {
     }
 }

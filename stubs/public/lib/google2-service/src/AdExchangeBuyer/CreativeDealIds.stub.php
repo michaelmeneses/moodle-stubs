@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class CreativeDealIds extends \Google\Collection
-{
-    protected $collection_key = 'dealStatuses';
-    protected $dealStatusesType = CreativeDealIdsDealStatuses::class;
-    protected $dealStatusesDataType = 'array';
-    public $kind;
+namespace Google\Service\AdExchangeBuyer {
+    class CreativeDealIds extends \Google\Collection
+    {
+        protected $collection_key = 'dealStatuses';
+        protected $dealStatusesType = CreativeDealIdsDealStatuses::class;
+        protected $dealStatusesDataType = 'array';
+        public $kind;
+        /**
+         * @param CreativeDealIdsDealStatuses[]
+         */
+        public function setDealStatuses($dealStatuses)
+        {
+        }
+        /**
+         * @return CreativeDealIdsDealStatuses[]
+         */
+        public function getDealStatuses()
+        {
+        }
+        public function setKind($kind)
+        {
+        }
+        public function getKind()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param CreativeDealIdsDealStatuses[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\CreativeDealIds registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setDealStatuses($dealStatuses)
-    {
-    }
-    /**
-     * @return CreativeDealIdsDealStatuses[]
-     */
-    public function getDealStatuses()
-    {
-    }
-    public function setKind($kind)
-    {
-    }
-    public function getKind()
+    class Google_Service_AdExchangeBuyer_CreativeDealIds extends \Google\Service\AdExchangeBuyer\CreativeDealIds
     {
     }
 }

@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2Indicator extends \Google\Collection
-{
-    protected $collection_key = 'uris';
-    /**
-     * List of domains associated to the Finding.
-     *
-     * @var string[]
-     */
-    public $domains;
-    /**
-     * The list of IP addresses that are associated with the finding.
-     *
-     * @var string[]
-     */
-    public $ipAddresses;
-    protected $signaturesType = GoogleCloudSecuritycenterV2ProcessSignature::class;
-    protected $signaturesDataType = 'array';
-    /**
-     * The list of URIs associated to the Findings.
-     *
-     * @var string[]
-     */
-    public $uris;
-    /**
-     * List of domains associated to the Finding.
-     *
-     * @param string[] $domains
-     */
-    public function setDomains($domains)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2Indicator extends \Google\Collection
     {
+        protected $collection_key = 'uris';
+        /**
+         * List of domains associated to the Finding.
+         *
+         * @var string[]
+         */
+        public $domains;
+        /**
+         * The list of IP addresses that are associated with the finding.
+         *
+         * @var string[]
+         */
+        public $ipAddresses;
+        protected $signaturesType = GoogleCloudSecuritycenterV2ProcessSignature::class;
+        protected $signaturesDataType = 'array';
+        /**
+         * The list of URIs associated to the Findings.
+         *
+         * @var string[]
+         */
+        public $uris;
+        /**
+         * List of domains associated to the Finding.
+         *
+         * @param string[] $domains
+         */
+        public function setDomains($domains)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDomains()
+        {
+        }
+        /**
+         * The list of IP addresses that are associated with the finding.
+         *
+         * @param string[] $ipAddresses
+         */
+        public function setIpAddresses($ipAddresses)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIpAddresses()
+        {
+        }
+        /**
+         * The list of matched signatures indicating that the given process is present
+         * in the environment.
+         *
+         * @param GoogleCloudSecuritycenterV2ProcessSignature[] $signatures
+         */
+        public function setSignatures($signatures)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2ProcessSignature[]
+         */
+        public function getSignatures()
+        {
+        }
+        /**
+         * The list of URIs associated to the Findings.
+         *
+         * @param string[] $uris
+         */
+        public function setUris($uris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUris()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Indicator registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomains()
-    {
-    }
-    /**
-     * The list of IP addresses that are associated with the finding.
-     *
-     * @param string[] $ipAddresses
-     */
-    public function setIpAddresses($ipAddresses)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIpAddresses()
-    {
-    }
-    /**
-     * The list of matched signatures indicating that the given process is present
-     * in the environment.
-     *
-     * @param GoogleCloudSecuritycenterV2ProcessSignature[] $signatures
-     */
-    public function setSignatures($signatures)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2ProcessSignature[]
-     */
-    public function getSignatures()
-    {
-    }
-    /**
-     * The list of URIs associated to the Findings.
-     *
-     * @param string[] $uris
-     */
-    public function setUris($uris)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUris()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2Indicator extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Indicator
     {
     }
 }

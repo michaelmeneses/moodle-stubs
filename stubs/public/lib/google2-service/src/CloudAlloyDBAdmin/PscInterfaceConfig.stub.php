@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class PscInterfaceConfig extends \Google\Model
-{
-    /**
-     * The network attachment resource created in the consumer network to which
-     * the PSC interface will be linked. This is of the format: "projects/${CONSUM
-     * ER_PROJECT}/regions/${REGION}/networkAttachments/${NETWORK_ATTACHMENT_NAME}
-     * ". The network attachment must be in the same region as the instance.
-     *
-     * @var string
-     */
-    public $networkAttachmentResource;
-    /**
-     * The network attachment resource created in the consumer network to which
-     * the PSC interface will be linked. This is of the format: "projects/${CONSUM
-     * ER_PROJECT}/regions/${REGION}/networkAttachments/${NETWORK_ATTACHMENT_NAME}
-     * ". The network attachment must be in the same region as the instance.
-     *
-     * @param string $networkAttachmentResource
-     */
-    public function setNetworkAttachmentResource($networkAttachmentResource)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class PscInterfaceConfig extends \Google\Model
     {
+        /**
+         * The network attachment resource created in the consumer network to which
+         * the PSC interface will be linked. This is of the format: "projects/${CONSUM
+         * ER_PROJECT}/regions/${REGION}/networkAttachments/${NETWORK_ATTACHMENT_NAME}
+         * ". The network attachment must be in the same region as the instance.
+         *
+         * @var string
+         */
+        public $networkAttachmentResource;
+        /**
+         * The network attachment resource created in the consumer network to which
+         * the PSC interface will be linked. This is of the format: "projects/${CONSUM
+         * ER_PROJECT}/regions/${REGION}/networkAttachments/${NETWORK_ATTACHMENT_NAME}
+         * ". The network attachment must be in the same region as the instance.
+         *
+         * @param string $networkAttachmentResource
+         */
+        public function setNetworkAttachmentResource($networkAttachmentResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkAttachmentResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\PscInterfaceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkAttachmentResource()
+    class Google_Service_CloudAlloyDBAdmin_PscInterfaceConfig extends \Google\Service\CloudAlloyDBAdmin\PscInterfaceConfig
     {
     }
 }

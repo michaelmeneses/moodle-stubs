@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner;
-
-class ClaimDevicesRequest extends \Google\Collection
-{
-    protected $collection_key = 'claims';
-    protected $claimsType = PartnerClaim::class;
-    protected $claimsDataType = 'array';
-    /**
-     * Required. A list of device claims.
-     *
-     * @param PartnerClaim[] $claims
-     */
-    public function setClaims($claims)
+namespace Google\Service\AndroidProvisioningPartner {
+    class ClaimDevicesRequest extends \Google\Collection
     {
+        protected $collection_key = 'claims';
+        protected $claimsType = PartnerClaim::class;
+        protected $claimsDataType = 'array';
+        /**
+         * Required. A list of device claims.
+         *
+         * @param PartnerClaim[] $claims
+         */
+        public function setClaims($claims)
+        {
+        }
+        /**
+         * @return PartnerClaim[]
+         */
+        public function getClaims()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PartnerClaim[]
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\ClaimDevicesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClaims()
+    class Google_Service_AndroidProvisioningPartner_ClaimDevicesRequest extends \Google\Service\AndroidProvisioningPartner\ClaimDevicesRequest
     {
     }
 }

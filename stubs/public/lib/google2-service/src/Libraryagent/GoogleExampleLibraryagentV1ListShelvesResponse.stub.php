@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Libraryagent;
-
-class GoogleExampleLibraryagentV1ListShelvesResponse extends \Google\Collection
-{
-    protected $collection_key = 'shelves';
-    /**
-     * A token to retrieve next page of results. Pass this value in the
-     * ListShelvesRequest.page_token field in the subsequent call to `ListShelves`
-     * method to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $shelvesType = GoogleExampleLibraryagentV1Shelf::class;
-    protected $shelvesDataType = 'array';
-    /**
-     * A token to retrieve next page of results. Pass this value in the
-     * ListShelvesRequest.page_token field in the subsequent call to `ListShelves`
-     * method to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Libraryagent {
+    class GoogleExampleLibraryagentV1ListShelvesResponse extends \Google\Collection
     {
+        protected $collection_key = 'shelves';
+        /**
+         * A token to retrieve next page of results. Pass this value in the
+         * ListShelvesRequest.page_token field in the subsequent call to `ListShelves`
+         * method to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $shelvesType = GoogleExampleLibraryagentV1Shelf::class;
+        protected $shelvesDataType = 'array';
+        /**
+         * A token to retrieve next page of results. Pass this value in the
+         * ListShelvesRequest.page_token field in the subsequent call to `ListShelves`
+         * method to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of shelves.
+         *
+         * @param GoogleExampleLibraryagentV1Shelf[] $shelves
+         */
+        public function setShelves($shelves)
+        {
+        }
+        /**
+         * @return GoogleExampleLibraryagentV1Shelf[]
+         */
+        public function getShelves()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Libraryagent\GoogleExampleLibraryagentV1ListShelvesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of shelves.
-     *
-     * @param GoogleExampleLibraryagentV1Shelf[] $shelves
-     */
-    public function setShelves($shelves)
-    {
-    }
-    /**
-     * @return GoogleExampleLibraryagentV1Shelf[]
-     */
-    public function getShelves()
+    class Google_Service_Libraryagent_GoogleExampleLibraryagentV1ListShelvesResponse extends \Google\Service\Libraryagent\GoogleExampleLibraryagentV1ListShelvesResponse
     {
     }
 }

@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ServiceAttachmentConsumerProjectLimit extends \Google\Model
-{
-    /**
-     * The value of the limit to set. For endpoint_url, the limit should be no
-     * more than 1.
-     *
-     * @var string
-     */
-    public $connectionLimit;
-    /**
-     * The network URL for the network to set the limit for.
-     *
-     * @var string
-     */
-    public $networkUrl;
-    /**
-     * The project id or number for the project to set the limit for.
-     *
-     * @var string
-     */
-    public $projectIdOrNum;
-    /**
-     * The value of the limit to set. For endpoint_url, the limit should be no
-     * more than 1.
-     *
-     * @param string $connectionLimit
-     */
-    public function setConnectionLimit($connectionLimit)
+namespace Google\Service\Compute {
+    class ServiceAttachmentConsumerProjectLimit extends \Google\Model
     {
+        /**
+         * The value of the limit to set. For endpoint_url, the limit should be no
+         * more than 1.
+         *
+         * @var string
+         */
+        public $connectionLimit;
+        /**
+         * The network URL for the network to set the limit for.
+         *
+         * @var string
+         */
+        public $networkUrl;
+        /**
+         * The project id or number for the project to set the limit for.
+         *
+         * @var string
+         */
+        public $projectIdOrNum;
+        /**
+         * The value of the limit to set. For endpoint_url, the limit should be no
+         * more than 1.
+         *
+         * @param string $connectionLimit
+         */
+        public function setConnectionLimit($connectionLimit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConnectionLimit()
+        {
+        }
+        /**
+         * The network URL for the network to set the limit for.
+         *
+         * @param string $networkUrl
+         */
+        public function setNetworkUrl($networkUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkUrl()
+        {
+        }
+        /**
+         * The project id or number for the project to set the limit for.
+         *
+         * @param string $projectIdOrNum
+         */
+        public function setProjectIdOrNum($projectIdOrNum)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectIdOrNum()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\ServiceAttachmentConsumerProjectLimit registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectionLimit()
-    {
-    }
-    /**
-     * The network URL for the network to set the limit for.
-     *
-     * @param string $networkUrl
-     */
-    public function setNetworkUrl($networkUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetworkUrl()
-    {
-    }
-    /**
-     * The project id or number for the project to set the limit for.
-     *
-     * @param string $projectIdOrNum
-     */
-    public function setProjectIdOrNum($projectIdOrNum)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectIdOrNum()
+    class Google_Service_Compute_ServiceAttachmentConsumerProjectLimit extends \Google\Service\Compute\ServiceAttachmentConsumerProjectLimit
     {
     }
 }

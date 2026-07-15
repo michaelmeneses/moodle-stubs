@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccounttaxCustomBatchRequestEntry extends \Google\Model
-{
-    /**
-     * The ID of the account for which to get/update account tax settings.
-     *
-     * @var string
-     */
-    public $accountId;
-    protected $accountTaxType = AccountTax::class;
-    protected $accountTaxDataType = '';
-    /**
-     * An entry ID, unique within the batch request.
-     *
-     * @var string
-     */
-    public $batchId;
-    /**
-     * The ID of the managing account.
-     *
-     * @var string
-     */
-    public $merchantId;
-    /**
-     * The method of the batch entry. Acceptable values are: - "`get`" -
-     * "`update`"
-     *
-     * @var string
-     */
-    public $method;
-    /**
-     * The ID of the account for which to get/update account tax settings.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\ShoppingContent {
+    class AccounttaxCustomBatchRequestEntry extends \Google\Model
     {
+        /**
+         * The ID of the account for which to get/update account tax settings.
+         *
+         * @var string
+         */
+        public $accountId;
+        protected $accountTaxType = AccountTax::class;
+        protected $accountTaxDataType = '';
+        /**
+         * An entry ID, unique within the batch request.
+         *
+         * @var string
+         */
+        public $batchId;
+        /**
+         * The ID of the managing account.
+         *
+         * @var string
+         */
+        public $merchantId;
+        /**
+         * The method of the batch entry. Acceptable values are: - "`get`" -
+         * "`update`"
+         *
+         * @var string
+         */
+        public $method;
+        /**
+         * The ID of the account for which to get/update account tax settings.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * The account tax settings to update. Only defined if the method is `update`.
+         *
+         * @param AccountTax $accountTax
+         */
+        public function setAccountTax(AccountTax $accountTax)
+        {
+        }
+        /**
+         * @return AccountTax
+         */
+        public function getAccountTax()
+        {
+        }
+        /**
+         * An entry ID, unique within the batch request.
+         *
+         * @param string $batchId
+         */
+        public function setBatchId($batchId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBatchId()
+        {
+        }
+        /**
+         * The ID of the managing account.
+         *
+         * @param string $merchantId
+         */
+        public function setMerchantId($merchantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantId()
+        {
+        }
+        /**
+         * The method of the batch entry. Acceptable values are: - "`get`" -
+         * "`update`"
+         *
+         * @param string $method
+         */
+        public function setMethod($method)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMethod()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\AccounttaxCustomBatchRequestEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * The account tax settings to update. Only defined if the method is `update`.
-     *
-     * @param AccountTax $accountTax
-     */
-    public function setAccountTax(AccountTax $accountTax)
-    {
-    }
-    /**
-     * @return AccountTax
-     */
-    public function getAccountTax()
-    {
-    }
-    /**
-     * An entry ID, unique within the batch request.
-     *
-     * @param string $batchId
-     */
-    public function setBatchId($batchId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBatchId()
-    {
-    }
-    /**
-     * The ID of the managing account.
-     *
-     * @param string $merchantId
-     */
-    public function setMerchantId($merchantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantId()
-    {
-    }
-    /**
-     * The method of the batch entry. Acceptable values are: - "`get`" -
-     * "`update`"
-     *
-     * @param string $method
-     */
-    public function setMethod($method)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMethod()
+    class Google_Service_ShoppingContent_AccounttaxCustomBatchRequestEntry extends \Google\Service\ShoppingContent\AccounttaxCustomBatchRequestEntry
     {
     }
 }

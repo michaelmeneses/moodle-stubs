@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1FeedbackConversationInfo extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $questionIndex;
-    /**
-     * @var string
-     */
-    public $session;
-    /**
-     * @param int
-     */
-    public function setQuestionIndex($questionIndex)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1FeedbackConversationInfo extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $questionIndex;
+        /**
+         * @var string
+         */
+        public $session;
+        /**
+         * @param int
+         */
+        public function setQuestionIndex($questionIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getQuestionIndex()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSession($session)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSession()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1FeedbackConversationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQuestionIndex()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSession($session)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSession()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1FeedbackConversationInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1FeedbackConversationInfo
     {
     }
 }

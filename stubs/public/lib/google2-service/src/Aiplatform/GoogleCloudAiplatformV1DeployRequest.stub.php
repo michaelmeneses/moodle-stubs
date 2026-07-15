@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1DeployRequest extends \Google\Model
-{
-    protected $deployConfigType = GoogleCloudAiplatformV1DeployRequestDeployConfig::class;
-    protected $deployConfigDataType = '';
-    protected $endpointConfigType = GoogleCloudAiplatformV1DeployRequestEndpointConfig::class;
-    protected $endpointConfigDataType = '';
-    /**
-     * The Hugging Face model to deploy. Format: Hugging Face model ID like
-     * `google/gemma-2-2b-it`.
-     *
-     * @var string
-     */
-    public $huggingFaceModelId;
-    protected $modelConfigType = GoogleCloudAiplatformV1DeployRequestModelConfig::class;
-    protected $modelConfigDataType = '';
-    /**
-     * The Model Garden model to deploy. Format:
-     * `publishers/{publisher}/models/{publisher_model}@{version_id}`, or
-     * `publishers/hf-{hugging-face-author}/models/{hugging-face-model-name}@001`.
-     *
-     * @var string
-     */
-    public $publisherModelName;
-    /**
-     * Optional. The deploy config to use for the deployment. If not specified,
-     * the default deploy config will be used.
-     *
-     * @param GoogleCloudAiplatformV1DeployRequestDeployConfig $deployConfig
-     */
-    public function setDeployConfig(GoogleCloudAiplatformV1DeployRequestDeployConfig $deployConfig)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1DeployRequest extends \Google\Model
     {
+        protected $deployConfigType = GoogleCloudAiplatformV1DeployRequestDeployConfig::class;
+        protected $deployConfigDataType = '';
+        protected $endpointConfigType = GoogleCloudAiplatformV1DeployRequestEndpointConfig::class;
+        protected $endpointConfigDataType = '';
+        /**
+         * The Hugging Face model to deploy. Format: Hugging Face model ID like
+         * `google/gemma-2-2b-it`.
+         *
+         * @var string
+         */
+        public $huggingFaceModelId;
+        protected $modelConfigType = GoogleCloudAiplatformV1DeployRequestModelConfig::class;
+        protected $modelConfigDataType = '';
+        /**
+         * The Model Garden model to deploy. Format:
+         * `publishers/{publisher}/models/{publisher_model}@{version_id}`, or
+         * `publishers/hf-{hugging-face-author}/models/{hugging-face-model-name}@001`.
+         *
+         * @var string
+         */
+        public $publisherModelName;
+        /**
+         * Optional. The deploy config to use for the deployment. If not specified,
+         * the default deploy config will be used.
+         *
+         * @param GoogleCloudAiplatformV1DeployRequestDeployConfig $deployConfig
+         */
+        public function setDeployConfig(GoogleCloudAiplatformV1DeployRequestDeployConfig $deployConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DeployRequestDeployConfig
+         */
+        public function getDeployConfig()
+        {
+        }
+        /**
+         * Optional. The endpoint config to use for the deployment. If not specified,
+         * the default endpoint config will be used.
+         *
+         * @param GoogleCloudAiplatformV1DeployRequestEndpointConfig $endpointConfig
+         */
+        public function setEndpointConfig(GoogleCloudAiplatformV1DeployRequestEndpointConfig $endpointConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DeployRequestEndpointConfig
+         */
+        public function getEndpointConfig()
+        {
+        }
+        /**
+         * The Hugging Face model to deploy. Format: Hugging Face model ID like
+         * `google/gemma-2-2b-it`.
+         *
+         * @param string $huggingFaceModelId
+         */
+        public function setHuggingFaceModelId($huggingFaceModelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHuggingFaceModelId()
+        {
+        }
+        /**
+         * Optional. The model config to use for the deployment. If not specified, the
+         * default model config will be used.
+         *
+         * @param GoogleCloudAiplatformV1DeployRequestModelConfig $modelConfig
+         */
+        public function setModelConfig(GoogleCloudAiplatformV1DeployRequestModelConfig $modelConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DeployRequestModelConfig
+         */
+        public function getModelConfig()
+        {
+        }
+        /**
+         * The Model Garden model to deploy. Format:
+         * `publishers/{publisher}/models/{publisher_model}@{version_id}`, or
+         * `publishers/hf-{hugging-face-author}/models/{hugging-face-model-name}@001`.
+         *
+         * @param string $publisherModelName
+         */
+        public function setPublisherModelName($publisherModelName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublisherModelName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1DeployRequestDeployConfig
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1DeployRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployConfig()
-    {
-    }
-    /**
-     * Optional. The endpoint config to use for the deployment. If not specified,
-     * the default endpoint config will be used.
-     *
-     * @param GoogleCloudAiplatformV1DeployRequestEndpointConfig $endpointConfig
-     */
-    public function setEndpointConfig(GoogleCloudAiplatformV1DeployRequestEndpointConfig $endpointConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1DeployRequestEndpointConfig
-     */
-    public function getEndpointConfig()
-    {
-    }
-    /**
-     * The Hugging Face model to deploy. Format: Hugging Face model ID like
-     * `google/gemma-2-2b-it`.
-     *
-     * @param string $huggingFaceModelId
-     */
-    public function setHuggingFaceModelId($huggingFaceModelId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHuggingFaceModelId()
-    {
-    }
-    /**
-     * Optional. The model config to use for the deployment. If not specified, the
-     * default model config will be used.
-     *
-     * @param GoogleCloudAiplatformV1DeployRequestModelConfig $modelConfig
-     */
-    public function setModelConfig(GoogleCloudAiplatformV1DeployRequestModelConfig $modelConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1DeployRequestModelConfig
-     */
-    public function getModelConfig()
-    {
-    }
-    /**
-     * The Model Garden model to deploy. Format:
-     * `publishers/{publisher}/models/{publisher_model}@{version_id}`, or
-     * `publishers/hf-{hugging-face-author}/models/{hugging-face-model-name}@001`.
-     *
-     * @param string $publisherModelName
-     */
-    public function setPublisherModelName($publisherModelName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublisherModelName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1DeployRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1DeployRequest
     {
     }
 }

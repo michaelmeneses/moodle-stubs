@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSlashCommandMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $argumentsHint;
-    /**
-     * @var string
-     */
-    public $commandId;
-    /**
-     * @var string
-     */
-    public $commandName;
-    protected $idType = AppsDynamiteUserId::class;
-    protected $idDataType = '';
-    /**
-     * @var bool
-     */
-    public $triggersDialog;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string
-     */
-    public function setArgumentsHint($argumentsHint)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSlashCommandMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $argumentsHint;
+        /**
+         * @var string
+         */
+        public $commandId;
+        /**
+         * @var string
+         */
+        public $commandName;
+        protected $idType = AppsDynamiteUserId::class;
+        protected $idDataType = '';
+        /**
+         * @var bool
+         */
+        public $triggersDialog;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string
+         */
+        public function setArgumentsHint($argumentsHint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArgumentsHint()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCommandId($commandId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommandId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCommandName($commandName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommandName()
+        {
+        }
+        /**
+         * @param AppsDynamiteUserId
+         */
+        public function setId(AppsDynamiteUserId $id)
+        {
+        }
+        /**
+         * @return AppsDynamiteUserId
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setTriggersDialog($triggersDialog)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTriggersDialog()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSlashCommandMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArgumentsHint()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCommandId($commandId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCommandId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCommandName($commandName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCommandName()
-    {
-    }
-    /**
-     * @param AppsDynamiteUserId
-     */
-    public function setId(AppsDynamiteUserId $id)
-    {
-    }
-    /**
-     * @return AppsDynamiteUserId
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setTriggersDialog($triggersDialog)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTriggersDialog()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudSearch_AppsDynamiteSlashCommandMetadata extends \Google\Service\CloudSearch\AppsDynamiteSlashCommandMetadata
     {
     }
 }

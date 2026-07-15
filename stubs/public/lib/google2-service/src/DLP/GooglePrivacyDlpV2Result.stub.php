@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2Result extends \Google\Collection
-{
-    protected $collection_key = 'infoTypeStats';
-    protected $hybridStatsType = GooglePrivacyDlpV2HybridInspectStatistics::class;
-    protected $hybridStatsDataType = '';
-    protected $infoTypeStatsType = GooglePrivacyDlpV2InfoTypeStats::class;
-    protected $infoTypeStatsDataType = 'array';
-    /**
-     * Number of rows scanned after sampling and time filtering (applicable for
-     * row based stores such as BigQuery).
-     *
-     * @var string
-     */
-    public $numRowsProcessed;
-    /**
-     * Total size in bytes that were processed.
-     *
-     * @var string
-     */
-    public $processedBytes;
-    /**
-     * Estimate of the number of bytes to process.
-     *
-     * @var string
-     */
-    public $totalEstimatedBytes;
-    /**
-     * Statistics related to the processing of hybrid inspect.
-     *
-     * @param GooglePrivacyDlpV2HybridInspectStatistics $hybridStats
-     */
-    public function setHybridStats(GooglePrivacyDlpV2HybridInspectStatistics $hybridStats)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2Result extends \Google\Collection
     {
+        protected $collection_key = 'infoTypeStats';
+        protected $hybridStatsType = GooglePrivacyDlpV2HybridInspectStatistics::class;
+        protected $hybridStatsDataType = '';
+        protected $infoTypeStatsType = GooglePrivacyDlpV2InfoTypeStats::class;
+        protected $infoTypeStatsDataType = 'array';
+        /**
+         * Number of rows scanned after sampling and time filtering (applicable for
+         * row based stores such as BigQuery).
+         *
+         * @var string
+         */
+        public $numRowsProcessed;
+        /**
+         * Total size in bytes that were processed.
+         *
+         * @var string
+         */
+        public $processedBytes;
+        /**
+         * Estimate of the number of bytes to process.
+         *
+         * @var string
+         */
+        public $totalEstimatedBytes;
+        /**
+         * Statistics related to the processing of hybrid inspect.
+         *
+         * @param GooglePrivacyDlpV2HybridInspectStatistics $hybridStats
+         */
+        public function setHybridStats(GooglePrivacyDlpV2HybridInspectStatistics $hybridStats)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2HybridInspectStatistics
+         */
+        public function getHybridStats()
+        {
+        }
+        /**
+         * Statistics of how many instances of each info type were found during
+         * inspect job.
+         *
+         * @param GooglePrivacyDlpV2InfoTypeStats[] $infoTypeStats
+         */
+        public function setInfoTypeStats($infoTypeStats)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InfoTypeStats[]
+         */
+        public function getInfoTypeStats()
+        {
+        }
+        /**
+         * Number of rows scanned after sampling and time filtering (applicable for
+         * row based stores such as BigQuery).
+         *
+         * @param string $numRowsProcessed
+         */
+        public function setNumRowsProcessed($numRowsProcessed)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumRowsProcessed()
+        {
+        }
+        /**
+         * Total size in bytes that were processed.
+         *
+         * @param string $processedBytes
+         */
+        public function setProcessedBytes($processedBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProcessedBytes()
+        {
+        }
+        /**
+         * Estimate of the number of bytes to process.
+         *
+         * @param string $totalEstimatedBytes
+         */
+        public function setTotalEstimatedBytes($totalEstimatedBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalEstimatedBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2HybridInspectStatistics
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2Result registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHybridStats()
-    {
-    }
-    /**
-     * Statistics of how many instances of each info type were found during
-     * inspect job.
-     *
-     * @param GooglePrivacyDlpV2InfoTypeStats[] $infoTypeStats
-     */
-    public function setInfoTypeStats($infoTypeStats)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2InfoTypeStats[]
-     */
-    public function getInfoTypeStats()
-    {
-    }
-    /**
-     * Number of rows scanned after sampling and time filtering (applicable for
-     * row based stores such as BigQuery).
-     *
-     * @param string $numRowsProcessed
-     */
-    public function setNumRowsProcessed($numRowsProcessed)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumRowsProcessed()
-    {
-    }
-    /**
-     * Total size in bytes that were processed.
-     *
-     * @param string $processedBytes
-     */
-    public function setProcessedBytes($processedBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProcessedBytes()
-    {
-    }
-    /**
-     * Estimate of the number of bytes to process.
-     *
-     * @param string $totalEstimatedBytes
-     */
-    public function setTotalEstimatedBytes($totalEstimatedBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalEstimatedBytes()
+    class Google_Service_DLP_GooglePrivacyDlpV2Result extends \Google\Service\DLP\GooglePrivacyDlpV2Result
     {
     }
 }

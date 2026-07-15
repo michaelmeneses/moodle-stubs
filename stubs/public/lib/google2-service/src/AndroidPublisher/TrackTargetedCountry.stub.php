@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class TrackTargetedCountry extends \Google\Model
-{
-    /**
-     * The country to target, as a two-letter CLDR code.
-     *
-     * @var string
-     */
-    public $countryCode;
-    /**
-     * The country to target, as a two-letter CLDR code.
-     *
-     * @param string $countryCode
-     */
-    public function setCountryCode($countryCode)
+namespace Google\Service\AndroidPublisher {
+    class TrackTargetedCountry extends \Google\Model
     {
+        /**
+         * The country to target, as a two-letter CLDR code.
+         *
+         * @var string
+         */
+        public $countryCode;
+        /**
+         * The country to target, as a two-letter CLDR code.
+         *
+         * @param string $countryCode
+         */
+        public function setCountryCode($countryCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountryCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\TrackTargetedCountry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountryCode()
+    class Google_Service_AndroidPublisher_TrackTargetedCountry extends \Google\Service\AndroidPublisher\TrackTargetedCountry
     {
     }
 }

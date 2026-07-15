@@ -21,142 +21,151 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataScanEventDataQualityResult extends \Google\Model
-{
-    /**
-     * The score of each column scanned in the data scan job. The key of the map
-     * is the name of the column. The value is the data quality score for the
-     * column.The score ranges between 0, 100 (up to two decimal points).
-     *
-     * @var float[]
-     */
-    public $columnScore;
-    /**
-     * The result of each dimension for data quality result. The key of the map is
-     * the name of the dimension. The value is the bool value depicting whether
-     * the dimension result was pass or not.
-     *
-     * @var bool[]
-     */
-    public $dimensionPassed;
-    /**
-     * The score of each dimension for data quality result. The key of the map is
-     * the name of the dimension. The value is the data quality score for the
-     * dimension.The score ranges between 0, 100 (up to two decimal points).
-     *
-     * @var float[]
-     */
-    public $dimensionScore;
-    /**
-     * Whether the data quality result was pass or not.
-     *
-     * @var bool
-     */
-    public $passed;
-    /**
-     * The count of rows processed in the data scan job.
-     *
-     * @var string
-     */
-    public $rowCount;
-    /**
-     * The table-level data quality score for the data scan job.The data quality
-     * score ranges between 0, 100 (up to two decimal points).
-     *
-     * @var float
-     */
-    public $score;
-    /**
-     * The score of each column scanned in the data scan job. The key of the map
-     * is the name of the column. The value is the data quality score for the
-     * column.The score ranges between 0, 100 (up to two decimal points).
-     *
-     * @param float[] $columnScore
-     */
-    public function setColumnScore($columnScore)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataScanEventDataQualityResult extends \Google\Model
     {
+        /**
+         * The score of each column scanned in the data scan job. The key of the map
+         * is the name of the column. The value is the data quality score for the
+         * column.The score ranges between 0, 100 (up to two decimal points).
+         *
+         * @var float[]
+         */
+        public $columnScore;
+        /**
+         * The result of each dimension for data quality result. The key of the map is
+         * the name of the dimension. The value is the bool value depicting whether
+         * the dimension result was pass or not.
+         *
+         * @var bool[]
+         */
+        public $dimensionPassed;
+        /**
+         * The score of each dimension for data quality result. The key of the map is
+         * the name of the dimension. The value is the data quality score for the
+         * dimension.The score ranges between 0, 100 (up to two decimal points).
+         *
+         * @var float[]
+         */
+        public $dimensionScore;
+        /**
+         * Whether the data quality result was pass or not.
+         *
+         * @var bool
+         */
+        public $passed;
+        /**
+         * The count of rows processed in the data scan job.
+         *
+         * @var string
+         */
+        public $rowCount;
+        /**
+         * The table-level data quality score for the data scan job.The data quality
+         * score ranges between 0, 100 (up to two decimal points).
+         *
+         * @var float
+         */
+        public $score;
+        /**
+         * The score of each column scanned in the data scan job. The key of the map
+         * is the name of the column. The value is the data quality score for the
+         * column.The score ranges between 0, 100 (up to two decimal points).
+         *
+         * @param float[] $columnScore
+         */
+        public function setColumnScore($columnScore)
+        {
+        }
+        /**
+         * @return float[]
+         */
+        public function getColumnScore()
+        {
+        }
+        /**
+         * The result of each dimension for data quality result. The key of the map is
+         * the name of the dimension. The value is the bool value depicting whether
+         * the dimension result was pass or not.
+         *
+         * @param bool[] $dimensionPassed
+         */
+        public function setDimensionPassed($dimensionPassed)
+        {
+        }
+        /**
+         * @return bool[]
+         */
+        public function getDimensionPassed()
+        {
+        }
+        /**
+         * The score of each dimension for data quality result. The key of the map is
+         * the name of the dimension. The value is the data quality score for the
+         * dimension.The score ranges between 0, 100 (up to two decimal points).
+         *
+         * @param float[] $dimensionScore
+         */
+        public function setDimensionScore($dimensionScore)
+        {
+        }
+        /**
+         * @return float[]
+         */
+        public function getDimensionScore()
+        {
+        }
+        /**
+         * Whether the data quality result was pass or not.
+         *
+         * @param bool $passed
+         */
+        public function setPassed($passed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPassed()
+        {
+        }
+        /**
+         * The count of rows processed in the data scan job.
+         *
+         * @param string $rowCount
+         */
+        public function setRowCount($rowCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRowCount()
+        {
+        }
+        /**
+         * The table-level data quality score for the data scan job.The data quality
+         * score ranges between 0, 100 (up to two decimal points).
+         *
+         * @param float $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataScanEventDataQualityResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnScore()
-    {
-    }
-    /**
-     * The result of each dimension for data quality result. The key of the map is
-     * the name of the dimension. The value is the bool value depicting whether
-     * the dimension result was pass or not.
-     *
-     * @param bool[] $dimensionPassed
-     */
-    public function setDimensionPassed($dimensionPassed)
-    {
-    }
-    /**
-     * @return bool[]
-     */
-    public function getDimensionPassed()
-    {
-    }
-    /**
-     * The score of each dimension for data quality result. The key of the map is
-     * the name of the dimension. The value is the data quality score for the
-     * dimension.The score ranges between 0, 100 (up to two decimal points).
-     *
-     * @param float[] $dimensionScore
-     */
-    public function setDimensionScore($dimensionScore)
-    {
-    }
-    /**
-     * @return float[]
-     */
-    public function getDimensionScore()
-    {
-    }
-    /**
-     * Whether the data quality result was pass or not.
-     *
-     * @param bool $passed
-     */
-    public function setPassed($passed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPassed()
-    {
-    }
-    /**
-     * The count of rows processed in the data scan job.
-     *
-     * @param string $rowCount
-     */
-    public function setRowCount($rowCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRowCount()
-    {
-    }
-    /**
-     * The table-level data quality score for the data scan job.The data quality
-     * score ranges between 0, 100 (up to two decimal points).
-     *
-     * @param float $score
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataScanEventDataQualityResult extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataScanEventDataQualityResult
     {
     }
 }

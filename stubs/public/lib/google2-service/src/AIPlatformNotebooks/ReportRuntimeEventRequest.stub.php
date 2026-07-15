@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class ReportRuntimeEventRequest extends \Google\Model
-{
-    protected $eventType = Event::class;
-    protected $eventDataType = '';
-    public $event;
-    /**
-     * @var string
-     */
-    public $vmId;
-    /**
-     * @param Event
-     */
-    public function setEvent(Event $event)
+namespace Google\Service\AIPlatformNotebooks {
+    class ReportRuntimeEventRequest extends \Google\Model
     {
+        protected $eventType = Event::class;
+        protected $eventDataType = '';
+        public $event;
+        /**
+         * @var string
+         */
+        public $vmId;
+        /**
+         * @param Event
+         */
+        public function setEvent(Event $event)
+        {
+        }
+        /**
+         * @return Event
+         */
+        public function getEvent()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVmId($vmId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVmId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Event
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\ReportRuntimeEventRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvent()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVmId($vmId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVmId()
+    class Google_Service_AIPlatformNotebooks_ReportRuntimeEventRequest extends \Google\Service\AIPlatformNotebooks\ReportRuntimeEventRequest
     {
     }
 }

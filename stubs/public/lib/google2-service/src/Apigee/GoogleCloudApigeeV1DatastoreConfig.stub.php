@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1DatastoreConfig extends \Google\Model
-{
-    /**
-     * Name of the Cloud Storage bucket. Required for `gcs` target_type.
-     *
-     * @var string
-     */
-    public $bucketName;
-    /**
-     * BigQuery dataset name Required for `bigquery` target_type.
-     *
-     * @var string
-     */
-    public $datasetName;
-    /**
-     * Path of Cloud Storage bucket Required for `gcs` target_type.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Required. Google Cloud project in which the datastore exists
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Prefix of BigQuery table Required for `bigquery` target_type.
-     *
-     * @var string
-     */
-    public $tablePrefix;
-    /**
-     * Name of the Cloud Storage bucket. Required for `gcs` target_type.
-     *
-     * @param string $bucketName
-     */
-    public function setBucketName($bucketName)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1DatastoreConfig extends \Google\Model
     {
+        /**
+         * Name of the Cloud Storage bucket. Required for `gcs` target_type.
+         *
+         * @var string
+         */
+        public $bucketName;
+        /**
+         * BigQuery dataset name Required for `bigquery` target_type.
+         *
+         * @var string
+         */
+        public $datasetName;
+        /**
+         * Path of Cloud Storage bucket Required for `gcs` target_type.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Required. Google Cloud project in which the datastore exists
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Prefix of BigQuery table Required for `bigquery` target_type.
+         *
+         * @var string
+         */
+        public $tablePrefix;
+        /**
+         * Name of the Cloud Storage bucket. Required for `gcs` target_type.
+         *
+         * @param string $bucketName
+         */
+        public function setBucketName($bucketName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucketName()
+        {
+        }
+        /**
+         * BigQuery dataset name Required for `bigquery` target_type.
+         *
+         * @param string $datasetName
+         */
+        public function setDatasetName($datasetName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatasetName()
+        {
+        }
+        /**
+         * Path of Cloud Storage bucket Required for `gcs` target_type.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Required. Google Cloud project in which the datastore exists
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Prefix of BigQuery table Required for `bigquery` target_type.
+         *
+         * @param string $tablePrefix
+         */
+        public function setTablePrefix($tablePrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTablePrefix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1DatastoreConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucketName()
-    {
-    }
-    /**
-     * BigQuery dataset name Required for `bigquery` target_type.
-     *
-     * @param string $datasetName
-     */
-    public function setDatasetName($datasetName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatasetName()
-    {
-    }
-    /**
-     * Path of Cloud Storage bucket Required for `gcs` target_type.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Required. Google Cloud project in which the datastore exists
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Prefix of BigQuery table Required for `bigquery` target_type.
-     *
-     * @param string $tablePrefix
-     */
-    public function setTablePrefix($tablePrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTablePrefix()
+    class Google_Service_Apigee_GoogleCloudApigeeV1DatastoreConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1DatastoreConfig
     {
     }
 }

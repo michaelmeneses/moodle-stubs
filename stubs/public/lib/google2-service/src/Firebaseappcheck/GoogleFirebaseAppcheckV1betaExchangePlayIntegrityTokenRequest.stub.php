@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1betaExchangePlayIntegrityTokenRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $playIntegrityToken;
-    /**
-     * @param string
-     */
-    public function setPlayIntegrityToken($playIntegrityToken)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1betaExchangePlayIntegrityTokenRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $playIntegrityToken;
+        /**
+         * @param string
+         */
+        public function setPlayIntegrityToken($playIntegrityToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlayIntegrityToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaExchangePlayIntegrityTokenRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlayIntegrityToken()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1betaExchangePlayIntegrityTokenRequest extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaExchangePlayIntegrityTokenRequest
     {
     }
 }

@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class PreState extends \Google\Collection
-{
-    protected $collection_key = 'syncIds';
-    /**
-     * @var string[]
-     */
-    public $labelIds;
-    protected $messageKeyType = MultiKey::class;
-    protected $messageKeyDataType = '';
-    /**
-     * @var string[]
-     */
-    public $syncIds;
-    protected $threadKeyType = MultiKey::class;
-    protected $threadKeyDataType = '';
-    /**
-     * @param string[]
-     */
-    public function setLabelIds($labelIds)
+namespace Google\Service\CloudSearch {
+    class PreState extends \Google\Collection
     {
+        protected $collection_key = 'syncIds';
+        /**
+         * @var string[]
+         */
+        public $labelIds;
+        protected $messageKeyType = MultiKey::class;
+        protected $messageKeyDataType = '';
+        /**
+         * @var string[]
+         */
+        public $syncIds;
+        protected $threadKeyType = MultiKey::class;
+        protected $threadKeyDataType = '';
+        /**
+         * @param string[]
+         */
+        public function setLabelIds($labelIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabelIds()
+        {
+        }
+        /**
+         * @param MultiKey
+         */
+        public function setMessageKey(MultiKey $messageKey)
+        {
+        }
+        /**
+         * @return MultiKey
+         */
+        public function getMessageKey()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setSyncIds($syncIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSyncIds()
+        {
+        }
+        /**
+         * @param MultiKey
+         */
+        public function setThreadKey(MultiKey $threadKey)
+        {
+        }
+        /**
+         * @return MultiKey
+         */
+        public function getThreadKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudSearch\PreState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabelIds()
-    {
-    }
-    /**
-     * @param MultiKey
-     */
-    public function setMessageKey(MultiKey $messageKey)
-    {
-    }
-    /**
-     * @return MultiKey
-     */
-    public function getMessageKey()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setSyncIds($syncIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSyncIds()
-    {
-    }
-    /**
-     * @param MultiKey
-     */
-    public function setThreadKey(MultiKey $threadKey)
-    {
-    }
-    /**
-     * @return MultiKey
-     */
-    public function getThreadKey()
+    class Google_Service_CloudSearch_PreState extends \Google\Service\CloudSearch\PreState
     {
     }
 }

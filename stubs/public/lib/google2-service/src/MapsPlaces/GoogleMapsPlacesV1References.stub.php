@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1References extends \Google\Collection
-{
-    protected $collection_key = 'reviews';
-    /**
-     * @var string[]
-     */
-    public $places;
-    protected $reviewsType = GoogleMapsPlacesV1Review::class;
-    protected $reviewsDataType = 'array';
-    /**
-     * @param string[]
-     */
-    public function setPlaces($places)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1References extends \Google\Collection
     {
+        protected $collection_key = 'reviews';
+        /**
+         * @var string[]
+         */
+        public $places;
+        protected $reviewsType = GoogleMapsPlacesV1Review::class;
+        protected $reviewsDataType = 'array';
+        /**
+         * @param string[]
+         */
+        public function setPlaces($places)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPlaces()
+        {
+        }
+        /**
+         * @param GoogleMapsPlacesV1Review[]
+         */
+        public function setReviews($reviews)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1Review[]
+         */
+        public function getReviews()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1References registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlaces()
-    {
-    }
-    /**
-     * @param GoogleMapsPlacesV1Review[]
-     */
-    public function setReviews($reviews)
-    {
-    }
-    /**
-     * @return GoogleMapsPlacesV1Review[]
-     */
-    public function getReviews()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1References extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1References
     {
     }
 }

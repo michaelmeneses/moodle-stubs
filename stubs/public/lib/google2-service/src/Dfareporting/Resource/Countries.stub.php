@@ -21,39 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "countries" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $countries = $dfareportingService->countries;
- *  </code>
- */
-class Countries extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\CountriesListResponse;
+    use Google\Service\Dfareporting\Country;
     /**
-     * Gets one country by ID. (countries.get)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $dartId Country DART ID.
-     * @param array $optParams Optional parameters.
-     * @return Country
-     * @throws \Google\Service\Exception
+     * The "countries" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $countries = $dfareportingService->countries;
+     *  </code>
      */
-    public function get($profileId, $dartId, $optParams = [])
+    class Countries extends \Google\Service\Resource
     {
+        /**
+         * Gets one country by ID. (countries.get)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $dartId Country DART ID.
+         * @param array $optParams Optional parameters.
+         * @return Country
+         * @throws \Google\Service\Exception
+         */
+        public function get($profileId, $dartId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of countries. (countries.listCountries)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         * @return CountriesListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listCountries($profileId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a list of countries. (countries.listCountries)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     * @return CountriesListResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\Countries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listCountries($profileId, $optParams = [])
+    class Google_Service_Dfareporting_Resource_Countries extends \Google\Service\Dfareporting\Resource\Countries
     {
     }
 }

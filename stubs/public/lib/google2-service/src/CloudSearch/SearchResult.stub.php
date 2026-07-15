@@ -21,117 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SearchResult extends \Google\Collection
-{
-    protected $collection_key = 'clusteredResults';
-    protected $clusteredResultsType = SearchResult::class;
-    protected $clusteredResultsDataType = 'array';
-    protected $debugInfoType = ResultDebugInfo::class;
-    protected $debugInfoDataType = '';
-    protected $metadataType = Metadata::class;
-    protected $metadataDataType = '';
-    protected $snippetType = Snippet::class;
-    protected $snippetDataType = '';
-    /**
-     * Title of the search result.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The URL of the search result. The URL contains a Google redirect to the
-     * actual item. This URL is signed and shouldn't be changed.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * If source is clustered, provide list of clustered results. There will only
-     * be one level of clustered results. If current source is not enabled for
-     * clustering, this field will be empty.
-     *
-     * @param SearchResult[] $clusteredResults
-     */
-    public function setClusteredResults($clusteredResults)
+namespace Google\Service\CloudSearch {
+    class SearchResult extends \Google\Collection
     {
+        protected $collection_key = 'clusteredResults';
+        protected $clusteredResultsType = SearchResult::class;
+        protected $clusteredResultsDataType = 'array';
+        protected $debugInfoType = ResultDebugInfo::class;
+        protected $debugInfoDataType = '';
+        protected $metadataType = Metadata::class;
+        protected $metadataDataType = '';
+        protected $snippetType = Snippet::class;
+        protected $snippetDataType = '';
+        /**
+         * Title of the search result.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The URL of the search result. The URL contains a Google redirect to the
+         * actual item. This URL is signed and shouldn't be changed.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * If source is clustered, provide list of clustered results. There will only
+         * be one level of clustered results. If current source is not enabled for
+         * clustering, this field will be empty.
+         *
+         * @param SearchResult[] $clusteredResults
+         */
+        public function setClusteredResults($clusteredResults)
+        {
+        }
+        /**
+         * @return SearchResult[]
+         */
+        public function getClusteredResults()
+        {
+        }
+        /**
+         * Debugging information about this search result.
+         *
+         * @param ResultDebugInfo $debugInfo
+         */
+        public function setDebugInfo(ResultDebugInfo $debugInfo)
+        {
+        }
+        /**
+         * @return ResultDebugInfo
+         */
+        public function getDebugInfo()
+        {
+        }
+        /**
+         * Metadata of the search result.
+         *
+         * @param Metadata $metadata
+         */
+        public function setMetadata(Metadata $metadata)
+        {
+        }
+        /**
+         * @return Metadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The concatenation of all snippets (summaries) available for this result.
+         *
+         * @param Snippet $snippet
+         */
+        public function setSnippet(Snippet $snippet)
+        {
+        }
+        /**
+         * @return Snippet
+         */
+        public function getSnippet()
+        {
+        }
+        /**
+         * Title of the search result.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * The URL of the search result. The URL contains a Google redirect to the
+         * actual item. This URL is signed and shouldn't be changed.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SearchResult[]
+     * Runtime class alias of \Google\Service\CloudSearch\SearchResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusteredResults()
-    {
-    }
-    /**
-     * Debugging information about this search result.
-     *
-     * @param ResultDebugInfo $debugInfo
-     */
-    public function setDebugInfo(ResultDebugInfo $debugInfo)
-    {
-    }
-    /**
-     * @return ResultDebugInfo
-     */
-    public function getDebugInfo()
-    {
-    }
-    /**
-     * Metadata of the search result.
-     *
-     * @param Metadata $metadata
-     */
-    public function setMetadata(Metadata $metadata)
-    {
-    }
-    /**
-     * @return Metadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The concatenation of all snippets (summaries) available for this result.
-     *
-     * @param Snippet $snippet
-     */
-    public function setSnippet(Snippet $snippet)
-    {
-    }
-    /**
-     * @return Snippet
-     */
-    public function getSnippet()
-    {
-    }
-    /**
-     * Title of the search result.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * The URL of the search result. The URL contains a Google redirect to the
-     * actual item. This URL is signed and shouldn't be changed.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_CloudSearch_SearchResult extends \Google\Service\CloudSearch\SearchResult
     {
     }
 }

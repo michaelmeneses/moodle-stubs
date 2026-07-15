@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course\output;
 
+use core\output\select_menu;
+use core_completion\manager;
+use moodle_url;
+use renderable;
+use renderer_base;
+use templatable;
+use url_select;
 /**
  * Renderable class for the action bar elements in the course completion pages.
  *

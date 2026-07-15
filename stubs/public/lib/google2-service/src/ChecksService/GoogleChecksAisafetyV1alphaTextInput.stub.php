@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksAisafetyV1alphaTextInput extends \Google\Model
-{
-    /**
-     * Actual piece of text to be classified.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * Optional. Language of the text in ISO 639-1 format. If the language is
-     * invalid or not specified, the system will try to detect it.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Actual piece of text to be classified.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\ChecksService {
+    class GoogleChecksAisafetyV1alphaTextInput extends \Google\Model
     {
+        /**
+         * Actual piece of text to be classified.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * Optional. Language of the text in ISO 639-1 format. If the language is
+         * invalid or not specified, the system will try to detect it.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Actual piece of text to be classified.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Optional. Language of the text in ISO 639-1 format. If the language is
+         * invalid or not specified, the system will try to detect it.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksAisafetyV1alphaTextInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * Optional. Language of the text in ISO 639-1 format. If the language is
-     * invalid or not specified, the system will try to detect it.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
+    class Google_Service_ChecksService_GoogleChecksAisafetyV1alphaTextInput extends \Google\Service\ChecksService\GoogleChecksAisafetyV1alphaTextInput
     {
     }
 }

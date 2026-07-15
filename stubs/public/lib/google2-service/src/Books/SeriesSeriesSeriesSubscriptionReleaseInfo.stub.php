@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class SeriesSeriesSeriesSubscriptionReleaseInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $cancelTime;
-    protected $currentReleaseInfoType = SeriesSeriesSeriesSubscriptionReleaseInfoCurrentReleaseInfo::class;
-    protected $currentReleaseInfoDataType = '';
-    protected $nextReleaseInfoType = SeriesSeriesSeriesSubscriptionReleaseInfoNextReleaseInfo::class;
-    protected $nextReleaseInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $seriesSubscriptionType;
-    /**
-     * @param string $cancelTime
-     */
-    public function setCancelTime($cancelTime)
+namespace Google\Service\Books {
+    class SeriesSeriesSeriesSubscriptionReleaseInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $cancelTime;
+        protected $currentReleaseInfoType = SeriesSeriesSeriesSubscriptionReleaseInfoCurrentReleaseInfo::class;
+        protected $currentReleaseInfoDataType = '';
+        protected $nextReleaseInfoType = SeriesSeriesSeriesSubscriptionReleaseInfoNextReleaseInfo::class;
+        protected $nextReleaseInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $seriesSubscriptionType;
+        /**
+         * @param string $cancelTime
+         */
+        public function setCancelTime($cancelTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCancelTime()
+        {
+        }
+        /**
+         * @param SeriesSeriesSeriesSubscriptionReleaseInfoCurrentReleaseInfo $currentReleaseInfo
+         */
+        public function setCurrentReleaseInfo(SeriesSeriesSeriesSubscriptionReleaseInfoCurrentReleaseInfo $currentReleaseInfo)
+        {
+        }
+        /**
+         * @return SeriesSeriesSeriesSubscriptionReleaseInfoCurrentReleaseInfo
+         */
+        public function getCurrentReleaseInfo()
+        {
+        }
+        /**
+         * @param SeriesSeriesSeriesSubscriptionReleaseInfoNextReleaseInfo $nextReleaseInfo
+         */
+        public function setNextReleaseInfo(SeriesSeriesSeriesSubscriptionReleaseInfoNextReleaseInfo $nextReleaseInfo)
+        {
+        }
+        /**
+         * @return SeriesSeriesSeriesSubscriptionReleaseInfoNextReleaseInfo
+         */
+        public function getNextReleaseInfo()
+        {
+        }
+        /**
+         * @param string $seriesSubscriptionType
+         */
+        public function setSeriesSubscriptionType($seriesSubscriptionType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSeriesSubscriptionType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\SeriesSeriesSeriesSubscriptionReleaseInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCancelTime()
-    {
-    }
-    /**
-     * @param SeriesSeriesSeriesSubscriptionReleaseInfoCurrentReleaseInfo $currentReleaseInfo
-     */
-    public function setCurrentReleaseInfo(SeriesSeriesSeriesSubscriptionReleaseInfoCurrentReleaseInfo $currentReleaseInfo)
-    {
-    }
-    /**
-     * @return SeriesSeriesSeriesSubscriptionReleaseInfoCurrentReleaseInfo
-     */
-    public function getCurrentReleaseInfo()
-    {
-    }
-    /**
-     * @param SeriesSeriesSeriesSubscriptionReleaseInfoNextReleaseInfo $nextReleaseInfo
-     */
-    public function setNextReleaseInfo(SeriesSeriesSeriesSubscriptionReleaseInfoNextReleaseInfo $nextReleaseInfo)
-    {
-    }
-    /**
-     * @return SeriesSeriesSeriesSubscriptionReleaseInfoNextReleaseInfo
-     */
-    public function getNextReleaseInfo()
-    {
-    }
-    /**
-     * @param string $seriesSubscriptionType
-     */
-    public function setSeriesSubscriptionType($seriesSubscriptionType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSeriesSubscriptionType()
+    class Google_Service_Books_SeriesSeriesSeriesSubscriptionReleaseInfo extends \Google\Service\Books\SeriesSeriesSeriesSubscriptionReleaseInfo
     {
     }
 }

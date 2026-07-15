@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AlloyDbSource extends \Google\Model
-{
-    /**
-     * Required. The AlloyDB cluster to copy the data from with a length limit of
-     * 256 characters.
-     *
-     * @var string
-     */
-    public $clusterId;
-    /**
-     * Required. The AlloyDB database to copy the data from with a length limit of
-     * 256 characters.
-     *
-     * @var string
-     */
-    public $databaseId;
-    /**
-     * Intermediate Cloud Storage directory used for the import with a length
-     * limit of 2,000 characters. Can be specified if one wants to have the
-     * AlloyDB export to a specific Cloud Storage directory. Ensure that the
-     * AlloyDB service account has the necessary Cloud Storage Admin permissions
-     * to access the specified Cloud Storage directory.
-     *
-     * @var string
-     */
-    public $gcsStagingDir;
-    /**
-     * Required. The AlloyDB location to copy the data from with a length limit of
-     * 256 characters.
-     *
-     * @var string
-     */
-    public $locationId;
-    /**
-     * The project ID that contains the AlloyDB source. Has a length limit of 128
-     * characters. If not specified, inherits the project ID from the parent
-     * request.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Required. The AlloyDB table to copy the data from with a length limit of
-     * 256 characters.
-     *
-     * @var string
-     */
-    public $tableId;
-    /**
-     * Required. The AlloyDB cluster to copy the data from with a length limit of
-     * 256 characters.
-     *
-     * @param string $clusterId
-     */
-    public function setClusterId($clusterId)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AlloyDbSource extends \Google\Model
     {
+        /**
+         * Required. The AlloyDB cluster to copy the data from with a length limit of
+         * 256 characters.
+         *
+         * @var string
+         */
+        public $clusterId;
+        /**
+         * Required. The AlloyDB database to copy the data from with a length limit of
+         * 256 characters.
+         *
+         * @var string
+         */
+        public $databaseId;
+        /**
+         * Intermediate Cloud Storage directory used for the import with a length
+         * limit of 2,000 characters. Can be specified if one wants to have the
+         * AlloyDB export to a specific Cloud Storage directory. Ensure that the
+         * AlloyDB service account has the necessary Cloud Storage Admin permissions
+         * to access the specified Cloud Storage directory.
+         *
+         * @var string
+         */
+        public $gcsStagingDir;
+        /**
+         * Required. The AlloyDB location to copy the data from with a length limit of
+         * 256 characters.
+         *
+         * @var string
+         */
+        public $locationId;
+        /**
+         * The project ID that contains the AlloyDB source. Has a length limit of 128
+         * characters. If not specified, inherits the project ID from the parent
+         * request.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Required. The AlloyDB table to copy the data from with a length limit of
+         * 256 characters.
+         *
+         * @var string
+         */
+        public $tableId;
+        /**
+         * Required. The AlloyDB cluster to copy the data from with a length limit of
+         * 256 characters.
+         *
+         * @param string $clusterId
+         */
+        public function setClusterId($clusterId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterId()
+        {
+        }
+        /**
+         * Required. The AlloyDB database to copy the data from with a length limit of
+         * 256 characters.
+         *
+         * @param string $databaseId
+         */
+        public function setDatabaseId($databaseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabaseId()
+        {
+        }
+        /**
+         * Intermediate Cloud Storage directory used for the import with a length
+         * limit of 2,000 characters. Can be specified if one wants to have the
+         * AlloyDB export to a specific Cloud Storage directory. Ensure that the
+         * AlloyDB service account has the necessary Cloud Storage Admin permissions
+         * to access the specified Cloud Storage directory.
+         *
+         * @param string $gcsStagingDir
+         */
+        public function setGcsStagingDir($gcsStagingDir)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsStagingDir()
+        {
+        }
+        /**
+         * Required. The AlloyDB location to copy the data from with a length limit of
+         * 256 characters.
+         *
+         * @param string $locationId
+         */
+        public function setLocationId($locationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocationId()
+        {
+        }
+        /**
+         * The project ID that contains the AlloyDB source. Has a length limit of 128
+         * characters. If not specified, inherits the project ID from the parent
+         * request.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Required. The AlloyDB table to copy the data from with a length limit of
+         * 256 characters.
+         *
+         * @param string $tableId
+         */
+        public function setTableId($tableId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AlloyDbSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterId()
-    {
-    }
-    /**
-     * Required. The AlloyDB database to copy the data from with a length limit of
-     * 256 characters.
-     *
-     * @param string $databaseId
-     */
-    public function setDatabaseId($databaseId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatabaseId()
-    {
-    }
-    /**
-     * Intermediate Cloud Storage directory used for the import with a length
-     * limit of 2,000 characters. Can be specified if one wants to have the
-     * AlloyDB export to a specific Cloud Storage directory. Ensure that the
-     * AlloyDB service account has the necessary Cloud Storage Admin permissions
-     * to access the specified Cloud Storage directory.
-     *
-     * @param string $gcsStagingDir
-     */
-    public function setGcsStagingDir($gcsStagingDir)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcsStagingDir()
-    {
-    }
-    /**
-     * Required. The AlloyDB location to copy the data from with a length limit of
-     * 256 characters.
-     *
-     * @param string $locationId
-     */
-    public function setLocationId($locationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocationId()
-    {
-    }
-    /**
-     * The project ID that contains the AlloyDB source. Has a length limit of 128
-     * characters. If not specified, inherits the project ID from the parent
-     * request.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Required. The AlloyDB table to copy the data from with a length limit of
-     * 256 characters.
-     *
-     * @param string $tableId
-     */
-    public function setTableId($tableId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableId()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AlloyDbSource extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AlloyDbSource
     {
     }
 }

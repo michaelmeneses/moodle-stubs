@@ -21,21 +21,30 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class DoubleCandidates extends \Google\Collection
-{
-    protected $collection_key = 'candidates';
-    /**
-     * Candidates for the double parameter in increasing order.
-     *
-     * @var []
-     */
-    public $candidates;
-    public function setCandidates($candidates)
+namespace Google\Service\Bigquery {
+    class DoubleCandidates extends \Google\Collection
     {
+        protected $collection_key = 'candidates';
+        /**
+         * Candidates for the double parameter in increasing order.
+         *
+         * @var []
+         */
+        public $candidates;
+        public function setCandidates($candidates)
+        {
+        }
+        public function getCandidates()
+        {
+        }
     }
-    public function getCandidates()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Bigquery\DoubleCandidates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Bigquery_DoubleCandidates extends \Google\Service\Bigquery\DoubleCandidates
     {
     }
 }

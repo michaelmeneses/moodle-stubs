@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class GoogleFirestoreAdminV1ImportDocumentsRequest extends \Google\Collection
-{
-    protected $collection_key = 'namespaceIds';
-    /**
-     * IDs of the collection groups to import. Unspecified means all collection
-     * groups that were included in the export. Each collection group in this list
-     * must be unique.
-     *
-     * @var string[]
-     */
-    public $collectionIds;
-    /**
-     * Location of the exported files. This must match the output_uri_prefix of an
-     * ExportDocumentsResponse from an export that has completed successfully.
-     * See: google.firestore.admin.v1.ExportDocumentsResponse.output_uri_prefix.
-     *
-     * @var string
-     */
-    public $inputUriPrefix;
-    /**
-     * An empty list represents all namespaces. This is the preferred usage for
-     * databases that don't use namespaces. An empty string element represents the
-     * default namespace. This should be used if the database has data in non-
-     * default namespaces, but doesn't want to include them. Each namespace in
-     * this list must be unique.
-     *
-     * @var string[]
-     */
-    public $namespaceIds;
-    /**
-     * IDs of the collection groups to import. Unspecified means all collection
-     * groups that were included in the export. Each collection group in this list
-     * must be unique.
-     *
-     * @param string[] $collectionIds
-     */
-    public function setCollectionIds($collectionIds)
+namespace Google\Service\Firestore {
+    class GoogleFirestoreAdminV1ImportDocumentsRequest extends \Google\Collection
     {
+        protected $collection_key = 'namespaceIds';
+        /**
+         * IDs of the collection groups to import. Unspecified means all collection
+         * groups that were included in the export. Each collection group in this list
+         * must be unique.
+         *
+         * @var string[]
+         */
+        public $collectionIds;
+        /**
+         * Location of the exported files. This must match the output_uri_prefix of an
+         * ExportDocumentsResponse from an export that has completed successfully.
+         * See: google.firestore.admin.v1.ExportDocumentsResponse.output_uri_prefix.
+         *
+         * @var string
+         */
+        public $inputUriPrefix;
+        /**
+         * An empty list represents all namespaces. This is the preferred usage for
+         * databases that don't use namespaces. An empty string element represents the
+         * default namespace. This should be used if the database has data in non-
+         * default namespaces, but doesn't want to include them. Each namespace in
+         * this list must be unique.
+         *
+         * @var string[]
+         */
+        public $namespaceIds;
+        /**
+         * IDs of the collection groups to import. Unspecified means all collection
+         * groups that were included in the export. Each collection group in this list
+         * must be unique.
+         *
+         * @param string[] $collectionIds
+         */
+        public function setCollectionIds($collectionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCollectionIds()
+        {
+        }
+        /**
+         * Location of the exported files. This must match the output_uri_prefix of an
+         * ExportDocumentsResponse from an export that has completed successfully.
+         * See: google.firestore.admin.v1.ExportDocumentsResponse.output_uri_prefix.
+         *
+         * @param string $inputUriPrefix
+         */
+        public function setInputUriPrefix($inputUriPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInputUriPrefix()
+        {
+        }
+        /**
+         * An empty list represents all namespaces. This is the preferred usage for
+         * databases that don't use namespaces. An empty string element represents the
+         * default namespace. This should be used if the database has data in non-
+         * default namespaces, but doesn't want to include them. Each namespace in
+         * this list must be unique.
+         *
+         * @param string[] $namespaceIds
+         */
+        public function setNamespaceIds($namespaceIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNamespaceIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Firestore\GoogleFirestoreAdminV1ImportDocumentsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCollectionIds()
-    {
-    }
-    /**
-     * Location of the exported files. This must match the output_uri_prefix of an
-     * ExportDocumentsResponse from an export that has completed successfully.
-     * See: google.firestore.admin.v1.ExportDocumentsResponse.output_uri_prefix.
-     *
-     * @param string $inputUriPrefix
-     */
-    public function setInputUriPrefix($inputUriPrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInputUriPrefix()
-    {
-    }
-    /**
-     * An empty list represents all namespaces. This is the preferred usage for
-     * databases that don't use namespaces. An empty string element represents the
-     * default namespace. This should be used if the database has data in non-
-     * default namespaces, but doesn't want to include them. Each namespace in
-     * this list must be unique.
-     *
-     * @param string[] $namespaceIds
-     */
-    public function setNamespaceIds($namespaceIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNamespaceIds()
+    class Google_Service_Firestore_GoogleFirestoreAdminV1ImportDocumentsRequest extends \Google\Service\Firestore\GoogleFirestoreAdminV1ImportDocumentsRequest
     {
     }
 }

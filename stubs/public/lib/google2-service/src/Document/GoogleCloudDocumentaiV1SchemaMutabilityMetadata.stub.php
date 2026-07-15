@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1SchemaMutabilityMetadata extends \Google\Collection
-{
-    protected $collection_key = 'processorVersions';
-    /**
-     * @var bool
-     */
-    public $editable;
-    /**
-     * @var string[]
-     */
-    public $processorVersions;
-    /**
-     * @param bool
-     */
-    public function setEditable($editable)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1SchemaMutabilityMetadata extends \Google\Collection
     {
+        protected $collection_key = 'processorVersions';
+        /**
+         * @var bool
+         */
+        public $editable;
+        /**
+         * @var string[]
+         */
+        public $processorVersions;
+        /**
+         * @param bool
+         */
+        public function setEditable($editable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEditable()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setProcessorVersions($processorVersions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProcessorVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1SchemaMutabilityMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEditable()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setProcessorVersions($processorVersions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProcessorVersions()
+    class Google_Service_Document_GoogleCloudDocumentaiV1SchemaMutabilityMetadata extends \Google\Service\Document\GoogleCloudDocumentaiV1SchemaMutabilityMetadata
     {
     }
 }

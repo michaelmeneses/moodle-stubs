@@ -21,135 +21,144 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ArimaForecastingMetrics extends \Google\Collection
-{
-    protected $collection_key = 'timeSeriesId';
-    protected $arimaFittingMetricsType = ArimaFittingMetrics::class;
-    protected $arimaFittingMetricsDataType = 'array';
-    protected $arimaSingleModelForecastingMetricsType = ArimaSingleModelForecastingMetrics::class;
-    protected $arimaSingleModelForecastingMetricsDataType = 'array';
-    /**
-     * Whether Arima model fitted with drift or not. It is always false when d is
-     * not 1.
-     *
-     * @deprecated
-     * @var bool[]
-     */
-    public $hasDrift;
-    protected $nonSeasonalOrderType = ArimaOrder::class;
-    protected $nonSeasonalOrderDataType = 'array';
-    /**
-     * Seasonal periods. Repeated because multiple periods are supported for one
-     * time series.
-     *
-     * @deprecated
-     * @var string[]
-     */
-    public $seasonalPeriods;
-    /**
-     * Id to differentiate different time series for the large-scale case.
-     *
-     * @deprecated
-     * @var string[]
-     */
-    public $timeSeriesId;
-    /**
-     * Arima model fitting metrics.
-     *
-     * @deprecated
-     * @param ArimaFittingMetrics[] $arimaFittingMetrics
-     */
-    public function setArimaFittingMetrics($arimaFittingMetrics)
+namespace Google\Service\Bigquery {
+    class ArimaForecastingMetrics extends \Google\Collection
     {
+        protected $collection_key = 'timeSeriesId';
+        protected $arimaFittingMetricsType = ArimaFittingMetrics::class;
+        protected $arimaFittingMetricsDataType = 'array';
+        protected $arimaSingleModelForecastingMetricsType = ArimaSingleModelForecastingMetrics::class;
+        protected $arimaSingleModelForecastingMetricsDataType = 'array';
+        /**
+         * Whether Arima model fitted with drift or not. It is always false when d is
+         * not 1.
+         *
+         * @deprecated
+         * @var bool[]
+         */
+        public $hasDrift;
+        protected $nonSeasonalOrderType = ArimaOrder::class;
+        protected $nonSeasonalOrderDataType = 'array';
+        /**
+         * Seasonal periods. Repeated because multiple periods are supported for one
+         * time series.
+         *
+         * @deprecated
+         * @var string[]
+         */
+        public $seasonalPeriods;
+        /**
+         * Id to differentiate different time series for the large-scale case.
+         *
+         * @deprecated
+         * @var string[]
+         */
+        public $timeSeriesId;
+        /**
+         * Arima model fitting metrics.
+         *
+         * @deprecated
+         * @param ArimaFittingMetrics[] $arimaFittingMetrics
+         */
+        public function setArimaFittingMetrics($arimaFittingMetrics)
+        {
+        }
+        /**
+         * @deprecated
+         * @return ArimaFittingMetrics[]
+         */
+        public function getArimaFittingMetrics()
+        {
+        }
+        /**
+         * Repeated as there can be many metric sets (one for each model) in auto-
+         * arima and the large-scale case.
+         *
+         * @param ArimaSingleModelForecastingMetrics[] $arimaSingleModelForecastingMetrics
+         */
+        public function setArimaSingleModelForecastingMetrics($arimaSingleModelForecastingMetrics)
+        {
+        }
+        /**
+         * @return ArimaSingleModelForecastingMetrics[]
+         */
+        public function getArimaSingleModelForecastingMetrics()
+        {
+        }
+        /**
+         * Whether Arima model fitted with drift or not. It is always false when d is
+         * not 1.
+         *
+         * @deprecated
+         * @param bool[] $hasDrift
+         */
+        public function setHasDrift($hasDrift)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool[]
+         */
+        public function getHasDrift()
+        {
+        }
+        /**
+         * Non-seasonal order.
+         *
+         * @deprecated
+         * @param ArimaOrder[] $nonSeasonalOrder
+         */
+        public function setNonSeasonalOrder($nonSeasonalOrder)
+        {
+        }
+        /**
+         * @deprecated
+         * @return ArimaOrder[]
+         */
+        public function getNonSeasonalOrder()
+        {
+        }
+        /**
+         * Seasonal periods. Repeated because multiple periods are supported for one
+         * time series.
+         *
+         * @deprecated
+         * @param string[] $seasonalPeriods
+         */
+        public function setSeasonalPeriods($seasonalPeriods)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string[]
+         */
+        public function getSeasonalPeriods()
+        {
+        }
+        /**
+         * Id to differentiate different time series for the large-scale case.
+         *
+         * @deprecated
+         * @param string[] $timeSeriesId
+         */
+        public function setTimeSeriesId($timeSeriesId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string[]
+         */
+        public function getTimeSeriesId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return ArimaFittingMetrics[]
+     * Runtime class alias of \Google\Service\Bigquery\ArimaForecastingMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArimaFittingMetrics()
-    {
-    }
-    /**
-     * Repeated as there can be many metric sets (one for each model) in auto-
-     * arima and the large-scale case.
-     *
-     * @param ArimaSingleModelForecastingMetrics[] $arimaSingleModelForecastingMetrics
-     */
-    public function setArimaSingleModelForecastingMetrics($arimaSingleModelForecastingMetrics)
-    {
-    }
-    /**
-     * @return ArimaSingleModelForecastingMetrics[]
-     */
-    public function getArimaSingleModelForecastingMetrics()
-    {
-    }
-    /**
-     * Whether Arima model fitted with drift or not. It is always false when d is
-     * not 1.
-     *
-     * @deprecated
-     * @param bool[] $hasDrift
-     */
-    public function setHasDrift($hasDrift)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool[]
-     */
-    public function getHasDrift()
-    {
-    }
-    /**
-     * Non-seasonal order.
-     *
-     * @deprecated
-     * @param ArimaOrder[] $nonSeasonalOrder
-     */
-    public function setNonSeasonalOrder($nonSeasonalOrder)
-    {
-    }
-    /**
-     * @deprecated
-     * @return ArimaOrder[]
-     */
-    public function getNonSeasonalOrder()
-    {
-    }
-    /**
-     * Seasonal periods. Repeated because multiple periods are supported for one
-     * time series.
-     *
-     * @deprecated
-     * @param string[] $seasonalPeriods
-     */
-    public function setSeasonalPeriods($seasonalPeriods)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string[]
-     */
-    public function getSeasonalPeriods()
-    {
-    }
-    /**
-     * Id to differentiate different time series for the large-scale case.
-     *
-     * @deprecated
-     * @param string[] $timeSeriesId
-     */
-    public function setTimeSeriesId($timeSeriesId)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string[]
-     */
-    public function getTimeSeriesId()
+    class Google_Service_Bigquery_ArimaForecastingMetrics extends \Google\Service\Bigquery\ArimaForecastingMetrics
     {
     }
 }

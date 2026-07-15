@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1TuneQaScorecardRevisionRequest extends \Google\Model
-{
-    /**
-     * Required. Filter for selecting the feedback labels that needs to be used
-     * for training. This filter can be used to limit the feedback labels used for
-     * tuning to a feedback labels created or updated for a specific time-window
-     * etc.
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * Optional. Run in validate only mode, no fine tuning will actually run. Data
-     * quality validations like training data distributions will run. Even when
-     * set to false, the data quality validations will still run but once the
-     * validations complete we will proceed with the fine tune, if applicable.
-     *
-     * @var bool
-     */
-    public $validateOnly;
-    /**
-     * Required. Filter for selecting the feedback labels that needs to be used
-     * for training. This filter can be used to limit the feedback labels used for
-     * tuning to a feedback labels created or updated for a specific time-window
-     * etc.
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1TuneQaScorecardRevisionRequest extends \Google\Model
     {
+        /**
+         * Required. Filter for selecting the feedback labels that needs to be used
+         * for training. This filter can be used to limit the feedback labels used for
+         * tuning to a feedback labels created or updated for a specific time-window
+         * etc.
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * Optional. Run in validate only mode, no fine tuning will actually run. Data
+         * quality validations like training data distributions will run. Even when
+         * set to false, the data quality validations will still run but once the
+         * validations complete we will proceed with the fine tune, if applicable.
+         *
+         * @var bool
+         */
+        public $validateOnly;
+        /**
+         * Required. Filter for selecting the feedback labels that needs to be used
+         * for training. This filter can be used to limit the feedback labels used for
+         * tuning to a feedback labels created or updated for a specific time-window
+         * etc.
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * Optional. Run in validate only mode, no fine tuning will actually run. Data
+         * quality validations like training data distributions will run. Even when
+         * set to false, the data quality validations will still run but once the
+         * validations complete we will proceed with the fine tune, if applicable.
+         *
+         * @param bool $validateOnly
+         */
+        public function setValidateOnly($validateOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1TuneQaScorecardRevisionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
-    {
-    }
-    /**
-     * Optional. Run in validate only mode, no fine tuning will actually run. Data
-     * quality validations like training data distributions will run. Even when
-     * set to false, the data quality validations will still run but once the
-     * validations complete we will proceed with the fine tune, if applicable.
-     *
-     * @param bool $validateOnly
-     */
-    public function setValidateOnly($validateOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidateOnly()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1TuneQaScorecardRevisionRequest extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1TuneQaScorecardRevisionRequest
     {
     }
 }

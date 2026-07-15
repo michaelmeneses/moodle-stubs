@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class ListMonitoredResourceDescriptorsResponse extends \Google\Collection
-{
-    protected $collection_key = 'resourceDescriptors';
-    /**
-     * If there might be more results than those appearing in this response, then
-     * nextPageToken is included. To get the next set of results, call this method
-     * again using the value of nextPageToken as pageToken.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resourceDescriptorsType = MonitoredResourceDescriptor::class;
-    protected $resourceDescriptorsDataType = 'array';
-    /**
-     * If there might be more results than those appearing in this response, then
-     * nextPageToken is included. To get the next set of results, call this method
-     * again using the value of nextPageToken as pageToken.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Logging {
+    class ListMonitoredResourceDescriptorsResponse extends \Google\Collection
     {
+        protected $collection_key = 'resourceDescriptors';
+        /**
+         * If there might be more results than those appearing in this response, then
+         * nextPageToken is included. To get the next set of results, call this method
+         * again using the value of nextPageToken as pageToken.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resourceDescriptorsType = MonitoredResourceDescriptor::class;
+        protected $resourceDescriptorsDataType = 'array';
+        /**
+         * If there might be more results than those appearing in this response, then
+         * nextPageToken is included. To get the next set of results, call this method
+         * again using the value of nextPageToken as pageToken.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of resource descriptors.
+         *
+         * @param MonitoredResourceDescriptor[] $resourceDescriptors
+         */
+        public function setResourceDescriptors($resourceDescriptors)
+        {
+        }
+        /**
+         * @return MonitoredResourceDescriptor[]
+         */
+        public function getResourceDescriptors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Logging\ListMonitoredResourceDescriptorsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of resource descriptors.
-     *
-     * @param MonitoredResourceDescriptor[] $resourceDescriptors
-     */
-    public function setResourceDescriptors($resourceDescriptors)
-    {
-    }
-    /**
-     * @return MonitoredResourceDescriptor[]
-     */
-    public function getResourceDescriptors()
+    class Google_Service_Logging_ListMonitoredResourceDescriptorsResponse extends \Google\Service\Logging\ListMonitoredResourceDescriptorsResponse
     {
     }
 }

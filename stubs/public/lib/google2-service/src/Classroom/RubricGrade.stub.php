@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class RubricGrade extends \Google\Model
-{
-    /**
-     * Optional. Criterion ID.
-     *
-     * @var string
-     */
-    public $criterionId;
-    /**
-     * Optional. Optional level ID of the selected level. If empty, no level was
-     * selected.
-     *
-     * @var string
-     */
-    public $levelId;
-    /**
-     * Optional. Optional points assigned for this criterion, typically based on
-     * the level. Levels might or might not have points. If unset, no points were
-     * set for this criterion.
-     *
-     * @var 
-     */
-    public $points;
-    /**
-     * Optional. Criterion ID.
-     *
-     * @param string $criterionId
-     */
-    public function setCriterionId($criterionId)
+namespace Google\Service\Classroom {
+    class RubricGrade extends \Google\Model
     {
+        /**
+         * Optional. Criterion ID.
+         *
+         * @var string
+         */
+        public $criterionId;
+        /**
+         * Optional. Optional level ID of the selected level. If empty, no level was
+         * selected.
+         *
+         * @var string
+         */
+        public $levelId;
+        /**
+         * Optional. Optional points assigned for this criterion, typically based on
+         * the level. Levels might or might not have points. If unset, no points were
+         * set for this criterion.
+         *
+         * @var 
+         */
+        public $points;
+        /**
+         * Optional. Criterion ID.
+         *
+         * @param string $criterionId
+         */
+        public function setCriterionId($criterionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCriterionId()
+        {
+        }
+        /**
+         * Optional. Optional level ID of the selected level. If empty, no level was
+         * selected.
+         *
+         * @param string $levelId
+         */
+        public function setLevelId($levelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLevelId()
+        {
+        }
+        public function setPoints($points)
+        {
+        }
+        public function getPoints()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\RubricGrade registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCriterionId()
-    {
-    }
-    /**
-     * Optional. Optional level ID of the selected level. If empty, no level was
-     * selected.
-     *
-     * @param string $levelId
-     */
-    public function setLevelId($levelId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLevelId()
-    {
-    }
-    public function setPoints($points)
-    {
-    }
-    public function getPoints()
+    class Google_Service_Classroom_RubricGrade extends \Google\Service\Classroom\RubricGrade
     {
     }
 }

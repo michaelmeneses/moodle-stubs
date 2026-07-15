@@ -21,179 +21,188 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Metadata extends \Google\Collection
-{
-    protected $collection_key = 'fields';
-    /**
-     * The creation time for this document or object in the search result.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $displayOptionsType = ResultDisplayMetadata::class;
-    protected $displayOptionsDataType = '';
-    protected $fieldsType = NamedProperty::class;
-    protected $fieldsDataType = 'array';
-    /**
-     * Mime type of the search result.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * Object type of the search result.
-     *
-     * @var string
-     */
-    public $objectType;
-    protected $ownerType = Person::class;
-    protected $ownerDataType = '';
-    protected $sourceType = Source::class;
-    protected $sourceDataType = '';
-    /**
-     * The thumbnail URL of the result.
-     *
-     * @var string
-     */
-    public $thumbnailUrl;
-    /**
-     * The last modified date for the object in the search result. If not set in
-     * the item, the value returned here is empty. When `updateTime` is used for
-     * calculating freshness and is not set, this value defaults to 2 years from
-     * the current time.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * The creation time for this document or object in the search result.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\CloudSearch {
+    class Metadata extends \Google\Collection
     {
+        protected $collection_key = 'fields';
+        /**
+         * The creation time for this document or object in the search result.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $displayOptionsType = ResultDisplayMetadata::class;
+        protected $displayOptionsDataType = '';
+        protected $fieldsType = NamedProperty::class;
+        protected $fieldsDataType = 'array';
+        /**
+         * Mime type of the search result.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * Object type of the search result.
+         *
+         * @var string
+         */
+        public $objectType;
+        protected $ownerType = Person::class;
+        protected $ownerDataType = '';
+        protected $sourceType = Source::class;
+        protected $sourceDataType = '';
+        /**
+         * The thumbnail URL of the result.
+         *
+         * @var string
+         */
+        public $thumbnailUrl;
+        /**
+         * The last modified date for the object in the search result. If not set in
+         * the item, the value returned here is empty. When `updateTime` is used for
+         * calculating freshness and is not set, this value defaults to 2 years from
+         * the current time.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * The creation time for this document or object in the search result.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Options that specify how to display a structured data search result.
+         *
+         * @param ResultDisplayMetadata $displayOptions
+         */
+        public function setDisplayOptions(ResultDisplayMetadata $displayOptions)
+        {
+        }
+        /**
+         * @return ResultDisplayMetadata
+         */
+        public function getDisplayOptions()
+        {
+        }
+        /**
+         * Indexed fields in structured data, returned as a generic named property.
+         *
+         * @param NamedProperty[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return NamedProperty[]
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * Mime type of the search result.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * Object type of the search result.
+         *
+         * @param string $objectType
+         */
+        public function setObjectType($objectType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectType()
+        {
+        }
+        /**
+         * Owner (usually creator) of the document or object of the search result.
+         *
+         * @param Person $owner
+         */
+        public function setOwner(Person $owner)
+        {
+        }
+        /**
+         * @return Person
+         */
+        public function getOwner()
+        {
+        }
+        /**
+         * The named source for the result, such as Gmail.
+         *
+         * @param Source $source
+         */
+        public function setSource(Source $source)
+        {
+        }
+        /**
+         * @return Source
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * The thumbnail URL of the result.
+         *
+         * @param string $thumbnailUrl
+         */
+        public function setThumbnailUrl($thumbnailUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThumbnailUrl()
+        {
+        }
+        /**
+         * The last modified date for the object in the search result. If not set in
+         * the item, the value returned here is empty. When `updateTime` is used for
+         * calculating freshness and is not set, this value defaults to 2 years from
+         * the current time.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\Metadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Options that specify how to display a structured data search result.
-     *
-     * @param ResultDisplayMetadata $displayOptions
-     */
-    public function setDisplayOptions(ResultDisplayMetadata $displayOptions)
-    {
-    }
-    /**
-     * @return ResultDisplayMetadata
-     */
-    public function getDisplayOptions()
-    {
-    }
-    /**
-     * Indexed fields in structured data, returned as a generic named property.
-     *
-     * @param NamedProperty[] $fields
-     */
-    public function setFields($fields)
-    {
-    }
-    /**
-     * @return NamedProperty[]
-     */
-    public function getFields()
-    {
-    }
-    /**
-     * Mime type of the search result.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
-    {
-    }
-    /**
-     * Object type of the search result.
-     *
-     * @param string $objectType
-     */
-    public function setObjectType($objectType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectType()
-    {
-    }
-    /**
-     * Owner (usually creator) of the document or object of the search result.
-     *
-     * @param Person $owner
-     */
-    public function setOwner(Person $owner)
-    {
-    }
-    /**
-     * @return Person
-     */
-    public function getOwner()
-    {
-    }
-    /**
-     * The named source for the result, such as Gmail.
-     *
-     * @param Source $source
-     */
-    public function setSource(Source $source)
-    {
-    }
-    /**
-     * @return Source
-     */
-    public function getSource()
-    {
-    }
-    /**
-     * The thumbnail URL of the result.
-     *
-     * @param string $thumbnailUrl
-     */
-    public function setThumbnailUrl($thumbnailUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThumbnailUrl()
-    {
-    }
-    /**
-     * The last modified date for the object in the search result. If not set in
-     * the item, the value returned here is empty. When `updateTime` is used for
-     * calculating freshness and is not set, this value defaults to 2 years from
-     * the current time.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudSearch_Metadata extends \Google\Service\CloudSearch\Metadata
     {
     }
 }

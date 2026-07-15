@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1Product extends \Google\Collection
-{
-    protected $collection_key = 'titles';
-    protected $bundleDetailsType = ProductBundleDetails::class;
-    protected $bundleDetailsDataType = '';
-    protected $finiteBillingCycleDetailsType = GoogleCloudPaymentsResellerSubscriptionV1FiniteBillingCycleDetails::class;
-    protected $finiteBillingCycleDetailsDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    protected $priceConfigsType = GoogleCloudPaymentsResellerSubscriptionV1ProductPriceConfig::class;
-    protected $priceConfigsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $productType;
-    /**
-     * @var string[]
-     */
-    public $regionCodes;
-    protected $subscriptionBillingCycleDurationType = GoogleCloudPaymentsResellerSubscriptionV1Duration::class;
-    protected $subscriptionBillingCycleDurationDataType = '';
-    protected $titlesType = GoogleTypeLocalizedText::class;
-    protected $titlesDataType = 'array';
-    /**
-     * @param ProductBundleDetails
-     */
-    public function setBundleDetails(ProductBundleDetails $bundleDetails)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1Product extends \Google\Collection
     {
+        protected $collection_key = 'titles';
+        protected $bundleDetailsType = ProductBundleDetails::class;
+        protected $bundleDetailsDataType = '';
+        protected $finiteBillingCycleDetailsType = GoogleCloudPaymentsResellerSubscriptionV1FiniteBillingCycleDetails::class;
+        protected $finiteBillingCycleDetailsDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        protected $priceConfigsType = GoogleCloudPaymentsResellerSubscriptionV1ProductPriceConfig::class;
+        protected $priceConfigsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $productType;
+        /**
+         * @var string[]
+         */
+        public $regionCodes;
+        protected $subscriptionBillingCycleDurationType = GoogleCloudPaymentsResellerSubscriptionV1Duration::class;
+        protected $subscriptionBillingCycleDurationDataType = '';
+        protected $titlesType = GoogleTypeLocalizedText::class;
+        protected $titlesDataType = 'array';
+        /**
+         * @param ProductBundleDetails
+         */
+        public function setBundleDetails(ProductBundleDetails $bundleDetails)
+        {
+        }
+        /**
+         * @return ProductBundleDetails
+         */
+        public function getBundleDetails()
+        {
+        }
+        /**
+         * @param GoogleCloudPaymentsResellerSubscriptionV1FiniteBillingCycleDetails
+         */
+        public function setFiniteBillingCycleDetails(GoogleCloudPaymentsResellerSubscriptionV1FiniteBillingCycleDetails $finiteBillingCycleDetails)
+        {
+        }
+        /**
+         * @return GoogleCloudPaymentsResellerSubscriptionV1FiniteBillingCycleDetails
+         */
+        public function getFiniteBillingCycleDetails()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param GoogleCloudPaymentsResellerSubscriptionV1ProductPriceConfig[]
+         */
+        public function setPriceConfigs($priceConfigs)
+        {
+        }
+        /**
+         * @return GoogleCloudPaymentsResellerSubscriptionV1ProductPriceConfig[]
+         */
+        public function getPriceConfigs()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProductType($productType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductType()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setRegionCodes($regionCodes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRegionCodes()
+        {
+        }
+        /**
+         * @param GoogleCloudPaymentsResellerSubscriptionV1Duration
+         */
+        public function setSubscriptionBillingCycleDuration(GoogleCloudPaymentsResellerSubscriptionV1Duration $subscriptionBillingCycleDuration)
+        {
+        }
+        /**
+         * @return GoogleCloudPaymentsResellerSubscriptionV1Duration
+         */
+        public function getSubscriptionBillingCycleDuration()
+        {
+        }
+        /**
+         * @param GoogleTypeLocalizedText[]
+         */
+        public function setTitles($titles)
+        {
+        }
+        /**
+         * @return GoogleTypeLocalizedText[]
+         */
+        public function getTitles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ProductBundleDetails
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1Product registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBundleDetails()
-    {
-    }
-    /**
-     * @param GoogleCloudPaymentsResellerSubscriptionV1FiniteBillingCycleDetails
-     */
-    public function setFiniteBillingCycleDetails(GoogleCloudPaymentsResellerSubscriptionV1FiniteBillingCycleDetails $finiteBillingCycleDetails)
-    {
-    }
-    /**
-     * @return GoogleCloudPaymentsResellerSubscriptionV1FiniteBillingCycleDetails
-     */
-    public function getFiniteBillingCycleDetails()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param GoogleCloudPaymentsResellerSubscriptionV1ProductPriceConfig[]
-     */
-    public function setPriceConfigs($priceConfigs)
-    {
-    }
-    /**
-     * @return GoogleCloudPaymentsResellerSubscriptionV1ProductPriceConfig[]
-     */
-    public function getPriceConfigs()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProductType($productType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductType()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setRegionCodes($regionCodes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRegionCodes()
-    {
-    }
-    /**
-     * @param GoogleCloudPaymentsResellerSubscriptionV1Duration
-     */
-    public function setSubscriptionBillingCycleDuration(GoogleCloudPaymentsResellerSubscriptionV1Duration $subscriptionBillingCycleDuration)
-    {
-    }
-    /**
-     * @return GoogleCloudPaymentsResellerSubscriptionV1Duration
-     */
-    public function getSubscriptionBillingCycleDuration()
-    {
-    }
-    /**
-     * @param GoogleTypeLocalizedText[]
-     */
-    public function setTitles($titles)
-    {
-    }
-    /**
-     * @return GoogleTypeLocalizedText[]
-     */
-    public function getTitles()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1Product extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1Product
     {
     }
 }

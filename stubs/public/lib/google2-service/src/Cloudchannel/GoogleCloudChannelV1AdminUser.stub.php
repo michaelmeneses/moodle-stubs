@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1AdminUser extends \Google\Model
-{
-    /**
-     * Primary email of the admin user.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Family name of the admin user.
-     *
-     * @var string
-     */
-    public $familyName;
-    /**
-     * Given name of the admin user.
-     *
-     * @var string
-     */
-    public $givenName;
-    /**
-     * Primary email of the admin user.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1AdminUser extends \Google\Model
     {
+        /**
+         * Primary email of the admin user.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Family name of the admin user.
+         *
+         * @var string
+         */
+        public $familyName;
+        /**
+         * Given name of the admin user.
+         *
+         * @var string
+         */
+        public $givenName;
+        /**
+         * Primary email of the admin user.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * Family name of the admin user.
+         *
+         * @param string $familyName
+         */
+        public function setFamilyName($familyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFamilyName()
+        {
+        }
+        /**
+         * Given name of the admin user.
+         *
+         * @param string $givenName
+         */
+        public function setGivenName($givenName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGivenName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1AdminUser registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * Family name of the admin user.
-     *
-     * @param string $familyName
-     */
-    public function setFamilyName($familyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFamilyName()
-    {
-    }
-    /**
-     * Given name of the admin user.
-     *
-     * @param string $givenName
-     */
-    public function setGivenName($givenName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGivenName()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1AdminUser extends \Google\Service\Cloudchannel\GoogleCloudChannelV1AdminUser
     {
     }
 }

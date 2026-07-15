@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class ListSupportedServicesResponse extends \Google\Collection
-{
-    protected $collection_key = 'supportedServices';
-    /**
-     * The pagination token to retrieve the next page of results. If the value is
-     * empty, no further results remain.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $supportedServicesType = SupportedService::class;
-    protected $supportedServicesDataType = 'array';
-    /**
-     * The pagination token to retrieve the next page of results. If the value is
-     * empty, no further results remain.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\AccessContextManager {
+    class ListSupportedServicesResponse extends \Google\Collection
     {
+        protected $collection_key = 'supportedServices';
+        /**
+         * The pagination token to retrieve the next page of results. If the value is
+         * empty, no further results remain.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $supportedServicesType = SupportedService::class;
+        protected $supportedServicesDataType = 'array';
+        /**
+         * The pagination token to retrieve the next page of results. If the value is
+         * empty, no further results remain.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of services supported by VPC Service Controls instances.
+         *
+         * @param SupportedService[] $supportedServices
+         */
+        public function setSupportedServices($supportedServices)
+        {
+        }
+        /**
+         * @return SupportedService[]
+         */
+        public function getSupportedServices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AccessContextManager\ListSupportedServicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of services supported by VPC Service Controls instances.
-     *
-     * @param SupportedService[] $supportedServices
-     */
-    public function setSupportedServices($supportedServices)
-    {
-    }
-    /**
-     * @return SupportedService[]
-     */
-    public function getSupportedServices()
+    class Google_Service_AccessContextManager_ListSupportedServicesResponse extends \Google\Service\AccessContextManager\ListSupportedServicesResponse
     {
     }
 }

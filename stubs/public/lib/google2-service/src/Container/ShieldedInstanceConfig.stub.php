@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class ShieldedInstanceConfig extends \Google\Model
-{
-    /**
-     * Defines whether the instance has integrity monitoring enabled. Enables
-     * monitoring and attestation of the boot integrity of the instance. The
-     * attestation is performed against the integrity policy baseline. This
-     * baseline is initially derived from the implicitly trusted boot image when
-     * the instance is created.
-     *
-     * @var bool
-     */
-    public $enableIntegrityMonitoring;
-    /**
-     * Defines whether the instance has Secure Boot enabled. Secure Boot helps
-     * ensure that the system only runs authentic software by verifying the
-     * digital signature of all boot components, and halting the boot process if
-     * signature verification fails.
-     *
-     * @var bool
-     */
-    public $enableSecureBoot;
-    /**
-     * Defines whether the instance has integrity monitoring enabled. Enables
-     * monitoring and attestation of the boot integrity of the instance. The
-     * attestation is performed against the integrity policy baseline. This
-     * baseline is initially derived from the implicitly trusted boot image when
-     * the instance is created.
-     *
-     * @param bool $enableIntegrityMonitoring
-     */
-    public function setEnableIntegrityMonitoring($enableIntegrityMonitoring)
+namespace Google\Service\Container {
+    class ShieldedInstanceConfig extends \Google\Model
     {
+        /**
+         * Defines whether the instance has integrity monitoring enabled. Enables
+         * monitoring and attestation of the boot integrity of the instance. The
+         * attestation is performed against the integrity policy baseline. This
+         * baseline is initially derived from the implicitly trusted boot image when
+         * the instance is created.
+         *
+         * @var bool
+         */
+        public $enableIntegrityMonitoring;
+        /**
+         * Defines whether the instance has Secure Boot enabled. Secure Boot helps
+         * ensure that the system only runs authentic software by verifying the
+         * digital signature of all boot components, and halting the boot process if
+         * signature verification fails.
+         *
+         * @var bool
+         */
+        public $enableSecureBoot;
+        /**
+         * Defines whether the instance has integrity monitoring enabled. Enables
+         * monitoring and attestation of the boot integrity of the instance. The
+         * attestation is performed against the integrity policy baseline. This
+         * baseline is initially derived from the implicitly trusted boot image when
+         * the instance is created.
+         *
+         * @param bool $enableIntegrityMonitoring
+         */
+        public function setEnableIntegrityMonitoring($enableIntegrityMonitoring)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableIntegrityMonitoring()
+        {
+        }
+        /**
+         * Defines whether the instance has Secure Boot enabled. Secure Boot helps
+         * ensure that the system only runs authentic software by verifying the
+         * digital signature of all boot components, and halting the boot process if
+         * signature verification fails.
+         *
+         * @param bool $enableSecureBoot
+         */
+        public function setEnableSecureBoot($enableSecureBoot)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableSecureBoot()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\ShieldedInstanceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableIntegrityMonitoring()
-    {
-    }
-    /**
-     * Defines whether the instance has Secure Boot enabled. Secure Boot helps
-     * ensure that the system only runs authentic software by verifying the
-     * digital signature of all boot components, and halting the boot process if
-     * signature verification fails.
-     *
-     * @param bool $enableSecureBoot
-     */
-    public function setEnableSecureBoot($enableSecureBoot)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableSecureBoot()
+    class Google_Service_Container_ShieldedInstanceConfig extends \Google\Service\Container\ShieldedInstanceConfig
     {
     }
 }

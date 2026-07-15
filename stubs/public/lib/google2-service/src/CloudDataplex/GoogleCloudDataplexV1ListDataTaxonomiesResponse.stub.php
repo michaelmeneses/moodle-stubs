@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1ListDataTaxonomiesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachableLocations';
-    protected $dataTaxonomiesType = GoogleCloudDataplexV1DataTaxonomy::class;
-    protected $dataTaxonomiesDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachableLocations;
-    /**
-     * DataTaxonomies under the given parent location.
-     *
-     * @param GoogleCloudDataplexV1DataTaxonomy[] $dataTaxonomies
-     */
-    public function setDataTaxonomies($dataTaxonomies)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1ListDataTaxonomiesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachableLocations';
+        protected $dataTaxonomiesType = GoogleCloudDataplexV1DataTaxonomy::class;
+        protected $dataTaxonomiesDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachableLocations;
+        /**
+         * DataTaxonomies under the given parent location.
+         *
+         * @param GoogleCloudDataplexV1DataTaxonomy[] $dataTaxonomies
+         */
+        public function setDataTaxonomies($dataTaxonomies)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataTaxonomy[]
+         */
+        public function getDataTaxonomies()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachableLocations
+         */
+        public function setUnreachableLocations($unreachableLocations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachableLocations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1DataTaxonomy[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListDataTaxonomiesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataTaxonomies()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachableLocations
-     */
-    public function setUnreachableLocations($unreachableLocations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachableLocations()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1ListDataTaxonomiesResponse extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListDataTaxonomiesResponse
     {
     }
 }

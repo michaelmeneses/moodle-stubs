@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataDiscoverySpecStorageConfigCsvOptions extends \Google\Model
-{
-    /**
-     * Optional. The delimiter that is used to separate values. The default is ,
-     * (comma).
-     *
-     * @var string
-     */
-    public $delimiter;
-    /**
-     * Optional. The character encoding of the data. The default is UTF-8.
-     *
-     * @var string
-     */
-    public $encoding;
-    /**
-     * Optional. The number of rows to interpret as header rows that should be
-     * skipped when reading data rows.
-     *
-     * @var int
-     */
-    public $headerRows;
-    /**
-     * Optional. The character used to quote column values. Accepts " (double
-     * quotation mark) or ' (single quotation mark). If unspecified, defaults to "
-     * (double quotation mark).
-     *
-     * @var string
-     */
-    public $quote;
-    /**
-     * Optional. Whether to disable the inference of data types for CSV data. If
-     * true, all columns are registered as strings.
-     *
-     * @var bool
-     */
-    public $typeInferenceDisabled;
-    /**
-     * Optional. The delimiter that is used to separate values. The default is ,
-     * (comma).
-     *
-     * @param string $delimiter
-     */
-    public function setDelimiter($delimiter)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataDiscoverySpecStorageConfigCsvOptions extends \Google\Model
     {
+        /**
+         * Optional. The delimiter that is used to separate values. The default is ,
+         * (comma).
+         *
+         * @var string
+         */
+        public $delimiter;
+        /**
+         * Optional. The character encoding of the data. The default is UTF-8.
+         *
+         * @var string
+         */
+        public $encoding;
+        /**
+         * Optional. The number of rows to interpret as header rows that should be
+         * skipped when reading data rows.
+         *
+         * @var int
+         */
+        public $headerRows;
+        /**
+         * Optional. The character used to quote column values. Accepts " (double
+         * quotation mark) or ' (single quotation mark). If unspecified, defaults to "
+         * (double quotation mark).
+         *
+         * @var string
+         */
+        public $quote;
+        /**
+         * Optional. Whether to disable the inference of data types for CSV data. If
+         * true, all columns are registered as strings.
+         *
+         * @var bool
+         */
+        public $typeInferenceDisabled;
+        /**
+         * Optional. The delimiter that is used to separate values. The default is ,
+         * (comma).
+         *
+         * @param string $delimiter
+         */
+        public function setDelimiter($delimiter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDelimiter()
+        {
+        }
+        /**
+         * Optional. The character encoding of the data. The default is UTF-8.
+         *
+         * @param string $encoding
+         */
+        public function setEncoding($encoding)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncoding()
+        {
+        }
+        /**
+         * Optional. The number of rows to interpret as header rows that should be
+         * skipped when reading data rows.
+         *
+         * @param int $headerRows
+         */
+        public function setHeaderRows($headerRows)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeaderRows()
+        {
+        }
+        /**
+         * Optional. The character used to quote column values. Accepts " (double
+         * quotation mark) or ' (single quotation mark). If unspecified, defaults to "
+         * (double quotation mark).
+         *
+         * @param string $quote
+         */
+        public function setQuote($quote)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuote()
+        {
+        }
+        /**
+         * Optional. Whether to disable the inference of data types for CSV data. If
+         * true, all columns are registered as strings.
+         *
+         * @param bool $typeInferenceDisabled
+         */
+        public function setTypeInferenceDisabled($typeInferenceDisabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTypeInferenceDisabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataDiscoverySpecStorageConfigCsvOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDelimiter()
-    {
-    }
-    /**
-     * Optional. The character encoding of the data. The default is UTF-8.
-     *
-     * @param string $encoding
-     */
-    public function setEncoding($encoding)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEncoding()
-    {
-    }
-    /**
-     * Optional. The number of rows to interpret as header rows that should be
-     * skipped when reading data rows.
-     *
-     * @param int $headerRows
-     */
-    public function setHeaderRows($headerRows)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHeaderRows()
-    {
-    }
-    /**
-     * Optional. The character used to quote column values. Accepts " (double
-     * quotation mark) or ' (single quotation mark). If unspecified, defaults to "
-     * (double quotation mark).
-     *
-     * @param string $quote
-     */
-    public function setQuote($quote)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuote()
-    {
-    }
-    /**
-     * Optional. Whether to disable the inference of data types for CSV data. If
-     * true, all columns are registered as strings.
-     *
-     * @param bool $typeInferenceDisabled
-     */
-    public function setTypeInferenceDisabled($typeInferenceDisabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTypeInferenceDisabled()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataDiscoverySpecStorageConfigCsvOptions extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataDiscoverySpecStorageConfigCsvOptions
     {
     }
 }

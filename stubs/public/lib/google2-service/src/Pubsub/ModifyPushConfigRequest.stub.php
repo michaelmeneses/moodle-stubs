@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class ModifyPushConfigRequest extends \Google\Model
-{
-    protected $pushConfigType = PushConfig::class;
-    protected $pushConfigDataType = '';
-    /**
-     * Required. The push configuration for future deliveries. An empty
-     * `pushConfig` indicates that the Pub/Sub system should stop pushing messages
-     * from the given subscription and allow messages to be pulled and
-     * acknowledged - effectively pausing the subscription if `Pull` or
-     * `StreamingPull` is not called.
-     *
-     * @param PushConfig $pushConfig
-     */
-    public function setPushConfig(PushConfig $pushConfig)
+namespace Google\Service\Pubsub {
+    class ModifyPushConfigRequest extends \Google\Model
     {
+        protected $pushConfigType = PushConfig::class;
+        protected $pushConfigDataType = '';
+        /**
+         * Required. The push configuration for future deliveries. An empty
+         * `pushConfig` indicates that the Pub/Sub system should stop pushing messages
+         * from the given subscription and allow messages to be pulled and
+         * acknowledged - effectively pausing the subscription if `Pull` or
+         * `StreamingPull` is not called.
+         *
+         * @param PushConfig $pushConfig
+         */
+        public function setPushConfig(PushConfig $pushConfig)
+        {
+        }
+        /**
+         * @return PushConfig
+         */
+        public function getPushConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PushConfig
+     * Runtime class alias of \Google\Service\Pubsub\ModifyPushConfigRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPushConfig()
+    class Google_Service_Pubsub_ModifyPushConfigRequest extends \Google\Service\Pubsub\ModifyPushConfigRequest
     {
     }
 }

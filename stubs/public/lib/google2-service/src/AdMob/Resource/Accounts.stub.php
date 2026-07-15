@@ -21,46 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdMob\Resource;
-
-/**
- * The "accounts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $admobService = new Google\Service\AdMob(...);
- *   $accounts = $admobService->accounts;
- *  </code>
- */
-class Accounts extends \Google\Service\Resource
-{
+namespace Google\Service\AdMob\Resource {
+    use Google\Service\AdMob\ListPublisherAccountsResponse;
+    use Google\Service\AdMob\PublisherAccount;
     /**
-     * Gets information about the specified AdMob publisher account. (accounts.get)
-     *
-     * @param string $name Resource name of the publisher account to retrieve.
-     * Example: accounts/pub-9876543210987654
-     * @param array $optParams Optional parameters.
-     * @return PublisherAccount
-     * @throws \Google\Service\Exception
+     * The "accounts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $admobService = new Google\Service\AdMob(...);
+     *   $accounts = $admobService->accounts;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class Accounts extends \Google\Service\Resource
     {
+        /**
+         * Gets information about the specified AdMob publisher account. (accounts.get)
+         *
+         * @param string $name Resource name of the publisher account to retrieve.
+         * Example: accounts/pub-9876543210987654
+         * @param array $optParams Optional parameters.
+         * @return PublisherAccount
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists the AdMob publisher account that was most recently signed in to from
+         * the AdMob UI. For more information, see
+         * https://support.google.com/admob/answer/10243672. (accounts.listAccounts)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum number of accounts to return.
+         * @opt_param string pageToken The value returned by the last
+         * `ListPublisherAccountsResponse`; indicates that this is a continuation of a
+         * prior `ListPublisherAccounts` call, and that the system should return the
+         * next page of data.
+         * @return ListPublisherAccountsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccounts($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists the AdMob publisher account that was most recently signed in to from
-     * the AdMob UI. For more information, see
-     * https://support.google.com/admob/answer/10243672. (accounts.listAccounts)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum number of accounts to return.
-     * @opt_param string pageToken The value returned by the last
-     * `ListPublisherAccountsResponse`; indicates that this is a continuation of a
-     * prior `ListPublisherAccounts` call, and that the system should return the
-     * next page of data.
-     * @return ListPublisherAccountsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AdMob\Resource\Accounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listAccounts($optParams = [])
+    class Google_Service_AdMob_Resource_Accounts extends \Google\Service\AdMob\Resource\Accounts
     {
     }
 }

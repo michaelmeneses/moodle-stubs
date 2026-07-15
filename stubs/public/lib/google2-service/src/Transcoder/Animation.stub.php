@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class Animation extends \Google\Model
-{
-    protected $animationEndType = AnimationEnd::class;
-    protected $animationEndDataType = '';
-    protected $animationFadeType = AnimationFade::class;
-    protected $animationFadeDataType = '';
-    protected $animationStaticType = AnimationStatic::class;
-    protected $animationStaticDataType = '';
-    /**
-     * End previous animation.
-     *
-     * @param AnimationEnd $animationEnd
-     */
-    public function setAnimationEnd(AnimationEnd $animationEnd)
+namespace Google\Service\Transcoder {
+    class Animation extends \Google\Model
     {
+        protected $animationEndType = AnimationEnd::class;
+        protected $animationEndDataType = '';
+        protected $animationFadeType = AnimationFade::class;
+        protected $animationFadeDataType = '';
+        protected $animationStaticType = AnimationStatic::class;
+        protected $animationStaticDataType = '';
+        /**
+         * End previous animation.
+         *
+         * @param AnimationEnd $animationEnd
+         */
+        public function setAnimationEnd(AnimationEnd $animationEnd)
+        {
+        }
+        /**
+         * @return AnimationEnd
+         */
+        public function getAnimationEnd()
+        {
+        }
+        /**
+         * Display overlay object with fade animation.
+         *
+         * @param AnimationFade $animationFade
+         */
+        public function setAnimationFade(AnimationFade $animationFade)
+        {
+        }
+        /**
+         * @return AnimationFade
+         */
+        public function getAnimationFade()
+        {
+        }
+        /**
+         * Display static overlay object.
+         *
+         * @param AnimationStatic $animationStatic
+         */
+        public function setAnimationStatic(AnimationStatic $animationStatic)
+        {
+        }
+        /**
+         * @return AnimationStatic
+         */
+        public function getAnimationStatic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AnimationEnd
+     * Runtime class alias of \Google\Service\Transcoder\Animation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnimationEnd()
-    {
-    }
-    /**
-     * Display overlay object with fade animation.
-     *
-     * @param AnimationFade $animationFade
-     */
-    public function setAnimationFade(AnimationFade $animationFade)
-    {
-    }
-    /**
-     * @return AnimationFade
-     */
-    public function getAnimationFade()
-    {
-    }
-    /**
-     * Display static overlay object.
-     *
-     * @param AnimationStatic $animationStatic
-     */
-    public function setAnimationStatic(AnimationStatic $animationStatic)
-    {
-    }
-    /**
-     * @return AnimationStatic
-     */
-    public function getAnimationStatic()
+    class Google_Service_Transcoder_Animation extends \Google\Service\Transcoder\Animation
     {
     }
 }

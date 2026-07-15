@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ToolConfig extends \Google\Model
-{
-    protected $functionCallingConfigType = GoogleCloudAiplatformV1FunctionCallingConfig::class;
-    protected $functionCallingConfigDataType = '';
-    protected $retrievalConfigType = GoogleCloudAiplatformV1RetrievalConfig::class;
-    protected $retrievalConfigDataType = '';
-    /**
-     * Optional. Function calling config.
-     *
-     * @param GoogleCloudAiplatformV1FunctionCallingConfig $functionCallingConfig
-     */
-    public function setFunctionCallingConfig(GoogleCloudAiplatformV1FunctionCallingConfig $functionCallingConfig)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ToolConfig extends \Google\Model
     {
+        protected $functionCallingConfigType = GoogleCloudAiplatformV1FunctionCallingConfig::class;
+        protected $functionCallingConfigDataType = '';
+        protected $retrievalConfigType = GoogleCloudAiplatformV1RetrievalConfig::class;
+        protected $retrievalConfigDataType = '';
+        /**
+         * Optional. Function calling config.
+         *
+         * @param GoogleCloudAiplatformV1FunctionCallingConfig $functionCallingConfig
+         */
+        public function setFunctionCallingConfig(GoogleCloudAiplatformV1FunctionCallingConfig $functionCallingConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FunctionCallingConfig
+         */
+        public function getFunctionCallingConfig()
+        {
+        }
+        /**
+         * Optional. Retrieval config.
+         *
+         * @param GoogleCloudAiplatformV1RetrievalConfig $retrievalConfig
+         */
+        public function setRetrievalConfig(GoogleCloudAiplatformV1RetrievalConfig $retrievalConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RetrievalConfig
+         */
+        public function getRetrievalConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1FunctionCallingConfig
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ToolConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFunctionCallingConfig()
-    {
-    }
-    /**
-     * Optional. Retrieval config.
-     *
-     * @param GoogleCloudAiplatformV1RetrievalConfig $retrievalConfig
-     */
-    public function setRetrievalConfig(GoogleCloudAiplatformV1RetrievalConfig $retrievalConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RetrievalConfig
-     */
-    public function getRetrievalConfig()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ToolConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ToolConfig
     {
     }
 }

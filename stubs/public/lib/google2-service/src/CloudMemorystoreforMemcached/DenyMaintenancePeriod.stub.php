@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMemorystoreforMemcached;
-
-class DenyMaintenancePeriod extends \Google\Model
-{
-    protected $endDateType = Date::class;
-    protected $endDateDataType = '';
-    protected $startDateType = Date::class;
-    protected $startDateDataType = '';
-    protected $timeType = TimeOfDay::class;
-    protected $timeDataType = '';
-    /**
-     * Deny period end date. This can be: * A full date, with non-zero year, month
-     * and day values. * A month and day value, with a zero year. Allows recurring
-     * deny periods each year. Date matching this period will have to be before
-     * the end.
-     *
-     * @param Date $endDate
-     */
-    public function setEndDate(Date $endDate)
+namespace Google\Service\CloudMemorystoreforMemcached {
+    class DenyMaintenancePeriod extends \Google\Model
     {
+        protected $endDateType = Date::class;
+        protected $endDateDataType = '';
+        protected $startDateType = Date::class;
+        protected $startDateDataType = '';
+        protected $timeType = TimeOfDay::class;
+        protected $timeDataType = '';
+        /**
+         * Deny period end date. This can be: * A full date, with non-zero year, month
+         * and day values. * A month and day value, with a zero year. Allows recurring
+         * deny periods each year. Date matching this period will have to be before
+         * the end.
+         *
+         * @param Date $endDate
+         */
+        public function setEndDate(Date $endDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * Deny period start date. This can be: * A full date, with non-zero year,
+         * month and day values. * A month and day value, with a zero year. Allows
+         * recurring deny periods each year. Date matching this period will have to be
+         * the same or after the start.
+         *
+         * @param Date $startDate
+         */
+        public function setStartDate(Date $startDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getStartDate()
+        {
+        }
+        /**
+         * Time in UTC when the Blackout period starts on start_date and ends on
+         * end_date. This can be: * Full time. * All zeros for 00:00:00 UTC
+         *
+         * @param TimeOfDay $time
+         */
+        public function setTime(TimeOfDay $time)
+        {
+        }
+        /**
+         * @return TimeOfDay
+         */
+        public function getTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Date
+     * Runtime class alias of \Google\Service\CloudMemorystoreforMemcached\DenyMaintenancePeriod registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndDate()
-    {
-    }
-    /**
-     * Deny period start date. This can be: * A full date, with non-zero year,
-     * month and day values. * A month and day value, with a zero year. Allows
-     * recurring deny periods each year. Date matching this period will have to be
-     * the same or after the start.
-     *
-     * @param Date $startDate
-     */
-    public function setStartDate(Date $startDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getStartDate()
-    {
-    }
-    /**
-     * Time in UTC when the Blackout period starts on start_date and ends on
-     * end_date. This can be: * Full time. * All zeros for 00:00:00 UTC
-     *
-     * @param TimeOfDay $time
-     */
-    public function setTime(TimeOfDay $time)
-    {
-    }
-    /**
-     * @return TimeOfDay
-     */
-    public function getTime()
+    class Google_Service_CloudMemorystoreforMemcached_DenyMaintenancePeriod extends \Google\Service\CloudMemorystoreforMemcached\DenyMaintenancePeriod
     {
     }
 }

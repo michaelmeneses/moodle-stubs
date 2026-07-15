@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class ConsentAccessorScope extends \Google\Model
-{
-    /**
-     * An individual, group, or access role that identifies the accessor or a
-     * characteristic of the accessor. This can be a resource ID (such as
-     * `{resourceType}/{id}`) or an external URI. This value must be present.
-     *
-     * @var string
-     */
-    public $actor;
-    /**
-     * An abstract identifier that describes the environment or conditions under
-     * which the accessor is acting. If it's not specified, it applies to all
-     * environments.
-     *
-     * @var string
-     */
-    public $environment;
-    /**
-     * The intent of data use. If it's not specified, it applies to all purposes.
-     *
-     * @var string
-     */
-    public $purpose;
-    /**
-     * An individual, group, or access role that identifies the accessor or a
-     * characteristic of the accessor. This can be a resource ID (such as
-     * `{resourceType}/{id}`) or an external URI. This value must be present.
-     *
-     * @param string $actor
-     */
-    public function setActor($actor)
+namespace Google\Service\CloudHealthcare {
+    class ConsentAccessorScope extends \Google\Model
     {
+        /**
+         * An individual, group, or access role that identifies the accessor or a
+         * characteristic of the accessor. This can be a resource ID (such as
+         * `{resourceType}/{id}`) or an external URI. This value must be present.
+         *
+         * @var string
+         */
+        public $actor;
+        /**
+         * An abstract identifier that describes the environment or conditions under
+         * which the accessor is acting. If it's not specified, it applies to all
+         * environments.
+         *
+         * @var string
+         */
+        public $environment;
+        /**
+         * The intent of data use. If it's not specified, it applies to all purposes.
+         *
+         * @var string
+         */
+        public $purpose;
+        /**
+         * An individual, group, or access role that identifies the accessor or a
+         * characteristic of the accessor. This can be a resource ID (such as
+         * `{resourceType}/{id}`) or an external URI. This value must be present.
+         *
+         * @param string $actor
+         */
+        public function setActor($actor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActor()
+        {
+        }
+        /**
+         * An abstract identifier that describes the environment or conditions under
+         * which the accessor is acting. If it's not specified, it applies to all
+         * environments.
+         *
+         * @param string $environment
+         */
+        public function setEnvironment($environment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * The intent of data use. If it's not specified, it applies to all purposes.
+         *
+         * @param string $purpose
+         */
+        public function setPurpose($purpose)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPurpose()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\ConsentAccessorScope registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActor()
-    {
-    }
-    /**
-     * An abstract identifier that describes the environment or conditions under
-     * which the accessor is acting. If it's not specified, it applies to all
-     * environments.
-     *
-     * @param string $environment
-     */
-    public function setEnvironment($environment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * The intent of data use. If it's not specified, it applies to all purposes.
-     *
-     * @param string $purpose
-     */
-    public function setPurpose($purpose)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPurpose()
+    class Google_Service_CloudHealthcare_ConsentAccessorScope extends \Google\Service\CloudHealthcare\ConsentAccessorScope
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaCustomAttribute extends \Google\Collection
-{
-    protected $collection_key = 'text';
-    public $numbers;
-    /**
-     * @var string[]
-     */
-    public $text;
-    public function setNumbers($numbers)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaCustomAttribute extends \Google\Collection
     {
+        protected $collection_key = 'text';
+        public $numbers;
+        /**
+         * @var string[]
+         */
+        public $text;
+        public function setNumbers($numbers)
+        {
+        }
+        public function getNumbers()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getText()
+        {
+        }
     }
-    public function getNumbers()
-    {
-    }
+}
+namespace {
     /**
-     * @param string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaCustomAttribute registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getText()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaCustomAttribute extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaCustomAttribute
     {
     }
 }

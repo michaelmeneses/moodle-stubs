@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AnswerQueryRequestSafetySpec extends \Google\Collection
-{
-    protected $collection_key = 'safetySettings';
-    /**
-     * Enable the safety filtering on the answer response. It is false by default.
-     *
-     * @var bool
-     */
-    public $enable;
-    protected $safetySettingsType = GoogleCloudDiscoveryengineV1AnswerQueryRequestSafetySpecSafetySetting::class;
-    protected $safetySettingsDataType = 'array';
-    /**
-     * Enable the safety filtering on the answer response. It is false by default.
-     *
-     * @param bool $enable
-     */
-    public function setEnable($enable)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AnswerQueryRequestSafetySpec extends \Google\Collection
     {
+        protected $collection_key = 'safetySettings';
+        /**
+         * Enable the safety filtering on the answer response. It is false by default.
+         *
+         * @var bool
+         */
+        public $enable;
+        protected $safetySettingsType = GoogleCloudDiscoveryengineV1AnswerQueryRequestSafetySpecSafetySetting::class;
+        protected $safetySettingsDataType = 'array';
+        /**
+         * Enable the safety filtering on the answer response. It is false by default.
+         *
+         * @param bool $enable
+         */
+        public function setEnable($enable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnable()
+        {
+        }
+        /**
+         * Optional. Safety settings. This settings are effective only when the
+         * safety_spec.enable is true.
+         *
+         * @param GoogleCloudDiscoveryengineV1AnswerQueryRequestSafetySpecSafetySetting[] $safetySettings
+         */
+        public function setSafetySettings($safetySettings)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AnswerQueryRequestSafetySpecSafetySetting[]
+         */
+        public function getSafetySettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestSafetySpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnable()
-    {
-    }
-    /**
-     * Optional. Safety settings. This settings are effective only when the
-     * safety_spec.enable is true.
-     *
-     * @param GoogleCloudDiscoveryengineV1AnswerQueryRequestSafetySpecSafetySetting[] $safetySettings
-     */
-    public function setSafetySettings($safetySettings)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1AnswerQueryRequestSafetySpecSafetySetting[]
-     */
-    public function getSafetySettings()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AnswerQueryRequestSafetySpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestSafetySpec
     {
     }
 }

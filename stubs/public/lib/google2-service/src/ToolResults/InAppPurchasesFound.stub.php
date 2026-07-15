@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class InAppPurchasesFound extends \Google\Model
-{
-    /**
-     * The total number of in-app purchases flows explored: how many times the
-     * robo tries to buy a SKU.
-     *
-     * @var int
-     */
-    public $inAppPurchasesFlowsExplored;
-    /**
-     * The total number of in-app purchases flows started.
-     *
-     * @var int
-     */
-    public $inAppPurchasesFlowsStarted;
-    /**
-     * The total number of in-app purchases flows explored: how many times the
-     * robo tries to buy a SKU.
-     *
-     * @param int $inAppPurchasesFlowsExplored
-     */
-    public function setInAppPurchasesFlowsExplored($inAppPurchasesFlowsExplored)
+namespace Google\Service\ToolResults {
+    class InAppPurchasesFound extends \Google\Model
     {
+        /**
+         * The total number of in-app purchases flows explored: how many times the
+         * robo tries to buy a SKU.
+         *
+         * @var int
+         */
+        public $inAppPurchasesFlowsExplored;
+        /**
+         * The total number of in-app purchases flows started.
+         *
+         * @var int
+         */
+        public $inAppPurchasesFlowsStarted;
+        /**
+         * The total number of in-app purchases flows explored: how many times the
+         * robo tries to buy a SKU.
+         *
+         * @param int $inAppPurchasesFlowsExplored
+         */
+        public function setInAppPurchasesFlowsExplored($inAppPurchasesFlowsExplored)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getInAppPurchasesFlowsExplored()
+        {
+        }
+        /**
+         * The total number of in-app purchases flows started.
+         *
+         * @param int $inAppPurchasesFlowsStarted
+         */
+        public function setInAppPurchasesFlowsStarted($inAppPurchasesFlowsStarted)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getInAppPurchasesFlowsStarted()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\ToolResults\InAppPurchasesFound registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInAppPurchasesFlowsExplored()
-    {
-    }
-    /**
-     * The total number of in-app purchases flows started.
-     *
-     * @param int $inAppPurchasesFlowsStarted
-     */
-    public function setInAppPurchasesFlowsStarted($inAppPurchasesFlowsStarted)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getInAppPurchasesFlowsStarted()
+    class Google_Service_ToolResults_InAppPurchasesFound extends \Google\Service\ToolResults\InAppPurchasesFound
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EvaluationInstanceInstanceDataContents extends \Google\Collection
-{
-    protected $collection_key = 'contents';
-    protected $contentsType = GoogleCloudAiplatformV1Content::class;
-    protected $contentsDataType = 'array';
-    /**
-     * Optional. Repeated contents.
-     *
-     * @param GoogleCloudAiplatformV1Content[] $contents
-     */
-    public function setContents($contents)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EvaluationInstanceInstanceDataContents extends \Google\Collection
     {
+        protected $collection_key = 'contents';
+        protected $contentsType = GoogleCloudAiplatformV1Content::class;
+        protected $contentsDataType = 'array';
+        /**
+         * Optional. Repeated contents.
+         *
+         * @param GoogleCloudAiplatformV1Content[] $contents
+         */
+        public function setContents($contents)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Content[]
+         */
+        public function getContents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Content[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationInstanceInstanceDataContents registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContents()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EvaluationInstanceInstanceDataContents extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationInstanceInstanceDataContents
     {
     }
 }

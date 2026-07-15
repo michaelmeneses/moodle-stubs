@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareAdminMetalLbConfig extends \Google\Model
-{
-    /**
-     * Whether MetalLB is enabled.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Whether MetalLB is enabled.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\GKEOnPrem {
+    class VmwareAdminMetalLbConfig extends \Google\Model
     {
+        /**
+         * Whether MetalLB is enabled.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Whether MetalLB is enabled.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareAdminMetalLbConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
+    class Google_Service_GKEOnPrem_VmwareAdminMetalLbConfig extends \Google\Service\GKEOnPrem\VmwareAdminMetalLbConfig
     {
     }
 }

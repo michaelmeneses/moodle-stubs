@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class BatchWriteResponse extends \Google\Collection
-{
-    protected $collection_key = 'writeResults';
-    protected $statusType = Status::class;
-    protected $statusDataType = 'array';
-    protected $writeResultsType = WriteResult::class;
-    protected $writeResultsDataType = 'array';
-    /**
-     * The status of applying the writes. This i-th write status corresponds to
-     * the i-th write in the request.
-     *
-     * @param Status[] $status
-     */
-    public function setStatus($status)
+namespace Google\Service\Firestore {
+    class BatchWriteResponse extends \Google\Collection
     {
+        protected $collection_key = 'writeResults';
+        protected $statusType = Status::class;
+        protected $statusDataType = 'array';
+        protected $writeResultsType = WriteResult::class;
+        protected $writeResultsDataType = 'array';
+        /**
+         * The status of applying the writes. This i-th write status corresponds to
+         * the i-th write in the request.
+         *
+         * @param Status[] $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return Status[]
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * The result of applying the writes. This i-th write result corresponds to
+         * the i-th write in the request.
+         *
+         * @param WriteResult[] $writeResults
+         */
+        public function setWriteResults($writeResults)
+        {
+        }
+        /**
+         * @return WriteResult[]
+         */
+        public function getWriteResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Status[]
+     * Runtime class alias of \Google\Service\Firestore\BatchWriteResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStatus()
-    {
-    }
-    /**
-     * The result of applying the writes. This i-th write result corresponds to
-     * the i-th write in the request.
-     *
-     * @param WriteResult[] $writeResults
-     */
-    public function setWriteResults($writeResults)
-    {
-    }
-    /**
-     * @return WriteResult[]
-     */
-    public function getWriteResults()
+    class Google_Service_Firestore_BatchWriteResponse extends \Google\Service\Firestore\BatchWriteResponse
     {
     }
 }

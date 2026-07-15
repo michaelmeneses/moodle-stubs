@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2TimeZone extends \Google\Model
-{
-    /**
-     * Set only if the offset can be determined. Positive for time ahead of UTC.
-     * E.g. For "UTC-9", this value is -540.
-     *
-     * @var int
-     */
-    public $offsetMinutes;
-    /**
-     * Set only if the offset can be determined. Positive for time ahead of UTC.
-     * E.g. For "UTC-9", this value is -540.
-     *
-     * @param int $offsetMinutes
-     */
-    public function setOffsetMinutes($offsetMinutes)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2TimeZone extends \Google\Model
     {
+        /**
+         * Set only if the offset can be determined. Positive for time ahead of UTC.
+         * E.g. For "UTC-9", this value is -540.
+         *
+         * @var int
+         */
+        public $offsetMinutes;
+        /**
+         * Set only if the offset can be determined. Positive for time ahead of UTC.
+         * E.g. For "UTC-9", this value is -540.
+         *
+         * @param int $offsetMinutes
+         */
+        public function setOffsetMinutes($offsetMinutes)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOffsetMinutes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2TimeZone registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOffsetMinutes()
+    class Google_Service_DLP_GooglePrivacyDlpV2TimeZone extends \Google\Service\DLP\GooglePrivacyDlpV2TimeZone
     {
     }
 }

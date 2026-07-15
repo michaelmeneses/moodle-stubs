@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTubeReporting;
-
-class GdataDownloadParameters extends \Google\Model
-{
-    /**
-     * gdata
-     *
-     * @var bool
-     */
-    public $allowGzipCompression;
-    /**
-     * gdata
-     *
-     * @var bool
-     */
-    public $ignoreRange;
-    /**
-     * gdata
-     *
-     * @param bool $allowGzipCompression
-     */
-    public function setAllowGzipCompression($allowGzipCompression)
+namespace Google\Service\YouTubeReporting {
+    class GdataDownloadParameters extends \Google\Model
     {
+        /**
+         * gdata
+         *
+         * @var bool
+         */
+        public $allowGzipCompression;
+        /**
+         * gdata
+         *
+         * @var bool
+         */
+        public $ignoreRange;
+        /**
+         * gdata
+         *
+         * @param bool $allowGzipCompression
+         */
+        public function setAllowGzipCompression($allowGzipCompression)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowGzipCompression()
+        {
+        }
+        /**
+         * gdata
+         *
+         * @param bool $ignoreRange
+         */
+        public function setIgnoreRange($ignoreRange)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIgnoreRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\YouTubeReporting\GdataDownloadParameters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowGzipCompression()
-    {
-    }
-    /**
-     * gdata
-     *
-     * @param bool $ignoreRange
-     */
-    public function setIgnoreRange($ignoreRange)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIgnoreRange()
+    class Google_Service_YouTubeReporting_GdataDownloadParameters extends \Google\Service\YouTubeReporting\GdataDownloadParameters
     {
     }
 }

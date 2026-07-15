@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EvaluationRequest extends \Google\Collection
-{
-    protected $collection_key = 'candidateResponses';
-    protected $candidateResponsesType = GoogleCloudAiplatformV1CandidateResponse::class;
-    protected $candidateResponsesDataType = 'array';
-    protected $goldenResponseType = GoogleCloudAiplatformV1CandidateResponse::class;
-    protected $goldenResponseDataType = '';
-    protected $promptType = GoogleCloudAiplatformV1EvaluationPrompt::class;
-    protected $promptDataType = '';
-    protected $rubricsType = GoogleCloudAiplatformV1RubricGroup::class;
-    protected $rubricsDataType = 'map';
-    /**
-     * Optional. Responses from model under test and other baseline models for
-     * comparison.
-     *
-     * @param GoogleCloudAiplatformV1CandidateResponse[] $candidateResponses
-     */
-    public function setCandidateResponses($candidateResponses)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EvaluationRequest extends \Google\Collection
     {
+        protected $collection_key = 'candidateResponses';
+        protected $candidateResponsesType = GoogleCloudAiplatformV1CandidateResponse::class;
+        protected $candidateResponsesDataType = 'array';
+        protected $goldenResponseType = GoogleCloudAiplatformV1CandidateResponse::class;
+        protected $goldenResponseDataType = '';
+        protected $promptType = GoogleCloudAiplatformV1EvaluationPrompt::class;
+        protected $promptDataType = '';
+        protected $rubricsType = GoogleCloudAiplatformV1RubricGroup::class;
+        protected $rubricsDataType = 'map';
+        /**
+         * Optional. Responses from model under test and other baseline models for
+         * comparison.
+         *
+         * @param GoogleCloudAiplatformV1CandidateResponse[] $candidateResponses
+         */
+        public function setCandidateResponses($candidateResponses)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1CandidateResponse[]
+         */
+        public function getCandidateResponses()
+        {
+        }
+        /**
+         * Optional. The Ideal response or ground truth.
+         *
+         * @param GoogleCloudAiplatformV1CandidateResponse $goldenResponse
+         */
+        public function setGoldenResponse(GoogleCloudAiplatformV1CandidateResponse $goldenResponse)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1CandidateResponse
+         */
+        public function getGoldenResponse()
+        {
+        }
+        /**
+         * Required. The request/prompt to evaluate.
+         *
+         * @param GoogleCloudAiplatformV1EvaluationPrompt $prompt
+         */
+        public function setPrompt(GoogleCloudAiplatformV1EvaluationPrompt $prompt)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EvaluationPrompt
+         */
+        public function getPrompt()
+        {
+        }
+        /**
+         * Optional. Named groups of rubrics associated with this prompt. The key is a
+         * user-defined name for the rubric group.
+         *
+         * @param GoogleCloudAiplatformV1RubricGroup[] $rubrics
+         */
+        public function setRubrics($rubrics)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RubricGroup[]
+         */
+        public function getRubrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1CandidateResponse[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCandidateResponses()
-    {
-    }
-    /**
-     * Optional. The Ideal response or ground truth.
-     *
-     * @param GoogleCloudAiplatformV1CandidateResponse $goldenResponse
-     */
-    public function setGoldenResponse(GoogleCloudAiplatformV1CandidateResponse $goldenResponse)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1CandidateResponse
-     */
-    public function getGoldenResponse()
-    {
-    }
-    /**
-     * Required. The request/prompt to evaluate.
-     *
-     * @param GoogleCloudAiplatformV1EvaluationPrompt $prompt
-     */
-    public function setPrompt(GoogleCloudAiplatformV1EvaluationPrompt $prompt)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1EvaluationPrompt
-     */
-    public function getPrompt()
-    {
-    }
-    /**
-     * Optional. Named groups of rubrics associated with this prompt. The key is a
-     * user-defined name for the rubric group.
-     *
-     * @param GoogleCloudAiplatformV1RubricGroup[] $rubrics
-     */
-    public function setRubrics($rubrics)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RubricGroup[]
-     */
-    public function getRubrics()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EvaluationRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationRequest
     {
     }
 }

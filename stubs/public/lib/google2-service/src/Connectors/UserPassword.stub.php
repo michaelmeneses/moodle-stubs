@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class UserPassword extends \Google\Model
-{
-    protected $passwordType = Secret::class;
-    protected $passwordDataType = '';
-    /**
-     * @var string
-     */
-    public $username;
-    /**
-     * @param Secret
-     */
-    public function setPassword(Secret $password)
+namespace Google\Service\Connectors {
+    class UserPassword extends \Google\Model
     {
+        protected $passwordType = Secret::class;
+        protected $passwordDataType = '';
+        /**
+         * @var string
+         */
+        public $username;
+        /**
+         * @param Secret
+         */
+        public function setPassword(Secret $password)
+        {
+        }
+        /**
+         * @return Secret
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Secret
+     * Runtime class alias of \Google\Service\Connectors\UserPassword registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPassword()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_Connectors_UserPassword extends \Google\Service\Connectors\UserPassword
     {
     }
 }

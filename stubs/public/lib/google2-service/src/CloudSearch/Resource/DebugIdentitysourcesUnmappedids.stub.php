@@ -21,38 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch\Resource;
-
-/**
- * The "unmappedids" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudsearchService = new Google\Service\CloudSearch(...);
- *   $unmappedids = $cloudsearchService->debug_identitysources_unmappedids;
- *  </code>
- */
-class DebugIdentitysourcesUnmappedids extends \Google\Service\Resource
-{
+namespace Google\Service\CloudSearch\Resource {
+    use Google\Service\CloudSearch\ListUnmappedIdentitiesResponse;
     /**
-     * Lists unmapped user identities for an identity source. **Note:** This API
-     * requires an admin account to execute.
-     * (unmappedids.listDebugIdentitysourcesUnmappedids)
-     *
-     * @param string $parent The name of the identity source, in the following
-     * format: identitysources/{source_id}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool debugOptions.enableDebugging If you are asked by Google to
-     * help with debugging, set this field. Otherwise, ignore this field.
-     * @opt_param int pageSize Maximum number of items to fetch in a request.
-     * Defaults to 100.
-     * @opt_param string pageToken The next_page_token value returned from a
-     * previous List request, if any.
-     * @opt_param string resolutionStatusCode Limit users selection to this status.
-     * @return ListUnmappedIdentitiesResponse
-     * @throws \Google\Service\Exception
+     * The "unmappedids" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudsearchService = new Google\Service\CloudSearch(...);
+     *   $unmappedids = $cloudsearchService->debug_identitysources_unmappedids;
+     *  </code>
      */
-    public function listDebugIdentitysourcesUnmappedids($parent, $optParams = [])
+    class DebugIdentitysourcesUnmappedids extends \Google\Service\Resource
+    {
+        /**
+         * Lists unmapped user identities for an identity source. **Note:** This API
+         * requires an admin account to execute.
+         * (unmappedids.listDebugIdentitysourcesUnmappedids)
+         *
+         * @param string $parent The name of the identity source, in the following
+         * format: identitysources/{source_id}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool debugOptions.enableDebugging If you are asked by Google to
+         * help with debugging, set this field. Otherwise, ignore this field.
+         * @opt_param int pageSize Maximum number of items to fetch in a request.
+         * Defaults to 100.
+         * @opt_param string pageToken The next_page_token value returned from a
+         * previous List request, if any.
+         * @opt_param string resolutionStatusCode Limit users selection to this status.
+         * @return ListUnmappedIdentitiesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listDebugIdentitysourcesUnmappedids($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudSearch\Resource\DebugIdentitysourcesUnmappedids registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudSearch_Resource_DebugIdentitysourcesUnmappedids extends \Google\Service\CloudSearch\Resource\DebugIdentitysourcesUnmappedids
     {
     }
 }

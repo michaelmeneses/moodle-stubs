@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaAnswerQueryResponse extends \Google\Model
-{
-    protected $answerType = GoogleCloudDiscoveryengineV1betaAnswer::class;
-    protected $answerDataType = '';
-    protected $sessionType = GoogleCloudDiscoveryengineV1betaSession::class;
-    protected $sessionDataType = '';
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaAnswer
-     */
-    public function setAnswer(GoogleCloudDiscoveryengineV1betaAnswer $answer)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaAnswerQueryResponse extends \Google\Model
     {
+        protected $answerType = GoogleCloudDiscoveryengineV1betaAnswer::class;
+        protected $answerDataType = '';
+        protected $sessionType = GoogleCloudDiscoveryengineV1betaSession::class;
+        protected $sessionDataType = '';
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaAnswer
+         */
+        public function setAnswer(GoogleCloudDiscoveryengineV1betaAnswer $answer)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaAnswer
+         */
+        public function getAnswer()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaSession
+         */
+        public function setSession(GoogleCloudDiscoveryengineV1betaSession $session)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaSession
+         */
+        public function getSession()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaAnswer
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerQueryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswer()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaSession
-     */
-    public function setSession(GoogleCloudDiscoveryengineV1betaSession $session)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaSession
-     */
-    public function getSession()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaAnswerQueryResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerQueryResponse
     {
     }
 }

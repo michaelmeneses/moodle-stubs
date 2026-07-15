@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2WriteControl extends \Google\Model
-{
-    /**
-     * The revision ID of the label that the write request will be applied to. If
-     * this isn't the latest revision of the label, the request will not be
-     * processed and will return a 400 Bad Request error.
-     *
-     * @var string
-     */
-    public $requiredRevisionId;
-    /**
-     * The revision ID of the label that the write request will be applied to. If
-     * this isn't the latest revision of the label, the request will not be
-     * processed and will return a 400 Bad Request error.
-     *
-     * @param string $requiredRevisionId
-     */
-    public function setRequiredRevisionId($requiredRevisionId)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2WriteControl extends \Google\Model
     {
+        /**
+         * The revision ID of the label that the write request will be applied to. If
+         * this isn't the latest revision of the label, the request will not be
+         * processed and will return a 400 Bad Request error.
+         *
+         * @var string
+         */
+        public $requiredRevisionId;
+        /**
+         * The revision ID of the label that the write request will be applied to. If
+         * this isn't the latest revision of the label, the request will not be
+         * processed and will return a 400 Bad Request error.
+         *
+         * @param string $requiredRevisionId
+         */
+        public function setRequiredRevisionId($requiredRevisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequiredRevisionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2WriteControl registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequiredRevisionId()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2WriteControl extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2WriteControl
     {
     }
 }

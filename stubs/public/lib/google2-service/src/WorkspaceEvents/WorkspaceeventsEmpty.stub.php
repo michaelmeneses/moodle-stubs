@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class WorkspaceeventsEmpty extends \Google\Model
-{
+namespace Google\Service\WorkspaceEvents {
+    class WorkspaceeventsEmpty extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\WorkspaceEvents\WorkspaceeventsEmpty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_WorkspaceEvents_WorkspaceeventsEmpty extends \Google\Service\WorkspaceEvents\WorkspaceeventsEmpty
+    {
+    }
 }

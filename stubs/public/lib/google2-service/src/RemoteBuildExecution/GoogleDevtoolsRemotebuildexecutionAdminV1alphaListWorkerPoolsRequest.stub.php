@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemotebuildexecutionAdminV1alphaListWorkerPoolsRequest extends \Google\Model
-{
-    public $filter;
-    public $parent;
-    public function setFilter($filter)
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemotebuildexecutionAdminV1alphaListWorkerPoolsRequest extends \Google\Model
     {
+        public $filter;
+        public $parent;
+        public function setFilter($filter)
+        {
+        }
+        public function getFilter()
+        {
+        }
+        public function setParent($parent)
+        {
+        }
+        public function getParent()
+        {
+        }
     }
-    public function getFilter()
-    {
-    }
-    public function setParent($parent)
-    {
-    }
-    public function getParent()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaListWorkerPoolsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemotebuildexecutionAdminV1alphaListWorkerPoolsRequest extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaListWorkerPoolsRequest
     {
     }
 }

@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1ListMetadataJobsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachableLocations';
-    protected $metadataJobsType = GoogleCloudDataplexV1MetadataJob::class;
-    protected $metadataJobsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. If there are no more results
-     * in the list, the value is empty.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that the service couldn't reach.
-     *
-     * @var string[]
-     */
-    public $unreachableLocations;
-    /**
-     * Metadata jobs under the specified parent location.
-     *
-     * @param GoogleCloudDataplexV1MetadataJob[] $metadataJobs
-     */
-    public function setMetadataJobs($metadataJobs)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1ListMetadataJobsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachableLocations';
+        protected $metadataJobsType = GoogleCloudDataplexV1MetadataJob::class;
+        protected $metadataJobsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. If there are no more results
+         * in the list, the value is empty.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that the service couldn't reach.
+         *
+         * @var string[]
+         */
+        public $unreachableLocations;
+        /**
+         * Metadata jobs under the specified parent location.
+         *
+         * @param GoogleCloudDataplexV1MetadataJob[] $metadataJobs
+         */
+        public function setMetadataJobs($metadataJobs)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1MetadataJob[]
+         */
+        public function getMetadataJobs()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. If there are no more results
+         * in the list, the value is empty.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that the service couldn't reach.
+         *
+         * @param string[] $unreachableLocations
+         */
+        public function setUnreachableLocations($unreachableLocations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachableLocations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1MetadataJob[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListMetadataJobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadataJobs()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. If there are no more results
-     * in the list, the value is empty.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that the service couldn't reach.
-     *
-     * @param string[] $unreachableLocations
-     */
-    public function setUnreachableLocations($unreachableLocations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachableLocations()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1ListMetadataJobsResponse extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListMetadataJobsResponse
     {
     }
 }

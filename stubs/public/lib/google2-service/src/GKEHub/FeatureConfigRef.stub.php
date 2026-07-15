@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class FeatureConfigRef extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $config;
-    /**
-     * @var string
-     */
-    public $configUpdateTime;
-    /**
-     * @var string
-     */
-    public $uuid;
-    /**
-     * @param string
-     */
-    public function setConfig($config)
+namespace Google\Service\GKEHub {
+    class FeatureConfigRef extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $config;
+        /**
+         * @var string
+         */
+        public $configUpdateTime;
+        /**
+         * @var string
+         */
+        public $uuid;
+        /**
+         * @param string
+         */
+        public function setConfig($config)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setConfigUpdateTime($configUpdateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConfigUpdateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUuid($uuid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUuid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\FeatureConfigRef registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setConfigUpdateTime($configUpdateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConfigUpdateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUuid($uuid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUuid()
+    class Google_Service_GKEHub_FeatureConfigRef extends \Google\Service\GKEHub\FeatureConfigRef
     {
     }
 }

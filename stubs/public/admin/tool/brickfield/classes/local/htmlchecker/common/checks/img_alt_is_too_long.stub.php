@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield\local\htmlchecker\common\checks;
 
+use core_text;
+use tool_brickfield\local\htmlchecker\common\brickfield_accessibility_test;
 /**
  * Brickfield accessibility HTML checker library.
  *

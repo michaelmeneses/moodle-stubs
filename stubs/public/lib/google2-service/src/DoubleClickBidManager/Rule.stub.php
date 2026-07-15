@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DoubleClickBidManager;
-
-class Rule extends \Google\Collection
-{
-    protected $collection_key = 'disjunctiveMatchStatements';
-    protected $disjunctiveMatchStatementsType = DisjunctiveMatchStatement::class;
-    protected $disjunctiveMatchStatementsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param DisjunctiveMatchStatement[]
-     */
-    public function setDisjunctiveMatchStatements($disjunctiveMatchStatements)
+namespace Google\Service\DoubleClickBidManager {
+    class Rule extends \Google\Collection
     {
+        protected $collection_key = 'disjunctiveMatchStatements';
+        protected $disjunctiveMatchStatementsType = DisjunctiveMatchStatement::class;
+        protected $disjunctiveMatchStatementsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param DisjunctiveMatchStatement[]
+         */
+        public function setDisjunctiveMatchStatements($disjunctiveMatchStatements)
+        {
+        }
+        /**
+         * @return DisjunctiveMatchStatement[]
+         */
+        public function getDisjunctiveMatchStatements()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DisjunctiveMatchStatement[]
+     * Runtime class alias of \Google\Service\DoubleClickBidManager\Rule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisjunctiveMatchStatements()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_DoubleClickBidManager_Rule extends \Google\Service\DoubleClickBidManager\Rule
     {
     }
 }

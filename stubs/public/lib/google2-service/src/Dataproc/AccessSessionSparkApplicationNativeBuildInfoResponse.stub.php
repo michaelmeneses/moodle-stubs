@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class AccessSessionSparkApplicationNativeBuildInfoResponse extends \Google\Model
-{
-    protected $executionDataType = NativeBuildInfoUiData::class;
-    protected $executionDataDataType = '';
-    /**
-     * @param NativeBuildInfoUiData
-     */
-    public function setExecutionData(NativeBuildInfoUiData $executionData)
+namespace Google\Service\Dataproc {
+    class AccessSessionSparkApplicationNativeBuildInfoResponse extends \Google\Model
     {
+        protected $executionDataType = NativeBuildInfoUiData::class;
+        protected $executionDataDataType = '';
+        /**
+         * @param NativeBuildInfoUiData
+         */
+        public function setExecutionData(NativeBuildInfoUiData $executionData)
+        {
+        }
+        /**
+         * @return NativeBuildInfoUiData
+         */
+        public function getExecutionData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NativeBuildInfoUiData
+     * Runtime class alias of \Google\Service\Dataproc\AccessSessionSparkApplicationNativeBuildInfoResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecutionData()
+    class Google_Service_Dataproc_AccessSessionSparkApplicationNativeBuildInfoResponse extends \Google\Service\Dataproc\AccessSessionSparkApplicationNativeBuildInfoResponse
     {
     }
 }

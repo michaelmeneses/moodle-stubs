@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RetrieveMemoriesRequest extends \Google\Model
-{
-    /**
-     * Optional. The standard list filter that will be applied to the retrieved
-     * memories. More detail in [AIP-160](https://google.aip.dev/160). Supported
-     * fields: * `fact` * `create_time` * `update_time` * `topics` (i.e.
-     * `topics.custom_memory_topic_label: "example topic" OR
-     * topics.managed_memory_topic: USER_PREFERENCES`)
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * Required. The scope of the memories to retrieve. A memory must have exactly
-     * the same scope (`Memory.scope`) as the scope provided here to be retrieved
-     * (same keys and values). Order does not matter, but it is case-sensitive.
-     *
-     * @var string[]
-     */
-    public $scope;
-    protected $similaritySearchParamsType = GoogleCloudAiplatformV1RetrieveMemoriesRequestSimilaritySearchParams::class;
-    protected $similaritySearchParamsDataType = '';
-    protected $simpleRetrievalParamsType = GoogleCloudAiplatformV1RetrieveMemoriesRequestSimpleRetrievalParams::class;
-    protected $simpleRetrievalParamsDataType = '';
-    /**
-     * Optional. The standard list filter that will be applied to the retrieved
-     * memories. More detail in [AIP-160](https://google.aip.dev/160). Supported
-     * fields: * `fact` * `create_time` * `update_time` * `topics` (i.e.
-     * `topics.custom_memory_topic_label: "example topic" OR
-     * topics.managed_memory_topic: USER_PREFERENCES`)
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RetrieveMemoriesRequest extends \Google\Model
     {
+        /**
+         * Optional. The standard list filter that will be applied to the retrieved
+         * memories. More detail in [AIP-160](https://google.aip.dev/160). Supported
+         * fields: * `fact` * `create_time` * `update_time` * `topics` (i.e.
+         * `topics.custom_memory_topic_label: "example topic" OR
+         * topics.managed_memory_topic: USER_PREFERENCES`)
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * Required. The scope of the memories to retrieve. A memory must have exactly
+         * the same scope (`Memory.scope`) as the scope provided here to be retrieved
+         * (same keys and values). Order does not matter, but it is case-sensitive.
+         *
+         * @var string[]
+         */
+        public $scope;
+        protected $similaritySearchParamsType = GoogleCloudAiplatformV1RetrieveMemoriesRequestSimilaritySearchParams::class;
+        protected $similaritySearchParamsDataType = '';
+        protected $simpleRetrievalParamsType = GoogleCloudAiplatformV1RetrieveMemoriesRequestSimpleRetrievalParams::class;
+        protected $simpleRetrievalParamsDataType = '';
+        /**
+         * Optional. The standard list filter that will be applied to the retrieved
+         * memories. More detail in [AIP-160](https://google.aip.dev/160). Supported
+         * fields: * `fact` * `create_time` * `update_time` * `topics` (i.e.
+         * `topics.custom_memory_topic_label: "example topic" OR
+         * topics.managed_memory_topic: USER_PREFERENCES`)
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * Required. The scope of the memories to retrieve. A memory must have exactly
+         * the same scope (`Memory.scope`) as the scope provided here to be retrieved
+         * (same keys and values). Order does not matter, but it is case-sensitive.
+         *
+         * @param string[] $scope
+         */
+        public function setScope($scope)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScope()
+        {
+        }
+        /**
+         * Parameters for semantic similarity search based retrieval.
+         *
+         * @param GoogleCloudAiplatformV1RetrieveMemoriesRequestSimilaritySearchParams $similaritySearchParams
+         */
+        public function setSimilaritySearchParams(GoogleCloudAiplatformV1RetrieveMemoriesRequestSimilaritySearchParams $similaritySearchParams)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RetrieveMemoriesRequestSimilaritySearchParams
+         */
+        public function getSimilaritySearchParams()
+        {
+        }
+        /**
+         * Parameters for simple (non-similarity search) retrieval.
+         *
+         * @param GoogleCloudAiplatformV1RetrieveMemoriesRequestSimpleRetrievalParams $simpleRetrievalParams
+         */
+        public function setSimpleRetrievalParams(GoogleCloudAiplatformV1RetrieveMemoriesRequestSimpleRetrievalParams $simpleRetrievalParams)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RetrieveMemoriesRequestSimpleRetrievalParams
+         */
+        public function getSimpleRetrievalParams()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RetrieveMemoriesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
-    {
-    }
-    /**
-     * Required. The scope of the memories to retrieve. A memory must have exactly
-     * the same scope (`Memory.scope`) as the scope provided here to be retrieved
-     * (same keys and values). Order does not matter, but it is case-sensitive.
-     *
-     * @param string[] $scope
-     */
-    public function setScope($scope)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getScope()
-    {
-    }
-    /**
-     * Parameters for semantic similarity search based retrieval.
-     *
-     * @param GoogleCloudAiplatformV1RetrieveMemoriesRequestSimilaritySearchParams $similaritySearchParams
-     */
-    public function setSimilaritySearchParams(GoogleCloudAiplatformV1RetrieveMemoriesRequestSimilaritySearchParams $similaritySearchParams)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RetrieveMemoriesRequestSimilaritySearchParams
-     */
-    public function getSimilaritySearchParams()
-    {
-    }
-    /**
-     * Parameters for simple (non-similarity search) retrieval.
-     *
-     * @param GoogleCloudAiplatformV1RetrieveMemoriesRequestSimpleRetrievalParams $simpleRetrievalParams
-     */
-    public function setSimpleRetrievalParams(GoogleCloudAiplatformV1RetrieveMemoriesRequestSimpleRetrievalParams $simpleRetrievalParams)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RetrieveMemoriesRequestSimpleRetrievalParams
-     */
-    public function getSimpleRetrievalParams()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RetrieveMemoriesRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RetrieveMemoriesRequest
     {
     }
 }

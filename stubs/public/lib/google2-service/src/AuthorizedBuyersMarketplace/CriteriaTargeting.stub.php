@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class CriteriaTargeting extends \Google\Collection
-{
-    protected $collection_key = 'targetedCriteriaIds';
-    /**
-     * A list of numeric IDs to be excluded.
-     *
-     * @var string[]
-     */
-    public $excludedCriteriaIds;
-    /**
-     * A list of numeric IDs to be included.
-     *
-     * @var string[]
-     */
-    public $targetedCriteriaIds;
-    /**
-     * A list of numeric IDs to be excluded.
-     *
-     * @param string[] $excludedCriteriaIds
-     */
-    public function setExcludedCriteriaIds($excludedCriteriaIds)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class CriteriaTargeting extends \Google\Collection
     {
+        protected $collection_key = 'targetedCriteriaIds';
+        /**
+         * A list of numeric IDs to be excluded.
+         *
+         * @var string[]
+         */
+        public $excludedCriteriaIds;
+        /**
+         * A list of numeric IDs to be included.
+         *
+         * @var string[]
+         */
+        public $targetedCriteriaIds;
+        /**
+         * A list of numeric IDs to be excluded.
+         *
+         * @param string[] $excludedCriteriaIds
+         */
+        public function setExcludedCriteriaIds($excludedCriteriaIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludedCriteriaIds()
+        {
+        }
+        /**
+         * A list of numeric IDs to be included.
+         *
+         * @param string[] $targetedCriteriaIds
+         */
+        public function setTargetedCriteriaIds($targetedCriteriaIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTargetedCriteriaIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\CriteriaTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExcludedCriteriaIds()
-    {
-    }
-    /**
-     * A list of numeric IDs to be included.
-     *
-     * @param string[] $targetedCriteriaIds
-     */
-    public function setTargetedCriteriaIds($targetedCriteriaIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTargetedCriteriaIds()
+    class Google_Service_AuthorizedBuyersMarketplace_CriteriaTargeting extends \Google\Service\AuthorizedBuyersMarketplace\CriteriaTargeting
     {
     }
 }

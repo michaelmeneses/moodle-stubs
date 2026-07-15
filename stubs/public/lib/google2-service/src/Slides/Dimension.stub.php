@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class Dimension extends \Google\Model
-{
-    /**
-     * The units are unknown.
-     */
-    public const UNIT_UNIT_UNSPECIFIED = 'UNIT_UNSPECIFIED';
-    /**
-     * An English Metric Unit (EMU) is defined as 1/360,000 of a centimeter and
-     * thus there are 914,400 EMUs per inch, and 12,700 EMUs per point.
-     */
-    public const UNIT_EMU = 'EMU';
-    /**
-     * A point, 1/72 of an inch.
-     */
-    public const UNIT_PT = 'PT';
-    /**
-     * The magnitude.
-     *
-     * @var 
-     */
-    public $magnitude;
-    /**
-     * The units for magnitude.
-     *
-     * @var string
-     */
-    public $unit;
-    public function setMagnitude($magnitude)
+namespace Google\Service\Slides {
+    class Dimension extends \Google\Model
     {
+        /**
+         * The units are unknown.
+         */
+        public const UNIT_UNIT_UNSPECIFIED = 'UNIT_UNSPECIFIED';
+        /**
+         * An English Metric Unit (EMU) is defined as 1/360,000 of a centimeter and
+         * thus there are 914,400 EMUs per inch, and 12,700 EMUs per point.
+         */
+        public const UNIT_EMU = 'EMU';
+        /**
+         * A point, 1/72 of an inch.
+         */
+        public const UNIT_PT = 'PT';
+        /**
+         * The magnitude.
+         *
+         * @var 
+         */
+        public $magnitude;
+        /**
+         * The units for magnitude.
+         *
+         * @var string
+         */
+        public $unit;
+        public function setMagnitude($magnitude)
+        {
+        }
+        public function getMagnitude()
+        {
+        }
+        /**
+         * The units for magnitude.
+         *
+         * Accepted values: UNIT_UNSPECIFIED, EMU, PT
+         *
+         * @param self::UNIT_* $unit
+         */
+        public function setUnit($unit)
+        {
+        }
+        /**
+         * @return self::UNIT_*
+         */
+        public function getUnit()
+        {
+        }
     }
-    public function getMagnitude()
-    {
-    }
+}
+namespace {
     /**
-     * The units for magnitude.
-     *
-     * Accepted values: UNIT_UNSPECIFIED, EMU, PT
-     *
-     * @param self::UNIT_* $unit
+     * Runtime class alias of \Google\Service\Slides\Dimension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setUnit($unit)
-    {
-    }
-    /**
-     * @return self::UNIT_*
-     */
-    public function getUnit()
+    class Google_Service_Slides_Dimension extends \Google\Service\Slides\Dimension
     {
     }
 }

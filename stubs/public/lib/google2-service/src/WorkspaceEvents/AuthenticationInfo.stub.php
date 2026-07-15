@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class AuthenticationInfo extends \Google\Collection
-{
-    protected $collection_key = 'schemes';
-    /**
-     * Optional credentials
-     *
-     * @var string
-     */
-    public $credentials;
-    /**
-     * Supported authentication schemes - e.g. Basic, Bearer, etc
-     *
-     * @var string[]
-     */
-    public $schemes;
-    /**
-     * Optional credentials
-     *
-     * @param string $credentials
-     */
-    public function setCredentials($credentials)
+namespace Google\Service\WorkspaceEvents {
+    class AuthenticationInfo extends \Google\Collection
     {
+        protected $collection_key = 'schemes';
+        /**
+         * Optional credentials
+         *
+         * @var string
+         */
+        public $credentials;
+        /**
+         * Supported authentication schemes - e.g. Basic, Bearer, etc
+         *
+         * @var string[]
+         */
+        public $schemes;
+        /**
+         * Optional credentials
+         *
+         * @param string $credentials
+         */
+        public function setCredentials($credentials)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCredentials()
+        {
+        }
+        /**
+         * Supported authentication schemes - e.g. Basic, Bearer, etc
+         *
+         * @param string[] $schemes
+         */
+        public function setSchemes($schemes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSchemes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkspaceEvents\AuthenticationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCredentials()
-    {
-    }
-    /**
-     * Supported authentication schemes - e.g. Basic, Bearer, etc
-     *
-     * @param string[] $schemes
-     */
-    public function setSchemes($schemes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSchemes()
+    class Google_Service_WorkspaceEvents_AuthenticationInfo extends \Google\Service\WorkspaceEvents\AuthenticationInfo
     {
     }
 }

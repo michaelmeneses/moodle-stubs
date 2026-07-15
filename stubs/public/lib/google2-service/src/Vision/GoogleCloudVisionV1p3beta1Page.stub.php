@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p3beta1Page extends \Google\Collection
-{
-    protected $collection_key = 'blocks';
-    protected $blocksType = GoogleCloudVisionV1p3beta1Block::class;
-    protected $blocksDataType = 'array';
-    /**
-     * Confidence of the OCR results on the page. Range [0, 1].
-     *
-     * @var float
-     */
-    public $confidence;
-    /**
-     * Page height. For PDFs the unit is points. For images (including TIFFs) the
-     * unit is pixels.
-     *
-     * @var int
-     */
-    public $height;
-    protected $propertyType = GoogleCloudVisionV1p3beta1TextAnnotationTextProperty::class;
-    protected $propertyDataType = '';
-    /**
-     * Page width. For PDFs the unit is points. For images (including TIFFs) the
-     * unit is pixels.
-     *
-     * @var int
-     */
-    public $width;
-    /**
-     * List of blocks of text, images etc on this page.
-     *
-     * @param GoogleCloudVisionV1p3beta1Block[] $blocks
-     */
-    public function setBlocks($blocks)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p3beta1Page extends \Google\Collection
     {
+        protected $collection_key = 'blocks';
+        protected $blocksType = GoogleCloudVisionV1p3beta1Block::class;
+        protected $blocksDataType = 'array';
+        /**
+         * Confidence of the OCR results on the page. Range [0, 1].
+         *
+         * @var float
+         */
+        public $confidence;
+        /**
+         * Page height. For PDFs the unit is points. For images (including TIFFs) the
+         * unit is pixels.
+         *
+         * @var int
+         */
+        public $height;
+        protected $propertyType = GoogleCloudVisionV1p3beta1TextAnnotationTextProperty::class;
+        protected $propertyDataType = '';
+        /**
+         * Page width. For PDFs the unit is points. For images (including TIFFs) the
+         * unit is pixels.
+         *
+         * @var int
+         */
+        public $width;
+        /**
+         * List of blocks of text, images etc on this page.
+         *
+         * @param GoogleCloudVisionV1p3beta1Block[] $blocks
+         */
+        public function setBlocks($blocks)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p3beta1Block[]
+         */
+        public function getBlocks()
+        {
+        }
+        /**
+         * Confidence of the OCR results on the page. Range [0, 1].
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * Page height. For PDFs the unit is points. For images (including TIFFs) the
+         * unit is pixels.
+         *
+         * @param int $height
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * Additional information detected on the page.
+         *
+         * @param GoogleCloudVisionV1p3beta1TextAnnotationTextProperty $property
+         */
+        public function setProperty(GoogleCloudVisionV1p3beta1TextAnnotationTextProperty $property)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p3beta1TextAnnotationTextProperty
+         */
+        public function getProperty()
+        {
+        }
+        /**
+         * Page width. For PDFs the unit is points. For images (including TIFFs) the
+         * unit is pixels.
+         *
+         * @param int $width
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVisionV1p3beta1Block[]
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p3beta1Page registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlocks()
-    {
-    }
-    /**
-     * Confidence of the OCR results on the page. Range [0, 1].
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getConfidence()
-    {
-    }
-    /**
-     * Page height. For PDFs the unit is points. For images (including TIFFs) the
-     * unit is pixels.
-     *
-     * @param int $height
-     */
-    public function setHeight($height)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHeight()
-    {
-    }
-    /**
-     * Additional information detected on the page.
-     *
-     * @param GoogleCloudVisionV1p3beta1TextAnnotationTextProperty $property
-     */
-    public function setProperty(GoogleCloudVisionV1p3beta1TextAnnotationTextProperty $property)
-    {
-    }
-    /**
-     * @return GoogleCloudVisionV1p3beta1TextAnnotationTextProperty
-     */
-    public function getProperty()
-    {
-    }
-    /**
-     * Page width. For PDFs the unit is points. For images (including TIFFs) the
-     * unit is pixels.
-     *
-     * @param int $width
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWidth()
+    class Google_Service_Vision_GoogleCloudVisionV1p3beta1Page extends \Google\Service\Vision\GoogleCloudVisionV1p3beta1Page
     {
     }
 }

@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1EnvironmentGroupAttachment extends \Google\Model
-{
-    /**
-     * Output only. The time at which the environment group attachment was created
-     * as milliseconds since epoch.
-     *
-     * @var string
-     */
-    public $createdAt;
-    /**
-     * Required. ID of the attached environment.
-     *
-     * @var string
-     */
-    public $environment;
-    /**
-     * Output only. ID of the environment group.
-     *
-     * @var string
-     */
-    public $environmentGroupId;
-    /**
-     * ID of the environment group attachment.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The time at which the environment group attachment was created
-     * as milliseconds since epoch.
-     *
-     * @param string $createdAt
-     */
-    public function setCreatedAt($createdAt)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1EnvironmentGroupAttachment extends \Google\Model
     {
+        /**
+         * Output only. The time at which the environment group attachment was created
+         * as milliseconds since epoch.
+         *
+         * @var string
+         */
+        public $createdAt;
+        /**
+         * Required. ID of the attached environment.
+         *
+         * @var string
+         */
+        public $environment;
+        /**
+         * Output only. ID of the environment group.
+         *
+         * @var string
+         */
+        public $environmentGroupId;
+        /**
+         * ID of the environment group attachment.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The time at which the environment group attachment was created
+         * as milliseconds since epoch.
+         *
+         * @param string $createdAt
+         */
+        public function setCreatedAt($createdAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatedAt()
+        {
+        }
+        /**
+         * Required. ID of the attached environment.
+         *
+         * @param string $environment
+         */
+        public function setEnvironment($environment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * Output only. ID of the environment group.
+         *
+         * @param string $environmentGroupId
+         */
+        public function setEnvironmentGroupId($environmentGroupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvironmentGroupId()
+        {
+        }
+        /**
+         * ID of the environment group attachment.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1EnvironmentGroupAttachment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreatedAt()
-    {
-    }
-    /**
-     * Required. ID of the attached environment.
-     *
-     * @param string $environment
-     */
-    public function setEnvironment($environment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * Output only. ID of the environment group.
-     *
-     * @param string $environmentGroupId
-     */
-    public function setEnvironmentGroupId($environmentGroupId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnvironmentGroupId()
-    {
-    }
-    /**
-     * ID of the environment group attachment.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Apigee_GoogleCloudApigeeV1EnvironmentGroupAttachment extends \Google\Service\Apigee\GoogleCloudApigeeV1EnvironmentGroupAttachment
     {
     }
 }

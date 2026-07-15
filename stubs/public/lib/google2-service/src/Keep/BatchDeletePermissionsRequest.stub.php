@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Keep;
-
-class BatchDeletePermissionsRequest extends \Google\Collection
-{
-    protected $collection_key = 'names';
-    /**
-     * Required. The names of the permissions to delete. Format:
-     * `notes/{note}/permissions/{permission}`
-     *
-     * @var string[]
-     */
-    public $names;
-    /**
-     * Required. The names of the permissions to delete. Format:
-     * `notes/{note}/permissions/{permission}`
-     *
-     * @param string[] $names
-     */
-    public function setNames($names)
+namespace Google\Service\Keep {
+    class BatchDeletePermissionsRequest extends \Google\Collection
     {
+        protected $collection_key = 'names';
+        /**
+         * Required. The names of the permissions to delete. Format:
+         * `notes/{note}/permissions/{permission}`
+         *
+         * @var string[]
+         */
+        public $names;
+        /**
+         * Required. The names of the permissions to delete. Format:
+         * `notes/{note}/permissions/{permission}`
+         *
+         * @param string[] $names
+         */
+        public function setNames($names)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Keep\BatchDeletePermissionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNames()
+    class Google_Service_Keep_BatchDeletePermissionsRequest extends \Google\Service\Keep\BatchDeletePermissionsRequest
     {
     }
 }

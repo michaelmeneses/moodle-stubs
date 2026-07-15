@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class StorageDatabasecenterPartnerapiV1mainBackupDRMetadata extends \Google\Model
-{
-    protected $backupConfigurationType = StorageDatabasecenterPartnerapiV1mainBackupConfiguration::class;
-    protected $backupConfigurationDataType = '';
-    protected $backupRunType = StorageDatabasecenterPartnerapiV1mainBackupRun::class;
-    protected $backupRunDataType = '';
-    protected $backupdrConfigurationType = StorageDatabasecenterPartnerapiV1mainBackupDRConfiguration::class;
-    protected $backupdrConfigurationDataType = '';
-    /**
-     * Required. Full resource name of this instance.
-     *
-     * @var string
-     */
-    public $fullResourceName;
-    /**
-     * Required. Last time backup configuration was refreshed.
-     *
-     * @var string
-     */
-    public $lastRefreshTime;
-    protected $resourceIdType = StorageDatabasecenterPartnerapiV1mainDatabaseResourceId::class;
-    protected $resourceIdDataType = '';
-    /**
-     * Backup configuration for this instance.
-     *
-     * @param StorageDatabasecenterPartnerapiV1mainBackupConfiguration $backupConfiguration
-     */
-    public function setBackupConfiguration(StorageDatabasecenterPartnerapiV1mainBackupConfiguration $backupConfiguration)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class StorageDatabasecenterPartnerapiV1mainBackupDRMetadata extends \Google\Model
     {
+        protected $backupConfigurationType = StorageDatabasecenterPartnerapiV1mainBackupConfiguration::class;
+        protected $backupConfigurationDataType = '';
+        protected $backupRunType = StorageDatabasecenterPartnerapiV1mainBackupRun::class;
+        protected $backupRunDataType = '';
+        protected $backupdrConfigurationType = StorageDatabasecenterPartnerapiV1mainBackupDRConfiguration::class;
+        protected $backupdrConfigurationDataType = '';
+        /**
+         * Required. Full resource name of this instance.
+         *
+         * @var string
+         */
+        public $fullResourceName;
+        /**
+         * Required. Last time backup configuration was refreshed.
+         *
+         * @var string
+         */
+        public $lastRefreshTime;
+        protected $resourceIdType = StorageDatabasecenterPartnerapiV1mainDatabaseResourceId::class;
+        protected $resourceIdDataType = '';
+        /**
+         * Backup configuration for this instance.
+         *
+         * @param StorageDatabasecenterPartnerapiV1mainBackupConfiguration $backupConfiguration
+         */
+        public function setBackupConfiguration(StorageDatabasecenterPartnerapiV1mainBackupConfiguration $backupConfiguration)
+        {
+        }
+        /**
+         * @return StorageDatabasecenterPartnerapiV1mainBackupConfiguration
+         */
+        public function getBackupConfiguration()
+        {
+        }
+        /**
+         * Latest backup run information for this instance.
+         *
+         * @param StorageDatabasecenterPartnerapiV1mainBackupRun $backupRun
+         */
+        public function setBackupRun(StorageDatabasecenterPartnerapiV1mainBackupRun $backupRun)
+        {
+        }
+        /**
+         * @return StorageDatabasecenterPartnerapiV1mainBackupRun
+         */
+        public function getBackupRun()
+        {
+        }
+        /**
+         * BackupDR configuration for this instance.
+         *
+         * @param StorageDatabasecenterPartnerapiV1mainBackupDRConfiguration $backupdrConfiguration
+         */
+        public function setBackupdrConfiguration(StorageDatabasecenterPartnerapiV1mainBackupDRConfiguration $backupdrConfiguration)
+        {
+        }
+        /**
+         * @return StorageDatabasecenterPartnerapiV1mainBackupDRConfiguration
+         */
+        public function getBackupdrConfiguration()
+        {
+        }
+        /**
+         * Required. Full resource name of this instance.
+         *
+         * @param string $fullResourceName
+         */
+        public function setFullResourceName($fullResourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullResourceName()
+        {
+        }
+        /**
+         * Required. Last time backup configuration was refreshed.
+         *
+         * @param string $lastRefreshTime
+         */
+        public function setLastRefreshTime($lastRefreshTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastRefreshTime()
+        {
+        }
+        /**
+         * Required. Database resource id.
+         *
+         * @param StorageDatabasecenterPartnerapiV1mainDatabaseResourceId $resourceId
+         */
+        public function setResourceId(StorageDatabasecenterPartnerapiV1mainDatabaseResourceId $resourceId)
+        {
+        }
+        /**
+         * @return StorageDatabasecenterPartnerapiV1mainDatabaseResourceId
+         */
+        public function getResourceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StorageDatabasecenterPartnerapiV1mainBackupConfiguration
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\StorageDatabasecenterPartnerapiV1mainBackupDRMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupConfiguration()
-    {
-    }
-    /**
-     * Latest backup run information for this instance.
-     *
-     * @param StorageDatabasecenterPartnerapiV1mainBackupRun $backupRun
-     */
-    public function setBackupRun(StorageDatabasecenterPartnerapiV1mainBackupRun $backupRun)
-    {
-    }
-    /**
-     * @return StorageDatabasecenterPartnerapiV1mainBackupRun
-     */
-    public function getBackupRun()
-    {
-    }
-    /**
-     * BackupDR configuration for this instance.
-     *
-     * @param StorageDatabasecenterPartnerapiV1mainBackupDRConfiguration $backupdrConfiguration
-     */
-    public function setBackupdrConfiguration(StorageDatabasecenterPartnerapiV1mainBackupDRConfiguration $backupdrConfiguration)
-    {
-    }
-    /**
-     * @return StorageDatabasecenterPartnerapiV1mainBackupDRConfiguration
-     */
-    public function getBackupdrConfiguration()
-    {
-    }
-    /**
-     * Required. Full resource name of this instance.
-     *
-     * @param string $fullResourceName
-     */
-    public function setFullResourceName($fullResourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFullResourceName()
-    {
-    }
-    /**
-     * Required. Last time backup configuration was refreshed.
-     *
-     * @param string $lastRefreshTime
-     */
-    public function setLastRefreshTime($lastRefreshTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastRefreshTime()
-    {
-    }
-    /**
-     * Required. Database resource id.
-     *
-     * @param StorageDatabasecenterPartnerapiV1mainDatabaseResourceId $resourceId
-     */
-    public function setResourceId(StorageDatabasecenterPartnerapiV1mainDatabaseResourceId $resourceId)
-    {
-    }
-    /**
-     * @return StorageDatabasecenterPartnerapiV1mainDatabaseResourceId
-     */
-    public function getResourceId()
+    class Google_Service_CloudAlloyDBAdmin_StorageDatabasecenterPartnerapiV1mainBackupDRMetadata extends \Google\Service\CloudAlloyDBAdmin\StorageDatabasecenterPartnerapiV1mainBackupDRMetadata
     {
     }
 }

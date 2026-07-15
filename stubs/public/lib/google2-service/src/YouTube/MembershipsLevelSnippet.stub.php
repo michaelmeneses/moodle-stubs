@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class MembershipsLevelSnippet extends \Google\Model
-{
-    /**
-     * The id of the channel that's offering channel memberships.
-     *
-     * @var string
-     */
-    public $creatorChannelId;
-    protected $levelDetailsType = LevelDetails::class;
-    protected $levelDetailsDataType = '';
-    /**
-     * The id of the channel that's offering channel memberships.
-     *
-     * @param string $creatorChannelId
-     */
-    public function setCreatorChannelId($creatorChannelId)
+namespace Google\Service\YouTube {
+    class MembershipsLevelSnippet extends \Google\Model
     {
+        /**
+         * The id of the channel that's offering channel memberships.
+         *
+         * @var string
+         */
+        public $creatorChannelId;
+        protected $levelDetailsType = LevelDetails::class;
+        protected $levelDetailsDataType = '';
+        /**
+         * The id of the channel that's offering channel memberships.
+         *
+         * @param string $creatorChannelId
+         */
+        public function setCreatorChannelId($creatorChannelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatorChannelId()
+        {
+        }
+        /**
+         * Details about the pricing level.
+         *
+         * @param LevelDetails $levelDetails
+         */
+        public function setLevelDetails(LevelDetails $levelDetails)
+        {
+        }
+        /**
+         * @return LevelDetails
+         */
+        public function getLevelDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\MembershipsLevelSnippet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreatorChannelId()
-    {
-    }
-    /**
-     * Details about the pricing level.
-     *
-     * @param LevelDetails $levelDetails
-     */
-    public function setLevelDetails(LevelDetails $levelDetails)
-    {
-    }
-    /**
-     * @return LevelDetails
-     */
-    public function getLevelDetails()
+    class Google_Service_YouTube_MembershipsLevelSnippet extends \Google\Service\YouTube\MembershipsLevelSnippet
     {
     }
 }

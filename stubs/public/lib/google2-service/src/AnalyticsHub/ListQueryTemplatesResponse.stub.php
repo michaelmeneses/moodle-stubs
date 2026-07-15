@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class ListQueryTemplatesResponse extends \Google\Collection
-{
-    protected $collection_key = 'queryTemplates';
-    /**
-     * A token to request the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $queryTemplatesType = QueryTemplate::class;
-    protected $queryTemplatesDataType = 'array';
-    /**
-     * A token to request the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\AnalyticsHub {
+    class ListQueryTemplatesResponse extends \Google\Collection
     {
+        protected $collection_key = 'queryTemplates';
+        /**
+         * A token to request the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $queryTemplatesType = QueryTemplate::class;
+        protected $queryTemplatesDataType = 'array';
+        /**
+         * A token to request the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of QueryTemplates.
+         *
+         * @param QueryTemplate[] $queryTemplates
+         */
+        public function setQueryTemplates($queryTemplates)
+        {
+        }
+        /**
+         * @return QueryTemplate[]
+         */
+        public function getQueryTemplates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsHub\ListQueryTemplatesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of QueryTemplates.
-     *
-     * @param QueryTemplate[] $queryTemplates
-     */
-    public function setQueryTemplates($queryTemplates)
-    {
-    }
-    /**
-     * @return QueryTemplate[]
-     */
-    public function getQueryTemplates()
+    class Google_Service_AnalyticsHub_ListQueryTemplatesResponse extends \Google\Service\AnalyticsHub\ListQueryTemplatesResponse
     {
     }
 }

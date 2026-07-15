@@ -21,168 +21,177 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ResourceStatusEffectiveInstanceMetadata extends \Google\Model
-{
-    /**
-     * Effective block-project-ssh-keys value at Instance level.
-     *
-     * @var bool
-     */
-    public $blockProjectSshKeysMetadataValue;
-    /**
-     * Effective enable-guest-attributes value at Instance level.
-     *
-     * @var bool
-     */
-    public $enableGuestAttributesMetadataValue;
-    /**
-     * Effective enable-os-inventory value at Instance level.
-     *
-     * @var bool
-     */
-    public $enableOsInventoryMetadataValue;
-    /**
-     * Effective enable-osconfig value at Instance level.
-     *
-     * @var bool
-     */
-    public $enableOsconfigMetadataValue;
-    /**
-     * Effective enable-oslogin value at Instance level.
-     *
-     * @var bool
-     */
-    public $enableOsloginMetadataValue;
-    /**
-     * Effective serial-port-enable value at Instance level.
-     *
-     * @var bool
-     */
-    public $serialPortEnableMetadataValue;
-    /**
-     * Effective serial-port-logging-enable value at Instance level.
-     *
-     * @var bool
-     */
-    public $serialPortLoggingEnableMetadataValue;
-    /**
-     * Effective VM DNS setting at Instance level.
-     *
-     * @var string
-     */
-    public $vmDnsSettingMetadataValue;
-    /**
-     * Effective block-project-ssh-keys value at Instance level.
-     *
-     * @param bool $blockProjectSshKeysMetadataValue
-     */
-    public function setBlockProjectSshKeysMetadataValue($blockProjectSshKeysMetadataValue)
+namespace Google\Service\Compute {
+    class ResourceStatusEffectiveInstanceMetadata extends \Google\Model
     {
+        /**
+         * Effective block-project-ssh-keys value at Instance level.
+         *
+         * @var bool
+         */
+        public $blockProjectSshKeysMetadataValue;
+        /**
+         * Effective enable-guest-attributes value at Instance level.
+         *
+         * @var bool
+         */
+        public $enableGuestAttributesMetadataValue;
+        /**
+         * Effective enable-os-inventory value at Instance level.
+         *
+         * @var bool
+         */
+        public $enableOsInventoryMetadataValue;
+        /**
+         * Effective enable-osconfig value at Instance level.
+         *
+         * @var bool
+         */
+        public $enableOsconfigMetadataValue;
+        /**
+         * Effective enable-oslogin value at Instance level.
+         *
+         * @var bool
+         */
+        public $enableOsloginMetadataValue;
+        /**
+         * Effective serial-port-enable value at Instance level.
+         *
+         * @var bool
+         */
+        public $serialPortEnableMetadataValue;
+        /**
+         * Effective serial-port-logging-enable value at Instance level.
+         *
+         * @var bool
+         */
+        public $serialPortLoggingEnableMetadataValue;
+        /**
+         * Effective VM DNS setting at Instance level.
+         *
+         * @var string
+         */
+        public $vmDnsSettingMetadataValue;
+        /**
+         * Effective block-project-ssh-keys value at Instance level.
+         *
+         * @param bool $blockProjectSshKeysMetadataValue
+         */
+        public function setBlockProjectSshKeysMetadataValue($blockProjectSshKeysMetadataValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBlockProjectSshKeysMetadataValue()
+        {
+        }
+        /**
+         * Effective enable-guest-attributes value at Instance level.
+         *
+         * @param bool $enableGuestAttributesMetadataValue
+         */
+        public function setEnableGuestAttributesMetadataValue($enableGuestAttributesMetadataValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableGuestAttributesMetadataValue()
+        {
+        }
+        /**
+         * Effective enable-os-inventory value at Instance level.
+         *
+         * @param bool $enableOsInventoryMetadataValue
+         */
+        public function setEnableOsInventoryMetadataValue($enableOsInventoryMetadataValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableOsInventoryMetadataValue()
+        {
+        }
+        /**
+         * Effective enable-osconfig value at Instance level.
+         *
+         * @param bool $enableOsconfigMetadataValue
+         */
+        public function setEnableOsconfigMetadataValue($enableOsconfigMetadataValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableOsconfigMetadataValue()
+        {
+        }
+        /**
+         * Effective enable-oslogin value at Instance level.
+         *
+         * @param bool $enableOsloginMetadataValue
+         */
+        public function setEnableOsloginMetadataValue($enableOsloginMetadataValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableOsloginMetadataValue()
+        {
+        }
+        /**
+         * Effective serial-port-enable value at Instance level.
+         *
+         * @param bool $serialPortEnableMetadataValue
+         */
+        public function setSerialPortEnableMetadataValue($serialPortEnableMetadataValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSerialPortEnableMetadataValue()
+        {
+        }
+        /**
+         * Effective serial-port-logging-enable value at Instance level.
+         *
+         * @param bool $serialPortLoggingEnableMetadataValue
+         */
+        public function setSerialPortLoggingEnableMetadataValue($serialPortLoggingEnableMetadataValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSerialPortLoggingEnableMetadataValue()
+        {
+        }
+        /**
+         * Effective VM DNS setting at Instance level.
+         *
+         * @param string $vmDnsSettingMetadataValue
+         */
+        public function setVmDnsSettingMetadataValue($vmDnsSettingMetadataValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVmDnsSettingMetadataValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Compute\ResourceStatusEffectiveInstanceMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlockProjectSshKeysMetadataValue()
-    {
-    }
-    /**
-     * Effective enable-guest-attributes value at Instance level.
-     *
-     * @param bool $enableGuestAttributesMetadataValue
-     */
-    public function setEnableGuestAttributesMetadataValue($enableGuestAttributesMetadataValue)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableGuestAttributesMetadataValue()
-    {
-    }
-    /**
-     * Effective enable-os-inventory value at Instance level.
-     *
-     * @param bool $enableOsInventoryMetadataValue
-     */
-    public function setEnableOsInventoryMetadataValue($enableOsInventoryMetadataValue)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableOsInventoryMetadataValue()
-    {
-    }
-    /**
-     * Effective enable-osconfig value at Instance level.
-     *
-     * @param bool $enableOsconfigMetadataValue
-     */
-    public function setEnableOsconfigMetadataValue($enableOsconfigMetadataValue)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableOsconfigMetadataValue()
-    {
-    }
-    /**
-     * Effective enable-oslogin value at Instance level.
-     *
-     * @param bool $enableOsloginMetadataValue
-     */
-    public function setEnableOsloginMetadataValue($enableOsloginMetadataValue)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableOsloginMetadataValue()
-    {
-    }
-    /**
-     * Effective serial-port-enable value at Instance level.
-     *
-     * @param bool $serialPortEnableMetadataValue
-     */
-    public function setSerialPortEnableMetadataValue($serialPortEnableMetadataValue)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSerialPortEnableMetadataValue()
-    {
-    }
-    /**
-     * Effective serial-port-logging-enable value at Instance level.
-     *
-     * @param bool $serialPortLoggingEnableMetadataValue
-     */
-    public function setSerialPortLoggingEnableMetadataValue($serialPortLoggingEnableMetadataValue)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSerialPortLoggingEnableMetadataValue()
-    {
-    }
-    /**
-     * Effective VM DNS setting at Instance level.
-     *
-     * @param string $vmDnsSettingMetadataValue
-     */
-    public function setVmDnsSettingMetadataValue($vmDnsSettingMetadataValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVmDnsSettingMetadataValue()
+    class Google_Service_Compute_ResourceStatusEffectiveInstanceMetadata extends \Google\Service\Compute\ResourceStatusEffectiveInstanceMetadata
     {
     }
 }

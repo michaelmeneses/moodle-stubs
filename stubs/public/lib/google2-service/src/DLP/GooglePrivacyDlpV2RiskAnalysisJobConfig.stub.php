@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2RiskAnalysisJobConfig extends \Google\Collection
-{
-    protected $collection_key = 'actions';
-    protected $actionsType = GooglePrivacyDlpV2Action::class;
-    protected $actionsDataType = 'array';
-    protected $privacyMetricType = GooglePrivacyDlpV2PrivacyMetric::class;
-    protected $privacyMetricDataType = '';
-    protected $sourceTableType = GooglePrivacyDlpV2BigQueryTable::class;
-    protected $sourceTableDataType = '';
-    /**
-     * Actions to execute at the completion of the job. Are executed in the order
-     * provided.
-     *
-     * @param GooglePrivacyDlpV2Action[] $actions
-     */
-    public function setActions($actions)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2RiskAnalysisJobConfig extends \Google\Collection
     {
+        protected $collection_key = 'actions';
+        protected $actionsType = GooglePrivacyDlpV2Action::class;
+        protected $actionsDataType = 'array';
+        protected $privacyMetricType = GooglePrivacyDlpV2PrivacyMetric::class;
+        protected $privacyMetricDataType = '';
+        protected $sourceTableType = GooglePrivacyDlpV2BigQueryTable::class;
+        protected $sourceTableDataType = '';
+        /**
+         * Actions to execute at the completion of the job. Are executed in the order
+         * provided.
+         *
+         * @param GooglePrivacyDlpV2Action[] $actions
+         */
+        public function setActions($actions)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Action[]
+         */
+        public function getActions()
+        {
+        }
+        /**
+         * Privacy metric to compute.
+         *
+         * @param GooglePrivacyDlpV2PrivacyMetric $privacyMetric
+         */
+        public function setPrivacyMetric(GooglePrivacyDlpV2PrivacyMetric $privacyMetric)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2PrivacyMetric
+         */
+        public function getPrivacyMetric()
+        {
+        }
+        /**
+         * Input dataset to compute metrics over.
+         *
+         * @param GooglePrivacyDlpV2BigQueryTable $sourceTable
+         */
+        public function setSourceTable(GooglePrivacyDlpV2BigQueryTable $sourceTable)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2BigQueryTable
+         */
+        public function getSourceTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2Action[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2RiskAnalysisJobConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActions()
-    {
-    }
-    /**
-     * Privacy metric to compute.
-     *
-     * @param GooglePrivacyDlpV2PrivacyMetric $privacyMetric
-     */
-    public function setPrivacyMetric(GooglePrivacyDlpV2PrivacyMetric $privacyMetric)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2PrivacyMetric
-     */
-    public function getPrivacyMetric()
-    {
-    }
-    /**
-     * Input dataset to compute metrics over.
-     *
-     * @param GooglePrivacyDlpV2BigQueryTable $sourceTable
-     */
-    public function setSourceTable(GooglePrivacyDlpV2BigQueryTable $sourceTable)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2BigQueryTable
-     */
-    public function getSourceTable()
+    class Google_Service_DLP_GooglePrivacyDlpV2RiskAnalysisJobConfig extends \Google\Service\DLP\GooglePrivacyDlpV2RiskAnalysisJobConfig
     {
     }
 }

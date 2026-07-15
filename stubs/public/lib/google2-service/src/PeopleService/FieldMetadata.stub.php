@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class FieldMetadata extends \Google\Model
-{
-    /**
-     * Output only. True if the field is the primary field for all sources in the
-     * person. Each person will have at most one field with `primary` set to true.
-     *
-     * @var bool
-     */
-    public $primary;
-    protected $sourceType = Source::class;
-    protected $sourceDataType = '';
-    /**
-     * True if the field is the primary field for the source. Each source must
-     * have at most one field with `source_primary` set to true.
-     *
-     * @var bool
-     */
-    public $sourcePrimary;
-    /**
-     * Output only. True if the field is verified; false if the field is
-     * unverified. A verified field is typically a name, email address, phone
-     * number, or website that has been confirmed to be owned by the person.
-     *
-     * @var bool
-     */
-    public $verified;
-    /**
-     * Output only. True if the field is the primary field for all sources in the
-     * person. Each person will have at most one field with `primary` set to true.
-     *
-     * @param bool $primary
-     */
-    public function setPrimary($primary)
+namespace Google\Service\PeopleService {
+    class FieldMetadata extends \Google\Model
     {
+        /**
+         * Output only. True if the field is the primary field for all sources in the
+         * person. Each person will have at most one field with `primary` set to true.
+         *
+         * @var bool
+         */
+        public $primary;
+        protected $sourceType = Source::class;
+        protected $sourceDataType = '';
+        /**
+         * True if the field is the primary field for the source. Each source must
+         * have at most one field with `source_primary` set to true.
+         *
+         * @var bool
+         */
+        public $sourcePrimary;
+        /**
+         * Output only. True if the field is verified; false if the field is
+         * unverified. A verified field is typically a name, email address, phone
+         * number, or website that has been confirmed to be owned by the person.
+         *
+         * @var bool
+         */
+        public $verified;
+        /**
+         * Output only. True if the field is the primary field for all sources in the
+         * person. Each person will have at most one field with `primary` set to true.
+         *
+         * @param bool $primary
+         */
+        public function setPrimary($primary)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPrimary()
+        {
+        }
+        /**
+         * The source of the field.
+         *
+         * @param Source $source
+         */
+        public function setSource(Source $source)
+        {
+        }
+        /**
+         * @return Source
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * True if the field is the primary field for the source. Each source must
+         * have at most one field with `source_primary` set to true.
+         *
+         * @param bool $sourcePrimary
+         */
+        public function setSourcePrimary($sourcePrimary)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSourcePrimary()
+        {
+        }
+        /**
+         * Output only. True if the field is verified; false if the field is
+         * unverified. A verified field is typically a name, email address, phone
+         * number, or website that has been confirmed to be owned by the person.
+         *
+         * @param bool $verified
+         */
+        public function setVerified($verified)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getVerified()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\PeopleService\FieldMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrimary()
-    {
-    }
-    /**
-     * The source of the field.
-     *
-     * @param Source $source
-     */
-    public function setSource(Source $source)
-    {
-    }
-    /**
-     * @return Source
-     */
-    public function getSource()
-    {
-    }
-    /**
-     * True if the field is the primary field for the source. Each source must
-     * have at most one field with `source_primary` set to true.
-     *
-     * @param bool $sourcePrimary
-     */
-    public function setSourcePrimary($sourcePrimary)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSourcePrimary()
-    {
-    }
-    /**
-     * Output only. True if the field is verified; false if the field is
-     * unverified. A verified field is typically a name, email address, phone
-     * number, or website that has been confirmed to be owned by the person.
-     *
-     * @param bool $verified
-     */
-    public function setVerified($verified)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getVerified()
+    class Google_Service_PeopleService_FieldMetadata extends \Google\Service\PeopleService\FieldMetadata
     {
     }
 }

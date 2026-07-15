@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class CoverPhoto extends \Google\Model
-{
-    /**
-     * True if the cover photo is the default cover photo; false if the cover
-     * photo is a user-provided cover photo.
-     *
-     * @var bool
-     */
-    public $default;
-    protected $metadataType = FieldMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * The URL of the cover photo.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * True if the cover photo is the default cover photo; false if the cover
-     * photo is a user-provided cover photo.
-     *
-     * @param bool $default
-     */
-    public function setDefault($default)
+namespace Google\Service\PeopleService {
+    class CoverPhoto extends \Google\Model
     {
+        /**
+         * True if the cover photo is the default cover photo; false if the cover
+         * photo is a user-provided cover photo.
+         *
+         * @var bool
+         */
+        public $default;
+        protected $metadataType = FieldMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * The URL of the cover photo.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * True if the cover photo is the default cover photo; false if the cover
+         * photo is a user-provided cover photo.
+         *
+         * @param bool $default
+         */
+        public function setDefault($default)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDefault()
+        {
+        }
+        /**
+         * Metadata about the cover photo.
+         *
+         * @param FieldMetadata $metadata
+         */
+        public function setMetadata(FieldMetadata $metadata)
+        {
+        }
+        /**
+         * @return FieldMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The URL of the cover photo.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\PeopleService\CoverPhoto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefault()
-    {
-    }
-    /**
-     * Metadata about the cover photo.
-     *
-     * @param FieldMetadata $metadata
-     */
-    public function setMetadata(FieldMetadata $metadata)
-    {
-    }
-    /**
-     * @return FieldMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The URL of the cover photo.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_PeopleService_CoverPhoto extends \Google\Service\PeopleService\CoverPhoto
     {
     }
 }

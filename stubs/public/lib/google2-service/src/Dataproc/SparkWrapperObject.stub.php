@@ -21,346 +21,355 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SparkWrapperObject extends \Google\Model
-{
-    protected $appSummaryType = AppSummary::class;
-    protected $appSummaryDataType = '';
-    protected $applicationEnvironmentInfoType = ApplicationEnvironmentInfo::class;
-    protected $applicationEnvironmentInfoDataType = '';
-    /**
-     * Application Id created by Spark.
-     *
-     * @var string
-     */
-    public $applicationId;
-    protected $applicationInfoType = ApplicationInfo::class;
-    protected $applicationInfoDataType = '';
-    /**
-     * VM Timestamp associated with the data object.
-     *
-     * @var string
-     */
-    public $eventTimestamp;
-    protected $executorStageSummaryType = ExecutorStageSummary::class;
-    protected $executorStageSummaryDataType = '';
-    protected $executorSummaryType = ExecutorSummary::class;
-    protected $executorSummaryDataType = '';
-    protected $jobDataType = JobData::class;
-    protected $jobDataDataType = '';
-    protected $nativeBuildInfoUiDataType = NativeBuildInfoUiData::class;
-    protected $nativeBuildInfoUiDataDataType = '';
-    protected $nativeSqlExecutionUiDataType = NativeSqlExecutionUiData::class;
-    protected $nativeSqlExecutionUiDataDataType = '';
-    protected $poolDataType = PoolData::class;
-    protected $poolDataDataType = '';
-    protected $processSummaryType = ProcessSummary::class;
-    protected $processSummaryDataType = '';
-    protected $rddOperationGraphType = RddOperationGraph::class;
-    protected $rddOperationGraphDataType = '';
-    protected $rddStorageInfoType = RddStorageInfo::class;
-    protected $rddStorageInfoDataType = '';
-    protected $resourceProfileInfoType = ResourceProfileInfo::class;
-    protected $resourceProfileInfoDataType = '';
-    protected $sparkPlanGraphType = SparkPlanGraph::class;
-    protected $sparkPlanGraphDataType = '';
-    protected $speculationStageSummaryType = SpeculationStageSummary::class;
-    protected $speculationStageSummaryDataType = '';
-    protected $sqlExecutionUiDataType = SqlExecutionUiData::class;
-    protected $sqlExecutionUiDataDataType = '';
-    protected $stageDataType = StageData::class;
-    protected $stageDataDataType = '';
-    protected $streamBlockDataType = StreamBlockData::class;
-    protected $streamBlockDataDataType = '';
-    protected $streamingQueryDataType = StreamingQueryData::class;
-    protected $streamingQueryDataDataType = '';
-    protected $streamingQueryProgressType = StreamingQueryProgress::class;
-    protected $streamingQueryProgressDataType = '';
-    protected $taskDataType = TaskData::class;
-    protected $taskDataDataType = '';
-    /**
-     * @param AppSummary $appSummary
-     */
-    public function setAppSummary(AppSummary $appSummary)
+namespace Google\Service\Dataproc {
+    class SparkWrapperObject extends \Google\Model
     {
+        protected $appSummaryType = AppSummary::class;
+        protected $appSummaryDataType = '';
+        protected $applicationEnvironmentInfoType = ApplicationEnvironmentInfo::class;
+        protected $applicationEnvironmentInfoDataType = '';
+        /**
+         * Application Id created by Spark.
+         *
+         * @var string
+         */
+        public $applicationId;
+        protected $applicationInfoType = ApplicationInfo::class;
+        protected $applicationInfoDataType = '';
+        /**
+         * VM Timestamp associated with the data object.
+         *
+         * @var string
+         */
+        public $eventTimestamp;
+        protected $executorStageSummaryType = ExecutorStageSummary::class;
+        protected $executorStageSummaryDataType = '';
+        protected $executorSummaryType = ExecutorSummary::class;
+        protected $executorSummaryDataType = '';
+        protected $jobDataType = JobData::class;
+        protected $jobDataDataType = '';
+        protected $nativeBuildInfoUiDataType = NativeBuildInfoUiData::class;
+        protected $nativeBuildInfoUiDataDataType = '';
+        protected $nativeSqlExecutionUiDataType = NativeSqlExecutionUiData::class;
+        protected $nativeSqlExecutionUiDataDataType = '';
+        protected $poolDataType = PoolData::class;
+        protected $poolDataDataType = '';
+        protected $processSummaryType = ProcessSummary::class;
+        protected $processSummaryDataType = '';
+        protected $rddOperationGraphType = RddOperationGraph::class;
+        protected $rddOperationGraphDataType = '';
+        protected $rddStorageInfoType = RddStorageInfo::class;
+        protected $rddStorageInfoDataType = '';
+        protected $resourceProfileInfoType = ResourceProfileInfo::class;
+        protected $resourceProfileInfoDataType = '';
+        protected $sparkPlanGraphType = SparkPlanGraph::class;
+        protected $sparkPlanGraphDataType = '';
+        protected $speculationStageSummaryType = SpeculationStageSummary::class;
+        protected $speculationStageSummaryDataType = '';
+        protected $sqlExecutionUiDataType = SqlExecutionUiData::class;
+        protected $sqlExecutionUiDataDataType = '';
+        protected $stageDataType = StageData::class;
+        protected $stageDataDataType = '';
+        protected $streamBlockDataType = StreamBlockData::class;
+        protected $streamBlockDataDataType = '';
+        protected $streamingQueryDataType = StreamingQueryData::class;
+        protected $streamingQueryDataDataType = '';
+        protected $streamingQueryProgressType = StreamingQueryProgress::class;
+        protected $streamingQueryProgressDataType = '';
+        protected $taskDataType = TaskData::class;
+        protected $taskDataDataType = '';
+        /**
+         * @param AppSummary $appSummary
+         */
+        public function setAppSummary(AppSummary $appSummary)
+        {
+        }
+        /**
+         * @return AppSummary
+         */
+        public function getAppSummary()
+        {
+        }
+        /**
+         * @param ApplicationEnvironmentInfo $applicationEnvironmentInfo
+         */
+        public function setApplicationEnvironmentInfo(ApplicationEnvironmentInfo $applicationEnvironmentInfo)
+        {
+        }
+        /**
+         * @return ApplicationEnvironmentInfo
+         */
+        public function getApplicationEnvironmentInfo()
+        {
+        }
+        /**
+         * Application Id created by Spark.
+         *
+         * @param string $applicationId
+         */
+        public function setApplicationId($applicationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicationId()
+        {
+        }
+        /**
+         * @param ApplicationInfo $applicationInfo
+         */
+        public function setApplicationInfo(ApplicationInfo $applicationInfo)
+        {
+        }
+        /**
+         * @return ApplicationInfo
+         */
+        public function getApplicationInfo()
+        {
+        }
+        /**
+         * VM Timestamp associated with the data object.
+         *
+         * @param string $eventTimestamp
+         */
+        public function setEventTimestamp($eventTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventTimestamp()
+        {
+        }
+        /**
+         * @param ExecutorStageSummary $executorStageSummary
+         */
+        public function setExecutorStageSummary(ExecutorStageSummary $executorStageSummary)
+        {
+        }
+        /**
+         * @return ExecutorStageSummary
+         */
+        public function getExecutorStageSummary()
+        {
+        }
+        /**
+         * @param ExecutorSummary $executorSummary
+         */
+        public function setExecutorSummary(ExecutorSummary $executorSummary)
+        {
+        }
+        /**
+         * @return ExecutorSummary
+         */
+        public function getExecutorSummary()
+        {
+        }
+        /**
+         * @param JobData $jobData
+         */
+        public function setJobData(JobData $jobData)
+        {
+        }
+        /**
+         * @return JobData
+         */
+        public function getJobData()
+        {
+        }
+        /**
+         * Native Build Info
+         *
+         * @param NativeBuildInfoUiData $nativeBuildInfoUiData
+         */
+        public function setNativeBuildInfoUiData(NativeBuildInfoUiData $nativeBuildInfoUiData)
+        {
+        }
+        /**
+         * @return NativeBuildInfoUiData
+         */
+        public function getNativeBuildInfoUiData()
+        {
+        }
+        /**
+         * Native SQL Execution Info
+         *
+         * @param NativeSqlExecutionUiData $nativeSqlExecutionUiData
+         */
+        public function setNativeSqlExecutionUiData(NativeSqlExecutionUiData $nativeSqlExecutionUiData)
+        {
+        }
+        /**
+         * @return NativeSqlExecutionUiData
+         */
+        public function getNativeSqlExecutionUiData()
+        {
+        }
+        /**
+         * @param PoolData $poolData
+         */
+        public function setPoolData(PoolData $poolData)
+        {
+        }
+        /**
+         * @return PoolData
+         */
+        public function getPoolData()
+        {
+        }
+        /**
+         * @param ProcessSummary $processSummary
+         */
+        public function setProcessSummary(ProcessSummary $processSummary)
+        {
+        }
+        /**
+         * @return ProcessSummary
+         */
+        public function getProcessSummary()
+        {
+        }
+        /**
+         * @param RddOperationGraph $rddOperationGraph
+         */
+        public function setRddOperationGraph(RddOperationGraph $rddOperationGraph)
+        {
+        }
+        /**
+         * @return RddOperationGraph
+         */
+        public function getRddOperationGraph()
+        {
+        }
+        /**
+         * @param RddStorageInfo $rddStorageInfo
+         */
+        public function setRddStorageInfo(RddStorageInfo $rddStorageInfo)
+        {
+        }
+        /**
+         * @return RddStorageInfo
+         */
+        public function getRddStorageInfo()
+        {
+        }
+        /**
+         * @param ResourceProfileInfo $resourceProfileInfo
+         */
+        public function setResourceProfileInfo(ResourceProfileInfo $resourceProfileInfo)
+        {
+        }
+        /**
+         * @return ResourceProfileInfo
+         */
+        public function getResourceProfileInfo()
+        {
+        }
+        /**
+         * @param SparkPlanGraph $sparkPlanGraph
+         */
+        public function setSparkPlanGraph(SparkPlanGraph $sparkPlanGraph)
+        {
+        }
+        /**
+         * @return SparkPlanGraph
+         */
+        public function getSparkPlanGraph()
+        {
+        }
+        /**
+         * @param SpeculationStageSummary $speculationStageSummary
+         */
+        public function setSpeculationStageSummary(SpeculationStageSummary $speculationStageSummary)
+        {
+        }
+        /**
+         * @return SpeculationStageSummary
+         */
+        public function getSpeculationStageSummary()
+        {
+        }
+        /**
+         * @param SqlExecutionUiData $sqlExecutionUiData
+         */
+        public function setSqlExecutionUiData(SqlExecutionUiData $sqlExecutionUiData)
+        {
+        }
+        /**
+         * @return SqlExecutionUiData
+         */
+        public function getSqlExecutionUiData()
+        {
+        }
+        /**
+         * @param StageData $stageData
+         */
+        public function setStageData(StageData $stageData)
+        {
+        }
+        /**
+         * @return StageData
+         */
+        public function getStageData()
+        {
+        }
+        /**
+         * @param StreamBlockData $streamBlockData
+         */
+        public function setStreamBlockData(StreamBlockData $streamBlockData)
+        {
+        }
+        /**
+         * @return StreamBlockData
+         */
+        public function getStreamBlockData()
+        {
+        }
+        /**
+         * @param StreamingQueryData $streamingQueryData
+         */
+        public function setStreamingQueryData(StreamingQueryData $streamingQueryData)
+        {
+        }
+        /**
+         * @return StreamingQueryData
+         */
+        public function getStreamingQueryData()
+        {
+        }
+        /**
+         * @param StreamingQueryProgress $streamingQueryProgress
+         */
+        public function setStreamingQueryProgress(StreamingQueryProgress $streamingQueryProgress)
+        {
+        }
+        /**
+         * @return StreamingQueryProgress
+         */
+        public function getStreamingQueryProgress()
+        {
+        }
+        /**
+         * @param TaskData $taskData
+         */
+        public function setTaskData(TaskData $taskData)
+        {
+        }
+        /**
+         * @return TaskData
+         */
+        public function getTaskData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppSummary
+     * Runtime class alias of \Google\Service\Dataproc\SparkWrapperObject registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppSummary()
-    {
-    }
-    /**
-     * @param ApplicationEnvironmentInfo $applicationEnvironmentInfo
-     */
-    public function setApplicationEnvironmentInfo(ApplicationEnvironmentInfo $applicationEnvironmentInfo)
-    {
-    }
-    /**
-     * @return ApplicationEnvironmentInfo
-     */
-    public function getApplicationEnvironmentInfo()
-    {
-    }
-    /**
-     * Application Id created by Spark.
-     *
-     * @param string $applicationId
-     */
-    public function setApplicationId($applicationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getApplicationId()
-    {
-    }
-    /**
-     * @param ApplicationInfo $applicationInfo
-     */
-    public function setApplicationInfo(ApplicationInfo $applicationInfo)
-    {
-    }
-    /**
-     * @return ApplicationInfo
-     */
-    public function getApplicationInfo()
-    {
-    }
-    /**
-     * VM Timestamp associated with the data object.
-     *
-     * @param string $eventTimestamp
-     */
-    public function setEventTimestamp($eventTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventTimestamp()
-    {
-    }
-    /**
-     * @param ExecutorStageSummary $executorStageSummary
-     */
-    public function setExecutorStageSummary(ExecutorStageSummary $executorStageSummary)
-    {
-    }
-    /**
-     * @return ExecutorStageSummary
-     */
-    public function getExecutorStageSummary()
-    {
-    }
-    /**
-     * @param ExecutorSummary $executorSummary
-     */
-    public function setExecutorSummary(ExecutorSummary $executorSummary)
-    {
-    }
-    /**
-     * @return ExecutorSummary
-     */
-    public function getExecutorSummary()
-    {
-    }
-    /**
-     * @param JobData $jobData
-     */
-    public function setJobData(JobData $jobData)
-    {
-    }
-    /**
-     * @return JobData
-     */
-    public function getJobData()
-    {
-    }
-    /**
-     * Native Build Info
-     *
-     * @param NativeBuildInfoUiData $nativeBuildInfoUiData
-     */
-    public function setNativeBuildInfoUiData(NativeBuildInfoUiData $nativeBuildInfoUiData)
-    {
-    }
-    /**
-     * @return NativeBuildInfoUiData
-     */
-    public function getNativeBuildInfoUiData()
-    {
-    }
-    /**
-     * Native SQL Execution Info
-     *
-     * @param NativeSqlExecutionUiData $nativeSqlExecutionUiData
-     */
-    public function setNativeSqlExecutionUiData(NativeSqlExecutionUiData $nativeSqlExecutionUiData)
-    {
-    }
-    /**
-     * @return NativeSqlExecutionUiData
-     */
-    public function getNativeSqlExecutionUiData()
-    {
-    }
-    /**
-     * @param PoolData $poolData
-     */
-    public function setPoolData(PoolData $poolData)
-    {
-    }
-    /**
-     * @return PoolData
-     */
-    public function getPoolData()
-    {
-    }
-    /**
-     * @param ProcessSummary $processSummary
-     */
-    public function setProcessSummary(ProcessSummary $processSummary)
-    {
-    }
-    /**
-     * @return ProcessSummary
-     */
-    public function getProcessSummary()
-    {
-    }
-    /**
-     * @param RddOperationGraph $rddOperationGraph
-     */
-    public function setRddOperationGraph(RddOperationGraph $rddOperationGraph)
-    {
-    }
-    /**
-     * @return RddOperationGraph
-     */
-    public function getRddOperationGraph()
-    {
-    }
-    /**
-     * @param RddStorageInfo $rddStorageInfo
-     */
-    public function setRddStorageInfo(RddStorageInfo $rddStorageInfo)
-    {
-    }
-    /**
-     * @return RddStorageInfo
-     */
-    public function getRddStorageInfo()
-    {
-    }
-    /**
-     * @param ResourceProfileInfo $resourceProfileInfo
-     */
-    public function setResourceProfileInfo(ResourceProfileInfo $resourceProfileInfo)
-    {
-    }
-    /**
-     * @return ResourceProfileInfo
-     */
-    public function getResourceProfileInfo()
-    {
-    }
-    /**
-     * @param SparkPlanGraph $sparkPlanGraph
-     */
-    public function setSparkPlanGraph(SparkPlanGraph $sparkPlanGraph)
-    {
-    }
-    /**
-     * @return SparkPlanGraph
-     */
-    public function getSparkPlanGraph()
-    {
-    }
-    /**
-     * @param SpeculationStageSummary $speculationStageSummary
-     */
-    public function setSpeculationStageSummary(SpeculationStageSummary $speculationStageSummary)
-    {
-    }
-    /**
-     * @return SpeculationStageSummary
-     */
-    public function getSpeculationStageSummary()
-    {
-    }
-    /**
-     * @param SqlExecutionUiData $sqlExecutionUiData
-     */
-    public function setSqlExecutionUiData(SqlExecutionUiData $sqlExecutionUiData)
-    {
-    }
-    /**
-     * @return SqlExecutionUiData
-     */
-    public function getSqlExecutionUiData()
-    {
-    }
-    /**
-     * @param StageData $stageData
-     */
-    public function setStageData(StageData $stageData)
-    {
-    }
-    /**
-     * @return StageData
-     */
-    public function getStageData()
-    {
-    }
-    /**
-     * @param StreamBlockData $streamBlockData
-     */
-    public function setStreamBlockData(StreamBlockData $streamBlockData)
-    {
-    }
-    /**
-     * @return StreamBlockData
-     */
-    public function getStreamBlockData()
-    {
-    }
-    /**
-     * @param StreamingQueryData $streamingQueryData
-     */
-    public function setStreamingQueryData(StreamingQueryData $streamingQueryData)
-    {
-    }
-    /**
-     * @return StreamingQueryData
-     */
-    public function getStreamingQueryData()
-    {
-    }
-    /**
-     * @param StreamingQueryProgress $streamingQueryProgress
-     */
-    public function setStreamingQueryProgress(StreamingQueryProgress $streamingQueryProgress)
-    {
-    }
-    /**
-     * @return StreamingQueryProgress
-     */
-    public function getStreamingQueryProgress()
-    {
-    }
-    /**
-     * @param TaskData $taskData
-     */
-    public function setTaskData(TaskData $taskData)
-    {
-    }
-    /**
-     * @return TaskData
-     */
-    public function getTaskData()
+    class Google_Service_Dataproc_SparkWrapperObject extends \Google\Service\Dataproc\SparkWrapperObject
     {
     }
 }

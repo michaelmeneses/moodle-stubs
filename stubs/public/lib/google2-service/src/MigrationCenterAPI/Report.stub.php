@@ -21,192 +21,201 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class Report extends \Google\Model
-{
-    /**
-     * Default Report creation state.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Creating Report.
-     */
-    public const STATE_PENDING = 'PENDING';
-    /**
-     * Successfully created Report.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * Failed to create Report.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * Default Report type.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * Total cost of ownership Report type.
-     */
-    public const TYPE_TOTAL_COST_OF_OWNERSHIP = 'TOTAL_COST_OF_OWNERSHIP';
-    /**
-     * Output only. Creation timestamp.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Free-text description.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * User-friendly display name. Maximum length is 63 characters.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. Name of resource.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Report creation state.
-     *
-     * @var string
-     */
-    public $state;
-    protected $summaryType = ReportSummary::class;
-    protected $summaryDataType = '';
-    /**
-     * Report type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. Last update timestamp.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Creation timestamp.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\MigrationCenterAPI {
+    class Report extends \Google\Model
     {
+        /**
+         * Default Report creation state.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Creating Report.
+         */
+        public const STATE_PENDING = 'PENDING';
+        /**
+         * Successfully created Report.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * Failed to create Report.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * Default Report type.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * Total cost of ownership Report type.
+         */
+        public const TYPE_TOTAL_COST_OF_OWNERSHIP = 'TOTAL_COST_OF_OWNERSHIP';
+        /**
+         * Output only. Creation timestamp.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Free-text description.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * User-friendly display name. Maximum length is 63 characters.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. Name of resource.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Report creation state.
+         *
+         * @var string
+         */
+        public $state;
+        protected $summaryType = ReportSummary::class;
+        protected $summaryDataType = '';
+        /**
+         * Report type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. Last update timestamp.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Creation timestamp.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Free-text description.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * User-friendly display name. Maximum length is 63 characters.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. Name of resource.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Report creation state.
+         *
+         * Accepted values: STATE_UNSPECIFIED, PENDING, SUCCEEDED, FAILED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. Summary view of the Report.
+         *
+         * @param ReportSummary $summary
+         */
+        public function setSummary(ReportSummary $summary)
+        {
+        }
+        /**
+         * @return ReportSummary
+         */
+        public function getSummary()
+        {
+        }
+        /**
+         * Report type.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, TOTAL_COST_OF_OWNERSHIP
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Output only. Last update timestamp.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\Report registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Free-text description.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * User-friendly display name. Maximum length is 63 characters.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. Name of resource.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Report creation state.
-     *
-     * Accepted values: STATE_UNSPECIFIED, PENDING, SUCCEEDED, FAILED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. Summary view of the Report.
-     *
-     * @param ReportSummary $summary
-     */
-    public function setSummary(ReportSummary $summary)
-    {
-    }
-    /**
-     * @return ReportSummary
-     */
-    public function getSummary()
-    {
-    }
-    /**
-     * Report type.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, TOTAL_COST_OF_OWNERSHIP
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Output only. Last update timestamp.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_MigrationCenterAPI_Report extends \Google\Service\MigrationCenterAPI\Report
     {
     }
 }

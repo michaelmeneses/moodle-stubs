@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class NonSkippableAd extends \Google\Model
-{
-    protected $commonInStreamAttributeType = CommonInStreamAttribute::class;
-    protected $commonInStreamAttributeDataType = '';
-    /**
-     * The custom parameters to pass custom values to tracking URL template.
-     *
-     * @var string[]
-     */
-    public $customParameters;
-    /**
-     * Common ad attributes.
-     *
-     * @param CommonInStreamAttribute $commonInStreamAttribute
-     */
-    public function setCommonInStreamAttribute(CommonInStreamAttribute $commonInStreamAttribute)
+namespace Google\Service\DisplayVideo {
+    class NonSkippableAd extends \Google\Model
     {
+        protected $commonInStreamAttributeType = CommonInStreamAttribute::class;
+        protected $commonInStreamAttributeDataType = '';
+        /**
+         * The custom parameters to pass custom values to tracking URL template.
+         *
+         * @var string[]
+         */
+        public $customParameters;
+        /**
+         * Common ad attributes.
+         *
+         * @param CommonInStreamAttribute $commonInStreamAttribute
+         */
+        public function setCommonInStreamAttribute(CommonInStreamAttribute $commonInStreamAttribute)
+        {
+        }
+        /**
+         * @return CommonInStreamAttribute
+         */
+        public function getCommonInStreamAttribute()
+        {
+        }
+        /**
+         * The custom parameters to pass custom values to tracking URL template.
+         *
+         * @param string[] $customParameters
+         */
+        public function setCustomParameters($customParameters)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCustomParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CommonInStreamAttribute
+     * Runtime class alias of \Google\Service\DisplayVideo\NonSkippableAd registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommonInStreamAttribute()
-    {
-    }
-    /**
-     * The custom parameters to pass custom values to tracking URL template.
-     *
-     * @param string[] $customParameters
-     */
-    public function setCustomParameters($customParameters)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCustomParameters()
+    class Google_Service_DisplayVideo_NonSkippableAd extends \Google\Service\DisplayVideo\NonSkippableAd
     {
     }
 }

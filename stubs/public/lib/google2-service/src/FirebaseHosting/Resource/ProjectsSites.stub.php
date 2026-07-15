@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseHosting\Resource;
-
-/**
- * The "sites" collection of methods.
- * Typical usage is:
- *  <code>
- *   $firebasehostingService = new Google\Service\FirebaseHosting(...);
- *   $sites = $firebasehostingService->projects_sites;
- *  </code>
- */
-class ProjectsSites extends \Google\Service\Resource
-{
+namespace Google\Service\FirebaseHosting\Resource {
+    /**
+     * The "sites" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $firebasehostingService = new Google\Service\FirebaseHosting(...);
+     *   $sites = $firebasehostingService->projects_sites;
+     *  </code>
+     */
+    class ProjectsSites extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\FirebaseHosting\Resource\ProjectsSites registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_FirebaseHosting_Resource_ProjectsSites extends \Google\Service\FirebaseHosting\Resource\ProjectsSites
+    {
+    }
 }

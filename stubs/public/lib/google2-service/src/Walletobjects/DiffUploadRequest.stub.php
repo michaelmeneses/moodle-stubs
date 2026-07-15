@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class DiffUploadRequest extends \Google\Model
-{
-    protected $checksumsInfoType = CompositeMedia::class;
-    protected $checksumsInfoDataType = '';
-    protected $objectInfoType = CompositeMedia::class;
-    protected $objectInfoDataType = '';
-    /**
-     * The object version of the object that is the base version the incoming diff
-     * script will be applied to. This field will always be filled in.
-     *
-     * @var string
-     */
-    public $objectVersion;
-    /**
-     * The location of the checksums for the new object. Agents must clone the
-     * object located here, as the upload server will delete the contents once a
-     * response is received. For details on the format of the checksums, see
-     * http://go/scotty-diff-protocol.
-     *
-     * @param CompositeMedia $checksumsInfo
-     */
-    public function setChecksumsInfo(CompositeMedia $checksumsInfo)
+namespace Google\Service\Walletobjects {
+    class DiffUploadRequest extends \Google\Model
     {
+        protected $checksumsInfoType = CompositeMedia::class;
+        protected $checksumsInfoDataType = '';
+        protected $objectInfoType = CompositeMedia::class;
+        protected $objectInfoDataType = '';
+        /**
+         * The object version of the object that is the base version the incoming diff
+         * script will be applied to. This field will always be filled in.
+         *
+         * @var string
+         */
+        public $objectVersion;
+        /**
+         * The location of the checksums for the new object. Agents must clone the
+         * object located here, as the upload server will delete the contents once a
+         * response is received. For details on the format of the checksums, see
+         * http://go/scotty-diff-protocol.
+         *
+         * @param CompositeMedia $checksumsInfo
+         */
+        public function setChecksumsInfo(CompositeMedia $checksumsInfo)
+        {
+        }
+        /**
+         * @return CompositeMedia
+         */
+        public function getChecksumsInfo()
+        {
+        }
+        /**
+         * The location of the new object. Agents must clone the object located here,
+         * as the upload server will delete the contents once a response is received.
+         *
+         * @param CompositeMedia $objectInfo
+         */
+        public function setObjectInfo(CompositeMedia $objectInfo)
+        {
+        }
+        /**
+         * @return CompositeMedia
+         */
+        public function getObjectInfo()
+        {
+        }
+        /**
+         * The object version of the object that is the base version the incoming diff
+         * script will be applied to. This field will always be filled in.
+         *
+         * @param string $objectVersion
+         */
+        public function setObjectVersion($objectVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CompositeMedia
+     * Runtime class alias of \Google\Service\Walletobjects\DiffUploadRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChecksumsInfo()
-    {
-    }
-    /**
-     * The location of the new object. Agents must clone the object located here,
-     * as the upload server will delete the contents once a response is received.
-     *
-     * @param CompositeMedia $objectInfo
-     */
-    public function setObjectInfo(CompositeMedia $objectInfo)
-    {
-    }
-    /**
-     * @return CompositeMedia
-     */
-    public function getObjectInfo()
-    {
-    }
-    /**
-     * The object version of the object that is the base version the incoming diff
-     * script will be applied to. This field will always be filled in.
-     *
-     * @param string $objectVersion
-     */
-    public function setObjectVersion($objectVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectVersion()
+    class Google_Service_Walletobjects_DiffUploadRequest extends \Google\Service\Walletobjects\DiffUploadRequest
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SearchConsole;
-
-class SearchAnalyticsQueryResponse extends \Google\Collection
-{
-    public const RESPONSE_AGGREGATION_TYPE_AUTO = 'AUTO';
-    public const RESPONSE_AGGREGATION_TYPE_BY_PROPERTY = 'BY_PROPERTY';
-    public const RESPONSE_AGGREGATION_TYPE_BY_PAGE = 'BY_PAGE';
-    public const RESPONSE_AGGREGATION_TYPE_BY_NEWS_SHOWCASE_PANEL = 'BY_NEWS_SHOWCASE_PANEL';
-    protected $collection_key = 'rows';
-    protected $metadataType = Metadata::class;
-    protected $metadataDataType = '';
-    /**
-     * How the results were aggregated.
-     *
-     * @var string
-     */
-    public $responseAggregationType;
-    protected $rowsType = ApiDataRow::class;
-    protected $rowsDataType = 'array';
-    /**
-     * An object that may be returned with your query results, providing context
-     * about the state of the data. See details in Metadata object documentation.
-     *
-     * @param Metadata $metadata
-     */
-    public function setMetadata(Metadata $metadata)
+namespace Google\Service\SearchConsole {
+    class SearchAnalyticsQueryResponse extends \Google\Collection
     {
+        public const RESPONSE_AGGREGATION_TYPE_AUTO = 'AUTO';
+        public const RESPONSE_AGGREGATION_TYPE_BY_PROPERTY = 'BY_PROPERTY';
+        public const RESPONSE_AGGREGATION_TYPE_BY_PAGE = 'BY_PAGE';
+        public const RESPONSE_AGGREGATION_TYPE_BY_NEWS_SHOWCASE_PANEL = 'BY_NEWS_SHOWCASE_PANEL';
+        protected $collection_key = 'rows';
+        protected $metadataType = Metadata::class;
+        protected $metadataDataType = '';
+        /**
+         * How the results were aggregated.
+         *
+         * @var string
+         */
+        public $responseAggregationType;
+        protected $rowsType = ApiDataRow::class;
+        protected $rowsDataType = 'array';
+        /**
+         * An object that may be returned with your query results, providing context
+         * about the state of the data. See details in Metadata object documentation.
+         *
+         * @param Metadata $metadata
+         */
+        public function setMetadata(Metadata $metadata)
+        {
+        }
+        /**
+         * @return Metadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * How the results were aggregated.
+         *
+         * Accepted values: AUTO, BY_PROPERTY, BY_PAGE, BY_NEWS_SHOWCASE_PANEL
+         *
+         * @param self::RESPONSE_AGGREGATION_TYPE_* $responseAggregationType
+         */
+        public function setResponseAggregationType($responseAggregationType)
+        {
+        }
+        /**
+         * @return self::RESPONSE_AGGREGATION_TYPE_*
+         */
+        public function getResponseAggregationType()
+        {
+        }
+        /**
+         * A list of rows grouped by the key values in the order given in the query.
+         *
+         * @param ApiDataRow[] $rows
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return ApiDataRow[]
+         */
+        public function getRows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Metadata
+     * Runtime class alias of \Google\Service\SearchConsole\SearchAnalyticsQueryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadata()
-    {
-    }
-    /**
-     * How the results were aggregated.
-     *
-     * Accepted values: AUTO, BY_PROPERTY, BY_PAGE, BY_NEWS_SHOWCASE_PANEL
-     *
-     * @param self::RESPONSE_AGGREGATION_TYPE_* $responseAggregationType
-     */
-    public function setResponseAggregationType($responseAggregationType)
-    {
-    }
-    /**
-     * @return self::RESPONSE_AGGREGATION_TYPE_*
-     */
-    public function getResponseAggregationType()
-    {
-    }
-    /**
-     * A list of rows grouped by the key values in the order given in the query.
-     *
-     * @param ApiDataRow[] $rows
-     */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return ApiDataRow[]
-     */
-    public function getRows()
+    class Google_Service_SearchConsole_SearchAnalyticsQueryResponse extends \Google\Service\SearchConsole\SearchAnalyticsQueryResponse
     {
     }
 }

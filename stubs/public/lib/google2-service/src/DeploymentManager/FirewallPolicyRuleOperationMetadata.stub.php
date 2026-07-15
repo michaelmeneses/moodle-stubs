@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeploymentManager;
-
-class FirewallPolicyRuleOperationMetadata extends \Google\Model
-{
-    /**
-     * The priority allocated for the firewall policy rule if query parameters
-     * specified minPriority/maxPriority.
-     *
-     * @var int
-     */
-    public $allocatedPriority;
-    /**
-     * The priority allocated for the firewall policy rule if query parameters
-     * specified minPriority/maxPriority.
-     *
-     * @param int $allocatedPriority
-     */
-    public function setAllocatedPriority($allocatedPriority)
+namespace Google\Service\DeploymentManager {
+    class FirewallPolicyRuleOperationMetadata extends \Google\Model
     {
+        /**
+         * The priority allocated for the firewall policy rule if query parameters
+         * specified minPriority/maxPriority.
+         *
+         * @var int
+         */
+        public $allocatedPriority;
+        /**
+         * The priority allocated for the firewall policy rule if query parameters
+         * specified minPriority/maxPriority.
+         *
+         * @param int $allocatedPriority
+         */
+        public function setAllocatedPriority($allocatedPriority)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAllocatedPriority()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DeploymentManager\FirewallPolicyRuleOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllocatedPriority()
+    class Google_Service_DeploymentManager_FirewallPolicyRuleOperationMetadata extends \Google\Service\DeploymentManager\FirewallPolicyRuleOperationMetadata
     {
     }
 }

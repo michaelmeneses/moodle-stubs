@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedChatItemActivityInfo extends \Google\Model
-{
-    protected $feedItemNudgeType = AppsDynamiteSharedChatItemActivityInfoFeedItemNudge::class;
-    protected $feedItemNudgeDataType = '';
-    protected $feedItemReactionsType = AppsDynamiteSharedChatItemActivityInfoFeedItemReactions::class;
-    protected $feedItemReactionsDataType = '';
-    protected $feedItemThreadReplyType = AppsDynamiteSharedChatItemActivityInfoFeedItemThreadReply::class;
-    protected $feedItemThreadReplyDataType = '';
-    protected $feedItemUserMentionType = AppsDynamiteSharedChatItemActivityInfoFeedItemUserMention::class;
-    protected $feedItemUserMentionDataType = '';
-    /**
-     * @param AppsDynamiteSharedChatItemActivityInfoFeedItemNudge
-     */
-    public function setFeedItemNudge(AppsDynamiteSharedChatItemActivityInfoFeedItemNudge $feedItemNudge)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedChatItemActivityInfo extends \Google\Model
     {
+        protected $feedItemNudgeType = AppsDynamiteSharedChatItemActivityInfoFeedItemNudge::class;
+        protected $feedItemNudgeDataType = '';
+        protected $feedItemReactionsType = AppsDynamiteSharedChatItemActivityInfoFeedItemReactions::class;
+        protected $feedItemReactionsDataType = '';
+        protected $feedItemThreadReplyType = AppsDynamiteSharedChatItemActivityInfoFeedItemThreadReply::class;
+        protected $feedItemThreadReplyDataType = '';
+        protected $feedItemUserMentionType = AppsDynamiteSharedChatItemActivityInfoFeedItemUserMention::class;
+        protected $feedItemUserMentionDataType = '';
+        /**
+         * @param AppsDynamiteSharedChatItemActivityInfoFeedItemNudge
+         */
+        public function setFeedItemNudge(AppsDynamiteSharedChatItemActivityInfoFeedItemNudge $feedItemNudge)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedChatItemActivityInfoFeedItemNudge
+         */
+        public function getFeedItemNudge()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedChatItemActivityInfoFeedItemReactions
+         */
+        public function setFeedItemReactions(AppsDynamiteSharedChatItemActivityInfoFeedItemReactions $feedItemReactions)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedChatItemActivityInfoFeedItemReactions
+         */
+        public function getFeedItemReactions()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedChatItemActivityInfoFeedItemThreadReply
+         */
+        public function setFeedItemThreadReply(AppsDynamiteSharedChatItemActivityInfoFeedItemThreadReply $feedItemThreadReply)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedChatItemActivityInfoFeedItemThreadReply
+         */
+        public function getFeedItemThreadReply()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedChatItemActivityInfoFeedItemUserMention
+         */
+        public function setFeedItemUserMention(AppsDynamiteSharedChatItemActivityInfoFeedItemUserMention $feedItemUserMention)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedChatItemActivityInfoFeedItemUserMention
+         */
+        public function getFeedItemUserMention()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedChatItemActivityInfoFeedItemNudge
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedChatItemActivityInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFeedItemNudge()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedChatItemActivityInfoFeedItemReactions
-     */
-    public function setFeedItemReactions(AppsDynamiteSharedChatItemActivityInfoFeedItemReactions $feedItemReactions)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedChatItemActivityInfoFeedItemReactions
-     */
-    public function getFeedItemReactions()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedChatItemActivityInfoFeedItemThreadReply
-     */
-    public function setFeedItemThreadReply(AppsDynamiteSharedChatItemActivityInfoFeedItemThreadReply $feedItemThreadReply)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedChatItemActivityInfoFeedItemThreadReply
-     */
-    public function getFeedItemThreadReply()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedChatItemActivityInfoFeedItemUserMention
-     */
-    public function setFeedItemUserMention(AppsDynamiteSharedChatItemActivityInfoFeedItemUserMention $feedItemUserMention)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedChatItemActivityInfoFeedItemUserMention
-     */
-    public function getFeedItemUserMention()
+    class Google_Service_CloudSearch_AppsDynamiteSharedChatItemActivityInfo extends \Google\Service\CloudSearch\AppsDynamiteSharedChatItemActivityInfo
     {
     }
 }

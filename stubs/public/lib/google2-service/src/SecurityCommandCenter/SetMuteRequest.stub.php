@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class SetMuteRequest extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const MUTE_MUTE_UNSPECIFIED = 'MUTE_UNSPECIFIED';
-    /**
-     * Finding has been muted.
-     */
-    public const MUTE_MUTED = 'MUTED';
-    /**
-     * Finding has been unmuted.
-     */
-    public const MUTE_UNMUTED = 'UNMUTED';
-    /**
-     * Finding has never been muted/unmuted.
-     */
-    public const MUTE_UNDEFINED = 'UNDEFINED';
-    /**
-     * Required. The desired state of the Mute.
-     *
-     * @var string
-     */
-    public $mute;
-    /**
-     * Required. The desired state of the Mute.
-     *
-     * Accepted values: MUTE_UNSPECIFIED, MUTED, UNMUTED, UNDEFINED
-     *
-     * @param self::MUTE_* $mute
-     */
-    public function setMute($mute)
+namespace Google\Service\SecurityCommandCenter {
+    class SetMuteRequest extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const MUTE_MUTE_UNSPECIFIED = 'MUTE_UNSPECIFIED';
+        /**
+         * Finding has been muted.
+         */
+        public const MUTE_MUTED = 'MUTED';
+        /**
+         * Finding has been unmuted.
+         */
+        public const MUTE_UNMUTED = 'UNMUTED';
+        /**
+         * Finding has never been muted/unmuted.
+         */
+        public const MUTE_UNDEFINED = 'UNDEFINED';
+        /**
+         * Required. The desired state of the Mute.
+         *
+         * @var string
+         */
+        public $mute;
+        /**
+         * Required. The desired state of the Mute.
+         *
+         * Accepted values: MUTE_UNSPECIFIED, MUTED, UNMUTED, UNDEFINED
+         *
+         * @param self::MUTE_* $mute
+         */
+        public function setMute($mute)
+        {
+        }
+        /**
+         * @return self::MUTE_*
+         */
+        public function getMute()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MUTE_*
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\SetMuteRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMute()
+    class Google_Service_SecurityCommandCenter_SetMuteRequest extends \Google\Service\SecurityCommandCenter\SetMuteRequest
     {
     }
 }

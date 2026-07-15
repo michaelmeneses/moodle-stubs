@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunOpV2ListRevisionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'revisions';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $revisionsType = GoogleCloudRunOpV2Revision::class;
-    protected $revisionsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunOpV2ListRevisionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'revisions';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $revisionsType = GoogleCloudRunOpV2Revision::class;
+        protected $revisionsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param GoogleCloudRunOpV2Revision[]
+         */
+        public function setRevisions($revisions)
+        {
+        }
+        /**
+         * @return GoogleCloudRunOpV2Revision[]
+         */
+        public function getRevisions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunOpV2ListRevisionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param GoogleCloudRunOpV2Revision[]
-     */
-    public function setRevisions($revisions)
-    {
-    }
-    /**
-     * @return GoogleCloudRunOpV2Revision[]
-     */
-    public function getRevisions()
+    class Google_Service_CloudRun_GoogleCloudRunOpV2ListRevisionsResponse extends \Google\Service\CloudRun\GoogleCloudRunOpV2ListRevisionsResponse
     {
     }
 }

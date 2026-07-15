@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1UpdateDocumentRequest extends \Google\Model
-{
-    protected $cloudAiDocumentOptionType = GoogleCloudContentwarehouseV1CloudAIDocumentOption::class;
-    protected $cloudAiDocumentOptionDataType = '';
-    protected $documentType = GoogleCloudContentwarehouseV1Document::class;
-    protected $documentDataType = '';
-    protected $requestMetadataType = GoogleCloudContentwarehouseV1RequestMetadata::class;
-    protected $requestMetadataDataType = '';
-    protected $updateOptionsType = GoogleCloudContentwarehouseV1UpdateOptions::class;
-    protected $updateOptionsDataType = '';
-    /**
-     * Request Option for processing Cloud AI Document in Document Warehouse. This
-     * field offers limited support for mapping entities from Cloud AI Document to
-     * Warehouse Document. Please consult with product team before using this
-     * field and other available options.
-     *
-     * @param GoogleCloudContentwarehouseV1CloudAIDocumentOption $cloudAiDocumentOption
-     */
-    public function setCloudAiDocumentOption(GoogleCloudContentwarehouseV1CloudAIDocumentOption $cloudAiDocumentOption)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1UpdateDocumentRequest extends \Google\Model
     {
+        protected $cloudAiDocumentOptionType = GoogleCloudContentwarehouseV1CloudAIDocumentOption::class;
+        protected $cloudAiDocumentOptionDataType = '';
+        protected $documentType = GoogleCloudContentwarehouseV1Document::class;
+        protected $documentDataType = '';
+        protected $requestMetadataType = GoogleCloudContentwarehouseV1RequestMetadata::class;
+        protected $requestMetadataDataType = '';
+        protected $updateOptionsType = GoogleCloudContentwarehouseV1UpdateOptions::class;
+        protected $updateOptionsDataType = '';
+        /**
+         * Request Option for processing Cloud AI Document in Document Warehouse. This
+         * field offers limited support for mapping entities from Cloud AI Document to
+         * Warehouse Document. Please consult with product team before using this
+         * field and other available options.
+         *
+         * @param GoogleCloudContentwarehouseV1CloudAIDocumentOption $cloudAiDocumentOption
+         */
+        public function setCloudAiDocumentOption(GoogleCloudContentwarehouseV1CloudAIDocumentOption $cloudAiDocumentOption)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1CloudAIDocumentOption
+         */
+        public function getCloudAiDocumentOption()
+        {
+        }
+        /**
+         * Required. The document to update.
+         *
+         * @param GoogleCloudContentwarehouseV1Document $document
+         */
+        public function setDocument(GoogleCloudContentwarehouseV1Document $document)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1Document
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * The meta information collected about the end user, used to enforce access
+         * control for the service.
+         *
+         * @param GoogleCloudContentwarehouseV1RequestMetadata $requestMetadata
+         */
+        public function setRequestMetadata(GoogleCloudContentwarehouseV1RequestMetadata $requestMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1RequestMetadata
+         */
+        public function getRequestMetadata()
+        {
+        }
+        /**
+         * Options for the update operation.
+         *
+         * @param GoogleCloudContentwarehouseV1UpdateOptions $updateOptions
+         */
+        public function setUpdateOptions(GoogleCloudContentwarehouseV1UpdateOptions $updateOptions)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1UpdateOptions
+         */
+        public function getUpdateOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContentwarehouseV1CloudAIDocumentOption
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1UpdateDocumentRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudAiDocumentOption()
-    {
-    }
-    /**
-     * Required. The document to update.
-     *
-     * @param GoogleCloudContentwarehouseV1Document $document
-     */
-    public function setDocument(GoogleCloudContentwarehouseV1Document $document)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1Document
-     */
-    public function getDocument()
-    {
-    }
-    /**
-     * The meta information collected about the end user, used to enforce access
-     * control for the service.
-     *
-     * @param GoogleCloudContentwarehouseV1RequestMetadata $requestMetadata
-     */
-    public function setRequestMetadata(GoogleCloudContentwarehouseV1RequestMetadata $requestMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1RequestMetadata
-     */
-    public function getRequestMetadata()
-    {
-    }
-    /**
-     * Options for the update operation.
-     *
-     * @param GoogleCloudContentwarehouseV1UpdateOptions $updateOptions
-     */
-    public function setUpdateOptions(GoogleCloudContentwarehouseV1UpdateOptions $updateOptions)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1UpdateOptions
-     */
-    public function getUpdateOptions()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1UpdateDocumentRequest extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1UpdateDocumentRequest
     {
     }
 }

@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTablesInputsTransformationTimestampTransformation extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $columnName;
-    /**
-     * If invalid values is allowed, the training pipeline will create a boolean
-     * feature that indicated whether the value is valid. Otherwise, the training
-     * pipeline will discard the input row from trainining data.
-     *
-     * @var bool
-     */
-    public $invalidValuesAllowed;
-    /**
-     * The format in which that time field is expressed. The time_format must
-     * either be one of: * `unix-seconds` * `unix-milliseconds` * `unix-
-     * microseconds` * `unix-nanoseconds` (for respectively number of seconds,
-     * milliseconds, microseconds and nanoseconds since start of the Unix epoch);
-     * or be written in `strftime` syntax. If time_format is not set, then the
-     * default format is RFC 3339 `date-time` format, where `time-offset` = `"Z"`
-     * (e.g. 1985-04-12T23:20:50.52Z)
-     *
-     * @var string
-     */
-    public $timeFormat;
-    /**
-     * @param string $columnName
-     */
-    public function setColumnName($columnName)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTablesInputsTransformationTimestampTransformation extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $columnName;
+        /**
+         * If invalid values is allowed, the training pipeline will create a boolean
+         * feature that indicated whether the value is valid. Otherwise, the training
+         * pipeline will discard the input row from trainining data.
+         *
+         * @var bool
+         */
+        public $invalidValuesAllowed;
+        /**
+         * The format in which that time field is expressed. The time_format must
+         * either be one of: * `unix-seconds` * `unix-milliseconds` * `unix-
+         * microseconds` * `unix-nanoseconds` (for respectively number of seconds,
+         * milliseconds, microseconds and nanoseconds since start of the Unix epoch);
+         * or be written in `strftime` syntax. If time_format is not set, then the
+         * default format is RFC 3339 `date-time` format, where `time-offset` = `"Z"`
+         * (e.g. 1985-04-12T23:20:50.52Z)
+         *
+         * @var string
+         */
+        public $timeFormat;
+        /**
+         * @param string $columnName
+         */
+        public function setColumnName($columnName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getColumnName()
+        {
+        }
+        /**
+         * If invalid values is allowed, the training pipeline will create a boolean
+         * feature that indicated whether the value is valid. Otherwise, the training
+         * pipeline will discard the input row from trainining data.
+         *
+         * @param bool $invalidValuesAllowed
+         */
+        public function setInvalidValuesAllowed($invalidValuesAllowed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInvalidValuesAllowed()
+        {
+        }
+        /**
+         * The format in which that time field is expressed. The time_format must
+         * either be one of: * `unix-seconds` * `unix-milliseconds` * `unix-
+         * microseconds` * `unix-nanoseconds` (for respectively number of seconds,
+         * milliseconds, microseconds and nanoseconds since start of the Unix epoch);
+         * or be written in `strftime` syntax. If time_format is not set, then the
+         * default format is RFC 3339 `date-time` format, where `time-offset` = `"Z"`
+         * (e.g. 1985-04-12T23:20:50.52Z)
+         *
+         * @param string $timeFormat
+         */
+        public function setTimeFormat($timeFormat)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeFormat()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTablesInputsTransformationTimestampTransformation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnName()
-    {
-    }
-    /**
-     * If invalid values is allowed, the training pipeline will create a boolean
-     * feature that indicated whether the value is valid. Otherwise, the training
-     * pipeline will discard the input row from trainining data.
-     *
-     * @param bool $invalidValuesAllowed
-     */
-    public function setInvalidValuesAllowed($invalidValuesAllowed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInvalidValuesAllowed()
-    {
-    }
-    /**
-     * The format in which that time field is expressed. The time_format must
-     * either be one of: * `unix-seconds` * `unix-milliseconds` * `unix-
-     * microseconds` * `unix-nanoseconds` (for respectively number of seconds,
-     * milliseconds, microseconds and nanoseconds since start of the Unix epoch);
-     * or be written in `strftime` syntax. If time_format is not set, then the
-     * default format is RFC 3339 `date-time` format, where `time-offset` = `"Z"`
-     * (e.g. 1985-04-12T23:20:50.52Z)
-     *
-     * @param string $timeFormat
-     */
-    public function setTimeFormat($timeFormat)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeFormat()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTablesInputsTransformationTimestampTransformation extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTablesInputsTransformationTimestampTransformation
     {
     }
 }

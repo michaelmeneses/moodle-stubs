@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ImportFeatureValuesResponse extends \Google\Model
-{
-    /**
-     * Number of entities that have been imported by the operation.
-     *
-     * @var string
-     */
-    public $importedEntityCount;
-    /**
-     * Number of Feature values that have been imported by the operation.
-     *
-     * @var string
-     */
-    public $importedFeatureValueCount;
-    /**
-     * The number of rows in input source that weren't imported due to either *
-     * Not having any featureValues. * Having a null entityId. * Having a null
-     * timestamp. * Not being parsable (applicable for CSV sources).
-     *
-     * @var string
-     */
-    public $invalidRowCount;
-    /**
-     * The number rows that weren't ingested due to having feature timestamps
-     * outside the retention boundary.
-     *
-     * @var string
-     */
-    public $timestampOutsideRetentionRowsCount;
-    /**
-     * Number of entities that have been imported by the operation.
-     *
-     * @param string $importedEntityCount
-     */
-    public function setImportedEntityCount($importedEntityCount)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ImportFeatureValuesResponse extends \Google\Model
     {
+        /**
+         * Number of entities that have been imported by the operation.
+         *
+         * @var string
+         */
+        public $importedEntityCount;
+        /**
+         * Number of Feature values that have been imported by the operation.
+         *
+         * @var string
+         */
+        public $importedFeatureValueCount;
+        /**
+         * The number of rows in input source that weren't imported due to either *
+         * Not having any featureValues. * Having a null entityId. * Having a null
+         * timestamp. * Not being parsable (applicable for CSV sources).
+         *
+         * @var string
+         */
+        public $invalidRowCount;
+        /**
+         * The number rows that weren't ingested due to having feature timestamps
+         * outside the retention boundary.
+         *
+         * @var string
+         */
+        public $timestampOutsideRetentionRowsCount;
+        /**
+         * Number of entities that have been imported by the operation.
+         *
+         * @param string $importedEntityCount
+         */
+        public function setImportedEntityCount($importedEntityCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImportedEntityCount()
+        {
+        }
+        /**
+         * Number of Feature values that have been imported by the operation.
+         *
+         * @param string $importedFeatureValueCount
+         */
+        public function setImportedFeatureValueCount($importedFeatureValueCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImportedFeatureValueCount()
+        {
+        }
+        /**
+         * The number of rows in input source that weren't imported due to either *
+         * Not having any featureValues. * Having a null entityId. * Having a null
+         * timestamp. * Not being parsable (applicable for CSV sources).
+         *
+         * @param string $invalidRowCount
+         */
+        public function setInvalidRowCount($invalidRowCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInvalidRowCount()
+        {
+        }
+        /**
+         * The number rows that weren't ingested due to having feature timestamps
+         * outside the retention boundary.
+         *
+         * @param string $timestampOutsideRetentionRowsCount
+         */
+        public function setTimestampOutsideRetentionRowsCount($timestampOutsideRetentionRowsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestampOutsideRetentionRowsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ImportFeatureValuesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImportedEntityCount()
-    {
-    }
-    /**
-     * Number of Feature values that have been imported by the operation.
-     *
-     * @param string $importedFeatureValueCount
-     */
-    public function setImportedFeatureValueCount($importedFeatureValueCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImportedFeatureValueCount()
-    {
-    }
-    /**
-     * The number of rows in input source that weren't imported due to either *
-     * Not having any featureValues. * Having a null entityId. * Having a null
-     * timestamp. * Not being parsable (applicable for CSV sources).
-     *
-     * @param string $invalidRowCount
-     */
-    public function setInvalidRowCount($invalidRowCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInvalidRowCount()
-    {
-    }
-    /**
-     * The number rows that weren't ingested due to having feature timestamps
-     * outside the retention boundary.
-     *
-     * @param string $timestampOutsideRetentionRowsCount
-     */
-    public function setTimestampOutsideRetentionRowsCount($timestampOutsideRetentionRowsCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestampOutsideRetentionRowsCount()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ImportFeatureValuesResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ImportFeatureValuesResponse
     {
     }
 }

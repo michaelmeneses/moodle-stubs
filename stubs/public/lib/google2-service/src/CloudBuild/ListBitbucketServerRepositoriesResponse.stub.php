@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class ListBitbucketServerRepositoriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'bitbucketServerRepositories';
-    protected $bitbucketServerRepositoriesType = BitbucketServerRepository::class;
-    protected $bitbucketServerRepositoriesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param BitbucketServerRepository[]
-     */
-    public function setBitbucketServerRepositories($bitbucketServerRepositories)
+namespace Google\Service\CloudBuild {
+    class ListBitbucketServerRepositoriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'bitbucketServerRepositories';
+        protected $bitbucketServerRepositoriesType = BitbucketServerRepository::class;
+        protected $bitbucketServerRepositoriesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param BitbucketServerRepository[]
+         */
+        public function setBitbucketServerRepositories($bitbucketServerRepositories)
+        {
+        }
+        /**
+         * @return BitbucketServerRepository[]
+         */
+        public function getBitbucketServerRepositories()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BitbucketServerRepository[]
+     * Runtime class alias of \Google\Service\CloudBuild\ListBitbucketServerRepositoriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBitbucketServerRepositories()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudBuild_ListBitbucketServerRepositoriesResponse extends \Google\Service\CloudBuild\ListBitbucketServerRepositoriesResponse
     {
     }
 }

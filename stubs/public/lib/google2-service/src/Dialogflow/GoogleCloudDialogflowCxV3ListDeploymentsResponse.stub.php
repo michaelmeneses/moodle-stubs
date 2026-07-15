@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ListDeploymentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'deployments';
-    protected $deploymentsType = GoogleCloudDialogflowCxV3Deployment::class;
-    protected $deploymentsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of deployments. There will be a maximum number of items returned
-     * based on the page_size field in the request. The list may in some cases be
-     * empty or contain fewer entries than page_size even if this isn't the last
-     * page.
-     *
-     * @param GoogleCloudDialogflowCxV3Deployment[] $deployments
-     */
-    public function setDeployments($deployments)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ListDeploymentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'deployments';
+        protected $deploymentsType = GoogleCloudDialogflowCxV3Deployment::class;
+        protected $deploymentsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of deployments. There will be a maximum number of items returned
+         * based on the page_size field in the request. The list may in some cases be
+         * empty or contain fewer entries than page_size even if this isn't the last
+         * page.
+         *
+         * @param GoogleCloudDialogflowCxV3Deployment[] $deployments
+         */
+        public function setDeployments($deployments)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3Deployment[]
+         */
+        public function getDeployments()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3Deployment[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListDeploymentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployments()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ListDeploymentsResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListDeploymentsResponse
     {
     }
 }

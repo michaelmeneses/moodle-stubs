@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class UpdateInstancePartitionRequest extends \Google\Model
-{
-    /**
-     * Required. A mask specifying which fields in InstancePartition should be
-     * updated. The field mask must always be specified; this prevents any future
-     * fields in InstancePartition from being erased accidentally by clients that
-     * do not know about them.
-     *
-     * @var string
-     */
-    public $fieldMask;
-    protected $instancePartitionType = InstancePartition::class;
-    protected $instancePartitionDataType = '';
-    /**
-     * Required. A mask specifying which fields in InstancePartition should be
-     * updated. The field mask must always be specified; this prevents any future
-     * fields in InstancePartition from being erased accidentally by clients that
-     * do not know about them.
-     *
-     * @param string $fieldMask
-     */
-    public function setFieldMask($fieldMask)
+namespace Google\Service\Spanner {
+    class UpdateInstancePartitionRequest extends \Google\Model
     {
+        /**
+         * Required. A mask specifying which fields in InstancePartition should be
+         * updated. The field mask must always be specified; this prevents any future
+         * fields in InstancePartition from being erased accidentally by clients that
+         * do not know about them.
+         *
+         * @var string
+         */
+        public $fieldMask;
+        protected $instancePartitionType = InstancePartition::class;
+        protected $instancePartitionDataType = '';
+        /**
+         * Required. A mask specifying which fields in InstancePartition should be
+         * updated. The field mask must always be specified; this prevents any future
+         * fields in InstancePartition from being erased accidentally by clients that
+         * do not know about them.
+         *
+         * @param string $fieldMask
+         */
+        public function setFieldMask($fieldMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldMask()
+        {
+        }
+        /**
+         * Required. The instance partition to update, which must always include the
+         * instance partition name. Otherwise, only fields mentioned in field_mask
+         * need be included.
+         *
+         * @param InstancePartition $instancePartition
+         */
+        public function setInstancePartition(InstancePartition $instancePartition)
+        {
+        }
+        /**
+         * @return InstancePartition
+         */
+        public function getInstancePartition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\UpdateInstancePartitionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldMask()
-    {
-    }
-    /**
-     * Required. The instance partition to update, which must always include the
-     * instance partition name. Otherwise, only fields mentioned in field_mask
-     * need be included.
-     *
-     * @param InstancePartition $instancePartition
-     */
-    public function setInstancePartition(InstancePartition $instancePartition)
-    {
-    }
-    /**
-     * @return InstancePartition
-     */
-    public function getInstancePartition()
+    class Google_Service_Spanner_UpdateInstancePartitionRequest extends \Google\Service\Spanner\UpdateInstancePartitionRequest
     {
     }
 }

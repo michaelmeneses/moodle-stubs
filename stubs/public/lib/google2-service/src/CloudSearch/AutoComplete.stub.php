@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AutoComplete extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = AutoCompleteItem::class;
-    protected $itemsDataType = 'array';
-    /**
-     * @param AutoCompleteItem[]
-     */
-    public function setItems($items)
+namespace Google\Service\CloudSearch {
+    class AutoComplete extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = AutoCompleteItem::class;
+        protected $itemsDataType = 'array';
+        /**
+         * @param AutoCompleteItem[]
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return AutoCompleteItem[]
+         */
+        public function getItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AutoCompleteItem[]
+     * Runtime class alias of \Google\Service\CloudSearch\AutoComplete registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
+    class Google_Service_CloudSearch_AutoComplete extends \Google\Service\CloudSearch\AutoComplete
     {
     }
 }

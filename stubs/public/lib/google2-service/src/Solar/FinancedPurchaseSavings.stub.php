@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Solar;
-
-class FinancedPurchaseSavings extends \Google\Model
-{
-    protected $annualLoanPaymentType = Money::class;
-    protected $annualLoanPaymentDataType = '';
-    /**
-     * The interest rate on loans assumed in this set of calculations.
-     *
-     * @var float
-     */
-    public $loanInterestRate;
-    protected $rebateValueType = Money::class;
-    protected $rebateValueDataType = '';
-    protected $savingsType = SavingsOverTime::class;
-    protected $savingsDataType = '';
-    /**
-     * Annual loan payments.
-     *
-     * @param Money $annualLoanPayment
-     */
-    public function setAnnualLoanPayment(Money $annualLoanPayment)
+namespace Google\Service\Solar {
+    class FinancedPurchaseSavings extends \Google\Model
     {
+        protected $annualLoanPaymentType = Money::class;
+        protected $annualLoanPaymentDataType = '';
+        /**
+         * The interest rate on loans assumed in this set of calculations.
+         *
+         * @var float
+         */
+        public $loanInterestRate;
+        protected $rebateValueType = Money::class;
+        protected $rebateValueDataType = '';
+        protected $savingsType = SavingsOverTime::class;
+        protected $savingsDataType = '';
+        /**
+         * Annual loan payments.
+         *
+         * @param Money $annualLoanPayment
+         */
+        public function setAnnualLoanPayment(Money $annualLoanPayment)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getAnnualLoanPayment()
+        {
+        }
+        /**
+         * The interest rate on loans assumed in this set of calculations.
+         *
+         * @param float $loanInterestRate
+         */
+        public function setLoanInterestRate($loanInterestRate)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getLoanInterestRate()
+        {
+        }
+        /**
+         * The value of all tax rebates (including Federal Investment Tax Credit
+         * (ITC)).
+         *
+         * @param Money $rebateValue
+         */
+        public function setRebateValue(Money $rebateValue)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getRebateValue()
+        {
+        }
+        /**
+         * How much is saved (or not) over the lifetime period.
+         *
+         * @param SavingsOverTime $savings
+         */
+        public function setSavings(SavingsOverTime $savings)
+        {
+        }
+        /**
+         * @return SavingsOverTime
+         */
+        public function getSavings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Money
+     * Runtime class alias of \Google\Service\Solar\FinancedPurchaseSavings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnualLoanPayment()
-    {
-    }
-    /**
-     * The interest rate on loans assumed in this set of calculations.
-     *
-     * @param float $loanInterestRate
-     */
-    public function setLoanInterestRate($loanInterestRate)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getLoanInterestRate()
-    {
-    }
-    /**
-     * The value of all tax rebates (including Federal Investment Tax Credit
-     * (ITC)).
-     *
-     * @param Money $rebateValue
-     */
-    public function setRebateValue(Money $rebateValue)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getRebateValue()
-    {
-    }
-    /**
-     * How much is saved (or not) over the lifetime period.
-     *
-     * @param SavingsOverTime $savings
-     */
-    public function setSavings(SavingsOverTime $savings)
-    {
-    }
-    /**
-     * @return SavingsOverTime
-     */
-    public function getSavings()
+    class Google_Service_Solar_FinancedPurchaseSavings extends \Google\Service\Solar\FinancedPurchaseSavings
     {
     }
 }

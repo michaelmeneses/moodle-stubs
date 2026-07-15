@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class DiskTypesScopedList extends \Google\Collection
-{
-    protected $collection_key = 'diskTypes';
-    protected $diskTypesType = DiskType::class;
-    protected $diskTypesDataType = 'array';
-    protected $warningType = DiskTypesScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * [Output Only] A list of disk types contained in this scope.
-     *
-     * @param DiskType[] $diskTypes
-     */
-    public function setDiskTypes($diskTypes)
+namespace Google\Service\Compute {
+    class DiskTypesScopedList extends \Google\Collection
     {
+        protected $collection_key = 'diskTypes';
+        protected $diskTypesType = DiskType::class;
+        protected $diskTypesDataType = 'array';
+        protected $warningType = DiskTypesScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * [Output Only] A list of disk types contained in this scope.
+         *
+         * @param DiskType[] $diskTypes
+         */
+        public function setDiskTypes($diskTypes)
+        {
+        }
+        /**
+         * @return DiskType[]
+         */
+        public function getDiskTypes()
+        {
+        }
+        /**
+         * [Output Only] Informational warning which replaces the list of disk types
+         * when the list is empty.
+         *
+         * @param DiskTypesScopedListWarning $warning
+         */
+        public function setWarning(DiskTypesScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return DiskTypesScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DiskType[]
+     * Runtime class alias of \Google\Service\Compute\DiskTypesScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiskTypes()
-    {
-    }
-    /**
-     * [Output Only] Informational warning which replaces the list of disk types
-     * when the list is empty.
-     *
-     * @param DiskTypesScopedListWarning $warning
-     */
-    public function setWarning(DiskTypesScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return DiskTypesScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_DiskTypesScopedList extends \Google\Service\Compute\DiskTypesScopedList
     {
     }
 }

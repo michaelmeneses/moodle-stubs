@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1MapValueEntry extends \Google\Model
-{
-    protected $keyType = GoogleCloudDatapipelinesV1FieldValue::class;
-    protected $keyDataType = '';
-    protected $valueType = GoogleCloudDatapipelinesV1FieldValue::class;
-    protected $valueDataType = '';
-    /**
-     * @param GoogleCloudDatapipelinesV1FieldValue
-     */
-    public function setKey(GoogleCloudDatapipelinesV1FieldValue $key)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1MapValueEntry extends \Google\Model
     {
+        protected $keyType = GoogleCloudDatapipelinesV1FieldValue::class;
+        protected $keyDataType = '';
+        protected $valueType = GoogleCloudDatapipelinesV1FieldValue::class;
+        protected $valueDataType = '';
+        /**
+         * @param GoogleCloudDatapipelinesV1FieldValue
+         */
+        public function setKey(GoogleCloudDatapipelinesV1FieldValue $key)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1FieldValue
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * @param GoogleCloudDatapipelinesV1FieldValue
+         */
+        public function setValue(GoogleCloudDatapipelinesV1FieldValue $value)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1FieldValue
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatapipelinesV1FieldValue
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1MapValueEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * @param GoogleCloudDatapipelinesV1FieldValue
-     */
-    public function setValue(GoogleCloudDatapipelinesV1FieldValue $value)
-    {
-    }
-    /**
-     * @return GoogleCloudDatapipelinesV1FieldValue
-     */
-    public function getValue()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1MapValueEntry extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1MapValueEntry
     {
     }
 }

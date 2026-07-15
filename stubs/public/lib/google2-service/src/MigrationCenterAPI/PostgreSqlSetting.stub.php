@@ -21,150 +21,159 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class PostgreSqlSetting extends \Google\Model
-{
-    /**
-     * Required. The setting boolean value.
-     *
-     * @var bool
-     */
-    public $boolValue;
-    /**
-     * Required. The setting int value.
-     *
-     * @var string
-     */
-    public $intValue;
-    /**
-     * Required. The setting real value.
-     *
-     * @var float
-     */
-    public $realValue;
-    /**
-     * Required. The setting name.
-     *
-     * @var string
-     */
-    public $setting;
-    /**
-     * Required. The setting source.
-     *
-     * @var string
-     */
-    public $source;
-    /**
-     * Required. The setting string value. Notice that enum values are stored as
-     * strings.
-     *
-     * @var string
-     */
-    public $stringValue;
-    /**
-     * Optional. The setting unit.
-     *
-     * @var string
-     */
-    public $unit;
-    /**
-     * Required. The setting boolean value.
-     *
-     * @param bool $boolValue
-     */
-    public function setBoolValue($boolValue)
+namespace Google\Service\MigrationCenterAPI {
+    class PostgreSqlSetting extends \Google\Model
     {
+        /**
+         * Required. The setting boolean value.
+         *
+         * @var bool
+         */
+        public $boolValue;
+        /**
+         * Required. The setting int value.
+         *
+         * @var string
+         */
+        public $intValue;
+        /**
+         * Required. The setting real value.
+         *
+         * @var float
+         */
+        public $realValue;
+        /**
+         * Required. The setting name.
+         *
+         * @var string
+         */
+        public $setting;
+        /**
+         * Required. The setting source.
+         *
+         * @var string
+         */
+        public $source;
+        /**
+         * Required. The setting string value. Notice that enum values are stored as
+         * strings.
+         *
+         * @var string
+         */
+        public $stringValue;
+        /**
+         * Optional. The setting unit.
+         *
+         * @var string
+         */
+        public $unit;
+        /**
+         * Required. The setting boolean value.
+         *
+         * @param bool $boolValue
+         */
+        public function setBoolValue($boolValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBoolValue()
+        {
+        }
+        /**
+         * Required. The setting int value.
+         *
+         * @param string $intValue
+         */
+        public function setIntValue($intValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntValue()
+        {
+        }
+        /**
+         * Required. The setting real value.
+         *
+         * @param float $realValue
+         */
+        public function setRealValue($realValue)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getRealValue()
+        {
+        }
+        /**
+         * Required. The setting name.
+         *
+         * @param string $setting
+         */
+        public function setSetting($setting)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSetting()
+        {
+        }
+        /**
+         * Required. The setting source.
+         *
+         * @param string $source
+         */
+        public function setSource($source)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * Required. The setting string value. Notice that enum values are stored as
+         * strings.
+         *
+         * @param string $stringValue
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
+        /**
+         * Optional. The setting unit.
+         *
+         * @param string $unit
+         */
+        public function setUnit($unit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnit()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\PostgreSqlSetting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoolValue()
-    {
-    }
-    /**
-     * Required. The setting int value.
-     *
-     * @param string $intValue
-     */
-    public function setIntValue($intValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntValue()
-    {
-    }
-    /**
-     * Required. The setting real value.
-     *
-     * @param float $realValue
-     */
-    public function setRealValue($realValue)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getRealValue()
-    {
-    }
-    /**
-     * Required. The setting name.
-     *
-     * @param string $setting
-     */
-    public function setSetting($setting)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSetting()
-    {
-    }
-    /**
-     * Required. The setting source.
-     *
-     * @param string $source
-     */
-    public function setSource($source)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSource()
-    {
-    }
-    /**
-     * Required. The setting string value. Notice that enum values are stored as
-     * strings.
-     *
-     * @param string $stringValue
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
-    {
-    }
-    /**
-     * Optional. The setting unit.
-     *
-     * @param string $unit
-     */
-    public function setUnit($unit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnit()
+    class Google_Service_MigrationCenterAPI_PostgreSqlSetting extends \Google\Service\MigrationCenterAPI\PostgreSqlSetting
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class ExperimentParentLink extends \Google\Model
-{
-    /**
-     * Link to the view (profile) to which this experiment belongs. This field is
-     * read-only.
-     *
-     * @var string
-     */
-    public $href;
-    /**
-     * Value is "analytics#profile". This field is read-only.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Link to the view (profile) to which this experiment belongs. This field is
-     * read-only.
-     *
-     * @param string $href
-     */
-    public function setHref($href)
+namespace Google\Service\Analytics {
+    class ExperimentParentLink extends \Google\Model
     {
+        /**
+         * Link to the view (profile) to which this experiment belongs. This field is
+         * read-only.
+         *
+         * @var string
+         */
+        public $href;
+        /**
+         * Value is "analytics#profile". This field is read-only.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Link to the view (profile) to which this experiment belongs. This field is
+         * read-only.
+         *
+         * @param string $href
+         */
+        public function setHref($href)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHref()
+        {
+        }
+        /**
+         * Value is "analytics#profile". This field is read-only.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\ExperimentParentLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHref()
-    {
-    }
-    /**
-     * Value is "analytics#profile". This field is read-only.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Analytics_ExperimentParentLink extends \Google\Service\Analytics\ExperimentParentLink
     {
     }
 }

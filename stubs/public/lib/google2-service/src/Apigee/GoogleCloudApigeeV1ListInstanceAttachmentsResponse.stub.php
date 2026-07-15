@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListInstanceAttachmentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'attachments';
-    protected $attachmentsType = GoogleCloudApigeeV1InstanceAttachment::class;
-    protected $attachmentsDataType = 'array';
-    /**
-     * Page token that you can include in a ListInstanceAttachments request to
-     * retrieve the next page of content. If omitted, no subsequent pages exist.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Attachments for the instance.
-     *
-     * @param GoogleCloudApigeeV1InstanceAttachment[] $attachments
-     */
-    public function setAttachments($attachments)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListInstanceAttachmentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'attachments';
+        protected $attachmentsType = GoogleCloudApigeeV1InstanceAttachment::class;
+        protected $attachmentsDataType = 'array';
+        /**
+         * Page token that you can include in a ListInstanceAttachments request to
+         * retrieve the next page of content. If omitted, no subsequent pages exist.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Attachments for the instance.
+         *
+         * @param GoogleCloudApigeeV1InstanceAttachment[] $attachments
+         */
+        public function setAttachments($attachments)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1InstanceAttachment[]
+         */
+        public function getAttachments()
+        {
+        }
+        /**
+         * Page token that you can include in a ListInstanceAttachments request to
+         * retrieve the next page of content. If omitted, no subsequent pages exist.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1InstanceAttachment[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListInstanceAttachmentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachments()
-    {
-    }
-    /**
-     * Page token that you can include in a ListInstanceAttachments request to
-     * retrieve the next page of content. If omitted, no subsequent pages exist.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListInstanceAttachmentsResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListInstanceAttachmentsResponse
     {
     }
 }

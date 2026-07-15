@@ -21,119 +21,128 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class MySqlStorageEngineDetails extends \Google\Model
-{
-    /**
-     * Unspecified storage engine.
-     */
-    public const ENGINE_ENGINE_UNSPECIFIED = 'ENGINE_UNSPECIFIED';
-    /**
-     * InnoDB.
-     */
-    public const ENGINE_INNODB = 'INNODB';
-    /**
-     * MyISAM.
-     */
-    public const ENGINE_MYISAM = 'MYISAM';
-    /**
-     * Memory.
-     */
-    public const ENGINE_MEMORY = 'MEMORY';
-    /**
-     * CSV.
-     */
-    public const ENGINE_CSV = 'CSV';
-    /**
-     * Archive.
-     */
-    public const ENGINE_ARCHIVE = 'ARCHIVE';
-    /**
-     * Blackhole.
-     */
-    public const ENGINE_BLACKHOLE = 'BLACKHOLE';
-    /**
-     * NDB.
-     */
-    public const ENGINE_NDB = 'NDB';
-    /**
-     * Merge.
-     */
-    public const ENGINE_MERGE = 'MERGE';
-    /**
-     * Federated.
-     */
-    public const ENGINE_FEDERATED = 'FEDERATED';
-    /**
-     * Example.
-     */
-    public const ENGINE_EXAMPLE = 'EXAMPLE';
-    /**
-     * Other.
-     */
-    public const ENGINE_OTHER = 'OTHER';
-    /**
-     * Optional. The number of encrypted tables.
-     *
-     * @var int
-     */
-    public $encryptedTableCount;
-    /**
-     * Required. The storage engine.
-     *
-     * @var string
-     */
-    public $engine;
-    /**
-     * Optional. The number of tables.
-     *
-     * @var int
-     */
-    public $tableCount;
-    /**
-     * Optional. The number of encrypted tables.
-     *
-     * @param int $encryptedTableCount
-     */
-    public function setEncryptedTableCount($encryptedTableCount)
+namespace Google\Service\MigrationCenterAPI {
+    class MySqlStorageEngineDetails extends \Google\Model
     {
+        /**
+         * Unspecified storage engine.
+         */
+        public const ENGINE_ENGINE_UNSPECIFIED = 'ENGINE_UNSPECIFIED';
+        /**
+         * InnoDB.
+         */
+        public const ENGINE_INNODB = 'INNODB';
+        /**
+         * MyISAM.
+         */
+        public const ENGINE_MYISAM = 'MYISAM';
+        /**
+         * Memory.
+         */
+        public const ENGINE_MEMORY = 'MEMORY';
+        /**
+         * CSV.
+         */
+        public const ENGINE_CSV = 'CSV';
+        /**
+         * Archive.
+         */
+        public const ENGINE_ARCHIVE = 'ARCHIVE';
+        /**
+         * Blackhole.
+         */
+        public const ENGINE_BLACKHOLE = 'BLACKHOLE';
+        /**
+         * NDB.
+         */
+        public const ENGINE_NDB = 'NDB';
+        /**
+         * Merge.
+         */
+        public const ENGINE_MERGE = 'MERGE';
+        /**
+         * Federated.
+         */
+        public const ENGINE_FEDERATED = 'FEDERATED';
+        /**
+         * Example.
+         */
+        public const ENGINE_EXAMPLE = 'EXAMPLE';
+        /**
+         * Other.
+         */
+        public const ENGINE_OTHER = 'OTHER';
+        /**
+         * Optional. The number of encrypted tables.
+         *
+         * @var int
+         */
+        public $encryptedTableCount;
+        /**
+         * Required. The storage engine.
+         *
+         * @var string
+         */
+        public $engine;
+        /**
+         * Optional. The number of tables.
+         *
+         * @var int
+         */
+        public $tableCount;
+        /**
+         * Optional. The number of encrypted tables.
+         *
+         * @param int $encryptedTableCount
+         */
+        public function setEncryptedTableCount($encryptedTableCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEncryptedTableCount()
+        {
+        }
+        /**
+         * Required. The storage engine.
+         *
+         * Accepted values: ENGINE_UNSPECIFIED, INNODB, MYISAM, MEMORY, CSV, ARCHIVE,
+         * BLACKHOLE, NDB, MERGE, FEDERATED, EXAMPLE, OTHER
+         *
+         * @param self::ENGINE_* $engine
+         */
+        public function setEngine($engine)
+        {
+        }
+        /**
+         * @return self::ENGINE_*
+         */
+        public function getEngine()
+        {
+        }
+        /**
+         * Optional. The number of tables.
+         *
+         * @param int $tableCount
+         */
+        public function setTableCount($tableCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTableCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\MySqlStorageEngineDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncryptedTableCount()
-    {
-    }
-    /**
-     * Required. The storage engine.
-     *
-     * Accepted values: ENGINE_UNSPECIFIED, INNODB, MYISAM, MEMORY, CSV, ARCHIVE,
-     * BLACKHOLE, NDB, MERGE, FEDERATED, EXAMPLE, OTHER
-     *
-     * @param self::ENGINE_* $engine
-     */
-    public function setEngine($engine)
-    {
-    }
-    /**
-     * @return self::ENGINE_*
-     */
-    public function getEngine()
-    {
-    }
-    /**
-     * Optional. The number of tables.
-     *
-     * @param int $tableCount
-     */
-    public function setTableCount($tableCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTableCount()
+    class Google_Service_MigrationCenterAPI_MySqlStorageEngineDetails extends \Google\Service\MigrationCenterAPI\MySqlStorageEngineDetails
     {
     }
 }

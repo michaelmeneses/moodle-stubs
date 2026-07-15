@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSourceRepositories;
-
-class MirrorConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $deployKeyId;
-    /**
-     * @var string
-     */
-    public $url;
-    /**
-     * @var string
-     */
-    public $webhookId;
-    /**
-     * @param string
-     */
-    public function setDeployKeyId($deployKeyId)
+namespace Google\Service\CloudSourceRepositories {
+    class MirrorConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $deployKeyId;
+        /**
+         * @var string
+         */
+        public $url;
+        /**
+         * @var string
+         */
+        public $webhookId;
+        /**
+         * @param string
+         */
+        public function setDeployKeyId($deployKeyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeployKeyId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWebhookId($webhookId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebhookId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSourceRepositories\MirrorConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployKeyId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWebhookId($webhookId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebhookId()
+    class Google_Service_CloudSourceRepositories_MirrorConfig extends \Google\Service\CloudSourceRepositories\MirrorConfig
     {
     }
 }

@@ -21,32 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels\Resource;
-
-/**
- * The "locks" collection of methods.
- * Typical usage is:
- *  <code>
- *   $drivelabelsService = new Google\Service\DriveLabels(...);
- *   $locks = $drivelabelsService->labels_revisions_locks;
- *  </code>
- */
-class LabelsRevisionsLocks extends \Google\Service\Resource
-{
+namespace Google\Service\DriveLabels\Resource {
+    use Google\Service\DriveLabels\GoogleAppsDriveLabelsV2ListLabelLocksResponse;
     /**
-     * Lists the label locks on a label. (locks.listLabelsRevisionsLocks)
-     *
-     * @param string $parent Required. Label on which locks are applied. Format:
-     * `labels/{label}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum number of locks to return per page. Default:
-     * 100. Max: 200.
-     * @opt_param string pageToken The token of the page to return.
-     * @return GoogleAppsDriveLabelsV2ListLabelLocksResponse
-     * @throws \Google\Service\Exception
+     * The "locks" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $drivelabelsService = new Google\Service\DriveLabels(...);
+     *   $locks = $drivelabelsService->labels_revisions_locks;
+     *  </code>
      */
-    public function listLabelsRevisionsLocks($parent, $optParams = [])
+    class LabelsRevisionsLocks extends \Google\Service\Resource
+    {
+        /**
+         * Lists the label locks on a label. (locks.listLabelsRevisionsLocks)
+         *
+         * @param string $parent Required. Label on which locks are applied. Format:
+         * `labels/{label}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum number of locks to return per page. Default:
+         * 100. Max: 200.
+         * @opt_param string pageToken The token of the page to return.
+         * @return GoogleAppsDriveLabelsV2ListLabelLocksResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listLabelsRevisionsLocks($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DriveLabels\Resource\LabelsRevisionsLocks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DriveLabels_Resource_LabelsRevisionsLocks extends \Google\Service\DriveLabels\Resource\LabelsRevisionsLocks
     {
     }
 }

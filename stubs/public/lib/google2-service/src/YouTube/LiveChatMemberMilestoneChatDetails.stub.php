@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LiveChatMemberMilestoneChatDetails extends \Google\Model
-{
-    /**
-     * The name of the Level at which the viever is a member. The Level names are
-     * defined by the YouTube channel offering the Membership. In some situations
-     * this field isn't filled.
-     *
-     * @var string
-     */
-    public $memberLevelName;
-    /**
-     * The total amount of months (rounded up) the viewer has been a member that
-     * granted them this Member Milestone Chat. This is the same number of months
-     * as is being displayed to YouTube users.
-     *
-     * @var string
-     */
-    public $memberMonth;
-    /**
-     * The comment added by the member to this Member Milestone Chat. This field
-     * is empty for messages without a comment from the member.
-     *
-     * @var string
-     */
-    public $userComment;
-    /**
-     * The name of the Level at which the viever is a member. The Level names are
-     * defined by the YouTube channel offering the Membership. In some situations
-     * this field isn't filled.
-     *
-     * @param string $memberLevelName
-     */
-    public function setMemberLevelName($memberLevelName)
+namespace Google\Service\YouTube {
+    class LiveChatMemberMilestoneChatDetails extends \Google\Model
     {
+        /**
+         * The name of the Level at which the viever is a member. The Level names are
+         * defined by the YouTube channel offering the Membership. In some situations
+         * this field isn't filled.
+         *
+         * @var string
+         */
+        public $memberLevelName;
+        /**
+         * The total amount of months (rounded up) the viewer has been a member that
+         * granted them this Member Milestone Chat. This is the same number of months
+         * as is being displayed to YouTube users.
+         *
+         * @var string
+         */
+        public $memberMonth;
+        /**
+         * The comment added by the member to this Member Milestone Chat. This field
+         * is empty for messages without a comment from the member.
+         *
+         * @var string
+         */
+        public $userComment;
+        /**
+         * The name of the Level at which the viever is a member. The Level names are
+         * defined by the YouTube channel offering the Membership. In some situations
+         * this field isn't filled.
+         *
+         * @param string $memberLevelName
+         */
+        public function setMemberLevelName($memberLevelName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemberLevelName()
+        {
+        }
+        /**
+         * The total amount of months (rounded up) the viewer has been a member that
+         * granted them this Member Milestone Chat. This is the same number of months
+         * as is being displayed to YouTube users.
+         *
+         * @param string $memberMonth
+         */
+        public function setMemberMonth($memberMonth)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemberMonth()
+        {
+        }
+        /**
+         * The comment added by the member to this Member Milestone Chat. This field
+         * is empty for messages without a comment from the member.
+         *
+         * @param string $userComment
+         */
+        public function setUserComment($userComment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserComment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\LiveChatMemberMilestoneChatDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMemberLevelName()
-    {
-    }
-    /**
-     * The total amount of months (rounded up) the viewer has been a member that
-     * granted them this Member Milestone Chat. This is the same number of months
-     * as is being displayed to YouTube users.
-     *
-     * @param string $memberMonth
-     */
-    public function setMemberMonth($memberMonth)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMemberMonth()
-    {
-    }
-    /**
-     * The comment added by the member to this Member Milestone Chat. This field
-     * is empty for messages without a comment from the member.
-     *
-     * @param string $userComment
-     */
-    public function setUserComment($userComment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserComment()
+    class Google_Service_YouTube_LiveChatMemberMilestoneChatDetails extends \Google\Service\YouTube\LiveChatMemberMilestoneChatDetails
     {
     }
 }

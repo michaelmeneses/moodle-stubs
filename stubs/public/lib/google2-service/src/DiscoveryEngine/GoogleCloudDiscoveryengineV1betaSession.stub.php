@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaSession extends \Google\Collection
-{
-    protected $collection_key = 'turns';
-    /**
-     * @var string
-     */
-    public $endTime;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $startTime;
-    /**
-     * @var string
-     */
-    public $state;
-    protected $turnsType = GoogleCloudDiscoveryengineV1betaSessionTurn::class;
-    protected $turnsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $userPseudoId;
-    /**
-     * @param string
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaSession extends \Google\Collection
     {
+        protected $collection_key = 'turns';
+        /**
+         * @var string
+         */
+        public $endTime;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $startTime;
+        /**
+         * @var string
+         */
+        public $state;
+        protected $turnsType = GoogleCloudDiscoveryengineV1betaSessionTurn::class;
+        protected $turnsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $userPseudoId;
+        /**
+         * @param string
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaSessionTurn[]
+         */
+        public function setTurns($turns)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaSessionTurn[]
+         */
+        public function getTurns()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUserPseudoId($userPseudoId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserPseudoId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSession registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaSessionTurn[]
-     */
-    public function setTurns($turns)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaSessionTurn[]
-     */
-    public function getTurns()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUserPseudoId($userPseudoId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserPseudoId()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaSession extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSession
     {
     }
 }

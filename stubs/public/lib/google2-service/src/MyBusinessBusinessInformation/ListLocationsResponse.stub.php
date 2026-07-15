@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class ListLocationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'locations';
-    protected $locationsType = Location::class;
-    protected $locationsDataType = 'array';
-    /**
-     * If the number of locations exceeded the requested page size, this field is
-     * populated with a token to fetch the next page of locations on a subsequent
-     * call to `ListLocations`. If there are no more locations, this field is not
-     * present in the response.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The approximate number of Locations in the list irrespective of pagination.
-     * This field will only be returned if `filter` is used as a query parameter.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * The locations.
-     *
-     * @param Location[] $locations
-     */
-    public function setLocations($locations)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class ListLocationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'locations';
+        protected $locationsType = Location::class;
+        protected $locationsDataType = 'array';
+        /**
+         * If the number of locations exceeded the requested page size, this field is
+         * populated with a token to fetch the next page of locations on a subsequent
+         * call to `ListLocations`. If there are no more locations, this field is not
+         * present in the response.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The approximate number of Locations in the list irrespective of pagination.
+         * This field will only be returned if `filter` is used as a query parameter.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * The locations.
+         *
+         * @param Location[] $locations
+         */
+        public function setLocations($locations)
+        {
+        }
+        /**
+         * @return Location[]
+         */
+        public function getLocations()
+        {
+        }
+        /**
+         * If the number of locations exceeded the requested page size, this field is
+         * populated with a token to fetch the next page of locations on a subsequent
+         * call to `ListLocations`. If there are no more locations, this field is not
+         * present in the response.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The approximate number of Locations in the list irrespective of pagination.
+         * This field will only be returned if `filter` is used as a query parameter.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Location[]
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\ListLocationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocations()
-    {
-    }
-    /**
-     * If the number of locations exceeded the requested page size, this field is
-     * populated with a token to fetch the next page of locations on a subsequent
-     * call to `ListLocations`. If there are no more locations, this field is not
-     * present in the response.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The approximate number of Locations in the list irrespective of pagination.
-     * This field will only be returned if `filter` is used as a query parameter.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_MyBusinessBusinessInformation_ListLocationsResponse extends \Google\Service\MyBusinessBusinessInformation\ListLocationsResponse
     {
     }
 }

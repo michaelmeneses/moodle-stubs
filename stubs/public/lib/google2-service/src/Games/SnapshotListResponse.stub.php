@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class SnapshotListResponse extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = Snapshot::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#snapshotListResponse`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Token corresponding to the next page of results. If there are no more
-     * results, the token is omitted.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The snapshots.
-     *
-     * @param Snapshot[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Games {
+    class SnapshotListResponse extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = Snapshot::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#snapshotListResponse`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Token corresponding to the next page of results. If there are no more
+         * results, the token is omitted.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The snapshots.
+         *
+         * @param Snapshot[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Snapshot[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#snapshotListResponse`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Token corresponding to the next page of results. If there are no more
+         * results, the token is omitted.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Snapshot[]
+     * Runtime class alias of \Google\Service\Games\SnapshotListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#snapshotListResponse`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Token corresponding to the next page of results. If there are no more
-     * results, the token is omitted.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Games_SnapshotListResponse extends \Google\Service\Games\SnapshotListResponse
     {
     }
 }

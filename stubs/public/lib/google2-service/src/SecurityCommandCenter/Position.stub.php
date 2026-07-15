@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class Position extends \Google\Model
-{
-    /**
-     * The column number.
-     *
-     * @var int
-     */
-    public $columnNumber;
-    /**
-     * The line number.
-     *
-     * @var int
-     */
-    public $lineNumber;
-    /**
-     * The column number.
-     *
-     * @param int $columnNumber
-     */
-    public function setColumnNumber($columnNumber)
+namespace Google\Service\SecurityCommandCenter {
+    class Position extends \Google\Model
     {
+        /**
+         * The column number.
+         *
+         * @var int
+         */
+        public $columnNumber;
+        /**
+         * The line number.
+         *
+         * @var int
+         */
+        public $lineNumber;
+        /**
+         * The column number.
+         *
+         * @param int $columnNumber
+         */
+        public function setColumnNumber($columnNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColumnNumber()
+        {
+        }
+        /**
+         * The line number.
+         *
+         * @param int $lineNumber
+         */
+        public function setLineNumber($lineNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLineNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\Position registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnNumber()
-    {
-    }
-    /**
-     * The line number.
-     *
-     * @param int $lineNumber
-     */
-    public function setLineNumber($lineNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLineNumber()
+    class Google_Service_SecurityCommandCenter_Position extends \Google\Service\SecurityCommandCenter\Position
     {
     }
 }

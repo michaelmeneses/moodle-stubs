@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class TeamDriveReference extends \Google\Model
-{
-    /**
-     * This field is deprecated; please see `DriveReference.name` instead.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * This field is deprecated; please see `DriveReference.title` instead.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * This field is deprecated; please see `DriveReference.name` instead.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\DriveActivity {
+    class TeamDriveReference extends \Google\Model
     {
+        /**
+         * This field is deprecated; please see `DriveReference.name` instead.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * This field is deprecated; please see `DriveReference.title` instead.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * This field is deprecated; please see `DriveReference.name` instead.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * This field is deprecated; please see `DriveReference.title` instead.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveActivity\TeamDriveReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * This field is deprecated; please see `DriveReference.title` instead.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_DriveActivity_TeamDriveReference extends \Google\Service\DriveActivity\TeamDriveReference
     {
     }
 }

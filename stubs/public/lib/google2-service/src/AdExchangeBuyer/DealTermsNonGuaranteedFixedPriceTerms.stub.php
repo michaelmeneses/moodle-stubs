@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class DealTermsNonGuaranteedFixedPriceTerms extends \Google\Collection
-{
-    protected $collection_key = 'fixedPrices';
-    protected $fixedPricesType = PricePerBuyer::class;
-    protected $fixedPricesDataType = 'array';
-    /**
-     * @param PricePerBuyer[]
-     */
-    public function setFixedPrices($fixedPrices)
+namespace Google\Service\AdExchangeBuyer {
+    class DealTermsNonGuaranteedFixedPriceTerms extends \Google\Collection
     {
+        protected $collection_key = 'fixedPrices';
+        protected $fixedPricesType = PricePerBuyer::class;
+        protected $fixedPricesDataType = 'array';
+        /**
+         * @param PricePerBuyer[]
+         */
+        public function setFixedPrices($fixedPrices)
+        {
+        }
+        /**
+         * @return PricePerBuyer[]
+         */
+        public function getFixedPrices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PricePerBuyer[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\DealTermsNonGuaranteedFixedPriceTerms registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFixedPrices()
+    class Google_Service_AdExchangeBuyer_DealTermsNonGuaranteedFixedPriceTerms extends \Google\Service\AdExchangeBuyer\DealTermsNonGuaranteedFixedPriceTerms
     {
     }
 }

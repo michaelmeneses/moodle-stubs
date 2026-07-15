@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class OperationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'steps';
-    /**
-     * Percentage of completion of this operation, ranging from 0 to 100.
-     *
-     * @var int
-     */
-    public $progressPercentage;
-    /**
-     * The full name of the resources that this operation is directly associated
-     * with.
-     *
-     * @var string[]
-     */
-    public $resourceNames;
-    /**
-     * The start time of the operation.
-     *
-     * @var string
-     */
-    public $startTime;
-    protected $stepsType = Step::class;
-    protected $stepsDataType = 'array';
-    /**
-     * Percentage of completion of this operation, ranging from 0 to 100.
-     *
-     * @param int $progressPercentage
-     */
-    public function setProgressPercentage($progressPercentage)
+namespace Google\Service\ServiceManagement {
+    class OperationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'steps';
+        /**
+         * Percentage of completion of this operation, ranging from 0 to 100.
+         *
+         * @var int
+         */
+        public $progressPercentage;
+        /**
+         * The full name of the resources that this operation is directly associated
+         * with.
+         *
+         * @var string[]
+         */
+        public $resourceNames;
+        /**
+         * The start time of the operation.
+         *
+         * @var string
+         */
+        public $startTime;
+        protected $stepsType = Step::class;
+        protected $stepsDataType = 'array';
+        /**
+         * Percentage of completion of this operation, ranging from 0 to 100.
+         *
+         * @param int $progressPercentage
+         */
+        public function setProgressPercentage($progressPercentage)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getProgressPercentage()
+        {
+        }
+        /**
+         * The full name of the resources that this operation is directly associated
+         * with.
+         *
+         * @param string[] $resourceNames
+         */
+        public function setResourceNames($resourceNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceNames()
+        {
+        }
+        /**
+         * The start time of the operation.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * Detailed status information for each step. The order is undetermined.
+         *
+         * @param Step[] $steps
+         */
+        public function setSteps($steps)
+        {
+        }
+        /**
+         * @return Step[]
+         */
+        public function getSteps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\ServiceManagement\OperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProgressPercentage()
-    {
-    }
-    /**
-     * The full name of the resources that this operation is directly associated
-     * with.
-     *
-     * @param string[] $resourceNames
-     */
-    public function setResourceNames($resourceNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResourceNames()
-    {
-    }
-    /**
-     * The start time of the operation.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * Detailed status information for each step. The order is undetermined.
-     *
-     * @param Step[] $steps
-     */
-    public function setSteps($steps)
-    {
-    }
-    /**
-     * @return Step[]
-     */
-    public function getSteps()
+    class Google_Service_ServiceManagement_OperationMetadata extends \Google\Service\ServiceManagement\OperationMetadata
     {
     }
 }

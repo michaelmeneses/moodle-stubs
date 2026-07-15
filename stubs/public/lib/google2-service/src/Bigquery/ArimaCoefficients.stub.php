@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ArimaCoefficients extends \Google\Collection
-{
-    protected $collection_key = 'movingAverageCoefficients';
+namespace Google\Service\Bigquery {
+    class ArimaCoefficients extends \Google\Collection
+    {
+        protected $collection_key = 'movingAverageCoefficients';
+        /**
+         * Auto-regressive coefficients, an array of double.
+         *
+         * @var []
+         */
+        public $autoRegressiveCoefficients;
+        /**
+         * Intercept coefficient, just a double not an array.
+         *
+         * @var 
+         */
+        public $interceptCoefficient;
+        /**
+         * Moving-average coefficients, an array of double.
+         *
+         * @var []
+         */
+        public $movingAverageCoefficients;
+        public function setAutoRegressiveCoefficients($autoRegressiveCoefficients)
+        {
+        }
+        public function getAutoRegressiveCoefficients()
+        {
+        }
+        public function setInterceptCoefficient($interceptCoefficient)
+        {
+        }
+        public function getInterceptCoefficient()
+        {
+        }
+        public function setMovingAverageCoefficients($movingAverageCoefficients)
+        {
+        }
+        public function getMovingAverageCoefficients()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Auto-regressive coefficients, an array of double.
-     *
-     * @var []
+     * Runtime class alias of \Google\Service\Bigquery\ArimaCoefficients registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $autoRegressiveCoefficients;
-    /**
-     * Intercept coefficient, just a double not an array.
-     *
-     * @var 
-     */
-    public $interceptCoefficient;
-    /**
-     * Moving-average coefficients, an array of double.
-     *
-     * @var []
-     */
-    public $movingAverageCoefficients;
-    public function setAutoRegressiveCoefficients($autoRegressiveCoefficients)
-    {
-    }
-    public function getAutoRegressiveCoefficients()
-    {
-    }
-    public function setInterceptCoefficient($interceptCoefficient)
-    {
-    }
-    public function getInterceptCoefficient()
-    {
-    }
-    public function setMovingAverageCoefficients($movingAverageCoefficients)
-    {
-    }
-    public function getMovingAverageCoefficients()
+    class Google_Service_Bigquery_ArimaCoefficients extends \Google\Service\Bigquery\ArimaCoefficients
     {
     }
 }

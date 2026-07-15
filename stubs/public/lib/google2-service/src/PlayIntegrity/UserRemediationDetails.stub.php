@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayIntegrity;
-
-class UserRemediationDetails extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $remediation;
-    /**
-     * @param string
-     */
-    public function setRemediation($remediation)
+namespace Google\Service\PlayIntegrity {
+    class UserRemediationDetails extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $remediation;
+        /**
+         * @param string
+         */
+        public function setRemediation($remediation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemediation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PlayIntegrity\UserRemediationDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRemediation()
+    class Google_Service_PlayIntegrity_UserRemediationDetails extends \Google\Service\PlayIntegrity\UserRemediationDetails
     {
     }
 }

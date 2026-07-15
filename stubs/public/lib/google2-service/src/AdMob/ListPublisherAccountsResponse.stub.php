@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdMob;
-
-class ListPublisherAccountsResponse extends \Google\Collection
-{
-    protected $collection_key = 'account';
-    protected $accountType = PublisherAccount::class;
-    protected $accountDataType = 'array';
-    /**
-     * If not empty, indicates that there might be more accounts for the request;
-     * you must pass this value in a new `ListPublisherAccountsRequest`.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Publisher that the client credentials can access.
-     *
-     * @param PublisherAccount[] $account
-     */
-    public function setAccount($account)
+namespace Google\Service\AdMob {
+    class ListPublisherAccountsResponse extends \Google\Collection
     {
+        protected $collection_key = 'account';
+        protected $accountType = PublisherAccount::class;
+        protected $accountDataType = 'array';
+        /**
+         * If not empty, indicates that there might be more accounts for the request;
+         * you must pass this value in a new `ListPublisherAccountsRequest`.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Publisher that the client credentials can access.
+         *
+         * @param PublisherAccount[] $account
+         */
+        public function setAccount($account)
+        {
+        }
+        /**
+         * @return PublisherAccount[]
+         */
+        public function getAccount()
+        {
+        }
+        /**
+         * If not empty, indicates that there might be more accounts for the request;
+         * you must pass this value in a new `ListPublisherAccountsRequest`.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PublisherAccount[]
+     * Runtime class alias of \Google\Service\AdMob\ListPublisherAccountsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccount()
-    {
-    }
-    /**
-     * If not empty, indicates that there might be more accounts for the request;
-     * you must pass this value in a new `ListPublisherAccountsRequest`.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AdMob_ListPublisherAccountsResponse extends \Google\Service\AdMob\ListPublisherAccountsResponse
     {
     }
 }

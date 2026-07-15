@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class YoutubeAdGroupAssignedTargetingOption extends \Google\Model
-{
-    protected $assignedTargetingOptionType = AssignedTargetingOption::class;
-    protected $assignedTargetingOptionDataType = '';
-    /**
-     * @var string
-     */
-    public $youtubeAdGroupId;
-    /**
-     * @param AssignedTargetingOption
-     */
-    public function setAssignedTargetingOption(AssignedTargetingOption $assignedTargetingOption)
+namespace Google\Service\DisplayVideo {
+    class YoutubeAdGroupAssignedTargetingOption extends \Google\Model
     {
+        protected $assignedTargetingOptionType = AssignedTargetingOption::class;
+        protected $assignedTargetingOptionDataType = '';
+        /**
+         * @var string
+         */
+        public $youtubeAdGroupId;
+        /**
+         * @param AssignedTargetingOption
+         */
+        public function setAssignedTargetingOption(AssignedTargetingOption $assignedTargetingOption)
+        {
+        }
+        /**
+         * @return AssignedTargetingOption
+         */
+        public function getAssignedTargetingOption()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setYoutubeAdGroupId($youtubeAdGroupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getYoutubeAdGroupId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AssignedTargetingOption
+     * Runtime class alias of \Google\Service\DisplayVideo\YoutubeAdGroupAssignedTargetingOption registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssignedTargetingOption()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setYoutubeAdGroupId($youtubeAdGroupId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getYoutubeAdGroupId()
+    class Google_Service_DisplayVideo_YoutubeAdGroupAssignedTargetingOption extends \Google\Service\DisplayVideo\YoutubeAdGroupAssignedTargetingOption
     {
     }
 }

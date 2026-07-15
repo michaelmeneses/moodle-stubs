@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class ListAutonomousDatabaseCharacterSetsResponse extends \Google\Collection
-{
-    protected $collection_key = 'autonomousDatabaseCharacterSets';
-    protected $autonomousDatabaseCharacterSetsType = AutonomousDatabaseCharacterSet::class;
-    protected $autonomousDatabaseCharacterSetsDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of Autonomous Database Character Sets.
-     *
-     * @param AutonomousDatabaseCharacterSet[] $autonomousDatabaseCharacterSets
-     */
-    public function setAutonomousDatabaseCharacterSets($autonomousDatabaseCharacterSets)
+namespace Google\Service\OracleDatabase {
+    class ListAutonomousDatabaseCharacterSetsResponse extends \Google\Collection
     {
+        protected $collection_key = 'autonomousDatabaseCharacterSets';
+        protected $autonomousDatabaseCharacterSetsType = AutonomousDatabaseCharacterSet::class;
+        protected $autonomousDatabaseCharacterSetsDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of Autonomous Database Character Sets.
+         *
+         * @param AutonomousDatabaseCharacterSet[] $autonomousDatabaseCharacterSets
+         */
+        public function setAutonomousDatabaseCharacterSets($autonomousDatabaseCharacterSets)
+        {
+        }
+        /**
+         * @return AutonomousDatabaseCharacterSet[]
+         */
+        public function getAutonomousDatabaseCharacterSets()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AutonomousDatabaseCharacterSet[]
+     * Runtime class alias of \Google\Service\OracleDatabase\ListAutonomousDatabaseCharacterSetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutonomousDatabaseCharacterSets()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_OracleDatabase_ListAutonomousDatabaseCharacterSetsResponse extends \Google\Service\OracleDatabase\ListAutonomousDatabaseCharacterSetsResponse
     {
     }
 }

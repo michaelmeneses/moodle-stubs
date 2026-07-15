@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class GoogleCloudBigqueryAnalyticshubV1SubscriptionCommercialInfo extends \Google\Model
-{
-    protected $cloudMarketplaceType = GoogleCloudBigqueryAnalyticshubV1SubscriptionCommercialInfoGoogleCloudMarketplaceInfo::class;
-    protected $cloudMarketplaceDataType = '';
-    /**
-     * Output only. This is set when the subscription is commercialised via Cloud
-     * Marketplace.
-     *
-     * @param GoogleCloudBigqueryAnalyticshubV1SubscriptionCommercialInfoGoogleCloudMarketplaceInfo $cloudMarketplace
-     */
-    public function setCloudMarketplace(GoogleCloudBigqueryAnalyticshubV1SubscriptionCommercialInfoGoogleCloudMarketplaceInfo $cloudMarketplace)
+namespace Google\Service\AnalyticsHub {
+    class GoogleCloudBigqueryAnalyticshubV1SubscriptionCommercialInfo extends \Google\Model
     {
+        protected $cloudMarketplaceType = GoogleCloudBigqueryAnalyticshubV1SubscriptionCommercialInfoGoogleCloudMarketplaceInfo::class;
+        protected $cloudMarketplaceDataType = '';
+        /**
+         * Output only. This is set when the subscription is commercialised via Cloud
+         * Marketplace.
+         *
+         * @param GoogleCloudBigqueryAnalyticshubV1SubscriptionCommercialInfoGoogleCloudMarketplaceInfo $cloudMarketplace
+         */
+        public function setCloudMarketplace(GoogleCloudBigqueryAnalyticshubV1SubscriptionCommercialInfoGoogleCloudMarketplaceInfo $cloudMarketplace)
+        {
+        }
+        /**
+         * @return GoogleCloudBigqueryAnalyticshubV1SubscriptionCommercialInfoGoogleCloudMarketplaceInfo
+         */
+        public function getCloudMarketplace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudBigqueryAnalyticshubV1SubscriptionCommercialInfoGoogleCloudMarketplaceInfo
+     * Runtime class alias of \Google\Service\AnalyticsHub\GoogleCloudBigqueryAnalyticshubV1SubscriptionCommercialInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudMarketplace()
+    class Google_Service_AnalyticsHub_GoogleCloudBigqueryAnalyticshubV1SubscriptionCommercialInfo extends \Google\Service\AnalyticsHub\GoogleCloudBigqueryAnalyticshubV1SubscriptionCommercialInfo
     {
     }
 }

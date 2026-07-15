@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $cycleEndTime;
-    /**
-     * @var string
-     */
-    public $freeTrialEndTime;
-    /**
-     * @var string
-     */
-    public $renewalTime;
-    /**
-     * @param string
-     */
-    public function setCycleEndTime($cycleEndTime)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $cycleEndTime;
+        /**
+         * @var string
+         */
+        public $freeTrialEndTime;
+        /**
+         * @var string
+         */
+        public $renewalTime;
+        /**
+         * @param string
+         */
+        public function setCycleEndTime($cycleEndTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCycleEndTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFreeTrialEndTime($freeTrialEndTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFreeTrialEndTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRenewalTime($renewalTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRenewalTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCycleEndTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFreeTrialEndTime($freeTrialEndTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFreeTrialEndTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRenewalTime($renewalTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRenewalTime()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionResponse extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1ExtendSubscriptionResponse
     {
     }
 }

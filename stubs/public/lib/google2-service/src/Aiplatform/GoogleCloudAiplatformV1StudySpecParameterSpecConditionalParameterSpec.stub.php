@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpec extends \Google\Model
-{
-    protected $parameterSpecType = GoogleCloudAiplatformV1StudySpecParameterSpec::class;
-    protected $parameterSpecDataType = '';
-    protected $parentCategoricalValuesType = GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecCategoricalValueCondition::class;
-    protected $parentCategoricalValuesDataType = '';
-    protected $parentDiscreteValuesType = GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecDiscreteValueCondition::class;
-    protected $parentDiscreteValuesDataType = '';
-    protected $parentIntValuesType = GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecIntValueCondition::class;
-    protected $parentIntValuesDataType = '';
-    /**
-     * Required. The spec for a conditional parameter.
-     *
-     * @param GoogleCloudAiplatformV1StudySpecParameterSpec $parameterSpec
-     */
-    public function setParameterSpec(GoogleCloudAiplatformV1StudySpecParameterSpec $parameterSpec)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpec extends \Google\Model
     {
+        protected $parameterSpecType = GoogleCloudAiplatformV1StudySpecParameterSpec::class;
+        protected $parameterSpecDataType = '';
+        protected $parentCategoricalValuesType = GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecCategoricalValueCondition::class;
+        protected $parentCategoricalValuesDataType = '';
+        protected $parentDiscreteValuesType = GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecDiscreteValueCondition::class;
+        protected $parentDiscreteValuesDataType = '';
+        protected $parentIntValuesType = GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecIntValueCondition::class;
+        protected $parentIntValuesDataType = '';
+        /**
+         * Required. The spec for a conditional parameter.
+         *
+         * @param GoogleCloudAiplatformV1StudySpecParameterSpec $parameterSpec
+         */
+        public function setParameterSpec(GoogleCloudAiplatformV1StudySpecParameterSpec $parameterSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1StudySpecParameterSpec
+         */
+        public function getParameterSpec()
+        {
+        }
+        /**
+         * The spec for matching values from a parent parameter of `CATEGORICAL` type.
+         *
+         * @param GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecCategoricalValueCondition $parentCategoricalValues
+         */
+        public function setParentCategoricalValues(GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecCategoricalValueCondition $parentCategoricalValues)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecCategoricalValueCondition
+         */
+        public function getParentCategoricalValues()
+        {
+        }
+        /**
+         * The spec for matching values from a parent parameter of `DISCRETE` type.
+         *
+         * @param GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecDiscreteValueCondition $parentDiscreteValues
+         */
+        public function setParentDiscreteValues(GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecDiscreteValueCondition $parentDiscreteValues)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecDiscreteValueCondition
+         */
+        public function getParentDiscreteValues()
+        {
+        }
+        /**
+         * The spec for matching values from a parent parameter of `INTEGER` type.
+         *
+         * @param GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecIntValueCondition $parentIntValues
+         */
+        public function setParentIntValues(GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecIntValueCondition $parentIntValues)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecIntValueCondition
+         */
+        public function getParentIntValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1StudySpecParameterSpec
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParameterSpec()
-    {
-    }
-    /**
-     * The spec for matching values from a parent parameter of `CATEGORICAL` type.
-     *
-     * @param GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecCategoricalValueCondition $parentCategoricalValues
-     */
-    public function setParentCategoricalValues(GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecCategoricalValueCondition $parentCategoricalValues)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecCategoricalValueCondition
-     */
-    public function getParentCategoricalValues()
-    {
-    }
-    /**
-     * The spec for matching values from a parent parameter of `DISCRETE` type.
-     *
-     * @param GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecDiscreteValueCondition $parentDiscreteValues
-     */
-    public function setParentDiscreteValues(GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecDiscreteValueCondition $parentDiscreteValues)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecDiscreteValueCondition
-     */
-    public function getParentDiscreteValues()
-    {
-    }
-    /**
-     * The spec for matching values from a parent parameter of `INTEGER` type.
-     *
-     * @param GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecIntValueCondition $parentIntValues
-     */
-    public function setParentIntValues(GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecIntValueCondition $parentIntValues)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecIntValueCondition
-     */
-    public function getParentIntValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpec
     {
     }
 }

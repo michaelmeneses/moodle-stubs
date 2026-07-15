@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sasportal;
-
-class SasPortalMoveDeploymentRequest extends \Google\Model
-{
-    /**
-     * Required. The name of the new parent resource node or customer to reparent
-     * the deployment under.
-     *
-     * @var string
-     */
-    public $destination;
-    /**
-     * Required. The name of the new parent resource node or customer to reparent
-     * the deployment under.
-     *
-     * @param string $destination
-     */
-    public function setDestination($destination)
+namespace Google\Service\Sasportal {
+    class SasPortalMoveDeploymentRequest extends \Google\Model
     {
+        /**
+         * Required. The name of the new parent resource node or customer to reparent
+         * the deployment under.
+         *
+         * @var string
+         */
+        public $destination;
+        /**
+         * Required. The name of the new parent resource node or customer to reparent
+         * the deployment under.
+         *
+         * @param string $destination
+         */
+        public function setDestination($destination)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestination()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sasportal\SasPortalMoveDeploymentRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestination()
+    class Google_Service_Sasportal_SasPortalMoveDeploymentRequest extends \Google\Service\Sasportal\SasPortalMoveDeploymentRequest
     {
     }
 }

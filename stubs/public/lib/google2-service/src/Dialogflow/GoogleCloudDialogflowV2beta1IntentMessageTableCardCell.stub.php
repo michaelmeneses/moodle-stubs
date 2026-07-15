@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1IntentMessageTableCardCell extends \Google\Model
-{
-    /**
-     * Required. Text in this cell.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Required. Text in this cell.
-     *
-     * @param string $text
-     */
-    public function setText($text)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1IntentMessageTableCardCell extends \Google\Model
     {
+        /**
+         * Required. Text in this cell.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Required. Text in this cell.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageTableCardCell registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getText()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1IntentMessageTableCardCell extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageTableCardCell
     {
     }
 }

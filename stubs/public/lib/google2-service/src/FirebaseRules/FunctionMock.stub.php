@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseRules;
-
-class FunctionMock extends \Google\Collection
-{
-    protected $collection_key = 'args';
-    protected $argsType = Arg::class;
-    protected $argsDataType = 'array';
-    /**
-     * The name of the function. The function name must match one provided by a
-     * service declaration.
-     *
-     * @var string
-     */
-    public $function;
-    protected $resultType = Result::class;
-    protected $resultDataType = '';
-    /**
-     * The list of `Arg` values to match. The order in which the arguments are
-     * provided is the order in which they must appear in the function invocation.
-     *
-     * @param Arg[] $args
-     */
-    public function setArgs($args)
+namespace Google\Service\FirebaseRules {
+    class FunctionMock extends \Google\Collection
     {
+        protected $collection_key = 'args';
+        protected $argsType = Arg::class;
+        protected $argsDataType = 'array';
+        /**
+         * The name of the function. The function name must match one provided by a
+         * service declaration.
+         *
+         * @var string
+         */
+        public $function;
+        protected $resultType = Result::class;
+        protected $resultDataType = '';
+        /**
+         * The list of `Arg` values to match. The order in which the arguments are
+         * provided is the order in which they must appear in the function invocation.
+         *
+         * @param Arg[] $args
+         */
+        public function setArgs($args)
+        {
+        }
+        /**
+         * @return Arg[]
+         */
+        public function getArgs()
+        {
+        }
+        /**
+         * The name of the function. The function name must match one provided by a
+         * service declaration.
+         *
+         * @param string $function
+         */
+        public function setFunction($function)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFunction()
+        {
+        }
+        /**
+         * The mock result of the function call.
+         *
+         * @param Result $result
+         */
+        public function setResult(Result $result)
+        {
+        }
+        /**
+         * @return Result
+         */
+        public function getResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Arg[]
+     * Runtime class alias of \Google\Service\FirebaseRules\FunctionMock registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArgs()
-    {
-    }
-    /**
-     * The name of the function. The function name must match one provided by a
-     * service declaration.
-     *
-     * @param string $function
-     */
-    public function setFunction($function)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFunction()
-    {
-    }
-    /**
-     * The mock result of the function call.
-     *
-     * @param Result $result
-     */
-    public function setResult(Result $result)
-    {
-    }
-    /**
-     * @return Result
-     */
-    public function getResult()
+    class Google_Service_FirebaseRules_FunctionMock extends \Google\Service\FirebaseRules\FunctionMock
     {
     }
 }

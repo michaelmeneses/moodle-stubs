@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1LabelStats extends \Google\Model
-{
-    /**
-     * Map of each annotation spec's example count. Key is the annotation spec
-     * name and value is the number of examples for that annotation spec. If the
-     * annotated dataset does not have annotation spec, the map will return a pair
-     * where the key is empty string and value is the total number of annotations.
-     *
-     * @var string[]
-     */
-    public $exampleCount;
-    /**
-     * Map of each annotation spec's example count. Key is the annotation spec
-     * name and value is the number of examples for that annotation spec. If the
-     * annotated dataset does not have annotation spec, the map will return a pair
-     * where the key is empty string and value is the total number of annotations.
-     *
-     * @param string[] $exampleCount
-     */
-    public function setExampleCount($exampleCount)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1LabelStats extends \Google\Model
     {
+        /**
+         * Map of each annotation spec's example count. Key is the annotation spec
+         * name and value is the number of examples for that annotation spec. If the
+         * annotated dataset does not have annotation spec, the map will return a pair
+         * where the key is empty string and value is the total number of annotations.
+         *
+         * @var string[]
+         */
+        public $exampleCount;
+        /**
+         * Map of each annotation spec's example count. Key is the annotation spec
+         * name and value is the number of examples for that annotation spec. If the
+         * annotated dataset does not have annotation spec, the map will return a pair
+         * where the key is empty string and value is the total number of annotations.
+         *
+         * @param string[] $exampleCount
+         */
+        public function setExampleCount($exampleCount)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExampleCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1LabelStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExampleCount()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1LabelStats extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1LabelStats
     {
     }
 }

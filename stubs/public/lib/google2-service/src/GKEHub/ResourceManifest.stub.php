@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ResourceManifest extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $clusterScoped;
-    /**
-     * @var string
-     */
-    public $manifest;
-    /**
-     * @param bool
-     */
-    public function setClusterScoped($clusterScoped)
+namespace Google\Service\GKEHub {
+    class ResourceManifest extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $clusterScoped;
+        /**
+         * @var string
+         */
+        public $manifest;
+        /**
+         * @param bool
+         */
+        public function setClusterScoped($clusterScoped)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getClusterScoped()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setManifest($manifest)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getManifest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GKEHub\ResourceManifest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterScoped()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setManifest($manifest)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getManifest()
+    class Google_Service_GKEHub_ResourceManifest extends \Google\Service\GKEHub\ResourceManifest
     {
     }
 }

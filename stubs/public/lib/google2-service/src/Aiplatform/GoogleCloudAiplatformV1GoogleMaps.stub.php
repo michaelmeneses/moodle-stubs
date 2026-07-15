@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GoogleMaps extends \Google\Model
-{
-    /**
-     * Optional. If true, include the widget context token in the response.
-     *
-     * @var bool
-     */
-    public $enableWidget;
-    /**
-     * Optional. If true, include the widget context token in the response.
-     *
-     * @param bool $enableWidget
-     */
-    public function setEnableWidget($enableWidget)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GoogleMaps extends \Google\Model
     {
+        /**
+         * Optional. If true, include the widget context token in the response.
+         *
+         * @var bool
+         */
+        public $enableWidget;
+        /**
+         * Optional. If true, include the widget context token in the response.
+         *
+         * @param bool $enableWidget
+         */
+        public function setEnableWidget($enableWidget)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableWidget()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GoogleMaps registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableWidget()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GoogleMaps extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GoogleMaps
     {
     }
 }

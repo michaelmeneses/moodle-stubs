@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1Row extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * The key for the partition this row belongs to. This field is empty if the
-     * report is not partitioned.
-     *
-     * @var string
-     */
-    public $partitionKey;
-    protected $valuesType = GoogleCloudChannelV1ReportValue::class;
-    protected $valuesDataType = 'array';
-    /**
-     * The key for the partition this row belongs to. This field is empty if the
-     * report is not partitioned.
-     *
-     * @param string $partitionKey
-     */
-    public function setPartitionKey($partitionKey)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1Row extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * The key for the partition this row belongs to. This field is empty if the
+         * report is not partitioned.
+         *
+         * @var string
+         */
+        public $partitionKey;
+        protected $valuesType = GoogleCloudChannelV1ReportValue::class;
+        protected $valuesDataType = 'array';
+        /**
+         * The key for the partition this row belongs to. This field is empty if the
+         * report is not partitioned.
+         *
+         * @param string $partitionKey
+         */
+        public function setPartitionKey($partitionKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartitionKey()
+        {
+        }
+        /**
+         * The list of values in the row.
+         *
+         * @param GoogleCloudChannelV1ReportValue[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1ReportValue[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1Row registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPartitionKey()
-    {
-    }
-    /**
-     * The list of values in the row.
-     *
-     * @param GoogleCloudChannelV1ReportValue[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1ReportValue[]
-     */
-    public function getValues()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1Row extends \Google\Service\Cloudchannel\GoogleCloudChannelV1Row
     {
     }
 }

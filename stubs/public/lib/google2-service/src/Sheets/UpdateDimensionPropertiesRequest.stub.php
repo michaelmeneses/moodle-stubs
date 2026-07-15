@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class UpdateDimensionPropertiesRequest extends \Google\Model
-{
-    protected $dataSourceSheetRangeType = DataSourceSheetDimensionRange::class;
-    protected $dataSourceSheetRangeDataType = '';
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `properties` is implied and should not be specified. A single
-     * `"*"` can be used as short-hand for listing every field.
-     *
-     * @var string
-     */
-    public $fields;
-    protected $propertiesType = DimensionProperties::class;
-    protected $propertiesDataType = '';
-    protected $rangeType = DimensionRange::class;
-    protected $rangeDataType = '';
-    /**
-     * The columns on a data source sheet to update.
-     *
-     * @param DataSourceSheetDimensionRange $dataSourceSheetRange
-     */
-    public function setDataSourceSheetRange(DataSourceSheetDimensionRange $dataSourceSheetRange)
+namespace Google\Service\Sheets {
+    class UpdateDimensionPropertiesRequest extends \Google\Model
     {
+        protected $dataSourceSheetRangeType = DataSourceSheetDimensionRange::class;
+        protected $dataSourceSheetRangeDataType = '';
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `properties` is implied and should not be specified. A single
+         * `"*"` can be used as short-hand for listing every field.
+         *
+         * @var string
+         */
+        public $fields;
+        protected $propertiesType = DimensionProperties::class;
+        protected $propertiesDataType = '';
+        protected $rangeType = DimensionRange::class;
+        protected $rangeDataType = '';
+        /**
+         * The columns on a data source sheet to update.
+         *
+         * @param DataSourceSheetDimensionRange $dataSourceSheetRange
+         */
+        public function setDataSourceSheetRange(DataSourceSheetDimensionRange $dataSourceSheetRange)
+        {
+        }
+        /**
+         * @return DataSourceSheetDimensionRange
+         */
+        public function getDataSourceSheetRange()
+        {
+        }
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `properties` is implied and should not be specified. A single
+         * `"*"` can be used as short-hand for listing every field.
+         *
+         * @param string $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * Properties to update.
+         *
+         * @param DimensionProperties $properties
+         */
+        public function setProperties(DimensionProperties $properties)
+        {
+        }
+        /**
+         * @return DimensionProperties
+         */
+        public function getProperties()
+        {
+        }
+        /**
+         * The rows or columns to update.
+         *
+         * @param DimensionRange $range
+         */
+        public function setRange(DimensionRange $range)
+        {
+        }
+        /**
+         * @return DimensionRange
+         */
+        public function getRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataSourceSheetDimensionRange
+     * Runtime class alias of \Google\Service\Sheets\UpdateDimensionPropertiesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataSourceSheetRange()
-    {
-    }
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `properties` is implied and should not be specified. A single
-     * `"*"` can be used as short-hand for listing every field.
-     *
-     * @param string $fields
-     */
-    public function setFields($fields)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFields()
-    {
-    }
-    /**
-     * Properties to update.
-     *
-     * @param DimensionProperties $properties
-     */
-    public function setProperties(DimensionProperties $properties)
-    {
-    }
-    /**
-     * @return DimensionProperties
-     */
-    public function getProperties()
-    {
-    }
-    /**
-     * The rows or columns to update.
-     *
-     * @param DimensionRange $range
-     */
-    public function setRange(DimensionRange $range)
-    {
-    }
-    /**
-     * @return DimensionRange
-     */
-    public function getRange()
+    class Google_Service_Sheets_UpdateDimensionPropertiesRequest extends \Google\Service\Sheets\UpdateDimensionPropertiesRequest
     {
     }
 }

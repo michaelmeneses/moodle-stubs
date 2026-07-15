@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1ReorderFirewallPoliciesRequest extends \Google\Collection
-{
-    protected $collection_key = 'names';
-    /**
-     * Required. A list containing all policy names, in the new order. Each name
-     * is in the format `projects/{project}/firewallpolicies/{firewallpolicy}`.
-     *
-     * @var string[]
-     */
-    public $names;
-    /**
-     * Required. A list containing all policy names, in the new order. Each name
-     * is in the format `projects/{project}/firewallpolicies/{firewallpolicy}`.
-     *
-     * @param string[] $names
-     */
-    public function setNames($names)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1ReorderFirewallPoliciesRequest extends \Google\Collection
     {
+        protected $collection_key = 'names';
+        /**
+         * Required. A list containing all policy names, in the new order. Each name
+         * is in the format `projects/{project}/firewallpolicies/{firewallpolicy}`.
+         *
+         * @var string[]
+         */
+        public $names;
+        /**
+         * Required. A list containing all policy names, in the new order. Each name
+         * is in the format `projects/{project}/firewallpolicies/{firewallpolicy}`.
+         *
+         * @param string[] $names
+         */
+        public function setNames($names)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1ReorderFirewallPoliciesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNames()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1ReorderFirewallPoliciesRequest extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1ReorderFirewallPoliciesRequest
     {
     }
 }

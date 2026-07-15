@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class UpgradeAvailableEvent extends \Google\Model
-{
-    /**
-     * Default value. This shouldn't be used.
-     */
-    public const RESOURCE_TYPE_UPGRADE_RESOURCE_TYPE_UNSPECIFIED = 'UPGRADE_RESOURCE_TYPE_UNSPECIFIED';
-    /**
-     * Master / control plane
-     */
-    public const RESOURCE_TYPE_MASTER = 'MASTER';
-    /**
-     * Node pool
-     */
-    public const RESOURCE_TYPE_NODE_POOL = 'NODE_POOL';
-    protected $releaseChannelType = ReleaseChannel::class;
-    protected $releaseChannelDataType = '';
-    /**
-     * Optional relative path to the resource. For example, the relative path of
-     * the node pool.
-     *
-     * @var string
-     */
-    public $resource;
-    /**
-     * The resource type of the release version.
-     *
-     * @var string
-     */
-    public $resourceType;
-    /**
-     * The release version available for upgrade.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * The release channel of the version. If empty, it means a non-channel
-     * release.
-     *
-     * @param ReleaseChannel $releaseChannel
-     */
-    public function setReleaseChannel(ReleaseChannel $releaseChannel)
+namespace Google\Service\Container {
+    class UpgradeAvailableEvent extends \Google\Model
     {
+        /**
+         * Default value. This shouldn't be used.
+         */
+        public const RESOURCE_TYPE_UPGRADE_RESOURCE_TYPE_UNSPECIFIED = 'UPGRADE_RESOURCE_TYPE_UNSPECIFIED';
+        /**
+         * Master / control plane
+         */
+        public const RESOURCE_TYPE_MASTER = 'MASTER';
+        /**
+         * Node pool
+         */
+        public const RESOURCE_TYPE_NODE_POOL = 'NODE_POOL';
+        protected $releaseChannelType = ReleaseChannel::class;
+        protected $releaseChannelDataType = '';
+        /**
+         * Optional relative path to the resource. For example, the relative path of
+         * the node pool.
+         *
+         * @var string
+         */
+        public $resource;
+        /**
+         * The resource type of the release version.
+         *
+         * @var string
+         */
+        public $resourceType;
+        /**
+         * The release version available for upgrade.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * The release channel of the version. If empty, it means a non-channel
+         * release.
+         *
+         * @param ReleaseChannel $releaseChannel
+         */
+        public function setReleaseChannel(ReleaseChannel $releaseChannel)
+        {
+        }
+        /**
+         * @return ReleaseChannel
+         */
+        public function getReleaseChannel()
+        {
+        }
+        /**
+         * Optional relative path to the resource. For example, the relative path of
+         * the node pool.
+         *
+         * @param string $resource
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResource()
+        {
+        }
+        /**
+         * The resource type of the release version.
+         *
+         * Accepted values: UPGRADE_RESOURCE_TYPE_UNSPECIFIED, MASTER, NODE_POOL
+         *
+         * @param self::RESOURCE_TYPE_* $resourceType
+         */
+        public function setResourceType($resourceType)
+        {
+        }
+        /**
+         * @return self::RESOURCE_TYPE_*
+         */
+        public function getResourceType()
+        {
+        }
+        /**
+         * The release version available for upgrade.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReleaseChannel
+     * Runtime class alias of \Google\Service\Container\UpgradeAvailableEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReleaseChannel()
-    {
-    }
-    /**
-     * Optional relative path to the resource. For example, the relative path of
-     * the node pool.
-     *
-     * @param string $resource
-     */
-    public function setResource($resource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResource()
-    {
-    }
-    /**
-     * The resource type of the release version.
-     *
-     * Accepted values: UPGRADE_RESOURCE_TYPE_UNSPECIFIED, MASTER, NODE_POOL
-     *
-     * @param self::RESOURCE_TYPE_* $resourceType
-     */
-    public function setResourceType($resourceType)
-    {
-    }
-    /**
-     * @return self::RESOURCE_TYPE_*
-     */
-    public function getResourceType()
-    {
-    }
-    /**
-     * The release version available for upgrade.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_Container_UpgradeAvailableEvent extends \Google\Service\Container\UpgradeAvailableEvent
     {
     }
 }

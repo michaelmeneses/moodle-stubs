@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class ConfigMapEnvSource extends \Google\Model
-{
-    protected $localObjectReferenceType = LocalObjectReference::class;
-    protected $localObjectReferenceDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var bool
-     */
-    public $optional;
-    /**
-     * @param LocalObjectReference
-     */
-    public function setLocalObjectReference(LocalObjectReference $localObjectReference)
+namespace Google\Service\CloudRun {
+    class ConfigMapEnvSource extends \Google\Model
     {
+        protected $localObjectReferenceType = LocalObjectReference::class;
+        protected $localObjectReferenceDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var bool
+         */
+        public $optional;
+        /**
+         * @param LocalObjectReference
+         */
+        public function setLocalObjectReference(LocalObjectReference $localObjectReference)
+        {
+        }
+        /**
+         * @return LocalObjectReference
+         */
+        public function getLocalObjectReference()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setOptional($optional)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOptional()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LocalObjectReference
+     * Runtime class alias of \Google\Service\CloudRun\ConfigMapEnvSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocalObjectReference()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setOptional($optional)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOptional()
+    class Google_Service_CloudRun_ConfigMapEnvSource extends \Google\Service\CloudRun\ConfigMapEnvSource
     {
     }
 }

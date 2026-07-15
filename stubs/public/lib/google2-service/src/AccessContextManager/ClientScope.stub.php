@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class ClientScope extends \Google\Model
-{
-    protected $restrictedClientApplicationType = Application::class;
-    protected $restrictedClientApplicationDataType = '';
-    /**
-     * Optional. The application that is subject to this binding's scope.
-     *
-     * @param Application $restrictedClientApplication
-     */
-    public function setRestrictedClientApplication(Application $restrictedClientApplication)
+namespace Google\Service\AccessContextManager {
+    class ClientScope extends \Google\Model
     {
+        protected $restrictedClientApplicationType = Application::class;
+        protected $restrictedClientApplicationDataType = '';
+        /**
+         * Optional. The application that is subject to this binding's scope.
+         *
+         * @param Application $restrictedClientApplication
+         */
+        public function setRestrictedClientApplication(Application $restrictedClientApplication)
+        {
+        }
+        /**
+         * @return Application
+         */
+        public function getRestrictedClientApplication()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Application
+     * Runtime class alias of \Google\Service\AccessContextManager\ClientScope registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRestrictedClientApplication()
+    class Google_Service_AccessContextManager_ClientScope extends \Google\Service\AccessContextManager\ClientScope
     {
     }
 }

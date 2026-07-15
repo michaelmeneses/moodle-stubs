@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class SdkVersionTargeting extends \Google\Collection
-{
-    protected $collection_key = 'value';
-    protected $alternativesType = SdkVersion::class;
-    protected $alternativesDataType = 'array';
-    protected $valueType = SdkVersion::class;
-    protected $valueDataType = 'array';
-    /**
-     * Targeting of other sibling directories that were in the Bundle. For main
-     * splits this is targeting of other main splits.
-     *
-     * @param SdkVersion[] $alternatives
-     */
-    public function setAlternatives($alternatives)
+namespace Google\Service\AndroidPublisher {
+    class SdkVersionTargeting extends \Google\Collection
     {
+        protected $collection_key = 'value';
+        protected $alternativesType = SdkVersion::class;
+        protected $alternativesDataType = 'array';
+        protected $valueType = SdkVersion::class;
+        protected $valueDataType = 'array';
+        /**
+         * Targeting of other sibling directories that were in the Bundle. For main
+         * splits this is targeting of other main splits.
+         *
+         * @param SdkVersion[] $alternatives
+         */
+        public function setAlternatives($alternatives)
+        {
+        }
+        /**
+         * @return SdkVersion[]
+         */
+        public function getAlternatives()
+        {
+        }
+        /**
+         * Value of an sdk version.
+         *
+         * @param SdkVersion[] $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return SdkVersion[]
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SdkVersion[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\SdkVersionTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlternatives()
-    {
-    }
-    /**
-     * Value of an sdk version.
-     *
-     * @param SdkVersion[] $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return SdkVersion[]
-     */
-    public function getValue()
+    class Google_Service_AndroidPublisher_SdkVersionTargeting extends \Google\Service\AndroidPublisher\SdkVersionTargeting
     {
     }
 }

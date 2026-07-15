@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Area120Tables;
-
-class BatchCreateRowsRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = CreateRowRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * Required. The request message specifying the rows to create. A maximum of
-     * 500 rows can be created in a single batch.
-     *
-     * @param CreateRowRequest[] $requests
-     */
-    public function setRequests($requests)
+namespace Google\Service\Area120Tables {
+    class BatchCreateRowsRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = CreateRowRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * Required. The request message specifying the rows to create. A maximum of
+         * 500 rows can be created in a single batch.
+         *
+         * @param CreateRowRequest[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return CreateRowRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CreateRowRequest[]
+     * Runtime class alias of \Google\Service\Area120Tables\BatchCreateRowsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_Area120Tables_BatchCreateRowsRequest extends \Google\Service\Area120Tables\BatchCreateRowsRequest
     {
     }
 }

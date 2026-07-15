@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecretManager;
-
-class Rotation extends \Google\Model
-{
-    /**
-     * Optional. Timestamp in UTC at which the Secret is scheduled to rotate.
-     * Cannot be set to less than 300s (5 min) in the future and at most
-     * 3153600000s (100 years). next_rotation_time MUST be set if rotation_period
-     * is set.
-     *
-     * @var string
-     */
-    public $nextRotationTime;
-    /**
-     * Input only. The Duration between rotation notifications. Must be in seconds
-     * and at least 3600s (1h) and at most 3153600000s (100 years). If
-     * rotation_period is set, next_rotation_time must be set. next_rotation_time
-     * will be advanced by this period when the service automatically sends
-     * rotation notifications.
-     *
-     * @var string
-     */
-    public $rotationPeriod;
-    /**
-     * Optional. Timestamp in UTC at which the Secret is scheduled to rotate.
-     * Cannot be set to less than 300s (5 min) in the future and at most
-     * 3153600000s (100 years). next_rotation_time MUST be set if rotation_period
-     * is set.
-     *
-     * @param string $nextRotationTime
-     */
-    public function setNextRotationTime($nextRotationTime)
+namespace Google\Service\SecretManager {
+    class Rotation extends \Google\Model
     {
+        /**
+         * Optional. Timestamp in UTC at which the Secret is scheduled to rotate.
+         * Cannot be set to less than 300s (5 min) in the future and at most
+         * 3153600000s (100 years). next_rotation_time MUST be set if rotation_period
+         * is set.
+         *
+         * @var string
+         */
+        public $nextRotationTime;
+        /**
+         * Input only. The Duration between rotation notifications. Must be in seconds
+         * and at least 3600s (1h) and at most 3153600000s (100 years). If
+         * rotation_period is set, next_rotation_time must be set. next_rotation_time
+         * will be advanced by this period when the service automatically sends
+         * rotation notifications.
+         *
+         * @var string
+         */
+        public $rotationPeriod;
+        /**
+         * Optional. Timestamp in UTC at which the Secret is scheduled to rotate.
+         * Cannot be set to less than 300s (5 min) in the future and at most
+         * 3153600000s (100 years). next_rotation_time MUST be set if rotation_period
+         * is set.
+         *
+         * @param string $nextRotationTime
+         */
+        public function setNextRotationTime($nextRotationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextRotationTime()
+        {
+        }
+        /**
+         * Input only. The Duration between rotation notifications. Must be in seconds
+         * and at least 3600s (1h) and at most 3153600000s (100 years). If
+         * rotation_period is set, next_rotation_time must be set. next_rotation_time
+         * will be advanced by this period when the service automatically sends
+         * rotation notifications.
+         *
+         * @param string $rotationPeriod
+         */
+        public function setRotationPeriod($rotationPeriod)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRotationPeriod()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecretManager\Rotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextRotationTime()
-    {
-    }
-    /**
-     * Input only. The Duration between rotation notifications. Must be in seconds
-     * and at least 3600s (1h) and at most 3153600000s (100 years). If
-     * rotation_period is set, next_rotation_time must be set. next_rotation_time
-     * will be advanced by this period when the service automatically sends
-     * rotation notifications.
-     *
-     * @param string $rotationPeriod
-     */
-    public function setRotationPeriod($rotationPeriod)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRotationPeriod()
+    class Google_Service_SecretManager_Rotation extends \Google\Service\SecretManager\Rotation
     {
     }
 }

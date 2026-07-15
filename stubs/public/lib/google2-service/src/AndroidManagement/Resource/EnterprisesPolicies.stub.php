@@ -21,103 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement\Resource;
-
-/**
- * The "policies" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidmanagementService = new Google\Service\AndroidManagement(...);
- *   $policies = $androidmanagementService->enterprises_policies;
- *  </code>
- */
-class EnterprisesPolicies extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidManagement\Resource {
+    use Google\Service\AndroidManagement\AndroidmanagementEmpty;
+    use Google\Service\AndroidManagement\ListPoliciesResponse;
+    use Google\Service\AndroidManagement\ModifyPolicyApplicationsRequest;
+    use Google\Service\AndroidManagement\ModifyPolicyApplicationsResponse;
+    use Google\Service\AndroidManagement\Policy;
+    use Google\Service\AndroidManagement\RemovePolicyApplicationsRequest;
+    use Google\Service\AndroidManagement\RemovePolicyApplicationsResponse;
     /**
-     * Deletes a policy. This operation is only permitted if no devices are
-     * currently referencing the policy. (policies.delete)
-     *
-     * @param string $name The name of the policy in the form
-     * enterprises/{enterpriseId}/policies/{policyId}.
-     * @param array $optParams Optional parameters.
-     * @return AndroidmanagementEmpty
-     * @throws \Google\Service\Exception
+     * The "policies" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidmanagementService = new Google\Service\AndroidManagement(...);
+     *   $policies = $androidmanagementService->enterprises_policies;
+     *  </code>
      */
-    public function delete($name, $optParams = [])
+    class EnterprisesPolicies extends \Google\Service\Resource
     {
+        /**
+         * Deletes a policy. This operation is only permitted if no devices are
+         * currently referencing the policy. (policies.delete)
+         *
+         * @param string $name The name of the policy in the form
+         * enterprises/{enterpriseId}/policies/{policyId}.
+         * @param array $optParams Optional parameters.
+         * @return AndroidmanagementEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a policy. (policies.get)
+         *
+         * @param string $name The name of the policy in the form
+         * enterprises/{enterpriseId}/policies/{policyId}.
+         * @param array $optParams Optional parameters.
+         * @return Policy
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists policies for a given enterprise. (policies.listEnterprisesPolicies)
+         *
+         * @param string $parent The name of the enterprise in the form
+         * enterprises/{enterpriseId}.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The requested page size. The actual page size may be
+         * fixed to a min or max value.
+         * @opt_param string pageToken A token identifying a page of results returned by
+         * the server.
+         * @return ListPoliciesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listEnterprisesPolicies($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates or creates applications in a policy.
+         * (policies.modifyPolicyApplications)
+         *
+         * @param string $name Required. The name of the Policy containing the
+         * ApplicationPolicy objects to be updated, in the form
+         * enterprises/{enterpriseId}/policies/{policyId}.
+         * @param ModifyPolicyApplicationsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ModifyPolicyApplicationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function modifyPolicyApplications($name, ModifyPolicyApplicationsRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates or creates a policy. (policies.patch)
+         *
+         * @param string $name The name of the policy in the form
+         * enterprises/{enterpriseId}/policies/{policyId}.
+         * @param Policy $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask The field mask indicating the fields to update.
+         * If not set, all modifiable fields will be modified.
+         * @return Policy
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, Policy $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Removes applications in a policy. (policies.removePolicyApplications)
+         *
+         * @param string $name Required. The name of the policy containing the
+         * ApplicationPolicy objects to be removed, in the form
+         * enterprises/{enterpriseId}/policies/{policyId}.
+         * @param RemovePolicyApplicationsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return RemovePolicyApplicationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function removePolicyApplications($name, RemovePolicyApplicationsRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a policy. (policies.get)
-     *
-     * @param string $name The name of the policy in the form
-     * enterprises/{enterpriseId}/policies/{policyId}.
-     * @param array $optParams Optional parameters.
-     * @return Policy
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidManagement\Resource\EnterprisesPolicies registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists policies for a given enterprise. (policies.listEnterprisesPolicies)
-     *
-     * @param string $parent The name of the enterprise in the form
-     * enterprises/{enterpriseId}.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The requested page size. The actual page size may be
-     * fixed to a min or max value.
-     * @opt_param string pageToken A token identifying a page of results returned by
-     * the server.
-     * @return ListPoliciesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listEnterprisesPolicies($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates or creates applications in a policy.
-     * (policies.modifyPolicyApplications)
-     *
-     * @param string $name Required. The name of the Policy containing the
-     * ApplicationPolicy objects to be updated, in the form
-     * enterprises/{enterpriseId}/policies/{policyId}.
-     * @param ModifyPolicyApplicationsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ModifyPolicyApplicationsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function modifyPolicyApplications($name, ModifyPolicyApplicationsRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates or creates a policy. (policies.patch)
-     *
-     * @param string $name The name of the policy in the form
-     * enterprises/{enterpriseId}/policies/{policyId}.
-     * @param Policy $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask The field mask indicating the fields to update.
-     * If not set, all modifiable fields will be modified.
-     * @return Policy
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, Policy $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Removes applications in a policy. (policies.removePolicyApplications)
-     *
-     * @param string $name Required. The name of the policy containing the
-     * ApplicationPolicy objects to be removed, in the form
-     * enterprises/{enterpriseId}/policies/{policyId}.
-     * @param RemovePolicyApplicationsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return RemovePolicyApplicationsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function removePolicyApplications($name, RemovePolicyApplicationsRequest $postBody, $optParams = [])
+    class Google_Service_AndroidManagement_Resource_EnterprisesPolicies extends \Google\Service\AndroidManagement\Resource\EnterprisesPolicies
     {
     }
 }

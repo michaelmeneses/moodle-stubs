@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StreetViewPublish;
-
-class GpsDataGapFailureDetails extends \Google\Model
-{
-    /**
-     * The duration of the gap in GPS data that was found.
-     *
-     * @var string
-     */
-    public $gapDuration;
-    /**
-     * Relative time (from the start of the video stream) when the gap started.
-     *
-     * @var string
-     */
-    public $gapStartTime;
-    /**
-     * The duration of the gap in GPS data that was found.
-     *
-     * @param string $gapDuration
-     */
-    public function setGapDuration($gapDuration)
+namespace Google\Service\StreetViewPublish {
+    class GpsDataGapFailureDetails extends \Google\Model
     {
+        /**
+         * The duration of the gap in GPS data that was found.
+         *
+         * @var string
+         */
+        public $gapDuration;
+        /**
+         * Relative time (from the start of the video stream) when the gap started.
+         *
+         * @var string
+         */
+        public $gapStartTime;
+        /**
+         * The duration of the gap in GPS data that was found.
+         *
+         * @param string $gapDuration
+         */
+        public function setGapDuration($gapDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGapDuration()
+        {
+        }
+        /**
+         * Relative time (from the start of the video stream) when the gap started.
+         *
+         * @param string $gapStartTime
+         */
+        public function setGapStartTime($gapStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGapStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\StreetViewPublish\GpsDataGapFailureDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGapDuration()
-    {
-    }
-    /**
-     * Relative time (from the start of the video stream) when the gap started.
-     *
-     * @param string $gapStartTime
-     */
-    public function setGapStartTime($gapStartTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGapStartTime()
+    class Google_Service_StreetViewPublish_GpsDataGapFailureDetails extends \Google\Service\StreetViewPublish\GpsDataGapFailureDetails
     {
     }
 }

@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2StoredInfoTypeConfig extends \Google\Model
-{
-    /**
-     * Description of the StoredInfoType (max 256 characters).
-     *
-     * @var string
-     */
-    public $description;
-    protected $dictionaryType = GooglePrivacyDlpV2Dictionary::class;
-    protected $dictionaryDataType = '';
-    /**
-     * Display name of the StoredInfoType (max 256 characters).
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $largeCustomDictionaryType = GooglePrivacyDlpV2LargeCustomDictionaryConfig::class;
-    protected $largeCustomDictionaryDataType = '';
-    protected $regexType = GooglePrivacyDlpV2Regex::class;
-    protected $regexDataType = '';
-    /**
-     * Description of the StoredInfoType (max 256 characters).
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2StoredInfoTypeConfig extends \Google\Model
     {
+        /**
+         * Description of the StoredInfoType (max 256 characters).
+         *
+         * @var string
+         */
+        public $description;
+        protected $dictionaryType = GooglePrivacyDlpV2Dictionary::class;
+        protected $dictionaryDataType = '';
+        /**
+         * Display name of the StoredInfoType (max 256 characters).
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $largeCustomDictionaryType = GooglePrivacyDlpV2LargeCustomDictionaryConfig::class;
+        protected $largeCustomDictionaryDataType = '';
+        protected $regexType = GooglePrivacyDlpV2Regex::class;
+        protected $regexDataType = '';
+        /**
+         * Description of the StoredInfoType (max 256 characters).
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Store dictionary-based CustomInfoType.
+         *
+         * @param GooglePrivacyDlpV2Dictionary $dictionary
+         */
+        public function setDictionary(GooglePrivacyDlpV2Dictionary $dictionary)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Dictionary
+         */
+        public function getDictionary()
+        {
+        }
+        /**
+         * Display name of the StoredInfoType (max 256 characters).
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * StoredInfoType where findings are defined by a dictionary of phrases.
+         *
+         * @param GooglePrivacyDlpV2LargeCustomDictionaryConfig $largeCustomDictionary
+         */
+        public function setLargeCustomDictionary(GooglePrivacyDlpV2LargeCustomDictionaryConfig $largeCustomDictionary)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2LargeCustomDictionaryConfig
+         */
+        public function getLargeCustomDictionary()
+        {
+        }
+        /**
+         * Store regular expression-based StoredInfoType.
+         *
+         * @param GooglePrivacyDlpV2Regex $regex
+         */
+        public function setRegex(GooglePrivacyDlpV2Regex $regex)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Regex
+         */
+        public function getRegex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2StoredInfoTypeConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Store dictionary-based CustomInfoType.
-     *
-     * @param GooglePrivacyDlpV2Dictionary $dictionary
-     */
-    public function setDictionary(GooglePrivacyDlpV2Dictionary $dictionary)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Dictionary
-     */
-    public function getDictionary()
-    {
-    }
-    /**
-     * Display name of the StoredInfoType (max 256 characters).
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * StoredInfoType where findings are defined by a dictionary of phrases.
-     *
-     * @param GooglePrivacyDlpV2LargeCustomDictionaryConfig $largeCustomDictionary
-     */
-    public function setLargeCustomDictionary(GooglePrivacyDlpV2LargeCustomDictionaryConfig $largeCustomDictionary)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2LargeCustomDictionaryConfig
-     */
-    public function getLargeCustomDictionary()
-    {
-    }
-    /**
-     * Store regular expression-based StoredInfoType.
-     *
-     * @param GooglePrivacyDlpV2Regex $regex
-     */
-    public function setRegex(GooglePrivacyDlpV2Regex $regex)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Regex
-     */
-    public function getRegex()
+    class Google_Service_DLP_GooglePrivacyDlpV2StoredInfoTypeConfig extends \Google\Service\DLP\GooglePrivacyDlpV2StoredInfoTypeConfig
     {
     }
 }

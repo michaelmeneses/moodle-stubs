@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SaaSServiceManagement;
-
-class ListReleasesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * If present, the next page token can be provided to a subsequent
-     * ListReleases call to list the next page. If empty, there are no more pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $releasesType = Release::class;
-    protected $releasesDataType = 'array';
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * If present, the next page token can be provided to a subsequent
-     * ListReleases call to list the next page. If empty, there are no more pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\SaaSServiceManagement {
+    class ListReleasesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * If present, the next page token can be provided to a subsequent
+         * ListReleases call to list the next page. If empty, there are no more pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $releasesType = Release::class;
+        protected $releasesDataType = 'array';
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * If present, the next page token can be provided to a subsequent
+         * ListReleases call to list the next page. If empty, there are no more pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The resulting releases.
+         *
+         * @param Release[] $releases
+         */
+        public function setReleases($releases)
+        {
+        }
+        /**
+         * @return Release[]
+         */
+        public function getReleases()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SaaSServiceManagement\ListReleasesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The resulting releases.
-     *
-     * @param Release[] $releases
-     */
-    public function setReleases($releases)
-    {
-    }
-    /**
-     * @return Release[]
-     */
-    public function getReleases()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_SaaSServiceManagement_ListReleasesResponse extends \Google\Service\SaaSServiceManagement\ListReleasesResponse
     {
     }
 }

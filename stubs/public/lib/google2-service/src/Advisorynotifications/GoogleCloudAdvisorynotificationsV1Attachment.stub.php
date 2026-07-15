@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Advisorynotifications;
-
-class GoogleCloudAdvisorynotificationsV1Attachment extends \Google\Model
-{
-    protected $csvType = GoogleCloudAdvisorynotificationsV1Csv::class;
-    protected $csvDataType = '';
-    /**
-     * The title of the attachment.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * A CSV file attachment. Max size is 10 MB.
-     *
-     * @param GoogleCloudAdvisorynotificationsV1Csv $csv
-     */
-    public function setCsv(GoogleCloudAdvisorynotificationsV1Csv $csv)
+namespace Google\Service\Advisorynotifications {
+    class GoogleCloudAdvisorynotificationsV1Attachment extends \Google\Model
     {
+        protected $csvType = GoogleCloudAdvisorynotificationsV1Csv::class;
+        protected $csvDataType = '';
+        /**
+         * The title of the attachment.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * A CSV file attachment. Max size is 10 MB.
+         *
+         * @param GoogleCloudAdvisorynotificationsV1Csv $csv
+         */
+        public function setCsv(GoogleCloudAdvisorynotificationsV1Csv $csv)
+        {
+        }
+        /**
+         * @return GoogleCloudAdvisorynotificationsV1Csv
+         */
+        public function getCsv()
+        {
+        }
+        /**
+         * The title of the attachment.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAdvisorynotificationsV1Csv
+     * Runtime class alias of \Google\Service\Advisorynotifications\GoogleCloudAdvisorynotificationsV1Attachment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCsv()
-    {
-    }
-    /**
-     * The title of the attachment.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
+    class Google_Service_Advisorynotifications_GoogleCloudAdvisorynotificationsV1Attachment extends \Google\Service\Advisorynotifications\GoogleCloudAdvisorynotificationsV1Attachment
     {
     }
 }

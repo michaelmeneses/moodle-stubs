@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1CompletionInfo extends \Google\Model
-{
-    /**
-     * End user selected CompleteQueryResponse.QuerySuggestion.suggestion
-     * position, starting from 0.
-     *
-     * @var int
-     */
-    public $selectedPosition;
-    /**
-     * End user selected CompleteQueryResponse.QuerySuggestion.suggestion.
-     *
-     * @var string
-     */
-    public $selectedSuggestion;
-    /**
-     * End user selected CompleteQueryResponse.QuerySuggestion.suggestion
-     * position, starting from 0.
-     *
-     * @param int $selectedPosition
-     */
-    public function setSelectedPosition($selectedPosition)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1CompletionInfo extends \Google\Model
     {
+        /**
+         * End user selected CompleteQueryResponse.QuerySuggestion.suggestion
+         * position, starting from 0.
+         *
+         * @var int
+         */
+        public $selectedPosition;
+        /**
+         * End user selected CompleteQueryResponse.QuerySuggestion.suggestion.
+         *
+         * @var string
+         */
+        public $selectedSuggestion;
+        /**
+         * End user selected CompleteQueryResponse.QuerySuggestion.suggestion
+         * position, starting from 0.
+         *
+         * @param int $selectedPosition
+         */
+        public function setSelectedPosition($selectedPosition)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSelectedPosition()
+        {
+        }
+        /**
+         * End user selected CompleteQueryResponse.QuerySuggestion.suggestion.
+         *
+         * @param string $selectedSuggestion
+         */
+        public function setSelectedSuggestion($selectedSuggestion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelectedSuggestion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CompletionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSelectedPosition()
-    {
-    }
-    /**
-     * End user selected CompleteQueryResponse.QuerySuggestion.suggestion.
-     *
-     * @param string $selectedSuggestion
-     */
-    public function setSelectedSuggestion($selectedSuggestion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelectedSuggestion()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1CompletionInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CompletionInfo
     {
     }
 }

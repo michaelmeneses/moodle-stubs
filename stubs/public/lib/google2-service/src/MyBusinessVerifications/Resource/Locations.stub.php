@@ -21,52 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessVerifications\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $mybusinessverificationsService = new Google\Service\MyBusinessVerifications(...);
- *   $locations = $mybusinessverificationsService->locations;
- *  </code>
- */
-class Locations extends \Google\Service\Resource
-{
+namespace Google\Service\MyBusinessVerifications\Resource {
+    use Google\Service\MyBusinessVerifications\FetchVerificationOptionsRequest;
+    use Google\Service\MyBusinessVerifications\FetchVerificationOptionsResponse;
+    use Google\Service\MyBusinessVerifications\VerifyLocationRequest;
+    use Google\Service\MyBusinessVerifications\VerifyLocationResponse;
+    use Google\Service\MyBusinessVerifications\VoiceOfMerchantState;
     /**
-     * Reports all eligible verification options for a location in a specific
-     * language. (locations.fetchVerificationOptions)
-     *
-     * @param string $location Required. The location to verify.
-     * @param FetchVerificationOptionsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return FetchVerificationOptionsResponse
-     * @throws \Google\Service\Exception
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $mybusinessverificationsService = new Google\Service\MyBusinessVerifications(...);
+     *   $locations = $mybusinessverificationsService->locations;
+     *  </code>
      */
-    public function fetchVerificationOptions($location, FetchVerificationOptionsRequest $postBody, $optParams = [])
+    class Locations extends \Google\Service\Resource
     {
+        /**
+         * Reports all eligible verification options for a location in a specific
+         * language. (locations.fetchVerificationOptions)
+         *
+         * @param string $location Required. The location to verify.
+         * @param FetchVerificationOptionsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return FetchVerificationOptionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function fetchVerificationOptions($location, FetchVerificationOptionsRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets the VoiceOfMerchant state. (locations.getVoiceOfMerchantState)
+         *
+         * @param string $name Required. Resource name of the location.
+         * @param array $optParams Optional parameters.
+         * @return VoiceOfMerchantState
+         * @throws \Google\Service\Exception
+         */
+        public function getVoiceOfMerchantState($name, $optParams = [])
+        {
+        }
+        /**
+         * Starts the verification process for a location. (locations.verify)
+         *
+         * @param string $name Required. Resource name of the location to verify.
+         * @param VerifyLocationRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return VerifyLocationResponse
+         * @throws \Google\Service\Exception
+         */
+        public function verify($name, VerifyLocationRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the VoiceOfMerchant state. (locations.getVoiceOfMerchantState)
-     *
-     * @param string $name Required. Resource name of the location.
-     * @param array $optParams Optional parameters.
-     * @return VoiceOfMerchantState
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\MyBusinessVerifications\Resource\Locations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVoiceOfMerchantState($name, $optParams = [])
-    {
-    }
-    /**
-     * Starts the verification process for a location. (locations.verify)
-     *
-     * @param string $name Required. Resource name of the location to verify.
-     * @param VerifyLocationRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return VerifyLocationResponse
-     * @throws \Google\Service\Exception
-     */
-    public function verify($name, VerifyLocationRequest $postBody, $optParams = [])
+    class Google_Service_MyBusinessVerifications_Resource_Locations extends \Google\Service\MyBusinessVerifications\Resource\Locations
     {
     }
 }

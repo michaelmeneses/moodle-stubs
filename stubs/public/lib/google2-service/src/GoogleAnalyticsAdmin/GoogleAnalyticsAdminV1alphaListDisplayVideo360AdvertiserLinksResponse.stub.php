@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaListDisplayVideo360AdvertiserLinksResponse extends \Google\Collection
-{
-    protected $collection_key = 'displayVideo360AdvertiserLinks';
-    protected $displayVideo360AdvertiserLinksType = GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLink::class;
-    protected $displayVideo360AdvertiserLinksDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLink[]
-     */
-    public function setDisplayVideo360AdvertiserLinks($displayVideo360AdvertiserLinks)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaListDisplayVideo360AdvertiserLinksResponse extends \Google\Collection
     {
+        protected $collection_key = 'displayVideo360AdvertiserLinks';
+        protected $displayVideo360AdvertiserLinksType = GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLink::class;
+        protected $displayVideo360AdvertiserLinksDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLink[]
+         */
+        public function setDisplayVideo360AdvertiserLinks($displayVideo360AdvertiserLinks)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLink[]
+         */
+        public function getDisplayVideo360AdvertiserLinks()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1alphaDisplayVideo360AdvertiserLink[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListDisplayVideo360AdvertiserLinksResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayVideo360AdvertiserLinks()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaListDisplayVideo360AdvertiserLinksResponse extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListDisplayVideo360AdvertiserLinksResponse
     {
     }
 }

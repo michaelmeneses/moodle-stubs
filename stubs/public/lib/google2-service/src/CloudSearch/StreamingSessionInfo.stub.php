@@ -21,132 +21,141 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class StreamingSessionInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $applicationType;
-    protected $latestSessionEventType = SessionEvent::class;
-    protected $latestSessionEventDataType = '';
-    /**
-     * @var string
-     */
-    public $ownerDisplayName;
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @var bool
-     */
-    public $trainingEnabled;
-    /**
-     * @var string
-     */
-    public $viewerAccessPolicy;
-    protected $viewerStatsType = StreamViewerStats::class;
-    protected $viewerStatsDataType = '';
-    /**
-     * @param string
-     */
-    public function setApplicationType($applicationType)
+namespace Google\Service\CloudSearch {
+    class StreamingSessionInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $applicationType;
+        protected $latestSessionEventType = SessionEvent::class;
+        protected $latestSessionEventDataType = '';
+        /**
+         * @var string
+         */
+        public $ownerDisplayName;
+        /**
+         * @var string
+         */
+        public $sessionId;
+        /**
+         * @var string
+         */
+        public $status;
+        /**
+         * @var bool
+         */
+        public $trainingEnabled;
+        /**
+         * @var string
+         */
+        public $viewerAccessPolicy;
+        protected $viewerStatsType = StreamViewerStats::class;
+        protected $viewerStatsDataType = '';
+        /**
+         * @param string
+         */
+        public function setApplicationType($applicationType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicationType()
+        {
+        }
+        /**
+         * @param SessionEvent
+         */
+        public function setLatestSessionEvent(SessionEvent $latestSessionEvent)
+        {
+        }
+        /**
+         * @return SessionEvent
+         */
+        public function getLatestSessionEvent()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOwnerDisplayName($ownerDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOwnerDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSessionId($sessionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSessionId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setTrainingEnabled($trainingEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTrainingEnabled()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setViewerAccessPolicy($viewerAccessPolicy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getViewerAccessPolicy()
+        {
+        }
+        /**
+         * @param StreamViewerStats
+         */
+        public function setViewerStats(StreamViewerStats $viewerStats)
+        {
+        }
+        /**
+         * @return StreamViewerStats
+         */
+        public function getViewerStats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\StreamingSessionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicationType()
-    {
-    }
-    /**
-     * @param SessionEvent
-     */
-    public function setLatestSessionEvent(SessionEvent $latestSessionEvent)
-    {
-    }
-    /**
-     * @return SessionEvent
-     */
-    public function getLatestSessionEvent()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOwnerDisplayName($ownerDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOwnerDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSessionId($sessionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSessionId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setTrainingEnabled($trainingEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTrainingEnabled()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setViewerAccessPolicy($viewerAccessPolicy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getViewerAccessPolicy()
-    {
-    }
-    /**
-     * @param StreamViewerStats
-     */
-    public function setViewerStats(StreamViewerStats $viewerStats)
-    {
-    }
-    /**
-     * @return StreamViewerStats
-     */
-    public function getViewerStats()
+    class Google_Service_CloudSearch_StreamingSessionInfo extends \Google\Service\CloudSearch\StreamingSessionInfo
     {
     }
 }

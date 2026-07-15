@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class BumperAd extends \Google\Model
-{
-    protected $commonInStreamAttributeType = CommonInStreamAttribute::class;
-    protected $commonInStreamAttributeDataType = '';
-    /**
-     * Common ad attributes.
-     *
-     * @param CommonInStreamAttribute $commonInStreamAttribute
-     */
-    public function setCommonInStreamAttribute(CommonInStreamAttribute $commonInStreamAttribute)
+namespace Google\Service\DisplayVideo {
+    class BumperAd extends \Google\Model
     {
+        protected $commonInStreamAttributeType = CommonInStreamAttribute::class;
+        protected $commonInStreamAttributeDataType = '';
+        /**
+         * Common ad attributes.
+         *
+         * @param CommonInStreamAttribute $commonInStreamAttribute
+         */
+        public function setCommonInStreamAttribute(CommonInStreamAttribute $commonInStreamAttribute)
+        {
+        }
+        /**
+         * @return CommonInStreamAttribute
+         */
+        public function getCommonInStreamAttribute()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CommonInStreamAttribute
+     * Runtime class alias of \Google\Service\DisplayVideo\BumperAd registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommonInStreamAttribute()
+    class Google_Service_DisplayVideo_BumperAd extends \Google\Service\DisplayVideo\BumperAd
     {
     }
 }

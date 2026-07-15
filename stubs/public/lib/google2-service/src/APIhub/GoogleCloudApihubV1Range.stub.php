@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1Range extends \Google\Model
-{
-    protected $endType = GoogleCloudApihubV1Point::class;
-    protected $endDataType = '';
-    protected $startType = GoogleCloudApihubV1Point::class;
-    protected $startDataType = '';
-    /**
-     * Required. End of the issue.
-     *
-     * @param GoogleCloudApihubV1Point $end
-     */
-    public function setEnd(GoogleCloudApihubV1Point $end)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1Range extends \Google\Model
     {
+        protected $endType = GoogleCloudApihubV1Point::class;
+        protected $endDataType = '';
+        protected $startType = GoogleCloudApihubV1Point::class;
+        protected $startDataType = '';
+        /**
+         * Required. End of the issue.
+         *
+         * @param GoogleCloudApihubV1Point $end
+         */
+        public function setEnd(GoogleCloudApihubV1Point $end)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1Point
+         */
+        public function getEnd()
+        {
+        }
+        /**
+         * Required. Start of the issue.
+         *
+         * @param GoogleCloudApihubV1Point $start
+         */
+        public function setStart(GoogleCloudApihubV1Point $start)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1Point
+         */
+        public function getStart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1Point
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1Range registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnd()
-    {
-    }
-    /**
-     * Required. Start of the issue.
-     *
-     * @param GoogleCloudApihubV1Point $start
-     */
-    public function setStart(GoogleCloudApihubV1Point $start)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1Point
-     */
-    public function getStart()
+    class Google_Service_APIhub_GoogleCloudApihubV1Range extends \Google\Service\APIhub\GoogleCloudApihubV1Range
     {
     }
 }

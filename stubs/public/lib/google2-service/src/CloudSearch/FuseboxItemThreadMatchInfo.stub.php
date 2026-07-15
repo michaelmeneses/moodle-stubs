@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class FuseboxItemThreadMatchInfo extends \Google\Collection
-{
-    protected $collection_key = 'matchingItemKey';
-    /**
-     * @var string
-     */
-    public $clusterId;
-    /**
-     * @var string
-     */
-    public $lastMatchingItemId;
-    protected $lastMatchingItemKeyType = MultiKey::class;
-    protected $lastMatchingItemKeyDataType = '';
-    protected $matchingItemKeyType = MultiKey::class;
-    protected $matchingItemKeyDataType = 'array';
-    protected $rankType = Rank::class;
-    protected $rankDataType = '';
-    /**
-     * @param string
-     */
-    public function setClusterId($clusterId)
+namespace Google\Service\CloudSearch {
+    class FuseboxItemThreadMatchInfo extends \Google\Collection
     {
+        protected $collection_key = 'matchingItemKey';
+        /**
+         * @var string
+         */
+        public $clusterId;
+        /**
+         * @var string
+         */
+        public $lastMatchingItemId;
+        protected $lastMatchingItemKeyType = MultiKey::class;
+        protected $lastMatchingItemKeyDataType = '';
+        protected $matchingItemKeyType = MultiKey::class;
+        protected $matchingItemKeyDataType = 'array';
+        protected $rankType = Rank::class;
+        protected $rankDataType = '';
+        /**
+         * @param string
+         */
+        public function setClusterId($clusterId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastMatchingItemId($lastMatchingItemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastMatchingItemId()
+        {
+        }
+        /**
+         * @param MultiKey
+         */
+        public function setLastMatchingItemKey(MultiKey $lastMatchingItemKey)
+        {
+        }
+        /**
+         * @return MultiKey
+         */
+        public function getLastMatchingItemKey()
+        {
+        }
+        /**
+         * @param MultiKey[]
+         */
+        public function setMatchingItemKey($matchingItemKey)
+        {
+        }
+        /**
+         * @return MultiKey[]
+         */
+        public function getMatchingItemKey()
+        {
+        }
+        /**
+         * @param Rank
+         */
+        public function setRank(Rank $rank)
+        {
+        }
+        /**
+         * @return Rank
+         */
+        public function getRank()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\FuseboxItemThreadMatchInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastMatchingItemId($lastMatchingItemId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastMatchingItemId()
-    {
-    }
-    /**
-     * @param MultiKey
-     */
-    public function setLastMatchingItemKey(MultiKey $lastMatchingItemKey)
-    {
-    }
-    /**
-     * @return MultiKey
-     */
-    public function getLastMatchingItemKey()
-    {
-    }
-    /**
-     * @param MultiKey[]
-     */
-    public function setMatchingItemKey($matchingItemKey)
-    {
-    }
-    /**
-     * @return MultiKey[]
-     */
-    public function getMatchingItemKey()
-    {
-    }
-    /**
-     * @param Rank
-     */
-    public function setRank(Rank $rank)
-    {
-    }
-    /**
-     * @return Rank
-     */
-    public function getRank()
+    class Google_Service_CloudSearch_FuseboxItemThreadMatchInfo extends \Google\Service\CloudSearch\FuseboxItemThreadMatchInfo
     {
     }
 }

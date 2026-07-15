@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ResourceRuntime extends \Google\Model
-{
-    /**
-     * Output only. URIs for user to connect to the Cluster. Example: {
-     * "RAY_HEAD_NODE_INTERNAL_IP": "head-node-IP:10001" "RAY_DASHBOARD_URI":
-     * "ray-dashboard-address:8888" }
-     *
-     * @var string[]
-     */
-    public $accessUris;
-    /**
-     * Output only. URIs for user to connect to the Cluster. Example: {
-     * "RAY_HEAD_NODE_INTERNAL_IP": "head-node-IP:10001" "RAY_DASHBOARD_URI":
-     * "ray-dashboard-address:8888" }
-     *
-     * @param string[] $accessUris
-     */
-    public function setAccessUris($accessUris)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ResourceRuntime extends \Google\Model
     {
+        /**
+         * Output only. URIs for user to connect to the Cluster. Example: {
+         * "RAY_HEAD_NODE_INTERNAL_IP": "head-node-IP:10001" "RAY_DASHBOARD_URI":
+         * "ray-dashboard-address:8888" }
+         *
+         * @var string[]
+         */
+        public $accessUris;
+        /**
+         * Output only. URIs for user to connect to the Cluster. Example: {
+         * "RAY_HEAD_NODE_INTERNAL_IP": "head-node-IP:10001" "RAY_DASHBOARD_URI":
+         * "ray-dashboard-address:8888" }
+         *
+         * @param string[] $accessUris
+         */
+        public function setAccessUris($accessUris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAccessUris()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ResourceRuntime registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessUris()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ResourceRuntime extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ResourceRuntime
     {
     }
 }

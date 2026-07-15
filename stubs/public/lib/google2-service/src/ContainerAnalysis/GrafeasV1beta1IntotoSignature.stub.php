@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class GrafeasV1beta1IntotoSignature extends \Google\Model
-{
-    public $keyid;
-    public $sig;
-    public function setKeyid($keyid)
+namespace Google\Service\ContainerAnalysis {
+    class GrafeasV1beta1IntotoSignature extends \Google\Model
     {
+        public $keyid;
+        public $sig;
+        public function setKeyid($keyid)
+        {
+        }
+        public function getKeyid()
+        {
+        }
+        public function setSig($sig)
+        {
+        }
+        public function getSig()
+        {
+        }
     }
-    public function getKeyid()
-    {
-    }
-    public function setSig($sig)
-    {
-    }
-    public function getSig()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ContainerAnalysis\GrafeasV1beta1IntotoSignature registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ContainerAnalysis_GrafeasV1beta1IntotoSignature extends \Google\Service\ContainerAnalysis\GrafeasV1beta1IntotoSignature
     {
     }
 }

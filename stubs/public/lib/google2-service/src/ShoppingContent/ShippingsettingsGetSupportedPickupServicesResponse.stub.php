@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ShippingsettingsGetSupportedPickupServicesResponse extends \Google\Collection
-{
-    protected $collection_key = 'pickupServices';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#shippingsettingsGetSupportedPickupServicesResponse`".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $pickupServicesType = PickupServicesPickupService::class;
-    protected $pickupServicesDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#shippingsettingsGetSupportedPickupServicesResponse`".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\ShoppingContent {
+    class ShippingsettingsGetSupportedPickupServicesResponse extends \Google\Collection
     {
+        protected $collection_key = 'pickupServices';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#shippingsettingsGetSupportedPickupServicesResponse`".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $pickupServicesType = PickupServicesPickupService::class;
+        protected $pickupServicesDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#shippingsettingsGetSupportedPickupServicesResponse`".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * A list of supported pickup services. May be empty.
+         *
+         * @param PickupServicesPickupService[] $pickupServices
+         */
+        public function setPickupServices($pickupServices)
+        {
+        }
+        /**
+         * @return PickupServicesPickupService[]
+         */
+        public function getPickupServices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ShippingsettingsGetSupportedPickupServicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * A list of supported pickup services. May be empty.
-     *
-     * @param PickupServicesPickupService[] $pickupServices
-     */
-    public function setPickupServices($pickupServices)
-    {
-    }
-    /**
-     * @return PickupServicesPickupService[]
-     */
-    public function getPickupServices()
+    class Google_Service_ShoppingContent_ShippingsettingsGetSupportedPickupServicesResponse extends \Google\Service\ShoppingContent\ShippingsettingsGetSupportedPickupServicesResponse
     {
     }
 }

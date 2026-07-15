@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class SignJwtResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $keyId;
-    /**
-     * @var string
-     */
-    public $signedJwt;
-    /**
-     * @param string
-     */
-    public function setKeyId($keyId)
+namespace Google\Service\Iam {
+    class SignJwtResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $keyId;
+        /**
+         * @var string
+         */
+        public $signedJwt;
+        /**
+         * @param string
+         */
+        public function setKeyId($keyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSignedJwt($signedJwt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSignedJwt()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Iam\SignJwtResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeyId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSignedJwt($signedJwt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSignedJwt()
+    class Google_Service_Iam_SignJwtResponse extends \Google\Service\Iam\SignJwtResponse
     {
     }
 }

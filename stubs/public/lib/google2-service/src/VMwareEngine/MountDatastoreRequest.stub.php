@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class MountDatastoreRequest extends \Google\Model
-{
-    protected $datastoreMountConfigType = DatastoreMountConfig::class;
-    protected $datastoreMountConfigDataType = '';
-    /**
-     * Optional. If set to true, the colocation requirement will be ignored. If
-     * set to false, the colocation requirement will be enforced. If not set, the
-     * colocation requirement will be enforced. Colocation requirement is the
-     * requirement that the cluster must be in the same region/zone of
-     * datastore(regional/zonal datastore).
-     *
-     * @var bool
-     */
-    public $ignoreColocation;
-    /**
-     * Optional. The request ID must be a valid UUID with the exception that zero
-     * UUID is not supported (00000000-0000-0000-0000-000000000000).
-     *
-     * @var string
-     */
-    public $requestId;
-    /**
-     * Required. The datastore mount configuration.
-     *
-     * @param DatastoreMountConfig $datastoreMountConfig
-     */
-    public function setDatastoreMountConfig(DatastoreMountConfig $datastoreMountConfig)
+namespace Google\Service\VMwareEngine {
+    class MountDatastoreRequest extends \Google\Model
     {
+        protected $datastoreMountConfigType = DatastoreMountConfig::class;
+        protected $datastoreMountConfigDataType = '';
+        /**
+         * Optional. If set to true, the colocation requirement will be ignored. If
+         * set to false, the colocation requirement will be enforced. If not set, the
+         * colocation requirement will be enforced. Colocation requirement is the
+         * requirement that the cluster must be in the same region/zone of
+         * datastore(regional/zonal datastore).
+         *
+         * @var bool
+         */
+        public $ignoreColocation;
+        /**
+         * Optional. The request ID must be a valid UUID with the exception that zero
+         * UUID is not supported (00000000-0000-0000-0000-000000000000).
+         *
+         * @var string
+         */
+        public $requestId;
+        /**
+         * Required. The datastore mount configuration.
+         *
+         * @param DatastoreMountConfig $datastoreMountConfig
+         */
+        public function setDatastoreMountConfig(DatastoreMountConfig $datastoreMountConfig)
+        {
+        }
+        /**
+         * @return DatastoreMountConfig
+         */
+        public function getDatastoreMountConfig()
+        {
+        }
+        /**
+         * Optional. If set to true, the colocation requirement will be ignored. If
+         * set to false, the colocation requirement will be enforced. If not set, the
+         * colocation requirement will be enforced. Colocation requirement is the
+         * requirement that the cluster must be in the same region/zone of
+         * datastore(regional/zonal datastore).
+         *
+         * @param bool $ignoreColocation
+         */
+        public function setIgnoreColocation($ignoreColocation)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIgnoreColocation()
+        {
+        }
+        /**
+         * Optional. The request ID must be a valid UUID with the exception that zero
+         * UUID is not supported (00000000-0000-0000-0000-000000000000).
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DatastoreMountConfig
+     * Runtime class alias of \Google\Service\VMwareEngine\MountDatastoreRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatastoreMountConfig()
-    {
-    }
-    /**
-     * Optional. If set to true, the colocation requirement will be ignored. If
-     * set to false, the colocation requirement will be enforced. If not set, the
-     * colocation requirement will be enforced. Colocation requirement is the
-     * requirement that the cluster must be in the same region/zone of
-     * datastore(regional/zonal datastore).
-     *
-     * @param bool $ignoreColocation
-     */
-    public function setIgnoreColocation($ignoreColocation)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIgnoreColocation()
-    {
-    }
-    /**
-     * Optional. The request ID must be a valid UUID with the exception that zero
-     * UUID is not supported (00000000-0000-0000-0000-000000000000).
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
+    class Google_Service_VMwareEngine_MountDatastoreRequest extends \Google\Service\VMwareEngine\MountDatastoreRequest
     {
     }
 }

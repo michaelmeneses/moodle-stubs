@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class VideoRating extends \Google\Model
-{
-    public const RATING_none = 'none';
-    /**
-     * The entity is liked.
-     */
-    public const RATING_like = 'like';
-    /**
-     * The entity is disliked.
-     */
-    public const RATING_dislike = 'dislike';
-    /**
-     * Rating of a video.
-     *
-     * @var string
-     */
-    public $rating;
-    /**
-     * The ID that YouTube uses to uniquely identify the video.
-     *
-     * @var string
-     */
-    public $videoId;
-    /**
-     * Rating of a video.
-     *
-     * Accepted values: none, like, dislike
-     *
-     * @param self::RATING_* $rating
-     */
-    public function setRating($rating)
+namespace Google\Service\YouTube {
+    class VideoRating extends \Google\Model
     {
+        public const RATING_none = 'none';
+        /**
+         * The entity is liked.
+         */
+        public const RATING_like = 'like';
+        /**
+         * The entity is disliked.
+         */
+        public const RATING_dislike = 'dislike';
+        /**
+         * Rating of a video.
+         *
+         * @var string
+         */
+        public $rating;
+        /**
+         * The ID that YouTube uses to uniquely identify the video.
+         *
+         * @var string
+         */
+        public $videoId;
+        /**
+         * Rating of a video.
+         *
+         * Accepted values: none, like, dislike
+         *
+         * @param self::RATING_* $rating
+         */
+        public function setRating($rating)
+        {
+        }
+        /**
+         * @return self::RATING_*
+         */
+        public function getRating()
+        {
+        }
+        /**
+         * The ID that YouTube uses to uniquely identify the video.
+         *
+         * @param string $videoId
+         */
+        public function setVideoId($videoId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVideoId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::RATING_*
+     * Runtime class alias of \Google\Service\YouTube\VideoRating registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRating()
-    {
-    }
-    /**
-     * The ID that YouTube uses to uniquely identify the video.
-     *
-     * @param string $videoId
-     */
-    public function setVideoId($videoId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVideoId()
+    class Google_Service_YouTube_VideoRating extends \Google\Service\YouTube\VideoRating
     {
     }
 }

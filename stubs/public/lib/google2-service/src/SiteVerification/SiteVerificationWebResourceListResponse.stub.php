@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SiteVerification;
-
-class SiteVerificationWebResourceListResponse extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = SiteVerificationWebResourceResource::class;
-    protected $itemsDataType = 'array';
-    /**
-     * The list of sites that are owned by the authenticated user.
-     *
-     * @param SiteVerificationWebResourceResource[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\SiteVerification {
+    class SiteVerificationWebResourceListResponse extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = SiteVerificationWebResourceResource::class;
+        protected $itemsDataType = 'array';
+        /**
+         * The list of sites that are owned by the authenticated user.
+         *
+         * @param SiteVerificationWebResourceResource[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return SiteVerificationWebResourceResource[]
+         */
+        public function getItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SiteVerificationWebResourceResource[]
+     * Runtime class alias of \Google\Service\SiteVerification\SiteVerificationWebResourceListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
+    class Google_Service_SiteVerification_SiteVerificationWebResourceListResponse extends \Google\Service\SiteVerification\SiteVerificationWebResourceListResponse
     {
     }
 }

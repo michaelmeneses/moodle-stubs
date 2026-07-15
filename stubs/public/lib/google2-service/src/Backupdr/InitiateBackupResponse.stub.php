@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class InitiateBackupResponse extends \Google\Model
-{
-    /**
-     * The name of the backup that was created.
-     *
-     * @var string
-     */
-    public $backup;
-    /**
-     * The generation id of the base backup. It is needed for the incremental
-     * backups.
-     *
-     * @var int
-     */
-    public $baseBackupGenerationId;
-    /**
-     * The generation id of the new backup.
-     *
-     * @var int
-     */
-    public $newBackupGenerationId;
-    /**
-     * The name of the backup that was created.
-     *
-     * @param string $backup
-     */
-    public function setBackup($backup)
+namespace Google\Service\Backupdr {
+    class InitiateBackupResponse extends \Google\Model
     {
+        /**
+         * The name of the backup that was created.
+         *
+         * @var string
+         */
+        public $backup;
+        /**
+         * The generation id of the base backup. It is needed for the incremental
+         * backups.
+         *
+         * @var int
+         */
+        public $baseBackupGenerationId;
+        /**
+         * The generation id of the new backup.
+         *
+         * @var int
+         */
+        public $newBackupGenerationId;
+        /**
+         * The name of the backup that was created.
+         *
+         * @param string $backup
+         */
+        public function setBackup($backup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackup()
+        {
+        }
+        /**
+         * The generation id of the base backup. It is needed for the incremental
+         * backups.
+         *
+         * @param int $baseBackupGenerationId
+         */
+        public function setBaseBackupGenerationId($baseBackupGenerationId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getBaseBackupGenerationId()
+        {
+        }
+        /**
+         * The generation id of the new backup.
+         *
+         * @param int $newBackupGenerationId
+         */
+        public function setNewBackupGenerationId($newBackupGenerationId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNewBackupGenerationId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\InitiateBackupResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackup()
-    {
-    }
-    /**
-     * The generation id of the base backup. It is needed for the incremental
-     * backups.
-     *
-     * @param int $baseBackupGenerationId
-     */
-    public function setBaseBackupGenerationId($baseBackupGenerationId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getBaseBackupGenerationId()
-    {
-    }
-    /**
-     * The generation id of the new backup.
-     *
-     * @param int $newBackupGenerationId
-     */
-    public function setNewBackupGenerationId($newBackupGenerationId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNewBackupGenerationId()
+    class Google_Service_Backupdr_InitiateBackupResponse extends \Google\Service\Backupdr\InitiateBackupResponse
     {
     }
 }

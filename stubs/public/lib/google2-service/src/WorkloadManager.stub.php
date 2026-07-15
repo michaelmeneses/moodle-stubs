@@ -21,45 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for WorkloadManager (v1).
- *
- * <p>
- * Workload Manager is a service that provides tooling for enterprise workloads
- * to automate the deployment and validation of your workloads against best
- * practices and recommendations.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/workload-manager/docs" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class WorkloadManager extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $projects_locations;
-    public $projects_locations_discoveredprofiles;
-    public $projects_locations_evaluations;
-    public $projects_locations_evaluations_executions;
-    public $projects_locations_evaluations_executions_results;
-    public $projects_locations_evaluations_executions_scannedResources;
-    public $projects_locations_insights;
-    public $projects_locations_operations;
-    public $projects_locations_rules;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the WorkloadManager service.
+     * Service definition for WorkloadManager (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Workload Manager is a service that provides tooling for enterprise workloads
+     * to automate the deployment and validation of your workloads against best
+     * practices and recommendations.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/workload-manager/docs" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class WorkloadManager extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $projects_locations;
+        public $projects_locations_discoveredprofiles;
+        public $projects_locations_evaluations;
+        public $projects_locations_evaluations_executions;
+        public $projects_locations_evaluations_executions_results;
+        public $projects_locations_evaluations_executions_scannedResources;
+        public $projects_locations_insights;
+        public $projects_locations_operations;
+        public $projects_locations_rules;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the WorkloadManager service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\WorkloadManager registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_WorkloadManager extends \Google\Service\WorkloadManager
     {
     }
 }

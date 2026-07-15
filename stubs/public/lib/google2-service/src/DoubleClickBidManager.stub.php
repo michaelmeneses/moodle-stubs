@@ -21,38 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for DoubleClickBidManager (v2).
- *
- * <p>
- * DoubleClick Bid Manager API allows users to manage and create campaigns and
- * reports.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/bid-manager/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class DoubleClickBidManager extends \Google\Service
-{
-    /** View and manage your reports in DoubleClick Bid Manager. */
-    const DOUBLECLICKBIDMANAGER = "https://www.googleapis.com/auth/doubleclickbidmanager";
-    public $queries;
-    public $queries_reports;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the DoubleClickBidManager
-     * service.
+     * Service definition for DoubleClickBidManager (v2).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * DoubleClick Bid Manager API allows users to manage and create campaigns and
+     * reports.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/bid-manager/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class DoubleClickBidManager extends \Google\Service
+    {
+        /** View and manage your reports in DoubleClick Bid Manager. */
+        const DOUBLECLICKBIDMANAGER = "https://www.googleapis.com/auth/doubleclickbidmanager";
+        public $queries;
+        public $queries_reports;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the DoubleClickBidManager
+         * service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DoubleClickBidManager registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DoubleClickBidManager extends \Google\Service\DoubleClickBidManager
     {
     }
 }

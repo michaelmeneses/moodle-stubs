@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class ApplicationPolicyChange extends \Google\Model
-{
-    protected $applicationType = ApplicationPolicy::class;
-    protected $applicationDataType = '';
-    /**
-     * The field mask indicating the fields to update. If omitted, all modifiable
-     * fields are updated.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * If ApplicationPolicy.packageName matches an existing ApplicationPolicy
-     * object within the Policy being modified, then that object will be updated.
-     * Otherwise, it will be added to the end of the Policy.applications.
-     *
-     * @param ApplicationPolicy $application
-     */
-    public function setApplication(ApplicationPolicy $application)
+namespace Google\Service\AndroidManagement {
+    class ApplicationPolicyChange extends \Google\Model
     {
+        protected $applicationType = ApplicationPolicy::class;
+        protected $applicationDataType = '';
+        /**
+         * The field mask indicating the fields to update. If omitted, all modifiable
+         * fields are updated.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * If ApplicationPolicy.packageName matches an existing ApplicationPolicy
+         * object within the Policy being modified, then that object will be updated.
+         * Otherwise, it will be added to the end of the Policy.applications.
+         *
+         * @param ApplicationPolicy $application
+         */
+        public function setApplication(ApplicationPolicy $application)
+        {
+        }
+        /**
+         * @return ApplicationPolicy
+         */
+        public function getApplication()
+        {
+        }
+        /**
+         * The field mask indicating the fields to update. If omitted, all modifiable
+         * fields are updated.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApplicationPolicy
+     * Runtime class alias of \Google\Service\AndroidManagement\ApplicationPolicyChange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplication()
-    {
-    }
-    /**
-     * The field mask indicating the fields to update. If omitted, all modifiable
-     * fields are updated.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_AndroidManagement_ApplicationPolicyChange extends \Google\Service\AndroidManagement\ApplicationPolicyChange
     {
     }
 }

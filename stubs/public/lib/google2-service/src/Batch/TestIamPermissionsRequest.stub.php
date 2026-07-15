@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class TestIamPermissionsRequest extends \Google\Collection
-{
-    protected $collection_key = 'permissions';
-    /**
-     * @var string[]
-     */
-    public $permissions;
-    /**
-     * @param string[]
-     */
-    public function setPermissions($permissions)
+namespace Google\Service\Batch {
+    class TestIamPermissionsRequest extends \Google\Collection
     {
+        protected $collection_key = 'permissions';
+        /**
+         * @var string[]
+         */
+        public $permissions;
+        /**
+         * @param string[]
+         */
+        public function setPermissions($permissions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPermissions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Batch\TestIamPermissionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPermissions()
+    class Google_Service_Batch_TestIamPermissionsRequest extends \Google\Service\Batch\TestIamPermissionsRequest
     {
     }
 }

@@ -21,129 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DeveloperMetadata extends \Google\Model
-{
-    /**
-     * Default value.
-     */
-    public const VISIBILITY_DEVELOPER_METADATA_VISIBILITY_UNSPECIFIED = 'DEVELOPER_METADATA_VISIBILITY_UNSPECIFIED';
-    /**
-     * Document-visible metadata is accessible from any developer project with
-     * access to the document.
-     */
-    public const VISIBILITY_DOCUMENT = 'DOCUMENT';
-    /**
-     * Project-visible metadata is only visible to and accessible by the developer
-     * project that created the metadata.
-     */
-    public const VISIBILITY_PROJECT = 'PROJECT';
-    protected $locationType = DeveloperMetadataLocation::class;
-    protected $locationDataType = '';
-    /**
-     * The spreadsheet-scoped unique ID that identifies the metadata. IDs may be
-     * specified when metadata is created, otherwise one will be randomly
-     * generated and assigned. Must be positive.
-     *
-     * @var int
-     */
-    public $metadataId;
-    /**
-     * The metadata key. There may be multiple metadata in a spreadsheet with the
-     * same key. Developer metadata must always have a key specified.
-     *
-     * @var string
-     */
-    public $metadataKey;
-    /**
-     * Data associated with the metadata's key.
-     *
-     * @var string
-     */
-    public $metadataValue;
-    /**
-     * The metadata visibility. Developer metadata must always have a visibility
-     * specified.
-     *
-     * @var string
-     */
-    public $visibility;
-    /**
-     * The location where the metadata is associated.
-     *
-     * @param DeveloperMetadataLocation $location
-     */
-    public function setLocation(DeveloperMetadataLocation $location)
+namespace Google\Service\Sheets {
+    class DeveloperMetadata extends \Google\Model
     {
+        /**
+         * Default value.
+         */
+        public const VISIBILITY_DEVELOPER_METADATA_VISIBILITY_UNSPECIFIED = 'DEVELOPER_METADATA_VISIBILITY_UNSPECIFIED';
+        /**
+         * Document-visible metadata is accessible from any developer project with
+         * access to the document.
+         */
+        public const VISIBILITY_DOCUMENT = 'DOCUMENT';
+        /**
+         * Project-visible metadata is only visible to and accessible by the developer
+         * project that created the metadata.
+         */
+        public const VISIBILITY_PROJECT = 'PROJECT';
+        protected $locationType = DeveloperMetadataLocation::class;
+        protected $locationDataType = '';
+        /**
+         * The spreadsheet-scoped unique ID that identifies the metadata. IDs may be
+         * specified when metadata is created, otherwise one will be randomly
+         * generated and assigned. Must be positive.
+         *
+         * @var int
+         */
+        public $metadataId;
+        /**
+         * The metadata key. There may be multiple metadata in a spreadsheet with the
+         * same key. Developer metadata must always have a key specified.
+         *
+         * @var string
+         */
+        public $metadataKey;
+        /**
+         * Data associated with the metadata's key.
+         *
+         * @var string
+         */
+        public $metadataValue;
+        /**
+         * The metadata visibility. Developer metadata must always have a visibility
+         * specified.
+         *
+         * @var string
+         */
+        public $visibility;
+        /**
+         * The location where the metadata is associated.
+         *
+         * @param DeveloperMetadataLocation $location
+         */
+        public function setLocation(DeveloperMetadataLocation $location)
+        {
+        }
+        /**
+         * @return DeveloperMetadataLocation
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The spreadsheet-scoped unique ID that identifies the metadata. IDs may be
+         * specified when metadata is created, otherwise one will be randomly
+         * generated and assigned. Must be positive.
+         *
+         * @param int $metadataId
+         */
+        public function setMetadataId($metadataId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMetadataId()
+        {
+        }
+        /**
+         * The metadata key. There may be multiple metadata in a spreadsheet with the
+         * same key. Developer metadata must always have a key specified.
+         *
+         * @param string $metadataKey
+         */
+        public function setMetadataKey($metadataKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetadataKey()
+        {
+        }
+        /**
+         * Data associated with the metadata's key.
+         *
+         * @param string $metadataValue
+         */
+        public function setMetadataValue($metadataValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetadataValue()
+        {
+        }
+        /**
+         * The metadata visibility. Developer metadata must always have a visibility
+         * specified.
+         *
+         * Accepted values: DEVELOPER_METADATA_VISIBILITY_UNSPECIFIED, DOCUMENT,
+         * PROJECT
+         *
+         * @param self::VISIBILITY_* $visibility
+         */
+        public function setVisibility($visibility)
+        {
+        }
+        /**
+         * @return self::VISIBILITY_*
+         */
+        public function getVisibility()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeveloperMetadataLocation
+     * Runtime class alias of \Google\Service\Sheets\DeveloperMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
-    {
-    }
-    /**
-     * The spreadsheet-scoped unique ID that identifies the metadata. IDs may be
-     * specified when metadata is created, otherwise one will be randomly
-     * generated and assigned. Must be positive.
-     *
-     * @param int $metadataId
-     */
-    public function setMetadataId($metadataId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMetadataId()
-    {
-    }
-    /**
-     * The metadata key. There may be multiple metadata in a spreadsheet with the
-     * same key. Developer metadata must always have a key specified.
-     *
-     * @param string $metadataKey
-     */
-    public function setMetadataKey($metadataKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetadataKey()
-    {
-    }
-    /**
-     * Data associated with the metadata's key.
-     *
-     * @param string $metadataValue
-     */
-    public function setMetadataValue($metadataValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetadataValue()
-    {
-    }
-    /**
-     * The metadata visibility. Developer metadata must always have a visibility
-     * specified.
-     *
-     * Accepted values: DEVELOPER_METADATA_VISIBILITY_UNSPECIFIED, DOCUMENT,
-     * PROJECT
-     *
-     * @param self::VISIBILITY_* $visibility
-     */
-    public function setVisibility($visibility)
-    {
-    }
-    /**
-     * @return self::VISIBILITY_*
-     */
-    public function getVisibility()
+    class Google_Service_Sheets_DeveloperMetadata extends \Google\Service\Sheets\DeveloperMetadata
     {
     }
 }

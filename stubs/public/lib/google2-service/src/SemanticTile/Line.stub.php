@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SemanticTile;
-
-class Line extends \Google\Model
-{
-    protected $basemapZOrderType = BasemapZOrder::class;
-    protected $basemapZOrderDataType = '';
-    protected $vertexOffsetsType = Vertex2DList::class;
-    protected $vertexOffsetsDataType = '';
-    public $zOrder;
+namespace Google\Service\SemanticTile {
+    class Line extends \Google\Model
+    {
+        protected $basemapZOrderType = BasemapZOrder::class;
+        protected $basemapZOrderDataType = '';
+        protected $vertexOffsetsType = Vertex2DList::class;
+        protected $vertexOffsetsDataType = '';
+        public $zOrder;
+        /**
+         * @param BasemapZOrder
+         */
+        public function setBasemapZOrder(BasemapZOrder $basemapZOrder)
+        {
+        }
+        /**
+         * @return BasemapZOrder
+         */
+        public function getBasemapZOrder()
+        {
+        }
+        /**
+         * @param Vertex2DList
+         */
+        public function setVertexOffsets(Vertex2DList $vertexOffsets)
+        {
+        }
+        /**
+         * @return Vertex2DList
+         */
+        public function getVertexOffsets()
+        {
+        }
+        public function setZOrder($zOrder)
+        {
+        }
+        public function getZOrder()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param BasemapZOrder
+     * Runtime class alias of \Google\Service\SemanticTile\Line registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setBasemapZOrder(BasemapZOrder $basemapZOrder)
-    {
-    }
-    /**
-     * @return BasemapZOrder
-     */
-    public function getBasemapZOrder()
-    {
-    }
-    /**
-     * @param Vertex2DList
-     */
-    public function setVertexOffsets(Vertex2DList $vertexOffsets)
-    {
-    }
-    /**
-     * @return Vertex2DList
-     */
-    public function getVertexOffsets()
-    {
-    }
-    public function setZOrder($zOrder)
-    {
-    }
-    public function getZOrder()
+    class Google_Service_SemanticTile_Line extends \Google\Service\SemanticTile\Line
     {
     }
 }

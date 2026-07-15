@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolyService;
-
-class Format extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    /**
-     * @var FormatComplexity
-     */
-    public $formatComplexity;
-    protected $formatComplexityType = FormatComplexity::class;
-    protected $formatComplexityDataType = '';
-    /**
-     * @var string
-     */
-    public $formatType;
-    /**
-     * @var PolyFile[]
-     */
-    public $resources;
-    protected $resourcesType = PolyFile::class;
-    protected $resourcesDataType = 'array';
-    /**
-     * @var PolyFile
-     */
-    public $root;
-    protected $rootType = PolyFile::class;
-    protected $rootDataType = '';
-    /**
-     * @param FormatComplexity
-     */
-    public function setFormatComplexity(FormatComplexity $formatComplexity)
+namespace Google\Service\PolyService {
+    class Format extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        /**
+         * @var FormatComplexity
+         */
+        public $formatComplexity;
+        protected $formatComplexityType = FormatComplexity::class;
+        protected $formatComplexityDataType = '';
+        /**
+         * @var string
+         */
+        public $formatType;
+        /**
+         * @var PolyFile[]
+         */
+        public $resources;
+        protected $resourcesType = PolyFile::class;
+        protected $resourcesDataType = 'array';
+        /**
+         * @var PolyFile
+         */
+        public $root;
+        protected $rootType = PolyFile::class;
+        protected $rootDataType = '';
+        /**
+         * @param FormatComplexity
+         */
+        public function setFormatComplexity(FormatComplexity $formatComplexity)
+        {
+        }
+        /**
+         * @return FormatComplexity
+         */
+        public function getFormatComplexity()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFormatType($formatType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormatType()
+        {
+        }
+        /**
+         * @param PolyFile[]
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return PolyFile[]
+         */
+        public function getResources()
+        {
+        }
+        /**
+         * @param PolyFile
+         */
+        public function setRoot(PolyFile $root)
+        {
+        }
+        /**
+         * @return PolyFile
+         */
+        public function getRoot()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FormatComplexity
+     * Runtime class alias of \Google\Service\PolyService\Format registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFormatComplexity()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFormatType($formatType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFormatType()
-    {
-    }
-    /**
-     * @param PolyFile[]
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return PolyFile[]
-     */
-    public function getResources()
-    {
-    }
-    /**
-     * @param PolyFile
-     */
-    public function setRoot(PolyFile $root)
-    {
-    }
-    /**
-     * @return PolyFile
-     */
-    public function getRoot()
+    class Google_Service_PolyService_Format extends \Google\Service\PolyService\Format
     {
     }
 }

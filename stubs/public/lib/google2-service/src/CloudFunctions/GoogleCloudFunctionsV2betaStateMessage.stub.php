@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFunctions;
-
-class GoogleCloudFunctionsV2betaStateMessage extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $message;
-    /**
-     * @var string
-     */
-    public $severity;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string
-     */
-    public function setMessage($message)
+namespace Google\Service\CloudFunctions {
+    class GoogleCloudFunctionsV2betaStateMessage extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $message;
+        /**
+         * @var string
+         */
+        public $severity;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSeverity()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudFunctions\GoogleCloudFunctionsV2betaStateMessage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSeverity()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudFunctions_GoogleCloudFunctionsV2betaStateMessage extends \Google\Service\CloudFunctions\GoogleCloudFunctionsV2betaStateMessage
     {
     }
 }

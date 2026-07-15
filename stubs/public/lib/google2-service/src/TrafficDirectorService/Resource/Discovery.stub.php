@@ -21,27 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService\Resource;
-
-/**
- * The "discovery" collection of methods.
- * Typical usage is:
- *  <code>
- *   $trafficdirectorService = new Google\Service\TrafficDirectorService(...);
- *   $discovery = $trafficdirectorService->discovery;
- *  </code>
- */
-class Discovery extends \Google\Service\Resource
-{
+namespace Google\Service\TrafficDirectorService\Resource {
+    use Google\Service\TrafficDirectorService\ClientStatusRequest;
+    use Google\Service\TrafficDirectorService\ClientStatusResponse;
     /**
-     * (discovery.client_status)
-     *
-     * @param ClientStatusRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ClientStatusResponse
-     * @throws \Google\Service\Exception
+     * The "discovery" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $trafficdirectorService = new Google\Service\TrafficDirectorService(...);
+     *   $discovery = $trafficdirectorService->discovery;
+     *  </code>
      */
-    public function client_status(ClientStatusRequest $postBody, $optParams = [])
+    class Discovery extends \Google\Service\Resource
+    {
+        /**
+         * (discovery.client_status)
+         *
+         * @param ClientStatusRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ClientStatusResponse
+         * @throws \Google\Service\Exception
+         */
+        public function client_status(ClientStatusRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\TrafficDirectorService\Resource\Discovery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_TrafficDirectorService_Resource_Discovery extends \Google\Service\TrafficDirectorService\Resource\Discovery
     {
     }
 }

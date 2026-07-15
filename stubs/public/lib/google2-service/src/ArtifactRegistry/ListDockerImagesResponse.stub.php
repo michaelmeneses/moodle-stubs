@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class ListDockerImagesResponse extends \Google\Collection
-{
-    protected $collection_key = 'dockerImages';
-    protected $dockerImagesType = DockerImage::class;
-    protected $dockerImagesDataType = 'array';
-    /**
-     * The token to retrieve the next page of artifacts, or empty if there are no
-     * more artifacts to return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The docker images returned.
-     *
-     * @param DockerImage[] $dockerImages
-     */
-    public function setDockerImages($dockerImages)
+namespace Google\Service\ArtifactRegistry {
+    class ListDockerImagesResponse extends \Google\Collection
     {
+        protected $collection_key = 'dockerImages';
+        protected $dockerImagesType = DockerImage::class;
+        protected $dockerImagesDataType = 'array';
+        /**
+         * The token to retrieve the next page of artifacts, or empty if there are no
+         * more artifacts to return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The docker images returned.
+         *
+         * @param DockerImage[] $dockerImages
+         */
+        public function setDockerImages($dockerImages)
+        {
+        }
+        /**
+         * @return DockerImage[]
+         */
+        public function getDockerImages()
+        {
+        }
+        /**
+         * The token to retrieve the next page of artifacts, or empty if there are no
+         * more artifacts to return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DockerImage[]
+     * Runtime class alias of \Google\Service\ArtifactRegistry\ListDockerImagesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDockerImages()
-    {
-    }
-    /**
-     * The token to retrieve the next page of artifacts, or empty if there are no
-     * more artifacts to return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_ArtifactRegistry_ListDockerImagesResponse extends \Google\Service\ArtifactRegistry\ListDockerImagesResponse
     {
     }
 }

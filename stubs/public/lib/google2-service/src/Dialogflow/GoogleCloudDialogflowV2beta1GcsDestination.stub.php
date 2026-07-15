@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1GcsDestination extends \Google\Model
-{
-    /**
-     * Required. The Google Cloud Storage URIs for the output. A URI is of the
-     * form: `gs://bucket/object-prefix-or-name` Whether a prefix or name is used
-     * depends on the use case. The requesting user must have "write-permission"
-     * to the bucket.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Required. The Google Cloud Storage URIs for the output. A URI is of the
-     * form: `gs://bucket/object-prefix-or-name` Whether a prefix or name is used
-     * depends on the use case. The requesting user must have "write-permission"
-     * to the bucket.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1GcsDestination extends \Google\Model
     {
+        /**
+         * Required. The Google Cloud Storage URIs for the output. A URI is of the
+         * form: `gs://bucket/object-prefix-or-name` Whether a prefix or name is used
+         * depends on the use case. The requesting user must have "write-permission"
+         * to the bucket.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Required. The Google Cloud Storage URIs for the output. A URI is of the
+         * form: `gs://bucket/object-prefix-or-name` Whether a prefix or name is used
+         * depends on the use case. The requesting user must have "write-permission"
+         * to the bucket.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1GcsDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUri()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1GcsDestination extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1GcsDestination
     {
     }
 }

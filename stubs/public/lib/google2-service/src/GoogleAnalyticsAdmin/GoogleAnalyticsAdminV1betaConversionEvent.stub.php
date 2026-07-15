@@ -21,180 +21,189 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaConversionEvent extends \Google\Model
-{
-    /**
-     * Counting method not specified.
-     */
-    public const COUNTING_METHOD_CONVERSION_COUNTING_METHOD_UNSPECIFIED = 'CONVERSION_COUNTING_METHOD_UNSPECIFIED';
-    /**
-     * Each Event instance is considered a Conversion.
-     */
-    public const COUNTING_METHOD_ONCE_PER_EVENT = 'ONCE_PER_EVENT';
-    /**
-     * An Event instance is considered a Conversion at most once per session per
-     * user.
-     */
-    public const COUNTING_METHOD_ONCE_PER_SESSION = 'ONCE_PER_SESSION';
-    /**
-     * Optional. The method by which conversions will be counted across multiple
-     * events within a session. If this value is not provided, it will be set to
-     * `ONCE_PER_EVENT`.
-     *
-     * @var string
-     */
-    public $countingMethod;
-    /**
-     * Output only. Time when this conversion event was created in the property.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. If set to true, this conversion event refers to a custom
-     * event. If set to false, this conversion event refers to a default event in
-     * GA. Default events typically have special meaning in GA. Default events are
-     * usually created for you by the GA system, but in some cases can be created
-     * by property admins. Custom events count towards the maximum number of
-     * custom conversion events that may be created per property.
-     *
-     * @var bool
-     */
-    public $custom;
-    protected $defaultConversionValueType = GoogleAnalyticsAdminV1betaConversionEventDefaultConversionValue::class;
-    protected $defaultConversionValueDataType = '';
-    /**
-     * Output only. If set, this event can currently be deleted with
-     * DeleteConversionEvent.
-     *
-     * @var bool
-     */
-    public $deletable;
-    /**
-     * Immutable. The event name for this conversion event. Examples: 'click',
-     * 'purchase'
-     *
-     * @var string
-     */
-    public $eventName;
-    /**
-     * Output only. Resource name of this conversion event. Format:
-     * properties/{property}/conversionEvents/{conversion_event}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. The method by which conversions will be counted across multiple
-     * events within a session. If this value is not provided, it will be set to
-     * `ONCE_PER_EVENT`.
-     *
-     * Accepted values: CONVERSION_COUNTING_METHOD_UNSPECIFIED, ONCE_PER_EVENT,
-     * ONCE_PER_SESSION
-     *
-     * @param self::COUNTING_METHOD_* $countingMethod
-     */
-    public function setCountingMethod($countingMethod)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaConversionEvent extends \Google\Model
     {
+        /**
+         * Counting method not specified.
+         */
+        public const COUNTING_METHOD_CONVERSION_COUNTING_METHOD_UNSPECIFIED = 'CONVERSION_COUNTING_METHOD_UNSPECIFIED';
+        /**
+         * Each Event instance is considered a Conversion.
+         */
+        public const COUNTING_METHOD_ONCE_PER_EVENT = 'ONCE_PER_EVENT';
+        /**
+         * An Event instance is considered a Conversion at most once per session per
+         * user.
+         */
+        public const COUNTING_METHOD_ONCE_PER_SESSION = 'ONCE_PER_SESSION';
+        /**
+         * Optional. The method by which conversions will be counted across multiple
+         * events within a session. If this value is not provided, it will be set to
+         * `ONCE_PER_EVENT`.
+         *
+         * @var string
+         */
+        public $countingMethod;
+        /**
+         * Output only. Time when this conversion event was created in the property.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. If set to true, this conversion event refers to a custom
+         * event. If set to false, this conversion event refers to a default event in
+         * GA. Default events typically have special meaning in GA. Default events are
+         * usually created for you by the GA system, but in some cases can be created
+         * by property admins. Custom events count towards the maximum number of
+         * custom conversion events that may be created per property.
+         *
+         * @var bool
+         */
+        public $custom;
+        protected $defaultConversionValueType = GoogleAnalyticsAdminV1betaConversionEventDefaultConversionValue::class;
+        protected $defaultConversionValueDataType = '';
+        /**
+         * Output only. If set, this event can currently be deleted with
+         * DeleteConversionEvent.
+         *
+         * @var bool
+         */
+        public $deletable;
+        /**
+         * Immutable. The event name for this conversion event. Examples: 'click',
+         * 'purchase'
+         *
+         * @var string
+         */
+        public $eventName;
+        /**
+         * Output only. Resource name of this conversion event. Format:
+         * properties/{property}/conversionEvents/{conversion_event}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. The method by which conversions will be counted across multiple
+         * events within a session. If this value is not provided, it will be set to
+         * `ONCE_PER_EVENT`.
+         *
+         * Accepted values: CONVERSION_COUNTING_METHOD_UNSPECIFIED, ONCE_PER_EVENT,
+         * ONCE_PER_SESSION
+         *
+         * @param self::COUNTING_METHOD_* $countingMethod
+         */
+        public function setCountingMethod($countingMethod)
+        {
+        }
+        /**
+         * @return self::COUNTING_METHOD_*
+         */
+        public function getCountingMethod()
+        {
+        }
+        /**
+         * Output only. Time when this conversion event was created in the property.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. If set to true, this conversion event refers to a custom
+         * event. If set to false, this conversion event refers to a default event in
+         * GA. Default events typically have special meaning in GA. Default events are
+         * usually created for you by the GA system, but in some cases can be created
+         * by property admins. Custom events count towards the maximum number of
+         * custom conversion events that may be created per property.
+         *
+         * @param bool $custom
+         */
+        public function setCustom($custom)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCustom()
+        {
+        }
+        /**
+         * Optional. Defines a default value/currency for a conversion event.
+         *
+         * @param GoogleAnalyticsAdminV1betaConversionEventDefaultConversionValue $defaultConversionValue
+         */
+        public function setDefaultConversionValue(GoogleAnalyticsAdminV1betaConversionEventDefaultConversionValue $defaultConversionValue)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaConversionEventDefaultConversionValue
+         */
+        public function getDefaultConversionValue()
+        {
+        }
+        /**
+         * Output only. If set, this event can currently be deleted with
+         * DeleteConversionEvent.
+         *
+         * @param bool $deletable
+         */
+        public function setDeletable($deletable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeletable()
+        {
+        }
+        /**
+         * Immutable. The event name for this conversion event. Examples: 'click',
+         * 'purchase'
+         *
+         * @param string $eventName
+         */
+        public function setEventName($eventName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventName()
+        {
+        }
+        /**
+         * Output only. Resource name of this conversion event. Format:
+         * properties/{property}/conversionEvents/{conversion_event}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::COUNTING_METHOD_*
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaConversionEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountingMethod()
-    {
-    }
-    /**
-     * Output only. Time when this conversion event was created in the property.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. If set to true, this conversion event refers to a custom
-     * event. If set to false, this conversion event refers to a default event in
-     * GA. Default events typically have special meaning in GA. Default events are
-     * usually created for you by the GA system, but in some cases can be created
-     * by property admins. Custom events count towards the maximum number of
-     * custom conversion events that may be created per property.
-     *
-     * @param bool $custom
-     */
-    public function setCustom($custom)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCustom()
-    {
-    }
-    /**
-     * Optional. Defines a default value/currency for a conversion event.
-     *
-     * @param GoogleAnalyticsAdminV1betaConversionEventDefaultConversionValue $defaultConversionValue
-     */
-    public function setDefaultConversionValue(GoogleAnalyticsAdminV1betaConversionEventDefaultConversionValue $defaultConversionValue)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1betaConversionEventDefaultConversionValue
-     */
-    public function getDefaultConversionValue()
-    {
-    }
-    /**
-     * Output only. If set, this event can currently be deleted with
-     * DeleteConversionEvent.
-     *
-     * @param bool $deletable
-     */
-    public function setDeletable($deletable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDeletable()
-    {
-    }
-    /**
-     * Immutable. The event name for this conversion event. Examples: 'click',
-     * 'purchase'
-     *
-     * @param string $eventName
-     */
-    public function setEventName($eventName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventName()
-    {
-    }
-    /**
-     * Output only. Resource name of this conversion event. Format:
-     * properties/{property}/conversionEvents/{conversion_event}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaConversionEvent extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaConversionEvent
     {
     }
 }

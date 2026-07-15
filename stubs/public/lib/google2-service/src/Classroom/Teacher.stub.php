@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class Teacher extends \Google\Model
-{
-    /**
-     * Identifier of the course. Read-only.
-     *
-     * @var string
-     */
-    public $courseId;
-    protected $profileType = UserProfile::class;
-    protected $profileDataType = '';
-    /**
-     * Identifier of the user. When specified as a parameter of a request, this
-     * identifier can be one of the following: * the numeric identifier for the
-     * user * the email address of the user * the string literal `"me"`,
-     * indicating the requesting user
-     *
-     * @var string
-     */
-    public $userId;
-    /**
-     * Identifier of the course. Read-only.
-     *
-     * @param string $courseId
-     */
-    public function setCourseId($courseId)
+namespace Google\Service\Classroom {
+    class Teacher extends \Google\Model
     {
+        /**
+         * Identifier of the course. Read-only.
+         *
+         * @var string
+         */
+        public $courseId;
+        protected $profileType = UserProfile::class;
+        protected $profileDataType = '';
+        /**
+         * Identifier of the user. When specified as a parameter of a request, this
+         * identifier can be one of the following: * the numeric identifier for the
+         * user * the email address of the user * the string literal `"me"`,
+         * indicating the requesting user
+         *
+         * @var string
+         */
+        public $userId;
+        /**
+         * Identifier of the course. Read-only.
+         *
+         * @param string $courseId
+         */
+        public function setCourseId($courseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCourseId()
+        {
+        }
+        /**
+         * Global user information for the teacher. Read-only.
+         *
+         * @param UserProfile $profile
+         */
+        public function setProfile(UserProfile $profile)
+        {
+        }
+        /**
+         * @return UserProfile
+         */
+        public function getProfile()
+        {
+        }
+        /**
+         * Identifier of the user. When specified as a parameter of a request, this
+         * identifier can be one of the following: * the numeric identifier for the
+         * user * the email address of the user * the string literal `"me"`,
+         * indicating the requesting user
+         *
+         * @param string $userId
+         */
+        public function setUserId($userId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\Teacher registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCourseId()
-    {
-    }
-    /**
-     * Global user information for the teacher. Read-only.
-     *
-     * @param UserProfile $profile
-     */
-    public function setProfile(UserProfile $profile)
-    {
-    }
-    /**
-     * @return UserProfile
-     */
-    public function getProfile()
-    {
-    }
-    /**
-     * Identifier of the user. When specified as a parameter of a request, this
-     * identifier can be one of the following: * the numeric identifier for the
-     * user * the email address of the user * the string literal `"me"`,
-     * indicating the requesting user
-     *
-     * @param string $userId
-     */
-    public function setUserId($userId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserId()
+    class Google_Service_Classroom_Teacher extends \Google\Service\Classroom\Teacher
     {
     }
 }

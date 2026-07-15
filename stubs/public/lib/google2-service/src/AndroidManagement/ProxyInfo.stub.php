@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class ProxyInfo extends \Google\Collection
-{
-    protected $collection_key = 'excludedHosts';
-    /**
-     * For a direct proxy, the hosts for which the proxy is bypassed. The host
-     * names may contain wildcards such as *.example.com.
-     *
-     * @var string[]
-     */
-    public $excludedHosts;
-    /**
-     * The host of the direct proxy.
-     *
-     * @var string
-     */
-    public $host;
-    /**
-     * The URI of the PAC script used to configure the proxy.
-     *
-     * @var string
-     */
-    public $pacUri;
-    /**
-     * The port of the direct proxy.
-     *
-     * @var int
-     */
-    public $port;
-    /**
-     * For a direct proxy, the hosts for which the proxy is bypassed. The host
-     * names may contain wildcards such as *.example.com.
-     *
-     * @param string[] $excludedHosts
-     */
-    public function setExcludedHosts($excludedHosts)
+namespace Google\Service\AndroidManagement {
+    class ProxyInfo extends \Google\Collection
     {
+        protected $collection_key = 'excludedHosts';
+        /**
+         * For a direct proxy, the hosts for which the proxy is bypassed. The host
+         * names may contain wildcards such as *.example.com.
+         *
+         * @var string[]
+         */
+        public $excludedHosts;
+        /**
+         * The host of the direct proxy.
+         *
+         * @var string
+         */
+        public $host;
+        /**
+         * The URI of the PAC script used to configure the proxy.
+         *
+         * @var string
+         */
+        public $pacUri;
+        /**
+         * The port of the direct proxy.
+         *
+         * @var int
+         */
+        public $port;
+        /**
+         * For a direct proxy, the hosts for which the proxy is bypassed. The host
+         * names may contain wildcards such as *.example.com.
+         *
+         * @param string[] $excludedHosts
+         */
+        public function setExcludedHosts($excludedHosts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludedHosts()
+        {
+        }
+        /**
+         * The host of the direct proxy.
+         *
+         * @param string $host
+         */
+        public function setHost($host)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHost()
+        {
+        }
+        /**
+         * The URI of the PAC script used to configure the proxy.
+         *
+         * @param string $pacUri
+         */
+        public function setPacUri($pacUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPacUri()
+        {
+        }
+        /**
+         * The port of the direct proxy.
+         *
+         * @param int $port
+         */
+        public function setPort($port)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPort()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AndroidManagement\ProxyInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExcludedHosts()
-    {
-    }
-    /**
-     * The host of the direct proxy.
-     *
-     * @param string $host
-     */
-    public function setHost($host)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHost()
-    {
-    }
-    /**
-     * The URI of the PAC script used to configure the proxy.
-     *
-     * @param string $pacUri
-     */
-    public function setPacUri($pacUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPacUri()
-    {
-    }
-    /**
-     * The port of the direct proxy.
-     *
-     * @param int $port
-     */
-    public function setPort($port)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPort()
+    class Google_Service_AndroidManagement_ProxyInfo extends \Google\Service\AndroidManagement\ProxyInfo
     {
     }
 }

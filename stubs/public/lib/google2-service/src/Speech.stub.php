@@ -21,38 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Speech (v1).
- *
- * <p>
- * Converts audio to text by applying powerful neural network models.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/speech-to-text/docs/quickstart-protocol" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Speech extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $operations;
-    public $projects_locations_customClasses;
-    public $projects_locations_phraseSets;
-    public $speech;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Speech service.
+     * Service definition for Speech (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Converts audio to text by applying powerful neural network models.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/speech-to-text/docs/quickstart-protocol" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Speech extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $operations;
+        public $projects_locations_customClasses;
+        public $projects_locations_phraseSets;
+        public $speech;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Speech service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Speech registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Speech extends \Google\Service\Speech
     {
     }
 }

@@ -21,152 +21,161 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Looker;
-
-class OperationMetadata extends \Google\Model
-{
-    /**
-     * API version used to start the operation.
-     *
-     * @var string
-     */
-    public $apiVersion;
-    /**
-     * The time the operation was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The time the operation finished running.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Identifies whether the user has requested cancellation of the operation.
-     * Operations that have successfully been cancelled have Operation.error value
-     * with a google.rpc.Status.code of 1, corresponding to `Code.CANCELLED`.
-     *
-     * @var bool
-     */
-    public $requestedCancellation;
-    /**
-     * Human-readable status of the operation, if any.
-     *
-     * @var string
-     */
-    public $statusMessage;
-    /**
-     * Server-defined resource path for the target of the operation.
-     *
-     * @var string
-     */
-    public $target;
-    /**
-     * Name of the verb executed by the operation.
-     *
-     * @var string
-     */
-    public $verb;
-    /**
-     * API version used to start the operation.
-     *
-     * @param string $apiVersion
-     */
-    public function setApiVersion($apiVersion)
+namespace Google\Service\Looker {
+    class OperationMetadata extends \Google\Model
     {
+        /**
+         * API version used to start the operation.
+         *
+         * @var string
+         */
+        public $apiVersion;
+        /**
+         * The time the operation was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The time the operation finished running.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Identifies whether the user has requested cancellation of the operation.
+         * Operations that have successfully been cancelled have Operation.error value
+         * with a google.rpc.Status.code of 1, corresponding to `Code.CANCELLED`.
+         *
+         * @var bool
+         */
+        public $requestedCancellation;
+        /**
+         * Human-readable status of the operation, if any.
+         *
+         * @var string
+         */
+        public $statusMessage;
+        /**
+         * Server-defined resource path for the target of the operation.
+         *
+         * @var string
+         */
+        public $target;
+        /**
+         * Name of the verb executed by the operation.
+         *
+         * @var string
+         */
+        public $verb;
+        /**
+         * API version used to start the operation.
+         *
+         * @param string $apiVersion
+         */
+        public function setApiVersion($apiVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiVersion()
+        {
+        }
+        /**
+         * The time the operation was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The time the operation finished running.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Identifies whether the user has requested cancellation of the operation.
+         * Operations that have successfully been cancelled have Operation.error value
+         * with a google.rpc.Status.code of 1, corresponding to `Code.CANCELLED`.
+         *
+         * @param bool $requestedCancellation
+         */
+        public function setRequestedCancellation($requestedCancellation)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRequestedCancellation()
+        {
+        }
+        /**
+         * Human-readable status of the operation, if any.
+         *
+         * @param string $statusMessage
+         */
+        public function setStatusMessage($statusMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatusMessage()
+        {
+        }
+        /**
+         * Server-defined resource path for the target of the operation.
+         *
+         * @param string $target
+         */
+        public function setTarget($target)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTarget()
+        {
+        }
+        /**
+         * Name of the verb executed by the operation.
+         *
+         * @param string $verb
+         */
+        public function setVerb($verb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVerb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Looker\OperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiVersion()
-    {
-    }
-    /**
-     * The time the operation was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The time the operation finished running.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Identifies whether the user has requested cancellation of the operation.
-     * Operations that have successfully been cancelled have Operation.error value
-     * with a google.rpc.Status.code of 1, corresponding to `Code.CANCELLED`.
-     *
-     * @param bool $requestedCancellation
-     */
-    public function setRequestedCancellation($requestedCancellation)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRequestedCancellation()
-    {
-    }
-    /**
-     * Human-readable status of the operation, if any.
-     *
-     * @param string $statusMessage
-     */
-    public function setStatusMessage($statusMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatusMessage()
-    {
-    }
-    /**
-     * Server-defined resource path for the target of the operation.
-     *
-     * @param string $target
-     */
-    public function setTarget($target)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTarget()
-    {
-    }
-    /**
-     * Name of the verb executed by the operation.
-     *
-     * @param string $verb
-     */
-    public function setVerb($verb)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVerb()
+    class Google_Service_Looker_OperationMetadata extends \Google\Service\Looker\OperationMetadata
     {
     }
 }

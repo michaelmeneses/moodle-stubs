@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1TaskInfrastructureSpecBatchComputeResources extends \Google\Model
-{
-    /**
-     * Optional. Total number of job executors. Executor Count should be between 2
-     * and 100. Default=2
-     *
-     * @var int
-     */
-    public $executorsCount;
-    /**
-     * Optional. Max configurable executors. If max_executors_count >
-     * executors_count, then auto-scaling is enabled. Max Executor Count should be
-     * between 2 and 1000. Default=1000
-     *
-     * @var int
-     */
-    public $maxExecutorsCount;
-    /**
-     * Optional. Total number of job executors. Executor Count should be between 2
-     * and 100. Default=2
-     *
-     * @param int $executorsCount
-     */
-    public function setExecutorsCount($executorsCount)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1TaskInfrastructureSpecBatchComputeResources extends \Google\Model
     {
+        /**
+         * Optional. Total number of job executors. Executor Count should be between 2
+         * and 100. Default=2
+         *
+         * @var int
+         */
+        public $executorsCount;
+        /**
+         * Optional. Max configurable executors. If max_executors_count >
+         * executors_count, then auto-scaling is enabled. Max Executor Count should be
+         * between 2 and 1000. Default=1000
+         *
+         * @var int
+         */
+        public $maxExecutorsCount;
+        /**
+         * Optional. Total number of job executors. Executor Count should be between 2
+         * and 100. Default=2
+         *
+         * @param int $executorsCount
+         */
+        public function setExecutorsCount($executorsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getExecutorsCount()
+        {
+        }
+        /**
+         * Optional. Max configurable executors. If max_executors_count >
+         * executors_count, then auto-scaling is enabled. Max Executor Count should be
+         * between 2 and 1000. Default=1000
+         *
+         * @param int $maxExecutorsCount
+         */
+        public function setMaxExecutorsCount($maxExecutorsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxExecutorsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1TaskInfrastructureSpecBatchComputeResources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecutorsCount()
-    {
-    }
-    /**
-     * Optional. Max configurable executors. If max_executors_count >
-     * executors_count, then auto-scaling is enabled. Max Executor Count should be
-     * between 2 and 1000. Default=1000
-     *
-     * @param int $maxExecutorsCount
-     */
-    public function setMaxExecutorsCount($maxExecutorsCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxExecutorsCount()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1TaskInfrastructureSpecBatchComputeResources extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1TaskInfrastructureSpecBatchComputeResources
     {
     }
 }

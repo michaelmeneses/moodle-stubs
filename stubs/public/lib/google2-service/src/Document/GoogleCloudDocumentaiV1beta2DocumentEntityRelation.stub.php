@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta2DocumentEntityRelation extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $objectId;
-    /**
-     * @var string
-     */
-    public $relation;
-    /**
-     * @var string
-     */
-    public $subjectId;
-    /**
-     * @param string
-     */
-    public function setObjectId($objectId)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta2DocumentEntityRelation extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $objectId;
+        /**
+         * @var string
+         */
+        public $relation;
+        /**
+         * @var string
+         */
+        public $subjectId;
+        /**
+         * @param string
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRelation($relation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRelation()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSubjectId($subjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentEntityRelation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRelation($relation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRelation()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSubjectId($subjectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubjectId()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta2DocumentEntityRelation extends \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentEntityRelation
     {
     }
 }

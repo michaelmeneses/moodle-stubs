@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class BandedRange extends \Google\Model
-{
-    /**
-     * The ID of the banded range. If unset, refer to banded_range_reference.
-     *
-     * @var int
-     */
-    public $bandedRangeId;
-    /**
-     * Output only. The reference of the banded range, used to identify the ID
-     * that is not supported by the banded_range_id.
-     *
-     * @var string
-     */
-    public $bandedRangeReference;
-    protected $columnPropertiesType = BandingProperties::class;
-    protected $columnPropertiesDataType = '';
-    protected $rangeType = GridRange::class;
-    protected $rangeDataType = '';
-    protected $rowPropertiesType = BandingProperties::class;
-    protected $rowPropertiesDataType = '';
-    /**
-     * The ID of the banded range. If unset, refer to banded_range_reference.
-     *
-     * @param int $bandedRangeId
-     */
-    public function setBandedRangeId($bandedRangeId)
+namespace Google\Service\Sheets {
+    class BandedRange extends \Google\Model
     {
+        /**
+         * The ID of the banded range. If unset, refer to banded_range_reference.
+         *
+         * @var int
+         */
+        public $bandedRangeId;
+        /**
+         * Output only. The reference of the banded range, used to identify the ID
+         * that is not supported by the banded_range_id.
+         *
+         * @var string
+         */
+        public $bandedRangeReference;
+        protected $columnPropertiesType = BandingProperties::class;
+        protected $columnPropertiesDataType = '';
+        protected $rangeType = GridRange::class;
+        protected $rangeDataType = '';
+        protected $rowPropertiesType = BandingProperties::class;
+        protected $rowPropertiesDataType = '';
+        /**
+         * The ID of the banded range. If unset, refer to banded_range_reference.
+         *
+         * @param int $bandedRangeId
+         */
+        public function setBandedRangeId($bandedRangeId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getBandedRangeId()
+        {
+        }
+        /**
+         * Output only. The reference of the banded range, used to identify the ID
+         * that is not supported by the banded_range_id.
+         *
+         * @param string $bandedRangeReference
+         */
+        public function setBandedRangeReference($bandedRangeReference)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBandedRangeReference()
+        {
+        }
+        /**
+         * Properties for column bands. These properties are applied on a column- by-
+         * column basis throughout all the columns in the range. At least one of
+         * row_properties or column_properties must be specified.
+         *
+         * @param BandingProperties $columnProperties
+         */
+        public function setColumnProperties(BandingProperties $columnProperties)
+        {
+        }
+        /**
+         * @return BandingProperties
+         */
+        public function getColumnProperties()
+        {
+        }
+        /**
+         * The range over which these properties are applied.
+         *
+         * @param GridRange $range
+         */
+        public function setRange(GridRange $range)
+        {
+        }
+        /**
+         * @return GridRange
+         */
+        public function getRange()
+        {
+        }
+        /**
+         * Properties for row bands. These properties are applied on a row-by-row
+         * basis throughout all the rows in the range. At least one of row_properties
+         * or column_properties must be specified.
+         *
+         * @param BandingProperties $rowProperties
+         */
+        public function setRowProperties(BandingProperties $rowProperties)
+        {
+        }
+        /**
+         * @return BandingProperties
+         */
+        public function getRowProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Sheets\BandedRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBandedRangeId()
-    {
-    }
-    /**
-     * Output only. The reference of the banded range, used to identify the ID
-     * that is not supported by the banded_range_id.
-     *
-     * @param string $bandedRangeReference
-     */
-    public function setBandedRangeReference($bandedRangeReference)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBandedRangeReference()
-    {
-    }
-    /**
-     * Properties for column bands. These properties are applied on a column- by-
-     * column basis throughout all the columns in the range. At least one of
-     * row_properties or column_properties must be specified.
-     *
-     * @param BandingProperties $columnProperties
-     */
-    public function setColumnProperties(BandingProperties $columnProperties)
-    {
-    }
-    /**
-     * @return BandingProperties
-     */
-    public function getColumnProperties()
-    {
-    }
-    /**
-     * The range over which these properties are applied.
-     *
-     * @param GridRange $range
-     */
-    public function setRange(GridRange $range)
-    {
-    }
-    /**
-     * @return GridRange
-     */
-    public function getRange()
-    {
-    }
-    /**
-     * Properties for row bands. These properties are applied on a row-by-row
-     * basis throughout all the rows in the range. At least one of row_properties
-     * or column_properties must be specified.
-     *
-     * @param BandingProperties $rowProperties
-     */
-    public function setRowProperties(BandingProperties $rowProperties)
-    {
-    }
-    /**
-     * @return BandingProperties
-     */
-    public function getRowProperties()
+    class Google_Service_Sheets_BandedRange extends \Google\Service\Sheets\BandedRange
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTasks;
-
-class BufferTaskRequest extends \Google\Model
-{
-    protected $bodyType = HttpBody::class;
-    protected $bodyDataType = '';
-    /**
-     * Optional. Body of the HTTP request. The body can take any generic value.
-     * The value is written to the HttpRequest of the [Task].
-     *
-     * @param HttpBody $body
-     */
-    public function setBody(HttpBody $body)
+namespace Google\Service\CloudTasks {
+    class BufferTaskRequest extends \Google\Model
     {
+        protected $bodyType = HttpBody::class;
+        protected $bodyDataType = '';
+        /**
+         * Optional. Body of the HTTP request. The body can take any generic value.
+         * The value is written to the HttpRequest of the [Task].
+         *
+         * @param HttpBody $body
+         */
+        public function setBody(HttpBody $body)
+        {
+        }
+        /**
+         * @return HttpBody
+         */
+        public function getBody()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HttpBody
+     * Runtime class alias of \Google\Service\CloudTasks\BufferTaskRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBody()
+    class Google_Service_CloudTasks_BufferTaskRequest extends \Google\Service\CloudTasks\BufferTaskRequest
     {
     }
 }

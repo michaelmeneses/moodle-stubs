@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class DdlStatementActionInfo extends \Google\Collection
-{
-    protected $collection_key = 'entityNames';
-    /**
-     * The action for the DDL statement, for example, CREATE, ALTER, DROP, GRANT,
-     * etc. This field is a non-empty string.
-     *
-     * @var string
-     */
-    public $action;
-    /**
-     * The entity names being operated on the DDL statement. For example, 1. For
-     * statement "CREATE TABLE t1(...)", `entity_names` = ["t1"]. 2. For statement
-     * "GRANT ROLE r1, r2 ...", `entity_names` = ["r1", "r2"]. 3. For statement
-     * "ANALYZE", `entity_names` = [].
-     *
-     * @var string[]
-     */
-    public $entityNames;
-    /**
-     * The entity type for the DDL statement, for example, TABLE, INDEX, VIEW,
-     * etc. This field can be empty string for some DDL statement, for example,
-     * for statement "ANALYZE", `entity_type` = "".
-     *
-     * @var string
-     */
-    public $entityType;
-    /**
-     * The action for the DDL statement, for example, CREATE, ALTER, DROP, GRANT,
-     * etc. This field is a non-empty string.
-     *
-     * @param string $action
-     */
-    public function setAction($action)
+namespace Google\Service\Spanner {
+    class DdlStatementActionInfo extends \Google\Collection
     {
+        protected $collection_key = 'entityNames';
+        /**
+         * The action for the DDL statement, for example, CREATE, ALTER, DROP, GRANT,
+         * etc. This field is a non-empty string.
+         *
+         * @var string
+         */
+        public $action;
+        /**
+         * The entity names being operated on the DDL statement. For example, 1. For
+         * statement "CREATE TABLE t1(...)", `entity_names` = ["t1"]. 2. For statement
+         * "GRANT ROLE r1, r2 ...", `entity_names` = ["r1", "r2"]. 3. For statement
+         * "ANALYZE", `entity_names` = [].
+         *
+         * @var string[]
+         */
+        public $entityNames;
+        /**
+         * The entity type for the DDL statement, for example, TABLE, INDEX, VIEW,
+         * etc. This field can be empty string for some DDL statement, for example,
+         * for statement "ANALYZE", `entity_type` = "".
+         *
+         * @var string
+         */
+        public $entityType;
+        /**
+         * The action for the DDL statement, for example, CREATE, ALTER, DROP, GRANT,
+         * etc. This field is a non-empty string.
+         *
+         * @param string $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * The entity names being operated on the DDL statement. For example, 1. For
+         * statement "CREATE TABLE t1(...)", `entity_names` = ["t1"]. 2. For statement
+         * "GRANT ROLE r1, r2 ...", `entity_names` = ["r1", "r2"]. 3. For statement
+         * "ANALYZE", `entity_names` = [].
+         *
+         * @param string[] $entityNames
+         */
+        public function setEntityNames($entityNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEntityNames()
+        {
+        }
+        /**
+         * The entity type for the DDL statement, for example, TABLE, INDEX, VIEW,
+         * etc. This field can be empty string for some DDL statement, for example,
+         * for statement "ANALYZE", `entity_type` = "".
+         *
+         * @param string $entityType
+         */
+        public function setEntityType($entityType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\DdlStatementActionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * The entity names being operated on the DDL statement. For example, 1. For
-     * statement "CREATE TABLE t1(...)", `entity_names` = ["t1"]. 2. For statement
-     * "GRANT ROLE r1, r2 ...", `entity_names` = ["r1", "r2"]. 3. For statement
-     * "ANALYZE", `entity_names` = [].
-     *
-     * @param string[] $entityNames
-     */
-    public function setEntityNames($entityNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEntityNames()
-    {
-    }
-    /**
-     * The entity type for the DDL statement, for example, TABLE, INDEX, VIEW,
-     * etc. This field can be empty string for some DDL statement, for example,
-     * for statement "ANALYZE", `entity_type` = "".
-     *
-     * @param string $entityType
-     */
-    public function setEntityType($entityType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntityType()
+    class Google_Service_Spanner_DdlStatementActionInfo extends \Google\Service\Spanner\DdlStatementActionInfo
     {
     }
 }

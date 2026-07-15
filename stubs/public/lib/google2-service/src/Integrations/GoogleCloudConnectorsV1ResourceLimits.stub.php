@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudConnectorsV1ResourceLimits extends \Google\Model
-{
-    /**
-     * Output only. CPU limit.
-     *
-     * @var string
-     */
-    public $cpu;
-    /**
-     * Output only. Memory limit.
-     *
-     * @var string
-     */
-    public $memory;
-    /**
-     * Output only. CPU limit.
-     *
-     * @param string $cpu
-     */
-    public function setCpu($cpu)
+namespace Google\Service\Integrations {
+    class GoogleCloudConnectorsV1ResourceLimits extends \Google\Model
     {
+        /**
+         * Output only. CPU limit.
+         *
+         * @var string
+         */
+        public $cpu;
+        /**
+         * Output only. Memory limit.
+         *
+         * @var string
+         */
+        public $memory;
+        /**
+         * Output only. CPU limit.
+         *
+         * @param string $cpu
+         */
+        public function setCpu($cpu)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCpu()
+        {
+        }
+        /**
+         * Output only. Memory limit.
+         *
+         * @param string $memory
+         */
+        public function setMemory($memory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemory()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudConnectorsV1ResourceLimits registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCpu()
-    {
-    }
-    /**
-     * Output only. Memory limit.
-     *
-     * @param string $memory
-     */
-    public function setMemory($memory)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMemory()
+    class Google_Service_Integrations_GoogleCloudConnectorsV1ResourceLimits extends \Google\Service\Integrations\GoogleCloudConnectorsV1ResourceLimits
     {
     }
 }

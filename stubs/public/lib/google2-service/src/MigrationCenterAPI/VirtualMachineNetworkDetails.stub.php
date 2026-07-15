@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class VirtualMachineNetworkDetails extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $defaultGw;
-    protected $networkAdaptersType = NetworkAdapterList::class;
-    protected $networkAdaptersDataType = '';
-    /**
-     * @var string
-     */
-    public $primaryIpAddress;
-    /**
-     * @var string
-     */
-    public $primaryMacAddress;
-    /**
-     * @var string
-     */
-    public $publicIpAddress;
-    /**
-     * @param string
-     */
-    public function setDefaultGw($defaultGw)
+namespace Google\Service\MigrationCenterAPI {
+    class VirtualMachineNetworkDetails extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $defaultGw;
+        protected $networkAdaptersType = NetworkAdapterList::class;
+        protected $networkAdaptersDataType = '';
+        /**
+         * @var string
+         */
+        public $primaryIpAddress;
+        /**
+         * @var string
+         */
+        public $primaryMacAddress;
+        /**
+         * @var string
+         */
+        public $publicIpAddress;
+        /**
+         * @param string
+         */
+        public function setDefaultGw($defaultGw)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultGw()
+        {
+        }
+        /**
+         * @param NetworkAdapterList
+         */
+        public function setNetworkAdapters(NetworkAdapterList $networkAdapters)
+        {
+        }
+        /**
+         * @return NetworkAdapterList
+         */
+        public function getNetworkAdapters()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPrimaryIpAddress($primaryIpAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimaryIpAddress()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPrimaryMacAddress($primaryMacAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimaryMacAddress()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPublicIpAddress($publicIpAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublicIpAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\VirtualMachineNetworkDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultGw()
-    {
-    }
-    /**
-     * @param NetworkAdapterList
-     */
-    public function setNetworkAdapters(NetworkAdapterList $networkAdapters)
-    {
-    }
-    /**
-     * @return NetworkAdapterList
-     */
-    public function getNetworkAdapters()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPrimaryIpAddress($primaryIpAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrimaryIpAddress()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPrimaryMacAddress($primaryMacAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrimaryMacAddress()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPublicIpAddress($publicIpAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublicIpAddress()
+    class Google_Service_MigrationCenterAPI_VirtualMachineNetworkDetails extends \Google\Service\MigrationCenterAPI\VirtualMachineNetworkDetails
     {
     }
 }

@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class ComputationTopology extends \Google\Collection
-{
-    protected $collection_key = 'stateFamilies';
-    /**
-     * The ID of the computation.
-     *
-     * @var string
-     */
-    public $computationId;
-    protected $inputsType = StreamLocation::class;
-    protected $inputsDataType = 'array';
-    protected $keyRangesType = KeyRangeLocation::class;
-    protected $keyRangesDataType = 'array';
-    protected $outputsType = StreamLocation::class;
-    protected $outputsDataType = 'array';
-    protected $stateFamiliesType = StateFamilyConfig::class;
-    protected $stateFamiliesDataType = 'array';
-    /**
-     * The system stage name.
-     *
-     * @var string
-     */
-    public $systemStageName;
-    /**
-     * The ID of the computation.
-     *
-     * @param string $computationId
-     */
-    public function setComputationId($computationId)
+namespace Google\Service\Dataflow {
+    class ComputationTopology extends \Google\Collection
     {
+        protected $collection_key = 'stateFamilies';
+        /**
+         * The ID of the computation.
+         *
+         * @var string
+         */
+        public $computationId;
+        protected $inputsType = StreamLocation::class;
+        protected $inputsDataType = 'array';
+        protected $keyRangesType = KeyRangeLocation::class;
+        protected $keyRangesDataType = 'array';
+        protected $outputsType = StreamLocation::class;
+        protected $outputsDataType = 'array';
+        protected $stateFamiliesType = StateFamilyConfig::class;
+        protected $stateFamiliesDataType = 'array';
+        /**
+         * The system stage name.
+         *
+         * @var string
+         */
+        public $systemStageName;
+        /**
+         * The ID of the computation.
+         *
+         * @param string $computationId
+         */
+        public function setComputationId($computationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComputationId()
+        {
+        }
+        /**
+         * The inputs to the computation.
+         *
+         * @param StreamLocation[] $inputs
+         */
+        public function setInputs($inputs)
+        {
+        }
+        /**
+         * @return StreamLocation[]
+         */
+        public function getInputs()
+        {
+        }
+        /**
+         * The key ranges processed by the computation.
+         *
+         * @param KeyRangeLocation[] $keyRanges
+         */
+        public function setKeyRanges($keyRanges)
+        {
+        }
+        /**
+         * @return KeyRangeLocation[]
+         */
+        public function getKeyRanges()
+        {
+        }
+        /**
+         * The outputs from the computation.
+         *
+         * @param StreamLocation[] $outputs
+         */
+        public function setOutputs($outputs)
+        {
+        }
+        /**
+         * @return StreamLocation[]
+         */
+        public function getOutputs()
+        {
+        }
+        /**
+         * The state family values.
+         *
+         * @param StateFamilyConfig[] $stateFamilies
+         */
+        public function setStateFamilies($stateFamilies)
+        {
+        }
+        /**
+         * @return StateFamilyConfig[]
+         */
+        public function getStateFamilies()
+        {
+        }
+        /**
+         * The system stage name.
+         *
+         * @param string $systemStageName
+         */
+        public function setSystemStageName($systemStageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSystemStageName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\ComputationTopology registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComputationId()
-    {
-    }
-    /**
-     * The inputs to the computation.
-     *
-     * @param StreamLocation[] $inputs
-     */
-    public function setInputs($inputs)
-    {
-    }
-    /**
-     * @return StreamLocation[]
-     */
-    public function getInputs()
-    {
-    }
-    /**
-     * The key ranges processed by the computation.
-     *
-     * @param KeyRangeLocation[] $keyRanges
-     */
-    public function setKeyRanges($keyRanges)
-    {
-    }
-    /**
-     * @return KeyRangeLocation[]
-     */
-    public function getKeyRanges()
-    {
-    }
-    /**
-     * The outputs from the computation.
-     *
-     * @param StreamLocation[] $outputs
-     */
-    public function setOutputs($outputs)
-    {
-    }
-    /**
-     * @return StreamLocation[]
-     */
-    public function getOutputs()
-    {
-    }
-    /**
-     * The state family values.
-     *
-     * @param StateFamilyConfig[] $stateFamilies
-     */
-    public function setStateFamilies($stateFamilies)
-    {
-    }
-    /**
-     * @return StateFamilyConfig[]
-     */
-    public function getStateFamilies()
-    {
-    }
-    /**
-     * The system stage name.
-     *
-     * @param string $systemStageName
-     */
-    public function setSystemStageName($systemStageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSystemStageName()
+    class Google_Service_Dataflow_ComputationTopology extends \Google\Service\Dataflow\ComputationTopology
     {
     }
 }

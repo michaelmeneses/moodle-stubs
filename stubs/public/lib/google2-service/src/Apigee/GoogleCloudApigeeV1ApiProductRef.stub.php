@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ApiProductRef extends \Google\Model
-{
-    /**
-     * Name of the API product.
-     *
-     * @var string
-     */
-    public $apiproduct;
-    /**
-     * Status of the API product. Valid values are `approved` or `revoked`.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Name of the API product.
-     *
-     * @param string $apiproduct
-     */
-    public function setApiproduct($apiproduct)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ApiProductRef extends \Google\Model
     {
+        /**
+         * Name of the API product.
+         *
+         * @var string
+         */
+        public $apiproduct;
+        /**
+         * Status of the API product. Valid values are `approved` or `revoked`.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Name of the API product.
+         *
+         * @param string $apiproduct
+         */
+        public function setApiproduct($apiproduct)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiproduct()
+        {
+        }
+        /**
+         * Status of the API product. Valid values are `approved` or `revoked`.
+         *
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ApiProductRef registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiproduct()
-    {
-    }
-    /**
-     * Status of the API product. Valid values are `approved` or `revoked`.
-     *
-     * @param string $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ApiProductRef extends \Google\Service\Apigee\GoogleCloudApigeeV1ApiProductRef
     {
     }
 }

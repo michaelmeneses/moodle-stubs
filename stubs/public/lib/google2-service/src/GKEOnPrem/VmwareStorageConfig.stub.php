@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareStorageConfig extends \Google\Model
-{
-    /**
-     * Whether or not to deploy vSphere CSI components in the VMware user cluster.
-     * Enabled by default.
-     *
-     * @var bool
-     */
-    public $vsphereCsiDisabled;
-    /**
-     * Whether or not to deploy vSphere CSI components in the VMware user cluster.
-     * Enabled by default.
-     *
-     * @param bool $vsphereCsiDisabled
-     */
-    public function setVsphereCsiDisabled($vsphereCsiDisabled)
+namespace Google\Service\GKEOnPrem {
+    class VmwareStorageConfig extends \Google\Model
     {
+        /**
+         * Whether or not to deploy vSphere CSI components in the VMware user cluster.
+         * Enabled by default.
+         *
+         * @var bool
+         */
+        public $vsphereCsiDisabled;
+        /**
+         * Whether or not to deploy vSphere CSI components in the VMware user cluster.
+         * Enabled by default.
+         *
+         * @param bool $vsphereCsiDisabled
+         */
+        public function setVsphereCsiDisabled($vsphereCsiDisabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getVsphereCsiDisabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareStorageConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVsphereCsiDisabled()
+    class Google_Service_GKEOnPrem_VmwareStorageConfig extends \Google\Service\GKEOnPrem\VmwareStorageConfig
     {
     }
 }

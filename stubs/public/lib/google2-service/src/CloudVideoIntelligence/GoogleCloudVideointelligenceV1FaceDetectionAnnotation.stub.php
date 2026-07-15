@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1FaceDetectionAnnotation extends \Google\Collection
-{
-    protected $collection_key = 'tracks';
-    /**
-     * The thumbnail of a person's face.
-     *
-     * @var string
-     */
-    public $thumbnail;
-    protected $tracksType = GoogleCloudVideointelligenceV1Track::class;
-    protected $tracksDataType = 'array';
-    /**
-     * Feature version.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * The thumbnail of a person's face.
-     *
-     * @param string $thumbnail
-     */
-    public function setThumbnail($thumbnail)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1FaceDetectionAnnotation extends \Google\Collection
     {
+        protected $collection_key = 'tracks';
+        /**
+         * The thumbnail of a person's face.
+         *
+         * @var string
+         */
+        public $thumbnail;
+        protected $tracksType = GoogleCloudVideointelligenceV1Track::class;
+        protected $tracksDataType = 'array';
+        /**
+         * Feature version.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * The thumbnail of a person's face.
+         *
+         * @param string $thumbnail
+         */
+        public function setThumbnail($thumbnail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThumbnail()
+        {
+        }
+        /**
+         * The face tracks with attributes.
+         *
+         * @param GoogleCloudVideointelligenceV1Track[] $tracks
+         */
+        public function setTracks($tracks)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1Track[]
+         */
+        public function getTracks()
+        {
+        }
+        /**
+         * Feature version.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1FaceDetectionAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getThumbnail()
-    {
-    }
-    /**
-     * The face tracks with attributes.
-     *
-     * @param GoogleCloudVideointelligenceV1Track[] $tracks
-     */
-    public function setTracks($tracks)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1Track[]
-     */
-    public function getTracks()
-    {
-    }
-    /**
-     * Feature version.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1FaceDetectionAnnotation extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1FaceDetectionAnnotation
     {
     }
 }

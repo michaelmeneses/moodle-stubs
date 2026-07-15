@@ -21,52 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI\Resource;
-
-/**
- * The "errorFrames" collection of methods.
- * Typical usage is:
- *  <code>
- *   $migrationcenterService = new Google\Service\MigrationCenterAPI(...);
- *   $errorFrames = $migrationcenterService->projects_locations_sources_errorFrames;
- *  </code>
- */
-class ProjectsLocationsSourcesErrorFrames extends \Google\Service\Resource
-{
+namespace Google\Service\MigrationCenterAPI\Resource {
+    use Google\Service\MigrationCenterAPI\ErrorFrame;
+    use Google\Service\MigrationCenterAPI\ListErrorFramesResponse;
     /**
-     * Gets the details of an error frame. (errorFrames.get)
-     *
-     * @param string $name Required. The name of the frame to retrieve. Format: proj
-     * ects/{project}/locations/{location}/sources/{source}/errorFrames/{error_frame
-     * }
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string view Optional. An optional view mode to control the level
-     * of details for the frame. The default is a basic frame view.
-     * @return ErrorFrame
-     * @throws \Google\Service\Exception
+     * The "errorFrames" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $migrationcenterService = new Google\Service\MigrationCenterAPI(...);
+     *   $errorFrames = $migrationcenterService->projects_locations_sources_errorFrames;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsSourcesErrorFrames extends \Google\Service\Resource
     {
+        /**
+         * Gets the details of an error frame. (errorFrames.get)
+         *
+         * @param string $name Required. The name of the frame to retrieve. Format: proj
+         * ects/{project}/locations/{location}/sources/{source}/errorFrames/{error_frame
+         * }
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string view Optional. An optional view mode to control the level
+         * of details for the frame. The default is a basic frame view.
+         * @return ErrorFrame
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all error frames in a given source and location.
+         * (errorFrames.listProjectsLocationsSourcesErrorFrames)
+         *
+         * @param string $parent Required. Parent value (the source) for
+         * `ListErrorFramesRequest`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Requested page size. Server may return fewer items
+         * than requested. If unspecified, server will pick an appropriate default.
+         * @opt_param string pageToken A token identifying a page of results the server
+         * should return.
+         * @opt_param string view Optional. An optional view mode to control the level
+         * of details of each error frame. The default is a BASIC frame view.
+         * @return ListErrorFramesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsSourcesErrorFrames($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists all error frames in a given source and location.
-     * (errorFrames.listProjectsLocationsSourcesErrorFrames)
-     *
-     * @param string $parent Required. Parent value (the source) for
-     * `ListErrorFramesRequest`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Requested page size. Server may return fewer items
-     * than requested. If unspecified, server will pick an appropriate default.
-     * @opt_param string pageToken A token identifying a page of results the server
-     * should return.
-     * @opt_param string view Optional. An optional view mode to control the level
-     * of details of each error frame. The default is a BASIC frame view.
-     * @return ListErrorFramesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\Resource\ProjectsLocationsSourcesErrorFrames registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsSourcesErrorFrames($parent, $optParams = [])
+    class Google_Service_MigrationCenterAPI_Resource_ProjectsLocationsSourcesErrorFrames extends \Google\Service\MigrationCenterAPI\Resource\ProjectsLocationsSourcesErrorFrames
     {
     }
 }

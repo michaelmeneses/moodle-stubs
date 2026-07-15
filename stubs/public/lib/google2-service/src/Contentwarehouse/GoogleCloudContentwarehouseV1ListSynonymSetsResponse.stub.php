@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1ListSynonymSetsResponse extends \Google\Collection
-{
-    protected $collection_key = 'synonymSets';
-    /**
-     * A page token, received from a previous `ListSynonymSets` call. Provide this
-     * to retrieve the subsequent page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $synonymSetsType = GoogleCloudContentwarehouseV1SynonymSet::class;
-    protected $synonymSetsDataType = 'array';
-    /**
-     * A page token, received from a previous `ListSynonymSets` call. Provide this
-     * to retrieve the subsequent page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1ListSynonymSetsResponse extends \Google\Collection
     {
+        protected $collection_key = 'synonymSets';
+        /**
+         * A page token, received from a previous `ListSynonymSets` call. Provide this
+         * to retrieve the subsequent page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $synonymSetsType = GoogleCloudContentwarehouseV1SynonymSet::class;
+        protected $synonymSetsDataType = 'array';
+        /**
+         * A page token, received from a previous `ListSynonymSets` call. Provide this
+         * to retrieve the subsequent page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The synonymSets from the specified parent.
+         *
+         * @param GoogleCloudContentwarehouseV1SynonymSet[] $synonymSets
+         */
+        public function setSynonymSets($synonymSets)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1SynonymSet[]
+         */
+        public function getSynonymSets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ListSynonymSetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The synonymSets from the specified parent.
-     *
-     * @param GoogleCloudContentwarehouseV1SynonymSet[] $synonymSets
-     */
-    public function setSynonymSets($synonymSets)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1SynonymSet[]
-     */
-    public function getSynonymSets()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1ListSynonymSetsResponse extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ListSynonymSetsResponse
     {
     }
 }

@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonDeviceInfo extends \Google\Model
-{
-    /**
-     * Not specified.
-     */
-    public const TYPE_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * The value is unknown in this version.
-     */
-    public const TYPE_UNKNOWN = 'UNKNOWN';
-    /**
-     * Mobile devices with full browsers.
-     */
-    public const TYPE_MOBILE = 'MOBILE';
-    /**
-     * Tablets with full browsers.
-     */
-    public const TYPE_TABLET = 'TABLET';
-    /**
-     * Computers.
-     */
-    public const TYPE_DESKTOP = 'DESKTOP';
-    /**
-     * Smart TVs and game consoles.
-     */
-    public const TYPE_CONNECTED_TV = 'CONNECTED_TV';
-    /**
-     * Other device types.
-     */
-    public const TYPE_OTHER = 'OTHER';
-    /**
-     * Type of the device.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Type of the device.
-     *
-     * Accepted values: UNSPECIFIED, UNKNOWN, MOBILE, TABLET, DESKTOP,
-     * CONNECTED_TV, OTHER
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonDeviceInfo extends \Google\Model
     {
+        /**
+         * Not specified.
+         */
+        public const TYPE_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * The value is unknown in this version.
+         */
+        public const TYPE_UNKNOWN = 'UNKNOWN';
+        /**
+         * Mobile devices with full browsers.
+         */
+        public const TYPE_MOBILE = 'MOBILE';
+        /**
+         * Tablets with full browsers.
+         */
+        public const TYPE_TABLET = 'TABLET';
+        /**
+         * Computers.
+         */
+        public const TYPE_DESKTOP = 'DESKTOP';
+        /**
+         * Smart TVs and game consoles.
+         */
+        public const TYPE_CONNECTED_TV = 'CONNECTED_TV';
+        /**
+         * Other device types.
+         */
+        public const TYPE_OTHER = 'OTHER';
+        /**
+         * Type of the device.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Type of the device.
+         *
+         * Accepted values: UNSPECIFIED, UNKNOWN, MOBILE, TABLET, DESKTOP,
+         * CONNECTED_TV, OTHER
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonDeviceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonDeviceInfo extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonDeviceInfo
     {
     }
 }

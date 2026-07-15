@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2FieldSelectionOptionsChoiceAppliedCapabilities extends \Google\Model
-{
-    /**
-     * Whether the user can read related applied metadata on items.
-     *
-     * @var bool
-     */
-    public $canRead;
-    /**
-     * Whether the user can use this choice in search queries.
-     *
-     * @var bool
-     */
-    public $canSearch;
-    /**
-     * Whether the user can select this choice on an item.
-     *
-     * @var bool
-     */
-    public $canSelect;
-    /**
-     * Whether the user can read related applied metadata on items.
-     *
-     * @param bool $canRead
-     */
-    public function setCanRead($canRead)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2FieldSelectionOptionsChoiceAppliedCapabilities extends \Google\Model
     {
+        /**
+         * Whether the user can read related applied metadata on items.
+         *
+         * @var bool
+         */
+        public $canRead;
+        /**
+         * Whether the user can use this choice in search queries.
+         *
+         * @var bool
+         */
+        public $canSearch;
+        /**
+         * Whether the user can select this choice on an item.
+         *
+         * @var bool
+         */
+        public $canSelect;
+        /**
+         * Whether the user can read related applied metadata on items.
+         *
+         * @param bool $canRead
+         */
+        public function setCanRead($canRead)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanRead()
+        {
+        }
+        /**
+         * Whether the user can use this choice in search queries.
+         *
+         * @param bool $canSearch
+         */
+        public function setCanSearch($canSearch)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanSearch()
+        {
+        }
+        /**
+         * Whether the user can select this choice on an item.
+         *
+         * @param bool $canSelect
+         */
+        public function setCanSelect($canSelect)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanSelect()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2FieldSelectionOptionsChoiceAppliedCapabilities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanRead()
-    {
-    }
-    /**
-     * Whether the user can use this choice in search queries.
-     *
-     * @param bool $canSearch
-     */
-    public function setCanSearch($canSearch)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanSearch()
-    {
-    }
-    /**
-     * Whether the user can select this choice on an item.
-     *
-     * @param bool $canSelect
-     */
-    public function setCanSelect($canSelect)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanSelect()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2FieldSelectionOptionsChoiceAppliedCapabilities extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2FieldSelectionOptionsChoiceAppliedCapabilities
     {
     }
 }

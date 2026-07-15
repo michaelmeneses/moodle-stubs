@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting\Resource;
-
-/**
- * The "errors" collection of methods.
- * Typical usage is:
- *  <code>
- *   $playdeveloperreportingService = new Google\Service\Playdeveloperreporting(...);
- *   $errors = $playdeveloperreportingService->vitals_errors;
- *  </code>
- */
-class VitalsErrors extends \Google\Service\Resource
-{
+namespace Google\Service\Playdeveloperreporting\Resource {
+    /**
+     * The "errors" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $playdeveloperreportingService = new Google\Service\Playdeveloperreporting(...);
+     *   $errors = $playdeveloperreportingService->vitals_errors;
+     *  </code>
+     */
+    class VitalsErrors extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\Resource\VitalsErrors registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Playdeveloperreporting_Resource_VitalsErrors extends \Google\Service\Playdeveloperreporting\Resource\VitalsErrors
+    {
+    }
 }

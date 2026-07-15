@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LiveChatModeratorSnippet extends \Google\Model
-{
-    /**
-     * The ID of the live chat this moderator can act on.
-     *
-     * @var string
-     */
-    public $liveChatId;
-    protected $moderatorDetailsType = ChannelProfileDetails::class;
-    protected $moderatorDetailsDataType = '';
-    /**
-     * The ID of the live chat this moderator can act on.
-     *
-     * @param string $liveChatId
-     */
-    public function setLiveChatId($liveChatId)
+namespace Google\Service\YouTube {
+    class LiveChatModeratorSnippet extends \Google\Model
     {
+        /**
+         * The ID of the live chat this moderator can act on.
+         *
+         * @var string
+         */
+        public $liveChatId;
+        protected $moderatorDetailsType = ChannelProfileDetails::class;
+        protected $moderatorDetailsDataType = '';
+        /**
+         * The ID of the live chat this moderator can act on.
+         *
+         * @param string $liveChatId
+         */
+        public function setLiveChatId($liveChatId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLiveChatId()
+        {
+        }
+        /**
+         * Details about the moderator.
+         *
+         * @param ChannelProfileDetails $moderatorDetails
+         */
+        public function setModeratorDetails(ChannelProfileDetails $moderatorDetails)
+        {
+        }
+        /**
+         * @return ChannelProfileDetails
+         */
+        public function getModeratorDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\LiveChatModeratorSnippet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLiveChatId()
-    {
-    }
-    /**
-     * Details about the moderator.
-     *
-     * @param ChannelProfileDetails $moderatorDetails
-     */
-    public function setModeratorDetails(ChannelProfileDetails $moderatorDetails)
-    {
-    }
-    /**
-     * @return ChannelProfileDetails
-     */
-    public function getModeratorDetails()
+    class Google_Service_YouTube_LiveChatModeratorSnippet extends \Google\Service\YouTube\LiveChatModeratorSnippet
     {
     }
 }

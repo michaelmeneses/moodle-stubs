@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3SafetySettingsPhrase extends \Google\Model
-{
-    /**
-     * Required. Language code of the phrase.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Required. Text input which can be used for prompt or banned phrases.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Required. Language code of the phrase.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3SafetySettingsPhrase extends \Google\Model
     {
+        /**
+         * Required. Language code of the phrase.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Required. Text input which can be used for prompt or banned phrases.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Required. Language code of the phrase.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * Required. Text input which can be used for prompt or banned phrases.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3SafetySettingsPhrase registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * Required. Text input which can be used for prompt or banned phrases.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3SafetySettingsPhrase extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3SafetySettingsPhrase
     {
     }
 }

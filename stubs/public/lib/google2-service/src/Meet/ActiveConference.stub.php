@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Meet;
-
-class ActiveConference extends \Google\Model
-{
-    /**
-     * Output only. Reference to 'ConferenceRecord' resource. Format:
-     * `conferenceRecords/{conference_record}` where `{conference_record}` is a
-     * unique ID for each instance of a call within a space.
-     *
-     * @var string
-     */
-    public $conferenceRecord;
-    /**
-     * Output only. Reference to 'ConferenceRecord' resource. Format:
-     * `conferenceRecords/{conference_record}` where `{conference_record}` is a
-     * unique ID for each instance of a call within a space.
-     *
-     * @param string $conferenceRecord
-     */
-    public function setConferenceRecord($conferenceRecord)
+namespace Google\Service\Meet {
+    class ActiveConference extends \Google\Model
     {
+        /**
+         * Output only. Reference to 'ConferenceRecord' resource. Format:
+         * `conferenceRecords/{conference_record}` where `{conference_record}` is a
+         * unique ID for each instance of a call within a space.
+         *
+         * @var string
+         */
+        public $conferenceRecord;
+        /**
+         * Output only. Reference to 'ConferenceRecord' resource. Format:
+         * `conferenceRecords/{conference_record}` where `{conference_record}` is a
+         * unique ID for each instance of a call within a space.
+         *
+         * @param string $conferenceRecord
+         */
+        public function setConferenceRecord($conferenceRecord)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConferenceRecord()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Meet\ActiveConference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConferenceRecord()
+    class Google_Service_Meet_ActiveConference extends \Google\Service\Meet\ActiveConference
     {
     }
 }

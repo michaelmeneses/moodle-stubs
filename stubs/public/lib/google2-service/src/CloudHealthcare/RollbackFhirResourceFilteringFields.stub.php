@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class RollbackFhirResourceFilteringFields extends \Google\Collection
-{
-    protected $collection_key = 'operationIds';
-    /**
-     * Optional. A filter expression that matches data in the `Resource.meta`
-     * element. Supports all filters in [AIP-160](https://google.aip.dev/160)
-     * except the "has" (`:`) operator. Supports the following custom functions: *
-     * `tag("") = ""` for tag filtering. * `extension_value_ts("") = ` for
-     * filtering extensions with a timestamp, where `` is a Unix timestamp.
-     * Supports the `>`, `<`, `<=`, `>=`, and `!=` comparison operators.
-     *
-     * @var string
-     */
-    public $metadataFilter;
-    /**
-     * Optional. A list of operation IDs to roll back.
-     *
-     * @var string[]
-     */
-    public $operationIds;
-    /**
-     * Optional. A filter expression that matches data in the `Resource.meta`
-     * element. Supports all filters in [AIP-160](https://google.aip.dev/160)
-     * except the "has" (`:`) operator. Supports the following custom functions: *
-     * `tag("") = ""` for tag filtering. * `extension_value_ts("") = ` for
-     * filtering extensions with a timestamp, where `` is a Unix timestamp.
-     * Supports the `>`, `<`, `<=`, `>=`, and `!=` comparison operators.
-     *
-     * @param string $metadataFilter
-     */
-    public function setMetadataFilter($metadataFilter)
+namespace Google\Service\CloudHealthcare {
+    class RollbackFhirResourceFilteringFields extends \Google\Collection
     {
+        protected $collection_key = 'operationIds';
+        /**
+         * Optional. A filter expression that matches data in the `Resource.meta`
+         * element. Supports all filters in [AIP-160](https://google.aip.dev/160)
+         * except the "has" (`:`) operator. Supports the following custom functions: *
+         * `tag("") = ""` for tag filtering. * `extension_value_ts("") = ` for
+         * filtering extensions with a timestamp, where `` is a Unix timestamp.
+         * Supports the `>`, `<`, `<=`, `>=`, and `!=` comparison operators.
+         *
+         * @var string
+         */
+        public $metadataFilter;
+        /**
+         * Optional. A list of operation IDs to roll back.
+         *
+         * @var string[]
+         */
+        public $operationIds;
+        /**
+         * Optional. A filter expression that matches data in the `Resource.meta`
+         * element. Supports all filters in [AIP-160](https://google.aip.dev/160)
+         * except the "has" (`:`) operator. Supports the following custom functions: *
+         * `tag("") = ""` for tag filtering. * `extension_value_ts("") = ` for
+         * filtering extensions with a timestamp, where `` is a Unix timestamp.
+         * Supports the `>`, `<`, `<=`, `>=`, and `!=` comparison operators.
+         *
+         * @param string $metadataFilter
+         */
+        public function setMetadataFilter($metadataFilter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetadataFilter()
+        {
+        }
+        /**
+         * Optional. A list of operation IDs to roll back.
+         *
+         * @param string[] $operationIds
+         */
+        public function setOperationIds($operationIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOperationIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\RollbackFhirResourceFilteringFields registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadataFilter()
-    {
-    }
-    /**
-     * Optional. A list of operation IDs to roll back.
-     *
-     * @param string[] $operationIds
-     */
-    public function setOperationIds($operationIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOperationIds()
+    class Google_Service_CloudHealthcare_RollbackFhirResourceFilteringFields extends \Google\Service\CloudHealthcare\RollbackFhirResourceFilteringFields
     {
     }
 }

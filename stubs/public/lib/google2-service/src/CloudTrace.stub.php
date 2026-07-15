@@ -21,42 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for CloudTrace (v2).
- *
- * <p>
- * Sends application trace data to Cloud Trace for viewing. Trace data is
- * collected for all App Engine applications by default. Trace data from other
- * applications can be provided using this API. This library is used to interact
- * with the Cloud Trace API directly. If you are looking to instrument your
- * application for Cloud Trace, we recommend using OpenTelemetry.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/trace/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class CloudTrace extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    /** Write Trace data for a project or application. */
-    const TRACE_APPEND = "https://www.googleapis.com/auth/trace.append";
-    public $projects_traces;
-    public $projects_traces_spans;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the CloudTrace service.
+     * Service definition for CloudTrace (v2).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Sends application trace data to Cloud Trace for viewing. Trace data is
+     * collected for all App Engine applications by default. Trace data from other
+     * applications can be provided using this API. This library is used to interact
+     * with the Cloud Trace API directly. If you are looking to instrument your
+     * application for Cloud Trace, we recommend using OpenTelemetry.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/trace/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class CloudTrace extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        /** Write Trace data for a project or application. */
+        const TRACE_APPEND = "https://www.googleapis.com/auth/trace.append";
+        public $projects_traces;
+        public $projects_traces_spans;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the CloudTrace service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudTrace registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudTrace extends \Google\Service\CloudTrace
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager;
-
-class FetchTreeResponse extends \Google\Collection
-{
-    protected $collection_key = 'treeEntries';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $treeEntriesType = TreeEntry::class;
-    protected $treeEntriesDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\SecureSourceManager {
+    class FetchTreeResponse extends \Google\Collection
     {
+        protected $collection_key = 'treeEntries';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $treeEntriesType = TreeEntry::class;
+        protected $treeEntriesDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of TreeEntry objects.
+         *
+         * @param TreeEntry[] $treeEntries
+         */
+        public function setTreeEntries($treeEntries)
+        {
+        }
+        /**
+         * @return TreeEntry[]
+         */
+        public function getTreeEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecureSourceManager\FetchTreeResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of TreeEntry objects.
-     *
-     * @param TreeEntry[] $treeEntries
-     */
-    public function setTreeEntries($treeEntries)
-    {
-    }
-    /**
-     * @return TreeEntry[]
-     */
-    public function getTreeEntries()
+    class Google_Service_SecureSourceManager_FetchTreeResponse extends \Google\Service\SecureSourceManager\FetchTreeResponse
     {
     }
 }

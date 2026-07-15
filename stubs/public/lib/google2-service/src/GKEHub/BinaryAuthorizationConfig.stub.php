@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class BinaryAuthorizationConfig extends \Google\Collection
-{
-    protected $collection_key = 'policyBindings';
-    /**
-     * @var string
-     */
-    public $evaluationMode;
-    protected $policyBindingsType = PolicyBinding::class;
-    protected $policyBindingsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setEvaluationMode($evaluationMode)
+namespace Google\Service\GKEHub {
+    class BinaryAuthorizationConfig extends \Google\Collection
     {
+        protected $collection_key = 'policyBindings';
+        /**
+         * @var string
+         */
+        public $evaluationMode;
+        protected $policyBindingsType = PolicyBinding::class;
+        protected $policyBindingsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setEvaluationMode($evaluationMode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEvaluationMode()
+        {
+        }
+        /**
+         * @param PolicyBinding[]
+         */
+        public function setPolicyBindings($policyBindings)
+        {
+        }
+        /**
+         * @return PolicyBinding[]
+         */
+        public function getPolicyBindings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\BinaryAuthorizationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvaluationMode()
-    {
-    }
-    /**
-     * @param PolicyBinding[]
-     */
-    public function setPolicyBindings($policyBindings)
-    {
-    }
-    /**
-     * @return PolicyBinding[]
-     */
-    public function getPolicyBindings()
+    class Google_Service_GKEHub_BinaryAuthorizationConfig extends \Google\Service\GKEHub\BinaryAuthorizationConfig
     {
     }
 }

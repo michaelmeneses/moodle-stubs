@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class InsertionOrderBudgetSegment extends \Google\Model
-{
-    /**
-     * Required. The budget amount the insertion order will spend for the given
-     * date_range. The amount is in micros. Must be greater than 0. For example,
-     * 500000000 represents 500 standard units of the currency.
-     *
-     * @var string
-     */
-    public $budgetAmountMicros;
-    /**
-     * Optional. The budget_id of the campaign budget that this insertion order
-     * budget segment is a part of.
-     *
-     * @var string
-     */
-    public $campaignBudgetId;
-    protected $dateRangeType = DateRange::class;
-    protected $dateRangeDataType = '';
-    /**
-     * Optional. The budget segment description. It can be used to enter Purchase
-     * Order information for each budget segment and have that information printed
-     * on the invoices. Must be UTF-8 encoded.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. The budget amount the insertion order will spend for the given
-     * date_range. The amount is in micros. Must be greater than 0. For example,
-     * 500000000 represents 500 standard units of the currency.
-     *
-     * @param string $budgetAmountMicros
-     */
-    public function setBudgetAmountMicros($budgetAmountMicros)
+namespace Google\Service\DisplayVideo {
+    class InsertionOrderBudgetSegment extends \Google\Model
     {
+        /**
+         * Required. The budget amount the insertion order will spend for the given
+         * date_range. The amount is in micros. Must be greater than 0. For example,
+         * 500000000 represents 500 standard units of the currency.
+         *
+         * @var string
+         */
+        public $budgetAmountMicros;
+        /**
+         * Optional. The budget_id of the campaign budget that this insertion order
+         * budget segment is a part of.
+         *
+         * @var string
+         */
+        public $campaignBudgetId;
+        protected $dateRangeType = DateRange::class;
+        protected $dateRangeDataType = '';
+        /**
+         * Optional. The budget segment description. It can be used to enter Purchase
+         * Order information for each budget segment and have that information printed
+         * on the invoices. Must be UTF-8 encoded.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. The budget amount the insertion order will spend for the given
+         * date_range. The amount is in micros. Must be greater than 0. For example,
+         * 500000000 represents 500 standard units of the currency.
+         *
+         * @param string $budgetAmountMicros
+         */
+        public function setBudgetAmountMicros($budgetAmountMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBudgetAmountMicros()
+        {
+        }
+        /**
+         * Optional. The budget_id of the campaign budget that this insertion order
+         * budget segment is a part of.
+         *
+         * @param string $campaignBudgetId
+         */
+        public function setCampaignBudgetId($campaignBudgetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCampaignBudgetId()
+        {
+        }
+        /**
+         * Required. The start and end date settings of the budget segment. They are
+         * resolved relative to the parent advertiser's time zone. * When creating a
+         * new budget segment, both `start_date` and `end_date` must be in the future.
+         * * An existing budget segment with a `start_date` in the past has a mutable
+         * `end_date` but an immutable `start_date`. * `end_date` must be the
+         * `start_date` or later, both before the year 2037.
+         *
+         * @param DateRange $dateRange
+         */
+        public function setDateRange(DateRange $dateRange)
+        {
+        }
+        /**
+         * @return DateRange
+         */
+        public function getDateRange()
+        {
+        }
+        /**
+         * Optional. The budget segment description. It can be used to enter Purchase
+         * Order information for each budget segment and have that information printed
+         * on the invoices. Must be UTF-8 encoded.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\InsertionOrderBudgetSegment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBudgetAmountMicros()
-    {
-    }
-    /**
-     * Optional. The budget_id of the campaign budget that this insertion order
-     * budget segment is a part of.
-     *
-     * @param string $campaignBudgetId
-     */
-    public function setCampaignBudgetId($campaignBudgetId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCampaignBudgetId()
-    {
-    }
-    /**
-     * Required. The start and end date settings of the budget segment. They are
-     * resolved relative to the parent advertiser's time zone. * When creating a
-     * new budget segment, both `start_date` and `end_date` must be in the future.
-     * * An existing budget segment with a `start_date` in the past has a mutable
-     * `end_date` but an immutable `start_date`. * `end_date` must be the
-     * `start_date` or later, both before the year 2037.
-     *
-     * @param DateRange $dateRange
-     */
-    public function setDateRange(DateRange $dateRange)
-    {
-    }
-    /**
-     * @return DateRange
-     */
-    public function getDateRange()
-    {
-    }
-    /**
-     * Optional. The budget segment description. It can be used to enter Purchase
-     * Order information for each budget segment and have that information printed
-     * on the invoices. Must be UTF-8 encoded.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
+    class Google_Service_DisplayVideo_InsertionOrderBudgetSegment extends \Google\Service\DisplayVideo\InsertionOrderBudgetSegment
     {
     }
 }

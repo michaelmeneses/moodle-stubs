@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1AssetStatus extends \Google\Model
-{
-    /**
-     * Number of active assets.
-     *
-     * @var int
-     */
-    public $activeAssets;
-    /**
-     * Number of assets that are in process of updating the security policy on
-     * attached resources.
-     *
-     * @var int
-     */
-    public $securityPolicyApplyingAssets;
-    /**
-     * Last update time of the status.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Number of active assets.
-     *
-     * @param int $activeAssets
-     */
-    public function setActiveAssets($activeAssets)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1AssetStatus extends \Google\Model
     {
+        /**
+         * Number of active assets.
+         *
+         * @var int
+         */
+        public $activeAssets;
+        /**
+         * Number of assets that are in process of updating the security policy on
+         * attached resources.
+         *
+         * @var int
+         */
+        public $securityPolicyApplyingAssets;
+        /**
+         * Last update time of the status.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Number of active assets.
+         *
+         * @param int $activeAssets
+         */
+        public function setActiveAssets($activeAssets)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getActiveAssets()
+        {
+        }
+        /**
+         * Number of assets that are in process of updating the security policy on
+         * attached resources.
+         *
+         * @param int $securityPolicyApplyingAssets
+         */
+        public function setSecurityPolicyApplyingAssets($securityPolicyApplyingAssets)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSecurityPolicyApplyingAssets()
+        {
+        }
+        /**
+         * Last update time of the status.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1AssetStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActiveAssets()
-    {
-    }
-    /**
-     * Number of assets that are in process of updating the security policy on
-     * attached resources.
-     *
-     * @param int $securityPolicyApplyingAssets
-     */
-    public function setSecurityPolicyApplyingAssets($securityPolicyApplyingAssets)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSecurityPolicyApplyingAssets()
-    {
-    }
-    /**
-     * Last update time of the status.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1AssetStatus extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1AssetStatus
     {
     }
 }

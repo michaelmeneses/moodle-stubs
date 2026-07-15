@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class GoogleBigtableAdminV2TypeInt64 extends \Google\Model
-{
-    protected $encodingType = GoogleBigtableAdminV2TypeInt64Encoding::class;
-    protected $encodingDataType = '';
-    /**
-     * The encoding to use when converting to or from lower level types.
-     *
-     * @param GoogleBigtableAdminV2TypeInt64Encoding $encoding
-     */
-    public function setEncoding(GoogleBigtableAdminV2TypeInt64Encoding $encoding)
+namespace Google\Service\BigtableAdmin {
+    class GoogleBigtableAdminV2TypeInt64 extends \Google\Model
     {
+        protected $encodingType = GoogleBigtableAdminV2TypeInt64Encoding::class;
+        protected $encodingDataType = '';
+        /**
+         * The encoding to use when converting to or from lower level types.
+         *
+         * @param GoogleBigtableAdminV2TypeInt64Encoding $encoding
+         */
+        public function setEncoding(GoogleBigtableAdminV2TypeInt64Encoding $encoding)
+        {
+        }
+        /**
+         * @return GoogleBigtableAdminV2TypeInt64Encoding
+         */
+        public function getEncoding()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleBigtableAdminV2TypeInt64Encoding
+     * Runtime class alias of \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeInt64 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncoding()
+    class Google_Service_BigtableAdmin_GoogleBigtableAdminV2TypeInt64 extends \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeInt64
     {
     }
 }

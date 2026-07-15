@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class DeleteNamedRangeRequest extends \Google\Model
-{
-    /**
-     * The name of the range(s) to delete. All named ranges with the given name
-     * will be deleted.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The ID of the named range to delete.
-     *
-     * @var string
-     */
-    public $namedRangeId;
-    protected $tabsCriteriaType = TabsCriteria::class;
-    protected $tabsCriteriaDataType = '';
-    /**
-     * The name of the range(s) to delete. All named ranges with the given name
-     * will be deleted.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Docs {
+    class DeleteNamedRangeRequest extends \Google\Model
     {
+        /**
+         * The name of the range(s) to delete. All named ranges with the given name
+         * will be deleted.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The ID of the named range to delete.
+         *
+         * @var string
+         */
+        public $namedRangeId;
+        protected $tabsCriteriaType = TabsCriteria::class;
+        protected $tabsCriteriaDataType = '';
+        /**
+         * The name of the range(s) to delete. All named ranges with the given name
+         * will be deleted.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The ID of the named range to delete.
+         *
+         * @param string $namedRangeId
+         */
+        public function setNamedRangeId($namedRangeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNamedRangeId()
+        {
+        }
+        /**
+         * Optional. The criteria used to specify which tab(s) the range deletion
+         * should occur in. When omitted, the range deletion is applied to all tabs.
+         * In a document containing a single tab: - If provided, must match the
+         * singular tab's ID. - If omitted, the range deletion applies to the singular
+         * tab. In a document containing multiple tabs: - If provided, the range
+         * deletion applies to the specified tabs. - If not provided, the range
+         * deletion applies to all tabs.
+         *
+         * @param TabsCriteria $tabsCriteria
+         */
+        public function setTabsCriteria(TabsCriteria $tabsCriteria)
+        {
+        }
+        /**
+         * @return TabsCriteria
+         */
+        public function getTabsCriteria()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Docs\DeleteNamedRangeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The ID of the named range to delete.
-     *
-     * @param string $namedRangeId
-     */
-    public function setNamedRangeId($namedRangeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNamedRangeId()
-    {
-    }
-    /**
-     * Optional. The criteria used to specify which tab(s) the range deletion
-     * should occur in. When omitted, the range deletion is applied to all tabs.
-     * In a document containing a single tab: - If provided, must match the
-     * singular tab's ID. - If omitted, the range deletion applies to the singular
-     * tab. In a document containing multiple tabs: - If provided, the range
-     * deletion applies to the specified tabs. - If not provided, the range
-     * deletion applies to all tabs.
-     *
-     * @param TabsCriteria $tabsCriteria
-     */
-    public function setTabsCriteria(TabsCriteria $tabsCriteria)
-    {
-    }
-    /**
-     * @return TabsCriteria
-     */
-    public function getTabsCriteria()
+    class Google_Service_Docs_DeleteNamedRangeRequest extends \Google\Service\Docs\DeleteNamedRangeRequest
     {
     }
 }

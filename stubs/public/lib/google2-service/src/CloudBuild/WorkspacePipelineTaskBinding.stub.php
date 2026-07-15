@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class WorkspacePipelineTaskBinding extends \Google\Model
-{
-    /**
-     * Name of the workspace as declared by the task.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. SubPath is optionally a directory on the volume which should be
-     * used for this binding (i.e. the volume will be mounted at this sub
-     * directory). +optional
-     *
-     * @var string
-     */
-    public $subPath;
-    /**
-     * Name of the workspace declared by the pipeline.
-     *
-     * @var string
-     */
-    public $workspace;
-    /**
-     * Name of the workspace as declared by the task.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CloudBuild {
+    class WorkspacePipelineTaskBinding extends \Google\Model
     {
+        /**
+         * Name of the workspace as declared by the task.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. SubPath is optionally a directory on the volume which should be
+         * used for this binding (i.e. the volume will be mounted at this sub
+         * directory). +optional
+         *
+         * @var string
+         */
+        public $subPath;
+        /**
+         * Name of the workspace declared by the pipeline.
+         *
+         * @var string
+         */
+        public $workspace;
+        /**
+         * Name of the workspace as declared by the task.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. SubPath is optionally a directory on the volume which should be
+         * used for this binding (i.e. the volume will be mounted at this sub
+         * directory). +optional
+         *
+         * @param string $subPath
+         */
+        public function setSubPath($subPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubPath()
+        {
+        }
+        /**
+         * Name of the workspace declared by the pipeline.
+         *
+         * @param string $workspace
+         */
+        public function setWorkspace($workspace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkspace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\WorkspacePipelineTaskBinding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. SubPath is optionally a directory on the volume which should be
-     * used for this binding (i.e. the volume will be mounted at this sub
-     * directory). +optional
-     *
-     * @param string $subPath
-     */
-    public function setSubPath($subPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubPath()
-    {
-    }
-    /**
-     * Name of the workspace declared by the pipeline.
-     *
-     * @param string $workspace
-     */
-    public function setWorkspace($workspace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkspace()
+    class Google_Service_CloudBuild_WorkspacePipelineTaskBinding extends \Google\Service\CloudBuild\WorkspacePipelineTaskBinding
     {
     }
 }

@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1TimeFilter extends \Google\Model
-{
-    /**
-     * Default value.
-     */
-    public const TIME_FIELD_TIME_FIELD_UNSPECIFIED = 'TIME_FIELD_UNSPECIFIED';
-    /**
-     * Earliest document create time.
-     */
-    public const TIME_FIELD_CREATE_TIME = 'CREATE_TIME';
-    /**
-     * Latest document update time.
-     */
-    public const TIME_FIELD_UPDATE_TIME = 'UPDATE_TIME';
-    /**
-     * Time when document becomes mutable again.
-     */
-    public const TIME_FIELD_DISPOSITION_TIME = 'DISPOSITION_TIME';
-    /**
-     * Specifies which time field to filter documents on. Defaults to
-     * TimeField.UPLOAD_TIME.
-     *
-     * @var string
-     */
-    public $timeField;
-    protected $timeRangeType = GoogleTypeInterval::class;
-    protected $timeRangeDataType = '';
-    /**
-     * Specifies which time field to filter documents on. Defaults to
-     * TimeField.UPLOAD_TIME.
-     *
-     * Accepted values: TIME_FIELD_UNSPECIFIED, CREATE_TIME, UPDATE_TIME,
-     * DISPOSITION_TIME
-     *
-     * @param self::TIME_FIELD_* $timeField
-     */
-    public function setTimeField($timeField)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1TimeFilter extends \Google\Model
     {
+        /**
+         * Default value.
+         */
+        public const TIME_FIELD_TIME_FIELD_UNSPECIFIED = 'TIME_FIELD_UNSPECIFIED';
+        /**
+         * Earliest document create time.
+         */
+        public const TIME_FIELD_CREATE_TIME = 'CREATE_TIME';
+        /**
+         * Latest document update time.
+         */
+        public const TIME_FIELD_UPDATE_TIME = 'UPDATE_TIME';
+        /**
+         * Time when document becomes mutable again.
+         */
+        public const TIME_FIELD_DISPOSITION_TIME = 'DISPOSITION_TIME';
+        /**
+         * Specifies which time field to filter documents on. Defaults to
+         * TimeField.UPLOAD_TIME.
+         *
+         * @var string
+         */
+        public $timeField;
+        protected $timeRangeType = GoogleTypeInterval::class;
+        protected $timeRangeDataType = '';
+        /**
+         * Specifies which time field to filter documents on. Defaults to
+         * TimeField.UPLOAD_TIME.
+         *
+         * Accepted values: TIME_FIELD_UNSPECIFIED, CREATE_TIME, UPDATE_TIME,
+         * DISPOSITION_TIME
+         *
+         * @param self::TIME_FIELD_* $timeField
+         */
+        public function setTimeField($timeField)
+        {
+        }
+        /**
+         * @return self::TIME_FIELD_*
+         */
+        public function getTimeField()
+        {
+        }
+        /**
+         * @param GoogleTypeInterval $timeRange
+         */
+        public function setTimeRange(GoogleTypeInterval $timeRange)
+        {
+        }
+        /**
+         * @return GoogleTypeInterval
+         */
+        public function getTimeRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TIME_FIELD_*
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1TimeFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTimeField()
-    {
-    }
-    /**
-     * @param GoogleTypeInterval $timeRange
-     */
-    public function setTimeRange(GoogleTypeInterval $timeRange)
-    {
-    }
-    /**
-     * @return GoogleTypeInterval
-     */
-    public function getTimeRange()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1TimeFilter extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1TimeFilter
     {
     }
 }

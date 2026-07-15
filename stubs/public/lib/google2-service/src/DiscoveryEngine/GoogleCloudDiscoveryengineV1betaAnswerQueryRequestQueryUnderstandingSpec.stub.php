@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpec extends \Google\Model
-{
-    protected $queryClassificationSpecType = GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpecQueryClassificationSpec::class;
-    protected $queryClassificationSpecDataType = '';
-    protected $queryRephraserSpecType = GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpecQueryRephraserSpec::class;
-    protected $queryRephraserSpecDataType = '';
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpecQueryClassificationSpec
-     */
-    public function setQueryClassificationSpec(GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpecQueryClassificationSpec $queryClassificationSpec)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpec extends \Google\Model
     {
+        protected $queryClassificationSpecType = GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpecQueryClassificationSpec::class;
+        protected $queryClassificationSpecDataType = '';
+        protected $queryRephraserSpecType = GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpecQueryRephraserSpec::class;
+        protected $queryRephraserSpecDataType = '';
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpecQueryClassificationSpec
+         */
+        public function setQueryClassificationSpec(GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpecQueryClassificationSpec $queryClassificationSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpecQueryClassificationSpec
+         */
+        public function getQueryClassificationSpec()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpecQueryRephraserSpec
+         */
+        public function setQueryRephraserSpec(GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpecQueryRephraserSpec $queryRephraserSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpecQueryRephraserSpec
+         */
+        public function getQueryRephraserSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpecQueryClassificationSpec
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQueryClassificationSpec()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpecQueryRephraserSpec
-     */
-    public function setQueryRephraserSpec(GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpecQueryRephraserSpec $queryRephraserSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpecQueryRephraserSpec
-     */
-    public function getQueryRephraserSpec()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerQueryRequestQueryUnderstandingSpec
     {
     }
 }

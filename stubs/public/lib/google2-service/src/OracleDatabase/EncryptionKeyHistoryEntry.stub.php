@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class EncryptionKeyHistoryEntry extends \Google\Model
-{
-    /**
-     * Output only. The date and time when the encryption key was activated on the
-     * Autonomous Database..
-     *
-     * @var string
-     */
-    public $activationTime;
-    protected $encryptionKeyType = EncryptionKey::class;
-    protected $encryptionKeyDataType = '';
-    /**
-     * Output only. The date and time when the encryption key was activated on the
-     * Autonomous Database..
-     *
-     * @param string $activationTime
-     */
-    public function setActivationTime($activationTime)
+namespace Google\Service\OracleDatabase {
+    class EncryptionKeyHistoryEntry extends \Google\Model
     {
+        /**
+         * Output only. The date and time when the encryption key was activated on the
+         * Autonomous Database..
+         *
+         * @var string
+         */
+        public $activationTime;
+        protected $encryptionKeyType = EncryptionKey::class;
+        protected $encryptionKeyDataType = '';
+        /**
+         * Output only. The date and time when the encryption key was activated on the
+         * Autonomous Database..
+         *
+         * @param string $activationTime
+         */
+        public function setActivationTime($activationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActivationTime()
+        {
+        }
+        /**
+         * Output only. The encryption key used to encrypt the Autonomous Database.
+         *
+         * @param EncryptionKey $encryptionKey
+         */
+        public function setEncryptionKey(EncryptionKey $encryptionKey)
+        {
+        }
+        /**
+         * @return EncryptionKey
+         */
+        public function getEncryptionKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OracleDatabase\EncryptionKeyHistoryEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivationTime()
-    {
-    }
-    /**
-     * Output only. The encryption key used to encrypt the Autonomous Database.
-     *
-     * @param EncryptionKey $encryptionKey
-     */
-    public function setEncryptionKey(EncryptionKey $encryptionKey)
-    {
-    }
-    /**
-     * @return EncryptionKey
-     */
-    public function getEncryptionKey()
+    class Google_Service_OracleDatabase_EncryptionKeyHistoryEntry extends \Google\Service\OracleDatabase\EncryptionKeyHistoryEntry
     {
     }
 }

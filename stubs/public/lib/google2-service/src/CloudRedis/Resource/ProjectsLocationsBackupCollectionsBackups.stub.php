@@ -21,81 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis\Resource;
-
-/**
- * The "backups" collection of methods.
- * Typical usage is:
- *  <code>
- *   $redisService = new Google\Service\CloudRedis(...);
- *   $backups = $redisService->projects_locations_backupCollections_backups;
- *  </code>
- */
-class ProjectsLocationsBackupCollectionsBackups extends \Google\Service\Resource
-{
+namespace Google\Service\CloudRedis\Resource {
+    use Google\Service\CloudRedis\Backup;
+    use Google\Service\CloudRedis\ExportBackupRequest;
+    use Google\Service\CloudRedis\ListBackupsResponse;
+    use Google\Service\CloudRedis\Operation;
     /**
-     * Deletes a specific backup. (backups.delete)
-     *
-     * @param string $name Required. Redis backup resource name using the form: `pro
-     * jects/{project_id}/locations/{location_id}/backupCollections/{backup_collecti
-     * on_id}/backups/{backup_id}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string requestId Optional. Idempotent request UUID.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "backups" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $redisService = new Google\Service\CloudRedis(...);
+     *   $backups = $redisService->projects_locations_backupCollections_backups;
+     *  </code>
      */
-    public function delete($name, $optParams = [])
+    class ProjectsLocationsBackupCollectionsBackups extends \Google\Service\Resource
     {
+        /**
+         * Deletes a specific backup. (backups.delete)
+         *
+         * @param string $name Required. Redis backup resource name using the form: `pro
+         * jects/{project_id}/locations/{location_id}/backupCollections/{backup_collecti
+         * on_id}/backups/{backup_id}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string requestId Optional. Idempotent request UUID.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Exports a specific backup to a customer target Cloud Storage URI.
+         * (backups.export)
+         *
+         * @param string $name Required. Redis backup resource name using the form: `pro
+         * jects/{project_id}/locations/{location_id}/backupCollections/{backup_collecti
+         * on_id}/backups/{backup_id}`
+         * @param ExportBackupRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function export($name, ExportBackupRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets the details of a specific backup. (backups.get)
+         *
+         * @param string $name Required. Redis backup resource name using the form: `pro
+         * jects/{project_id}/locations/{location_id}/backupCollections/{backup_collecti
+         * on_id}/backups/{backup_id}`
+         * @param array $optParams Optional parameters.
+         * @return Backup
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all backups owned by a backup collection.
+         * (backups.listProjectsLocationsBackupCollectionsBackups)
+         *
+         * @param string $parent Required. The resource name of the backupCollection
+         * using the form: `projects/{project_id}/locations/{location_id}/backupCollecti
+         * ons/{backup_collection_id}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of items to return. If
+         * not specified, a default value of 1000 will be used by the service.
+         * Regardless of the page_size value, the response may include a partial list
+         * and a caller should only rely on response's `next_page_token` to determine if
+         * there are more clusters left to be queried.
+         * @opt_param string pageToken Optional. The `next_page_token` value returned
+         * from a previous [ListBackupCollections] request, if any.
+         * @return ListBackupsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsBackupCollectionsBackups($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Exports a specific backup to a customer target Cloud Storage URI.
-     * (backups.export)
-     *
-     * @param string $name Required. Redis backup resource name using the form: `pro
-     * jects/{project_id}/locations/{location_id}/backupCollections/{backup_collecti
-     * on_id}/backups/{backup_id}`
-     * @param ExportBackupRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudRedis\Resource\ProjectsLocationsBackupCollectionsBackups registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function export($name, ExportBackupRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Gets the details of a specific backup. (backups.get)
-     *
-     * @param string $name Required. Redis backup resource name using the form: `pro
-     * jects/{project_id}/locations/{location_id}/backupCollections/{backup_collecti
-     * on_id}/backups/{backup_id}`
-     * @param array $optParams Optional parameters.
-     * @return Backup
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists all backups owned by a backup collection.
-     * (backups.listProjectsLocationsBackupCollectionsBackups)
-     *
-     * @param string $parent Required. The resource name of the backupCollection
-     * using the form: `projects/{project_id}/locations/{location_id}/backupCollecti
-     * ons/{backup_collection_id}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of items to return. If
-     * not specified, a default value of 1000 will be used by the service.
-     * Regardless of the page_size value, the response may include a partial list
-     * and a caller should only rely on response's `next_page_token` to determine if
-     * there are more clusters left to be queried.
-     * @opt_param string pageToken Optional. The `next_page_token` value returned
-     * from a previous [ListBackupCollections] request, if any.
-     * @return ListBackupsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsBackupCollectionsBackups($parent, $optParams = [])
+    class Google_Service_CloudRedis_Resource_ProjectsLocationsBackupCollectionsBackups extends \Google\Service\CloudRedis\Resource\ProjectsLocationsBackupCollectionsBackups
     {
     }
 }

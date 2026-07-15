@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class CreateLogicalViewRequest extends \Google\Model
-{
-    protected $logicalViewType = LogicalView::class;
-    protected $logicalViewDataType = '';
-    /**
-     * Required. The ID to use for the logical view, which will become the final
-     * component of the logical view's resource name.
-     *
-     * @var string
-     */
-    public $logicalViewId;
-    /**
-     * Required. The parent instance where this logical view will be created.
-     * Format: `projects/{project}/instances/{instance}`.
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * Required. The logical view to create.
-     *
-     * @param LogicalView $logicalView
-     */
-    public function setLogicalView(LogicalView $logicalView)
+namespace Google\Service\BigtableAdmin {
+    class CreateLogicalViewRequest extends \Google\Model
     {
+        protected $logicalViewType = LogicalView::class;
+        protected $logicalViewDataType = '';
+        /**
+         * Required. The ID to use for the logical view, which will become the final
+         * component of the logical view's resource name.
+         *
+         * @var string
+         */
+        public $logicalViewId;
+        /**
+         * Required. The parent instance where this logical view will be created.
+         * Format: `projects/{project}/instances/{instance}`.
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * Required. The logical view to create.
+         *
+         * @param LogicalView $logicalView
+         */
+        public function setLogicalView(LogicalView $logicalView)
+        {
+        }
+        /**
+         * @return LogicalView
+         */
+        public function getLogicalView()
+        {
+        }
+        /**
+         * Required. The ID to use for the logical view, which will become the final
+         * component of the logical view's resource name.
+         *
+         * @param string $logicalViewId
+         */
+        public function setLogicalViewId($logicalViewId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLogicalViewId()
+        {
+        }
+        /**
+         * Required. The parent instance where this logical view will be created.
+         * Format: `projects/{project}/instances/{instance}`.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LogicalView
+     * Runtime class alias of \Google\Service\BigtableAdmin\CreateLogicalViewRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLogicalView()
-    {
-    }
-    /**
-     * Required. The ID to use for the logical view, which will become the final
-     * component of the logical view's resource name.
-     *
-     * @param string $logicalViewId
-     */
-    public function setLogicalViewId($logicalViewId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLogicalViewId()
-    {
-    }
-    /**
-     * Required. The parent instance where this logical view will be created.
-     * Format: `projects/{project}/instances/{instance}`.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
+    class Google_Service_BigtableAdmin_CreateLogicalViewRequest extends \Google\Service\BigtableAdmin\CreateLogicalViewRequest
     {
     }
 }

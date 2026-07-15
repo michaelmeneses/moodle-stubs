@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reports;
-
-class FieldValueSelectionValue extends \Google\Model
-{
-    /**
-     * Whether the selection is badged.
-     *
-     * @var bool
-     */
-    public $badged;
-    /**
-     * Display name of the selection.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Identifier of the selection.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Whether the selection is badged.
-     *
-     * @param bool $badged
-     */
-    public function setBadged($badged)
+namespace Google\Service\Reports {
+    class FieldValueSelectionValue extends \Google\Model
     {
+        /**
+         * Whether the selection is badged.
+         *
+         * @var bool
+         */
+        public $badged;
+        /**
+         * Display name of the selection.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Identifier of the selection.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Whether the selection is badged.
+         *
+         * @param bool $badged
+         */
+        public function setBadged($badged)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBadged()
+        {
+        }
+        /**
+         * Display name of the selection.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Identifier of the selection.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Reports\FieldValueSelectionValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBadged()
-    {
-    }
-    /**
-     * Display name of the selection.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Identifier of the selection.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_Reports_FieldValueSelectionValue extends \Google\Service\Reports\FieldValueSelectionValue
     {
     }
 }

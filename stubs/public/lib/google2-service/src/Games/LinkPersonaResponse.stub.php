@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class LinkPersonaResponse extends \Google\Model
-{
-    /**
-     * The link specified in the request was created.
-     */
-    public const STATE_LINK_CREATED = 'LINK_CREATED';
-    /**
-     * The link specified in the request was not created because already existing
-     * links would result in the new link violating the specified
-     * `RecallTokensCardinalityConstraint` if created.
-     */
-    public const STATE_PERSONA_OR_PLAYER_ALREADY_LINKED = 'PERSONA_OR_PLAYER_ALREADY_LINKED';
-    /**
-     * Output only. State of a persona linking attempt.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. State of a persona linking attempt.
-     *
-     * Accepted values: LINK_CREATED, PERSONA_OR_PLAYER_ALREADY_LINKED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
+namespace Google\Service\Games {
+    class LinkPersonaResponse extends \Google\Model
     {
+        /**
+         * The link specified in the request was created.
+         */
+        public const STATE_LINK_CREATED = 'LINK_CREATED';
+        /**
+         * The link specified in the request was not created because already existing
+         * links would result in the new link violating the specified
+         * `RecallTokensCardinalityConstraint` if created.
+         */
+        public const STATE_PERSONA_OR_PLAYER_ALREADY_LINKED = 'PERSONA_OR_PLAYER_ALREADY_LINKED';
+        /**
+         * Output only. State of a persona linking attempt.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. State of a persona linking attempt.
+         *
+         * Accepted values: LINK_CREATED, PERSONA_OR_PLAYER_ALREADY_LINKED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::STATE_*
+     * Runtime class alias of \Google\Service\Games\LinkPersonaResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getState()
+    class Google_Service_Games_LinkPersonaResponse extends \Google\Service\Games\LinkPersonaResponse
     {
     }
 }

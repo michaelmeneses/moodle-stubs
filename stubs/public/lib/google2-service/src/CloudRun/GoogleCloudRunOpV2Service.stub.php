@@ -21,445 +21,454 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunOpV2Service extends \Google\Collection
-{
-    protected $collection_key = 'trafficStatuses';
-    /**
-     * @var string[]
-     */
-    public $annotations;
-    protected $binaryAuthorizationType = GoogleCloudRunOpV2BinaryAuthorization::class;
-    protected $binaryAuthorizationDataType = '';
-    /**
-     * @var string
-     */
-    public $client;
-    /**
-     * @var string
-     */
-    public $clientVersion;
-    protected $conditionsType = GoogleCloudRunOpV2Condition::class;
-    protected $conditionsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $creator;
-    /**
-     * @var string
-     */
-    public $deleteTime;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $etag;
-    /**
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * @var string
-     */
-    public $generation;
-    /**
-     * @var string
-     */
-    public $ingress;
-    /**
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * @var string
-     */
-    public $lastModifier;
-    /**
-     * @var string
-     */
-    public $latestCreatedRevision;
-    /**
-     * @var string
-     */
-    public $latestReadyRevision;
-    /**
-     * @var string
-     */
-    public $launchStage;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $observedGeneration;
-    /**
-     * @var bool
-     */
-    public $reconciling;
-    protected $templateType = GoogleCloudRunOpV2RevisionTemplate::class;
-    protected $templateDataType = '';
-    protected $terminalConditionType = GoogleCloudRunOpV2Condition::class;
-    protected $terminalConditionDataType = '';
-    protected $trafficType = GoogleCloudRunOpV2TrafficTarget::class;
-    protected $trafficDataType = 'array';
-    protected $trafficStatusesType = GoogleCloudRunOpV2TrafficTargetStatus::class;
-    protected $trafficStatusesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $uid;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @var string
-     */
-    public $uri;
-    /**
-     * @param string[]
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunOpV2Service extends \Google\Collection
     {
+        protected $collection_key = 'trafficStatuses';
+        /**
+         * @var string[]
+         */
+        public $annotations;
+        protected $binaryAuthorizationType = GoogleCloudRunOpV2BinaryAuthorization::class;
+        protected $binaryAuthorizationDataType = '';
+        /**
+         * @var string
+         */
+        public $client;
+        /**
+         * @var string
+         */
+        public $clientVersion;
+        protected $conditionsType = GoogleCloudRunOpV2Condition::class;
+        protected $conditionsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $creator;
+        /**
+         * @var string
+         */
+        public $deleteTime;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $etag;
+        /**
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * @var string
+         */
+        public $generation;
+        /**
+         * @var string
+         */
+        public $ingress;
+        /**
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * @var string
+         */
+        public $lastModifier;
+        /**
+         * @var string
+         */
+        public $latestCreatedRevision;
+        /**
+         * @var string
+         */
+        public $latestReadyRevision;
+        /**
+         * @var string
+         */
+        public $launchStage;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $observedGeneration;
+        /**
+         * @var bool
+         */
+        public $reconciling;
+        protected $templateType = GoogleCloudRunOpV2RevisionTemplate::class;
+        protected $templateDataType = '';
+        protected $terminalConditionType = GoogleCloudRunOpV2Condition::class;
+        protected $terminalConditionDataType = '';
+        protected $trafficType = GoogleCloudRunOpV2TrafficTarget::class;
+        protected $trafficDataType = 'array';
+        protected $trafficStatusesType = GoogleCloudRunOpV2TrafficTargetStatus::class;
+        protected $trafficStatusesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $uid;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @var string
+         */
+        public $uri;
+        /**
+         * @param string[]
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * @param GoogleCloudRunOpV2BinaryAuthorization
+         */
+        public function setBinaryAuthorization(GoogleCloudRunOpV2BinaryAuthorization $binaryAuthorization)
+        {
+        }
+        /**
+         * @return GoogleCloudRunOpV2BinaryAuthorization
+         */
+        public function getBinaryAuthorization()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setClient($client)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClient()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setClientVersion($clientVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientVersion()
+        {
+        }
+        /**
+         * @param GoogleCloudRunOpV2Condition[]
+         */
+        public function setConditions($conditions)
+        {
+        }
+        /**
+         * @return GoogleCloudRunOpV2Condition[]
+         */
+        public function getConditions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreator($creator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreator()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDeleteTime($deleteTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeleteTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGeneration($generation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeneration()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIngress($ingress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIngress()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastModifier($lastModifier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastModifier()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLatestCreatedRevision($latestCreatedRevision)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLatestCreatedRevision()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLatestReadyRevision($latestReadyRevision)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLatestReadyRevision()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLaunchStage($launchStage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLaunchStage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setObservedGeneration($observedGeneration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObservedGeneration()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setReconciling($reconciling)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReconciling()
+        {
+        }
+        /**
+         * @param GoogleCloudRunOpV2RevisionTemplate
+         */
+        public function setTemplate(GoogleCloudRunOpV2RevisionTemplate $template)
+        {
+        }
+        /**
+         * @return GoogleCloudRunOpV2RevisionTemplate
+         */
+        public function getTemplate()
+        {
+        }
+        /**
+         * @param GoogleCloudRunOpV2Condition
+         */
+        public function setTerminalCondition(GoogleCloudRunOpV2Condition $terminalCondition)
+        {
+        }
+        /**
+         * @return GoogleCloudRunOpV2Condition
+         */
+        public function getTerminalCondition()
+        {
+        }
+        /**
+         * @param GoogleCloudRunOpV2TrafficTarget[]
+         */
+        public function setTraffic($traffic)
+        {
+        }
+        /**
+         * @return GoogleCloudRunOpV2TrafficTarget[]
+         */
+        public function getTraffic()
+        {
+        }
+        /**
+         * @param GoogleCloudRunOpV2TrafficTargetStatus[]
+         */
+        public function setTrafficStatuses($trafficStatuses)
+        {
+        }
+        /**
+         * @return GoogleCloudRunOpV2TrafficTargetStatus[]
+         */
+        public function getTrafficStatuses()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunOpV2Service registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * @param GoogleCloudRunOpV2BinaryAuthorization
-     */
-    public function setBinaryAuthorization(GoogleCloudRunOpV2BinaryAuthorization $binaryAuthorization)
-    {
-    }
-    /**
-     * @return GoogleCloudRunOpV2BinaryAuthorization
-     */
-    public function getBinaryAuthorization()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setClient($client)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClient()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setClientVersion($clientVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClientVersion()
-    {
-    }
-    /**
-     * @param GoogleCloudRunOpV2Condition[]
-     */
-    public function setConditions($conditions)
-    {
-    }
-    /**
-     * @return GoogleCloudRunOpV2Condition[]
-     */
-    public function getConditions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreator($creator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreator()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDeleteTime($deleteTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeleteTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setExpireTime($expireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGeneration($generation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGeneration()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIngress($ingress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIngress()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastModifier($lastModifier)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastModifier()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLatestCreatedRevision($latestCreatedRevision)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLatestCreatedRevision()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLatestReadyRevision($latestReadyRevision)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLatestReadyRevision()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLaunchStage($launchStage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLaunchStage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setObservedGeneration($observedGeneration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObservedGeneration()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setReconciling($reconciling)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReconciling()
-    {
-    }
-    /**
-     * @param GoogleCloudRunOpV2RevisionTemplate
-     */
-    public function setTemplate(GoogleCloudRunOpV2RevisionTemplate $template)
-    {
-    }
-    /**
-     * @return GoogleCloudRunOpV2RevisionTemplate
-     */
-    public function getTemplate()
-    {
-    }
-    /**
-     * @param GoogleCloudRunOpV2Condition
-     */
-    public function setTerminalCondition(GoogleCloudRunOpV2Condition $terminalCondition)
-    {
-    }
-    /**
-     * @return GoogleCloudRunOpV2Condition
-     */
-    public function getTerminalCondition()
-    {
-    }
-    /**
-     * @param GoogleCloudRunOpV2TrafficTarget[]
-     */
-    public function setTraffic($traffic)
-    {
-    }
-    /**
-     * @return GoogleCloudRunOpV2TrafficTarget[]
-     */
-    public function getTraffic()
-    {
-    }
-    /**
-     * @param GoogleCloudRunOpV2TrafficTargetStatus[]
-     */
-    public function setTrafficStatuses($trafficStatuses)
-    {
-    }
-    /**
-     * @return GoogleCloudRunOpV2TrafficTargetStatus[]
-     */
-    public function getTrafficStatuses()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_CloudRun_GoogleCloudRunOpV2Service extends \Google\Service\CloudRun\GoogleCloudRunOpV2Service
     {
     }
 }

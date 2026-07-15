@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class UpdateSubscriptionOfferStateRequest extends \Google\Model
-{
-    protected $activateSubscriptionOfferRequestType = ActivateSubscriptionOfferRequest::class;
-    protected $activateSubscriptionOfferRequestDataType = '';
-    protected $deactivateSubscriptionOfferRequestType = DeactivateSubscriptionOfferRequest::class;
-    protected $deactivateSubscriptionOfferRequestDataType = '';
-    /**
-     * Activates an offer. Once activated, the offer will be available to new
-     * subscribers.
-     *
-     * @param ActivateSubscriptionOfferRequest $activateSubscriptionOfferRequest
-     */
-    public function setActivateSubscriptionOfferRequest(ActivateSubscriptionOfferRequest $activateSubscriptionOfferRequest)
+namespace Google\Service\AndroidPublisher {
+    class UpdateSubscriptionOfferStateRequest extends \Google\Model
     {
+        protected $activateSubscriptionOfferRequestType = ActivateSubscriptionOfferRequest::class;
+        protected $activateSubscriptionOfferRequestDataType = '';
+        protected $deactivateSubscriptionOfferRequestType = DeactivateSubscriptionOfferRequest::class;
+        protected $deactivateSubscriptionOfferRequestDataType = '';
+        /**
+         * Activates an offer. Once activated, the offer will be available to new
+         * subscribers.
+         *
+         * @param ActivateSubscriptionOfferRequest $activateSubscriptionOfferRequest
+         */
+        public function setActivateSubscriptionOfferRequest(ActivateSubscriptionOfferRequest $activateSubscriptionOfferRequest)
+        {
+        }
+        /**
+         * @return ActivateSubscriptionOfferRequest
+         */
+        public function getActivateSubscriptionOfferRequest()
+        {
+        }
+        /**
+         * Deactivates an offer. Once deactivated, the offer will become unavailable
+         * to new subscribers, but existing subscribers will maintain their
+         * subscription
+         *
+         * @param DeactivateSubscriptionOfferRequest $deactivateSubscriptionOfferRequest
+         */
+        public function setDeactivateSubscriptionOfferRequest(DeactivateSubscriptionOfferRequest $deactivateSubscriptionOfferRequest)
+        {
+        }
+        /**
+         * @return DeactivateSubscriptionOfferRequest
+         */
+        public function getDeactivateSubscriptionOfferRequest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ActivateSubscriptionOfferRequest
+     * Runtime class alias of \Google\Service\AndroidPublisher\UpdateSubscriptionOfferStateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivateSubscriptionOfferRequest()
-    {
-    }
-    /**
-     * Deactivates an offer. Once deactivated, the offer will become unavailable
-     * to new subscribers, but existing subscribers will maintain their
-     * subscription
-     *
-     * @param DeactivateSubscriptionOfferRequest $deactivateSubscriptionOfferRequest
-     */
-    public function setDeactivateSubscriptionOfferRequest(DeactivateSubscriptionOfferRequest $deactivateSubscriptionOfferRequest)
-    {
-    }
-    /**
-     * @return DeactivateSubscriptionOfferRequest
-     */
-    public function getDeactivateSubscriptionOfferRequest()
+    class Google_Service_AndroidPublisher_UpdateSubscriptionOfferStateRequest extends \Google\Service\AndroidPublisher\UpdateSubscriptionOfferStateRequest
     {
     }
 }

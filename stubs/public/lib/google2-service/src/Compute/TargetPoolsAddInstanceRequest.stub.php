@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class TargetPoolsAddInstanceRequest extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    protected $instancesType = InstanceReference::class;
-    protected $instancesDataType = 'array';
-    /**
-     * A full or partial URL to an instance to add to this target pool. This can
-     * be a full or partial URL. For example, the following are valid URLs:
-     * - https://www.googleapis.com/compute/v1/projects/project-
-     * id/zones/zone/instances/instance-name     - projects/project-
-     * id/zones/zone/instances/instance-name     - zones/zone/instances/instance-
-     * name
-     *
-     * @param InstanceReference[] $instances
-     */
-    public function setInstances($instances)
+namespace Google\Service\Compute {
+    class TargetPoolsAddInstanceRequest extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        protected $instancesType = InstanceReference::class;
+        protected $instancesDataType = 'array';
+        /**
+         * A full or partial URL to an instance to add to this target pool. This can
+         * be a full or partial URL. For example, the following are valid URLs:
+         * - https://www.googleapis.com/compute/v1/projects/project-
+         * id/zones/zone/instances/instance-name     - projects/project-
+         * id/zones/zone/instances/instance-name     - zones/zone/instances/instance-
+         * name
+         *
+         * @param InstanceReference[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return InstanceReference[]
+         */
+        public function getInstances()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InstanceReference[]
+     * Runtime class alias of \Google\Service\Compute\TargetPoolsAddInstanceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstances()
+    class Google_Service_Compute_TargetPoolsAddInstanceRequest extends \Google\Service\Compute\TargetPoolsAddInstanceRequest
     {
     }
 }

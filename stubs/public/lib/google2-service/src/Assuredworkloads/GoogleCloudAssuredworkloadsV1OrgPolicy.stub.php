@@ -21,116 +21,125 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1OrgPolicy extends \Google\Model
-{
-    /**
-     * The constraint name of the OrgPolicy. e.g.
-     * "constraints/gcp.resourceLocations".
-     *
-     * @var string
-     */
-    public $constraint;
-    /**
-     * If `inherit` is true, policy rules of the lowest ancestor in the resource
-     * hierarchy chain are inherited. If it is false, policy rules are not
-     * inherited.
-     *
-     * @var bool
-     */
-    public $inherit;
-    /**
-     * Ignores policies set above this resource and restores to the
-     * `constraint_default` value. `reset` can only be true when `rules` is empty
-     * and `inherit` is false.
-     *
-     * @var bool
-     */
-    public $reset;
-    /**
-     * Resource that the OrgPolicy attaches to. Format: folders/123"
-     * projects/123".
-     *
-     * @var string
-     */
-    public $resource;
-    protected $ruleType = GoogleCloudAssuredworkloadsV1OrgPolicyPolicyRule::class;
-    protected $ruleDataType = '';
-    /**
-     * The constraint name of the OrgPolicy. e.g.
-     * "constraints/gcp.resourceLocations".
-     *
-     * @param string $constraint
-     */
-    public function setConstraint($constraint)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1OrgPolicy extends \Google\Model
     {
+        /**
+         * The constraint name of the OrgPolicy. e.g.
+         * "constraints/gcp.resourceLocations".
+         *
+         * @var string
+         */
+        public $constraint;
+        /**
+         * If `inherit` is true, policy rules of the lowest ancestor in the resource
+         * hierarchy chain are inherited. If it is false, policy rules are not
+         * inherited.
+         *
+         * @var bool
+         */
+        public $inherit;
+        /**
+         * Ignores policies set above this resource and restores to the
+         * `constraint_default` value. `reset` can only be true when `rules` is empty
+         * and `inherit` is false.
+         *
+         * @var bool
+         */
+        public $reset;
+        /**
+         * Resource that the OrgPolicy attaches to. Format: folders/123"
+         * projects/123".
+         *
+         * @var string
+         */
+        public $resource;
+        protected $ruleType = GoogleCloudAssuredworkloadsV1OrgPolicyPolicyRule::class;
+        protected $ruleDataType = '';
+        /**
+         * The constraint name of the OrgPolicy. e.g.
+         * "constraints/gcp.resourceLocations".
+         *
+         * @param string $constraint
+         */
+        public function setConstraint($constraint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConstraint()
+        {
+        }
+        /**
+         * If `inherit` is true, policy rules of the lowest ancestor in the resource
+         * hierarchy chain are inherited. If it is false, policy rules are not
+         * inherited.
+         *
+         * @param bool $inherit
+         */
+        public function setInherit($inherit)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInherit()
+        {
+        }
+        /**
+         * Ignores policies set above this resource and restores to the
+         * `constraint_default` value. `reset` can only be true when `rules` is empty
+         * and `inherit` is false.
+         *
+         * @param bool $reset
+         */
+        public function setReset($reset)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReset()
+        {
+        }
+        /**
+         * Resource that the OrgPolicy attaches to. Format: folders/123"
+         * projects/123".
+         *
+         * @param string $resource
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResource()
+        {
+        }
+        /**
+         * The rule of the OrgPolicy.
+         *
+         * @param GoogleCloudAssuredworkloadsV1OrgPolicyPolicyRule $rule
+         */
+        public function setRule(GoogleCloudAssuredworkloadsV1OrgPolicyPolicyRule $rule)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1OrgPolicyPolicyRule
+         */
+        public function getRule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1OrgPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConstraint()
-    {
-    }
-    /**
-     * If `inherit` is true, policy rules of the lowest ancestor in the resource
-     * hierarchy chain are inherited. If it is false, policy rules are not
-     * inherited.
-     *
-     * @param bool $inherit
-     */
-    public function setInherit($inherit)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInherit()
-    {
-    }
-    /**
-     * Ignores policies set above this resource and restores to the
-     * `constraint_default` value. `reset` can only be true when `rules` is empty
-     * and `inherit` is false.
-     *
-     * @param bool $reset
-     */
-    public function setReset($reset)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReset()
-    {
-    }
-    /**
-     * Resource that the OrgPolicy attaches to. Format: folders/123"
-     * projects/123".
-     *
-     * @param string $resource
-     */
-    public function setResource($resource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResource()
-    {
-    }
-    /**
-     * The rule of the OrgPolicy.
-     *
-     * @param GoogleCloudAssuredworkloadsV1OrgPolicyPolicyRule $rule
-     */
-    public function setRule(GoogleCloudAssuredworkloadsV1OrgPolicyPolicyRule $rule)
-    {
-    }
-    /**
-     * @return GoogleCloudAssuredworkloadsV1OrgPolicyPolicyRule
-     */
-    public function getRule()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1OrgPolicy extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1OrgPolicy
     {
     }
 }

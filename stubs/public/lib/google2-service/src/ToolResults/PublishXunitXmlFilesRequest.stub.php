@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class PublishXunitXmlFilesRequest extends \Google\Collection
-{
-    protected $collection_key = 'xunitXmlFiles';
-    protected $xunitXmlFilesType = FileReference::class;
-    protected $xunitXmlFilesDataType = 'array';
-    /**
-     * URI of the Xunit XML files to publish. The maximum size of the file this
-     * reference is pointing to is 50MB. Required.
-     *
-     * @param FileReference[] $xunitXmlFiles
-     */
-    public function setXunitXmlFiles($xunitXmlFiles)
+namespace Google\Service\ToolResults {
+    class PublishXunitXmlFilesRequest extends \Google\Collection
     {
+        protected $collection_key = 'xunitXmlFiles';
+        protected $xunitXmlFilesType = FileReference::class;
+        protected $xunitXmlFilesDataType = 'array';
+        /**
+         * URI of the Xunit XML files to publish. The maximum size of the file this
+         * reference is pointing to is 50MB. Required.
+         *
+         * @param FileReference[] $xunitXmlFiles
+         */
+        public function setXunitXmlFiles($xunitXmlFiles)
+        {
+        }
+        /**
+         * @return FileReference[]
+         */
+        public function getXunitXmlFiles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FileReference[]
+     * Runtime class alias of \Google\Service\ToolResults\PublishXunitXmlFilesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getXunitXmlFiles()
+    class Google_Service_ToolResults_PublishXunitXmlFilesRequest extends \Google\Service\ToolResults\PublishXunitXmlFilesRequest
     {
     }
 }

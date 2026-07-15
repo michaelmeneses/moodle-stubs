@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class TableCell extends \Google\Model
-{
-    /**
-     * Column span of the cell.
-     *
-     * @var int
-     */
-    public $columnSpan;
-    protected $locationType = TableCellLocation::class;
-    protected $locationDataType = '';
-    /**
-     * Row span of the cell.
-     *
-     * @var int
-     */
-    public $rowSpan;
-    protected $tableCellPropertiesType = TableCellProperties::class;
-    protected $tableCellPropertiesDataType = '';
-    protected $textType = TextContent::class;
-    protected $textDataType = '';
-    /**
-     * Column span of the cell.
-     *
-     * @param int $columnSpan
-     */
-    public function setColumnSpan($columnSpan)
+namespace Google\Service\Slides {
+    class TableCell extends \Google\Model
     {
+        /**
+         * Column span of the cell.
+         *
+         * @var int
+         */
+        public $columnSpan;
+        protected $locationType = TableCellLocation::class;
+        protected $locationDataType = '';
+        /**
+         * Row span of the cell.
+         *
+         * @var int
+         */
+        public $rowSpan;
+        protected $tableCellPropertiesType = TableCellProperties::class;
+        protected $tableCellPropertiesDataType = '';
+        protected $textType = TextContent::class;
+        protected $textDataType = '';
+        /**
+         * Column span of the cell.
+         *
+         * @param int $columnSpan
+         */
+        public function setColumnSpan($columnSpan)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColumnSpan()
+        {
+        }
+        /**
+         * The location of the cell within the table.
+         *
+         * @param TableCellLocation $location
+         */
+        public function setLocation(TableCellLocation $location)
+        {
+        }
+        /**
+         * @return TableCellLocation
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Row span of the cell.
+         *
+         * @param int $rowSpan
+         */
+        public function setRowSpan($rowSpan)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRowSpan()
+        {
+        }
+        /**
+         * The properties of the table cell.
+         *
+         * @param TableCellProperties $tableCellProperties
+         */
+        public function setTableCellProperties(TableCellProperties $tableCellProperties)
+        {
+        }
+        /**
+         * @return TableCellProperties
+         */
+        public function getTableCellProperties()
+        {
+        }
+        /**
+         * The text content of the cell.
+         *
+         * @param TextContent $text
+         */
+        public function setText(TextContent $text)
+        {
+        }
+        /**
+         * @return TextContent
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Slides\TableCell registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnSpan()
-    {
-    }
-    /**
-     * The location of the cell within the table.
-     *
-     * @param TableCellLocation $location
-     */
-    public function setLocation(TableCellLocation $location)
-    {
-    }
-    /**
-     * @return TableCellLocation
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Row span of the cell.
-     *
-     * @param int $rowSpan
-     */
-    public function setRowSpan($rowSpan)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRowSpan()
-    {
-    }
-    /**
-     * The properties of the table cell.
-     *
-     * @param TableCellProperties $tableCellProperties
-     */
-    public function setTableCellProperties(TableCellProperties $tableCellProperties)
-    {
-    }
-    /**
-     * @return TableCellProperties
-     */
-    public function getTableCellProperties()
-    {
-    }
-    /**
-     * The text content of the cell.
-     *
-     * @param TextContent $text
-     */
-    public function setText(TextContent $text)
-    {
-    }
-    /**
-     * @return TextContent
-     */
-    public function getText()
+    class Google_Service_Slides_TableCell extends \Google\Service\Slides\TableCell
     {
     }
 }

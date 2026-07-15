@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\external;
 
+use cm_info;
+use core\external\exporter;
+use core_courseformat\output\local\overview\overviewtable;
+use core_courseformat\local\overview\overviewitem;
+use renderer_base;
 /**
  * The overviewtable output data exporter for Webservice.
  *

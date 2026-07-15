@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class GoogleSecuritySafebrowsingV5ListHashListsResponse extends \Google\Collection
-{
-    protected $collection_key = 'hashLists';
-    protected $hashListsType = GoogleSecuritySafebrowsingV5HashList::class;
-    protected $hashListsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The hash lists in an arbitrary order. Only metadata about the hash lists
-     * will be included, not the contents.
-     *
-     * @param GoogleSecuritySafebrowsingV5HashList[] $hashLists
-     */
-    public function setHashLists($hashLists)
+namespace Google\Service\Safebrowsing {
+    class GoogleSecuritySafebrowsingV5ListHashListsResponse extends \Google\Collection
     {
+        protected $collection_key = 'hashLists';
+        protected $hashListsType = GoogleSecuritySafebrowsingV5HashList::class;
+        protected $hashListsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The hash lists in an arbitrary order. Only metadata about the hash lists
+         * will be included, not the contents.
+         *
+         * @param GoogleSecuritySafebrowsingV5HashList[] $hashLists
+         */
+        public function setHashLists($hashLists)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV5HashList[]
+         */
+        public function getHashLists()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleSecuritySafebrowsingV5HashList[]
+     * Runtime class alias of \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV5ListHashListsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHashLists()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Safebrowsing_GoogleSecuritySafebrowsingV5ListHashListsResponse extends \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV5ListHashListsResponse
     {
     }
 }

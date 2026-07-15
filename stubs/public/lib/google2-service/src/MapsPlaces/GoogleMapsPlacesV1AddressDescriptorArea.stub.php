@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1AddressDescriptorArea extends \Google\Model
-{
-    /**
-     * The containment is unspecified.
-     */
-    public const CONTAINMENT_CONTAINMENT_UNSPECIFIED = 'CONTAINMENT_UNSPECIFIED';
-    /**
-     * The target location is within the area region, close to the center.
-     */
-    public const CONTAINMENT_WITHIN = 'WITHIN';
-    /**
-     * The target location is within the area region, close to the edge.
-     */
-    public const CONTAINMENT_OUTSKIRTS = 'OUTSKIRTS';
-    /**
-     * The target location is outside the area region, but close by.
-     */
-    public const CONTAINMENT_NEAR = 'NEAR';
-    /**
-     * Defines the spatial relationship between the target location and the area.
-     *
-     * @var string
-     */
-    public $containment;
-    protected $displayNameType = GoogleTypeLocalizedText::class;
-    protected $displayNameDataType = '';
-    /**
-     * The area's resource name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The area's place id.
-     *
-     * @var string
-     */
-    public $placeId;
-    /**
-     * Defines the spatial relationship between the target location and the area.
-     *
-     * Accepted values: CONTAINMENT_UNSPECIFIED, WITHIN, OUTSKIRTS, NEAR
-     *
-     * @param self::CONTAINMENT_* $containment
-     */
-    public function setContainment($containment)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1AddressDescriptorArea extends \Google\Model
     {
+        /**
+         * The containment is unspecified.
+         */
+        public const CONTAINMENT_CONTAINMENT_UNSPECIFIED = 'CONTAINMENT_UNSPECIFIED';
+        /**
+         * The target location is within the area region, close to the center.
+         */
+        public const CONTAINMENT_WITHIN = 'WITHIN';
+        /**
+         * The target location is within the area region, close to the edge.
+         */
+        public const CONTAINMENT_OUTSKIRTS = 'OUTSKIRTS';
+        /**
+         * The target location is outside the area region, but close by.
+         */
+        public const CONTAINMENT_NEAR = 'NEAR';
+        /**
+         * Defines the spatial relationship between the target location and the area.
+         *
+         * @var string
+         */
+        public $containment;
+        protected $displayNameType = GoogleTypeLocalizedText::class;
+        protected $displayNameDataType = '';
+        /**
+         * The area's resource name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The area's place id.
+         *
+         * @var string
+         */
+        public $placeId;
+        /**
+         * Defines the spatial relationship between the target location and the area.
+         *
+         * Accepted values: CONTAINMENT_UNSPECIFIED, WITHIN, OUTSKIRTS, NEAR
+         *
+         * @param self::CONTAINMENT_* $containment
+         */
+        public function setContainment($containment)
+        {
+        }
+        /**
+         * @return self::CONTAINMENT_*
+         */
+        public function getContainment()
+        {
+        }
+        /**
+         * The area's display name.
+         *
+         * @param GoogleTypeLocalizedText $displayName
+         */
+        public function setDisplayName(GoogleTypeLocalizedText $displayName)
+        {
+        }
+        /**
+         * @return GoogleTypeLocalizedText
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The area's resource name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The area's place id.
+         *
+         * @param string $placeId
+         */
+        public function setPlaceId($placeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlaceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CONTAINMENT_*
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1AddressDescriptorArea registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainment()
-    {
-    }
-    /**
-     * The area's display name.
-     *
-     * @param GoogleTypeLocalizedText $displayName
-     */
-    public function setDisplayName(GoogleTypeLocalizedText $displayName)
-    {
-    }
-    /**
-     * @return GoogleTypeLocalizedText
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The area's resource name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The area's place id.
-     *
-     * @param string $placeId
-     */
-    public function setPlaceId($placeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlaceId()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1AddressDescriptorArea extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1AddressDescriptorArea
     {
     }
 }

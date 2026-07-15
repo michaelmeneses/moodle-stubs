@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class GoogleFirestoreAdminV1ListBackupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $backupsType = GoogleFirestoreAdminV1Backup::class;
-    protected $backupsDataType = 'array';
-    /**
-     * List of locations that existing backups were not able to be fetched from.
-     * Instead of failing the entire requests when a single location is
-     * unreachable, this response returns a partial result set and list of
-     * locations unable to be reached here. The request can be retried against a
-     * single location to get a concrete error.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * List of all backups for the project.
-     *
-     * @param GoogleFirestoreAdminV1Backup[] $backups
-     */
-    public function setBackups($backups)
+namespace Google\Service\Firestore {
+    class GoogleFirestoreAdminV1ListBackupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $backupsType = GoogleFirestoreAdminV1Backup::class;
+        protected $backupsDataType = 'array';
+        /**
+         * List of locations that existing backups were not able to be fetched from.
+         * Instead of failing the entire requests when a single location is
+         * unreachable, this response returns a partial result set and list of
+         * locations unable to be reached here. The request can be retried against a
+         * single location to get a concrete error.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * List of all backups for the project.
+         *
+         * @param GoogleFirestoreAdminV1Backup[] $backups
+         */
+        public function setBackups($backups)
+        {
+        }
+        /**
+         * @return GoogleFirestoreAdminV1Backup[]
+         */
+        public function getBackups()
+        {
+        }
+        /**
+         * List of locations that existing backups were not able to be fetched from.
+         * Instead of failing the entire requests when a single location is
+         * unreachable, this response returns a partial result set and list of
+         * locations unable to be reached here. The request can be retried against a
+         * single location to get a concrete error.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFirestoreAdminV1Backup[]
+     * Runtime class alias of \Google\Service\Firestore\GoogleFirestoreAdminV1ListBackupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackups()
-    {
-    }
-    /**
-     * List of locations that existing backups were not able to be fetched from.
-     * Instead of failing the entire requests when a single location is
-     * unreachable, this response returns a partial result set and list of
-     * locations unable to be reached here. The request can be retried against a
-     * single location to get a concrete error.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Firestore_GoogleFirestoreAdminV1ListBackupsResponse extends \Google\Service\Firestore\GoogleFirestoreAdminV1ListBackupsResponse
     {
     }
 }

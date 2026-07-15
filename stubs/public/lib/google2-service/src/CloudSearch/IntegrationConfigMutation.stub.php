@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class IntegrationConfigMutation extends \Google\Model
-{
-    protected $addAppType = AppId::class;
-    protected $addAppDataType = '';
-    protected $addPinnedItemType = PinnedItemId::class;
-    protected $addPinnedItemDataType = '';
-    protected $removeAppType = AppId::class;
-    protected $removeAppDataType = '';
-    protected $removePinnedItemType = PinnedItemId::class;
-    protected $removePinnedItemDataType = '';
-    /**
-     * @param AppId
-     */
-    public function setAddApp(AppId $addApp)
+namespace Google\Service\CloudSearch {
+    class IntegrationConfigMutation extends \Google\Model
     {
+        protected $addAppType = AppId::class;
+        protected $addAppDataType = '';
+        protected $addPinnedItemType = PinnedItemId::class;
+        protected $addPinnedItemDataType = '';
+        protected $removeAppType = AppId::class;
+        protected $removeAppDataType = '';
+        protected $removePinnedItemType = PinnedItemId::class;
+        protected $removePinnedItemDataType = '';
+        /**
+         * @param AppId
+         */
+        public function setAddApp(AppId $addApp)
+        {
+        }
+        /**
+         * @return AppId
+         */
+        public function getAddApp()
+        {
+        }
+        /**
+         * @param PinnedItemId
+         */
+        public function setAddPinnedItem(PinnedItemId $addPinnedItem)
+        {
+        }
+        /**
+         * @return PinnedItemId
+         */
+        public function getAddPinnedItem()
+        {
+        }
+        /**
+         * @param AppId
+         */
+        public function setRemoveApp(AppId $removeApp)
+        {
+        }
+        /**
+         * @return AppId
+         */
+        public function getRemoveApp()
+        {
+        }
+        /**
+         * @param PinnedItemId
+         */
+        public function setRemovePinnedItem(PinnedItemId $removePinnedItem)
+        {
+        }
+        /**
+         * @return PinnedItemId
+         */
+        public function getRemovePinnedItem()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppId
+     * Runtime class alias of \Google\Service\CloudSearch\IntegrationConfigMutation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddApp()
-    {
-    }
-    /**
-     * @param PinnedItemId
-     */
-    public function setAddPinnedItem(PinnedItemId $addPinnedItem)
-    {
-    }
-    /**
-     * @return PinnedItemId
-     */
-    public function getAddPinnedItem()
-    {
-    }
-    /**
-     * @param AppId
-     */
-    public function setRemoveApp(AppId $removeApp)
-    {
-    }
-    /**
-     * @return AppId
-     */
-    public function getRemoveApp()
-    {
-    }
-    /**
-     * @param PinnedItemId
-     */
-    public function setRemovePinnedItem(PinnedItemId $removePinnedItem)
-    {
-    }
-    /**
-     * @return PinnedItemId
-     */
-    public function getRemovePinnedItem()
+    class Google_Service_CloudSearch_IntegrationConfigMutation extends \Google\Service\CloudSearch\IntegrationConfigMutation
     {
     }
 }

@@ -21,200 +21,209 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class Notification extends \Google\Collection
-{
-    protected $collection_key = 'event_types';
-    protected $internal_gapi_mappings = ["customAttributes" => "custom_attributes", "eventTypes" => "event_types", "objectNamePrefix" => "object_name_prefix", "payloadFormat" => "payload_format"];
-    /**
-     * An optional list of additional attributes to attach to each Cloud PubSub
-     * message published for this notification subscription.
-     *
-     * @var string[]
-     */
-    public $customAttributes;
-    /**
-     * HTTP 1.1 Entity tag for this subscription notification.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * If present, only send notifications about listed event types. If empty,
-     * sent notifications for all event types.
-     *
-     * @var string[]
-     */
-    public $eventTypes;
-    /**
-     * The ID of the notification.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The kind of item this is. For notifications, this is always
-     * storage#notification.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * If present, only apply this notification configuration to object names that
-     * begin with this prefix.
-     *
-     * @var string
-     */
-    public $objectNamePrefix;
-    /**
-     * The desired content of the Payload.
-     *
-     * @var string
-     */
-    public $payloadFormat;
-    /**
-     * The canonical URL of this notification.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * The Cloud PubSub topic to which this subscription publishes. Formatted as:
-     * '//pubsub.googleapis.com/projects/{project-identifier}/topics/{my-topic}'
-     *
-     * @var string
-     */
-    public $topic;
-    /**
-     * An optional list of additional attributes to attach to each Cloud PubSub
-     * message published for this notification subscription.
-     *
-     * @param string[] $customAttributes
-     */
-    public function setCustomAttributes($customAttributes)
+namespace Google\Service\Storage {
+    class Notification extends \Google\Collection
     {
+        protected $collection_key = 'event_types';
+        protected $internal_gapi_mappings = ["customAttributes" => "custom_attributes", "eventTypes" => "event_types", "objectNamePrefix" => "object_name_prefix", "payloadFormat" => "payload_format"];
+        /**
+         * An optional list of additional attributes to attach to each Cloud PubSub
+         * message published for this notification subscription.
+         *
+         * @var string[]
+         */
+        public $customAttributes;
+        /**
+         * HTTP 1.1 Entity tag for this subscription notification.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * If present, only send notifications about listed event types. If empty,
+         * sent notifications for all event types.
+         *
+         * @var string[]
+         */
+        public $eventTypes;
+        /**
+         * The ID of the notification.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The kind of item this is. For notifications, this is always
+         * storage#notification.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * If present, only apply this notification configuration to object names that
+         * begin with this prefix.
+         *
+         * @var string
+         */
+        public $objectNamePrefix;
+        /**
+         * The desired content of the Payload.
+         *
+         * @var string
+         */
+        public $payloadFormat;
+        /**
+         * The canonical URL of this notification.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * The Cloud PubSub topic to which this subscription publishes. Formatted as:
+         * '//pubsub.googleapis.com/projects/{project-identifier}/topics/{my-topic}'
+         *
+         * @var string
+         */
+        public $topic;
+        /**
+         * An optional list of additional attributes to attach to each Cloud PubSub
+         * message published for this notification subscription.
+         *
+         * @param string[] $customAttributes
+         */
+        public function setCustomAttributes($customAttributes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCustomAttributes()
+        {
+        }
+        /**
+         * HTTP 1.1 Entity tag for this subscription notification.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * If present, only send notifications about listed event types. If empty,
+         * sent notifications for all event types.
+         *
+         * @param string[] $eventTypes
+         */
+        public function setEventTypes($eventTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEventTypes()
+        {
+        }
+        /**
+         * The ID of the notification.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The kind of item this is. For notifications, this is always
+         * storage#notification.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * If present, only apply this notification configuration to object names that
+         * begin with this prefix.
+         *
+         * @param string $objectNamePrefix
+         */
+        public function setObjectNamePrefix($objectNamePrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectNamePrefix()
+        {
+        }
+        /**
+         * The desired content of the Payload.
+         *
+         * @param string $payloadFormat
+         */
+        public function setPayloadFormat($payloadFormat)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPayloadFormat()
+        {
+        }
+        /**
+         * The canonical URL of this notification.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * The Cloud PubSub topic to which this subscription publishes. Formatted as:
+         * '//pubsub.googleapis.com/projects/{project-identifier}/topics/{my-topic}'
+         *
+         * @param string $topic
+         */
+        public function setTopic($topic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Storage\Notification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomAttributes()
-    {
-    }
-    /**
-     * HTTP 1.1 Entity tag for this subscription notification.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * If present, only send notifications about listed event types. If empty,
-     * sent notifications for all event types.
-     *
-     * @param string[] $eventTypes
-     */
-    public function setEventTypes($eventTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEventTypes()
-    {
-    }
-    /**
-     * The ID of the notification.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The kind of item this is. For notifications, this is always
-     * storage#notification.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * If present, only apply this notification configuration to object names that
-     * begin with this prefix.
-     *
-     * @param string $objectNamePrefix
-     */
-    public function setObjectNamePrefix($objectNamePrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectNamePrefix()
-    {
-    }
-    /**
-     * The desired content of the Payload.
-     *
-     * @param string $payloadFormat
-     */
-    public function setPayloadFormat($payloadFormat)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPayloadFormat()
-    {
-    }
-    /**
-     * The canonical URL of this notification.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * The Cloud PubSub topic to which this subscription publishes. Formatted as:
-     * '//pubsub.googleapis.com/projects/{project-identifier}/topics/{my-topic}'
-     *
-     * @param string $topic
-     */
-    public function setTopic($topic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopic()
+    class Google_Service_Storage_Notification extends \Google\Service\Storage\Notification
     {
     }
 }

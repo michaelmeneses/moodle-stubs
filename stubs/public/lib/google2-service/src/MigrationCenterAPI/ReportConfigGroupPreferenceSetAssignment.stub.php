@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ReportConfigGroupPreferenceSetAssignment extends \Google\Model
-{
-    /**
-     * Required. Name of the group.
-     *
-     * @var string
-     */
-    public $group;
-    /**
-     * Required. Name of the Preference Set.
-     *
-     * @var string
-     */
-    public $preferenceSet;
-    /**
-     * Required. Name of the group.
-     *
-     * @param string $group
-     */
-    public function setGroup($group)
+namespace Google\Service\MigrationCenterAPI {
+    class ReportConfigGroupPreferenceSetAssignment extends \Google\Model
     {
+        /**
+         * Required. Name of the group.
+         *
+         * @var string
+         */
+        public $group;
+        /**
+         * Required. Name of the Preference Set.
+         *
+         * @var string
+         */
+        public $preferenceSet;
+        /**
+         * Required. Name of the group.
+         *
+         * @param string $group
+         */
+        public function setGroup($group)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroup()
+        {
+        }
+        /**
+         * Required. Name of the Preference Set.
+         *
+         * @param string $preferenceSet
+         */
+        public function setPreferenceSet($preferenceSet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPreferenceSet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ReportConfigGroupPreferenceSetAssignment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroup()
-    {
-    }
-    /**
-     * Required. Name of the Preference Set.
-     *
-     * @param string $preferenceSet
-     */
-    public function setPreferenceSet($preferenceSet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPreferenceSet()
+    class Google_Service_MigrationCenterAPI_ReportConfigGroupPreferenceSetAssignment extends \Google\Service\MigrationCenterAPI\ReportConfigGroupPreferenceSetAssignment
     {
     }
 }

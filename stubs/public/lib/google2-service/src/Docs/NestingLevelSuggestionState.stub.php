@@ -21,165 +21,174 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class NestingLevelSuggestionState extends \Google\Model
-{
-    /**
-     * Indicates if there was a suggested change to bullet_alignment.
-     *
-     * @var bool
-     */
-    public $bulletAlignmentSuggested;
-    /**
-     * Indicates if there was a suggested change to glyph_format.
-     *
-     * @var bool
-     */
-    public $glyphFormatSuggested;
-    /**
-     * Indicates if there was a suggested change to glyph_symbol.
-     *
-     * @var bool
-     */
-    public $glyphSymbolSuggested;
-    /**
-     * Indicates if there was a suggested change to glyph_type.
-     *
-     * @var bool
-     */
-    public $glyphTypeSuggested;
-    /**
-     * Indicates if there was a suggested change to indent_first_line.
-     *
-     * @var bool
-     */
-    public $indentFirstLineSuggested;
-    /**
-     * Indicates if there was a suggested change to indent_start.
-     *
-     * @var bool
-     */
-    public $indentStartSuggested;
-    /**
-     * Indicates if there was a suggested change to start_number.
-     *
-     * @var bool
-     */
-    public $startNumberSuggested;
-    protected $textStyleSuggestionStateType = TextStyleSuggestionState::class;
-    protected $textStyleSuggestionStateDataType = '';
-    /**
-     * Indicates if there was a suggested change to bullet_alignment.
-     *
-     * @param bool $bulletAlignmentSuggested
-     */
-    public function setBulletAlignmentSuggested($bulletAlignmentSuggested)
+namespace Google\Service\Docs {
+    class NestingLevelSuggestionState extends \Google\Model
     {
+        /**
+         * Indicates if there was a suggested change to bullet_alignment.
+         *
+         * @var bool
+         */
+        public $bulletAlignmentSuggested;
+        /**
+         * Indicates if there was a suggested change to glyph_format.
+         *
+         * @var bool
+         */
+        public $glyphFormatSuggested;
+        /**
+         * Indicates if there was a suggested change to glyph_symbol.
+         *
+         * @var bool
+         */
+        public $glyphSymbolSuggested;
+        /**
+         * Indicates if there was a suggested change to glyph_type.
+         *
+         * @var bool
+         */
+        public $glyphTypeSuggested;
+        /**
+         * Indicates if there was a suggested change to indent_first_line.
+         *
+         * @var bool
+         */
+        public $indentFirstLineSuggested;
+        /**
+         * Indicates if there was a suggested change to indent_start.
+         *
+         * @var bool
+         */
+        public $indentStartSuggested;
+        /**
+         * Indicates if there was a suggested change to start_number.
+         *
+         * @var bool
+         */
+        public $startNumberSuggested;
+        protected $textStyleSuggestionStateType = TextStyleSuggestionState::class;
+        protected $textStyleSuggestionStateDataType = '';
+        /**
+         * Indicates if there was a suggested change to bullet_alignment.
+         *
+         * @param bool $bulletAlignmentSuggested
+         */
+        public function setBulletAlignmentSuggested($bulletAlignmentSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBulletAlignmentSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to glyph_format.
+         *
+         * @param bool $glyphFormatSuggested
+         */
+        public function setGlyphFormatSuggested($glyphFormatSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getGlyphFormatSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to glyph_symbol.
+         *
+         * @param bool $glyphSymbolSuggested
+         */
+        public function setGlyphSymbolSuggested($glyphSymbolSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getGlyphSymbolSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to glyph_type.
+         *
+         * @param bool $glyphTypeSuggested
+         */
+        public function setGlyphTypeSuggested($glyphTypeSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getGlyphTypeSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to indent_first_line.
+         *
+         * @param bool $indentFirstLineSuggested
+         */
+        public function setIndentFirstLineSuggested($indentFirstLineSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIndentFirstLineSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to indent_start.
+         *
+         * @param bool $indentStartSuggested
+         */
+        public function setIndentStartSuggested($indentStartSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIndentStartSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to start_number.
+         *
+         * @param bool $startNumberSuggested
+         */
+        public function setStartNumberSuggested($startNumberSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStartNumberSuggested()
+        {
+        }
+        /**
+         * A mask that indicates which of the fields in text style have been changed
+         * in this suggestion.
+         *
+         * @param TextStyleSuggestionState $textStyleSuggestionState
+         */
+        public function setTextStyleSuggestionState(TextStyleSuggestionState $textStyleSuggestionState)
+        {
+        }
+        /**
+         * @return TextStyleSuggestionState
+         */
+        public function getTextStyleSuggestionState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Docs\NestingLevelSuggestionState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBulletAlignmentSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to glyph_format.
-     *
-     * @param bool $glyphFormatSuggested
-     */
-    public function setGlyphFormatSuggested($glyphFormatSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getGlyphFormatSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to glyph_symbol.
-     *
-     * @param bool $glyphSymbolSuggested
-     */
-    public function setGlyphSymbolSuggested($glyphSymbolSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getGlyphSymbolSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to glyph_type.
-     *
-     * @param bool $glyphTypeSuggested
-     */
-    public function setGlyphTypeSuggested($glyphTypeSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getGlyphTypeSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to indent_first_line.
-     *
-     * @param bool $indentFirstLineSuggested
-     */
-    public function setIndentFirstLineSuggested($indentFirstLineSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIndentFirstLineSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to indent_start.
-     *
-     * @param bool $indentStartSuggested
-     */
-    public function setIndentStartSuggested($indentStartSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIndentStartSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to start_number.
-     *
-     * @param bool $startNumberSuggested
-     */
-    public function setStartNumberSuggested($startNumberSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getStartNumberSuggested()
-    {
-    }
-    /**
-     * A mask that indicates which of the fields in text style have been changed
-     * in this suggestion.
-     *
-     * @param TextStyleSuggestionState $textStyleSuggestionState
-     */
-    public function setTextStyleSuggestionState(TextStyleSuggestionState $textStyleSuggestionState)
-    {
-    }
-    /**
-     * @return TextStyleSuggestionState
-     */
-    public function getTextStyleSuggestionState()
+    class Google_Service_Docs_NestingLevelSuggestionState extends \Google\Service\Docs\NestingLevelSuggestionState
     {
     }
 }

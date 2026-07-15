@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class FreezePeriod extends \Google\Model
-{
-    protected $endDateType = Date::class;
-    protected $endDateDataType = '';
-    protected $startDateType = Date::class;
-    protected $startDateDataType = '';
-    /**
-     * The end date (inclusive) of the freeze period. Must be no later than 90
-     * days from the start date. If the end date is earlier than the start date,
-     * the freeze period is considered wrapping year-end. Note: day and month must
-     * be set. year should not be set as it is not used. For example, {"month":
-     * 1,"date": 30}.
-     *
-     * @param Date $endDate
-     */
-    public function setEndDate(Date $endDate)
+namespace Google\Service\AndroidManagement {
+    class FreezePeriod extends \Google\Model
     {
+        protected $endDateType = Date::class;
+        protected $endDateDataType = '';
+        protected $startDateType = Date::class;
+        protected $startDateDataType = '';
+        /**
+         * The end date (inclusive) of the freeze period. Must be no later than 90
+         * days from the start date. If the end date is earlier than the start date,
+         * the freeze period is considered wrapping year-end. Note: day and month must
+         * be set. year should not be set as it is not used. For example, {"month":
+         * 1,"date": 30}.
+         *
+         * @param Date $endDate
+         */
+        public function setEndDate(Date $endDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * The start date (inclusive) of the freeze period. Note: day and month must
+         * be set. year should not be set as it is not used. For example, {"month":
+         * 1,"date": 30}.
+         *
+         * @param Date $startDate
+         */
+        public function setStartDate(Date $startDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getStartDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Date
+     * Runtime class alias of \Google\Service\AndroidManagement\FreezePeriod registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndDate()
-    {
-    }
-    /**
-     * The start date (inclusive) of the freeze period. Note: day and month must
-     * be set. year should not be set as it is not used. For example, {"month":
-     * 1,"date": 30}.
-     *
-     * @param Date $startDate
-     */
-    public function setStartDate(Date $startDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getStartDate()
+    class Google_Service_AndroidManagement_FreezePeriod extends \Google\Service\AndroidManagement\FreezePeriod
     {
     }
 }

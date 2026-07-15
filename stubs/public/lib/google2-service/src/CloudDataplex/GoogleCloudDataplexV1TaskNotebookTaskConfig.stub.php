@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1TaskNotebookTaskConfig extends \Google\Collection
-{
-    protected $collection_key = 'fileUris';
-    /**
-     * Optional. Cloud Storage URIs of archives to be extracted into the working
-     * directory of each executor. Supported file types: .jar, .tar, .tar.gz,
-     * .tgz, and .zip.
-     *
-     * @var string[]
-     */
-    public $archiveUris;
-    /**
-     * Optional. Cloud Storage URIs of files to be placed in the working directory
-     * of each executor.
-     *
-     * @var string[]
-     */
-    public $fileUris;
-    protected $infrastructureSpecType = GoogleCloudDataplexV1TaskInfrastructureSpec::class;
-    protected $infrastructureSpecDataType = '';
-    /**
-     * Required. Path to input notebook. This can be the Cloud Storage URI of the
-     * notebook file or the path to a Notebook Content. The execution args are
-     * accessible as environment variables (TASK_key=value).
-     *
-     * @var string
-     */
-    public $notebook;
-    /**
-     * Optional. Cloud Storage URIs of archives to be extracted into the working
-     * directory of each executor. Supported file types: .jar, .tar, .tar.gz,
-     * .tgz, and .zip.
-     *
-     * @param string[] $archiveUris
-     */
-    public function setArchiveUris($archiveUris)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1TaskNotebookTaskConfig extends \Google\Collection
     {
+        protected $collection_key = 'fileUris';
+        /**
+         * Optional. Cloud Storage URIs of archives to be extracted into the working
+         * directory of each executor. Supported file types: .jar, .tar, .tar.gz,
+         * .tgz, and .zip.
+         *
+         * @var string[]
+         */
+        public $archiveUris;
+        /**
+         * Optional. Cloud Storage URIs of files to be placed in the working directory
+         * of each executor.
+         *
+         * @var string[]
+         */
+        public $fileUris;
+        protected $infrastructureSpecType = GoogleCloudDataplexV1TaskInfrastructureSpec::class;
+        protected $infrastructureSpecDataType = '';
+        /**
+         * Required. Path to input notebook. This can be the Cloud Storage URI of the
+         * notebook file or the path to a Notebook Content. The execution args are
+         * accessible as environment variables (TASK_key=value).
+         *
+         * @var string
+         */
+        public $notebook;
+        /**
+         * Optional. Cloud Storage URIs of archives to be extracted into the working
+         * directory of each executor. Supported file types: .jar, .tar, .tar.gz,
+         * .tgz, and .zip.
+         *
+         * @param string[] $archiveUris
+         */
+        public function setArchiveUris($archiveUris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getArchiveUris()
+        {
+        }
+        /**
+         * Optional. Cloud Storage URIs of files to be placed in the working directory
+         * of each executor.
+         *
+         * @param string[] $fileUris
+         */
+        public function setFileUris($fileUris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFileUris()
+        {
+        }
+        /**
+         * Optional. Infrastructure specification for the execution.
+         *
+         * @param GoogleCloudDataplexV1TaskInfrastructureSpec $infrastructureSpec
+         */
+        public function setInfrastructureSpec(GoogleCloudDataplexV1TaskInfrastructureSpec $infrastructureSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1TaskInfrastructureSpec
+         */
+        public function getInfrastructureSpec()
+        {
+        }
+        /**
+         * Required. Path to input notebook. This can be the Cloud Storage URI of the
+         * notebook file or the path to a Notebook Content. The execution args are
+         * accessible as environment variables (TASK_key=value).
+         *
+         * @param string $notebook
+         */
+        public function setNotebook($notebook)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotebook()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1TaskNotebookTaskConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArchiveUris()
-    {
-    }
-    /**
-     * Optional. Cloud Storage URIs of files to be placed in the working directory
-     * of each executor.
-     *
-     * @param string[] $fileUris
-     */
-    public function setFileUris($fileUris)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFileUris()
-    {
-    }
-    /**
-     * Optional. Infrastructure specification for the execution.
-     *
-     * @param GoogleCloudDataplexV1TaskInfrastructureSpec $infrastructureSpec
-     */
-    public function setInfrastructureSpec(GoogleCloudDataplexV1TaskInfrastructureSpec $infrastructureSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1TaskInfrastructureSpec
-     */
-    public function getInfrastructureSpec()
-    {
-    }
-    /**
-     * Required. Path to input notebook. This can be the Cloud Storage URI of the
-     * notebook file or the path to a Notebook Content. The execution args are
-     * accessible as environment variables (TASK_key=value).
-     *
-     * @param string $notebook
-     */
-    public function setNotebook($notebook)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotebook()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1TaskNotebookTaskConfig extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1TaskNotebookTaskConfig
     {
     }
 }

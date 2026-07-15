@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFilestore;
-
-class FixedIOPS extends \Google\Model
-{
-    /**
-     * Required. Maximum IOPS.
-     *
-     * @var string
-     */
-    public $maxIops;
-    /**
-     * Required. Maximum IOPS.
-     *
-     * @param string $maxIops
-     */
-    public function setMaxIops($maxIops)
+namespace Google\Service\CloudFilestore {
+    class FixedIOPS extends \Google\Model
     {
+        /**
+         * Required. Maximum IOPS.
+         *
+         * @var string
+         */
+        public $maxIops;
+        /**
+         * Required. Maximum IOPS.
+         *
+         * @param string $maxIops
+         */
+        public function setMaxIops($maxIops)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxIops()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudFilestore\FixedIOPS registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxIops()
+    class Google_Service_CloudFilestore_FixedIOPS extends \Google\Service\CloudFilestore\FixedIOPS
     {
     }
 }

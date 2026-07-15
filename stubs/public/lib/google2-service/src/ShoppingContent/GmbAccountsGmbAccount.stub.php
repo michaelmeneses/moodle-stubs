@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class GmbAccountsGmbAccount extends \Google\Model
-{
-    /**
-     * The email which identifies the Business Profile.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Number of listings under this account.
-     *
-     * @var string
-     */
-    public $listingCount;
-    /**
-     * The name of the Business Profile.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The type of the Business Profile (User or Business).
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The email which identifies the Business Profile.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\ShoppingContent {
+    class GmbAccountsGmbAccount extends \Google\Model
     {
+        /**
+         * The email which identifies the Business Profile.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Number of listings under this account.
+         *
+         * @var string
+         */
+        public $listingCount;
+        /**
+         * The name of the Business Profile.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The type of the Business Profile (User or Business).
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The email which identifies the Business Profile.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * Number of listings under this account.
+         *
+         * @param string $listingCount
+         */
+        public function setListingCount($listingCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getListingCount()
+        {
+        }
+        /**
+         * The name of the Business Profile.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The type of the Business Profile (User or Business).
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\GmbAccountsGmbAccount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * Number of listings under this account.
-     *
-     * @param string $listingCount
-     */
-    public function setListingCount($listingCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getListingCount()
-    {
-    }
-    /**
-     * The name of the Business Profile.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The type of the Business Profile (User or Business).
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_ShoppingContent_GmbAccountsGmbAccount extends \Google\Service\ShoppingContent\GmbAccountsGmbAccount
     {
     }
 }

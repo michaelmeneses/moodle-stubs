@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WebRisk;
-
-class GoogleCloudWebriskV1ThreatEntryRemovals extends \Google\Model
-{
-    protected $rawIndicesType = GoogleCloudWebriskV1RawIndices::class;
-    protected $rawIndicesDataType = '';
-    protected $riceIndicesType = GoogleCloudWebriskV1RiceDeltaEncoding::class;
-    protected $riceIndicesDataType = '';
-    /**
-     * The raw removal indices for a local list.
-     *
-     * @param GoogleCloudWebriskV1RawIndices $rawIndices
-     */
-    public function setRawIndices(GoogleCloudWebriskV1RawIndices $rawIndices)
+namespace Google\Service\WebRisk {
+    class GoogleCloudWebriskV1ThreatEntryRemovals extends \Google\Model
     {
+        protected $rawIndicesType = GoogleCloudWebriskV1RawIndices::class;
+        protected $rawIndicesDataType = '';
+        protected $riceIndicesType = GoogleCloudWebriskV1RiceDeltaEncoding::class;
+        protected $riceIndicesDataType = '';
+        /**
+         * The raw removal indices for a local list.
+         *
+         * @param GoogleCloudWebriskV1RawIndices $rawIndices
+         */
+        public function setRawIndices(GoogleCloudWebriskV1RawIndices $rawIndices)
+        {
+        }
+        /**
+         * @return GoogleCloudWebriskV1RawIndices
+         */
+        public function getRawIndices()
+        {
+        }
+        /**
+         * The encoded local, lexicographically-sorted list indices, using a Golomb-
+         * Rice encoding. Used for sending compressed removal indices. The removal
+         * indices (uint32) are sorted in ascending order, then delta encoded and
+         * stored as encoded_data.
+         *
+         * @param GoogleCloudWebriskV1RiceDeltaEncoding $riceIndices
+         */
+        public function setRiceIndices(GoogleCloudWebriskV1RiceDeltaEncoding $riceIndices)
+        {
+        }
+        /**
+         * @return GoogleCloudWebriskV1RiceDeltaEncoding
+         */
+        public function getRiceIndices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudWebriskV1RawIndices
+     * Runtime class alias of \Google\Service\WebRisk\GoogleCloudWebriskV1ThreatEntryRemovals registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRawIndices()
-    {
-    }
-    /**
-     * The encoded local, lexicographically-sorted list indices, using a Golomb-
-     * Rice encoding. Used for sending compressed removal indices. The removal
-     * indices (uint32) are sorted in ascending order, then delta encoded and
-     * stored as encoded_data.
-     *
-     * @param GoogleCloudWebriskV1RiceDeltaEncoding $riceIndices
-     */
-    public function setRiceIndices(GoogleCloudWebriskV1RiceDeltaEncoding $riceIndices)
-    {
-    }
-    /**
-     * @return GoogleCloudWebriskV1RiceDeltaEncoding
-     */
-    public function getRiceIndices()
+    class Google_Service_WebRisk_GoogleCloudWebriskV1ThreatEntryRemovals extends \Google\Service\WebRisk\GoogleCloudWebriskV1ThreatEntryRemovals
     {
     }
 }

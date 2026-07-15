@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class GoogleCloudAssetV1AccessControlList extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    protected $accessesType = GoogleCloudAssetV1Access::class;
-    protected $accessesDataType = 'array';
-    protected $conditionEvaluationType = ConditionEvaluation::class;
-    protected $conditionEvaluationDataType = '';
-    protected $resourceEdgesType = GoogleCloudAssetV1Edge::class;
-    protected $resourceEdgesDataType = 'array';
-    protected $resourcesType = GoogleCloudAssetV1Resource::class;
-    protected $resourcesDataType = 'array';
-    /**
-     * The accesses that match one of the following conditions: - The
-     * access_selector, if it is specified in request; - Otherwise, access
-     * specifiers reachable from the policy binding's role.
-     *
-     * @param GoogleCloudAssetV1Access[] $accesses
-     */
-    public function setAccesses($accesses)
+namespace Google\Service\CloudAsset {
+    class GoogleCloudAssetV1AccessControlList extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        protected $accessesType = GoogleCloudAssetV1Access::class;
+        protected $accessesDataType = 'array';
+        protected $conditionEvaluationType = ConditionEvaluation::class;
+        protected $conditionEvaluationDataType = '';
+        protected $resourceEdgesType = GoogleCloudAssetV1Edge::class;
+        protected $resourceEdgesDataType = 'array';
+        protected $resourcesType = GoogleCloudAssetV1Resource::class;
+        protected $resourcesDataType = 'array';
+        /**
+         * The accesses that match one of the following conditions: - The
+         * access_selector, if it is specified in request; - Otherwise, access
+         * specifiers reachable from the policy binding's role.
+         *
+         * @param GoogleCloudAssetV1Access[] $accesses
+         */
+        public function setAccesses($accesses)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1Access[]
+         */
+        public function getAccesses()
+        {
+        }
+        /**
+         * Condition evaluation for this AccessControlList, if there is a condition
+         * defined in the above IAM policy binding.
+         *
+         * @param ConditionEvaluation $conditionEvaluation
+         */
+        public function setConditionEvaluation(ConditionEvaluation $conditionEvaluation)
+        {
+        }
+        /**
+         * @return ConditionEvaluation
+         */
+        public function getConditionEvaluation()
+        {
+        }
+        /**
+         * Resource edges of the graph starting from the policy attached resource to
+         * any descendant resources. The Edge.source_node contains the full resource
+         * name of a parent resource and Edge.target_node contains the full resource
+         * name of a child resource. This field is present only if the
+         * output_resource_edges option is enabled in request.
+         *
+         * @param GoogleCloudAssetV1Edge[] $resourceEdges
+         */
+        public function setResourceEdges($resourceEdges)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1Edge[]
+         */
+        public function getResourceEdges()
+        {
+        }
+        /**
+         * The resources that match one of the following conditions: - The
+         * resource_selector, if it is specified in request; - Otherwise, resources
+         * reachable from the policy attached resource.
+         *
+         * @param GoogleCloudAssetV1Resource[] $resources
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1Resource[]
+         */
+        public function getResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAssetV1Access[]
+     * Runtime class alias of \Google\Service\CloudAsset\GoogleCloudAssetV1AccessControlList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccesses()
-    {
-    }
-    /**
-     * Condition evaluation for this AccessControlList, if there is a condition
-     * defined in the above IAM policy binding.
-     *
-     * @param ConditionEvaluation $conditionEvaluation
-     */
-    public function setConditionEvaluation(ConditionEvaluation $conditionEvaluation)
-    {
-    }
-    /**
-     * @return ConditionEvaluation
-     */
-    public function getConditionEvaluation()
-    {
-    }
-    /**
-     * Resource edges of the graph starting from the policy attached resource to
-     * any descendant resources. The Edge.source_node contains the full resource
-     * name of a parent resource and Edge.target_node contains the full resource
-     * name of a child resource. This field is present only if the
-     * output_resource_edges option is enabled in request.
-     *
-     * @param GoogleCloudAssetV1Edge[] $resourceEdges
-     */
-    public function setResourceEdges($resourceEdges)
-    {
-    }
-    /**
-     * @return GoogleCloudAssetV1Edge[]
-     */
-    public function getResourceEdges()
-    {
-    }
-    /**
-     * The resources that match one of the following conditions: - The
-     * resource_selector, if it is specified in request; - Otherwise, resources
-     * reachable from the policy attached resource.
-     *
-     * @param GoogleCloudAssetV1Resource[] $resources
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return GoogleCloudAssetV1Resource[]
-     */
-    public function getResources()
+    class Google_Service_CloudAsset_GoogleCloudAssetV1AccessControlList extends \Google\Service\CloudAsset\GoogleCloudAssetV1AccessControlList
     {
     }
 }

@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2RequestedOptions extends \Google\Model
-{
-    protected $jobConfigType = GooglePrivacyDlpV2InspectJobConfig::class;
-    protected $jobConfigDataType = '';
-    protected $snapshotInspectTemplateType = GooglePrivacyDlpV2InspectTemplate::class;
-    protected $snapshotInspectTemplateDataType = '';
-    /**
-     * Inspect config.
-     *
-     * @param GooglePrivacyDlpV2InspectJobConfig $jobConfig
-     */
-    public function setJobConfig(GooglePrivacyDlpV2InspectJobConfig $jobConfig)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2RequestedOptions extends \Google\Model
     {
+        protected $jobConfigType = GooglePrivacyDlpV2InspectJobConfig::class;
+        protected $jobConfigDataType = '';
+        protected $snapshotInspectTemplateType = GooglePrivacyDlpV2InspectTemplate::class;
+        protected $snapshotInspectTemplateDataType = '';
+        /**
+         * Inspect config.
+         *
+         * @param GooglePrivacyDlpV2InspectJobConfig $jobConfig
+         */
+        public function setJobConfig(GooglePrivacyDlpV2InspectJobConfig $jobConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InspectJobConfig
+         */
+        public function getJobConfig()
+        {
+        }
+        /**
+         * If run with an InspectTemplate, a snapshot of its state at the time of this
+         * run.
+         *
+         * @param GooglePrivacyDlpV2InspectTemplate $snapshotInspectTemplate
+         */
+        public function setSnapshotInspectTemplate(GooglePrivacyDlpV2InspectTemplate $snapshotInspectTemplate)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InspectTemplate
+         */
+        public function getSnapshotInspectTemplate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2InspectJobConfig
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2RequestedOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJobConfig()
-    {
-    }
-    /**
-     * If run with an InspectTemplate, a snapshot of its state at the time of this
-     * run.
-     *
-     * @param GooglePrivacyDlpV2InspectTemplate $snapshotInspectTemplate
-     */
-    public function setSnapshotInspectTemplate(GooglePrivacyDlpV2InspectTemplate $snapshotInspectTemplate)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2InspectTemplate
-     */
-    public function getSnapshotInspectTemplate()
+    class Google_Service_DLP_GooglePrivacyDlpV2RequestedOptions extends \Google\Service\DLP\GooglePrivacyDlpV2RequestedOptions
     {
     }
 }

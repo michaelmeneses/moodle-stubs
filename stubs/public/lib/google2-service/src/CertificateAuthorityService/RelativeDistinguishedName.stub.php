@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class RelativeDistinguishedName extends \Google\Collection
-{
-    protected $collection_key = 'attributes';
-    protected $attributesType = AttributeTypeAndValue::class;
-    protected $attributesDataType = 'array';
-    /**
-     * Attributes describes the attribute value assertions in the RDN.
-     *
-     * @param AttributeTypeAndValue[] $attributes
-     */
-    public function setAttributes($attributes)
+namespace Google\Service\CertificateAuthorityService {
+    class RelativeDistinguishedName extends \Google\Collection
     {
+        protected $collection_key = 'attributes';
+        protected $attributesType = AttributeTypeAndValue::class;
+        protected $attributesDataType = 'array';
+        /**
+         * Attributes describes the attribute value assertions in the RDN.
+         *
+         * @param AttributeTypeAndValue[] $attributes
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return AttributeTypeAndValue[]
+         */
+        public function getAttributes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AttributeTypeAndValue[]
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\RelativeDistinguishedName registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
+    class Google_Service_CertificateAuthorityService_RelativeDistinguishedName extends \Google\Service\CertificateAuthorityService\RelativeDistinguishedName
     {
     }
 }

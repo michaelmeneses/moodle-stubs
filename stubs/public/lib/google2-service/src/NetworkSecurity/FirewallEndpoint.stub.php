@@ -21,298 +21,307 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class FirewallEndpoint extends \Google\Collection
-{
-    /**
-     * Not set.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Being created.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * Processing configuration updates.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * Being deleted.
-     */
-    public const STATE_DELETING = 'DELETING';
-    /**
-     * Down or in an error state.
-     */
-    public const STATE_INACTIVE = 'INACTIVE';
-    protected $collection_key = 'associations';
-    /**
-     * Output only. List of networks that are associated with this endpoint in the
-     * local zone. This is a projection of the FirewallEndpointAssociations
-     * pointing at this endpoint. A network will only appear in this list after
-     * traffic routing is fully configured. Format:
-     * projects/{project}/global/networks/{name}.
-     *
-     * @deprecated
-     * @var string[]
-     */
-    public $associatedNetworks;
-    protected $associationsType = FirewallEndpointAssociationReference::class;
-    protected $associationsDataType = 'array';
-    /**
-     * Required. Project to bill on endpoint uptime usage.
-     *
-     * @var string
-     */
-    public $billingProjectId;
-    /**
-     * Output only. Create time stamp.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. Description of the firewall endpoint. Max length 2048 characters.
-     *
-     * @var string
-     */
-    public $description;
-    protected $endpointSettingsType = FirewallEndpointEndpointSettings::class;
-    protected $endpointSettingsDataType = '';
-    /**
-     * Optional. Labels as key value pairs
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Immutable. Identifier. Name of resource.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Whether reconciling is in progress, recommended per
-     * https://google.aip.dev/128.
-     *
-     * @var bool
-     */
-    public $reconciling;
-    /**
-     * Output only. [Output Only] Reserved for future use.
-     *
-     * @var bool
-     */
-    public $satisfiesPzi;
-    /**
-     * Output only. [Output Only] Reserved for future use.
-     *
-     * @var bool
-     */
-    public $satisfiesPzs;
-    /**
-     * Output only. Current state of the endpoint.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. Update time stamp
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. List of networks that are associated with this endpoint in the
-     * local zone. This is a projection of the FirewallEndpointAssociations
-     * pointing at this endpoint. A network will only appear in this list after
-     * traffic routing is fully configured. Format:
-     * projects/{project}/global/networks/{name}.
-     *
-     * @deprecated
-     * @param string[] $associatedNetworks
-     */
-    public function setAssociatedNetworks($associatedNetworks)
+namespace Google\Service\NetworkSecurity {
+    class FirewallEndpoint extends \Google\Collection
     {
+        /**
+         * Not set.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Being created.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * Processing configuration updates.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * Being deleted.
+         */
+        public const STATE_DELETING = 'DELETING';
+        /**
+         * Down or in an error state.
+         */
+        public const STATE_INACTIVE = 'INACTIVE';
+        protected $collection_key = 'associations';
+        /**
+         * Output only. List of networks that are associated with this endpoint in the
+         * local zone. This is a projection of the FirewallEndpointAssociations
+         * pointing at this endpoint. A network will only appear in this list after
+         * traffic routing is fully configured. Format:
+         * projects/{project}/global/networks/{name}.
+         *
+         * @deprecated
+         * @var string[]
+         */
+        public $associatedNetworks;
+        protected $associationsType = FirewallEndpointAssociationReference::class;
+        protected $associationsDataType = 'array';
+        /**
+         * Required. Project to bill on endpoint uptime usage.
+         *
+         * @var string
+         */
+        public $billingProjectId;
+        /**
+         * Output only. Create time stamp.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. Description of the firewall endpoint. Max length 2048 characters.
+         *
+         * @var string
+         */
+        public $description;
+        protected $endpointSettingsType = FirewallEndpointEndpointSettings::class;
+        protected $endpointSettingsDataType = '';
+        /**
+         * Optional. Labels as key value pairs
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Immutable. Identifier. Name of resource.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Whether reconciling is in progress, recommended per
+         * https://google.aip.dev/128.
+         *
+         * @var bool
+         */
+        public $reconciling;
+        /**
+         * Output only. [Output Only] Reserved for future use.
+         *
+         * @var bool
+         */
+        public $satisfiesPzi;
+        /**
+         * Output only. [Output Only] Reserved for future use.
+         *
+         * @var bool
+         */
+        public $satisfiesPzs;
+        /**
+         * Output only. Current state of the endpoint.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. Update time stamp
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. List of networks that are associated with this endpoint in the
+         * local zone. This is a projection of the FirewallEndpointAssociations
+         * pointing at this endpoint. A network will only appear in this list after
+         * traffic routing is fully configured. Format:
+         * projects/{project}/global/networks/{name}.
+         *
+         * @deprecated
+         * @param string[] $associatedNetworks
+         */
+        public function setAssociatedNetworks($associatedNetworks)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string[]
+         */
+        public function getAssociatedNetworks()
+        {
+        }
+        /**
+         * Output only. List of FirewallEndpointAssociations that are associated to
+         * this endpoint. An association will only appear in this list after traffic
+         * routing is fully configured.
+         *
+         * @param FirewallEndpointAssociationReference[] $associations
+         */
+        public function setAssociations($associations)
+        {
+        }
+        /**
+         * @return FirewallEndpointAssociationReference[]
+         */
+        public function getAssociations()
+        {
+        }
+        /**
+         * Required. Project to bill on endpoint uptime usage.
+         *
+         * @param string $billingProjectId
+         */
+        public function setBillingProjectId($billingProjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBillingProjectId()
+        {
+        }
+        /**
+         * Output only. Create time stamp.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Description of the firewall endpoint. Max length 2048 characters.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. Settings for the endpoint.
+         *
+         * @param FirewallEndpointEndpointSettings $endpointSettings
+         */
+        public function setEndpointSettings(FirewallEndpointEndpointSettings $endpointSettings)
+        {
+        }
+        /**
+         * @return FirewallEndpointEndpointSettings
+         */
+        public function getEndpointSettings()
+        {
+        }
+        /**
+         * Optional. Labels as key value pairs
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Immutable. Identifier. Name of resource.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Whether reconciling is in progress, recommended per
+         * https://google.aip.dev/128.
+         *
+         * @param bool $reconciling
+         */
+        public function setReconciling($reconciling)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReconciling()
+        {
+        }
+        /**
+         * Output only. [Output Only] Reserved for future use.
+         *
+         * @param bool $satisfiesPzi
+         */
+        public function setSatisfiesPzi($satisfiesPzi)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSatisfiesPzi()
+        {
+        }
+        /**
+         * Output only. [Output Only] Reserved for future use.
+         *
+         * @param bool $satisfiesPzs
+         */
+        public function setSatisfiesPzs($satisfiesPzs)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSatisfiesPzs()
+        {
+        }
+        /**
+         * Output only. Current state of the endpoint.
+         *
+         * Accepted values: STATE_UNSPECIFIED, CREATING, ACTIVE, DELETING, INACTIVE
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. Update time stamp
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string[]
+     * Runtime class alias of \Google\Service\NetworkSecurity\FirewallEndpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssociatedNetworks()
-    {
-    }
-    /**
-     * Output only. List of FirewallEndpointAssociations that are associated to
-     * this endpoint. An association will only appear in this list after traffic
-     * routing is fully configured.
-     *
-     * @param FirewallEndpointAssociationReference[] $associations
-     */
-    public function setAssociations($associations)
-    {
-    }
-    /**
-     * @return FirewallEndpointAssociationReference[]
-     */
-    public function getAssociations()
-    {
-    }
-    /**
-     * Required. Project to bill on endpoint uptime usage.
-     *
-     * @param string $billingProjectId
-     */
-    public function setBillingProjectId($billingProjectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBillingProjectId()
-    {
-    }
-    /**
-     * Output only. Create time stamp.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Description of the firewall endpoint. Max length 2048 characters.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. Settings for the endpoint.
-     *
-     * @param FirewallEndpointEndpointSettings $endpointSettings
-     */
-    public function setEndpointSettings(FirewallEndpointEndpointSettings $endpointSettings)
-    {
-    }
-    /**
-     * @return FirewallEndpointEndpointSettings
-     */
-    public function getEndpointSettings()
-    {
-    }
-    /**
-     * Optional. Labels as key value pairs
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Immutable. Identifier. Name of resource.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Whether reconciling is in progress, recommended per
-     * https://google.aip.dev/128.
-     *
-     * @param bool $reconciling
-     */
-    public function setReconciling($reconciling)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReconciling()
-    {
-    }
-    /**
-     * Output only. [Output Only] Reserved for future use.
-     *
-     * @param bool $satisfiesPzi
-     */
-    public function setSatisfiesPzi($satisfiesPzi)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSatisfiesPzi()
-    {
-    }
-    /**
-     * Output only. [Output Only] Reserved for future use.
-     *
-     * @param bool $satisfiesPzs
-     */
-    public function setSatisfiesPzs($satisfiesPzs)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSatisfiesPzs()
-    {
-    }
-    /**
-     * Output only. Current state of the endpoint.
-     *
-     * Accepted values: STATE_UNSPECIFIED, CREATING, ACTIVE, DELETING, INACTIVE
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. Update time stamp
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_NetworkSecurity_FirewallEndpoint extends \Google\Service\NetworkSecurity\FirewallEndpoint
     {
     }
 }

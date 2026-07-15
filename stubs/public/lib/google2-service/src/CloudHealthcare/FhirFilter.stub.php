@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class FhirFilter extends \Google\Model
-{
-    protected $resourcesType = Resources::class;
-    protected $resourcesDataType = '';
-    /**
-     * List of resources to include in the output. If this list is empty or not
-     * specified, all resources are included in the output.
-     *
-     * @param Resources $resources
-     */
-    public function setResources(Resources $resources)
+namespace Google\Service\CloudHealthcare {
+    class FhirFilter extends \Google\Model
     {
+        protected $resourcesType = Resources::class;
+        protected $resourcesDataType = '';
+        /**
+         * List of resources to include in the output. If this list is empty or not
+         * specified, all resources are included in the output.
+         *
+         * @param Resources $resources
+         */
+        public function setResources(Resources $resources)
+        {
+        }
+        /**
+         * @return Resources
+         */
+        public function getResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Resources
+     * Runtime class alias of \Google\Service\CloudHealthcare\FhirFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResources()
+    class Google_Service_CloudHealthcare_FhirFilter extends \Google\Service\CloudHealthcare\FhirFilter
     {
     }
 }

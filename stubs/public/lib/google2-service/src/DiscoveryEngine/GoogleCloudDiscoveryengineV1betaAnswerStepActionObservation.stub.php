@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaAnswerStepActionObservation extends \Google\Collection
-{
-    protected $collection_key = 'searchResults';
-    protected $searchResultsType = GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResult::class;
-    protected $searchResultsDataType = 'array';
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResult[]
-     */
-    public function setSearchResults($searchResults)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaAnswerStepActionObservation extends \Google\Collection
     {
+        protected $collection_key = 'searchResults';
+        protected $searchResultsType = GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResult::class;
+        protected $searchResultsDataType = 'array';
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResult[]
+         */
+        public function setSearchResults($searchResults)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResult[]
+         */
+        public function getSearchResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResult[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerStepActionObservation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSearchResults()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaAnswerStepActionObservation extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerStepActionObservation
     {
     }
 }

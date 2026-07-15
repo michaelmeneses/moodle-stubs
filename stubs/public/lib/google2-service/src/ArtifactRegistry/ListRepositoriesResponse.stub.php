@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class ListRepositoriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'repositories';
-    /**
-     * The token to retrieve the next page of repositories, or empty if there are
-     * no more repositories to return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $repositoriesType = Repository::class;
-    protected $repositoriesDataType = 'array';
-    /**
-     * The token to retrieve the next page of repositories, or empty if there are
-     * no more repositories to return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ArtifactRegistry {
+    class ListRepositoriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'repositories';
+        /**
+         * The token to retrieve the next page of repositories, or empty if there are
+         * no more repositories to return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $repositoriesType = Repository::class;
+        protected $repositoriesDataType = 'array';
+        /**
+         * The token to retrieve the next page of repositories, or empty if there are
+         * no more repositories to return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The repositories returned.
+         *
+         * @param Repository[] $repositories
+         */
+        public function setRepositories($repositories)
+        {
+        }
+        /**
+         * @return Repository[]
+         */
+        public function getRepositories()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ArtifactRegistry\ListRepositoriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The repositories returned.
-     *
-     * @param Repository[] $repositories
-     */
-    public function setRepositories($repositories)
-    {
-    }
-    /**
-     * @return Repository[]
-     */
-    public function getRepositories()
+    class Google_Service_ArtifactRegistry_ListRepositoriesResponse extends \Google\Service\ArtifactRegistry\ListRepositoriesResponse
     {
     }
 }

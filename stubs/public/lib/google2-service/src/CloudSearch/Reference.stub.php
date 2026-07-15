@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Reference extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $blobId;
-    /**
-     * @var string
-     */
-    public $contentType;
-    /**
-     * @var string
-     */
-    public $hash;
-    /**
-     * @var string
-     */
-    public $key;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $size;
-    /**
-     * @param string
-     */
-    public function setBlobId($blobId)
+namespace Google\Service\CloudSearch {
+    class Reference extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $blobId;
+        /**
+         * @var string
+         */
+        public $contentType;
+        /**
+         * @var string
+         */
+        public $hash;
+        /**
+         * @var string
+         */
+        public $key;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $size;
+        /**
+         * @param string
+         */
+        public function setBlobId($blobId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBlobId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setContentType($contentType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHash($hash)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHash()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSize($size)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\Reference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlobId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setContentType($contentType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContentType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHash($hash)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHash()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSize($size)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSize()
+    class Google_Service_CloudSearch_Reference extends \Google\Service\CloudSearch\Reference
     {
     }
 }

@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CustomSearchAPI;
-
-class PromotionBodyLines extends \Google\Model
-{
-    /**
-     * The block object's text in HTML, if it has text.
-     *
-     * @var string
-     */
-    public $htmlTitle;
-    /**
-     * The anchor text of the block object's link, if it has a link.
-     *
-     * @var string
-     */
-    public $link;
-    /**
-     * The block object's text, if it has text.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The URL of the block object's link, if it has one.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * The block object's text in HTML, if it has text.
-     *
-     * @param string $htmlTitle
-     */
-    public function setHtmlTitle($htmlTitle)
+namespace Google\Service\CustomSearchAPI {
+    class PromotionBodyLines extends \Google\Model
     {
+        /**
+         * The block object's text in HTML, if it has text.
+         *
+         * @var string
+         */
+        public $htmlTitle;
+        /**
+         * The anchor text of the block object's link, if it has a link.
+         *
+         * @var string
+         */
+        public $link;
+        /**
+         * The block object's text, if it has text.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The URL of the block object's link, if it has one.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * The block object's text in HTML, if it has text.
+         *
+         * @param string $htmlTitle
+         */
+        public function setHtmlTitle($htmlTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHtmlTitle()
+        {
+        }
+        /**
+         * The anchor text of the block object's link, if it has a link.
+         *
+         * @param string $link
+         */
+        public function setLink($link)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLink()
+        {
+        }
+        /**
+         * The block object's text, if it has text.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * The URL of the block object's link, if it has one.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CustomSearchAPI\PromotionBodyLines registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHtmlTitle()
-    {
-    }
-    /**
-     * The anchor text of the block object's link, if it has a link.
-     *
-     * @param string $link
-     */
-    public function setLink($link)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLink()
-    {
-    }
-    /**
-     * The block object's text, if it has text.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * The URL of the block object's link, if it has one.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_CustomSearchAPI_PromotionBodyLines extends \Google\Service\CustomSearchAPI\PromotionBodyLines
     {
     }
 }

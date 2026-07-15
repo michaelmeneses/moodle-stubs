@@ -21,122 +21,131 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class Border extends \Google\Model
-{
-    /**
-     * The style is not specified. Do not use this.
-     */
-    public const STYLE_STYLE_UNSPECIFIED = 'STYLE_UNSPECIFIED';
-    /**
-     * The border is dotted.
-     */
-    public const STYLE_DOTTED = 'DOTTED';
-    /**
-     * The border is dashed.
-     */
-    public const STYLE_DASHED = 'DASHED';
-    /**
-     * The border is a thin solid line.
-     */
-    public const STYLE_SOLID = 'SOLID';
-    /**
-     * The border is a medium solid line.
-     */
-    public const STYLE_SOLID_MEDIUM = 'SOLID_MEDIUM';
-    /**
-     * The border is a thick solid line.
-     */
-    public const STYLE_SOLID_THICK = 'SOLID_THICK';
-    /**
-     * No border. Used only when updating a border in order to erase it.
-     */
-    public const STYLE_NONE = 'NONE';
-    /**
-     * The border is two solid lines.
-     */
-    public const STYLE_DOUBLE = 'DOUBLE';
-    protected $colorType = Color::class;
-    protected $colorDataType = '';
-    protected $colorStyleType = ColorStyle::class;
-    protected $colorStyleDataType = '';
-    /**
-     * The style of the border.
-     *
-     * @var string
-     */
-    public $style;
-    /**
-     * The width of the border, in pixels. Deprecated; the width is determined by
-     * the "style" field.
-     *
-     * @deprecated
-     * @var int
-     */
-    public $width;
-    /**
-     * The color of the border. Deprecated: Use color_style.
-     *
-     * @deprecated
-     * @param Color $color
-     */
-    public function setColor(Color $color)
+namespace Google\Service\Sheets {
+    class Border extends \Google\Model
     {
+        /**
+         * The style is not specified. Do not use this.
+         */
+        public const STYLE_STYLE_UNSPECIFIED = 'STYLE_UNSPECIFIED';
+        /**
+         * The border is dotted.
+         */
+        public const STYLE_DOTTED = 'DOTTED';
+        /**
+         * The border is dashed.
+         */
+        public const STYLE_DASHED = 'DASHED';
+        /**
+         * The border is a thin solid line.
+         */
+        public const STYLE_SOLID = 'SOLID';
+        /**
+         * The border is a medium solid line.
+         */
+        public const STYLE_SOLID_MEDIUM = 'SOLID_MEDIUM';
+        /**
+         * The border is a thick solid line.
+         */
+        public const STYLE_SOLID_THICK = 'SOLID_THICK';
+        /**
+         * No border. Used only when updating a border in order to erase it.
+         */
+        public const STYLE_NONE = 'NONE';
+        /**
+         * The border is two solid lines.
+         */
+        public const STYLE_DOUBLE = 'DOUBLE';
+        protected $colorType = Color::class;
+        protected $colorDataType = '';
+        protected $colorStyleType = ColorStyle::class;
+        protected $colorStyleDataType = '';
+        /**
+         * The style of the border.
+         *
+         * @var string
+         */
+        public $style;
+        /**
+         * The width of the border, in pixels. Deprecated; the width is determined by
+         * the "style" field.
+         *
+         * @deprecated
+         * @var int
+         */
+        public $width;
+        /**
+         * The color of the border. Deprecated: Use color_style.
+         *
+         * @deprecated
+         * @param Color $color
+         */
+        public function setColor(Color $color)
+        {
+        }
+        /**
+         * @deprecated
+         * @return Color
+         */
+        public function getColor()
+        {
+        }
+        /**
+         * The color of the border. If color is also set, this field takes precedence.
+         *
+         * @param ColorStyle $colorStyle
+         */
+        public function setColorStyle(ColorStyle $colorStyle)
+        {
+        }
+        /**
+         * @return ColorStyle
+         */
+        public function getColorStyle()
+        {
+        }
+        /**
+         * The style of the border.
+         *
+         * Accepted values: STYLE_UNSPECIFIED, DOTTED, DASHED, SOLID, SOLID_MEDIUM,
+         * SOLID_THICK, NONE, DOUBLE
+         *
+         * @param self::STYLE_* $style
+         */
+        public function setStyle($style)
+        {
+        }
+        /**
+         * @return self::STYLE_*
+         */
+        public function getStyle()
+        {
+        }
+        /**
+         * The width of the border, in pixels. Deprecated; the width is determined by
+         * the "style" field.
+         *
+         * @deprecated
+         * @param int $width
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @deprecated
+         * @return int
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return Color
+     * Runtime class alias of \Google\Service\Sheets\Border registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColor()
-    {
-    }
-    /**
-     * The color of the border. If color is also set, this field takes precedence.
-     *
-     * @param ColorStyle $colorStyle
-     */
-    public function setColorStyle(ColorStyle $colorStyle)
-    {
-    }
-    /**
-     * @return ColorStyle
-     */
-    public function getColorStyle()
-    {
-    }
-    /**
-     * The style of the border.
-     *
-     * Accepted values: STYLE_UNSPECIFIED, DOTTED, DASHED, SOLID, SOLID_MEDIUM,
-     * SOLID_THICK, NONE, DOUBLE
-     *
-     * @param self::STYLE_* $style
-     */
-    public function setStyle($style)
-    {
-    }
-    /**
-     * @return self::STYLE_*
-     */
-    public function getStyle()
-    {
-    }
-    /**
-     * The width of the border, in pixels. Deprecated; the width is determined by
-     * the "style" field.
-     *
-     * @deprecated
-     * @param int $width
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @deprecated
-     * @return int
-     */
-    public function getWidth()
+    class Google_Service_Sheets_Border extends \Google\Service\Sheets\Border
     {
     }
 }

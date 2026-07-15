@@ -21,132 +21,141 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GoogleChatV1WidgetMarkupKeyValue extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $bottomLabel;
-    protected $buttonType = GoogleChatV1WidgetMarkupButton::class;
-    protected $buttonDataType = '';
-    /**
-     * @var string
-     */
-    public $content;
-    /**
-     * @var bool
-     */
-    public $contentMultiline;
-    /**
-     * @var string
-     */
-    public $icon;
-    /**
-     * @var string
-     */
-    public $iconUrl;
-    protected $onClickType = GoogleChatV1WidgetMarkupOnClick::class;
-    protected $onClickDataType = '';
-    /**
-     * @var string
-     */
-    public $topLabel;
-    /**
-     * @param string
-     */
-    public function setBottomLabel($bottomLabel)
+namespace Google\Service\CloudSearch {
+    class GoogleChatV1WidgetMarkupKeyValue extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $bottomLabel;
+        protected $buttonType = GoogleChatV1WidgetMarkupButton::class;
+        protected $buttonDataType = '';
+        /**
+         * @var string
+         */
+        public $content;
+        /**
+         * @var bool
+         */
+        public $contentMultiline;
+        /**
+         * @var string
+         */
+        public $icon;
+        /**
+         * @var string
+         */
+        public $iconUrl;
+        protected $onClickType = GoogleChatV1WidgetMarkupOnClick::class;
+        protected $onClickDataType = '';
+        /**
+         * @var string
+         */
+        public $topLabel;
+        /**
+         * @param string
+         */
+        public function setBottomLabel($bottomLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBottomLabel()
+        {
+        }
+        /**
+         * @param GoogleChatV1WidgetMarkupButton
+         */
+        public function setButton(GoogleChatV1WidgetMarkupButton $button)
+        {
+        }
+        /**
+         * @return GoogleChatV1WidgetMarkupButton
+         */
+        public function getButton()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setContentMultiline($contentMultiline)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getContentMultiline()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIcon($icon)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIcon()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIconUrl($iconUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIconUrl()
+        {
+        }
+        /**
+         * @param GoogleChatV1WidgetMarkupOnClick
+         */
+        public function setOnClick(GoogleChatV1WidgetMarkupOnClick $onClick)
+        {
+        }
+        /**
+         * @return GoogleChatV1WidgetMarkupOnClick
+         */
+        public function getOnClick()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTopLabel($topLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\GoogleChatV1WidgetMarkupKeyValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBottomLabel()
-    {
-    }
-    /**
-     * @param GoogleChatV1WidgetMarkupButton
-     */
-    public function setButton(GoogleChatV1WidgetMarkupButton $button)
-    {
-    }
-    /**
-     * @return GoogleChatV1WidgetMarkupButton
-     */
-    public function getButton()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setContent($content)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContent()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setContentMultiline($contentMultiline)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getContentMultiline()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIcon($icon)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIcon()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIconUrl($iconUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIconUrl()
-    {
-    }
-    /**
-     * @param GoogleChatV1WidgetMarkupOnClick
-     */
-    public function setOnClick(GoogleChatV1WidgetMarkupOnClick $onClick)
-    {
-    }
-    /**
-     * @return GoogleChatV1WidgetMarkupOnClick
-     */
-    public function getOnClick()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTopLabel($topLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopLabel()
+    class Google_Service_CloudSearch_GoogleChatV1WidgetMarkupKeyValue extends \Google\Service\CloudSearch\GoogleChatV1WidgetMarkupKeyValue
     {
     }
 }

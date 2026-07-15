@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class StorageDatabasecenterPartnerapiV1mainInternalResourceMetadata extends \Google\Model
-{
-    protected $backupConfigurationType = StorageDatabasecenterPartnerapiV1mainBackupConfiguration::class;
-    protected $backupConfigurationDataType = '';
-    protected $backupRunType = StorageDatabasecenterPartnerapiV1mainBackupRun::class;
-    protected $backupRunDataType = '';
-    /**
-     * Whether deletion protection is enabled for this internal resource.
-     *
-     * @var bool
-     */
-    public $isDeletionProtectionEnabled;
-    protected $productType = StorageDatabasecenterProtoCommonProduct::class;
-    protected $productDataType = '';
-    protected $resourceIdType = StorageDatabasecenterPartnerapiV1mainDatabaseResourceId::class;
-    protected $resourceIdDataType = '';
-    /**
-     * Required. internal resource name for spanner this will be database name
-     * e.g."spanner.googleapis.com/projects/123/abc/instances/inst1/databases/db1"
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * Backup configuration for this database
-     *
-     * @param StorageDatabasecenterPartnerapiV1mainBackupConfiguration $backupConfiguration
-     */
-    public function setBackupConfiguration(StorageDatabasecenterPartnerapiV1mainBackupConfiguration $backupConfiguration)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class StorageDatabasecenterPartnerapiV1mainInternalResourceMetadata extends \Google\Model
     {
+        protected $backupConfigurationType = StorageDatabasecenterPartnerapiV1mainBackupConfiguration::class;
+        protected $backupConfigurationDataType = '';
+        protected $backupRunType = StorageDatabasecenterPartnerapiV1mainBackupRun::class;
+        protected $backupRunDataType = '';
+        /**
+         * Whether deletion protection is enabled for this internal resource.
+         *
+         * @var bool
+         */
+        public $isDeletionProtectionEnabled;
+        protected $productType = StorageDatabasecenterProtoCommonProduct::class;
+        protected $productDataType = '';
+        protected $resourceIdType = StorageDatabasecenterPartnerapiV1mainDatabaseResourceId::class;
+        protected $resourceIdDataType = '';
+        /**
+         * Required. internal resource name for spanner this will be database name
+         * e.g."spanner.googleapis.com/projects/123/abc/instances/inst1/databases/db1"
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * Backup configuration for this database
+         *
+         * @param StorageDatabasecenterPartnerapiV1mainBackupConfiguration $backupConfiguration
+         */
+        public function setBackupConfiguration(StorageDatabasecenterPartnerapiV1mainBackupConfiguration $backupConfiguration)
+        {
+        }
+        /**
+         * @return StorageDatabasecenterPartnerapiV1mainBackupConfiguration
+         */
+        public function getBackupConfiguration()
+        {
+        }
+        /**
+         * Information about the last backup attempt for this database
+         *
+         * @param StorageDatabasecenterPartnerapiV1mainBackupRun $backupRun
+         */
+        public function setBackupRun(StorageDatabasecenterPartnerapiV1mainBackupRun $backupRun)
+        {
+        }
+        /**
+         * @return StorageDatabasecenterPartnerapiV1mainBackupRun
+         */
+        public function getBackupRun()
+        {
+        }
+        /**
+         * Whether deletion protection is enabled for this internal resource.
+         *
+         * @param bool $isDeletionProtectionEnabled
+         */
+        public function setIsDeletionProtectionEnabled($isDeletionProtectionEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsDeletionProtectionEnabled()
+        {
+        }
+        /**
+         * @param StorageDatabasecenterProtoCommonProduct $product
+         */
+        public function setProduct(StorageDatabasecenterProtoCommonProduct $product)
+        {
+        }
+        /**
+         * @return StorageDatabasecenterProtoCommonProduct
+         */
+        public function getProduct()
+        {
+        }
+        /**
+         * @param StorageDatabasecenterPartnerapiV1mainDatabaseResourceId $resourceId
+         */
+        public function setResourceId(StorageDatabasecenterPartnerapiV1mainDatabaseResourceId $resourceId)
+        {
+        }
+        /**
+         * @return StorageDatabasecenterPartnerapiV1mainDatabaseResourceId
+         */
+        public function getResourceId()
+        {
+        }
+        /**
+         * Required. internal resource name for spanner this will be database name
+         * e.g."spanner.googleapis.com/projects/123/abc/instances/inst1/databases/db1"
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StorageDatabasecenterPartnerapiV1mainBackupConfiguration
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\StorageDatabasecenterPartnerapiV1mainInternalResourceMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupConfiguration()
-    {
-    }
-    /**
-     * Information about the last backup attempt for this database
-     *
-     * @param StorageDatabasecenterPartnerapiV1mainBackupRun $backupRun
-     */
-    public function setBackupRun(StorageDatabasecenterPartnerapiV1mainBackupRun $backupRun)
-    {
-    }
-    /**
-     * @return StorageDatabasecenterPartnerapiV1mainBackupRun
-     */
-    public function getBackupRun()
-    {
-    }
-    /**
-     * Whether deletion protection is enabled for this internal resource.
-     *
-     * @param bool $isDeletionProtectionEnabled
-     */
-    public function setIsDeletionProtectionEnabled($isDeletionProtectionEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsDeletionProtectionEnabled()
-    {
-    }
-    /**
-     * @param StorageDatabasecenterProtoCommonProduct $product
-     */
-    public function setProduct(StorageDatabasecenterProtoCommonProduct $product)
-    {
-    }
-    /**
-     * @return StorageDatabasecenterProtoCommonProduct
-     */
-    public function getProduct()
-    {
-    }
-    /**
-     * @param StorageDatabasecenterPartnerapiV1mainDatabaseResourceId $resourceId
-     */
-    public function setResourceId(StorageDatabasecenterPartnerapiV1mainDatabaseResourceId $resourceId)
-    {
-    }
-    /**
-     * @return StorageDatabasecenterPartnerapiV1mainDatabaseResourceId
-     */
-    public function getResourceId()
-    {
-    }
-    /**
-     * Required. internal resource name for spanner this will be database name
-     * e.g."spanner.googleapis.com/projects/123/abc/instances/inst1/databases/db1"
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
+    class Google_Service_CloudAlloyDBAdmin_StorageDatabasecenterPartnerapiV1mainInternalResourceMetadata extends \Google\Service\CloudAlloyDBAdmin\StorageDatabasecenterPartnerapiV1mainInternalResourceMetadata
     {
     }
 }

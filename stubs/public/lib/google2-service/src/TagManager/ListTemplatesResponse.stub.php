@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class ListTemplatesResponse extends \Google\Collection
-{
-    protected $collection_key = 'template';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $templateType = CustomTemplate::class;
-    protected $templateDataType = 'array';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\TagManager {
+    class ListTemplatesResponse extends \Google\Collection
     {
+        protected $collection_key = 'template';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $templateType = CustomTemplate::class;
+        protected $templateDataType = 'array';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * All GTM Custom Templates of a GTM Container.
+         *
+         * @param CustomTemplate[] $template
+         */
+        public function setTemplate($template)
+        {
+        }
+        /**
+         * @return CustomTemplate[]
+         */
+        public function getTemplate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TagManager\ListTemplatesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * All GTM Custom Templates of a GTM Container.
-     *
-     * @param CustomTemplate[] $template
-     */
-    public function setTemplate($template)
-    {
-    }
-    /**
-     * @return CustomTemplate[]
-     */
-    public function getTemplate()
+    class Google_Service_TagManager_ListTemplatesResponse extends \Google\Service\TagManager\ListTemplatesResponse
     {
     }
 }

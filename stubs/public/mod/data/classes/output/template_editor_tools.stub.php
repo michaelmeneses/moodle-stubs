@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_data\output;
 
+use templatable;
+use renderable;
+use core_tag_tag;
+use mod_data\manager;
 /**
  * Renderable class for template editor tools.
  *

@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class GrafeasV1SlsaProvenance02SlsaInvocation extends \Google\Model
-{
-    protected $configSourceType = GrafeasV1SlsaProvenance02SlsaConfigSource::class;
-    protected $configSourceDataType = '';
-    /**
-     * @var array[]
-     */
-    public $environment;
-    /**
-     * @var array[]
-     */
-    public $parameters;
-    /**
-     * @param GrafeasV1SlsaProvenance02SlsaConfigSource
-     */
-    public function setConfigSource(GrafeasV1SlsaProvenance02SlsaConfigSource $configSource)
+namespace Google\Service\OnDemandScanning {
+    class GrafeasV1SlsaProvenance02SlsaInvocation extends \Google\Model
     {
+        protected $configSourceType = GrafeasV1SlsaProvenance02SlsaConfigSource::class;
+        protected $configSourceDataType = '';
+        /**
+         * @var array[]
+         */
+        public $environment;
+        /**
+         * @var array[]
+         */
+        public $parameters;
+        /**
+         * @param GrafeasV1SlsaProvenance02SlsaConfigSource
+         */
+        public function setConfigSource(GrafeasV1SlsaProvenance02SlsaConfigSource $configSource)
+        {
+        }
+        /**
+         * @return GrafeasV1SlsaProvenance02SlsaConfigSource
+         */
+        public function getConfigSource()
+        {
+        }
+        /**
+         * @param array[]
+         */
+        public function setEnvironment($environment)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * @param array[]
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GrafeasV1SlsaProvenance02SlsaConfigSource
+     * Runtime class alias of \Google\Service\OnDemandScanning\GrafeasV1SlsaProvenance02SlsaInvocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigSource()
-    {
-    }
-    /**
-     * @param array[]
-     */
-    public function setEnvironment($environment)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * @param array[]
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getParameters()
+    class Google_Service_OnDemandScanning_GrafeasV1SlsaProvenance02SlsaInvocation extends \Google\Service\OnDemandScanning\GrafeasV1SlsaProvenance02SlsaInvocation
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalAdminDrainedMachine extends \Google\Model
-{
-    /**
-     * Drained machine IP address.
-     *
-     * @var string
-     */
-    public $nodeIp;
-    /**
-     * Drained machine IP address.
-     *
-     * @param string $nodeIp
-     */
-    public function setNodeIp($nodeIp)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalAdminDrainedMachine extends \Google\Model
     {
+        /**
+         * Drained machine IP address.
+         *
+         * @var string
+         */
+        public $nodeIp;
+        /**
+         * Drained machine IP address.
+         *
+         * @param string $nodeIp
+         */
+        public function setNodeIp($nodeIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNodeIp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalAdminDrainedMachine registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNodeIp()
+    class Google_Service_GKEOnPrem_BareMetalAdminDrainedMachine extends \Google\Service\GKEOnPrem\BareMetalAdminDrainedMachine
     {
     }
 }

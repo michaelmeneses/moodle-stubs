@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\output;
 
+use renderable;
 /**
  * Represents a heading in the navigation panel.
  *

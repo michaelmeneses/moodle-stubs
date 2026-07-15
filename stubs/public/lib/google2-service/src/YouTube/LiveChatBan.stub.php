@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LiveChatBan extends \Google\Model
-{
-    /**
-     * Etag of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The ID that YouTube assigns to uniquely identify the ban.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"youtube#liveChatBan"`.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $snippetType = LiveChatBanSnippet::class;
-    protected $snippetDataType = '';
-    /**
-     * Etag of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\YouTube {
+    class LiveChatBan extends \Google\Model
     {
+        /**
+         * Etag of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The ID that YouTube assigns to uniquely identify the ban.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"youtube#liveChatBan"`.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $snippetType = LiveChatBanSnippet::class;
+        protected $snippetDataType = '';
+        /**
+         * Etag of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The ID that YouTube assigns to uniquely identify the ban.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"youtube#liveChatBan"`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The `snippet` object contains basic details about the ban.
+         *
+         * @param LiveChatBanSnippet $snippet
+         */
+        public function setSnippet(LiveChatBanSnippet $snippet)
+        {
+        }
+        /**
+         * @return LiveChatBanSnippet
+         */
+        public function getSnippet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\LiveChatBan registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * The ID that YouTube assigns to uniquely identify the ban.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"youtube#liveChatBan"`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The `snippet` object contains basic details about the ban.
-     *
-     * @param LiveChatBanSnippet $snippet
-     */
-    public function setSnippet(LiveChatBanSnippet $snippet)
-    {
-    }
-    /**
-     * @return LiveChatBanSnippet
-     */
-    public function getSnippet()
+    class Google_Service_YouTube_LiveChatBan extends \Google\Service\YouTube\LiveChatBan
     {
     }
 }

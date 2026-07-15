@@ -21,144 +21,153 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeatureViewSync extends \Google\Model
-{
-    /**
-     * Output only. Time when this FeatureViewSync is created. Creation of a
-     * FeatureViewSync means that the job is pending / waiting for sufficient
-     * resources but may not have started the actual data transfer yet.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $finalStatusType = GoogleRpcStatus::class;
-    protected $finalStatusDataType = '';
-    /**
-     * Identifier. Name of the FeatureViewSync. Format: `projects/{project}/locati
-     * ons/{location}/featureOnlineStores/{feature_online_store}/featureViews/{fea
-     * ture_view}/featureViewSyncs/{feature_view_sync}`
-     *
-     * @var string
-     */
-    public $name;
-    protected $runTimeType = GoogleTypeInterval::class;
-    protected $runTimeDataType = '';
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @var bool
-     */
-    public $satisfiesPzi;
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @var bool
-     */
-    public $satisfiesPzs;
-    protected $syncSummaryType = GoogleCloudAiplatformV1FeatureViewSyncSyncSummary::class;
-    protected $syncSummaryDataType = '';
-    /**
-     * Output only. Time when this FeatureViewSync is created. Creation of a
-     * FeatureViewSync means that the job is pending / waiting for sufficient
-     * resources but may not have started the actual data transfer yet.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeatureViewSync extends \Google\Model
     {
+        /**
+         * Output only. Time when this FeatureViewSync is created. Creation of a
+         * FeatureViewSync means that the job is pending / waiting for sufficient
+         * resources but may not have started the actual data transfer yet.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $finalStatusType = GoogleRpcStatus::class;
+        protected $finalStatusDataType = '';
+        /**
+         * Identifier. Name of the FeatureViewSync. Format: `projects/{project}/locati
+         * ons/{location}/featureOnlineStores/{feature_online_store}/featureViews/{fea
+         * ture_view}/featureViewSyncs/{feature_view_sync}`
+         *
+         * @var string
+         */
+        public $name;
+        protected $runTimeType = GoogleTypeInterval::class;
+        protected $runTimeDataType = '';
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @var bool
+         */
+        public $satisfiesPzi;
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @var bool
+         */
+        public $satisfiesPzs;
+        protected $syncSummaryType = GoogleCloudAiplatformV1FeatureViewSyncSyncSummary::class;
+        protected $syncSummaryDataType = '';
+        /**
+         * Output only. Time when this FeatureViewSync is created. Creation of a
+         * FeatureViewSync means that the job is pending / waiting for sufficient
+         * resources but may not have started the actual data transfer yet.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. Final status of the FeatureViewSync.
+         *
+         * @param GoogleRpcStatus $finalStatus
+         */
+        public function setFinalStatus(GoogleRpcStatus $finalStatus)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getFinalStatus()
+        {
+        }
+        /**
+         * Identifier. Name of the FeatureViewSync. Format: `projects/{project}/locati
+         * ons/{location}/featureOnlineStores/{feature_online_store}/featureViews/{fea
+         * ture_view}/featureViewSyncs/{feature_view_sync}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Time when this FeatureViewSync is finished.
+         *
+         * @param GoogleTypeInterval $runTime
+         */
+        public function setRunTime(GoogleTypeInterval $runTime)
+        {
+        }
+        /**
+         * @return GoogleTypeInterval
+         */
+        public function getRunTime()
+        {
+        }
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @param bool $satisfiesPzi
+         */
+        public function setSatisfiesPzi($satisfiesPzi)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSatisfiesPzi()
+        {
+        }
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @param bool $satisfiesPzs
+         */
+        public function setSatisfiesPzs($satisfiesPzs)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSatisfiesPzs()
+        {
+        }
+        /**
+         * Output only. Summary of the sync job.
+         *
+         * @param GoogleCloudAiplatformV1FeatureViewSyncSyncSummary $syncSummary
+         */
+        public function setSyncSummary(GoogleCloudAiplatformV1FeatureViewSyncSyncSummary $syncSummary)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeatureViewSyncSyncSummary
+         */
+        public function getSyncSummary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewSync registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. Final status of the FeatureViewSync.
-     *
-     * @param GoogleRpcStatus $finalStatus
-     */
-    public function setFinalStatus(GoogleRpcStatus $finalStatus)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getFinalStatus()
-    {
-    }
-    /**
-     * Identifier. Name of the FeatureViewSync. Format: `projects/{project}/locati
-     * ons/{location}/featureOnlineStores/{feature_online_store}/featureViews/{fea
-     * ture_view}/featureViewSyncs/{feature_view_sync}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Time when this FeatureViewSync is finished.
-     *
-     * @param GoogleTypeInterval $runTime
-     */
-    public function setRunTime(GoogleTypeInterval $runTime)
-    {
-    }
-    /**
-     * @return GoogleTypeInterval
-     */
-    public function getRunTime()
-    {
-    }
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @param bool $satisfiesPzi
-     */
-    public function setSatisfiesPzi($satisfiesPzi)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSatisfiesPzi()
-    {
-    }
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @param bool $satisfiesPzs
-     */
-    public function setSatisfiesPzs($satisfiesPzs)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSatisfiesPzs()
-    {
-    }
-    /**
-     * Output only. Summary of the sync job.
-     *
-     * @param GoogleCloudAiplatformV1FeatureViewSyncSyncSummary $syncSummary
-     */
-    public function setSyncSummary(GoogleCloudAiplatformV1FeatureViewSyncSyncSummary $syncSummary)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FeatureViewSyncSyncSummary
-     */
-    public function getSyncSummary()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeatureViewSync extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewSync
     {
     }
 }

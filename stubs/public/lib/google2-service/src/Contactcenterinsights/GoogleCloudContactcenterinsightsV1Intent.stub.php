@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1Intent extends \Google\Model
-{
-    /**
-     * The human-readable name of the intent.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The unique identifier of the intent.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The human-readable name of the intent.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1Intent extends \Google\Model
     {
+        /**
+         * The human-readable name of the intent.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The unique identifier of the intent.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The human-readable name of the intent.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The unique identifier of the intent.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1Intent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The unique identifier of the intent.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1Intent extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1Intent
     {
     }
 }

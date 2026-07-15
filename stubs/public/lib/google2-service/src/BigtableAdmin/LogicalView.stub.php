@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class LogicalView extends \Google\Model
-{
-    /**
-     * Optional. Set to true to make the LogicalView protected against deletion.
-     *
-     * @var bool
-     */
-    public $deletionProtection;
-    /**
-     * Optional. The etag for this logical view. This may be sent on update
-     * requests to ensure that the client has an up-to-date value before
-     * proceeding. The server returns an ABORTED error on a mismatched etag.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Identifier. The unique name of the logical view. Format:
-     * `projects/{project}/instances/{instance}/logicalViews/{logical_view}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The logical view's select query.
-     *
-     * @var string
-     */
-    public $query;
-    /**
-     * Optional. Set to true to make the LogicalView protected against deletion.
-     *
-     * @param bool $deletionProtection
-     */
-    public function setDeletionProtection($deletionProtection)
+namespace Google\Service\BigtableAdmin {
+    class LogicalView extends \Google\Model
     {
+        /**
+         * Optional. Set to true to make the LogicalView protected against deletion.
+         *
+         * @var bool
+         */
+        public $deletionProtection;
+        /**
+         * Optional. The etag for this logical view. This may be sent on update
+         * requests to ensure that the client has an up-to-date value before
+         * proceeding. The server returns an ABORTED error on a mismatched etag.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Identifier. The unique name of the logical view. Format:
+         * `projects/{project}/instances/{instance}/logicalViews/{logical_view}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The logical view's select query.
+         *
+         * @var string
+         */
+        public $query;
+        /**
+         * Optional. Set to true to make the LogicalView protected against deletion.
+         *
+         * @param bool $deletionProtection
+         */
+        public function setDeletionProtection($deletionProtection)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeletionProtection()
+        {
+        }
+        /**
+         * Optional. The etag for this logical view. This may be sent on update
+         * requests to ensure that the client has an up-to-date value before
+         * proceeding. The server returns an ABORTED error on a mismatched etag.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Identifier. The unique name of the logical view. Format:
+         * `projects/{project}/instances/{instance}/logicalViews/{logical_view}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. The logical view's select query.
+         *
+         * @param string $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\BigtableAdmin\LogicalView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeletionProtection()
-    {
-    }
-    /**
-     * Optional. The etag for this logical view. This may be sent on update
-     * requests to ensure that the client has an up-to-date value before
-     * proceeding. The server returns an ABORTED error on a mismatched etag.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Identifier. The unique name of the logical view. Format:
-     * `projects/{project}/instances/{instance}/logicalViews/{logical_view}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. The logical view's select query.
-     *
-     * @param string $query
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuery()
+    class Google_Service_BigtableAdmin_LogicalView extends \Google\Service\BigtableAdmin\LogicalView
     {
     }
 }

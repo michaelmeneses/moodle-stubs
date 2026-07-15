@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Meet;
-
-class SmartNotesConfig extends \Google\Model
-{
-    /**
-     * Default value specified by user policy. This should never be returned.
-     */
-    public const AUTO_SMART_NOTES_GENERATION_AUTO_GENERATION_TYPE_UNSPECIFIED = 'AUTO_GENERATION_TYPE_UNSPECIFIED';
-    /**
-     * The artifact is generated automatically.
-     */
-    public const AUTO_SMART_NOTES_GENERATION_ON = 'ON';
-    /**
-     * The artifact is not generated automatically.
-     */
-    public const AUTO_SMART_NOTES_GENERATION_OFF = 'OFF';
-    /**
-     * Defines whether to automatically generate a summary and recap of the
-     * meeting for all invitees in the organization when someone with the
-     * privilege to enable smart notes joins the meeting.
-     *
-     * @var string
-     */
-    public $autoSmartNotesGeneration;
-    /**
-     * Defines whether to automatically generate a summary and recap of the
-     * meeting for all invitees in the organization when someone with the
-     * privilege to enable smart notes joins the meeting.
-     *
-     * Accepted values: AUTO_GENERATION_TYPE_UNSPECIFIED, ON, OFF
-     *
-     * @param self::AUTO_SMART_NOTES_GENERATION_* $autoSmartNotesGeneration
-     */
-    public function setAutoSmartNotesGeneration($autoSmartNotesGeneration)
+namespace Google\Service\Meet {
+    class SmartNotesConfig extends \Google\Model
     {
+        /**
+         * Default value specified by user policy. This should never be returned.
+         */
+        public const AUTO_SMART_NOTES_GENERATION_AUTO_GENERATION_TYPE_UNSPECIFIED = 'AUTO_GENERATION_TYPE_UNSPECIFIED';
+        /**
+         * The artifact is generated automatically.
+         */
+        public const AUTO_SMART_NOTES_GENERATION_ON = 'ON';
+        /**
+         * The artifact is not generated automatically.
+         */
+        public const AUTO_SMART_NOTES_GENERATION_OFF = 'OFF';
+        /**
+         * Defines whether to automatically generate a summary and recap of the
+         * meeting for all invitees in the organization when someone with the
+         * privilege to enable smart notes joins the meeting.
+         *
+         * @var string
+         */
+        public $autoSmartNotesGeneration;
+        /**
+         * Defines whether to automatically generate a summary and recap of the
+         * meeting for all invitees in the organization when someone with the
+         * privilege to enable smart notes joins the meeting.
+         *
+         * Accepted values: AUTO_GENERATION_TYPE_UNSPECIFIED, ON, OFF
+         *
+         * @param self::AUTO_SMART_NOTES_GENERATION_* $autoSmartNotesGeneration
+         */
+        public function setAutoSmartNotesGeneration($autoSmartNotesGeneration)
+        {
+        }
+        /**
+         * @return self::AUTO_SMART_NOTES_GENERATION_*
+         */
+        public function getAutoSmartNotesGeneration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::AUTO_SMART_NOTES_GENERATION_*
+     * Runtime class alias of \Google\Service\Meet\SmartNotesConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoSmartNotesGeneration()
+    class Google_Service_Meet_SmartNotesConfig extends \Google\Service\Meet\SmartNotesConfig
     {
     }
 }

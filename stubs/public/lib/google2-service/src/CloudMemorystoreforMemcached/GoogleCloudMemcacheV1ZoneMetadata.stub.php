@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMemorystoreforMemcached;
-
-class GoogleCloudMemcacheV1ZoneMetadata extends \Google\Model
-{
+namespace Google\Service\CloudMemorystoreforMemcached {
+    class GoogleCloudMemcacheV1ZoneMetadata extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudMemorystoreforMemcached\GoogleCloudMemcacheV1ZoneMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudMemorystoreforMemcached_GoogleCloudMemcacheV1ZoneMetadata extends \Google\Service\CloudMemorystoreforMemcached\GoogleCloudMemcacheV1ZoneMetadata
+    {
+    }
 }

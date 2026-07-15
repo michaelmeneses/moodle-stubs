@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1PurchasableSku extends \Google\Model
-{
-    protected $skuType = GoogleCloudChannelV1Sku::class;
-    protected $skuDataType = '';
-    /**
-     * SKU
-     *
-     * @param GoogleCloudChannelV1Sku $sku
-     */
-    public function setSku(GoogleCloudChannelV1Sku $sku)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1PurchasableSku extends \Google\Model
     {
+        protected $skuType = GoogleCloudChannelV1Sku::class;
+        protected $skuDataType = '';
+        /**
+         * SKU
+         *
+         * @param GoogleCloudChannelV1Sku $sku
+         */
+        public function setSku(GoogleCloudChannelV1Sku $sku)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1Sku
+         */
+        public function getSku()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1Sku
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1PurchasableSku registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSku()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1PurchasableSku extends \Google\Service\Cloudchannel\GoogleCloudChannelV1PurchasableSku
     {
     }
 }

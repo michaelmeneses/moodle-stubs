@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class StartMigrationRequest extends \Google\Model
-{
-    protected $migrationExecutionType = MigrationExecution::class;
-    protected $migrationExecutionDataType = '';
-    /**
-     * @var string
-     */
-    public $requestId;
-    /**
-     * @param MigrationExecution
-     */
-    public function setMigrationExecution(MigrationExecution $migrationExecution)
+namespace Google\Service\DataprocMetastore {
+    class StartMigrationRequest extends \Google\Model
     {
+        protected $migrationExecutionType = MigrationExecution::class;
+        protected $migrationExecutionDataType = '';
+        /**
+         * @var string
+         */
+        public $requestId;
+        /**
+         * @param MigrationExecution
+         */
+        public function setMigrationExecution(MigrationExecution $migrationExecution)
+        {
+        }
+        /**
+         * @return MigrationExecution
+         */
+        public function getMigrationExecution()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MigrationExecution
+     * Runtime class alias of \Google\Service\DataprocMetastore\StartMigrationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMigrationExecution()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
+    class Google_Service_DataprocMetastore_StartMigrationRequest extends \Google\Service\DataprocMetastore\StartMigrationRequest
     {
     }
 }

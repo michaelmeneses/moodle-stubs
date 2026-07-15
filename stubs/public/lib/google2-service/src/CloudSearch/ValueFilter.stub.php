@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ValueFilter extends \Google\Model
-{
-    /**
-     * The `operator_name` applied to the query, such as *price_greater_than*. The
-     * filter can work against both types of filters defined in the schema for
-     * your data source: 1. `operator_name`, where the query filters results by
-     * the property that matches the value. 2. `greater_than_operator_name` or
-     * `less_than_operator_name` in your schema. The query filters the results for
-     * the property values that are greater than or less than the supplied value
-     * in the query.
-     *
-     * @var string
-     */
-    public $operatorName;
-    protected $valueType = Value::class;
-    protected $valueDataType = '';
-    /**
-     * The `operator_name` applied to the query, such as *price_greater_than*. The
-     * filter can work against both types of filters defined in the schema for
-     * your data source: 1. `operator_name`, where the query filters results by
-     * the property that matches the value. 2. `greater_than_operator_name` or
-     * `less_than_operator_name` in your schema. The query filters the results for
-     * the property values that are greater than or less than the supplied value
-     * in the query.
-     *
-     * @param string $operatorName
-     */
-    public function setOperatorName($operatorName)
+namespace Google\Service\CloudSearch {
+    class ValueFilter extends \Google\Model
     {
+        /**
+         * The `operator_name` applied to the query, such as *price_greater_than*. The
+         * filter can work against both types of filters defined in the schema for
+         * your data source: 1. `operator_name`, where the query filters results by
+         * the property that matches the value. 2. `greater_than_operator_name` or
+         * `less_than_operator_name` in your schema. The query filters the results for
+         * the property values that are greater than or less than the supplied value
+         * in the query.
+         *
+         * @var string
+         */
+        public $operatorName;
+        protected $valueType = Value::class;
+        protected $valueDataType = '';
+        /**
+         * The `operator_name` applied to the query, such as *price_greater_than*. The
+         * filter can work against both types of filters defined in the schema for
+         * your data source: 1. `operator_name`, where the query filters results by
+         * the property that matches the value. 2. `greater_than_operator_name` or
+         * `less_than_operator_name` in your schema. The query filters the results for
+         * the property values that are greater than or less than the supplied value
+         * in the query.
+         *
+         * @param string $operatorName
+         */
+        public function setOperatorName($operatorName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperatorName()
+        {
+        }
+        /**
+         * The value to be compared with.
+         *
+         * @param Value $value
+         */
+        public function setValue(Value $value)
+        {
+        }
+        /**
+         * @return Value
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\ValueFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperatorName()
-    {
-    }
-    /**
-     * The value to be compared with.
-     *
-     * @param Value $value
-     */
-    public function setValue(Value $value)
-    {
-    }
-    /**
-     * @return Value
-     */
-    public function getValue()
+    class Google_Service_CloudSearch_ValueFilter extends \Google\Service\CloudSearch\ValueFilter
     {
     }
 }

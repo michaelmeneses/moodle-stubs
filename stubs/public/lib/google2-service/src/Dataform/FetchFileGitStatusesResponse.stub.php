@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class FetchFileGitStatusesResponse extends \Google\Collection
-{
-    protected $collection_key = 'uncommittedFileChanges';
-    protected $uncommittedFileChangesType = UncommittedFileChange::class;
-    protected $uncommittedFileChangesDataType = 'array';
-    /**
-     * A list of all files which have uncommitted Git changes. There will only be
-     * a single entry for any given file.
-     *
-     * @param UncommittedFileChange[] $uncommittedFileChanges
-     */
-    public function setUncommittedFileChanges($uncommittedFileChanges)
+namespace Google\Service\Dataform {
+    class FetchFileGitStatusesResponse extends \Google\Collection
     {
+        protected $collection_key = 'uncommittedFileChanges';
+        protected $uncommittedFileChangesType = UncommittedFileChange::class;
+        protected $uncommittedFileChangesDataType = 'array';
+        /**
+         * A list of all files which have uncommitted Git changes. There will only be
+         * a single entry for any given file.
+         *
+         * @param UncommittedFileChange[] $uncommittedFileChanges
+         */
+        public function setUncommittedFileChanges($uncommittedFileChanges)
+        {
+        }
+        /**
+         * @return UncommittedFileChange[]
+         */
+        public function getUncommittedFileChanges()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UncommittedFileChange[]
+     * Runtime class alias of \Google\Service\Dataform\FetchFileGitStatusesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUncommittedFileChanges()
+    class Google_Service_Dataform_FetchFileGitStatusesResponse extends \Google\Service\Dataform\FetchFileGitStatusesResponse
     {
     }
 }

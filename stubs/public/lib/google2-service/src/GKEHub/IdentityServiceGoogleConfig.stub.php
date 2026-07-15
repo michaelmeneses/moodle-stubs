@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class IdentityServiceGoogleConfig extends \Google\Model
-{
-    /**
-     * Disable automatic configuration of Google Plugin on supported platforms.
-     *
-     * @var bool
-     */
-    public $disable;
-    /**
-     * Disable automatic configuration of Google Plugin on supported platforms.
-     *
-     * @param bool $disable
-     */
-    public function setDisable($disable)
+namespace Google\Service\GKEHub {
+    class IdentityServiceGoogleConfig extends \Google\Model
     {
+        /**
+         * Disable automatic configuration of Google Plugin on supported platforms.
+         *
+         * @var bool
+         */
+        public $disable;
+        /**
+         * Disable automatic configuration of Google Plugin on supported platforms.
+         *
+         * @param bool $disable
+         */
+        public function setDisable($disable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GKEHub\IdentityServiceGoogleConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisable()
+    class Google_Service_GKEHub_IdentityServiceGoogleConfig extends \Google\Service\GKEHub\IdentityServiceGoogleConfig
     {
     }
 }

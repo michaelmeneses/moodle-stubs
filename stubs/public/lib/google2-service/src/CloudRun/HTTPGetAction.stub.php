@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class HTTPGetAction extends \Google\Collection
-{
-    protected $collection_key = 'httpHeaders';
-    /**
-     * @var string
-     */
-    public $host;
-    protected $httpHeadersType = HTTPHeader::class;
-    protected $httpHeadersDataType = 'array';
-    /**
-     * @var string
-     */
-    public $path;
-    /**
-     * @var string
-     */
-    public $scheme;
-    /**
-     * @param string
-     */
-    public function setHost($host)
+namespace Google\Service\CloudRun {
+    class HTTPGetAction extends \Google\Collection
     {
+        protected $collection_key = 'httpHeaders';
+        /**
+         * @var string
+         */
+        public $host;
+        protected $httpHeadersType = HTTPHeader::class;
+        protected $httpHeadersDataType = 'array';
+        /**
+         * @var string
+         */
+        public $path;
+        /**
+         * @var string
+         */
+        public $scheme;
+        /**
+         * @param string
+         */
+        public function setHost($host)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHost()
+        {
+        }
+        /**
+         * @param HTTPHeader[]
+         */
+        public function setHttpHeaders($httpHeaders)
+        {
+        }
+        /**
+         * @return HTTPHeader[]
+         */
+        public function getHttpHeaders()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setScheme($scheme)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScheme()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\HTTPGetAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHost()
-    {
-    }
-    /**
-     * @param HTTPHeader[]
-     */
-    public function setHttpHeaders($httpHeaders)
-    {
-    }
-    /**
-     * @return HTTPHeader[]
-     */
-    public function getHttpHeaders()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setScheme($scheme)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScheme()
+    class Google_Service_CloudRun_HTTPGetAction extends \Google\Service\CloudRun\HTTPGetAction
     {
     }
 }

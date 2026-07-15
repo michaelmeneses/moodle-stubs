@@ -21,53 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger\Resource;
-
-/**
- * The "postUserInfos" collection of methods.
- * Typical usage is:
- *  <code>
- *   $bloggerService = new Google\Service\Blogger(...);
- *   $postUserInfos = $bloggerService->postUserInfos;
- *  </code>
- */
-class PostUserInfos extends \Google\Service\Resource
-{
+namespace Google\Service\Blogger\Resource {
+    use Google\Service\Blogger\PostUserInfo;
+    use Google\Service\Blogger\PostUserInfosList;
     /**
-     * Gets one post and user info pair, by post_id and user_id. (postUserInfos.get)
-     *
-     * @param string $userId
-     * @param string $blogId
-     * @param string $postId
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string maxComments
-     * @return PostUserInfo
-     * @throws \Google\Service\Exception
+     * The "postUserInfos" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $bloggerService = new Google\Service\Blogger(...);
+     *   $postUserInfos = $bloggerService->postUserInfos;
+     *  </code>
      */
-    public function get($userId, $blogId, $postId, $optParams = [])
+    class PostUserInfos extends \Google\Service\Resource
     {
+        /**
+         * Gets one post and user info pair, by post_id and user_id. (postUserInfos.get)
+         *
+         * @param string $userId
+         * @param string $blogId
+         * @param string $postId
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string maxComments
+         * @return PostUserInfo
+         * @throws \Google\Service\Exception
+         */
+        public function get($userId, $blogId, $postId, $optParams = [])
+        {
+        }
+        /**
+         * Lists post and user info pairs. (postUserInfos.listPostUserInfos)
+         *
+         * @param string $userId
+         * @param string $blogId
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string endDate
+         * @opt_param bool fetchBodies
+         * @opt_param string labels
+         * @opt_param string maxResults
+         * @opt_param string orderBy
+         * @opt_param string pageToken
+         * @opt_param string startDate
+         * @opt_param string status
+         * @opt_param string view
+         * @return PostUserInfosList
+         * @throws \Google\Service\Exception
+         */
+        public function listPostUserInfos($userId, $blogId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists post and user info pairs. (postUserInfos.listPostUserInfos)
-     *
-     * @param string $userId
-     * @param string $blogId
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string endDate
-     * @opt_param bool fetchBodies
-     * @opt_param string labels
-     * @opt_param string maxResults
-     * @opt_param string orderBy
-     * @opt_param string pageToken
-     * @opt_param string startDate
-     * @opt_param string status
-     * @opt_param string view
-     * @return PostUserInfosList
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Blogger\Resource\PostUserInfos registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listPostUserInfos($userId, $blogId, $optParams = [])
+    class Google_Service_Blogger_Resource_PostUserInfos extends \Google\Service\Blogger\Resource\PostUserInfos
     {
     }
 }

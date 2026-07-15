@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DuplicateFilterViewResponse extends \Google\Model
-{
-    protected $filterType = FilterView::class;
-    protected $filterDataType = '';
-    /**
-     * The newly created filter.
-     *
-     * @param FilterView $filter
-     */
-    public function setFilter(FilterView $filter)
+namespace Google\Service\Sheets {
+    class DuplicateFilterViewResponse extends \Google\Model
     {
+        protected $filterType = FilterView::class;
+        protected $filterDataType = '';
+        /**
+         * The newly created filter.
+         *
+         * @param FilterView $filter
+         */
+        public function setFilter(FilterView $filter)
+        {
+        }
+        /**
+         * @return FilterView
+         */
+        public function getFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FilterView
+     * Runtime class alias of \Google\Service\Sheets\DuplicateFilterViewResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
+    class Google_Service_Sheets_DuplicateFilterViewResponse extends \Google\Service\Sheets\DuplicateFilterViewResponse
     {
     }
 }

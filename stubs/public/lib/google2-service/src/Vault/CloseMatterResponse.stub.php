@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class CloseMatterResponse extends \Google\Model
-{
-    protected $matterType = Matter::class;
-    protected $matterDataType = '';
-    /**
-     * The updated matter, with state **CLOSED**.
-     *
-     * @param Matter $matter
-     */
-    public function setMatter(Matter $matter)
+namespace Google\Service\Vault {
+    class CloseMatterResponse extends \Google\Model
     {
+        protected $matterType = Matter::class;
+        protected $matterDataType = '';
+        /**
+         * The updated matter, with state **CLOSED**.
+         *
+         * @param Matter $matter
+         */
+        public function setMatter(Matter $matter)
+        {
+        }
+        /**
+         * @return Matter
+         */
+        public function getMatter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Matter
+     * Runtime class alias of \Google\Service\Vault\CloseMatterResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMatter()
+    class Google_Service_Vault_CloseMatterResponse extends \Google\Service\Vault\CloseMatterResponse
     {
     }
 }

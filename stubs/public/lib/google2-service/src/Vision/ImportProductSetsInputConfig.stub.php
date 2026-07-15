@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class ImportProductSetsInputConfig extends \Google\Model
-{
-    protected $gcsSourceType = ImportProductSetsGcsSource::class;
-    protected $gcsSourceDataType = '';
-    /**
-     * The Google Cloud Storage location for a csv file which preserves a list of
-     * ImportProductSetRequests in each line.
-     *
-     * @param ImportProductSetsGcsSource $gcsSource
-     */
-    public function setGcsSource(ImportProductSetsGcsSource $gcsSource)
+namespace Google\Service\Vision {
+    class ImportProductSetsInputConfig extends \Google\Model
     {
+        protected $gcsSourceType = ImportProductSetsGcsSource::class;
+        protected $gcsSourceDataType = '';
+        /**
+         * The Google Cloud Storage location for a csv file which preserves a list of
+         * ImportProductSetRequests in each line.
+         *
+         * @param ImportProductSetsGcsSource $gcsSource
+         */
+        public function setGcsSource(ImportProductSetsGcsSource $gcsSource)
+        {
+        }
+        /**
+         * @return ImportProductSetsGcsSource
+         */
+        public function getGcsSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ImportProductSetsGcsSource
+     * Runtime class alias of \Google\Service\Vision\ImportProductSetsInputConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsSource()
+    class Google_Service_Vision_ImportProductSetsInputConfig extends \Google\Service\Vision\ImportProductSetsInputConfig
     {
     }
 }

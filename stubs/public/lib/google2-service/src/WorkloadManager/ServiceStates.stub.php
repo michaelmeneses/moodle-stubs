@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class ServiceStates extends \Google\Collection
-{
-    /**
-     * The state is unspecified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The state means the service has config errors.
-     */
-    public const STATE_CONFIG_FAILURE = 'CONFIG_FAILURE';
-    /**
-     * The state means the service has IAM permission errors.
-     */
-    public const STATE_IAM_FAILURE = 'IAM_FAILURE';
-    /**
-     * The state means the service has functionality errors.
-     */
-    public const STATE_FUNCTIONALITY_FAILURE = 'FUNCTIONALITY_FAILURE';
-    /**
-     * The state means the service has no error.
-     */
-    public const STATE_ENABLED = 'ENABLED';
-    /**
-     * The state means the service disabled.
-     */
-    public const STATE_DISABLED = 'DISABLED';
-    protected $collection_key = 'iamPermissions';
-    protected $iamPermissionsType = IAMPermission::class;
-    protected $iamPermissionsDataType = 'array';
-    /**
-     * Output only. The overall state of the service.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Optional. Output only. The IAM permissions for the service.
-     *
-     * @param IAMPermission[] $iamPermissions
-     */
-    public function setIamPermissions($iamPermissions)
+namespace Google\Service\WorkloadManager {
+    class ServiceStates extends \Google\Collection
     {
+        /**
+         * The state is unspecified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The state means the service has config errors.
+         */
+        public const STATE_CONFIG_FAILURE = 'CONFIG_FAILURE';
+        /**
+         * The state means the service has IAM permission errors.
+         */
+        public const STATE_IAM_FAILURE = 'IAM_FAILURE';
+        /**
+         * The state means the service has functionality errors.
+         */
+        public const STATE_FUNCTIONALITY_FAILURE = 'FUNCTIONALITY_FAILURE';
+        /**
+         * The state means the service has no error.
+         */
+        public const STATE_ENABLED = 'ENABLED';
+        /**
+         * The state means the service disabled.
+         */
+        public const STATE_DISABLED = 'DISABLED';
+        protected $collection_key = 'iamPermissions';
+        protected $iamPermissionsType = IAMPermission::class;
+        protected $iamPermissionsDataType = 'array';
+        /**
+         * Output only. The overall state of the service.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Optional. Output only. The IAM permissions for the service.
+         *
+         * @param IAMPermission[] $iamPermissions
+         */
+        public function setIamPermissions($iamPermissions)
+        {
+        }
+        /**
+         * @return IAMPermission[]
+         */
+        public function getIamPermissions()
+        {
+        }
+        /**
+         * Output only. The overall state of the service.
+         *
+         * Accepted values: STATE_UNSPECIFIED, CONFIG_FAILURE, IAM_FAILURE,
+         * FUNCTIONALITY_FAILURE, ENABLED, DISABLED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IAMPermission[]
+     * Runtime class alias of \Google\Service\WorkloadManager\ServiceStates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIamPermissions()
-    {
-    }
-    /**
-     * Output only. The overall state of the service.
-     *
-     * Accepted values: STATE_UNSPECIFIED, CONFIG_FAILURE, IAM_FAILURE,
-     * FUNCTIONALITY_FAILURE, ENABLED, DISABLED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_WorkloadManager_ServiceStates extends \Google\Service\WorkloadManager\ServiceStates
     {
     }
 }

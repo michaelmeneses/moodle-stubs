@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta1DocumentPageToken extends \Google\Collection
-{
-    protected $collection_key = 'detectedLanguages';
-    protected $detectedBreakType = GoogleCloudDocumentaiV1beta1DocumentPageTokenDetectedBreak::class;
-    protected $detectedBreakDataType = '';
-    protected $detectedLanguagesType = GoogleCloudDocumentaiV1beta1DocumentPageDetectedLanguage::class;
-    protected $detectedLanguagesDataType = 'array';
-    protected $layoutType = GoogleCloudDocumentaiV1beta1DocumentPageLayout::class;
-    protected $layoutDataType = '';
-    protected $provenanceType = GoogleCloudDocumentaiV1beta1DocumentProvenance::class;
-    protected $provenanceDataType = '';
-    protected $styleInfoType = GoogleCloudDocumentaiV1beta1DocumentPageTokenStyleInfo::class;
-    protected $styleInfoDataType = '';
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentPageTokenDetectedBreak
-     */
-    public function setDetectedBreak(GoogleCloudDocumentaiV1beta1DocumentPageTokenDetectedBreak $detectedBreak)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta1DocumentPageToken extends \Google\Collection
     {
+        protected $collection_key = 'detectedLanguages';
+        protected $detectedBreakType = GoogleCloudDocumentaiV1beta1DocumentPageTokenDetectedBreak::class;
+        protected $detectedBreakDataType = '';
+        protected $detectedLanguagesType = GoogleCloudDocumentaiV1beta1DocumentPageDetectedLanguage::class;
+        protected $detectedLanguagesDataType = 'array';
+        protected $layoutType = GoogleCloudDocumentaiV1beta1DocumentPageLayout::class;
+        protected $layoutDataType = '';
+        protected $provenanceType = GoogleCloudDocumentaiV1beta1DocumentProvenance::class;
+        protected $provenanceDataType = '';
+        protected $styleInfoType = GoogleCloudDocumentaiV1beta1DocumentPageTokenStyleInfo::class;
+        protected $styleInfoDataType = '';
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentPageTokenDetectedBreak
+         */
+        public function setDetectedBreak(GoogleCloudDocumentaiV1beta1DocumentPageTokenDetectedBreak $detectedBreak)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentPageTokenDetectedBreak
+         */
+        public function getDetectedBreak()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentPageDetectedLanguage[]
+         */
+        public function setDetectedLanguages($detectedLanguages)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentPageDetectedLanguage[]
+         */
+        public function getDetectedLanguages()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentPageLayout
+         */
+        public function setLayout(GoogleCloudDocumentaiV1beta1DocumentPageLayout $layout)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentPageLayout
+         */
+        public function getLayout()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentProvenance
+         */
+        public function setProvenance(GoogleCloudDocumentaiV1beta1DocumentProvenance $provenance)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentProvenance
+         */
+        public function getProvenance()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentPageTokenStyleInfo
+         */
+        public function setStyleInfo(GoogleCloudDocumentaiV1beta1DocumentPageTokenStyleInfo $styleInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentPageTokenStyleInfo
+         */
+        public function getStyleInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentPageTokenDetectedBreak
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentPageToken registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetectedBreak()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentPageDetectedLanguage[]
-     */
-    public function setDetectedLanguages($detectedLanguages)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentPageDetectedLanguage[]
-     */
-    public function getDetectedLanguages()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentPageLayout
-     */
-    public function setLayout(GoogleCloudDocumentaiV1beta1DocumentPageLayout $layout)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentPageLayout
-     */
-    public function getLayout()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentProvenance
-     */
-    public function setProvenance(GoogleCloudDocumentaiV1beta1DocumentProvenance $provenance)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentProvenance
-     */
-    public function getProvenance()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentPageTokenStyleInfo
-     */
-    public function setStyleInfo(GoogleCloudDocumentaiV1beta1DocumentPageTokenStyleInfo $styleInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentPageTokenStyleInfo
-     */
-    public function getStyleInfo()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta1DocumentPageToken extends \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentPageToken
     {
     }
 }

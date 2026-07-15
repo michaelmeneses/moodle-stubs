@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaQualityMetricsTopkMetrics extends \Google\Model
-{
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaQualityMetricsTopkMetrics extends \Google\Model
+    {
+        /**
+         * The top-1 value.
+         *
+         * @var 
+         */
+        public $top1;
+        /**
+         * The top-10 value.
+         *
+         * @var 
+         */
+        public $top10;
+        /**
+         * The top-3 value.
+         *
+         * @var 
+         */
+        public $top3;
+        /**
+         * The top-5 value.
+         *
+         * @var 
+         */
+        public $top5;
+        public function setTop1($top1)
+        {
+        }
+        public function getTop1()
+        {
+        }
+        public function setTop10($top10)
+        {
+        }
+        public function getTop10()
+        {
+        }
+        public function setTop3($top3)
+        {
+        }
+        public function getTop3()
+        {
+        }
+        public function setTop5($top5)
+        {
+        }
+        public function getTop5()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * The top-1 value.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaQualityMetricsTopkMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $top1;
-    /**
-     * The top-10 value.
-     *
-     * @var 
-     */
-    public $top10;
-    /**
-     * The top-3 value.
-     *
-     * @var 
-     */
-    public $top3;
-    /**
-     * The top-5 value.
-     *
-     * @var 
-     */
-    public $top5;
-    public function setTop1($top1)
-    {
-    }
-    public function getTop1()
-    {
-    }
-    public function setTop10($top10)
-    {
-    }
-    public function getTop10()
-    {
-    }
-    public function setTop3($top3)
-    {
-    }
-    public function getTop3()
-    {
-    }
-    public function setTop5($top5)
-    {
-    }
-    public function getTop5()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaQualityMetricsTopkMetrics extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaQualityMetricsTopkMetrics
     {
     }
 }

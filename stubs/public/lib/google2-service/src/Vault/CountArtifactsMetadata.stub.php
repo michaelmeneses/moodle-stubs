@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class CountArtifactsMetadata extends \Google\Model
-{
-    /**
-     * End time of count operation. Available when operation is done.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * The matter ID of the associated matter.
-     *
-     * @var string
-     */
-    public $matterId;
-    protected $queryType = Query::class;
-    protected $queryDataType = '';
-    /**
-     * Creation time of count operation.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * End time of count operation. Available when operation is done.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Vault {
+    class CountArtifactsMetadata extends \Google\Model
     {
+        /**
+         * End time of count operation. Available when operation is done.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * The matter ID of the associated matter.
+         *
+         * @var string
+         */
+        public $matterId;
+        protected $queryType = Query::class;
+        protected $queryDataType = '';
+        /**
+         * Creation time of count operation.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * End time of count operation. Available when operation is done.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The matter ID of the associated matter.
+         *
+         * @param string $matterId
+         */
+        public function setMatterId($matterId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatterId()
+        {
+        }
+        /**
+         * The search query from the request.
+         *
+         * @param Query $query
+         */
+        public function setQuery(Query $query)
+        {
+        }
+        /**
+         * @return Query
+         */
+        public function getQuery()
+        {
+        }
+        /**
+         * Creation time of count operation.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vault\CountArtifactsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The matter ID of the associated matter.
-     *
-     * @param string $matterId
-     */
-    public function setMatterId($matterId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMatterId()
-    {
-    }
-    /**
-     * The search query from the request.
-     *
-     * @param Query $query
-     */
-    public function setQuery(Query $query)
-    {
-    }
-    /**
-     * @return Query
-     */
-    public function getQuery()
-    {
-    }
-    /**
-     * Creation time of count operation.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Vault_CountArtifactsMetadata extends \Google\Service\Vault\CountArtifactsMetadata
     {
     }
 }

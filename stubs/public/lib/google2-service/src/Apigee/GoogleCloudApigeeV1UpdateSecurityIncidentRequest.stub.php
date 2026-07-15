@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1UpdateSecurityIncidentRequest extends \Google\Model
-{
-    protected $securityIncidentType = GoogleCloudApigeeV1SecurityIncident::class;
-    protected $securityIncidentDataType = '';
-    /**
-     * Required. The list of fields to update. Allowed fields are:
-     * LINT.IfChange(allowed_update_fields_comment) - observability
-     * LINT.ThenChange()
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. The security incident to update. Must contain all existing
-     * populated fields of the current incident.
-     *
-     * @param GoogleCloudApigeeV1SecurityIncident $securityIncident
-     */
-    public function setSecurityIncident(GoogleCloudApigeeV1SecurityIncident $securityIncident)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1UpdateSecurityIncidentRequest extends \Google\Model
     {
+        protected $securityIncidentType = GoogleCloudApigeeV1SecurityIncident::class;
+        protected $securityIncidentDataType = '';
+        /**
+         * Required. The list of fields to update. Allowed fields are:
+         * LINT.IfChange(allowed_update_fields_comment) - observability
+         * LINT.ThenChange()
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. The security incident to update. Must contain all existing
+         * populated fields of the current incident.
+         *
+         * @param GoogleCloudApigeeV1SecurityIncident $securityIncident
+         */
+        public function setSecurityIncident(GoogleCloudApigeeV1SecurityIncident $securityIncident)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1SecurityIncident
+         */
+        public function getSecurityIncident()
+        {
+        }
+        /**
+         * Required. The list of fields to update. Allowed fields are:
+         * LINT.IfChange(allowed_update_fields_comment) - observability
+         * LINT.ThenChange()
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1SecurityIncident
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1UpdateSecurityIncidentRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSecurityIncident()
-    {
-    }
-    /**
-     * Required. The list of fields to update. Allowed fields are:
-     * LINT.IfChange(allowed_update_fields_comment) - observability
-     * LINT.ThenChange()
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_Apigee_GoogleCloudApigeeV1UpdateSecurityIncidentRequest extends \Google\Service\Apigee\GoogleCloudApigeeV1UpdateSecurityIncidentRequest
     {
     }
 }

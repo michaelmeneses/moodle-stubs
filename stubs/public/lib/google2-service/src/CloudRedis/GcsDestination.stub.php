@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class GcsDestination extends \Google\Model
-{
-    /**
-     * Required. Data destination URI (e.g. 'gs://my_bucket/my_object'). Existing
-     * files will be overwritten.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Required. Data destination URI (e.g. 'gs://my_bucket/my_object'). Existing
-     * files will be overwritten.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
+namespace Google\Service\CloudRedis {
+    class GcsDestination extends \Google\Model
     {
+        /**
+         * Required. Data destination URI (e.g. 'gs://my_bucket/my_object'). Existing
+         * files will be overwritten.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Required. Data destination URI (e.g. 'gs://my_bucket/my_object'). Existing
+         * files will be overwritten.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRedis\GcsDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUri()
+    class Google_Service_CloudRedis_GcsDestination extends \Google\Service\CloudRedis\GcsDestination
     {
     }
 }

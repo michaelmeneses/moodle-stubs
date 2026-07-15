@@ -21,132 +21,141 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1PredictResponse extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    /**
-     * True if the dryRun property was set in the request.
-     *
-     * @var bool
-     */
-    public $dryRun;
-    /**
-     * IDs of items in the request that were missing from the catalog.
-     *
-     * @var string[]
-     */
-    public $itemsMissingInCatalog;
-    /**
-     * Additional domain specific prediction response metadata.
-     *
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * If empty, the list is complete. If nonempty, the token to pass to the next
-     * request's PredictRequest.page_token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A unique recommendation token. This should be included in the user event
-     * logs resulting from this recommendation, which enables accurate attribution
-     * of recommendation model performance.
-     *
-     * @var string
-     */
-    public $recommendationToken;
-    protected $resultsType = GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult::class;
-    protected $resultsDataType = 'array';
-    /**
-     * True if the dryRun property was set in the request.
-     *
-     * @param bool $dryRun
-     */
-    public function setDryRun($dryRun)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1PredictResponse extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        /**
+         * True if the dryRun property was set in the request.
+         *
+         * @var bool
+         */
+        public $dryRun;
+        /**
+         * IDs of items in the request that were missing from the catalog.
+         *
+         * @var string[]
+         */
+        public $itemsMissingInCatalog;
+        /**
+         * Additional domain specific prediction response metadata.
+         *
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * If empty, the list is complete. If nonempty, the token to pass to the next
+         * request's PredictRequest.page_token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A unique recommendation token. This should be included in the user event
+         * logs resulting from this recommendation, which enables accurate attribution
+         * of recommendation model performance.
+         *
+         * @var string
+         */
+        public $recommendationToken;
+        protected $resultsType = GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult::class;
+        protected $resultsDataType = 'array';
+        /**
+         * True if the dryRun property was set in the request.
+         *
+         * @param bool $dryRun
+         */
+        public function setDryRun($dryRun)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDryRun()
+        {
+        }
+        /**
+         * IDs of items in the request that were missing from the catalog.
+         *
+         * @param string[] $itemsMissingInCatalog
+         */
+        public function setItemsMissingInCatalog($itemsMissingInCatalog)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getItemsMissingInCatalog()
+        {
+        }
+        /**
+         * Additional domain specific prediction response metadata.
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * If empty, the list is complete. If nonempty, the token to pass to the next
+         * request's PredictRequest.page_token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A unique recommendation token. This should be included in the user event
+         * logs resulting from this recommendation, which enables accurate attribution
+         * of recommendation model performance.
+         *
+         * @param string $recommendationToken
+         */
+        public function setRecommendationToken($recommendationToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecommendationToken()
+        {
+        }
+        /**
+         * A list of recommended items. The order represents the ranking (from the
+         * most relevant item to the least).
+         *
+         * @param GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult[]
+         */
+        public function getResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1PredictResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDryRun()
-    {
-    }
-    /**
-     * IDs of items in the request that were missing from the catalog.
-     *
-     * @param string[] $itemsMissingInCatalog
-     */
-    public function setItemsMissingInCatalog($itemsMissingInCatalog)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getItemsMissingInCatalog()
-    {
-    }
-    /**
-     * Additional domain specific prediction response metadata.
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * If empty, the list is complete. If nonempty, the token to pass to the next
-     * request's PredictRequest.page_token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A unique recommendation token. This should be included in the user event
-     * logs resulting from this recommendation, which enables accurate attribution
-     * of recommendation model performance.
-     *
-     * @param string $recommendationToken
-     */
-    public function setRecommendationToken($recommendationToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecommendationToken()
-    {
-    }
-    /**
-     * A list of recommended items. The order represents the ranking (from the
-     * most relevant item to the least).
-     *
-     * @param GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult[] $results
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult[]
-     */
-    public function getResults()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1PredictResponse extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1PredictResponse
     {
     }
 }

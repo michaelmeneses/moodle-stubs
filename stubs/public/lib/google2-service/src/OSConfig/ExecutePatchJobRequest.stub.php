@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class ExecutePatchJobRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var bool
-     */
-    public $dryRun;
-    /**
-     * @var string
-     */
-    public $duration;
-    protected $instanceFilterType = PatchInstanceFilter::class;
-    protected $instanceFilterDataType = '';
-    protected $patchConfigType = PatchConfig::class;
-    protected $patchConfigDataType = '';
-    protected $rolloutType = PatchRollout::class;
-    protected $rolloutDataType = '';
-    /**
-     * @param string
-     */
-    public function setDescription($description)
+namespace Google\Service\OSConfig {
+    class ExecutePatchJobRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var bool
+         */
+        public $dryRun;
+        /**
+         * @var string
+         */
+        public $duration;
+        protected $instanceFilterType = PatchInstanceFilter::class;
+        protected $instanceFilterDataType = '';
+        protected $patchConfigType = PatchConfig::class;
+        protected $patchConfigDataType = '';
+        protected $rolloutType = PatchRollout::class;
+        protected $rolloutDataType = '';
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setDryRun($dryRun)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDryRun()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDuration()
+        {
+        }
+        /**
+         * @param PatchInstanceFilter
+         */
+        public function setInstanceFilter(PatchInstanceFilter $instanceFilter)
+        {
+        }
+        /**
+         * @return PatchInstanceFilter
+         */
+        public function getInstanceFilter()
+        {
+        }
+        /**
+         * @param PatchConfig
+         */
+        public function setPatchConfig(PatchConfig $patchConfig)
+        {
+        }
+        /**
+         * @return PatchConfig
+         */
+        public function getPatchConfig()
+        {
+        }
+        /**
+         * @param PatchRollout
+         */
+        public function setRollout(PatchRollout $rollout)
+        {
+        }
+        /**
+         * @return PatchRollout
+         */
+        public function getRollout()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\ExecutePatchJobRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setDryRun($dryRun)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDryRun()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDuration($duration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDuration()
-    {
-    }
-    /**
-     * @param PatchInstanceFilter
-     */
-    public function setInstanceFilter(PatchInstanceFilter $instanceFilter)
-    {
-    }
-    /**
-     * @return PatchInstanceFilter
-     */
-    public function getInstanceFilter()
-    {
-    }
-    /**
-     * @param PatchConfig
-     */
-    public function setPatchConfig(PatchConfig $patchConfig)
-    {
-    }
-    /**
-     * @return PatchConfig
-     */
-    public function getPatchConfig()
-    {
-    }
-    /**
-     * @param PatchRollout
-     */
-    public function setRollout(PatchRollout $rollout)
-    {
-    }
-    /**
-     * @return PatchRollout
-     */
-    public function getRollout()
+    class Google_Service_OSConfig_ExecutePatchJobRequest extends \Google\Service\OSConfig\ExecutePatchJobRequest
     {
     }
 }

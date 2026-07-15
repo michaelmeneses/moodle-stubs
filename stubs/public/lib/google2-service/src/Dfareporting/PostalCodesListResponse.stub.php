@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class PostalCodesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'postalCodes';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#postalCodesListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $postalCodesType = PostalCode::class;
-    protected $postalCodesDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#postalCodesListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class PostalCodesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'postalCodes';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#postalCodesListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $postalCodesType = PostalCode::class;
+        protected $postalCodesDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#postalCodesListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Postal code collection.
+         *
+         * @param PostalCode[] $postalCodes
+         */
+        public function setPostalCodes($postalCodes)
+        {
+        }
+        /**
+         * @return PostalCode[]
+         */
+        public function getPostalCodes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\PostalCodesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Postal code collection.
-     *
-     * @param PostalCode[] $postalCodes
-     */
-    public function setPostalCodes($postalCodes)
-    {
-    }
-    /**
-     * @return PostalCode[]
-     */
-    public function getPostalCodes()
+    class Google_Service_Dfareporting_PostalCodesListResponse extends \Google\Service\Dfareporting\PostalCodesListResponse
     {
     }
 }

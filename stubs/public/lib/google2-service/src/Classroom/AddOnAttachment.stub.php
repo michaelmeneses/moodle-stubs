@@ -21,247 +21,256 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class AddOnAttachment extends \Google\Collection
-{
-    protected $collection_key = 'copyHistory';
-    protected $copyHistoryType = CopyHistory::class;
-    protected $copyHistoryDataType = 'array';
-    /**
-     * Immutable. Identifier of the course.
-     *
-     * @var string
-     */
-    public $courseId;
-    protected $dueDateType = Date::class;
-    protected $dueDateDataType = '';
-    protected $dueTimeType = TimeOfDay::class;
-    protected $dueTimeDataType = '';
-    /**
-     * Immutable. Classroom-assigned identifier for this attachment, unique per
-     * post.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Immutable. Identifier of the `Announcement`, `CourseWork`, or
-     * `CourseWorkMaterial` under which the attachment is attached. Unique per
-     * course.
-     *
-     * @var string
-     */
-    public $itemId;
-    /**
-     * Maximum grade for this attachment. Can only be set if
-     * `studentWorkReviewUri` is set. Set to a non-zero value to indicate that the
-     * attachment supports grade passback. If set, this must be a non-negative
-     * integer value. When set to zero, the attachment will not support grade
-     * passback.
-     *
-     * @var 
-     */
-    public $maxPoints;
-    /**
-     * Immutable. Deprecated, use `item_id` instead.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $postId;
-    protected $studentViewUriType = EmbedUri::class;
-    protected $studentViewUriDataType = '';
-    protected $studentWorkReviewUriType = EmbedUri::class;
-    protected $studentWorkReviewUriDataType = '';
-    protected $teacherViewUriType = EmbedUri::class;
-    protected $teacherViewUriDataType = '';
-    /**
-     * Required. Title of this attachment. The title must be between 1 and 1000
-     * characters.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Output only. Identifiers of attachments that were previous copies of this
-     * attachment. If the attachment was previously copied by virtue of its parent
-     * post being copied, this enumerates the identifiers of attachments that were
-     * its previous copies in ascending chronological order of copy.
-     *
-     * @param CopyHistory[] $copyHistory
-     */
-    public function setCopyHistory($copyHistory)
+namespace Google\Service\Classroom {
+    class AddOnAttachment extends \Google\Collection
     {
+        protected $collection_key = 'copyHistory';
+        protected $copyHistoryType = CopyHistory::class;
+        protected $copyHistoryDataType = 'array';
+        /**
+         * Immutable. Identifier of the course.
+         *
+         * @var string
+         */
+        public $courseId;
+        protected $dueDateType = Date::class;
+        protected $dueDateDataType = '';
+        protected $dueTimeType = TimeOfDay::class;
+        protected $dueTimeDataType = '';
+        /**
+         * Immutable. Classroom-assigned identifier for this attachment, unique per
+         * post.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Immutable. Identifier of the `Announcement`, `CourseWork`, or
+         * `CourseWorkMaterial` under which the attachment is attached. Unique per
+         * course.
+         *
+         * @var string
+         */
+        public $itemId;
+        /**
+         * Maximum grade for this attachment. Can only be set if
+         * `studentWorkReviewUri` is set. Set to a non-zero value to indicate that the
+         * attachment supports grade passback. If set, this must be a non-negative
+         * integer value. When set to zero, the attachment will not support grade
+         * passback.
+         *
+         * @var 
+         */
+        public $maxPoints;
+        /**
+         * Immutable. Deprecated, use `item_id` instead.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $postId;
+        protected $studentViewUriType = EmbedUri::class;
+        protected $studentViewUriDataType = '';
+        protected $studentWorkReviewUriType = EmbedUri::class;
+        protected $studentWorkReviewUriDataType = '';
+        protected $teacherViewUriType = EmbedUri::class;
+        protected $teacherViewUriDataType = '';
+        /**
+         * Required. Title of this attachment. The title must be between 1 and 1000
+         * characters.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Output only. Identifiers of attachments that were previous copies of this
+         * attachment. If the attachment was previously copied by virtue of its parent
+         * post being copied, this enumerates the identifiers of attachments that were
+         * its previous copies in ascending chronological order of copy.
+         *
+         * @param CopyHistory[] $copyHistory
+         */
+        public function setCopyHistory($copyHistory)
+        {
+        }
+        /**
+         * @return CopyHistory[]
+         */
+        public function getCopyHistory()
+        {
+        }
+        /**
+         * Immutable. Identifier of the course.
+         *
+         * @param string $courseId
+         */
+        public function setCourseId($courseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCourseId()
+        {
+        }
+        /**
+         * Date, in UTC, that work on this attachment is due. This must be specified
+         * if `due_time` is specified.
+         *
+         * @param Date $dueDate
+         */
+        public function setDueDate(Date $dueDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getDueDate()
+        {
+        }
+        /**
+         * Time of day, in UTC, that work on this attachment is due. This must be
+         * specified if `due_date` is specified.
+         *
+         * @param TimeOfDay $dueTime
+         */
+        public function setDueTime(TimeOfDay $dueTime)
+        {
+        }
+        /**
+         * @return TimeOfDay
+         */
+        public function getDueTime()
+        {
+        }
+        /**
+         * Immutable. Classroom-assigned identifier for this attachment, unique per
+         * post.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Immutable. Identifier of the `Announcement`, `CourseWork`, or
+         * `CourseWorkMaterial` under which the attachment is attached. Unique per
+         * course.
+         *
+         * @param string $itemId
+         */
+        public function setItemId($itemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getItemId()
+        {
+        }
+        public function setMaxPoints($maxPoints)
+        {
+        }
+        public function getMaxPoints()
+        {
+        }
+        /**
+         * Immutable. Deprecated, use `item_id` instead.
+         *
+         * @deprecated
+         * @param string $postId
+         */
+        public function setPostId($postId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getPostId()
+        {
+        }
+        /**
+         * Required. URI to show the student view of the attachment. The URI will be
+         * opened in an iframe with the `courseId`, `itemId`, `itemType`, and
+         * `attachmentId` query parameters set.
+         *
+         * @param EmbedUri $studentViewUri
+         */
+        public function setStudentViewUri(EmbedUri $studentViewUri)
+        {
+        }
+        /**
+         * @return EmbedUri
+         */
+        public function getStudentViewUri()
+        {
+        }
+        /**
+         * URI for the teacher to see student work on the attachment, if applicable.
+         * The URI will be opened in an iframe with the `courseId`, `itemId`,
+         * `itemType`, `attachmentId`, and `submissionId` query parameters set. This
+         * is the same `submissionId` returned in the [`AddOnContext.studentContext`](
+         * //devsite.google.com/classroom/reference/rest/v1/AddOnContext#StudentContex
+         * t) field when a student views the attachment. If the URI is omitted or
+         * removed, `max_points` will also be discarded.
+         *
+         * @param EmbedUri $studentWorkReviewUri
+         */
+        public function setStudentWorkReviewUri(EmbedUri $studentWorkReviewUri)
+        {
+        }
+        /**
+         * @return EmbedUri
+         */
+        public function getStudentWorkReviewUri()
+        {
+        }
+        /**
+         * Required. URI to show the teacher view of the attachment. The URI will be
+         * opened in an iframe with the `courseId`, `itemId`, `itemType`, and
+         * `attachmentId` query parameters set.
+         *
+         * @param EmbedUri $teacherViewUri
+         */
+        public function setTeacherViewUri(EmbedUri $teacherViewUri)
+        {
+        }
+        /**
+         * @return EmbedUri
+         */
+        public function getTeacherViewUri()
+        {
+        }
+        /**
+         * Required. Title of this attachment. The title must be between 1 and 1000
+         * characters.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CopyHistory[]
+     * Runtime class alias of \Google\Service\Classroom\AddOnAttachment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCopyHistory()
-    {
-    }
-    /**
-     * Immutable. Identifier of the course.
-     *
-     * @param string $courseId
-     */
-    public function setCourseId($courseId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCourseId()
-    {
-    }
-    /**
-     * Date, in UTC, that work on this attachment is due. This must be specified
-     * if `due_time` is specified.
-     *
-     * @param Date $dueDate
-     */
-    public function setDueDate(Date $dueDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getDueDate()
-    {
-    }
-    /**
-     * Time of day, in UTC, that work on this attachment is due. This must be
-     * specified if `due_date` is specified.
-     *
-     * @param TimeOfDay $dueTime
-     */
-    public function setDueTime(TimeOfDay $dueTime)
-    {
-    }
-    /**
-     * @return TimeOfDay
-     */
-    public function getDueTime()
-    {
-    }
-    /**
-     * Immutable. Classroom-assigned identifier for this attachment, unique per
-     * post.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Immutable. Identifier of the `Announcement`, `CourseWork`, or
-     * `CourseWorkMaterial` under which the attachment is attached. Unique per
-     * course.
-     *
-     * @param string $itemId
-     */
-    public function setItemId($itemId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getItemId()
-    {
-    }
-    public function setMaxPoints($maxPoints)
-    {
-    }
-    public function getMaxPoints()
-    {
-    }
-    /**
-     * Immutable. Deprecated, use `item_id` instead.
-     *
-     * @deprecated
-     * @param string $postId
-     */
-    public function setPostId($postId)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getPostId()
-    {
-    }
-    /**
-     * Required. URI to show the student view of the attachment. The URI will be
-     * opened in an iframe with the `courseId`, `itemId`, `itemType`, and
-     * `attachmentId` query parameters set.
-     *
-     * @param EmbedUri $studentViewUri
-     */
-    public function setStudentViewUri(EmbedUri $studentViewUri)
-    {
-    }
-    /**
-     * @return EmbedUri
-     */
-    public function getStudentViewUri()
-    {
-    }
-    /**
-     * URI for the teacher to see student work on the attachment, if applicable.
-     * The URI will be opened in an iframe with the `courseId`, `itemId`,
-     * `itemType`, `attachmentId`, and `submissionId` query parameters set. This
-     * is the same `submissionId` returned in the [`AddOnContext.studentContext`](
-     * //devsite.google.com/classroom/reference/rest/v1/AddOnContext#StudentContex
-     * t) field when a student views the attachment. If the URI is omitted or
-     * removed, `max_points` will also be discarded.
-     *
-     * @param EmbedUri $studentWorkReviewUri
-     */
-    public function setStudentWorkReviewUri(EmbedUri $studentWorkReviewUri)
-    {
-    }
-    /**
-     * @return EmbedUri
-     */
-    public function getStudentWorkReviewUri()
-    {
-    }
-    /**
-     * Required. URI to show the teacher view of the attachment. The URI will be
-     * opened in an iframe with the `courseId`, `itemId`, `itemType`, and
-     * `attachmentId` query parameters set.
-     *
-     * @param EmbedUri $teacherViewUri
-     */
-    public function setTeacherViewUri(EmbedUri $teacherViewUri)
-    {
-    }
-    /**
-     * @return EmbedUri
-     */
-    public function getTeacherViewUri()
-    {
-    }
-    /**
-     * Required. Title of this attachment. The title must be between 1 and 1000
-     * characters.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Classroom_AddOnAttachment extends \Google\Service\Classroom\AddOnAttachment
     {
     }
 }

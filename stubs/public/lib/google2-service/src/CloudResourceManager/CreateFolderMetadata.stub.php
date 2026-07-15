@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudResourceManager;
-
-class CreateFolderMetadata extends \Google\Model
-{
-    /**
-     * The display name of the folder.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The resource name of the folder or organization we are creating the folder
-     * under.
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * The display name of the folder.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\CloudResourceManager {
+    class CreateFolderMetadata extends \Google\Model
     {
+        /**
+         * The display name of the folder.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The resource name of the folder or organization we are creating the folder
+         * under.
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * The display name of the folder.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The resource name of the folder or organization we are creating the folder
+         * under.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudResourceManager\CreateFolderMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The resource name of the folder or organization we are creating the folder
-     * under.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
+    class Google_Service_CloudResourceManager_CreateFolderMetadata extends \Google\Service\CloudResourceManager\CreateFolderMetadata
     {
     }
 }

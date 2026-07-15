@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ConfigManagementHierarchyControllerVersion extends \Google\Model
-{
-    /**
-     * Version for Hierarchy Controller extension.
-     *
-     * @var string
-     */
-    public $extension;
-    /**
-     * Version for open source HNC.
-     *
-     * @var string
-     */
-    public $hnc;
-    /**
-     * Version for Hierarchy Controller extension.
-     *
-     * @param string $extension
-     */
-    public function setExtension($extension)
+namespace Google\Service\GKEHub {
+    class ConfigManagementHierarchyControllerVersion extends \Google\Model
     {
+        /**
+         * Version for Hierarchy Controller extension.
+         *
+         * @var string
+         */
+        public $extension;
+        /**
+         * Version for open source HNC.
+         *
+         * @var string
+         */
+        public $hnc;
+        /**
+         * Version for Hierarchy Controller extension.
+         *
+         * @param string $extension
+         */
+        public function setExtension($extension)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExtension()
+        {
+        }
+        /**
+         * Version for open source HNC.
+         *
+         * @param string $hnc
+         */
+        public function setHnc($hnc)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHnc()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\ConfigManagementHierarchyControllerVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExtension()
-    {
-    }
-    /**
-     * Version for open source HNC.
-     *
-     * @param string $hnc
-     */
-    public function setHnc($hnc)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHnc()
+    class Google_Service_GKEHub_ConfigManagementHierarchyControllerVersion extends \Google\Service\GKEHub\ConfigManagementHierarchyControllerVersion
     {
     }
 }

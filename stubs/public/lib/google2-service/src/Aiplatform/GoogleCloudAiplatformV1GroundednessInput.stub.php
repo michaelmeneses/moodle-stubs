@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GroundednessInput extends \Google\Model
-{
-    protected $instanceType = GoogleCloudAiplatformV1GroundednessInstance::class;
-    protected $instanceDataType = '';
-    protected $metricSpecType = GoogleCloudAiplatformV1GroundednessSpec::class;
-    protected $metricSpecDataType = '';
-    /**
-     * Required. Groundedness instance.
-     *
-     * @param GoogleCloudAiplatformV1GroundednessInstance $instance
-     */
-    public function setInstance(GoogleCloudAiplatformV1GroundednessInstance $instance)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GroundednessInput extends \Google\Model
     {
+        protected $instanceType = GoogleCloudAiplatformV1GroundednessInstance::class;
+        protected $instanceDataType = '';
+        protected $metricSpecType = GoogleCloudAiplatformV1GroundednessSpec::class;
+        protected $metricSpecDataType = '';
+        /**
+         * Required. Groundedness instance.
+         *
+         * @param GoogleCloudAiplatformV1GroundednessInstance $instance
+         */
+        public function setInstance(GoogleCloudAiplatformV1GroundednessInstance $instance)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GroundednessInstance
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * Required. Spec for groundedness metric.
+         *
+         * @param GoogleCloudAiplatformV1GroundednessSpec $metricSpec
+         */
+        public function setMetricSpec(GoogleCloudAiplatformV1GroundednessSpec $metricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GroundednessSpec
+         */
+        public function getMetricSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1GroundednessInstance
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GroundednessInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstance()
-    {
-    }
-    /**
-     * Required. Spec for groundedness metric.
-     *
-     * @param GoogleCloudAiplatformV1GroundednessSpec $metricSpec
-     */
-    public function setMetricSpec(GoogleCloudAiplatformV1GroundednessSpec $metricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1GroundednessSpec
-     */
-    public function getMetricSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GroundednessInput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GroundednessInput
     {
     }
 }

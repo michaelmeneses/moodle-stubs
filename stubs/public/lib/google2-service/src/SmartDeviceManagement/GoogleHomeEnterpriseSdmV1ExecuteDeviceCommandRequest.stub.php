@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SmartDeviceManagement;
-
-class GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest extends \Google\Model
-{
-    /**
-     * The command name to execute, represented by the fully qualified protobuf
-     * message name.
-     *
-     * @var string
-     */
-    public $command;
-    /**
-     * The command message to execute, represented as a Struct.
-     *
-     * @var array[]
-     */
-    public $params;
-    /**
-     * The command name to execute, represented by the fully qualified protobuf
-     * message name.
-     *
-     * @param string $command
-     */
-    public function setCommand($command)
+namespace Google\Service\SmartDeviceManagement {
+    class GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest extends \Google\Model
     {
+        /**
+         * The command name to execute, represented by the fully qualified protobuf
+         * message name.
+         *
+         * @var string
+         */
+        public $command;
+        /**
+         * The command message to execute, represented as a Struct.
+         *
+         * @var array[]
+         */
+        public $params;
+        /**
+         * The command name to execute, represented by the fully qualified protobuf
+         * message name.
+         *
+         * @param string $command
+         */
+        public function setCommand($command)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommand()
+        {
+        }
+        /**
+         * The command message to execute, represented as a Struct.
+         *
+         * @param array[] $params
+         */
+        public function setParams($params)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getParams()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommand()
-    {
-    }
-    /**
-     * The command message to execute, represented as a Struct.
-     *
-     * @param array[] $params
-     */
-    public function setParams($params)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getParams()
+    class Google_Service_SmartDeviceManagement_GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest extends \Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest
     {
     }
 }

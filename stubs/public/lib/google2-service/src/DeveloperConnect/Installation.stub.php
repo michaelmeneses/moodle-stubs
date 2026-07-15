@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class Installation extends \Google\Model
-{
-    /**
-     * ID of the installation in GitHub.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Name of the GitHub user or organization that owns this installation.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Either "user" or "organization".
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * ID of the installation in GitHub.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\DeveloperConnect {
+    class Installation extends \Google\Model
     {
+        /**
+         * ID of the installation in GitHub.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Name of the GitHub user or organization that owns this installation.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Either "user" or "organization".
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * ID of the installation in GitHub.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Name of the GitHub user or organization that owns this installation.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Either "user" or "organization".
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DeveloperConnect\Installation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Name of the GitHub user or organization that owns this installation.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Either "user" or "organization".
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_DeveloperConnect_Installation extends \Google\Service\DeveloperConnect\Installation
     {
     }
 }

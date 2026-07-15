@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class DatabaseConfig extends \Google\Model
-{
-    /**
-     * Optional. Cloud SQL machine type used by Airflow database. It has to be one
-     * of: db-n1-standard-2, db-n1-standard-4, db-n1-standard-8 or
-     * db-n1-standard-16. If not specified, db-n1-standard-2 will be used.
-     * Supported for Cloud Composer environments in versions
-     * composer-1.*.*-airflow-*.*.*.
-     *
-     * @var string
-     */
-    public $machineType;
-    /**
-     * Optional. The Compute Engine zone where the Airflow database is created. If
-     * zone is provided, it must be in the region selected for the environment. If
-     * zone is not provided, a zone is automatically selected. The zone can only
-     * be set during environment creation. Supported for Cloud Composer
-     * environments in versions composer-2.*.*-airflow-*.*.*.
-     *
-     * @var string
-     */
-    public $zone;
-    /**
-     * Optional. Cloud SQL machine type used by Airflow database. It has to be one
-     * of: db-n1-standard-2, db-n1-standard-4, db-n1-standard-8 or
-     * db-n1-standard-16. If not specified, db-n1-standard-2 will be used.
-     * Supported for Cloud Composer environments in versions
-     * composer-1.*.*-airflow-*.*.*.
-     *
-     * @param string $machineType
-     */
-    public function setMachineType($machineType)
+namespace Google\Service\CloudComposer {
+    class DatabaseConfig extends \Google\Model
     {
+        /**
+         * Optional. Cloud SQL machine type used by Airflow database. It has to be one
+         * of: db-n1-standard-2, db-n1-standard-4, db-n1-standard-8 or
+         * db-n1-standard-16. If not specified, db-n1-standard-2 will be used.
+         * Supported for Cloud Composer environments in versions
+         * composer-1.*.*-airflow-*.*.*.
+         *
+         * @var string
+         */
+        public $machineType;
+        /**
+         * Optional. The Compute Engine zone where the Airflow database is created. If
+         * zone is provided, it must be in the region selected for the environment. If
+         * zone is not provided, a zone is automatically selected. The zone can only
+         * be set during environment creation. Supported for Cloud Composer
+         * environments in versions composer-2.*.*-airflow-*.*.*.
+         *
+         * @var string
+         */
+        public $zone;
+        /**
+         * Optional. Cloud SQL machine type used by Airflow database. It has to be one
+         * of: db-n1-standard-2, db-n1-standard-4, db-n1-standard-8 or
+         * db-n1-standard-16. If not specified, db-n1-standard-2 will be used.
+         * Supported for Cloud Composer environments in versions
+         * composer-1.*.*-airflow-*.*.*.
+         *
+         * @param string $machineType
+         */
+        public function setMachineType($machineType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMachineType()
+        {
+        }
+        /**
+         * Optional. The Compute Engine zone where the Airflow database is created. If
+         * zone is provided, it must be in the region selected for the environment. If
+         * zone is not provided, a zone is automatically selected. The zone can only
+         * be set during environment creation. Supported for Cloud Composer
+         * environments in versions composer-2.*.*-airflow-*.*.*.
+         *
+         * @param string $zone
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudComposer\DatabaseConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMachineType()
-    {
-    }
-    /**
-     * Optional. The Compute Engine zone where the Airflow database is created. If
-     * zone is provided, it must be in the region selected for the environment. If
-     * zone is not provided, a zone is automatically selected. The zone can only
-     * be set during environment creation. Supported for Cloud Composer
-     * environments in versions composer-2.*.*-airflow-*.*.*.
-     *
-     * @param string $zone
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_CloudComposer_DatabaseConfig extends \Google\Service\CloudComposer\DatabaseConfig
     {
     }
 }

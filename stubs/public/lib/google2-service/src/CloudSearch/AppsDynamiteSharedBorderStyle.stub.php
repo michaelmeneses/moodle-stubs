@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedBorderStyle extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $cornerRadius;
-    protected $strokeColorType = Color::class;
-    protected $strokeColorDataType = '';
-    public $strokeColor;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param int
-     */
-    public function setCornerRadius($cornerRadius)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedBorderStyle extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $cornerRadius;
+        protected $strokeColorType = Color::class;
+        protected $strokeColorDataType = '';
+        public $strokeColor;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param int
+         */
+        public function setCornerRadius($cornerRadius)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCornerRadius()
+        {
+        }
+        /**
+         * @param Color
+         */
+        public function setStrokeColor(Color $strokeColor)
+        {
+        }
+        /**
+         * @return Color
+         */
+        public function getStrokeColor()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedBorderStyle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCornerRadius()
-    {
-    }
-    /**
-     * @param Color
-     */
-    public function setStrokeColor(Color $strokeColor)
-    {
-    }
-    /**
-     * @return Color
-     */
-    public function getStrokeColor()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudSearch_AppsDynamiteSharedBorderStyle extends \Google\Service\CloudSearch\AppsDynamiteSharedBorderStyle
     {
     }
 }

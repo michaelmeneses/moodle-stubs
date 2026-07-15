@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class PlayGroupingApiToken extends \Google\Model
-{
-    /**
-     * Value of the token.
-     *
-     * @var string
-     */
-    public $tokenValue;
-    /**
-     * Value of the token.
-     *
-     * @param string $tokenValue
-     */
-    public function setTokenValue($tokenValue)
+namespace Google\Service\Games {
+    class PlayGroupingApiToken extends \Google\Model
     {
+        /**
+         * Value of the token.
+         *
+         * @var string
+         */
+        public $tokenValue;
+        /**
+         * Value of the token.
+         *
+         * @param string $tokenValue
+         */
+        public function setTokenValue($tokenValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTokenValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\PlayGroupingApiToken registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTokenValue()
+    class Google_Service_Games_PlayGroupingApiToken extends \Google\Service\Games\PlayGroupingApiToken
     {
     }
 }

@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CCAIPlatform;
-
-class ContactCenterQuota extends \Google\Collection
-{
-    protected $collection_key = 'quotas';
-    /**
-     * Deprecated: Use the Quota fields instead. Reflects the count limit of
-     * contact centers on a billing account.
-     *
-     * @deprecated
-     * @var int
-     */
-    public $contactCenterCountLimit;
-    /**
-     * Deprecated: Use the Quota fields instead. Reflects the count sum of contact
-     * centers on a billing account.
-     *
-     * @deprecated
-     * @var int
-     */
-    public $contactCenterCountSum;
-    protected $quotasType = Quota::class;
-    protected $quotasDataType = 'array';
-    /**
-     * Deprecated: Use the Quota fields instead. Reflects the count limit of
-     * contact centers on a billing account.
-     *
-     * @deprecated
-     * @param int $contactCenterCountLimit
-     */
-    public function setContactCenterCountLimit($contactCenterCountLimit)
+namespace Google\Service\CCAIPlatform {
+    class ContactCenterQuota extends \Google\Collection
     {
+        protected $collection_key = 'quotas';
+        /**
+         * Deprecated: Use the Quota fields instead. Reflects the count limit of
+         * contact centers on a billing account.
+         *
+         * @deprecated
+         * @var int
+         */
+        public $contactCenterCountLimit;
+        /**
+         * Deprecated: Use the Quota fields instead. Reflects the count sum of contact
+         * centers on a billing account.
+         *
+         * @deprecated
+         * @var int
+         */
+        public $contactCenterCountSum;
+        protected $quotasType = Quota::class;
+        protected $quotasDataType = 'array';
+        /**
+         * Deprecated: Use the Quota fields instead. Reflects the count limit of
+         * contact centers on a billing account.
+         *
+         * @deprecated
+         * @param int $contactCenterCountLimit
+         */
+        public function setContactCenterCountLimit($contactCenterCountLimit)
+        {
+        }
+        /**
+         * @deprecated
+         * @return int
+         */
+        public function getContactCenterCountLimit()
+        {
+        }
+        /**
+         * Deprecated: Use the Quota fields instead. Reflects the count sum of contact
+         * centers on a billing account.
+         *
+         * @deprecated
+         * @param int $contactCenterCountSum
+         */
+        public function setContactCenterCountSum($contactCenterCountSum)
+        {
+        }
+        /**
+         * @deprecated
+         * @return int
+         */
+        public function getContactCenterCountSum()
+        {
+        }
+        /**
+         * Quota details per contact center instance type.
+         *
+         * @param Quota[] $quotas
+         */
+        public function setQuotas($quotas)
+        {
+        }
+        /**
+         * @return Quota[]
+         */
+        public function getQuotas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return int
+     * Runtime class alias of \Google\Service\CCAIPlatform\ContactCenterQuota registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContactCenterCountLimit()
-    {
-    }
-    /**
-     * Deprecated: Use the Quota fields instead. Reflects the count sum of contact
-     * centers on a billing account.
-     *
-     * @deprecated
-     * @param int $contactCenterCountSum
-     */
-    public function setContactCenterCountSum($contactCenterCountSum)
-    {
-    }
-    /**
-     * @deprecated
-     * @return int
-     */
-    public function getContactCenterCountSum()
-    {
-    }
-    /**
-     * Quota details per contact center instance type.
-     *
-     * @param Quota[] $quotas
-     */
-    public function setQuotas($quotas)
-    {
-    }
-    /**
-     * @return Quota[]
-     */
-    public function getQuotas()
+    class Google_Service_CCAIPlatform_ContactCenterQuota extends \Google\Service\CCAIPlatform\ContactCenterQuota
     {
     }
 }

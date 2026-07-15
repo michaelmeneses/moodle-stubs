@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedColumns extends \Google\Collection
-{
-    protected $collection_key = 'columnItems';
-    protected $columnItemsType = AppsDynamiteSharedColumnsColumn::class;
-    protected $columnItemsDataType = 'array';
-    public $columnItems;
-    /**
-     * @var string
-     */
-    public $wrapStyle;
-    /**
-     * @param AppsDynamiteSharedColumnsColumn[]
-     */
-    public function setColumnItems($columnItems)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedColumns extends \Google\Collection
     {
+        protected $collection_key = 'columnItems';
+        protected $columnItemsType = AppsDynamiteSharedColumnsColumn::class;
+        protected $columnItemsDataType = 'array';
+        public $columnItems;
+        /**
+         * @var string
+         */
+        public $wrapStyle;
+        /**
+         * @param AppsDynamiteSharedColumnsColumn[]
+         */
+        public function setColumnItems($columnItems)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedColumnsColumn[]
+         */
+        public function getColumnItems()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWrapStyle($wrapStyle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWrapStyle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedColumnsColumn[]
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedColumns registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnItems()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWrapStyle($wrapStyle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWrapStyle()
+    class Google_Service_CloudSearch_AppsDynamiteSharedColumns extends \Google\Service\CloudSearch\AppsDynamiteSharedColumns
     {
     }
 }

@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataGroundingSupport extends \Google\Collection
-{
-    protected $collection_key = 'supportChunkIndices';
-    /**
-     * @var string
-     */
-    public $claimText;
-    /**
-     * @var int[]
-     */
-    public $supportChunkIndices;
-    /**
-     * @var float
-     */
-    public $supportScore;
-    /**
-     * @param string
-     */
-    public function setClaimText($claimText)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataGroundingSupport extends \Google\Collection
     {
+        protected $collection_key = 'supportChunkIndices';
+        /**
+         * @var string
+         */
+        public $claimText;
+        /**
+         * @var int[]
+         */
+        public $supportChunkIndices;
+        /**
+         * @var float
+         */
+        public $supportScore;
+        /**
+         * @param string
+         */
+        public function setClaimText($claimText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClaimText()
+        {
+        }
+        /**
+         * @param int[]
+         */
+        public function setSupportChunkIndices($supportChunkIndices)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getSupportChunkIndices()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setSupportScore($supportScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getSupportScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataGroundingSupport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClaimText()
-    {
-    }
-    /**
-     * @param int[]
-     */
-    public function setSupportChunkIndices($supportChunkIndices)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getSupportChunkIndices()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setSupportScore($supportScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getSupportScore()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataGroundingSupport extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataGroundingSupport
     {
     }
 }

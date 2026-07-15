@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaLayoutParsingConfig extends \Google\Model
-{
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaLayoutParsingConfig extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaLayoutParsingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaLayoutParsingConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaLayoutParsingConfig
+    {
+    }
 }

@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2StorageConfig extends \Google\Model
-{
-    protected $bigQueryOptionsType = GooglePrivacyDlpV2BigQueryOptions::class;
-    protected $bigQueryOptionsDataType = '';
-    protected $cloudStorageOptionsType = GooglePrivacyDlpV2CloudStorageOptions::class;
-    protected $cloudStorageOptionsDataType = '';
-    protected $datastoreOptionsType = GooglePrivacyDlpV2DatastoreOptions::class;
-    protected $datastoreOptionsDataType = '';
-    protected $hybridOptionsType = GooglePrivacyDlpV2HybridOptions::class;
-    protected $hybridOptionsDataType = '';
-    protected $timespanConfigType = GooglePrivacyDlpV2TimespanConfig::class;
-    protected $timespanConfigDataType = '';
-    /**
-     * BigQuery options.
-     *
-     * @param GooglePrivacyDlpV2BigQueryOptions $bigQueryOptions
-     */
-    public function setBigQueryOptions(GooglePrivacyDlpV2BigQueryOptions $bigQueryOptions)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2StorageConfig extends \Google\Model
     {
+        protected $bigQueryOptionsType = GooglePrivacyDlpV2BigQueryOptions::class;
+        protected $bigQueryOptionsDataType = '';
+        protected $cloudStorageOptionsType = GooglePrivacyDlpV2CloudStorageOptions::class;
+        protected $cloudStorageOptionsDataType = '';
+        protected $datastoreOptionsType = GooglePrivacyDlpV2DatastoreOptions::class;
+        protected $datastoreOptionsDataType = '';
+        protected $hybridOptionsType = GooglePrivacyDlpV2HybridOptions::class;
+        protected $hybridOptionsDataType = '';
+        protected $timespanConfigType = GooglePrivacyDlpV2TimespanConfig::class;
+        protected $timespanConfigDataType = '';
+        /**
+         * BigQuery options.
+         *
+         * @param GooglePrivacyDlpV2BigQueryOptions $bigQueryOptions
+         */
+        public function setBigQueryOptions(GooglePrivacyDlpV2BigQueryOptions $bigQueryOptions)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2BigQueryOptions
+         */
+        public function getBigQueryOptions()
+        {
+        }
+        /**
+         * Cloud Storage options.
+         *
+         * @param GooglePrivacyDlpV2CloudStorageOptions $cloudStorageOptions
+         */
+        public function setCloudStorageOptions(GooglePrivacyDlpV2CloudStorageOptions $cloudStorageOptions)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2CloudStorageOptions
+         */
+        public function getCloudStorageOptions()
+        {
+        }
+        /**
+         * Google Cloud Datastore options.
+         *
+         * @param GooglePrivacyDlpV2DatastoreOptions $datastoreOptions
+         */
+        public function setDatastoreOptions(GooglePrivacyDlpV2DatastoreOptions $datastoreOptions)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DatastoreOptions
+         */
+        public function getDatastoreOptions()
+        {
+        }
+        /**
+         * Hybrid inspection options.
+         *
+         * @param GooglePrivacyDlpV2HybridOptions $hybridOptions
+         */
+        public function setHybridOptions(GooglePrivacyDlpV2HybridOptions $hybridOptions)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2HybridOptions
+         */
+        public function getHybridOptions()
+        {
+        }
+        /**
+         * Configuration of the timespan of the items to include in scanning.
+         *
+         * @param GooglePrivacyDlpV2TimespanConfig $timespanConfig
+         */
+        public function setTimespanConfig(GooglePrivacyDlpV2TimespanConfig $timespanConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2TimespanConfig
+         */
+        public function getTimespanConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2BigQueryOptions
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2StorageConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigQueryOptions()
-    {
-    }
-    /**
-     * Cloud Storage options.
-     *
-     * @param GooglePrivacyDlpV2CloudStorageOptions $cloudStorageOptions
-     */
-    public function setCloudStorageOptions(GooglePrivacyDlpV2CloudStorageOptions $cloudStorageOptions)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2CloudStorageOptions
-     */
-    public function getCloudStorageOptions()
-    {
-    }
-    /**
-     * Google Cloud Datastore options.
-     *
-     * @param GooglePrivacyDlpV2DatastoreOptions $datastoreOptions
-     */
-    public function setDatastoreOptions(GooglePrivacyDlpV2DatastoreOptions $datastoreOptions)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2DatastoreOptions
-     */
-    public function getDatastoreOptions()
-    {
-    }
-    /**
-     * Hybrid inspection options.
-     *
-     * @param GooglePrivacyDlpV2HybridOptions $hybridOptions
-     */
-    public function setHybridOptions(GooglePrivacyDlpV2HybridOptions $hybridOptions)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2HybridOptions
-     */
-    public function getHybridOptions()
-    {
-    }
-    /**
-     * Configuration of the timespan of the items to include in scanning.
-     *
-     * @param GooglePrivacyDlpV2TimespanConfig $timespanConfig
-     */
-    public function setTimespanConfig(GooglePrivacyDlpV2TimespanConfig $timespanConfig)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2TimespanConfig
-     */
-    public function getTimespanConfig()
+    class Google_Service_DLP_GooglePrivacyDlpV2StorageConfig extends \Google\Service\DLP\GooglePrivacyDlpV2StorageConfig
     {
     }
 }

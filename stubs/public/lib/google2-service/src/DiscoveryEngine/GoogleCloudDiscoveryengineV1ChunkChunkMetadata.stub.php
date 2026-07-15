@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ChunkChunkMetadata extends \Google\Collection
-{
-    protected $collection_key = 'previousChunks';
-    protected $nextChunksType = GoogleCloudDiscoveryengineV1Chunk::class;
-    protected $nextChunksDataType = 'array';
-    protected $previousChunksType = GoogleCloudDiscoveryengineV1Chunk::class;
-    protected $previousChunksDataType = 'array';
-    /**
-     * The next chunks of the current chunk. The number is controlled by
-     * SearchRequest.ContentSearchSpec.ChunkSpec.num_next_chunks. This field is
-     * only populated on SearchService.Search API.
-     *
-     * @param GoogleCloudDiscoveryengineV1Chunk[] $nextChunks
-     */
-    public function setNextChunks($nextChunks)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ChunkChunkMetadata extends \Google\Collection
     {
+        protected $collection_key = 'previousChunks';
+        protected $nextChunksType = GoogleCloudDiscoveryengineV1Chunk::class;
+        protected $nextChunksDataType = 'array';
+        protected $previousChunksType = GoogleCloudDiscoveryengineV1Chunk::class;
+        protected $previousChunksDataType = 'array';
+        /**
+         * The next chunks of the current chunk. The number is controlled by
+         * SearchRequest.ContentSearchSpec.ChunkSpec.num_next_chunks. This field is
+         * only populated on SearchService.Search API.
+         *
+         * @param GoogleCloudDiscoveryengineV1Chunk[] $nextChunks
+         */
+        public function setNextChunks($nextChunks)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1Chunk[]
+         */
+        public function getNextChunks()
+        {
+        }
+        /**
+         * The previous chunks of the current chunk. The number is controlled by
+         * SearchRequest.ContentSearchSpec.ChunkSpec.num_previous_chunks. This field
+         * is only populated on SearchService.Search API.
+         *
+         * @param GoogleCloudDiscoveryengineV1Chunk[] $previousChunks
+         */
+        public function setPreviousChunks($previousChunks)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1Chunk[]
+         */
+        public function getPreviousChunks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1Chunk[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ChunkChunkMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextChunks()
-    {
-    }
-    /**
-     * The previous chunks of the current chunk. The number is controlled by
-     * SearchRequest.ContentSearchSpec.ChunkSpec.num_previous_chunks. This field
-     * is only populated on SearchService.Search API.
-     *
-     * @param GoogleCloudDiscoveryengineV1Chunk[] $previousChunks
-     */
-    public function setPreviousChunks($previousChunks)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1Chunk[]
-     */
-    public function getPreviousChunks()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ChunkChunkMetadata extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ChunkChunkMetadata
     {
     }
 }

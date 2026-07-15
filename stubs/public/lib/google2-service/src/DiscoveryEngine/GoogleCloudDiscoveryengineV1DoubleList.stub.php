@@ -21,21 +21,30 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1DoubleList extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * Double values.
-     *
-     * @var []
-     */
-    public $values;
-    public function setValues($values)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1DoubleList extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * Double values.
+         *
+         * @var []
+         */
+        public $values;
+        public function setValues($values)
+        {
+        }
+        public function getValues()
+        {
+        }
     }
-    public function getValues()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1DoubleList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1DoubleList extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1DoubleList
     {
     }
 }

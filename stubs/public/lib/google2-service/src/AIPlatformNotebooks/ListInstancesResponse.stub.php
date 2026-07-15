@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class ListInstancesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $instancesType = Instance::class;
-    protected $instancesDataType = 'array';
-    /**
-     * Page token that can be used to continue listing from the last result in the
-     * next list call.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached. For example, ['us-west1-a', 'us-
-     * central1-b']. A ListInstancesResponse will only contain either instances or
-     * unreachables,
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A list of returned instances.
-     *
-     * @param Instance[] $instances
-     */
-    public function setInstances($instances)
+namespace Google\Service\AIPlatformNotebooks {
+    class ListInstancesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $instancesType = Instance::class;
+        protected $instancesDataType = 'array';
+        /**
+         * Page token that can be used to continue listing from the last result in the
+         * next list call.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached. For example, ['us-west1-a', 'us-
+         * central1-b']. A ListInstancesResponse will only contain either instances or
+         * unreachables,
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A list of returned instances.
+         *
+         * @param Instance[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return Instance[]
+         */
+        public function getInstances()
+        {
+        }
+        /**
+         * Page token that can be used to continue listing from the last result in the
+         * next list call.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached. For example, ['us-west1-a', 'us-
+         * central1-b']. A ListInstancesResponse will only contain either instances or
+         * unreachables,
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Instance[]
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\ListInstancesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstances()
-    {
-    }
-    /**
-     * Page token that can be used to continue listing from the last result in the
-     * next list call.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached. For example, ['us-west1-a', 'us-
-     * central1-b']. A ListInstancesResponse will only contain either instances or
-     * unreachables,
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_AIPlatformNotebooks_ListInstancesResponse extends \Google\Service\AIPlatformNotebooks\ListInstancesResponse
     {
     }
 }

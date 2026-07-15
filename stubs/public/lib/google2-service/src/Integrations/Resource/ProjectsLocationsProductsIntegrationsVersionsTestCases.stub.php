@@ -21,45 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations\Resource;
-
-/**
- * The "testCases" collection of methods.
- * Typical usage is:
- *  <code>
- *   $integrationsService = new Google\Service\Integrations(...);
- *   $testCases = $integrationsService->projects_locations_products_integrations_versions_testCases;
- *  </code>
- */
-class ProjectsLocationsProductsIntegrationsVersionsTestCases extends \Google\Service\Resource
-{
+namespace Google\Service\Integrations\Resource {
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListTestCasesResponse;
     /**
-     * Lists all the test cases that satisfy the filters.
-     * (testCases.listProjectsLocationsProductsIntegrationsVersionsTestCases)
-     *
-     * @param string $parent Required. The parent resource where this TestCase was
-     * created.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Standard filter field. Filtering as
-     * supported in https://developers.google.com/authorized-
-     * buyers/apis/guides/list-filters.
-     * @opt_param string orderBy Optional. The results would be returned in order
-     * specified here. Currently supported sort keys are: Descending sort order for
-     * "last_modified_time", "created_time". Ascending sort order for "name".
-     * @opt_param int pageSize Optional. The maximum number of test cases to return.
-     * The service may return fewer than this value. If unspecified, at most 100
-     * test cases will be returned.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListTestCases` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListTestCases` must match the
-     * call that provided the page token.
-     * @opt_param string readMask Optional. The mask which specifies fields that
-     * need to be returned in the TestCases's response.
-     * @return GoogleCloudIntegrationsV1alphaListTestCasesResponse
-     * @throws \Google\Service\Exception
+     * The "testCases" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $integrationsService = new Google\Service\Integrations(...);
+     *   $testCases = $integrationsService->projects_locations_products_integrations_versions_testCases;
+     *  </code>
      */
-    public function listProjectsLocationsProductsIntegrationsVersionsTestCases($parent, $optParams = [])
+    class ProjectsLocationsProductsIntegrationsVersionsTestCases extends \Google\Service\Resource
+    {
+        /**
+         * Lists all the test cases that satisfy the filters.
+         * (testCases.listProjectsLocationsProductsIntegrationsVersionsTestCases)
+         *
+         * @param string $parent Required. The parent resource where this TestCase was
+         * created.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Standard filter field. Filtering as
+         * supported in https://developers.google.com/authorized-
+         * buyers/apis/guides/list-filters.
+         * @opt_param string orderBy Optional. The results would be returned in order
+         * specified here. Currently supported sort keys are: Descending sort order for
+         * "last_modified_time", "created_time". Ascending sort order for "name".
+         * @opt_param int pageSize Optional. The maximum number of test cases to return.
+         * The service may return fewer than this value. If unspecified, at most 100
+         * test cases will be returned.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListTestCases` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListTestCases` must match the
+         * call that provided the page token.
+         * @opt_param string readMask Optional. The mask which specifies fields that
+         * need to be returned in the TestCases's response.
+         * @return GoogleCloudIntegrationsV1alphaListTestCasesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsProductsIntegrationsVersionsTestCases($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Integrations\Resource\ProjectsLocationsProductsIntegrationsVersionsTestCases registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Integrations_Resource_ProjectsLocationsProductsIntegrationsVersionsTestCases extends \Google\Service\Integrations\Resource\ProjectsLocationsProductsIntegrationsVersionsTestCases
     {
     }
 }

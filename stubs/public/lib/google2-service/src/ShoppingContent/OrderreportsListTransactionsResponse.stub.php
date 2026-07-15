@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderreportsListTransactionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'transactions';
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $transactionsType = OrderReportTransaction::class;
-    protected $transactionsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setKind($kind)
+namespace Google\Service\ShoppingContent {
+    class OrderreportsListTransactionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'transactions';
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $transactionsType = OrderReportTransaction::class;
+        protected $transactionsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param OrderReportTransaction[]
+         */
+        public function setTransactions($transactions)
+        {
+        }
+        /**
+         * @return OrderReportTransaction[]
+         */
+        public function getTransactions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderreportsListTransactionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param OrderReportTransaction[]
-     */
-    public function setTransactions($transactions)
-    {
-    }
-    /**
-     * @return OrderReportTransaction[]
-     */
-    public function getTransactions()
+    class Google_Service_ShoppingContent_OrderreportsListTransactionsResponse extends \Google\Service\ShoppingContent\OrderreportsListTransactionsResponse
     {
     }
 }

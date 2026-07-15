@@ -21,39 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for CloudProfiler (v2).
- *
- * <p>
- * Manages continuous profiling information.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/profiler/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class CloudProfiler extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    /** View and write monitoring data for all of your Google and third-party Cloud and API projects. */
-    const MONITORING = "https://www.googleapis.com/auth/monitoring";
-    /** Publish metric data to your Google Cloud projects. */
-    const MONITORING_WRITE = "https://www.googleapis.com/auth/monitoring.write";
-    public $projects_profiles;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the CloudProfiler service.
+     * Service definition for CloudProfiler (v2).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Manages continuous profiling information.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/profiler/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class CloudProfiler extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        /** View and write monitoring data for all of your Google and third-party Cloud and API projects. */
+        const MONITORING = "https://www.googleapis.com/auth/monitoring";
+        /** Publish metric data to your Google Cloud projects. */
+        const MONITORING_WRITE = "https://www.googleapis.com/auth/monitoring.write";
+        public $projects_profiles;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the CloudProfiler service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudProfiler registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudProfiler extends \Google\Service\CloudProfiler
     {
     }
 }

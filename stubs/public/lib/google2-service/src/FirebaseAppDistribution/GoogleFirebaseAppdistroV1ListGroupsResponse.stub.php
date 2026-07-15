@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppDistribution;
-
-class GoogleFirebaseAppdistroV1ListGroupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'groups';
-    protected $groupsType = GoogleFirebaseAppdistroV1Group::class;
-    protected $groupsDataType = 'array';
-    /**
-     * A short-lived token, which can be sent as `pageToken` to retrieve the next
-     * page. If this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The groups listed.
-     *
-     * @param GoogleFirebaseAppdistroV1Group[] $groups
-     */
-    public function setGroups($groups)
+namespace Google\Service\FirebaseAppDistribution {
+    class GoogleFirebaseAppdistroV1ListGroupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'groups';
+        protected $groupsType = GoogleFirebaseAppdistroV1Group::class;
+        protected $groupsDataType = 'array';
+        /**
+         * A short-lived token, which can be sent as `pageToken` to retrieve the next
+         * page. If this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The groups listed.
+         *
+         * @param GoogleFirebaseAppdistroV1Group[] $groups
+         */
+        public function setGroups($groups)
+        {
+        }
+        /**
+         * @return GoogleFirebaseAppdistroV1Group[]
+         */
+        public function getGroups()
+        {
+        }
+        /**
+         * A short-lived token, which can be sent as `pageToken` to retrieve the next
+         * page. If this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFirebaseAppdistroV1Group[]
+     * Runtime class alias of \Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1ListGroupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroups()
-    {
-    }
-    /**
-     * A short-lived token, which can be sent as `pageToken` to retrieve the next
-     * page. If this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_FirebaseAppDistribution_GoogleFirebaseAppdistroV1ListGroupsResponse extends \Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1ListGroupsResponse
     {
     }
 }

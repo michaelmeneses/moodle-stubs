@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ExplanationSpec extends \Google\Model
-{
-    protected $metadataType = GoogleCloudAiplatformV1ExplanationMetadata::class;
-    protected $metadataDataType = '';
-    protected $parametersType = GoogleCloudAiplatformV1ExplanationParameters::class;
-    protected $parametersDataType = '';
-    /**
-     * Optional. Metadata describing the Model's input and output for explanation.
-     *
-     * @param GoogleCloudAiplatformV1ExplanationMetadata $metadata
-     */
-    public function setMetadata(GoogleCloudAiplatformV1ExplanationMetadata $metadata)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ExplanationSpec extends \Google\Model
     {
+        protected $metadataType = GoogleCloudAiplatformV1ExplanationMetadata::class;
+        protected $metadataDataType = '';
+        protected $parametersType = GoogleCloudAiplatformV1ExplanationParameters::class;
+        protected $parametersDataType = '';
+        /**
+         * Optional. Metadata describing the Model's input and output for explanation.
+         *
+         * @param GoogleCloudAiplatformV1ExplanationMetadata $metadata
+         */
+        public function setMetadata(GoogleCloudAiplatformV1ExplanationMetadata $metadata)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ExplanationMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Required. Parameters that configure explaining of the Model's predictions.
+         *
+         * @param GoogleCloudAiplatformV1ExplanationParameters $parameters
+         */
+        public function setParameters(GoogleCloudAiplatformV1ExplanationParameters $parameters)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ExplanationParameters
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ExplanationMetadata
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExplanationSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Required. Parameters that configure explaining of the Model's predictions.
-     *
-     * @param GoogleCloudAiplatformV1ExplanationParameters $parameters
-     */
-    public function setParameters(GoogleCloudAiplatformV1ExplanationParameters $parameters)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ExplanationParameters
-     */
-    public function getParameters()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ExplanationSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExplanationSpec
     {
     }
 }

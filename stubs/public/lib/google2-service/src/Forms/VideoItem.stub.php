@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class VideoItem extends \Google\Model
-{
-    /**
-     * The text displayed below the video.
-     *
-     * @var string
-     */
-    public $caption;
-    protected $videoType = Video::class;
-    protected $videoDataType = '';
-    /**
-     * The text displayed below the video.
-     *
-     * @param string $caption
-     */
-    public function setCaption($caption)
+namespace Google\Service\Forms {
+    class VideoItem extends \Google\Model
     {
+        /**
+         * The text displayed below the video.
+         *
+         * @var string
+         */
+        public $caption;
+        protected $videoType = Video::class;
+        protected $videoDataType = '';
+        /**
+         * The text displayed below the video.
+         *
+         * @param string $caption
+         */
+        public function setCaption($caption)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCaption()
+        {
+        }
+        /**
+         * Required. The video displayed in the item.
+         *
+         * @param Video $video
+         */
+        public function setVideo(Video $video)
+        {
+        }
+        /**
+         * @return Video
+         */
+        public function getVideo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Forms\VideoItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaption()
-    {
-    }
-    /**
-     * Required. The video displayed in the item.
-     *
-     * @param Video $video
-     */
-    public function setVideo(Video $video)
-    {
-    }
-    /**
-     * @return Video
-     */
-    public function getVideo()
+    class Google_Service_Forms_VideoItem extends \Google\Service\Forms\VideoItem
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class OpenCreatedDraftActionMarkup extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $draftId;
-    /**
-     * @var string
-     */
-    public $draftStorageId;
-    /**
-     * @var string
-     */
-    public $draftThreadId;
-    /**
-     * @var string
-     */
-    public $draftThreadServerPermId;
-    /**
-     * @param string
-     */
-    public function setDraftId($draftId)
+namespace Google\Service\CloudSearch {
+    class OpenCreatedDraftActionMarkup extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $draftId;
+        /**
+         * @var string
+         */
+        public $draftStorageId;
+        /**
+         * @var string
+         */
+        public $draftThreadId;
+        /**
+         * @var string
+         */
+        public $draftThreadServerPermId;
+        /**
+         * @param string
+         */
+        public function setDraftId($draftId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDraftId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDraftStorageId($draftStorageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDraftStorageId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDraftThreadId($draftThreadId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDraftThreadId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDraftThreadServerPermId($draftThreadServerPermId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDraftThreadServerPermId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\OpenCreatedDraftActionMarkup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDraftId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDraftStorageId($draftStorageId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDraftStorageId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDraftThreadId($draftThreadId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDraftThreadId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDraftThreadServerPermId($draftThreadServerPermId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDraftThreadServerPermId()
+    class Google_Service_CloudSearch_OpenCreatedDraftActionMarkup extends \Google\Service\CloudSearch\OpenCreatedDraftActionMarkup
     {
     }
 }

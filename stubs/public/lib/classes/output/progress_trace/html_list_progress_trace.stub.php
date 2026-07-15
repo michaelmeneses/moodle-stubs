@@ -20,25 +20,35 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output\progress_trace;
-
-/**
- * HTML List Progress Tree
- *
- * @copyright 2009 Tim Hunt
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @package core
- */
-class html_list_progress_trace extends progress_trace
-{
-    /** @var int The current depth of the trace*/
-    protected int $currentdepth = -1;
-    #[\Override]
-    public function output(string $message, int $depth = 0): void
+namespace core\output\progress_trace {
+    use core\output\progress_trace;
+    /**
+     * HTML List Progress Tree
+     *
+     * @copyright 2009 Tim Hunt
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @package core
+     */
+    class html_list_progress_trace extends progress_trace
     {
+        /** @var int The current depth of the trace*/
+        protected int $currentdepth = -1;
+        #[\Override]
+        public function output(string $message, int $depth = 0): void
+        {
+        }
+        #[\Override]
+        public function finished(): void
+        {
+        }
     }
-    #[\Override]
-    public function finished(): void
+}
+namespace {
+    /**
+     * Runtime class alias of \core\output\progress_trace\html_list_progress_trace registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class html_list_progress_trace extends \core\output\progress_trace\html_list_progress_trace
     {
     }
 }

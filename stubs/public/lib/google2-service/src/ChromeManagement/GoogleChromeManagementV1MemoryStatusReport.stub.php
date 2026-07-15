@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1MemoryStatusReport extends \Google\Model
-{
-    /**
-     * Output only. Number of page faults during this collection
-     *
-     * @var int
-     */
-    public $pageFaults;
-    /**
-     * Output only. The timestamp in milliseconds representing time at which this
-     * report was sampled.
-     *
-     * @var string
-     */
-    public $reportTime;
-    /**
-     * Output only. Frequency the report is sampled.
-     *
-     * @var string
-     */
-    public $sampleFrequency;
-    /**
-     * Output only. Amount of free RAM in bytes (unreliable due to Garbage
-     * Collection).
-     *
-     * @var string
-     */
-    public $systemRamFreeBytes;
-    /**
-     * Output only. Number of page faults during this collection
-     *
-     * @param int $pageFaults
-     */
-    public function setPageFaults($pageFaults)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1MemoryStatusReport extends \Google\Model
     {
+        /**
+         * Output only. Number of page faults during this collection
+         *
+         * @var int
+         */
+        public $pageFaults;
+        /**
+         * Output only. The timestamp in milliseconds representing time at which this
+         * report was sampled.
+         *
+         * @var string
+         */
+        public $reportTime;
+        /**
+         * Output only. Frequency the report is sampled.
+         *
+         * @var string
+         */
+        public $sampleFrequency;
+        /**
+         * Output only. Amount of free RAM in bytes (unreliable due to Garbage
+         * Collection).
+         *
+         * @var string
+         */
+        public $systemRamFreeBytes;
+        /**
+         * Output only. Number of page faults during this collection
+         *
+         * @param int $pageFaults
+         */
+        public function setPageFaults($pageFaults)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageFaults()
+        {
+        }
+        /**
+         * Output only. The timestamp in milliseconds representing time at which this
+         * report was sampled.
+         *
+         * @param string $reportTime
+         */
+        public function setReportTime($reportTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportTime()
+        {
+        }
+        /**
+         * Output only. Frequency the report is sampled.
+         *
+         * @param string $sampleFrequency
+         */
+        public function setSampleFrequency($sampleFrequency)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSampleFrequency()
+        {
+        }
+        /**
+         * Output only. Amount of free RAM in bytes (unreliable due to Garbage
+         * Collection).
+         *
+         * @param string $systemRamFreeBytes
+         */
+        public function setSystemRamFreeBytes($systemRamFreeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSystemRamFreeBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1MemoryStatusReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageFaults()
-    {
-    }
-    /**
-     * Output only. The timestamp in milliseconds representing time at which this
-     * report was sampled.
-     *
-     * @param string $reportTime
-     */
-    public function setReportTime($reportTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportTime()
-    {
-    }
-    /**
-     * Output only. Frequency the report is sampled.
-     *
-     * @param string $sampleFrequency
-     */
-    public function setSampleFrequency($sampleFrequency)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSampleFrequency()
-    {
-    }
-    /**
-     * Output only. Amount of free RAM in bytes (unreliable due to Garbage
-     * Collection).
-     *
-     * @param string $systemRamFreeBytes
-     */
-    public function setSystemRamFreeBytes($systemRamFreeBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSystemRamFreeBytes()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1MemoryStatusReport extends \Google\Service\ChromeManagement\GoogleChromeManagementV1MemoryStatusReport
     {
     }
 }

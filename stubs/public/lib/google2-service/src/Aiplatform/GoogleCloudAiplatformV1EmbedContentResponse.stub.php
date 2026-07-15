@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EmbedContentResponse extends \Google\Model
-{
-    protected $embeddingType = GoogleCloudAiplatformV1EmbedContentResponseEmbedding::class;
-    protected $embeddingDataType = '';
-    /**
-     * Whether the input content was truncated before generating the embedding.
-     *
-     * @var bool
-     */
-    public $truncated;
-    protected $usageMetadataType = GoogleCloudAiplatformV1UsageMetadata::class;
-    protected $usageMetadataDataType = '';
-    /**
-     * The embedding generated from the input content.
-     *
-     * @param GoogleCloudAiplatformV1EmbedContentResponseEmbedding $embedding
-     */
-    public function setEmbedding(GoogleCloudAiplatformV1EmbedContentResponseEmbedding $embedding)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EmbedContentResponse extends \Google\Model
     {
+        protected $embeddingType = GoogleCloudAiplatformV1EmbedContentResponseEmbedding::class;
+        protected $embeddingDataType = '';
+        /**
+         * Whether the input content was truncated before generating the embedding.
+         *
+         * @var bool
+         */
+        public $truncated;
+        protected $usageMetadataType = GoogleCloudAiplatformV1UsageMetadata::class;
+        protected $usageMetadataDataType = '';
+        /**
+         * The embedding generated from the input content.
+         *
+         * @param GoogleCloudAiplatformV1EmbedContentResponseEmbedding $embedding
+         */
+        public function setEmbedding(GoogleCloudAiplatformV1EmbedContentResponseEmbedding $embedding)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EmbedContentResponseEmbedding
+         */
+        public function getEmbedding()
+        {
+        }
+        /**
+         * Whether the input content was truncated before generating the embedding.
+         *
+         * @param bool $truncated
+         */
+        public function setTruncated($truncated)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTruncated()
+        {
+        }
+        /**
+         * Metadata about the response(s).
+         *
+         * @param GoogleCloudAiplatformV1UsageMetadata $usageMetadata
+         */
+        public function setUsageMetadata(GoogleCloudAiplatformV1UsageMetadata $usageMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1UsageMetadata
+         */
+        public function getUsageMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1EmbedContentResponseEmbedding
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EmbedContentResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmbedding()
-    {
-    }
-    /**
-     * Whether the input content was truncated before generating the embedding.
-     *
-     * @param bool $truncated
-     */
-    public function setTruncated($truncated)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTruncated()
-    {
-    }
-    /**
-     * Metadata about the response(s).
-     *
-     * @param GoogleCloudAiplatformV1UsageMetadata $usageMetadata
-     */
-    public function setUsageMetadata(GoogleCloudAiplatformV1UsageMetadata $usageMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1UsageMetadata
-     */
-    public function getUsageMetadata()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EmbedContentResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EmbedContentResponse
     {
     }
 }

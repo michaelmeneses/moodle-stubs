@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkflowExecutions;
-
-class Error extends \Google\Model
-{
-    /**
-     * Human-readable stack trace string.
-     *
-     * @var string
-     */
-    public $context;
-    /**
-     * Error message and data returned represented as a JSON string.
-     *
-     * @var string
-     */
-    public $payload;
-    protected $stackTraceType = StackTrace::class;
-    protected $stackTraceDataType = '';
-    /**
-     * Human-readable stack trace string.
-     *
-     * @param string $context
-     */
-    public function setContext($context)
+namespace Google\Service\WorkflowExecutions {
+    class Error extends \Google\Model
     {
+        /**
+         * Human-readable stack trace string.
+         *
+         * @var string
+         */
+        public $context;
+        /**
+         * Error message and data returned represented as a JSON string.
+         *
+         * @var string
+         */
+        public $payload;
+        protected $stackTraceType = StackTrace::class;
+        protected $stackTraceDataType = '';
+        /**
+         * Human-readable stack trace string.
+         *
+         * @param string $context
+         */
+        public function setContext($context)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContext()
+        {
+        }
+        /**
+         * Error message and data returned represented as a JSON string.
+         *
+         * @param string $payload
+         */
+        public function setPayload($payload)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPayload()
+        {
+        }
+        /**
+         * Stack trace with detailed information of where error was generated.
+         *
+         * @param StackTrace $stackTrace
+         */
+        public function setStackTrace(StackTrace $stackTrace)
+        {
+        }
+        /**
+         * @return StackTrace
+         */
+        public function getStackTrace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkflowExecutions\Error registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContext()
-    {
-    }
-    /**
-     * Error message and data returned represented as a JSON string.
-     *
-     * @param string $payload
-     */
-    public function setPayload($payload)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPayload()
-    {
-    }
-    /**
-     * Stack trace with detailed information of where error was generated.
-     *
-     * @param StackTrace $stackTrace
-     */
-    public function setStackTrace(StackTrace $stackTrace)
-    {
-    }
-    /**
-     * @return StackTrace
-     */
-    public function getStackTrace()
+    class Google_Service_WorkflowExecutions_Error extends \Google\Service\WorkflowExecutions\Error
     {
     }
 }

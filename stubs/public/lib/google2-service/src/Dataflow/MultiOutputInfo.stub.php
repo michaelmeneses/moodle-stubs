@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class MultiOutputInfo extends \Google\Model
-{
-    /**
-     * The id of the tag the user code will emit to this output by; this should
-     * correspond to the tag of some SideInputInfo.
-     *
-     * @var string
-     */
-    public $tag;
-    /**
-     * The id of the tag the user code will emit to this output by; this should
-     * correspond to the tag of some SideInputInfo.
-     *
-     * @param string $tag
-     */
-    public function setTag($tag)
+namespace Google\Service\Dataflow {
+    class MultiOutputInfo extends \Google\Model
     {
+        /**
+         * The id of the tag the user code will emit to this output by; this should
+         * correspond to the tag of some SideInputInfo.
+         *
+         * @var string
+         */
+        public $tag;
+        /**
+         * The id of the tag the user code will emit to this output by; this should
+         * correspond to the tag of some SideInputInfo.
+         *
+         * @param string $tag
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\MultiOutputInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTag()
+    class Google_Service_Dataflow_MultiOutputInfo extends \Google\Service\Dataflow\MultiOutputInfo
     {
     }
 }

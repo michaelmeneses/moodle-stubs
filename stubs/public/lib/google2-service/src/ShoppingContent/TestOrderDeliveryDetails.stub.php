@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class TestOrderDeliveryDetails extends \Google\Model
-{
-    protected $addressType = TestOrderAddress::class;
-    protected $addressDataType = '';
-    /**
-     * @var bool
-     */
-    public $isScheduledDelivery;
-    /**
-     * @var string
-     */
-    public $phoneNumber;
-    /**
-     * @param TestOrderAddress
-     */
-    public function setAddress(TestOrderAddress $address)
+namespace Google\Service\ShoppingContent {
+    class TestOrderDeliveryDetails extends \Google\Model
     {
+        protected $addressType = TestOrderAddress::class;
+        protected $addressDataType = '';
+        /**
+         * @var bool
+         */
+        public $isScheduledDelivery;
+        /**
+         * @var string
+         */
+        public $phoneNumber;
+        /**
+         * @param TestOrderAddress
+         */
+        public function setAddress(TestOrderAddress $address)
+        {
+        }
+        /**
+         * @return TestOrderAddress
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIsScheduledDelivery($isScheduledDelivery)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsScheduledDelivery()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TestOrderAddress
+     * Runtime class alias of \Google\Service\ShoppingContent\TestOrderDeliveryDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIsScheduledDelivery($isScheduledDelivery)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsScheduledDelivery()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPhoneNumber($phoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneNumber()
+    class Google_Service_ShoppingContent_TestOrderDeliveryDetails extends \Google\Service\ShoppingContent\TestOrderDeliveryDetails
     {
     }
 }

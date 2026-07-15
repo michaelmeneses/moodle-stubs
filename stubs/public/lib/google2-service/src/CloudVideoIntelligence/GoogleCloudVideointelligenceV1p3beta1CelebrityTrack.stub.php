@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1p3beta1CelebrityTrack extends \Google\Collection
-{
-    protected $collection_key = 'celebrities';
-    protected $celebritiesType = GoogleCloudVideointelligenceV1p3beta1RecognizedCelebrity::class;
-    protected $celebritiesDataType = 'array';
-    protected $faceTrackType = GoogleCloudVideointelligenceV1p3beta1Track::class;
-    protected $faceTrackDataType = '';
-    /**
-     * Top N match of the celebrities for the face in this track.
-     *
-     * @param GoogleCloudVideointelligenceV1p3beta1RecognizedCelebrity[] $celebrities
-     */
-    public function setCelebrities($celebrities)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1p3beta1CelebrityTrack extends \Google\Collection
     {
+        protected $collection_key = 'celebrities';
+        protected $celebritiesType = GoogleCloudVideointelligenceV1p3beta1RecognizedCelebrity::class;
+        protected $celebritiesDataType = 'array';
+        protected $faceTrackType = GoogleCloudVideointelligenceV1p3beta1Track::class;
+        protected $faceTrackDataType = '';
+        /**
+         * Top N match of the celebrities for the face in this track.
+         *
+         * @param GoogleCloudVideointelligenceV1p3beta1RecognizedCelebrity[] $celebrities
+         */
+        public function setCelebrities($celebrities)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1p3beta1RecognizedCelebrity[]
+         */
+        public function getCelebrities()
+        {
+        }
+        /**
+         * A track of a person's face.
+         *
+         * @param GoogleCloudVideointelligenceV1p3beta1Track $faceTrack
+         */
+        public function setFaceTrack(GoogleCloudVideointelligenceV1p3beta1Track $faceTrack)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1p3beta1Track
+         */
+        public function getFaceTrack()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVideointelligenceV1p3beta1RecognizedCelebrity[]
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p3beta1CelebrityTrack registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCelebrities()
-    {
-    }
-    /**
-     * A track of a person's face.
-     *
-     * @param GoogleCloudVideointelligenceV1p3beta1Track $faceTrack
-     */
-    public function setFaceTrack(GoogleCloudVideointelligenceV1p3beta1Track $faceTrack)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1p3beta1Track
-     */
-    public function getFaceTrack()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1CelebrityTrack extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p3beta1CelebrityTrack
     {
     }
 }

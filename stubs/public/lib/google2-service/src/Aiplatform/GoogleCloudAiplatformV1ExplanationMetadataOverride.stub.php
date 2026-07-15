@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ExplanationMetadataOverride extends \Google\Model
-{
-    protected $inputsType = GoogleCloudAiplatformV1ExplanationMetadataOverrideInputMetadataOverride::class;
-    protected $inputsDataType = 'map';
-    /**
-     * Required. Overrides the input metadata of the features. The key is the name
-     * of the feature to be overridden. The keys specified here must exist in the
-     * input metadata to be overridden. If a feature is not specified here, the
-     * corresponding feature's input metadata is not overridden.
-     *
-     * @param GoogleCloudAiplatformV1ExplanationMetadataOverrideInputMetadataOverride[] $inputs
-     */
-    public function setInputs($inputs)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ExplanationMetadataOverride extends \Google\Model
     {
+        protected $inputsType = GoogleCloudAiplatformV1ExplanationMetadataOverrideInputMetadataOverride::class;
+        protected $inputsDataType = 'map';
+        /**
+         * Required. Overrides the input metadata of the features. The key is the name
+         * of the feature to be overridden. The keys specified here must exist in the
+         * input metadata to be overridden. If a feature is not specified here, the
+         * corresponding feature's input metadata is not overridden.
+         *
+         * @param GoogleCloudAiplatformV1ExplanationMetadataOverrideInputMetadataOverride[] $inputs
+         */
+        public function setInputs($inputs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ExplanationMetadataOverrideInputMetadataOverride[]
+         */
+        public function getInputs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ExplanationMetadataOverrideInputMetadataOverride[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExplanationMetadataOverride registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputs()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ExplanationMetadataOverride extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExplanationMetadataOverride
     {
     }
 }

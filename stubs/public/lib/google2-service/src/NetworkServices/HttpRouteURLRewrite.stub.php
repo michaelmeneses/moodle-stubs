@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class HttpRouteURLRewrite extends \Google\Model
-{
-    /**
-     * Prior to forwarding the request to the selected destination, the requests
-     * host header is replaced by this value.
-     *
-     * @var string
-     */
-    public $hostRewrite;
-    /**
-     * Prior to forwarding the request to the selected destination, the matching
-     * portion of the requests path is replaced by this value.
-     *
-     * @var string
-     */
-    public $pathPrefixRewrite;
-    /**
-     * Prior to forwarding the request to the selected destination, the requests
-     * host header is replaced by this value.
-     *
-     * @param string $hostRewrite
-     */
-    public function setHostRewrite($hostRewrite)
+namespace Google\Service\NetworkServices {
+    class HttpRouteURLRewrite extends \Google\Model
     {
+        /**
+         * Prior to forwarding the request to the selected destination, the requests
+         * host header is replaced by this value.
+         *
+         * @var string
+         */
+        public $hostRewrite;
+        /**
+         * Prior to forwarding the request to the selected destination, the matching
+         * portion of the requests path is replaced by this value.
+         *
+         * @var string
+         */
+        public $pathPrefixRewrite;
+        /**
+         * Prior to forwarding the request to the selected destination, the requests
+         * host header is replaced by this value.
+         *
+         * @param string $hostRewrite
+         */
+        public function setHostRewrite($hostRewrite)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostRewrite()
+        {
+        }
+        /**
+         * Prior to forwarding the request to the selected destination, the matching
+         * portion of the requests path is replaced by this value.
+         *
+         * @param string $pathPrefixRewrite
+         */
+        public function setPathPrefixRewrite($pathPrefixRewrite)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPathPrefixRewrite()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkServices\HttpRouteURLRewrite registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHostRewrite()
-    {
-    }
-    /**
-     * Prior to forwarding the request to the selected destination, the matching
-     * portion of the requests path is replaced by this value.
-     *
-     * @param string $pathPrefixRewrite
-     */
-    public function setPathPrefixRewrite($pathPrefixRewrite)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPathPrefixRewrite()
+    class Google_Service_NetworkServices_HttpRouteURLRewrite extends \Google\Service\NetworkServices\HttpRouteURLRewrite
     {
     }
 }

@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class ShardingOption extends \Google\Model
-{
-    protected $manualShardingType = ManualSharding::class;
-    protected $manualShardingDataType = '';
-    protected $smartShardingType = SmartSharding::class;
-    protected $smartShardingDataType = '';
-    protected $uniformShardingType = UniformSharding::class;
-    protected $uniformShardingDataType = '';
-    /**
-     * Shards test cases into the specified groups of packages, classes, and/or
-     * methods.
-     *
-     * @param ManualSharding $manualSharding
-     */
-    public function setManualSharding(ManualSharding $manualSharding)
+namespace Google\Service\Testing {
+    class ShardingOption extends \Google\Model
     {
+        protected $manualShardingType = ManualSharding::class;
+        protected $manualShardingDataType = '';
+        protected $smartShardingType = SmartSharding::class;
+        protected $smartShardingDataType = '';
+        protected $uniformShardingType = UniformSharding::class;
+        protected $uniformShardingDataType = '';
+        /**
+         * Shards test cases into the specified groups of packages, classes, and/or
+         * methods.
+         *
+         * @param ManualSharding $manualSharding
+         */
+        public function setManualSharding(ManualSharding $manualSharding)
+        {
+        }
+        /**
+         * @return ManualSharding
+         */
+        public function getManualSharding()
+        {
+        }
+        /**
+         * Shards test based on previous test case timing records.
+         *
+         * @param SmartSharding $smartSharding
+         */
+        public function setSmartSharding(SmartSharding $smartSharding)
+        {
+        }
+        /**
+         * @return SmartSharding
+         */
+        public function getSmartSharding()
+        {
+        }
+        /**
+         * Uniformly shards test cases given a total number of shards.
+         *
+         * @param UniformSharding $uniformSharding
+         */
+        public function setUniformSharding(UniformSharding $uniformSharding)
+        {
+        }
+        /**
+         * @return UniformSharding
+         */
+        public function getUniformSharding()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ManualSharding
+     * Runtime class alias of \Google\Service\Testing\ShardingOption registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getManualSharding()
-    {
-    }
-    /**
-     * Shards test based on previous test case timing records.
-     *
-     * @param SmartSharding $smartSharding
-     */
-    public function setSmartSharding(SmartSharding $smartSharding)
-    {
-    }
-    /**
-     * @return SmartSharding
-     */
-    public function getSmartSharding()
-    {
-    }
-    /**
-     * Uniformly shards test cases given a total number of shards.
-     *
-     * @param UniformSharding $uniformSharding
-     */
-    public function setUniformSharding(UniformSharding $uniformSharding)
-    {
-    }
-    /**
-     * @return UniformSharding
-     */
-    public function getUniformSharding()
+    class Google_Service_Testing_ShardingOption extends \Google\Service\Testing\ShardingOption
     {
     }
 }

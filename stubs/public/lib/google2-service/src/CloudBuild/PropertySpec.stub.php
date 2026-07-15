@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class PropertySpec extends \Google\Model
-{
-    /**
-     * Default enum type; should not be used.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * Default
-     */
-    public const TYPE_STRING = 'STRING';
-    /**
-     * A type for the object.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * A type for the object.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, STRING
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\CloudBuild {
+    class PropertySpec extends \Google\Model
     {
+        /**
+         * Default enum type; should not be used.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * Default
+         */
+        public const TYPE_STRING = 'STRING';
+        /**
+         * A type for the object.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * A type for the object.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, STRING
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\CloudBuild\PropertySpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_CloudBuild_PropertySpec extends \Google\Service\CloudBuild\PropertySpec
     {
     }
 }

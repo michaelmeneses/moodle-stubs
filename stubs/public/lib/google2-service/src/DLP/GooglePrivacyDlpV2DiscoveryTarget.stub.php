@@ -21,117 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DiscoveryTarget extends \Google\Model
-{
-    protected $bigQueryTargetType = GooglePrivacyDlpV2BigQueryDiscoveryTarget::class;
-    protected $bigQueryTargetDataType = '';
-    protected $cloudSqlTargetType = GooglePrivacyDlpV2CloudSqlDiscoveryTarget::class;
-    protected $cloudSqlTargetDataType = '';
-    protected $cloudStorageTargetType = GooglePrivacyDlpV2CloudStorageDiscoveryTarget::class;
-    protected $cloudStorageTargetDataType = '';
-    protected $otherCloudTargetType = GooglePrivacyDlpV2OtherCloudDiscoveryTarget::class;
-    protected $otherCloudTargetDataType = '';
-    protected $secretsTargetType = GooglePrivacyDlpV2SecretsDiscoveryTarget::class;
-    protected $secretsTargetDataType = '';
-    protected $vertexDatasetTargetType = GooglePrivacyDlpV2VertexDatasetDiscoveryTarget::class;
-    protected $vertexDatasetTargetDataType = '';
-    /**
-     * BigQuery target for Discovery. The first target to match a table will be
-     * the one applied.
-     *
-     * @param GooglePrivacyDlpV2BigQueryDiscoveryTarget $bigQueryTarget
-     */
-    public function setBigQueryTarget(GooglePrivacyDlpV2BigQueryDiscoveryTarget $bigQueryTarget)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DiscoveryTarget extends \Google\Model
     {
+        protected $bigQueryTargetType = GooglePrivacyDlpV2BigQueryDiscoveryTarget::class;
+        protected $bigQueryTargetDataType = '';
+        protected $cloudSqlTargetType = GooglePrivacyDlpV2CloudSqlDiscoveryTarget::class;
+        protected $cloudSqlTargetDataType = '';
+        protected $cloudStorageTargetType = GooglePrivacyDlpV2CloudStorageDiscoveryTarget::class;
+        protected $cloudStorageTargetDataType = '';
+        protected $otherCloudTargetType = GooglePrivacyDlpV2OtherCloudDiscoveryTarget::class;
+        protected $otherCloudTargetDataType = '';
+        protected $secretsTargetType = GooglePrivacyDlpV2SecretsDiscoveryTarget::class;
+        protected $secretsTargetDataType = '';
+        protected $vertexDatasetTargetType = GooglePrivacyDlpV2VertexDatasetDiscoveryTarget::class;
+        protected $vertexDatasetTargetDataType = '';
+        /**
+         * BigQuery target for Discovery. The first target to match a table will be
+         * the one applied.
+         *
+         * @param GooglePrivacyDlpV2BigQueryDiscoveryTarget $bigQueryTarget
+         */
+        public function setBigQueryTarget(GooglePrivacyDlpV2BigQueryDiscoveryTarget $bigQueryTarget)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2BigQueryDiscoveryTarget
+         */
+        public function getBigQueryTarget()
+        {
+        }
+        /**
+         * Cloud SQL target for Discovery. The first target to match a table will be
+         * the one applied.
+         *
+         * @param GooglePrivacyDlpV2CloudSqlDiscoveryTarget $cloudSqlTarget
+         */
+        public function setCloudSqlTarget(GooglePrivacyDlpV2CloudSqlDiscoveryTarget $cloudSqlTarget)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2CloudSqlDiscoveryTarget
+         */
+        public function getCloudSqlTarget()
+        {
+        }
+        /**
+         * Cloud Storage target for Discovery. The first target to match a table will
+         * be the one applied.
+         *
+         * @param GooglePrivacyDlpV2CloudStorageDiscoveryTarget $cloudStorageTarget
+         */
+        public function setCloudStorageTarget(GooglePrivacyDlpV2CloudStorageDiscoveryTarget $cloudStorageTarget)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2CloudStorageDiscoveryTarget
+         */
+        public function getCloudStorageTarget()
+        {
+        }
+        /**
+         * Other clouds target for discovery. The first target to match a resource
+         * will be the one applied.
+         *
+         * @param GooglePrivacyDlpV2OtherCloudDiscoveryTarget $otherCloudTarget
+         */
+        public function setOtherCloudTarget(GooglePrivacyDlpV2OtherCloudDiscoveryTarget $otherCloudTarget)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2OtherCloudDiscoveryTarget
+         */
+        public function getOtherCloudTarget()
+        {
+        }
+        /**
+         * Discovery target that looks for credentials and secrets stored in cloud
+         * resource metadata and reports them as vulnerabilities to Security Command
+         * Center. Only one target of this type is allowed.
+         *
+         * @param GooglePrivacyDlpV2SecretsDiscoveryTarget $secretsTarget
+         */
+        public function setSecretsTarget(GooglePrivacyDlpV2SecretsDiscoveryTarget $secretsTarget)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2SecretsDiscoveryTarget
+         */
+        public function getSecretsTarget()
+        {
+        }
+        /**
+         * Vertex AI dataset target for Discovery. The first target to match a dataset
+         * will be the one applied. Note that discovery for Vertex AI can incur Cloud
+         * Storage Class B operation charges for storage.objects.get operations and
+         * retrieval fees. For more information, see [Cloud Storage
+         * pricing](https://cloud.google.com/storage/pricing#price-tables). Note that
+         * discovery for Vertex AI dataset will not be able to scan images unless
+         * DiscoveryConfig.processing_location.image_fallback_location has
+         * multi_region_processing or global_processing configured.
+         *
+         * @param GooglePrivacyDlpV2VertexDatasetDiscoveryTarget $vertexDatasetTarget
+         */
+        public function setVertexDatasetTarget(GooglePrivacyDlpV2VertexDatasetDiscoveryTarget $vertexDatasetTarget)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2VertexDatasetDiscoveryTarget
+         */
+        public function getVertexDatasetTarget()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2BigQueryDiscoveryTarget
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DiscoveryTarget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigQueryTarget()
-    {
-    }
-    /**
-     * Cloud SQL target for Discovery. The first target to match a table will be
-     * the one applied.
-     *
-     * @param GooglePrivacyDlpV2CloudSqlDiscoveryTarget $cloudSqlTarget
-     */
-    public function setCloudSqlTarget(GooglePrivacyDlpV2CloudSqlDiscoveryTarget $cloudSqlTarget)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2CloudSqlDiscoveryTarget
-     */
-    public function getCloudSqlTarget()
-    {
-    }
-    /**
-     * Cloud Storage target for Discovery. The first target to match a table will
-     * be the one applied.
-     *
-     * @param GooglePrivacyDlpV2CloudStorageDiscoveryTarget $cloudStorageTarget
-     */
-    public function setCloudStorageTarget(GooglePrivacyDlpV2CloudStorageDiscoveryTarget $cloudStorageTarget)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2CloudStorageDiscoveryTarget
-     */
-    public function getCloudStorageTarget()
-    {
-    }
-    /**
-     * Other clouds target for discovery. The first target to match a resource
-     * will be the one applied.
-     *
-     * @param GooglePrivacyDlpV2OtherCloudDiscoveryTarget $otherCloudTarget
-     */
-    public function setOtherCloudTarget(GooglePrivacyDlpV2OtherCloudDiscoveryTarget $otherCloudTarget)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2OtherCloudDiscoveryTarget
-     */
-    public function getOtherCloudTarget()
-    {
-    }
-    /**
-     * Discovery target that looks for credentials and secrets stored in cloud
-     * resource metadata and reports them as vulnerabilities to Security Command
-     * Center. Only one target of this type is allowed.
-     *
-     * @param GooglePrivacyDlpV2SecretsDiscoveryTarget $secretsTarget
-     */
-    public function setSecretsTarget(GooglePrivacyDlpV2SecretsDiscoveryTarget $secretsTarget)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2SecretsDiscoveryTarget
-     */
-    public function getSecretsTarget()
-    {
-    }
-    /**
-     * Vertex AI dataset target for Discovery. The first target to match a dataset
-     * will be the one applied. Note that discovery for Vertex AI can incur Cloud
-     * Storage Class B operation charges for storage.objects.get operations and
-     * retrieval fees. For more information, see [Cloud Storage
-     * pricing](https://cloud.google.com/storage/pricing#price-tables). Note that
-     * discovery for Vertex AI dataset will not be able to scan images unless
-     * DiscoveryConfig.processing_location.image_fallback_location has
-     * multi_region_processing or global_processing configured.
-     *
-     * @param GooglePrivacyDlpV2VertexDatasetDiscoveryTarget $vertexDatasetTarget
-     */
-    public function setVertexDatasetTarget(GooglePrivacyDlpV2VertexDatasetDiscoveryTarget $vertexDatasetTarget)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2VertexDatasetDiscoveryTarget
-     */
-    public function getVertexDatasetTarget()
+    class Google_Service_DLP_GooglePrivacyDlpV2DiscoveryTarget extends \Google\Service\DLP\GooglePrivacyDlpV2DiscoveryTarget
     {
     }
 }

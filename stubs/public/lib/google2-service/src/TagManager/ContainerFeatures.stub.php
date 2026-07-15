@@ -21,288 +21,297 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class ContainerFeatures extends \Google\Model
-{
-    /**
-     * Whether this Container supports built-in variables
-     *
-     * @var bool
-     */
-    public $supportBuiltInVariables;
-    /**
-     * Whether this Container supports clients.
-     *
-     * @var bool
-     */
-    public $supportClients;
-    /**
-     * Whether this Container supports environments.
-     *
-     * @var bool
-     */
-    public $supportEnvironments;
-    /**
-     * Whether this Container supports folders.
-     *
-     * @var bool
-     */
-    public $supportFolders;
-    /**
-     * Whether this Container supports Google tag config.
-     *
-     * @var bool
-     */
-    public $supportGtagConfigs;
-    /**
-     * Whether this Container supports tags.
-     *
-     * @var bool
-     */
-    public $supportTags;
-    /**
-     * Whether this Container supports templates.
-     *
-     * @var bool
-     */
-    public $supportTemplates;
-    /**
-     * Whether this Container supports transformations.
-     *
-     * @var bool
-     */
-    public $supportTransformations;
-    /**
-     * Whether this Container supports triggers.
-     *
-     * @var bool
-     */
-    public $supportTriggers;
-    /**
-     * Whether this Container supports user permissions managed by GTM.
-     *
-     * @var bool
-     */
-    public $supportUserPermissions;
-    /**
-     * Whether this Container supports variables.
-     *
-     * @var bool
-     */
-    public $supportVariables;
-    /**
-     * Whether this Container supports Container versions.
-     *
-     * @var bool
-     */
-    public $supportVersions;
-    /**
-     * Whether this Container supports workspaces.
-     *
-     * @var bool
-     */
-    public $supportWorkspaces;
-    /**
-     * Whether this Container supports zones.
-     *
-     * @var bool
-     */
-    public $supportZones;
-    /**
-     * Whether this Container supports built-in variables
-     *
-     * @param bool $supportBuiltInVariables
-     */
-    public function setSupportBuiltInVariables($supportBuiltInVariables)
+namespace Google\Service\TagManager {
+    class ContainerFeatures extends \Google\Model
     {
+        /**
+         * Whether this Container supports built-in variables
+         *
+         * @var bool
+         */
+        public $supportBuiltInVariables;
+        /**
+         * Whether this Container supports clients.
+         *
+         * @var bool
+         */
+        public $supportClients;
+        /**
+         * Whether this Container supports environments.
+         *
+         * @var bool
+         */
+        public $supportEnvironments;
+        /**
+         * Whether this Container supports folders.
+         *
+         * @var bool
+         */
+        public $supportFolders;
+        /**
+         * Whether this Container supports Google tag config.
+         *
+         * @var bool
+         */
+        public $supportGtagConfigs;
+        /**
+         * Whether this Container supports tags.
+         *
+         * @var bool
+         */
+        public $supportTags;
+        /**
+         * Whether this Container supports templates.
+         *
+         * @var bool
+         */
+        public $supportTemplates;
+        /**
+         * Whether this Container supports transformations.
+         *
+         * @var bool
+         */
+        public $supportTransformations;
+        /**
+         * Whether this Container supports triggers.
+         *
+         * @var bool
+         */
+        public $supportTriggers;
+        /**
+         * Whether this Container supports user permissions managed by GTM.
+         *
+         * @var bool
+         */
+        public $supportUserPermissions;
+        /**
+         * Whether this Container supports variables.
+         *
+         * @var bool
+         */
+        public $supportVariables;
+        /**
+         * Whether this Container supports Container versions.
+         *
+         * @var bool
+         */
+        public $supportVersions;
+        /**
+         * Whether this Container supports workspaces.
+         *
+         * @var bool
+         */
+        public $supportWorkspaces;
+        /**
+         * Whether this Container supports zones.
+         *
+         * @var bool
+         */
+        public $supportZones;
+        /**
+         * Whether this Container supports built-in variables
+         *
+         * @param bool $supportBuiltInVariables
+         */
+        public function setSupportBuiltInVariables($supportBuiltInVariables)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportBuiltInVariables()
+        {
+        }
+        /**
+         * Whether this Container supports clients.
+         *
+         * @param bool $supportClients
+         */
+        public function setSupportClients($supportClients)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportClients()
+        {
+        }
+        /**
+         * Whether this Container supports environments.
+         *
+         * @param bool $supportEnvironments
+         */
+        public function setSupportEnvironments($supportEnvironments)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportEnvironments()
+        {
+        }
+        /**
+         * Whether this Container supports folders.
+         *
+         * @param bool $supportFolders
+         */
+        public function setSupportFolders($supportFolders)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportFolders()
+        {
+        }
+        /**
+         * Whether this Container supports Google tag config.
+         *
+         * @param bool $supportGtagConfigs
+         */
+        public function setSupportGtagConfigs($supportGtagConfigs)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportGtagConfigs()
+        {
+        }
+        /**
+         * Whether this Container supports tags.
+         *
+         * @param bool $supportTags
+         */
+        public function setSupportTags($supportTags)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportTags()
+        {
+        }
+        /**
+         * Whether this Container supports templates.
+         *
+         * @param bool $supportTemplates
+         */
+        public function setSupportTemplates($supportTemplates)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportTemplates()
+        {
+        }
+        /**
+         * Whether this Container supports transformations.
+         *
+         * @param bool $supportTransformations
+         */
+        public function setSupportTransformations($supportTransformations)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportTransformations()
+        {
+        }
+        /**
+         * Whether this Container supports triggers.
+         *
+         * @param bool $supportTriggers
+         */
+        public function setSupportTriggers($supportTriggers)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportTriggers()
+        {
+        }
+        /**
+         * Whether this Container supports user permissions managed by GTM.
+         *
+         * @param bool $supportUserPermissions
+         */
+        public function setSupportUserPermissions($supportUserPermissions)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportUserPermissions()
+        {
+        }
+        /**
+         * Whether this Container supports variables.
+         *
+         * @param bool $supportVariables
+         */
+        public function setSupportVariables($supportVariables)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportVariables()
+        {
+        }
+        /**
+         * Whether this Container supports Container versions.
+         *
+         * @param bool $supportVersions
+         */
+        public function setSupportVersions($supportVersions)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportVersions()
+        {
+        }
+        /**
+         * Whether this Container supports workspaces.
+         *
+         * @param bool $supportWorkspaces
+         */
+        public function setSupportWorkspaces($supportWorkspaces)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportWorkspaces()
+        {
+        }
+        /**
+         * Whether this Container supports zones.
+         *
+         * @param bool $supportZones
+         */
+        public function setSupportZones($supportZones)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportZones()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\TagManager\ContainerFeatures registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSupportBuiltInVariables()
-    {
-    }
-    /**
-     * Whether this Container supports clients.
-     *
-     * @param bool $supportClients
-     */
-    public function setSupportClients($supportClients)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportClients()
-    {
-    }
-    /**
-     * Whether this Container supports environments.
-     *
-     * @param bool $supportEnvironments
-     */
-    public function setSupportEnvironments($supportEnvironments)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportEnvironments()
-    {
-    }
-    /**
-     * Whether this Container supports folders.
-     *
-     * @param bool $supportFolders
-     */
-    public function setSupportFolders($supportFolders)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportFolders()
-    {
-    }
-    /**
-     * Whether this Container supports Google tag config.
-     *
-     * @param bool $supportGtagConfigs
-     */
-    public function setSupportGtagConfigs($supportGtagConfigs)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportGtagConfigs()
-    {
-    }
-    /**
-     * Whether this Container supports tags.
-     *
-     * @param bool $supportTags
-     */
-    public function setSupportTags($supportTags)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportTags()
-    {
-    }
-    /**
-     * Whether this Container supports templates.
-     *
-     * @param bool $supportTemplates
-     */
-    public function setSupportTemplates($supportTemplates)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportTemplates()
-    {
-    }
-    /**
-     * Whether this Container supports transformations.
-     *
-     * @param bool $supportTransformations
-     */
-    public function setSupportTransformations($supportTransformations)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportTransformations()
-    {
-    }
-    /**
-     * Whether this Container supports triggers.
-     *
-     * @param bool $supportTriggers
-     */
-    public function setSupportTriggers($supportTriggers)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportTriggers()
-    {
-    }
-    /**
-     * Whether this Container supports user permissions managed by GTM.
-     *
-     * @param bool $supportUserPermissions
-     */
-    public function setSupportUserPermissions($supportUserPermissions)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportUserPermissions()
-    {
-    }
-    /**
-     * Whether this Container supports variables.
-     *
-     * @param bool $supportVariables
-     */
-    public function setSupportVariables($supportVariables)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportVariables()
-    {
-    }
-    /**
-     * Whether this Container supports Container versions.
-     *
-     * @param bool $supportVersions
-     */
-    public function setSupportVersions($supportVersions)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportVersions()
-    {
-    }
-    /**
-     * Whether this Container supports workspaces.
-     *
-     * @param bool $supportWorkspaces
-     */
-    public function setSupportWorkspaces($supportWorkspaces)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportWorkspaces()
-    {
-    }
-    /**
-     * Whether this Container supports zones.
-     *
-     * @param bool $supportZones
-     */
-    public function setSupportZones($supportZones)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportZones()
+    class Google_Service_TagManager_ContainerFeatures extends \Google\Service\TagManager\ContainerFeatures
     {
     }
 }

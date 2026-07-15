@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class InstructionInput extends \Google\Model
-{
-    /**
-     * The output index (origin zero) within the producer.
-     *
-     * @var int
-     */
-    public $outputNum;
-    /**
-     * The index (origin zero) of the parallel instruction that produces the
-     * output to be consumed by this input. This index is relative to the list of
-     * instructions in this input's instruction's containing MapTask.
-     *
-     * @var int
-     */
-    public $producerInstructionIndex;
-    /**
-     * The output index (origin zero) within the producer.
-     *
-     * @param int $outputNum
-     */
-    public function setOutputNum($outputNum)
+namespace Google\Service\Dataflow {
+    class InstructionInput extends \Google\Model
     {
+        /**
+         * The output index (origin zero) within the producer.
+         *
+         * @var int
+         */
+        public $outputNum;
+        /**
+         * The index (origin zero) of the parallel instruction that produces the
+         * output to be consumed by this input. This index is relative to the list of
+         * instructions in this input's instruction's containing MapTask.
+         *
+         * @var int
+         */
+        public $producerInstructionIndex;
+        /**
+         * The output index (origin zero) within the producer.
+         *
+         * @param int $outputNum
+         */
+        public function setOutputNum($outputNum)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOutputNum()
+        {
+        }
+        /**
+         * The index (origin zero) of the parallel instruction that produces the
+         * output to be consumed by this input. This index is relative to the list of
+         * instructions in this input's instruction's containing MapTask.
+         *
+         * @param int $producerInstructionIndex
+         */
+        public function setProducerInstructionIndex($producerInstructionIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getProducerInstructionIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dataflow\InstructionInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutputNum()
-    {
-    }
-    /**
-     * The index (origin zero) of the parallel instruction that produces the
-     * output to be consumed by this input. This index is relative to the list of
-     * instructions in this input's instruction's containing MapTask.
-     *
-     * @param int $producerInstructionIndex
-     */
-    public function setProducerInstructionIndex($producerInstructionIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getProducerInstructionIndex()
+    class Google_Service_Dataflow_InstructionInput extends \Google\Service\Dataflow\InstructionInput
     {
     }
 }

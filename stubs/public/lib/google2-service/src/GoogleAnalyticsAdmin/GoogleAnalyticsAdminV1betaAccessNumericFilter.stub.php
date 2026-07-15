@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaAccessNumericFilter extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const OPERATION_OPERATION_UNSPECIFIED = 'OPERATION_UNSPECIFIED';
-    /**
-     * Equal
-     */
-    public const OPERATION_EQUAL = 'EQUAL';
-    /**
-     * Less than
-     */
-    public const OPERATION_LESS_THAN = 'LESS_THAN';
-    /**
-     * Less than or equal
-     */
-    public const OPERATION_LESS_THAN_OR_EQUAL = 'LESS_THAN_OR_EQUAL';
-    /**
-     * Greater than
-     */
-    public const OPERATION_GREATER_THAN = 'GREATER_THAN';
-    /**
-     * Greater than or equal
-     */
-    public const OPERATION_GREATER_THAN_OR_EQUAL = 'GREATER_THAN_OR_EQUAL';
-    /**
-     * The operation type for this filter.
-     *
-     * @var string
-     */
-    public $operation;
-    protected $valueType = GoogleAnalyticsAdminV1betaNumericValue::class;
-    protected $valueDataType = '';
-    /**
-     * The operation type for this filter.
-     *
-     * Accepted values: OPERATION_UNSPECIFIED, EQUAL, LESS_THAN,
-     * LESS_THAN_OR_EQUAL, GREATER_THAN, GREATER_THAN_OR_EQUAL
-     *
-     * @param self::OPERATION_* $operation
-     */
-    public function setOperation($operation)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaAccessNumericFilter extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const OPERATION_OPERATION_UNSPECIFIED = 'OPERATION_UNSPECIFIED';
+        /**
+         * Equal
+         */
+        public const OPERATION_EQUAL = 'EQUAL';
+        /**
+         * Less than
+         */
+        public const OPERATION_LESS_THAN = 'LESS_THAN';
+        /**
+         * Less than or equal
+         */
+        public const OPERATION_LESS_THAN_OR_EQUAL = 'LESS_THAN_OR_EQUAL';
+        /**
+         * Greater than
+         */
+        public const OPERATION_GREATER_THAN = 'GREATER_THAN';
+        /**
+         * Greater than or equal
+         */
+        public const OPERATION_GREATER_THAN_OR_EQUAL = 'GREATER_THAN_OR_EQUAL';
+        /**
+         * The operation type for this filter.
+         *
+         * @var string
+         */
+        public $operation;
+        protected $valueType = GoogleAnalyticsAdminV1betaNumericValue::class;
+        protected $valueDataType = '';
+        /**
+         * The operation type for this filter.
+         *
+         * Accepted values: OPERATION_UNSPECIFIED, EQUAL, LESS_THAN,
+         * LESS_THAN_OR_EQUAL, GREATER_THAN, GREATER_THAN_OR_EQUAL
+         *
+         * @param self::OPERATION_* $operation
+         */
+        public function setOperation($operation)
+        {
+        }
+        /**
+         * @return self::OPERATION_*
+         */
+        public function getOperation()
+        {
+        }
+        /**
+         * A numeric value or a date value.
+         *
+         * @param GoogleAnalyticsAdminV1betaNumericValue $value
+         */
+        public function setValue(GoogleAnalyticsAdminV1betaNumericValue $value)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaNumericValue
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::OPERATION_*
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccessNumericFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperation()
-    {
-    }
-    /**
-     * A numeric value or a date value.
-     *
-     * @param GoogleAnalyticsAdminV1betaNumericValue $value
-     */
-    public function setValue(GoogleAnalyticsAdminV1betaNumericValue $value)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1betaNumericValue
-     */
-    public function getValue()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaAccessNumericFilter extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccessNumericFilter
     {
     }
 }

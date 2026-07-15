@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ReadFeatureValuesRequest extends \Google\Model
-{
-    /**
-     * Required. ID for a specific entity. For example, for a machine learning
-     * model predicting user clicks on a website, an entity ID could be
-     * `user_123`.
-     *
-     * @var string
-     */
-    public $entityId;
-    protected $featureSelectorType = GoogleCloudAiplatformV1FeatureSelector::class;
-    protected $featureSelectorDataType = '';
-    /**
-     * Required. ID for a specific entity. For example, for a machine learning
-     * model predicting user clicks on a website, an entity ID could be
-     * `user_123`.
-     *
-     * @param string $entityId
-     */
-    public function setEntityId($entityId)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ReadFeatureValuesRequest extends \Google\Model
     {
+        /**
+         * Required. ID for a specific entity. For example, for a machine learning
+         * model predicting user clicks on a website, an entity ID could be
+         * `user_123`.
+         *
+         * @var string
+         */
+        public $entityId;
+        protected $featureSelectorType = GoogleCloudAiplatformV1FeatureSelector::class;
+        protected $featureSelectorDataType = '';
+        /**
+         * Required. ID for a specific entity. For example, for a machine learning
+         * model predicting user clicks on a website, an entity ID could be
+         * `user_123`.
+         *
+         * @param string $entityId
+         */
+        public function setEntityId($entityId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityId()
+        {
+        }
+        /**
+         * Required. Selector choosing Features of the target EntityType.
+         *
+         * @param GoogleCloudAiplatformV1FeatureSelector $featureSelector
+         */
+        public function setFeatureSelector(GoogleCloudAiplatformV1FeatureSelector $featureSelector)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeatureSelector
+         */
+        public function getFeatureSelector()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadFeatureValuesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntityId()
-    {
-    }
-    /**
-     * Required. Selector choosing Features of the target EntityType.
-     *
-     * @param GoogleCloudAiplatformV1FeatureSelector $featureSelector
-     */
-    public function setFeatureSelector(GoogleCloudAiplatformV1FeatureSelector $featureSelector)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FeatureSelector
-     */
-    public function getFeatureSelector()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ReadFeatureValuesRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadFeatureValuesRequest
     {
     }
 }

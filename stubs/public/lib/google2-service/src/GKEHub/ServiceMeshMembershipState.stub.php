@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ServiceMeshMembershipState extends \Google\Collection
-{
-    protected $collection_key = 'conditions';
-    protected $conditionsType = ServiceMeshCondition::class;
-    protected $conditionsDataType = 'array';
-    protected $controlPlaneManagementType = ServiceMeshControlPlaneManagement::class;
-    protected $controlPlaneManagementDataType = '';
-    protected $dataPlaneManagementType = ServiceMeshDataPlaneManagement::class;
-    protected $dataPlaneManagementDataType = '';
-    /**
-     * @param ServiceMeshCondition[]
-     */
-    public function setConditions($conditions)
+namespace Google\Service\GKEHub {
+    class ServiceMeshMembershipState extends \Google\Collection
     {
+        protected $collection_key = 'conditions';
+        protected $conditionsType = ServiceMeshCondition::class;
+        protected $conditionsDataType = 'array';
+        protected $controlPlaneManagementType = ServiceMeshControlPlaneManagement::class;
+        protected $controlPlaneManagementDataType = '';
+        protected $dataPlaneManagementType = ServiceMeshDataPlaneManagement::class;
+        protected $dataPlaneManagementDataType = '';
+        /**
+         * @param ServiceMeshCondition[]
+         */
+        public function setConditions($conditions)
+        {
+        }
+        /**
+         * @return ServiceMeshCondition[]
+         */
+        public function getConditions()
+        {
+        }
+        /**
+         * @param ServiceMeshControlPlaneManagement
+         */
+        public function setControlPlaneManagement(ServiceMeshControlPlaneManagement $controlPlaneManagement)
+        {
+        }
+        /**
+         * @return ServiceMeshControlPlaneManagement
+         */
+        public function getControlPlaneManagement()
+        {
+        }
+        /**
+         * @param ServiceMeshDataPlaneManagement
+         */
+        public function setDataPlaneManagement(ServiceMeshDataPlaneManagement $dataPlaneManagement)
+        {
+        }
+        /**
+         * @return ServiceMeshDataPlaneManagement
+         */
+        public function getDataPlaneManagement()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ServiceMeshCondition[]
+     * Runtime class alias of \Google\Service\GKEHub\ServiceMeshMembershipState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConditions()
-    {
-    }
-    /**
-     * @param ServiceMeshControlPlaneManagement
-     */
-    public function setControlPlaneManagement(ServiceMeshControlPlaneManagement $controlPlaneManagement)
-    {
-    }
-    /**
-     * @return ServiceMeshControlPlaneManagement
-     */
-    public function getControlPlaneManagement()
-    {
-    }
-    /**
-     * @param ServiceMeshDataPlaneManagement
-     */
-    public function setDataPlaneManagement(ServiceMeshDataPlaneManagement $dataPlaneManagement)
-    {
-    }
-    /**
-     * @return ServiceMeshDataPlaneManagement
-     */
-    public function getDataPlaneManagement()
+    class Google_Service_GKEHub_ServiceMeshMembershipState extends \Google\Service\GKEHub\ServiceMeshMembershipState
     {
     }
 }

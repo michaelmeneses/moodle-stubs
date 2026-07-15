@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2FindMissingBlobsRequest extends \Google\Collection
-{
-    protected $collection_key = 'blobDigests';
-    protected $blobDigestsType = BuildBazelRemoteExecutionV2Digest::class;
-    protected $blobDigestsDataType = 'array';
-    /**
-     * @param BuildBazelRemoteExecutionV2Digest[]
-     */
-    public function setBlobDigests($blobDigests)
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2FindMissingBlobsRequest extends \Google\Collection
     {
+        protected $collection_key = 'blobDigests';
+        protected $blobDigestsType = BuildBazelRemoteExecutionV2Digest::class;
+        protected $blobDigestsDataType = 'array';
+        /**
+         * @param BuildBazelRemoteExecutionV2Digest[]
+         */
+        public function setBlobDigests($blobDigests)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2Digest[]
+         */
+        public function getBlobDigests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BuildBazelRemoteExecutionV2Digest[]
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2FindMissingBlobsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlobDigests()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2FindMissingBlobsRequest extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2FindMissingBlobsRequest
     {
     }
 }

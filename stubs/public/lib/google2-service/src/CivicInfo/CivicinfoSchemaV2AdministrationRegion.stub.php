@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class CivicinfoSchemaV2AdministrationRegion extends \Google\Collection
-{
-    protected $collection_key = 'sources';
-    protected $internal_gapi_mappings = ["localJurisdiction" => "local_jurisdiction"];
-    protected $electionAdministrationBodyType = CivicinfoSchemaV2AdministrativeBody::class;
-    protected $electionAdministrationBodyDataType = '';
-    protected $localJurisdictionType = CivicinfoSchemaV2AdministrationRegion::class;
-    protected $localJurisdictionDataType = '';
-    /**
-     * The name of the jurisdiction.
-     *
-     * @var string
-     */
-    public $name;
-    protected $sourcesType = CivicinfoSchemaV2Source::class;
-    protected $sourcesDataType = 'array';
-    /**
-     * The election administration body for this area.
-     *
-     * @param CivicinfoSchemaV2AdministrativeBody $electionAdministrationBody
-     */
-    public function setElectionAdministrationBody(CivicinfoSchemaV2AdministrativeBody $electionAdministrationBody)
+namespace Google\Service\CivicInfo {
+    class CivicinfoSchemaV2AdministrationRegion extends \Google\Collection
     {
+        protected $collection_key = 'sources';
+        protected $internal_gapi_mappings = ["localJurisdiction" => "local_jurisdiction"];
+        protected $electionAdministrationBodyType = CivicinfoSchemaV2AdministrativeBody::class;
+        protected $electionAdministrationBodyDataType = '';
+        protected $localJurisdictionType = CivicinfoSchemaV2AdministrationRegion::class;
+        protected $localJurisdictionDataType = '';
+        /**
+         * The name of the jurisdiction.
+         *
+         * @var string
+         */
+        public $name;
+        protected $sourcesType = CivicinfoSchemaV2Source::class;
+        protected $sourcesDataType = 'array';
+        /**
+         * The election administration body for this area.
+         *
+         * @param CivicinfoSchemaV2AdministrativeBody $electionAdministrationBody
+         */
+        public function setElectionAdministrationBody(CivicinfoSchemaV2AdministrativeBody $electionAdministrationBody)
+        {
+        }
+        /**
+         * @return CivicinfoSchemaV2AdministrativeBody
+         */
+        public function getElectionAdministrationBody()
+        {
+        }
+        /**
+         * The city or county that provides election information for this voter. This
+         * object can have the same elements as state.
+         *
+         * @param CivicinfoSchemaV2AdministrationRegion $localJurisdiction
+         */
+        public function setLocalJurisdiction(CivicinfoSchemaV2AdministrationRegion $localJurisdiction)
+        {
+        }
+        /**
+         * @return CivicinfoSchemaV2AdministrationRegion
+         */
+        public function getLocalJurisdiction()
+        {
+        }
+        /**
+         * The name of the jurisdiction.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * A list of sources for this area. If multiple sources are listed the data
+         * has been aggregated from those sources.
+         *
+         * @param CivicinfoSchemaV2Source[] $sources
+         */
+        public function setSources($sources)
+        {
+        }
+        /**
+         * @return CivicinfoSchemaV2Source[]
+         */
+        public function getSources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CivicinfoSchemaV2AdministrativeBody
+     * Runtime class alias of \Google\Service\CivicInfo\CivicinfoSchemaV2AdministrationRegion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getElectionAdministrationBody()
-    {
-    }
-    /**
-     * The city or county that provides election information for this voter. This
-     * object can have the same elements as state.
-     *
-     * @param CivicinfoSchemaV2AdministrationRegion $localJurisdiction
-     */
-    public function setLocalJurisdiction(CivicinfoSchemaV2AdministrationRegion $localJurisdiction)
-    {
-    }
-    /**
-     * @return CivicinfoSchemaV2AdministrationRegion
-     */
-    public function getLocalJurisdiction()
-    {
-    }
-    /**
-     * The name of the jurisdiction.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * A list of sources for this area. If multiple sources are listed the data
-     * has been aggregated from those sources.
-     *
-     * @param CivicinfoSchemaV2Source[] $sources
-     */
-    public function setSources($sources)
-    {
-    }
-    /**
-     * @return CivicinfoSchemaV2Source[]
-     */
-    public function getSources()
+    class Google_Service_CivicInfo_CivicinfoSchemaV2AdministrationRegion extends \Google\Service\CivicInfo\CivicinfoSchemaV2AdministrationRegion
     {
     }
 }

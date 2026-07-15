@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderreturnsProcessRequest extends \Google\Collection
-{
-    protected $collection_key = 'returnItems';
-    /**
-     * @var bool
-     */
-    public $fullChargeReturnShippingCost;
-    /**
-     * @var string
-     */
-    public $operationId;
-    protected $refundShippingFeeType = OrderreturnsRefundOperation::class;
-    protected $refundShippingFeeDataType = '';
-    protected $returnItemsType = OrderreturnsReturnItem::class;
-    protected $returnItemsDataType = 'array';
-    /**
-     * @param bool
-     */
-    public function setFullChargeReturnShippingCost($fullChargeReturnShippingCost)
+namespace Google\Service\ShoppingContent {
+    class OrderreturnsProcessRequest extends \Google\Collection
     {
+        protected $collection_key = 'returnItems';
+        /**
+         * @var bool
+         */
+        public $fullChargeReturnShippingCost;
+        /**
+         * @var string
+         */
+        public $operationId;
+        protected $refundShippingFeeType = OrderreturnsRefundOperation::class;
+        protected $refundShippingFeeDataType = '';
+        protected $returnItemsType = OrderreturnsReturnItem::class;
+        protected $returnItemsDataType = 'array';
+        /**
+         * @param bool
+         */
+        public function setFullChargeReturnShippingCost($fullChargeReturnShippingCost)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFullChargeReturnShippingCost()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOperationId($operationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperationId()
+        {
+        }
+        /**
+         * @param OrderreturnsRefundOperation
+         */
+        public function setRefundShippingFee(OrderreturnsRefundOperation $refundShippingFee)
+        {
+        }
+        /**
+         * @return OrderreturnsRefundOperation
+         */
+        public function getRefundShippingFee()
+        {
+        }
+        /**
+         * @param OrderreturnsReturnItem[]
+         */
+        public function setReturnItems($returnItems)
+        {
+        }
+        /**
+         * @return OrderreturnsReturnItem[]
+         */
+        public function getReturnItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderreturnsProcessRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFullChargeReturnShippingCost()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOperationId($operationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperationId()
-    {
-    }
-    /**
-     * @param OrderreturnsRefundOperation
-     */
-    public function setRefundShippingFee(OrderreturnsRefundOperation $refundShippingFee)
-    {
-    }
-    /**
-     * @return OrderreturnsRefundOperation
-     */
-    public function getRefundShippingFee()
-    {
-    }
-    /**
-     * @param OrderreturnsReturnItem[]
-     */
-    public function setReturnItems($returnItems)
-    {
-    }
-    /**
-     * @return OrderreturnsReturnItem[]
-     */
-    public function getReturnItems()
+    class Google_Service_ShoppingContent_OrderreturnsProcessRequest extends \Google\Service\ShoppingContent\OrderreturnsProcessRequest
     {
     }
 }

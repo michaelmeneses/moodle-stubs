@@ -21,154 +21,163 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class InstanceIosDetails extends \Google\Model
-{
-    /**
-     * Bundle identifier.
-     *
-     * @var string
-     */
-    public $bundleIdentifier;
-    /**
-     * iTunes App ID.
-     *
-     * @var string
-     */
-    public $itunesAppId;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#instanceIosDetails`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Indicates that this instance is the default for new installations on iPad
-     * devices.
-     *
-     * @var bool
-     */
-    public $preferredForIpad;
-    /**
-     * Indicates that this instance is the default for new installations on iPhone
-     * devices.
-     *
-     * @var bool
-     */
-    public $preferredForIphone;
-    /**
-     * Flag to indicate if this instance supports iPad.
-     *
-     * @var bool
-     */
-    public $supportIpad;
-    /**
-     * Flag to indicate if this instance supports iPhone.
-     *
-     * @var bool
-     */
-    public $supportIphone;
-    /**
-     * Bundle identifier.
-     *
-     * @param string $bundleIdentifier
-     */
-    public function setBundleIdentifier($bundleIdentifier)
+namespace Google\Service\Games {
+    class InstanceIosDetails extends \Google\Model
     {
+        /**
+         * Bundle identifier.
+         *
+         * @var string
+         */
+        public $bundleIdentifier;
+        /**
+         * iTunes App ID.
+         *
+         * @var string
+         */
+        public $itunesAppId;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#instanceIosDetails`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Indicates that this instance is the default for new installations on iPad
+         * devices.
+         *
+         * @var bool
+         */
+        public $preferredForIpad;
+        /**
+         * Indicates that this instance is the default for new installations on iPhone
+         * devices.
+         *
+         * @var bool
+         */
+        public $preferredForIphone;
+        /**
+         * Flag to indicate if this instance supports iPad.
+         *
+         * @var bool
+         */
+        public $supportIpad;
+        /**
+         * Flag to indicate if this instance supports iPhone.
+         *
+         * @var bool
+         */
+        public $supportIphone;
+        /**
+         * Bundle identifier.
+         *
+         * @param string $bundleIdentifier
+         */
+        public function setBundleIdentifier($bundleIdentifier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBundleIdentifier()
+        {
+        }
+        /**
+         * iTunes App ID.
+         *
+         * @param string $itunesAppId
+         */
+        public function setItunesAppId($itunesAppId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getItunesAppId()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#instanceIosDetails`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Indicates that this instance is the default for new installations on iPad
+         * devices.
+         *
+         * @param bool $preferredForIpad
+         */
+        public function setPreferredForIpad($preferredForIpad)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPreferredForIpad()
+        {
+        }
+        /**
+         * Indicates that this instance is the default for new installations on iPhone
+         * devices.
+         *
+         * @param bool $preferredForIphone
+         */
+        public function setPreferredForIphone($preferredForIphone)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPreferredForIphone()
+        {
+        }
+        /**
+         * Flag to indicate if this instance supports iPad.
+         *
+         * @param bool $supportIpad
+         */
+        public function setSupportIpad($supportIpad)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportIpad()
+        {
+        }
+        /**
+         * Flag to indicate if this instance supports iPhone.
+         *
+         * @param bool $supportIphone
+         */
+        public function setSupportIphone($supportIphone)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportIphone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\InstanceIosDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBundleIdentifier()
-    {
-    }
-    /**
-     * iTunes App ID.
-     *
-     * @param string $itunesAppId
-     */
-    public function setItunesAppId($itunesAppId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getItunesAppId()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#instanceIosDetails`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Indicates that this instance is the default for new installations on iPad
-     * devices.
-     *
-     * @param bool $preferredForIpad
-     */
-    public function setPreferredForIpad($preferredForIpad)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPreferredForIpad()
-    {
-    }
-    /**
-     * Indicates that this instance is the default for new installations on iPhone
-     * devices.
-     *
-     * @param bool $preferredForIphone
-     */
-    public function setPreferredForIphone($preferredForIphone)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPreferredForIphone()
-    {
-    }
-    /**
-     * Flag to indicate if this instance supports iPad.
-     *
-     * @param bool $supportIpad
-     */
-    public function setSupportIpad($supportIpad)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportIpad()
-    {
-    }
-    /**
-     * Flag to indicate if this instance supports iPhone.
-     *
-     * @param bool $supportIphone
-     */
-    public function setSupportIphone($supportIphone)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportIphone()
+    class Google_Service_Games_InstanceIosDetails extends \Google\Service\Games\InstanceIosDetails
     {
     }
 }

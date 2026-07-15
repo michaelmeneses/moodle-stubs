@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class RemarketingAudienceStateBasedAudienceDefinition extends \Google\Model
-{
-    protected $excludeConditionsType = RemarketingAudienceStateBasedAudienceDefinitionExcludeConditions::class;
-    protected $excludeConditionsDataType = '';
-    protected $includeConditionsType = IncludeConditions::class;
-    protected $includeConditionsDataType = '';
-    /**
-     * Defines the conditions to exclude users from the audience.
-     *
-     * @param RemarketingAudienceStateBasedAudienceDefinitionExcludeConditions $excludeConditions
-     */
-    public function setExcludeConditions(RemarketingAudienceStateBasedAudienceDefinitionExcludeConditions $excludeConditions)
+namespace Google\Service\Analytics {
+    class RemarketingAudienceStateBasedAudienceDefinition extends \Google\Model
     {
+        protected $excludeConditionsType = RemarketingAudienceStateBasedAudienceDefinitionExcludeConditions::class;
+        protected $excludeConditionsDataType = '';
+        protected $includeConditionsType = IncludeConditions::class;
+        protected $includeConditionsDataType = '';
+        /**
+         * Defines the conditions to exclude users from the audience.
+         *
+         * @param RemarketingAudienceStateBasedAudienceDefinitionExcludeConditions $excludeConditions
+         */
+        public function setExcludeConditions(RemarketingAudienceStateBasedAudienceDefinitionExcludeConditions $excludeConditions)
+        {
+        }
+        /**
+         * @return RemarketingAudienceStateBasedAudienceDefinitionExcludeConditions
+         */
+        public function getExcludeConditions()
+        {
+        }
+        /**
+         * Defines the conditions to include users to the audience.
+         *
+         * @param IncludeConditions $includeConditions
+         */
+        public function setIncludeConditions(IncludeConditions $includeConditions)
+        {
+        }
+        /**
+         * @return IncludeConditions
+         */
+        public function getIncludeConditions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RemarketingAudienceStateBasedAudienceDefinitionExcludeConditions
+     * Runtime class alias of \Google\Service\Analytics\RemarketingAudienceStateBasedAudienceDefinition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExcludeConditions()
-    {
-    }
-    /**
-     * Defines the conditions to include users to the audience.
-     *
-     * @param IncludeConditions $includeConditions
-     */
-    public function setIncludeConditions(IncludeConditions $includeConditions)
-    {
-    }
-    /**
-     * @return IncludeConditions
-     */
-    public function getIncludeConditions()
+    class Google_Service_Analytics_RemarketingAudienceStateBasedAudienceDefinition extends \Google\Service\Analytics\RemarketingAudienceStateBasedAudienceDefinition
     {
     }
 }

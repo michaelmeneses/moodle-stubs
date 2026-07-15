@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI;
-
-class DomainJoinMachineRequest extends \Google\Model
-{
-    /**
-     * Optional. force if True, forces domain join even if the computer account
-     * already exists.
-     *
-     * @var bool
-     */
-    public $force;
-    /**
-     * Optional. OU name where the VM needs to be domain joined
-     *
-     * @var string
-     */
-    public $ouName;
-    /**
-     * Required. Full instance id token of compute engine VM to verify instance
-     * identity. More about this:
-     * https://cloud.google.com/compute/docs/instances/verifying-instance-
-     * identity#request_signature
-     *
-     * @var string
-     */
-    public $vmIdToken;
-    /**
-     * Optional. force if True, forces domain join even if the computer account
-     * already exists.
-     *
-     * @param bool $force
-     */
-    public function setForce($force)
+namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI {
+    class DomainJoinMachineRequest extends \Google\Model
     {
+        /**
+         * Optional. force if True, forces domain join even if the computer account
+         * already exists.
+         *
+         * @var bool
+         */
+        public $force;
+        /**
+         * Optional. OU name where the VM needs to be domain joined
+         *
+         * @var string
+         */
+        public $ouName;
+        /**
+         * Required. Full instance id token of compute engine VM to verify instance
+         * identity. More about this:
+         * https://cloud.google.com/compute/docs/instances/verifying-instance-
+         * identity#request_signature
+         *
+         * @var string
+         */
+        public $vmIdToken;
+        /**
+         * Optional. force if True, forces domain join even if the computer account
+         * already exists.
+         *
+         * @param bool $force
+         */
+        public function setForce($force)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getForce()
+        {
+        }
+        /**
+         * Optional. OU name where the VM needs to be domain joined
+         *
+         * @param string $ouName
+         */
+        public function setOuName($ouName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOuName()
+        {
+        }
+        /**
+         * Required. Full instance id token of compute engine VM to verify instance
+         * identity. More about this:
+         * https://cloud.google.com/compute/docs/instances/verifying-instance-
+         * identity#request_signature
+         *
+         * @param string $vmIdToken
+         */
+        public function setVmIdToken($vmIdToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVmIdToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\DomainJoinMachineRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getForce()
-    {
-    }
-    /**
-     * Optional. OU name where the VM needs to be domain joined
-     *
-     * @param string $ouName
-     */
-    public function setOuName($ouName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOuName()
-    {
-    }
-    /**
-     * Required. Full instance id token of compute engine VM to verify instance
-     * identity. More about this:
-     * https://cloud.google.com/compute/docs/instances/verifying-instance-
-     * identity#request_signature
-     *
-     * @param string $vmIdToken
-     */
-    public function setVmIdToken($vmIdToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVmIdToken()
+    class Google_Service_ManagedServiceforMicrosoftActiveDirectoryConsumerAPI_DomainJoinMachineRequest extends \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\DomainJoinMachineRequest
     {
     }
 }

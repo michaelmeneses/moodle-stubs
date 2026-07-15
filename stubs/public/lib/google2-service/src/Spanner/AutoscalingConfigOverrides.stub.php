@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class AutoscalingConfigOverrides extends \Google\Model
-{
-    protected $autoscalingLimitsType = AutoscalingLimits::class;
-    protected $autoscalingLimitsDataType = '';
-    /**
-     * Optional. If specified, overrides the autoscaling target
-     * high_priority_cpu_utilization_percent in the top-level autoscaling
-     * configuration for the selected replicas.
-     *
-     * @var int
-     */
-    public $autoscalingTargetHighPriorityCpuUtilizationPercent;
-    /**
-     * Optional. If specified, overrides the min/max limit in the top-level
-     * autoscaling configuration for the selected replicas.
-     *
-     * @param AutoscalingLimits $autoscalingLimits
-     */
-    public function setAutoscalingLimits(AutoscalingLimits $autoscalingLimits)
+namespace Google\Service\Spanner {
+    class AutoscalingConfigOverrides extends \Google\Model
     {
+        protected $autoscalingLimitsType = AutoscalingLimits::class;
+        protected $autoscalingLimitsDataType = '';
+        /**
+         * Optional. If specified, overrides the autoscaling target
+         * high_priority_cpu_utilization_percent in the top-level autoscaling
+         * configuration for the selected replicas.
+         *
+         * @var int
+         */
+        public $autoscalingTargetHighPriorityCpuUtilizationPercent;
+        /**
+         * Optional. If specified, overrides the min/max limit in the top-level
+         * autoscaling configuration for the selected replicas.
+         *
+         * @param AutoscalingLimits $autoscalingLimits
+         */
+        public function setAutoscalingLimits(AutoscalingLimits $autoscalingLimits)
+        {
+        }
+        /**
+         * @return AutoscalingLimits
+         */
+        public function getAutoscalingLimits()
+        {
+        }
+        /**
+         * Optional. If specified, overrides the autoscaling target
+         * high_priority_cpu_utilization_percent in the top-level autoscaling
+         * configuration for the selected replicas.
+         *
+         * @param int $autoscalingTargetHighPriorityCpuUtilizationPercent
+         */
+        public function setAutoscalingTargetHighPriorityCpuUtilizationPercent($autoscalingTargetHighPriorityCpuUtilizationPercent)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAutoscalingTargetHighPriorityCpuUtilizationPercent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AutoscalingLimits
+     * Runtime class alias of \Google\Service\Spanner\AutoscalingConfigOverrides registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoscalingLimits()
-    {
-    }
-    /**
-     * Optional. If specified, overrides the autoscaling target
-     * high_priority_cpu_utilization_percent in the top-level autoscaling
-     * configuration for the selected replicas.
-     *
-     * @param int $autoscalingTargetHighPriorityCpuUtilizationPercent
-     */
-    public function setAutoscalingTargetHighPriorityCpuUtilizationPercent($autoscalingTargetHighPriorityCpuUtilizationPercent)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getAutoscalingTargetHighPriorityCpuUtilizationPercent()
+    class Google_Service_Spanner_AutoscalingConfigOverrides extends \Google\Service\Spanner\AutoscalingConfigOverrides
     {
     }
 }

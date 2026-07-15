@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class CloudRunMetadata extends \Google\Collection
-{
-    protected $collection_key = 'serviceUrls';
-    /**
-     * Output only. The name of the Cloud Run job that is associated with a
-     * `Rollout`. Format is
-     * `projects/{project}/locations/{location}/jobs/{job_name}`.
-     *
-     * @var string
-     */
-    public $job;
-    /**
-     * Output only. The Cloud Run Revision id associated with a `Rollout`.
-     *
-     * @var string
-     */
-    public $revision;
-    /**
-     * Output only. The name of the Cloud Run Service that is associated with a
-     * `Rollout`. Format is
-     * `projects/{project}/locations/{location}/services/{service}`.
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * Output only. The Cloud Run Service urls that are associated with a
-     * `Rollout`.
-     *
-     * @var string[]
-     */
-    public $serviceUrls;
-    /**
-     * Output only. The name of the Cloud Run job that is associated with a
-     * `Rollout`. Format is
-     * `projects/{project}/locations/{location}/jobs/{job_name}`.
-     *
-     * @param string $job
-     */
-    public function setJob($job)
+namespace Google\Service\CloudDeploy {
+    class CloudRunMetadata extends \Google\Collection
     {
+        protected $collection_key = 'serviceUrls';
+        /**
+         * Output only. The name of the Cloud Run job that is associated with a
+         * `Rollout`. Format is
+         * `projects/{project}/locations/{location}/jobs/{job_name}`.
+         *
+         * @var string
+         */
+        public $job;
+        /**
+         * Output only. The Cloud Run Revision id associated with a `Rollout`.
+         *
+         * @var string
+         */
+        public $revision;
+        /**
+         * Output only. The name of the Cloud Run Service that is associated with a
+         * `Rollout`. Format is
+         * `projects/{project}/locations/{location}/services/{service}`.
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * Output only. The Cloud Run Service urls that are associated with a
+         * `Rollout`.
+         *
+         * @var string[]
+         */
+        public $serviceUrls;
+        /**
+         * Output only. The name of the Cloud Run job that is associated with a
+         * `Rollout`. Format is
+         * `projects/{project}/locations/{location}/jobs/{job_name}`.
+         *
+         * @param string $job
+         */
+        public function setJob($job)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJob()
+        {
+        }
+        /**
+         * Output only. The Cloud Run Revision id associated with a `Rollout`.
+         *
+         * @param string $revision
+         */
+        public function setRevision($revision)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevision()
+        {
+        }
+        /**
+         * Output only. The name of the Cloud Run Service that is associated with a
+         * `Rollout`. Format is
+         * `projects/{project}/locations/{location}/services/{service}`.
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
+        /**
+         * Output only. The Cloud Run Service urls that are associated with a
+         * `Rollout`.
+         *
+         * @param string[] $serviceUrls
+         */
+        public function setServiceUrls($serviceUrls)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getServiceUrls()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\CloudRunMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJob()
-    {
-    }
-    /**
-     * Output only. The Cloud Run Revision id associated with a `Rollout`.
-     *
-     * @param string $revision
-     */
-    public function setRevision($revision)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevision()
-    {
-    }
-    /**
-     * Output only. The name of the Cloud Run Service that is associated with a
-     * `Rollout`. Format is
-     * `projects/{project}/locations/{location}/services/{service}`.
-     *
-     * @param string $service
-     */
-    public function setService($service)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getService()
-    {
-    }
-    /**
-     * Output only. The Cloud Run Service urls that are associated with a
-     * `Rollout`.
-     *
-     * @param string[] $serviceUrls
-     */
-    public function setServiceUrls($serviceUrls)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getServiceUrls()
+    class Google_Service_CloudDeploy_CloudRunMetadata extends \Google\Service\CloudDeploy\CloudRunMetadata
     {
     }
 }

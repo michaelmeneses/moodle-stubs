@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayableLocations;
-
-class GoogleMapsPlayablelocationsV3Impression extends \Google\Model
-{
-    public $gameObjectType;
-    public $impressionType;
-    public $locationName;
-    public function setGameObjectType($gameObjectType)
+namespace Google\Service\PlayableLocations {
+    class GoogleMapsPlayablelocationsV3Impression extends \Google\Model
     {
+        public $gameObjectType;
+        public $impressionType;
+        public $locationName;
+        public function setGameObjectType($gameObjectType)
+        {
+        }
+        public function getGameObjectType()
+        {
+        }
+        public function setImpressionType($impressionType)
+        {
+        }
+        public function getImpressionType()
+        {
+        }
+        public function setLocationName($locationName)
+        {
+        }
+        public function getLocationName()
+        {
+        }
     }
-    public function getGameObjectType()
-    {
-    }
-    public function setImpressionType($impressionType)
-    {
-    }
-    public function getImpressionType()
-    {
-    }
-    public function setLocationName($locationName)
-    {
-    }
-    public function getLocationName()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3Impression registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PlayableLocations_GoogleMapsPlayablelocationsV3Impression extends \Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3Impression
     {
     }
 }

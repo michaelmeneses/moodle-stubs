@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class AgentScript extends \Google\Model
-{
-    /**
-     * Script file path on the host VM. To specify an interpreter, please add a
-     * `#!`(also known as [shebang
-     * line](https://en.wikipedia.org/wiki/Shebang_(Unix))) as the first line of
-     * the file.(For example, to execute the script using bash, `#!/bin/bash`
-     * should be the first line of the file. To execute the script using`Python3`,
-     * `#!/usr/bin/env python3` should be the first line of the file.) Otherwise,
-     * the file will by default be executed by `/bin/sh`.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Shell script text. To specify an interpreter, please add a `#!\n` at the
-     * beginning of the text.(For example, to execute the script using bash,
-     * `#!/bin/bash\n` should be added. To execute the script using`Python3`,
-     * `#!/usr/bin/env python3\n` should be added.) Otherwise, the script will by
-     * default be executed by `/bin/sh`.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Script file path on the host VM. To specify an interpreter, please add a
-     * `#!`(also known as [shebang
-     * line](https://en.wikipedia.org/wiki/Shebang_(Unix))) as the first line of
-     * the file.(For example, to execute the script using bash, `#!/bin/bash`
-     * should be the first line of the file. To execute the script using`Python3`,
-     * `#!/usr/bin/env python3` should be the first line of the file.) Otherwise,
-     * the file will by default be executed by `/bin/sh`.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
+namespace Google\Service\Batch {
+    class AgentScript extends \Google\Model
     {
+        /**
+         * Script file path on the host VM. To specify an interpreter, please add a
+         * `#!`(also known as [shebang
+         * line](https://en.wikipedia.org/wiki/Shebang_(Unix))) as the first line of
+         * the file.(For example, to execute the script using bash, `#!/bin/bash`
+         * should be the first line of the file. To execute the script using`Python3`,
+         * `#!/usr/bin/env python3` should be the first line of the file.) Otherwise,
+         * the file will by default be executed by `/bin/sh`.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Shell script text. To specify an interpreter, please add a `#!\n` at the
+         * beginning of the text.(For example, to execute the script using bash,
+         * `#!/bin/bash\n` should be added. To execute the script using`Python3`,
+         * `#!/usr/bin/env python3\n` should be added.) Otherwise, the script will by
+         * default be executed by `/bin/sh`.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Script file path on the host VM. To specify an interpreter, please add a
+         * `#!`(also known as [shebang
+         * line](https://en.wikipedia.org/wiki/Shebang_(Unix))) as the first line of
+         * the file.(For example, to execute the script using bash, `#!/bin/bash`
+         * should be the first line of the file. To execute the script using`Python3`,
+         * `#!/usr/bin/env python3` should be the first line of the file.) Otherwise,
+         * the file will by default be executed by `/bin/sh`.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Shell script text. To specify an interpreter, please add a `#!\n` at the
+         * beginning of the text.(For example, to execute the script using bash,
+         * `#!/bin/bash\n` should be added. To execute the script using`Python3`,
+         * `#!/usr/bin/env python3\n` should be added.) Otherwise, the script will by
+         * default be executed by `/bin/sh`.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Batch\AgentScript registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPath()
-    {
-    }
-    /**
-     * Shell script text. To specify an interpreter, please add a `#!\n` at the
-     * beginning of the text.(For example, to execute the script using bash,
-     * `#!/bin/bash\n` should be added. To execute the script using`Python3`,
-     * `#!/usr/bin/env python3\n` should be added.) Otherwise, the script will by
-     * default be executed by `/bin/sh`.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Batch_AgentScript extends \Google\Service\Batch\AgentScript
     {
     }
 }

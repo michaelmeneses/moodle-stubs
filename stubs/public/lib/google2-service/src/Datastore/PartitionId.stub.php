@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class PartitionId extends \Google\Model
-{
-    /**
-     * If not empty, the ID of the database to which the entities belong.
-     *
-     * @var string
-     */
-    public $databaseId;
-    /**
-     * If not empty, the ID of the namespace to which the entities belong.
-     *
-     * @var string
-     */
-    public $namespaceId;
-    /**
-     * The ID of the project to which the entities belong.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * If not empty, the ID of the database to which the entities belong.
-     *
-     * @param string $databaseId
-     */
-    public function setDatabaseId($databaseId)
+namespace Google\Service\Datastore {
+    class PartitionId extends \Google\Model
     {
+        /**
+         * If not empty, the ID of the database to which the entities belong.
+         *
+         * @var string
+         */
+        public $databaseId;
+        /**
+         * If not empty, the ID of the namespace to which the entities belong.
+         *
+         * @var string
+         */
+        public $namespaceId;
+        /**
+         * The ID of the project to which the entities belong.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * If not empty, the ID of the database to which the entities belong.
+         *
+         * @param string $databaseId
+         */
+        public function setDatabaseId($databaseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabaseId()
+        {
+        }
+        /**
+         * If not empty, the ID of the namespace to which the entities belong.
+         *
+         * @param string $namespaceId
+         */
+        public function setNamespaceId($namespaceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNamespaceId()
+        {
+        }
+        /**
+         * The ID of the project to which the entities belong.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastore\PartitionId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabaseId()
-    {
-    }
-    /**
-     * If not empty, the ID of the namespace to which the entities belong.
-     *
-     * @param string $namespaceId
-     */
-    public function setNamespaceId($namespaceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNamespaceId()
-    {
-    }
-    /**
-     * The ID of the project to which the entities belong.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
+    class Google_Service_Datastore_PartitionId extends \Google\Service\Datastore\PartitionId
     {
     }
 }

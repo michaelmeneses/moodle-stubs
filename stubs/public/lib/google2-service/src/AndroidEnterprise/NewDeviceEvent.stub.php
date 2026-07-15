@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class NewDeviceEvent extends \Google\Model
-{
-    public const MANAGEMENT_TYPE_managedDevice = 'managedDevice';
-    public const MANAGEMENT_TYPE_managedProfile = 'managedProfile';
-    /**
-     * The Android ID of the device. This field will always be present.
-     *
-     * @var string
-     */
-    public $deviceId;
-    /**
-     * Policy app on the device.
-     *
-     * @var string
-     */
-    public $dpcPackageName;
-    /**
-     * Identifies the extent to which the device is controlled by an Android EMM
-     * in various deployment configurations. Possible values include: -
-     * "managedDevice", a device where the DPC is set as device owner, -
-     * "managedProfile", a device where the DPC is set as profile owner.
-     *
-     * @var string
-     */
-    public $managementType;
-    /**
-     * The ID of the user. This field will always be present.
-     *
-     * @var string
-     */
-    public $userId;
-    /**
-     * The Android ID of the device. This field will always be present.
-     *
-     * @param string $deviceId
-     */
-    public function setDeviceId($deviceId)
+namespace Google\Service\AndroidEnterprise {
+    class NewDeviceEvent extends \Google\Model
     {
+        public const MANAGEMENT_TYPE_managedDevice = 'managedDevice';
+        public const MANAGEMENT_TYPE_managedProfile = 'managedProfile';
+        /**
+         * The Android ID of the device. This field will always be present.
+         *
+         * @var string
+         */
+        public $deviceId;
+        /**
+         * Policy app on the device.
+         *
+         * @var string
+         */
+        public $dpcPackageName;
+        /**
+         * Identifies the extent to which the device is controlled by an Android EMM
+         * in various deployment configurations. Possible values include: -
+         * "managedDevice", a device where the DPC is set as device owner, -
+         * "managedProfile", a device where the DPC is set as profile owner.
+         *
+         * @var string
+         */
+        public $managementType;
+        /**
+         * The ID of the user. This field will always be present.
+         *
+         * @var string
+         */
+        public $userId;
+        /**
+         * The Android ID of the device. This field will always be present.
+         *
+         * @param string $deviceId
+         */
+        public function setDeviceId($deviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceId()
+        {
+        }
+        /**
+         * Policy app on the device.
+         *
+         * @param string $dpcPackageName
+         */
+        public function setDpcPackageName($dpcPackageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDpcPackageName()
+        {
+        }
+        /**
+         * Identifies the extent to which the device is controlled by an Android EMM
+         * in various deployment configurations. Possible values include: -
+         * "managedDevice", a device where the DPC is set as device owner, -
+         * "managedProfile", a device where the DPC is set as profile owner.
+         *
+         * Accepted values: managedDevice, managedProfile
+         *
+         * @param self::MANAGEMENT_TYPE_* $managementType
+         */
+        public function setManagementType($managementType)
+        {
+        }
+        /**
+         * @return self::MANAGEMENT_TYPE_*
+         */
+        public function getManagementType()
+        {
+        }
+        /**
+         * The ID of the user. This field will always be present.
+         *
+         * @param string $userId
+         */
+        public function setUserId($userId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidEnterprise\NewDeviceEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceId()
-    {
-    }
-    /**
-     * Policy app on the device.
-     *
-     * @param string $dpcPackageName
-     */
-    public function setDpcPackageName($dpcPackageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDpcPackageName()
-    {
-    }
-    /**
-     * Identifies the extent to which the device is controlled by an Android EMM
-     * in various deployment configurations. Possible values include: -
-     * "managedDevice", a device where the DPC is set as device owner, -
-     * "managedProfile", a device where the DPC is set as profile owner.
-     *
-     * Accepted values: managedDevice, managedProfile
-     *
-     * @param self::MANAGEMENT_TYPE_* $managementType
-     */
-    public function setManagementType($managementType)
-    {
-    }
-    /**
-     * @return self::MANAGEMENT_TYPE_*
-     */
-    public function getManagementType()
-    {
-    }
-    /**
-     * The ID of the user. This field will always be present.
-     *
-     * @param string $userId
-     */
-    public function setUserId($userId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserId()
+    class Google_Service_AndroidEnterprise_NewDeviceEvent extends \Google\Service\AndroidEnterprise\NewDeviceEvent
     {
     }
 }

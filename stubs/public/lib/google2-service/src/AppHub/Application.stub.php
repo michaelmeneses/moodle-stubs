@@ -21,207 +21,216 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub;
-
-class Application extends \Google\Model
-{
-    /**
-     * Unspecified state.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The Application is being created.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * The Application is ready to register Services and Workloads.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * The Application is being deleted.
-     */
-    public const STATE_DELETING = 'DELETING';
-    protected $attributesType = Attributes::class;
-    protected $attributesDataType = '';
-    /**
-     * Output only. Create time.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. User-defined description of an Application. Can have a maximum
-     * length of 2048 characters.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Optional. User-defined name for the Application. Can have a maximum length
-     * of 63 characters.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Identifier. The resource name of an Application. Format: `"projects/{host-
-     * project-id}/locations/{location}/applications/{application-id}"`
-     *
-     * @var string
-     */
-    public $name;
-    protected $scopeType = Scope::class;
-    protected $scopeDataType = '';
-    /**
-     * Output only. Application state.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. A universally unique identifier (in UUID4 format) for the
-     * `Application`.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Output only. Update time.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. Consumer provided attributes.
-     *
-     * @param Attributes $attributes
-     */
-    public function setAttributes(Attributes $attributes)
+namespace Google\Service\AppHub {
+    class Application extends \Google\Model
     {
+        /**
+         * Unspecified state.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The Application is being created.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * The Application is ready to register Services and Workloads.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * The Application is being deleted.
+         */
+        public const STATE_DELETING = 'DELETING';
+        protected $attributesType = Attributes::class;
+        protected $attributesDataType = '';
+        /**
+         * Output only. Create time.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. User-defined description of an Application. Can have a maximum
+         * length of 2048 characters.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Optional. User-defined name for the Application. Can have a maximum length
+         * of 63 characters.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Identifier. The resource name of an Application. Format: `"projects/{host-
+         * project-id}/locations/{location}/applications/{application-id}"`
+         *
+         * @var string
+         */
+        public $name;
+        protected $scopeType = Scope::class;
+        protected $scopeDataType = '';
+        /**
+         * Output only. Application state.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. A universally unique identifier (in UUID4 format) for the
+         * `Application`.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Output only. Update time.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. Consumer provided attributes.
+         *
+         * @param Attributes $attributes
+         */
+        public function setAttributes(Attributes $attributes)
+        {
+        }
+        /**
+         * @return Attributes
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * Output only. Create time.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. User-defined description of an Application. Can have a maximum
+         * length of 2048 characters.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. User-defined name for the Application. Can have a maximum length
+         * of 63 characters.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Identifier. The resource name of an Application. Format: `"projects/{host-
+         * project-id}/locations/{location}/applications/{application-id}"`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Immutable. Defines what data can be included into this
+         * Application. Limits which Services and Workloads can be registered.
+         *
+         * @param Scope $scope
+         */
+        public function setScope(Scope $scope)
+        {
+        }
+        /**
+         * @return Scope
+         */
+        public function getScope()
+        {
+        }
+        /**
+         * Output only. Application state.
+         *
+         * Accepted values: STATE_UNSPECIFIED, CREATING, ACTIVE, DELETING
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. A universally unique identifier (in UUID4 format) for the
+         * `Application`.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * Output only. Update time.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Attributes
+     * Runtime class alias of \Google\Service\AppHub\Application registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
-    {
-    }
-    /**
-     * Output only. Create time.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. User-defined description of an Application. Can have a maximum
-     * length of 2048 characters.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. User-defined name for the Application. Can have a maximum length
-     * of 63 characters.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Identifier. The resource name of an Application. Format: `"projects/{host-
-     * project-id}/locations/{location}/applications/{application-id}"`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Immutable. Defines what data can be included into this
-     * Application. Limits which Services and Workloads can be registered.
-     *
-     * @param Scope $scope
-     */
-    public function setScope(Scope $scope)
-    {
-    }
-    /**
-     * @return Scope
-     */
-    public function getScope()
-    {
-    }
-    /**
-     * Output only. Application state.
-     *
-     * Accepted values: STATE_UNSPECIFIED, CREATING, ACTIVE, DELETING
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. A universally unique identifier (in UUID4 format) for the
-     * `Application`.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * Output only. Update time.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_AppHub_Application extends \Google\Service\AppHub\Application
     {
     }
 }

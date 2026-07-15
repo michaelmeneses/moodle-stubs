@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class Page extends \Google\Collection
-{
-    protected $collection_key = 'blocks';
-    protected $blocksType = Block::class;
-    protected $blocksDataType = 'array';
-    /**
-     * Confidence of the OCR results on the page. Range [0, 1].
-     *
-     * @var float
-     */
-    public $confidence;
-    /**
-     * Page height. For PDFs the unit is points. For images (including TIFFs) the
-     * unit is pixels.
-     *
-     * @var int
-     */
-    public $height;
-    protected $propertyType = TextProperty::class;
-    protected $propertyDataType = '';
-    /**
-     * Page width. For PDFs the unit is points. For images (including TIFFs) the
-     * unit is pixels.
-     *
-     * @var int
-     */
-    public $width;
-    /**
-     * List of blocks of text, images etc on this page.
-     *
-     * @param Block[] $blocks
-     */
-    public function setBlocks($blocks)
+namespace Google\Service\Vision {
+    class Page extends \Google\Collection
     {
+        protected $collection_key = 'blocks';
+        protected $blocksType = Block::class;
+        protected $blocksDataType = 'array';
+        /**
+         * Confidence of the OCR results on the page. Range [0, 1].
+         *
+         * @var float
+         */
+        public $confidence;
+        /**
+         * Page height. For PDFs the unit is points. For images (including TIFFs) the
+         * unit is pixels.
+         *
+         * @var int
+         */
+        public $height;
+        protected $propertyType = TextProperty::class;
+        protected $propertyDataType = '';
+        /**
+         * Page width. For PDFs the unit is points. For images (including TIFFs) the
+         * unit is pixels.
+         *
+         * @var int
+         */
+        public $width;
+        /**
+         * List of blocks of text, images etc on this page.
+         *
+         * @param Block[] $blocks
+         */
+        public function setBlocks($blocks)
+        {
+        }
+        /**
+         * @return Block[]
+         */
+        public function getBlocks()
+        {
+        }
+        /**
+         * Confidence of the OCR results on the page. Range [0, 1].
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * Page height. For PDFs the unit is points. For images (including TIFFs) the
+         * unit is pixels.
+         *
+         * @param int $height
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * Additional information detected on the page.
+         *
+         * @param TextProperty $property
+         */
+        public function setProperty(TextProperty $property)
+        {
+        }
+        /**
+         * @return TextProperty
+         */
+        public function getProperty()
+        {
+        }
+        /**
+         * Page width. For PDFs the unit is points. For images (including TIFFs) the
+         * unit is pixels.
+         *
+         * @param int $width
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Block[]
+     * Runtime class alias of \Google\Service\Vision\Page registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlocks()
-    {
-    }
-    /**
-     * Confidence of the OCR results on the page. Range [0, 1].
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getConfidence()
-    {
-    }
-    /**
-     * Page height. For PDFs the unit is points. For images (including TIFFs) the
-     * unit is pixels.
-     *
-     * @param int $height
-     */
-    public function setHeight($height)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHeight()
-    {
-    }
-    /**
-     * Additional information detected on the page.
-     *
-     * @param TextProperty $property
-     */
-    public function setProperty(TextProperty $property)
-    {
-    }
-    /**
-     * @return TextProperty
-     */
-    public function getProperty()
-    {
-    }
-    /**
-     * Page width. For PDFs the unit is points. For images (including TIFFs) the
-     * unit is pixels.
-     *
-     * @param int $width
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWidth()
+    class Google_Service_Vision_Page extends \Google\Service\Vision\Page
     {
     }
 }

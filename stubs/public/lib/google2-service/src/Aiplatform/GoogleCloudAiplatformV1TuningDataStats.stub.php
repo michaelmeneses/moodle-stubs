@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1TuningDataStats extends \Google\Model
-{
-    protected $preferenceOptimizationDataStatsType = GoogleCloudAiplatformV1PreferenceOptimizationDataStats::class;
-    protected $preferenceOptimizationDataStatsDataType = '';
-    protected $supervisedTuningDataStatsType = GoogleCloudAiplatformV1SupervisedTuningDataStats::class;
-    protected $supervisedTuningDataStatsDataType = '';
-    /**
-     * Output only. Statistics for preference optimization.
-     *
-     * @param GoogleCloudAiplatformV1PreferenceOptimizationDataStats $preferenceOptimizationDataStats
-     */
-    public function setPreferenceOptimizationDataStats(GoogleCloudAiplatformV1PreferenceOptimizationDataStats $preferenceOptimizationDataStats)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1TuningDataStats extends \Google\Model
     {
+        protected $preferenceOptimizationDataStatsType = GoogleCloudAiplatformV1PreferenceOptimizationDataStats::class;
+        protected $preferenceOptimizationDataStatsDataType = '';
+        protected $supervisedTuningDataStatsType = GoogleCloudAiplatformV1SupervisedTuningDataStats::class;
+        protected $supervisedTuningDataStatsDataType = '';
+        /**
+         * Output only. Statistics for preference optimization.
+         *
+         * @param GoogleCloudAiplatformV1PreferenceOptimizationDataStats $preferenceOptimizationDataStats
+         */
+        public function setPreferenceOptimizationDataStats(GoogleCloudAiplatformV1PreferenceOptimizationDataStats $preferenceOptimizationDataStats)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PreferenceOptimizationDataStats
+         */
+        public function getPreferenceOptimizationDataStats()
+        {
+        }
+        /**
+         * The SFT Tuning data stats.
+         *
+         * @param GoogleCloudAiplatformV1SupervisedTuningDataStats $supervisedTuningDataStats
+         */
+        public function setSupervisedTuningDataStats(GoogleCloudAiplatformV1SupervisedTuningDataStats $supervisedTuningDataStats)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SupervisedTuningDataStats
+         */
+        public function getSupervisedTuningDataStats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1PreferenceOptimizationDataStats
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1TuningDataStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPreferenceOptimizationDataStats()
-    {
-    }
-    /**
-     * The SFT Tuning data stats.
-     *
-     * @param GoogleCloudAiplatformV1SupervisedTuningDataStats $supervisedTuningDataStats
-     */
-    public function setSupervisedTuningDataStats(GoogleCloudAiplatformV1SupervisedTuningDataStats $supervisedTuningDataStats)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SupervisedTuningDataStats
-     */
-    public function getSupervisedTuningDataStats()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1TuningDataStats extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1TuningDataStats
     {
     }
 }

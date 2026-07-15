@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ProductPurchasesAcknowledgeRequest extends \Google\Model
-{
-    /**
-     * Payload to attach to the purchase.
-     *
-     * @var string
-     */
-    public $developerPayload;
-    /**
-     * Payload to attach to the purchase.
-     *
-     * @param string $developerPayload
-     */
-    public function setDeveloperPayload($developerPayload)
+namespace Google\Service\AndroidPublisher {
+    class ProductPurchasesAcknowledgeRequest extends \Google\Model
     {
+        /**
+         * Payload to attach to the purchase.
+         *
+         * @var string
+         */
+        public $developerPayload;
+        /**
+         * Payload to attach to the purchase.
+         *
+         * @param string $developerPayload
+         */
+        public function setDeveloperPayload($developerPayload)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeveloperPayload()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\ProductPurchasesAcknowledgeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeveloperPayload()
+    class Google_Service_AndroidPublisher_ProductPurchasesAcknowledgeRequest extends \Google\Service\AndroidPublisher\ProductPurchasesAcknowledgeRequest
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class UrlDownloadSize extends \Google\Model
-{
-    /**
-     * Download size of the URL in kilobytes.
-     *
-     * @var int
-     */
-    public $downloadSizeKb;
-    /**
-     * The normalized URL with query parameters and fragment removed.
-     *
-     * @var string
-     */
-    public $normalizedUrl;
-    /**
-     * Download size of the URL in kilobytes.
-     *
-     * @param int $downloadSizeKb
-     */
-    public function setDownloadSizeKb($downloadSizeKb)
+namespace Google\Service\RealTimeBidding {
+    class UrlDownloadSize extends \Google\Model
     {
+        /**
+         * Download size of the URL in kilobytes.
+         *
+         * @var int
+         */
+        public $downloadSizeKb;
+        /**
+         * The normalized URL with query parameters and fragment removed.
+         *
+         * @var string
+         */
+        public $normalizedUrl;
+        /**
+         * Download size of the URL in kilobytes.
+         *
+         * @param int $downloadSizeKb
+         */
+        public function setDownloadSizeKb($downloadSizeKb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDownloadSizeKb()
+        {
+        }
+        /**
+         * The normalized URL with query parameters and fragment removed.
+         *
+         * @param string $normalizedUrl
+         */
+        public function setNormalizedUrl($normalizedUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNormalizedUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\RealTimeBidding\UrlDownloadSize registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDownloadSizeKb()
-    {
-    }
-    /**
-     * The normalized URL with query parameters and fragment removed.
-     *
-     * @param string $normalizedUrl
-     */
-    public function setNormalizedUrl($normalizedUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNormalizedUrl()
+    class Google_Service_RealTimeBidding_UrlDownloadSize extends \Google\Service\RealTimeBidding\UrlDownloadSize
     {
     }
 }

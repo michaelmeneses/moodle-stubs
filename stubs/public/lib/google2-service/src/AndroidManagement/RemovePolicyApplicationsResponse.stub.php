@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class RemovePolicyApplicationsResponse extends \Google\Model
-{
-    protected $policyType = Policy::class;
-    protected $policyDataType = '';
-    /**
-     * The updated policy after ApplicationPolicy objects have been removed.
-     *
-     * @param Policy $policy
-     */
-    public function setPolicy(Policy $policy)
+namespace Google\Service\AndroidManagement {
+    class RemovePolicyApplicationsResponse extends \Google\Model
     {
+        protected $policyType = Policy::class;
+        protected $policyDataType = '';
+        /**
+         * The updated policy after ApplicationPolicy objects have been removed.
+         *
+         * @param Policy $policy
+         */
+        public function setPolicy(Policy $policy)
+        {
+        }
+        /**
+         * @return Policy
+         */
+        public function getPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Policy
+     * Runtime class alias of \Google\Service\AndroidManagement\RemovePolicyApplicationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicy()
+    class Google_Service_AndroidManagement_RemovePolicyApplicationsResponse extends \Google\Service\AndroidManagement\RemovePolicyApplicationsResponse
     {
     }
 }

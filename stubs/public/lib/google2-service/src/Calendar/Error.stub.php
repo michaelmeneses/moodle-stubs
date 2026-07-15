@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class Error extends \Google\Model
-{
-    /**
-     * Domain, or broad category, of the error.
-     *
-     * @var string
-     */
-    public $domain;
-    /**
-     * Specific reason for the error. Some of the possible values are: -
-     * "groupTooBig" - The group of users requested is too large for a single
-     * query.  - "tooManyCalendarsRequested" - The number of calendars requested
-     * is too large for a single query.  - "notFound" - The requested resource was
-     * not found.  - "internalError" - The API service has encountered an internal
-     * error.  Additional error types may be added in the future, so clients
-     * should gracefully handle additional error statuses not included in this
-     * list.
-     *
-     * @var string
-     */
-    public $reason;
-    /**
-     * Domain, or broad category, of the error.
-     *
-     * @param string $domain
-     */
-    public function setDomain($domain)
+namespace Google\Service\Calendar {
+    class Error extends \Google\Model
     {
+        /**
+         * Domain, or broad category, of the error.
+         *
+         * @var string
+         */
+        public $domain;
+        /**
+         * Specific reason for the error. Some of the possible values are: -
+         * "groupTooBig" - The group of users requested is too large for a single
+         * query.  - "tooManyCalendarsRequested" - The number of calendars requested
+         * is too large for a single query.  - "notFound" - The requested resource was
+         * not found.  - "internalError" - The API service has encountered an internal
+         * error.  Additional error types may be added in the future, so clients
+         * should gracefully handle additional error statuses not included in this
+         * list.
+         *
+         * @var string
+         */
+        public $reason;
+        /**
+         * Domain, or broad category, of the error.
+         *
+         * @param string $domain
+         */
+        public function setDomain($domain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomain()
+        {
+        }
+        /**
+         * Specific reason for the error. Some of the possible values are: -
+         * "groupTooBig" - The group of users requested is too large for a single
+         * query.  - "tooManyCalendarsRequested" - The number of calendars requested
+         * is too large for a single query.  - "notFound" - The requested resource was
+         * not found.  - "internalError" - The API service has encountered an internal
+         * error.  Additional error types may be added in the future, so clients
+         * should gracefully handle additional error statuses not included in this
+         * list.
+         *
+         * @param string $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Calendar\Error registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomain()
-    {
-    }
-    /**
-     * Specific reason for the error. Some of the possible values are: -
-     * "groupTooBig" - The group of users requested is too large for a single
-     * query.  - "tooManyCalendarsRequested" - The number of calendars requested
-     * is too large for a single query.  - "notFound" - The requested resource was
-     * not found.  - "internalError" - The API service has encountered an internal
-     * error.  Additional error types may be added in the future, so clients
-     * should gracefully handle additional error statuses not included in this
-     * list.
-     *
-     * @param string $reason
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReason()
+    class Google_Service_Calendar_Error extends \Google\Service\Calendar\Error
     {
     }
 }

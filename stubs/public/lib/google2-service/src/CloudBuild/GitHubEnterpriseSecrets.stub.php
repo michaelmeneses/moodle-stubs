@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class GitHubEnterpriseSecrets extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $oauthClientIdName;
-    /**
-     * @var string
-     */
-    public $oauthClientIdVersionName;
-    /**
-     * @var string
-     */
-    public $oauthSecretName;
-    /**
-     * @var string
-     */
-    public $oauthSecretVersionName;
-    /**
-     * @var string
-     */
-    public $privateKeyName;
-    /**
-     * @var string
-     */
-    public $privateKeyVersionName;
-    /**
-     * @var string
-     */
-    public $webhookSecretName;
-    /**
-     * @var string
-     */
-    public $webhookSecretVersionName;
-    /**
-     * @param string
-     */
-    public function setOauthClientIdName($oauthClientIdName)
+namespace Google\Service\CloudBuild {
+    class GitHubEnterpriseSecrets extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $oauthClientIdName;
+        /**
+         * @var string
+         */
+        public $oauthClientIdVersionName;
+        /**
+         * @var string
+         */
+        public $oauthSecretName;
+        /**
+         * @var string
+         */
+        public $oauthSecretVersionName;
+        /**
+         * @var string
+         */
+        public $privateKeyName;
+        /**
+         * @var string
+         */
+        public $privateKeyVersionName;
+        /**
+         * @var string
+         */
+        public $webhookSecretName;
+        /**
+         * @var string
+         */
+        public $webhookSecretVersionName;
+        /**
+         * @param string
+         */
+        public function setOauthClientIdName($oauthClientIdName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOauthClientIdName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOauthClientIdVersionName($oauthClientIdVersionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOauthClientIdVersionName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOauthSecretName($oauthSecretName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOauthSecretName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOauthSecretVersionName($oauthSecretVersionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOauthSecretVersionName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPrivateKeyName($privateKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivateKeyName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPrivateKeyVersionName($privateKeyVersionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivateKeyVersionName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWebhookSecretName($webhookSecretName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebhookSecretName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWebhookSecretVersionName($webhookSecretVersionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebhookSecretVersionName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\GitHubEnterpriseSecrets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOauthClientIdName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOauthClientIdVersionName($oauthClientIdVersionName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOauthClientIdVersionName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOauthSecretName($oauthSecretName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOauthSecretName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOauthSecretVersionName($oauthSecretVersionName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOauthSecretVersionName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPrivateKeyName($privateKeyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrivateKeyName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPrivateKeyVersionName($privateKeyVersionName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrivateKeyVersionName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWebhookSecretName($webhookSecretName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebhookSecretName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWebhookSecretVersionName($webhookSecretVersionName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebhookSecretVersionName()
+    class Google_Service_CloudBuild_GitHubEnterpriseSecrets extends \Google\Service\CloudBuild\GitHubEnterpriseSecrets
     {
     }
 }

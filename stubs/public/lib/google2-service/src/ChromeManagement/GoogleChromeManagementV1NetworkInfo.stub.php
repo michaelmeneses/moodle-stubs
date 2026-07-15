@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1NetworkInfo extends \Google\Collection
-{
-    protected $collection_key = 'networkDevices';
-    protected $networkDevicesType = GoogleChromeManagementV1NetworkDevice::class;
-    protected $networkDevicesDataType = 'array';
-    /**
-     * Output only. List of network devices.
-     *
-     * @param GoogleChromeManagementV1NetworkDevice[] $networkDevices
-     */
-    public function setNetworkDevices($networkDevices)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1NetworkInfo extends \Google\Collection
     {
+        protected $collection_key = 'networkDevices';
+        protected $networkDevicesType = GoogleChromeManagementV1NetworkDevice::class;
+        protected $networkDevicesDataType = 'array';
+        /**
+         * Output only. List of network devices.
+         *
+         * @param GoogleChromeManagementV1NetworkDevice[] $networkDevices
+         */
+        public function setNetworkDevices($networkDevices)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1NetworkDevice[]
+         */
+        public function getNetworkDevices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromeManagementV1NetworkDevice[]
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1NetworkInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkDevices()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1NetworkInfo extends \Google\Service\ChromeManagement\GoogleChromeManagementV1NetworkInfo
     {
     }
 }

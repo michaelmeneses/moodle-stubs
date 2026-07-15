@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class ListGroupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $groupsType = Group::class;
-    protected $groupsDataType = 'array';
-    /**
-     * The token for the next page of the response. To see more results, use this
-     * value as the page_token for your next request. If this value is empty,
-     * there are no more results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Hubs that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The requested groups.
-     *
-     * @param Group[] $groups
-     */
-    public function setGroups($groups)
+namespace Google\Service\Networkconnectivity {
+    class ListGroupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $groupsType = Group::class;
+        protected $groupsDataType = 'array';
+        /**
+         * The token for the next page of the response. To see more results, use this
+         * value as the page_token for your next request. If this value is empty,
+         * there are no more results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Hubs that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The requested groups.
+         *
+         * @param Group[] $groups
+         */
+        public function setGroups($groups)
+        {
+        }
+        /**
+         * @return Group[]
+         */
+        public function getGroups()
+        {
+        }
+        /**
+         * The token for the next page of the response. To see more results, use this
+         * value as the page_token for your next request. If this value is empty,
+         * there are no more results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Hubs that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Group[]
+     * Runtime class alias of \Google\Service\Networkconnectivity\ListGroupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroups()
-    {
-    }
-    /**
-     * The token for the next page of the response. To see more results, use this
-     * value as the page_token for your next request. If this value is empty,
-     * there are no more results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Hubs that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Networkconnectivity_ListGroupsResponse extends \Google\Service\Networkconnectivity\ListGroupsResponse
     {
     }
 }

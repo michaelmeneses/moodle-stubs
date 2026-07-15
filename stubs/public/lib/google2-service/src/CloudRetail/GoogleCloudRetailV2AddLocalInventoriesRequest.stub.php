@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2AddLocalInventoriesRequest extends \Google\Collection
-{
-    protected $collection_key = 'localInventories';
-    /**
-     * Indicates which inventory fields in the provided list of LocalInventory to
-     * update. The field is updated to the provided value. If a field is set while
-     * the place does not have a previous local inventory, the local inventory at
-     * that store is created. If a field is set while the value of that field is
-     * not provided, the original field value, if it exists, is deleted. If the
-     * mask is not set or set with empty paths, all inventory fields will be
-     * updated. If an unsupported or unknown field is provided, an
-     * INVALID_ARGUMENT error is returned and the entire update will be ignored.
-     *
-     * @var string
-     */
-    public $addMask;
-    /**
-     * The time when the inventory updates are issued. Used to prevent out-of-
-     * order updates on local inventory fields. If not provided, the internal
-     * system time will be used.
-     *
-     * @var string
-     */
-    public $addTime;
-    /**
-     * If set to true, and the Product is not found, the local inventory will
-     * still be processed and retained for at most 1 day and processed once the
-     * Product is created. If set to false, a NOT_FOUND error is returned if the
-     * Product is not found.
-     *
-     * @var bool
-     */
-    public $allowMissing;
-    protected $localInventoriesType = GoogleCloudRetailV2LocalInventory::class;
-    protected $localInventoriesDataType = 'array';
-    /**
-     * Indicates which inventory fields in the provided list of LocalInventory to
-     * update. The field is updated to the provided value. If a field is set while
-     * the place does not have a previous local inventory, the local inventory at
-     * that store is created. If a field is set while the value of that field is
-     * not provided, the original field value, if it exists, is deleted. If the
-     * mask is not set or set with empty paths, all inventory fields will be
-     * updated. If an unsupported or unknown field is provided, an
-     * INVALID_ARGUMENT error is returned and the entire update will be ignored.
-     *
-     * @param string $addMask
-     */
-    public function setAddMask($addMask)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2AddLocalInventoriesRequest extends \Google\Collection
     {
+        protected $collection_key = 'localInventories';
+        /**
+         * Indicates which inventory fields in the provided list of LocalInventory to
+         * update. The field is updated to the provided value. If a field is set while
+         * the place does not have a previous local inventory, the local inventory at
+         * that store is created. If a field is set while the value of that field is
+         * not provided, the original field value, if it exists, is deleted. If the
+         * mask is not set or set with empty paths, all inventory fields will be
+         * updated. If an unsupported or unknown field is provided, an
+         * INVALID_ARGUMENT error is returned and the entire update will be ignored.
+         *
+         * @var string
+         */
+        public $addMask;
+        /**
+         * The time when the inventory updates are issued. Used to prevent out-of-
+         * order updates on local inventory fields. If not provided, the internal
+         * system time will be used.
+         *
+         * @var string
+         */
+        public $addTime;
+        /**
+         * If set to true, and the Product is not found, the local inventory will
+         * still be processed and retained for at most 1 day and processed once the
+         * Product is created. If set to false, a NOT_FOUND error is returned if the
+         * Product is not found.
+         *
+         * @var bool
+         */
+        public $allowMissing;
+        protected $localInventoriesType = GoogleCloudRetailV2LocalInventory::class;
+        protected $localInventoriesDataType = 'array';
+        /**
+         * Indicates which inventory fields in the provided list of LocalInventory to
+         * update. The field is updated to the provided value. If a field is set while
+         * the place does not have a previous local inventory, the local inventory at
+         * that store is created. If a field is set while the value of that field is
+         * not provided, the original field value, if it exists, is deleted. If the
+         * mask is not set or set with empty paths, all inventory fields will be
+         * updated. If an unsupported or unknown field is provided, an
+         * INVALID_ARGUMENT error is returned and the entire update will be ignored.
+         *
+         * @param string $addMask
+         */
+        public function setAddMask($addMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAddMask()
+        {
+        }
+        /**
+         * The time when the inventory updates are issued. Used to prevent out-of-
+         * order updates on local inventory fields. If not provided, the internal
+         * system time will be used.
+         *
+         * @param string $addTime
+         */
+        public function setAddTime($addTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAddTime()
+        {
+        }
+        /**
+         * If set to true, and the Product is not found, the local inventory will
+         * still be processed and retained for at most 1 day and processed once the
+         * Product is created. If set to false, a NOT_FOUND error is returned if the
+         * Product is not found.
+         *
+         * @param bool $allowMissing
+         */
+        public function setAllowMissing($allowMissing)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowMissing()
+        {
+        }
+        /**
+         * Required. A list of inventory information at difference places. Each place
+         * is identified by its place ID. At most 3000 inventories are allowed per
+         * request.
+         *
+         * @param GoogleCloudRetailV2LocalInventory[] $localInventories
+         */
+        public function setLocalInventories($localInventories)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2LocalInventory[]
+         */
+        public function getLocalInventories()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2AddLocalInventoriesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddMask()
-    {
-    }
-    /**
-     * The time when the inventory updates are issued. Used to prevent out-of-
-     * order updates on local inventory fields. If not provided, the internal
-     * system time will be used.
-     *
-     * @param string $addTime
-     */
-    public function setAddTime($addTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAddTime()
-    {
-    }
-    /**
-     * If set to true, and the Product is not found, the local inventory will
-     * still be processed and retained for at most 1 day and processed once the
-     * Product is created. If set to false, a NOT_FOUND error is returned if the
-     * Product is not found.
-     *
-     * @param bool $allowMissing
-     */
-    public function setAllowMissing($allowMissing)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAllowMissing()
-    {
-    }
-    /**
-     * Required. A list of inventory information at difference places. Each place
-     * is identified by its place ID. At most 3000 inventories are allowed per
-     * request.
-     *
-     * @param GoogleCloudRetailV2LocalInventory[] $localInventories
-     */
-    public function setLocalInventories($localInventories)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2LocalInventory[]
-     */
-    public function getLocalInventories()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2AddLocalInventoriesRequest extends \Google\Service\CloudRetail\GoogleCloudRetailV2AddLocalInventoriesRequest
     {
     }
 }

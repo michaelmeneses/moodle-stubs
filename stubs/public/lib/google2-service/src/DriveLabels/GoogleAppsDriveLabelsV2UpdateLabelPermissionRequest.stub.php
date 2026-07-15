@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2UpdateLabelPermissionRequest extends \Google\Model
-{
-    protected $labelPermissionType = GoogleAppsDriveLabelsV2LabelPermission::class;
-    protected $labelPermissionDataType = '';
-    /**
-     * Required. The parent label resource name.
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * Set to `true` in order to use the user's admin credentials. The server will
-     * verify the user is an admin for the label before allowing access.
-     *
-     * @var bool
-     */
-    public $useAdminAccess;
-    /**
-     * Required. The permission to create or update on the label.
-     *
-     * @param GoogleAppsDriveLabelsV2LabelPermission $labelPermission
-     */
-    public function setLabelPermission(GoogleAppsDriveLabelsV2LabelPermission $labelPermission)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2UpdateLabelPermissionRequest extends \Google\Model
     {
+        protected $labelPermissionType = GoogleAppsDriveLabelsV2LabelPermission::class;
+        protected $labelPermissionDataType = '';
+        /**
+         * Required. The parent label resource name.
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * Set to `true` in order to use the user's admin credentials. The server will
+         * verify the user is an admin for the label before allowing access.
+         *
+         * @var bool
+         */
+        public $useAdminAccess;
+        /**
+         * Required. The permission to create or update on the label.
+         *
+         * @param GoogleAppsDriveLabelsV2LabelPermission $labelPermission
+         */
+        public function setLabelPermission(GoogleAppsDriveLabelsV2LabelPermission $labelPermission)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2LabelPermission
+         */
+        public function getLabelPermission()
+        {
+        }
+        /**
+         * Required. The parent label resource name.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * Set to `true` in order to use the user's admin credentials. The server will
+         * verify the user is an admin for the label before allowing access.
+         *
+         * @param bool $useAdminAccess
+         */
+        public function setUseAdminAccess($useAdminAccess)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseAdminAccess()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsDriveLabelsV2LabelPermission
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2UpdateLabelPermissionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabelPermission()
-    {
-    }
-    /**
-     * Required. The parent label resource name.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
-    {
-    }
-    /**
-     * Set to `true` in order to use the user's admin credentials. The server will
-     * verify the user is an admin for the label before allowing access.
-     *
-     * @param bool $useAdminAccess
-     */
-    public function setUseAdminAccess($useAdminAccess)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseAdminAccess()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2UpdateLabelPermissionRequest extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2UpdateLabelPermissionRequest
     {
     }
 }

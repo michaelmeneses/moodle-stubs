@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Adsense;
-
-class ListPaymentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'payments';
-    protected $paymentsType = Payment::class;
-    protected $paymentsDataType = 'array';
-    /**
-     * The payments returned in this list response.
-     *
-     * @param Payment[] $payments
-     */
-    public function setPayments($payments)
+namespace Google\Service\Adsense {
+    class ListPaymentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'payments';
+        protected $paymentsType = Payment::class;
+        protected $paymentsDataType = 'array';
+        /**
+         * The payments returned in this list response.
+         *
+         * @param Payment[] $payments
+         */
+        public function setPayments($payments)
+        {
+        }
+        /**
+         * @return Payment[]
+         */
+        public function getPayments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Payment[]
+     * Runtime class alias of \Google\Service\Adsense\ListPaymentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPayments()
+    class Google_Service_Adsense_ListPaymentsResponse extends \Google\Service\Adsense\ListPaymentsResponse
     {
     }
 }

@@ -21,31 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise\Resource;
-
-/**
- * The "relatedaccountgroupmemberships" collection of methods.
- * Typical usage is:
- *  <code>
- *   $recaptchaenterpriseService = new Google\Service\RecaptchaEnterprise(...);
- *   $relatedaccountgroupmemberships = $recaptchaenterpriseService->projects_relatedaccountgroupmemberships;
- *  </code>
- */
-class ProjectsRelatedaccountgroupmemberships extends \Google\Service\Resource
-{
+namespace Google\Service\RecaptchaEnterprise\Resource {
+    use Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1SearchRelatedAccountGroupMembershipsRequest;
+    use Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1SearchRelatedAccountGroupMembershipsResponse;
     /**
-     * Search group memberships related to a given account.
-     * (relatedaccountgroupmemberships.search)
-     *
-     * @param string $project Required. The name of the project to search related
-     * account group memberships from. Specify the project name in the following
-     * format: `projects/{project}`.
-     * @param GoogleCloudRecaptchaenterpriseV1SearchRelatedAccountGroupMembershipsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudRecaptchaenterpriseV1SearchRelatedAccountGroupMembershipsResponse
-     * @throws \Google\Service\Exception
+     * The "relatedaccountgroupmemberships" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $recaptchaenterpriseService = new Google\Service\RecaptchaEnterprise(...);
+     *   $relatedaccountgroupmemberships = $recaptchaenterpriseService->projects_relatedaccountgroupmemberships;
+     *  </code>
      */
-    public function search($project, GoogleCloudRecaptchaenterpriseV1SearchRelatedAccountGroupMembershipsRequest $postBody, $optParams = [])
+    class ProjectsRelatedaccountgroupmemberships extends \Google\Service\Resource
+    {
+        /**
+         * Search group memberships related to a given account.
+         * (relatedaccountgroupmemberships.search)
+         *
+         * @param string $project Required. The name of the project to search related
+         * account group memberships from. Specify the project name in the following
+         * format: `projects/{project}`.
+         * @param GoogleCloudRecaptchaenterpriseV1SearchRelatedAccountGroupMembershipsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudRecaptchaenterpriseV1SearchRelatedAccountGroupMembershipsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function search($project, GoogleCloudRecaptchaenterpriseV1SearchRelatedAccountGroupMembershipsRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\Resource\ProjectsRelatedaccountgroupmemberships registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RecaptchaEnterprise_Resource_ProjectsRelatedaccountgroupmemberships extends \Google\Service\RecaptchaEnterprise\Resource\ProjectsRelatedaccountgroupmemberships
     {
     }
 }

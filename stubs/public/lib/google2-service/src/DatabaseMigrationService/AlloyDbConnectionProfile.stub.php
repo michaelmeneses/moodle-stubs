@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class AlloyDbConnectionProfile extends \Google\Model
-{
-    /**
-     * Required. The AlloyDB cluster ID that this connection profile is associated
-     * with.
-     *
-     * @var string
-     */
-    public $clusterId;
-    protected $settingsType = AlloyDbSettings::class;
-    protected $settingsDataType = '';
-    /**
-     * Required. The AlloyDB cluster ID that this connection profile is associated
-     * with.
-     *
-     * @param string $clusterId
-     */
-    public function setClusterId($clusterId)
+namespace Google\Service\DatabaseMigrationService {
+    class AlloyDbConnectionProfile extends \Google\Model
     {
+        /**
+         * Required. The AlloyDB cluster ID that this connection profile is associated
+         * with.
+         *
+         * @var string
+         */
+        public $clusterId;
+        protected $settingsType = AlloyDbSettings::class;
+        protected $settingsDataType = '';
+        /**
+         * Required. The AlloyDB cluster ID that this connection profile is associated
+         * with.
+         *
+         * @param string $clusterId
+         */
+        public function setClusterId($clusterId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterId()
+        {
+        }
+        /**
+         * Immutable. Metadata used to create the destination AlloyDB cluster.
+         *
+         * @param AlloyDbSettings $settings
+         */
+        public function setSettings(AlloyDbSettings $settings)
+        {
+        }
+        /**
+         * @return AlloyDbSettings
+         */
+        public function getSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\AlloyDbConnectionProfile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterId()
-    {
-    }
-    /**
-     * Immutable. Metadata used to create the destination AlloyDB cluster.
-     *
-     * @param AlloyDbSettings $settings
-     */
-    public function setSettings(AlloyDbSettings $settings)
-    {
-    }
-    /**
-     * @return AlloyDbSettings
-     */
-    public function getSettings()
+    class Google_Service_DatabaseMigrationService_AlloyDbConnectionProfile extends \Google\Service\DatabaseMigrationService\AlloyDbConnectionProfile
     {
     }
 }

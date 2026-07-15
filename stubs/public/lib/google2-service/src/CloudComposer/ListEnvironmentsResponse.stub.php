@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class ListEnvironmentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'environments';
-    protected $environmentsType = Environment::class;
-    protected $environmentsDataType = 'array';
-    /**
-     * The page token used to query for the next page if one exists.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of environments returned by a ListEnvironmentsRequest.
-     *
-     * @param Environment[] $environments
-     */
-    public function setEnvironments($environments)
+namespace Google\Service\CloudComposer {
+    class ListEnvironmentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'environments';
+        protected $environmentsType = Environment::class;
+        protected $environmentsDataType = 'array';
+        /**
+         * The page token used to query for the next page if one exists.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of environments returned by a ListEnvironmentsRequest.
+         *
+         * @param Environment[] $environments
+         */
+        public function setEnvironments($environments)
+        {
+        }
+        /**
+         * @return Environment[]
+         */
+        public function getEnvironments()
+        {
+        }
+        /**
+         * The page token used to query for the next page if one exists.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Environment[]
+     * Runtime class alias of \Google\Service\CloudComposer\ListEnvironmentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnvironments()
-    {
-    }
-    /**
-     * The page token used to query for the next page if one exists.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudComposer_ListEnvironmentsResponse extends \Google\Service\CloudComposer\ListEnvironmentsResponse
     {
     }
 }

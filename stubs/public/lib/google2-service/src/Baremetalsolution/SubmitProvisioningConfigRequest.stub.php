@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class SubmitProvisioningConfigRequest extends \Google\Model
-{
-    /**
-     * Optional. Email provided to send a confirmation with provisioning config
-     * to.
-     *
-     * @var string
-     */
-    public $email;
-    protected $provisioningConfigType = ProvisioningConfig::class;
-    protected $provisioningConfigDataType = '';
-    /**
-     * Optional. Email provided to send a confirmation with provisioning config
-     * to.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\Baremetalsolution {
+    class SubmitProvisioningConfigRequest extends \Google\Model
     {
+        /**
+         * Optional. Email provided to send a confirmation with provisioning config
+         * to.
+         *
+         * @var string
+         */
+        public $email;
+        protected $provisioningConfigType = ProvisioningConfig::class;
+        protected $provisioningConfigDataType = '';
+        /**
+         * Optional. Email provided to send a confirmation with provisioning config
+         * to.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * Required. The ProvisioningConfig to create.
+         *
+         * @param ProvisioningConfig $provisioningConfig
+         */
+        public function setProvisioningConfig(ProvisioningConfig $provisioningConfig)
+        {
+        }
+        /**
+         * @return ProvisioningConfig
+         */
+        public function getProvisioningConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Baremetalsolution\SubmitProvisioningConfigRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * Required. The ProvisioningConfig to create.
-     *
-     * @param ProvisioningConfig $provisioningConfig
-     */
-    public function setProvisioningConfig(ProvisioningConfig $provisioningConfig)
-    {
-    }
-    /**
-     * @return ProvisioningConfig
-     */
-    public function getProvisioningConfig()
+    class Google_Service_Baremetalsolution_SubmitProvisioningConfigRequest extends \Google\Service\Baremetalsolution\SubmitProvisioningConfigRequest
     {
     }
 }

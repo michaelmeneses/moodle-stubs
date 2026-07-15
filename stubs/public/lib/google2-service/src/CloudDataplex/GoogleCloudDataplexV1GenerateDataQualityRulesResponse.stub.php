@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1GenerateDataQualityRulesResponse extends \Google\Collection
-{
-    protected $collection_key = 'rule';
-    protected $ruleType = GoogleCloudDataplexV1DataQualityRule::class;
-    protected $ruleDataType = 'array';
-    /**
-     * The data quality rules that Dataplex Universal Catalog generates based on
-     * the results of a data profiling scan.
-     *
-     * @param GoogleCloudDataplexV1DataQualityRule[] $rule
-     */
-    public function setRule($rule)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1GenerateDataQualityRulesResponse extends \Google\Collection
     {
+        protected $collection_key = 'rule';
+        protected $ruleType = GoogleCloudDataplexV1DataQualityRule::class;
+        protected $ruleDataType = 'array';
+        /**
+         * The data quality rules that Dataplex Universal Catalog generates based on
+         * the results of a data profiling scan.
+         *
+         * @param GoogleCloudDataplexV1DataQualityRule[] $rule
+         */
+        public function setRule($rule)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataQualityRule[]
+         */
+        public function getRule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1DataQualityRule[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1GenerateDataQualityRulesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRule()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1GenerateDataQualityRulesResponse extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1GenerateDataQualityRulesResponse
     {
     }
 }

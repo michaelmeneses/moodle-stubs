@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2CompletionDetail extends \Google\Model
-{
-    /**
-     * Completion attribution token in CompleteQueryResponse.attribution_token.
-     *
-     * @var string
-     */
-    public $completionAttributionToken;
-    /**
-     * End user selected CompleteQueryResponse.CompletionResult.suggestion
-     * position, starting from 0.
-     *
-     * @var int
-     */
-    public $selectedPosition;
-    /**
-     * End user selected CompleteQueryResponse.CompletionResult.suggestion.
-     *
-     * @var string
-     */
-    public $selectedSuggestion;
-    /**
-     * Completion attribution token in CompleteQueryResponse.attribution_token.
-     *
-     * @param string $completionAttributionToken
-     */
-    public function setCompletionAttributionToken($completionAttributionToken)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2CompletionDetail extends \Google\Model
     {
+        /**
+         * Completion attribution token in CompleteQueryResponse.attribution_token.
+         *
+         * @var string
+         */
+        public $completionAttributionToken;
+        /**
+         * End user selected CompleteQueryResponse.CompletionResult.suggestion
+         * position, starting from 0.
+         *
+         * @var int
+         */
+        public $selectedPosition;
+        /**
+         * End user selected CompleteQueryResponse.CompletionResult.suggestion.
+         *
+         * @var string
+         */
+        public $selectedSuggestion;
+        /**
+         * Completion attribution token in CompleteQueryResponse.attribution_token.
+         *
+         * @param string $completionAttributionToken
+         */
+        public function setCompletionAttributionToken($completionAttributionToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompletionAttributionToken()
+        {
+        }
+        /**
+         * End user selected CompleteQueryResponse.CompletionResult.suggestion
+         * position, starting from 0.
+         *
+         * @param int $selectedPosition
+         */
+        public function setSelectedPosition($selectedPosition)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSelectedPosition()
+        {
+        }
+        /**
+         * End user selected CompleteQueryResponse.CompletionResult.suggestion.
+         *
+         * @param string $selectedSuggestion
+         */
+        public function setSelectedSuggestion($selectedSuggestion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelectedSuggestion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2CompletionDetail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompletionAttributionToken()
-    {
-    }
-    /**
-     * End user selected CompleteQueryResponse.CompletionResult.suggestion
-     * position, starting from 0.
-     *
-     * @param int $selectedPosition
-     */
-    public function setSelectedPosition($selectedPosition)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSelectedPosition()
-    {
-    }
-    /**
-     * End user selected CompleteQueryResponse.CompletionResult.suggestion.
-     *
-     * @param string $selectedSuggestion
-     */
-    public function setSelectedSuggestion($selectedSuggestion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelectedSuggestion()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2CompletionDetail extends \Google\Service\CloudRetail\GoogleCloudRetailV2CompletionDetail
     {
     }
 }

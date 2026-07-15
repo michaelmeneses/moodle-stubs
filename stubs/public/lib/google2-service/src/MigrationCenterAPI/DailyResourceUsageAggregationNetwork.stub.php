@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class DailyResourceUsageAggregationNetwork extends \Google\Model
-{
-    protected $egressBpsType = DailyResourceUsageAggregationStats::class;
-    protected $egressBpsDataType = '';
-    protected $ingressBpsType = DailyResourceUsageAggregationStats::class;
-    protected $ingressBpsDataType = '';
-    /**
-     * Network egress in B/s.
-     *
-     * @param DailyResourceUsageAggregationStats $egressBps
-     */
-    public function setEgressBps(DailyResourceUsageAggregationStats $egressBps)
+namespace Google\Service\MigrationCenterAPI {
+    class DailyResourceUsageAggregationNetwork extends \Google\Model
     {
+        protected $egressBpsType = DailyResourceUsageAggregationStats::class;
+        protected $egressBpsDataType = '';
+        protected $ingressBpsType = DailyResourceUsageAggregationStats::class;
+        protected $ingressBpsDataType = '';
+        /**
+         * Network egress in B/s.
+         *
+         * @param DailyResourceUsageAggregationStats $egressBps
+         */
+        public function setEgressBps(DailyResourceUsageAggregationStats $egressBps)
+        {
+        }
+        /**
+         * @return DailyResourceUsageAggregationStats
+         */
+        public function getEgressBps()
+        {
+        }
+        /**
+         * Network ingress in B/s.
+         *
+         * @param DailyResourceUsageAggregationStats $ingressBps
+         */
+        public function setIngressBps(DailyResourceUsageAggregationStats $ingressBps)
+        {
+        }
+        /**
+         * @return DailyResourceUsageAggregationStats
+         */
+        public function getIngressBps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DailyResourceUsageAggregationStats
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\DailyResourceUsageAggregationNetwork registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEgressBps()
-    {
-    }
-    /**
-     * Network ingress in B/s.
-     *
-     * @param DailyResourceUsageAggregationStats $ingressBps
-     */
-    public function setIngressBps(DailyResourceUsageAggregationStats $ingressBps)
-    {
-    }
-    /**
-     * @return DailyResourceUsageAggregationStats
-     */
-    public function getIngressBps()
+    class Google_Service_MigrationCenterAPI_DailyResourceUsageAggregationNetwork extends \Google\Service\MigrationCenterAPI\DailyResourceUsageAggregationNetwork
     {
     }
 }

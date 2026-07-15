@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GenerateInstanceRubricsResponse extends \Google\Collection
-{
-    protected $collection_key = 'generatedRubrics';
-    protected $generatedRubricsType = GoogleCloudAiplatformV1Rubric::class;
-    protected $generatedRubricsDataType = 'array';
-    /**
-     * Output only. A list of generated rubrics.
-     *
-     * @param GoogleCloudAiplatformV1Rubric[] $generatedRubrics
-     */
-    public function setGeneratedRubrics($generatedRubrics)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GenerateInstanceRubricsResponse extends \Google\Collection
     {
+        protected $collection_key = 'generatedRubrics';
+        protected $generatedRubricsType = GoogleCloudAiplatformV1Rubric::class;
+        protected $generatedRubricsDataType = 'array';
+        /**
+         * Output only. A list of generated rubrics.
+         *
+         * @param GoogleCloudAiplatformV1Rubric[] $generatedRubrics
+         */
+        public function setGeneratedRubrics($generatedRubrics)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Rubric[]
+         */
+        public function getGeneratedRubrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Rubric[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateInstanceRubricsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGeneratedRubrics()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GenerateInstanceRubricsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateInstanceRubricsResponse
     {
     }
 }

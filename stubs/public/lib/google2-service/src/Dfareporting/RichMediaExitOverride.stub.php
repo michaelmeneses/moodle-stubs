@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class RichMediaExitOverride extends \Google\Model
-{
-    protected $clickThroughUrlType = ClickThroughUrl::class;
-    protected $clickThroughUrlDataType = '';
-    /**
-     * Whether to use the clickThroughUrl. If false, the creative-level exit will
-     * be used.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * ID for the override to refer to a specific exit in the creative.
-     *
-     * @var string
-     */
-    public $exitId;
-    /**
-     * Click-through URL of this rich media exit override. Applicable if the
-     * enabled field is set to true.
-     *
-     * @param ClickThroughUrl $clickThroughUrl
-     */
-    public function setClickThroughUrl(ClickThroughUrl $clickThroughUrl)
+namespace Google\Service\Dfareporting {
+    class RichMediaExitOverride extends \Google\Model
     {
+        protected $clickThroughUrlType = ClickThroughUrl::class;
+        protected $clickThroughUrlDataType = '';
+        /**
+         * Whether to use the clickThroughUrl. If false, the creative-level exit will
+         * be used.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * ID for the override to refer to a specific exit in the creative.
+         *
+         * @var string
+         */
+        public $exitId;
+        /**
+         * Click-through URL of this rich media exit override. Applicable if the
+         * enabled field is set to true.
+         *
+         * @param ClickThroughUrl $clickThroughUrl
+         */
+        public function setClickThroughUrl(ClickThroughUrl $clickThroughUrl)
+        {
+        }
+        /**
+         * @return ClickThroughUrl
+         */
+        public function getClickThroughUrl()
+        {
+        }
+        /**
+         * Whether to use the clickThroughUrl. If false, the creative-level exit will
+         * be used.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * ID for the override to refer to a specific exit in the creative.
+         *
+         * @param string $exitId
+         */
+        public function setExitId($exitId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExitId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClickThroughUrl
+     * Runtime class alias of \Google\Service\Dfareporting\RichMediaExitOverride registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClickThroughUrl()
-    {
-    }
-    /**
-     * Whether to use the clickThroughUrl. If false, the creative-level exit will
-     * be used.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnabled()
-    {
-    }
-    /**
-     * ID for the override to refer to a specific exit in the creative.
-     *
-     * @param string $exitId
-     */
-    public function setExitId($exitId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExitId()
+    class Google_Service_Dfareporting_RichMediaExitOverride extends \Google\Service\Dfareporting\RichMediaExitOverride
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class VideoAdInventoryControl extends \Google\Model
-{
-    /**
-     * Optional. Whether ads can serve as in-feed format.
-     *
-     * @var bool
-     */
-    public $allowInFeed;
-    /**
-     * Optional. Whether ads can serve as in-stream format.
-     *
-     * @var bool
-     */
-    public $allowInStream;
-    /**
-     * Optional. Whether ads can serve as shorts format.
-     *
-     * @var bool
-     */
-    public $allowShorts;
-    /**
-     * Optional. Whether ads can serve as in-feed format.
-     *
-     * @param bool $allowInFeed
-     */
-    public function setAllowInFeed($allowInFeed)
+namespace Google\Service\DisplayVideo {
+    class VideoAdInventoryControl extends \Google\Model
     {
+        /**
+         * Optional. Whether ads can serve as in-feed format.
+         *
+         * @var bool
+         */
+        public $allowInFeed;
+        /**
+         * Optional. Whether ads can serve as in-stream format.
+         *
+         * @var bool
+         */
+        public $allowInStream;
+        /**
+         * Optional. Whether ads can serve as shorts format.
+         *
+         * @var bool
+         */
+        public $allowShorts;
+        /**
+         * Optional. Whether ads can serve as in-feed format.
+         *
+         * @param bool $allowInFeed
+         */
+        public function setAllowInFeed($allowInFeed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowInFeed()
+        {
+        }
+        /**
+         * Optional. Whether ads can serve as in-stream format.
+         *
+         * @param bool $allowInStream
+         */
+        public function setAllowInStream($allowInStream)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowInStream()
+        {
+        }
+        /**
+         * Optional. Whether ads can serve as shorts format.
+         *
+         * @param bool $allowShorts
+         */
+        public function setAllowShorts($allowShorts)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowShorts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DisplayVideo\VideoAdInventoryControl registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowInFeed()
-    {
-    }
-    /**
-     * Optional. Whether ads can serve as in-stream format.
-     *
-     * @param bool $allowInStream
-     */
-    public function setAllowInStream($allowInStream)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAllowInStream()
-    {
-    }
-    /**
-     * Optional. Whether ads can serve as shorts format.
-     *
-     * @param bool $allowShorts
-     */
-    public function setAllowShorts($allowShorts)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAllowShorts()
+    class Google_Service_DisplayVideo_VideoAdInventoryControl extends \Google\Service\DisplayVideo\VideoAdInventoryControl
     {
     }
 }

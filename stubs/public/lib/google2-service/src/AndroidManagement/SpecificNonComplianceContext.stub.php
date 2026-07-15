@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class SpecificNonComplianceContext extends \Google\Model
-{
-    protected $defaultApplicationContextType = DefaultApplicationContext::class;
-    protected $defaultApplicationContextDataType = '';
-    protected $oncWifiContextType = OncWifiContext::class;
-    protected $oncWifiContextDataType = '';
-    protected $passwordPoliciesContextType = PasswordPoliciesContext::class;
-    protected $passwordPoliciesContextDataType = '';
-    /**
-     * Output only. Additional context for non-compliance related to default
-     * application settings. See DEFAULT_APPLICATION_SETTING_FAILED_FOR_SCOPE.
-     *
-     * @param DefaultApplicationContext $defaultApplicationContext
-     */
-    public function setDefaultApplicationContext(DefaultApplicationContext $defaultApplicationContext)
+namespace Google\Service\AndroidManagement {
+    class SpecificNonComplianceContext extends \Google\Model
     {
+        protected $defaultApplicationContextType = DefaultApplicationContext::class;
+        protected $defaultApplicationContextDataType = '';
+        protected $oncWifiContextType = OncWifiContext::class;
+        protected $oncWifiContextDataType = '';
+        protected $passwordPoliciesContextType = PasswordPoliciesContext::class;
+        protected $passwordPoliciesContextDataType = '';
+        /**
+         * Output only. Additional context for non-compliance related to default
+         * application settings. See DEFAULT_APPLICATION_SETTING_FAILED_FOR_SCOPE.
+         *
+         * @param DefaultApplicationContext $defaultApplicationContext
+         */
+        public function setDefaultApplicationContext(DefaultApplicationContext $defaultApplicationContext)
+        {
+        }
+        /**
+         * @return DefaultApplicationContext
+         */
+        public function getDefaultApplicationContext()
+        {
+        }
+        /**
+         * Additional context for non-compliance related to Wi-Fi configuration. See
+         * ONC_WIFI_INVALID_VALUE and ONC_WIFI_API_LEVEL
+         *
+         * @param OncWifiContext $oncWifiContext
+         */
+        public function setOncWifiContext(OncWifiContext $oncWifiContext)
+        {
+        }
+        /**
+         * @return OncWifiContext
+         */
+        public function getOncWifiContext()
+        {
+        }
+        /**
+         * Additional context for non-compliance related to password policies. See
+         * PASSWORD_POLICIES_PASSWORD_EXPIRED and
+         * PASSWORD_POLICIES_PASSWORD_NOT_SUFFICIENT.
+         *
+         * @param PasswordPoliciesContext $passwordPoliciesContext
+         */
+        public function setPasswordPoliciesContext(PasswordPoliciesContext $passwordPoliciesContext)
+        {
+        }
+        /**
+         * @return PasswordPoliciesContext
+         */
+        public function getPasswordPoliciesContext()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DefaultApplicationContext
+     * Runtime class alias of \Google\Service\AndroidManagement\SpecificNonComplianceContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultApplicationContext()
-    {
-    }
-    /**
-     * Additional context for non-compliance related to Wi-Fi configuration. See
-     * ONC_WIFI_INVALID_VALUE and ONC_WIFI_API_LEVEL
-     *
-     * @param OncWifiContext $oncWifiContext
-     */
-    public function setOncWifiContext(OncWifiContext $oncWifiContext)
-    {
-    }
-    /**
-     * @return OncWifiContext
-     */
-    public function getOncWifiContext()
-    {
-    }
-    /**
-     * Additional context for non-compliance related to password policies. See
-     * PASSWORD_POLICIES_PASSWORD_EXPIRED and
-     * PASSWORD_POLICIES_PASSWORD_NOT_SUFFICIENT.
-     *
-     * @param PasswordPoliciesContext $passwordPoliciesContext
-     */
-    public function setPasswordPoliciesContext(PasswordPoliciesContext $passwordPoliciesContext)
-    {
-    }
-    /**
-     * @return PasswordPoliciesContext
-     */
-    public function getPasswordPoliciesContext()
+    class Google_Service_AndroidManagement_SpecificNonComplianceContext extends \Google\Service\AndroidManagement\SpecificNonComplianceContext
     {
     }
 }

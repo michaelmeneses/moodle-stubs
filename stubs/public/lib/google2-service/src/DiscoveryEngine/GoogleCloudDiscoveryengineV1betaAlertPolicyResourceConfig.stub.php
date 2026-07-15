@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaAlertPolicyResourceConfig extends \Google\Collection
-{
-    protected $collection_key = 'contactDetails';
-    protected $alertEnrollmentsType = GoogleCloudDiscoveryengineV1betaAlertPolicyResourceConfigAlertEnrollment::class;
-    protected $alertEnrollmentsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $alertPolicy;
-    protected $contactDetailsType = GoogleCloudDiscoveryengineV1betaContactDetails::class;
-    protected $contactDetailsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaAlertPolicyResourceConfigAlertEnrollment[]
-     */
-    public function setAlertEnrollments($alertEnrollments)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaAlertPolicyResourceConfig extends \Google\Collection
     {
+        protected $collection_key = 'contactDetails';
+        protected $alertEnrollmentsType = GoogleCloudDiscoveryengineV1betaAlertPolicyResourceConfigAlertEnrollment::class;
+        protected $alertEnrollmentsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $alertPolicy;
+        protected $contactDetailsType = GoogleCloudDiscoveryengineV1betaContactDetails::class;
+        protected $contactDetailsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaAlertPolicyResourceConfigAlertEnrollment[]
+         */
+        public function setAlertEnrollments($alertEnrollments)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaAlertPolicyResourceConfigAlertEnrollment[]
+         */
+        public function getAlertEnrollments()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAlertPolicy($alertPolicy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAlertPolicy()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaContactDetails[]
+         */
+        public function setContactDetails($contactDetails)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaContactDetails[]
+         */
+        public function getContactDetails()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaAlertPolicyResourceConfigAlertEnrollment[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAlertPolicyResourceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlertEnrollments()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAlertPolicy($alertPolicy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAlertPolicy()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaContactDetails[]
-     */
-    public function setContactDetails($contactDetails)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaContactDetails[]
-     */
-    public function getContactDetails()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaAlertPolicyResourceConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAlertPolicyResourceConfig
     {
     }
 }

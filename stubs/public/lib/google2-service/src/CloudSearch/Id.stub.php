@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Id extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $creatorUserId;
-    /**
-     * @var string
-     */
-    public $localId;
-    /**
-     * @var int
-     */
-    public $nameSpace;
-    /**
-     * @param string
-     */
-    public function setCreatorUserId($creatorUserId)
+namespace Google\Service\CloudSearch {
+    class Id extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $creatorUserId;
+        /**
+         * @var string
+         */
+        public $localId;
+        /**
+         * @var int
+         */
+        public $nameSpace;
+        /**
+         * @param string
+         */
+        public function setCreatorUserId($creatorUserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatorUserId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLocalId($localId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalId()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setNameSpace($nameSpace)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNameSpace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\Id registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreatorUserId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLocalId($localId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocalId()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setNameSpace($nameSpace)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNameSpace()
+    class Google_Service_CloudSearch_Id extends \Google\Service\CloudSearch\Id
     {
     }
 }

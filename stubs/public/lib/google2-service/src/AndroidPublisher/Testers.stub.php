@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class Testers extends \Google\Collection
-{
-    protected $collection_key = 'googleGroups';
-    /**
-     * All testing Google Groups, as email addresses.
-     *
-     * @var string[]
-     */
-    public $googleGroups;
-    /**
-     * All testing Google Groups, as email addresses.
-     *
-     * @param string[] $googleGroups
-     */
-    public function setGoogleGroups($googleGroups)
+namespace Google\Service\AndroidPublisher {
+    class Testers extends \Google\Collection
     {
+        protected $collection_key = 'googleGroups';
+        /**
+         * All testing Google Groups, as email addresses.
+         *
+         * @var string[]
+         */
+        public $googleGroups;
+        /**
+         * All testing Google Groups, as email addresses.
+         *
+         * @param string[] $googleGroups
+         */
+        public function setGoogleGroups($googleGroups)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getGoogleGroups()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\Testers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGoogleGroups()
+    class Google_Service_AndroidPublisher_Testers extends \Google\Service\AndroidPublisher\Testers
     {
     }
 }

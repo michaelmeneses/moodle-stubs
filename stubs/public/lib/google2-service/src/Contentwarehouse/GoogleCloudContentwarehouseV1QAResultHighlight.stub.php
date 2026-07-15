@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1QAResultHighlight extends \Google\Model
-{
-    /**
-     * End index of the highlight, exclusive.
-     *
-     * @var int
-     */
-    public $endIndex;
-    /**
-     * Start index of the highlight.
-     *
-     * @var int
-     */
-    public $startIndex;
-    /**
-     * End index of the highlight, exclusive.
-     *
-     * @param int $endIndex
-     */
-    public function setEndIndex($endIndex)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1QAResultHighlight extends \Google\Model
     {
+        /**
+         * End index of the highlight, exclusive.
+         *
+         * @var int
+         */
+        public $endIndex;
+        /**
+         * Start index of the highlight.
+         *
+         * @var int
+         */
+        public $startIndex;
+        /**
+         * End index of the highlight, exclusive.
+         *
+         * @param int $endIndex
+         */
+        public function setEndIndex($endIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEndIndex()
+        {
+        }
+        /**
+         * Start index of the highlight.
+         *
+         * @param int $startIndex
+         */
+        public function setStartIndex($startIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1QAResultHighlight registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndIndex()
-    {
-    }
-    /**
-     * Start index of the highlight.
-     *
-     * @param int $startIndex
-     */
-    public function setStartIndex($startIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartIndex()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1QAResultHighlight extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1QAResultHighlight
     {
     }
 }

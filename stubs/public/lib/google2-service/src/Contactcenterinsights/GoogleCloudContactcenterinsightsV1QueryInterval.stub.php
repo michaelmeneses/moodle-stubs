@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1QueryInterval extends \Google\Model
-{
-    /**
-     * Required. The end time of the time window.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Required. The start time of the time window.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Required. The end time of the time window.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1QueryInterval extends \Google\Model
     {
+        /**
+         * Required. The end time of the time window.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Required. The start time of the time window.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Required. The end time of the time window.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Required. The start time of the time window.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QueryInterval registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Required. The start time of the time window.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1QueryInterval extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QueryInterval
     {
     }
 }

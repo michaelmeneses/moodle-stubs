@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GsuiteIntegrationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'indexableTexts';
-    protected $activityFeedDataType = AppsDynamiteSharedActivityFeedAnnotationData::class;
-    protected $activityFeedDataDataType = '';
-    protected $assistantDataType = AppsDynamiteSharedAssistantAnnotationData::class;
-    protected $assistantDataDataType = '';
-    protected $calendarEventDataType = AppsDynamiteSharedCalendarEventAnnotationData::class;
-    protected $calendarEventDataDataType = '';
-    protected $callDataType = AppsDynamiteSharedCallAnnotationData::class;
-    protected $callDataDataType = '';
-    /**
-     * @var string
-     */
-    public $clientType;
-    /**
-     * @var string[]
-     */
-    public $indexableTexts;
-    protected $tasksDataType = AppsDynamiteSharedTasksAnnotationData::class;
-    protected $tasksDataDataType = '';
-    /**
-     * @param AppsDynamiteSharedActivityFeedAnnotationData
-     */
-    public function setActivityFeedData(AppsDynamiteSharedActivityFeedAnnotationData $activityFeedData)
+namespace Google\Service\CloudSearch {
+    class GsuiteIntegrationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'indexableTexts';
+        protected $activityFeedDataType = AppsDynamiteSharedActivityFeedAnnotationData::class;
+        protected $activityFeedDataDataType = '';
+        protected $assistantDataType = AppsDynamiteSharedAssistantAnnotationData::class;
+        protected $assistantDataDataType = '';
+        protected $calendarEventDataType = AppsDynamiteSharedCalendarEventAnnotationData::class;
+        protected $calendarEventDataDataType = '';
+        protected $callDataType = AppsDynamiteSharedCallAnnotationData::class;
+        protected $callDataDataType = '';
+        /**
+         * @var string
+         */
+        public $clientType;
+        /**
+         * @var string[]
+         */
+        public $indexableTexts;
+        protected $tasksDataType = AppsDynamiteSharedTasksAnnotationData::class;
+        protected $tasksDataDataType = '';
+        /**
+         * @param AppsDynamiteSharedActivityFeedAnnotationData
+         */
+        public function setActivityFeedData(AppsDynamiteSharedActivityFeedAnnotationData $activityFeedData)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedActivityFeedAnnotationData
+         */
+        public function getActivityFeedData()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedAssistantAnnotationData
+         */
+        public function setAssistantData(AppsDynamiteSharedAssistantAnnotationData $assistantData)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedAssistantAnnotationData
+         */
+        public function getAssistantData()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedCalendarEventAnnotationData
+         */
+        public function setCalendarEventData(AppsDynamiteSharedCalendarEventAnnotationData $calendarEventData)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedCalendarEventAnnotationData
+         */
+        public function getCalendarEventData()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedCallAnnotationData
+         */
+        public function setCallData(AppsDynamiteSharedCallAnnotationData $callData)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedCallAnnotationData
+         */
+        public function getCallData()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setClientType($clientType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientType()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setIndexableTexts($indexableTexts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIndexableTexts()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedTasksAnnotationData
+         */
+        public function setTasksData(AppsDynamiteSharedTasksAnnotationData $tasksData)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedTasksAnnotationData
+         */
+        public function getTasksData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedActivityFeedAnnotationData
+     * Runtime class alias of \Google\Service\CloudSearch\GsuiteIntegrationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivityFeedData()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedAssistantAnnotationData
-     */
-    public function setAssistantData(AppsDynamiteSharedAssistantAnnotationData $assistantData)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedAssistantAnnotationData
-     */
-    public function getAssistantData()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedCalendarEventAnnotationData
-     */
-    public function setCalendarEventData(AppsDynamiteSharedCalendarEventAnnotationData $calendarEventData)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedCalendarEventAnnotationData
-     */
-    public function getCalendarEventData()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedCallAnnotationData
-     */
-    public function setCallData(AppsDynamiteSharedCallAnnotationData $callData)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedCallAnnotationData
-     */
-    public function getCallData()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setClientType($clientType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClientType()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setIndexableTexts($indexableTexts)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIndexableTexts()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedTasksAnnotationData
-     */
-    public function setTasksData(AppsDynamiteSharedTasksAnnotationData $tasksData)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedTasksAnnotationData
-     */
-    public function getTasksData()
+    class Google_Service_CloudSearch_GsuiteIntegrationMetadata extends \Google\Service\CloudSearch\GsuiteIntegrationMetadata
     {
     }
 }

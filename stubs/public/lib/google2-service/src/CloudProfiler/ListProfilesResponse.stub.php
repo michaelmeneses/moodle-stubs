@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudProfiler;
-
-class ListProfilesResponse extends \Google\Collection
-{
-    protected $collection_key = 'profiles';
-    /**
-     * Token to receive the next page of results. This field maybe empty if there
-     * are no more profiles to fetch.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $profilesType = Profile::class;
-    protected $profilesDataType = 'array';
-    /**
-     * Number of profiles that were skipped in the current page since they were
-     * not able to be fetched successfully. This should typically be zero. A non-
-     * zero value may indicate a transient failure, in which case if the number is
-     * too high for your use case, the call may be retried.
-     *
-     * @var int
-     */
-    public $skippedProfiles;
-    /**
-     * Token to receive the next page of results. This field maybe empty if there
-     * are no more profiles to fetch.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudProfiler {
+    class ListProfilesResponse extends \Google\Collection
     {
+        protected $collection_key = 'profiles';
+        /**
+         * Token to receive the next page of results. This field maybe empty if there
+         * are no more profiles to fetch.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $profilesType = Profile::class;
+        protected $profilesDataType = 'array';
+        /**
+         * Number of profiles that were skipped in the current page since they were
+         * not able to be fetched successfully. This should typically be zero. A non-
+         * zero value may indicate a transient failure, in which case if the number is
+         * too high for your use case, the call may be retried.
+         *
+         * @var int
+         */
+        public $skippedProfiles;
+        /**
+         * Token to receive the next page of results. This field maybe empty if there
+         * are no more profiles to fetch.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of profiles fetched.
+         *
+         * @param Profile[] $profiles
+         */
+        public function setProfiles($profiles)
+        {
+        }
+        /**
+         * @return Profile[]
+         */
+        public function getProfiles()
+        {
+        }
+        /**
+         * Number of profiles that were skipped in the current page since they were
+         * not able to be fetched successfully. This should typically be zero. A non-
+         * zero value may indicate a transient failure, in which case if the number is
+         * too high for your use case, the call may be retried.
+         *
+         * @param int $skippedProfiles
+         */
+        public function setSkippedProfiles($skippedProfiles)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSkippedProfiles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudProfiler\ListProfilesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of profiles fetched.
-     *
-     * @param Profile[] $profiles
-     */
-    public function setProfiles($profiles)
-    {
-    }
-    /**
-     * @return Profile[]
-     */
-    public function getProfiles()
-    {
-    }
-    /**
-     * Number of profiles that were skipped in the current page since they were
-     * not able to be fetched successfully. This should typically be zero. A non-
-     * zero value may indicate a transient failure, in which case if the number is
-     * too high for your use case, the call may be retried.
-     *
-     * @param int $skippedProfiles
-     */
-    public function setSkippedProfiles($skippedProfiles)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSkippedProfiles()
+    class Google_Service_CloudProfiler_ListProfilesResponse extends \Google\Service\CloudProfiler\ListProfilesResponse
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class CustomerLoyaltyData extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $loyaltyTier;
-    /**
-     * @param string
-     */
-    public function setLoyaltyTier($loyaltyTier)
+namespace Google\Service\ShoppingContent {
+    class CustomerLoyaltyData extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $loyaltyTier;
+        /**
+         * @param string
+         */
+        public function setLoyaltyTier($loyaltyTier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLoyaltyTier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\CustomerLoyaltyData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLoyaltyTier()
+    class Google_Service_ShoppingContent_CustomerLoyaltyData extends \Google\Service\ShoppingContent\CustomerLoyaltyData
     {
     }
 }

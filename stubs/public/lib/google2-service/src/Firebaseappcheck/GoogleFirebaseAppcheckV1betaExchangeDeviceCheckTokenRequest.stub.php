@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1betaExchangeDeviceCheckTokenRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $deviceToken;
-    /**
-     * @param string
-     */
-    public function setDeviceToken($deviceToken)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1betaExchangeDeviceCheckTokenRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $deviceToken;
+        /**
+         * @param string
+         */
+        public function setDeviceToken($deviceToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaExchangeDeviceCheckTokenRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceToken()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1betaExchangeDeviceCheckTokenRequest extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaExchangeDeviceCheckTokenRequest
     {
     }
 }

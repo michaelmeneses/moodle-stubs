@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SparkPlanGraphEdge extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $fromId;
-    /**
-     * @var string
-     */
-    public $toId;
-    /**
-     * @param string $fromId
-     */
-    public function setFromId($fromId)
+namespace Google\Service\Dataproc {
+    class SparkPlanGraphEdge extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $fromId;
+        /**
+         * @var string
+         */
+        public $toId;
+        /**
+         * @param string $fromId
+         */
+        public function setFromId($fromId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFromId()
+        {
+        }
+        /**
+         * @param string $toId
+         */
+        public function setToId($toId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\SparkPlanGraphEdge registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFromId()
-    {
-    }
-    /**
-     * @param string $toId
-     */
-    public function setToId($toId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getToId()
+    class Google_Service_Dataproc_SparkPlanGraphEdge extends \Google\Service\Dataproc\SparkPlanGraphEdge
     {
     }
 }

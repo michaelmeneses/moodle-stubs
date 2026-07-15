@@ -21,124 +21,133 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FactCheckTools;
-
-class GoogleFactcheckingFactchecktoolsV1alpha1ClaimReview extends \Google\Model
-{
-    /**
-     * The language this review was written in. For instance, "en" or "de".
-     *
-     * @var string
-     */
-    public $languageCode;
-    protected $publisherType = GoogleFactcheckingFactchecktoolsV1alpha1Publisher::class;
-    protected $publisherDataType = '';
-    /**
-     * The date the claim was reviewed.
-     *
-     * @var string
-     */
-    public $reviewDate;
-    /**
-     * Textual rating. For instance, "Mostly false".
-     *
-     * @var string
-     */
-    public $textualRating;
-    /**
-     * The title of this claim review, if it can be determined.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The URL of this claim review.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * The language this review was written in. For instance, "en" or "de".
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
+namespace Google\Service\FactCheckTools {
+    class GoogleFactcheckingFactchecktoolsV1alpha1ClaimReview extends \Google\Model
     {
+        /**
+         * The language this review was written in. For instance, "en" or "de".
+         *
+         * @var string
+         */
+        public $languageCode;
+        protected $publisherType = GoogleFactcheckingFactchecktoolsV1alpha1Publisher::class;
+        protected $publisherDataType = '';
+        /**
+         * The date the claim was reviewed.
+         *
+         * @var string
+         */
+        public $reviewDate;
+        /**
+         * Textual rating. For instance, "Mostly false".
+         *
+         * @var string
+         */
+        public $textualRating;
+        /**
+         * The title of this claim review, if it can be determined.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The URL of this claim review.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * The language this review was written in. For instance, "en" or "de".
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * The publisher of this claim review.
+         *
+         * @param GoogleFactcheckingFactchecktoolsV1alpha1Publisher $publisher
+         */
+        public function setPublisher(GoogleFactcheckingFactchecktoolsV1alpha1Publisher $publisher)
+        {
+        }
+        /**
+         * @return GoogleFactcheckingFactchecktoolsV1alpha1Publisher
+         */
+        public function getPublisher()
+        {
+        }
+        /**
+         * The date the claim was reviewed.
+         *
+         * @param string $reviewDate
+         */
+        public function setReviewDate($reviewDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReviewDate()
+        {
+        }
+        /**
+         * Textual rating. For instance, "Mostly false".
+         *
+         * @param string $textualRating
+         */
+        public function setTextualRating($textualRating)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTextualRating()
+        {
+        }
+        /**
+         * The title of this claim review, if it can be determined.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * The URL of this claim review.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FactCheckTools\GoogleFactcheckingFactchecktoolsV1alpha1ClaimReview registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * The publisher of this claim review.
-     *
-     * @param GoogleFactcheckingFactchecktoolsV1alpha1Publisher $publisher
-     */
-    public function setPublisher(GoogleFactcheckingFactchecktoolsV1alpha1Publisher $publisher)
-    {
-    }
-    /**
-     * @return GoogleFactcheckingFactchecktoolsV1alpha1Publisher
-     */
-    public function getPublisher()
-    {
-    }
-    /**
-     * The date the claim was reviewed.
-     *
-     * @param string $reviewDate
-     */
-    public function setReviewDate($reviewDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReviewDate()
-    {
-    }
-    /**
-     * Textual rating. For instance, "Mostly false".
-     *
-     * @param string $textualRating
-     */
-    public function setTextualRating($textualRating)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTextualRating()
-    {
-    }
-    /**
-     * The title of this claim review, if it can be determined.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * The URL of this claim review.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_FactCheckTools_GoogleFactcheckingFactchecktoolsV1alpha1ClaimReview extends \Google\Service\FactCheckTools\GoogleFactcheckingFactchecktoolsV1alpha1ClaimReview
     {
     }
 }

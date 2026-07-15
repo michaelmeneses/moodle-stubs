@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class AllocationAggregateReservation extends \Google\Collection
-{
-    public const VM_FAMILY_VM_FAMILY_CLOUD_TPU_DEVICE_CT3 = 'VM_FAMILY_CLOUD_TPU_DEVICE_CT3';
-    public const VM_FAMILY_VM_FAMILY_CLOUD_TPU_LITE_DEVICE_CT5L = 'VM_FAMILY_CLOUD_TPU_LITE_DEVICE_CT5L';
-    public const VM_FAMILY_VM_FAMILY_CLOUD_TPU_LITE_POD_SLICE_CT5LP = 'VM_FAMILY_CLOUD_TPU_LITE_POD_SLICE_CT5LP';
-    public const VM_FAMILY_VM_FAMILY_CLOUD_TPU_LITE_POD_SLICE_CT6E = 'VM_FAMILY_CLOUD_TPU_LITE_POD_SLICE_CT6E';
-    public const VM_FAMILY_VM_FAMILY_CLOUD_TPU_POD_SLICE_CT3P = 'VM_FAMILY_CLOUD_TPU_POD_SLICE_CT3P';
-    public const VM_FAMILY_VM_FAMILY_CLOUD_TPU_POD_SLICE_CT4P = 'VM_FAMILY_CLOUD_TPU_POD_SLICE_CT4P';
-    public const VM_FAMILY_VM_FAMILY_CLOUD_TPU_POD_SLICE_CT5P = 'VM_FAMILY_CLOUD_TPU_POD_SLICE_CT5P';
-    public const VM_FAMILY_VM_FAMILY_CLOUD_TPU_POD_SLICE_TPU7X = 'VM_FAMILY_CLOUD_TPU_POD_SLICE_TPU7X';
-    /**
-     * Reserved resources will be optimized for BATCH workloads, such as ML
-     * training.
-     */
-    public const WORKLOAD_TYPE_BATCH = 'BATCH';
-    /**
-     * Reserved resources will be optimized for SERVING workloads, such as ML
-     * inference.
-     */
-    public const WORKLOAD_TYPE_SERVING = 'SERVING';
-    public const WORKLOAD_TYPE_UNSPECIFIED = 'UNSPECIFIED';
-    protected $collection_key = 'reservedResources';
-    protected $inUseResourcesType = AllocationAggregateReservationReservedResourceInfo::class;
-    protected $inUseResourcesDataType = 'array';
-    protected $reservedResourcesType = AllocationAggregateReservationReservedResourceInfo::class;
-    protected $reservedResourcesDataType = 'array';
-    /**
-     * The VM family that all instances scheduled against this reservation must
-     * belong to.
-     *
-     * @var string
-     */
-    public $vmFamily;
-    /**
-     * The workload type of the instances that will target this reservation.
-     *
-     * @var string
-     */
-    public $workloadType;
-    /**
-     * Output only. [Output only] List of resources currently in use.
-     *
-     * @param AllocationAggregateReservationReservedResourceInfo[] $inUseResources
-     */
-    public function setInUseResources($inUseResources)
+namespace Google\Service\Compute {
+    class AllocationAggregateReservation extends \Google\Collection
     {
+        public const VM_FAMILY_VM_FAMILY_CLOUD_TPU_DEVICE_CT3 = 'VM_FAMILY_CLOUD_TPU_DEVICE_CT3';
+        public const VM_FAMILY_VM_FAMILY_CLOUD_TPU_LITE_DEVICE_CT5L = 'VM_FAMILY_CLOUD_TPU_LITE_DEVICE_CT5L';
+        public const VM_FAMILY_VM_FAMILY_CLOUD_TPU_LITE_POD_SLICE_CT5LP = 'VM_FAMILY_CLOUD_TPU_LITE_POD_SLICE_CT5LP';
+        public const VM_FAMILY_VM_FAMILY_CLOUD_TPU_LITE_POD_SLICE_CT6E = 'VM_FAMILY_CLOUD_TPU_LITE_POD_SLICE_CT6E';
+        public const VM_FAMILY_VM_FAMILY_CLOUD_TPU_POD_SLICE_CT3P = 'VM_FAMILY_CLOUD_TPU_POD_SLICE_CT3P';
+        public const VM_FAMILY_VM_FAMILY_CLOUD_TPU_POD_SLICE_CT4P = 'VM_FAMILY_CLOUD_TPU_POD_SLICE_CT4P';
+        public const VM_FAMILY_VM_FAMILY_CLOUD_TPU_POD_SLICE_CT5P = 'VM_FAMILY_CLOUD_TPU_POD_SLICE_CT5P';
+        public const VM_FAMILY_VM_FAMILY_CLOUD_TPU_POD_SLICE_TPU7X = 'VM_FAMILY_CLOUD_TPU_POD_SLICE_TPU7X';
+        /**
+         * Reserved resources will be optimized for BATCH workloads, such as ML
+         * training.
+         */
+        public const WORKLOAD_TYPE_BATCH = 'BATCH';
+        /**
+         * Reserved resources will be optimized for SERVING workloads, such as ML
+         * inference.
+         */
+        public const WORKLOAD_TYPE_SERVING = 'SERVING';
+        public const WORKLOAD_TYPE_UNSPECIFIED = 'UNSPECIFIED';
+        protected $collection_key = 'reservedResources';
+        protected $inUseResourcesType = AllocationAggregateReservationReservedResourceInfo::class;
+        protected $inUseResourcesDataType = 'array';
+        protected $reservedResourcesType = AllocationAggregateReservationReservedResourceInfo::class;
+        protected $reservedResourcesDataType = 'array';
+        /**
+         * The VM family that all instances scheduled against this reservation must
+         * belong to.
+         *
+         * @var string
+         */
+        public $vmFamily;
+        /**
+         * The workload type of the instances that will target this reservation.
+         *
+         * @var string
+         */
+        public $workloadType;
+        /**
+         * Output only. [Output only] List of resources currently in use.
+         *
+         * @param AllocationAggregateReservationReservedResourceInfo[] $inUseResources
+         */
+        public function setInUseResources($inUseResources)
+        {
+        }
+        /**
+         * @return AllocationAggregateReservationReservedResourceInfo[]
+         */
+        public function getInUseResources()
+        {
+        }
+        /**
+         * List of reserved resources (CPUs, memory, accelerators).
+         *
+         * @param AllocationAggregateReservationReservedResourceInfo[] $reservedResources
+         */
+        public function setReservedResources($reservedResources)
+        {
+        }
+        /**
+         * @return AllocationAggregateReservationReservedResourceInfo[]
+         */
+        public function getReservedResources()
+        {
+        }
+        /**
+         * The VM family that all instances scheduled against this reservation must
+         * belong to.
+         *
+         * Accepted values: VM_FAMILY_CLOUD_TPU_DEVICE_CT3,
+         * VM_FAMILY_CLOUD_TPU_LITE_DEVICE_CT5L,
+         * VM_FAMILY_CLOUD_TPU_LITE_POD_SLICE_CT5LP,
+         * VM_FAMILY_CLOUD_TPU_LITE_POD_SLICE_CT6E,
+         * VM_FAMILY_CLOUD_TPU_POD_SLICE_CT3P, VM_FAMILY_CLOUD_TPU_POD_SLICE_CT4P,
+         * VM_FAMILY_CLOUD_TPU_POD_SLICE_CT5P, VM_FAMILY_CLOUD_TPU_POD_SLICE_TPU7X
+         *
+         * @param self::VM_FAMILY_* $vmFamily
+         */
+        public function setVmFamily($vmFamily)
+        {
+        }
+        /**
+         * @return self::VM_FAMILY_*
+         */
+        public function getVmFamily()
+        {
+        }
+        /**
+         * The workload type of the instances that will target this reservation.
+         *
+         * Accepted values: BATCH, SERVING, UNSPECIFIED
+         *
+         * @param self::WORKLOAD_TYPE_* $workloadType
+         */
+        public function setWorkloadType($workloadType)
+        {
+        }
+        /**
+         * @return self::WORKLOAD_TYPE_*
+         */
+        public function getWorkloadType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AllocationAggregateReservationReservedResourceInfo[]
+     * Runtime class alias of \Google\Service\Compute\AllocationAggregateReservation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInUseResources()
-    {
-    }
-    /**
-     * List of reserved resources (CPUs, memory, accelerators).
-     *
-     * @param AllocationAggregateReservationReservedResourceInfo[] $reservedResources
-     */
-    public function setReservedResources($reservedResources)
-    {
-    }
-    /**
-     * @return AllocationAggregateReservationReservedResourceInfo[]
-     */
-    public function getReservedResources()
-    {
-    }
-    /**
-     * The VM family that all instances scheduled against this reservation must
-     * belong to.
-     *
-     * Accepted values: VM_FAMILY_CLOUD_TPU_DEVICE_CT3,
-     * VM_FAMILY_CLOUD_TPU_LITE_DEVICE_CT5L,
-     * VM_FAMILY_CLOUD_TPU_LITE_POD_SLICE_CT5LP,
-     * VM_FAMILY_CLOUD_TPU_LITE_POD_SLICE_CT6E,
-     * VM_FAMILY_CLOUD_TPU_POD_SLICE_CT3P, VM_FAMILY_CLOUD_TPU_POD_SLICE_CT4P,
-     * VM_FAMILY_CLOUD_TPU_POD_SLICE_CT5P, VM_FAMILY_CLOUD_TPU_POD_SLICE_TPU7X
-     *
-     * @param self::VM_FAMILY_* $vmFamily
-     */
-    public function setVmFamily($vmFamily)
-    {
-    }
-    /**
-     * @return self::VM_FAMILY_*
-     */
-    public function getVmFamily()
-    {
-    }
-    /**
-     * The workload type of the instances that will target this reservation.
-     *
-     * Accepted values: BATCH, SERVING, UNSPECIFIED
-     *
-     * @param self::WORKLOAD_TYPE_* $workloadType
-     */
-    public function setWorkloadType($workloadType)
-    {
-    }
-    /**
-     * @return self::WORKLOAD_TYPE_*
-     */
-    public function getWorkloadType()
+    class Google_Service_Compute_AllocationAggregateReservation extends \Google\Service\Compute\AllocationAggregateReservation
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class RollbackFhirResourcesResponse extends \Google\Model
-{
-    /**
-     * The name of the FHIR store to rollback, in the format of
-     * "projects/{project_id}/locations/{location_id}/datasets/{dataset_id}
-     * /fhirStores/{fhir_store_id}".
-     *
-     * @var string
-     */
-    public $fhirStore;
-    /**
-     * The name of the FHIR store to rollback, in the format of
-     * "projects/{project_id}/locations/{location_id}/datasets/{dataset_id}
-     * /fhirStores/{fhir_store_id}".
-     *
-     * @param string $fhirStore
-     */
-    public function setFhirStore($fhirStore)
+namespace Google\Service\CloudHealthcare {
+    class RollbackFhirResourcesResponse extends \Google\Model
     {
+        /**
+         * The name of the FHIR store to rollback, in the format of
+         * "projects/{project_id}/locations/{location_id}/datasets/{dataset_id}
+         * /fhirStores/{fhir_store_id}".
+         *
+         * @var string
+         */
+        public $fhirStore;
+        /**
+         * The name of the FHIR store to rollback, in the format of
+         * "projects/{project_id}/locations/{location_id}/datasets/{dataset_id}
+         * /fhirStores/{fhir_store_id}".
+         *
+         * @param string $fhirStore
+         */
+        public function setFhirStore($fhirStore)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFhirStore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\RollbackFhirResourcesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFhirStore()
+    class Google_Service_CloudHealthcare_RollbackFhirResourcesResponse extends \Google\Service\CloudHealthcare\RollbackFhirResourcesResponse
     {
     }
 }

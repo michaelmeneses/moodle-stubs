@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class SmartTapMerchantData extends \Google\Collection
-{
-    protected $collection_key = 'authenticationKeys';
-    protected $authenticationKeysType = AuthenticationKey::class;
-    protected $authenticationKeysDataType = 'array';
-    /**
-     * Available only to Smart Tap enabled partners. Contact support for
-     * additional guidance.
-     *
-     * @var string
-     */
-    public $smartTapMerchantId;
-    /**
-     * Available only to Smart Tap enabled partners. Contact support for
-     * additional guidance.
-     *
-     * @param AuthenticationKey[] $authenticationKeys
-     */
-    public function setAuthenticationKeys($authenticationKeys)
+namespace Google\Service\Walletobjects {
+    class SmartTapMerchantData extends \Google\Collection
     {
+        protected $collection_key = 'authenticationKeys';
+        protected $authenticationKeysType = AuthenticationKey::class;
+        protected $authenticationKeysDataType = 'array';
+        /**
+         * Available only to Smart Tap enabled partners. Contact support for
+         * additional guidance.
+         *
+         * @var string
+         */
+        public $smartTapMerchantId;
+        /**
+         * Available only to Smart Tap enabled partners. Contact support for
+         * additional guidance.
+         *
+         * @param AuthenticationKey[] $authenticationKeys
+         */
+        public function setAuthenticationKeys($authenticationKeys)
+        {
+        }
+        /**
+         * @return AuthenticationKey[]
+         */
+        public function getAuthenticationKeys()
+        {
+        }
+        /**
+         * Available only to Smart Tap enabled partners. Contact support for
+         * additional guidance.
+         *
+         * @param string $smartTapMerchantId
+         */
+        public function setSmartTapMerchantId($smartTapMerchantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSmartTapMerchantId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuthenticationKey[]
+     * Runtime class alias of \Google\Service\Walletobjects\SmartTapMerchantData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthenticationKeys()
-    {
-    }
-    /**
-     * Available only to Smart Tap enabled partners. Contact support for
-     * additional guidance.
-     *
-     * @param string $smartTapMerchantId
-     */
-    public function setSmartTapMerchantId($smartTapMerchantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSmartTapMerchantId()
+    class Google_Service_Walletobjects_SmartTapMerchantData extends \Google\Service\Walletobjects\SmartTapMerchantData
     {
     }
 }

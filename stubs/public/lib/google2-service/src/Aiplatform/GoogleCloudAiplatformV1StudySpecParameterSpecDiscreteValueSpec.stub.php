@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1StudySpecParameterSpecDiscreteValueSpec extends \Google\Collection
-{
-    protected $collection_key = 'values';
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1StudySpecParameterSpecDiscreteValueSpec extends \Google\Collection
+    {
+        protected $collection_key = 'values';
+        /**
+         * A default value for a `DISCRETE` parameter that is assumed to be a
+         * relatively good starting point. Unset value signals that there is no
+         * offered starting point. It automatically rounds to the nearest feasible
+         * discrete point. Currently only supported by the Vertex AI Vizier service.
+         * Not supported by HyperparameterTuningJob or TrainingPipeline.
+         *
+         * @var 
+         */
+        public $defaultValue;
+        /**
+         * Required. A list of possible values. The list should be in increasing order
+         * and at least 1e-10 apart. For instance, this parameter might have possible
+         * settings of 1.5, 2.5, and 4.0. This list should not contain more than 1,000
+         * values.
+         *
+         * @var []
+         */
+        public $values;
+        public function setDefaultValue($defaultValue)
+        {
+        }
+        public function getDefaultValue()
+        {
+        }
+        public function setValues($values)
+        {
+        }
+        public function getValues()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * A default value for a `DISCRETE` parameter that is assumed to be a
-     * relatively good starting point. Unset value signals that there is no
-     * offered starting point. It automatically rounds to the nearest feasible
-     * discrete point. Currently only supported by the Vertex AI Vizier service.
-     * Not supported by HyperparameterTuningJob or TrainingPipeline.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1StudySpecParameterSpecDiscreteValueSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $defaultValue;
-    /**
-     * Required. A list of possible values. The list should be in increasing order
-     * and at least 1e-10 apart. For instance, this parameter might have possible
-     * settings of 1.5, 2.5, and 4.0. This list should not contain more than 1,000
-     * values.
-     *
-     * @var []
-     */
-    public $values;
-    public function setDefaultValue($defaultValue)
-    {
-    }
-    public function getDefaultValue()
-    {
-    }
-    public function setValues($values)
-    {
-    }
-    public function getValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1StudySpecParameterSpecDiscreteValueSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1StudySpecParameterSpecDiscreteValueSpec
     {
     }
 }

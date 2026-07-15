@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class BatchDeleteRowAccessPoliciesRequest extends \Google\Collection
-{
-    protected $collection_key = 'policyIds';
-    /**
-     * If set to true, it deletes the row access policy even if it's the last row
-     * access policy on the table and the deletion will widen the access rather
-     * narrowing it.
-     *
-     * @var bool
-     */
-    public $force;
-    /**
-     * Required. Policy IDs of the row access policies.
-     *
-     * @var string[]
-     */
-    public $policyIds;
-    /**
-     * If set to true, it deletes the row access policy even if it's the last row
-     * access policy on the table and the deletion will widen the access rather
-     * narrowing it.
-     *
-     * @param bool $force
-     */
-    public function setForce($force)
+namespace Google\Service\Bigquery {
+    class BatchDeleteRowAccessPoliciesRequest extends \Google\Collection
     {
+        protected $collection_key = 'policyIds';
+        /**
+         * If set to true, it deletes the row access policy even if it's the last row
+         * access policy on the table and the deletion will widen the access rather
+         * narrowing it.
+         *
+         * @var bool
+         */
+        public $force;
+        /**
+         * Required. Policy IDs of the row access policies.
+         *
+         * @var string[]
+         */
+        public $policyIds;
+        /**
+         * If set to true, it deletes the row access policy even if it's the last row
+         * access policy on the table and the deletion will widen the access rather
+         * narrowing it.
+         *
+         * @param bool $force
+         */
+        public function setForce($force)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getForce()
+        {
+        }
+        /**
+         * Required. Policy IDs of the row access policies.
+         *
+         * @param string[] $policyIds
+         */
+        public function setPolicyIds($policyIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPolicyIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Bigquery\BatchDeleteRowAccessPoliciesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getForce()
-    {
-    }
-    /**
-     * Required. Policy IDs of the row access policies.
-     *
-     * @param string[] $policyIds
-     */
-    public function setPolicyIds($policyIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPolicyIds()
+    class Google_Service_Bigquery_BatchDeleteRowAccessPoliciesRequest extends \Google\Service\Bigquery\BatchDeleteRowAccessPoliciesRequest
     {
     }
 }

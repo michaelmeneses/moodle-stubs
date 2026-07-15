@@ -21,67 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine\Resource;
-
-/**
- * The "studies" collection of methods.
- * Typical usage is:
- *  <code>
- *   $mlService = new Google\Service\CloudMachineLearningEngine(...);
- *   $studies = $mlService->projects_locations_studies;
- *  </code>
- */
-class ProjectsLocationsStudies extends \Google\Service\Resource
-{
+namespace Google\Service\CloudMachineLearningEngine\Resource {
+    use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ListStudiesResponse;
+    use Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Study;
+    use Google\Service\CloudMachineLearningEngine\GoogleProtobufEmpty;
     /**
-     * Creates a study. (studies.create)
-     *
-     * @param string $parent Required. The project and location that the study
-     * belongs to. Format: projects/{project}/locations/{location}
-     * @param GoogleCloudMlV1Study $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string studyId Required. The ID to use for the study, which will
-     * become the final component of the study's resource name.
-     * @return GoogleCloudMlV1Study
-     * @throws \Google\Service\Exception
+     * The "studies" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $mlService = new Google\Service\CloudMachineLearningEngine(...);
+     *   $studies = $mlService->projects_locations_studies;
+     *  </code>
      */
-    public function create($parent, GoogleCloudMlV1Study $postBody, $optParams = [])
+    class ProjectsLocationsStudies extends \Google\Service\Resource
     {
+        /**
+         * Creates a study. (studies.create)
+         *
+         * @param string $parent Required. The project and location that the study
+         * belongs to. Format: projects/{project}/locations/{location}
+         * @param GoogleCloudMlV1Study $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string studyId Required. The ID to use for the study, which will
+         * become the final component of the study's resource name.
+         * @return GoogleCloudMlV1Study
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudMlV1Study $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a study. (studies.delete)
+         *
+         * @param string $name Required. The study name.
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a study. (studies.get)
+         *
+         * @param string $name Required. The study name.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudMlV1Study
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all the studies in a region for an associated project.
+         * (studies.listProjectsLocationsStudies)
+         *
+         * @param string $parent Required. The project and location that the study
+         * belongs to. Format: projects/{project}/locations/{location}
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudMlV1ListStudiesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsStudies($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a study. (studies.delete)
-     *
-     * @param string $name Required. The study name.
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\Resource\ProjectsLocationsStudies registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets a study. (studies.get)
-     *
-     * @param string $name Required. The study name.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudMlV1Study
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists all the studies in a region for an associated project.
-     * (studies.listProjectsLocationsStudies)
-     *
-     * @param string $parent Required. The project and location that the study
-     * belongs to. Format: projects/{project}/locations/{location}
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudMlV1ListStudiesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsStudies($parent, $optParams = [])
+    class Google_Service_CloudMachineLearningEngine_Resource_ProjectsLocationsStudies extends \Google\Service\CloudMachineLearningEngine\Resource\ProjectsLocationsStudies
     {
     }
 }

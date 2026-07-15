@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class EntitlementsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'entitlement';
-    protected $entitlementType = Entitlement::class;
-    protected $entitlementDataType = 'array';
-    /**
-     * An entitlement of a user to a product (e.g. an app). For example, a free
-     * app that they have installed, or a paid app that they have been allocated a
-     * license to.
-     *
-     * @param Entitlement[] $entitlement
-     */
-    public function setEntitlement($entitlement)
+namespace Google\Service\AndroidEnterprise {
+    class EntitlementsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'entitlement';
+        protected $entitlementType = Entitlement::class;
+        protected $entitlementDataType = 'array';
+        /**
+         * An entitlement of a user to a product (e.g. an app). For example, a free
+         * app that they have installed, or a paid app that they have been allocated a
+         * license to.
+         *
+         * @param Entitlement[] $entitlement
+         */
+        public function setEntitlement($entitlement)
+        {
+        }
+        /**
+         * @return Entitlement[]
+         */
+        public function getEntitlement()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Entitlement[]
+     * Runtime class alias of \Google\Service\AndroidEnterprise\EntitlementsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntitlement()
+    class Google_Service_AndroidEnterprise_EntitlementsListResponse extends \Google\Service\AndroidEnterprise\EntitlementsListResponse
     {
     }
 }

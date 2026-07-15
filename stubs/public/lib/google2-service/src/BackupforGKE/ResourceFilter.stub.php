@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BackupforGKE;
-
-class ResourceFilter extends \Google\Collection
-{
-    protected $collection_key = 'namespaces';
-    protected $groupKindsType = GroupKind::class;
-    protected $groupKindsDataType = 'array';
-    /**
-     * Optional. This is a [JSONPath] (https://github.com/json-
-     * path/JsonPath/blob/master/README.md) expression that matches specific
-     * fields of candidate resources and it operates as a filtering parameter
-     * (resources that are not matched with this expression will not be candidates
-     * for transformation).
-     *
-     * @var string
-     */
-    public $jsonPath;
-    /**
-     * Optional. (Filtering parameter) Any resource subject to transformation must
-     * be contained within one of the listed Kubernetes Namespace in the Backup.
-     * If this field is not provided, no namespace filtering will be performed
-     * (all resources in all Namespaces, including all cluster-scoped resources,
-     * will be candidates for transformation).
-     *
-     * @var string[]
-     */
-    public $namespaces;
-    /**
-     * Optional. (Filtering parameter) Any resource subject to transformation must
-     * belong to one of the listed "types". If this field is not provided, no type
-     * filtering will be performed (all resources of all types matching previous
-     * filtering parameters will be candidates for transformation).
-     *
-     * @param GroupKind[] $groupKinds
-     */
-    public function setGroupKinds($groupKinds)
+namespace Google\Service\BackupforGKE {
+    class ResourceFilter extends \Google\Collection
     {
+        protected $collection_key = 'namespaces';
+        protected $groupKindsType = GroupKind::class;
+        protected $groupKindsDataType = 'array';
+        /**
+         * Optional. This is a [JSONPath] (https://github.com/json-
+         * path/JsonPath/blob/master/README.md) expression that matches specific
+         * fields of candidate resources and it operates as a filtering parameter
+         * (resources that are not matched with this expression will not be candidates
+         * for transformation).
+         *
+         * @var string
+         */
+        public $jsonPath;
+        /**
+         * Optional. (Filtering parameter) Any resource subject to transformation must
+         * be contained within one of the listed Kubernetes Namespace in the Backup.
+         * If this field is not provided, no namespace filtering will be performed
+         * (all resources in all Namespaces, including all cluster-scoped resources,
+         * will be candidates for transformation).
+         *
+         * @var string[]
+         */
+        public $namespaces;
+        /**
+         * Optional. (Filtering parameter) Any resource subject to transformation must
+         * belong to one of the listed "types". If this field is not provided, no type
+         * filtering will be performed (all resources of all types matching previous
+         * filtering parameters will be candidates for transformation).
+         *
+         * @param GroupKind[] $groupKinds
+         */
+        public function setGroupKinds($groupKinds)
+        {
+        }
+        /**
+         * @return GroupKind[]
+         */
+        public function getGroupKinds()
+        {
+        }
+        /**
+         * Optional. This is a [JSONPath] (https://github.com/json-
+         * path/JsonPath/blob/master/README.md) expression that matches specific
+         * fields of candidate resources and it operates as a filtering parameter
+         * (resources that are not matched with this expression will not be candidates
+         * for transformation).
+         *
+         * @param string $jsonPath
+         */
+        public function setJsonPath($jsonPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJsonPath()
+        {
+        }
+        /**
+         * Optional. (Filtering parameter) Any resource subject to transformation must
+         * be contained within one of the listed Kubernetes Namespace in the Backup.
+         * If this field is not provided, no namespace filtering will be performed
+         * (all resources in all Namespaces, including all cluster-scoped resources,
+         * will be candidates for transformation).
+         *
+         * @param string[] $namespaces
+         */
+        public function setNamespaces($namespaces)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNamespaces()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GroupKind[]
+     * Runtime class alias of \Google\Service\BackupforGKE\ResourceFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroupKinds()
-    {
-    }
-    /**
-     * Optional. This is a [JSONPath] (https://github.com/json-
-     * path/JsonPath/blob/master/README.md) expression that matches specific
-     * fields of candidate resources and it operates as a filtering parameter
-     * (resources that are not matched with this expression will not be candidates
-     * for transformation).
-     *
-     * @param string $jsonPath
-     */
-    public function setJsonPath($jsonPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJsonPath()
-    {
-    }
-    /**
-     * Optional. (Filtering parameter) Any resource subject to transformation must
-     * be contained within one of the listed Kubernetes Namespace in the Backup.
-     * If this field is not provided, no namespace filtering will be performed
-     * (all resources in all Namespaces, including all cluster-scoped resources,
-     * will be candidates for transformation).
-     *
-     * @param string[] $namespaces
-     */
-    public function setNamespaces($namespaces)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNamespaces()
+    class Google_Service_BackupforGKE_ResourceFilter extends \Google\Service\BackupforGKE\ResourceFilter
     {
     }
 }

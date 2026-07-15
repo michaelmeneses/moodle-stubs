@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeploymentManager;
-
-class ManifestsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'manifests';
-    protected $manifestsType = Manifest::class;
-    protected $manifestsDataType = 'array';
-    /**
-     * Output only. A token used to continue a truncated list request.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Output only. Manifests contained in this list response.
-     *
-     * @param Manifest[] $manifests
-     */
-    public function setManifests($manifests)
+namespace Google\Service\DeploymentManager {
+    class ManifestsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'manifests';
+        protected $manifestsType = Manifest::class;
+        protected $manifestsDataType = 'array';
+        /**
+         * Output only. A token used to continue a truncated list request.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Output only. Manifests contained in this list response.
+         *
+         * @param Manifest[] $manifests
+         */
+        public function setManifests($manifests)
+        {
+        }
+        /**
+         * @return Manifest[]
+         */
+        public function getManifests()
+        {
+        }
+        /**
+         * Output only. A token used to continue a truncated list request.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Manifest[]
+     * Runtime class alias of \Google\Service\DeploymentManager\ManifestsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getManifests()
-    {
-    }
-    /**
-     * Output only. A token used to continue a truncated list request.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DeploymentManager_ManifestsListResponse extends \Google\Service\DeploymentManager\ManifestsListResponse
     {
     }
 }

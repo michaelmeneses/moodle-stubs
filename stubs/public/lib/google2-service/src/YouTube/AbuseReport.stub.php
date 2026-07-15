@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class AbuseReport extends \Google\Collection
-{
-    protected $collection_key = 'relatedEntities';
-    protected $abuseTypesType = AbuseType::class;
-    protected $abuseTypesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $description;
-    protected $relatedEntitiesType = RelatedEntity::class;
-    protected $relatedEntitiesDataType = 'array';
-    protected $subjectType = Entity::class;
-    protected $subjectDataType = '';
-    /**
-     * @param AbuseType[] $abuseTypes
-     */
-    public function setAbuseTypes($abuseTypes)
+namespace Google\Service\YouTube {
+    class AbuseReport extends \Google\Collection
     {
+        protected $collection_key = 'relatedEntities';
+        protected $abuseTypesType = AbuseType::class;
+        protected $abuseTypesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $description;
+        protected $relatedEntitiesType = RelatedEntity::class;
+        protected $relatedEntitiesDataType = 'array';
+        protected $subjectType = Entity::class;
+        protected $subjectDataType = '';
+        /**
+         * @param AbuseType[] $abuseTypes
+         */
+        public function setAbuseTypes($abuseTypes)
+        {
+        }
+        /**
+         * @return AbuseType[]
+         */
+        public function getAbuseTypes()
+        {
+        }
+        /**
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param RelatedEntity[] $relatedEntities
+         */
+        public function setRelatedEntities($relatedEntities)
+        {
+        }
+        /**
+         * @return RelatedEntity[]
+         */
+        public function getRelatedEntities()
+        {
+        }
+        /**
+         * @param Entity $subject
+         */
+        public function setSubject(Entity $subject)
+        {
+        }
+        /**
+         * @return Entity
+         */
+        public function getSubject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AbuseType[]
+     * Runtime class alias of \Google\Service\YouTube\AbuseReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAbuseTypes()
-    {
-    }
-    /**
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param RelatedEntity[] $relatedEntities
-     */
-    public function setRelatedEntities($relatedEntities)
-    {
-    }
-    /**
-     * @return RelatedEntity[]
-     */
-    public function getRelatedEntities()
-    {
-    }
-    /**
-     * @param Entity $subject
-     */
-    public function setSubject(Entity $subject)
-    {
-    }
-    /**
-     * @return Entity
-     */
-    public function getSubject()
+    class Google_Service_YouTube_AbuseReport extends \Google\Service\YouTube\AbuseReport
     {
     }
 }

@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SASPortalTesting;
-
-class SasPortalChannelWithScore extends \Google\Model
-{
-    protected $frequencyRangeType = SasPortalFrequencyRange::class;
-    protected $frequencyRangeDataType = '';
-    /**
-     * The channel score, normalized to be in the range [0,100].
-     *
-     * @var 
-     */
-    public $score;
-    /**
-     * The frequency range of the channel.
-     *
-     * @param SasPortalFrequencyRange $frequencyRange
-     */
-    public function setFrequencyRange(SasPortalFrequencyRange $frequencyRange)
+namespace Google\Service\SASPortalTesting {
+    class SasPortalChannelWithScore extends \Google\Model
     {
+        protected $frequencyRangeType = SasPortalFrequencyRange::class;
+        protected $frequencyRangeDataType = '';
+        /**
+         * The channel score, normalized to be in the range [0,100].
+         *
+         * @var 
+         */
+        public $score;
+        /**
+         * The frequency range of the channel.
+         *
+         * @param SasPortalFrequencyRange $frequencyRange
+         */
+        public function setFrequencyRange(SasPortalFrequencyRange $frequencyRange)
+        {
+        }
+        /**
+         * @return SasPortalFrequencyRange
+         */
+        public function getFrequencyRange()
+        {
+        }
+        public function setScore($score)
+        {
+        }
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SasPortalFrequencyRange
+     * Runtime class alias of \Google\Service\SASPortalTesting\SasPortalChannelWithScore registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFrequencyRange()
-    {
-    }
-    public function setScore($score)
-    {
-    }
-    public function getScore()
+    class Google_Service_SASPortalTesting_SasPortalChannelWithScore extends \Google\Service\SASPortalTesting\SasPortalChannelWithScore
     {
     }
 }

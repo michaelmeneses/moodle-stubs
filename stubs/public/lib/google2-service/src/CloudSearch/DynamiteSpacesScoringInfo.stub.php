@@ -21,163 +21,172 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class DynamiteSpacesScoringInfo extends \Google\Model
-{
-    public $affinityScore;
-    public $commonContactCountAffinityScore;
-    public $contactsIntersectionCount;
-    public $finalScore;
-    public $freshnessScore;
-    public $joinedSpacesAffinityScore;
+namespace Google\Service\CloudSearch {
+    class DynamiteSpacesScoringInfo extends \Google\Model
+    {
+        public $affinityScore;
+        public $commonContactCountAffinityScore;
+        public $contactsIntersectionCount;
+        public $finalScore;
+        public $freshnessScore;
+        public $joinedSpacesAffinityScore;
+        /**
+         * @var string
+         */
+        public $lastMessagePostedTimestampSecs;
+        /**
+         * @var string
+         */
+        public $lastReadTimestampSecs;
+        public $memberCountScore;
+        public $memberMetadataCount;
+        public $messageScore;
+        /**
+         * @var string
+         */
+        public $numAucContacts;
+        public $smallContactListAffinityScore;
+        public $smallUnjoinedSpacesAffinityScore;
+        public $spaceAgeInDays;
+        /**
+         * @var string
+         */
+        public $spaceCreationTimestampSecs;
+        public $topicalityScore;
+        public function setAffinityScore($affinityScore)
+        {
+        }
+        public function getAffinityScore()
+        {
+        }
+        public function setCommonContactCountAffinityScore($commonContactCountAffinityScore)
+        {
+        }
+        public function getCommonContactCountAffinityScore()
+        {
+        }
+        public function setContactsIntersectionCount($contactsIntersectionCount)
+        {
+        }
+        public function getContactsIntersectionCount()
+        {
+        }
+        public function setFinalScore($finalScore)
+        {
+        }
+        public function getFinalScore()
+        {
+        }
+        public function setFreshnessScore($freshnessScore)
+        {
+        }
+        public function getFreshnessScore()
+        {
+        }
+        public function setJoinedSpacesAffinityScore($joinedSpacesAffinityScore)
+        {
+        }
+        public function getJoinedSpacesAffinityScore()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastMessagePostedTimestampSecs($lastMessagePostedTimestampSecs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastMessagePostedTimestampSecs()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastReadTimestampSecs($lastReadTimestampSecs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastReadTimestampSecs()
+        {
+        }
+        public function setMemberCountScore($memberCountScore)
+        {
+        }
+        public function getMemberCountScore()
+        {
+        }
+        public function setMemberMetadataCount($memberMetadataCount)
+        {
+        }
+        public function getMemberMetadataCount()
+        {
+        }
+        public function setMessageScore($messageScore)
+        {
+        }
+        public function getMessageScore()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNumAucContacts($numAucContacts)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumAucContacts()
+        {
+        }
+        public function setSmallContactListAffinityScore($smallContactListAffinityScore)
+        {
+        }
+        public function getSmallContactListAffinityScore()
+        {
+        }
+        public function setSmallUnjoinedSpacesAffinityScore($smallUnjoinedSpacesAffinityScore)
+        {
+        }
+        public function getSmallUnjoinedSpacesAffinityScore()
+        {
+        }
+        public function setSpaceAgeInDays($spaceAgeInDays)
+        {
+        }
+        public function getSpaceAgeInDays()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSpaceCreationTimestampSecs($spaceCreationTimestampSecs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpaceCreationTimestampSecs()
+        {
+        }
+        public function setTopicalityScore($topicalityScore)
+        {
+        }
+        public function getTopicalityScore()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @var string
+     * Runtime class alias of \Google\Service\CloudSearch\DynamiteSpacesScoringInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $lastMessagePostedTimestampSecs;
-    /**
-     * @var string
-     */
-    public $lastReadTimestampSecs;
-    public $memberCountScore;
-    public $memberMetadataCount;
-    public $messageScore;
-    /**
-     * @var string
-     */
-    public $numAucContacts;
-    public $smallContactListAffinityScore;
-    public $smallUnjoinedSpacesAffinityScore;
-    public $spaceAgeInDays;
-    /**
-     * @var string
-     */
-    public $spaceCreationTimestampSecs;
-    public $topicalityScore;
-    public function setAffinityScore($affinityScore)
-    {
-    }
-    public function getAffinityScore()
-    {
-    }
-    public function setCommonContactCountAffinityScore($commonContactCountAffinityScore)
-    {
-    }
-    public function getCommonContactCountAffinityScore()
-    {
-    }
-    public function setContactsIntersectionCount($contactsIntersectionCount)
-    {
-    }
-    public function getContactsIntersectionCount()
-    {
-    }
-    public function setFinalScore($finalScore)
-    {
-    }
-    public function getFinalScore()
-    {
-    }
-    public function setFreshnessScore($freshnessScore)
-    {
-    }
-    public function getFreshnessScore()
-    {
-    }
-    public function setJoinedSpacesAffinityScore($joinedSpacesAffinityScore)
-    {
-    }
-    public function getJoinedSpacesAffinityScore()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastMessagePostedTimestampSecs($lastMessagePostedTimestampSecs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastMessagePostedTimestampSecs()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastReadTimestampSecs($lastReadTimestampSecs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastReadTimestampSecs()
-    {
-    }
-    public function setMemberCountScore($memberCountScore)
-    {
-    }
-    public function getMemberCountScore()
-    {
-    }
-    public function setMemberMetadataCount($memberMetadataCount)
-    {
-    }
-    public function getMemberMetadataCount()
-    {
-    }
-    public function setMessageScore($messageScore)
-    {
-    }
-    public function getMessageScore()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNumAucContacts($numAucContacts)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumAucContacts()
-    {
-    }
-    public function setSmallContactListAffinityScore($smallContactListAffinityScore)
-    {
-    }
-    public function getSmallContactListAffinityScore()
-    {
-    }
-    public function setSmallUnjoinedSpacesAffinityScore($smallUnjoinedSpacesAffinityScore)
-    {
-    }
-    public function getSmallUnjoinedSpacesAffinityScore()
-    {
-    }
-    public function setSpaceAgeInDays($spaceAgeInDays)
-    {
-    }
-    public function getSpaceAgeInDays()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSpaceCreationTimestampSecs($spaceCreationTimestampSecs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpaceCreationTimestampSecs()
-    {
-    }
-    public function setTopicalityScore($topicalityScore)
-    {
-    }
-    public function getTopicalityScore()
+    class Google_Service_CloudSearch_DynamiteSpacesScoringInfo extends \Google\Service\CloudSearch\DynamiteSpacesScoringInfo
     {
     }
 }

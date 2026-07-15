@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Merchant;
-
-class CompetitiveVisibilityBenchmarkView extends \Google\Model
-{
-    public $categoryBenchmarkVisibilityTrend;
-    protected $dateType = Date::class;
-    protected $dateDataType = '';
-    /**
-     * @var string
-     */
-    public $reportCategoryId;
-    /**
-     * @var string
-     */
-    public $reportCountryCode;
-    /**
-     * @var string
-     */
-    public $trafficSource;
-    public $yourDomainVisibilityTrend;
-    public function setCategoryBenchmarkVisibilityTrend($categoryBenchmarkVisibilityTrend)
+namespace Google\Service\Merchant {
+    class CompetitiveVisibilityBenchmarkView extends \Google\Model
     {
+        public $categoryBenchmarkVisibilityTrend;
+        protected $dateType = Date::class;
+        protected $dateDataType = '';
+        /**
+         * @var string
+         */
+        public $reportCategoryId;
+        /**
+         * @var string
+         */
+        public $reportCountryCode;
+        /**
+         * @var string
+         */
+        public $trafficSource;
+        public $yourDomainVisibilityTrend;
+        public function setCategoryBenchmarkVisibilityTrend($categoryBenchmarkVisibilityTrend)
+        {
+        }
+        public function getCategoryBenchmarkVisibilityTrend()
+        {
+        }
+        /**
+         * @param Date
+         */
+        public function setDate(Date $date)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReportCategoryId($reportCategoryId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportCategoryId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReportCountryCode($reportCountryCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportCountryCode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTrafficSource($trafficSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrafficSource()
+        {
+        }
+        public function setYourDomainVisibilityTrend($yourDomainVisibilityTrend)
+        {
+        }
+        public function getYourDomainVisibilityTrend()
+        {
+        }
     }
-    public function getCategoryBenchmarkVisibilityTrend()
-    {
-    }
+}
+namespace {
     /**
-     * @param Date
+     * Runtime class alias of \Google\Service\Merchant\CompetitiveVisibilityBenchmarkView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setDate(Date $date)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReportCategoryId($reportCategoryId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportCategoryId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReportCountryCode($reportCountryCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportCountryCode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTrafficSource($trafficSource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrafficSource()
-    {
-    }
-    public function setYourDomainVisibilityTrend($yourDomainVisibilityTrend)
-    {
-    }
-    public function getYourDomainVisibilityTrend()
+    class Google_Service_Merchant_CompetitiveVisibilityBenchmarkView extends \Google\Service\Merchant\CompetitiveVisibilityBenchmarkView
     {
     }
 }

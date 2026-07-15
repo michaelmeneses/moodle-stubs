@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use core\context;
+use stdClass;
 /**
  * The filter renderable class.
  *

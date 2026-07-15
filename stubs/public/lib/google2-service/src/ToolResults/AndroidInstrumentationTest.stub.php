@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class AndroidInstrumentationTest extends \Google\Collection
-{
-    protected $collection_key = 'testTargets';
-    /**
-     * The java package for the test to be executed. Required
-     *
-     * @var string
-     */
-    public $testPackageId;
-    /**
-     * The InstrumentationTestRunner class. Required
-     *
-     * @var string
-     */
-    public $testRunnerClass;
-    /**
-     * Each target must be fully qualified with the package name or class name, in
-     * one of these formats: - "package package_name" - "class
-     * package_name.class_name" - "class package_name.class_name#method_name" If
-     * empty, all targets in the module will be run.
-     *
-     * @var string[]
-     */
-    public $testTargets;
-    /**
-     * The flag indicates whether Android Test Orchestrator will be used to run
-     * test or not.
-     *
-     * @var bool
-     */
-    public $useOrchestrator;
-    /**
-     * The java package for the test to be executed. Required
-     *
-     * @param string $testPackageId
-     */
-    public function setTestPackageId($testPackageId)
+namespace Google\Service\ToolResults {
+    class AndroidInstrumentationTest extends \Google\Collection
     {
+        protected $collection_key = 'testTargets';
+        /**
+         * The java package for the test to be executed. Required
+         *
+         * @var string
+         */
+        public $testPackageId;
+        /**
+         * The InstrumentationTestRunner class. Required
+         *
+         * @var string
+         */
+        public $testRunnerClass;
+        /**
+         * Each target must be fully qualified with the package name or class name, in
+         * one of these formats: - "package package_name" - "class
+         * package_name.class_name" - "class package_name.class_name#method_name" If
+         * empty, all targets in the module will be run.
+         *
+         * @var string[]
+         */
+        public $testTargets;
+        /**
+         * The flag indicates whether Android Test Orchestrator will be used to run
+         * test or not.
+         *
+         * @var bool
+         */
+        public $useOrchestrator;
+        /**
+         * The java package for the test to be executed. Required
+         *
+         * @param string $testPackageId
+         */
+        public function setTestPackageId($testPackageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTestPackageId()
+        {
+        }
+        /**
+         * The InstrumentationTestRunner class. Required
+         *
+         * @param string $testRunnerClass
+         */
+        public function setTestRunnerClass($testRunnerClass)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTestRunnerClass()
+        {
+        }
+        /**
+         * Each target must be fully qualified with the package name or class name, in
+         * one of these formats: - "package package_name" - "class
+         * package_name.class_name" - "class package_name.class_name#method_name" If
+         * empty, all targets in the module will be run.
+         *
+         * @param string[] $testTargets
+         */
+        public function setTestTargets($testTargets)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTestTargets()
+        {
+        }
+        /**
+         * The flag indicates whether Android Test Orchestrator will be used to run
+         * test or not.
+         *
+         * @param bool $useOrchestrator
+         */
+        public function setUseOrchestrator($useOrchestrator)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseOrchestrator()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ToolResults\AndroidInstrumentationTest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTestPackageId()
-    {
-    }
-    /**
-     * The InstrumentationTestRunner class. Required
-     *
-     * @param string $testRunnerClass
-     */
-    public function setTestRunnerClass($testRunnerClass)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTestRunnerClass()
-    {
-    }
-    /**
-     * Each target must be fully qualified with the package name or class name, in
-     * one of these formats: - "package package_name" - "class
-     * package_name.class_name" - "class package_name.class_name#method_name" If
-     * empty, all targets in the module will be run.
-     *
-     * @param string[] $testTargets
-     */
-    public function setTestTargets($testTargets)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTestTargets()
-    {
-    }
-    /**
-     * The flag indicates whether Android Test Orchestrator will be used to run
-     * test or not.
-     *
-     * @param bool $useOrchestrator
-     */
-    public function setUseOrchestrator($useOrchestrator)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseOrchestrator()
+    class Google_Service_ToolResults_AndroidInstrumentationTest extends \Google\Service\ToolResults\AndroidInstrumentationTest
     {
     }
 }

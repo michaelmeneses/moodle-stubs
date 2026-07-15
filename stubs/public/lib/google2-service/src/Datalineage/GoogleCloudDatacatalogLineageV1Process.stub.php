@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datalineage;
-
-class GoogleCloudDatacatalogLineageV1Process extends \Google\Model
-{
-    /**
-     * Optional. The attributes of the process. Should only be used for the
-     * purpose of non-semantic management (classifying, describing or labeling the
-     * process). Up to 100 attributes are allowed.
-     *
-     * @var array[]
-     */
-    public $attributes;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Immutable. The resource name of the lineage process. Format:
-     * `projects/{project}/locations/{location}/processes/{process}`. Can be
-     * specified or auto-assigned. {process} must be not longer than 200
-     * characters and only contain characters in a set: `a-zA-Z0-9_-:.`
-     *
-     * @var string
-     */
-    public $name;
-    protected $originType = GoogleCloudDatacatalogLineageV1Origin::class;
-    protected $originDataType = '';
-    /**
-     * Optional. The attributes of the process. Should only be used for the
-     * purpose of non-semantic management (classifying, describing or labeling the
-     * process). Up to 100 attributes are allowed.
-     *
-     * @param array[] $attributes
-     */
-    public function setAttributes($attributes)
+namespace Google\Service\Datalineage {
+    class GoogleCloudDatacatalogLineageV1Process extends \Google\Model
     {
+        /**
+         * Optional. The attributes of the process. Should only be used for the
+         * purpose of non-semantic management (classifying, describing or labeling the
+         * process). Up to 100 attributes are allowed.
+         *
+         * @var array[]
+         */
+        public $attributes;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Immutable. The resource name of the lineage process. Format:
+         * `projects/{project}/locations/{location}/processes/{process}`. Can be
+         * specified or auto-assigned. {process} must be not longer than 200
+         * characters and only contain characters in a set: `a-zA-Z0-9_-:.`
+         *
+         * @var string
+         */
+        public $name;
+        protected $originType = GoogleCloudDatacatalogLineageV1Origin::class;
+        protected $originDataType = '';
+        /**
+         * Optional. The attributes of the process. Should only be used for the
+         * purpose of non-semantic management (classifying, describing or labeling the
+         * process). Up to 100 attributes are allowed.
+         *
+         * @param array[] $attributes
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Immutable. The resource name of the lineage process. Format:
+         * `projects/{project}/locations/{location}/processes/{process}`. Can be
+         * specified or auto-assigned. {process} must be not longer than 200
+         * characters and only contain characters in a set: `a-zA-Z0-9_-:.`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. The origin of this process and its runs and lineage events.
+         *
+         * @param GoogleCloudDatacatalogLineageV1Origin $origin
+         */
+        public function setOrigin(GoogleCloudDatacatalogLineageV1Origin $origin)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogLineageV1Origin
+         */
+        public function getOrigin()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1Process registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
-    {
-    }
-    /**
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Immutable. The resource name of the lineage process. Format:
-     * `projects/{project}/locations/{location}/processes/{process}`. Can be
-     * specified or auto-assigned. {process} must be not longer than 200
-     * characters and only contain characters in a set: `a-zA-Z0-9_-:.`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. The origin of this process and its runs and lineage events.
-     *
-     * @param GoogleCloudDatacatalogLineageV1Origin $origin
-     */
-    public function setOrigin(GoogleCloudDatacatalogLineageV1Origin $origin)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogLineageV1Origin
-     */
-    public function getOrigin()
+    class Google_Service_Datalineage_GoogleCloudDatacatalogLineageV1Process extends \Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1Process
     {
     }
 }

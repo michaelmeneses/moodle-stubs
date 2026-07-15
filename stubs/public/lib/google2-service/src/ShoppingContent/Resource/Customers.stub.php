@@ -21,31 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "customers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $customers = $contentService->customers;
- *  </code>
- */
-class Customers extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\Customer;
     /**
-     * Allows uploading one customer information entry. Adding a customer with
-     * loyalty data enables the customer to see personalized loyalty annotations on
-     * search. Uploading a previously existing customer will overwrite the old
-     * entry. (customers.create)
-     *
-     * @param string $merchantId Required. The ID of the account that owns the
-     * customer information.
-     * @param Customer $postBody
-     * @param array $optParams Optional parameters.
-     * @return Customer
+     * The "customers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $customers = $contentService->customers;
+     *  </code>
      */
-    public function create($merchantId, Customer $postBody, $optParams = [])
+    class Customers extends \Google\Service\Resource
+    {
+        /**
+         * Allows uploading one customer information entry. Adding a customer with
+         * loyalty data enables the customer to see personalized loyalty annotations on
+         * search. Uploading a previously existing customer will overwrite the old
+         * entry. (customers.create)
+         *
+         * @param string $merchantId Required. The ID of the account that owns the
+         * customer information.
+         * @param Customer $postBody
+         * @param array $optParams Optional parameters.
+         * @return Customer
+         */
+        public function create($merchantId, Customer $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\Customers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ShoppingContent_Resource_Customers extends \Google\Service\ShoppingContent\Resource\Customers
     {
     }
 }

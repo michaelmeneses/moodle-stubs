@@ -29,6 +29,11 @@
  */
 namespace core_my\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\approved_contextlist;
+use core_privacy\local\request\context;
+use core_privacy\local\request\contextlist;
+use core_privacy\local\request\writer;
 /**
  * Privacy Subsystem for core_my implementing metadata, plugin, and user_preference providers.
  *

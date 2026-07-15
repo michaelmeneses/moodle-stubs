@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class WorkerThreadScalingReportResponse extends \Google\Model
-{
-    /**
-     * Recommended number of threads for a worker.
-     *
-     * @var int
-     */
-    public $recommendedThreadCount;
-    /**
-     * Recommended number of threads for a worker.
-     *
-     * @param int $recommendedThreadCount
-     */
-    public function setRecommendedThreadCount($recommendedThreadCount)
+namespace Google\Service\Dataflow {
+    class WorkerThreadScalingReportResponse extends \Google\Model
     {
+        /**
+         * Recommended number of threads for a worker.
+         *
+         * @var int
+         */
+        public $recommendedThreadCount;
+        /**
+         * Recommended number of threads for a worker.
+         *
+         * @param int $recommendedThreadCount
+         */
+        public function setRecommendedThreadCount($recommendedThreadCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRecommendedThreadCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dataflow\WorkerThreadScalingReportResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRecommendedThreadCount()
+    class Google_Service_Dataflow_WorkerThreadScalingReportResponse extends \Google\Service\Dataflow\WorkerThreadScalingReportResponse
     {
     }
 }

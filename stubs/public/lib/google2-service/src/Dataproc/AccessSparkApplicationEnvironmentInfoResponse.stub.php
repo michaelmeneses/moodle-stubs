@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class AccessSparkApplicationEnvironmentInfoResponse extends \Google\Model
-{
-    protected $applicationEnvironmentInfoType = ApplicationEnvironmentInfo::class;
-    protected $applicationEnvironmentInfoDataType = '';
-    /**
-     * Details about the Environment that the application is running in.
-     *
-     * @param ApplicationEnvironmentInfo $applicationEnvironmentInfo
-     */
-    public function setApplicationEnvironmentInfo(ApplicationEnvironmentInfo $applicationEnvironmentInfo)
+namespace Google\Service\Dataproc {
+    class AccessSparkApplicationEnvironmentInfoResponse extends \Google\Model
     {
+        protected $applicationEnvironmentInfoType = ApplicationEnvironmentInfo::class;
+        protected $applicationEnvironmentInfoDataType = '';
+        /**
+         * Details about the Environment that the application is running in.
+         *
+         * @param ApplicationEnvironmentInfo $applicationEnvironmentInfo
+         */
+        public function setApplicationEnvironmentInfo(ApplicationEnvironmentInfo $applicationEnvironmentInfo)
+        {
+        }
+        /**
+         * @return ApplicationEnvironmentInfo
+         */
+        public function getApplicationEnvironmentInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApplicationEnvironmentInfo
+     * Runtime class alias of \Google\Service\Dataproc\AccessSparkApplicationEnvironmentInfoResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicationEnvironmentInfo()
+    class Google_Service_Dataproc_AccessSparkApplicationEnvironmentInfoResponse extends \Google\Service\Dataproc\AccessSparkApplicationEnvironmentInfoResponse
     {
     }
 }

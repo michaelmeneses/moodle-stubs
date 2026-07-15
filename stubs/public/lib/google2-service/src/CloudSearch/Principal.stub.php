@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Principal extends \Google\Model
-{
-    /**
-     * This principal is a group identified using an external identity. The name
-     * field must specify the group resource name with this format:
-     * identitysources/{source_id}/groups/{ID}
-     *
-     * @var string
-     */
-    public $groupResourceName;
-    protected $gsuitePrincipalType = GSuitePrincipal::class;
-    protected $gsuitePrincipalDataType = '';
-    /**
-     * This principal is a user identified using an external identity. The name
-     * field must specify the user resource name with this format:
-     * identitysources/{source_id}/users/{ID}
-     *
-     * @var string
-     */
-    public $userResourceName;
-    /**
-     * This principal is a group identified using an external identity. The name
-     * field must specify the group resource name with this format:
-     * identitysources/{source_id}/groups/{ID}
-     *
-     * @param string $groupResourceName
-     */
-    public function setGroupResourceName($groupResourceName)
+namespace Google\Service\CloudSearch {
+    class Principal extends \Google\Model
     {
+        /**
+         * This principal is a group identified using an external identity. The name
+         * field must specify the group resource name with this format:
+         * identitysources/{source_id}/groups/{ID}
+         *
+         * @var string
+         */
+        public $groupResourceName;
+        protected $gsuitePrincipalType = GSuitePrincipal::class;
+        protected $gsuitePrincipalDataType = '';
+        /**
+         * This principal is a user identified using an external identity. The name
+         * field must specify the user resource name with this format:
+         * identitysources/{source_id}/users/{ID}
+         *
+         * @var string
+         */
+        public $userResourceName;
+        /**
+         * This principal is a group identified using an external identity. The name
+         * field must specify the group resource name with this format:
+         * identitysources/{source_id}/groups/{ID}
+         *
+         * @param string $groupResourceName
+         */
+        public function setGroupResourceName($groupResourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroupResourceName()
+        {
+        }
+        /**
+         * This principal is a Google Workspace user, group or domain.
+         *
+         * @param GSuitePrincipal $gsuitePrincipal
+         */
+        public function setGsuitePrincipal(GSuitePrincipal $gsuitePrincipal)
+        {
+        }
+        /**
+         * @return GSuitePrincipal
+         */
+        public function getGsuitePrincipal()
+        {
+        }
+        /**
+         * This principal is a user identified using an external identity. The name
+         * field must specify the user resource name with this format:
+         * identitysources/{source_id}/users/{ID}
+         *
+         * @param string $userResourceName
+         */
+        public function setUserResourceName($userResourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\Principal registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroupResourceName()
-    {
-    }
-    /**
-     * This principal is a Google Workspace user, group or domain.
-     *
-     * @param GSuitePrincipal $gsuitePrincipal
-     */
-    public function setGsuitePrincipal(GSuitePrincipal $gsuitePrincipal)
-    {
-    }
-    /**
-     * @return GSuitePrincipal
-     */
-    public function getGsuitePrincipal()
-    {
-    }
-    /**
-     * This principal is a user identified using an external identity. The name
-     * field must specify the user resource name with this format:
-     * identitysources/{source_id}/users/{ID}
-     *
-     * @param string $userResourceName
-     */
-    public function setUserResourceName($userResourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserResourceName()
+    class Google_Service_CloudSearch_Principal extends \Google\Service\CloudSearch\Principal
     {
     }
 }

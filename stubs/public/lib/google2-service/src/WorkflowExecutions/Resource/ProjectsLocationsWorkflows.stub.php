@@ -21,31 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkflowExecutions\Resource;
-
-/**
- * The "workflows" collection of methods.
- * Typical usage is:
- *  <code>
- *   $workflowexecutionsService = new Google\Service\WorkflowExecutions(...);
- *   $workflows = $workflowexecutionsService->projects_locations_workflows;
- *  </code>
- */
-class ProjectsLocationsWorkflows extends \Google\Service\Resource
-{
+namespace Google\Service\WorkflowExecutions\Resource {
+    use Google\Service\WorkflowExecutions\Execution;
+    use Google\Service\WorkflowExecutions\TriggerPubsubExecutionRequest;
     /**
-     * Triggers a new execution using the latest revision of the given workflow by a
-     * Pub/Sub push notification. (workflows.triggerPubsubExecution)
-     *
-     * @param string $workflow Required. Name of the workflow for which an execution
-     * should be created. Format:
-     * projects/{project}/locations/{location}/workflows/{workflow}
-     * @param TriggerPubsubExecutionRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Execution
-     * @throws \Google\Service\Exception
+     * The "workflows" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $workflowexecutionsService = new Google\Service\WorkflowExecutions(...);
+     *   $workflows = $workflowexecutionsService->projects_locations_workflows;
+     *  </code>
      */
-    public function triggerPubsubExecution($workflow, TriggerPubsubExecutionRequest $postBody, $optParams = [])
+    class ProjectsLocationsWorkflows extends \Google\Service\Resource
+    {
+        /**
+         * Triggers a new execution using the latest revision of the given workflow by a
+         * Pub/Sub push notification. (workflows.triggerPubsubExecution)
+         *
+         * @param string $workflow Required. Name of the workflow for which an execution
+         * should be created. Format:
+         * projects/{project}/locations/{location}/workflows/{workflow}
+         * @param TriggerPubsubExecutionRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Execution
+         * @throws \Google\Service\Exception
+         */
+        public function triggerPubsubExecution($workflow, TriggerPubsubExecutionRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\WorkflowExecutions\Resource\ProjectsLocationsWorkflows registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_WorkflowExecutions_Resource_ProjectsLocationsWorkflows extends \Google\Service\WorkflowExecutions\Resource\ProjectsLocationsWorkflows
     {
     }
 }

@@ -21,173 +21,182 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class GoogleFirestoreAdminV1Backup extends \Google\Model
-{
-    /**
-     * The state is unspecified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The pending backup is still being created. Operations on the backup will be
-     * rejected in this state.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * The backup is complete and ready to use.
-     */
-    public const STATE_READY = 'READY';
-    /**
-     * The backup is not available at this moment.
-     */
-    public const STATE_NOT_AVAILABLE = 'NOT_AVAILABLE';
-    /**
-     * Output only. Name of the Firestore database that the backup is from. Format
-     * is `projects/{project}/databases/{database}`.
-     *
-     * @var string
-     */
-    public $database;
-    /**
-     * Output only. The system-generated UUID4 for the Firestore database that the
-     * backup is from.
-     *
-     * @var string
-     */
-    public $databaseUid;
-    /**
-     * Output only. The timestamp at which this backup expires.
-     *
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * Output only. The unique resource name of the Backup. Format is
-     * `projects/{project}/locations/{location}/backups/{backup}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The backup contains an externally consistent copy of the
-     * database at this time.
-     *
-     * @var string
-     */
-    public $snapshotTime;
-    /**
-     * Output only. The current state of the backup.
-     *
-     * @var string
-     */
-    public $state;
-    protected $statsType = GoogleFirestoreAdminV1Stats::class;
-    protected $statsDataType = '';
-    /**
-     * Output only. Name of the Firestore database that the backup is from. Format
-     * is `projects/{project}/databases/{database}`.
-     *
-     * @param string $database
-     */
-    public function setDatabase($database)
+namespace Google\Service\Firestore {
+    class GoogleFirestoreAdminV1Backup extends \Google\Model
     {
+        /**
+         * The state is unspecified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The pending backup is still being created. Operations on the backup will be
+         * rejected in this state.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * The backup is complete and ready to use.
+         */
+        public const STATE_READY = 'READY';
+        /**
+         * The backup is not available at this moment.
+         */
+        public const STATE_NOT_AVAILABLE = 'NOT_AVAILABLE';
+        /**
+         * Output only. Name of the Firestore database that the backup is from. Format
+         * is `projects/{project}/databases/{database}`.
+         *
+         * @var string
+         */
+        public $database;
+        /**
+         * Output only. The system-generated UUID4 for the Firestore database that the
+         * backup is from.
+         *
+         * @var string
+         */
+        public $databaseUid;
+        /**
+         * Output only. The timestamp at which this backup expires.
+         *
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * Output only. The unique resource name of the Backup. Format is
+         * `projects/{project}/locations/{location}/backups/{backup}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The backup contains an externally consistent copy of the
+         * database at this time.
+         *
+         * @var string
+         */
+        public $snapshotTime;
+        /**
+         * Output only. The current state of the backup.
+         *
+         * @var string
+         */
+        public $state;
+        protected $statsType = GoogleFirestoreAdminV1Stats::class;
+        protected $statsDataType = '';
+        /**
+         * Output only. Name of the Firestore database that the backup is from. Format
+         * is `projects/{project}/databases/{database}`.
+         *
+         * @param string $database
+         */
+        public function setDatabase($database)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabase()
+        {
+        }
+        /**
+         * Output only. The system-generated UUID4 for the Firestore database that the
+         * backup is from.
+         *
+         * @param string $databaseUid
+         */
+        public function setDatabaseUid($databaseUid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabaseUid()
+        {
+        }
+        /**
+         * Output only. The timestamp at which this backup expires.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * Output only. The unique resource name of the Backup. Format is
+         * `projects/{project}/locations/{location}/backups/{backup}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The backup contains an externally consistent copy of the
+         * database at this time.
+         *
+         * @param string $snapshotTime
+         */
+        public function setSnapshotTime($snapshotTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnapshotTime()
+        {
+        }
+        /**
+         * Output only. The current state of the backup.
+         *
+         * Accepted values: STATE_UNSPECIFIED, CREATING, READY, NOT_AVAILABLE
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. Statistics about the backup. This data only becomes available
+         * after the backup is fully materialized to secondary storage. This field
+         * will be empty till then.
+         *
+         * @param GoogleFirestoreAdminV1Stats $stats
+         */
+        public function setStats(GoogleFirestoreAdminV1Stats $stats)
+        {
+        }
+        /**
+         * @return GoogleFirestoreAdminV1Stats
+         */
+        public function getStats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firestore\GoogleFirestoreAdminV1Backup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabase()
-    {
-    }
-    /**
-     * Output only. The system-generated UUID4 for the Firestore database that the
-     * backup is from.
-     *
-     * @param string $databaseUid
-     */
-    public function setDatabaseUid($databaseUid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatabaseUid()
-    {
-    }
-    /**
-     * Output only. The timestamp at which this backup expires.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * Output only. The unique resource name of the Backup. Format is
-     * `projects/{project}/locations/{location}/backups/{backup}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The backup contains an externally consistent copy of the
-     * database at this time.
-     *
-     * @param string $snapshotTime
-     */
-    public function setSnapshotTime($snapshotTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnapshotTime()
-    {
-    }
-    /**
-     * Output only. The current state of the backup.
-     *
-     * Accepted values: STATE_UNSPECIFIED, CREATING, READY, NOT_AVAILABLE
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. Statistics about the backup. This data only becomes available
-     * after the backup is fully materialized to secondary storage. This field
-     * will be empty till then.
-     *
-     * @param GoogleFirestoreAdminV1Stats $stats
-     */
-    public function setStats(GoogleFirestoreAdminV1Stats $stats)
-    {
-    }
-    /**
-     * @return GoogleFirestoreAdminV1Stats
-     */
-    public function getStats()
+    class Google_Service_Firestore_GoogleFirestoreAdminV1Backup extends \Google\Service\Firestore\GoogleFirestoreAdminV1Backup
     {
     }
 }

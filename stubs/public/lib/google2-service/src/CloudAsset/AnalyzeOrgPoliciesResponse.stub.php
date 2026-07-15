@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class AnalyzeOrgPoliciesResponse extends \Google\Collection
-{
-    protected $collection_key = 'orgPolicyResults';
-    protected $constraintType = AnalyzerOrgPolicyConstraint::class;
-    protected $constraintDataType = '';
-    /**
-     * The page token to fetch the next page for
-     * AnalyzeOrgPoliciesResponse.org_policy_results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $orgPolicyResultsType = OrgPolicyResult::class;
-    protected $orgPolicyResultsDataType = 'array';
-    /**
-     * The definition of the constraint in the request.
-     *
-     * @param AnalyzerOrgPolicyConstraint $constraint
-     */
-    public function setConstraint(AnalyzerOrgPolicyConstraint $constraint)
+namespace Google\Service\CloudAsset {
+    class AnalyzeOrgPoliciesResponse extends \Google\Collection
     {
+        protected $collection_key = 'orgPolicyResults';
+        protected $constraintType = AnalyzerOrgPolicyConstraint::class;
+        protected $constraintDataType = '';
+        /**
+         * The page token to fetch the next page for
+         * AnalyzeOrgPoliciesResponse.org_policy_results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $orgPolicyResultsType = OrgPolicyResult::class;
+        protected $orgPolicyResultsDataType = 'array';
+        /**
+         * The definition of the constraint in the request.
+         *
+         * @param AnalyzerOrgPolicyConstraint $constraint
+         */
+        public function setConstraint(AnalyzerOrgPolicyConstraint $constraint)
+        {
+        }
+        /**
+         * @return AnalyzerOrgPolicyConstraint
+         */
+        public function getConstraint()
+        {
+        }
+        /**
+         * The page token to fetch the next page for
+         * AnalyzeOrgPoliciesResponse.org_policy_results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The organization policies under the AnalyzeOrgPoliciesRequest.scope with
+         * the AnalyzeOrgPoliciesRequest.constraint.
+         *
+         * @param OrgPolicyResult[] $orgPolicyResults
+         */
+        public function setOrgPolicyResults($orgPolicyResults)
+        {
+        }
+        /**
+         * @return OrgPolicyResult[]
+         */
+        public function getOrgPolicyResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AnalyzerOrgPolicyConstraint
+     * Runtime class alias of \Google\Service\CloudAsset\AnalyzeOrgPoliciesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConstraint()
-    {
-    }
-    /**
-     * The page token to fetch the next page for
-     * AnalyzeOrgPoliciesResponse.org_policy_results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The organization policies under the AnalyzeOrgPoliciesRequest.scope with
-     * the AnalyzeOrgPoliciesRequest.constraint.
-     *
-     * @param OrgPolicyResult[] $orgPolicyResults
-     */
-    public function setOrgPolicyResults($orgPolicyResults)
-    {
-    }
-    /**
-     * @return OrgPolicyResult[]
-     */
-    public function getOrgPolicyResults()
+    class Google_Service_CloudAsset_AnalyzeOrgPoliciesResponse extends \Google\Service\CloudAsset\AnalyzeOrgPoliciesResponse
     {
     }
 }

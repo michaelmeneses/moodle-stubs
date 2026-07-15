@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ReadFeatureValuesResponseEntityView extends \Google\Collection
-{
-    protected $collection_key = 'data';
-    protected $dataType = GoogleCloudAiplatformV1ReadFeatureValuesResponseEntityViewData::class;
-    protected $dataDataType = 'array';
-    /**
-     * ID of the requested entity.
-     *
-     * @var string
-     */
-    public $entityId;
-    /**
-     * Each piece of data holds the k requested values for one requested Feature.
-     * If no values for the requested Feature exist, the corresponding cell will
-     * be empty. This has the same size and is in the same order as the features
-     * from the header ReadFeatureValuesResponse.header.
-     *
-     * @param GoogleCloudAiplatformV1ReadFeatureValuesResponseEntityViewData[] $data
-     */
-    public function setData($data)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ReadFeatureValuesResponseEntityView extends \Google\Collection
     {
+        protected $collection_key = 'data';
+        protected $dataType = GoogleCloudAiplatformV1ReadFeatureValuesResponseEntityViewData::class;
+        protected $dataDataType = 'array';
+        /**
+         * ID of the requested entity.
+         *
+         * @var string
+         */
+        public $entityId;
+        /**
+         * Each piece of data holds the k requested values for one requested Feature.
+         * If no values for the requested Feature exist, the corresponding cell will
+         * be empty. This has the same size and is in the same order as the features
+         * from the header ReadFeatureValuesResponse.header.
+         *
+         * @param GoogleCloudAiplatformV1ReadFeatureValuesResponseEntityViewData[] $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ReadFeatureValuesResponseEntityViewData[]
+         */
+        public function getData()
+        {
+        }
+        /**
+         * ID of the requested entity.
+         *
+         * @param string $entityId
+         */
+        public function setEntityId($entityId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ReadFeatureValuesResponseEntityViewData[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadFeatureValuesResponseEntityView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
-    {
-    }
-    /**
-     * ID of the requested entity.
-     *
-     * @param string $entityId
-     */
-    public function setEntityId($entityId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntityId()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ReadFeatureValuesResponseEntityView extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadFeatureValuesResponseEntityView
     {
     }
 }

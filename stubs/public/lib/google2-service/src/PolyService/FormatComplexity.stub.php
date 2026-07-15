@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolyService;
-
-class FormatComplexity extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $lodHint;
-    /**
-     * @var string
-     */
-    public $triangleCount;
-    /**
-     * @param int
-     */
-    public function setLodHint($lodHint)
+namespace Google\Service\PolyService {
+    class FormatComplexity extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $lodHint;
+        /**
+         * @var string
+         */
+        public $triangleCount;
+        /**
+         * @param int
+         */
+        public function setLodHint($lodHint)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLodHint()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTriangleCount($triangleCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTriangleCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\PolyService\FormatComplexity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLodHint()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTriangleCount($triangleCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTriangleCount()
+    class Google_Service_PolyService_FormatComplexity extends \Google\Service\PolyService\FormatComplexity
     {
     }
 }

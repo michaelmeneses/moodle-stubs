@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDebugger;
-
-class StatusMessage extends \Google\Model
-{
-    protected $descriptionType = FormatMessage::class;
-    protected $descriptionDataType = '';
-    /**
-     * @var bool
-     */
-    public $isError;
-    /**
-     * @var string
-     */
-    public $refersTo;
-    /**
-     * @param FormatMessage
-     */
-    public function setDescription(FormatMessage $description)
+namespace Google\Service\CloudDebugger {
+    class StatusMessage extends \Google\Model
     {
+        protected $descriptionType = FormatMessage::class;
+        protected $descriptionDataType = '';
+        /**
+         * @var bool
+         */
+        public $isError;
+        /**
+         * @var string
+         */
+        public $refersTo;
+        /**
+         * @param FormatMessage
+         */
+        public function setDescription(FormatMessage $description)
+        {
+        }
+        /**
+         * @return FormatMessage
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIsError($isError)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsError()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRefersTo($refersTo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRefersTo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FormatMessage
+     * Runtime class alias of \Google\Service\CloudDebugger\StatusMessage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIsError($isError)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsError()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRefersTo($refersTo)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRefersTo()
+    class Google_Service_CloudDebugger_StatusMessage extends \Google\Service\CloudDebugger\StatusMessage
     {
     }
 }

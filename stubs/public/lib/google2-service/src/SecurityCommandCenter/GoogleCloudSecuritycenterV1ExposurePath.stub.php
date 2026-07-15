@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV1ExposurePath extends \Google\Collection
-{
-    protected $collection_key = 'pathNodes';
-    protected $edgesType = Edge::class;
-    protected $edgesDataType = 'array';
-    protected $exposedResourceType = GoogleCloudSecuritycenterV1ExposedResource::class;
-    protected $exposedResourceDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    protected $pathNodesType = PathNode::class;
-    protected $pathNodesDataType = 'array';
-    /**
-     * @param Edge[]
-     */
-    public function setEdges($edges)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV1ExposurePath extends \Google\Collection
     {
+        protected $collection_key = 'pathNodes';
+        protected $edgesType = Edge::class;
+        protected $edgesDataType = 'array';
+        protected $exposedResourceType = GoogleCloudSecuritycenterV1ExposedResource::class;
+        protected $exposedResourceDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        protected $pathNodesType = PathNode::class;
+        protected $pathNodesDataType = 'array';
+        /**
+         * @param Edge[]
+         */
+        public function setEdges($edges)
+        {
+        }
+        /**
+         * @return Edge[]
+         */
+        public function getEdges()
+        {
+        }
+        /**
+         * @param GoogleCloudSecuritycenterV1ExposedResource
+         */
+        public function setExposedResource(GoogleCloudSecuritycenterV1ExposedResource $exposedResource)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV1ExposedResource
+         */
+        public function getExposedResource()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param PathNode[]
+         */
+        public function setPathNodes($pathNodes)
+        {
+        }
+        /**
+         * @return PathNode[]
+         */
+        public function getPathNodes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Edge[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV1ExposurePath registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEdges()
-    {
-    }
-    /**
-     * @param GoogleCloudSecuritycenterV1ExposedResource
-     */
-    public function setExposedResource(GoogleCloudSecuritycenterV1ExposedResource $exposedResource)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV1ExposedResource
-     */
-    public function getExposedResource()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param PathNode[]
-     */
-    public function setPathNodes($pathNodes)
-    {
-    }
-    /**
-     * @return PathNode[]
-     */
-    public function getPathNodes()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV1ExposurePath extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV1ExposurePath
     {
     }
 }

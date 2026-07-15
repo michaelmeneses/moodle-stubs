@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class KeyValueFormat extends \Google\Model
-{
-    protected $positionType = TextPosition::class;
-    protected $positionDataType = '';
-    protected $textFormatType = TextFormat::class;
-    protected $textFormatDataType = '';
-    /**
-     * Specifies the horizontal text positioning of key value. This field is
-     * optional. If not specified, default positioning is used.
-     *
-     * @param TextPosition $position
-     */
-    public function setPosition(TextPosition $position)
+namespace Google\Service\Sheets {
+    class KeyValueFormat extends \Google\Model
     {
+        protected $positionType = TextPosition::class;
+        protected $positionDataType = '';
+        protected $textFormatType = TextFormat::class;
+        protected $textFormatDataType = '';
+        /**
+         * Specifies the horizontal text positioning of key value. This field is
+         * optional. If not specified, default positioning is used.
+         *
+         * @param TextPosition $position
+         */
+        public function setPosition(TextPosition $position)
+        {
+        }
+        /**
+         * @return TextPosition
+         */
+        public function getPosition()
+        {
+        }
+        /**
+         * Text formatting options for key value. The link field is not supported.
+         *
+         * @param TextFormat $textFormat
+         */
+        public function setTextFormat(TextFormat $textFormat)
+        {
+        }
+        /**
+         * @return TextFormat
+         */
+        public function getTextFormat()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TextPosition
+     * Runtime class alias of \Google\Service\Sheets\KeyValueFormat registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPosition()
-    {
-    }
-    /**
-     * Text formatting options for key value. The link field is not supported.
-     *
-     * @param TextFormat $textFormat
-     */
-    public function setTextFormat(TextFormat $textFormat)
-    {
-    }
-    /**
-     * @return TextFormat
-     */
-    public function getTextFormat()
+    class Google_Service_Sheets_KeyValueFormat extends \Google\Service\Sheets\KeyValueFormat
     {
     }
 }

@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1MigrateKeyRequest extends \Google\Model
-{
-    /**
-     * Optional. If true, skips the billing check. A reCAPTCHA Enterprise key or
-     * migrated key behaves differently than a reCAPTCHA (non-Enterprise version)
-     * key when you reach a quota limit (see
-     * https://docs.cloud.google.com/recaptcha/quotas#quota_limit). To avoid any
-     * disruption of your usage, we check that a billing account is present. If
-     * your usage of reCAPTCHA is under the free quota, you can safely skip the
-     * billing check and proceed with the migration. See
-     * https://cloud.google.com/recaptcha/docs/billing-information.
-     *
-     * @var bool
-     */
-    public $skipBillingCheck;
-    /**
-     * Optional. If true, skips the billing check. A reCAPTCHA Enterprise key or
-     * migrated key behaves differently than a reCAPTCHA (non-Enterprise version)
-     * key when you reach a quota limit (see
-     * https://docs.cloud.google.com/recaptcha/quotas#quota_limit). To avoid any
-     * disruption of your usage, we check that a billing account is present. If
-     * your usage of reCAPTCHA is under the free quota, you can safely skip the
-     * billing check and proceed with the migration. See
-     * https://cloud.google.com/recaptcha/docs/billing-information.
-     *
-     * @param bool $skipBillingCheck
-     */
-    public function setSkipBillingCheck($skipBillingCheck)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1MigrateKeyRequest extends \Google\Model
     {
+        /**
+         * Optional. If true, skips the billing check. A reCAPTCHA Enterprise key or
+         * migrated key behaves differently than a reCAPTCHA (non-Enterprise version)
+         * key when you reach a quota limit (see
+         * https://docs.cloud.google.com/recaptcha/quotas#quota_limit). To avoid any
+         * disruption of your usage, we check that a billing account is present. If
+         * your usage of reCAPTCHA is under the free quota, you can safely skip the
+         * billing check and proceed with the migration. See
+         * https://cloud.google.com/recaptcha/docs/billing-information.
+         *
+         * @var bool
+         */
+        public $skipBillingCheck;
+        /**
+         * Optional. If true, skips the billing check. A reCAPTCHA Enterprise key or
+         * migrated key behaves differently than a reCAPTCHA (non-Enterprise version)
+         * key when you reach a quota limit (see
+         * https://docs.cloud.google.com/recaptcha/quotas#quota_limit). To avoid any
+         * disruption of your usage, we check that a billing account is present. If
+         * your usage of reCAPTCHA is under the free quota, you can safely skip the
+         * billing check and proceed with the migration. See
+         * https://cloud.google.com/recaptcha/docs/billing-information.
+         *
+         * @param bool $skipBillingCheck
+         */
+        public function setSkipBillingCheck($skipBillingCheck)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSkipBillingCheck()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1MigrateKeyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSkipBillingCheck()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1MigrateKeyRequest extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1MigrateKeyRequest
     {
     }
 }

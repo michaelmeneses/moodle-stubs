@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectGroupsOperationalStatusInterconnectStatus extends \Google\Model
-{
-    public const IS_ACTIVE_ACTIVE = 'ACTIVE';
-    public const IS_ACTIVE_INACTIVE = 'INACTIVE';
-    public const IS_ACTIVE_IS_ACTIVE_UNSPECIFIED = 'IS_ACTIVE_UNSPECIFIED';
-    /**
-     * Output only. Whether the Interconnect is enabled.
-     *
-     * @var bool
-     */
-    public $adminEnabled;
-    protected $diagnosticsType = InterconnectDiagnostics::class;
-    protected $diagnosticsDataType = '';
-    /**
-     * Output only. The URL of the Interconnect being described.
-     *
-     * @var string
-     */
-    public $interconnect;
-    /**
-     * Output only. Whether this interconnect is participating in the redundant
-     * configuration.
-     *
-     * @var string
-     */
-    public $isActive;
-    /**
-     * Output only. Whether the Interconnect is enabled.
-     *
-     * @param bool $adminEnabled
-     */
-    public function setAdminEnabled($adminEnabled)
+namespace Google\Service\Compute {
+    class InterconnectGroupsOperationalStatusInterconnectStatus extends \Google\Model
     {
+        public const IS_ACTIVE_ACTIVE = 'ACTIVE';
+        public const IS_ACTIVE_INACTIVE = 'INACTIVE';
+        public const IS_ACTIVE_IS_ACTIVE_UNSPECIFIED = 'IS_ACTIVE_UNSPECIFIED';
+        /**
+         * Output only. Whether the Interconnect is enabled.
+         *
+         * @var bool
+         */
+        public $adminEnabled;
+        protected $diagnosticsType = InterconnectDiagnostics::class;
+        protected $diagnosticsDataType = '';
+        /**
+         * Output only. The URL of the Interconnect being described.
+         *
+         * @var string
+         */
+        public $interconnect;
+        /**
+         * Output only. Whether this interconnect is participating in the redundant
+         * configuration.
+         *
+         * @var string
+         */
+        public $isActive;
+        /**
+         * Output only. Whether the Interconnect is enabled.
+         *
+         * @param bool $adminEnabled
+         */
+        public function setAdminEnabled($adminEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAdminEnabled()
+        {
+        }
+        /**
+         * Output only. The diagnostics of the Interconnect, as returned by the
+         * existing get-diagnostics method.
+         *
+         * @param InterconnectDiagnostics $diagnostics
+         */
+        public function setDiagnostics(InterconnectDiagnostics $diagnostics)
+        {
+        }
+        /**
+         * @return InterconnectDiagnostics
+         */
+        public function getDiagnostics()
+        {
+        }
+        /**
+         * Output only. The URL of the Interconnect being described.
+         *
+         * @param string $interconnect
+         */
+        public function setInterconnect($interconnect)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInterconnect()
+        {
+        }
+        /**
+         * Output only. Whether this interconnect is participating in the redundant
+         * configuration.
+         *
+         * Accepted values: ACTIVE, INACTIVE, IS_ACTIVE_UNSPECIFIED
+         *
+         * @param self::IS_ACTIVE_* $isActive
+         */
+        public function setIsActive($isActive)
+        {
+        }
+        /**
+         * @return self::IS_ACTIVE_*
+         */
+        public function getIsActive()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Compute\InterconnectGroupsOperationalStatusInterconnectStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdminEnabled()
-    {
-    }
-    /**
-     * Output only. The diagnostics of the Interconnect, as returned by the
-     * existing get-diagnostics method.
-     *
-     * @param InterconnectDiagnostics $diagnostics
-     */
-    public function setDiagnostics(InterconnectDiagnostics $diagnostics)
-    {
-    }
-    /**
-     * @return InterconnectDiagnostics
-     */
-    public function getDiagnostics()
-    {
-    }
-    /**
-     * Output only. The URL of the Interconnect being described.
-     *
-     * @param string $interconnect
-     */
-    public function setInterconnect($interconnect)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInterconnect()
-    {
-    }
-    /**
-     * Output only. Whether this interconnect is participating in the redundant
-     * configuration.
-     *
-     * Accepted values: ACTIVE, INACTIVE, IS_ACTIVE_UNSPECIFIED
-     *
-     * @param self::IS_ACTIVE_* $isActive
-     */
-    public function setIsActive($isActive)
-    {
-    }
-    /**
-     * @return self::IS_ACTIVE_*
-     */
-    public function getIsActive()
+    class Google_Service_Compute_InterconnectGroupsOperationalStatusInterconnectStatus extends \Google\Service\Compute\InterconnectGroupsOperationalStatusInterconnectStatus
     {
     }
 }

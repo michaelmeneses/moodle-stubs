@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ExternalServiceCost extends \Google\Model
-{
-    /**
-     * The billing method used for the external job. This field, set to
-     * `SERVICES_SKU`, is only used when billing under the services SKU.
-     * Otherwise, it is unspecified for backward compatibility.
-     *
-     * @var string
-     */
-    public $billingMethod;
-    /**
-     * External service cost in terms of bigquery bytes billed.
-     *
-     * @var string
-     */
-    public $bytesBilled;
-    /**
-     * External service cost in terms of bigquery bytes processed.
-     *
-     * @var string
-     */
-    public $bytesProcessed;
-    /**
-     * External service name.
-     *
-     * @var string
-     */
-    public $externalService;
-    /**
-     * Non-preemptable reserved slots used for external job. For example, reserved
-     * slots for Cloua AI Platform job are the VM usages converted to BigQuery
-     * slot with equivalent mount of price.
-     *
-     * @var string
-     */
-    public $reservedSlotCount;
-    /**
-     * External service cost in terms of bigquery slot milliseconds.
-     *
-     * @var string
-     */
-    public $slotMs;
-    /**
-     * The billing method used for the external job. This field, set to
-     * `SERVICES_SKU`, is only used when billing under the services SKU.
-     * Otherwise, it is unspecified for backward compatibility.
-     *
-     * @param string $billingMethod
-     */
-    public function setBillingMethod($billingMethod)
+namespace Google\Service\Bigquery {
+    class ExternalServiceCost extends \Google\Model
     {
+        /**
+         * The billing method used for the external job. This field, set to
+         * `SERVICES_SKU`, is only used when billing under the services SKU.
+         * Otherwise, it is unspecified for backward compatibility.
+         *
+         * @var string
+         */
+        public $billingMethod;
+        /**
+         * External service cost in terms of bigquery bytes billed.
+         *
+         * @var string
+         */
+        public $bytesBilled;
+        /**
+         * External service cost in terms of bigquery bytes processed.
+         *
+         * @var string
+         */
+        public $bytesProcessed;
+        /**
+         * External service name.
+         *
+         * @var string
+         */
+        public $externalService;
+        /**
+         * Non-preemptable reserved slots used for external job. For example, reserved
+         * slots for Cloua AI Platform job are the VM usages converted to BigQuery
+         * slot with equivalent mount of price.
+         *
+         * @var string
+         */
+        public $reservedSlotCount;
+        /**
+         * External service cost in terms of bigquery slot milliseconds.
+         *
+         * @var string
+         */
+        public $slotMs;
+        /**
+         * The billing method used for the external job. This field, set to
+         * `SERVICES_SKU`, is only used when billing under the services SKU.
+         * Otherwise, it is unspecified for backward compatibility.
+         *
+         * @param string $billingMethod
+         */
+        public function setBillingMethod($billingMethod)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBillingMethod()
+        {
+        }
+        /**
+         * External service cost in terms of bigquery bytes billed.
+         *
+         * @param string $bytesBilled
+         */
+        public function setBytesBilled($bytesBilled)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBytesBilled()
+        {
+        }
+        /**
+         * External service cost in terms of bigquery bytes processed.
+         *
+         * @param string $bytesProcessed
+         */
+        public function setBytesProcessed($bytesProcessed)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBytesProcessed()
+        {
+        }
+        /**
+         * External service name.
+         *
+         * @param string $externalService
+         */
+        public function setExternalService($externalService)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternalService()
+        {
+        }
+        /**
+         * Non-preemptable reserved slots used for external job. For example, reserved
+         * slots for Cloua AI Platform job are the VM usages converted to BigQuery
+         * slot with equivalent mount of price.
+         *
+         * @param string $reservedSlotCount
+         */
+        public function setReservedSlotCount($reservedSlotCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReservedSlotCount()
+        {
+        }
+        /**
+         * External service cost in terms of bigquery slot milliseconds.
+         *
+         * @param string $slotMs
+         */
+        public function setSlotMs($slotMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSlotMs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\ExternalServiceCost registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBillingMethod()
-    {
-    }
-    /**
-     * External service cost in terms of bigquery bytes billed.
-     *
-     * @param string $bytesBilled
-     */
-    public function setBytesBilled($bytesBilled)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBytesBilled()
-    {
-    }
-    /**
-     * External service cost in terms of bigquery bytes processed.
-     *
-     * @param string $bytesProcessed
-     */
-    public function setBytesProcessed($bytesProcessed)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBytesProcessed()
-    {
-    }
-    /**
-     * External service name.
-     *
-     * @param string $externalService
-     */
-    public function setExternalService($externalService)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExternalService()
-    {
-    }
-    /**
-     * Non-preemptable reserved slots used for external job. For example, reserved
-     * slots for Cloua AI Platform job are the VM usages converted to BigQuery
-     * slot with equivalent mount of price.
-     *
-     * @param string $reservedSlotCount
-     */
-    public function setReservedSlotCount($reservedSlotCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReservedSlotCount()
-    {
-    }
-    /**
-     * External service cost in terms of bigquery slot milliseconds.
-     *
-     * @param string $slotMs
-     */
-    public function setSlotMs($slotMs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSlotMs()
+    class Google_Service_Bigquery_ExternalServiceCost extends \Google\Service\Bigquery\ExternalServiceCost
     {
     }
 }

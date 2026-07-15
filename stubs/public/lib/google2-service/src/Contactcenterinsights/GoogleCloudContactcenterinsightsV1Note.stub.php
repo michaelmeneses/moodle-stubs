@@ -21,157 +21,166 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1Note extends \Google\Model
-{
-    protected $assessmentNoteType = GoogleCloudContactcenterinsightsV1NoteAssessmentNote::class;
-    protected $assessmentNoteDataType = '';
-    /**
-     * The note content.
-     *
-     * @var string
-     */
-    public $content;
-    protected $conversationTurnNoteType = GoogleCloudContactcenterinsightsV1NoteConversationTurnNote::class;
-    protected $conversationTurnNoteDataType = '';
-    /**
-     * Output only. The time at which the note was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Identifier. The resource name of the note. Format: projects/{project}/locat
-     * ions/{location}/conversations/{conversation}/assessments/{assessment}/notes
-     * /{note}
-     *
-     * @var string
-     */
-    public $name;
-    protected $noteCreatorType = GoogleCloudContactcenterinsightsV1UserInfo::class;
-    protected $noteCreatorDataType = '';
-    protected $qaQuestionNoteType = GoogleCloudContactcenterinsightsV1NoteQaQuestionNote::class;
-    protected $qaQuestionNoteDataType = '';
-    /**
-     * Output only. The time at which the note was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * The note is associated to the entire parent assessment.
-     *
-     * @param GoogleCloudContactcenterinsightsV1NoteAssessmentNote $assessmentNote
-     */
-    public function setAssessmentNote(GoogleCloudContactcenterinsightsV1NoteAssessmentNote $assessmentNote)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1Note extends \Google\Model
     {
+        protected $assessmentNoteType = GoogleCloudContactcenterinsightsV1NoteAssessmentNote::class;
+        protected $assessmentNoteDataType = '';
+        /**
+         * The note content.
+         *
+         * @var string
+         */
+        public $content;
+        protected $conversationTurnNoteType = GoogleCloudContactcenterinsightsV1NoteConversationTurnNote::class;
+        protected $conversationTurnNoteDataType = '';
+        /**
+         * Output only. The time at which the note was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Identifier. The resource name of the note. Format: projects/{project}/locat
+         * ions/{location}/conversations/{conversation}/assessments/{assessment}/notes
+         * /{note}
+         *
+         * @var string
+         */
+        public $name;
+        protected $noteCreatorType = GoogleCloudContactcenterinsightsV1UserInfo::class;
+        protected $noteCreatorDataType = '';
+        protected $qaQuestionNoteType = GoogleCloudContactcenterinsightsV1NoteQaQuestionNote::class;
+        protected $qaQuestionNoteDataType = '';
+        /**
+         * Output only. The time at which the note was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * The note is associated to the entire parent assessment.
+         *
+         * @param GoogleCloudContactcenterinsightsV1NoteAssessmentNote $assessmentNote
+         */
+        public function setAssessmentNote(GoogleCloudContactcenterinsightsV1NoteAssessmentNote $assessmentNote)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1NoteAssessmentNote
+         */
+        public function getAssessmentNote()
+        {
+        }
+        /**
+         * The note content.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * The note is associated with a conversation turn.
+         *
+         * @param GoogleCloudContactcenterinsightsV1NoteConversationTurnNote $conversationTurnNote
+         */
+        public function setConversationTurnNote(GoogleCloudContactcenterinsightsV1NoteConversationTurnNote $conversationTurnNote)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1NoteConversationTurnNote
+         */
+        public function getConversationTurnNote()
+        {
+        }
+        /**
+         * Output only. The time at which the note was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Identifier. The resource name of the note. Format: projects/{project}/locat
+         * ions/{location}/conversations/{conversation}/assessments/{assessment}/notes
+         * /{note}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The user that created the note.
+         *
+         * @param GoogleCloudContactcenterinsightsV1UserInfo $noteCreator
+         */
+        public function setNoteCreator(GoogleCloudContactcenterinsightsV1UserInfo $noteCreator)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1UserInfo
+         */
+        public function getNoteCreator()
+        {
+        }
+        /**
+         * The note is associated with a QA question in one of the conversation's
+         * scorecard results.
+         *
+         * @param GoogleCloudContactcenterinsightsV1NoteQaQuestionNote $qaQuestionNote
+         */
+        public function setQaQuestionNote(GoogleCloudContactcenterinsightsV1NoteQaQuestionNote $qaQuestionNote)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1NoteQaQuestionNote
+         */
+        public function getQaQuestionNote()
+        {
+        }
+        /**
+         * Output only. The time at which the note was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1NoteAssessmentNote
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1Note registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssessmentNote()
-    {
-    }
-    /**
-     * The note content.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContent()
-    {
-    }
-    /**
-     * The note is associated with a conversation turn.
-     *
-     * @param GoogleCloudContactcenterinsightsV1NoteConversationTurnNote $conversationTurnNote
-     */
-    public function setConversationTurnNote(GoogleCloudContactcenterinsightsV1NoteConversationTurnNote $conversationTurnNote)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1NoteConversationTurnNote
-     */
-    public function getConversationTurnNote()
-    {
-    }
-    /**
-     * Output only. The time at which the note was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Identifier. The resource name of the note. Format: projects/{project}/locat
-     * ions/{location}/conversations/{conversation}/assessments/{assessment}/notes
-     * /{note}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The user that created the note.
-     *
-     * @param GoogleCloudContactcenterinsightsV1UserInfo $noteCreator
-     */
-    public function setNoteCreator(GoogleCloudContactcenterinsightsV1UserInfo $noteCreator)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1UserInfo
-     */
-    public function getNoteCreator()
-    {
-    }
-    /**
-     * The note is associated with a QA question in one of the conversation's
-     * scorecard results.
-     *
-     * @param GoogleCloudContactcenterinsightsV1NoteQaQuestionNote $qaQuestionNote
-     */
-    public function setQaQuestionNote(GoogleCloudContactcenterinsightsV1NoteQaQuestionNote $qaQuestionNote)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1NoteQaQuestionNote
-     */
-    public function getQaQuestionNote()
-    {
-    }
-    /**
-     * Output only. The time at which the note was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1Note extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1Note
     {
     }
 }

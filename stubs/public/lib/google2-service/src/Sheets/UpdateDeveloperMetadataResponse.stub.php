@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class UpdateDeveloperMetadataResponse extends \Google\Collection
-{
-    protected $collection_key = 'developerMetadata';
-    protected $developerMetadataType = DeveloperMetadata::class;
-    protected $developerMetadataDataType = 'array';
-    /**
-     * The updated developer metadata.
-     *
-     * @param DeveloperMetadata[] $developerMetadata
-     */
-    public function setDeveloperMetadata($developerMetadata)
+namespace Google\Service\Sheets {
+    class UpdateDeveloperMetadataResponse extends \Google\Collection
     {
+        protected $collection_key = 'developerMetadata';
+        protected $developerMetadataType = DeveloperMetadata::class;
+        protected $developerMetadataDataType = 'array';
+        /**
+         * The updated developer metadata.
+         *
+         * @param DeveloperMetadata[] $developerMetadata
+         */
+        public function setDeveloperMetadata($developerMetadata)
+        {
+        }
+        /**
+         * @return DeveloperMetadata[]
+         */
+        public function getDeveloperMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeveloperMetadata[]
+     * Runtime class alias of \Google\Service\Sheets\UpdateDeveloperMetadataResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeveloperMetadata()
+    class Google_Service_Sheets_UpdateDeveloperMetadataResponse extends \Google\Service\Sheets\UpdateDeveloperMetadataResponse
     {
     }
 }

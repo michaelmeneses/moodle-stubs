@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class OptionalColor extends \Google\Model
-{
-    protected $colorType = Color::class;
-    protected $colorDataType = '';
-    /**
-     * If set, this will be used as an opaque color. If unset, this represents a
-     * transparent color.
-     *
-     * @param Color $color
-     */
-    public function setColor(Color $color)
+namespace Google\Service\Docs {
+    class OptionalColor extends \Google\Model
     {
+        protected $colorType = Color::class;
+        protected $colorDataType = '';
+        /**
+         * If set, this will be used as an opaque color. If unset, this represents a
+         * transparent color.
+         *
+         * @param Color $color
+         */
+        public function setColor(Color $color)
+        {
+        }
+        /**
+         * @return Color
+         */
+        public function getColor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Color
+     * Runtime class alias of \Google\Service\Docs\OptionalColor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColor()
+    class Google_Service_Docs_OptionalColor extends \Google\Service\Docs\OptionalColor
     {
     }
 }

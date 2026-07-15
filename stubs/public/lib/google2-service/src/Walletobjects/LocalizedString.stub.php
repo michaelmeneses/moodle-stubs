@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class LocalizedString extends \Google\Collection
-{
-    protected $collection_key = 'translatedValues';
-    protected $defaultValueType = TranslatedString::class;
-    protected $defaultValueDataType = '';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"walletobjects#localizedString"`.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $kind;
-    protected $translatedValuesType = TranslatedString::class;
-    protected $translatedValuesDataType = 'array';
-    /**
-     * Contains the string to be displayed if no appropriate translation is
-     * available.
-     *
-     * @param TranslatedString $defaultValue
-     */
-    public function setDefaultValue(TranslatedString $defaultValue)
+namespace Google\Service\Walletobjects {
+    class LocalizedString extends \Google\Collection
     {
+        protected $collection_key = 'translatedValues';
+        protected $defaultValueType = TranslatedString::class;
+        protected $defaultValueDataType = '';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"walletobjects#localizedString"`.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $kind;
+        protected $translatedValuesType = TranslatedString::class;
+        protected $translatedValuesDataType = 'array';
+        /**
+         * Contains the string to be displayed if no appropriate translation is
+         * available.
+         *
+         * @param TranslatedString $defaultValue
+         */
+        public function setDefaultValue(TranslatedString $defaultValue)
+        {
+        }
+        /**
+         * @return TranslatedString
+         */
+        public function getDefaultValue()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"walletobjects#localizedString"`.
+         *
+         * @deprecated
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Contains the translations for the string.
+         *
+         * @param TranslatedString[] $translatedValues
+         */
+        public function setTranslatedValues($translatedValues)
+        {
+        }
+        /**
+         * @return TranslatedString[]
+         */
+        public function getTranslatedValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TranslatedString
+     * Runtime class alias of \Google\Service\Walletobjects\LocalizedString registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultValue()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"walletobjects#localizedString"`.
-     *
-     * @deprecated
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Contains the translations for the string.
-     *
-     * @param TranslatedString[] $translatedValues
-     */
-    public function setTranslatedValues($translatedValues)
-    {
-    }
-    /**
-     * @return TranslatedString[]
-     */
-    public function getTranslatedValues()
+    class Google_Service_Walletobjects_LocalizedString extends \Google\Service\Walletobjects\LocalizedString
     {
     }
 }

@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BackupforGKE;
-
-class RpoConfig extends \Google\Collection
-{
-    protected $collection_key = 'exclusionWindows';
-    protected $exclusionWindowsType = ExclusionWindow::class;
-    protected $exclusionWindowsDataType = 'array';
-    /**
-     * Required. Defines the target RPO for the BackupPlan in minutes, which means
-     * the target maximum data loss in time that is acceptable for this
-     * BackupPlan. This must be at least 60, i.e., 1 hour, and at most 86400,
-     * i.e., 60 days.
-     *
-     * @var int
-     */
-    public $targetRpoMinutes;
-    /**
-     * Optional. User specified time windows during which backup can NOT happen
-     * for this BackupPlan - backups should start and finish outside of any given
-     * exclusion window. Note: backup jobs will be scheduled to start and finish
-     * outside the duration of the window as much as possible, but running jobs
-     * will not get canceled when it runs into the window. All the time and date
-     * values in exclusion_windows entry in the API are in UTC. We only allow <=1
-     * recurrence (daily or weekly) exclusion window for a BackupPlan while no
-     * restriction on number of single occurrence windows.
-     *
-     * @param ExclusionWindow[] $exclusionWindows
-     */
-    public function setExclusionWindows($exclusionWindows)
+namespace Google\Service\BackupforGKE {
+    class RpoConfig extends \Google\Collection
     {
+        protected $collection_key = 'exclusionWindows';
+        protected $exclusionWindowsType = ExclusionWindow::class;
+        protected $exclusionWindowsDataType = 'array';
+        /**
+         * Required. Defines the target RPO for the BackupPlan in minutes, which means
+         * the target maximum data loss in time that is acceptable for this
+         * BackupPlan. This must be at least 60, i.e., 1 hour, and at most 86400,
+         * i.e., 60 days.
+         *
+         * @var int
+         */
+        public $targetRpoMinutes;
+        /**
+         * Optional. User specified time windows during which backup can NOT happen
+         * for this BackupPlan - backups should start and finish outside of any given
+         * exclusion window. Note: backup jobs will be scheduled to start and finish
+         * outside the duration of the window as much as possible, but running jobs
+         * will not get canceled when it runs into the window. All the time and date
+         * values in exclusion_windows entry in the API are in UTC. We only allow <=1
+         * recurrence (daily or weekly) exclusion window for a BackupPlan while no
+         * restriction on number of single occurrence windows.
+         *
+         * @param ExclusionWindow[] $exclusionWindows
+         */
+        public function setExclusionWindows($exclusionWindows)
+        {
+        }
+        /**
+         * @return ExclusionWindow[]
+         */
+        public function getExclusionWindows()
+        {
+        }
+        /**
+         * Required. Defines the target RPO for the BackupPlan in minutes, which means
+         * the target maximum data loss in time that is acceptable for this
+         * BackupPlan. This must be at least 60, i.e., 1 hour, and at most 86400,
+         * i.e., 60 days.
+         *
+         * @param int $targetRpoMinutes
+         */
+        public function setTargetRpoMinutes($targetRpoMinutes)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTargetRpoMinutes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExclusionWindow[]
+     * Runtime class alias of \Google\Service\BackupforGKE\RpoConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExclusionWindows()
-    {
-    }
-    /**
-     * Required. Defines the target RPO for the BackupPlan in minutes, which means
-     * the target maximum data loss in time that is acceptable for this
-     * BackupPlan. This must be at least 60, i.e., 1 hour, and at most 86400,
-     * i.e., 60 days.
-     *
-     * @param int $targetRpoMinutes
-     */
-    public function setTargetRpoMinutes($targetRpoMinutes)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTargetRpoMinutes()
+    class Google_Service_BackupforGKE_RpoConfig extends \Google\Service\BackupforGKE\RpoConfig
     {
     }
 }

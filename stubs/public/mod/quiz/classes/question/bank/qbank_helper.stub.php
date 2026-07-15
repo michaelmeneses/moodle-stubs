@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\question\bank;
 
+use context_module;
+use core_question\local\bank\version_options;
+use core_question\local\bank\question_version_status;
+use core_question\local\bank\random_question_loader;
+use core_question\question_reference_manager;
+use qbank_tagquestion\tag_condition;
+use qubaid_condition;
+use stdClass;
 /**
  * Helper class for question bank and its associated data.
  *

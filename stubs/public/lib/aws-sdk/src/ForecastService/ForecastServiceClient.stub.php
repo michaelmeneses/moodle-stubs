@@ -8,6 +8,7 @@
  */
 namespace Aws\ForecastService;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Forecast Service** service.
  * @method \Aws\Result createAutoPredictor(array $args = [])

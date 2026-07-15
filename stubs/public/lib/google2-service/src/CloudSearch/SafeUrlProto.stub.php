@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SafeUrlProto extends \Google\Model
-{
-    /**
-     * IMPORTANT: Never set or read this field, even from tests, it is private.
-     * See documentation at the top of .proto file for programming language
-     * packages with which to create or read this message.
-     *
-     * @var string
-     */
-    public $privateDoNotAccessOrElseSafeUrlWrappedValue;
-    /**
-     * IMPORTANT: Never set or read this field, even from tests, it is private.
-     * See documentation at the top of .proto file for programming language
-     * packages with which to create or read this message.
-     *
-     * @param string $privateDoNotAccessOrElseSafeUrlWrappedValue
-     */
-    public function setPrivateDoNotAccessOrElseSafeUrlWrappedValue($privateDoNotAccessOrElseSafeUrlWrappedValue)
+namespace Google\Service\CloudSearch {
+    class SafeUrlProto extends \Google\Model
     {
+        /**
+         * IMPORTANT: Never set or read this field, even from tests, it is private.
+         * See documentation at the top of .proto file for programming language
+         * packages with which to create or read this message.
+         *
+         * @var string
+         */
+        public $privateDoNotAccessOrElseSafeUrlWrappedValue;
+        /**
+         * IMPORTANT: Never set or read this field, even from tests, it is private.
+         * See documentation at the top of .proto file for programming language
+         * packages with which to create or read this message.
+         *
+         * @param string $privateDoNotAccessOrElseSafeUrlWrappedValue
+         */
+        public function setPrivateDoNotAccessOrElseSafeUrlWrappedValue($privateDoNotAccessOrElseSafeUrlWrappedValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivateDoNotAccessOrElseSafeUrlWrappedValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\SafeUrlProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrivateDoNotAccessOrElseSafeUrlWrappedValue()
+    class Google_Service_CloudSearch_SafeUrlProto extends \Google\Service\CloudSearch\SafeUrlProto
     {
     }
 }

@@ -21,164 +21,173 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class UpcomingMaintenance extends \Google\Model
-{
-    /**
-     * Unknown maintenance status. Do not use this value.
-     */
-    public const MAINTENANCE_STATUS_UNKNOWN = 'UNKNOWN';
-    /**
-     * There is pending maintenance.
-     */
-    public const MAINTENANCE_STATUS_PENDING = 'PENDING';
-    /**
-     * There is ongoing maintenance on this VM.
-     */
-    public const MAINTENANCE_STATUS_ONGOING = 'ONGOING';
-    /**
-     * No type specified. Do not use this value.
-     */
-    public const TYPE_UNKNOWN_TYPE = 'UNKNOWN_TYPE';
-    /**
-     * Scheduled maintenance (e.g. maintenance after uptime guarantee is
-     * complete).
-     */
-    public const TYPE_SCHEDULED = 'SCHEDULED';
-    /**
-     * Unscheduled maintenance (e.g. emergency maintenance during uptime
-     * guarantee).
-     */
-    public const TYPE_UNSCHEDULED = 'UNSCHEDULED';
-    /**
-     * Indicates if the maintenance can be customer triggered.
-     *
-     * @var bool
-     */
-    public $canReschedule;
-    /**
-     * The latest time for the planned maintenance window to start. This timestamp
-     * value is in RFC3339 text format.
-     *
-     * @var string
-     */
-    public $latestWindowStartTime;
-    /**
-     * The status of the maintenance.
-     *
-     * @var string
-     */
-    public $maintenanceStatus;
-    /**
-     * Defines the type of maintenance.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The time by which the maintenance disruption will be completed. This
-     * timestamp value is in RFC3339 text format.
-     *
-     * @var string
-     */
-    public $windowEndTime;
-    /**
-     * The current start time of the maintenance window. This timestamp value is
-     * in RFC3339 text format.
-     *
-     * @var string
-     */
-    public $windowStartTime;
-    /**
-     * Indicates if the maintenance can be customer triggered.
-     *
-     * @param bool $canReschedule
-     */
-    public function setCanReschedule($canReschedule)
+namespace Google\Service\TPU {
+    class UpcomingMaintenance extends \Google\Model
     {
+        /**
+         * Unknown maintenance status. Do not use this value.
+         */
+        public const MAINTENANCE_STATUS_UNKNOWN = 'UNKNOWN';
+        /**
+         * There is pending maintenance.
+         */
+        public const MAINTENANCE_STATUS_PENDING = 'PENDING';
+        /**
+         * There is ongoing maintenance on this VM.
+         */
+        public const MAINTENANCE_STATUS_ONGOING = 'ONGOING';
+        /**
+         * No type specified. Do not use this value.
+         */
+        public const TYPE_UNKNOWN_TYPE = 'UNKNOWN_TYPE';
+        /**
+         * Scheduled maintenance (e.g. maintenance after uptime guarantee is
+         * complete).
+         */
+        public const TYPE_SCHEDULED = 'SCHEDULED';
+        /**
+         * Unscheduled maintenance (e.g. emergency maintenance during uptime
+         * guarantee).
+         */
+        public const TYPE_UNSCHEDULED = 'UNSCHEDULED';
+        /**
+         * Indicates if the maintenance can be customer triggered.
+         *
+         * @var bool
+         */
+        public $canReschedule;
+        /**
+         * The latest time for the planned maintenance window to start. This timestamp
+         * value is in RFC3339 text format.
+         *
+         * @var string
+         */
+        public $latestWindowStartTime;
+        /**
+         * The status of the maintenance.
+         *
+         * @var string
+         */
+        public $maintenanceStatus;
+        /**
+         * Defines the type of maintenance.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The time by which the maintenance disruption will be completed. This
+         * timestamp value is in RFC3339 text format.
+         *
+         * @var string
+         */
+        public $windowEndTime;
+        /**
+         * The current start time of the maintenance window. This timestamp value is
+         * in RFC3339 text format.
+         *
+         * @var string
+         */
+        public $windowStartTime;
+        /**
+         * Indicates if the maintenance can be customer triggered.
+         *
+         * @param bool $canReschedule
+         */
+        public function setCanReschedule($canReschedule)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanReschedule()
+        {
+        }
+        /**
+         * The latest time for the planned maintenance window to start. This timestamp
+         * value is in RFC3339 text format.
+         *
+         * @param string $latestWindowStartTime
+         */
+        public function setLatestWindowStartTime($latestWindowStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLatestWindowStartTime()
+        {
+        }
+        /**
+         * The status of the maintenance.
+         *
+         * Accepted values: UNKNOWN, PENDING, ONGOING
+         *
+         * @param self::MAINTENANCE_STATUS_* $maintenanceStatus
+         */
+        public function setMaintenanceStatus($maintenanceStatus)
+        {
+        }
+        /**
+         * @return self::MAINTENANCE_STATUS_*
+         */
+        public function getMaintenanceStatus()
+        {
+        }
+        /**
+         * Defines the type of maintenance.
+         *
+         * Accepted values: UNKNOWN_TYPE, SCHEDULED, UNSCHEDULED
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The time by which the maintenance disruption will be completed. This
+         * timestamp value is in RFC3339 text format.
+         *
+         * @param string $windowEndTime
+         */
+        public function setWindowEndTime($windowEndTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWindowEndTime()
+        {
+        }
+        /**
+         * The current start time of the maintenance window. This timestamp value is
+         * in RFC3339 text format.
+         *
+         * @param string $windowStartTime
+         */
+        public function setWindowStartTime($windowStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWindowStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\TPU\UpcomingMaintenance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanReschedule()
-    {
-    }
-    /**
-     * The latest time for the planned maintenance window to start. This timestamp
-     * value is in RFC3339 text format.
-     *
-     * @param string $latestWindowStartTime
-     */
-    public function setLatestWindowStartTime($latestWindowStartTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLatestWindowStartTime()
-    {
-    }
-    /**
-     * The status of the maintenance.
-     *
-     * Accepted values: UNKNOWN, PENDING, ONGOING
-     *
-     * @param self::MAINTENANCE_STATUS_* $maintenanceStatus
-     */
-    public function setMaintenanceStatus($maintenanceStatus)
-    {
-    }
-    /**
-     * @return self::MAINTENANCE_STATUS_*
-     */
-    public function getMaintenanceStatus()
-    {
-    }
-    /**
-     * Defines the type of maintenance.
-     *
-     * Accepted values: UNKNOWN_TYPE, SCHEDULED, UNSCHEDULED
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * The time by which the maintenance disruption will be completed. This
-     * timestamp value is in RFC3339 text format.
-     *
-     * @param string $windowEndTime
-     */
-    public function setWindowEndTime($windowEndTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWindowEndTime()
-    {
-    }
-    /**
-     * The current start time of the maintenance window. This timestamp value is
-     * in RFC3339 text format.
-     *
-     * @param string $windowStartTime
-     */
-    public function setWindowStartTime($windowStartTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWindowStartTime()
+    class Google_Service_TPU_UpcomingMaintenance extends \Google\Service\TPU\UpcomingMaintenance
     {
     }
 }

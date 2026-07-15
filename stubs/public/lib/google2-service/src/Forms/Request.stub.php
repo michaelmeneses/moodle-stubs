@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class Request extends \Google\Model
-{
-    protected $createItemType = CreateItemRequest::class;
-    protected $createItemDataType = '';
-    protected $deleteItemType = DeleteItemRequest::class;
-    protected $deleteItemDataType = '';
-    protected $moveItemType = MoveItemRequest::class;
-    protected $moveItemDataType = '';
-    protected $updateFormInfoType = UpdateFormInfoRequest::class;
-    protected $updateFormInfoDataType = '';
-    protected $updateItemType = UpdateItemRequest::class;
-    protected $updateItemDataType = '';
-    protected $updateSettingsType = UpdateSettingsRequest::class;
-    protected $updateSettingsDataType = '';
-    /**
-     * Create a new item.
-     *
-     * @param CreateItemRequest $createItem
-     */
-    public function setCreateItem(CreateItemRequest $createItem)
+namespace Google\Service\Forms {
+    class Request extends \Google\Model
     {
+        protected $createItemType = CreateItemRequest::class;
+        protected $createItemDataType = '';
+        protected $deleteItemType = DeleteItemRequest::class;
+        protected $deleteItemDataType = '';
+        protected $moveItemType = MoveItemRequest::class;
+        protected $moveItemDataType = '';
+        protected $updateFormInfoType = UpdateFormInfoRequest::class;
+        protected $updateFormInfoDataType = '';
+        protected $updateItemType = UpdateItemRequest::class;
+        protected $updateItemDataType = '';
+        protected $updateSettingsType = UpdateSettingsRequest::class;
+        protected $updateSettingsDataType = '';
+        /**
+         * Create a new item.
+         *
+         * @param CreateItemRequest $createItem
+         */
+        public function setCreateItem(CreateItemRequest $createItem)
+        {
+        }
+        /**
+         * @return CreateItemRequest
+         */
+        public function getCreateItem()
+        {
+        }
+        /**
+         * Delete an item.
+         *
+         * @param DeleteItemRequest $deleteItem
+         */
+        public function setDeleteItem(DeleteItemRequest $deleteItem)
+        {
+        }
+        /**
+         * @return DeleteItemRequest
+         */
+        public function getDeleteItem()
+        {
+        }
+        /**
+         * Move an item to a specified location.
+         *
+         * @param MoveItemRequest $moveItem
+         */
+        public function setMoveItem(MoveItemRequest $moveItem)
+        {
+        }
+        /**
+         * @return MoveItemRequest
+         */
+        public function getMoveItem()
+        {
+        }
+        /**
+         * Update Form's Info.
+         *
+         * @param UpdateFormInfoRequest $updateFormInfo
+         */
+        public function setUpdateFormInfo(UpdateFormInfoRequest $updateFormInfo)
+        {
+        }
+        /**
+         * @return UpdateFormInfoRequest
+         */
+        public function getUpdateFormInfo()
+        {
+        }
+        /**
+         * Update an item.
+         *
+         * @param UpdateItemRequest $updateItem
+         */
+        public function setUpdateItem(UpdateItemRequest $updateItem)
+        {
+        }
+        /**
+         * @return UpdateItemRequest
+         */
+        public function getUpdateItem()
+        {
+        }
+        /**
+         * Updates the Form's settings.
+         *
+         * @param UpdateSettingsRequest $updateSettings
+         */
+        public function setUpdateSettings(UpdateSettingsRequest $updateSettings)
+        {
+        }
+        /**
+         * @return UpdateSettingsRequest
+         */
+        public function getUpdateSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CreateItemRequest
+     * Runtime class alias of \Google\Service\Forms\Request registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateItem()
-    {
-    }
-    /**
-     * Delete an item.
-     *
-     * @param DeleteItemRequest $deleteItem
-     */
-    public function setDeleteItem(DeleteItemRequest $deleteItem)
-    {
-    }
-    /**
-     * @return DeleteItemRequest
-     */
-    public function getDeleteItem()
-    {
-    }
-    /**
-     * Move an item to a specified location.
-     *
-     * @param MoveItemRequest $moveItem
-     */
-    public function setMoveItem(MoveItemRequest $moveItem)
-    {
-    }
-    /**
-     * @return MoveItemRequest
-     */
-    public function getMoveItem()
-    {
-    }
-    /**
-     * Update Form's Info.
-     *
-     * @param UpdateFormInfoRequest $updateFormInfo
-     */
-    public function setUpdateFormInfo(UpdateFormInfoRequest $updateFormInfo)
-    {
-    }
-    /**
-     * @return UpdateFormInfoRequest
-     */
-    public function getUpdateFormInfo()
-    {
-    }
-    /**
-     * Update an item.
-     *
-     * @param UpdateItemRequest $updateItem
-     */
-    public function setUpdateItem(UpdateItemRequest $updateItem)
-    {
-    }
-    /**
-     * @return UpdateItemRequest
-     */
-    public function getUpdateItem()
-    {
-    }
-    /**
-     * Updates the Form's settings.
-     *
-     * @param UpdateSettingsRequest $updateSettings
-     */
-    public function setUpdateSettings(UpdateSettingsRequest $updateSettings)
-    {
-    }
-    /**
-     * @return UpdateSettingsRequest
-     */
-    public function getUpdateSettings()
+    class Google_Service_Forms_Request extends \Google\Service\Forms\Request
     {
     }
 }

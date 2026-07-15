@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2PurchaseTransaction extends \Google\Model
-{
-    /**
-     * All the costs associated with the products. These can be manufacturing
-     * costs, shipping expenses not borne by the end user, or any other costs,
-     * such that: * Profit = revenue - tax - cost
-     *
-     * @var float
-     */
-    public $cost;
-    /**
-     * Required. Currency code. Use three-character ISO-4217 code.
-     *
-     * @var string
-     */
-    public $currencyCode;
-    /**
-     * The transaction ID with a length limit of 128 characters.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Required. Total non-zero revenue or grand total associated with the
-     * transaction. This value include shipping, tax, or other adjustments to
-     * total revenue that you want to include as part of your revenue
-     * calculations.
-     *
-     * @var float
-     */
-    public $revenue;
-    /**
-     * All the taxes associated with the transaction.
-     *
-     * @var float
-     */
-    public $tax;
-    /**
-     * All the costs associated with the products. These can be manufacturing
-     * costs, shipping expenses not borne by the end user, or any other costs,
-     * such that: * Profit = revenue - tax - cost
-     *
-     * @param float $cost
-     */
-    public function setCost($cost)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2PurchaseTransaction extends \Google\Model
     {
+        /**
+         * All the costs associated with the products. These can be manufacturing
+         * costs, shipping expenses not borne by the end user, or any other costs,
+         * such that: * Profit = revenue - tax - cost
+         *
+         * @var float
+         */
+        public $cost;
+        /**
+         * Required. Currency code. Use three-character ISO-4217 code.
+         *
+         * @var string
+         */
+        public $currencyCode;
+        /**
+         * The transaction ID with a length limit of 128 characters.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Required. Total non-zero revenue or grand total associated with the
+         * transaction. This value include shipping, tax, or other adjustments to
+         * total revenue that you want to include as part of your revenue
+         * calculations.
+         *
+         * @var float
+         */
+        public $revenue;
+        /**
+         * All the taxes associated with the transaction.
+         *
+         * @var float
+         */
+        public $tax;
+        /**
+         * All the costs associated with the products. These can be manufacturing
+         * costs, shipping expenses not borne by the end user, or any other costs,
+         * such that: * Profit = revenue - tax - cost
+         *
+         * @param float $cost
+         */
+        public function setCost($cost)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getCost()
+        {
+        }
+        /**
+         * Required. Currency code. Use three-character ISO-4217 code.
+         *
+         * @param string $currencyCode
+         */
+        public function setCurrencyCode($currencyCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrencyCode()
+        {
+        }
+        /**
+         * The transaction ID with a length limit of 128 characters.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Required. Total non-zero revenue or grand total associated with the
+         * transaction. This value include shipping, tax, or other adjustments to
+         * total revenue that you want to include as part of your revenue
+         * calculations.
+         *
+         * @param float $revenue
+         */
+        public function setRevenue($revenue)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getRevenue()
+        {
+        }
+        /**
+         * All the taxes associated with the transaction.
+         *
+         * @param float $tax
+         */
+        public function setTax($tax)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getTax()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2PurchaseTransaction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCost()
-    {
-    }
-    /**
-     * Required. Currency code. Use three-character ISO-4217 code.
-     *
-     * @param string $currencyCode
-     */
-    public function setCurrencyCode($currencyCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCurrencyCode()
-    {
-    }
-    /**
-     * The transaction ID with a length limit of 128 characters.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Required. Total non-zero revenue or grand total associated with the
-     * transaction. This value include shipping, tax, or other adjustments to
-     * total revenue that you want to include as part of your revenue
-     * calculations.
-     *
-     * @param float $revenue
-     */
-    public function setRevenue($revenue)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getRevenue()
-    {
-    }
-    /**
-     * All the taxes associated with the transaction.
-     *
-     * @param float $tax
-     */
-    public function setTax($tax)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getTax()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2PurchaseTransaction extends \Google\Service\CloudRetail\GoogleCloudRetailV2PurchaseTransaction
     {
     }
 }

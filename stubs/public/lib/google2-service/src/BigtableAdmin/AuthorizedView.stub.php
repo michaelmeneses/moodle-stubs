@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class AuthorizedView extends \Google\Model
-{
-    /**
-     * Set to true to make the AuthorizedView protected against deletion. The
-     * parent Table and containing Instance cannot be deleted if an AuthorizedView
-     * has this bit set.
-     *
-     * @var bool
-     */
-    public $deletionProtection;
-    /**
-     * The etag for this AuthorizedView. If this is provided on update, it must
-     * match the server's etag. The server returns ABORTED error on a mismatched
-     * etag.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Identifier. The name of this AuthorizedView. Values are of the form `projec
-     * ts/{project}/instances/{instance}/tables/{table}/authorizedViews/{authorize
-     * d_view}`
-     *
-     * @var string
-     */
-    public $name;
-    protected $subsetViewType = GoogleBigtableAdminV2AuthorizedViewSubsetView::class;
-    protected $subsetViewDataType = '';
-    /**
-     * Set to true to make the AuthorizedView protected against deletion. The
-     * parent Table and containing Instance cannot be deleted if an AuthorizedView
-     * has this bit set.
-     *
-     * @param bool $deletionProtection
-     */
-    public function setDeletionProtection($deletionProtection)
+namespace Google\Service\BigtableAdmin {
+    class AuthorizedView extends \Google\Model
     {
+        /**
+         * Set to true to make the AuthorizedView protected against deletion. The
+         * parent Table and containing Instance cannot be deleted if an AuthorizedView
+         * has this bit set.
+         *
+         * @var bool
+         */
+        public $deletionProtection;
+        /**
+         * The etag for this AuthorizedView. If this is provided on update, it must
+         * match the server's etag. The server returns ABORTED error on a mismatched
+         * etag.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Identifier. The name of this AuthorizedView. Values are of the form `projec
+         * ts/{project}/instances/{instance}/tables/{table}/authorizedViews/{authorize
+         * d_view}`
+         *
+         * @var string
+         */
+        public $name;
+        protected $subsetViewType = GoogleBigtableAdminV2AuthorizedViewSubsetView::class;
+        protected $subsetViewDataType = '';
+        /**
+         * Set to true to make the AuthorizedView protected against deletion. The
+         * parent Table and containing Instance cannot be deleted if an AuthorizedView
+         * has this bit set.
+         *
+         * @param bool $deletionProtection
+         */
+        public function setDeletionProtection($deletionProtection)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeletionProtection()
+        {
+        }
+        /**
+         * The etag for this AuthorizedView. If this is provided on update, it must
+         * match the server's etag. The server returns ABORTED error on a mismatched
+         * etag.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Identifier. The name of this AuthorizedView. Values are of the form `projec
+         * ts/{project}/instances/{instance}/tables/{table}/authorizedViews/{authorize
+         * d_view}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * An AuthorizedView permitting access to an explicit subset of a Table.
+         *
+         * @param GoogleBigtableAdminV2AuthorizedViewSubsetView $subsetView
+         */
+        public function setSubsetView(GoogleBigtableAdminV2AuthorizedViewSubsetView $subsetView)
+        {
+        }
+        /**
+         * @return GoogleBigtableAdminV2AuthorizedViewSubsetView
+         */
+        public function getSubsetView()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\BigtableAdmin\AuthorizedView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeletionProtection()
-    {
-    }
-    /**
-     * The etag for this AuthorizedView. If this is provided on update, it must
-     * match the server's etag. The server returns ABORTED error on a mismatched
-     * etag.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Identifier. The name of this AuthorizedView. Values are of the form `projec
-     * ts/{project}/instances/{instance}/tables/{table}/authorizedViews/{authorize
-     * d_view}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * An AuthorizedView permitting access to an explicit subset of a Table.
-     *
-     * @param GoogleBigtableAdminV2AuthorizedViewSubsetView $subsetView
-     */
-    public function setSubsetView(GoogleBigtableAdminV2AuthorizedViewSubsetView $subsetView)
-    {
-    }
-    /**
-     * @return GoogleBigtableAdminV2AuthorizedViewSubsetView
-     */
-    public function getSubsetView()
+    class Google_Service_BigtableAdmin_AuthorizedView extends \Google\Service\BigtableAdmin\AuthorizedView
     {
     }
 }

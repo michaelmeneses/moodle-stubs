@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecretManager;
-
-class Topic extends \Google\Model
-{
-    /**
-     * Identifier. The resource name of the Pub/Sub topic that will be published
-     * to, in the following format: `projects/topics`. For publication to succeed,
-     * the Secret Manager service agent must have the `pubsub.topic.publish`
-     * permission on the topic. The Pub/Sub Publisher role
-     * (`roles/pubsub.publisher`) includes this permission.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Identifier. The resource name of the Pub/Sub topic that will be published
-     * to, in the following format: `projects/topics`. For publication to succeed,
-     * the Secret Manager service agent must have the `pubsub.topic.publish`
-     * permission on the topic. The Pub/Sub Publisher role
-     * (`roles/pubsub.publisher`) includes this permission.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\SecretManager {
+    class Topic extends \Google\Model
     {
+        /**
+         * Identifier. The resource name of the Pub/Sub topic that will be published
+         * to, in the following format: `projects/topics`. For publication to succeed,
+         * the Secret Manager service agent must have the `pubsub.topic.publish`
+         * permission on the topic. The Pub/Sub Publisher role
+         * (`roles/pubsub.publisher`) includes this permission.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Identifier. The resource name of the Pub/Sub topic that will be published
+         * to, in the following format: `projects/topics`. For publication to succeed,
+         * the Secret Manager service agent must have the `pubsub.topic.publish`
+         * permission on the topic. The Pub/Sub Publisher role
+         * (`roles/pubsub.publisher`) includes this permission.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecretManager\Topic registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_SecretManager_Topic extends \Google\Service\SecretManager\Topic
     {
     }
 }

@@ -21,195 +21,204 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ThreadUpdate extends \Google\Collection
-{
-    protected $collection_key = 'preState';
-    protected $attributeRemovedType = AttributeRemoved::class;
-    protected $attributeRemovedDataType = '';
-    protected $attributeSetType = AttributeSet::class;
-    protected $attributeSetDataType = '';
-    protected $labelAddedType = LabelAdded::class;
-    protected $labelAddedDataType = '';
-    protected $labelRemovedType = LabelRemoved::class;
-    protected $labelRemovedDataType = '';
-    /**
-     * @var string
-     */
-    public $lastHistoryRecordId;
-    protected $messageAddedType = MessageAdded::class;
-    protected $messageAddedDataType = '';
-    protected $messageDeletedType = MessageDeleted::class;
-    protected $messageDeletedDataType = '';
-    protected $originalThreadKeyType = MultiKey::class;
-    protected $originalThreadKeyDataType = '';
-    protected $preStateType = PreState::class;
-    protected $preStateDataType = 'array';
-    protected $threadKeyType = MultiKey::class;
-    protected $threadKeyDataType = '';
-    protected $threadKeySetType = ThreadKeySet::class;
-    protected $threadKeySetDataType = '';
-    /**
-     * @var string
-     */
-    public $threadLocator;
-    protected $topicStateUpdateType = TopicStateUpdate::class;
-    protected $topicStateUpdateDataType = '';
-    /**
-     * @param AttributeRemoved
-     */
-    public function setAttributeRemoved(AttributeRemoved $attributeRemoved)
+namespace Google\Service\CloudSearch {
+    class ThreadUpdate extends \Google\Collection
     {
+        protected $collection_key = 'preState';
+        protected $attributeRemovedType = AttributeRemoved::class;
+        protected $attributeRemovedDataType = '';
+        protected $attributeSetType = AttributeSet::class;
+        protected $attributeSetDataType = '';
+        protected $labelAddedType = LabelAdded::class;
+        protected $labelAddedDataType = '';
+        protected $labelRemovedType = LabelRemoved::class;
+        protected $labelRemovedDataType = '';
+        /**
+         * @var string
+         */
+        public $lastHistoryRecordId;
+        protected $messageAddedType = MessageAdded::class;
+        protected $messageAddedDataType = '';
+        protected $messageDeletedType = MessageDeleted::class;
+        protected $messageDeletedDataType = '';
+        protected $originalThreadKeyType = MultiKey::class;
+        protected $originalThreadKeyDataType = '';
+        protected $preStateType = PreState::class;
+        protected $preStateDataType = 'array';
+        protected $threadKeyType = MultiKey::class;
+        protected $threadKeyDataType = '';
+        protected $threadKeySetType = ThreadKeySet::class;
+        protected $threadKeySetDataType = '';
+        /**
+         * @var string
+         */
+        public $threadLocator;
+        protected $topicStateUpdateType = TopicStateUpdate::class;
+        protected $topicStateUpdateDataType = '';
+        /**
+         * @param AttributeRemoved
+         */
+        public function setAttributeRemoved(AttributeRemoved $attributeRemoved)
+        {
+        }
+        /**
+         * @return AttributeRemoved
+         */
+        public function getAttributeRemoved()
+        {
+        }
+        /**
+         * @param AttributeSet
+         */
+        public function setAttributeSet(AttributeSet $attributeSet)
+        {
+        }
+        /**
+         * @return AttributeSet
+         */
+        public function getAttributeSet()
+        {
+        }
+        /**
+         * @param LabelAdded
+         */
+        public function setLabelAdded(LabelAdded $labelAdded)
+        {
+        }
+        /**
+         * @return LabelAdded
+         */
+        public function getLabelAdded()
+        {
+        }
+        /**
+         * @param LabelRemoved
+         */
+        public function setLabelRemoved(LabelRemoved $labelRemoved)
+        {
+        }
+        /**
+         * @return LabelRemoved
+         */
+        public function getLabelRemoved()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastHistoryRecordId($lastHistoryRecordId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastHistoryRecordId()
+        {
+        }
+        /**
+         * @param MessageAdded
+         */
+        public function setMessageAdded(MessageAdded $messageAdded)
+        {
+        }
+        /**
+         * @return MessageAdded
+         */
+        public function getMessageAdded()
+        {
+        }
+        /**
+         * @param MessageDeleted
+         */
+        public function setMessageDeleted(MessageDeleted $messageDeleted)
+        {
+        }
+        /**
+         * @return MessageDeleted
+         */
+        public function getMessageDeleted()
+        {
+        }
+        /**
+         * @param MultiKey
+         */
+        public function setOriginalThreadKey(MultiKey $originalThreadKey)
+        {
+        }
+        /**
+         * @return MultiKey
+         */
+        public function getOriginalThreadKey()
+        {
+        }
+        /**
+         * @param PreState[]
+         */
+        public function setPreState($preState)
+        {
+        }
+        /**
+         * @return PreState[]
+         */
+        public function getPreState()
+        {
+        }
+        /**
+         * @param MultiKey
+         */
+        public function setThreadKey(MultiKey $threadKey)
+        {
+        }
+        /**
+         * @return MultiKey
+         */
+        public function getThreadKey()
+        {
+        }
+        /**
+         * @param ThreadKeySet
+         */
+        public function setThreadKeySet(ThreadKeySet $threadKeySet)
+        {
+        }
+        /**
+         * @return ThreadKeySet
+         */
+        public function getThreadKeySet()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setThreadLocator($threadLocator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThreadLocator()
+        {
+        }
+        /**
+         * @param TopicStateUpdate
+         */
+        public function setTopicStateUpdate(TopicStateUpdate $topicStateUpdate)
+        {
+        }
+        /**
+         * @return TopicStateUpdate
+         */
+        public function getTopicStateUpdate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AttributeRemoved
+     * Runtime class alias of \Google\Service\CloudSearch\ThreadUpdate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributeRemoved()
-    {
-    }
-    /**
-     * @param AttributeSet
-     */
-    public function setAttributeSet(AttributeSet $attributeSet)
-    {
-    }
-    /**
-     * @return AttributeSet
-     */
-    public function getAttributeSet()
-    {
-    }
-    /**
-     * @param LabelAdded
-     */
-    public function setLabelAdded(LabelAdded $labelAdded)
-    {
-    }
-    /**
-     * @return LabelAdded
-     */
-    public function getLabelAdded()
-    {
-    }
-    /**
-     * @param LabelRemoved
-     */
-    public function setLabelRemoved(LabelRemoved $labelRemoved)
-    {
-    }
-    /**
-     * @return LabelRemoved
-     */
-    public function getLabelRemoved()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastHistoryRecordId($lastHistoryRecordId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastHistoryRecordId()
-    {
-    }
-    /**
-     * @param MessageAdded
-     */
-    public function setMessageAdded(MessageAdded $messageAdded)
-    {
-    }
-    /**
-     * @return MessageAdded
-     */
-    public function getMessageAdded()
-    {
-    }
-    /**
-     * @param MessageDeleted
-     */
-    public function setMessageDeleted(MessageDeleted $messageDeleted)
-    {
-    }
-    /**
-     * @return MessageDeleted
-     */
-    public function getMessageDeleted()
-    {
-    }
-    /**
-     * @param MultiKey
-     */
-    public function setOriginalThreadKey(MultiKey $originalThreadKey)
-    {
-    }
-    /**
-     * @return MultiKey
-     */
-    public function getOriginalThreadKey()
-    {
-    }
-    /**
-     * @param PreState[]
-     */
-    public function setPreState($preState)
-    {
-    }
-    /**
-     * @return PreState[]
-     */
-    public function getPreState()
-    {
-    }
-    /**
-     * @param MultiKey
-     */
-    public function setThreadKey(MultiKey $threadKey)
-    {
-    }
-    /**
-     * @return MultiKey
-     */
-    public function getThreadKey()
-    {
-    }
-    /**
-     * @param ThreadKeySet
-     */
-    public function setThreadKeySet(ThreadKeySet $threadKeySet)
-    {
-    }
-    /**
-     * @return ThreadKeySet
-     */
-    public function getThreadKeySet()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setThreadLocator($threadLocator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThreadLocator()
-    {
-    }
-    /**
-     * @param TopicStateUpdate
-     */
-    public function setTopicStateUpdate(TopicStateUpdate $topicStateUpdate)
-    {
-    }
-    /**
-     * @return TopicStateUpdate
-     */
-    public function getTopicStateUpdate()
+    class Google_Service_CloudSearch_ThreadUpdate extends \Google\Service\CloudSearch\ThreadUpdate
     {
     }
 }

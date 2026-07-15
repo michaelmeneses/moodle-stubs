@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class SpecSource extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $gameServerConfigName;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param string
-     */
-    public function setGameServerConfigName($gameServerConfigName)
+namespace Google\Service\GameServices {
+    class SpecSource extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $gameServerConfigName;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param string
+         */
+        public function setGameServerConfigName($gameServerConfigName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGameServerConfigName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GameServices\SpecSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGameServerConfigName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_GameServices_SpecSource extends \Google\Service\GameServices\SpecSource
     {
     }
 }

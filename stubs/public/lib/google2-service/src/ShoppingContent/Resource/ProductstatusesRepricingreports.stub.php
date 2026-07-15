@@ -21,50 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "repricingreports" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $repricingreports = $contentService->productstatuses_repricingreports;
- *  </code>
- */
-class ProductstatusesRepricingreports extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\ListRepricingProductReportsResponse;
     /**
-     * Lists the metrics report for a given Repricing product.
-     * (repricingreports.listProductstatusesRepricingreports)
-     *
-     * @param string $merchantId Required. Id of the merchant who owns the Repricing
-     * rule.
-     * @param string $productId Required. Id of the Repricing product. Also known as
-     * the [REST_ID](https://developers.google.com/shopping-
-     * content/reference/rest/v2.1/products#Product.FIELDS.id)
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string endDate Gets Repricing reports on and before this date in
-     * the merchant's timezone. You can only retrieve data up to 7 days ago
-     * (default) or earlier. Format is YYYY-MM-DD.
-     * @opt_param int pageSize Maximum number of days of reports to return. There
-     * can be more than one rule report returned per day. For example, if 3 rule
-     * types got applied to the same product within a 24-hour period, then a
-     * page_size of 1 will return 3 rule reports. The page size defaults to 50 and
-     * values above 1000 are coerced to 1000. This service may return fewer days of
-     * reports than this value, for example, if the time between your start and end
-     * date is less than the page size.
-     * @opt_param string pageToken Token (if provided) to retrieve the subsequent
-     * page. All other parameters must match the original call that provided the
-     * page token.
-     * @opt_param string ruleId Id of the Repricing rule. If specified, only gets
-     * this rule's reports.
-     * @opt_param string startDate Gets Repricing reports on and after this date in
-     * the merchant's timezone, up to one year ago. Do not use a start date later
-     * than 7 days ago (default). Format is YYYY-MM-DD.
-     * @return ListRepricingProductReportsResponse
+     * The "repricingreports" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $repricingreports = $contentService->productstatuses_repricingreports;
+     *  </code>
      */
-    public function listProductstatusesRepricingreports($merchantId, $productId, $optParams = [])
+    class ProductstatusesRepricingreports extends \Google\Service\Resource
+    {
+        /**
+         * Lists the metrics report for a given Repricing product.
+         * (repricingreports.listProductstatusesRepricingreports)
+         *
+         * @param string $merchantId Required. Id of the merchant who owns the Repricing
+         * rule.
+         * @param string $productId Required. Id of the Repricing product. Also known as
+         * the [REST_ID](https://developers.google.com/shopping-
+         * content/reference/rest/v2.1/products#Product.FIELDS.id)
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string endDate Gets Repricing reports on and before this date in
+         * the merchant's timezone. You can only retrieve data up to 7 days ago
+         * (default) or earlier. Format is YYYY-MM-DD.
+         * @opt_param int pageSize Maximum number of days of reports to return. There
+         * can be more than one rule report returned per day. For example, if 3 rule
+         * types got applied to the same product within a 24-hour period, then a
+         * page_size of 1 will return 3 rule reports. The page size defaults to 50 and
+         * values above 1000 are coerced to 1000. This service may return fewer days of
+         * reports than this value, for example, if the time between your start and end
+         * date is less than the page size.
+         * @opt_param string pageToken Token (if provided) to retrieve the subsequent
+         * page. All other parameters must match the original call that provided the
+         * page token.
+         * @opt_param string ruleId Id of the Repricing rule. If specified, only gets
+         * this rule's reports.
+         * @opt_param string startDate Gets Repricing reports on and after this date in
+         * the merchant's timezone, up to one year ago. Do not use a start date later
+         * than 7 days ago (default). Format is YYYY-MM-DD.
+         * @return ListRepricingProductReportsResponse
+         */
+        public function listProductstatusesRepricingreports($merchantId, $productId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\ProductstatusesRepricingreports registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ShoppingContent_Resource_ProductstatusesRepricingreports extends \Google\Service\ShoppingContent\Resource\ProductstatusesRepricingreports
     {
     }
 }

@@ -21,233 +21,242 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class MarketplaceDeal extends \Google\Collection
-{
-    protected $collection_key = 'sharedTargetings';
-    protected $buyerPrivateDataType = PrivateData::class;
-    protected $buyerPrivateDataDataType = '';
-    public $creationTimeMs;
-    public $creativePreApprovalPolicy;
-    public $creativeSafeFrameCompatibility;
-    public $dealId;
-    protected $dealServingMetadataType = DealServingMetadata::class;
-    protected $dealServingMetadataDataType = '';
-    protected $deliveryControlType = DeliveryControl::class;
-    protected $deliveryControlDataType = '';
-    public $externalDealId;
-    public $flightEndTimeMs;
-    public $flightStartTimeMs;
-    public $inventoryDescription;
-    public $isRfpTemplate;
-    public $isSetupComplete;
-    public $kind;
-    public $lastUpdateTimeMs;
-    public $makegoodRequestedReason;
-    public $name;
-    public $productId;
-    public $productRevisionNumber;
-    public $programmaticCreativeSource;
-    public $proposalId;
-    protected $sellerContactsType = ContactInformation::class;
-    protected $sellerContactsDataType = 'array';
-    protected $sharedTargetingsType = SharedTargeting::class;
-    protected $sharedTargetingsDataType = 'array';
-    public $syndicationProduct;
-    protected $termsType = DealTerms::class;
-    protected $termsDataType = '';
-    public $webPropertyCode;
+namespace Google\Service\AdExchangeBuyer {
+    class MarketplaceDeal extends \Google\Collection
+    {
+        protected $collection_key = 'sharedTargetings';
+        protected $buyerPrivateDataType = PrivateData::class;
+        protected $buyerPrivateDataDataType = '';
+        public $creationTimeMs;
+        public $creativePreApprovalPolicy;
+        public $creativeSafeFrameCompatibility;
+        public $dealId;
+        protected $dealServingMetadataType = DealServingMetadata::class;
+        protected $dealServingMetadataDataType = '';
+        protected $deliveryControlType = DeliveryControl::class;
+        protected $deliveryControlDataType = '';
+        public $externalDealId;
+        public $flightEndTimeMs;
+        public $flightStartTimeMs;
+        public $inventoryDescription;
+        public $isRfpTemplate;
+        public $isSetupComplete;
+        public $kind;
+        public $lastUpdateTimeMs;
+        public $makegoodRequestedReason;
+        public $name;
+        public $productId;
+        public $productRevisionNumber;
+        public $programmaticCreativeSource;
+        public $proposalId;
+        protected $sellerContactsType = ContactInformation::class;
+        protected $sellerContactsDataType = 'array';
+        protected $sharedTargetingsType = SharedTargeting::class;
+        protected $sharedTargetingsDataType = 'array';
+        public $syndicationProduct;
+        protected $termsType = DealTerms::class;
+        protected $termsDataType = '';
+        public $webPropertyCode;
+        /**
+         * @param PrivateData
+         */
+        public function setBuyerPrivateData(PrivateData $buyerPrivateData)
+        {
+        }
+        /**
+         * @return PrivateData
+         */
+        public function getBuyerPrivateData()
+        {
+        }
+        public function setCreationTimeMs($creationTimeMs)
+        {
+        }
+        public function getCreationTimeMs()
+        {
+        }
+        public function setCreativePreApprovalPolicy($creativePreApprovalPolicy)
+        {
+        }
+        public function getCreativePreApprovalPolicy()
+        {
+        }
+        public function setCreativeSafeFrameCompatibility($creativeSafeFrameCompatibility)
+        {
+        }
+        public function getCreativeSafeFrameCompatibility()
+        {
+        }
+        public function setDealId($dealId)
+        {
+        }
+        public function getDealId()
+        {
+        }
+        /**
+         * @param DealServingMetadata
+         */
+        public function setDealServingMetadata(DealServingMetadata $dealServingMetadata)
+        {
+        }
+        /**
+         * @return DealServingMetadata
+         */
+        public function getDealServingMetadata()
+        {
+        }
+        /**
+         * @param DeliveryControl
+         */
+        public function setDeliveryControl(DeliveryControl $deliveryControl)
+        {
+        }
+        /**
+         * @return DeliveryControl
+         */
+        public function getDeliveryControl()
+        {
+        }
+        public function setExternalDealId($externalDealId)
+        {
+        }
+        public function getExternalDealId()
+        {
+        }
+        public function setFlightEndTimeMs($flightEndTimeMs)
+        {
+        }
+        public function getFlightEndTimeMs()
+        {
+        }
+        public function setFlightStartTimeMs($flightStartTimeMs)
+        {
+        }
+        public function getFlightStartTimeMs()
+        {
+        }
+        public function setInventoryDescription($inventoryDescription)
+        {
+        }
+        public function getInventoryDescription()
+        {
+        }
+        public function setIsRfpTemplate($isRfpTemplate)
+        {
+        }
+        public function getIsRfpTemplate()
+        {
+        }
+        public function setIsSetupComplete($isSetupComplete)
+        {
+        }
+        public function getIsSetupComplete()
+        {
+        }
+        public function setKind($kind)
+        {
+        }
+        public function getKind()
+        {
+        }
+        public function setLastUpdateTimeMs($lastUpdateTimeMs)
+        {
+        }
+        public function getLastUpdateTimeMs()
+        {
+        }
+        public function setMakegoodRequestedReason($makegoodRequestedReason)
+        {
+        }
+        public function getMakegoodRequestedReason()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        public function setProductId($productId)
+        {
+        }
+        public function getProductId()
+        {
+        }
+        public function setProductRevisionNumber($productRevisionNumber)
+        {
+        }
+        public function getProductRevisionNumber()
+        {
+        }
+        public function setProgrammaticCreativeSource($programmaticCreativeSource)
+        {
+        }
+        public function getProgrammaticCreativeSource()
+        {
+        }
+        public function setProposalId($proposalId)
+        {
+        }
+        public function getProposalId()
+        {
+        }
+        /**
+         * @param ContactInformation[]
+         */
+        public function setSellerContacts($sellerContacts)
+        {
+        }
+        /**
+         * @return ContactInformation[]
+         */
+        public function getSellerContacts()
+        {
+        }
+        /**
+         * @param SharedTargeting[]
+         */
+        public function setSharedTargetings($sharedTargetings)
+        {
+        }
+        /**
+         * @return SharedTargeting[]
+         */
+        public function getSharedTargetings()
+        {
+        }
+        public function setSyndicationProduct($syndicationProduct)
+        {
+        }
+        public function getSyndicationProduct()
+        {
+        }
+        /**
+         * @param DealTerms
+         */
+        public function setTerms(DealTerms $terms)
+        {
+        }
+        /**
+         * @return DealTerms
+         */
+        public function getTerms()
+        {
+        }
+        public function setWebPropertyCode($webPropertyCode)
+        {
+        }
+        public function getWebPropertyCode()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param PrivateData
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\MarketplaceDeal registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setBuyerPrivateData(PrivateData $buyerPrivateData)
-    {
-    }
-    /**
-     * @return PrivateData
-     */
-    public function getBuyerPrivateData()
-    {
-    }
-    public function setCreationTimeMs($creationTimeMs)
-    {
-    }
-    public function getCreationTimeMs()
-    {
-    }
-    public function setCreativePreApprovalPolicy($creativePreApprovalPolicy)
-    {
-    }
-    public function getCreativePreApprovalPolicy()
-    {
-    }
-    public function setCreativeSafeFrameCompatibility($creativeSafeFrameCompatibility)
-    {
-    }
-    public function getCreativeSafeFrameCompatibility()
-    {
-    }
-    public function setDealId($dealId)
-    {
-    }
-    public function getDealId()
-    {
-    }
-    /**
-     * @param DealServingMetadata
-     */
-    public function setDealServingMetadata(DealServingMetadata $dealServingMetadata)
-    {
-    }
-    /**
-     * @return DealServingMetadata
-     */
-    public function getDealServingMetadata()
-    {
-    }
-    /**
-     * @param DeliveryControl
-     */
-    public function setDeliveryControl(DeliveryControl $deliveryControl)
-    {
-    }
-    /**
-     * @return DeliveryControl
-     */
-    public function getDeliveryControl()
-    {
-    }
-    public function setExternalDealId($externalDealId)
-    {
-    }
-    public function getExternalDealId()
-    {
-    }
-    public function setFlightEndTimeMs($flightEndTimeMs)
-    {
-    }
-    public function getFlightEndTimeMs()
-    {
-    }
-    public function setFlightStartTimeMs($flightStartTimeMs)
-    {
-    }
-    public function getFlightStartTimeMs()
-    {
-    }
-    public function setInventoryDescription($inventoryDescription)
-    {
-    }
-    public function getInventoryDescription()
-    {
-    }
-    public function setIsRfpTemplate($isRfpTemplate)
-    {
-    }
-    public function getIsRfpTemplate()
-    {
-    }
-    public function setIsSetupComplete($isSetupComplete)
-    {
-    }
-    public function getIsSetupComplete()
-    {
-    }
-    public function setKind($kind)
-    {
-    }
-    public function getKind()
-    {
-    }
-    public function setLastUpdateTimeMs($lastUpdateTimeMs)
-    {
-    }
-    public function getLastUpdateTimeMs()
-    {
-    }
-    public function setMakegoodRequestedReason($makegoodRequestedReason)
-    {
-    }
-    public function getMakegoodRequestedReason()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    public function setProductId($productId)
-    {
-    }
-    public function getProductId()
-    {
-    }
-    public function setProductRevisionNumber($productRevisionNumber)
-    {
-    }
-    public function getProductRevisionNumber()
-    {
-    }
-    public function setProgrammaticCreativeSource($programmaticCreativeSource)
-    {
-    }
-    public function getProgrammaticCreativeSource()
-    {
-    }
-    public function setProposalId($proposalId)
-    {
-    }
-    public function getProposalId()
-    {
-    }
-    /**
-     * @param ContactInformation[]
-     */
-    public function setSellerContacts($sellerContacts)
-    {
-    }
-    /**
-     * @return ContactInformation[]
-     */
-    public function getSellerContacts()
-    {
-    }
-    /**
-     * @param SharedTargeting[]
-     */
-    public function setSharedTargetings($sharedTargetings)
-    {
-    }
-    /**
-     * @return SharedTargeting[]
-     */
-    public function getSharedTargetings()
-    {
-    }
-    public function setSyndicationProduct($syndicationProduct)
-    {
-    }
-    public function getSyndicationProduct()
-    {
-    }
-    /**
-     * @param DealTerms
-     */
-    public function setTerms(DealTerms $terms)
-    {
-    }
-    /**
-     * @return DealTerms
-     */
-    public function getTerms()
-    {
-    }
-    public function setWebPropertyCode($webPropertyCode)
-    {
-    }
-    public function getWebPropertyCode()
+    class Google_Service_AdExchangeBuyer_MarketplaceDeal extends \Google\Service\AdExchangeBuyer\MarketplaceDeal
     {
     }
 }

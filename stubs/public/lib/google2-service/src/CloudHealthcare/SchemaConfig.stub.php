@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class SchemaConfig extends \Google\Model
-{
-    /**
-     * No schema type specified. This type is unsupported.
-     */
-    public const SCHEMA_TYPE_SCHEMA_TYPE_UNSPECIFIED = 'SCHEMA_TYPE_UNSPECIFIED';
-    /**
-     * Analytics schema defined by the FHIR community. See
-     * https://github.com/FHIR/sql-on-fhir/blob/master/sql-on-fhir.md. BigQuery
-     * only allows a maximum of 10,000 columns per table. Due to this limitation,
-     * the server will not generate schemas for fields of type `Resource`, which
-     * can hold any resource type. The affected fields are
-     * `Parameters.parameter.resource`, `Bundle.entry.resource`, and
-     * `Bundle.entry.response.outcome`. Analytics schema does not gracefully
-     * handle extensions with one or more occurrences, anaytics schema also does
-     * not handle contained resource. Additionally, extensions with a URL ending
-     * in "/{existing_resource_field_name}" may cause undefined behavior.
-     */
-    public const SCHEMA_TYPE_ANALYTICS = 'ANALYTICS';
-    /**
-     * Analytics V2, similar to schema defined by the FHIR community, with added
-     * support for extensions with one or more occurrences and contained resources
-     * in stringified JSON. Extensions with a URL ending in
-     * "/{existing_resource_field_name}" will cause conflict and prevent the
-     * resource from being sent to BigQuery. Analytics V2 uses more space in the
-     * destination table than Analytics V1. It is generally recommended to use
-     * Analytics V2 over Analytics.
-     */
-    public const SCHEMA_TYPE_ANALYTICS_V2 = 'ANALYTICS_V2';
-    protected $lastUpdatedPartitionConfigType = TimePartitioning::class;
-    protected $lastUpdatedPartitionConfigDataType = '';
-    /**
-     * The depth for all recursive structures in the output analytics schema. For
-     * example, `concept` in the CodeSystem resource is a recursive structure;
-     * when the depth is 2, the CodeSystem table will have a column called
-     * `concept.concept` but not `concept.concept.concept`. If not specified or
-     * set to 0, the server will use the default value 2. The maximum depth
-     * allowed is 5.
-     *
-     * @var string
-     */
-    public $recursiveStructureDepth;
-    /**
-     * Specifies the output schema type. Schema type is required.
-     *
-     * @var string
-     */
-    public $schemaType;
-    /**
-     * The configuration for exported BigQuery tables to be partitioned by FHIR
-     * resource's last updated time column.
-     *
-     * @param TimePartitioning $lastUpdatedPartitionConfig
-     */
-    public function setLastUpdatedPartitionConfig(TimePartitioning $lastUpdatedPartitionConfig)
+namespace Google\Service\CloudHealthcare {
+    class SchemaConfig extends \Google\Model
     {
+        /**
+         * No schema type specified. This type is unsupported.
+         */
+        public const SCHEMA_TYPE_SCHEMA_TYPE_UNSPECIFIED = 'SCHEMA_TYPE_UNSPECIFIED';
+        /**
+         * Analytics schema defined by the FHIR community. See
+         * https://github.com/FHIR/sql-on-fhir/blob/master/sql-on-fhir.md. BigQuery
+         * only allows a maximum of 10,000 columns per table. Due to this limitation,
+         * the server will not generate schemas for fields of type `Resource`, which
+         * can hold any resource type. The affected fields are
+         * `Parameters.parameter.resource`, `Bundle.entry.resource`, and
+         * `Bundle.entry.response.outcome`. Analytics schema does not gracefully
+         * handle extensions with one or more occurrences, anaytics schema also does
+         * not handle contained resource. Additionally, extensions with a URL ending
+         * in "/{existing_resource_field_name}" may cause undefined behavior.
+         */
+        public const SCHEMA_TYPE_ANALYTICS = 'ANALYTICS';
+        /**
+         * Analytics V2, similar to schema defined by the FHIR community, with added
+         * support for extensions with one or more occurrences and contained resources
+         * in stringified JSON. Extensions with a URL ending in
+         * "/{existing_resource_field_name}" will cause conflict and prevent the
+         * resource from being sent to BigQuery. Analytics V2 uses more space in the
+         * destination table than Analytics V1. It is generally recommended to use
+         * Analytics V2 over Analytics.
+         */
+        public const SCHEMA_TYPE_ANALYTICS_V2 = 'ANALYTICS_V2';
+        protected $lastUpdatedPartitionConfigType = TimePartitioning::class;
+        protected $lastUpdatedPartitionConfigDataType = '';
+        /**
+         * The depth for all recursive structures in the output analytics schema. For
+         * example, `concept` in the CodeSystem resource is a recursive structure;
+         * when the depth is 2, the CodeSystem table will have a column called
+         * `concept.concept` but not `concept.concept.concept`. If not specified or
+         * set to 0, the server will use the default value 2. The maximum depth
+         * allowed is 5.
+         *
+         * @var string
+         */
+        public $recursiveStructureDepth;
+        /**
+         * Specifies the output schema type. Schema type is required.
+         *
+         * @var string
+         */
+        public $schemaType;
+        /**
+         * The configuration for exported BigQuery tables to be partitioned by FHIR
+         * resource's last updated time column.
+         *
+         * @param TimePartitioning $lastUpdatedPartitionConfig
+         */
+        public function setLastUpdatedPartitionConfig(TimePartitioning $lastUpdatedPartitionConfig)
+        {
+        }
+        /**
+         * @return TimePartitioning
+         */
+        public function getLastUpdatedPartitionConfig()
+        {
+        }
+        /**
+         * The depth for all recursive structures in the output analytics schema. For
+         * example, `concept` in the CodeSystem resource is a recursive structure;
+         * when the depth is 2, the CodeSystem table will have a column called
+         * `concept.concept` but not `concept.concept.concept`. If not specified or
+         * set to 0, the server will use the default value 2. The maximum depth
+         * allowed is 5.
+         *
+         * @param string $recursiveStructureDepth
+         */
+        public function setRecursiveStructureDepth($recursiveStructureDepth)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecursiveStructureDepth()
+        {
+        }
+        /**
+         * Specifies the output schema type. Schema type is required.
+         *
+         * Accepted values: SCHEMA_TYPE_UNSPECIFIED, ANALYTICS, ANALYTICS_V2
+         *
+         * @param self::SCHEMA_TYPE_* $schemaType
+         */
+        public function setSchemaType($schemaType)
+        {
+        }
+        /**
+         * @return self::SCHEMA_TYPE_*
+         */
+        public function getSchemaType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TimePartitioning
+     * Runtime class alias of \Google\Service\CloudHealthcare\SchemaConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastUpdatedPartitionConfig()
-    {
-    }
-    /**
-     * The depth for all recursive structures in the output analytics schema. For
-     * example, `concept` in the CodeSystem resource is a recursive structure;
-     * when the depth is 2, the CodeSystem table will have a column called
-     * `concept.concept` but not `concept.concept.concept`. If not specified or
-     * set to 0, the server will use the default value 2. The maximum depth
-     * allowed is 5.
-     *
-     * @param string $recursiveStructureDepth
-     */
-    public function setRecursiveStructureDepth($recursiveStructureDepth)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecursiveStructureDepth()
-    {
-    }
-    /**
-     * Specifies the output schema type. Schema type is required.
-     *
-     * Accepted values: SCHEMA_TYPE_UNSPECIFIED, ANALYTICS, ANALYTICS_V2
-     *
-     * @param self::SCHEMA_TYPE_* $schemaType
-     */
-    public function setSchemaType($schemaType)
-    {
-    }
-    /**
-     * @return self::SCHEMA_TYPE_*
-     */
-    public function getSchemaType()
+    class Google_Service_CloudHealthcare_SchemaConfig extends \Google\Service\CloudHealthcare\SchemaConfig
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class StandardSqlStructType extends \Google\Collection
-{
-    protected $collection_key = 'fields';
-    protected $fieldsType = StandardSqlField::class;
-    protected $fieldsDataType = 'array';
-    /**
-     * Fields within the struct.
-     *
-     * @param StandardSqlField[] $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\Bigquery {
+    class StandardSqlStructType extends \Google\Collection
     {
+        protected $collection_key = 'fields';
+        protected $fieldsType = StandardSqlField::class;
+        protected $fieldsDataType = 'array';
+        /**
+         * Fields within the struct.
+         *
+         * @param StandardSqlField[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return StandardSqlField[]
+         */
+        public function getFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StandardSqlField[]
+     * Runtime class alias of \Google\Service\Bigquery\StandardSqlStructType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
+    class Google_Service_Bigquery_StandardSqlStructType extends \Google\Service\Bigquery\StandardSqlStructType
     {
     }
 }

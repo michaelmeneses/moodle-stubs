@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1UserEventImportSummary extends \Google\Model
-{
-    /**
-     * Count of user events imported with complete existing catalog information.
-     *
-     * @var string
-     */
-    public $joinedEventsCount;
-    /**
-     * Count of user events imported, but with catalog information not found in
-     * the imported catalog.
-     *
-     * @var string
-     */
-    public $unjoinedEventsCount;
-    /**
-     * Count of user events imported with complete existing catalog information.
-     *
-     * @param string $joinedEventsCount
-     */
-    public function setJoinedEventsCount($joinedEventsCount)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1UserEventImportSummary extends \Google\Model
     {
+        /**
+         * Count of user events imported with complete existing catalog information.
+         *
+         * @var string
+         */
+        public $joinedEventsCount;
+        /**
+         * Count of user events imported, but with catalog information not found in
+         * the imported catalog.
+         *
+         * @var string
+         */
+        public $unjoinedEventsCount;
+        /**
+         * Count of user events imported with complete existing catalog information.
+         *
+         * @param string $joinedEventsCount
+         */
+        public function setJoinedEventsCount($joinedEventsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJoinedEventsCount()
+        {
+        }
+        /**
+         * Count of user events imported, but with catalog information not found in
+         * the imported catalog.
+         *
+         * @param string $unjoinedEventsCount
+         */
+        public function setUnjoinedEventsCount($unjoinedEventsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnjoinedEventsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1UserEventImportSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJoinedEventsCount()
-    {
-    }
-    /**
-     * Count of user events imported, but with catalog information not found in
-     * the imported catalog.
-     *
-     * @param string $unjoinedEventsCount
-     */
-    public function setUnjoinedEventsCount($unjoinedEventsCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnjoinedEventsCount()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1UserEventImportSummary extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1UserEventImportSummary
     {
     }
 }

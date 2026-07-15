@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class PolicyControllerPolicyControllerHubConfig extends \Google\Collection
-{
-    protected $collection_key = 'exemptableNamespaces';
-    /**
-     * @var string
-     */
-    public $auditIntervalSeconds;
-    /**
-     * @var string[]
-     */
-    public $exemptableNamespaces;
-    /**
-     * @var string
-     */
-    public $installSpec;
-    /**
-     * @var bool
-     */
-    public $logDeniesEnabled;
-    /**
-     * @var bool
-     */
-    public $referentialRulesEnabled;
-    protected $templateLibraryConfigType = PolicyControllerTemplateLibraryConfig::class;
-    protected $templateLibraryConfigDataType = '';
-    /**
-     * @param string
-     */
-    public function setAuditIntervalSeconds($auditIntervalSeconds)
+namespace Google\Service\GKEHub {
+    class PolicyControllerPolicyControllerHubConfig extends \Google\Collection
     {
+        protected $collection_key = 'exemptableNamespaces';
+        /**
+         * @var string
+         */
+        public $auditIntervalSeconds;
+        /**
+         * @var string[]
+         */
+        public $exemptableNamespaces;
+        /**
+         * @var string
+         */
+        public $installSpec;
+        /**
+         * @var bool
+         */
+        public $logDeniesEnabled;
+        /**
+         * @var bool
+         */
+        public $referentialRulesEnabled;
+        protected $templateLibraryConfigType = PolicyControllerTemplateLibraryConfig::class;
+        protected $templateLibraryConfigDataType = '';
+        /**
+         * @param string
+         */
+        public function setAuditIntervalSeconds($auditIntervalSeconds)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuditIntervalSeconds()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setExemptableNamespaces($exemptableNamespaces)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExemptableNamespaces()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInstallSpec($installSpec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstallSpec()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setLogDeniesEnabled($logDeniesEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLogDeniesEnabled()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setReferentialRulesEnabled($referentialRulesEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReferentialRulesEnabled()
+        {
+        }
+        /**
+         * @param PolicyControllerTemplateLibraryConfig
+         */
+        public function setTemplateLibraryConfig(PolicyControllerTemplateLibraryConfig $templateLibraryConfig)
+        {
+        }
+        /**
+         * @return PolicyControllerTemplateLibraryConfig
+         */
+        public function getTemplateLibraryConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\PolicyControllerPolicyControllerHubConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuditIntervalSeconds()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setExemptableNamespaces($exemptableNamespaces)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExemptableNamespaces()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInstallSpec($installSpec)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstallSpec()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setLogDeniesEnabled($logDeniesEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getLogDeniesEnabled()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setReferentialRulesEnabled($referentialRulesEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReferentialRulesEnabled()
-    {
-    }
-    /**
-     * @param PolicyControllerTemplateLibraryConfig
-     */
-    public function setTemplateLibraryConfig(PolicyControllerTemplateLibraryConfig $templateLibraryConfig)
-    {
-    }
-    /**
-     * @return PolicyControllerTemplateLibraryConfig
-     */
-    public function getTemplateLibraryConfig()
+    class Google_Service_GKEHub_PolicyControllerPolicyControllerHubConfig extends \Google\Service\GKEHub\PolicyControllerPolicyControllerHubConfig
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class CivicinfoSchemaV2Source extends \Google\Model
-{
-    /**
-     * The name of the data source.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Whether this data comes from an official government source.
-     *
-     * @var bool
-     */
-    public $official;
-    /**
-     * The name of the data source.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CivicInfo {
+    class CivicinfoSchemaV2Source extends \Google\Model
     {
+        /**
+         * The name of the data source.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Whether this data comes from an official government source.
+         *
+         * @var bool
+         */
+        public $official;
+        /**
+         * The name of the data source.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Whether this data comes from an official government source.
+         *
+         * @param bool $official
+         */
+        public function setOfficial($official)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOfficial()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CivicInfo\CivicinfoSchemaV2Source registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Whether this data comes from an official government source.
-     *
-     * @param bool $official
-     */
-    public function setOfficial($official)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOfficial()
+    class Google_Service_CivicInfo_CivicinfoSchemaV2Source extends \Google\Service\CivicInfo\CivicinfoSchemaV2Source
     {
     }
 }

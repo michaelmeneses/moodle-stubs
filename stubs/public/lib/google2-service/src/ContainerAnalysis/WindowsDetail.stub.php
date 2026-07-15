@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class WindowsDetail extends \Google\Collection
-{
-    protected $collection_key = 'fixingKbs';
-    /**
-     * Required. The [CPE URI](https://cpe.mitre.org/specification/) this
-     * vulnerability affects.
-     *
-     * @var string
-     */
-    public $cpeUri;
-    /**
-     * The description of this vulnerability.
-     *
-     * @var string
-     */
-    public $description;
-    protected $fixingKbsType = KnowledgeBase::class;
-    protected $fixingKbsDataType = 'array';
-    /**
-     * Required. The name of this vulnerability.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The [CPE URI](https://cpe.mitre.org/specification/) this
-     * vulnerability affects.
-     *
-     * @param string $cpeUri
-     */
-    public function setCpeUri($cpeUri)
+namespace Google\Service\ContainerAnalysis {
+    class WindowsDetail extends \Google\Collection
     {
+        protected $collection_key = 'fixingKbs';
+        /**
+         * Required. The [CPE URI](https://cpe.mitre.org/specification/) this
+         * vulnerability affects.
+         *
+         * @var string
+         */
+        public $cpeUri;
+        /**
+         * The description of this vulnerability.
+         *
+         * @var string
+         */
+        public $description;
+        protected $fixingKbsType = KnowledgeBase::class;
+        protected $fixingKbsDataType = 'array';
+        /**
+         * Required. The name of this vulnerability.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The [CPE URI](https://cpe.mitre.org/specification/) this
+         * vulnerability affects.
+         *
+         * @param string $cpeUri
+         */
+        public function setCpeUri($cpeUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCpeUri()
+        {
+        }
+        /**
+         * The description of this vulnerability.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. The names of the KBs which have hotfixes to mitigate this
+         * vulnerability. Note that there may be multiple hotfixes (and thus multiple
+         * KBs) that mitigate a given vulnerability. Currently any listed KBs presence
+         * is considered a fix.
+         *
+         * @param KnowledgeBase[] $fixingKbs
+         */
+        public function setFixingKbs($fixingKbs)
+        {
+        }
+        /**
+         * @return KnowledgeBase[]
+         */
+        public function getFixingKbs()
+        {
+        }
+        /**
+         * Required. The name of this vulnerability.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\WindowsDetail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCpeUri()
-    {
-    }
-    /**
-     * The description of this vulnerability.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. The names of the KBs which have hotfixes to mitigate this
-     * vulnerability. Note that there may be multiple hotfixes (and thus multiple
-     * KBs) that mitigate a given vulnerability. Currently any listed KBs presence
-     * is considered a fix.
-     *
-     * @param KnowledgeBase[] $fixingKbs
-     */
-    public function setFixingKbs($fixingKbs)
-    {
-    }
-    /**
-     * @return KnowledgeBase[]
-     */
-    public function getFixingKbs()
-    {
-    }
-    /**
-     * Required. The name of this vulnerability.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_ContainerAnalysis_WindowsDetail extends \Google\Service\ContainerAnalysis\WindowsDetail
     {
     }
 }

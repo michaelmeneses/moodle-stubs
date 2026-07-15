@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaSearchResponseSearchResult extends \Google\Model
-{
-    protected $documentType = GoogleCloudDiscoveryengineV1betaDocument::class;
-    protected $documentDataType = '';
-    /**
-     * @var string
-     */
-    public $id;
-    protected $modelScoresType = GoogleCloudDiscoveryengineV1betaDoubleList::class;
-    protected $modelScoresDataType = 'map';
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaDocument
-     */
-    public function setDocument(GoogleCloudDiscoveryengineV1betaDocument $document)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaSearchResponseSearchResult extends \Google\Model
     {
+        protected $documentType = GoogleCloudDiscoveryengineV1betaDocument::class;
+        protected $documentDataType = '';
+        /**
+         * @var string
+         */
+        public $id;
+        protected $modelScoresType = GoogleCloudDiscoveryengineV1betaDoubleList::class;
+        protected $modelScoresDataType = 'map';
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaDocument
+         */
+        public function setDocument(GoogleCloudDiscoveryengineV1betaDocument $document)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaDocument
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaDoubleList[]
+         */
+        public function setModelScores($modelScores)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaDoubleList[]
+         */
+        public function getModelScores()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaDocument
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchResponseSearchResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocument()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaDoubleList[]
-     */
-    public function setModelScores($modelScores)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaDoubleList[]
-     */
-    public function getModelScores()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaSearchResponseSearchResult extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchResponseSearchResult
     {
     }
 }

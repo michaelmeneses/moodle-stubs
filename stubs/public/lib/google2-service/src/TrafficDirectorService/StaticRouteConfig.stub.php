@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class StaticRouteConfig extends \Google\Model
-{
-    /**
-     * The timestamp when the Route was last updated.
-     *
-     * @var string
-     */
-    public $lastUpdated;
-    /**
-     * The route config.
-     *
-     * @var array[]
-     */
-    public $routeConfig;
-    /**
-     * The timestamp when the Route was last updated.
-     *
-     * @param string $lastUpdated
-     */
-    public function setLastUpdated($lastUpdated)
+namespace Google\Service\TrafficDirectorService {
+    class StaticRouteConfig extends \Google\Model
     {
+        /**
+         * The timestamp when the Route was last updated.
+         *
+         * @var string
+         */
+        public $lastUpdated;
+        /**
+         * The route config.
+         *
+         * @var array[]
+         */
+        public $routeConfig;
+        /**
+         * The timestamp when the Route was last updated.
+         *
+         * @param string $lastUpdated
+         */
+        public function setLastUpdated($lastUpdated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdated()
+        {
+        }
+        /**
+         * The route config.
+         *
+         * @param array[] $routeConfig
+         */
+        public function setRouteConfig($routeConfig)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getRouteConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TrafficDirectorService\StaticRouteConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastUpdated()
-    {
-    }
-    /**
-     * The route config.
-     *
-     * @param array[] $routeConfig
-     */
-    public function setRouteConfig($routeConfig)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getRouteConfig()
+    class Google_Service_TrafficDirectorService_StaticRouteConfig extends \Google\Service\TrafficDirectorService\StaticRouteConfig
     {
     }
 }

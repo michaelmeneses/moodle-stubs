@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DoubleClickBidManager;
-
-class ReportFailure extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $errorCode;
-    /**
-     * @param string
-     */
-    public function setErrorCode($errorCode)
+namespace Google\Service\DoubleClickBidManager {
+    class ReportFailure extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $errorCode;
+        /**
+         * @param string
+         */
+        public function setErrorCode($errorCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DoubleClickBidManager\ReportFailure registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorCode()
+    class Google_Service_DoubleClickBidManager_ReportFailure extends \Google\Service\DoubleClickBidManager\ReportFailure
     {
     }
 }

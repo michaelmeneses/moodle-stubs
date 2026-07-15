@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub;
-
-class LookupDiscoveredWorkloadResponse extends \Google\Model
-{
-    protected $discoveredWorkloadType = DiscoveredWorkload::class;
-    protected $discoveredWorkloadDataType = '';
-    /**
-     * Discovered Workload if exists, empty otherwise.
-     *
-     * @param DiscoveredWorkload $discoveredWorkload
-     */
-    public function setDiscoveredWorkload(DiscoveredWorkload $discoveredWorkload)
+namespace Google\Service\AppHub {
+    class LookupDiscoveredWorkloadResponse extends \Google\Model
     {
+        protected $discoveredWorkloadType = DiscoveredWorkload::class;
+        protected $discoveredWorkloadDataType = '';
+        /**
+         * Discovered Workload if exists, empty otherwise.
+         *
+         * @param DiscoveredWorkload $discoveredWorkload
+         */
+        public function setDiscoveredWorkload(DiscoveredWorkload $discoveredWorkload)
+        {
+        }
+        /**
+         * @return DiscoveredWorkload
+         */
+        public function getDiscoveredWorkload()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DiscoveredWorkload
+     * Runtime class alias of \Google\Service\AppHub\LookupDiscoveredWorkloadResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiscoveredWorkload()
+    class Google_Service_AppHub_LookupDiscoveredWorkloadResponse extends \Google\Service\AppHub\LookupDiscoveredWorkloadResponse
     {
     }
 }

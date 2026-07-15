@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AdvancedCompleteQueryResponseRecentSearchSuggestion extends \Google\Model
-{
-    /**
-     * The time when this recent rearch happened.
-     *
-     * @var string
-     */
-    public $recentSearchTime;
-    /**
-     * The score of each suggestion. The score is in the range of [0, 1].
-     *
-     * @var 
-     */
-    public $score;
-    /**
-     * The suggestion for the query.
-     *
-     * @var string
-     */
-    public $suggestion;
-    /**
-     * The time when this recent rearch happened.
-     *
-     * @param string $recentSearchTime
-     */
-    public function setRecentSearchTime($recentSearchTime)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AdvancedCompleteQueryResponseRecentSearchSuggestion extends \Google\Model
     {
+        /**
+         * The time when this recent rearch happened.
+         *
+         * @var string
+         */
+        public $recentSearchTime;
+        /**
+         * The score of each suggestion. The score is in the range of [0, 1].
+         *
+         * @var 
+         */
+        public $score;
+        /**
+         * The suggestion for the query.
+         *
+         * @var string
+         */
+        public $suggestion;
+        /**
+         * The time when this recent rearch happened.
+         *
+         * @param string $recentSearchTime
+         */
+        public function setRecentSearchTime($recentSearchTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecentSearchTime()
+        {
+        }
+        public function setScore($score)
+        {
+        }
+        public function getScore()
+        {
+        }
+        /**
+         * The suggestion for the query.
+         *
+         * @param string $suggestion
+         */
+        public function setSuggestion($suggestion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSuggestion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AdvancedCompleteQueryResponseRecentSearchSuggestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRecentSearchTime()
-    {
-    }
-    public function setScore($score)
-    {
-    }
-    public function getScore()
-    {
-    }
-    /**
-     * The suggestion for the query.
-     *
-     * @param string $suggestion
-     */
-    public function setSuggestion($suggestion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSuggestion()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AdvancedCompleteQueryResponseRecentSearchSuggestion extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AdvancedCompleteQueryResponseRecentSearchSuggestion
     {
     }
 }

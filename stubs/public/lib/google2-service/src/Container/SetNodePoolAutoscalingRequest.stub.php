@@ -21,154 +21,163 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class SetNodePoolAutoscalingRequest extends \Google\Model
-{
-    protected $autoscalingType = NodePoolAutoscaling::class;
-    protected $autoscalingDataType = '';
-    /**
-     * Deprecated. The name of the cluster to upgrade. This field has been
-     * deprecated and replaced by the name field.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $clusterId;
-    /**
-     * The name (project, location, cluster, node pool) of the node pool to set
-     * autoscaler settings. Specified in the format
-     * `projects/locations/clusters/nodePools`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Deprecated. The name of the node pool to upgrade. This field has been
-     * deprecated and replaced by the name field.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $nodePoolId;
-    /**
-     * Deprecated. The Google Developers Console [project ID or project
-     * number](https://cloud.google.com/resource-manager/docs/creating-managing-
-     * projects). This field has been deprecated and replaced by the name field.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Deprecated. The name of the Google Compute Engine
-     * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
-     * cluster resides. This field has been deprecated and replaced by the name
-     * field.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $zone;
-    /**
-     * Required. Autoscaling configuration for the node pool.
-     *
-     * @param NodePoolAutoscaling $autoscaling
-     */
-    public function setAutoscaling(NodePoolAutoscaling $autoscaling)
+namespace Google\Service\Container {
+    class SetNodePoolAutoscalingRequest extends \Google\Model
     {
+        protected $autoscalingType = NodePoolAutoscaling::class;
+        protected $autoscalingDataType = '';
+        /**
+         * Deprecated. The name of the cluster to upgrade. This field has been
+         * deprecated and replaced by the name field.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $clusterId;
+        /**
+         * The name (project, location, cluster, node pool) of the node pool to set
+         * autoscaler settings. Specified in the format
+         * `projects/locations/clusters/nodePools`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Deprecated. The name of the node pool to upgrade. This field has been
+         * deprecated and replaced by the name field.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $nodePoolId;
+        /**
+         * Deprecated. The Google Developers Console [project ID or project
+         * number](https://cloud.google.com/resource-manager/docs/creating-managing-
+         * projects). This field has been deprecated and replaced by the name field.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Deprecated. The name of the Google Compute Engine
+         * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
+         * cluster resides. This field has been deprecated and replaced by the name
+         * field.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $zone;
+        /**
+         * Required. Autoscaling configuration for the node pool.
+         *
+         * @param NodePoolAutoscaling $autoscaling
+         */
+        public function setAutoscaling(NodePoolAutoscaling $autoscaling)
+        {
+        }
+        /**
+         * @return NodePoolAutoscaling
+         */
+        public function getAutoscaling()
+        {
+        }
+        /**
+         * Deprecated. The name of the cluster to upgrade. This field has been
+         * deprecated and replaced by the name field.
+         *
+         * @deprecated
+         * @param string $clusterId
+         */
+        public function setClusterId($clusterId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getClusterId()
+        {
+        }
+        /**
+         * The name (project, location, cluster, node pool) of the node pool to set
+         * autoscaler settings. Specified in the format
+         * `projects/locations/clusters/nodePools`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Deprecated. The name of the node pool to upgrade. This field has been
+         * deprecated and replaced by the name field.
+         *
+         * @deprecated
+         * @param string $nodePoolId
+         */
+        public function setNodePoolId($nodePoolId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getNodePoolId()
+        {
+        }
+        /**
+         * Deprecated. The Google Developers Console [project ID or project
+         * number](https://cloud.google.com/resource-manager/docs/creating-managing-
+         * projects). This field has been deprecated and replaced by the name field.
+         *
+         * @deprecated
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Deprecated. The name of the Google Compute Engine
+         * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
+         * cluster resides. This field has been deprecated and replaced by the name
+         * field.
+         *
+         * @deprecated
+         * @param string $zone
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NodePoolAutoscaling
+     * Runtime class alias of \Google\Service\Container\SetNodePoolAutoscalingRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoscaling()
-    {
-    }
-    /**
-     * Deprecated. The name of the cluster to upgrade. This field has been
-     * deprecated and replaced by the name field.
-     *
-     * @deprecated
-     * @param string $clusterId
-     */
-    public function setClusterId($clusterId)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getClusterId()
-    {
-    }
-    /**
-     * The name (project, location, cluster, node pool) of the node pool to set
-     * autoscaler settings. Specified in the format
-     * `projects/locations/clusters/nodePools`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Deprecated. The name of the node pool to upgrade. This field has been
-     * deprecated and replaced by the name field.
-     *
-     * @deprecated
-     * @param string $nodePoolId
-     */
-    public function setNodePoolId($nodePoolId)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getNodePoolId()
-    {
-    }
-    /**
-     * Deprecated. The Google Developers Console [project ID or project
-     * number](https://cloud.google.com/resource-manager/docs/creating-managing-
-     * projects). This field has been deprecated and replaced by the name field.
-     *
-     * @deprecated
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Deprecated. The name of the Google Compute Engine
-     * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
-     * cluster resides. This field has been deprecated and replaced by the name
-     * field.
-     *
-     * @deprecated
-     * @param string $zone
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_Container_SetNodePoolAutoscalingRequest extends \Google\Service\Container\SetNodePoolAutoscalingRequest
     {
     }
 }

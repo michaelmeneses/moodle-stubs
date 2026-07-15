@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class ListNodePoolsResponse extends \Google\Collection
-{
-    protected $collection_key = 'nodePools';
-    protected $nodePoolsType = NodePool::class;
-    protected $nodePoolsDataType = 'array';
-    /**
-     * A list of node pools for a cluster.
-     *
-     * @param NodePool[] $nodePools
-     */
-    public function setNodePools($nodePools)
+namespace Google\Service\Container {
+    class ListNodePoolsResponse extends \Google\Collection
     {
+        protected $collection_key = 'nodePools';
+        protected $nodePoolsType = NodePool::class;
+        protected $nodePoolsDataType = 'array';
+        /**
+         * A list of node pools for a cluster.
+         *
+         * @param NodePool[] $nodePools
+         */
+        public function setNodePools($nodePools)
+        {
+        }
+        /**
+         * @return NodePool[]
+         */
+        public function getNodePools()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NodePool[]
+     * Runtime class alias of \Google\Service\Container\ListNodePoolsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNodePools()
+    class Google_Service_Container_ListNodePoolsResponse extends \Google\Service\Container\ListNodePoolsResponse
     {
     }
 }

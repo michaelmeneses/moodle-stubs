@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta3DeleteProcessorMetadata extends \Google\Model
-{
-    protected $commonMetadataType = GoogleCloudDocumentaiV1beta3CommonOperationMetadata::class;
-    protected $commonMetadataDataType = '';
-    /**
-     * The basic metadata of the long-running operation.
-     *
-     * @param GoogleCloudDocumentaiV1beta3CommonOperationMetadata $commonMetadata
-     */
-    public function setCommonMetadata(GoogleCloudDocumentaiV1beta3CommonOperationMetadata $commonMetadata)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta3DeleteProcessorMetadata extends \Google\Model
     {
+        protected $commonMetadataType = GoogleCloudDocumentaiV1beta3CommonOperationMetadata::class;
+        protected $commonMetadataDataType = '';
+        /**
+         * The basic metadata of the long-running operation.
+         *
+         * @param GoogleCloudDocumentaiV1beta3CommonOperationMetadata $commonMetadata
+         */
+        public function setCommonMetadata(GoogleCloudDocumentaiV1beta3CommonOperationMetadata $commonMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta3CommonOperationMetadata
+         */
+        public function getCommonMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1beta3CommonOperationMetadata
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta3DeleteProcessorMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommonMetadata()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta3DeleteProcessorMetadata extends \Google\Service\Document\GoogleCloudDocumentaiV1beta3DeleteProcessorMetadata
     {
     }
 }

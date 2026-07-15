@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class ClusterEndpoint extends \Google\Collection
-{
-    protected $collection_key = 'connections';
-    protected $connectionsType = ConnectionDetail::class;
-    protected $connectionsDataType = 'array';
-    /**
-     * Required. A group of PSC connections. They are created in the same VPC
-     * network, one for each service attachment in the cluster.
-     *
-     * @param ConnectionDetail[] $connections
-     */
-    public function setConnections($connections)
+namespace Google\Service\CloudRedis {
+    class ClusterEndpoint extends \Google\Collection
     {
+        protected $collection_key = 'connections';
+        protected $connectionsType = ConnectionDetail::class;
+        protected $connectionsDataType = 'array';
+        /**
+         * Required. A group of PSC connections. They are created in the same VPC
+         * network, one for each service attachment in the cluster.
+         *
+         * @param ConnectionDetail[] $connections
+         */
+        public function setConnections($connections)
+        {
+        }
+        /**
+         * @return ConnectionDetail[]
+         */
+        public function getConnections()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConnectionDetail[]
+     * Runtime class alias of \Google\Service\CloudRedis\ClusterEndpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnections()
+    class Google_Service_CloudRedis_ClusterEndpoint extends \Google\Service\CloudRedis\ClusterEndpoint
     {
     }
 }

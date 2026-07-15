@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class GamesAchievementIncrement extends \Google\Model
-{
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#GamesAchievementIncrement`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The requestId associated with an increment to an achievement.
-     *
-     * @var string
-     */
-    public $requestId;
-    /**
-     * The number of steps to be incremented.
-     *
-     * @var int
-     */
-    public $steps;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#GamesAchievementIncrement`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Games {
+    class GamesAchievementIncrement extends \Google\Model
     {
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#GamesAchievementIncrement`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The requestId associated with an increment to an achievement.
+         *
+         * @var string
+         */
+        public $requestId;
+        /**
+         * The number of steps to be incremented.
+         *
+         * @var int
+         */
+        public $steps;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#GamesAchievementIncrement`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The requestId associated with an increment to an achievement.
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
+        /**
+         * The number of steps to be incremented.
+         *
+         * @param int $steps
+         */
+        public function setSteps($steps)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSteps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\GamesAchievementIncrement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The requestId associated with an increment to an achievement.
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
-    {
-    }
-    /**
-     * The number of steps to be incremented.
-     *
-     * @param int $steps
-     */
-    public function setSteps($steps)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSteps()
+    class Google_Service_Games_GamesAchievementIncrement extends \Google\Service\Games\GamesAchievementIncrement
     {
     }
 }

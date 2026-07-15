@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class DetachLunRequest extends \Google\Model
-{
-    /**
-     * Required. Name of the Lun to detach.
-     *
-     * @var string
-     */
-    public $lun;
-    /**
-     * If true, performs lun unmapping without instance reboot.
-     *
-     * @var bool
-     */
-    public $skipReboot;
-    /**
-     * Required. Name of the Lun to detach.
-     *
-     * @param string $lun
-     */
-    public function setLun($lun)
+namespace Google\Service\Baremetalsolution {
+    class DetachLunRequest extends \Google\Model
     {
+        /**
+         * Required. Name of the Lun to detach.
+         *
+         * @var string
+         */
+        public $lun;
+        /**
+         * If true, performs lun unmapping without instance reboot.
+         *
+         * @var bool
+         */
+        public $skipReboot;
+        /**
+         * Required. Name of the Lun to detach.
+         *
+         * @param string $lun
+         */
+        public function setLun($lun)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLun()
+        {
+        }
+        /**
+         * If true, performs lun unmapping without instance reboot.
+         *
+         * @param bool $skipReboot
+         */
+        public function setSkipReboot($skipReboot)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSkipReboot()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Baremetalsolution\DetachLunRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLun()
-    {
-    }
-    /**
-     * If true, performs lun unmapping without instance reboot.
-     *
-     * @param bool $skipReboot
-     */
-    public function setSkipReboot($skipReboot)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSkipReboot()
+    class Google_Service_Baremetalsolution_DetachLunRequest extends \Google\Service\Baremetalsolution\DetachLunRequest
     {
     }
 }

@@ -21,49 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sasportal\Resource;
-
-/**
- * The "deployments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $sasportalService = new Google\Service\Sasportal(...);
- *   $deployments = $sasportalService->nodes_nodes_deployments;
- *  </code>
- */
-class NodesNodesDeployments extends \Google\Service\Resource
-{
+namespace Google\Service\Sasportal\Resource {
+    use Google\Service\Sasportal\SasPortalDeployment;
+    use Google\Service\Sasportal\SasPortalListDeploymentsResponse;
     /**
-     * Creates a new deployment. (deployments.create)
-     *
-     * @param string $parent Required. The parent resource name where the deployment
-     * is to be created.
-     * @param SasPortalDeployment $postBody
-     * @param array $optParams Optional parameters.
-     * @return SasPortalDeployment
-     * @throws \Google\Service\Exception
+     * The "deployments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $sasportalService = new Google\Service\Sasportal(...);
+     *   $deployments = $sasportalService->nodes_nodes_deployments;
+     *  </code>
      */
-    public function create($parent, SasPortalDeployment $postBody, $optParams = [])
+    class NodesNodesDeployments extends \Google\Service\Resource
     {
+        /**
+         * Creates a new deployment. (deployments.create)
+         *
+         * @param string $parent Required. The parent resource name where the deployment
+         * is to be created.
+         * @param SasPortalDeployment $postBody
+         * @param array $optParams Optional parameters.
+         * @return SasPortalDeployment
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, SasPortalDeployment $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists deployments. (deployments.listNodesNodesDeployments)
+         *
+         * @param string $parent Required. The parent resource name, for example,
+         * "nodes/1", customer/1/nodes/2.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter The filter expression. The filter should have the
+         * following format: "DIRECT_CHILDREN" or format: "direct_children". The filter
+         * is case insensitive. If empty, then no deployments are filtered.
+         * @opt_param int pageSize The maximum number of deployments to return in the
+         * response.
+         * @opt_param string pageToken A pagination token returned from a previous call
+         * to ListDeployments that indicates where this listing should continue from.
+         * @return SasPortalListDeploymentsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listNodesNodesDeployments($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists deployments. (deployments.listNodesNodesDeployments)
-     *
-     * @param string $parent Required. The parent resource name, for example,
-     * "nodes/1", customer/1/nodes/2.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter The filter expression. The filter should have the
-     * following format: "DIRECT_CHILDREN" or format: "direct_children". The filter
-     * is case insensitive. If empty, then no deployments are filtered.
-     * @opt_param int pageSize The maximum number of deployments to return in the
-     * response.
-     * @opt_param string pageToken A pagination token returned from a previous call
-     * to ListDeployments that indicates where this listing should continue from.
-     * @return SasPortalListDeploymentsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Sasportal\Resource\NodesNodesDeployments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listNodesNodesDeployments($parent, $optParams = [])
+    class Google_Service_Sasportal_Resource_NodesNodesDeployments extends \Google\Service\Sasportal\Resource\NodesNodesDeployments
     {
     }
 }

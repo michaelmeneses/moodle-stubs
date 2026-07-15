@@ -30,6 +30,7 @@
  */
 namespace quizaccess_seb;
 
+use CFPropertyList\CFPropertyList;
 /**
  * Helper class.
  *

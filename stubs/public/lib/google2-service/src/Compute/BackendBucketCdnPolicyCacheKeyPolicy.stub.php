@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class BackendBucketCdnPolicyCacheKeyPolicy extends \Google\Collection
-{
-    protected $collection_key = 'queryStringWhitelist';
-    /**
-     * Allows HTTP request headers (by name) to be used in the cache key.
-     *
-     * @var string[]
-     */
-    public $includeHttpHeaders;
-    /**
-     * Names of query string parameters to include in cache keys. Default
-     * parameters are always included. '&' and '=' will be percent encoded and not
-     * treated as delimiters.
-     *
-     * @var string[]
-     */
-    public $queryStringWhitelist;
-    /**
-     * Allows HTTP request headers (by name) to be used in the cache key.
-     *
-     * @param string[] $includeHttpHeaders
-     */
-    public function setIncludeHttpHeaders($includeHttpHeaders)
+namespace Google\Service\Compute {
+    class BackendBucketCdnPolicyCacheKeyPolicy extends \Google\Collection
     {
+        protected $collection_key = 'queryStringWhitelist';
+        /**
+         * Allows HTTP request headers (by name) to be used in the cache key.
+         *
+         * @var string[]
+         */
+        public $includeHttpHeaders;
+        /**
+         * Names of query string parameters to include in cache keys. Default
+         * parameters are always included. '&' and '=' will be percent encoded and not
+         * treated as delimiters.
+         *
+         * @var string[]
+         */
+        public $queryStringWhitelist;
+        /**
+         * Allows HTTP request headers (by name) to be used in the cache key.
+         *
+         * @param string[] $includeHttpHeaders
+         */
+        public function setIncludeHttpHeaders($includeHttpHeaders)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIncludeHttpHeaders()
+        {
+        }
+        /**
+         * Names of query string parameters to include in cache keys. Default
+         * parameters are always included. '&' and '=' will be percent encoded and not
+         * treated as delimiters.
+         *
+         * @param string[] $queryStringWhitelist
+         */
+        public function setQueryStringWhitelist($queryStringWhitelist)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getQueryStringWhitelist()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\BackendBucketCdnPolicyCacheKeyPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludeHttpHeaders()
-    {
-    }
-    /**
-     * Names of query string parameters to include in cache keys. Default
-     * parameters are always included. '&' and '=' will be percent encoded and not
-     * treated as delimiters.
-     *
-     * @param string[] $queryStringWhitelist
-     */
-    public function setQueryStringWhitelist($queryStringWhitelist)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getQueryStringWhitelist()
+    class Google_Service_Compute_BackendBucketCdnPolicyCacheKeyPolicy extends \Google\Service\Compute\BackendBucketCdnPolicyCacheKeyPolicy
     {
     }
 }

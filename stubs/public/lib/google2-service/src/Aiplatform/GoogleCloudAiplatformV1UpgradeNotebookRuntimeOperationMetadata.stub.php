@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1UpgradeNotebookRuntimeOperationMetadata extends \Google\Model
-{
-    protected $genericMetadataType = GoogleCloudAiplatformV1GenericOperationMetadata::class;
-    protected $genericMetadataDataType = '';
-    /**
-     * A human-readable message that shows the intermediate progress details of
-     * NotebookRuntime.
-     *
-     * @var string
-     */
-    public $progressMessage;
-    /**
-     * The operation generic information.
-     *
-     * @param GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata
-     */
-    public function setGenericMetadata(GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1UpgradeNotebookRuntimeOperationMetadata extends \Google\Model
     {
+        protected $genericMetadataType = GoogleCloudAiplatformV1GenericOperationMetadata::class;
+        protected $genericMetadataDataType = '';
+        /**
+         * A human-readable message that shows the intermediate progress details of
+         * NotebookRuntime.
+         *
+         * @var string
+         */
+        public $progressMessage;
+        /**
+         * The operation generic information.
+         *
+         * @param GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata
+         */
+        public function setGenericMetadata(GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GenericOperationMetadata
+         */
+        public function getGenericMetadata()
+        {
+        }
+        /**
+         * A human-readable message that shows the intermediate progress details of
+         * NotebookRuntime.
+         *
+         * @param string $progressMessage
+         */
+        public function setProgressMessage($progressMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProgressMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1GenericOperationMetadata
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1UpgradeNotebookRuntimeOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGenericMetadata()
-    {
-    }
-    /**
-     * A human-readable message that shows the intermediate progress details of
-     * NotebookRuntime.
-     *
-     * @param string $progressMessage
-     */
-    public function setProgressMessage($progressMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProgressMessage()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1UpgradeNotebookRuntimeOperationMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1UpgradeNotebookRuntimeOperationMetadata
     {
     }
 }

@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class PlayerEventListResponse extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = PlayerEvent::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#playerEventListResponse`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The pagination token for the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The player events.
-     *
-     * @param PlayerEvent[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Games {
+    class PlayerEventListResponse extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = PlayerEvent::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#playerEventListResponse`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The pagination token for the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The player events.
+         *
+         * @param PlayerEvent[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return PlayerEvent[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#playerEventListResponse`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The pagination token for the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PlayerEvent[]
+     * Runtime class alias of \Google\Service\Games\PlayerEventListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#playerEventListResponse`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The pagination token for the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Games_PlayerEventListResponse extends \Google\Service\Games\PlayerEventListResponse
     {
     }
 }

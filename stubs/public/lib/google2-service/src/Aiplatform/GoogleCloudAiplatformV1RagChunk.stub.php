@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RagChunk extends \Google\Model
-{
-    protected $pageSpanType = GoogleCloudAiplatformV1RagChunkPageSpan::class;
-    protected $pageSpanDataType = '';
-    /**
-     * The content of the chunk.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * If populated, represents where the chunk starts and ends in the document.
-     *
-     * @param GoogleCloudAiplatformV1RagChunkPageSpan $pageSpan
-     */
-    public function setPageSpan(GoogleCloudAiplatformV1RagChunkPageSpan $pageSpan)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RagChunk extends \Google\Model
     {
+        protected $pageSpanType = GoogleCloudAiplatformV1RagChunkPageSpan::class;
+        protected $pageSpanDataType = '';
+        /**
+         * The content of the chunk.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * If populated, represents where the chunk starts and ends in the document.
+         *
+         * @param GoogleCloudAiplatformV1RagChunkPageSpan $pageSpan
+         */
+        public function setPageSpan(GoogleCloudAiplatformV1RagChunkPageSpan $pageSpan)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagChunkPageSpan
+         */
+        public function getPageSpan()
+        {
+        }
+        /**
+         * The content of the chunk.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1RagChunkPageSpan
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagChunk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageSpan()
-    {
-    }
-    /**
-     * The content of the chunk.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RagChunk extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagChunk
     {
     }
 }

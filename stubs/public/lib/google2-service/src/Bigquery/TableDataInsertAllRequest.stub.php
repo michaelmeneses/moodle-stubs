@@ -21,149 +21,158 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class TableDataInsertAllRequest extends \Google\Collection
-{
-    protected $collection_key = 'rows';
-    /**
-     * Optional. Accept rows that contain values that do not match the schema. The
-     * unknown values are ignored. Default is false, which treats unknown values
-     * as errors.
-     *
-     * @var bool
-     */
-    public $ignoreUnknownValues;
-    /**
-     * Optional. The resource type of the response. The value is not checked at
-     * the backend. Historically, it has been set to
-     * "bigquery#tableDataInsertAllRequest" but you are not required to set it.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $rowsType = TableDataInsertAllRequestRows::class;
-    protected $rowsDataType = 'array';
-    /**
-     * Optional. Insert all valid rows of a request, even if invalid rows exist.
-     * The default value is false, which causes the entire request to fail if any
-     * invalid rows exist.
-     *
-     * @var bool
-     */
-    public $skipInvalidRows;
-    /**
-     * Optional. If specified, treats the destination table as a base template,
-     * and inserts the rows into an instance table named
-     * "{destination}{templateSuffix}". BigQuery will manage creation of the
-     * instance table, using the schema of the base template table. See
-     * https://cloud.google.com/bigquery/streaming-data-into-bigquery#template-
-     * tables for considerations when working with templates tables.
-     *
-     * @var string
-     */
-    public $templateSuffix;
-    /**
-     * Optional. Unique request trace id. Used for debugging purposes only. It is
-     * case-sensitive, limited to up to 36 ASCII characters. A UUID is
-     * recommended.
-     *
-     * @var string
-     */
-    public $traceId;
-    /**
-     * Optional. Accept rows that contain values that do not match the schema. The
-     * unknown values are ignored. Default is false, which treats unknown values
-     * as errors.
-     *
-     * @param bool $ignoreUnknownValues
-     */
-    public function setIgnoreUnknownValues($ignoreUnknownValues)
+namespace Google\Service\Bigquery {
+    class TableDataInsertAllRequest extends \Google\Collection
     {
+        protected $collection_key = 'rows';
+        /**
+         * Optional. Accept rows that contain values that do not match the schema. The
+         * unknown values are ignored. Default is false, which treats unknown values
+         * as errors.
+         *
+         * @var bool
+         */
+        public $ignoreUnknownValues;
+        /**
+         * Optional. The resource type of the response. The value is not checked at
+         * the backend. Historically, it has been set to
+         * "bigquery#tableDataInsertAllRequest" but you are not required to set it.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $rowsType = TableDataInsertAllRequestRows::class;
+        protected $rowsDataType = 'array';
+        /**
+         * Optional. Insert all valid rows of a request, even if invalid rows exist.
+         * The default value is false, which causes the entire request to fail if any
+         * invalid rows exist.
+         *
+         * @var bool
+         */
+        public $skipInvalidRows;
+        /**
+         * Optional. If specified, treats the destination table as a base template,
+         * and inserts the rows into an instance table named
+         * "{destination}{templateSuffix}". BigQuery will manage creation of the
+         * instance table, using the schema of the base template table. See
+         * https://cloud.google.com/bigquery/streaming-data-into-bigquery#template-
+         * tables for considerations when working with templates tables.
+         *
+         * @var string
+         */
+        public $templateSuffix;
+        /**
+         * Optional. Unique request trace id. Used for debugging purposes only. It is
+         * case-sensitive, limited to up to 36 ASCII characters. A UUID is
+         * recommended.
+         *
+         * @var string
+         */
+        public $traceId;
+        /**
+         * Optional. Accept rows that contain values that do not match the schema. The
+         * unknown values are ignored. Default is false, which treats unknown values
+         * as errors.
+         *
+         * @param bool $ignoreUnknownValues
+         */
+        public function setIgnoreUnknownValues($ignoreUnknownValues)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIgnoreUnknownValues()
+        {
+        }
+        /**
+         * Optional. The resource type of the response. The value is not checked at
+         * the backend. Historically, it has been set to
+         * "bigquery#tableDataInsertAllRequest" but you are not required to set it.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param TableDataInsertAllRequestRows[] $rows
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return TableDataInsertAllRequestRows[]
+         */
+        public function getRows()
+        {
+        }
+        /**
+         * Optional. Insert all valid rows of a request, even if invalid rows exist.
+         * The default value is false, which causes the entire request to fail if any
+         * invalid rows exist.
+         *
+         * @param bool $skipInvalidRows
+         */
+        public function setSkipInvalidRows($skipInvalidRows)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSkipInvalidRows()
+        {
+        }
+        /**
+         * Optional. If specified, treats the destination table as a base template,
+         * and inserts the rows into an instance table named
+         * "{destination}{templateSuffix}". BigQuery will manage creation of the
+         * instance table, using the schema of the base template table. See
+         * https://cloud.google.com/bigquery/streaming-data-into-bigquery#template-
+         * tables for considerations when working with templates tables.
+         *
+         * @param string $templateSuffix
+         */
+        public function setTemplateSuffix($templateSuffix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTemplateSuffix()
+        {
+        }
+        /**
+         * Optional. Unique request trace id. Used for debugging purposes only. It is
+         * case-sensitive, limited to up to 36 ASCII characters. A UUID is
+         * recommended.
+         *
+         * @param string $traceId
+         */
+        public function setTraceId($traceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTraceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Bigquery\TableDataInsertAllRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIgnoreUnknownValues()
-    {
-    }
-    /**
-     * Optional. The resource type of the response. The value is not checked at
-     * the backend. Historically, it has been set to
-     * "bigquery#tableDataInsertAllRequest" but you are not required to set it.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param TableDataInsertAllRequestRows[] $rows
-     */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return TableDataInsertAllRequestRows[]
-     */
-    public function getRows()
-    {
-    }
-    /**
-     * Optional. Insert all valid rows of a request, even if invalid rows exist.
-     * The default value is false, which causes the entire request to fail if any
-     * invalid rows exist.
-     *
-     * @param bool $skipInvalidRows
-     */
-    public function setSkipInvalidRows($skipInvalidRows)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSkipInvalidRows()
-    {
-    }
-    /**
-     * Optional. If specified, treats the destination table as a base template,
-     * and inserts the rows into an instance table named
-     * "{destination}{templateSuffix}". BigQuery will manage creation of the
-     * instance table, using the schema of the base template table. See
-     * https://cloud.google.com/bigquery/streaming-data-into-bigquery#template-
-     * tables for considerations when working with templates tables.
-     *
-     * @param string $templateSuffix
-     */
-    public function setTemplateSuffix($templateSuffix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTemplateSuffix()
-    {
-    }
-    /**
-     * Optional. Unique request trace id. Used for debugging purposes only. It is
-     * case-sensitive, limited to up to 36 ASCII characters. A UUID is
-     * recommended.
-     *
-     * @param string $traceId
-     */
-    public function setTraceId($traceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTraceId()
+    class Google_Service_Bigquery_TableDataInsertAllRequest extends \Google\Service\Bigquery\TableDataInsertAllRequest
     {
     }
 }

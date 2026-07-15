@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1Circle extends \Google\Model
-{
-    protected $centerType = GoogleTypeLatLng::class;
-    protected $centerDataType = '';
-    /**
-     * Required. Radius measured in meters. The radius must be within [0.0,
-     * 50000.0].
-     *
-     * @var 
-     */
-    public $radius;
-    /**
-     * Required. Center latitude and longitude. The range of latitude must be
-     * within [-90.0, 90.0]. The range of the longitude must be within [-180.0,
-     * 180.0].
-     *
-     * @param GoogleTypeLatLng $center
-     */
-    public function setCenter(GoogleTypeLatLng $center)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1Circle extends \Google\Model
     {
+        protected $centerType = GoogleTypeLatLng::class;
+        protected $centerDataType = '';
+        /**
+         * Required. Radius measured in meters. The radius must be within [0.0,
+         * 50000.0].
+         *
+         * @var 
+         */
+        public $radius;
+        /**
+         * Required. Center latitude and longitude. The range of latitude must be
+         * within [-90.0, 90.0]. The range of the longitude must be within [-180.0,
+         * 180.0].
+         *
+         * @param GoogleTypeLatLng $center
+         */
+        public function setCenter(GoogleTypeLatLng $center)
+        {
+        }
+        /**
+         * @return GoogleTypeLatLng
+         */
+        public function getCenter()
+        {
+        }
+        public function setRadius($radius)
+        {
+        }
+        public function getRadius()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeLatLng
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1Circle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCenter()
-    {
-    }
-    public function setRadius($radius)
-    {
-    }
-    public function getRadius()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1Circle extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1Circle
     {
     }
 }

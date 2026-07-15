@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datalineage;
-
-class GoogleCloudDatacatalogLineageV1ProcessOpenLineageRunEventResponse extends \Google\Collection
-{
-    protected $collection_key = 'lineageEvents';
-    /**
-     * Created lineage event names. Format: `projects/{project}/locations/{locatio
-     * n}/processes/{process}/runs/{run}/lineageEvents/{lineage_event}`.
-     *
-     * @var string[]
-     */
-    public $lineageEvents;
-    /**
-     * Created process name. Format:
-     * `projects/{project}/locations/{location}/processes/{process}`.
-     *
-     * @var string
-     */
-    public $process;
-    /**
-     * Created run name. Format:
-     * `projects/{project}/locations/{location}/processes/{process}/runs/{run}`.
-     *
-     * @var string
-     */
-    public $run;
-    /**
-     * Created lineage event names. Format: `projects/{project}/locations/{locatio
-     * n}/processes/{process}/runs/{run}/lineageEvents/{lineage_event}`.
-     *
-     * @param string[] $lineageEvents
-     */
-    public function setLineageEvents($lineageEvents)
+namespace Google\Service\Datalineage {
+    class GoogleCloudDatacatalogLineageV1ProcessOpenLineageRunEventResponse extends \Google\Collection
     {
+        protected $collection_key = 'lineageEvents';
+        /**
+         * Created lineage event names. Format: `projects/{project}/locations/{locatio
+         * n}/processes/{process}/runs/{run}/lineageEvents/{lineage_event}`.
+         *
+         * @var string[]
+         */
+        public $lineageEvents;
+        /**
+         * Created process name. Format:
+         * `projects/{project}/locations/{location}/processes/{process}`.
+         *
+         * @var string
+         */
+        public $process;
+        /**
+         * Created run name. Format:
+         * `projects/{project}/locations/{location}/processes/{process}/runs/{run}`.
+         *
+         * @var string
+         */
+        public $run;
+        /**
+         * Created lineage event names. Format: `projects/{project}/locations/{locatio
+         * n}/processes/{process}/runs/{run}/lineageEvents/{lineage_event}`.
+         *
+         * @param string[] $lineageEvents
+         */
+        public function setLineageEvents($lineageEvents)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLineageEvents()
+        {
+        }
+        /**
+         * Created process name. Format:
+         * `projects/{project}/locations/{location}/processes/{process}`.
+         *
+         * @param string $process
+         */
+        public function setProcess($process)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProcess()
+        {
+        }
+        /**
+         * Created run name. Format:
+         * `projects/{project}/locations/{location}/processes/{process}/runs/{run}`.
+         *
+         * @param string $run
+         */
+        public function setRun($run)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRun()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1ProcessOpenLineageRunEventResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLineageEvents()
-    {
-    }
-    /**
-     * Created process name. Format:
-     * `projects/{project}/locations/{location}/processes/{process}`.
-     *
-     * @param string $process
-     */
-    public function setProcess($process)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProcess()
-    {
-    }
-    /**
-     * Created run name. Format:
-     * `projects/{project}/locations/{location}/processes/{process}/runs/{run}`.
-     *
-     * @param string $run
-     */
-    public function setRun($run)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRun()
+    class Google_Service_Datalineage_GoogleCloudDatacatalogLineageV1ProcessOpenLineageRunEventResponse extends \Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1ProcessOpenLineageRunEventResponse
     {
     }
 }

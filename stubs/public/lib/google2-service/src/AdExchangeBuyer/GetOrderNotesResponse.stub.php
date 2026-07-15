@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class GetOrderNotesResponse extends \Google\Collection
-{
-    protected $collection_key = 'notes';
-    protected $notesType = MarketplaceNote::class;
-    protected $notesDataType = 'array';
-    /**
-     * @param MarketplaceNote[]
-     */
-    public function setNotes($notes)
+namespace Google\Service\AdExchangeBuyer {
+    class GetOrderNotesResponse extends \Google\Collection
     {
+        protected $collection_key = 'notes';
+        protected $notesType = MarketplaceNote::class;
+        protected $notesDataType = 'array';
+        /**
+         * @param MarketplaceNote[]
+         */
+        public function setNotes($notes)
+        {
+        }
+        /**
+         * @return MarketplaceNote[]
+         */
+        public function getNotes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MarketplaceNote[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\GetOrderNotesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNotes()
+    class Google_Service_AdExchangeBuyer_GetOrderNotesResponse extends \Google\Service\AdExchangeBuyer\GetOrderNotesResponse
     {
     }
 }

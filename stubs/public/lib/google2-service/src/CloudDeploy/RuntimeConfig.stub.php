@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class RuntimeConfig extends \Google\Model
-{
-    protected $cloudRunType = CloudRunConfig::class;
-    protected $cloudRunDataType = '';
-    protected $kubernetesType = KubernetesConfig::class;
-    protected $kubernetesDataType = '';
-    /**
-     * Optional. Cloud Run runtime configuration.
-     *
-     * @param CloudRunConfig $cloudRun
-     */
-    public function setCloudRun(CloudRunConfig $cloudRun)
+namespace Google\Service\CloudDeploy {
+    class RuntimeConfig extends \Google\Model
     {
+        protected $cloudRunType = CloudRunConfig::class;
+        protected $cloudRunDataType = '';
+        protected $kubernetesType = KubernetesConfig::class;
+        protected $kubernetesDataType = '';
+        /**
+         * Optional. Cloud Run runtime configuration.
+         *
+         * @param CloudRunConfig $cloudRun
+         */
+        public function setCloudRun(CloudRunConfig $cloudRun)
+        {
+        }
+        /**
+         * @return CloudRunConfig
+         */
+        public function getCloudRun()
+        {
+        }
+        /**
+         * Optional. Kubernetes runtime configuration.
+         *
+         * @param KubernetesConfig $kubernetes
+         */
+        public function setKubernetes(KubernetesConfig $kubernetes)
+        {
+        }
+        /**
+         * @return KubernetesConfig
+         */
+        public function getKubernetes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudRunConfig
+     * Runtime class alias of \Google\Service\CloudDeploy\RuntimeConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudRun()
-    {
-    }
-    /**
-     * Optional. Kubernetes runtime configuration.
-     *
-     * @param KubernetesConfig $kubernetes
-     */
-    public function setKubernetes(KubernetesConfig $kubernetes)
-    {
-    }
-    /**
-     * @return KubernetesConfig
-     */
-    public function getKubernetes()
+    class Google_Service_CloudDeploy_RuntimeConfig extends \Google\Service\CloudDeploy\RuntimeConfig
     {
     }
 }

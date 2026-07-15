@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class ListExternalAccessRulesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $externalAccessRulesType = ExternalAccessRule::class;
-    protected $externalAccessRulesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached when making an aggregated query using
-     * wildcards.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A list of external access firewall rules.
-     *
-     * @param ExternalAccessRule[] $externalAccessRules
-     */
-    public function setExternalAccessRules($externalAccessRules)
+namespace Google\Service\VMwareEngine {
+    class ListExternalAccessRulesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $externalAccessRulesType = ExternalAccessRule::class;
+        protected $externalAccessRulesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached when making an aggregated query using
+         * wildcards.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A list of external access firewall rules.
+         *
+         * @param ExternalAccessRule[] $externalAccessRules
+         */
+        public function setExternalAccessRules($externalAccessRules)
+        {
+        }
+        /**
+         * @return ExternalAccessRule[]
+         */
+        public function getExternalAccessRules()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached when making an aggregated query using
+         * wildcards.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExternalAccessRule[]
+     * Runtime class alias of \Google\Service\VMwareEngine\ListExternalAccessRulesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExternalAccessRules()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached when making an aggregated query using
-     * wildcards.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_VMwareEngine_ListExternalAccessRulesResponse extends \Google\Service\VMwareEngine\ListExternalAccessRulesResponse
     {
     }
 }

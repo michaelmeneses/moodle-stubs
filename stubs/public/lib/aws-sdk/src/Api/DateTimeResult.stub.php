@@ -8,6 +8,10 @@
  */
 namespace Aws\Api;
 
+use Aws\Api\Parser\Exception\ParserException;
+use DateTime;
+use DateTimeZone;
+use Exception;
 /**
  * DateTime overrides that make DateTime work more seamlessly as a string,
  * with JSON documents, and with JMESPath.

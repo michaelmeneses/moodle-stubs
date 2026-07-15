@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace media_videojs\external;
 
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_value;
 /**
  * The API to get language strings for the videojs.
  *

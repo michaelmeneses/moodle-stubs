@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoPropertyEntry extends \Google\Model
-{
-    /**
-     * Key is used to retrieve the corresponding property value. This should be
-     * unique for a given fired event. The Tasks should be aware of the keys used
-     * while firing the events for them to be able to retrieve the values.
-     *
-     * @var string
-     */
-    public $key;
-    protected $valueType = EnterpriseCrmEventbusProtoValueType::class;
-    protected $valueDataType = '';
-    /**
-     * Key is used to retrieve the corresponding property value. This should be
-     * unique for a given fired event. The Tasks should be aware of the keys used
-     * while firing the events for them to be able to retrieve the values.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoPropertyEntry extends \Google\Model
     {
+        /**
+         * Key is used to retrieve the corresponding property value. This should be
+         * unique for a given fired event. The Tasks should be aware of the keys used
+         * while firing the events for them to be able to retrieve the values.
+         *
+         * @var string
+         */
+        public $key;
+        protected $valueType = EnterpriseCrmEventbusProtoValueType::class;
+        protected $valueDataType = '';
+        /**
+         * Key is used to retrieve the corresponding property value. This should be
+         * unique for a given fired event. The Tasks should be aware of the keys used
+         * while firing the events for them to be able to retrieve the values.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Values for the defined keys. Each value can either be string, int, double
+         * or any proto message.
+         *
+         * @param EnterpriseCrmEventbusProtoValueType $value
+         */
+        public function setValue(EnterpriseCrmEventbusProtoValueType $value)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoValueType
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoPropertyEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * Values for the defined keys. Each value can either be string, int, double
-     * or any proto message.
-     *
-     * @param EnterpriseCrmEventbusProtoValueType $value
-     */
-    public function setValue(EnterpriseCrmEventbusProtoValueType $value)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoValueType
-     */
-    public function getValue()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoPropertyEntry extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoPropertyEntry
     {
     }
 }

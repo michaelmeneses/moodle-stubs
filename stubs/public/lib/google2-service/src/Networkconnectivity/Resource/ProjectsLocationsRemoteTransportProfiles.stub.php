@@ -21,49 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity\Resource;
-
-/**
- * The "remoteTransportProfiles" collection of methods.
- * Typical usage is:
- *  <code>
- *   $networkconnectivityService = new Google\Service\Networkconnectivity(...);
- *   $remoteTransportProfiles = $networkconnectivityService->projects_locations_remoteTransportProfiles;
- *  </code>
- */
-class ProjectsLocationsRemoteTransportProfiles extends \Google\Service\Resource
-{
+namespace Google\Service\Networkconnectivity\Resource {
+    use Google\Service\Networkconnectivity\ListRemoteTransportProfilesResponse;
+    use Google\Service\Networkconnectivity\RemoteTransportProfile;
     /**
-     * Gets details of a single RemoteTransportProfile.
-     * (remoteTransportProfiles.get)
-     *
-     * @param string $name Required. Name of the resource.
-     * @param array $optParams Optional parameters.
-     * @return RemoteTransportProfile
-     * @throws \Google\Service\Exception
+     * The "remoteTransportProfiles" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $networkconnectivityService = new Google\Service\Networkconnectivity(...);
+     *   $remoteTransportProfiles = $networkconnectivityService->projects_locations_remoteTransportProfiles;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsRemoteTransportProfiles extends \Google\Service\Resource
     {
+        /**
+         * Gets details of a single RemoteTransportProfile.
+         * (remoteTransportProfiles.get)
+         *
+         * @param string $name Required. Name of the resource.
+         * @param array $optParams Optional parameters.
+         * @return RemoteTransportProfile
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists RemoteTransportProfiles in a given project and location.
+         * (remoteTransportProfiles.listProjectsLocationsRemoteTransportProfiles)
+         *
+         * @param string $parent Required. Parent value for
+         * ListRemoteTransportProfilesRequest.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filtering results.
+         * @opt_param string orderBy Optional. Hint for how to order the results.
+         * @opt_param int pageSize Optional. Requested page size. Server may return
+         * fewer items than requested. If unspecified, server will pick an appropriate
+         * default.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * the server should return.
+         * @return ListRemoteTransportProfilesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsRemoteTransportProfiles($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists RemoteTransportProfiles in a given project and location.
-     * (remoteTransportProfiles.listProjectsLocationsRemoteTransportProfiles)
-     *
-     * @param string $parent Required. Parent value for
-     * ListRemoteTransportProfilesRequest.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filtering results.
-     * @opt_param string orderBy Optional. Hint for how to order the results.
-     * @opt_param int pageSize Optional. Requested page size. Server may return
-     * fewer items than requested. If unspecified, server will pick an appropriate
-     * default.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * the server should return.
-     * @return ListRemoteTransportProfilesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Networkconnectivity\Resource\ProjectsLocationsRemoteTransportProfiles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsRemoteTransportProfiles($parent, $optParams = [])
+    class Google_Service_Networkconnectivity_Resource_ProjectsLocationsRemoteTransportProfiles extends \Google\Service\Networkconnectivity\Resource\ProjectsLocationsRemoteTransportProfiles
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class BatchCreateNotesRequest extends \Google\Model
-{
-    protected $notesType = Note::class;
-    protected $notesDataType = 'map';
-    /**
-     * Required. The notes to create. Max allowed length is 1000.
-     *
-     * @param Note[] $notes
-     */
-    public function setNotes($notes)
+namespace Google\Service\ContainerAnalysis {
+    class BatchCreateNotesRequest extends \Google\Model
     {
+        protected $notesType = Note::class;
+        protected $notesDataType = 'map';
+        /**
+         * Required. The notes to create. Max allowed length is 1000.
+         *
+         * @param Note[] $notes
+         */
+        public function setNotes($notes)
+        {
+        }
+        /**
+         * @return Note[]
+         */
+        public function getNotes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Note[]
+     * Runtime class alias of \Google\Service\ContainerAnalysis\BatchCreateNotesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNotes()
+    class Google_Service_ContainerAnalysis_BatchCreateNotesRequest extends \Google\Service\ContainerAnalysis\BatchCreateNotesRequest
     {
     }
 }

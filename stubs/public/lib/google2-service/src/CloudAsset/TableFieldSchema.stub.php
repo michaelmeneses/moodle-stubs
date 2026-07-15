@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class TableFieldSchema extends \Google\Collection
-{
-    protected $collection_key = 'fields';
-    /**
-     * The field name. The name must contain only letters (a-z, A-Z), numbers
-     * (0-9), or underscores (_), and must start with a letter or underscore. The
-     * maximum length is 128 characters.
-     *
-     * @var string
-     */
-    public $field;
-    protected $fieldsType = TableFieldSchema::class;
-    protected $fieldsDataType = 'array';
-    /**
-     * The field mode. Possible values include NULLABLE, REQUIRED and REPEATED.
-     * The default value is NULLABLE.
-     *
-     * @var string
-     */
-    public $mode;
-    /**
-     * The field data type. Possible values include * STRING * BYTES * INTEGER *
-     * FLOAT * BOOLEAN * TIMESTAMP * DATE * TIME * DATETIME * GEOGRAPHY, *
-     * NUMERIC, * BIGNUMERIC, * RECORD (where RECORD indicates that the field
-     * contains a nested schema).
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The field name. The name must contain only letters (a-z, A-Z), numbers
-     * (0-9), or underscores (_), and must start with a letter or underscore. The
-     * maximum length is 128 characters.
-     *
-     * @param string $field
-     */
-    public function setField($field)
+namespace Google\Service\CloudAsset {
+    class TableFieldSchema extends \Google\Collection
     {
+        protected $collection_key = 'fields';
+        /**
+         * The field name. The name must contain only letters (a-z, A-Z), numbers
+         * (0-9), or underscores (_), and must start with a letter or underscore. The
+         * maximum length is 128 characters.
+         *
+         * @var string
+         */
+        public $field;
+        protected $fieldsType = TableFieldSchema::class;
+        protected $fieldsDataType = 'array';
+        /**
+         * The field mode. Possible values include NULLABLE, REQUIRED and REPEATED.
+         * The default value is NULLABLE.
+         *
+         * @var string
+         */
+        public $mode;
+        /**
+         * The field data type. Possible values include * STRING * BYTES * INTEGER *
+         * FLOAT * BOOLEAN * TIMESTAMP * DATE * TIME * DATETIME * GEOGRAPHY, *
+         * NUMERIC, * BIGNUMERIC, * RECORD (where RECORD indicates that the field
+         * contains a nested schema).
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The field name. The name must contain only letters (a-z, A-Z), numbers
+         * (0-9), or underscores (_), and must start with a letter or underscore. The
+         * maximum length is 128 characters.
+         *
+         * @param string $field
+         */
+        public function setField($field)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getField()
+        {
+        }
+        /**
+         * Describes the nested schema fields if the type property is set to RECORD.
+         *
+         * @param TableFieldSchema[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return TableFieldSchema[]
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * The field mode. Possible values include NULLABLE, REQUIRED and REPEATED.
+         * The default value is NULLABLE.
+         *
+         * @param string $mode
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMode()
+        {
+        }
+        /**
+         * The field data type. Possible values include * STRING * BYTES * INTEGER *
+         * FLOAT * BOOLEAN * TIMESTAMP * DATE * TIME * DATETIME * GEOGRAPHY, *
+         * NUMERIC, * BIGNUMERIC, * RECORD (where RECORD indicates that the field
+         * contains a nested schema).
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\TableFieldSchema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getField()
-    {
-    }
-    /**
-     * Describes the nested schema fields if the type property is set to RECORD.
-     *
-     * @param TableFieldSchema[] $fields
-     */
-    public function setFields($fields)
-    {
-    }
-    /**
-     * @return TableFieldSchema[]
-     */
-    public function getFields()
-    {
-    }
-    /**
-     * The field mode. Possible values include NULLABLE, REQUIRED and REPEATED.
-     * The default value is NULLABLE.
-     *
-     * @param string $mode
-     */
-    public function setMode($mode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMode()
-    {
-    }
-    /**
-     * The field data type. Possible values include * STRING * BYTES * INTEGER *
-     * FLOAT * BOOLEAN * TIMESTAMP * DATE * TIME * DATETIME * GEOGRAPHY, *
-     * NUMERIC, * BIGNUMERIC, * RECORD (where RECORD indicates that the field
-     * contains a nested schema).
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudAsset_TableFieldSchema extends \Google\Service\CloudAsset\TableFieldSchema
     {
     }
 }

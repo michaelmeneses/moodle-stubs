@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyV1RemoveCertificateResponse extends \Google\Model
-{
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyV1RemoveCertificateResponse extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyV1RemoveCertificateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ChromePolicy_GoogleChromePolicyV1RemoveCertificateResponse extends \Google\Service\ChromePolicy\GoogleChromePolicyV1RemoveCertificateResponse
+    {
+    }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ServiceIssuersMapping extends \Google\Collection
-{
-    protected $collection_key = 'emailIds';
-    /**
-     * List of trusted issuer email ids.
-     *
-     * @var string[]
-     */
-    public $emailIds;
-    /**
-     * String indicating the Apigee service name.
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * List of trusted issuer email ids.
-     *
-     * @param string[] $emailIds
-     */
-    public function setEmailIds($emailIds)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ServiceIssuersMapping extends \Google\Collection
     {
+        protected $collection_key = 'emailIds';
+        /**
+         * List of trusted issuer email ids.
+         *
+         * @var string[]
+         */
+        public $emailIds;
+        /**
+         * String indicating the Apigee service name.
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * List of trusted issuer email ids.
+         *
+         * @param string[] $emailIds
+         */
+        public function setEmailIds($emailIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEmailIds()
+        {
+        }
+        /**
+         * String indicating the Apigee service name.
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ServiceIssuersMapping registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmailIds()
-    {
-    }
-    /**
-     * String indicating the Apigee service name.
-     *
-     * @param string $service
-     */
-    public function setService($service)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getService()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ServiceIssuersMapping extends \Google\Service\Apigee\GoogleCloudApigeeV1ServiceIssuersMapping
     {
     }
 }

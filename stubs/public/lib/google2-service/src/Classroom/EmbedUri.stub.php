@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class EmbedUri extends \Google\Model
-{
-    /**
-     * Required. URI to be iframed after being populated with query parameters.
-     * This must be a valid UTF-8 string containing between 1 and 1800 characters.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Required. URI to be iframed after being populated with query parameters.
-     * This must be a valid UTF-8 string containing between 1 and 1800 characters.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
+namespace Google\Service\Classroom {
+    class EmbedUri extends \Google\Model
     {
+        /**
+         * Required. URI to be iframed after being populated with query parameters.
+         * This must be a valid UTF-8 string containing between 1 and 1800 characters.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Required. URI to be iframed after being populated with query parameters.
+         * This must be a valid UTF-8 string containing between 1 and 1800 characters.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\EmbedUri registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUri()
+    class Google_Service_Classroom_EmbedUri extends \Google\Service\Classroom\EmbedUri
     {
     }
 }

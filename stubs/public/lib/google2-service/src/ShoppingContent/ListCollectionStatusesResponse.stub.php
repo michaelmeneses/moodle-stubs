@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ListCollectionStatusesResponse extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resourcesType = CollectionStatus::class;
-    protected $resourcesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ShoppingContent {
+    class ListCollectionStatusesResponse extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resourcesType = CollectionStatus::class;
+        protected $resourcesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The collectionstatuses listed.
+         *
+         * @param CollectionStatus[] $resources
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return CollectionStatus[]
+         */
+        public function getResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ListCollectionStatusesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The collectionstatuses listed.
-     *
-     * @param CollectionStatus[] $resources
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return CollectionStatus[]
-     */
-    public function getResources()
+    class Google_Service_ShoppingContent_ListCollectionStatusesResponse extends \Google\Service\ShoppingContent\ListCollectionStatusesResponse
     {
     }
 }

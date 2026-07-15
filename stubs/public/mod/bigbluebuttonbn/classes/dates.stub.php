@@ -8,6 +8,8 @@
  */
 namespace mod_bigbluebuttonbn;
 
+use cm_info;
+use core\activity_dates;
 /**
  * Class for fetching the important dates in mod_bigbluebuttonbn for a given module instance and a user.
  *

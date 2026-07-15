@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Webmasters;
-
-class WmxSitemap extends \Google\Collection
-{
-    protected $collection_key = 'contents';
-    protected $contentsType = WmxSitemapContent::class;
-    protected $contentsDataType = 'array';
-    public $errors;
-    public $isPending;
-    public $isSitemapsIndex;
-    public $lastDownloaded;
-    public $lastSubmitted;
-    public $path;
-    public $type;
-    public $warnings;
+namespace Google\Service\Webmasters {
+    class WmxSitemap extends \Google\Collection
+    {
+        protected $collection_key = 'contents';
+        protected $contentsType = WmxSitemapContent::class;
+        protected $contentsDataType = 'array';
+        public $errors;
+        public $isPending;
+        public $isSitemapsIndex;
+        public $lastDownloaded;
+        public $lastSubmitted;
+        public $path;
+        public $type;
+        public $warnings;
+        /**
+         * @param WmxSitemapContent[]
+         */
+        public function setContents($contents)
+        {
+        }
+        /**
+         * @return WmxSitemapContent[]
+         */
+        public function getContents()
+        {
+        }
+        public function setErrors($errors)
+        {
+        }
+        public function getErrors()
+        {
+        }
+        public function setIsPending($isPending)
+        {
+        }
+        public function getIsPending()
+        {
+        }
+        public function setIsSitemapsIndex($isSitemapsIndex)
+        {
+        }
+        public function getIsSitemapsIndex()
+        {
+        }
+        public function setLastDownloaded($lastDownloaded)
+        {
+        }
+        public function getLastDownloaded()
+        {
+        }
+        public function setLastSubmitted($lastSubmitted)
+        {
+        }
+        public function getLastSubmitted()
+        {
+        }
+        public function setPath($path)
+        {
+        }
+        public function getPath()
+        {
+        }
+        public function setType($type)
+        {
+        }
+        public function getType()
+        {
+        }
+        public function setWarnings($warnings)
+        {
+        }
+        public function getWarnings()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param WmxSitemapContent[]
+     * Runtime class alias of \Google\Service\Webmasters\WmxSitemap registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setContents($contents)
-    {
-    }
-    /**
-     * @return WmxSitemapContent[]
-     */
-    public function getContents()
-    {
-    }
-    public function setErrors($errors)
-    {
-    }
-    public function getErrors()
-    {
-    }
-    public function setIsPending($isPending)
-    {
-    }
-    public function getIsPending()
-    {
-    }
-    public function setIsSitemapsIndex($isSitemapsIndex)
-    {
-    }
-    public function getIsSitemapsIndex()
-    {
-    }
-    public function setLastDownloaded($lastDownloaded)
-    {
-    }
-    public function getLastDownloaded()
-    {
-    }
-    public function setLastSubmitted($lastSubmitted)
-    {
-    }
-    public function getLastSubmitted()
-    {
-    }
-    public function setPath($path)
-    {
-    }
-    public function getPath()
-    {
-    }
-    public function setType($type)
-    {
-    }
-    public function getType()
-    {
-    }
-    public function setWarnings($warnings)
-    {
-    }
-    public function getWarnings()
+    class Google_Service_Webmasters_WmxSitemap extends \Google\Service\Webmasters\WmxSitemap
     {
     }
 }

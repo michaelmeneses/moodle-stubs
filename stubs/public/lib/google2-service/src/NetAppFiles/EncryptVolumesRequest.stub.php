@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class EncryptVolumesRequest extends \Google\Model
-{
+namespace Google\Service\NetAppFiles {
+    class EncryptVolumesRequest extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\NetAppFiles\EncryptVolumesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_NetAppFiles_EncryptVolumesRequest extends \Google\Service\NetAppFiles\EncryptVolumesRequest
+    {
+    }
 }

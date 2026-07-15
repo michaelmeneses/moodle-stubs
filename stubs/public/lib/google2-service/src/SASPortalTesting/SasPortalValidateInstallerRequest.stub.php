@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SASPortalTesting;
-
-class SasPortalValidateInstallerRequest extends \Google\Model
-{
-    /**
-     * Required. JSON Web Token signed using a CPI private key. Payload must
-     * include a "secret" claim whose value is the secret.
-     *
-     * @var string
-     */
-    public $encodedSecret;
-    /**
-     * Required. Unique installer id (CPI ID) from the Certified Professional
-     * Installers database.
-     *
-     * @var string
-     */
-    public $installerId;
-    /**
-     * Required. Secret returned by the GenerateSecret.
-     *
-     * @var string
-     */
-    public $secret;
-    /**
-     * Required. JSON Web Token signed using a CPI private key. Payload must
-     * include a "secret" claim whose value is the secret.
-     *
-     * @param string $encodedSecret
-     */
-    public function setEncodedSecret($encodedSecret)
+namespace Google\Service\SASPortalTesting {
+    class SasPortalValidateInstallerRequest extends \Google\Model
     {
+        /**
+         * Required. JSON Web Token signed using a CPI private key. Payload must
+         * include a "secret" claim whose value is the secret.
+         *
+         * @var string
+         */
+        public $encodedSecret;
+        /**
+         * Required. Unique installer id (CPI ID) from the Certified Professional
+         * Installers database.
+         *
+         * @var string
+         */
+        public $installerId;
+        /**
+         * Required. Secret returned by the GenerateSecret.
+         *
+         * @var string
+         */
+        public $secret;
+        /**
+         * Required. JSON Web Token signed using a CPI private key. Payload must
+         * include a "secret" claim whose value is the secret.
+         *
+         * @param string $encodedSecret
+         */
+        public function setEncodedSecret($encodedSecret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncodedSecret()
+        {
+        }
+        /**
+         * Required. Unique installer id (CPI ID) from the Certified Professional
+         * Installers database.
+         *
+         * @param string $installerId
+         */
+        public function setInstallerId($installerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstallerId()
+        {
+        }
+        /**
+         * Required. Secret returned by the GenerateSecret.
+         *
+         * @param string $secret
+         */
+        public function setSecret($secret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecret()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SASPortalTesting\SasPortalValidateInstallerRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncodedSecret()
-    {
-    }
-    /**
-     * Required. Unique installer id (CPI ID) from the Certified Professional
-     * Installers database.
-     *
-     * @param string $installerId
-     */
-    public function setInstallerId($installerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstallerId()
-    {
-    }
-    /**
-     * Required. Secret returned by the GenerateSecret.
-     *
-     * @param string $secret
-     */
-    public function setSecret($secret)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecret()
+    class Google_Service_SASPortalTesting_SasPortalValidateInstallerRequest extends \Google\Service\SASPortalTesting\SasPortalValidateInstallerRequest
     {
     }
 }

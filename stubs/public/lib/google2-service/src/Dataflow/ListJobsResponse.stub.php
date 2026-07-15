@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class ListJobsResponse extends \Google\Collection
-{
-    protected $collection_key = 'jobs';
-    protected $failedLocationType = FailedLocation::class;
-    protected $failedLocationDataType = 'array';
-    protected $jobsType = Job::class;
-    protected $jobsDataType = 'array';
-    /**
-     * Set if there may be more results than fit in this response.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Zero or more messages describing the [regional endpoints]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
-     * failed to respond.
-     *
-     * @param FailedLocation[] $failedLocation
-     */
-    public function setFailedLocation($failedLocation)
+namespace Google\Service\Dataflow {
+    class ListJobsResponse extends \Google\Collection
     {
+        protected $collection_key = 'jobs';
+        protected $failedLocationType = FailedLocation::class;
+        protected $failedLocationDataType = 'array';
+        protected $jobsType = Job::class;
+        protected $jobsDataType = 'array';
+        /**
+         * Set if there may be more results than fit in this response.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Zero or more messages describing the [regional endpoints]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
+         * failed to respond.
+         *
+         * @param FailedLocation[] $failedLocation
+         */
+        public function setFailedLocation($failedLocation)
+        {
+        }
+        /**
+         * @return FailedLocation[]
+         */
+        public function getFailedLocation()
+        {
+        }
+        /**
+         * A subset of the requested job information.
+         *
+         * @param Job[] $jobs
+         */
+        public function setJobs($jobs)
+        {
+        }
+        /**
+         * @return Job[]
+         */
+        public function getJobs()
+        {
+        }
+        /**
+         * Set if there may be more results than fit in this response.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FailedLocation[]
+     * Runtime class alias of \Google\Service\Dataflow\ListJobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailedLocation()
-    {
-    }
-    /**
-     * A subset of the requested job information.
-     *
-     * @param Job[] $jobs
-     */
-    public function setJobs($jobs)
-    {
-    }
-    /**
-     * @return Job[]
-     */
-    public function getJobs()
-    {
-    }
-    /**
-     * Set if there may be more results than fit in this response.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dataflow_ListJobsResponse extends \Google\Service\Dataflow\ListJobsResponse
     {
     }
 }

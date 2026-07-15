@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class AnnotationsSummary extends \Google\Collection
-{
-    protected $collection_key = 'layers';
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $layersType = AnnotationsSummaryLayers::class;
-    protected $layersDataType = 'array';
-    /**
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Books {
+    class AnnotationsSummary extends \Google\Collection
     {
+        protected $collection_key = 'layers';
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $layersType = AnnotationsSummaryLayers::class;
+        protected $layersDataType = 'array';
+        /**
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param AnnotationsSummaryLayers[] $layers
+         */
+        public function setLayers($layers)
+        {
+        }
+        /**
+         * @return AnnotationsSummaryLayers[]
+         */
+        public function getLayers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\AnnotationsSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * @param AnnotationsSummaryLayers[] $layers
-     */
-    public function setLayers($layers)
-    {
-    }
-    /**
-     * @return AnnotationsSummaryLayers[]
-     */
-    public function getLayers()
+    class Google_Service_Books_AnnotationsSummary extends \Google\Service\Books\AnnotationsSummary
     {
     }
 }

@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class RuleExecutionResult extends \Google\Model
-{
-    /**
-     * Unknown state
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * execution completed successfully
-     */
-    public const STATE_STATE_SUCCESS = 'STATE_SUCCESS';
-    /**
-     * execution completed with failures
-     */
-    public const STATE_STATE_FAILURE = 'STATE_FAILURE';
-    /**
-     * execution was not executed
-     */
-    public const STATE_STATE_SKIPPED = 'STATE_SKIPPED';
-    /**
-     * Execution message, if any
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Number of violations
-     *
-     * @var string
-     */
-    public $resultCount;
-    /**
-     * rule name
-     *
-     * @var string
-     */
-    public $rule;
-    /**
-     * Number of total scanned resources
-     *
-     * @var string
-     */
-    public $scannedResourceCount;
-    /**
-     * Output only. The execution status
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Execution message, if any
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
+namespace Google\Service\WorkloadManager {
+    class RuleExecutionResult extends \Google\Model
     {
+        /**
+         * Unknown state
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * execution completed successfully
+         */
+        public const STATE_STATE_SUCCESS = 'STATE_SUCCESS';
+        /**
+         * execution completed with failures
+         */
+        public const STATE_STATE_FAILURE = 'STATE_FAILURE';
+        /**
+         * execution was not executed
+         */
+        public const STATE_STATE_SKIPPED = 'STATE_SKIPPED';
+        /**
+         * Execution message, if any
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Number of violations
+         *
+         * @var string
+         */
+        public $resultCount;
+        /**
+         * rule name
+         *
+         * @var string
+         */
+        public $rule;
+        /**
+         * Number of total scanned resources
+         *
+         * @var string
+         */
+        public $scannedResourceCount;
+        /**
+         * Output only. The execution status
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Execution message, if any
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * Number of violations
+         *
+         * @param string $resultCount
+         */
+        public function setResultCount($resultCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultCount()
+        {
+        }
+        /**
+         * rule name
+         *
+         * @param string $rule
+         */
+        public function setRule($rule)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRule()
+        {
+        }
+        /**
+         * Number of total scanned resources
+         *
+         * @param string $scannedResourceCount
+         */
+        public function setScannedResourceCount($scannedResourceCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScannedResourceCount()
+        {
+        }
+        /**
+         * Output only. The execution status
+         *
+         * Accepted values: STATE_UNSPECIFIED, STATE_SUCCESS, STATE_FAILURE,
+         * STATE_SKIPPED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\RuleExecutionResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessage()
-    {
-    }
-    /**
-     * Number of violations
-     *
-     * @param string $resultCount
-     */
-    public function setResultCount($resultCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResultCount()
-    {
-    }
-    /**
-     * rule name
-     *
-     * @param string $rule
-     */
-    public function setRule($rule)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRule()
-    {
-    }
-    /**
-     * Number of total scanned resources
-     *
-     * @param string $scannedResourceCount
-     */
-    public function setScannedResourceCount($scannedResourceCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScannedResourceCount()
-    {
-    }
-    /**
-     * Output only. The execution status
-     *
-     * Accepted values: STATE_UNSPECIFIED, STATE_SUCCESS, STATE_FAILURE,
-     * STATE_SKIPPED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_WorkloadManager_RuleExecutionResult extends \Google\Service\WorkloadManager\RuleExecutionResult
     {
     }
 }

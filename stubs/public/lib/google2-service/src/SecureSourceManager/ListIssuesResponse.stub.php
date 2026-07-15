@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager;
-
-class ListIssuesResponse extends \Google\Collection
-{
-    protected $collection_key = 'issues';
-    protected $issuesType = Issue::class;
-    protected $issuesDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of issues.
-     *
-     * @param Issue[] $issues
-     */
-    public function setIssues($issues)
+namespace Google\Service\SecureSourceManager {
+    class ListIssuesResponse extends \Google\Collection
     {
+        protected $collection_key = 'issues';
+        protected $issuesType = Issue::class;
+        protected $issuesDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of issues.
+         *
+         * @param Issue[] $issues
+         */
+        public function setIssues($issues)
+        {
+        }
+        /**
+         * @return Issue[]
+         */
+        public function getIssues()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Issue[]
+     * Runtime class alias of \Google\Service\SecureSourceManager\ListIssuesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIssues()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_SecureSourceManager_ListIssuesResponse extends \Google\Service\SecureSourceManager\ListIssuesResponse
     {
     }
 }

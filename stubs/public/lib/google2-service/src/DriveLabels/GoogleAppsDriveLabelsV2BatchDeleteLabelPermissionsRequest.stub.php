@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2BatchDeleteLabelPermissionsRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = GoogleAppsDriveLabelsV2DeleteLabelPermissionRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * Set to `true` in order to use the user's admin credentials. The server will
-     * verify the user is an admin for the label before allowing access. If this
-     * is set, the `use_admin_access` field in the `DeleteLabelPermissionRequest`
-     * messages must either be empty or match this field.
-     *
-     * @var bool
-     */
-    public $useAdminAccess;
-    /**
-     * Required. The request message specifying the resources to update.
-     *
-     * @param GoogleAppsDriveLabelsV2DeleteLabelPermissionRequest[] $requests
-     */
-    public function setRequests($requests)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2BatchDeleteLabelPermissionsRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = GoogleAppsDriveLabelsV2DeleteLabelPermissionRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * Set to `true` in order to use the user's admin credentials. The server will
+         * verify the user is an admin for the label before allowing access. If this
+         * is set, the `use_admin_access` field in the `DeleteLabelPermissionRequest`
+         * messages must either be empty or match this field.
+         *
+         * @var bool
+         */
+        public $useAdminAccess;
+        /**
+         * Required. The request message specifying the resources to update.
+         *
+         * @param GoogleAppsDriveLabelsV2DeleteLabelPermissionRequest[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2DeleteLabelPermissionRequest[]
+         */
+        public function getRequests()
+        {
+        }
+        /**
+         * Set to `true` in order to use the user's admin credentials. The server will
+         * verify the user is an admin for the label before allowing access. If this
+         * is set, the `use_admin_access` field in the `DeleteLabelPermissionRequest`
+         * messages must either be empty or match this field.
+         *
+         * @param bool $useAdminAccess
+         */
+        public function setUseAdminAccess($useAdminAccess)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseAdminAccess()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsDriveLabelsV2DeleteLabelPermissionRequest[]
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2BatchDeleteLabelPermissionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
-    {
-    }
-    /**
-     * Set to `true` in order to use the user's admin credentials. The server will
-     * verify the user is an admin for the label before allowing access. If this
-     * is set, the `use_admin_access` field in the `DeleteLabelPermissionRequest`
-     * messages must either be empty or match this field.
-     *
-     * @param bool $useAdminAccess
-     */
-    public function setUseAdminAccess($useAdminAccess)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseAdminAccess()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2BatchDeleteLabelPermissionsRequest extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2BatchDeleteLabelPermissionsRequest
     {
     }
 }

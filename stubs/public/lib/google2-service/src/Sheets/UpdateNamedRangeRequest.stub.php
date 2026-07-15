@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class UpdateNamedRangeRequest extends \Google\Model
-{
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `namedRange` is implied and should not be specified. A single
-     * `"*"` can be used as short-hand for listing every field.
-     *
-     * @var string
-     */
-    public $fields;
-    protected $namedRangeType = NamedRange::class;
-    protected $namedRangeDataType = '';
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `namedRange` is implied and should not be specified. A single
-     * `"*"` can be used as short-hand for listing every field.
-     *
-     * @param string $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\Sheets {
+    class UpdateNamedRangeRequest extends \Google\Model
     {
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `namedRange` is implied and should not be specified. A single
+         * `"*"` can be used as short-hand for listing every field.
+         *
+         * @var string
+         */
+        public $fields;
+        protected $namedRangeType = NamedRange::class;
+        protected $namedRangeDataType = '';
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `namedRange` is implied and should not be specified. A single
+         * `"*"` can be used as short-hand for listing every field.
+         *
+         * @param string $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * The named range to update with the new properties.
+         *
+         * @param NamedRange $namedRange
+         */
+        public function setNamedRange(NamedRange $namedRange)
+        {
+        }
+        /**
+         * @return NamedRange
+         */
+        public function getNamedRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sheets\UpdateNamedRangeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
-    {
-    }
-    /**
-     * The named range to update with the new properties.
-     *
-     * @param NamedRange $namedRange
-     */
-    public function setNamedRange(NamedRange $namedRange)
-    {
-    }
-    /**
-     * @return NamedRange
-     */
-    public function getNamedRange()
+    class Google_Service_Sheets_UpdateNamedRangeRequest extends \Google\Service\Sheets\UpdateNamedRangeRequest
     {
     }
 }

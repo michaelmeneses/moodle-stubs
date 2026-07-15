@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datalineage;
-
-class GoogleCloudDatacatalogLineageV1EntityReference extends \Google\Model
-{
-    /**
-     * Required. [Fully Qualified Name
-     * (FQN)](https://cloud.google.com/dataplex/docs/fully-qualified-names) of the
-     * entity.
-     *
-     * @var string
-     */
-    public $fullyQualifiedName;
-    /**
-     * Required. [Fully Qualified Name
-     * (FQN)](https://cloud.google.com/dataplex/docs/fully-qualified-names) of the
-     * entity.
-     *
-     * @param string $fullyQualifiedName
-     */
-    public function setFullyQualifiedName($fullyQualifiedName)
+namespace Google\Service\Datalineage {
+    class GoogleCloudDatacatalogLineageV1EntityReference extends \Google\Model
     {
+        /**
+         * Required. [Fully Qualified Name
+         * (FQN)](https://cloud.google.com/dataplex/docs/fully-qualified-names) of the
+         * entity.
+         *
+         * @var string
+         */
+        public $fullyQualifiedName;
+        /**
+         * Required. [Fully Qualified Name
+         * (FQN)](https://cloud.google.com/dataplex/docs/fully-qualified-names) of the
+         * entity.
+         *
+         * @param string $fullyQualifiedName
+         */
+        public function setFullyQualifiedName($fullyQualifiedName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullyQualifiedName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1EntityReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFullyQualifiedName()
+    class Google_Service_Datalineage_GoogleCloudDatacatalogLineageV1EntityReference extends \Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1EntityReference
     {
     }
 }

@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course\output\actionbar;
 
+use core\output\comboboxsearch;
+use moodle_url;
+use stdClass;
 /**
  * Renderable class for the user selector element in the action bar.
  *

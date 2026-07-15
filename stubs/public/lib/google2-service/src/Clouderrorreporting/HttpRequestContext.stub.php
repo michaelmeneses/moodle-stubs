@@ -21,132 +21,141 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Clouderrorreporting;
-
-class HttpRequestContext extends \Google\Model
-{
-    /**
-     * The type of HTTP request, such as `GET`, `POST`, etc.
-     *
-     * @var string
-     */
-    public $method;
-    /**
-     * The referrer information that is provided with the request.
-     *
-     * @var string
-     */
-    public $referrer;
-    /**
-     * The IP address from which the request originated. This can be IPv4, IPv6,
-     * or a token which is derived from the IP address, depending on the data that
-     * has been provided in the error report.
-     *
-     * @var string
-     */
-    public $remoteIp;
-    /**
-     * The HTTP response status code for the request.
-     *
-     * @var int
-     */
-    public $responseStatusCode;
-    /**
-     * The URL of the request.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * The user agent information that is provided with the request.
-     *
-     * @var string
-     */
-    public $userAgent;
-    /**
-     * The type of HTTP request, such as `GET`, `POST`, etc.
-     *
-     * @param string $method
-     */
-    public function setMethod($method)
+namespace Google\Service\Clouderrorreporting {
+    class HttpRequestContext extends \Google\Model
     {
+        /**
+         * The type of HTTP request, such as `GET`, `POST`, etc.
+         *
+         * @var string
+         */
+        public $method;
+        /**
+         * The referrer information that is provided with the request.
+         *
+         * @var string
+         */
+        public $referrer;
+        /**
+         * The IP address from which the request originated. This can be IPv4, IPv6,
+         * or a token which is derived from the IP address, depending on the data that
+         * has been provided in the error report.
+         *
+         * @var string
+         */
+        public $remoteIp;
+        /**
+         * The HTTP response status code for the request.
+         *
+         * @var int
+         */
+        public $responseStatusCode;
+        /**
+         * The URL of the request.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * The user agent information that is provided with the request.
+         *
+         * @var string
+         */
+        public $userAgent;
+        /**
+         * The type of HTTP request, such as `GET`, `POST`, etc.
+         *
+         * @param string $method
+         */
+        public function setMethod($method)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMethod()
+        {
+        }
+        /**
+         * The referrer information that is provided with the request.
+         *
+         * @param string $referrer
+         */
+        public function setReferrer($referrer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferrer()
+        {
+        }
+        /**
+         * The IP address from which the request originated. This can be IPv4, IPv6,
+         * or a token which is derived from the IP address, depending on the data that
+         * has been provided in the error report.
+         *
+         * @param string $remoteIp
+         */
+        public function setRemoteIp($remoteIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemoteIp()
+        {
+        }
+        /**
+         * The HTTP response status code for the request.
+         *
+         * @param int $responseStatusCode
+         */
+        public function setResponseStatusCode($responseStatusCode)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getResponseStatusCode()
+        {
+        }
+        /**
+         * The URL of the request.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
+        /**
+         * The user agent information that is provided with the request.
+         *
+         * @param string $userAgent
+         */
+        public function setUserAgent($userAgent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserAgent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Clouderrorreporting\HttpRequestContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMethod()
-    {
-    }
-    /**
-     * The referrer information that is provided with the request.
-     *
-     * @param string $referrer
-     */
-    public function setReferrer($referrer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferrer()
-    {
-    }
-    /**
-     * The IP address from which the request originated. This can be IPv4, IPv6,
-     * or a token which is derived from the IP address, depending on the data that
-     * has been provided in the error report.
-     *
-     * @param string $remoteIp
-     */
-    public function setRemoteIp($remoteIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRemoteIp()
-    {
-    }
-    /**
-     * The HTTP response status code for the request.
-     *
-     * @param int $responseStatusCode
-     */
-    public function setResponseStatusCode($responseStatusCode)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getResponseStatusCode()
-    {
-    }
-    /**
-     * The URL of the request.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
-    {
-    }
-    /**
-     * The user agent information that is provided with the request.
-     *
-     * @param string $userAgent
-     */
-    public function setUserAgent($userAgent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserAgent()
+    class Google_Service_Clouderrorreporting_HttpRequestContext extends \Google\Service\Clouderrorreporting\HttpRequestContext
     {
     }
 }

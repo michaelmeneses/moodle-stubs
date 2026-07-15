@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class ListWebAppsResponse extends \Google\Collection
-{
-    protected $collection_key = 'webApps';
-    /**
-     * If there are more results, a token to retrieve next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $webAppsType = WebApp::class;
-    protected $webAppsDataType = 'array';
-    /**
-     * If there are more results, a token to retrieve next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\AndroidManagement {
+    class ListWebAppsResponse extends \Google\Collection
     {
+        protected $collection_key = 'webApps';
+        /**
+         * If there are more results, a token to retrieve next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $webAppsType = WebApp::class;
+        protected $webAppsDataType = 'array';
+        /**
+         * If there are more results, a token to retrieve next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of web apps.
+         *
+         * @param WebApp[] $webApps
+         */
+        public function setWebApps($webApps)
+        {
+        }
+        /**
+         * @return WebApp[]
+         */
+        public function getWebApps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\ListWebAppsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of web apps.
-     *
-     * @param WebApp[] $webApps
-     */
-    public function setWebApps($webApps)
-    {
-    }
-    /**
-     * @return WebApp[]
-     */
-    public function getWebApps()
+    class Google_Service_AndroidManagement_ListWebAppsResponse extends \Google\Service\AndroidManagement\ListWebAppsResponse
     {
     }
 }

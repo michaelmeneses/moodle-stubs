@@ -21,126 +21,135 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class MobileApp extends \Google\Model
-{
-    public const DIRECTORY_UNKNOWN = 'UNKNOWN';
-    public const DIRECTORY_APPLE_APP_STORE = 'APPLE_APP_STORE';
-    public const DIRECTORY_GOOGLE_PLAY_STORE = 'GOOGLE_PLAY_STORE';
-    public const DIRECTORY_ROKU_APP_STORE = 'ROKU_APP_STORE';
-    public const DIRECTORY_AMAZON_FIRETV_APP_STORE = 'AMAZON_FIRETV_APP_STORE';
-    public const DIRECTORY_PLAYSTATION_APP_STORE = 'PLAYSTATION_APP_STORE';
-    public const DIRECTORY_APPLE_TV_APP_STORE = 'APPLE_TV_APP_STORE';
-    public const DIRECTORY_XBOX_APP_STORE = 'XBOX_APP_STORE';
-    public const DIRECTORY_SAMSUNG_TV_APP_STORE = 'SAMSUNG_TV_APP_STORE';
-    public const DIRECTORY_ANDROID_TV_APP_STORE = 'ANDROID_TV_APP_STORE';
-    public const DIRECTORY_GENERIC_CTV_APP_STORE = 'GENERIC_CTV_APP_STORE';
-    /**
-     * Mobile app directory.
-     *
-     * @var string
-     */
-    public $directory;
-    /**
-     * ID of this mobile app.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#mobileApp".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Publisher name.
-     *
-     * @var string
-     */
-    public $publisherName;
-    /**
-     * Title of this mobile app.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Mobile app directory.
-     *
-     * Accepted values: UNKNOWN, APPLE_APP_STORE, GOOGLE_PLAY_STORE,
-     * ROKU_APP_STORE, AMAZON_FIRETV_APP_STORE, PLAYSTATION_APP_STORE,
-     * APPLE_TV_APP_STORE, XBOX_APP_STORE, SAMSUNG_TV_APP_STORE,
-     * ANDROID_TV_APP_STORE, GENERIC_CTV_APP_STORE
-     *
-     * @param self::DIRECTORY_* $directory
-     */
-    public function setDirectory($directory)
+namespace Google\Service\Dfareporting {
+    class MobileApp extends \Google\Model
     {
+        public const DIRECTORY_UNKNOWN = 'UNKNOWN';
+        public const DIRECTORY_APPLE_APP_STORE = 'APPLE_APP_STORE';
+        public const DIRECTORY_GOOGLE_PLAY_STORE = 'GOOGLE_PLAY_STORE';
+        public const DIRECTORY_ROKU_APP_STORE = 'ROKU_APP_STORE';
+        public const DIRECTORY_AMAZON_FIRETV_APP_STORE = 'AMAZON_FIRETV_APP_STORE';
+        public const DIRECTORY_PLAYSTATION_APP_STORE = 'PLAYSTATION_APP_STORE';
+        public const DIRECTORY_APPLE_TV_APP_STORE = 'APPLE_TV_APP_STORE';
+        public const DIRECTORY_XBOX_APP_STORE = 'XBOX_APP_STORE';
+        public const DIRECTORY_SAMSUNG_TV_APP_STORE = 'SAMSUNG_TV_APP_STORE';
+        public const DIRECTORY_ANDROID_TV_APP_STORE = 'ANDROID_TV_APP_STORE';
+        public const DIRECTORY_GENERIC_CTV_APP_STORE = 'GENERIC_CTV_APP_STORE';
+        /**
+         * Mobile app directory.
+         *
+         * @var string
+         */
+        public $directory;
+        /**
+         * ID of this mobile app.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#mobileApp".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Publisher name.
+         *
+         * @var string
+         */
+        public $publisherName;
+        /**
+         * Title of this mobile app.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Mobile app directory.
+         *
+         * Accepted values: UNKNOWN, APPLE_APP_STORE, GOOGLE_PLAY_STORE,
+         * ROKU_APP_STORE, AMAZON_FIRETV_APP_STORE, PLAYSTATION_APP_STORE,
+         * APPLE_TV_APP_STORE, XBOX_APP_STORE, SAMSUNG_TV_APP_STORE,
+         * ANDROID_TV_APP_STORE, GENERIC_CTV_APP_STORE
+         *
+         * @param self::DIRECTORY_* $directory
+         */
+        public function setDirectory($directory)
+        {
+        }
+        /**
+         * @return self::DIRECTORY_*
+         */
+        public function getDirectory()
+        {
+        }
+        /**
+         * ID of this mobile app.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#mobileApp".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Publisher name.
+         *
+         * @param string $publisherName
+         */
+        public function setPublisherName($publisherName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublisherName()
+        {
+        }
+        /**
+         * Title of this mobile app.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DIRECTORY_*
+     * Runtime class alias of \Google\Service\Dfareporting\MobileApp registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDirectory()
-    {
-    }
-    /**
-     * ID of this mobile app.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#mobileApp".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Publisher name.
-     *
-     * @param string $publisherName
-     */
-    public function setPublisherName($publisherName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublisherName()
-    {
-    }
-    /**
-     * Title of this mobile app.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Dfareporting_MobileApp extends \Google\Service\Dfareporting\MobileApp
     {
     }
 }

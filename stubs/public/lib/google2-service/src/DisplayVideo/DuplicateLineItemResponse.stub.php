@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class DuplicateLineItemResponse extends \Google\Model
-{
-    /**
-     * The ID of the created line item.
-     *
-     * @var string
-     */
-    public $duplicateLineItemId;
-    /**
-     * The ID of the created line item.
-     *
-     * @param string $duplicateLineItemId
-     */
-    public function setDuplicateLineItemId($duplicateLineItemId)
+namespace Google\Service\DisplayVideo {
+    class DuplicateLineItemResponse extends \Google\Model
     {
+        /**
+         * The ID of the created line item.
+         *
+         * @var string
+         */
+        public $duplicateLineItemId;
+        /**
+         * The ID of the created line item.
+         *
+         * @param string $duplicateLineItemId
+         */
+        public function setDuplicateLineItemId($duplicateLineItemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDuplicateLineItemId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\DuplicateLineItemResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDuplicateLineItemId()
+    class Google_Service_DisplayVideo_DuplicateLineItemResponse extends \Google\Service\DisplayVideo\DuplicateLineItemResponse
     {
     }
 }

@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class Volumeseriesinfo extends \Google\Collection
-{
-    protected $collection_key = 'volumeSeries';
-    /**
-     * The display number string. This should be used only for display purposes
-     * and the actual sequence should be inferred from the below orderNumber.
-     *
-     * @var string
-     */
-    public $bookDisplayNumber;
-    /**
-     * Resource type.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Short book title in the context of the series.
-     *
-     * @var string
-     */
-    public $shortSeriesBookTitle;
-    protected $volumeSeriesType = VolumeseriesinfoVolumeSeries::class;
-    protected $volumeSeriesDataType = 'array';
-    /**
-     * The display number string. This should be used only for display purposes
-     * and the actual sequence should be inferred from the below orderNumber.
-     *
-     * @param string $bookDisplayNumber
-     */
-    public function setBookDisplayNumber($bookDisplayNumber)
+namespace Google\Service\Books {
+    class Volumeseriesinfo extends \Google\Collection
     {
+        protected $collection_key = 'volumeSeries';
+        /**
+         * The display number string. This should be used only for display purposes
+         * and the actual sequence should be inferred from the below orderNumber.
+         *
+         * @var string
+         */
+        public $bookDisplayNumber;
+        /**
+         * Resource type.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Short book title in the context of the series.
+         *
+         * @var string
+         */
+        public $shortSeriesBookTitle;
+        protected $volumeSeriesType = VolumeseriesinfoVolumeSeries::class;
+        protected $volumeSeriesDataType = 'array';
+        /**
+         * The display number string. This should be used only for display purposes
+         * and the actual sequence should be inferred from the below orderNumber.
+         *
+         * @param string $bookDisplayNumber
+         */
+        public function setBookDisplayNumber($bookDisplayNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBookDisplayNumber()
+        {
+        }
+        /**
+         * Resource type.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Short book title in the context of the series.
+         *
+         * @param string $shortSeriesBookTitle
+         */
+        public function setShortSeriesBookTitle($shortSeriesBookTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShortSeriesBookTitle()
+        {
+        }
+        /**
+         * @param VolumeseriesinfoVolumeSeries[] $volumeSeries
+         */
+        public function setVolumeSeries($volumeSeries)
+        {
+        }
+        /**
+         * @return VolumeseriesinfoVolumeSeries[]
+         */
+        public function getVolumeSeries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\Volumeseriesinfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBookDisplayNumber()
-    {
-    }
-    /**
-     * Resource type.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Short book title in the context of the series.
-     *
-     * @param string $shortSeriesBookTitle
-     */
-    public function setShortSeriesBookTitle($shortSeriesBookTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShortSeriesBookTitle()
-    {
-    }
-    /**
-     * @param VolumeseriesinfoVolumeSeries[] $volumeSeries
-     */
-    public function setVolumeSeries($volumeSeries)
-    {
-    }
-    /**
-     * @return VolumeseriesinfoVolumeSeries[]
-     */
-    public function getVolumeSeries()
+    class Google_Service_Books_Volumeseriesinfo extends \Google\Service\Books\Volumeseriesinfo
     {
     }
 }

@@ -21,31 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare\Resource;
-
-/**
- * The "instances" collection of methods.
- * Typical usage is:
- *  <code>
- *   $healthcareService = new Google\Service\CloudHealthcare(...);
- *   $instances = $healthcareService->projects_locations_datasets_dicomStores_dicomWeb_studies_series_instances;
- *  </code>
- */
-class ProjectsLocationsDatasetsDicomStoresDicomWebStudiesSeriesInstances extends \Google\Service\Resource
-{
+namespace Google\Service\CloudHealthcare\Resource {
+    use Google\Service\CloudHealthcare\StorageInfo;
     /**
-     * GetStorageInfo returns the storage info of the specified resource.
-     * (instances.getStorageInfo)
-     *
-     * @param string $resource Required. The path of the instance to return storage
-     * info for, in the form: `projects/{projectID}/locations/{locationID}/datasets/
-     * {datasetID}/dicomStores/{dicomStoreID}/dicomWeb/studies/{studyUID}/series/{se
-     * riesUID}/instances/{instanceUID}`
-     * @param array $optParams Optional parameters.
-     * @return StorageInfo
-     * @throws \Google\Service\Exception
+     * The "instances" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $healthcareService = new Google\Service\CloudHealthcare(...);
+     *   $instances = $healthcareService->projects_locations_datasets_dicomStores_dicomWeb_studies_series_instances;
+     *  </code>
      */
-    public function getStorageInfo($resource, $optParams = [])
+    class ProjectsLocationsDatasetsDicomStoresDicomWebStudiesSeriesInstances extends \Google\Service\Resource
+    {
+        /**
+         * GetStorageInfo returns the storage info of the specified resource.
+         * (instances.getStorageInfo)
+         *
+         * @param string $resource Required. The path of the instance to return storage
+         * info for, in the form: `projects/{projectID}/locations/{locationID}/datasets/
+         * {datasetID}/dicomStores/{dicomStoreID}/dicomWeb/studies/{studyUID}/series/{se
+         * riesUID}/instances/{instanceUID}`
+         * @param array $optParams Optional parameters.
+         * @return StorageInfo
+         * @throws \Google\Service\Exception
+         */
+        public function getStorageInfo($resource, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudHealthcare\Resource\ProjectsLocationsDatasetsDicomStoresDicomWebStudiesSeriesInstances registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudHealthcare_Resource_ProjectsLocationsDatasetsDicomStoresDicomWebStudiesSeriesInstances extends \Google\Service\CloudHealthcare\Resource\ProjectsLocationsDatasetsDicomStoresDicomWebStudiesSeriesInstances
     {
     }
 }

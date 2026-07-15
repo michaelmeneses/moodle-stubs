@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class CreateAssetRequest extends \Google\Model
-{
-    /**
-     * Required. The filename of the asset, including the file extension. The
-     * filename must be UTF-8 encoded with a maximum size of 240 bytes.
-     *
-     * @var string
-     */
-    public $filename;
-    /**
-     * Required. The filename of the asset, including the file extension. The
-     * filename must be UTF-8 encoded with a maximum size of 240 bytes.
-     *
-     * @param string $filename
-     */
-    public function setFilename($filename)
+namespace Google\Service\DisplayVideo {
+    class CreateAssetRequest extends \Google\Model
     {
+        /**
+         * Required. The filename of the asset, including the file extension. The
+         * filename must be UTF-8 encoded with a maximum size of 240 bytes.
+         *
+         * @var string
+         */
+        public $filename;
+        /**
+         * Required. The filename of the asset, including the file extension. The
+         * filename must be UTF-8 encoded with a maximum size of 240 bytes.
+         *
+         * @param string $filename
+         */
+        public function setFilename($filename)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilename()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\CreateAssetRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilename()
+    class Google_Service_DisplayVideo_CreateAssetRequest extends \Google\Service\DisplayVideo\CreateAssetRequest
     {
     }
 }

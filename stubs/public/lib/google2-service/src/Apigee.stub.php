@@ -21,127 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Apigee (v1).
- *
- * <p>
- * Use the Apigee API to programmatically develop and manage APIs with a set of
- * RESTful operations. Develop and secure API proxies, deploy and undeploy API
- * proxy revisions, monitor APIs, configure environments, manage users, and
- * more. Note: This product is available as a free trial for a time period of 60
- * days.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/apigee-api-management/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Apigee extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $hybrid_issuers;
-    public $organizations;
-    public $organizations_analytics_datastores;
-    public $organizations_apiproducts;
-    public $organizations_apiproducts_attributes;
-    public $organizations_apiproducts_rateplans;
-    public $organizations_apis;
-    public $organizations_apis_debugsessions;
-    public $organizations_apis_deployments;
-    public $organizations_apis_keyvaluemaps;
-    public $organizations_apis_keyvaluemaps_entries;
-    public $organizations_apis_revisions;
-    public $organizations_apis_revisions_deployments;
-    public $organizations_appgroups;
-    public $organizations_appgroups_apps;
-    public $organizations_appgroups_apps_keys;
-    public $organizations_appgroups_apps_keys_apiproducts;
-    public $organizations_apps;
-    public $organizations_datacollectors;
-    public $organizations_deployments;
-    public $organizations_developers;
-    public $organizations_developers_apps;
-    public $organizations_developers_apps_attributes;
-    public $organizations_developers_apps_keys;
-    public $organizations_developers_apps_keys_apiproducts;
-    public $organizations_developers_apps_keys_create;
-    public $organizations_developers_attributes;
-    public $organizations_developers_balance;
-    public $organizations_developers_subscriptions;
-    public $organizations_dnsZones;
-    public $organizations_endpointAttachments;
-    public $organizations_envgroups;
-    public $organizations_envgroups_attachments;
-    public $organizations_environments;
-    public $organizations_environments_addonsConfig;
-    public $organizations_environments_analytics_admin;
-    public $organizations_environments_analytics_exports;
-    public $organizations_environments_apis_deployments;
-    public $organizations_environments_apis_revisions;
-    public $organizations_environments_apis_revisions_debugsessions;
-    public $organizations_environments_apis_revisions_debugsessions_data;
-    public $organizations_environments_apis_revisions_deployments;
-    public $organizations_environments_archiveDeployments;
-    public $organizations_environments_caches;
-    public $organizations_environments_deployments;
-    public $organizations_environments_flowhooks;
-    public $organizations_environments_keystores;
-    public $organizations_environments_keystores_aliases;
-    public $organizations_environments_keyvaluemaps;
-    public $organizations_environments_keyvaluemaps_entries;
-    public $organizations_environments_optimizedStats;
-    public $organizations_environments_queries;
-    public $organizations_environments_references;
-    public $organizations_environments_resourcefiles;
-    public $organizations_environments_securityActions;
-    public $organizations_environments_securityIncidents;
-    public $organizations_environments_securityReports;
-    public $organizations_environments_securityStats;
-    public $organizations_environments_sharedflows_deployments;
-    public $organizations_environments_sharedflows_revisions;
-    public $organizations_environments_stats;
-    public $organizations_environments_targetservers;
-    public $organizations_environments_traceConfig_overrides;
-    public $organizations_hostQueries;
-    public $organizations_hostSecurityReports;
-    public $organizations_hostStats;
-    public $organizations_instances;
-    public $organizations_instances_attachments;
-    public $organizations_instances_canaryevaluations;
-    public $organizations_instances_natAddresses;
-    public $organizations_keyvaluemaps;
-    public $organizations_keyvaluemaps_entries;
-    public $organizations_operations;
-    public $organizations_optimizedHostStats;
-    public $organizations_reports;
-    public $organizations_securityAssessmentResults;
-    public $organizations_securityFeedback;
-    public $organizations_securityMonitoringConditions;
-    public $organizations_securityProfiles;
-    public $organizations_securityProfiles_environments;
-    public $organizations_securityProfilesV2;
-    public $organizations_sharedflows;
-    public $organizations_sharedflows_deployments;
-    public $organizations_sharedflows_revisions;
-    public $organizations_sharedflows_revisions_deployments;
-    public $organizations_sites_apicategories;
-    public $organizations_sites_apidocs;
-    public $organizations_spaces;
-    public $projects;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Apigee service.
+     * Service definition for Apigee (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Use the Apigee API to programmatically develop and manage APIs with a set of
+     * RESTful operations. Develop and secure API proxies, deploy and undeploy API
+     * proxy revisions, monitor APIs, configure environments, manage users, and
+     * more. Note: This product is available as a free trial for a time period of 60
+     * days.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/apigee-api-management/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Apigee extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $hybrid_issuers;
+        public $organizations;
+        public $organizations_analytics_datastores;
+        public $organizations_apiproducts;
+        public $organizations_apiproducts_attributes;
+        public $organizations_apiproducts_rateplans;
+        public $organizations_apis;
+        public $organizations_apis_debugsessions;
+        public $organizations_apis_deployments;
+        public $organizations_apis_keyvaluemaps;
+        public $organizations_apis_keyvaluemaps_entries;
+        public $organizations_apis_revisions;
+        public $organizations_apis_revisions_deployments;
+        public $organizations_appgroups;
+        public $organizations_appgroups_apps;
+        public $organizations_appgroups_apps_keys;
+        public $organizations_appgroups_apps_keys_apiproducts;
+        public $organizations_apps;
+        public $organizations_datacollectors;
+        public $organizations_deployments;
+        public $organizations_developers;
+        public $organizations_developers_apps;
+        public $organizations_developers_apps_attributes;
+        public $organizations_developers_apps_keys;
+        public $organizations_developers_apps_keys_apiproducts;
+        public $organizations_developers_apps_keys_create;
+        public $organizations_developers_attributes;
+        public $organizations_developers_balance;
+        public $organizations_developers_subscriptions;
+        public $organizations_dnsZones;
+        public $organizations_endpointAttachments;
+        public $organizations_envgroups;
+        public $organizations_envgroups_attachments;
+        public $organizations_environments;
+        public $organizations_environments_addonsConfig;
+        public $organizations_environments_analytics_admin;
+        public $organizations_environments_analytics_exports;
+        public $organizations_environments_apis_deployments;
+        public $organizations_environments_apis_revisions;
+        public $organizations_environments_apis_revisions_debugsessions;
+        public $organizations_environments_apis_revisions_debugsessions_data;
+        public $organizations_environments_apis_revisions_deployments;
+        public $organizations_environments_archiveDeployments;
+        public $organizations_environments_caches;
+        public $organizations_environments_deployments;
+        public $organizations_environments_flowhooks;
+        public $organizations_environments_keystores;
+        public $organizations_environments_keystores_aliases;
+        public $organizations_environments_keyvaluemaps;
+        public $organizations_environments_keyvaluemaps_entries;
+        public $organizations_environments_optimizedStats;
+        public $organizations_environments_queries;
+        public $organizations_environments_references;
+        public $organizations_environments_resourcefiles;
+        public $organizations_environments_securityActions;
+        public $organizations_environments_securityIncidents;
+        public $organizations_environments_securityReports;
+        public $organizations_environments_securityStats;
+        public $organizations_environments_sharedflows_deployments;
+        public $organizations_environments_sharedflows_revisions;
+        public $organizations_environments_stats;
+        public $organizations_environments_targetservers;
+        public $organizations_environments_traceConfig_overrides;
+        public $organizations_hostQueries;
+        public $organizations_hostSecurityReports;
+        public $organizations_hostStats;
+        public $organizations_instances;
+        public $organizations_instances_attachments;
+        public $organizations_instances_canaryevaluations;
+        public $organizations_instances_natAddresses;
+        public $organizations_keyvaluemaps;
+        public $organizations_keyvaluemaps_entries;
+        public $organizations_operations;
+        public $organizations_optimizedHostStats;
+        public $organizations_reports;
+        public $organizations_securityAssessmentResults;
+        public $organizations_securityFeedback;
+        public $organizations_securityMonitoringConditions;
+        public $organizations_securityProfiles;
+        public $organizations_securityProfiles_environments;
+        public $organizations_securityProfilesV2;
+        public $organizations_sharedflows;
+        public $organizations_sharedflows_deployments;
+        public $organizations_sharedflows_revisions;
+        public $organizations_sharedflows_revisions_deployments;
+        public $organizations_sites_apicategories;
+        public $organizations_sites_apidocs;
+        public $organizations_spaces;
+        public $projects;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Apigee service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Apigee registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Apigee extends \Google\Service\Apigee
     {
     }
 }

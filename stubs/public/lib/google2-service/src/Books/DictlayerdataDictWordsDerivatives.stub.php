@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class DictlayerdataDictWordsDerivatives extends \Google\Model
-{
-    protected $sourceType = DictlayerdataDictWordsDerivativesSource::class;
-    protected $sourceDataType = '';
-    /**
-     * @var string
-     */
-    public $text;
-    /**
-     * @param DictlayerdataDictWordsDerivativesSource $source
-     */
-    public function setSource(DictlayerdataDictWordsDerivativesSource $source)
+namespace Google\Service\Books {
+    class DictlayerdataDictWordsDerivatives extends \Google\Model
     {
+        protected $sourceType = DictlayerdataDictWordsDerivativesSource::class;
+        protected $sourceDataType = '';
+        /**
+         * @var string
+         */
+        public $text;
+        /**
+         * @param DictlayerdataDictWordsDerivativesSource $source
+         */
+        public function setSource(DictlayerdataDictWordsDerivativesSource $source)
+        {
+        }
+        /**
+         * @return DictlayerdataDictWordsDerivativesSource
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DictlayerdataDictWordsDerivativesSource
+     * Runtime class alias of \Google\Service\Books\DictlayerdataDictWordsDerivatives registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSource()
-    {
-    }
-    /**
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Books_DictlayerdataDictWordsDerivatives extends \Google\Service\Books\DictlayerdataDictWordsDerivatives
     {
     }
 }

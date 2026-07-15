@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExample extends \Google\Collection
-{
-    protected $collection_key = 'generatedMemories';
-    protected $conversationSourceType = GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleConversationSource::class;
-    protected $conversationSourceDataType = '';
-    protected $generatedMemoriesType = GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleGeneratedMemory::class;
-    protected $generatedMemoriesDataType = 'array';
-    /**
-     * A conversation source for the example.
-     *
-     * @param GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleConversationSource $conversationSource
-     */
-    public function setConversationSource(GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleConversationSource $conversationSource)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExample extends \Google\Collection
     {
+        protected $collection_key = 'generatedMemories';
+        protected $conversationSourceType = GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleConversationSource::class;
+        protected $conversationSourceDataType = '';
+        protected $generatedMemoriesType = GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleGeneratedMemory::class;
+        protected $generatedMemoriesDataType = 'array';
+        /**
+         * A conversation source for the example.
+         *
+         * @param GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleConversationSource $conversationSource
+         */
+        public function setConversationSource(GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleConversationSource $conversationSource)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleConversationSource
+         */
+        public function getConversationSource()
+        {
+        }
+        /**
+         * Optional. The memories that are expected to be generated from the input
+         * conversation. An empty list indicates that no memories are expected to be
+         * generated for the input conversation.
+         *
+         * @param GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleGeneratedMemory[] $generatedMemories
+         */
+        public function setGeneratedMemories($generatedMemories)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleGeneratedMemory[]
+         */
+        public function getGeneratedMemories()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleConversationSource
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExample registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversationSource()
-    {
-    }
-    /**
-     * Optional. The memories that are expected to be generated from the input
-     * conversation. An empty list indicates that no memories are expected to be
-     * generated for the input conversation.
-     *
-     * @param GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleGeneratedMemory[] $generatedMemories
-     */
-    public function setGeneratedMemories($generatedMemories)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleGeneratedMemory[]
-     */
-    public function getGeneratedMemories()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExample extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExample
     {
     }
 }

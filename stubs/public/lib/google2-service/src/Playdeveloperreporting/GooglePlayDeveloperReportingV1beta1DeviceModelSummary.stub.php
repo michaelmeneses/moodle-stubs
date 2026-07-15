@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting;
-
-class GooglePlayDeveloperReportingV1beta1DeviceModelSummary extends \Google\Model
-{
-    protected $deviceIdType = GooglePlayDeveloperReportingV1beta1DeviceId::class;
-    protected $deviceIdDataType = '';
-    /**
-     * Link to the device in Play Device Catalog.
-     *
-     * @var string
-     */
-    public $deviceUri;
-    /**
-     * Display name of the device.
-     *
-     * @var string
-     */
-    public $marketingName;
-    /**
-     * Identifier of the device.
-     *
-     * @param GooglePlayDeveloperReportingV1beta1DeviceId $deviceId
-     */
-    public function setDeviceId(GooglePlayDeveloperReportingV1beta1DeviceId $deviceId)
+namespace Google\Service\Playdeveloperreporting {
+    class GooglePlayDeveloperReportingV1beta1DeviceModelSummary extends \Google\Model
     {
+        protected $deviceIdType = GooglePlayDeveloperReportingV1beta1DeviceId::class;
+        protected $deviceIdDataType = '';
+        /**
+         * Link to the device in Play Device Catalog.
+         *
+         * @var string
+         */
+        public $deviceUri;
+        /**
+         * Display name of the device.
+         *
+         * @var string
+         */
+        public $marketingName;
+        /**
+         * Identifier of the device.
+         *
+         * @param GooglePlayDeveloperReportingV1beta1DeviceId $deviceId
+         */
+        public function setDeviceId(GooglePlayDeveloperReportingV1beta1DeviceId $deviceId)
+        {
+        }
+        /**
+         * @return GooglePlayDeveloperReportingV1beta1DeviceId
+         */
+        public function getDeviceId()
+        {
+        }
+        /**
+         * Link to the device in Play Device Catalog.
+         *
+         * @param string $deviceUri
+         */
+        public function setDeviceUri($deviceUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceUri()
+        {
+        }
+        /**
+         * Display name of the device.
+         *
+         * @param string $marketingName
+         */
+        public function setMarketingName($marketingName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMarketingName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePlayDeveloperReportingV1beta1DeviceId
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1DeviceModelSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceId()
-    {
-    }
-    /**
-     * Link to the device in Play Device Catalog.
-     *
-     * @param string $deviceUri
-     */
-    public function setDeviceUri($deviceUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeviceUri()
-    {
-    }
-    /**
-     * Display name of the device.
-     *
-     * @param string $marketingName
-     */
-    public function setMarketingName($marketingName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMarketingName()
+    class Google_Service_Playdeveloperreporting_GooglePlayDeveloperReportingV1beta1DeviceModelSummary extends \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1DeviceModelSummary
     {
     }
 }

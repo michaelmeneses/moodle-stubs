@@ -21,124 +21,133 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class Uri extends \Google\Model
-{
-    /**
-     * The URI's title appearing in the app as text. Recommended maximum is 20
-     * characters to ensure full string is displayed on smaller screens. Note that
-     * in some contexts this text is not used, such as when `description` is part
-     * of an image.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The ID associated with a uri. This field is here to enable ease of
-     * management of uris.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"walletobjects#uri"`.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $kind;
-    protected $localizedDescriptionType = LocalizedString::class;
-    protected $localizedDescriptionDataType = '';
-    /**
-     * The location of a web page, image, or other resource. URIs in the
-     * `LinksModuleData` module can have different prefixes indicating the type of
-     * URI (a link to a web page, a link to a map, a telephone number, or an email
-     * address). URIs must have a scheme.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * The URI's title appearing in the app as text. Recommended maximum is 20
-     * characters to ensure full string is displayed on smaller screens. Note that
-     * in some contexts this text is not used, such as when `description` is part
-     * of an image.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Walletobjects {
+    class Uri extends \Google\Model
     {
+        /**
+         * The URI's title appearing in the app as text. Recommended maximum is 20
+         * characters to ensure full string is displayed on smaller screens. Note that
+         * in some contexts this text is not used, such as when `description` is part
+         * of an image.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The ID associated with a uri. This field is here to enable ease of
+         * management of uris.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"walletobjects#uri"`.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $kind;
+        protected $localizedDescriptionType = LocalizedString::class;
+        protected $localizedDescriptionDataType = '';
+        /**
+         * The location of a web page, image, or other resource. URIs in the
+         * `LinksModuleData` module can have different prefixes indicating the type of
+         * URI (a link to a web page, a link to a map, a telephone number, or an email
+         * address). URIs must have a scheme.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * The URI's title appearing in the app as text. Recommended maximum is 20
+         * characters to ensure full string is displayed on smaller screens. Note that
+         * in some contexts this text is not used, such as when `description` is part
+         * of an image.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The ID associated with a uri. This field is here to enable ease of
+         * management of uris.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"walletobjects#uri"`.
+         *
+         * @deprecated
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Translated strings for the description. Recommended maximum is 20
+         * characters to ensure full string is displayed on smaller screens.
+         *
+         * @param LocalizedString $localizedDescription
+         */
+        public function setLocalizedDescription(LocalizedString $localizedDescription)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getLocalizedDescription()
+        {
+        }
+        /**
+         * The location of a web page, image, or other resource. URIs in the
+         * `LinksModuleData` module can have different prefixes indicating the type of
+         * URI (a link to a web page, a link to a map, a telephone number, or an email
+         * address). URIs must have a scheme.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Walletobjects\Uri registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The ID associated with a uri. This field is here to enable ease of
-     * management of uris.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"walletobjects#uri"`.
-     *
-     * @deprecated
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Translated strings for the description. Recommended maximum is 20
-     * characters to ensure full string is displayed on smaller screens.
-     *
-     * @param LocalizedString $localizedDescription
-     */
-    public function setLocalizedDescription(LocalizedString $localizedDescription)
-    {
-    }
-    /**
-     * @return LocalizedString
-     */
-    public function getLocalizedDescription()
-    {
-    }
-    /**
-     * The location of a web page, image, or other resource. URIs in the
-     * `LinksModuleData` module can have different prefixes indicating the type of
-     * URI (a link to a web page, a link to a map, a telephone number, or an email
-     * address). URIs must have a scheme.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Walletobjects_Uri extends \Google\Service\Walletobjects\Uri
     {
     }
 }

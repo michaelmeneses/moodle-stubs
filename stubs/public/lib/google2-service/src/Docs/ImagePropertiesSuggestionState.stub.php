@@ -21,145 +21,154 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class ImagePropertiesSuggestionState extends \Google\Model
-{
-    /**
-     * Indicates if there was a suggested change to angle.
-     *
-     * @var bool
-     */
-    public $angleSuggested;
-    /**
-     * Indicates if there was a suggested change to brightness.
-     *
-     * @var bool
-     */
-    public $brightnessSuggested;
-    /**
-     * Indicates if there was a suggested change to content_uri.
-     *
-     * @var bool
-     */
-    public $contentUriSuggested;
-    /**
-     * Indicates if there was a suggested change to contrast.
-     *
-     * @var bool
-     */
-    public $contrastSuggested;
-    protected $cropPropertiesSuggestionStateType = CropPropertiesSuggestionState::class;
-    protected $cropPropertiesSuggestionStateDataType = '';
-    /**
-     * Indicates if there was a suggested change to source_uri.
-     *
-     * @var bool
-     */
-    public $sourceUriSuggested;
-    /**
-     * Indicates if there was a suggested change to transparency.
-     *
-     * @var bool
-     */
-    public $transparencySuggested;
-    /**
-     * Indicates if there was a suggested change to angle.
-     *
-     * @param bool $angleSuggested
-     */
-    public function setAngleSuggested($angleSuggested)
+namespace Google\Service\Docs {
+    class ImagePropertiesSuggestionState extends \Google\Model
     {
+        /**
+         * Indicates if there was a suggested change to angle.
+         *
+         * @var bool
+         */
+        public $angleSuggested;
+        /**
+         * Indicates if there was a suggested change to brightness.
+         *
+         * @var bool
+         */
+        public $brightnessSuggested;
+        /**
+         * Indicates if there was a suggested change to content_uri.
+         *
+         * @var bool
+         */
+        public $contentUriSuggested;
+        /**
+         * Indicates if there was a suggested change to contrast.
+         *
+         * @var bool
+         */
+        public $contrastSuggested;
+        protected $cropPropertiesSuggestionStateType = CropPropertiesSuggestionState::class;
+        protected $cropPropertiesSuggestionStateDataType = '';
+        /**
+         * Indicates if there was a suggested change to source_uri.
+         *
+         * @var bool
+         */
+        public $sourceUriSuggested;
+        /**
+         * Indicates if there was a suggested change to transparency.
+         *
+         * @var bool
+         */
+        public $transparencySuggested;
+        /**
+         * Indicates if there was a suggested change to angle.
+         *
+         * @param bool $angleSuggested
+         */
+        public function setAngleSuggested($angleSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAngleSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to brightness.
+         *
+         * @param bool $brightnessSuggested
+         */
+        public function setBrightnessSuggested($brightnessSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBrightnessSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to content_uri.
+         *
+         * @param bool $contentUriSuggested
+         */
+        public function setContentUriSuggested($contentUriSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getContentUriSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to contrast.
+         *
+         * @param bool $contrastSuggested
+         */
+        public function setContrastSuggested($contrastSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getContrastSuggested()
+        {
+        }
+        /**
+         * A mask that indicates which of the fields in crop_properties have been
+         * changed in this suggestion.
+         *
+         * @param CropPropertiesSuggestionState $cropPropertiesSuggestionState
+         */
+        public function setCropPropertiesSuggestionState(CropPropertiesSuggestionState $cropPropertiesSuggestionState)
+        {
+        }
+        /**
+         * @return CropPropertiesSuggestionState
+         */
+        public function getCropPropertiesSuggestionState()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to source_uri.
+         *
+         * @param bool $sourceUriSuggested
+         */
+        public function setSourceUriSuggested($sourceUriSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSourceUriSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to transparency.
+         *
+         * @param bool $transparencySuggested
+         */
+        public function setTransparencySuggested($transparencySuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTransparencySuggested()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Docs\ImagePropertiesSuggestionState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAngleSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to brightness.
-     *
-     * @param bool $brightnessSuggested
-     */
-    public function setBrightnessSuggested($brightnessSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getBrightnessSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to content_uri.
-     *
-     * @param bool $contentUriSuggested
-     */
-    public function setContentUriSuggested($contentUriSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getContentUriSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to contrast.
-     *
-     * @param bool $contrastSuggested
-     */
-    public function setContrastSuggested($contrastSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getContrastSuggested()
-    {
-    }
-    /**
-     * A mask that indicates which of the fields in crop_properties have been
-     * changed in this suggestion.
-     *
-     * @param CropPropertiesSuggestionState $cropPropertiesSuggestionState
-     */
-    public function setCropPropertiesSuggestionState(CropPropertiesSuggestionState $cropPropertiesSuggestionState)
-    {
-    }
-    /**
-     * @return CropPropertiesSuggestionState
-     */
-    public function getCropPropertiesSuggestionState()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to source_uri.
-     *
-     * @param bool $sourceUriSuggested
-     */
-    public function setSourceUriSuggested($sourceUriSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSourceUriSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to transparency.
-     *
-     * @param bool $transparencySuggested
-     */
-    public function setTransparencySuggested($transparencySuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTransparencySuggested()
+    class Google_Service_Docs_ImagePropertiesSuggestionState extends \Google\Service\Docs\ImagePropertiesSuggestionState
     {
     }
 }

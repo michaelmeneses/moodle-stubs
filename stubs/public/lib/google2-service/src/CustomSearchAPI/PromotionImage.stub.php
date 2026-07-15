@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CustomSearchAPI;
-
-class PromotionImage extends \Google\Model
-{
-    /**
-     * Image height in pixels.
-     *
-     * @var int
-     */
-    public $height;
-    /**
-     * URL of the image for this promotion link.
-     *
-     * @var string
-     */
-    public $source;
-    /**
-     * Image width in pixels.
-     *
-     * @var int
-     */
-    public $width;
-    /**
-     * Image height in pixels.
-     *
-     * @param int $height
-     */
-    public function setHeight($height)
+namespace Google\Service\CustomSearchAPI {
+    class PromotionImage extends \Google\Model
     {
+        /**
+         * Image height in pixels.
+         *
+         * @var int
+         */
+        public $height;
+        /**
+         * URL of the image for this promotion link.
+         *
+         * @var string
+         */
+        public $source;
+        /**
+         * Image width in pixels.
+         *
+         * @var int
+         */
+        public $width;
+        /**
+         * Image height in pixels.
+         *
+         * @param int $height
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * URL of the image for this promotion link.
+         *
+         * @param string $source
+         */
+        public function setSource($source)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * Image width in pixels.
+         *
+         * @param int $width
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CustomSearchAPI\PromotionImage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeight()
-    {
-    }
-    /**
-     * URL of the image for this promotion link.
-     *
-     * @param string $source
-     */
-    public function setSource($source)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSource()
-    {
-    }
-    /**
-     * Image width in pixels.
-     *
-     * @param int $width
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWidth()
+    class Google_Service_CustomSearchAPI_PromotionImage extends \Google\Service\CustomSearchAPI\PromotionImage
     {
     }
 }

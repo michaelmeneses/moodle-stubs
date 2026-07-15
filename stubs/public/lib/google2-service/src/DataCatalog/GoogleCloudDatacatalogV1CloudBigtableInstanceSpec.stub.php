@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1CloudBigtableInstanceSpec extends \Google\Collection
-{
-    protected $collection_key = 'cloudBigtableClusterSpecs';
-    protected $cloudBigtableClusterSpecsType = GoogleCloudDatacatalogV1CloudBigtableInstanceSpecCloudBigtableClusterSpec::class;
-    protected $cloudBigtableClusterSpecsDataType = 'array';
-    /**
-     * The list of clusters for the Instance.
-     *
-     * @param GoogleCloudDatacatalogV1CloudBigtableInstanceSpecCloudBigtableClusterSpec[] $cloudBigtableClusterSpecs
-     */
-    public function setCloudBigtableClusterSpecs($cloudBigtableClusterSpecs)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1CloudBigtableInstanceSpec extends \Google\Collection
     {
+        protected $collection_key = 'cloudBigtableClusterSpecs';
+        protected $cloudBigtableClusterSpecsType = GoogleCloudDatacatalogV1CloudBigtableInstanceSpecCloudBigtableClusterSpec::class;
+        protected $cloudBigtableClusterSpecsDataType = 'array';
+        /**
+         * The list of clusters for the Instance.
+         *
+         * @param GoogleCloudDatacatalogV1CloudBigtableInstanceSpecCloudBigtableClusterSpec[] $cloudBigtableClusterSpecs
+         */
+        public function setCloudBigtableClusterSpecs($cloudBigtableClusterSpecs)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1CloudBigtableInstanceSpecCloudBigtableClusterSpec[]
+         */
+        public function getCloudBigtableClusterSpecs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1CloudBigtableInstanceSpecCloudBigtableClusterSpec[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1CloudBigtableInstanceSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudBigtableClusterSpecs()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1CloudBigtableInstanceSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1CloudBigtableInstanceSpec
     {
     }
 }

@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ContentStreamTypeAssignedTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * Content stream type is not specified in this version. This enum is a place
-     * holder for a default value and does not represent a real content stream
-     * type.
-     */
-    public const CONTENT_STREAM_TYPE_CONTENT_STREAM_TYPE_UNSPECIFIED = 'CONTENT_STREAM_TYPE_UNSPECIFIED';
-    /**
-     * The content is being live-streamed.
-     */
-    public const CONTENT_STREAM_TYPE_CONTENT_LIVE_STREAM = 'CONTENT_LIVE_STREAM';
-    /**
-     * The content is viewed on-demand.
-     */
-    public const CONTENT_STREAM_TYPE_CONTENT_ON_DEMAND = 'CONTENT_ON_DEMAND';
-    /**
-     * Output only. The content stream type.
-     *
-     * @var string
-     */
-    public $contentStreamType;
-    /**
-     * Required. The targeting_option_id field when targeting_type is
-     * `TARGETING_TYPE_CONTENT_STREAM_TYPE`.
-     *
-     * @var string
-     */
-    public $targetingOptionId;
-    /**
-     * Output only. The content stream type.
-     *
-     * Accepted values: CONTENT_STREAM_TYPE_UNSPECIFIED, CONTENT_LIVE_STREAM,
-     * CONTENT_ON_DEMAND
-     *
-     * @param self::CONTENT_STREAM_TYPE_* $contentStreamType
-     */
-    public function setContentStreamType($contentStreamType)
+namespace Google\Service\DisplayVideo {
+    class ContentStreamTypeAssignedTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * Content stream type is not specified in this version. This enum is a place
+         * holder for a default value and does not represent a real content stream
+         * type.
+         */
+        public const CONTENT_STREAM_TYPE_CONTENT_STREAM_TYPE_UNSPECIFIED = 'CONTENT_STREAM_TYPE_UNSPECIFIED';
+        /**
+         * The content is being live-streamed.
+         */
+        public const CONTENT_STREAM_TYPE_CONTENT_LIVE_STREAM = 'CONTENT_LIVE_STREAM';
+        /**
+         * The content is viewed on-demand.
+         */
+        public const CONTENT_STREAM_TYPE_CONTENT_ON_DEMAND = 'CONTENT_ON_DEMAND';
+        /**
+         * Output only. The content stream type.
+         *
+         * @var string
+         */
+        public $contentStreamType;
+        /**
+         * Required. The targeting_option_id field when targeting_type is
+         * `TARGETING_TYPE_CONTENT_STREAM_TYPE`.
+         *
+         * @var string
+         */
+        public $targetingOptionId;
+        /**
+         * Output only. The content stream type.
+         *
+         * Accepted values: CONTENT_STREAM_TYPE_UNSPECIFIED, CONTENT_LIVE_STREAM,
+         * CONTENT_ON_DEMAND
+         *
+         * @param self::CONTENT_STREAM_TYPE_* $contentStreamType
+         */
+        public function setContentStreamType($contentStreamType)
+        {
+        }
+        /**
+         * @return self::CONTENT_STREAM_TYPE_*
+         */
+        public function getContentStreamType()
+        {
+        }
+        /**
+         * Required. The targeting_option_id field when targeting_type is
+         * `TARGETING_TYPE_CONTENT_STREAM_TYPE`.
+         *
+         * @param string $targetingOptionId
+         */
+        public function setTargetingOptionId($targetingOptionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetingOptionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CONTENT_STREAM_TYPE_*
+     * Runtime class alias of \Google\Service\DisplayVideo\ContentStreamTypeAssignedTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentStreamType()
-    {
-    }
-    /**
-     * Required. The targeting_option_id field when targeting_type is
-     * `TARGETING_TYPE_CONTENT_STREAM_TYPE`.
-     *
-     * @param string $targetingOptionId
-     */
-    public function setTargetingOptionId($targetingOptionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetingOptionId()
+    class Google_Service_DisplayVideo_ContentStreamTypeAssignedTargetingOptionDetails extends \Google\Service\DisplayVideo\ContentStreamTypeAssignedTargetingOptionDetails
     {
     }
 }

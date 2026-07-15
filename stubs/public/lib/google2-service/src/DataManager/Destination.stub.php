@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class Destination extends \Google\Model
-{
-    protected $linkedAccountType = ProductAccount::class;
-    protected $linkedAccountDataType = '';
-    protected $loginAccountType = ProductAccount::class;
-    protected $loginAccountDataType = '';
-    protected $operatingAccountType = ProductAccount::class;
-    protected $operatingAccountDataType = '';
-    /**
-     * Required. The object within the product account to ingest into. For
-     * example, a Google Ads audience ID, a Display & Video 360 audience ID or a
-     * Google Ads conversion action ID.
-     *
-     * @var string
-     */
-    public $productDestinationId;
-    /**
-     * Optional. ID for this `Destination` resource, unique within the request.
-     * Use to reference this `Destination` in the IngestEventsRequest and
-     * IngestAudienceMembersRequest.
-     *
-     * @var string
-     */
-    public $reference;
-    /**
-     * Optional. An account that the calling user's `login_account` has access to,
-     * through an established account link. For example, a data partner's
-     * `login_account` might have access to a client's `linked_account`. The
-     * partner might use this field to send data from the `linked_account` to
-     * another `operating_account`.
-     *
-     * @param ProductAccount $linkedAccount
-     */
-    public function setLinkedAccount(ProductAccount $linkedAccount)
+namespace Google\Service\DataManager {
+    class Destination extends \Google\Model
     {
+        protected $linkedAccountType = ProductAccount::class;
+        protected $linkedAccountDataType = '';
+        protected $loginAccountType = ProductAccount::class;
+        protected $loginAccountDataType = '';
+        protected $operatingAccountType = ProductAccount::class;
+        protected $operatingAccountDataType = '';
+        /**
+         * Required. The object within the product account to ingest into. For
+         * example, a Google Ads audience ID, a Display & Video 360 audience ID or a
+         * Google Ads conversion action ID.
+         *
+         * @var string
+         */
+        public $productDestinationId;
+        /**
+         * Optional. ID for this `Destination` resource, unique within the request.
+         * Use to reference this `Destination` in the IngestEventsRequest and
+         * IngestAudienceMembersRequest.
+         *
+         * @var string
+         */
+        public $reference;
+        /**
+         * Optional. An account that the calling user's `login_account` has access to,
+         * through an established account link. For example, a data partner's
+         * `login_account` might have access to a client's `linked_account`. The
+         * partner might use this field to send data from the `linked_account` to
+         * another `operating_account`.
+         *
+         * @param ProductAccount $linkedAccount
+         */
+        public function setLinkedAccount(ProductAccount $linkedAccount)
+        {
+        }
+        /**
+         * @return ProductAccount
+         */
+        public function getLinkedAccount()
+        {
+        }
+        /**
+         * Optional. The account used to make this API call. To add or remove data
+         * from the `operating_account`, this `login_account` must have write access
+         * to the `operating_account`. For example, a manager account of the
+         * `operating_account`, or an account with an established link to the
+         * `operating_account`.
+         *
+         * @param ProductAccount $loginAccount
+         */
+        public function setLoginAccount(ProductAccount $loginAccount)
+        {
+        }
+        /**
+         * @return ProductAccount
+         */
+        public function getLoginAccount()
+        {
+        }
+        /**
+         * Required. The account to send the data to or remove the data from.
+         *
+         * @param ProductAccount $operatingAccount
+         */
+        public function setOperatingAccount(ProductAccount $operatingAccount)
+        {
+        }
+        /**
+         * @return ProductAccount
+         */
+        public function getOperatingAccount()
+        {
+        }
+        /**
+         * Required. The object within the product account to ingest into. For
+         * example, a Google Ads audience ID, a Display & Video 360 audience ID or a
+         * Google Ads conversion action ID.
+         *
+         * @param string $productDestinationId
+         */
+        public function setProductDestinationId($productDestinationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductDestinationId()
+        {
+        }
+        /**
+         * Optional. ID for this `Destination` resource, unique within the request.
+         * Use to reference this `Destination` in the IngestEventsRequest and
+         * IngestAudienceMembersRequest.
+         *
+         * @param string $reference
+         */
+        public function setReference($reference)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReference()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ProductAccount
+     * Runtime class alias of \Google\Service\DataManager\Destination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLinkedAccount()
-    {
-    }
-    /**
-     * Optional. The account used to make this API call. To add or remove data
-     * from the `operating_account`, this `login_account` must have write access
-     * to the `operating_account`. For example, a manager account of the
-     * `operating_account`, or an account with an established link to the
-     * `operating_account`.
-     *
-     * @param ProductAccount $loginAccount
-     */
-    public function setLoginAccount(ProductAccount $loginAccount)
-    {
-    }
-    /**
-     * @return ProductAccount
-     */
-    public function getLoginAccount()
-    {
-    }
-    /**
-     * Required. The account to send the data to or remove the data from.
-     *
-     * @param ProductAccount $operatingAccount
-     */
-    public function setOperatingAccount(ProductAccount $operatingAccount)
-    {
-    }
-    /**
-     * @return ProductAccount
-     */
-    public function getOperatingAccount()
-    {
-    }
-    /**
-     * Required. The object within the product account to ingest into. For
-     * example, a Google Ads audience ID, a Display & Video 360 audience ID or a
-     * Google Ads conversion action ID.
-     *
-     * @param string $productDestinationId
-     */
-    public function setProductDestinationId($productDestinationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductDestinationId()
-    {
-    }
-    /**
-     * Optional. ID for this `Destination` resource, unique within the request.
-     * Use to reference this `Destination` in the IngestEventsRequest and
-     * IngestAudienceMembersRequest.
-     *
-     * @param string $reference
-     */
-    public function setReference($reference)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReference()
+    class Google_Service_DataManager_Destination extends \Google\Service\DataManager\Destination
     {
     }
 }

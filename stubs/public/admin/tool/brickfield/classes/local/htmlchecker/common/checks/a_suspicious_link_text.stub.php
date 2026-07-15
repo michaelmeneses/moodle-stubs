@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield\local\htmlchecker\common\checks;
 
+use tool_brickfield\local\htmlchecker\brickfield_accessibility;
+use tool_brickfield\local\htmlchecker\common\brickfield_accessibility_test;
+use tool_brickfield\manager;
 /**
  * Brickfield accessibility HTML checker library.
  *

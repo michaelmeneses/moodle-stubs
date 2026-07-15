@@ -21,43 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Advisorynotifications\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $advisorynotificationsService = new Google\Service\Advisorynotifications(...);
- *   $locations = $advisorynotificationsService->organizations_locations;
- *  </code>
- */
-class OrganizationsLocations extends \Google\Service\Resource
-{
+namespace Google\Service\Advisorynotifications\Resource {
+    use Google\Service\Advisorynotifications\GoogleCloudAdvisorynotificationsV1Settings;
     /**
-     * Get notification settings. (locations.getSettings)
-     *
-     * @param string $name Required. The resource name of the settings to retrieve.
-     * Format: organizations/{organization}/locations/{location}/settings or
-     * projects/{projects}/locations/{location}/settings.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAdvisorynotificationsV1Settings
-     * @throws \Google\Service\Exception
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $advisorynotificationsService = new Google\Service\Advisorynotifications(...);
+     *   $locations = $advisorynotificationsService->organizations_locations;
+     *  </code>
      */
-    public function getSettings($name, $optParams = [])
+    class OrganizationsLocations extends \Google\Service\Resource
     {
+        /**
+         * Get notification settings. (locations.getSettings)
+         *
+         * @param string $name Required. The resource name of the settings to retrieve.
+         * Format: organizations/{organization}/locations/{location}/settings or
+         * projects/{projects}/locations/{location}/settings.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAdvisorynotificationsV1Settings
+         * @throws \Google\Service\Exception
+         */
+        public function getSettings($name, $optParams = [])
+        {
+        }
+        /**
+         * Update notification settings. (locations.updateSettings)
+         *
+         * @param string $name Identifier. The resource name of the settings to
+         * retrieve. Format: organizations/{organization}/locations/{location}/settings
+         * or projects/{projects}/locations/{location}/settings.
+         * @param GoogleCloudAdvisorynotificationsV1Settings $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAdvisorynotificationsV1Settings
+         * @throws \Google\Service\Exception
+         */
+        public function updateSettings($name, GoogleCloudAdvisorynotificationsV1Settings $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Update notification settings. (locations.updateSettings)
-     *
-     * @param string $name Identifier. The resource name of the settings to
-     * retrieve. Format: organizations/{organization}/locations/{location}/settings
-     * or projects/{projects}/locations/{location}/settings.
-     * @param GoogleCloudAdvisorynotificationsV1Settings $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAdvisorynotificationsV1Settings
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Advisorynotifications\Resource\OrganizationsLocations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function updateSettings($name, GoogleCloudAdvisorynotificationsV1Settings $postBody, $optParams = [])
+    class Google_Service_Advisorynotifications_Resource_OrganizationsLocations extends \Google\Service\Advisorynotifications\Resource\OrganizationsLocations
     {
     }
 }

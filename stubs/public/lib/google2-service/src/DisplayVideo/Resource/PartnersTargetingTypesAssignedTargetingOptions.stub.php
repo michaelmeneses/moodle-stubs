@@ -21,101 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo\Resource;
-
-/**
- * The "assignedTargetingOptions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $displayvideoService = new Google\Service\DisplayVideo(...);
- *   $assignedTargetingOptions = $displayvideoService->partners_targetingTypes_assignedTargetingOptions;
- *  </code>
- */
-class PartnersTargetingTypesAssignedTargetingOptions extends \Google\Service\Resource
-{
+namespace Google\Service\DisplayVideo\Resource {
+    use Google\Service\DisplayVideo\AssignedTargetingOption;
+    use Google\Service\DisplayVideo\DisplayvideoEmpty;
+    use Google\Service\DisplayVideo\ListPartnerAssignedTargetingOptionsResponse;
     /**
-     * Assigns a targeting option to a partner. Returns the assigned targeting
-     * option if successful. (assignedTargetingOptions.create)
-     *
-     * @param string $partnerId Required. The ID of the partner.
-     * @param string $targetingType Required. Identifies the type of this assigned
-     * targeting option. Supported targeting types: * `TARGETING_TYPE_CHANNEL`
-     * @param AssignedTargetingOption $postBody
-     * @param array $optParams Optional parameters.
-     * @return AssignedTargetingOption
-     * @throws \Google\Service\Exception
+     * The "assignedTargetingOptions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $displayvideoService = new Google\Service\DisplayVideo(...);
+     *   $assignedTargetingOptions = $displayvideoService->partners_targetingTypes_assignedTargetingOptions;
+     *  </code>
      */
-    public function create($partnerId, $targetingType, AssignedTargetingOption $postBody, $optParams = [])
+    class PartnersTargetingTypesAssignedTargetingOptions extends \Google\Service\Resource
     {
+        /**
+         * Assigns a targeting option to a partner. Returns the assigned targeting
+         * option if successful. (assignedTargetingOptions.create)
+         *
+         * @param string $partnerId Required. The ID of the partner.
+         * @param string $targetingType Required. Identifies the type of this assigned
+         * targeting option. Supported targeting types: * `TARGETING_TYPE_CHANNEL`
+         * @param AssignedTargetingOption $postBody
+         * @param array $optParams Optional parameters.
+         * @return AssignedTargetingOption
+         * @throws \Google\Service\Exception
+         */
+        public function create($partnerId, $targetingType, AssignedTargetingOption $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes an assigned targeting option from a partner.
+         * (assignedTargetingOptions.delete)
+         *
+         * @param string $partnerId Required. The ID of the partner.
+         * @param string $targetingType Required. Identifies the type of this assigned
+         * targeting option. Supported targeting types: * `TARGETING_TYPE_CHANNEL`
+         * @param string $assignedTargetingOptionId Required. The ID of the assigned
+         * targeting option to delete.
+         * @param array $optParams Optional parameters.
+         * @return DisplayvideoEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($partnerId, $targetingType, $assignedTargetingOptionId, $optParams = [])
+        {
+        }
+        /**
+         * Gets a single targeting option assigned to a partner.
+         * (assignedTargetingOptions.get)
+         *
+         * @param string $partnerId Required. The ID of the partner.
+         * @param string $targetingType Required. Identifies the type of this assigned
+         * targeting option. Supported targeting types: * `TARGETING_TYPE_CHANNEL`
+         * @param string $assignedTargetingOptionId Required. An identifier unique to
+         * the targeting type in this partner that identifies the assigned targeting
+         * option being requested.
+         * @param array $optParams Optional parameters.
+         * @return AssignedTargetingOption
+         * @throws \Google\Service\Exception
+         */
+        public function get($partnerId, $targetingType, $assignedTargetingOptionId, $optParams = [])
+        {
+        }
+        /**
+         * Lists the targeting options assigned to a partner.
+         * (assignedTargetingOptions.listPartnersTargetingTypesAssignedTargetingOptions)
+         *
+         * @param string $partnerId Required. The ID of the partner.
+         * @param string $targetingType Required. Identifies the type of assigned
+         * targeting options to list. Supported targeting types: *
+         * `TARGETING_TYPE_CHANNEL`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Allows filtering by assigned targeting option
+         * fields. Supported syntax: * Filter expressions are made up of one or more
+         * restrictions. * Restrictions can be combined by the logical operator `OR`. *
+         * A restriction has the form of `{field} {operator} {value}`. * All fields must
+         * use the `EQUALS (=)` operator. Supported fields: *
+         * `assignedTargetingOptionId` Examples: * `AssignedTargetingOption` resource
+         * with ID 123456: `assignedTargetingOptionId="123456"` The length of this field
+         * should be no more than 500 characters. Reference our [filter `LIST`
+         * requests](/display-video/api/guides/how-tos/filters) guide for more
+         * information.
+         * @opt_param string orderBy Field by which to sort the list. Acceptable values
+         * are: * `assignedTargetingOptionId` (default) The default sorting order is
+         * ascending. To specify descending order for a field, a suffix "desc" should be
+         * added to the field name. Example: `assignedTargetingOptionId desc`.
+         * @opt_param int pageSize Requested page size. Must be between `1` and `200`.
+         * If unspecified will default to `100`. Returns error code `INVALID_ARGUMENT`
+         * if an invalid value is specified.
+         * @opt_param string pageToken A token identifying a page of results the server
+         * should return. Typically, this is the value of next_page_token returned from
+         * the previous call to `ListPartnerAssignedTargetingOptions` method. If not
+         * specified, the first page of results will be returned.
+         * @return ListPartnerAssignedTargetingOptionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listPartnersTargetingTypesAssignedTargetingOptions($partnerId, $targetingType, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes an assigned targeting option from a partner.
-     * (assignedTargetingOptions.delete)
-     *
-     * @param string $partnerId Required. The ID of the partner.
-     * @param string $targetingType Required. Identifies the type of this assigned
-     * targeting option. Supported targeting types: * `TARGETING_TYPE_CHANNEL`
-     * @param string $assignedTargetingOptionId Required. The ID of the assigned
-     * targeting option to delete.
-     * @param array $optParams Optional parameters.
-     * @return DisplayvideoEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\DisplayVideo\Resource\PartnersTargetingTypesAssignedTargetingOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($partnerId, $targetingType, $assignedTargetingOptionId, $optParams = [])
-    {
-    }
-    /**
-     * Gets a single targeting option assigned to a partner.
-     * (assignedTargetingOptions.get)
-     *
-     * @param string $partnerId Required. The ID of the partner.
-     * @param string $targetingType Required. Identifies the type of this assigned
-     * targeting option. Supported targeting types: * `TARGETING_TYPE_CHANNEL`
-     * @param string $assignedTargetingOptionId Required. An identifier unique to
-     * the targeting type in this partner that identifies the assigned targeting
-     * option being requested.
-     * @param array $optParams Optional parameters.
-     * @return AssignedTargetingOption
-     * @throws \Google\Service\Exception
-     */
-    public function get($partnerId, $targetingType, $assignedTargetingOptionId, $optParams = [])
-    {
-    }
-    /**
-     * Lists the targeting options assigned to a partner.
-     * (assignedTargetingOptions.listPartnersTargetingTypesAssignedTargetingOptions)
-     *
-     * @param string $partnerId Required. The ID of the partner.
-     * @param string $targetingType Required. Identifies the type of assigned
-     * targeting options to list. Supported targeting types: *
-     * `TARGETING_TYPE_CHANNEL`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Allows filtering by assigned targeting option
-     * fields. Supported syntax: * Filter expressions are made up of one or more
-     * restrictions. * Restrictions can be combined by the logical operator `OR`. *
-     * A restriction has the form of `{field} {operator} {value}`. * All fields must
-     * use the `EQUALS (=)` operator. Supported fields: *
-     * `assignedTargetingOptionId` Examples: * `AssignedTargetingOption` resource
-     * with ID 123456: `assignedTargetingOptionId="123456"` The length of this field
-     * should be no more than 500 characters. Reference our [filter `LIST`
-     * requests](/display-video/api/guides/how-tos/filters) guide for more
-     * information.
-     * @opt_param string orderBy Field by which to sort the list. Acceptable values
-     * are: * `assignedTargetingOptionId` (default) The default sorting order is
-     * ascending. To specify descending order for a field, a suffix "desc" should be
-     * added to the field name. Example: `assignedTargetingOptionId desc`.
-     * @opt_param int pageSize Requested page size. Must be between `1` and `200`.
-     * If unspecified will default to `100`. Returns error code `INVALID_ARGUMENT`
-     * if an invalid value is specified.
-     * @opt_param string pageToken A token identifying a page of results the server
-     * should return. Typically, this is the value of next_page_token returned from
-     * the previous call to `ListPartnerAssignedTargetingOptions` method. If not
-     * specified, the first page of results will be returned.
-     * @return ListPartnerAssignedTargetingOptionsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listPartnersTargetingTypesAssignedTargetingOptions($partnerId, $targetingType, $optParams = [])
+    class Google_Service_DisplayVideo_Resource_PartnersTargetingTypesAssignedTargetingOptions extends \Google\Service\DisplayVideo\Resource\PartnersTargetingTypesAssignedTargetingOptions
     {
     }
 }

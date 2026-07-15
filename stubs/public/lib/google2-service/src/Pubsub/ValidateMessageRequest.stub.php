@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class ValidateMessageRequest extends \Google\Model
-{
-    /**
-     * Unspecified
-     */
-    public const ENCODING_ENCODING_UNSPECIFIED = 'ENCODING_UNSPECIFIED';
-    /**
-     * JSON encoding
-     */
-    public const ENCODING_JSON = 'JSON';
-    /**
-     * Binary encoding, as defined by the schema type. For some schema types,
-     * binary encoding may not be available.
-     */
-    public const ENCODING_BINARY = 'BINARY';
-    /**
-     * The encoding expected for messages
-     *
-     * @var string
-     */
-    public $encoding;
-    /**
-     * Message to validate against the provided `schema_spec`.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Name of the schema against which to validate. Format is
-     * `projects/{project}/schemas/{schema}`.
-     *
-     * @var string
-     */
-    public $name;
-    protected $schemaType = Schema::class;
-    protected $schemaDataType = '';
-    /**
-     * The encoding expected for messages
-     *
-     * Accepted values: ENCODING_UNSPECIFIED, JSON, BINARY
-     *
-     * @param self::ENCODING_* $encoding
-     */
-    public function setEncoding($encoding)
+namespace Google\Service\Pubsub {
+    class ValidateMessageRequest extends \Google\Model
     {
+        /**
+         * Unspecified
+         */
+        public const ENCODING_ENCODING_UNSPECIFIED = 'ENCODING_UNSPECIFIED';
+        /**
+         * JSON encoding
+         */
+        public const ENCODING_JSON = 'JSON';
+        /**
+         * Binary encoding, as defined by the schema type. For some schema types,
+         * binary encoding may not be available.
+         */
+        public const ENCODING_BINARY = 'BINARY';
+        /**
+         * The encoding expected for messages
+         *
+         * @var string
+         */
+        public $encoding;
+        /**
+         * Message to validate against the provided `schema_spec`.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Name of the schema against which to validate. Format is
+         * `projects/{project}/schemas/{schema}`.
+         *
+         * @var string
+         */
+        public $name;
+        protected $schemaType = Schema::class;
+        protected $schemaDataType = '';
+        /**
+         * The encoding expected for messages
+         *
+         * Accepted values: ENCODING_UNSPECIFIED, JSON, BINARY
+         *
+         * @param self::ENCODING_* $encoding
+         */
+        public function setEncoding($encoding)
+        {
+        }
+        /**
+         * @return self::ENCODING_*
+         */
+        public function getEncoding()
+        {
+        }
+        /**
+         * Message to validate against the provided `schema_spec`.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * Name of the schema against which to validate. Format is
+         * `projects/{project}/schemas/{schema}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Ad-hoc schema against which to validate
+         *
+         * @param Schema $schema
+         */
+        public function setSchema(Schema $schema)
+        {
+        }
+        /**
+         * @return Schema
+         */
+        public function getSchema()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ENCODING_*
+     * Runtime class alias of \Google\Service\Pubsub\ValidateMessageRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncoding()
-    {
-    }
-    /**
-     * Message to validate against the provided `schema_spec`.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * Name of the schema against which to validate. Format is
-     * `projects/{project}/schemas/{schema}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Ad-hoc schema against which to validate
-     *
-     * @param Schema $schema
-     */
-    public function setSchema(Schema $schema)
-    {
-    }
-    /**
-     * @return Schema
-     */
-    public function getSchema()
+    class Google_Service_Pubsub_ValidateMessageRequest extends \Google\Service\Pubsub\ValidateMessageRequest
     {
     }
 }

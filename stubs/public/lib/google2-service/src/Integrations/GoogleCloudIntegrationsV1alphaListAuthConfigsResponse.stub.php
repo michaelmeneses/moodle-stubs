@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaListAuthConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'authConfigs';
-    protected $authConfigsType = GoogleCloudIntegrationsV1alphaAuthConfig::class;
-    protected $authConfigsDataType = 'array';
-    /**
-     * The token used to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of AuthConfigs retrieved.
-     *
-     * @param GoogleCloudIntegrationsV1alphaAuthConfig[] $authConfigs
-     */
-    public function setAuthConfigs($authConfigs)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaListAuthConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'authConfigs';
+        protected $authConfigsType = GoogleCloudIntegrationsV1alphaAuthConfig::class;
+        protected $authConfigsDataType = 'array';
+        /**
+         * The token used to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of AuthConfigs retrieved.
+         *
+         * @param GoogleCloudIntegrationsV1alphaAuthConfig[] $authConfigs
+         */
+        public function setAuthConfigs($authConfigs)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaAuthConfig[]
+         */
+        public function getAuthConfigs()
+        {
+        }
+        /**
+         * The token used to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaAuthConfig[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListAuthConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthConfigs()
-    {
-    }
-    /**
-     * The token used to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaListAuthConfigsResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListAuthConfigsResponse
     {
     }
 }

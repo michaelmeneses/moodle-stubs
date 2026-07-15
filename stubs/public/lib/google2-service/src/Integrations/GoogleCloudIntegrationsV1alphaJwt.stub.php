@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaJwt extends \Google\Model
-{
-    /**
-     * The token calculated by the header, payload and signature.
-     *
-     * @var string
-     */
-    public $jwt;
-    /**
-     * Identifies which algorithm is used to generate the signature.
-     *
-     * @var string
-     */
-    public $jwtHeader;
-    /**
-     * Contains a set of claims. The JWT specification defines seven Registered
-     * Claim Names which are the standard fields commonly included in tokens.
-     * Custom claims are usually also included, depending on the purpose of the
-     * token.
-     *
-     * @var string
-     */
-    public $jwtPayload;
-    /**
-     * User's pre-shared secret to sign the token.
-     *
-     * @var string
-     */
-    public $secret;
-    /**
-     * The token calculated by the header, payload and signature.
-     *
-     * @param string $jwt
-     */
-    public function setJwt($jwt)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaJwt extends \Google\Model
     {
+        /**
+         * The token calculated by the header, payload and signature.
+         *
+         * @var string
+         */
+        public $jwt;
+        /**
+         * Identifies which algorithm is used to generate the signature.
+         *
+         * @var string
+         */
+        public $jwtHeader;
+        /**
+         * Contains a set of claims. The JWT specification defines seven Registered
+         * Claim Names which are the standard fields commonly included in tokens.
+         * Custom claims are usually also included, depending on the purpose of the
+         * token.
+         *
+         * @var string
+         */
+        public $jwtPayload;
+        /**
+         * User's pre-shared secret to sign the token.
+         *
+         * @var string
+         */
+        public $secret;
+        /**
+         * The token calculated by the header, payload and signature.
+         *
+         * @param string $jwt
+         */
+        public function setJwt($jwt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJwt()
+        {
+        }
+        /**
+         * Identifies which algorithm is used to generate the signature.
+         *
+         * @param string $jwtHeader
+         */
+        public function setJwtHeader($jwtHeader)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJwtHeader()
+        {
+        }
+        /**
+         * Contains a set of claims. The JWT specification defines seven Registered
+         * Claim Names which are the standard fields commonly included in tokens.
+         * Custom claims are usually also included, depending on the purpose of the
+         * token.
+         *
+         * @param string $jwtPayload
+         */
+        public function setJwtPayload($jwtPayload)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJwtPayload()
+        {
+        }
+        /**
+         * User's pre-shared secret to sign the token.
+         *
+         * @param string $secret
+         */
+        public function setSecret($secret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecret()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaJwt registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJwt()
-    {
-    }
-    /**
-     * Identifies which algorithm is used to generate the signature.
-     *
-     * @param string $jwtHeader
-     */
-    public function setJwtHeader($jwtHeader)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJwtHeader()
-    {
-    }
-    /**
-     * Contains a set of claims. The JWT specification defines seven Registered
-     * Claim Names which are the standard fields commonly included in tokens.
-     * Custom claims are usually also included, depending on the purpose of the
-     * token.
-     *
-     * @param string $jwtPayload
-     */
-    public function setJwtPayload($jwtPayload)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJwtPayload()
-    {
-    }
-    /**
-     * User's pre-shared secret to sign the token.
-     *
-     * @param string $secret
-     */
-    public function setSecret($secret)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecret()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaJwt extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaJwt
     {
     }
 }

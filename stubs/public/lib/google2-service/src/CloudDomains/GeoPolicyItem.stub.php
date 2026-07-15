@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDomains;
-
-class GeoPolicyItem extends \Google\Collection
-{
-    protected $collection_key = 'signatureRrdata';
-    protected $healthCheckedTargetsType = HealthCheckTargets::class;
-    protected $healthCheckedTargetsDataType = '';
-    /**
-     * The geo-location granularity is a GCP region. This location string should
-     * correspond to a GCP region. e.g. "us-east1", "southamerica-east1", "asia-
-     * east1", etc.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * @var string[]
-     */
-    public $rrdata;
-    /**
-     * DNSSEC generated signatures for all the `rrdata` within this item. When
-     * using health-checked targets for DNSSEC-enabled zones, you can only use at
-     * most one health-checked IP address per item.
-     *
-     * @var string[]
-     */
-    public $signatureRrdata;
-    /**
-     * For A and AAAA types only. Endpoints to return in the query result only if
-     * they are healthy. These can be specified along with `rrdata` within this
-     * item.
-     *
-     * @param HealthCheckTargets $healthCheckedTargets
-     */
-    public function setHealthCheckedTargets(HealthCheckTargets $healthCheckedTargets)
+namespace Google\Service\CloudDomains {
+    class GeoPolicyItem extends \Google\Collection
     {
+        protected $collection_key = 'signatureRrdata';
+        protected $healthCheckedTargetsType = HealthCheckTargets::class;
+        protected $healthCheckedTargetsDataType = '';
+        /**
+         * The geo-location granularity is a GCP region. This location string should
+         * correspond to a GCP region. e.g. "us-east1", "southamerica-east1", "asia-
+         * east1", etc.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * @var string[]
+         */
+        public $rrdata;
+        /**
+         * DNSSEC generated signatures for all the `rrdata` within this item. When
+         * using health-checked targets for DNSSEC-enabled zones, you can only use at
+         * most one health-checked IP address per item.
+         *
+         * @var string[]
+         */
+        public $signatureRrdata;
+        /**
+         * For A and AAAA types only. Endpoints to return in the query result only if
+         * they are healthy. These can be specified along with `rrdata` within this
+         * item.
+         *
+         * @param HealthCheckTargets $healthCheckedTargets
+         */
+        public function setHealthCheckedTargets(HealthCheckTargets $healthCheckedTargets)
+        {
+        }
+        /**
+         * @return HealthCheckTargets
+         */
+        public function getHealthCheckedTargets()
+        {
+        }
+        /**
+         * The geo-location granularity is a GCP region. This location string should
+         * correspond to a GCP region. e.g. "us-east1", "southamerica-east1", "asia-
+         * east1", etc.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * @param string[] $rrdata
+         */
+        public function setRrdata($rrdata)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRrdata()
+        {
+        }
+        /**
+         * DNSSEC generated signatures for all the `rrdata` within this item. When
+         * using health-checked targets for DNSSEC-enabled zones, you can only use at
+         * most one health-checked IP address per item.
+         *
+         * @param string[] $signatureRrdata
+         */
+        public function setSignatureRrdata($signatureRrdata)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSignatureRrdata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HealthCheckTargets
+     * Runtime class alias of \Google\Service\CloudDomains\GeoPolicyItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHealthCheckedTargets()
-    {
-    }
-    /**
-     * The geo-location granularity is a GCP region. This location string should
-     * correspond to a GCP region. e.g. "us-east1", "southamerica-east1", "asia-
-     * east1", etc.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * @param string[] $rrdata
-     */
-    public function setRrdata($rrdata)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRrdata()
-    {
-    }
-    /**
-     * DNSSEC generated signatures for all the `rrdata` within this item. When
-     * using health-checked targets for DNSSEC-enabled zones, you can only use at
-     * most one health-checked IP address per item.
-     *
-     * @param string[] $signatureRrdata
-     */
-    public function setSignatureRrdata($signatureRrdata)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSignatureRrdata()
+    class Google_Service_CloudDomains_GeoPolicyItem extends \Google\Service\CloudDomains\GeoPolicyItem
     {
     }
 }

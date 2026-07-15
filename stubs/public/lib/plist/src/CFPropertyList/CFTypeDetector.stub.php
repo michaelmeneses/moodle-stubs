@@ -50,6 +50,9 @@
  */
 namespace CFPropertyList;
 
+use DateTime;
+use Iterator;
+use stdClass;
 /**
  * CFTypeDetector
  * Interface for converting native PHP data structures to CFPropertyList objects.

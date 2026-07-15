@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class InventoryOsInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $architecture;
-    /**
-     * @var string
-     */
-    public $hostname;
-    /**
-     * @var string
-     */
-    public $kernelRelease;
-    /**
-     * @var string
-     */
-    public $kernelVersion;
-    /**
-     * @var string
-     */
-    public $longName;
-    /**
-     * @var string
-     */
-    public $osconfigAgentVersion;
-    /**
-     * @var string
-     */
-    public $shortName;
-    /**
-     * @var string
-     */
-    public $version;
-    /**
-     * @param string
-     */
-    public function setArchitecture($architecture)
+namespace Google\Service\OSConfig {
+    class InventoryOsInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $architecture;
+        /**
+         * @var string
+         */
+        public $hostname;
+        /**
+         * @var string
+         */
+        public $kernelRelease;
+        /**
+         * @var string
+         */
+        public $kernelVersion;
+        /**
+         * @var string
+         */
+        public $longName;
+        /**
+         * @var string
+         */
+        public $osconfigAgentVersion;
+        /**
+         * @var string
+         */
+        public $shortName;
+        /**
+         * @var string
+         */
+        public $version;
+        /**
+         * @param string
+         */
+        public function setArchitecture($architecture)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArchitecture()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHostname($hostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostname()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKernelRelease($kernelRelease)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKernelRelease()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKernelVersion($kernelVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKernelVersion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLongName($longName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLongName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOsconfigAgentVersion($osconfigAgentVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOsconfigAgentVersion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setShortName($shortName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShortName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\InventoryOsInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArchitecture()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHostname($hostname)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostname()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKernelRelease($kernelRelease)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKernelRelease()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKernelVersion($kernelVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKernelVersion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLongName($longName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLongName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOsconfigAgentVersion($osconfigAgentVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOsconfigAgentVersion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setShortName($shortName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShortName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_OSConfig_InventoryOsInfo extends \Google\Service\OSConfig\InventoryOsInfo
     {
     }
 }

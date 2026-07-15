@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class Impersonation extends \Google\Model
-{
-    protected $impersonatedUserType = User::class;
-    protected $impersonatedUserDataType = '';
-    /**
-     * The impersonated user.
-     *
-     * @param User $impersonatedUser
-     */
-    public function setImpersonatedUser(User $impersonatedUser)
+namespace Google\Service\DriveActivity {
+    class Impersonation extends \Google\Model
     {
+        protected $impersonatedUserType = User::class;
+        protected $impersonatedUserDataType = '';
+        /**
+         * The impersonated user.
+         *
+         * @param User $impersonatedUser
+         */
+        public function setImpersonatedUser(User $impersonatedUser)
+        {
+        }
+        /**
+         * @return User
+         */
+        public function getImpersonatedUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return User
+     * Runtime class alias of \Google\Service\DriveActivity\Impersonation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImpersonatedUser()
+    class Google_Service_DriveActivity_Impersonation extends \Google\Service\DriveActivity\Impersonation
     {
     }
 }

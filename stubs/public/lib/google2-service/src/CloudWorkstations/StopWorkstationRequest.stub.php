@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudWorkstations;
-
-class StopWorkstationRequest extends \Google\Model
-{
-    /**
-     * Optional. If set, the request will be rejected if the latest version of the
-     * workstation on the server does not have this ETag.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Optional. If set, validate the request and preview the review, but do not
-     * actually apply it.
-     *
-     * @var bool
-     */
-    public $validateOnly;
-    /**
-     * Optional. If set, the request will be rejected if the latest version of the
-     * workstation on the server does not have this ETag.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\CloudWorkstations {
+    class StopWorkstationRequest extends \Google\Model
     {
+        /**
+         * Optional. If set, the request will be rejected if the latest version of the
+         * workstation on the server does not have this ETag.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Optional. If set, validate the request and preview the review, but do not
+         * actually apply it.
+         *
+         * @var bool
+         */
+        public $validateOnly;
+        /**
+         * Optional. If set, the request will be rejected if the latest version of the
+         * workstation on the server does not have this ETag.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Optional. If set, validate the request and preview the review, but do not
+         * actually apply it.
+         *
+         * @param bool $validateOnly
+         */
+        public function setValidateOnly($validateOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudWorkstations\StopWorkstationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * Optional. If set, validate the request and preview the review, but do not
-     * actually apply it.
-     *
-     * @param bool $validateOnly
-     */
-    public function setValidateOnly($validateOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidateOnly()
+    class Google_Service_CloudWorkstations_StopWorkstationRequest extends \Google\Service\CloudWorkstations\StopWorkstationRequest
     {
     }
 }

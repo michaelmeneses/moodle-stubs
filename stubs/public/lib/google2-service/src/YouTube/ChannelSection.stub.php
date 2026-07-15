@@ -21,141 +21,150 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ChannelSection extends \Google\Model
-{
-    protected $contentDetailsType = ChannelSectionContentDetails::class;
-    protected $contentDetailsDataType = '';
-    /**
-     * Etag of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The ID that YouTube uses to uniquely identify the channel section.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#channelSection".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $localizationsType = ChannelSectionLocalization::class;
-    protected $localizationsDataType = 'map';
-    protected $snippetType = ChannelSectionSnippet::class;
-    protected $snippetDataType = '';
-    protected $targetingType = ChannelSectionTargeting::class;
-    protected $targetingDataType = '';
-    /**
-     * The contentDetails object contains details about the channel section
-     * content, such as a list of playlists or channels featured in the section.
-     *
-     * @param ChannelSectionContentDetails $contentDetails
-     */
-    public function setContentDetails(ChannelSectionContentDetails $contentDetails)
+namespace Google\Service\YouTube {
+    class ChannelSection extends \Google\Model
     {
+        protected $contentDetailsType = ChannelSectionContentDetails::class;
+        protected $contentDetailsDataType = '';
+        /**
+         * Etag of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The ID that YouTube uses to uniquely identify the channel section.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#channelSection".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $localizationsType = ChannelSectionLocalization::class;
+        protected $localizationsDataType = 'map';
+        protected $snippetType = ChannelSectionSnippet::class;
+        protected $snippetDataType = '';
+        protected $targetingType = ChannelSectionTargeting::class;
+        protected $targetingDataType = '';
+        /**
+         * The contentDetails object contains details about the channel section
+         * content, such as a list of playlists or channels featured in the section.
+         *
+         * @param ChannelSectionContentDetails $contentDetails
+         */
+        public function setContentDetails(ChannelSectionContentDetails $contentDetails)
+        {
+        }
+        /**
+         * @return ChannelSectionContentDetails
+         */
+        public function getContentDetails()
+        {
+        }
+        /**
+         * Etag of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The ID that YouTube uses to uniquely identify the channel section.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#channelSection".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Localizations for different languages
+         *
+         * @deprecated
+         * @param ChannelSectionLocalization[] $localizations
+         */
+        public function setLocalizations($localizations)
+        {
+        }
+        /**
+         * @deprecated
+         * @return ChannelSectionLocalization[]
+         */
+        public function getLocalizations()
+        {
+        }
+        /**
+         * The snippet object contains basic details about the channel section, such
+         * as its type, style and title.
+         *
+         * @param ChannelSectionSnippet $snippet
+         */
+        public function setSnippet(ChannelSectionSnippet $snippet)
+        {
+        }
+        /**
+         * @return ChannelSectionSnippet
+         */
+        public function getSnippet()
+        {
+        }
+        /**
+         * The targeting object contains basic targeting settings about the channel
+         * section.
+         *
+         * @deprecated
+         * @param ChannelSectionTargeting $targeting
+         */
+        public function setTargeting(ChannelSectionTargeting $targeting)
+        {
+        }
+        /**
+         * @deprecated
+         * @return ChannelSectionTargeting
+         */
+        public function getTargeting()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ChannelSectionContentDetails
+     * Runtime class alias of \Google\Service\YouTube\ChannelSection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentDetails()
-    {
-    }
-    /**
-     * Etag of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * The ID that YouTube uses to uniquely identify the channel section.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#channelSection".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Localizations for different languages
-     *
-     * @deprecated
-     * @param ChannelSectionLocalization[] $localizations
-     */
-    public function setLocalizations($localizations)
-    {
-    }
-    /**
-     * @deprecated
-     * @return ChannelSectionLocalization[]
-     */
-    public function getLocalizations()
-    {
-    }
-    /**
-     * The snippet object contains basic details about the channel section, such
-     * as its type, style and title.
-     *
-     * @param ChannelSectionSnippet $snippet
-     */
-    public function setSnippet(ChannelSectionSnippet $snippet)
-    {
-    }
-    /**
-     * @return ChannelSectionSnippet
-     */
-    public function getSnippet()
-    {
-    }
-    /**
-     * The targeting object contains basic targeting settings about the channel
-     * section.
-     *
-     * @deprecated
-     * @param ChannelSectionTargeting $targeting
-     */
-    public function setTargeting(ChannelSectionTargeting $targeting)
-    {
-    }
-    /**
-     * @deprecated
-     * @return ChannelSectionTargeting
-     */
-    public function getTargeting()
+    class Google_Service_YouTube_ChannelSection extends \Google\Service\YouTube\ChannelSection
     {
     }
 }

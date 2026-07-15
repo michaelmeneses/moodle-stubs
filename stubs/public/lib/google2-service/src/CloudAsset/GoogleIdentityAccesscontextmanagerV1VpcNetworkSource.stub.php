@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class GoogleIdentityAccesscontextmanagerV1VpcNetworkSource extends \Google\Model
-{
-    protected $vpcSubnetworkType = GoogleIdentityAccesscontextmanagerV1VpcSubNetwork::class;
-    protected $vpcSubnetworkDataType = '';
-    /**
-     * Sub-segment ranges of a VPC network.
-     *
-     * @param GoogleIdentityAccesscontextmanagerV1VpcSubNetwork $vpcSubnetwork
-     */
-    public function setVpcSubnetwork(GoogleIdentityAccesscontextmanagerV1VpcSubNetwork $vpcSubnetwork)
+namespace Google\Service\CloudAsset {
+    class GoogleIdentityAccesscontextmanagerV1VpcNetworkSource extends \Google\Model
     {
+        protected $vpcSubnetworkType = GoogleIdentityAccesscontextmanagerV1VpcSubNetwork::class;
+        protected $vpcSubnetworkDataType = '';
+        /**
+         * Sub-segment ranges of a VPC network.
+         *
+         * @param GoogleIdentityAccesscontextmanagerV1VpcSubNetwork $vpcSubnetwork
+         */
+        public function setVpcSubnetwork(GoogleIdentityAccesscontextmanagerV1VpcSubNetwork $vpcSubnetwork)
+        {
+        }
+        /**
+         * @return GoogleIdentityAccesscontextmanagerV1VpcSubNetwork
+         */
+        public function getVpcSubnetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleIdentityAccesscontextmanagerV1VpcSubNetwork
+     * Runtime class alias of \Google\Service\CloudAsset\GoogleIdentityAccesscontextmanagerV1VpcNetworkSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVpcSubnetwork()
+    class Google_Service_CloudAsset_GoogleIdentityAccesscontextmanagerV1VpcNetworkSource extends \Google\Service\CloudAsset\GoogleIdentityAccesscontextmanagerV1VpcNetworkSource
     {
     }
 }

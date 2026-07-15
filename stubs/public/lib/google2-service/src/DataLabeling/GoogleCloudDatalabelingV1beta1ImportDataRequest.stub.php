@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1ImportDataRequest extends \Google\Model
-{
-    protected $inputConfigType = GoogleCloudDatalabelingV1beta1InputConfig::class;
-    protected $inputConfigDataType = '';
-    /**
-     * Email of the user who started the import task and should be notified by
-     * email. If empty no notification will be sent.
-     *
-     * @var string
-     */
-    public $userEmailAddress;
-    /**
-     * Required. Specify the input source of the data.
-     *
-     * @param GoogleCloudDatalabelingV1beta1InputConfig $inputConfig
-     */
-    public function setInputConfig(GoogleCloudDatalabelingV1beta1InputConfig $inputConfig)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1ImportDataRequest extends \Google\Model
     {
+        protected $inputConfigType = GoogleCloudDatalabelingV1beta1InputConfig::class;
+        protected $inputConfigDataType = '';
+        /**
+         * Email of the user who started the import task and should be notified by
+         * email. If empty no notification will be sent.
+         *
+         * @var string
+         */
+        public $userEmailAddress;
+        /**
+         * Required. Specify the input source of the data.
+         *
+         * @param GoogleCloudDatalabelingV1beta1InputConfig $inputConfig
+         */
+        public function setInputConfig(GoogleCloudDatalabelingV1beta1InputConfig $inputConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1InputConfig
+         */
+        public function getInputConfig()
+        {
+        }
+        /**
+         * Email of the user who started the import task and should be notified by
+         * email. If empty no notification will be sent.
+         *
+         * @param string $userEmailAddress
+         */
+        public function setUserEmailAddress($userEmailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserEmailAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1InputConfig
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ImportDataRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputConfig()
-    {
-    }
-    /**
-     * Email of the user who started the import task and should be notified by
-     * email. If empty no notification will be sent.
-     *
-     * @param string $userEmailAddress
-     */
-    public function setUserEmailAddress($userEmailAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserEmailAddress()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1ImportDataRequest extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ImportDataRequest
     {
     }
 }

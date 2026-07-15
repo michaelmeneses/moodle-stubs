@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class DeleteAccountResponse extends \Google\Model
-{
-    /**
-     * The fixed string "identitytoolkit#DeleteAccountResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The fixed string "identitytoolkit#DeleteAccountResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\IdentityToolkit {
+    class DeleteAccountResponse extends \Google\Model
     {
+        /**
+         * The fixed string "identitytoolkit#DeleteAccountResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The fixed string "identitytoolkit#DeleteAccountResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\DeleteAccountResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
+    class Google_Service_IdentityToolkit_DeleteAccountResponse extends \Google\Service\IdentityToolkit\DeleteAccountResponse
     {
     }
 }

@@ -21,228 +21,237 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class TextStyleSuggestionState extends \Google\Model
-{
-    /**
-     * Indicates if there was a suggested change to background_color.
-     *
-     * @var bool
-     */
-    public $backgroundColorSuggested;
-    /**
-     * Indicates if there was a suggested change to baseline_offset.
-     *
-     * @var bool
-     */
-    public $baselineOffsetSuggested;
-    /**
-     * Indicates if there was a suggested change to bold.
-     *
-     * @var bool
-     */
-    public $boldSuggested;
-    /**
-     * Indicates if there was a suggested change to font_size.
-     *
-     * @var bool
-     */
-    public $fontSizeSuggested;
-    /**
-     * Indicates if there was a suggested change to foreground_color.
-     *
-     * @var bool
-     */
-    public $foregroundColorSuggested;
-    /**
-     * Indicates if there was a suggested change to italic.
-     *
-     * @var bool
-     */
-    public $italicSuggested;
-    /**
-     * Indicates if there was a suggested change to link.
-     *
-     * @var bool
-     */
-    public $linkSuggested;
-    /**
-     * Indicates if there was a suggested change to small_caps.
-     *
-     * @var bool
-     */
-    public $smallCapsSuggested;
-    /**
-     * Indicates if there was a suggested change to strikethrough.
-     *
-     * @var bool
-     */
-    public $strikethroughSuggested;
-    /**
-     * Indicates if there was a suggested change to underline.
-     *
-     * @var bool
-     */
-    public $underlineSuggested;
-    /**
-     * Indicates if there was a suggested change to weighted_font_family.
-     *
-     * @var bool
-     */
-    public $weightedFontFamilySuggested;
-    /**
-     * Indicates if there was a suggested change to background_color.
-     *
-     * @param bool $backgroundColorSuggested
-     */
-    public function setBackgroundColorSuggested($backgroundColorSuggested)
+namespace Google\Service\Docs {
+    class TextStyleSuggestionState extends \Google\Model
     {
+        /**
+         * Indicates if there was a suggested change to background_color.
+         *
+         * @var bool
+         */
+        public $backgroundColorSuggested;
+        /**
+         * Indicates if there was a suggested change to baseline_offset.
+         *
+         * @var bool
+         */
+        public $baselineOffsetSuggested;
+        /**
+         * Indicates if there was a suggested change to bold.
+         *
+         * @var bool
+         */
+        public $boldSuggested;
+        /**
+         * Indicates if there was a suggested change to font_size.
+         *
+         * @var bool
+         */
+        public $fontSizeSuggested;
+        /**
+         * Indicates if there was a suggested change to foreground_color.
+         *
+         * @var bool
+         */
+        public $foregroundColorSuggested;
+        /**
+         * Indicates if there was a suggested change to italic.
+         *
+         * @var bool
+         */
+        public $italicSuggested;
+        /**
+         * Indicates if there was a suggested change to link.
+         *
+         * @var bool
+         */
+        public $linkSuggested;
+        /**
+         * Indicates if there was a suggested change to small_caps.
+         *
+         * @var bool
+         */
+        public $smallCapsSuggested;
+        /**
+         * Indicates if there was a suggested change to strikethrough.
+         *
+         * @var bool
+         */
+        public $strikethroughSuggested;
+        /**
+         * Indicates if there was a suggested change to underline.
+         *
+         * @var bool
+         */
+        public $underlineSuggested;
+        /**
+         * Indicates if there was a suggested change to weighted_font_family.
+         *
+         * @var bool
+         */
+        public $weightedFontFamilySuggested;
+        /**
+         * Indicates if there was a suggested change to background_color.
+         *
+         * @param bool $backgroundColorSuggested
+         */
+        public function setBackgroundColorSuggested($backgroundColorSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBackgroundColorSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to baseline_offset.
+         *
+         * @param bool $baselineOffsetSuggested
+         */
+        public function setBaselineOffsetSuggested($baselineOffsetSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBaselineOffsetSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to bold.
+         *
+         * @param bool $boldSuggested
+         */
+        public function setBoldSuggested($boldSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBoldSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to font_size.
+         *
+         * @param bool $fontSizeSuggested
+         */
+        public function setFontSizeSuggested($fontSizeSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFontSizeSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to foreground_color.
+         *
+         * @param bool $foregroundColorSuggested
+         */
+        public function setForegroundColorSuggested($foregroundColorSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getForegroundColorSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to italic.
+         *
+         * @param bool $italicSuggested
+         */
+        public function setItalicSuggested($italicSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getItalicSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to link.
+         *
+         * @param bool $linkSuggested
+         */
+        public function setLinkSuggested($linkSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLinkSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to small_caps.
+         *
+         * @param bool $smallCapsSuggested
+         */
+        public function setSmallCapsSuggested($smallCapsSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSmallCapsSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to strikethrough.
+         *
+         * @param bool $strikethroughSuggested
+         */
+        public function setStrikethroughSuggested($strikethroughSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStrikethroughSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to underline.
+         *
+         * @param bool $underlineSuggested
+         */
+        public function setUnderlineSuggested($underlineSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUnderlineSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to weighted_font_family.
+         *
+         * @param bool $weightedFontFamilySuggested
+         */
+        public function setWeightedFontFamilySuggested($weightedFontFamilySuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWeightedFontFamilySuggested()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Docs\TextStyleSuggestionState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackgroundColorSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to baseline_offset.
-     *
-     * @param bool $baselineOffsetSuggested
-     */
-    public function setBaselineOffsetSuggested($baselineOffsetSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getBaselineOffsetSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to bold.
-     *
-     * @param bool $boldSuggested
-     */
-    public function setBoldSuggested($boldSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getBoldSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to font_size.
-     *
-     * @param bool $fontSizeSuggested
-     */
-    public function setFontSizeSuggested($fontSizeSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getFontSizeSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to foreground_color.
-     *
-     * @param bool $foregroundColorSuggested
-     */
-    public function setForegroundColorSuggested($foregroundColorSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getForegroundColorSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to italic.
-     *
-     * @param bool $italicSuggested
-     */
-    public function setItalicSuggested($italicSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getItalicSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to link.
-     *
-     * @param bool $linkSuggested
-     */
-    public function setLinkSuggested($linkSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getLinkSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to small_caps.
-     *
-     * @param bool $smallCapsSuggested
-     */
-    public function setSmallCapsSuggested($smallCapsSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSmallCapsSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to strikethrough.
-     *
-     * @param bool $strikethroughSuggested
-     */
-    public function setStrikethroughSuggested($strikethroughSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getStrikethroughSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to underline.
-     *
-     * @param bool $underlineSuggested
-     */
-    public function setUnderlineSuggested($underlineSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUnderlineSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to weighted_font_family.
-     *
-     * @param bool $weightedFontFamilySuggested
-     */
-    public function setWeightedFontFamilySuggested($weightedFontFamilySuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWeightedFontFamilySuggested()
+    class Google_Service_Docs_TextStyleSuggestionState extends \Google\Service\Docs\TextStyleSuggestionState
     {
     }
 }

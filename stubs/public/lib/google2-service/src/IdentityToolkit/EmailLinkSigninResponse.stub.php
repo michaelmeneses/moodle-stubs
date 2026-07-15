@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class EmailLinkSigninResponse extends \Google\Model
-{
-    /**
-     * The user's email.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Expiration time of STS id token in seconds.
-     *
-     * @var string
-     */
-    public $expiresIn;
-    /**
-     * The STS id token to login the newly signed in user.
-     *
-     * @var string
-     */
-    public $idToken;
-    /**
-     * Whether the user is new.
-     *
-     * @var bool
-     */
-    public $isNewUser;
-    /**
-     * The fixed string "identitytoolkit#EmailLinkSigninResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The RP local ID of the user.
-     *
-     * @var string
-     */
-    public $localId;
-    /**
-     * The refresh token for the signed in user.
-     *
-     * @var string
-     */
-    public $refreshToken;
-    /**
-     * The user's email.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\IdentityToolkit {
+    class EmailLinkSigninResponse extends \Google\Model
     {
+        /**
+         * The user's email.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Expiration time of STS id token in seconds.
+         *
+         * @var string
+         */
+        public $expiresIn;
+        /**
+         * The STS id token to login the newly signed in user.
+         *
+         * @var string
+         */
+        public $idToken;
+        /**
+         * Whether the user is new.
+         *
+         * @var bool
+         */
+        public $isNewUser;
+        /**
+         * The fixed string "identitytoolkit#EmailLinkSigninResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The RP local ID of the user.
+         *
+         * @var string
+         */
+        public $localId;
+        /**
+         * The refresh token for the signed in user.
+         *
+         * @var string
+         */
+        public $refreshToken;
+        /**
+         * The user's email.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * Expiration time of STS id token in seconds.
+         *
+         * @param string $expiresIn
+         */
+        public function setExpiresIn($expiresIn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpiresIn()
+        {
+        }
+        /**
+         * The STS id token to login the newly signed in user.
+         *
+         * @param string $idToken
+         */
+        public function setIdToken($idToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdToken()
+        {
+        }
+        /**
+         * Whether the user is new.
+         *
+         * @param bool $isNewUser
+         */
+        public function setIsNewUser($isNewUser)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsNewUser()
+        {
+        }
+        /**
+         * The fixed string "identitytoolkit#EmailLinkSigninResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The RP local ID of the user.
+         *
+         * @param string $localId
+         */
+        public function setLocalId($localId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalId()
+        {
+        }
+        /**
+         * The refresh token for the signed in user.
+         *
+         * @param string $refreshToken
+         */
+        public function setRefreshToken($refreshToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRefreshToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\EmailLinkSigninResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * Expiration time of STS id token in seconds.
-     *
-     * @param string $expiresIn
-     */
-    public function setExpiresIn($expiresIn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpiresIn()
-    {
-    }
-    /**
-     * The STS id token to login the newly signed in user.
-     *
-     * @param string $idToken
-     */
-    public function setIdToken($idToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIdToken()
-    {
-    }
-    /**
-     * Whether the user is new.
-     *
-     * @param bool $isNewUser
-     */
-    public function setIsNewUser($isNewUser)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsNewUser()
-    {
-    }
-    /**
-     * The fixed string "identitytoolkit#EmailLinkSigninResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The RP local ID of the user.
-     *
-     * @param string $localId
-     */
-    public function setLocalId($localId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocalId()
-    {
-    }
-    /**
-     * The refresh token for the signed in user.
-     *
-     * @param string $refreshToken
-     */
-    public function setRefreshToken($refreshToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRefreshToken()
+    class Google_Service_IdentityToolkit_EmailLinkSigninResponse extends \Google\Service\IdentityToolkit\EmailLinkSigninResponse
     {
     }
 }

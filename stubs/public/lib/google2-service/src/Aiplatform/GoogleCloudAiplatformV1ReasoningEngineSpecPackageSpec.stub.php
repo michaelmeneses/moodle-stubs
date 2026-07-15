@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ReasoningEngineSpecPackageSpec extends \Google\Model
-{
-    /**
-     * Optional. The Cloud Storage URI of the dependency files in tar.gz format.
-     *
-     * @var string
-     */
-    public $dependencyFilesGcsUri;
-    /**
-     * Optional. The Cloud Storage URI of the pickled python object.
-     *
-     * @var string
-     */
-    public $pickleObjectGcsUri;
-    /**
-     * Optional. The Python version. Supported values are 3.9, 3.10, 3.11, 3.12,
-     * 3.13. If not specified, the default value is 3.10.
-     *
-     * @var string
-     */
-    public $pythonVersion;
-    /**
-     * Optional. The Cloud Storage URI of the `requirements.txt` file
-     *
-     * @var string
-     */
-    public $requirementsGcsUri;
-    /**
-     * Optional. The Cloud Storage URI of the dependency files in tar.gz format.
-     *
-     * @param string $dependencyFilesGcsUri
-     */
-    public function setDependencyFilesGcsUri($dependencyFilesGcsUri)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ReasoningEngineSpecPackageSpec extends \Google\Model
     {
+        /**
+         * Optional. The Cloud Storage URI of the dependency files in tar.gz format.
+         *
+         * @var string
+         */
+        public $dependencyFilesGcsUri;
+        /**
+         * Optional. The Cloud Storage URI of the pickled python object.
+         *
+         * @var string
+         */
+        public $pickleObjectGcsUri;
+        /**
+         * Optional. The Python version. Supported values are 3.9, 3.10, 3.11, 3.12,
+         * 3.13. If not specified, the default value is 3.10.
+         *
+         * @var string
+         */
+        public $pythonVersion;
+        /**
+         * Optional. The Cloud Storage URI of the `requirements.txt` file
+         *
+         * @var string
+         */
+        public $requirementsGcsUri;
+        /**
+         * Optional. The Cloud Storage URI of the dependency files in tar.gz format.
+         *
+         * @param string $dependencyFilesGcsUri
+         */
+        public function setDependencyFilesGcsUri($dependencyFilesGcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDependencyFilesGcsUri()
+        {
+        }
+        /**
+         * Optional. The Cloud Storage URI of the pickled python object.
+         *
+         * @param string $pickleObjectGcsUri
+         */
+        public function setPickleObjectGcsUri($pickleObjectGcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPickleObjectGcsUri()
+        {
+        }
+        /**
+         * Optional. The Python version. Supported values are 3.9, 3.10, 3.11, 3.12,
+         * 3.13. If not specified, the default value is 3.10.
+         *
+         * @param string $pythonVersion
+         */
+        public function setPythonVersion($pythonVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPythonVersion()
+        {
+        }
+        /**
+         * Optional. The Cloud Storage URI of the `requirements.txt` file
+         *
+         * @param string $requirementsGcsUri
+         */
+        public function setRequirementsGcsUri($requirementsGcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequirementsGcsUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReasoningEngineSpecPackageSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDependencyFilesGcsUri()
-    {
-    }
-    /**
-     * Optional. The Cloud Storage URI of the pickled python object.
-     *
-     * @param string $pickleObjectGcsUri
-     */
-    public function setPickleObjectGcsUri($pickleObjectGcsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPickleObjectGcsUri()
-    {
-    }
-    /**
-     * Optional. The Python version. Supported values are 3.9, 3.10, 3.11, 3.12,
-     * 3.13. If not specified, the default value is 3.10.
-     *
-     * @param string $pythonVersion
-     */
-    public function setPythonVersion($pythonVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPythonVersion()
-    {
-    }
-    /**
-     * Optional. The Cloud Storage URI of the `requirements.txt` file
-     *
-     * @param string $requirementsGcsUri
-     */
-    public function setRequirementsGcsUri($requirementsGcsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequirementsGcsUri()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ReasoningEngineSpecPackageSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReasoningEngineSpecPackageSpec
     {
     }
 }

@@ -21,129 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1p1beta1ObjectTrackingAnnotation extends \Google\Collection
-{
-    protected $collection_key = 'frames';
-    /**
-     * Object category's labeling confidence of this track.
-     *
-     * @var float
-     */
-    public $confidence;
-    protected $entityType = GoogleCloudVideointelligenceV1p1beta1Entity::class;
-    protected $entityDataType = '';
-    protected $framesType = GoogleCloudVideointelligenceV1p1beta1ObjectTrackingFrame::class;
-    protected $framesDataType = 'array';
-    protected $segmentType = GoogleCloudVideointelligenceV1p1beta1VideoSegment::class;
-    protected $segmentDataType = '';
-    /**
-     * Streaming mode ONLY. In streaming mode, we do not know the end time of a
-     * tracked object before it is completed. Hence, there is no VideoSegment info
-     * returned. Instead, we provide a unique identifiable integer track_id so
-     * that the customers can correlate the results of the ongoing
-     * ObjectTrackAnnotation of the same track_id over time.
-     *
-     * @var string
-     */
-    public $trackId;
-    /**
-     * Feature version.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Object category's labeling confidence of this track.
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1p1beta1ObjectTrackingAnnotation extends \Google\Collection
     {
+        protected $collection_key = 'frames';
+        /**
+         * Object category's labeling confidence of this track.
+         *
+         * @var float
+         */
+        public $confidence;
+        protected $entityType = GoogleCloudVideointelligenceV1p1beta1Entity::class;
+        protected $entityDataType = '';
+        protected $framesType = GoogleCloudVideointelligenceV1p1beta1ObjectTrackingFrame::class;
+        protected $framesDataType = 'array';
+        protected $segmentType = GoogleCloudVideointelligenceV1p1beta1VideoSegment::class;
+        protected $segmentDataType = '';
+        /**
+         * Streaming mode ONLY. In streaming mode, we do not know the end time of a
+         * tracked object before it is completed. Hence, there is no VideoSegment info
+         * returned. Instead, we provide a unique identifiable integer track_id so
+         * that the customers can correlate the results of the ongoing
+         * ObjectTrackAnnotation of the same track_id over time.
+         *
+         * @var string
+         */
+        public $trackId;
+        /**
+         * Feature version.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Object category's labeling confidence of this track.
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * Entity to specify the object category that this track is labeled as.
+         *
+         * @param GoogleCloudVideointelligenceV1p1beta1Entity $entity
+         */
+        public function setEntity(GoogleCloudVideointelligenceV1p1beta1Entity $entity)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1p1beta1Entity
+         */
+        public function getEntity()
+        {
+        }
+        /**
+         * Information corresponding to all frames where this object track appears.
+         * Non-streaming batch mode: it may be one or multiple ObjectTrackingFrame
+         * messages in frames. Streaming mode: it can only be one ObjectTrackingFrame
+         * message in frames.
+         *
+         * @param GoogleCloudVideointelligenceV1p1beta1ObjectTrackingFrame[] $frames
+         */
+        public function setFrames($frames)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1p1beta1ObjectTrackingFrame[]
+         */
+        public function getFrames()
+        {
+        }
+        /**
+         * Non-streaming batch mode ONLY. Each object track corresponds to one video
+         * segment where it appears.
+         *
+         * @param GoogleCloudVideointelligenceV1p1beta1VideoSegment $segment
+         */
+        public function setSegment(GoogleCloudVideointelligenceV1p1beta1VideoSegment $segment)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1p1beta1VideoSegment
+         */
+        public function getSegment()
+        {
+        }
+        /**
+         * Streaming mode ONLY. In streaming mode, we do not know the end time of a
+         * tracked object before it is completed. Hence, there is no VideoSegment info
+         * returned. Instead, we provide a unique identifiable integer track_id so
+         * that the customers can correlate the results of the ongoing
+         * ObjectTrackAnnotation of the same track_id over time.
+         *
+         * @param string $trackId
+         */
+        public function setTrackId($trackId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrackId()
+        {
+        }
+        /**
+         * Feature version.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p1beta1ObjectTrackingAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidence()
-    {
-    }
-    /**
-     * Entity to specify the object category that this track is labeled as.
-     *
-     * @param GoogleCloudVideointelligenceV1p1beta1Entity $entity
-     */
-    public function setEntity(GoogleCloudVideointelligenceV1p1beta1Entity $entity)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1p1beta1Entity
-     */
-    public function getEntity()
-    {
-    }
-    /**
-     * Information corresponding to all frames where this object track appears.
-     * Non-streaming batch mode: it may be one or multiple ObjectTrackingFrame
-     * messages in frames. Streaming mode: it can only be one ObjectTrackingFrame
-     * message in frames.
-     *
-     * @param GoogleCloudVideointelligenceV1p1beta1ObjectTrackingFrame[] $frames
-     */
-    public function setFrames($frames)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1p1beta1ObjectTrackingFrame[]
-     */
-    public function getFrames()
-    {
-    }
-    /**
-     * Non-streaming batch mode ONLY. Each object track corresponds to one video
-     * segment where it appears.
-     *
-     * @param GoogleCloudVideointelligenceV1p1beta1VideoSegment $segment
-     */
-    public function setSegment(GoogleCloudVideointelligenceV1p1beta1VideoSegment $segment)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1p1beta1VideoSegment
-     */
-    public function getSegment()
-    {
-    }
-    /**
-     * Streaming mode ONLY. In streaming mode, we do not know the end time of a
-     * tracked object before it is completed. Hence, there is no VideoSegment info
-     * returned. Instead, we provide a unique identifiable integer track_id so
-     * that the customers can correlate the results of the ongoing
-     * ObjectTrackAnnotation of the same track_id over time.
-     *
-     * @param string $trackId
-     */
-    public function setTrackId($trackId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrackId()
-    {
-    }
-    /**
-     * Feature version.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p1beta1ObjectTrackingAnnotation extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p1beta1ObjectTrackingAnnotation
     {
     }
 }

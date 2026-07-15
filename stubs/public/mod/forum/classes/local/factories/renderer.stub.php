@@ -29,6 +29,21 @@
  */
 namespace mod_forum\local\factories;
 
+use mod_forum\grades\forum_gradeitem;
+use mod_forum\local\entities\discussion as discussion_entity;
+use mod_forum\local\entities\forum as forum_entity;
+use mod_forum\local\factories\vault as vault_factory;
+use mod_forum\local\factories\legacy_data_mapper as legacy_data_mapper_factory;
+use mod_forum\local\factories\entity as entity_factory;
+use mod_forum\local\factories\exporter as exporter_factory;
+use mod_forum\local\factories\manager as manager_factory;
+use mod_forum\local\factories\builder as builder_factory;
+use mod_forum\local\factories\url as url_factory;
+use mod_forum\local\renderers\discussion as discussion_renderer;
+use mod_forum\local\renderers\discussion_list as discussion_list_renderer;
+use mod_forum\local\renderers\posts as posts_renderer;
+use moodle_page;
+use core\output\notification;
 /**
  * Renderer factory.
  *

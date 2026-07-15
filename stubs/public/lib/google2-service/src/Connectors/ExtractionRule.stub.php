@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class ExtractionRule extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $extractionRegex;
-    protected $sourceType = Source::class;
-    protected $sourceDataType = '';
-    /**
-     * @param string
-     */
-    public function setExtractionRegex($extractionRegex)
+namespace Google\Service\Connectors {
+    class ExtractionRule extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $extractionRegex;
+        protected $sourceType = Source::class;
+        protected $sourceDataType = '';
+        /**
+         * @param string
+         */
+        public function setExtractionRegex($extractionRegex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExtractionRegex()
+        {
+        }
+        /**
+         * @param Source
+         */
+        public function setSource(Source $source)
+        {
+        }
+        /**
+         * @return Source
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Connectors\ExtractionRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExtractionRegex()
-    {
-    }
-    /**
-     * @param Source
-     */
-    public function setSource(Source $source)
-    {
-    }
-    /**
-     * @return Source
-     */
-    public function getSource()
+    class Google_Service_Connectors_ExtractionRule extends \Google\Service\Connectors\ExtractionRule
     {
     }
 }

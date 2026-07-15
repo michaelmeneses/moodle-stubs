@@ -16,6 +16,13 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\Formatter\FormatterInterface;
+use Monolog\Formatter\LineFormatter;
+use Monolog\Utils;
+use Monolog\LogRecord;
+use Monolog\Level;
+use function headers_list;
+use function stripos;
 /**
  * Handler sending logs to browser's javascript console with no browser extension required
  *

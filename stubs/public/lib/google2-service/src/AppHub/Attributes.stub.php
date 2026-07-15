@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub;
-
-class Attributes extends \Google\Collection
-{
-    protected $collection_key = 'operatorOwners';
-    protected $businessOwnersType = ContactInfo::class;
-    protected $businessOwnersDataType = 'array';
-    protected $criticalityType = Criticality::class;
-    protected $criticalityDataType = '';
-    protected $developerOwnersType = ContactInfo::class;
-    protected $developerOwnersDataType = 'array';
-    protected $environmentType = Environment::class;
-    protected $environmentDataType = '';
-    protected $operatorOwnersType = ContactInfo::class;
-    protected $operatorOwnersDataType = 'array';
-    /**
-     * Optional. Business team that ensures user needs are met and value is
-     * delivered
-     *
-     * @param ContactInfo[] $businessOwners
-     */
-    public function setBusinessOwners($businessOwners)
+namespace Google\Service\AppHub {
+    class Attributes extends \Google\Collection
     {
+        protected $collection_key = 'operatorOwners';
+        protected $businessOwnersType = ContactInfo::class;
+        protected $businessOwnersDataType = 'array';
+        protected $criticalityType = Criticality::class;
+        protected $criticalityDataType = '';
+        protected $developerOwnersType = ContactInfo::class;
+        protected $developerOwnersDataType = 'array';
+        protected $environmentType = Environment::class;
+        protected $environmentDataType = '';
+        protected $operatorOwnersType = ContactInfo::class;
+        protected $operatorOwnersDataType = 'array';
+        /**
+         * Optional. Business team that ensures user needs are met and value is
+         * delivered
+         *
+         * @param ContactInfo[] $businessOwners
+         */
+        public function setBusinessOwners($businessOwners)
+        {
+        }
+        /**
+         * @return ContactInfo[]
+         */
+        public function getBusinessOwners()
+        {
+        }
+        /**
+         * Optional. User-defined criticality information.
+         *
+         * @param Criticality $criticality
+         */
+        public function setCriticality(Criticality $criticality)
+        {
+        }
+        /**
+         * @return Criticality
+         */
+        public function getCriticality()
+        {
+        }
+        /**
+         * Optional. Developer team that owns development and coding.
+         *
+         * @param ContactInfo[] $developerOwners
+         */
+        public function setDeveloperOwners($developerOwners)
+        {
+        }
+        /**
+         * @return ContactInfo[]
+         */
+        public function getDeveloperOwners()
+        {
+        }
+        /**
+         * Optional. User-defined environment information.
+         *
+         * @param Environment $environment
+         */
+        public function setEnvironment(Environment $environment)
+        {
+        }
+        /**
+         * @return Environment
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * Optional. Operator team that ensures runtime and operations.
+         *
+         * @param ContactInfo[] $operatorOwners
+         */
+        public function setOperatorOwners($operatorOwners)
+        {
+        }
+        /**
+         * @return ContactInfo[]
+         */
+        public function getOperatorOwners()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ContactInfo[]
+     * Runtime class alias of \Google\Service\AppHub\Attributes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBusinessOwners()
-    {
-    }
-    /**
-     * Optional. User-defined criticality information.
-     *
-     * @param Criticality $criticality
-     */
-    public function setCriticality(Criticality $criticality)
-    {
-    }
-    /**
-     * @return Criticality
-     */
-    public function getCriticality()
-    {
-    }
-    /**
-     * Optional. Developer team that owns development and coding.
-     *
-     * @param ContactInfo[] $developerOwners
-     */
-    public function setDeveloperOwners($developerOwners)
-    {
-    }
-    /**
-     * @return ContactInfo[]
-     */
-    public function getDeveloperOwners()
-    {
-    }
-    /**
-     * Optional. User-defined environment information.
-     *
-     * @param Environment $environment
-     */
-    public function setEnvironment(Environment $environment)
-    {
-    }
-    /**
-     * @return Environment
-     */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * Optional. Operator team that ensures runtime and operations.
-     *
-     * @param ContactInfo[] $operatorOwners
-     */
-    public function setOperatorOwners($operatorOwners)
-    {
-    }
-    /**
-     * @return ContactInfo[]
-     */
-    public function getOperatorOwners()
+    class Google_Service_AppHub_Attributes extends \Google\Service\AppHub\Attributes
     {
     }
 }

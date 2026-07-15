@@ -21,80 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "subscriptions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $subscriptions = $apigeeService->organizations_developers_subscriptions;
- *  </code>
- */
-class OrganizationsDevelopersSubscriptions extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1DeveloperSubscription;
+    use Google\Service\Apigee\GoogleCloudApigeeV1ExpireDeveloperSubscriptionRequest;
+    use Google\Service\Apigee\GoogleCloudApigeeV1ListDeveloperSubscriptionsResponse;
     /**
-     * Creates a subscription to an API product.  (subscriptions.create)
-     *
-     * @param string $parent Required. Email address of the developer that is
-     * purchasing a subscription to the API product. Use the following structure in
-     * your request: `organizations/{org}/developers/{developer_email}`
-     * @param GoogleCloudApigeeV1DeveloperSubscription $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1DeveloperSubscription
-     * @throws \Google\Service\Exception
+     * The "subscriptions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $subscriptions = $apigeeService->organizations_developers_subscriptions;
+     *  </code>
      */
-    public function create($parent, GoogleCloudApigeeV1DeveloperSubscription $postBody, $optParams = [])
+    class OrganizationsDevelopersSubscriptions extends \Google\Service\Resource
     {
+        /**
+         * Creates a subscription to an API product.  (subscriptions.create)
+         *
+         * @param string $parent Required. Email address of the developer that is
+         * purchasing a subscription to the API product. Use the following structure in
+         * your request: `organizations/{org}/developers/{developer_email}`
+         * @param GoogleCloudApigeeV1DeveloperSubscription $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1DeveloperSubscription
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudApigeeV1DeveloperSubscription $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Expires an API product subscription immediately. (subscriptions.expire)
+         *
+         * @param string $name Required. Name of the API product subscription. Use the
+         * following structure in your request: `organizations/{org}/developers/{develop
+         * er_email}/subscriptions/{subscription}`
+         * @param GoogleCloudApigeeV1ExpireDeveloperSubscriptionRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1DeveloperSubscription
+         * @throws \Google\Service\Exception
+         */
+        public function expire($name, GoogleCloudApigeeV1ExpireDeveloperSubscriptionRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets details for an API product subscription. (subscriptions.get)
+         *
+         * @param string $name Required. Name of the API product subscription. Use the
+         * following structure in your request: `organizations/{org}/developers/{develop
+         * er_email}/subscriptions/{subscription}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1DeveloperSubscription
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all API product subscriptions for a developer.
+         * (subscriptions.listOrganizationsDevelopersSubscriptions)
+         *
+         * @param string $parent Required. Email address of the developer. Use the
+         * following structure in your request:
+         * `organizations/{org}/developers/{developer_email}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int count Number of API product subscriptions to return in the API
+         * call. Use with `startKey` to provide more targeted filtering. Defaults to
+         * 100. The maximum limit is 1000.
+         * @opt_param string startKey Name of the API product subscription from which to
+         * start displaying the list of subscriptions. If omitted, the list starts from
+         * the first item. For example, to view the API product subscriptions from
+         * 51-150, set the value of `startKey` to the name of the 51st subscription and
+         * set the value of `count` to 100.
+         * @return GoogleCloudApigeeV1ListDeveloperSubscriptionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsDevelopersSubscriptions($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Expires an API product subscription immediately. (subscriptions.expire)
-     *
-     * @param string $name Required. Name of the API product subscription. Use the
-     * following structure in your request: `organizations/{org}/developers/{develop
-     * er_email}/subscriptions/{subscription}`
-     * @param GoogleCloudApigeeV1ExpireDeveloperSubscriptionRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1DeveloperSubscription
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsDevelopersSubscriptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function expire($name, GoogleCloudApigeeV1ExpireDeveloperSubscriptionRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Gets details for an API product subscription. (subscriptions.get)
-     *
-     * @param string $name Required. Name of the API product subscription. Use the
-     * following structure in your request: `organizations/{org}/developers/{develop
-     * er_email}/subscriptions/{subscription}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1DeveloperSubscription
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists all API product subscriptions for a developer.
-     * (subscriptions.listOrganizationsDevelopersSubscriptions)
-     *
-     * @param string $parent Required. Email address of the developer. Use the
-     * following structure in your request:
-     * `organizations/{org}/developers/{developer_email}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int count Number of API product subscriptions to return in the API
-     * call. Use with `startKey` to provide more targeted filtering. Defaults to
-     * 100. The maximum limit is 1000.
-     * @opt_param string startKey Name of the API product subscription from which to
-     * start displaying the list of subscriptions. If omitted, the list starts from
-     * the first item. For example, to view the API product subscriptions from
-     * 51-150, set the value of `startKey` to the name of the 51st subscription and
-     * set the value of `count` to 100.
-     * @return GoogleCloudApigeeV1ListDeveloperSubscriptionsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listOrganizationsDevelopersSubscriptions($parent, $optParams = [])
+    class Google_Service_Apigee_Resource_OrganizationsDevelopersSubscriptions extends \Google\Service\Apigee\Resource\OrganizationsDevelopersSubscriptions
     {
     }
 }

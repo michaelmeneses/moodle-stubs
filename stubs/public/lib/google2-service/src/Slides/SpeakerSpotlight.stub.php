@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class SpeakerSpotlight extends \Google\Model
-{
-    protected $speakerSpotlightPropertiesType = SpeakerSpotlightProperties::class;
-    protected $speakerSpotlightPropertiesDataType = '';
-    /**
-     * The properties of the Speaker Spotlight.
-     *
-     * @param SpeakerSpotlightProperties $speakerSpotlightProperties
-     */
-    public function setSpeakerSpotlightProperties(SpeakerSpotlightProperties $speakerSpotlightProperties)
+namespace Google\Service\Slides {
+    class SpeakerSpotlight extends \Google\Model
     {
+        protected $speakerSpotlightPropertiesType = SpeakerSpotlightProperties::class;
+        protected $speakerSpotlightPropertiesDataType = '';
+        /**
+         * The properties of the Speaker Spotlight.
+         *
+         * @param SpeakerSpotlightProperties $speakerSpotlightProperties
+         */
+        public function setSpeakerSpotlightProperties(SpeakerSpotlightProperties $speakerSpotlightProperties)
+        {
+        }
+        /**
+         * @return SpeakerSpotlightProperties
+         */
+        public function getSpeakerSpotlightProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SpeakerSpotlightProperties
+     * Runtime class alias of \Google\Service\Slides\SpeakerSpotlight registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSpeakerSpotlightProperties()
+    class Google_Service_Slides_SpeakerSpotlight extends \Google\Service\Slides\SpeakerSpotlight
     {
     }
 }

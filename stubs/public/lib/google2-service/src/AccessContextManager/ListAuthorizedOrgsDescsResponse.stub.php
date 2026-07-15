@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class ListAuthorizedOrgsDescsResponse extends \Google\Collection
-{
-    protected $collection_key = 'authorizedOrgsDescs';
-    protected $authorizedOrgsDescsType = AuthorizedOrgsDesc::class;
-    protected $authorizedOrgsDescsDataType = 'array';
-    /**
-     * The pagination token to retrieve the next page of results. If the value is
-     * empty, no further results remain.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of all the Authorized Orgs Desc instances.
-     *
-     * @param AuthorizedOrgsDesc[] $authorizedOrgsDescs
-     */
-    public function setAuthorizedOrgsDescs($authorizedOrgsDescs)
+namespace Google\Service\AccessContextManager {
+    class ListAuthorizedOrgsDescsResponse extends \Google\Collection
     {
+        protected $collection_key = 'authorizedOrgsDescs';
+        protected $authorizedOrgsDescsType = AuthorizedOrgsDesc::class;
+        protected $authorizedOrgsDescsDataType = 'array';
+        /**
+         * The pagination token to retrieve the next page of results. If the value is
+         * empty, no further results remain.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of all the Authorized Orgs Desc instances.
+         *
+         * @param AuthorizedOrgsDesc[] $authorizedOrgsDescs
+         */
+        public function setAuthorizedOrgsDescs($authorizedOrgsDescs)
+        {
+        }
+        /**
+         * @return AuthorizedOrgsDesc[]
+         */
+        public function getAuthorizedOrgsDescs()
+        {
+        }
+        /**
+         * The pagination token to retrieve the next page of results. If the value is
+         * empty, no further results remain.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuthorizedOrgsDesc[]
+     * Runtime class alias of \Google\Service\AccessContextManager\ListAuthorizedOrgsDescsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthorizedOrgsDescs()
-    {
-    }
-    /**
-     * The pagination token to retrieve the next page of results. If the value is
-     * empty, no further results remain.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AccessContextManager_ListAuthorizedOrgsDescsResponse extends \Google\Service\AccessContextManager\ListAuthorizedOrgsDescsResponse
     {
     }
 }

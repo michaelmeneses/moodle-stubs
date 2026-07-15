@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1p1alpha1GenerateAnalysisReportOperationMetadata extends \Google\Model
-{
-    /**
-     * Timestamp when generate report request was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The name of the dataset for which the analysis report is generated. Format:
-     * "projects/datasets"
-     *
-     * @var string
-     */
-    public $dataset;
-    /**
-     * Timestamp when generate report request was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1p1alpha1GenerateAnalysisReportOperationMetadata extends \Google\Model
     {
+        /**
+         * Timestamp when generate report request was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The name of the dataset for which the analysis report is generated. Format:
+         * "projects/datasets"
+         *
+         * @var string
+         */
+        public $dataset;
+        /**
+         * Timestamp when generate report request was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The name of the dataset for which the analysis report is generated. Format:
+         * "projects/datasets"
+         *
+         * @param string $dataset
+         */
+        public function setDataset($dataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1p1alpha1GenerateAnalysisReportOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The name of the dataset for which the analysis report is generated. Format:
-     * "projects/datasets"
-     *
-     * @param string $dataset
-     */
-    public function setDataset($dataset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataset()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1p1alpha1GenerateAnalysisReportOperationMetadata extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1p1alpha1GenerateAnalysisReportOperationMetadata
     {
     }
 }

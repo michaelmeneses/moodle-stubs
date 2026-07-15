@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ComputeEngineMigrationTarget extends \Google\Model
-{
-    protected $shapeType = ComputeEngineShapeDescriptor::class;
-    protected $shapeDataType = '';
-    /**
-     * Description of the suggested shape for the migration target.
-     *
-     * @param ComputeEngineShapeDescriptor $shape
-     */
-    public function setShape(ComputeEngineShapeDescriptor $shape)
+namespace Google\Service\MigrationCenterAPI {
+    class ComputeEngineMigrationTarget extends \Google\Model
     {
+        protected $shapeType = ComputeEngineShapeDescriptor::class;
+        protected $shapeDataType = '';
+        /**
+         * Description of the suggested shape for the migration target.
+         *
+         * @param ComputeEngineShapeDescriptor $shape
+         */
+        public function setShape(ComputeEngineShapeDescriptor $shape)
+        {
+        }
+        /**
+         * @return ComputeEngineShapeDescriptor
+         */
+        public function getShape()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ComputeEngineShapeDescriptor
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ComputeEngineMigrationTarget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getShape()
+    class Google_Service_MigrationCenterAPI_ComputeEngineMigrationTarget extends \Google\Service\MigrationCenterAPI\ComputeEngineMigrationTarget
     {
     }
 }

@@ -21,48 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry\Resource;
-
-/**
- * The "googetArtifacts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
- *   $googetArtifacts = $artifactregistryService->projects_locations_repositories_googetArtifacts;
- *  </code>
- */
-class ProjectsLocationsRepositoriesGoogetArtifacts extends \Google\Service\Resource
-{
+namespace Google\Service\ArtifactRegistry\Resource {
+    use Google\Service\ArtifactRegistry\ImportGoogetArtifactsRequest;
+    use Google\Service\ArtifactRegistry\Operation;
+    use Google\Service\ArtifactRegistry\UploadGoogetArtifactMediaResponse;
+    use Google\Service\ArtifactRegistry\UploadGoogetArtifactRequest;
     /**
-     * Imports GooGet artifacts. The returned Operation will complete once the
-     * resources are imported. Package, Version, and File resources are created
-     * based on the imported artifacts. Imported artifacts that conflict with
-     * existing resources are ignored. (googetArtifacts.import)
-     *
-     * @param string $parent The name of the parent resource where the artifacts
-     * will be imported.
-     * @param ImportGoogetArtifactsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "googetArtifacts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
+     *   $googetArtifacts = $artifactregistryService->projects_locations_repositories_googetArtifacts;
+     *  </code>
      */
-    public function import($parent, ImportGoogetArtifactsRequest $postBody, $optParams = [])
+    class ProjectsLocationsRepositoriesGoogetArtifacts extends \Google\Service\Resource
     {
+        /**
+         * Imports GooGet artifacts. The returned Operation will complete once the
+         * resources are imported. Package, Version, and File resources are created
+         * based on the imported artifacts. Imported artifacts that conflict with
+         * existing resources are ignored. (googetArtifacts.import)
+         *
+         * @param string $parent The name of the parent resource where the artifacts
+         * will be imported.
+         * @param ImportGoogetArtifactsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function import($parent, ImportGoogetArtifactsRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Directly uploads a GooGet artifact. The returned Operation will complete once
+         * the resources are uploaded. Package, Version, and File resources are created
+         * based on the imported artifact. Imported artifacts that conflict with
+         * existing resources are ignored. (googetArtifacts.upload)
+         *
+         * @param string $parent The name of the parent resource where the artifacts
+         * will be uploaded.
+         * @param UploadGoogetArtifactRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return UploadGoogetArtifactMediaResponse
+         * @throws \Google\Service\Exception
+         */
+        public function upload($parent, UploadGoogetArtifactRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Directly uploads a GooGet artifact. The returned Operation will complete once
-     * the resources are uploaded. Package, Version, and File resources are created
-     * based on the imported artifact. Imported artifacts that conflict with
-     * existing resources are ignored. (googetArtifacts.upload)
-     *
-     * @param string $parent The name of the parent resource where the artifacts
-     * will be uploaded.
-     * @param UploadGoogetArtifactRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return UploadGoogetArtifactMediaResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ArtifactRegistry\Resource\ProjectsLocationsRepositoriesGoogetArtifacts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function upload($parent, UploadGoogetArtifactRequest $postBody, $optParams = [])
+    class Google_Service_ArtifactRegistry_Resource_ProjectsLocationsRepositoriesGoogetArtifacts extends \Google\Service\ArtifactRegistry\Resource\ProjectsLocationsRepositoriesGoogetArtifacts
     {
     }
 }

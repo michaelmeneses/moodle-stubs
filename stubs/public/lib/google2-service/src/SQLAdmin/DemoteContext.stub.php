@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class DemoteContext extends \Google\Model
-{
-    /**
-     * This is always `sql#demoteContext`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Required. The name of the instance which acts as the on-premises primary
-     * instance in the replication setup.
-     *
-     * @var string
-     */
-    public $sourceRepresentativeInstanceName;
-    /**
-     * This is always `sql#demoteContext`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\SQLAdmin {
+    class DemoteContext extends \Google\Model
     {
+        /**
+         * This is always `sql#demoteContext`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Required. The name of the instance which acts as the on-premises primary
+         * instance in the replication setup.
+         *
+         * @var string
+         */
+        public $sourceRepresentativeInstanceName;
+        /**
+         * This is always `sql#demoteContext`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Required. The name of the instance which acts as the on-premises primary
+         * instance in the replication setup.
+         *
+         * @param string $sourceRepresentativeInstanceName
+         */
+        public function setSourceRepresentativeInstanceName($sourceRepresentativeInstanceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceRepresentativeInstanceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\DemoteContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Required. The name of the instance which acts as the on-premises primary
-     * instance in the replication setup.
-     *
-     * @param string $sourceRepresentativeInstanceName
-     */
-    public function setSourceRepresentativeInstanceName($sourceRepresentativeInstanceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceRepresentativeInstanceName()
+    class Google_Service_SQLAdmin_DemoteContext extends \Google\Service\SQLAdmin\DemoteContext
     {
     }
 }

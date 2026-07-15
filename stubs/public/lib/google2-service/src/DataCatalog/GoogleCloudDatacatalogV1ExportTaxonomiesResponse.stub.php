@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1ExportTaxonomiesResponse extends \Google\Collection
-{
-    protected $collection_key = 'taxonomies';
-    protected $taxonomiesType = GoogleCloudDatacatalogV1SerializedTaxonomy::class;
-    protected $taxonomiesDataType = 'array';
-    /**
-     * List of taxonomies and policy tags as nested protocol buffers.
-     *
-     * @param GoogleCloudDatacatalogV1SerializedTaxonomy[] $taxonomies
-     */
-    public function setTaxonomies($taxonomies)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1ExportTaxonomiesResponse extends \Google\Collection
     {
+        protected $collection_key = 'taxonomies';
+        protected $taxonomiesType = GoogleCloudDatacatalogV1SerializedTaxonomy::class;
+        protected $taxonomiesDataType = 'array';
+        /**
+         * List of taxonomies and policy tags as nested protocol buffers.
+         *
+         * @param GoogleCloudDatacatalogV1SerializedTaxonomy[] $taxonomies
+         */
+        public function setTaxonomies($taxonomies)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1SerializedTaxonomy[]
+         */
+        public function getTaxonomies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1SerializedTaxonomy[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ExportTaxonomiesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTaxonomies()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1ExportTaxonomiesResponse extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ExportTaxonomiesResponse
     {
     }
 }

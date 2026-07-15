@@ -21,133 +21,142 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class IterationResult extends \Google\Collection
-{
-    protected $collection_key = 'principalComponentInfos';
-    protected $arimaResultType = ArimaResult::class;
-    protected $arimaResultDataType = '';
-    protected $clusterInfosType = ClusterInfo::class;
-    protected $clusterInfosDataType = 'array';
-    /**
-     * Time taken to run the iteration in milliseconds.
-     *
-     * @var string
-     */
-    public $durationMs;
-    /**
-     * Loss computed on the eval data at the end of iteration.
-     *
-     * @var 
-     */
-    public $evalLoss;
-    /**
-     * Index of the iteration, 0 based.
-     *
-     * @var int
-     */
-    public $index;
-    /**
-     * Learn rate used for this iteration.
-     *
-     * @var 
-     */
-    public $learnRate;
-    protected $principalComponentInfosType = PrincipalComponentInfo::class;
-    protected $principalComponentInfosDataType = 'array';
-    /**
-     * Loss computed on the training data at the end of iteration.
-     *
-     * @var 
-     */
-    public $trainingLoss;
-    /**
-     * Arima result.
-     *
-     * @param ArimaResult $arimaResult
-     */
-    public function setArimaResult(ArimaResult $arimaResult)
+namespace Google\Service\Bigquery {
+    class IterationResult extends \Google\Collection
     {
+        protected $collection_key = 'principalComponentInfos';
+        protected $arimaResultType = ArimaResult::class;
+        protected $arimaResultDataType = '';
+        protected $clusterInfosType = ClusterInfo::class;
+        protected $clusterInfosDataType = 'array';
+        /**
+         * Time taken to run the iteration in milliseconds.
+         *
+         * @var string
+         */
+        public $durationMs;
+        /**
+         * Loss computed on the eval data at the end of iteration.
+         *
+         * @var 
+         */
+        public $evalLoss;
+        /**
+         * Index of the iteration, 0 based.
+         *
+         * @var int
+         */
+        public $index;
+        /**
+         * Learn rate used for this iteration.
+         *
+         * @var 
+         */
+        public $learnRate;
+        protected $principalComponentInfosType = PrincipalComponentInfo::class;
+        protected $principalComponentInfosDataType = 'array';
+        /**
+         * Loss computed on the training data at the end of iteration.
+         *
+         * @var 
+         */
+        public $trainingLoss;
+        /**
+         * Arima result.
+         *
+         * @param ArimaResult $arimaResult
+         */
+        public function setArimaResult(ArimaResult $arimaResult)
+        {
+        }
+        /**
+         * @return ArimaResult
+         */
+        public function getArimaResult()
+        {
+        }
+        /**
+         * Information about top clusters for clustering models.
+         *
+         * @param ClusterInfo[] $clusterInfos
+         */
+        public function setClusterInfos($clusterInfos)
+        {
+        }
+        /**
+         * @return ClusterInfo[]
+         */
+        public function getClusterInfos()
+        {
+        }
+        /**
+         * Time taken to run the iteration in milliseconds.
+         *
+         * @param string $durationMs
+         */
+        public function setDurationMs($durationMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDurationMs()
+        {
+        }
+        public function setEvalLoss($evalLoss)
+        {
+        }
+        public function getEvalLoss()
+        {
+        }
+        /**
+         * Index of the iteration, 0 based.
+         *
+         * @param int $index
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIndex()
+        {
+        }
+        public function setLearnRate($learnRate)
+        {
+        }
+        public function getLearnRate()
+        {
+        }
+        /**
+         * The information of the principal components.
+         *
+         * @param PrincipalComponentInfo[] $principalComponentInfos
+         */
+        public function setPrincipalComponentInfos($principalComponentInfos)
+        {
+        }
+        /**
+         * @return PrincipalComponentInfo[]
+         */
+        public function getPrincipalComponentInfos()
+        {
+        }
+        public function setTrainingLoss($trainingLoss)
+        {
+        }
+        public function getTrainingLoss()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ArimaResult
+     * Runtime class alias of \Google\Service\Bigquery\IterationResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArimaResult()
-    {
-    }
-    /**
-     * Information about top clusters for clustering models.
-     *
-     * @param ClusterInfo[] $clusterInfos
-     */
-    public function setClusterInfos($clusterInfos)
-    {
-    }
-    /**
-     * @return ClusterInfo[]
-     */
-    public function getClusterInfos()
-    {
-    }
-    /**
-     * Time taken to run the iteration in milliseconds.
-     *
-     * @param string $durationMs
-     */
-    public function setDurationMs($durationMs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDurationMs()
-    {
-    }
-    public function setEvalLoss($evalLoss)
-    {
-    }
-    public function getEvalLoss()
-    {
-    }
-    /**
-     * Index of the iteration, 0 based.
-     *
-     * @param int $index
-     */
-    public function setIndex($index)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIndex()
-    {
-    }
-    public function setLearnRate($learnRate)
-    {
-    }
-    public function getLearnRate()
-    {
-    }
-    /**
-     * The information of the principal components.
-     *
-     * @param PrincipalComponentInfo[] $principalComponentInfos
-     */
-    public function setPrincipalComponentInfos($principalComponentInfos)
-    {
-    }
-    /**
-     * @return PrincipalComponentInfo[]
-     */
-    public function getPrincipalComponentInfos()
-    {
-    }
-    public function setTrainingLoss($trainingLoss)
-    {
-    }
-    public function getTrainingLoss()
+    class Google_Service_Bigquery_IterationResult extends \Google\Service\Bigquery\IterationResult
     {
     }
 }

@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class Service extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $apiVersion;
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $metadataType = ObjectMeta::class;
-    protected $metadataDataType = '';
-    protected $specType = ServiceSpec::class;
-    protected $specDataType = '';
-    protected $statusType = ServiceStatus::class;
-    protected $statusDataType = '';
-    /**
-     * @param string
-     */
-    public function setApiVersion($apiVersion)
+namespace Google\Service\CloudRun {
+    class Service extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $apiVersion;
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $metadataType = ObjectMeta::class;
+        protected $metadataDataType = '';
+        protected $specType = ServiceSpec::class;
+        protected $specDataType = '';
+        protected $statusType = ServiceStatus::class;
+        protected $statusDataType = '';
+        /**
+         * @param string
+         */
+        public function setApiVersion($apiVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiVersion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param ObjectMeta
+         */
+        public function setMetadata(ObjectMeta $metadata)
+        {
+        }
+        /**
+         * @return ObjectMeta
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * @param ServiceSpec
+         */
+        public function setSpec(ServiceSpec $spec)
+        {
+        }
+        /**
+         * @return ServiceSpec
+         */
+        public function getSpec()
+        {
+        }
+        /**
+         * @param ServiceStatus
+         */
+        public function setStatus(ServiceStatus $status)
+        {
+        }
+        /**
+         * @return ServiceStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\Service registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiVersion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param ObjectMeta
-     */
-    public function setMetadata(ObjectMeta $metadata)
-    {
-    }
-    /**
-     * @return ObjectMeta
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * @param ServiceSpec
-     */
-    public function setSpec(ServiceSpec $spec)
-    {
-    }
-    /**
-     * @return ServiceSpec
-     */
-    public function getSpec()
-    {
-    }
-    /**
-     * @param ServiceStatus
-     */
-    public function setStatus(ServiceStatus $status)
-    {
-    }
-    /**
-     * @return ServiceStatus
-     */
-    public function getStatus()
+    class Google_Service_CloudRun_Service extends \Google\Service\CloudRun\Service
     {
     }
 }

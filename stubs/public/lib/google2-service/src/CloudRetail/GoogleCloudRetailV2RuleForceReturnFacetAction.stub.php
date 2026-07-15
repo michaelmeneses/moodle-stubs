@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2RuleForceReturnFacetAction extends \Google\Collection
-{
-    protected $collection_key = 'facetPositionAdjustments';
-    protected $facetPositionAdjustmentsType = GoogleCloudRetailV2RuleForceReturnFacetActionFacetPositionAdjustment::class;
-    protected $facetPositionAdjustmentsDataType = 'array';
-    /**
-     * Each instance corresponds to a force return attribute for the given
-     * condition. There can't be more 15 instances here.
-     *
-     * @param GoogleCloudRetailV2RuleForceReturnFacetActionFacetPositionAdjustment[] $facetPositionAdjustments
-     */
-    public function setFacetPositionAdjustments($facetPositionAdjustments)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2RuleForceReturnFacetAction extends \Google\Collection
     {
+        protected $collection_key = 'facetPositionAdjustments';
+        protected $facetPositionAdjustmentsType = GoogleCloudRetailV2RuleForceReturnFacetActionFacetPositionAdjustment::class;
+        protected $facetPositionAdjustmentsDataType = 'array';
+        /**
+         * Each instance corresponds to a force return attribute for the given
+         * condition. There can't be more 15 instances here.
+         *
+         * @param GoogleCloudRetailV2RuleForceReturnFacetActionFacetPositionAdjustment[] $facetPositionAdjustments
+         */
+        public function setFacetPositionAdjustments($facetPositionAdjustments)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2RuleForceReturnFacetActionFacetPositionAdjustment[]
+         */
+        public function getFacetPositionAdjustments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2RuleForceReturnFacetActionFacetPositionAdjustment[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2RuleForceReturnFacetAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFacetPositionAdjustments()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2RuleForceReturnFacetAction extends \Google\Service\CloudRetail\GoogleCloudRetailV2RuleForceReturnFacetAction
     {
     }
 }

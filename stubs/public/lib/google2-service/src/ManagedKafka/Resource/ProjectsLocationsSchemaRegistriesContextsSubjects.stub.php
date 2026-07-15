@@ -21,76 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka\Resource;
-
-/**
- * The "subjects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $managedkafkaService = new Google\Service\ManagedKafka(...);
- *   $subjects = $managedkafkaService->projects_locations_schemaRegistries_contexts_subjects;
- *  </code>
- */
-class ProjectsLocationsSchemaRegistriesContextsSubjects extends \Google\Service\Resource
-{
+namespace Google\Service\ManagedKafka\Resource {
+    use Google\Service\ManagedKafka\HttpBody;
+    use Google\Service\ManagedKafka\LookupVersionRequest;
+    use Google\Service\ManagedKafka\SchemaVersion;
     /**
-     * Delete a subject. The response will be an array of versions of the deleted
-     * subject. (subjects.delete)
-     *
-     * @param string $name Required. The name of the subject to delete. Structured
-     * like: `projects/{project}/locations/{location}/schemaRegistries/{schema_regis
-     * try}/subjects/{subject}` or `projects/{project}/locations/{location}/schemaRe
-     * gistries/{schema_registry}/contexts/{context}/subjects/{subject}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool permanent Optional. If true, the subject and all associated
-     * metadata including the schema ID will be deleted permanently. Otherwise, only
-     * the subject is soft-deleted. The default is false. Soft-deleted subjects can
-     * still be searched in ListSubjects API call with deleted=true query parameter.
-     * A soft-delete of a subject must be performed before a hard-delete.
-     * @return HttpBody
-     * @throws \Google\Service\Exception
+     * The "subjects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $managedkafkaService = new Google\Service\ManagedKafka(...);
+     *   $subjects = $managedkafkaService->projects_locations_schemaRegistries_contexts_subjects;
+     *  </code>
      */
-    public function delete($name, $optParams = [])
+    class ProjectsLocationsSchemaRegistriesContextsSubjects extends \Google\Service\Resource
     {
+        /**
+         * Delete a subject. The response will be an array of versions of the deleted
+         * subject. (subjects.delete)
+         *
+         * @param string $name Required. The name of the subject to delete. Structured
+         * like: `projects/{project}/locations/{location}/schemaRegistries/{schema_regis
+         * try}/subjects/{subject}` or `projects/{project}/locations/{location}/schemaRe
+         * gistries/{schema_registry}/contexts/{context}/subjects/{subject}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool permanent Optional. If true, the subject and all associated
+         * metadata including the schema ID will be deleted permanently. Otherwise, only
+         * the subject is soft-deleted. The default is false. Soft-deleted subjects can
+         * still be searched in ListSubjects API call with deleted=true query parameter.
+         * A soft-delete of a subject must be performed before a hard-delete.
+         * @return HttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * List subjects in the schema registry. The response will be an array of
+         * subject names.
+         * (subjects.listProjectsLocationsSchemaRegistriesContextsSubjects)
+         *
+         * @param string $parent Required. The parent schema registry/context whose
+         * subjects are to be listed. Structured like:
+         * `projects/{project}/locations/{location}/schemaRegistries/{schema_registry}`
+         * or `projects/{project}/locations/{location}/schemaRegistries/{schema_registry
+         * }/contexts/{context}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool deleted Optional. If true, the response will include soft-
+         * deleted subjects. The default is false.
+         * @opt_param string subjectPrefix Optional. The context to filter the subjects
+         * by, in the format of `:.{context}:`. If unset, all subjects in the registry
+         * are returned. Set to empty string or add as '?subjectPrefix=' at the end of
+         * this request to list subjects in the default context.
+         * @return HttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsSchemaRegistriesContextsSubjects($parent, $optParams = [])
+        {
+        }
+        /**
+         * Lookup a schema under the specified subject. (subjects.lookupVersion)
+         *
+         * @param string $parent Required. The subject to lookup the schema in.
+         * Structured like: `projects/{project}/locations/{location}/schemaRegistries/{s
+         * chema_registry}/subjects/{subject}` or `projects/{project}/locations/{locatio
+         * n}/schemaRegistries/{schema_registry}/contexts/{context}/subjects/{subject}`
+         * @param LookupVersionRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SchemaVersion
+         * @throws \Google\Service\Exception
+         */
+        public function lookupVersion($parent, LookupVersionRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * List subjects in the schema registry. The response will be an array of
-     * subject names.
-     * (subjects.listProjectsLocationsSchemaRegistriesContextsSubjects)
-     *
-     * @param string $parent Required. The parent schema registry/context whose
-     * subjects are to be listed. Structured like:
-     * `projects/{project}/locations/{location}/schemaRegistries/{schema_registry}`
-     * or `projects/{project}/locations/{location}/schemaRegistries/{schema_registry
-     * }/contexts/{context}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool deleted Optional. If true, the response will include soft-
-     * deleted subjects. The default is false.
-     * @opt_param string subjectPrefix Optional. The context to filter the subjects
-     * by, in the format of `:.{context}:`. If unset, all subjects in the registry
-     * are returned. Set to empty string or add as '?subjectPrefix=' at the end of
-     * this request to list subjects in the default context.
-     * @return HttpBody
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ManagedKafka\Resource\ProjectsLocationsSchemaRegistriesContextsSubjects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsSchemaRegistriesContextsSubjects($parent, $optParams = [])
-    {
-    }
-    /**
-     * Lookup a schema under the specified subject. (subjects.lookupVersion)
-     *
-     * @param string $parent Required. The subject to lookup the schema in.
-     * Structured like: `projects/{project}/locations/{location}/schemaRegistries/{s
-     * chema_registry}/subjects/{subject}` or `projects/{project}/locations/{locatio
-     * n}/schemaRegistries/{schema_registry}/contexts/{context}/subjects/{subject}`
-     * @param LookupVersionRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SchemaVersion
-     * @throws \Google\Service\Exception
-     */
-    public function lookupVersion($parent, LookupVersionRequest $postBody, $optParams = [])
+    class Google_Service_ManagedKafka_Resource_ProjectsLocationsSchemaRegistriesContextsSubjects extends \Google\Service\ManagedKafka\Resource\ProjectsLocationsSchemaRegistriesContextsSubjects
     {
     }
 }

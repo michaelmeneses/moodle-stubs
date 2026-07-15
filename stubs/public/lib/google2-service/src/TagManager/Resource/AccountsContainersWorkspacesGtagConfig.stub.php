@@ -21,79 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager\Resource;
-
-/**
- * The "gtag_config" collection of methods.
- * Typical usage is:
- *  <code>
- *   $tagmanagerService = new Google\Service\TagManager(...);
- *   $gtag_config = $tagmanagerService->accounts_containers_workspaces_gtag_config;
- *  </code>
- */
-class AccountsContainersWorkspacesGtagConfig extends \Google\Service\Resource
-{
+namespace Google\Service\TagManager\Resource {
+    use Google\Service\TagManager\GtagConfig;
+    use Google\Service\TagManager\ListGtagConfigResponse;
     /**
-     * Creates a Google tag config. (gtag_config.create)
-     *
-     * @param string $parent Workspace's API relative path.
-     * @param GtagConfig $postBody
-     * @param array $optParams Optional parameters.
-     * @return GtagConfig
-     * @throws \Google\Service\Exception
+     * The "gtag_config" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $tagmanagerService = new Google\Service\TagManager(...);
+     *   $gtag_config = $tagmanagerService->accounts_containers_workspaces_gtag_config;
+     *  </code>
      */
-    public function create($parent, GtagConfig $postBody, $optParams = [])
+    class AccountsContainersWorkspacesGtagConfig extends \Google\Service\Resource
     {
+        /**
+         * Creates a Google tag config. (gtag_config.create)
+         *
+         * @param string $parent Workspace's API relative path.
+         * @param GtagConfig $postBody
+         * @param array $optParams Optional parameters.
+         * @return GtagConfig
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GtagConfig $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a Google tag config. (gtag_config.delete)
+         *
+         * @param string $path Google tag config's API relative path.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($path, $optParams = [])
+        {
+        }
+        /**
+         * Gets a Google tag config. (gtag_config.get)
+         *
+         * @param string $path Google tag config's API relative path.
+         * @param array $optParams Optional parameters.
+         * @return GtagConfig
+         * @throws \Google\Service\Exception
+         */
+        public function get($path, $optParams = [])
+        {
+        }
+        /**
+         * Lists all Google tag configs in a Container.
+         * (gtag_config.listAccountsContainersWorkspacesGtagConfig)
+         *
+         * @param string $parent Workspace's API relative path.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string pageToken Continuation token for fetching the next page of
+         * results.
+         * @return ListGtagConfigResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsContainersWorkspacesGtagConfig($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a Google tag config. (gtag_config.update)
+         *
+         * @param string $path Google tag config's API relative path.
+         * @param GtagConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string fingerprint When provided, this fingerprint must match the
+         * fingerprint of the config in storage.
+         * @return GtagConfig
+         * @throws \Google\Service\Exception
+         */
+        public function update($path, GtagConfig $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a Google tag config. (gtag_config.delete)
-     *
-     * @param string $path Google tag config's API relative path.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\TagManager\Resource\AccountsContainersWorkspacesGtagConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($path, $optParams = [])
-    {
-    }
-    /**
-     * Gets a Google tag config. (gtag_config.get)
-     *
-     * @param string $path Google tag config's API relative path.
-     * @param array $optParams Optional parameters.
-     * @return GtagConfig
-     * @throws \Google\Service\Exception
-     */
-    public function get($path, $optParams = [])
-    {
-    }
-    /**
-     * Lists all Google tag configs in a Container.
-     * (gtag_config.listAccountsContainersWorkspacesGtagConfig)
-     *
-     * @param string $parent Workspace's API relative path.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string pageToken Continuation token for fetching the next page of
-     * results.
-     * @return ListGtagConfigResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAccountsContainersWorkspacesGtagConfig($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a Google tag config. (gtag_config.update)
-     *
-     * @param string $path Google tag config's API relative path.
-     * @param GtagConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string fingerprint When provided, this fingerprint must match the
-     * fingerprint of the config in storage.
-     * @return GtagConfig
-     * @throws \Google\Service\Exception
-     */
-    public function update($path, GtagConfig $postBody, $optParams = [])
+    class Google_Service_TagManager_Resource_AccountsContainersWorkspacesGtagConfig extends \Google\Service\TagManager\Resource\AccountsContainersWorkspacesGtagConfig
     {
     }
 }

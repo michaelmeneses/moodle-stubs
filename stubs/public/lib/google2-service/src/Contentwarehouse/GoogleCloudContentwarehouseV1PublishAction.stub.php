@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1PublishAction extends \Google\Collection
-{
-    protected $collection_key = 'messages';
-    /**
-     * Messages to be published.
-     *
-     * @var string[]
-     */
-    public $messages;
-    /**
-     * The topic id in the Pub/Sub service for which messages will be published
-     * to.
-     *
-     * @var string
-     */
-    public $topicId;
-    /**
-     * Messages to be published.
-     *
-     * @param string[] $messages
-     */
-    public function setMessages($messages)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1PublishAction extends \Google\Collection
     {
+        protected $collection_key = 'messages';
+        /**
+         * Messages to be published.
+         *
+         * @var string[]
+         */
+        public $messages;
+        /**
+         * The topic id in the Pub/Sub service for which messages will be published
+         * to.
+         *
+         * @var string
+         */
+        public $topicId;
+        /**
+         * Messages to be published.
+         *
+         * @param string[] $messages
+         */
+        public function setMessages($messages)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMessages()
+        {
+        }
+        /**
+         * The topic id in the Pub/Sub service for which messages will be published
+         * to.
+         *
+         * @param string $topicId
+         */
+        public function setTopicId($topicId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopicId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1PublishAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessages()
-    {
-    }
-    /**
-     * The topic id in the Pub/Sub service for which messages will be published
-     * to.
-     *
-     * @param string $topicId
-     */
-    public function setTopicId($topicId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopicId()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1PublishAction extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1PublishAction
     {
     }
 }

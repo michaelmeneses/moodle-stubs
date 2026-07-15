@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger;
-
-class PostUserInfosList extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = PostUserInfo::class;
-    protected $itemsDataType = 'array';
-    /**
-     * The kind of this entity. Always blogger#postList.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Pagination token to fetch the next page, if one exists.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of Posts with User information for the post, for this Blog.
-     *
-     * @param PostUserInfo[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Blogger {
+    class PostUserInfosList extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = PostUserInfo::class;
+        protected $itemsDataType = 'array';
+        /**
+         * The kind of this entity. Always blogger#postList.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Pagination token to fetch the next page, if one exists.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of Posts with User information for the post, for this Blog.
+         *
+         * @param PostUserInfo[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return PostUserInfo[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * The kind of this entity. Always blogger#postList.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Pagination token to fetch the next page, if one exists.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PostUserInfo[]
+     * Runtime class alias of \Google\Service\Blogger\PostUserInfosList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * The kind of this entity. Always blogger#postList.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Pagination token to fetch the next page, if one exists.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Blogger_PostUserInfosList extends \Google\Service\Blogger\PostUserInfosList
     {
     }
 }

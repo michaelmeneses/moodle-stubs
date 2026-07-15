@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Installation extends \Google\Collection
-{
-    protected $collection_key = 'location';
-    protected $locationType = Location::class;
-    protected $locationDataType = 'array';
-    public $name;
+namespace Google\Service\ContainerAnalysis {
+    class Installation extends \Google\Collection
+    {
+        protected $collection_key = 'location';
+        protected $locationType = Location::class;
+        protected $locationDataType = 'array';
+        public $name;
+        /**
+         * @param Location[]
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return Location[]
+         */
+        public function getLocation()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param Location[]
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Installation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return Location[]
-     */
-    public function getLocation()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
+    class Google_Service_ContainerAnalysis_Installation extends \Google\Service\ContainerAnalysis\Installation
     {
     }
 }

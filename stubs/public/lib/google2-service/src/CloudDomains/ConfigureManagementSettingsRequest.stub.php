@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDomains;
-
-class ConfigureManagementSettingsRequest extends \Google\Model
-{
-    protected $managementSettingsType = ManagementSettings::class;
-    protected $managementSettingsDataType = '';
-    /**
-     * Required. The field mask describing which fields to update as a comma-
-     * separated list. For example, if only the transfer lock is being updated,
-     * the `update_mask` is `"transfer_lock_state"`.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Fields of the `ManagementSettings` to update.
-     *
-     * @param ManagementSettings $managementSettings
-     */
-    public function setManagementSettings(ManagementSettings $managementSettings)
+namespace Google\Service\CloudDomains {
+    class ConfigureManagementSettingsRequest extends \Google\Model
     {
+        protected $managementSettingsType = ManagementSettings::class;
+        protected $managementSettingsDataType = '';
+        /**
+         * Required. The field mask describing which fields to update as a comma-
+         * separated list. For example, if only the transfer lock is being updated,
+         * the `update_mask` is `"transfer_lock_state"`.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Fields of the `ManagementSettings` to update.
+         *
+         * @param ManagementSettings $managementSettings
+         */
+        public function setManagementSettings(ManagementSettings $managementSettings)
+        {
+        }
+        /**
+         * @return ManagementSettings
+         */
+        public function getManagementSettings()
+        {
+        }
+        /**
+         * Required. The field mask describing which fields to update as a comma-
+         * separated list. For example, if only the transfer lock is being updated,
+         * the `update_mask` is `"transfer_lock_state"`.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ManagementSettings
+     * Runtime class alias of \Google\Service\CloudDomains\ConfigureManagementSettingsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getManagementSettings()
-    {
-    }
-    /**
-     * Required. The field mask describing which fields to update as a comma-
-     * separated list. For example, if only the transfer lock is being updated,
-     * the `update_mask` is `"transfer_lock_state"`.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_CloudDomains_ConfigureManagementSettingsRequest extends \Google\Service\CloudDomains\ConfigureManagementSettingsRequest
     {
     }
 }

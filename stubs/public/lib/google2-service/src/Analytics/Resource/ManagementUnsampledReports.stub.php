@@ -21,85 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics\Resource;
-
-/**
- * The "unsampledReports" collection of methods.
- * Typical usage is:
- *  <code>
- *   $analyticsService = new Google\Service\Analytics(...);
- *   $unsampledReports = $analyticsService->management_unsampledReports;
- *  </code>
- */
-class ManagementUnsampledReports extends \Google\Service\Resource
-{
+namespace Google\Service\Analytics\Resource {
+    use Google\Service\Analytics\UnsampledReport;
+    use Google\Service\Analytics\UnsampledReports;
     /**
-     * Deletes an unsampled report. (unsampledReports.delete)
-     *
-     * @param string $accountId Account ID to delete the unsampled report for.
-     * @param string $webPropertyId Web property ID to delete the unsampled reports
-     * for.
-     * @param string $profileId View (Profile) ID to delete the unsampled report
-     * for.
-     * @param string $unsampledReportId ID of the unsampled report to be deleted.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "unsampledReports" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $analyticsService = new Google\Service\Analytics(...);
+     *   $unsampledReports = $analyticsService->management_unsampledReports;
+     *  </code>
      */
-    public function delete($accountId, $webPropertyId, $profileId, $unsampledReportId, $optParams = [])
+    class ManagementUnsampledReports extends \Google\Service\Resource
     {
+        /**
+         * Deletes an unsampled report. (unsampledReports.delete)
+         *
+         * @param string $accountId Account ID to delete the unsampled report for.
+         * @param string $webPropertyId Web property ID to delete the unsampled reports
+         * for.
+         * @param string $profileId View (Profile) ID to delete the unsampled report
+         * for.
+         * @param string $unsampledReportId ID of the unsampled report to be deleted.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($accountId, $webPropertyId, $profileId, $unsampledReportId, $optParams = [])
+        {
+        }
+        /**
+         * Returns a single unsampled report. (unsampledReports.get)
+         *
+         * @param string $accountId Account ID to retrieve unsampled report for.
+         * @param string $webPropertyId Web property ID to retrieve unsampled reports
+         * for.
+         * @param string $profileId View (Profile) ID to retrieve unsampled report for.
+         * @param string $unsampledReportId ID of the unsampled report to retrieve.
+         * @param array $optParams Optional parameters.
+         * @return UnsampledReport
+         * @throws \Google\Service\Exception
+         */
+        public function get($accountId, $webPropertyId, $profileId, $unsampledReportId, $optParams = [])
+        {
+        }
+        /**
+         * Create a new unsampled report. (unsampledReports.insert)
+         *
+         * @param string $accountId Account ID to create the unsampled report for.
+         * @param string $webPropertyId Web property ID to create the unsampled report
+         * for.
+         * @param string $profileId View (Profile) ID to create the unsampled report
+         * for.
+         * @param UnsampledReport $postBody
+         * @param array $optParams Optional parameters.
+         * @return UnsampledReport
+         * @throws \Google\Service\Exception
+         */
+        public function insert($accountId, $webPropertyId, $profileId, UnsampledReport $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists unsampled reports to which the user has access.
+         * (unsampledReports.listManagementUnsampledReports)
+         *
+         * @param string $accountId Account ID to retrieve unsampled reports for. Must
+         * be a specific account ID, ~all is not supported.
+         * @param string $webPropertyId Web property ID to retrieve unsampled reports
+         * for. Must be a specific web property ID, ~all is not supported.
+         * @param string $profileId View (Profile) ID to retrieve unsampled reports for.
+         * Must be a specific view (profile) ID, ~all is not supported.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int max-results The maximum number of unsampled reports to include
+         * in this response.
+         * @opt_param int start-index An index of the first unsampled report to
+         * retrieve. Use this parameter as a pagination mechanism along with the max-
+         * results parameter.
+         * @return UnsampledReports
+         * @throws \Google\Service\Exception
+         */
+        public function listManagementUnsampledReports($accountId, $webPropertyId, $profileId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns a single unsampled report. (unsampledReports.get)
-     *
-     * @param string $accountId Account ID to retrieve unsampled report for.
-     * @param string $webPropertyId Web property ID to retrieve unsampled reports
-     * for.
-     * @param string $profileId View (Profile) ID to retrieve unsampled report for.
-     * @param string $unsampledReportId ID of the unsampled report to retrieve.
-     * @param array $optParams Optional parameters.
-     * @return UnsampledReport
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Analytics\Resource\ManagementUnsampledReports registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($accountId, $webPropertyId, $profileId, $unsampledReportId, $optParams = [])
-    {
-    }
-    /**
-     * Create a new unsampled report. (unsampledReports.insert)
-     *
-     * @param string $accountId Account ID to create the unsampled report for.
-     * @param string $webPropertyId Web property ID to create the unsampled report
-     * for.
-     * @param string $profileId View (Profile) ID to create the unsampled report
-     * for.
-     * @param UnsampledReport $postBody
-     * @param array $optParams Optional parameters.
-     * @return UnsampledReport
-     * @throws \Google\Service\Exception
-     */
-    public function insert($accountId, $webPropertyId, $profileId, UnsampledReport $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists unsampled reports to which the user has access.
-     * (unsampledReports.listManagementUnsampledReports)
-     *
-     * @param string $accountId Account ID to retrieve unsampled reports for. Must
-     * be a specific account ID, ~all is not supported.
-     * @param string $webPropertyId Web property ID to retrieve unsampled reports
-     * for. Must be a specific web property ID, ~all is not supported.
-     * @param string $profileId View (Profile) ID to retrieve unsampled reports for.
-     * Must be a specific view (profile) ID, ~all is not supported.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int max-results The maximum number of unsampled reports to include
-     * in this response.
-     * @opt_param int start-index An index of the first unsampled report to
-     * retrieve. Use this parameter as a pagination mechanism along with the max-
-     * results parameter.
-     * @return UnsampledReports
-     * @throws \Google\Service\Exception
-     */
-    public function listManagementUnsampledReports($accountId, $webPropertyId, $profileId, $optParams = [])
+    class Google_Service_Analytics_Resource_ManagementUnsampledReports extends \Google\Service\Analytics\Resource\ManagementUnsampledReports
     {
     }
 }

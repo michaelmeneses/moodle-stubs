@@ -21,81 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise\Resource;
-
-/**
- * The "storelayoutclusters" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidenterpriseService = new Google\Service\AndroidEnterprise(...);
- *   $storelayoutclusters = $androidenterpriseService->storelayoutclusters;
- *  </code>
- */
-class Storelayoutclusters extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidEnterprise\Resource {
+    use Google\Service\AndroidEnterprise\StoreCluster;
+    use Google\Service\AndroidEnterprise\StoreLayoutClustersListResponse;
     /**
-     * Deletes a cluster. (storelayoutclusters.delete)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param string $pageId The ID of the page.
-     * @param string $clusterId The ID of the cluster.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "storelayoutclusters" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidenterpriseService = new Google\Service\AndroidEnterprise(...);
+     *   $storelayoutclusters = $androidenterpriseService->storelayoutclusters;
+     *  </code>
      */
-    public function delete($enterpriseId, $pageId, $clusterId, $optParams = [])
+    class Storelayoutclusters extends \Google\Service\Resource
     {
+        /**
+         * Deletes a cluster. (storelayoutclusters.delete)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param string $pageId The ID of the page.
+         * @param string $clusterId The ID of the cluster.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($enterpriseId, $pageId, $clusterId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves details of a cluster. (storelayoutclusters.get)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param string $pageId The ID of the page.
+         * @param string $clusterId The ID of the cluster.
+         * @param array $optParams Optional parameters.
+         * @return StoreCluster
+         * @throws \Google\Service\Exception
+         */
+        public function get($enterpriseId, $pageId, $clusterId, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a new cluster in a page. (storelayoutclusters.insert)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param string $pageId The ID of the page.
+         * @param StoreCluster $postBody
+         * @param array $optParams Optional parameters.
+         * @return StoreCluster
+         * @throws \Google\Service\Exception
+         */
+        public function insert($enterpriseId, $pageId, StoreCluster $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the details of all clusters on the specified page.
+         * (storelayoutclusters.listStorelayoutclusters)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param string $pageId The ID of the page.
+         * @param array $optParams Optional parameters.
+         * @return StoreLayoutClustersListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listStorelayoutclusters($enterpriseId, $pageId, $optParams = [])
+        {
+        }
+        /**
+         * Updates a cluster. (storelayoutclusters.update)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param string $pageId The ID of the page.
+         * @param string $clusterId The ID of the cluster.
+         * @param StoreCluster $postBody
+         * @param array $optParams Optional parameters.
+         * @return StoreCluster
+         * @throws \Google\Service\Exception
+         */
+        public function update($enterpriseId, $pageId, $clusterId, StoreCluster $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves details of a cluster. (storelayoutclusters.get)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param string $pageId The ID of the page.
-     * @param string $clusterId The ID of the cluster.
-     * @param array $optParams Optional parameters.
-     * @return StoreCluster
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidEnterprise\Resource\Storelayoutclusters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($enterpriseId, $pageId, $clusterId, $optParams = [])
-    {
-    }
-    /**
-     * Inserts a new cluster in a page. (storelayoutclusters.insert)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param string $pageId The ID of the page.
-     * @param StoreCluster $postBody
-     * @param array $optParams Optional parameters.
-     * @return StoreCluster
-     * @throws \Google\Service\Exception
-     */
-    public function insert($enterpriseId, $pageId, StoreCluster $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves the details of all clusters on the specified page.
-     * (storelayoutclusters.listStorelayoutclusters)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param string $pageId The ID of the page.
-     * @param array $optParams Optional parameters.
-     * @return StoreLayoutClustersListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listStorelayoutclusters($enterpriseId, $pageId, $optParams = [])
-    {
-    }
-    /**
-     * Updates a cluster. (storelayoutclusters.update)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param string $pageId The ID of the page.
-     * @param string $clusterId The ID of the cluster.
-     * @param StoreCluster $postBody
-     * @param array $optParams Optional parameters.
-     * @return StoreCluster
-     * @throws \Google\Service\Exception
-     */
-    public function update($enterpriseId, $pageId, $clusterId, StoreCluster $postBody, $optParams = [])
+    class Google_Service_AndroidEnterprise_Resource_Storelayoutclusters extends \Google\Service\AndroidEnterprise\Resource\Storelayoutclusters
     {
     }
 }

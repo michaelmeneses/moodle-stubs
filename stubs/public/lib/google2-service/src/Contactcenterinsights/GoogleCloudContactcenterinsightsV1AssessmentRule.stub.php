@@ -21,146 +21,155 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1AssessmentRule extends \Google\Model
-{
-    /**
-     * If true, apply this rule to conversations. Otherwise, this rule is
-     * inactive.
-     *
-     * @var bool
-     */
-    public $active;
-    /**
-     * Output only. The time at which this assessment rule was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Display Name of the assessment rule.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Identifier. The resource name of the assessment rule. Format:
-     * projects/{project}/locations/{location}/assessmentRules/{assessment_rule}
-     *
-     * @var string
-     */
-    public $name;
-    protected $sampleRuleType = GoogleCloudContactcenterinsightsV1SampleRule::class;
-    protected $sampleRuleDataType = '';
-    protected $scheduleInfoType = GoogleCloudContactcenterinsightsV1ScheduleInfo::class;
-    protected $scheduleInfoDataType = '';
-    /**
-     * Output only. The most recent time at which this assessment rule was
-     * updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * If true, apply this rule to conversations. Otherwise, this rule is
-     * inactive.
-     *
-     * @param bool $active
-     */
-    public function setActive($active)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1AssessmentRule extends \Google\Model
     {
+        /**
+         * If true, apply this rule to conversations. Otherwise, this rule is
+         * inactive.
+         *
+         * @var bool
+         */
+        public $active;
+        /**
+         * Output only. The time at which this assessment rule was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Display Name of the assessment rule.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Identifier. The resource name of the assessment rule. Format:
+         * projects/{project}/locations/{location}/assessmentRules/{assessment_rule}
+         *
+         * @var string
+         */
+        public $name;
+        protected $sampleRuleType = GoogleCloudContactcenterinsightsV1SampleRule::class;
+        protected $sampleRuleDataType = '';
+        protected $scheduleInfoType = GoogleCloudContactcenterinsightsV1ScheduleInfo::class;
+        protected $scheduleInfoDataType = '';
+        /**
+         * Output only. The most recent time at which this assessment rule was
+         * updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * If true, apply this rule to conversations. Otherwise, this rule is
+         * inactive.
+         *
+         * @param bool $active
+         */
+        public function setActive($active)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getActive()
+        {
+        }
+        /**
+         * Output only. The time at which this assessment rule was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Display Name of the assessment rule.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Identifier. The resource name of the assessment rule. Format:
+         * projects/{project}/locations/{location}/assessmentRules/{assessment_rule}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The sample rule for the assessment rule.
+         *
+         * @param GoogleCloudContactcenterinsightsV1SampleRule $sampleRule
+         */
+        public function setSampleRule(GoogleCloudContactcenterinsightsV1SampleRule $sampleRule)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1SampleRule
+         */
+        public function getSampleRule()
+        {
+        }
+        /**
+         * Schedule info for the assessment rule.
+         *
+         * @param GoogleCloudContactcenterinsightsV1ScheduleInfo $scheduleInfo
+         */
+        public function setScheduleInfo(GoogleCloudContactcenterinsightsV1ScheduleInfo $scheduleInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1ScheduleInfo
+         */
+        public function getScheduleInfo()
+        {
+        }
+        /**
+         * Output only. The most recent time at which this assessment rule was
+         * updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1AssessmentRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActive()
-    {
-    }
-    /**
-     * Output only. The time at which this assessment rule was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Display Name of the assessment rule.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Identifier. The resource name of the assessment rule. Format:
-     * projects/{project}/locations/{location}/assessmentRules/{assessment_rule}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The sample rule for the assessment rule.
-     *
-     * @param GoogleCloudContactcenterinsightsV1SampleRule $sampleRule
-     */
-    public function setSampleRule(GoogleCloudContactcenterinsightsV1SampleRule $sampleRule)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1SampleRule
-     */
-    public function getSampleRule()
-    {
-    }
-    /**
-     * Schedule info for the assessment rule.
-     *
-     * @param GoogleCloudContactcenterinsightsV1ScheduleInfo $scheduleInfo
-     */
-    public function setScheduleInfo(GoogleCloudContactcenterinsightsV1ScheduleInfo $scheduleInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1ScheduleInfo
-     */
-    public function getScheduleInfo()
-    {
-    }
-    /**
-     * Output only. The most recent time at which this assessment rule was
-     * updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1AssessmentRule extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1AssessmentRule
     {
     }
 }

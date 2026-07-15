@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Eventarc;
-
-class Transport extends \Google\Model
-{
-    protected $pubsubType = Pubsub::class;
-    protected $pubsubDataType = '';
-    /**
-     * The Pub/Sub topic and subscription used by Eventarc as a transport
-     * intermediary.
-     *
-     * @param Pubsub $pubsub
-     */
-    public function setPubsub(Pubsub $pubsub)
+namespace Google\Service\Eventarc {
+    class Transport extends \Google\Model
     {
+        protected $pubsubType = Pubsub::class;
+        protected $pubsubDataType = '';
+        /**
+         * The Pub/Sub topic and subscription used by Eventarc as a transport
+         * intermediary.
+         *
+         * @param Pubsub $pubsub
+         */
+        public function setPubsub(Pubsub $pubsub)
+        {
+        }
+        /**
+         * @return Pubsub
+         */
+        public function getPubsub()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Pubsub
+     * Runtime class alias of \Google\Service\Eventarc\Transport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPubsub()
+    class Google_Service_Eventarc_Transport extends \Google\Service\Eventarc\Transport
     {
     }
 }

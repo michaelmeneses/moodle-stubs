@@ -21,115 +21,128 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects\Resource;
-
-/**
- * The "genericobject" collection of methods.
- * Typical usage is:
- *  <code>
- *   $walletobjectsService = new Google\Service\Walletobjects(...);
- *   $genericobject = $walletobjectsService->genericobject;
- *  </code>
- */
-class Genericobject extends \Google\Service\Resource
-{
+namespace Google\Service\Walletobjects\Resource {
+    use Google\Service\Walletobjects\AddMessageRequest;
+    use Google\Service\Walletobjects\GenericObject as GenericObjectModel;
+    use Google\Service\Walletobjects\GenericObjectAddMessageResponse;
+    use Google\Service\Walletobjects\GenericObjectListResponse;
     /**
-     * Adds a message to the generic object referenced by the given object ID.
-     * (genericobject.addmessage)
-     *
-     * @param string $resourceId The unique identifier for an object. This ID must
-     * be unique across all classes from an issuer. This value should follow the
-     * format issuer ID. identifier where the former is issued by Google and latter
-     * is chosen by you. Your unique identifier should only include alphanumeric
-     * characters, '.', '_', or '-'.
-     * @param AddMessageRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GenericObjectAddMessageResponse
-     * @throws \Google\Service\Exception
+     * The "genericobject" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $walletobjectsService = new Google\Service\Walletobjects(...);
+     *   $genericobject = $walletobjectsService->genericobject;
+     *  </code>
      */
-    public function addmessage($resourceId, AddMessageRequest $postBody, $optParams = [])
+    class Genericobject extends \Google\Service\Resource
     {
+        /**
+         * Adds a message to the generic object referenced by the given object ID.
+         * (genericobject.addmessage)
+         *
+         * @param string $resourceId The unique identifier for an object. This ID must
+         * be unique across all classes from an issuer. This value should follow the
+         * format issuer ID. identifier where the former is issued by Google and latter
+         * is chosen by you. Your unique identifier should only include alphanumeric
+         * characters, '.', '_', or '-'.
+         * @param AddMessageRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GenericObjectAddMessageResponse
+         * @throws \Google\Service\Exception
+         */
+        public function addmessage($resourceId, AddMessageRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns the generic object with the given object ID. (genericobject.get)
+         *
+         * @param string $resourceId The unique identifier for an object. This ID must
+         * be unique across all objects from an issuer. This value needs to follow the
+         * format `issuerID.identifier` where `issuerID` is issued by Google and
+         * `identifier` is chosen by you. The unique identifier can only include
+         * alphanumeric characters, `.`, `_`, or `-`.
+         * @param array $optParams Optional parameters.
+         * @return GenericObjectModel
+         * @throws \Google\Service\Exception
+         */
+        public function get($resourceId, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a generic object with the given ID and properties.
+         * (genericobject.insert)
+         *
+         * @param GenericObjectModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return GenericObjectModel
+         * @throws \Google\Service\Exception
+         */
+        public function insert(GenericObjectModel $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns a list of all generic objects for a given issuer ID.
+         * (genericobject.listGenericobject)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string classId The ID of the class whose objects will be listed.
+         * @opt_param int maxResults Identifies the max number of results returned by a
+         * list. All results are returned if `maxResults` isn't defined.
+         * @opt_param string token Used to get the next set of results if `maxResults`
+         * is specified, but more than `maxResults` objects are available in a list. For
+         * example, if you have a list of 200 objects and you call list with
+         * `maxResults` set to 20, list will return the first 20 objects and a token.
+         * Call list again with `maxResults` set to 20 and the token to get the next 20
+         * objects.
+         * @return GenericObjectListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listGenericobject($optParams = [])
+        {
+        }
+        /**
+         * Updates the generic object referenced by the given object ID. This method
+         * supports patch semantics. (genericobject.patch)
+         *
+         * @param string $resourceId The unique identifier for an object. This ID must
+         * be unique across all objects from an issuer. This value needs to follow the
+         * format `issuerID.identifier` where `issuerID` is issued by Google and
+         * `identifier` is chosen by you. The unique identifier can only include
+         * alphanumeric characters, `.`, `_`, or `-`.
+         * @param GenericObjectModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return GenericObjectModel
+         * @throws \Google\Service\Exception
+         */
+        public function patch($resourceId, GenericObjectModel $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates the generic object referenced by the given object ID.
+         * (genericobject.update)
+         *
+         * @param string $resourceId The unique identifier for an object. This ID must
+         * be unique across all objects from an issuer. This value needs to follow the
+         * format `issuerID.identifier` where `issuerID` is issued by Google and
+         * `identifier` is chosen by you. The unique identifier can only include
+         * alphanumeric characters, `.`, `_`, or `-`.
+         * @param GenericObjectModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return GenericObjectModel
+         * @throws \Google\Service\Exception
+         */
+        public function update($resourceId, GenericObjectModel $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns the generic object with the given object ID. (genericobject.get)
-     *
-     * @param string $resourceId The unique identifier for an object. This ID must
-     * be unique across all objects from an issuer. This value needs to follow the
-     * format `issuerID.identifier` where `issuerID` is issued by Google and
-     * `identifier` is chosen by you. The unique identifier can only include
-     * alphanumeric characters, `.`, `_`, or `-`.
-     * @param array $optParams Optional parameters.
-     * @return GenericObjectModel
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Walletobjects\Resource\Genericobject registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($resourceId, $optParams = [])
-    {
-    }
-    /**
-     * Inserts a generic object with the given ID and properties.
-     * (genericobject.insert)
-     *
-     * @param GenericObjectModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return GenericObjectModel
-     * @throws \Google\Service\Exception
-     */
-    public function insert(GenericObjectModel $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Returns a list of all generic objects for a given issuer ID.
-     * (genericobject.listGenericobject)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string classId The ID of the class whose objects will be listed.
-     * @opt_param int maxResults Identifies the max number of results returned by a
-     * list. All results are returned if `maxResults` isn't defined.
-     * @opt_param string token Used to get the next set of results if `maxResults`
-     * is specified, but more than `maxResults` objects are available in a list. For
-     * example, if you have a list of 200 objects and you call list with
-     * `maxResults` set to 20, list will return the first 20 objects and a token.
-     * Call list again with `maxResults` set to 20 and the token to get the next 20
-     * objects.
-     * @return GenericObjectListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listGenericobject($optParams = [])
-    {
-    }
-    /**
-     * Updates the generic object referenced by the given object ID. This method
-     * supports patch semantics. (genericobject.patch)
-     *
-     * @param string $resourceId The unique identifier for an object. This ID must
-     * be unique across all objects from an issuer. This value needs to follow the
-     * format `issuerID.identifier` where `issuerID` is issued by Google and
-     * `identifier` is chosen by you. The unique identifier can only include
-     * alphanumeric characters, `.`, `_`, or `-`.
-     * @param GenericObjectModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return GenericObjectModel
-     * @throws \Google\Service\Exception
-     */
-    public function patch($resourceId, GenericObjectModel $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates the generic object referenced by the given object ID.
-     * (genericobject.update)
-     *
-     * @param string $resourceId The unique identifier for an object. This ID must
-     * be unique across all objects from an issuer. This value needs to follow the
-     * format `issuerID.identifier` where `issuerID` is issued by Google and
-     * `identifier` is chosen by you. The unique identifier can only include
-     * alphanumeric characters, `.`, `_`, or `-`.
-     * @param GenericObjectModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return GenericObjectModel
-     * @throws \Google\Service\Exception
-     */
-    public function update($resourceId, GenericObjectModel $postBody, $optParams = [])
+    class Google_Service_Walletobjects_Resource_Genericobject extends \Google\Service\Walletobjects\Resource\Genericobject
     {
     }
 }

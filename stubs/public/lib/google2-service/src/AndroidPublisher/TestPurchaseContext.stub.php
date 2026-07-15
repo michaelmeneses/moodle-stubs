@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class TestPurchaseContext extends \Google\Model
-{
-    /**
-     * Fop type unspecified. This value should never be set.
-     */
-    public const FOP_TYPE_FOP_TYPE_UNSPECIFIED = 'FOP_TYPE_UNSPECIFIED';
-    /**
-     * The purchase was made using a test card.
-     */
-    public const FOP_TYPE_TEST = 'TEST';
-    /**
-     * The fop type of the test purchase.
-     *
-     * @var string
-     */
-    public $fopType;
-    /**
-     * The fop type of the test purchase.
-     *
-     * Accepted values: FOP_TYPE_UNSPECIFIED, TEST
-     *
-     * @param self::FOP_TYPE_* $fopType
-     */
-    public function setFopType($fopType)
+namespace Google\Service\AndroidPublisher {
+    class TestPurchaseContext extends \Google\Model
     {
+        /**
+         * Fop type unspecified. This value should never be set.
+         */
+        public const FOP_TYPE_FOP_TYPE_UNSPECIFIED = 'FOP_TYPE_UNSPECIFIED';
+        /**
+         * The purchase was made using a test card.
+         */
+        public const FOP_TYPE_TEST = 'TEST';
+        /**
+         * The fop type of the test purchase.
+         *
+         * @var string
+         */
+        public $fopType;
+        /**
+         * The fop type of the test purchase.
+         *
+         * Accepted values: FOP_TYPE_UNSPECIFIED, TEST
+         *
+         * @param self::FOP_TYPE_* $fopType
+         */
+        public function setFopType($fopType)
+        {
+        }
+        /**
+         * @return self::FOP_TYPE_*
+         */
+        public function getFopType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::FOP_TYPE_*
+     * Runtime class alias of \Google\Service\AndroidPublisher\TestPurchaseContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFopType()
+    class Google_Service_AndroidPublisher_TestPurchaseContext extends \Google\Service\AndroidPublisher\TestPurchaseContext
     {
     }
 }

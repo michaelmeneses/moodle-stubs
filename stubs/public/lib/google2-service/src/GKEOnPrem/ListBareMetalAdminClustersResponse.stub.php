@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class ListBareMetalAdminClustersResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $bareMetalAdminClustersType = BareMetalAdminCluster::class;
-    protected $bareMetalAdminClustersDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return. If the
-     * token is not empty this means that more results are available and should be
-     * retrieved by repeating the request with the provided page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of bare metal admin cluster.
-     *
-     * @param BareMetalAdminCluster[] $bareMetalAdminClusters
-     */
-    public function setBareMetalAdminClusters($bareMetalAdminClusters)
+namespace Google\Service\GKEOnPrem {
+    class ListBareMetalAdminClustersResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $bareMetalAdminClustersType = BareMetalAdminCluster::class;
+        protected $bareMetalAdminClustersDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return. If the
+         * token is not empty this means that more results are available and should be
+         * retrieved by repeating the request with the provided page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of bare metal admin cluster.
+         *
+         * @param BareMetalAdminCluster[] $bareMetalAdminClusters
+         */
+        public function setBareMetalAdminClusters($bareMetalAdminClusters)
+        {
+        }
+        /**
+         * @return BareMetalAdminCluster[]
+         */
+        public function getBareMetalAdminClusters()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return. If the
+         * token is not empty this means that more results are available and should be
+         * retrieved by repeating the request with the provided page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BareMetalAdminCluster[]
+     * Runtime class alias of \Google\Service\GKEOnPrem\ListBareMetalAdminClustersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBareMetalAdminClusters()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return. If the
-     * token is not empty this means that more results are available and should be
-     * retrieved by repeating the request with the provided page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_GKEOnPrem_ListBareMetalAdminClustersResponse extends \Google\Service\GKEOnPrem\ListBareMetalAdminClustersResponse
     {
     }
 }

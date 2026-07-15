@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class IntentPayload extends \Google\Model
-{
-    protected $createIntentType = CreateSubscriptionIntent::class;
-    protected $createIntentDataType = '';
-    protected $entitleIntentType = EntitleSubscriptionIntent::class;
-    protected $entitleIntentDataType = '';
-    protected $intentOptionsType = IntentPayloadIntentOptions::class;
-    protected $intentOptionsDataType = '';
-    /**
-     * The request to create a subscription.
-     *
-     * @param CreateSubscriptionIntent $createIntent
-     */
-    public function setCreateIntent(CreateSubscriptionIntent $createIntent)
+namespace Google\Service\PaymentsResellerSubscription {
+    class IntentPayload extends \Google\Model
     {
+        protected $createIntentType = CreateSubscriptionIntent::class;
+        protected $createIntentDataType = '';
+        protected $entitleIntentType = EntitleSubscriptionIntent::class;
+        protected $entitleIntentDataType = '';
+        protected $intentOptionsType = IntentPayloadIntentOptions::class;
+        protected $intentOptionsDataType = '';
+        /**
+         * The request to create a subscription.
+         *
+         * @param CreateSubscriptionIntent $createIntent
+         */
+        public function setCreateIntent(CreateSubscriptionIntent $createIntent)
+        {
+        }
+        /**
+         * @return CreateSubscriptionIntent
+         */
+        public function getCreateIntent()
+        {
+        }
+        /**
+         * The request to entitle a subscription.
+         *
+         * @param EntitleSubscriptionIntent $entitleIntent
+         */
+        public function setEntitleIntent(EntitleSubscriptionIntent $entitleIntent)
+        {
+        }
+        /**
+         * @return EntitleSubscriptionIntent
+         */
+        public function getEntitleIntent()
+        {
+        }
+        /**
+         * Optional. The additional features for the intent.
+         *
+         * @param IntentPayloadIntentOptions $intentOptions
+         */
+        public function setIntentOptions(IntentPayloadIntentOptions $intentOptions)
+        {
+        }
+        /**
+         * @return IntentPayloadIntentOptions
+         */
+        public function getIntentOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CreateSubscriptionIntent
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\IntentPayload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateIntent()
-    {
-    }
-    /**
-     * The request to entitle a subscription.
-     *
-     * @param EntitleSubscriptionIntent $entitleIntent
-     */
-    public function setEntitleIntent(EntitleSubscriptionIntent $entitleIntent)
-    {
-    }
-    /**
-     * @return EntitleSubscriptionIntent
-     */
-    public function getEntitleIntent()
-    {
-    }
-    /**
-     * Optional. The additional features for the intent.
-     *
-     * @param IntentPayloadIntentOptions $intentOptions
-     */
-    public function setIntentOptions(IntentPayloadIntentOptions $intentOptions)
-    {
-    }
-    /**
-     * @return IntentPayloadIntentOptions
-     */
-    public function getIntentOptions()
+    class Google_Service_PaymentsResellerSubscription_IntentPayload extends \Google\Service\PaymentsResellerSubscription\IntentPayload
     {
     }
 }

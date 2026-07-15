@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1SerializedPolicyTag extends \Google\Collection
-{
-    protected $collection_key = 'childPolicyTags';
-    protected $childPolicyTagsType = GoogleCloudDatacatalogV1beta1SerializedPolicyTag::class;
-    protected $childPolicyTagsDataType = 'array';
-    public $description;
-    public $displayName;
-    public $policyTag;
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1SerializedPolicyTag extends \Google\Collection
+    {
+        protected $collection_key = 'childPolicyTags';
+        protected $childPolicyTagsType = GoogleCloudDatacatalogV1beta1SerializedPolicyTag::class;
+        protected $childPolicyTagsDataType = 'array';
+        public $description;
+        public $displayName;
+        public $policyTag;
+        /**
+         * @param GoogleCloudDatacatalogV1beta1SerializedPolicyTag[]
+         */
+        public function setChildPolicyTags($childPolicyTags)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1SerializedPolicyTag[]
+         */
+        public function getChildPolicyTags()
+        {
+        }
+        public function setDescription($description)
+        {
+        }
+        public function getDescription()
+        {
+        }
+        public function setDisplayName($displayName)
+        {
+        }
+        public function getDisplayName()
+        {
+        }
+        public function setPolicyTag($policyTag)
+        {
+        }
+        public function getPolicyTag()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param GoogleCloudDatacatalogV1beta1SerializedPolicyTag[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1SerializedPolicyTag registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setChildPolicyTags($childPolicyTags)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1beta1SerializedPolicyTag[]
-     */
-    public function getChildPolicyTags()
-    {
-    }
-    public function setDescription($description)
-    {
-    }
-    public function getDescription()
-    {
-    }
-    public function setDisplayName($displayName)
-    {
-    }
-    public function getDisplayName()
-    {
-    }
-    public function setPolicyTag($policyTag)
-    {
-    }
-    public function getPolicyTag()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1SerializedPolicyTag extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1SerializedPolicyTag
     {
     }
 }

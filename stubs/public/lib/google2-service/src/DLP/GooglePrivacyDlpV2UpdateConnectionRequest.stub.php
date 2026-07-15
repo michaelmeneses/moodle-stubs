@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2UpdateConnectionRequest extends \Google\Model
-{
-    protected $connectionType = GooglePrivacyDlpV2Connection::class;
-    protected $connectionDataType = '';
-    /**
-     * Optional. Mask to control which fields get updated.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. The connection with new values for the relevant fields.
-     *
-     * @param GooglePrivacyDlpV2Connection $connection
-     */
-    public function setConnection(GooglePrivacyDlpV2Connection $connection)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2UpdateConnectionRequest extends \Google\Model
     {
+        protected $connectionType = GooglePrivacyDlpV2Connection::class;
+        protected $connectionDataType = '';
+        /**
+         * Optional. Mask to control which fields get updated.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. The connection with new values for the relevant fields.
+         *
+         * @param GooglePrivacyDlpV2Connection $connection
+         */
+        public function setConnection(GooglePrivacyDlpV2Connection $connection)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Connection
+         */
+        public function getConnection()
+        {
+        }
+        /**
+         * Optional. Mask to control which fields get updated.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2Connection
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2UpdateConnectionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnection()
-    {
-    }
-    /**
-     * Optional. Mask to control which fields get updated.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_DLP_GooglePrivacyDlpV2UpdateConnectionRequest extends \Google\Service\DLP\GooglePrivacyDlpV2UpdateConnectionRequest
     {
     }
 }

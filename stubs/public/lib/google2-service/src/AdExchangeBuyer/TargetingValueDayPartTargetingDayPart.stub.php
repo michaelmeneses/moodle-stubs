@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class TargetingValueDayPartTargetingDayPart extends \Google\Model
-{
-    public $dayOfWeek;
-    public $endHour;
-    public $endMinute;
-    public $startHour;
-    public $startMinute;
-    public function setDayOfWeek($dayOfWeek)
+namespace Google\Service\AdExchangeBuyer {
+    class TargetingValueDayPartTargetingDayPart extends \Google\Model
     {
+        public $dayOfWeek;
+        public $endHour;
+        public $endMinute;
+        public $startHour;
+        public $startMinute;
+        public function setDayOfWeek($dayOfWeek)
+        {
+        }
+        public function getDayOfWeek()
+        {
+        }
+        public function setEndHour($endHour)
+        {
+        }
+        public function getEndHour()
+        {
+        }
+        public function setEndMinute($endMinute)
+        {
+        }
+        public function getEndMinute()
+        {
+        }
+        public function setStartHour($startHour)
+        {
+        }
+        public function getStartHour()
+        {
+        }
+        public function setStartMinute($startMinute)
+        {
+        }
+        public function getStartMinute()
+        {
+        }
     }
-    public function getDayOfWeek()
-    {
-    }
-    public function setEndHour($endHour)
-    {
-    }
-    public function getEndHour()
-    {
-    }
-    public function setEndMinute($endMinute)
-    {
-    }
-    public function getEndMinute()
-    {
-    }
-    public function setStartHour($startHour)
-    {
-    }
-    public function getStartHour()
-    {
-    }
-    public function setStartMinute($startMinute)
-    {
-    }
-    public function getStartMinute()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\TargetingValueDayPartTargetingDayPart registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_TargetingValueDayPartTargetingDayPart extends \Google\Service\AdExchangeBuyer\TargetingValueDayPartTargetingDayPart
     {
     }
 }

@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteRoomUpdatedMetadata extends \Google\Model
-{
-    protected $groupDetailsMetadataType = AppsDynamiteRoomUpdatedMetadataGroupDetailsUpdatedMetadata::class;
-    protected $groupDetailsMetadataDataType = '';
-    /**
-     * @var bool
-     */
-    public $groupLinkSharingEnabled;
-    protected $initiatorDataType = '';
-    /**
-     * @var string
-     */
-    public $initiatorType;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $renameMetadataType = AppsDynamiteRoomUpdatedMetadataRoomRenameMetadata::class;
-    protected $renameMetadataDataType = '';
-    protected $visibilityType = AppsDynamiteSharedGroupVisibility::class;
-    protected $visibilityDataType = '';
-    /**
-     * @param AppsDynamiteRoomUpdatedMetadataGroupDetailsUpdatedMetadata
-     */
-    public function setGroupDetailsMetadata(AppsDynamiteRoomUpdatedMetadataGroupDetailsUpdatedMetadata $groupDetailsMetadata)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteRoomUpdatedMetadata extends \Google\Model
     {
+        protected $groupDetailsMetadataType = AppsDynamiteRoomUpdatedMetadataGroupDetailsUpdatedMetadata::class;
+        protected $groupDetailsMetadataDataType = '';
+        /**
+         * @var bool
+         */
+        public $groupLinkSharingEnabled;
+        protected $initiatorDataType = '';
+        /**
+         * @var string
+         */
+        public $initiatorType;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $renameMetadataType = AppsDynamiteRoomUpdatedMetadataRoomRenameMetadata::class;
+        protected $renameMetadataDataType = '';
+        protected $visibilityType = AppsDynamiteSharedGroupVisibility::class;
+        protected $visibilityDataType = '';
+        /**
+         * @param AppsDynamiteRoomUpdatedMetadataGroupDetailsUpdatedMetadata
+         */
+        public function setGroupDetailsMetadata(AppsDynamiteRoomUpdatedMetadataGroupDetailsUpdatedMetadata $groupDetailsMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteRoomUpdatedMetadataGroupDetailsUpdatedMetadata
+         */
+        public function getGroupDetailsMetadata()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setGroupLinkSharingEnabled($groupLinkSharingEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getGroupLinkSharingEnabled()
+        {
+        }
+        /**
+         * @param AppsDynamiteFrontendUser
+         */
+        public function setInitiator(AppsDynamiteFrontendUser $initiator)
+        {
+        }
+        /**
+         * @return AppsDynamiteFrontendUser
+         */
+        public function getInitiator()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInitiatorType($initiatorType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInitiatorType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param AppsDynamiteRoomUpdatedMetadataRoomRenameMetadata
+         */
+        public function setRenameMetadata(AppsDynamiteRoomUpdatedMetadataRoomRenameMetadata $renameMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteRoomUpdatedMetadataRoomRenameMetadata
+         */
+        public function getRenameMetadata()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedGroupVisibility
+         */
+        public function setVisibility(AppsDynamiteSharedGroupVisibility $visibility)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedGroupVisibility
+         */
+        public function getVisibility()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteRoomUpdatedMetadataGroupDetailsUpdatedMetadata
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteRoomUpdatedMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroupDetailsMetadata()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setGroupLinkSharingEnabled($groupLinkSharingEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getGroupLinkSharingEnabled()
-    {
-    }
-    /**
-     * @param AppsDynamiteFrontendUser
-     */
-    public function setInitiator(AppsDynamiteFrontendUser $initiator)
-    {
-    }
-    /**
-     * @return AppsDynamiteFrontendUser
-     */
-    public function getInitiator()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInitiatorType($initiatorType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInitiatorType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param AppsDynamiteRoomUpdatedMetadataRoomRenameMetadata
-     */
-    public function setRenameMetadata(AppsDynamiteRoomUpdatedMetadataRoomRenameMetadata $renameMetadata)
-    {
-    }
-    /**
-     * @return AppsDynamiteRoomUpdatedMetadataRoomRenameMetadata
-     */
-    public function getRenameMetadata()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedGroupVisibility
-     */
-    public function setVisibility(AppsDynamiteSharedGroupVisibility $visibility)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedGroupVisibility
-     */
-    public function getVisibility()
+    class Google_Service_CloudSearch_AppsDynamiteRoomUpdatedMetadata extends \Google\Service\CloudSearch\AppsDynamiteRoomUpdatedMetadata
     {
     }
 }

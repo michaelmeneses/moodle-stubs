@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class GoogleDatastoreAdminV1DatastoreFirestoreMigrationMetadata extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const MIGRATION_STATE_MIGRATION_STATE_UNSPECIFIED = 'MIGRATION_STATE_UNSPECIFIED';
-    /**
-     * The migration is running.
-     */
-    public const MIGRATION_STATE_RUNNING = 'RUNNING';
-    /**
-     * The migration is paused.
-     */
-    public const MIGRATION_STATE_PAUSED = 'PAUSED';
-    /**
-     * The migration is complete.
-     */
-    public const MIGRATION_STATE_COMPLETE = 'COMPLETE';
-    /**
-     * Unspecified.
-     */
-    public const MIGRATION_STEP_MIGRATION_STEP_UNSPECIFIED = 'MIGRATION_STEP_UNSPECIFIED';
-    /**
-     * Pre-migration: the database is prepared for migration.
-     */
-    public const MIGRATION_STEP_PREPARE = 'PREPARE';
-    /**
-     * Start of migration.
-     */
-    public const MIGRATION_STEP_START = 'START';
-    /**
-     * Writes are applied synchronously to at least one replica.
-     */
-    public const MIGRATION_STEP_APPLY_WRITES_SYNCHRONOUSLY = 'APPLY_WRITES_SYNCHRONOUSLY';
-    /**
-     * Data is copied to Cloud Firestore and then verified to match the data in
-     * Cloud Datastore.
-     */
-    public const MIGRATION_STEP_COPY_AND_VERIFY = 'COPY_AND_VERIFY';
-    /**
-     * Eventually-consistent reads are redirected to Cloud Firestore.
-     */
-    public const MIGRATION_STEP_REDIRECT_EVENTUALLY_CONSISTENT_READS = 'REDIRECT_EVENTUALLY_CONSISTENT_READS';
-    /**
-     * Strongly-consistent reads are redirected to Cloud Firestore.
-     */
-    public const MIGRATION_STEP_REDIRECT_STRONGLY_CONSISTENT_READS = 'REDIRECT_STRONGLY_CONSISTENT_READS';
-    /**
-     * Writes are redirected to Cloud Firestore.
-     */
-    public const MIGRATION_STEP_REDIRECT_WRITES = 'REDIRECT_WRITES';
-    /**
-     * The current state of migration from Cloud Datastore to Cloud Firestore in
-     * Datastore mode.
-     *
-     * @var string
-     */
-    public $migrationState;
-    /**
-     * The current step of migration from Cloud Datastore to Cloud Firestore in
-     * Datastore mode.
-     *
-     * @var string
-     */
-    public $migrationStep;
-    /**
-     * The current state of migration from Cloud Datastore to Cloud Firestore in
-     * Datastore mode.
-     *
-     * Accepted values: MIGRATION_STATE_UNSPECIFIED, RUNNING, PAUSED, COMPLETE
-     *
-     * @param self::MIGRATION_STATE_* $migrationState
-     */
-    public function setMigrationState($migrationState)
+namespace Google\Service\Datastore {
+    class GoogleDatastoreAdminV1DatastoreFirestoreMigrationMetadata extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const MIGRATION_STATE_MIGRATION_STATE_UNSPECIFIED = 'MIGRATION_STATE_UNSPECIFIED';
+        /**
+         * The migration is running.
+         */
+        public const MIGRATION_STATE_RUNNING = 'RUNNING';
+        /**
+         * The migration is paused.
+         */
+        public const MIGRATION_STATE_PAUSED = 'PAUSED';
+        /**
+         * The migration is complete.
+         */
+        public const MIGRATION_STATE_COMPLETE = 'COMPLETE';
+        /**
+         * Unspecified.
+         */
+        public const MIGRATION_STEP_MIGRATION_STEP_UNSPECIFIED = 'MIGRATION_STEP_UNSPECIFIED';
+        /**
+         * Pre-migration: the database is prepared for migration.
+         */
+        public const MIGRATION_STEP_PREPARE = 'PREPARE';
+        /**
+         * Start of migration.
+         */
+        public const MIGRATION_STEP_START = 'START';
+        /**
+         * Writes are applied synchronously to at least one replica.
+         */
+        public const MIGRATION_STEP_APPLY_WRITES_SYNCHRONOUSLY = 'APPLY_WRITES_SYNCHRONOUSLY';
+        /**
+         * Data is copied to Cloud Firestore and then verified to match the data in
+         * Cloud Datastore.
+         */
+        public const MIGRATION_STEP_COPY_AND_VERIFY = 'COPY_AND_VERIFY';
+        /**
+         * Eventually-consistent reads are redirected to Cloud Firestore.
+         */
+        public const MIGRATION_STEP_REDIRECT_EVENTUALLY_CONSISTENT_READS = 'REDIRECT_EVENTUALLY_CONSISTENT_READS';
+        /**
+         * Strongly-consistent reads are redirected to Cloud Firestore.
+         */
+        public const MIGRATION_STEP_REDIRECT_STRONGLY_CONSISTENT_READS = 'REDIRECT_STRONGLY_CONSISTENT_READS';
+        /**
+         * Writes are redirected to Cloud Firestore.
+         */
+        public const MIGRATION_STEP_REDIRECT_WRITES = 'REDIRECT_WRITES';
+        /**
+         * The current state of migration from Cloud Datastore to Cloud Firestore in
+         * Datastore mode.
+         *
+         * @var string
+         */
+        public $migrationState;
+        /**
+         * The current step of migration from Cloud Datastore to Cloud Firestore in
+         * Datastore mode.
+         *
+         * @var string
+         */
+        public $migrationStep;
+        /**
+         * The current state of migration from Cloud Datastore to Cloud Firestore in
+         * Datastore mode.
+         *
+         * Accepted values: MIGRATION_STATE_UNSPECIFIED, RUNNING, PAUSED, COMPLETE
+         *
+         * @param self::MIGRATION_STATE_* $migrationState
+         */
+        public function setMigrationState($migrationState)
+        {
+        }
+        /**
+         * @return self::MIGRATION_STATE_*
+         */
+        public function getMigrationState()
+        {
+        }
+        /**
+         * The current step of migration from Cloud Datastore to Cloud Firestore in
+         * Datastore mode.
+         *
+         * Accepted values: MIGRATION_STEP_UNSPECIFIED, PREPARE, START,
+         * APPLY_WRITES_SYNCHRONOUSLY, COPY_AND_VERIFY,
+         * REDIRECT_EVENTUALLY_CONSISTENT_READS, REDIRECT_STRONGLY_CONSISTENT_READS,
+         * REDIRECT_WRITES
+         *
+         * @param self::MIGRATION_STEP_* $migrationStep
+         */
+        public function setMigrationStep($migrationStep)
+        {
+        }
+        /**
+         * @return self::MIGRATION_STEP_*
+         */
+        public function getMigrationStep()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MIGRATION_STATE_*
+     * Runtime class alias of \Google\Service\Datastore\GoogleDatastoreAdminV1DatastoreFirestoreMigrationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMigrationState()
-    {
-    }
-    /**
-     * The current step of migration from Cloud Datastore to Cloud Firestore in
-     * Datastore mode.
-     *
-     * Accepted values: MIGRATION_STEP_UNSPECIFIED, PREPARE, START,
-     * APPLY_WRITES_SYNCHRONOUSLY, COPY_AND_VERIFY,
-     * REDIRECT_EVENTUALLY_CONSISTENT_READS, REDIRECT_STRONGLY_CONSISTENT_READS,
-     * REDIRECT_WRITES
-     *
-     * @param self::MIGRATION_STEP_* $migrationStep
-     */
-    public function setMigrationStep($migrationStep)
-    {
-    }
-    /**
-     * @return self::MIGRATION_STEP_*
-     */
-    public function getMigrationStep()
+    class Google_Service_Datastore_GoogleDatastoreAdminV1DatastoreFirestoreMigrationMetadata extends \Google\Service\Datastore\GoogleDatastoreAdminV1DatastoreFirestoreMigrationMetadata
     {
     }
 }

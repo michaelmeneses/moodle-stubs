@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponse extends \Google\Collection
-{
-    protected $collection_key = 'listUpdateResponses';
-    protected $listUpdateResponsesType = GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponseListUpdateResponse::class;
-    protected $listUpdateResponsesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $minimumWaitDuration;
-    /**
-     * @param GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponseListUpdateResponse[]
-     */
-    public function setListUpdateResponses($listUpdateResponses)
+namespace Google\Service\Safebrowsing {
+    class GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponse extends \Google\Collection
     {
+        protected $collection_key = 'listUpdateResponses';
+        protected $listUpdateResponsesType = GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponseListUpdateResponse::class;
+        protected $listUpdateResponsesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $minimumWaitDuration;
+        /**
+         * @param GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponseListUpdateResponse[]
+         */
+        public function setListUpdateResponses($listUpdateResponses)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponseListUpdateResponse[]
+         */
+        public function getListUpdateResponses()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMinimumWaitDuration($minimumWaitDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinimumWaitDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponseListUpdateResponse[]
+     * Runtime class alias of \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getListUpdateResponses()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMinimumWaitDuration($minimumWaitDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinimumWaitDuration()
+    class Google_Service_Safebrowsing_GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponse extends \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponse
     {
     }
 }

@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class SapDiscoveryResourceInstancePropertiesDiskMount extends \Google\Collection
-{
-    protected $collection_key = 'diskNames';
-    /**
-     * Optional. Names of the disks providing this mount point.
-     *
-     * @var string[]
-     */
-    public $diskNames;
-    /**
-     * Optional. Filesystem mount point.
-     *
-     * @var string
-     */
-    public $mountPoint;
-    /**
-     * Optional. Name of the disk.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Names of the disks providing this mount point.
-     *
-     * @param string[] $diskNames
-     */
-    public function setDiskNames($diskNames)
+namespace Google\Service\WorkloadManager {
+    class SapDiscoveryResourceInstancePropertiesDiskMount extends \Google\Collection
     {
+        protected $collection_key = 'diskNames';
+        /**
+         * Optional. Names of the disks providing this mount point.
+         *
+         * @var string[]
+         */
+        public $diskNames;
+        /**
+         * Optional. Filesystem mount point.
+         *
+         * @var string
+         */
+        public $mountPoint;
+        /**
+         * Optional. Name of the disk.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Names of the disks providing this mount point.
+         *
+         * @param string[] $diskNames
+         */
+        public function setDiskNames($diskNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDiskNames()
+        {
+        }
+        /**
+         * Optional. Filesystem mount point.
+         *
+         * @param string $mountPoint
+         */
+        public function setMountPoint($mountPoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMountPoint()
+        {
+        }
+        /**
+         * Optional. Name of the disk.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\WorkloadManager\SapDiscoveryResourceInstancePropertiesDiskMount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiskNames()
-    {
-    }
-    /**
-     * Optional. Filesystem mount point.
-     *
-     * @param string $mountPoint
-     */
-    public function setMountPoint($mountPoint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMountPoint()
-    {
-    }
-    /**
-     * Optional. Name of the disk.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_WorkloadManager_SapDiscoveryResourceInstancePropertiesDiskMount extends \Google\Service\WorkloadManager\SapDiscoveryResourceInstancePropertiesDiskMount
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class CheckCompatibilityResponse extends \Google\Collection
-{
-    protected $collection_key = 'messages';
-    protected $internal_gapi_mappings = ["isCompatible" => "is_compatible"];
-    /**
-     * The compatibility check result. If true, the schema is compatible with the
-     * resource.
-     *
-     * @var bool
-     */
-    public $isCompatible;
-    /**
-     * Failure reasons if verbose = true.
-     *
-     * @var string[]
-     */
-    public $messages;
-    /**
-     * The compatibility check result. If true, the schema is compatible with the
-     * resource.
-     *
-     * @param bool $isCompatible
-     */
-    public function setIsCompatible($isCompatible)
+namespace Google\Service\ManagedKafka {
+    class CheckCompatibilityResponse extends \Google\Collection
     {
+        protected $collection_key = 'messages';
+        protected $internal_gapi_mappings = ["isCompatible" => "is_compatible"];
+        /**
+         * The compatibility check result. If true, the schema is compatible with the
+         * resource.
+         *
+         * @var bool
+         */
+        public $isCompatible;
+        /**
+         * Failure reasons if verbose = true.
+         *
+         * @var string[]
+         */
+        public $messages;
+        /**
+         * The compatibility check result. If true, the schema is compatible with the
+         * resource.
+         *
+         * @param bool $isCompatible
+         */
+        public function setIsCompatible($isCompatible)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsCompatible()
+        {
+        }
+        /**
+         * Failure reasons if verbose = true.
+         *
+         * @param string[] $messages
+         */
+        public function setMessages($messages)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMessages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ManagedKafka\CheckCompatibilityResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsCompatible()
-    {
-    }
-    /**
-     * Failure reasons if verbose = true.
-     *
-     * @param string[] $messages
-     */
-    public function setMessages($messages)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMessages()
+    class Google_Service_ManagedKafka_CheckCompatibilityResponse extends \Google\Service\ManagedKafka\CheckCompatibilityResponse
     {
     }
 }

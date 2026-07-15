@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer;
-
-class FederatedIdentityConfig extends \Google\Model
-{
-    /**
-     * Required. The client (application) ID of the application with federated
-     * credentials.
-     *
-     * @var string
-     */
-    public $clientId;
-    /**
-     * Required. The tenant (directory) ID of the application with federated
-     * credentials.
-     *
-     * @var string
-     */
-    public $tenantId;
-    /**
-     * Required. The client (application) ID of the application with federated
-     * credentials.
-     *
-     * @param string $clientId
-     */
-    public function setClientId($clientId)
+namespace Google\Service\Storagetransfer {
+    class FederatedIdentityConfig extends \Google\Model
     {
+        /**
+         * Required. The client (application) ID of the application with federated
+         * credentials.
+         *
+         * @var string
+         */
+        public $clientId;
+        /**
+         * Required. The tenant (directory) ID of the application with federated
+         * credentials.
+         *
+         * @var string
+         */
+        public $tenantId;
+        /**
+         * Required. The client (application) ID of the application with federated
+         * credentials.
+         *
+         * @param string $clientId
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
+        /**
+         * Required. The tenant (directory) ID of the application with federated
+         * credentials.
+         *
+         * @param string $tenantId
+         */
+        public function setTenantId($tenantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTenantId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storagetransfer\FederatedIdentityConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientId()
-    {
-    }
-    /**
-     * Required. The tenant (directory) ID of the application with federated
-     * credentials.
-     *
-     * @param string $tenantId
-     */
-    public function setTenantId($tenantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTenantId()
+    class Google_Service_Storagetransfer_FederatedIdentityConfig extends \Google\Service\Storagetransfer\FederatedIdentityConfig
     {
     }
 }

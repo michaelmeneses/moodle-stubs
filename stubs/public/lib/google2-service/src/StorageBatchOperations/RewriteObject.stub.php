@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StorageBatchOperations;
-
-class RewriteObject extends \Google\Model
-{
-    /**
-     * Required. Resource name of the Cloud KMS key that will be used to encrypt
-     * the object. The Cloud KMS key must be located in same location as the
-     * object. Refer to https://cloud.google.com/storage/docs/encryption/using-
-     * customer-managed-keys#add-object-key for additional documentation. Format:
-     * projects/{project}/locations/{location}/keyRings/{keyring}/cryptoKeys/{key}
-     * For example: "projects/123456/locations/us-central1/keyRings/my-
-     * keyring/cryptoKeys/my-key". The object will be rewritten and set with the
-     * specified KMS key.
-     *
-     * @var string
-     */
-    public $kmsKey;
-    /**
-     * Required. Resource name of the Cloud KMS key that will be used to encrypt
-     * the object. The Cloud KMS key must be located in same location as the
-     * object. Refer to https://cloud.google.com/storage/docs/encryption/using-
-     * customer-managed-keys#add-object-key for additional documentation. Format:
-     * projects/{project}/locations/{location}/keyRings/{keyring}/cryptoKeys/{key}
-     * For example: "projects/123456/locations/us-central1/keyRings/my-
-     * keyring/cryptoKeys/my-key". The object will be rewritten and set with the
-     * specified KMS key.
-     *
-     * @param string $kmsKey
-     */
-    public function setKmsKey($kmsKey)
+namespace Google\Service\StorageBatchOperations {
+    class RewriteObject extends \Google\Model
     {
+        /**
+         * Required. Resource name of the Cloud KMS key that will be used to encrypt
+         * the object. The Cloud KMS key must be located in same location as the
+         * object. Refer to https://cloud.google.com/storage/docs/encryption/using-
+         * customer-managed-keys#add-object-key for additional documentation. Format:
+         * projects/{project}/locations/{location}/keyRings/{keyring}/cryptoKeys/{key}
+         * For example: "projects/123456/locations/us-central1/keyRings/my-
+         * keyring/cryptoKeys/my-key". The object will be rewritten and set with the
+         * specified KMS key.
+         *
+         * @var string
+         */
+        public $kmsKey;
+        /**
+         * Required. Resource name of the Cloud KMS key that will be used to encrypt
+         * the object. The Cloud KMS key must be located in same location as the
+         * object. Refer to https://cloud.google.com/storage/docs/encryption/using-
+         * customer-managed-keys#add-object-key for additional documentation. Format:
+         * projects/{project}/locations/{location}/keyRings/{keyring}/cryptoKeys/{key}
+         * For example: "projects/123456/locations/us-central1/keyRings/my-
+         * keyring/cryptoKeys/my-key". The object will be rewritten and set with the
+         * specified KMS key.
+         *
+         * @param string $kmsKey
+         */
+        public function setKmsKey($kmsKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\StorageBatchOperations\RewriteObject registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKmsKey()
+    class Google_Service_StorageBatchOperations_RewriteObject extends \Google\Service\StorageBatchOperations\RewriteObject
     {
     }
 }

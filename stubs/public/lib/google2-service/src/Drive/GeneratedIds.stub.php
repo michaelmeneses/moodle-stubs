@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class GeneratedIds extends \Google\Collection
-{
-    protected $collection_key = 'ids';
-    /**
-     * The IDs generated for the requesting user in the specified space.
-     *
-     * @var string[]
-     */
-    public $ids;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"drive#generatedIds"`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The type of file that can be created with these IDs.
-     *
-     * @var string
-     */
-    public $space;
-    /**
-     * The IDs generated for the requesting user in the specified space.
-     *
-     * @param string[] $ids
-     */
-    public function setIds($ids)
+namespace Google\Service\Drive {
+    class GeneratedIds extends \Google\Collection
     {
+        protected $collection_key = 'ids';
+        /**
+         * The IDs generated for the requesting user in the specified space.
+         *
+         * @var string[]
+         */
+        public $ids;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"drive#generatedIds"`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The type of file that can be created with these IDs.
+         *
+         * @var string
+         */
+        public $space;
+        /**
+         * The IDs generated for the requesting user in the specified space.
+         *
+         * @param string[] $ids
+         */
+        public function setIds($ids)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIds()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"drive#generatedIds"`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The type of file that can be created with these IDs.
+         *
+         * @param string $space
+         */
+        public function setSpace($space)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Drive\GeneratedIds registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIds()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"drive#generatedIds"`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The type of file that can be created with these IDs.
-     *
-     * @param string $space
-     */
-    public function setSpace($space)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpace()
+    class Google_Service_Drive_GeneratedIds extends \Google\Service\Drive\GeneratedIds
     {
     }
 }

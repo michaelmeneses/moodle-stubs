@@ -21,143 +21,152 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class Results extends \Google\Collection
-{
-    protected $collection_key = 'pythonPackages';
-    /**
-     * @var string
-     */
-    public $artifactManifest;
-    protected $artifactTimingType = TimeSpan::class;
-    protected $artifactTimingDataType = '';
-    /**
-     * @var string[]
-     */
-    public $buildStepImages;
-    /**
-     * @var string[]
-     */
-    public $buildStepOutputs;
-    protected $imagesType = BuiltImage::class;
-    protected $imagesDataType = 'array';
-    protected $mavenArtifactsType = UploadedMavenArtifact::class;
-    protected $mavenArtifactsDataType = 'array';
-    protected $npmPackagesType = UploadedNpmPackage::class;
-    protected $npmPackagesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $numArtifacts;
-    protected $pythonPackagesType = UploadedPythonPackage::class;
-    protected $pythonPackagesDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setArtifactManifest($artifactManifest)
+namespace Google\Service\CloudBuild {
+    class Results extends \Google\Collection
     {
+        protected $collection_key = 'pythonPackages';
+        /**
+         * @var string
+         */
+        public $artifactManifest;
+        protected $artifactTimingType = TimeSpan::class;
+        protected $artifactTimingDataType = '';
+        /**
+         * @var string[]
+         */
+        public $buildStepImages;
+        /**
+         * @var string[]
+         */
+        public $buildStepOutputs;
+        protected $imagesType = BuiltImage::class;
+        protected $imagesDataType = 'array';
+        protected $mavenArtifactsType = UploadedMavenArtifact::class;
+        protected $mavenArtifactsDataType = 'array';
+        protected $npmPackagesType = UploadedNpmPackage::class;
+        protected $npmPackagesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $numArtifacts;
+        protected $pythonPackagesType = UploadedPythonPackage::class;
+        protected $pythonPackagesDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setArtifactManifest($artifactManifest)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArtifactManifest()
+        {
+        }
+        /**
+         * @param TimeSpan
+         */
+        public function setArtifactTiming(TimeSpan $artifactTiming)
+        {
+        }
+        /**
+         * @return TimeSpan
+         */
+        public function getArtifactTiming()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setBuildStepImages($buildStepImages)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBuildStepImages()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setBuildStepOutputs($buildStepOutputs)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBuildStepOutputs()
+        {
+        }
+        /**
+         * @param BuiltImage[]
+         */
+        public function setImages($images)
+        {
+        }
+        /**
+         * @return BuiltImage[]
+         */
+        public function getImages()
+        {
+        }
+        /**
+         * @param UploadedMavenArtifact[]
+         */
+        public function setMavenArtifacts($mavenArtifacts)
+        {
+        }
+        /**
+         * @return UploadedMavenArtifact[]
+         */
+        public function getMavenArtifacts()
+        {
+        }
+        /**
+         * @param UploadedNpmPackage[]
+         */
+        public function setNpmPackages($npmPackages)
+        {
+        }
+        /**
+         * @return UploadedNpmPackage[]
+         */
+        public function getNpmPackages()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNumArtifacts($numArtifacts)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumArtifacts()
+        {
+        }
+        /**
+         * @param UploadedPythonPackage[]
+         */
+        public function setPythonPackages($pythonPackages)
+        {
+        }
+        /**
+         * @return UploadedPythonPackage[]
+         */
+        public function getPythonPackages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\Results registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifactManifest()
-    {
-    }
-    /**
-     * @param TimeSpan
-     */
-    public function setArtifactTiming(TimeSpan $artifactTiming)
-    {
-    }
-    /**
-     * @return TimeSpan
-     */
-    public function getArtifactTiming()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setBuildStepImages($buildStepImages)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getBuildStepImages()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setBuildStepOutputs($buildStepOutputs)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getBuildStepOutputs()
-    {
-    }
-    /**
-     * @param BuiltImage[]
-     */
-    public function setImages($images)
-    {
-    }
-    /**
-     * @return BuiltImage[]
-     */
-    public function getImages()
-    {
-    }
-    /**
-     * @param UploadedMavenArtifact[]
-     */
-    public function setMavenArtifacts($mavenArtifacts)
-    {
-    }
-    /**
-     * @return UploadedMavenArtifact[]
-     */
-    public function getMavenArtifacts()
-    {
-    }
-    /**
-     * @param UploadedNpmPackage[]
-     */
-    public function setNpmPackages($npmPackages)
-    {
-    }
-    /**
-     * @return UploadedNpmPackage[]
-     */
-    public function getNpmPackages()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNumArtifacts($numArtifacts)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumArtifacts()
-    {
-    }
-    /**
-     * @param UploadedPythonPackage[]
-     */
-    public function setPythonPackages($pythonPackages)
-    {
-    }
-    /**
-     * @return UploadedPythonPackage[]
-     */
-    public function getPythonPackages()
+    class Google_Service_CloudBuild_Results extends \Google\Service\CloudBuild\Results
     {
     }
 }

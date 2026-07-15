@@ -8,6 +8,7 @@
  */
 namespace DI\Definition;
 
+use Psr\Container\ContainerInterface;
 /**
  * Describes a definition that can resolve itself.
  *

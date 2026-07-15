@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1TensorboardBlob extends \Google\Model
-{
-    /**
-     * Optional. The bytes of the blob is not present unless it's returned by the
-     * ReadTensorboardBlobData endpoint.
-     *
-     * @var string
-     */
-    public $data;
-    /**
-     * Output only. A URI safe key uniquely identifying a blob. Can be used to
-     * locate the blob stored in the Cloud Storage bucket of the consumer project.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Optional. The bytes of the blob is not present unless it's returned by the
-     * ReadTensorboardBlobData endpoint.
-     *
-     * @param string $data
-     */
-    public function setData($data)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1TensorboardBlob extends \Google\Model
     {
+        /**
+         * Optional. The bytes of the blob is not present unless it's returned by the
+         * ReadTensorboardBlobData endpoint.
+         *
+         * @var string
+         */
+        public $data;
+        /**
+         * Output only. A URI safe key uniquely identifying a blob. Can be used to
+         * locate the blob stored in the Cloud Storage bucket of the consumer project.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Optional. The bytes of the blob is not present unless it's returned by the
+         * ReadTensorboardBlobData endpoint.
+         *
+         * @param string $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getData()
+        {
+        }
+        /**
+         * Output only. A URI safe key uniquely identifying a blob. Can be used to
+         * locate the blob stored in the Cloud Storage bucket of the consumer project.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1TensorboardBlob registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
-    {
-    }
-    /**
-     * Output only. A URI safe key uniquely identifying a blob. Can be used to
-     * locate the blob stored in the Cloud Storage bucket of the consumer project.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1TensorboardBlob extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1TensorboardBlob
     {
     }
 }

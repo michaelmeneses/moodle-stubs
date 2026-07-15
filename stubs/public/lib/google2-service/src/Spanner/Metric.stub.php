@@ -21,239 +21,248 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class Metric extends \Google\Model
-{
-    /**
-     * Required default value.
-     */
-    public const AGGREGATION_AGGREGATION_UNSPECIFIED = 'AGGREGATION_UNSPECIFIED';
-    /**
-     * Use the maximum of all values.
-     */
-    public const AGGREGATION_MAX = 'MAX';
-    /**
-     * Use the sum of all values.
-     */
-    public const AGGREGATION_SUM = 'SUM';
-    /**
-     * The aggregation function used to aggregate each key bucket
-     *
-     * @var string
-     */
-    public $aggregation;
-    protected $categoryType = LocalizedString::class;
-    protected $categoryDataType = '';
-    protected $derivedType = DerivedMetric::class;
-    protected $derivedDataType = '';
-    protected $displayLabelType = LocalizedString::class;
-    protected $displayLabelDataType = '';
-    /**
-     * Whether the metric has any non-zero data.
-     *
-     * @var bool
-     */
-    public $hasNonzeroData;
-    /**
-     * The value that is considered hot for the metric. On a per metric basis
-     * hotness signals high utilization and something that might potentially be a
-     * cause for concern by the end user. hot_value is used to calibrate and scale
-     * visual color scales.
-     *
-     * @var float
-     */
-    public $hotValue;
-    protected $indexedHotKeysType = IndexedHotKey::class;
-    protected $indexedHotKeysDataType = 'map';
-    protected $indexedKeyRangeInfosType = IndexedKeyRangeInfos::class;
-    protected $indexedKeyRangeInfosDataType = 'map';
-    protected $infoType = LocalizedString::class;
-    protected $infoDataType = '';
-    protected $matrixType = MetricMatrix::class;
-    protected $matrixDataType = '';
-    protected $unitType = LocalizedString::class;
-    protected $unitDataType = '';
-    /**
-     * Whether the metric is visible to the end user.
-     *
-     * @var bool
-     */
-    public $visible;
-    /**
-     * The aggregation function used to aggregate each key bucket
-     *
-     * Accepted values: AGGREGATION_UNSPECIFIED, MAX, SUM
-     *
-     * @param self::AGGREGATION_* $aggregation
-     */
-    public function setAggregation($aggregation)
+namespace Google\Service\Spanner {
+    class Metric extends \Google\Model
     {
+        /**
+         * Required default value.
+         */
+        public const AGGREGATION_AGGREGATION_UNSPECIFIED = 'AGGREGATION_UNSPECIFIED';
+        /**
+         * Use the maximum of all values.
+         */
+        public const AGGREGATION_MAX = 'MAX';
+        /**
+         * Use the sum of all values.
+         */
+        public const AGGREGATION_SUM = 'SUM';
+        /**
+         * The aggregation function used to aggregate each key bucket
+         *
+         * @var string
+         */
+        public $aggregation;
+        protected $categoryType = LocalizedString::class;
+        protected $categoryDataType = '';
+        protected $derivedType = DerivedMetric::class;
+        protected $derivedDataType = '';
+        protected $displayLabelType = LocalizedString::class;
+        protected $displayLabelDataType = '';
+        /**
+         * Whether the metric has any non-zero data.
+         *
+         * @var bool
+         */
+        public $hasNonzeroData;
+        /**
+         * The value that is considered hot for the metric. On a per metric basis
+         * hotness signals high utilization and something that might potentially be a
+         * cause for concern by the end user. hot_value is used to calibrate and scale
+         * visual color scales.
+         *
+         * @var float
+         */
+        public $hotValue;
+        protected $indexedHotKeysType = IndexedHotKey::class;
+        protected $indexedHotKeysDataType = 'map';
+        protected $indexedKeyRangeInfosType = IndexedKeyRangeInfos::class;
+        protected $indexedKeyRangeInfosDataType = 'map';
+        protected $infoType = LocalizedString::class;
+        protected $infoDataType = '';
+        protected $matrixType = MetricMatrix::class;
+        protected $matrixDataType = '';
+        protected $unitType = LocalizedString::class;
+        protected $unitDataType = '';
+        /**
+         * Whether the metric is visible to the end user.
+         *
+         * @var bool
+         */
+        public $visible;
+        /**
+         * The aggregation function used to aggregate each key bucket
+         *
+         * Accepted values: AGGREGATION_UNSPECIFIED, MAX, SUM
+         *
+         * @param self::AGGREGATION_* $aggregation
+         */
+        public function setAggregation($aggregation)
+        {
+        }
+        /**
+         * @return self::AGGREGATION_*
+         */
+        public function getAggregation()
+        {
+        }
+        /**
+         * The category of the metric, e.g. "Activity", "Alerts", "Reads", etc.
+         *
+         * @param LocalizedString $category
+         */
+        public function setCategory(LocalizedString $category)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getCategory()
+        {
+        }
+        /**
+         * The references to numerator and denominator metrics for a derived metric.
+         *
+         * @param DerivedMetric $derived
+         */
+        public function setDerived(DerivedMetric $derived)
+        {
+        }
+        /**
+         * @return DerivedMetric
+         */
+        public function getDerived()
+        {
+        }
+        /**
+         * The displayed label of the metric.
+         *
+         * @param LocalizedString $displayLabel
+         */
+        public function setDisplayLabel(LocalizedString $displayLabel)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getDisplayLabel()
+        {
+        }
+        /**
+         * Whether the metric has any non-zero data.
+         *
+         * @param bool $hasNonzeroData
+         */
+        public function setHasNonzeroData($hasNonzeroData)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasNonzeroData()
+        {
+        }
+        /**
+         * The value that is considered hot for the metric. On a per metric basis
+         * hotness signals high utilization and something that might potentially be a
+         * cause for concern by the end user. hot_value is used to calibrate and scale
+         * visual color scales.
+         *
+         * @param float $hotValue
+         */
+        public function setHotValue($hotValue)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getHotValue()
+        {
+        }
+        /**
+         * The (sparse) mapping from time index to an IndexedHotKey message,
+         * representing those time intervals for which there are hot keys.
+         *
+         * @param IndexedHotKey[] $indexedHotKeys
+         */
+        public function setIndexedHotKeys($indexedHotKeys)
+        {
+        }
+        /**
+         * @return IndexedHotKey[]
+         */
+        public function getIndexedHotKeys()
+        {
+        }
+        /**
+         * The (sparse) mapping from time interval index to an IndexedKeyRangeInfos
+         * message, representing those time intervals for which there are
+         * informational messages concerning key ranges.
+         *
+         * @param IndexedKeyRangeInfos[] $indexedKeyRangeInfos
+         */
+        public function setIndexedKeyRangeInfos($indexedKeyRangeInfos)
+        {
+        }
+        /**
+         * @return IndexedKeyRangeInfos[]
+         */
+        public function getIndexedKeyRangeInfos()
+        {
+        }
+        /**
+         * Information about the metric.
+         *
+         * @param LocalizedString $info
+         */
+        public function setInfo(LocalizedString $info)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getInfo()
+        {
+        }
+        /**
+         * The data for the metric as a matrix.
+         *
+         * @param MetricMatrix $matrix
+         */
+        public function setMatrix(MetricMatrix $matrix)
+        {
+        }
+        /**
+         * @return MetricMatrix
+         */
+        public function getMatrix()
+        {
+        }
+        /**
+         * The unit of the metric.
+         *
+         * @param LocalizedString $unit
+         */
+        public function setUnit(LocalizedString $unit)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getUnit()
+        {
+        }
+        /**
+         * Whether the metric is visible to the end user.
+         *
+         * @param bool $visible
+         */
+        public function setVisible($visible)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getVisible()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::AGGREGATION_*
+     * Runtime class alias of \Google\Service\Spanner\Metric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAggregation()
-    {
-    }
-    /**
-     * The category of the metric, e.g. "Activity", "Alerts", "Reads", etc.
-     *
-     * @param LocalizedString $category
-     */
-    public function setCategory(LocalizedString $category)
-    {
-    }
-    /**
-     * @return LocalizedString
-     */
-    public function getCategory()
-    {
-    }
-    /**
-     * The references to numerator and denominator metrics for a derived metric.
-     *
-     * @param DerivedMetric $derived
-     */
-    public function setDerived(DerivedMetric $derived)
-    {
-    }
-    /**
-     * @return DerivedMetric
-     */
-    public function getDerived()
-    {
-    }
-    /**
-     * The displayed label of the metric.
-     *
-     * @param LocalizedString $displayLabel
-     */
-    public function setDisplayLabel(LocalizedString $displayLabel)
-    {
-    }
-    /**
-     * @return LocalizedString
-     */
-    public function getDisplayLabel()
-    {
-    }
-    /**
-     * Whether the metric has any non-zero data.
-     *
-     * @param bool $hasNonzeroData
-     */
-    public function setHasNonzeroData($hasNonzeroData)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHasNonzeroData()
-    {
-    }
-    /**
-     * The value that is considered hot for the metric. On a per metric basis
-     * hotness signals high utilization and something that might potentially be a
-     * cause for concern by the end user. hot_value is used to calibrate and scale
-     * visual color scales.
-     *
-     * @param float $hotValue
-     */
-    public function setHotValue($hotValue)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getHotValue()
-    {
-    }
-    /**
-     * The (sparse) mapping from time index to an IndexedHotKey message,
-     * representing those time intervals for which there are hot keys.
-     *
-     * @param IndexedHotKey[] $indexedHotKeys
-     */
-    public function setIndexedHotKeys($indexedHotKeys)
-    {
-    }
-    /**
-     * @return IndexedHotKey[]
-     */
-    public function getIndexedHotKeys()
-    {
-    }
-    /**
-     * The (sparse) mapping from time interval index to an IndexedKeyRangeInfos
-     * message, representing those time intervals for which there are
-     * informational messages concerning key ranges.
-     *
-     * @param IndexedKeyRangeInfos[] $indexedKeyRangeInfos
-     */
-    public function setIndexedKeyRangeInfos($indexedKeyRangeInfos)
-    {
-    }
-    /**
-     * @return IndexedKeyRangeInfos[]
-     */
-    public function getIndexedKeyRangeInfos()
-    {
-    }
-    /**
-     * Information about the metric.
-     *
-     * @param LocalizedString $info
-     */
-    public function setInfo(LocalizedString $info)
-    {
-    }
-    /**
-     * @return LocalizedString
-     */
-    public function getInfo()
-    {
-    }
-    /**
-     * The data for the metric as a matrix.
-     *
-     * @param MetricMatrix $matrix
-     */
-    public function setMatrix(MetricMatrix $matrix)
-    {
-    }
-    /**
-     * @return MetricMatrix
-     */
-    public function getMatrix()
-    {
-    }
-    /**
-     * The unit of the metric.
-     *
-     * @param LocalizedString $unit
-     */
-    public function setUnit(LocalizedString $unit)
-    {
-    }
-    /**
-     * @return LocalizedString
-     */
-    public function getUnit()
-    {
-    }
-    /**
-     * Whether the metric is visible to the end user.
-     *
-     * @param bool $visible
-     */
-    public function setVisible($visible)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getVisible()
+    class Google_Service_Spanner_Metric extends \Google\Service\Spanner\Metric
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2ListExecutionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'executions';
-    protected $executionsType = GoogleCloudRunV2Execution::class;
-    protected $executionsDataType = 'array';
-    /**
-     * A token indicating there are more items than page_size. Use it in the next
-     * ListExecutions request to continue.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The resulting list of Executions.
-     *
-     * @param GoogleCloudRunV2Execution[] $executions
-     */
-    public function setExecutions($executions)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2ListExecutionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'executions';
+        protected $executionsType = GoogleCloudRunV2Execution::class;
+        protected $executionsDataType = 'array';
+        /**
+         * A token indicating there are more items than page_size. Use it in the next
+         * ListExecutions request to continue.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The resulting list of Executions.
+         *
+         * @param GoogleCloudRunV2Execution[] $executions
+         */
+        public function setExecutions($executions)
+        {
+        }
+        /**
+         * @return GoogleCloudRunV2Execution[]
+         */
+        public function getExecutions()
+        {
+        }
+        /**
+         * A token indicating there are more items than page_size. Use it in the next
+         * ListExecutions request to continue.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRunV2Execution[]
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2ListExecutionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecutions()
-    {
-    }
-    /**
-     * A token indicating there are more items than page_size. Use it in the next
-     * ListExecutions request to continue.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudRun_GoogleCloudRunV2ListExecutionsResponse extends \Google\Service\CloudRun\GoogleCloudRunV2ListExecutionsResponse
     {
     }
 }

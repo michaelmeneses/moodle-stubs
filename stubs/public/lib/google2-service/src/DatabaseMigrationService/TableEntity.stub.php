@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class TableEntity extends \Google\Collection
-{
-    protected $collection_key = 'triggers';
-    protected $columnsType = ColumnEntity::class;
-    protected $columnsDataType = 'array';
-    /**
-     * Comment associated with the table.
-     *
-     * @var string
-     */
-    public $comment;
-    protected $constraintsType = ConstraintEntity::class;
-    protected $constraintsDataType = 'array';
-    /**
-     * Custom engine specific features.
-     *
-     * @var array[]
-     */
-    public $customFeatures;
-    protected $indicesType = IndexEntity::class;
-    protected $indicesDataType = 'array';
-    protected $triggersType = TriggerEntity::class;
-    protected $triggersDataType = 'array';
-    /**
-     * Table columns.
-     *
-     * @param ColumnEntity[] $columns
-     */
-    public function setColumns($columns)
+namespace Google\Service\DatabaseMigrationService {
+    class TableEntity extends \Google\Collection
     {
+        protected $collection_key = 'triggers';
+        protected $columnsType = ColumnEntity::class;
+        protected $columnsDataType = 'array';
+        /**
+         * Comment associated with the table.
+         *
+         * @var string
+         */
+        public $comment;
+        protected $constraintsType = ConstraintEntity::class;
+        protected $constraintsDataType = 'array';
+        /**
+         * Custom engine specific features.
+         *
+         * @var array[]
+         */
+        public $customFeatures;
+        protected $indicesType = IndexEntity::class;
+        protected $indicesDataType = 'array';
+        protected $triggersType = TriggerEntity::class;
+        protected $triggersDataType = 'array';
+        /**
+         * Table columns.
+         *
+         * @param ColumnEntity[] $columns
+         */
+        public function setColumns($columns)
+        {
+        }
+        /**
+         * @return ColumnEntity[]
+         */
+        public function getColumns()
+        {
+        }
+        /**
+         * Comment associated with the table.
+         *
+         * @param string $comment
+         */
+        public function setComment($comment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComment()
+        {
+        }
+        /**
+         * Table constraints.
+         *
+         * @param ConstraintEntity[] $constraints
+         */
+        public function setConstraints($constraints)
+        {
+        }
+        /**
+         * @return ConstraintEntity[]
+         */
+        public function getConstraints()
+        {
+        }
+        /**
+         * Custom engine specific features.
+         *
+         * @param array[] $customFeatures
+         */
+        public function setCustomFeatures($customFeatures)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getCustomFeatures()
+        {
+        }
+        /**
+         * Table indices.
+         *
+         * @param IndexEntity[] $indices
+         */
+        public function setIndices($indices)
+        {
+        }
+        /**
+         * @return IndexEntity[]
+         */
+        public function getIndices()
+        {
+        }
+        /**
+         * Table triggers.
+         *
+         * @param TriggerEntity[] $triggers
+         */
+        public function setTriggers($triggers)
+        {
+        }
+        /**
+         * @return TriggerEntity[]
+         */
+        public function getTriggers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ColumnEntity[]
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\TableEntity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumns()
-    {
-    }
-    /**
-     * Comment associated with the table.
-     *
-     * @param string $comment
-     */
-    public function setComment($comment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getComment()
-    {
-    }
-    /**
-     * Table constraints.
-     *
-     * @param ConstraintEntity[] $constraints
-     */
-    public function setConstraints($constraints)
-    {
-    }
-    /**
-     * @return ConstraintEntity[]
-     */
-    public function getConstraints()
-    {
-    }
-    /**
-     * Custom engine specific features.
-     *
-     * @param array[] $customFeatures
-     */
-    public function setCustomFeatures($customFeatures)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getCustomFeatures()
-    {
-    }
-    /**
-     * Table indices.
-     *
-     * @param IndexEntity[] $indices
-     */
-    public function setIndices($indices)
-    {
-    }
-    /**
-     * @return IndexEntity[]
-     */
-    public function getIndices()
-    {
-    }
-    /**
-     * Table triggers.
-     *
-     * @param TriggerEntity[] $triggers
-     */
-    public function setTriggers($triggers)
-    {
-    }
-    /**
-     * @return TriggerEntity[]
-     */
-    public function getTriggers()
+    class Google_Service_DatabaseMigrationService_TableEntity extends \Google\Service\DatabaseMigrationService\TableEntity
     {
     }
 }

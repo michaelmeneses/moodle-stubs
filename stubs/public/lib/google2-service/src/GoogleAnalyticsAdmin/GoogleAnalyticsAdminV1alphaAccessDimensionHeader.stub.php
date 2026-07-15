@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaAccessDimensionHeader extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $dimensionName;
-    /**
-     * @param string
-     */
-    public function setDimensionName($dimensionName)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaAccessDimensionHeader extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $dimensionName;
+        /**
+         * @param string
+         */
+        public function setDimensionName($dimensionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDimensionName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAccessDimensionHeader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionName()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaAccessDimensionHeader extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAccessDimensionHeader
     {
     }
 }

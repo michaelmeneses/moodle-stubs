@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class OneTimeSchedule extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $executeTime;
-    /**
-     * @param string
-     */
-    public function setExecuteTime($executeTime)
+namespace Google\Service\OSConfig {
+    class OneTimeSchedule extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $executeTime;
+        /**
+         * @param string
+         */
+        public function setExecuteTime($executeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecuteTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\OneTimeSchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecuteTime()
+    class Google_Service_OSConfig_OneTimeSchedule extends \Google\Service\OSConfig\OneTimeSchedule
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class GoogleAppengineV2mainOperationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'warning';
-    public $apiVersion;
-    public $createTime;
-    public $endTime;
-    public $ephemeralMessage;
-    public $requestedCancellation;
-    public $statusMessage;
-    public $target;
-    public $verb;
-    public $warning;
-    public function setApiVersion($apiVersion)
+namespace Google\Service\Appengine {
+    class GoogleAppengineV2mainOperationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'warning';
+        public $apiVersion;
+        public $createTime;
+        public $endTime;
+        public $ephemeralMessage;
+        public $requestedCancellation;
+        public $statusMessage;
+        public $target;
+        public $verb;
+        public $warning;
+        public function setApiVersion($apiVersion)
+        {
+        }
+        public function getApiVersion()
+        {
+        }
+        public function setCreateTime($createTime)
+        {
+        }
+        public function getCreateTime()
+        {
+        }
+        public function setEndTime($endTime)
+        {
+        }
+        public function getEndTime()
+        {
+        }
+        public function setEphemeralMessage($ephemeralMessage)
+        {
+        }
+        public function getEphemeralMessage()
+        {
+        }
+        public function setRequestedCancellation($requestedCancellation)
+        {
+        }
+        public function getRequestedCancellation()
+        {
+        }
+        public function setStatusMessage($statusMessage)
+        {
+        }
+        public function getStatusMessage()
+        {
+        }
+        public function setTarget($target)
+        {
+        }
+        public function getTarget()
+        {
+        }
+        public function setVerb($verb)
+        {
+        }
+        public function getVerb()
+        {
+        }
+        public function setWarning($warning)
+        {
+        }
+        public function getWarning()
+        {
+        }
     }
-    public function getApiVersion()
-    {
-    }
-    public function setCreateTime($createTime)
-    {
-    }
-    public function getCreateTime()
-    {
-    }
-    public function setEndTime($endTime)
-    {
-    }
-    public function getEndTime()
-    {
-    }
-    public function setEphemeralMessage($ephemeralMessage)
-    {
-    }
-    public function getEphemeralMessage()
-    {
-    }
-    public function setRequestedCancellation($requestedCancellation)
-    {
-    }
-    public function getRequestedCancellation()
-    {
-    }
-    public function setStatusMessage($statusMessage)
-    {
-    }
-    public function getStatusMessage()
-    {
-    }
-    public function setTarget($target)
-    {
-    }
-    public function getTarget()
-    {
-    }
-    public function setVerb($verb)
-    {
-    }
-    public function getVerb()
-    {
-    }
-    public function setWarning($warning)
-    {
-    }
-    public function getWarning()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Appengine\GoogleAppengineV2mainOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Appengine_GoogleAppengineV2mainOperationMetadata extends \Google\Service\Appengine\GoogleAppengineV2mainOperationMetadata
     {
     }
 }

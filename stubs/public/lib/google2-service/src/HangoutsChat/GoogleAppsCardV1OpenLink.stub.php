@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1OpenLink extends \Google\Model
-{
-    /**
-     * Default value. The card doesn't reload; nothing happens.
-     */
-    public const ON_CLOSE_NOTHING = 'NOTHING';
-    /**
-     * Reloads the card after the child window closes. If used in conjunction with
-     * [`OpenAs.OVERLAY`](https://developers.google.com/workspace/add-
-     * ons/reference/rpc/google.apps.card.v1#openas), the child window acts as a
-     * modal dialog and the parent card is blocked until the child window closes.
-     */
-    public const ON_CLOSE_RELOAD = 'RELOAD';
-    /**
-     * The link opens as a full-size window (if that's the frame used by the
-     * client).
-     */
-    public const OPEN_AS_FULL_SIZE = 'FULL_SIZE';
-    /**
-     * The link opens as an overlay, such as a pop-up.
-     */
-    public const OPEN_AS_OVERLAY = 'OVERLAY';
-    /**
-     * Whether the client forgets about a link after opening it, or observes it
-     * until the window closes. [Google Workspace add-
-     * ons](https://developers.google.com/workspace/add-ons):
-     *
-     * @var string
-     */
-    public $onClose;
-    /**
-     * How to open a link. [Google Workspace add-
-     * ons](https://developers.google.com/workspace/add-ons):
-     *
-     * @var string
-     */
-    public $openAs;
-    /**
-     * The URL to open. HTTP URLs are converted to HTTPS.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Whether the client forgets about a link after opening it, or observes it
-     * until the window closes. [Google Workspace add-
-     * ons](https://developers.google.com/workspace/add-ons):
-     *
-     * Accepted values: NOTHING, RELOAD
-     *
-     * @param self::ON_CLOSE_* $onClose
-     */
-    public function setOnClose($onClose)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1OpenLink extends \Google\Model
     {
+        /**
+         * Default value. The card doesn't reload; nothing happens.
+         */
+        public const ON_CLOSE_NOTHING = 'NOTHING';
+        /**
+         * Reloads the card after the child window closes. If used in conjunction with
+         * [`OpenAs.OVERLAY`](https://developers.google.com/workspace/add-
+         * ons/reference/rpc/google.apps.card.v1#openas), the child window acts as a
+         * modal dialog and the parent card is blocked until the child window closes.
+         */
+        public const ON_CLOSE_RELOAD = 'RELOAD';
+        /**
+         * The link opens as a full-size window (if that's the frame used by the
+         * client).
+         */
+        public const OPEN_AS_FULL_SIZE = 'FULL_SIZE';
+        /**
+         * The link opens as an overlay, such as a pop-up.
+         */
+        public const OPEN_AS_OVERLAY = 'OVERLAY';
+        /**
+         * Whether the client forgets about a link after opening it, or observes it
+         * until the window closes. [Google Workspace add-
+         * ons](https://developers.google.com/workspace/add-ons):
+         *
+         * @var string
+         */
+        public $onClose;
+        /**
+         * How to open a link. [Google Workspace add-
+         * ons](https://developers.google.com/workspace/add-ons):
+         *
+         * @var string
+         */
+        public $openAs;
+        /**
+         * The URL to open. HTTP URLs are converted to HTTPS.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Whether the client forgets about a link after opening it, or observes it
+         * until the window closes. [Google Workspace add-
+         * ons](https://developers.google.com/workspace/add-ons):
+         *
+         * Accepted values: NOTHING, RELOAD
+         *
+         * @param self::ON_CLOSE_* $onClose
+         */
+        public function setOnClose($onClose)
+        {
+        }
+        /**
+         * @return self::ON_CLOSE_*
+         */
+        public function getOnClose()
+        {
+        }
+        /**
+         * How to open a link. [Google Workspace add-
+         * ons](https://developers.google.com/workspace/add-ons):
+         *
+         * Accepted values: FULL_SIZE, OVERLAY
+         *
+         * @param self::OPEN_AS_* $openAs
+         */
+        public function setOpenAs($openAs)
+        {
+        }
+        /**
+         * @return self::OPEN_AS_*
+         */
+        public function getOpenAs()
+        {
+        }
+        /**
+         * The URL to open. HTTP URLs are converted to HTTPS.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ON_CLOSE_*
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1OpenLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOnClose()
-    {
-    }
-    /**
-     * How to open a link. [Google Workspace add-
-     * ons](https://developers.google.com/workspace/add-ons):
-     *
-     * Accepted values: FULL_SIZE, OVERLAY
-     *
-     * @param self::OPEN_AS_* $openAs
-     */
-    public function setOpenAs($openAs)
-    {
-    }
-    /**
-     * @return self::OPEN_AS_*
-     */
-    public function getOpenAs()
-    {
-    }
-    /**
-     * The URL to open. HTTP URLs are converted to HTTPS.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1OpenLink extends \Google\Service\HangoutsChat\GoogleAppsCardV1OpenLink
     {
     }
 }

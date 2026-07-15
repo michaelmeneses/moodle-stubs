@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use Mustache\LambdaHelper;
 /**
  * Store a list of JS calls to insert at the end of the page.
  *

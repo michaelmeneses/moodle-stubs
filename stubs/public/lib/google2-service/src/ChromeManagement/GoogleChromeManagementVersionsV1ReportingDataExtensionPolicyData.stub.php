@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementVersionsV1ReportingDataExtensionPolicyData extends \Google\Collection
-{
-    protected $collection_key = 'policyData';
-    /**
-     * Output only. ID of the extension.
-     *
-     * @var string
-     */
-    public $extensionId;
-    /**
-     * Output only. Name of the extension.
-     *
-     * @var string
-     */
-    public $extensionName;
-    protected $policyDataType = GoogleChromeManagementVersionsV1ReportingDataPolicyData::class;
-    protected $policyDataDataType = 'array';
-    /**
-     * Output only. ID of the extension.
-     *
-     * @param string $extensionId
-     */
-    public function setExtensionId($extensionId)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementVersionsV1ReportingDataExtensionPolicyData extends \Google\Collection
     {
+        protected $collection_key = 'policyData';
+        /**
+         * Output only. ID of the extension.
+         *
+         * @var string
+         */
+        public $extensionId;
+        /**
+         * Output only. Name of the extension.
+         *
+         * @var string
+         */
+        public $extensionName;
+        protected $policyDataType = GoogleChromeManagementVersionsV1ReportingDataPolicyData::class;
+        protected $policyDataDataType = 'array';
+        /**
+         * Output only. ID of the extension.
+         *
+         * @param string $extensionId
+         */
+        public function setExtensionId($extensionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExtensionId()
+        {
+        }
+        /**
+         * Output only. Name of the extension.
+         *
+         * @param string $extensionName
+         */
+        public function setExtensionName($extensionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExtensionName()
+        {
+        }
+        /**
+         * Output only. Information of the policies applied on the extension.
+         *
+         * @param GoogleChromeManagementVersionsV1ReportingDataPolicyData[] $policyData
+         */
+        public function setPolicyData($policyData)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementVersionsV1ReportingDataPolicyData[]
+         */
+        public function getPolicyData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ReportingDataExtensionPolicyData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExtensionId()
-    {
-    }
-    /**
-     * Output only. Name of the extension.
-     *
-     * @param string $extensionName
-     */
-    public function setExtensionName($extensionName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExtensionName()
-    {
-    }
-    /**
-     * Output only. Information of the policies applied on the extension.
-     *
-     * @param GoogleChromeManagementVersionsV1ReportingDataPolicyData[] $policyData
-     */
-    public function setPolicyData($policyData)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementVersionsV1ReportingDataPolicyData[]
-     */
-    public function getPolicyData()
+    class Google_Service_ChromeManagement_GoogleChromeManagementVersionsV1ReportingDataExtensionPolicyData extends \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ReportingDataExtensionPolicyData
     {
     }
 }

@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ChannelConversionPings extends \Google\Collection
-{
-    protected $collection_key = 'pings';
-    protected $pingsType = ChannelConversionPing::class;
-    protected $pingsDataType = 'array';
-    /**
-     * Pings that the app shall fire (authenticated by biscotti cookie). Each ping
-     * has a context, in which the app must fire the ping, and a url identifying
-     * the ping.
-     *
-     * @param ChannelConversionPing[] $pings
-     */
-    public function setPings($pings)
+namespace Google\Service\YouTube {
+    class ChannelConversionPings extends \Google\Collection
     {
+        protected $collection_key = 'pings';
+        protected $pingsType = ChannelConversionPing::class;
+        protected $pingsDataType = 'array';
+        /**
+         * Pings that the app shall fire (authenticated by biscotti cookie). Each ping
+         * has a context, in which the app must fire the ping, and a url identifying
+         * the ping.
+         *
+         * @param ChannelConversionPing[] $pings
+         */
+        public function setPings($pings)
+        {
+        }
+        /**
+         * @return ChannelConversionPing[]
+         */
+        public function getPings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ChannelConversionPing[]
+     * Runtime class alias of \Google\Service\YouTube\ChannelConversionPings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPings()
+    class Google_Service_YouTube_ChannelConversionPings extends \Google\Service\YouTube\ChannelConversionPings
     {
     }
 }

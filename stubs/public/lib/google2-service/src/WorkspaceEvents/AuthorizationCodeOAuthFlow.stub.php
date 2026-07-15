@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class AuthorizationCodeOAuthFlow extends \Google\Model
-{
-    /**
-     * The authorization URL to be used for this flow. This MUST be in the form of
-     * a URL. The OAuth2 standard requires the use of TLS
-     *
-     * @var string
-     */
-    public $authorizationUrl;
-    /**
-     * The URL to be used for obtaining refresh tokens. This MUST be in the form
-     * of a URL. The OAuth2 standard requires the use of TLS.
-     *
-     * @var string
-     */
-    public $refreshUrl;
-    /**
-     * The available scopes for the OAuth2 security scheme. A map between the
-     * scope name and a short description for it. The map MAY be empty.
-     *
-     * @var string[]
-     */
-    public $scopes;
-    /**
-     * The token URL to be used for this flow. This MUST be in the form of a URL.
-     * The OAuth2 standard requires the use of TLS.
-     *
-     * @var string
-     */
-    public $tokenUrl;
-    /**
-     * The authorization URL to be used for this flow. This MUST be in the form of
-     * a URL. The OAuth2 standard requires the use of TLS
-     *
-     * @param string $authorizationUrl
-     */
-    public function setAuthorizationUrl($authorizationUrl)
+namespace Google\Service\WorkspaceEvents {
+    class AuthorizationCodeOAuthFlow extends \Google\Model
     {
+        /**
+         * The authorization URL to be used for this flow. This MUST be in the form of
+         * a URL. The OAuth2 standard requires the use of TLS
+         *
+         * @var string
+         */
+        public $authorizationUrl;
+        /**
+         * The URL to be used for obtaining refresh tokens. This MUST be in the form
+         * of a URL. The OAuth2 standard requires the use of TLS.
+         *
+         * @var string
+         */
+        public $refreshUrl;
+        /**
+         * The available scopes for the OAuth2 security scheme. A map between the
+         * scope name and a short description for it. The map MAY be empty.
+         *
+         * @var string[]
+         */
+        public $scopes;
+        /**
+         * The token URL to be used for this flow. This MUST be in the form of a URL.
+         * The OAuth2 standard requires the use of TLS.
+         *
+         * @var string
+         */
+        public $tokenUrl;
+        /**
+         * The authorization URL to be used for this flow. This MUST be in the form of
+         * a URL. The OAuth2 standard requires the use of TLS
+         *
+         * @param string $authorizationUrl
+         */
+        public function setAuthorizationUrl($authorizationUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthorizationUrl()
+        {
+        }
+        /**
+         * The URL to be used for obtaining refresh tokens. This MUST be in the form
+         * of a URL. The OAuth2 standard requires the use of TLS.
+         *
+         * @param string $refreshUrl
+         */
+        public function setRefreshUrl($refreshUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRefreshUrl()
+        {
+        }
+        /**
+         * The available scopes for the OAuth2 security scheme. A map between the
+         * scope name and a short description for it. The map MAY be empty.
+         *
+         * @param string[] $scopes
+         */
+        public function setScopes($scopes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScopes()
+        {
+        }
+        /**
+         * The token URL to be used for this flow. This MUST be in the form of a URL.
+         * The OAuth2 standard requires the use of TLS.
+         *
+         * @param string $tokenUrl
+         */
+        public function setTokenUrl($tokenUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTokenUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkspaceEvents\AuthorizationCodeOAuthFlow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthorizationUrl()
-    {
-    }
-    /**
-     * The URL to be used for obtaining refresh tokens. This MUST be in the form
-     * of a URL. The OAuth2 standard requires the use of TLS.
-     *
-     * @param string $refreshUrl
-     */
-    public function setRefreshUrl($refreshUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRefreshUrl()
-    {
-    }
-    /**
-     * The available scopes for the OAuth2 security scheme. A map between the
-     * scope name and a short description for it. The map MAY be empty.
-     *
-     * @param string[] $scopes
-     */
-    public function setScopes($scopes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getScopes()
-    {
-    }
-    /**
-     * The token URL to be used for this flow. This MUST be in the form of a URL.
-     * The OAuth2 standard requires the use of TLS.
-     *
-     * @param string $tokenUrl
-     */
-    public function setTokenUrl($tokenUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTokenUrl()
+    class Google_Service_WorkspaceEvents_AuthorizationCodeOAuthFlow extends \Google\Service\WorkspaceEvents\AuthorizationCodeOAuthFlow
     {
     }
 }

@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class ContextValue extends \Google\Model
-{
-    /**
-     * Required default value.
-     */
-    public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
-    /**
-     * Lowest severity level "Info".
-     */
-    public const SEVERITY_INFO = 'INFO';
-    /**
-     * Middle severity level "Warning".
-     */
-    public const SEVERITY_WARNING = 'WARNING';
-    /**
-     * Severity level signaling an error "Error"
-     */
-    public const SEVERITY_ERROR = 'ERROR';
-    /**
-     * Severity level signaling a non recoverable error "Fatal"
-     */
-    public const SEVERITY_FATAL = 'FATAL';
-    protected $labelType = LocalizedString::class;
-    protected $labelDataType = '';
-    /**
-     * The severity of this context.
-     *
-     * @var string
-     */
-    public $severity;
-    /**
-     * The unit of the context value.
-     *
-     * @var string
-     */
-    public $unit;
-    /**
-     * The value for the context.
-     *
-     * @var float
-     */
-    public $value;
-    /**
-     * The label for the context value. e.g. "latency".
-     *
-     * @param LocalizedString $label
-     */
-    public function setLabel(LocalizedString $label)
+namespace Google\Service\Spanner {
+    class ContextValue extends \Google\Model
     {
+        /**
+         * Required default value.
+         */
+        public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
+        /**
+         * Lowest severity level "Info".
+         */
+        public const SEVERITY_INFO = 'INFO';
+        /**
+         * Middle severity level "Warning".
+         */
+        public const SEVERITY_WARNING = 'WARNING';
+        /**
+         * Severity level signaling an error "Error"
+         */
+        public const SEVERITY_ERROR = 'ERROR';
+        /**
+         * Severity level signaling a non recoverable error "Fatal"
+         */
+        public const SEVERITY_FATAL = 'FATAL';
+        protected $labelType = LocalizedString::class;
+        protected $labelDataType = '';
+        /**
+         * The severity of this context.
+         *
+         * @var string
+         */
+        public $severity;
+        /**
+         * The unit of the context value.
+         *
+         * @var string
+         */
+        public $unit;
+        /**
+         * The value for the context.
+         *
+         * @var float
+         */
+        public $value;
+        /**
+         * The label for the context value. e.g. "latency".
+         *
+         * @param LocalizedString $label
+         */
+        public function setLabel(LocalizedString $label)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * The severity of this context.
+         *
+         * Accepted values: SEVERITY_UNSPECIFIED, INFO, WARNING, ERROR, FATAL
+         *
+         * @param self::SEVERITY_* $severity
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return self::SEVERITY_*
+         */
+        public function getSeverity()
+        {
+        }
+        /**
+         * The unit of the context value.
+         *
+         * @param string $unit
+         */
+        public function setUnit($unit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnit()
+        {
+        }
+        /**
+         * The value for the context.
+         *
+         * @param float $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LocalizedString
+     * Runtime class alias of \Google\Service\Spanner\ContextValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabel()
-    {
-    }
-    /**
-     * The severity of this context.
-     *
-     * Accepted values: SEVERITY_UNSPECIFIED, INFO, WARNING, ERROR, FATAL
-     *
-     * @param self::SEVERITY_* $severity
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return self::SEVERITY_*
-     */
-    public function getSeverity()
-    {
-    }
-    /**
-     * The unit of the context value.
-     *
-     * @param string $unit
-     */
-    public function setUnit($unit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnit()
-    {
-    }
-    /**
-     * The value for the context.
-     *
-     * @param float $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getValue()
+    class Google_Service_Spanner_ContextValue extends \Google\Service\Spanner\ContextValue
     {
     }
 }

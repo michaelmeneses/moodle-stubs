@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class BatchUsageLogEvents extends \Google\Collection
-{
-    protected $collection_key = 'usageLogEvents';
-    /**
-     * If present, the name of the device in the form
-     * ‘enterprises/{enterpriseId}/devices/{deviceId}’
-     *
-     * @var string
-     */
-    public $device;
-    /**
-     * The device timestamp when the batch of events were collected from the
-     * device.
-     *
-     * @var string
-     */
-    public $retrievalTime;
-    protected $usageLogEventsType = UsageLogEvent::class;
-    protected $usageLogEventsDataType = 'array';
-    /**
-     * If present, the resource name of the user that owns this device in the form
-     * ‘enterprises/{enterpriseId}/users/{userId}’.
-     *
-     * @var string
-     */
-    public $user;
-    /**
-     * If present, the name of the device in the form
-     * ‘enterprises/{enterpriseId}/devices/{deviceId}’
-     *
-     * @param string $device
-     */
-    public function setDevice($device)
+namespace Google\Service\AndroidManagement {
+    class BatchUsageLogEvents extends \Google\Collection
     {
+        protected $collection_key = 'usageLogEvents';
+        /**
+         * If present, the name of the device in the form
+         * ‘enterprises/{enterpriseId}/devices/{deviceId}’
+         *
+         * @var string
+         */
+        public $device;
+        /**
+         * The device timestamp when the batch of events were collected from the
+         * device.
+         *
+         * @var string
+         */
+        public $retrievalTime;
+        protected $usageLogEventsType = UsageLogEvent::class;
+        protected $usageLogEventsDataType = 'array';
+        /**
+         * If present, the resource name of the user that owns this device in the form
+         * ‘enterprises/{enterpriseId}/users/{userId}’.
+         *
+         * @var string
+         */
+        public $user;
+        /**
+         * If present, the name of the device in the form
+         * ‘enterprises/{enterpriseId}/devices/{deviceId}’
+         *
+         * @param string $device
+         */
+        public function setDevice($device)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDevice()
+        {
+        }
+        /**
+         * The device timestamp when the batch of events were collected from the
+         * device.
+         *
+         * @param string $retrievalTime
+         */
+        public function setRetrievalTime($retrievalTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRetrievalTime()
+        {
+        }
+        /**
+         * The list of UsageLogEvent that were reported by the device, sorted
+         * chronologically by the event time.
+         *
+         * @param UsageLogEvent[] $usageLogEvents
+         */
+        public function setUsageLogEvents($usageLogEvents)
+        {
+        }
+        /**
+         * @return UsageLogEvent[]
+         */
+        public function getUsageLogEvents()
+        {
+        }
+        /**
+         * If present, the resource name of the user that owns this device in the form
+         * ‘enterprises/{enterpriseId}/users/{userId}’.
+         *
+         * @param string $user
+         */
+        public function setUser($user)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\BatchUsageLogEvents registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDevice()
-    {
-    }
-    /**
-     * The device timestamp when the batch of events were collected from the
-     * device.
-     *
-     * @param string $retrievalTime
-     */
-    public function setRetrievalTime($retrievalTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRetrievalTime()
-    {
-    }
-    /**
-     * The list of UsageLogEvent that were reported by the device, sorted
-     * chronologically by the event time.
-     *
-     * @param UsageLogEvent[] $usageLogEvents
-     */
-    public function setUsageLogEvents($usageLogEvents)
-    {
-    }
-    /**
-     * @return UsageLogEvent[]
-     */
-    public function getUsageLogEvents()
-    {
-    }
-    /**
-     * If present, the resource name of the user that owns this device in the form
-     * ‘enterprises/{enterpriseId}/users/{userId}’.
-     *
-     * @param string $user
-     */
-    public function setUser($user)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUser()
+    class Google_Service_AndroidManagement_BatchUsageLogEvents extends \Google\Service\AndroidManagement\BatchUsageLogEvents
     {
     }
 }

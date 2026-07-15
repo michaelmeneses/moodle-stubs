@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2AzureManagementGroup extends \Google\Model
-{
-    /**
-     * The display name of the Azure management group.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The UUID of the Azure management group, for example,
-     * `20000000-0001-0000-0000-000000000000`.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The display name of the Azure management group.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2AzureManagementGroup extends \Google\Model
     {
+        /**
+         * The display name of the Azure management group.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The UUID of the Azure management group, for example,
+         * `20000000-0001-0000-0000-000000000000`.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The display name of the Azure management group.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The UUID of the Azure management group, for example,
+         * `20000000-0001-0000-0000-000000000000`.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2AzureManagementGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The UUID of the Azure management group, for example,
-     * `20000000-0001-0000-0000-000000000000`.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2AzureManagementGroup extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2AzureManagementGroup
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class CreateGitLabConfigOperationMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $completeTime;
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $gitlabConfig;
-    /**
-     * @param string
-     */
-    public function setCompleteTime($completeTime)
+namespace Google\Service\CloudBuild {
+    class CreateGitLabConfigOperationMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $completeTime;
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $gitlabConfig;
+        /**
+         * @param string
+         */
+        public function setCompleteTime($completeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompleteTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGitlabConfig($gitlabConfig)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGitlabConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\CreateGitLabConfigOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompleteTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGitlabConfig($gitlabConfig)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGitlabConfig()
+    class Google_Service_CloudBuild_CreateGitLabConfigOperationMetadata extends \Google\Service\CloudBuild\CreateGitLabConfigOperationMetadata
     {
     }
 }

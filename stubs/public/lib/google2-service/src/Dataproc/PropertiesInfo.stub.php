@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class PropertiesInfo extends \Google\Model
-{
-    protected $autotuningPropertiesType = ValueInfo::class;
-    protected $autotuningPropertiesDataType = 'map';
-    /**
-     * Output only. Properties set by autotuning engine.
-     *
-     * @param ValueInfo[] $autotuningProperties
-     */
-    public function setAutotuningProperties($autotuningProperties)
+namespace Google\Service\Dataproc {
+    class PropertiesInfo extends \Google\Model
     {
+        protected $autotuningPropertiesType = ValueInfo::class;
+        protected $autotuningPropertiesDataType = 'map';
+        /**
+         * Output only. Properties set by autotuning engine.
+         *
+         * @param ValueInfo[] $autotuningProperties
+         */
+        public function setAutotuningProperties($autotuningProperties)
+        {
+        }
+        /**
+         * @return ValueInfo[]
+         */
+        public function getAutotuningProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ValueInfo[]
+     * Runtime class alias of \Google\Service\Dataproc\PropertiesInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutotuningProperties()
+    class Google_Service_Dataproc_PropertiesInfo extends \Google\Service\Dataproc\PropertiesInfo
     {
     }
 }

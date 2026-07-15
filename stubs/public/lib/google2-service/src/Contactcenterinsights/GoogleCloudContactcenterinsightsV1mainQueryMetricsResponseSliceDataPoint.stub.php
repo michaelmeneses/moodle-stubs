@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPoint extends \Google\Model
-{
-    protected $conversationMeasureType = GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPointConversationMeasure::class;
-    protected $conversationMeasureDataType = '';
-    protected $intervalType = GoogleTypeInterval::class;
-    protected $intervalDataType = '';
-    /**
-     * The measure related to conversations.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPointConversationMeasure $conversationMeasure
-     */
-    public function setConversationMeasure(GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPointConversationMeasure $conversationMeasure)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPoint extends \Google\Model
     {
+        protected $conversationMeasureType = GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPointConversationMeasure::class;
+        protected $conversationMeasureDataType = '';
+        protected $intervalType = GoogleTypeInterval::class;
+        protected $intervalDataType = '';
+        /**
+         * The measure related to conversations.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPointConversationMeasure $conversationMeasure
+         */
+        public function setConversationMeasure(GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPointConversationMeasure $conversationMeasure)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPointConversationMeasure
+         */
+        public function getConversationMeasure()
+        {
+        }
+        /**
+         * The interval that this data point represents. * If this is the total data
+         * point, the interval is [starting create time, ending create time) from the
+         * request. * If this a data point from the time series, the interval is
+         * [time, time + time granularity from the request).
+         *
+         * @param GoogleTypeInterval $interval
+         */
+        public function setInterval(GoogleTypeInterval $interval)
+        {
+        }
+        /**
+         * @return GoogleTypeInterval
+         */
+        public function getInterval()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPointConversationMeasure
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversationMeasure()
-    {
-    }
-    /**
-     * The interval that this data point represents. * If this is the total data
-     * point, the interval is [starting create time, ending create time) from the
-     * request. * If this a data point from the time series, the interval is
-     * [time, time + time granularity from the request).
-     *
-     * @param GoogleTypeInterval $interval
-     */
-    public function setInterval(GoogleTypeInterval $interval)
-    {
-    }
-    /**
-     * @return GoogleTypeInterval
-     */
-    public function getInterval()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPoint extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPoint
     {
     }
 }

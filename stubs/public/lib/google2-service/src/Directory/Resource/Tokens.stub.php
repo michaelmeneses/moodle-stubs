@@ -21,57 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory\Resource;
-
-/**
- * The "tokens" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adminService = new Google\Service\Directory(...);
- *   $tokens = $adminService->tokens;
- *  </code>
- */
-class Tokens extends \Google\Service\Resource
-{
+namespace Google\Service\Directory\Resource {
+    use Google\Service\Directory\Token;
+    use Google\Service\Directory\Tokens as TokensModel;
     /**
-     * Deletes all access tokens issued by a user for an application.
-     * (tokens.delete)
-     *
-     * @param string $userKey Identifies the user in the API request. The value can
-     * be the user's primary email address, alias email address, or unique user ID.
-     * @param string $clientId The Client ID of the application the token is issued
-     * to.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "tokens" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adminService = new Google\Service\Directory(...);
+     *   $tokens = $adminService->tokens;
+     *  </code>
      */
-    public function delete($userKey, $clientId, $optParams = [])
+    class Tokens extends \Google\Service\Resource
     {
+        /**
+         * Deletes all access tokens issued by a user for an application.
+         * (tokens.delete)
+         *
+         * @param string $userKey Identifies the user in the API request. The value can
+         * be the user's primary email address, alias email address, or unique user ID.
+         * @param string $clientId The Client ID of the application the token is issued
+         * to.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($userKey, $clientId, $optParams = [])
+        {
+        }
+        /**
+         * Gets information about an access token issued by a user. (tokens.get)
+         *
+         * @param string $userKey Identifies the user in the API request. The value can
+         * be the user's primary email address, alias email address, or unique user ID.
+         * @param string $clientId The Client ID of the application the token is issued
+         * to.
+         * @param array $optParams Optional parameters.
+         * @return Token
+         * @throws \Google\Service\Exception
+         */
+        public function get($userKey, $clientId, $optParams = [])
+        {
+        }
+        /**
+         * Returns the set of tokens specified user has issued to 3rd party
+         * applications. (tokens.listTokens)
+         *
+         * @param string $userKey Identifies the user in the API request. The value can
+         * be the user's primary email address, alias email address, or unique user ID.
+         * @param array $optParams Optional parameters.
+         * @return TokensModel
+         * @throws \Google\Service\Exception
+         */
+        public function listTokens($userKey, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets information about an access token issued by a user. (tokens.get)
-     *
-     * @param string $userKey Identifies the user in the API request. The value can
-     * be the user's primary email address, alias email address, or unique user ID.
-     * @param string $clientId The Client ID of the application the token is issued
-     * to.
-     * @param array $optParams Optional parameters.
-     * @return Token
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Directory\Resource\Tokens registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($userKey, $clientId, $optParams = [])
-    {
-    }
-    /**
-     * Returns the set of tokens specified user has issued to 3rd party
-     * applications. (tokens.listTokens)
-     *
-     * @param string $userKey Identifies the user in the API request. The value can
-     * be the user's primary email address, alias email address, or unique user ID.
-     * @param array $optParams Optional parameters.
-     * @return TokensModel
-     * @throws \Google\Service\Exception
-     */
-    public function listTokens($userKey, $optParams = [])
+    class Google_Service_Directory_Resource_Tokens extends \Google\Service\Directory\Resource\Tokens
     {
     }
 }

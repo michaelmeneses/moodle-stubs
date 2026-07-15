@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class GoogleCloudAssetV1Edge extends \Google\Model
-{
-    /**
-     * The source node of the edge. For example, it could be a full resource name
-     * for a resource node or an email of an identity.
-     *
-     * @var string
-     */
-    public $sourceNode;
-    /**
-     * The target node of the edge. For example, it could be a full resource name
-     * for a resource node or an email of an identity.
-     *
-     * @var string
-     */
-    public $targetNode;
-    /**
-     * The source node of the edge. For example, it could be a full resource name
-     * for a resource node or an email of an identity.
-     *
-     * @param string $sourceNode
-     */
-    public function setSourceNode($sourceNode)
+namespace Google\Service\CloudAsset {
+    class GoogleCloudAssetV1Edge extends \Google\Model
     {
+        /**
+         * The source node of the edge. For example, it could be a full resource name
+         * for a resource node or an email of an identity.
+         *
+         * @var string
+         */
+        public $sourceNode;
+        /**
+         * The target node of the edge. For example, it could be a full resource name
+         * for a resource node or an email of an identity.
+         *
+         * @var string
+         */
+        public $targetNode;
+        /**
+         * The source node of the edge. For example, it could be a full resource name
+         * for a resource node or an email of an identity.
+         *
+         * @param string $sourceNode
+         */
+        public function setSourceNode($sourceNode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceNode()
+        {
+        }
+        /**
+         * The target node of the edge. For example, it could be a full resource name
+         * for a resource node or an email of an identity.
+         *
+         * @param string $targetNode
+         */
+        public function setTargetNode($targetNode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetNode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\GoogleCloudAssetV1Edge registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSourceNode()
-    {
-    }
-    /**
-     * The target node of the edge. For example, it could be a full resource name
-     * for a resource node or an email of an identity.
-     *
-     * @param string $targetNode
-     */
-    public function setTargetNode($targetNode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetNode()
+    class Google_Service_CloudAsset_GoogleCloudAssetV1Edge extends \Google\Service\CloudAsset\GoogleCloudAssetV1Edge
     {
     }
 }

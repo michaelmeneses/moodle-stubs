@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SummarizeSessionSparkApplicationExecutorsResponse extends \Google\Model
-{
-    protected $activeExecutorSummaryType = ConsolidatedExecutorSummary::class;
-    protected $activeExecutorSummaryDataType = '';
-    /**
-     * Spark Application Id
-     *
-     * @var string
-     */
-    public $applicationId;
-    protected $deadExecutorSummaryType = ConsolidatedExecutorSummary::class;
-    protected $deadExecutorSummaryDataType = '';
-    protected $totalExecutorSummaryType = ConsolidatedExecutorSummary::class;
-    protected $totalExecutorSummaryDataType = '';
-    /**
-     * Consolidated summary for active executors.
-     *
-     * @param ConsolidatedExecutorSummary $activeExecutorSummary
-     */
-    public function setActiveExecutorSummary(ConsolidatedExecutorSummary $activeExecutorSummary)
+namespace Google\Service\Dataproc {
+    class SummarizeSessionSparkApplicationExecutorsResponse extends \Google\Model
     {
+        protected $activeExecutorSummaryType = ConsolidatedExecutorSummary::class;
+        protected $activeExecutorSummaryDataType = '';
+        /**
+         * Spark Application Id
+         *
+         * @var string
+         */
+        public $applicationId;
+        protected $deadExecutorSummaryType = ConsolidatedExecutorSummary::class;
+        protected $deadExecutorSummaryDataType = '';
+        protected $totalExecutorSummaryType = ConsolidatedExecutorSummary::class;
+        protected $totalExecutorSummaryDataType = '';
+        /**
+         * Consolidated summary for active executors.
+         *
+         * @param ConsolidatedExecutorSummary $activeExecutorSummary
+         */
+        public function setActiveExecutorSummary(ConsolidatedExecutorSummary $activeExecutorSummary)
+        {
+        }
+        /**
+         * @return ConsolidatedExecutorSummary
+         */
+        public function getActiveExecutorSummary()
+        {
+        }
+        /**
+         * Spark Application Id
+         *
+         * @param string $applicationId
+         */
+        public function setApplicationId($applicationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicationId()
+        {
+        }
+        /**
+         * Consolidated summary for dead executors.
+         *
+         * @param ConsolidatedExecutorSummary $deadExecutorSummary
+         */
+        public function setDeadExecutorSummary(ConsolidatedExecutorSummary $deadExecutorSummary)
+        {
+        }
+        /**
+         * @return ConsolidatedExecutorSummary
+         */
+        public function getDeadExecutorSummary()
+        {
+        }
+        /**
+         * Overall consolidated summary for all executors.
+         *
+         * @param ConsolidatedExecutorSummary $totalExecutorSummary
+         */
+        public function setTotalExecutorSummary(ConsolidatedExecutorSummary $totalExecutorSummary)
+        {
+        }
+        /**
+         * @return ConsolidatedExecutorSummary
+         */
+        public function getTotalExecutorSummary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConsolidatedExecutorSummary
+     * Runtime class alias of \Google\Service\Dataproc\SummarizeSessionSparkApplicationExecutorsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActiveExecutorSummary()
-    {
-    }
-    /**
-     * Spark Application Id
-     *
-     * @param string $applicationId
-     */
-    public function setApplicationId($applicationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getApplicationId()
-    {
-    }
-    /**
-     * Consolidated summary for dead executors.
-     *
-     * @param ConsolidatedExecutorSummary $deadExecutorSummary
-     */
-    public function setDeadExecutorSummary(ConsolidatedExecutorSummary $deadExecutorSummary)
-    {
-    }
-    /**
-     * @return ConsolidatedExecutorSummary
-     */
-    public function getDeadExecutorSummary()
-    {
-    }
-    /**
-     * Overall consolidated summary for all executors.
-     *
-     * @param ConsolidatedExecutorSummary $totalExecutorSummary
-     */
-    public function setTotalExecutorSummary(ConsolidatedExecutorSummary $totalExecutorSummary)
-    {
-    }
-    /**
-     * @return ConsolidatedExecutorSummary
-     */
-    public function getTotalExecutorSummary()
+    class Google_Service_Dataproc_SummarizeSessionSparkApplicationExecutorsResponse extends \Google\Service\Dataproc\SummarizeSessionSparkApplicationExecutorsResponse
     {
     }
 }

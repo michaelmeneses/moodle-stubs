@@ -16,6 +16,10 @@
  */
 namespace Monolog\Processor;
 
+use Monolog\Level;
+use Monolog\Logger;
+use Psr\Log\LogLevel;
+use Monolog\LogRecord;
 /**
  * Injects Hg branch and Hg revision number in all records
  *

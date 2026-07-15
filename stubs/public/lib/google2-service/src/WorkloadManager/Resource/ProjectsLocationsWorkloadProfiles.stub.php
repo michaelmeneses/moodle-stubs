@@ -21,45 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager\Resource;
-
-/**
- * The "workloadProfiles" collection of methods.
- * Typical usage is:
- *  <code>
- *   $workloadmanagerService = new Google\Service\WorkloadManager(...);
- *   $workloadProfiles = $workloadmanagerService->projects_locations_workloadProfiles;
- *  </code>
- */
-class ProjectsLocationsWorkloadProfiles extends \Google\Service\Resource
-{
+namespace Google\Service\WorkloadManager\Resource {
+    use Google\Service\WorkloadManager\ListWorkloadProfilesResponse;
+    use Google\Service\WorkloadManager\WorkloadProfile;
     /**
-     * Gets details of a single workload. (workloadProfiles.get)
-     *
-     * @param string $name Required. Name of the resource
-     * @param array $optParams Optional parameters.
-     * @return WorkloadProfile
-     * @throws \Google\Service\Exception
+     * The "workloadProfiles" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $workloadmanagerService = new Google\Service\WorkloadManager(...);
+     *   $workloadProfiles = $workloadmanagerService->projects_locations_workloadProfiles;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsWorkloadProfiles extends \Google\Service\Resource
     {
+        /**
+         * Gets details of a single workload. (workloadProfiles.get)
+         *
+         * @param string $name Required. Name of the resource
+         * @param array $optParams Optional parameters.
+         * @return WorkloadProfile
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * List workloads (workloadProfiles.listProjectsLocationsWorkloadProfiles)
+         *
+         * @param string $parent Required. Parent value for ListWorkloadRequest
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filtering results
+         * @opt_param int pageSize Optional. Requested page size. Server may return
+         * fewer items than requested. If unspecified, server will pick an appropriate
+         * default.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * the server should return.
+         * @return ListWorkloadProfilesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsWorkloadProfiles($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * List workloads (workloadProfiles.listProjectsLocationsWorkloadProfiles)
-     *
-     * @param string $parent Required. Parent value for ListWorkloadRequest
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filtering results
-     * @opt_param int pageSize Optional. Requested page size. Server may return
-     * fewer items than requested. If unspecified, server will pick an appropriate
-     * default.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * the server should return.
-     * @return ListWorkloadProfilesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\WorkloadManager\Resource\ProjectsLocationsWorkloadProfiles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsWorkloadProfiles($parent, $optParams = [])
+    class Google_Service_WorkloadManager_Resource_ProjectsLocationsWorkloadProfiles extends \Google\Service\WorkloadManager\Resource\ProjectsLocationsWorkloadProfiles
     {
     }
 }

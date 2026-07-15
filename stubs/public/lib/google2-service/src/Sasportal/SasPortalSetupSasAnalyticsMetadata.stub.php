@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sasportal;
-
-class SasPortalSetupSasAnalyticsMetadata extends \Google\Model
-{
+namespace Google\Service\Sasportal {
+    class SasPortalSetupSasAnalyticsMetadata extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Sasportal\SasPortalSetupSasAnalyticsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Sasportal_SasPortalSetupSasAnalyticsMetadata extends \Google\Service\Sasportal\SasPortalSetupSasAnalyticsMetadata
+    {
+    }
 }

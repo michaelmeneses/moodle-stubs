@@ -21,176 +21,185 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class EventGadget extends \Google\Model
-{
-    /**
-     * The gadget's display mode. Deprecated. Possible values are: - "icon" - The
-     * gadget displays next to the event's title in the calendar view.  - "chip" -
-     * The gadget displays when the event is clicked.
-     *
-     * @var string
-     */
-    public $display;
-    /**
-     * The gadget's height in pixels. The height must be an integer greater than
-     * 0. Optional. Deprecated.
-     *
-     * @var int
-     */
-    public $height;
-    /**
-     * The gadget's icon URL. The URL scheme must be HTTPS. Deprecated.
-     *
-     * @var string
-     */
-    public $iconLink;
-    /**
-     * The gadget's URL. The URL scheme must be HTTPS. Deprecated.
-     *
-     * @var string
-     */
-    public $link;
-    /**
-     * Preferences.
-     *
-     * @var string[]
-     */
-    public $preferences;
-    /**
-     * The gadget's title. Deprecated.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The gadget's type. Deprecated.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The gadget's width in pixels. The width must be an integer greater than 0.
-     * Optional. Deprecated.
-     *
-     * @var int
-     */
-    public $width;
-    /**
-     * The gadget's display mode. Deprecated. Possible values are: - "icon" - The
-     * gadget displays next to the event's title in the calendar view.  - "chip" -
-     * The gadget displays when the event is clicked.
-     *
-     * @param string $display
-     */
-    public function setDisplay($display)
+namespace Google\Service\Calendar {
+    class EventGadget extends \Google\Model
     {
+        /**
+         * The gadget's display mode. Deprecated. Possible values are: - "icon" - The
+         * gadget displays next to the event's title in the calendar view.  - "chip" -
+         * The gadget displays when the event is clicked.
+         *
+         * @var string
+         */
+        public $display;
+        /**
+         * The gadget's height in pixels. The height must be an integer greater than
+         * 0. Optional. Deprecated.
+         *
+         * @var int
+         */
+        public $height;
+        /**
+         * The gadget's icon URL. The URL scheme must be HTTPS. Deprecated.
+         *
+         * @var string
+         */
+        public $iconLink;
+        /**
+         * The gadget's URL. The URL scheme must be HTTPS. Deprecated.
+         *
+         * @var string
+         */
+        public $link;
+        /**
+         * Preferences.
+         *
+         * @var string[]
+         */
+        public $preferences;
+        /**
+         * The gadget's title. Deprecated.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The gadget's type. Deprecated.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The gadget's width in pixels. The width must be an integer greater than 0.
+         * Optional. Deprecated.
+         *
+         * @var int
+         */
+        public $width;
+        /**
+         * The gadget's display mode. Deprecated. Possible values are: - "icon" - The
+         * gadget displays next to the event's title in the calendar view.  - "chip" -
+         * The gadget displays when the event is clicked.
+         *
+         * @param string $display
+         */
+        public function setDisplay($display)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplay()
+        {
+        }
+        /**
+         * The gadget's height in pixels. The height must be an integer greater than
+         * 0. Optional. Deprecated.
+         *
+         * @param int $height
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * The gadget's icon URL. The URL scheme must be HTTPS. Deprecated.
+         *
+         * @param string $iconLink
+         */
+        public function setIconLink($iconLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIconLink()
+        {
+        }
+        /**
+         * The gadget's URL. The URL scheme must be HTTPS. Deprecated.
+         *
+         * @param string $link
+         */
+        public function setLink($link)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLink()
+        {
+        }
+        /**
+         * Preferences.
+         *
+         * @param string[] $preferences
+         */
+        public function setPreferences($preferences)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPreferences()
+        {
+        }
+        /**
+         * The gadget's title. Deprecated.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * The gadget's type. Deprecated.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The gadget's width in pixels. The width must be an integer greater than 0.
+         * Optional. Deprecated.
+         *
+         * @param int $width
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Calendar\EventGadget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplay()
-    {
-    }
-    /**
-     * The gadget's height in pixels. The height must be an integer greater than
-     * 0. Optional. Deprecated.
-     *
-     * @param int $height
-     */
-    public function setHeight($height)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHeight()
-    {
-    }
-    /**
-     * The gadget's icon URL. The URL scheme must be HTTPS. Deprecated.
-     *
-     * @param string $iconLink
-     */
-    public function setIconLink($iconLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIconLink()
-    {
-    }
-    /**
-     * The gadget's URL. The URL scheme must be HTTPS. Deprecated.
-     *
-     * @param string $link
-     */
-    public function setLink($link)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLink()
-    {
-    }
-    /**
-     * Preferences.
-     *
-     * @param string[] $preferences
-     */
-    public function setPreferences($preferences)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPreferences()
-    {
-    }
-    /**
-     * The gadget's title. Deprecated.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * The gadget's type. Deprecated.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * The gadget's width in pixels. The width must be an integer greater than 0.
-     * Optional. Deprecated.
-     *
-     * @param int $width
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWidth()
+    class Google_Service_Calendar_EventGadget extends \Google\Service\Calendar\EventGadget
     {
     }
 }

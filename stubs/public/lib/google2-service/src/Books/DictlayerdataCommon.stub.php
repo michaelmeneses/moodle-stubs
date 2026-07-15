@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class DictlayerdataCommon extends \Google\Model
-{
-    /**
-     * The display title and localized canonical name to use when searching for
-     * this entity on Google search.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The display title and localized canonical name to use when searching for
-     * this entity on Google search.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
+namespace Google\Service\Books {
+    class DictlayerdataCommon extends \Google\Model
     {
+        /**
+         * The display title and localized canonical name to use when searching for
+         * this entity on Google search.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The display title and localized canonical name to use when searching for
+         * this entity on Google search.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\DictlayerdataCommon registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTitle()
+    class Google_Service_Books_DictlayerdataCommon extends \Google\Service\Books\DictlayerdataCommon
     {
     }
 }

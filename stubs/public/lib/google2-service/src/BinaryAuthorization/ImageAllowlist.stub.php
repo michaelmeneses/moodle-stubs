@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization;
-
-class ImageAllowlist extends \Google\Collection
-{
-    protected $collection_key = 'allowPattern';
-    /**
-     * Required. A disjunction of image patterns to allow. If any of these
-     * patterns match, then the image is considered exempted by this allowlist.
-     *
-     * @var string[]
-     */
-    public $allowPattern;
-    /**
-     * Required. A disjunction of image patterns to allow. If any of these
-     * patterns match, then the image is considered exempted by this allowlist.
-     *
-     * @param string[] $allowPattern
-     */
-    public function setAllowPattern($allowPattern)
+namespace Google\Service\BinaryAuthorization {
+    class ImageAllowlist extends \Google\Collection
     {
+        protected $collection_key = 'allowPattern';
+        /**
+         * Required. A disjunction of image patterns to allow. If any of these
+         * patterns match, then the image is considered exempted by this allowlist.
+         *
+         * @var string[]
+         */
+        public $allowPattern;
+        /**
+         * Required. A disjunction of image patterns to allow. If any of these
+         * patterns match, then the image is considered exempted by this allowlist.
+         *
+         * @param string[] $allowPattern
+         */
+        public function setAllowPattern($allowPattern)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowPattern()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\BinaryAuthorization\ImageAllowlist registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowPattern()
+    class Google_Service_BinaryAuthorization_ImageAllowlist extends \Google\Service\BinaryAuthorization\ImageAllowlist
     {
     }
 }

@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ReportCompatibleFields extends \Google\Collection
-{
-    protected $collection_key = 'pivotedActivityMetrics';
-    protected $dimensionFiltersType = Dimension::class;
-    protected $dimensionFiltersDataType = 'array';
-    protected $dimensionsType = Dimension::class;
-    protected $dimensionsDataType = 'array';
-    /**
-     * The kind of resource this is, in this case
-     * dfareporting#reportCompatibleFields.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $metricsType = Metric::class;
-    protected $metricsDataType = 'array';
-    protected $pivotedActivityMetricsType = Metric::class;
-    protected $pivotedActivityMetricsDataType = 'array';
-    /**
-     * Dimensions which are compatible to be selected in the "dimensionFilters"
-     * section of the report.
-     *
-     * @param Dimension[] $dimensionFilters
-     */
-    public function setDimensionFilters($dimensionFilters)
+namespace Google\Service\Dfareporting {
+    class ReportCompatibleFields extends \Google\Collection
     {
+        protected $collection_key = 'pivotedActivityMetrics';
+        protected $dimensionFiltersType = Dimension::class;
+        protected $dimensionFiltersDataType = 'array';
+        protected $dimensionsType = Dimension::class;
+        protected $dimensionsDataType = 'array';
+        /**
+         * The kind of resource this is, in this case
+         * dfareporting#reportCompatibleFields.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $metricsType = Metric::class;
+        protected $metricsDataType = 'array';
+        protected $pivotedActivityMetricsType = Metric::class;
+        protected $pivotedActivityMetricsDataType = 'array';
+        /**
+         * Dimensions which are compatible to be selected in the "dimensionFilters"
+         * section of the report.
+         *
+         * @param Dimension[] $dimensionFilters
+         */
+        public function setDimensionFilters($dimensionFilters)
+        {
+        }
+        /**
+         * @return Dimension[]
+         */
+        public function getDimensionFilters()
+        {
+        }
+        /**
+         * Dimensions which are compatible to be selected in the "dimensions" section
+         * of the report.
+         *
+         * @param Dimension[] $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return Dimension[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * The kind of resource this is, in this case
+         * dfareporting#reportCompatibleFields.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Metrics which are compatible to be selected in the "metricNames" section of
+         * the report.
+         *
+         * @param Metric[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return Metric[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * Metrics which are compatible to be selected as activity metrics to pivot on
+         * in the "activities" section of the report.
+         *
+         * @param Metric[] $pivotedActivityMetrics
+         */
+        public function setPivotedActivityMetrics($pivotedActivityMetrics)
+        {
+        }
+        /**
+         * @return Metric[]
+         */
+        public function getPivotedActivityMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Dimension[]
+     * Runtime class alias of \Google\Service\Dfareporting\ReportCompatibleFields registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionFilters()
-    {
-    }
-    /**
-     * Dimensions which are compatible to be selected in the "dimensions" section
-     * of the report.
-     *
-     * @param Dimension[] $dimensions
-     */
-    public function setDimensions($dimensions)
-    {
-    }
-    /**
-     * @return Dimension[]
-     */
-    public function getDimensions()
-    {
-    }
-    /**
-     * The kind of resource this is, in this case
-     * dfareporting#reportCompatibleFields.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Metrics which are compatible to be selected in the "metricNames" section of
-     * the report.
-     *
-     * @param Metric[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return Metric[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * Metrics which are compatible to be selected as activity metrics to pivot on
-     * in the "activities" section of the report.
-     *
-     * @param Metric[] $pivotedActivityMetrics
-     */
-    public function setPivotedActivityMetrics($pivotedActivityMetrics)
-    {
-    }
-    /**
-     * @return Metric[]
-     */
-    public function getPivotedActivityMetrics()
+    class Google_Service_Dfareporting_ReportCompatibleFields extends \Google\Service\Dfareporting\ReportCompatibleFields
     {
     }
 }

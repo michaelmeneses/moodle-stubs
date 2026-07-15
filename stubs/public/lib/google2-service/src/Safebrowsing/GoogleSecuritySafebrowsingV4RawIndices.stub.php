@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class GoogleSecuritySafebrowsingV4RawIndices extends \Google\Collection
-{
-    protected $collection_key = 'indices';
-    /**
-     * @var int[]
-     */
-    public $indices;
-    /**
-     * @param int[]
-     */
-    public function setIndices($indices)
+namespace Google\Service\Safebrowsing {
+    class GoogleSecuritySafebrowsingV4RawIndices extends \Google\Collection
     {
+        protected $collection_key = 'indices';
+        /**
+         * @var int[]
+         */
+        public $indices;
+        /**
+         * @param int[]
+         */
+        public function setIndices($indices)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getIndices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int[]
+     * Runtime class alias of \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4RawIndices registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIndices()
+    class Google_Service_Safebrowsing_GoogleSecuritySafebrowsingV4RawIndices extends \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4RawIndices
     {
     }
 }

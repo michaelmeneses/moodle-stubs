@@ -21,166 +21,175 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class SeriesSeries extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $bannerImageUrl;
-    /**
-     * @var bool
-     */
-    public $eligibleForSubscription;
-    /**
-     * @var string
-     */
-    public $imageUrl;
-    /**
-     * @var bool
-     */
-    public $isComplete;
-    /**
-     * @var string
-     */
-    public $seriesFormatType;
-    /**
-     * @var string
-     */
-    public $seriesId;
-    protected $seriesSubscriptionReleaseInfoType = SeriesSeriesSeriesSubscriptionReleaseInfo::class;
-    protected $seriesSubscriptionReleaseInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $seriesType;
-    /**
-     * @var string
-     */
-    public $subscriptionId;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @param string $bannerImageUrl
-     */
-    public function setBannerImageUrl($bannerImageUrl)
+namespace Google\Service\Books {
+    class SeriesSeries extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $bannerImageUrl;
+        /**
+         * @var bool
+         */
+        public $eligibleForSubscription;
+        /**
+         * @var string
+         */
+        public $imageUrl;
+        /**
+         * @var bool
+         */
+        public $isComplete;
+        /**
+         * @var string
+         */
+        public $seriesFormatType;
+        /**
+         * @var string
+         */
+        public $seriesId;
+        protected $seriesSubscriptionReleaseInfoType = SeriesSeriesSeriesSubscriptionReleaseInfo::class;
+        protected $seriesSubscriptionReleaseInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $seriesType;
+        /**
+         * @var string
+         */
+        public $subscriptionId;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @param string $bannerImageUrl
+         */
+        public function setBannerImageUrl($bannerImageUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBannerImageUrl()
+        {
+        }
+        /**
+         * @param bool $eligibleForSubscription
+         */
+        public function setEligibleForSubscription($eligibleForSubscription)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEligibleForSubscription()
+        {
+        }
+        /**
+         * @param string $imageUrl
+         */
+        public function setImageUrl($imageUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUrl()
+        {
+        }
+        /**
+         * @param bool $isComplete
+         */
+        public function setIsComplete($isComplete)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsComplete()
+        {
+        }
+        /**
+         * @param string $seriesFormatType
+         */
+        public function setSeriesFormatType($seriesFormatType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSeriesFormatType()
+        {
+        }
+        /**
+         * @param string $seriesId
+         */
+        public function setSeriesId($seriesId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSeriesId()
+        {
+        }
+        /**
+         * @param SeriesSeriesSeriesSubscriptionReleaseInfo $seriesSubscriptionReleaseInfo
+         */
+        public function setSeriesSubscriptionReleaseInfo(SeriesSeriesSeriesSubscriptionReleaseInfo $seriesSubscriptionReleaseInfo)
+        {
+        }
+        /**
+         * @return SeriesSeriesSeriesSubscriptionReleaseInfo
+         */
+        public function getSeriesSubscriptionReleaseInfo()
+        {
+        }
+        /**
+         * @param string $seriesType
+         */
+        public function setSeriesType($seriesType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSeriesType()
+        {
+        }
+        /**
+         * @param string $subscriptionId
+         */
+        public function setSubscriptionId($subscriptionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubscriptionId()
+        {
+        }
+        /**
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\SeriesSeries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBannerImageUrl()
-    {
-    }
-    /**
-     * @param bool $eligibleForSubscription
-     */
-    public function setEligibleForSubscription($eligibleForSubscription)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEligibleForSubscription()
-    {
-    }
-    /**
-     * @param string $imageUrl
-     */
-    public function setImageUrl($imageUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUrl()
-    {
-    }
-    /**
-     * @param bool $isComplete
-     */
-    public function setIsComplete($isComplete)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsComplete()
-    {
-    }
-    /**
-     * @param string $seriesFormatType
-     */
-    public function setSeriesFormatType($seriesFormatType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSeriesFormatType()
-    {
-    }
-    /**
-     * @param string $seriesId
-     */
-    public function setSeriesId($seriesId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSeriesId()
-    {
-    }
-    /**
-     * @param SeriesSeriesSeriesSubscriptionReleaseInfo $seriesSubscriptionReleaseInfo
-     */
-    public function setSeriesSubscriptionReleaseInfo(SeriesSeriesSeriesSubscriptionReleaseInfo $seriesSubscriptionReleaseInfo)
-    {
-    }
-    /**
-     * @return SeriesSeriesSeriesSubscriptionReleaseInfo
-     */
-    public function getSeriesSubscriptionReleaseInfo()
-    {
-    }
-    /**
-     * @param string $seriesType
-     */
-    public function setSeriesType($seriesType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSeriesType()
-    {
-    }
-    /**
-     * @param string $subscriptionId
-     */
-    public function setSubscriptionId($subscriptionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubscriptionId()
-    {
-    }
-    /**
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Books_SeriesSeries extends \Google\Service\Books\SeriesSeries
     {
     }
 }

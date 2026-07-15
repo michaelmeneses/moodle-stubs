@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class ListInterceptDeploymentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $interceptDeploymentsType = InterceptDeployment::class;
-    protected $interceptDeploymentsDataType = 'array';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages. See
-     * https://google.aip.dev/158 for more details.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The deployments from the specified parent.
-     *
-     * @param InterceptDeployment[] $interceptDeployments
-     */
-    public function setInterceptDeployments($interceptDeployments)
+namespace Google\Service\NetworkSecurity {
+    class ListInterceptDeploymentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $interceptDeploymentsType = InterceptDeployment::class;
+        protected $interceptDeploymentsDataType = 'array';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages. See
+         * https://google.aip.dev/158 for more details.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The deployments from the specified parent.
+         *
+         * @param InterceptDeployment[] $interceptDeployments
+         */
+        public function setInterceptDeployments($interceptDeployments)
+        {
+        }
+        /**
+         * @return InterceptDeployment[]
+         */
+        public function getInterceptDeployments()
+        {
+        }
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages. See
+         * https://google.aip.dev/158 for more details.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InterceptDeployment[]
+     * Runtime class alias of \Google\Service\NetworkSecurity\ListInterceptDeploymentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInterceptDeployments()
-    {
-    }
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages. See
-     * https://google.aip.dev/158 for more details.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_NetworkSecurity_ListInterceptDeploymentsResponse extends \Google\Service\NetworkSecurity\ListInterceptDeploymentsResponse
     {
     }
 }

@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Genomics;
-
-class ServiceAccount extends \Google\Collection
-{
-    protected $collection_key = 'scopes';
-    /**
-     * @var string
-     */
-    public $email;
-    /**
-     * @var string[]
-     */
-    public $scopes;
-    /**
-     * @param string
-     */
-    public function setEmail($email)
+namespace Google\Service\Genomics {
+    class ServiceAccount extends \Google\Collection
     {
+        protected $collection_key = 'scopes';
+        /**
+         * @var string
+         */
+        public $email;
+        /**
+         * @var string[]
+         */
+        public $scopes;
+        /**
+         * @param string
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setScopes($scopes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScopes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Genomics\ServiceAccount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setScopes($scopes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getScopes()
+    class Google_Service_Genomics_ServiceAccount extends \Google\Service\Genomics\ServiceAccount
     {
     }
 }

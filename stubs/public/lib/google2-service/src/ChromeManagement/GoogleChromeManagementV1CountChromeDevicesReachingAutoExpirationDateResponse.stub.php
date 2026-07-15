@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1CountChromeDevicesReachingAutoExpirationDateResponse extends \Google\Collection
-{
-    protected $collection_key = 'deviceAueCountReports';
-    protected $deviceAueCountReportsType = GoogleChromeManagementV1DeviceAueCountReport::class;
-    protected $deviceAueCountReportsDataType = 'array';
-    /**
-     * The list of reports sorted by auto update expiration date in ascending
-     * order.
-     *
-     * @param GoogleChromeManagementV1DeviceAueCountReport[] $deviceAueCountReports
-     */
-    public function setDeviceAueCountReports($deviceAueCountReports)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1CountChromeDevicesReachingAutoExpirationDateResponse extends \Google\Collection
     {
+        protected $collection_key = 'deviceAueCountReports';
+        protected $deviceAueCountReportsType = GoogleChromeManagementV1DeviceAueCountReport::class;
+        protected $deviceAueCountReportsDataType = 'array';
+        /**
+         * The list of reports sorted by auto update expiration date in ascending
+         * order.
+         *
+         * @param GoogleChromeManagementV1DeviceAueCountReport[] $deviceAueCountReports
+         */
+        public function setDeviceAueCountReports($deviceAueCountReports)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1DeviceAueCountReport[]
+         */
+        public function getDeviceAueCountReports()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromeManagementV1DeviceAueCountReport[]
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1CountChromeDevicesReachingAutoExpirationDateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceAueCountReports()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1CountChromeDevicesReachingAutoExpirationDateResponse extends \Google\Service\ChromeManagement\GoogleChromeManagementV1CountChromeDevicesReachingAutoExpirationDateResponse
     {
     }
 }

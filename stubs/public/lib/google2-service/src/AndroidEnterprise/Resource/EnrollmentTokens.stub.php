@@ -21,31 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise\Resource;
-
-/**
- * The "enrollmentTokens" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidenterpriseService = new Google\Service\AndroidEnterprise(...);
- *   $enrollmentTokens = $androidenterpriseService->enrollmentTokens;
- *  </code>
- */
-class EnrollmentTokens extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidEnterprise\Resource {
+    use Google\Service\AndroidEnterprise\EnrollmentToken;
     /**
-     * Returns a token for device enrollment. The DPC can encode this token within
-     * the QR/NFC/zero-touch enrollment payload or fetch it before calling the on-
-     * device API to authenticate the user. The token can be generated for each
-     * device or reused across multiple devices. (enrollmentTokens.create)
-     *
-     * @param string $enterpriseId Required. The ID of the enterprise.
-     * @param EnrollmentToken $postBody
-     * @param array $optParams Optional parameters.
-     * @return EnrollmentToken
-     * @throws \Google\Service\Exception
+     * The "enrollmentTokens" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidenterpriseService = new Google\Service\AndroidEnterprise(...);
+     *   $enrollmentTokens = $androidenterpriseService->enrollmentTokens;
+     *  </code>
      */
-    public function create($enterpriseId, EnrollmentToken $postBody, $optParams = [])
+    class EnrollmentTokens extends \Google\Service\Resource
+    {
+        /**
+         * Returns a token for device enrollment. The DPC can encode this token within
+         * the QR/NFC/zero-touch enrollment payload or fetch it before calling the on-
+         * device API to authenticate the user. The token can be generated for each
+         * device or reused across multiple devices. (enrollmentTokens.create)
+         *
+         * @param string $enterpriseId Required. The ID of the enterprise.
+         * @param EnrollmentToken $postBody
+         * @param array $optParams Optional parameters.
+         * @return EnrollmentToken
+         * @throws \Google\Service\Exception
+         */
+        public function create($enterpriseId, EnrollmentToken $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AndroidEnterprise\Resource\EnrollmentTokens registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AndroidEnterprise_Resource_EnrollmentTokens extends \Google\Service\AndroidEnterprise\Resource\EnrollmentTokens
     {
     }
 }

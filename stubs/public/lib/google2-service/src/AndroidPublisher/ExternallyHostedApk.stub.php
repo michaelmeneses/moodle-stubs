@@ -21,309 +21,318 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ExternallyHostedApk extends \Google\Collection
-{
-    protected $collection_key = 'usesPermissions';
-    /**
-     * The application label.
-     *
-     * @var string
-     */
-    public $applicationLabel;
-    /**
-     * A certificate (or array of certificates if a certificate-chain is used)
-     * used to sign this APK, represented as a base64 encoded byte array.
-     *
-     * @var string[]
-     */
-    public $certificateBase64s;
-    /**
-     * The URL at which the APK is hosted. This must be an https URL.
-     *
-     * @var string
-     */
-    public $externallyHostedUrl;
-    /**
-     * The sha1 checksum of this APK, represented as a base64 encoded byte array.
-     *
-     * @var string
-     */
-    public $fileSha1Base64;
-    /**
-     * The sha256 checksum of this APK, represented as a base64 encoded byte
-     * array.
-     *
-     * @var string
-     */
-    public $fileSha256Base64;
-    /**
-     * The file size in bytes of this APK.
-     *
-     * @var string
-     */
-    public $fileSize;
-    /**
-     * The icon image from the APK, as a base64 encoded byte array.
-     *
-     * @var string
-     */
-    public $iconBase64;
-    /**
-     * The maximum SDK supported by this APK (optional).
-     *
-     * @var int
-     */
-    public $maximumSdk;
-    /**
-     * The minimum SDK targeted by this APK.
-     *
-     * @var int
-     */
-    public $minimumSdk;
-    /**
-     * The native code environments supported by this APK (optional).
-     *
-     * @var string[]
-     */
-    public $nativeCodes;
-    /**
-     * The package name.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * The features required by this APK (optional).
-     *
-     * @var string[]
-     */
-    public $usesFeatures;
-    protected $usesPermissionsType = UsesPermission::class;
-    protected $usesPermissionsDataType = 'array';
-    /**
-     * The version code of this APK.
-     *
-     * @var int
-     */
-    public $versionCode;
-    /**
-     * The version name of this APK.
-     *
-     * @var string
-     */
-    public $versionName;
-    /**
-     * The application label.
-     *
-     * @param string $applicationLabel
-     */
-    public function setApplicationLabel($applicationLabel)
+namespace Google\Service\AndroidPublisher {
+    class ExternallyHostedApk extends \Google\Collection
     {
+        protected $collection_key = 'usesPermissions';
+        /**
+         * The application label.
+         *
+         * @var string
+         */
+        public $applicationLabel;
+        /**
+         * A certificate (or array of certificates if a certificate-chain is used)
+         * used to sign this APK, represented as a base64 encoded byte array.
+         *
+         * @var string[]
+         */
+        public $certificateBase64s;
+        /**
+         * The URL at which the APK is hosted. This must be an https URL.
+         *
+         * @var string
+         */
+        public $externallyHostedUrl;
+        /**
+         * The sha1 checksum of this APK, represented as a base64 encoded byte array.
+         *
+         * @var string
+         */
+        public $fileSha1Base64;
+        /**
+         * The sha256 checksum of this APK, represented as a base64 encoded byte
+         * array.
+         *
+         * @var string
+         */
+        public $fileSha256Base64;
+        /**
+         * The file size in bytes of this APK.
+         *
+         * @var string
+         */
+        public $fileSize;
+        /**
+         * The icon image from the APK, as a base64 encoded byte array.
+         *
+         * @var string
+         */
+        public $iconBase64;
+        /**
+         * The maximum SDK supported by this APK (optional).
+         *
+         * @var int
+         */
+        public $maximumSdk;
+        /**
+         * The minimum SDK targeted by this APK.
+         *
+         * @var int
+         */
+        public $minimumSdk;
+        /**
+         * The native code environments supported by this APK (optional).
+         *
+         * @var string[]
+         */
+        public $nativeCodes;
+        /**
+         * The package name.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * The features required by this APK (optional).
+         *
+         * @var string[]
+         */
+        public $usesFeatures;
+        protected $usesPermissionsType = UsesPermission::class;
+        protected $usesPermissionsDataType = 'array';
+        /**
+         * The version code of this APK.
+         *
+         * @var int
+         */
+        public $versionCode;
+        /**
+         * The version name of this APK.
+         *
+         * @var string
+         */
+        public $versionName;
+        /**
+         * The application label.
+         *
+         * @param string $applicationLabel
+         */
+        public function setApplicationLabel($applicationLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicationLabel()
+        {
+        }
+        /**
+         * A certificate (or array of certificates if a certificate-chain is used)
+         * used to sign this APK, represented as a base64 encoded byte array.
+         *
+         * @param string[] $certificateBase64s
+         */
+        public function setCertificateBase64s($certificateBase64s)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCertificateBase64s()
+        {
+        }
+        /**
+         * The URL at which the APK is hosted. This must be an https URL.
+         *
+         * @param string $externallyHostedUrl
+         */
+        public function setExternallyHostedUrl($externallyHostedUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternallyHostedUrl()
+        {
+        }
+        /**
+         * The sha1 checksum of this APK, represented as a base64 encoded byte array.
+         *
+         * @param string $fileSha1Base64
+         */
+        public function setFileSha1Base64($fileSha1Base64)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileSha1Base64()
+        {
+        }
+        /**
+         * The sha256 checksum of this APK, represented as a base64 encoded byte
+         * array.
+         *
+         * @param string $fileSha256Base64
+         */
+        public function setFileSha256Base64($fileSha256Base64)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileSha256Base64()
+        {
+        }
+        /**
+         * The file size in bytes of this APK.
+         *
+         * @param string $fileSize
+         */
+        public function setFileSize($fileSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileSize()
+        {
+        }
+        /**
+         * The icon image from the APK, as a base64 encoded byte array.
+         *
+         * @param string $iconBase64
+         */
+        public function setIconBase64($iconBase64)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIconBase64()
+        {
+        }
+        /**
+         * The maximum SDK supported by this APK (optional).
+         *
+         * @param int $maximumSdk
+         */
+        public function setMaximumSdk($maximumSdk)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaximumSdk()
+        {
+        }
+        /**
+         * The minimum SDK targeted by this APK.
+         *
+         * @param int $minimumSdk
+         */
+        public function setMinimumSdk($minimumSdk)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinimumSdk()
+        {
+        }
+        /**
+         * The native code environments supported by this APK (optional).
+         *
+         * @param string[] $nativeCodes
+         */
+        public function setNativeCodes($nativeCodes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNativeCodes()
+        {
+        }
+        /**
+         * The package name.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
+        /**
+         * The features required by this APK (optional).
+         *
+         * @param string[] $usesFeatures
+         */
+        public function setUsesFeatures($usesFeatures)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUsesFeatures()
+        {
+        }
+        /**
+         * The permissions requested by this APK.
+         *
+         * @param UsesPermission[] $usesPermissions
+         */
+        public function setUsesPermissions($usesPermissions)
+        {
+        }
+        /**
+         * @return UsesPermission[]
+         */
+        public function getUsesPermissions()
+        {
+        }
+        /**
+         * The version code of this APK.
+         *
+         * @param int $versionCode
+         */
+        public function setVersionCode($versionCode)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVersionCode()
+        {
+        }
+        /**
+         * The version name of this APK.
+         *
+         * @param string $versionName
+         */
+        public function setVersionName($versionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\ExternallyHostedApk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicationLabel()
-    {
-    }
-    /**
-     * A certificate (or array of certificates if a certificate-chain is used)
-     * used to sign this APK, represented as a base64 encoded byte array.
-     *
-     * @param string[] $certificateBase64s
-     */
-    public function setCertificateBase64s($certificateBase64s)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCertificateBase64s()
-    {
-    }
-    /**
-     * The URL at which the APK is hosted. This must be an https URL.
-     *
-     * @param string $externallyHostedUrl
-     */
-    public function setExternallyHostedUrl($externallyHostedUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExternallyHostedUrl()
-    {
-    }
-    /**
-     * The sha1 checksum of this APK, represented as a base64 encoded byte array.
-     *
-     * @param string $fileSha1Base64
-     */
-    public function setFileSha1Base64($fileSha1Base64)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFileSha1Base64()
-    {
-    }
-    /**
-     * The sha256 checksum of this APK, represented as a base64 encoded byte
-     * array.
-     *
-     * @param string $fileSha256Base64
-     */
-    public function setFileSha256Base64($fileSha256Base64)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFileSha256Base64()
-    {
-    }
-    /**
-     * The file size in bytes of this APK.
-     *
-     * @param string $fileSize
-     */
-    public function setFileSize($fileSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFileSize()
-    {
-    }
-    /**
-     * The icon image from the APK, as a base64 encoded byte array.
-     *
-     * @param string $iconBase64
-     */
-    public function setIconBase64($iconBase64)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIconBase64()
-    {
-    }
-    /**
-     * The maximum SDK supported by this APK (optional).
-     *
-     * @param int $maximumSdk
-     */
-    public function setMaximumSdk($maximumSdk)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaximumSdk()
-    {
-    }
-    /**
-     * The minimum SDK targeted by this APK.
-     *
-     * @param int $minimumSdk
-     */
-    public function setMinimumSdk($minimumSdk)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinimumSdk()
-    {
-    }
-    /**
-     * The native code environments supported by this APK (optional).
-     *
-     * @param string[] $nativeCodes
-     */
-    public function setNativeCodes($nativeCodes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNativeCodes()
-    {
-    }
-    /**
-     * The package name.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
-    {
-    }
-    /**
-     * The features required by this APK (optional).
-     *
-     * @param string[] $usesFeatures
-     */
-    public function setUsesFeatures($usesFeatures)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUsesFeatures()
-    {
-    }
-    /**
-     * The permissions requested by this APK.
-     *
-     * @param UsesPermission[] $usesPermissions
-     */
-    public function setUsesPermissions($usesPermissions)
-    {
-    }
-    /**
-     * @return UsesPermission[]
-     */
-    public function getUsesPermissions()
-    {
-    }
-    /**
-     * The version code of this APK.
-     *
-     * @param int $versionCode
-     */
-    public function setVersionCode($versionCode)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVersionCode()
-    {
-    }
-    /**
-     * The version name of this APK.
-     *
-     * @param string $versionName
-     */
-    public function setVersionName($versionName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionName()
+    class Google_Service_AndroidPublisher_ExternallyHostedApk extends \Google\Service\AndroidPublisher\ExternallyHostedApk
     {
     }
 }

@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Publisher extends \Google\Model
-{
-    /**
-     * Provides information about the authority of the issuing party to release
-     * the document, in particular, the party's constituency and responsibilities
-     * or other obligations.
-     *
-     * @var string
-     */
-    public $issuingAuthority;
-    /**
-     * Name of the publisher. Examples: 'Google', 'Google Cloud Platform'.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The context or namespace. Contains a URL which is under control of the
-     * issuing party and can be used as a globally unique identifier for that
-     * issuing party. Example: https://csaf.io
-     *
-     * @var string
-     */
-    public $publisherNamespace;
-    /**
-     * Provides information about the authority of the issuing party to release
-     * the document, in particular, the party's constituency and responsibilities
-     * or other obligations.
-     *
-     * @param string $issuingAuthority
-     */
-    public function setIssuingAuthority($issuingAuthority)
+namespace Google\Service\ContainerAnalysis {
+    class Publisher extends \Google\Model
     {
+        /**
+         * Provides information about the authority of the issuing party to release
+         * the document, in particular, the party's constituency and responsibilities
+         * or other obligations.
+         *
+         * @var string
+         */
+        public $issuingAuthority;
+        /**
+         * Name of the publisher. Examples: 'Google', 'Google Cloud Platform'.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The context or namespace. Contains a URL which is under control of the
+         * issuing party and can be used as a globally unique identifier for that
+         * issuing party. Example: https://csaf.io
+         *
+         * @var string
+         */
+        public $publisherNamespace;
+        /**
+         * Provides information about the authority of the issuing party to release
+         * the document, in particular, the party's constituency and responsibilities
+         * or other obligations.
+         *
+         * @param string $issuingAuthority
+         */
+        public function setIssuingAuthority($issuingAuthority)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssuingAuthority()
+        {
+        }
+        /**
+         * Name of the publisher. Examples: 'Google', 'Google Cloud Platform'.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The context or namespace. Contains a URL which is under control of the
+         * issuing party and can be used as a globally unique identifier for that
+         * issuing party. Example: https://csaf.io
+         *
+         * @param string $publisherNamespace
+         */
+        public function setPublisherNamespace($publisherNamespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublisherNamespace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Publisher registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIssuingAuthority()
-    {
-    }
-    /**
-     * Name of the publisher. Examples: 'Google', 'Google Cloud Platform'.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The context or namespace. Contains a URL which is under control of the
-     * issuing party and can be used as a globally unique identifier for that
-     * issuing party. Example: https://csaf.io
-     *
-     * @param string $publisherNamespace
-     */
-    public function setPublisherNamespace($publisherNamespace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublisherNamespace()
+    class Google_Service_ContainerAnalysis_Publisher extends \Google\Service\ContainerAnalysis\Publisher
     {
     }
 }

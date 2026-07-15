@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class ResolveConnectionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $connectionDetailsType = ConnectionDetails::class;
-    protected $connectionDetailsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * @param ConnectionDetails[]
-     */
-    public function setConnectionDetails($connectionDetails)
+namespace Google\Service\BeyondCorp {
+    class ResolveConnectionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $connectionDetailsType = ConnectionDetails::class;
+        protected $connectionDetailsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * @param ConnectionDetails[]
+         */
+        public function setConnectionDetails($connectionDetails)
+        {
+        }
+        /**
+         * @return ConnectionDetails[]
+         */
+        public function getConnectionDetails()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConnectionDetails[]
+     * Runtime class alias of \Google\Service\BeyondCorp\ResolveConnectionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectionDetails()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_BeyondCorp_ResolveConnectionsResponse extends \Google\Service\BeyondCorp\ResolveConnectionsResponse
     {
     }
 }

@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GenerateSyntheticDataRequest extends \Google\Collection
-{
-    protected $collection_key = 'outputFieldSpecs';
-    /**
-     * Required. The number of synthetic examples to generate. For this stateless
-     * API, the count is limited to a small number.
-     *
-     * @var int
-     */
-    public $count;
-    protected $examplesType = GoogleCloudAiplatformV1SyntheticExample::class;
-    protected $examplesDataType = 'array';
-    protected $outputFieldSpecsType = GoogleCloudAiplatformV1OutputFieldSpec::class;
-    protected $outputFieldSpecsDataType = 'array';
-    protected $taskDescriptionType = GoogleCloudAiplatformV1TaskDescriptionStrategy::class;
-    protected $taskDescriptionDataType = '';
-    /**
-     * Required. The number of synthetic examples to generate. For this stateless
-     * API, the count is limited to a small number.
-     *
-     * @param int $count
-     */
-    public function setCount($count)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GenerateSyntheticDataRequest extends \Google\Collection
     {
+        protected $collection_key = 'outputFieldSpecs';
+        /**
+         * Required. The number of synthetic examples to generate. For this stateless
+         * API, the count is limited to a small number.
+         *
+         * @var int
+         */
+        public $count;
+        protected $examplesType = GoogleCloudAiplatformV1SyntheticExample::class;
+        protected $examplesDataType = 'array';
+        protected $outputFieldSpecsType = GoogleCloudAiplatformV1OutputFieldSpec::class;
+        protected $outputFieldSpecsDataType = 'array';
+        protected $taskDescriptionType = GoogleCloudAiplatformV1TaskDescriptionStrategy::class;
+        protected $taskDescriptionDataType = '';
+        /**
+         * Required. The number of synthetic examples to generate. For this stateless
+         * API, the count is limited to a small number.
+         *
+         * @param int $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * Optional. A list of few-shot examples to guide the model's output style and
+         * format.
+         *
+         * @param GoogleCloudAiplatformV1SyntheticExample[] $examples
+         */
+        public function setExamples($examples)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SyntheticExample[]
+         */
+        public function getExamples()
+        {
+        }
+        /**
+         * Required. The schema of the desired output, defined by a list of fields.
+         *
+         * @param GoogleCloudAiplatformV1OutputFieldSpec[] $outputFieldSpecs
+         */
+        public function setOutputFieldSpecs($outputFieldSpecs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1OutputFieldSpec[]
+         */
+        public function getOutputFieldSpecs()
+        {
+        }
+        /**
+         * Generate data from a high-level task description.
+         *
+         * @param GoogleCloudAiplatformV1TaskDescriptionStrategy $taskDescription
+         */
+        public function setTaskDescription(GoogleCloudAiplatformV1TaskDescriptionStrategy $taskDescription)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TaskDescriptionStrategy
+         */
+        public function getTaskDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateSyntheticDataRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * Optional. A list of few-shot examples to guide the model's output style and
-     * format.
-     *
-     * @param GoogleCloudAiplatformV1SyntheticExample[] $examples
-     */
-    public function setExamples($examples)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SyntheticExample[]
-     */
-    public function getExamples()
-    {
-    }
-    /**
-     * Required. The schema of the desired output, defined by a list of fields.
-     *
-     * @param GoogleCloudAiplatformV1OutputFieldSpec[] $outputFieldSpecs
-     */
-    public function setOutputFieldSpecs($outputFieldSpecs)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1OutputFieldSpec[]
-     */
-    public function getOutputFieldSpecs()
-    {
-    }
-    /**
-     * Generate data from a high-level task description.
-     *
-     * @param GoogleCloudAiplatformV1TaskDescriptionStrategy $taskDescription
-     */
-    public function setTaskDescription(GoogleCloudAiplatformV1TaskDescriptionStrategy $taskDescription)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1TaskDescriptionStrategy
-     */
-    public function getTaskDescription()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GenerateSyntheticDataRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateSyntheticDataRequest
     {
     }
 }

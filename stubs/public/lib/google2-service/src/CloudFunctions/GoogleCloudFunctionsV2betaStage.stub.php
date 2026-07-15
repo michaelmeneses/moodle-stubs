@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFunctions;
-
-class GoogleCloudFunctionsV2betaStage extends \Google\Collection
-{
-    protected $collection_key = 'stateMessages';
-    /**
-     * @var string
-     */
-    public $message;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $resource;
-    /**
-     * @var string
-     */
-    public $resourceUri;
-    /**
-     * @var string
-     */
-    public $state;
-    protected $stateMessagesType = GoogleCloudFunctionsV2betaStateMessage::class;
-    protected $stateMessagesDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setMessage($message)
+namespace Google\Service\CloudFunctions {
+    class GoogleCloudFunctionsV2betaStage extends \Google\Collection
     {
+        protected $collection_key = 'stateMessages';
+        /**
+         * @var string
+         */
+        public $message;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $resource;
+        /**
+         * @var string
+         */
+        public $resourceUri;
+        /**
+         * @var string
+         */
+        public $state;
+        protected $stateMessagesType = GoogleCloudFunctionsV2betaStateMessage::class;
+        protected $stateMessagesDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResource()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResourceUri($resourceUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceUri()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param GoogleCloudFunctionsV2betaStateMessage[]
+         */
+        public function setStateMessages($stateMessages)
+        {
+        }
+        /**
+         * @return GoogleCloudFunctionsV2betaStateMessage[]
+         */
+        public function getStateMessages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudFunctions\GoogleCloudFunctionsV2betaStage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResource($resource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResource()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResourceUri($resourceUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceUri()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param GoogleCloudFunctionsV2betaStateMessage[]
-     */
-    public function setStateMessages($stateMessages)
-    {
-    }
-    /**
-     * @return GoogleCloudFunctionsV2betaStateMessage[]
-     */
-    public function getStateMessages()
+    class Google_Service_CloudFunctions_GoogleCloudFunctionsV2betaStage extends \Google\Service\CloudFunctions\GoogleCloudFunctionsV2betaStage
     {
     }
 }

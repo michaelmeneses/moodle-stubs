@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ChannelSectionTargeting extends \Google\Collection
-{
-    protected $collection_key = 'regions';
-    /**
-     * The country the channel section is targeting.
-     *
-     * @deprecated
-     * @var string[]
-     */
-    public $countries;
-    /**
-     * The language the channel section is targeting.
-     *
-     * @deprecated
-     * @var string[]
-     */
-    public $languages;
-    /**
-     * The region the channel section is targeting.
-     *
-     * @deprecated
-     * @var string[]
-     */
-    public $regions;
-    /**
-     * The country the channel section is targeting.
-     *
-     * @deprecated
-     * @param string[] $countries
-     */
-    public function setCountries($countries)
+namespace Google\Service\YouTube {
+    class ChannelSectionTargeting extends \Google\Collection
     {
+        protected $collection_key = 'regions';
+        /**
+         * The country the channel section is targeting.
+         *
+         * @deprecated
+         * @var string[]
+         */
+        public $countries;
+        /**
+         * The language the channel section is targeting.
+         *
+         * @deprecated
+         * @var string[]
+         */
+        public $languages;
+        /**
+         * The region the channel section is targeting.
+         *
+         * @deprecated
+         * @var string[]
+         */
+        public $regions;
+        /**
+         * The country the channel section is targeting.
+         *
+         * @deprecated
+         * @param string[] $countries
+         */
+        public function setCountries($countries)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string[]
+         */
+        public function getCountries()
+        {
+        }
+        /**
+         * The language the channel section is targeting.
+         *
+         * @deprecated
+         * @param string[] $languages
+         */
+        public function setLanguages($languages)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string[]
+         */
+        public function getLanguages()
+        {
+        }
+        /**
+         * The region the channel section is targeting.
+         *
+         * @deprecated
+         * @param string[] $regions
+         */
+        public function setRegions($regions)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string[]
+         */
+        public function getRegions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string[]
+     * Runtime class alias of \Google\Service\YouTube\ChannelSectionTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountries()
-    {
-    }
-    /**
-     * The language the channel section is targeting.
-     *
-     * @deprecated
-     * @param string[] $languages
-     */
-    public function setLanguages($languages)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string[]
-     */
-    public function getLanguages()
-    {
-    }
-    /**
-     * The region the channel section is targeting.
-     *
-     * @deprecated
-     * @param string[] $regions
-     */
-    public function setRegions($regions)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string[]
-     */
-    public function getRegions()
+    class Google_Service_YouTube_ChannelSectionTargeting extends \Google\Service\YouTube\ChannelSectionTargeting
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class BigQueryModelTraining extends \Google\Model
-{
-    /**
-     * Deprecated.
-     *
-     * @var int
-     */
-    public $currentIteration;
-    /**
-     * Deprecated.
-     *
-     * @var string
-     */
-    public $expectedTotalIterations;
-    /**
-     * Deprecated.
-     *
-     * @param int $currentIteration
-     */
-    public function setCurrentIteration($currentIteration)
+namespace Google\Service\Bigquery {
+    class BigQueryModelTraining extends \Google\Model
     {
+        /**
+         * Deprecated.
+         *
+         * @var int
+         */
+        public $currentIteration;
+        /**
+         * Deprecated.
+         *
+         * @var string
+         */
+        public $expectedTotalIterations;
+        /**
+         * Deprecated.
+         *
+         * @param int $currentIteration
+         */
+        public function setCurrentIteration($currentIteration)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCurrentIteration()
+        {
+        }
+        /**
+         * Deprecated.
+         *
+         * @param string $expectedTotalIterations
+         */
+        public function setExpectedTotalIterations($expectedTotalIterations)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpectedTotalIterations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Bigquery\BigQueryModelTraining registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentIteration()
-    {
-    }
-    /**
-     * Deprecated.
-     *
-     * @param string $expectedTotalIterations
-     */
-    public function setExpectedTotalIterations($expectedTotalIterations)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpectedTotalIterations()
+    class Google_Service_Bigquery_BigQueryModelTraining extends \Google\Service\Bigquery\BigQueryModelTraining
     {
     }
 }

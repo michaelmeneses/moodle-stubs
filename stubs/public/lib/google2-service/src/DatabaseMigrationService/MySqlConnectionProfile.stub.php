@@ -21,156 +21,165 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class MySqlConnectionProfile extends \Google\Model
-{
-    /**
-     * If the source is a Cloud SQL database, use this field to provide the Cloud
-     * SQL instance ID of the source.
-     *
-     * @var string
-     */
-    public $cloudSqlId;
-    /**
-     * Required. The IP or hostname of the source MySQL database.
-     *
-     * @var string
-     */
-    public $host;
-    /**
-     * Required. Input only. The password for the user that Database Migration
-     * Service will be using to connect to the database. This field is not
-     * returned on request, and the value is encrypted when stored in Database
-     * Migration Service.
-     *
-     * @var string
-     */
-    public $password;
-    /**
-     * Output only. Indicates If this connection profile password is stored.
-     *
-     * @var bool
-     */
-    public $passwordSet;
-    /**
-     * Required. The network port of the source MySQL database.
-     *
-     * @var int
-     */
-    public $port;
-    protected $sslType = SslConfig::class;
-    protected $sslDataType = '';
-    /**
-     * Required. The username that Database Migration Service will use to connect
-     * to the database. The value is encrypted when stored in Database Migration
-     * Service.
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * If the source is a Cloud SQL database, use this field to provide the Cloud
-     * SQL instance ID of the source.
-     *
-     * @param string $cloudSqlId
-     */
-    public function setCloudSqlId($cloudSqlId)
+namespace Google\Service\DatabaseMigrationService {
+    class MySqlConnectionProfile extends \Google\Model
     {
+        /**
+         * If the source is a Cloud SQL database, use this field to provide the Cloud
+         * SQL instance ID of the source.
+         *
+         * @var string
+         */
+        public $cloudSqlId;
+        /**
+         * Required. The IP or hostname of the source MySQL database.
+         *
+         * @var string
+         */
+        public $host;
+        /**
+         * Required. Input only. The password for the user that Database Migration
+         * Service will be using to connect to the database. This field is not
+         * returned on request, and the value is encrypted when stored in Database
+         * Migration Service.
+         *
+         * @var string
+         */
+        public $password;
+        /**
+         * Output only. Indicates If this connection profile password is stored.
+         *
+         * @var bool
+         */
+        public $passwordSet;
+        /**
+         * Required. The network port of the source MySQL database.
+         *
+         * @var int
+         */
+        public $port;
+        protected $sslType = SslConfig::class;
+        protected $sslDataType = '';
+        /**
+         * Required. The username that Database Migration Service will use to connect
+         * to the database. The value is encrypted when stored in Database Migration
+         * Service.
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * If the source is a Cloud SQL database, use this field to provide the Cloud
+         * SQL instance ID of the source.
+         *
+         * @param string $cloudSqlId
+         */
+        public function setCloudSqlId($cloudSqlId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCloudSqlId()
+        {
+        }
+        /**
+         * Required. The IP or hostname of the source MySQL database.
+         *
+         * @param string $host
+         */
+        public function setHost($host)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHost()
+        {
+        }
+        /**
+         * Required. Input only. The password for the user that Database Migration
+         * Service will be using to connect to the database. This field is not
+         * returned on request, and the value is encrypted when stored in Database
+         * Migration Service.
+         *
+         * @param string $password
+         */
+        public function setPassword($password)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * Output only. Indicates If this connection profile password is stored.
+         *
+         * @param bool $passwordSet
+         */
+        public function setPasswordSet($passwordSet)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPasswordSet()
+        {
+        }
+        /**
+         * Required. The network port of the source MySQL database.
+         *
+         * @param int $port
+         */
+        public function setPort($port)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPort()
+        {
+        }
+        /**
+         * SSL configuration for the destination to connect to the source database.
+         *
+         * @param SslConfig $ssl
+         */
+        public function setSsl(SslConfig $ssl)
+        {
+        }
+        /**
+         * @return SslConfig
+         */
+        public function getSsl()
+        {
+        }
+        /**
+         * Required. The username that Database Migration Service will use to connect
+         * to the database. The value is encrypted when stored in Database Migration
+         * Service.
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\MySqlConnectionProfile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudSqlId()
-    {
-    }
-    /**
-     * Required. The IP or hostname of the source MySQL database.
-     *
-     * @param string $host
-     */
-    public function setHost($host)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHost()
-    {
-    }
-    /**
-     * Required. Input only. The password for the user that Database Migration
-     * Service will be using to connect to the database. This field is not
-     * returned on request, and the value is encrypted when stored in Database
-     * Migration Service.
-     *
-     * @param string $password
-     */
-    public function setPassword($password)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPassword()
-    {
-    }
-    /**
-     * Output only. Indicates If this connection profile password is stored.
-     *
-     * @param bool $passwordSet
-     */
-    public function setPasswordSet($passwordSet)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPasswordSet()
-    {
-    }
-    /**
-     * Required. The network port of the source MySQL database.
-     *
-     * @param int $port
-     */
-    public function setPort($port)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPort()
-    {
-    }
-    /**
-     * SSL configuration for the destination to connect to the source database.
-     *
-     * @param SslConfig $ssl
-     */
-    public function setSsl(SslConfig $ssl)
-    {
-    }
-    /**
-     * @return SslConfig
-     */
-    public function getSsl()
-    {
-    }
-    /**
-     * Required. The username that Database Migration Service will use to connect
-     * to the database. The value is encrypted when stored in Database Migration
-     * Service.
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_DatabaseMigrationService_MySqlConnectionProfile extends \Google\Service\DatabaseMigrationService\MySqlConnectionProfile
     {
     }
 }

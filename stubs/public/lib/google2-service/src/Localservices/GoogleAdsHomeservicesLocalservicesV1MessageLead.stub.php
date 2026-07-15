@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Localservices;
-
-class GoogleAdsHomeservicesLocalservicesV1MessageLead extends \Google\Model
-{
-    /**
-     * Consumer phone number associated with the message lead.
-     *
-     * @var string
-     */
-    public $consumerPhoneNumber;
-    /**
-     * Name of the customer who created the lead.
-     *
-     * @var string
-     */
-    public $customerName;
-    /**
-     * The job type of the specified lead.
-     *
-     * @var string
-     */
-    public $jobType;
-    /**
-     * The postal code of the customer who created the lead.
-     *
-     * @var string
-     */
-    public $postalCode;
-    /**
-     * Consumer phone number associated with the message lead.
-     *
-     * @param string $consumerPhoneNumber
-     */
-    public function setConsumerPhoneNumber($consumerPhoneNumber)
+namespace Google\Service\Localservices {
+    class GoogleAdsHomeservicesLocalservicesV1MessageLead extends \Google\Model
     {
+        /**
+         * Consumer phone number associated with the message lead.
+         *
+         * @var string
+         */
+        public $consumerPhoneNumber;
+        /**
+         * Name of the customer who created the lead.
+         *
+         * @var string
+         */
+        public $customerName;
+        /**
+         * The job type of the specified lead.
+         *
+         * @var string
+         */
+        public $jobType;
+        /**
+         * The postal code of the customer who created the lead.
+         *
+         * @var string
+         */
+        public $postalCode;
+        /**
+         * Consumer phone number associated with the message lead.
+         *
+         * @param string $consumerPhoneNumber
+         */
+        public function setConsumerPhoneNumber($consumerPhoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsumerPhoneNumber()
+        {
+        }
+        /**
+         * Name of the customer who created the lead.
+         *
+         * @param string $customerName
+         */
+        public function setCustomerName($customerName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomerName()
+        {
+        }
+        /**
+         * The job type of the specified lead.
+         *
+         * @param string $jobType
+         */
+        public function setJobType($jobType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobType()
+        {
+        }
+        /**
+         * The postal code of the customer who created the lead.
+         *
+         * @param string $postalCode
+         */
+        public function setPostalCode($postalCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostalCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Localservices\GoogleAdsHomeservicesLocalservicesV1MessageLead registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsumerPhoneNumber()
-    {
-    }
-    /**
-     * Name of the customer who created the lead.
-     *
-     * @param string $customerName
-     */
-    public function setCustomerName($customerName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomerName()
-    {
-    }
-    /**
-     * The job type of the specified lead.
-     *
-     * @param string $jobType
-     */
-    public function setJobType($jobType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJobType()
-    {
-    }
-    /**
-     * The postal code of the customer who created the lead.
-     *
-     * @param string $postalCode
-     */
-    public function setPostalCode($postalCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPostalCode()
+    class Google_Service_Localservices_GoogleAdsHomeservicesLocalservicesV1MessageLead extends \Google\Service\Localservices\GoogleAdsHomeservicesLocalservicesV1MessageLead
     {
     }
 }

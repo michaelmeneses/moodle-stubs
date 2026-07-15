@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS;
-
-class ListEkmConnectionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'ekmConnections';
-    protected $ekmConnectionsType = EkmConnection::class;
-    protected $ekmConnectionsDataType = 'array';
-    /**
-     * A token to retrieve next page of results. Pass this value in
-     * ListEkmConnectionsRequest.page_token to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The total number of EkmConnections that matched the query. This field is
-     * not populated if ListEkmConnectionsRequest.filter is applied.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * The list of EkmConnections.
-     *
-     * @param EkmConnection[] $ekmConnections
-     */
-    public function setEkmConnections($ekmConnections)
+namespace Google\Service\CloudKMS {
+    class ListEkmConnectionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'ekmConnections';
+        protected $ekmConnectionsType = EkmConnection::class;
+        protected $ekmConnectionsDataType = 'array';
+        /**
+         * A token to retrieve next page of results. Pass this value in
+         * ListEkmConnectionsRequest.page_token to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The total number of EkmConnections that matched the query. This field is
+         * not populated if ListEkmConnectionsRequest.filter is applied.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * The list of EkmConnections.
+         *
+         * @param EkmConnection[] $ekmConnections
+         */
+        public function setEkmConnections($ekmConnections)
+        {
+        }
+        /**
+         * @return EkmConnection[]
+         */
+        public function getEkmConnections()
+        {
+        }
+        /**
+         * A token to retrieve next page of results. Pass this value in
+         * ListEkmConnectionsRequest.page_token to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The total number of EkmConnections that matched the query. This field is
+         * not populated if ListEkmConnectionsRequest.filter is applied.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EkmConnection[]
+     * Runtime class alias of \Google\Service\CloudKMS\ListEkmConnectionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEkmConnections()
-    {
-    }
-    /**
-     * A token to retrieve next page of results. Pass this value in
-     * ListEkmConnectionsRequest.page_token to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The total number of EkmConnections that matched the query. This field is
-     * not populated if ListEkmConnectionsRequest.filter is applied.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_CloudKMS_ListEkmConnectionsResponse extends \Google\Service\CloudKMS\ListEkmConnectionsResponse
     {
     }
 }

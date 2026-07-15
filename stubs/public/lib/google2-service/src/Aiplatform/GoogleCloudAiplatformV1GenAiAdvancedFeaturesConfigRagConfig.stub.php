@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GenAiAdvancedFeaturesConfigRagConfig extends \Google\Model
-{
-    /**
-     * If true, enable Retrieval Augmented Generation in ChatCompletion request.
-     * Once enabled, the endpoint will be identified as GenAI endpoint and
-     * Arthedain router will be used.
-     *
-     * @var bool
-     */
-    public $enableRag;
-    /**
-     * If true, enable Retrieval Augmented Generation in ChatCompletion request.
-     * Once enabled, the endpoint will be identified as GenAI endpoint and
-     * Arthedain router will be used.
-     *
-     * @param bool $enableRag
-     */
-    public function setEnableRag($enableRag)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GenAiAdvancedFeaturesConfigRagConfig extends \Google\Model
     {
+        /**
+         * If true, enable Retrieval Augmented Generation in ChatCompletion request.
+         * Once enabled, the endpoint will be identified as GenAI endpoint and
+         * Arthedain router will be used.
+         *
+         * @var bool
+         */
+        public $enableRag;
+        /**
+         * If true, enable Retrieval Augmented Generation in ChatCompletion request.
+         * Once enabled, the endpoint will be identified as GenAI endpoint and
+         * Arthedain router will be used.
+         *
+         * @param bool $enableRag
+         */
+        public function setEnableRag($enableRag)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableRag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenAiAdvancedFeaturesConfigRagConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableRag()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GenAiAdvancedFeaturesConfigRagConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenAiAdvancedFeaturesConfigRagConfig
     {
     }
 }

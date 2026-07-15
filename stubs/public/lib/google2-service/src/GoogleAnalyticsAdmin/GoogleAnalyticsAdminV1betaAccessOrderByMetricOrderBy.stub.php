@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaAccessOrderByMetricOrderBy extends \Google\Model
-{
-    /**
-     * A metric name in the request to order by.
-     *
-     * @var string
-     */
-    public $metricName;
-    /**
-     * A metric name in the request to order by.
-     *
-     * @param string $metricName
-     */
-    public function setMetricName($metricName)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaAccessOrderByMetricOrderBy extends \Google\Model
     {
+        /**
+         * A metric name in the request to order by.
+         *
+         * @var string
+         */
+        public $metricName;
+        /**
+         * A metric name in the request to order by.
+         *
+         * @param string $metricName
+         */
+        public function setMetricName($metricName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetricName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccessOrderByMetricOrderBy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetricName()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaAccessOrderByMetricOrderBy extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccessOrderByMetricOrderBy
     {
     }
 }

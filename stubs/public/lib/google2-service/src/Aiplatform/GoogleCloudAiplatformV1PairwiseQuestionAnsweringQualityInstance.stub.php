@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityInstance extends \Google\Model
-{
-    /**
-     * Required. Output of the baseline model.
-     *
-     * @var string
-     */
-    public $baselinePrediction;
-    /**
-     * Required. Text to answer the question.
-     *
-     * @var string
-     */
-    public $context;
-    /**
-     * Required. Question Answering prompt for LLM.
-     *
-     * @var string
-     */
-    public $instruction;
-    /**
-     * Required. Output of the candidate model.
-     *
-     * @var string
-     */
-    public $prediction;
-    /**
-     * Optional. Ground truth used to compare against the prediction.
-     *
-     * @var string
-     */
-    public $reference;
-    /**
-     * Required. Output of the baseline model.
-     *
-     * @param string $baselinePrediction
-     */
-    public function setBaselinePrediction($baselinePrediction)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityInstance extends \Google\Model
     {
+        /**
+         * Required. Output of the baseline model.
+         *
+         * @var string
+         */
+        public $baselinePrediction;
+        /**
+         * Required. Text to answer the question.
+         *
+         * @var string
+         */
+        public $context;
+        /**
+         * Required. Question Answering prompt for LLM.
+         *
+         * @var string
+         */
+        public $instruction;
+        /**
+         * Required. Output of the candidate model.
+         *
+         * @var string
+         */
+        public $prediction;
+        /**
+         * Optional. Ground truth used to compare against the prediction.
+         *
+         * @var string
+         */
+        public $reference;
+        /**
+         * Required. Output of the baseline model.
+         *
+         * @param string $baselinePrediction
+         */
+        public function setBaselinePrediction($baselinePrediction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBaselinePrediction()
+        {
+        }
+        /**
+         * Required. Text to answer the question.
+         *
+         * @param string $context
+         */
+        public function setContext($context)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContext()
+        {
+        }
+        /**
+         * Required. Question Answering prompt for LLM.
+         *
+         * @param string $instruction
+         */
+        public function setInstruction($instruction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstruction()
+        {
+        }
+        /**
+         * Required. Output of the candidate model.
+         *
+         * @param string $prediction
+         */
+        public function setPrediction($prediction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrediction()
+        {
+        }
+        /**
+         * Optional. Ground truth used to compare against the prediction.
+         *
+         * @param string $reference
+         */
+        public function setReference($reference)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReference()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityInstance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBaselinePrediction()
-    {
-    }
-    /**
-     * Required. Text to answer the question.
-     *
-     * @param string $context
-     */
-    public function setContext($context)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContext()
-    {
-    }
-    /**
-     * Required. Question Answering prompt for LLM.
-     *
-     * @param string $instruction
-     */
-    public function setInstruction($instruction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstruction()
-    {
-    }
-    /**
-     * Required. Output of the candidate model.
-     *
-     * @param string $prediction
-     */
-    public function setPrediction($prediction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrediction()
-    {
-    }
-    /**
-     * Optional. Ground truth used to compare against the prediction.
-     *
-     * @param string $reference
-     */
-    public function setReference($reference)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReference()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityInstance extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityInstance
     {
     }
 }

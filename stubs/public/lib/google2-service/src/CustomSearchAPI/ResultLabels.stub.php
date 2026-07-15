@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CustomSearchAPI;
-
-class ResultLabels extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["labelWithOp" => "label_with_op"];
-    /**
-     * The display name of a refinement label. This is the name you should display
-     * in your user interface.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Refinement label and the associated refinement operation.
-     *
-     * @var string
-     */
-    public $labelWithOp;
-    /**
-     * The name of a refinement label, which you can use to refine searches. Don't
-     * display this in your user interface; instead, use displayName.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The display name of a refinement label. This is the name you should display
-     * in your user interface.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\CustomSearchAPI {
+    class ResultLabels extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["labelWithOp" => "label_with_op"];
+        /**
+         * The display name of a refinement label. This is the name you should display
+         * in your user interface.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Refinement label and the associated refinement operation.
+         *
+         * @var string
+         */
+        public $labelWithOp;
+        /**
+         * The name of a refinement label, which you can use to refine searches. Don't
+         * display this in your user interface; instead, use displayName.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The display name of a refinement label. This is the name you should display
+         * in your user interface.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Refinement label and the associated refinement operation.
+         *
+         * @param string $labelWithOp
+         */
+        public function setLabelWithOp($labelWithOp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabelWithOp()
+        {
+        }
+        /**
+         * The name of a refinement label, which you can use to refine searches. Don't
+         * display this in your user interface; instead, use displayName.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CustomSearchAPI\ResultLabels registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Refinement label and the associated refinement operation.
-     *
-     * @param string $labelWithOp
-     */
-    public function setLabelWithOp($labelWithOp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabelWithOp()
-    {
-    }
-    /**
-     * The name of a refinement label, which you can use to refine searches. Don't
-     * display this in your user interface; instead, use displayName.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CustomSearchAPI_ResultLabels extends \Google\Service\CustomSearchAPI\ResultLabels
     {
     }
 }

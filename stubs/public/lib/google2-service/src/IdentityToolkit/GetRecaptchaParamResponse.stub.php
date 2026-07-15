@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class GetRecaptchaParamResponse extends \Google\Model
-{
-    /**
-     * The fixed string "identitytoolkit#GetRecaptchaParamResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Site key registered at recaptcha.
-     *
-     * @var string
-     */
-    public $recaptchaSiteKey;
-    /**
-     * The stoken field for the recaptcha widget, used to request captcha
-     * challenge.
-     *
-     * @var string
-     */
-    public $recaptchaStoken;
-    /**
-     * The fixed string "identitytoolkit#GetRecaptchaParamResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\IdentityToolkit {
+    class GetRecaptchaParamResponse extends \Google\Model
     {
+        /**
+         * The fixed string "identitytoolkit#GetRecaptchaParamResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Site key registered at recaptcha.
+         *
+         * @var string
+         */
+        public $recaptchaSiteKey;
+        /**
+         * The stoken field for the recaptcha widget, used to request captcha
+         * challenge.
+         *
+         * @var string
+         */
+        public $recaptchaStoken;
+        /**
+         * The fixed string "identitytoolkit#GetRecaptchaParamResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Site key registered at recaptcha.
+         *
+         * @param string $recaptchaSiteKey
+         */
+        public function setRecaptchaSiteKey($recaptchaSiteKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecaptchaSiteKey()
+        {
+        }
+        /**
+         * The stoken field for the recaptcha widget, used to request captcha
+         * challenge.
+         *
+         * @param string $recaptchaStoken
+         */
+        public function setRecaptchaStoken($recaptchaStoken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecaptchaStoken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\GetRecaptchaParamResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Site key registered at recaptcha.
-     *
-     * @param string $recaptchaSiteKey
-     */
-    public function setRecaptchaSiteKey($recaptchaSiteKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecaptchaSiteKey()
-    {
-    }
-    /**
-     * The stoken field for the recaptcha widget, used to request captcha
-     * challenge.
-     *
-     * @param string $recaptchaStoken
-     */
-    public function setRecaptchaStoken($recaptchaStoken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecaptchaStoken()
+    class Google_Service_IdentityToolkit_GetRecaptchaParamResponse extends \Google\Service\IdentityToolkit\GetRecaptchaParamResponse
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ProbeGrpcAction extends \Google\Model
-{
-    /**
-     * Port number of the gRPC service. Number must be in the range 1 to 65535.
-     *
-     * @var int
-     */
-    public $port;
-    /**
-     * Service is the name of the service to place in the gRPC HealthCheckRequest.
-     * See https://github.com/grpc/grpc/blob/master/doc/health-checking.md. If
-     * this is not specified, the default behavior is defined by gRPC.
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * Port number of the gRPC service. Number must be in the range 1 to 65535.
-     *
-     * @param int $port
-     */
-    public function setPort($port)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ProbeGrpcAction extends \Google\Model
     {
+        /**
+         * Port number of the gRPC service. Number must be in the range 1 to 65535.
+         *
+         * @var int
+         */
+        public $port;
+        /**
+         * Service is the name of the service to place in the gRPC HealthCheckRequest.
+         * See https://github.com/grpc/grpc/blob/master/doc/health-checking.md. If
+         * this is not specified, the default behavior is defined by gRPC.
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * Port number of the gRPC service. Number must be in the range 1 to 65535.
+         *
+         * @param int $port
+         */
+        public function setPort($port)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPort()
+        {
+        }
+        /**
+         * Service is the name of the service to place in the gRPC HealthCheckRequest.
+         * See https://github.com/grpc/grpc/blob/master/doc/health-checking.md. If
+         * this is not specified, the default behavior is defined by gRPC.
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ProbeGrpcAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPort()
-    {
-    }
-    /**
-     * Service is the name of the service to place in the gRPC HealthCheckRequest.
-     * See https://github.com/grpc/grpc/blob/master/doc/health-checking.md. If
-     * this is not specified, the default behavior is defined by gRPC.
-     *
-     * @param string $service
-     */
-    public function setService($service)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getService()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ProbeGrpcAction extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ProbeGrpcAction
     {
     }
 }

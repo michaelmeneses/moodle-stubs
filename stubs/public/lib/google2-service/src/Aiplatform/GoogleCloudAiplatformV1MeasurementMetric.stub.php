@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MeasurementMetric extends \Google\Model
-{
-    /**
-     * Output only. The ID of the Metric. The Metric should be defined in
-     * StudySpec's Metrics.
-     *
-     * @var string
-     */
-    public $metricId;
-    /**
-     * Output only. The value for this metric.
-     *
-     * @var 
-     */
-    public $value;
-    /**
-     * Output only. The ID of the Metric. The Metric should be defined in
-     * StudySpec's Metrics.
-     *
-     * @param string $metricId
-     */
-    public function setMetricId($metricId)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MeasurementMetric extends \Google\Model
     {
+        /**
+         * Output only. The ID of the Metric. The Metric should be defined in
+         * StudySpec's Metrics.
+         *
+         * @var string
+         */
+        public $metricId;
+        /**
+         * Output only. The value for this metric.
+         *
+         * @var 
+         */
+        public $value;
+        /**
+         * Output only. The ID of the Metric. The Metric should be defined in
+         * StudySpec's Metrics.
+         *
+         * @param string $metricId
+         */
+        public function setMetricId($metricId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetricId()
+        {
+        }
+        public function setValue($value)
+        {
+        }
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MeasurementMetric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetricId()
-    {
-    }
-    public function setValue($value)
-    {
-    }
-    public function getValue()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MeasurementMetric extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MeasurementMetric
     {
     }
 }

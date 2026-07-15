@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class SqlServerRdbms extends \Google\Collection
-{
-    protected $collection_key = 'schemas';
-    protected $schemasType = SqlServerSchema::class;
-    protected $schemasDataType = 'array';
-    /**
-     * SQLServer schemas in the database server.
-     *
-     * @param SqlServerSchema[] $schemas
-     */
-    public function setSchemas($schemas)
+namespace Google\Service\Datastream {
+    class SqlServerRdbms extends \Google\Collection
     {
+        protected $collection_key = 'schemas';
+        protected $schemasType = SqlServerSchema::class;
+        protected $schemasDataType = 'array';
+        /**
+         * SQLServer schemas in the database server.
+         *
+         * @param SqlServerSchema[] $schemas
+         */
+        public function setSchemas($schemas)
+        {
+        }
+        /**
+         * @return SqlServerSchema[]
+         */
+        public function getSchemas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SqlServerSchema[]
+     * Runtime class alias of \Google\Service\Datastream\SqlServerRdbms registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSchemas()
+    class Google_Service_Datastream_SqlServerRdbms extends \Google\Service\Datastream\SqlServerRdbms
     {
     }
 }

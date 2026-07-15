@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class BinLogCoordinates extends \Google\Model
-{
-    /**
-     * Name of the binary log file for a Cloud SQL instance.
-     *
-     * @var string
-     */
-    public $binLogFileName;
-    /**
-     * Position (offset) within the binary log file.
-     *
-     * @var string
-     */
-    public $binLogPosition;
-    /**
-     * This is always `sql#binLogCoordinates`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Name of the binary log file for a Cloud SQL instance.
-     *
-     * @param string $binLogFileName
-     */
-    public function setBinLogFileName($binLogFileName)
+namespace Google\Service\SQLAdmin {
+    class BinLogCoordinates extends \Google\Model
     {
+        /**
+         * Name of the binary log file for a Cloud SQL instance.
+         *
+         * @var string
+         */
+        public $binLogFileName;
+        /**
+         * Position (offset) within the binary log file.
+         *
+         * @var string
+         */
+        public $binLogPosition;
+        /**
+         * This is always `sql#binLogCoordinates`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Name of the binary log file for a Cloud SQL instance.
+         *
+         * @param string $binLogFileName
+         */
+        public function setBinLogFileName($binLogFileName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBinLogFileName()
+        {
+        }
+        /**
+         * Position (offset) within the binary log file.
+         *
+         * @param string $binLogPosition
+         */
+        public function setBinLogPosition($binLogPosition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBinLogPosition()
+        {
+        }
+        /**
+         * This is always `sql#binLogCoordinates`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\BinLogCoordinates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBinLogFileName()
-    {
-    }
-    /**
-     * Position (offset) within the binary log file.
-     *
-     * @param string $binLogPosition
-     */
-    public function setBinLogPosition($binLogPosition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBinLogPosition()
-    {
-    }
-    /**
-     * This is always `sql#binLogCoordinates`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_SQLAdmin_BinLogCoordinates extends \Google\Service\SQLAdmin\BinLogCoordinates
     {
     }
 }

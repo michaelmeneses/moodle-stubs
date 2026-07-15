@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CustomSearchAPI;
-
-class SearchUrl extends \Google\Model
-{
-    /**
-     * The actual [OpenSearch template](http://www.opensearch.org/specifications/o
-     * pensearch/1.1#opensearch_url_template_syntax) for this API.
-     *
-     * @var string
-     */
-    public $template;
-    /**
-     * The MIME type of the OpenSearch URL template for the Custom Search JSON
-     * API.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The actual [OpenSearch template](http://www.opensearch.org/specifications/o
-     * pensearch/1.1#opensearch_url_template_syntax) for this API.
-     *
-     * @param string $template
-     */
-    public function setTemplate($template)
+namespace Google\Service\CustomSearchAPI {
+    class SearchUrl extends \Google\Model
     {
+        /**
+         * The actual [OpenSearch template](http://www.opensearch.org/specifications/o
+         * pensearch/1.1#opensearch_url_template_syntax) for this API.
+         *
+         * @var string
+         */
+        public $template;
+        /**
+         * The MIME type of the OpenSearch URL template for the Custom Search JSON
+         * API.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The actual [OpenSearch template](http://www.opensearch.org/specifications/o
+         * pensearch/1.1#opensearch_url_template_syntax) for this API.
+         *
+         * @param string $template
+         */
+        public function setTemplate($template)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTemplate()
+        {
+        }
+        /**
+         * The MIME type of the OpenSearch URL template for the Custom Search JSON
+         * API.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CustomSearchAPI\SearchUrl registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTemplate()
-    {
-    }
-    /**
-     * The MIME type of the OpenSearch URL template for the Custom Search JSON
-     * API.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CustomSearchAPI_SearchUrl extends \Google\Service\CustomSearchAPI\SearchUrl
     {
     }
 }

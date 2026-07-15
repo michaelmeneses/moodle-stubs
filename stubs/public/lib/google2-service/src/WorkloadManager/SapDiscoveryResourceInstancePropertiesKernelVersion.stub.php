@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class SapDiscoveryResourceInstancePropertiesKernelVersion extends \Google\Model
-{
-    protected $distroKernelType = SapDiscoveryResourceInstancePropertiesKernelVersionVersion::class;
-    protected $distroKernelDataType = '';
-    protected $osKernelType = SapDiscoveryResourceInstancePropertiesKernelVersionVersion::class;
-    protected $osKernelDataType = '';
-    /**
-     * Optional. Raw string of the kernel version.
-     *
-     * @var string
-     */
-    public $rawString;
-    /**
-     * Optional. Captures the distro-specific kernel version, the portion of the
-     * string following the first dash.
-     *
-     * @param SapDiscoveryResourceInstancePropertiesKernelVersionVersion $distroKernel
-     */
-    public function setDistroKernel(SapDiscoveryResourceInstancePropertiesKernelVersionVersion $distroKernel)
+namespace Google\Service\WorkloadManager {
+    class SapDiscoveryResourceInstancePropertiesKernelVersion extends \Google\Model
     {
+        protected $distroKernelType = SapDiscoveryResourceInstancePropertiesKernelVersionVersion::class;
+        protected $distroKernelDataType = '';
+        protected $osKernelType = SapDiscoveryResourceInstancePropertiesKernelVersionVersion::class;
+        protected $osKernelDataType = '';
+        /**
+         * Optional. Raw string of the kernel version.
+         *
+         * @var string
+         */
+        public $rawString;
+        /**
+         * Optional. Captures the distro-specific kernel version, the portion of the
+         * string following the first dash.
+         *
+         * @param SapDiscoveryResourceInstancePropertiesKernelVersionVersion $distroKernel
+         */
+        public function setDistroKernel(SapDiscoveryResourceInstancePropertiesKernelVersionVersion $distroKernel)
+        {
+        }
+        /**
+         * @return SapDiscoveryResourceInstancePropertiesKernelVersionVersion
+         */
+        public function getDistroKernel()
+        {
+        }
+        /**
+         * Optional. Captures the OS-specific kernel version, the portion of the
+         * string up to the first dash.
+         *
+         * @param SapDiscoveryResourceInstancePropertiesKernelVersionVersion $osKernel
+         */
+        public function setOsKernel(SapDiscoveryResourceInstancePropertiesKernelVersionVersion $osKernel)
+        {
+        }
+        /**
+         * @return SapDiscoveryResourceInstancePropertiesKernelVersionVersion
+         */
+        public function getOsKernel()
+        {
+        }
+        /**
+         * Optional. Raw string of the kernel version.
+         *
+         * @param string $rawString
+         */
+        public function setRawString($rawString)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRawString()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SapDiscoveryResourceInstancePropertiesKernelVersionVersion
+     * Runtime class alias of \Google\Service\WorkloadManager\SapDiscoveryResourceInstancePropertiesKernelVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDistroKernel()
-    {
-    }
-    /**
-     * Optional. Captures the OS-specific kernel version, the portion of the
-     * string up to the first dash.
-     *
-     * @param SapDiscoveryResourceInstancePropertiesKernelVersionVersion $osKernel
-     */
-    public function setOsKernel(SapDiscoveryResourceInstancePropertiesKernelVersionVersion $osKernel)
-    {
-    }
-    /**
-     * @return SapDiscoveryResourceInstancePropertiesKernelVersionVersion
-     */
-    public function getOsKernel()
-    {
-    }
-    /**
-     * Optional. Raw string of the kernel version.
-     *
-     * @param string $rawString
-     */
-    public function setRawString($rawString)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRawString()
+    class Google_Service_WorkloadManager_SapDiscoveryResourceInstancePropertiesKernelVersion extends \Google\Service\WorkloadManager\SapDiscoveryResourceInstancePropertiesKernelVersion
     {
     }
 }

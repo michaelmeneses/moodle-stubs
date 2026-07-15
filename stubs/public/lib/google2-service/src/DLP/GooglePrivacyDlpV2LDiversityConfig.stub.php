@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2LDiversityConfig extends \Google\Collection
-{
-    protected $collection_key = 'quasiIds';
-    protected $quasiIdsType = GooglePrivacyDlpV2FieldId::class;
-    protected $quasiIdsDataType = 'array';
-    protected $sensitiveAttributeType = GooglePrivacyDlpV2FieldId::class;
-    protected $sensitiveAttributeDataType = '';
-    /**
-     * Set of quasi-identifiers indicating how equivalence classes are defined for
-     * the l-diversity computation. When multiple fields are specified, they are
-     * considered a single composite key.
-     *
-     * @param GooglePrivacyDlpV2FieldId[] $quasiIds
-     */
-    public function setQuasiIds($quasiIds)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2LDiversityConfig extends \Google\Collection
     {
+        protected $collection_key = 'quasiIds';
+        protected $quasiIdsType = GooglePrivacyDlpV2FieldId::class;
+        protected $quasiIdsDataType = 'array';
+        protected $sensitiveAttributeType = GooglePrivacyDlpV2FieldId::class;
+        protected $sensitiveAttributeDataType = '';
+        /**
+         * Set of quasi-identifiers indicating how equivalence classes are defined for
+         * the l-diversity computation. When multiple fields are specified, they are
+         * considered a single composite key.
+         *
+         * @param GooglePrivacyDlpV2FieldId[] $quasiIds
+         */
+        public function setQuasiIds($quasiIds)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2FieldId[]
+         */
+        public function getQuasiIds()
+        {
+        }
+        /**
+         * Sensitive field for computing the l-value.
+         *
+         * @param GooglePrivacyDlpV2FieldId $sensitiveAttribute
+         */
+        public function setSensitiveAttribute(GooglePrivacyDlpV2FieldId $sensitiveAttribute)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2FieldId
+         */
+        public function getSensitiveAttribute()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2FieldId[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2LDiversityConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQuasiIds()
-    {
-    }
-    /**
-     * Sensitive field for computing the l-value.
-     *
-     * @param GooglePrivacyDlpV2FieldId $sensitiveAttribute
-     */
-    public function setSensitiveAttribute(GooglePrivacyDlpV2FieldId $sensitiveAttribute)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2FieldId
-     */
-    public function getSensitiveAttribute()
+    class Google_Service_DLP_GooglePrivacyDlpV2LDiversityConfig extends \Google\Service\DLP\GooglePrivacyDlpV2LDiversityConfig
     {
     }
 }

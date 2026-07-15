@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class RowAccessPolicyReference extends \Google\Model
-{
-    /**
-     * Required. The ID of the dataset containing this row access policy.
-     *
-     * @var string
-     */
-    public $datasetId;
-    /**
-     * Required. The ID of the row access policy. The ID must contain only letters
-     * (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 256
-     * characters.
-     *
-     * @var string
-     */
-    public $policyId;
-    /**
-     * Required. The ID of the project containing this row access policy.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Required. The ID of the table containing this row access policy.
-     *
-     * @var string
-     */
-    public $tableId;
-    /**
-     * Required. The ID of the dataset containing this row access policy.
-     *
-     * @param string $datasetId
-     */
-    public function setDatasetId($datasetId)
+namespace Google\Service\Bigquery {
+    class RowAccessPolicyReference extends \Google\Model
     {
+        /**
+         * Required. The ID of the dataset containing this row access policy.
+         *
+         * @var string
+         */
+        public $datasetId;
+        /**
+         * Required. The ID of the row access policy. The ID must contain only letters
+         * (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 256
+         * characters.
+         *
+         * @var string
+         */
+        public $policyId;
+        /**
+         * Required. The ID of the project containing this row access policy.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Required. The ID of the table containing this row access policy.
+         *
+         * @var string
+         */
+        public $tableId;
+        /**
+         * Required. The ID of the dataset containing this row access policy.
+         *
+         * @param string $datasetId
+         */
+        public function setDatasetId($datasetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatasetId()
+        {
+        }
+        /**
+         * Required. The ID of the row access policy. The ID must contain only letters
+         * (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 256
+         * characters.
+         *
+         * @param string $policyId
+         */
+        public function setPolicyId($policyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicyId()
+        {
+        }
+        /**
+         * Required. The ID of the project containing this row access policy.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Required. The ID of the table containing this row access policy.
+         *
+         * @param string $tableId
+         */
+        public function setTableId($tableId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\RowAccessPolicyReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatasetId()
-    {
-    }
-    /**
-     * Required. The ID of the row access policy. The ID must contain only letters
-     * (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 256
-     * characters.
-     *
-     * @param string $policyId
-     */
-    public function setPolicyId($policyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPolicyId()
-    {
-    }
-    /**
-     * Required. The ID of the project containing this row access policy.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Required. The ID of the table containing this row access policy.
-     *
-     * @param string $tableId
-     */
-    public function setTableId($tableId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableId()
+    class Google_Service_Bigquery_RowAccessPolicyReference extends \Google\Service\Bigquery\RowAccessPolicyReference
     {
     }
 }

@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2RecordKey extends \Google\Collection
-{
-    protected $collection_key = 'idValues';
-    protected $bigQueryKeyType = GooglePrivacyDlpV2BigQueryKey::class;
-    protected $bigQueryKeyDataType = '';
-    protected $datastoreKeyType = GooglePrivacyDlpV2DatastoreKey::class;
-    protected $datastoreKeyDataType = '';
-    /**
-     * Values of identifying columns in the given row. Order of values matches the
-     * order of `identifying_fields` specified in the scanning request.
-     *
-     * @var string[]
-     */
-    public $idValues;
-    /**
-     * Datastore key
-     *
-     * @param GooglePrivacyDlpV2BigQueryKey $bigQueryKey
-     */
-    public function setBigQueryKey(GooglePrivacyDlpV2BigQueryKey $bigQueryKey)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2RecordKey extends \Google\Collection
     {
+        protected $collection_key = 'idValues';
+        protected $bigQueryKeyType = GooglePrivacyDlpV2BigQueryKey::class;
+        protected $bigQueryKeyDataType = '';
+        protected $datastoreKeyType = GooglePrivacyDlpV2DatastoreKey::class;
+        protected $datastoreKeyDataType = '';
+        /**
+         * Values of identifying columns in the given row. Order of values matches the
+         * order of `identifying_fields` specified in the scanning request.
+         *
+         * @var string[]
+         */
+        public $idValues;
+        /**
+         * Datastore key
+         *
+         * @param GooglePrivacyDlpV2BigQueryKey $bigQueryKey
+         */
+        public function setBigQueryKey(GooglePrivacyDlpV2BigQueryKey $bigQueryKey)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2BigQueryKey
+         */
+        public function getBigQueryKey()
+        {
+        }
+        /**
+         * BigQuery key
+         *
+         * @param GooglePrivacyDlpV2DatastoreKey $datastoreKey
+         */
+        public function setDatastoreKey(GooglePrivacyDlpV2DatastoreKey $datastoreKey)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DatastoreKey
+         */
+        public function getDatastoreKey()
+        {
+        }
+        /**
+         * Values of identifying columns in the given row. Order of values matches the
+         * order of `identifying_fields` specified in the scanning request.
+         *
+         * @param string[] $idValues
+         */
+        public function setIdValues($idValues)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIdValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2BigQueryKey
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2RecordKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigQueryKey()
-    {
-    }
-    /**
-     * BigQuery key
-     *
-     * @param GooglePrivacyDlpV2DatastoreKey $datastoreKey
-     */
-    public function setDatastoreKey(GooglePrivacyDlpV2DatastoreKey $datastoreKey)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2DatastoreKey
-     */
-    public function getDatastoreKey()
-    {
-    }
-    /**
-     * Values of identifying columns in the given row. Order of values matches the
-     * order of `identifying_fields` specified in the scanning request.
-     *
-     * @param string[] $idValues
-     */
-    public function setIdValues($idValues)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIdValues()
+    class Google_Service_DLP_GooglePrivacyDlpV2RecordKey extends \Google\Service\DLP\GooglePrivacyDlpV2RecordKey
     {
     }
 }

@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SaaSServiceManagement;
-
-class ListUnitOperationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * If present, the next page token can be provided to a subsequent
-     * ListUnitOperations call to list the next page. If empty, there are no more
-     * pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $unitOperationsType = UnitOperation::class;
-    protected $unitOperationsDataType = 'array';
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * If present, the next page token can be provided to a subsequent
-     * ListUnitOperations call to list the next page. If empty, there are no more
-     * pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\SaaSServiceManagement {
+    class ListUnitOperationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * If present, the next page token can be provided to a subsequent
+         * ListUnitOperations call to list the next page. If empty, there are no more
+         * pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $unitOperationsType = UnitOperation::class;
+        protected $unitOperationsDataType = 'array';
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * If present, the next page token can be provided to a subsequent
+         * ListUnitOperations call to list the next page. If empty, there are no more
+         * pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The resulting unit operations.
+         *
+         * @param UnitOperation[] $unitOperations
+         */
+        public function setUnitOperations($unitOperations)
+        {
+        }
+        /**
+         * @return UnitOperation[]
+         */
+        public function getUnitOperations()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SaaSServiceManagement\ListUnitOperationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The resulting unit operations.
-     *
-     * @param UnitOperation[] $unitOperations
-     */
-    public function setUnitOperations($unitOperations)
-    {
-    }
-    /**
-     * @return UnitOperation[]
-     */
-    public function getUnitOperations()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_SaaSServiceManagement_ListUnitOperationsResponse extends \Google\Service\SaaSServiceManagement\ListUnitOperationsResponse
     {
     }
 }

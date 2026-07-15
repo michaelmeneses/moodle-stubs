@@ -21,40 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "accountPermissions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $accountPermissions = $dfareportingService->accountPermissions;
- *  </code>
- */
-class AccountPermissions extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\AccountPermission;
+    use Google\Service\Dfareporting\AccountPermissionsListResponse;
     /**
-     * Gets one account permission by ID. (accountPermissions.get)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $id Account permission ID.
-     * @param array $optParams Optional parameters.
-     * @return AccountPermission
-     * @throws \Google\Service\Exception
+     * The "accountPermissions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $accountPermissions = $dfareportingService->accountPermissions;
+     *  </code>
      */
-    public function get($profileId, $id, $optParams = [])
+    class AccountPermissions extends \Google\Service\Resource
     {
+        /**
+         * Gets one account permission by ID. (accountPermissions.get)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $id Account permission ID.
+         * @param array $optParams Optional parameters.
+         * @return AccountPermission
+         * @throws \Google\Service\Exception
+         */
+        public function get($profileId, $id, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the list of account permissions.
+         * (accountPermissions.listAccountPermissions)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         * @return AccountPermissionsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountPermissions($profileId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves the list of account permissions.
-     * (accountPermissions.listAccountPermissions)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     * @return AccountPermissionsListResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\AccountPermissions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listAccountPermissions($profileId, $optParams = [])
+    class Google_Service_Dfareporting_Resource_AccountPermissions extends \Google\Service\Dfareporting\Resource\AccountPermissions
     {
     }
 }

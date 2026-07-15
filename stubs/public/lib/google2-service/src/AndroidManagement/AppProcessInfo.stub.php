@@ -21,155 +21,164 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class AppProcessInfo extends \Google\Collection
-{
-    protected $collection_key = 'packageNames';
-    /**
-     * SHA-256 hash of the base APK, in hexadecimal format.
-     *
-     * @var string
-     */
-    public $apkSha256Hash;
-    /**
-     * Package names of all packages that are associated with the particular user
-     * ID. In most cases, this will be a single package name, the package that has
-     * been assigned that user ID. If multiple application share a UID then all
-     * packages sharing UID will be included.
-     *
-     * @var string[]
-     */
-    public $packageNames;
-    /**
-     * Process ID.
-     *
-     * @var int
-     */
-    public $pid;
-    /**
-     * Process name.
-     *
-     * @var string
-     */
-    public $processName;
-    /**
-     * SELinux policy info.
-     *
-     * @var string
-     */
-    public $seinfo;
-    /**
-     * Process start time.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * UID of the package.
-     *
-     * @var int
-     */
-    public $uid;
-    /**
-     * SHA-256 hash of the base APK, in hexadecimal format.
-     *
-     * @param string $apkSha256Hash
-     */
-    public function setApkSha256Hash($apkSha256Hash)
+namespace Google\Service\AndroidManagement {
+    class AppProcessInfo extends \Google\Collection
     {
+        protected $collection_key = 'packageNames';
+        /**
+         * SHA-256 hash of the base APK, in hexadecimal format.
+         *
+         * @var string
+         */
+        public $apkSha256Hash;
+        /**
+         * Package names of all packages that are associated with the particular user
+         * ID. In most cases, this will be a single package name, the package that has
+         * been assigned that user ID. If multiple application share a UID then all
+         * packages sharing UID will be included.
+         *
+         * @var string[]
+         */
+        public $packageNames;
+        /**
+         * Process ID.
+         *
+         * @var int
+         */
+        public $pid;
+        /**
+         * Process name.
+         *
+         * @var string
+         */
+        public $processName;
+        /**
+         * SELinux policy info.
+         *
+         * @var string
+         */
+        public $seinfo;
+        /**
+         * Process start time.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * UID of the package.
+         *
+         * @var int
+         */
+        public $uid;
+        /**
+         * SHA-256 hash of the base APK, in hexadecimal format.
+         *
+         * @param string $apkSha256Hash
+         */
+        public function setApkSha256Hash($apkSha256Hash)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApkSha256Hash()
+        {
+        }
+        /**
+         * Package names of all packages that are associated with the particular user
+         * ID. In most cases, this will be a single package name, the package that has
+         * been assigned that user ID. If multiple application share a UID then all
+         * packages sharing UID will be included.
+         *
+         * @param string[] $packageNames
+         */
+        public function setPackageNames($packageNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPackageNames()
+        {
+        }
+        /**
+         * Process ID.
+         *
+         * @param int $pid
+         */
+        public function setPid($pid)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPid()
+        {
+        }
+        /**
+         * Process name.
+         *
+         * @param string $processName
+         */
+        public function setProcessName($processName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProcessName()
+        {
+        }
+        /**
+         * SELinux policy info.
+         *
+         * @param string $seinfo
+         */
+        public function setSeinfo($seinfo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSeinfo()
+        {
+        }
+        /**
+         * Process start time.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * UID of the package.
+         *
+         * @param int $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getUid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\AppProcessInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApkSha256Hash()
-    {
-    }
-    /**
-     * Package names of all packages that are associated with the particular user
-     * ID. In most cases, this will be a single package name, the package that has
-     * been assigned that user ID. If multiple application share a UID then all
-     * packages sharing UID will be included.
-     *
-     * @param string[] $packageNames
-     */
-    public function setPackageNames($packageNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPackageNames()
-    {
-    }
-    /**
-     * Process ID.
-     *
-     * @param int $pid
-     */
-    public function setPid($pid)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPid()
-    {
-    }
-    /**
-     * Process name.
-     *
-     * @param string $processName
-     */
-    public function setProcessName($processName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProcessName()
-    {
-    }
-    /**
-     * SELinux policy info.
-     *
-     * @param string $seinfo
-     */
-    public function setSeinfo($seinfo)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSeinfo()
-    {
-    }
-    /**
-     * Process start time.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * UID of the package.
-     *
-     * @param int $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getUid()
+    class Google_Service_AndroidManagement_AppProcessInfo extends \Google\Service\AndroidManagement\AppProcessInfo
     {
     }
 }

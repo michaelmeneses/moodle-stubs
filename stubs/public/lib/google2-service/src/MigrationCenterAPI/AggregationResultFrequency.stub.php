@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class AggregationResultFrequency extends \Google\Model
-{
-    /**
-     * @var string[]
-     */
-    public $values;
-    /**
-     * @param string[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\MigrationCenterAPI {
+    class AggregationResultFrequency extends \Google\Model
     {
+        /**
+         * @var string[]
+         */
+        public $values;
+        /**
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\AggregationResultFrequency registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_MigrationCenterAPI_AggregationResultFrequency extends \Google\Service\MigrationCenterAPI\AggregationResultFrequency
     {
     }
 }

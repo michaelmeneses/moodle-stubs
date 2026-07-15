@@ -21,314 +21,323 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1DiscoveredApiObservation extends \Google\Collection
-{
-    /**
-     * Unknown style
-     */
-    public const STYLE_STYLE_UNSPECIFIED = 'STYLE_UNSPECIFIED';
-    /**
-     * Style is Rest API
-     */
-    public const STYLE_REST = 'REST';
-    /**
-     * Style is Grpc API
-     */
-    public const STYLE_GRPC = 'GRPC';
-    /**
-     * Style is GraphQL API
-     */
-    public const STYLE_GRAPHQL = 'GRAPHQL';
-    protected $collection_key = 'sourceTypes';
-    /**
-     * Optional. The number of observed API Operations.
-     *
-     * @var string
-     */
-    public $apiOperationCount;
-    /**
-     * Output only. Create time stamp of the observation in API Hub.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. The hostname of requests processed for this Observation.
-     *
-     * @var string
-     */
-    public $hostname;
-    /**
-     * Output only. The number of known API Operations.
-     *
-     * @var string
-     */
-    public $knownOperationsCount;
-    /**
-     * Optional. Last event detected time stamp
-     *
-     * @var string
-     */
-    public $lastEventDetectedTime;
-    /**
-     * Identifier. The name of the discovered API Observation. Format: `projects/{
-     * project}/locations/{location}/discoveredApiObservations/{discovered_api_obs
-     * ervation}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. For an observation pushed from a gcp resource, this would be the
-     * gcp project id.
-     *
-     * @var string
-     */
-    public $origin;
-    /**
-     * Optional. The IP address (IPv4 or IPv6) of the origin server that the
-     * request was sent to. This field can include port information. Examples:
-     * `"192.168.1.1"`, `"10.0.0.1:80"`, `"FE80::0202:B3FF:FE1E:8329"`.
-     *
-     * @var string[]
-     */
-    public $serverIps;
-    /**
-     * Optional. The location of the observation source.
-     *
-     * @var string[]
-     */
-    public $sourceLocations;
-    protected $sourceMetadataType = GoogleCloudApihubV1SourceMetadata::class;
-    protected $sourceMetadataDataType = '';
-    /**
-     * Optional. The type of the source from which the observation was collected.
-     *
-     * @var string[]
-     */
-    public $sourceTypes;
-    /**
-     * Optional. Style of ApiObservation
-     *
-     * @var string
-     */
-    public $style;
-    /**
-     * Output only. The number of unknown API Operations.
-     *
-     * @var string
-     */
-    public $unknownOperationsCount;
-    /**
-     * Output only. Update time stamp of the observation in API Hub.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. The number of observed API Operations.
-     *
-     * @param string $apiOperationCount
-     */
-    public function setApiOperationCount($apiOperationCount)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1DiscoveredApiObservation extends \Google\Collection
     {
+        /**
+         * Unknown style
+         */
+        public const STYLE_STYLE_UNSPECIFIED = 'STYLE_UNSPECIFIED';
+        /**
+         * Style is Rest API
+         */
+        public const STYLE_REST = 'REST';
+        /**
+         * Style is Grpc API
+         */
+        public const STYLE_GRPC = 'GRPC';
+        /**
+         * Style is GraphQL API
+         */
+        public const STYLE_GRAPHQL = 'GRAPHQL';
+        protected $collection_key = 'sourceTypes';
+        /**
+         * Optional. The number of observed API Operations.
+         *
+         * @var string
+         */
+        public $apiOperationCount;
+        /**
+         * Output only. Create time stamp of the observation in API Hub.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. The hostname of requests processed for this Observation.
+         *
+         * @var string
+         */
+        public $hostname;
+        /**
+         * Output only. The number of known API Operations.
+         *
+         * @var string
+         */
+        public $knownOperationsCount;
+        /**
+         * Optional. Last event detected time stamp
+         *
+         * @var string
+         */
+        public $lastEventDetectedTime;
+        /**
+         * Identifier. The name of the discovered API Observation. Format: `projects/{
+         * project}/locations/{location}/discoveredApiObservations/{discovered_api_obs
+         * ervation}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. For an observation pushed from a gcp resource, this would be the
+         * gcp project id.
+         *
+         * @var string
+         */
+        public $origin;
+        /**
+         * Optional. The IP address (IPv4 or IPv6) of the origin server that the
+         * request was sent to. This field can include port information. Examples:
+         * `"192.168.1.1"`, `"10.0.0.1:80"`, `"FE80::0202:B3FF:FE1E:8329"`.
+         *
+         * @var string[]
+         */
+        public $serverIps;
+        /**
+         * Optional. The location of the observation source.
+         *
+         * @var string[]
+         */
+        public $sourceLocations;
+        protected $sourceMetadataType = GoogleCloudApihubV1SourceMetadata::class;
+        protected $sourceMetadataDataType = '';
+        /**
+         * Optional. The type of the source from which the observation was collected.
+         *
+         * @var string[]
+         */
+        public $sourceTypes;
+        /**
+         * Optional. Style of ApiObservation
+         *
+         * @var string
+         */
+        public $style;
+        /**
+         * Output only. The number of unknown API Operations.
+         *
+         * @var string
+         */
+        public $unknownOperationsCount;
+        /**
+         * Output only. Update time stamp of the observation in API Hub.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. The number of observed API Operations.
+         *
+         * @param string $apiOperationCount
+         */
+        public function setApiOperationCount($apiOperationCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiOperationCount()
+        {
+        }
+        /**
+         * Output only. Create time stamp of the observation in API Hub.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. The hostname of requests processed for this Observation.
+         *
+         * @param string $hostname
+         */
+        public function setHostname($hostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostname()
+        {
+        }
+        /**
+         * Output only. The number of known API Operations.
+         *
+         * @param string $knownOperationsCount
+         */
+        public function setKnownOperationsCount($knownOperationsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKnownOperationsCount()
+        {
+        }
+        /**
+         * Optional. Last event detected time stamp
+         *
+         * @param string $lastEventDetectedTime
+         */
+        public function setLastEventDetectedTime($lastEventDetectedTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastEventDetectedTime()
+        {
+        }
+        /**
+         * Identifier. The name of the discovered API Observation. Format: `projects/{
+         * project}/locations/{location}/discoveredApiObservations/{discovered_api_obs
+         * ervation}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. For an observation pushed from a gcp resource, this would be the
+         * gcp project id.
+         *
+         * @param string $origin
+         */
+        public function setOrigin($origin)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrigin()
+        {
+        }
+        /**
+         * Optional. The IP address (IPv4 or IPv6) of the origin server that the
+         * request was sent to. This field can include port information. Examples:
+         * `"192.168.1.1"`, `"10.0.0.1:80"`, `"FE80::0202:B3FF:FE1E:8329"`.
+         *
+         * @param string[] $serverIps
+         */
+        public function setServerIps($serverIps)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getServerIps()
+        {
+        }
+        /**
+         * Optional. The location of the observation source.
+         *
+         * @param string[] $sourceLocations
+         */
+        public function setSourceLocations($sourceLocations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSourceLocations()
+        {
+        }
+        /**
+         * Output only. The metadata of the source from which the observation was
+         * collected.
+         *
+         * @param GoogleCloudApihubV1SourceMetadata $sourceMetadata
+         */
+        public function setSourceMetadata(GoogleCloudApihubV1SourceMetadata $sourceMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1SourceMetadata
+         */
+        public function getSourceMetadata()
+        {
+        }
+        /**
+         * Optional. The type of the source from which the observation was collected.
+         *
+         * @param string[] $sourceTypes
+         */
+        public function setSourceTypes($sourceTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSourceTypes()
+        {
+        }
+        /**
+         * Optional. Style of ApiObservation
+         *
+         * Accepted values: STYLE_UNSPECIFIED, REST, GRPC, GRAPHQL
+         *
+         * @param self::STYLE_* $style
+         */
+        public function setStyle($style)
+        {
+        }
+        /**
+         * @return self::STYLE_*
+         */
+        public function getStyle()
+        {
+        }
+        /**
+         * Output only. The number of unknown API Operations.
+         *
+         * @param string $unknownOperationsCount
+         */
+        public function setUnknownOperationsCount($unknownOperationsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnknownOperationsCount()
+        {
+        }
+        /**
+         * Output only. Update time stamp of the observation in API Hub.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1DiscoveredApiObservation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiOperationCount()
-    {
-    }
-    /**
-     * Output only. Create time stamp of the observation in API Hub.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. The hostname of requests processed for this Observation.
-     *
-     * @param string $hostname
-     */
-    public function setHostname($hostname)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostname()
-    {
-    }
-    /**
-     * Output only. The number of known API Operations.
-     *
-     * @param string $knownOperationsCount
-     */
-    public function setKnownOperationsCount($knownOperationsCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKnownOperationsCount()
-    {
-    }
-    /**
-     * Optional. Last event detected time stamp
-     *
-     * @param string $lastEventDetectedTime
-     */
-    public function setLastEventDetectedTime($lastEventDetectedTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastEventDetectedTime()
-    {
-    }
-    /**
-     * Identifier. The name of the discovered API Observation. Format: `projects/{
-     * project}/locations/{location}/discoveredApiObservations/{discovered_api_obs
-     * ervation}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. For an observation pushed from a gcp resource, this would be the
-     * gcp project id.
-     *
-     * @param string $origin
-     */
-    public function setOrigin($origin)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrigin()
-    {
-    }
-    /**
-     * Optional. The IP address (IPv4 or IPv6) of the origin server that the
-     * request was sent to. This field can include port information. Examples:
-     * `"192.168.1.1"`, `"10.0.0.1:80"`, `"FE80::0202:B3FF:FE1E:8329"`.
-     *
-     * @param string[] $serverIps
-     */
-    public function setServerIps($serverIps)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getServerIps()
-    {
-    }
-    /**
-     * Optional. The location of the observation source.
-     *
-     * @param string[] $sourceLocations
-     */
-    public function setSourceLocations($sourceLocations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSourceLocations()
-    {
-    }
-    /**
-     * Output only. The metadata of the source from which the observation was
-     * collected.
-     *
-     * @param GoogleCloudApihubV1SourceMetadata $sourceMetadata
-     */
-    public function setSourceMetadata(GoogleCloudApihubV1SourceMetadata $sourceMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1SourceMetadata
-     */
-    public function getSourceMetadata()
-    {
-    }
-    /**
-     * Optional. The type of the source from which the observation was collected.
-     *
-     * @param string[] $sourceTypes
-     */
-    public function setSourceTypes($sourceTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSourceTypes()
-    {
-    }
-    /**
-     * Optional. Style of ApiObservation
-     *
-     * Accepted values: STYLE_UNSPECIFIED, REST, GRPC, GRAPHQL
-     *
-     * @param self::STYLE_* $style
-     */
-    public function setStyle($style)
-    {
-    }
-    /**
-     * @return self::STYLE_*
-     */
-    public function getStyle()
-    {
-    }
-    /**
-     * Output only. The number of unknown API Operations.
-     *
-     * @param string $unknownOperationsCount
-     */
-    public function setUnknownOperationsCount($unknownOperationsCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnknownOperationsCount()
-    {
-    }
-    /**
-     * Output only. Update time stamp of the observation in API Hub.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_APIhub_GoogleCloudApihubV1DiscoveredApiObservation extends \Google\Service\APIhub\GoogleCloudApihubV1DiscoveredApiObservation
     {
     }
 }

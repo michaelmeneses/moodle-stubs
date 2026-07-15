@@ -21,137 +21,146 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ConfigManagementGatekeeperDeploymentState extends \Google\Model
-{
-    /**
-     * Deployment's state cannot be determined.
-     */
-    public const GATEKEEPER_AUDIT_DEPLOYMENT_STATE_UNSPECIFIED = 'DEPLOYMENT_STATE_UNSPECIFIED';
-    /**
-     * Deployment is not installed.
-     */
-    public const GATEKEEPER_AUDIT_NOT_INSTALLED = 'NOT_INSTALLED';
-    /**
-     * Deployment is installed.
-     */
-    public const GATEKEEPER_AUDIT_INSTALLED = 'INSTALLED';
-    /**
-     * Deployment was attempted to be installed, but has errors.
-     */
-    public const GATEKEEPER_AUDIT_ERROR = 'ERROR';
-    /**
-     * Deployment is installing or terminating
-     */
-    public const GATEKEEPER_AUDIT_PENDING = 'PENDING';
-    /**
-     * Deployment's state cannot be determined.
-     */
-    public const GATEKEEPER_CONTROLLER_MANAGER_STATE_DEPLOYMENT_STATE_UNSPECIFIED = 'DEPLOYMENT_STATE_UNSPECIFIED';
-    /**
-     * Deployment is not installed.
-     */
-    public const GATEKEEPER_CONTROLLER_MANAGER_STATE_NOT_INSTALLED = 'NOT_INSTALLED';
-    /**
-     * Deployment is installed.
-     */
-    public const GATEKEEPER_CONTROLLER_MANAGER_STATE_INSTALLED = 'INSTALLED';
-    /**
-     * Deployment was attempted to be installed, but has errors.
-     */
-    public const GATEKEEPER_CONTROLLER_MANAGER_STATE_ERROR = 'ERROR';
-    /**
-     * Deployment is installing or terminating
-     */
-    public const GATEKEEPER_CONTROLLER_MANAGER_STATE_PENDING = 'PENDING';
-    /**
-     * Deployment's state cannot be determined.
-     */
-    public const GATEKEEPER_MUTATION_DEPLOYMENT_STATE_UNSPECIFIED = 'DEPLOYMENT_STATE_UNSPECIFIED';
-    /**
-     * Deployment is not installed.
-     */
-    public const GATEKEEPER_MUTATION_NOT_INSTALLED = 'NOT_INSTALLED';
-    /**
-     * Deployment is installed.
-     */
-    public const GATEKEEPER_MUTATION_INSTALLED = 'INSTALLED';
-    /**
-     * Deployment was attempted to be installed, but has errors.
-     */
-    public const GATEKEEPER_MUTATION_ERROR = 'ERROR';
-    /**
-     * Deployment is installing or terminating
-     */
-    public const GATEKEEPER_MUTATION_PENDING = 'PENDING';
-    /**
-     * Status of gatekeeper-audit deployment.
-     *
-     * @var string
-     */
-    public $gatekeeperAudit;
-    /**
-     * Status of gatekeeper-controller-manager pod.
-     *
-     * @var string
-     */
-    public $gatekeeperControllerManagerState;
-    /**
-     * Status of the pod serving the mutation webhook.
-     *
-     * @var string
-     */
-    public $gatekeeperMutation;
-    /**
-     * Status of gatekeeper-audit deployment.
-     *
-     * Accepted values: DEPLOYMENT_STATE_UNSPECIFIED, NOT_INSTALLED, INSTALLED,
-     * ERROR, PENDING
-     *
-     * @param self::GATEKEEPER_AUDIT_* $gatekeeperAudit
-     */
-    public function setGatekeeperAudit($gatekeeperAudit)
+namespace Google\Service\GKEHub {
+    class ConfigManagementGatekeeperDeploymentState extends \Google\Model
     {
+        /**
+         * Deployment's state cannot be determined.
+         */
+        public const GATEKEEPER_AUDIT_DEPLOYMENT_STATE_UNSPECIFIED = 'DEPLOYMENT_STATE_UNSPECIFIED';
+        /**
+         * Deployment is not installed.
+         */
+        public const GATEKEEPER_AUDIT_NOT_INSTALLED = 'NOT_INSTALLED';
+        /**
+         * Deployment is installed.
+         */
+        public const GATEKEEPER_AUDIT_INSTALLED = 'INSTALLED';
+        /**
+         * Deployment was attempted to be installed, but has errors.
+         */
+        public const GATEKEEPER_AUDIT_ERROR = 'ERROR';
+        /**
+         * Deployment is installing or terminating
+         */
+        public const GATEKEEPER_AUDIT_PENDING = 'PENDING';
+        /**
+         * Deployment's state cannot be determined.
+         */
+        public const GATEKEEPER_CONTROLLER_MANAGER_STATE_DEPLOYMENT_STATE_UNSPECIFIED = 'DEPLOYMENT_STATE_UNSPECIFIED';
+        /**
+         * Deployment is not installed.
+         */
+        public const GATEKEEPER_CONTROLLER_MANAGER_STATE_NOT_INSTALLED = 'NOT_INSTALLED';
+        /**
+         * Deployment is installed.
+         */
+        public const GATEKEEPER_CONTROLLER_MANAGER_STATE_INSTALLED = 'INSTALLED';
+        /**
+         * Deployment was attempted to be installed, but has errors.
+         */
+        public const GATEKEEPER_CONTROLLER_MANAGER_STATE_ERROR = 'ERROR';
+        /**
+         * Deployment is installing or terminating
+         */
+        public const GATEKEEPER_CONTROLLER_MANAGER_STATE_PENDING = 'PENDING';
+        /**
+         * Deployment's state cannot be determined.
+         */
+        public const GATEKEEPER_MUTATION_DEPLOYMENT_STATE_UNSPECIFIED = 'DEPLOYMENT_STATE_UNSPECIFIED';
+        /**
+         * Deployment is not installed.
+         */
+        public const GATEKEEPER_MUTATION_NOT_INSTALLED = 'NOT_INSTALLED';
+        /**
+         * Deployment is installed.
+         */
+        public const GATEKEEPER_MUTATION_INSTALLED = 'INSTALLED';
+        /**
+         * Deployment was attempted to be installed, but has errors.
+         */
+        public const GATEKEEPER_MUTATION_ERROR = 'ERROR';
+        /**
+         * Deployment is installing or terminating
+         */
+        public const GATEKEEPER_MUTATION_PENDING = 'PENDING';
+        /**
+         * Status of gatekeeper-audit deployment.
+         *
+         * @var string
+         */
+        public $gatekeeperAudit;
+        /**
+         * Status of gatekeeper-controller-manager pod.
+         *
+         * @var string
+         */
+        public $gatekeeperControllerManagerState;
+        /**
+         * Status of the pod serving the mutation webhook.
+         *
+         * @var string
+         */
+        public $gatekeeperMutation;
+        /**
+         * Status of gatekeeper-audit deployment.
+         *
+         * Accepted values: DEPLOYMENT_STATE_UNSPECIFIED, NOT_INSTALLED, INSTALLED,
+         * ERROR, PENDING
+         *
+         * @param self::GATEKEEPER_AUDIT_* $gatekeeperAudit
+         */
+        public function setGatekeeperAudit($gatekeeperAudit)
+        {
+        }
+        /**
+         * @return self::GATEKEEPER_AUDIT_*
+         */
+        public function getGatekeeperAudit()
+        {
+        }
+        /**
+         * Status of gatekeeper-controller-manager pod.
+         *
+         * Accepted values: DEPLOYMENT_STATE_UNSPECIFIED, NOT_INSTALLED, INSTALLED,
+         * ERROR, PENDING
+         *
+         * @param self::GATEKEEPER_CONTROLLER_MANAGER_STATE_* $gatekeeperControllerManagerState
+         */
+        public function setGatekeeperControllerManagerState($gatekeeperControllerManagerState)
+        {
+        }
+        /**
+         * @return self::GATEKEEPER_CONTROLLER_MANAGER_STATE_*
+         */
+        public function getGatekeeperControllerManagerState()
+        {
+        }
+        /**
+         * Status of the pod serving the mutation webhook.
+         *
+         * Accepted values: DEPLOYMENT_STATE_UNSPECIFIED, NOT_INSTALLED, INSTALLED,
+         * ERROR, PENDING
+         *
+         * @param self::GATEKEEPER_MUTATION_* $gatekeeperMutation
+         */
+        public function setGatekeeperMutation($gatekeeperMutation)
+        {
+        }
+        /**
+         * @return self::GATEKEEPER_MUTATION_*
+         */
+        public function getGatekeeperMutation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::GATEKEEPER_AUDIT_*
+     * Runtime class alias of \Google\Service\GKEHub\ConfigManagementGatekeeperDeploymentState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGatekeeperAudit()
-    {
-    }
-    /**
-     * Status of gatekeeper-controller-manager pod.
-     *
-     * Accepted values: DEPLOYMENT_STATE_UNSPECIFIED, NOT_INSTALLED, INSTALLED,
-     * ERROR, PENDING
-     *
-     * @param self::GATEKEEPER_CONTROLLER_MANAGER_STATE_* $gatekeeperControllerManagerState
-     */
-    public function setGatekeeperControllerManagerState($gatekeeperControllerManagerState)
-    {
-    }
-    /**
-     * @return self::GATEKEEPER_CONTROLLER_MANAGER_STATE_*
-     */
-    public function getGatekeeperControllerManagerState()
-    {
-    }
-    /**
-     * Status of the pod serving the mutation webhook.
-     *
-     * Accepted values: DEPLOYMENT_STATE_UNSPECIFIED, NOT_INSTALLED, INSTALLED,
-     * ERROR, PENDING
-     *
-     * @param self::GATEKEEPER_MUTATION_* $gatekeeperMutation
-     */
-    public function setGatekeeperMutation($gatekeeperMutation)
-    {
-    }
-    /**
-     * @return self::GATEKEEPER_MUTATION_*
-     */
-    public function getGatekeeperMutation()
+    class Google_Service_GKEHub_ConfigManagementGatekeeperDeploymentState extends \Google\Service\GKEHub\ConfigManagementGatekeeperDeploymentState
     {
     }
 }

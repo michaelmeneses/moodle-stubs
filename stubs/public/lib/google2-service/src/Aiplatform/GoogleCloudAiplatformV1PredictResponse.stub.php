@@ -21,141 +21,150 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PredictResponse extends \Google\Collection
-{
-    protected $collection_key = 'predictions';
-    /**
-     * ID of the Endpoint's DeployedModel that served this prediction.
-     *
-     * @var string
-     */
-    public $deployedModelId;
-    /**
-     * Output only. Request-level metadata returned by the model. The metadata
-     * type will be dependent upon the model implementation.
-     *
-     * @var array
-     */
-    public $metadata;
-    /**
-     * Output only. The resource name of the Model which is deployed as the
-     * DeployedModel that this prediction hits.
-     *
-     * @var string
-     */
-    public $model;
-    /**
-     * Output only. The display name of the Model which is deployed as the
-     * DeployedModel that this prediction hits.
-     *
-     * @var string
-     */
-    public $modelDisplayName;
-    /**
-     * Output only. The version ID of the Model which is deployed as the
-     * DeployedModel that this prediction hits.
-     *
-     * @var string
-     */
-    public $modelVersionId;
-    /**
-     * The predictions that are the output of the predictions call. The schema of
-     * any single prediction may be specified via Endpoint's DeployedModels'
-     * Model's PredictSchemata's prediction_schema_uri.
-     *
-     * @var array[]
-     */
-    public $predictions;
-    /**
-     * ID of the Endpoint's DeployedModel that served this prediction.
-     *
-     * @param string $deployedModelId
-     */
-    public function setDeployedModelId($deployedModelId)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PredictResponse extends \Google\Collection
     {
+        protected $collection_key = 'predictions';
+        /**
+         * ID of the Endpoint's DeployedModel that served this prediction.
+         *
+         * @var string
+         */
+        public $deployedModelId;
+        /**
+         * Output only. Request-level metadata returned by the model. The metadata
+         * type will be dependent upon the model implementation.
+         *
+         * @var array
+         */
+        public $metadata;
+        /**
+         * Output only. The resource name of the Model which is deployed as the
+         * DeployedModel that this prediction hits.
+         *
+         * @var string
+         */
+        public $model;
+        /**
+         * Output only. The display name of the Model which is deployed as the
+         * DeployedModel that this prediction hits.
+         *
+         * @var string
+         */
+        public $modelDisplayName;
+        /**
+         * Output only. The version ID of the Model which is deployed as the
+         * DeployedModel that this prediction hits.
+         *
+         * @var string
+         */
+        public $modelVersionId;
+        /**
+         * The predictions that are the output of the predictions call. The schema of
+         * any single prediction may be specified via Endpoint's DeployedModels'
+         * Model's PredictSchemata's prediction_schema_uri.
+         *
+         * @var array[]
+         */
+        public $predictions;
+        /**
+         * ID of the Endpoint's DeployedModel that served this prediction.
+         *
+         * @param string $deployedModelId
+         */
+        public function setDeployedModelId($deployedModelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeployedModelId()
+        {
+        }
+        /**
+         * Output only. Request-level metadata returned by the model. The metadata
+         * type will be dependent upon the model implementation.
+         *
+         * @param array $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Output only. The resource name of the Model which is deployed as the
+         * DeployedModel that this prediction hits.
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
+        /**
+         * Output only. The display name of the Model which is deployed as the
+         * DeployedModel that this prediction hits.
+         *
+         * @param string $modelDisplayName
+         */
+        public function setModelDisplayName($modelDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelDisplayName()
+        {
+        }
+        /**
+         * Output only. The version ID of the Model which is deployed as the
+         * DeployedModel that this prediction hits.
+         *
+         * @param string $modelVersionId
+         */
+        public function setModelVersionId($modelVersionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelVersionId()
+        {
+        }
+        /**
+         * The predictions that are the output of the predictions call. The schema of
+         * any single prediction may be specified via Endpoint's DeployedModels'
+         * Model's PredictSchemata's prediction_schema_uri.
+         *
+         * @param array[] $predictions
+         */
+        public function setPredictions($predictions)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getPredictions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PredictResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployedModelId()
-    {
-    }
-    /**
-     * Output only. Request-level metadata returned by the model. The metadata
-     * type will be dependent upon the model implementation.
-     *
-     * @param array $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Output only. The resource name of the Model which is deployed as the
-     * DeployedModel that this prediction hits.
-     *
-     * @param string $model
-     */
-    public function setModel($model)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModel()
-    {
-    }
-    /**
-     * Output only. The display name of the Model which is deployed as the
-     * DeployedModel that this prediction hits.
-     *
-     * @param string $modelDisplayName
-     */
-    public function setModelDisplayName($modelDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModelDisplayName()
-    {
-    }
-    /**
-     * Output only. The version ID of the Model which is deployed as the
-     * DeployedModel that this prediction hits.
-     *
-     * @param string $modelVersionId
-     */
-    public function setModelVersionId($modelVersionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModelVersionId()
-    {
-    }
-    /**
-     * The predictions that are the output of the predictions call. The schema of
-     * any single prediction may be specified via Endpoint's DeployedModels'
-     * Model's PredictSchemata's prediction_schema_uri.
-     *
-     * @param array[] $predictions
-     */
-    public function setPredictions($predictions)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getPredictions()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PredictResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PredictResponse
     {
     }
 }

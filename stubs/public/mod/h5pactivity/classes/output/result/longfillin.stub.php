@@ -29,6 +29,9 @@
  */
 namespace mod_h5pactivity\output\result;
 
+use mod_h5pactivity\output\result;
+use renderer_base;
+use stdClass;
 /**
  * Class to display H5P long fill in result.
  *

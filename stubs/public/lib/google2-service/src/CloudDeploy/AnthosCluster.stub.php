@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class AnthosCluster extends \Google\Model
-{
-    /**
-     * Optional. Membership of the GKE Hub-registered cluster to which to apply
-     * the Skaffold configuration. Format is
-     * `projects/{project}/locations/{location}/memberships/{membership_name}`.
-     *
-     * @var string
-     */
-    public $membership;
-    /**
-     * Optional. Membership of the GKE Hub-registered cluster to which to apply
-     * the Skaffold configuration. Format is
-     * `projects/{project}/locations/{location}/memberships/{membership_name}`.
-     *
-     * @param string $membership
-     */
-    public function setMembership($membership)
+namespace Google\Service\CloudDeploy {
+    class AnthosCluster extends \Google\Model
     {
+        /**
+         * Optional. Membership of the GKE Hub-registered cluster to which to apply
+         * the Skaffold configuration. Format is
+         * `projects/{project}/locations/{location}/memberships/{membership_name}`.
+         *
+         * @var string
+         */
+        public $membership;
+        /**
+         * Optional. Membership of the GKE Hub-registered cluster to which to apply
+         * the Skaffold configuration. Format is
+         * `projects/{project}/locations/{location}/memberships/{membership_name}`.
+         *
+         * @param string $membership
+         */
+        public function setMembership($membership)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMembership()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\AnthosCluster registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMembership()
+    class Google_Service_CloudDeploy_AnthosCluster extends \Google\Service\CloudDeploy\AnthosCluster
     {
     }
 }

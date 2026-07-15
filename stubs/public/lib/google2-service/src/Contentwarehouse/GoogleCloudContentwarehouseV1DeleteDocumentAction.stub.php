@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1DeleteDocumentAction extends \Google\Model
-{
-    /**
-     * Boolean field to select between hard vs soft delete options. Set 'true' for
-     * 'hard delete' and 'false' for 'soft delete'.
-     *
-     * @var bool
-     */
-    public $enableHardDelete;
-    /**
-     * Boolean field to select between hard vs soft delete options. Set 'true' for
-     * 'hard delete' and 'false' for 'soft delete'.
-     *
-     * @param bool $enableHardDelete
-     */
-    public function setEnableHardDelete($enableHardDelete)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1DeleteDocumentAction extends \Google\Model
     {
+        /**
+         * Boolean field to select between hard vs soft delete options. Set 'true' for
+         * 'hard delete' and 'false' for 'soft delete'.
+         *
+         * @var bool
+         */
+        public $enableHardDelete;
+        /**
+         * Boolean field to select between hard vs soft delete options. Set 'true' for
+         * 'hard delete' and 'false' for 'soft delete'.
+         *
+         * @param bool $enableHardDelete
+         */
+        public function setEnableHardDelete($enableHardDelete)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableHardDelete()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1DeleteDocumentAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableHardDelete()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1DeleteDocumentAction extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1DeleteDocumentAction
     {
     }
 }

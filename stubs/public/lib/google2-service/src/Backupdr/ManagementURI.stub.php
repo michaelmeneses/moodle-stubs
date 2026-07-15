@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class ManagementURI extends \Google\Model
-{
-    /**
-     * Output only. The ManagementServer AGM/RD API URL.
-     *
-     * @var string
-     */
-    public $api;
-    /**
-     * Output only. The ManagementServer AGM/RD WebUI URL.
-     *
-     * @var string
-     */
-    public $webUi;
-    /**
-     * Output only. The ManagementServer AGM/RD API URL.
-     *
-     * @param string $api
-     */
-    public function setApi($api)
+namespace Google\Service\Backupdr {
+    class ManagementURI extends \Google\Model
     {
+        /**
+         * Output only. The ManagementServer AGM/RD API URL.
+         *
+         * @var string
+         */
+        public $api;
+        /**
+         * Output only. The ManagementServer AGM/RD WebUI URL.
+         *
+         * @var string
+         */
+        public $webUi;
+        /**
+         * Output only. The ManagementServer AGM/RD API URL.
+         *
+         * @param string $api
+         */
+        public function setApi($api)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApi()
+        {
+        }
+        /**
+         * Output only. The ManagementServer AGM/RD WebUI URL.
+         *
+         * @param string $webUi
+         */
+        public function setWebUi($webUi)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebUi()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\ManagementURI registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApi()
-    {
-    }
-    /**
-     * Output only. The ManagementServer AGM/RD WebUI URL.
-     *
-     * @param string $webUi
-     */
-    public function setWebUi($webUi)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebUi()
+    class Google_Service_Backupdr_ManagementURI extends \Google\Service\Backupdr\ManagementURI
     {
     }
 }

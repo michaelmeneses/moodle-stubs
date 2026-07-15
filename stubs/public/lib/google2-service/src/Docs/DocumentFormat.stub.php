@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class DocumentFormat extends \Google\Model
-{
-    /**
-     * The document mode is unspecified.
-     */
-    public const DOCUMENT_MODE_DOCUMENT_MODE_UNSPECIFIED = 'DOCUMENT_MODE_UNSPECIFIED';
-    /**
-     * The document has pages.
-     */
-    public const DOCUMENT_MODE_PAGES = 'PAGES';
-    /**
-     * The document is pageless.
-     */
-    public const DOCUMENT_MODE_PAGELESS = 'PAGELESS';
-    /**
-     * Whether the document has pages or is pageless.
-     *
-     * @var string
-     */
-    public $documentMode;
-    /**
-     * Whether the document has pages or is pageless.
-     *
-     * Accepted values: DOCUMENT_MODE_UNSPECIFIED, PAGES, PAGELESS
-     *
-     * @param self::DOCUMENT_MODE_* $documentMode
-     */
-    public function setDocumentMode($documentMode)
+namespace Google\Service\Docs {
+    class DocumentFormat extends \Google\Model
     {
+        /**
+         * The document mode is unspecified.
+         */
+        public const DOCUMENT_MODE_DOCUMENT_MODE_UNSPECIFIED = 'DOCUMENT_MODE_UNSPECIFIED';
+        /**
+         * The document has pages.
+         */
+        public const DOCUMENT_MODE_PAGES = 'PAGES';
+        /**
+         * The document is pageless.
+         */
+        public const DOCUMENT_MODE_PAGELESS = 'PAGELESS';
+        /**
+         * Whether the document has pages or is pageless.
+         *
+         * @var string
+         */
+        public $documentMode;
+        /**
+         * Whether the document has pages or is pageless.
+         *
+         * Accepted values: DOCUMENT_MODE_UNSPECIFIED, PAGES, PAGELESS
+         *
+         * @param self::DOCUMENT_MODE_* $documentMode
+         */
+        public function setDocumentMode($documentMode)
+        {
+        }
+        /**
+         * @return self::DOCUMENT_MODE_*
+         */
+        public function getDocumentMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DOCUMENT_MODE_*
+     * Runtime class alias of \Google\Service\Docs\DocumentFormat registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentMode()
+    class Google_Service_Docs_DocumentFormat extends \Google\Service\Docs\DocumentFormat
     {
     }
 }

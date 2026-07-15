@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class PivotHeader extends \Google\Collection
-{
-    protected $collection_key = 'pivotHeaderEntries';
-    protected $pivotHeaderEntriesType = PivotHeaderEntry::class;
-    protected $pivotHeaderEntriesDataType = 'array';
-    /**
-     * @var int
-     */
-    public $totalPivotGroupsCount;
-    /**
-     * @param PivotHeaderEntry[]
-     */
-    public function setPivotHeaderEntries($pivotHeaderEntries)
+namespace Google\Service\AnalyticsReporting {
+    class PivotHeader extends \Google\Collection
     {
+        protected $collection_key = 'pivotHeaderEntries';
+        protected $pivotHeaderEntriesType = PivotHeaderEntry::class;
+        protected $pivotHeaderEntriesDataType = 'array';
+        /**
+         * @var int
+         */
+        public $totalPivotGroupsCount;
+        /**
+         * @param PivotHeaderEntry[]
+         */
+        public function setPivotHeaderEntries($pivotHeaderEntries)
+        {
+        }
+        /**
+         * @return PivotHeaderEntry[]
+         */
+        public function getPivotHeaderEntries()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setTotalPivotGroupsCount($totalPivotGroupsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalPivotGroupsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PivotHeaderEntry[]
+     * Runtime class alias of \Google\Service\AnalyticsReporting\PivotHeader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPivotHeaderEntries()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setTotalPivotGroupsCount($totalPivotGroupsCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalPivotGroupsCount()
+    class Google_Service_AnalyticsReporting_PivotHeader extends \Google\Service\AnalyticsReporting\PivotHeader
     {
     }
 }

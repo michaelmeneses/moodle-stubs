@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayableLocations;
-
-class GoogleMapsPlayablelocationsV3PlayerReport extends \Google\Collection
-{
-    protected $collection_key = 'reasons';
-    public $languageCode;
-    public $locationName;
-    public $reasonDetails;
-    public $reasons;
-    public function setLanguageCode($languageCode)
+namespace Google\Service\PlayableLocations {
+    class GoogleMapsPlayablelocationsV3PlayerReport extends \Google\Collection
     {
+        protected $collection_key = 'reasons';
+        public $languageCode;
+        public $locationName;
+        public $reasonDetails;
+        public $reasons;
+        public function setLanguageCode($languageCode)
+        {
+        }
+        public function getLanguageCode()
+        {
+        }
+        public function setLocationName($locationName)
+        {
+        }
+        public function getLocationName()
+        {
+        }
+        public function setReasonDetails($reasonDetails)
+        {
+        }
+        public function getReasonDetails()
+        {
+        }
+        public function setReasons($reasons)
+        {
+        }
+        public function getReasons()
+        {
+        }
     }
-    public function getLanguageCode()
-    {
-    }
-    public function setLocationName($locationName)
-    {
-    }
-    public function getLocationName()
-    {
-    }
-    public function setReasonDetails($reasonDetails)
-    {
-    }
-    public function getReasonDetails()
-    {
-    }
-    public function setReasons($reasons)
-    {
-    }
-    public function getReasons()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3PlayerReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PlayableLocations_GoogleMapsPlayablelocationsV3PlayerReport extends \Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3PlayerReport
     {
     }
 }

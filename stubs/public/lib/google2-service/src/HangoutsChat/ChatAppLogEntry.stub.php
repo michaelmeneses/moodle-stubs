@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class ChatAppLogEntry extends \Google\Model
-{
-    /**
-     * The deployment that caused the error. For Chat apps built in Apps Script,
-     * this is the deployment ID defined by Apps Script.
-     *
-     * @var string
-     */
-    public $deployment;
-    /**
-     * The unencrypted `callback_method` name that was running when the error was
-     * encountered.
-     *
-     * @var string
-     */
-    public $deploymentFunction;
-    protected $errorType = Status::class;
-    protected $errorDataType = '';
-    /**
-     * The deployment that caused the error. For Chat apps built in Apps Script,
-     * this is the deployment ID defined by Apps Script.
-     *
-     * @param string $deployment
-     */
-    public function setDeployment($deployment)
+namespace Google\Service\HangoutsChat {
+    class ChatAppLogEntry extends \Google\Model
     {
+        /**
+         * The deployment that caused the error. For Chat apps built in Apps Script,
+         * this is the deployment ID defined by Apps Script.
+         *
+         * @var string
+         */
+        public $deployment;
+        /**
+         * The unencrypted `callback_method` name that was running when the error was
+         * encountered.
+         *
+         * @var string
+         */
+        public $deploymentFunction;
+        protected $errorType = Status::class;
+        protected $errorDataType = '';
+        /**
+         * The deployment that caused the error. For Chat apps built in Apps Script,
+         * this is the deployment ID defined by Apps Script.
+         *
+         * @param string $deployment
+         */
+        public function setDeployment($deployment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeployment()
+        {
+        }
+        /**
+         * The unencrypted `callback_method` name that was running when the error was
+         * encountered.
+         *
+         * @param string $deploymentFunction
+         */
+        public function setDeploymentFunction($deploymentFunction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeploymentFunction()
+        {
+        }
+        /**
+         * The error code and message.
+         *
+         * @param Status $error
+         */
+        public function setError(Status $error)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getError()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\ChatAppLogEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployment()
-    {
-    }
-    /**
-     * The unencrypted `callback_method` name that was running when the error was
-     * encountered.
-     *
-     * @param string $deploymentFunction
-     */
-    public function setDeploymentFunction($deploymentFunction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeploymentFunction()
-    {
-    }
-    /**
-     * The error code and message.
-     *
-     * @param Status $error
-     */
-    public function setError(Status $error)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getError()
+    class Google_Service_HangoutsChat_ChatAppLogEntry extends \Google\Service\HangoutsChat\ChatAppLogEntry
     {
     }
 }

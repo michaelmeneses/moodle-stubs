@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class AccountTicket extends \Google\Model
-{
-    protected $accountType = Account::class;
-    protected $accountDataType = '';
-    /**
-     * Account ticket ID used to access the account ticket.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Resource type for account ticket.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $profileType = Profile::class;
-    protected $profileDataType = '';
-    /**
-     * Redirect URI where the user will be sent after accepting Terms of Service.
-     * Must be configured in APIs console as a callback URL.
-     *
-     * @var string
-     */
-    public $redirectUri;
-    protected $webpropertyType = Webproperty::class;
-    protected $webpropertyDataType = '';
-    /**
-     * Account for this ticket.
-     *
-     * @param Account $account
-     */
-    public function setAccount(Account $account)
+namespace Google\Service\Analytics {
+    class AccountTicket extends \Google\Model
     {
+        protected $accountType = Account::class;
+        protected $accountDataType = '';
+        /**
+         * Account ticket ID used to access the account ticket.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Resource type for account ticket.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $profileType = Profile::class;
+        protected $profileDataType = '';
+        /**
+         * Redirect URI where the user will be sent after accepting Terms of Service.
+         * Must be configured in APIs console as a callback URL.
+         *
+         * @var string
+         */
+        public $redirectUri;
+        protected $webpropertyType = Webproperty::class;
+        protected $webpropertyDataType = '';
+        /**
+         * Account for this ticket.
+         *
+         * @param Account $account
+         */
+        public function setAccount(Account $account)
+        {
+        }
+        /**
+         * @return Account
+         */
+        public function getAccount()
+        {
+        }
+        /**
+         * Account ticket ID used to access the account ticket.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Resource type for account ticket.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * View (Profile) for the account.
+         *
+         * @param Profile $profile
+         */
+        public function setProfile(Profile $profile)
+        {
+        }
+        /**
+         * @return Profile
+         */
+        public function getProfile()
+        {
+        }
+        /**
+         * Redirect URI where the user will be sent after accepting Terms of Service.
+         * Must be configured in APIs console as a callback URL.
+         *
+         * @param string $redirectUri
+         */
+        public function setRedirectUri($redirectUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRedirectUri()
+        {
+        }
+        /**
+         * Web property for the account.
+         *
+         * @param Webproperty $webproperty
+         */
+        public function setWebproperty(Webproperty $webproperty)
+        {
+        }
+        /**
+         * @return Webproperty
+         */
+        public function getWebproperty()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Account
+     * Runtime class alias of \Google\Service\Analytics\AccountTicket registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccount()
-    {
-    }
-    /**
-     * Account ticket ID used to access the account ticket.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Resource type for account ticket.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * View (Profile) for the account.
-     *
-     * @param Profile $profile
-     */
-    public function setProfile(Profile $profile)
-    {
-    }
-    /**
-     * @return Profile
-     */
-    public function getProfile()
-    {
-    }
-    /**
-     * Redirect URI where the user will be sent after accepting Terms of Service.
-     * Must be configured in APIs console as a callback URL.
-     *
-     * @param string $redirectUri
-     */
-    public function setRedirectUri($redirectUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRedirectUri()
-    {
-    }
-    /**
-     * Web property for the account.
-     *
-     * @param Webproperty $webproperty
-     */
-    public function setWebproperty(Webproperty $webproperty)
-    {
-    }
-    /**
-     * @return Webproperty
-     */
-    public function getWebproperty()
+    class Google_Service_Analytics_AccountTicket extends \Google\Service\Analytics\AccountTicket
     {
     }
 }

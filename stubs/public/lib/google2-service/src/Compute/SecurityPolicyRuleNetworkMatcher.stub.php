@@ -21,178 +21,187 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SecurityPolicyRuleNetworkMatcher extends \Google\Collection
-{
-    protected $collection_key = 'userDefinedFields';
-    /**
-     * Destination IPv4/IPv6 addresses or CIDR prefixes, in standard text format.
-     *
-     * @var string[]
-     */
-    public $destIpRanges;
-    /**
-     * Destination port numbers for TCP/UDP/SCTP. Each element can be a 16-bit
-     * unsigned decimal number (e.g. "80") or range (e.g. "0-1023").
-     *
-     * @var string[]
-     */
-    public $destPorts;
-    /**
-     * IPv4 protocol / IPv6 next header (after extension headers). Each element
-     * can be an 8-bit unsigned decimal number (e.g. "6"), range (e.g. "253-254"),
-     * or one of the following protocol names: "tcp", "udp", "icmp", "esp", "ah",
-     * "ipip", or "sctp".
-     *
-     * @var string[]
-     */
-    public $ipProtocols;
-    /**
-     * BGP Autonomous System Number associated with the source IP address.
-     *
-     * @var string[]
-     */
-    public $srcAsns;
-    /**
-     * Source IPv4/IPv6 addresses or CIDR prefixes, in standard text format.
-     *
-     * @var string[]
-     */
-    public $srcIpRanges;
-    /**
-     * Source port numbers for TCP/UDP/SCTP. Each element can be a 16-bit unsigned
-     * decimal number (e.g. "80") or range (e.g. "0-1023").
-     *
-     * @var string[]
-     */
-    public $srcPorts;
-    /**
-     * Two-letter ISO 3166-1 alpha-2 country code associated with the source IP
-     * address.
-     *
-     * @var string[]
-     */
-    public $srcRegionCodes;
-    protected $userDefinedFieldsType = SecurityPolicyRuleNetworkMatcherUserDefinedFieldMatch::class;
-    protected $userDefinedFieldsDataType = 'array';
-    /**
-     * Destination IPv4/IPv6 addresses or CIDR prefixes, in standard text format.
-     *
-     * @param string[] $destIpRanges
-     */
-    public function setDestIpRanges($destIpRanges)
+namespace Google\Service\Compute {
+    class SecurityPolicyRuleNetworkMatcher extends \Google\Collection
     {
+        protected $collection_key = 'userDefinedFields';
+        /**
+         * Destination IPv4/IPv6 addresses or CIDR prefixes, in standard text format.
+         *
+         * @var string[]
+         */
+        public $destIpRanges;
+        /**
+         * Destination port numbers for TCP/UDP/SCTP. Each element can be a 16-bit
+         * unsigned decimal number (e.g. "80") or range (e.g. "0-1023").
+         *
+         * @var string[]
+         */
+        public $destPorts;
+        /**
+         * IPv4 protocol / IPv6 next header (after extension headers). Each element
+         * can be an 8-bit unsigned decimal number (e.g. "6"), range (e.g. "253-254"),
+         * or one of the following protocol names: "tcp", "udp", "icmp", "esp", "ah",
+         * "ipip", or "sctp".
+         *
+         * @var string[]
+         */
+        public $ipProtocols;
+        /**
+         * BGP Autonomous System Number associated with the source IP address.
+         *
+         * @var string[]
+         */
+        public $srcAsns;
+        /**
+         * Source IPv4/IPv6 addresses or CIDR prefixes, in standard text format.
+         *
+         * @var string[]
+         */
+        public $srcIpRanges;
+        /**
+         * Source port numbers for TCP/UDP/SCTP. Each element can be a 16-bit unsigned
+         * decimal number (e.g. "80") or range (e.g. "0-1023").
+         *
+         * @var string[]
+         */
+        public $srcPorts;
+        /**
+         * Two-letter ISO 3166-1 alpha-2 country code associated with the source IP
+         * address.
+         *
+         * @var string[]
+         */
+        public $srcRegionCodes;
+        protected $userDefinedFieldsType = SecurityPolicyRuleNetworkMatcherUserDefinedFieldMatch::class;
+        protected $userDefinedFieldsDataType = 'array';
+        /**
+         * Destination IPv4/IPv6 addresses or CIDR prefixes, in standard text format.
+         *
+         * @param string[] $destIpRanges
+         */
+        public function setDestIpRanges($destIpRanges)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDestIpRanges()
+        {
+        }
+        /**
+         * Destination port numbers for TCP/UDP/SCTP. Each element can be a 16-bit
+         * unsigned decimal number (e.g. "80") or range (e.g. "0-1023").
+         *
+         * @param string[] $destPorts
+         */
+        public function setDestPorts($destPorts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDestPorts()
+        {
+        }
+        /**
+         * IPv4 protocol / IPv6 next header (after extension headers). Each element
+         * can be an 8-bit unsigned decimal number (e.g. "6"), range (e.g. "253-254"),
+         * or one of the following protocol names: "tcp", "udp", "icmp", "esp", "ah",
+         * "ipip", or "sctp".
+         *
+         * @param string[] $ipProtocols
+         */
+        public function setIpProtocols($ipProtocols)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIpProtocols()
+        {
+        }
+        /**
+         * BGP Autonomous System Number associated with the source IP address.
+         *
+         * @param string[] $srcAsns
+         */
+        public function setSrcAsns($srcAsns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSrcAsns()
+        {
+        }
+        /**
+         * Source IPv4/IPv6 addresses or CIDR prefixes, in standard text format.
+         *
+         * @param string[] $srcIpRanges
+         */
+        public function setSrcIpRanges($srcIpRanges)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSrcIpRanges()
+        {
+        }
+        /**
+         * Source port numbers for TCP/UDP/SCTP. Each element can be a 16-bit unsigned
+         * decimal number (e.g. "80") or range (e.g. "0-1023").
+         *
+         * @param string[] $srcPorts
+         */
+        public function setSrcPorts($srcPorts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSrcPorts()
+        {
+        }
+        /**
+         * Two-letter ISO 3166-1 alpha-2 country code associated with the source IP
+         * address.
+         *
+         * @param string[] $srcRegionCodes
+         */
+        public function setSrcRegionCodes($srcRegionCodes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSrcRegionCodes()
+        {
+        }
+        /**
+         * User-defined fields. Each element names a defined field and lists the
+         * matching values for that field.
+         *
+         * @param SecurityPolicyRuleNetworkMatcherUserDefinedFieldMatch[] $userDefinedFields
+         */
+        public function setUserDefinedFields($userDefinedFields)
+        {
+        }
+        /**
+         * @return SecurityPolicyRuleNetworkMatcherUserDefinedFieldMatch[]
+         */
+        public function getUserDefinedFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\SecurityPolicyRuleNetworkMatcher registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestIpRanges()
-    {
-    }
-    /**
-     * Destination port numbers for TCP/UDP/SCTP. Each element can be a 16-bit
-     * unsigned decimal number (e.g. "80") or range (e.g. "0-1023").
-     *
-     * @param string[] $destPorts
-     */
-    public function setDestPorts($destPorts)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDestPorts()
-    {
-    }
-    /**
-     * IPv4 protocol / IPv6 next header (after extension headers). Each element
-     * can be an 8-bit unsigned decimal number (e.g. "6"), range (e.g. "253-254"),
-     * or one of the following protocol names: "tcp", "udp", "icmp", "esp", "ah",
-     * "ipip", or "sctp".
-     *
-     * @param string[] $ipProtocols
-     */
-    public function setIpProtocols($ipProtocols)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIpProtocols()
-    {
-    }
-    /**
-     * BGP Autonomous System Number associated with the source IP address.
-     *
-     * @param string[] $srcAsns
-     */
-    public function setSrcAsns($srcAsns)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSrcAsns()
-    {
-    }
-    /**
-     * Source IPv4/IPv6 addresses or CIDR prefixes, in standard text format.
-     *
-     * @param string[] $srcIpRanges
-     */
-    public function setSrcIpRanges($srcIpRanges)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSrcIpRanges()
-    {
-    }
-    /**
-     * Source port numbers for TCP/UDP/SCTP. Each element can be a 16-bit unsigned
-     * decimal number (e.g. "80") or range (e.g. "0-1023").
-     *
-     * @param string[] $srcPorts
-     */
-    public function setSrcPorts($srcPorts)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSrcPorts()
-    {
-    }
-    /**
-     * Two-letter ISO 3166-1 alpha-2 country code associated with the source IP
-     * address.
-     *
-     * @param string[] $srcRegionCodes
-     */
-    public function setSrcRegionCodes($srcRegionCodes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSrcRegionCodes()
-    {
-    }
-    /**
-     * User-defined fields. Each element names a defined field and lists the
-     * matching values for that field.
-     *
-     * @param SecurityPolicyRuleNetworkMatcherUserDefinedFieldMatch[] $userDefinedFields
-     */
-    public function setUserDefinedFields($userDefinedFields)
-    {
-    }
-    /**
-     * @return SecurityPolicyRuleNetworkMatcherUserDefinedFieldMatch[]
-     */
-    public function getUserDefinedFields()
+    class Google_Service_Compute_SecurityPolicyRuleNetworkMatcher extends \Google\Service\Compute\SecurityPolicyRuleNetworkMatcher
     {
     }
 }

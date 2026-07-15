@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1SearchNearbyResponse extends \Google\Collection
-{
-    protected $collection_key = 'routingSummaries';
-    protected $placesType = GoogleMapsPlacesV1Place::class;
-    protected $placesDataType = 'array';
-    protected $routingSummariesType = GoogleMapsPlacesV1RoutingSummary::class;
-    protected $routingSummariesDataType = 'array';
-    /**
-     * A list of places that meets user's requirements like places types, number
-     * of places and specific location restriction.
-     *
-     * @param GoogleMapsPlacesV1Place[] $places
-     */
-    public function setPlaces($places)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1SearchNearbyResponse extends \Google\Collection
     {
+        protected $collection_key = 'routingSummaries';
+        protected $placesType = GoogleMapsPlacesV1Place::class;
+        protected $placesDataType = 'array';
+        protected $routingSummariesType = GoogleMapsPlacesV1RoutingSummary::class;
+        protected $routingSummariesDataType = 'array';
+        /**
+         * A list of places that meets user's requirements like places types, number
+         * of places and specific location restriction.
+         *
+         * @param GoogleMapsPlacesV1Place[] $places
+         */
+        public function setPlaces($places)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1Place[]
+         */
+        public function getPlaces()
+        {
+        }
+        /**
+         * A list of routing summaries where each entry associates to the
+         * corresponding place in the same index in the `places` field. If the routing
+         * summary is not available for one of the places, it will contain an empty
+         * entry. This list should have as many entries as the list of places if
+         * requested.
+         *
+         * @param GoogleMapsPlacesV1RoutingSummary[] $routingSummaries
+         */
+        public function setRoutingSummaries($routingSummaries)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1RoutingSummary[]
+         */
+        public function getRoutingSummaries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleMapsPlacesV1Place[]
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1SearchNearbyResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlaces()
-    {
-    }
-    /**
-     * A list of routing summaries where each entry associates to the
-     * corresponding place in the same index in the `places` field. If the routing
-     * summary is not available for one of the places, it will contain an empty
-     * entry. This list should have as many entries as the list of places if
-     * requested.
-     *
-     * @param GoogleMapsPlacesV1RoutingSummary[] $routingSummaries
-     */
-    public function setRoutingSummaries($routingSummaries)
-    {
-    }
-    /**
-     * @return GoogleMapsPlacesV1RoutingSummary[]
-     */
-    public function getRoutingSummaries()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1SearchNearbyResponse extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1SearchNearbyResponse
     {
     }
 }

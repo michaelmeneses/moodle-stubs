@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class ListStudentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'students';
-    /**
-     * Token identifying the next page of results to return. If empty, no further
-     * results are available.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $studentsType = Student::class;
-    protected $studentsDataType = 'array';
-    /**
-     * Token identifying the next page of results to return. If empty, no further
-     * results are available.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Classroom {
+    class ListStudentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'students';
+        /**
+         * Token identifying the next page of results to return. If empty, no further
+         * results are available.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $studentsType = Student::class;
+        protected $studentsDataType = 'array';
+        /**
+         * Token identifying the next page of results to return. If empty, no further
+         * results are available.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Students who match the list request.
+         *
+         * @param Student[] $students
+         */
+        public function setStudents($students)
+        {
+        }
+        /**
+         * @return Student[]
+         */
+        public function getStudents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\ListStudentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Students who match the list request.
-     *
-     * @param Student[] $students
-     */
-    public function setStudents($students)
-    {
-    }
-    /**
-     * @return Student[]
-     */
-    public function getStudents()
+    class Google_Service_Classroom_ListStudentsResponse extends \Google\Service\Classroom\ListStudentsResponse
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2ImageLocation extends \Google\Collection
-{
-    protected $collection_key = 'boundingBoxes';
-    protected $boundingBoxesType = GooglePrivacyDlpV2BoundingBox::class;
-    protected $boundingBoxesDataType = 'array';
-    /**
-     * Bounding boxes locating the pixels within the image containing the finding.
-     *
-     * @param GooglePrivacyDlpV2BoundingBox[] $boundingBoxes
-     */
-    public function setBoundingBoxes($boundingBoxes)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2ImageLocation extends \Google\Collection
     {
+        protected $collection_key = 'boundingBoxes';
+        protected $boundingBoxesType = GooglePrivacyDlpV2BoundingBox::class;
+        protected $boundingBoxesDataType = 'array';
+        /**
+         * Bounding boxes locating the pixels within the image containing the finding.
+         *
+         * @param GooglePrivacyDlpV2BoundingBox[] $boundingBoxes
+         */
+        public function setBoundingBoxes($boundingBoxes)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2BoundingBox[]
+         */
+        public function getBoundingBoxes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2BoundingBox[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2ImageLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoundingBoxes()
+    class Google_Service_DLP_GooglePrivacyDlpV2ImageLocation extends \Google\Service\DLP\GooglePrivacyDlpV2ImageLocation
     {
     }
 }

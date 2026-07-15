@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class Chokepoint extends \Google\Collection
-{
-    protected $collection_key = 'relatedFindings';
-    /**
-     * List of resource names of findings associated with this chokepoint. For
-     * example, organizations/123/sources/456/findings/789. This list will have at
-     * most 100 findings.
-     *
-     * @var string[]
-     */
-    public $relatedFindings;
-    /**
-     * List of resource names of findings associated with this chokepoint. For
-     * example, organizations/123/sources/456/findings/789. This list will have at
-     * most 100 findings.
-     *
-     * @param string[] $relatedFindings
-     */
-    public function setRelatedFindings($relatedFindings)
+namespace Google\Service\SecurityCommandCenter {
+    class Chokepoint extends \Google\Collection
     {
+        protected $collection_key = 'relatedFindings';
+        /**
+         * List of resource names of findings associated with this chokepoint. For
+         * example, organizations/123/sources/456/findings/789. This list will have at
+         * most 100 findings.
+         *
+         * @var string[]
+         */
+        public $relatedFindings;
+        /**
+         * List of resource names of findings associated with this chokepoint. For
+         * example, organizations/123/sources/456/findings/789. This list will have at
+         * most 100 findings.
+         *
+         * @param string[] $relatedFindings
+         */
+        public function setRelatedFindings($relatedFindings)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRelatedFindings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\Chokepoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRelatedFindings()
+    class Google_Service_SecurityCommandCenter_Chokepoint extends \Google\Service\SecurityCommandCenter\Chokepoint
     {
     }
 }

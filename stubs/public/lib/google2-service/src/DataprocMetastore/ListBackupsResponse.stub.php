@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class ListBackupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $backupsType = Backup::class;
-    protected $backupsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * @param Backup[]
-     */
-    public function setBackups($backups)
+namespace Google\Service\DataprocMetastore {
+    class ListBackupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $backupsType = Backup::class;
+        protected $backupsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * @param Backup[]
+         */
+        public function setBackups($backups)
+        {
+        }
+        /**
+         * @return Backup[]
+         */
+        public function getBackups()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Backup[]
+     * Runtime class alias of \Google\Service\DataprocMetastore\ListBackupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackups()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_DataprocMetastore_ListBackupsResponse extends \Google\Service\DataprocMetastore\ListBackupsResponse
     {
     }
 }

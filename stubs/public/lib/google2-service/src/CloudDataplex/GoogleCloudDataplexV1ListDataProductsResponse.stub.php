@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1ListDataProductsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $dataProductsType = GoogleCloudDataplexV1DataProduct::class;
-    protected $dataProductsDataType = 'array';
-    /**
-     * A token, which can be sent as page_token to retrieve the next page. If this
-     * field is empty, then there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Unordered list. Locations that the service couldn't reach.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The Data Products for the requested filter criteria.
-     *
-     * @param GoogleCloudDataplexV1DataProduct[] $dataProducts
-     */
-    public function setDataProducts($dataProducts)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1ListDataProductsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $dataProductsType = GoogleCloudDataplexV1DataProduct::class;
+        protected $dataProductsDataType = 'array';
+        /**
+         * A token, which can be sent as page_token to retrieve the next page. If this
+         * field is empty, then there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Unordered list. Locations that the service couldn't reach.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The Data Products for the requested filter criteria.
+         *
+         * @param GoogleCloudDataplexV1DataProduct[] $dataProducts
+         */
+        public function setDataProducts($dataProducts)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataProduct[]
+         */
+        public function getDataProducts()
+        {
+        }
+        /**
+         * A token, which can be sent as page_token to retrieve the next page. If this
+         * field is empty, then there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Unordered list. Locations that the service couldn't reach.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1DataProduct[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListDataProductsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataProducts()
-    {
-    }
-    /**
-     * A token, which can be sent as page_token to retrieve the next page. If this
-     * field is empty, then there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Unordered list. Locations that the service couldn't reach.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1ListDataProductsResponse extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListDataProductsResponse
     {
     }
 }

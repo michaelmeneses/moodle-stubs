@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1BatchGetTransformDescriptionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'transformDescriptions';
-    protected $transformDescriptionsType = GoogleCloudDatapipelinesV1TransformDescription::class;
-    protected $transformDescriptionsDataType = 'array';
-    /**
-     * @param GoogleCloudDatapipelinesV1TransformDescription[]
-     */
-    public function setTransformDescriptions($transformDescriptions)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1BatchGetTransformDescriptionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'transformDescriptions';
+        protected $transformDescriptionsType = GoogleCloudDatapipelinesV1TransformDescription::class;
+        protected $transformDescriptionsDataType = 'array';
+        /**
+         * @param GoogleCloudDatapipelinesV1TransformDescription[]
+         */
+        public function setTransformDescriptions($transformDescriptions)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1TransformDescription[]
+         */
+        public function getTransformDescriptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatapipelinesV1TransformDescription[]
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1BatchGetTransformDescriptionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTransformDescriptions()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1BatchGetTransformDescriptionsResponse extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1BatchGetTransformDescriptionsResponse
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ImageComponent extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $altText;
-    protected $borderStyleType = BorderStyle::class;
-    protected $borderStyleDataType = '';
-    protected $cropStyleType = ImageCropStyle::class;
-    protected $cropStyleDataType = '';
-    /**
-     * @var string
-     */
-    public $imageUrl;
-    /**
-     * @param string
-     */
-    public function setAltText($altText)
+namespace Google\Service\CloudSearch {
+    class ImageComponent extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $altText;
+        protected $borderStyleType = BorderStyle::class;
+        protected $borderStyleDataType = '';
+        protected $cropStyleType = ImageCropStyle::class;
+        protected $cropStyleDataType = '';
+        /**
+         * @var string
+         */
+        public $imageUrl;
+        /**
+         * @param string
+         */
+        public function setAltText($altText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAltText()
+        {
+        }
+        /**
+         * @param BorderStyle
+         */
+        public function setBorderStyle(BorderStyle $borderStyle)
+        {
+        }
+        /**
+         * @return BorderStyle
+         */
+        public function getBorderStyle()
+        {
+        }
+        /**
+         * @param ImageCropStyle
+         */
+        public function setCropStyle(ImageCropStyle $cropStyle)
+        {
+        }
+        /**
+         * @return ImageCropStyle
+         */
+        public function getCropStyle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setImageUrl($imageUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\ImageComponent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAltText()
-    {
-    }
-    /**
-     * @param BorderStyle
-     */
-    public function setBorderStyle(BorderStyle $borderStyle)
-    {
-    }
-    /**
-     * @return BorderStyle
-     */
-    public function getBorderStyle()
-    {
-    }
-    /**
-     * @param ImageCropStyle
-     */
-    public function setCropStyle(ImageCropStyle $cropStyle)
-    {
-    }
-    /**
-     * @return ImageCropStyle
-     */
-    public function getCropStyle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setImageUrl($imageUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUrl()
+    class Google_Service_CloudSearch_ImageComponent extends \Google\Service\CloudSearch\ImageComponent
     {
     }
 }

@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class MobileApp extends \Google\Model
-{
-    /**
-     * Platform is not specified.
-     */
-    public const PLATFORM_PLATFORM_UNSPECIFIED = 'PLATFORM_UNSPECIFIED';
-    /**
-     * iOS platform.
-     */
-    public const PLATFORM_IOS = 'IOS';
-    /**
-     * Android platform.
-     */
-    public const PLATFORM_ANDROID = 'ANDROID';
-    /**
-     * Required. The ID of the app provided by the platform store. Android apps
-     * are identified by the bundle ID used by Android's Play store, such as
-     * `com.google.android.gm`. iOS apps are identified by a nine-digit app ID
-     * used by Apple's App store, such as `422689480`.
-     *
-     * @var string
-     */
-    public $appId;
-    /**
-     * Output only. The app name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The app platform.
-     *
-     * @var string
-     */
-    public $platform;
-    /**
-     * Output only. The app publisher.
-     *
-     * @var string
-     */
-    public $publisher;
-    /**
-     * Required. The ID of the app provided by the platform store. Android apps
-     * are identified by the bundle ID used by Android's Play store, such as
-     * `com.google.android.gm`. iOS apps are identified by a nine-digit app ID
-     * used by Apple's App store, such as `422689480`.
-     *
-     * @param string $appId
-     */
-    public function setAppId($appId)
+namespace Google\Service\DisplayVideo {
+    class MobileApp extends \Google\Model
     {
+        /**
+         * Platform is not specified.
+         */
+        public const PLATFORM_PLATFORM_UNSPECIFIED = 'PLATFORM_UNSPECIFIED';
+        /**
+         * iOS platform.
+         */
+        public const PLATFORM_IOS = 'IOS';
+        /**
+         * Android platform.
+         */
+        public const PLATFORM_ANDROID = 'ANDROID';
+        /**
+         * Required. The ID of the app provided by the platform store. Android apps
+         * are identified by the bundle ID used by Android's Play store, such as
+         * `com.google.android.gm`. iOS apps are identified by a nine-digit app ID
+         * used by Apple's App store, such as `422689480`.
+         *
+         * @var string
+         */
+        public $appId;
+        /**
+         * Output only. The app name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The app platform.
+         *
+         * @var string
+         */
+        public $platform;
+        /**
+         * Output only. The app publisher.
+         *
+         * @var string
+         */
+        public $publisher;
+        /**
+         * Required. The ID of the app provided by the platform store. Android apps
+         * are identified by the bundle ID used by Android's Play store, such as
+         * `com.google.android.gm`. iOS apps are identified by a nine-digit app ID
+         * used by Apple's App store, such as `422689480`.
+         *
+         * @param string $appId
+         */
+        public function setAppId($appId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppId()
+        {
+        }
+        /**
+         * Output only. The app name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. The app platform.
+         *
+         * Accepted values: PLATFORM_UNSPECIFIED, IOS, ANDROID
+         *
+         * @param self::PLATFORM_* $platform
+         */
+        public function setPlatform($platform)
+        {
+        }
+        /**
+         * @return self::PLATFORM_*
+         */
+        public function getPlatform()
+        {
+        }
+        /**
+         * Output only. The app publisher.
+         *
+         * @param string $publisher
+         */
+        public function setPublisher($publisher)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublisher()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\MobileApp registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppId()
-    {
-    }
-    /**
-     * Output only. The app name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. The app platform.
-     *
-     * Accepted values: PLATFORM_UNSPECIFIED, IOS, ANDROID
-     *
-     * @param self::PLATFORM_* $platform
-     */
-    public function setPlatform($platform)
-    {
-    }
-    /**
-     * @return self::PLATFORM_*
-     */
-    public function getPlatform()
-    {
-    }
-    /**
-     * Output only. The app publisher.
-     *
-     * @param string $publisher
-     */
-    public function setPublisher($publisher)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublisher()
+    class Google_Service_DisplayVideo_MobileApp extends \Google\Service\DisplayVideo\MobileApp
     {
     }
 }

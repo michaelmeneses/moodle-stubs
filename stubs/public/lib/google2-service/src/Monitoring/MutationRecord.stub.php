@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class MutationRecord extends \Google\Model
-{
-    /**
-     * When the change occurred.
-     *
-     * @var string
-     */
-    public $mutateTime;
-    /**
-     * The email address of the user making the change.
-     *
-     * @var string
-     */
-    public $mutatedBy;
-    /**
-     * When the change occurred.
-     *
-     * @param string $mutateTime
-     */
-    public function setMutateTime($mutateTime)
+namespace Google\Service\Monitoring {
+    class MutationRecord extends \Google\Model
     {
+        /**
+         * When the change occurred.
+         *
+         * @var string
+         */
+        public $mutateTime;
+        /**
+         * The email address of the user making the change.
+         *
+         * @var string
+         */
+        public $mutatedBy;
+        /**
+         * When the change occurred.
+         *
+         * @param string $mutateTime
+         */
+        public function setMutateTime($mutateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMutateTime()
+        {
+        }
+        /**
+         * The email address of the user making the change.
+         *
+         * @param string $mutatedBy
+         */
+        public function setMutatedBy($mutatedBy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMutatedBy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\MutationRecord registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMutateTime()
-    {
-    }
-    /**
-     * The email address of the user making the change.
-     *
-     * @param string $mutatedBy
-     */
-    public function setMutatedBy($mutatedBy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMutatedBy()
+    class Google_Service_Monitoring_MutationRecord extends \Google\Service\Monitoring\MutationRecord
     {
     }
 }

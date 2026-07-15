@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class AuxiliaryNodeGroup extends \Google\Model
-{
-    protected $nodeGroupType = NodeGroup::class;
-    protected $nodeGroupDataType = '';
-    /**
-     * Optional. A node group ID. Generated if not specified.The ID must contain
-     * only letters (a-z, A-Z), numbers (0-9), underscores (_), and hyphens (-).
-     * Cannot begin or end with underscore or hyphen. Must consist of from 3 to 33
-     * characters.
-     *
-     * @var string
-     */
-    public $nodeGroupId;
-    /**
-     * Required. Node group configuration.
-     *
-     * @param NodeGroup $nodeGroup
-     */
-    public function setNodeGroup(NodeGroup $nodeGroup)
+namespace Google\Service\Dataproc {
+    class AuxiliaryNodeGroup extends \Google\Model
     {
+        protected $nodeGroupType = NodeGroup::class;
+        protected $nodeGroupDataType = '';
+        /**
+         * Optional. A node group ID. Generated if not specified.The ID must contain
+         * only letters (a-z, A-Z), numbers (0-9), underscores (_), and hyphens (-).
+         * Cannot begin or end with underscore or hyphen. Must consist of from 3 to 33
+         * characters.
+         *
+         * @var string
+         */
+        public $nodeGroupId;
+        /**
+         * Required. Node group configuration.
+         *
+         * @param NodeGroup $nodeGroup
+         */
+        public function setNodeGroup(NodeGroup $nodeGroup)
+        {
+        }
+        /**
+         * @return NodeGroup
+         */
+        public function getNodeGroup()
+        {
+        }
+        /**
+         * Optional. A node group ID. Generated if not specified.The ID must contain
+         * only letters (a-z, A-Z), numbers (0-9), underscores (_), and hyphens (-).
+         * Cannot begin or end with underscore or hyphen. Must consist of from 3 to 33
+         * characters.
+         *
+         * @param string $nodeGroupId
+         */
+        public function setNodeGroupId($nodeGroupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNodeGroupId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NodeGroup
+     * Runtime class alias of \Google\Service\Dataproc\AuxiliaryNodeGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNodeGroup()
-    {
-    }
-    /**
-     * Optional. A node group ID. Generated if not specified.The ID must contain
-     * only letters (a-z, A-Z), numbers (0-9), underscores (_), and hyphens (-).
-     * Cannot begin or end with underscore or hyphen. Must consist of from 3 to 33
-     * characters.
-     *
-     * @param string $nodeGroupId
-     */
-    public function setNodeGroupId($nodeGroupId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNodeGroupId()
+    class Google_Service_Dataproc_AuxiliaryNodeGroup extends \Google\Service\Dataproc\AuxiliaryNodeGroup
     {
     }
 }

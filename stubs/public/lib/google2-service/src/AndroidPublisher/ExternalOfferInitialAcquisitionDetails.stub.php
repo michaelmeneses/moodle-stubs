@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ExternalOfferInitialAcquisitionDetails extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $externalTransactionId;
-    /**
-     * @param string
-     */
-    public function setExternalTransactionId($externalTransactionId)
+namespace Google\Service\AndroidPublisher {
+    class ExternalOfferInitialAcquisitionDetails extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $externalTransactionId;
+        /**
+         * @param string
+         */
+        public function setExternalTransactionId($externalTransactionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternalTransactionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\ExternalOfferInitialAcquisitionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExternalTransactionId()
+    class Google_Service_AndroidPublisher_ExternalOfferInitialAcquisitionDetails extends \Google\Service\AndroidPublisher\ExternalOfferInitialAcquisitionDetails
     {
     }
 }

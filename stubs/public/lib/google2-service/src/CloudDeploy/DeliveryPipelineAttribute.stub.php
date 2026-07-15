@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class DeliveryPipelineAttribute extends \Google\Model
-{
-    /**
-     * Optional. ID of the `DeliveryPipeline`. The value of this field could be
-     * one of the following: * The last segment of a pipeline name * "*", all
-     * delivery pipelines in a location
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * DeliveryPipeline labels.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Optional. ID of the `DeliveryPipeline`. The value of this field could be
-     * one of the following: * The last segment of a pipeline name * "*", all
-     * delivery pipelines in a location
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\CloudDeploy {
+    class DeliveryPipelineAttribute extends \Google\Model
     {
+        /**
+         * Optional. ID of the `DeliveryPipeline`. The value of this field could be
+         * one of the following: * The last segment of a pipeline name * "*", all
+         * delivery pipelines in a location
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * DeliveryPipeline labels.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Optional. ID of the `DeliveryPipeline`. The value of this field could be
+         * one of the following: * The last segment of a pipeline name * "*", all
+         * delivery pipelines in a location
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * DeliveryPipeline labels.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\DeliveryPipelineAttribute registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * DeliveryPipeline labels.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
+    class Google_Service_CloudDeploy_DeliveryPipelineAttribute extends \Google\Service\CloudDeploy\DeliveryPipelineAttribute
     {
     }
 }

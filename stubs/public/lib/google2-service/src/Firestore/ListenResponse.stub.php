@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class ListenResponse extends \Google\Model
-{
-    protected $documentChangeType = DocumentChange::class;
-    protected $documentChangeDataType = '';
-    protected $documentDeleteType = DocumentDelete::class;
-    protected $documentDeleteDataType = '';
-    protected $documentRemoveType = DocumentRemove::class;
-    protected $documentRemoveDataType = '';
-    protected $filterType = ExistenceFilter::class;
-    protected $filterDataType = '';
-    protected $targetChangeType = TargetChange::class;
-    protected $targetChangeDataType = '';
-    /**
-     * A Document has changed.
-     *
-     * @param DocumentChange $documentChange
-     */
-    public function setDocumentChange(DocumentChange $documentChange)
+namespace Google\Service\Firestore {
+    class ListenResponse extends \Google\Model
     {
+        protected $documentChangeType = DocumentChange::class;
+        protected $documentChangeDataType = '';
+        protected $documentDeleteType = DocumentDelete::class;
+        protected $documentDeleteDataType = '';
+        protected $documentRemoveType = DocumentRemove::class;
+        protected $documentRemoveDataType = '';
+        protected $filterType = ExistenceFilter::class;
+        protected $filterDataType = '';
+        protected $targetChangeType = TargetChange::class;
+        protected $targetChangeDataType = '';
+        /**
+         * A Document has changed.
+         *
+         * @param DocumentChange $documentChange
+         */
+        public function setDocumentChange(DocumentChange $documentChange)
+        {
+        }
+        /**
+         * @return DocumentChange
+         */
+        public function getDocumentChange()
+        {
+        }
+        /**
+         * A Document has been deleted.
+         *
+         * @param DocumentDelete $documentDelete
+         */
+        public function setDocumentDelete(DocumentDelete $documentDelete)
+        {
+        }
+        /**
+         * @return DocumentDelete
+         */
+        public function getDocumentDelete()
+        {
+        }
+        /**
+         * A Document has been removed from a target (because it is no longer relevant
+         * to that target).
+         *
+         * @param DocumentRemove $documentRemove
+         */
+        public function setDocumentRemove(DocumentRemove $documentRemove)
+        {
+        }
+        /**
+         * @return DocumentRemove
+         */
+        public function getDocumentRemove()
+        {
+        }
+        /**
+         * A filter to apply to the set of documents previously returned for the given
+         * target. Returned when documents may have been removed from the given
+         * target, but the exact documents are unknown.
+         *
+         * @param ExistenceFilter $filter
+         */
+        public function setFilter(ExistenceFilter $filter)
+        {
+        }
+        /**
+         * @return ExistenceFilter
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * Targets have changed.
+         *
+         * @param TargetChange $targetChange
+         */
+        public function setTargetChange(TargetChange $targetChange)
+        {
+        }
+        /**
+         * @return TargetChange
+         */
+        public function getTargetChange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DocumentChange
+     * Runtime class alias of \Google\Service\Firestore\ListenResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentChange()
-    {
-    }
-    /**
-     * A Document has been deleted.
-     *
-     * @param DocumentDelete $documentDelete
-     */
-    public function setDocumentDelete(DocumentDelete $documentDelete)
-    {
-    }
-    /**
-     * @return DocumentDelete
-     */
-    public function getDocumentDelete()
-    {
-    }
-    /**
-     * A Document has been removed from a target (because it is no longer relevant
-     * to that target).
-     *
-     * @param DocumentRemove $documentRemove
-     */
-    public function setDocumentRemove(DocumentRemove $documentRemove)
-    {
-    }
-    /**
-     * @return DocumentRemove
-     */
-    public function getDocumentRemove()
-    {
-    }
-    /**
-     * A filter to apply to the set of documents previously returned for the given
-     * target. Returned when documents may have been removed from the given
-     * target, but the exact documents are unknown.
-     *
-     * @param ExistenceFilter $filter
-     */
-    public function setFilter(ExistenceFilter $filter)
-    {
-    }
-    /**
-     * @return ExistenceFilter
-     */
-    public function getFilter()
-    {
-    }
-    /**
-     * Targets have changed.
-     *
-     * @param TargetChange $targetChange
-     */
-    public function setTargetChange(TargetChange $targetChange)
-    {
-    }
-    /**
-     * @return TargetChange
-     */
-    public function getTargetChange()
+    class Google_Service_Firestore_ListenResponse extends \Google\Service\Firestore\ListenResponse
     {
     }
 }

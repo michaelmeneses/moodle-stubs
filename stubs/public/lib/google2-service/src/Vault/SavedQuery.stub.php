@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class SavedQuery extends \Google\Model
-{
-    /**
-     * Output only. The server-generated timestamp when the saved query was
-     * created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The name of the saved query.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The matter ID of the matter the saved query is saved in. The
-     * server does not use this field during create and always uses matter ID in
-     * the URL.
-     *
-     * @var string
-     */
-    public $matterId;
-    protected $queryType = Query::class;
-    protected $queryDataType = '';
-    /**
-     * A unique identifier for the saved query.
-     *
-     * @var string
-     */
-    public $savedQueryId;
-    /**
-     * Output only. The server-generated timestamp when the saved query was
-     * created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Vault {
+    class SavedQuery extends \Google\Model
     {
+        /**
+         * Output only. The server-generated timestamp when the saved query was
+         * created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The name of the saved query.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The matter ID of the matter the saved query is saved in. The
+         * server does not use this field during create and always uses matter ID in
+         * the URL.
+         *
+         * @var string
+         */
+        public $matterId;
+        protected $queryType = Query::class;
+        protected $queryDataType = '';
+        /**
+         * A unique identifier for the saved query.
+         *
+         * @var string
+         */
+        public $savedQueryId;
+        /**
+         * Output only. The server-generated timestamp when the saved query was
+         * created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The name of the saved query.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. The matter ID of the matter the saved query is saved in. The
+         * server does not use this field during create and always uses matter ID in
+         * the URL.
+         *
+         * @param string $matterId
+         */
+        public function setMatterId($matterId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatterId()
+        {
+        }
+        /**
+         * The search parameters of the saved query.
+         *
+         * @param Query $query
+         */
+        public function setQuery(Query $query)
+        {
+        }
+        /**
+         * @return Query
+         */
+        public function getQuery()
+        {
+        }
+        /**
+         * A unique identifier for the saved query.
+         *
+         * @param string $savedQueryId
+         */
+        public function setSavedQueryId($savedQueryId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSavedQueryId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vault\SavedQuery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The name of the saved query.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. The matter ID of the matter the saved query is saved in. The
-     * server does not use this field during create and always uses matter ID in
-     * the URL.
-     *
-     * @param string $matterId
-     */
-    public function setMatterId($matterId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMatterId()
-    {
-    }
-    /**
-     * The search parameters of the saved query.
-     *
-     * @param Query $query
-     */
-    public function setQuery(Query $query)
-    {
-    }
-    /**
-     * @return Query
-     */
-    public function getQuery()
-    {
-    }
-    /**
-     * A unique identifier for the saved query.
-     *
-     * @param string $savedQueryId
-     */
-    public function setSavedQueryId($savedQueryId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSavedQueryId()
+    class Google_Service_Vault_SavedQuery extends \Google\Service\Vault\SavedQuery
     {
     }
 }

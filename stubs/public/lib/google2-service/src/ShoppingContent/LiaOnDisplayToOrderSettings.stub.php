@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class LiaOnDisplayToOrderSettings extends \Google\Model
-{
-    /**
-     * Shipping cost and policy URL.
-     *
-     * @var string
-     */
-    public $shippingCostPolicyUrl;
-    /**
-     * The status of the ?On display to order? feature. Acceptable values are: -
-     * "`active`" - "`inactive`" - "`pending`"
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Shipping cost and policy URL.
-     *
-     * @param string $shippingCostPolicyUrl
-     */
-    public function setShippingCostPolicyUrl($shippingCostPolicyUrl)
+namespace Google\Service\ShoppingContent {
+    class LiaOnDisplayToOrderSettings extends \Google\Model
     {
+        /**
+         * Shipping cost and policy URL.
+         *
+         * @var string
+         */
+        public $shippingCostPolicyUrl;
+        /**
+         * The status of the ?On display to order? feature. Acceptable values are: -
+         * "`active`" - "`inactive`" - "`pending`"
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Shipping cost and policy URL.
+         *
+         * @param string $shippingCostPolicyUrl
+         */
+        public function setShippingCostPolicyUrl($shippingCostPolicyUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShippingCostPolicyUrl()
+        {
+        }
+        /**
+         * The status of the ?On display to order? feature. Acceptable values are: -
+         * "`active`" - "`inactive`" - "`pending`"
+         *
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\LiaOnDisplayToOrderSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getShippingCostPolicyUrl()
-    {
-    }
-    /**
-     * The status of the ?On display to order? feature. Acceptable values are: -
-     * "`active`" - "`inactive`" - "`pending`"
-     *
-     * @param string $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
+    class Google_Service_ShoppingContent_LiaOnDisplayToOrderSettings extends \Google\Service\ShoppingContent\LiaOnDisplayToOrderSettings
     {
     }
 }

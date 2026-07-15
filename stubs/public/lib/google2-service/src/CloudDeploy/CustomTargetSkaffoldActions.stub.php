@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class CustomTargetSkaffoldActions extends \Google\Collection
-{
-    protected $collection_key = 'includeSkaffoldModules';
-    /**
-     * Required. The Skaffold custom action responsible for deploy operations.
-     *
-     * @var string
-     */
-    public $deployAction;
-    protected $includeSkaffoldModulesType = SkaffoldModules::class;
-    protected $includeSkaffoldModulesDataType = 'array';
-    /**
-     * Optional. The Skaffold custom action responsible for render operations. If
-     * not provided then Cloud Deploy will perform the render operations via
-     * `skaffold render`.
-     *
-     * @var string
-     */
-    public $renderAction;
-    /**
-     * Required. The Skaffold custom action responsible for deploy operations.
-     *
-     * @param string $deployAction
-     */
-    public function setDeployAction($deployAction)
+namespace Google\Service\CloudDeploy {
+    class CustomTargetSkaffoldActions extends \Google\Collection
     {
+        protected $collection_key = 'includeSkaffoldModules';
+        /**
+         * Required. The Skaffold custom action responsible for deploy operations.
+         *
+         * @var string
+         */
+        public $deployAction;
+        protected $includeSkaffoldModulesType = SkaffoldModules::class;
+        protected $includeSkaffoldModulesDataType = 'array';
+        /**
+         * Optional. The Skaffold custom action responsible for render operations. If
+         * not provided then Cloud Deploy will perform the render operations via
+         * `skaffold render`.
+         *
+         * @var string
+         */
+        public $renderAction;
+        /**
+         * Required. The Skaffold custom action responsible for deploy operations.
+         *
+         * @param string $deployAction
+         */
+        public function setDeployAction($deployAction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeployAction()
+        {
+        }
+        /**
+         * Optional. List of Skaffold modules Cloud Deploy will include in the
+         * Skaffold Config as required before performing diagnose.
+         *
+         * @param SkaffoldModules[] $includeSkaffoldModules
+         */
+        public function setIncludeSkaffoldModules($includeSkaffoldModules)
+        {
+        }
+        /**
+         * @return SkaffoldModules[]
+         */
+        public function getIncludeSkaffoldModules()
+        {
+        }
+        /**
+         * Optional. The Skaffold custom action responsible for render operations. If
+         * not provided then Cloud Deploy will perform the render operations via
+         * `skaffold render`.
+         *
+         * @param string $renderAction
+         */
+        public function setRenderAction($renderAction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRenderAction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\CustomTargetSkaffoldActions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployAction()
-    {
-    }
-    /**
-     * Optional. List of Skaffold modules Cloud Deploy will include in the
-     * Skaffold Config as required before performing diagnose.
-     *
-     * @param SkaffoldModules[] $includeSkaffoldModules
-     */
-    public function setIncludeSkaffoldModules($includeSkaffoldModules)
-    {
-    }
-    /**
-     * @return SkaffoldModules[]
-     */
-    public function getIncludeSkaffoldModules()
-    {
-    }
-    /**
-     * Optional. The Skaffold custom action responsible for render operations. If
-     * not provided then Cloud Deploy will perform the render operations via
-     * `skaffold render`.
-     *
-     * @param string $renderAction
-     */
-    public function setRenderAction($renderAction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRenderAction()
+    class Google_Service_CloudDeploy_CustomTargetSkaffoldActions extends \Google\Service\CloudDeploy\CustomTargetSkaffoldActions
     {
     }
 }

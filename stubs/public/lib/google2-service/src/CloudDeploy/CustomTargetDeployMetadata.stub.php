@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class CustomTargetDeployMetadata extends \Google\Model
-{
-    /**
-     * Output only. Skip message provided in the results of a custom deploy
-     * operation.
-     *
-     * @var string
-     */
-    public $skipMessage;
-    /**
-     * Output only. Skip message provided in the results of a custom deploy
-     * operation.
-     *
-     * @param string $skipMessage
-     */
-    public function setSkipMessage($skipMessage)
+namespace Google\Service\CloudDeploy {
+    class CustomTargetDeployMetadata extends \Google\Model
     {
+        /**
+         * Output only. Skip message provided in the results of a custom deploy
+         * operation.
+         *
+         * @var string
+         */
+        public $skipMessage;
+        /**
+         * Output only. Skip message provided in the results of a custom deploy
+         * operation.
+         *
+         * @param string $skipMessage
+         */
+        public function setSkipMessage($skipMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSkipMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\CustomTargetDeployMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSkipMessage()
+    class Google_Service_CloudDeploy_CustomTargetDeployMetadata extends \Google\Service\CloudDeploy\CustomTargetDeployMetadata
     {
     }
 }

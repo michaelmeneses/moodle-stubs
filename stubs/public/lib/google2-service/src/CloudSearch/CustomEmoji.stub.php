@@ -21,196 +21,205 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class CustomEmoji extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $blobId;
-    /**
-     * @var string
-     */
-    public $contentType;
-    /**
-     * @var string
-     */
-    public $createTimeMicros;
-    protected $creatorUserIdType = UserId::class;
-    protected $creatorUserIdDataType = '';
-    /**
-     * @var string
-     */
-    public $deleteTimeMicros;
-    /**
-     * @var string
-     */
-    public $ephemeralUrl;
-    protected $ownerCustomerIdType = CustomerId::class;
-    protected $ownerCustomerIdDataType = '';
-    /**
-     * @var string
-     */
-    public $readToken;
-    /**
-     * @var string
-     */
-    public $shortcode;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @var string
-     */
-    public $updateTimeMicros;
-    /**
-     * @var string
-     */
-    public $uuid;
-    /**
-     * @param string
-     */
-    public function setBlobId($blobId)
+namespace Google\Service\CloudSearch {
+    class CustomEmoji extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $blobId;
+        /**
+         * @var string
+         */
+        public $contentType;
+        /**
+         * @var string
+         */
+        public $createTimeMicros;
+        protected $creatorUserIdType = UserId::class;
+        protected $creatorUserIdDataType = '';
+        /**
+         * @var string
+         */
+        public $deleteTimeMicros;
+        /**
+         * @var string
+         */
+        public $ephemeralUrl;
+        protected $ownerCustomerIdType = CustomerId::class;
+        protected $ownerCustomerIdDataType = '';
+        /**
+         * @var string
+         */
+        public $readToken;
+        /**
+         * @var string
+         */
+        public $shortcode;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @var string
+         */
+        public $updateTimeMicros;
+        /**
+         * @var string
+         */
+        public $uuid;
+        /**
+         * @param string
+         */
+        public function setBlobId($blobId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBlobId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setContentType($contentType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTimeMicros($createTimeMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTimeMicros()
+        {
+        }
+        /**
+         * @param UserId
+         */
+        public function setCreatorUserId(UserId $creatorUserId)
+        {
+        }
+        /**
+         * @return UserId
+         */
+        public function getCreatorUserId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDeleteTimeMicros($deleteTimeMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeleteTimeMicros()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEphemeralUrl($ephemeralUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEphemeralUrl()
+        {
+        }
+        /**
+         * @param CustomerId
+         */
+        public function setOwnerCustomerId(CustomerId $ownerCustomerId)
+        {
+        }
+        /**
+         * @return CustomerId
+         */
+        public function getOwnerCustomerId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReadToken($readToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadToken()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setShortcode($shortcode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShortcode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTimeMicros($updateTimeMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTimeMicros()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUuid($uuid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUuid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\CustomEmoji registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlobId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setContentType($contentType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContentType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTimeMicros($createTimeMicros)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTimeMicros()
-    {
-    }
-    /**
-     * @param UserId
-     */
-    public function setCreatorUserId(UserId $creatorUserId)
-    {
-    }
-    /**
-     * @return UserId
-     */
-    public function getCreatorUserId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDeleteTimeMicros($deleteTimeMicros)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeleteTimeMicros()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEphemeralUrl($ephemeralUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEphemeralUrl()
-    {
-    }
-    /**
-     * @param CustomerId
-     */
-    public function setOwnerCustomerId(CustomerId $ownerCustomerId)
-    {
-    }
-    /**
-     * @return CustomerId
-     */
-    public function getOwnerCustomerId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReadToken($readToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadToken()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setShortcode($shortcode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShortcode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTimeMicros($updateTimeMicros)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTimeMicros()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUuid($uuid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUuid()
+    class Google_Service_CloudSearch_CustomEmoji extends \Google\Service\CloudSearch\CustomEmoji
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ReportSummaryHistogramChartDataBucket extends \Google\Model
-{
-    /**
-     * Count of items in the bucket.
-     *
-     * @var string
-     */
-    public $count;
-    /**
-     * Lower bound - inclusive.
-     *
-     * @var string
-     */
-    public $lowerBound;
-    /**
-     * Upper bound - exclusive.
-     *
-     * @var string
-     */
-    public $upperBound;
-    /**
-     * Count of items in the bucket.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
+namespace Google\Service\MigrationCenterAPI {
+    class ReportSummaryHistogramChartDataBucket extends \Google\Model
     {
+        /**
+         * Count of items in the bucket.
+         *
+         * @var string
+         */
+        public $count;
+        /**
+         * Lower bound - inclusive.
+         *
+         * @var string
+         */
+        public $lowerBound;
+        /**
+         * Upper bound - exclusive.
+         *
+         * @var string
+         */
+        public $upperBound;
+        /**
+         * Count of items in the bucket.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * Lower bound - inclusive.
+         *
+         * @param string $lowerBound
+         */
+        public function setLowerBound($lowerBound)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLowerBound()
+        {
+        }
+        /**
+         * Upper bound - exclusive.
+         *
+         * @param string $upperBound
+         */
+        public function setUpperBound($upperBound)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpperBound()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ReportSummaryHistogramChartDataBucket registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * Lower bound - inclusive.
-     *
-     * @param string $lowerBound
-     */
-    public function setLowerBound($lowerBound)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLowerBound()
-    {
-    }
-    /**
-     * Upper bound - exclusive.
-     *
-     * @param string $upperBound
-     */
-    public function setUpperBound($upperBound)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpperBound()
+    class Google_Service_MigrationCenterAPI_ReportSummaryHistogramChartDataBucket extends \Google\Service\MigrationCenterAPI\ReportSummaryHistogramChartDataBucket
     {
     }
 }

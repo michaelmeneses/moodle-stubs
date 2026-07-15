@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2OutputConfig extends \Google\Model
-{
-    protected $bigqueryDestinationType = GoogleCloudRetailV2OutputConfigBigQueryDestination::class;
-    protected $bigqueryDestinationDataType = '';
-    protected $gcsDestinationType = GoogleCloudRetailV2OutputConfigGcsDestination::class;
-    protected $gcsDestinationDataType = '';
-    /**
-     * The BigQuery location where the output is to be written to.
-     *
-     * @param GoogleCloudRetailV2OutputConfigBigQueryDestination $bigqueryDestination
-     */
-    public function setBigqueryDestination(GoogleCloudRetailV2OutputConfigBigQueryDestination $bigqueryDestination)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2OutputConfig extends \Google\Model
     {
+        protected $bigqueryDestinationType = GoogleCloudRetailV2OutputConfigBigQueryDestination::class;
+        protected $bigqueryDestinationDataType = '';
+        protected $gcsDestinationType = GoogleCloudRetailV2OutputConfigGcsDestination::class;
+        protected $gcsDestinationDataType = '';
+        /**
+         * The BigQuery location where the output is to be written to.
+         *
+         * @param GoogleCloudRetailV2OutputConfigBigQueryDestination $bigqueryDestination
+         */
+        public function setBigqueryDestination(GoogleCloudRetailV2OutputConfigBigQueryDestination $bigqueryDestination)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2OutputConfigBigQueryDestination
+         */
+        public function getBigqueryDestination()
+        {
+        }
+        /**
+         * The Google Cloud Storage location where the output is to be written to.
+         *
+         * @param GoogleCloudRetailV2OutputConfigGcsDestination $gcsDestination
+         */
+        public function setGcsDestination(GoogleCloudRetailV2OutputConfigGcsDestination $gcsDestination)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2OutputConfigGcsDestination
+         */
+        public function getGcsDestination()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2OutputConfigBigQueryDestination
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2OutputConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigqueryDestination()
-    {
-    }
-    /**
-     * The Google Cloud Storage location where the output is to be written to.
-     *
-     * @param GoogleCloudRetailV2OutputConfigGcsDestination $gcsDestination
-     */
-    public function setGcsDestination(GoogleCloudRetailV2OutputConfigGcsDestination $gcsDestination)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2OutputConfigGcsDestination
-     */
-    public function getGcsDestination()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2OutputConfig extends \Google\Service\CloudRetail\GoogleCloudRetailV2OutputConfig
     {
     }
 }

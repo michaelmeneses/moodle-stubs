@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class WriteResult extends \Google\Collection
-{
-    protected $collection_key = 'transformResults';
-    protected $transformResultsType = Value::class;
-    protected $transformResultsDataType = 'array';
-    /**
-     * The last update time of the document after applying the write. Not set
-     * after a `delete`. If the write did not actually change the document, this
-     * will be the previous update_time.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * The results of applying each DocumentTransform.FieldTransform, in the same
-     * order.
-     *
-     * @param Value[] $transformResults
-     */
-    public function setTransformResults($transformResults)
+namespace Google\Service\Firestore {
+    class WriteResult extends \Google\Collection
     {
+        protected $collection_key = 'transformResults';
+        protected $transformResultsType = Value::class;
+        protected $transformResultsDataType = 'array';
+        /**
+         * The last update time of the document after applying the write. Not set
+         * after a `delete`. If the write did not actually change the document, this
+         * will be the previous update_time.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * The results of applying each DocumentTransform.FieldTransform, in the same
+         * order.
+         *
+         * @param Value[] $transformResults
+         */
+        public function setTransformResults($transformResults)
+        {
+        }
+        /**
+         * @return Value[]
+         */
+        public function getTransformResults()
+        {
+        }
+        /**
+         * The last update time of the document after applying the write. Not set
+         * after a `delete`. If the write did not actually change the document, this
+         * will be the previous update_time.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Value[]
+     * Runtime class alias of \Google\Service\Firestore\WriteResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTransformResults()
-    {
-    }
-    /**
-     * The last update time of the document after applying the write. Not set
-     * after a `delete`. If the write did not actually change the document, this
-     * will be the previous update_time.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Firestore_WriteResult extends \Google\Service\Firestore\WriteResult
     {
     }
 }

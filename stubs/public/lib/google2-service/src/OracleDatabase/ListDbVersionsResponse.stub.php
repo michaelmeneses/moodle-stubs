@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class ListDbVersionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'dbVersions';
-    protected $dbVersionsType = DbVersion::class;
-    protected $dbVersionsDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of DbVersions.
-     *
-     * @param DbVersion[] $dbVersions
-     */
-    public function setDbVersions($dbVersions)
+namespace Google\Service\OracleDatabase {
+    class ListDbVersionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'dbVersions';
+        protected $dbVersionsType = DbVersion::class;
+        protected $dbVersionsDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of DbVersions.
+         *
+         * @param DbVersion[] $dbVersions
+         */
+        public function setDbVersions($dbVersions)
+        {
+        }
+        /**
+         * @return DbVersion[]
+         */
+        public function getDbVersions()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DbVersion[]
+     * Runtime class alias of \Google\Service\OracleDatabase\ListDbVersionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDbVersions()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_OracleDatabase_ListDbVersionsResponse extends \Google\Service\OracleDatabase\ListDbVersionsResponse
     {
     }
 }

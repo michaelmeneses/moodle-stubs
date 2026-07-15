@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class OfferTag extends \Google\Model
-{
-    /**
-     * Must conform with RFC-1034. That is, this string can only contain lower-
-     * case letters (a-z), numbers (0-9), and hyphens (-), and be at most 20
-     * characters.
-     *
-     * @var string
-     */
-    public $tag;
-    /**
-     * Must conform with RFC-1034. That is, this string can only contain lower-
-     * case letters (a-z), numbers (0-9), and hyphens (-), and be at most 20
-     * characters.
-     *
-     * @param string $tag
-     */
-    public function setTag($tag)
+namespace Google\Service\AndroidPublisher {
+    class OfferTag extends \Google\Model
     {
+        /**
+         * Must conform with RFC-1034. That is, this string can only contain lower-
+         * case letters (a-z), numbers (0-9), and hyphens (-), and be at most 20
+         * characters.
+         *
+         * @var string
+         */
+        public $tag;
+        /**
+         * Must conform with RFC-1034. That is, this string can only contain lower-
+         * case letters (a-z), numbers (0-9), and hyphens (-), and be at most 20
+         * characters.
+         *
+         * @param string $tag
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\OfferTag registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTag()
+    class Google_Service_AndroidPublisher_OfferTag extends \Google\Service\AndroidPublisher\OfferTag
     {
     }
 }

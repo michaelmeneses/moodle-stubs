@@ -21,27 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DomainsRDAP\Resource;
-
-/**
- * The "domain" collection of methods.
- * Typical usage is:
- *  <code>
- *   $domainsrdapService = new Google\Service\DomainsRDAP(...);
- *   $domain = $domainsrdapService->domain;
- *  </code>
- */
-class Domain extends \Google\Service\Resource
-{
+namespace Google\Service\DomainsRDAP\Resource {
+    use Google\Service\DomainsRDAP\HttpBody;
     /**
-     * Look up RDAP information for a domain by name. (domain.get)
-     *
-     * @param string $domainName Full domain name to look up. Example: "example.com"
-     * @param array $optParams Optional parameters.
-     * @return HttpBody
-     * @throws \Google\Service\Exception
+     * The "domain" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $domainsrdapService = new Google\Service\DomainsRDAP(...);
+     *   $domain = $domainsrdapService->domain;
+     *  </code>
      */
-    public function get($domainName, $optParams = [])
+    class Domain extends \Google\Service\Resource
+    {
+        /**
+         * Look up RDAP information for a domain by name. (domain.get)
+         *
+         * @param string $domainName Full domain name to look up. Example: "example.com"
+         * @param array $optParams Optional parameters.
+         * @return HttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function get($domainName, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DomainsRDAP\Resource\Domain registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DomainsRDAP_Resource_Domain extends \Google\Service\DomainsRDAP\Resource\Domain
     {
     }
 }

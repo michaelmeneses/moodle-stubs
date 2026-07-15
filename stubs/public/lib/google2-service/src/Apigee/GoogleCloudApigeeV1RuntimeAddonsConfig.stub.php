@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1RuntimeAddonsConfig extends \Google\Model
-{
-    protected $analyticsConfigType = GoogleCloudApigeeV1RuntimeAnalyticsConfig::class;
-    protected $analyticsConfigDataType = '';
-    protected $apiSecurityConfigType = GoogleCloudApigeeV1RuntimeApiSecurityConfig::class;
-    protected $apiSecurityConfigDataType = '';
-    /**
-     * Name of the addons config in the format:
-     * `organizations/{org}/environments/{env}/addonsConfig`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Revision number used by the runtime to detect config changes.
-     *
-     * @var string
-     */
-    public $revisionId;
-    /**
-     * UID is to detect if config is recreated after deletion. The add-on config
-     * will only be deleted when the environment itself gets deleted, thus it will
-     * always be the same as the UID of EnvironmentConfig.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Runtime configuration for Analytics add-on.
-     *
-     * @param GoogleCloudApigeeV1RuntimeAnalyticsConfig $analyticsConfig
-     */
-    public function setAnalyticsConfig(GoogleCloudApigeeV1RuntimeAnalyticsConfig $analyticsConfig)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1RuntimeAddonsConfig extends \Google\Model
     {
+        protected $analyticsConfigType = GoogleCloudApigeeV1RuntimeAnalyticsConfig::class;
+        protected $analyticsConfigDataType = '';
+        protected $apiSecurityConfigType = GoogleCloudApigeeV1RuntimeApiSecurityConfig::class;
+        protected $apiSecurityConfigDataType = '';
+        /**
+         * Name of the addons config in the format:
+         * `organizations/{org}/environments/{env}/addonsConfig`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Revision number used by the runtime to detect config changes.
+         *
+         * @var string
+         */
+        public $revisionId;
+        /**
+         * UID is to detect if config is recreated after deletion. The add-on config
+         * will only be deleted when the environment itself gets deleted, thus it will
+         * always be the same as the UID of EnvironmentConfig.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Runtime configuration for Analytics add-on.
+         *
+         * @param GoogleCloudApigeeV1RuntimeAnalyticsConfig $analyticsConfig
+         */
+        public function setAnalyticsConfig(GoogleCloudApigeeV1RuntimeAnalyticsConfig $analyticsConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1RuntimeAnalyticsConfig
+         */
+        public function getAnalyticsConfig()
+        {
+        }
+        /**
+         * Runtime configuration for API Security add-on.
+         *
+         * @param GoogleCloudApigeeV1RuntimeApiSecurityConfig $apiSecurityConfig
+         */
+        public function setApiSecurityConfig(GoogleCloudApigeeV1RuntimeApiSecurityConfig $apiSecurityConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1RuntimeApiSecurityConfig
+         */
+        public function getApiSecurityConfig()
+        {
+        }
+        /**
+         * Name of the addons config in the format:
+         * `organizations/{org}/environments/{env}/addonsConfig`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Revision number used by the runtime to detect config changes.
+         *
+         * @param string $revisionId
+         */
+        public function setRevisionId($revisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionId()
+        {
+        }
+        /**
+         * UID is to detect if config is recreated after deletion. The add-on config
+         * will only be deleted when the environment itself gets deleted, thus it will
+         * always be the same as the UID of EnvironmentConfig.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1RuntimeAnalyticsConfig
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1RuntimeAddonsConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalyticsConfig()
-    {
-    }
-    /**
-     * Runtime configuration for API Security add-on.
-     *
-     * @param GoogleCloudApigeeV1RuntimeApiSecurityConfig $apiSecurityConfig
-     */
-    public function setApiSecurityConfig(GoogleCloudApigeeV1RuntimeApiSecurityConfig $apiSecurityConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1RuntimeApiSecurityConfig
-     */
-    public function getApiSecurityConfig()
-    {
-    }
-    /**
-     * Name of the addons config in the format:
-     * `organizations/{org}/environments/{env}/addonsConfig`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Revision number used by the runtime to detect config changes.
-     *
-     * @param string $revisionId
-     */
-    public function setRevisionId($revisionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionId()
-    {
-    }
-    /**
-     * UID is to detect if config is recreated after deletion. The add-on config
-     * will only be deleted when the environment itself gets deleted, thus it will
-     * always be the same as the UID of EnvironmentConfig.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
+    class Google_Service_Apigee_GoogleCloudApigeeV1RuntimeAddonsConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1RuntimeAddonsConfig
     {
     }
 }

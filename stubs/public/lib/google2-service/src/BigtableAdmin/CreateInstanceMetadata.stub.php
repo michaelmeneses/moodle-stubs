@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class CreateInstanceMetadata extends \Google\Model
-{
-    /**
-     * The time at which the operation failed or was completed successfully.
-     *
-     * @var string
-     */
-    public $finishTime;
-    protected $originalRequestType = CreateInstanceRequest::class;
-    protected $originalRequestDataType = '';
-    /**
-     * The time at which the original request was received.
-     *
-     * @var string
-     */
-    public $requestTime;
-    /**
-     * The time at which the operation failed or was completed successfully.
-     *
-     * @param string $finishTime
-     */
-    public function setFinishTime($finishTime)
+namespace Google\Service\BigtableAdmin {
+    class CreateInstanceMetadata extends \Google\Model
     {
+        /**
+         * The time at which the operation failed or was completed successfully.
+         *
+         * @var string
+         */
+        public $finishTime;
+        protected $originalRequestType = CreateInstanceRequest::class;
+        protected $originalRequestDataType = '';
+        /**
+         * The time at which the original request was received.
+         *
+         * @var string
+         */
+        public $requestTime;
+        /**
+         * The time at which the operation failed or was completed successfully.
+         *
+         * @param string $finishTime
+         */
+        public function setFinishTime($finishTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFinishTime()
+        {
+        }
+        /**
+         * The request that prompted the initiation of this CreateInstance operation.
+         *
+         * @param CreateInstanceRequest $originalRequest
+         */
+        public function setOriginalRequest(CreateInstanceRequest $originalRequest)
+        {
+        }
+        /**
+         * @return CreateInstanceRequest
+         */
+        public function getOriginalRequest()
+        {
+        }
+        /**
+         * The time at which the original request was received.
+         *
+         * @param string $requestTime
+         */
+        public function setRequestTime($requestTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigtableAdmin\CreateInstanceMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFinishTime()
-    {
-    }
-    /**
-     * The request that prompted the initiation of this CreateInstance operation.
-     *
-     * @param CreateInstanceRequest $originalRequest
-     */
-    public function setOriginalRequest(CreateInstanceRequest $originalRequest)
-    {
-    }
-    /**
-     * @return CreateInstanceRequest
-     */
-    public function getOriginalRequest()
-    {
-    }
-    /**
-     * The time at which the original request was received.
-     *
-     * @param string $requestTime
-     */
-    public function setRequestTime($requestTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestTime()
+    class Google_Service_BigtableAdmin_CreateInstanceMetadata extends \Google\Service\BigtableAdmin\CreateInstanceMetadata
     {
     }
 }

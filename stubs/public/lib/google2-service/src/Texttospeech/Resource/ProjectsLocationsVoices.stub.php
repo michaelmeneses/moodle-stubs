@@ -21,28 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Texttospeech\Resource;
-
-/**
- * The "voices" collection of methods.
- * Typical usage is:
- *  <code>
- *   $texttospeechService = new Google\Service\Texttospeech(...);
- *   $voices = $texttospeechService->voices;
- *  </code>
- */
-class ProjectsLocationsVoices extends \Google\Service\Resource
-{
+namespace Google\Service\Texttospeech\Resource {
+    use Google\Service\Texttospeech\Operation;
+    use Google\Service\Texttospeech\SynthesizeLongAudioRequest;
     /**
-     * Synthesizes long form text asynchronously. (voices.synthesizeLongAudio)
-     *
-     * @param string $parent The resource states of the request in the form of
-     * projects/locations/voices.
-     * @param SynthesizeLongAudioRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
+     * The "voices" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $texttospeechService = new Google\Service\Texttospeech(...);
+     *   $voices = $texttospeechService->voices;
+     *  </code>
      */
-    public function synthesizeLongAudio($parent, SynthesizeLongAudioRequest $postBody, $optParams = [])
+    class ProjectsLocationsVoices extends \Google\Service\Resource
+    {
+        /**
+         * Synthesizes long form text asynchronously. (voices.synthesizeLongAudio)
+         *
+         * @param string $parent The resource states of the request in the form of
+         * projects/locations/voices.
+         * @param SynthesizeLongAudioRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         */
+        public function synthesizeLongAudio($parent, SynthesizeLongAudioRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Texttospeech\Resource\ProjectsLocationsVoices registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Texttospeech_Resource_ProjectsLocationsVoices extends \Google\Service\Texttospeech\Resource\ProjectsLocationsVoices
     {
     }
 }

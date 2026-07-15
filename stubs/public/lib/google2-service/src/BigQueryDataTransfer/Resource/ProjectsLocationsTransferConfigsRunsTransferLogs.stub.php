@@ -21,43 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryDataTransfer\Resource;
-
-/**
- * The "transferLogs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $bigquerydatatransferService = new Google\Service\BigQueryDataTransfer(...);
- *   $transferLogs = $bigquerydatatransferService->projects_locations_transferConfigs_runs_transferLogs;
- *  </code>
- */
-class ProjectsLocationsTransferConfigsRunsTransferLogs extends \Google\Service\Resource
-{
+namespace Google\Service\BigQueryDataTransfer\Resource {
+    use Google\Service\BigQueryDataTransfer\ListTransferLogsResponse;
     /**
-     * Returns log messages for the transfer run.
-     * (transferLogs.listProjectsLocationsTransferConfigsRunsTransferLogs)
-     *
-     * @param string $parent Required. Transfer run name. If you are using the
-     * regionless method, the location must be `US` and the name should be in the
-     * following form: *
-     * `projects/{project_id}/transferConfigs/{config_id}/runs/{run_id}` If you are
-     * using the regionalized method, the name should be in the following form: * `p
-     * rojects/{project_id}/locations/{location_id}/transferConfigs/{config_id}/runs
-     * /{run_id}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string messageTypes Message types to return. If not populated -
-     * INFO, WARNING and ERROR messages are returned.
-     * @opt_param int pageSize Page size. The default page size is the maximum value
-     * of 1000 results.
-     * @opt_param string pageToken Pagination token, which can be used to request a
-     * specific page of `ListTransferLogsRequest` list results. For multiple-page
-     * results, `ListTransferLogsResponse` outputs a `next_page` token, which can be
-     * used as the `page_token` value to request the next page of list results.
-     * @return ListTransferLogsResponse
-     * @throws \Google\Service\Exception
+     * The "transferLogs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $bigquerydatatransferService = new Google\Service\BigQueryDataTransfer(...);
+     *   $transferLogs = $bigquerydatatransferService->projects_locations_transferConfigs_runs_transferLogs;
+     *  </code>
      */
-    public function listProjectsLocationsTransferConfigsRunsTransferLogs($parent, $optParams = [])
+    class ProjectsLocationsTransferConfigsRunsTransferLogs extends \Google\Service\Resource
+    {
+        /**
+         * Returns log messages for the transfer run.
+         * (transferLogs.listProjectsLocationsTransferConfigsRunsTransferLogs)
+         *
+         * @param string $parent Required. Transfer run name. If you are using the
+         * regionless method, the location must be `US` and the name should be in the
+         * following form: *
+         * `projects/{project_id}/transferConfigs/{config_id}/runs/{run_id}` If you are
+         * using the regionalized method, the name should be in the following form: * `p
+         * rojects/{project_id}/locations/{location_id}/transferConfigs/{config_id}/runs
+         * /{run_id}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string messageTypes Message types to return. If not populated -
+         * INFO, WARNING and ERROR messages are returned.
+         * @opt_param int pageSize Page size. The default page size is the maximum value
+         * of 1000 results.
+         * @opt_param string pageToken Pagination token, which can be used to request a
+         * specific page of `ListTransferLogsRequest` list results. For multiple-page
+         * results, `ListTransferLogsResponse` outputs a `next_page` token, which can be
+         * used as the `page_token` value to request the next page of list results.
+         * @return ListTransferLogsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsTransferConfigsRunsTransferLogs($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\BigQueryDataTransfer\Resource\ProjectsLocationsTransferConfigsRunsTransferLogs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_BigQueryDataTransfer_Resource_ProjectsLocationsTransferConfigsRunsTransferLogs extends \Google\Service\BigQueryDataTransfer\Resource\ProjectsLocationsTransferConfigsRunsTransferLogs
     {
     }
 }

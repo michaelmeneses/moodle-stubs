@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PointwiseMetricSpec extends \Google\Model
-{
-    protected $customOutputFormatConfigType = GoogleCloudAiplatformV1CustomOutputFormatConfig::class;
-    protected $customOutputFormatConfigDataType = '';
-    /**
-     * Required. Metric prompt template for pointwise metric.
-     *
-     * @var string
-     */
-    public $metricPromptTemplate;
-    /**
-     * Optional. System instructions for pointwise metric.
-     *
-     * @var string
-     */
-    public $systemInstruction;
-    /**
-     * Optional. CustomOutputFormatConfig allows customization of metric output.
-     * By default, metrics return a score and explanation. When this config is
-     * set, the default output is replaced with either: - The raw output string. -
-     * A parsed output based on a user-defined schema. If a custom format is
-     * chosen, the `score` and `explanation` fields in the corresponding metric
-     * result will be empty.
-     *
-     * @param GoogleCloudAiplatformV1CustomOutputFormatConfig $customOutputFormatConfig
-     */
-    public function setCustomOutputFormatConfig(GoogleCloudAiplatformV1CustomOutputFormatConfig $customOutputFormatConfig)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PointwiseMetricSpec extends \Google\Model
     {
+        protected $customOutputFormatConfigType = GoogleCloudAiplatformV1CustomOutputFormatConfig::class;
+        protected $customOutputFormatConfigDataType = '';
+        /**
+         * Required. Metric prompt template for pointwise metric.
+         *
+         * @var string
+         */
+        public $metricPromptTemplate;
+        /**
+         * Optional. System instructions for pointwise metric.
+         *
+         * @var string
+         */
+        public $systemInstruction;
+        /**
+         * Optional. CustomOutputFormatConfig allows customization of metric output.
+         * By default, metrics return a score and explanation. When this config is
+         * set, the default output is replaced with either: - The raw output string. -
+         * A parsed output based on a user-defined schema. If a custom format is
+         * chosen, the `score` and `explanation` fields in the corresponding metric
+         * result will be empty.
+         *
+         * @param GoogleCloudAiplatformV1CustomOutputFormatConfig $customOutputFormatConfig
+         */
+        public function setCustomOutputFormatConfig(GoogleCloudAiplatformV1CustomOutputFormatConfig $customOutputFormatConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1CustomOutputFormatConfig
+         */
+        public function getCustomOutputFormatConfig()
+        {
+        }
+        /**
+         * Required. Metric prompt template for pointwise metric.
+         *
+         * @param string $metricPromptTemplate
+         */
+        public function setMetricPromptTemplate($metricPromptTemplate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetricPromptTemplate()
+        {
+        }
+        /**
+         * Optional. System instructions for pointwise metric.
+         *
+         * @param string $systemInstruction
+         */
+        public function setSystemInstruction($systemInstruction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSystemInstruction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1CustomOutputFormatConfig
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PointwiseMetricSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomOutputFormatConfig()
-    {
-    }
-    /**
-     * Required. Metric prompt template for pointwise metric.
-     *
-     * @param string $metricPromptTemplate
-     */
-    public function setMetricPromptTemplate($metricPromptTemplate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetricPromptTemplate()
-    {
-    }
-    /**
-     * Optional. System instructions for pointwise metric.
-     *
-     * @param string $systemInstruction
-     */
-    public function setSystemInstruction($systemInstruction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSystemInstruction()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PointwiseMetricSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PointwiseMetricSpec
     {
     }
 }

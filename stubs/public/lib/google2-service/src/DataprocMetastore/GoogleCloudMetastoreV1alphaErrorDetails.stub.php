@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class GoogleCloudMetastoreV1alphaErrorDetails extends \Google\Model
-{
-    /**
-     * @var string[]
-     */
-    public $details;
-    /**
-     * @param string[]
-     */
-    public function setDetails($details)
+namespace Google\Service\DataprocMetastore {
+    class GoogleCloudMetastoreV1alphaErrorDetails extends \Google\Model
     {
+        /**
+         * @var string[]
+         */
+        public $details;
+        /**
+         * @param string[]
+         */
+        public function setDetails($details)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DataprocMetastore\GoogleCloudMetastoreV1alphaErrorDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetails()
+    class Google_Service_DataprocMetastore_GoogleCloudMetastoreV1alphaErrorDetails extends \Google\Service\DataprocMetastore\GoogleCloudMetastoreV1alphaErrorDetails
     {
     }
 }

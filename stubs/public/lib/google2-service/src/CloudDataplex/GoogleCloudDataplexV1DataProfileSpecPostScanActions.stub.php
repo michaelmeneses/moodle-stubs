@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataProfileSpecPostScanActions extends \Google\Model
-{
-    protected $bigqueryExportType = GoogleCloudDataplexV1DataProfileSpecPostScanActionsBigQueryExport::class;
-    protected $bigqueryExportDataType = '';
-    /**
-     * Optional. If set, results will be exported to the provided BigQuery table.
-     *
-     * @param GoogleCloudDataplexV1DataProfileSpecPostScanActionsBigQueryExport $bigqueryExport
-     */
-    public function setBigqueryExport(GoogleCloudDataplexV1DataProfileSpecPostScanActionsBigQueryExport $bigqueryExport)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataProfileSpecPostScanActions extends \Google\Model
     {
+        protected $bigqueryExportType = GoogleCloudDataplexV1DataProfileSpecPostScanActionsBigQueryExport::class;
+        protected $bigqueryExportDataType = '';
+        /**
+         * Optional. If set, results will be exported to the provided BigQuery table.
+         *
+         * @param GoogleCloudDataplexV1DataProfileSpecPostScanActionsBigQueryExport $bigqueryExport
+         */
+        public function setBigqueryExport(GoogleCloudDataplexV1DataProfileSpecPostScanActionsBigQueryExport $bigqueryExport)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataProfileSpecPostScanActionsBigQueryExport
+         */
+        public function getBigqueryExport()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1DataProfileSpecPostScanActionsBigQueryExport
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataProfileSpecPostScanActions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigqueryExport()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataProfileSpecPostScanActions extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataProfileSpecPostScanActions
     {
     }
 }

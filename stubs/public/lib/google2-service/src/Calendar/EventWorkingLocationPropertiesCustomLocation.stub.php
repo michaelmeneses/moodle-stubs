@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class EventWorkingLocationPropertiesCustomLocation extends \Google\Model
-{
-    /**
-     * An optional extra label for additional information.
-     *
-     * @var string
-     */
-    public $label;
-    /**
-     * An optional extra label for additional information.
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
+namespace Google\Service\Calendar {
+    class EventWorkingLocationPropertiesCustomLocation extends \Google\Model
     {
+        /**
+         * An optional extra label for additional information.
+         *
+         * @var string
+         */
+        public $label;
+        /**
+         * An optional extra label for additional information.
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Calendar\EventWorkingLocationPropertiesCustomLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabel()
+    class Google_Service_Calendar_EventWorkingLocationPropertiesCustomLocation extends \Google\Service\Calendar\EventWorkingLocationPropertiesCustomLocation
     {
     }
 }

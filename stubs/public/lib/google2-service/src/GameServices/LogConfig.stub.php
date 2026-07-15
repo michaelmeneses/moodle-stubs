@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class LogConfig extends \Google\Model
-{
-    protected $cloudAuditType = CloudAuditOptions::class;
-    protected $cloudAuditDataType = '';
-    protected $counterType = CounterOptions::class;
-    protected $counterDataType = '';
-    protected $dataAccessType = DataAccessOptions::class;
-    protected $dataAccessDataType = '';
-    /**
-     * @param CloudAuditOptions
-     */
-    public function setCloudAudit(CloudAuditOptions $cloudAudit)
+namespace Google\Service\GameServices {
+    class LogConfig extends \Google\Model
     {
+        protected $cloudAuditType = CloudAuditOptions::class;
+        protected $cloudAuditDataType = '';
+        protected $counterType = CounterOptions::class;
+        protected $counterDataType = '';
+        protected $dataAccessType = DataAccessOptions::class;
+        protected $dataAccessDataType = '';
+        /**
+         * @param CloudAuditOptions
+         */
+        public function setCloudAudit(CloudAuditOptions $cloudAudit)
+        {
+        }
+        /**
+         * @return CloudAuditOptions
+         */
+        public function getCloudAudit()
+        {
+        }
+        /**
+         * @param CounterOptions
+         */
+        public function setCounter(CounterOptions $counter)
+        {
+        }
+        /**
+         * @return CounterOptions
+         */
+        public function getCounter()
+        {
+        }
+        /**
+         * @param DataAccessOptions
+         */
+        public function setDataAccess(DataAccessOptions $dataAccess)
+        {
+        }
+        /**
+         * @return DataAccessOptions
+         */
+        public function getDataAccess()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudAuditOptions
+     * Runtime class alias of \Google\Service\GameServices\LogConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudAudit()
-    {
-    }
-    /**
-     * @param CounterOptions
-     */
-    public function setCounter(CounterOptions $counter)
-    {
-    }
-    /**
-     * @return CounterOptions
-     */
-    public function getCounter()
-    {
-    }
-    /**
-     * @param DataAccessOptions
-     */
-    public function setDataAccess(DataAccessOptions $dataAccess)
-    {
-    }
-    /**
-     * @return DataAccessOptions
-     */
-    public function getDataAccess()
+    class Google_Service_GameServices_LogConfig extends \Google\Service\GameServices\LogConfig
     {
     }
 }

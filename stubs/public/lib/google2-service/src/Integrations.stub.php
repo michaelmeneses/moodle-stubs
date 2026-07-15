@@ -21,63 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
-* Service definition for Integrations (v1).
-*
-* <p>
-</p>
-*
-* <p>
-* For more information about this service, see the API
-* <a href="https://cloud.google.com/application-integration" target="_blank">Documentation</a>
-* </p>
-*
-* @author Google, Inc.
-*/
-class Integrations extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $callback;
-    public $connectorPlatformRegions;
-    public $projects;
-    public $projects_locations;
-    public $projects_locations_appsScriptProjects;
-    public $projects_locations_authConfigs;
-    public $projects_locations_certificates;
-    public $projects_locations_clients;
-    public $projects_locations_cloudFunctions;
-    public $projects_locations_connections;
-    public $projects_locations_connections_runtimeActionSchemas;
-    public $projects_locations_connections_runtimeEntitySchemas;
-    public $projects_locations_integrations;
-    public $projects_locations_integrations_executions;
-    public $projects_locations_integrations_executions_suspensions;
-    public $projects_locations_integrations_versions;
-    public $projects_locations_integrations_versions_testCases;
-    public $projects_locations_products_authConfigs;
-    public $projects_locations_products_certificates;
-    public $projects_locations_products_cloudFunctions;
-    public $projects_locations_products_integrations;
-    public $projects_locations_products_integrations_executions;
-    public $projects_locations_products_integrations_executions_suspensions;
-    public $projects_locations_products_integrations_versions;
-    public $projects_locations_products_sfdcInstances;
-    public $projects_locations_products_sfdcInstances_sfdcChannels;
-    public $projects_locations_sfdcInstances;
-    public $projects_locations_sfdcInstances_sfdcChannels;
-    public $projects_locations_templates;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Integrations service.
-     *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+    * Service definition for Integrations (v1).
+    *
+    * <p>
+    </p>
+    *
+    * <p>
+    * For more information about this service, see the API
+    * <a href="https://cloud.google.com/application-integration" target="_blank">Documentation</a>
+    * </p>
+    *
+    * @author Google, Inc.
+    */
+    class Integrations extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $callback;
+        public $connectorPlatformRegions;
+        public $projects;
+        public $projects_locations;
+        public $projects_locations_appsScriptProjects;
+        public $projects_locations_authConfigs;
+        public $projects_locations_certificates;
+        public $projects_locations_clients;
+        public $projects_locations_cloudFunctions;
+        public $projects_locations_connections;
+        public $projects_locations_connections_runtimeActionSchemas;
+        public $projects_locations_connections_runtimeEntitySchemas;
+        public $projects_locations_integrations;
+        public $projects_locations_integrations_executions;
+        public $projects_locations_integrations_executions_suspensions;
+        public $projects_locations_integrations_versions;
+        public $projects_locations_integrations_versions_testCases;
+        public $projects_locations_products_authConfigs;
+        public $projects_locations_products_certificates;
+        public $projects_locations_products_cloudFunctions;
+        public $projects_locations_products_integrations;
+        public $projects_locations_products_integrations_executions;
+        public $projects_locations_products_integrations_executions_suspensions;
+        public $projects_locations_products_integrations_versions;
+        public $projects_locations_products_sfdcInstances;
+        public $projects_locations_products_sfdcInstances_sfdcChannels;
+        public $projects_locations_sfdcInstances;
+        public $projects_locations_sfdcInstances_sfdcChannels;
+        public $projects_locations_templates;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Integrations service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Integrations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Google_Service_Integrations extends \Google\Service\Integrations
     {
     }
 }

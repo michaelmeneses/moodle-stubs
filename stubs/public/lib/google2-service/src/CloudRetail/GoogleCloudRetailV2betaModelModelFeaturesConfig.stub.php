@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2betaModelModelFeaturesConfig extends \Google\Model
-{
-    protected $frequentlyBoughtTogetherConfigType = GoogleCloudRetailV2betaModelFrequentlyBoughtTogetherFeaturesConfig::class;
-    protected $frequentlyBoughtTogetherConfigDataType = '';
-    /**
-     * Additional configs for frequently-bought-together models.
-     *
-     * @param GoogleCloudRetailV2betaModelFrequentlyBoughtTogetherFeaturesConfig $frequentlyBoughtTogetherConfig
-     */
-    public function setFrequentlyBoughtTogetherConfig(GoogleCloudRetailV2betaModelFrequentlyBoughtTogetherFeaturesConfig $frequentlyBoughtTogetherConfig)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2betaModelModelFeaturesConfig extends \Google\Model
     {
+        protected $frequentlyBoughtTogetherConfigType = GoogleCloudRetailV2betaModelFrequentlyBoughtTogetherFeaturesConfig::class;
+        protected $frequentlyBoughtTogetherConfigDataType = '';
+        /**
+         * Additional configs for frequently-bought-together models.
+         *
+         * @param GoogleCloudRetailV2betaModelFrequentlyBoughtTogetherFeaturesConfig $frequentlyBoughtTogetherConfig
+         */
+        public function setFrequentlyBoughtTogetherConfig(GoogleCloudRetailV2betaModelFrequentlyBoughtTogetherFeaturesConfig $frequentlyBoughtTogetherConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2betaModelFrequentlyBoughtTogetherFeaturesConfig
+         */
+        public function getFrequentlyBoughtTogetherConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2betaModelFrequentlyBoughtTogetherFeaturesConfig
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2betaModelModelFeaturesConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFrequentlyBoughtTogetherConfig()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2betaModelModelFeaturesConfig extends \Google\Service\CloudRetail\GoogleCloudRetailV2betaModelModelFeaturesConfig
     {
     }
 }

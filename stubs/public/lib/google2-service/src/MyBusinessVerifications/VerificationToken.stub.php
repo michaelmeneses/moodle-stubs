@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessVerifications;
-
-class VerificationToken extends \Google\Model
-{
-    /**
-     * The token string.
-     *
-     * @var string
-     */
-    public $tokenString;
-    /**
-     * The token string.
-     *
-     * @param string $tokenString
-     */
-    public function setTokenString($tokenString)
+namespace Google\Service\MyBusinessVerifications {
+    class VerificationToken extends \Google\Model
     {
+        /**
+         * The token string.
+         *
+         * @var string
+         */
+        public $tokenString;
+        /**
+         * The token string.
+         *
+         * @param string $tokenString
+         */
+        public function setTokenString($tokenString)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTokenString()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessVerifications\VerificationToken registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTokenString()
+    class Google_Service_MyBusinessVerifications_VerificationToken extends \Google\Service\MyBusinessVerifications\VerificationToken
     {
     }
 }

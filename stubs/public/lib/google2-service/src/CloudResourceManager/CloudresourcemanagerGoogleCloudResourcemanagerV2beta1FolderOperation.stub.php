@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudResourceManager;
-
-class CloudresourcemanagerGoogleCloudResourcemanagerV2beta1FolderOperation extends \Google\Model
-{
-    /**
-     * Operation type not specified.
-     */
-    public const OPERATION_TYPE_OPERATION_TYPE_UNSPECIFIED = 'OPERATION_TYPE_UNSPECIFIED';
-    /**
-     * A create folder operation.
-     */
-    public const OPERATION_TYPE_CREATE = 'CREATE';
-    /**
-     * A move folder operation.
-     */
-    public const OPERATION_TYPE_MOVE = 'MOVE';
-    /**
-     * The resource name of the folder or organization we are either creating the
-     * folder under or moving the folder to.
-     *
-     * @var string
-     */
-    public $destinationParent;
-    /**
-     * The display name of the folder.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The type of this operation.
-     *
-     * @var string
-     */
-    public $operationType;
-    /**
-     * The resource name of the folder's parent. Only applicable when the
-     * operation_type is MOVE.
-     *
-     * @var string
-     */
-    public $sourceParent;
-    /**
-     * The resource name of the folder or organization we are either creating the
-     * folder under or moving the folder to.
-     *
-     * @param string $destinationParent
-     */
-    public function setDestinationParent($destinationParent)
+namespace Google\Service\CloudResourceManager {
+    class CloudresourcemanagerGoogleCloudResourcemanagerV2beta1FolderOperation extends \Google\Model
     {
+        /**
+         * Operation type not specified.
+         */
+        public const OPERATION_TYPE_OPERATION_TYPE_UNSPECIFIED = 'OPERATION_TYPE_UNSPECIFIED';
+        /**
+         * A create folder operation.
+         */
+        public const OPERATION_TYPE_CREATE = 'CREATE';
+        /**
+         * A move folder operation.
+         */
+        public const OPERATION_TYPE_MOVE = 'MOVE';
+        /**
+         * The resource name of the folder or organization we are either creating the
+         * folder under or moving the folder to.
+         *
+         * @var string
+         */
+        public $destinationParent;
+        /**
+         * The display name of the folder.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The type of this operation.
+         *
+         * @var string
+         */
+        public $operationType;
+        /**
+         * The resource name of the folder's parent. Only applicable when the
+         * operation_type is MOVE.
+         *
+         * @var string
+         */
+        public $sourceParent;
+        /**
+         * The resource name of the folder or organization we are either creating the
+         * folder under or moving the folder to.
+         *
+         * @param string $destinationParent
+         */
+        public function setDestinationParent($destinationParent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationParent()
+        {
+        }
+        /**
+         * The display name of the folder.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The type of this operation.
+         *
+         * Accepted values: OPERATION_TYPE_UNSPECIFIED, CREATE, MOVE
+         *
+         * @param self::OPERATION_TYPE_* $operationType
+         */
+        public function setOperationType($operationType)
+        {
+        }
+        /**
+         * @return self::OPERATION_TYPE_*
+         */
+        public function getOperationType()
+        {
+        }
+        /**
+         * The resource name of the folder's parent. Only applicable when the
+         * operation_type is MOVE.
+         *
+         * @param string $sourceParent
+         */
+        public function setSourceParent($sourceParent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudResourceManager\CloudresourcemanagerGoogleCloudResourcemanagerV2beta1FolderOperation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationParent()
-    {
-    }
-    /**
-     * The display name of the folder.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The type of this operation.
-     *
-     * Accepted values: OPERATION_TYPE_UNSPECIFIED, CREATE, MOVE
-     *
-     * @param self::OPERATION_TYPE_* $operationType
-     */
-    public function setOperationType($operationType)
-    {
-    }
-    /**
-     * @return self::OPERATION_TYPE_*
-     */
-    public function getOperationType()
-    {
-    }
-    /**
-     * The resource name of the folder's parent. Only applicable when the
-     * operation_type is MOVE.
-     *
-     * @param string $sourceParent
-     */
-    public function setSourceParent($sourceParent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceParent()
+    class Google_Service_CloudResourceManager_CloudresourcemanagerGoogleCloudResourcemanagerV2beta1FolderOperation extends \Google\Service\CloudResourceManager\CloudresourcemanagerGoogleCloudResourcemanagerV2beta1FolderOperation
     {
     }
 }

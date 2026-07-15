@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class WireGroupTopology extends \Google\Collection
-{
-    protected $collection_key = 'endpoints';
-    protected $endpointsType = WireGroupTopologyEndpoint::class;
-    protected $endpointsDataType = 'array';
-    /**
-     * Output only. Topology details for all endpoints in the wire group.
-     *
-     * @param WireGroupTopologyEndpoint[] $endpoints
-     */
-    public function setEndpoints($endpoints)
+namespace Google\Service\Compute {
+    class WireGroupTopology extends \Google\Collection
     {
+        protected $collection_key = 'endpoints';
+        protected $endpointsType = WireGroupTopologyEndpoint::class;
+        protected $endpointsDataType = 'array';
+        /**
+         * Output only. Topology details for all endpoints in the wire group.
+         *
+         * @param WireGroupTopologyEndpoint[] $endpoints
+         */
+        public function setEndpoints($endpoints)
+        {
+        }
+        /**
+         * @return WireGroupTopologyEndpoint[]
+         */
+        public function getEndpoints()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return WireGroupTopologyEndpoint[]
+     * Runtime class alias of \Google\Service\Compute\WireGroupTopology registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndpoints()
+    class Google_Service_Compute_WireGroupTopology extends \Google\Service\Compute\WireGroupTopology
     {
     }
 }

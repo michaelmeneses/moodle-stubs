@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class CloudAiPlatformTenantresourceTenantResource extends \Google\Collection
-{
-    protected $collection_key = 'tenantProjectResources';
-    protected $p4ServiceAccountsType = CloudAiPlatformTenantresourceServiceAccountIdentity::class;
-    protected $p4ServiceAccountsDataType = 'array';
-    protected $tenantProjectResourcesType = CloudAiPlatformTenantresourceTenantProjectResource::class;
-    protected $tenantProjectResourcesDataType = 'array';
-    /**
-     * A list of P4 service accounts (go/p4sa) to provision or deprovision.
-     *
-     * @param CloudAiPlatformTenantresourceServiceAccountIdentity[] $p4ServiceAccounts
-     */
-    public function setP4ServiceAccounts($p4ServiceAccounts)
+namespace Google\Service\Contentwarehouse {
+    class CloudAiPlatformTenantresourceTenantResource extends \Google\Collection
     {
+        protected $collection_key = 'tenantProjectResources';
+        protected $p4ServiceAccountsType = CloudAiPlatformTenantresourceServiceAccountIdentity::class;
+        protected $p4ServiceAccountsDataType = 'array';
+        protected $tenantProjectResourcesType = CloudAiPlatformTenantresourceTenantProjectResource::class;
+        protected $tenantProjectResourcesDataType = 'array';
+        /**
+         * A list of P4 service accounts (go/p4sa) to provision or deprovision.
+         *
+         * @param CloudAiPlatformTenantresourceServiceAccountIdentity[] $p4ServiceAccounts
+         */
+        public function setP4ServiceAccounts($p4ServiceAccounts)
+        {
+        }
+        /**
+         * @return CloudAiPlatformTenantresourceServiceAccountIdentity[]
+         */
+        public function getP4ServiceAccounts()
+        {
+        }
+        /**
+         * A list of tenant projects and tenant resources to provision or deprovision.
+         *
+         * @param CloudAiPlatformTenantresourceTenantProjectResource[] $tenantProjectResources
+         */
+        public function setTenantProjectResources($tenantProjectResources)
+        {
+        }
+        /**
+         * @return CloudAiPlatformTenantresourceTenantProjectResource[]
+         */
+        public function getTenantProjectResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudAiPlatformTenantresourceServiceAccountIdentity[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\CloudAiPlatformTenantresourceTenantResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getP4ServiceAccounts()
-    {
-    }
-    /**
-     * A list of tenant projects and tenant resources to provision or deprovision.
-     *
-     * @param CloudAiPlatformTenantresourceTenantProjectResource[] $tenantProjectResources
-     */
-    public function setTenantProjectResources($tenantProjectResources)
-    {
-    }
-    /**
-     * @return CloudAiPlatformTenantresourceTenantProjectResource[]
-     */
-    public function getTenantProjectResources()
+    class Google_Service_Contentwarehouse_CloudAiPlatformTenantresourceTenantResource extends \Google\Service\Contentwarehouse\CloudAiPlatformTenantresourceTenantResource
     {
     }
 }

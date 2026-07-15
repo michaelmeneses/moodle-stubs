@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteDataLossPreventionMetadata extends \Google\Model
-{
-    protected $dlpScanSummaryType = AppsDynamiteBackendDlpScanSummary::class;
-    protected $dlpScanSummaryDataType = '';
-    /**
-     * @var bool
-     */
-    public $warnAcknowledged;
-    /**
-     * @param AppsDynamiteBackendDlpScanSummary
-     */
-    public function setDlpScanSummary(AppsDynamiteBackendDlpScanSummary $dlpScanSummary)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteDataLossPreventionMetadata extends \Google\Model
     {
+        protected $dlpScanSummaryType = AppsDynamiteBackendDlpScanSummary::class;
+        protected $dlpScanSummaryDataType = '';
+        /**
+         * @var bool
+         */
+        public $warnAcknowledged;
+        /**
+         * @param AppsDynamiteBackendDlpScanSummary
+         */
+        public function setDlpScanSummary(AppsDynamiteBackendDlpScanSummary $dlpScanSummary)
+        {
+        }
+        /**
+         * @return AppsDynamiteBackendDlpScanSummary
+         */
+        public function getDlpScanSummary()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setWarnAcknowledged($warnAcknowledged)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWarnAcknowledged()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteBackendDlpScanSummary
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteDataLossPreventionMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDlpScanSummary()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setWarnAcknowledged($warnAcknowledged)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWarnAcknowledged()
+    class Google_Service_CloudSearch_AppsDynamiteDataLossPreventionMetadata extends \Google\Service\CloudSearch\AppsDynamiteDataLossPreventionMetadata
     {
     }
 }

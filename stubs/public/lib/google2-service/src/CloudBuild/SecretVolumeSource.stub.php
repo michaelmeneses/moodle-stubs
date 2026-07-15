@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class SecretVolumeSource extends \Google\Model
-{
-    /**
-     * Name of the secret referenced by the WorkspaceBinding.
-     *
-     * @var string
-     */
-    public $secretName;
-    /**
-     * Optional. Resource name of the SecretVersion. In format:
-     * projects/secrets/versions
-     *
-     * @var string
-     */
-    public $secretVersion;
-    /**
-     * Name of the secret referenced by the WorkspaceBinding.
-     *
-     * @param string $secretName
-     */
-    public function setSecretName($secretName)
+namespace Google\Service\CloudBuild {
+    class SecretVolumeSource extends \Google\Model
     {
+        /**
+         * Name of the secret referenced by the WorkspaceBinding.
+         *
+         * @var string
+         */
+        public $secretName;
+        /**
+         * Optional. Resource name of the SecretVersion. In format:
+         * projects/secrets/versions
+         *
+         * @var string
+         */
+        public $secretVersion;
+        /**
+         * Name of the secret referenced by the WorkspaceBinding.
+         *
+         * @param string $secretName
+         */
+        public function setSecretName($secretName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecretName()
+        {
+        }
+        /**
+         * Optional. Resource name of the SecretVersion. In format:
+         * projects/secrets/versions
+         *
+         * @param string $secretVersion
+         */
+        public function setSecretVersion($secretVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecretVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\SecretVolumeSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSecretName()
-    {
-    }
-    /**
-     * Optional. Resource name of the SecretVersion. In format:
-     * projects/secrets/versions
-     *
-     * @param string $secretVersion
-     */
-    public function setSecretVersion($secretVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecretVersion()
+    class Google_Service_CloudBuild_SecretVolumeSource extends \Google\Service\CloudBuild\SecretVolumeSource
     {
     }
 }

@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator;
-
-class GoogleCloudPolicysimulatorV1ReplayConfig extends \Google\Model
-{
-    /**
-     * An unspecified log source. If the log source is unspecified, the Replay
-     * defaults to using `RECENT_ACCESSES`.
-     */
-    public const LOG_SOURCE_LOG_SOURCE_UNSPECIFIED = 'LOG_SOURCE_UNSPECIFIED';
-    /**
-     * All access logs from the last 90 days. These logs may not include logs from
-     * the most recent 7 days.
-     */
-    public const LOG_SOURCE_RECENT_ACCESSES = 'RECENT_ACCESSES';
-    /**
-     * The logs to use as input for the Replay.
-     *
-     * @var string
-     */
-    public $logSource;
-    protected $policyOverlayType = GoogleIamV1Policy::class;
-    protected $policyOverlayDataType = 'map';
-    /**
-     * The logs to use as input for the Replay.
-     *
-     * Accepted values: LOG_SOURCE_UNSPECIFIED, RECENT_ACCESSES
-     *
-     * @param self::LOG_SOURCE_* $logSource
-     */
-    public function setLogSource($logSource)
+namespace Google\Service\PolicySimulator {
+    class GoogleCloudPolicysimulatorV1ReplayConfig extends \Google\Model
     {
+        /**
+         * An unspecified log source. If the log source is unspecified, the Replay
+         * defaults to using `RECENT_ACCESSES`.
+         */
+        public const LOG_SOURCE_LOG_SOURCE_UNSPECIFIED = 'LOG_SOURCE_UNSPECIFIED';
+        /**
+         * All access logs from the last 90 days. These logs may not include logs from
+         * the most recent 7 days.
+         */
+        public const LOG_SOURCE_RECENT_ACCESSES = 'RECENT_ACCESSES';
+        /**
+         * The logs to use as input for the Replay.
+         *
+         * @var string
+         */
+        public $logSource;
+        protected $policyOverlayType = GoogleIamV1Policy::class;
+        protected $policyOverlayDataType = 'map';
+        /**
+         * The logs to use as input for the Replay.
+         *
+         * Accepted values: LOG_SOURCE_UNSPECIFIED, RECENT_ACCESSES
+         *
+         * @param self::LOG_SOURCE_* $logSource
+         */
+        public function setLogSource($logSource)
+        {
+        }
+        /**
+         * @return self::LOG_SOURCE_*
+         */
+        public function getLogSource()
+        {
+        }
+        /**
+         * A mapping of the resources that you want to simulate policies for and the
+         * policies that you want to simulate. Keys are the full resource names for
+         * the resources. For example,
+         * `//cloudresourcemanager.googleapis.com/projects/my-project`. For examples
+         * of full resource names for Google Cloud services, see
+         * https://cloud.google.com/iam/help/troubleshooter/full-resource-names.
+         * Values are Policy objects representing the policies that you want to
+         * simulate. Replays automatically take into account any IAM policies
+         * inherited through the resource hierarchy, and any policies set on
+         * descendant resources. You do not need to include these policies in the
+         * policy overlay.
+         *
+         * @param GoogleIamV1Policy[] $policyOverlay
+         */
+        public function setPolicyOverlay($policyOverlay)
+        {
+        }
+        /**
+         * @return GoogleIamV1Policy[]
+         */
+        public function getPolicyOverlay()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::LOG_SOURCE_*
+     * Runtime class alias of \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1ReplayConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLogSource()
-    {
-    }
-    /**
-     * A mapping of the resources that you want to simulate policies for and the
-     * policies that you want to simulate. Keys are the full resource names for
-     * the resources. For example,
-     * `//cloudresourcemanager.googleapis.com/projects/my-project`. For examples
-     * of full resource names for Google Cloud services, see
-     * https://cloud.google.com/iam/help/troubleshooter/full-resource-names.
-     * Values are Policy objects representing the policies that you want to
-     * simulate. Replays automatically take into account any IAM policies
-     * inherited through the resource hierarchy, and any policies set on
-     * descendant resources. You do not need to include these policies in the
-     * policy overlay.
-     *
-     * @param GoogleIamV1Policy[] $policyOverlay
-     */
-    public function setPolicyOverlay($policyOverlay)
-    {
-    }
-    /**
-     * @return GoogleIamV1Policy[]
-     */
-    public function getPolicyOverlay()
+    class Google_Service_PolicySimulator_GoogleCloudPolicysimulatorV1ReplayConfig extends \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1ReplayConfig
     {
     }
 }

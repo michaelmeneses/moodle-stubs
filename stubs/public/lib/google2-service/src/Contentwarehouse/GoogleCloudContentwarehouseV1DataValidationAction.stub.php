@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1DataValidationAction extends \Google\Model
-{
-    /**
-     * Map of (K, V) -> (field, string condition to be evaluated on the field)
-     * E.g., ("age", "age > 18 && age < 60") entry triggers validation of field
-     * age with the given condition. Map entries will be ANDed during validation.
-     *
-     * @var string[]
-     */
-    public $conditions;
-    /**
-     * Map of (K, V) -> (field, string condition to be evaluated on the field)
-     * E.g., ("age", "age > 18 && age < 60") entry triggers validation of field
-     * age with the given condition. Map entries will be ANDed during validation.
-     *
-     * @param string[] $conditions
-     */
-    public function setConditions($conditions)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1DataValidationAction extends \Google\Model
     {
+        /**
+         * Map of (K, V) -> (field, string condition to be evaluated on the field)
+         * E.g., ("age", "age > 18 && age < 60") entry triggers validation of field
+         * age with the given condition. Map entries will be ANDed during validation.
+         *
+         * @var string[]
+         */
+        public $conditions;
+        /**
+         * Map of (K, V) -> (field, string condition to be evaluated on the field)
+         * E.g., ("age", "age > 18 && age < 60") entry triggers validation of field
+         * age with the given condition. Map entries will be ANDed during validation.
+         *
+         * @param string[] $conditions
+         */
+        public function setConditions($conditions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getConditions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1DataValidationAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConditions()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1DataValidationAction extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1DataValidationAction
     {
     }
 }

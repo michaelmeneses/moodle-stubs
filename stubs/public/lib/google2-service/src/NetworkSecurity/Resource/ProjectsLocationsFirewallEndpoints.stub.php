@@ -21,127 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity\Resource;
-
-/**
- * The "firewallEndpoints" collection of methods.
- * Typical usage is:
- *  <code>
- *   $networksecurityService = new Google\Service\NetworkSecurity(...);
- *   $firewallEndpoints = $networksecurityService->projects_locations_firewallEndpoints;
- *  </code>
- */
-class ProjectsLocationsFirewallEndpoints extends \Google\Service\Resource
-{
+namespace Google\Service\NetworkSecurity\Resource {
+    use Google\Service\NetworkSecurity\FirewallEndpoint;
+    use Google\Service\NetworkSecurity\ListFirewallEndpointsResponse;
+    use Google\Service\NetworkSecurity\Operation;
     /**
-     * Creates a new FirewallEndpoint in a given project and location.
-     * (firewallEndpoints.create)
-     *
-     * @param string $parent Required. Value for parent.
-     * @param FirewallEndpoint $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string firewallEndpointId Required. Id of the requesting object.
-     * If auto-generating Id server-side, remove this field and firewall_endpoint_id
-     * from the method_signature of Create RPC.
-     * @opt_param string requestId Optional. An optional request ID to identify
-     * requests. Specify a unique request ID so that if you must retry your request,
-     * the server will know to ignore the request if it has already been completed.
-     * The server will guarantee that for at least 60 minutes since the first
-     * request. For example, consider a situation where you make an initial request
-     * and the request times out. If you make the request again with the same
-     * request ID, the server can check if original operation with the same request
-     * ID was received, and if so, will ignore the second request. This prevents
-     * clients from accidentally creating duplicate commitments. The request ID must
-     * be a valid UUID with the exception that zero UUID is not supported
-     * (00000000-0000-0000-0000-000000000000).
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "firewallEndpoints" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $networksecurityService = new Google\Service\NetworkSecurity(...);
+     *   $firewallEndpoints = $networksecurityService->projects_locations_firewallEndpoints;
+     *  </code>
      */
-    public function create($parent, FirewallEndpoint $postBody, $optParams = [])
+    class ProjectsLocationsFirewallEndpoints extends \Google\Service\Resource
     {
+        /**
+         * Creates a new FirewallEndpoint in a given project and location.
+         * (firewallEndpoints.create)
+         *
+         * @param string $parent Required. Value for parent.
+         * @param FirewallEndpoint $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string firewallEndpointId Required. Id of the requesting object.
+         * If auto-generating Id server-side, remove this field and firewall_endpoint_id
+         * from the method_signature of Create RPC.
+         * @opt_param string requestId Optional. An optional request ID to identify
+         * requests. Specify a unique request ID so that if you must retry your request,
+         * the server will know to ignore the request if it has already been completed.
+         * The server will guarantee that for at least 60 minutes since the first
+         * request. For example, consider a situation where you make an initial request
+         * and the request times out. If you make the request again with the same
+         * request ID, the server can check if original operation with the same request
+         * ID was received, and if so, will ignore the second request. This prevents
+         * clients from accidentally creating duplicate commitments. The request ID must
+         * be a valid UUID with the exception that zero UUID is not supported
+         * (00000000-0000-0000-0000-000000000000).
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, FirewallEndpoint $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a single Endpoint. (firewallEndpoints.delete)
+         *
+         * @param string $name Required. Name of the resource
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string requestId Optional. An optional request ID to identify
+         * requests. Specify a unique request ID so that if you must retry your request,
+         * the server will know to ignore the request if it has already been completed.
+         * The server will guarantee that for at least 60 minutes after the first
+         * request. For example, consider a situation where you make an initial request
+         * and the request times out. If you make the request again with the same
+         * request ID, the server can check if original operation with the same request
+         * ID was received, and if so, will ignore the second request. This prevents
+         * clients from accidentally creating duplicate commitments. The request ID must
+         * be a valid UUID with the exception that zero UUID is not supported
+         * (00000000-0000-0000-0000-000000000000).
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets details of a single Endpoint. (firewallEndpoints.get)
+         *
+         * @param string $name Required. Name of the resource
+         * @param array $optParams Optional parameters.
+         * @return FirewallEndpoint
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists FirewallEndpoints in a given project and location.
+         * (firewallEndpoints.listProjectsLocationsFirewallEndpoints)
+         *
+         * @param string $parent Required. Parent value for ListEndpointsRequest
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filtering results
+         * @opt_param string orderBy Hint for how to order the results
+         * @opt_param int pageSize Optional. Requested page size. Server may return
+         * fewer items than requested. If unspecified, server will pick an appropriate
+         * default.
+         * @opt_param string pageToken A token identifying a page of results the server
+         * should return.
+         * @return ListFirewallEndpointsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsFirewallEndpoints($parent, $optParams = [])
+        {
+        }
+        /**
+         * Update a single Endpoint. (firewallEndpoints.patch)
+         *
+         * @param string $name Immutable. Identifier. Name of resource.
+         * @param FirewallEndpoint $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string requestId Optional. An optional request ID to identify
+         * requests. Specify a unique request ID so that if you must retry your request,
+         * the server will know to ignore the request if it has already been completed.
+         * The server will guarantee that for at least 60 minutes since the first
+         * request. For example, consider a situation where you make an initial request
+         * and the request times out. If you make the request again with the same
+         * request ID, the server can check if original operation with the same request
+         * ID was received, and if so, will ignore the second request. This prevents
+         * clients from accidentally creating duplicate commitments. The request ID must
+         * be a valid UUID with the exception that zero UUID is not supported
+         * (00000000-0000-0000-0000-000000000000).
+         * @opt_param string updateMask Required. Field mask is used to specify the
+         * fields to be overwritten in the Endpoint resource by the update. The fields
+         * specified in the update_mask are relative to the resource, not the full
+         * request. A field will be overwritten if it is in the mask. If the user does
+         * not provide a mask then all fields will be overwritten.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, FirewallEndpoint $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a single Endpoint. (firewallEndpoints.delete)
-     *
-     * @param string $name Required. Name of the resource
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string requestId Optional. An optional request ID to identify
-     * requests. Specify a unique request ID so that if you must retry your request,
-     * the server will know to ignore the request if it has already been completed.
-     * The server will guarantee that for at least 60 minutes after the first
-     * request. For example, consider a situation where you make an initial request
-     * and the request times out. If you make the request again with the same
-     * request ID, the server can check if original operation with the same request
-     * ID was received, and if so, will ignore the second request. This prevents
-     * clients from accidentally creating duplicate commitments. The request ID must
-     * be a valid UUID with the exception that zero UUID is not supported
-     * (00000000-0000-0000-0000-000000000000).
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\NetworkSecurity\Resource\ProjectsLocationsFirewallEndpoints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets details of a single Endpoint. (firewallEndpoints.get)
-     *
-     * @param string $name Required. Name of the resource
-     * @param array $optParams Optional parameters.
-     * @return FirewallEndpoint
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists FirewallEndpoints in a given project and location.
-     * (firewallEndpoints.listProjectsLocationsFirewallEndpoints)
-     *
-     * @param string $parent Required. Parent value for ListEndpointsRequest
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filtering results
-     * @opt_param string orderBy Hint for how to order the results
-     * @opt_param int pageSize Optional. Requested page size. Server may return
-     * fewer items than requested. If unspecified, server will pick an appropriate
-     * default.
-     * @opt_param string pageToken A token identifying a page of results the server
-     * should return.
-     * @return ListFirewallEndpointsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsFirewallEndpoints($parent, $optParams = [])
-    {
-    }
-    /**
-     * Update a single Endpoint. (firewallEndpoints.patch)
-     *
-     * @param string $name Immutable. Identifier. Name of resource.
-     * @param FirewallEndpoint $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string requestId Optional. An optional request ID to identify
-     * requests. Specify a unique request ID so that if you must retry your request,
-     * the server will know to ignore the request if it has already been completed.
-     * The server will guarantee that for at least 60 minutes since the first
-     * request. For example, consider a situation where you make an initial request
-     * and the request times out. If you make the request again with the same
-     * request ID, the server can check if original operation with the same request
-     * ID was received, and if so, will ignore the second request. This prevents
-     * clients from accidentally creating duplicate commitments. The request ID must
-     * be a valid UUID with the exception that zero UUID is not supported
-     * (00000000-0000-0000-0000-000000000000).
-     * @opt_param string updateMask Required. Field mask is used to specify the
-     * fields to be overwritten in the Endpoint resource by the update. The fields
-     * specified in the update_mask are relative to the resource, not the full
-     * request. A field will be overwritten if it is in the mask. If the user does
-     * not provide a mask then all fields will be overwritten.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, FirewallEndpoint $postBody, $optParams = [])
+    class Google_Service_NetworkSecurity_Resource_ProjectsLocationsFirewallEndpoints extends \Google\Service\NetworkSecurity\Resource\ProjectsLocationsFirewallEndpoints
     {
     }
 }

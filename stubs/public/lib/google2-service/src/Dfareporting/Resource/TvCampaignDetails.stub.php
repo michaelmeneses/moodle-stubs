@@ -21,32 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "tvCampaignDetails" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $tvCampaignDetails = $dfareportingService->tvCampaignDetails;
- *  </code>
- */
-class TvCampaignDetails extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\TvCampaignDetail;
     /**
-     * Gets one TvCampaignDetail by ID. (tvCampaignDetails.get)
-     *
-     * @param string $profileId Required. User profile ID associated with this
-     * request.
-     * @param string $id Required. TV Campaign ID.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string accountId Required. Account ID associated with this
-     * request.
-     * @return TvCampaignDetail
-     * @throws \Google\Service\Exception
+     * The "tvCampaignDetails" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $tvCampaignDetails = $dfareportingService->tvCampaignDetails;
+     *  </code>
      */
-    public function get($profileId, $id, $optParams = [])
+    class TvCampaignDetails extends \Google\Service\Resource
+    {
+        /**
+         * Gets one TvCampaignDetail by ID. (tvCampaignDetails.get)
+         *
+         * @param string $profileId Required. User profile ID associated with this
+         * request.
+         * @param string $id Required. TV Campaign ID.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string accountId Required. Account ID associated with this
+         * request.
+         * @return TvCampaignDetail
+         * @throws \Google\Service\Exception
+         */
+        public function get($profileId, $id, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\TvCampaignDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dfareporting_Resource_TvCampaignDetails extends \Google\Service\Dfareporting\Resource\TvCampaignDetails
     {
     }
 }

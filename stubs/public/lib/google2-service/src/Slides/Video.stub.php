@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class Video extends \Google\Model
-{
-    /**
-     * The video source is unspecified.
-     */
-    public const SOURCE_SOURCE_UNSPECIFIED = 'SOURCE_UNSPECIFIED';
-    /**
-     * The video source is YouTube.
-     */
-    public const SOURCE_YOUTUBE = 'YOUTUBE';
-    /**
-     * The video source is Google Drive.
-     */
-    public const SOURCE_DRIVE = 'DRIVE';
-    /**
-     * The video source's unique identifier for this video.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The video source.
-     *
-     * @var string
-     */
-    public $source;
-    /**
-     * An URL to a video. The URL is valid as long as the source video exists and
-     * sharing settings do not change.
-     *
-     * @var string
-     */
-    public $url;
-    protected $videoPropertiesType = VideoProperties::class;
-    protected $videoPropertiesDataType = '';
-    /**
-     * The video source's unique identifier for this video.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Slides {
+    class Video extends \Google\Model
     {
+        /**
+         * The video source is unspecified.
+         */
+        public const SOURCE_SOURCE_UNSPECIFIED = 'SOURCE_UNSPECIFIED';
+        /**
+         * The video source is YouTube.
+         */
+        public const SOURCE_YOUTUBE = 'YOUTUBE';
+        /**
+         * The video source is Google Drive.
+         */
+        public const SOURCE_DRIVE = 'DRIVE';
+        /**
+         * The video source's unique identifier for this video.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The video source.
+         *
+         * @var string
+         */
+        public $source;
+        /**
+         * An URL to a video. The URL is valid as long as the source video exists and
+         * sharing settings do not change.
+         *
+         * @var string
+         */
+        public $url;
+        protected $videoPropertiesType = VideoProperties::class;
+        protected $videoPropertiesDataType = '';
+        /**
+         * The video source's unique identifier for this video.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The video source.
+         *
+         * Accepted values: SOURCE_UNSPECIFIED, YOUTUBE, DRIVE
+         *
+         * @param self::SOURCE_* $source
+         */
+        public function setSource($source)
+        {
+        }
+        /**
+         * @return self::SOURCE_*
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * An URL to a video. The URL is valid as long as the source video exists and
+         * sharing settings do not change.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
+        /**
+         * The properties of the video.
+         *
+         * @param VideoProperties $videoProperties
+         */
+        public function setVideoProperties(VideoProperties $videoProperties)
+        {
+        }
+        /**
+         * @return VideoProperties
+         */
+        public function getVideoProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Slides\Video registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * The video source.
-     *
-     * Accepted values: SOURCE_UNSPECIFIED, YOUTUBE, DRIVE
-     *
-     * @param self::SOURCE_* $source
-     */
-    public function setSource($source)
-    {
-    }
-    /**
-     * @return self::SOURCE_*
-     */
-    public function getSource()
-    {
-    }
-    /**
-     * An URL to a video. The URL is valid as long as the source video exists and
-     * sharing settings do not change.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
-    {
-    }
-    /**
-     * The properties of the video.
-     *
-     * @param VideoProperties $videoProperties
-     */
-    public function setVideoProperties(VideoProperties $videoProperties)
-    {
-    }
-    /**
-     * @return VideoProperties
-     */
-    public function getVideoProperties()
+    class Google_Service_Slides_Video extends \Google\Service\Slides\Video
     {
     }
 }

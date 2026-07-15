@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SafetySpec extends \Google\Model
-{
-    /**
-     * Optional. Which version to use for evaluation.
-     *
-     * @var int
-     */
-    public $version;
-    /**
-     * Optional. Which version to use for evaluation.
-     *
-     * @param int $version
-     */
-    public function setVersion($version)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SafetySpec extends \Google\Model
     {
+        /**
+         * Optional. Which version to use for evaluation.
+         *
+         * @var int
+         */
+        public $version;
+        /**
+         * Optional. Which version to use for evaluation.
+         *
+         * @param int $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SafetySpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVersion()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SafetySpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SafetySpec
     {
     }
 }

@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class RayOperatorConfig extends \Google\Model
-{
-    /**
-     * Whether the Ray Operator addon is enabled for this cluster.
-     *
-     * @var bool
-     */
-    public $enabled;
-    protected $rayClusterLoggingConfigType = RayClusterLoggingConfig::class;
-    protected $rayClusterLoggingConfigDataType = '';
-    protected $rayClusterMonitoringConfigType = RayClusterMonitoringConfig::class;
-    protected $rayClusterMonitoringConfigDataType = '';
-    /**
-     * Whether the Ray Operator addon is enabled for this cluster.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\Container {
+    class RayOperatorConfig extends \Google\Model
     {
+        /**
+         * Whether the Ray Operator addon is enabled for this cluster.
+         *
+         * @var bool
+         */
+        public $enabled;
+        protected $rayClusterLoggingConfigType = RayClusterLoggingConfig::class;
+        protected $rayClusterLoggingConfigDataType = '';
+        protected $rayClusterMonitoringConfigType = RayClusterMonitoringConfig::class;
+        protected $rayClusterMonitoringConfigDataType = '';
+        /**
+         * Whether the Ray Operator addon is enabled for this cluster.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * Optional. Logging configuration for Ray clusters.
+         *
+         * @param RayClusterLoggingConfig $rayClusterLoggingConfig
+         */
+        public function setRayClusterLoggingConfig(RayClusterLoggingConfig $rayClusterLoggingConfig)
+        {
+        }
+        /**
+         * @return RayClusterLoggingConfig
+         */
+        public function getRayClusterLoggingConfig()
+        {
+        }
+        /**
+         * Optional. Monitoring configuration for Ray clusters.
+         *
+         * @param RayClusterMonitoringConfig $rayClusterMonitoringConfig
+         */
+        public function setRayClusterMonitoringConfig(RayClusterMonitoringConfig $rayClusterMonitoringConfig)
+        {
+        }
+        /**
+         * @return RayClusterMonitoringConfig
+         */
+        public function getRayClusterMonitoringConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\RayOperatorConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * Optional. Logging configuration for Ray clusters.
-     *
-     * @param RayClusterLoggingConfig $rayClusterLoggingConfig
-     */
-    public function setRayClusterLoggingConfig(RayClusterLoggingConfig $rayClusterLoggingConfig)
-    {
-    }
-    /**
-     * @return RayClusterLoggingConfig
-     */
-    public function getRayClusterLoggingConfig()
-    {
-    }
-    /**
-     * Optional. Monitoring configuration for Ray clusters.
-     *
-     * @param RayClusterMonitoringConfig $rayClusterMonitoringConfig
-     */
-    public function setRayClusterMonitoringConfig(RayClusterMonitoringConfig $rayClusterMonitoringConfig)
-    {
-    }
-    /**
-     * @return RayClusterMonitoringConfig
-     */
-    public function getRayClusterMonitoringConfig()
+    class Google_Service_Container_RayOperatorConfig extends \Google\Service\Container\RayOperatorConfig
     {
     }
 }

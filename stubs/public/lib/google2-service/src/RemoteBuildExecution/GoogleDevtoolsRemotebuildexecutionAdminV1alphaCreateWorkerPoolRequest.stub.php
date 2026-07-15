@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemotebuildexecutionAdminV1alphaCreateWorkerPoolRequest extends \Google\Model
-{
-    public $parent;
-    public $poolId;
-    protected $workerPoolType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool::class;
-    protected $workerPoolDataType = '';
-    public function setParent($parent)
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemotebuildexecutionAdminV1alphaCreateWorkerPoolRequest extends \Google\Model
     {
+        public $parent;
+        public $poolId;
+        protected $workerPoolType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool::class;
+        protected $workerPoolDataType = '';
+        public function setParent($parent)
+        {
+        }
+        public function getParent()
+        {
+        }
+        public function setPoolId($poolId)
+        {
+        }
+        public function getPoolId()
+        {
+        }
+        /**
+         * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool
+         */
+        public function setWorkerPool(GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool $workerPool)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool
+         */
+        public function getWorkerPool()
+        {
+        }
     }
-    public function getParent()
-    {
-    }
-    public function setPoolId($poolId)
-    {
-    }
-    public function getPoolId()
-    {
-    }
+}
+namespace {
     /**
-     * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaCreateWorkerPoolRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setWorkerPool(GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool $workerPool)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool
-     */
-    public function getWorkerPool()
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemotebuildexecutionAdminV1alphaCreateWorkerPoolRequest extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaCreateWorkerPoolRequest
     {
     }
 }

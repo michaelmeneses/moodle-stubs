@@ -21,49 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Adsense\Resource;
-
-/**
- * The "urlchannels" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adsenseService = new Google\Service\Adsense(...);
- *   $urlchannels = $adsenseService->accounts_adclients_urlchannels;
- *  </code>
- */
-class AccountsAdclientsUrlchannels extends \Google\Service\Resource
-{
+namespace Google\Service\Adsense\Resource {
+    use Google\Service\Adsense\ListUrlChannelsResponse;
+    use Google\Service\Adsense\UrlChannel;
     /**
-     * Gets information about the selected url channel. (urlchannels.get)
-     *
-     * @param string $name Required. The name of the url channel to retrieve.
-     * Format: accounts/{account}/adclients/{adclient}/urlchannels/{urlchannel}
-     * @param array $optParams Optional parameters.
-     * @return UrlChannel
-     * @throws \Google\Service\Exception
+     * The "urlchannels" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adsenseService = new Google\Service\Adsense(...);
+     *   $urlchannels = $adsenseService->accounts_adclients_urlchannels;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class AccountsAdclientsUrlchannels extends \Google\Service\Resource
     {
+        /**
+         * Gets information about the selected url channel. (urlchannels.get)
+         *
+         * @param string $name Required. The name of the url channel to retrieve.
+         * Format: accounts/{account}/adclients/{adclient}/urlchannels/{urlchannel}
+         * @param array $optParams Optional parameters.
+         * @return UrlChannel
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists active url channels. (urlchannels.listAccountsAdclientsUrlchannels)
+         *
+         * @param string $parent Required. The ad client which owns the collection of
+         * url channels. Format: accounts/{account}/adclients/{adclient}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of url channels to include in the
+         * response, used for paging. If unspecified, at most 10000 url channels will be
+         * returned. The maximum value is 10000; values above 10000 will be coerced to
+         * 10000.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListUrlChannels` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListUrlChannels` must match the
+         * call that provided the page token.
+         * @return ListUrlChannelsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsAdclientsUrlchannels($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists active url channels. (urlchannels.listAccountsAdclientsUrlchannels)
-     *
-     * @param string $parent Required. The ad client which owns the collection of
-     * url channels. Format: accounts/{account}/adclients/{adclient}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of url channels to include in the
-     * response, used for paging. If unspecified, at most 10000 url channels will be
-     * returned. The maximum value is 10000; values above 10000 will be coerced to
-     * 10000.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListUrlChannels` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListUrlChannels` must match the
-     * call that provided the page token.
-     * @return ListUrlChannelsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Adsense\Resource\AccountsAdclientsUrlchannels registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listAccountsAdclientsUrlchannels($parent, $optParams = [])
+    class Google_Service_Adsense_Resource_AccountsAdclientsUrlchannels extends \Google\Service\Adsense\Resource\AccountsAdclientsUrlchannels
     {
     }
 }

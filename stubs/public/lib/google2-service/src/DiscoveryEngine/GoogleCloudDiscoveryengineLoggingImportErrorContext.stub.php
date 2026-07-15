@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineLoggingImportErrorContext extends \Google\Model
-{
-    /**
-     * The detailed content which caused the error on importing a document.
-     *
-     * @var string
-     */
-    public $document;
-    /**
-     * Google Cloud Storage file path of the import source. Can be set for batch
-     * operation error.
-     *
-     * @var string
-     */
-    public $gcsPath;
-    /**
-     * Line number of the content in file. Should be empty for permission or batch
-     * operation error.
-     *
-     * @var string
-     */
-    public $lineNumber;
-    /**
-     * The operation resource name of the LRO.
-     *
-     * @var string
-     */
-    public $operation;
-    /**
-     * The detailed content which caused the error on importing a user event.
-     *
-     * @var string
-     */
-    public $userEvent;
-    /**
-     * The detailed content which caused the error on importing a document.
-     *
-     * @param string $document
-     */
-    public function setDocument($document)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineLoggingImportErrorContext extends \Google\Model
     {
+        /**
+         * The detailed content which caused the error on importing a document.
+         *
+         * @var string
+         */
+        public $document;
+        /**
+         * Google Cloud Storage file path of the import source. Can be set for batch
+         * operation error.
+         *
+         * @var string
+         */
+        public $gcsPath;
+        /**
+         * Line number of the content in file. Should be empty for permission or batch
+         * operation error.
+         *
+         * @var string
+         */
+        public $lineNumber;
+        /**
+         * The operation resource name of the LRO.
+         *
+         * @var string
+         */
+        public $operation;
+        /**
+         * The detailed content which caused the error on importing a user event.
+         *
+         * @var string
+         */
+        public $userEvent;
+        /**
+         * The detailed content which caused the error on importing a document.
+         *
+         * @param string $document
+         */
+        public function setDocument($document)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * Google Cloud Storage file path of the import source. Can be set for batch
+         * operation error.
+         *
+         * @param string $gcsPath
+         */
+        public function setGcsPath($gcsPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsPath()
+        {
+        }
+        /**
+         * Line number of the content in file. Should be empty for permission or batch
+         * operation error.
+         *
+         * @param string $lineNumber
+         */
+        public function setLineNumber($lineNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLineNumber()
+        {
+        }
+        /**
+         * The operation resource name of the LRO.
+         *
+         * @param string $operation
+         */
+        public function setOperation($operation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperation()
+        {
+        }
+        /**
+         * The detailed content which caused the error on importing a user event.
+         *
+         * @param string $userEvent
+         */
+        public function setUserEvent($userEvent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserEvent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineLoggingImportErrorContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocument()
-    {
-    }
-    /**
-     * Google Cloud Storage file path of the import source. Can be set for batch
-     * operation error.
-     *
-     * @param string $gcsPath
-     */
-    public function setGcsPath($gcsPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcsPath()
-    {
-    }
-    /**
-     * Line number of the content in file. Should be empty for permission or batch
-     * operation error.
-     *
-     * @param string $lineNumber
-     */
-    public function setLineNumber($lineNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLineNumber()
-    {
-    }
-    /**
-     * The operation resource name of the LRO.
-     *
-     * @param string $operation
-     */
-    public function setOperation($operation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperation()
-    {
-    }
-    /**
-     * The detailed content which caused the error on importing a user event.
-     *
-     * @param string $userEvent
-     */
-    public function setUserEvent($userEvent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserEvent()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineLoggingImportErrorContext extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineLoggingImportErrorContext
     {
     }
 }

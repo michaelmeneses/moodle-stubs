@@ -21,105 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Speech\Resource;
-
-/**
- * The "phraseSets" collection of methods.
- * Typical usage is:
- *  <code>
- *   $speechService = new Google\Service\Speech(...);
- *   $phraseSets = $speechService->projects_locations_phraseSets;
- *  </code>
- */
-class ProjectsLocationsPhraseSets extends \Google\Service\Resource
-{
+namespace Google\Service\Speech\Resource {
+    use Google\Service\Speech\CreatePhraseSetRequest;
+    use Google\Service\Speech\ListPhraseSetResponse;
+    use Google\Service\Speech\PhraseSet;
+    use Google\Service\Speech\SpeechEmpty;
     /**
-     * Create a set of phrase hints. Each item in the set can be a single word or a
-     * multi-word phrase. The items in the PhraseSet are favored by the recognition
-     * model when you send a call that includes the PhraseSet. (phraseSets.create)
-     *
-     * @param string $parent Required. The parent resource where this phrase set
-     * will be created. Format: `projects/{project}/locations/{location}` Speech-to-
-     * Text supports three locations: `global`, `us` (US North America), and `eu`
-     * (Europe). If you are calling the `speech.googleapis.com` endpoint, use the
-     * `global` location. To specify a region, use a [regional
-     * endpoint](https://cloud.google.com/speech-to-text/docs/endpoints) with
-     * matching `us` or `eu` location value.
-     * @param CreatePhraseSetRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return PhraseSet
-     * @throws \Google\Service\Exception
+     * The "phraseSets" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $speechService = new Google\Service\Speech(...);
+     *   $phraseSets = $speechService->projects_locations_phraseSets;
+     *  </code>
      */
-    public function create($parent, CreatePhraseSetRequest $postBody, $optParams = [])
+    class ProjectsLocationsPhraseSets extends \Google\Service\Resource
     {
+        /**
+         * Create a set of phrase hints. Each item in the set can be a single word or a
+         * multi-word phrase. The items in the PhraseSet are favored by the recognition
+         * model when you send a call that includes the PhraseSet. (phraseSets.create)
+         *
+         * @param string $parent Required. The parent resource where this phrase set
+         * will be created. Format: `projects/{project}/locations/{location}` Speech-to-
+         * Text supports three locations: `global`, `us` (US North America), and `eu`
+         * (Europe). If you are calling the `speech.googleapis.com` endpoint, use the
+         * `global` location. To specify a region, use a [regional
+         * endpoint](https://cloud.google.com/speech-to-text/docs/endpoints) with
+         * matching `us` or `eu` location value.
+         * @param CreatePhraseSetRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return PhraseSet
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, CreatePhraseSetRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Delete a phrase set. (phraseSets.delete)
+         *
+         * @param string $name Required. The name of the phrase set to delete. Format:
+         * `projects/{project}/locations/{location}/phraseSets/{phrase_set}`
+         * @param array $optParams Optional parameters.
+         * @return SpeechEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Get a phrase set. (phraseSets.get)
+         *
+         * @param string $name Required. The name of the phrase set to retrieve. Format:
+         * `projects/{project}/locations/{location}/phraseSets/{phrase_set}` Speech-to-
+         * Text supports three locations: `global`, `us` (US North America), and `eu`
+         * (Europe). If you are calling the `speech.googleapis.com` endpoint, use the
+         * `global` location. To specify a region, use a [regional
+         * endpoint](https://cloud.google.com/speech-to-text/docs/endpoints) with
+         * matching `us` or `eu` location value.
+         * @param array $optParams Optional parameters.
+         * @return PhraseSet
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * List phrase sets. (phraseSets.listProjectsLocationsPhraseSets)
+         *
+         * @param string $parent Required. The parent, which owns this collection of
+         * phrase set. Format: `projects/{project}/locations/{location}` Speech-to-Text
+         * supports three locations: `global`, `us` (US North America), and `eu`
+         * (Europe). If you are calling the `speech.googleapis.com` endpoint, use the
+         * `global` location. To specify a region, use a [regional
+         * endpoint](https://cloud.google.com/speech-to-text/docs/endpoints) with
+         * matching `us` or `eu` location value.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of phrase sets to return. The
+         * service may return fewer than this value. If unspecified, at most 50 phrase
+         * sets will be returned. The maximum value is 1000; values above 1000 will be
+         * coerced to 1000.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListPhraseSet` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListPhraseSet` must match the
+         * call that provided the page token.
+         * @return ListPhraseSetResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsPhraseSets($parent, $optParams = [])
+        {
+        }
+        /**
+         * Update a phrase set. (phraseSets.patch)
+         *
+         * @param string $name The resource name of the phrase set.
+         * @param PhraseSet $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask The list of fields to be updated.
+         * @return PhraseSet
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, PhraseSet $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Delete a phrase set. (phraseSets.delete)
-     *
-     * @param string $name Required. The name of the phrase set to delete. Format:
-     * `projects/{project}/locations/{location}/phraseSets/{phrase_set}`
-     * @param array $optParams Optional parameters.
-     * @return SpeechEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Speech\Resource\ProjectsLocationsPhraseSets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Get a phrase set. (phraseSets.get)
-     *
-     * @param string $name Required. The name of the phrase set to retrieve. Format:
-     * `projects/{project}/locations/{location}/phraseSets/{phrase_set}` Speech-to-
-     * Text supports three locations: `global`, `us` (US North America), and `eu`
-     * (Europe). If you are calling the `speech.googleapis.com` endpoint, use the
-     * `global` location. To specify a region, use a [regional
-     * endpoint](https://cloud.google.com/speech-to-text/docs/endpoints) with
-     * matching `us` or `eu` location value.
-     * @param array $optParams Optional parameters.
-     * @return PhraseSet
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * List phrase sets. (phraseSets.listProjectsLocationsPhraseSets)
-     *
-     * @param string $parent Required. The parent, which owns this collection of
-     * phrase set. Format: `projects/{project}/locations/{location}` Speech-to-Text
-     * supports three locations: `global`, `us` (US North America), and `eu`
-     * (Europe). If you are calling the `speech.googleapis.com` endpoint, use the
-     * `global` location. To specify a region, use a [regional
-     * endpoint](https://cloud.google.com/speech-to-text/docs/endpoints) with
-     * matching `us` or `eu` location value.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of phrase sets to return. The
-     * service may return fewer than this value. If unspecified, at most 50 phrase
-     * sets will be returned. The maximum value is 1000; values above 1000 will be
-     * coerced to 1000.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListPhraseSet` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListPhraseSet` must match the
-     * call that provided the page token.
-     * @return ListPhraseSetResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsPhraseSets($parent, $optParams = [])
-    {
-    }
-    /**
-     * Update a phrase set. (phraseSets.patch)
-     *
-     * @param string $name The resource name of the phrase set.
-     * @param PhraseSet $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask The list of fields to be updated.
-     * @return PhraseSet
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, PhraseSet $postBody, $optParams = [])
+    class Google_Service_Speech_Resource_ProjectsLocationsPhraseSets extends \Google\Service\Speech\Resource\ProjectsLocationsPhraseSets
     {
     }
 }

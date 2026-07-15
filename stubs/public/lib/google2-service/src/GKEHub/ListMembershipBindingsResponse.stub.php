@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ListMembershipBindingsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $membershipBindingsType = MembershipBinding::class;
-    protected $membershipBindingsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * @param MembershipBinding[]
-     */
-    public function setMembershipBindings($membershipBindings)
+namespace Google\Service\GKEHub {
+    class ListMembershipBindingsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $membershipBindingsType = MembershipBinding::class;
+        protected $membershipBindingsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * @param MembershipBinding[]
+         */
+        public function setMembershipBindings($membershipBindings)
+        {
+        }
+        /**
+         * @return MembershipBinding[]
+         */
+        public function getMembershipBindings()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MembershipBinding[]
+     * Runtime class alias of \Google\Service\GKEHub\ListMembershipBindingsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMembershipBindings()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_GKEHub_ListMembershipBindingsResponse extends \Google\Service\GKEHub\ListMembershipBindingsResponse
     {
     }
 }

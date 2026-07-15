@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class DeviceTierConfig extends \Google\Collection
-{
-    protected $collection_key = 'userCountrySets';
-    protected $deviceGroupsType = DeviceGroup::class;
-    protected $deviceGroupsDataType = 'array';
-    /**
-     * Output only. The device tier config ID.
-     *
-     * @var string
-     */
-    public $deviceTierConfigId;
-    protected $deviceTierSetType = DeviceTierSet::class;
-    protected $deviceTierSetDataType = '';
-    protected $userCountrySetsType = UserCountrySet::class;
-    protected $userCountrySetsDataType = 'array';
-    /**
-     * Definition of device groups for the app.
-     *
-     * @param DeviceGroup[] $deviceGroups
-     */
-    public function setDeviceGroups($deviceGroups)
+namespace Google\Service\AndroidPublisher {
+    class DeviceTierConfig extends \Google\Collection
     {
+        protected $collection_key = 'userCountrySets';
+        protected $deviceGroupsType = DeviceGroup::class;
+        protected $deviceGroupsDataType = 'array';
+        /**
+         * Output only. The device tier config ID.
+         *
+         * @var string
+         */
+        public $deviceTierConfigId;
+        protected $deviceTierSetType = DeviceTierSet::class;
+        protected $deviceTierSetDataType = '';
+        protected $userCountrySetsType = UserCountrySet::class;
+        protected $userCountrySetsDataType = 'array';
+        /**
+         * Definition of device groups for the app.
+         *
+         * @param DeviceGroup[] $deviceGroups
+         */
+        public function setDeviceGroups($deviceGroups)
+        {
+        }
+        /**
+         * @return DeviceGroup[]
+         */
+        public function getDeviceGroups()
+        {
+        }
+        /**
+         * Output only. The device tier config ID.
+         *
+         * @param string $deviceTierConfigId
+         */
+        public function setDeviceTierConfigId($deviceTierConfigId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceTierConfigId()
+        {
+        }
+        /**
+         * Definition of the set of device tiers for the app.
+         *
+         * @param DeviceTierSet $deviceTierSet
+         */
+        public function setDeviceTierSet(DeviceTierSet $deviceTierSet)
+        {
+        }
+        /**
+         * @return DeviceTierSet
+         */
+        public function getDeviceTierSet()
+        {
+        }
+        /**
+         * Definition of user country sets for the app.
+         *
+         * @param UserCountrySet[] $userCountrySets
+         */
+        public function setUserCountrySets($userCountrySets)
+        {
+        }
+        /**
+         * @return UserCountrySet[]
+         */
+        public function getUserCountrySets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeviceGroup[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\DeviceTierConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceGroups()
-    {
-    }
-    /**
-     * Output only. The device tier config ID.
-     *
-     * @param string $deviceTierConfigId
-     */
-    public function setDeviceTierConfigId($deviceTierConfigId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeviceTierConfigId()
-    {
-    }
-    /**
-     * Definition of the set of device tiers for the app.
-     *
-     * @param DeviceTierSet $deviceTierSet
-     */
-    public function setDeviceTierSet(DeviceTierSet $deviceTierSet)
-    {
-    }
-    /**
-     * @return DeviceTierSet
-     */
-    public function getDeviceTierSet()
-    {
-    }
-    /**
-     * Definition of user country sets for the app.
-     *
-     * @param UserCountrySet[] $userCountrySets
-     */
-    public function setUserCountrySets($userCountrySets)
-    {
-    }
-    /**
-     * @return UserCountrySet[]
-     */
-    public function getUserCountrySets()
+    class Google_Service_AndroidPublisher_DeviceTierConfig extends \Google\Service\AndroidPublisher\DeviceTierConfig
     {
     }
 }

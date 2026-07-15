@@ -31,6 +31,7 @@
  */
 namespace core\dml;
 
+use stdClass;
 /**
  * Helpers and methods relating to DML tables.
  *

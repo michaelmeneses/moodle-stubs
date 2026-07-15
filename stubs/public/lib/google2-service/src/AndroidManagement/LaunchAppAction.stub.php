@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class LaunchAppAction extends \Google\Model
-{
-    /**
-     * Package name of app to be launched
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * Package name of app to be launched
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
+namespace Google\Service\AndroidManagement {
+    class LaunchAppAction extends \Google\Model
     {
+        /**
+         * Package name of app to be launched
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * Package name of app to be launched
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\LaunchAppAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPackageName()
+    class Google_Service_AndroidManagement_LaunchAppAction extends \Google\Service\AndroidManagement\LaunchAppAction
     {
     }
 }

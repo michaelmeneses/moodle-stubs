@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class HangoutsChatInfo extends \Google\Collection
-{
-    protected $collection_key = 'roomId';
-    /**
-     * A list of Chat spaces IDs, as provided by the [Chat
-     * API](https://developers.google.com/workspace/chat). There is a limit of
-     * exporting from 500 Chat spaces per request.
-     *
-     * @var string[]
-     */
-    public $roomId;
-    /**
-     * A list of Chat spaces IDs, as provided by the [Chat
-     * API](https://developers.google.com/workspace/chat). There is a limit of
-     * exporting from 500 Chat spaces per request.
-     *
-     * @param string[] $roomId
-     */
-    public function setRoomId($roomId)
+namespace Google\Service\Vault {
+    class HangoutsChatInfo extends \Google\Collection
     {
+        protected $collection_key = 'roomId';
+        /**
+         * A list of Chat spaces IDs, as provided by the [Chat
+         * API](https://developers.google.com/workspace/chat). There is a limit of
+         * exporting from 500 Chat spaces per request.
+         *
+         * @var string[]
+         */
+        public $roomId;
+        /**
+         * A list of Chat spaces IDs, as provided by the [Chat
+         * API](https://developers.google.com/workspace/chat). There is a limit of
+         * exporting from 500 Chat spaces per request.
+         *
+         * @param string[] $roomId
+         */
+        public function setRoomId($roomId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRoomId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Vault\HangoutsChatInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRoomId()
+    class Google_Service_Vault_HangoutsChatInfo extends \Google\Service\Vault\HangoutsChatInfo
     {
     }
 }

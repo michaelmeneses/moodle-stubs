@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class CreateItemResponse extends \Google\Collection
-{
-    protected $collection_key = 'questionId';
-    /**
-     * The ID of the created item.
-     *
-     * @var string
-     */
-    public $itemId;
-    /**
-     * The ID of the question created as part of this item, for a question group
-     * it lists IDs of all the questions created for this item.
-     *
-     * @var string[]
-     */
-    public $questionId;
-    /**
-     * The ID of the created item.
-     *
-     * @param string $itemId
-     */
-    public function setItemId($itemId)
+namespace Google\Service\Forms {
+    class CreateItemResponse extends \Google\Collection
     {
+        protected $collection_key = 'questionId';
+        /**
+         * The ID of the created item.
+         *
+         * @var string
+         */
+        public $itemId;
+        /**
+         * The ID of the question created as part of this item, for a question group
+         * it lists IDs of all the questions created for this item.
+         *
+         * @var string[]
+         */
+        public $questionId;
+        /**
+         * The ID of the created item.
+         *
+         * @param string $itemId
+         */
+        public function setItemId($itemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getItemId()
+        {
+        }
+        /**
+         * The ID of the question created as part of this item, for a question group
+         * it lists IDs of all the questions created for this item.
+         *
+         * @param string[] $questionId
+         */
+        public function setQuestionId($questionId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getQuestionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Forms\CreateItemResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItemId()
-    {
-    }
-    /**
-     * The ID of the question created as part of this item, for a question group
-     * it lists IDs of all the questions created for this item.
-     *
-     * @param string[] $questionId
-     */
-    public function setQuestionId($questionId)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getQuestionId()
+    class Google_Service_Forms_CreateItemResponse extends \Google\Service\Forms\CreateItemResponse
     {
     }
 }

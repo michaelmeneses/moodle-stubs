@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class MatchInfo extends \Google\Model
-{
-    protected $predefinedDetectorType = PredefinedDetectorInfo::class;
-    protected $predefinedDetectorDataType = '';
-    protected $userDefinedDetectorType = UserDefinedDetectorInfo::class;
-    protected $userDefinedDetectorDataType = '';
-    /**
-     * For matched detector predefined by Google.
-     *
-     * @param PredefinedDetectorInfo $predefinedDetector
-     */
-    public function setPredefinedDetector(PredefinedDetectorInfo $predefinedDetector)
+namespace Google\Service\AlertCenter {
+    class MatchInfo extends \Google\Model
     {
+        protected $predefinedDetectorType = PredefinedDetectorInfo::class;
+        protected $predefinedDetectorDataType = '';
+        protected $userDefinedDetectorType = UserDefinedDetectorInfo::class;
+        protected $userDefinedDetectorDataType = '';
+        /**
+         * For matched detector predefined by Google.
+         *
+         * @param PredefinedDetectorInfo $predefinedDetector
+         */
+        public function setPredefinedDetector(PredefinedDetectorInfo $predefinedDetector)
+        {
+        }
+        /**
+         * @return PredefinedDetectorInfo
+         */
+        public function getPredefinedDetector()
+        {
+        }
+        /**
+         * For matched detector defined by administrators.
+         *
+         * @param UserDefinedDetectorInfo $userDefinedDetector
+         */
+        public function setUserDefinedDetector(UserDefinedDetectorInfo $userDefinedDetector)
+        {
+        }
+        /**
+         * @return UserDefinedDetectorInfo
+         */
+        public function getUserDefinedDetector()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PredefinedDetectorInfo
+     * Runtime class alias of \Google\Service\AlertCenter\MatchInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPredefinedDetector()
-    {
-    }
-    /**
-     * For matched detector defined by administrators.
-     *
-     * @param UserDefinedDetectorInfo $userDefinedDetector
-     */
-    public function setUserDefinedDetector(UserDefinedDetectorInfo $userDefinedDetector)
-    {
-    }
-    /**
-     * @return UserDefinedDetectorInfo
-     */
-    public function getUserDefinedDetector()
+    class Google_Service_AlertCenter_MatchInfo extends \Google\Service\AlertCenter\MatchInfo
     {
     }
 }

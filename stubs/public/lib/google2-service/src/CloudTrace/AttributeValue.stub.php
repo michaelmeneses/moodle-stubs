@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTrace;
-
-class AttributeValue extends \Google\Model
-{
-    /**
-     * A Boolean value represented by `true` or `false`.
-     *
-     * @var bool
-     */
-    public $boolValue;
-    /**
-     * A 64-bit signed integer.
-     *
-     * @var string
-     */
-    public $intValue;
-    protected $stringValueType = TruncatableString::class;
-    protected $stringValueDataType = '';
-    /**
-     * A Boolean value represented by `true` or `false`.
-     *
-     * @param bool $boolValue
-     */
-    public function setBoolValue($boolValue)
+namespace Google\Service\CloudTrace {
+    class AttributeValue extends \Google\Model
     {
+        /**
+         * A Boolean value represented by `true` or `false`.
+         *
+         * @var bool
+         */
+        public $boolValue;
+        /**
+         * A 64-bit signed integer.
+         *
+         * @var string
+         */
+        public $intValue;
+        protected $stringValueType = TruncatableString::class;
+        protected $stringValueDataType = '';
+        /**
+         * A Boolean value represented by `true` or `false`.
+         *
+         * @param bool $boolValue
+         */
+        public function setBoolValue($boolValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBoolValue()
+        {
+        }
+        /**
+         * A 64-bit signed integer.
+         *
+         * @param string $intValue
+         */
+        public function setIntValue($intValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntValue()
+        {
+        }
+        /**
+         * A string up to 256 bytes long.
+         *
+         * @param TruncatableString $stringValue
+         */
+        public function setStringValue(TruncatableString $stringValue)
+        {
+        }
+        /**
+         * @return TruncatableString
+         */
+        public function getStringValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudTrace\AttributeValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoolValue()
-    {
-    }
-    /**
-     * A 64-bit signed integer.
-     *
-     * @param string $intValue
-     */
-    public function setIntValue($intValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntValue()
-    {
-    }
-    /**
-     * A string up to 256 bytes long.
-     *
-     * @param TruncatableString $stringValue
-     */
-    public function setStringValue(TruncatableString $stringValue)
-    {
-    }
-    /**
-     * @return TruncatableString
-     */
-    public function getStringValue()
+    class Google_Service_CloudTrace_AttributeValue extends \Google\Service\CloudTrace\AttributeValue
     {
     }
 }

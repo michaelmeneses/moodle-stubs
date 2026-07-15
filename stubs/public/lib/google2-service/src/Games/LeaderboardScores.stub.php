@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class LeaderboardScores extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = LeaderboardEntry::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#leaderboardScores`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The pagination token for the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The total number of scores in the leaderboard.
-     *
-     * @var string
-     */
-    public $numScores;
-    protected $playerScoreType = LeaderboardEntry::class;
-    protected $playerScoreDataType = '';
-    /**
-     * The pagination token for the previous page of results.
-     *
-     * @var string
-     */
-    public $prevPageToken;
-    /**
-     * The scores in the leaderboard.
-     *
-     * @param LeaderboardEntry[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Games {
+    class LeaderboardScores extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = LeaderboardEntry::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#leaderboardScores`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The pagination token for the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The total number of scores in the leaderboard.
+         *
+         * @var string
+         */
+        public $numScores;
+        protected $playerScoreType = LeaderboardEntry::class;
+        protected $playerScoreDataType = '';
+        /**
+         * The pagination token for the previous page of results.
+         *
+         * @var string
+         */
+        public $prevPageToken;
+        /**
+         * The scores in the leaderboard.
+         *
+         * @param LeaderboardEntry[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return LeaderboardEntry[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#leaderboardScores`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The pagination token for the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The total number of scores in the leaderboard.
+         *
+         * @param string $numScores
+         */
+        public function setNumScores($numScores)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumScores()
+        {
+        }
+        /**
+         * The score of the requesting player on the leaderboard. The player's score
+         * may appear both here and in the list of scores above. If you are viewing a
+         * public leaderboard and the player is not sharing their gameplay information
+         * publicly, the `scoreRank`and `formattedScoreRank` values will not be
+         * present.
+         *
+         * @param LeaderboardEntry $playerScore
+         */
+        public function setPlayerScore(LeaderboardEntry $playerScore)
+        {
+        }
+        /**
+         * @return LeaderboardEntry
+         */
+        public function getPlayerScore()
+        {
+        }
+        /**
+         * The pagination token for the previous page of results.
+         *
+         * @param string $prevPageToken
+         */
+        public function setPrevPageToken($prevPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrevPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LeaderboardEntry[]
+     * Runtime class alias of \Google\Service\Games\LeaderboardScores registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#leaderboardScores`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The pagination token for the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The total number of scores in the leaderboard.
-     *
-     * @param string $numScores
-     */
-    public function setNumScores($numScores)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumScores()
-    {
-    }
-    /**
-     * The score of the requesting player on the leaderboard. The player's score
-     * may appear both here and in the list of scores above. If you are viewing a
-     * public leaderboard and the player is not sharing their gameplay information
-     * publicly, the `scoreRank`and `formattedScoreRank` values will not be
-     * present.
-     *
-     * @param LeaderboardEntry $playerScore
-     */
-    public function setPlayerScore(LeaderboardEntry $playerScore)
-    {
-    }
-    /**
-     * @return LeaderboardEntry
-     */
-    public function getPlayerScore()
-    {
-    }
-    /**
-     * The pagination token for the previous page of results.
-     *
-     * @param string $prevPageToken
-     */
-    public function setPrevPageToken($prevPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrevPageToken()
+    class Google_Service_Games_LeaderboardScores extends \Google\Service\Games\LeaderboardScores
     {
     }
 }

@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ProductInlineSource extends \Google\Collection
-{
-    protected $collection_key = 'products';
-    protected $productsType = GoogleCloudRetailV2Product::class;
-    protected $productsDataType = 'array';
-    /**
-     * Required. A list of products to update/create. Each product must have a
-     * valid Product.id. Recommended max of 100 items.
-     *
-     * @param GoogleCloudRetailV2Product[] $products
-     */
-    public function setProducts($products)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ProductInlineSource extends \Google\Collection
     {
+        protected $collection_key = 'products';
+        protected $productsType = GoogleCloudRetailV2Product::class;
+        protected $productsDataType = 'array';
+        /**
+         * Required. A list of products to update/create. Each product must have a
+         * valid Product.id. Recommended max of 100 items.
+         *
+         * @param GoogleCloudRetailV2Product[] $products
+         */
+        public function setProducts($products)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2Product[]
+         */
+        public function getProducts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2Product[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ProductInlineSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProducts()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ProductInlineSource extends \Google\Service\CloudRetail\GoogleCloudRetailV2ProductInlineSource
     {
     }
 }

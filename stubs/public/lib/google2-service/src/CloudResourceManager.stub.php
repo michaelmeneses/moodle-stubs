@@ -21,50 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for CloudResourceManager (v3).
- *
- * <p>
- * Creates, reads, and updates metadata for Google Cloud Platform resource
- * containers.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/resource-manager" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class CloudResourceManager extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    /** View your data across Google Cloud services and see the email address of your Google Account. */
-    const CLOUD_PLATFORM_READ_ONLY = "https://www.googleapis.com/auth/cloud-platform.read-only";
-    public $effectiveTags;
-    public $folders;
-    public $folders_capabilities;
-    public $liens;
-    public $locations_effectiveTagBindingCollections;
-    public $locations_tagBindingCollections;
-    public $operations;
-    public $organizations;
-    public $projects;
-    public $tagBindings;
-    public $tagKeys;
-    public $tagValues;
-    public $tagValues_tagHolds;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the CloudResourceManager service.
+     * Service definition for CloudResourceManager (v3).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Creates, reads, and updates metadata for Google Cloud Platform resource
+     * containers.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/resource-manager" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class CloudResourceManager extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        /** View your data across Google Cloud services and see the email address of your Google Account. */
+        const CLOUD_PLATFORM_READ_ONLY = "https://www.googleapis.com/auth/cloud-platform.read-only";
+        public $effectiveTags;
+        public $folders;
+        public $folders_capabilities;
+        public $liens;
+        public $locations_effectiveTagBindingCollections;
+        public $locations_tagBindingCollections;
+        public $operations;
+        public $organizations;
+        public $projects;
+        public $tagBindings;
+        public $tagKeys;
+        public $tagValues;
+        public $tagValues_tagHolds;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the CloudResourceManager service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudResourceManager registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudResourceManager extends \Google\Service\CloudResourceManager
     {
     }
 }

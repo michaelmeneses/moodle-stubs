@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1p2beta1LabelFrame extends \Google\Model
-{
-    /**
-     * Confidence that the label is accurate. Range: [0, 1].
-     *
-     * @var float
-     */
-    public $confidence;
-    /**
-     * Time-offset, relative to the beginning of the video, corresponding to the
-     * video frame for this location.
-     *
-     * @var string
-     */
-    public $timeOffset;
-    /**
-     * Confidence that the label is accurate. Range: [0, 1].
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1p2beta1LabelFrame extends \Google\Model
     {
+        /**
+         * Confidence that the label is accurate. Range: [0, 1].
+         *
+         * @var float
+         */
+        public $confidence;
+        /**
+         * Time-offset, relative to the beginning of the video, corresponding to the
+         * video frame for this location.
+         *
+         * @var string
+         */
+        public $timeOffset;
+        /**
+         * Confidence that the label is accurate. Range: [0, 1].
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * Time-offset, relative to the beginning of the video, corresponding to the
+         * video frame for this location.
+         *
+         * @param string $timeOffset
+         */
+        public function setTimeOffset($timeOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeOffset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p2beta1LabelFrame registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidence()
-    {
-    }
-    /**
-     * Time-offset, relative to the beginning of the video, corresponding to the
-     * video frame for this location.
-     *
-     * @param string $timeOffset
-     */
-    public function setTimeOffset($timeOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeOffset()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p2beta1LabelFrame extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p2beta1LabelFrame
     {
     }
 }

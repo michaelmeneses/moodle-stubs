@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2FulfillmentInfo extends \Google\Collection
-{
-    protected $collection_key = 'placeIds';
-    /**
-     * The IDs for this type, such as the store IDs for
-     * FulfillmentInfo.type.pickup-in-store or the region IDs for
-     * FulfillmentInfo.type.same-day-delivery. A maximum of 3000 values are
-     * allowed. Each value must be a string with a length limit of 30 characters,
-     * matching the pattern `[a-zA-Z0-9_-]+`, such as "store1" or "REGION-2".
-     * Otherwise, an INVALID_ARGUMENT error is returned.
-     *
-     * @var string[]
-     */
-    public $placeIds;
-    /**
-     * The fulfillment type, including commonly used types (such as pickup in
-     * store and same day delivery), and custom types. Customers have to map
-     * custom types to their display names before rendering UI. Supported values:
-     * * "pickup-in-store" * "ship-to-store" * "same-day-delivery" * "next-day-
-     * delivery" * "custom-type-1" * "custom-type-2" * "custom-type-3" * "custom-
-     * type-4" * "custom-type-5" If this field is set to an invalid value other
-     * than these, an INVALID_ARGUMENT error is returned.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The IDs for this type, such as the store IDs for
-     * FulfillmentInfo.type.pickup-in-store or the region IDs for
-     * FulfillmentInfo.type.same-day-delivery. A maximum of 3000 values are
-     * allowed. Each value must be a string with a length limit of 30 characters,
-     * matching the pattern `[a-zA-Z0-9_-]+`, such as "store1" or "REGION-2".
-     * Otherwise, an INVALID_ARGUMENT error is returned.
-     *
-     * @param string[] $placeIds
-     */
-    public function setPlaceIds($placeIds)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2FulfillmentInfo extends \Google\Collection
     {
+        protected $collection_key = 'placeIds';
+        /**
+         * The IDs for this type, such as the store IDs for
+         * FulfillmentInfo.type.pickup-in-store or the region IDs for
+         * FulfillmentInfo.type.same-day-delivery. A maximum of 3000 values are
+         * allowed. Each value must be a string with a length limit of 30 characters,
+         * matching the pattern `[a-zA-Z0-9_-]+`, such as "store1" or "REGION-2".
+         * Otherwise, an INVALID_ARGUMENT error is returned.
+         *
+         * @var string[]
+         */
+        public $placeIds;
+        /**
+         * The fulfillment type, including commonly used types (such as pickup in
+         * store and same day delivery), and custom types. Customers have to map
+         * custom types to their display names before rendering UI. Supported values:
+         * * "pickup-in-store" * "ship-to-store" * "same-day-delivery" * "next-day-
+         * delivery" * "custom-type-1" * "custom-type-2" * "custom-type-3" * "custom-
+         * type-4" * "custom-type-5" If this field is set to an invalid value other
+         * than these, an INVALID_ARGUMENT error is returned.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The IDs for this type, such as the store IDs for
+         * FulfillmentInfo.type.pickup-in-store or the region IDs for
+         * FulfillmentInfo.type.same-day-delivery. A maximum of 3000 values are
+         * allowed. Each value must be a string with a length limit of 30 characters,
+         * matching the pattern `[a-zA-Z0-9_-]+`, such as "store1" or "REGION-2".
+         * Otherwise, an INVALID_ARGUMENT error is returned.
+         *
+         * @param string[] $placeIds
+         */
+        public function setPlaceIds($placeIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPlaceIds()
+        {
+        }
+        /**
+         * The fulfillment type, including commonly used types (such as pickup in
+         * store and same day delivery), and custom types. Customers have to map
+         * custom types to their display names before rendering UI. Supported values:
+         * * "pickup-in-store" * "ship-to-store" * "same-day-delivery" * "next-day-
+         * delivery" * "custom-type-1" * "custom-type-2" * "custom-type-3" * "custom-
+         * type-4" * "custom-type-5" If this field is set to an invalid value other
+         * than these, an INVALID_ARGUMENT error is returned.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2FulfillmentInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlaceIds()
-    {
-    }
-    /**
-     * The fulfillment type, including commonly used types (such as pickup in
-     * store and same day delivery), and custom types. Customers have to map
-     * custom types to their display names before rendering UI. Supported values:
-     * * "pickup-in-store" * "ship-to-store" * "same-day-delivery" * "next-day-
-     * delivery" * "custom-type-1" * "custom-type-2" * "custom-type-3" * "custom-
-     * type-4" * "custom-type-5" If this field is set to an invalid value other
-     * than these, an INVALID_ARGUMENT error is returned.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2FulfillmentInfo extends \Google\Service\CloudRetail\GoogleCloudRetailV2FulfillmentInfo
     {
     }
 }

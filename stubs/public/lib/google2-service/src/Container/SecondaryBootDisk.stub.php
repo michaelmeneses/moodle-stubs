@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class SecondaryBootDisk extends \Google\Model
-{
-    /**
-     * MODE_UNSPECIFIED is when mode is not set.
-     */
-    public const MODE_MODE_UNSPECIFIED = 'MODE_UNSPECIFIED';
-    /**
-     * CONTAINER_IMAGE_CACHE is for using the secondary boot disk as a container
-     * image cache.
-     */
-    public const MODE_CONTAINER_IMAGE_CACHE = 'CONTAINER_IMAGE_CACHE';
-    /**
-     * Fully-qualified resource ID for an existing disk image.
-     *
-     * @var string
-     */
-    public $diskImage;
-    /**
-     * Disk mode (container image cache, etc.)
-     *
-     * @var string
-     */
-    public $mode;
-    /**
-     * Fully-qualified resource ID for an existing disk image.
-     *
-     * @param string $diskImage
-     */
-    public function setDiskImage($diskImage)
+namespace Google\Service\Container {
+    class SecondaryBootDisk extends \Google\Model
     {
+        /**
+         * MODE_UNSPECIFIED is when mode is not set.
+         */
+        public const MODE_MODE_UNSPECIFIED = 'MODE_UNSPECIFIED';
+        /**
+         * CONTAINER_IMAGE_CACHE is for using the secondary boot disk as a container
+         * image cache.
+         */
+        public const MODE_CONTAINER_IMAGE_CACHE = 'CONTAINER_IMAGE_CACHE';
+        /**
+         * Fully-qualified resource ID for an existing disk image.
+         *
+         * @var string
+         */
+        public $diskImage;
+        /**
+         * Disk mode (container image cache, etc.)
+         *
+         * @var string
+         */
+        public $mode;
+        /**
+         * Fully-qualified resource ID for an existing disk image.
+         *
+         * @param string $diskImage
+         */
+        public function setDiskImage($diskImage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskImage()
+        {
+        }
+        /**
+         * Disk mode (container image cache, etc.)
+         *
+         * Accepted values: MODE_UNSPECIFIED, CONTAINER_IMAGE_CACHE
+         *
+         * @param self::MODE_* $mode
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return self::MODE_*
+         */
+        public function getMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\SecondaryBootDisk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiskImage()
-    {
-    }
-    /**
-     * Disk mode (container image cache, etc.)
-     *
-     * Accepted values: MODE_UNSPECIFIED, CONTAINER_IMAGE_CACHE
-     *
-     * @param self::MODE_* $mode
-     */
-    public function setMode($mode)
-    {
-    }
-    /**
-     * @return self::MODE_*
-     */
-    public function getMode()
+    class Google_Service_Container_SecondaryBootDisk extends \Google\Service\Container\SecondaryBootDisk
     {
     }
 }

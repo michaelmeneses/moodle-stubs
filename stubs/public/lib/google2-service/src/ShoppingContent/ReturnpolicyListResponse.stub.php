@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ReturnpolicyListResponse extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $resourcesType = ReturnPolicy::class;
-    protected $resourcesDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setKind($kind)
+namespace Google\Service\ShoppingContent {
+    class ReturnpolicyListResponse extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $resourcesType = ReturnPolicy::class;
+        protected $resourcesDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param ReturnPolicy[]
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return ReturnPolicy[]
+         */
+        public function getResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ReturnpolicyListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * @param ReturnPolicy[]
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return ReturnPolicy[]
-     */
-    public function getResources()
+    class Google_Service_ShoppingContent_ReturnpolicyListResponse extends \Google\Service\ShoppingContent\ReturnpolicyListResponse
     {
     }
 }

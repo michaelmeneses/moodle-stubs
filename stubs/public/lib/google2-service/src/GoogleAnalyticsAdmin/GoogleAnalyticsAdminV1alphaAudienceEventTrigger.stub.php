@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaAudienceEventTrigger extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $eventName;
-    /**
-     * @var string
-     */
-    public $logCondition;
-    /**
-     * @param string
-     */
-    public function setEventName($eventName)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaAudienceEventTrigger extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $eventName;
+        /**
+         * @var string
+         */
+        public $logCondition;
+        /**
+         * @param string
+         */
+        public function setEventName($eventName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLogCondition($logCondition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLogCondition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAudienceEventTrigger registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLogCondition($logCondition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLogCondition()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaAudienceEventTrigger extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAudienceEventTrigger
     {
     }
 }

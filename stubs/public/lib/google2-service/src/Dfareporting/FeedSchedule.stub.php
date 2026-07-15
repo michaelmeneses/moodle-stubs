@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class FeedSchedule extends \Google\Model
-{
-    /**
-     * Optional. The number of times the feed retransforms within one day. This is
-     * a required field if the schedule is enabled. Acceptable values are between
-     * 1 to 6, inclusive.
-     *
-     * @var string
-     */
-    public $repeatValue;
-    /**
-     * Optional. Whether the schedule is enabled.
-     *
-     * @var bool
-     */
-    public $scheduleEnabled;
-    /**
-     * Optional. The hour of the day to start the feed. It is applicable if the
-     * repeat value is equal to 1. Default value is 0.
-     *
-     * @var string
-     */
-    public $startHour;
-    /**
-     * Optional. The minute of the hour to start the feed. It is applicable if the
-     * repeat value is equal to 1. Default value is 0.
-     *
-     * @var string
-     */
-    public $startMinute;
-    /**
-     * Optional. The time zone to schedule the feed. It is applicable if the
-     * repeat value is equal to 1. Default value is "America/Los_Angeles".
-     *
-     * @var string
-     */
-    public $timeZone;
-    /**
-     * Optional. The number of times the feed retransforms within one day. This is
-     * a required field if the schedule is enabled. Acceptable values are between
-     * 1 to 6, inclusive.
-     *
-     * @param string $repeatValue
-     */
-    public function setRepeatValue($repeatValue)
+namespace Google\Service\Dfareporting {
+    class FeedSchedule extends \Google\Model
     {
+        /**
+         * Optional. The number of times the feed retransforms within one day. This is
+         * a required field if the schedule is enabled. Acceptable values are between
+         * 1 to 6, inclusive.
+         *
+         * @var string
+         */
+        public $repeatValue;
+        /**
+         * Optional. Whether the schedule is enabled.
+         *
+         * @var bool
+         */
+        public $scheduleEnabled;
+        /**
+         * Optional. The hour of the day to start the feed. It is applicable if the
+         * repeat value is equal to 1. Default value is 0.
+         *
+         * @var string
+         */
+        public $startHour;
+        /**
+         * Optional. The minute of the hour to start the feed. It is applicable if the
+         * repeat value is equal to 1. Default value is 0.
+         *
+         * @var string
+         */
+        public $startMinute;
+        /**
+         * Optional. The time zone to schedule the feed. It is applicable if the
+         * repeat value is equal to 1. Default value is "America/Los_Angeles".
+         *
+         * @var string
+         */
+        public $timeZone;
+        /**
+         * Optional. The number of times the feed retransforms within one day. This is
+         * a required field if the schedule is enabled. Acceptable values are between
+         * 1 to 6, inclusive.
+         *
+         * @param string $repeatValue
+         */
+        public function setRepeatValue($repeatValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepeatValue()
+        {
+        }
+        /**
+         * Optional. Whether the schedule is enabled.
+         *
+         * @param bool $scheduleEnabled
+         */
+        public function setScheduleEnabled($scheduleEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getScheduleEnabled()
+        {
+        }
+        /**
+         * Optional. The hour of the day to start the feed. It is applicable if the
+         * repeat value is equal to 1. Default value is 0.
+         *
+         * @param string $startHour
+         */
+        public function setStartHour($startHour)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartHour()
+        {
+        }
+        /**
+         * Optional. The minute of the hour to start the feed. It is applicable if the
+         * repeat value is equal to 1. Default value is 0.
+         *
+         * @param string $startMinute
+         */
+        public function setStartMinute($startMinute)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartMinute()
+        {
+        }
+        /**
+         * Optional. The time zone to schedule the feed. It is applicable if the
+         * repeat value is equal to 1. Default value is "America/Los_Angeles".
+         *
+         * @param string $timeZone
+         */
+        public function setTimeZone($timeZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\FeedSchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRepeatValue()
-    {
-    }
-    /**
-     * Optional. Whether the schedule is enabled.
-     *
-     * @param bool $scheduleEnabled
-     */
-    public function setScheduleEnabled($scheduleEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getScheduleEnabled()
-    {
-    }
-    /**
-     * Optional. The hour of the day to start the feed. It is applicable if the
-     * repeat value is equal to 1. Default value is 0.
-     *
-     * @param string $startHour
-     */
-    public function setStartHour($startHour)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartHour()
-    {
-    }
-    /**
-     * Optional. The minute of the hour to start the feed. It is applicable if the
-     * repeat value is equal to 1. Default value is 0.
-     *
-     * @param string $startMinute
-     */
-    public function setStartMinute($startMinute)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartMinute()
-    {
-    }
-    /**
-     * Optional. The time zone to schedule the feed. It is applicable if the
-     * repeat value is equal to 1. Default value is "America/Los_Angeles".
-     *
-     * @param string $timeZone
-     */
-    public function setTimeZone($timeZone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeZone()
+    class Google_Service_Dfareporting_FeedSchedule extends \Google\Service\Dfareporting\FeedSchedule
     {
     }
 }

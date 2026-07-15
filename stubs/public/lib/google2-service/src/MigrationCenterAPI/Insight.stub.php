@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class Insight extends \Google\Model
-{
-    protected $genericInsightType = GenericInsight::class;
-    protected $genericInsightDataType = '';
-    protected $migrationInsightType = MigrationInsight::class;
-    protected $migrationInsightDataType = '';
-    /**
-     * Output only. A generic insight about an asset.
-     *
-     * @param GenericInsight $genericInsight
-     */
-    public function setGenericInsight(GenericInsight $genericInsight)
+namespace Google\Service\MigrationCenterAPI {
+    class Insight extends \Google\Model
     {
+        protected $genericInsightType = GenericInsight::class;
+        protected $genericInsightDataType = '';
+        protected $migrationInsightType = MigrationInsight::class;
+        protected $migrationInsightDataType = '';
+        /**
+         * Output only. A generic insight about an asset.
+         *
+         * @param GenericInsight $genericInsight
+         */
+        public function setGenericInsight(GenericInsight $genericInsight)
+        {
+        }
+        /**
+         * @return GenericInsight
+         */
+        public function getGenericInsight()
+        {
+        }
+        /**
+         * Output only. An insight about potential migrations for an asset.
+         *
+         * @param MigrationInsight $migrationInsight
+         */
+        public function setMigrationInsight(MigrationInsight $migrationInsight)
+        {
+        }
+        /**
+         * @return MigrationInsight
+         */
+        public function getMigrationInsight()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GenericInsight
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\Insight registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGenericInsight()
-    {
-    }
-    /**
-     * Output only. An insight about potential migrations for an asset.
-     *
-     * @param MigrationInsight $migrationInsight
-     */
-    public function setMigrationInsight(MigrationInsight $migrationInsight)
-    {
-    }
-    /**
-     * @return MigrationInsight
-     */
-    public function getMigrationInsight()
+    class Google_Service_MigrationCenterAPI_Insight extends \Google\Service\MigrationCenterAPI\Insight
     {
     }
 }

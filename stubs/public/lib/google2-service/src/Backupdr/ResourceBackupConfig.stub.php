@@ -21,227 +21,236 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class ResourceBackupConfig extends \Google\Collection
-{
-    /**
-     * Resource type not set.
-     */
-    public const TARGET_RESOURCE_TYPE_RESOURCE_TYPE_UNSPECIFIED = 'RESOURCE_TYPE_UNSPECIFIED';
-    /**
-     * Cloud SQL instance.
-     */
-    public const TARGET_RESOURCE_TYPE_CLOUD_SQL_INSTANCE = 'CLOUD_SQL_INSTANCE';
-    /**
-     * Compute Engine VM.
-     */
-    public const TARGET_RESOURCE_TYPE_COMPUTE_ENGINE_VM = 'COMPUTE_ENGINE_VM';
-    /**
-     * Compute Engine Disk.
-     */
-    public const TARGET_RESOURCE_TYPE_COMPUTE_ENGINE_DISK = 'COMPUTE_ENGINE_DISK';
-    /**
-     * Compute Engine Regional Disk.
-     */
-    public const TARGET_RESOURCE_TYPE_COMPUTE_ENGINE_REGIONAL_DISK = 'COMPUTE_ENGINE_REGIONAL_DISK';
-    protected $collection_key = 'backupConfigsDetails';
-    protected $backupConfigsDetailsType = BackupConfigDetails::class;
-    protected $backupConfigsDetailsDataType = 'array';
-    /**
-     * Output only. Whether the target resource is configured for backup. This is
-     * true if the backup_configs_details is not empty.
-     *
-     * @var bool
-     */
-    public $backupConfigured;
-    /**
-     * Identifier. The resource name of the ResourceBackupConfig. Format:
-     * projects/{project}/locations/{location}/resourceBackupConfigs/{uid}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The [full resource name](https://cloud.google.com/asset-
-     * inventory/docs/resource-name-format) of the cloud resource that this
-     * configuration applies to. Supported resource types are
-     * ResourceBackupConfig.ResourceType.
-     *
-     * @var string
-     */
-    public $targetResource;
-    /**
-     * Output only. The human friendly name of the target resource.
-     *
-     * @var string
-     */
-    public $targetResourceDisplayName;
-    /**
-     * Labels associated with the target resource.
-     *
-     * @var string[]
-     */
-    public $targetResourceLabels;
-    /**
-     * Output only. The type of the target resource.
-     *
-     * @var string
-     */
-    public $targetResourceType;
-    /**
-     * Output only. The unique identifier of the resource backup config.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Output only. Whether the target resource is protected by a backup vault.
-     * This is true if the backup_configs_details is not empty and any of the
-     * ResourceBackupConfig.backup_configs_details has a backup configuration with
-     * BackupConfigDetails.backup_vault set. set.
-     *
-     * @var bool
-     */
-    public $vaulted;
-    /**
-     * Backup configurations applying to the target resource, including those
-     * targeting its related/child resources. For example, backup configuration
-     * applicable to Compute Engine disks will be populated in this field for a
-     * Compute Engine VM which has the disk associated.
-     *
-     * @param BackupConfigDetails[] $backupConfigsDetails
-     */
-    public function setBackupConfigsDetails($backupConfigsDetails)
+namespace Google\Service\Backupdr {
+    class ResourceBackupConfig extends \Google\Collection
     {
+        /**
+         * Resource type not set.
+         */
+        public const TARGET_RESOURCE_TYPE_RESOURCE_TYPE_UNSPECIFIED = 'RESOURCE_TYPE_UNSPECIFIED';
+        /**
+         * Cloud SQL instance.
+         */
+        public const TARGET_RESOURCE_TYPE_CLOUD_SQL_INSTANCE = 'CLOUD_SQL_INSTANCE';
+        /**
+         * Compute Engine VM.
+         */
+        public const TARGET_RESOURCE_TYPE_COMPUTE_ENGINE_VM = 'COMPUTE_ENGINE_VM';
+        /**
+         * Compute Engine Disk.
+         */
+        public const TARGET_RESOURCE_TYPE_COMPUTE_ENGINE_DISK = 'COMPUTE_ENGINE_DISK';
+        /**
+         * Compute Engine Regional Disk.
+         */
+        public const TARGET_RESOURCE_TYPE_COMPUTE_ENGINE_REGIONAL_DISK = 'COMPUTE_ENGINE_REGIONAL_DISK';
+        protected $collection_key = 'backupConfigsDetails';
+        protected $backupConfigsDetailsType = BackupConfigDetails::class;
+        protected $backupConfigsDetailsDataType = 'array';
+        /**
+         * Output only. Whether the target resource is configured for backup. This is
+         * true if the backup_configs_details is not empty.
+         *
+         * @var bool
+         */
+        public $backupConfigured;
+        /**
+         * Identifier. The resource name of the ResourceBackupConfig. Format:
+         * projects/{project}/locations/{location}/resourceBackupConfigs/{uid}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The [full resource name](https://cloud.google.com/asset-
+         * inventory/docs/resource-name-format) of the cloud resource that this
+         * configuration applies to. Supported resource types are
+         * ResourceBackupConfig.ResourceType.
+         *
+         * @var string
+         */
+        public $targetResource;
+        /**
+         * Output only. The human friendly name of the target resource.
+         *
+         * @var string
+         */
+        public $targetResourceDisplayName;
+        /**
+         * Labels associated with the target resource.
+         *
+         * @var string[]
+         */
+        public $targetResourceLabels;
+        /**
+         * Output only. The type of the target resource.
+         *
+         * @var string
+         */
+        public $targetResourceType;
+        /**
+         * Output only. The unique identifier of the resource backup config.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Output only. Whether the target resource is protected by a backup vault.
+         * This is true if the backup_configs_details is not empty and any of the
+         * ResourceBackupConfig.backup_configs_details has a backup configuration with
+         * BackupConfigDetails.backup_vault set. set.
+         *
+         * @var bool
+         */
+        public $vaulted;
+        /**
+         * Backup configurations applying to the target resource, including those
+         * targeting its related/child resources. For example, backup configuration
+         * applicable to Compute Engine disks will be populated in this field for a
+         * Compute Engine VM which has the disk associated.
+         *
+         * @param BackupConfigDetails[] $backupConfigsDetails
+         */
+        public function setBackupConfigsDetails($backupConfigsDetails)
+        {
+        }
+        /**
+         * @return BackupConfigDetails[]
+         */
+        public function getBackupConfigsDetails()
+        {
+        }
+        /**
+         * Output only. Whether the target resource is configured for backup. This is
+         * true if the backup_configs_details is not empty.
+         *
+         * @param bool $backupConfigured
+         */
+        public function setBackupConfigured($backupConfigured)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBackupConfigured()
+        {
+        }
+        /**
+         * Identifier. The resource name of the ResourceBackupConfig. Format:
+         * projects/{project}/locations/{location}/resourceBackupConfigs/{uid}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The [full resource name](https://cloud.google.com/asset-
+         * inventory/docs/resource-name-format) of the cloud resource that this
+         * configuration applies to. Supported resource types are
+         * ResourceBackupConfig.ResourceType.
+         *
+         * @param string $targetResource
+         */
+        public function setTargetResource($targetResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetResource()
+        {
+        }
+        /**
+         * Output only. The human friendly name of the target resource.
+         *
+         * @param string $targetResourceDisplayName
+         */
+        public function setTargetResourceDisplayName($targetResourceDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetResourceDisplayName()
+        {
+        }
+        /**
+         * Labels associated with the target resource.
+         *
+         * @param string[] $targetResourceLabels
+         */
+        public function setTargetResourceLabels($targetResourceLabels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTargetResourceLabels()
+        {
+        }
+        /**
+         * Output only. The type of the target resource.
+         *
+         * Accepted values: RESOURCE_TYPE_UNSPECIFIED, CLOUD_SQL_INSTANCE,
+         * COMPUTE_ENGINE_VM, COMPUTE_ENGINE_DISK, COMPUTE_ENGINE_REGIONAL_DISK
+         *
+         * @param self::TARGET_RESOURCE_TYPE_* $targetResourceType
+         */
+        public function setTargetResourceType($targetResourceType)
+        {
+        }
+        /**
+         * @return self::TARGET_RESOURCE_TYPE_*
+         */
+        public function getTargetResourceType()
+        {
+        }
+        /**
+         * Output only. The unique identifier of the resource backup config.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * Output only. Whether the target resource is protected by a backup vault.
+         * This is true if the backup_configs_details is not empty and any of the
+         * ResourceBackupConfig.backup_configs_details has a backup configuration with
+         * BackupConfigDetails.backup_vault set. set.
+         *
+         * @param bool $vaulted
+         */
+        public function setVaulted($vaulted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getVaulted()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BackupConfigDetails[]
+     * Runtime class alias of \Google\Service\Backupdr\ResourceBackupConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupConfigsDetails()
-    {
-    }
-    /**
-     * Output only. Whether the target resource is configured for backup. This is
-     * true if the backup_configs_details is not empty.
-     *
-     * @param bool $backupConfigured
-     */
-    public function setBackupConfigured($backupConfigured)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getBackupConfigured()
-    {
-    }
-    /**
-     * Identifier. The resource name of the ResourceBackupConfig. Format:
-     * projects/{project}/locations/{location}/resourceBackupConfigs/{uid}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The [full resource name](https://cloud.google.com/asset-
-     * inventory/docs/resource-name-format) of the cloud resource that this
-     * configuration applies to. Supported resource types are
-     * ResourceBackupConfig.ResourceType.
-     *
-     * @param string $targetResource
-     */
-    public function setTargetResource($targetResource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetResource()
-    {
-    }
-    /**
-     * Output only. The human friendly name of the target resource.
-     *
-     * @param string $targetResourceDisplayName
-     */
-    public function setTargetResourceDisplayName($targetResourceDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetResourceDisplayName()
-    {
-    }
-    /**
-     * Labels associated with the target resource.
-     *
-     * @param string[] $targetResourceLabels
-     */
-    public function setTargetResourceLabels($targetResourceLabels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTargetResourceLabels()
-    {
-    }
-    /**
-     * Output only. The type of the target resource.
-     *
-     * Accepted values: RESOURCE_TYPE_UNSPECIFIED, CLOUD_SQL_INSTANCE,
-     * COMPUTE_ENGINE_VM, COMPUTE_ENGINE_DISK, COMPUTE_ENGINE_REGIONAL_DISK
-     *
-     * @param self::TARGET_RESOURCE_TYPE_* $targetResourceType
-     */
-    public function setTargetResourceType($targetResourceType)
-    {
-    }
-    /**
-     * @return self::TARGET_RESOURCE_TYPE_*
-     */
-    public function getTargetResourceType()
-    {
-    }
-    /**
-     * Output only. The unique identifier of the resource backup config.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * Output only. Whether the target resource is protected by a backup vault.
-     * This is true if the backup_configs_details is not empty and any of the
-     * ResourceBackupConfig.backup_configs_details has a backup configuration with
-     * BackupConfigDetails.backup_vault set. set.
-     *
-     * @param bool $vaulted
-     */
-    public function setVaulted($vaulted)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getVaulted()
+    class Google_Service_Backupdr_ResourceBackupConfig extends \Google\Service\Backupdr\ResourceBackupConfig
     {
     }
 }

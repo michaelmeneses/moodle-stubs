@@ -8,6 +8,7 @@
  */
 namespace libphonenumber;
 
+use function count;
 /**
  * Class PhoneMetadata
  * @package libphonenumber

@@ -23,6 +23,15 @@
  */
 namespace Google\Auth\Credentials;
 
+use Firebase\JWT\JWT;
+use Google\Auth\CredentialsLoader;
+use Google\Auth\GetQuotaProjectInterface;
+use Google\Auth\Iam;
+use Google\Auth\OAuth2;
+use Google\Auth\ProjectIdProviderInterface;
+use Google\Auth\ServiceAccountSignerTrait;
+use Google\Auth\SignBlobInterface;
+use InvalidArgumentException;
 /**
  * ServiceAccountCredentials supports authorization using a Google service
  * account.

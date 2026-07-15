@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class FallbackReason extends \Google\Model
-{
-    /**
-     * Optional. Fallback node information.
-     *
-     * @var string
-     */
-    public $fallbackNode;
-    /**
-     * Optional. Fallback to Spark reason.
-     *
-     * @var string
-     */
-    public $fallbackReason;
-    /**
-     * Optional. Fallback node information.
-     *
-     * @param string $fallbackNode
-     */
-    public function setFallbackNode($fallbackNode)
+namespace Google\Service\Dataproc {
+    class FallbackReason extends \Google\Model
     {
+        /**
+         * Optional. Fallback node information.
+         *
+         * @var string
+         */
+        public $fallbackNode;
+        /**
+         * Optional. Fallback to Spark reason.
+         *
+         * @var string
+         */
+        public $fallbackReason;
+        /**
+         * Optional. Fallback node information.
+         *
+         * @param string $fallbackNode
+         */
+        public function setFallbackNode($fallbackNode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFallbackNode()
+        {
+        }
+        /**
+         * Optional. Fallback to Spark reason.
+         *
+         * @param string $fallbackReason
+         */
+        public function setFallbackReason($fallbackReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFallbackReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\FallbackReason registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFallbackNode()
-    {
-    }
-    /**
-     * Optional. Fallback to Spark reason.
-     *
-     * @param string $fallbackReason
-     */
-    public function setFallbackReason($fallbackReason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFallbackReason()
+    class Google_Service_Dataproc_FallbackReason extends \Google\Service\Dataproc\FallbackReason
     {
     }
 }

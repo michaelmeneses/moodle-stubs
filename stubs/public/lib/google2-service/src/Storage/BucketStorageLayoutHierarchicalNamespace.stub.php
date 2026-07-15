@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class BucketStorageLayoutHierarchicalNamespace extends \Google\Model
-{
-    /**
-     * When set to true, hierarchical namespace is enabled for this bucket.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * When set to true, hierarchical namespace is enabled for this bucket.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\Storage {
+    class BucketStorageLayoutHierarchicalNamespace extends \Google\Model
     {
+        /**
+         * When set to true, hierarchical namespace is enabled for this bucket.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * When set to true, hierarchical namespace is enabled for this bucket.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Storage\BucketStorageLayoutHierarchicalNamespace registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
+    class Google_Service_Storage_BucketStorageLayoutHierarchicalNamespace extends \Google\Service\Storage\BucketStorageLayoutHierarchicalNamespace
     {
     }
 }

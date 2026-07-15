@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaSwitchEncryptionRequest extends \Google\Model
-{
-    protected $cloudKmsConfigType = GoogleCloudIntegrationsV1alphaCloudKmsConfig::class;
-    protected $cloudKmsConfigDataType = '';
-    /**
-     * Required. REQUIRED: Cloud KMS config for AuthModule to encrypt/decrypt
-     * credentials.
-     *
-     * @param GoogleCloudIntegrationsV1alphaCloudKmsConfig $cloudKmsConfig
-     */
-    public function setCloudKmsConfig(GoogleCloudIntegrationsV1alphaCloudKmsConfig $cloudKmsConfig)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaSwitchEncryptionRequest extends \Google\Model
     {
+        protected $cloudKmsConfigType = GoogleCloudIntegrationsV1alphaCloudKmsConfig::class;
+        protected $cloudKmsConfigDataType = '';
+        /**
+         * Required. REQUIRED: Cloud KMS config for AuthModule to encrypt/decrypt
+         * credentials.
+         *
+         * @param GoogleCloudIntegrationsV1alphaCloudKmsConfig $cloudKmsConfig
+         */
+        public function setCloudKmsConfig(GoogleCloudIntegrationsV1alphaCloudKmsConfig $cloudKmsConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaCloudKmsConfig
+         */
+        public function getCloudKmsConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaCloudKmsConfig
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSwitchEncryptionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudKmsConfig()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaSwitchEncryptionRequest extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSwitchEncryptionRequest
     {
     }
 }

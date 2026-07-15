@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class CheckConsumerConfigResponse extends \Google\Collection
-{
-    protected $collection_key = 'errors';
-    /**
-     * List of validation errors. If the list is empty, the consumer config is
-     * valid.
-     *
-     * @var string[]
-     */
-    public $errors;
-    /**
-     * List of validation errors. If the list is empty, the consumer config is
-     * valid.
-     *
-     * @param string[] $errors
-     */
-    public function setErrors($errors)
+namespace Google\Service\Networkconnectivity {
+    class CheckConsumerConfigResponse extends \Google\Collection
     {
+        protected $collection_key = 'errors';
+        /**
+         * List of validation errors. If the list is empty, the consumer config is
+         * valid.
+         *
+         * @var string[]
+         */
+        public $errors;
+        /**
+         * List of validation errors. If the list is empty, the consumer config is
+         * valid.
+         *
+         * @param string[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getErrors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Networkconnectivity\CheckConsumerConfigResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
+    class Google_Service_Networkconnectivity_CheckConsumerConfigResponse extends \Google\Service\Networkconnectivity\CheckConsumerConfigResponse
     {
     }
 }

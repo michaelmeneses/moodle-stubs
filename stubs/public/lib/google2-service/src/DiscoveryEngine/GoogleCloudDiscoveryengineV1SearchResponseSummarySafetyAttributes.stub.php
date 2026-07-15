@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1SearchResponseSummarySafetyAttributes extends \Google\Collection
-{
-    protected $collection_key = 'scores';
-    /**
-     * The display names of Safety Attribute categories associated with the
-     * generated content. Order matches the Scores.
-     *
-     * @var string[]
-     */
-    public $categories;
-    /**
-     * The confidence scores of the each category, higher value means higher
-     * confidence. Order matches the Categories.
-     *
-     * @var float[]
-     */
-    public $scores;
-    /**
-     * The display names of Safety Attribute categories associated with the
-     * generated content. Order matches the Scores.
-     *
-     * @param string[] $categories
-     */
-    public function setCategories($categories)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1SearchResponseSummarySafetyAttributes extends \Google\Collection
     {
+        protected $collection_key = 'scores';
+        /**
+         * The display names of Safety Attribute categories associated with the
+         * generated content. Order matches the Scores.
+         *
+         * @var string[]
+         */
+        public $categories;
+        /**
+         * The confidence scores of the each category, higher value means higher
+         * confidence. Order matches the Categories.
+         *
+         * @var float[]
+         */
+        public $scores;
+        /**
+         * The display names of Safety Attribute categories associated with the
+         * generated content. Order matches the Scores.
+         *
+         * @param string[] $categories
+         */
+        public function setCategories($categories)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCategories()
+        {
+        }
+        /**
+         * The confidence scores of the each category, higher value means higher
+         * confidence. Order matches the Categories.
+         *
+         * @param float[] $scores
+         */
+        public function setScores($scores)
+        {
+        }
+        /**
+         * @return float[]
+         */
+        public function getScores()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchResponseSummarySafetyAttributes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategories()
-    {
-    }
-    /**
-     * The confidence scores of the each category, higher value means higher
-     * confidence. Order matches the Categories.
-     *
-     * @param float[] $scores
-     */
-    public function setScores($scores)
-    {
-    }
-    /**
-     * @return float[]
-     */
-    public function getScores()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1SearchResponseSummarySafetyAttributes extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchResponseSummarySafetyAttributes
     {
     }
 }

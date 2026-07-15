@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace enrol_lti\local\ltiadvantage\lib;
 
+use Packback\Lti1p3\Interfaces\ICache;
 /**
  * The launch_cache_session, providing a temporary session store for launch information.
  *

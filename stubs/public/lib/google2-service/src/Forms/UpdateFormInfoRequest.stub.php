@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class UpdateFormInfoRequest extends \Google\Model
-{
-    protected $infoType = Info::class;
-    protected $infoDataType = '';
-    /**
-     * Required. Only values named in this mask are changed. At least one field
-     * must be specified. The root `info` is implied and should not be specified.
-     * A single `"*"` can be used as short-hand for updating every field.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * The info to update.
-     *
-     * @param Info $info
-     */
-    public function setInfo(Info $info)
+namespace Google\Service\Forms {
+    class UpdateFormInfoRequest extends \Google\Model
     {
+        protected $infoType = Info::class;
+        protected $infoDataType = '';
+        /**
+         * Required. Only values named in this mask are changed. At least one field
+         * must be specified. The root `info` is implied and should not be specified.
+         * A single `"*"` can be used as short-hand for updating every field.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * The info to update.
+         *
+         * @param Info $info
+         */
+        public function setInfo(Info $info)
+        {
+        }
+        /**
+         * @return Info
+         */
+        public function getInfo()
+        {
+        }
+        /**
+         * Required. Only values named in this mask are changed. At least one field
+         * must be specified. The root `info` is implied and should not be specified.
+         * A single `"*"` can be used as short-hand for updating every field.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Info
+     * Runtime class alias of \Google\Service\Forms\UpdateFormInfoRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInfo()
-    {
-    }
-    /**
-     * Required. Only values named in this mask are changed. At least one field
-     * must be specified. The root `info` is implied and should not be specified.
-     * A single `"*"` can be used as short-hand for updating every field.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_Forms_UpdateFormInfoRequest extends \Google\Service\Forms\UpdateFormInfoRequest
     {
     }
 }

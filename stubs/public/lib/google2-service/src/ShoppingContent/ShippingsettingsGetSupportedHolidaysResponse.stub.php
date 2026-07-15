@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ShippingsettingsGetSupportedHolidaysResponse extends \Google\Collection
-{
-    protected $collection_key = 'holidays';
-    protected $holidaysType = HolidaysHoliday::class;
-    protected $holidaysDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#shippingsettingsGetSupportedHolidaysResponse`".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * A list of holidays applicable for delivery guarantees. May be empty.
-     *
-     * @param HolidaysHoliday[] $holidays
-     */
-    public function setHolidays($holidays)
+namespace Google\Service\ShoppingContent {
+    class ShippingsettingsGetSupportedHolidaysResponse extends \Google\Collection
     {
+        protected $collection_key = 'holidays';
+        protected $holidaysType = HolidaysHoliday::class;
+        protected $holidaysDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#shippingsettingsGetSupportedHolidaysResponse`".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * A list of holidays applicable for delivery guarantees. May be empty.
+         *
+         * @param HolidaysHoliday[] $holidays
+         */
+        public function setHolidays($holidays)
+        {
+        }
+        /**
+         * @return HolidaysHoliday[]
+         */
+        public function getHolidays()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#shippingsettingsGetSupportedHolidaysResponse`".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HolidaysHoliday[]
+     * Runtime class alias of \Google\Service\ShoppingContent\ShippingsettingsGetSupportedHolidaysResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHolidays()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#shippingsettingsGetSupportedHolidaysResponse`".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_ShoppingContent_ShippingsettingsGetSupportedHolidaysResponse extends \Google\Service\ShoppingContent\ShippingsettingsGetSupportedHolidaysResponse
     {
     }
 }

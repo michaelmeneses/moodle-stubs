@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ConversationalSearchResponseRefinedSearch extends \Google\Model
-{
-    /**
-     * The query to be used for search.
-     *
-     * @var string
-     */
-    public $query;
-    /**
-     * The query to be used for search.
-     *
-     * @param string $query
-     */
-    public function setQuery($query)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ConversationalSearchResponseRefinedSearch extends \Google\Model
     {
+        /**
+         * The query to be used for search.
+         *
+         * @var string
+         */
+        public $query;
+        /**
+         * The query to be used for search.
+         *
+         * @param string $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ConversationalSearchResponseRefinedSearch registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQuery()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ConversationalSearchResponseRefinedSearch extends \Google\Service\CloudRetail\GoogleCloudRetailV2ConversationalSearchResponseRefinedSearch
     {
     }
 }

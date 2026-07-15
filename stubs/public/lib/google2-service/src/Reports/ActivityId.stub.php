@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reports;
-
-class ActivityId extends \Google\Model
-{
-    /**
-     * Application name to which the event belongs. For possible values see the
-     * list of applications above in `applicationName`.
-     *
-     * @var string
-     */
-    public $applicationName;
-    /**
-     * The unique identifier for a Google Workspace account.
-     *
-     * @var string
-     */
-    public $customerId;
-    /**
-     * Time of occurrence of the activity. This is in UNIX epoch time in seconds.
-     *
-     * @var string
-     */
-    public $time;
-    /**
-     * Unique qualifier if multiple events have the same time.
-     *
-     * @var string
-     */
-    public $uniqueQualifier;
-    /**
-     * Application name to which the event belongs. For possible values see the
-     * list of applications above in `applicationName`.
-     *
-     * @param string $applicationName
-     */
-    public function setApplicationName($applicationName)
+namespace Google\Service\Reports {
+    class ActivityId extends \Google\Model
     {
+        /**
+         * Application name to which the event belongs. For possible values see the
+         * list of applications above in `applicationName`.
+         *
+         * @var string
+         */
+        public $applicationName;
+        /**
+         * The unique identifier for a Google Workspace account.
+         *
+         * @var string
+         */
+        public $customerId;
+        /**
+         * Time of occurrence of the activity. This is in UNIX epoch time in seconds.
+         *
+         * @var string
+         */
+        public $time;
+        /**
+         * Unique qualifier if multiple events have the same time.
+         *
+         * @var string
+         */
+        public $uniqueQualifier;
+        /**
+         * Application name to which the event belongs. For possible values see the
+         * list of applications above in `applicationName`.
+         *
+         * @param string $applicationName
+         */
+        public function setApplicationName($applicationName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicationName()
+        {
+        }
+        /**
+         * The unique identifier for a Google Workspace account.
+         *
+         * @param string $customerId
+         */
+        public function setCustomerId($customerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomerId()
+        {
+        }
+        /**
+         * Time of occurrence of the activity. This is in UNIX epoch time in seconds.
+         *
+         * @param string $time
+         */
+        public function setTime($time)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTime()
+        {
+        }
+        /**
+         * Unique qualifier if multiple events have the same time.
+         *
+         * @param string $uniqueQualifier
+         */
+        public function setUniqueQualifier($uniqueQualifier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUniqueQualifier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Reports\ActivityId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicationName()
-    {
-    }
-    /**
-     * The unique identifier for a Google Workspace account.
-     *
-     * @param string $customerId
-     */
-    public function setCustomerId($customerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomerId()
-    {
-    }
-    /**
-     * Time of occurrence of the activity. This is in UNIX epoch time in seconds.
-     *
-     * @param string $time
-     */
-    public function setTime($time)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTime()
-    {
-    }
-    /**
-     * Unique qualifier if multiple events have the same time.
-     *
-     * @param string $uniqueQualifier
-     */
-    public function setUniqueQualifier($uniqueQualifier)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUniqueQualifier()
+    class Google_Service_Reports_ActivityId extends \Google\Service\Reports\ActivityId
     {
     }
 }

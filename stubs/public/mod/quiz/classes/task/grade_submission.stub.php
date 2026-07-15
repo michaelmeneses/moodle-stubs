@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\task;
 
+use core\task\adhoc_task;
+use mod_quiz\quiz_attempt;
 /**
  * Ad-hoc task to grade a submitted attempt.
  *

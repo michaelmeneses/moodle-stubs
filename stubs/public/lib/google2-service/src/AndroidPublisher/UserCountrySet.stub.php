@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class UserCountrySet extends \Google\Collection
-{
-    protected $collection_key = 'countryCodes';
-    /**
-     * List of country codes representing countries. A Country code is represented
-     * in ISO 3166 alpha-2 format. For Example:- "IT" for Italy, "GE" for Georgia.
-     *
-     * @var string[]
-     */
-    public $countryCodes;
-    /**
-     * Country set name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * List of country codes representing countries. A Country code is represented
-     * in ISO 3166 alpha-2 format. For Example:- "IT" for Italy, "GE" for Georgia.
-     *
-     * @param string[] $countryCodes
-     */
-    public function setCountryCodes($countryCodes)
+namespace Google\Service\AndroidPublisher {
+    class UserCountrySet extends \Google\Collection
     {
+        protected $collection_key = 'countryCodes';
+        /**
+         * List of country codes representing countries. A Country code is represented
+         * in ISO 3166 alpha-2 format. For Example:- "IT" for Italy, "GE" for Georgia.
+         *
+         * @var string[]
+         */
+        public $countryCodes;
+        /**
+         * Country set name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * List of country codes representing countries. A Country code is represented
+         * in ISO 3166 alpha-2 format. For Example:- "IT" for Italy, "GE" for Georgia.
+         *
+         * @param string[] $countryCodes
+         */
+        public function setCountryCodes($countryCodes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCountryCodes()
+        {
+        }
+        /**
+         * Country set name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\UserCountrySet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountryCodes()
-    {
-    }
-    /**
-     * Country set name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_AndroidPublisher_UserCountrySet extends \Google\Service\AndroidPublisher\UserCountrySet
     {
     }
 }

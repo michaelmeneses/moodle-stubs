@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1ListViolationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'violations';
-    /**
-     * The next page token. Returns empty if reached the last page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $violationsType = GoogleCloudAssuredworkloadsV1Violation::class;
-    protected $violationsDataType = 'array';
-    /**
-     * The next page token. Returns empty if reached the last page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1ListViolationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'violations';
+        /**
+         * The next page token. Returns empty if reached the last page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $violationsType = GoogleCloudAssuredworkloadsV1Violation::class;
+        protected $violationsDataType = 'array';
+        /**
+         * The next page token. Returns empty if reached the last page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of Violations under a Workload.
+         *
+         * @param GoogleCloudAssuredworkloadsV1Violation[] $violations
+         */
+        public function setViolations($violations)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1Violation[]
+         */
+        public function getViolations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1ListViolationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of Violations under a Workload.
-     *
-     * @param GoogleCloudAssuredworkloadsV1Violation[] $violations
-     */
-    public function setViolations($violations)
-    {
-    }
-    /**
-     * @return GoogleCloudAssuredworkloadsV1Violation[]
-     */
-    public function getViolations()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1ListViolationsResponse extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1ListViolationsResponse
     {
     }
 }

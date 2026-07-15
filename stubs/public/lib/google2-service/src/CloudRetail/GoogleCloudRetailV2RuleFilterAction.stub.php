@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2RuleFilterAction extends \Google\Model
-{
-    /**
-     * A filter to apply on the matching condition results. Supported features: *
-     * filter must be set. * Filter syntax is identical to SearchRequest.filter.
-     * For more information, see [Filter](/retail/docs/filter-and-order#filter). *
-     * To filter products with product ID "product_1" or "product_2", and color
-     * "Red" or "Blue": *(id: ANY("product_1", "product_2")) * *AND *
-     * *(colorFamilies: ANY("Red", "Blue")) *
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * A filter to apply on the matching condition results. Supported features: *
-     * filter must be set. * Filter syntax is identical to SearchRequest.filter.
-     * For more information, see [Filter](/retail/docs/filter-and-order#filter). *
-     * To filter products with product ID "product_1" or "product_2", and color
-     * "Red" or "Blue": *(id: ANY("product_1", "product_2")) * *AND *
-     * *(colorFamilies: ANY("Red", "Blue")) *
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2RuleFilterAction extends \Google\Model
     {
+        /**
+         * A filter to apply on the matching condition results. Supported features: *
+         * filter must be set. * Filter syntax is identical to SearchRequest.filter.
+         * For more information, see [Filter](/retail/docs/filter-and-order#filter). *
+         * To filter products with product ID "product_1" or "product_2", and color
+         * "Red" or "Blue": *(id: ANY("product_1", "product_2")) * *AND *
+         * *(colorFamilies: ANY("Red", "Blue")) *
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * A filter to apply on the matching condition results. Supported features: *
+         * filter must be set. * Filter syntax is identical to SearchRequest.filter.
+         * For more information, see [Filter](/retail/docs/filter-and-order#filter). *
+         * To filter products with product ID "product_1" or "product_2", and color
+         * "Red" or "Blue": *(id: ANY("product_1", "product_2")) * *AND *
+         * *(colorFamilies: ANY("Red", "Blue")) *
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2RuleFilterAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2RuleFilterAction extends \Google\Service\CloudRetail\GoogleCloudRetailV2RuleFilterAction
     {
     }
 }

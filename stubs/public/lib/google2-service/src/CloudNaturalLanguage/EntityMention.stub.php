@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class EntityMention extends \Google\Model
-{
-    /**
-     * Unknown
-     */
-    public const TYPE_TYPE_UNKNOWN = 'TYPE_UNKNOWN';
-    /**
-     * Proper name
-     */
-    public const TYPE_PROPER = 'PROPER';
-    /**
-     * Common noun (or noun compound)
-     */
-    public const TYPE_COMMON = 'COMMON';
-    /**
-     * Probability score associated with the entity. The score shows the
-     * probability of the entity mention being the entity type. The score is in
-     * (0, 1] range.
-     *
-     * @var float
-     */
-    public $probability;
-    protected $sentimentType = Sentiment::class;
-    protected $sentimentDataType = '';
-    protected $textType = TextSpan::class;
-    protected $textDataType = '';
-    /**
-     * The type of the entity mention.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Probability score associated with the entity. The score shows the
-     * probability of the entity mention being the entity type. The score is in
-     * (0, 1] range.
-     *
-     * @param float $probability
-     */
-    public function setProbability($probability)
+namespace Google\Service\CloudNaturalLanguage {
+    class EntityMention extends \Google\Model
     {
+        /**
+         * Unknown
+         */
+        public const TYPE_TYPE_UNKNOWN = 'TYPE_UNKNOWN';
+        /**
+         * Proper name
+         */
+        public const TYPE_PROPER = 'PROPER';
+        /**
+         * Common noun (or noun compound)
+         */
+        public const TYPE_COMMON = 'COMMON';
+        /**
+         * Probability score associated with the entity. The score shows the
+         * probability of the entity mention being the entity type. The score is in
+         * (0, 1] range.
+         *
+         * @var float
+         */
+        public $probability;
+        protected $sentimentType = Sentiment::class;
+        protected $sentimentDataType = '';
+        protected $textType = TextSpan::class;
+        protected $textDataType = '';
+        /**
+         * The type of the entity mention.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Probability score associated with the entity. The score shows the
+         * probability of the entity mention being the entity type. The score is in
+         * (0, 1] range.
+         *
+         * @param float $probability
+         */
+        public function setProbability($probability)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getProbability()
+        {
+        }
+        /**
+         * For calls to AnalyzeEntitySentiment this field will contain the sentiment
+         * expressed for this mention of the entity in the provided document.
+         *
+         * @param Sentiment $sentiment
+         */
+        public function setSentiment(Sentiment $sentiment)
+        {
+        }
+        /**
+         * @return Sentiment
+         */
+        public function getSentiment()
+        {
+        }
+        /**
+         * The mention text.
+         *
+         * @param TextSpan $text
+         */
+        public function setText(TextSpan $text)
+        {
+        }
+        /**
+         * @return TextSpan
+         */
+        public function getText()
+        {
+        }
+        /**
+         * The type of the entity mention.
+         *
+         * Accepted values: TYPE_UNKNOWN, PROPER, COMMON
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\EntityMention registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProbability()
-    {
-    }
-    /**
-     * For calls to AnalyzeEntitySentiment this field will contain the sentiment
-     * expressed for this mention of the entity in the provided document.
-     *
-     * @param Sentiment $sentiment
-     */
-    public function setSentiment(Sentiment $sentiment)
-    {
-    }
-    /**
-     * @return Sentiment
-     */
-    public function getSentiment()
-    {
-    }
-    /**
-     * The mention text.
-     *
-     * @param TextSpan $text
-     */
-    public function setText(TextSpan $text)
-    {
-    }
-    /**
-     * @return TextSpan
-     */
-    public function getText()
-    {
-    }
-    /**
-     * The type of the entity mention.
-     *
-     * Accepted values: TYPE_UNKNOWN, PROPER, COMMON
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_CloudNaturalLanguage_EntityMention extends \Google\Service\CloudNaturalLanguage\EntityMention
     {
     }
 }

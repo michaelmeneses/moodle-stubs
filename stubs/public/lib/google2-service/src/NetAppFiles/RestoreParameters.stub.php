@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class RestoreParameters extends \Google\Model
-{
-    /**
-     * Full name of the backup resource. Format: projects/{project}/locations/{loc
-     * ation}/backupVaults/{backup_vault_id}/backups/{backup_id}
-     *
-     * @var string
-     */
-    public $sourceBackup;
-    /**
-     * Full name of the snapshot resource. Format: projects/{project}/locations/{l
-     * ocation}/volumes/{volume}/snapshots/{snapshot}
-     *
-     * @var string
-     */
-    public $sourceSnapshot;
-    /**
-     * Full name of the backup resource. Format: projects/{project}/locations/{loc
-     * ation}/backupVaults/{backup_vault_id}/backups/{backup_id}
-     *
-     * @param string $sourceBackup
-     */
-    public function setSourceBackup($sourceBackup)
+namespace Google\Service\NetAppFiles {
+    class RestoreParameters extends \Google\Model
     {
+        /**
+         * Full name of the backup resource. Format: projects/{project}/locations/{loc
+         * ation}/backupVaults/{backup_vault_id}/backups/{backup_id}
+         *
+         * @var string
+         */
+        public $sourceBackup;
+        /**
+         * Full name of the snapshot resource. Format: projects/{project}/locations/{l
+         * ocation}/volumes/{volume}/snapshots/{snapshot}
+         *
+         * @var string
+         */
+        public $sourceSnapshot;
+        /**
+         * Full name of the backup resource. Format: projects/{project}/locations/{loc
+         * ation}/backupVaults/{backup_vault_id}/backups/{backup_id}
+         *
+         * @param string $sourceBackup
+         */
+        public function setSourceBackup($sourceBackup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceBackup()
+        {
+        }
+        /**
+         * Full name of the snapshot resource. Format: projects/{project}/locations/{l
+         * ocation}/volumes/{volume}/snapshots/{snapshot}
+         *
+         * @param string $sourceSnapshot
+         */
+        public function setSourceSnapshot($sourceSnapshot)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceSnapshot()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetAppFiles\RestoreParameters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSourceBackup()
-    {
-    }
-    /**
-     * Full name of the snapshot resource. Format: projects/{project}/locations/{l
-     * ocation}/volumes/{volume}/snapshots/{snapshot}
-     *
-     * @param string $sourceSnapshot
-     */
-    public function setSourceSnapshot($sourceSnapshot)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceSnapshot()
+    class Google_Service_NetAppFiles_RestoreParameters extends \Google\Service\NetAppFiles\RestoreParameters
     {
     }
 }

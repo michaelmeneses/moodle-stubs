@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1PlaceReviewSummary extends \Google\Model
-{
-    protected $disclosureTextType = GoogleTypeLocalizedText::class;
-    protected $disclosureTextDataType = '';
-    /**
-     * A link where users can flag a problem with the summary.
-     *
-     * @var string
-     */
-    public $flagContentUri;
-    /**
-     * A link to show reviews of this place on Google Maps.
-     *
-     * @var string
-     */
-    public $reviewsUri;
-    protected $textType = GoogleTypeLocalizedText::class;
-    protected $textDataType = '';
-    /**
-     * The AI disclosure message "Summarized with Gemini" (and its localized
-     * variants). This will be in the language specified in the request if
-     * available.
-     *
-     * @param GoogleTypeLocalizedText $disclosureText
-     */
-    public function setDisclosureText(GoogleTypeLocalizedText $disclosureText)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1PlaceReviewSummary extends \Google\Model
     {
+        protected $disclosureTextType = GoogleTypeLocalizedText::class;
+        protected $disclosureTextDataType = '';
+        /**
+         * A link where users can flag a problem with the summary.
+         *
+         * @var string
+         */
+        public $flagContentUri;
+        /**
+         * A link to show reviews of this place on Google Maps.
+         *
+         * @var string
+         */
+        public $reviewsUri;
+        protected $textType = GoogleTypeLocalizedText::class;
+        protected $textDataType = '';
+        /**
+         * The AI disclosure message "Summarized with Gemini" (and its localized
+         * variants). This will be in the language specified in the request if
+         * available.
+         *
+         * @param GoogleTypeLocalizedText $disclosureText
+         */
+        public function setDisclosureText(GoogleTypeLocalizedText $disclosureText)
+        {
+        }
+        /**
+         * @return GoogleTypeLocalizedText
+         */
+        public function getDisclosureText()
+        {
+        }
+        /**
+         * A link where users can flag a problem with the summary.
+         *
+         * @param string $flagContentUri
+         */
+        public function setFlagContentUri($flagContentUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFlagContentUri()
+        {
+        }
+        /**
+         * A link to show reviews of this place on Google Maps.
+         *
+         * @param string $reviewsUri
+         */
+        public function setReviewsUri($reviewsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReviewsUri()
+        {
+        }
+        /**
+         * The summary of user reviews.
+         *
+         * @param GoogleTypeLocalizedText $text
+         */
+        public function setText(GoogleTypeLocalizedText $text)
+        {
+        }
+        /**
+         * @return GoogleTypeLocalizedText
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeLocalizedText
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceReviewSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisclosureText()
-    {
-    }
-    /**
-     * A link where users can flag a problem with the summary.
-     *
-     * @param string $flagContentUri
-     */
-    public function setFlagContentUri($flagContentUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFlagContentUri()
-    {
-    }
-    /**
-     * A link to show reviews of this place on Google Maps.
-     *
-     * @param string $reviewsUri
-     */
-    public function setReviewsUri($reviewsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReviewsUri()
-    {
-    }
-    /**
-     * The summary of user reviews.
-     *
-     * @param GoogleTypeLocalizedText $text
-     */
-    public function setText(GoogleTypeLocalizedText $text)
-    {
-    }
-    /**
-     * @return GoogleTypeLocalizedText
-     */
-    public function getText()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1PlaceReviewSummary extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceReviewSummary
     {
     }
 }

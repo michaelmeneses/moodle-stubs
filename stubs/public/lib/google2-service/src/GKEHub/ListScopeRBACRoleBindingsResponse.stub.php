@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ListScopeRBACRoleBindingsResponse extends \Google\Collection
-{
-    protected $collection_key = 'rbacrolebindings';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $rbacrolebindingsType = RBACRoleBinding::class;
-    protected $rbacrolebindingsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\GKEHub {
+    class ListScopeRBACRoleBindingsResponse extends \Google\Collection
     {
+        protected $collection_key = 'rbacrolebindings';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $rbacrolebindingsType = RBACRoleBinding::class;
+        protected $rbacrolebindingsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param RBACRoleBinding[]
+         */
+        public function setRbacrolebindings($rbacrolebindings)
+        {
+        }
+        /**
+         * @return RBACRoleBinding[]
+         */
+        public function getRbacrolebindings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\ListScopeRBACRoleBindingsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param RBACRoleBinding[]
-     */
-    public function setRbacrolebindings($rbacrolebindings)
-    {
-    }
-    /**
-     * @return RBACRoleBinding[]
-     */
-    public function getRbacrolebindings()
+    class Google_Service_GKEHub_ListScopeRBACRoleBindingsResponse extends \Google\Service\GKEHub\ListScopeRBACRoleBindingsResponse
     {
     }
 }

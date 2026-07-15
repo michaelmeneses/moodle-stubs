@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class BooksCloudloadingResource extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $author;
-    /**
-     * @var string
-     */
-    public $processingState;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @var string
-     */
-    public $volumeId;
-    /**
-     * @param string $author
-     */
-    public function setAuthor($author)
+namespace Google\Service\Books {
+    class BooksCloudloadingResource extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $author;
+        /**
+         * @var string
+         */
+        public $processingState;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @var string
+         */
+        public $volumeId;
+        /**
+         * @param string $author
+         */
+        public function setAuthor($author)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthor()
+        {
+        }
+        /**
+         * @param string $processingState
+         */
+        public function setProcessingState($processingState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProcessingState()
+        {
+        }
+        /**
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * @param string $volumeId
+         */
+        public function setVolumeId($volumeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVolumeId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\BooksCloudloadingResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthor()
-    {
-    }
-    /**
-     * @param string $processingState
-     */
-    public function setProcessingState($processingState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProcessingState()
-    {
-    }
-    /**
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * @param string $volumeId
-     */
-    public function setVolumeId($volumeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVolumeId()
+    class Google_Service_Books_BooksCloudloadingResource extends \Google\Service\Books\BooksCloudloadingResource
     {
     }
 }

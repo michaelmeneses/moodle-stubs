@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListNasTrialDetailsResponse extends \Google\Collection
-{
-    protected $collection_key = 'nasTrialDetails';
-    protected $nasTrialDetailsType = GoogleCloudAiplatformV1NasTrialDetail::class;
-    protected $nasTrialDetailsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListNasTrialDetailsRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of top NasTrials in the requested page.
-     *
-     * @param GoogleCloudAiplatformV1NasTrialDetail[] $nasTrialDetails
-     */
-    public function setNasTrialDetails($nasTrialDetails)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListNasTrialDetailsResponse extends \Google\Collection
     {
+        protected $collection_key = 'nasTrialDetails';
+        protected $nasTrialDetailsType = GoogleCloudAiplatformV1NasTrialDetail::class;
+        protected $nasTrialDetailsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListNasTrialDetailsRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of top NasTrials in the requested page.
+         *
+         * @param GoogleCloudAiplatformV1NasTrialDetail[] $nasTrialDetails
+         */
+        public function setNasTrialDetails($nasTrialDetails)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1NasTrialDetail[]
+         */
+        public function getNasTrialDetails()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListNasTrialDetailsRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1NasTrialDetail[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListNasTrialDetailsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNasTrialDetails()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListNasTrialDetailsRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListNasTrialDetailsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListNasTrialDetailsResponse
     {
     }
 }

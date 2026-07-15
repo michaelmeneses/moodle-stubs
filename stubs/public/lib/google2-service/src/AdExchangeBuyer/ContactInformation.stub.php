@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class ContactInformation extends \Google\Model
-{
-    public $email;
-    public $name;
-    public function setEmail($email)
+namespace Google\Service\AdExchangeBuyer {
+    class ContactInformation extends \Google\Model
     {
+        public $email;
+        public $name;
+        public function setEmail($email)
+        {
+        }
+        public function getEmail()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
     }
-    public function getEmail()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\ContactInformation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_ContactInformation extends \Google\Service\AdExchangeBuyer\ContactInformation
     {
     }
 }

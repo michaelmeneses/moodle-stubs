@@ -21,181 +21,190 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class Connection extends \Google\Collection
-{
-    protected $collection_key = 'connectors';
-    protected $applicationEndpointType = ApplicationEndpoint::class;
-    protected $applicationEndpointDataType = '';
-    /**
-     * @var string[]
-     */
-    public $connectors;
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $displayName;
-    protected $gatewayType = Gateway::class;
-    protected $gatewayDataType = '';
-    /**
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $uid;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param ApplicationEndpoint
-     */
-    public function setApplicationEndpoint(ApplicationEndpoint $applicationEndpoint)
+namespace Google\Service\BeyondCorp {
+    class Connection extends \Google\Collection
     {
+        protected $collection_key = 'connectors';
+        protected $applicationEndpointType = ApplicationEndpoint::class;
+        protected $applicationEndpointDataType = '';
+        /**
+         * @var string[]
+         */
+        public $connectors;
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $displayName;
+        protected $gatewayType = Gateway::class;
+        protected $gatewayDataType = '';
+        /**
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @var string
+         */
+        public $uid;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param ApplicationEndpoint
+         */
+        public function setApplicationEndpoint(ApplicationEndpoint $applicationEndpoint)
+        {
+        }
+        /**
+         * @return ApplicationEndpoint
+         */
+        public function getApplicationEndpoint()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setConnectors($connectors)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getConnectors()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param Gateway
+         */
+        public function setGateway(Gateway $gateway)
+        {
+        }
+        /**
+         * @return Gateway
+         */
+        public function getGateway()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApplicationEndpoint
+     * Runtime class alias of \Google\Service\BeyondCorp\Connection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicationEndpoint()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setConnectors($connectors)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getConnectors()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param Gateway
-     */
-    public function setGateway(Gateway $gateway)
-    {
-    }
-    /**
-     * @return Gateway
-     */
-    public function getGateway()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_BeyondCorp_Connection extends \Google\Service\BeyondCorp\Connection
     {
     }
 }

@@ -29,6 +29,12 @@
  */
 namespace mod_forum\output;
 
+use html_writer;
+use moodle_url;
+use renderable;
+use renderer_base;
+use stdClass;
+use templatable;
 /**
  * Big search form class.
  *

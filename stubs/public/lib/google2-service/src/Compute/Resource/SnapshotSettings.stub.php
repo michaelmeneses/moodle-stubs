@@ -21,54 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute\Resource;
-
-/**
- * The "snapshotSettings" collection of methods.
- * Typical usage is:
- *  <code>
- *   $computeService = new Google\Service\Compute(...);
- *   $snapshotSettings = $computeService->snapshotSettings;
- *  </code>
- */
-class SnapshotSettings extends \Google\Service\Resource
-{
+namespace Google\Service\Compute\Resource {
+    use Google\Service\Compute\Operation;
+    use Google\Service\Compute\SnapshotSettings as SnapshotSettingsModel;
     /**
-     * Get snapshot settings. (snapshotSettings.get)
-     *
-     * @param string $project Project ID for this request.
-     * @param array $optParams Optional parameters.
-     * @return SnapshotSettingsModel
-     * @throws \Google\Service\Exception
+     * The "snapshotSettings" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $computeService = new Google\Service\Compute(...);
+     *   $snapshotSettings = $computeService->snapshotSettings;
+     *  </code>
      */
-    public function get($project, $optParams = [])
+    class SnapshotSettings extends \Google\Service\Resource
     {
+        /**
+         * Get snapshot settings. (snapshotSettings.get)
+         *
+         * @param string $project Project ID for this request.
+         * @param array $optParams Optional parameters.
+         * @return SnapshotSettingsModel
+         * @throws \Google\Service\Exception
+         */
+        public function get($project, $optParams = [])
+        {
+        }
+        /**
+         * Patch snapshot settings. (snapshotSettings.patch)
+         *
+         * @param string $project Project ID for this request.
+         * @param SnapshotSettingsModel $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string requestId An optional request ID to identify requests.
+         * Specify a unique request ID so that if you must retry your request, the
+         * server will know to ignore the request if it has already been completed.
+         *
+         * For example, consider a situation where you make an initial request and the
+         * request times out. If you make the request again with the same request ID,
+         * the server can check if original operation with the same request ID was
+         * received, and if so, will ignore the second request. This prevents clients
+         * from accidentally creating duplicate commitments.
+         *
+         * The request ID must be a valid UUID with the exception that zero UUID is not
+         * supported (00000000-0000-0000-0000-000000000000).
+         * @opt_param string updateMask update_mask indicates fields to be updated as
+         * part of this request.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($project, SnapshotSettingsModel $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Patch snapshot settings. (snapshotSettings.patch)
-     *
-     * @param string $project Project ID for this request.
-     * @param SnapshotSettingsModel $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string requestId An optional request ID to identify requests.
-     * Specify a unique request ID so that if you must retry your request, the
-     * server will know to ignore the request if it has already been completed.
-     *
-     * For example, consider a situation where you make an initial request and the
-     * request times out. If you make the request again with the same request ID,
-     * the server can check if original operation with the same request ID was
-     * received, and if so, will ignore the second request. This prevents clients
-     * from accidentally creating duplicate commitments.
-     *
-     * The request ID must be a valid UUID with the exception that zero UUID is not
-     * supported (00000000-0000-0000-0000-000000000000).
-     * @opt_param string updateMask update_mask indicates fields to be updated as
-     * part of this request.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Compute\Resource\SnapshotSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function patch($project, SnapshotSettingsModel $postBody, $optParams = [])
+    class Google_Service_Compute_Resource_SnapshotSettings extends \Google\Service\Compute\Resource\SnapshotSettings
     {
     }
 }

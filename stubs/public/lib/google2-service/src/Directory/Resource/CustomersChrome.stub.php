@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory\Resource;
-
-/**
- * The "chrome" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adminService = new Google\Service\Directory(...);
- *   $chrome = $adminService->customers_chrome;
- *  </code>
- */
-class CustomersChrome extends \Google\Service\Resource
-{
+namespace Google\Service\Directory\Resource {
+    /**
+     * The "chrome" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adminService = new Google\Service\Directory(...);
+     *   $chrome = $adminService->customers_chrome;
+     *  </code>
+     */
+    class CustomersChrome extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Directory\Resource\CustomersChrome registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Directory_Resource_CustomersChrome extends \Google\Service\Directory\Resource\CustomersChrome
+    {
+    }
 }

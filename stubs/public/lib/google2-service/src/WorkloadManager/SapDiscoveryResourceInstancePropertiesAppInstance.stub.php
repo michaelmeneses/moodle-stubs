@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class SapDiscoveryResourceInstancePropertiesAppInstance extends \Google\Model
-{
-    /**
-     * Optional. Instance name of the SAP application instance.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Instance number of the SAP application instance.
-     *
-     * @var string
-     */
-    public $number;
-    /**
-     * Optional. Instance name of the SAP application instance.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\WorkloadManager {
+    class SapDiscoveryResourceInstancePropertiesAppInstance extends \Google\Model
     {
+        /**
+         * Optional. Instance name of the SAP application instance.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Instance number of the SAP application instance.
+         *
+         * @var string
+         */
+        public $number;
+        /**
+         * Optional. Instance name of the SAP application instance.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Instance number of the SAP application instance.
+         *
+         * @param string $number
+         */
+        public function setNumber($number)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\SapDiscoveryResourceInstancePropertiesAppInstance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Instance number of the SAP application instance.
-     *
-     * @param string $number
-     */
-    public function setNumber($number)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumber()
+    class Google_Service_WorkloadManager_SapDiscoveryResourceInstancePropertiesAppInstance extends \Google\Service\WorkloadManager\SapDiscoveryResourceInstancePropertiesAppInstance
     {
     }
 }

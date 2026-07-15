@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1GetConfigResponse extends \Google\Model
-{
-    protected $configType = GoogleCloudMlV1Config::class;
-    protected $configDataType = '';
-    /**
-     * The service account Cloud ML uses to access resources in the project.
-     *
-     * @var string
-     */
-    public $serviceAccount;
-    /**
-     * The project number for `service_account`.
-     *
-     * @var string
-     */
-    public $serviceAccountProject;
-    /**
-     * @param GoogleCloudMlV1Config $config
-     */
-    public function setConfig(GoogleCloudMlV1Config $config)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1GetConfigResponse extends \Google\Model
     {
+        protected $configType = GoogleCloudMlV1Config::class;
+        protected $configDataType = '';
+        /**
+         * The service account Cloud ML uses to access resources in the project.
+         *
+         * @var string
+         */
+        public $serviceAccount;
+        /**
+         * The project number for `service_account`.
+         *
+         * @var string
+         */
+        public $serviceAccountProject;
+        /**
+         * @param GoogleCloudMlV1Config $config
+         */
+        public function setConfig(GoogleCloudMlV1Config $config)
+        {
+        }
+        /**
+         * @return GoogleCloudMlV1Config
+         */
+        public function getConfig()
+        {
+        }
+        /**
+         * The service account Cloud ML uses to access resources in the project.
+         *
+         * @param string $serviceAccount
+         */
+        public function setServiceAccount($serviceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccount()
+        {
+        }
+        /**
+         * The project number for `service_account`.
+         *
+         * @param string $serviceAccountProject
+         */
+        public function setServiceAccountProject($serviceAccountProject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccountProject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudMlV1Config
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1GetConfigResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfig()
-    {
-    }
-    /**
-     * The service account Cloud ML uses to access resources in the project.
-     *
-     * @param string $serviceAccount
-     */
-    public function setServiceAccount($serviceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccount()
-    {
-    }
-    /**
-     * The project number for `service_account`.
-     *
-     * @param string $serviceAccountProject
-     */
-    public function setServiceAccountProject($serviceAccountProject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccountProject()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1GetConfigResponse extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1GetConfigResponse
     {
     }
 }

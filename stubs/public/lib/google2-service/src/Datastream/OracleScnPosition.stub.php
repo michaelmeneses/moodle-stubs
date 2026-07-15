@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class OracleScnPosition extends \Google\Model
-{
-    /**
-     * Required. SCN number from where Logs will be read
-     *
-     * @var string
-     */
-    public $scn;
-    /**
-     * Required. SCN number from where Logs will be read
-     *
-     * @param string $scn
-     */
-    public function setScn($scn)
+namespace Google\Service\Datastream {
+    class OracleScnPosition extends \Google\Model
     {
+        /**
+         * Required. SCN number from where Logs will be read
+         *
+         * @var string
+         */
+        public $scn;
+        /**
+         * Required. SCN number from where Logs will be read
+         *
+         * @param string $scn
+         */
+        public function setScn($scn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScn()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\OracleScnPosition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScn()
+    class Google_Service_Datastream_OracleScnPosition extends \Google\Service\Datastream\OracleScnPosition
     {
     }
 }

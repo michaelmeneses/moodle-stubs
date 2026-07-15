@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class ListOSPolicyAssignmentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'osPolicyAssignments';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $osPolicyAssignmentsType = OSPolicyAssignment::class;
-    protected $osPolicyAssignmentsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\OSConfig {
+    class ListOSPolicyAssignmentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'osPolicyAssignments';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $osPolicyAssignmentsType = OSPolicyAssignment::class;
+        protected $osPolicyAssignmentsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param OSPolicyAssignment[]
+         */
+        public function setOsPolicyAssignments($osPolicyAssignments)
+        {
+        }
+        /**
+         * @return OSPolicyAssignment[]
+         */
+        public function getOsPolicyAssignments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\ListOSPolicyAssignmentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param OSPolicyAssignment[]
-     */
-    public function setOsPolicyAssignments($osPolicyAssignments)
-    {
-    }
-    /**
-     * @return OSPolicyAssignment[]
-     */
-    public function getOsPolicyAssignments()
+    class Google_Service_OSConfig_ListOSPolicyAssignmentsResponse extends \Google\Service\OSConfig\ListOSPolicyAssignmentsResponse
     {
     }
 }

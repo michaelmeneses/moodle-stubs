@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesManagement;
-
-class HiddenPlayer extends \Google\Model
-{
-    /**
-     * Output only. The time this player was hidden.
-     *
-     * @var string
-     */
-    public $hiddenTimeMillis;
-    /**
-     * Output only. Uniquely identifies the type of this resource. Value is always
-     * the fixed string `gamesManagement#hiddenPlayer`.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $playerType = Player::class;
-    protected $playerDataType = '';
-    /**
-     * Output only. The time this player was hidden.
-     *
-     * @param string $hiddenTimeMillis
-     */
-    public function setHiddenTimeMillis($hiddenTimeMillis)
+namespace Google\Service\GamesManagement {
+    class HiddenPlayer extends \Google\Model
     {
+        /**
+         * Output only. The time this player was hidden.
+         *
+         * @var string
+         */
+        public $hiddenTimeMillis;
+        /**
+         * Output only. Uniquely identifies the type of this resource. Value is always
+         * the fixed string `gamesManagement#hiddenPlayer`.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $playerType = Player::class;
+        protected $playerDataType = '';
+        /**
+         * Output only. The time this player was hidden.
+         *
+         * @param string $hiddenTimeMillis
+         */
+        public function setHiddenTimeMillis($hiddenTimeMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHiddenTimeMillis()
+        {
+        }
+        /**
+         * Output only. Uniquely identifies the type of this resource. Value is always
+         * the fixed string `gamesManagement#hiddenPlayer`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Output only. The player information.
+         *
+         * @param Player $player
+         */
+        public function setPlayer(Player $player)
+        {
+        }
+        /**
+         * @return Player
+         */
+        public function getPlayer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GamesManagement\HiddenPlayer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHiddenTimeMillis()
-    {
-    }
-    /**
-     * Output only. Uniquely identifies the type of this resource. Value is always
-     * the fixed string `gamesManagement#hiddenPlayer`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Output only. The player information.
-     *
-     * @param Player $player
-     */
-    public function setPlayer(Player $player)
-    {
-    }
-    /**
-     * @return Player
-     */
-    public function getPlayer()
+    class Google_Service_GamesManagement_HiddenPlayer extends \Google\Service\GamesManagement\HiddenPlayer
     {
     }
 }

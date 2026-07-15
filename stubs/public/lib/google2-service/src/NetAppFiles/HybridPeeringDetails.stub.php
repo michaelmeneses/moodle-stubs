@@ -21,160 +21,169 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class HybridPeeringDetails extends \Google\Model
-{
-    /**
-     * Output only. Copy-paste-able commands to be used on user's ONTAP to accept
-     * peering requests.
-     *
-     * @var string
-     */
-    public $command;
-    /**
-     * Output only. Expiration time for the peering command to be executed on
-     * user's ONTAP.
-     *
-     * @var string
-     */
-    public $commandExpiryTime;
-    /**
-     * Output only. Temporary passphrase generated to accept cluster peering
-     * command.
-     *
-     * @var string
-     */
-    public $passphrase;
-    /**
-     * Output only. Name of the user's local source cluster to be peered with the
-     * destination cluster.
-     *
-     * @var string
-     */
-    public $peerClusterName;
-    /**
-     * Output only. Name of the user's local source vserver svm to be peered with
-     * the destination vserver svm.
-     *
-     * @var string
-     */
-    public $peerSvmName;
-    /**
-     * Output only. Name of the user's local source volume to be peered with the
-     * destination volume.
-     *
-     * @var string
-     */
-    public $peerVolumeName;
-    /**
-     * Output only. IP address of the subnet.
-     *
-     * @var string
-     */
-    public $subnetIp;
-    /**
-     * Output only. Copy-paste-able commands to be used on user's ONTAP to accept
-     * peering requests.
-     *
-     * @param string $command
-     */
-    public function setCommand($command)
+namespace Google\Service\NetAppFiles {
+    class HybridPeeringDetails extends \Google\Model
     {
+        /**
+         * Output only. Copy-paste-able commands to be used on user's ONTAP to accept
+         * peering requests.
+         *
+         * @var string
+         */
+        public $command;
+        /**
+         * Output only. Expiration time for the peering command to be executed on
+         * user's ONTAP.
+         *
+         * @var string
+         */
+        public $commandExpiryTime;
+        /**
+         * Output only. Temporary passphrase generated to accept cluster peering
+         * command.
+         *
+         * @var string
+         */
+        public $passphrase;
+        /**
+         * Output only. Name of the user's local source cluster to be peered with the
+         * destination cluster.
+         *
+         * @var string
+         */
+        public $peerClusterName;
+        /**
+         * Output only. Name of the user's local source vserver svm to be peered with
+         * the destination vserver svm.
+         *
+         * @var string
+         */
+        public $peerSvmName;
+        /**
+         * Output only. Name of the user's local source volume to be peered with the
+         * destination volume.
+         *
+         * @var string
+         */
+        public $peerVolumeName;
+        /**
+         * Output only. IP address of the subnet.
+         *
+         * @var string
+         */
+        public $subnetIp;
+        /**
+         * Output only. Copy-paste-able commands to be used on user's ONTAP to accept
+         * peering requests.
+         *
+         * @param string $command
+         */
+        public function setCommand($command)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommand()
+        {
+        }
+        /**
+         * Output only. Expiration time for the peering command to be executed on
+         * user's ONTAP.
+         *
+         * @param string $commandExpiryTime
+         */
+        public function setCommandExpiryTime($commandExpiryTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommandExpiryTime()
+        {
+        }
+        /**
+         * Output only. Temporary passphrase generated to accept cluster peering
+         * command.
+         *
+         * @param string $passphrase
+         */
+        public function setPassphrase($passphrase)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassphrase()
+        {
+        }
+        /**
+         * Output only. Name of the user's local source cluster to be peered with the
+         * destination cluster.
+         *
+         * @param string $peerClusterName
+         */
+        public function setPeerClusterName($peerClusterName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeerClusterName()
+        {
+        }
+        /**
+         * Output only. Name of the user's local source vserver svm to be peered with
+         * the destination vserver svm.
+         *
+         * @param string $peerSvmName
+         */
+        public function setPeerSvmName($peerSvmName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeerSvmName()
+        {
+        }
+        /**
+         * Output only. Name of the user's local source volume to be peered with the
+         * destination volume.
+         *
+         * @param string $peerVolumeName
+         */
+        public function setPeerVolumeName($peerVolumeName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeerVolumeName()
+        {
+        }
+        /**
+         * Output only. IP address of the subnet.
+         *
+         * @param string $subnetIp
+         */
+        public function setSubnetIp($subnetIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnetIp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetAppFiles\HybridPeeringDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommand()
-    {
-    }
-    /**
-     * Output only. Expiration time for the peering command to be executed on
-     * user's ONTAP.
-     *
-     * @param string $commandExpiryTime
-     */
-    public function setCommandExpiryTime($commandExpiryTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCommandExpiryTime()
-    {
-    }
-    /**
-     * Output only. Temporary passphrase generated to accept cluster peering
-     * command.
-     *
-     * @param string $passphrase
-     */
-    public function setPassphrase($passphrase)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPassphrase()
-    {
-    }
-    /**
-     * Output only. Name of the user's local source cluster to be peered with the
-     * destination cluster.
-     *
-     * @param string $peerClusterName
-     */
-    public function setPeerClusterName($peerClusterName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPeerClusterName()
-    {
-    }
-    /**
-     * Output only. Name of the user's local source vserver svm to be peered with
-     * the destination vserver svm.
-     *
-     * @param string $peerSvmName
-     */
-    public function setPeerSvmName($peerSvmName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPeerSvmName()
-    {
-    }
-    /**
-     * Output only. Name of the user's local source volume to be peered with the
-     * destination volume.
-     *
-     * @param string $peerVolumeName
-     */
-    public function setPeerVolumeName($peerVolumeName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPeerVolumeName()
-    {
-    }
-    /**
-     * Output only. IP address of the subnet.
-     *
-     * @param string $subnetIp
-     */
-    public function setSubnetIp($subnetIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubnetIp()
+    class Google_Service_NetAppFiles_HybridPeeringDetails extends \Google\Service\NetAppFiles\HybridPeeringDetails
     {
     }
 }

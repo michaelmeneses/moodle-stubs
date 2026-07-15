@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1LogprobsResultTopCandidates extends \Google\Collection
-{
-    protected $collection_key = 'candidates';
-    protected $candidatesType = GoogleCloudAiplatformV1LogprobsResultCandidate::class;
-    protected $candidatesDataType = 'array';
-    /**
-     * The list of candidate tokens, sorted by log probability in descending
-     * order.
-     *
-     * @param GoogleCloudAiplatformV1LogprobsResultCandidate[] $candidates
-     */
-    public function setCandidates($candidates)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1LogprobsResultTopCandidates extends \Google\Collection
     {
+        protected $collection_key = 'candidates';
+        protected $candidatesType = GoogleCloudAiplatformV1LogprobsResultCandidate::class;
+        protected $candidatesDataType = 'array';
+        /**
+         * The list of candidate tokens, sorted by log probability in descending
+         * order.
+         *
+         * @param GoogleCloudAiplatformV1LogprobsResultCandidate[] $candidates
+         */
+        public function setCandidates($candidates)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1LogprobsResultCandidate[]
+         */
+        public function getCandidates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1LogprobsResultCandidate[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1LogprobsResultTopCandidates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCandidates()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1LogprobsResultTopCandidates extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1LogprobsResultTopCandidates
     {
     }
 }

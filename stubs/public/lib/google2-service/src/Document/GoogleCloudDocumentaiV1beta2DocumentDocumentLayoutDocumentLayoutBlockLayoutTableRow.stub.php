@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow extends \Google\Collection
-{
-    protected $collection_key = 'cells';
-    protected $cellsType = GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableCell::class;
-    protected $cellsDataType = 'array';
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableCell[]
-     */
-    public function setCells($cells)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow extends \Google\Collection
     {
+        protected $collection_key = 'cells';
+        protected $cellsType = GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableCell::class;
+        protected $cellsDataType = 'array';
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableCell[]
+         */
+        public function setCells($cells)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableCell[]
+         */
+        public function getCells()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableCell[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCells()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow extends \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow
     {
     }
 }

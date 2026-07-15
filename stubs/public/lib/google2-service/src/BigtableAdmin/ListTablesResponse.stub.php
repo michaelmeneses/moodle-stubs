@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class ListTablesResponse extends \Google\Collection
-{
-    protected $collection_key = 'tables';
-    /**
-     * Set if not all tables could be returned in a single response. Pass this
-     * value to `page_token` in another request to get the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $tablesType = Table::class;
-    protected $tablesDataType = 'array';
-    /**
-     * Set if not all tables could be returned in a single response. Pass this
-     * value to `page_token` in another request to get the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\BigtableAdmin {
+    class ListTablesResponse extends \Google\Collection
     {
+        protected $collection_key = 'tables';
+        /**
+         * Set if not all tables could be returned in a single response. Pass this
+         * value to `page_token` in another request to get the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $tablesType = Table::class;
+        protected $tablesDataType = 'array';
+        /**
+         * Set if not all tables could be returned in a single response. Pass this
+         * value to `page_token` in another request to get the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The tables present in the requested instance.
+         *
+         * @param Table[] $tables
+         */
+        public function setTables($tables)
+        {
+        }
+        /**
+         * @return Table[]
+         */
+        public function getTables()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigtableAdmin\ListTablesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The tables present in the requested instance.
-     *
-     * @param Table[] $tables
-     */
-    public function setTables($tables)
-    {
-    }
-    /**
-     * @return Table[]
-     */
-    public function getTables()
+    class Google_Service_BigtableAdmin_ListTablesResponse extends \Google\Service\BigtableAdmin\ListTablesResponse
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ListAddonsResponse extends \Google\Collection
-{
-    protected $collection_key = 'addons';
-    protected $addonsType = GoogleCloudApihubV1Addon::class;
-    protected $addonsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of addons.
-     *
-     * @param GoogleCloudApihubV1Addon[] $addons
-     */
-    public function setAddons($addons)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ListAddonsResponse extends \Google\Collection
     {
+        protected $collection_key = 'addons';
+        protected $addonsType = GoogleCloudApihubV1Addon::class;
+        protected $addonsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of addons.
+         *
+         * @param GoogleCloudApihubV1Addon[] $addons
+         */
+        public function setAddons($addons)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1Addon[]
+         */
+        public function getAddons()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1Addon[]
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ListAddonsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddons()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_APIhub_GoogleCloudApihubV1ListAddonsResponse extends \Google\Service\APIhub\GoogleCloudApihubV1ListAddonsResponse
     {
     }
 }

@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaGoogleAdsLink extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $adsPersonalizationEnabled;
-    /**
-     * @var bool
-     */
-    public $canManageClients;
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $creatorEmailAddress;
-    /**
-     * @var string
-     */
-    public $customerId;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param bool
-     */
-    public function setAdsPersonalizationEnabled($adsPersonalizationEnabled)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaGoogleAdsLink extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $adsPersonalizationEnabled;
+        /**
+         * @var bool
+         */
+        public $canManageClients;
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $creatorEmailAddress;
+        /**
+         * @var string
+         */
+        public $customerId;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param bool
+         */
+        public function setAdsPersonalizationEnabled($adsPersonalizationEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAdsPersonalizationEnabled()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setCanManageClients($canManageClients)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanManageClients()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreatorEmailAddress($creatorEmailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatorEmailAddress()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCustomerId($customerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomerId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaGoogleAdsLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdsPersonalizationEnabled()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setCanManageClients($canManageClients)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanManageClients()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreatorEmailAddress($creatorEmailAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreatorEmailAddress()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCustomerId($customerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomerId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaGoogleAdsLink extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaGoogleAdsLink
     {
     }
 }

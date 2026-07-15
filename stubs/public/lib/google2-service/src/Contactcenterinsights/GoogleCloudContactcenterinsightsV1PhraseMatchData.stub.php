@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1PhraseMatchData extends \Google\Model
-{
-    /**
-     * The human-readable name of the phrase matcher.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The unique identifier (the resource name) of the phrase matcher.
-     *
-     * @var string
-     */
-    public $phraseMatcher;
-    /**
-     * The human-readable name of the phrase matcher.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1PhraseMatchData extends \Google\Model
     {
+        /**
+         * The human-readable name of the phrase matcher.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The unique identifier (the resource name) of the phrase matcher.
+         *
+         * @var string
+         */
+        public $phraseMatcher;
+        /**
+         * The human-readable name of the phrase matcher.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The unique identifier (the resource name) of the phrase matcher.
+         *
+         * @param string $phraseMatcher
+         */
+        public function setPhraseMatcher($phraseMatcher)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhraseMatcher()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1PhraseMatchData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The unique identifier (the resource name) of the phrase matcher.
-     *
-     * @param string $phraseMatcher
-     */
-    public function setPhraseMatcher($phraseMatcher)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhraseMatcher()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1PhraseMatchData extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1PhraseMatchData
     {
     }
 }

@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class BwdifConfig extends \Google\Model
-{
-    /**
-     * Deinterlace all frames rather than just the frames identified as
-     * interlaced. The default is `false`.
-     *
-     * @var bool
-     */
-    public $deinterlaceAllFrames;
-    /**
-     * Specifies the deinterlacing mode to adopt. The default is `send_frame`.
-     * Supported values: - `send_frame`: Output one frame for each frame -
-     * `send_field`: Output one frame for each field
-     *
-     * @var string
-     */
-    public $mode;
-    /**
-     * The picture field parity assumed for the input interlaced video. The
-     * default is `auto`. Supported values: - `tff`: Assume the top field is first
-     * - `bff`: Assume the bottom field is first - `auto`: Enable automatic
-     * detection of field parity
-     *
-     * @var string
-     */
-    public $parity;
-    /**
-     * Deinterlace all frames rather than just the frames identified as
-     * interlaced. The default is `false`.
-     *
-     * @param bool $deinterlaceAllFrames
-     */
-    public function setDeinterlaceAllFrames($deinterlaceAllFrames)
+namespace Google\Service\Transcoder {
+    class BwdifConfig extends \Google\Model
     {
+        /**
+         * Deinterlace all frames rather than just the frames identified as
+         * interlaced. The default is `false`.
+         *
+         * @var bool
+         */
+        public $deinterlaceAllFrames;
+        /**
+         * Specifies the deinterlacing mode to adopt. The default is `send_frame`.
+         * Supported values: - `send_frame`: Output one frame for each frame -
+         * `send_field`: Output one frame for each field
+         *
+         * @var string
+         */
+        public $mode;
+        /**
+         * The picture field parity assumed for the input interlaced video. The
+         * default is `auto`. Supported values: - `tff`: Assume the top field is first
+         * - `bff`: Assume the bottom field is first - `auto`: Enable automatic
+         * detection of field parity
+         *
+         * @var string
+         */
+        public $parity;
+        /**
+         * Deinterlace all frames rather than just the frames identified as
+         * interlaced. The default is `false`.
+         *
+         * @param bool $deinterlaceAllFrames
+         */
+        public function setDeinterlaceAllFrames($deinterlaceAllFrames)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeinterlaceAllFrames()
+        {
+        }
+        /**
+         * Specifies the deinterlacing mode to adopt. The default is `send_frame`.
+         * Supported values: - `send_frame`: Output one frame for each frame -
+         * `send_field`: Output one frame for each field
+         *
+         * @param string $mode
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMode()
+        {
+        }
+        /**
+         * The picture field parity assumed for the input interlaced video. The
+         * default is `auto`. Supported values: - `tff`: Assume the top field is first
+         * - `bff`: Assume the bottom field is first - `auto`: Enable automatic
+         * detection of field parity
+         *
+         * @param string $parity
+         */
+        public function setParity($parity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Transcoder\BwdifConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeinterlaceAllFrames()
-    {
-    }
-    /**
-     * Specifies the deinterlacing mode to adopt. The default is `send_frame`.
-     * Supported values: - `send_frame`: Output one frame for each frame -
-     * `send_field`: Output one frame for each field
-     *
-     * @param string $mode
-     */
-    public function setMode($mode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMode()
-    {
-    }
-    /**
-     * The picture field parity assumed for the input interlaced video. The
-     * default is `auto`. Supported values: - `tff`: Assume the top field is first
-     * - `bff`: Assume the bottom field is first - `auto`: Enable automatic
-     * detection of field parity
-     *
-     * @param string $parity
-     */
-    public function setParity($parity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParity()
+    class Google_Service_Transcoder_BwdifConfig extends \Google\Service\Transcoder\BwdifConfig
     {
     }
 }

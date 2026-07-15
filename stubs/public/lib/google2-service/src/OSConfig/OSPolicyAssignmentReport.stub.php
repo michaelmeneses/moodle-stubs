@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class OSPolicyAssignmentReport extends \Google\Collection
-{
-    protected $collection_key = 'osPolicyCompliances';
-    /**
-     * @var string
-     */
-    public $instance;
-    /**
-     * @var string
-     */
-    public $lastRunId;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $osPolicyAssignment;
-    protected $osPolicyCompliancesType = OSPolicyAssignmentReportOSPolicyCompliance::class;
-    protected $osPolicyCompliancesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param string
-     */
-    public function setInstance($instance)
+namespace Google\Service\OSConfig {
+    class OSPolicyAssignmentReport extends \Google\Collection
     {
+        protected $collection_key = 'osPolicyCompliances';
+        /**
+         * @var string
+         */
+        public $instance;
+        /**
+         * @var string
+         */
+        public $lastRunId;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $osPolicyAssignment;
+        protected $osPolicyCompliancesType = OSPolicyAssignmentReportOSPolicyCompliance::class;
+        protected $osPolicyCompliancesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param string
+         */
+        public function setInstance($instance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastRunId($lastRunId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastRunId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOsPolicyAssignment($osPolicyAssignment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOsPolicyAssignment()
+        {
+        }
+        /**
+         * @param OSPolicyAssignmentReportOSPolicyCompliance[]
+         */
+        public function setOsPolicyCompliances($osPolicyCompliances)
+        {
+        }
+        /**
+         * @return OSPolicyAssignmentReportOSPolicyCompliance[]
+         */
+        public function getOsPolicyCompliances()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\OSPolicyAssignmentReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstance()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastRunId($lastRunId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastRunId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOsPolicyAssignment($osPolicyAssignment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOsPolicyAssignment()
-    {
-    }
-    /**
-     * @param OSPolicyAssignmentReportOSPolicyCompliance[]
-     */
-    public function setOsPolicyCompliances($osPolicyCompliances)
-    {
-    }
-    /**
-     * @return OSPolicyAssignmentReportOSPolicyCompliance[]
-     */
-    public function getOsPolicyCompliances()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_OSConfig_OSPolicyAssignmentReport extends \Google\Service\OSConfig\OSPolicyAssignmentReport
     {
     }
 }

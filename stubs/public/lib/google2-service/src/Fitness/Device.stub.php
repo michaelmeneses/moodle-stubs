@@ -21,151 +21,160 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Fitness;
-
-class Device extends \Google\Model
-{
-    /**
-     * Device type is not known.
-     */
-    public const TYPE_unknown = 'unknown';
-    /**
-     * An Android phone.
-     */
-    public const TYPE_phone = 'phone';
-    /**
-     * An Android tablet.
-     */
-    public const TYPE_tablet = 'tablet';
-    /**
-     * A watch or other wrist-mounted band.
-     */
-    public const TYPE_watch = 'watch';
-    /**
-     * A chest strap.
-     */
-    public const TYPE_chestStrap = 'chestStrap';
-    /**
-     * A scale.
-     */
-    public const TYPE_scale = 'scale';
-    /**
-     * Glass or other head-mounted device.
-     */
-    public const TYPE_headMounted = 'headMounted';
-    /**
-     * A smart display e.g. Nest device.
-     */
-    public const TYPE_smartDisplay = 'smartDisplay';
-    /**
-     * Manufacturer of the product/hardware.
-     *
-     * @var string
-     */
-    public $manufacturer;
-    /**
-     * End-user visible model name for the device.
-     *
-     * @var string
-     */
-    public $model;
-    /**
-     * A constant representing the type of the device.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The serial number or other unique ID for the hardware. This field is
-     * obfuscated when read by any REST or Android client that did not create the
-     * data source. Only the data source creator will see the uid field in clear
-     * and normal form. The obfuscation preserves equality; that is, given two
-     * IDs, if id1 == id2, obfuscated(id1) == obfuscated(id2).
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Version string for the device hardware/software.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Manufacturer of the product/hardware.
-     *
-     * @param string $manufacturer
-     */
-    public function setManufacturer($manufacturer)
+namespace Google\Service\Fitness {
+    class Device extends \Google\Model
     {
+        /**
+         * Device type is not known.
+         */
+        public const TYPE_unknown = 'unknown';
+        /**
+         * An Android phone.
+         */
+        public const TYPE_phone = 'phone';
+        /**
+         * An Android tablet.
+         */
+        public const TYPE_tablet = 'tablet';
+        /**
+         * A watch or other wrist-mounted band.
+         */
+        public const TYPE_watch = 'watch';
+        /**
+         * A chest strap.
+         */
+        public const TYPE_chestStrap = 'chestStrap';
+        /**
+         * A scale.
+         */
+        public const TYPE_scale = 'scale';
+        /**
+         * Glass or other head-mounted device.
+         */
+        public const TYPE_headMounted = 'headMounted';
+        /**
+         * A smart display e.g. Nest device.
+         */
+        public const TYPE_smartDisplay = 'smartDisplay';
+        /**
+         * Manufacturer of the product/hardware.
+         *
+         * @var string
+         */
+        public $manufacturer;
+        /**
+         * End-user visible model name for the device.
+         *
+         * @var string
+         */
+        public $model;
+        /**
+         * A constant representing the type of the device.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The serial number or other unique ID for the hardware. This field is
+         * obfuscated when read by any REST or Android client that did not create the
+         * data source. Only the data source creator will see the uid field in clear
+         * and normal form. The obfuscation preserves equality; that is, given two
+         * IDs, if id1 == id2, obfuscated(id1) == obfuscated(id2).
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Version string for the device hardware/software.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Manufacturer of the product/hardware.
+         *
+         * @param string $manufacturer
+         */
+        public function setManufacturer($manufacturer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getManufacturer()
+        {
+        }
+        /**
+         * End-user visible model name for the device.
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
+        /**
+         * A constant representing the type of the device.
+         *
+         * Accepted values: unknown, phone, tablet, watch, chestStrap, scale,
+         * headMounted, smartDisplay
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The serial number or other unique ID for the hardware. This field is
+         * obfuscated when read by any REST or Android client that did not create the
+         * data source. Only the data source creator will see the uid field in clear
+         * and normal form. The obfuscation preserves equality; that is, given two
+         * IDs, if id1 == id2, obfuscated(id1) == obfuscated(id2).
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * Version string for the device hardware/software.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Fitness\Device registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getManufacturer()
-    {
-    }
-    /**
-     * End-user visible model name for the device.
-     *
-     * @param string $model
-     */
-    public function setModel($model)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModel()
-    {
-    }
-    /**
-     * A constant representing the type of the device.
-     *
-     * Accepted values: unknown, phone, tablet, watch, chestStrap, scale,
-     * headMounted, smartDisplay
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * The serial number or other unique ID for the hardware. This field is
-     * obfuscated when read by any REST or Android client that did not create the
-     * data source. Only the data source creator will see the uid field in clear
-     * and normal form. The obfuscation preserves equality; that is, given two
-     * IDs, if id1 == id2, obfuscated(id1) == obfuscated(id2).
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * Version string for the device hardware/software.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_Fitness_Device extends \Google\Service\Fitness\Device
     {
     }
 }

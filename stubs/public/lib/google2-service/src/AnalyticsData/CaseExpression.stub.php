@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class CaseExpression extends \Google\Model
-{
-    /**
-     * Name of a dimension. The name must refer back to a name in dimensions field
-     * of the request.
-     *
-     * @var string
-     */
-    public $dimensionName;
-    /**
-     * Name of a dimension. The name must refer back to a name in dimensions field
-     * of the request.
-     *
-     * @param string $dimensionName
-     */
-    public function setDimensionName($dimensionName)
+namespace Google\Service\AnalyticsData {
+    class CaseExpression extends \Google\Model
     {
+        /**
+         * Name of a dimension. The name must refer back to a name in dimensions field
+         * of the request.
+         *
+         * @var string
+         */
+        public $dimensionName;
+        /**
+         * Name of a dimension. The name must refer back to a name in dimensions field
+         * of the request.
+         *
+         * @param string $dimensionName
+         */
+        public function setDimensionName($dimensionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDimensionName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsData\CaseExpression registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionName()
+    class Google_Service_AnalyticsData_CaseExpression extends \Google\Service\AnalyticsData\CaseExpression
     {
     }
 }

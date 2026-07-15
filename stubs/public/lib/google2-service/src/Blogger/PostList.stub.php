@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger;
-
-class PostList extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * Etag of the response.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $itemsType = Post::class;
-    protected $itemsDataType = 'array';
-    /**
-     * The kind of this entity. Always blogger#postList.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Pagination token to fetch the next page, if one exists.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Pagination token to fetch the previous page, if one exists.
-     *
-     * @var string
-     */
-    public $prevPageToken;
-    /**
-     * Etag of the response.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Blogger {
+    class PostList extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * Etag of the response.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $itemsType = Post::class;
+        protected $itemsDataType = 'array';
+        /**
+         * The kind of this entity. Always blogger#postList.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Pagination token to fetch the next page, if one exists.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Pagination token to fetch the previous page, if one exists.
+         *
+         * @var string
+         */
+        public $prevPageToken;
+        /**
+         * Etag of the response.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The list of Posts for this Blog.
+         *
+         * @param Post[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Post[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * The kind of this entity. Always blogger#postList.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Pagination token to fetch the next page, if one exists.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Pagination token to fetch the previous page, if one exists.
+         *
+         * @param string $prevPageToken
+         */
+        public function setPrevPageToken($prevPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrevPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Blogger\PostList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * The list of Posts for this Blog.
-     *
-     * @param Post[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return Post[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * The kind of this entity. Always blogger#postList.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Pagination token to fetch the next page, if one exists.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Pagination token to fetch the previous page, if one exists.
-     *
-     * @param string $prevPageToken
-     */
-    public function setPrevPageToken($prevPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrevPageToken()
+    class Google_Service_Blogger_PostList extends \Google\Service\Blogger\PostList
     {
     }
 }

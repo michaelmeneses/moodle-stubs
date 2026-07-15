@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class CartData extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = CartDataItem::class;
-    protected $itemsDataType = 'array';
-    /**
-     * The feed labels associated with the feed where your items are uploaded. For
-     * more information, please refer to ​​
-     * https://support.google.com/merchants/answer/12453549. Providing the feed
-     * label reduces ambiguity in identifying the right offer details.
-     *
-     * @var string
-     */
-    public $merchantFeedLabel;
-    /**
-     * The language associated with the feed where your items are uploaded. Use
-     * ISO 639-1 language codes. Providing the feed language reduces ambiguity in
-     * identifying the right offer details.
-     *
-     * @var string
-     */
-    public $merchantFeedLanguage;
-    /**
-     * The Merchant Center ID where the items are uploaded. Providing Merchant
-     * Center ID reduces ambiguity in identifying the right offer details.
-     *
-     * @var string
-     */
-    public $merchantId;
-    /**
-     * Data of the items purchased.
-     *
-     * @param CartDataItem[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Dfareporting {
+    class CartData extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = CartDataItem::class;
+        protected $itemsDataType = 'array';
+        /**
+         * The feed labels associated with the feed where your items are uploaded. For
+         * more information, please refer to ​​
+         * https://support.google.com/merchants/answer/12453549. Providing the feed
+         * label reduces ambiguity in identifying the right offer details.
+         *
+         * @var string
+         */
+        public $merchantFeedLabel;
+        /**
+         * The language associated with the feed where your items are uploaded. Use
+         * ISO 639-1 language codes. Providing the feed language reduces ambiguity in
+         * identifying the right offer details.
+         *
+         * @var string
+         */
+        public $merchantFeedLanguage;
+        /**
+         * The Merchant Center ID where the items are uploaded. Providing Merchant
+         * Center ID reduces ambiguity in identifying the right offer details.
+         *
+         * @var string
+         */
+        public $merchantId;
+        /**
+         * Data of the items purchased.
+         *
+         * @param CartDataItem[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return CartDataItem[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * The feed labels associated with the feed where your items are uploaded. For
+         * more information, please refer to ​​
+         * https://support.google.com/merchants/answer/12453549. Providing the feed
+         * label reduces ambiguity in identifying the right offer details.
+         *
+         * @param string $merchantFeedLabel
+         */
+        public function setMerchantFeedLabel($merchantFeedLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantFeedLabel()
+        {
+        }
+        /**
+         * The language associated with the feed where your items are uploaded. Use
+         * ISO 639-1 language codes. Providing the feed language reduces ambiguity in
+         * identifying the right offer details.
+         *
+         * @param string $merchantFeedLanguage
+         */
+        public function setMerchantFeedLanguage($merchantFeedLanguage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantFeedLanguage()
+        {
+        }
+        /**
+         * The Merchant Center ID where the items are uploaded. Providing Merchant
+         * Center ID reduces ambiguity in identifying the right offer details.
+         *
+         * @param string $merchantId
+         */
+        public function setMerchantId($merchantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CartDataItem[]
+     * Runtime class alias of \Google\Service\Dfareporting\CartData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * The feed labels associated with the feed where your items are uploaded. For
-     * more information, please refer to ​​
-     * https://support.google.com/merchants/answer/12453549. Providing the feed
-     * label reduces ambiguity in identifying the right offer details.
-     *
-     * @param string $merchantFeedLabel
-     */
-    public function setMerchantFeedLabel($merchantFeedLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantFeedLabel()
-    {
-    }
-    /**
-     * The language associated with the feed where your items are uploaded. Use
-     * ISO 639-1 language codes. Providing the feed language reduces ambiguity in
-     * identifying the right offer details.
-     *
-     * @param string $merchantFeedLanguage
-     */
-    public function setMerchantFeedLanguage($merchantFeedLanguage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantFeedLanguage()
-    {
-    }
-    /**
-     * The Merchant Center ID where the items are uploaded. Providing Merchant
-     * Center ID reduces ambiguity in identifying the right offer details.
-     *
-     * @param string $merchantId
-     */
-    public function setMerchantId($merchantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantId()
+    class Google_Service_Dfareporting_CartData extends \Google\Service\Dfareporting\CartData
     {
     }
 }

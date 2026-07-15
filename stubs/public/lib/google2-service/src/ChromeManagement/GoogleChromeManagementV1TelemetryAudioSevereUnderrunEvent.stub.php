@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1TelemetryAudioSevereUnderrunEvent extends \Google\Model
-{
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1TelemetryAudioSevereUnderrunEvent extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryAudioSevereUnderrunEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1TelemetryAudioSevereUnderrunEvent extends \Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryAudioSevereUnderrunEvent
+    {
+    }
 }

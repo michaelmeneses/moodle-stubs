@@ -21,147 +21,156 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class GoogleDevtoolsCloudbuildV2GitLabConfig extends \Google\Model
-{
-    protected $authorizerCredentialType = UserCredential::class;
-    protected $authorizerCredentialDataType = '';
-    /**
-     * Optional. The URI of the GitLab Enterprise host this connection is for. If
-     * not specified, the default value is https://gitlab.com.
-     *
-     * @var string
-     */
-    public $hostUri;
-    protected $readAuthorizerCredentialType = UserCredential::class;
-    protected $readAuthorizerCredentialDataType = '';
-    /**
-     * Output only. Version of the GitLab Enterprise server running on the
-     * `host_uri`.
-     *
-     * @var string
-     */
-    public $serverVersion;
-    protected $serviceDirectoryConfigType = GoogleDevtoolsCloudbuildV2ServiceDirectoryConfig::class;
-    protected $serviceDirectoryConfigDataType = '';
-    /**
-     * Optional. SSL certificate to use for requests to GitLab Enterprise.
-     *
-     * @var string
-     */
-    public $sslCa;
-    /**
-     * Required. Immutable. SecretManager resource containing the webhook secret
-     * of a GitLab Enterprise project, formatted as `projects/secrets/versions`.
-     *
-     * @var string
-     */
-    public $webhookSecretSecretVersion;
-    /**
-     * Required. A GitLab personal access token with the `api` scope access.
-     *
-     * @param UserCredential $authorizerCredential
-     */
-    public function setAuthorizerCredential(UserCredential $authorizerCredential)
+namespace Google\Service\CloudBuild {
+    class GoogleDevtoolsCloudbuildV2GitLabConfig extends \Google\Model
     {
+        protected $authorizerCredentialType = UserCredential::class;
+        protected $authorizerCredentialDataType = '';
+        /**
+         * Optional. The URI of the GitLab Enterprise host this connection is for. If
+         * not specified, the default value is https://gitlab.com.
+         *
+         * @var string
+         */
+        public $hostUri;
+        protected $readAuthorizerCredentialType = UserCredential::class;
+        protected $readAuthorizerCredentialDataType = '';
+        /**
+         * Output only. Version of the GitLab Enterprise server running on the
+         * `host_uri`.
+         *
+         * @var string
+         */
+        public $serverVersion;
+        protected $serviceDirectoryConfigType = GoogleDevtoolsCloudbuildV2ServiceDirectoryConfig::class;
+        protected $serviceDirectoryConfigDataType = '';
+        /**
+         * Optional. SSL certificate to use for requests to GitLab Enterprise.
+         *
+         * @var string
+         */
+        public $sslCa;
+        /**
+         * Required. Immutable. SecretManager resource containing the webhook secret
+         * of a GitLab Enterprise project, formatted as `projects/secrets/versions`.
+         *
+         * @var string
+         */
+        public $webhookSecretSecretVersion;
+        /**
+         * Required. A GitLab personal access token with the `api` scope access.
+         *
+         * @param UserCredential $authorizerCredential
+         */
+        public function setAuthorizerCredential(UserCredential $authorizerCredential)
+        {
+        }
+        /**
+         * @return UserCredential
+         */
+        public function getAuthorizerCredential()
+        {
+        }
+        /**
+         * Optional. The URI of the GitLab Enterprise host this connection is for. If
+         * not specified, the default value is https://gitlab.com.
+         *
+         * @param string $hostUri
+         */
+        public function setHostUri($hostUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostUri()
+        {
+        }
+        /**
+         * Required. A GitLab personal access token with the minimum `read_api` scope
+         * access.
+         *
+         * @param UserCredential $readAuthorizerCredential
+         */
+        public function setReadAuthorizerCredential(UserCredential $readAuthorizerCredential)
+        {
+        }
+        /**
+         * @return UserCredential
+         */
+        public function getReadAuthorizerCredential()
+        {
+        }
+        /**
+         * Output only. Version of the GitLab Enterprise server running on the
+         * `host_uri`.
+         *
+         * @param string $serverVersion
+         */
+        public function setServerVersion($serverVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServerVersion()
+        {
+        }
+        /**
+         * Optional. Configuration for using Service Directory to privately connect to
+         * a GitLab Enterprise server. This should only be set if the GitLab
+         * Enterprise server is hosted on-premises and not reachable by public
+         * internet. If this field is left empty, calls to the GitLab Enterprise
+         * server will be made over the public internet.
+         *
+         * @param GoogleDevtoolsCloudbuildV2ServiceDirectoryConfig $serviceDirectoryConfig
+         */
+        public function setServiceDirectoryConfig(GoogleDevtoolsCloudbuildV2ServiceDirectoryConfig $serviceDirectoryConfig)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsCloudbuildV2ServiceDirectoryConfig
+         */
+        public function getServiceDirectoryConfig()
+        {
+        }
+        /**
+         * Optional. SSL certificate to use for requests to GitLab Enterprise.
+         *
+         * @param string $sslCa
+         */
+        public function setSslCa($sslCa)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSslCa()
+        {
+        }
+        /**
+         * Required. Immutable. SecretManager resource containing the webhook secret
+         * of a GitLab Enterprise project, formatted as `projects/secrets/versions`.
+         *
+         * @param string $webhookSecretSecretVersion
+         */
+        public function setWebhookSecretSecretVersion($webhookSecretSecretVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebhookSecretSecretVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UserCredential
+     * Runtime class alias of \Google\Service\CloudBuild\GoogleDevtoolsCloudbuildV2GitLabConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthorizerCredential()
-    {
-    }
-    /**
-     * Optional. The URI of the GitLab Enterprise host this connection is for. If
-     * not specified, the default value is https://gitlab.com.
-     *
-     * @param string $hostUri
-     */
-    public function setHostUri($hostUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostUri()
-    {
-    }
-    /**
-     * Required. A GitLab personal access token with the minimum `read_api` scope
-     * access.
-     *
-     * @param UserCredential $readAuthorizerCredential
-     */
-    public function setReadAuthorizerCredential(UserCredential $readAuthorizerCredential)
-    {
-    }
-    /**
-     * @return UserCredential
-     */
-    public function getReadAuthorizerCredential()
-    {
-    }
-    /**
-     * Output only. Version of the GitLab Enterprise server running on the
-     * `host_uri`.
-     *
-     * @param string $serverVersion
-     */
-    public function setServerVersion($serverVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServerVersion()
-    {
-    }
-    /**
-     * Optional. Configuration for using Service Directory to privately connect to
-     * a GitLab Enterprise server. This should only be set if the GitLab
-     * Enterprise server is hosted on-premises and not reachable by public
-     * internet. If this field is left empty, calls to the GitLab Enterprise
-     * server will be made over the public internet.
-     *
-     * @param GoogleDevtoolsCloudbuildV2ServiceDirectoryConfig $serviceDirectoryConfig
-     */
-    public function setServiceDirectoryConfig(GoogleDevtoolsCloudbuildV2ServiceDirectoryConfig $serviceDirectoryConfig)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsCloudbuildV2ServiceDirectoryConfig
-     */
-    public function getServiceDirectoryConfig()
-    {
-    }
-    /**
-     * Optional. SSL certificate to use for requests to GitLab Enterprise.
-     *
-     * @param string $sslCa
-     */
-    public function setSslCa($sslCa)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSslCa()
-    {
-    }
-    /**
-     * Required. Immutable. SecretManager resource containing the webhook secret
-     * of a GitLab Enterprise project, formatted as `projects/secrets/versions`.
-     *
-     * @param string $webhookSecretSecretVersion
-     */
-    public function setWebhookSecretSecretVersion($webhookSecretSecretVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebhookSecretSecretVersion()
+    class Google_Service_CloudBuild_GoogleDevtoolsCloudbuildV2GitLabConfig extends \Google\Service\CloudBuild\GoogleDevtoolsCloudbuildV2GitLabConfig
     {
     }
 }

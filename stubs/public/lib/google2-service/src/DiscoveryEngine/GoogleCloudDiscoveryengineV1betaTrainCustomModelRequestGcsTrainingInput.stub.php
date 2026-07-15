@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaTrainCustomModelRequestGcsTrainingInput extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $corpusDataPath;
-    /**
-     * @var string
-     */
-    public $queryDataPath;
-    /**
-     * @var string
-     */
-    public $testDataPath;
-    /**
-     * @var string
-     */
-    public $trainDataPath;
-    /**
-     * @param string
-     */
-    public function setCorpusDataPath($corpusDataPath)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaTrainCustomModelRequestGcsTrainingInput extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $corpusDataPath;
+        /**
+         * @var string
+         */
+        public $queryDataPath;
+        /**
+         * @var string
+         */
+        public $testDataPath;
+        /**
+         * @var string
+         */
+        public $trainDataPath;
+        /**
+         * @param string
+         */
+        public function setCorpusDataPath($corpusDataPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCorpusDataPath()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setQueryDataPath($queryDataPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQueryDataPath()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTestDataPath($testDataPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTestDataPath()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTrainDataPath($trainDataPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrainDataPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaTrainCustomModelRequestGcsTrainingInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCorpusDataPath()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setQueryDataPath($queryDataPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQueryDataPath()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTestDataPath($testDataPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTestDataPath()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTrainDataPath($trainDataPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrainDataPath()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaTrainCustomModelRequestGcsTrainingInput extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaTrainCustomModelRequestGcsTrainingInput
     {
     }
 }

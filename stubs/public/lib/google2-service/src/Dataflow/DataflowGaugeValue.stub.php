@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class DataflowGaugeValue extends \Google\Model
-{
-    /**
-     * The timestamp when the gauge was recorded.
-     *
-     * @var string
-     */
-    public $measuredTime;
-    /**
-     * The value of the gauge.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The timestamp when the gauge was recorded.
-     *
-     * @param string $measuredTime
-     */
-    public function setMeasuredTime($measuredTime)
+namespace Google\Service\Dataflow {
+    class DataflowGaugeValue extends \Google\Model
     {
+        /**
+         * The timestamp when the gauge was recorded.
+         *
+         * @var string
+         */
+        public $measuredTime;
+        /**
+         * The value of the gauge.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The timestamp when the gauge was recorded.
+         *
+         * @param string $measuredTime
+         */
+        public function setMeasuredTime($measuredTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMeasuredTime()
+        {
+        }
+        /**
+         * The value of the gauge.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\DataflowGaugeValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMeasuredTime()
-    {
-    }
-    /**
-     * The value of the gauge.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Dataflow_DataflowGaugeValue extends \Google\Service\Dataflow\DataflowGaugeValue
     {
     }
 }

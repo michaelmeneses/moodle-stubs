@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPredictParamsImageClassificationPredictionParams extends \Google\Model
-{
-    /**
-     * The Model only returns predictions with at least this confidence score.
-     * Default value is 0.0
-     *
-     * @var float
-     */
-    public $confidenceThreshold;
-    /**
-     * The Model only returns up to that many top, by confidence score,
-     * predictions per instance. If this number is very high, the Model may return
-     * fewer predictions. Default value is 10.
-     *
-     * @var int
-     */
-    public $maxPredictions;
-    /**
-     * The Model only returns predictions with at least this confidence score.
-     * Default value is 0.0
-     *
-     * @param float $confidenceThreshold
-     */
-    public function setConfidenceThreshold($confidenceThreshold)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPredictParamsImageClassificationPredictionParams extends \Google\Model
     {
+        /**
+         * The Model only returns predictions with at least this confidence score.
+         * Default value is 0.0
+         *
+         * @var float
+         */
+        public $confidenceThreshold;
+        /**
+         * The Model only returns up to that many top, by confidence score,
+         * predictions per instance. If this number is very high, the Model may return
+         * fewer predictions. Default value is 10.
+         *
+         * @var int
+         */
+        public $maxPredictions;
+        /**
+         * The Model only returns predictions with at least this confidence score.
+         * Default value is 0.0
+         *
+         * @param float $confidenceThreshold
+         */
+        public function setConfidenceThreshold($confidenceThreshold)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidenceThreshold()
+        {
+        }
+        /**
+         * The Model only returns up to that many top, by confidence score,
+         * predictions per instance. If this number is very high, the Model may return
+         * fewer predictions. Default value is 10.
+         *
+         * @param int $maxPredictions
+         */
+        public function setMaxPredictions($maxPredictions)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxPredictions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictParamsImageClassificationPredictionParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidenceThreshold()
-    {
-    }
-    /**
-     * The Model only returns up to that many top, by confidence score,
-     * predictions per instance. If this number is very high, the Model may return
-     * fewer predictions. Default value is 10.
-     *
-     * @param int $maxPredictions
-     */
-    public function setMaxPredictions($maxPredictions)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxPredictions()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPredictParamsImageClassificationPredictionParams extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictParamsImageClassificationPredictionParams
     {
     }
 }

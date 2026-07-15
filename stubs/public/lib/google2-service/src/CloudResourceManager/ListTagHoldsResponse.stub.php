@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudResourceManager;
-
-class ListTagHoldsResponse extends \Google\Collection
-{
-    protected $collection_key = 'tagHolds';
-    /**
-     * Pagination token. If the result set is too large to fit in a single
-     * response, this token is returned. It encodes the position of the current
-     * result cursor. Feeding this value into a new list request with the
-     * `page_token` parameter gives the next page of the results. When
-     * `next_page_token` is not filled in, there is no next page and the list
-     * returned is the last page in the result set. Pagination tokens have a
-     * limited lifetime.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $tagHoldsType = TagHold::class;
-    protected $tagHoldsDataType = 'array';
-    /**
-     * Pagination token. If the result set is too large to fit in a single
-     * response, this token is returned. It encodes the position of the current
-     * result cursor. Feeding this value into a new list request with the
-     * `page_token` parameter gives the next page of the results. When
-     * `next_page_token` is not filled in, there is no next page and the list
-     * returned is the last page in the result set. Pagination tokens have a
-     * limited lifetime.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudResourceManager {
+    class ListTagHoldsResponse extends \Google\Collection
     {
+        protected $collection_key = 'tagHolds';
+        /**
+         * Pagination token. If the result set is too large to fit in a single
+         * response, this token is returned. It encodes the position of the current
+         * result cursor. Feeding this value into a new list request with the
+         * `page_token` parameter gives the next page of the results. When
+         * `next_page_token` is not filled in, there is no next page and the list
+         * returned is the last page in the result set. Pagination tokens have a
+         * limited lifetime.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $tagHoldsType = TagHold::class;
+        protected $tagHoldsDataType = 'array';
+        /**
+         * Pagination token. If the result set is too large to fit in a single
+         * response, this token is returned. It encodes the position of the current
+         * result cursor. Feeding this value into a new list request with the
+         * `page_token` parameter gives the next page of the results. When
+         * `next_page_token` is not filled in, there is no next page and the list
+         * returned is the last page in the result set. Pagination tokens have a
+         * limited lifetime.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A possibly paginated list of TagHolds.
+         *
+         * @param TagHold[] $tagHolds
+         */
+        public function setTagHolds($tagHolds)
+        {
+        }
+        /**
+         * @return TagHold[]
+         */
+        public function getTagHolds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudResourceManager\ListTagHoldsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A possibly paginated list of TagHolds.
-     *
-     * @param TagHold[] $tagHolds
-     */
-    public function setTagHolds($tagHolds)
-    {
-    }
-    /**
-     * @return TagHold[]
-     */
-    public function getTagHolds()
+    class Google_Service_CloudResourceManager_ListTagHoldsResponse extends \Google\Service\CloudResourceManager\ListTagHoldsResponse
     {
     }
 }

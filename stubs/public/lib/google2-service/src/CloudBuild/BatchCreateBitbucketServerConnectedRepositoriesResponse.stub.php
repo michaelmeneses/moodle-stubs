@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class BatchCreateBitbucketServerConnectedRepositoriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'bitbucketServerConnectedRepositories';
-    protected $bitbucketServerConnectedRepositoriesType = BitbucketServerConnectedRepository::class;
-    protected $bitbucketServerConnectedRepositoriesDataType = 'array';
-    /**
-     * @param BitbucketServerConnectedRepository[]
-     */
-    public function setBitbucketServerConnectedRepositories($bitbucketServerConnectedRepositories)
+namespace Google\Service\CloudBuild {
+    class BatchCreateBitbucketServerConnectedRepositoriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'bitbucketServerConnectedRepositories';
+        protected $bitbucketServerConnectedRepositoriesType = BitbucketServerConnectedRepository::class;
+        protected $bitbucketServerConnectedRepositoriesDataType = 'array';
+        /**
+         * @param BitbucketServerConnectedRepository[]
+         */
+        public function setBitbucketServerConnectedRepositories($bitbucketServerConnectedRepositories)
+        {
+        }
+        /**
+         * @return BitbucketServerConnectedRepository[]
+         */
+        public function getBitbucketServerConnectedRepositories()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BitbucketServerConnectedRepository[]
+     * Runtime class alias of \Google\Service\CloudBuild\BatchCreateBitbucketServerConnectedRepositoriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBitbucketServerConnectedRepositories()
+    class Google_Service_CloudBuild_BatchCreateBitbucketServerConnectedRepositoriesResponse extends \Google\Service\CloudBuild\BatchCreateBitbucketServerConnectedRepositoriesResponse
     {
     }
 }

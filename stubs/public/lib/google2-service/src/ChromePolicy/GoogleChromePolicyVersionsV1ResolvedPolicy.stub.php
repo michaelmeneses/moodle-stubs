@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1ResolvedPolicy extends \Google\Model
-{
-    protected $addedSourceKeyType = GoogleChromePolicyVersionsV1PolicyTargetKey::class;
-    protected $addedSourceKeyDataType = '';
-    protected $sourceKeyType = GoogleChromePolicyVersionsV1PolicyTargetKey::class;
-    protected $sourceKeyDataType = '';
-    protected $targetKeyType = GoogleChromePolicyVersionsV1PolicyTargetKey::class;
-    protected $targetKeyDataType = '';
-    protected $valueType = GoogleChromePolicyVersionsV1PolicyValue::class;
-    protected $valueDataType = '';
-    /**
-     * Output only. The added source key establishes at which level an entity was
-     * explicitly added for management. This is useful for certain type of
-     * policies that are only applied if they are explicitly added for management.
-     * For example: apps and networks. An entity can only be deleted from
-     * management in an Organizational Unit that it was explicitly added to. If
-     * this is not present it means that the policy is managed without the need to
-     * explicitly add an entity, for example: standard user or device policies.
-     *
-     * @param GoogleChromePolicyVersionsV1PolicyTargetKey $addedSourceKey
-     */
-    public function setAddedSourceKey(GoogleChromePolicyVersionsV1PolicyTargetKey $addedSourceKey)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1ResolvedPolicy extends \Google\Model
     {
+        protected $addedSourceKeyType = GoogleChromePolicyVersionsV1PolicyTargetKey::class;
+        protected $addedSourceKeyDataType = '';
+        protected $sourceKeyType = GoogleChromePolicyVersionsV1PolicyTargetKey::class;
+        protected $sourceKeyDataType = '';
+        protected $targetKeyType = GoogleChromePolicyVersionsV1PolicyTargetKey::class;
+        protected $targetKeyDataType = '';
+        protected $valueType = GoogleChromePolicyVersionsV1PolicyValue::class;
+        protected $valueDataType = '';
+        /**
+         * Output only. The added source key establishes at which level an entity was
+         * explicitly added for management. This is useful for certain type of
+         * policies that are only applied if they are explicitly added for management.
+         * For example: apps and networks. An entity can only be deleted from
+         * management in an Organizational Unit that it was explicitly added to. If
+         * this is not present it means that the policy is managed without the need to
+         * explicitly add an entity, for example: standard user or device policies.
+         *
+         * @param GoogleChromePolicyVersionsV1PolicyTargetKey $addedSourceKey
+         */
+        public function setAddedSourceKey(GoogleChromePolicyVersionsV1PolicyTargetKey $addedSourceKey)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyVersionsV1PolicyTargetKey
+         */
+        public function getAddedSourceKey()
+        {
+        }
+        /**
+         * Output only. The source resource from which this policy value is obtained.
+         * May be the same as `targetKey` if the policy is directly modified on the
+         * target, otherwise it would be another resource from which the policy gets
+         * its value (if applicable). If not present, the source is the default value
+         * for the customer.
+         *
+         * @param GoogleChromePolicyVersionsV1PolicyTargetKey $sourceKey
+         */
+        public function setSourceKey(GoogleChromePolicyVersionsV1PolicyTargetKey $sourceKey)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyVersionsV1PolicyTargetKey
+         */
+        public function getSourceKey()
+        {
+        }
+        /**
+         * Output only. The target resource for which the resolved policy value
+         * applies.
+         *
+         * @param GoogleChromePolicyVersionsV1PolicyTargetKey $targetKey
+         */
+        public function setTargetKey(GoogleChromePolicyVersionsV1PolicyTargetKey $targetKey)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyVersionsV1PolicyTargetKey
+         */
+        public function getTargetKey()
+        {
+        }
+        /**
+         * Output only. The resolved value of the policy.
+         *
+         * @param GoogleChromePolicyVersionsV1PolicyValue $value
+         */
+        public function setValue(GoogleChromePolicyVersionsV1PolicyValue $value)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyVersionsV1PolicyValue
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromePolicyVersionsV1PolicyTargetKey
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1ResolvedPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddedSourceKey()
-    {
-    }
-    /**
-     * Output only. The source resource from which this policy value is obtained.
-     * May be the same as `targetKey` if the policy is directly modified on the
-     * target, otherwise it would be another resource from which the policy gets
-     * its value (if applicable). If not present, the source is the default value
-     * for the customer.
-     *
-     * @param GoogleChromePolicyVersionsV1PolicyTargetKey $sourceKey
-     */
-    public function setSourceKey(GoogleChromePolicyVersionsV1PolicyTargetKey $sourceKey)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyVersionsV1PolicyTargetKey
-     */
-    public function getSourceKey()
-    {
-    }
-    /**
-     * Output only. The target resource for which the resolved policy value
-     * applies.
-     *
-     * @param GoogleChromePolicyVersionsV1PolicyTargetKey $targetKey
-     */
-    public function setTargetKey(GoogleChromePolicyVersionsV1PolicyTargetKey $targetKey)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyVersionsV1PolicyTargetKey
-     */
-    public function getTargetKey()
-    {
-    }
-    /**
-     * Output only. The resolved value of the policy.
-     *
-     * @param GoogleChromePolicyVersionsV1PolicyValue $value
-     */
-    public function setValue(GoogleChromePolicyVersionsV1PolicyValue $value)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyVersionsV1PolicyValue
-     */
-    public function getValue()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1ResolvedPolicy extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1ResolvedPolicy
     {
     }
 }

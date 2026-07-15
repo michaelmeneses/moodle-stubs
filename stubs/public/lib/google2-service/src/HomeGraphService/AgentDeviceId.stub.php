@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HomeGraphService;
-
-class AgentDeviceId extends \Google\Model
-{
-    /**
-     * Third-party device ID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Third-party device ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\HomeGraphService {
+    class AgentDeviceId extends \Google\Model
     {
+        /**
+         * Third-party device ID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Third-party device ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HomeGraphService\AgentDeviceId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
+    class Google_Service_HomeGraphService_AgentDeviceId extends \Google\Service\HomeGraphService\AgentDeviceId
     {
     }
 }

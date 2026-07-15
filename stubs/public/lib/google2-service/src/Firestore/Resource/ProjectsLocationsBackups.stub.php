@@ -21,62 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore\Resource;
-
-/**
- * The "backups" collection of methods.
- * Typical usage is:
- *  <code>
- *   $firestoreService = new Google\Service\Firestore(...);
- *   $backups = $firestoreService->projects_locations_backups;
- *  </code>
- */
-class ProjectsLocationsBackups extends \Google\Service\Resource
-{
+namespace Google\Service\Firestore\Resource {
+    use Google\Service\Firestore\FirestoreEmpty;
+    use Google\Service\Firestore\GoogleFirestoreAdminV1Backup;
+    use Google\Service\Firestore\GoogleFirestoreAdminV1ListBackupsResponse;
     /**
-     * Deletes a backup. (backups.delete)
-     *
-     * @param string $name Required. Name of the backup to delete. format is
-     * `projects/{project}/locations/{location}/backups/{backup}`.
-     * @param array $optParams Optional parameters.
-     * @return FirestoreEmpty
-     * @throws \Google\Service\Exception
+     * The "backups" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $firestoreService = new Google\Service\Firestore(...);
+     *   $backups = $firestoreService->projects_locations_backups;
+     *  </code>
      */
-    public function delete($name, $optParams = [])
+    class ProjectsLocationsBackups extends \Google\Service\Resource
     {
+        /**
+         * Deletes a backup. (backups.delete)
+         *
+         * @param string $name Required. Name of the backup to delete. format is
+         * `projects/{project}/locations/{location}/backups/{backup}`.
+         * @param array $optParams Optional parameters.
+         * @return FirestoreEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets information about a backup. (backups.get)
+         *
+         * @param string $name Required. Name of the backup to fetch. Format is
+         * `projects/{project}/locations/{location}/backups/{backup}`.
+         * @param array $optParams Optional parameters.
+         * @return GoogleFirestoreAdminV1Backup
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all the backups. (backups.listProjectsLocationsBackups)
+         *
+         * @param string $parent Required. The location to list backups from. Format is
+         * `projects/{project}/locations/{location}`. Use `{location} = '-'` to list
+         * backups from all locations for the given project. This allows listing backups
+         * from a single location or from all locations.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter An expression that filters the list of returned
+         * backups. A filter expression consists of a field name, a comparison operator,
+         * and a value for filtering. The value must be a string, a number, or a
+         * boolean. The comparison operator must be one of: `<`, `>`, `<=`, `>=`, `!=`,
+         * `=`, or `:`. Colon `:` is the contains operator. Filter rules are not case
+         * sensitive. The following fields in the Backup are eligible for filtering: *
+         * `database_uid` (supports `=` only)
+         * @return GoogleFirestoreAdminV1ListBackupsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsBackups($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets information about a backup. (backups.get)
-     *
-     * @param string $name Required. Name of the backup to fetch. Format is
-     * `projects/{project}/locations/{location}/backups/{backup}`.
-     * @param array $optParams Optional parameters.
-     * @return GoogleFirestoreAdminV1Backup
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Firestore\Resource\ProjectsLocationsBackups registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists all the backups. (backups.listProjectsLocationsBackups)
-     *
-     * @param string $parent Required. The location to list backups from. Format is
-     * `projects/{project}/locations/{location}`. Use `{location} = '-'` to list
-     * backups from all locations for the given project. This allows listing backups
-     * from a single location or from all locations.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter An expression that filters the list of returned
-     * backups. A filter expression consists of a field name, a comparison operator,
-     * and a value for filtering. The value must be a string, a number, or a
-     * boolean. The comparison operator must be one of: `<`, `>`, `<=`, `>=`, `!=`,
-     * `=`, or `:`. Colon `:` is the contains operator. Filter rules are not case
-     * sensitive. The following fields in the Backup are eligible for filtering: *
-     * `database_uid` (supports `=` only)
-     * @return GoogleFirestoreAdminV1ListBackupsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsBackups($parent, $optParams = [])
+    class Google_Service_Firestore_Resource_ProjectsLocationsBackups extends \Google\Service\Firestore\Resource\ProjectsLocationsBackups
     {
     }
 }

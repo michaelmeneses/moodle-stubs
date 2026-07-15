@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class ApproximateSplitRequest extends \Google\Model
-{
+namespace Google\Service\Dataflow {
+    class ApproximateSplitRequest extends \Google\Model
+    {
+        /**
+         * A fraction at which to split the work item, from 0.0 (beginning of the
+         * input) to 1.0 (end of the input).
+         *
+         * @var 
+         */
+        public $fractionConsumed;
+        /**
+         * The fraction of the remainder of work to split the work item at, from 0.0
+         * (split at the current position) to 1.0 (end of the input).
+         *
+         * @var 
+         */
+        public $fractionOfRemainder;
+        protected $positionType = Position::class;
+        protected $positionDataType = '';
+        public function setFractionConsumed($fractionConsumed)
+        {
+        }
+        public function getFractionConsumed()
+        {
+        }
+        public function setFractionOfRemainder($fractionOfRemainder)
+        {
+        }
+        public function getFractionOfRemainder()
+        {
+        }
+        /**
+         * A Position at which to split the work item.
+         *
+         * @param Position $position
+         */
+        public function setPosition(Position $position)
+        {
+        }
+        /**
+         * @return Position
+         */
+        public function getPosition()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * A fraction at which to split the work item, from 0.0 (beginning of the
-     * input) to 1.0 (end of the input).
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Dataflow\ApproximateSplitRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $fractionConsumed;
-    /**
-     * The fraction of the remainder of work to split the work item at, from 0.0
-     * (split at the current position) to 1.0 (end of the input).
-     *
-     * @var 
-     */
-    public $fractionOfRemainder;
-    protected $positionType = Position::class;
-    protected $positionDataType = '';
-    public function setFractionConsumed($fractionConsumed)
-    {
-    }
-    public function getFractionConsumed()
-    {
-    }
-    public function setFractionOfRemainder($fractionOfRemainder)
-    {
-    }
-    public function getFractionOfRemainder()
-    {
-    }
-    /**
-     * A Position at which to split the work item.
-     *
-     * @param Position $position
-     */
-    public function setPosition(Position $position)
-    {
-    }
-    /**
-     * @return Position
-     */
-    public function getPosition()
+    class Google_Service_Dataflow_ApproximateSplitRequest extends \Google\Service\Dataflow\ApproximateSplitRequest
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderreturnsLineItem extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $lineItemId;
-    /**
-     * @var string
-     */
-    public $productId;
-    /**
-     * @var string
-     */
-    public $quantity;
-    /**
-     * @param string
-     */
-    public function setLineItemId($lineItemId)
+namespace Google\Service\ShoppingContent {
+    class OrderreturnsLineItem extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $lineItemId;
+        /**
+         * @var string
+         */
+        public $productId;
+        /**
+         * @var string
+         */
+        public $quantity;
+        /**
+         * @param string
+         */
+        public function setLineItemId($lineItemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLineItemId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setQuantity($quantity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuantity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderreturnsLineItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLineItemId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setQuantity($quantity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuantity()
+    class Google_Service_ShoppingContent_OrderreturnsLineItem extends \Google\Service\ShoppingContent\OrderreturnsLineItem
     {
     }
 }

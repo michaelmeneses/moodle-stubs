@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class GenerateAutonomousDatabaseWalletResponse extends \Google\Model
-{
-    /**
-     * Output only. The base64 encoded wallet files.
-     *
-     * @var string
-     */
-    public $archiveContent;
-    /**
-     * Output only. The base64 encoded wallet files.
-     *
-     * @param string $archiveContent
-     */
-    public function setArchiveContent($archiveContent)
+namespace Google\Service\OracleDatabase {
+    class GenerateAutonomousDatabaseWalletResponse extends \Google\Model
     {
+        /**
+         * Output only. The base64 encoded wallet files.
+         *
+         * @var string
+         */
+        public $archiveContent;
+        /**
+         * Output only. The base64 encoded wallet files.
+         *
+         * @param string $archiveContent
+         */
+        public function setArchiveContent($archiveContent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArchiveContent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OracleDatabase\GenerateAutonomousDatabaseWalletResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArchiveContent()
+    class Google_Service_OracleDatabase_GenerateAutonomousDatabaseWalletResponse extends \Google\Service\OracleDatabase\GenerateAutonomousDatabaseWalletResponse
     {
     }
 }

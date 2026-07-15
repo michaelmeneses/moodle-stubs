@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class ComputeTimeCursorRequest extends \Google\Model
-{
-    /**
-     * Required. The partition for which we should compute the cursor.
-     *
-     * @var string
-     */
-    public $partition;
-    protected $targetType = TimeTarget::class;
-    protected $targetDataType = '';
-    /**
-     * Required. The partition for which we should compute the cursor.
-     *
-     * @param string $partition
-     */
-    public function setPartition($partition)
+namespace Google\Service\PubsubLite {
+    class ComputeTimeCursorRequest extends \Google\Model
     {
+        /**
+         * Required. The partition for which we should compute the cursor.
+         *
+         * @var string
+         */
+        public $partition;
+        protected $targetType = TimeTarget::class;
+        protected $targetDataType = '';
+        /**
+         * Required. The partition for which we should compute the cursor.
+         *
+         * @param string $partition
+         */
+        public function setPartition($partition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartition()
+        {
+        }
+        /**
+         * Required. The target publish or event time. Specifying a future time will
+         * return an unset cursor.
+         *
+         * @param TimeTarget $target
+         */
+        public function setTarget(TimeTarget $target)
+        {
+        }
+        /**
+         * @return TimeTarget
+         */
+        public function getTarget()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PubsubLite\ComputeTimeCursorRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPartition()
-    {
-    }
-    /**
-     * Required. The target publish or event time. Specifying a future time will
-     * return an unset cursor.
-     *
-     * @param TimeTarget $target
-     */
-    public function setTarget(TimeTarget $target)
-    {
-    }
-    /**
-     * @return TimeTarget
-     */
-    public function getTarget()
+    class Google_Service_PubsubLite_ComputeTimeCursorRequest extends \Google\Service\PubsubLite\ComputeTimeCursorRequest
     {
     }
 }

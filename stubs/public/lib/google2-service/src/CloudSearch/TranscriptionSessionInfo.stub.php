@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class TranscriptionSessionInfo extends \Google\Model
-{
-    protected $sessionStateInfoType = SessionStateInfo::class;
-    protected $sessionStateInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $transcriptionSessionId;
-    /**
-     * @param SessionStateInfo
-     */
-    public function setSessionStateInfo(SessionStateInfo $sessionStateInfo)
+namespace Google\Service\CloudSearch {
+    class TranscriptionSessionInfo extends \Google\Model
     {
+        protected $sessionStateInfoType = SessionStateInfo::class;
+        protected $sessionStateInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $transcriptionSessionId;
+        /**
+         * @param SessionStateInfo
+         */
+        public function setSessionStateInfo(SessionStateInfo $sessionStateInfo)
+        {
+        }
+        /**
+         * @return SessionStateInfo
+         */
+        public function getSessionStateInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTranscriptionSessionId($transcriptionSessionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTranscriptionSessionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SessionStateInfo
+     * Runtime class alias of \Google\Service\CloudSearch\TranscriptionSessionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSessionStateInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTranscriptionSessionId($transcriptionSessionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTranscriptionSessionId()
+    class Google_Service_CloudSearch_TranscriptionSessionInfo extends \Google\Service\CloudSearch\TranscriptionSessionInfo
     {
     }
 }

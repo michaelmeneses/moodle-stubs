@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1RelatedAccountGroup extends \Google\Model
-{
-    /**
-     * Required. Identifier. The resource name for the related account group in
-     * the format
-     * `projects/{project}/relatedaccountgroups/{related_account_group}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Identifier. The resource name for the related account group in
-     * the format
-     * `projects/{project}/relatedaccountgroups/{related_account_group}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1RelatedAccountGroup extends \Google\Model
     {
+        /**
+         * Required. Identifier. The resource name for the related account group in
+         * the format
+         * `projects/{project}/relatedaccountgroups/{related_account_group}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Identifier. The resource name for the related account group in
+         * the format
+         * `projects/{project}/relatedaccountgroups/{related_account_group}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1RelatedAccountGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1RelatedAccountGroup extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1RelatedAccountGroup
     {
     }
 }

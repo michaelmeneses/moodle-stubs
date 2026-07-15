@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1ChromeAppSiteAccess extends \Google\Model
-{
-    /**
-     * Output only. This can contain very specific hosts, or patterns like "*.com"
-     * for instance.
-     *
-     * @var string
-     */
-    public $hostMatch;
-    /**
-     * Output only. This can contain very specific hosts, or patterns like "*.com"
-     * for instance.
-     *
-     * @param string $hostMatch
-     */
-    public function setHostMatch($hostMatch)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1ChromeAppSiteAccess extends \Google\Model
     {
+        /**
+         * Output only. This can contain very specific hosts, or patterns like "*.com"
+         * for instance.
+         *
+         * @var string
+         */
+        public $hostMatch;
+        /**
+         * Output only. This can contain very specific hosts, or patterns like "*.com"
+         * for instance.
+         *
+         * @param string $hostMatch
+         */
+        public function setHostMatch($hostMatch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostMatch()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1ChromeAppSiteAccess registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHostMatch()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1ChromeAppSiteAccess extends \Google\Service\ChromeManagement\GoogleChromeManagementV1ChromeAppSiteAccess
     {
     }
 }

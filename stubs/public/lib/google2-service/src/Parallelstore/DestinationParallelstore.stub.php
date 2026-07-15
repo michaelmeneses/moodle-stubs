@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Parallelstore;
-
-class DestinationParallelstore extends \Google\Model
-{
-    /**
-     * Optional. Root directory path to the Paralellstore filesystem, starting
-     * with `/`. Defaults to `/` if unset.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Optional. Root directory path to the Paralellstore filesystem, starting
-     * with `/`. Defaults to `/` if unset.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
+namespace Google\Service\Parallelstore {
+    class DestinationParallelstore extends \Google\Model
     {
+        /**
+         * Optional. Root directory path to the Paralellstore filesystem, starting
+         * with `/`. Defaults to `/` if unset.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Optional. Root directory path to the Paralellstore filesystem, starting
+         * with `/`. Defaults to `/` if unset.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Parallelstore\DestinationParallelstore registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPath()
+    class Google_Service_Parallelstore_DestinationParallelstore extends \Google\Service\Parallelstore\DestinationParallelstore
     {
     }
 }

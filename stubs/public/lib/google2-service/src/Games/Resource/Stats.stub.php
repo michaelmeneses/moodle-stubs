@@ -21,27 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games\Resource;
-
-/**
- * The "stats" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gamesService = new Google\Service\Games(...);
- *   $stats = $gamesService->stats;
- *  </code>
- */
-class Stats extends \Google\Service\Resource
-{
+namespace Google\Service\Games\Resource {
+    use Google\Service\Games\StatsResponse;
     /**
-     * Returns engagement and spend statistics in this application for the currently
-     * authenticated user. (stats.get)
-     *
-     * @param array $optParams Optional parameters.
-     * @return StatsResponse
-     * @throws \Google\Service\Exception
+     * The "stats" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gamesService = new Google\Service\Games(...);
+     *   $stats = $gamesService->stats;
+     *  </code>
      */
-    public function get($optParams = [])
+    class Stats extends \Google\Service\Resource
+    {
+        /**
+         * Returns engagement and spend statistics in this application for the currently
+         * authenticated user. (stats.get)
+         *
+         * @param array $optParams Optional parameters.
+         * @return StatsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function get($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Games\Resource\Stats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Games_Resource_Stats extends \Google\Service\Games\Resource\Stats
     {
     }
 }

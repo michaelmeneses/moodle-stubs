@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class RepricingRuleCostOfGoodsSaleRule extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $percentageDelta;
-    /**
-     * @var string
-     */
-    public $priceDelta;
-    /**
-     * @param int
-     */
-    public function setPercentageDelta($percentageDelta)
+namespace Google\Service\ShoppingContent {
+    class RepricingRuleCostOfGoodsSaleRule extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $percentageDelta;
+        /**
+         * @var string
+         */
+        public $priceDelta;
+        /**
+         * @param int
+         */
+        public function setPercentageDelta($percentageDelta)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPercentageDelta()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPriceDelta($priceDelta)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPriceDelta()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\ShoppingContent\RepricingRuleCostOfGoodsSaleRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPercentageDelta()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPriceDelta($priceDelta)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPriceDelta()
+    class Google_Service_ShoppingContent_RepricingRuleCostOfGoodsSaleRule extends \Google\Service\ShoppingContent\RepricingRuleCostOfGoodsSaleRule
     {
     }
 }

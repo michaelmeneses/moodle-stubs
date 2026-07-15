@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Chromewebstore;
-
-class DiffUploadRequest extends \Google\Model
-{
-    protected $checksumsInfoType = CompositeMedia::class;
-    protected $checksumsInfoDataType = '';
-    protected $objectInfoType = CompositeMedia::class;
-    protected $objectInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $objectVersion;
-    /**
-     * @param CompositeMedia
-     */
-    public function setChecksumsInfo(CompositeMedia $checksumsInfo)
+namespace Google\Service\Chromewebstore {
+    class DiffUploadRequest extends \Google\Model
     {
+        protected $checksumsInfoType = CompositeMedia::class;
+        protected $checksumsInfoDataType = '';
+        protected $objectInfoType = CompositeMedia::class;
+        protected $objectInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $objectVersion;
+        /**
+         * @param CompositeMedia
+         */
+        public function setChecksumsInfo(CompositeMedia $checksumsInfo)
+        {
+        }
+        /**
+         * @return CompositeMedia
+         */
+        public function getChecksumsInfo()
+        {
+        }
+        /**
+         * @param CompositeMedia
+         */
+        public function setObjectInfo(CompositeMedia $objectInfo)
+        {
+        }
+        /**
+         * @return CompositeMedia
+         */
+        public function getObjectInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setObjectVersion($objectVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CompositeMedia
+     * Runtime class alias of \Google\Service\Chromewebstore\DiffUploadRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChecksumsInfo()
-    {
-    }
-    /**
-     * @param CompositeMedia
-     */
-    public function setObjectInfo(CompositeMedia $objectInfo)
-    {
-    }
-    /**
-     * @return CompositeMedia
-     */
-    public function getObjectInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setObjectVersion($objectVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectVersion()
+    class Google_Service_Chromewebstore_DiffUploadRequest extends \Google\Service\Chromewebstore\DiffUploadRequest
     {
     }
 }

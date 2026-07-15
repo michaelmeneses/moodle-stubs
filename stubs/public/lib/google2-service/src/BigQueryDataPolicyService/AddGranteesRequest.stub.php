@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryDataPolicyService;
-
-class AddGranteesRequest extends \Google\Collection
-{
-    protected $collection_key = 'grantees';
-    /**
-     * Required. IAM principal that should be granted Fine Grained Access to the
-     * underlying data goverened by the data policy. The target data policy is
-     * determined by the `data_policy` field. Uses the [IAM V2 principal
-     * syntax](https://cloud.google.com/iam/docs/principal-identifiers#v2).
-     * Supported principal types: * User * Group * Service account
-     *
-     * @var string[]
-     */
-    public $grantees;
-    /**
-     * Required. IAM principal that should be granted Fine Grained Access to the
-     * underlying data goverened by the data policy. The target data policy is
-     * determined by the `data_policy` field. Uses the [IAM V2 principal
-     * syntax](https://cloud.google.com/iam/docs/principal-identifiers#v2).
-     * Supported principal types: * User * Group * Service account
-     *
-     * @param string[] $grantees
-     */
-    public function setGrantees($grantees)
+namespace Google\Service\BigQueryDataPolicyService {
+    class AddGranteesRequest extends \Google\Collection
     {
+        protected $collection_key = 'grantees';
+        /**
+         * Required. IAM principal that should be granted Fine Grained Access to the
+         * underlying data goverened by the data policy. The target data policy is
+         * determined by the `data_policy` field. Uses the [IAM V2 principal
+         * syntax](https://cloud.google.com/iam/docs/principal-identifiers#v2).
+         * Supported principal types: * User * Group * Service account
+         *
+         * @var string[]
+         */
+        public $grantees;
+        /**
+         * Required. IAM principal that should be granted Fine Grained Access to the
+         * underlying data goverened by the data policy. The target data policy is
+         * determined by the `data_policy` field. Uses the [IAM V2 principal
+         * syntax](https://cloud.google.com/iam/docs/principal-identifiers#v2).
+         * Supported principal types: * User * Group * Service account
+         *
+         * @param string[] $grantees
+         */
+        public function setGrantees($grantees)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getGrantees()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\BigQueryDataPolicyService\AddGranteesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGrantees()
+    class Google_Service_BigQueryDataPolicyService_AddGranteesRequest extends \Google\Service\BigQueryDataPolicyService\AddGranteesRequest
     {
     }
 }

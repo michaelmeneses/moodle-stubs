@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1AdvancedSettingsLoggingSettings extends \Google\Model
-{
-    /**
-     * Enables consent-based end-user input redaction, if true, a pre-defined
-     * session parameter `$session.params.conversation-redaction` will be used to
-     * determine if the utterance should be redacted.
-     *
-     * @var bool
-     */
-    public $enableConsentBasedRedaction;
-    /**
-     * Enables DF Interaction logging.
-     *
-     * @var bool
-     */
-    public $enableInteractionLogging;
-    /**
-     * Enables Google Cloud Logging.
-     *
-     * @var bool
-     */
-    public $enableStackdriverLogging;
-    /**
-     * Enables consent-based end-user input redaction, if true, a pre-defined
-     * session parameter `$session.params.conversation-redaction` will be used to
-     * determine if the utterance should be redacted.
-     *
-     * @param bool $enableConsentBasedRedaction
-     */
-    public function setEnableConsentBasedRedaction($enableConsentBasedRedaction)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1AdvancedSettingsLoggingSettings extends \Google\Model
     {
+        /**
+         * Enables consent-based end-user input redaction, if true, a pre-defined
+         * session parameter `$session.params.conversation-redaction` will be used to
+         * determine if the utterance should be redacted.
+         *
+         * @var bool
+         */
+        public $enableConsentBasedRedaction;
+        /**
+         * Enables DF Interaction logging.
+         *
+         * @var bool
+         */
+        public $enableInteractionLogging;
+        /**
+         * Enables Google Cloud Logging.
+         *
+         * @var bool
+         */
+        public $enableStackdriverLogging;
+        /**
+         * Enables consent-based end-user input redaction, if true, a pre-defined
+         * session parameter `$session.params.conversation-redaction` will be used to
+         * determine if the utterance should be redacted.
+         *
+         * @param bool $enableConsentBasedRedaction
+         */
+        public function setEnableConsentBasedRedaction($enableConsentBasedRedaction)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableConsentBasedRedaction()
+        {
+        }
+        /**
+         * Enables DF Interaction logging.
+         *
+         * @param bool $enableInteractionLogging
+         */
+        public function setEnableInteractionLogging($enableInteractionLogging)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableInteractionLogging()
+        {
+        }
+        /**
+         * Enables Google Cloud Logging.
+         *
+         * @param bool $enableStackdriverLogging
+         */
+        public function setEnableStackdriverLogging($enableStackdriverLogging)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableStackdriverLogging()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1AdvancedSettingsLoggingSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableConsentBasedRedaction()
-    {
-    }
-    /**
-     * Enables DF Interaction logging.
-     *
-     * @param bool $enableInteractionLogging
-     */
-    public function setEnableInteractionLogging($enableInteractionLogging)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableInteractionLogging()
-    {
-    }
-    /**
-     * Enables Google Cloud Logging.
-     *
-     * @param bool $enableStackdriverLogging
-     */
-    public function setEnableStackdriverLogging($enableStackdriverLogging)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableStackdriverLogging()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1AdvancedSettingsLoggingSettings extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1AdvancedSettingsLoggingSettings
     {
     }
 }

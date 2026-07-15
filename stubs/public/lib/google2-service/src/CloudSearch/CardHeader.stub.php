@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class CardHeader extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $imageAltText;
-    /**
-     * @var string
-     */
-    public $imageStyle;
-    /**
-     * @var string
-     */
-    public $imageUrl;
-    /**
-     * @var string
-     */
-    public $subtitle;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @param string
-     */
-    public function setImageAltText($imageAltText)
+namespace Google\Service\CloudSearch {
+    class CardHeader extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $imageAltText;
+        /**
+         * @var string
+         */
+        public $imageStyle;
+        /**
+         * @var string
+         */
+        public $imageUrl;
+        /**
+         * @var string
+         */
+        public $subtitle;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @param string
+         */
+        public function setImageAltText($imageAltText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageAltText()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setImageStyle($imageStyle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageStyle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setImageUrl($imageUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSubtitle($subtitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubtitle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\CardHeader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImageAltText()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setImageStyle($imageStyle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageStyle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setImageUrl($imageUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSubtitle($subtitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubtitle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_CloudSearch_CardHeader extends \Google\Service\CloudSearch\CardHeader
     {
     }
 }

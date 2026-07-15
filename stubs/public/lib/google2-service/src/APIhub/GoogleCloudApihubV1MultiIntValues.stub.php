@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1MultiIntValues extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * Optional. The config variable value of data type multi int.
-     *
-     * @var int[]
-     */
-    public $values;
-    /**
-     * Optional. The config variable value of data type multi int.
-     *
-     * @param int[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1MultiIntValues extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * Optional. The config variable value of data type multi int.
+         *
+         * @var int[]
+         */
+        public $values;
+        /**
+         * Optional. The config variable value of data type multi int.
+         *
+         * @param int[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int[]
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1MultiIntValues registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_APIhub_GoogleCloudApihubV1MultiIntValues extends \Google\Service\APIhub\GoogleCloudApihubV1MultiIntValues
     {
     }
 }

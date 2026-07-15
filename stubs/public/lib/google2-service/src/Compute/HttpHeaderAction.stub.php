@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class HttpHeaderAction extends \Google\Collection
-{
-    protected $collection_key = 'responseHeadersToRemove';
-    protected $requestHeadersToAddType = HttpHeaderOption::class;
-    protected $requestHeadersToAddDataType = 'array';
-    /**
-     * A list of header names for headers that need to be removed from the request
-     * before forwarding the request to the backendService.
-     *
-     * @var string[]
-     */
-    public $requestHeadersToRemove;
-    protected $responseHeadersToAddType = HttpHeaderOption::class;
-    protected $responseHeadersToAddDataType = 'array';
-    /**
-     * A list of header names for headers that need to be removed from the
-     * response before sending the response back to the client.
-     *
-     * @var string[]
-     */
-    public $responseHeadersToRemove;
-    /**
-     * Headers to add to a matching request before forwarding the request to
-     * thebackendService.
-     *
-     * @param HttpHeaderOption[] $requestHeadersToAdd
-     */
-    public function setRequestHeadersToAdd($requestHeadersToAdd)
+namespace Google\Service\Compute {
+    class HttpHeaderAction extends \Google\Collection
     {
+        protected $collection_key = 'responseHeadersToRemove';
+        protected $requestHeadersToAddType = HttpHeaderOption::class;
+        protected $requestHeadersToAddDataType = 'array';
+        /**
+         * A list of header names for headers that need to be removed from the request
+         * before forwarding the request to the backendService.
+         *
+         * @var string[]
+         */
+        public $requestHeadersToRemove;
+        protected $responseHeadersToAddType = HttpHeaderOption::class;
+        protected $responseHeadersToAddDataType = 'array';
+        /**
+         * A list of header names for headers that need to be removed from the
+         * response before sending the response back to the client.
+         *
+         * @var string[]
+         */
+        public $responseHeadersToRemove;
+        /**
+         * Headers to add to a matching request before forwarding the request to
+         * thebackendService.
+         *
+         * @param HttpHeaderOption[] $requestHeadersToAdd
+         */
+        public function setRequestHeadersToAdd($requestHeadersToAdd)
+        {
+        }
+        /**
+         * @return HttpHeaderOption[]
+         */
+        public function getRequestHeadersToAdd()
+        {
+        }
+        /**
+         * A list of header names for headers that need to be removed from the request
+         * before forwarding the request to the backendService.
+         *
+         * @param string[] $requestHeadersToRemove
+         */
+        public function setRequestHeadersToRemove($requestHeadersToRemove)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRequestHeadersToRemove()
+        {
+        }
+        /**
+         * Headers to add the response before sending the response back to the client.
+         *
+         * @param HttpHeaderOption[] $responseHeadersToAdd
+         */
+        public function setResponseHeadersToAdd($responseHeadersToAdd)
+        {
+        }
+        /**
+         * @return HttpHeaderOption[]
+         */
+        public function getResponseHeadersToAdd()
+        {
+        }
+        /**
+         * A list of header names for headers that need to be removed from the
+         * response before sending the response back to the client.
+         *
+         * @param string[] $responseHeadersToRemove
+         */
+        public function setResponseHeadersToRemove($responseHeadersToRemove)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResponseHeadersToRemove()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HttpHeaderOption[]
+     * Runtime class alias of \Google\Service\Compute\HttpHeaderAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequestHeadersToAdd()
-    {
-    }
-    /**
-     * A list of header names for headers that need to be removed from the request
-     * before forwarding the request to the backendService.
-     *
-     * @param string[] $requestHeadersToRemove
-     */
-    public function setRequestHeadersToRemove($requestHeadersToRemove)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRequestHeadersToRemove()
-    {
-    }
-    /**
-     * Headers to add the response before sending the response back to the client.
-     *
-     * @param HttpHeaderOption[] $responseHeadersToAdd
-     */
-    public function setResponseHeadersToAdd($responseHeadersToAdd)
-    {
-    }
-    /**
-     * @return HttpHeaderOption[]
-     */
-    public function getResponseHeadersToAdd()
-    {
-    }
-    /**
-     * A list of header names for headers that need to be removed from the
-     * response before sending the response back to the client.
-     *
-     * @param string[] $responseHeadersToRemove
-     */
-    public function setResponseHeadersToRemove($responseHeadersToRemove)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResponseHeadersToRemove()
+    class Google_Service_Compute_HttpHeaderAction extends \Google\Service\Compute\HttpHeaderAction
     {
     }
 }

@@ -29,6 +29,7 @@
  */
 namespace core_cohort\external;
 
+use renderer_base;
 /**
  * Class for exporting a cohort summary from an stdClass.
  *

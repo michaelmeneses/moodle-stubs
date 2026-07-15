@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class InstancesAcquireSsrsLeaseRequest extends \Google\Model
-{
-    protected $acquireSsrsLeaseContextType = AcquireSsrsLeaseContext::class;
-    protected $acquireSsrsLeaseContextDataType = '';
-    /**
-     * Contains details about the acquire SSRS lease operation.
-     *
-     * @param AcquireSsrsLeaseContext $acquireSsrsLeaseContext
-     */
-    public function setAcquireSsrsLeaseContext(AcquireSsrsLeaseContext $acquireSsrsLeaseContext)
+namespace Google\Service\SQLAdmin {
+    class InstancesAcquireSsrsLeaseRequest extends \Google\Model
     {
+        protected $acquireSsrsLeaseContextType = AcquireSsrsLeaseContext::class;
+        protected $acquireSsrsLeaseContextDataType = '';
+        /**
+         * Contains details about the acquire SSRS lease operation.
+         *
+         * @param AcquireSsrsLeaseContext $acquireSsrsLeaseContext
+         */
+        public function setAcquireSsrsLeaseContext(AcquireSsrsLeaseContext $acquireSsrsLeaseContext)
+        {
+        }
+        /**
+         * @return AcquireSsrsLeaseContext
+         */
+        public function getAcquireSsrsLeaseContext()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AcquireSsrsLeaseContext
+     * Runtime class alias of \Google\Service\SQLAdmin\InstancesAcquireSsrsLeaseRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcquireSsrsLeaseContext()
+    class Google_Service_SQLAdmin_InstancesAcquireSsrsLeaseRequest extends \Google\Service\SQLAdmin\InstancesAcquireSsrsLeaseRequest
     {
     }
 }

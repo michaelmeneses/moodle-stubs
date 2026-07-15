@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace filter_data;
 
+use core_filters\filter_object;
 /**
  * Filter providing automatic linking to database activity entries when found inside every Moodle text.
  *

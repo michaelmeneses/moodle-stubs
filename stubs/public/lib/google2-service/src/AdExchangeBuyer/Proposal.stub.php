@@ -21,219 +21,228 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class Proposal extends \Google\Collection
-{
-    protected $collection_key = 'sellerContacts';
-    protected $billedBuyerType = Buyer::class;
-    protected $billedBuyerDataType = '';
-    protected $buyerType = Buyer::class;
-    protected $buyerDataType = '';
-    protected $buyerContactsType = ContactInformation::class;
-    protected $buyerContactsDataType = 'array';
-    protected $buyerPrivateDataType = PrivateData::class;
-    protected $buyerPrivateDataDataType = '';
-    public $dbmAdvertiserIds;
-    public $hasBuyerSignedOff;
-    public $hasSellerSignedOff;
-    public $inventorySource;
-    public $isRenegotiating;
-    public $isSetupComplete;
-    public $kind;
-    protected $labelsType = MarketplaceLabel::class;
-    protected $labelsDataType = 'array';
-    public $lastUpdaterOrCommentorRole;
-    public $name;
-    public $negotiationId;
-    public $originatorRole;
-    public $privateAuctionId;
-    public $proposalId;
-    public $proposalState;
-    public $revisionNumber;
-    public $revisionTimeMs;
-    protected $sellerType = Seller::class;
-    protected $sellerDataType = '';
-    protected $sellerContactsType = ContactInformation::class;
-    protected $sellerContactsDataType = 'array';
+namespace Google\Service\AdExchangeBuyer {
+    class Proposal extends \Google\Collection
+    {
+        protected $collection_key = 'sellerContacts';
+        protected $billedBuyerType = Buyer::class;
+        protected $billedBuyerDataType = '';
+        protected $buyerType = Buyer::class;
+        protected $buyerDataType = '';
+        protected $buyerContactsType = ContactInformation::class;
+        protected $buyerContactsDataType = 'array';
+        protected $buyerPrivateDataType = PrivateData::class;
+        protected $buyerPrivateDataDataType = '';
+        public $dbmAdvertiserIds;
+        public $hasBuyerSignedOff;
+        public $hasSellerSignedOff;
+        public $inventorySource;
+        public $isRenegotiating;
+        public $isSetupComplete;
+        public $kind;
+        protected $labelsType = MarketplaceLabel::class;
+        protected $labelsDataType = 'array';
+        public $lastUpdaterOrCommentorRole;
+        public $name;
+        public $negotiationId;
+        public $originatorRole;
+        public $privateAuctionId;
+        public $proposalId;
+        public $proposalState;
+        public $revisionNumber;
+        public $revisionTimeMs;
+        protected $sellerType = Seller::class;
+        protected $sellerDataType = '';
+        protected $sellerContactsType = ContactInformation::class;
+        protected $sellerContactsDataType = 'array';
+        /**
+         * @param Buyer
+         */
+        public function setBilledBuyer(Buyer $billedBuyer)
+        {
+        }
+        /**
+         * @return Buyer
+         */
+        public function getBilledBuyer()
+        {
+        }
+        /**
+         * @param Buyer
+         */
+        public function setBuyer(Buyer $buyer)
+        {
+        }
+        /**
+         * @return Buyer
+         */
+        public function getBuyer()
+        {
+        }
+        /**
+         * @param ContactInformation[]
+         */
+        public function setBuyerContacts($buyerContacts)
+        {
+        }
+        /**
+         * @return ContactInformation[]
+         */
+        public function getBuyerContacts()
+        {
+        }
+        /**
+         * @param PrivateData
+         */
+        public function setBuyerPrivateData(PrivateData $buyerPrivateData)
+        {
+        }
+        /**
+         * @return PrivateData
+         */
+        public function getBuyerPrivateData()
+        {
+        }
+        public function setDbmAdvertiserIds($dbmAdvertiserIds)
+        {
+        }
+        public function getDbmAdvertiserIds()
+        {
+        }
+        public function setHasBuyerSignedOff($hasBuyerSignedOff)
+        {
+        }
+        public function getHasBuyerSignedOff()
+        {
+        }
+        public function setHasSellerSignedOff($hasSellerSignedOff)
+        {
+        }
+        public function getHasSellerSignedOff()
+        {
+        }
+        public function setInventorySource($inventorySource)
+        {
+        }
+        public function getInventorySource()
+        {
+        }
+        public function setIsRenegotiating($isRenegotiating)
+        {
+        }
+        public function getIsRenegotiating()
+        {
+        }
+        public function setIsSetupComplete($isSetupComplete)
+        {
+        }
+        public function getIsSetupComplete()
+        {
+        }
+        public function setKind($kind)
+        {
+        }
+        public function getKind()
+        {
+        }
+        /**
+         * @param MarketplaceLabel[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return MarketplaceLabel[]
+         */
+        public function getLabels()
+        {
+        }
+        public function setLastUpdaterOrCommentorRole($lastUpdaterOrCommentorRole)
+        {
+        }
+        public function getLastUpdaterOrCommentorRole()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        public function setNegotiationId($negotiationId)
+        {
+        }
+        public function getNegotiationId()
+        {
+        }
+        public function setOriginatorRole($originatorRole)
+        {
+        }
+        public function getOriginatorRole()
+        {
+        }
+        public function setPrivateAuctionId($privateAuctionId)
+        {
+        }
+        public function getPrivateAuctionId()
+        {
+        }
+        public function setProposalId($proposalId)
+        {
+        }
+        public function getProposalId()
+        {
+        }
+        public function setProposalState($proposalState)
+        {
+        }
+        public function getProposalState()
+        {
+        }
+        public function setRevisionNumber($revisionNumber)
+        {
+        }
+        public function getRevisionNumber()
+        {
+        }
+        public function setRevisionTimeMs($revisionTimeMs)
+        {
+        }
+        public function getRevisionTimeMs()
+        {
+        }
+        /**
+         * @param Seller
+         */
+        public function setSeller(Seller $seller)
+        {
+        }
+        /**
+         * @return Seller
+         */
+        public function getSeller()
+        {
+        }
+        /**
+         * @param ContactInformation[]
+         */
+        public function setSellerContacts($sellerContacts)
+        {
+        }
+        /**
+         * @return ContactInformation[]
+         */
+        public function getSellerContacts()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param Buyer
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\Proposal registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setBilledBuyer(Buyer $billedBuyer)
-    {
-    }
-    /**
-     * @return Buyer
-     */
-    public function getBilledBuyer()
-    {
-    }
-    /**
-     * @param Buyer
-     */
-    public function setBuyer(Buyer $buyer)
-    {
-    }
-    /**
-     * @return Buyer
-     */
-    public function getBuyer()
-    {
-    }
-    /**
-     * @param ContactInformation[]
-     */
-    public function setBuyerContacts($buyerContacts)
-    {
-    }
-    /**
-     * @return ContactInformation[]
-     */
-    public function getBuyerContacts()
-    {
-    }
-    /**
-     * @param PrivateData
-     */
-    public function setBuyerPrivateData(PrivateData $buyerPrivateData)
-    {
-    }
-    /**
-     * @return PrivateData
-     */
-    public function getBuyerPrivateData()
-    {
-    }
-    public function setDbmAdvertiserIds($dbmAdvertiserIds)
-    {
-    }
-    public function getDbmAdvertiserIds()
-    {
-    }
-    public function setHasBuyerSignedOff($hasBuyerSignedOff)
-    {
-    }
-    public function getHasBuyerSignedOff()
-    {
-    }
-    public function setHasSellerSignedOff($hasSellerSignedOff)
-    {
-    }
-    public function getHasSellerSignedOff()
-    {
-    }
-    public function setInventorySource($inventorySource)
-    {
-    }
-    public function getInventorySource()
-    {
-    }
-    public function setIsRenegotiating($isRenegotiating)
-    {
-    }
-    public function getIsRenegotiating()
-    {
-    }
-    public function setIsSetupComplete($isSetupComplete)
-    {
-    }
-    public function getIsSetupComplete()
-    {
-    }
-    public function setKind($kind)
-    {
-    }
-    public function getKind()
-    {
-    }
-    /**
-     * @param MarketplaceLabel[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return MarketplaceLabel[]
-     */
-    public function getLabels()
-    {
-    }
-    public function setLastUpdaterOrCommentorRole($lastUpdaterOrCommentorRole)
-    {
-    }
-    public function getLastUpdaterOrCommentorRole()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    public function setNegotiationId($negotiationId)
-    {
-    }
-    public function getNegotiationId()
-    {
-    }
-    public function setOriginatorRole($originatorRole)
-    {
-    }
-    public function getOriginatorRole()
-    {
-    }
-    public function setPrivateAuctionId($privateAuctionId)
-    {
-    }
-    public function getPrivateAuctionId()
-    {
-    }
-    public function setProposalId($proposalId)
-    {
-    }
-    public function getProposalId()
-    {
-    }
-    public function setProposalState($proposalState)
-    {
-    }
-    public function getProposalState()
-    {
-    }
-    public function setRevisionNumber($revisionNumber)
-    {
-    }
-    public function getRevisionNumber()
-    {
-    }
-    public function setRevisionTimeMs($revisionTimeMs)
-    {
-    }
-    public function getRevisionTimeMs()
-    {
-    }
-    /**
-     * @param Seller
-     */
-    public function setSeller(Seller $seller)
-    {
-    }
-    /**
-     * @return Seller
-     */
-    public function getSeller()
-    {
-    }
-    /**
-     * @param ContactInformation[]
-     */
-    public function setSellerContacts($sellerContacts)
-    {
-    }
-    /**
-     * @return ContactInformation[]
-     */
-    public function getSellerContacts()
+    class Google_Service_AdExchangeBuyer_Proposal extends \Google\Service\AdExchangeBuyer\Proposal
     {
     }
 }

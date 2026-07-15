@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2VertexDatasetRegexes extends \Google\Collection
-{
-    protected $collection_key = 'patterns';
-    protected $patternsType = GooglePrivacyDlpV2VertexDatasetRegex::class;
-    protected $patternsDataType = 'array';
-    /**
-     * Required. The group of regular expression patterns to match against one or
-     * more datasets. Maximum of 100 entries. The sum of the lengths of all
-     * regular expressions can't exceed 10 KiB.
-     *
-     * @param GooglePrivacyDlpV2VertexDatasetRegex[] $patterns
-     */
-    public function setPatterns($patterns)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2VertexDatasetRegexes extends \Google\Collection
     {
+        protected $collection_key = 'patterns';
+        protected $patternsType = GooglePrivacyDlpV2VertexDatasetRegex::class;
+        protected $patternsDataType = 'array';
+        /**
+         * Required. The group of regular expression patterns to match against one or
+         * more datasets. Maximum of 100 entries. The sum of the lengths of all
+         * regular expressions can't exceed 10 KiB.
+         *
+         * @param GooglePrivacyDlpV2VertexDatasetRegex[] $patterns
+         */
+        public function setPatterns($patterns)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2VertexDatasetRegex[]
+         */
+        public function getPatterns()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2VertexDatasetRegex[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2VertexDatasetRegexes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPatterns()
+    class Google_Service_DLP_GooglePrivacyDlpV2VertexDatasetRegexes extends \Google\Service\DLP\GooglePrivacyDlpV2VertexDatasetRegexes
     {
     }
 }

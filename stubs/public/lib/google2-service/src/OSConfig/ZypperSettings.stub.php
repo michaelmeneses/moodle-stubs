@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class ZypperSettings extends \Google\Collection
-{
-    protected $collection_key = 'severities';
-    /**
-     * @var string[]
-     */
-    public $categories;
-    /**
-     * @var string[]
-     */
-    public $excludes;
-    /**
-     * @var string[]
-     */
-    public $exclusivePatches;
-    /**
-     * @var string[]
-     */
-    public $severities;
-    /**
-     * @var bool
-     */
-    public $withOptional;
-    /**
-     * @var bool
-     */
-    public $withUpdate;
-    /**
-     * @param string[]
-     */
-    public function setCategories($categories)
+namespace Google\Service\OSConfig {
+    class ZypperSettings extends \Google\Collection
     {
+        protected $collection_key = 'severities';
+        /**
+         * @var string[]
+         */
+        public $categories;
+        /**
+         * @var string[]
+         */
+        public $excludes;
+        /**
+         * @var string[]
+         */
+        public $exclusivePatches;
+        /**
+         * @var string[]
+         */
+        public $severities;
+        /**
+         * @var bool
+         */
+        public $withOptional;
+        /**
+         * @var bool
+         */
+        public $withUpdate;
+        /**
+         * @param string[]
+         */
+        public function setCategories($categories)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCategories()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setExcludes($excludes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludes()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setExclusivePatches($exclusivePatches)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExclusivePatches()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setSeverities($severities)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSeverities()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setWithOptional($withOptional)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWithOptional()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setWithUpdate($withUpdate)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWithUpdate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\OSConfig\ZypperSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategories()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setExcludes($excludes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExcludes()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setExclusivePatches($exclusivePatches)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExclusivePatches()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setSeverities($severities)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSeverities()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setWithOptional($withOptional)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWithOptional()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setWithUpdate($withUpdate)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWithUpdate()
+    class Google_Service_OSConfig_ZypperSettings extends \Google\Service\OSConfig\ZypperSettings
     {
     }
 }

@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class GoogleSecuritySafebrowsingV4ThreatEntrySet extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $compressionType;
-    protected $rawHashesType = GoogleSecuritySafebrowsingV4RawHashes::class;
-    protected $rawHashesDataType = '';
-    protected $rawIndicesType = GoogleSecuritySafebrowsingV4RawIndices::class;
-    protected $rawIndicesDataType = '';
-    protected $riceHashesType = GoogleSecuritySafebrowsingV4RiceDeltaEncoding::class;
-    protected $riceHashesDataType = '';
-    protected $riceIndicesType = GoogleSecuritySafebrowsingV4RiceDeltaEncoding::class;
-    protected $riceIndicesDataType = '';
-    /**
-     * @param string
-     */
-    public function setCompressionType($compressionType)
+namespace Google\Service\Safebrowsing {
+    class GoogleSecuritySafebrowsingV4ThreatEntrySet extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $compressionType;
+        protected $rawHashesType = GoogleSecuritySafebrowsingV4RawHashes::class;
+        protected $rawHashesDataType = '';
+        protected $rawIndicesType = GoogleSecuritySafebrowsingV4RawIndices::class;
+        protected $rawIndicesDataType = '';
+        protected $riceHashesType = GoogleSecuritySafebrowsingV4RiceDeltaEncoding::class;
+        protected $riceHashesDataType = '';
+        protected $riceIndicesType = GoogleSecuritySafebrowsingV4RiceDeltaEncoding::class;
+        protected $riceIndicesDataType = '';
+        /**
+         * @param string
+         */
+        public function setCompressionType($compressionType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompressionType()
+        {
+        }
+        /**
+         * @param GoogleSecuritySafebrowsingV4RawHashes
+         */
+        public function setRawHashes(GoogleSecuritySafebrowsingV4RawHashes $rawHashes)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV4RawHashes
+         */
+        public function getRawHashes()
+        {
+        }
+        /**
+         * @param GoogleSecuritySafebrowsingV4RawIndices
+         */
+        public function setRawIndices(GoogleSecuritySafebrowsingV4RawIndices $rawIndices)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV4RawIndices
+         */
+        public function getRawIndices()
+        {
+        }
+        /**
+         * @param GoogleSecuritySafebrowsingV4RiceDeltaEncoding
+         */
+        public function setRiceHashes(GoogleSecuritySafebrowsingV4RiceDeltaEncoding $riceHashes)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV4RiceDeltaEncoding
+         */
+        public function getRiceHashes()
+        {
+        }
+        /**
+         * @param GoogleSecuritySafebrowsingV4RiceDeltaEncoding
+         */
+        public function setRiceIndices(GoogleSecuritySafebrowsingV4RiceDeltaEncoding $riceIndices)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV4RiceDeltaEncoding
+         */
+        public function getRiceIndices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4ThreatEntrySet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompressionType()
-    {
-    }
-    /**
-     * @param GoogleSecuritySafebrowsingV4RawHashes
-     */
-    public function setRawHashes(GoogleSecuritySafebrowsingV4RawHashes $rawHashes)
-    {
-    }
-    /**
-     * @return GoogleSecuritySafebrowsingV4RawHashes
-     */
-    public function getRawHashes()
-    {
-    }
-    /**
-     * @param GoogleSecuritySafebrowsingV4RawIndices
-     */
-    public function setRawIndices(GoogleSecuritySafebrowsingV4RawIndices $rawIndices)
-    {
-    }
-    /**
-     * @return GoogleSecuritySafebrowsingV4RawIndices
-     */
-    public function getRawIndices()
-    {
-    }
-    /**
-     * @param GoogleSecuritySafebrowsingV4RiceDeltaEncoding
-     */
-    public function setRiceHashes(GoogleSecuritySafebrowsingV4RiceDeltaEncoding $riceHashes)
-    {
-    }
-    /**
-     * @return GoogleSecuritySafebrowsingV4RiceDeltaEncoding
-     */
-    public function getRiceHashes()
-    {
-    }
-    /**
-     * @param GoogleSecuritySafebrowsingV4RiceDeltaEncoding
-     */
-    public function setRiceIndices(GoogleSecuritySafebrowsingV4RiceDeltaEncoding $riceIndices)
-    {
-    }
-    /**
-     * @return GoogleSecuritySafebrowsingV4RiceDeltaEncoding
-     */
-    public function getRiceIndices()
+    class Google_Service_Safebrowsing_GoogleSecuritySafebrowsingV4ThreatEntrySet extends \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4ThreatEntrySet
     {
     }
 }

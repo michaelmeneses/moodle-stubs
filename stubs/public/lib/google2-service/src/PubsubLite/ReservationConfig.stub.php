@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class ReservationConfig extends \Google\Model
-{
-    /**
-     * The Reservation to use for this topic's throughput capacity. Structured
-     * like: projects/{project_number}/locations/{location}/reservations/{reservat
-     * ion_id}
-     *
-     * @var string
-     */
-    public $throughputReservation;
-    /**
-     * The Reservation to use for this topic's throughput capacity. Structured
-     * like: projects/{project_number}/locations/{location}/reservations/{reservat
-     * ion_id}
-     *
-     * @param string $throughputReservation
-     */
-    public function setThroughputReservation($throughputReservation)
+namespace Google\Service\PubsubLite {
+    class ReservationConfig extends \Google\Model
     {
+        /**
+         * The Reservation to use for this topic's throughput capacity. Structured
+         * like: projects/{project_number}/locations/{location}/reservations/{reservat
+         * ion_id}
+         *
+         * @var string
+         */
+        public $throughputReservation;
+        /**
+         * The Reservation to use for this topic's throughput capacity. Structured
+         * like: projects/{project_number}/locations/{location}/reservations/{reservat
+         * ion_id}
+         *
+         * @param string $throughputReservation
+         */
+        public function setThroughputReservation($throughputReservation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThroughputReservation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PubsubLite\ReservationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getThroughputReservation()
+    class Google_Service_PubsubLite_ReservationConfig extends \Google\Service\PubsubLite\ReservationConfig
     {
     }
 }

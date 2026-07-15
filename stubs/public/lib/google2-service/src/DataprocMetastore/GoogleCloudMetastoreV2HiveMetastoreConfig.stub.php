@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class GoogleCloudMetastoreV2HiveMetastoreConfig extends \Google\Model
-{
-    protected $auxiliaryVersionsType = GoogleCloudMetastoreV2AuxiliaryVersionConfig::class;
-    protected $auxiliaryVersionsDataType = 'map';
-    /**
-     * @var string[]
-     */
-    public $configOverrides;
-    /**
-     * @var string
-     */
-    public $endpointProtocol;
-    /**
-     * @var string
-     */
-    public $version;
-    /**
-     * @param GoogleCloudMetastoreV2AuxiliaryVersionConfig[]
-     */
-    public function setAuxiliaryVersions($auxiliaryVersions)
+namespace Google\Service\DataprocMetastore {
+    class GoogleCloudMetastoreV2HiveMetastoreConfig extends \Google\Model
     {
+        protected $auxiliaryVersionsType = GoogleCloudMetastoreV2AuxiliaryVersionConfig::class;
+        protected $auxiliaryVersionsDataType = 'map';
+        /**
+         * @var string[]
+         */
+        public $configOverrides;
+        /**
+         * @var string
+         */
+        public $endpointProtocol;
+        /**
+         * @var string
+         */
+        public $version;
+        /**
+         * @param GoogleCloudMetastoreV2AuxiliaryVersionConfig[]
+         */
+        public function setAuxiliaryVersions($auxiliaryVersions)
+        {
+        }
+        /**
+         * @return GoogleCloudMetastoreV2AuxiliaryVersionConfig[]
+         */
+        public function getAuxiliaryVersions()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setConfigOverrides($configOverrides)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getConfigOverrides()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEndpointProtocol($endpointProtocol)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndpointProtocol()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudMetastoreV2AuxiliaryVersionConfig[]
+     * Runtime class alias of \Google\Service\DataprocMetastore\GoogleCloudMetastoreV2HiveMetastoreConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuxiliaryVersions()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setConfigOverrides($configOverrides)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getConfigOverrides()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEndpointProtocol($endpointProtocol)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndpointProtocol()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_DataprocMetastore_GoogleCloudMetastoreV2HiveMetastoreConfig extends \Google\Service\DataprocMetastore\GoogleCloudMetastoreV2HiveMetastoreConfig
     {
     }
 }

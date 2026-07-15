@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class ConferenceProperties extends \Google\Collection
-{
-    protected $collection_key = 'allowedConferenceSolutionTypes';
-    /**
-     * The types of conference solutions that are supported for this calendar. The
-     * possible values are:   - "eventHangout"  - "eventNamedHangout"  -
-     * "hangoutsMeet"  Optional.
-     *
-     * @var string[]
-     */
-    public $allowedConferenceSolutionTypes;
-    /**
-     * The types of conference solutions that are supported for this calendar. The
-     * possible values are:   - "eventHangout"  - "eventNamedHangout"  -
-     * "hangoutsMeet"  Optional.
-     *
-     * @param string[] $allowedConferenceSolutionTypes
-     */
-    public function setAllowedConferenceSolutionTypes($allowedConferenceSolutionTypes)
+namespace Google\Service\Calendar {
+    class ConferenceProperties extends \Google\Collection
     {
+        protected $collection_key = 'allowedConferenceSolutionTypes';
+        /**
+         * The types of conference solutions that are supported for this calendar. The
+         * possible values are:   - "eventHangout"  - "eventNamedHangout"  -
+         * "hangoutsMeet"  Optional.
+         *
+         * @var string[]
+         */
+        public $allowedConferenceSolutionTypes;
+        /**
+         * The types of conference solutions that are supported for this calendar. The
+         * possible values are:   - "eventHangout"  - "eventNamedHangout"  -
+         * "hangoutsMeet"  Optional.
+         *
+         * @param string[] $allowedConferenceSolutionTypes
+         */
+        public function setAllowedConferenceSolutionTypes($allowedConferenceSolutionTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowedConferenceSolutionTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Calendar\ConferenceProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedConferenceSolutionTypes()
+    class Google_Service_Calendar_ConferenceProperties extends \Google\Service\Calendar\ConferenceProperties
     {
     }
 }

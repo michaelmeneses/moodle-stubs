@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2BatchReadBlobsRequest extends \Google\Collection
-{
-    protected $collection_key = 'digests';
-    protected $digestsType = BuildBazelRemoteExecutionV2Digest::class;
-    protected $digestsDataType = 'array';
-    /**
-     * @param BuildBazelRemoteExecutionV2Digest[]
-     */
-    public function setDigests($digests)
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2BatchReadBlobsRequest extends \Google\Collection
     {
+        protected $collection_key = 'digests';
+        protected $digestsType = BuildBazelRemoteExecutionV2Digest::class;
+        protected $digestsDataType = 'array';
+        /**
+         * @param BuildBazelRemoteExecutionV2Digest[]
+         */
+        public function setDigests($digests)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2Digest[]
+         */
+        public function getDigests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BuildBazelRemoteExecutionV2Digest[]
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2BatchReadBlobsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDigests()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2BatchReadBlobsRequest extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2BatchReadBlobsRequest
     {
     }
 }

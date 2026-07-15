@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class SegmentFilterClause extends \Google\Model
-{
-    protected $dimensionFilterType = SegmentDimensionFilter::class;
-    protected $dimensionFilterDataType = '';
-    protected $metricFilterType = SegmentMetricFilter::class;
-    protected $metricFilterDataType = '';
-    /**
-     * @var bool
-     */
-    public $not;
-    /**
-     * @param SegmentDimensionFilter
-     */
-    public function setDimensionFilter(SegmentDimensionFilter $dimensionFilter)
+namespace Google\Service\AnalyticsReporting {
+    class SegmentFilterClause extends \Google\Model
     {
+        protected $dimensionFilterType = SegmentDimensionFilter::class;
+        protected $dimensionFilterDataType = '';
+        protected $metricFilterType = SegmentMetricFilter::class;
+        protected $metricFilterDataType = '';
+        /**
+         * @var bool
+         */
+        public $not;
+        /**
+         * @param SegmentDimensionFilter
+         */
+        public function setDimensionFilter(SegmentDimensionFilter $dimensionFilter)
+        {
+        }
+        /**
+         * @return SegmentDimensionFilter
+         */
+        public function getDimensionFilter()
+        {
+        }
+        /**
+         * @param SegmentMetricFilter
+         */
+        public function setMetricFilter(SegmentMetricFilter $metricFilter)
+        {
+        }
+        /**
+         * @return SegmentMetricFilter
+         */
+        public function getMetricFilter()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setNot($not)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNot()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SegmentDimensionFilter
+     * Runtime class alias of \Google\Service\AnalyticsReporting\SegmentFilterClause registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionFilter()
-    {
-    }
-    /**
-     * @param SegmentMetricFilter
-     */
-    public function setMetricFilter(SegmentMetricFilter $metricFilter)
-    {
-    }
-    /**
-     * @return SegmentMetricFilter
-     */
-    public function getMetricFilter()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setNot($not)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNot()
+    class Google_Service_AnalyticsReporting_SegmentFilterClause extends \Google\Service\AnalyticsReporting\SegmentFilterClause
     {
     }
 }

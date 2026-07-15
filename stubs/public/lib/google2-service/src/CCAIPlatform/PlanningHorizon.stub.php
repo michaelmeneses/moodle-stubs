@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CCAIPlatform;
-
-class PlanningHorizon extends \Google\Model
-{
-    protected $endTimeType = DateTime::class;
-    protected $endTimeDataType = '';
-    protected $startTimeType = DateTime::class;
-    protected $startTimeDataType = '';
-    /**
-     * Required. End of the time interval for the given demand (exclusive). These
-     * values are read down to the minute; seconds and all smaller units are
-     * ignored.
-     *
-     * @param DateTime $endTime
-     */
-    public function setEndTime(DateTime $endTime)
+namespace Google\Service\CCAIPlatform {
+    class PlanningHorizon extends \Google\Model
     {
+        protected $endTimeType = DateTime::class;
+        protected $endTimeDataType = '';
+        protected $startTimeType = DateTime::class;
+        protected $startTimeDataType = '';
+        /**
+         * Required. End of the time interval for the given demand (exclusive). These
+         * values are read down to the minute; seconds and all smaller units are
+         * ignored.
+         *
+         * @param DateTime $endTime
+         */
+        public function setEndTime(DateTime $endTime)
+        {
+        }
+        /**
+         * @return DateTime
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Required. Start of the time interval for the given demand (inclusive).
+         * These values are read down to the minute; seconds and all smaller units are
+         * ignored.
+         *
+         * @param DateTime $startTime
+         */
+        public function setStartTime(DateTime $startTime)
+        {
+        }
+        /**
+         * @return DateTime
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DateTime
+     * Runtime class alias of \Google\Service\CCAIPlatform\PlanningHorizon registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Required. Start of the time interval for the given demand (inclusive).
-     * These values are read down to the minute; seconds and all smaller units are
-     * ignored.
-     *
-     * @param DateTime $startTime
-     */
-    public function setStartTime(DateTime $startTime)
-    {
-    }
-    /**
-     * @return DateTime
-     */
-    public function getStartTime()
+    class Google_Service_CCAIPlatform_PlanningHorizon extends \Google\Service\CCAIPlatform\PlanningHorizon
     {
     }
 }

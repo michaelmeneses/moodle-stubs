@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class GoogleIdentityAccesscontextmanagerV1EgressPolicy extends \Google\Model
-{
-    protected $egressFromType = GoogleIdentityAccesscontextmanagerV1EgressFrom::class;
-    protected $egressFromDataType = '';
-    protected $egressToType = GoogleIdentityAccesscontextmanagerV1EgressTo::class;
-    protected $egressToDataType = '';
-    /**
-     * Optional. Human-readable title for the egress rule. The title must be
-     * unique within the perimeter and can not exceed 100 characters. Within the
-     * access policy, the combined length of all rule titles must not exceed
-     * 240,000 characters.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Defines conditions on the source of a request causing this EgressPolicy to
-     * apply.
-     *
-     * @param GoogleIdentityAccesscontextmanagerV1EgressFrom $egressFrom
-     */
-    public function setEgressFrom(GoogleIdentityAccesscontextmanagerV1EgressFrom $egressFrom)
+namespace Google\Service\CloudAsset {
+    class GoogleIdentityAccesscontextmanagerV1EgressPolicy extends \Google\Model
     {
+        protected $egressFromType = GoogleIdentityAccesscontextmanagerV1EgressFrom::class;
+        protected $egressFromDataType = '';
+        protected $egressToType = GoogleIdentityAccesscontextmanagerV1EgressTo::class;
+        protected $egressToDataType = '';
+        /**
+         * Optional. Human-readable title for the egress rule. The title must be
+         * unique within the perimeter and can not exceed 100 characters. Within the
+         * access policy, the combined length of all rule titles must not exceed
+         * 240,000 characters.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Defines conditions on the source of a request causing this EgressPolicy to
+         * apply.
+         *
+         * @param GoogleIdentityAccesscontextmanagerV1EgressFrom $egressFrom
+         */
+        public function setEgressFrom(GoogleIdentityAccesscontextmanagerV1EgressFrom $egressFrom)
+        {
+        }
+        /**
+         * @return GoogleIdentityAccesscontextmanagerV1EgressFrom
+         */
+        public function getEgressFrom()
+        {
+        }
+        /**
+         * Defines the conditions on the ApiOperation and destination resources that
+         * cause this EgressPolicy to apply.
+         *
+         * @param GoogleIdentityAccesscontextmanagerV1EgressTo $egressTo
+         */
+        public function setEgressTo(GoogleIdentityAccesscontextmanagerV1EgressTo $egressTo)
+        {
+        }
+        /**
+         * @return GoogleIdentityAccesscontextmanagerV1EgressTo
+         */
+        public function getEgressTo()
+        {
+        }
+        /**
+         * Optional. Human-readable title for the egress rule. The title must be
+         * unique within the perimeter and can not exceed 100 characters. Within the
+         * access policy, the combined length of all rule titles must not exceed
+         * 240,000 characters.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleIdentityAccesscontextmanagerV1EgressFrom
+     * Runtime class alias of \Google\Service\CloudAsset\GoogleIdentityAccesscontextmanagerV1EgressPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEgressFrom()
-    {
-    }
-    /**
-     * Defines the conditions on the ApiOperation and destination resources that
-     * cause this EgressPolicy to apply.
-     *
-     * @param GoogleIdentityAccesscontextmanagerV1EgressTo $egressTo
-     */
-    public function setEgressTo(GoogleIdentityAccesscontextmanagerV1EgressTo $egressTo)
-    {
-    }
-    /**
-     * @return GoogleIdentityAccesscontextmanagerV1EgressTo
-     */
-    public function getEgressTo()
-    {
-    }
-    /**
-     * Optional. Human-readable title for the egress rule. The title must be
-     * unique within the perimeter and can not exceed 100 characters. Within the
-     * access policy, the combined length of all rule titles must not exceed
-     * 240,000 characters.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_CloudAsset_GoogleIdentityAccesscontextmanagerV1EgressPolicy extends \Google\Service\CloudAsset\GoogleIdentityAccesscontextmanagerV1EgressPolicy
     {
     }
 }

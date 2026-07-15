@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script;
-
-class Version extends \Google\Model
-{
-    /**
-     * When the version was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The description for this version.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The script project's Drive ID.
-     *
-     * @var string
-     */
-    public $scriptId;
-    /**
-     * The incremental ID that is created by Apps Script when a version is
-     * created. This is system assigned number and is immutable once created.
-     *
-     * @var int
-     */
-    public $versionNumber;
-    /**
-     * When the version was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Script {
+    class Version extends \Google\Model
     {
+        /**
+         * When the version was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The description for this version.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The script project's Drive ID.
+         *
+         * @var string
+         */
+        public $scriptId;
+        /**
+         * The incremental ID that is created by Apps Script when a version is
+         * created. This is system assigned number and is immutable once created.
+         *
+         * @var int
+         */
+        public $versionNumber;
+        /**
+         * When the version was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The description for this version.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The script project's Drive ID.
+         *
+         * @param string $scriptId
+         */
+        public function setScriptId($scriptId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScriptId()
+        {
+        }
+        /**
+         * The incremental ID that is created by Apps Script when a version is
+         * created. This is system assigned number and is immutable once created.
+         *
+         * @param int $versionNumber
+         */
+        public function setVersionNumber($versionNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVersionNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Script\Version registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The description for this version.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * The script project's Drive ID.
-     *
-     * @param string $scriptId
-     */
-    public function setScriptId($scriptId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScriptId()
-    {
-    }
-    /**
-     * The incremental ID that is created by Apps Script when a version is
-     * created. This is system assigned number and is immutable once created.
-     *
-     * @param int $versionNumber
-     */
-    public function setVersionNumber($versionNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVersionNumber()
+    class Google_Service_Script_Version extends \Google\Service\Script\Version
     {
     }
 }

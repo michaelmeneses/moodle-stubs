@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class AsyncBatchAnnotateImagesRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    /**
-     * Optional. The labels with user-defined metadata for the request. Label keys
-     * and values can be no longer than 63 characters (Unicode codepoints), can
-     * only contain lowercase letters, numeric characters, underscores and dashes.
-     * International characters are allowed. Label values are optional. Label keys
-     * must start with a letter.
-     *
-     * @var string[]
-     */
-    public $labels;
-    protected $outputConfigType = OutputConfig::class;
-    protected $outputConfigDataType = '';
-    /**
-     * Optional. Target project and location to make a call. Format:
-     * `projects/{project-id}/locations/{location-id}`. If no parent is specified,
-     * a region will be chosen automatically. Supported location-ids: `us`: USA
-     * country only, `asia`: East asia areas, like Japan, Taiwan, `eu`: The
-     * European Union. Example: `projects/project-A/locations/eu`.
-     *
-     * @var string
-     */
-    public $parent;
-    protected $requestsType = AnnotateImageRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * Optional. The labels with user-defined metadata for the request. Label keys
-     * and values can be no longer than 63 characters (Unicode codepoints), can
-     * only contain lowercase letters, numeric characters, underscores and dashes.
-     * International characters are allowed. Label values are optional. Label keys
-     * must start with a letter.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
+namespace Google\Service\Vision {
+    class AsyncBatchAnnotateImagesRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        /**
+         * Optional. The labels with user-defined metadata for the request. Label keys
+         * and values can be no longer than 63 characters (Unicode codepoints), can
+         * only contain lowercase letters, numeric characters, underscores and dashes.
+         * International characters are allowed. Label values are optional. Label keys
+         * must start with a letter.
+         *
+         * @var string[]
+         */
+        public $labels;
+        protected $outputConfigType = OutputConfig::class;
+        protected $outputConfigDataType = '';
+        /**
+         * Optional. Target project and location to make a call. Format:
+         * `projects/{project-id}/locations/{location-id}`. If no parent is specified,
+         * a region will be chosen automatically. Supported location-ids: `us`: USA
+         * country only, `asia`: East asia areas, like Japan, Taiwan, `eu`: The
+         * European Union. Example: `projects/project-A/locations/eu`.
+         *
+         * @var string
+         */
+        public $parent;
+        protected $requestsType = AnnotateImageRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * Optional. The labels with user-defined metadata for the request. Label keys
+         * and values can be no longer than 63 characters (Unicode codepoints), can
+         * only contain lowercase letters, numeric characters, underscores and dashes.
+         * International characters are allowed. Label values are optional. Label keys
+         * must start with a letter.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Required. The desired output location and metadata (e.g. format).
+         *
+         * @param OutputConfig $outputConfig
+         */
+        public function setOutputConfig(OutputConfig $outputConfig)
+        {
+        }
+        /**
+         * @return OutputConfig
+         */
+        public function getOutputConfig()
+        {
+        }
+        /**
+         * Optional. Target project and location to make a call. Format:
+         * `projects/{project-id}/locations/{location-id}`. If no parent is specified,
+         * a region will be chosen automatically. Supported location-ids: `us`: USA
+         * country only, `asia`: East asia areas, like Japan, Taiwan, `eu`: The
+         * European Union. Example: `projects/project-A/locations/eu`.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * Required. Individual image annotation requests for this batch.
+         *
+         * @param AnnotateImageRequest[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return AnnotateImageRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Vision\AsyncBatchAnnotateImagesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabels()
-    {
-    }
-    /**
-     * Required. The desired output location and metadata (e.g. format).
-     *
-     * @param OutputConfig $outputConfig
-     */
-    public function setOutputConfig(OutputConfig $outputConfig)
-    {
-    }
-    /**
-     * @return OutputConfig
-     */
-    public function getOutputConfig()
-    {
-    }
-    /**
-     * Optional. Target project and location to make a call. Format:
-     * `projects/{project-id}/locations/{location-id}`. If no parent is specified,
-     * a region will be chosen automatically. Supported location-ids: `us`: USA
-     * country only, `asia`: East asia areas, like Japan, Taiwan, `eu`: The
-     * European Union. Example: `projects/project-A/locations/eu`.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
-    {
-    }
-    /**
-     * Required. Individual image annotation requests for this batch.
-     *
-     * @param AnnotateImageRequest[] $requests
-     */
-    public function setRequests($requests)
-    {
-    }
-    /**
-     * @return AnnotateImageRequest[]
-     */
-    public function getRequests()
+    class Google_Service_Vision_AsyncBatchAnnotateImagesRequest extends \Google\Service\Vision\AsyncBatchAnnotateImagesRequest
     {
     }
 }

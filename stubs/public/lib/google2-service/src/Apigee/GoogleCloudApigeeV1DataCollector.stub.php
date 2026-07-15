@@ -21,139 +21,148 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1DataCollector extends \Google\Model
-{
-    /**
-     * For future compatibility.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * For integer values.
-     */
-    public const TYPE_INTEGER = 'INTEGER';
-    /**
-     * For float values.
-     */
-    public const TYPE_FLOAT = 'FLOAT';
-    /**
-     * For string values.
-     */
-    public const TYPE_STRING = 'STRING';
-    /**
-     * For boolean values.
-     */
-    public const TYPE_BOOLEAN = 'BOOLEAN';
-    /**
-     * For datetime values.
-     */
-    public const TYPE_DATETIME = 'DATETIME';
-    /**
-     * Output only. The time at which the data collector was created in
-     * milliseconds since the epoch.
-     *
-     * @var string
-     */
-    public $createdAt;
-    /**
-     * A description of the data collector.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Output only. The time at which the Data Collector was last updated in
-     * milliseconds since the epoch.
-     *
-     * @var string
-     */
-    public $lastModifiedAt;
-    /**
-     * ID of the data collector. Must begin with `dc_`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Immutable. The type of data this data collector will collect.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. The time at which the data collector was created in
-     * milliseconds since the epoch.
-     *
-     * @param string $createdAt
-     */
-    public function setCreatedAt($createdAt)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1DataCollector extends \Google\Model
     {
+        /**
+         * For future compatibility.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * For integer values.
+         */
+        public const TYPE_INTEGER = 'INTEGER';
+        /**
+         * For float values.
+         */
+        public const TYPE_FLOAT = 'FLOAT';
+        /**
+         * For string values.
+         */
+        public const TYPE_STRING = 'STRING';
+        /**
+         * For boolean values.
+         */
+        public const TYPE_BOOLEAN = 'BOOLEAN';
+        /**
+         * For datetime values.
+         */
+        public const TYPE_DATETIME = 'DATETIME';
+        /**
+         * Output only. The time at which the data collector was created in
+         * milliseconds since the epoch.
+         *
+         * @var string
+         */
+        public $createdAt;
+        /**
+         * A description of the data collector.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Output only. The time at which the Data Collector was last updated in
+         * milliseconds since the epoch.
+         *
+         * @var string
+         */
+        public $lastModifiedAt;
+        /**
+         * ID of the data collector. Must begin with `dc_`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Immutable. The type of data this data collector will collect.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. The time at which the data collector was created in
+         * milliseconds since the epoch.
+         *
+         * @param string $createdAt
+         */
+        public function setCreatedAt($createdAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatedAt()
+        {
+        }
+        /**
+         * A description of the data collector.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. The time at which the Data Collector was last updated in
+         * milliseconds since the epoch.
+         *
+         * @param string $lastModifiedAt
+         */
+        public function setLastModifiedAt($lastModifiedAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastModifiedAt()
+        {
+        }
+        /**
+         * ID of the data collector. Must begin with `dc_`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Immutable. The type of data this data collector will collect.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, INTEGER, FLOAT, STRING, BOOLEAN,
+         * DATETIME
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1DataCollector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreatedAt()
-    {
-    }
-    /**
-     * A description of the data collector.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. The time at which the Data Collector was last updated in
-     * milliseconds since the epoch.
-     *
-     * @param string $lastModifiedAt
-     */
-    public function setLastModifiedAt($lastModifiedAt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastModifiedAt()
-    {
-    }
-    /**
-     * ID of the data collector. Must begin with `dc_`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Immutable. The type of data this data collector will collect.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, INTEGER, FLOAT, STRING, BOOLEAN,
-     * DATETIME
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Apigee_GoogleCloudApigeeV1DataCollector extends \Google\Service\Apigee\GoogleCloudApigeeV1DataCollector
     {
     }
 }

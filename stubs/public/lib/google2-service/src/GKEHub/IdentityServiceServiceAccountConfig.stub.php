@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class IdentityServiceServiceAccountConfig extends \Google\Model
-{
-    protected $simpleBindCredentialsType = IdentityServiceSimpleBindCredentials::class;
-    protected $simpleBindCredentialsDataType = '';
-    /**
-     * Credentials for basic auth.
-     *
-     * @param IdentityServiceSimpleBindCredentials $simpleBindCredentials
-     */
-    public function setSimpleBindCredentials(IdentityServiceSimpleBindCredentials $simpleBindCredentials)
+namespace Google\Service\GKEHub {
+    class IdentityServiceServiceAccountConfig extends \Google\Model
     {
+        protected $simpleBindCredentialsType = IdentityServiceSimpleBindCredentials::class;
+        protected $simpleBindCredentialsDataType = '';
+        /**
+         * Credentials for basic auth.
+         *
+         * @param IdentityServiceSimpleBindCredentials $simpleBindCredentials
+         */
+        public function setSimpleBindCredentials(IdentityServiceSimpleBindCredentials $simpleBindCredentials)
+        {
+        }
+        /**
+         * @return IdentityServiceSimpleBindCredentials
+         */
+        public function getSimpleBindCredentials()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IdentityServiceSimpleBindCredentials
+     * Runtime class alias of \Google\Service\GKEHub\IdentityServiceServiceAccountConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSimpleBindCredentials()
+    class Google_Service_GKEHub_IdentityServiceServiceAccountConfig extends \Google\Service\GKEHub\IdentityServiceServiceAccountConfig
     {
     }
 }

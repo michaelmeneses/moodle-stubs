@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderreturnsCreateOrderReturnResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $executionStatus;
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $orderReturnType = MerchantOrderReturn::class;
-    protected $orderReturnDataType = '';
-    /**
-     * @param string
-     */
-    public function setExecutionStatus($executionStatus)
+namespace Google\Service\ShoppingContent {
+    class OrderreturnsCreateOrderReturnResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $executionStatus;
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $orderReturnType = MerchantOrderReturn::class;
+        protected $orderReturnDataType = '';
+        /**
+         * @param string
+         */
+        public function setExecutionStatus($executionStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutionStatus()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param MerchantOrderReturn
+         */
+        public function setOrderReturn(MerchantOrderReturn $orderReturn)
+        {
+        }
+        /**
+         * @return MerchantOrderReturn
+         */
+        public function getOrderReturn()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderreturnsCreateOrderReturnResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecutionStatus()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param MerchantOrderReturn
-     */
-    public function setOrderReturn(MerchantOrderReturn $orderReturn)
-    {
-    }
-    /**
-     * @return MerchantOrderReturn
-     */
-    public function getOrderReturn()
+    class Google_Service_ShoppingContent_OrderreturnsCreateOrderReturnResponse extends \Google\Service\ShoppingContent\OrderreturnsCreateOrderReturnResponse
     {
     }
 }

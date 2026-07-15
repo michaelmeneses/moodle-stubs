@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolyService\Resource;
-
-/**
- * The "users" collection of methods.
- * Typical usage is:
- *  <code>
- *   $polyService = new Google\Service\PolyService(...);
- *   $users = $polyService->users;
- *  </code>
- */
-class Users extends \Google\Service\Resource
-{
+namespace Google\Service\PolyService\Resource {
+    /**
+     * The "users" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $polyService = new Google\Service\PolyService(...);
+     *   $users = $polyService->users;
+     *  </code>
+     */
+    class Users extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PolyService\Resource\Users registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PolyService_Resource_Users extends \Google\Service\PolyService\Resource\Users
+    {
+    }
 }

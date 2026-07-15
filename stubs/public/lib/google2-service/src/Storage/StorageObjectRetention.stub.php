@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class StorageObjectRetention extends \Google\Model
-{
-    /**
-     * The bucket's object retention mode, can only be Unlocked or Locked.
-     *
-     * @var string
-     */
-    public $mode;
-    /**
-     * A time in RFC 3339 format until which object retention protects this
-     * object.
-     *
-     * @var string
-     */
-    public $retainUntilTime;
-    /**
-     * The bucket's object retention mode, can only be Unlocked or Locked.
-     *
-     * @param string $mode
-     */
-    public function setMode($mode)
+namespace Google\Service\Storage {
+    class StorageObjectRetention extends \Google\Model
     {
+        /**
+         * The bucket's object retention mode, can only be Unlocked or Locked.
+         *
+         * @var string
+         */
+        public $mode;
+        /**
+         * A time in RFC 3339 format until which object retention protects this
+         * object.
+         *
+         * @var string
+         */
+        public $retainUntilTime;
+        /**
+         * The bucket's object retention mode, can only be Unlocked or Locked.
+         *
+         * @param string $mode
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMode()
+        {
+        }
+        /**
+         * A time in RFC 3339 format until which object retention protects this
+         * object.
+         *
+         * @param string $retainUntilTime
+         */
+        public function setRetainUntilTime($retainUntilTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRetainUntilTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storage\StorageObjectRetention registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMode()
-    {
-    }
-    /**
-     * A time in RFC 3339 format until which object retention protects this
-     * object.
-     *
-     * @param string $retainUntilTime
-     */
-    public function setRetainUntilTime($retainUntilTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRetainUntilTime()
+    class Google_Service_Storage_StorageObjectRetention extends \Google\Service\Storage\StorageObjectRetention
     {
     }
 }

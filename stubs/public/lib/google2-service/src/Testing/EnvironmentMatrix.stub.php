@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class EnvironmentMatrix extends \Google\Model
-{
-    protected $androidDeviceListType = AndroidDeviceList::class;
-    protected $androidDeviceListDataType = '';
-    protected $androidMatrixType = AndroidMatrix::class;
-    protected $androidMatrixDataType = '';
-    protected $iosDeviceListType = IosDeviceList::class;
-    protected $iosDeviceListDataType = '';
-    /**
-     * A list of Android devices; the test will be run only on the specified
-     * devices.
-     *
-     * @param AndroidDeviceList $androidDeviceList
-     */
-    public function setAndroidDeviceList(AndroidDeviceList $androidDeviceList)
+namespace Google\Service\Testing {
+    class EnvironmentMatrix extends \Google\Model
     {
+        protected $androidDeviceListType = AndroidDeviceList::class;
+        protected $androidDeviceListDataType = '';
+        protected $androidMatrixType = AndroidMatrix::class;
+        protected $androidMatrixDataType = '';
+        protected $iosDeviceListType = IosDeviceList::class;
+        protected $iosDeviceListDataType = '';
+        /**
+         * A list of Android devices; the test will be run only on the specified
+         * devices.
+         *
+         * @param AndroidDeviceList $androidDeviceList
+         */
+        public function setAndroidDeviceList(AndroidDeviceList $androidDeviceList)
+        {
+        }
+        /**
+         * @return AndroidDeviceList
+         */
+        public function getAndroidDeviceList()
+        {
+        }
+        /**
+         * A matrix of Android devices.
+         *
+         * @param AndroidMatrix $androidMatrix
+         */
+        public function setAndroidMatrix(AndroidMatrix $androidMatrix)
+        {
+        }
+        /**
+         * @return AndroidMatrix
+         */
+        public function getAndroidMatrix()
+        {
+        }
+        /**
+         * A list of iOS devices.
+         *
+         * @param IosDeviceList $iosDeviceList
+         */
+        public function setIosDeviceList(IosDeviceList $iosDeviceList)
+        {
+        }
+        /**
+         * @return IosDeviceList
+         */
+        public function getIosDeviceList()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AndroidDeviceList
+     * Runtime class alias of \Google\Service\Testing\EnvironmentMatrix registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndroidDeviceList()
-    {
-    }
-    /**
-     * A matrix of Android devices.
-     *
-     * @param AndroidMatrix $androidMatrix
-     */
-    public function setAndroidMatrix(AndroidMatrix $androidMatrix)
-    {
-    }
-    /**
-     * @return AndroidMatrix
-     */
-    public function getAndroidMatrix()
-    {
-    }
-    /**
-     * A list of iOS devices.
-     *
-     * @param IosDeviceList $iosDeviceList
-     */
-    public function setIosDeviceList(IosDeviceList $iosDeviceList)
-    {
-    }
-    /**
-     * @return IosDeviceList
-     */
-    public function getIosDeviceList()
+    class Google_Service_Testing_EnvironmentMatrix extends \Google\Service\Testing\EnvironmentMatrix
     {
     }
 }

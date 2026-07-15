@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class ListGameServerClustersResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $gameServerClustersType = GameServerCluster::class;
-    protected $gameServerClustersDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * @param GameServerCluster[]
-     */
-    public function setGameServerClusters($gameServerClusters)
+namespace Google\Service\GameServices {
+    class ListGameServerClustersResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $gameServerClustersType = GameServerCluster::class;
+        protected $gameServerClustersDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * @param GameServerCluster[]
+         */
+        public function setGameServerClusters($gameServerClusters)
+        {
+        }
+        /**
+         * @return GameServerCluster[]
+         */
+        public function getGameServerClusters()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GameServerCluster[]
+     * Runtime class alias of \Google\Service\GameServices\ListGameServerClustersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGameServerClusters()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_GameServices_ListGameServerClustersResponse extends \Google\Service\GameServices\ListGameServerClustersResponse
     {
     }
 }

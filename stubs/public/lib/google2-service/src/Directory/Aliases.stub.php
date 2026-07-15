@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class Aliases extends \Google\Collection
-{
-    protected $collection_key = 'aliases';
-    /**
-     * @var array[]
-     */
-    public $aliases;
-    /**
-     * @var string
-     */
-    public $etag;
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @param array[] $aliases
-     */
-    public function setAliases($aliases)
+namespace Google\Service\Directory {
+    class Aliases extends \Google\Collection
     {
+        protected $collection_key = 'aliases';
+        /**
+         * @var array[]
+         */
+        public $aliases;
+        /**
+         * @var string
+         */
+        public $etag;
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @param array[] $aliases
+         */
+        public function setAliases($aliases)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getAliases()
+        {
+        }
+        /**
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Directory\Aliases registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAliases()
-    {
-    }
-    /**
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Directory_Aliases extends \Google\Service\Directory\Aliases
     {
     }
 }

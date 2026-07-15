@@ -21,38 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for PostmasterTools (v1).
- *
- * <p>
- * The Postmaster Tools API is a RESTful API that provides programmatic access
- * to email traffic metrics (like spam reports, delivery errors etc) otherwise
- * available through the Gmail Postmaster Tools UI currently.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/workspace/gmail/postmaster" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class PostmasterTools extends \Google\Service
-{
-    /** See email traffic metrics for the domains you have registered in Gmail Postmaster Tools. */
-    const POSTMASTER_READONLY = "https://www.googleapis.com/auth/postmaster.readonly";
-    public $domains;
-    public $domains_trafficStats;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the PostmasterTools service.
+     * Service definition for PostmasterTools (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * The Postmaster Tools API is a RESTful API that provides programmatic access
+     * to email traffic metrics (like spam reports, delivery errors etc) otherwise
+     * available through the Gmail Postmaster Tools UI currently.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/workspace/gmail/postmaster" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class PostmasterTools extends \Google\Service
+    {
+        /** See email traffic metrics for the domains you have registered in Gmail Postmaster Tools. */
+        const POSTMASTER_READONLY = "https://www.googleapis.com/auth/postmaster.readonly";
+        public $domains;
+        public $domains_trafficStats;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the PostmasterTools service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PostmasterTools registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PostmasterTools extends \Google\Service\PostmasterTools
     {
     }
 }

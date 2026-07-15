@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class NotebooksEmpty extends \Google\Model
-{
+namespace Google\Service\AIPlatformNotebooks {
+    class NotebooksEmpty extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\NotebooksEmpty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AIPlatformNotebooks_NotebooksEmpty extends \Google\Service\AIPlatformNotebooks\NotebooksEmpty
+    {
+    }
 }

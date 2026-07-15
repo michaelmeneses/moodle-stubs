@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseCloudMessaging;
-
-class WebpushConfig extends \Google\Model
-{
-    /**
-     * Arbitrary key/value payload. If present, it will override
-     * google.firebase.fcm.v1.Message.data.
-     *
-     * @var string[]
-     */
-    public $data;
-    protected $fcmOptionsType = WebpushFcmOptions::class;
-    protected $fcmOptionsDataType = '';
-    /**
-     * HTTP headers defined in webpush protocol. Refer to [Webpush
-     * protocol](https://tools.ietf.org/html/rfc8030#section-5) for supported
-     * headers, e.g. "TTL": "15".
-     *
-     * @var string[]
-     */
-    public $headers;
-    /**
-     * Web Notification options as a JSON object. Supports Notification instance
-     * properties as defined in [Web Notification
-     * API](https://developer.mozilla.org/en-US/docs/Web/API/Notification). If
-     * present, "title" and "body" fields override
-     * [google.firebase.fcm.v1.Notification.title] and
-     * [google.firebase.fcm.v1.Notification.body].
-     *
-     * @var array[]
-     */
-    public $notification;
-    /**
-     * Arbitrary key/value payload. If present, it will override
-     * google.firebase.fcm.v1.Message.data.
-     *
-     * @param string[] $data
-     */
-    public function setData($data)
+namespace Google\Service\FirebaseCloudMessaging {
+    class WebpushConfig extends \Google\Model
     {
+        /**
+         * Arbitrary key/value payload. If present, it will override
+         * google.firebase.fcm.v1.Message.data.
+         *
+         * @var string[]
+         */
+        public $data;
+        protected $fcmOptionsType = WebpushFcmOptions::class;
+        protected $fcmOptionsDataType = '';
+        /**
+         * HTTP headers defined in webpush protocol. Refer to [Webpush
+         * protocol](https://tools.ietf.org/html/rfc8030#section-5) for supported
+         * headers, e.g. "TTL": "15".
+         *
+         * @var string[]
+         */
+        public $headers;
+        /**
+         * Web Notification options as a JSON object. Supports Notification instance
+         * properties as defined in [Web Notification
+         * API](https://developer.mozilla.org/en-US/docs/Web/API/Notification). If
+         * present, "title" and "body" fields override
+         * [google.firebase.fcm.v1.Notification.title] and
+         * [google.firebase.fcm.v1.Notification.body].
+         *
+         * @var array[]
+         */
+        public $notification;
+        /**
+         * Arbitrary key/value payload. If present, it will override
+         * google.firebase.fcm.v1.Message.data.
+         *
+         * @param string[] $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getData()
+        {
+        }
+        /**
+         * Options for features provided by the FCM SDK for Web.
+         *
+         * @param WebpushFcmOptions $fcmOptions
+         */
+        public function setFcmOptions(WebpushFcmOptions $fcmOptions)
+        {
+        }
+        /**
+         * @return WebpushFcmOptions
+         */
+        public function getFcmOptions()
+        {
+        }
+        /**
+         * HTTP headers defined in webpush protocol. Refer to [Webpush
+         * protocol](https://tools.ietf.org/html/rfc8030#section-5) for supported
+         * headers, e.g. "TTL": "15".
+         *
+         * @param string[] $headers
+         */
+        public function setHeaders($headers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getHeaders()
+        {
+        }
+        /**
+         * Web Notification options as a JSON object. Supports Notification instance
+         * properties as defined in [Web Notification
+         * API](https://developer.mozilla.org/en-US/docs/Web/API/Notification). If
+         * present, "title" and "body" fields override
+         * [google.firebase.fcm.v1.Notification.title] and
+         * [google.firebase.fcm.v1.Notification.body].
+         *
+         * @param array[] $notification
+         */
+        public function setNotification($notification)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getNotification()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\FirebaseCloudMessaging\WebpushConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
-    {
-    }
-    /**
-     * Options for features provided by the FCM SDK for Web.
-     *
-     * @param WebpushFcmOptions $fcmOptions
-     */
-    public function setFcmOptions(WebpushFcmOptions $fcmOptions)
-    {
-    }
-    /**
-     * @return WebpushFcmOptions
-     */
-    public function getFcmOptions()
-    {
-    }
-    /**
-     * HTTP headers defined in webpush protocol. Refer to [Webpush
-     * protocol](https://tools.ietf.org/html/rfc8030#section-5) for supported
-     * headers, e.g. "TTL": "15".
-     *
-     * @param string[] $headers
-     */
-    public function setHeaders($headers)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getHeaders()
-    {
-    }
-    /**
-     * Web Notification options as a JSON object. Supports Notification instance
-     * properties as defined in [Web Notification
-     * API](https://developer.mozilla.org/en-US/docs/Web/API/Notification). If
-     * present, "title" and "body" fields override
-     * [google.firebase.fcm.v1.Notification.title] and
-     * [google.firebase.fcm.v1.Notification.body].
-     *
-     * @param array[] $notification
-     */
-    public function setNotification($notification)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getNotification()
+    class Google_Service_FirebaseCloudMessaging_WebpushConfig extends \Google\Service\FirebaseCloudMessaging\WebpushConfig
     {
     }
 }

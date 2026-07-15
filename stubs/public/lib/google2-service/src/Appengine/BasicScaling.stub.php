@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class BasicScaling extends \Google\Model
-{
-    /**
-     * Duration of time after the last request that an instance must wait before
-     * the instance is shut down.
-     *
-     * @var string
-     */
-    public $idleTimeout;
-    /**
-     * Maximum number of instances to create for this version.
-     *
-     * @var int
-     */
-    public $maxInstances;
-    /**
-     * Duration of time after the last request that an instance must wait before
-     * the instance is shut down.
-     *
-     * @param string $idleTimeout
-     */
-    public function setIdleTimeout($idleTimeout)
+namespace Google\Service\Appengine {
+    class BasicScaling extends \Google\Model
     {
+        /**
+         * Duration of time after the last request that an instance must wait before
+         * the instance is shut down.
+         *
+         * @var string
+         */
+        public $idleTimeout;
+        /**
+         * Maximum number of instances to create for this version.
+         *
+         * @var int
+         */
+        public $maxInstances;
+        /**
+         * Duration of time after the last request that an instance must wait before
+         * the instance is shut down.
+         *
+         * @param string $idleTimeout
+         */
+        public function setIdleTimeout($idleTimeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdleTimeout()
+        {
+        }
+        /**
+         * Maximum number of instances to create for this version.
+         *
+         * @param int $maxInstances
+         */
+        public function setMaxInstances($maxInstances)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxInstances()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Appengine\BasicScaling registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIdleTimeout()
-    {
-    }
-    /**
-     * Maximum number of instances to create for this version.
-     *
-     * @param int $maxInstances
-     */
-    public function setMaxInstances($maxInstances)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxInstances()
+    class Google_Service_Appengine_BasicScaling extends \Google\Service\Appengine\BasicScaling
     {
     }
 }

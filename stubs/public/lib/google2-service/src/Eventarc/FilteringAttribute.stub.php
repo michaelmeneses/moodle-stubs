@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Eventarc;
-
-class FilteringAttribute extends \Google\Model
-{
-    /**
-     * Output only. Attribute used for filtering the event type.
-     *
-     * @var string
-     */
-    public $attribute;
-    /**
-     * Output only. Description of the purpose of the attribute.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Output only. If true, the attribute accepts matching expressions in the
-     * Eventarc PathPattern format.
-     *
-     * @var bool
-     */
-    public $pathPatternSupported;
-    /**
-     * Output only. If true, the triggers for this provider should always specify
-     * a filter on these attributes. Trigger creation will fail otherwise.
-     *
-     * @var bool
-     */
-    public $required;
-    /**
-     * Output only. Attribute used for filtering the event type.
-     *
-     * @param string $attribute
-     */
-    public function setAttribute($attribute)
+namespace Google\Service\Eventarc {
+    class FilteringAttribute extends \Google\Model
     {
+        /**
+         * Output only. Attribute used for filtering the event type.
+         *
+         * @var string
+         */
+        public $attribute;
+        /**
+         * Output only. Description of the purpose of the attribute.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Output only. If true, the attribute accepts matching expressions in the
+         * Eventarc PathPattern format.
+         *
+         * @var bool
+         */
+        public $pathPatternSupported;
+        /**
+         * Output only. If true, the triggers for this provider should always specify
+         * a filter on these attributes. Trigger creation will fail otherwise.
+         *
+         * @var bool
+         */
+        public $required;
+        /**
+         * Output only. Attribute used for filtering the event type.
+         *
+         * @param string $attribute
+         */
+        public function setAttribute($attribute)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttribute()
+        {
+        }
+        /**
+         * Output only. Description of the purpose of the attribute.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. If true, the attribute accepts matching expressions in the
+         * Eventarc PathPattern format.
+         *
+         * @param bool $pathPatternSupported
+         */
+        public function setPathPatternSupported($pathPatternSupported)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPathPatternSupported()
+        {
+        }
+        /**
+         * Output only. If true, the triggers for this provider should always specify
+         * a filter on these attributes. Trigger creation will fail otherwise.
+         *
+         * @param bool $required
+         */
+        public function setRequired($required)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRequired()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Eventarc\FilteringAttribute registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttribute()
-    {
-    }
-    /**
-     * Output only. Description of the purpose of the attribute.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. If true, the attribute accepts matching expressions in the
-     * Eventarc PathPattern format.
-     *
-     * @param bool $pathPatternSupported
-     */
-    public function setPathPatternSupported($pathPatternSupported)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPathPatternSupported()
-    {
-    }
-    /**
-     * Output only. If true, the triggers for this provider should always specify
-     * a filter on these attributes. Trigger creation will fail otherwise.
-     *
-     * @param bool $required
-     */
-    public function setRequired($required)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRequired()
+    class Google_Service_Eventarc_FilteringAttribute extends \Google\Service\Eventarc\FilteringAttribute
     {
     }
 }

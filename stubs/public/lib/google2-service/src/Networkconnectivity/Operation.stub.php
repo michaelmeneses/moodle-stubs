@@ -21,142 +21,151 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class Operation extends \Google\Collection
-{
-    protected $collection_key = 'traceSpans';
-    public $consumerId;
-    public $endTime;
-    public $extensions;
-    public $importance;
-    public $labels;
-    protected $logEntriesType = LogEntry::class;
-    protected $logEntriesDataType = 'array';
-    protected $metricValueSetsType = MetricValueSet::class;
-    protected $metricValueSetsDataType = 'array';
-    public $operationId;
-    public $operationName;
-    protected $quotaPropertiesType = QuotaProperties::class;
-    protected $quotaPropertiesDataType = '';
-    protected $resourcesType = ResourceInfo::class;
-    protected $resourcesDataType = 'array';
-    public $startTime;
-    protected $traceSpansType = TraceSpan::class;
-    protected $traceSpansDataType = 'array';
-    public $userLabels;
-    public function setConsumerId($consumerId)
+namespace Google\Service\Networkconnectivity {
+    class Operation extends \Google\Collection
     {
+        protected $collection_key = 'traceSpans';
+        public $consumerId;
+        public $endTime;
+        public $extensions;
+        public $importance;
+        public $labels;
+        protected $logEntriesType = LogEntry::class;
+        protected $logEntriesDataType = 'array';
+        protected $metricValueSetsType = MetricValueSet::class;
+        protected $metricValueSetsDataType = 'array';
+        public $operationId;
+        public $operationName;
+        protected $quotaPropertiesType = QuotaProperties::class;
+        protected $quotaPropertiesDataType = '';
+        protected $resourcesType = ResourceInfo::class;
+        protected $resourcesDataType = 'array';
+        public $startTime;
+        protected $traceSpansType = TraceSpan::class;
+        protected $traceSpansDataType = 'array';
+        public $userLabels;
+        public function setConsumerId($consumerId)
+        {
+        }
+        public function getConsumerId()
+        {
+        }
+        public function setEndTime($endTime)
+        {
+        }
+        public function getEndTime()
+        {
+        }
+        public function setExtensions($extensions)
+        {
+        }
+        public function getExtensions()
+        {
+        }
+        public function setImportance($importance)
+        {
+        }
+        public function getImportance()
+        {
+        }
+        public function setLabels($labels)
+        {
+        }
+        public function getLabels()
+        {
+        }
+        /**
+         * @param LogEntry[]
+         */
+        public function setLogEntries($logEntries)
+        {
+        }
+        /**
+         * @return LogEntry[]
+         */
+        public function getLogEntries()
+        {
+        }
+        /**
+         * @param MetricValueSet[]
+         */
+        public function setMetricValueSets($metricValueSets)
+        {
+        }
+        /**
+         * @return MetricValueSet[]
+         */
+        public function getMetricValueSets()
+        {
+        }
+        public function setOperationId($operationId)
+        {
+        }
+        public function getOperationId()
+        {
+        }
+        public function setOperationName($operationName)
+        {
+        }
+        public function getOperationName()
+        {
+        }
+        /**
+         * @param QuotaProperties
+         */
+        public function setQuotaProperties(QuotaProperties $quotaProperties)
+        {
+        }
+        /**
+         * @return QuotaProperties
+         */
+        public function getQuotaProperties()
+        {
+        }
+        /**
+         * @param ResourceInfo[]
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return ResourceInfo[]
+         */
+        public function getResources()
+        {
+        }
+        public function setStartTime($startTime)
+        {
+        }
+        public function getStartTime()
+        {
+        }
+        /**
+         * @param TraceSpan[]
+         */
+        public function setTraceSpans($traceSpans)
+        {
+        }
+        /**
+         * @return TraceSpan[]
+         */
+        public function getTraceSpans()
+        {
+        }
+        public function setUserLabels($userLabels)
+        {
+        }
+        public function getUserLabels()
+        {
+        }
     }
-    public function getConsumerId()
-    {
-    }
-    public function setEndTime($endTime)
-    {
-    }
-    public function getEndTime()
-    {
-    }
-    public function setExtensions($extensions)
-    {
-    }
-    public function getExtensions()
-    {
-    }
-    public function setImportance($importance)
-    {
-    }
-    public function getImportance()
-    {
-    }
-    public function setLabels($labels)
-    {
-    }
-    public function getLabels()
-    {
-    }
+}
+namespace {
     /**
-     * @param LogEntry[]
+     * Runtime class alias of \Google\Service\Networkconnectivity\Operation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setLogEntries($logEntries)
-    {
-    }
-    /**
-     * @return LogEntry[]
-     */
-    public function getLogEntries()
-    {
-    }
-    /**
-     * @param MetricValueSet[]
-     */
-    public function setMetricValueSets($metricValueSets)
-    {
-    }
-    /**
-     * @return MetricValueSet[]
-     */
-    public function getMetricValueSets()
-    {
-    }
-    public function setOperationId($operationId)
-    {
-    }
-    public function getOperationId()
-    {
-    }
-    public function setOperationName($operationName)
-    {
-    }
-    public function getOperationName()
-    {
-    }
-    /**
-     * @param QuotaProperties
-     */
-    public function setQuotaProperties(QuotaProperties $quotaProperties)
-    {
-    }
-    /**
-     * @return QuotaProperties
-     */
-    public function getQuotaProperties()
-    {
-    }
-    /**
-     * @param ResourceInfo[]
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return ResourceInfo[]
-     */
-    public function getResources()
-    {
-    }
-    public function setStartTime($startTime)
-    {
-    }
-    public function getStartTime()
-    {
-    }
-    /**
-     * @param TraceSpan[]
-     */
-    public function setTraceSpans($traceSpans)
-    {
-    }
-    /**
-     * @return TraceSpan[]
-     */
-    public function getTraceSpans()
-    {
-    }
-    public function setUserLabels($userLabels)
-    {
-    }
-    public function getUserLabels()
+    class Google_Service_Networkconnectivity_Operation extends \Google\Service\Networkconnectivity\Operation
     {
     }
 }

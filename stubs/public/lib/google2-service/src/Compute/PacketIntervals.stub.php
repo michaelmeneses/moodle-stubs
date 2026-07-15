@@ -21,153 +21,162 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class PacketIntervals extends \Google\Model
-{
-    public const DURATION_DURATION_UNSPECIFIED = 'DURATION_UNSPECIFIED';
-    public const DURATION_HOUR = 'HOUR';
-    /**
-     * From BfdSession object creation time.
-     */
-    public const DURATION_MAX = 'MAX';
-    public const DURATION_MINUTE = 'MINUTE';
-    /**
-     * Only applies to Echo packets. This shows the intervals between sending and
-     * receiving the same packet.
-     */
-    public const TYPE_LOOPBACK = 'LOOPBACK';
-    /**
-     * Intervals between received packets.
-     */
-    public const TYPE_RECEIVE = 'RECEIVE';
-    /**
-     * Intervals between transmitted packets.
-     */
-    public const TYPE_TRANSMIT = 'TRANSMIT';
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * Average observed inter-packet interval in milliseconds.
-     *
-     * @var string
-     */
-    public $avgMs;
-    /**
-     * From how long ago in the past these intervals were observed.
-     *
-     * @var string
-     */
-    public $duration;
-    /**
-     * Maximum observed inter-packet interval in milliseconds.
-     *
-     * @var string
-     */
-    public $maxMs;
-    /**
-     * Minimum observed inter-packet interval in milliseconds.
-     *
-     * @var string
-     */
-    public $minMs;
-    /**
-     * Number of inter-packet intervals from which these statistics were derived.
-     *
-     * @var string
-     */
-    public $numIntervals;
-    /**
-     * The type of packets for which inter-packet intervals were computed.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Average observed inter-packet interval in milliseconds.
-     *
-     * @param string $avgMs
-     */
-    public function setAvgMs($avgMs)
+namespace Google\Service\Compute {
+    class PacketIntervals extends \Google\Model
     {
+        public const DURATION_DURATION_UNSPECIFIED = 'DURATION_UNSPECIFIED';
+        public const DURATION_HOUR = 'HOUR';
+        /**
+         * From BfdSession object creation time.
+         */
+        public const DURATION_MAX = 'MAX';
+        public const DURATION_MINUTE = 'MINUTE';
+        /**
+         * Only applies to Echo packets. This shows the intervals between sending and
+         * receiving the same packet.
+         */
+        public const TYPE_LOOPBACK = 'LOOPBACK';
+        /**
+         * Intervals between received packets.
+         */
+        public const TYPE_RECEIVE = 'RECEIVE';
+        /**
+         * Intervals between transmitted packets.
+         */
+        public const TYPE_TRANSMIT = 'TRANSMIT';
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * Average observed inter-packet interval in milliseconds.
+         *
+         * @var string
+         */
+        public $avgMs;
+        /**
+         * From how long ago in the past these intervals were observed.
+         *
+         * @var string
+         */
+        public $duration;
+        /**
+         * Maximum observed inter-packet interval in milliseconds.
+         *
+         * @var string
+         */
+        public $maxMs;
+        /**
+         * Minimum observed inter-packet interval in milliseconds.
+         *
+         * @var string
+         */
+        public $minMs;
+        /**
+         * Number of inter-packet intervals from which these statistics were derived.
+         *
+         * @var string
+         */
+        public $numIntervals;
+        /**
+         * The type of packets for which inter-packet intervals were computed.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Average observed inter-packet interval in milliseconds.
+         *
+         * @param string $avgMs
+         */
+        public function setAvgMs($avgMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAvgMs()
+        {
+        }
+        /**
+         * From how long ago in the past these intervals were observed.
+         *
+         * Accepted values: DURATION_UNSPECIFIED, HOUR, MAX, MINUTE
+         *
+         * @param self::DURATION_* $duration
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return self::DURATION_*
+         */
+        public function getDuration()
+        {
+        }
+        /**
+         * Maximum observed inter-packet interval in milliseconds.
+         *
+         * @param string $maxMs
+         */
+        public function setMaxMs($maxMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxMs()
+        {
+        }
+        /**
+         * Minimum observed inter-packet interval in milliseconds.
+         *
+         * @param string $minMs
+         */
+        public function setMinMs($minMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinMs()
+        {
+        }
+        /**
+         * Number of inter-packet intervals from which these statistics were derived.
+         *
+         * @param string $numIntervals
+         */
+        public function setNumIntervals($numIntervals)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumIntervals()
+        {
+        }
+        /**
+         * The type of packets for which inter-packet intervals were computed.
+         *
+         * Accepted values: LOOPBACK, RECEIVE, TRANSMIT, TYPE_UNSPECIFIED
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\PacketIntervals registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvgMs()
-    {
-    }
-    /**
-     * From how long ago in the past these intervals were observed.
-     *
-     * Accepted values: DURATION_UNSPECIFIED, HOUR, MAX, MINUTE
-     *
-     * @param self::DURATION_* $duration
-     */
-    public function setDuration($duration)
-    {
-    }
-    /**
-     * @return self::DURATION_*
-     */
-    public function getDuration()
-    {
-    }
-    /**
-     * Maximum observed inter-packet interval in milliseconds.
-     *
-     * @param string $maxMs
-     */
-    public function setMaxMs($maxMs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxMs()
-    {
-    }
-    /**
-     * Minimum observed inter-packet interval in milliseconds.
-     *
-     * @param string $minMs
-     */
-    public function setMinMs($minMs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinMs()
-    {
-    }
-    /**
-     * Number of inter-packet intervals from which these statistics were derived.
-     *
-     * @param string $numIntervals
-     */
-    public function setNumIntervals($numIntervals)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumIntervals()
-    {
-    }
-    /**
-     * The type of packets for which inter-packet intervals were computed.
-     *
-     * Accepted values: LOOPBACK, RECEIVE, TRANSMIT, TYPE_UNSPECIFIED
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Compute_PacketIntervals extends \Google\Service\Compute\PacketIntervals
     {
     }
 }

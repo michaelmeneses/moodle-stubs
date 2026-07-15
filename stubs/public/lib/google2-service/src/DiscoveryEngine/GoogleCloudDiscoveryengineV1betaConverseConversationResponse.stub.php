@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaConverseConversationResponse extends \Google\Collection
-{
-    protected $collection_key = 'searchResults';
-    protected $conversationType = GoogleCloudDiscoveryengineV1betaConversation::class;
-    protected $conversationDataType = '';
-    /**
-     * @var string[]
-     */
-    public $relatedQuestions;
-    protected $replyType = GoogleCloudDiscoveryengineV1betaReply::class;
-    protected $replyDataType = '';
-    protected $searchResultsType = GoogleCloudDiscoveryengineV1betaSearchResponseSearchResult::class;
-    protected $searchResultsDataType = 'array';
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaConversation
-     */
-    public function setConversation(GoogleCloudDiscoveryengineV1betaConversation $conversation)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaConverseConversationResponse extends \Google\Collection
     {
+        protected $collection_key = 'searchResults';
+        protected $conversationType = GoogleCloudDiscoveryengineV1betaConversation::class;
+        protected $conversationDataType = '';
+        /**
+         * @var string[]
+         */
+        public $relatedQuestions;
+        protected $replyType = GoogleCloudDiscoveryengineV1betaReply::class;
+        protected $replyDataType = '';
+        protected $searchResultsType = GoogleCloudDiscoveryengineV1betaSearchResponseSearchResult::class;
+        protected $searchResultsDataType = 'array';
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaConversation
+         */
+        public function setConversation(GoogleCloudDiscoveryengineV1betaConversation $conversation)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaConversation
+         */
+        public function getConversation()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setRelatedQuestions($relatedQuestions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRelatedQuestions()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaReply
+         */
+        public function setReply(GoogleCloudDiscoveryengineV1betaReply $reply)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaReply
+         */
+        public function getReply()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaSearchResponseSearchResult[]
+         */
+        public function setSearchResults($searchResults)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaSearchResponseSearchResult[]
+         */
+        public function getSearchResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaConversation
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaConverseConversationResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversation()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setRelatedQuestions($relatedQuestions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRelatedQuestions()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaReply
-     */
-    public function setReply(GoogleCloudDiscoveryengineV1betaReply $reply)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaReply
-     */
-    public function getReply()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaSearchResponseSearchResult[]
-     */
-    public function setSearchResults($searchResults)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaSearchResponseSearchResult[]
-     */
-    public function getSearchResults()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaConverseConversationResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaConverseConversationResponse
     {
     }
 }

@@ -21,71 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DomainsRDAP\Resource;
-
-/**
- * The "v1" collection of methods.
- * Typical usage is:
- *  <code>
- *   $domainsrdapService = new Google\Service\DomainsRDAP(...);
- *   $v1 = $domainsrdapService->v1;
- *  </code>
- */
-class V1 extends \Google\Service\Resource
-{
+namespace Google\Service\DomainsRDAP\Resource {
+    use Google\Service\DomainsRDAP\HttpBody;
+    use Google\Service\DomainsRDAP\RdapResponse;
     /**
-     * The RDAP API recognizes this command from the RDAP specification but does not
-     * support it. The response is a formatted 501 error. (v1.getDomains)
-     *
-     * @param array $optParams Optional parameters.
-     * @return RdapResponse
-     * @throws \Google\Service\Exception
+     * The "v1" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $domainsrdapService = new Google\Service\DomainsRDAP(...);
+     *   $v1 = $domainsrdapService->v1;
+     *  </code>
      */
-    public function getDomains($optParams = [])
+    class V1 extends \Google\Service\Resource
     {
+        /**
+         * The RDAP API recognizes this command from the RDAP specification but does not
+         * support it. The response is a formatted 501 error. (v1.getDomains)
+         *
+         * @param array $optParams Optional parameters.
+         * @return RdapResponse
+         * @throws \Google\Service\Exception
+         */
+        public function getDomains($optParams = [])
+        {
+        }
+        /**
+         * The RDAP API recognizes this command from the RDAP specification but does not
+         * support it. The response is a formatted 501 error. (v1.getEntities)
+         *
+         * @param array $optParams Optional parameters.
+         * @return RdapResponse
+         * @throws \Google\Service\Exception
+         */
+        public function getEntities($optParams = [])
+        {
+        }
+        /**
+         * Get help information for the RDAP API, including links to documentation.
+         * (v1.getHelp)
+         *
+         * @param array $optParams Optional parameters.
+         * @return HttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function getHelp($optParams = [])
+        {
+        }
+        /**
+         * The RDAP API recognizes this command from the RDAP specification but does not
+         * support it. The response is a formatted 501 error. (v1.getIp)
+         *
+         * @param array $optParams Optional parameters.
+         * @return HttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function getIp($optParams = [])
+        {
+        }
+        /**
+         * The RDAP API recognizes this command from the RDAP specification but does not
+         * support it. The response is a formatted 501 error. (v1.getNameservers)
+         *
+         * @param array $optParams Optional parameters.
+         * @return RdapResponse
+         * @throws \Google\Service\Exception
+         */
+        public function getNameservers($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * The RDAP API recognizes this command from the RDAP specification but does not
-     * support it. The response is a formatted 501 error. (v1.getEntities)
-     *
-     * @param array $optParams Optional parameters.
-     * @return RdapResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\DomainsRDAP\Resource\V1 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntities($optParams = [])
-    {
-    }
-    /**
-     * Get help information for the RDAP API, including links to documentation.
-     * (v1.getHelp)
-     *
-     * @param array $optParams Optional parameters.
-     * @return HttpBody
-     * @throws \Google\Service\Exception
-     */
-    public function getHelp($optParams = [])
-    {
-    }
-    /**
-     * The RDAP API recognizes this command from the RDAP specification but does not
-     * support it. The response is a formatted 501 error. (v1.getIp)
-     *
-     * @param array $optParams Optional parameters.
-     * @return HttpBody
-     * @throws \Google\Service\Exception
-     */
-    public function getIp($optParams = [])
-    {
-    }
-    /**
-     * The RDAP API recognizes this command from the RDAP specification but does not
-     * support it. The response is a formatted 501 error. (v1.getNameservers)
-     *
-     * @param array $optParams Optional parameters.
-     * @return RdapResponse
-     * @throws \Google\Service\Exception
-     */
-    public function getNameservers($optParams = [])
+    class Google_Service_DomainsRDAP_Resource_V1 extends \Google\Service\DomainsRDAP\Resource\V1
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaToggleHttpRequest extends \Google\Model
-{
-    /**
-     * Required. REQUIRED: True if http call feature should be turned on for this
-     * region
-     *
-     * @var bool
-     */
-    public $enableHttpCall;
-    /**
-     * Required. REQUIRED: True if http call feature should be turned on for this
-     * region
-     *
-     * @param bool $enableHttpCall
-     */
-    public function setEnableHttpCall($enableHttpCall)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaToggleHttpRequest extends \Google\Model
     {
+        /**
+         * Required. REQUIRED: True if http call feature should be turned on for this
+         * region
+         *
+         * @var bool
+         */
+        public $enableHttpCall;
+        /**
+         * Required. REQUIRED: True if http call feature should be turned on for this
+         * region
+         *
+         * @param bool $enableHttpCall
+         */
+        public function setEnableHttpCall($enableHttpCall)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableHttpCall()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaToggleHttpRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableHttpCall()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaToggleHttpRequest extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaToggleHttpRequest
     {
     }
 }

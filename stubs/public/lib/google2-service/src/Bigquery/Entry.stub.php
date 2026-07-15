@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class Entry extends \Google\Model
-{
-    /**
-     * Number of items being predicted as this label.
-     *
-     * @var string
-     */
-    public $itemCount;
-    /**
-     * The predicted label. For confidence_threshold > 0, we will also add an
-     * entry indicating the number of items under the confidence threshold.
-     *
-     * @var string
-     */
-    public $predictedLabel;
-    /**
-     * Number of items being predicted as this label.
-     *
-     * @param string $itemCount
-     */
-    public function setItemCount($itemCount)
+namespace Google\Service\Bigquery {
+    class Entry extends \Google\Model
     {
+        /**
+         * Number of items being predicted as this label.
+         *
+         * @var string
+         */
+        public $itemCount;
+        /**
+         * The predicted label. For confidence_threshold > 0, we will also add an
+         * entry indicating the number of items under the confidence threshold.
+         *
+         * @var string
+         */
+        public $predictedLabel;
+        /**
+         * Number of items being predicted as this label.
+         *
+         * @param string $itemCount
+         */
+        public function setItemCount($itemCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getItemCount()
+        {
+        }
+        /**
+         * The predicted label. For confidence_threshold > 0, we will also add an
+         * entry indicating the number of items under the confidence threshold.
+         *
+         * @param string $predictedLabel
+         */
+        public function setPredictedLabel($predictedLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPredictedLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\Entry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItemCount()
-    {
-    }
-    /**
-     * The predicted label. For confidence_threshold > 0, we will also add an
-     * entry indicating the number of items under the confidence threshold.
-     *
-     * @param string $predictedLabel
-     */
-    public function setPredictedLabel($predictedLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPredictedLabel()
+    class Google_Service_Bigquery_Entry extends \Google\Service\Bigquery\Entry
     {
     }
 }

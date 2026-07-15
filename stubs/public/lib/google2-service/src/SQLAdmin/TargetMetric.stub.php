@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class TargetMetric extends \Google\Model
-{
-    /**
-     * The metric name to be used for auto scaling.
-     *
-     * @var string
-     */
-    public $metric;
-    /**
-     * The target value for the metric.
-     *
-     * @var float
-     */
-    public $targetValue;
-    /**
-     * The metric name to be used for auto scaling.
-     *
-     * @param string $metric
-     */
-    public function setMetric($metric)
+namespace Google\Service\SQLAdmin {
+    class TargetMetric extends \Google\Model
     {
+        /**
+         * The metric name to be used for auto scaling.
+         *
+         * @var string
+         */
+        public $metric;
+        /**
+         * The target value for the metric.
+         *
+         * @var float
+         */
+        public $targetValue;
+        /**
+         * The metric name to be used for auto scaling.
+         *
+         * @param string $metric
+         */
+        public function setMetric($metric)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetric()
+        {
+        }
+        /**
+         * The target value for the metric.
+         *
+         * @param float $targetValue
+         */
+        public function setTargetValue($targetValue)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getTargetValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\TargetMetric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetric()
-    {
-    }
-    /**
-     * The target value for the metric.
-     *
-     * @param float $targetValue
-     */
-    public function setTargetValue($targetValue)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getTargetValue()
+    class Google_Service_SQLAdmin_TargetMetric extends \Google\Service\SQLAdmin\TargetMetric
     {
     }
 }

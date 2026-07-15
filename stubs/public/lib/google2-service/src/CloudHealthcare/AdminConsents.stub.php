@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class AdminConsents extends \Google\Collection
-{
-    protected $collection_key = 'names';
-    /**
-     * Optional. The versioned names of the admin Consent resource(s), in the
-     * format `projects/{project_id}/locations/{location}/datasets/{dataset_id}/fh
-     * irStores/{fhir_store_id}/fhir/Consent/{resource_id}/_history/{version_id}`.
-     * For FHIR stores with `disable_resource_versioning=true`, the format is `pro
-     * jects/{project_id}/locations/{location}/datasets/{dataset_id}/fhirStores/{f
-     * hir_store_id}/fhir/Consent/{resource_id}`.
-     *
-     * @var string[]
-     */
-    public $names;
-    /**
-     * Optional. The versioned names of the admin Consent resource(s), in the
-     * format `projects/{project_id}/locations/{location}/datasets/{dataset_id}/fh
-     * irStores/{fhir_store_id}/fhir/Consent/{resource_id}/_history/{version_id}`.
-     * For FHIR stores with `disable_resource_versioning=true`, the format is `pro
-     * jects/{project_id}/locations/{location}/datasets/{dataset_id}/fhirStores/{f
-     * hir_store_id}/fhir/Consent/{resource_id}`.
-     *
-     * @param string[] $names
-     */
-    public function setNames($names)
+namespace Google\Service\CloudHealthcare {
+    class AdminConsents extends \Google\Collection
     {
+        protected $collection_key = 'names';
+        /**
+         * Optional. The versioned names of the admin Consent resource(s), in the
+         * format `projects/{project_id}/locations/{location}/datasets/{dataset_id}/fh
+         * irStores/{fhir_store_id}/fhir/Consent/{resource_id}/_history/{version_id}`.
+         * For FHIR stores with `disable_resource_versioning=true`, the format is `pro
+         * jects/{project_id}/locations/{location}/datasets/{dataset_id}/fhirStores/{f
+         * hir_store_id}/fhir/Consent/{resource_id}`.
+         *
+         * @var string[]
+         */
+        public $names;
+        /**
+         * Optional. The versioned names of the admin Consent resource(s), in the
+         * format `projects/{project_id}/locations/{location}/datasets/{dataset_id}/fh
+         * irStores/{fhir_store_id}/fhir/Consent/{resource_id}/_history/{version_id}`.
+         * For FHIR stores with `disable_resource_versioning=true`, the format is `pro
+         * jects/{project_id}/locations/{location}/datasets/{dataset_id}/fhirStores/{f
+         * hir_store_id}/fhir/Consent/{resource_id}`.
+         *
+         * @param string[] $names
+         */
+        public function setNames($names)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudHealthcare\AdminConsents registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNames()
+    class Google_Service_CloudHealthcare_AdminConsents extends \Google\Service\CloudHealthcare\AdminConsents
     {
     }
 }

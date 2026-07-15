@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1VertexAiSearchConfig extends \Google\Model
-{
-    /**
-     * Vertex AI Search Serving Config resource full name. For example, `projects/
-     * {project}/locations/{location}/collections/{collection}/engines/{engine}/se
-     * rvingConfigs/{serving_config}` or `projects/{project}/locations/{location}/
-     * collections/{collection}/dataStores/{data_store}/servingConfigs/{serving_co
-     * nfig}`.
-     *
-     * @var string
-     */
-    public $servingConfig;
-    /**
-     * Vertex AI Search Serving Config resource full name. For example, `projects/
-     * {project}/locations/{location}/collections/{collection}/engines/{engine}/se
-     * rvingConfigs/{serving_config}` or `projects/{project}/locations/{location}/
-     * collections/{collection}/dataStores/{data_store}/servingConfigs/{serving_co
-     * nfig}`.
-     *
-     * @param string $servingConfig
-     */
-    public function setServingConfig($servingConfig)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1VertexAiSearchConfig extends \Google\Model
     {
+        /**
+         * Vertex AI Search Serving Config resource full name. For example, `projects/
+         * {project}/locations/{location}/collections/{collection}/engines/{engine}/se
+         * rvingConfigs/{serving_config}` or `projects/{project}/locations/{location}/
+         * collections/{collection}/dataStores/{data_store}/servingConfigs/{serving_co
+         * nfig}`.
+         *
+         * @var string
+         */
+        public $servingConfig;
+        /**
+         * Vertex AI Search Serving Config resource full name. For example, `projects/
+         * {project}/locations/{location}/collections/{collection}/engines/{engine}/se
+         * rvingConfigs/{serving_config}` or `projects/{project}/locations/{location}/
+         * collections/{collection}/dataStores/{data_store}/servingConfigs/{serving_co
+         * nfig}`.
+         *
+         * @param string $servingConfig
+         */
+        public function setServingConfig($servingConfig)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServingConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1VertexAiSearchConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServingConfig()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1VertexAiSearchConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1VertexAiSearchConfig
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class ListRolesResponse extends \Google\Collection
-{
-    protected $collection_key = 'roles';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $rolesType = Role::class;
-    protected $rolesDataType = 'array';
-    public $roles;
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Iam {
+    class ListRolesResponse extends \Google\Collection
     {
+        protected $collection_key = 'roles';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $rolesType = Role::class;
+        protected $rolesDataType = 'array';
+        public $roles;
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param Role[]
+         */
+        public function setRoles($roles)
+        {
+        }
+        /**
+         * @return Role[]
+         */
+        public function getRoles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Iam\ListRolesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param Role[]
-     */
-    public function setRoles($roles)
-    {
-    }
-    /**
-     * @return Role[]
-     */
-    public function getRoles()
+    class Google_Service_Iam_ListRolesResponse extends \Google\Service\Iam\ListRolesResponse
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class ListSnoozesResponse extends \Google\Collection
-{
-    protected $collection_key = 'snoozes';
-    /**
-     * Page token for repeated calls to ListSnoozes, to fetch additional pages of
-     * results. If this is empty or missing, there are no more pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $snoozesType = Snooze::class;
-    protected $snoozesDataType = 'array';
-    /**
-     * Page token for repeated calls to ListSnoozes, to fetch additional pages of
-     * results. If this is empty or missing, there are no more pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Monitoring {
+    class ListSnoozesResponse extends \Google\Collection
     {
+        protected $collection_key = 'snoozes';
+        /**
+         * Page token for repeated calls to ListSnoozes, to fetch additional pages of
+         * results. If this is empty or missing, there are no more pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $snoozesType = Snooze::class;
+        protected $snoozesDataType = 'array';
+        /**
+         * Page token for repeated calls to ListSnoozes, to fetch additional pages of
+         * results. If this is empty or missing, there are no more pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Snoozes matching this list call.
+         *
+         * @param Snooze[] $snoozes
+         */
+        public function setSnoozes($snoozes)
+        {
+        }
+        /**
+         * @return Snooze[]
+         */
+        public function getSnoozes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\ListSnoozesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Snoozes matching this list call.
-     *
-     * @param Snooze[] $snoozes
-     */
-    public function setSnoozes($snoozes)
-    {
-    }
-    /**
-     * @return Snooze[]
-     */
-    public function getSnoozes()
+    class Google_Service_Monitoring_ListSnoozesResponse extends \Google\Service\Monitoring\ListSnoozesResponse
     {
     }
 }

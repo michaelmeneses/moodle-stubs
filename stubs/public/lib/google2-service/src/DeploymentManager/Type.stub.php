@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeploymentManager;
-
-class Type extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * Output only. Creation timestamp in RFC3339 text format.
-     *
-     * @var string
-     */
-    public $insertTime;
-    /**
-     * Name of the type.
-     *
-     * @var string
-     */
-    public $name;
-    protected $operationType = Operation::class;
-    protected $operationDataType = '';
-    /**
-     * Output only. Server defined URL for the resource.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\DeploymentManager {
+    class Type extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * Output only. Creation timestamp in RFC3339 text format.
+         *
+         * @var string
+         */
+        public $insertTime;
+        /**
+         * Name of the type.
+         *
+         * @var string
+         */
+        public $name;
+        protected $operationType = Operation::class;
+        protected $operationDataType = '';
+        /**
+         * Output only. Server defined URL for the resource.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Output only. Creation timestamp in RFC3339 text format.
+         *
+         * @param string $insertTime
+         */
+        public function setInsertTime($insertTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInsertTime()
+        {
+        }
+        /**
+         * Name of the type.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The Operation that most recently ran, or is currently running,
+         * on this type.
+         *
+         * @param Operation $operation
+         */
+        public function setOperation(Operation $operation)
+        {
+        }
+        /**
+         * @return Operation
+         */
+        public function getOperation()
+        {
+        }
+        /**
+         * Output only. Server defined URL for the resource.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DeploymentManager\Type registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Output only. Creation timestamp in RFC3339 text format.
-     *
-     * @param string $insertTime
-     */
-    public function setInsertTime($insertTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInsertTime()
-    {
-    }
-    /**
-     * Name of the type.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The Operation that most recently ran, or is currently running,
-     * on this type.
-     *
-     * @param Operation $operation
-     */
-    public function setOperation(Operation $operation)
-    {
-    }
-    /**
-     * @return Operation
-     */
-    public function getOperation()
-    {
-    }
-    /**
-     * Output only. Server defined URL for the resource.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
+    class Google_Service_DeploymentManager_Type extends \Google\Service\DeploymentManager\Type
     {
     }
 }

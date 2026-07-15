@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class ConferenceSolutionKey extends \Google\Model
-{
-    /**
-     * The conference solution type. If a client encounters an unfamiliar or empty
-     * type, it should still be able to display the entry points. However, it
-     * should disallow modifications. The possible values are:   - "eventHangout"
-     * for Hangouts for consumers (deprecated; existing events may show this
-     * conference solution type but new conferences cannot be created) -
-     * "eventNamedHangout" for classic Hangouts for Google Workspace users
-     * (deprecated; existing events may show this conference solution type but new
-     * conferences cannot be created) - "hangoutsMeet" for Google Meet
-     * (http://meet.google.com) - "addOn" for 3P conference providers
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The conference solution type. If a client encounters an unfamiliar or empty
-     * type, it should still be able to display the entry points. However, it
-     * should disallow modifications. The possible values are:   - "eventHangout"
-     * for Hangouts for consumers (deprecated; existing events may show this
-     * conference solution type but new conferences cannot be created) -
-     * "eventNamedHangout" for classic Hangouts for Google Workspace users
-     * (deprecated; existing events may show this conference solution type but new
-     * conferences cannot be created) - "hangoutsMeet" for Google Meet
-     * (http://meet.google.com) - "addOn" for 3P conference providers
-     *
-     * @param string $type
-     */
-    public function setType($type)
+namespace Google\Service\Calendar {
+    class ConferenceSolutionKey extends \Google\Model
     {
+        /**
+         * The conference solution type. If a client encounters an unfamiliar or empty
+         * type, it should still be able to display the entry points. However, it
+         * should disallow modifications. The possible values are:   - "eventHangout"
+         * for Hangouts for consumers (deprecated; existing events may show this
+         * conference solution type but new conferences cannot be created) -
+         * "eventNamedHangout" for classic Hangouts for Google Workspace users
+         * (deprecated; existing events may show this conference solution type but new
+         * conferences cannot be created) - "hangoutsMeet" for Google Meet
+         * (http://meet.google.com) - "addOn" for 3P conference providers
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The conference solution type. If a client encounters an unfamiliar or empty
+         * type, it should still be able to display the entry points. However, it
+         * should disallow modifications. The possible values are:   - "eventHangout"
+         * for Hangouts for consumers (deprecated; existing events may show this
+         * conference solution type but new conferences cannot be created) -
+         * "eventNamedHangout" for classic Hangouts for Google Workspace users
+         * (deprecated; existing events may show this conference solution type but new
+         * conferences cannot be created) - "hangoutsMeet" for Google Meet
+         * (http://meet.google.com) - "addOn" for 3P conference providers
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Calendar\ConferenceSolutionKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_Calendar_ConferenceSolutionKey extends \Google\Service\Calendar\ConferenceSolutionKey
     {
     }
 }

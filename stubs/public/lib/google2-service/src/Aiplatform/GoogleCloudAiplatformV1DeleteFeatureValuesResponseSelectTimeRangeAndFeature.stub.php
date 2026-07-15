@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1DeleteFeatureValuesResponseSelectTimeRangeAndFeature extends \Google\Model
-{
-    /**
-     * The count of the features or columns impacted. This is the same as the
-     * feature count in the request.
-     *
-     * @var string
-     */
-    public $impactedFeatureCount;
-    /**
-     * The count of modified entity rows in the offline storage. Each row
-     * corresponds to the combination of an entity ID and a timestamp. One entity
-     * ID can have multiple rows in the offline storage. Within each row, only the
-     * features specified in the request are deleted.
-     *
-     * @var string
-     */
-    public $offlineStorageModifiedEntityRowCount;
-    /**
-     * The count of modified entities in the online storage. Each entity ID
-     * corresponds to one entity. Within each entity, only the features specified
-     * in the request are deleted.
-     *
-     * @var string
-     */
-    public $onlineStorageModifiedEntityCount;
-    /**
-     * The count of the features or columns impacted. This is the same as the
-     * feature count in the request.
-     *
-     * @param string $impactedFeatureCount
-     */
-    public function setImpactedFeatureCount($impactedFeatureCount)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1DeleteFeatureValuesResponseSelectTimeRangeAndFeature extends \Google\Model
     {
+        /**
+         * The count of the features or columns impacted. This is the same as the
+         * feature count in the request.
+         *
+         * @var string
+         */
+        public $impactedFeatureCount;
+        /**
+         * The count of modified entity rows in the offline storage. Each row
+         * corresponds to the combination of an entity ID and a timestamp. One entity
+         * ID can have multiple rows in the offline storage. Within each row, only the
+         * features specified in the request are deleted.
+         *
+         * @var string
+         */
+        public $offlineStorageModifiedEntityRowCount;
+        /**
+         * The count of modified entities in the online storage. Each entity ID
+         * corresponds to one entity. Within each entity, only the features specified
+         * in the request are deleted.
+         *
+         * @var string
+         */
+        public $onlineStorageModifiedEntityCount;
+        /**
+         * The count of the features or columns impacted. This is the same as the
+         * feature count in the request.
+         *
+         * @param string $impactedFeatureCount
+         */
+        public function setImpactedFeatureCount($impactedFeatureCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImpactedFeatureCount()
+        {
+        }
+        /**
+         * The count of modified entity rows in the offline storage. Each row
+         * corresponds to the combination of an entity ID and a timestamp. One entity
+         * ID can have multiple rows in the offline storage. Within each row, only the
+         * features specified in the request are deleted.
+         *
+         * @param string $offlineStorageModifiedEntityRowCount
+         */
+        public function setOfflineStorageModifiedEntityRowCount($offlineStorageModifiedEntityRowCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOfflineStorageModifiedEntityRowCount()
+        {
+        }
+        /**
+         * The count of modified entities in the online storage. Each entity ID
+         * corresponds to one entity. Within each entity, only the features specified
+         * in the request are deleted.
+         *
+         * @param string $onlineStorageModifiedEntityCount
+         */
+        public function setOnlineStorageModifiedEntityCount($onlineStorageModifiedEntityCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOnlineStorageModifiedEntityCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1DeleteFeatureValuesResponseSelectTimeRangeAndFeature registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImpactedFeatureCount()
-    {
-    }
-    /**
-     * The count of modified entity rows in the offline storage. Each row
-     * corresponds to the combination of an entity ID and a timestamp. One entity
-     * ID can have multiple rows in the offline storage. Within each row, only the
-     * features specified in the request are deleted.
-     *
-     * @param string $offlineStorageModifiedEntityRowCount
-     */
-    public function setOfflineStorageModifiedEntityRowCount($offlineStorageModifiedEntityRowCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOfflineStorageModifiedEntityRowCount()
-    {
-    }
-    /**
-     * The count of modified entities in the online storage. Each entity ID
-     * corresponds to one entity. Within each entity, only the features specified
-     * in the request are deleted.
-     *
-     * @param string $onlineStorageModifiedEntityCount
-     */
-    public function setOnlineStorageModifiedEntityCount($onlineStorageModifiedEntityCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOnlineStorageModifiedEntityCount()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1DeleteFeatureValuesResponseSelectTimeRangeAndFeature extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1DeleteFeatureValuesResponseSelectTimeRangeAndFeature
     {
     }
 }

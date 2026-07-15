@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class VerificationCodes extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $itemsType = VerificationCode::class;
-    protected $itemsDataType = 'array';
-    /**
-     * The type of the resource. This is always
-     * `admin#directory#verificationCodesList`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Directory {
+    class VerificationCodes extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $itemsType = VerificationCode::class;
+        protected $itemsDataType = 'array';
+        /**
+         * The type of the resource. This is always
+         * `admin#directory#verificationCodesList`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * A list of verification code resources.
+         *
+         * @param VerificationCode[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return VerificationCode[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * The type of the resource. This is always
+         * `admin#directory#verificationCodesList`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\VerificationCodes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * A list of verification code resources.
-     *
-     * @param VerificationCode[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return VerificationCode[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * The type of the resource. This is always
-     * `admin#directory#verificationCodesList`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Directory_VerificationCodes extends \Google\Service\Directory\VerificationCodes
     {
     }
 }

@@ -21,121 +21,130 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class InstanceProperties extends \Google\Collection
-{
-    protected $collection_key = 'roles';
-    /**
-     * Optional. Instance number.
-     *
-     * @var string
-     */
-    public $instanceNumber;
-    /**
-     * Optional. Instance machine type.
-     *
-     * @var string
-     */
-    public $machineType;
-    /**
-     * Optional. Instance roles.
-     *
-     * @var string[]
-     */
-    public $roles;
-    protected $sapInstancePropertiesType = SapInstanceProperties::class;
-    protected $sapInstancePropertiesDataType = '';
-    /**
-     * Optional. Instance status.
-     *
-     * @var string
-     */
-    public $status;
-    protected $upcomingMaintenanceEventType = UpcomingMaintenanceEvent::class;
-    protected $upcomingMaintenanceEventDataType = '';
-    /**
-     * Optional. Instance number.
-     *
-     * @param string $instanceNumber
-     */
-    public function setInstanceNumber($instanceNumber)
+namespace Google\Service\WorkloadManager {
+    class InstanceProperties extends \Google\Collection
     {
+        protected $collection_key = 'roles';
+        /**
+         * Optional. Instance number.
+         *
+         * @var string
+         */
+        public $instanceNumber;
+        /**
+         * Optional. Instance machine type.
+         *
+         * @var string
+         */
+        public $machineType;
+        /**
+         * Optional. Instance roles.
+         *
+         * @var string[]
+         */
+        public $roles;
+        protected $sapInstancePropertiesType = SapInstanceProperties::class;
+        protected $sapInstancePropertiesDataType = '';
+        /**
+         * Optional. Instance status.
+         *
+         * @var string
+         */
+        public $status;
+        protected $upcomingMaintenanceEventType = UpcomingMaintenanceEvent::class;
+        protected $upcomingMaintenanceEventDataType = '';
+        /**
+         * Optional. Instance number.
+         *
+         * @param string $instanceNumber
+         */
+        public function setInstanceNumber($instanceNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceNumber()
+        {
+        }
+        /**
+         * Optional. Instance machine type.
+         *
+         * @param string $machineType
+         */
+        public function setMachineType($machineType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMachineType()
+        {
+        }
+        /**
+         * Optional. Instance roles.
+         *
+         * @param string[] $roles
+         */
+        public function setRoles($roles)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRoles()
+        {
+        }
+        /**
+         * Optional. SAP Instance properties.
+         *
+         * @param SapInstanceProperties $sapInstanceProperties
+         */
+        public function setSapInstanceProperties(SapInstanceProperties $sapInstanceProperties)
+        {
+        }
+        /**
+         * @return SapInstanceProperties
+         */
+        public function getSapInstanceProperties()
+        {
+        }
+        /**
+         * Optional. Instance status.
+         *
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Optional. the next maintenance event on VM
+         *
+         * @param UpcomingMaintenanceEvent $upcomingMaintenanceEvent
+         */
+        public function setUpcomingMaintenanceEvent(UpcomingMaintenanceEvent $upcomingMaintenanceEvent)
+        {
+        }
+        /**
+         * @return UpcomingMaintenanceEvent
+         */
+        public function getUpcomingMaintenanceEvent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\InstanceProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceNumber()
-    {
-    }
-    /**
-     * Optional. Instance machine type.
-     *
-     * @param string $machineType
-     */
-    public function setMachineType($machineType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMachineType()
-    {
-    }
-    /**
-     * Optional. Instance roles.
-     *
-     * @param string[] $roles
-     */
-    public function setRoles($roles)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRoles()
-    {
-    }
-    /**
-     * Optional. SAP Instance properties.
-     *
-     * @param SapInstanceProperties $sapInstanceProperties
-     */
-    public function setSapInstanceProperties(SapInstanceProperties $sapInstanceProperties)
-    {
-    }
-    /**
-     * @return SapInstanceProperties
-     */
-    public function getSapInstanceProperties()
-    {
-    }
-    /**
-     * Optional. Instance status.
-     *
-     * @param string $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * Optional. the next maintenance event on VM
-     *
-     * @param UpcomingMaintenanceEvent $upcomingMaintenanceEvent
-     */
-    public function setUpcomingMaintenanceEvent(UpcomingMaintenanceEvent $upcomingMaintenanceEvent)
-    {
-    }
-    /**
-     * @return UpcomingMaintenanceEvent
-     */
-    public function getUpcomingMaintenanceEvent()
+    class Google_Service_WorkloadManager_InstanceProperties extends \Google\Service\WorkloadManager\InstanceProperties
     {
     }
 }

@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1StudySpecMedianAutomatedStoppingSpec extends \Google\Model
-{
-    /**
-     * True if median automated stopping rule applies on
-     * Measurement.elapsed_duration. It means that elapsed_duration field of
-     * latest measurement of current Trial is used to compute median objective
-     * value for each completed Trials.
-     *
-     * @var bool
-     */
-    public $useElapsedDuration;
-    /**
-     * True if median automated stopping rule applies on
-     * Measurement.elapsed_duration. It means that elapsed_duration field of
-     * latest measurement of current Trial is used to compute median objective
-     * value for each completed Trials.
-     *
-     * @param bool $useElapsedDuration
-     */
-    public function setUseElapsedDuration($useElapsedDuration)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1StudySpecMedianAutomatedStoppingSpec extends \Google\Model
     {
+        /**
+         * True if median automated stopping rule applies on
+         * Measurement.elapsed_duration. It means that elapsed_duration field of
+         * latest measurement of current Trial is used to compute median objective
+         * value for each completed Trials.
+         *
+         * @var bool
+         */
+        public $useElapsedDuration;
+        /**
+         * True if median automated stopping rule applies on
+         * Measurement.elapsed_duration. It means that elapsed_duration field of
+         * latest measurement of current Trial is used to compute median objective
+         * value for each completed Trials.
+         *
+         * @param bool $useElapsedDuration
+         */
+        public function setUseElapsedDuration($useElapsedDuration)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseElapsedDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1StudySpecMedianAutomatedStoppingSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUseElapsedDuration()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1StudySpecMedianAutomatedStoppingSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1StudySpecMedianAutomatedStoppingSpec
     {
     }
 }

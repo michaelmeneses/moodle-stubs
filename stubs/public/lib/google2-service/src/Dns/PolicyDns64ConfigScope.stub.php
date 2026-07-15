@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class PolicyDns64ConfigScope extends \Google\Model
-{
-    /**
-     * Controls whether DNS64 is enabled globally for all networks bound to the
-     * policy.
-     *
-     * @var bool
-     */
-    public $allQueries;
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * Controls whether DNS64 is enabled globally for all networks bound to the
-     * policy.
-     *
-     * @param bool $allQueries
-     */
-    public function setAllQueries($allQueries)
+namespace Google\Service\Dns {
+    class PolicyDns64ConfigScope extends \Google\Model
     {
+        /**
+         * Controls whether DNS64 is enabled globally for all networks bound to the
+         * policy.
+         *
+         * @var bool
+         */
+        public $allQueries;
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * Controls whether DNS64 is enabled globally for all networks bound to the
+         * policy.
+         *
+         * @param bool $allQueries
+         */
+        public function setAllQueries($allQueries)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllQueries()
+        {
+        }
+        /**
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dns\PolicyDns64ConfigScope registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllQueries()
-    {
-    }
-    /**
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Dns_PolicyDns64ConfigScope extends \Google\Service\Dns\PolicyDns64ConfigScope
     {
     }
 }

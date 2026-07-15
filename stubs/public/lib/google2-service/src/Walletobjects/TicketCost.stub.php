@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class TicketCost extends \Google\Model
-{
-    protected $discountMessageType = LocalizedString::class;
-    protected $discountMessageDataType = '';
-    protected $faceValueType = Money::class;
-    protected $faceValueDataType = '';
-    protected $purchasePriceType = Money::class;
-    protected $purchasePriceDataType = '';
-    /**
-     * A message describing any kind of discount that was applied.
-     *
-     * @param LocalizedString $discountMessage
-     */
-    public function setDiscountMessage(LocalizedString $discountMessage)
+namespace Google\Service\Walletobjects {
+    class TicketCost extends \Google\Model
     {
+        protected $discountMessageType = LocalizedString::class;
+        protected $discountMessageDataType = '';
+        protected $faceValueType = Money::class;
+        protected $faceValueDataType = '';
+        protected $purchasePriceType = Money::class;
+        protected $purchasePriceDataType = '';
+        /**
+         * A message describing any kind of discount that was applied.
+         *
+         * @param LocalizedString $discountMessage
+         */
+        public function setDiscountMessage(LocalizedString $discountMessage)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getDiscountMessage()
+        {
+        }
+        /**
+         * The face value of the ticket.
+         *
+         * @param Money $faceValue
+         */
+        public function setFaceValue(Money $faceValue)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getFaceValue()
+        {
+        }
+        /**
+         * The actual purchase price of the ticket, after tax and/or discounts.
+         *
+         * @param Money $purchasePrice
+         */
+        public function setPurchasePrice(Money $purchasePrice)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getPurchasePrice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LocalizedString
+     * Runtime class alias of \Google\Service\Walletobjects\TicketCost registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiscountMessage()
-    {
-    }
-    /**
-     * The face value of the ticket.
-     *
-     * @param Money $faceValue
-     */
-    public function setFaceValue(Money $faceValue)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getFaceValue()
-    {
-    }
-    /**
-     * The actual purchase price of the ticket, after tax and/or discounts.
-     *
-     * @param Money $purchasePrice
-     */
-    public function setPurchasePrice(Money $purchasePrice)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getPurchasePrice()
+    class Google_Service_Walletobjects_TicketCost extends \Google\Service\Walletobjects\TicketCost
     {
     }
 }

@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class JobExecutionStageInfo extends \Google\Collection
-{
-    protected $collection_key = 'stepName';
-    /**
-     * The steps associated with the execution stage. Note that stages may have
-     * several steps, and that a given step might be run by more than one stage.
-     *
-     * @var string[]
-     */
-    public $stepName;
-    /**
-     * The steps associated with the execution stage. Note that stages may have
-     * several steps, and that a given step might be run by more than one stage.
-     *
-     * @param string[] $stepName
-     */
-    public function setStepName($stepName)
+namespace Google\Service\Dataflow {
+    class JobExecutionStageInfo extends \Google\Collection
     {
+        protected $collection_key = 'stepName';
+        /**
+         * The steps associated with the execution stage. Note that stages may have
+         * several steps, and that a given step might be run by more than one stage.
+         *
+         * @var string[]
+         */
+        public $stepName;
+        /**
+         * The steps associated with the execution stage. Note that stages may have
+         * several steps, and that a given step might be run by more than one stage.
+         *
+         * @param string[] $stepName
+         */
+        public function setStepName($stepName)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getStepName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataflow\JobExecutionStageInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStepName()
+    class Google_Service_Dataflow_JobExecutionStageInfo extends \Google\Service\Dataflow\JobExecutionStageInfo
     {
     }
 }

@@ -21,43 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "pubsubnotificationsettings" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $pubsubnotificationsettings = $contentService->pubsubnotificationsettings;
- *  </code>
- */
-class Pubsubnotificationsettings extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\PubsubNotificationSettings as PubsubNotificationSettingsModel;
     /**
-     * Retrieves a Merchant Center account's pubsub notification settings.
-     * (pubsubnotificationsettings.get)
-     *
-     * @param string $merchantId The ID of the account for which to get pubsub
-     * notification settings.
-     * @param array $optParams Optional parameters.
-     * @return PubsubNotificationSettingsModel
-     * @throws \Google\Service\Exception
+     * The "pubsubnotificationsettings" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $pubsubnotificationsettings = $contentService->pubsubnotificationsettings;
+     *  </code>
      */
-    public function get($merchantId, $optParams = [])
+    class Pubsubnotificationsettings extends \Google\Service\Resource
     {
+        /**
+         * Retrieves a Merchant Center account's pubsub notification settings.
+         * (pubsubnotificationsettings.get)
+         *
+         * @param string $merchantId The ID of the account for which to get pubsub
+         * notification settings.
+         * @param array $optParams Optional parameters.
+         * @return PubsubNotificationSettingsModel
+         * @throws \Google\Service\Exception
+         */
+        public function get($merchantId, $optParams = [])
+        {
+        }
+        /**
+         * Register a Merchant Center account for pubsub notifications. Note that cloud
+         * topic name shouldn't be provided as part of the request.
+         * (pubsubnotificationsettings.update)
+         *
+         * @param string $merchantId The ID of the account.
+         * @param PubsubNotificationSettingsModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return PubsubNotificationSettingsModel
+         * @throws \Google\Service\Exception
+         */
+        public function update($merchantId, PubsubNotificationSettingsModel $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Register a Merchant Center account for pubsub notifications. Note that cloud
-     * topic name shouldn't be provided as part of the request.
-     * (pubsubnotificationsettings.update)
-     *
-     * @param string $merchantId The ID of the account.
-     * @param PubsubNotificationSettingsModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return PubsubNotificationSettingsModel
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\Pubsubnotificationsettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function update($merchantId, PubsubNotificationSettingsModel $postBody, $optParams = [])
+    class Google_Service_ShoppingContent_Resource_Pubsubnotificationsettings extends \Google\Service\ShoppingContent\Resource\Pubsubnotificationsettings
     {
     }
 }

@@ -21,133 +21,148 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS\Resource;
-
-/**
- * The "keyRings" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudkmsService = new Google\Service\CloudKMS(...);
- *   $keyRings = $cloudkmsService->projects_locations_keyRings;
- *  </code>
- */
-class ProjectsLocationsKeyRings extends \Google\Service\Resource
-{
+namespace Google\Service\CloudKMS\Resource {
+    use Google\Service\CloudKMS\KeyRing;
+    use Google\Service\CloudKMS\ListKeyRingsResponse;
+    use Google\Service\CloudKMS\Policy;
+    use Google\Service\CloudKMS\SetIamPolicyRequest;
+    use Google\Service\CloudKMS\TestIamPermissionsRequest;
+    use Google\Service\CloudKMS\TestIamPermissionsResponse;
     /**
-     * Create a new KeyRing in a given Project and Location. (keyRings.create)
-     *
-     * @param string $parent Required. The resource name of the location associated
-     * with the KeyRings, in the format `projects/locations`.
-     * @param KeyRing $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string keyRingId Required. It must be unique within a location and
-     * match the regular expression `[a-zA-Z0-9_-]{1,63}`
-     * @return KeyRing
-     * @throws \Google\Service\Exception
+     * The "keyRings" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudkmsService = new Google\Service\CloudKMS(...);
+     *   $keyRings = $cloudkmsService->projects_locations_keyRings;
+     *  </code>
      */
-    public function create($parent, KeyRing $postBody, $optParams = [])
+    class ProjectsLocationsKeyRings extends \Google\Service\Resource
     {
+        /**
+         * Create a new KeyRing in a given Project and Location. (keyRings.create)
+         *
+         * @param string $parent Required. The resource name of the location associated
+         * with the KeyRings, in the format `projects/locations`.
+         * @param KeyRing $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string keyRingId Required. It must be unique within a location and
+         * match the regular expression `[a-zA-Z0-9_-]{1,63}`
+         * @return KeyRing
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, KeyRing $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns metadata for a given KeyRing. (keyRings.get)
+         *
+         * @param string $name Required. The name of the KeyRing to get.
+         * @param array $optParams Optional parameters.
+         * @return KeyRing
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the access control policy for a resource. Returns an empty policy if the
+         * resource exists and does not have a policy set. (keyRings.getIamPolicy)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy is being
+         * requested. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int options.requestedPolicyVersion Optional. The maximum policy
+         * version that will be used to format the policy. Valid values are 0, 1, and 3.
+         * Requests specifying an invalid value will be rejected. Requests for policies
+         * with any conditional role bindings must specify version 3. Policies with no
+         * conditional role bindings may specify any valid value or leave the field
+         * unset. The policy in the response might use the policy version that you
+         * specified, or it might use a lower policy version. For example, if you
+         * specify version 3, but the policy has no conditional role bindings, the
+         * response uses version 1. To learn which resources support conditions in their
+         * IAM policies, see the [IAM
+         * documentation](https://cloud.google.com/iam/help/conditions/resource-
+         * policies).
+         * @return Policy
+         * @throws \Google\Service\Exception
+         */
+        public function getIamPolicy($resource, $optParams = [])
+        {
+        }
+        /**
+         * Lists KeyRings. (keyRings.listProjectsLocationsKeyRings)
+         *
+         * @param string $parent Required. The resource name of the location associated
+         * with the KeyRings, in the format `projects/locations`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Only include resources that match the
+         * filter in the response. For more information, see [Sorting and filtering list
+         * results](https://cloud.google.com/kms/docs/sorting-and-filtering).
+         * @opt_param string orderBy Optional. Specify how the results should be sorted.
+         * If not specified, the results will be sorted in the default order. For more
+         * information, see [Sorting and filtering list
+         * results](https://cloud.google.com/kms/docs/sorting-and-filtering).
+         * @opt_param int pageSize Optional. Optional limit on the number of KeyRings to
+         * include in the response. Further KeyRings can subsequently be obtained by
+         * including the ListKeyRingsResponse.next_page_token in a subsequent request.
+         * If unspecified, the server will pick an appropriate default.
+         * @opt_param string pageToken Optional. Optional pagination token, returned
+         * earlier via ListKeyRingsResponse.next_page_token.
+         * @return ListKeyRingsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsKeyRings($parent, $optParams = [])
+        {
+        }
+        /**
+         * Sets the access control policy on the specified resource. Replaces any
+         * existing policy. Can return `NOT_FOUND`, `INVALID_ARGUMENT`, and
+         * `PERMISSION_DENIED` errors. (keyRings.setIamPolicy)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy is being
+         * specified. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param SetIamPolicyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Policy
+         * @throws \Google\Service\Exception
+         */
+        public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns permissions that a caller has on the specified resource. If the
+         * resource does not exist, this will return an empty set of permissions, not a
+         * `NOT_FOUND` error. Note: This operation is designed to be used for building
+         * permission-aware UIs and command-line tools, not for authorization checking.
+         * This operation may "fail open" without warning. (keyRings.testIamPermissions)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy detail is
+         * being requested. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param TestIamPermissionsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return TestIamPermissionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns metadata for a given KeyRing. (keyRings.get)
-     *
-     * @param string $name Required. The name of the KeyRing to get.
-     * @param array $optParams Optional parameters.
-     * @return KeyRing
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudKMS\Resource\ProjectsLocationsKeyRings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets the access control policy for a resource. Returns an empty policy if the
-     * resource exists and does not have a policy set. (keyRings.getIamPolicy)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy is being
-     * requested. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int options.requestedPolicyVersion Optional. The maximum policy
-     * version that will be used to format the policy. Valid values are 0, 1, and 3.
-     * Requests specifying an invalid value will be rejected. Requests for policies
-     * with any conditional role bindings must specify version 3. Policies with no
-     * conditional role bindings may specify any valid value or leave the field
-     * unset. The policy in the response might use the policy version that you
-     * specified, or it might use a lower policy version. For example, if you
-     * specify version 3, but the policy has no conditional role bindings, the
-     * response uses version 1. To learn which resources support conditions in their
-     * IAM policies, see the [IAM
-     * documentation](https://cloud.google.com/iam/help/conditions/resource-
-     * policies).
-     * @return Policy
-     * @throws \Google\Service\Exception
-     */
-    public function getIamPolicy($resource, $optParams = [])
-    {
-    }
-    /**
-     * Lists KeyRings. (keyRings.listProjectsLocationsKeyRings)
-     *
-     * @param string $parent Required. The resource name of the location associated
-     * with the KeyRings, in the format `projects/locations`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Only include resources that match the
-     * filter in the response. For more information, see [Sorting and filtering list
-     * results](https://cloud.google.com/kms/docs/sorting-and-filtering).
-     * @opt_param string orderBy Optional. Specify how the results should be sorted.
-     * If not specified, the results will be sorted in the default order. For more
-     * information, see [Sorting and filtering list
-     * results](https://cloud.google.com/kms/docs/sorting-and-filtering).
-     * @opt_param int pageSize Optional. Optional limit on the number of KeyRings to
-     * include in the response. Further KeyRings can subsequently be obtained by
-     * including the ListKeyRingsResponse.next_page_token in a subsequent request.
-     * If unspecified, the server will pick an appropriate default.
-     * @opt_param string pageToken Optional. Optional pagination token, returned
-     * earlier via ListKeyRingsResponse.next_page_token.
-     * @return ListKeyRingsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsKeyRings($parent, $optParams = [])
-    {
-    }
-    /**
-     * Sets the access control policy on the specified resource. Replaces any
-     * existing policy. Can return `NOT_FOUND`, `INVALID_ARGUMENT`, and
-     * `PERMISSION_DENIED` errors. (keyRings.setIamPolicy)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy is being
-     * specified. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param SetIamPolicyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Policy
-     * @throws \Google\Service\Exception
-     */
-    public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Returns permissions that a caller has on the specified resource. If the
-     * resource does not exist, this will return an empty set of permissions, not a
-     * `NOT_FOUND` error. Note: This operation is designed to be used for building
-     * permission-aware UIs and command-line tools, not for authorization checking.
-     * This operation may "fail open" without warning. (keyRings.testIamPermissions)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy detail is
-     * being requested. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param TestIamPermissionsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return TestIamPermissionsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = [])
+    class Google_Service_CloudKMS_Resource_ProjectsLocationsKeyRings extends \Google\Service\CloudKMS\Resource\ProjectsLocationsKeyRings
     {
     }
 }

@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2ExecuteRequest extends \Google\Model
-{
-    protected $actionDigestType = BuildBazelRemoteExecutionV2Digest::class;
-    protected $actionDigestDataType = '';
-    protected $executionPolicyType = BuildBazelRemoteExecutionV2ExecutionPolicy::class;
-    protected $executionPolicyDataType = '';
-    protected $resultsCachePolicyType = BuildBazelRemoteExecutionV2ResultsCachePolicy::class;
-    protected $resultsCachePolicyDataType = '';
-    public $skipCacheLookup;
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2ExecuteRequest extends \Google\Model
+    {
+        protected $actionDigestType = BuildBazelRemoteExecutionV2Digest::class;
+        protected $actionDigestDataType = '';
+        protected $executionPolicyType = BuildBazelRemoteExecutionV2ExecutionPolicy::class;
+        protected $executionPolicyDataType = '';
+        protected $resultsCachePolicyType = BuildBazelRemoteExecutionV2ResultsCachePolicy::class;
+        protected $resultsCachePolicyDataType = '';
+        public $skipCacheLookup;
+        /**
+         * @param BuildBazelRemoteExecutionV2Digest
+         */
+        public function setActionDigest(BuildBazelRemoteExecutionV2Digest $actionDigest)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2Digest
+         */
+        public function getActionDigest()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2ExecutionPolicy
+         */
+        public function setExecutionPolicy(BuildBazelRemoteExecutionV2ExecutionPolicy $executionPolicy)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2ExecutionPolicy
+         */
+        public function getExecutionPolicy()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2ResultsCachePolicy
+         */
+        public function setResultsCachePolicy(BuildBazelRemoteExecutionV2ResultsCachePolicy $resultsCachePolicy)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2ResultsCachePolicy
+         */
+        public function getResultsCachePolicy()
+        {
+        }
+        public function setSkipCacheLookup($skipCacheLookup)
+        {
+        }
+        public function getSkipCacheLookup()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param BuildBazelRemoteExecutionV2Digest
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ExecuteRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setActionDigest(BuildBazelRemoteExecutionV2Digest $actionDigest)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2Digest
-     */
-    public function getActionDigest()
-    {
-    }
-    /**
-     * @param BuildBazelRemoteExecutionV2ExecutionPolicy
-     */
-    public function setExecutionPolicy(BuildBazelRemoteExecutionV2ExecutionPolicy $executionPolicy)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2ExecutionPolicy
-     */
-    public function getExecutionPolicy()
-    {
-    }
-    /**
-     * @param BuildBazelRemoteExecutionV2ResultsCachePolicy
-     */
-    public function setResultsCachePolicy(BuildBazelRemoteExecutionV2ResultsCachePolicy $resultsCachePolicy)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2ResultsCachePolicy
-     */
-    public function getResultsCachePolicy()
-    {
-    }
-    public function setSkipCacheLookup($skipCacheLookup)
-    {
-    }
-    public function getSkipCacheLookup()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2ExecuteRequest extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ExecuteRequest
     {
     }
 }

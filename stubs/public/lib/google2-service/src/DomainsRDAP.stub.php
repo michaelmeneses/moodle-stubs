@@ -21,39 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for DomainsRDAP (v1).
- *
- * <p>
- * Read-only public API that lets users search for information about domain
- * names.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/domains/rdap/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class DomainsRDAP extends \Google\Service
-{
-    public $autnum;
-    public $domain;
-    public $entity;
-    public $ip;
-    public $nameserver;
-    public $v1;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the DomainsRDAP service.
+     * Service definition for DomainsRDAP (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Read-only public API that lets users search for information about domain
+     * names.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/domains/rdap/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class DomainsRDAP extends \Google\Service
+    {
+        public $autnum;
+        public $domain;
+        public $entity;
+        public $ip;
+        public $nameserver;
+        public $v1;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the DomainsRDAP service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DomainsRDAP registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DomainsRDAP extends \Google\Service\DomainsRDAP
     {
     }
 }

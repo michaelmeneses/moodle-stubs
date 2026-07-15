@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class MobileDeviceIdList extends \Google\Collection
-{
-    protected $collection_key = 'mobileDeviceIds';
-    protected $consentType = Consent::class;
-    protected $consentDataType = '';
-    /**
-     * A list of mobile device IDs defining Customer Match audience members. The
-     * size of mobile_device_ids mustn't be greater than 500,000.
-     *
-     * @var string[]
-     */
-    public $mobileDeviceIds;
-    /**
-     * Input only. The consent setting for the users in mobile_device_ids. Leaving
-     * this field unset indicates that consent is not specified. If ad_user_data
-     * or ad_personalization fields are set to `CONSENT_STATUS_DENIED`, the
-     * request will return an error.
-     *
-     * @param Consent $consent
-     */
-    public function setConsent(Consent $consent)
+namespace Google\Service\DisplayVideo {
+    class MobileDeviceIdList extends \Google\Collection
     {
+        protected $collection_key = 'mobileDeviceIds';
+        protected $consentType = Consent::class;
+        protected $consentDataType = '';
+        /**
+         * A list of mobile device IDs defining Customer Match audience members. The
+         * size of mobile_device_ids mustn't be greater than 500,000.
+         *
+         * @var string[]
+         */
+        public $mobileDeviceIds;
+        /**
+         * Input only. The consent setting for the users in mobile_device_ids. Leaving
+         * this field unset indicates that consent is not specified. If ad_user_data
+         * or ad_personalization fields are set to `CONSENT_STATUS_DENIED`, the
+         * request will return an error.
+         *
+         * @param Consent $consent
+         */
+        public function setConsent(Consent $consent)
+        {
+        }
+        /**
+         * @return Consent
+         */
+        public function getConsent()
+        {
+        }
+        /**
+         * A list of mobile device IDs defining Customer Match audience members. The
+         * size of mobile_device_ids mustn't be greater than 500,000.
+         *
+         * @param string[] $mobileDeviceIds
+         */
+        public function setMobileDeviceIds($mobileDeviceIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMobileDeviceIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Consent
+     * Runtime class alias of \Google\Service\DisplayVideo\MobileDeviceIdList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsent()
-    {
-    }
-    /**
-     * A list of mobile device IDs defining Customer Match audience members. The
-     * size of mobile_device_ids mustn't be greater than 500,000.
-     *
-     * @param string[] $mobileDeviceIds
-     */
-    public function setMobileDeviceIds($mobileDeviceIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMobileDeviceIds()
+    class Google_Service_DisplayVideo_MobileDeviceIdList extends \Google\Service\DisplayVideo\MobileDeviceIdList
     {
     }
 }

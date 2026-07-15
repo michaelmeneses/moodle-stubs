@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SecurityPolicyRuleRedirectOptions extends \Google\Model
-{
-    public const TYPE_EXTERNAL_302 = 'EXTERNAL_302';
-    public const TYPE_GOOGLE_RECAPTCHA = 'GOOGLE_RECAPTCHA';
-    /**
-     * Target for the redirect action. This is required if the type is
-     * EXTERNAL_302 and cannot be specified for GOOGLE_RECAPTCHA.
-     *
-     * @var string
-     */
-    public $target;
-    /**
-     * Type of the redirect action. Possible values are:        -
-     * GOOGLE_RECAPTCHA: redirect to reCAPTCHA for manual    challenge assessment.
-     * - EXTERNAL_302: redirect to a different URL via a 302    response.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Target for the redirect action. This is required if the type is
-     * EXTERNAL_302 and cannot be specified for GOOGLE_RECAPTCHA.
-     *
-     * @param string $target
-     */
-    public function setTarget($target)
+namespace Google\Service\Compute {
+    class SecurityPolicyRuleRedirectOptions extends \Google\Model
     {
+        public const TYPE_EXTERNAL_302 = 'EXTERNAL_302';
+        public const TYPE_GOOGLE_RECAPTCHA = 'GOOGLE_RECAPTCHA';
+        /**
+         * Target for the redirect action. This is required if the type is
+         * EXTERNAL_302 and cannot be specified for GOOGLE_RECAPTCHA.
+         *
+         * @var string
+         */
+        public $target;
+        /**
+         * Type of the redirect action. Possible values are:        -
+         * GOOGLE_RECAPTCHA: redirect to reCAPTCHA for manual    challenge assessment.
+         * - EXTERNAL_302: redirect to a different URL via a 302    response.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Target for the redirect action. This is required if the type is
+         * EXTERNAL_302 and cannot be specified for GOOGLE_RECAPTCHA.
+         *
+         * @param string $target
+         */
+        public function setTarget($target)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTarget()
+        {
+        }
+        /**
+         * Type of the redirect action. Possible values are:        -
+         * GOOGLE_RECAPTCHA: redirect to reCAPTCHA for manual    challenge assessment.
+         * - EXTERNAL_302: redirect to a different URL via a 302    response.
+         *
+         * Accepted values: EXTERNAL_302, GOOGLE_RECAPTCHA
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\SecurityPolicyRuleRedirectOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTarget()
-    {
-    }
-    /**
-     * Type of the redirect action. Possible values are:        -
-     * GOOGLE_RECAPTCHA: redirect to reCAPTCHA for manual    challenge assessment.
-     * - EXTERNAL_302: redirect to a different URL via a 302    response.
-     *
-     * Accepted values: EXTERNAL_302, GOOGLE_RECAPTCHA
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Compute_SecurityPolicyRuleRedirectOptions extends \Google\Service\Compute\SecurityPolicyRuleRedirectOptions
     {
     }
 }

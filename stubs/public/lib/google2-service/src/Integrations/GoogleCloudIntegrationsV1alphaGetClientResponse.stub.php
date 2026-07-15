@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaGetClientResponse extends \Google\Model
-{
-    protected $clientType = GoogleCloudIntegrationsV1alphaClientConfig::class;
-    protected $clientDataType = '';
-    /**
-     * Required. Required: The client configuration that was requested
-     *
-     * @param GoogleCloudIntegrationsV1alphaClientConfig $client
-     */
-    public function setClient(GoogleCloudIntegrationsV1alphaClientConfig $client)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaGetClientResponse extends \Google\Model
     {
+        protected $clientType = GoogleCloudIntegrationsV1alphaClientConfig::class;
+        protected $clientDataType = '';
+        /**
+         * Required. Required: The client configuration that was requested
+         *
+         * @param GoogleCloudIntegrationsV1alphaClientConfig $client
+         */
+        public function setClient(GoogleCloudIntegrationsV1alphaClientConfig $client)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaClientConfig
+         */
+        public function getClient()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaClientConfig
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaGetClientResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClient()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaGetClientResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaGetClientResponse
     {
     }
 }

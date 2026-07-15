@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2alphaImportErrorsConfig extends \Google\Model
-{
-    /**
-     * Google Cloud Storage prefix for import errors. This must be an empty,
-     * existing Cloud Storage directory. Import errors are written to sharded
-     * files in this directory, one per line, as a JSON-encoded
-     * `google.rpc.Status` message.
-     *
-     * @var string
-     */
-    public $gcsPrefix;
-    /**
-     * Google Cloud Storage prefix for import errors. This must be an empty,
-     * existing Cloud Storage directory. Import errors are written to sharded
-     * files in this directory, one per line, as a JSON-encoded
-     * `google.rpc.Status` message.
-     *
-     * @param string $gcsPrefix
-     */
-    public function setGcsPrefix($gcsPrefix)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2alphaImportErrorsConfig extends \Google\Model
     {
+        /**
+         * Google Cloud Storage prefix for import errors. This must be an empty,
+         * existing Cloud Storage directory. Import errors are written to sharded
+         * files in this directory, one per line, as a JSON-encoded
+         * `google.rpc.Status` message.
+         *
+         * @var string
+         */
+        public $gcsPrefix;
+        /**
+         * Google Cloud Storage prefix for import errors. This must be an empty,
+         * existing Cloud Storage directory. Import errors are written to sharded
+         * files in this directory, one per line, as a JSON-encoded
+         * `google.rpc.Status` message.
+         *
+         * @param string $gcsPrefix
+         */
+        public function setGcsPrefix($gcsPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsPrefix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2alphaImportErrorsConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsPrefix()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2alphaImportErrorsConfig extends \Google\Service\CloudRetail\GoogleCloudRetailV2alphaImportErrorsConfig
     {
     }
 }

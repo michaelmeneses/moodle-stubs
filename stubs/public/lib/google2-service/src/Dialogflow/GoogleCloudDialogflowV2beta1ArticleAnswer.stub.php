@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1ArticleAnswer extends \Google\Collection
-{
-    protected $collection_key = 'snippets';
-    /**
-     * The name of answer record, in the format of
-     * "projects//locations//answerRecords/"
-     *
-     * @var string
-     */
-    public $answerRecord;
-    /**
-     * A map that contains metadata about the answer and the document from which
-     * it originates.
-     *
-     * @var string[]
-     */
-    public $metadata;
-    /**
-     * Output only. Article snippets.
-     *
-     * @var string[]
-     */
-    public $snippets;
-    /**
-     * The article title.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The article URI.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * The name of answer record, in the format of
-     * "projects//locations//answerRecords/"
-     *
-     * @param string $answerRecord
-     */
-    public function setAnswerRecord($answerRecord)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1ArticleAnswer extends \Google\Collection
     {
+        protected $collection_key = 'snippets';
+        /**
+         * The name of answer record, in the format of
+         * "projects//locations//answerRecords/"
+         *
+         * @var string
+         */
+        public $answerRecord;
+        /**
+         * A map that contains metadata about the answer and the document from which
+         * it originates.
+         *
+         * @var string[]
+         */
+        public $metadata;
+        /**
+         * Output only. Article snippets.
+         *
+         * @var string[]
+         */
+        public $snippets;
+        /**
+         * The article title.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The article URI.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * The name of answer record, in the format of
+         * "projects//locations//answerRecords/"
+         *
+         * @param string $answerRecord
+         */
+        public function setAnswerRecord($answerRecord)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswerRecord()
+        {
+        }
+        /**
+         * A map that contains metadata about the answer and the document from which
+         * it originates.
+         *
+         * @param string[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Output only. Article snippets.
+         *
+         * @param string[] $snippets
+         */
+        public function setSnippets($snippets)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSnippets()
+        {
+        }
+        /**
+         * The article title.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * The article URI.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1ArticleAnswer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswerRecord()
-    {
-    }
-    /**
-     * A map that contains metadata about the answer and the document from which
-     * it originates.
-     *
-     * @param string[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Output only. Article snippets.
-     *
-     * @param string[] $snippets
-     */
-    public function setSnippets($snippets)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSnippets()
-    {
-    }
-    /**
-     * The article title.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * The article URI.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1ArticleAnswer extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1ArticleAnswer
     {
     }
 }

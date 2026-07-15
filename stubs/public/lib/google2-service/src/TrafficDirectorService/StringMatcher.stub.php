@@ -21,161 +21,170 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class StringMatcher extends \Google\Model
-{
-    /**
-     * The input string must have the substring specified here. .. note:: Empty
-     * contains match is not allowed, please use ``safe_regex`` instead. Examples:
-     * * ``abc`` matches the value ``xyz.abc.def``
-     *
-     * @var string
-     */
-    public $contains;
-    protected $customType = TypedExtensionConfig::class;
-    protected $customDataType = '';
-    /**
-     * The input string must match exactly the string specified here. Examples: *
-     * ``abc`` only matches the value ``abc``.
-     *
-     * @var string
-     */
-    public $exact;
-    /**
-     * If ``true``, indicates the exact/prefix/suffix/contains matching should be
-     * case insensitive. This has no effect for the ``safe_regex`` match. For
-     * example, the matcher ``data`` will match both input string ``Data`` and
-     * ``data`` if this option is set to ``true``.
-     *
-     * @var bool
-     */
-    public $ignoreCase;
-    /**
-     * The input string must have the prefix specified here. .. note:: Empty
-     * prefix match is not allowed, please use ``safe_regex`` instead. Examples: *
-     * ``abc`` matches the value ``abc.xyz``
-     *
-     * @var string
-     */
-    public $prefix;
-    protected $safeRegexType = RegexMatcher::class;
-    protected $safeRegexDataType = '';
-    /**
-     * The input string must have the suffix specified here. .. note:: Empty
-     * suffix match is not allowed, please use ``safe_regex`` instead. Examples: *
-     * ``abc`` matches the value ``xyz.abc``
-     *
-     * @var string
-     */
-    public $suffix;
-    /**
-     * The input string must have the substring specified here. .. note:: Empty
-     * contains match is not allowed, please use ``safe_regex`` instead. Examples:
-     * * ``abc`` matches the value ``xyz.abc.def``
-     *
-     * @param string $contains
-     */
-    public function setContains($contains)
+namespace Google\Service\TrafficDirectorService {
+    class StringMatcher extends \Google\Model
     {
+        /**
+         * The input string must have the substring specified here. .. note:: Empty
+         * contains match is not allowed, please use ``safe_regex`` instead. Examples:
+         * * ``abc`` matches the value ``xyz.abc.def``
+         *
+         * @var string
+         */
+        public $contains;
+        protected $customType = TypedExtensionConfig::class;
+        protected $customDataType = '';
+        /**
+         * The input string must match exactly the string specified here. Examples: *
+         * ``abc`` only matches the value ``abc``.
+         *
+         * @var string
+         */
+        public $exact;
+        /**
+         * If ``true``, indicates the exact/prefix/suffix/contains matching should be
+         * case insensitive. This has no effect for the ``safe_regex`` match. For
+         * example, the matcher ``data`` will match both input string ``Data`` and
+         * ``data`` if this option is set to ``true``.
+         *
+         * @var bool
+         */
+        public $ignoreCase;
+        /**
+         * The input string must have the prefix specified here. .. note:: Empty
+         * prefix match is not allowed, please use ``safe_regex`` instead. Examples: *
+         * ``abc`` matches the value ``abc.xyz``
+         *
+         * @var string
+         */
+        public $prefix;
+        protected $safeRegexType = RegexMatcher::class;
+        protected $safeRegexDataType = '';
+        /**
+         * The input string must have the suffix specified here. .. note:: Empty
+         * suffix match is not allowed, please use ``safe_regex`` instead. Examples: *
+         * ``abc`` matches the value ``xyz.abc``
+         *
+         * @var string
+         */
+        public $suffix;
+        /**
+         * The input string must have the substring specified here. .. note:: Empty
+         * contains match is not allowed, please use ``safe_regex`` instead. Examples:
+         * * ``abc`` matches the value ``xyz.abc.def``
+         *
+         * @param string $contains
+         */
+        public function setContains($contains)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContains()
+        {
+        }
+        /**
+         * Use an extension as the matcher type. [#extension-category:
+         * envoy.string_matcher]
+         *
+         * @param TypedExtensionConfig $custom
+         */
+        public function setCustom(TypedExtensionConfig $custom)
+        {
+        }
+        /**
+         * @return TypedExtensionConfig
+         */
+        public function getCustom()
+        {
+        }
+        /**
+         * The input string must match exactly the string specified here. Examples: *
+         * ``abc`` only matches the value ``abc``.
+         *
+         * @param string $exact
+         */
+        public function setExact($exact)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExact()
+        {
+        }
+        /**
+         * If ``true``, indicates the exact/prefix/suffix/contains matching should be
+         * case insensitive. This has no effect for the ``safe_regex`` match. For
+         * example, the matcher ``data`` will match both input string ``Data`` and
+         * ``data`` if this option is set to ``true``.
+         *
+         * @param bool $ignoreCase
+         */
+        public function setIgnoreCase($ignoreCase)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIgnoreCase()
+        {
+        }
+        /**
+         * The input string must have the prefix specified here. .. note:: Empty
+         * prefix match is not allowed, please use ``safe_regex`` instead. Examples: *
+         * ``abc`` matches the value ``abc.xyz``
+         *
+         * @param string $prefix
+         */
+        public function setPrefix($prefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrefix()
+        {
+        }
+        /**
+         * The input string must match the regular expression specified here.
+         *
+         * @param RegexMatcher $safeRegex
+         */
+        public function setSafeRegex(RegexMatcher $safeRegex)
+        {
+        }
+        /**
+         * @return RegexMatcher
+         */
+        public function getSafeRegex()
+        {
+        }
+        /**
+         * The input string must have the suffix specified here. .. note:: Empty
+         * suffix match is not allowed, please use ``safe_regex`` instead. Examples: *
+         * ``abc`` matches the value ``xyz.abc``
+         *
+         * @param string $suffix
+         */
+        public function setSuffix($suffix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSuffix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TrafficDirectorService\StringMatcher registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContains()
-    {
-    }
-    /**
-     * Use an extension as the matcher type. [#extension-category:
-     * envoy.string_matcher]
-     *
-     * @param TypedExtensionConfig $custom
-     */
-    public function setCustom(TypedExtensionConfig $custom)
-    {
-    }
-    /**
-     * @return TypedExtensionConfig
-     */
-    public function getCustom()
-    {
-    }
-    /**
-     * The input string must match exactly the string specified here. Examples: *
-     * ``abc`` only matches the value ``abc``.
-     *
-     * @param string $exact
-     */
-    public function setExact($exact)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExact()
-    {
-    }
-    /**
-     * If ``true``, indicates the exact/prefix/suffix/contains matching should be
-     * case insensitive. This has no effect for the ``safe_regex`` match. For
-     * example, the matcher ``data`` will match both input string ``Data`` and
-     * ``data`` if this option is set to ``true``.
-     *
-     * @param bool $ignoreCase
-     */
-    public function setIgnoreCase($ignoreCase)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIgnoreCase()
-    {
-    }
-    /**
-     * The input string must have the prefix specified here. .. note:: Empty
-     * prefix match is not allowed, please use ``safe_regex`` instead. Examples: *
-     * ``abc`` matches the value ``abc.xyz``
-     *
-     * @param string $prefix
-     */
-    public function setPrefix($prefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrefix()
-    {
-    }
-    /**
-     * The input string must match the regular expression specified here.
-     *
-     * @param RegexMatcher $safeRegex
-     */
-    public function setSafeRegex(RegexMatcher $safeRegex)
-    {
-    }
-    /**
-     * @return RegexMatcher
-     */
-    public function getSafeRegex()
-    {
-    }
-    /**
-     * The input string must have the suffix specified here. .. note:: Empty
-     * suffix match is not allowed, please use ``safe_regex`` instead. Examples: *
-     * ``abc`` matches the value ``xyz.abc``
-     *
-     * @param string $suffix
-     */
-    public function setSuffix($suffix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSuffix()
+    class Google_Service_TrafficDirectorService_StringMatcher extends \Google\Service\TrafficDirectorService\StringMatcher
     {
     }
 }

@@ -21,36 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing\Resource;
-
-/**
- * The "testEnvironmentCatalog" collection of methods.
- * Typical usage is:
- *  <code>
- *   $testingService = new Google\Service\Testing(...);
- *   $testEnvironmentCatalog = $testingService->testEnvironmentCatalog;
- *  </code>
- */
-class TestEnvironmentCatalog extends \Google\Service\Resource
-{
+namespace Google\Service\Testing\Resource {
+    use Google\Service\Testing\TestEnvironmentCatalog as TestEnvironmentCatalogModel;
     /**
-     * Gets the catalog of supported test environments. May return any of the
-     * following canonical error codes: - INVALID_ARGUMENT - if the request is
-     * malformed - NOT_FOUND - if the environment type does not exist - INTERNAL -
-     * if an internal error occurred (testEnvironmentCatalog.get)
-     *
-     * @param string $environmentType Required. The type of environment that should
-     * be listed.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool includeViewableModels Optional. Whether to include viewable
-     * only models in the response. This is only applicable for Android models.
-     * @opt_param string projectId For authorization, the cloud project requesting
-     * the TestEnvironmentCatalog.
-     * @return TestEnvironmentCatalogModel
-     * @throws \Google\Service\Exception
+     * The "testEnvironmentCatalog" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $testingService = new Google\Service\Testing(...);
+     *   $testEnvironmentCatalog = $testingService->testEnvironmentCatalog;
+     *  </code>
      */
-    public function get($environmentType, $optParams = [])
+    class TestEnvironmentCatalog extends \Google\Service\Resource
+    {
+        /**
+         * Gets the catalog of supported test environments. May return any of the
+         * following canonical error codes: - INVALID_ARGUMENT - if the request is
+         * malformed - NOT_FOUND - if the environment type does not exist - INTERNAL -
+         * if an internal error occurred (testEnvironmentCatalog.get)
+         *
+         * @param string $environmentType Required. The type of environment that should
+         * be listed.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool includeViewableModels Optional. Whether to include viewable
+         * only models in the response. This is only applicable for Android models.
+         * @opt_param string projectId For authorization, the cloud project requesting
+         * the TestEnvironmentCatalog.
+         * @return TestEnvironmentCatalogModel
+         * @throws \Google\Service\Exception
+         */
+        public function get($environmentType, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Testing\Resource\TestEnvironmentCatalog registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Testing_Resource_TestEnvironmentCatalog extends \Google\Service\Testing\Resource\TestEnvironmentCatalog
     {
     }
 }

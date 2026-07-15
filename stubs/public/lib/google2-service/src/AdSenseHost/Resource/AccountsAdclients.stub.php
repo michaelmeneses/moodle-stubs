@@ -21,47 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSenseHost\Resource;
-
-/**
- * The "adclients" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adsensehostService = new Google\Service\AdSenseHost(...);
- *   $adclients = $adsensehostService->accounts_adclients;
- *  </code>
- */
-class AccountsAdclients extends \Google\Service\Resource
-{
+namespace Google\Service\AdSenseHost\Resource {
+    use Google\Service\AdSenseHost\AdClient;
+    use Google\Service\AdSenseHost\AdClients;
     /**
-     * Get information about one of the ad clients in the specified publisher's
-     * AdSense account. (adclients.get)
-     *
-     * @param string $accountId Account which contains the ad client.
-     * @param string $adClientId Ad client to get.
-     * @param array $optParams Optional parameters.
-     * @return AdClient
-     * @throws \Google\Service\Exception
+     * The "adclients" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adsensehostService = new Google\Service\AdSenseHost(...);
+     *   $adclients = $adsensehostService->accounts_adclients;
+     *  </code>
      */
-    public function get($accountId, $adClientId, $optParams = [])
+    class AccountsAdclients extends \Google\Service\Resource
     {
+        /**
+         * Get information about one of the ad clients in the specified publisher's
+         * AdSense account. (adclients.get)
+         *
+         * @param string $accountId Account which contains the ad client.
+         * @param string $adClientId Ad client to get.
+         * @param array $optParams Optional parameters.
+         * @return AdClient
+         * @throws \Google\Service\Exception
+         */
+        public function get($accountId, $adClientId, $optParams = [])
+        {
+        }
+        /**
+         * List all hosted ad clients in the specified hosted account.
+         * (adclients.listAccountsAdclients)
+         *
+         * @param string $accountId Account for which to list ad clients.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string maxResults The maximum number of ad clients to include in
+         * the response, used for paging.
+         * @opt_param string pageToken A continuation token, used to page through ad
+         * clients. To retrieve the next page, set this parameter to the value of
+         * "nextPageToken" from the previous response.
+         * @return AdClients
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsAdclients($accountId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * List all hosted ad clients in the specified hosted account.
-     * (adclients.listAccountsAdclients)
-     *
-     * @param string $accountId Account for which to list ad clients.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string maxResults The maximum number of ad clients to include in
-     * the response, used for paging.
-     * @opt_param string pageToken A continuation token, used to page through ad
-     * clients. To retrieve the next page, set this parameter to the value of
-     * "nextPageToken" from the previous response.
-     * @return AdClients
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AdSenseHost\Resource\AccountsAdclients registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listAccountsAdclients($accountId, $optParams = [])
+    class Google_Service_AdSenseHost_Resource_AccountsAdclients extends \Google\Service\AdSenseHost\Resource\AccountsAdclients
     {
     }
 }

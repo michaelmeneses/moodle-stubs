@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class QueryAdvisorResult extends \Google\Collection
-{
-    protected $collection_key = 'indexAdvice';
-    protected $indexAdviceType = IndexAdvice::class;
-    protected $indexAdviceDataType = 'array';
-    /**
-     * Optional. Index Recommendation for a query. This is an optional field and
-     * the recommendation will only be available when the recommendation
-     * guarantees significant improvement in query performance.
-     *
-     * @param IndexAdvice[] $indexAdvice
-     */
-    public function setIndexAdvice($indexAdvice)
+namespace Google\Service\Spanner {
+    class QueryAdvisorResult extends \Google\Collection
     {
+        protected $collection_key = 'indexAdvice';
+        protected $indexAdviceType = IndexAdvice::class;
+        protected $indexAdviceDataType = 'array';
+        /**
+         * Optional. Index Recommendation for a query. This is an optional field and
+         * the recommendation will only be available when the recommendation
+         * guarantees significant improvement in query performance.
+         *
+         * @param IndexAdvice[] $indexAdvice
+         */
+        public function setIndexAdvice($indexAdvice)
+        {
+        }
+        /**
+         * @return IndexAdvice[]
+         */
+        public function getIndexAdvice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IndexAdvice[]
+     * Runtime class alias of \Google\Service\Spanner\QueryAdvisorResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIndexAdvice()
+    class Google_Service_Spanner_QueryAdvisorResult extends \Google\Service\Spanner\QueryAdvisorResult
     {
     }
 }

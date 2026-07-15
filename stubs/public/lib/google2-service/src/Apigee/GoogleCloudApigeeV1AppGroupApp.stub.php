@@ -21,258 +21,267 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1AppGroupApp extends \Google\Collection
-{
-    protected $collection_key = 'scopes';
-    /**
-     * List of API products associated with the AppGroup app.
-     *
-     * @var string[]
-     */
-    public $apiProducts;
-    /**
-     * Immutable. Name of the parent AppGroup whose resource name format is of
-     * syntax (organizations/appgroups).
-     *
-     * @var string
-     */
-    public $appGroup;
-    /**
-     * Immutable. ID of the AppGroup app.
-     *
-     * @var string
-     */
-    public $appId;
-    protected $attributesType = GoogleCloudApigeeV1Attribute::class;
-    protected $attributesDataType = 'array';
-    /**
-     * Callback URL used by OAuth 2.0 authorization servers to communicate
-     * authorization codes back to AppGroup apps.
-     *
-     * @var string
-     */
-    public $callbackUrl;
-    /**
-     * Output only. Time the AppGroup app was created in milliseconds since epoch.
-     *
-     * @var string
-     */
-    public $createdAt;
-    protected $credentialsType = GoogleCloudApigeeV1Credential::class;
-    protected $credentialsDataType = 'array';
-    /**
-     * Immutable. Expiration time, in seconds, for the consumer key that is
-     * generated for the AppGroup app. If not set or left to the default value of
-     * `-1`, the API key never expires. The expiration time can't be updated after
-     * it is set.
-     *
-     * @var string
-     */
-    public $keyExpiresIn;
-    /**
-     * Output only. Time the AppGroup app was modified in milliseconds since
-     * epoch.
-     *
-     * @var string
-     */
-    public $lastModifiedAt;
-    /**
-     * Immutable. Name of the AppGroup app whose resource name format is of syntax
-     * (organizations/appgroups/apps).
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Scopes to apply to the AppGroup app. The specified scopes must already
-     * exist for the API product that you associate with the AppGroup app.
-     *
-     * @var string[]
-     */
-    public $scopes;
-    /**
-     * Status of the App. Valid values include `approved` or `revoked`.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * List of API products associated with the AppGroup app.
-     *
-     * @param string[] $apiProducts
-     */
-    public function setApiProducts($apiProducts)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1AppGroupApp extends \Google\Collection
     {
+        protected $collection_key = 'scopes';
+        /**
+         * List of API products associated with the AppGroup app.
+         *
+         * @var string[]
+         */
+        public $apiProducts;
+        /**
+         * Immutable. Name of the parent AppGroup whose resource name format is of
+         * syntax (organizations/appgroups).
+         *
+         * @var string
+         */
+        public $appGroup;
+        /**
+         * Immutable. ID of the AppGroup app.
+         *
+         * @var string
+         */
+        public $appId;
+        protected $attributesType = GoogleCloudApigeeV1Attribute::class;
+        protected $attributesDataType = 'array';
+        /**
+         * Callback URL used by OAuth 2.0 authorization servers to communicate
+         * authorization codes back to AppGroup apps.
+         *
+         * @var string
+         */
+        public $callbackUrl;
+        /**
+         * Output only. Time the AppGroup app was created in milliseconds since epoch.
+         *
+         * @var string
+         */
+        public $createdAt;
+        protected $credentialsType = GoogleCloudApigeeV1Credential::class;
+        protected $credentialsDataType = 'array';
+        /**
+         * Immutable. Expiration time, in seconds, for the consumer key that is
+         * generated for the AppGroup app. If not set or left to the default value of
+         * `-1`, the API key never expires. The expiration time can't be updated after
+         * it is set.
+         *
+         * @var string
+         */
+        public $keyExpiresIn;
+        /**
+         * Output only. Time the AppGroup app was modified in milliseconds since
+         * epoch.
+         *
+         * @var string
+         */
+        public $lastModifiedAt;
+        /**
+         * Immutable. Name of the AppGroup app whose resource name format is of syntax
+         * (organizations/appgroups/apps).
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Scopes to apply to the AppGroup app. The specified scopes must already
+         * exist for the API product that you associate with the AppGroup app.
+         *
+         * @var string[]
+         */
+        public $scopes;
+        /**
+         * Status of the App. Valid values include `approved` or `revoked`.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * List of API products associated with the AppGroup app.
+         *
+         * @param string[] $apiProducts
+         */
+        public function setApiProducts($apiProducts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getApiProducts()
+        {
+        }
+        /**
+         * Immutable. Name of the parent AppGroup whose resource name format is of
+         * syntax (organizations/appgroups).
+         *
+         * @param string $appGroup
+         */
+        public function setAppGroup($appGroup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppGroup()
+        {
+        }
+        /**
+         * Immutable. ID of the AppGroup app.
+         *
+         * @param string $appId
+         */
+        public function setAppId($appId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppId()
+        {
+        }
+        /**
+         * List of attributes for the AppGroup app.
+         *
+         * @param GoogleCloudApigeeV1Attribute[] $attributes
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Attribute[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * Callback URL used by OAuth 2.0 authorization servers to communicate
+         * authorization codes back to AppGroup apps.
+         *
+         * @param string $callbackUrl
+         */
+        public function setCallbackUrl($callbackUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCallbackUrl()
+        {
+        }
+        /**
+         * Output only. Time the AppGroup app was created in milliseconds since epoch.
+         *
+         * @param string $createdAt
+         */
+        public function setCreatedAt($createdAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatedAt()
+        {
+        }
+        /**
+         * Output only. Set of credentials for the AppGroup app consisting of the
+         * consumer key/secret pairs associated with the API products.
+         *
+         * @param GoogleCloudApigeeV1Credential[] $credentials
+         */
+        public function setCredentials($credentials)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Credential[]
+         */
+        public function getCredentials()
+        {
+        }
+        /**
+         * Immutable. Expiration time, in seconds, for the consumer key that is
+         * generated for the AppGroup app. If not set or left to the default value of
+         * `-1`, the API key never expires. The expiration time can't be updated after
+         * it is set.
+         *
+         * @param string $keyExpiresIn
+         */
+        public function setKeyExpiresIn($keyExpiresIn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyExpiresIn()
+        {
+        }
+        /**
+         * Output only. Time the AppGroup app was modified in milliseconds since
+         * epoch.
+         *
+         * @param string $lastModifiedAt
+         */
+        public function setLastModifiedAt($lastModifiedAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastModifiedAt()
+        {
+        }
+        /**
+         * Immutable. Name of the AppGroup app whose resource name format is of syntax
+         * (organizations/appgroups/apps).
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Scopes to apply to the AppGroup app. The specified scopes must already
+         * exist for the API product that you associate with the AppGroup app.
+         *
+         * @param string[] $scopes
+         */
+        public function setScopes($scopes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScopes()
+        {
+        }
+        /**
+         * Status of the App. Valid values include `approved` or `revoked`.
+         *
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1AppGroupApp registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiProducts()
-    {
-    }
-    /**
-     * Immutable. Name of the parent AppGroup whose resource name format is of
-     * syntax (organizations/appgroups).
-     *
-     * @param string $appGroup
-     */
-    public function setAppGroup($appGroup)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAppGroup()
-    {
-    }
-    /**
-     * Immutable. ID of the AppGroup app.
-     *
-     * @param string $appId
-     */
-    public function setAppId($appId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAppId()
-    {
-    }
-    /**
-     * List of attributes for the AppGroup app.
-     *
-     * @param GoogleCloudApigeeV1Attribute[] $attributes
-     */
-    public function setAttributes($attributes)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1Attribute[]
-     */
-    public function getAttributes()
-    {
-    }
-    /**
-     * Callback URL used by OAuth 2.0 authorization servers to communicate
-     * authorization codes back to AppGroup apps.
-     *
-     * @param string $callbackUrl
-     */
-    public function setCallbackUrl($callbackUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCallbackUrl()
-    {
-    }
-    /**
-     * Output only. Time the AppGroup app was created in milliseconds since epoch.
-     *
-     * @param string $createdAt
-     */
-    public function setCreatedAt($createdAt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreatedAt()
-    {
-    }
-    /**
-     * Output only. Set of credentials for the AppGroup app consisting of the
-     * consumer key/secret pairs associated with the API products.
-     *
-     * @param GoogleCloudApigeeV1Credential[] $credentials
-     */
-    public function setCredentials($credentials)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1Credential[]
-     */
-    public function getCredentials()
-    {
-    }
-    /**
-     * Immutable. Expiration time, in seconds, for the consumer key that is
-     * generated for the AppGroup app. If not set or left to the default value of
-     * `-1`, the API key never expires. The expiration time can't be updated after
-     * it is set.
-     *
-     * @param string $keyExpiresIn
-     */
-    public function setKeyExpiresIn($keyExpiresIn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKeyExpiresIn()
-    {
-    }
-    /**
-     * Output only. Time the AppGroup app was modified in milliseconds since
-     * epoch.
-     *
-     * @param string $lastModifiedAt
-     */
-    public function setLastModifiedAt($lastModifiedAt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastModifiedAt()
-    {
-    }
-    /**
-     * Immutable. Name of the AppGroup app whose resource name format is of syntax
-     * (organizations/appgroups/apps).
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Scopes to apply to the AppGroup app. The specified scopes must already
-     * exist for the API product that you associate with the AppGroup app.
-     *
-     * @param string[] $scopes
-     */
-    public function setScopes($scopes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getScopes()
-    {
-    }
-    /**
-     * Status of the App. Valid values include `approved` or `revoked`.
-     *
-     * @param string $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
+    class Google_Service_Apigee_GoogleCloudApigeeV1AppGroupApp extends \Google\Service\Apigee\GoogleCloudApigeeV1AppGroupApp
     {
     }
 }

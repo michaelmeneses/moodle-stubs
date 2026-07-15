@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1CreateFeatureRequest extends \Google\Model
-{
-    protected $featureType = GoogleCloudAiplatformV1Feature::class;
-    protected $featureDataType = '';
-    /**
-     * Required. The ID to use for the Feature, which will become the final
-     * component of the Feature's resource name. This value may be up to 128
-     * characters, and valid characters are `[a-z0-9_]`. The first character
-     * cannot be a number. The value must be unique within an
-     * EntityType/FeatureGroup.
-     *
-     * @var string
-     */
-    public $featureId;
-    /**
-     * Required. The resource name of the EntityType or FeatureGroup to create a
-     * Feature. Format for entity_type as parent: `projects/{project}/locations/{l
-     * ocation}/featurestores/{featurestore}/entityTypes/{entity_type}` Format for
-     * feature_group as parent:
-     * `projects/{project}/locations/{location}/featureGroups/{feature_group}`
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * Required. The Feature to create.
-     *
-     * @param GoogleCloudAiplatformV1Feature $feature
-     */
-    public function setFeature(GoogleCloudAiplatformV1Feature $feature)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1CreateFeatureRequest extends \Google\Model
     {
+        protected $featureType = GoogleCloudAiplatformV1Feature::class;
+        protected $featureDataType = '';
+        /**
+         * Required. The ID to use for the Feature, which will become the final
+         * component of the Feature's resource name. This value may be up to 128
+         * characters, and valid characters are `[a-z0-9_]`. The first character
+         * cannot be a number. The value must be unique within an
+         * EntityType/FeatureGroup.
+         *
+         * @var string
+         */
+        public $featureId;
+        /**
+         * Required. The resource name of the EntityType or FeatureGroup to create a
+         * Feature. Format for entity_type as parent: `projects/{project}/locations/{l
+         * ocation}/featurestores/{featurestore}/entityTypes/{entity_type}` Format for
+         * feature_group as parent:
+         * `projects/{project}/locations/{location}/featureGroups/{feature_group}`
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * Required. The Feature to create.
+         *
+         * @param GoogleCloudAiplatformV1Feature $feature
+         */
+        public function setFeature(GoogleCloudAiplatformV1Feature $feature)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Feature
+         */
+        public function getFeature()
+        {
+        }
+        /**
+         * Required. The ID to use for the Feature, which will become the final
+         * component of the Feature's resource name. This value may be up to 128
+         * characters, and valid characters are `[a-z0-9_]`. The first character
+         * cannot be a number. The value must be unique within an
+         * EntityType/FeatureGroup.
+         *
+         * @param string $featureId
+         */
+        public function setFeatureId($featureId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFeatureId()
+        {
+        }
+        /**
+         * Required. The resource name of the EntityType or FeatureGroup to create a
+         * Feature. Format for entity_type as parent: `projects/{project}/locations/{l
+         * ocation}/featurestores/{featurestore}/entityTypes/{entity_type}` Format for
+         * feature_group as parent:
+         * `projects/{project}/locations/{location}/featureGroups/{feature_group}`
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Feature
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1CreateFeatureRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFeature()
-    {
-    }
-    /**
-     * Required. The ID to use for the Feature, which will become the final
-     * component of the Feature's resource name. This value may be up to 128
-     * characters, and valid characters are `[a-z0-9_]`. The first character
-     * cannot be a number. The value must be unique within an
-     * EntityType/FeatureGroup.
-     *
-     * @param string $featureId
-     */
-    public function setFeatureId($featureId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFeatureId()
-    {
-    }
-    /**
-     * Required. The resource name of the EntityType or FeatureGroup to create a
-     * Feature. Format for entity_type as parent: `projects/{project}/locations/{l
-     * ocation}/featurestores/{featurestore}/entityTypes/{entity_type}` Format for
-     * feature_group as parent:
-     * `projects/{project}/locations/{location}/featureGroups/{feature_group}`
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1CreateFeatureRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1CreateFeatureRequest
     {
     }
 }

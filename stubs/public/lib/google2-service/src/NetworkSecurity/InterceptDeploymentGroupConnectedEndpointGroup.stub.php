@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class InterceptDeploymentGroupConnectedEndpointGroup extends \Google\Model
-{
-    /**
-     * Output only. The connected endpoint group's resource name, for example:
-     * `projects/123456789/locations/global/interceptEndpointGroups/my-eg`. See
-     * https://google.aip.dev/124.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The connected endpoint group's resource name, for example:
-     * `projects/123456789/locations/global/interceptEndpointGroups/my-eg`. See
-     * https://google.aip.dev/124.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\NetworkSecurity {
+    class InterceptDeploymentGroupConnectedEndpointGroup extends \Google\Model
     {
+        /**
+         * Output only. The connected endpoint group's resource name, for example:
+         * `projects/123456789/locations/global/interceptEndpointGroups/my-eg`. See
+         * https://google.aip.dev/124.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The connected endpoint group's resource name, for example:
+         * `projects/123456789/locations/global/interceptEndpointGroups/my-eg`. See
+         * https://google.aip.dev/124.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkSecurity\InterceptDeploymentGroupConnectedEndpointGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_NetworkSecurity_InterceptDeploymentGroupConnectedEndpointGroup extends \Google\Service\NetworkSecurity\InterceptDeploymentGroupConnectedEndpointGroup
     {
     }
 }

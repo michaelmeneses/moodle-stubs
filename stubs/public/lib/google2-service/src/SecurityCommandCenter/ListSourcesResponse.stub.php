@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class ListSourcesResponse extends \Google\Collection
-{
-    protected $collection_key = 'sources';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $sourcesType = Source::class;
-    protected $sourcesDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\SecurityCommandCenter {
+    class ListSourcesResponse extends \Google\Collection
     {
+        protected $collection_key = 'sources';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $sourcesType = Source::class;
+        protected $sourcesDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Sources belonging to the requested parent.
+         *
+         * @param Source[] $sources
+         */
+        public function setSources($sources)
+        {
+        }
+        /**
+         * @return Source[]
+         */
+        public function getSources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\ListSourcesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Sources belonging to the requested parent.
-     *
-     * @param Source[] $sources
-     */
-    public function setSources($sources)
-    {
-    }
-    /**
-     * @return Source[]
-     */
-    public function getSources()
+    class Google_Service_SecurityCommandCenter_ListSourcesResponse extends \Google\Service\SecurityCommandCenter\ListSourcesResponse
     {
     }
 }

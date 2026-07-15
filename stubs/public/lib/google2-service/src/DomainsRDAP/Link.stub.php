@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DomainsRDAP;
-
-class Link extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $href;
-    /**
-     * @var string
-     */
-    public $hreflang;
-    /**
-     * @var string
-     */
-    public $media;
-    /**
-     * @var string
-     */
-    public $rel;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $value;
-    /**
-     * @param string
-     */
-    public function setHref($href)
+namespace Google\Service\DomainsRDAP {
+    class Link extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $href;
+        /**
+         * @var string
+         */
+        public $hreflang;
+        /**
+         * @var string
+         */
+        public $media;
+        /**
+         * @var string
+         */
+        public $rel;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @var string
+         */
+        public $value;
+        /**
+         * @param string
+         */
+        public function setHref($href)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHref()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHreflang($hreflang)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHreflang()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMedia($media)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMedia()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRel($rel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRel()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DomainsRDAP\Link registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHref()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHreflang($hreflang)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHreflang()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMedia($media)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMedia()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRel($rel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRel()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_DomainsRDAP_Link extends \Google\Service\DomainsRDAP\Link
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudOSLogin;
-
-class SignSshPublicKeyResponse extends \Google\Model
-{
-    /**
-     * The signed SSH public key to use in the SSH handshake.
-     *
-     * @var string
-     */
-    public $signedSshPublicKey;
-    /**
-     * The signed SSH public key to use in the SSH handshake.
-     *
-     * @param string $signedSshPublicKey
-     */
-    public function setSignedSshPublicKey($signedSshPublicKey)
+namespace Google\Service\CloudOSLogin {
+    class SignSshPublicKeyResponse extends \Google\Model
     {
+        /**
+         * The signed SSH public key to use in the SSH handshake.
+         *
+         * @var string
+         */
+        public $signedSshPublicKey;
+        /**
+         * The signed SSH public key to use in the SSH handshake.
+         *
+         * @param string $signedSshPublicKey
+         */
+        public function setSignedSshPublicKey($signedSshPublicKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSignedSshPublicKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudOSLogin\SignSshPublicKeyResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSignedSshPublicKey()
+    class Google_Service_CloudOSLogin_SignSshPublicKeyResponse extends \Google\Service\CloudOSLogin\SignSshPublicKeyResponse
     {
     }
 }

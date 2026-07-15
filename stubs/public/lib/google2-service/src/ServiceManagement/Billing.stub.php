@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class Billing extends \Google\Collection
-{
-    protected $collection_key = 'consumerDestinations';
-    protected $consumerDestinationsType = BillingDestination::class;
-    protected $consumerDestinationsDataType = 'array';
-    /**
-     * Billing configurations for sending metrics to the consumer project. There
-     * can be multiple consumer destinations per service, each one must have a
-     * different monitored resource type. A metric can be used in at most one
-     * consumer destination.
-     *
-     * @param BillingDestination[] $consumerDestinations
-     */
-    public function setConsumerDestinations($consumerDestinations)
+namespace Google\Service\ServiceManagement {
+    class Billing extends \Google\Collection
     {
+        protected $collection_key = 'consumerDestinations';
+        protected $consumerDestinationsType = BillingDestination::class;
+        protected $consumerDestinationsDataType = 'array';
+        /**
+         * Billing configurations for sending metrics to the consumer project. There
+         * can be multiple consumer destinations per service, each one must have a
+         * different monitored resource type. A metric can be used in at most one
+         * consumer destination.
+         *
+         * @param BillingDestination[] $consumerDestinations
+         */
+        public function setConsumerDestinations($consumerDestinations)
+        {
+        }
+        /**
+         * @return BillingDestination[]
+         */
+        public function getConsumerDestinations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BillingDestination[]
+     * Runtime class alias of \Google\Service\ServiceManagement\Billing registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsumerDestinations()
+    class Google_Service_ServiceManagement_Billing extends \Google\Service\ServiceManagement\Billing
     {
     }
 }

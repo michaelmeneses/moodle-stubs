@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfigNotebooklmConfig extends \Google\Model
-{
-    protected $modelArmorConfigType = GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfigNotebooklmConfigModelArmorConfig::class;
-    protected $modelArmorConfigDataType = '';
-    /**
-     * Optional. Whether to disable the notebook sharing feature for the project.
-     * Default to false if not specified.
-     *
-     * @var bool
-     */
-    public $optOutNotebookSharing;
-    /**
-     * Model Armor configuration to be used for sanitizing user prompts and LLM
-     * responses.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfigNotebooklmConfigModelArmorConfig $modelArmorConfig
-     */
-    public function setModelArmorConfig(GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfigNotebooklmConfigModelArmorConfig $modelArmorConfig)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfigNotebooklmConfig extends \Google\Model
     {
+        protected $modelArmorConfigType = GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfigNotebooklmConfigModelArmorConfig::class;
+        protected $modelArmorConfigDataType = '';
+        /**
+         * Optional. Whether to disable the notebook sharing feature for the project.
+         * Default to false if not specified.
+         *
+         * @var bool
+         */
+        public $optOutNotebookSharing;
+        /**
+         * Model Armor configuration to be used for sanitizing user prompts and LLM
+         * responses.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfigNotebooklmConfigModelArmorConfig $modelArmorConfig
+         */
+        public function setModelArmorConfig(GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfigNotebooklmConfigModelArmorConfig $modelArmorConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfigNotebooklmConfigModelArmorConfig
+         */
+        public function getModelArmorConfig()
+        {
+        }
+        /**
+         * Optional. Whether to disable the notebook sharing feature for the project.
+         * Default to false if not specified.
+         *
+         * @param bool $optOutNotebookSharing
+         */
+        public function setOptOutNotebookSharing($optOutNotebookSharing)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOptOutNotebookSharing()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfigNotebooklmConfigModelArmorConfig
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfigNotebooklmConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModelArmorConfig()
-    {
-    }
-    /**
-     * Optional. Whether to disable the notebook sharing feature for the project.
-     * Default to false if not specified.
-     *
-     * @param bool $optOutNotebookSharing
-     */
-    public function setOptOutNotebookSharing($optOutNotebookSharing)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOptOutNotebookSharing()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfigNotebooklmConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfigNotebooklmConfig
     {
     }
 }

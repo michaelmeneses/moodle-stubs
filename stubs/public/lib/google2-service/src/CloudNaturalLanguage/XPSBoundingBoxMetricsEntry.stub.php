@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSBoundingBoxMetricsEntry extends \Google\Collection
-{
-    protected $collection_key = 'confidenceMetricsEntries';
-    protected $confidenceMetricsEntriesType = XPSBoundingBoxMetricsEntryConfidenceMetricsEntry::class;
-    protected $confidenceMetricsEntriesDataType = 'array';
-    /**
-     * The intersection-over-union threshold value used to compute this metrics
-     * entry.
-     *
-     * @var float
-     */
-    public $iouThreshold;
-    /**
-     * The mean average precision.
-     *
-     * @var float
-     */
-    public $meanAveragePrecision;
-    /**
-     * Metrics for each label-match confidence_threshold from
-     * 0.05,0.10,...,0.95,0.96,0.97,0.98,0.99.
-     *
-     * @param XPSBoundingBoxMetricsEntryConfidenceMetricsEntry[] $confidenceMetricsEntries
-     */
-    public function setConfidenceMetricsEntries($confidenceMetricsEntries)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSBoundingBoxMetricsEntry extends \Google\Collection
     {
+        protected $collection_key = 'confidenceMetricsEntries';
+        protected $confidenceMetricsEntriesType = XPSBoundingBoxMetricsEntryConfidenceMetricsEntry::class;
+        protected $confidenceMetricsEntriesDataType = 'array';
+        /**
+         * The intersection-over-union threshold value used to compute this metrics
+         * entry.
+         *
+         * @var float
+         */
+        public $iouThreshold;
+        /**
+         * The mean average precision.
+         *
+         * @var float
+         */
+        public $meanAveragePrecision;
+        /**
+         * Metrics for each label-match confidence_threshold from
+         * 0.05,0.10,...,0.95,0.96,0.97,0.98,0.99.
+         *
+         * @param XPSBoundingBoxMetricsEntryConfidenceMetricsEntry[] $confidenceMetricsEntries
+         */
+        public function setConfidenceMetricsEntries($confidenceMetricsEntries)
+        {
+        }
+        /**
+         * @return XPSBoundingBoxMetricsEntryConfidenceMetricsEntry[]
+         */
+        public function getConfidenceMetricsEntries()
+        {
+        }
+        /**
+         * The intersection-over-union threshold value used to compute this metrics
+         * entry.
+         *
+         * @param float $iouThreshold
+         */
+        public function setIouThreshold($iouThreshold)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getIouThreshold()
+        {
+        }
+        /**
+         * The mean average precision.
+         *
+         * @param float $meanAveragePrecision
+         */
+        public function setMeanAveragePrecision($meanAveragePrecision)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMeanAveragePrecision()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSBoundingBoxMetricsEntryConfidenceMetricsEntry[]
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSBoundingBoxMetricsEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidenceMetricsEntries()
-    {
-    }
-    /**
-     * The intersection-over-union threshold value used to compute this metrics
-     * entry.
-     *
-     * @param float $iouThreshold
-     */
-    public function setIouThreshold($iouThreshold)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getIouThreshold()
-    {
-    }
-    /**
-     * The mean average precision.
-     *
-     * @param float $meanAveragePrecision
-     */
-    public function setMeanAveragePrecision($meanAveragePrecision)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getMeanAveragePrecision()
+    class Google_Service_CloudNaturalLanguage_XPSBoundingBoxMetricsEntry extends \Google\Service\CloudNaturalLanguage\XPSBoundingBoxMetricsEntry
     {
     }
 }

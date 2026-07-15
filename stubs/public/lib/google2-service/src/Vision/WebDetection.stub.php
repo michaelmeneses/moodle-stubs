@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class WebDetection extends \Google\Collection
-{
-    protected $collection_key = 'webEntities';
-    protected $bestGuessLabelsType = WebLabel::class;
-    protected $bestGuessLabelsDataType = 'array';
-    protected $fullMatchingImagesType = WebImage::class;
-    protected $fullMatchingImagesDataType = 'array';
-    protected $pagesWithMatchingImagesType = WebPage::class;
-    protected $pagesWithMatchingImagesDataType = 'array';
-    protected $partialMatchingImagesType = WebImage::class;
-    protected $partialMatchingImagesDataType = 'array';
-    protected $visuallySimilarImagesType = WebImage::class;
-    protected $visuallySimilarImagesDataType = 'array';
-    protected $webEntitiesType = WebEntity::class;
-    protected $webEntitiesDataType = 'array';
-    /**
-     * The service's best guess as to the topic of the request image. Inferred
-     * from similar images on the open web.
-     *
-     * @param WebLabel[] $bestGuessLabels
-     */
-    public function setBestGuessLabels($bestGuessLabels)
+namespace Google\Service\Vision {
+    class WebDetection extends \Google\Collection
     {
+        protected $collection_key = 'webEntities';
+        protected $bestGuessLabelsType = WebLabel::class;
+        protected $bestGuessLabelsDataType = 'array';
+        protected $fullMatchingImagesType = WebImage::class;
+        protected $fullMatchingImagesDataType = 'array';
+        protected $pagesWithMatchingImagesType = WebPage::class;
+        protected $pagesWithMatchingImagesDataType = 'array';
+        protected $partialMatchingImagesType = WebImage::class;
+        protected $partialMatchingImagesDataType = 'array';
+        protected $visuallySimilarImagesType = WebImage::class;
+        protected $visuallySimilarImagesDataType = 'array';
+        protected $webEntitiesType = WebEntity::class;
+        protected $webEntitiesDataType = 'array';
+        /**
+         * The service's best guess as to the topic of the request image. Inferred
+         * from similar images on the open web.
+         *
+         * @param WebLabel[] $bestGuessLabels
+         */
+        public function setBestGuessLabels($bestGuessLabels)
+        {
+        }
+        /**
+         * @return WebLabel[]
+         */
+        public function getBestGuessLabels()
+        {
+        }
+        /**
+         * Fully matching images from the Internet. Can include resized copies of the
+         * query image.
+         *
+         * @param WebImage[] $fullMatchingImages
+         */
+        public function setFullMatchingImages($fullMatchingImages)
+        {
+        }
+        /**
+         * @return WebImage[]
+         */
+        public function getFullMatchingImages()
+        {
+        }
+        /**
+         * Web pages containing the matching images from the Internet.
+         *
+         * @param WebPage[] $pagesWithMatchingImages
+         */
+        public function setPagesWithMatchingImages($pagesWithMatchingImages)
+        {
+        }
+        /**
+         * @return WebPage[]
+         */
+        public function getPagesWithMatchingImages()
+        {
+        }
+        /**
+         * Partial matching images from the Internet. Those images are similar enough
+         * to share some key-point features. For example an original image will likely
+         * have partial matching for its crops.
+         *
+         * @param WebImage[] $partialMatchingImages
+         */
+        public function setPartialMatchingImages($partialMatchingImages)
+        {
+        }
+        /**
+         * @return WebImage[]
+         */
+        public function getPartialMatchingImages()
+        {
+        }
+        /**
+         * The visually similar image results.
+         *
+         * @param WebImage[] $visuallySimilarImages
+         */
+        public function setVisuallySimilarImages($visuallySimilarImages)
+        {
+        }
+        /**
+         * @return WebImage[]
+         */
+        public function getVisuallySimilarImages()
+        {
+        }
+        /**
+         * Deduced entities from similar images on the Internet.
+         *
+         * @param WebEntity[] $webEntities
+         */
+        public function setWebEntities($webEntities)
+        {
+        }
+        /**
+         * @return WebEntity[]
+         */
+        public function getWebEntities()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return WebLabel[]
+     * Runtime class alias of \Google\Service\Vision\WebDetection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBestGuessLabels()
-    {
-    }
-    /**
-     * Fully matching images from the Internet. Can include resized copies of the
-     * query image.
-     *
-     * @param WebImage[] $fullMatchingImages
-     */
-    public function setFullMatchingImages($fullMatchingImages)
-    {
-    }
-    /**
-     * @return WebImage[]
-     */
-    public function getFullMatchingImages()
-    {
-    }
-    /**
-     * Web pages containing the matching images from the Internet.
-     *
-     * @param WebPage[] $pagesWithMatchingImages
-     */
-    public function setPagesWithMatchingImages($pagesWithMatchingImages)
-    {
-    }
-    /**
-     * @return WebPage[]
-     */
-    public function getPagesWithMatchingImages()
-    {
-    }
-    /**
-     * Partial matching images from the Internet. Those images are similar enough
-     * to share some key-point features. For example an original image will likely
-     * have partial matching for its crops.
-     *
-     * @param WebImage[] $partialMatchingImages
-     */
-    public function setPartialMatchingImages($partialMatchingImages)
-    {
-    }
-    /**
-     * @return WebImage[]
-     */
-    public function getPartialMatchingImages()
-    {
-    }
-    /**
-     * The visually similar image results.
-     *
-     * @param WebImage[] $visuallySimilarImages
-     */
-    public function setVisuallySimilarImages($visuallySimilarImages)
-    {
-    }
-    /**
-     * @return WebImage[]
-     */
-    public function getVisuallySimilarImages()
-    {
-    }
-    /**
-     * Deduced entities from similar images on the Internet.
-     *
-     * @param WebEntity[] $webEntities
-     */
-    public function setWebEntities($webEntities)
-    {
-    }
-    /**
-     * @return WebEntity[]
-     */
-    public function getWebEntities()
+    class Google_Service_Vision_WebDetection extends \Google\Service\Vision\WebDetection
     {
     }
 }

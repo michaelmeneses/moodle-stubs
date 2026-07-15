@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV1CustomOutputSpec extends \Google\Collection
-{
-    protected $collection_key = 'properties';
-    protected $propertiesType = GoogleCloudSecuritycenterV1Property::class;
-    protected $propertiesDataType = 'array';
-    /**
-     * A list of custom output properties to add to the finding.
-     *
-     * @param GoogleCloudSecuritycenterV1Property[] $properties
-     */
-    public function setProperties($properties)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV1CustomOutputSpec extends \Google\Collection
     {
+        protected $collection_key = 'properties';
+        protected $propertiesType = GoogleCloudSecuritycenterV1Property::class;
+        protected $propertiesDataType = 'array';
+        /**
+         * A list of custom output properties to add to the finding.
+         *
+         * @param GoogleCloudSecuritycenterV1Property[] $properties
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV1Property[]
+         */
+        public function getProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV1Property[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV1CustomOutputSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProperties()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV1CustomOutputSpec extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV1CustomOutputSpec
     {
     }
 }

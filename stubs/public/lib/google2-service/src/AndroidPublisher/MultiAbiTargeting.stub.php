@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class MultiAbiTargeting extends \Google\Collection
-{
-    protected $collection_key = 'value';
-    protected $alternativesType = MultiAbi::class;
-    protected $alternativesDataType = 'array';
-    protected $valueType = MultiAbi::class;
-    protected $valueDataType = 'array';
-    /**
-     * Targeting of other sibling directories that were in the Bundle. For main
-     * splits this is targeting of other main splits.
-     *
-     * @param MultiAbi[] $alternatives
-     */
-    public function setAlternatives($alternatives)
+namespace Google\Service\AndroidPublisher {
+    class MultiAbiTargeting extends \Google\Collection
     {
+        protected $collection_key = 'value';
+        protected $alternativesType = MultiAbi::class;
+        protected $alternativesDataType = 'array';
+        protected $valueType = MultiAbi::class;
+        protected $valueDataType = 'array';
+        /**
+         * Targeting of other sibling directories that were in the Bundle. For main
+         * splits this is targeting of other main splits.
+         *
+         * @param MultiAbi[] $alternatives
+         */
+        public function setAlternatives($alternatives)
+        {
+        }
+        /**
+         * @return MultiAbi[]
+         */
+        public function getAlternatives()
+        {
+        }
+        /**
+         * Value of a multi abi.
+         *
+         * @param MultiAbi[] $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return MultiAbi[]
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MultiAbi[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\MultiAbiTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlternatives()
-    {
-    }
-    /**
-     * Value of a multi abi.
-     *
-     * @param MultiAbi[] $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return MultiAbi[]
-     */
-    public function getValue()
+    class Google_Service_AndroidPublisher_MultiAbiTargeting extends \Google\Service\AndroidPublisher\MultiAbiTargeting
     {
     }
 }

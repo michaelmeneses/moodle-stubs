@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DeltaPresenceEstimationResult extends \Google\Collection
-{
-    protected $collection_key = 'deltaPresenceEstimationHistogram';
-    protected $deltaPresenceEstimationHistogramType = GooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket::class;
-    protected $deltaPresenceEstimationHistogramDataType = 'array';
-    /**
-     * The intervals [min_probability, max_probability) do not overlap. If a value
-     * doesn't correspond to any such interval, the associated frequency is zero.
-     * For example, the following records: {min_probability: 0, max_probability:
-     * 0.1, frequency: 17} {min_probability: 0.2, max_probability: 0.3, frequency:
-     * 42} {min_probability: 0.3, max_probability: 0.4, frequency: 99} mean that
-     * there are no record with an estimated probability in [0.1, 0.2) nor larger
-     * or equal to 0.4.
-     *
-     * @param GooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket[] $deltaPresenceEstimationHistogram
-     */
-    public function setDeltaPresenceEstimationHistogram($deltaPresenceEstimationHistogram)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DeltaPresenceEstimationResult extends \Google\Collection
     {
+        protected $collection_key = 'deltaPresenceEstimationHistogram';
+        protected $deltaPresenceEstimationHistogramType = GooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket::class;
+        protected $deltaPresenceEstimationHistogramDataType = 'array';
+        /**
+         * The intervals [min_probability, max_probability) do not overlap. If a value
+         * doesn't correspond to any such interval, the associated frequency is zero.
+         * For example, the following records: {min_probability: 0, max_probability:
+         * 0.1, frequency: 17} {min_probability: 0.2, max_probability: 0.3, frequency:
+         * 42} {min_probability: 0.3, max_probability: 0.4, frequency: 99} mean that
+         * there are no record with an estimated probability in [0.1, 0.2) nor larger
+         * or equal to 0.4.
+         *
+         * @param GooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket[] $deltaPresenceEstimationHistogram
+         */
+        public function setDeltaPresenceEstimationHistogram($deltaPresenceEstimationHistogram)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket[]
+         */
+        public function getDeltaPresenceEstimationHistogram()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DeltaPresenceEstimationResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeltaPresenceEstimationHistogram()
+    class Google_Service_DLP_GooglePrivacyDlpV2DeltaPresenceEstimationResult extends \Google\Service\DLP\GooglePrivacyDlpV2DeltaPresenceEstimationResult
     {
     }
 }

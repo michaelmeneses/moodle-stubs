@@ -21,273 +21,282 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1DiskInfo extends \Google\Collection
-{
-    protected $collection_key = 'volumeIds';
-    /**
-     * Output only. Number of bytes read since last boot.
-     *
-     * @var string
-     */
-    public $bytesReadThisSession;
-    /**
-     * Output only. Number of bytes written since last boot.
-     *
-     * @var string
-     */
-    public $bytesWrittenThisSession;
-    /**
-     * Output only. Time spent discarding since last boot. Discarding is writing
-     * to clear blocks which are no longer in use. Supported on kernels 4.18+.
-     *
-     * @var string
-     */
-    public $discardTimeThisSession;
-    /**
-     * Output only. Disk health.
-     *
-     * @var string
-     */
-    public $health;
-    /**
-     * Output only. Counts the time the disk and queue were busy, so unlike the
-     * fields above, parallel requests are not counted multiple times.
-     *
-     * @var string
-     */
-    public $ioTimeThisSession;
-    /**
-     * Output only. Disk manufacturer.
-     *
-     * @var string
-     */
-    public $manufacturer;
-    /**
-     * Output only. Disk model.
-     *
-     * @var string
-     */
-    public $model;
-    /**
-     * Output only. Time spent reading from disk since last boot.
-     *
-     * @var string
-     */
-    public $readTimeThisSession;
-    /**
-     * Output only. Disk serial number.
-     *
-     * @var string
-     */
-    public $serialNumber;
-    /**
-     * Output only. Disk size.
-     *
-     * @var string
-     */
-    public $sizeBytes;
-    /**
-     * Output only. Disk type: eMMC / NVMe / ATA / SCSI.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. Disk volumes.
-     *
-     * @var string[]
-     */
-    public $volumeIds;
-    /**
-     * Output only. Time spent writing to disk since last boot.
-     *
-     * @var string
-     */
-    public $writeTimeThisSession;
-    /**
-     * Output only. Number of bytes read since last boot.
-     *
-     * @param string $bytesReadThisSession
-     */
-    public function setBytesReadThisSession($bytesReadThisSession)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1DiskInfo extends \Google\Collection
     {
+        protected $collection_key = 'volumeIds';
+        /**
+         * Output only. Number of bytes read since last boot.
+         *
+         * @var string
+         */
+        public $bytesReadThisSession;
+        /**
+         * Output only. Number of bytes written since last boot.
+         *
+         * @var string
+         */
+        public $bytesWrittenThisSession;
+        /**
+         * Output only. Time spent discarding since last boot. Discarding is writing
+         * to clear blocks which are no longer in use. Supported on kernels 4.18+.
+         *
+         * @var string
+         */
+        public $discardTimeThisSession;
+        /**
+         * Output only. Disk health.
+         *
+         * @var string
+         */
+        public $health;
+        /**
+         * Output only. Counts the time the disk and queue were busy, so unlike the
+         * fields above, parallel requests are not counted multiple times.
+         *
+         * @var string
+         */
+        public $ioTimeThisSession;
+        /**
+         * Output only. Disk manufacturer.
+         *
+         * @var string
+         */
+        public $manufacturer;
+        /**
+         * Output only. Disk model.
+         *
+         * @var string
+         */
+        public $model;
+        /**
+         * Output only. Time spent reading from disk since last boot.
+         *
+         * @var string
+         */
+        public $readTimeThisSession;
+        /**
+         * Output only. Disk serial number.
+         *
+         * @var string
+         */
+        public $serialNumber;
+        /**
+         * Output only. Disk size.
+         *
+         * @var string
+         */
+        public $sizeBytes;
+        /**
+         * Output only. Disk type: eMMC / NVMe / ATA / SCSI.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. Disk volumes.
+         *
+         * @var string[]
+         */
+        public $volumeIds;
+        /**
+         * Output only. Time spent writing to disk since last boot.
+         *
+         * @var string
+         */
+        public $writeTimeThisSession;
+        /**
+         * Output only. Number of bytes read since last boot.
+         *
+         * @param string $bytesReadThisSession
+         */
+        public function setBytesReadThisSession($bytesReadThisSession)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBytesReadThisSession()
+        {
+        }
+        /**
+         * Output only. Number of bytes written since last boot.
+         *
+         * @param string $bytesWrittenThisSession
+         */
+        public function setBytesWrittenThisSession($bytesWrittenThisSession)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBytesWrittenThisSession()
+        {
+        }
+        /**
+         * Output only. Time spent discarding since last boot. Discarding is writing
+         * to clear blocks which are no longer in use. Supported on kernels 4.18+.
+         *
+         * @param string $discardTimeThisSession
+         */
+        public function setDiscardTimeThisSession($discardTimeThisSession)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiscardTimeThisSession()
+        {
+        }
+        /**
+         * Output only. Disk health.
+         *
+         * @param string $health
+         */
+        public function setHealth($health)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHealth()
+        {
+        }
+        /**
+         * Output only. Counts the time the disk and queue were busy, so unlike the
+         * fields above, parallel requests are not counted multiple times.
+         *
+         * @param string $ioTimeThisSession
+         */
+        public function setIoTimeThisSession($ioTimeThisSession)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIoTimeThisSession()
+        {
+        }
+        /**
+         * Output only. Disk manufacturer.
+         *
+         * @param string $manufacturer
+         */
+        public function setManufacturer($manufacturer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getManufacturer()
+        {
+        }
+        /**
+         * Output only. Disk model.
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
+        /**
+         * Output only. Time spent reading from disk since last boot.
+         *
+         * @param string $readTimeThisSession
+         */
+        public function setReadTimeThisSession($readTimeThisSession)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadTimeThisSession()
+        {
+        }
+        /**
+         * Output only. Disk serial number.
+         *
+         * @param string $serialNumber
+         */
+        public function setSerialNumber($serialNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSerialNumber()
+        {
+        }
+        /**
+         * Output only. Disk size.
+         *
+         * @param string $sizeBytes
+         */
+        public function setSizeBytes($sizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSizeBytes()
+        {
+        }
+        /**
+         * Output only. Disk type: eMMC / NVMe / ATA / SCSI.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Output only. Disk volumes.
+         *
+         * @param string[] $volumeIds
+         */
+        public function setVolumeIds($volumeIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getVolumeIds()
+        {
+        }
+        /**
+         * Output only. Time spent writing to disk since last boot.
+         *
+         * @param string $writeTimeThisSession
+         */
+        public function setWriteTimeThisSession($writeTimeThisSession)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWriteTimeThisSession()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1DiskInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBytesReadThisSession()
-    {
-    }
-    /**
-     * Output only. Number of bytes written since last boot.
-     *
-     * @param string $bytesWrittenThisSession
-     */
-    public function setBytesWrittenThisSession($bytesWrittenThisSession)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBytesWrittenThisSession()
-    {
-    }
-    /**
-     * Output only. Time spent discarding since last boot. Discarding is writing
-     * to clear blocks which are no longer in use. Supported on kernels 4.18+.
-     *
-     * @param string $discardTimeThisSession
-     */
-    public function setDiscardTimeThisSession($discardTimeThisSession)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiscardTimeThisSession()
-    {
-    }
-    /**
-     * Output only. Disk health.
-     *
-     * @param string $health
-     */
-    public function setHealth($health)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHealth()
-    {
-    }
-    /**
-     * Output only. Counts the time the disk and queue were busy, so unlike the
-     * fields above, parallel requests are not counted multiple times.
-     *
-     * @param string $ioTimeThisSession
-     */
-    public function setIoTimeThisSession($ioTimeThisSession)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIoTimeThisSession()
-    {
-    }
-    /**
-     * Output only. Disk manufacturer.
-     *
-     * @param string $manufacturer
-     */
-    public function setManufacturer($manufacturer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getManufacturer()
-    {
-    }
-    /**
-     * Output only. Disk model.
-     *
-     * @param string $model
-     */
-    public function setModel($model)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModel()
-    {
-    }
-    /**
-     * Output only. Time spent reading from disk since last boot.
-     *
-     * @param string $readTimeThisSession
-     */
-    public function setReadTimeThisSession($readTimeThisSession)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadTimeThisSession()
-    {
-    }
-    /**
-     * Output only. Disk serial number.
-     *
-     * @param string $serialNumber
-     */
-    public function setSerialNumber($serialNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSerialNumber()
-    {
-    }
-    /**
-     * Output only. Disk size.
-     *
-     * @param string $sizeBytes
-     */
-    public function setSizeBytes($sizeBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSizeBytes()
-    {
-    }
-    /**
-     * Output only. Disk type: eMMC / NVMe / ATA / SCSI.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Output only. Disk volumes.
-     *
-     * @param string[] $volumeIds
-     */
-    public function setVolumeIds($volumeIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getVolumeIds()
-    {
-    }
-    /**
-     * Output only. Time spent writing to disk since last boot.
-     *
-     * @param string $writeTimeThisSession
-     */
-    public function setWriteTimeThisSession($writeTimeThisSession)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWriteTimeThisSession()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1DiskInfo extends \Google\Service\ChromeManagement\GoogleChromeManagementV1DiskInfo
     {
     }
 }

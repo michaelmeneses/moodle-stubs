@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1EnvironmentInfrastructureSpec extends \Google\Model
-{
-    protected $computeType = GoogleCloudDataplexV1EnvironmentInfrastructureSpecComputeResources::class;
-    protected $computeDataType = '';
-    protected $osImageType = GoogleCloudDataplexV1EnvironmentInfrastructureSpecOsImageRuntime::class;
-    protected $osImageDataType = '';
-    /**
-     * Optional. Compute resources needed for analyze interactive workloads.
-     *
-     * @param GoogleCloudDataplexV1EnvironmentInfrastructureSpecComputeResources $compute
-     */
-    public function setCompute(GoogleCloudDataplexV1EnvironmentInfrastructureSpecComputeResources $compute)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1EnvironmentInfrastructureSpec extends \Google\Model
     {
+        protected $computeType = GoogleCloudDataplexV1EnvironmentInfrastructureSpecComputeResources::class;
+        protected $computeDataType = '';
+        protected $osImageType = GoogleCloudDataplexV1EnvironmentInfrastructureSpecOsImageRuntime::class;
+        protected $osImageDataType = '';
+        /**
+         * Optional. Compute resources needed for analyze interactive workloads.
+         *
+         * @param GoogleCloudDataplexV1EnvironmentInfrastructureSpecComputeResources $compute
+         */
+        public function setCompute(GoogleCloudDataplexV1EnvironmentInfrastructureSpecComputeResources $compute)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1EnvironmentInfrastructureSpecComputeResources
+         */
+        public function getCompute()
+        {
+        }
+        /**
+         * Required. Software Runtime Configuration for analyze interactive workloads.
+         *
+         * @param GoogleCloudDataplexV1EnvironmentInfrastructureSpecOsImageRuntime $osImage
+         */
+        public function setOsImage(GoogleCloudDataplexV1EnvironmentInfrastructureSpecOsImageRuntime $osImage)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1EnvironmentInfrastructureSpecOsImageRuntime
+         */
+        public function getOsImage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1EnvironmentInfrastructureSpecComputeResources
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1EnvironmentInfrastructureSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompute()
-    {
-    }
-    /**
-     * Required. Software Runtime Configuration for analyze interactive workloads.
-     *
-     * @param GoogleCloudDataplexV1EnvironmentInfrastructureSpecOsImageRuntime $osImage
-     */
-    public function setOsImage(GoogleCloudDataplexV1EnvironmentInfrastructureSpecOsImageRuntime $osImage)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1EnvironmentInfrastructureSpecOsImageRuntime
-     */
-    public function getOsImage()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1EnvironmentInfrastructureSpec extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1EnvironmentInfrastructureSpec
     {
     }
 }

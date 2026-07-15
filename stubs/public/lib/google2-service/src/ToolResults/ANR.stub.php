@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class ANR extends \Google\Model
-{
-    protected $stackTraceType = StackTrace::class;
-    protected $stackTraceDataType = '';
-    /**
-     * The stack trace of the ANR crash. Optional.
-     *
-     * @param StackTrace $stackTrace
-     */
-    public function setStackTrace(StackTrace $stackTrace)
+namespace Google\Service\ToolResults {
+    class ANR extends \Google\Model
     {
+        protected $stackTraceType = StackTrace::class;
+        protected $stackTraceDataType = '';
+        /**
+         * The stack trace of the ANR crash. Optional.
+         *
+         * @param StackTrace $stackTrace
+         */
+        public function setStackTrace(StackTrace $stackTrace)
+        {
+        }
+        /**
+         * @return StackTrace
+         */
+        public function getStackTrace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StackTrace
+     * Runtime class alias of \Google\Service\ToolResults\ANR registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStackTrace()
+    class Google_Service_ToolResults_ANR extends \Google\Service\ToolResults\ANR
     {
     }
 }

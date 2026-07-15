@@ -21,68 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo\Resource;
-
-/**
- * The "googleAudiences" collection of methods.
- * Typical usage is:
- *  <code>
- *   $displayvideoService = new Google\Service\DisplayVideo(...);
- *   $googleAudiences = $displayvideoService->googleAudiences;
- *  </code>
- */
-class GoogleAudiences extends \Google\Service\Resource
-{
+namespace Google\Service\DisplayVideo\Resource {
+    use Google\Service\DisplayVideo\GoogleAudience;
+    use Google\Service\DisplayVideo\ListGoogleAudiencesResponse;
     /**
-     * Gets a Google audience. (googleAudiences.get)
-     *
-     * @param string $googleAudienceId Required. The ID of the Google audience to
-     * fetch.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string advertiserId The ID of the advertiser that has access to
-     * the fetched Google audience.
-     * @opt_param string partnerId The ID of the partner that has access to the
-     * fetched Google audience.
-     * @return GoogleAudience
-     * @throws \Google\Service\Exception
+     * The "googleAudiences" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $displayvideoService = new Google\Service\DisplayVideo(...);
+     *   $googleAudiences = $displayvideoService->googleAudiences;
+     *  </code>
      */
-    public function get($googleAudienceId, $optParams = [])
+    class GoogleAudiences extends \Google\Service\Resource
     {
+        /**
+         * Gets a Google audience. (googleAudiences.get)
+         *
+         * @param string $googleAudienceId Required. The ID of the Google audience to
+         * fetch.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string advertiserId The ID of the advertiser that has access to
+         * the fetched Google audience.
+         * @opt_param string partnerId The ID of the partner that has access to the
+         * fetched Google audience.
+         * @return GoogleAudience
+         * @throws \Google\Service\Exception
+         */
+        public function get($googleAudienceId, $optParams = [])
+        {
+        }
+        /**
+         * Lists Google audiences. The order is defined by the order_by parameter.
+         * (googleAudiences.listGoogleAudiences)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string advertiserId The ID of the advertiser that has access to
+         * the fetched Google audiences.
+         * @opt_param string filter Allows filtering by Google audience fields.
+         * Supported syntax: * Filter expressions for Google audiences can only contain
+         * at most one restriction. * A restriction has the form of `{field} {operator}
+         * {value}`. * All fields must use the `HAS (:)` operator. Supported fields: *
+         * `displayName` Examples: * All Google audiences for which the display name
+         * contains "Google": `displayName:"Google"`. The length of this field should be
+         * no more than 500 characters. Reference our [filter `LIST` requests](/display-
+         * video/api/guides/how-tos/filters) guide for more information.
+         * @opt_param string orderBy Field by which to sort the list. Acceptable values
+         * are: * `googleAudienceId` (default) * `displayName` The default sorting order
+         * is ascending. To specify descending order for a field, a suffix "desc" should
+         * be added to the field name. Example: `displayName desc`.
+         * @opt_param int pageSize Requested page size. Must be between `1` and `200`.
+         * If unspecified will default to `100`. Returns error code `INVALID_ARGUMENT`
+         * if an invalid value is specified.
+         * @opt_param string pageToken A token identifying a page of results the server
+         * should return. Typically, this is the value of next_page_token returned from
+         * the previous call to `ListGoogleAudiences` method. If not specified, the
+         * first page of results will be returned.
+         * @opt_param string partnerId The ID of the partner that has access to the
+         * fetched Google audiences.
+         * @return ListGoogleAudiencesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listGoogleAudiences($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists Google audiences. The order is defined by the order_by parameter.
-     * (googleAudiences.listGoogleAudiences)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string advertiserId The ID of the advertiser that has access to
-     * the fetched Google audiences.
-     * @opt_param string filter Allows filtering by Google audience fields.
-     * Supported syntax: * Filter expressions for Google audiences can only contain
-     * at most one restriction. * A restriction has the form of `{field} {operator}
-     * {value}`. * All fields must use the `HAS (:)` operator. Supported fields: *
-     * `displayName` Examples: * All Google audiences for which the display name
-     * contains "Google": `displayName:"Google"`. The length of this field should be
-     * no more than 500 characters. Reference our [filter `LIST` requests](/display-
-     * video/api/guides/how-tos/filters) guide for more information.
-     * @opt_param string orderBy Field by which to sort the list. Acceptable values
-     * are: * `googleAudienceId` (default) * `displayName` The default sorting order
-     * is ascending. To specify descending order for a field, a suffix "desc" should
-     * be added to the field name. Example: `displayName desc`.
-     * @opt_param int pageSize Requested page size. Must be between `1` and `200`.
-     * If unspecified will default to `100`. Returns error code `INVALID_ARGUMENT`
-     * if an invalid value is specified.
-     * @opt_param string pageToken A token identifying a page of results the server
-     * should return. Typically, this is the value of next_page_token returned from
-     * the previous call to `ListGoogleAudiences` method. If not specified, the
-     * first page of results will be returned.
-     * @opt_param string partnerId The ID of the partner that has access to the
-     * fetched Google audiences.
-     * @return ListGoogleAudiencesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\DisplayVideo\Resource\GoogleAudiences registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listGoogleAudiences($optParams = [])
+    class Google_Service_DisplayVideo_Resource_GoogleAudiences extends \Google\Service\DisplayVideo\Resource\GoogleAudiences
     {
     }
 }

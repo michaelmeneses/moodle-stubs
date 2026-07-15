@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class Inventory extends \Google\Model
-{
-    protected $itemsType = InventoryItem::class;
-    protected $itemsDataType = 'map';
-    /**
-     * @var string
-     */
-    public $name;
-    protected $osInfoType = InventoryOsInfo::class;
-    protected $osInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param InventoryItem[]
-     */
-    public function setItems($items)
+namespace Google\Service\OSConfig {
+    class Inventory extends \Google\Model
     {
+        protected $itemsType = InventoryItem::class;
+        protected $itemsDataType = 'map';
+        /**
+         * @var string
+         */
+        public $name;
+        protected $osInfoType = InventoryOsInfo::class;
+        protected $osInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param InventoryItem[]
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return InventoryItem[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param InventoryOsInfo
+         */
+        public function setOsInfo(InventoryOsInfo $osInfo)
+        {
+        }
+        /**
+         * @return InventoryOsInfo
+         */
+        public function getOsInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InventoryItem[]
+     * Runtime class alias of \Google\Service\OSConfig\Inventory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param InventoryOsInfo
-     */
-    public function setOsInfo(InventoryOsInfo $osInfo)
-    {
-    }
-    /**
-     * @return InventoryOsInfo
-     */
-    public function getOsInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_OSConfig_Inventory extends \Google\Service\OSConfig\Inventory
     {
     }
 }

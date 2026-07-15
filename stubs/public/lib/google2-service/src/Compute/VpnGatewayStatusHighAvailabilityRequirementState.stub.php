@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class VpnGatewayStatusHighAvailabilityRequirementState extends \Google\Model
-{
-    /**
-     * VPN tunnels are configured with adequate redundancy from Cloud VPN gateway
-     * to the peer VPN gateway. For both GCP-to-non-GCP and GCP-to-GCP
-     * connections, the adequate redundancy is a pre-requirement for users to get
-     * 99.99% availability on GCP side; please note that for any connection, end-
-     * to-end 99.99% availability is subject to proper configuration on the peer
-     * VPN gateway.
-     */
-    public const STATE_CONNECTION_REDUNDANCY_MET = 'CONNECTION_REDUNDANCY_MET';
-    /**
-     * VPN tunnels are not configured with adequate redundancy from the Cloud VPN
-     * gateway to the peer gateway
-     */
-    public const STATE_CONNECTION_REDUNDANCY_NOT_MET = 'CONNECTION_REDUNDANCY_NOT_MET';
-    public const UNSATISFIED_REASON_INCOMPLETE_TUNNELS_COVERAGE = 'INCOMPLETE_TUNNELS_COVERAGE';
-    /**
-     * Indicates the high availability requirement state for the VPN connection.
-     * Valid values are CONNECTION_REDUNDANCY_MET,CONNECTION_REDUNDANCY_NOT_MET.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Indicates the reason why the VPN connection does not meet the high
-     * availability redundancy criteria/requirement. Valid values is
-     * INCOMPLETE_TUNNELS_COVERAGE.
-     *
-     * @var string
-     */
-    public $unsatisfiedReason;
-    /**
-     * Indicates the high availability requirement state for the VPN connection.
-     * Valid values are CONNECTION_REDUNDANCY_MET,CONNECTION_REDUNDANCY_NOT_MET.
-     *
-     * Accepted values: CONNECTION_REDUNDANCY_MET, CONNECTION_REDUNDANCY_NOT_MET
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
+namespace Google\Service\Compute {
+    class VpnGatewayStatusHighAvailabilityRequirementState extends \Google\Model
     {
+        /**
+         * VPN tunnels are configured with adequate redundancy from Cloud VPN gateway
+         * to the peer VPN gateway. For both GCP-to-non-GCP and GCP-to-GCP
+         * connections, the adequate redundancy is a pre-requirement for users to get
+         * 99.99% availability on GCP side; please note that for any connection, end-
+         * to-end 99.99% availability is subject to proper configuration on the peer
+         * VPN gateway.
+         */
+        public const STATE_CONNECTION_REDUNDANCY_MET = 'CONNECTION_REDUNDANCY_MET';
+        /**
+         * VPN tunnels are not configured with adequate redundancy from the Cloud VPN
+         * gateway to the peer gateway
+         */
+        public const STATE_CONNECTION_REDUNDANCY_NOT_MET = 'CONNECTION_REDUNDANCY_NOT_MET';
+        public const UNSATISFIED_REASON_INCOMPLETE_TUNNELS_COVERAGE = 'INCOMPLETE_TUNNELS_COVERAGE';
+        /**
+         * Indicates the high availability requirement state for the VPN connection.
+         * Valid values are CONNECTION_REDUNDANCY_MET,CONNECTION_REDUNDANCY_NOT_MET.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Indicates the reason why the VPN connection does not meet the high
+         * availability redundancy criteria/requirement. Valid values is
+         * INCOMPLETE_TUNNELS_COVERAGE.
+         *
+         * @var string
+         */
+        public $unsatisfiedReason;
+        /**
+         * Indicates the high availability requirement state for the VPN connection.
+         * Valid values are CONNECTION_REDUNDANCY_MET,CONNECTION_REDUNDANCY_NOT_MET.
+         *
+         * Accepted values: CONNECTION_REDUNDANCY_MET, CONNECTION_REDUNDANCY_NOT_MET
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Indicates the reason why the VPN connection does not meet the high
+         * availability redundancy criteria/requirement. Valid values is
+         * INCOMPLETE_TUNNELS_COVERAGE.
+         *
+         * Accepted values: INCOMPLETE_TUNNELS_COVERAGE
+         *
+         * @param self::UNSATISFIED_REASON_* $unsatisfiedReason
+         */
+        public function setUnsatisfiedReason($unsatisfiedReason)
+        {
+        }
+        /**
+         * @return self::UNSATISFIED_REASON_*
+         */
+        public function getUnsatisfiedReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::STATE_*
+     * Runtime class alias of \Google\Service\Compute\VpnGatewayStatusHighAvailabilityRequirementState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getState()
-    {
-    }
-    /**
-     * Indicates the reason why the VPN connection does not meet the high
-     * availability redundancy criteria/requirement. Valid values is
-     * INCOMPLETE_TUNNELS_COVERAGE.
-     *
-     * Accepted values: INCOMPLETE_TUNNELS_COVERAGE
-     *
-     * @param self::UNSATISFIED_REASON_* $unsatisfiedReason
-     */
-    public function setUnsatisfiedReason($unsatisfiedReason)
-    {
-    }
-    /**
-     * @return self::UNSATISFIED_REASON_*
-     */
-    public function getUnsatisfiedReason()
+    class Google_Service_Compute_VpnGatewayStatusHighAvailabilityRequirementState extends \Google\Service\Compute\VpnGatewayStatusHighAvailabilityRequirementState
     {
     }
 }

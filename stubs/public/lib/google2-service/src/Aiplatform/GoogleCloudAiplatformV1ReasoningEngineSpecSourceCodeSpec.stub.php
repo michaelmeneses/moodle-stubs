@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpec extends \Google\Model
-{
-    protected $developerConnectSourceType = GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecDeveloperConnectSource::class;
-    protected $developerConnectSourceDataType = '';
-    protected $inlineSourceType = GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecInlineSource::class;
-    protected $inlineSourceDataType = '';
-    protected $pythonSpecType = GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecPythonSpec::class;
-    protected $pythonSpecDataType = '';
-    /**
-     * Source code is in a Git repository managed by Developer Connect.
-     *
-     * @param GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecDeveloperConnectSource $developerConnectSource
-     */
-    public function setDeveloperConnectSource(GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecDeveloperConnectSource $developerConnectSource)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpec extends \Google\Model
     {
+        protected $developerConnectSourceType = GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecDeveloperConnectSource::class;
+        protected $developerConnectSourceDataType = '';
+        protected $inlineSourceType = GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecInlineSource::class;
+        protected $inlineSourceDataType = '';
+        protected $pythonSpecType = GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecPythonSpec::class;
+        protected $pythonSpecDataType = '';
+        /**
+         * Source code is in a Git repository managed by Developer Connect.
+         *
+         * @param GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecDeveloperConnectSource $developerConnectSource
+         */
+        public function setDeveloperConnectSource(GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecDeveloperConnectSource $developerConnectSource)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecDeveloperConnectSource
+         */
+        public function getDeveloperConnectSource()
+        {
+        }
+        /**
+         * Source code is provided directly in the request.
+         *
+         * @param GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecInlineSource $inlineSource
+         */
+        public function setInlineSource(GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecInlineSource $inlineSource)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecInlineSource
+         */
+        public function getInlineSource()
+        {
+        }
+        /**
+         * Configuration for a Python application.
+         *
+         * @param GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecPythonSpec $pythonSpec
+         */
+        public function setPythonSpec(GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecPythonSpec $pythonSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecPythonSpec
+         */
+        public function getPythonSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecDeveloperConnectSource
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeveloperConnectSource()
-    {
-    }
-    /**
-     * Source code is provided directly in the request.
-     *
-     * @param GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecInlineSource $inlineSource
-     */
-    public function setInlineSource(GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecInlineSource $inlineSource)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecInlineSource
-     */
-    public function getInlineSource()
-    {
-    }
-    /**
-     * Configuration for a Python application.
-     *
-     * @param GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecPythonSpec $pythonSpec
-     */
-    public function setPythonSpec(GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecPythonSpec $pythonSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecPythonSpec
-     */
-    public function getPythonSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpec
     {
     }
 }

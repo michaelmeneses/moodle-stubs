@@ -21,199 +21,208 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class TestSpecification extends \Google\Model
-{
-    protected $androidInstrumentationTestType = AndroidInstrumentationTest::class;
-    protected $androidInstrumentationTestDataType = '';
-    protected $androidRoboTestType = AndroidRoboTest::class;
-    protected $androidRoboTestDataType = '';
-    protected $androidTestLoopType = AndroidTestLoop::class;
-    protected $androidTestLoopDataType = '';
-    /**
-     * Disables performance metrics recording. May reduce test latency.
-     *
-     * @var bool
-     */
-    public $disablePerformanceMetrics;
-    /**
-     * Disables video recording. May reduce test latency.
-     *
-     * @var bool
-     */
-    public $disableVideoRecording;
-    protected $iosRoboTestType = IosRoboTest::class;
-    protected $iosRoboTestDataType = '';
-    protected $iosTestLoopType = IosTestLoop::class;
-    protected $iosTestLoopDataType = '';
-    protected $iosTestSetupType = IosTestSetup::class;
-    protected $iosTestSetupDataType = '';
-    protected $iosXcTestType = IosXcTest::class;
-    protected $iosXcTestDataType = '';
-    protected $testSetupType = TestSetup::class;
-    protected $testSetupDataType = '';
-    /**
-     * Max time a test execution is allowed to run before it is automatically
-     * cancelled. The default value is 5 min.
-     *
-     * @var string
-     */
-    public $testTimeout;
-    /**
-     * An Android instrumentation test.
-     *
-     * @param AndroidInstrumentationTest $androidInstrumentationTest
-     */
-    public function setAndroidInstrumentationTest(AndroidInstrumentationTest $androidInstrumentationTest)
+namespace Google\Service\Testing {
+    class TestSpecification extends \Google\Model
     {
+        protected $androidInstrumentationTestType = AndroidInstrumentationTest::class;
+        protected $androidInstrumentationTestDataType = '';
+        protected $androidRoboTestType = AndroidRoboTest::class;
+        protected $androidRoboTestDataType = '';
+        protected $androidTestLoopType = AndroidTestLoop::class;
+        protected $androidTestLoopDataType = '';
+        /**
+         * Disables performance metrics recording. May reduce test latency.
+         *
+         * @var bool
+         */
+        public $disablePerformanceMetrics;
+        /**
+         * Disables video recording. May reduce test latency.
+         *
+         * @var bool
+         */
+        public $disableVideoRecording;
+        protected $iosRoboTestType = IosRoboTest::class;
+        protected $iosRoboTestDataType = '';
+        protected $iosTestLoopType = IosTestLoop::class;
+        protected $iosTestLoopDataType = '';
+        protected $iosTestSetupType = IosTestSetup::class;
+        protected $iosTestSetupDataType = '';
+        protected $iosXcTestType = IosXcTest::class;
+        protected $iosXcTestDataType = '';
+        protected $testSetupType = TestSetup::class;
+        protected $testSetupDataType = '';
+        /**
+         * Max time a test execution is allowed to run before it is automatically
+         * cancelled. The default value is 5 min.
+         *
+         * @var string
+         */
+        public $testTimeout;
+        /**
+         * An Android instrumentation test.
+         *
+         * @param AndroidInstrumentationTest $androidInstrumentationTest
+         */
+        public function setAndroidInstrumentationTest(AndroidInstrumentationTest $androidInstrumentationTest)
+        {
+        }
+        /**
+         * @return AndroidInstrumentationTest
+         */
+        public function getAndroidInstrumentationTest()
+        {
+        }
+        /**
+         * An Android robo test.
+         *
+         * @param AndroidRoboTest $androidRoboTest
+         */
+        public function setAndroidRoboTest(AndroidRoboTest $androidRoboTest)
+        {
+        }
+        /**
+         * @return AndroidRoboTest
+         */
+        public function getAndroidRoboTest()
+        {
+        }
+        /**
+         * An Android Application with a Test Loop.
+         *
+         * @param AndroidTestLoop $androidTestLoop
+         */
+        public function setAndroidTestLoop(AndroidTestLoop $androidTestLoop)
+        {
+        }
+        /**
+         * @return AndroidTestLoop
+         */
+        public function getAndroidTestLoop()
+        {
+        }
+        /**
+         * Disables performance metrics recording. May reduce test latency.
+         *
+         * @param bool $disablePerformanceMetrics
+         */
+        public function setDisablePerformanceMetrics($disablePerformanceMetrics)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisablePerformanceMetrics()
+        {
+        }
+        /**
+         * Disables video recording. May reduce test latency.
+         *
+         * @param bool $disableVideoRecording
+         */
+        public function setDisableVideoRecording($disableVideoRecording)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableVideoRecording()
+        {
+        }
+        /**
+         * An iOS Robo test.
+         *
+         * @param IosRoboTest $iosRoboTest
+         */
+        public function setIosRoboTest(IosRoboTest $iosRoboTest)
+        {
+        }
+        /**
+         * @return IosRoboTest
+         */
+        public function getIosRoboTest()
+        {
+        }
+        /**
+         * An iOS application with a test loop.
+         *
+         * @param IosTestLoop $iosTestLoop
+         */
+        public function setIosTestLoop(IosTestLoop $iosTestLoop)
+        {
+        }
+        /**
+         * @return IosTestLoop
+         */
+        public function getIosTestLoop()
+        {
+        }
+        /**
+         * Test setup requirements for iOS.
+         *
+         * @param IosTestSetup $iosTestSetup
+         */
+        public function setIosTestSetup(IosTestSetup $iosTestSetup)
+        {
+        }
+        /**
+         * @return IosTestSetup
+         */
+        public function getIosTestSetup()
+        {
+        }
+        /**
+         * An iOS XCTest, via an .xctestrun file.
+         *
+         * @param IosXcTest $iosXcTest
+         */
+        public function setIosXcTest(IosXcTest $iosXcTest)
+        {
+        }
+        /**
+         * @return IosXcTest
+         */
+        public function getIosXcTest()
+        {
+        }
+        /**
+         * Test setup requirements for Android e.g. files to install, bootstrap
+         * scripts.
+         *
+         * @param TestSetup $testSetup
+         */
+        public function setTestSetup(TestSetup $testSetup)
+        {
+        }
+        /**
+         * @return TestSetup
+         */
+        public function getTestSetup()
+        {
+        }
+        /**
+         * Max time a test execution is allowed to run before it is automatically
+         * cancelled. The default value is 5 min.
+         *
+         * @param string $testTimeout
+         */
+        public function setTestTimeout($testTimeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTestTimeout()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AndroidInstrumentationTest
+     * Runtime class alias of \Google\Service\Testing\TestSpecification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndroidInstrumentationTest()
-    {
-    }
-    /**
-     * An Android robo test.
-     *
-     * @param AndroidRoboTest $androidRoboTest
-     */
-    public function setAndroidRoboTest(AndroidRoboTest $androidRoboTest)
-    {
-    }
-    /**
-     * @return AndroidRoboTest
-     */
-    public function getAndroidRoboTest()
-    {
-    }
-    /**
-     * An Android Application with a Test Loop.
-     *
-     * @param AndroidTestLoop $androidTestLoop
-     */
-    public function setAndroidTestLoop(AndroidTestLoop $androidTestLoop)
-    {
-    }
-    /**
-     * @return AndroidTestLoop
-     */
-    public function getAndroidTestLoop()
-    {
-    }
-    /**
-     * Disables performance metrics recording. May reduce test latency.
-     *
-     * @param bool $disablePerformanceMetrics
-     */
-    public function setDisablePerformanceMetrics($disablePerformanceMetrics)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisablePerformanceMetrics()
-    {
-    }
-    /**
-     * Disables video recording. May reduce test latency.
-     *
-     * @param bool $disableVideoRecording
-     */
-    public function setDisableVideoRecording($disableVideoRecording)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisableVideoRecording()
-    {
-    }
-    /**
-     * An iOS Robo test.
-     *
-     * @param IosRoboTest $iosRoboTest
-     */
-    public function setIosRoboTest(IosRoboTest $iosRoboTest)
-    {
-    }
-    /**
-     * @return IosRoboTest
-     */
-    public function getIosRoboTest()
-    {
-    }
-    /**
-     * An iOS application with a test loop.
-     *
-     * @param IosTestLoop $iosTestLoop
-     */
-    public function setIosTestLoop(IosTestLoop $iosTestLoop)
-    {
-    }
-    /**
-     * @return IosTestLoop
-     */
-    public function getIosTestLoop()
-    {
-    }
-    /**
-     * Test setup requirements for iOS.
-     *
-     * @param IosTestSetup $iosTestSetup
-     */
-    public function setIosTestSetup(IosTestSetup $iosTestSetup)
-    {
-    }
-    /**
-     * @return IosTestSetup
-     */
-    public function getIosTestSetup()
-    {
-    }
-    /**
-     * An iOS XCTest, via an .xctestrun file.
-     *
-     * @param IosXcTest $iosXcTest
-     */
-    public function setIosXcTest(IosXcTest $iosXcTest)
-    {
-    }
-    /**
-     * @return IosXcTest
-     */
-    public function getIosXcTest()
-    {
-    }
-    /**
-     * Test setup requirements for Android e.g. files to install, bootstrap
-     * scripts.
-     *
-     * @param TestSetup $testSetup
-     */
-    public function setTestSetup(TestSetup $testSetup)
-    {
-    }
-    /**
-     * @return TestSetup
-     */
-    public function getTestSetup()
-    {
-    }
-    /**
-     * Max time a test execution is allowed to run before it is automatically
-     * cancelled. The default value is 5 min.
-     *
-     * @param string $testTimeout
-     */
-    public function setTestTimeout($testTimeout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTestTimeout()
+    class Google_Service_Testing_TestSpecification extends \Google\Service\Testing\TestSpecification
     {
     }
 }

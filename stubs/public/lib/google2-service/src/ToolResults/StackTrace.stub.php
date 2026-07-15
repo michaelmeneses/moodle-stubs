@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class StackTrace extends \Google\Model
-{
-    /**
-     * The stack trace message. Required
-     *
-     * @var string
-     */
-    public $exception;
-    /**
-     * The stack trace message. Required
-     *
-     * @param string $exception
-     */
-    public function setException($exception)
+namespace Google\Service\ToolResults {
+    class StackTrace extends \Google\Model
     {
+        /**
+         * The stack trace message. Required
+         *
+         * @var string
+         */
+        public $exception;
+        /**
+         * The stack trace message. Required
+         *
+         * @param string $exception
+         */
+        public function setException($exception)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getException()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ToolResults\StackTrace registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getException()
+    class Google_Service_ToolResults_StackTrace extends \Google\Service\ToolResults\StackTrace
     {
     }
 }

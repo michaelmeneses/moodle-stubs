@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class ListCreativesResponse extends \Google\Collection
-{
-    protected $collection_key = 'creatives';
-    protected $creativesType = Creative::class;
-    protected $creativesDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * ListCreativesRequest.pageToken field in the subsequent call to the
-     * `ListCreatives` method to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of creatives.
-     *
-     * @param Creative[] $creatives
-     */
-    public function setCreatives($creatives)
+namespace Google\Service\RealTimeBidding {
+    class ListCreativesResponse extends \Google\Collection
     {
+        protected $collection_key = 'creatives';
+        protected $creativesType = Creative::class;
+        protected $creativesDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * ListCreativesRequest.pageToken field in the subsequent call to the
+         * `ListCreatives` method to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of creatives.
+         *
+         * @param Creative[] $creatives
+         */
+        public function setCreatives($creatives)
+        {
+        }
+        /**
+         * @return Creative[]
+         */
+        public function getCreatives()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * ListCreativesRequest.pageToken field in the subsequent call to the
+         * `ListCreatives` method to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Creative[]
+     * Runtime class alias of \Google\Service\RealTimeBidding\ListCreativesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreatives()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * ListCreativesRequest.pageToken field in the subsequent call to the
-     * `ListCreatives` method to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_RealTimeBidding_ListCreativesResponse extends \Google\Service\RealTimeBidding\ListCreativesResponse
     {
     }
 }

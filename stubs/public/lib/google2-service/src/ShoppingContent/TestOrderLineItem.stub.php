@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class TestOrderLineItem extends \Google\Model
-{
-    protected $productType = TestOrderLineItemProduct::class;
-    protected $productDataType = '';
-    /**
-     * @var string
-     */
-    public $quantityOrdered;
-    protected $returnInfoType = OrderLineItemReturnInfo::class;
-    protected $returnInfoDataType = '';
-    protected $shippingDetailsType = OrderLineItemShippingDetails::class;
-    protected $shippingDetailsDataType = '';
-    /**
-     * @param TestOrderLineItemProduct
-     */
-    public function setProduct(TestOrderLineItemProduct $product)
+namespace Google\Service\ShoppingContent {
+    class TestOrderLineItem extends \Google\Model
     {
+        protected $productType = TestOrderLineItemProduct::class;
+        protected $productDataType = '';
+        /**
+         * @var string
+         */
+        public $quantityOrdered;
+        protected $returnInfoType = OrderLineItemReturnInfo::class;
+        protected $returnInfoDataType = '';
+        protected $shippingDetailsType = OrderLineItemShippingDetails::class;
+        protected $shippingDetailsDataType = '';
+        /**
+         * @param TestOrderLineItemProduct
+         */
+        public function setProduct(TestOrderLineItemProduct $product)
+        {
+        }
+        /**
+         * @return TestOrderLineItemProduct
+         */
+        public function getProduct()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setQuantityOrdered($quantityOrdered)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuantityOrdered()
+        {
+        }
+        /**
+         * @param OrderLineItemReturnInfo
+         */
+        public function setReturnInfo(OrderLineItemReturnInfo $returnInfo)
+        {
+        }
+        /**
+         * @return OrderLineItemReturnInfo
+         */
+        public function getReturnInfo()
+        {
+        }
+        /**
+         * @param OrderLineItemShippingDetails
+         */
+        public function setShippingDetails(OrderLineItemShippingDetails $shippingDetails)
+        {
+        }
+        /**
+         * @return OrderLineItemShippingDetails
+         */
+        public function getShippingDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TestOrderLineItemProduct
+     * Runtime class alias of \Google\Service\ShoppingContent\TestOrderLineItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProduct()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setQuantityOrdered($quantityOrdered)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuantityOrdered()
-    {
-    }
-    /**
-     * @param OrderLineItemReturnInfo
-     */
-    public function setReturnInfo(OrderLineItemReturnInfo $returnInfo)
-    {
-    }
-    /**
-     * @return OrderLineItemReturnInfo
-     */
-    public function getReturnInfo()
-    {
-    }
-    /**
-     * @param OrderLineItemShippingDetails
-     */
-    public function setShippingDetails(OrderLineItemShippingDetails $shippingDetails)
-    {
-    }
-    /**
-     * @return OrderLineItemShippingDetails
-     */
-    public function getShippingDetails()
+    class Google_Service_ShoppingContent_TestOrderLineItem extends \Google\Service\ShoppingContent\TestOrderLineItem
     {
     }
 }

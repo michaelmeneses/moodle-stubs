@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class TestIamPermissionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'permissions';
-    /**
-     * A subset of `TestPermissionsRequest.permissions` that the caller is
-     * allowed.
-     *
-     * @var string[]
-     */
-    public $permissions;
-    /**
-     * A subset of `TestPermissionsRequest.permissions` that the caller is
-     * allowed.
-     *
-     * @param string[] $permissions
-     */
-    public function setPermissions($permissions)
+namespace Google\Service\CertificateAuthorityService {
+    class TestIamPermissionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'permissions';
+        /**
+         * A subset of `TestPermissionsRequest.permissions` that the caller is
+         * allowed.
+         *
+         * @var string[]
+         */
+        public $permissions;
+        /**
+         * A subset of `TestPermissionsRequest.permissions` that the caller is
+         * allowed.
+         *
+         * @param string[] $permissions
+         */
+        public function setPermissions($permissions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPermissions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\TestIamPermissionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPermissions()
+    class Google_Service_CertificateAuthorityService_TestIamPermissionsResponse extends \Google\Service\CertificateAuthorityService\TestIamPermissionsResponse
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ResetSearchApplicationRequest extends \Google\Model
-{
-    protected $debugOptionsType = DebugOptions::class;
-    protected $debugOptionsDataType = '';
-    /**
-     * Common debug options.
-     *
-     * @param DebugOptions $debugOptions
-     */
-    public function setDebugOptions(DebugOptions $debugOptions)
+namespace Google\Service\CloudSearch {
+    class ResetSearchApplicationRequest extends \Google\Model
     {
+        protected $debugOptionsType = DebugOptions::class;
+        protected $debugOptionsDataType = '';
+        /**
+         * Common debug options.
+         *
+         * @param DebugOptions $debugOptions
+         */
+        public function setDebugOptions(DebugOptions $debugOptions)
+        {
+        }
+        /**
+         * @return DebugOptions
+         */
+        public function getDebugOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DebugOptions
+     * Runtime class alias of \Google\Service\CloudSearch\ResetSearchApplicationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDebugOptions()
+    class Google_Service_CloudSearch_ResetSearchApplicationRequest extends \Google\Service\CloudSearch\ResetSearchApplicationRequest
     {
     }
 }

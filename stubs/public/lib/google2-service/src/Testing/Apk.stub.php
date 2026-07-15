@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class Apk extends \Google\Model
-{
-    protected $locationType = FileReference::class;
-    protected $locationDataType = '';
-    /**
-     * The java package for the APK to be installed. Value is determined by
-     * examining the application's manifest.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * The path to an APK to be installed on the device before the test begins.
-     *
-     * @param FileReference $location
-     */
-    public function setLocation(FileReference $location)
+namespace Google\Service\Testing {
+    class Apk extends \Google\Model
     {
+        protected $locationType = FileReference::class;
+        protected $locationDataType = '';
+        /**
+         * The java package for the APK to be installed. Value is determined by
+         * examining the application's manifest.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * The path to an APK to be installed on the device before the test begins.
+         *
+         * @param FileReference $location
+         */
+        public function setLocation(FileReference $location)
+        {
+        }
+        /**
+         * @return FileReference
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The java package for the APK to be installed. Value is determined by
+         * examining the application's manifest.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FileReference
+     * Runtime class alias of \Google\Service\Testing\Apk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
-    {
-    }
-    /**
-     * The java package for the APK to be installed. Value is determined by
-     * examining the application's manifest.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
+    class Google_Service_Testing_Apk extends \Google\Service\Testing\Apk
     {
     }
 }

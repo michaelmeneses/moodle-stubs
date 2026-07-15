@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class GoogleSecuritySafebrowsingV4FindThreatMatchesRequest extends \Google\Model
-{
-    protected $clientType = GoogleSecuritySafebrowsingV4ClientInfo::class;
-    protected $clientDataType = '';
-    protected $threatInfoType = GoogleSecuritySafebrowsingV4ThreatInfo::class;
-    protected $threatInfoDataType = '';
-    /**
-     * @param GoogleSecuritySafebrowsingV4ClientInfo
-     */
-    public function setClient(GoogleSecuritySafebrowsingV4ClientInfo $client)
+namespace Google\Service\Safebrowsing {
+    class GoogleSecuritySafebrowsingV4FindThreatMatchesRequest extends \Google\Model
     {
+        protected $clientType = GoogleSecuritySafebrowsingV4ClientInfo::class;
+        protected $clientDataType = '';
+        protected $threatInfoType = GoogleSecuritySafebrowsingV4ThreatInfo::class;
+        protected $threatInfoDataType = '';
+        /**
+         * @param GoogleSecuritySafebrowsingV4ClientInfo
+         */
+        public function setClient(GoogleSecuritySafebrowsingV4ClientInfo $client)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV4ClientInfo
+         */
+        public function getClient()
+        {
+        }
+        /**
+         * @param GoogleSecuritySafebrowsingV4ThreatInfo
+         */
+        public function setThreatInfo(GoogleSecuritySafebrowsingV4ThreatInfo $threatInfo)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV4ThreatInfo
+         */
+        public function getThreatInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleSecuritySafebrowsingV4ClientInfo
+     * Runtime class alias of \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FindThreatMatchesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClient()
-    {
-    }
-    /**
-     * @param GoogleSecuritySafebrowsingV4ThreatInfo
-     */
-    public function setThreatInfo(GoogleSecuritySafebrowsingV4ThreatInfo $threatInfo)
-    {
-    }
-    /**
-     * @return GoogleSecuritySafebrowsingV4ThreatInfo
-     */
-    public function getThreatInfo()
+    class Google_Service_Safebrowsing_GoogleSecuritySafebrowsingV4FindThreatMatchesRequest extends \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FindThreatMatchesRequest
     {
     }
 }

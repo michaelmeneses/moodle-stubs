@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class SessionPositionAssignedTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * This is a placeholder, does not indicate any positions.
-     */
-    public const SESSION_POSITION_SESSION_POSITION_UNSPECIFIED = 'SESSION_POSITION_UNSPECIFIED';
-    /**
-     * The first impression of the session.
-     */
-    public const SESSION_POSITION_SESSION_POSITION_FIRST_IMPRESSION = 'SESSION_POSITION_FIRST_IMPRESSION';
-    /**
-     * The position where the ad will show in a session.
-     *
-     * @var string
-     */
-    public $sessionPosition;
-    /**
-     * The position where the ad will show in a session.
-     *
-     * Accepted values: SESSION_POSITION_UNSPECIFIED,
-     * SESSION_POSITION_FIRST_IMPRESSION
-     *
-     * @param self::SESSION_POSITION_* $sessionPosition
-     */
-    public function setSessionPosition($sessionPosition)
+namespace Google\Service\DisplayVideo {
+    class SessionPositionAssignedTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * This is a placeholder, does not indicate any positions.
+         */
+        public const SESSION_POSITION_SESSION_POSITION_UNSPECIFIED = 'SESSION_POSITION_UNSPECIFIED';
+        /**
+         * The first impression of the session.
+         */
+        public const SESSION_POSITION_SESSION_POSITION_FIRST_IMPRESSION = 'SESSION_POSITION_FIRST_IMPRESSION';
+        /**
+         * The position where the ad will show in a session.
+         *
+         * @var string
+         */
+        public $sessionPosition;
+        /**
+         * The position where the ad will show in a session.
+         *
+         * Accepted values: SESSION_POSITION_UNSPECIFIED,
+         * SESSION_POSITION_FIRST_IMPRESSION
+         *
+         * @param self::SESSION_POSITION_* $sessionPosition
+         */
+        public function setSessionPosition($sessionPosition)
+        {
+        }
+        /**
+         * @return self::SESSION_POSITION_*
+         */
+        public function getSessionPosition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::SESSION_POSITION_*
+     * Runtime class alias of \Google\Service\DisplayVideo\SessionPositionAssignedTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSessionPosition()
+    class Google_Service_DisplayVideo_SessionPositionAssignedTargetingOptionDetails extends \Google\Service\DisplayVideo\SessionPositionAssignedTargetingOptionDetails
     {
     }
 }

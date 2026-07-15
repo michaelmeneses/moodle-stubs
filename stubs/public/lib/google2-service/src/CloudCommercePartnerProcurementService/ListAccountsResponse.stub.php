@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudCommercePartnerProcurementService;
-
-class ListAccountsResponse extends \Google\Collection
-{
-    protected $collection_key = 'accounts';
-    protected $accountsType = Account::class;
-    protected $accountsDataType = 'array';
-    /**
-     * The token for fetching the next page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of accounts in this response.
-     *
-     * @param Account[] $accounts
-     */
-    public function setAccounts($accounts)
+namespace Google\Service\CloudCommercePartnerProcurementService {
+    class ListAccountsResponse extends \Google\Collection
     {
+        protected $collection_key = 'accounts';
+        protected $accountsType = Account::class;
+        protected $accountsDataType = 'array';
+        /**
+         * The token for fetching the next page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of accounts in this response.
+         *
+         * @param Account[] $accounts
+         */
+        public function setAccounts($accounts)
+        {
+        }
+        /**
+         * @return Account[]
+         */
+        public function getAccounts()
+        {
+        }
+        /**
+         * The token for fetching the next page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Account[]
+     * Runtime class alias of \Google\Service\CloudCommercePartnerProcurementService\ListAccountsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccounts()
-    {
-    }
-    /**
-     * The token for fetching the next page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudCommercePartnerProcurementService_ListAccountsResponse extends \Google\Service\CloudCommercePartnerProcurementService\ListAccountsResponse
     {
     }
 }

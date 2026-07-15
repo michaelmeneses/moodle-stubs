@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestion extends \Google\Collection
-{
-    protected $collection_key = 'sampleResponses';
-    protected $agentActionSuggestionsType = GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentActionSuggestion::class;
-    protected $agentActionSuggestionsDataType = 'array';
-    protected $applicableInstructionsType = GoogleCloudContactcenterinsightsV1alpha1AgentCoachingInstruction::class;
-    protected $applicableInstructionsDataType = 'array';
-    protected $sampleResponsesType = GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionSampleResponse::class;
-    protected $sampleResponsesDataType = 'array';
-    protected $suggestionEvalType = GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentCoachingSuggestionEval::class;
-    protected $suggestionEvalDataType = '';
-    protected $suggestionReasoningType = GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentCoachingSuggestionReasoning::class;
-    protected $suggestionReasoningDataType = '';
-    /**
-     * @param GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentActionSuggestion[]
-     */
-    public function setAgentActionSuggestions($agentActionSuggestions)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestion extends \Google\Collection
     {
+        protected $collection_key = 'sampleResponses';
+        protected $agentActionSuggestionsType = GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentActionSuggestion::class;
+        protected $agentActionSuggestionsDataType = 'array';
+        protected $applicableInstructionsType = GoogleCloudContactcenterinsightsV1alpha1AgentCoachingInstruction::class;
+        protected $applicableInstructionsDataType = 'array';
+        protected $sampleResponsesType = GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionSampleResponse::class;
+        protected $sampleResponsesDataType = 'array';
+        protected $suggestionEvalType = GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentCoachingSuggestionEval::class;
+        protected $suggestionEvalDataType = '';
+        protected $suggestionReasoningType = GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentCoachingSuggestionReasoning::class;
+        protected $suggestionReasoningDataType = '';
+        /**
+         * @param GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentActionSuggestion[]
+         */
+        public function setAgentActionSuggestions($agentActionSuggestions)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentActionSuggestion[]
+         */
+        public function getAgentActionSuggestions()
+        {
+        }
+        /**
+         * @param GoogleCloudContactcenterinsightsV1alpha1AgentCoachingInstruction[]
+         */
+        public function setApplicableInstructions($applicableInstructions)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1AgentCoachingInstruction[]
+         */
+        public function getApplicableInstructions()
+        {
+        }
+        /**
+         * @param GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionSampleResponse[]
+         */
+        public function setSampleResponses($sampleResponses)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionSampleResponse[]
+         */
+        public function getSampleResponses()
+        {
+        }
+        /**
+         * @param GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentCoachingSuggestionEval
+         */
+        public function setSuggestionEval(GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentCoachingSuggestionEval $suggestionEval)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentCoachingSuggestionEval
+         */
+        public function getSuggestionEval()
+        {
+        }
+        /**
+         * @param GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentCoachingSuggestionReasoning
+         */
+        public function setSuggestionReasoning(GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentCoachingSuggestionReasoning $suggestionReasoning)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentCoachingSuggestionReasoning
+         */
+        public function getSuggestionReasoning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentActionSuggestion[]
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentActionSuggestions()
-    {
-    }
-    /**
-     * @param GoogleCloudContactcenterinsightsV1alpha1AgentCoachingInstruction[]
-     */
-    public function setApplicableInstructions($applicableInstructions)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1AgentCoachingInstruction[]
-     */
-    public function getApplicableInstructions()
-    {
-    }
-    /**
-     * @param GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionSampleResponse[]
-     */
-    public function setSampleResponses($sampleResponses)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionSampleResponse[]
-     */
-    public function getSampleResponses()
-    {
-    }
-    /**
-     * @param GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentCoachingSuggestionEval
-     */
-    public function setSuggestionEval(GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentCoachingSuggestionEval $suggestionEval)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentCoachingSuggestionEval
-     */
-    public function getSuggestionEval()
-    {
-    }
-    /**
-     * @param GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentCoachingSuggestionReasoning
-     */
-    public function setSuggestionReasoning(GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentCoachingSuggestionReasoning $suggestionReasoning)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionAgentCoachingSuggestionReasoning
-     */
-    public function getSuggestionReasoning()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestion extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestion
     {
     }
 }

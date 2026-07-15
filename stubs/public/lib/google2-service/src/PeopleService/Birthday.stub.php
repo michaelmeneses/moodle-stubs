@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class Birthday extends \Google\Model
-{
-    protected $dateType = Date::class;
-    protected $dateDataType = '';
-    protected $metadataType = FieldMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * Prefer to use the `date` field if set. A free-form string representing the
-     * user's birthday. This value is not validated.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $text;
-    /**
-     * The structured date of the birthday.
-     *
-     * @param Date $date
-     */
-    public function setDate(Date $date)
+namespace Google\Service\PeopleService {
+    class Birthday extends \Google\Model
     {
+        protected $dateType = Date::class;
+        protected $dateDataType = '';
+        protected $metadataType = FieldMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * Prefer to use the `date` field if set. A free-form string representing the
+         * user's birthday. This value is not validated.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $text;
+        /**
+         * The structured date of the birthday.
+         *
+         * @param Date $date
+         */
+        public function setDate(Date $date)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getDate()
+        {
+        }
+        /**
+         * Metadata about the birthday.
+         *
+         * @param FieldMetadata $metadata
+         */
+        public function setMetadata(FieldMetadata $metadata)
+        {
+        }
+        /**
+         * @return FieldMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Prefer to use the `date` field if set. A free-form string representing the
+         * user's birthday. This value is not validated.
+         *
+         * @deprecated
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Date
+     * Runtime class alias of \Google\Service\PeopleService\Birthday registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDate()
-    {
-    }
-    /**
-     * Metadata about the birthday.
-     *
-     * @param FieldMetadata $metadata
-     */
-    public function setMetadata(FieldMetadata $metadata)
-    {
-    }
-    /**
-     * @return FieldMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Prefer to use the `date` field if set. A free-form string representing the
-     * user's birthday. This value is not validated.
-     *
-     * @deprecated
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getText()
+    class Google_Service_PeopleService_Birthday extends \Google\Service\PeopleService\Birthday
     {
     }
 }

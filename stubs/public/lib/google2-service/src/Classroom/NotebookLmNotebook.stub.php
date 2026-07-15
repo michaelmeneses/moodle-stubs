@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class NotebookLmNotebook extends \Google\Model
-{
-    /**
-     * Notebook resource id.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Title of the Notebook.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * URL that can be used to access the Notebook.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Notebook resource id.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Classroom {
+    class NotebookLmNotebook extends \Google\Model
     {
+        /**
+         * Notebook resource id.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Title of the Notebook.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * URL that can be used to access the Notebook.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Notebook resource id.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Title of the Notebook.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * URL that can be used to access the Notebook.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\NotebookLmNotebook registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Title of the Notebook.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * URL that can be used to access the Notebook.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_Classroom_NotebookLmNotebook extends \Google\Service\Classroom\NotebookLmNotebook
     {
     }
 }

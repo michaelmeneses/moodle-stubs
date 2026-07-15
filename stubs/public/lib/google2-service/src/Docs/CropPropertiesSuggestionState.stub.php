@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class CropPropertiesSuggestionState extends \Google\Model
-{
-    /**
-     * Indicates if there was a suggested change to angle.
-     *
-     * @var bool
-     */
-    public $angleSuggested;
-    /**
-     * Indicates if there was a suggested change to offset_bottom.
-     *
-     * @var bool
-     */
-    public $offsetBottomSuggested;
-    /**
-     * Indicates if there was a suggested change to offset_left.
-     *
-     * @var bool
-     */
-    public $offsetLeftSuggested;
-    /**
-     * Indicates if there was a suggested change to offset_right.
-     *
-     * @var bool
-     */
-    public $offsetRightSuggested;
-    /**
-     * Indicates if there was a suggested change to offset_top.
-     *
-     * @var bool
-     */
-    public $offsetTopSuggested;
-    /**
-     * Indicates if there was a suggested change to angle.
-     *
-     * @param bool $angleSuggested
-     */
-    public function setAngleSuggested($angleSuggested)
+namespace Google\Service\Docs {
+    class CropPropertiesSuggestionState extends \Google\Model
     {
+        /**
+         * Indicates if there was a suggested change to angle.
+         *
+         * @var bool
+         */
+        public $angleSuggested;
+        /**
+         * Indicates if there was a suggested change to offset_bottom.
+         *
+         * @var bool
+         */
+        public $offsetBottomSuggested;
+        /**
+         * Indicates if there was a suggested change to offset_left.
+         *
+         * @var bool
+         */
+        public $offsetLeftSuggested;
+        /**
+         * Indicates if there was a suggested change to offset_right.
+         *
+         * @var bool
+         */
+        public $offsetRightSuggested;
+        /**
+         * Indicates if there was a suggested change to offset_top.
+         *
+         * @var bool
+         */
+        public $offsetTopSuggested;
+        /**
+         * Indicates if there was a suggested change to angle.
+         *
+         * @param bool $angleSuggested
+         */
+        public function setAngleSuggested($angleSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAngleSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to offset_bottom.
+         *
+         * @param bool $offsetBottomSuggested
+         */
+        public function setOffsetBottomSuggested($offsetBottomSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOffsetBottomSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to offset_left.
+         *
+         * @param bool $offsetLeftSuggested
+         */
+        public function setOffsetLeftSuggested($offsetLeftSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOffsetLeftSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to offset_right.
+         *
+         * @param bool $offsetRightSuggested
+         */
+        public function setOffsetRightSuggested($offsetRightSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOffsetRightSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to offset_top.
+         *
+         * @param bool $offsetTopSuggested
+         */
+        public function setOffsetTopSuggested($offsetTopSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOffsetTopSuggested()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Docs\CropPropertiesSuggestionState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAngleSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to offset_bottom.
-     *
-     * @param bool $offsetBottomSuggested
-     */
-    public function setOffsetBottomSuggested($offsetBottomSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOffsetBottomSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to offset_left.
-     *
-     * @param bool $offsetLeftSuggested
-     */
-    public function setOffsetLeftSuggested($offsetLeftSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOffsetLeftSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to offset_right.
-     *
-     * @param bool $offsetRightSuggested
-     */
-    public function setOffsetRightSuggested($offsetRightSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOffsetRightSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to offset_top.
-     *
-     * @param bool $offsetTopSuggested
-     */
-    public function setOffsetTopSuggested($offsetTopSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOffsetTopSuggested()
+    class Google_Service_Docs_CropPropertiesSuggestionState extends \Google\Service\Docs\CropPropertiesSuggestionState
     {
     }
 }

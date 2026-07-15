@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class NpmPackage extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $packagePath;
-    /**
-     * @var string
-     */
-    public $repository;
-    /**
-     * @param string
-     */
-    public function setPackagePath($packagePath)
+namespace Google\Service\CloudBuild {
+    class NpmPackage extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $packagePath;
+        /**
+         * @var string
+         */
+        public $repository;
+        /**
+         * @param string
+         */
+        public function setPackagePath($packagePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackagePath()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRepository($repository)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepository()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\NpmPackage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPackagePath()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRepository($repository)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRepository()
+    class Google_Service_CloudBuild_NpmPackage extends \Google\Service\CloudBuild\NpmPackage
     {
     }
 }

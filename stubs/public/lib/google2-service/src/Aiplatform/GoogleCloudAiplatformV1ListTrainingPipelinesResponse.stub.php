@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListTrainingPipelinesResponse extends \Google\Collection
-{
-    protected $collection_key = 'trainingPipelines';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListTrainingPipelinesRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $trainingPipelinesType = GoogleCloudAiplatformV1TrainingPipeline::class;
-    protected $trainingPipelinesDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListTrainingPipelinesRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListTrainingPipelinesResponse extends \Google\Collection
     {
+        protected $collection_key = 'trainingPipelines';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListTrainingPipelinesRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $trainingPipelinesType = GoogleCloudAiplatformV1TrainingPipeline::class;
+        protected $trainingPipelinesDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListTrainingPipelinesRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of TrainingPipelines in the requested page.
+         *
+         * @param GoogleCloudAiplatformV1TrainingPipeline[] $trainingPipelines
+         */
+        public function setTrainingPipelines($trainingPipelines)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TrainingPipeline[]
+         */
+        public function getTrainingPipelines()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListTrainingPipelinesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of TrainingPipelines in the requested page.
-     *
-     * @param GoogleCloudAiplatformV1TrainingPipeline[] $trainingPipelines
-     */
-    public function setTrainingPipelines($trainingPipelines)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1TrainingPipeline[]
-     */
-    public function getTrainingPipelines()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListTrainingPipelinesResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListTrainingPipelinesResponse
     {
     }
 }

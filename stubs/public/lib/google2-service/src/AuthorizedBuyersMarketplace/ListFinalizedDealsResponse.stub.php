@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class ListFinalizedDealsResponse extends \Google\Collection
-{
-    protected $collection_key = 'finalizedDeals';
-    protected $finalizedDealsType = FinalizedDeal::class;
-    protected $finalizedDealsDataType = 'array';
-    /**
-     * Token to fetch the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of finalized deals.
-     *
-     * @param FinalizedDeal[] $finalizedDeals
-     */
-    public function setFinalizedDeals($finalizedDeals)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class ListFinalizedDealsResponse extends \Google\Collection
     {
+        protected $collection_key = 'finalizedDeals';
+        protected $finalizedDealsType = FinalizedDeal::class;
+        protected $finalizedDealsDataType = 'array';
+        /**
+         * Token to fetch the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of finalized deals.
+         *
+         * @param FinalizedDeal[] $finalizedDeals
+         */
+        public function setFinalizedDeals($finalizedDeals)
+        {
+        }
+        /**
+         * @return FinalizedDeal[]
+         */
+        public function getFinalizedDeals()
+        {
+        }
+        /**
+         * Token to fetch the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FinalizedDeal[]
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\ListFinalizedDealsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFinalizedDeals()
-    {
-    }
-    /**
-     * Token to fetch the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AuthorizedBuyersMarketplace_ListFinalizedDealsResponse extends \Google\Service\AuthorizedBuyersMarketplace\ListFinalizedDealsResponse
     {
     }
 }

@@ -23,6 +23,10 @@
  */
 namespace Google\Auth\CredentialSource;
 
+use Google\Auth\ExecutableHandler\ExecutableHandler;
+use Google\Auth\ExecutableHandler\ExecutableResponseError;
+use Google\Auth\ExternalAccountCredentialSourceInterface;
+use RuntimeException;
 /**
  * ExecutableSource enables the exchange of workload identity pool external credentials for
  * Google access tokens by retrieving 3rd party tokens through a user supplied executable. These

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class ReplaceServicePerimetersResponse extends \Google\Collection
-{
-    protected $collection_key = 'servicePerimeters';
-    protected $servicePerimetersType = ServicePerimeter::class;
-    protected $servicePerimetersDataType = 'array';
-    /**
-     * List of the Service Perimeter instances.
-     *
-     * @param ServicePerimeter[] $servicePerimeters
-     */
-    public function setServicePerimeters($servicePerimeters)
+namespace Google\Service\AccessContextManager {
+    class ReplaceServicePerimetersResponse extends \Google\Collection
     {
+        protected $collection_key = 'servicePerimeters';
+        protected $servicePerimetersType = ServicePerimeter::class;
+        protected $servicePerimetersDataType = 'array';
+        /**
+         * List of the Service Perimeter instances.
+         *
+         * @param ServicePerimeter[] $servicePerimeters
+         */
+        public function setServicePerimeters($servicePerimeters)
+        {
+        }
+        /**
+         * @return ServicePerimeter[]
+         */
+        public function getServicePerimeters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ServicePerimeter[]
+     * Runtime class alias of \Google\Service\AccessContextManager\ReplaceServicePerimetersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServicePerimeters()
+    class Google_Service_AccessContextManager_ReplaceServicePerimetersResponse extends \Google\Service\AccessContextManager\ReplaceServicePerimetersResponse
     {
     }
 }

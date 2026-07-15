@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AnswerQueryRequestRelatedQuestionsSpec extends \Google\Model
-{
-    /**
-     * Enable related questions feature if true.
-     *
-     * @var bool
-     */
-    public $enable;
-    /**
-     * Enable related questions feature if true.
-     *
-     * @param bool $enable
-     */
-    public function setEnable($enable)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AnswerQueryRequestRelatedQuestionsSpec extends \Google\Model
     {
+        /**
+         * Enable related questions feature if true.
+         *
+         * @var bool
+         */
+        public $enable;
+        /**
+         * Enable related questions feature if true.
+         *
+         * @param bool $enable
+         */
+        public function setEnable($enable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestRelatedQuestionsSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnable()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AnswerQueryRequestRelatedQuestionsSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestRelatedQuestionsSpec
     {
     }
 }

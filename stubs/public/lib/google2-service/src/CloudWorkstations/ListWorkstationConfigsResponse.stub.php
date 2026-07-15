@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudWorkstations;
-
-class ListWorkstationConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'workstationConfigs';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Unreachable resources.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    protected $workstationConfigsType = WorkstationConfig::class;
-    protected $workstationConfigsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudWorkstations {
+    class ListWorkstationConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'workstationConfigs';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Unreachable resources.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        protected $workstationConfigsType = WorkstationConfig::class;
+        protected $workstationConfigsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Unreachable resources.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
+        /**
+         * The requested configs.
+         *
+         * @param WorkstationConfig[] $workstationConfigs
+         */
+        public function setWorkstationConfigs($workstationConfigs)
+        {
+        }
+        /**
+         * @return WorkstationConfig[]
+         */
+        public function getWorkstationConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudWorkstations\ListWorkstationConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Unreachable resources.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
-    {
-    }
-    /**
-     * The requested configs.
-     *
-     * @param WorkstationConfig[] $workstationConfigs
-     */
-    public function setWorkstationConfigs($workstationConfigs)
-    {
-    }
-    /**
-     * @return WorkstationConfig[]
-     */
-    public function getWorkstationConfigs()
+    class Google_Service_CloudWorkstations_ListWorkstationConfigsResponse extends \Google\Service\CloudWorkstations\ListWorkstationConfigsResponse
     {
     }
 }

@@ -16,6 +16,14 @@
  */
 namespace Monolog\Handler;
 
+use Gelf\Message as GelfMessage;
+use Monolog\Level;
+use Monolog\Formatter\FormatterInterface;
+use Monolog\Formatter\JsonFormatter;
+use PhpAmqpLib\Message\AMQPMessage;
+use PhpAmqpLib\Channel\AMQPChannel;
+use AMQPExchange;
+use Monolog\LogRecord;
 class AmqpHandler extends AbstractProcessingHandler
 {
     protected AMQPExchange|AMQPChannel $exchange;

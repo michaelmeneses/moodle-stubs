@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger;
-
-class PostUserInfo extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["postUserInfo" => "post_user_info"];
-    /**
-     * The kind of this entity. Always blogger#postUserInfo.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $postType = Post::class;
-    protected $postDataType = '';
-    protected $postUserInfoType = PostPerUserInfo::class;
-    protected $postUserInfoDataType = '';
-    /**
-     * The kind of this entity. Always blogger#postUserInfo.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Blogger {
+    class PostUserInfo extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["postUserInfo" => "post_user_info"];
+        /**
+         * The kind of this entity. Always blogger#postUserInfo.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $postType = Post::class;
+        protected $postDataType = '';
+        protected $postUserInfoType = PostPerUserInfo::class;
+        protected $postUserInfoDataType = '';
+        /**
+         * The kind of this entity. Always blogger#postUserInfo.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The Post resource.
+         *
+         * @param Post $post
+         */
+        public function setPost(Post $post)
+        {
+        }
+        /**
+         * @return Post
+         */
+        public function getPost()
+        {
+        }
+        /**
+         * Information about a User for the Post.
+         *
+         * @param PostPerUserInfo $postUserInfo
+         */
+        public function setPostUserInfo(PostPerUserInfo $postUserInfo)
+        {
+        }
+        /**
+         * @return PostPerUserInfo
+         */
+        public function getPostUserInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Blogger\PostUserInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The Post resource.
-     *
-     * @param Post $post
-     */
-    public function setPost(Post $post)
-    {
-    }
-    /**
-     * @return Post
-     */
-    public function getPost()
-    {
-    }
-    /**
-     * Information about a User for the Post.
-     *
-     * @param PostPerUserInfo $postUserInfo
-     */
-    public function setPostUserInfo(PostPerUserInfo $postUserInfo)
-    {
-    }
-    /**
-     * @return PostPerUserInfo
-     */
-    public function getPostUserInfo()
+    class Google_Service_Blogger_PostUserInfo extends \Google\Service\Blogger\PostUserInfo
     {
     }
 }

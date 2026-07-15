@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Ideahub;
-
-class GoogleSearchIdeahubV1alphaIdeaActivity extends \Google\Collection
-{
-    protected $collection_key = 'topics';
-    public $ideas;
-    public $name;
-    public $topics;
-    public $type;
-    public $uri;
-    public function setIdeas($ideas)
+namespace Google\Service\Ideahub {
+    class GoogleSearchIdeahubV1alphaIdeaActivity extends \Google\Collection
     {
+        protected $collection_key = 'topics';
+        public $ideas;
+        public $name;
+        public $topics;
+        public $type;
+        public $uri;
+        public function setIdeas($ideas)
+        {
+        }
+        public function getIdeas()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        public function setTopics($topics)
+        {
+        }
+        public function getTopics()
+        {
+        }
+        public function setType($type)
+        {
+        }
+        public function getType()
+        {
+        }
+        public function setUri($uri)
+        {
+        }
+        public function getUri()
+        {
+        }
     }
-    public function getIdeas()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    public function setTopics($topics)
-    {
-    }
-    public function getTopics()
-    {
-    }
-    public function setType($type)
-    {
-    }
-    public function getType()
-    {
-    }
-    public function setUri($uri)
-    {
-    }
-    public function getUri()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Ideahub\GoogleSearchIdeahubV1alphaIdeaActivity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Ideahub_GoogleSearchIdeahubV1alphaIdeaActivity extends \Google\Service\Ideahub\GoogleSearchIdeahubV1alphaIdeaActivity
     {
     }
 }

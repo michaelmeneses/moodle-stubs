@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class UpdateSubject extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $subject;
-    /**
-     * @param string
-     */
-    public function setSubject($subject)
+namespace Google\Service\CloudSearch {
+    class UpdateSubject extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $subject;
+        /**
+         * @param string
+         */
+        public function setSubject($subject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\UpdateSubject registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSubject()
+    class Google_Service_CloudSearch_UpdateSubject extends \Google\Service\CloudSearch\UpdateSubject
     {
     }
 }

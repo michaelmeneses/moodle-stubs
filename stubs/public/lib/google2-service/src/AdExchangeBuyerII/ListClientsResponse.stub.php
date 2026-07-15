@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class ListClientsResponse extends \Google\Collection
-{
-    protected $collection_key = 'clients';
-    protected $clientsType = Client::class;
-    protected $clientsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * ListClientsRequest.pageToken field in the subsequent call to the
-     * accounts.clients.list method to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The returned list of clients.
-     *
-     * @param Client[] $clients
-     */
-    public function setClients($clients)
+namespace Google\Service\AdExchangeBuyerII {
+    class ListClientsResponse extends \Google\Collection
     {
+        protected $collection_key = 'clients';
+        protected $clientsType = Client::class;
+        protected $clientsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * ListClientsRequest.pageToken field in the subsequent call to the
+         * accounts.clients.list method to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The returned list of clients.
+         *
+         * @param Client[] $clients
+         */
+        public function setClients($clients)
+        {
+        }
+        /**
+         * @return Client[]
+         */
+        public function getClients()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * ListClientsRequest.pageToken field in the subsequent call to the
+         * accounts.clients.list method to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Client[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\ListClientsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClients()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * ListClientsRequest.pageToken field in the subsequent call to the
-     * accounts.clients.list method to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AdExchangeBuyerII_ListClientsResponse extends \Google\Service\AdExchangeBuyerII\ListClientsResponse
     {
     }
 }

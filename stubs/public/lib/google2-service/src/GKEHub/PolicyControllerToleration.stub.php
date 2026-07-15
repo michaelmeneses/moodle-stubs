@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class PolicyControllerToleration extends \Google\Model
-{
-    /**
-     * Matches a taint effect.
-     *
-     * @var string
-     */
-    public $effect;
-    /**
-     * Matches a taint key (not necessarily unique).
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Matches a taint operator.
-     *
-     * @var string
-     */
-    public $operator;
-    /**
-     * Matches a taint value.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Matches a taint effect.
-     *
-     * @param string $effect
-     */
-    public function setEffect($effect)
+namespace Google\Service\GKEHub {
+    class PolicyControllerToleration extends \Google\Model
     {
+        /**
+         * Matches a taint effect.
+         *
+         * @var string
+         */
+        public $effect;
+        /**
+         * Matches a taint key (not necessarily unique).
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Matches a taint operator.
+         *
+         * @var string
+         */
+        public $operator;
+        /**
+         * Matches a taint value.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Matches a taint effect.
+         *
+         * @param string $effect
+         */
+        public function setEffect($effect)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEffect()
+        {
+        }
+        /**
+         * Matches a taint key (not necessarily unique).
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Matches a taint operator.
+         *
+         * @param string $operator
+         */
+        public function setOperator($operator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperator()
+        {
+        }
+        /**
+         * Matches a taint value.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\PolicyControllerToleration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEffect()
-    {
-    }
-    /**
-     * Matches a taint key (not necessarily unique).
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * Matches a taint operator.
-     *
-     * @param string $operator
-     */
-    public function setOperator($operator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperator()
-    {
-    }
-    /**
-     * Matches a taint value.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_GKEHub_PolicyControllerToleration extends \Google\Service\GKEHub\PolicyControllerToleration
     {
     }
 }

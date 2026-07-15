@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class SpannerIODetails extends \Google\Model
-{
-    /**
-     * DatabaseId accessed in the connection.
-     *
-     * @var string
-     */
-    public $databaseId;
-    /**
-     * InstanceId accessed in the connection.
-     *
-     * @var string
-     */
-    public $instanceId;
-    /**
-     * ProjectId accessed in the connection.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * DatabaseId accessed in the connection.
-     *
-     * @param string $databaseId
-     */
-    public function setDatabaseId($databaseId)
+namespace Google\Service\Dataflow {
+    class SpannerIODetails extends \Google\Model
     {
+        /**
+         * DatabaseId accessed in the connection.
+         *
+         * @var string
+         */
+        public $databaseId;
+        /**
+         * InstanceId accessed in the connection.
+         *
+         * @var string
+         */
+        public $instanceId;
+        /**
+         * ProjectId accessed in the connection.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * DatabaseId accessed in the connection.
+         *
+         * @param string $databaseId
+         */
+        public function setDatabaseId($databaseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabaseId()
+        {
+        }
+        /**
+         * InstanceId accessed in the connection.
+         *
+         * @param string $instanceId
+         */
+        public function setInstanceId($instanceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceId()
+        {
+        }
+        /**
+         * ProjectId accessed in the connection.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\SpannerIODetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabaseId()
-    {
-    }
-    /**
-     * InstanceId accessed in the connection.
-     *
-     * @param string $instanceId
-     */
-    public function setInstanceId($instanceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceId()
-    {
-    }
-    /**
-     * ProjectId accessed in the connection.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
+    class Google_Service_Dataflow_SpannerIODetails extends \Google\Service\Dataflow\SpannerIODetails
     {
     }
 }

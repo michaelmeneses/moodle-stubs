@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class AccessSparkApplicationSqlQueryResponse extends \Google\Model
-{
-    protected $executionDataType = SqlExecutionUiData::class;
-    protected $executionDataDataType = '';
-    /**
-     * SQL Execution Data
-     *
-     * @param SqlExecutionUiData $executionData
-     */
-    public function setExecutionData(SqlExecutionUiData $executionData)
+namespace Google\Service\Dataproc {
+    class AccessSparkApplicationSqlQueryResponse extends \Google\Model
     {
+        protected $executionDataType = SqlExecutionUiData::class;
+        protected $executionDataDataType = '';
+        /**
+         * SQL Execution Data
+         *
+         * @param SqlExecutionUiData $executionData
+         */
+        public function setExecutionData(SqlExecutionUiData $executionData)
+        {
+        }
+        /**
+         * @return SqlExecutionUiData
+         */
+        public function getExecutionData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SqlExecutionUiData
+     * Runtime class alias of \Google\Service\Dataproc\AccessSparkApplicationSqlQueryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecutionData()
+    class Google_Service_Dataproc_AccessSparkApplicationSqlQueryResponse extends \Google\Service\Dataproc\AccessSparkApplicationSqlQueryResponse
     {
     }
 }

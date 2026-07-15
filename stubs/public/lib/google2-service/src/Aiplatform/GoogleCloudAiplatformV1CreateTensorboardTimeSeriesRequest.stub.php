@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1CreateTensorboardTimeSeriesRequest extends \Google\Model
-{
-    /**
-     * Required. The resource name of the TensorboardRun to create the
-     * TensorboardTimeSeries in. Format: `projects/{project}/locations/{location}/
-     * tensorboards/{tensorboard}/experiments/{experiment}/runs/{run}`
-     *
-     * @var string
-     */
-    public $parent;
-    protected $tensorboardTimeSeriesType = GoogleCloudAiplatformV1TensorboardTimeSeries::class;
-    protected $tensorboardTimeSeriesDataType = '';
-    /**
-     * Optional. The user specified unique ID to use for the
-     * TensorboardTimeSeries, which becomes the final component of the
-     * TensorboardTimeSeries's resource name. This value should match "a-z0-9{0,
-     * 127}"
-     *
-     * @var string
-     */
-    public $tensorboardTimeSeriesId;
-    /**
-     * Required. The resource name of the TensorboardRun to create the
-     * TensorboardTimeSeries in. Format: `projects/{project}/locations/{location}/
-     * tensorboards/{tensorboard}/experiments/{experiment}/runs/{run}`
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1CreateTensorboardTimeSeriesRequest extends \Google\Model
     {
+        /**
+         * Required. The resource name of the TensorboardRun to create the
+         * TensorboardTimeSeries in. Format: `projects/{project}/locations/{location}/
+         * tensorboards/{tensorboard}/experiments/{experiment}/runs/{run}`
+         *
+         * @var string
+         */
+        public $parent;
+        protected $tensorboardTimeSeriesType = GoogleCloudAiplatformV1TensorboardTimeSeries::class;
+        protected $tensorboardTimeSeriesDataType = '';
+        /**
+         * Optional. The user specified unique ID to use for the
+         * TensorboardTimeSeries, which becomes the final component of the
+         * TensorboardTimeSeries's resource name. This value should match "a-z0-9{0,
+         * 127}"
+         *
+         * @var string
+         */
+        public $tensorboardTimeSeriesId;
+        /**
+         * Required. The resource name of the TensorboardRun to create the
+         * TensorboardTimeSeries in. Format: `projects/{project}/locations/{location}/
+         * tensorboards/{tensorboard}/experiments/{experiment}/runs/{run}`
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * Required. The TensorboardTimeSeries to create.
+         *
+         * @param GoogleCloudAiplatformV1TensorboardTimeSeries $tensorboardTimeSeries
+         */
+        public function setTensorboardTimeSeries(GoogleCloudAiplatformV1TensorboardTimeSeries $tensorboardTimeSeries)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TensorboardTimeSeries
+         */
+        public function getTensorboardTimeSeries()
+        {
+        }
+        /**
+         * Optional. The user specified unique ID to use for the
+         * TensorboardTimeSeries, which becomes the final component of the
+         * TensorboardTimeSeries's resource name. This value should match "a-z0-9{0,
+         * 127}"
+         *
+         * @param string $tensorboardTimeSeriesId
+         */
+        public function setTensorboardTimeSeriesId($tensorboardTimeSeriesId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTensorboardTimeSeriesId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1CreateTensorboardTimeSeriesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParent()
-    {
-    }
-    /**
-     * Required. The TensorboardTimeSeries to create.
-     *
-     * @param GoogleCloudAiplatformV1TensorboardTimeSeries $tensorboardTimeSeries
-     */
-    public function setTensorboardTimeSeries(GoogleCloudAiplatformV1TensorboardTimeSeries $tensorboardTimeSeries)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1TensorboardTimeSeries
-     */
-    public function getTensorboardTimeSeries()
-    {
-    }
-    /**
-     * Optional. The user specified unique ID to use for the
-     * TensorboardTimeSeries, which becomes the final component of the
-     * TensorboardTimeSeries's resource name. This value should match "a-z0-9{0,
-     * 127}"
-     *
-     * @param string $tensorboardTimeSeriesId
-     */
-    public function setTensorboardTimeSeriesId($tensorboardTimeSeriesId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTensorboardTimeSeriesId()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1CreateTensorboardTimeSeriesRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1CreateTensorboardTimeSeriesRequest
     {
     }
 }

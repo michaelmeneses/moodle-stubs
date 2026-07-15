@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Area120Tables;
-
-class BatchUpdateRowsRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = UpdateRowRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * Required. The request messages specifying the rows to update. A maximum of
-     * 500 rows can be modified in a single batch.
-     *
-     * @param UpdateRowRequest[] $requests
-     */
-    public function setRequests($requests)
+namespace Google\Service\Area120Tables {
+    class BatchUpdateRowsRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = UpdateRowRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * Required. The request messages specifying the rows to update. A maximum of
+         * 500 rows can be modified in a single batch.
+         *
+         * @param UpdateRowRequest[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return UpdateRowRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UpdateRowRequest[]
+     * Runtime class alias of \Google\Service\Area120Tables\BatchUpdateRowsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_Area120Tables_BatchUpdateRowsRequest extends \Google\Service\Area120Tables\BatchUpdateRowsRequest
     {
     }
 }

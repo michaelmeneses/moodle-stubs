@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyV1ListGroupPriorityOrderingRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $policyNamespace;
-    protected $policyTargetKeyType = GoogleChromePolicyV1PolicyTargetKey::class;
-    protected $policyTargetKeyDataType = '';
-    /**
-     * @param string
-     */
-    public function setPolicyNamespace($policyNamespace)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyV1ListGroupPriorityOrderingRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $policyNamespace;
+        protected $policyTargetKeyType = GoogleChromePolicyV1PolicyTargetKey::class;
+        protected $policyTargetKeyDataType = '';
+        /**
+         * @param string
+         */
+        public function setPolicyNamespace($policyNamespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicyNamespace()
+        {
+        }
+        /**
+         * @param GoogleChromePolicyV1PolicyTargetKey
+         */
+        public function setPolicyTargetKey(GoogleChromePolicyV1PolicyTargetKey $policyTargetKey)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyV1PolicyTargetKey
+         */
+        public function getPolicyTargetKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyV1ListGroupPriorityOrderingRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicyNamespace()
-    {
-    }
-    /**
-     * @param GoogleChromePolicyV1PolicyTargetKey
-     */
-    public function setPolicyTargetKey(GoogleChromePolicyV1PolicyTargetKey $policyTargetKey)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyV1PolicyTargetKey
-     */
-    public function getPolicyTargetKey()
+    class Google_Service_ChromePolicy_GoogleChromePolicyV1ListGroupPriorityOrderingRequest extends \Google\Service\ChromePolicy\GoogleChromePolicyV1ListGroupPriorityOrderingRequest
     {
     }
 }

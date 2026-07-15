@@ -20,22 +20,33 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_cache\form;
-
-/**
- * Form to set the mappings for a mode.
- *
- * @package    core_cache
- * @category   cache
- * @copyright  2012 Sam Hemelryk
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class cache_mode_mappings_form extends moodleform
-{
+namespace core_cache\form {
+    use core_cache\store;
+    use moodleform;
     /**
-     * The definition of the form
+     * Form to set the mappings for a mode.
+     *
+     * @package    core_cache
+     * @category   cache
+     * @copyright  2012 Sam Hemelryk
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    protected function definition()
+    class cache_mode_mappings_form extends moodleform
+    {
+        /**
+         * The definition of the form
+         */
+        protected function definition()
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \core_cache\form\cache_mode_mappings_form registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class cache_mode_mappings_form extends \core_cache\form\cache_mode_mappings_form
     {
     }
 }

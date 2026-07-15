@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SpeculativeDecodingSpecNgramSpeculation extends \Google\Model
-{
-    /**
-     * The number of last N input tokens used as ngram to search/match against the
-     * previous prompt sequence. This is equal to the N in N-Gram. The default
-     * value is 3 if not specified.
-     *
-     * @var int
-     */
-    public $ngramSize;
-    /**
-     * The number of last N input tokens used as ngram to search/match against the
-     * previous prompt sequence. This is equal to the N in N-Gram. The default
-     * value is 3 if not specified.
-     *
-     * @param int $ngramSize
-     */
-    public function setNgramSize($ngramSize)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SpeculativeDecodingSpecNgramSpeculation extends \Google\Model
     {
+        /**
+         * The number of last N input tokens used as ngram to search/match against the
+         * previous prompt sequence. This is equal to the N in N-Gram. The default
+         * value is 3 if not specified.
+         *
+         * @var int
+         */
+        public $ngramSize;
+        /**
+         * The number of last N input tokens used as ngram to search/match against the
+         * previous prompt sequence. This is equal to the N in N-Gram. The default
+         * value is 3 if not specified.
+         *
+         * @param int $ngramSize
+         */
+        public function setNgramSize($ngramSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNgramSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SpeculativeDecodingSpecNgramSpeculation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNgramSize()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SpeculativeDecodingSpecNgramSpeculation extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SpeculativeDecodingSpecNgramSpeculation
     {
     }
 }

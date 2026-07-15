@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ConversationContext extends \Google\Collection
-{
-    protected $collection_key = 'contextDocuments';
-    /**
-     * The current active document the user opened. It contains the document
-     * resource reference.
-     *
-     * @var string
-     */
-    public $activeDocument;
-    /**
-     * The current list of documents the user is seeing. It contains the document
-     * resource references.
-     *
-     * @var string[]
-     */
-    public $contextDocuments;
-    /**
-     * The current active document the user opened. It contains the document
-     * resource reference.
-     *
-     * @param string $activeDocument
-     */
-    public function setActiveDocument($activeDocument)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ConversationContext extends \Google\Collection
     {
+        protected $collection_key = 'contextDocuments';
+        /**
+         * The current active document the user opened. It contains the document
+         * resource reference.
+         *
+         * @var string
+         */
+        public $activeDocument;
+        /**
+         * The current list of documents the user is seeing. It contains the document
+         * resource references.
+         *
+         * @var string[]
+         */
+        public $contextDocuments;
+        /**
+         * The current active document the user opened. It contains the document
+         * resource reference.
+         *
+         * @param string $activeDocument
+         */
+        public function setActiveDocument($activeDocument)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActiveDocument()
+        {
+        }
+        /**
+         * The current list of documents the user is seeing. It contains the document
+         * resource references.
+         *
+         * @param string[] $contextDocuments
+         */
+        public function setContextDocuments($contextDocuments)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getContextDocuments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ConversationContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActiveDocument()
-    {
-    }
-    /**
-     * The current list of documents the user is seeing. It contains the document
-     * resource references.
-     *
-     * @param string[] $contextDocuments
-     */
-    public function setContextDocuments($contextDocuments)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getContextDocuments()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ConversationContext extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ConversationContext
     {
     }
 }

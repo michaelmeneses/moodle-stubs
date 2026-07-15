@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigLakeService;
-
-class HiveTableOptions extends \Google\Model
-{
-    /**
-     * Stores user supplied Hive table parameters.
-     *
-     * @var string[]
-     */
-    public $parameters;
-    protected $storageDescriptorType = StorageDescriptor::class;
-    protected $storageDescriptorDataType = '';
-    /**
-     * Hive table type. For example, MANAGED_TABLE, EXTERNAL_TABLE.
-     *
-     * @var string
-     */
-    public $tableType;
-    /**
-     * Stores user supplied Hive table parameters.
-     *
-     * @param string[] $parameters
-     */
-    public function setParameters($parameters)
+namespace Google\Service\BigLakeService {
+    class HiveTableOptions extends \Google\Model
     {
+        /**
+         * Stores user supplied Hive table parameters.
+         *
+         * @var string[]
+         */
+        public $parameters;
+        protected $storageDescriptorType = StorageDescriptor::class;
+        protected $storageDescriptorDataType = '';
+        /**
+         * Hive table type. For example, MANAGED_TABLE, EXTERNAL_TABLE.
+         *
+         * @var string
+         */
+        public $tableType;
+        /**
+         * Stores user supplied Hive table parameters.
+         *
+         * @param string[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getParameters()
+        {
+        }
+        /**
+         * Stores physical storage information of the data.
+         *
+         * @param StorageDescriptor $storageDescriptor
+         */
+        public function setStorageDescriptor(StorageDescriptor $storageDescriptor)
+        {
+        }
+        /**
+         * @return StorageDescriptor
+         */
+        public function getStorageDescriptor()
+        {
+        }
+        /**
+         * Hive table type. For example, MANAGED_TABLE, EXTERNAL_TABLE.
+         *
+         * @param string $tableType
+         */
+        public function setTableType($tableType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\BigLakeService\HiveTableOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParameters()
-    {
-    }
-    /**
-     * Stores physical storage information of the data.
-     *
-     * @param StorageDescriptor $storageDescriptor
-     */
-    public function setStorageDescriptor(StorageDescriptor $storageDescriptor)
-    {
-    }
-    /**
-     * @return StorageDescriptor
-     */
-    public function getStorageDescriptor()
-    {
-    }
-    /**
-     * Hive table type. For example, MANAGED_TABLE, EXTERNAL_TABLE.
-     *
-     * @param string $tableType
-     */
-    public function setTableType($tableType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableType()
+    class Google_Service_BigLakeService_HiveTableOptions extends \Google\Service\BigLakeService\HiveTableOptions
     {
     }
 }

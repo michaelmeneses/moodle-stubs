@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class ListSchemaBundlesResponse extends \Google\Collection
-{
-    protected $collection_key = 'schemaBundles';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $schemaBundlesType = SchemaBundle::class;
-    protected $schemaBundlesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\BigtableAdmin {
+    class ListSchemaBundlesResponse extends \Google\Collection
     {
+        protected $collection_key = 'schemaBundles';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $schemaBundlesType = SchemaBundle::class;
+        protected $schemaBundlesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The schema bundles from the specified table.
+         *
+         * @param SchemaBundle[] $schemaBundles
+         */
+        public function setSchemaBundles($schemaBundles)
+        {
+        }
+        /**
+         * @return SchemaBundle[]
+         */
+        public function getSchemaBundles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigtableAdmin\ListSchemaBundlesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The schema bundles from the specified table.
-     *
-     * @param SchemaBundle[] $schemaBundles
-     */
-    public function setSchemaBundles($schemaBundles)
-    {
-    }
-    /**
-     * @return SchemaBundle[]
-     */
-    public function getSchemaBundles()
+    class Google_Service_BigtableAdmin_ListSchemaBundlesResponse extends \Google\Service\BigtableAdmin\ListSchemaBundlesResponse
     {
     }
 }

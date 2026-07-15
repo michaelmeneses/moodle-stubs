@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ImageOccurrence extends \Google\Collection
-{
-    protected $collection_key = 'layerInfo';
-    /**
-     * Output only. This contains the base image URL for the derived image
-     * occurrence.
-     *
-     * @var string
-     */
-    public $baseResourceUrl;
-    /**
-     * Output only. The number of layers by which this image differs from the
-     * associated image basis.
-     *
-     * @var int
-     */
-    public $distance;
-    protected $fingerprintType = Fingerprint::class;
-    protected $fingerprintDataType = '';
-    protected $layerInfoType = Layer::class;
-    protected $layerInfoDataType = 'array';
-    /**
-     * Output only. This contains the base image URL for the derived image
-     * occurrence.
-     *
-     * @param string $baseResourceUrl
-     */
-    public function setBaseResourceUrl($baseResourceUrl)
+namespace Google\Service\ContainerAnalysis {
+    class ImageOccurrence extends \Google\Collection
     {
+        protected $collection_key = 'layerInfo';
+        /**
+         * Output only. This contains the base image URL for the derived image
+         * occurrence.
+         *
+         * @var string
+         */
+        public $baseResourceUrl;
+        /**
+         * Output only. The number of layers by which this image differs from the
+         * associated image basis.
+         *
+         * @var int
+         */
+        public $distance;
+        protected $fingerprintType = Fingerprint::class;
+        protected $fingerprintDataType = '';
+        protected $layerInfoType = Layer::class;
+        protected $layerInfoDataType = 'array';
+        /**
+         * Output only. This contains the base image URL for the derived image
+         * occurrence.
+         *
+         * @param string $baseResourceUrl
+         */
+        public function setBaseResourceUrl($baseResourceUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBaseResourceUrl()
+        {
+        }
+        /**
+         * Output only. The number of layers by which this image differs from the
+         * associated image basis.
+         *
+         * @param int $distance
+         */
+        public function setDistance($distance)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDistance()
+        {
+        }
+        /**
+         * Required. The fingerprint of the derived image.
+         *
+         * @param Fingerprint $fingerprint
+         */
+        public function setFingerprint(Fingerprint $fingerprint)
+        {
+        }
+        /**
+         * @return Fingerprint
+         */
+        public function getFingerprint()
+        {
+        }
+        /**
+         * This contains layer-specific metadata, if populated it has length
+         * "distance" and is ordered with [distance] being the layer immediately
+         * following the base image and [1] being the final layer.
+         *
+         * @param Layer[] $layerInfo
+         */
+        public function setLayerInfo($layerInfo)
+        {
+        }
+        /**
+         * @return Layer[]
+         */
+        public function getLayerInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ImageOccurrence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBaseResourceUrl()
-    {
-    }
-    /**
-     * Output only. The number of layers by which this image differs from the
-     * associated image basis.
-     *
-     * @param int $distance
-     */
-    public function setDistance($distance)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getDistance()
-    {
-    }
-    /**
-     * Required. The fingerprint of the derived image.
-     *
-     * @param Fingerprint $fingerprint
-     */
-    public function setFingerprint(Fingerprint $fingerprint)
-    {
-    }
-    /**
-     * @return Fingerprint
-     */
-    public function getFingerprint()
-    {
-    }
-    /**
-     * This contains layer-specific metadata, if populated it has length
-     * "distance" and is ordered with [distance] being the layer immediately
-     * following the base image and [1] being the final layer.
-     *
-     * @param Layer[] $layerInfo
-     */
-    public function setLayerInfo($layerInfo)
-    {
-    }
-    /**
-     * @return Layer[]
-     */
-    public function getLayerInfo()
+    class Google_Service_ContainerAnalysis_ImageOccurrence extends \Google\Service\ContainerAnalysis\ImageOccurrence
     {
     }
 }

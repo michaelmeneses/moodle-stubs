@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AlertPolicyResourceConfigAlertEnrollment extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $alertId;
-    /**
-     * @var string
-     */
-    public $enrollState;
-    /**
-     * @var string[]
-     */
-    public $notificationParams;
-    /**
-     * @param string
-     */
-    public function setAlertId($alertId)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AlertPolicyResourceConfigAlertEnrollment extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $alertId;
+        /**
+         * @var string
+         */
+        public $enrollState;
+        /**
+         * @var string[]
+         */
+        public $notificationParams;
+        /**
+         * @param string
+         */
+        public function setAlertId($alertId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAlertId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEnrollState($enrollState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnrollState()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setNotificationParams($notificationParams)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNotificationParams()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AlertPolicyResourceConfigAlertEnrollment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlertId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEnrollState($enrollState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnrollState()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setNotificationParams($notificationParams)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNotificationParams()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AlertPolicyResourceConfigAlertEnrollment extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AlertPolicyResourceConfigAlertEnrollment
     {
     }
 }

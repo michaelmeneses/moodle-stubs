@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AlternateDisputeResolution extends \Google\Model
-{
-    /**
-     * The label for the alternate dispute resolution link.
-     *
-     * @var string
-     */
-    public $label;
-    /**
-     * The URL pointing to a page, where merchant can request alternative dispute
-     * resolution with an [external body](https://support.google.com/european-
-     * union-digital-services-act-redress-options/answer/13535501).
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * The label for the alternate dispute resolution link.
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
+namespace Google\Service\ShoppingContent {
+    class AlternateDisputeResolution extends \Google\Model
     {
+        /**
+         * The label for the alternate dispute resolution link.
+         *
+         * @var string
+         */
+        public $label;
+        /**
+         * The URL pointing to a page, where merchant can request alternative dispute
+         * resolution with an [external body](https://support.google.com/european-
+         * union-digital-services-act-redress-options/answer/13535501).
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * The label for the alternate dispute resolution link.
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * The URL pointing to a page, where merchant can request alternative dispute
+         * resolution with an [external body](https://support.google.com/european-
+         * union-digital-services-act-redress-options/answer/13535501).
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\AlternateDisputeResolution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabel()
-    {
-    }
-    /**
-     * The URL pointing to a page, where merchant can request alternative dispute
-     * resolution with an [external body](https://support.google.com/european-
-     * union-digital-services-act-redress-options/answer/13535501).
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_ShoppingContent_AlternateDisputeResolution extends \Google\Service\ShoppingContent\AlternateDisputeResolution
     {
     }
 }

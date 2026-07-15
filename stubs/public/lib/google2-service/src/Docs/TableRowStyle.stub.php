@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class TableRowStyle extends \Google\Model
-{
-    protected $minRowHeightType = Dimension::class;
-    protected $minRowHeightDataType = '';
-    /**
-     * Whether the row cannot overflow across page or column boundaries.
-     *
-     * @var bool
-     */
-    public $preventOverflow;
-    /**
-     * Whether the row is a table header.
-     *
-     * @var bool
-     */
-    public $tableHeader;
-    /**
-     * The minimum height of the row. The row will be rendered in the Docs editor
-     * at a height equal to or greater than this value in order to show all the
-     * content in the row's cells.
-     *
-     * @param Dimension $minRowHeight
-     */
-    public function setMinRowHeight(Dimension $minRowHeight)
+namespace Google\Service\Docs {
+    class TableRowStyle extends \Google\Model
     {
+        protected $minRowHeightType = Dimension::class;
+        protected $minRowHeightDataType = '';
+        /**
+         * Whether the row cannot overflow across page or column boundaries.
+         *
+         * @var bool
+         */
+        public $preventOverflow;
+        /**
+         * Whether the row is a table header.
+         *
+         * @var bool
+         */
+        public $tableHeader;
+        /**
+         * The minimum height of the row. The row will be rendered in the Docs editor
+         * at a height equal to or greater than this value in order to show all the
+         * content in the row's cells.
+         *
+         * @param Dimension $minRowHeight
+         */
+        public function setMinRowHeight(Dimension $minRowHeight)
+        {
+        }
+        /**
+         * @return Dimension
+         */
+        public function getMinRowHeight()
+        {
+        }
+        /**
+         * Whether the row cannot overflow across page or column boundaries.
+         *
+         * @param bool $preventOverflow
+         */
+        public function setPreventOverflow($preventOverflow)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPreventOverflow()
+        {
+        }
+        /**
+         * Whether the row is a table header.
+         *
+         * @param bool $tableHeader
+         */
+        public function setTableHeader($tableHeader)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTableHeader()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Dimension
+     * Runtime class alias of \Google\Service\Docs\TableRowStyle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMinRowHeight()
-    {
-    }
-    /**
-     * Whether the row cannot overflow across page or column boundaries.
-     *
-     * @param bool $preventOverflow
-     */
-    public function setPreventOverflow($preventOverflow)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPreventOverflow()
-    {
-    }
-    /**
-     * Whether the row is a table header.
-     *
-     * @param bool $tableHeader
-     */
-    public function setTableHeader($tableHeader)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTableHeader()
+    class Google_Service_Docs_TableRowStyle extends \Google\Service\Docs\TableRowStyle
     {
     }
 }

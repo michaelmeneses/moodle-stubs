@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class UrlAssignedTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * Indicates if this option is being negatively targeted.
-     *
-     * @var bool
-     */
-    public $negative;
-    /**
-     * Required. The URL, for example `example.com`. DV360 supports two levels of
-     * subdirectory targeting, for example `www.example.com/one-subdirectory-
-     * level/second-level`, and five levels of subdomain targeting, for example
-     * `five.four.three.two.one.example.com`.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Indicates if this option is being negatively targeted.
-     *
-     * @param bool $negative
-     */
-    public function setNegative($negative)
+namespace Google\Service\DisplayVideo {
+    class UrlAssignedTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * Indicates if this option is being negatively targeted.
+         *
+         * @var bool
+         */
+        public $negative;
+        /**
+         * Required. The URL, for example `example.com`. DV360 supports two levels of
+         * subdirectory targeting, for example `www.example.com/one-subdirectory-
+         * level/second-level`, and five levels of subdomain targeting, for example
+         * `five.four.three.two.one.example.com`.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Indicates if this option is being negatively targeted.
+         *
+         * @param bool $negative
+         */
+        public function setNegative($negative)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNegative()
+        {
+        }
+        /**
+         * Required. The URL, for example `example.com`. DV360 supports two levels of
+         * subdirectory targeting, for example `www.example.com/one-subdirectory-
+         * level/second-level`, and five levels of subdomain targeting, for example
+         * `five.four.three.two.one.example.com`.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DisplayVideo\UrlAssignedTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNegative()
-    {
-    }
-    /**
-     * Required. The URL, for example `example.com`. DV360 supports two levels of
-     * subdirectory targeting, for example `www.example.com/one-subdirectory-
-     * level/second-level`, and five levels of subdomain targeting, for example
-     * `five.four.three.two.one.example.com`.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_DisplayVideo_UrlAssignedTargetingOptionDetails extends \Google\Service\DisplayVideo\UrlAssignedTargetingOptionDetails
     {
     }
 }

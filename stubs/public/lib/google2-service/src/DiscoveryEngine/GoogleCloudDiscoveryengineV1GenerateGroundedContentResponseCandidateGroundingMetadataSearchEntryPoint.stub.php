@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataSearchEntryPoint extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $renderedContent;
-    /**
-     * @var string
-     */
-    public $sdkBlob;
-    /**
-     * @param string
-     */
-    public function setRenderedContent($renderedContent)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataSearchEntryPoint extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $renderedContent;
+        /**
+         * @var string
+         */
+        public $sdkBlob;
+        /**
+         * @param string
+         */
+        public function setRenderedContent($renderedContent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRenderedContent()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSdkBlob($sdkBlob)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSdkBlob()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataSearchEntryPoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRenderedContent()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSdkBlob($sdkBlob)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSdkBlob()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataSearchEntryPoint extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataSearchEntryPoint
     {
     }
 }

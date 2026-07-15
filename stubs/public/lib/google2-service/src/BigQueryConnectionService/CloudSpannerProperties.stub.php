@@ -21,159 +21,168 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryConnectionService;
-
-class CloudSpannerProperties extends \Google\Model
-{
-    /**
-     * Cloud Spanner database in the form `project/instance/database'
-     *
-     * @var string
-     */
-    public $database;
-    /**
-     * Optional. Cloud Spanner database role for fine-grained access control. The
-     * Cloud Spanner admin should have provisioned the database role with
-     * appropriate permissions, such as `SELECT` and `INSERT`. Other users should
-     * only use roles provided by their Cloud Spanner admins. For more details,
-     * see [About fine-grained access control]
-     * (https://cloud.google.com/spanner/docs/fgac-about). REQUIRES: The database
-     * role name must start with a letter, and can only contain letters, numbers,
-     * and underscores.
-     *
-     * @var string
-     */
-    public $databaseRole;
-    /**
-     * Allows setting max parallelism per query when executing on Spanner
-     * independent compute resources. If unspecified, default values of
-     * parallelism are chosen that are dependent on the Cloud Spanner instance
-     * configuration. REQUIRES: `use_parallelism` must be set. REQUIRES:
-     * `use_data_boost` must be set.
-     *
-     * @var int
-     */
-    public $maxParallelism;
-    /**
-     * If set, the request will be executed via Spanner independent compute
-     * resources. REQUIRES: `use_parallelism` must be set.
-     *
-     * @var bool
-     */
-    public $useDataBoost;
-    /**
-     * If parallelism should be used when reading from Cloud Spanner
-     *
-     * @var bool
-     */
-    public $useParallelism;
-    /**
-     * Deprecated: prefer use_data_boost instead. If the serverless analytics
-     * service should be used to read data from Cloud Spanner. Note:
-     * `use_parallelism` must be set when using serverless analytics.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $useServerlessAnalytics;
-    /**
-     * Cloud Spanner database in the form `project/instance/database'
-     *
-     * @param string $database
-     */
-    public function setDatabase($database)
+namespace Google\Service\BigQueryConnectionService {
+    class CloudSpannerProperties extends \Google\Model
     {
+        /**
+         * Cloud Spanner database in the form `project/instance/database'
+         *
+         * @var string
+         */
+        public $database;
+        /**
+         * Optional. Cloud Spanner database role for fine-grained access control. The
+         * Cloud Spanner admin should have provisioned the database role with
+         * appropriate permissions, such as `SELECT` and `INSERT`. Other users should
+         * only use roles provided by their Cloud Spanner admins. For more details,
+         * see [About fine-grained access control]
+         * (https://cloud.google.com/spanner/docs/fgac-about). REQUIRES: The database
+         * role name must start with a letter, and can only contain letters, numbers,
+         * and underscores.
+         *
+         * @var string
+         */
+        public $databaseRole;
+        /**
+         * Allows setting max parallelism per query when executing on Spanner
+         * independent compute resources. If unspecified, default values of
+         * parallelism are chosen that are dependent on the Cloud Spanner instance
+         * configuration. REQUIRES: `use_parallelism` must be set. REQUIRES:
+         * `use_data_boost` must be set.
+         *
+         * @var int
+         */
+        public $maxParallelism;
+        /**
+         * If set, the request will be executed via Spanner independent compute
+         * resources. REQUIRES: `use_parallelism` must be set.
+         *
+         * @var bool
+         */
+        public $useDataBoost;
+        /**
+         * If parallelism should be used when reading from Cloud Spanner
+         *
+         * @var bool
+         */
+        public $useParallelism;
+        /**
+         * Deprecated: prefer use_data_boost instead. If the serverless analytics
+         * service should be used to read data from Cloud Spanner. Note:
+         * `use_parallelism` must be set when using serverless analytics.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $useServerlessAnalytics;
+        /**
+         * Cloud Spanner database in the form `project/instance/database'
+         *
+         * @param string $database
+         */
+        public function setDatabase($database)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabase()
+        {
+        }
+        /**
+         * Optional. Cloud Spanner database role for fine-grained access control. The
+         * Cloud Spanner admin should have provisioned the database role with
+         * appropriate permissions, such as `SELECT` and `INSERT`. Other users should
+         * only use roles provided by their Cloud Spanner admins. For more details,
+         * see [About fine-grained access control]
+         * (https://cloud.google.com/spanner/docs/fgac-about). REQUIRES: The database
+         * role name must start with a letter, and can only contain letters, numbers,
+         * and underscores.
+         *
+         * @param string $databaseRole
+         */
+        public function setDatabaseRole($databaseRole)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabaseRole()
+        {
+        }
+        /**
+         * Allows setting max parallelism per query when executing on Spanner
+         * independent compute resources. If unspecified, default values of
+         * parallelism are chosen that are dependent on the Cloud Spanner instance
+         * configuration. REQUIRES: `use_parallelism` must be set. REQUIRES:
+         * `use_data_boost` must be set.
+         *
+         * @param int $maxParallelism
+         */
+        public function setMaxParallelism($maxParallelism)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxParallelism()
+        {
+        }
+        /**
+         * If set, the request will be executed via Spanner independent compute
+         * resources. REQUIRES: `use_parallelism` must be set.
+         *
+         * @param bool $useDataBoost
+         */
+        public function setUseDataBoost($useDataBoost)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseDataBoost()
+        {
+        }
+        /**
+         * If parallelism should be used when reading from Cloud Spanner
+         *
+         * @param bool $useParallelism
+         */
+        public function setUseParallelism($useParallelism)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseParallelism()
+        {
+        }
+        /**
+         * Deprecated: prefer use_data_boost instead. If the serverless analytics
+         * service should be used to read data from Cloud Spanner. Note:
+         * `use_parallelism` must be set when using serverless analytics.
+         *
+         * @deprecated
+         * @param bool $useServerlessAnalytics
+         */
+        public function setUseServerlessAnalytics($useServerlessAnalytics)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getUseServerlessAnalytics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigQueryConnectionService\CloudSpannerProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabase()
-    {
-    }
-    /**
-     * Optional. Cloud Spanner database role for fine-grained access control. The
-     * Cloud Spanner admin should have provisioned the database role with
-     * appropriate permissions, such as `SELECT` and `INSERT`. Other users should
-     * only use roles provided by their Cloud Spanner admins. For more details,
-     * see [About fine-grained access control]
-     * (https://cloud.google.com/spanner/docs/fgac-about). REQUIRES: The database
-     * role name must start with a letter, and can only contain letters, numbers,
-     * and underscores.
-     *
-     * @param string $databaseRole
-     */
-    public function setDatabaseRole($databaseRole)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatabaseRole()
-    {
-    }
-    /**
-     * Allows setting max parallelism per query when executing on Spanner
-     * independent compute resources. If unspecified, default values of
-     * parallelism are chosen that are dependent on the Cloud Spanner instance
-     * configuration. REQUIRES: `use_parallelism` must be set. REQUIRES:
-     * `use_data_boost` must be set.
-     *
-     * @param int $maxParallelism
-     */
-    public function setMaxParallelism($maxParallelism)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxParallelism()
-    {
-    }
-    /**
-     * If set, the request will be executed via Spanner independent compute
-     * resources. REQUIRES: `use_parallelism` must be set.
-     *
-     * @param bool $useDataBoost
-     */
-    public function setUseDataBoost($useDataBoost)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseDataBoost()
-    {
-    }
-    /**
-     * If parallelism should be used when reading from Cloud Spanner
-     *
-     * @param bool $useParallelism
-     */
-    public function setUseParallelism($useParallelism)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseParallelism()
-    {
-    }
-    /**
-     * Deprecated: prefer use_data_boost instead. If the serverless analytics
-     * service should be used to read data from Cloud Spanner. Note:
-     * `use_parallelism` must be set when using serverless analytics.
-     *
-     * @deprecated
-     * @param bool $useServerlessAnalytics
-     */
-    public function setUseServerlessAnalytics($useServerlessAnalytics)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getUseServerlessAnalytics()
+    class Google_Service_BigQueryConnectionService_CloudSpannerProperties extends \Google\Service\BigQueryConnectionService\CloudSpannerProperties
     {
     }
 }

@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ErrorInfo extends \Google\Collection
-{
-    protected $collection_key = 'errorMessages';
-    protected $errorMessagesType = ErrorMessage::class;
-    protected $errorMessagesDataType = 'array';
-    /**
-     * @param ErrorMessage[] $errorMessages
-     */
-    public function setErrorMessages($errorMessages)
+namespace Google\Service\CloudSearch {
+    class ErrorInfo extends \Google\Collection
     {
+        protected $collection_key = 'errorMessages';
+        protected $errorMessagesType = ErrorMessage::class;
+        protected $errorMessagesDataType = 'array';
+        /**
+         * @param ErrorMessage[] $errorMessages
+         */
+        public function setErrorMessages($errorMessages)
+        {
+        }
+        /**
+         * @return ErrorMessage[]
+         */
+        public function getErrorMessages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ErrorMessage[]
+     * Runtime class alias of \Google\Service\CloudSearch\ErrorInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorMessages()
+    class Google_Service_CloudSearch_ErrorInfo extends \Google\Service\CloudSearch\ErrorInfo
     {
     }
 }

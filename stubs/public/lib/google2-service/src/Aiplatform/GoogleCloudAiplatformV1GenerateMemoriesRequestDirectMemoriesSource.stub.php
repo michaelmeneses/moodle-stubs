@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GenerateMemoriesRequestDirectMemoriesSource extends \Google\Collection
-{
-    protected $collection_key = 'directMemories';
-    protected $directMemoriesType = GoogleCloudAiplatformV1GenerateMemoriesRequestDirectMemoriesSourceDirectMemory::class;
-    protected $directMemoriesDataType = 'array';
-    /**
-     * Required. The direct memories to upload to Memory Bank. At most 5 direct
-     * memories are allowed per request.
-     *
-     * @param GoogleCloudAiplatformV1GenerateMemoriesRequestDirectMemoriesSourceDirectMemory[] $directMemories
-     */
-    public function setDirectMemories($directMemories)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GenerateMemoriesRequestDirectMemoriesSource extends \Google\Collection
     {
+        protected $collection_key = 'directMemories';
+        protected $directMemoriesType = GoogleCloudAiplatformV1GenerateMemoriesRequestDirectMemoriesSourceDirectMemory::class;
+        protected $directMemoriesDataType = 'array';
+        /**
+         * Required. The direct memories to upload to Memory Bank. At most 5 direct
+         * memories are allowed per request.
+         *
+         * @param GoogleCloudAiplatformV1GenerateMemoriesRequestDirectMemoriesSourceDirectMemory[] $directMemories
+         */
+        public function setDirectMemories($directMemories)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GenerateMemoriesRequestDirectMemoriesSourceDirectMemory[]
+         */
+        public function getDirectMemories()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1GenerateMemoriesRequestDirectMemoriesSourceDirectMemory[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateMemoriesRequestDirectMemoriesSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDirectMemories()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GenerateMemoriesRequestDirectMemoriesSource extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateMemoriesRequestDirectMemoriesSource
     {
     }
 }

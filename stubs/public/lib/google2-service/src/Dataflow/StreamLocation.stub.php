@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class StreamLocation extends \Google\Model
-{
-    protected $customSourceLocationType = CustomSourceLocation::class;
-    protected $customSourceLocationDataType = '';
-    protected $pubsubLocationType = PubsubLocation::class;
-    protected $pubsubLocationDataType = '';
-    protected $sideInputLocationType = StreamingSideInputLocation::class;
-    protected $sideInputLocationDataType = '';
-    protected $streamingStageLocationType = StreamingStageLocation::class;
-    protected $streamingStageLocationDataType = '';
-    /**
-     * The stream is a custom source.
-     *
-     * @param CustomSourceLocation $customSourceLocation
-     */
-    public function setCustomSourceLocation(CustomSourceLocation $customSourceLocation)
+namespace Google\Service\Dataflow {
+    class StreamLocation extends \Google\Model
     {
+        protected $customSourceLocationType = CustomSourceLocation::class;
+        protected $customSourceLocationDataType = '';
+        protected $pubsubLocationType = PubsubLocation::class;
+        protected $pubsubLocationDataType = '';
+        protected $sideInputLocationType = StreamingSideInputLocation::class;
+        protected $sideInputLocationDataType = '';
+        protected $streamingStageLocationType = StreamingStageLocation::class;
+        protected $streamingStageLocationDataType = '';
+        /**
+         * The stream is a custom source.
+         *
+         * @param CustomSourceLocation $customSourceLocation
+         */
+        public function setCustomSourceLocation(CustomSourceLocation $customSourceLocation)
+        {
+        }
+        /**
+         * @return CustomSourceLocation
+         */
+        public function getCustomSourceLocation()
+        {
+        }
+        /**
+         * The stream is a pubsub stream.
+         *
+         * @param PubsubLocation $pubsubLocation
+         */
+        public function setPubsubLocation(PubsubLocation $pubsubLocation)
+        {
+        }
+        /**
+         * @return PubsubLocation
+         */
+        public function getPubsubLocation()
+        {
+        }
+        /**
+         * The stream is a streaming side input.
+         *
+         * @param StreamingSideInputLocation $sideInputLocation
+         */
+        public function setSideInputLocation(StreamingSideInputLocation $sideInputLocation)
+        {
+        }
+        /**
+         * @return StreamingSideInputLocation
+         */
+        public function getSideInputLocation()
+        {
+        }
+        /**
+         * The stream is part of another computation within the current streaming
+         * Dataflow job.
+         *
+         * @param StreamingStageLocation $streamingStageLocation
+         */
+        public function setStreamingStageLocation(StreamingStageLocation $streamingStageLocation)
+        {
+        }
+        /**
+         * @return StreamingStageLocation
+         */
+        public function getStreamingStageLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomSourceLocation
+     * Runtime class alias of \Google\Service\Dataflow\StreamLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomSourceLocation()
-    {
-    }
-    /**
-     * The stream is a pubsub stream.
-     *
-     * @param PubsubLocation $pubsubLocation
-     */
-    public function setPubsubLocation(PubsubLocation $pubsubLocation)
-    {
-    }
-    /**
-     * @return PubsubLocation
-     */
-    public function getPubsubLocation()
-    {
-    }
-    /**
-     * The stream is a streaming side input.
-     *
-     * @param StreamingSideInputLocation $sideInputLocation
-     */
-    public function setSideInputLocation(StreamingSideInputLocation $sideInputLocation)
-    {
-    }
-    /**
-     * @return StreamingSideInputLocation
-     */
-    public function getSideInputLocation()
-    {
-    }
-    /**
-     * The stream is part of another computation within the current streaming
-     * Dataflow job.
-     *
-     * @param StreamingStageLocation $streamingStageLocation
-     */
-    public function setStreamingStageLocation(StreamingStageLocation $streamingStageLocation)
-    {
-    }
-    /**
-     * @return StreamingStageLocation
-     */
-    public function getStreamingStageLocation()
+    class Google_Service_Dataflow_StreamLocation extends \Google\Service\Dataflow\StreamLocation
     {
     }
 }

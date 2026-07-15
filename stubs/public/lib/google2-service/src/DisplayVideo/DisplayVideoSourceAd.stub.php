@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class DisplayVideoSourceAd extends \Google\Model
-{
-    /**
-     * The ID of the source creative.
-     *
-     * @var string
-     */
-    public $creativeId;
-    /**
-     * The ID of the source creative.
-     *
-     * @param string $creativeId
-     */
-    public function setCreativeId($creativeId)
+namespace Google\Service\DisplayVideo {
+    class DisplayVideoSourceAd extends \Google\Model
     {
+        /**
+         * The ID of the source creative.
+         *
+         * @var string
+         */
+        public $creativeId;
+        /**
+         * The ID of the source creative.
+         *
+         * @param string $creativeId
+         */
+        public function setCreativeId($creativeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreativeId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\DisplayVideoSourceAd registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreativeId()
+    class Google_Service_DisplayVideo_DisplayVideoSourceAd extends \Google\Service\DisplayVideo\DisplayVideoSourceAd
     {
     }
 }

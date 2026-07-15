@@ -21,171 +21,180 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class FutureReservationsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachables';
-    /**
-     * @var string
-     */
-    public $etag;
-    /**
-     * [Output Only] The unique identifier for the resource. This identifier is
-     * defined by the server.
-     *
-     * @var string
-     */
-    public $id;
-    protected $itemsType = FutureReservation::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Output only. [Output Only] Type of
-     * resource.Alwayscompute#FutureReservationsListResponse for lists of
-     * reservations
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * [Output Only] This token allows you to get the next page of results for
-     * list requests. If the number of results is larger thanmaxResults, use the
-     * nextPageToken as a value for the query parameter pageToken in the next list
-     * request. Subsequent list requests will have their own nextPageToken to
-     * continue paging through the results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Output only. [Output Only] Server-defined URL for this resource.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * Output only. [Output Only] Unreachable resources.
-     *
-     * @var string[]
-     */
-    public $unreachables;
-    protected $warningType = FutureReservationsListResponseWarning::class;
-    protected $warningDataType = '';
-    /**
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Compute {
+    class FutureReservationsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachables';
+        /**
+         * @var string
+         */
+        public $etag;
+        /**
+         * [Output Only] The unique identifier for the resource. This identifier is
+         * defined by the server.
+         *
+         * @var string
+         */
+        public $id;
+        protected $itemsType = FutureReservation::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Output only. [Output Only] Type of
+         * resource.Alwayscompute#FutureReservationsListResponse for lists of
+         * reservations
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * [Output Only] This token allows you to get the next page of results for
+         * list requests. If the number of results is larger thanmaxResults, use the
+         * nextPageToken as a value for the query parameter pageToken in the next list
+         * request. Subsequent list requests will have their own nextPageToken to
+         * continue paging through the results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Output only. [Output Only] Server-defined URL for this resource.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * Output only. [Output Only] Unreachable resources.
+         *
+         * @var string[]
+         */
+        public $unreachables;
+        protected $warningType = FutureReservationsListResponseWarning::class;
+        protected $warningDataType = '';
+        /**
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * [Output Only] The unique identifier for the resource. This identifier is
+         * defined by the server.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * [Output Only] A list of future reservation resources.
+         *
+         * @param FutureReservation[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return FutureReservation[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Output only. [Output Only] Type of
+         * resource.Alwayscompute#FutureReservationsListResponse for lists of
+         * reservations
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * [Output Only] This token allows you to get the next page of results for
+         * list requests. If the number of results is larger thanmaxResults, use the
+         * nextPageToken as a value for the query parameter pageToken in the next list
+         * request. Subsequent list requests will have their own nextPageToken to
+         * continue paging through the results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Output only. [Output Only] Server-defined URL for this resource.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * Output only. [Output Only] Unreachable resources.
+         *
+         * @param string[] $unreachables
+         */
+        public function setUnreachables($unreachables)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachables()
+        {
+        }
+        /**
+         * [Output Only] Informational warning message.
+         *
+         * @param FutureReservationsListResponseWarning $warning
+         */
+        public function setWarning(FutureReservationsListResponseWarning $warning)
+        {
+        }
+        /**
+         * @return FutureReservationsListResponseWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\FutureReservationsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * [Output Only] The unique identifier for the resource. This identifier is
-     * defined by the server.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * [Output Only] A list of future reservation resources.
-     *
-     * @param FutureReservation[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return FutureReservation[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * Output only. [Output Only] Type of
-     * resource.Alwayscompute#FutureReservationsListResponse for lists of
-     * reservations
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * [Output Only] This token allows you to get the next page of results for
-     * list requests. If the number of results is larger thanmaxResults, use the
-     * nextPageToken as a value for the query parameter pageToken in the next list
-     * request. Subsequent list requests will have their own nextPageToken to
-     * continue paging through the results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Output only. [Output Only] Server-defined URL for this resource.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * Output only. [Output Only] Unreachable resources.
-     *
-     * @param string[] $unreachables
-     */
-    public function setUnreachables($unreachables)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachables()
-    {
-    }
-    /**
-     * [Output Only] Informational warning message.
-     *
-     * @param FutureReservationsListResponseWarning $warning
-     */
-    public function setWarning(FutureReservationsListResponseWarning $warning)
-    {
-    }
-    /**
-     * @return FutureReservationsListResponseWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_FutureReservationsListResponse extends \Google\Service\Compute\FutureReservationsListResponse
     {
     }
 }

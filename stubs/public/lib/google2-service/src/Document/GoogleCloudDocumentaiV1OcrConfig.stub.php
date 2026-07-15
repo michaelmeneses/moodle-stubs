@@ -21,182 +21,191 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1OcrConfig extends \Google\Collection
-{
-    protected $collection_key = 'advancedOcrOptions';
-    /**
-     * A list of advanced OCR options to further fine-tune OCR behavior. Current
-     * valid values are: - `legacy_layout`: a heuristics layout detection
-     * algorithm, which serves as an alternative to the current ML-based layout
-     * detection algorithm. Customers can choose the best suitable layout
-     * algorithm based on their situation.
-     *
-     * @var string[]
-     */
-    public $advancedOcrOptions;
-    /**
-     * Turn on font identification model and return font style information.
-     * Deprecated, use PremiumFeatures.compute_style_info instead.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $computeStyleInfo;
-    /**
-     * Turn off character box detector in OCR engine. Character box detection is
-     * enabled by default in OCR 2.0 (and later) processors.
-     *
-     * @var bool
-     */
-    public $disableCharacterBoxesDetection;
-    /**
-     * Enables intelligent document quality scores after OCR. Can help with
-     * diagnosing why OCR responses are of poor quality for a given input. Adds
-     * additional latency comparable to regular OCR to the process call.
-     *
-     * @var bool
-     */
-    public $enableImageQualityScores;
-    /**
-     * Enables special handling for PDFs with existing text information. Results
-     * in better text extraction quality in such PDF inputs.
-     *
-     * @var bool
-     */
-    public $enableNativePdfParsing;
-    /**
-     * Includes symbol level OCR information if set to true.
-     *
-     * @var bool
-     */
-    public $enableSymbol;
-    protected $hintsType = GoogleCloudDocumentaiV1OcrConfigHints::class;
-    protected $hintsDataType = '';
-    protected $premiumFeaturesType = GoogleCloudDocumentaiV1OcrConfigPremiumFeatures::class;
-    protected $premiumFeaturesDataType = '';
-    /**
-     * A list of advanced OCR options to further fine-tune OCR behavior. Current
-     * valid values are: - `legacy_layout`: a heuristics layout detection
-     * algorithm, which serves as an alternative to the current ML-based layout
-     * detection algorithm. Customers can choose the best suitable layout
-     * algorithm based on their situation.
-     *
-     * @param string[] $advancedOcrOptions
-     */
-    public function setAdvancedOcrOptions($advancedOcrOptions)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1OcrConfig extends \Google\Collection
     {
+        protected $collection_key = 'advancedOcrOptions';
+        /**
+         * A list of advanced OCR options to further fine-tune OCR behavior. Current
+         * valid values are: - `legacy_layout`: a heuristics layout detection
+         * algorithm, which serves as an alternative to the current ML-based layout
+         * detection algorithm. Customers can choose the best suitable layout
+         * algorithm based on their situation.
+         *
+         * @var string[]
+         */
+        public $advancedOcrOptions;
+        /**
+         * Turn on font identification model and return font style information.
+         * Deprecated, use PremiumFeatures.compute_style_info instead.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $computeStyleInfo;
+        /**
+         * Turn off character box detector in OCR engine. Character box detection is
+         * enabled by default in OCR 2.0 (and later) processors.
+         *
+         * @var bool
+         */
+        public $disableCharacterBoxesDetection;
+        /**
+         * Enables intelligent document quality scores after OCR. Can help with
+         * diagnosing why OCR responses are of poor quality for a given input. Adds
+         * additional latency comparable to regular OCR to the process call.
+         *
+         * @var bool
+         */
+        public $enableImageQualityScores;
+        /**
+         * Enables special handling for PDFs with existing text information. Results
+         * in better text extraction quality in such PDF inputs.
+         *
+         * @var bool
+         */
+        public $enableNativePdfParsing;
+        /**
+         * Includes symbol level OCR information if set to true.
+         *
+         * @var bool
+         */
+        public $enableSymbol;
+        protected $hintsType = GoogleCloudDocumentaiV1OcrConfigHints::class;
+        protected $hintsDataType = '';
+        protected $premiumFeaturesType = GoogleCloudDocumentaiV1OcrConfigPremiumFeatures::class;
+        protected $premiumFeaturesDataType = '';
+        /**
+         * A list of advanced OCR options to further fine-tune OCR behavior. Current
+         * valid values are: - `legacy_layout`: a heuristics layout detection
+         * algorithm, which serves as an alternative to the current ML-based layout
+         * detection algorithm. Customers can choose the best suitable layout
+         * algorithm based on their situation.
+         *
+         * @param string[] $advancedOcrOptions
+         */
+        public function setAdvancedOcrOptions($advancedOcrOptions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAdvancedOcrOptions()
+        {
+        }
+        /**
+         * Turn on font identification model and return font style information.
+         * Deprecated, use PremiumFeatures.compute_style_info instead.
+         *
+         * @deprecated
+         * @param bool $computeStyleInfo
+         */
+        public function setComputeStyleInfo($computeStyleInfo)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getComputeStyleInfo()
+        {
+        }
+        /**
+         * Turn off character box detector in OCR engine. Character box detection is
+         * enabled by default in OCR 2.0 (and later) processors.
+         *
+         * @param bool $disableCharacterBoxesDetection
+         */
+        public function setDisableCharacterBoxesDetection($disableCharacterBoxesDetection)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableCharacterBoxesDetection()
+        {
+        }
+        /**
+         * Enables intelligent document quality scores after OCR. Can help with
+         * diagnosing why OCR responses are of poor quality for a given input. Adds
+         * additional latency comparable to regular OCR to the process call.
+         *
+         * @param bool $enableImageQualityScores
+         */
+        public function setEnableImageQualityScores($enableImageQualityScores)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableImageQualityScores()
+        {
+        }
+        /**
+         * Enables special handling for PDFs with existing text information. Results
+         * in better text extraction quality in such PDF inputs.
+         *
+         * @param bool $enableNativePdfParsing
+         */
+        public function setEnableNativePdfParsing($enableNativePdfParsing)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableNativePdfParsing()
+        {
+        }
+        /**
+         * Includes symbol level OCR information if set to true.
+         *
+         * @param bool $enableSymbol
+         */
+        public function setEnableSymbol($enableSymbol)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableSymbol()
+        {
+        }
+        /**
+         * Hints for the OCR model.
+         *
+         * @param GoogleCloudDocumentaiV1OcrConfigHints $hints
+         */
+        public function setHints(GoogleCloudDocumentaiV1OcrConfigHints $hints)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1OcrConfigHints
+         */
+        public function getHints()
+        {
+        }
+        /**
+         * Configurations for premium OCR features.
+         *
+         * @param GoogleCloudDocumentaiV1OcrConfigPremiumFeatures $premiumFeatures
+         */
+        public function setPremiumFeatures(GoogleCloudDocumentaiV1OcrConfigPremiumFeatures $premiumFeatures)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1OcrConfigPremiumFeatures
+         */
+        public function getPremiumFeatures()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1OcrConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvancedOcrOptions()
-    {
-    }
-    /**
-     * Turn on font identification model and return font style information.
-     * Deprecated, use PremiumFeatures.compute_style_info instead.
-     *
-     * @deprecated
-     * @param bool $computeStyleInfo
-     */
-    public function setComputeStyleInfo($computeStyleInfo)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getComputeStyleInfo()
-    {
-    }
-    /**
-     * Turn off character box detector in OCR engine. Character box detection is
-     * enabled by default in OCR 2.0 (and later) processors.
-     *
-     * @param bool $disableCharacterBoxesDetection
-     */
-    public function setDisableCharacterBoxesDetection($disableCharacterBoxesDetection)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisableCharacterBoxesDetection()
-    {
-    }
-    /**
-     * Enables intelligent document quality scores after OCR. Can help with
-     * diagnosing why OCR responses are of poor quality for a given input. Adds
-     * additional latency comparable to regular OCR to the process call.
-     *
-     * @param bool $enableImageQualityScores
-     */
-    public function setEnableImageQualityScores($enableImageQualityScores)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableImageQualityScores()
-    {
-    }
-    /**
-     * Enables special handling for PDFs with existing text information. Results
-     * in better text extraction quality in such PDF inputs.
-     *
-     * @param bool $enableNativePdfParsing
-     */
-    public function setEnableNativePdfParsing($enableNativePdfParsing)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableNativePdfParsing()
-    {
-    }
-    /**
-     * Includes symbol level OCR information if set to true.
-     *
-     * @param bool $enableSymbol
-     */
-    public function setEnableSymbol($enableSymbol)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableSymbol()
-    {
-    }
-    /**
-     * Hints for the OCR model.
-     *
-     * @param GoogleCloudDocumentaiV1OcrConfigHints $hints
-     */
-    public function setHints(GoogleCloudDocumentaiV1OcrConfigHints $hints)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1OcrConfigHints
-     */
-    public function getHints()
-    {
-    }
-    /**
-     * Configurations for premium OCR features.
-     *
-     * @param GoogleCloudDocumentaiV1OcrConfigPremiumFeatures $premiumFeatures
-     */
-    public function setPremiumFeatures(GoogleCloudDocumentaiV1OcrConfigPremiumFeatures $premiumFeatures)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1OcrConfigPremiumFeatures
-     */
-    public function getPremiumFeatures()
+    class Google_Service_Document_GoogleCloudDocumentaiV1OcrConfig extends \Google\Service\Document\GoogleCloudDocumentaiV1OcrConfig
     {
     }
 }

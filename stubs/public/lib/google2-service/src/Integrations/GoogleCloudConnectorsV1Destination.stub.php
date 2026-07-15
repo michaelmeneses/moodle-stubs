@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudConnectorsV1Destination extends \Google\Model
-{
-    /**
-     * For publicly routable host.
-     *
-     * @var string
-     */
-    public $host;
-    /**
-     * The port is the target port number that is accepted by the destination.
-     *
-     * @var int
-     */
-    public $port;
-    /**
-     * PSC service attachments. Format: projects/regions/serviceAttachments
-     *
-     * @deprecated
-     * @var string
-     */
-    public $serviceAttachment;
-    /**
-     * For publicly routable host.
-     *
-     * @param string $host
-     */
-    public function setHost($host)
+namespace Google\Service\Integrations {
+    class GoogleCloudConnectorsV1Destination extends \Google\Model
     {
+        /**
+         * For publicly routable host.
+         *
+         * @var string
+         */
+        public $host;
+        /**
+         * The port is the target port number that is accepted by the destination.
+         *
+         * @var int
+         */
+        public $port;
+        /**
+         * PSC service attachments. Format: projects/regions/serviceAttachments
+         *
+         * @deprecated
+         * @var string
+         */
+        public $serviceAttachment;
+        /**
+         * For publicly routable host.
+         *
+         * @param string $host
+         */
+        public function setHost($host)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHost()
+        {
+        }
+        /**
+         * The port is the target port number that is accepted by the destination.
+         *
+         * @param int $port
+         */
+        public function setPort($port)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPort()
+        {
+        }
+        /**
+         * PSC service attachments. Format: projects/regions/serviceAttachments
+         *
+         * @deprecated
+         * @param string $serviceAttachment
+         */
+        public function setServiceAttachment($serviceAttachment)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getServiceAttachment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudConnectorsV1Destination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHost()
-    {
-    }
-    /**
-     * The port is the target port number that is accepted by the destination.
-     *
-     * @param int $port
-     */
-    public function setPort($port)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPort()
-    {
-    }
-    /**
-     * PSC service attachments. Format: projects/regions/serviceAttachments
-     *
-     * @deprecated
-     * @param string $serviceAttachment
-     */
-    public function setServiceAttachment($serviceAttachment)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getServiceAttachment()
+    class Google_Service_Integrations_GoogleCloudConnectorsV1Destination extends \Google\Service\Integrations\GoogleCloudConnectorsV1Destination
     {
     }
 }

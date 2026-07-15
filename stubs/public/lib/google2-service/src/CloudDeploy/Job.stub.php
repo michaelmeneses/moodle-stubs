@@ -21,227 +21,236 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class Job extends \Google\Model
-{
-    /**
-     * The Job has an unspecified state.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The Job is waiting for an earlier Phase(s) or Job(s) to complete.
-     */
-    public const STATE_PENDING = 'PENDING';
-    /**
-     * The Job is disabled.
-     */
-    public const STATE_DISABLED = 'DISABLED';
-    /**
-     * The Job is in progress.
-     */
-    public const STATE_IN_PROGRESS = 'IN_PROGRESS';
-    /**
-     * The Job succeeded.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * The Job failed.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * The Job was aborted.
-     */
-    public const STATE_ABORTED = 'ABORTED';
-    /**
-     * The Job was skipped.
-     */
-    public const STATE_SKIPPED = 'SKIPPED';
-    /**
-     * The Job was ignored.
-     */
-    public const STATE_IGNORED = 'IGNORED';
-    protected $advanceChildRolloutJobType = AdvanceChildRolloutJob::class;
-    protected $advanceChildRolloutJobDataType = '';
-    protected $createChildRolloutJobType = CreateChildRolloutJob::class;
-    protected $createChildRolloutJobDataType = '';
-    protected $deployJobType = DeployJob::class;
-    protected $deployJobDataType = '';
-    /**
-     * Output only. The ID of the Job.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Output only. The name of the `JobRun` responsible for the most recent
-     * invocation of this Job.
-     *
-     * @var string
-     */
-    public $jobRun;
-    protected $postdeployJobType = PostdeployJob::class;
-    protected $postdeployJobDataType = '';
-    protected $predeployJobType = PredeployJob::class;
-    protected $predeployJobDataType = '';
-    /**
-     * Output only. Additional information on why the Job was skipped, if
-     * available.
-     *
-     * @var string
-     */
-    public $skipMessage;
-    /**
-     * Output only. The current state of the Job.
-     *
-     * @var string
-     */
-    public $state;
-    protected $verifyJobType = VerifyJob::class;
-    protected $verifyJobDataType = '';
-    /**
-     * Output only. An advanceChildRollout Job.
-     *
-     * @param AdvanceChildRolloutJob $advanceChildRolloutJob
-     */
-    public function setAdvanceChildRolloutJob(AdvanceChildRolloutJob $advanceChildRolloutJob)
+namespace Google\Service\CloudDeploy {
+    class Job extends \Google\Model
     {
+        /**
+         * The Job has an unspecified state.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The Job is waiting for an earlier Phase(s) or Job(s) to complete.
+         */
+        public const STATE_PENDING = 'PENDING';
+        /**
+         * The Job is disabled.
+         */
+        public const STATE_DISABLED = 'DISABLED';
+        /**
+         * The Job is in progress.
+         */
+        public const STATE_IN_PROGRESS = 'IN_PROGRESS';
+        /**
+         * The Job succeeded.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * The Job failed.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * The Job was aborted.
+         */
+        public const STATE_ABORTED = 'ABORTED';
+        /**
+         * The Job was skipped.
+         */
+        public const STATE_SKIPPED = 'SKIPPED';
+        /**
+         * The Job was ignored.
+         */
+        public const STATE_IGNORED = 'IGNORED';
+        protected $advanceChildRolloutJobType = AdvanceChildRolloutJob::class;
+        protected $advanceChildRolloutJobDataType = '';
+        protected $createChildRolloutJobType = CreateChildRolloutJob::class;
+        protected $createChildRolloutJobDataType = '';
+        protected $deployJobType = DeployJob::class;
+        protected $deployJobDataType = '';
+        /**
+         * Output only. The ID of the Job.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Output only. The name of the `JobRun` responsible for the most recent
+         * invocation of this Job.
+         *
+         * @var string
+         */
+        public $jobRun;
+        protected $postdeployJobType = PostdeployJob::class;
+        protected $postdeployJobDataType = '';
+        protected $predeployJobType = PredeployJob::class;
+        protected $predeployJobDataType = '';
+        /**
+         * Output only. Additional information on why the Job was skipped, if
+         * available.
+         *
+         * @var string
+         */
+        public $skipMessage;
+        /**
+         * Output only. The current state of the Job.
+         *
+         * @var string
+         */
+        public $state;
+        protected $verifyJobType = VerifyJob::class;
+        protected $verifyJobDataType = '';
+        /**
+         * Output only. An advanceChildRollout Job.
+         *
+         * @param AdvanceChildRolloutJob $advanceChildRolloutJob
+         */
+        public function setAdvanceChildRolloutJob(AdvanceChildRolloutJob $advanceChildRolloutJob)
+        {
+        }
+        /**
+         * @return AdvanceChildRolloutJob
+         */
+        public function getAdvanceChildRolloutJob()
+        {
+        }
+        /**
+         * Output only. A createChildRollout Job.
+         *
+         * @param CreateChildRolloutJob $createChildRolloutJob
+         */
+        public function setCreateChildRolloutJob(CreateChildRolloutJob $createChildRolloutJob)
+        {
+        }
+        /**
+         * @return CreateChildRolloutJob
+         */
+        public function getCreateChildRolloutJob()
+        {
+        }
+        /**
+         * Output only. A deploy Job.
+         *
+         * @param DeployJob $deployJob
+         */
+        public function setDeployJob(DeployJob $deployJob)
+        {
+        }
+        /**
+         * @return DeployJob
+         */
+        public function getDeployJob()
+        {
+        }
+        /**
+         * Output only. The ID of the Job.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Output only. The name of the `JobRun` responsible for the most recent
+         * invocation of this Job.
+         *
+         * @param string $jobRun
+         */
+        public function setJobRun($jobRun)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobRun()
+        {
+        }
+        /**
+         * Output only. A postdeploy Job.
+         *
+         * @param PostdeployJob $postdeployJob
+         */
+        public function setPostdeployJob(PostdeployJob $postdeployJob)
+        {
+        }
+        /**
+         * @return PostdeployJob
+         */
+        public function getPostdeployJob()
+        {
+        }
+        /**
+         * Output only. A predeploy Job.
+         *
+         * @param PredeployJob $predeployJob
+         */
+        public function setPredeployJob(PredeployJob $predeployJob)
+        {
+        }
+        /**
+         * @return PredeployJob
+         */
+        public function getPredeployJob()
+        {
+        }
+        /**
+         * Output only. Additional information on why the Job was skipped, if
+         * available.
+         *
+         * @param string $skipMessage
+         */
+        public function setSkipMessage($skipMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSkipMessage()
+        {
+        }
+        /**
+         * Output only. The current state of the Job.
+         *
+         * Accepted values: STATE_UNSPECIFIED, PENDING, DISABLED, IN_PROGRESS,
+         * SUCCEEDED, FAILED, ABORTED, SKIPPED, IGNORED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. A verify Job.
+         *
+         * @param VerifyJob $verifyJob
+         */
+        public function setVerifyJob(VerifyJob $verifyJob)
+        {
+        }
+        /**
+         * @return VerifyJob
+         */
+        public function getVerifyJob()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdvanceChildRolloutJob
+     * Runtime class alias of \Google\Service\CloudDeploy\Job registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvanceChildRolloutJob()
-    {
-    }
-    /**
-     * Output only. A createChildRollout Job.
-     *
-     * @param CreateChildRolloutJob $createChildRolloutJob
-     */
-    public function setCreateChildRolloutJob(CreateChildRolloutJob $createChildRolloutJob)
-    {
-    }
-    /**
-     * @return CreateChildRolloutJob
-     */
-    public function getCreateChildRolloutJob()
-    {
-    }
-    /**
-     * Output only. A deploy Job.
-     *
-     * @param DeployJob $deployJob
-     */
-    public function setDeployJob(DeployJob $deployJob)
-    {
-    }
-    /**
-     * @return DeployJob
-     */
-    public function getDeployJob()
-    {
-    }
-    /**
-     * Output only. The ID of the Job.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Output only. The name of the `JobRun` responsible for the most recent
-     * invocation of this Job.
-     *
-     * @param string $jobRun
-     */
-    public function setJobRun($jobRun)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJobRun()
-    {
-    }
-    /**
-     * Output only. A postdeploy Job.
-     *
-     * @param PostdeployJob $postdeployJob
-     */
-    public function setPostdeployJob(PostdeployJob $postdeployJob)
-    {
-    }
-    /**
-     * @return PostdeployJob
-     */
-    public function getPostdeployJob()
-    {
-    }
-    /**
-     * Output only. A predeploy Job.
-     *
-     * @param PredeployJob $predeployJob
-     */
-    public function setPredeployJob(PredeployJob $predeployJob)
-    {
-    }
-    /**
-     * @return PredeployJob
-     */
-    public function getPredeployJob()
-    {
-    }
-    /**
-     * Output only. Additional information on why the Job was skipped, if
-     * available.
-     *
-     * @param string $skipMessage
-     */
-    public function setSkipMessage($skipMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSkipMessage()
-    {
-    }
-    /**
-     * Output only. The current state of the Job.
-     *
-     * Accepted values: STATE_UNSPECIFIED, PENDING, DISABLED, IN_PROGRESS,
-     * SUCCEEDED, FAILED, ABORTED, SKIPPED, IGNORED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. A verify Job.
-     *
-     * @param VerifyJob $verifyJob
-     */
-    public function setVerifyJob(VerifyJob $verifyJob)
-    {
-    }
-    /**
-     * @return VerifyJob
-     */
-    public function getVerifyJob()
+    class Google_Service_CloudDeploy_Job extends \Google\Service\CloudDeploy\Job
     {
     }
 }

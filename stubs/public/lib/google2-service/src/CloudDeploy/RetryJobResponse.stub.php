@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class RetryJobResponse extends \Google\Model
-{
+namespace Google\Service\CloudDeploy {
+    class RetryJobResponse extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudDeploy\RetryJobResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudDeploy_RetryJobResponse extends \Google\Service\CloudDeploy\RetryJobResponse
+    {
+    }
 }

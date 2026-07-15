@@ -21,124 +21,133 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSImageModelArtifactSpec extends \Google\Collection
-{
-    protected $collection_key = 'exportArtifact';
-    protected $checkpointArtifactType = XPSModelArtifactItem::class;
-    protected $checkpointArtifactDataType = '';
-    protected $exportArtifactType = XPSModelArtifactItem::class;
-    protected $exportArtifactDataType = 'array';
-    /**
-     * Google Cloud Storage URI of decoded labels file for model export
-     * 'dict.txt'.
-     *
-     * @var string
-     */
-    public $labelGcsUri;
-    protected $servingArtifactType = XPSModelArtifactItem::class;
-    protected $servingArtifactDataType = '';
-    /**
-     * Google Cloud Storage URI prefix of Tensorflow JavaScript binary files
-     * 'groupX-shardXofX.bin'. Deprecated.
-     *
-     * @var string
-     */
-    public $tfJsBinaryGcsPrefix;
-    /**
-     * Google Cloud Storage URI of Tensorflow Lite metadata
-     * 'tflite_metadata.json'.
-     *
-     * @var string
-     */
-    public $tfLiteMetadataGcsUri;
-    /**
-     * The Tensorflow checkpoint files. e.g. Used for resumable training.
-     *
-     * @param XPSModelArtifactItem $checkpointArtifact
-     */
-    public function setCheckpointArtifact(XPSModelArtifactItem $checkpointArtifact)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSImageModelArtifactSpec extends \Google\Collection
     {
+        protected $collection_key = 'exportArtifact';
+        protected $checkpointArtifactType = XPSModelArtifactItem::class;
+        protected $checkpointArtifactDataType = '';
+        protected $exportArtifactType = XPSModelArtifactItem::class;
+        protected $exportArtifactDataType = 'array';
+        /**
+         * Google Cloud Storage URI of decoded labels file for model export
+         * 'dict.txt'.
+         *
+         * @var string
+         */
+        public $labelGcsUri;
+        protected $servingArtifactType = XPSModelArtifactItem::class;
+        protected $servingArtifactDataType = '';
+        /**
+         * Google Cloud Storage URI prefix of Tensorflow JavaScript binary files
+         * 'groupX-shardXofX.bin'. Deprecated.
+         *
+         * @var string
+         */
+        public $tfJsBinaryGcsPrefix;
+        /**
+         * Google Cloud Storage URI of Tensorflow Lite metadata
+         * 'tflite_metadata.json'.
+         *
+         * @var string
+         */
+        public $tfLiteMetadataGcsUri;
+        /**
+         * The Tensorflow checkpoint files. e.g. Used for resumable training.
+         *
+         * @param XPSModelArtifactItem $checkpointArtifact
+         */
+        public function setCheckpointArtifact(XPSModelArtifactItem $checkpointArtifact)
+        {
+        }
+        /**
+         * @return XPSModelArtifactItem
+         */
+        public function getCheckpointArtifact()
+        {
+        }
+        /**
+         * The model binary files in different formats for model export.
+         *
+         * @param XPSModelArtifactItem[] $exportArtifact
+         */
+        public function setExportArtifact($exportArtifact)
+        {
+        }
+        /**
+         * @return XPSModelArtifactItem[]
+         */
+        public function getExportArtifact()
+        {
+        }
+        /**
+         * Google Cloud Storage URI of decoded labels file for model export
+         * 'dict.txt'.
+         *
+         * @param string $labelGcsUri
+         */
+        public function setLabelGcsUri($labelGcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabelGcsUri()
+        {
+        }
+        /**
+         * The default model binary file used for serving (e.g. online predict, batch
+         * predict) via public Cloud AI Platform API.
+         *
+         * @param XPSModelArtifactItem $servingArtifact
+         */
+        public function setServingArtifact(XPSModelArtifactItem $servingArtifact)
+        {
+        }
+        /**
+         * @return XPSModelArtifactItem
+         */
+        public function getServingArtifact()
+        {
+        }
+        /**
+         * Google Cloud Storage URI prefix of Tensorflow JavaScript binary files
+         * 'groupX-shardXofX.bin'. Deprecated.
+         *
+         * @param string $tfJsBinaryGcsPrefix
+         */
+        public function setTfJsBinaryGcsPrefix($tfJsBinaryGcsPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTfJsBinaryGcsPrefix()
+        {
+        }
+        /**
+         * Google Cloud Storage URI of Tensorflow Lite metadata
+         * 'tflite_metadata.json'.
+         *
+         * @param string $tfLiteMetadataGcsUri
+         */
+        public function setTfLiteMetadataGcsUri($tfLiteMetadataGcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTfLiteMetadataGcsUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSModelArtifactItem
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSImageModelArtifactSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCheckpointArtifact()
-    {
-    }
-    /**
-     * The model binary files in different formats for model export.
-     *
-     * @param XPSModelArtifactItem[] $exportArtifact
-     */
-    public function setExportArtifact($exportArtifact)
-    {
-    }
-    /**
-     * @return XPSModelArtifactItem[]
-     */
-    public function getExportArtifact()
-    {
-    }
-    /**
-     * Google Cloud Storage URI of decoded labels file for model export
-     * 'dict.txt'.
-     *
-     * @param string $labelGcsUri
-     */
-    public function setLabelGcsUri($labelGcsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabelGcsUri()
-    {
-    }
-    /**
-     * The default model binary file used for serving (e.g. online predict, batch
-     * predict) via public Cloud AI Platform API.
-     *
-     * @param XPSModelArtifactItem $servingArtifact
-     */
-    public function setServingArtifact(XPSModelArtifactItem $servingArtifact)
-    {
-    }
-    /**
-     * @return XPSModelArtifactItem
-     */
-    public function getServingArtifact()
-    {
-    }
-    /**
-     * Google Cloud Storage URI prefix of Tensorflow JavaScript binary files
-     * 'groupX-shardXofX.bin'. Deprecated.
-     *
-     * @param string $tfJsBinaryGcsPrefix
-     */
-    public function setTfJsBinaryGcsPrefix($tfJsBinaryGcsPrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTfJsBinaryGcsPrefix()
-    {
-    }
-    /**
-     * Google Cloud Storage URI of Tensorflow Lite metadata
-     * 'tflite_metadata.json'.
-     *
-     * @param string $tfLiteMetadataGcsUri
-     */
-    public function setTfLiteMetadataGcsUri($tfLiteMetadataGcsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTfLiteMetadataGcsUri()
+    class Google_Service_CloudNaturalLanguage_XPSImageModelArtifactSpec extends \Google\Service\CloudNaturalLanguage\XPSImageModelArtifactSpec
     {
     }
 }

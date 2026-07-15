@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class AppSummary extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $numCompletedJobs;
-    /**
-     * @var int
-     */
-    public $numCompletedStages;
-    /**
-     * @param int $numCompletedJobs
-     */
-    public function setNumCompletedJobs($numCompletedJobs)
+namespace Google\Service\Dataproc {
+    class AppSummary extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $numCompletedJobs;
+        /**
+         * @var int
+         */
+        public $numCompletedStages;
+        /**
+         * @param int $numCompletedJobs
+         */
+        public function setNumCompletedJobs($numCompletedJobs)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumCompletedJobs()
+        {
+        }
+        /**
+         * @param int $numCompletedStages
+         */
+        public function setNumCompletedStages($numCompletedStages)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumCompletedStages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dataproc\AppSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNumCompletedJobs()
-    {
-    }
-    /**
-     * @param int $numCompletedStages
-     */
-    public function setNumCompletedStages($numCompletedStages)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumCompletedStages()
+    class Google_Service_Dataproc_AppSummary extends \Google\Service\Dataproc\AppSummary
     {
     }
 }

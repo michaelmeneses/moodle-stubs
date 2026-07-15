@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner;
-
-class UpdateDeviceMetadataRequest extends \Google\Model
-{
-    protected $deviceMetadataType = DeviceMetadata::class;
-    protected $deviceMetadataDataType = '';
-    /**
-     * Required. The metadata to attach to the device.
-     *
-     * @param DeviceMetadata $deviceMetadata
-     */
-    public function setDeviceMetadata(DeviceMetadata $deviceMetadata)
+namespace Google\Service\AndroidProvisioningPartner {
+    class UpdateDeviceMetadataRequest extends \Google\Model
     {
+        protected $deviceMetadataType = DeviceMetadata::class;
+        protected $deviceMetadataDataType = '';
+        /**
+         * Required. The metadata to attach to the device.
+         *
+         * @param DeviceMetadata $deviceMetadata
+         */
+        public function setDeviceMetadata(DeviceMetadata $deviceMetadata)
+        {
+        }
+        /**
+         * @return DeviceMetadata
+         */
+        public function getDeviceMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeviceMetadata
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\UpdateDeviceMetadataRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceMetadata()
+    class Google_Service_AndroidProvisioningPartner_UpdateDeviceMetadataRequest extends \Google\Service\AndroidProvisioningPartner\UpdateDeviceMetadataRequest
     {
     }
 }

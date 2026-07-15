@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1StructFieldValue extends \Google\Model
-{
-    /**
-     * Name of the field in the struct feature.
-     *
-     * @var string
-     */
-    public $name;
-    protected $valueType = GoogleCloudAiplatformV1FeatureValue::class;
-    protected $valueDataType = '';
-    /**
-     * Name of the field in the struct feature.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1StructFieldValue extends \Google\Model
     {
+        /**
+         * Name of the field in the struct feature.
+         *
+         * @var string
+         */
+        public $name;
+        protected $valueType = GoogleCloudAiplatformV1FeatureValue::class;
+        protected $valueDataType = '';
+        /**
+         * Name of the field in the struct feature.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The value for this field.
+         *
+         * @param GoogleCloudAiplatformV1FeatureValue $value
+         */
+        public function setValue(GoogleCloudAiplatformV1FeatureValue $value)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeatureValue
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1StructFieldValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The value for this field.
-     *
-     * @param GoogleCloudAiplatformV1FeatureValue $value
-     */
-    public function setValue(GoogleCloudAiplatformV1FeatureValue $value)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FeatureValue
-     */
-    public function getValue()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1StructFieldValue extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1StructFieldValue
     {
     }
 }

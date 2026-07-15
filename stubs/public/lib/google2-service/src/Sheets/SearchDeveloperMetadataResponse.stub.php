@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class SearchDeveloperMetadataResponse extends \Google\Collection
-{
-    protected $collection_key = 'matchedDeveloperMetadata';
-    protected $matchedDeveloperMetadataType = MatchedDeveloperMetadata::class;
-    protected $matchedDeveloperMetadataDataType = 'array';
-    /**
-     * The metadata matching the criteria of the search request.
-     *
-     * @param MatchedDeveloperMetadata[] $matchedDeveloperMetadata
-     */
-    public function setMatchedDeveloperMetadata($matchedDeveloperMetadata)
+namespace Google\Service\Sheets {
+    class SearchDeveloperMetadataResponse extends \Google\Collection
     {
+        protected $collection_key = 'matchedDeveloperMetadata';
+        protected $matchedDeveloperMetadataType = MatchedDeveloperMetadata::class;
+        protected $matchedDeveloperMetadataDataType = 'array';
+        /**
+         * The metadata matching the criteria of the search request.
+         *
+         * @param MatchedDeveloperMetadata[] $matchedDeveloperMetadata
+         */
+        public function setMatchedDeveloperMetadata($matchedDeveloperMetadata)
+        {
+        }
+        /**
+         * @return MatchedDeveloperMetadata[]
+         */
+        public function getMatchedDeveloperMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MatchedDeveloperMetadata[]
+     * Runtime class alias of \Google\Service\Sheets\SearchDeveloperMetadataResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMatchedDeveloperMetadata()
+    class Google_Service_Sheets_SearchDeveloperMetadataResponse extends \Google\Service\Sheets\SearchDeveloperMetadataResponse
     {
     }
 }

@@ -21,48 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for DriveLabels (v2).
- *
- * <p>
- * An API for managing Drive Labels</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/workspace/drive/labels" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class DriveLabels extends \Google\Service
-{
-    /** See, edit, create, and delete all Google Drive labels in your organization, and see your organization's label-related admin policies. */
-    const DRIVE_ADMIN_LABELS = "https://www.googleapis.com/auth/drive.admin.labels";
-    /** See all Google Drive labels and label-related admin policies in your organization. */
-    const DRIVE_ADMIN_LABELS_READONLY = "https://www.googleapis.com/auth/drive.admin.labels.readonly";
-    /** See, edit, create, and delete your Google Drive labels. */
-    const DRIVE_LABELS = "https://www.googleapis.com/auth/drive.labels";
-    /** See your Google Drive labels. */
-    const DRIVE_LABELS_READONLY = "https://www.googleapis.com/auth/drive.labels.readonly";
-    public $labels;
-    public $labels_locks;
-    public $labels_permissions;
-    public $labels_revisions;
-    public $labels_revisions_locks;
-    public $labels_revisions_permissions;
-    public $limits;
-    public $users;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the DriveLabels service.
+     * Service definition for DriveLabels (v2).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * An API for managing Drive Labels</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/workspace/drive/labels" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class DriveLabels extends \Google\Service
+    {
+        /** See, edit, create, and delete all Google Drive labels in your organization, and see your organization's label-related admin policies. */
+        const DRIVE_ADMIN_LABELS = "https://www.googleapis.com/auth/drive.admin.labels";
+        /** See all Google Drive labels and label-related admin policies in your organization. */
+        const DRIVE_ADMIN_LABELS_READONLY = "https://www.googleapis.com/auth/drive.admin.labels.readonly";
+        /** See, edit, create, and delete your Google Drive labels. */
+        const DRIVE_LABELS = "https://www.googleapis.com/auth/drive.labels";
+        /** See your Google Drive labels. */
+        const DRIVE_LABELS_READONLY = "https://www.googleapis.com/auth/drive.labels.readonly";
+        public $labels;
+        public $labels_locks;
+        public $labels_permissions;
+        public $labels_revisions;
+        public $labels_revisions_locks;
+        public $labels_revisions_permissions;
+        public $limits;
+        public $users;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the DriveLabels service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DriveLabels registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DriveLabels extends \Google\Service\DriveLabels
     {
     }
 }

@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTubeReporting;
-
-class GdataContentTypeInfo extends \Google\Model
-{
-    /**
-     * gdata
-     *
-     * @var string
-     */
-    public $bestGuess;
-    /**
-     * gdata
-     *
-     * @var string
-     */
-    public $fromBytes;
-    /**
-     * gdata
-     *
-     * @var string
-     */
-    public $fromFileName;
-    /**
-     * gdata
-     *
-     * @var string
-     */
-    public $fromHeader;
-    /**
-     * gdata
-     *
-     * @var string
-     */
-    public $fromUrlPath;
-    /**
-     * gdata
-     *
-     * @param string $bestGuess
-     */
-    public function setBestGuess($bestGuess)
+namespace Google\Service\YouTubeReporting {
+    class GdataContentTypeInfo extends \Google\Model
     {
+        /**
+         * gdata
+         *
+         * @var string
+         */
+        public $bestGuess;
+        /**
+         * gdata
+         *
+         * @var string
+         */
+        public $fromBytes;
+        /**
+         * gdata
+         *
+         * @var string
+         */
+        public $fromFileName;
+        /**
+         * gdata
+         *
+         * @var string
+         */
+        public $fromHeader;
+        /**
+         * gdata
+         *
+         * @var string
+         */
+        public $fromUrlPath;
+        /**
+         * gdata
+         *
+         * @param string $bestGuess
+         */
+        public function setBestGuess($bestGuess)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBestGuess()
+        {
+        }
+        /**
+         * gdata
+         *
+         * @param string $fromBytes
+         */
+        public function setFromBytes($fromBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFromBytes()
+        {
+        }
+        /**
+         * gdata
+         *
+         * @param string $fromFileName
+         */
+        public function setFromFileName($fromFileName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFromFileName()
+        {
+        }
+        /**
+         * gdata
+         *
+         * @param string $fromHeader
+         */
+        public function setFromHeader($fromHeader)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFromHeader()
+        {
+        }
+        /**
+         * gdata
+         *
+         * @param string $fromUrlPath
+         */
+        public function setFromUrlPath($fromUrlPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFromUrlPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTubeReporting\GdataContentTypeInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBestGuess()
-    {
-    }
-    /**
-     * gdata
-     *
-     * @param string $fromBytes
-     */
-    public function setFromBytes($fromBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFromBytes()
-    {
-    }
-    /**
-     * gdata
-     *
-     * @param string $fromFileName
-     */
-    public function setFromFileName($fromFileName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFromFileName()
-    {
-    }
-    /**
-     * gdata
-     *
-     * @param string $fromHeader
-     */
-    public function setFromHeader($fromHeader)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFromHeader()
-    {
-    }
-    /**
-     * gdata
-     *
-     * @param string $fromUrlPath
-     */
-    public function setFromUrlPath($fromUrlPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFromUrlPath()
+    class Google_Service_YouTubeReporting_GdataContentTypeInfo extends \Google\Service\YouTubeReporting\GdataContentTypeInfo
     {
     }
 }

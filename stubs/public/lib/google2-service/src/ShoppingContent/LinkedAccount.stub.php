@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class LinkedAccount extends \Google\Collection
-{
-    protected $collection_key = 'services';
-    /**
-     * The ID of the linked account.
-     *
-     * @var string
-     */
-    public $linkedAccountId;
-    protected $servicesType = LinkService::class;
-    protected $servicesDataType = 'array';
-    /**
-     * The ID of the linked account.
-     *
-     * @param string $linkedAccountId
-     */
-    public function setLinkedAccountId($linkedAccountId)
+namespace Google\Service\ShoppingContent {
+    class LinkedAccount extends \Google\Collection
     {
+        protected $collection_key = 'services';
+        /**
+         * The ID of the linked account.
+         *
+         * @var string
+         */
+        public $linkedAccountId;
+        protected $servicesType = LinkService::class;
+        protected $servicesDataType = 'array';
+        /**
+         * The ID of the linked account.
+         *
+         * @param string $linkedAccountId
+         */
+        public function setLinkedAccountId($linkedAccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLinkedAccountId()
+        {
+        }
+        /**
+         * List of provided services.
+         *
+         * @param LinkService[] $services
+         */
+        public function setServices($services)
+        {
+        }
+        /**
+         * @return LinkService[]
+         */
+        public function getServices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\LinkedAccount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLinkedAccountId()
-    {
-    }
-    /**
-     * List of provided services.
-     *
-     * @param LinkService[] $services
-     */
-    public function setServices($services)
-    {
-    }
-    /**
-     * @return LinkService[]
-     */
-    public function getServices()
+    class Google_Service_ShoppingContent_LinkedAccount extends \Google\Service\ShoppingContent\LinkedAccount
     {
     }
 }

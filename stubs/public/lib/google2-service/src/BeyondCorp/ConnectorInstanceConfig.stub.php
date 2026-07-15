@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class ConnectorInstanceConfig extends \Google\Model
-{
-    protected $imageConfigType = ImageConfig::class;
-    protected $imageConfigDataType = '';
-    /**
-     * @var array[]
-     */
-    public $instanceConfig;
-    protected $notificationConfigType = NotificationConfig::class;
-    protected $notificationConfigDataType = '';
-    /**
-     * @var string
-     */
-    public $sequenceNumber;
-    /**
-     * @param ImageConfig
-     */
-    public function setImageConfig(ImageConfig $imageConfig)
+namespace Google\Service\BeyondCorp {
+    class ConnectorInstanceConfig extends \Google\Model
     {
+        protected $imageConfigType = ImageConfig::class;
+        protected $imageConfigDataType = '';
+        /**
+         * @var array[]
+         */
+        public $instanceConfig;
+        protected $notificationConfigType = NotificationConfig::class;
+        protected $notificationConfigDataType = '';
+        /**
+         * @var string
+         */
+        public $sequenceNumber;
+        /**
+         * @param ImageConfig
+         */
+        public function setImageConfig(ImageConfig $imageConfig)
+        {
+        }
+        /**
+         * @return ImageConfig
+         */
+        public function getImageConfig()
+        {
+        }
+        /**
+         * @param array[]
+         */
+        public function setInstanceConfig($instanceConfig)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getInstanceConfig()
+        {
+        }
+        /**
+         * @param NotificationConfig
+         */
+        public function setNotificationConfig(NotificationConfig $notificationConfig)
+        {
+        }
+        /**
+         * @return NotificationConfig
+         */
+        public function getNotificationConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSequenceNumber($sequenceNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSequenceNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ImageConfig
+     * Runtime class alias of \Google\Service\BeyondCorp\ConnectorInstanceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImageConfig()
-    {
-    }
-    /**
-     * @param array[]
-     */
-    public function setInstanceConfig($instanceConfig)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getInstanceConfig()
-    {
-    }
-    /**
-     * @param NotificationConfig
-     */
-    public function setNotificationConfig(NotificationConfig $notificationConfig)
-    {
-    }
-    /**
-     * @return NotificationConfig
-     */
-    public function getNotificationConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSequenceNumber($sequenceNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSequenceNumber()
+    class Google_Service_BeyondCorp_ConnectorInstanceConfig extends \Google\Service\BeyondCorp\ConnectorInstanceConfig
     {
     }
 }

@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ExportModelOperationMetadata extends \Google\Model
-{
-    protected $genericMetadataType = GoogleCloudAiplatformV1GenericOperationMetadata::class;
-    protected $genericMetadataDataType = '';
-    protected $outputInfoType = GoogleCloudAiplatformV1ExportModelOperationMetadataOutputInfo::class;
-    protected $outputInfoDataType = '';
-    /**
-     * The common part of the operation metadata.
-     *
-     * @param GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata
-     */
-    public function setGenericMetadata(GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ExportModelOperationMetadata extends \Google\Model
     {
+        protected $genericMetadataType = GoogleCloudAiplatformV1GenericOperationMetadata::class;
+        protected $genericMetadataDataType = '';
+        protected $outputInfoType = GoogleCloudAiplatformV1ExportModelOperationMetadataOutputInfo::class;
+        protected $outputInfoDataType = '';
+        /**
+         * The common part of the operation metadata.
+         *
+         * @param GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata
+         */
+        public function setGenericMetadata(GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GenericOperationMetadata
+         */
+        public function getGenericMetadata()
+        {
+        }
+        /**
+         * Output only. Information further describing the output of this Model
+         * export.
+         *
+         * @param GoogleCloudAiplatformV1ExportModelOperationMetadataOutputInfo $outputInfo
+         */
+        public function setOutputInfo(GoogleCloudAiplatformV1ExportModelOperationMetadataOutputInfo $outputInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ExportModelOperationMetadataOutputInfo
+         */
+        public function getOutputInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1GenericOperationMetadata
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExportModelOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGenericMetadata()
-    {
-    }
-    /**
-     * Output only. Information further describing the output of this Model
-     * export.
-     *
-     * @param GoogleCloudAiplatformV1ExportModelOperationMetadataOutputInfo $outputInfo
-     */
-    public function setOutputInfo(GoogleCloudAiplatformV1ExportModelOperationMetadataOutputInfo $outputInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ExportModelOperationMetadataOutputInfo
-     */
-    public function getOutputInfo()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ExportModelOperationMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExportModelOperationMetadata
     {
     }
 }

@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class TrafficPercentStrategy extends \Google\Model
-{
-    /**
-     * Maps service configuration IDs to their corresponding traffic percentage.
-     * Key is the service configuration ID, Value is the traffic percentage which
-     * must be greater than 0.0 and the sum must equal to 100.0.
-     *
-     * @var []
-     */
-    public $percentages;
-    public function setPercentages($percentages)
+namespace Google\Service\ServiceManagement {
+    class TrafficPercentStrategy extends \Google\Model
     {
+        /**
+         * Maps service configuration IDs to their corresponding traffic percentage.
+         * Key is the service configuration ID, Value is the traffic percentage which
+         * must be greater than 0.0 and the sum must equal to 100.0.
+         *
+         * @var []
+         */
+        public $percentages;
+        public function setPercentages($percentages)
+        {
+        }
+        public function getPercentages()
+        {
+        }
     }
-    public function getPercentages()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ServiceManagement\TrafficPercentStrategy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ServiceManagement_TrafficPercentStrategy extends \Google\Service\ServiceManagement\TrafficPercentStrategy
     {
     }
 }

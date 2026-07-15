@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class DagProcessorResource extends \Google\Model
-{
-    /**
-     * Optional. The number of DAG processors. If not provided or set to 0, a
-     * single DAG processor instance will be created.
-     *
-     * @var int
-     */
-    public $count;
-    /**
-     * Optional. CPU request and limit for a single Airflow DAG processor replica.
-     *
-     * @var float
-     */
-    public $cpu;
-    /**
-     * Optional. Memory (GB) request and limit for a single Airflow DAG processor
-     * replica.
-     *
-     * @var float
-     */
-    public $memoryGb;
-    /**
-     * Optional. Storage (GB) request and limit for a single Airflow DAG processor
-     * replica.
-     *
-     * @var float
-     */
-    public $storageGb;
-    /**
-     * Optional. The number of DAG processors. If not provided or set to 0, a
-     * single DAG processor instance will be created.
-     *
-     * @param int $count
-     */
-    public function setCount($count)
+namespace Google\Service\CloudComposer {
+    class DagProcessorResource extends \Google\Model
     {
+        /**
+         * Optional. The number of DAG processors. If not provided or set to 0, a
+         * single DAG processor instance will be created.
+         *
+         * @var int
+         */
+        public $count;
+        /**
+         * Optional. CPU request and limit for a single Airflow DAG processor replica.
+         *
+         * @var float
+         */
+        public $cpu;
+        /**
+         * Optional. Memory (GB) request and limit for a single Airflow DAG processor
+         * replica.
+         *
+         * @var float
+         */
+        public $memoryGb;
+        /**
+         * Optional. Storage (GB) request and limit for a single Airflow DAG processor
+         * replica.
+         *
+         * @var float
+         */
+        public $storageGb;
+        /**
+         * Optional. The number of DAG processors. If not provided or set to 0, a
+         * single DAG processor instance will be created.
+         *
+         * @param int $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * Optional. CPU request and limit for a single Airflow DAG processor replica.
+         *
+         * @param float $cpu
+         */
+        public function setCpu($cpu)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getCpu()
+        {
+        }
+        /**
+         * Optional. Memory (GB) request and limit for a single Airflow DAG processor
+         * replica.
+         *
+         * @param float $memoryGb
+         */
+        public function setMemoryGb($memoryGb)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMemoryGb()
+        {
+        }
+        /**
+         * Optional. Storage (GB) request and limit for a single Airflow DAG processor
+         * replica.
+         *
+         * @param float $storageGb
+         */
+        public function setStorageGb($storageGb)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getStorageGb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudComposer\DagProcessorResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * Optional. CPU request and limit for a single Airflow DAG processor replica.
-     *
-     * @param float $cpu
-     */
-    public function setCpu($cpu)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getCpu()
-    {
-    }
-    /**
-     * Optional. Memory (GB) request and limit for a single Airflow DAG processor
-     * replica.
-     *
-     * @param float $memoryGb
-     */
-    public function setMemoryGb($memoryGb)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getMemoryGb()
-    {
-    }
-    /**
-     * Optional. Storage (GB) request and limit for a single Airflow DAG processor
-     * replica.
-     *
-     * @param float $storageGb
-     */
-    public function setStorageGb($storageGb)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getStorageGb()
+    class Google_Service_CloudComposer_DagProcessorResource extends \Google\Service\CloudComposer\DagProcessorResource
     {
     }
 }

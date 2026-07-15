@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Texttospeech;
-
-class VoiceCloneParams extends \Google\Model
-{
-    /**
-     * Required. Created by GenerateVoiceCloningKey.
-     *
-     * @var string
-     */
-    public $voiceCloningKey;
-    /**
-     * Required. Created by GenerateVoiceCloningKey.
-     *
-     * @param string $voiceCloningKey
-     */
-    public function setVoiceCloningKey($voiceCloningKey)
+namespace Google\Service\Texttospeech {
+    class VoiceCloneParams extends \Google\Model
     {
+        /**
+         * Required. Created by GenerateVoiceCloningKey.
+         *
+         * @var string
+         */
+        public $voiceCloningKey;
+        /**
+         * Required. Created by GenerateVoiceCloningKey.
+         *
+         * @param string $voiceCloningKey
+         */
+        public function setVoiceCloningKey($voiceCloningKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVoiceCloningKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Texttospeech\VoiceCloneParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVoiceCloningKey()
+    class Google_Service_Texttospeech_VoiceCloneParams extends \Google\Service\Texttospeech\VoiceCloneParams
     {
     }
 }

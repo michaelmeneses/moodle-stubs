@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AlgorithmRules extends \Google\Model
-{
-    /**
-     * Attribution model for the algorithm. This field is only supported for
-     * allowlisted partners.
-     *
-     * @var string
-     */
-    public $attributionModelId;
-    protected $impressionSignalRulesetType = AlgorithmRulesRuleset::class;
-    protected $impressionSignalRulesetDataType = '';
-    protected $postImpressionSignalRulesetType = AlgorithmRulesRuleset::class;
-    protected $postImpressionSignalRulesetDataType = '';
-    /**
-     * Attribution model for the algorithm. This field is only supported for
-     * allowlisted partners.
-     *
-     * @param string $attributionModelId
-     */
-    public function setAttributionModelId($attributionModelId)
+namespace Google\Service\DisplayVideo {
+    class AlgorithmRules extends \Google\Model
     {
+        /**
+         * Attribution model for the algorithm. This field is only supported for
+         * allowlisted partners.
+         *
+         * @var string
+         */
+        public $attributionModelId;
+        protected $impressionSignalRulesetType = AlgorithmRulesRuleset::class;
+        protected $impressionSignalRulesetDataType = '';
+        protected $postImpressionSignalRulesetType = AlgorithmRulesRuleset::class;
+        protected $postImpressionSignalRulesetDataType = '';
+        /**
+         * Attribution model for the algorithm. This field is only supported for
+         * allowlisted partners.
+         *
+         * @param string $attributionModelId
+         */
+        public function setAttributionModelId($attributionModelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttributionModelId()
+        {
+        }
+        /**
+         * Rules for the impression signals.
+         *
+         * @param AlgorithmRulesRuleset $impressionSignalRuleset
+         */
+        public function setImpressionSignalRuleset(AlgorithmRulesRuleset $impressionSignalRuleset)
+        {
+        }
+        /**
+         * @return AlgorithmRulesRuleset
+         */
+        public function getImpressionSignalRuleset()
+        {
+        }
+        /**
+         * Rules for the post-impression signals. This field is only supported for
+         * allowlisted partners.
+         *
+         * @param AlgorithmRulesRuleset $postImpressionSignalRuleset
+         */
+        public function setPostImpressionSignalRuleset(AlgorithmRulesRuleset $postImpressionSignalRuleset)
+        {
+        }
+        /**
+         * @return AlgorithmRulesRuleset
+         */
+        public function getPostImpressionSignalRuleset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\AlgorithmRules registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributionModelId()
-    {
-    }
-    /**
-     * Rules for the impression signals.
-     *
-     * @param AlgorithmRulesRuleset $impressionSignalRuleset
-     */
-    public function setImpressionSignalRuleset(AlgorithmRulesRuleset $impressionSignalRuleset)
-    {
-    }
-    /**
-     * @return AlgorithmRulesRuleset
-     */
-    public function getImpressionSignalRuleset()
-    {
-    }
-    /**
-     * Rules for the post-impression signals. This field is only supported for
-     * allowlisted partners.
-     *
-     * @param AlgorithmRulesRuleset $postImpressionSignalRuleset
-     */
-    public function setPostImpressionSignalRuleset(AlgorithmRulesRuleset $postImpressionSignalRuleset)
-    {
-    }
-    /**
-     * @return AlgorithmRulesRuleset
-     */
-    public function getPostImpressionSignalRuleset()
+    class Google_Service_DisplayVideo_AlgorithmRules extends \Google\Service\DisplayVideo\AlgorithmRules
     {
     }
 }

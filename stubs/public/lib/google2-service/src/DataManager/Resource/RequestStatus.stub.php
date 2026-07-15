@@ -21,29 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager\Resource;
-
-/**
- * The "requestStatus" collection of methods.
- * Typical usage is:
- *  <code>
- *   $datamanagerService = new Google\Service\DataManager(...);
- *   $requestStatus = $datamanagerService->requestStatus;
- *  </code>
- */
-class RequestStatus extends \Google\Service\Resource
-{
+namespace Google\Service\DataManager\Resource {
+    use Google\Service\DataManager\RetrieveRequestStatusResponse;
     /**
-     * Gets the status of a request given request id. (requestStatus.retrieve)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string requestId Required. Required. The request ID of the Data
-     * Manager API request.
-     * @return RetrieveRequestStatusResponse
-     * @throws \Google\Service\Exception
+     * The "requestStatus" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $datamanagerService = new Google\Service\DataManager(...);
+     *   $requestStatus = $datamanagerService->requestStatus;
+     *  </code>
      */
-    public function retrieve($optParams = [])
+    class RequestStatus extends \Google\Service\Resource
+    {
+        /**
+         * Gets the status of a request given request id. (requestStatus.retrieve)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string requestId Required. Required. The request ID of the Data
+         * Manager API request.
+         * @return RetrieveRequestStatusResponse
+         * @throws \Google\Service\Exception
+         */
+        public function retrieve($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataManager\Resource\RequestStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataManager_Resource_RequestStatus extends \Google\Service\DataManager\Resource\RequestStatus
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class GitProxyConfig extends \Google\Model
-{
-    /**
-     * Optional. Setting this to true allows the git proxy to be used for
-     * performing git operations on the repositories linked in the connection.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Optional. Setting this to true allows the git proxy to be used for
-     * performing git operations on the repositories linked in the connection.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\DeveloperConnect {
+    class GitProxyConfig extends \Google\Model
     {
+        /**
+         * Optional. Setting this to true allows the git proxy to be used for
+         * performing git operations on the repositories linked in the connection.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Optional. Setting this to true allows the git proxy to be used for
+         * performing git operations on the repositories linked in the connection.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DeveloperConnect\GitProxyConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
+    class Google_Service_DeveloperConnect_GitProxyConfig extends \Google\Service\DeveloperConnect\GitProxyConfig
     {
     }
 }

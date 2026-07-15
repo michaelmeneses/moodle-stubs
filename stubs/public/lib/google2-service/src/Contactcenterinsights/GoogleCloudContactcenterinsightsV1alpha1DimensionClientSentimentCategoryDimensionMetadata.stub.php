@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1DimensionClientSentimentCategoryDimensionMetadata extends \Google\Model
-{
-    /**
-     * Optional. The client sentiment category.
-     *
-     * @var string
-     */
-    public $sentimentCategory;
-    /**
-     * Optional. The client sentiment category.
-     *
-     * @param string $sentimentCategory
-     */
-    public function setSentimentCategory($sentimentCategory)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1DimensionClientSentimentCategoryDimensionMetadata extends \Google\Model
     {
+        /**
+         * Optional. The client sentiment category.
+         *
+         * @var string
+         */
+        public $sentimentCategory;
+        /**
+         * Optional. The client sentiment category.
+         *
+         * @param string $sentimentCategory
+         */
+        public function setSentimentCategory($sentimentCategory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSentimentCategory()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1DimensionClientSentimentCategoryDimensionMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSentimentCategory()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1DimensionClientSentimentCategoryDimensionMetadata extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1DimensionClientSentimentCategoryDimensionMetadata
     {
     }
 }

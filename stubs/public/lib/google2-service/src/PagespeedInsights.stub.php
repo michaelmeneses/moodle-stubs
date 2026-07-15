@@ -21,38 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for PagespeedInsights (v5).
- *
- * <p>
- * The PageSpeed Insights API lets you analyze the performance of your website
- * with a simple API. It offers tailored suggestions for how you can optimize
- * your site, and lets you easily integrate PageSpeed Insights analysis into
- * your development tools and workflow.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/speed/docs/insights/v5/about" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class PagespeedInsights extends \Google\Service
-{
-    /** Associate you with your personal info on Google. */
-    const OPENID = "openid";
-    public $pagespeedapi;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the PagespeedInsights service.
+     * Service definition for PagespeedInsights (v5).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * The PageSpeed Insights API lets you analyze the performance of your website
+     * with a simple API. It offers tailored suggestions for how you can optimize
+     * your site, and lets you easily integrate PageSpeed Insights analysis into
+     * your development tools and workflow.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/speed/docs/insights/v5/about" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class PagespeedInsights extends \Google\Service
+    {
+        /** Associate you with your personal info on Google. */
+        const OPENID = "openid";
+        public $pagespeedapi;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the PagespeedInsights service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PagespeedInsights registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PagespeedInsights extends \Google\Service\PagespeedInsights
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class HostAppDataSourceMarkup extends \Google\Model
-{
-    protected $chatDataSourceType = ChatClientDataSourceMarkup::class;
-    protected $chatDataSourceDataType = '';
-    protected $workflowDataSourceType = WorkflowDataSourceMarkup::class;
-    protected $workflowDataSourceDataType = '';
-    /**
-     * A data source from Google Chat.
-     *
-     * @param ChatClientDataSourceMarkup $chatDataSource
-     */
-    public function setChatDataSource(ChatClientDataSourceMarkup $chatDataSource)
+namespace Google\Service\HangoutsChat {
+    class HostAppDataSourceMarkup extends \Google\Model
     {
+        protected $chatDataSourceType = ChatClientDataSourceMarkup::class;
+        protected $chatDataSourceDataType = '';
+        protected $workflowDataSourceType = WorkflowDataSourceMarkup::class;
+        protected $workflowDataSourceDataType = '';
+        /**
+         * A data source from Google Chat.
+         *
+         * @param ChatClientDataSourceMarkup $chatDataSource
+         */
+        public function setChatDataSource(ChatClientDataSourceMarkup $chatDataSource)
+        {
+        }
+        /**
+         * @return ChatClientDataSourceMarkup
+         */
+        public function getChatDataSource()
+        {
+        }
+        /**
+         * A data source from Google Workflow.
+         *
+         * @param WorkflowDataSourceMarkup $workflowDataSource
+         */
+        public function setWorkflowDataSource(WorkflowDataSourceMarkup $workflowDataSource)
+        {
+        }
+        /**
+         * @return WorkflowDataSourceMarkup
+         */
+        public function getWorkflowDataSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ChatClientDataSourceMarkup
+     * Runtime class alias of \Google\Service\HangoutsChat\HostAppDataSourceMarkup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChatDataSource()
-    {
-    }
-    /**
-     * A data source from Google Workflow.
-     *
-     * @param WorkflowDataSourceMarkup $workflowDataSource
-     */
-    public function setWorkflowDataSource(WorkflowDataSourceMarkup $workflowDataSource)
-    {
-    }
-    /**
-     * @return WorkflowDataSourceMarkup
-     */
-    public function getWorkflowDataSource()
+    class Google_Service_HangoutsChat_HostAppDataSourceMarkup extends \Google\Service\HangoutsChat\HostAppDataSourceMarkup
     {
     }
 }

@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessPlaceActions;
-
-class AvailableDay extends \Google\Model
-{
-    protected $fulfillmentDateType = Date::class;
-    protected $fulfillmentDateDataType = '';
-    /**
-     * @var string
-     */
-    public $lastOrderingTime;
-    /**
-     * @param Date
-     */
-    public function setFulfillmentDate(Date $fulfillmentDate)
+namespace Google\Service\MyBusinessPlaceActions {
+    class AvailableDay extends \Google\Model
     {
+        protected $fulfillmentDateType = Date::class;
+        protected $fulfillmentDateDataType = '';
+        /**
+         * @var string
+         */
+        public $lastOrderingTime;
+        /**
+         * @param Date
+         */
+        public function setFulfillmentDate(Date $fulfillmentDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getFulfillmentDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastOrderingTime($lastOrderingTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastOrderingTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Date
+     * Runtime class alias of \Google\Service\MyBusinessPlaceActions\AvailableDay registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFulfillmentDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastOrderingTime($lastOrderingTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastOrderingTime()
+    class Google_Service_MyBusinessPlaceActions_AvailableDay extends \Google\Service\MyBusinessPlaceActions\AvailableDay
     {
     }
 }

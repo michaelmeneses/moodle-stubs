@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class Category extends \Google\Model
-{
-    /**
-     * The identifier of the category.
-     *
-     * @var string
-     */
-    public $categoryId;
-    /**
-     * The localized name of the category.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The identifier of the category.
-     *
-     * @param string $categoryId
-     */
-    public function setCategoryId($categoryId)
+namespace Google\Service\OnDemandScanning {
+    class Category extends \Google\Model
     {
+        /**
+         * The identifier of the category.
+         *
+         * @var string
+         */
+        public $categoryId;
+        /**
+         * The localized name of the category.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The identifier of the category.
+         *
+         * @param string $categoryId
+         */
+        public function setCategoryId($categoryId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategoryId()
+        {
+        }
+        /**
+         * The localized name of the category.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OnDemandScanning\Category registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategoryId()
-    {
-    }
-    /**
-     * The localized name of the category.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_OnDemandScanning_Category extends \Google\Service\OnDemandScanning\Category
     {
     }
 }

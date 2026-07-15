@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Looker;
-
-class ExportEncryptionConfig extends \Google\Model
-{
-    /**
-     * Required. Name of the CMEK key in KMS.
-     *
-     * @var string
-     */
-    public $kmsKeyName;
-    /**
-     * Required. Name of the CMEK key in KMS.
-     *
-     * @param string $kmsKeyName
-     */
-    public function setKmsKeyName($kmsKeyName)
+namespace Google\Service\Looker {
+    class ExportEncryptionConfig extends \Google\Model
     {
+        /**
+         * Required. Name of the CMEK key in KMS.
+         *
+         * @var string
+         */
+        public $kmsKeyName;
+        /**
+         * Required. Name of the CMEK key in KMS.
+         *
+         * @param string $kmsKeyName
+         */
+        public function setKmsKeyName($kmsKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Looker\ExportEncryptionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKmsKeyName()
+    class Google_Service_Looker_ExportEncryptionConfig extends \Google\Service\Looker\ExportEncryptionConfig
     {
     }
 }

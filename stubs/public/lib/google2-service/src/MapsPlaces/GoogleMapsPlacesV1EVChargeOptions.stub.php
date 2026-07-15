@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1EVChargeOptions extends \Google\Collection
-{
-    protected $collection_key = 'connectorAggregation';
-    protected $connectorAggregationType = GoogleMapsPlacesV1EVChargeOptionsConnectorAggregation::class;
-    protected $connectorAggregationDataType = 'array';
-    /**
-     * Number of connectors at this station. However, because some ports can have
-     * multiple connectors but only be able to charge one car at a time (e.g.) the
-     * number of connectors may be greater than the total number of cars which can
-     * charge simultaneously.
-     *
-     * @var int
-     */
-    public $connectorCount;
-    /**
-     * A list of EV charging connector aggregations that contain connectors of the
-     * same type and same charge rate.
-     *
-     * @param GoogleMapsPlacesV1EVChargeOptionsConnectorAggregation[] $connectorAggregation
-     */
-    public function setConnectorAggregation($connectorAggregation)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1EVChargeOptions extends \Google\Collection
     {
+        protected $collection_key = 'connectorAggregation';
+        protected $connectorAggregationType = GoogleMapsPlacesV1EVChargeOptionsConnectorAggregation::class;
+        protected $connectorAggregationDataType = 'array';
+        /**
+         * Number of connectors at this station. However, because some ports can have
+         * multiple connectors but only be able to charge one car at a time (e.g.) the
+         * number of connectors may be greater than the total number of cars which can
+         * charge simultaneously.
+         *
+         * @var int
+         */
+        public $connectorCount;
+        /**
+         * A list of EV charging connector aggregations that contain connectors of the
+         * same type and same charge rate.
+         *
+         * @param GoogleMapsPlacesV1EVChargeOptionsConnectorAggregation[] $connectorAggregation
+         */
+        public function setConnectorAggregation($connectorAggregation)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1EVChargeOptionsConnectorAggregation[]
+         */
+        public function getConnectorAggregation()
+        {
+        }
+        /**
+         * Number of connectors at this station. However, because some ports can have
+         * multiple connectors but only be able to charge one car at a time (e.g.) the
+         * number of connectors may be greater than the total number of cars which can
+         * charge simultaneously.
+         *
+         * @param int $connectorCount
+         */
+        public function setConnectorCount($connectorCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getConnectorCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleMapsPlacesV1EVChargeOptionsConnectorAggregation[]
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1EVChargeOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectorAggregation()
-    {
-    }
-    /**
-     * Number of connectors at this station. However, because some ports can have
-     * multiple connectors but only be able to charge one car at a time (e.g.) the
-     * number of connectors may be greater than the total number of cars which can
-     * charge simultaneously.
-     *
-     * @param int $connectorCount
-     */
-    public function setConnectorCount($connectorCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getConnectorCount()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1EVChargeOptions extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1EVChargeOptions
     {
     }
 }

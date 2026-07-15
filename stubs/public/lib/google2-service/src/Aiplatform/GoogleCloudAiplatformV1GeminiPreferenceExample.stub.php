@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GeminiPreferenceExample extends \Google\Collection
-{
-    protected $collection_key = 'contents';
-    protected $completionsType = GoogleCloudAiplatformV1GeminiPreferenceExampleCompletion::class;
-    protected $completionsDataType = 'array';
-    protected $contentsType = GoogleCloudAiplatformV1Content::class;
-    protected $contentsDataType = 'array';
-    /**
-     * List of completions for a given prompt.
-     *
-     * @param GoogleCloudAiplatformV1GeminiPreferenceExampleCompletion[] $completions
-     */
-    public function setCompletions($completions)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GeminiPreferenceExample extends \Google\Collection
     {
+        protected $collection_key = 'contents';
+        protected $completionsType = GoogleCloudAiplatformV1GeminiPreferenceExampleCompletion::class;
+        protected $completionsDataType = 'array';
+        protected $contentsType = GoogleCloudAiplatformV1Content::class;
+        protected $contentsDataType = 'array';
+        /**
+         * List of completions for a given prompt.
+         *
+         * @param GoogleCloudAiplatformV1GeminiPreferenceExampleCompletion[] $completions
+         */
+        public function setCompletions($completions)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GeminiPreferenceExampleCompletion[]
+         */
+        public function getCompletions()
+        {
+        }
+        /**
+         * Multi-turn contents that represents the Prompt.
+         *
+         * @param GoogleCloudAiplatformV1Content[] $contents
+         */
+        public function setContents($contents)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Content[]
+         */
+        public function getContents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1GeminiPreferenceExampleCompletion[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GeminiPreferenceExample registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompletions()
-    {
-    }
-    /**
-     * Multi-turn contents that represents the Prompt.
-     *
-     * @param GoogleCloudAiplatformV1Content[] $contents
-     */
-    public function setContents($contents)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1Content[]
-     */
-    public function getContents()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GeminiPreferenceExample extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GeminiPreferenceExample
     {
     }
 }

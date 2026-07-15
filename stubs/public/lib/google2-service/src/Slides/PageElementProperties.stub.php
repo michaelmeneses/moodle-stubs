@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class PageElementProperties extends \Google\Model
-{
-    /**
-     * The object ID of the page where the element is located.
-     *
-     * @var string
-     */
-    public $pageObjectId;
-    protected $sizeType = Size::class;
-    protected $sizeDataType = '';
-    protected $transformType = AffineTransform::class;
-    protected $transformDataType = '';
-    /**
-     * The object ID of the page where the element is located.
-     *
-     * @param string $pageObjectId
-     */
-    public function setPageObjectId($pageObjectId)
+namespace Google\Service\Slides {
+    class PageElementProperties extends \Google\Model
     {
+        /**
+         * The object ID of the page where the element is located.
+         *
+         * @var string
+         */
+        public $pageObjectId;
+        protected $sizeType = Size::class;
+        protected $sizeDataType = '';
+        protected $transformType = AffineTransform::class;
+        protected $transformDataType = '';
+        /**
+         * The object ID of the page where the element is located.
+         *
+         * @param string $pageObjectId
+         */
+        public function setPageObjectId($pageObjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageObjectId()
+        {
+        }
+        /**
+         * The size of the element.
+         *
+         * @param Size $size
+         */
+        public function setSize(Size $size)
+        {
+        }
+        /**
+         * @return Size
+         */
+        public function getSize()
+        {
+        }
+        /**
+         * The transform for the element.
+         *
+         * @param AffineTransform $transform
+         */
+        public function setTransform(AffineTransform $transform)
+        {
+        }
+        /**
+         * @return AffineTransform
+         */
+        public function getTransform()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Slides\PageElementProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageObjectId()
-    {
-    }
-    /**
-     * The size of the element.
-     *
-     * @param Size $size
-     */
-    public function setSize(Size $size)
-    {
-    }
-    /**
-     * @return Size
-     */
-    public function getSize()
-    {
-    }
-    /**
-     * The transform for the element.
-     *
-     * @param AffineTransform $transform
-     */
-    public function setTransform(AffineTransform $transform)
-    {
-    }
-    /**
-     * @return AffineTransform
-     */
-    public function getTransform()
+    class Google_Service_Slides_PageElementProperties extends \Google\Service\Slides\PageElementProperties
     {
     }
 }

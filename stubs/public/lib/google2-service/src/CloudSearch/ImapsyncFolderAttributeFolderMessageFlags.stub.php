@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ImapsyncFolderAttributeFolderMessageFlags extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $flagged;
-    /**
-     * @var bool
-     */
-    public $seen;
-    /**
-     * @param bool
-     */
-    public function setFlagged($flagged)
+namespace Google\Service\CloudSearch {
+    class ImapsyncFolderAttributeFolderMessageFlags extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $flagged;
+        /**
+         * @var bool
+         */
+        public $seen;
+        /**
+         * @param bool
+         */
+        public function setFlagged($flagged)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFlagged()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setSeen($seen)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSeen()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\ImapsyncFolderAttributeFolderMessageFlags registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFlagged()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setSeen($seen)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSeen()
+    class Google_Service_CloudSearch_ImapsyncFolderAttributeFolderMessageFlags extends \Google\Service\CloudSearch\ImapsyncFolderAttributeFolderMessageFlags
     {
     }
 }

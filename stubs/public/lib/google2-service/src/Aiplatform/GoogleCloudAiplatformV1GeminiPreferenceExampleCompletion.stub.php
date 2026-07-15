@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GeminiPreferenceExampleCompletion extends \Google\Model
-{
-    protected $completionType = GoogleCloudAiplatformV1Content::class;
-    protected $completionDataType = '';
-    /**
-     * The score for the given completion.
-     *
-     * @var float
-     */
-    public $score;
-    /**
-     * Single turn completion for the given prompt.
-     *
-     * @param GoogleCloudAiplatformV1Content $completion
-     */
-    public function setCompletion(GoogleCloudAiplatformV1Content $completion)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GeminiPreferenceExampleCompletion extends \Google\Model
     {
+        protected $completionType = GoogleCloudAiplatformV1Content::class;
+        protected $completionDataType = '';
+        /**
+         * The score for the given completion.
+         *
+         * @var float
+         */
+        public $score;
+        /**
+         * Single turn completion for the given prompt.
+         *
+         * @param GoogleCloudAiplatformV1Content $completion
+         */
+        public function setCompletion(GoogleCloudAiplatformV1Content $completion)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Content
+         */
+        public function getCompletion()
+        {
+        }
+        /**
+         * The score for the given completion.
+         *
+         * @param float $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Content
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GeminiPreferenceExampleCompletion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompletion()
-    {
-    }
-    /**
-     * The score for the given completion.
-     *
-     * @param float $score
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GeminiPreferenceExampleCompletion extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GeminiPreferenceExampleCompletion
     {
     }
 }

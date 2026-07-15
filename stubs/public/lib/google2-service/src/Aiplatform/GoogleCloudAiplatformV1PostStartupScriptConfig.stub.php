@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PostStartupScriptConfig extends \Google\Model
-{
-    /**
-     * Unspecified post startup script behavior.
-     */
-    public const POST_STARTUP_SCRIPT_BEHAVIOR_POST_STARTUP_SCRIPT_BEHAVIOR_UNSPECIFIED = 'POST_STARTUP_SCRIPT_BEHAVIOR_UNSPECIFIED';
-    /**
-     * Run post startup script after runtime is started.
-     */
-    public const POST_STARTUP_SCRIPT_BEHAVIOR_RUN_ONCE = 'RUN_ONCE';
-    /**
-     * Run post startup script after runtime is stopped.
-     */
-    public const POST_STARTUP_SCRIPT_BEHAVIOR_RUN_EVERY_START = 'RUN_EVERY_START';
-    /**
-     * Download and run post startup script every time runtime is started.
-     */
-    public const POST_STARTUP_SCRIPT_BEHAVIOR_DOWNLOAD_AND_RUN_EVERY_START = 'DOWNLOAD_AND_RUN_EVERY_START';
-    /**
-     * Optional. Post startup script to run after runtime is started.
-     *
-     * @var string
-     */
-    public $postStartupScript;
-    /**
-     * Optional. Post startup script behavior that defines download and execution
-     * behavior.
-     *
-     * @var string
-     */
-    public $postStartupScriptBehavior;
-    /**
-     * Optional. Post startup script url to download. Example:
-     * `gs://bucket/script.sh`
-     *
-     * @var string
-     */
-    public $postStartupScriptUrl;
-    /**
-     * Optional. Post startup script to run after runtime is started.
-     *
-     * @param string $postStartupScript
-     */
-    public function setPostStartupScript($postStartupScript)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PostStartupScriptConfig extends \Google\Model
     {
+        /**
+         * Unspecified post startup script behavior.
+         */
+        public const POST_STARTUP_SCRIPT_BEHAVIOR_POST_STARTUP_SCRIPT_BEHAVIOR_UNSPECIFIED = 'POST_STARTUP_SCRIPT_BEHAVIOR_UNSPECIFIED';
+        /**
+         * Run post startup script after runtime is started.
+         */
+        public const POST_STARTUP_SCRIPT_BEHAVIOR_RUN_ONCE = 'RUN_ONCE';
+        /**
+         * Run post startup script after runtime is stopped.
+         */
+        public const POST_STARTUP_SCRIPT_BEHAVIOR_RUN_EVERY_START = 'RUN_EVERY_START';
+        /**
+         * Download and run post startup script every time runtime is started.
+         */
+        public const POST_STARTUP_SCRIPT_BEHAVIOR_DOWNLOAD_AND_RUN_EVERY_START = 'DOWNLOAD_AND_RUN_EVERY_START';
+        /**
+         * Optional. Post startup script to run after runtime is started.
+         *
+         * @var string
+         */
+        public $postStartupScript;
+        /**
+         * Optional. Post startup script behavior that defines download and execution
+         * behavior.
+         *
+         * @var string
+         */
+        public $postStartupScriptBehavior;
+        /**
+         * Optional. Post startup script url to download. Example:
+         * `gs://bucket/script.sh`
+         *
+         * @var string
+         */
+        public $postStartupScriptUrl;
+        /**
+         * Optional. Post startup script to run after runtime is started.
+         *
+         * @param string $postStartupScript
+         */
+        public function setPostStartupScript($postStartupScript)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostStartupScript()
+        {
+        }
+        /**
+         * Optional. Post startup script behavior that defines download and execution
+         * behavior.
+         *
+         * Accepted values: POST_STARTUP_SCRIPT_BEHAVIOR_UNSPECIFIED, RUN_ONCE,
+         * RUN_EVERY_START, DOWNLOAD_AND_RUN_EVERY_START
+         *
+         * @param self::POST_STARTUP_SCRIPT_BEHAVIOR_* $postStartupScriptBehavior
+         */
+        public function setPostStartupScriptBehavior($postStartupScriptBehavior)
+        {
+        }
+        /**
+         * @return self::POST_STARTUP_SCRIPT_BEHAVIOR_*
+         */
+        public function getPostStartupScriptBehavior()
+        {
+        }
+        /**
+         * Optional. Post startup script url to download. Example:
+         * `gs://bucket/script.sh`
+         *
+         * @param string $postStartupScriptUrl
+         */
+        public function setPostStartupScriptUrl($postStartupScriptUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostStartupScriptUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PostStartupScriptConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPostStartupScript()
-    {
-    }
-    /**
-     * Optional. Post startup script behavior that defines download and execution
-     * behavior.
-     *
-     * Accepted values: POST_STARTUP_SCRIPT_BEHAVIOR_UNSPECIFIED, RUN_ONCE,
-     * RUN_EVERY_START, DOWNLOAD_AND_RUN_EVERY_START
-     *
-     * @param self::POST_STARTUP_SCRIPT_BEHAVIOR_* $postStartupScriptBehavior
-     */
-    public function setPostStartupScriptBehavior($postStartupScriptBehavior)
-    {
-    }
-    /**
-     * @return self::POST_STARTUP_SCRIPT_BEHAVIOR_*
-     */
-    public function getPostStartupScriptBehavior()
-    {
-    }
-    /**
-     * Optional. Post startup script url to download. Example:
-     * `gs://bucket/script.sh`
-     *
-     * @param string $postStartupScriptUrl
-     */
-    public function setPostStartupScriptUrl($postStartupScriptUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPostStartupScriptUrl()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PostStartupScriptConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PostStartupScriptConfig
     {
     }
 }

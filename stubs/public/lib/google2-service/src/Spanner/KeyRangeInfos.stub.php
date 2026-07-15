@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class KeyRangeInfos extends \Google\Collection
-{
-    protected $collection_key = 'infos';
-    protected $infosType = KeyRangeInfo::class;
-    protected $infosDataType = 'array';
-    /**
-     * The total size of the list of all KeyRangeInfos. This may be larger than
-     * the number of repeated messages above. If that is the case, this number may
-     * be used to determine how many are not being shown.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * The list individual KeyRangeInfos.
-     *
-     * @param KeyRangeInfo[] $infos
-     */
-    public function setInfos($infos)
+namespace Google\Service\Spanner {
+    class KeyRangeInfos extends \Google\Collection
     {
+        protected $collection_key = 'infos';
+        protected $infosType = KeyRangeInfo::class;
+        protected $infosDataType = 'array';
+        /**
+         * The total size of the list of all KeyRangeInfos. This may be larger than
+         * the number of repeated messages above. If that is the case, this number may
+         * be used to determine how many are not being shown.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * The list individual KeyRangeInfos.
+         *
+         * @param KeyRangeInfo[] $infos
+         */
+        public function setInfos($infos)
+        {
+        }
+        /**
+         * @return KeyRangeInfo[]
+         */
+        public function getInfos()
+        {
+        }
+        /**
+         * The total size of the list of all KeyRangeInfos. This may be larger than
+         * the number of repeated messages above. If that is the case, this number may
+         * be used to determine how many are not being shown.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return KeyRangeInfo[]
+     * Runtime class alias of \Google\Service\Spanner\KeyRangeInfos registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInfos()
-    {
-    }
-    /**
-     * The total size of the list of all KeyRangeInfos. This may be larger than
-     * the number of repeated messages above. If that is the case, this number may
-     * be used to determine how many are not being shown.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_Spanner_KeyRangeInfos extends \Google\Service\Spanner\KeyRangeInfos
     {
     }
 }

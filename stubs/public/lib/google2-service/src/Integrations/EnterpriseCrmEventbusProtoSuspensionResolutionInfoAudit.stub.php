@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoSuspensionResolutionInfoAudit extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $resolvedBy;
-    /**
-     * @var string
-     */
-    public $resolvedByCpi;
-    /**
-     * @var string
-     */
-    public $timestamp;
-    /**
-     * @param string $resolvedBy
-     */
-    public function setResolvedBy($resolvedBy)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoSuspensionResolutionInfoAudit extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $resolvedBy;
+        /**
+         * @var string
+         */
+        public $resolvedByCpi;
+        /**
+         * @var string
+         */
+        public $timestamp;
+        /**
+         * @param string $resolvedBy
+         */
+        public function setResolvedBy($resolvedBy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResolvedBy()
+        {
+        }
+        /**
+         * @param string $resolvedByCpi
+         */
+        public function setResolvedByCpi($resolvedByCpi)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResolvedByCpi()
+        {
+        }
+        /**
+         * @param string $timestamp
+         */
+        public function setTimestamp($timestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestamp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoSuspensionResolutionInfoAudit registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResolvedBy()
-    {
-    }
-    /**
-     * @param string $resolvedByCpi
-     */
-    public function setResolvedByCpi($resolvedByCpi)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResolvedByCpi()
-    {
-    }
-    /**
-     * @param string $timestamp
-     */
-    public function setTimestamp($timestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestamp()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoSuspensionResolutionInfoAudit extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoSuspensionResolutionInfoAudit
     {
     }
 }

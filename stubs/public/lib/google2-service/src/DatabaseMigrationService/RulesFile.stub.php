@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class RulesFile extends \Google\Model
-{
-    /**
-     * Required. The text content of the rules that needs to be converted.
-     *
-     * @var string
-     */
-    public $rulesContent;
-    /**
-     * Required. The filename of the rules that needs to be converted. The
-     * filename is used mainly so that future logs of the import rules job contain
-     * it, and can therefore be searched by it.
-     *
-     * @var string
-     */
-    public $rulesSourceFilename;
-    /**
-     * Required. The text content of the rules that needs to be converted.
-     *
-     * @param string $rulesContent
-     */
-    public function setRulesContent($rulesContent)
+namespace Google\Service\DatabaseMigrationService {
+    class RulesFile extends \Google\Model
     {
+        /**
+         * Required. The text content of the rules that needs to be converted.
+         *
+         * @var string
+         */
+        public $rulesContent;
+        /**
+         * Required. The filename of the rules that needs to be converted. The
+         * filename is used mainly so that future logs of the import rules job contain
+         * it, and can therefore be searched by it.
+         *
+         * @var string
+         */
+        public $rulesSourceFilename;
+        /**
+         * Required. The text content of the rules that needs to be converted.
+         *
+         * @param string $rulesContent
+         */
+        public function setRulesContent($rulesContent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRulesContent()
+        {
+        }
+        /**
+         * Required. The filename of the rules that needs to be converted. The
+         * filename is used mainly so that future logs of the import rules job contain
+         * it, and can therefore be searched by it.
+         *
+         * @param string $rulesSourceFilename
+         */
+        public function setRulesSourceFilename($rulesSourceFilename)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRulesSourceFilename()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\RulesFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRulesContent()
-    {
-    }
-    /**
-     * Required. The filename of the rules that needs to be converted. The
-     * filename is used mainly so that future logs of the import rules job contain
-     * it, and can therefore be searched by it.
-     *
-     * @param string $rulesSourceFilename
-     */
-    public function setRulesSourceFilename($rulesSourceFilename)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRulesSourceFilename()
+    class Google_Service_DatabaseMigrationService_RulesFile extends \Google\Service\DatabaseMigrationService\RulesFile
     {
     }
 }

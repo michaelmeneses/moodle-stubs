@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1TextEntityExtractionAnnotation extends \Google\Model
-{
-    protected $annotationSpecType = GoogleCloudDatalabelingV1beta1AnnotationSpec::class;
-    protected $annotationSpecDataType = '';
-    protected $sequentialSegmentType = GoogleCloudDatalabelingV1beta1SequentialSegment::class;
-    protected $sequentialSegmentDataType = '';
-    /**
-     * Label of the text entities.
-     *
-     * @param GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec
-     */
-    public function setAnnotationSpec(GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1TextEntityExtractionAnnotation extends \Google\Model
     {
+        protected $annotationSpecType = GoogleCloudDatalabelingV1beta1AnnotationSpec::class;
+        protected $annotationSpecDataType = '';
+        protected $sequentialSegmentType = GoogleCloudDatalabelingV1beta1SequentialSegment::class;
+        protected $sequentialSegmentDataType = '';
+        /**
+         * Label of the text entities.
+         *
+         * @param GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec
+         */
+        public function setAnnotationSpec(GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1AnnotationSpec
+         */
+        public function getAnnotationSpec()
+        {
+        }
+        /**
+         * Position of the entity.
+         *
+         * @param GoogleCloudDatalabelingV1beta1SequentialSegment $sequentialSegment
+         */
+        public function setSequentialSegment(GoogleCloudDatalabelingV1beta1SequentialSegment $sequentialSegment)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1SequentialSegment
+         */
+        public function getSequentialSegment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1AnnotationSpec
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1TextEntityExtractionAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationSpec()
-    {
-    }
-    /**
-     * Position of the entity.
-     *
-     * @param GoogleCloudDatalabelingV1beta1SequentialSegment $sequentialSegment
-     */
-    public function setSequentialSegment(GoogleCloudDatalabelingV1beta1SequentialSegment $sequentialSegment)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1SequentialSegment
-     */
-    public function getSequentialSegment()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1TextEntityExtractionAnnotation extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1TextEntityExtractionAnnotation
     {
     }
 }

@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class WriteControl extends \Google\Model
-{
-    /**
-     * The revision ID of the presentation required for the write request. If
-     * specified and the required revision ID doesn't match the presentation's
-     * current revision ID, the request is not processed and returns a 400 bad
-     * request error. When a required revision ID is returned in a response, it
-     * indicates the revision ID of the document after the request was applied.
-     *
-     * @var string
-     */
-    public $requiredRevisionId;
-    /**
-     * The revision ID of the presentation required for the write request. If
-     * specified and the required revision ID doesn't match the presentation's
-     * current revision ID, the request is not processed and returns a 400 bad
-     * request error. When a required revision ID is returned in a response, it
-     * indicates the revision ID of the document after the request was applied.
-     *
-     * @param string $requiredRevisionId
-     */
-    public function setRequiredRevisionId($requiredRevisionId)
+namespace Google\Service\Slides {
+    class WriteControl extends \Google\Model
     {
+        /**
+         * The revision ID of the presentation required for the write request. If
+         * specified and the required revision ID doesn't match the presentation's
+         * current revision ID, the request is not processed and returns a 400 bad
+         * request error. When a required revision ID is returned in a response, it
+         * indicates the revision ID of the document after the request was applied.
+         *
+         * @var string
+         */
+        public $requiredRevisionId;
+        /**
+         * The revision ID of the presentation required for the write request. If
+         * specified and the required revision ID doesn't match the presentation's
+         * current revision ID, the request is not processed and returns a 400 bad
+         * request error. When a required revision ID is returned in a response, it
+         * indicates the revision ID of the document after the request was applied.
+         *
+         * @param string $requiredRevisionId
+         */
+        public function setRequiredRevisionId($requiredRevisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequiredRevisionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Slides\WriteControl registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequiredRevisionId()
+    class Google_Service_Slides_WriteControl extends \Google\Service\Slides\WriteControl
     {
     }
 }

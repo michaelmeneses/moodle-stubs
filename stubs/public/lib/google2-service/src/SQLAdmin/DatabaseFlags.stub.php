@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class DatabaseFlags extends \Google\Model
-{
-    /**
-     * The name of the flag. These flags are passed at instance startup, so
-     * include both server options and system variables. Flags are specified with
-     * underscores, not hyphens. For more information, see [Configuring Database
-     * Flags](https://cloud.google.com/sql/docs/mysql/flags) in the Cloud SQL
-     * documentation.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The value of the flag. Boolean flags are set to `on` for true and `off` for
-     * false. This field must be omitted if the flag doesn't take a value.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The name of the flag. These flags are passed at instance startup, so
-     * include both server options and system variables. Flags are specified with
-     * underscores, not hyphens. For more information, see [Configuring Database
-     * Flags](https://cloud.google.com/sql/docs/mysql/flags) in the Cloud SQL
-     * documentation.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\SQLAdmin {
+    class DatabaseFlags extends \Google\Model
     {
+        /**
+         * The name of the flag. These flags are passed at instance startup, so
+         * include both server options and system variables. Flags are specified with
+         * underscores, not hyphens. For more information, see [Configuring Database
+         * Flags](https://cloud.google.com/sql/docs/mysql/flags) in the Cloud SQL
+         * documentation.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The value of the flag. Boolean flags are set to `on` for true and `off` for
+         * false. This field must be omitted if the flag doesn't take a value.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The name of the flag. These flags are passed at instance startup, so
+         * include both server options and system variables. Flags are specified with
+         * underscores, not hyphens. For more information, see [Configuring Database
+         * Flags](https://cloud.google.com/sql/docs/mysql/flags) in the Cloud SQL
+         * documentation.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The value of the flag. Boolean flags are set to `on` for true and `off` for
+         * false. This field must be omitted if the flag doesn't take a value.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\DatabaseFlags registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The value of the flag. Boolean flags are set to `on` for true and `off` for
-     * false. This field must be omitted if the flag doesn't take a value.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_SQLAdmin_DatabaseFlags extends \Google\Service\SQLAdmin\DatabaseFlags
     {
     }
 }

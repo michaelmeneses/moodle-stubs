@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpecSearchParams extends \Google\Model
-{
-    protected $boostSpecType = GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpec::class;
-    protected $boostSpecDataType = '';
-    /**
-     * @var string
-     */
-    public $filter;
-    /**
-     * @var int
-     */
-    public $maxReturnResults;
-    /**
-     * @var string
-     */
-    public $orderBy;
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpec
-     */
-    public function setBoostSpec(GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpec $boostSpec)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpecSearchParams extends \Google\Model
     {
+        protected $boostSpecType = GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpec::class;
+        protected $boostSpecDataType = '';
+        /**
+         * @var string
+         */
+        public $filter;
+        /**
+         * @var int
+         */
+        public $maxReturnResults;
+        /**
+         * @var string
+         */
+        public $orderBy;
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpec
+         */
+        public function setBoostSpec(GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpec $boostSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpec
+         */
+        public function getBoostSpec()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMaxReturnResults($maxReturnResults)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxReturnResults()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOrderBy($orderBy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrderBy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpec
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpecSearchParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoostSpec()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFilter($filter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilter()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMaxReturnResults($maxReturnResults)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxReturnResults()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOrderBy($orderBy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrderBy()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpecSearchParams extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerQueryRequestSearchSpecSearchParams
     {
     }
 }

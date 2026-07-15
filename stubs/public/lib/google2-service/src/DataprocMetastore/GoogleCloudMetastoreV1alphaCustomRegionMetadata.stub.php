@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class GoogleCloudMetastoreV1alphaCustomRegionMetadata extends \Google\Collection
-{
-    protected $collection_key = 'requiredReadWriteRegions';
-    /**
-     * @var string[]
-     */
-    public $optionalReadOnlyRegions;
-    /**
-     * @var string[]
-     */
-    public $requiredReadWriteRegions;
-    /**
-     * @var string
-     */
-    public $witnessRegion;
-    /**
-     * @param string[]
-     */
-    public function setOptionalReadOnlyRegions($optionalReadOnlyRegions)
+namespace Google\Service\DataprocMetastore {
+    class GoogleCloudMetastoreV1alphaCustomRegionMetadata extends \Google\Collection
     {
+        protected $collection_key = 'requiredReadWriteRegions';
+        /**
+         * @var string[]
+         */
+        public $optionalReadOnlyRegions;
+        /**
+         * @var string[]
+         */
+        public $requiredReadWriteRegions;
+        /**
+         * @var string
+         */
+        public $witnessRegion;
+        /**
+         * @param string[]
+         */
+        public function setOptionalReadOnlyRegions($optionalReadOnlyRegions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOptionalReadOnlyRegions()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setRequiredReadWriteRegions($requiredReadWriteRegions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRequiredReadWriteRegions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWitnessRegion($witnessRegion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWitnessRegion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DataprocMetastore\GoogleCloudMetastoreV1alphaCustomRegionMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOptionalReadOnlyRegions()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setRequiredReadWriteRegions($requiredReadWriteRegions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRequiredReadWriteRegions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWitnessRegion($witnessRegion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWitnessRegion()
+    class Google_Service_DataprocMetastore_GoogleCloudMetastoreV1alphaCustomRegionMetadata extends \Google\Service\DataprocMetastore\GoogleCloudMetastoreV1alphaCustomRegionMetadata
     {
     }
 }

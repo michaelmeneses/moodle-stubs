@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ListIdentityMappingStoresResponse extends \Google\Collection
-{
-    protected $collection_key = 'identityMappingStores';
-    protected $identityMappingStoresType = GoogleCloudDiscoveryengineV1IdentityMappingStore::class;
-    protected $identityMappingStoresDataType = 'array';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The Identity Mapping Stores.
-     *
-     * @param GoogleCloudDiscoveryengineV1IdentityMappingStore[] $identityMappingStores
-     */
-    public function setIdentityMappingStores($identityMappingStores)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ListIdentityMappingStoresResponse extends \Google\Collection
     {
+        protected $collection_key = 'identityMappingStores';
+        protected $identityMappingStoresType = GoogleCloudDiscoveryengineV1IdentityMappingStore::class;
+        protected $identityMappingStoresDataType = 'array';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The Identity Mapping Stores.
+         *
+         * @param GoogleCloudDiscoveryengineV1IdentityMappingStore[] $identityMappingStores
+         */
+        public function setIdentityMappingStores($identityMappingStores)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1IdentityMappingStore[]
+         */
+        public function getIdentityMappingStores()
+        {
+        }
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1IdentityMappingStore[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListIdentityMappingStoresResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIdentityMappingStores()
-    {
-    }
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ListIdentityMappingStoresResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListIdentityMappingStoresResponse
     {
     }
 }

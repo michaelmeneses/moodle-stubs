@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta1DocumentChunkedDocumentChunk extends \Google\Collection
-{
-    protected $collection_key = 'sourceBlockIds';
-    /**
-     * @var string
-     */
-    public $chunkId;
-    /**
-     * @var string
-     */
-    public $content;
-    protected $pageFootersType = GoogleCloudDocumentaiV1beta1DocumentChunkedDocumentChunkChunkPageFooter::class;
-    protected $pageFootersDataType = 'array';
-    protected $pageHeadersType = GoogleCloudDocumentaiV1beta1DocumentChunkedDocumentChunkChunkPageHeader::class;
-    protected $pageHeadersDataType = 'array';
-    protected $pageSpanType = GoogleCloudDocumentaiV1beta1DocumentChunkedDocumentChunkChunkPageSpan::class;
-    protected $pageSpanDataType = '';
-    /**
-     * @var string[]
-     */
-    public $sourceBlockIds;
-    /**
-     * @param string
-     */
-    public function setChunkId($chunkId)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta1DocumentChunkedDocumentChunk extends \Google\Collection
     {
+        protected $collection_key = 'sourceBlockIds';
+        /**
+         * @var string
+         */
+        public $chunkId;
+        /**
+         * @var string
+         */
+        public $content;
+        protected $pageFootersType = GoogleCloudDocumentaiV1beta1DocumentChunkedDocumentChunkChunkPageFooter::class;
+        protected $pageFootersDataType = 'array';
+        protected $pageHeadersType = GoogleCloudDocumentaiV1beta1DocumentChunkedDocumentChunkChunkPageHeader::class;
+        protected $pageHeadersDataType = 'array';
+        protected $pageSpanType = GoogleCloudDocumentaiV1beta1DocumentChunkedDocumentChunkChunkPageSpan::class;
+        protected $pageSpanDataType = '';
+        /**
+         * @var string[]
+         */
+        public $sourceBlockIds;
+        /**
+         * @param string
+         */
+        public function setChunkId($chunkId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChunkId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentChunkedDocumentChunkChunkPageFooter[]
+         */
+        public function setPageFooters($pageFooters)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentChunkedDocumentChunkChunkPageFooter[]
+         */
+        public function getPageFooters()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentChunkedDocumentChunkChunkPageHeader[]
+         */
+        public function setPageHeaders($pageHeaders)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentChunkedDocumentChunkChunkPageHeader[]
+         */
+        public function getPageHeaders()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentChunkedDocumentChunkChunkPageSpan
+         */
+        public function setPageSpan(GoogleCloudDocumentaiV1beta1DocumentChunkedDocumentChunkChunkPageSpan $pageSpan)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentChunkedDocumentChunkChunkPageSpan
+         */
+        public function getPageSpan()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setSourceBlockIds($sourceBlockIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSourceBlockIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentChunkedDocumentChunk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChunkId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setContent($content)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContent()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentChunkedDocumentChunkChunkPageFooter[]
-     */
-    public function setPageFooters($pageFooters)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentChunkedDocumentChunkChunkPageFooter[]
-     */
-    public function getPageFooters()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentChunkedDocumentChunkChunkPageHeader[]
-     */
-    public function setPageHeaders($pageHeaders)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentChunkedDocumentChunkChunkPageHeader[]
-     */
-    public function getPageHeaders()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentChunkedDocumentChunkChunkPageSpan
-     */
-    public function setPageSpan(GoogleCloudDocumentaiV1beta1DocumentChunkedDocumentChunkChunkPageSpan $pageSpan)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentChunkedDocumentChunkChunkPageSpan
-     */
-    public function getPageSpan()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setSourceBlockIds($sourceBlockIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSourceBlockIds()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta1DocumentChunkedDocumentChunk extends \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentChunkedDocumentChunk
     {
     }
 }

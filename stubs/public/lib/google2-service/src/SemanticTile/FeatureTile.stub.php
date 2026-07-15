@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SemanticTile;
-
-class FeatureTile extends \Google\Collection
-{
-    protected $collection_key = 'providers';
-    protected $coordinatesType = TileCoordinates::class;
-    protected $coordinatesDataType = '';
-    protected $featuresType = Feature::class;
-    protected $featuresDataType = 'array';
-    public $name;
-    protected $providersType = ProviderInfo::class;
-    protected $providersDataType = 'array';
-    public $status;
-    public $versionId;
+namespace Google\Service\SemanticTile {
+    class FeatureTile extends \Google\Collection
+    {
+        protected $collection_key = 'providers';
+        protected $coordinatesType = TileCoordinates::class;
+        protected $coordinatesDataType = '';
+        protected $featuresType = Feature::class;
+        protected $featuresDataType = 'array';
+        public $name;
+        protected $providersType = ProviderInfo::class;
+        protected $providersDataType = 'array';
+        public $status;
+        public $versionId;
+        /**
+         * @param TileCoordinates
+         */
+        public function setCoordinates(TileCoordinates $coordinates)
+        {
+        }
+        /**
+         * @return TileCoordinates
+         */
+        public function getCoordinates()
+        {
+        }
+        /**
+         * @param Feature[]
+         */
+        public function setFeatures($features)
+        {
+        }
+        /**
+         * @return Feature[]
+         */
+        public function getFeatures()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        /**
+         * @param ProviderInfo[]
+         */
+        public function setProviders($providers)
+        {
+        }
+        /**
+         * @return ProviderInfo[]
+         */
+        public function getProviders()
+        {
+        }
+        public function setStatus($status)
+        {
+        }
+        public function getStatus()
+        {
+        }
+        public function setVersionId($versionId)
+        {
+        }
+        public function getVersionId()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param TileCoordinates
+     * Runtime class alias of \Google\Service\SemanticTile\FeatureTile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setCoordinates(TileCoordinates $coordinates)
-    {
-    }
-    /**
-     * @return TileCoordinates
-     */
-    public function getCoordinates()
-    {
-    }
-    /**
-     * @param Feature[]
-     */
-    public function setFeatures($features)
-    {
-    }
-    /**
-     * @return Feature[]
-     */
-    public function getFeatures()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    /**
-     * @param ProviderInfo[]
-     */
-    public function setProviders($providers)
-    {
-    }
-    /**
-     * @return ProviderInfo[]
-     */
-    public function getProviders()
-    {
-    }
-    public function setStatus($status)
-    {
-    }
-    public function getStatus()
-    {
-    }
-    public function setVersionId($versionId)
-    {
-    }
-    public function getVersionId()
+    class Google_Service_SemanticTile_FeatureTile extends \Google\Service\SemanticTile\FeatureTile
     {
     }
 }

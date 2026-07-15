@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1WidgetConfigFacetField extends \Google\Model
-{
-    /**
-     * Optional. The field name that end users will see.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Required. Registered field name. The format is `field.abc`.
-     *
-     * @var string
-     */
-    public $field;
-    /**
-     * Optional. The field name that end users will see.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1WidgetConfigFacetField extends \Google\Model
     {
+        /**
+         * Optional. The field name that end users will see.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Required. Registered field name. The format is `field.abc`.
+         *
+         * @var string
+         */
+        public $field;
+        /**
+         * Optional. The field name that end users will see.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Required. Registered field name. The format is `field.abc`.
+         *
+         * @param string $field
+         */
+        public function setField($field)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getField()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1WidgetConfigFacetField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Required. Registered field name. The format is `field.abc`.
-     *
-     * @param string $field
-     */
-    public function setField($field)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getField()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1WidgetConfigFacetField extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1WidgetConfigFacetField
     {
     }
 }

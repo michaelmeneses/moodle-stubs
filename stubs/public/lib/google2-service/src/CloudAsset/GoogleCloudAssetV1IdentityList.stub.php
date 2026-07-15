@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class GoogleCloudAssetV1IdentityList extends \Google\Collection
-{
-    protected $collection_key = 'identities';
-    protected $groupEdgesType = GoogleCloudAssetV1Edge::class;
-    protected $groupEdgesDataType = 'array';
-    protected $identitiesType = GoogleCloudAssetV1Identity::class;
-    protected $identitiesDataType = 'array';
-    /**
-     * Group identity edges of the graph starting from the binding's group members
-     * to any node of the identities. The Edge.source_node contains a group, such
-     * as `group:parent@google.com`. The Edge.target_node contains a member of the
-     * group, such as `group:child@google.com` or `user:foo@google.com`. This
-     * field is present only if the output_group_edges option is enabled in
-     * request.
-     *
-     * @param GoogleCloudAssetV1Edge[] $groupEdges
-     */
-    public function setGroupEdges($groupEdges)
+namespace Google\Service\CloudAsset {
+    class GoogleCloudAssetV1IdentityList extends \Google\Collection
     {
+        protected $collection_key = 'identities';
+        protected $groupEdgesType = GoogleCloudAssetV1Edge::class;
+        protected $groupEdgesDataType = 'array';
+        protected $identitiesType = GoogleCloudAssetV1Identity::class;
+        protected $identitiesDataType = 'array';
+        /**
+         * Group identity edges of the graph starting from the binding's group members
+         * to any node of the identities. The Edge.source_node contains a group, such
+         * as `group:parent@google.com`. The Edge.target_node contains a member of the
+         * group, such as `group:child@google.com` or `user:foo@google.com`. This
+         * field is present only if the output_group_edges option is enabled in
+         * request.
+         *
+         * @param GoogleCloudAssetV1Edge[] $groupEdges
+         */
+        public function setGroupEdges($groupEdges)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1Edge[]
+         */
+        public function getGroupEdges()
+        {
+        }
+        /**
+         * Only the identities that match one of the following conditions will be
+         * presented: - The identity_selector, if it is specified in request; -
+         * Otherwise, identities reachable from the policy binding's members.
+         *
+         * @param GoogleCloudAssetV1Identity[] $identities
+         */
+        public function setIdentities($identities)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1Identity[]
+         */
+        public function getIdentities()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAssetV1Edge[]
+     * Runtime class alias of \Google\Service\CloudAsset\GoogleCloudAssetV1IdentityList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroupEdges()
-    {
-    }
-    /**
-     * Only the identities that match one of the following conditions will be
-     * presented: - The identity_selector, if it is specified in request; -
-     * Otherwise, identities reachable from the policy binding's members.
-     *
-     * @param GoogleCloudAssetV1Identity[] $identities
-     */
-    public function setIdentities($identities)
-    {
-    }
-    /**
-     * @return GoogleCloudAssetV1Identity[]
-     */
-    public function getIdentities()
+    class Google_Service_CloudAsset_GoogleCloudAssetV1IdentityList extends \Google\Service\CloudAsset\GoogleCloudAssetV1IdentityList
     {
     }
 }

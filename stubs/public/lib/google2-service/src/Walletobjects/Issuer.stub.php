@@ -21,119 +21,128 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class Issuer extends \Google\Model
-{
-    protected $callbackOptionsType = CallbackOptions::class;
-    protected $callbackOptionsDataType = '';
-    protected $contactInfoType = IssuerContactInfo::class;
-    protected $contactInfoDataType = '';
-    /**
-     * URL for the issuer's home page.
-     *
-     * @var string
-     */
-    public $homepageUrl;
-    /**
-     * The unique identifier for an issuer account. This is automatically
-     * generated when the issuer is inserted.
-     *
-     * @var string
-     */
-    public $issuerId;
-    /**
-     * The account name of the issuer.
-     *
-     * @var string
-     */
-    public $name;
-    protected $smartTapMerchantDataType = SmartTapMerchantData::class;
-    protected $smartTapMerchantDataDataType = '';
-    /**
-     * Allows the issuer to provide their callback settings.
-     *
-     * @param CallbackOptions $callbackOptions
-     */
-    public function setCallbackOptions(CallbackOptions $callbackOptions)
+namespace Google\Service\Walletobjects {
+    class Issuer extends \Google\Model
     {
+        protected $callbackOptionsType = CallbackOptions::class;
+        protected $callbackOptionsDataType = '';
+        protected $contactInfoType = IssuerContactInfo::class;
+        protected $contactInfoDataType = '';
+        /**
+         * URL for the issuer's home page.
+         *
+         * @var string
+         */
+        public $homepageUrl;
+        /**
+         * The unique identifier for an issuer account. This is automatically
+         * generated when the issuer is inserted.
+         *
+         * @var string
+         */
+        public $issuerId;
+        /**
+         * The account name of the issuer.
+         *
+         * @var string
+         */
+        public $name;
+        protected $smartTapMerchantDataType = SmartTapMerchantData::class;
+        protected $smartTapMerchantDataDataType = '';
+        /**
+         * Allows the issuer to provide their callback settings.
+         *
+         * @param CallbackOptions $callbackOptions
+         */
+        public function setCallbackOptions(CallbackOptions $callbackOptions)
+        {
+        }
+        /**
+         * @return CallbackOptions
+         */
+        public function getCallbackOptions()
+        {
+        }
+        /**
+         * Issuer contact information.
+         *
+         * @param IssuerContactInfo $contactInfo
+         */
+        public function setContactInfo(IssuerContactInfo $contactInfo)
+        {
+        }
+        /**
+         * @return IssuerContactInfo
+         */
+        public function getContactInfo()
+        {
+        }
+        /**
+         * URL for the issuer's home page.
+         *
+         * @param string $homepageUrl
+         */
+        public function setHomepageUrl($homepageUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHomepageUrl()
+        {
+        }
+        /**
+         * The unique identifier for an issuer account. This is automatically
+         * generated when the issuer is inserted.
+         *
+         * @param string $issuerId
+         */
+        public function setIssuerId($issuerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssuerId()
+        {
+        }
+        /**
+         * The account name of the issuer.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Available only to Smart Tap enabled partners. Contact support for
+         * additional guidance.
+         *
+         * @param SmartTapMerchantData $smartTapMerchantData
+         */
+        public function setSmartTapMerchantData(SmartTapMerchantData $smartTapMerchantData)
+        {
+        }
+        /**
+         * @return SmartTapMerchantData
+         */
+        public function getSmartTapMerchantData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CallbackOptions
+     * Runtime class alias of \Google\Service\Walletobjects\Issuer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCallbackOptions()
-    {
-    }
-    /**
-     * Issuer contact information.
-     *
-     * @param IssuerContactInfo $contactInfo
-     */
-    public function setContactInfo(IssuerContactInfo $contactInfo)
-    {
-    }
-    /**
-     * @return IssuerContactInfo
-     */
-    public function getContactInfo()
-    {
-    }
-    /**
-     * URL for the issuer's home page.
-     *
-     * @param string $homepageUrl
-     */
-    public function setHomepageUrl($homepageUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHomepageUrl()
-    {
-    }
-    /**
-     * The unique identifier for an issuer account. This is automatically
-     * generated when the issuer is inserted.
-     *
-     * @param string $issuerId
-     */
-    public function setIssuerId($issuerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIssuerId()
-    {
-    }
-    /**
-     * The account name of the issuer.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Available only to Smart Tap enabled partners. Contact support for
-     * additional guidance.
-     *
-     * @param SmartTapMerchantData $smartTapMerchantData
-     */
-    public function setSmartTapMerchantData(SmartTapMerchantData $smartTapMerchantData)
-    {
-    }
-    /**
-     * @return SmartTapMerchantData
-     */
-    public function getSmartTapMerchantData()
+    class Google_Service_Walletobjects_Issuer extends \Google\Service\Walletobjects\Issuer
     {
     }
 }

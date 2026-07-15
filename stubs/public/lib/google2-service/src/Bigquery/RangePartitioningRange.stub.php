@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class RangePartitioningRange extends \Google\Model
-{
-    /**
-     * [Experimental] The end of range partitioning, exclusive.
-     *
-     * @var string
-     */
-    public $end;
-    /**
-     * [Experimental] The width of each interval.
-     *
-     * @var string
-     */
-    public $interval;
-    /**
-     * [Experimental] The start of range partitioning, inclusive.
-     *
-     * @var string
-     */
-    public $start;
-    /**
-     * [Experimental] The end of range partitioning, exclusive.
-     *
-     * @param string $end
-     */
-    public function setEnd($end)
+namespace Google\Service\Bigquery {
+    class RangePartitioningRange extends \Google\Model
     {
+        /**
+         * [Experimental] The end of range partitioning, exclusive.
+         *
+         * @var string
+         */
+        public $end;
+        /**
+         * [Experimental] The width of each interval.
+         *
+         * @var string
+         */
+        public $interval;
+        /**
+         * [Experimental] The start of range partitioning, inclusive.
+         *
+         * @var string
+         */
+        public $start;
+        /**
+         * [Experimental] The end of range partitioning, exclusive.
+         *
+         * @param string $end
+         */
+        public function setEnd($end)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnd()
+        {
+        }
+        /**
+         * [Experimental] The width of each interval.
+         *
+         * @param string $interval
+         */
+        public function setInterval($interval)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInterval()
+        {
+        }
+        /**
+         * [Experimental] The start of range partitioning, inclusive.
+         *
+         * @param string $start
+         */
+        public function setStart($start)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\RangePartitioningRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnd()
-    {
-    }
-    /**
-     * [Experimental] The width of each interval.
-     *
-     * @param string $interval
-     */
-    public function setInterval($interval)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInterval()
-    {
-    }
-    /**
-     * [Experimental] The start of range partitioning, inclusive.
-     *
-     * @param string $start
-     */
-    public function setStart($start)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStart()
+    class Google_Service_Bigquery_RangePartitioningRange extends \Google\Service\Bigquery\RangePartitioningRange
     {
     }
 }

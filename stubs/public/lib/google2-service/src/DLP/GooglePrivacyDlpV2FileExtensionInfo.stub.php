@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2FileExtensionInfo extends \Google\Model
-{
-    /**
-     * The file extension if set. (aka .pdf, .jpg, .txt)
-     *
-     * @var string
-     */
-    public $fileExtension;
-    /**
-     * The file extension if set. (aka .pdf, .jpg, .txt)
-     *
-     * @param string $fileExtension
-     */
-    public function setFileExtension($fileExtension)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2FileExtensionInfo extends \Google\Model
     {
+        /**
+         * The file extension if set. (aka .pdf, .jpg, .txt)
+         *
+         * @var string
+         */
+        public $fileExtension;
+        /**
+         * The file extension if set. (aka .pdf, .jpg, .txt)
+         *
+         * @param string $fileExtension
+         */
+        public function setFileExtension($fileExtension)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileExtension()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2FileExtensionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileExtension()
+    class Google_Service_DLP_GooglePrivacyDlpV2FileExtensionInfo extends \Google\Service\DLP\GooglePrivacyDlpV2FileExtensionInfo
     {
     }
 }

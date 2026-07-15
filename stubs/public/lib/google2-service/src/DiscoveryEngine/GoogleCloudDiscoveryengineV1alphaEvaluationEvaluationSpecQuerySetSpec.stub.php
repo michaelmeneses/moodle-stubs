@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaEvaluationEvaluationSpecQuerySetSpec extends \Google\Model
-{
-    /**
-     * Optional. The full resource name of the SampleQuerySet used for the
-     * evaluation, in the format of
-     * `projects/{project}/locations/{location}/sampleQuerySets/{sampleQuerySet}`.
-     *
-     * @var string
-     */
-    public $sampleQuerySet;
-    /**
-     * Optional. The full resource name of the SampleQuerySet used for the
-     * evaluation, in the format of
-     * `projects/{project}/locations/{location}/sampleQuerySets/{sampleQuerySet}`.
-     *
-     * @param string $sampleQuerySet
-     */
-    public function setSampleQuerySet($sampleQuerySet)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaEvaluationEvaluationSpecQuerySetSpec extends \Google\Model
     {
+        /**
+         * Optional. The full resource name of the SampleQuerySet used for the
+         * evaluation, in the format of
+         * `projects/{project}/locations/{location}/sampleQuerySets/{sampleQuerySet}`.
+         *
+         * @var string
+         */
+        public $sampleQuerySet;
+        /**
+         * Optional. The full resource name of the SampleQuerySet used for the
+         * evaluation, in the format of
+         * `projects/{project}/locations/{location}/sampleQuerySets/{sampleQuerySet}`.
+         *
+         * @param string $sampleQuerySet
+         */
+        public function setSampleQuerySet($sampleQuerySet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSampleQuerySet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaEvaluationEvaluationSpecQuerySetSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSampleQuerySet()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaEvaluationEvaluationSpecQuerySetSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaEvaluationEvaluationSpecQuerySetSpec
     {
     }
 }

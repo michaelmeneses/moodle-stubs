@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class ConsentStore extends \Google\Model
-{
-    /**
-     * Optional. Default time to live for Consents created in this store. Must be
-     * at least 24 hours. Updating this field will not affect the expiration time
-     * of existing consents.
-     *
-     * @var string
-     */
-    public $defaultConsentTtl;
-    /**
-     * Optional. If `true`, UpdateConsent creates the Consent if it does not
-     * already exist. If unspecified, defaults to `false`.
-     *
-     * @var bool
-     */
-    public $enableConsentCreateOnUpdate;
-    /**
-     * Optional. User-supplied key-value pairs used to organize consent stores.
-     * Label keys must be between 1 and 63 characters long, have a UTF-8 encoding
-     * of maximum 128 bytes, and must conform to the following PCRE regular
-     * expression: \p{Ll}\p{Lo}{0,62}. Label values must be between 1 and 63
-     * characters long, have a UTF-8 encoding of maximum 128 bytes, and must
-     * conform to the following PCRE regular expression:
-     * [\p{Ll}\p{Lo}\p{N}_-]{0,63}. No more than 64 labels can be associated with
-     * a given store. For more information:
-     * https://cloud.google.com/healthcare/docs/how-tos/labeling-resources
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Identifier. Resource name of the consent store, of the form `projects/{proj
-     * ect_id}/locations/{location_id}/datasets/{dataset_id}/consentStores/{consen
-     * t_store_id}`. Cannot be changed after creation.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Default time to live for Consents created in this store. Must be
-     * at least 24 hours. Updating this field will not affect the expiration time
-     * of existing consents.
-     *
-     * @param string $defaultConsentTtl
-     */
-    public function setDefaultConsentTtl($defaultConsentTtl)
+namespace Google\Service\CloudHealthcare {
+    class ConsentStore extends \Google\Model
     {
+        /**
+         * Optional. Default time to live for Consents created in this store. Must be
+         * at least 24 hours. Updating this field will not affect the expiration time
+         * of existing consents.
+         *
+         * @var string
+         */
+        public $defaultConsentTtl;
+        /**
+         * Optional. If `true`, UpdateConsent creates the Consent if it does not
+         * already exist. If unspecified, defaults to `false`.
+         *
+         * @var bool
+         */
+        public $enableConsentCreateOnUpdate;
+        /**
+         * Optional. User-supplied key-value pairs used to organize consent stores.
+         * Label keys must be between 1 and 63 characters long, have a UTF-8 encoding
+         * of maximum 128 bytes, and must conform to the following PCRE regular
+         * expression: \p{Ll}\p{Lo}{0,62}. Label values must be between 1 and 63
+         * characters long, have a UTF-8 encoding of maximum 128 bytes, and must
+         * conform to the following PCRE regular expression:
+         * [\p{Ll}\p{Lo}\p{N}_-]{0,63}. No more than 64 labels can be associated with
+         * a given store. For more information:
+         * https://cloud.google.com/healthcare/docs/how-tos/labeling-resources
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Identifier. Resource name of the consent store, of the form `projects/{proj
+         * ect_id}/locations/{location_id}/datasets/{dataset_id}/consentStores/{consen
+         * t_store_id}`. Cannot be changed after creation.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Default time to live for Consents created in this store. Must be
+         * at least 24 hours. Updating this field will not affect the expiration time
+         * of existing consents.
+         *
+         * @param string $defaultConsentTtl
+         */
+        public function setDefaultConsentTtl($defaultConsentTtl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultConsentTtl()
+        {
+        }
+        /**
+         * Optional. If `true`, UpdateConsent creates the Consent if it does not
+         * already exist. If unspecified, defaults to `false`.
+         *
+         * @param bool $enableConsentCreateOnUpdate
+         */
+        public function setEnableConsentCreateOnUpdate($enableConsentCreateOnUpdate)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableConsentCreateOnUpdate()
+        {
+        }
+        /**
+         * Optional. User-supplied key-value pairs used to organize consent stores.
+         * Label keys must be between 1 and 63 characters long, have a UTF-8 encoding
+         * of maximum 128 bytes, and must conform to the following PCRE regular
+         * expression: \p{Ll}\p{Lo}{0,62}. Label values must be between 1 and 63
+         * characters long, have a UTF-8 encoding of maximum 128 bytes, and must
+         * conform to the following PCRE regular expression:
+         * [\p{Ll}\p{Lo}\p{N}_-]{0,63}. No more than 64 labels can be associated with
+         * a given store. For more information:
+         * https://cloud.google.com/healthcare/docs/how-tos/labeling-resources
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Identifier. Resource name of the consent store, of the form `projects/{proj
+         * ect_id}/locations/{location_id}/datasets/{dataset_id}/consentStores/{consen
+         * t_store_id}`. Cannot be changed after creation.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\ConsentStore registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultConsentTtl()
-    {
-    }
-    /**
-     * Optional. If `true`, UpdateConsent creates the Consent if it does not
-     * already exist. If unspecified, defaults to `false`.
-     *
-     * @param bool $enableConsentCreateOnUpdate
-     */
-    public function setEnableConsentCreateOnUpdate($enableConsentCreateOnUpdate)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableConsentCreateOnUpdate()
-    {
-    }
-    /**
-     * Optional. User-supplied key-value pairs used to organize consent stores.
-     * Label keys must be between 1 and 63 characters long, have a UTF-8 encoding
-     * of maximum 128 bytes, and must conform to the following PCRE regular
-     * expression: \p{Ll}\p{Lo}{0,62}. Label values must be between 1 and 63
-     * characters long, have a UTF-8 encoding of maximum 128 bytes, and must
-     * conform to the following PCRE regular expression:
-     * [\p{Ll}\p{Lo}\p{N}_-]{0,63}. No more than 64 labels can be associated with
-     * a given store. For more information:
-     * https://cloud.google.com/healthcare/docs/how-tos/labeling-resources
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Identifier. Resource name of the consent store, of the form `projects/{proj
-     * ect_id}/locations/{location_id}/datasets/{dataset_id}/consentStores/{consen
-     * t_store_id}`. Cannot be changed after creation.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudHealthcare_ConsentStore extends \Google\Service\CloudHealthcare\ConsentStore
     {
     }
 }

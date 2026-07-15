@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1HumanReviewValidationMetadata extends \Google\Model
-{
-    /**
-     * @var float
-     */
-    public $confidenceThreshold;
-    /**
-     * @var bool
-     */
-    public $enableValidation;
-    /**
-     * @param float
-     */
-    public function setConfidenceThreshold($confidenceThreshold)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1HumanReviewValidationMetadata extends \Google\Model
     {
+        /**
+         * @var float
+         */
+        public $confidenceThreshold;
+        /**
+         * @var bool
+         */
+        public $enableValidation;
+        /**
+         * @param float
+         */
+        public function setConfidenceThreshold($confidenceThreshold)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidenceThreshold()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setEnableValidation($enableValidation)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableValidation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1HumanReviewValidationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidenceThreshold()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setEnableValidation($enableValidation)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableValidation()
+    class Google_Service_Document_GoogleCloudDocumentaiV1HumanReviewValidationMetadata extends \Google\Service\Document\GoogleCloudDocumentaiV1HumanReviewValidationMetadata
     {
     }
 }

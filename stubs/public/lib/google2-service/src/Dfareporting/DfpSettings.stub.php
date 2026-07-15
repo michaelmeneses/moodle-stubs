@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class DfpSettings extends \Google\Model
-{
-    /**
-     * Ad Manager network code for this directory site.
-     *
-     * @var string
-     */
-    public $dfpNetworkCode;
-    /**
-     * Ad Manager network name for this directory site.
-     *
-     * @var string
-     */
-    public $dfpNetworkName;
-    /**
-     * Whether this directory site accepts programmatic placements.
-     *
-     * @var bool
-     */
-    public $programmaticPlacementAccepted;
-    /**
-     * Whether this directory site accepts publisher-paid tags.
-     *
-     * @var bool
-     */
-    public $pubPaidPlacementAccepted;
-    /**
-     * Whether this directory site is available only via Publisher Portal.
-     *
-     * @var bool
-     */
-    public $publisherPortalOnly;
-    /**
-     * Ad Manager network code for this directory site.
-     *
-     * @param string $dfpNetworkCode
-     */
-    public function setDfpNetworkCode($dfpNetworkCode)
+namespace Google\Service\Dfareporting {
+    class DfpSettings extends \Google\Model
     {
+        /**
+         * Ad Manager network code for this directory site.
+         *
+         * @var string
+         */
+        public $dfpNetworkCode;
+        /**
+         * Ad Manager network name for this directory site.
+         *
+         * @var string
+         */
+        public $dfpNetworkName;
+        /**
+         * Whether this directory site accepts programmatic placements.
+         *
+         * @var bool
+         */
+        public $programmaticPlacementAccepted;
+        /**
+         * Whether this directory site accepts publisher-paid tags.
+         *
+         * @var bool
+         */
+        public $pubPaidPlacementAccepted;
+        /**
+         * Whether this directory site is available only via Publisher Portal.
+         *
+         * @var bool
+         */
+        public $publisherPortalOnly;
+        /**
+         * Ad Manager network code for this directory site.
+         *
+         * @param string $dfpNetworkCode
+         */
+        public function setDfpNetworkCode($dfpNetworkCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDfpNetworkCode()
+        {
+        }
+        /**
+         * Ad Manager network name for this directory site.
+         *
+         * @param string $dfpNetworkName
+         */
+        public function setDfpNetworkName($dfpNetworkName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDfpNetworkName()
+        {
+        }
+        /**
+         * Whether this directory site accepts programmatic placements.
+         *
+         * @param bool $programmaticPlacementAccepted
+         */
+        public function setProgrammaticPlacementAccepted($programmaticPlacementAccepted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getProgrammaticPlacementAccepted()
+        {
+        }
+        /**
+         * Whether this directory site accepts publisher-paid tags.
+         *
+         * @param bool $pubPaidPlacementAccepted
+         */
+        public function setPubPaidPlacementAccepted($pubPaidPlacementAccepted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPubPaidPlacementAccepted()
+        {
+        }
+        /**
+         * Whether this directory site is available only via Publisher Portal.
+         *
+         * @param bool $publisherPortalOnly
+         */
+        public function setPublisherPortalOnly($publisherPortalOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPublisherPortalOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\DfpSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDfpNetworkCode()
-    {
-    }
-    /**
-     * Ad Manager network name for this directory site.
-     *
-     * @param string $dfpNetworkName
-     */
-    public function setDfpNetworkName($dfpNetworkName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDfpNetworkName()
-    {
-    }
-    /**
-     * Whether this directory site accepts programmatic placements.
-     *
-     * @param bool $programmaticPlacementAccepted
-     */
-    public function setProgrammaticPlacementAccepted($programmaticPlacementAccepted)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getProgrammaticPlacementAccepted()
-    {
-    }
-    /**
-     * Whether this directory site accepts publisher-paid tags.
-     *
-     * @param bool $pubPaidPlacementAccepted
-     */
-    public function setPubPaidPlacementAccepted($pubPaidPlacementAccepted)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPubPaidPlacementAccepted()
-    {
-    }
-    /**
-     * Whether this directory site is available only via Publisher Portal.
-     *
-     * @param bool $publisherPortalOnly
-     */
-    public function setPublisherPortalOnly($publisherPortalOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPublisherPortalOnly()
+    class Google_Service_Dfareporting_DfpSettings extends \Google\Service\Dfareporting\DfpSettings
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class GoSettings extends \Google\Model
-{
-    protected $commonType = CommonLanguageSettings::class;
-    protected $commonDataType = '';
-    /**
-     * Map of service names to renamed services. Keys are the package relative
-     * service names and values are the name to be used for the service client and
-     * call options. Example: publishing: go_settings: renamed_services:
-     * Publisher: TopicAdmin
-     *
-     * @var string[]
-     */
-    public $renamedServices;
-    /**
-     * Some settings.
-     *
-     * @param CommonLanguageSettings $common
-     */
-    public function setCommon(CommonLanguageSettings $common)
+namespace Google\Service\ServiceManagement {
+    class GoSettings extends \Google\Model
     {
+        protected $commonType = CommonLanguageSettings::class;
+        protected $commonDataType = '';
+        /**
+         * Map of service names to renamed services. Keys are the package relative
+         * service names and values are the name to be used for the service client and
+         * call options. Example: publishing: go_settings: renamed_services:
+         * Publisher: TopicAdmin
+         *
+         * @var string[]
+         */
+        public $renamedServices;
+        /**
+         * Some settings.
+         *
+         * @param CommonLanguageSettings $common
+         */
+        public function setCommon(CommonLanguageSettings $common)
+        {
+        }
+        /**
+         * @return CommonLanguageSettings
+         */
+        public function getCommon()
+        {
+        }
+        /**
+         * Map of service names to renamed services. Keys are the package relative
+         * service names and values are the name to be used for the service client and
+         * call options. Example: publishing: go_settings: renamed_services:
+         * Publisher: TopicAdmin
+         *
+         * @param string[] $renamedServices
+         */
+        public function setRenamedServices($renamedServices)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRenamedServices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CommonLanguageSettings
+     * Runtime class alias of \Google\Service\ServiceManagement\GoSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommon()
-    {
-    }
-    /**
-     * Map of service names to renamed services. Keys are the package relative
-     * service names and values are the name to be used for the service client and
-     * call options. Example: publishing: go_settings: renamed_services:
-     * Publisher: TopicAdmin
-     *
-     * @param string[] $renamedServices
-     */
-    public function setRenamedServices($renamedServices)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRenamedServices()
+    class Google_Service_ServiceManagement_GoSettings extends \Google\Service\ServiceManagement\GoSettings
     {
     }
 }

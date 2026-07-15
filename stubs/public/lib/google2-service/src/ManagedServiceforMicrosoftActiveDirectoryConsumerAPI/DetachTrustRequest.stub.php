@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI;
-
-class DetachTrustRequest extends \Google\Model
-{
-    protected $trustType = Trust::class;
-    protected $trustDataType = '';
-    /**
-     * Required. The domain trust resource to removed.
-     *
-     * @param Trust $trust
-     */
-    public function setTrust(Trust $trust)
+namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI {
+    class DetachTrustRequest extends \Google\Model
     {
+        protected $trustType = Trust::class;
+        protected $trustDataType = '';
+        /**
+         * Required. The domain trust resource to removed.
+         *
+         * @param Trust $trust
+         */
+        public function setTrust(Trust $trust)
+        {
+        }
+        /**
+         * @return Trust
+         */
+        public function getTrust()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Trust
+     * Runtime class alias of \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\DetachTrustRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTrust()
+    class Google_Service_ManagedServiceforMicrosoftActiveDirectoryConsumerAPI_DetachTrustRequest extends \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\DetachTrustRequest
     {
     }
 }

@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class AndroidTest extends \Google\Model
-{
-    protected $androidAppInfoType = AndroidAppInfo::class;
-    protected $androidAppInfoDataType = '';
-    protected $androidInstrumentationTestType = AndroidInstrumentationTest::class;
-    protected $androidInstrumentationTestDataType = '';
-    protected $androidRoboTestType = AndroidRoboTest::class;
-    protected $androidRoboTestDataType = '';
-    protected $androidTestLoopType = AndroidTestLoop::class;
-    protected $androidTestLoopDataType = '';
-    protected $testTimeoutType = Duration::class;
-    protected $testTimeoutDataType = '';
-    /**
-     * Information about the application under test.
-     *
-     * @param AndroidAppInfo $androidAppInfo
-     */
-    public function setAndroidAppInfo(AndroidAppInfo $androidAppInfo)
+namespace Google\Service\ToolResults {
+    class AndroidTest extends \Google\Model
     {
+        protected $androidAppInfoType = AndroidAppInfo::class;
+        protected $androidAppInfoDataType = '';
+        protected $androidInstrumentationTestType = AndroidInstrumentationTest::class;
+        protected $androidInstrumentationTestDataType = '';
+        protected $androidRoboTestType = AndroidRoboTest::class;
+        protected $androidRoboTestDataType = '';
+        protected $androidTestLoopType = AndroidTestLoop::class;
+        protected $androidTestLoopDataType = '';
+        protected $testTimeoutType = Duration::class;
+        protected $testTimeoutDataType = '';
+        /**
+         * Information about the application under test.
+         *
+         * @param AndroidAppInfo $androidAppInfo
+         */
+        public function setAndroidAppInfo(AndroidAppInfo $androidAppInfo)
+        {
+        }
+        /**
+         * @return AndroidAppInfo
+         */
+        public function getAndroidAppInfo()
+        {
+        }
+        /**
+         * An Android instrumentation test.
+         *
+         * @param AndroidInstrumentationTest $androidInstrumentationTest
+         */
+        public function setAndroidInstrumentationTest(AndroidInstrumentationTest $androidInstrumentationTest)
+        {
+        }
+        /**
+         * @return AndroidInstrumentationTest
+         */
+        public function getAndroidInstrumentationTest()
+        {
+        }
+        /**
+         * An Android robo test.
+         *
+         * @param AndroidRoboTest $androidRoboTest
+         */
+        public function setAndroidRoboTest(AndroidRoboTest $androidRoboTest)
+        {
+        }
+        /**
+         * @return AndroidRoboTest
+         */
+        public function getAndroidRoboTest()
+        {
+        }
+        /**
+         * An Android test loop.
+         *
+         * @param AndroidTestLoop $androidTestLoop
+         */
+        public function setAndroidTestLoop(AndroidTestLoop $androidTestLoop)
+        {
+        }
+        /**
+         * @return AndroidTestLoop
+         */
+        public function getAndroidTestLoop()
+        {
+        }
+        /**
+         * Max time a test is allowed to run before it is automatically cancelled.
+         *
+         * @param Duration $testTimeout
+         */
+        public function setTestTimeout(Duration $testTimeout)
+        {
+        }
+        /**
+         * @return Duration
+         */
+        public function getTestTimeout()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AndroidAppInfo
+     * Runtime class alias of \Google\Service\ToolResults\AndroidTest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndroidAppInfo()
-    {
-    }
-    /**
-     * An Android instrumentation test.
-     *
-     * @param AndroidInstrumentationTest $androidInstrumentationTest
-     */
-    public function setAndroidInstrumentationTest(AndroidInstrumentationTest $androidInstrumentationTest)
-    {
-    }
-    /**
-     * @return AndroidInstrumentationTest
-     */
-    public function getAndroidInstrumentationTest()
-    {
-    }
-    /**
-     * An Android robo test.
-     *
-     * @param AndroidRoboTest $androidRoboTest
-     */
-    public function setAndroidRoboTest(AndroidRoboTest $androidRoboTest)
-    {
-    }
-    /**
-     * @return AndroidRoboTest
-     */
-    public function getAndroidRoboTest()
-    {
-    }
-    /**
-     * An Android test loop.
-     *
-     * @param AndroidTestLoop $androidTestLoop
-     */
-    public function setAndroidTestLoop(AndroidTestLoop $androidTestLoop)
-    {
-    }
-    /**
-     * @return AndroidTestLoop
-     */
-    public function getAndroidTestLoop()
-    {
-    }
-    /**
-     * Max time a test is allowed to run before it is automatically cancelled.
-     *
-     * @param Duration $testTimeout
-     */
-    public function setTestTimeout(Duration $testTimeout)
-    {
-    }
-    /**
-     * @return Duration
-     */
-    public function getTestTimeout()
+    class Google_Service_ToolResults_AndroidTest extends \Google\Service\ToolResults\AndroidTest
     {
     }
 }

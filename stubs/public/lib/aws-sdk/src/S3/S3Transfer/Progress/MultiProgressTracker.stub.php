@@ -8,6 +8,7 @@
  */
 namespace Aws\S3\S3Transfer\Progress;
 
+use Closure;
 final class MultiProgressTracker extends AbstractTransferListener implements ProgressTrackerInterface
 {
     private const CLEAR_ASCII_CODE = "\x1b[2J\x1b[H";

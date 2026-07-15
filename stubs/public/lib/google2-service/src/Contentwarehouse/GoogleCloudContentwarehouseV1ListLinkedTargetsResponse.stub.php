@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1ListLinkedTargetsResponse extends \Google\Collection
-{
-    protected $collection_key = 'documentLinks';
-    protected $documentLinksType = GoogleCloudContentwarehouseV1DocumentLink::class;
-    protected $documentLinksDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Target document-links.
-     *
-     * @param GoogleCloudContentwarehouseV1DocumentLink[] $documentLinks
-     */
-    public function setDocumentLinks($documentLinks)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1ListLinkedTargetsResponse extends \Google\Collection
     {
+        protected $collection_key = 'documentLinks';
+        protected $documentLinksType = GoogleCloudContentwarehouseV1DocumentLink::class;
+        protected $documentLinksDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Target document-links.
+         *
+         * @param GoogleCloudContentwarehouseV1DocumentLink[] $documentLinks
+         */
+        public function setDocumentLinks($documentLinks)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1DocumentLink[]
+         */
+        public function getDocumentLinks()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContentwarehouseV1DocumentLink[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ListLinkedTargetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentLinks()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1ListLinkedTargetsResponse extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ListLinkedTargetsResponse
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class HardwareKeyMetadata extends \Google\Model
-{
-    /**
-     * Description about the hardware key.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Description about the hardware key.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Gmail {
+    class HardwareKeyMetadata extends \Google\Model
     {
+        /**
+         * Description about the hardware key.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Description about the hardware key.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Gmail\HardwareKeyMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
+    class Google_Service_Gmail_HardwareKeyMetadata extends \Google\Service\Gmail\HardwareKeyMetadata
     {
     }
 }

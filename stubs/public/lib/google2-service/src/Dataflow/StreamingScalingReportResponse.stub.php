@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class StreamingScalingReportResponse extends \Google\Model
-{
-    /**
-     * Maximum thread count limit;
-     *
-     * @var int
-     */
-    public $maximumThreadCount;
-    /**
-     * Maximum thread count limit;
-     *
-     * @param int $maximumThreadCount
-     */
-    public function setMaximumThreadCount($maximumThreadCount)
+namespace Google\Service\Dataflow {
+    class StreamingScalingReportResponse extends \Google\Model
     {
+        /**
+         * Maximum thread count limit;
+         *
+         * @var int
+         */
+        public $maximumThreadCount;
+        /**
+         * Maximum thread count limit;
+         *
+         * @param int $maximumThreadCount
+         */
+        public function setMaximumThreadCount($maximumThreadCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaximumThreadCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dataflow\StreamingScalingReportResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaximumThreadCount()
+    class Google_Service_Dataflow_StreamingScalingReportResponse extends \Google\Service\Dataflow\StreamingScalingReportResponse
     {
     }
 }

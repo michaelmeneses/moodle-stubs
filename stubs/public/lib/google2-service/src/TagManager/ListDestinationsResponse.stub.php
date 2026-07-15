@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class ListDestinationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'destination';
-    protected $destinationType = Destination::class;
-    protected $destinationDataType = 'array';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * All Destinations linked to a GTM Container.
-     *
-     * @param Destination[] $destination
-     */
-    public function setDestination($destination)
+namespace Google\Service\TagManager {
+    class ListDestinationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'destination';
+        protected $destinationType = Destination::class;
+        protected $destinationDataType = 'array';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * All Destinations linked to a GTM Container.
+         *
+         * @param Destination[] $destination
+         */
+        public function setDestination($destination)
+        {
+        }
+        /**
+         * @return Destination[]
+         */
+        public function getDestination()
+        {
+        }
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Destination[]
+     * Runtime class alias of \Google\Service\TagManager\ListDestinationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestination()
-    {
-    }
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_TagManager_ListDestinationsResponse extends \Google\Service\TagManager\ListDestinationsResponse
     {
     }
 }

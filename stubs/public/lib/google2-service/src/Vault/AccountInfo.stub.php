@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class AccountInfo extends \Google\Collection
-{
-    protected $collection_key = 'emails';
-    /**
-     * A set of accounts to search.
-     *
-     * @var string[]
-     */
-    public $emails;
-    /**
-     * A set of accounts to search.
-     *
-     * @param string[] $emails
-     */
-    public function setEmails($emails)
+namespace Google\Service\Vault {
+    class AccountInfo extends \Google\Collection
     {
+        protected $collection_key = 'emails';
+        /**
+         * A set of accounts to search.
+         *
+         * @var string[]
+         */
+        public $emails;
+        /**
+         * A set of accounts to search.
+         *
+         * @param string[] $emails
+         */
+        public function setEmails($emails)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEmails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Vault\AccountInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmails()
+    class Google_Service_Vault_AccountInfo extends \Google\Service\Vault\AccountInfo
     {
     }
 }

@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ProductAttributeInterval extends \Google\Model
-{
-    protected $intervalType = GoogleCloudRetailV2Interval::class;
-    protected $intervalDataType = '';
-    /**
-     * The attribute name (e.g. "length")
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The numeric interval (e.g. [10, 20))
-     *
-     * @param GoogleCloudRetailV2Interval $interval
-     */
-    public function setInterval(GoogleCloudRetailV2Interval $interval)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ProductAttributeInterval extends \Google\Model
     {
+        protected $intervalType = GoogleCloudRetailV2Interval::class;
+        protected $intervalDataType = '';
+        /**
+         * The attribute name (e.g. "length")
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The numeric interval (e.g. [10, 20))
+         *
+         * @param GoogleCloudRetailV2Interval $interval
+         */
+        public function setInterval(GoogleCloudRetailV2Interval $interval)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2Interval
+         */
+        public function getInterval()
+        {
+        }
+        /**
+         * The attribute name (e.g. "length")
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2Interval
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ProductAttributeInterval registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInterval()
-    {
-    }
-    /**
-     * The attribute name (e.g. "length")
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ProductAttributeInterval extends \Google\Service\CloudRetail\GoogleCloudRetailV2ProductAttributeInterval
     {
     }
 }

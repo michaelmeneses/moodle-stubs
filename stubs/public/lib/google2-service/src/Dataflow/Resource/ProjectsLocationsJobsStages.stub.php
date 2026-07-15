@@ -21,45 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow\Resource;
-
-/**
- * The "stages" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dataflowService = new Google\Service\Dataflow(...);
- *   $stages = $dataflowService->projects_locations_jobs_stages;
- *  </code>
- */
-class ProjectsLocationsJobsStages extends \Google\Service\Resource
-{
+namespace Google\Service\Dataflow\Resource {
+    use Google\Service\Dataflow\StageExecutionDetails;
     /**
-     * Request detailed information about the execution status of a stage of the
-     * job. EXPERIMENTAL. This API is subject to change or removal without notice.
-     * (stages.getExecutionDetails)
-     *
-     * @param string $projectId A project id.
-     * @param string $location The [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
-     * contains the job specified by job_id.
-     * @param string $jobId The job to get execution details for.
-     * @param string $stageId The stage for which to fetch information.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string endTime Upper time bound of work items to include, by start
-     * time.
-     * @opt_param int pageSize If specified, determines the maximum number of work
-     * items to return. If unspecified, the service may choose an appropriate
-     * default, or may return an arbitrarily large number of results.
-     * @opt_param string pageToken If supplied, this should be the value of
-     * next_page_token returned by an earlier call. This will cause the next page of
-     * results to be returned.
-     * @opt_param string startTime Lower time bound of work items to include, by
-     * start time.
-     * @return StageExecutionDetails
-     * @throws \Google\Service\Exception
+     * The "stages" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dataflowService = new Google\Service\Dataflow(...);
+     *   $stages = $dataflowService->projects_locations_jobs_stages;
+     *  </code>
      */
-    public function getExecutionDetails($projectId, $location, $jobId, $stageId, $optParams = [])
+    class ProjectsLocationsJobsStages extends \Google\Service\Resource
+    {
+        /**
+         * Request detailed information about the execution status of a stage of the
+         * job. EXPERIMENTAL. This API is subject to change or removal without notice.
+         * (stages.getExecutionDetails)
+         *
+         * @param string $projectId A project id.
+         * @param string $location The [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
+         * contains the job specified by job_id.
+         * @param string $jobId The job to get execution details for.
+         * @param string $stageId The stage for which to fetch information.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string endTime Upper time bound of work items to include, by start
+         * time.
+         * @opt_param int pageSize If specified, determines the maximum number of work
+         * items to return. If unspecified, the service may choose an appropriate
+         * default, or may return an arbitrarily large number of results.
+         * @opt_param string pageToken If supplied, this should be the value of
+         * next_page_token returned by an earlier call. This will cause the next page of
+         * results to be returned.
+         * @opt_param string startTime Lower time bound of work items to include, by
+         * start time.
+         * @return StageExecutionDetails
+         * @throws \Google\Service\Exception
+         */
+        public function getExecutionDetails($projectId, $location, $jobId, $stageId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dataflow\Resource\ProjectsLocationsJobsStages registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dataflow_Resource_ProjectsLocationsJobsStages extends \Google\Service\Dataflow\Resource\ProjectsLocationsJobsStages
     {
     }
 }

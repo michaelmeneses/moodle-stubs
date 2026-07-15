@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class ListLbRouteExtensionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $lbRouteExtensionsType = LbRouteExtension::class;
-    protected $lbRouteExtensionsDataType = 'array';
-    /**
-     * A token identifying a page of results that the server returns.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of `LbRouteExtension` resources.
-     *
-     * @param LbRouteExtension[] $lbRouteExtensions
-     */
-    public function setLbRouteExtensions($lbRouteExtensions)
+namespace Google\Service\NetworkServices {
+    class ListLbRouteExtensionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $lbRouteExtensionsType = LbRouteExtension::class;
+        protected $lbRouteExtensionsDataType = 'array';
+        /**
+         * A token identifying a page of results that the server returns.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of `LbRouteExtension` resources.
+         *
+         * @param LbRouteExtension[] $lbRouteExtensions
+         */
+        public function setLbRouteExtensions($lbRouteExtensions)
+        {
+        }
+        /**
+         * @return LbRouteExtension[]
+         */
+        public function getLbRouteExtensions()
+        {
+        }
+        /**
+         * A token identifying a page of results that the server returns.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LbRouteExtension[]
+     * Runtime class alias of \Google\Service\NetworkServices\ListLbRouteExtensionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLbRouteExtensions()
-    {
-    }
-    /**
-     * A token identifying a page of results that the server returns.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_NetworkServices_ListLbRouteExtensionsResponse extends \Google\Service\NetworkServices\ListLbRouteExtensionsResponse
     {
     }
 }

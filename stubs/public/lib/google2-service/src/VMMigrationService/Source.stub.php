@@ -21,173 +21,182 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class Source extends \Google\Model
-{
-    protected $awsType = AwsSourceDetails::class;
-    protected $awsDataType = '';
-    protected $azureType = AzureSourceDetails::class;
-    protected $azureDataType = '';
-    /**
-     * Output only. The create time timestamp.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * User-provided description of the source.
-     *
-     * @var string
-     */
-    public $description;
-    protected $encryptionType = Encryption::class;
-    protected $encryptionDataType = '';
-    /**
-     * The labels of the source.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Output only. The Source name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The update time timestamp.
-     *
-     * @var string
-     */
-    public $updateTime;
-    protected $vmwareType = VmwareSourceDetails::class;
-    protected $vmwareDataType = '';
-    /**
-     * AWS type source details.
-     *
-     * @param AwsSourceDetails $aws
-     */
-    public function setAws(AwsSourceDetails $aws)
+namespace Google\Service\VMMigrationService {
+    class Source extends \Google\Model
     {
+        protected $awsType = AwsSourceDetails::class;
+        protected $awsDataType = '';
+        protected $azureType = AzureSourceDetails::class;
+        protected $azureDataType = '';
+        /**
+         * Output only. The create time timestamp.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * User-provided description of the source.
+         *
+         * @var string
+         */
+        public $description;
+        protected $encryptionType = Encryption::class;
+        protected $encryptionDataType = '';
+        /**
+         * The labels of the source.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Output only. The Source name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The update time timestamp.
+         *
+         * @var string
+         */
+        public $updateTime;
+        protected $vmwareType = VmwareSourceDetails::class;
+        protected $vmwareDataType = '';
+        /**
+         * AWS type source details.
+         *
+         * @param AwsSourceDetails $aws
+         */
+        public function setAws(AwsSourceDetails $aws)
+        {
+        }
+        /**
+         * @return AwsSourceDetails
+         */
+        public function getAws()
+        {
+        }
+        /**
+         * Azure type source details.
+         *
+         * @param AzureSourceDetails $azure
+         */
+        public function setAzure(AzureSourceDetails $azure)
+        {
+        }
+        /**
+         * @return AzureSourceDetails
+         */
+        public function getAzure()
+        {
+        }
+        /**
+         * Output only. The create time timestamp.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * User-provided description of the source.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. Immutable. The encryption details of the source data stored by
+         * the service.
+         *
+         * @param Encryption $encryption
+         */
+        public function setEncryption(Encryption $encryption)
+        {
+        }
+        /**
+         * @return Encryption
+         */
+        public function getEncryption()
+        {
+        }
+        /**
+         * The labels of the source.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Output only. The Source name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The update time timestamp.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * Vmware type source details.
+         *
+         * @param VmwareSourceDetails $vmware
+         */
+        public function setVmware(VmwareSourceDetails $vmware)
+        {
+        }
+        /**
+         * @return VmwareSourceDetails
+         */
+        public function getVmware()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AwsSourceDetails
+     * Runtime class alias of \Google\Service\VMMigrationService\Source registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAws()
-    {
-    }
-    /**
-     * Azure type source details.
-     *
-     * @param AzureSourceDetails $azure
-     */
-    public function setAzure(AzureSourceDetails $azure)
-    {
-    }
-    /**
-     * @return AzureSourceDetails
-     */
-    public function getAzure()
-    {
-    }
-    /**
-     * Output only. The create time timestamp.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * User-provided description of the source.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. Immutable. The encryption details of the source data stored by
-     * the service.
-     *
-     * @param Encryption $encryption
-     */
-    public function setEncryption(Encryption $encryption)
-    {
-    }
-    /**
-     * @return Encryption
-     */
-    public function getEncryption()
-    {
-    }
-    /**
-     * The labels of the source.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Output only. The Source name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The update time timestamp.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * Vmware type source details.
-     *
-     * @param VmwareSourceDetails $vmware
-     */
-    public function setVmware(VmwareSourceDetails $vmware)
-    {
-    }
-    /**
-     * @return VmwareSourceDetails
-     */
-    public function getVmware()
+    class Google_Service_VMMigrationService_Source extends \Google\Service\VMMigrationService\Source
     {
     }
 }

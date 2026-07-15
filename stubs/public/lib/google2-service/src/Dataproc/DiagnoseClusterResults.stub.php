@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class DiagnoseClusterResults extends \Google\Model
-{
-    /**
-     * Output only. The Cloud Storage URI of the diagnostic output. The output
-     * report is a plain text file with a summary of collected diagnostics.
-     *
-     * @var string
-     */
-    public $outputUri;
-    /**
-     * Output only. The Cloud Storage URI of the diagnostic output. The output
-     * report is a plain text file with a summary of collected diagnostics.
-     *
-     * @param string $outputUri
-     */
-    public function setOutputUri($outputUri)
+namespace Google\Service\Dataproc {
+    class DiagnoseClusterResults extends \Google\Model
     {
+        /**
+         * Output only. The Cloud Storage URI of the diagnostic output. The output
+         * report is a plain text file with a summary of collected diagnostics.
+         *
+         * @var string
+         */
+        public $outputUri;
+        /**
+         * Output only. The Cloud Storage URI of the diagnostic output. The output
+         * report is a plain text file with a summary of collected diagnostics.
+         *
+         * @param string $outputUri
+         */
+        public function setOutputUri($outputUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\DiagnoseClusterResults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutputUri()
+    class Google_Service_Dataproc_DiagnoseClusterResults extends \Google\Service\Dataproc\DiagnoseClusterResults
     {
     }
 }

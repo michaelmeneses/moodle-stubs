@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1TaskInfrastructureSpecContainerImageRuntime extends \Google\Collection
-{
-    protected $collection_key = 'pythonPackages';
-    /**
-     * Optional. Container image to use.
-     *
-     * @var string
-     */
-    public $image;
-    /**
-     * Optional. A list of Java JARS to add to the classpath. Valid input includes
-     * Cloud Storage URIs to Jar binaries. For example, gs://bucket-
-     * name/my/path/to/file.jar
-     *
-     * @var string[]
-     */
-    public $javaJars;
-    /**
-     * Optional. Override to common configuration of open source components
-     * installed on the Dataproc cluster. The properties to set on daemon config
-     * files. Property keys are specified in prefix:property format, for example
-     * core:hadoop.tmp.dir. For more information, see Cluster properties
-     * (https://cloud.google.com/dataproc/docs/concepts/cluster-properties).
-     *
-     * @var string[]
-     */
-    public $properties;
-    /**
-     * Optional. A list of python packages to be installed. Valid formats include
-     * Cloud Storage URI to a PIP installable library. For example, gs://bucket-
-     * name/my/path/to/lib.tar.gz
-     *
-     * @var string[]
-     */
-    public $pythonPackages;
-    /**
-     * Optional. Container image to use.
-     *
-     * @param string $image
-     */
-    public function setImage($image)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1TaskInfrastructureSpecContainerImageRuntime extends \Google\Collection
     {
+        protected $collection_key = 'pythonPackages';
+        /**
+         * Optional. Container image to use.
+         *
+         * @var string
+         */
+        public $image;
+        /**
+         * Optional. A list of Java JARS to add to the classpath. Valid input includes
+         * Cloud Storage URIs to Jar binaries. For example, gs://bucket-
+         * name/my/path/to/file.jar
+         *
+         * @var string[]
+         */
+        public $javaJars;
+        /**
+         * Optional. Override to common configuration of open source components
+         * installed on the Dataproc cluster. The properties to set on daemon config
+         * files. Property keys are specified in prefix:property format, for example
+         * core:hadoop.tmp.dir. For more information, see Cluster properties
+         * (https://cloud.google.com/dataproc/docs/concepts/cluster-properties).
+         *
+         * @var string[]
+         */
+        public $properties;
+        /**
+         * Optional. A list of python packages to be installed. Valid formats include
+         * Cloud Storage URI to a PIP installable library. For example, gs://bucket-
+         * name/my/path/to/lib.tar.gz
+         *
+         * @var string[]
+         */
+        public $pythonPackages;
+        /**
+         * Optional. Container image to use.
+         *
+         * @param string $image
+         */
+        public function setImage($image)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * Optional. A list of Java JARS to add to the classpath. Valid input includes
+         * Cloud Storage URIs to Jar binaries. For example, gs://bucket-
+         * name/my/path/to/file.jar
+         *
+         * @param string[] $javaJars
+         */
+        public function setJavaJars($javaJars)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getJavaJars()
+        {
+        }
+        /**
+         * Optional. Override to common configuration of open source components
+         * installed on the Dataproc cluster. The properties to set on daemon config
+         * files. Property keys are specified in prefix:property format, for example
+         * core:hadoop.tmp.dir. For more information, see Cluster properties
+         * (https://cloud.google.com/dataproc/docs/concepts/cluster-properties).
+         *
+         * @param string[] $properties
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProperties()
+        {
+        }
+        /**
+         * Optional. A list of python packages to be installed. Valid formats include
+         * Cloud Storage URI to a PIP installable library. For example, gs://bucket-
+         * name/my/path/to/lib.tar.gz
+         *
+         * @param string[] $pythonPackages
+         */
+        public function setPythonPackages($pythonPackages)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPythonPackages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1TaskInfrastructureSpecContainerImageRuntime registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImage()
-    {
-    }
-    /**
-     * Optional. A list of Java JARS to add to the classpath. Valid input includes
-     * Cloud Storage URIs to Jar binaries. For example, gs://bucket-
-     * name/my/path/to/file.jar
-     *
-     * @param string[] $javaJars
-     */
-    public function setJavaJars($javaJars)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getJavaJars()
-    {
-    }
-    /**
-     * Optional. Override to common configuration of open source components
-     * installed on the Dataproc cluster. The properties to set on daemon config
-     * files. Property keys are specified in prefix:property format, for example
-     * core:hadoop.tmp.dir. For more information, see Cluster properties
-     * (https://cloud.google.com/dataproc/docs/concepts/cluster-properties).
-     *
-     * @param string[] $properties
-     */
-    public function setProperties($properties)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProperties()
-    {
-    }
-    /**
-     * Optional. A list of python packages to be installed. Valid formats include
-     * Cloud Storage URI to a PIP installable library. For example, gs://bucket-
-     * name/my/path/to/lib.tar.gz
-     *
-     * @param string[] $pythonPackages
-     */
-    public function setPythonPackages($pythonPackages)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPythonPackages()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1TaskInfrastructureSpecContainerImageRuntime extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1TaskInfrastructureSpecContainerImageRuntime
     {
     }
 }

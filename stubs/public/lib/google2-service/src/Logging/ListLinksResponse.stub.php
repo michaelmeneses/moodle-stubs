@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class ListLinksResponse extends \Google\Collection
-{
-    protected $collection_key = 'links';
-    protected $linksType = Link::class;
-    protected $linksDataType = 'array';
-    /**
-     * If there might be more results than those appearing in this response, then
-     * nextPageToken is included. To get the next set of results, call the same
-     * method again using the value of nextPageToken as pageToken.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of links.
-     *
-     * @param Link[] $links
-     */
-    public function setLinks($links)
+namespace Google\Service\Logging {
+    class ListLinksResponse extends \Google\Collection
     {
+        protected $collection_key = 'links';
+        protected $linksType = Link::class;
+        protected $linksDataType = 'array';
+        /**
+         * If there might be more results than those appearing in this response, then
+         * nextPageToken is included. To get the next set of results, call the same
+         * method again using the value of nextPageToken as pageToken.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of links.
+         *
+         * @param Link[] $links
+         */
+        public function setLinks($links)
+        {
+        }
+        /**
+         * @return Link[]
+         */
+        public function getLinks()
+        {
+        }
+        /**
+         * If there might be more results than those appearing in this response, then
+         * nextPageToken is included. To get the next set of results, call the same
+         * method again using the value of nextPageToken as pageToken.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Link[]
+     * Runtime class alias of \Google\Service\Logging\ListLinksResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLinks()
-    {
-    }
-    /**
-     * If there might be more results than those appearing in this response, then
-     * nextPageToken is included. To get the next set of results, call the same
-     * method again using the value of nextPageToken as pageToken.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Logging_ListLinksResponse extends \Google\Service\Logging\ListLinksResponse
     {
     }
 }

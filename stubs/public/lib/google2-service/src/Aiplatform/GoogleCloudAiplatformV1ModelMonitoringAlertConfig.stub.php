@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ModelMonitoringAlertConfig extends \Google\Collection
-{
-    protected $collection_key = 'notificationChannels';
-    protected $emailAlertConfigType = GoogleCloudAiplatformV1ModelMonitoringAlertConfigEmailAlertConfig::class;
-    protected $emailAlertConfigDataType = '';
-    /**
-     * Dump the anomalies to Cloud Logging. The anomalies will be put to json
-     * payload encoded from proto ModelMonitoringStatsAnomalies. This can be
-     * further synced to Pub/Sub or any other services supported by Cloud Logging.
-     *
-     * @var bool
-     */
-    public $enableLogging;
-    /**
-     * Resource names of the NotificationChannels to send alert. Must be of the
-     * format `projects//notificationChannels/`
-     *
-     * @var string[]
-     */
-    public $notificationChannels;
-    /**
-     * Email alert config.
-     *
-     * @param GoogleCloudAiplatformV1ModelMonitoringAlertConfigEmailAlertConfig $emailAlertConfig
-     */
-    public function setEmailAlertConfig(GoogleCloudAiplatformV1ModelMonitoringAlertConfigEmailAlertConfig $emailAlertConfig)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ModelMonitoringAlertConfig extends \Google\Collection
     {
+        protected $collection_key = 'notificationChannels';
+        protected $emailAlertConfigType = GoogleCloudAiplatformV1ModelMonitoringAlertConfigEmailAlertConfig::class;
+        protected $emailAlertConfigDataType = '';
+        /**
+         * Dump the anomalies to Cloud Logging. The anomalies will be put to json
+         * payload encoded from proto ModelMonitoringStatsAnomalies. This can be
+         * further synced to Pub/Sub or any other services supported by Cloud Logging.
+         *
+         * @var bool
+         */
+        public $enableLogging;
+        /**
+         * Resource names of the NotificationChannels to send alert. Must be of the
+         * format `projects//notificationChannels/`
+         *
+         * @var string[]
+         */
+        public $notificationChannels;
+        /**
+         * Email alert config.
+         *
+         * @param GoogleCloudAiplatformV1ModelMonitoringAlertConfigEmailAlertConfig $emailAlertConfig
+         */
+        public function setEmailAlertConfig(GoogleCloudAiplatformV1ModelMonitoringAlertConfigEmailAlertConfig $emailAlertConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ModelMonitoringAlertConfigEmailAlertConfig
+         */
+        public function getEmailAlertConfig()
+        {
+        }
+        /**
+         * Dump the anomalies to Cloud Logging. The anomalies will be put to json
+         * payload encoded from proto ModelMonitoringStatsAnomalies. This can be
+         * further synced to Pub/Sub or any other services supported by Cloud Logging.
+         *
+         * @param bool $enableLogging
+         */
+        public function setEnableLogging($enableLogging)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableLogging()
+        {
+        }
+        /**
+         * Resource names of the NotificationChannels to send alert. Must be of the
+         * format `projects//notificationChannels/`
+         *
+         * @param string[] $notificationChannels
+         */
+        public function setNotificationChannels($notificationChannels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNotificationChannels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ModelMonitoringAlertConfigEmailAlertConfig
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelMonitoringAlertConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmailAlertConfig()
-    {
-    }
-    /**
-     * Dump the anomalies to Cloud Logging. The anomalies will be put to json
-     * payload encoded from proto ModelMonitoringStatsAnomalies. This can be
-     * further synced to Pub/Sub or any other services supported by Cloud Logging.
-     *
-     * @param bool $enableLogging
-     */
-    public function setEnableLogging($enableLogging)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableLogging()
-    {
-    }
-    /**
-     * Resource names of the NotificationChannels to send alert. Must be of the
-     * format `projects//notificationChannels/`
-     *
-     * @param string[] $notificationChannels
-     */
-    public function setNotificationChannels($notificationChannels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNotificationChannels()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ModelMonitoringAlertConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelMonitoringAlertConfig
     {
     }
 }

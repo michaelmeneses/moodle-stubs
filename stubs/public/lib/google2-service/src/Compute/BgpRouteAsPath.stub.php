@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class BgpRouteAsPath extends \Google\Collection
-{
-    public const TYPE_AS_PATH_TYPE_SEQUENCE = 'AS_PATH_TYPE_SEQUENCE';
-    public const TYPE_AS_PATH_TYPE_SET = 'AS_PATH_TYPE_SET';
-    protected $collection_key = 'asns32';
-    /**
-     * Output only. [Output only] ASNs in the path segment. When type is SEQUENCE,
-     * these are ordered.
-     *
-     * @var int[]
-     */
-    public $asns;
-    /**
-     * Output only. [Output only] ASNs in the path segment. This field is for
-     * better support of 32 bit ASNs as the other asns field suffers from overflow
-     * when the ASN is larger. When type is SEQUENCE, these are ordered.
-     *
-     * @var string[]
-     */
-    public $asns32;
-    /**
-     * Output only. [Output only] Type of AS-PATH segment (SEQUENCE or SET)
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. [Output only] ASNs in the path segment. When type is SEQUENCE,
-     * these are ordered.
-     *
-     * @param int[] $asns
-     */
-    public function setAsns($asns)
+namespace Google\Service\Compute {
+    class BgpRouteAsPath extends \Google\Collection
     {
+        public const TYPE_AS_PATH_TYPE_SEQUENCE = 'AS_PATH_TYPE_SEQUENCE';
+        public const TYPE_AS_PATH_TYPE_SET = 'AS_PATH_TYPE_SET';
+        protected $collection_key = 'asns32';
+        /**
+         * Output only. [Output only] ASNs in the path segment. When type is SEQUENCE,
+         * these are ordered.
+         *
+         * @var int[]
+         */
+        public $asns;
+        /**
+         * Output only. [Output only] ASNs in the path segment. This field is for
+         * better support of 32 bit ASNs as the other asns field suffers from overflow
+         * when the ASN is larger. When type is SEQUENCE, these are ordered.
+         *
+         * @var string[]
+         */
+        public $asns32;
+        /**
+         * Output only. [Output only] Type of AS-PATH segment (SEQUENCE or SET)
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. [Output only] ASNs in the path segment. When type is SEQUENCE,
+         * these are ordered.
+         *
+         * @param int[] $asns
+         */
+        public function setAsns($asns)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getAsns()
+        {
+        }
+        /**
+         * Output only. [Output only] ASNs in the path segment. This field is for
+         * better support of 32 bit ASNs as the other asns field suffers from overflow
+         * when the ASN is larger. When type is SEQUENCE, these are ordered.
+         *
+         * @param string[] $asns32
+         */
+        public function setAsns32($asns32)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAsns32()
+        {
+        }
+        /**
+         * Output only. [Output only] Type of AS-PATH segment (SEQUENCE or SET)
+         *
+         * Accepted values: AS_PATH_TYPE_SEQUENCE, AS_PATH_TYPE_SET
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int[]
+     * Runtime class alias of \Google\Service\Compute\BgpRouteAsPath registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAsns()
-    {
-    }
-    /**
-     * Output only. [Output only] ASNs in the path segment. This field is for
-     * better support of 32 bit ASNs as the other asns field suffers from overflow
-     * when the ASN is larger. When type is SEQUENCE, these are ordered.
-     *
-     * @param string[] $asns32
-     */
-    public function setAsns32($asns32)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAsns32()
-    {
-    }
-    /**
-     * Output only. [Output only] Type of AS-PATH segment (SEQUENCE or SET)
-     *
-     * Accepted values: AS_PATH_TYPE_SEQUENCE, AS_PATH_TYPE_SET
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Compute_BgpRouteAsPath extends \Google\Service\Compute\BgpRouteAsPath
     {
     }
 }

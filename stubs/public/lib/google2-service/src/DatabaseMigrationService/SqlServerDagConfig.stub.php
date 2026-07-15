@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class SqlServerDagConfig extends \Google\Model
-{
-    /**
-     * Required. The name of the linked server that points to the source SQL
-     * Server instance. Only used by DAG migrations.
-     *
-     * @var string
-     */
-    public $linkedServer;
-    /**
-     * Required. The name of the source availability group. Only used by DAG
-     * migrations.
-     *
-     * @var string
-     */
-    public $sourceAg;
-    /**
-     * Required. The name of the linked server that points to the source SQL
-     * Server instance. Only used by DAG migrations.
-     *
-     * @param string $linkedServer
-     */
-    public function setLinkedServer($linkedServer)
+namespace Google\Service\DatabaseMigrationService {
+    class SqlServerDagConfig extends \Google\Model
     {
+        /**
+         * Required. The name of the linked server that points to the source SQL
+         * Server instance. Only used by DAG migrations.
+         *
+         * @var string
+         */
+        public $linkedServer;
+        /**
+         * Required. The name of the source availability group. Only used by DAG
+         * migrations.
+         *
+         * @var string
+         */
+        public $sourceAg;
+        /**
+         * Required. The name of the linked server that points to the source SQL
+         * Server instance. Only used by DAG migrations.
+         *
+         * @param string $linkedServer
+         */
+        public function setLinkedServer($linkedServer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLinkedServer()
+        {
+        }
+        /**
+         * Required. The name of the source availability group. Only used by DAG
+         * migrations.
+         *
+         * @param string $sourceAg
+         */
+        public function setSourceAg($sourceAg)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceAg()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\SqlServerDagConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLinkedServer()
-    {
-    }
-    /**
-     * Required. The name of the source availability group. Only used by DAG
-     * migrations.
-     *
-     * @param string $sourceAg
-     */
-    public function setSourceAg($sourceAg)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceAg()
+    class Google_Service_DatabaseMigrationService_SqlServerDagConfig extends \Google\Service\DatabaseMigrationService\SqlServerDagConfig
     {
     }
 }

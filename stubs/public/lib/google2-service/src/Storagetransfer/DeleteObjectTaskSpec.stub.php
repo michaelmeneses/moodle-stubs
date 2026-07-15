@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer;
-
-class DeleteObjectTaskSpec extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $generation;
-    /**
-     * @var bool
-     */
-    public $hardDeleteVersionedObject;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $size;
-    /**
-     * @param string
-     */
-    public function setGeneration($generation)
+namespace Google\Service\Storagetransfer {
+    class DeleteObjectTaskSpec extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $generation;
+        /**
+         * @var bool
+         */
+        public $hardDeleteVersionedObject;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $size;
+        /**
+         * @param string
+         */
+        public function setGeneration($generation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeneration()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setHardDeleteVersionedObject($hardDeleteVersionedObject)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHardDeleteVersionedObject()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSize($size)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storagetransfer\DeleteObjectTaskSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGeneration()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setHardDeleteVersionedObject($hardDeleteVersionedObject)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHardDeleteVersionedObject()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSize($size)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSize()
+    class Google_Service_Storagetransfer_DeleteObjectTaskSpec extends \Google\Service\Storagetransfer\DeleteObjectTaskSpec
     {
     }
 }

@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class NetworkConfig extends \Google\Model
-{
-    /**
-     * Required. Name of the VPC subnet in which to create Private Service Connect
-     * (PSC) endpoints for the Kafka brokers and bootstrap address. Structured
-     * like: projects/{project}/regions/{region}/subnetworks/{subnet_id} The
-     * subnet must be located in the same region as the Kafka cluster. The project
-     * may differ. Multiple subnets from the same parent network must not be
-     * specified.
-     *
-     * @var string
-     */
-    public $subnet;
-    /**
-     * Required. Name of the VPC subnet in which to create Private Service Connect
-     * (PSC) endpoints for the Kafka brokers and bootstrap address. Structured
-     * like: projects/{project}/regions/{region}/subnetworks/{subnet_id} The
-     * subnet must be located in the same region as the Kafka cluster. The project
-     * may differ. Multiple subnets from the same parent network must not be
-     * specified.
-     *
-     * @param string $subnet
-     */
-    public function setSubnet($subnet)
+namespace Google\Service\ManagedKafka {
+    class NetworkConfig extends \Google\Model
     {
+        /**
+         * Required. Name of the VPC subnet in which to create Private Service Connect
+         * (PSC) endpoints for the Kafka brokers and bootstrap address. Structured
+         * like: projects/{project}/regions/{region}/subnetworks/{subnet_id} The
+         * subnet must be located in the same region as the Kafka cluster. The project
+         * may differ. Multiple subnets from the same parent network must not be
+         * specified.
+         *
+         * @var string
+         */
+        public $subnet;
+        /**
+         * Required. Name of the VPC subnet in which to create Private Service Connect
+         * (PSC) endpoints for the Kafka brokers and bootstrap address. Structured
+         * like: projects/{project}/regions/{region}/subnetworks/{subnet_id} The
+         * subnet must be located in the same region as the Kafka cluster. The project
+         * may differ. Multiple subnets from the same parent network must not be
+         * specified.
+         *
+         * @param string $subnet
+         */
+        public function setSubnet($subnet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ManagedKafka\NetworkConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSubnet()
+    class Google_Service_ManagedKafka_NetworkConfig extends \Google\Service\ManagedKafka\NetworkConfig
     {
     }
 }

@@ -21,246 +21,255 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class GraphicsStats extends \Google\Collection
-{
-    protected $collection_key = 'buckets';
-    protected $bucketsType = GraphicsStatsBucket::class;
-    protected $bucketsDataType = 'array';
-    /**
-     * Total "high input latency" events.
-     *
-     * @var string
-     */
-    public $highInputLatencyCount;
-    /**
-     * Total frames with slow render time. Should be <= total_frames.
-     *
-     * @var string
-     */
-    public $jankyFrames;
-    /**
-     * Total "missed vsync" events.
-     *
-     * @var string
-     */
-    public $missedVsyncCount;
-    /**
-     * 50th percentile frame render time in milliseconds.
-     *
-     * @var string
-     */
-    public $p50Millis;
-    /**
-     * 90th percentile frame render time in milliseconds.
-     *
-     * @var string
-     */
-    public $p90Millis;
-    /**
-     * 95th percentile frame render time in milliseconds.
-     *
-     * @var string
-     */
-    public $p95Millis;
-    /**
-     * 99th percentile frame render time in milliseconds.
-     *
-     * @var string
-     */
-    public $p99Millis;
-    /**
-     * Total "slow bitmap upload" events.
-     *
-     * @var string
-     */
-    public $slowBitmapUploadCount;
-    /**
-     * Total "slow draw" events.
-     *
-     * @var string
-     */
-    public $slowDrawCount;
-    /**
-     * Total "slow UI thread" events.
-     *
-     * @var string
-     */
-    public $slowUiThreadCount;
-    /**
-     * Total frames rendered by package.
-     *
-     * @var string
-     */
-    public $totalFrames;
-    /**
-     * Histogram of frame render times. There should be 154 buckets ranging from
-     * [5ms, 6ms) to [4950ms, infinity)
-     *
-     * @param GraphicsStatsBucket[] $buckets
-     */
-    public function setBuckets($buckets)
+namespace Google\Service\ToolResults {
+    class GraphicsStats extends \Google\Collection
     {
+        protected $collection_key = 'buckets';
+        protected $bucketsType = GraphicsStatsBucket::class;
+        protected $bucketsDataType = 'array';
+        /**
+         * Total "high input latency" events.
+         *
+         * @var string
+         */
+        public $highInputLatencyCount;
+        /**
+         * Total frames with slow render time. Should be <= total_frames.
+         *
+         * @var string
+         */
+        public $jankyFrames;
+        /**
+         * Total "missed vsync" events.
+         *
+         * @var string
+         */
+        public $missedVsyncCount;
+        /**
+         * 50th percentile frame render time in milliseconds.
+         *
+         * @var string
+         */
+        public $p50Millis;
+        /**
+         * 90th percentile frame render time in milliseconds.
+         *
+         * @var string
+         */
+        public $p90Millis;
+        /**
+         * 95th percentile frame render time in milliseconds.
+         *
+         * @var string
+         */
+        public $p95Millis;
+        /**
+         * 99th percentile frame render time in milliseconds.
+         *
+         * @var string
+         */
+        public $p99Millis;
+        /**
+         * Total "slow bitmap upload" events.
+         *
+         * @var string
+         */
+        public $slowBitmapUploadCount;
+        /**
+         * Total "slow draw" events.
+         *
+         * @var string
+         */
+        public $slowDrawCount;
+        /**
+         * Total "slow UI thread" events.
+         *
+         * @var string
+         */
+        public $slowUiThreadCount;
+        /**
+         * Total frames rendered by package.
+         *
+         * @var string
+         */
+        public $totalFrames;
+        /**
+         * Histogram of frame render times. There should be 154 buckets ranging from
+         * [5ms, 6ms) to [4950ms, infinity)
+         *
+         * @param GraphicsStatsBucket[] $buckets
+         */
+        public function setBuckets($buckets)
+        {
+        }
+        /**
+         * @return GraphicsStatsBucket[]
+         */
+        public function getBuckets()
+        {
+        }
+        /**
+         * Total "high input latency" events.
+         *
+         * @param string $highInputLatencyCount
+         */
+        public function setHighInputLatencyCount($highInputLatencyCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHighInputLatencyCount()
+        {
+        }
+        /**
+         * Total frames with slow render time. Should be <= total_frames.
+         *
+         * @param string $jankyFrames
+         */
+        public function setJankyFrames($jankyFrames)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJankyFrames()
+        {
+        }
+        /**
+         * Total "missed vsync" events.
+         *
+         * @param string $missedVsyncCount
+         */
+        public function setMissedVsyncCount($missedVsyncCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMissedVsyncCount()
+        {
+        }
+        /**
+         * 50th percentile frame render time in milliseconds.
+         *
+         * @param string $p50Millis
+         */
+        public function setP50Millis($p50Millis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getP50Millis()
+        {
+        }
+        /**
+         * 90th percentile frame render time in milliseconds.
+         *
+         * @param string $p90Millis
+         */
+        public function setP90Millis($p90Millis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getP90Millis()
+        {
+        }
+        /**
+         * 95th percentile frame render time in milliseconds.
+         *
+         * @param string $p95Millis
+         */
+        public function setP95Millis($p95Millis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getP95Millis()
+        {
+        }
+        /**
+         * 99th percentile frame render time in milliseconds.
+         *
+         * @param string $p99Millis
+         */
+        public function setP99Millis($p99Millis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getP99Millis()
+        {
+        }
+        /**
+         * Total "slow bitmap upload" events.
+         *
+         * @param string $slowBitmapUploadCount
+         */
+        public function setSlowBitmapUploadCount($slowBitmapUploadCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSlowBitmapUploadCount()
+        {
+        }
+        /**
+         * Total "slow draw" events.
+         *
+         * @param string $slowDrawCount
+         */
+        public function setSlowDrawCount($slowDrawCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSlowDrawCount()
+        {
+        }
+        /**
+         * Total "slow UI thread" events.
+         *
+         * @param string $slowUiThreadCount
+         */
+        public function setSlowUiThreadCount($slowUiThreadCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSlowUiThreadCount()
+        {
+        }
+        /**
+         * Total frames rendered by package.
+         *
+         * @param string $totalFrames
+         */
+        public function setTotalFrames($totalFrames)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalFrames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GraphicsStatsBucket[]
+     * Runtime class alias of \Google\Service\ToolResults\GraphicsStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuckets()
-    {
-    }
-    /**
-     * Total "high input latency" events.
-     *
-     * @param string $highInputLatencyCount
-     */
-    public function setHighInputLatencyCount($highInputLatencyCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHighInputLatencyCount()
-    {
-    }
-    /**
-     * Total frames with slow render time. Should be <= total_frames.
-     *
-     * @param string $jankyFrames
-     */
-    public function setJankyFrames($jankyFrames)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJankyFrames()
-    {
-    }
-    /**
-     * Total "missed vsync" events.
-     *
-     * @param string $missedVsyncCount
-     */
-    public function setMissedVsyncCount($missedVsyncCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMissedVsyncCount()
-    {
-    }
-    /**
-     * 50th percentile frame render time in milliseconds.
-     *
-     * @param string $p50Millis
-     */
-    public function setP50Millis($p50Millis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getP50Millis()
-    {
-    }
-    /**
-     * 90th percentile frame render time in milliseconds.
-     *
-     * @param string $p90Millis
-     */
-    public function setP90Millis($p90Millis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getP90Millis()
-    {
-    }
-    /**
-     * 95th percentile frame render time in milliseconds.
-     *
-     * @param string $p95Millis
-     */
-    public function setP95Millis($p95Millis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getP95Millis()
-    {
-    }
-    /**
-     * 99th percentile frame render time in milliseconds.
-     *
-     * @param string $p99Millis
-     */
-    public function setP99Millis($p99Millis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getP99Millis()
-    {
-    }
-    /**
-     * Total "slow bitmap upload" events.
-     *
-     * @param string $slowBitmapUploadCount
-     */
-    public function setSlowBitmapUploadCount($slowBitmapUploadCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSlowBitmapUploadCount()
-    {
-    }
-    /**
-     * Total "slow draw" events.
-     *
-     * @param string $slowDrawCount
-     */
-    public function setSlowDrawCount($slowDrawCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSlowDrawCount()
-    {
-    }
-    /**
-     * Total "slow UI thread" events.
-     *
-     * @param string $slowUiThreadCount
-     */
-    public function setSlowUiThreadCount($slowUiThreadCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSlowUiThreadCount()
-    {
-    }
-    /**
-     * Total frames rendered by package.
-     *
-     * @param string $totalFrames
-     */
-    public function setTotalFrames($totalFrames)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalFrames()
+    class Google_Service_ToolResults_GraphicsStats extends \Google\Service\ToolResults\GraphicsStats
     {
     }
 }

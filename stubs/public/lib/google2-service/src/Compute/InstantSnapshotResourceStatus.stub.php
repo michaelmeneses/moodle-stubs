@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstantSnapshotResourceStatus extends \Google\Model
-{
-    /**
-     * [Output Only] The storage size of this instant snapshot.
-     *
-     * @var string
-     */
-    public $storageSizeBytes;
-    /**
-     * [Output Only] The storage size of this instant snapshot.
-     *
-     * @param string $storageSizeBytes
-     */
-    public function setStorageSizeBytes($storageSizeBytes)
+namespace Google\Service\Compute {
+    class InstantSnapshotResourceStatus extends \Google\Model
     {
+        /**
+         * [Output Only] The storage size of this instant snapshot.
+         *
+         * @var string
+         */
+        public $storageSizeBytes;
+        /**
+         * [Output Only] The storage size of this instant snapshot.
+         *
+         * @param string $storageSizeBytes
+         */
+        public function setStorageSizeBytes($storageSizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStorageSizeBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InstantSnapshotResourceStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStorageSizeBytes()
+    class Google_Service_Compute_InstantSnapshotResourceStatus extends \Google\Service\Compute\InstantSnapshotResourceStatus
     {
     }
 }

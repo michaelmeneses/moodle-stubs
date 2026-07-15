@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalAdminVipConfig extends \Google\Model
-{
-    /**
-     * The VIP which you previously set aside for the Kubernetes API of this bare
-     * metal admin cluster.
-     *
-     * @var string
-     */
-    public $controlPlaneVip;
-    /**
-     * The VIP which you previously set aside for the Kubernetes API of this bare
-     * metal admin cluster.
-     *
-     * @param string $controlPlaneVip
-     */
-    public function setControlPlaneVip($controlPlaneVip)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalAdminVipConfig extends \Google\Model
     {
+        /**
+         * The VIP which you previously set aside for the Kubernetes API of this bare
+         * metal admin cluster.
+         *
+         * @var string
+         */
+        public $controlPlaneVip;
+        /**
+         * The VIP which you previously set aside for the Kubernetes API of this bare
+         * metal admin cluster.
+         *
+         * @param string $controlPlaneVip
+         */
+        public function setControlPlaneVip($controlPlaneVip)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getControlPlaneVip()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalAdminVipConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getControlPlaneVip()
+    class Google_Service_GKEOnPrem_BareMetalAdminVipConfig extends \Google\Service\GKEOnPrem\BareMetalAdminVipConfig
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class CloudBuildOptions extends \Google\Model
-{
-    /**
-     * Path to the yaml file used in deployment, used to determine runtime
-     * configuration details.Required for flexible environment builds.See
-     * https://cloud.google.com/appengine/docs/standard/python/config/appref for
-     * more details.
-     *
-     * @var string
-     */
-    public $appYamlPath;
-    /**
-     * The Cloud Build timeout used as part of any dependent builds performed by
-     * version creation. Defaults to 10 minutes.
-     *
-     * @var string
-     */
-    public $cloudBuildTimeout;
-    /**
-     * Path to the yaml file used in deployment, used to determine runtime
-     * configuration details.Required for flexible environment builds.See
-     * https://cloud.google.com/appengine/docs/standard/python/config/appref for
-     * more details.
-     *
-     * @param string $appYamlPath
-     */
-    public function setAppYamlPath($appYamlPath)
+namespace Google\Service\Appengine {
+    class CloudBuildOptions extends \Google\Model
     {
+        /**
+         * Path to the yaml file used in deployment, used to determine runtime
+         * configuration details.Required for flexible environment builds.See
+         * https://cloud.google.com/appengine/docs/standard/python/config/appref for
+         * more details.
+         *
+         * @var string
+         */
+        public $appYamlPath;
+        /**
+         * The Cloud Build timeout used as part of any dependent builds performed by
+         * version creation. Defaults to 10 minutes.
+         *
+         * @var string
+         */
+        public $cloudBuildTimeout;
+        /**
+         * Path to the yaml file used in deployment, used to determine runtime
+         * configuration details.Required for flexible environment builds.See
+         * https://cloud.google.com/appengine/docs/standard/python/config/appref for
+         * more details.
+         *
+         * @param string $appYamlPath
+         */
+        public function setAppYamlPath($appYamlPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppYamlPath()
+        {
+        }
+        /**
+         * The Cloud Build timeout used as part of any dependent builds performed by
+         * version creation. Defaults to 10 minutes.
+         *
+         * @param string $cloudBuildTimeout
+         */
+        public function setCloudBuildTimeout($cloudBuildTimeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCloudBuildTimeout()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Appengine\CloudBuildOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppYamlPath()
-    {
-    }
-    /**
-     * The Cloud Build timeout used as part of any dependent builds performed by
-     * version creation. Defaults to 10 minutes.
-     *
-     * @param string $cloudBuildTimeout
-     */
-    public function setCloudBuildTimeout($cloudBuildTimeout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCloudBuildTimeout()
+    class Google_Service_Appengine_CloudBuildOptions extends \Google\Service\Appengine\CloudBuildOptions
     {
     }
 }

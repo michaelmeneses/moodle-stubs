@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class ChromeOsDeviceLastKnownNetwork extends \Google\Model
-{
-    /**
-     * The IP address.
-     *
-     * @var string
-     */
-    public $ipAddress;
-    /**
-     * The WAN IP address.
-     *
-     * @var string
-     */
-    public $wanIpAddress;
-    /**
-     * The IP address.
-     *
-     * @param string $ipAddress
-     */
-    public function setIpAddress($ipAddress)
+namespace Google\Service\Directory {
+    class ChromeOsDeviceLastKnownNetwork extends \Google\Model
     {
+        /**
+         * The IP address.
+         *
+         * @var string
+         */
+        public $ipAddress;
+        /**
+         * The WAN IP address.
+         *
+         * @var string
+         */
+        public $wanIpAddress;
+        /**
+         * The IP address.
+         *
+         * @param string $ipAddress
+         */
+        public function setIpAddress($ipAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpAddress()
+        {
+        }
+        /**
+         * The WAN IP address.
+         *
+         * @param string $wanIpAddress
+         */
+        public function setWanIpAddress($wanIpAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWanIpAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\ChromeOsDeviceLastKnownNetwork registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpAddress()
-    {
-    }
-    /**
-     * The WAN IP address.
-     *
-     * @param string $wanIpAddress
-     */
-    public function setWanIpAddress($wanIpAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWanIpAddress()
+    class Google_Service_Directory_ChromeOsDeviceLastKnownNetwork extends \Google\Service\Directory\ChromeOsDeviceLastKnownNetwork
     {
     }
 }

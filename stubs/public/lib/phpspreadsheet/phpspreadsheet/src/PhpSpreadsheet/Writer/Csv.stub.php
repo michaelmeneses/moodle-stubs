@@ -8,6 +8,10 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Writer;
 
+use Composer\Pcre\Preg;
+use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
+use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
 class Csv extends BaseWriter
 {
     /**

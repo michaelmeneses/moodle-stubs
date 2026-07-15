@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSStringStatsUnigramStats extends \Google\Model
-{
-    /**
-     * The number of occurrences of this unigram in the series.
-     *
-     * @var string
-     */
-    public $count;
-    /**
-     * The unigram.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The number of occurrences of this unigram in the series.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSStringStatsUnigramStats extends \Google\Model
     {
+        /**
+         * The number of occurrences of this unigram in the series.
+         *
+         * @var string
+         */
+        public $count;
+        /**
+         * The unigram.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The number of occurrences of this unigram in the series.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * The unigram.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSStringStatsUnigramStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * The unigram.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_CloudNaturalLanguage_XPSStringStatsUnigramStats extends \Google\Service\CloudNaturalLanguage\XPSStringStatsUnigramStats
     {
     }
 }

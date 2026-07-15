@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoErrorDetail extends \Google\Model
-{
-    public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
-    public const SEVERITY_ERROR = 'ERROR';
-    public const SEVERITY_WARN = 'WARN';
-    public const SEVERITY_INFO = 'INFO';
-    protected $errorCodeType = CrmlogErrorCode::class;
-    protected $errorCodeDataType = '';
-    /**
-     * The full text of the error message, including any parameters that were
-     * thrown along with the exception.
-     *
-     * @var string
-     */
-    public $errorMessage;
-    /**
-     * The severity of the error: ERROR|WARN|INFO.
-     *
-     * @var string
-     */
-    public $severity;
-    /**
-     * The task try-number, in which, the error occurred. If zero, the error
-     * happened at the event level.
-     *
-     * @var int
-     */
-    public $taskNumber;
-    /**
-     * The associated error-code, which can be a common or internal code.
-     *
-     * @param CrmlogErrorCode $errorCode
-     */
-    public function setErrorCode(CrmlogErrorCode $errorCode)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoErrorDetail extends \Google\Model
     {
+        public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
+        public const SEVERITY_ERROR = 'ERROR';
+        public const SEVERITY_WARN = 'WARN';
+        public const SEVERITY_INFO = 'INFO';
+        protected $errorCodeType = CrmlogErrorCode::class;
+        protected $errorCodeDataType = '';
+        /**
+         * The full text of the error message, including any parameters that were
+         * thrown along with the exception.
+         *
+         * @var string
+         */
+        public $errorMessage;
+        /**
+         * The severity of the error: ERROR|WARN|INFO.
+         *
+         * @var string
+         */
+        public $severity;
+        /**
+         * The task try-number, in which, the error occurred. If zero, the error
+         * happened at the event level.
+         *
+         * @var int
+         */
+        public $taskNumber;
+        /**
+         * The associated error-code, which can be a common or internal code.
+         *
+         * @param CrmlogErrorCode $errorCode
+         */
+        public function setErrorCode(CrmlogErrorCode $errorCode)
+        {
+        }
+        /**
+         * @return CrmlogErrorCode
+         */
+        public function getErrorCode()
+        {
+        }
+        /**
+         * The full text of the error message, including any parameters that were
+         * thrown along with the exception.
+         *
+         * @param string $errorMessage
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
+        /**
+         * The severity of the error: ERROR|WARN|INFO.
+         *
+         * Accepted values: SEVERITY_UNSPECIFIED, ERROR, WARN, INFO
+         *
+         * @param self::SEVERITY_* $severity
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return self::SEVERITY_*
+         */
+        public function getSeverity()
+        {
+        }
+        /**
+         * The task try-number, in which, the error occurred. If zero, the error
+         * happened at the event level.
+         *
+         * @param int $taskNumber
+         */
+        public function setTaskNumber($taskNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTaskNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CrmlogErrorCode
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoErrorDetail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorCode()
-    {
-    }
-    /**
-     * The full text of the error message, including any parameters that were
-     * thrown along with the exception.
-     *
-     * @param string $errorMessage
-     */
-    public function setErrorMessage($errorMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorMessage()
-    {
-    }
-    /**
-     * The severity of the error: ERROR|WARN|INFO.
-     *
-     * Accepted values: SEVERITY_UNSPECIFIED, ERROR, WARN, INFO
-     *
-     * @param self::SEVERITY_* $severity
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return self::SEVERITY_*
-     */
-    public function getSeverity()
-    {
-    }
-    /**
-     * The task try-number, in which, the error occurred. If zero, the error
-     * happened at the event level.
-     *
-     * @param int $taskNumber
-     */
-    public function setTaskNumber($taskNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTaskNumber()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoErrorDetail extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoErrorDetail
     {
     }
 }

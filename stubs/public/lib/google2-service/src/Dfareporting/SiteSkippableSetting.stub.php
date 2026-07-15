@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class SiteSkippableSetting extends \Google\Model
-{
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#siteSkippableSetting".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $progressOffsetType = VideoOffset::class;
-    protected $progressOffsetDataType = '';
-    protected $skipOffsetType = VideoOffset::class;
-    protected $skipOffsetDataType = '';
-    /**
-     * Whether the user can skip creatives served to this site. This will act as
-     * default for new placements created under this site.
-     *
-     * @var bool
-     */
-    public $skippable;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#siteSkippableSetting".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class SiteSkippableSetting extends \Google\Model
     {
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#siteSkippableSetting".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $progressOffsetType = VideoOffset::class;
+        protected $progressOffsetDataType = '';
+        protected $skipOffsetType = VideoOffset::class;
+        protected $skipOffsetDataType = '';
+        /**
+         * Whether the user can skip creatives served to this site. This will act as
+         * default for new placements created under this site.
+         *
+         * @var bool
+         */
+        public $skippable;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#siteSkippableSetting".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Amount of time to play videos served to this site template before counting
+         * a view. Applicable when skippable is true.
+         *
+         * @param VideoOffset $progressOffset
+         */
+        public function setProgressOffset(VideoOffset $progressOffset)
+        {
+        }
+        /**
+         * @return VideoOffset
+         */
+        public function getProgressOffset()
+        {
+        }
+        /**
+         * Amount of time to play videos served to this site before the skip button
+         * should appear. Applicable when skippable is true.
+         *
+         * @param VideoOffset $skipOffset
+         */
+        public function setSkipOffset(VideoOffset $skipOffset)
+        {
+        }
+        /**
+         * @return VideoOffset
+         */
+        public function getSkipOffset()
+        {
+        }
+        /**
+         * Whether the user can skip creatives served to this site. This will act as
+         * default for new placements created under this site.
+         *
+         * @param bool $skippable
+         */
+        public function setSkippable($skippable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSkippable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\SiteSkippableSetting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Amount of time to play videos served to this site template before counting
-     * a view. Applicable when skippable is true.
-     *
-     * @param VideoOffset $progressOffset
-     */
-    public function setProgressOffset(VideoOffset $progressOffset)
-    {
-    }
-    /**
-     * @return VideoOffset
-     */
-    public function getProgressOffset()
-    {
-    }
-    /**
-     * Amount of time to play videos served to this site before the skip button
-     * should appear. Applicable when skippable is true.
-     *
-     * @param VideoOffset $skipOffset
-     */
-    public function setSkipOffset(VideoOffset $skipOffset)
-    {
-    }
-    /**
-     * @return VideoOffset
-     */
-    public function getSkipOffset()
-    {
-    }
-    /**
-     * Whether the user can skip creatives served to this site. This will act as
-     * default for new placements created under this site.
-     *
-     * @param bool $skippable
-     */
-    public function setSkippable($skippable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSkippable()
+    class Google_Service_Dfareporting_SiteSkippableSetting extends \Google\Service\Dfareporting\SiteSkippableSetting
     {
     }
 }

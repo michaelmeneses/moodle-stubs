@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class ReverseReplicationDirectionRequest extends \Google\Model
-{
+namespace Google\Service\NetAppFiles {
+    class ReverseReplicationDirectionRequest extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\NetAppFiles\ReverseReplicationDirectionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_NetAppFiles_ReverseReplicationDirectionRequest extends \Google\Service\NetAppFiles\ReverseReplicationDirectionRequest
+    {
+    }
 }

@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class VpnTunnelPhase2Algorithms extends \Google\Collection
-{
-    protected $collection_key = 'pfs';
-    /**
-     * @var string[]
-     */
-    public $encryption;
-    /**
-     * @var string[]
-     */
-    public $integrity;
-    /**
-     * @var string[]
-     */
-    public $pfs;
-    /**
-     * @param string[] $encryption
-     */
-    public function setEncryption($encryption)
+namespace Google\Service\Compute {
+    class VpnTunnelPhase2Algorithms extends \Google\Collection
     {
+        protected $collection_key = 'pfs';
+        /**
+         * @var string[]
+         */
+        public $encryption;
+        /**
+         * @var string[]
+         */
+        public $integrity;
+        /**
+         * @var string[]
+         */
+        public $pfs;
+        /**
+         * @param string[] $encryption
+         */
+        public function setEncryption($encryption)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEncryption()
+        {
+        }
+        /**
+         * @param string[] $integrity
+         */
+        public function setIntegrity($integrity)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIntegrity()
+        {
+        }
+        /**
+         * @param string[] $pfs
+         */
+        public function setPfs($pfs)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPfs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\VpnTunnelPhase2Algorithms registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncryption()
-    {
-    }
-    /**
-     * @param string[] $integrity
-     */
-    public function setIntegrity($integrity)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIntegrity()
-    {
-    }
-    /**
-     * @param string[] $pfs
-     */
-    public function setPfs($pfs)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPfs()
+    class Google_Service_Compute_VpnTunnelPhase2Algorithms extends \Google\Service\Compute\VpnTunnelPhase2Algorithms
     {
     }
 }

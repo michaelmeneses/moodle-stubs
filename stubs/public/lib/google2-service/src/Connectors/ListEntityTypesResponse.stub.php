@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class ListEntityTypesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unsupportedTypeNames';
-    /**
-     * Metadata like service latency, etc.
-     *
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * Next page token if more entity types available.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $typesType = EntityType::class;
-    protected $typesDataType = 'array';
-    /**
-     * List of entity type names which contain unsupported Datatypes. Check
-     * datatype.proto for more information.
-     *
-     * @var string[]
-     */
-    public $unsupportedTypeNames;
-    /**
-     * Metadata like service latency, etc.
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
+namespace Google\Service\Connectors {
+    class ListEntityTypesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unsupportedTypeNames';
+        /**
+         * Metadata like service latency, etc.
+         *
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * Next page token if more entity types available.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $typesType = EntityType::class;
+        protected $typesDataType = 'array';
+        /**
+         * List of entity type names which contain unsupported Datatypes. Check
+         * datatype.proto for more information.
+         *
+         * @var string[]
+         */
+        public $unsupportedTypeNames;
+        /**
+         * Metadata like service latency, etc.
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Next page token if more entity types available.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of metadata related to all entity types.
+         *
+         * @param EntityType[] $types
+         */
+        public function setTypes($types)
+        {
+        }
+        /**
+         * @return EntityType[]
+         */
+        public function getTypes()
+        {
+        }
+        /**
+         * List of entity type names which contain unsupported Datatypes. Check
+         * datatype.proto for more information.
+         *
+         * @param string[] $unsupportedTypeNames
+         */
+        public function setUnsupportedTypeNames($unsupportedTypeNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnsupportedTypeNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Connectors\ListEntityTypesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Next page token if more entity types available.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of metadata related to all entity types.
-     *
-     * @param EntityType[] $types
-     */
-    public function setTypes($types)
-    {
-    }
-    /**
-     * @return EntityType[]
-     */
-    public function getTypes()
-    {
-    }
-    /**
-     * List of entity type names which contain unsupported Datatypes. Check
-     * datatype.proto for more information.
-     *
-     * @param string[] $unsupportedTypeNames
-     */
-    public function setUnsupportedTypeNames($unsupportedTypeNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnsupportedTypeNames()
+    class Google_Service_Connectors_ListEntityTypesResponse extends \Google\Service\Connectors\ListEntityTypesResponse
     {
     }
 }

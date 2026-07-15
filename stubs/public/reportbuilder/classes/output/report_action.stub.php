@@ -8,6 +8,8 @@
  */
 namespace core_reportbuilder\output;
 
+use core\output\{pix_icon, renderer_base, templatable};
+use core_reportbuilder\external\report_action_exporter;
 /**
  * Encapsulate a report action
  *

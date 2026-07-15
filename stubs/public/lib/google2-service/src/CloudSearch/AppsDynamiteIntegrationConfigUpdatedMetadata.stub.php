@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteIntegrationConfigUpdatedMetadata extends \Google\Collection
-{
-    protected $collection_key = 'mutations';
-    protected $initiatorIdType = AppsDynamiteUserId::class;
-    protected $initiatorIdDataType = '';
-    protected $mutationsType = AppsDynamiteIntegrationConfigMutation::class;
-    protected $mutationsDataType = 'array';
-    /**
-     * @param AppsDynamiteUserId
-     */
-    public function setInitiatorId(AppsDynamiteUserId $initiatorId)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteIntegrationConfigUpdatedMetadata extends \Google\Collection
     {
+        protected $collection_key = 'mutations';
+        protected $initiatorIdType = AppsDynamiteUserId::class;
+        protected $initiatorIdDataType = '';
+        protected $mutationsType = AppsDynamiteIntegrationConfigMutation::class;
+        protected $mutationsDataType = 'array';
+        /**
+         * @param AppsDynamiteUserId
+         */
+        public function setInitiatorId(AppsDynamiteUserId $initiatorId)
+        {
+        }
+        /**
+         * @return AppsDynamiteUserId
+         */
+        public function getInitiatorId()
+        {
+        }
+        /**
+         * @param AppsDynamiteIntegrationConfigMutation[]
+         */
+        public function setMutations($mutations)
+        {
+        }
+        /**
+         * @return AppsDynamiteIntegrationConfigMutation[]
+         */
+        public function getMutations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteUserId
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteIntegrationConfigUpdatedMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInitiatorId()
-    {
-    }
-    /**
-     * @param AppsDynamiteIntegrationConfigMutation[]
-     */
-    public function setMutations($mutations)
-    {
-    }
-    /**
-     * @return AppsDynamiteIntegrationConfigMutation[]
-     */
-    public function getMutations()
+    class Google_Service_CloudSearch_AppsDynamiteIntegrationConfigUpdatedMetadata extends \Google\Service\CloudSearch\AppsDynamiteIntegrationConfigUpdatedMetadata
     {
     }
 }

@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ConversionError extends \Google\Model
-{
-    public const CODE_INVALID_ARGUMENT = 'INVALID_ARGUMENT';
-    public const CODE_INTERNAL = 'INTERNAL';
-    public const CODE_PERMISSION_DENIED = 'PERMISSION_DENIED';
-    public const CODE_NOT_FOUND = 'NOT_FOUND';
-    /**
-     * The error code.
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#conversionError".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * A description of the error.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * The error code.
-     *
-     * Accepted values: INVALID_ARGUMENT, INTERNAL, PERMISSION_DENIED, NOT_FOUND
-     *
-     * @param self::CODE_* $code
-     */
-    public function setCode($code)
+namespace Google\Service\Dfareporting {
+    class ConversionError extends \Google\Model
     {
+        public const CODE_INVALID_ARGUMENT = 'INVALID_ARGUMENT';
+        public const CODE_INTERNAL = 'INTERNAL';
+        public const CODE_PERMISSION_DENIED = 'PERMISSION_DENIED';
+        public const CODE_NOT_FOUND = 'NOT_FOUND';
+        /**
+         * The error code.
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#conversionError".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * A description of the error.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * The error code.
+         *
+         * Accepted values: INVALID_ARGUMENT, INTERNAL, PERMISSION_DENIED, NOT_FOUND
+         *
+         * @param self::CODE_* $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return self::CODE_*
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#conversionError".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * A description of the error.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CODE_*
+     * Runtime class alias of \Google\Service\Dfareporting\ConversionError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#conversionError".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * A description of the error.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
+    class Google_Service_Dfareporting_ConversionError extends \Google\Service\Dfareporting\ConversionError
     {
     }
 }

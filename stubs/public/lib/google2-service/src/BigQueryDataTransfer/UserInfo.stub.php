@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryDataTransfer;
-
-class UserInfo extends \Google\Model
-{
-    /**
-     * E-mail address of the user.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * E-mail address of the user.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\BigQueryDataTransfer {
+    class UserInfo extends \Google\Model
     {
+        /**
+         * E-mail address of the user.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * E-mail address of the user.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigQueryDataTransfer\UserInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
+    class Google_Service_BigQueryDataTransfer_UserInfo extends \Google\Service\BigQueryDataTransfer\UserInfo
     {
     }
 }

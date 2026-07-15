@@ -21,73 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesManagement\Resource;
-
-/**
- * The "events" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gamesManagementService = new Google\Service\GamesManagement(...);
- *   $events = $gamesManagementService->events;
- *  </code>
- */
-class Events extends \Google\Service\Resource
-{
+namespace Google\Service\GamesManagement\Resource {
+    use Google\Service\GamesManagement\EventsResetMultipleForAllRequest;
     /**
-     * Resets all player progress on the event with the given ID for the currently
-     * authenticated player. This method is only accessible to whitelisted tester
-     * accounts for your application. (events.reset)
-     *
-     * @param string $eventId The ID of the event.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "events" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gamesManagementService = new Google\Service\GamesManagement(...);
+     *   $events = $gamesManagementService->events;
+     *  </code>
      */
-    public function reset($eventId, $optParams = [])
+    class Events extends \Google\Service\Resource
     {
+        /**
+         * Resets all player progress on the event with the given ID for the currently
+         * authenticated player. This method is only accessible to whitelisted tester
+         * accounts for your application. (events.reset)
+         *
+         * @param string $eventId The ID of the event.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function reset($eventId, $optParams = [])
+        {
+        }
+        /**
+         * Resets all player progress on all events for the currently authenticated
+         * player. This method is only accessible to whitelisted tester accounts for
+         * your application. (events.resetAll)
+         *
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function resetAll($optParams = [])
+        {
+        }
+        /**
+         * Resets all draft events for all players. This method is only available to
+         * user accounts for your developer console. (events.resetAllForAllPlayers)
+         *
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function resetAllForAllPlayers($optParams = [])
+        {
+        }
+        /**
+         * Resets the event with the given ID for all players. This method is only
+         * available to user accounts for your developer console. Only draft events can
+         * be reset. (events.resetForAllPlayers)
+         *
+         * @param string $eventId The ID of the event.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function resetForAllPlayers($eventId, $optParams = [])
+        {
+        }
+        /**
+         * Resets events with the given IDs for all players. This method is only
+         * available to user accounts for your developer console. Only draft events may
+         * be reset. (events.resetMultipleForAllPlayers)
+         *
+         * @param EventsResetMultipleForAllRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function resetMultipleForAllPlayers(EventsResetMultipleForAllRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Resets all player progress on all events for the currently authenticated
-     * player. This method is only accessible to whitelisted tester accounts for
-     * your application. (events.resetAll)
-     *
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\GamesManagement\Resource\Events registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function resetAll($optParams = [])
-    {
-    }
-    /**
-     * Resets all draft events for all players. This method is only available to
-     * user accounts for your developer console. (events.resetAllForAllPlayers)
-     *
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
-     */
-    public function resetAllForAllPlayers($optParams = [])
-    {
-    }
-    /**
-     * Resets the event with the given ID for all players. This method is only
-     * available to user accounts for your developer console. Only draft events can
-     * be reset. (events.resetForAllPlayers)
-     *
-     * @param string $eventId The ID of the event.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
-     */
-    public function resetForAllPlayers($eventId, $optParams = [])
-    {
-    }
-    /**
-     * Resets events with the given IDs for all players. This method is only
-     * available to user accounts for your developer console. Only draft events may
-     * be reset. (events.resetMultipleForAllPlayers)
-     *
-     * @param EventsResetMultipleForAllRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
-     */
-    public function resetMultipleForAllPlayers(EventsResetMultipleForAllRequest $postBody, $optParams = [])
+    class Google_Service_GamesManagement_Resource_Events extends \Google\Service\GamesManagement\Resource\Events
     {
     }
 }

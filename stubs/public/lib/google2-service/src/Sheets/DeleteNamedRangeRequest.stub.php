@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DeleteNamedRangeRequest extends \Google\Model
-{
-    /**
-     * The ID of the named range to delete.
-     *
-     * @var string
-     */
-    public $namedRangeId;
-    /**
-     * The ID of the named range to delete.
-     *
-     * @param string $namedRangeId
-     */
-    public function setNamedRangeId($namedRangeId)
+namespace Google\Service\Sheets {
+    class DeleteNamedRangeRequest extends \Google\Model
     {
+        /**
+         * The ID of the named range to delete.
+         *
+         * @var string
+         */
+        public $namedRangeId;
+        /**
+         * The ID of the named range to delete.
+         *
+         * @param string $namedRangeId
+         */
+        public function setNamedRangeId($namedRangeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNamedRangeId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sheets\DeleteNamedRangeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNamedRangeId()
+    class Google_Service_Sheets_DeleteNamedRangeRequest extends \Google\Service\Sheets\DeleteNamedRangeRequest
     {
     }
 }

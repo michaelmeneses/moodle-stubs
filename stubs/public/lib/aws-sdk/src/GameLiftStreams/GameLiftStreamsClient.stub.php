@@ -8,6 +8,7 @@
  */
 namespace Aws\GameLiftStreams;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon GameLift Streams** service.
  * @method \Aws\Result addStreamGroupLocations(array $args = [])

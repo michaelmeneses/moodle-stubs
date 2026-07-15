@@ -21,37 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "settlementtransactions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $settlementtransactions = $contentService->settlementtransactions;
- *  </code>
- */
-class Settlementtransactions extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\SettlementtransactionsListResponse;
     /**
-     * Retrieves a list of transactions for the settlement.
-     * (settlementtransactions.listSettlementtransactions)
-     *
-     * @param string $merchantId The Merchant Center account to list transactions
-     * for.
-     * @param string $settlementId The Google-provided ID of the settlement.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string maxResults The maximum number of transactions to return in
-     * the response, used for paging. The default value is 200 transactions per
-     * page, and the maximum allowed value is 5000 transactions per page.
-     * @opt_param string pageToken The token returned by the previous request.
-     * @opt_param string transactionIds The list of transactions to return. If not
-     * set, all transactions will be returned.
-     * @return SettlementtransactionsListResponse
-     * @throws \Google\Service\Exception
+     * The "settlementtransactions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $settlementtransactions = $contentService->settlementtransactions;
+     *  </code>
      */
-    public function listSettlementtransactions($merchantId, $settlementId, $optParams = [])
+    class Settlementtransactions extends \Google\Service\Resource
+    {
+        /**
+         * Retrieves a list of transactions for the settlement.
+         * (settlementtransactions.listSettlementtransactions)
+         *
+         * @param string $merchantId The Merchant Center account to list transactions
+         * for.
+         * @param string $settlementId The Google-provided ID of the settlement.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string maxResults The maximum number of transactions to return in
+         * the response, used for paging. The default value is 200 transactions per
+         * page, and the maximum allowed value is 5000 transactions per page.
+         * @opt_param string pageToken The token returned by the previous request.
+         * @opt_param string transactionIds The list of transactions to return. If not
+         * set, all transactions will be returned.
+         * @return SettlementtransactionsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listSettlementtransactions($merchantId, $settlementId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\Settlementtransactions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ShoppingContent_Resource_Settlementtransactions extends \Google\Service\ShoppingContent\Resource\Settlementtransactions
     {
     }
 }

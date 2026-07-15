@@ -21,140 +21,149 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class UserIm extends \Google\Model
-{
-    /**
-     * Custom protocol.
-     *
-     * @var string
-     */
-    public $customProtocol;
-    /**
-     * Custom type.
-     *
-     * @var string
-     */
-    public $customType;
-    /**
-     * Instant messenger id.
-     *
-     * @var string
-     */
-    public $im;
-    /**
-     * If this is user's primary im. Only one entry could be marked as primary.
-     *
-     * @var bool
-     */
-    public $primary;
-    /**
-     * Protocol used in the instant messenger. It should be one of the values from
-     * ImProtocolTypes map. Similar to type it can take a CUSTOM value and specify
-     * the custom name in customProtocol field.
-     *
-     * @var string
-     */
-    public $protocol;
-    /**
-     * Each entry can have a type which indicates standard types of that entry.
-     * For example instant messengers could be of home work etc. In addition to
-     * the standard type an entry can have a custom type and can take any value.
-     * Such types should have the CUSTOM value as type and also have a customType
-     * value.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Custom protocol.
-     *
-     * @param string $customProtocol
-     */
-    public function setCustomProtocol($customProtocol)
+namespace Google\Service\Directory {
+    class UserIm extends \Google\Model
     {
+        /**
+         * Custom protocol.
+         *
+         * @var string
+         */
+        public $customProtocol;
+        /**
+         * Custom type.
+         *
+         * @var string
+         */
+        public $customType;
+        /**
+         * Instant messenger id.
+         *
+         * @var string
+         */
+        public $im;
+        /**
+         * If this is user's primary im. Only one entry could be marked as primary.
+         *
+         * @var bool
+         */
+        public $primary;
+        /**
+         * Protocol used in the instant messenger. It should be one of the values from
+         * ImProtocolTypes map. Similar to type it can take a CUSTOM value and specify
+         * the custom name in customProtocol field.
+         *
+         * @var string
+         */
+        public $protocol;
+        /**
+         * Each entry can have a type which indicates standard types of that entry.
+         * For example instant messengers could be of home work etc. In addition to
+         * the standard type an entry can have a custom type and can take any value.
+         * Such types should have the CUSTOM value as type and also have a customType
+         * value.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Custom protocol.
+         *
+         * @param string $customProtocol
+         */
+        public function setCustomProtocol($customProtocol)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomProtocol()
+        {
+        }
+        /**
+         * Custom type.
+         *
+         * @param string $customType
+         */
+        public function setCustomType($customType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomType()
+        {
+        }
+        /**
+         * Instant messenger id.
+         *
+         * @param string $im
+         */
+        public function setIm($im)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIm()
+        {
+        }
+        /**
+         * If this is user's primary im. Only one entry could be marked as primary.
+         *
+         * @param bool $primary
+         */
+        public function setPrimary($primary)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPrimary()
+        {
+        }
+        /**
+         * Protocol used in the instant messenger. It should be one of the values from
+         * ImProtocolTypes map. Similar to type it can take a CUSTOM value and specify
+         * the custom name in customProtocol field.
+         *
+         * @param string $protocol
+         */
+        public function setProtocol($protocol)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProtocol()
+        {
+        }
+        /**
+         * Each entry can have a type which indicates standard types of that entry.
+         * For example instant messengers could be of home work etc. In addition to
+         * the standard type an entry can have a custom type and can take any value.
+         * Such types should have the CUSTOM value as type and also have a customType
+         * value.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\UserIm registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomProtocol()
-    {
-    }
-    /**
-     * Custom type.
-     *
-     * @param string $customType
-     */
-    public function setCustomType($customType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomType()
-    {
-    }
-    /**
-     * Instant messenger id.
-     *
-     * @param string $im
-     */
-    public function setIm($im)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIm()
-    {
-    }
-    /**
-     * If this is user's primary im. Only one entry could be marked as primary.
-     *
-     * @param bool $primary
-     */
-    public function setPrimary($primary)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPrimary()
-    {
-    }
-    /**
-     * Protocol used in the instant messenger. It should be one of the values from
-     * ImProtocolTypes map. Similar to type it can take a CUSTOM value and specify
-     * the custom name in customProtocol field.
-     *
-     * @param string $protocol
-     */
-    public function setProtocol($protocol)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProtocol()
-    {
-    }
-    /**
-     * Each entry can have a type which indicates standard types of that entry.
-     * For example instant messengers could be of home work etc. In addition to
-     * the standard type an entry can have a custom type and can take any value.
-     * Such types should have the CUSTOM value as type and also have a customType
-     * value.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Directory_UserIm extends \Google\Service\Directory\UserIm
     {
     }
 }

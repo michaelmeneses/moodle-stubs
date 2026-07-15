@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class StoreLayoutClustersListResponse extends \Google\Collection
-{
-    protected $collection_key = 'cluster';
-    protected $clusterType = StoreCluster::class;
-    protected $clusterDataType = 'array';
-    /**
-     * A store cluster of an enterprise.
-     *
-     * @param StoreCluster[] $cluster
-     */
-    public function setCluster($cluster)
+namespace Google\Service\AndroidEnterprise {
+    class StoreLayoutClustersListResponse extends \Google\Collection
     {
+        protected $collection_key = 'cluster';
+        protected $clusterType = StoreCluster::class;
+        protected $clusterDataType = 'array';
+        /**
+         * A store cluster of an enterprise.
+         *
+         * @param StoreCluster[] $cluster
+         */
+        public function setCluster($cluster)
+        {
+        }
+        /**
+         * @return StoreCluster[]
+         */
+        public function getCluster()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StoreCluster[]
+     * Runtime class alias of \Google\Service\AndroidEnterprise\StoreLayoutClustersListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCluster()
+    class Google_Service_AndroidEnterprise_StoreLayoutClustersListResponse extends \Google\Service\AndroidEnterprise\StoreLayoutClustersListResponse
     {
     }
 }

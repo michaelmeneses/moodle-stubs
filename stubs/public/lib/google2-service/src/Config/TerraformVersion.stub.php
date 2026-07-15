@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class TerraformVersion extends \Google\Model
-{
-    /**
-     * The default value. This value is used if the state is omitted.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The version is actively supported.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * The version is deprecated.
-     */
-    public const STATE_DEPRECATED = 'DEPRECATED';
-    /**
-     * The version is obsolete.
-     */
-    public const STATE_OBSOLETE = 'OBSOLETE';
-    /**
-     * Output only. When the version is deprecated.
-     *
-     * @var string
-     */
-    public $deprecateTime;
-    /**
-     * Identifier. The version name is in the format: 'projects/{project_id}/locat
-     * ions/{location}/terraformVersions/{terraform_version}'.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. When the version is obsolete.
-     *
-     * @var string
-     */
-    public $obsoleteTime;
-    /**
-     * Output only. The state of the version, ACTIVE, DEPRECATED or OBSOLETE.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. When the version is supported.
-     *
-     * @var string
-     */
-    public $supportTime;
-    /**
-     * Output only. When the version is deprecated.
-     *
-     * @param string $deprecateTime
-     */
-    public function setDeprecateTime($deprecateTime)
+namespace Google\Service\Config {
+    class TerraformVersion extends \Google\Model
     {
+        /**
+         * The default value. This value is used if the state is omitted.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The version is actively supported.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * The version is deprecated.
+         */
+        public const STATE_DEPRECATED = 'DEPRECATED';
+        /**
+         * The version is obsolete.
+         */
+        public const STATE_OBSOLETE = 'OBSOLETE';
+        /**
+         * Output only. When the version is deprecated.
+         *
+         * @var string
+         */
+        public $deprecateTime;
+        /**
+         * Identifier. The version name is in the format: 'projects/{project_id}/locat
+         * ions/{location}/terraformVersions/{terraform_version}'.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. When the version is obsolete.
+         *
+         * @var string
+         */
+        public $obsoleteTime;
+        /**
+         * Output only. The state of the version, ACTIVE, DEPRECATED or OBSOLETE.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. When the version is supported.
+         *
+         * @var string
+         */
+        public $supportTime;
+        /**
+         * Output only. When the version is deprecated.
+         *
+         * @param string $deprecateTime
+         */
+        public function setDeprecateTime($deprecateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeprecateTime()
+        {
+        }
+        /**
+         * Identifier. The version name is in the format: 'projects/{project_id}/locat
+         * ions/{location}/terraformVersions/{terraform_version}'.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. When the version is obsolete.
+         *
+         * @param string $obsoleteTime
+         */
+        public function setObsoleteTime($obsoleteTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObsoleteTime()
+        {
+        }
+        /**
+         * Output only. The state of the version, ACTIVE, DEPRECATED or OBSOLETE.
+         *
+         * Accepted values: STATE_UNSPECIFIED, ACTIVE, DEPRECATED, OBSOLETE
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. When the version is supported.
+         *
+         * @param string $supportTime
+         */
+        public function setSupportTime($supportTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSupportTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Config\TerraformVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeprecateTime()
-    {
-    }
-    /**
-     * Identifier. The version name is in the format: 'projects/{project_id}/locat
-     * ions/{location}/terraformVersions/{terraform_version}'.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. When the version is obsolete.
-     *
-     * @param string $obsoleteTime
-     */
-    public function setObsoleteTime($obsoleteTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObsoleteTime()
-    {
-    }
-    /**
-     * Output only. The state of the version, ACTIVE, DEPRECATED or OBSOLETE.
-     *
-     * Accepted values: STATE_UNSPECIFIED, ACTIVE, DEPRECATED, OBSOLETE
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. When the version is supported.
-     *
-     * @param string $supportTime
-     */
-    public function setSupportTime($supportTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSupportTime()
+    class Google_Service_Config_TerraformVersion extends \Google\Service\Config\TerraformVersion
     {
     }
 }

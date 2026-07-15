@@ -21,139 +21,148 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reseller;
-
-class ChangePlanRequest extends \Google\Model
-{
-    /**
-     * Google-issued code (100 char max) for discounted pricing on subscription
-     * plans. Deal code must be included in `changePlan` request in order to
-     * receive discounted rate. This property is optional. If a deal code has
-     * already been added to a subscription, this property may be left empty and
-     * the existing discounted rate will still apply (if not empty, only provide
-     * the deal code that is already present on the subscription). If a deal code
-     * has never been added to a subscription and this property is left blank,
-     * regular pricing will apply.
-     *
-     * @var string
-     */
-    public $dealCode;
-    /**
-     * Identifies the resource as a subscription change plan request. Value:
-     * `subscriptions#changePlanRequest`
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The `planName` property is required. This is the name of the subscription's
-     * payment plan. For more information about the Google payment plans, see API
-     * concepts. Possible values are: - `ANNUAL_MONTHLY_PAY` - The annual
-     * commitment plan with monthly payments *Caution: *`ANNUAL_MONTHLY_PAY` is
-     * returned as `ANNUAL` in all API responses. - `ANNUAL_YEARLY_PAY` - The
-     * annual commitment plan with yearly payments - `FLEXIBLE` - The flexible
-     * plan - `TRIAL` - The 30-day free trial plan
-     *
-     * @var string
-     */
-    public $planName;
-    /**
-     * This is an optional property. This purchase order (PO) information is for
-     * resellers to use for their company tracking usage. If a `purchaseOrderId`
-     * value is given it appears in the API responses and shows up in the invoice.
-     * The property accepts up to 80 plain text characters.
-     *
-     * @var string
-     */
-    public $purchaseOrderId;
-    protected $seatsType = Seats::class;
-    protected $seatsDataType = '';
-    /**
-     * Google-issued code (100 char max) for discounted pricing on subscription
-     * plans. Deal code must be included in `changePlan` request in order to
-     * receive discounted rate. This property is optional. If a deal code has
-     * already been added to a subscription, this property may be left empty and
-     * the existing discounted rate will still apply (if not empty, only provide
-     * the deal code that is already present on the subscription). If a deal code
-     * has never been added to a subscription and this property is left blank,
-     * regular pricing will apply.
-     *
-     * @param string $dealCode
-     */
-    public function setDealCode($dealCode)
+namespace Google\Service\Reseller {
+    class ChangePlanRequest extends \Google\Model
     {
+        /**
+         * Google-issued code (100 char max) for discounted pricing on subscription
+         * plans. Deal code must be included in `changePlan` request in order to
+         * receive discounted rate. This property is optional. If a deal code has
+         * already been added to a subscription, this property may be left empty and
+         * the existing discounted rate will still apply (if not empty, only provide
+         * the deal code that is already present on the subscription). If a deal code
+         * has never been added to a subscription and this property is left blank,
+         * regular pricing will apply.
+         *
+         * @var string
+         */
+        public $dealCode;
+        /**
+         * Identifies the resource as a subscription change plan request. Value:
+         * `subscriptions#changePlanRequest`
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The `planName` property is required. This is the name of the subscription's
+         * payment plan. For more information about the Google payment plans, see API
+         * concepts. Possible values are: - `ANNUAL_MONTHLY_PAY` - The annual
+         * commitment plan with monthly payments *Caution: *`ANNUAL_MONTHLY_PAY` is
+         * returned as `ANNUAL` in all API responses. - `ANNUAL_YEARLY_PAY` - The
+         * annual commitment plan with yearly payments - `FLEXIBLE` - The flexible
+         * plan - `TRIAL` - The 30-day free trial plan
+         *
+         * @var string
+         */
+        public $planName;
+        /**
+         * This is an optional property. This purchase order (PO) information is for
+         * resellers to use for their company tracking usage. If a `purchaseOrderId`
+         * value is given it appears in the API responses and shows up in the invoice.
+         * The property accepts up to 80 plain text characters.
+         *
+         * @var string
+         */
+        public $purchaseOrderId;
+        protected $seatsType = Seats::class;
+        protected $seatsDataType = '';
+        /**
+         * Google-issued code (100 char max) for discounted pricing on subscription
+         * plans. Deal code must be included in `changePlan` request in order to
+         * receive discounted rate. This property is optional. If a deal code has
+         * already been added to a subscription, this property may be left empty and
+         * the existing discounted rate will still apply (if not empty, only provide
+         * the deal code that is already present on the subscription). If a deal code
+         * has never been added to a subscription and this property is left blank,
+         * regular pricing will apply.
+         *
+         * @param string $dealCode
+         */
+        public function setDealCode($dealCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDealCode()
+        {
+        }
+        /**
+         * Identifies the resource as a subscription change plan request. Value:
+         * `subscriptions#changePlanRequest`
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The `planName` property is required. This is the name of the subscription's
+         * payment plan. For more information about the Google payment plans, see API
+         * concepts. Possible values are: - `ANNUAL_MONTHLY_PAY` - The annual
+         * commitment plan with monthly payments *Caution: *`ANNUAL_MONTHLY_PAY` is
+         * returned as `ANNUAL` in all API responses. - `ANNUAL_YEARLY_PAY` - The
+         * annual commitment plan with yearly payments - `FLEXIBLE` - The flexible
+         * plan - `TRIAL` - The 30-day free trial plan
+         *
+         * @param string $planName
+         */
+        public function setPlanName($planName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlanName()
+        {
+        }
+        /**
+         * This is an optional property. This purchase order (PO) information is for
+         * resellers to use for their company tracking usage. If a `purchaseOrderId`
+         * value is given it appears in the API responses and shows up in the invoice.
+         * The property accepts up to 80 plain text characters.
+         *
+         * @param string $purchaseOrderId
+         */
+        public function setPurchaseOrderId($purchaseOrderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPurchaseOrderId()
+        {
+        }
+        /**
+         * This is a required property. The seats property is the number of user seat
+         * licenses.
+         *
+         * @param Seats $seats
+         */
+        public function setSeats(Seats $seats)
+        {
+        }
+        /**
+         * @return Seats
+         */
+        public function getSeats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Reseller\ChangePlanRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDealCode()
-    {
-    }
-    /**
-     * Identifies the resource as a subscription change plan request. Value:
-     * `subscriptions#changePlanRequest`
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The `planName` property is required. This is the name of the subscription's
-     * payment plan. For more information about the Google payment plans, see API
-     * concepts. Possible values are: - `ANNUAL_MONTHLY_PAY` - The annual
-     * commitment plan with monthly payments *Caution: *`ANNUAL_MONTHLY_PAY` is
-     * returned as `ANNUAL` in all API responses. - `ANNUAL_YEARLY_PAY` - The
-     * annual commitment plan with yearly payments - `FLEXIBLE` - The flexible
-     * plan - `TRIAL` - The 30-day free trial plan
-     *
-     * @param string $planName
-     */
-    public function setPlanName($planName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlanName()
-    {
-    }
-    /**
-     * This is an optional property. This purchase order (PO) information is for
-     * resellers to use for their company tracking usage. If a `purchaseOrderId`
-     * value is given it appears in the API responses and shows up in the invoice.
-     * The property accepts up to 80 plain text characters.
-     *
-     * @param string $purchaseOrderId
-     */
-    public function setPurchaseOrderId($purchaseOrderId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPurchaseOrderId()
-    {
-    }
-    /**
-     * This is a required property. The seats property is the number of user seat
-     * licenses.
-     *
-     * @param Seats $seats
-     */
-    public function setSeats(Seats $seats)
-    {
-    }
-    /**
-     * @return Seats
-     */
-    public function getSeats()
+    class Google_Service_Reseller_ChangePlanRequest extends \Google\Service\Reseller\ChangePlanRequest
     {
     }
 }

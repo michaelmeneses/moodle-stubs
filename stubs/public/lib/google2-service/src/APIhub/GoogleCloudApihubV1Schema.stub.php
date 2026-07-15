@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1Schema extends \Google\Model
-{
-    /**
-     * Output only. The display name of the schema. This will map to the name of
-     * the schema in the spec.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The raw value of the schema definition corresponding to the
-     * schema name in the spec.
-     *
-     * @var string
-     */
-    public $rawValue;
-    /**
-     * Output only. The display name of the schema. This will map to the name of
-     * the schema in the spec.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1Schema extends \Google\Model
     {
+        /**
+         * Output only. The display name of the schema. This will map to the name of
+         * the schema in the spec.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The raw value of the schema definition corresponding to the
+         * schema name in the spec.
+         *
+         * @var string
+         */
+        public $rawValue;
+        /**
+         * Output only. The display name of the schema. This will map to the name of
+         * the schema in the spec.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. The raw value of the schema definition corresponding to the
+         * schema name in the spec.
+         *
+         * @param string $rawValue
+         */
+        public function setRawValue($rawValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRawValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1Schema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. The raw value of the schema definition corresponding to the
-     * schema name in the spec.
-     *
-     * @param string $rawValue
-     */
-    public function setRawValue($rawValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRawValue()
+    class Google_Service_APIhub_GoogleCloudApihubV1Schema extends \Google\Service\APIhub\GoogleCloudApihubV1Schema
     {
     }
 }

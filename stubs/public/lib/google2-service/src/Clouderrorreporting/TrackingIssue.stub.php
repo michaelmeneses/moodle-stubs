@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Clouderrorreporting;
-
-class TrackingIssue extends \Google\Model
-{
-    /**
-     * A URL pointing to a related entry in an issue tracking system. Example:
-     * `https://github.com/user/project/issues/4`
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * A URL pointing to a related entry in an issue tracking system. Example:
-     * `https://github.com/user/project/issues/4`
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
+namespace Google\Service\Clouderrorreporting {
+    class TrackingIssue extends \Google\Model
     {
+        /**
+         * A URL pointing to a related entry in an issue tracking system. Example:
+         * `https://github.com/user/project/issues/4`
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * A URL pointing to a related entry in an issue tracking system. Example:
+         * `https://github.com/user/project/issues/4`
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Clouderrorreporting\TrackingIssue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUrl()
+    class Google_Service_Clouderrorreporting_TrackingIssue extends \Google\Service\Clouderrorreporting\TrackingIssue
     {
     }
 }

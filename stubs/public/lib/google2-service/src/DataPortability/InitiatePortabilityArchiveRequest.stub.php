@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataPortability;
-
-class InitiatePortabilityArchiveRequest extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    /**
-     * Optional. The timestamp that represents the end point for the data you are
-     * exporting. If the end_time is not specified in the
-     * InitiatePortabilityArchiveRequest, this field is set to the latest
-     * available data.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * The resources from which you're exporting data. These values have a 1:1
-     * correspondence with the OAuth scopes.
-     *
-     * @var string[]
-     */
-    public $resources;
-    /**
-     * Optional. The timestamp that represents the starting point for the data you
-     * are exporting. If the start_time is not specified in the
-     * InitiatePortabilityArchiveRequest, the field is set to the earliest
-     * available data.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Optional. The timestamp that represents the end point for the data you are
-     * exporting. If the end_time is not specified in the
-     * InitiatePortabilityArchiveRequest, this field is set to the latest
-     * available data.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\DataPortability {
+    class InitiatePortabilityArchiveRequest extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        /**
+         * Optional. The timestamp that represents the end point for the data you are
+         * exporting. If the end_time is not specified in the
+         * InitiatePortabilityArchiveRequest, this field is set to the latest
+         * available data.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * The resources from which you're exporting data. These values have a 1:1
+         * correspondence with the OAuth scopes.
+         *
+         * @var string[]
+         */
+        public $resources;
+        /**
+         * Optional. The timestamp that represents the starting point for the data you
+         * are exporting. If the start_time is not specified in the
+         * InitiatePortabilityArchiveRequest, the field is set to the earliest
+         * available data.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Optional. The timestamp that represents the end point for the data you are
+         * exporting. If the end_time is not specified in the
+         * InitiatePortabilityArchiveRequest, this field is set to the latest
+         * available data.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The resources from which you're exporting data. These values have a 1:1
+         * correspondence with the OAuth scopes.
+         *
+         * @param string[] $resources
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResources()
+        {
+        }
+        /**
+         * Optional. The timestamp that represents the starting point for the data you
+         * are exporting. If the start_time is not specified in the
+         * InitiatePortabilityArchiveRequest, the field is set to the earliest
+         * available data.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataPortability\InitiatePortabilityArchiveRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The resources from which you're exporting data. These values have a 1:1
-     * correspondence with the OAuth scopes.
-     *
-     * @param string[] $resources
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResources()
-    {
-    }
-    /**
-     * Optional. The timestamp that represents the starting point for the data you
-     * are exporting. If the start_time is not specified in the
-     * InitiatePortabilityArchiveRequest, the field is set to the earliest
-     * available data.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_DataPortability_InitiatePortabilityArchiveRequest extends \Google\Service\DataPortability\InitiatePortabilityArchiveRequest
     {
     }
 }

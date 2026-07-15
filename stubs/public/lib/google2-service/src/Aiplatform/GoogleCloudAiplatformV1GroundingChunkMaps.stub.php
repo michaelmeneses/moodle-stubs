@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GroundingChunkMaps extends \Google\Model
-{
-    protected $placeAnswerSourcesType = GoogleCloudAiplatformV1GroundingChunkMapsPlaceAnswerSources::class;
-    protected $placeAnswerSourcesDataType = '';
-    /**
-     * This Place's resource name, in `places/{place_id}` format. This can be used
-     * to look up the place in the Google Maps API.
-     *
-     * @var string
-     */
-    public $placeId;
-    /**
-     * The text of the place answer.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * The title of the place.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The URI of the place.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * The sources that were used to generate the place answer. This includes
-     * review snippets and photos that were used to generate the answer, as well
-     * as URIs to flag content.
-     *
-     * @param GoogleCloudAiplatformV1GroundingChunkMapsPlaceAnswerSources $placeAnswerSources
-     */
-    public function setPlaceAnswerSources(GoogleCloudAiplatformV1GroundingChunkMapsPlaceAnswerSources $placeAnswerSources)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GroundingChunkMaps extends \Google\Model
     {
+        protected $placeAnswerSourcesType = GoogleCloudAiplatformV1GroundingChunkMapsPlaceAnswerSources::class;
+        protected $placeAnswerSourcesDataType = '';
+        /**
+         * This Place's resource name, in `places/{place_id}` format. This can be used
+         * to look up the place in the Google Maps API.
+         *
+         * @var string
+         */
+        public $placeId;
+        /**
+         * The text of the place answer.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * The title of the place.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The URI of the place.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * The sources that were used to generate the place answer. This includes
+         * review snippets and photos that were used to generate the answer, as well
+         * as URIs to flag content.
+         *
+         * @param GoogleCloudAiplatformV1GroundingChunkMapsPlaceAnswerSources $placeAnswerSources
+         */
+        public function setPlaceAnswerSources(GoogleCloudAiplatformV1GroundingChunkMapsPlaceAnswerSources $placeAnswerSources)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GroundingChunkMapsPlaceAnswerSources
+         */
+        public function getPlaceAnswerSources()
+        {
+        }
+        /**
+         * This Place's resource name, in `places/{place_id}` format. This can be used
+         * to look up the place in the Google Maps API.
+         *
+         * @param string $placeId
+         */
+        public function setPlaceId($placeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlaceId()
+        {
+        }
+        /**
+         * The text of the place answer.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * The title of the place.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * The URI of the place.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1GroundingChunkMapsPlaceAnswerSources
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GroundingChunkMaps registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlaceAnswerSources()
-    {
-    }
-    /**
-     * This Place's resource name, in `places/{place_id}` format. This can be used
-     * to look up the place in the Google Maps API.
-     *
-     * @param string $placeId
-     */
-    public function setPlaceId($placeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlaceId()
-    {
-    }
-    /**
-     * The text of the place answer.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
-    {
-    }
-    /**
-     * The title of the place.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * The URI of the place.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GroundingChunkMaps extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GroundingChunkMaps
     {
     }
 }

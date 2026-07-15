@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BusinessProfilePerformance;
-
-class ListSearchKeywordImpressionsMonthlyResponse extends \Google\Collection
-{
-    protected $collection_key = 'searchKeywordsCounts';
-    /**
-     * A token indicating the last paginated result returned. This can be used by
-     * succeeding requests to get the next "page" of keywords. It will only be
-     * present when there are more results to be returned.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $searchKeywordsCountsType = SearchKeywordCount::class;
-    protected $searchKeywordsCountsDataType = 'array';
-    /**
-     * A token indicating the last paginated result returned. This can be used by
-     * succeeding requests to get the next "page" of keywords. It will only be
-     * present when there are more results to be returned.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\BusinessProfilePerformance {
+    class ListSearchKeywordImpressionsMonthlyResponse extends \Google\Collection
     {
+        protected $collection_key = 'searchKeywordsCounts';
+        /**
+         * A token indicating the last paginated result returned. This can be used by
+         * succeeding requests to get the next "page" of keywords. It will only be
+         * present when there are more results to be returned.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $searchKeywordsCountsType = SearchKeywordCount::class;
+        protected $searchKeywordsCountsDataType = 'array';
+        /**
+         * A token indicating the last paginated result returned. This can be used by
+         * succeeding requests to get the next "page" of keywords. It will only be
+         * present when there are more results to be returned.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Search terms which have been used to find a business.
+         *
+         * @param SearchKeywordCount[] $searchKeywordsCounts
+         */
+        public function setSearchKeywordsCounts($searchKeywordsCounts)
+        {
+        }
+        /**
+         * @return SearchKeywordCount[]
+         */
+        public function getSearchKeywordsCounts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BusinessProfilePerformance\ListSearchKeywordImpressionsMonthlyResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Search terms which have been used to find a business.
-     *
-     * @param SearchKeywordCount[] $searchKeywordsCounts
-     */
-    public function setSearchKeywordsCounts($searchKeywordsCounts)
-    {
-    }
-    /**
-     * @return SearchKeywordCount[]
-     */
-    public function getSearchKeywordsCounts()
+    class Google_Service_BusinessProfilePerformance_ListSearchKeywordImpressionsMonthlyResponse extends \Google\Service\BusinessProfilePerformance\ListSearchKeywordImpressionsMonthlyResponse
     {
     }
 }

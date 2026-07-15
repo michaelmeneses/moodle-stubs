@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayableLocations;
-
-class GoogleMapsPlayablelocationsV3LogPlayerReportsRequest extends \Google\Collection
-{
-    protected $collection_key = 'playerReports';
-    protected $clientInfoType = GoogleMapsUnityClientInfo::class;
-    protected $clientInfoDataType = '';
-    protected $playerReportsType = GoogleMapsPlayablelocationsV3PlayerReport::class;
-    protected $playerReportsDataType = 'array';
-    public $requestId;
+namespace Google\Service\PlayableLocations {
+    class GoogleMapsPlayablelocationsV3LogPlayerReportsRequest extends \Google\Collection
+    {
+        protected $collection_key = 'playerReports';
+        protected $clientInfoType = GoogleMapsUnityClientInfo::class;
+        protected $clientInfoDataType = '';
+        protected $playerReportsType = GoogleMapsPlayablelocationsV3PlayerReport::class;
+        protected $playerReportsDataType = 'array';
+        public $requestId;
+        /**
+         * @param GoogleMapsUnityClientInfo
+         */
+        public function setClientInfo(GoogleMapsUnityClientInfo $clientInfo)
+        {
+        }
+        /**
+         * @return GoogleMapsUnityClientInfo
+         */
+        public function getClientInfo()
+        {
+        }
+        /**
+         * @param GoogleMapsPlayablelocationsV3PlayerReport[]
+         */
+        public function setPlayerReports($playerReports)
+        {
+        }
+        /**
+         * @return GoogleMapsPlayablelocationsV3PlayerReport[]
+         */
+        public function getPlayerReports()
+        {
+        }
+        public function setRequestId($requestId)
+        {
+        }
+        public function getRequestId()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param GoogleMapsUnityClientInfo
+     * Runtime class alias of \Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3LogPlayerReportsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setClientInfo(GoogleMapsUnityClientInfo $clientInfo)
-    {
-    }
-    /**
-     * @return GoogleMapsUnityClientInfo
-     */
-    public function getClientInfo()
-    {
-    }
-    /**
-     * @param GoogleMapsPlayablelocationsV3PlayerReport[]
-     */
-    public function setPlayerReports($playerReports)
-    {
-    }
-    /**
-     * @return GoogleMapsPlayablelocationsV3PlayerReport[]
-     */
-    public function getPlayerReports()
-    {
-    }
-    public function setRequestId($requestId)
-    {
-    }
-    public function getRequestId()
+    class Google_Service_PlayableLocations_GoogleMapsPlayablelocationsV3LogPlayerReportsRequest extends \Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3LogPlayerReportsRequest
     {
     }
 }

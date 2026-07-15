@@ -8,6 +8,7 @@
  */
 namespace Aws\BedrockRuntime;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Bedrock Runtime** service.
  * @method \Aws\Result applyGuardrail(array $args = [])

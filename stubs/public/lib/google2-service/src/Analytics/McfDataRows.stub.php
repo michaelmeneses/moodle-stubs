@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class McfDataRows extends \Google\Collection
-{
-    protected $collection_key = 'conversionPathValue';
-    protected $conversionPathValueType = McfDataRowsConversionPathValue::class;
-    protected $conversionPathValueDataType = 'array';
-    /**
-     * A primitive dimension value. A primitive metric value.
-     *
-     * @var string
-     */
-    public $primitiveValue;
-    /**
-     * A conversion path dimension value, containing a list of interactions with
-     * their attributes.
-     *
-     * @param McfDataRowsConversionPathValue[] $conversionPathValue
-     */
-    public function setConversionPathValue($conversionPathValue)
+namespace Google\Service\Analytics {
+    class McfDataRows extends \Google\Collection
     {
+        protected $collection_key = 'conversionPathValue';
+        protected $conversionPathValueType = McfDataRowsConversionPathValue::class;
+        protected $conversionPathValueDataType = 'array';
+        /**
+         * A primitive dimension value. A primitive metric value.
+         *
+         * @var string
+         */
+        public $primitiveValue;
+        /**
+         * A conversion path dimension value, containing a list of interactions with
+         * their attributes.
+         *
+         * @param McfDataRowsConversionPathValue[] $conversionPathValue
+         */
+        public function setConversionPathValue($conversionPathValue)
+        {
+        }
+        /**
+         * @return McfDataRowsConversionPathValue[]
+         */
+        public function getConversionPathValue()
+        {
+        }
+        /**
+         * A primitive dimension value. A primitive metric value.
+         *
+         * @param string $primitiveValue
+         */
+        public function setPrimitiveValue($primitiveValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimitiveValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return McfDataRowsConversionPathValue[]
+     * Runtime class alias of \Google\Service\Analytics\McfDataRows registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversionPathValue()
-    {
-    }
-    /**
-     * A primitive dimension value. A primitive metric value.
-     *
-     * @param string $primitiveValue
-     */
-    public function setPrimitiveValue($primitiveValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrimitiveValue()
+    class Google_Service_Analytics_McfDataRows extends \Google\Service\Analytics\McfDataRows
     {
     }
 }

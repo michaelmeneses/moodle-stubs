@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSExampleSet extends \Google\Model
-{
-    protected $fileSpecType = XPSFileSpec::class;
-    protected $fileSpecDataType = '';
-    /**
-     * Fingerprint of the example set.
-     *
-     * @var string
-     */
-    public $fingerprint;
-    /**
-     * Number of examples.
-     *
-     * @var string
-     */
-    public $numExamples;
-    /**
-     * Number of input sources.
-     *
-     * @var string
-     */
-    public $numInputSources;
-    /**
-     * File spec of the examples or input sources.
-     *
-     * @param XPSFileSpec $fileSpec
-     */
-    public function setFileSpec(XPSFileSpec $fileSpec)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSExampleSet extends \Google\Model
     {
+        protected $fileSpecType = XPSFileSpec::class;
+        protected $fileSpecDataType = '';
+        /**
+         * Fingerprint of the example set.
+         *
+         * @var string
+         */
+        public $fingerprint;
+        /**
+         * Number of examples.
+         *
+         * @var string
+         */
+        public $numExamples;
+        /**
+         * Number of input sources.
+         *
+         * @var string
+         */
+        public $numInputSources;
+        /**
+         * File spec of the examples or input sources.
+         *
+         * @param XPSFileSpec $fileSpec
+         */
+        public function setFileSpec(XPSFileSpec $fileSpec)
+        {
+        }
+        /**
+         * @return XPSFileSpec
+         */
+        public function getFileSpec()
+        {
+        }
+        /**
+         * Fingerprint of the example set.
+         *
+         * @param string $fingerprint
+         */
+        public function setFingerprint($fingerprint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFingerprint()
+        {
+        }
+        /**
+         * Number of examples.
+         *
+         * @param string $numExamples
+         */
+        public function setNumExamples($numExamples)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumExamples()
+        {
+        }
+        /**
+         * Number of input sources.
+         *
+         * @param string $numInputSources
+         */
+        public function setNumInputSources($numInputSources)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumInputSources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSFileSpec
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSExampleSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileSpec()
-    {
-    }
-    /**
-     * Fingerprint of the example set.
-     *
-     * @param string $fingerprint
-     */
-    public function setFingerprint($fingerprint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFingerprint()
-    {
-    }
-    /**
-     * Number of examples.
-     *
-     * @param string $numExamples
-     */
-    public function setNumExamples($numExamples)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumExamples()
-    {
-    }
-    /**
-     * Number of input sources.
-     *
-     * @param string $numInputSources
-     */
-    public function setNumInputSources($numInputSources)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumInputSources()
+    class Google_Service_CloudNaturalLanguage_XPSExampleSet extends \Google\Service\CloudNaturalLanguage\XPSExampleSet
     {
     }
 }

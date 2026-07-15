@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class ThreatSource extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $referrer;
-    /**
-     * @var string
-     */
-    public $remoteIp;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $url;
-    /**
-     * @param string
-     */
-    public function setReferrer($referrer)
+namespace Google\Service\Safebrowsing {
+    class ThreatSource extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $referrer;
+        /**
+         * @var string
+         */
+        public $remoteIp;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @var string
+         */
+        public $url;
+        /**
+         * @param string
+         */
+        public function setReferrer($referrer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferrer()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRemoteIp($remoteIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemoteIp()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Safebrowsing\ThreatSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReferrer()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRemoteIp($remoteIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRemoteIp()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_Safebrowsing_ThreatSource extends \Google\Service\Safebrowsing\ThreatSource
     {
     }
 }

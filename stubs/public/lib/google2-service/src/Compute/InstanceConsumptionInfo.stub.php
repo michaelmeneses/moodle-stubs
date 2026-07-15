@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceConsumptionInfo extends \Google\Model
-{
-    /**
-     * Output only. The number of virtual CPUs that are available to the instance.
-     *
-     * @var int
-     */
-    public $guestCpus;
-    /**
-     * Output only. The amount of local SSD storage available to the instance,
-     * defined in GiB.
-     *
-     * @var int
-     */
-    public $localSsdGb;
-    /**
-     * Output only. The amount of physical memory available to the instance,
-     * defined in MiB.
-     *
-     * @var int
-     */
-    public $memoryMb;
-    /**
-     * Output only. The minimal guaranteed number of virtual CPUs that are
-     * reserved.
-     *
-     * @var int
-     */
-    public $minNodeCpus;
-    /**
-     * Output only. The number of virtual CPUs that are available to the instance.
-     *
-     * @param int $guestCpus
-     */
-    public function setGuestCpus($guestCpus)
+namespace Google\Service\Compute {
+    class InstanceConsumptionInfo extends \Google\Model
     {
+        /**
+         * Output only. The number of virtual CPUs that are available to the instance.
+         *
+         * @var int
+         */
+        public $guestCpus;
+        /**
+         * Output only. The amount of local SSD storage available to the instance,
+         * defined in GiB.
+         *
+         * @var int
+         */
+        public $localSsdGb;
+        /**
+         * Output only. The amount of physical memory available to the instance,
+         * defined in MiB.
+         *
+         * @var int
+         */
+        public $memoryMb;
+        /**
+         * Output only. The minimal guaranteed number of virtual CPUs that are
+         * reserved.
+         *
+         * @var int
+         */
+        public $minNodeCpus;
+        /**
+         * Output only. The number of virtual CPUs that are available to the instance.
+         *
+         * @param int $guestCpus
+         */
+        public function setGuestCpus($guestCpus)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getGuestCpus()
+        {
+        }
+        /**
+         * Output only. The amount of local SSD storage available to the instance,
+         * defined in GiB.
+         *
+         * @param int $localSsdGb
+         */
+        public function setLocalSsdGb($localSsdGb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLocalSsdGb()
+        {
+        }
+        /**
+         * Output only. The amount of physical memory available to the instance,
+         * defined in MiB.
+         *
+         * @param int $memoryMb
+         */
+        public function setMemoryMb($memoryMb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMemoryMb()
+        {
+        }
+        /**
+         * Output only. The minimal guaranteed number of virtual CPUs that are
+         * reserved.
+         *
+         * @param int $minNodeCpus
+         */
+        public function setMinNodeCpus($minNodeCpus)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinNodeCpus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Compute\InstanceConsumptionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGuestCpus()
-    {
-    }
-    /**
-     * Output only. The amount of local SSD storage available to the instance,
-     * defined in GiB.
-     *
-     * @param int $localSsdGb
-     */
-    public function setLocalSsdGb($localSsdGb)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLocalSsdGb()
-    {
-    }
-    /**
-     * Output only. The amount of physical memory available to the instance,
-     * defined in MiB.
-     *
-     * @param int $memoryMb
-     */
-    public function setMemoryMb($memoryMb)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMemoryMb()
-    {
-    }
-    /**
-     * Output only. The minimal guaranteed number of virtual CPUs that are
-     * reserved.
-     *
-     * @param int $minNodeCpus
-     */
-    public function setMinNodeCpus($minNodeCpus)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinNodeCpus()
+    class Google_Service_Compute_InstanceConsumptionInfo extends \Google\Service\Compute\InstanceConsumptionInfo
     {
     }
 }

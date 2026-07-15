@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1PurgeIdentityMappingsRequest extends \Google\Model
-{
-    /**
-     * Filter matching identity mappings to purge. The eligible field for
-     * filtering is: * `update_time`: in ISO 8601 "zulu" format. * `external_id`
-     * Examples: * Deleting all identity mappings updated in a time range:
-     * `update_time > "2012-04-23T18:25:43.511Z" AND update_time <
-     * "2012-04-23T18:30:43.511Z"` * Deleting all identity mappings for a given
-     * external_id: `external_id = "id1"` * Deleting all identity mappings inside
-     * an identity mapping store: `*` The filtering fields are assumed to have an
-     * implicit AND. Should not be used with source. An error will be thrown, if
-     * both are provided.
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * Actually performs the purge. If `force` is set to false, return the
-     * expected purge count without deleting any identity mappings. This field is
-     * only supported for purge with filter. For input source this field is
-     * ignored and data will be purged regardless of the value of this field.
-     *
-     * @var bool
-     */
-    public $force;
-    protected $inlineSourceType = GoogleCloudDiscoveryengineV1PurgeIdentityMappingsRequestInlineSource::class;
-    protected $inlineSourceDataType = '';
-    /**
-     * Filter matching identity mappings to purge. The eligible field for
-     * filtering is: * `update_time`: in ISO 8601 "zulu" format. * `external_id`
-     * Examples: * Deleting all identity mappings updated in a time range:
-     * `update_time > "2012-04-23T18:25:43.511Z" AND update_time <
-     * "2012-04-23T18:30:43.511Z"` * Deleting all identity mappings for a given
-     * external_id: `external_id = "id1"` * Deleting all identity mappings inside
-     * an identity mapping store: `*` The filtering fields are assumed to have an
-     * implicit AND. Should not be used with source. An error will be thrown, if
-     * both are provided.
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1PurgeIdentityMappingsRequest extends \Google\Model
     {
+        /**
+         * Filter matching identity mappings to purge. The eligible field for
+         * filtering is: * `update_time`: in ISO 8601 "zulu" format. * `external_id`
+         * Examples: * Deleting all identity mappings updated in a time range:
+         * `update_time > "2012-04-23T18:25:43.511Z" AND update_time <
+         * "2012-04-23T18:30:43.511Z"` * Deleting all identity mappings for a given
+         * external_id: `external_id = "id1"` * Deleting all identity mappings inside
+         * an identity mapping store: `*` The filtering fields are assumed to have an
+         * implicit AND. Should not be used with source. An error will be thrown, if
+         * both are provided.
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * Actually performs the purge. If `force` is set to false, return the
+         * expected purge count without deleting any identity mappings. This field is
+         * only supported for purge with filter. For input source this field is
+         * ignored and data will be purged regardless of the value of this field.
+         *
+         * @var bool
+         */
+        public $force;
+        protected $inlineSourceType = GoogleCloudDiscoveryengineV1PurgeIdentityMappingsRequestInlineSource::class;
+        protected $inlineSourceDataType = '';
+        /**
+         * Filter matching identity mappings to purge. The eligible field for
+         * filtering is: * `update_time`: in ISO 8601 "zulu" format. * `external_id`
+         * Examples: * Deleting all identity mappings updated in a time range:
+         * `update_time > "2012-04-23T18:25:43.511Z" AND update_time <
+         * "2012-04-23T18:30:43.511Z"` * Deleting all identity mappings for a given
+         * external_id: `external_id = "id1"` * Deleting all identity mappings inside
+         * an identity mapping store: `*` The filtering fields are assumed to have an
+         * implicit AND. Should not be used with source. An error will be thrown, if
+         * both are provided.
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * Actually performs the purge. If `force` is set to false, return the
+         * expected purge count without deleting any identity mappings. This field is
+         * only supported for purge with filter. For input source this field is
+         * ignored and data will be purged regardless of the value of this field.
+         *
+         * @param bool $force
+         */
+        public function setForce($force)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getForce()
+        {
+        }
+        /**
+         * The inline source to purge identity mapping entries from.
+         *
+         * @param GoogleCloudDiscoveryengineV1PurgeIdentityMappingsRequestInlineSource $inlineSource
+         */
+        public function setInlineSource(GoogleCloudDiscoveryengineV1PurgeIdentityMappingsRequestInlineSource $inlineSource)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1PurgeIdentityMappingsRequestInlineSource
+         */
+        public function getInlineSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1PurgeIdentityMappingsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
-    {
-    }
-    /**
-     * Actually performs the purge. If `force` is set to false, return the
-     * expected purge count without deleting any identity mappings. This field is
-     * only supported for purge with filter. For input source this field is
-     * ignored and data will be purged regardless of the value of this field.
-     *
-     * @param bool $force
-     */
-    public function setForce($force)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getForce()
-    {
-    }
-    /**
-     * The inline source to purge identity mapping entries from.
-     *
-     * @param GoogleCloudDiscoveryengineV1PurgeIdentityMappingsRequestInlineSource $inlineSource
-     */
-    public function setInlineSource(GoogleCloudDiscoveryengineV1PurgeIdentityMappingsRequestInlineSource $inlineSource)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1PurgeIdentityMappingsRequestInlineSource
-     */
-    public function getInlineSource()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1PurgeIdentityMappingsRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1PurgeIdentityMappingsRequest
     {
     }
 }

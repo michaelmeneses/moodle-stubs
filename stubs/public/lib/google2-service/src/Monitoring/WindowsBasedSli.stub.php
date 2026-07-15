@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class WindowsBasedSli extends \Google\Model
-{
-    /**
-     * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters)
-     * specifying a TimeSeries with ValueType = BOOL. The window is good if any
-     * true values appear in the window.
-     *
-     * @var string
-     */
-    public $goodBadMetricFilter;
-    protected $goodTotalRatioThresholdType = PerformanceThreshold::class;
-    protected $goodTotalRatioThresholdDataType = '';
-    protected $metricMeanInRangeType = MetricRange::class;
-    protected $metricMeanInRangeDataType = '';
-    protected $metricSumInRangeType = MetricRange::class;
-    protected $metricSumInRangeDataType = '';
-    /**
-     * Duration over which window quality is evaluated. Must be an integer
-     * fraction of a day and at least 60s.
-     *
-     * @var string
-     */
-    public $windowPeriod;
-    /**
-     * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters)
-     * specifying a TimeSeries with ValueType = BOOL. The window is good if any
-     * true values appear in the window.
-     *
-     * @param string $goodBadMetricFilter
-     */
-    public function setGoodBadMetricFilter($goodBadMetricFilter)
+namespace Google\Service\Monitoring {
+    class WindowsBasedSli extends \Google\Model
     {
+        /**
+         * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters)
+         * specifying a TimeSeries with ValueType = BOOL. The window is good if any
+         * true values appear in the window.
+         *
+         * @var string
+         */
+        public $goodBadMetricFilter;
+        protected $goodTotalRatioThresholdType = PerformanceThreshold::class;
+        protected $goodTotalRatioThresholdDataType = '';
+        protected $metricMeanInRangeType = MetricRange::class;
+        protected $metricMeanInRangeDataType = '';
+        protected $metricSumInRangeType = MetricRange::class;
+        protected $metricSumInRangeDataType = '';
+        /**
+         * Duration over which window quality is evaluated. Must be an integer
+         * fraction of a day and at least 60s.
+         *
+         * @var string
+         */
+        public $windowPeriod;
+        /**
+         * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters)
+         * specifying a TimeSeries with ValueType = BOOL. The window is good if any
+         * true values appear in the window.
+         *
+         * @param string $goodBadMetricFilter
+         */
+        public function setGoodBadMetricFilter($goodBadMetricFilter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGoodBadMetricFilter()
+        {
+        }
+        /**
+         * A window is good if its performance is high enough.
+         *
+         * @param PerformanceThreshold $goodTotalRatioThreshold
+         */
+        public function setGoodTotalRatioThreshold(PerformanceThreshold $goodTotalRatioThreshold)
+        {
+        }
+        /**
+         * @return PerformanceThreshold
+         */
+        public function getGoodTotalRatioThreshold()
+        {
+        }
+        /**
+         * A window is good if the metric's value is in a good range, averaged across
+         * returned streams.
+         *
+         * @param MetricRange $metricMeanInRange
+         */
+        public function setMetricMeanInRange(MetricRange $metricMeanInRange)
+        {
+        }
+        /**
+         * @return MetricRange
+         */
+        public function getMetricMeanInRange()
+        {
+        }
+        /**
+         * A window is good if the metric's value is in a good range, summed across
+         * returned streams.
+         *
+         * @param MetricRange $metricSumInRange
+         */
+        public function setMetricSumInRange(MetricRange $metricSumInRange)
+        {
+        }
+        /**
+         * @return MetricRange
+         */
+        public function getMetricSumInRange()
+        {
+        }
+        /**
+         * Duration over which window quality is evaluated. Must be an integer
+         * fraction of a day and at least 60s.
+         *
+         * @param string $windowPeriod
+         */
+        public function setWindowPeriod($windowPeriod)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWindowPeriod()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\WindowsBasedSli registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGoodBadMetricFilter()
-    {
-    }
-    /**
-     * A window is good if its performance is high enough.
-     *
-     * @param PerformanceThreshold $goodTotalRatioThreshold
-     */
-    public function setGoodTotalRatioThreshold(PerformanceThreshold $goodTotalRatioThreshold)
-    {
-    }
-    /**
-     * @return PerformanceThreshold
-     */
-    public function getGoodTotalRatioThreshold()
-    {
-    }
-    /**
-     * A window is good if the metric's value is in a good range, averaged across
-     * returned streams.
-     *
-     * @param MetricRange $metricMeanInRange
-     */
-    public function setMetricMeanInRange(MetricRange $metricMeanInRange)
-    {
-    }
-    /**
-     * @return MetricRange
-     */
-    public function getMetricMeanInRange()
-    {
-    }
-    /**
-     * A window is good if the metric's value is in a good range, summed across
-     * returned streams.
-     *
-     * @param MetricRange $metricSumInRange
-     */
-    public function setMetricSumInRange(MetricRange $metricSumInRange)
-    {
-    }
-    /**
-     * @return MetricRange
-     */
-    public function getMetricSumInRange()
-    {
-    }
-    /**
-     * Duration over which window quality is evaluated. Must be an integer
-     * fraction of a day and at least 60s.
-     *
-     * @param string $windowPeriod
-     */
-    public function setWindowPeriod($windowPeriod)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWindowPeriod()
+    class Google_Service_Monitoring_WindowsBasedSli extends \Google\Service\Monitoring\WindowsBasedSli
     {
     }
 }

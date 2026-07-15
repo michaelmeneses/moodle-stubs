@@ -21,76 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise\Resource;
-
-/**
- * The "storelayoutpages" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidenterpriseService = new Google\Service\AndroidEnterprise(...);
- *   $storelayoutpages = $androidenterpriseService->storelayoutpages;
- *  </code>
- */
-class Storelayoutpages extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidEnterprise\Resource {
+    use Google\Service\AndroidEnterprise\StoreLayoutPagesListResponse;
+    use Google\Service\AndroidEnterprise\StorePage;
     /**
-     * Deletes a store page. (storelayoutpages.delete)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param string $pageId The ID of the page.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "storelayoutpages" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidenterpriseService = new Google\Service\AndroidEnterprise(...);
+     *   $storelayoutpages = $androidenterpriseService->storelayoutpages;
+     *  </code>
      */
-    public function delete($enterpriseId, $pageId, $optParams = [])
+    class Storelayoutpages extends \Google\Service\Resource
     {
+        /**
+         * Deletes a store page. (storelayoutpages.delete)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param string $pageId The ID of the page.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($enterpriseId, $pageId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves details of a store page. (storelayoutpages.get)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param string $pageId The ID of the page.
+         * @param array $optParams Optional parameters.
+         * @return StorePage
+         * @throws \Google\Service\Exception
+         */
+        public function get($enterpriseId, $pageId, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a new store page. (storelayoutpages.insert)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param StorePage $postBody
+         * @param array $optParams Optional parameters.
+         * @return StorePage
+         * @throws \Google\Service\Exception
+         */
+        public function insert($enterpriseId, StorePage $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the details of all pages in the store.
+         * (storelayoutpages.listStorelayoutpages)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param array $optParams Optional parameters.
+         * @return StoreLayoutPagesListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listStorelayoutpages($enterpriseId, $optParams = [])
+        {
+        }
+        /**
+         * Updates the content of a store page. (storelayoutpages.update)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param string $pageId The ID of the page.
+         * @param StorePage $postBody
+         * @param array $optParams Optional parameters.
+         * @return StorePage
+         * @throws \Google\Service\Exception
+         */
+        public function update($enterpriseId, $pageId, StorePage $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves details of a store page. (storelayoutpages.get)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param string $pageId The ID of the page.
-     * @param array $optParams Optional parameters.
-     * @return StorePage
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidEnterprise\Resource\Storelayoutpages registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($enterpriseId, $pageId, $optParams = [])
-    {
-    }
-    /**
-     * Inserts a new store page. (storelayoutpages.insert)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param StorePage $postBody
-     * @param array $optParams Optional parameters.
-     * @return StorePage
-     * @throws \Google\Service\Exception
-     */
-    public function insert($enterpriseId, StorePage $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves the details of all pages in the store.
-     * (storelayoutpages.listStorelayoutpages)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param array $optParams Optional parameters.
-     * @return StoreLayoutPagesListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listStorelayoutpages($enterpriseId, $optParams = [])
-    {
-    }
-    /**
-     * Updates the content of a store page. (storelayoutpages.update)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param string $pageId The ID of the page.
-     * @param StorePage $postBody
-     * @param array $optParams Optional parameters.
-     * @return StorePage
-     * @throws \Google\Service\Exception
-     */
-    public function update($enterpriseId, $pageId, StorePage $postBody, $optParams = [])
+    class Google_Service_AndroidEnterprise_Resource_Storelayoutpages extends \Google\Service\AndroidEnterprise\Resource\Storelayoutpages
     {
     }
 }

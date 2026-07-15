@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class Position extends \Google\Model
-{
-    /**
-     * X coordinate.
-     *
-     * @var float
-     */
-    public $x;
-    /**
-     * Y coordinate.
-     *
-     * @var float
-     */
-    public $y;
-    /**
-     * Z coordinate (or depth).
-     *
-     * @var float
-     */
-    public $z;
-    /**
-     * X coordinate.
-     *
-     * @param float $x
-     */
-    public function setX($x)
+namespace Google\Service\Vision {
+    class Position extends \Google\Model
     {
+        /**
+         * X coordinate.
+         *
+         * @var float
+         */
+        public $x;
+        /**
+         * Y coordinate.
+         *
+         * @var float
+         */
+        public $y;
+        /**
+         * Z coordinate (or depth).
+         *
+         * @var float
+         */
+        public $z;
+        /**
+         * X coordinate.
+         *
+         * @param float $x
+         */
+        public function setX($x)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getX()
+        {
+        }
+        /**
+         * Y coordinate.
+         *
+         * @param float $y
+         */
+        public function setY($y)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getY()
+        {
+        }
+        /**
+         * Z coordinate (or depth).
+         *
+         * @param float $z
+         */
+        public function setZ($z)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getZ()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Vision\Position registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getX()
-    {
-    }
-    /**
-     * Y coordinate.
-     *
-     * @param float $y
-     */
-    public function setY($y)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getY()
-    {
-    }
-    /**
-     * Z coordinate (or depth).
-     *
-     * @param float $z
-     */
-    public function setZ($z)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getZ()
+    class Google_Service_Vision_Position extends \Google\Service\Vision\Position
     {
     }
 }

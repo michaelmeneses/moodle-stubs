@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ReadIndexDatapointsResponse extends \Google\Collection
-{
-    protected $collection_key = 'datapoints';
-    protected $datapointsType = GoogleCloudAiplatformV1IndexDatapoint::class;
-    protected $datapointsDataType = 'array';
-    /**
-     * The result list of datapoints.
-     *
-     * @param GoogleCloudAiplatformV1IndexDatapoint[] $datapoints
-     */
-    public function setDatapoints($datapoints)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ReadIndexDatapointsResponse extends \Google\Collection
     {
+        protected $collection_key = 'datapoints';
+        protected $datapointsType = GoogleCloudAiplatformV1IndexDatapoint::class;
+        protected $datapointsDataType = 'array';
+        /**
+         * The result list of datapoints.
+         *
+         * @param GoogleCloudAiplatformV1IndexDatapoint[] $datapoints
+         */
+        public function setDatapoints($datapoints)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1IndexDatapoint[]
+         */
+        public function getDatapoints()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1IndexDatapoint[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadIndexDatapointsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatapoints()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ReadIndexDatapointsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadIndexDatapointsResponse
     {
     }
 }

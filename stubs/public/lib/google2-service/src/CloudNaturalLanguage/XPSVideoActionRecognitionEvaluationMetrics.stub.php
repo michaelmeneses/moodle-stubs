@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSVideoActionRecognitionEvaluationMetrics extends \Google\Collection
-{
-    protected $collection_key = 'videoActionMetricsEntries';
-    /**
-     * Output only. The number of ground truth actions used to create this
-     * evaluation.
-     *
-     * @var int
-     */
-    public $evaluatedActionCount;
-    protected $videoActionMetricsEntriesType = XPSVideoActionMetricsEntry::class;
-    protected $videoActionMetricsEntriesDataType = 'array';
-    /**
-     * Output only. The number of ground truth actions used to create this
-     * evaluation.
-     *
-     * @param int $evaluatedActionCount
-     */
-    public function setEvaluatedActionCount($evaluatedActionCount)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSVideoActionRecognitionEvaluationMetrics extends \Google\Collection
     {
+        protected $collection_key = 'videoActionMetricsEntries';
+        /**
+         * Output only. The number of ground truth actions used to create this
+         * evaluation.
+         *
+         * @var int
+         */
+        public $evaluatedActionCount;
+        protected $videoActionMetricsEntriesType = XPSVideoActionMetricsEntry::class;
+        protected $videoActionMetricsEntriesDataType = 'array';
+        /**
+         * Output only. The number of ground truth actions used to create this
+         * evaluation.
+         *
+         * @param int $evaluatedActionCount
+         */
+        public function setEvaluatedActionCount($evaluatedActionCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEvaluatedActionCount()
+        {
+        }
+        /**
+         * Output only. The metric entries for precision window lengths: 1s,2s,3s,4s,
+         * 5s.
+         *
+         * @param XPSVideoActionMetricsEntry[] $videoActionMetricsEntries
+         */
+        public function setVideoActionMetricsEntries($videoActionMetricsEntries)
+        {
+        }
+        /**
+         * @return XPSVideoActionMetricsEntry[]
+         */
+        public function getVideoActionMetricsEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSVideoActionRecognitionEvaluationMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvaluatedActionCount()
-    {
-    }
-    /**
-     * Output only. The metric entries for precision window lengths: 1s,2s,3s,4s,
-     * 5s.
-     *
-     * @param XPSVideoActionMetricsEntry[] $videoActionMetricsEntries
-     */
-    public function setVideoActionMetricsEntries($videoActionMetricsEntries)
-    {
-    }
-    /**
-     * @return XPSVideoActionMetricsEntry[]
-     */
-    public function getVideoActionMetricsEntries()
+    class Google_Service_CloudNaturalLanguage_XPSVideoActionRecognitionEvaluationMetrics extends \Google\Service\CloudNaturalLanguage\XPSVideoActionRecognitionEvaluationMetrics
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class ListScansResponse extends \Google\Collection
-{
-    protected $collection_key = 'scans';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $scansType = Scan::class;
-    protected $scansDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Spanner {
+    class ListScansResponse extends \Google\Collection
     {
+        protected $collection_key = 'scans';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $scansType = Scan::class;
+        protected $scansDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Available scans based on the list query parameters.
+         *
+         * @param Scan[] $scans
+         */
+        public function setScans($scans)
+        {
+        }
+        /**
+         * @return Scan[]
+         */
+        public function getScans()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\ListScansResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Available scans based on the list query parameters.
-     *
-     * @param Scan[] $scans
-     */
-    public function setScans($scans)
-    {
-    }
-    /**
-     * @return Scan[]
-     */
-    public function getScans()
+    class Google_Service_Spanner_ListScansResponse extends \Google\Service\Spanner\ListScansResponse
     {
     }
 }

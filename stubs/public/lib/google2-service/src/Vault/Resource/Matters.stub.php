@@ -21,162 +21,184 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault\Resource;
-
-/**
- * The "matters" collection of methods.
- * Typical usage is:
- *  <code>
- *   $vaultService = new Google\Service\Vault(...);
- *   $matters = $vaultService->matters;
- *  </code>
- */
-class Matters extends \Google\Service\Resource
-{
+namespace Google\Service\Vault\Resource {
+    use Google\Service\Vault\AddMatterPermissionsRequest;
+    use Google\Service\Vault\CloseMatterRequest;
+    use Google\Service\Vault\CloseMatterResponse;
+    use Google\Service\Vault\CountArtifactsRequest;
+    use Google\Service\Vault\ListMattersResponse;
+    use Google\Service\Vault\Matter;
+    use Google\Service\Vault\MatterPermission;
+    use Google\Service\Vault\Operation;
+    use Google\Service\Vault\RemoveMatterPermissionsRequest;
+    use Google\Service\Vault\ReopenMatterRequest;
+    use Google\Service\Vault\ReopenMatterResponse;
+    use Google\Service\Vault\UndeleteMatterRequest;
+    use Google\Service\Vault\VaultEmpty;
     /**
-     * Adds an account as a matter collaborator. (matters.addPermissions)
-     *
-     * @param string $matterId The matter ID.
-     * @param AddMatterPermissionsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return MatterPermission
-     * @throws \Google\Service\Exception
+     * The "matters" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $vaultService = new Google\Service\Vault(...);
+     *   $matters = $vaultService->matters;
+     *  </code>
      */
-    public function addPermissions($matterId, AddMatterPermissionsRequest $postBody, $optParams = [])
+    class Matters extends \Google\Service\Resource
     {
+        /**
+         * Adds an account as a matter collaborator. (matters.addPermissions)
+         *
+         * @param string $matterId The matter ID.
+         * @param AddMatterPermissionsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return MatterPermission
+         * @throws \Google\Service\Exception
+         */
+        public function addPermissions($matterId, AddMatterPermissionsRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Closes the specified matter. Returns the matter with updated state.
+         * (matters.close)
+         *
+         * @param string $matterId The matter ID.
+         * @param CloseMatterRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return CloseMatterResponse
+         * @throws \Google\Service\Exception
+         */
+        public function close($matterId, CloseMatterRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Counts the accounts processed by the specified query. (matters.count)
+         *
+         * @param string $matterId The matter ID.
+         * @param CountArtifactsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function count($matterId, CountArtifactsRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Creates a matter with the given name and description. The initial state is
+         * open, and the owner is the method caller. Returns the created matter with
+         * default view. (matters.create)
+         *
+         * @param Matter $postBody
+         * @param array $optParams Optional parameters.
+         * @return Matter
+         * @throws \Google\Service\Exception
+         */
+        public function create(Matter $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes the specified matter. Returns the matter with updated state.
+         * (matters.delete)
+         *
+         * @param string $matterId The matter ID
+         * @param array $optParams Optional parameters.
+         * @return Matter
+         * @throws \Google\Service\Exception
+         */
+        public function delete($matterId, $optParams = [])
+        {
+        }
+        /**
+         * Gets the specified matter. (matters.get)
+         *
+         * @param string $matterId The matter ID.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string view Specifies how much information about the matter to
+         * return in the response.
+         * @return Matter
+         * @throws \Google\Service\Exception
+         */
+        public function get($matterId, $optParams = [])
+        {
+        }
+        /**
+         * Lists matters the requestor has access to. (matters.listMatters)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The number of matters to return in the response.
+         * Default and maximum are 100.
+         * @opt_param string pageToken The pagination token as returned in the response.
+         * @opt_param string state If set, lists only matters with the specified state.
+         * The default lists matters of all states.
+         * @opt_param string view Specifies how much information about the matter to
+         * return in response.
+         * @return ListMattersResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listMatters($optParams = [])
+        {
+        }
+        /**
+         * Removes an account as a matter collaborator. (matters.removePermissions)
+         *
+         * @param string $matterId The matter ID.
+         * @param RemoveMatterPermissionsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return VaultEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function removePermissions($matterId, RemoveMatterPermissionsRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Reopens the specified matter. Returns the matter with updated state.
+         * (matters.reopen)
+         *
+         * @param string $matterId The matter ID.
+         * @param ReopenMatterRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ReopenMatterResponse
+         * @throws \Google\Service\Exception
+         */
+        public function reopen($matterId, ReopenMatterRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Undeletes the specified matter. Returns the matter with updated state.
+         * (matters.undelete)
+         *
+         * @param string $matterId The matter ID.
+         * @param UndeleteMatterRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Matter
+         * @throws \Google\Service\Exception
+         */
+        public function undelete($matterId, UndeleteMatterRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates the specified matter. This updates only the name and description of
+         * the matter, identified by matter ID. Changes to any other fields are ignored.
+         * Returns the default view of the matter. (matters.update)
+         *
+         * @param string $matterId The matter ID.
+         * @param Matter $postBody
+         * @param array $optParams Optional parameters.
+         * @return Matter
+         * @throws \Google\Service\Exception
+         */
+        public function update($matterId, Matter $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Closes the specified matter. Returns the matter with updated state.
-     * (matters.close)
-     *
-     * @param string $matterId The matter ID.
-     * @param CloseMatterRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return CloseMatterResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Vault\Resource\Matters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function close($matterId, CloseMatterRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Counts the accounts processed by the specified query. (matters.count)
-     *
-     * @param string $matterId The matter ID.
-     * @param CountArtifactsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function count($matterId, CountArtifactsRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Creates a matter with the given name and description. The initial state is
-     * open, and the owner is the method caller. Returns the created matter with
-     * default view. (matters.create)
-     *
-     * @param Matter $postBody
-     * @param array $optParams Optional parameters.
-     * @return Matter
-     * @throws \Google\Service\Exception
-     */
-    public function create(Matter $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Deletes the specified matter. Returns the matter with updated state.
-     * (matters.delete)
-     *
-     * @param string $matterId The matter ID
-     * @param array $optParams Optional parameters.
-     * @return Matter
-     * @throws \Google\Service\Exception
-     */
-    public function delete($matterId, $optParams = [])
-    {
-    }
-    /**
-     * Gets the specified matter. (matters.get)
-     *
-     * @param string $matterId The matter ID.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string view Specifies how much information about the matter to
-     * return in the response.
-     * @return Matter
-     * @throws \Google\Service\Exception
-     */
-    public function get($matterId, $optParams = [])
-    {
-    }
-    /**
-     * Lists matters the requestor has access to. (matters.listMatters)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The number of matters to return in the response.
-     * Default and maximum are 100.
-     * @opt_param string pageToken The pagination token as returned in the response.
-     * @opt_param string state If set, lists only matters with the specified state.
-     * The default lists matters of all states.
-     * @opt_param string view Specifies how much information about the matter to
-     * return in response.
-     * @return ListMattersResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listMatters($optParams = [])
-    {
-    }
-    /**
-     * Removes an account as a matter collaborator. (matters.removePermissions)
-     *
-     * @param string $matterId The matter ID.
-     * @param RemoveMatterPermissionsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return VaultEmpty
-     * @throws \Google\Service\Exception
-     */
-    public function removePermissions($matterId, RemoveMatterPermissionsRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Reopens the specified matter. Returns the matter with updated state.
-     * (matters.reopen)
-     *
-     * @param string $matterId The matter ID.
-     * @param ReopenMatterRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ReopenMatterResponse
-     * @throws \Google\Service\Exception
-     */
-    public function reopen($matterId, ReopenMatterRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Undeletes the specified matter. Returns the matter with updated state.
-     * (matters.undelete)
-     *
-     * @param string $matterId The matter ID.
-     * @param UndeleteMatterRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Matter
-     * @throws \Google\Service\Exception
-     */
-    public function undelete($matterId, UndeleteMatterRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates the specified matter. This updates only the name and description of
-     * the matter, identified by matter ID. Changes to any other fields are ignored.
-     * Returns the default view of the matter. (matters.update)
-     *
-     * @param string $matterId The matter ID.
-     * @param Matter $postBody
-     * @param array $optParams Optional parameters.
-     * @return Matter
-     * @throws \Google\Service\Exception
-     */
-    public function update($matterId, Matter $postBody, $optParams = [])
+    class Google_Service_Vault_Resource_Matters extends \Google\Service\Vault\Resource\Matters
     {
     }
 }

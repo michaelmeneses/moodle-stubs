@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class ListDelegatesResponse extends \Google\Collection
-{
-    protected $collection_key = 'delegates';
-    protected $delegatesType = Delegate::class;
-    protected $delegatesDataType = 'array';
-    /**
-     * List of the user's delegates (with any verification status). If an account
-     * doesn't have delegates, this field doesn't appear.
-     *
-     * @param Delegate[] $delegates
-     */
-    public function setDelegates($delegates)
+namespace Google\Service\Gmail {
+    class ListDelegatesResponse extends \Google\Collection
     {
+        protected $collection_key = 'delegates';
+        protected $delegatesType = Delegate::class;
+        protected $delegatesDataType = 'array';
+        /**
+         * List of the user's delegates (with any verification status). If an account
+         * doesn't have delegates, this field doesn't appear.
+         *
+         * @param Delegate[] $delegates
+         */
+        public function setDelegates($delegates)
+        {
+        }
+        /**
+         * @return Delegate[]
+         */
+        public function getDelegates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Delegate[]
+     * Runtime class alias of \Google\Service\Gmail\ListDelegatesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDelegates()
+    class Google_Service_Gmail_ListDelegatesResponse extends \Google\Service\Gmail\ListDelegatesResponse
     {
     }
 }

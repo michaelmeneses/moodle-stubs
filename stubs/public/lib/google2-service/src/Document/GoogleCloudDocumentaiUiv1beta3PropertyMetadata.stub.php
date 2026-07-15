@@ -21,124 +21,133 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3PropertyMetadata extends \Google\Model
-{
-    protected $fieldExtractionMetadataType = GoogleCloudDocumentaiUiv1beta3FieldExtractionMetadata::class;
-    protected $fieldExtractionMetadataDataType = '';
-    protected $fieldTierMetadataType = GoogleCloudDocumentaiUiv1beta3FieldTierMetadata::class;
-    protected $fieldTierMetadataDataType = '';
-    protected $humanReviewLabelingMetadataType = GoogleCloudDocumentaiUiv1beta3HumanReviewLabelingMetadata::class;
-    protected $humanReviewLabelingMetadataDataType = '';
-    protected $humanReviewMetadataType = GoogleCloudDocumentaiUiv1beta3HumanReviewValidationMetadata::class;
-    protected $humanReviewMetadataDataType = '';
-    /**
-     * Whether the property should be considered as "inactive".
-     *
-     * @var bool
-     */
-    public $inactive;
-    protected $schemaEditabilityMetadataType = GoogleCloudDocumentaiUiv1beta3SchemaEditabilityMetadata::class;
-    protected $schemaEditabilityMetadataDataType = '';
-    protected $schemaInferenceMetadataType = GoogleCloudDocumentaiUiv1beta3SchemaInferenceMetadata::class;
-    protected $schemaInferenceMetadataDataType = '';
-    /**
-     * Field extraction metadata on the property.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3FieldExtractionMetadata $fieldExtractionMetadata
-     */
-    public function setFieldExtractionMetadata(GoogleCloudDocumentaiUiv1beta3FieldExtractionMetadata $fieldExtractionMetadata)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3PropertyMetadata extends \Google\Model
     {
+        protected $fieldExtractionMetadataType = GoogleCloudDocumentaiUiv1beta3FieldExtractionMetadata::class;
+        protected $fieldExtractionMetadataDataType = '';
+        protected $fieldTierMetadataType = GoogleCloudDocumentaiUiv1beta3FieldTierMetadata::class;
+        protected $fieldTierMetadataDataType = '';
+        protected $humanReviewLabelingMetadataType = GoogleCloudDocumentaiUiv1beta3HumanReviewLabelingMetadata::class;
+        protected $humanReviewLabelingMetadataDataType = '';
+        protected $humanReviewMetadataType = GoogleCloudDocumentaiUiv1beta3HumanReviewValidationMetadata::class;
+        protected $humanReviewMetadataDataType = '';
+        /**
+         * Whether the property should be considered as "inactive".
+         *
+         * @var bool
+         */
+        public $inactive;
+        protected $schemaEditabilityMetadataType = GoogleCloudDocumentaiUiv1beta3SchemaEditabilityMetadata::class;
+        protected $schemaEditabilityMetadataDataType = '';
+        protected $schemaInferenceMetadataType = GoogleCloudDocumentaiUiv1beta3SchemaInferenceMetadata::class;
+        protected $schemaInferenceMetadataDataType = '';
+        /**
+         * Field extraction metadata on the property.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3FieldExtractionMetadata $fieldExtractionMetadata
+         */
+        public function setFieldExtractionMetadata(GoogleCloudDocumentaiUiv1beta3FieldExtractionMetadata $fieldExtractionMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3FieldExtractionMetadata
+         */
+        public function getFieldExtractionMetadata()
+        {
+        }
+        /**
+         * Field tier metadata on the property
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3FieldTierMetadata $fieldTierMetadata
+         */
+        public function setFieldTierMetadata(GoogleCloudDocumentaiUiv1beta3FieldTierMetadata $fieldTierMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3FieldTierMetadata
+         */
+        public function getFieldTierMetadata()
+        {
+        }
+        /**
+         * Human review labeling config on the property.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3HumanReviewLabelingMetadata $humanReviewLabelingMetadata
+         */
+        public function setHumanReviewLabelingMetadata(GoogleCloudDocumentaiUiv1beta3HumanReviewLabelingMetadata $humanReviewLabelingMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3HumanReviewLabelingMetadata
+         */
+        public function getHumanReviewLabelingMetadata()
+        {
+        }
+        /**
+         * Human review validation config on the property.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3HumanReviewValidationMetadata $humanReviewMetadata
+         */
+        public function setHumanReviewMetadata(GoogleCloudDocumentaiUiv1beta3HumanReviewValidationMetadata $humanReviewMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3HumanReviewValidationMetadata
+         */
+        public function getHumanReviewMetadata()
+        {
+        }
+        /**
+         * Whether the property should be considered as "inactive".
+         *
+         * @param bool $inactive
+         */
+        public function setInactive($inactive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInactive()
+        {
+        }
+        /**
+         * Schema editability metadata on the property.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3SchemaEditabilityMetadata $schemaEditabilityMetadata
+         */
+        public function setSchemaEditabilityMetadata(GoogleCloudDocumentaiUiv1beta3SchemaEditabilityMetadata $schemaEditabilityMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3SchemaEditabilityMetadata
+         */
+        public function getSchemaEditabilityMetadata()
+        {
+        }
+        /**
+         * Schema inference metadata on the property.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3SchemaInferenceMetadata $schemaInferenceMetadata
+         */
+        public function setSchemaInferenceMetadata(GoogleCloudDocumentaiUiv1beta3SchemaInferenceMetadata $schemaInferenceMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3SchemaInferenceMetadata
+         */
+        public function getSchemaInferenceMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiUiv1beta3FieldExtractionMetadata
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3PropertyMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldExtractionMetadata()
-    {
-    }
-    /**
-     * Field tier metadata on the property
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3FieldTierMetadata $fieldTierMetadata
-     */
-    public function setFieldTierMetadata(GoogleCloudDocumentaiUiv1beta3FieldTierMetadata $fieldTierMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiUiv1beta3FieldTierMetadata
-     */
-    public function getFieldTierMetadata()
-    {
-    }
-    /**
-     * Human review labeling config on the property.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3HumanReviewLabelingMetadata $humanReviewLabelingMetadata
-     */
-    public function setHumanReviewLabelingMetadata(GoogleCloudDocumentaiUiv1beta3HumanReviewLabelingMetadata $humanReviewLabelingMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiUiv1beta3HumanReviewLabelingMetadata
-     */
-    public function getHumanReviewLabelingMetadata()
-    {
-    }
-    /**
-     * Human review validation config on the property.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3HumanReviewValidationMetadata $humanReviewMetadata
-     */
-    public function setHumanReviewMetadata(GoogleCloudDocumentaiUiv1beta3HumanReviewValidationMetadata $humanReviewMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiUiv1beta3HumanReviewValidationMetadata
-     */
-    public function getHumanReviewMetadata()
-    {
-    }
-    /**
-     * Whether the property should be considered as "inactive".
-     *
-     * @param bool $inactive
-     */
-    public function setInactive($inactive)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInactive()
-    {
-    }
-    /**
-     * Schema editability metadata on the property.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3SchemaEditabilityMetadata $schemaEditabilityMetadata
-     */
-    public function setSchemaEditabilityMetadata(GoogleCloudDocumentaiUiv1beta3SchemaEditabilityMetadata $schemaEditabilityMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiUiv1beta3SchemaEditabilityMetadata
-     */
-    public function getSchemaEditabilityMetadata()
-    {
-    }
-    /**
-     * Schema inference metadata on the property.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3SchemaInferenceMetadata $schemaInferenceMetadata
-     */
-    public function setSchemaInferenceMetadata(GoogleCloudDocumentaiUiv1beta3SchemaInferenceMetadata $schemaInferenceMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiUiv1beta3SchemaInferenceMetadata
-     */
-    public function getSchemaInferenceMetadata()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3PropertyMetadata extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3PropertyMetadata
     {
     }
 }

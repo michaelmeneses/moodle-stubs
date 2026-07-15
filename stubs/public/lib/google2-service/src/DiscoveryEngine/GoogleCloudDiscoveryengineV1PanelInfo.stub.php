@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1PanelInfo extends \Google\Collection
-{
-    protected $collection_key = 'documents';
-    /**
-     * The display name of the panel.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $documentsType = GoogleCloudDiscoveryengineV1DocumentInfo::class;
-    protected $documentsDataType = 'array';
-    /**
-     * Required. The panel ID.
-     *
-     * @var string
-     */
-    public $panelId;
-    /**
-     * The ordered position of the panel, if shown to the user with other panels.
-     * If set, then total_panels must also be set.
-     *
-     * @var int
-     */
-    public $panelPosition;
-    /**
-     * The total number of panels, including this one, shown to the user. Must be
-     * set if panel_position is set.
-     *
-     * @var int
-     */
-    public $totalPanels;
-    /**
-     * The display name of the panel.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1PanelInfo extends \Google\Collection
     {
+        protected $collection_key = 'documents';
+        /**
+         * The display name of the panel.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $documentsType = GoogleCloudDiscoveryengineV1DocumentInfo::class;
+        protected $documentsDataType = 'array';
+        /**
+         * Required. The panel ID.
+         *
+         * @var string
+         */
+        public $panelId;
+        /**
+         * The ordered position of the panel, if shown to the user with other panels.
+         * If set, then total_panels must also be set.
+         *
+         * @var int
+         */
+        public $panelPosition;
+        /**
+         * The total number of panels, including this one, shown to the user. Must be
+         * set if panel_position is set.
+         *
+         * @var int
+         */
+        public $totalPanels;
+        /**
+         * The display name of the panel.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Optional. The document IDs associated with this panel.
+         *
+         * @param GoogleCloudDiscoveryengineV1DocumentInfo[] $documents
+         */
+        public function setDocuments($documents)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1DocumentInfo[]
+         */
+        public function getDocuments()
+        {
+        }
+        /**
+         * Required. The panel ID.
+         *
+         * @param string $panelId
+         */
+        public function setPanelId($panelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPanelId()
+        {
+        }
+        /**
+         * The ordered position of the panel, if shown to the user with other panels.
+         * If set, then total_panels must also be set.
+         *
+         * @param int $panelPosition
+         */
+        public function setPanelPosition($panelPosition)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPanelPosition()
+        {
+        }
+        /**
+         * The total number of panels, including this one, shown to the user. Must be
+         * set if panel_position is set.
+         *
+         * @param int $totalPanels
+         */
+        public function setTotalPanels($totalPanels)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalPanels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1PanelInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Optional. The document IDs associated with this panel.
-     *
-     * @param GoogleCloudDiscoveryengineV1DocumentInfo[] $documents
-     */
-    public function setDocuments($documents)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1DocumentInfo[]
-     */
-    public function getDocuments()
-    {
-    }
-    /**
-     * Required. The panel ID.
-     *
-     * @param string $panelId
-     */
-    public function setPanelId($panelId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPanelId()
-    {
-    }
-    /**
-     * The ordered position of the panel, if shown to the user with other panels.
-     * If set, then total_panels must also be set.
-     *
-     * @param int $panelPosition
-     */
-    public function setPanelPosition($panelPosition)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPanelPosition()
-    {
-    }
-    /**
-     * The total number of panels, including this one, shown to the user. Must be
-     * set if panel_position is set.
-     *
-     * @param int $totalPanels
-     */
-    public function setTotalPanels($totalPanels)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalPanels()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1PanelInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1PanelInfo
     {
     }
 }

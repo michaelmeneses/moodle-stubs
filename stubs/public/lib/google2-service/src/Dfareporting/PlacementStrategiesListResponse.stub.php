@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class PlacementStrategiesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'placementStrategies';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#placementStrategiesListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $placementStrategiesType = PlacementStrategy::class;
-    protected $placementStrategiesDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#placementStrategiesListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class PlacementStrategiesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'placementStrategies';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#placementStrategiesListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $placementStrategiesType = PlacementStrategy::class;
+        protected $placementStrategiesDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#placementStrategiesListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Placement strategy collection.
+         *
+         * @param PlacementStrategy[] $placementStrategies
+         */
+        public function setPlacementStrategies($placementStrategies)
+        {
+        }
+        /**
+         * @return PlacementStrategy[]
+         */
+        public function getPlacementStrategies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\PlacementStrategiesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Placement strategy collection.
-     *
-     * @param PlacementStrategy[] $placementStrategies
-     */
-    public function setPlacementStrategies($placementStrategies)
-    {
-    }
-    /**
-     * @return PlacementStrategy[]
-     */
-    public function getPlacementStrategies()
+    class Google_Service_Dfareporting_PlacementStrategiesListResponse extends \Google\Service\Dfareporting\PlacementStrategiesListResponse
     {
     }
 }

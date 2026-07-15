@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ServiceStoreConfigCutoffConfig extends \Google\Model
-{
-    protected $localCutoffTimeType = ServiceStoreConfigCutoffConfigLocalCutoffTime::class;
-    protected $localCutoffTimeDataType = '';
-    /**
-     * Merchants can opt-out of showing n+1 day local delivery when they have a
-     * shipping service configured to n day local delivery. For example, if the
-     * shipping service defines same-day delivery, and it's past the cut-off,
-     * setting this field to `true` results in the calculated shipping service
-     * rate returning `NO_DELIVERY_POST_CUTOFF`. In the same example, setting this
-     * field to `false` results in the calculated shipping time being one day.
-     * This is only for local delivery.
-     *
-     * @var bool
-     */
-    public $noDeliveryPostCutoff;
-    /**
-     * Represents cutoff time as the number of hours before store closing.
-     * Mutually exclusive with other fields (hour and minute).
-     *
-     * @var string
-     */
-    public $storeCloseOffsetHours;
-    /**
-     * Time in hours and minutes in the local timezone when local delivery ends.
-     *
-     * @param ServiceStoreConfigCutoffConfigLocalCutoffTime $localCutoffTime
-     */
-    public function setLocalCutoffTime(ServiceStoreConfigCutoffConfigLocalCutoffTime $localCutoffTime)
+namespace Google\Service\ShoppingContent {
+    class ServiceStoreConfigCutoffConfig extends \Google\Model
     {
+        protected $localCutoffTimeType = ServiceStoreConfigCutoffConfigLocalCutoffTime::class;
+        protected $localCutoffTimeDataType = '';
+        /**
+         * Merchants can opt-out of showing n+1 day local delivery when they have a
+         * shipping service configured to n day local delivery. For example, if the
+         * shipping service defines same-day delivery, and it's past the cut-off,
+         * setting this field to `true` results in the calculated shipping service
+         * rate returning `NO_DELIVERY_POST_CUTOFF`. In the same example, setting this
+         * field to `false` results in the calculated shipping time being one day.
+         * This is only for local delivery.
+         *
+         * @var bool
+         */
+        public $noDeliveryPostCutoff;
+        /**
+         * Represents cutoff time as the number of hours before store closing.
+         * Mutually exclusive with other fields (hour and minute).
+         *
+         * @var string
+         */
+        public $storeCloseOffsetHours;
+        /**
+         * Time in hours and minutes in the local timezone when local delivery ends.
+         *
+         * @param ServiceStoreConfigCutoffConfigLocalCutoffTime $localCutoffTime
+         */
+        public function setLocalCutoffTime(ServiceStoreConfigCutoffConfigLocalCutoffTime $localCutoffTime)
+        {
+        }
+        /**
+         * @return ServiceStoreConfigCutoffConfigLocalCutoffTime
+         */
+        public function getLocalCutoffTime()
+        {
+        }
+        /**
+         * Merchants can opt-out of showing n+1 day local delivery when they have a
+         * shipping service configured to n day local delivery. For example, if the
+         * shipping service defines same-day delivery, and it's past the cut-off,
+         * setting this field to `true` results in the calculated shipping service
+         * rate returning `NO_DELIVERY_POST_CUTOFF`. In the same example, setting this
+         * field to `false` results in the calculated shipping time being one day.
+         * This is only for local delivery.
+         *
+         * @param bool $noDeliveryPostCutoff
+         */
+        public function setNoDeliveryPostCutoff($noDeliveryPostCutoff)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNoDeliveryPostCutoff()
+        {
+        }
+        /**
+         * Represents cutoff time as the number of hours before store closing.
+         * Mutually exclusive with other fields (hour and minute).
+         *
+         * @param string $storeCloseOffsetHours
+         */
+        public function setStoreCloseOffsetHours($storeCloseOffsetHours)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStoreCloseOffsetHours()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ServiceStoreConfigCutoffConfigLocalCutoffTime
+     * Runtime class alias of \Google\Service\ShoppingContent\ServiceStoreConfigCutoffConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocalCutoffTime()
-    {
-    }
-    /**
-     * Merchants can opt-out of showing n+1 day local delivery when they have a
-     * shipping service configured to n day local delivery. For example, if the
-     * shipping service defines same-day delivery, and it's past the cut-off,
-     * setting this field to `true` results in the calculated shipping service
-     * rate returning `NO_DELIVERY_POST_CUTOFF`. In the same example, setting this
-     * field to `false` results in the calculated shipping time being one day.
-     * This is only for local delivery.
-     *
-     * @param bool $noDeliveryPostCutoff
-     */
-    public function setNoDeliveryPostCutoff($noDeliveryPostCutoff)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNoDeliveryPostCutoff()
-    {
-    }
-    /**
-     * Represents cutoff time as the number of hours before store closing.
-     * Mutually exclusive with other fields (hour and minute).
-     *
-     * @param string $storeCloseOffsetHours
-     */
-    public function setStoreCloseOffsetHours($storeCloseOffsetHours)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStoreCloseOffsetHours()
+    class Google_Service_ShoppingContent_ServiceStoreConfigCutoffConfig extends \Google\Service\ShoppingContent\ServiceStoreConfigCutoffConfig
     {
     }
 }

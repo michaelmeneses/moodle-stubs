@@ -21,28 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books\Resource;
-
-/**
- * The "dictionary" collection of methods.
- * Typical usage is:
- *  <code>
- *   $booksService = new Google\Service\Books(...);
- *   $dictionary = $booksService->dictionary;
- *  </code>
- */
-class Dictionary extends \Google\Service\Resource
-{
+namespace Google\Service\Books\Resource {
+    use Google\Service\Books\Metadata;
     /**
-     * Returns a list of offline dictionary metadata available
-     * (dictionary.listOfflineMetadata)
-     *
-     * @param string $cpksver The device/version ID from which to request the data.
-     * @param array $optParams Optional parameters.
-     * @return Metadata
-     * @throws \Google\Service\Exception
+     * The "dictionary" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $booksService = new Google\Service\Books(...);
+     *   $dictionary = $booksService->dictionary;
+     *  </code>
      */
-    public function listOfflineMetadata($cpksver, $optParams = [])
+    class Dictionary extends \Google\Service\Resource
+    {
+        /**
+         * Returns a list of offline dictionary metadata available
+         * (dictionary.listOfflineMetadata)
+         *
+         * @param string $cpksver The device/version ID from which to request the data.
+         * @param array $optParams Optional parameters.
+         * @return Metadata
+         * @throws \Google\Service\Exception
+         */
+        public function listOfflineMetadata($cpksver, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Books\Resource\Dictionary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Books_Resource_Dictionary extends \Google\Service\Books\Resource\Dictionary
     {
     }
 }

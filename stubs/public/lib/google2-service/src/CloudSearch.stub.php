@@ -21,72 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for CloudSearch (v1).
- *
- * <p>
- * Cloud Search provides cloud-based search capabilities over Google Workspace
- * data. The Cloud Search API allows indexing of non-Google Workspace data into
- * Cloud Search.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/cloud-search/docs/guides/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class CloudSearch extends \Google\Service
-{
-    /** Index and serve your organization's data with Cloud Search. */
-    const CLOUD_SEARCH = "https://www.googleapis.com/auth/cloud_search";
-    /** Index and serve your organization's data with Cloud Search. */
-    const CLOUD_SEARCH_DEBUG = "https://www.googleapis.com/auth/cloud_search.debug";
-    /** Index and serve your organization's data with Cloud Search. */
-    const CLOUD_SEARCH_INDEXING = "https://www.googleapis.com/auth/cloud_search.indexing";
-    /** Search your organization's data in the Cloud Search index. */
-    const CLOUD_SEARCH_QUERY = "https://www.googleapis.com/auth/cloud_search.query";
-    /** Index and serve your organization's data with Cloud Search. */
-    const CLOUD_SEARCH_SETTINGS = "https://www.googleapis.com/auth/cloud_search.settings";
-    /** Index and serve your organization's data with Cloud Search. */
-    const CLOUD_SEARCH_SETTINGS_INDEXING = "https://www.googleapis.com/auth/cloud_search.settings.indexing";
-    /** Index and serve your organization's data with Cloud Search. */
-    const CLOUD_SEARCH_SETTINGS_QUERY = "https://www.googleapis.com/auth/cloud_search.settings.query";
-    /** Index and serve your organization's data with Cloud Search. */
-    const CLOUD_SEARCH_STATS = "https://www.googleapis.com/auth/cloud_search.stats";
-    /** Index and serve your organization's data with Cloud Search. */
-    const CLOUD_SEARCH_STATS_INDEXING = "https://www.googleapis.com/auth/cloud_search.stats.indexing";
-    public $debug_datasources_items;
-    public $debug_datasources_items_unmappedids;
-    public $debug_identitysources_items;
-    public $debug_identitysources_unmappedids;
-    public $indexing_datasources;
-    public $indexing_datasources_items;
-    public $media;
-    public $operations;
-    public $operations_lro;
-    public $query;
-    public $query_sources;
-    public $settings;
-    public $settings_datasources;
-    public $settings_searchapplications;
-    public $stats;
-    public $stats_index_datasources;
-    public $stats_query_searchapplications;
-    public $stats_session_searchapplications;
-    public $stats_user_searchapplications;
-    public $v1;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the CloudSearch service.
+     * Service definition for CloudSearch (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Cloud Search provides cloud-based search capabilities over Google Workspace
+     * data. The Cloud Search API allows indexing of non-Google Workspace data into
+     * Cloud Search.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/cloud-search/docs/guides/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class CloudSearch extends \Google\Service
+    {
+        /** Index and serve your organization's data with Cloud Search. */
+        const CLOUD_SEARCH = "https://www.googleapis.com/auth/cloud_search";
+        /** Index and serve your organization's data with Cloud Search. */
+        const CLOUD_SEARCH_DEBUG = "https://www.googleapis.com/auth/cloud_search.debug";
+        /** Index and serve your organization's data with Cloud Search. */
+        const CLOUD_SEARCH_INDEXING = "https://www.googleapis.com/auth/cloud_search.indexing";
+        /** Search your organization's data in the Cloud Search index. */
+        const CLOUD_SEARCH_QUERY = "https://www.googleapis.com/auth/cloud_search.query";
+        /** Index and serve your organization's data with Cloud Search. */
+        const CLOUD_SEARCH_SETTINGS = "https://www.googleapis.com/auth/cloud_search.settings";
+        /** Index and serve your organization's data with Cloud Search. */
+        const CLOUD_SEARCH_SETTINGS_INDEXING = "https://www.googleapis.com/auth/cloud_search.settings.indexing";
+        /** Index and serve your organization's data with Cloud Search. */
+        const CLOUD_SEARCH_SETTINGS_QUERY = "https://www.googleapis.com/auth/cloud_search.settings.query";
+        /** Index and serve your organization's data with Cloud Search. */
+        const CLOUD_SEARCH_STATS = "https://www.googleapis.com/auth/cloud_search.stats";
+        /** Index and serve your organization's data with Cloud Search. */
+        const CLOUD_SEARCH_STATS_INDEXING = "https://www.googleapis.com/auth/cloud_search.stats.indexing";
+        public $debug_datasources_items;
+        public $debug_datasources_items_unmappedids;
+        public $debug_identitysources_items;
+        public $debug_identitysources_unmappedids;
+        public $indexing_datasources;
+        public $indexing_datasources_items;
+        public $media;
+        public $operations;
+        public $operations_lro;
+        public $query;
+        public $query_sources;
+        public $settings;
+        public $settings_datasources;
+        public $settings_searchapplications;
+        public $stats;
+        public $stats_index_datasources;
+        public $stats_query_searchapplications;
+        public $stats_session_searchapplications;
+        public $stats_user_searchapplications;
+        public $v1;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the CloudSearch service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudSearch registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudSearch extends \Google\Service\CloudSearch
     {
     }
 }

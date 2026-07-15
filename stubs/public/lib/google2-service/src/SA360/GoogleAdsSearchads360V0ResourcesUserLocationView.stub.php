@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesUserLocationView extends \Google\Model
-{
-    /**
-     * Output only. Criterion Id for the country.
-     *
-     * @var string
-     */
-    public $countryCriterionId;
-    /**
-     * Output only. The resource name of the user location view. UserLocation view
-     * resource names have the form: `customers/{customer_id}/userLocationViews/{c
-     * ountry_criterion_id}~{targeting_location}`
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * Output only. Indicates whether location was targeted or not.
-     *
-     * @var bool
-     */
-    public $targetingLocation;
-    /**
-     * Output only. Criterion Id for the country.
-     *
-     * @param string $countryCriterionId
-     */
-    public function setCountryCriterionId($countryCriterionId)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesUserLocationView extends \Google\Model
     {
+        /**
+         * Output only. Criterion Id for the country.
+         *
+         * @var string
+         */
+        public $countryCriterionId;
+        /**
+         * Output only. The resource name of the user location view. UserLocation view
+         * resource names have the form: `customers/{customer_id}/userLocationViews/{c
+         * ountry_criterion_id}~{targeting_location}`
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * Output only. Indicates whether location was targeted or not.
+         *
+         * @var bool
+         */
+        public $targetingLocation;
+        /**
+         * Output only. Criterion Id for the country.
+         *
+         * @param string $countryCriterionId
+         */
+        public function setCountryCriterionId($countryCriterionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountryCriterionId()
+        {
+        }
+        /**
+         * Output only. The resource name of the user location view. UserLocation view
+         * resource names have the form: `customers/{customer_id}/userLocationViews/{c
+         * ountry_criterion_id}~{targeting_location}`
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
+        /**
+         * Output only. Indicates whether location was targeted or not.
+         *
+         * @param bool $targetingLocation
+         */
+        public function setTargetingLocation($targetingLocation)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTargetingLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesUserLocationView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountryCriterionId()
-    {
-    }
-    /**
-     * Output only. The resource name of the user location view. UserLocation view
-     * resource names have the form: `customers/{customer_id}/userLocationViews/{c
-     * ountry_criterion_id}~{targeting_location}`
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
-    {
-    }
-    /**
-     * Output only. Indicates whether location was targeted or not.
-     *
-     * @param bool $targetingLocation
-     */
-    public function setTargetingLocation($targetingLocation)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTargetingLocation()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesUserLocationView extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesUserLocationView
     {
     }
 }

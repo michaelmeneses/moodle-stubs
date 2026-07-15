@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class ListPrivateConnectionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * A token which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $privateConnectionsType = PrivateConnection::class;
-    protected $privateConnectionsDataType = 'array';
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A token which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\DatabaseMigrationService {
+    class ListPrivateConnectionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * A token which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $privateConnectionsType = PrivateConnection::class;
+        protected $privateConnectionsDataType = 'array';
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A token which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of private connections.
+         *
+         * @param PrivateConnection[] $privateConnections
+         */
+        public function setPrivateConnections($privateConnections)
+        {
+        }
+        /**
+         * @return PrivateConnection[]
+         */
+        public function getPrivateConnections()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\ListPrivateConnectionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of private connections.
-     *
-     * @param PrivateConnection[] $privateConnections
-     */
-    public function setPrivateConnections($privateConnections)
-    {
-    }
-    /**
-     * @return PrivateConnection[]
-     */
-    public function getPrivateConnections()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_DatabaseMigrationService_ListPrivateConnectionsResponse extends \Google\Service\DatabaseMigrationService\ListPrivateConnectionsResponse
     {
     }
 }

@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class GoogleCloudHealthcareV1ConsentPolicy extends \Google\Collection
-{
-    protected $collection_key = 'resourceAttributes';
-    protected $authorizationRuleType = Expr::class;
-    protected $authorizationRuleDataType = '';
-    protected $resourceAttributesType = Attribute::class;
-    protected $resourceAttributesDataType = 'array';
-    /**
-     * Required. The request conditions to meet to grant access. In addition to
-     * any supported comparison operators, authorization rules may have `IN`
-     * operator as well as at most 10 logical operators that are limited to `AND`
-     * (`&&`), `OR` (`||`).
-     *
-     * @param Expr $authorizationRule
-     */
-    public function setAuthorizationRule(Expr $authorizationRule)
+namespace Google\Service\CloudHealthcare {
+    class GoogleCloudHealthcareV1ConsentPolicy extends \Google\Collection
     {
+        protected $collection_key = 'resourceAttributes';
+        protected $authorizationRuleType = Expr::class;
+        protected $authorizationRuleDataType = '';
+        protected $resourceAttributesType = Attribute::class;
+        protected $resourceAttributesDataType = 'array';
+        /**
+         * Required. The request conditions to meet to grant access. In addition to
+         * any supported comparison operators, authorization rules may have `IN`
+         * operator as well as at most 10 logical operators that are limited to `AND`
+         * (`&&`), `OR` (`||`).
+         *
+         * @param Expr $authorizationRule
+         */
+        public function setAuthorizationRule(Expr $authorizationRule)
+        {
+        }
+        /**
+         * @return Expr
+         */
+        public function getAuthorizationRule()
+        {
+        }
+        /**
+         * The resources that this policy applies to. A resource is a match if it
+         * matches all the attributes listed here. If empty, this policy applies to
+         * all User data mappings for the given user.
+         *
+         * @param Attribute[] $resourceAttributes
+         */
+        public function setResourceAttributes($resourceAttributes)
+        {
+        }
+        /**
+         * @return Attribute[]
+         */
+        public function getResourceAttributes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Expr
+     * Runtime class alias of \Google\Service\CloudHealthcare\GoogleCloudHealthcareV1ConsentPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthorizationRule()
-    {
-    }
-    /**
-     * The resources that this policy applies to. A resource is a match if it
-     * matches all the attributes listed here. If empty, this policy applies to
-     * all User data mappings for the given user.
-     *
-     * @param Attribute[] $resourceAttributes
-     */
-    public function setResourceAttributes($resourceAttributes)
-    {
-    }
-    /**
-     * @return Attribute[]
-     */
-    public function getResourceAttributes()
+    class Google_Service_CloudHealthcare_GoogleCloudHealthcareV1ConsentPolicy extends \Google\Service\CloudHealthcare\GoogleCloudHealthcareV1ConsentPolicy
     {
     }
 }

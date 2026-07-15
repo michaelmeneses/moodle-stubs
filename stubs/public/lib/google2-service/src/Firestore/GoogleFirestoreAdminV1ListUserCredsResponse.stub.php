@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class GoogleFirestoreAdminV1ListUserCredsResponse extends \Google\Collection
-{
-    protected $collection_key = 'userCreds';
-    protected $userCredsType = GoogleFirestoreAdminV1UserCreds::class;
-    protected $userCredsDataType = 'array';
-    /**
-     * The user creds for the database.
-     *
-     * @param GoogleFirestoreAdminV1UserCreds[] $userCreds
-     */
-    public function setUserCreds($userCreds)
+namespace Google\Service\Firestore {
+    class GoogleFirestoreAdminV1ListUserCredsResponse extends \Google\Collection
     {
+        protected $collection_key = 'userCreds';
+        protected $userCredsType = GoogleFirestoreAdminV1UserCreds::class;
+        protected $userCredsDataType = 'array';
+        /**
+         * The user creds for the database.
+         *
+         * @param GoogleFirestoreAdminV1UserCreds[] $userCreds
+         */
+        public function setUserCreds($userCreds)
+        {
+        }
+        /**
+         * @return GoogleFirestoreAdminV1UserCreds[]
+         */
+        public function getUserCreds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFirestoreAdminV1UserCreds[]
+     * Runtime class alias of \Google\Service\Firestore\GoogleFirestoreAdminV1ListUserCredsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUserCreds()
+    class Google_Service_Firestore_GoogleFirestoreAdminV1ListUserCredsResponse extends \Google\Service\Firestore\GoogleFirestoreAdminV1ListUserCredsResponse
     {
     }
 }

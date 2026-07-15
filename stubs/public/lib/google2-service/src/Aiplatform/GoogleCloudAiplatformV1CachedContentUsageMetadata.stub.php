@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1CachedContentUsageMetadata extends \Google\Model
-{
-    /**
-     * Duration of audio in seconds.
-     *
-     * @var int
-     */
-    public $audioDurationSeconds;
-    /**
-     * Number of images.
-     *
-     * @var int
-     */
-    public $imageCount;
-    /**
-     * Number of text characters.
-     *
-     * @var int
-     */
-    public $textCount;
-    /**
-     * Total number of tokens that the cached content consumes.
-     *
-     * @var int
-     */
-    public $totalTokenCount;
-    /**
-     * Duration of video in seconds.
-     *
-     * @var int
-     */
-    public $videoDurationSeconds;
-    /**
-     * Duration of audio in seconds.
-     *
-     * @param int $audioDurationSeconds
-     */
-    public function setAudioDurationSeconds($audioDurationSeconds)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1CachedContentUsageMetadata extends \Google\Model
     {
+        /**
+         * Duration of audio in seconds.
+         *
+         * @var int
+         */
+        public $audioDurationSeconds;
+        /**
+         * Number of images.
+         *
+         * @var int
+         */
+        public $imageCount;
+        /**
+         * Number of text characters.
+         *
+         * @var int
+         */
+        public $textCount;
+        /**
+         * Total number of tokens that the cached content consumes.
+         *
+         * @var int
+         */
+        public $totalTokenCount;
+        /**
+         * Duration of video in seconds.
+         *
+         * @var int
+         */
+        public $videoDurationSeconds;
+        /**
+         * Duration of audio in seconds.
+         *
+         * @param int $audioDurationSeconds
+         */
+        public function setAudioDurationSeconds($audioDurationSeconds)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAudioDurationSeconds()
+        {
+        }
+        /**
+         * Number of images.
+         *
+         * @param int $imageCount
+         */
+        public function setImageCount($imageCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getImageCount()
+        {
+        }
+        /**
+         * Number of text characters.
+         *
+         * @param int $textCount
+         */
+        public function setTextCount($textCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTextCount()
+        {
+        }
+        /**
+         * Total number of tokens that the cached content consumes.
+         *
+         * @param int $totalTokenCount
+         */
+        public function setTotalTokenCount($totalTokenCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalTokenCount()
+        {
+        }
+        /**
+         * Duration of video in seconds.
+         *
+         * @param int $videoDurationSeconds
+         */
+        public function setVideoDurationSeconds($videoDurationSeconds)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVideoDurationSeconds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1CachedContentUsageMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAudioDurationSeconds()
-    {
-    }
-    /**
-     * Number of images.
-     *
-     * @param int $imageCount
-     */
-    public function setImageCount($imageCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getImageCount()
-    {
-    }
-    /**
-     * Number of text characters.
-     *
-     * @param int $textCount
-     */
-    public function setTextCount($textCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTextCount()
-    {
-    }
-    /**
-     * Total number of tokens that the cached content consumes.
-     *
-     * @param int $totalTokenCount
-     */
-    public function setTotalTokenCount($totalTokenCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalTokenCount()
-    {
-    }
-    /**
-     * Duration of video in seconds.
-     *
-     * @param int $videoDurationSeconds
-     */
-    public function setVideoDurationSeconds($videoDurationSeconds)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVideoDurationSeconds()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1CachedContentUsageMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1CachedContentUsageMetadata
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1DatasetSpec extends \Google\Model
-{
-    protected $vertexDatasetSpecType = GoogleCloudDatacatalogV1VertexDatasetSpec::class;
-    protected $vertexDatasetSpecDataType = '';
-    /**
-     * Vertex AI Dataset specific fields
-     *
-     * @param GoogleCloudDatacatalogV1VertexDatasetSpec $vertexDatasetSpec
-     */
-    public function setVertexDatasetSpec(GoogleCloudDatacatalogV1VertexDatasetSpec $vertexDatasetSpec)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1DatasetSpec extends \Google\Model
     {
+        protected $vertexDatasetSpecType = GoogleCloudDatacatalogV1VertexDatasetSpec::class;
+        protected $vertexDatasetSpecDataType = '';
+        /**
+         * Vertex AI Dataset specific fields
+         *
+         * @param GoogleCloudDatacatalogV1VertexDatasetSpec $vertexDatasetSpec
+         */
+        public function setVertexDatasetSpec(GoogleCloudDatacatalogV1VertexDatasetSpec $vertexDatasetSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1VertexDatasetSpec
+         */
+        public function getVertexDatasetSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1VertexDatasetSpec
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1DatasetSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVertexDatasetSpec()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1DatasetSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1DatasetSpec
     {
     }
 }

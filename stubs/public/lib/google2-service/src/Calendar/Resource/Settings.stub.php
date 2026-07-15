@@ -21,74 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar\Resource;
-
-/**
- * The "settings" collection of methods.
- * Typical usage is:
- *  <code>
- *   $calendarService = new Google\Service\Calendar(...);
- *   $settings = $calendarService->settings;
- *  </code>
- */
-class Settings extends \Google\Service\Resource
-{
+namespace Google\Service\Calendar\Resource {
+    use Google\Service\Calendar\Channel;
+    use Google\Service\Calendar\Setting;
+    use Google\Service\Calendar\Settings as SettingsModel;
     /**
-     * Returns a single user setting. (settings.get)
-     *
-     * @param string $setting The id of the user setting.
-     * @param array $optParams Optional parameters.
-     * @return Setting
-     * @throws \Google\Service\Exception
+     * The "settings" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $calendarService = new Google\Service\Calendar(...);
+     *   $settings = $calendarService->settings;
+     *  </code>
      */
-    public function get($setting, $optParams = [])
+    class Settings extends \Google\Service\Resource
     {
+        /**
+         * Returns a single user setting. (settings.get)
+         *
+         * @param string $setting The id of the user setting.
+         * @param array $optParams Optional parameters.
+         * @return Setting
+         * @throws \Google\Service\Exception
+         */
+        public function get($setting, $optParams = [])
+        {
+        }
+        /**
+         * Returns all user settings for the authenticated user. (settings.listSettings)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int maxResults Maximum number of entries returned on one result
+         * page. By default the value is 100 entries. The page size can never be larger
+         * than 250 entries. Optional.
+         * @opt_param string pageToken Token specifying which result page to return.
+         * Optional.
+         * @opt_param string syncToken Token obtained from the nextSyncToken field
+         * returned on the last page of results from the previous list request. It makes
+         * the result of this list request contain only entries that have changed since
+         * then. If the syncToken expires, the server will respond with a 410 GONE
+         * response code and the client should clear its storage and perform a full
+         * synchronization without any syncToken. Learn more about incremental
+         * synchronization. Optional. The default is to return all entries.
+         * @return SettingsModel
+         * @throws \Google\Service\Exception
+         */
+        public function listSettings($optParams = [])
+        {
+        }
+        /**
+         * Watch for changes to Settings resources. (settings.watch)
+         *
+         * @param Channel $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int maxResults Maximum number of entries returned on one result
+         * page. By default the value is 100 entries. The page size can never be larger
+         * than 250 entries. Optional.
+         * @opt_param string pageToken Token specifying which result page to return.
+         * Optional.
+         * @opt_param string syncToken Token obtained from the nextSyncToken field
+         * returned on the last page of results from the previous list request. It makes
+         * the result of this list request contain only entries that have changed since
+         * then. If the syncToken expires, the server will respond with a 410 GONE
+         * response code and the client should clear its storage and perform a full
+         * synchronization without any syncToken. Learn more about incremental
+         * synchronization. Optional. The default is to return all entries.
+         * @return Channel
+         * @throws \Google\Service\Exception
+         */
+        public function watch(Channel $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns all user settings for the authenticated user. (settings.listSettings)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int maxResults Maximum number of entries returned on one result
-     * page. By default the value is 100 entries. The page size can never be larger
-     * than 250 entries. Optional.
-     * @opt_param string pageToken Token specifying which result page to return.
-     * Optional.
-     * @opt_param string syncToken Token obtained from the nextSyncToken field
-     * returned on the last page of results from the previous list request. It makes
-     * the result of this list request contain only entries that have changed since
-     * then. If the syncToken expires, the server will respond with a 410 GONE
-     * response code and the client should clear its storage and perform a full
-     * synchronization without any syncToken. Learn more about incremental
-     * synchronization. Optional. The default is to return all entries.
-     * @return SettingsModel
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Calendar\Resource\Settings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listSettings($optParams = [])
-    {
-    }
-    /**
-     * Watch for changes to Settings resources. (settings.watch)
-     *
-     * @param Channel $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int maxResults Maximum number of entries returned on one result
-     * page. By default the value is 100 entries. The page size can never be larger
-     * than 250 entries. Optional.
-     * @opt_param string pageToken Token specifying which result page to return.
-     * Optional.
-     * @opt_param string syncToken Token obtained from the nextSyncToken field
-     * returned on the last page of results from the previous list request. It makes
-     * the result of this list request contain only entries that have changed since
-     * then. If the syncToken expires, the server will respond with a 410 GONE
-     * response code and the client should clear its storage and perform a full
-     * synchronization without any syncToken. Learn more about incremental
-     * synchronization. Optional. The default is to return all entries.
-     * @return Channel
-     * @throws \Google\Service\Exception
-     */
-    public function watch(Channel $postBody, $optParams = [])
+    class Google_Service_Calendar_Resource_Settings extends \Google\Service\Calendar\Resource\Settings
     {
     }
 }

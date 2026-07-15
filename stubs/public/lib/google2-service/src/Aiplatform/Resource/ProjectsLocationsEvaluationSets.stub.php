@@ -21,96 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform\Resource;
-
-/**
- * The "evaluationSets" collection of methods.
- * Typical usage is:
- *  <code>
- *   $aiplatformService = new Google\Service\Aiplatform(...);
- *   $evaluationSets = $aiplatformService->projects_locations_evaluationSets;
- *  </code>
- */
-class ProjectsLocationsEvaluationSets extends \Google\Service\Resource
-{
+namespace Google\Service\Aiplatform\Resource {
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationSet;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListEvaluationSetsResponse;
+    use Google\Service\Aiplatform\GoogleLongrunningOperation;
     /**
-     * Creates an Evaluation Set. (evaluationSets.create)
-     *
-     * @param string $parent Required. The resource name of the Location to create
-     * the Evaluation Set in. Format: `projects/{project}/locations/{location}`
-     * @param GoogleCloudAiplatformV1EvaluationSet $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAiplatformV1EvaluationSet
-     * @throws \Google\Service\Exception
+     * The "evaluationSets" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $aiplatformService = new Google\Service\Aiplatform(...);
+     *   $evaluationSets = $aiplatformService->projects_locations_evaluationSets;
+     *  </code>
      */
-    public function create($parent, GoogleCloudAiplatformV1EvaluationSet $postBody, $optParams = [])
+    class ProjectsLocationsEvaluationSets extends \Google\Service\Resource
     {
+        /**
+         * Creates an Evaluation Set. (evaluationSets.create)
+         *
+         * @param string $parent Required. The resource name of the Location to create
+         * the Evaluation Set in. Format: `projects/{project}/locations/{location}`
+         * @param GoogleCloudAiplatformV1EvaluationSet $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAiplatformV1EvaluationSet
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudAiplatformV1EvaluationSet $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes an Evaluation Set. (evaluationSets.delete)
+         *
+         * @param string $name Required. The name of the EvaluationSet resource to be
+         * deleted. Format:
+         * `projects/{project}/locations/{location}/evaluationSets/{evaluation_set}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets an Evaluation Set. (evaluationSets.get)
+         *
+         * @param string $name Required. The name of the EvaluationSet resource. Format:
+         * `projects/{project}/locations/{location}/evaluationSets/{evaluation_set}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAiplatformV1EvaluationSet
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists Evaluation Sets. (evaluationSets.listProjectsLocationsEvaluationSets)
+         *
+         * @param string $parent Required. The resource name of the Location from which
+         * to list the Evaluation Sets. Format:
+         * `projects/{project}/locations/{location}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filter expression that matches a subset of
+         * the EvaluationSets to show. For field names both snake_case and camelCase are
+         * supported. For more information about filter syntax, see
+         * [AIP-160](https://google.aip.dev/160).
+         * @opt_param string orderBy Optional. A comma-separated list of fields to order
+         * by, sorted in ascending order by default. Use `desc` after a field name for
+         * descending.
+         * @opt_param int pageSize Optional. The maximum number of Evaluation Sets to
+         * return.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListEvaluationSets` call. Provide this to retrieve the subsequent page.
+         * @return GoogleCloudAiplatformV1ListEvaluationSetsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsEvaluationSets($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates an Evaluation Set. (evaluationSets.patch)
+         *
+         * @param string $name Identifier. The resource name of the EvaluationSet.
+         * Format:
+         * `projects/{project}/locations/{location}/evaluationSets/{evaluation_set}`
+         * @param GoogleCloudAiplatformV1EvaluationSet $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. The update mask applies to the
+         * resource. For the `FieldMask` definition, see google.protobuf.FieldMask.
+         * @return GoogleCloudAiplatformV1EvaluationSet
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleCloudAiplatformV1EvaluationSet $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes an Evaluation Set. (evaluationSets.delete)
-     *
-     * @param string $name Required. The name of the EvaluationSet resource to be
-     * deleted. Format:
-     * `projects/{project}/locations/{location}/evaluationSets/{evaluation_set}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Aiplatform\Resource\ProjectsLocationsEvaluationSets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets an Evaluation Set. (evaluationSets.get)
-     *
-     * @param string $name Required. The name of the EvaluationSet resource. Format:
-     * `projects/{project}/locations/{location}/evaluationSets/{evaluation_set}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAiplatformV1EvaluationSet
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists Evaluation Sets. (evaluationSets.listProjectsLocationsEvaluationSets)
-     *
-     * @param string $parent Required. The resource name of the Location from which
-     * to list the Evaluation Sets. Format:
-     * `projects/{project}/locations/{location}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filter expression that matches a subset of
-     * the EvaluationSets to show. For field names both snake_case and camelCase are
-     * supported. For more information about filter syntax, see
-     * [AIP-160](https://google.aip.dev/160).
-     * @opt_param string orderBy Optional. A comma-separated list of fields to order
-     * by, sorted in ascending order by default. Use `desc` after a field name for
-     * descending.
-     * @opt_param int pageSize Optional. The maximum number of Evaluation Sets to
-     * return.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListEvaluationSets` call. Provide this to retrieve the subsequent page.
-     * @return GoogleCloudAiplatformV1ListEvaluationSetsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsEvaluationSets($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates an Evaluation Set. (evaluationSets.patch)
-     *
-     * @param string $name Identifier. The resource name of the EvaluationSet.
-     * Format:
-     * `projects/{project}/locations/{location}/evaluationSets/{evaluation_set}`
-     * @param GoogleCloudAiplatformV1EvaluationSet $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. The update mask applies to the
-     * resource. For the `FieldMask` definition, see google.protobuf.FieldMask.
-     * @return GoogleCloudAiplatformV1EvaluationSet
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleCloudAiplatformV1EvaluationSet $postBody, $optParams = [])
+    class Google_Service_Aiplatform_Resource_ProjectsLocationsEvaluationSets extends \Google\Service\Aiplatform\Resource\ProjectsLocationsEvaluationSets
     {
     }
 }

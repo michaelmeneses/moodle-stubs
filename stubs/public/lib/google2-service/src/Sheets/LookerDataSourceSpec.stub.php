@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class LookerDataSourceSpec extends \Google\Model
-{
-    /**
-     * Name of a Looker model explore.
-     *
-     * @var string
-     */
-    public $explore;
-    /**
-     * A Looker instance URL.
-     *
-     * @var string
-     */
-    public $instanceUri;
-    /**
-     * Name of a Looker model.
-     *
-     * @var string
-     */
-    public $model;
-    /**
-     * Name of a Looker model explore.
-     *
-     * @param string $explore
-     */
-    public function setExplore($explore)
+namespace Google\Service\Sheets {
+    class LookerDataSourceSpec extends \Google\Model
     {
+        /**
+         * Name of a Looker model explore.
+         *
+         * @var string
+         */
+        public $explore;
+        /**
+         * A Looker instance URL.
+         *
+         * @var string
+         */
+        public $instanceUri;
+        /**
+         * Name of a Looker model.
+         *
+         * @var string
+         */
+        public $model;
+        /**
+         * Name of a Looker model explore.
+         *
+         * @param string $explore
+         */
+        public function setExplore($explore)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExplore()
+        {
+        }
+        /**
+         * A Looker instance URL.
+         *
+         * @param string $instanceUri
+         */
+        public function setInstanceUri($instanceUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceUri()
+        {
+        }
+        /**
+         * Name of a Looker model.
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sheets\LookerDataSourceSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExplore()
-    {
-    }
-    /**
-     * A Looker instance URL.
-     *
-     * @param string $instanceUri
-     */
-    public function setInstanceUri($instanceUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceUri()
-    {
-    }
-    /**
-     * Name of a Looker model.
-     *
-     * @param string $model
-     */
-    public function setModel($model)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModel()
+    class Google_Service_Sheets_LookerDataSourceSpec extends \Google\Service\Sheets\LookerDataSourceSpec
     {
     }
 }

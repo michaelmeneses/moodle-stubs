@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class SupportTicket extends \Google\Model
-{
-    /**
-     * Support ticket ID
-     *
-     * @var string
-     */
-    public $ticketId;
-    /**
-     * Link to support ticket
-     *
-     * @var string
-     */
-    public $ticketUrl;
-    /**
-     * Support ticket ID
-     *
-     * @param string $ticketId
-     */
-    public function setTicketId($ticketId)
+namespace Google\Service\AlertCenter {
+    class SupportTicket extends \Google\Model
     {
+        /**
+         * Support ticket ID
+         *
+         * @var string
+         */
+        public $ticketId;
+        /**
+         * Link to support ticket
+         *
+         * @var string
+         */
+        public $ticketUrl;
+        /**
+         * Support ticket ID
+         *
+         * @param string $ticketId
+         */
+        public function setTicketId($ticketId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTicketId()
+        {
+        }
+        /**
+         * Link to support ticket
+         *
+         * @param string $ticketUrl
+         */
+        public function setTicketUrl($ticketUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTicketUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AlertCenter\SupportTicket registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTicketId()
-    {
-    }
-    /**
-     * Link to support ticket
-     *
-     * @param string $ticketUrl
-     */
-    public function setTicketUrl($ticketUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTicketUrl()
+    class Google_Service_AlertCenter_SupportTicket extends \Google\Service\AlertCenter\SupportTicket
     {
     }
 }

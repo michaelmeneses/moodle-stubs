@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class GoogleAnalyticsLink extends \Google\Model
-{
-    protected $attributionSettingsType = AttributionSettings::class;
-    protected $attributionSettingsDataType = '';
-    /**
-     * Required. Immutable. ID of the Google Analytics property the merchant is
-     * linked to.
-     *
-     * @var string
-     */
-    public $propertyId;
-    /**
-     * Output only. Name of the Google Analytics property the merchant is linked
-     * to.
-     *
-     * @var string
-     */
-    public $propertyName;
-    /**
-     * Output only. Attribution settings for the linked Google Analytics property.
-     *
-     * @param AttributionSettings $attributionSettings
-     */
-    public function setAttributionSettings(AttributionSettings $attributionSettings)
+namespace Google\Service\ShoppingContent {
+    class GoogleAnalyticsLink extends \Google\Model
     {
+        protected $attributionSettingsType = AttributionSettings::class;
+        protected $attributionSettingsDataType = '';
+        /**
+         * Required. Immutable. ID of the Google Analytics property the merchant is
+         * linked to.
+         *
+         * @var string
+         */
+        public $propertyId;
+        /**
+         * Output only. Name of the Google Analytics property the merchant is linked
+         * to.
+         *
+         * @var string
+         */
+        public $propertyName;
+        /**
+         * Output only. Attribution settings for the linked Google Analytics property.
+         *
+         * @param AttributionSettings $attributionSettings
+         */
+        public function setAttributionSettings(AttributionSettings $attributionSettings)
+        {
+        }
+        /**
+         * @return AttributionSettings
+         */
+        public function getAttributionSettings()
+        {
+        }
+        /**
+         * Required. Immutable. ID of the Google Analytics property the merchant is
+         * linked to.
+         *
+         * @param string $propertyId
+         */
+        public function setPropertyId($propertyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPropertyId()
+        {
+        }
+        /**
+         * Output only. Name of the Google Analytics property the merchant is linked
+         * to.
+         *
+         * @param string $propertyName
+         */
+        public function setPropertyName($propertyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPropertyName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AttributionSettings
+     * Runtime class alias of \Google\Service\ShoppingContent\GoogleAnalyticsLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributionSettings()
-    {
-    }
-    /**
-     * Required. Immutable. ID of the Google Analytics property the merchant is
-     * linked to.
-     *
-     * @param string $propertyId
-     */
-    public function setPropertyId($propertyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPropertyId()
-    {
-    }
-    /**
-     * Output only. Name of the Google Analytics property the merchant is linked
-     * to.
-     *
-     * @param string $propertyName
-     */
-    public function setPropertyName($propertyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPropertyName()
+    class Google_Service_ShoppingContent_GoogleAnalyticsLink extends \Google\Service\ShoppingContent\GoogleAnalyticsLink
     {
     }
 }

@@ -21,169 +21,178 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class TemplateMetadata extends \Google\Collection
-{
-    protected $collection_key = 'parameters';
-    /**
-     * Optional. Indicates the default streaming mode for a streaming template.
-     * Only valid if both supports_at_least_once and supports_exactly_once are
-     * true. Possible values: UNSPECIFIED, EXACTLY_ONCE and AT_LEAST_ONCE
-     *
-     * @var string
-     */
-    public $defaultStreamingMode;
-    /**
-     * Optional. A description of the template.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. The name of the template.
-     *
-     * @var string
-     */
-    public $name;
-    protected $parametersType = ParameterMetadata::class;
-    protected $parametersDataType = 'array';
-    /**
-     * Optional. Indicates if the template is streaming or not.
-     *
-     * @var bool
-     */
-    public $streaming;
-    /**
-     * Optional. Indicates if the streaming template supports at least once mode.
-     *
-     * @var bool
-     */
-    public $supportsAtLeastOnce;
-    /**
-     * Optional. Indicates if the streaming template supports exactly once mode.
-     *
-     * @var bool
-     */
-    public $supportsExactlyOnce;
-    /**
-     * Optional. For future use.
-     *
-     * @var string
-     */
-    public $yamlDefinition;
-    /**
-     * Optional. Indicates the default streaming mode for a streaming template.
-     * Only valid if both supports_at_least_once and supports_exactly_once are
-     * true. Possible values: UNSPECIFIED, EXACTLY_ONCE and AT_LEAST_ONCE
-     *
-     * @param string $defaultStreamingMode
-     */
-    public function setDefaultStreamingMode($defaultStreamingMode)
+namespace Google\Service\Dataflow {
+    class TemplateMetadata extends \Google\Collection
     {
+        protected $collection_key = 'parameters';
+        /**
+         * Optional. Indicates the default streaming mode for a streaming template.
+         * Only valid if both supports_at_least_once and supports_exactly_once are
+         * true. Possible values: UNSPECIFIED, EXACTLY_ONCE and AT_LEAST_ONCE
+         *
+         * @var string
+         */
+        public $defaultStreamingMode;
+        /**
+         * Optional. A description of the template.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. The name of the template.
+         *
+         * @var string
+         */
+        public $name;
+        protected $parametersType = ParameterMetadata::class;
+        protected $parametersDataType = 'array';
+        /**
+         * Optional. Indicates if the template is streaming or not.
+         *
+         * @var bool
+         */
+        public $streaming;
+        /**
+         * Optional. Indicates if the streaming template supports at least once mode.
+         *
+         * @var bool
+         */
+        public $supportsAtLeastOnce;
+        /**
+         * Optional. Indicates if the streaming template supports exactly once mode.
+         *
+         * @var bool
+         */
+        public $supportsExactlyOnce;
+        /**
+         * Optional. For future use.
+         *
+         * @var string
+         */
+        public $yamlDefinition;
+        /**
+         * Optional. Indicates the default streaming mode for a streaming template.
+         * Only valid if both supports_at_least_once and supports_exactly_once are
+         * true. Possible values: UNSPECIFIED, EXACTLY_ONCE and AT_LEAST_ONCE
+         *
+         * @param string $defaultStreamingMode
+         */
+        public function setDefaultStreamingMode($defaultStreamingMode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultStreamingMode()
+        {
+        }
+        /**
+         * Optional. A description of the template.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. The name of the template.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The parameters for the template.
+         *
+         * @param ParameterMetadata[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return ParameterMetadata[]
+         */
+        public function getParameters()
+        {
+        }
+        /**
+         * Optional. Indicates if the template is streaming or not.
+         *
+         * @param bool $streaming
+         */
+        public function setStreaming($streaming)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStreaming()
+        {
+        }
+        /**
+         * Optional. Indicates if the streaming template supports at least once mode.
+         *
+         * @param bool $supportsAtLeastOnce
+         */
+        public function setSupportsAtLeastOnce($supportsAtLeastOnce)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportsAtLeastOnce()
+        {
+        }
+        /**
+         * Optional. Indicates if the streaming template supports exactly once mode.
+         *
+         * @param bool $supportsExactlyOnce
+         */
+        public function setSupportsExactlyOnce($supportsExactlyOnce)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportsExactlyOnce()
+        {
+        }
+        /**
+         * Optional. For future use.
+         *
+         * @param string $yamlDefinition
+         */
+        public function setYamlDefinition($yamlDefinition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getYamlDefinition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\TemplateMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultStreamingMode()
-    {
-    }
-    /**
-     * Optional. A description of the template.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. The name of the template.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The parameters for the template.
-     *
-     * @param ParameterMetadata[] $parameters
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return ParameterMetadata[]
-     */
-    public function getParameters()
-    {
-    }
-    /**
-     * Optional. Indicates if the template is streaming or not.
-     *
-     * @param bool $streaming
-     */
-    public function setStreaming($streaming)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getStreaming()
-    {
-    }
-    /**
-     * Optional. Indicates if the streaming template supports at least once mode.
-     *
-     * @param bool $supportsAtLeastOnce
-     */
-    public function setSupportsAtLeastOnce($supportsAtLeastOnce)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportsAtLeastOnce()
-    {
-    }
-    /**
-     * Optional. Indicates if the streaming template supports exactly once mode.
-     *
-     * @param bool $supportsExactlyOnce
-     */
-    public function setSupportsExactlyOnce($supportsExactlyOnce)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportsExactlyOnce()
-    {
-    }
-    /**
-     * Optional. For future use.
-     *
-     * @param string $yamlDefinition
-     */
-    public function setYamlDefinition($yamlDefinition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getYamlDefinition()
+    class Google_Service_Dataflow_TemplateMetadata extends \Google\Service\Dataflow\TemplateMetadata
     {
     }
 }

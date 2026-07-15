@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIManagement;
-
-class HttpOperationHttpResponse extends \Google\Model
-{
-    protected $headersType = HttpOperationHeader::class;
-    protected $headersDataType = 'map';
-    /**
-     * Map of status code to observed count
-     *
-     * @var string[]
-     */
-    public $responseCodes;
-    /**
-     * Unordered map from header name to header metadata
-     *
-     * @param HttpOperationHeader[] $headers
-     */
-    public function setHeaders($headers)
+namespace Google\Service\APIManagement {
+    class HttpOperationHttpResponse extends \Google\Model
     {
+        protected $headersType = HttpOperationHeader::class;
+        protected $headersDataType = 'map';
+        /**
+         * Map of status code to observed count
+         *
+         * @var string[]
+         */
+        public $responseCodes;
+        /**
+         * Unordered map from header name to header metadata
+         *
+         * @param HttpOperationHeader[] $headers
+         */
+        public function setHeaders($headers)
+        {
+        }
+        /**
+         * @return HttpOperationHeader[]
+         */
+        public function getHeaders()
+        {
+        }
+        /**
+         * Map of status code to observed count
+         *
+         * @param string[] $responseCodes
+         */
+        public function setResponseCodes($responseCodes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResponseCodes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HttpOperationHeader[]
+     * Runtime class alias of \Google\Service\APIManagement\HttpOperationHttpResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeaders()
-    {
-    }
-    /**
-     * Map of status code to observed count
-     *
-     * @param string[] $responseCodes
-     */
-    public function setResponseCodes($responseCodes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResponseCodes()
+    class Google_Service_APIManagement_HttpOperationHttpResponse extends \Google\Service\APIManagement\HttpOperationHttpResponse
     {
     }
 }

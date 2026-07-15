@@ -21,156 +21,165 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class HealthStatusForNetworkEndpoint extends \Google\Model
-{
-    /**
-     * Endpoint is being drained.
-     */
-    public const HEALTH_STATE_DRAINING = 'DRAINING';
-    /**
-     * Endpoint is healthy.
-     */
-    public const HEALTH_STATE_HEALTHY = 'HEALTHY';
-    /**
-     * Endpoint is unhealthy.
-     */
-    public const HEALTH_STATE_UNHEALTHY = 'UNHEALTHY';
-    /**
-     * Health status of the endpoint is unknown.
-     */
-    public const HEALTH_STATE_UNKNOWN = 'UNKNOWN';
-    /**
-     * Endpoint is being drained.
-     */
-    public const IPV6_HEALTH_STATE_DRAINING = 'DRAINING';
-    /**
-     * Endpoint is healthy.
-     */
-    public const IPV6_HEALTH_STATE_HEALTHY = 'HEALTHY';
-    /**
-     * Endpoint is unhealthy.
-     */
-    public const IPV6_HEALTH_STATE_UNHEALTHY = 'UNHEALTHY';
-    /**
-     * Health status of the endpoint is unknown.
-     */
-    public const IPV6_HEALTH_STATE_UNKNOWN = 'UNKNOWN';
-    protected $backendServiceType = BackendServiceReference::class;
-    protected $backendServiceDataType = '';
-    protected $forwardingRuleType = ForwardingRuleReference::class;
-    protected $forwardingRuleDataType = '';
-    protected $healthCheckType = HealthCheckReference::class;
-    protected $healthCheckDataType = '';
-    protected $healthCheckServiceType = HealthCheckServiceReference::class;
-    protected $healthCheckServiceDataType = '';
-    /**
-     * Health state of the network endpoint determined based on the health checks
-     * configured.
-     *
-     * @var string
-     */
-    public $healthState;
-    /**
-     * Health state of the ipv6 network endpoint determined based on the health
-     * checks configured.
-     *
-     * @var string
-     */
-    public $ipv6HealthState;
-    /**
-     * URL of the backend service associated with the health state of the network
-     * endpoint.
-     *
-     * @param BackendServiceReference $backendService
-     */
-    public function setBackendService(BackendServiceReference $backendService)
+namespace Google\Service\Compute {
+    class HealthStatusForNetworkEndpoint extends \Google\Model
     {
+        /**
+         * Endpoint is being drained.
+         */
+        public const HEALTH_STATE_DRAINING = 'DRAINING';
+        /**
+         * Endpoint is healthy.
+         */
+        public const HEALTH_STATE_HEALTHY = 'HEALTHY';
+        /**
+         * Endpoint is unhealthy.
+         */
+        public const HEALTH_STATE_UNHEALTHY = 'UNHEALTHY';
+        /**
+         * Health status of the endpoint is unknown.
+         */
+        public const HEALTH_STATE_UNKNOWN = 'UNKNOWN';
+        /**
+         * Endpoint is being drained.
+         */
+        public const IPV6_HEALTH_STATE_DRAINING = 'DRAINING';
+        /**
+         * Endpoint is healthy.
+         */
+        public const IPV6_HEALTH_STATE_HEALTHY = 'HEALTHY';
+        /**
+         * Endpoint is unhealthy.
+         */
+        public const IPV6_HEALTH_STATE_UNHEALTHY = 'UNHEALTHY';
+        /**
+         * Health status of the endpoint is unknown.
+         */
+        public const IPV6_HEALTH_STATE_UNKNOWN = 'UNKNOWN';
+        protected $backendServiceType = BackendServiceReference::class;
+        protected $backendServiceDataType = '';
+        protected $forwardingRuleType = ForwardingRuleReference::class;
+        protected $forwardingRuleDataType = '';
+        protected $healthCheckType = HealthCheckReference::class;
+        protected $healthCheckDataType = '';
+        protected $healthCheckServiceType = HealthCheckServiceReference::class;
+        protected $healthCheckServiceDataType = '';
+        /**
+         * Health state of the network endpoint determined based on the health checks
+         * configured.
+         *
+         * @var string
+         */
+        public $healthState;
+        /**
+         * Health state of the ipv6 network endpoint determined based on the health
+         * checks configured.
+         *
+         * @var string
+         */
+        public $ipv6HealthState;
+        /**
+         * URL of the backend service associated with the health state of the network
+         * endpoint.
+         *
+         * @param BackendServiceReference $backendService
+         */
+        public function setBackendService(BackendServiceReference $backendService)
+        {
+        }
+        /**
+         * @return BackendServiceReference
+         */
+        public function getBackendService()
+        {
+        }
+        /**
+         * URL of the forwarding rule associated with the health state of the network
+         * endpoint.
+         *
+         * @param ForwardingRuleReference $forwardingRule
+         */
+        public function setForwardingRule(ForwardingRuleReference $forwardingRule)
+        {
+        }
+        /**
+         * @return ForwardingRuleReference
+         */
+        public function getForwardingRule()
+        {
+        }
+        /**
+         * URL of the health check associated with the health state of the network
+         * endpoint.
+         *
+         * @param HealthCheckReference $healthCheck
+         */
+        public function setHealthCheck(HealthCheckReference $healthCheck)
+        {
+        }
+        /**
+         * @return HealthCheckReference
+         */
+        public function getHealthCheck()
+        {
+        }
+        /**
+         * URL of the health check service associated with the health state of the
+         * network endpoint.
+         *
+         * @param HealthCheckServiceReference $healthCheckService
+         */
+        public function setHealthCheckService(HealthCheckServiceReference $healthCheckService)
+        {
+        }
+        /**
+         * @return HealthCheckServiceReference
+         */
+        public function getHealthCheckService()
+        {
+        }
+        /**
+         * Health state of the network endpoint determined based on the health checks
+         * configured.
+         *
+         * Accepted values: DRAINING, HEALTHY, UNHEALTHY, UNKNOWN
+         *
+         * @param self::HEALTH_STATE_* $healthState
+         */
+        public function setHealthState($healthState)
+        {
+        }
+        /**
+         * @return self::HEALTH_STATE_*
+         */
+        public function getHealthState()
+        {
+        }
+        /**
+         * Health state of the ipv6 network endpoint determined based on the health
+         * checks configured.
+         *
+         * Accepted values: DRAINING, HEALTHY, UNHEALTHY, UNKNOWN
+         *
+         * @param self::IPV6_HEALTH_STATE_* $ipv6HealthState
+         */
+        public function setIpv6HealthState($ipv6HealthState)
+        {
+        }
+        /**
+         * @return self::IPV6_HEALTH_STATE_*
+         */
+        public function getIpv6HealthState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BackendServiceReference
+     * Runtime class alias of \Google\Service\Compute\HealthStatusForNetworkEndpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackendService()
-    {
-    }
-    /**
-     * URL of the forwarding rule associated with the health state of the network
-     * endpoint.
-     *
-     * @param ForwardingRuleReference $forwardingRule
-     */
-    public function setForwardingRule(ForwardingRuleReference $forwardingRule)
-    {
-    }
-    /**
-     * @return ForwardingRuleReference
-     */
-    public function getForwardingRule()
-    {
-    }
-    /**
-     * URL of the health check associated with the health state of the network
-     * endpoint.
-     *
-     * @param HealthCheckReference $healthCheck
-     */
-    public function setHealthCheck(HealthCheckReference $healthCheck)
-    {
-    }
-    /**
-     * @return HealthCheckReference
-     */
-    public function getHealthCheck()
-    {
-    }
-    /**
-     * URL of the health check service associated with the health state of the
-     * network endpoint.
-     *
-     * @param HealthCheckServiceReference $healthCheckService
-     */
-    public function setHealthCheckService(HealthCheckServiceReference $healthCheckService)
-    {
-    }
-    /**
-     * @return HealthCheckServiceReference
-     */
-    public function getHealthCheckService()
-    {
-    }
-    /**
-     * Health state of the network endpoint determined based on the health checks
-     * configured.
-     *
-     * Accepted values: DRAINING, HEALTHY, UNHEALTHY, UNKNOWN
-     *
-     * @param self::HEALTH_STATE_* $healthState
-     */
-    public function setHealthState($healthState)
-    {
-    }
-    /**
-     * @return self::HEALTH_STATE_*
-     */
-    public function getHealthState()
-    {
-    }
-    /**
-     * Health state of the ipv6 network endpoint determined based on the health
-     * checks configured.
-     *
-     * Accepted values: DRAINING, HEALTHY, UNHEALTHY, UNKNOWN
-     *
-     * @param self::IPV6_HEALTH_STATE_* $ipv6HealthState
-     */
-    public function setIpv6HealthState($ipv6HealthState)
-    {
-    }
-    /**
-     * @return self::IPV6_HEALTH_STATE_*
-     */
-    public function getIpv6HealthState()
+    class Google_Service_Compute_HealthStatusForNetworkEndpoint extends \Google\Service\Compute\HealthStatusForNetworkEndpoint
     {
     }
 }

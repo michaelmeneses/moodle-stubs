@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1BargeInConfig extends \Google\Model
-{
-    /**
-     * Duration that is not eligible for barge-in at the beginning of the input
-     * audio.
-     *
-     * @var string
-     */
-    public $noBargeInDuration;
-    /**
-     * Total duration for the playback at the beginning of the input audio.
-     *
-     * @var string
-     */
-    public $totalDuration;
-    /**
-     * Duration that is not eligible for barge-in at the beginning of the input
-     * audio.
-     *
-     * @param string $noBargeInDuration
-     */
-    public function setNoBargeInDuration($noBargeInDuration)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1BargeInConfig extends \Google\Model
     {
+        /**
+         * Duration that is not eligible for barge-in at the beginning of the input
+         * audio.
+         *
+         * @var string
+         */
+        public $noBargeInDuration;
+        /**
+         * Total duration for the playback at the beginning of the input audio.
+         *
+         * @var string
+         */
+        public $totalDuration;
+        /**
+         * Duration that is not eligible for barge-in at the beginning of the input
+         * audio.
+         *
+         * @param string $noBargeInDuration
+         */
+        public function setNoBargeInDuration($noBargeInDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNoBargeInDuration()
+        {
+        }
+        /**
+         * Total duration for the playback at the beginning of the input audio.
+         *
+         * @param string $totalDuration
+         */
+        public function setTotalDuration($totalDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1BargeInConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNoBargeInDuration()
-    {
-    }
-    /**
-     * Total duration for the playback at the beginning of the input audio.
-     *
-     * @param string $totalDuration
-     */
-    public function setTotalDuration($totalDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalDuration()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1BargeInConfig extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1BargeInConfig
     {
     }
 }

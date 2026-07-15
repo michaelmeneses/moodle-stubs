@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class LabelValue extends \Google\Model
-{
-    /**
-     * The label for a specific row and column. Recommended maximum is 15
-     * characters for a two-column layout and 30 characters for a one-column
-     * layout.
-     *
-     * @var string
-     */
-    public $label;
-    protected $localizedLabelType = LocalizedString::class;
-    protected $localizedLabelDataType = '';
-    protected $localizedValueType = LocalizedString::class;
-    protected $localizedValueDataType = '';
-    /**
-     * The value for a specific row and column. Recommended maximum is 15
-     * characters for a two-column layout and 30 characters for a one-column
-     * layout.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The label for a specific row and column. Recommended maximum is 15
-     * characters for a two-column layout and 30 characters for a one-column
-     * layout.
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
+namespace Google\Service\Walletobjects {
+    class LabelValue extends \Google\Model
     {
+        /**
+         * The label for a specific row and column. Recommended maximum is 15
+         * characters for a two-column layout and 30 characters for a one-column
+         * layout.
+         *
+         * @var string
+         */
+        public $label;
+        protected $localizedLabelType = LocalizedString::class;
+        protected $localizedLabelDataType = '';
+        protected $localizedValueType = LocalizedString::class;
+        protected $localizedValueDataType = '';
+        /**
+         * The value for a specific row and column. Recommended maximum is 15
+         * characters for a two-column layout and 30 characters for a one-column
+         * layout.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The label for a specific row and column. Recommended maximum is 15
+         * characters for a two-column layout and 30 characters for a one-column
+         * layout.
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * Translated strings for the label. Recommended maximum is 15 characters for
+         * a two-column layout and 30 characters for a one-column layout.
+         *
+         * @param LocalizedString $localizedLabel
+         */
+        public function setLocalizedLabel(LocalizedString $localizedLabel)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getLocalizedLabel()
+        {
+        }
+        /**
+         * Translated strings for the value. Recommended maximum is 15 characters for
+         * a two-column layout and 30 characters for a one-column layout.
+         *
+         * @param LocalizedString $localizedValue
+         */
+        public function setLocalizedValue(LocalizedString $localizedValue)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getLocalizedValue()
+        {
+        }
+        /**
+         * The value for a specific row and column. Recommended maximum is 15
+         * characters for a two-column layout and 30 characters for a one-column
+         * layout.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Walletobjects\LabelValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabel()
-    {
-    }
-    /**
-     * Translated strings for the label. Recommended maximum is 15 characters for
-     * a two-column layout and 30 characters for a one-column layout.
-     *
-     * @param LocalizedString $localizedLabel
-     */
-    public function setLocalizedLabel(LocalizedString $localizedLabel)
-    {
-    }
-    /**
-     * @return LocalizedString
-     */
-    public function getLocalizedLabel()
-    {
-    }
-    /**
-     * Translated strings for the value. Recommended maximum is 15 characters for
-     * a two-column layout and 30 characters for a one-column layout.
-     *
-     * @param LocalizedString $localizedValue
-     */
-    public function setLocalizedValue(LocalizedString $localizedValue)
-    {
-    }
-    /**
-     * @return LocalizedString
-     */
-    public function getLocalizedValue()
-    {
-    }
-    /**
-     * The value for a specific row and column. Recommended maximum is 15
-     * characters for a two-column layout and 30 characters for a one-column
-     * layout.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Walletobjects_LabelValue extends \Google\Service\Walletobjects\LabelValue
     {
     }
 }

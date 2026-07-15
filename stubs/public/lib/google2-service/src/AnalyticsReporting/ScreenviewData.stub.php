@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class ScreenviewData extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $appName;
-    /**
-     * @var string
-     */
-    public $mobileDeviceBranding;
-    /**
-     * @var string
-     */
-    public $mobileDeviceModel;
-    /**
-     * @var string
-     */
-    public $screenName;
-    /**
-     * @param string
-     */
-    public function setAppName($appName)
+namespace Google\Service\AnalyticsReporting {
+    class ScreenviewData extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $appName;
+        /**
+         * @var string
+         */
+        public $mobileDeviceBranding;
+        /**
+         * @var string
+         */
+        public $mobileDeviceModel;
+        /**
+         * @var string
+         */
+        public $screenName;
+        /**
+         * @param string
+         */
+        public function setAppName($appName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMobileDeviceBranding($mobileDeviceBranding)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMobileDeviceBranding()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMobileDeviceModel($mobileDeviceModel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMobileDeviceModel()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setScreenName($screenName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScreenName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsReporting\ScreenviewData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMobileDeviceBranding($mobileDeviceBranding)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMobileDeviceBranding()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMobileDeviceModel($mobileDeviceModel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMobileDeviceModel()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setScreenName($screenName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScreenName()
+    class Google_Service_AnalyticsReporting_ScreenviewData extends \Google\Service\AnalyticsReporting\ScreenviewData
     {
     }
 }

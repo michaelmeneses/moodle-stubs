@@ -21,45 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity\Resource;
-
-/**
- * The "routeTables" collection of methods.
- * Typical usage is:
- *  <code>
- *   $networkconnectivityService = new Google\Service\Networkconnectivity(...);
- *   $routeTables = $networkconnectivityService->projects_locations_global_hubs_routeTables;
- *  </code>
- */
-class ProjectsLocationsNetworkconnectivityGlobalHubsRouteTables extends \Google\Service\Resource
-{
+namespace Google\Service\Networkconnectivity\Resource {
+    use Google\Service\Networkconnectivity\ListRouteTablesResponse;
+    use Google\Service\Networkconnectivity\RouteTable;
     /**
-     * Gets details about a Network Connectivity Center route table.
-     * (routeTables.get)
-     *
-     * @param string $name Required. The name of the route table resource.
-     * @param array $optParams Optional parameters.
-     * @return RouteTable
-     * @throws \Google\Service\Exception
+     * The "routeTables" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $networkconnectivityService = new Google\Service\Networkconnectivity(...);
+     *   $routeTables = $networkconnectivityService->projects_locations_global_hubs_routeTables;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsNetworkconnectivityGlobalHubsRouteTables extends \Google\Service\Resource
     {
+        /**
+         * Gets details about a Network Connectivity Center route table.
+         * (routeTables.get)
+         *
+         * @param string $name Required. The name of the route table resource.
+         * @param array $optParams Optional parameters.
+         * @return RouteTable
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists route tables in a given hub.
+         * (routeTables.listProjectsLocationsNetworkconnectivityGlobalHubsRouteTables)
+         *
+         * @param string $parent Required. The parent resource's name.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter An expression that filters the list of results.
+         * @opt_param string orderBy Sort the results by a certain order.
+         * @opt_param int pageSize The maximum number of results to return per page.
+         * @opt_param string pageToken The page token.
+         * @return ListRouteTablesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsNetworkconnectivityGlobalHubsRouteTables($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists route tables in a given hub.
-     * (routeTables.listProjectsLocationsNetworkconnectivityGlobalHubsRouteTables)
-     *
-     * @param string $parent Required. The parent resource's name.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter An expression that filters the list of results.
-     * @opt_param string orderBy Sort the results by a certain order.
-     * @opt_param int pageSize The maximum number of results to return per page.
-     * @opt_param string pageToken The page token.
-     * @return ListRouteTablesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Networkconnectivity\Resource\ProjectsLocationsNetworkconnectivityGlobalHubsRouteTables registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsNetworkconnectivityGlobalHubsRouteTables($parent, $optParams = [])
+    class Google_Service_Networkconnectivity_Resource_ProjectsLocationsNetworkconnectivityGlobalHubsRouteTables extends \Google\Service\Networkconnectivity\Resource\ProjectsLocationsNetworkconnectivityGlobalHubsRouteTables
     {
     }
 }

@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class ListUserInvitationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'userInvitations';
-    /**
-     * The token for the next page. If not empty, indicates that there may be more
-     * `UserInvitation` resources that match the listing request; this value can
-     * be used in a subsequent ListUserInvitationsRequest to get continued results
-     * with the current list call.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $userInvitationsType = UserInvitation::class;
-    protected $userInvitationsDataType = 'array';
-    /**
-     * The token for the next page. If not empty, indicates that there may be more
-     * `UserInvitation` resources that match the listing request; this value can
-     * be used in a subsequent ListUserInvitationsRequest to get continued results
-     * with the current list call.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudIdentity {
+    class ListUserInvitationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'userInvitations';
+        /**
+         * The token for the next page. If not empty, indicates that there may be more
+         * `UserInvitation` resources that match the listing request; this value can
+         * be used in a subsequent ListUserInvitationsRequest to get continued results
+         * with the current list call.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $userInvitationsType = UserInvitation::class;
+        protected $userInvitationsDataType = 'array';
+        /**
+         * The token for the next page. If not empty, indicates that there may be more
+         * `UserInvitation` resources that match the listing request; this value can
+         * be used in a subsequent ListUserInvitationsRequest to get continued results
+         * with the current list call.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of UserInvitation resources.
+         *
+         * @param UserInvitation[] $userInvitations
+         */
+        public function setUserInvitations($userInvitations)
+        {
+        }
+        /**
+         * @return UserInvitation[]
+         */
+        public function getUserInvitations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIdentity\ListUserInvitationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of UserInvitation resources.
-     *
-     * @param UserInvitation[] $userInvitations
-     */
-    public function setUserInvitations($userInvitations)
-    {
-    }
-    /**
-     * @return UserInvitation[]
-     */
-    public function getUserInvitations()
+    class Google_Service_CloudIdentity_ListUserInvitationsResponse extends \Google\Service\CloudIdentity\ListUserInvitationsResponse
     {
     }
 }

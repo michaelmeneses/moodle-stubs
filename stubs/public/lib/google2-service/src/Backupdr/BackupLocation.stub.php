@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class BackupLocation extends \Google\Model
-{
-    /**
-     * Location type is unspecified.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * Location type is zonal.
-     */
-    public const TYPE_ZONAL = 'ZONAL';
-    /**
-     * Location type is regional.
-     */
-    public const TYPE_REGIONAL = 'REGIONAL';
-    /**
-     * Location type is multi regional.
-     */
-    public const TYPE_MULTI_REGIONAL = 'MULTI_REGIONAL';
-    /**
-     * Output only. The id of the cloud location. Example: "us-central1"
-     *
-     * @var string
-     */
-    public $locationId;
-    /**
-     * Output only. The type of the location.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. The id of the cloud location. Example: "us-central1"
-     *
-     * @param string $locationId
-     */
-    public function setLocationId($locationId)
+namespace Google\Service\Backupdr {
+    class BackupLocation extends \Google\Model
     {
+        /**
+         * Location type is unspecified.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * Location type is zonal.
+         */
+        public const TYPE_ZONAL = 'ZONAL';
+        /**
+         * Location type is regional.
+         */
+        public const TYPE_REGIONAL = 'REGIONAL';
+        /**
+         * Location type is multi regional.
+         */
+        public const TYPE_MULTI_REGIONAL = 'MULTI_REGIONAL';
+        /**
+         * Output only. The id of the cloud location. Example: "us-central1"
+         *
+         * @var string
+         */
+        public $locationId;
+        /**
+         * Output only. The type of the location.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. The id of the cloud location. Example: "us-central1"
+         *
+         * @param string $locationId
+         */
+        public function setLocationId($locationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocationId()
+        {
+        }
+        /**
+         * Output only. The type of the location.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, ZONAL, REGIONAL, MULTI_REGIONAL
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\BackupLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocationId()
-    {
-    }
-    /**
-     * Output only. The type of the location.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, ZONAL, REGIONAL, MULTI_REGIONAL
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Backupdr_BackupLocation extends \Google\Service\Backupdr\BackupLocation
     {
     }
 }

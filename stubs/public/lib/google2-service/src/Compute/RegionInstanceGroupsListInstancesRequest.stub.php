@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RegionInstanceGroupsListInstancesRequest extends \Google\Model
-{
-    /**
-     * Matches any status of the instances, running, non-running and others.
-     */
-    public const INSTANCE_STATE_ALL = 'ALL';
-    /**
-     * Instance is in RUNNING state if it is running.
-     */
-    public const INSTANCE_STATE_RUNNING = 'RUNNING';
-    /**
-     * Instances in which state should be returned. Valid options are: 'ALL',
-     * 'RUNNING'. By default, it lists all instances.
-     *
-     * @var string
-     */
-    public $instanceState;
-    /**
-     * Name of port user is interested in. It is optional. If it is set, only
-     * information about this ports will be returned. If it is not set, all the
-     * named ports will be returned. Always lists all instances.
-     *
-     * @var string
-     */
-    public $portName;
-    /**
-     * Instances in which state should be returned. Valid options are: 'ALL',
-     * 'RUNNING'. By default, it lists all instances.
-     *
-     * Accepted values: ALL, RUNNING
-     *
-     * @param self::INSTANCE_STATE_* $instanceState
-     */
-    public function setInstanceState($instanceState)
+namespace Google\Service\Compute {
+    class RegionInstanceGroupsListInstancesRequest extends \Google\Model
     {
+        /**
+         * Matches any status of the instances, running, non-running and others.
+         */
+        public const INSTANCE_STATE_ALL = 'ALL';
+        /**
+         * Instance is in RUNNING state if it is running.
+         */
+        public const INSTANCE_STATE_RUNNING = 'RUNNING';
+        /**
+         * Instances in which state should be returned. Valid options are: 'ALL',
+         * 'RUNNING'. By default, it lists all instances.
+         *
+         * @var string
+         */
+        public $instanceState;
+        /**
+         * Name of port user is interested in. It is optional. If it is set, only
+         * information about this ports will be returned. If it is not set, all the
+         * named ports will be returned. Always lists all instances.
+         *
+         * @var string
+         */
+        public $portName;
+        /**
+         * Instances in which state should be returned. Valid options are: 'ALL',
+         * 'RUNNING'. By default, it lists all instances.
+         *
+         * Accepted values: ALL, RUNNING
+         *
+         * @param self::INSTANCE_STATE_* $instanceState
+         */
+        public function setInstanceState($instanceState)
+        {
+        }
+        /**
+         * @return self::INSTANCE_STATE_*
+         */
+        public function getInstanceState()
+        {
+        }
+        /**
+         * Name of port user is interested in. It is optional. If it is set, only
+         * information about this ports will be returned. If it is not set, all the
+         * named ports will be returned. Always lists all instances.
+         *
+         * @param string $portName
+         */
+        public function setPortName($portName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPortName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::INSTANCE_STATE_*
+     * Runtime class alias of \Google\Service\Compute\RegionInstanceGroupsListInstancesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceState()
-    {
-    }
-    /**
-     * Name of port user is interested in. It is optional. If it is set, only
-     * information about this ports will be returned. If it is not set, all the
-     * named ports will be returned. Always lists all instances.
-     *
-     * @param string $portName
-     */
-    public function setPortName($portName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPortName()
+    class Google_Service_Compute_RegionInstanceGroupsListInstancesRequest extends \Google\Service\Compute\RegionInstanceGroupsListInstancesRequest
     {
     }
 }

@@ -21,46 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel\Resource;
-
-/**
- * The "billableSkus" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudchannelService = new Google\Service\Cloudchannel(...);
- *   $billableSkus = $cloudchannelService->accounts_skuGroups_billableSkus;
- *  </code>
- */
-class AccountsSkuGroupsBillableSkus extends \Google\Service\Resource
-{
+namespace Google\Service\Cloudchannel\Resource {
+    use Google\Service\Cloudchannel\GoogleCloudChannelV1ListSkuGroupBillableSkusResponse;
     /**
-     * Lists the Billable SKUs in a given SKU group. Possible error codes:
-     * PERMISSION_DENIED: If the account making the request and the account being
-     * queried for are different, or the account doesn't exist. INVALID_ARGUMENT:
-     * Missing or invalid required parameters in the request. INTERNAL: Any non-user
-     * error related to technical issue in the backend. In this case, contact cloud
-     * channel support. Return Value: If successful, the BillableSku resources. The
-     * data for each resource is displayed in the ascending order of: *
-     * BillableSku.service_display_name * BillableSku.sku_display_name If
-     * unsuccessful, returns an error.
-     * (billableSkus.listAccountsSkuGroupsBillableSkus)
-     *
-     * @param string $parent Required. Resource name of the SKU group. Format:
-     * accounts/{account}/skuGroups/{sku_group}.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of SKUs to return. The
-     * service may return fewer than this value. If unspecified, returns a maximum
-     * of 100000 SKUs. The maximum value is 100000; values above 100000 will be
-     * coerced to 100000.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * beyond the first page. Obtained through
-     * ListSkuGroupBillableSkusResponse.next_page_token of the previous
-     * CloudChannelService.ListSkuGroupBillableSkus call.
-     * @return GoogleCloudChannelV1ListSkuGroupBillableSkusResponse
-     * @throws \Google\Service\Exception
+     * The "billableSkus" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudchannelService = new Google\Service\Cloudchannel(...);
+     *   $billableSkus = $cloudchannelService->accounts_skuGroups_billableSkus;
+     *  </code>
      */
-    public function listAccountsSkuGroupsBillableSkus($parent, $optParams = [])
+    class AccountsSkuGroupsBillableSkus extends \Google\Service\Resource
+    {
+        /**
+         * Lists the Billable SKUs in a given SKU group. Possible error codes:
+         * PERMISSION_DENIED: If the account making the request and the account being
+         * queried for are different, or the account doesn't exist. INVALID_ARGUMENT:
+         * Missing or invalid required parameters in the request. INTERNAL: Any non-user
+         * error related to technical issue in the backend. In this case, contact cloud
+         * channel support. Return Value: If successful, the BillableSku resources. The
+         * data for each resource is displayed in the ascending order of: *
+         * BillableSku.service_display_name * BillableSku.sku_display_name If
+         * unsuccessful, returns an error.
+         * (billableSkus.listAccountsSkuGroupsBillableSkus)
+         *
+         * @param string $parent Required. Resource name of the SKU group. Format:
+         * accounts/{account}/skuGroups/{sku_group}.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of SKUs to return. The
+         * service may return fewer than this value. If unspecified, returns a maximum
+         * of 100000 SKUs. The maximum value is 100000; values above 100000 will be
+         * coerced to 100000.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * beyond the first page. Obtained through
+         * ListSkuGroupBillableSkusResponse.next_page_token of the previous
+         * CloudChannelService.ListSkuGroupBillableSkus call.
+         * @return GoogleCloudChannelV1ListSkuGroupBillableSkusResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsSkuGroupsBillableSkus($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Cloudchannel\Resource\AccountsSkuGroupsBillableSkus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Cloudchannel_Resource_AccountsSkuGroupsBillableSkus extends \Google\Service\Cloudchannel\Resource\AccountsSkuGroupsBillableSkus
     {
     }
 }

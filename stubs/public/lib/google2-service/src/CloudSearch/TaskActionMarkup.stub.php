@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class TaskActionMarkup extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $reloadTasks;
-    /**
-     * @param bool
-     */
-    public function setReloadTasks($reloadTasks)
+namespace Google\Service\CloudSearch {
+    class TaskActionMarkup extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $reloadTasks;
+        /**
+         * @param bool
+         */
+        public function setReloadTasks($reloadTasks)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReloadTasks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\TaskActionMarkup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReloadTasks()
+    class Google_Service_CloudSearch_TaskActionMarkup extends \Google\Service\CloudSearch\TaskActionMarkup
     {
     }
 }

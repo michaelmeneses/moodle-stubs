@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ExperimentResult extends \Google\Collection
-{
-    protected $collection_key = 'versionMetrics';
-    /**
-     * The last time the experiment's stats data was updated. Will have default
-     * value if stats have never been computed for this experiment.
-     *
-     * @var string
-     */
-    public $lastUpdateTime;
-    protected $versionMetricsType = GoogleCloudDialogflowCxV3ExperimentResultVersionMetrics::class;
-    protected $versionMetricsDataType = 'array';
-    /**
-     * The last time the experiment's stats data was updated. Will have default
-     * value if stats have never been computed for this experiment.
-     *
-     * @param string $lastUpdateTime
-     */
-    public function setLastUpdateTime($lastUpdateTime)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ExperimentResult extends \Google\Collection
     {
+        protected $collection_key = 'versionMetrics';
+        /**
+         * The last time the experiment's stats data was updated. Will have default
+         * value if stats have never been computed for this experiment.
+         *
+         * @var string
+         */
+        public $lastUpdateTime;
+        protected $versionMetricsType = GoogleCloudDialogflowCxV3ExperimentResultVersionMetrics::class;
+        protected $versionMetricsDataType = 'array';
+        /**
+         * The last time the experiment's stats data was updated. Will have default
+         * value if stats have never been computed for this experiment.
+         *
+         * @param string $lastUpdateTime
+         */
+        public function setLastUpdateTime($lastUpdateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdateTime()
+        {
+        }
+        /**
+         * Version variants and metrics.
+         *
+         * @param GoogleCloudDialogflowCxV3ExperimentResultVersionMetrics[] $versionMetrics
+         */
+        public function setVersionMetrics($versionMetrics)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3ExperimentResultVersionMetrics[]
+         */
+        public function getVersionMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ExperimentResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastUpdateTime()
-    {
-    }
-    /**
-     * Version variants and metrics.
-     *
-     * @param GoogleCloudDialogflowCxV3ExperimentResultVersionMetrics[] $versionMetrics
-     */
-    public function setVersionMetrics($versionMetrics)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3ExperimentResultVersionMetrics[]
-     */
-    public function getVersionMetrics()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ExperimentResult extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ExperimentResult
     {
     }
 }

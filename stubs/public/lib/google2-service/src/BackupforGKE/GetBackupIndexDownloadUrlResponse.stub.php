@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BackupforGKE;
-
-class GetBackupIndexDownloadUrlResponse extends \Google\Model
-{
-    /**
-     * Required. The signed URL for downloading the backup index.
-     *
-     * @var string
-     */
-    public $signedUrl;
-    /**
-     * Required. The signed URL for downloading the backup index.
-     *
-     * @param string $signedUrl
-     */
-    public function setSignedUrl($signedUrl)
+namespace Google\Service\BackupforGKE {
+    class GetBackupIndexDownloadUrlResponse extends \Google\Model
     {
+        /**
+         * Required. The signed URL for downloading the backup index.
+         *
+         * @var string
+         */
+        public $signedUrl;
+        /**
+         * Required. The signed URL for downloading the backup index.
+         *
+         * @param string $signedUrl
+         */
+        public function setSignedUrl($signedUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSignedUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BackupforGKE\GetBackupIndexDownloadUrlResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSignedUrl()
+    class Google_Service_BackupforGKE_GetBackupIndexDownloadUrlResponse extends \Google\Service\BackupforGKE\GetBackupIndexDownloadUrlResponse
     {
     }
 }

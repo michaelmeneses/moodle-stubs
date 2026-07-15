@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ReservationSubBlocksReportFaultyRequestFaultReason extends \Google\Model
-{
-    public const BEHAVIOR_FAULT_BEHAVIOR_UNSPECIFIED = 'FAULT_BEHAVIOR_UNSPECIFIED';
-    /**
-     * The subBlock experienced a GPU error.
-     */
-    public const BEHAVIOR_GPU_ERROR = 'GPU_ERROR';
-    /**
-     * The subBlock experienced performance issues.
-     */
-    public const BEHAVIOR_PERFORMANCE = 'PERFORMANCE';
-    /**
-     * The subBlock experienced silent data corruption.
-     */
-    public const BEHAVIOR_SILENT_DATA_CORRUPTION = 'SILENT_DATA_CORRUPTION';
-    /**
-     * The subBlock experienced a switch failure.
-     */
-    public const BEHAVIOR_SWITCH_FAILURE = 'SWITCH_FAILURE';
-    /**
-     * The behavior of the fault experienced with the subBlock.
-     *
-     * @var string
-     */
-    public $behavior;
-    /**
-     * The description of the fault experienced with the subBlock.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The behavior of the fault experienced with the subBlock.
-     *
-     * Accepted values: FAULT_BEHAVIOR_UNSPECIFIED, GPU_ERROR, PERFORMANCE,
-     * SILENT_DATA_CORRUPTION, SWITCH_FAILURE
-     *
-     * @param self::BEHAVIOR_* $behavior
-     */
-    public function setBehavior($behavior)
+namespace Google\Service\Compute {
+    class ReservationSubBlocksReportFaultyRequestFaultReason extends \Google\Model
     {
+        public const BEHAVIOR_FAULT_BEHAVIOR_UNSPECIFIED = 'FAULT_BEHAVIOR_UNSPECIFIED';
+        /**
+         * The subBlock experienced a GPU error.
+         */
+        public const BEHAVIOR_GPU_ERROR = 'GPU_ERROR';
+        /**
+         * The subBlock experienced performance issues.
+         */
+        public const BEHAVIOR_PERFORMANCE = 'PERFORMANCE';
+        /**
+         * The subBlock experienced silent data corruption.
+         */
+        public const BEHAVIOR_SILENT_DATA_CORRUPTION = 'SILENT_DATA_CORRUPTION';
+        /**
+         * The subBlock experienced a switch failure.
+         */
+        public const BEHAVIOR_SWITCH_FAILURE = 'SWITCH_FAILURE';
+        /**
+         * The behavior of the fault experienced with the subBlock.
+         *
+         * @var string
+         */
+        public $behavior;
+        /**
+         * The description of the fault experienced with the subBlock.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The behavior of the fault experienced with the subBlock.
+         *
+         * Accepted values: FAULT_BEHAVIOR_UNSPECIFIED, GPU_ERROR, PERFORMANCE,
+         * SILENT_DATA_CORRUPTION, SWITCH_FAILURE
+         *
+         * @param self::BEHAVIOR_* $behavior
+         */
+        public function setBehavior($behavior)
+        {
+        }
+        /**
+         * @return self::BEHAVIOR_*
+         */
+        public function getBehavior()
+        {
+        }
+        /**
+         * The description of the fault experienced with the subBlock.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::BEHAVIOR_*
+     * Runtime class alias of \Google\Service\Compute\ReservationSubBlocksReportFaultyRequestFaultReason registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBehavior()
-    {
-    }
-    /**
-     * The description of the fault experienced with the subBlock.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
+    class Google_Service_Compute_ReservationSubBlocksReportFaultyRequestFaultReason extends \Google\Service\Compute\ReservationSubBlocksReportFaultyRequestFaultReason
     {
     }
 }

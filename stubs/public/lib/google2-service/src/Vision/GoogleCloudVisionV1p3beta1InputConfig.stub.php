@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p3beta1InputConfig extends \Google\Model
-{
-    /**
-     * File content, represented as a stream of bytes. Note: As with all `bytes`
-     * fields, protobuffers use a pure binary representation, whereas JSON
-     * representations use base64. Currently, this field only works for
-     * BatchAnnotateFiles requests. It does not work for AsyncBatchAnnotateFiles
-     * requests.
-     *
-     * @var string
-     */
-    public $content;
-    protected $gcsSourceType = GoogleCloudVisionV1p3beta1GcsSource::class;
-    protected $gcsSourceDataType = '';
-    /**
-     * The type of the file. Currently only "application/pdf", "image/tiff" and
-     * "image/gif" are supported. Wildcards are not supported.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * File content, represented as a stream of bytes. Note: As with all `bytes`
-     * fields, protobuffers use a pure binary representation, whereas JSON
-     * representations use base64. Currently, this field only works for
-     * BatchAnnotateFiles requests. It does not work for AsyncBatchAnnotateFiles
-     * requests.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p3beta1InputConfig extends \Google\Model
     {
+        /**
+         * File content, represented as a stream of bytes. Note: As with all `bytes`
+         * fields, protobuffers use a pure binary representation, whereas JSON
+         * representations use base64. Currently, this field only works for
+         * BatchAnnotateFiles requests. It does not work for AsyncBatchAnnotateFiles
+         * requests.
+         *
+         * @var string
+         */
+        public $content;
+        protected $gcsSourceType = GoogleCloudVisionV1p3beta1GcsSource::class;
+        protected $gcsSourceDataType = '';
+        /**
+         * The type of the file. Currently only "application/pdf", "image/tiff" and
+         * "image/gif" are supported. Wildcards are not supported.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * File content, represented as a stream of bytes. Note: As with all `bytes`
+         * fields, protobuffers use a pure binary representation, whereas JSON
+         * representations use base64. Currently, this field only works for
+         * BatchAnnotateFiles requests. It does not work for AsyncBatchAnnotateFiles
+         * requests.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * The Google Cloud Storage location to read the input from.
+         *
+         * @param GoogleCloudVisionV1p3beta1GcsSource $gcsSource
+         */
+        public function setGcsSource(GoogleCloudVisionV1p3beta1GcsSource $gcsSource)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p3beta1GcsSource
+         */
+        public function getGcsSource()
+        {
+        }
+        /**
+         * The type of the file. Currently only "application/pdf", "image/tiff" and
+         * "image/gif" are supported. Wildcards are not supported.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p3beta1InputConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * The Google Cloud Storage location to read the input from.
-     *
-     * @param GoogleCloudVisionV1p3beta1GcsSource $gcsSource
-     */
-    public function setGcsSource(GoogleCloudVisionV1p3beta1GcsSource $gcsSource)
-    {
-    }
-    /**
-     * @return GoogleCloudVisionV1p3beta1GcsSource
-     */
-    public function getGcsSource()
-    {
-    }
-    /**
-     * The type of the file. Currently only "application/pdf", "image/tiff" and
-     * "image/gif" are supported. Wildcards are not supported.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_Vision_GoogleCloudVisionV1p3beta1InputConfig extends \Google\Service\Vision\GoogleCloudVisionV1p3beta1InputConfig
     {
     }
 }

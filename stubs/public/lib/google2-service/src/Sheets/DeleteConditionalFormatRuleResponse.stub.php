@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DeleteConditionalFormatRuleResponse extends \Google\Model
-{
-    protected $ruleType = ConditionalFormatRule::class;
-    protected $ruleDataType = '';
-    /**
-     * The rule that was deleted.
-     *
-     * @param ConditionalFormatRule $rule
-     */
-    public function setRule(ConditionalFormatRule $rule)
+namespace Google\Service\Sheets {
+    class DeleteConditionalFormatRuleResponse extends \Google\Model
     {
+        protected $ruleType = ConditionalFormatRule::class;
+        protected $ruleDataType = '';
+        /**
+         * The rule that was deleted.
+         *
+         * @param ConditionalFormatRule $rule
+         */
+        public function setRule(ConditionalFormatRule $rule)
+        {
+        }
+        /**
+         * @return ConditionalFormatRule
+         */
+        public function getRule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConditionalFormatRule
+     * Runtime class alias of \Google\Service\Sheets\DeleteConditionalFormatRuleResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRule()
+    class Google_Service_Sheets_DeleteConditionalFormatRuleResponse extends \Google\Service\Sheets\DeleteConditionalFormatRuleResponse
     {
     }
 }

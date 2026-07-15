@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class ListClientConnectorServicesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $clientConnectorServicesType = ClientConnectorService::class;
-    protected $clientConnectorServicesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * @param ClientConnectorService[]
-     */
-    public function setClientConnectorServices($clientConnectorServices)
+namespace Google\Service\BeyondCorp {
+    class ListClientConnectorServicesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $clientConnectorServicesType = ClientConnectorService::class;
+        protected $clientConnectorServicesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * @param ClientConnectorService[]
+         */
+        public function setClientConnectorServices($clientConnectorServices)
+        {
+        }
+        /**
+         * @return ClientConnectorService[]
+         */
+        public function getClientConnectorServices()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClientConnectorService[]
+     * Runtime class alias of \Google\Service\BeyondCorp\ListClientConnectorServicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientConnectorServices()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_BeyondCorp_ListClientConnectorServicesResponse extends \Google\Service\BeyondCorp\ListClientConnectorServicesResponse
     {
     }
 }

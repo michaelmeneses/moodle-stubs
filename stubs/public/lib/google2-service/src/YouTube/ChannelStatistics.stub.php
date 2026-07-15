@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ChannelStatistics extends \Google\Model
-{
-    /**
-     * The number of comments for the channel.
-     *
-     * @var string
-     */
-    public $commentCount;
-    /**
-     * Whether or not the number of subscribers is shown for this user.
-     *
-     * @var bool
-     */
-    public $hiddenSubscriberCount;
-    /**
-     * The number of subscribers that the channel has.
-     *
-     * @var string
-     */
-    public $subscriberCount;
-    /**
-     * The number of videos uploaded to the channel.
-     *
-     * @var string
-     */
-    public $videoCount;
-    /**
-     * The number of times the channel has been viewed.
-     *
-     * @var string
-     */
-    public $viewCount;
-    /**
-     * The number of comments for the channel.
-     *
-     * @param string $commentCount
-     */
-    public function setCommentCount($commentCount)
+namespace Google\Service\YouTube {
+    class ChannelStatistics extends \Google\Model
     {
+        /**
+         * The number of comments for the channel.
+         *
+         * @var string
+         */
+        public $commentCount;
+        /**
+         * Whether or not the number of subscribers is shown for this user.
+         *
+         * @var bool
+         */
+        public $hiddenSubscriberCount;
+        /**
+         * The number of subscribers that the channel has.
+         *
+         * @var string
+         */
+        public $subscriberCount;
+        /**
+         * The number of videos uploaded to the channel.
+         *
+         * @var string
+         */
+        public $videoCount;
+        /**
+         * The number of times the channel has been viewed.
+         *
+         * @var string
+         */
+        public $viewCount;
+        /**
+         * The number of comments for the channel.
+         *
+         * @param string $commentCount
+         */
+        public function setCommentCount($commentCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommentCount()
+        {
+        }
+        /**
+         * Whether or not the number of subscribers is shown for this user.
+         *
+         * @param bool $hiddenSubscriberCount
+         */
+        public function setHiddenSubscriberCount($hiddenSubscriberCount)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHiddenSubscriberCount()
+        {
+        }
+        /**
+         * The number of subscribers that the channel has.
+         *
+         * @param string $subscriberCount
+         */
+        public function setSubscriberCount($subscriberCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubscriberCount()
+        {
+        }
+        /**
+         * The number of videos uploaded to the channel.
+         *
+         * @param string $videoCount
+         */
+        public function setVideoCount($videoCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVideoCount()
+        {
+        }
+        /**
+         * The number of times the channel has been viewed.
+         *
+         * @param string $viewCount
+         */
+        public function setViewCount($viewCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getViewCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\ChannelStatistics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommentCount()
-    {
-    }
-    /**
-     * Whether or not the number of subscribers is shown for this user.
-     *
-     * @param bool $hiddenSubscriberCount
-     */
-    public function setHiddenSubscriberCount($hiddenSubscriberCount)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHiddenSubscriberCount()
-    {
-    }
-    /**
-     * The number of subscribers that the channel has.
-     *
-     * @param string $subscriberCount
-     */
-    public function setSubscriberCount($subscriberCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubscriberCount()
-    {
-    }
-    /**
-     * The number of videos uploaded to the channel.
-     *
-     * @param string $videoCount
-     */
-    public function setVideoCount($videoCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVideoCount()
-    {
-    }
-    /**
-     * The number of times the channel has been viewed.
-     *
-     * @param string $viewCount
-     */
-    public function setViewCount($viewCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getViewCount()
+    class Google_Service_YouTube_ChannelStatistics extends \Google\Service\YouTube\ChannelStatistics
     {
     }
 }

@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ErrorProto extends \Google\Model
-{
-    /**
-     * Debugging information. This property is internal to Google and should not
-     * be used.
-     *
-     * @var string
-     */
-    public $debugInfo;
-    /**
-     * Specifies where the error occurred, if present.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * A human-readable description of the error.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * A short error code that summarizes the error.
-     *
-     * @var string
-     */
-    public $reason;
-    /**
-     * Debugging information. This property is internal to Google and should not
-     * be used.
-     *
-     * @param string $debugInfo
-     */
-    public function setDebugInfo($debugInfo)
+namespace Google\Service\Bigquery {
+    class ErrorProto extends \Google\Model
     {
+        /**
+         * Debugging information. This property is internal to Google and should not
+         * be used.
+         *
+         * @var string
+         */
+        public $debugInfo;
+        /**
+         * Specifies where the error occurred, if present.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * A human-readable description of the error.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * A short error code that summarizes the error.
+         *
+         * @var string
+         */
+        public $reason;
+        /**
+         * Debugging information. This property is internal to Google and should not
+         * be used.
+         *
+         * @param string $debugInfo
+         */
+        public function setDebugInfo($debugInfo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDebugInfo()
+        {
+        }
+        /**
+         * Specifies where the error occurred, if present.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * A human-readable description of the error.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * A short error code that summarizes the error.
+         *
+         * @param string $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\ErrorProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDebugInfo()
-    {
-    }
-    /**
-     * Specifies where the error occurred, if present.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * A human-readable description of the error.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * A short error code that summarizes the error.
-     *
-     * @param string $reason
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReason()
+    class Google_Service_Bigquery_ErrorProto extends \Google\Service\Bigquery\ErrorProto
     {
     }
 }

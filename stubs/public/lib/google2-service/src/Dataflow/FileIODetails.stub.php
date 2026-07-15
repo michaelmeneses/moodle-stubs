@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class FileIODetails extends \Google\Model
-{
-    /**
-     * File Pattern used to access files by the connector.
-     *
-     * @var string
-     */
-    public $filePattern;
-    /**
-     * File Pattern used to access files by the connector.
-     *
-     * @param string $filePattern
-     */
-    public function setFilePattern($filePattern)
+namespace Google\Service\Dataflow {
+    class FileIODetails extends \Google\Model
     {
+        /**
+         * File Pattern used to access files by the connector.
+         *
+         * @var string
+         */
+        public $filePattern;
+        /**
+         * File Pattern used to access files by the connector.
+         *
+         * @param string $filePattern
+         */
+        public function setFilePattern($filePattern)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilePattern()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\FileIODetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilePattern()
+    class Google_Service_Dataflow_FileIODetails extends \Google\Service\Dataflow\FileIODetails
     {
     }
 }

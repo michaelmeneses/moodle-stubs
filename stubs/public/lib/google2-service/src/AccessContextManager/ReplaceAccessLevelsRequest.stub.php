@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class ReplaceAccessLevelsRequest extends \Google\Collection
-{
-    protected $collection_key = 'accessLevels';
-    protected $accessLevelsType = AccessLevel::class;
-    protected $accessLevelsDataType = 'array';
-    /**
-     * Optional. The etag for the version of the Access Policy that this replace
-     * operation is to be performed on. If, at the time of replace, the etag for
-     * the Access Policy stored in Access Context Manager is different from the
-     * specified etag, then the replace operation will not be performed and the
-     * call will fail. This field is not required. If etag is not provided, the
-     * operation will be performed as if a valid etag is provided.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Required. The desired Access Levels that should replace all existing Access
-     * Levels in the Access Policy.
-     *
-     * @param AccessLevel[] $accessLevels
-     */
-    public function setAccessLevels($accessLevels)
+namespace Google\Service\AccessContextManager {
+    class ReplaceAccessLevelsRequest extends \Google\Collection
     {
+        protected $collection_key = 'accessLevels';
+        protected $accessLevelsType = AccessLevel::class;
+        protected $accessLevelsDataType = 'array';
+        /**
+         * Optional. The etag for the version of the Access Policy that this replace
+         * operation is to be performed on. If, at the time of replace, the etag for
+         * the Access Policy stored in Access Context Manager is different from the
+         * specified etag, then the replace operation will not be performed and the
+         * call will fail. This field is not required. If etag is not provided, the
+         * operation will be performed as if a valid etag is provided.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Required. The desired Access Levels that should replace all existing Access
+         * Levels in the Access Policy.
+         *
+         * @param AccessLevel[] $accessLevels
+         */
+        public function setAccessLevels($accessLevels)
+        {
+        }
+        /**
+         * @return AccessLevel[]
+         */
+        public function getAccessLevels()
+        {
+        }
+        /**
+         * Optional. The etag for the version of the Access Policy that this replace
+         * operation is to be performed on. If, at the time of replace, the etag for
+         * the Access Policy stored in Access Context Manager is different from the
+         * specified etag, then the replace operation will not be performed and the
+         * call will fail. This field is not required. If etag is not provided, the
+         * operation will be performed as if a valid etag is provided.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AccessLevel[]
+     * Runtime class alias of \Google\Service\AccessContextManager\ReplaceAccessLevelsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessLevels()
-    {
-    }
-    /**
-     * Optional. The etag for the version of the Access Policy that this replace
-     * operation is to be performed on. If, at the time of replace, the etag for
-     * the Access Policy stored in Access Context Manager is different from the
-     * specified etag, then the replace operation will not be performed and the
-     * call will fail. This field is not required. If etag is not provided, the
-     * operation will be performed as if a valid etag is provided.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
+    class Google_Service_AccessContextManager_ReplaceAccessLevelsRequest extends \Google\Service\AccessContextManager\ReplaceAccessLevelsRequest
     {
     }
 }

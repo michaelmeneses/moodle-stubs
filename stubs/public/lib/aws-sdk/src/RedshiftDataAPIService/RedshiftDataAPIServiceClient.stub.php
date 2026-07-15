@@ -8,6 +8,7 @@
  */
 namespace Aws\RedshiftDataAPIService;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Redshift Data API Service** service.
  * @method \Aws\Result batchExecuteStatement(array $args = [])

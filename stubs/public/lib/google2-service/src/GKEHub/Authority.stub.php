@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class Authority extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $identityProvider;
-    /**
-     * @var string
-     */
-    public $issuer;
-    /**
-     * @var string
-     */
-    public $oidcJwks;
-    /**
-     * @var string
-     */
-    public $workloadIdentityPool;
-    /**
-     * @param string
-     */
-    public function setIdentityProvider($identityProvider)
+namespace Google\Service\GKEHub {
+    class Authority extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $identityProvider;
+        /**
+         * @var string
+         */
+        public $issuer;
+        /**
+         * @var string
+         */
+        public $oidcJwks;
+        /**
+         * @var string
+         */
+        public $workloadIdentityPool;
+        /**
+         * @param string
+         */
+        public function setIdentityProvider($identityProvider)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdentityProvider()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIssuer($issuer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssuer()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOidcJwks($oidcJwks)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOidcJwks()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWorkloadIdentityPool($workloadIdentityPool)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkloadIdentityPool()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\Authority registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIdentityProvider()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIssuer($issuer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIssuer()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOidcJwks($oidcJwks)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOidcJwks()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWorkloadIdentityPool($workloadIdentityPool)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkloadIdentityPool()
+    class Google_Service_GKEHub_Authority extends \Google\Service\GKEHub\Authority
     {
     }
 }

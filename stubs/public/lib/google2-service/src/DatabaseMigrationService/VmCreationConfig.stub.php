@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class VmCreationConfig extends \Google\Model
-{
-    /**
-     * The subnet name the vm needs to be created in.
-     *
-     * @var string
-     */
-    public $subnet;
-    /**
-     * Required. VM instance machine type to create.
-     *
-     * @var string
-     */
-    public $vmMachineType;
-    /**
-     * The Google Cloud Platform zone to create the VM in.
-     *
-     * @var string
-     */
-    public $vmZone;
-    /**
-     * The subnet name the vm needs to be created in.
-     *
-     * @param string $subnet
-     */
-    public function setSubnet($subnet)
+namespace Google\Service\DatabaseMigrationService {
+    class VmCreationConfig extends \Google\Model
     {
+        /**
+         * The subnet name the vm needs to be created in.
+         *
+         * @var string
+         */
+        public $subnet;
+        /**
+         * Required. VM instance machine type to create.
+         *
+         * @var string
+         */
+        public $vmMachineType;
+        /**
+         * The Google Cloud Platform zone to create the VM in.
+         *
+         * @var string
+         */
+        public $vmZone;
+        /**
+         * The subnet name the vm needs to be created in.
+         *
+         * @param string $subnet
+         */
+        public function setSubnet($subnet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnet()
+        {
+        }
+        /**
+         * Required. VM instance machine type to create.
+         *
+         * @param string $vmMachineType
+         */
+        public function setVmMachineType($vmMachineType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVmMachineType()
+        {
+        }
+        /**
+         * The Google Cloud Platform zone to create the VM in.
+         *
+         * @param string $vmZone
+         */
+        public function setVmZone($vmZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVmZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\VmCreationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSubnet()
-    {
-    }
-    /**
-     * Required. VM instance machine type to create.
-     *
-     * @param string $vmMachineType
-     */
-    public function setVmMachineType($vmMachineType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVmMachineType()
-    {
-    }
-    /**
-     * The Google Cloud Platform zone to create the VM in.
-     *
-     * @param string $vmZone
-     */
-    public function setVmZone($vmZone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVmZone()
+    class Google_Service_DatabaseMigrationService_VmCreationConfig extends \Google\Service\DatabaseMigrationService\VmCreationConfig
     {
     }
 }

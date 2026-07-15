@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class LanguageTargeting extends \Google\Collection
-{
-    protected $collection_key = 'value';
-    /**
-     * Alternative languages.
-     *
-     * @var string[]
-     */
-    public $alternatives;
-    /**
-     * ISO-639: 2 or 3 letter language code.
-     *
-     * @var string[]
-     */
-    public $value;
-    /**
-     * Alternative languages.
-     *
-     * @param string[] $alternatives
-     */
-    public function setAlternatives($alternatives)
+namespace Google\Service\AndroidPublisher {
+    class LanguageTargeting extends \Google\Collection
     {
+        protected $collection_key = 'value';
+        /**
+         * Alternative languages.
+         *
+         * @var string[]
+         */
+        public $alternatives;
+        /**
+         * ISO-639: 2 or 3 letter language code.
+         *
+         * @var string[]
+         */
+        public $value;
+        /**
+         * Alternative languages.
+         *
+         * @param string[] $alternatives
+         */
+        public function setAlternatives($alternatives)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAlternatives()
+        {
+        }
+        /**
+         * ISO-639: 2 or 3 letter language code.
+         *
+         * @param string[] $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\LanguageTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlternatives()
-    {
-    }
-    /**
-     * ISO-639: 2 or 3 letter language code.
-     *
-     * @param string[] $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValue()
+    class Google_Service_AndroidPublisher_LanguageTargeting extends \Google\Service\AndroidPublisher\LanguageTargeting
     {
     }
 }

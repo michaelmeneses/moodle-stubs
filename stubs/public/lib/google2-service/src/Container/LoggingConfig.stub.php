@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class LoggingConfig extends \Google\Model
-{
-    protected $componentConfigType = LoggingComponentConfig::class;
-    protected $componentConfigDataType = '';
-    /**
-     * Logging components configuration
-     *
-     * @param LoggingComponentConfig $componentConfig
-     */
-    public function setComponentConfig(LoggingComponentConfig $componentConfig)
+namespace Google\Service\Container {
+    class LoggingConfig extends \Google\Model
     {
+        protected $componentConfigType = LoggingComponentConfig::class;
+        protected $componentConfigDataType = '';
+        /**
+         * Logging components configuration
+         *
+         * @param LoggingComponentConfig $componentConfig
+         */
+        public function setComponentConfig(LoggingComponentConfig $componentConfig)
+        {
+        }
+        /**
+         * @return LoggingComponentConfig
+         */
+        public function getComponentConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LoggingComponentConfig
+     * Runtime class alias of \Google\Service\Container\LoggingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComponentConfig()
+    class Google_Service_Container_LoggingConfig extends \Google\Service\Container\LoggingConfig
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteBackendDlpScanSummary extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $scanId;
-    /**
-     * @var bool
-     */
-    public $scanNotApplicableForContext;
-    /**
-     * @var string
-     */
-    public $scanOutcome;
-    /**
-     * @param string
-     */
-    public function setScanId($scanId)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteBackendDlpScanSummary extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $scanId;
+        /**
+         * @var bool
+         */
+        public $scanNotApplicableForContext;
+        /**
+         * @var string
+         */
+        public $scanOutcome;
+        /**
+         * @param string
+         */
+        public function setScanId($scanId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScanId()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setScanNotApplicableForContext($scanNotApplicableForContext)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getScanNotApplicableForContext()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setScanOutcome($scanOutcome)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScanOutcome()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteBackendDlpScanSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScanId()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setScanNotApplicableForContext($scanNotApplicableForContext)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getScanNotApplicableForContext()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setScanOutcome($scanOutcome)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScanOutcome()
+    class Google_Service_CloudSearch_AppsDynamiteBackendDlpScanSummary extends \Google\Service\CloudSearch\AppsDynamiteBackendDlpScanSummary
     {
     }
 }

@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class AppTargeting extends \Google\Model
-{
-    protected $mobileAppCategoryTargetingType = NumericTargetingDimension::class;
-    protected $mobileAppCategoryTargetingDataType = '';
-    protected $mobileAppTargetingType = StringTargetingDimension::class;
-    protected $mobileAppTargetingDataType = '';
-    /**
-     * Lists of included and excluded mobile app categories as defined in https://
-     * developers.google.com/adwords/api/docs/appendix/mobileappcategories.csv.
-     *
-     * @param NumericTargetingDimension $mobileAppCategoryTargeting
-     */
-    public function setMobileAppCategoryTargeting(NumericTargetingDimension $mobileAppCategoryTargeting)
+namespace Google\Service\RealTimeBidding {
+    class AppTargeting extends \Google\Model
     {
+        protected $mobileAppCategoryTargetingType = NumericTargetingDimension::class;
+        protected $mobileAppCategoryTargetingDataType = '';
+        protected $mobileAppTargetingType = StringTargetingDimension::class;
+        protected $mobileAppTargetingDataType = '';
+        /**
+         * Lists of included and excluded mobile app categories as defined in https://
+         * developers.google.com/adwords/api/docs/appendix/mobileappcategories.csv.
+         *
+         * @param NumericTargetingDimension $mobileAppCategoryTargeting
+         */
+        public function setMobileAppCategoryTargeting(NumericTargetingDimension $mobileAppCategoryTargeting)
+        {
+        }
+        /**
+         * @return NumericTargetingDimension
+         */
+        public function getMobileAppCategoryTargeting()
+        {
+        }
+        /**
+         * Targeted app IDs. App IDs can refer to those found in an app store or ones
+         * that are not published in an app store. A maximum of 30,000 app IDs can be
+         * targeted.
+         *
+         * @param StringTargetingDimension $mobileAppTargeting
+         */
+        public function setMobileAppTargeting(StringTargetingDimension $mobileAppTargeting)
+        {
+        }
+        /**
+         * @return StringTargetingDimension
+         */
+        public function getMobileAppTargeting()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NumericTargetingDimension
+     * Runtime class alias of \Google\Service\RealTimeBidding\AppTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMobileAppCategoryTargeting()
-    {
-    }
-    /**
-     * Targeted app IDs. App IDs can refer to those found in an app store or ones
-     * that are not published in an app store. A maximum of 30,000 app IDs can be
-     * targeted.
-     *
-     * @param StringTargetingDimension $mobileAppTargeting
-     */
-    public function setMobileAppTargeting(StringTargetingDimension $mobileAppTargeting)
-    {
-    }
-    /**
-     * @return StringTargetingDimension
-     */
-    public function getMobileAppTargeting()
+    class Google_Service_RealTimeBidding_AppTargeting extends \Google\Service\RealTimeBidding\AppTargeting
     {
     }
 }

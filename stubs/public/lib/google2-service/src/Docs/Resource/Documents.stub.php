@@ -21,76 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs\Resource;
-
-/**
- * The "documents" collection of methods.
- * Typical usage is:
- *  <code>
- *   $docsService = new Google\Service\Docs(...);
- *   $documents = $docsService->documents;
- *  </code>
- */
-class Documents extends \Google\Service\Resource
-{
+namespace Google\Service\Docs\Resource {
+    use Google\Service\Docs\BatchUpdateDocumentRequest;
+    use Google\Service\Docs\BatchUpdateDocumentResponse;
+    use Google\Service\Docs\Document;
     /**
-     * Applies one or more updates to the document. Each request is validated before
-     * being applied. If any request is not valid, then the entire request will fail
-     * and nothing will be applied. Some requests have replies to give you some
-     * information about how they are applied. Other requests do not need to return
-     * information; these each return an empty reply. The order of replies matches
-     * that of the requests. For example, suppose you call batchUpdate with four
-     * updates, and only the third one returns information. The response would have
-     * two empty replies, the reply to the third request, and another empty reply,
-     * in that order. Because other users may be editing the document, the document
-     * might not exactly reflect your changes: your changes may be altered with
-     * respect to collaborator changes. If there are no collaborators, the document
-     * should reflect your changes. In any case, the updates in your request are
-     * guaranteed to be applied together atomically. (documents.batchUpdate)
-     *
-     * @param string $documentId The ID of the document to update.
-     * @param BatchUpdateDocumentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return BatchUpdateDocumentResponse
-     * @throws \Google\Service\Exception
+     * The "documents" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $docsService = new Google\Service\Docs(...);
+     *   $documents = $docsService->documents;
+     *  </code>
      */
-    public function batchUpdate($documentId, BatchUpdateDocumentRequest $postBody, $optParams = [])
+    class Documents extends \Google\Service\Resource
     {
+        /**
+         * Applies one or more updates to the document. Each request is validated before
+         * being applied. If any request is not valid, then the entire request will fail
+         * and nothing will be applied. Some requests have replies to give you some
+         * information about how they are applied. Other requests do not need to return
+         * information; these each return an empty reply. The order of replies matches
+         * that of the requests. For example, suppose you call batchUpdate with four
+         * updates, and only the third one returns information. The response would have
+         * two empty replies, the reply to the third request, and another empty reply,
+         * in that order. Because other users may be editing the document, the document
+         * might not exactly reflect your changes: your changes may be altered with
+         * respect to collaborator changes. If there are no collaborators, the document
+         * should reflect your changes. In any case, the updates in your request are
+         * guaranteed to be applied together atomically. (documents.batchUpdate)
+         *
+         * @param string $documentId The ID of the document to update.
+         * @param BatchUpdateDocumentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return BatchUpdateDocumentResponse
+         * @throws \Google\Service\Exception
+         */
+        public function batchUpdate($documentId, BatchUpdateDocumentRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Creates a blank document using the title given in the request. Other fields
+         * in the request, including any provided content, are ignored. Returns the
+         * created document. (documents.create)
+         *
+         * @param Document $postBody
+         * @param array $optParams Optional parameters.
+         * @return Document
+         * @throws \Google\Service\Exception
+         */
+        public function create(Document $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets the latest version of the specified document. (documents.get)
+         *
+         * @param string $documentId The ID of the document to retrieve.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool includeTabsContent Whether to populate the Document.tabs
+         * field instead of the text content fields like `body` and `documentStyle` on
+         * Document. - When `True`: Document content populates in the Document.tabs
+         * field instead of the text content fields in Document. - When `False`: The
+         * content of the document's first tab populates the content fields in Document
+         * excluding Document.tabs. If a document has only one tab, then that tab is
+         * used to populate the document content. Document.tabs will be empty.
+         * @opt_param string suggestionsViewMode The suggestions view mode to apply to
+         * the document. This allows viewing the document with all suggestions inline,
+         * accepted or rejected. If one is not specified, DEFAULT_FOR_CURRENT_ACCESS is
+         * used.
+         * @return Document
+         * @throws \Google\Service\Exception
+         */
+        public function get($documentId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Creates a blank document using the title given in the request. Other fields
-     * in the request, including any provided content, are ignored. Returns the
-     * created document. (documents.create)
-     *
-     * @param Document $postBody
-     * @param array $optParams Optional parameters.
-     * @return Document
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Docs\Resource\Documents registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function create(Document $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Gets the latest version of the specified document. (documents.get)
-     *
-     * @param string $documentId The ID of the document to retrieve.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool includeTabsContent Whether to populate the Document.tabs
-     * field instead of the text content fields like `body` and `documentStyle` on
-     * Document. - When `True`: Document content populates in the Document.tabs
-     * field instead of the text content fields in Document. - When `False`: The
-     * content of the document's first tab populates the content fields in Document
-     * excluding Document.tabs. If a document has only one tab, then that tab is
-     * used to populate the document content. Document.tabs will be empty.
-     * @opt_param string suggestionsViewMode The suggestions view mode to apply to
-     * the document. This allows viewing the document with all suggestions inline,
-     * accepted or rejected. If one is not specified, DEFAULT_FOR_CURRENT_ACCESS is
-     * used.
-     * @return Document
-     * @throws \Google\Service\Exception
-     */
-    public function get($documentId, $optParams = [])
+    class Google_Service_Docs_Resource_Documents extends \Google\Service\Docs\Resource\Documents
     {
     }
 }

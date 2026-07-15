@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DocumentLocation extends \Google\Model
-{
-    /**
-     * Offset of the line, from the beginning of the file, where the finding is
-     * located.
-     *
-     * @var string
-     */
-    public $fileOffset;
-    /**
-     * Offset of the line, from the beginning of the file, where the finding is
-     * located.
-     *
-     * @param string $fileOffset
-     */
-    public function setFileOffset($fileOffset)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DocumentLocation extends \Google\Model
     {
+        /**
+         * Offset of the line, from the beginning of the file, where the finding is
+         * located.
+         *
+         * @var string
+         */
+        public $fileOffset;
+        /**
+         * Offset of the line, from the beginning of the file, where the finding is
+         * located.
+         *
+         * @param string $fileOffset
+         */
+        public function setFileOffset($fileOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileOffset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DocumentLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileOffset()
+    class Google_Service_DLP_GooglePrivacyDlpV2DocumentLocation extends \Google\Service\DLP\GooglePrivacyDlpV2DocumentLocation
     {
     }
 }

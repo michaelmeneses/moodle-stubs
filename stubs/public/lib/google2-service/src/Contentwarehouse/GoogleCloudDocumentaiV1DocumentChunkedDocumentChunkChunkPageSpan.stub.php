@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageSpan extends \Google\Model
-{
-    /**
-     * Page where chunk ends in the document.
-     *
-     * @var int
-     */
-    public $pageEnd;
-    /**
-     * Page where chunk starts in the document.
-     *
-     * @var int
-     */
-    public $pageStart;
-    /**
-     * Page where chunk ends in the document.
-     *
-     * @param int $pageEnd
-     */
-    public function setPageEnd($pageEnd)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageSpan extends \Google\Model
     {
+        /**
+         * Page where chunk ends in the document.
+         *
+         * @var int
+         */
+        public $pageEnd;
+        /**
+         * Page where chunk starts in the document.
+         *
+         * @var int
+         */
+        public $pageStart;
+        /**
+         * Page where chunk ends in the document.
+         *
+         * @param int $pageEnd
+         */
+        public function setPageEnd($pageEnd)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageEnd()
+        {
+        }
+        /**
+         * Page where chunk starts in the document.
+         *
+         * @param int $pageStart
+         */
+        public function setPageStart($pageStart)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageStart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageSpan registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageEnd()
-    {
-    }
-    /**
-     * Page where chunk starts in the document.
-     *
-     * @param int $pageStart
-     */
-    public function setPageStart($pageStart)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPageStart()
+    class Google_Service_Contentwarehouse_GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageSpan extends \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageSpan
     {
     }
 }

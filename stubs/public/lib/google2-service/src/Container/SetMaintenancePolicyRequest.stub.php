@@ -21,115 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class SetMaintenancePolicyRequest extends \Google\Model
-{
-    /**
-     * Required. The name of the cluster to update.
-     *
-     * @var string
-     */
-    public $clusterId;
-    protected $maintenancePolicyType = MaintenancePolicy::class;
-    protected $maintenancePolicyDataType = '';
-    /**
-     * The name (project, location, cluster name) of the cluster to set
-     * maintenance policy. Specified in the format `projects/locations/clusters`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The Google Developers Console [project ID or project
-     * number](https://cloud.google.com/resource-manager/docs/creating-managing-
-     * projects).
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Required. The name of the Google Compute Engine
-     * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
-     * cluster resides.
-     *
-     * @var string
-     */
-    public $zone;
-    /**
-     * Required. The name of the cluster to update.
-     *
-     * @param string $clusterId
-     */
-    public function setClusterId($clusterId)
+namespace Google\Service\Container {
+    class SetMaintenancePolicyRequest extends \Google\Model
     {
+        /**
+         * Required. The name of the cluster to update.
+         *
+         * @var string
+         */
+        public $clusterId;
+        protected $maintenancePolicyType = MaintenancePolicy::class;
+        protected $maintenancePolicyDataType = '';
+        /**
+         * The name (project, location, cluster name) of the cluster to set
+         * maintenance policy. Specified in the format `projects/locations/clusters`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The Google Developers Console [project ID or project
+         * number](https://cloud.google.com/resource-manager/docs/creating-managing-
+         * projects).
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Required. The name of the Google Compute Engine
+         * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
+         * cluster resides.
+         *
+         * @var string
+         */
+        public $zone;
+        /**
+         * Required. The name of the cluster to update.
+         *
+         * @param string $clusterId
+         */
+        public function setClusterId($clusterId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterId()
+        {
+        }
+        /**
+         * Required. The maintenance policy to be set for the cluster. An empty field
+         * clears the existing maintenance policy.
+         *
+         * @param MaintenancePolicy $maintenancePolicy
+         */
+        public function setMaintenancePolicy(MaintenancePolicy $maintenancePolicy)
+        {
+        }
+        /**
+         * @return MaintenancePolicy
+         */
+        public function getMaintenancePolicy()
+        {
+        }
+        /**
+         * The name (project, location, cluster name) of the cluster to set
+         * maintenance policy. Specified in the format `projects/locations/clusters`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. The Google Developers Console [project ID or project
+         * number](https://cloud.google.com/resource-manager/docs/creating-managing-
+         * projects).
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Required. The name of the Google Compute Engine
+         * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
+         * cluster resides.
+         *
+         * @param string $zone
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\SetMaintenancePolicyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterId()
-    {
-    }
-    /**
-     * Required. The maintenance policy to be set for the cluster. An empty field
-     * clears the existing maintenance policy.
-     *
-     * @param MaintenancePolicy $maintenancePolicy
-     */
-    public function setMaintenancePolicy(MaintenancePolicy $maintenancePolicy)
-    {
-    }
-    /**
-     * @return MaintenancePolicy
-     */
-    public function getMaintenancePolicy()
-    {
-    }
-    /**
-     * The name (project, location, cluster name) of the cluster to set
-     * maintenance policy. Specified in the format `projects/locations/clusters`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. The Google Developers Console [project ID or project
-     * number](https://cloud.google.com/resource-manager/docs/creating-managing-
-     * projects).
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Required. The name of the Google Compute Engine
-     * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
-     * cluster resides.
-     *
-     * @param string $zone
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_Container_SetMaintenancePolicyRequest extends \Google\Service\Container\SetMaintenancePolicyRequest
     {
     }
 }

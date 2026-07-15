@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta3HumanReviewStatus extends \Google\Model
-{
-    /**
-     * Human review state is unspecified. Most likely due to an internal error.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Human review is skipped for the document. This can happen because human
-     * review isn't enabled on the processor or the processing request has been
-     * set to skip this document.
-     */
-    public const STATE_SKIPPED = 'SKIPPED';
-    /**
-     * Human review validation is triggered and passed, so no review is needed.
-     */
-    public const STATE_VALIDATION_PASSED = 'VALIDATION_PASSED';
-    /**
-     * Human review validation is triggered and the document is under review.
-     */
-    public const STATE_IN_PROGRESS = 'IN_PROGRESS';
-    /**
-     * Some error happened during triggering human review, see the state_message
-     * for details.
-     */
-    public const STATE_ERROR = 'ERROR';
-    /**
-     * The name of the operation triggered by the processed document. This field
-     * is populated only when the state is `HUMAN_REVIEW_IN_PROGRESS`. It has the
-     * same response type and metadata as the long-running operation returned by
-     * ReviewDocument.
-     *
-     * @var string
-     */
-    public $humanReviewOperation;
-    /**
-     * The state of human review on the processing request.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * A message providing more details about the human review state.
-     *
-     * @var string
-     */
-    public $stateMessage;
-    /**
-     * The name of the operation triggered by the processed document. This field
-     * is populated only when the state is `HUMAN_REVIEW_IN_PROGRESS`. It has the
-     * same response type and metadata as the long-running operation returned by
-     * ReviewDocument.
-     *
-     * @param string $humanReviewOperation
-     */
-    public function setHumanReviewOperation($humanReviewOperation)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta3HumanReviewStatus extends \Google\Model
     {
+        /**
+         * Human review state is unspecified. Most likely due to an internal error.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Human review is skipped for the document. This can happen because human
+         * review isn't enabled on the processor or the processing request has been
+         * set to skip this document.
+         */
+        public const STATE_SKIPPED = 'SKIPPED';
+        /**
+         * Human review validation is triggered and passed, so no review is needed.
+         */
+        public const STATE_VALIDATION_PASSED = 'VALIDATION_PASSED';
+        /**
+         * Human review validation is triggered and the document is under review.
+         */
+        public const STATE_IN_PROGRESS = 'IN_PROGRESS';
+        /**
+         * Some error happened during triggering human review, see the state_message
+         * for details.
+         */
+        public const STATE_ERROR = 'ERROR';
+        /**
+         * The name of the operation triggered by the processed document. This field
+         * is populated only when the state is `HUMAN_REVIEW_IN_PROGRESS`. It has the
+         * same response type and metadata as the long-running operation returned by
+         * ReviewDocument.
+         *
+         * @var string
+         */
+        public $humanReviewOperation;
+        /**
+         * The state of human review on the processing request.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * A message providing more details about the human review state.
+         *
+         * @var string
+         */
+        public $stateMessage;
+        /**
+         * The name of the operation triggered by the processed document. This field
+         * is populated only when the state is `HUMAN_REVIEW_IN_PROGRESS`. It has the
+         * same response type and metadata as the long-running operation returned by
+         * ReviewDocument.
+         *
+         * @param string $humanReviewOperation
+         */
+        public function setHumanReviewOperation($humanReviewOperation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHumanReviewOperation()
+        {
+        }
+        /**
+         * The state of human review on the processing request.
+         *
+         * Accepted values: STATE_UNSPECIFIED, SKIPPED, VALIDATION_PASSED,
+         * IN_PROGRESS, ERROR
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * A message providing more details about the human review state.
+         *
+         * @param string $stateMessage
+         */
+        public function setStateMessage($stateMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStateMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta3HumanReviewStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHumanReviewOperation()
-    {
-    }
-    /**
-     * The state of human review on the processing request.
-     *
-     * Accepted values: STATE_UNSPECIFIED, SKIPPED, VALIDATION_PASSED,
-     * IN_PROGRESS, ERROR
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * A message providing more details about the human review state.
-     *
-     * @param string $stateMessage
-     */
-    public function setStateMessage($stateMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStateMessage()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta3HumanReviewStatus extends \Google\Service\Document\GoogleCloudDocumentaiV1beta3HumanReviewStatus
     {
     }
 }

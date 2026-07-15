@@ -21,84 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher\Resource;
-
-/**
- * The "images" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $images = $androidpublisherService->edits_images;
- *  </code>
- */
-class EditsImages extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidPublisher\Resource {
+    use Google\Service\AndroidPublisher\ImagesDeleteAllResponse;
+    use Google\Service\AndroidPublisher\ImagesListResponse;
+    use Google\Service\AndroidPublisher\ImagesUploadResponse;
     /**
-     * Deletes the image (specified by id) from the edit. (images.delete)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param string $language Language localization code (a BCP-47 language tag;
-     * for example, "de-AT" for Austrian German).
-     * @param string $imageType Type of the Image.
-     * @param string $imageId Unique identifier an image within the set of images
-     * attached to this edit.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "images" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
+     *   $images = $androidpublisherService->edits_images;
+     *  </code>
      */
-    public function delete($packageName, $editId, $language, $imageType, $imageId, $optParams = [])
+    class EditsImages extends \Google\Service\Resource
     {
+        /**
+         * Deletes the image (specified by id) from the edit. (images.delete)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param string $language Language localization code (a BCP-47 language tag;
+         * for example, "de-AT" for Austrian German).
+         * @param string $imageType Type of the Image.
+         * @param string $imageId Unique identifier an image within the set of images
+         * attached to this edit.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($packageName, $editId, $language, $imageType, $imageId, $optParams = [])
+        {
+        }
+        /**
+         * Deletes all images for the specified language and image type. Returns an
+         * empty response if no images are found. (images.deleteall)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param string $language Language localization code (a BCP-47 language tag;
+         * for example, "de-AT" for Austrian German). Providing a language that is not
+         * supported by the App is a no-op.
+         * @param string $imageType Type of the Image. Providing an image type that
+         * refers to no images is a no-op.
+         * @param array $optParams Optional parameters.
+         * @return ImagesDeleteAllResponse
+         * @throws \Google\Service\Exception
+         */
+        public function deleteall($packageName, $editId, $language, $imageType, $optParams = [])
+        {
+        }
+        /**
+         * Lists all images. The response may be empty. (images.listEditsImages)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param string $language Language localization code (a BCP-47 language tag;
+         * for example, "de-AT" for Austrian German). There must be a store listing for
+         * the specified language.
+         * @param string $imageType Type of the Image. Providing an image type that
+         * refers to no images will return an empty response.
+         * @param array $optParams Optional parameters.
+         * @return ImagesListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listEditsImages($packageName, $editId, $language, $imageType, $optParams = [])
+        {
+        }
+        /**
+         * Uploads an image of the specified language and image type, and adds to the
+         * edit. (images.upload)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param string $language Language localization code (a BCP-47 language tag;
+         * for example, "de-AT" for Austrian German). Providing a language that is not
+         * supported by the App is a no-op.
+         * @param string $imageType Type of the Image.
+         * @param array $optParams Optional parameters.
+         * @return ImagesUploadResponse
+         * @throws \Google\Service\Exception
+         */
+        public function upload($packageName, $editId, $language, $imageType, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes all images for the specified language and image type. Returns an
-     * empty response if no images are found. (images.deleteall)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param string $language Language localization code (a BCP-47 language tag;
-     * for example, "de-AT" for Austrian German). Providing a language that is not
-     * supported by the App is a no-op.
-     * @param string $imageType Type of the Image. Providing an image type that
-     * refers to no images is a no-op.
-     * @param array $optParams Optional parameters.
-     * @return ImagesDeleteAllResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidPublisher\Resource\EditsImages registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function deleteall($packageName, $editId, $language, $imageType, $optParams = [])
-    {
-    }
-    /**
-     * Lists all images. The response may be empty. (images.listEditsImages)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param string $language Language localization code (a BCP-47 language tag;
-     * for example, "de-AT" for Austrian German). There must be a store listing for
-     * the specified language.
-     * @param string $imageType Type of the Image. Providing an image type that
-     * refers to no images will return an empty response.
-     * @param array $optParams Optional parameters.
-     * @return ImagesListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listEditsImages($packageName, $editId, $language, $imageType, $optParams = [])
-    {
-    }
-    /**
-     * Uploads an image of the specified language and image type, and adds to the
-     * edit. (images.upload)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param string $language Language localization code (a BCP-47 language tag;
-     * for example, "de-AT" for Austrian German). Providing a language that is not
-     * supported by the App is a no-op.
-     * @param string $imageType Type of the Image.
-     * @param array $optParams Optional parameters.
-     * @return ImagesUploadResponse
-     * @throws \Google\Service\Exception
-     */
-    public function upload($packageName, $editId, $language, $imageType, $optParams = [])
+    class Google_Service_AndroidPublisher_Resource_EditsImages extends \Google\Service\AndroidPublisher\Resource\EditsImages
     {
     }
 }

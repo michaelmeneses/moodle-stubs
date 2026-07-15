@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Css;
-
-class ListCssProductsResponse extends \Google\Collection
-{
-    protected $collection_key = 'cssProducts';
-    protected $cssProductsType = CssProduct::class;
-    protected $cssProductsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The processed CSS products from the specified account. These are your
-     * processed CSS products after applying rules and supplemental feeds.
-     *
-     * @param CssProduct[] $cssProducts
-     */
-    public function setCssProducts($cssProducts)
+namespace Google\Service\Css {
+    class ListCssProductsResponse extends \Google\Collection
     {
+        protected $collection_key = 'cssProducts';
+        protected $cssProductsType = CssProduct::class;
+        protected $cssProductsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The processed CSS products from the specified account. These are your
+         * processed CSS products after applying rules and supplemental feeds.
+         *
+         * @param CssProduct[] $cssProducts
+         */
+        public function setCssProducts($cssProducts)
+        {
+        }
+        /**
+         * @return CssProduct[]
+         */
+        public function getCssProducts()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CssProduct[]
+     * Runtime class alias of \Google\Service\Css\ListCssProductsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCssProducts()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Css_ListCssProductsResponse extends \Google\Service\Css\ListCssProductsResponse
     {
     }
 }

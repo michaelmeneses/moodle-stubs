@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class CardBarcodeSectionDetails extends \Google\Model
-{
-    protected $firstBottomDetailType = BarcodeSectionDetail::class;
-    protected $firstBottomDetailDataType = '';
-    protected $firstTopDetailType = BarcodeSectionDetail::class;
-    protected $firstTopDetailDataType = '';
-    protected $secondTopDetailType = BarcodeSectionDetail::class;
-    protected $secondTopDetailDataType = '';
-    /**
-     * Optional information to display below the barcode.
-     *
-     * @param BarcodeSectionDetail $firstBottomDetail
-     */
-    public function setFirstBottomDetail(BarcodeSectionDetail $firstBottomDetail)
+namespace Google\Service\Walletobjects {
+    class CardBarcodeSectionDetails extends \Google\Model
     {
+        protected $firstBottomDetailType = BarcodeSectionDetail::class;
+        protected $firstBottomDetailDataType = '';
+        protected $firstTopDetailType = BarcodeSectionDetail::class;
+        protected $firstTopDetailDataType = '';
+        protected $secondTopDetailType = BarcodeSectionDetail::class;
+        protected $secondTopDetailDataType = '';
+        /**
+         * Optional information to display below the barcode.
+         *
+         * @param BarcodeSectionDetail $firstBottomDetail
+         */
+        public function setFirstBottomDetail(BarcodeSectionDetail $firstBottomDetail)
+        {
+        }
+        /**
+         * @return BarcodeSectionDetail
+         */
+        public function getFirstBottomDetail()
+        {
+        }
+        /**
+         * Optional information to display above the barcode. If `secondTopDetail` is
+         * defined, this will be displayed to the start side of this detail section.
+         *
+         * @param BarcodeSectionDetail $firstTopDetail
+         */
+        public function setFirstTopDetail(BarcodeSectionDetail $firstTopDetail)
+        {
+        }
+        /**
+         * @return BarcodeSectionDetail
+         */
+        public function getFirstTopDetail()
+        {
+        }
+        /**
+         * Optional second piece of information to display above the barcode. If
+         * `firstTopDetail` is defined, this will be displayed to the end side of this
+         * detail section.
+         *
+         * @param BarcodeSectionDetail $secondTopDetail
+         */
+        public function setSecondTopDetail(BarcodeSectionDetail $secondTopDetail)
+        {
+        }
+        /**
+         * @return BarcodeSectionDetail
+         */
+        public function getSecondTopDetail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BarcodeSectionDetail
+     * Runtime class alias of \Google\Service\Walletobjects\CardBarcodeSectionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirstBottomDetail()
-    {
-    }
-    /**
-     * Optional information to display above the barcode. If `secondTopDetail` is
-     * defined, this will be displayed to the start side of this detail section.
-     *
-     * @param BarcodeSectionDetail $firstTopDetail
-     */
-    public function setFirstTopDetail(BarcodeSectionDetail $firstTopDetail)
-    {
-    }
-    /**
-     * @return BarcodeSectionDetail
-     */
-    public function getFirstTopDetail()
-    {
-    }
-    /**
-     * Optional second piece of information to display above the barcode. If
-     * `firstTopDetail` is defined, this will be displayed to the end side of this
-     * detail section.
-     *
-     * @param BarcodeSectionDetail $secondTopDetail
-     */
-    public function setSecondTopDetail(BarcodeSectionDetail $secondTopDetail)
-    {
-    }
-    /**
-     * @return BarcodeSectionDetail
-     */
-    public function getSecondTopDetail()
+    class Google_Service_Walletobjects_CardBarcodeSectionDetails extends \Google\Service\Walletobjects\CardBarcodeSectionDetails
     {
     }
 }

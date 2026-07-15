@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class ListBigQueryExportsResponse extends \Google\Collection
-{
-    protected $collection_key = 'bigQueryExports';
-    protected $bigQueryExportsType = GoogleCloudSecuritycenterV1BigQueryExport::class;
-    protected $bigQueryExportsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The BigQuery exports from the specified parent.
-     *
-     * @param GoogleCloudSecuritycenterV1BigQueryExport[] $bigQueryExports
-     */
-    public function setBigQueryExports($bigQueryExports)
+namespace Google\Service\SecurityCommandCenter {
+    class ListBigQueryExportsResponse extends \Google\Collection
     {
+        protected $collection_key = 'bigQueryExports';
+        protected $bigQueryExportsType = GoogleCloudSecuritycenterV1BigQueryExport::class;
+        protected $bigQueryExportsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The BigQuery exports from the specified parent.
+         *
+         * @param GoogleCloudSecuritycenterV1BigQueryExport[] $bigQueryExports
+         */
+        public function setBigQueryExports($bigQueryExports)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV1BigQueryExport[]
+         */
+        public function getBigQueryExports()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV1BigQueryExport[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\ListBigQueryExportsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigQueryExports()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_SecurityCommandCenter_ListBigQueryExportsResponse extends \Google\Service\SecurityCommandCenter\ListBigQueryExportsResponse
     {
     }
 }

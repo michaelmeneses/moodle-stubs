@@ -23,6 +23,17 @@
  */
 namespace Google\Auth;
 
+use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
+use Google\Auth\HttpHandler\HttpClientCache;
+use Google\Auth\HttpHandler\HttpHandlerFactory;
+use GuzzleHttp\Psr7\Query;
+use GuzzleHttp\Psr7\Request;
+use GuzzleHttp\Psr7\Utils;
+use InvalidArgumentException;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\UriInterface;
 /**
  * OAuth2 supports authentication by OAuth2 2-legged flows.
  *

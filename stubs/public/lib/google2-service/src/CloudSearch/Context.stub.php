@@ -21,257 +21,266 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Context extends \Google\Collection
-{
-    protected $collection_key = 'type';
-    /**
-     * [Optional] App where the card should be shown. If missing, the card will be
-     * shown in TOPAZ.
-     *
-     * @var string[]
-     */
-    public $app;
-    /**
-     * [Optional] Day of week when the card should be shown, where 0 is Monday.
-     *
-     * @var int[]
-     */
-    public $dayOfWeek;
-    /**
-     * [Optional] Date (in seconds since epoch) when the card should stop being
-     * shown. If missing, end_date_sec will be set to Jan 1st, 2100.
-     *
-     * @var string
-     */
-    public $endDateSec;
-    /**
-     * [Optional] End time in seconds, within a day, when the card should stop
-     * being shown if it's within [start_date_sec, end_date_sec]. If missing, this
-     * is set to 86400 (24 hours x 3600 sec/hour), i.e., midnight next day.
-     *
-     * @var string
-     */
-    public $endDayOffsetSec;
-    /**
-     * [Optional] The locales for which the card should be triggered (e.g., en_US
-     * and en_CA). If missing, the card is going to show to clients regardless of
-     * their locale.
-     *
-     * @var string[]
-     */
-    public $locale;
-    /**
-     * [Optional] Text-free locations where the card should be shown. This is
-     * expected to match the user's location in focus. If no location is
-     * specified, the card will be shown for any location.
-     *
-     * @var string[]
-     */
-    public $location;
-    /**
-     * [Required only for Answer and RHS cards - will be ignored for Homepage]
-     * cards. It's the exact case-insensitive queries that will trigger the Answer
-     * or RHS card.
-     *
-     * @var string[]
-     */
-    public $query;
-    /**
-     * [Optional] Date (in seconds since epoch) when the card should start being
-     * shown. If missing, start_date_sec will be Jan 1st, 1970 UTC.
-     *
-     * @var string
-     */
-    public $startDateSec;
-    /**
-     * [Optional] Start time in seconds, within a day, when the card should be
-     * shown if it's within [start_date_sec, end_date_sec]. If 0, the card will be
-     * shown from 12:00am on.
-     *
-     * @var string
-     */
-    public $startDayOffsetSec;
-    /**
-     * [Optional] Surface where the card should be shown in. If missing, the card
-     * will be shown in any surface.
-     *
-     * @var string[]
-     */
-    public $surface;
-    /**
-     * [Required] Type of the card (homepage, Answer or RHS).
-     *
-     * @var string[]
-     */
-    public $type;
-    /**
-     * [Optional] App where the card should be shown. If missing, the card will be
-     * shown in TOPAZ.
-     *
-     * @param string[] $app
-     */
-    public function setApp($app)
+namespace Google\Service\CloudSearch {
+    class Context extends \Google\Collection
     {
+        protected $collection_key = 'type';
+        /**
+         * [Optional] App where the card should be shown. If missing, the card will be
+         * shown in TOPAZ.
+         *
+         * @var string[]
+         */
+        public $app;
+        /**
+         * [Optional] Day of week when the card should be shown, where 0 is Monday.
+         *
+         * @var int[]
+         */
+        public $dayOfWeek;
+        /**
+         * [Optional] Date (in seconds since epoch) when the card should stop being
+         * shown. If missing, end_date_sec will be set to Jan 1st, 2100.
+         *
+         * @var string
+         */
+        public $endDateSec;
+        /**
+         * [Optional] End time in seconds, within a day, when the card should stop
+         * being shown if it's within [start_date_sec, end_date_sec]. If missing, this
+         * is set to 86400 (24 hours x 3600 sec/hour), i.e., midnight next day.
+         *
+         * @var string
+         */
+        public $endDayOffsetSec;
+        /**
+         * [Optional] The locales for which the card should be triggered (e.g., en_US
+         * and en_CA). If missing, the card is going to show to clients regardless of
+         * their locale.
+         *
+         * @var string[]
+         */
+        public $locale;
+        /**
+         * [Optional] Text-free locations where the card should be shown. This is
+         * expected to match the user's location in focus. If no location is
+         * specified, the card will be shown for any location.
+         *
+         * @var string[]
+         */
+        public $location;
+        /**
+         * [Required only for Answer and RHS cards - will be ignored for Homepage]
+         * cards. It's the exact case-insensitive queries that will trigger the Answer
+         * or RHS card.
+         *
+         * @var string[]
+         */
+        public $query;
+        /**
+         * [Optional] Date (in seconds since epoch) when the card should start being
+         * shown. If missing, start_date_sec will be Jan 1st, 1970 UTC.
+         *
+         * @var string
+         */
+        public $startDateSec;
+        /**
+         * [Optional] Start time in seconds, within a day, when the card should be
+         * shown if it's within [start_date_sec, end_date_sec]. If 0, the card will be
+         * shown from 12:00am on.
+         *
+         * @var string
+         */
+        public $startDayOffsetSec;
+        /**
+         * [Optional] Surface where the card should be shown in. If missing, the card
+         * will be shown in any surface.
+         *
+         * @var string[]
+         */
+        public $surface;
+        /**
+         * [Required] Type of the card (homepage, Answer or RHS).
+         *
+         * @var string[]
+         */
+        public $type;
+        /**
+         * [Optional] App where the card should be shown. If missing, the card will be
+         * shown in TOPAZ.
+         *
+         * @param string[] $app
+         */
+        public function setApp($app)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getApp()
+        {
+        }
+        /**
+         * [Optional] Day of week when the card should be shown, where 0 is Monday.
+         *
+         * @param int[] $dayOfWeek
+         */
+        public function setDayOfWeek($dayOfWeek)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getDayOfWeek()
+        {
+        }
+        /**
+         * [Optional] Date (in seconds since epoch) when the card should stop being
+         * shown. If missing, end_date_sec will be set to Jan 1st, 2100.
+         *
+         * @param string $endDateSec
+         */
+        public function setEndDateSec($endDateSec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndDateSec()
+        {
+        }
+        /**
+         * [Optional] End time in seconds, within a day, when the card should stop
+         * being shown if it's within [start_date_sec, end_date_sec]. If missing, this
+         * is set to 86400 (24 hours x 3600 sec/hour), i.e., midnight next day.
+         *
+         * @param string $endDayOffsetSec
+         */
+        public function setEndDayOffsetSec($endDayOffsetSec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndDayOffsetSec()
+        {
+        }
+        /**
+         * [Optional] The locales for which the card should be triggered (e.g., en_US
+         * and en_CA). If missing, the card is going to show to clients regardless of
+         * their locale.
+         *
+         * @param string[] $locale
+         */
+        public function setLocale($locale)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLocale()
+        {
+        }
+        /**
+         * [Optional] Text-free locations where the card should be shown. This is
+         * expected to match the user's location in focus. If no location is
+         * specified, the card will be shown for any location.
+         *
+         * @param string[] $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * [Required only for Answer and RHS cards - will be ignored for Homepage]
+         * cards. It's the exact case-insensitive queries that will trigger the Answer
+         * or RHS card.
+         *
+         * @param string[] $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getQuery()
+        {
+        }
+        /**
+         * [Optional] Date (in seconds since epoch) when the card should start being
+         * shown. If missing, start_date_sec will be Jan 1st, 1970 UTC.
+         *
+         * @param string $startDateSec
+         */
+        public function setStartDateSec($startDateSec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartDateSec()
+        {
+        }
+        /**
+         * [Optional] Start time in seconds, within a day, when the card should be
+         * shown if it's within [start_date_sec, end_date_sec]. If 0, the card will be
+         * shown from 12:00am on.
+         *
+         * @param string $startDayOffsetSec
+         */
+        public function setStartDayOffsetSec($startDayOffsetSec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartDayOffsetSec()
+        {
+        }
+        /**
+         * [Optional] Surface where the card should be shown in. If missing, the card
+         * will be shown in any surface.
+         *
+         * @param string[] $surface
+         */
+        public function setSurface($surface)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSurface()
+        {
+        }
+        /**
+         * [Required] Type of the card (homepage, Answer or RHS).
+         *
+         * @param string[] $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudSearch\Context registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApp()
-    {
-    }
-    /**
-     * [Optional] Day of week when the card should be shown, where 0 is Monday.
-     *
-     * @param int[] $dayOfWeek
-     */
-    public function setDayOfWeek($dayOfWeek)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getDayOfWeek()
-    {
-    }
-    /**
-     * [Optional] Date (in seconds since epoch) when the card should stop being
-     * shown. If missing, end_date_sec will be set to Jan 1st, 2100.
-     *
-     * @param string $endDateSec
-     */
-    public function setEndDateSec($endDateSec)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndDateSec()
-    {
-    }
-    /**
-     * [Optional] End time in seconds, within a day, when the card should stop
-     * being shown if it's within [start_date_sec, end_date_sec]. If missing, this
-     * is set to 86400 (24 hours x 3600 sec/hour), i.e., midnight next day.
-     *
-     * @param string $endDayOffsetSec
-     */
-    public function setEndDayOffsetSec($endDayOffsetSec)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndDayOffsetSec()
-    {
-    }
-    /**
-     * [Optional] The locales for which the card should be triggered (e.g., en_US
-     * and en_CA). If missing, the card is going to show to clients regardless of
-     * their locale.
-     *
-     * @param string[] $locale
-     */
-    public function setLocale($locale)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLocale()
-    {
-    }
-    /**
-     * [Optional] Text-free locations where the card should be shown. This is
-     * expected to match the user's location in focus. If no location is
-     * specified, the card will be shown for any location.
-     *
-     * @param string[] $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * [Required only for Answer and RHS cards - will be ignored for Homepage]
-     * cards. It's the exact case-insensitive queries that will trigger the Answer
-     * or RHS card.
-     *
-     * @param string[] $query
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getQuery()
-    {
-    }
-    /**
-     * [Optional] Date (in seconds since epoch) when the card should start being
-     * shown. If missing, start_date_sec will be Jan 1st, 1970 UTC.
-     *
-     * @param string $startDateSec
-     */
-    public function setStartDateSec($startDateSec)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartDateSec()
-    {
-    }
-    /**
-     * [Optional] Start time in seconds, within a day, when the card should be
-     * shown if it's within [start_date_sec, end_date_sec]. If 0, the card will be
-     * shown from 12:00am on.
-     *
-     * @param string $startDayOffsetSec
-     */
-    public function setStartDayOffsetSec($startDayOffsetSec)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartDayOffsetSec()
-    {
-    }
-    /**
-     * [Optional] Surface where the card should be shown in. If missing, the card
-     * will be shown in any surface.
-     *
-     * @param string[] $surface
-     */
-    public function setSurface($surface)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSurface()
-    {
-    }
-    /**
-     * [Required] Type of the card (homepage, Answer or RHS).
-     *
-     * @param string[] $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getType()
+    class Google_Service_CloudSearch_Context extends \Google\Service\CloudSearch\Context
     {
     }
 }

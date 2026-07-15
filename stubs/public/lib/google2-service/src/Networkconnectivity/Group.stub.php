@@ -21,246 +21,255 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class Group extends \Google\Model
-{
-    /**
-     * No state information available
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The resource's create operation is in progress.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * The resource is active
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * The resource's delete operation is in progress.
-     */
-    public const STATE_DELETING = 'DELETING';
-    /**
-     * The resource's accept operation is in progress.
-     */
-    public const STATE_ACCEPTING = 'ACCEPTING';
-    /**
-     * The resource's reject operation is in progress.
-     */
-    public const STATE_REJECTING = 'REJECTING';
-    /**
-     * The resource's update operation is in progress.
-     */
-    public const STATE_UPDATING = 'UPDATING';
-    /**
-     * The resource is inactive.
-     */
-    public const STATE_INACTIVE = 'INACTIVE';
-    /**
-     * The hub associated with this spoke resource has been deleted. This state
-     * applies to spoke resources only.
-     */
-    public const STATE_OBSOLETE = 'OBSOLETE';
-    /**
-     * The resource is in an undefined state due to resource creation or deletion
-     * failure. You can try to delete the resource later or contact support for
-     * help.
-     */
-    public const STATE_FAILED = 'FAILED';
-    protected $autoAcceptType = AutoAccept::class;
-    protected $autoAcceptDataType = '';
-    /**
-     * Output only. The time the group was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. The description of the group.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Optional. Labels in key-value pair format. For more information about
-     * labels, see [Requirements for labels](https://cloud.google.com/resource-
-     * manager/docs/creating-managing-labels#requirements).
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Immutable. The name of the group. Group names must be unique. They use the
-     * following form:
-     * `projects/{project_number}/locations/global/hubs/{hub}/groups/{group_id}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The name of the route table that corresponds to this group.
-     * They use the following form: `projects/{project_number}/locations/global/hu
-     * bs/{hub_id}/routeTables/{route_table_id}`
-     *
-     * @var string
-     */
-    public $routeTable;
-    /**
-     * Output only. The current lifecycle state of this group.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. The Google-generated UUID for the group. This value is unique
-     * across all group resources. If a group is deleted and another with the same
-     * name is created, the new route table is assigned a different unique_id.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Output only. The time the group was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. The auto-accept setting for this group.
-     *
-     * @param AutoAccept $autoAccept
-     */
-    public function setAutoAccept(AutoAccept $autoAccept)
+namespace Google\Service\Networkconnectivity {
+    class Group extends \Google\Model
     {
+        /**
+         * No state information available
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The resource's create operation is in progress.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * The resource is active
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * The resource's delete operation is in progress.
+         */
+        public const STATE_DELETING = 'DELETING';
+        /**
+         * The resource's accept operation is in progress.
+         */
+        public const STATE_ACCEPTING = 'ACCEPTING';
+        /**
+         * The resource's reject operation is in progress.
+         */
+        public const STATE_REJECTING = 'REJECTING';
+        /**
+         * The resource's update operation is in progress.
+         */
+        public const STATE_UPDATING = 'UPDATING';
+        /**
+         * The resource is inactive.
+         */
+        public const STATE_INACTIVE = 'INACTIVE';
+        /**
+         * The hub associated with this spoke resource has been deleted. This state
+         * applies to spoke resources only.
+         */
+        public const STATE_OBSOLETE = 'OBSOLETE';
+        /**
+         * The resource is in an undefined state due to resource creation or deletion
+         * failure. You can try to delete the resource later or contact support for
+         * help.
+         */
+        public const STATE_FAILED = 'FAILED';
+        protected $autoAcceptType = AutoAccept::class;
+        protected $autoAcceptDataType = '';
+        /**
+         * Output only. The time the group was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. The description of the group.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Optional. Labels in key-value pair format. For more information about
+         * labels, see [Requirements for labels](https://cloud.google.com/resource-
+         * manager/docs/creating-managing-labels#requirements).
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Immutable. The name of the group. Group names must be unique. They use the
+         * following form:
+         * `projects/{project_number}/locations/global/hubs/{hub}/groups/{group_id}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The name of the route table that corresponds to this group.
+         * They use the following form: `projects/{project_number}/locations/global/hu
+         * bs/{hub_id}/routeTables/{route_table_id}`
+         *
+         * @var string
+         */
+        public $routeTable;
+        /**
+         * Output only. The current lifecycle state of this group.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. The Google-generated UUID for the group. This value is unique
+         * across all group resources. If a group is deleted and another with the same
+         * name is created, the new route table is assigned a different unique_id.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Output only. The time the group was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. The auto-accept setting for this group.
+         *
+         * @param AutoAccept $autoAccept
+         */
+        public function setAutoAccept(AutoAccept $autoAccept)
+        {
+        }
+        /**
+         * @return AutoAccept
+         */
+        public function getAutoAccept()
+        {
+        }
+        /**
+         * Output only. The time the group was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. The description of the group.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. Labels in key-value pair format. For more information about
+         * labels, see [Requirements for labels](https://cloud.google.com/resource-
+         * manager/docs/creating-managing-labels#requirements).
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Immutable. The name of the group. Group names must be unique. They use the
+         * following form:
+         * `projects/{project_number}/locations/global/hubs/{hub}/groups/{group_id}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The name of the route table that corresponds to this group.
+         * They use the following form: `projects/{project_number}/locations/global/hu
+         * bs/{hub_id}/routeTables/{route_table_id}`
+         *
+         * @param string $routeTable
+         */
+        public function setRouteTable($routeTable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRouteTable()
+        {
+        }
+        /**
+         * Output only. The current lifecycle state of this group.
+         *
+         * Accepted values: STATE_UNSPECIFIED, CREATING, ACTIVE, DELETING, ACCEPTING,
+         * REJECTING, UPDATING, INACTIVE, OBSOLETE, FAILED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. The Google-generated UUID for the group. This value is unique
+         * across all group resources. If a group is deleted and another with the same
+         * name is created, the new route table is assigned a different unique_id.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * Output only. The time the group was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AutoAccept
+     * Runtime class alias of \Google\Service\Networkconnectivity\Group registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoAccept()
-    {
-    }
-    /**
-     * Output only. The time the group was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. The description of the group.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. Labels in key-value pair format. For more information about
-     * labels, see [Requirements for labels](https://cloud.google.com/resource-
-     * manager/docs/creating-managing-labels#requirements).
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Immutable. The name of the group. Group names must be unique. They use the
-     * following form:
-     * `projects/{project_number}/locations/global/hubs/{hub}/groups/{group_id}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The name of the route table that corresponds to this group.
-     * They use the following form: `projects/{project_number}/locations/global/hu
-     * bs/{hub_id}/routeTables/{route_table_id}`
-     *
-     * @param string $routeTable
-     */
-    public function setRouteTable($routeTable)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRouteTable()
-    {
-    }
-    /**
-     * Output only. The current lifecycle state of this group.
-     *
-     * Accepted values: STATE_UNSPECIFIED, CREATING, ACTIVE, DELETING, ACCEPTING,
-     * REJECTING, UPDATING, INACTIVE, OBSOLETE, FAILED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. The Google-generated UUID for the group. This value is unique
-     * across all group resources. If a group is deleted and another with the same
-     * name is created, the new route table is assigned a different unique_id.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * Output only. The time the group was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Networkconnectivity_Group extends \Google\Service\Networkconnectivity\Group
     {
     }
 }

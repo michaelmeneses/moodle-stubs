@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class TimeSeriesRatio extends \Google\Model
-{
-    /**
-     * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters)
-     * specifying a TimeSeries quantifying bad service, either demanded service
-     * that was not provided or demanded service that was of inadequate quality.
-     * Must have ValueType = DOUBLE or ValueType = INT64 and must have MetricKind
-     * = DELTA or MetricKind = CUMULATIVE.
-     *
-     * @var string
-     */
-    public $badServiceFilter;
-    /**
-     * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters)
-     * specifying a TimeSeries quantifying good service provided. Must have
-     * ValueType = DOUBLE or ValueType = INT64 and must have MetricKind = DELTA or
-     * MetricKind = CUMULATIVE.
-     *
-     * @var string
-     */
-    public $goodServiceFilter;
-    /**
-     * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters)
-     * specifying a TimeSeries quantifying total demanded service. Must have
-     * ValueType = DOUBLE or ValueType = INT64 and must have MetricKind = DELTA or
-     * MetricKind = CUMULATIVE.
-     *
-     * @var string
-     */
-    public $totalServiceFilter;
-    /**
-     * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters)
-     * specifying a TimeSeries quantifying bad service, either demanded service
-     * that was not provided or demanded service that was of inadequate quality.
-     * Must have ValueType = DOUBLE or ValueType = INT64 and must have MetricKind
-     * = DELTA or MetricKind = CUMULATIVE.
-     *
-     * @param string $badServiceFilter
-     */
-    public function setBadServiceFilter($badServiceFilter)
+namespace Google\Service\Monitoring {
+    class TimeSeriesRatio extends \Google\Model
     {
+        /**
+         * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters)
+         * specifying a TimeSeries quantifying bad service, either demanded service
+         * that was not provided or demanded service that was of inadequate quality.
+         * Must have ValueType = DOUBLE or ValueType = INT64 and must have MetricKind
+         * = DELTA or MetricKind = CUMULATIVE.
+         *
+         * @var string
+         */
+        public $badServiceFilter;
+        /**
+         * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters)
+         * specifying a TimeSeries quantifying good service provided. Must have
+         * ValueType = DOUBLE or ValueType = INT64 and must have MetricKind = DELTA or
+         * MetricKind = CUMULATIVE.
+         *
+         * @var string
+         */
+        public $goodServiceFilter;
+        /**
+         * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters)
+         * specifying a TimeSeries quantifying total demanded service. Must have
+         * ValueType = DOUBLE or ValueType = INT64 and must have MetricKind = DELTA or
+         * MetricKind = CUMULATIVE.
+         *
+         * @var string
+         */
+        public $totalServiceFilter;
+        /**
+         * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters)
+         * specifying a TimeSeries quantifying bad service, either demanded service
+         * that was not provided or demanded service that was of inadequate quality.
+         * Must have ValueType = DOUBLE or ValueType = INT64 and must have MetricKind
+         * = DELTA or MetricKind = CUMULATIVE.
+         *
+         * @param string $badServiceFilter
+         */
+        public function setBadServiceFilter($badServiceFilter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBadServiceFilter()
+        {
+        }
+        /**
+         * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters)
+         * specifying a TimeSeries quantifying good service provided. Must have
+         * ValueType = DOUBLE or ValueType = INT64 and must have MetricKind = DELTA or
+         * MetricKind = CUMULATIVE.
+         *
+         * @param string $goodServiceFilter
+         */
+        public function setGoodServiceFilter($goodServiceFilter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGoodServiceFilter()
+        {
+        }
+        /**
+         * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters)
+         * specifying a TimeSeries quantifying total demanded service. Must have
+         * ValueType = DOUBLE or ValueType = INT64 and must have MetricKind = DELTA or
+         * MetricKind = CUMULATIVE.
+         *
+         * @param string $totalServiceFilter
+         */
+        public function setTotalServiceFilter($totalServiceFilter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalServiceFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\TimeSeriesRatio registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBadServiceFilter()
-    {
-    }
-    /**
-     * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters)
-     * specifying a TimeSeries quantifying good service provided. Must have
-     * ValueType = DOUBLE or ValueType = INT64 and must have MetricKind = DELTA or
-     * MetricKind = CUMULATIVE.
-     *
-     * @param string $goodServiceFilter
-     */
-    public function setGoodServiceFilter($goodServiceFilter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGoodServiceFilter()
-    {
-    }
-    /**
-     * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters)
-     * specifying a TimeSeries quantifying total demanded service. Must have
-     * ValueType = DOUBLE or ValueType = INT64 and must have MetricKind = DELTA or
-     * MetricKind = CUMULATIVE.
-     *
-     * @param string $totalServiceFilter
-     */
-    public function setTotalServiceFilter($totalServiceFilter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalServiceFilter()
+    class Google_Service_Monitoring_TimeSeriesRatio extends \Google\Service\Monitoring\TimeSeriesRatio
     {
     }
 }

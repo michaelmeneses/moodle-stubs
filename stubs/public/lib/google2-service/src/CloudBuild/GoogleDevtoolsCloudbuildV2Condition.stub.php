@@ -21,158 +21,167 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class GoogleDevtoolsCloudbuildV2Condition extends \Google\Model
-{
-    /**
-     * Default enum type; should not be used.
-     */
-    public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
-    /**
-     * Severity is warning.
-     */
-    public const SEVERITY_WARNING = 'WARNING';
-    /**
-     * Severity is informational only.
-     */
-    public const SEVERITY_INFO = 'INFO';
-    /**
-     * Default enum type indicating execution is still ongoing.
-     */
-    public const STATUS_UNKNOWN = 'UNKNOWN';
-    /**
-     * Success
-     */
-    public const STATUS_TRUE = 'TRUE';
-    /**
-     * Failure
-     */
-    public const STATUS_FALSE = 'FALSE';
-    /**
-     * LastTransitionTime is the last time the condition transitioned from one
-     * status to another.
-     *
-     * @var string
-     */
-    public $lastTransitionTime;
-    /**
-     * A human readable message indicating details about the transition.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * The reason for the condition's last transition.
-     *
-     * @var string
-     */
-    public $reason;
-    /**
-     * Severity with which to treat failures of this type of condition.
-     *
-     * @var string
-     */
-    public $severity;
-    /**
-     * Status of the condition.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Type of condition.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * LastTransitionTime is the last time the condition transitioned from one
-     * status to another.
-     *
-     * @param string $lastTransitionTime
-     */
-    public function setLastTransitionTime($lastTransitionTime)
+namespace Google\Service\CloudBuild {
+    class GoogleDevtoolsCloudbuildV2Condition extends \Google\Model
     {
+        /**
+         * Default enum type; should not be used.
+         */
+        public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
+        /**
+         * Severity is warning.
+         */
+        public const SEVERITY_WARNING = 'WARNING';
+        /**
+         * Severity is informational only.
+         */
+        public const SEVERITY_INFO = 'INFO';
+        /**
+         * Default enum type indicating execution is still ongoing.
+         */
+        public const STATUS_UNKNOWN = 'UNKNOWN';
+        /**
+         * Success
+         */
+        public const STATUS_TRUE = 'TRUE';
+        /**
+         * Failure
+         */
+        public const STATUS_FALSE = 'FALSE';
+        /**
+         * LastTransitionTime is the last time the condition transitioned from one
+         * status to another.
+         *
+         * @var string
+         */
+        public $lastTransitionTime;
+        /**
+         * A human readable message indicating details about the transition.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * The reason for the condition's last transition.
+         *
+         * @var string
+         */
+        public $reason;
+        /**
+         * Severity with which to treat failures of this type of condition.
+         *
+         * @var string
+         */
+        public $severity;
+        /**
+         * Status of the condition.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Type of condition.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * LastTransitionTime is the last time the condition transitioned from one
+         * status to another.
+         *
+         * @param string $lastTransitionTime
+         */
+        public function setLastTransitionTime($lastTransitionTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastTransitionTime()
+        {
+        }
+        /**
+         * A human readable message indicating details about the transition.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * The reason for the condition's last transition.
+         *
+         * @param string $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
+        /**
+         * Severity with which to treat failures of this type of condition.
+         *
+         * Accepted values: SEVERITY_UNSPECIFIED, WARNING, INFO
+         *
+         * @param self::SEVERITY_* $severity
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return self::SEVERITY_*
+         */
+        public function getSeverity()
+        {
+        }
+        /**
+         * Status of the condition.
+         *
+         * Accepted values: UNKNOWN, TRUE, FALSE
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Type of condition.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\GoogleDevtoolsCloudbuildV2Condition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastTransitionTime()
-    {
-    }
-    /**
-     * A human readable message indicating details about the transition.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * The reason for the condition's last transition.
-     *
-     * @param string $reason
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReason()
-    {
-    }
-    /**
-     * Severity with which to treat failures of this type of condition.
-     *
-     * Accepted values: SEVERITY_UNSPECIFIED, WARNING, INFO
-     *
-     * @param self::SEVERITY_* $severity
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return self::SEVERITY_*
-     */
-    public function getSeverity()
-    {
-    }
-    /**
-     * Status of the condition.
-     *
-     * Accepted values: UNKNOWN, TRUE, FALSE
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * Type of condition.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudBuild_GoogleDevtoolsCloudbuildV2Condition extends \Google\Service\CloudBuild\GoogleDevtoolsCloudbuildV2Condition
     {
     }
 }

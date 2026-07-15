@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class SecurityScheme extends \Google\Model
-{
-    protected $apiKeySecuritySchemeType = APIKeySecurityScheme::class;
-    protected $apiKeySecuritySchemeDataType = '';
-    protected $httpAuthSecuritySchemeType = HTTPAuthSecurityScheme::class;
-    protected $httpAuthSecuritySchemeDataType = '';
-    protected $mtlsSecuritySchemeType = MutualTlsSecurityScheme::class;
-    protected $mtlsSecuritySchemeDataType = '';
-    protected $oauth2SecuritySchemeType = OAuth2SecurityScheme::class;
-    protected $oauth2SecuritySchemeDataType = '';
-    protected $openIdConnectSecuritySchemeType = OpenIdConnectSecurityScheme::class;
-    protected $openIdConnectSecuritySchemeDataType = '';
-    /**
-     * @param APIKeySecurityScheme $apiKeySecurityScheme
-     */
-    public function setApiKeySecurityScheme(APIKeySecurityScheme $apiKeySecurityScheme)
+namespace Google\Service\WorkspaceEvents {
+    class SecurityScheme extends \Google\Model
     {
+        protected $apiKeySecuritySchemeType = APIKeySecurityScheme::class;
+        protected $apiKeySecuritySchemeDataType = '';
+        protected $httpAuthSecuritySchemeType = HTTPAuthSecurityScheme::class;
+        protected $httpAuthSecuritySchemeDataType = '';
+        protected $mtlsSecuritySchemeType = MutualTlsSecurityScheme::class;
+        protected $mtlsSecuritySchemeDataType = '';
+        protected $oauth2SecuritySchemeType = OAuth2SecurityScheme::class;
+        protected $oauth2SecuritySchemeDataType = '';
+        protected $openIdConnectSecuritySchemeType = OpenIdConnectSecurityScheme::class;
+        protected $openIdConnectSecuritySchemeDataType = '';
+        /**
+         * @param APIKeySecurityScheme $apiKeySecurityScheme
+         */
+        public function setApiKeySecurityScheme(APIKeySecurityScheme $apiKeySecurityScheme)
+        {
+        }
+        /**
+         * @return APIKeySecurityScheme
+         */
+        public function getApiKeySecurityScheme()
+        {
+        }
+        /**
+         * @param HTTPAuthSecurityScheme $httpAuthSecurityScheme
+         */
+        public function setHttpAuthSecurityScheme(HTTPAuthSecurityScheme $httpAuthSecurityScheme)
+        {
+        }
+        /**
+         * @return HTTPAuthSecurityScheme
+         */
+        public function getHttpAuthSecurityScheme()
+        {
+        }
+        /**
+         * @param MutualTlsSecurityScheme $mtlsSecurityScheme
+         */
+        public function setMtlsSecurityScheme(MutualTlsSecurityScheme $mtlsSecurityScheme)
+        {
+        }
+        /**
+         * @return MutualTlsSecurityScheme
+         */
+        public function getMtlsSecurityScheme()
+        {
+        }
+        /**
+         * @param OAuth2SecurityScheme $oauth2SecurityScheme
+         */
+        public function setOauth2SecurityScheme(OAuth2SecurityScheme $oauth2SecurityScheme)
+        {
+        }
+        /**
+         * @return OAuth2SecurityScheme
+         */
+        public function getOauth2SecurityScheme()
+        {
+        }
+        /**
+         * @param OpenIdConnectSecurityScheme $openIdConnectSecurityScheme
+         */
+        public function setOpenIdConnectSecurityScheme(OpenIdConnectSecurityScheme $openIdConnectSecurityScheme)
+        {
+        }
+        /**
+         * @return OpenIdConnectSecurityScheme
+         */
+        public function getOpenIdConnectSecurityScheme()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return APIKeySecurityScheme
+     * Runtime class alias of \Google\Service\WorkspaceEvents\SecurityScheme registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiKeySecurityScheme()
-    {
-    }
-    /**
-     * @param HTTPAuthSecurityScheme $httpAuthSecurityScheme
-     */
-    public function setHttpAuthSecurityScheme(HTTPAuthSecurityScheme $httpAuthSecurityScheme)
-    {
-    }
-    /**
-     * @return HTTPAuthSecurityScheme
-     */
-    public function getHttpAuthSecurityScheme()
-    {
-    }
-    /**
-     * @param MutualTlsSecurityScheme $mtlsSecurityScheme
-     */
-    public function setMtlsSecurityScheme(MutualTlsSecurityScheme $mtlsSecurityScheme)
-    {
-    }
-    /**
-     * @return MutualTlsSecurityScheme
-     */
-    public function getMtlsSecurityScheme()
-    {
-    }
-    /**
-     * @param OAuth2SecurityScheme $oauth2SecurityScheme
-     */
-    public function setOauth2SecurityScheme(OAuth2SecurityScheme $oauth2SecurityScheme)
-    {
-    }
-    /**
-     * @return OAuth2SecurityScheme
-     */
-    public function getOauth2SecurityScheme()
-    {
-    }
-    /**
-     * @param OpenIdConnectSecurityScheme $openIdConnectSecurityScheme
-     */
-    public function setOpenIdConnectSecurityScheme(OpenIdConnectSecurityScheme $openIdConnectSecurityScheme)
-    {
-    }
-    /**
-     * @return OpenIdConnectSecurityScheme
-     */
-    public function getOpenIdConnectSecurityScheme()
+    class Google_Service_WorkspaceEvents_SecurityScheme extends \Google\Service\WorkspaceEvents\SecurityScheme
     {
     }
 }

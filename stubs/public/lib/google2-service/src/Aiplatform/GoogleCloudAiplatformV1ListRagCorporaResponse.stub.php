@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListRagCorporaResponse extends \Google\Collection
-{
-    protected $collection_key = 'ragCorpora';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListRagCorporaRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $ragCorporaType = GoogleCloudAiplatformV1RagCorpus::class;
-    protected $ragCorporaDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListRagCorporaRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListRagCorporaResponse extends \Google\Collection
     {
+        protected $collection_key = 'ragCorpora';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListRagCorporaRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $ragCorporaType = GoogleCloudAiplatformV1RagCorpus::class;
+        protected $ragCorporaDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListRagCorporaRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of RagCorpora in the requested page.
+         *
+         * @param GoogleCloudAiplatformV1RagCorpus[] $ragCorpora
+         */
+        public function setRagCorpora($ragCorpora)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagCorpus[]
+         */
+        public function getRagCorpora()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListRagCorporaResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of RagCorpora in the requested page.
-     *
-     * @param GoogleCloudAiplatformV1RagCorpus[] $ragCorpora
-     */
-    public function setRagCorpora($ragCorpora)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RagCorpus[]
-     */
-    public function getRagCorpora()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListRagCorporaResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListRagCorporaResponse
     {
     }
 }

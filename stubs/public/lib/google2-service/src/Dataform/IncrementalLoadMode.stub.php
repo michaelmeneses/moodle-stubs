@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class IncrementalLoadMode extends \Google\Model
-{
-    /**
-     * Column name for incremental load modes
-     *
-     * @var string
-     */
-    public $column;
-    /**
-     * Column name for incremental load modes
-     *
-     * @param string $column
-     */
-    public function setColumn($column)
+namespace Google\Service\Dataform {
+    class IncrementalLoadMode extends \Google\Model
     {
+        /**
+         * Column name for incremental load modes
+         *
+         * @var string
+         */
+        public $column;
+        /**
+         * Column name for incremental load modes
+         *
+         * @param string $column
+         */
+        public function setColumn($column)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getColumn()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataform\IncrementalLoadMode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumn()
+    class Google_Service_Dataform_IncrementalLoadMode extends \Google\Service\Dataform\IncrementalLoadMode
     {
     }
 }

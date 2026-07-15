@@ -21,78 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics\Resource;
-
-/**
- * The "webpropertyUserLinks" collection of methods.
- * Typical usage is:
- *  <code>
- *   $analyticsService = new Google\Service\Analytics(...);
- *   $webpropertyUserLinks = $analyticsService->management_webpropertyUserLinks;
- *  </code>
- */
-class ManagementWebpropertyUserLinks extends \Google\Service\Resource
-{
+namespace Google\Service\Analytics\Resource {
+    use Google\Service\Analytics\EntityUserLink;
+    use Google\Service\Analytics\EntityUserLinks;
     /**
-     * Removes a user from the given web property. (webpropertyUserLinks.delete)
-     *
-     * @param string $accountId Account ID to delete the user link for.
-     * @param string $webPropertyId Web Property ID to delete the user link for.
-     * @param string $linkId Link ID to delete the user link for.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "webpropertyUserLinks" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $analyticsService = new Google\Service\Analytics(...);
+     *   $webpropertyUserLinks = $analyticsService->management_webpropertyUserLinks;
+     *  </code>
      */
-    public function delete($accountId, $webPropertyId, $linkId, $optParams = [])
+    class ManagementWebpropertyUserLinks extends \Google\Service\Resource
     {
+        /**
+         * Removes a user from the given web property. (webpropertyUserLinks.delete)
+         *
+         * @param string $accountId Account ID to delete the user link for.
+         * @param string $webPropertyId Web Property ID to delete the user link for.
+         * @param string $linkId Link ID to delete the user link for.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($accountId, $webPropertyId, $linkId, $optParams = [])
+        {
+        }
+        /**
+         * Adds a new user to the given web property. (webpropertyUserLinks.insert)
+         *
+         * @param string $accountId Account ID to create the user link for.
+         * @param string $webPropertyId Web Property ID to create the user link for.
+         * @param EntityUserLink $postBody
+         * @param array $optParams Optional parameters.
+         * @return EntityUserLink
+         * @throws \Google\Service\Exception
+         */
+        public function insert($accountId, $webPropertyId, EntityUserLink $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists webProperty-user links for a given web property.
+         * (webpropertyUserLinks.listManagementWebpropertyUserLinks)
+         *
+         * @param string $accountId Account ID which the given web property belongs to.
+         * @param string $webPropertyId Web Property ID for the webProperty-user links
+         * to retrieve. Can either be a specific web property ID or '~all', which refers
+         * to all the web properties that user has access to.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int max-results The maximum number of webProperty-user Links to
+         * include in this response.
+         * @opt_param int start-index An index of the first webProperty-user link to
+         * retrieve. Use this parameter as a pagination mechanism along with the max-
+         * results parameter.
+         * @return EntityUserLinks
+         * @throws \Google\Service\Exception
+         */
+        public function listManagementWebpropertyUserLinks($accountId, $webPropertyId, $optParams = [])
+        {
+        }
+        /**
+         * Updates permissions for an existing user on the given web property.
+         * (webpropertyUserLinks.update)
+         *
+         * @param string $accountId Account ID to update the account-user link for.
+         * @param string $webPropertyId Web property ID to update the account-user link
+         * for.
+         * @param string $linkId Link ID to update the account-user link for.
+         * @param EntityUserLink $postBody
+         * @param array $optParams Optional parameters.
+         * @return EntityUserLink
+         * @throws \Google\Service\Exception
+         */
+        public function update($accountId, $webPropertyId, $linkId, EntityUserLink $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Adds a new user to the given web property. (webpropertyUserLinks.insert)
-     *
-     * @param string $accountId Account ID to create the user link for.
-     * @param string $webPropertyId Web Property ID to create the user link for.
-     * @param EntityUserLink $postBody
-     * @param array $optParams Optional parameters.
-     * @return EntityUserLink
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Analytics\Resource\ManagementWebpropertyUserLinks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert($accountId, $webPropertyId, EntityUserLink $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists webProperty-user links for a given web property.
-     * (webpropertyUserLinks.listManagementWebpropertyUserLinks)
-     *
-     * @param string $accountId Account ID which the given web property belongs to.
-     * @param string $webPropertyId Web Property ID for the webProperty-user links
-     * to retrieve. Can either be a specific web property ID or '~all', which refers
-     * to all the web properties that user has access to.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int max-results The maximum number of webProperty-user Links to
-     * include in this response.
-     * @opt_param int start-index An index of the first webProperty-user link to
-     * retrieve. Use this parameter as a pagination mechanism along with the max-
-     * results parameter.
-     * @return EntityUserLinks
-     * @throws \Google\Service\Exception
-     */
-    public function listManagementWebpropertyUserLinks($accountId, $webPropertyId, $optParams = [])
-    {
-    }
-    /**
-     * Updates permissions for an existing user on the given web property.
-     * (webpropertyUserLinks.update)
-     *
-     * @param string $accountId Account ID to update the account-user link for.
-     * @param string $webPropertyId Web property ID to update the account-user link
-     * for.
-     * @param string $linkId Link ID to update the account-user link for.
-     * @param EntityUserLink $postBody
-     * @param array $optParams Optional parameters.
-     * @return EntityUserLink
-     * @throws \Google\Service\Exception
-     */
-    public function update($accountId, $webPropertyId, $linkId, EntityUserLink $postBody, $optParams = [])
+    class Google_Service_Analytics_Resource_ManagementWebpropertyUserLinks extends \Google\Service\Analytics\Resource\ManagementWebpropertyUserLinks
     {
     }
 }

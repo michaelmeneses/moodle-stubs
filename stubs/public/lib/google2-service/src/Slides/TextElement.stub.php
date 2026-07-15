@@ -21,107 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class TextElement extends \Google\Model
-{
-    protected $autoTextType = AutoText::class;
-    protected $autoTextDataType = '';
-    /**
-     * The zero-based end index of this text element, exclusive, in Unicode code
-     * units.
-     *
-     * @var int
-     */
-    public $endIndex;
-    protected $paragraphMarkerType = ParagraphMarker::class;
-    protected $paragraphMarkerDataType = '';
-    /**
-     * The zero-based start index of this text element, in Unicode code units.
-     *
-     * @var int
-     */
-    public $startIndex;
-    protected $textRunType = TextRun::class;
-    protected $textRunDataType = '';
-    /**
-     * A TextElement representing a spot in the text that is dynamically replaced
-     * with content that can change over time.
-     *
-     * @param AutoText $autoText
-     */
-    public function setAutoText(AutoText $autoText)
+namespace Google\Service\Slides {
+    class TextElement extends \Google\Model
     {
+        protected $autoTextType = AutoText::class;
+        protected $autoTextDataType = '';
+        /**
+         * The zero-based end index of this text element, exclusive, in Unicode code
+         * units.
+         *
+         * @var int
+         */
+        public $endIndex;
+        protected $paragraphMarkerType = ParagraphMarker::class;
+        protected $paragraphMarkerDataType = '';
+        /**
+         * The zero-based start index of this text element, in Unicode code units.
+         *
+         * @var int
+         */
+        public $startIndex;
+        protected $textRunType = TextRun::class;
+        protected $textRunDataType = '';
+        /**
+         * A TextElement representing a spot in the text that is dynamically replaced
+         * with content that can change over time.
+         *
+         * @param AutoText $autoText
+         */
+        public function setAutoText(AutoText $autoText)
+        {
+        }
+        /**
+         * @return AutoText
+         */
+        public function getAutoText()
+        {
+        }
+        /**
+         * The zero-based end index of this text element, exclusive, in Unicode code
+         * units.
+         *
+         * @param int $endIndex
+         */
+        public function setEndIndex($endIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEndIndex()
+        {
+        }
+        /**
+         * A marker representing the beginning of a new paragraph. The `start_index`
+         * and `end_index` of this TextElement represent the range of the paragraph.
+         * Other TextElements with an index range contained inside this paragraph's
+         * range are considered to be part of this paragraph. The range of indices of
+         * two separate paragraphs will never overlap.
+         *
+         * @param ParagraphMarker $paragraphMarker
+         */
+        public function setParagraphMarker(ParagraphMarker $paragraphMarker)
+        {
+        }
+        /**
+         * @return ParagraphMarker
+         */
+        public function getParagraphMarker()
+        {
+        }
+        /**
+         * The zero-based start index of this text element, in Unicode code units.
+         *
+         * @param int $startIndex
+         */
+        public function setStartIndex($startIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartIndex()
+        {
+        }
+        /**
+         * A TextElement representing a run of text where all of the characters in the
+         * run have the same TextStyle. The `start_index` and `end_index` of TextRuns
+         * will always be fully contained in the index range of a single
+         * `paragraph_marker` TextElement. In other words, a TextRun will never span
+         * multiple paragraphs.
+         *
+         * @param TextRun $textRun
+         */
+        public function setTextRun(TextRun $textRun)
+        {
+        }
+        /**
+         * @return TextRun
+         */
+        public function getTextRun()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AutoText
+     * Runtime class alias of \Google\Service\Slides\TextElement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoText()
-    {
-    }
-    /**
-     * The zero-based end index of this text element, exclusive, in Unicode code
-     * units.
-     *
-     * @param int $endIndex
-     */
-    public function setEndIndex($endIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getEndIndex()
-    {
-    }
-    /**
-     * A marker representing the beginning of a new paragraph. The `start_index`
-     * and `end_index` of this TextElement represent the range of the paragraph.
-     * Other TextElements with an index range contained inside this paragraph's
-     * range are considered to be part of this paragraph. The range of indices of
-     * two separate paragraphs will never overlap.
-     *
-     * @param ParagraphMarker $paragraphMarker
-     */
-    public function setParagraphMarker(ParagraphMarker $paragraphMarker)
-    {
-    }
-    /**
-     * @return ParagraphMarker
-     */
-    public function getParagraphMarker()
-    {
-    }
-    /**
-     * The zero-based start index of this text element, in Unicode code units.
-     *
-     * @param int $startIndex
-     */
-    public function setStartIndex($startIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartIndex()
-    {
-    }
-    /**
-     * A TextElement representing a run of text where all of the characters in the
-     * run have the same TextStyle. The `start_index` and `end_index` of TextRuns
-     * will always be fully contained in the index range of a single
-     * `paragraph_marker` TextElement. In other words, a TextRun will never span
-     * multiple paragraphs.
-     *
-     * @param TextRun $textRun
-     */
-    public function setTextRun(TextRun $textRun)
-    {
-    }
-    /**
-     * @return TextRun
-     */
-    public function getTextRun()
+    class Google_Service_Slides_TextElement extends \Google\Service\Slides\TextElement
     {
     }
 }

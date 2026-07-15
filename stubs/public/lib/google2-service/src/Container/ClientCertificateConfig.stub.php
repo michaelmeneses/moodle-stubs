@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class ClientCertificateConfig extends \Google\Model
-{
-    /**
-     * Issue a client certificate.
-     *
-     * @var bool
-     */
-    public $issueClientCertificate;
-    /**
-     * Issue a client certificate.
-     *
-     * @param bool $issueClientCertificate
-     */
-    public function setIssueClientCertificate($issueClientCertificate)
+namespace Google\Service\Container {
+    class ClientCertificateConfig extends \Google\Model
     {
+        /**
+         * Issue a client certificate.
+         *
+         * @var bool
+         */
+        public $issueClientCertificate;
+        /**
+         * Issue a client certificate.
+         *
+         * @param bool $issueClientCertificate
+         */
+        public function setIssueClientCertificate($issueClientCertificate)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIssueClientCertificate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\ClientCertificateConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIssueClientCertificate()
+    class Google_Service_Container_ClientCertificateConfig extends \Google\Service\Container\ClientCertificateConfig
     {
     }
 }

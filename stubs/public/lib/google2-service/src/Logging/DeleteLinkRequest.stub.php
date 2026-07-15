@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class DeleteLinkRequest extends \Google\Model
-{
-    /**
-     * Required. The full resource name of the link to delete. "projects/[PROJECT_
-     * ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/links/[LINK_ID]" "organizat
-     * ions/[ORGANIZATION_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/links/[L
-     * INK_ID]" "billingAccounts/[BILLING_ACCOUNT_ID]/locations/[LOCATION_ID]/buck
-     * ets/[BUCKET_ID]/links/[LINK_ID]" "folders/[FOLDER_ID]/locations/[LOCATION_I
-     * D]/buckets/[BUCKET_ID]/links/[LINK_ID]"
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The full resource name of the link to delete. "projects/[PROJECT_
-     * ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/links/[LINK_ID]" "organizat
-     * ions/[ORGANIZATION_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/links/[L
-     * INK_ID]" "billingAccounts/[BILLING_ACCOUNT_ID]/locations/[LOCATION_ID]/buck
-     * ets/[BUCKET_ID]/links/[LINK_ID]" "folders/[FOLDER_ID]/locations/[LOCATION_I
-     * D]/buckets/[BUCKET_ID]/links/[LINK_ID]"
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Logging {
+    class DeleteLinkRequest extends \Google\Model
     {
+        /**
+         * Required. The full resource name of the link to delete. "projects/[PROJECT_
+         * ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/links/[LINK_ID]" "organizat
+         * ions/[ORGANIZATION_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/links/[L
+         * INK_ID]" "billingAccounts/[BILLING_ACCOUNT_ID]/locations/[LOCATION_ID]/buck
+         * ets/[BUCKET_ID]/links/[LINK_ID]" "folders/[FOLDER_ID]/locations/[LOCATION_I
+         * D]/buckets/[BUCKET_ID]/links/[LINK_ID]"
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The full resource name of the link to delete. "projects/[PROJECT_
+         * ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/links/[LINK_ID]" "organizat
+         * ions/[ORGANIZATION_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/links/[L
+         * INK_ID]" "billingAccounts/[BILLING_ACCOUNT_ID]/locations/[LOCATION_ID]/buck
+         * ets/[BUCKET_ID]/links/[LINK_ID]" "folders/[FOLDER_ID]/locations/[LOCATION_I
+         * D]/buckets/[BUCKET_ID]/links/[LINK_ID]"
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Logging\DeleteLinkRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_Logging_DeleteLinkRequest extends \Google\Service\Logging\DeleteLinkRequest
     {
     }
 }

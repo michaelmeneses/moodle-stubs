@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Texttospeech;
-
-class MultiSpeakerVoiceConfig extends \Google\Collection
-{
-    protected $collection_key = 'speakerVoiceConfigs';
-    protected $speakerVoiceConfigsType = MultispeakerPrebuiltVoice::class;
-    protected $speakerVoiceConfigsDataType = 'array';
-    /**
-     * Required. A list of configurations for the voices of the speakers. Exactly
-     * two speaker voice configurations must be provided.
-     *
-     * @param MultispeakerPrebuiltVoice[] $speakerVoiceConfigs
-     */
-    public function setSpeakerVoiceConfigs($speakerVoiceConfigs)
+namespace Google\Service\Texttospeech {
+    class MultiSpeakerVoiceConfig extends \Google\Collection
     {
+        protected $collection_key = 'speakerVoiceConfigs';
+        protected $speakerVoiceConfigsType = MultispeakerPrebuiltVoice::class;
+        protected $speakerVoiceConfigsDataType = 'array';
+        /**
+         * Required. A list of configurations for the voices of the speakers. Exactly
+         * two speaker voice configurations must be provided.
+         *
+         * @param MultispeakerPrebuiltVoice[] $speakerVoiceConfigs
+         */
+        public function setSpeakerVoiceConfigs($speakerVoiceConfigs)
+        {
+        }
+        /**
+         * @return MultispeakerPrebuiltVoice[]
+         */
+        public function getSpeakerVoiceConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MultispeakerPrebuiltVoice[]
+     * Runtime class alias of \Google\Service\Texttospeech\MultiSpeakerVoiceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSpeakerVoiceConfigs()
+    class Google_Service_Texttospeech_MultiSpeakerVoiceConfig extends \Google\Service\Texttospeech\MultiSpeakerVoiceConfig
     {
     }
 }

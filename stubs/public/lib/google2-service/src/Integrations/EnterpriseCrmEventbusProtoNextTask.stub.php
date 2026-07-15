@@ -21,131 +21,140 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoNextTask extends \Google\Collection
-{
-    protected $collection_key = 'combinedConditions';
-    protected $combinedConditionsType = EnterpriseCrmEventbusProtoCombinedCondition::class;
-    protected $combinedConditionsDataType = 'array';
-    /**
-     * Standard filter expression for this task to become an eligible next task.
-     *
-     * @var string
-     */
-    public $condition;
-    /**
-     * User-provided description intended to give more business context about the
-     * next task edge or condition.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * User-provided label that is attached to this edge in the UI.
-     *
-     * @var string
-     */
-    public $label;
-    /**
-     * ID of the next task.
-     *
-     * @var string
-     */
-    public $taskConfigId;
-    /**
-     * Task number of the next task.
-     *
-     * @var string
-     */
-    public $taskNumber;
-    /**
-     * Combined condition for this task to become an eligible next task. Each of
-     * these combined_conditions are joined with logical OR. DEPRECATED: use
-     * `condition`
-     *
-     * @deprecated
-     * @param EnterpriseCrmEventbusProtoCombinedCondition[] $combinedConditions
-     */
-    public function setCombinedConditions($combinedConditions)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoNextTask extends \Google\Collection
     {
+        protected $collection_key = 'combinedConditions';
+        protected $combinedConditionsType = EnterpriseCrmEventbusProtoCombinedCondition::class;
+        protected $combinedConditionsDataType = 'array';
+        /**
+         * Standard filter expression for this task to become an eligible next task.
+         *
+         * @var string
+         */
+        public $condition;
+        /**
+         * User-provided description intended to give more business context about the
+         * next task edge or condition.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * User-provided label that is attached to this edge in the UI.
+         *
+         * @var string
+         */
+        public $label;
+        /**
+         * ID of the next task.
+         *
+         * @var string
+         */
+        public $taskConfigId;
+        /**
+         * Task number of the next task.
+         *
+         * @var string
+         */
+        public $taskNumber;
+        /**
+         * Combined condition for this task to become an eligible next task. Each of
+         * these combined_conditions are joined with logical OR. DEPRECATED: use
+         * `condition`
+         *
+         * @deprecated
+         * @param EnterpriseCrmEventbusProtoCombinedCondition[] $combinedConditions
+         */
+        public function setCombinedConditions($combinedConditions)
+        {
+        }
+        /**
+         * @deprecated
+         * @return EnterpriseCrmEventbusProtoCombinedCondition[]
+         */
+        public function getCombinedConditions()
+        {
+        }
+        /**
+         * Standard filter expression for this task to become an eligible next task.
+         *
+         * @param string $condition
+         */
+        public function setCondition($condition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * User-provided description intended to give more business context about the
+         * next task edge or condition.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * User-provided label that is attached to this edge in the UI.
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * ID of the next task.
+         *
+         * @param string $taskConfigId
+         */
+        public function setTaskConfigId($taskConfigId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTaskConfigId()
+        {
+        }
+        /**
+         * Task number of the next task.
+         *
+         * @param string $taskNumber
+         */
+        public function setTaskNumber($taskNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTaskNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return EnterpriseCrmEventbusProtoCombinedCondition[]
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoNextTask registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCombinedConditions()
-    {
-    }
-    /**
-     * Standard filter expression for this task to become an eligible next task.
-     *
-     * @param string $condition
-     */
-    public function setCondition($condition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCondition()
-    {
-    }
-    /**
-     * User-provided description intended to give more business context about the
-     * next task edge or condition.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * User-provided label that is attached to this edge in the UI.
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
-    {
-    }
-    /**
-     * ID of the next task.
-     *
-     * @param string $taskConfigId
-     */
-    public function setTaskConfigId($taskConfigId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTaskConfigId()
-    {
-    }
-    /**
-     * Task number of the next task.
-     *
-     * @param string $taskNumber
-     */
-    public function setTaskNumber($taskNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTaskNumber()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoNextTask extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoNextTask
     {
     }
 }

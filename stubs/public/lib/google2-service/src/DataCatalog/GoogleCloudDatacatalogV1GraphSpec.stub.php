@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1GraphSpec extends \Google\Collection
-{
-    protected $collection_key = 'nodeTables';
-    protected $edgeTablesType = GoogleCloudDatacatalogV1GraphSpecGraphElementTable::class;
-    protected $edgeTablesDataType = 'array';
-    /**
-     * Output only. Fully qualified graph name. e.g. `named_catalog.MyGraph`
-     *
-     * @var string
-     */
-    public $name;
-    protected $nodeTablesType = GoogleCloudDatacatalogV1GraphSpecGraphElementTable::class;
-    protected $nodeTablesDataType = 'array';
-    /**
-     * Optional. Edge tables of the graph.
-     *
-     * @param GoogleCloudDatacatalogV1GraphSpecGraphElementTable[] $edgeTables
-     */
-    public function setEdgeTables($edgeTables)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1GraphSpec extends \Google\Collection
     {
+        protected $collection_key = 'nodeTables';
+        protected $edgeTablesType = GoogleCloudDatacatalogV1GraphSpecGraphElementTable::class;
+        protected $edgeTablesDataType = 'array';
+        /**
+         * Output only. Fully qualified graph name. e.g. `named_catalog.MyGraph`
+         *
+         * @var string
+         */
+        public $name;
+        protected $nodeTablesType = GoogleCloudDatacatalogV1GraphSpecGraphElementTable::class;
+        protected $nodeTablesDataType = 'array';
+        /**
+         * Optional. Edge tables of the graph.
+         *
+         * @param GoogleCloudDatacatalogV1GraphSpecGraphElementTable[] $edgeTables
+         */
+        public function setEdgeTables($edgeTables)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1GraphSpecGraphElementTable[]
+         */
+        public function getEdgeTables()
+        {
+        }
+        /**
+         * Output only. Fully qualified graph name. e.g. `named_catalog.MyGraph`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Node tables of the graph.
+         *
+         * @param GoogleCloudDatacatalogV1GraphSpecGraphElementTable[] $nodeTables
+         */
+        public function setNodeTables($nodeTables)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1GraphSpecGraphElementTable[]
+         */
+        public function getNodeTables()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1GraphSpecGraphElementTable[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1GraphSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEdgeTables()
-    {
-    }
-    /**
-     * Output only. Fully qualified graph name. e.g. `named_catalog.MyGraph`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Node tables of the graph.
-     *
-     * @param GoogleCloudDatacatalogV1GraphSpecGraphElementTable[] $nodeTables
-     */
-    public function setNodeTables($nodeTables)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1GraphSpecGraphElementTable[]
-     */
-    public function getNodeTables()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1GraphSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1GraphSpec
     {
     }
 }

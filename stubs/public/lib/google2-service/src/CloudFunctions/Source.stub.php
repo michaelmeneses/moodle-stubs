@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFunctions;
-
-class Source extends \Google\Model
-{
-    /**
-     * If provided, get the source from GitHub repository. This option is valid
-     * only for GCF 1st Gen function. Example: https://github.comblob//
-     *
-     * @var string
-     */
-    public $gitUri;
-    protected $repoSourceType = RepoSource::class;
-    protected $repoSourceDataType = '';
-    protected $storageSourceType = StorageSource::class;
-    protected $storageSourceDataType = '';
-    /**
-     * If provided, get the source from GitHub repository. This option is valid
-     * only for GCF 1st Gen function. Example: https://github.comblob//
-     *
-     * @param string $gitUri
-     */
-    public function setGitUri($gitUri)
+namespace Google\Service\CloudFunctions {
+    class Source extends \Google\Model
     {
+        /**
+         * If provided, get the source from GitHub repository. This option is valid
+         * only for GCF 1st Gen function. Example: https://github.comblob//
+         *
+         * @var string
+         */
+        public $gitUri;
+        protected $repoSourceType = RepoSource::class;
+        protected $repoSourceDataType = '';
+        protected $storageSourceType = StorageSource::class;
+        protected $storageSourceDataType = '';
+        /**
+         * If provided, get the source from GitHub repository. This option is valid
+         * only for GCF 1st Gen function. Example: https://github.comblob//
+         *
+         * @param string $gitUri
+         */
+        public function setGitUri($gitUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGitUri()
+        {
+        }
+        /**
+         * If provided, get the source from this location in a Cloud Source
+         * Repository.
+         *
+         * @param RepoSource $repoSource
+         */
+        public function setRepoSource(RepoSource $repoSource)
+        {
+        }
+        /**
+         * @return RepoSource
+         */
+        public function getRepoSource()
+        {
+        }
+        /**
+         * If provided, get the source from this location in Google Cloud Storage.
+         *
+         * @param StorageSource $storageSource
+         */
+        public function setStorageSource(StorageSource $storageSource)
+        {
+        }
+        /**
+         * @return StorageSource
+         */
+        public function getStorageSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudFunctions\Source registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGitUri()
-    {
-    }
-    /**
-     * If provided, get the source from this location in a Cloud Source
-     * Repository.
-     *
-     * @param RepoSource $repoSource
-     */
-    public function setRepoSource(RepoSource $repoSource)
-    {
-    }
-    /**
-     * @return RepoSource
-     */
-    public function getRepoSource()
-    {
-    }
-    /**
-     * If provided, get the source from this location in Google Cloud Storage.
-     *
-     * @param StorageSource $storageSource
-     */
-    public function setStorageSource(StorageSource $storageSource)
-    {
-    }
-    /**
-     * @return StorageSource
-     */
-    public function getStorageSource()
+    class Google_Service_CloudFunctions_Source extends \Google\Service\CloudFunctions\Source
     {
     }
 }

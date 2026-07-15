@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BatchReadFeatureValuesRequestEntityTypeSpec extends \Google\Collection
-{
-    protected $collection_key = 'settings';
-    /**
-     * Required. ID of the EntityType to select Features. The EntityType id is the
-     * entity_type_id specified during EntityType creation.
-     *
-     * @var string
-     */
-    public $entityTypeId;
-    protected $featureSelectorType = GoogleCloudAiplatformV1FeatureSelector::class;
-    protected $featureSelectorDataType = '';
-    protected $settingsType = GoogleCloudAiplatformV1DestinationFeatureSetting::class;
-    protected $settingsDataType = 'array';
-    /**
-     * Required. ID of the EntityType to select Features. The EntityType id is the
-     * entity_type_id specified during EntityType creation.
-     *
-     * @param string $entityTypeId
-     */
-    public function setEntityTypeId($entityTypeId)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BatchReadFeatureValuesRequestEntityTypeSpec extends \Google\Collection
     {
+        protected $collection_key = 'settings';
+        /**
+         * Required. ID of the EntityType to select Features. The EntityType id is the
+         * entity_type_id specified during EntityType creation.
+         *
+         * @var string
+         */
+        public $entityTypeId;
+        protected $featureSelectorType = GoogleCloudAiplatformV1FeatureSelector::class;
+        protected $featureSelectorDataType = '';
+        protected $settingsType = GoogleCloudAiplatformV1DestinationFeatureSetting::class;
+        protected $settingsDataType = 'array';
+        /**
+         * Required. ID of the EntityType to select Features. The EntityType id is the
+         * entity_type_id specified during EntityType creation.
+         *
+         * @param string $entityTypeId
+         */
+        public function setEntityTypeId($entityTypeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityTypeId()
+        {
+        }
+        /**
+         * Required. Selectors choosing which Feature values to read from the
+         * EntityType.
+         *
+         * @param GoogleCloudAiplatformV1FeatureSelector $featureSelector
+         */
+        public function setFeatureSelector(GoogleCloudAiplatformV1FeatureSelector $featureSelector)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeatureSelector
+         */
+        public function getFeatureSelector()
+        {
+        }
+        /**
+         * Per-Feature settings for the batch read.
+         *
+         * @param GoogleCloudAiplatformV1DestinationFeatureSetting[] $settings
+         */
+        public function setSettings($settings)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DestinationFeatureSetting[]
+         */
+        public function getSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchReadFeatureValuesRequestEntityTypeSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntityTypeId()
-    {
-    }
-    /**
-     * Required. Selectors choosing which Feature values to read from the
-     * EntityType.
-     *
-     * @param GoogleCloudAiplatformV1FeatureSelector $featureSelector
-     */
-    public function setFeatureSelector(GoogleCloudAiplatformV1FeatureSelector $featureSelector)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FeatureSelector
-     */
-    public function getFeatureSelector()
-    {
-    }
-    /**
-     * Per-Feature settings for the batch read.
-     *
-     * @param GoogleCloudAiplatformV1DestinationFeatureSetting[] $settings
-     */
-    public function setSettings($settings)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1DestinationFeatureSetting[]
-     */
-    public function getSettings()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BatchReadFeatureValuesRequestEntityTypeSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchReadFeatureValuesRequestEntityTypeSpec
     {
     }
 }

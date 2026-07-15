@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class BeginTransactionRequest extends \Google\Model
-{
-    protected $optionsType = TransactionOptions::class;
-    protected $optionsDataType = '';
-    /**
-     * The options for the transaction. Defaults to a read-write transaction.
-     *
-     * @param TransactionOptions $options
-     */
-    public function setOptions(TransactionOptions $options)
+namespace Google\Service\Firestore {
+    class BeginTransactionRequest extends \Google\Model
     {
+        protected $optionsType = TransactionOptions::class;
+        protected $optionsDataType = '';
+        /**
+         * The options for the transaction. Defaults to a read-write transaction.
+         *
+         * @param TransactionOptions $options
+         */
+        public function setOptions(TransactionOptions $options)
+        {
+        }
+        /**
+         * @return TransactionOptions
+         */
+        public function getOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TransactionOptions
+     * Runtime class alias of \Google\Service\Firestore\BeginTransactionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOptions()
+    class Google_Service_Firestore_BeginTransactionRequest extends \Google\Service\Firestore\BeginTransactionRequest
     {
     }
 }

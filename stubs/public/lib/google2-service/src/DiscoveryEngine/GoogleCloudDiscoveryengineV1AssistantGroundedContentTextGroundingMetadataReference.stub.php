@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataReference extends \Google\Model
-{
-    /**
-     * Referenced text content.
-     *
-     * @var string
-     */
-    public $content;
-    protected $documentMetadataType = GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataReferenceDocumentMetadata::class;
-    protected $documentMetadataDataType = '';
-    /**
-     * Referenced text content.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataReference extends \Google\Model
     {
+        /**
+         * Referenced text content.
+         *
+         * @var string
+         */
+        public $content;
+        protected $documentMetadataType = GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataReferenceDocumentMetadata::class;
+        protected $documentMetadataDataType = '';
+        /**
+         * Referenced text content.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Document metadata.
+         *
+         * @param GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataReferenceDocumentMetadata $documentMetadata
+         */
+        public function setDocumentMetadata(GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataReferenceDocumentMetadata $documentMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataReferenceDocumentMetadata
+         */
+        public function getDocumentMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * Document metadata.
-     *
-     * @param GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataReferenceDocumentMetadata $documentMetadata
-     */
-    public function setDocumentMetadata(GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataReferenceDocumentMetadata $documentMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataReferenceDocumentMetadata
-     */
-    public function getDocumentMetadata()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataReference extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataReference
     {
     }
 }

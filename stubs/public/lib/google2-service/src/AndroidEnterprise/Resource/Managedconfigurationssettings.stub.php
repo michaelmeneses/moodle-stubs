@@ -21,30 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise\Resource;
-
-/**
- * The "managedconfigurationssettings" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidenterpriseService = new Google\Service\AndroidEnterprise(...);
- *   $managedconfigurationssettings = $androidenterpriseService->managedconfigurationssettings;
- *  </code>
- */
-class Managedconfigurationssettings extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidEnterprise\Resource {
+    use Google\Service\AndroidEnterprise\ManagedConfigurationsSettingsListResponse;
     /**
-     * Lists all the managed configurations settings for the specified app.
-     * (managedconfigurationssettings.listManagedconfigurationssettings)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param string $productId The ID of the product for which the managed
-     * configurations settings applies to.
-     * @param array $optParams Optional parameters.
-     * @return ManagedConfigurationsSettingsListResponse
-     * @throws \Google\Service\Exception
+     * The "managedconfigurationssettings" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidenterpriseService = new Google\Service\AndroidEnterprise(...);
+     *   $managedconfigurationssettings = $androidenterpriseService->managedconfigurationssettings;
+     *  </code>
      */
-    public function listManagedconfigurationssettings($enterpriseId, $productId, $optParams = [])
+    class Managedconfigurationssettings extends \Google\Service\Resource
+    {
+        /**
+         * Lists all the managed configurations settings for the specified app.
+         * (managedconfigurationssettings.listManagedconfigurationssettings)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param string $productId The ID of the product for which the managed
+         * configurations settings applies to.
+         * @param array $optParams Optional parameters.
+         * @return ManagedConfigurationsSettingsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listManagedconfigurationssettings($enterpriseId, $productId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AndroidEnterprise\Resource\Managedconfigurationssettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AndroidEnterprise_Resource_Managedconfigurationssettings extends \Google\Service\AndroidEnterprise\Resource\Managedconfigurationssettings
     {
     }
 }

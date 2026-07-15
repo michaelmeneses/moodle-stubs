@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class RoutineReference extends \Google\Model
-{
-    /**
-     * Required. The ID of the dataset containing this routine.
-     *
-     * @var string
-     */
-    public $datasetId;
-    /**
-     * Required. The ID of the project containing this routine.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Required. The ID of the routine. The ID must contain only letters (a-z,
-     * A-Z), numbers (0-9), or underscores (_). The maximum length is 256
-     * characters.
-     *
-     * @var string
-     */
-    public $routineId;
-    /**
-     * Required. The ID of the dataset containing this routine.
-     *
-     * @param string $datasetId
-     */
-    public function setDatasetId($datasetId)
+namespace Google\Service\Bigquery {
+    class RoutineReference extends \Google\Model
     {
+        /**
+         * Required. The ID of the dataset containing this routine.
+         *
+         * @var string
+         */
+        public $datasetId;
+        /**
+         * Required. The ID of the project containing this routine.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Required. The ID of the routine. The ID must contain only letters (a-z,
+         * A-Z), numbers (0-9), or underscores (_). The maximum length is 256
+         * characters.
+         *
+         * @var string
+         */
+        public $routineId;
+        /**
+         * Required. The ID of the dataset containing this routine.
+         *
+         * @param string $datasetId
+         */
+        public function setDatasetId($datasetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatasetId()
+        {
+        }
+        /**
+         * Required. The ID of the project containing this routine.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Required. The ID of the routine. The ID must contain only letters (a-z,
+         * A-Z), numbers (0-9), or underscores (_). The maximum length is 256
+         * characters.
+         *
+         * @param string $routineId
+         */
+        public function setRoutineId($routineId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRoutineId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\RoutineReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatasetId()
-    {
-    }
-    /**
-     * Required. The ID of the project containing this routine.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Required. The ID of the routine. The ID must contain only letters (a-z,
-     * A-Z), numbers (0-9), or underscores (_). The maximum length is 256
-     * characters.
-     *
-     * @param string $routineId
-     */
-    public function setRoutineId($routineId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRoutineId()
+    class Google_Service_Bigquery_RoutineReference extends \Google\Service\Bigquery\RoutineReference
     {
     }
 }

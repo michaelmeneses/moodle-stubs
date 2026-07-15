@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class CohortReportSettings extends \Google\Model
-{
-    /**
-     * If true, accumulates the result from first touch day to the end day. Not
-     * supported in `RunReportRequest`.
-     *
-     * @var bool
-     */
-    public $accumulate;
-    /**
-     * If true, accumulates the result from first touch day to the end day. Not
-     * supported in `RunReportRequest`.
-     *
-     * @param bool $accumulate
-     */
-    public function setAccumulate($accumulate)
+namespace Google\Service\AnalyticsData {
+    class CohortReportSettings extends \Google\Model
     {
+        /**
+         * If true, accumulates the result from first touch day to the end day. Not
+         * supported in `RunReportRequest`.
+         *
+         * @var bool
+         */
+        public $accumulate;
+        /**
+         * If true, accumulates the result from first touch day to the end day. Not
+         * supported in `RunReportRequest`.
+         *
+         * @param bool $accumulate
+         */
+        public function setAccumulate($accumulate)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAccumulate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AnalyticsData\CohortReportSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccumulate()
+    class Google_Service_AnalyticsData_CohortReportSettings extends \Google\Service\AnalyticsData\CohortReportSettings
     {
     }
 }

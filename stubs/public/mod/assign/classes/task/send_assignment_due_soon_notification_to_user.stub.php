@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_assign\task;
 
+use core\task\adhoc_task;
+use mod_assign\notification_helper;
 /**
  * Ad-hoc task to send a notification to a user about an approaching due date.
  *

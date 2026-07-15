@@ -29,6 +29,7 @@
  */
 namespace core_cache\privacy;
 
+use core_privacy\local\metadata\collection;
 /**
  * Privacy Subsystem implementation for core_cache.
  *

@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ListCustomBiddingAlgorithmsResponse extends \Google\Collection
-{
-    protected $collection_key = 'customBiddingAlgorithms';
-    protected $customBiddingAlgorithmsType = CustomBiddingAlgorithm::class;
-    protected $customBiddingAlgorithmsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to
-     * `ListCustomBiddingAlgorithmsRequest` method to retrieve the next page of
-     * results. If this field is null, it means this is the last page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of custom bidding algorithms. This list will be absent if empty.
-     *
-     * @param CustomBiddingAlgorithm[] $customBiddingAlgorithms
-     */
-    public function setCustomBiddingAlgorithms($customBiddingAlgorithms)
+namespace Google\Service\DisplayVideo {
+    class ListCustomBiddingAlgorithmsResponse extends \Google\Collection
     {
+        protected $collection_key = 'customBiddingAlgorithms';
+        protected $customBiddingAlgorithmsType = CustomBiddingAlgorithm::class;
+        protected $customBiddingAlgorithmsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to
+         * `ListCustomBiddingAlgorithmsRequest` method to retrieve the next page of
+         * results. If this field is null, it means this is the last page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of custom bidding algorithms. This list will be absent if empty.
+         *
+         * @param CustomBiddingAlgorithm[] $customBiddingAlgorithms
+         */
+        public function setCustomBiddingAlgorithms($customBiddingAlgorithms)
+        {
+        }
+        /**
+         * @return CustomBiddingAlgorithm[]
+         */
+        public function getCustomBiddingAlgorithms()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to
+         * `ListCustomBiddingAlgorithmsRequest` method to retrieve the next page of
+         * results. If this field is null, it means this is the last page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomBiddingAlgorithm[]
+     * Runtime class alias of \Google\Service\DisplayVideo\ListCustomBiddingAlgorithmsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomBiddingAlgorithms()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to
-     * `ListCustomBiddingAlgorithmsRequest` method to retrieve the next page of
-     * results. If this field is null, it means this is the last page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DisplayVideo_ListCustomBiddingAlgorithmsResponse extends \Google\Service\DisplayVideo\ListCustomBiddingAlgorithmsResponse
     {
     }
 }

@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class AutoscalingSettings extends \Google\Model
-{
-    protected $autoscalingPoliciesType = AutoscalingPolicy::class;
-    protected $autoscalingPoliciesDataType = 'map';
-    /**
-     * Optional. The minimum duration between consecutive autoscale operations. It
-     * starts once addition or removal of nodes is fully completed. Defaults to 30
-     * minutes if not specified. Cool down period must be in whole minutes (for
-     * example, 30, 31, 50, 180 minutes).
-     *
-     * @var string
-     */
-    public $coolDownPeriod;
-    /**
-     * Optional. Maximum number of nodes of any type in a cluster. If not
-     * specified the default limits apply.
-     *
-     * @var int
-     */
-    public $maxClusterNodeCount;
-    /**
-     * Optional. Minimum number of nodes of any type in a cluster. If not
-     * specified the default limits apply.
-     *
-     * @var int
-     */
-    public $minClusterNodeCount;
-    /**
-     * Required. The map with autoscaling policies applied to the cluster. The key
-     * is the identifier of the policy. It must meet the following requirements: *
-     * Only contains 1-63 alphanumeric characters and hyphens * Begins with an
-     * alphabetical character * Ends with a non-hyphen character * Not formatted
-     * as a UUID * Complies with [RFC
-     * 1034](https://datatracker.ietf.org/doc/html/rfc1034) (section 3.5)
-     * Currently there map must contain only one element that describes the
-     * autoscaling policy for compute nodes.
-     *
-     * @param AutoscalingPolicy[] $autoscalingPolicies
-     */
-    public function setAutoscalingPolicies($autoscalingPolicies)
+namespace Google\Service\VMwareEngine {
+    class AutoscalingSettings extends \Google\Model
     {
+        protected $autoscalingPoliciesType = AutoscalingPolicy::class;
+        protected $autoscalingPoliciesDataType = 'map';
+        /**
+         * Optional. The minimum duration between consecutive autoscale operations. It
+         * starts once addition or removal of nodes is fully completed. Defaults to 30
+         * minutes if not specified. Cool down period must be in whole minutes (for
+         * example, 30, 31, 50, 180 minutes).
+         *
+         * @var string
+         */
+        public $coolDownPeriod;
+        /**
+         * Optional. Maximum number of nodes of any type in a cluster. If not
+         * specified the default limits apply.
+         *
+         * @var int
+         */
+        public $maxClusterNodeCount;
+        /**
+         * Optional. Minimum number of nodes of any type in a cluster. If not
+         * specified the default limits apply.
+         *
+         * @var int
+         */
+        public $minClusterNodeCount;
+        /**
+         * Required. The map with autoscaling policies applied to the cluster. The key
+         * is the identifier of the policy. It must meet the following requirements: *
+         * Only contains 1-63 alphanumeric characters and hyphens * Begins with an
+         * alphabetical character * Ends with a non-hyphen character * Not formatted
+         * as a UUID * Complies with [RFC
+         * 1034](https://datatracker.ietf.org/doc/html/rfc1034) (section 3.5)
+         * Currently there map must contain only one element that describes the
+         * autoscaling policy for compute nodes.
+         *
+         * @param AutoscalingPolicy[] $autoscalingPolicies
+         */
+        public function setAutoscalingPolicies($autoscalingPolicies)
+        {
+        }
+        /**
+         * @return AutoscalingPolicy[]
+         */
+        public function getAutoscalingPolicies()
+        {
+        }
+        /**
+         * Optional. The minimum duration between consecutive autoscale operations. It
+         * starts once addition or removal of nodes is fully completed. Defaults to 30
+         * minutes if not specified. Cool down period must be in whole minutes (for
+         * example, 30, 31, 50, 180 minutes).
+         *
+         * @param string $coolDownPeriod
+         */
+        public function setCoolDownPeriod($coolDownPeriod)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCoolDownPeriod()
+        {
+        }
+        /**
+         * Optional. Maximum number of nodes of any type in a cluster. If not
+         * specified the default limits apply.
+         *
+         * @param int $maxClusterNodeCount
+         */
+        public function setMaxClusterNodeCount($maxClusterNodeCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxClusterNodeCount()
+        {
+        }
+        /**
+         * Optional. Minimum number of nodes of any type in a cluster. If not
+         * specified the default limits apply.
+         *
+         * @param int $minClusterNodeCount
+         */
+        public function setMinClusterNodeCount($minClusterNodeCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinClusterNodeCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AutoscalingPolicy[]
+     * Runtime class alias of \Google\Service\VMwareEngine\AutoscalingSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoscalingPolicies()
-    {
-    }
-    /**
-     * Optional. The minimum duration between consecutive autoscale operations. It
-     * starts once addition or removal of nodes is fully completed. Defaults to 30
-     * minutes if not specified. Cool down period must be in whole minutes (for
-     * example, 30, 31, 50, 180 minutes).
-     *
-     * @param string $coolDownPeriod
-     */
-    public function setCoolDownPeriod($coolDownPeriod)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCoolDownPeriod()
-    {
-    }
-    /**
-     * Optional. Maximum number of nodes of any type in a cluster. If not
-     * specified the default limits apply.
-     *
-     * @param int $maxClusterNodeCount
-     */
-    public function setMaxClusterNodeCount($maxClusterNodeCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxClusterNodeCount()
-    {
-    }
-    /**
-     * Optional. Minimum number of nodes of any type in a cluster. If not
-     * specified the default limits apply.
-     *
-     * @param int $minClusterNodeCount
-     */
-    public function setMinClusterNodeCount($minClusterNodeCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinClusterNodeCount()
+    class Google_Service_VMwareEngine_AutoscalingSettings extends \Google\Service\VMwareEngine\AutoscalingSettings
     {
     }
 }

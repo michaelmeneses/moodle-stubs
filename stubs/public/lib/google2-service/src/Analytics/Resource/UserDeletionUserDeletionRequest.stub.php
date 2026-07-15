@@ -21,27 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics\Resource;
-
-/**
- * The "userDeletionRequest" collection of methods.
- * Typical usage is:
- *  <code>
- *   $analyticsService = new Google\Service\Analytics(...);
- *   $userDeletionRequest = $analyticsService->userDeletion_userDeletionRequest;
- *  </code>
- */
-class UserDeletionUserDeletionRequest extends \Google\Service\Resource
-{
+namespace Google\Service\Analytics\Resource {
+    use Google\Service\Analytics\UserDeletionRequest;
     /**
-     * Insert or update a user deletion requests. (userDeletionRequest.upsert)
-     *
-     * @param UserDeletionRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return UserDeletionRequest
-     * @throws \Google\Service\Exception
+     * The "userDeletionRequest" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $analyticsService = new Google\Service\Analytics(...);
+     *   $userDeletionRequest = $analyticsService->userDeletion_userDeletionRequest;
+     *  </code>
      */
-    public function upsert(UserDeletionRequest $postBody, $optParams = [])
+    class UserDeletionUserDeletionRequest extends \Google\Service\Resource
+    {
+        /**
+         * Insert or update a user deletion requests. (userDeletionRequest.upsert)
+         *
+         * @param UserDeletionRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return UserDeletionRequest
+         * @throws \Google\Service\Exception
+         */
+        public function upsert(UserDeletionRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Analytics\Resource\UserDeletionUserDeletionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Analytics_Resource_UserDeletionUserDeletionRequest extends \Google\Service\Analytics\Resource\UserDeletionUserDeletionRequest
     {
     }
 }

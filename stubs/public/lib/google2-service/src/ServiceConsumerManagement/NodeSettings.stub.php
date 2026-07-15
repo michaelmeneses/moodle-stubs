@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceConsumerManagement;
-
-class NodeSettings extends \Google\Model
-{
-    protected $commonType = CommonLanguageSettings::class;
-    protected $commonDataType = '';
-    /**
-     * Some settings.
-     *
-     * @param CommonLanguageSettings $common
-     */
-    public function setCommon(CommonLanguageSettings $common)
+namespace Google\Service\ServiceConsumerManagement {
+    class NodeSettings extends \Google\Model
     {
+        protected $commonType = CommonLanguageSettings::class;
+        protected $commonDataType = '';
+        /**
+         * Some settings.
+         *
+         * @param CommonLanguageSettings $common
+         */
+        public function setCommon(CommonLanguageSettings $common)
+        {
+        }
+        /**
+         * @return CommonLanguageSettings
+         */
+        public function getCommon()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CommonLanguageSettings
+     * Runtime class alias of \Google\Service\ServiceConsumerManagement\NodeSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommon()
+    class Google_Service_ServiceConsumerManagement_NodeSettings extends \Google\Service\ServiceConsumerManagement\NodeSettings
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class BackupConfiguration extends \Google\Model
-{
-    /**
-     * Whether customer visible automated backups are enabled on the instance.
-     *
-     * @var bool
-     */
-    public $automatedBackupEnabled;
-    protected $backupRetentionSettingsType = RetentionSettings::class;
-    protected $backupRetentionSettingsDataType = '';
-    /**
-     * Whether point-in-time recovery is enabled. This is optional field, if the
-     * database service does not have this feature or metadata is not available in
-     * control plane, this can be omitted.
-     *
-     * @var bool
-     */
-    public $pointInTimeRecoveryEnabled;
-    /**
-     * Whether customer visible automated backups are enabled on the instance.
-     *
-     * @param bool $automatedBackupEnabled
-     */
-    public function setAutomatedBackupEnabled($automatedBackupEnabled)
+namespace Google\Service\CloudRedis {
+    class BackupConfiguration extends \Google\Model
     {
+        /**
+         * Whether customer visible automated backups are enabled on the instance.
+         *
+         * @var bool
+         */
+        public $automatedBackupEnabled;
+        protected $backupRetentionSettingsType = RetentionSettings::class;
+        protected $backupRetentionSettingsDataType = '';
+        /**
+         * Whether point-in-time recovery is enabled. This is optional field, if the
+         * database service does not have this feature or metadata is not available in
+         * control plane, this can be omitted.
+         *
+         * @var bool
+         */
+        public $pointInTimeRecoveryEnabled;
+        /**
+         * Whether customer visible automated backups are enabled on the instance.
+         *
+         * @param bool $automatedBackupEnabled
+         */
+        public function setAutomatedBackupEnabled($automatedBackupEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutomatedBackupEnabled()
+        {
+        }
+        /**
+         * Backup retention settings.
+         *
+         * @param RetentionSettings $backupRetentionSettings
+         */
+        public function setBackupRetentionSettings(RetentionSettings $backupRetentionSettings)
+        {
+        }
+        /**
+         * @return RetentionSettings
+         */
+        public function getBackupRetentionSettings()
+        {
+        }
+        /**
+         * Whether point-in-time recovery is enabled. This is optional field, if the
+         * database service does not have this feature or metadata is not available in
+         * control plane, this can be omitted.
+         *
+         * @param bool $pointInTimeRecoveryEnabled
+         */
+        public function setPointInTimeRecoveryEnabled($pointInTimeRecoveryEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPointInTimeRecoveryEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudRedis\BackupConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutomatedBackupEnabled()
-    {
-    }
-    /**
-     * Backup retention settings.
-     *
-     * @param RetentionSettings $backupRetentionSettings
-     */
-    public function setBackupRetentionSettings(RetentionSettings $backupRetentionSettings)
-    {
-    }
-    /**
-     * @return RetentionSettings
-     */
-    public function getBackupRetentionSettings()
-    {
-    }
-    /**
-     * Whether point-in-time recovery is enabled. This is optional field, if the
-     * database service does not have this feature or metadata is not available in
-     * control plane, this can be omitted.
-     *
-     * @param bool $pointInTimeRecoveryEnabled
-     */
-    public function setPointInTimeRecoveryEnabled($pointInTimeRecoveryEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPointInTimeRecoveryEnabled()
+    class Google_Service_CloudRedis_BackupConfiguration extends \Google\Service\CloudRedis\BackupConfiguration
     {
     }
 }

@@ -21,71 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryDataTransfer\Resource;
-
-/**
- * The "dataSources" collection of methods.
- * Typical usage is:
- *  <code>
- *   $bigquerydatatransferService = new Google\Service\BigQueryDataTransfer(...);
- *   $dataSources = $bigquerydatatransferService->projects_dataSources;
- *  </code>
- */
-class ProjectsDataSources extends \Google\Service\Resource
-{
+namespace Google\Service\BigQueryDataTransfer\Resource {
+    use Google\Service\BigQueryDataTransfer\CheckValidCredsRequest;
+    use Google\Service\BigQueryDataTransfer\CheckValidCredsResponse;
+    use Google\Service\BigQueryDataTransfer\DataSource;
+    use Google\Service\BigQueryDataTransfer\ListDataSourcesResponse;
     /**
-     * Returns true if valid credentials exist for the given data source and
-     * requesting user. (dataSources.checkValidCreds)
-     *
-     * @param string $name Required. The name of the data source. If you are using
-     * the regionless method, the location must be `US` and the name should be in
-     * the following form: * `projects/{project_id}/dataSources/{data_source_id}` If
-     * you are using the regionalized method, the name should be in the following
-     * form: *
-     * `projects/{project_id}/locations/{location_id}/dataSources/{data_source_id}`
-     * @param CheckValidCredsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return CheckValidCredsResponse
-     * @throws \Google\Service\Exception
+     * The "dataSources" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $bigquerydatatransferService = new Google\Service\BigQueryDataTransfer(...);
+     *   $dataSources = $bigquerydatatransferService->projects_dataSources;
+     *  </code>
      */
-    public function checkValidCreds($name, CheckValidCredsRequest $postBody, $optParams = [])
+    class ProjectsDataSources extends \Google\Service\Resource
     {
+        /**
+         * Returns true if valid credentials exist for the given data source and
+         * requesting user. (dataSources.checkValidCreds)
+         *
+         * @param string $name Required. The name of the data source. If you are using
+         * the regionless method, the location must be `US` and the name should be in
+         * the following form: * `projects/{project_id}/dataSources/{data_source_id}` If
+         * you are using the regionalized method, the name should be in the following
+         * form: *
+         * `projects/{project_id}/locations/{location_id}/dataSources/{data_source_id}`
+         * @param CheckValidCredsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return CheckValidCredsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function checkValidCreds($name, CheckValidCredsRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a supported data source and returns its settings. (dataSources.get)
+         *
+         * @param string $name Required. The name of the resource requested. If you are
+         * using the regionless method, the location must be `US` and the name should be
+         * in the following form: * `projects/{project_id}/dataSources/{data_source_id}`
+         * If you are using the regionalized method, the name should be in the following
+         * form: *
+         * `projects/{project_id}/locations/{location_id}/dataSources/{data_source_id}`
+         * @param array $optParams Optional parameters.
+         * @return DataSource
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists supported data sources and returns their settings.
+         * (dataSources.listProjectsDataSources)
+         *
+         * @param string $parent Required. The BigQuery project id for which data
+         * sources should be returned. Must be in the form: `projects/{project_id}` or
+         * `projects/{project_id}/locations/{location_id}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Page size. The default page size is the maximum value
+         * of 1000 results.
+         * @opt_param string pageToken Pagination token, which can be used to request a
+         * specific page of `ListDataSourcesRequest` list results. For multiple-page
+         * results, `ListDataSourcesResponse` outputs a `next_page` token, which can be
+         * used as the `page_token` value to request the next page of list results.
+         * @return ListDataSourcesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsDataSources($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a supported data source and returns its settings. (dataSources.get)
-     *
-     * @param string $name Required. The name of the resource requested. If you are
-     * using the regionless method, the location must be `US` and the name should be
-     * in the following form: * `projects/{project_id}/dataSources/{data_source_id}`
-     * If you are using the regionalized method, the name should be in the following
-     * form: *
-     * `projects/{project_id}/locations/{location_id}/dataSources/{data_source_id}`
-     * @param array $optParams Optional parameters.
-     * @return DataSource
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\BigQueryDataTransfer\Resource\ProjectsDataSources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists supported data sources and returns their settings.
-     * (dataSources.listProjectsDataSources)
-     *
-     * @param string $parent Required. The BigQuery project id for which data
-     * sources should be returned. Must be in the form: `projects/{project_id}` or
-     * `projects/{project_id}/locations/{location_id}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Page size. The default page size is the maximum value
-     * of 1000 results.
-     * @opt_param string pageToken Pagination token, which can be used to request a
-     * specific page of `ListDataSourcesRequest` list results. For multiple-page
-     * results, `ListDataSourcesResponse` outputs a `next_page` token, which can be
-     * used as the `page_token` value to request the next page of list results.
-     * @return ListDataSourcesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsDataSources($parent, $optParams = [])
+    class Google_Service_BigQueryDataTransfer_Resource_ProjectsDataSources extends \Google\Service\BigQueryDataTransfer\Resource\ProjectsDataSources
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1DimensionIssueDimensionMetadata extends \Google\Model
-{
-    /**
-     * The issue display name.
-     *
-     * @var string
-     */
-    public $issueDisplayName;
-    /**
-     * The issue ID.
-     *
-     * @var string
-     */
-    public $issueId;
-    /**
-     * The parent issue model ID.
-     *
-     * @var string
-     */
-    public $issueModelId;
-    /**
-     * The issue display name.
-     *
-     * @param string $issueDisplayName
-     */
-    public function setIssueDisplayName($issueDisplayName)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1DimensionIssueDimensionMetadata extends \Google\Model
     {
+        /**
+         * The issue display name.
+         *
+         * @var string
+         */
+        public $issueDisplayName;
+        /**
+         * The issue ID.
+         *
+         * @var string
+         */
+        public $issueId;
+        /**
+         * The parent issue model ID.
+         *
+         * @var string
+         */
+        public $issueModelId;
+        /**
+         * The issue display name.
+         *
+         * @param string $issueDisplayName
+         */
+        public function setIssueDisplayName($issueDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssueDisplayName()
+        {
+        }
+        /**
+         * The issue ID.
+         *
+         * @param string $issueId
+         */
+        public function setIssueId($issueId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssueId()
+        {
+        }
+        /**
+         * The parent issue model ID.
+         *
+         * @param string $issueModelId
+         */
+        public function setIssueModelId($issueModelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssueModelId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1DimensionIssueDimensionMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIssueDisplayName()
-    {
-    }
-    /**
-     * The issue ID.
-     *
-     * @param string $issueId
-     */
-    public function setIssueId($issueId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIssueId()
-    {
-    }
-    /**
-     * The parent issue model ID.
-     *
-     * @param string $issueModelId
-     */
-    public function setIssueModelId($issueModelId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIssueModelId()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1DimensionIssueDimensionMetadata extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1DimensionIssueDimensionMetadata
     {
     }
 }

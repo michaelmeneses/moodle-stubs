@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusAuthconfigAuthConfigTaskParam extends \Google\Collection
-{
-    protected $collection_key = 'allowedCredentialTypes';
-    /**
-     * Defines the credential types to be supported as Task may restrict specific
-     * types to use, e.g. Cloud SQL Task will use username/password type only.
-     *
-     * @var string[]
-     */
-    public $allowedCredentialTypes;
-    /**
-     * @var bool
-     */
-    public $allowedServiceAccountInContext;
-    /**
-     * UUID of the AuthConfig.
-     *
-     * @var string
-     */
-    public $authConfigId;
-    /**
-     * A space-delimited list of requested scope permissions.
-     *
-     * @var string
-     */
-    public $scope;
-    /**
-     * @var bool
-     */
-    public $useServiceAccountInContext;
-    /**
-     * Defines the credential types to be supported as Task may restrict specific
-     * types to use, e.g. Cloud SQL Task will use username/password type only.
-     *
-     * @param string[] $allowedCredentialTypes
-     */
-    public function setAllowedCredentialTypes($allowedCredentialTypes)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusAuthconfigAuthConfigTaskParam extends \Google\Collection
     {
+        protected $collection_key = 'allowedCredentialTypes';
+        /**
+         * Defines the credential types to be supported as Task may restrict specific
+         * types to use, e.g. Cloud SQL Task will use username/password type only.
+         *
+         * @var string[]
+         */
+        public $allowedCredentialTypes;
+        /**
+         * @var bool
+         */
+        public $allowedServiceAccountInContext;
+        /**
+         * UUID of the AuthConfig.
+         *
+         * @var string
+         */
+        public $authConfigId;
+        /**
+         * A space-delimited list of requested scope permissions.
+         *
+         * @var string
+         */
+        public $scope;
+        /**
+         * @var bool
+         */
+        public $useServiceAccountInContext;
+        /**
+         * Defines the credential types to be supported as Task may restrict specific
+         * types to use, e.g. Cloud SQL Task will use username/password type only.
+         *
+         * @param string[] $allowedCredentialTypes
+         */
+        public function setAllowedCredentialTypes($allowedCredentialTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowedCredentialTypes()
+        {
+        }
+        /**
+         * @param bool $allowedServiceAccountInContext
+         */
+        public function setAllowedServiceAccountInContext($allowedServiceAccountInContext)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowedServiceAccountInContext()
+        {
+        }
+        /**
+         * UUID of the AuthConfig.
+         *
+         * @param string $authConfigId
+         */
+        public function setAuthConfigId($authConfigId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthConfigId()
+        {
+        }
+        /**
+         * A space-delimited list of requested scope permissions.
+         *
+         * @param string $scope
+         */
+        public function setScope($scope)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScope()
+        {
+        }
+        /**
+         * @param bool $useServiceAccountInContext
+         */
+        public function setUseServiceAccountInContext($useServiceAccountInContext)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseServiceAccountInContext()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusAuthconfigAuthConfigTaskParam registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedCredentialTypes()
-    {
-    }
-    /**
-     * @param bool $allowedServiceAccountInContext
-     */
-    public function setAllowedServiceAccountInContext($allowedServiceAccountInContext)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAllowedServiceAccountInContext()
-    {
-    }
-    /**
-     * UUID of the AuthConfig.
-     *
-     * @param string $authConfigId
-     */
-    public function setAuthConfigId($authConfigId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAuthConfigId()
-    {
-    }
-    /**
-     * A space-delimited list of requested scope permissions.
-     *
-     * @param string $scope
-     */
-    public function setScope($scope)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScope()
-    {
-    }
-    /**
-     * @param bool $useServiceAccountInContext
-     */
-    public function setUseServiceAccountInContext($useServiceAccountInContext)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseServiceAccountInContext()
+    class Google_Service_Integrations_EnterpriseCrmEventbusAuthconfigAuthConfigTaskParam extends \Google\Service\Integrations\EnterpriseCrmEventbusAuthconfigAuthConfigTaskParam
     {
     }
 }

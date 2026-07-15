@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class JsonOptions extends \Google\Model
-{
-    /**
-     * Optional. The character encoding of the data. The supported values are
-     * UTF-8, UTF-16BE, UTF-16LE, UTF-32BE, and UTF-32LE. The default value is
-     * UTF-8.
-     *
-     * @var string
-     */
-    public $encoding;
-    /**
-     * Optional. The character encoding of the data. The supported values are
-     * UTF-8, UTF-16BE, UTF-16LE, UTF-32BE, and UTF-32LE. The default value is
-     * UTF-8.
-     *
-     * @param string $encoding
-     */
-    public function setEncoding($encoding)
+namespace Google\Service\Bigquery {
+    class JsonOptions extends \Google\Model
     {
+        /**
+         * Optional. The character encoding of the data. The supported values are
+         * UTF-8, UTF-16BE, UTF-16LE, UTF-32BE, and UTF-32LE. The default value is
+         * UTF-8.
+         *
+         * @var string
+         */
+        public $encoding;
+        /**
+         * Optional. The character encoding of the data. The supported values are
+         * UTF-8, UTF-16BE, UTF-16LE, UTF-32BE, and UTF-32LE. The default value is
+         * UTF-8.
+         *
+         * @param string $encoding
+         */
+        public function setEncoding($encoding)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncoding()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\JsonOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncoding()
+    class Google_Service_Bigquery_JsonOptions extends \Google\Service\Bigquery\JsonOptions
     {
     }
 }

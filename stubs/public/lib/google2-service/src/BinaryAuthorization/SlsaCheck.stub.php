@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization;
-
-class SlsaCheck extends \Google\Collection
-{
-    protected $collection_key = 'rules';
-    protected $rulesType = VerificationRule::class;
-    protected $rulesDataType = 'array';
-    /**
-     * Specifies a list of verification rules for the SLSA attestations. An image
-     * is considered compliant with the SlsaCheck if any of the rules are
-     * satisfied.
-     *
-     * @param VerificationRule[] $rules
-     */
-    public function setRules($rules)
+namespace Google\Service\BinaryAuthorization {
+    class SlsaCheck extends \Google\Collection
     {
+        protected $collection_key = 'rules';
+        protected $rulesType = VerificationRule::class;
+        protected $rulesDataType = 'array';
+        /**
+         * Specifies a list of verification rules for the SLSA attestations. An image
+         * is considered compliant with the SlsaCheck if any of the rules are
+         * satisfied.
+         *
+         * @param VerificationRule[] $rules
+         */
+        public function setRules($rules)
+        {
+        }
+        /**
+         * @return VerificationRule[]
+         */
+        public function getRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VerificationRule[]
+     * Runtime class alias of \Google\Service\BinaryAuthorization\SlsaCheck registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRules()
+    class Google_Service_BinaryAuthorization_SlsaCheck extends \Google\Service\BinaryAuthorization\SlsaCheck
     {
     }
 }

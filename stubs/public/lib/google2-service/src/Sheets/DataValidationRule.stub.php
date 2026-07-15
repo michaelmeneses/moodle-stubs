@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DataValidationRule extends \Google\Model
-{
-    protected $conditionType = BooleanCondition::class;
-    protected $conditionDataType = '';
-    /**
-     * A message to show the user when adding data to the cell.
-     *
-     * @var string
-     */
-    public $inputMessage;
-    /**
-     * True if the UI should be customized based on the kind of condition. If
-     * true, "List" conditions will show a dropdown.
-     *
-     * @var bool
-     */
-    public $showCustomUi;
-    /**
-     * True if invalid data should be rejected.
-     *
-     * @var bool
-     */
-    public $strict;
-    /**
-     * The condition that data in the cell must match.
-     *
-     * @param BooleanCondition $condition
-     */
-    public function setCondition(BooleanCondition $condition)
+namespace Google\Service\Sheets {
+    class DataValidationRule extends \Google\Model
     {
+        protected $conditionType = BooleanCondition::class;
+        protected $conditionDataType = '';
+        /**
+         * A message to show the user when adding data to the cell.
+         *
+         * @var string
+         */
+        public $inputMessage;
+        /**
+         * True if the UI should be customized based on the kind of condition. If
+         * true, "List" conditions will show a dropdown.
+         *
+         * @var bool
+         */
+        public $showCustomUi;
+        /**
+         * True if invalid data should be rejected.
+         *
+         * @var bool
+         */
+        public $strict;
+        /**
+         * The condition that data in the cell must match.
+         *
+         * @param BooleanCondition $condition
+         */
+        public function setCondition(BooleanCondition $condition)
+        {
+        }
+        /**
+         * @return BooleanCondition
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * A message to show the user when adding data to the cell.
+         *
+         * @param string $inputMessage
+         */
+        public function setInputMessage($inputMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInputMessage()
+        {
+        }
+        /**
+         * True if the UI should be customized based on the kind of condition. If
+         * true, "List" conditions will show a dropdown.
+         *
+         * @param bool $showCustomUi
+         */
+        public function setShowCustomUi($showCustomUi)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getShowCustomUi()
+        {
+        }
+        /**
+         * True if invalid data should be rejected.
+         *
+         * @param bool $strict
+         */
+        public function setStrict($strict)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStrict()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BooleanCondition
+     * Runtime class alias of \Google\Service\Sheets\DataValidationRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCondition()
-    {
-    }
-    /**
-     * A message to show the user when adding data to the cell.
-     *
-     * @param string $inputMessage
-     */
-    public function setInputMessage($inputMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInputMessage()
-    {
-    }
-    /**
-     * True if the UI should be customized based on the kind of condition. If
-     * true, "List" conditions will show a dropdown.
-     *
-     * @param bool $showCustomUi
-     */
-    public function setShowCustomUi($showCustomUi)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getShowCustomUi()
-    {
-    }
-    /**
-     * True if invalid data should be rejected.
-     *
-     * @param bool $strict
-     */
-    public function setStrict($strict)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getStrict()
+    class Google_Service_Sheets_DataValidationRule extends \Google\Service\Sheets\DataValidationRule
     {
     }
 }

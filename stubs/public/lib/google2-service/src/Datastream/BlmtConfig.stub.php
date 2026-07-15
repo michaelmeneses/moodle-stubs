@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class BlmtConfig extends \Google\Model
-{
-    /**
-     * Default value.
-     */
-    public const FILE_FORMAT_FILE_FORMAT_UNSPECIFIED = 'FILE_FORMAT_UNSPECIFIED';
-    /**
-     * Parquet file format.
-     */
-    public const FILE_FORMAT_PARQUET = 'PARQUET';
-    /**
-     * Default value.
-     */
-    public const TABLE_FORMAT_TABLE_FORMAT_UNSPECIFIED = 'TABLE_FORMAT_UNSPECIFIED';
-    /**
-     * Iceberg table format.
-     */
-    public const TABLE_FORMAT_ICEBERG = 'ICEBERG';
-    /**
-     * Required. The Cloud Storage bucket name.
-     *
-     * @var string
-     */
-    public $bucket;
-    /**
-     * Required. The bigquery connection. Format: `{project}.{location}.{name}`
-     *
-     * @var string
-     */
-    public $connectionName;
-    /**
-     * Required. The file format.
-     *
-     * @var string
-     */
-    public $fileFormat;
-    /**
-     * The root path inside the Cloud Storage bucket.
-     *
-     * @var string
-     */
-    public $rootPath;
-    /**
-     * Required. The table format.
-     *
-     * @var string
-     */
-    public $tableFormat;
-    /**
-     * Required. The Cloud Storage bucket name.
-     *
-     * @param string $bucket
-     */
-    public function setBucket($bucket)
+namespace Google\Service\Datastream {
+    class BlmtConfig extends \Google\Model
     {
+        /**
+         * Default value.
+         */
+        public const FILE_FORMAT_FILE_FORMAT_UNSPECIFIED = 'FILE_FORMAT_UNSPECIFIED';
+        /**
+         * Parquet file format.
+         */
+        public const FILE_FORMAT_PARQUET = 'PARQUET';
+        /**
+         * Default value.
+         */
+        public const TABLE_FORMAT_TABLE_FORMAT_UNSPECIFIED = 'TABLE_FORMAT_UNSPECIFIED';
+        /**
+         * Iceberg table format.
+         */
+        public const TABLE_FORMAT_ICEBERG = 'ICEBERG';
+        /**
+         * Required. The Cloud Storage bucket name.
+         *
+         * @var string
+         */
+        public $bucket;
+        /**
+         * Required. The bigquery connection. Format: `{project}.{location}.{name}`
+         *
+         * @var string
+         */
+        public $connectionName;
+        /**
+         * Required. The file format.
+         *
+         * @var string
+         */
+        public $fileFormat;
+        /**
+         * The root path inside the Cloud Storage bucket.
+         *
+         * @var string
+         */
+        public $rootPath;
+        /**
+         * Required. The table format.
+         *
+         * @var string
+         */
+        public $tableFormat;
+        /**
+         * Required. The Cloud Storage bucket name.
+         *
+         * @param string $bucket
+         */
+        public function setBucket($bucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucket()
+        {
+        }
+        /**
+         * Required. The bigquery connection. Format: `{project}.{location}.{name}`
+         *
+         * @param string $connectionName
+         */
+        public function setConnectionName($connectionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConnectionName()
+        {
+        }
+        /**
+         * Required. The file format.
+         *
+         * Accepted values: FILE_FORMAT_UNSPECIFIED, PARQUET
+         *
+         * @param self::FILE_FORMAT_* $fileFormat
+         */
+        public function setFileFormat($fileFormat)
+        {
+        }
+        /**
+         * @return self::FILE_FORMAT_*
+         */
+        public function getFileFormat()
+        {
+        }
+        /**
+         * The root path inside the Cloud Storage bucket.
+         *
+         * @param string $rootPath
+         */
+        public function setRootPath($rootPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRootPath()
+        {
+        }
+        /**
+         * Required. The table format.
+         *
+         * Accepted values: TABLE_FORMAT_UNSPECIFIED, ICEBERG
+         *
+         * @param self::TABLE_FORMAT_* $tableFormat
+         */
+        public function setTableFormat($tableFormat)
+        {
+        }
+        /**
+         * @return self::TABLE_FORMAT_*
+         */
+        public function getTableFormat()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\BlmtConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucket()
-    {
-    }
-    /**
-     * Required. The bigquery connection. Format: `{project}.{location}.{name}`
-     *
-     * @param string $connectionName
-     */
-    public function setConnectionName($connectionName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConnectionName()
-    {
-    }
-    /**
-     * Required. The file format.
-     *
-     * Accepted values: FILE_FORMAT_UNSPECIFIED, PARQUET
-     *
-     * @param self::FILE_FORMAT_* $fileFormat
-     */
-    public function setFileFormat($fileFormat)
-    {
-    }
-    /**
-     * @return self::FILE_FORMAT_*
-     */
-    public function getFileFormat()
-    {
-    }
-    /**
-     * The root path inside the Cloud Storage bucket.
-     *
-     * @param string $rootPath
-     */
-    public function setRootPath($rootPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRootPath()
-    {
-    }
-    /**
-     * Required. The table format.
-     *
-     * Accepted values: TABLE_FORMAT_UNSPECIFIED, ICEBERG
-     *
-     * @param self::TABLE_FORMAT_* $tableFormat
-     */
-    public function setTableFormat($tableFormat)
-    {
-    }
-    /**
-     * @return self::TABLE_FORMAT_*
-     */
-    public function getTableFormat()
+    class Google_Service_Datastream_BlmtConfig extends \Google\Service\Datastream\BlmtConfig
     {
     }
 }

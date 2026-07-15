@@ -21,449 +21,458 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class Build extends \Google\Collection
-{
-    protected $collection_key = 'warnings';
-    protected $approvalType = BuildApproval::class;
-    protected $approvalDataType = '';
-    protected $artifactsType = Artifacts::class;
-    protected $artifactsDataType = '';
-    protected $availableSecretsType = Secrets::class;
-    protected $availableSecretsDataType = '';
-    /**
-     * @var string
-     */
-    public $buildTriggerId;
-    /**
-     * @var string
-     */
-    public $createTime;
-    protected $failureInfoType = FailureInfo::class;
-    protected $failureInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $finishTime;
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string[]
-     */
-    public $images;
-    /**
-     * @var string
-     */
-    public $logUrl;
-    /**
-     * @var string
-     */
-    public $logsBucket;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $optionsType = BuildOptions::class;
-    protected $optionsDataType = '';
-    /**
-     * @var string
-     */
-    public $projectId;
-    /**
-     * @var string
-     */
-    public $queueTtl;
-    protected $resultsType = Results::class;
-    protected $resultsDataType = '';
-    protected $secretsType = Secret::class;
-    protected $secretsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $serviceAccount;
-    protected $sourceType = Source::class;
-    protected $sourceDataType = '';
-    protected $sourceProvenanceType = SourceProvenance::class;
-    protected $sourceProvenanceDataType = '';
-    /**
-     * @var string
-     */
-    public $startTime;
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @var string
-     */
-    public $statusDetail;
-    protected $stepsType = BuildStep::class;
-    protected $stepsDataType = 'array';
-    /**
-     * @var string[]
-     */
-    public $substitutions;
-    /**
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * @var string
-     */
-    public $timeout;
-    protected $timingType = TimeSpan::class;
-    protected $timingDataType = 'map';
-    protected $warningsType = Warning::class;
-    protected $warningsDataType = 'array';
-    /**
-     * @param BuildApproval
-     */
-    public function setApproval(BuildApproval $approval)
+namespace Google\Service\CloudBuild {
+    class Build extends \Google\Collection
     {
+        protected $collection_key = 'warnings';
+        protected $approvalType = BuildApproval::class;
+        protected $approvalDataType = '';
+        protected $artifactsType = Artifacts::class;
+        protected $artifactsDataType = '';
+        protected $availableSecretsType = Secrets::class;
+        protected $availableSecretsDataType = '';
+        /**
+         * @var string
+         */
+        public $buildTriggerId;
+        /**
+         * @var string
+         */
+        public $createTime;
+        protected $failureInfoType = FailureInfo::class;
+        protected $failureInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $finishTime;
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string[]
+         */
+        public $images;
+        /**
+         * @var string
+         */
+        public $logUrl;
+        /**
+         * @var string
+         */
+        public $logsBucket;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $optionsType = BuildOptions::class;
+        protected $optionsDataType = '';
+        /**
+         * @var string
+         */
+        public $projectId;
+        /**
+         * @var string
+         */
+        public $queueTtl;
+        protected $resultsType = Results::class;
+        protected $resultsDataType = '';
+        protected $secretsType = Secret::class;
+        protected $secretsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $serviceAccount;
+        protected $sourceType = Source::class;
+        protected $sourceDataType = '';
+        protected $sourceProvenanceType = SourceProvenance::class;
+        protected $sourceProvenanceDataType = '';
+        /**
+         * @var string
+         */
+        public $startTime;
+        /**
+         * @var string
+         */
+        public $status;
+        /**
+         * @var string
+         */
+        public $statusDetail;
+        protected $stepsType = BuildStep::class;
+        protected $stepsDataType = 'array';
+        /**
+         * @var string[]
+         */
+        public $substitutions;
+        /**
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * @var string
+         */
+        public $timeout;
+        protected $timingType = TimeSpan::class;
+        protected $timingDataType = 'map';
+        protected $warningsType = Warning::class;
+        protected $warningsDataType = 'array';
+        /**
+         * @param BuildApproval
+         */
+        public function setApproval(BuildApproval $approval)
+        {
+        }
+        /**
+         * @return BuildApproval
+         */
+        public function getApproval()
+        {
+        }
+        /**
+         * @param Artifacts
+         */
+        public function setArtifacts(Artifacts $artifacts)
+        {
+        }
+        /**
+         * @return Artifacts
+         */
+        public function getArtifacts()
+        {
+        }
+        /**
+         * @param Secrets
+         */
+        public function setAvailableSecrets(Secrets $availableSecrets)
+        {
+        }
+        /**
+         * @return Secrets
+         */
+        public function getAvailableSecrets()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBuildTriggerId($buildTriggerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuildTriggerId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param FailureInfo
+         */
+        public function setFailureInfo(FailureInfo $failureInfo)
+        {
+        }
+        /**
+         * @return FailureInfo
+         */
+        public function getFailureInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFinishTime($finishTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFinishTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setImages($images)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getImages()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLogUrl($logUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLogUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLogsBucket($logsBucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLogsBucket()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param BuildOptions
+         */
+        public function setOptions(BuildOptions $options)
+        {
+        }
+        /**
+         * @return BuildOptions
+         */
+        public function getOptions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setQueueTtl($queueTtl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQueueTtl()
+        {
+        }
+        /**
+         * @param Results
+         */
+        public function setResults(Results $results)
+        {
+        }
+        /**
+         * @return Results
+         */
+        public function getResults()
+        {
+        }
+        /**
+         * @param Secret[]
+         */
+        public function setSecrets($secrets)
+        {
+        }
+        /**
+         * @return Secret[]
+         */
+        public function getSecrets()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setServiceAccount($serviceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccount()
+        {
+        }
+        /**
+         * @param Source
+         */
+        public function setSource(Source $source)
+        {
+        }
+        /**
+         * @return Source
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * @param SourceProvenance
+         */
+        public function setSourceProvenance(SourceProvenance $sourceProvenance)
+        {
+        }
+        /**
+         * @return SourceProvenance
+         */
+        public function getSourceProvenance()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStatusDetail($statusDetail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatusDetail()
+        {
+        }
+        /**
+         * @param BuildStep[]
+         */
+        public function setSteps($steps)
+        {
+        }
+        /**
+         * @return BuildStep[]
+         */
+        public function getSteps()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setSubstitutions($substitutions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSubstitutions()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTimeout($timeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeout()
+        {
+        }
+        /**
+         * @param TimeSpan[]
+         */
+        public function setTiming($timing)
+        {
+        }
+        /**
+         * @return TimeSpan[]
+         */
+        public function getTiming()
+        {
+        }
+        /**
+         * @param Warning[]
+         */
+        public function setWarnings($warnings)
+        {
+        }
+        /**
+         * @return Warning[]
+         */
+        public function getWarnings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BuildApproval
+     * Runtime class alias of \Google\Service\CloudBuild\Build registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApproval()
-    {
-    }
-    /**
-     * @param Artifacts
-     */
-    public function setArtifacts(Artifacts $artifacts)
-    {
-    }
-    /**
-     * @return Artifacts
-     */
-    public function getArtifacts()
-    {
-    }
-    /**
-     * @param Secrets
-     */
-    public function setAvailableSecrets(Secrets $availableSecrets)
-    {
-    }
-    /**
-     * @return Secrets
-     */
-    public function getAvailableSecrets()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBuildTriggerId($buildTriggerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBuildTriggerId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param FailureInfo
-     */
-    public function setFailureInfo(FailureInfo $failureInfo)
-    {
-    }
-    /**
-     * @return FailureInfo
-     */
-    public function getFailureInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFinishTime($finishTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFinishTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setImages($images)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getImages()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLogUrl($logUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLogUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLogsBucket($logsBucket)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLogsBucket()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param BuildOptions
-     */
-    public function setOptions(BuildOptions $options)
-    {
-    }
-    /**
-     * @return BuildOptions
-     */
-    public function getOptions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setQueueTtl($queueTtl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQueueTtl()
-    {
-    }
-    /**
-     * @param Results
-     */
-    public function setResults(Results $results)
-    {
-    }
-    /**
-     * @return Results
-     */
-    public function getResults()
-    {
-    }
-    /**
-     * @param Secret[]
-     */
-    public function setSecrets($secrets)
-    {
-    }
-    /**
-     * @return Secret[]
-     */
-    public function getSecrets()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setServiceAccount($serviceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccount()
-    {
-    }
-    /**
-     * @param Source
-     */
-    public function setSource(Source $source)
-    {
-    }
-    /**
-     * @return Source
-     */
-    public function getSource()
-    {
-    }
-    /**
-     * @param SourceProvenance
-     */
-    public function setSourceProvenance(SourceProvenance $sourceProvenance)
-    {
-    }
-    /**
-     * @return SourceProvenance
-     */
-    public function getSourceProvenance()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStatusDetail($statusDetail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatusDetail()
-    {
-    }
-    /**
-     * @param BuildStep[]
-     */
-    public function setSteps($steps)
-    {
-    }
-    /**
-     * @return BuildStep[]
-     */
-    public function getSteps()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setSubstitutions($substitutions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSubstitutions()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTimeout($timeout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeout()
-    {
-    }
-    /**
-     * @param TimeSpan[]
-     */
-    public function setTiming($timing)
-    {
-    }
-    /**
-     * @return TimeSpan[]
-     */
-    public function getTiming()
-    {
-    }
-    /**
-     * @param Warning[]
-     */
-    public function setWarnings($warnings)
-    {
-    }
-    /**
-     * @return Warning[]
-     */
-    public function getWarnings()
+    class Google_Service_CloudBuild_Build extends \Google\Service\CloudBuild\Build
     {
     }
 }

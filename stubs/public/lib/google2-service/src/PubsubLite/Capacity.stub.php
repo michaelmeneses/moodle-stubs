@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class Capacity extends \Google\Model
-{
-    /**
-     * Publish throughput capacity per partition in MiB/s. Must be >= 4 and <= 16.
-     *
-     * @var int
-     */
-    public $publishMibPerSec;
-    /**
-     * Subscribe throughput capacity per partition in MiB/s. Must be >= 4 and <=
-     * 32.
-     *
-     * @var int
-     */
-    public $subscribeMibPerSec;
-    /**
-     * Publish throughput capacity per partition in MiB/s. Must be >= 4 and <= 16.
-     *
-     * @param int $publishMibPerSec
-     */
-    public function setPublishMibPerSec($publishMibPerSec)
+namespace Google\Service\PubsubLite {
+    class Capacity extends \Google\Model
     {
+        /**
+         * Publish throughput capacity per partition in MiB/s. Must be >= 4 and <= 16.
+         *
+         * @var int
+         */
+        public $publishMibPerSec;
+        /**
+         * Subscribe throughput capacity per partition in MiB/s. Must be >= 4 and <=
+         * 32.
+         *
+         * @var int
+         */
+        public $subscribeMibPerSec;
+        /**
+         * Publish throughput capacity per partition in MiB/s. Must be >= 4 and <= 16.
+         *
+         * @param int $publishMibPerSec
+         */
+        public function setPublishMibPerSec($publishMibPerSec)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPublishMibPerSec()
+        {
+        }
+        /**
+         * Subscribe throughput capacity per partition in MiB/s. Must be >= 4 and <=
+         * 32.
+         *
+         * @param int $subscribeMibPerSec
+         */
+        public function setSubscribeMibPerSec($subscribeMibPerSec)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSubscribeMibPerSec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\PubsubLite\Capacity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPublishMibPerSec()
-    {
-    }
-    /**
-     * Subscribe throughput capacity per partition in MiB/s. Must be >= 4 and <=
-     * 32.
-     *
-     * @param int $subscribeMibPerSec
-     */
-    public function setSubscribeMibPerSec($subscribeMibPerSec)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSubscribeMibPerSec()
+    class Google_Service_PubsubLite_Capacity extends \Google\Service\PubsubLite\Capacity
     {
     }
 }

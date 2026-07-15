@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SampleConfig extends \Google\Model
-{
-    /**
-     * Default will be treated as UNCERTAINTY.
-     */
-    public const SAMPLE_STRATEGY_SAMPLE_STRATEGY_UNSPECIFIED = 'SAMPLE_STRATEGY_UNSPECIFIED';
-    /**
-     * Sample the most uncertain data to label.
-     */
-    public const SAMPLE_STRATEGY_UNCERTAINTY = 'UNCERTAINTY';
-    /**
-     * The percentage of data needed to be labeled in each following batch (except
-     * the first batch).
-     *
-     * @var int
-     */
-    public $followingBatchSamplePercentage;
-    /**
-     * The percentage of data needed to be labeled in the first batch.
-     *
-     * @var int
-     */
-    public $initialBatchSamplePercentage;
-    /**
-     * Field to choose sampling strategy. Sampling strategy will decide which data
-     * should be selected for human labeling in every batch.
-     *
-     * @var string
-     */
-    public $sampleStrategy;
-    /**
-     * The percentage of data needed to be labeled in each following batch (except
-     * the first batch).
-     *
-     * @param int $followingBatchSamplePercentage
-     */
-    public function setFollowingBatchSamplePercentage($followingBatchSamplePercentage)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SampleConfig extends \Google\Model
     {
+        /**
+         * Default will be treated as UNCERTAINTY.
+         */
+        public const SAMPLE_STRATEGY_SAMPLE_STRATEGY_UNSPECIFIED = 'SAMPLE_STRATEGY_UNSPECIFIED';
+        /**
+         * Sample the most uncertain data to label.
+         */
+        public const SAMPLE_STRATEGY_UNCERTAINTY = 'UNCERTAINTY';
+        /**
+         * The percentage of data needed to be labeled in each following batch (except
+         * the first batch).
+         *
+         * @var int
+         */
+        public $followingBatchSamplePercentage;
+        /**
+         * The percentage of data needed to be labeled in the first batch.
+         *
+         * @var int
+         */
+        public $initialBatchSamplePercentage;
+        /**
+         * Field to choose sampling strategy. Sampling strategy will decide which data
+         * should be selected for human labeling in every batch.
+         *
+         * @var string
+         */
+        public $sampleStrategy;
+        /**
+         * The percentage of data needed to be labeled in each following batch (except
+         * the first batch).
+         *
+         * @param int $followingBatchSamplePercentage
+         */
+        public function setFollowingBatchSamplePercentage($followingBatchSamplePercentage)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFollowingBatchSamplePercentage()
+        {
+        }
+        /**
+         * The percentage of data needed to be labeled in the first batch.
+         *
+         * @param int $initialBatchSamplePercentage
+         */
+        public function setInitialBatchSamplePercentage($initialBatchSamplePercentage)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getInitialBatchSamplePercentage()
+        {
+        }
+        /**
+         * Field to choose sampling strategy. Sampling strategy will decide which data
+         * should be selected for human labeling in every batch.
+         *
+         * Accepted values: SAMPLE_STRATEGY_UNSPECIFIED, UNCERTAINTY
+         *
+         * @param self::SAMPLE_STRATEGY_* $sampleStrategy
+         */
+        public function setSampleStrategy($sampleStrategy)
+        {
+        }
+        /**
+         * @return self::SAMPLE_STRATEGY_*
+         */
+        public function getSampleStrategy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SampleConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFollowingBatchSamplePercentage()
-    {
-    }
-    /**
-     * The percentage of data needed to be labeled in the first batch.
-     *
-     * @param int $initialBatchSamplePercentage
-     */
-    public function setInitialBatchSamplePercentage($initialBatchSamplePercentage)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getInitialBatchSamplePercentage()
-    {
-    }
-    /**
-     * Field to choose sampling strategy. Sampling strategy will decide which data
-     * should be selected for human labeling in every batch.
-     *
-     * Accepted values: SAMPLE_STRATEGY_UNSPECIFIED, UNCERTAINTY
-     *
-     * @param self::SAMPLE_STRATEGY_* $sampleStrategy
-     */
-    public function setSampleStrategy($sampleStrategy)
-    {
-    }
-    /**
-     * @return self::SAMPLE_STRATEGY_*
-     */
-    public function getSampleStrategy()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SampleConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SampleConfig
     {
     }
 }

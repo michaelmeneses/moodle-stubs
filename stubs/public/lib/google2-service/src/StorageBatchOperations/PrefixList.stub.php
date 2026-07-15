@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StorageBatchOperations;
-
-class PrefixList extends \Google\Collection
-{
-    protected $collection_key = 'includedObjectPrefixes';
-    /**
-     * Optional. Include prefixes of the objects to be transformed. * Supports
-     * full object name * Supports prefix of the object name * Wildcards are not
-     * supported * Supports empty string for all objects in a bucket.
-     *
-     * @var string[]
-     */
-    public $includedObjectPrefixes;
-    /**
-     * Optional. Include prefixes of the objects to be transformed. * Supports
-     * full object name * Supports prefix of the object name * Wildcards are not
-     * supported * Supports empty string for all objects in a bucket.
-     *
-     * @param string[] $includedObjectPrefixes
-     */
-    public function setIncludedObjectPrefixes($includedObjectPrefixes)
+namespace Google\Service\StorageBatchOperations {
+    class PrefixList extends \Google\Collection
     {
+        protected $collection_key = 'includedObjectPrefixes';
+        /**
+         * Optional. Include prefixes of the objects to be transformed. * Supports
+         * full object name * Supports prefix of the object name * Wildcards are not
+         * supported * Supports empty string for all objects in a bucket.
+         *
+         * @var string[]
+         */
+        public $includedObjectPrefixes;
+        /**
+         * Optional. Include prefixes of the objects to be transformed. * Supports
+         * full object name * Supports prefix of the object name * Wildcards are not
+         * supported * Supports empty string for all objects in a bucket.
+         *
+         * @param string[] $includedObjectPrefixes
+         */
+        public function setIncludedObjectPrefixes($includedObjectPrefixes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIncludedObjectPrefixes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\StorageBatchOperations\PrefixList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludedObjectPrefixes()
+    class Google_Service_StorageBatchOperations_PrefixList extends \Google\Service\StorageBatchOperations\PrefixList
     {
     }
 }

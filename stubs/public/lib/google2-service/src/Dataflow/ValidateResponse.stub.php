@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class ValidateResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $errorMessage;
-    protected $queryInfoType = QueryInfo::class;
-    protected $queryInfoDataType = '';
-    public $queryInfo;
-    /**
-     * @param string
-     */
-    public function setErrorMessage($errorMessage)
+namespace Google\Service\Dataflow {
+    class ValidateResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $errorMessage;
+        protected $queryInfoType = QueryInfo::class;
+        protected $queryInfoDataType = '';
+        public $queryInfo;
+        /**
+         * @param string
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
+        /**
+         * @param QueryInfo
+         */
+        public function setQueryInfo(QueryInfo $queryInfo)
+        {
+        }
+        /**
+         * @return QueryInfo
+         */
+        public function getQueryInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\ValidateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorMessage()
-    {
-    }
-    /**
-     * @param QueryInfo
-     */
-    public function setQueryInfo(QueryInfo $queryInfo)
-    {
-    }
-    /**
-     * @return QueryInfo
-     */
-    public function getQueryInfo()
+    class Google_Service_Dataflow_ValidateResponse extends \Google\Service\Dataflow\ValidateResponse
     {
     }
 }

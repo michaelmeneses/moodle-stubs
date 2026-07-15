@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1NotebookExecutionJobCustomEnvironmentSpec extends \Google\Model
-{
-    protected $machineSpecType = GoogleCloudAiplatformV1MachineSpec::class;
-    protected $machineSpecDataType = '';
-    protected $networkSpecType = GoogleCloudAiplatformV1NetworkSpec::class;
-    protected $networkSpecDataType = '';
-    protected $persistentDiskSpecType = GoogleCloudAiplatformV1PersistentDiskSpec::class;
-    protected $persistentDiskSpecDataType = '';
-    /**
-     * The specification of a single machine for the execution job.
-     *
-     * @param GoogleCloudAiplatformV1MachineSpec $machineSpec
-     */
-    public function setMachineSpec(GoogleCloudAiplatformV1MachineSpec $machineSpec)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1NotebookExecutionJobCustomEnvironmentSpec extends \Google\Model
     {
+        protected $machineSpecType = GoogleCloudAiplatformV1MachineSpec::class;
+        protected $machineSpecDataType = '';
+        protected $networkSpecType = GoogleCloudAiplatformV1NetworkSpec::class;
+        protected $networkSpecDataType = '';
+        protected $persistentDiskSpecType = GoogleCloudAiplatformV1PersistentDiskSpec::class;
+        protected $persistentDiskSpecDataType = '';
+        /**
+         * The specification of a single machine for the execution job.
+         *
+         * @param GoogleCloudAiplatformV1MachineSpec $machineSpec
+         */
+        public function setMachineSpec(GoogleCloudAiplatformV1MachineSpec $machineSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MachineSpec
+         */
+        public function getMachineSpec()
+        {
+        }
+        /**
+         * The network configuration to use for the execution job.
+         *
+         * @param GoogleCloudAiplatformV1NetworkSpec $networkSpec
+         */
+        public function setNetworkSpec(GoogleCloudAiplatformV1NetworkSpec $networkSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1NetworkSpec
+         */
+        public function getNetworkSpec()
+        {
+        }
+        /**
+         * The specification of a persistent disk to attach for the execution job.
+         *
+         * @param GoogleCloudAiplatformV1PersistentDiskSpec $persistentDiskSpec
+         */
+        public function setPersistentDiskSpec(GoogleCloudAiplatformV1PersistentDiskSpec $persistentDiskSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PersistentDiskSpec
+         */
+        public function getPersistentDiskSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1MachineSpec
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1NotebookExecutionJobCustomEnvironmentSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMachineSpec()
-    {
-    }
-    /**
-     * The network configuration to use for the execution job.
-     *
-     * @param GoogleCloudAiplatformV1NetworkSpec $networkSpec
-     */
-    public function setNetworkSpec(GoogleCloudAiplatformV1NetworkSpec $networkSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1NetworkSpec
-     */
-    public function getNetworkSpec()
-    {
-    }
-    /**
-     * The specification of a persistent disk to attach for the execution job.
-     *
-     * @param GoogleCloudAiplatformV1PersistentDiskSpec $persistentDiskSpec
-     */
-    public function setPersistentDiskSpec(GoogleCloudAiplatformV1PersistentDiskSpec $persistentDiskSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1PersistentDiskSpec
-     */
-    public function getPersistentDiskSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1NotebookExecutionJobCustomEnvironmentSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1NotebookExecutionJobCustomEnvironmentSpec
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Ideahub;
-
-class GoogleSearchIdeahubV1betaAvailableLocale extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $locale;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param string
-     */
-    public function setLocale($locale)
+namespace Google\Service\Ideahub {
+    class GoogleSearchIdeahubV1betaAvailableLocale extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $locale;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param string
+         */
+        public function setLocale($locale)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocale()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Ideahub\GoogleSearchIdeahubV1betaAvailableLocale registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocale()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Ideahub_GoogleSearchIdeahubV1betaAvailableLocale extends \Google\Service\Ideahub\GoogleSearchIdeahubV1betaAvailableLocale
     {
     }
 }

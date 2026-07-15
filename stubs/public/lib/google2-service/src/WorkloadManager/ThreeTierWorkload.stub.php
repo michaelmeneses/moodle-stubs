@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class ThreeTierWorkload extends \Google\Model
-{
-    protected $apiLayerType = APILayerServer::class;
-    protected $apiLayerDataType = '';
-    protected $backendType = BackendServer::class;
-    protected $backendDataType = '';
-    /**
-     * @var string
-     */
-    public $endpoint;
-    protected $frontendType = FrontEndServer::class;
-    protected $frontendDataType = '';
-    /**
-     * @param APILayerServer
-     */
-    public function setApiLayer(APILayerServer $apiLayer)
+namespace Google\Service\WorkloadManager {
+    class ThreeTierWorkload extends \Google\Model
     {
+        protected $apiLayerType = APILayerServer::class;
+        protected $apiLayerDataType = '';
+        protected $backendType = BackendServer::class;
+        protected $backendDataType = '';
+        /**
+         * @var string
+         */
+        public $endpoint;
+        protected $frontendType = FrontEndServer::class;
+        protected $frontendDataType = '';
+        /**
+         * @param APILayerServer
+         */
+        public function setApiLayer(APILayerServer $apiLayer)
+        {
+        }
+        /**
+         * @return APILayerServer
+         */
+        public function getApiLayer()
+        {
+        }
+        /**
+         * @param BackendServer
+         */
+        public function setBackend(BackendServer $backend)
+        {
+        }
+        /**
+         * @return BackendServer
+         */
+        public function getBackend()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEndpoint($endpoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndpoint()
+        {
+        }
+        /**
+         * @param FrontEndServer
+         */
+        public function setFrontend(FrontEndServer $frontend)
+        {
+        }
+        /**
+         * @return FrontEndServer
+         */
+        public function getFrontend()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return APILayerServer
+     * Runtime class alias of \Google\Service\WorkloadManager\ThreeTierWorkload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiLayer()
-    {
-    }
-    /**
-     * @param BackendServer
-     */
-    public function setBackend(BackendServer $backend)
-    {
-    }
-    /**
-     * @return BackendServer
-     */
-    public function getBackend()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEndpoint($endpoint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndpoint()
-    {
-    }
-    /**
-     * @param FrontEndServer
-     */
-    public function setFrontend(FrontEndServer $frontend)
-    {
-    }
-    /**
-     * @return FrontEndServer
-     */
-    public function getFrontend()
+    class Google_Service_WorkloadManager_ThreeTierWorkload extends \Google\Service\WorkloadManager\ThreeTierWorkload
     {
     }
 }

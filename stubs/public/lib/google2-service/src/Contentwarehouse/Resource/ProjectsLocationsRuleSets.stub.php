@@ -21,90 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse\Resource;
-
-/**
- * The "ruleSets" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentwarehouseService = new Google\Service\Contentwarehouse(...);
- *   $ruleSets = $contentwarehouseService->projects_locations_ruleSets;
- *  </code>
- */
-class ProjectsLocationsRuleSets extends \Google\Service\Resource
-{
+namespace Google\Service\Contentwarehouse\Resource {
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ListRuleSetsResponse;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1RuleSet;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1UpdateRuleSetRequest;
+    use Google\Service\Contentwarehouse\GoogleProtobufEmpty;
     /**
-     * Creates a ruleset. (ruleSets.create)
-     *
-     * @param string $parent Required. The parent name. Format:
-     * projects/{project_number}/locations/{location}.
-     * @param GoogleCloudContentwarehouseV1RuleSet $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudContentwarehouseV1RuleSet
-     * @throws \Google\Service\Exception
+     * The "ruleSets" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentwarehouseService = new Google\Service\Contentwarehouse(...);
+     *   $ruleSets = $contentwarehouseService->projects_locations_ruleSets;
+     *  </code>
      */
-    public function create($parent, GoogleCloudContentwarehouseV1RuleSet $postBody, $optParams = [])
+    class ProjectsLocationsRuleSets extends \Google\Service\Resource
     {
+        /**
+         * Creates a ruleset. (ruleSets.create)
+         *
+         * @param string $parent Required. The parent name. Format:
+         * projects/{project_number}/locations/{location}.
+         * @param GoogleCloudContentwarehouseV1RuleSet $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudContentwarehouseV1RuleSet
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudContentwarehouseV1RuleSet $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a ruleset. Returns NOT_FOUND if the document does not exist.
+         * (ruleSets.delete)
+         *
+         * @param string $name Required. The name of the rule set to delete. Format:
+         * projects/{project_number}/locations/{location}/ruleSets/{rule_set_id}.
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a ruleset. Returns NOT_FOUND if the ruleset does not exist.
+         * (ruleSets.get)
+         *
+         * @param string $name Required. The name of the rule set to retrieve. Format:
+         * projects/{project_number}/locations/{location}/ruleSets/{rule_set_id}.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudContentwarehouseV1RuleSet
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists rulesets. (ruleSets.listProjectsLocationsRuleSets)
+         *
+         * @param string $parent Required. The parent, which owns this collection of
+         * document. Format: projects/{project_number}/locations/{location}.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of rule sets to return. The
+         * service may return fewer than this value. If unspecified, at most 50 rule
+         * sets will be returned. The maximum value is 1000; values above 1000 will be
+         * coerced to 1000.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListRuleSets` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListRuleSets` must match the
+         * call that provided the page token.
+         * @return GoogleCloudContentwarehouseV1ListRuleSetsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsRuleSets($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a ruleset. Returns INVALID_ARGUMENT if the name of the ruleset is
+         * non-empty and does not equal the existing name. (ruleSets.patch)
+         *
+         * @param string $name Required. The name of the rule set to update. Format:
+         * projects/{project_number}/locations/{location}/ruleSets/{rule_set_id}.
+         * @param GoogleCloudContentwarehouseV1UpdateRuleSetRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudContentwarehouseV1RuleSet
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleCloudContentwarehouseV1UpdateRuleSetRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a ruleset. Returns NOT_FOUND if the document does not exist.
-     * (ruleSets.delete)
-     *
-     * @param string $name Required. The name of the rule set to delete. Format:
-     * projects/{project_number}/locations/{location}/ruleSets/{rule_set_id}.
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Contentwarehouse\Resource\ProjectsLocationsRuleSets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets a ruleset. Returns NOT_FOUND if the ruleset does not exist.
-     * (ruleSets.get)
-     *
-     * @param string $name Required. The name of the rule set to retrieve. Format:
-     * projects/{project_number}/locations/{location}/ruleSets/{rule_set_id}.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudContentwarehouseV1RuleSet
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists rulesets. (ruleSets.listProjectsLocationsRuleSets)
-     *
-     * @param string $parent Required. The parent, which owns this collection of
-     * document. Format: projects/{project_number}/locations/{location}.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of rule sets to return. The
-     * service may return fewer than this value. If unspecified, at most 50 rule
-     * sets will be returned. The maximum value is 1000; values above 1000 will be
-     * coerced to 1000.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListRuleSets` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListRuleSets` must match the
-     * call that provided the page token.
-     * @return GoogleCloudContentwarehouseV1ListRuleSetsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsRuleSets($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a ruleset. Returns INVALID_ARGUMENT if the name of the ruleset is
-     * non-empty and does not equal the existing name. (ruleSets.patch)
-     *
-     * @param string $name Required. The name of the rule set to update. Format:
-     * projects/{project_number}/locations/{location}/ruleSets/{rule_set_id}.
-     * @param GoogleCloudContentwarehouseV1UpdateRuleSetRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudContentwarehouseV1RuleSet
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleCloudContentwarehouseV1UpdateRuleSetRequest $postBody, $optParams = [])
+    class Google_Service_Contentwarehouse_Resource_ProjectsLocationsRuleSets extends \Google\Service\Contentwarehouse\Resource\ProjectsLocationsRuleSets
     {
     }
 }

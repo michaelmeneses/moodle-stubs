@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class DnsKeysListResponse extends \Google\Collection
-{
-    protected $collection_key = 'dnsKeys';
-    protected $dnsKeysType = DnsKey::class;
-    protected $dnsKeysDataType = 'array';
-    /**
-     * Type of resource.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * This field indicates that more results are available beyond the last page
-     * displayed. To fetch the results, make another list request and use this
-     * value as your page token. This lets you retrieve the complete contents of a
-     * very large collection one page at a time. However, if the contents of the
-     * collection change between the first and last paginated list request, the
-     * set of all elements returned are an inconsistent view of the collection.
-     * You can't retrieve a consistent snapshot of a collection larger than the
-     * maximum page size.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The requested resources.
-     *
-     * @param DnsKey[] $dnsKeys
-     */
-    public function setDnsKeys($dnsKeys)
+namespace Google\Service\Dns {
+    class DnsKeysListResponse extends \Google\Collection
     {
+        protected $collection_key = 'dnsKeys';
+        protected $dnsKeysType = DnsKey::class;
+        protected $dnsKeysDataType = 'array';
+        /**
+         * Type of resource.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * This field indicates that more results are available beyond the last page
+         * displayed. To fetch the results, make another list request and use this
+         * value as your page token. This lets you retrieve the complete contents of a
+         * very large collection one page at a time. However, if the contents of the
+         * collection change between the first and last paginated list request, the
+         * set of all elements returned are an inconsistent view of the collection.
+         * You can't retrieve a consistent snapshot of a collection larger than the
+         * maximum page size.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The requested resources.
+         *
+         * @param DnsKey[] $dnsKeys
+         */
+        public function setDnsKeys($dnsKeys)
+        {
+        }
+        /**
+         * @return DnsKey[]
+         */
+        public function getDnsKeys()
+        {
+        }
+        /**
+         * Type of resource.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * This field indicates that more results are available beyond the last page
+         * displayed. To fetch the results, make another list request and use this
+         * value as your page token. This lets you retrieve the complete contents of a
+         * very large collection one page at a time. However, if the contents of the
+         * collection change between the first and last paginated list request, the
+         * set of all elements returned are an inconsistent view of the collection.
+         * You can't retrieve a consistent snapshot of a collection larger than the
+         * maximum page size.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DnsKey[]
+     * Runtime class alias of \Google\Service\Dns\DnsKeysListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDnsKeys()
-    {
-    }
-    /**
-     * Type of resource.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * This field indicates that more results are available beyond the last page
-     * displayed. To fetch the results, make another list request and use this
-     * value as your page token. This lets you retrieve the complete contents of a
-     * very large collection one page at a time. However, if the contents of the
-     * collection change between the first and last paginated list request, the
-     * set of all elements returned are an inconsistent view of the collection.
-     * You can't retrieve a consistent snapshot of a collection larger than the
-     * maximum page size.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dns_DnsKeysListResponse extends \Google\Service\Dns\DnsKeysListResponse
     {
     }
 }

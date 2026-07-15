@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SubnetworkUtilizationDetails extends \Google\Collection
-{
-    protected $collection_key = 'ipv4Utilizations';
-    protected $externalIpv6InstanceUtilizationType = SubnetworkUtilizationDetailsIPV6Utilization::class;
-    protected $externalIpv6InstanceUtilizationDataType = '';
-    protected $externalIpv6LbUtilizationType = SubnetworkUtilizationDetailsIPV6Utilization::class;
-    protected $externalIpv6LbUtilizationDataType = '';
-    protected $internalIpv6UtilizationType = SubnetworkUtilizationDetailsIPV6Utilization::class;
-    protected $internalIpv6UtilizationDataType = '';
-    protected $ipv4UtilizationsType = SubnetworkUtilizationDetailsIPV4Utilization::class;
-    protected $ipv4UtilizationsDataType = 'array';
-    /**
-     * Utilizations of external IPV6 IP range.
-     *
-     * @param SubnetworkUtilizationDetailsIPV6Utilization $externalIpv6InstanceUtilization
-     */
-    public function setExternalIpv6InstanceUtilization(SubnetworkUtilizationDetailsIPV6Utilization $externalIpv6InstanceUtilization)
+namespace Google\Service\Compute {
+    class SubnetworkUtilizationDetails extends \Google\Collection
     {
+        protected $collection_key = 'ipv4Utilizations';
+        protected $externalIpv6InstanceUtilizationType = SubnetworkUtilizationDetailsIPV6Utilization::class;
+        protected $externalIpv6InstanceUtilizationDataType = '';
+        protected $externalIpv6LbUtilizationType = SubnetworkUtilizationDetailsIPV6Utilization::class;
+        protected $externalIpv6LbUtilizationDataType = '';
+        protected $internalIpv6UtilizationType = SubnetworkUtilizationDetailsIPV6Utilization::class;
+        protected $internalIpv6UtilizationDataType = '';
+        protected $ipv4UtilizationsType = SubnetworkUtilizationDetailsIPV4Utilization::class;
+        protected $ipv4UtilizationsDataType = 'array';
+        /**
+         * Utilizations of external IPV6 IP range.
+         *
+         * @param SubnetworkUtilizationDetailsIPV6Utilization $externalIpv6InstanceUtilization
+         */
+        public function setExternalIpv6InstanceUtilization(SubnetworkUtilizationDetailsIPV6Utilization $externalIpv6InstanceUtilization)
+        {
+        }
+        /**
+         * @return SubnetworkUtilizationDetailsIPV6Utilization
+         */
+        public function getExternalIpv6InstanceUtilization()
+        {
+        }
+        /**
+         * Utilizations of external IPV6 IP range for NetLB.
+         *
+         * @param SubnetworkUtilizationDetailsIPV6Utilization $externalIpv6LbUtilization
+         */
+        public function setExternalIpv6LbUtilization(SubnetworkUtilizationDetailsIPV6Utilization $externalIpv6LbUtilization)
+        {
+        }
+        /**
+         * @return SubnetworkUtilizationDetailsIPV6Utilization
+         */
+        public function getExternalIpv6LbUtilization()
+        {
+        }
+        /**
+         * Utilizations of internal IPV6 IP range.
+         *
+         * @param SubnetworkUtilizationDetailsIPV6Utilization $internalIpv6Utilization
+         */
+        public function setInternalIpv6Utilization(SubnetworkUtilizationDetailsIPV6Utilization $internalIpv6Utilization)
+        {
+        }
+        /**
+         * @return SubnetworkUtilizationDetailsIPV6Utilization
+         */
+        public function getInternalIpv6Utilization()
+        {
+        }
+        /**
+         * Utilizations of all IPV4 IP ranges. For primary ranges, the range name will
+         * be empty.
+         *
+         * @param SubnetworkUtilizationDetailsIPV4Utilization[] $ipv4Utilizations
+         */
+        public function setIpv4Utilizations($ipv4Utilizations)
+        {
+        }
+        /**
+         * @return SubnetworkUtilizationDetailsIPV4Utilization[]
+         */
+        public function getIpv4Utilizations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SubnetworkUtilizationDetailsIPV6Utilization
+     * Runtime class alias of \Google\Service\Compute\SubnetworkUtilizationDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExternalIpv6InstanceUtilization()
-    {
-    }
-    /**
-     * Utilizations of external IPV6 IP range for NetLB.
-     *
-     * @param SubnetworkUtilizationDetailsIPV6Utilization $externalIpv6LbUtilization
-     */
-    public function setExternalIpv6LbUtilization(SubnetworkUtilizationDetailsIPV6Utilization $externalIpv6LbUtilization)
-    {
-    }
-    /**
-     * @return SubnetworkUtilizationDetailsIPV6Utilization
-     */
-    public function getExternalIpv6LbUtilization()
-    {
-    }
-    /**
-     * Utilizations of internal IPV6 IP range.
-     *
-     * @param SubnetworkUtilizationDetailsIPV6Utilization $internalIpv6Utilization
-     */
-    public function setInternalIpv6Utilization(SubnetworkUtilizationDetailsIPV6Utilization $internalIpv6Utilization)
-    {
-    }
-    /**
-     * @return SubnetworkUtilizationDetailsIPV6Utilization
-     */
-    public function getInternalIpv6Utilization()
-    {
-    }
-    /**
-     * Utilizations of all IPV4 IP ranges. For primary ranges, the range name will
-     * be empty.
-     *
-     * @param SubnetworkUtilizationDetailsIPV4Utilization[] $ipv4Utilizations
-     */
-    public function setIpv4Utilizations($ipv4Utilizations)
-    {
-    }
-    /**
-     * @return SubnetworkUtilizationDetailsIPV4Utilization[]
-     */
-    public function getIpv4Utilizations()
+    class Google_Service_Compute_SubnetworkUtilizationDetails extends \Google\Service\Compute\SubnetworkUtilizationDetails
     {
     }
 }

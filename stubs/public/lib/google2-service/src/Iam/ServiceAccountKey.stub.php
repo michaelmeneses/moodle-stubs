@@ -21,168 +21,177 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class ServiceAccountKey extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $disabled;
-    /**
-     * @var string
-     */
-    public $keyAlgorithm;
-    /**
-     * @var string
-     */
-    public $keyOrigin;
-    /**
-     * @var string
-     */
-    public $keyType;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $privateKeyData;
-    /**
-     * @var string
-     */
-    public $privateKeyType;
-    /**
-     * @var string
-     */
-    public $publicKeyData;
-    /**
-     * @var string
-     */
-    public $validAfterTime;
-    /**
-     * @var string
-     */
-    public $validBeforeTime;
-    /**
-     * @param bool
-     */
-    public function setDisabled($disabled)
+namespace Google\Service\Iam {
+    class ServiceAccountKey extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $disabled;
+        /**
+         * @var string
+         */
+        public $keyAlgorithm;
+        /**
+         * @var string
+         */
+        public $keyOrigin;
+        /**
+         * @var string
+         */
+        public $keyType;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $privateKeyData;
+        /**
+         * @var string
+         */
+        public $privateKeyType;
+        /**
+         * @var string
+         */
+        public $publicKeyData;
+        /**
+         * @var string
+         */
+        public $validAfterTime;
+        /**
+         * @var string
+         */
+        public $validBeforeTime;
+        /**
+         * @param bool
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKeyAlgorithm($keyAlgorithm)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyAlgorithm()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKeyOrigin($keyOrigin)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyOrigin()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKeyType($keyType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPrivateKeyData($privateKeyData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivateKeyData()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPrivateKeyType($privateKeyType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivateKeyType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPublicKeyData($publicKeyData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublicKeyData()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValidAfterTime($validAfterTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValidAfterTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValidBeforeTime($validBeforeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValidBeforeTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Iam\ServiceAccountKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisabled()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKeyAlgorithm($keyAlgorithm)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKeyAlgorithm()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKeyOrigin($keyOrigin)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKeyOrigin()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKeyType($keyType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKeyType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPrivateKeyData($privateKeyData)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrivateKeyData()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPrivateKeyType($privateKeyType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrivateKeyType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPublicKeyData($publicKeyData)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublicKeyData()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValidAfterTime($validAfterTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValidAfterTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValidBeforeTime($validBeforeTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValidBeforeTime()
+    class Google_Service_Iam_ServiceAccountKey extends \Google\Service\Iam\ServiceAccountKey
     {
     }
 }

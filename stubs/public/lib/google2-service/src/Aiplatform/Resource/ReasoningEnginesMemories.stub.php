@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform\Resource;
-
-/**
- * The "memories" collection of methods.
- * Typical usage is:
- *  <code>
- *   $aiplatformService = new Google\Service\Aiplatform(...);
- *   $memories = $aiplatformService->reasoningEngines_memories;
- *  </code>
- */
-class ReasoningEnginesMemories extends \Google\Service\Resource
-{
+namespace Google\Service\Aiplatform\Resource {
+    /**
+     * The "memories" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $aiplatformService = new Google\Service\Aiplatform(...);
+     *   $memories = $aiplatformService->reasoningEngines_memories;
+     *  </code>
+     */
+    class ReasoningEnginesMemories extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Aiplatform\Resource\ReasoningEnginesMemories registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Aiplatform_Resource_ReasoningEnginesMemories extends \Google\Service\Aiplatform\Resource\ReasoningEnginesMemories
+    {
+    }
 }

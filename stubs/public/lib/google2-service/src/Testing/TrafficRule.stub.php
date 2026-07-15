@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class TrafficRule extends \Google\Model
-{
-    /**
-     * Bandwidth in kbits/second.
-     *
-     * @var float
-     */
-    public $bandwidth;
-    /**
-     * Burst size in kbits.
-     *
-     * @var float
-     */
-    public $burst;
-    /**
-     * Packet delay, must be >= 0.
-     *
-     * @var string
-     */
-    public $delay;
-    /**
-     * Packet duplication ratio (0.0 - 1.0).
-     *
-     * @var float
-     */
-    public $packetDuplicationRatio;
-    /**
-     * Packet loss ratio (0.0 - 1.0).
-     *
-     * @var float
-     */
-    public $packetLossRatio;
-    /**
-     * Bandwidth in kbits/second.
-     *
-     * @param float $bandwidth
-     */
-    public function setBandwidth($bandwidth)
+namespace Google\Service\Testing {
+    class TrafficRule extends \Google\Model
     {
+        /**
+         * Bandwidth in kbits/second.
+         *
+         * @var float
+         */
+        public $bandwidth;
+        /**
+         * Burst size in kbits.
+         *
+         * @var float
+         */
+        public $burst;
+        /**
+         * Packet delay, must be >= 0.
+         *
+         * @var string
+         */
+        public $delay;
+        /**
+         * Packet duplication ratio (0.0 - 1.0).
+         *
+         * @var float
+         */
+        public $packetDuplicationRatio;
+        /**
+         * Packet loss ratio (0.0 - 1.0).
+         *
+         * @var float
+         */
+        public $packetLossRatio;
+        /**
+         * Bandwidth in kbits/second.
+         *
+         * @param float $bandwidth
+         */
+        public function setBandwidth($bandwidth)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getBandwidth()
+        {
+        }
+        /**
+         * Burst size in kbits.
+         *
+         * @param float $burst
+         */
+        public function setBurst($burst)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getBurst()
+        {
+        }
+        /**
+         * Packet delay, must be >= 0.
+         *
+         * @param string $delay
+         */
+        public function setDelay($delay)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDelay()
+        {
+        }
+        /**
+         * Packet duplication ratio (0.0 - 1.0).
+         *
+         * @param float $packetDuplicationRatio
+         */
+        public function setPacketDuplicationRatio($packetDuplicationRatio)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getPacketDuplicationRatio()
+        {
+        }
+        /**
+         * Packet loss ratio (0.0 - 1.0).
+         *
+         * @param float $packetLossRatio
+         */
+        public function setPacketLossRatio($packetLossRatio)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getPacketLossRatio()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Testing\TrafficRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBandwidth()
-    {
-    }
-    /**
-     * Burst size in kbits.
-     *
-     * @param float $burst
-     */
-    public function setBurst($burst)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getBurst()
-    {
-    }
-    /**
-     * Packet delay, must be >= 0.
-     *
-     * @param string $delay
-     */
-    public function setDelay($delay)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDelay()
-    {
-    }
-    /**
-     * Packet duplication ratio (0.0 - 1.0).
-     *
-     * @param float $packetDuplicationRatio
-     */
-    public function setPacketDuplicationRatio($packetDuplicationRatio)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getPacketDuplicationRatio()
-    {
-    }
-    /**
-     * Packet loss ratio (0.0 - 1.0).
-     *
-     * @param float $packetLossRatio
-     */
-    public function setPacketLossRatio($packetLossRatio)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getPacketLossRatio()
+    class Google_Service_Testing_TrafficRule extends \Google\Service\Testing\TrafficRule
     {
     }
 }

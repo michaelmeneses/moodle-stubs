@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class AddProtectedRangeRequest extends \Google\Model
-{
-    protected $protectedRangeType = ProtectedRange::class;
-    protected $protectedRangeDataType = '';
-    /**
-     * The protected range to be added. The protectedRangeId field is optional; if
-     * one is not set, an id will be randomly generated. (It is an error to
-     * specify the ID of a range that already exists.)
-     *
-     * @param ProtectedRange $protectedRange
-     */
-    public function setProtectedRange(ProtectedRange $protectedRange)
+namespace Google\Service\Sheets {
+    class AddProtectedRangeRequest extends \Google\Model
     {
+        protected $protectedRangeType = ProtectedRange::class;
+        protected $protectedRangeDataType = '';
+        /**
+         * The protected range to be added. The protectedRangeId field is optional; if
+         * one is not set, an id will be randomly generated. (It is an error to
+         * specify the ID of a range that already exists.)
+         *
+         * @param ProtectedRange $protectedRange
+         */
+        public function setProtectedRange(ProtectedRange $protectedRange)
+        {
+        }
+        /**
+         * @return ProtectedRange
+         */
+        public function getProtectedRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ProtectedRange
+     * Runtime class alias of \Google\Service\Sheets\AddProtectedRangeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProtectedRange()
+    class Google_Service_Sheets_AddProtectedRangeRequest extends \Google\Service\Sheets\AddProtectedRangeRequest
     {
     }
 }

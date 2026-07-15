@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class OracleObjectIdentifier extends \Google\Model
-{
-    /**
-     * Required. The schema name.
-     *
-     * @var string
-     */
-    public $schema;
-    /**
-     * Required. The table name.
-     *
-     * @var string
-     */
-    public $table;
-    /**
-     * Required. The schema name.
-     *
-     * @param string $schema
-     */
-    public function setSchema($schema)
+namespace Google\Service\Datastream {
+    class OracleObjectIdentifier extends \Google\Model
     {
+        /**
+         * Required. The schema name.
+         *
+         * @var string
+         */
+        public $schema;
+        /**
+         * Required. The table name.
+         *
+         * @var string
+         */
+        public $table;
+        /**
+         * Required. The schema name.
+         *
+         * @param string $schema
+         */
+        public function setSchema($schema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchema()
+        {
+        }
+        /**
+         * Required. The table name.
+         *
+         * @param string $table
+         */
+        public function setTable($table)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\OracleObjectIdentifier registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSchema()
-    {
-    }
-    /**
-     * Required. The table name.
-     *
-     * @param string $table
-     */
-    public function setTable($table)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTable()
+    class Google_Service_Datastream_OracleObjectIdentifier extends \Google\Service\Datastream\OracleObjectIdentifier
     {
     }
 }

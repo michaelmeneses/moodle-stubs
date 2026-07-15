@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1SourceMetadata extends \Google\Model
-{
-    /**
-     * Source type not specified.
-     */
-    public const SOURCE_TYPE_SOURCE_TYPE_UNSPECIFIED = 'SOURCE_TYPE_UNSPECIFIED';
-    /**
-     * Source type plugin.
-     */
-    public const SOURCE_TYPE_PLUGIN = 'PLUGIN';
-    /**
-     * Output only. The time at which the resource was created at the source.
-     *
-     * @var string
-     */
-    public $originalResourceCreateTime;
-    /**
-     * Output only. The unique identifier of the resource at the source.
-     *
-     * @var string
-     */
-    public $originalResourceId;
-    /**
-     * Output only. The time at which the resource was last updated at the source.
-     *
-     * @var string
-     */
-    public $originalResourceUpdateTime;
-    protected $pluginInstanceActionSourceType = GoogleCloudApihubV1PluginInstanceActionSource::class;
-    protected $pluginInstanceActionSourceDataType = '';
-    /**
-     * Output only. The type of the source.
-     *
-     * @var string
-     */
-    public $sourceType;
-    /**
-     * Output only. The time at which the resource was created at the source.
-     *
-     * @param string $originalResourceCreateTime
-     */
-    public function setOriginalResourceCreateTime($originalResourceCreateTime)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1SourceMetadata extends \Google\Model
     {
+        /**
+         * Source type not specified.
+         */
+        public const SOURCE_TYPE_SOURCE_TYPE_UNSPECIFIED = 'SOURCE_TYPE_UNSPECIFIED';
+        /**
+         * Source type plugin.
+         */
+        public const SOURCE_TYPE_PLUGIN = 'PLUGIN';
+        /**
+         * Output only. The time at which the resource was created at the source.
+         *
+         * @var string
+         */
+        public $originalResourceCreateTime;
+        /**
+         * Output only. The unique identifier of the resource at the source.
+         *
+         * @var string
+         */
+        public $originalResourceId;
+        /**
+         * Output only. The time at which the resource was last updated at the source.
+         *
+         * @var string
+         */
+        public $originalResourceUpdateTime;
+        protected $pluginInstanceActionSourceType = GoogleCloudApihubV1PluginInstanceActionSource::class;
+        protected $pluginInstanceActionSourceDataType = '';
+        /**
+         * Output only. The type of the source.
+         *
+         * @var string
+         */
+        public $sourceType;
+        /**
+         * Output only. The time at which the resource was created at the source.
+         *
+         * @param string $originalResourceCreateTime
+         */
+        public function setOriginalResourceCreateTime($originalResourceCreateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOriginalResourceCreateTime()
+        {
+        }
+        /**
+         * Output only. The unique identifier of the resource at the source.
+         *
+         * @param string $originalResourceId
+         */
+        public function setOriginalResourceId($originalResourceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOriginalResourceId()
+        {
+        }
+        /**
+         * Output only. The time at which the resource was last updated at the source.
+         *
+         * @param string $originalResourceUpdateTime
+         */
+        public function setOriginalResourceUpdateTime($originalResourceUpdateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOriginalResourceUpdateTime()
+        {
+        }
+        /**
+         * Output only. The source of the resource is a plugin instance action.
+         *
+         * @param GoogleCloudApihubV1PluginInstanceActionSource $pluginInstanceActionSource
+         */
+        public function setPluginInstanceActionSource(GoogleCloudApihubV1PluginInstanceActionSource $pluginInstanceActionSource)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1PluginInstanceActionSource
+         */
+        public function getPluginInstanceActionSource()
+        {
+        }
+        /**
+         * Output only. The type of the source.
+         *
+         * Accepted values: SOURCE_TYPE_UNSPECIFIED, PLUGIN
+         *
+         * @param self::SOURCE_TYPE_* $sourceType
+         */
+        public function setSourceType($sourceType)
+        {
+        }
+        /**
+         * @return self::SOURCE_TYPE_*
+         */
+        public function getSourceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1SourceMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOriginalResourceCreateTime()
-    {
-    }
-    /**
-     * Output only. The unique identifier of the resource at the source.
-     *
-     * @param string $originalResourceId
-     */
-    public function setOriginalResourceId($originalResourceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOriginalResourceId()
-    {
-    }
-    /**
-     * Output only. The time at which the resource was last updated at the source.
-     *
-     * @param string $originalResourceUpdateTime
-     */
-    public function setOriginalResourceUpdateTime($originalResourceUpdateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOriginalResourceUpdateTime()
-    {
-    }
-    /**
-     * Output only. The source of the resource is a plugin instance action.
-     *
-     * @param GoogleCloudApihubV1PluginInstanceActionSource $pluginInstanceActionSource
-     */
-    public function setPluginInstanceActionSource(GoogleCloudApihubV1PluginInstanceActionSource $pluginInstanceActionSource)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1PluginInstanceActionSource
-     */
-    public function getPluginInstanceActionSource()
-    {
-    }
-    /**
-     * Output only. The type of the source.
-     *
-     * Accepted values: SOURCE_TYPE_UNSPECIFIED, PLUGIN
-     *
-     * @param self::SOURCE_TYPE_* $sourceType
-     */
-    public function setSourceType($sourceType)
-    {
-    }
-    /**
-     * @return self::SOURCE_TYPE_*
-     */
-    public function getSourceType()
+    class Google_Service_APIhub_GoogleCloudApihubV1SourceMetadata extends \Google\Service\APIhub\GoogleCloudApihubV1SourceMetadata
     {
     }
 }

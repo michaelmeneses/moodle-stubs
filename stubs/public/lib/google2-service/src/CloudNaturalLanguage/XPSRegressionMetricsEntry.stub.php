@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSRegressionMetricsEntry extends \Google\Model
-{
-    /**
-     * The observed value for a row in the dataset.
-     *
-     * @var float
-     */
-    public $predictedValue;
-    /**
-     * The actual target value for a row in the dataset.
-     *
-     * @var float
-     */
-    public $trueValue;
-    /**
-     * The observed value for a row in the dataset.
-     *
-     * @param float $predictedValue
-     */
-    public function setPredictedValue($predictedValue)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSRegressionMetricsEntry extends \Google\Model
     {
+        /**
+         * The observed value for a row in the dataset.
+         *
+         * @var float
+         */
+        public $predictedValue;
+        /**
+         * The actual target value for a row in the dataset.
+         *
+         * @var float
+         */
+        public $trueValue;
+        /**
+         * The observed value for a row in the dataset.
+         *
+         * @param float $predictedValue
+         */
+        public function setPredictedValue($predictedValue)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getPredictedValue()
+        {
+        }
+        /**
+         * The actual target value for a row in the dataset.
+         *
+         * @param float $trueValue
+         */
+        public function setTrueValue($trueValue)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getTrueValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSRegressionMetricsEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPredictedValue()
-    {
-    }
-    /**
-     * The actual target value for a row in the dataset.
-     *
-     * @param float $trueValue
-     */
-    public function setTrueValue($trueValue)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getTrueValue()
+    class Google_Service_CloudNaturalLanguage_XPSRegressionMetricsEntry extends \Google\Service\CloudNaturalLanguage\XPSRegressionMetricsEntry
     {
     }
 }

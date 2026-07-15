@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class VolumeSaleInfoOffers extends \Google\Model
-{
-    /**
-     * The finsky offer type (e.g., PURCHASE=0 RENTAL=3)
-     *
-     * @var int
-     */
-    public $finskyOfferType;
-    /**
-     * Indicates whether the offer is giftable.
-     *
-     * @var bool
-     */
-    public $giftable;
-    protected $listPriceType = VolumeSaleInfoOffersListPrice::class;
-    protected $listPriceDataType = '';
-    protected $rentalDurationType = VolumeSaleInfoOffersRentalDuration::class;
-    protected $rentalDurationDataType = '';
-    protected $retailPriceType = VolumeSaleInfoOffersRetailPrice::class;
-    protected $retailPriceDataType = '';
-    /**
-     * The finsky offer type (e.g., PURCHASE=0 RENTAL=3)
-     *
-     * @param int $finskyOfferType
-     */
-    public function setFinskyOfferType($finskyOfferType)
+namespace Google\Service\Books {
+    class VolumeSaleInfoOffers extends \Google\Model
     {
+        /**
+         * The finsky offer type (e.g., PURCHASE=0 RENTAL=3)
+         *
+         * @var int
+         */
+        public $finskyOfferType;
+        /**
+         * Indicates whether the offer is giftable.
+         *
+         * @var bool
+         */
+        public $giftable;
+        protected $listPriceType = VolumeSaleInfoOffersListPrice::class;
+        protected $listPriceDataType = '';
+        protected $rentalDurationType = VolumeSaleInfoOffersRentalDuration::class;
+        protected $rentalDurationDataType = '';
+        protected $retailPriceType = VolumeSaleInfoOffersRetailPrice::class;
+        protected $retailPriceDataType = '';
+        /**
+         * The finsky offer type (e.g., PURCHASE=0 RENTAL=3)
+         *
+         * @param int $finskyOfferType
+         */
+        public function setFinskyOfferType($finskyOfferType)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFinskyOfferType()
+        {
+        }
+        /**
+         * Indicates whether the offer is giftable.
+         *
+         * @param bool $giftable
+         */
+        public function setGiftable($giftable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getGiftable()
+        {
+        }
+        /**
+         * Offer list (=undiscounted) price in Micros.
+         *
+         * @param VolumeSaleInfoOffersListPrice $listPrice
+         */
+        public function setListPrice(VolumeSaleInfoOffersListPrice $listPrice)
+        {
+        }
+        /**
+         * @return VolumeSaleInfoOffersListPrice
+         */
+        public function getListPrice()
+        {
+        }
+        /**
+         * The rental duration (for rental offers only).
+         *
+         * @param VolumeSaleInfoOffersRentalDuration $rentalDuration
+         */
+        public function setRentalDuration(VolumeSaleInfoOffersRentalDuration $rentalDuration)
+        {
+        }
+        /**
+         * @return VolumeSaleInfoOffersRentalDuration
+         */
+        public function getRentalDuration()
+        {
+        }
+        /**
+         * Offer retail (=discounted) price in Micros
+         *
+         * @param VolumeSaleInfoOffersRetailPrice $retailPrice
+         */
+        public function setRetailPrice(VolumeSaleInfoOffersRetailPrice $retailPrice)
+        {
+        }
+        /**
+         * @return VolumeSaleInfoOffersRetailPrice
+         */
+        public function getRetailPrice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Books\VolumeSaleInfoOffers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFinskyOfferType()
-    {
-    }
-    /**
-     * Indicates whether the offer is giftable.
-     *
-     * @param bool $giftable
-     */
-    public function setGiftable($giftable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getGiftable()
-    {
-    }
-    /**
-     * Offer list (=undiscounted) price in Micros.
-     *
-     * @param VolumeSaleInfoOffersListPrice $listPrice
-     */
-    public function setListPrice(VolumeSaleInfoOffersListPrice $listPrice)
-    {
-    }
-    /**
-     * @return VolumeSaleInfoOffersListPrice
-     */
-    public function getListPrice()
-    {
-    }
-    /**
-     * The rental duration (for rental offers only).
-     *
-     * @param VolumeSaleInfoOffersRentalDuration $rentalDuration
-     */
-    public function setRentalDuration(VolumeSaleInfoOffersRentalDuration $rentalDuration)
-    {
-    }
-    /**
-     * @return VolumeSaleInfoOffersRentalDuration
-     */
-    public function getRentalDuration()
-    {
-    }
-    /**
-     * Offer retail (=discounted) price in Micros
-     *
-     * @param VolumeSaleInfoOffersRetailPrice $retailPrice
-     */
-    public function setRetailPrice(VolumeSaleInfoOffersRetailPrice $retailPrice)
-    {
-    }
-    /**
-     * @return VolumeSaleInfoOffersRetailPrice
-     */
-    public function getRetailPrice()
+    class Google_Service_Books_VolumeSaleInfoOffers extends \Google\Service\Books\VolumeSaleInfoOffers
     {
     }
 }

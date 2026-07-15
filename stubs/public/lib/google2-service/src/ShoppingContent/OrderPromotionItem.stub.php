@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderPromotionItem extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $lineItemId;
-    /**
-     * @var string
-     */
-    public $offerId;
-    /**
-     * @var string
-     */
-    public $productId;
-    /**
-     * @var int
-     */
-    public $quantity;
-    /**
-     * @param string
-     */
-    public function setLineItemId($lineItemId)
+namespace Google\Service\ShoppingContent {
+    class OrderPromotionItem extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $lineItemId;
+        /**
+         * @var string
+         */
+        public $offerId;
+        /**
+         * @var string
+         */
+        public $productId;
+        /**
+         * @var int
+         */
+        public $quantity;
+        /**
+         * @param string
+         */
+        public function setLineItemId($lineItemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLineItemId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOfferId($offerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOfferId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setQuantity($quantity)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getQuantity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderPromotionItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLineItemId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOfferId($offerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOfferId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setQuantity($quantity)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getQuantity()
+    class Google_Service_ShoppingContent_OrderPromotionItem extends \Google\Service\ShoppingContent\OrderPromotionItem
     {
     }
 }

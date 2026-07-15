@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class Selinux extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * @var string
-     */
-    public $mode;
-    /**
-     * @param bool
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\MigrationCenterAPI {
+    class Selinux extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * @var string
+         */
+        public $mode;
+        /**
+         * @param bool
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\Selinux registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMode($mode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMode()
+    class Google_Service_MigrationCenterAPI_Selinux extends \Google\Service\MigrationCenterAPI\Selinux
     {
     }
 }

@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class Tag extends \Google\Model
-{
-    /**
-     * TagKey namespaced name, in the format of {ORG_ID}/{TAG_KEY_SHORT_NAME}.
-     *
-     * @var string
-     */
-    public $tagKey;
-    /**
-     * TagKey ID, in the format of tagKeys/{TAG_KEY_ID}.
-     *
-     * @var string
-     */
-    public $tagKeyId;
-    /**
-     * TagValue namespaced name, in the format of
-     * {ORG_ID}/{TAG_KEY_SHORT_NAME}/{TAG_VALUE_SHORT_NAME}.
-     *
-     * @var string
-     */
-    public $tagValue;
-    /**
-     * TagValue ID, in the format of tagValues/{TAG_VALUE_ID}.
-     *
-     * @var string
-     */
-    public $tagValueId;
-    /**
-     * TagKey namespaced name, in the format of {ORG_ID}/{TAG_KEY_SHORT_NAME}.
-     *
-     * @param string $tagKey
-     */
-    public function setTagKey($tagKey)
+namespace Google\Service\CloudAsset {
+    class Tag extends \Google\Model
     {
+        /**
+         * TagKey namespaced name, in the format of {ORG_ID}/{TAG_KEY_SHORT_NAME}.
+         *
+         * @var string
+         */
+        public $tagKey;
+        /**
+         * TagKey ID, in the format of tagKeys/{TAG_KEY_ID}.
+         *
+         * @var string
+         */
+        public $tagKeyId;
+        /**
+         * TagValue namespaced name, in the format of
+         * {ORG_ID}/{TAG_KEY_SHORT_NAME}/{TAG_VALUE_SHORT_NAME}.
+         *
+         * @var string
+         */
+        public $tagValue;
+        /**
+         * TagValue ID, in the format of tagValues/{TAG_VALUE_ID}.
+         *
+         * @var string
+         */
+        public $tagValueId;
+        /**
+         * TagKey namespaced name, in the format of {ORG_ID}/{TAG_KEY_SHORT_NAME}.
+         *
+         * @param string $tagKey
+         */
+        public function setTagKey($tagKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTagKey()
+        {
+        }
+        /**
+         * TagKey ID, in the format of tagKeys/{TAG_KEY_ID}.
+         *
+         * @param string $tagKeyId
+         */
+        public function setTagKeyId($tagKeyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTagKeyId()
+        {
+        }
+        /**
+         * TagValue namespaced name, in the format of
+         * {ORG_ID}/{TAG_KEY_SHORT_NAME}/{TAG_VALUE_SHORT_NAME}.
+         *
+         * @param string $tagValue
+         */
+        public function setTagValue($tagValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTagValue()
+        {
+        }
+        /**
+         * TagValue ID, in the format of tagValues/{TAG_VALUE_ID}.
+         *
+         * @param string $tagValueId
+         */
+        public function setTagValueId($tagValueId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTagValueId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\Tag registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTagKey()
-    {
-    }
-    /**
-     * TagKey ID, in the format of tagKeys/{TAG_KEY_ID}.
-     *
-     * @param string $tagKeyId
-     */
-    public function setTagKeyId($tagKeyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTagKeyId()
-    {
-    }
-    /**
-     * TagValue namespaced name, in the format of
-     * {ORG_ID}/{TAG_KEY_SHORT_NAME}/{TAG_VALUE_SHORT_NAME}.
-     *
-     * @param string $tagValue
-     */
-    public function setTagValue($tagValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTagValue()
-    {
-    }
-    /**
-     * TagValue ID, in the format of tagValues/{TAG_VALUE_ID}.
-     *
-     * @param string $tagValueId
-     */
-    public function setTagValueId($tagValueId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTagValueId()
+    class Google_Service_CloudAsset_Tag extends \Google\Service\CloudAsset\Tag
     {
     }
 }

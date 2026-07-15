@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ListHostProjectRegistrationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'hostProjectRegistrations';
-    protected $hostProjectRegistrationsType = GoogleCloudApihubV1HostProjectRegistration::class;
-    protected $hostProjectRegistrationsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of host project registrations.
-     *
-     * @param GoogleCloudApihubV1HostProjectRegistration[] $hostProjectRegistrations
-     */
-    public function setHostProjectRegistrations($hostProjectRegistrations)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ListHostProjectRegistrationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'hostProjectRegistrations';
+        protected $hostProjectRegistrationsType = GoogleCloudApihubV1HostProjectRegistration::class;
+        protected $hostProjectRegistrationsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of host project registrations.
+         *
+         * @param GoogleCloudApihubV1HostProjectRegistration[] $hostProjectRegistrations
+         */
+        public function setHostProjectRegistrations($hostProjectRegistrations)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1HostProjectRegistration[]
+         */
+        public function getHostProjectRegistrations()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1HostProjectRegistration[]
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ListHostProjectRegistrationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHostProjectRegistrations()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_APIhub_GoogleCloudApihubV1ListHostProjectRegistrationsResponse extends \Google\Service\APIhub\GoogleCloudApihubV1ListHostProjectRegistrationsResponse
     {
     }
 }

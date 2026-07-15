@@ -8,6 +8,11 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
+use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
+use PhpOffice\PhpSpreadsheet\Comment;
+use PhpOffice\PhpSpreadsheet\Reader\Xlsx\Namespaces;
+use PhpOffice\PhpSpreadsheet\Shared\XMLWriter;
+use PhpOffice\PhpSpreadsheet\Style\Alignment;
 class Comments extends WriterPart
 {
     private const VALID_HORIZONTAL_ALIGNMENT = [Alignment::HORIZONTAL_CENTER, Alignment::HORIZONTAL_DISTRIBUTED, Alignment::HORIZONTAL_JUSTIFY, Alignment::HORIZONTAL_LEFT, Alignment::HORIZONTAL_RIGHT];

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1TelemetryUserInfo extends \Google\Model
-{
-    /**
-     * Output only. User's email.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Output only. Organization unit ID of the user.
-     *
-     * @var string
-     */
-    public $orgUnitId;
-    /**
-     * Output only. User's email.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1TelemetryUserInfo extends \Google\Model
     {
+        /**
+         * Output only. User's email.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Output only. Organization unit ID of the user.
+         *
+         * @var string
+         */
+        public $orgUnitId;
+        /**
+         * Output only. User's email.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * Output only. Organization unit ID of the user.
+         *
+         * @param string $orgUnitId
+         */
+        public function setOrgUnitId($orgUnitId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrgUnitId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryUserInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * Output only. Organization unit ID of the user.
-     *
-     * @param string $orgUnitId
-     */
-    public function setOrgUnitId($orgUnitId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrgUnitId()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1TelemetryUserInfo extends \Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryUserInfo
     {
     }
 }

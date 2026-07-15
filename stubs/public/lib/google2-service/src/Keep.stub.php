@@ -21,40 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Keep (v1).
- *
- * <p>
- * The Google Keep API is used in an enterprise environment to manage Google
- * Keep content and resolve issues identified by cloud security software.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/workspace/keep/api" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Keep extends \Google\Service
-{
-    /** See, edit, create and permanently delete all your Google Keep data. */
-    const KEEP = "https://www.googleapis.com/auth/keep";
-    /** View all your Google Keep data. */
-    const KEEP_READONLY = "https://www.googleapis.com/auth/keep.readonly";
-    public $media;
-    public $notes;
-    public $notes_permissions;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Keep service.
+     * Service definition for Keep (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * The Google Keep API is used in an enterprise environment to manage Google
+     * Keep content and resolve issues identified by cloud security software.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/workspace/keep/api" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Keep extends \Google\Service
+    {
+        /** See, edit, create and permanently delete all your Google Keep data. */
+        const KEEP = "https://www.googleapis.com/auth/keep";
+        /** View all your Google Keep data. */
+        const KEEP_READONLY = "https://www.googleapis.com/auth/keep.readonly";
+        public $media;
+        public $notes;
+        public $notes_permissions;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Keep service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Keep registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Keep extends \Google\Service\Keep
     {
     }
 }

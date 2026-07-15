@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryDataTransfer;
-
-class TimeRange extends \Google\Model
-{
-    /**
-     * End time of the range of transfer runs. For example,
-     * `"2017-05-30T00:00:00+00:00"`. The end_time must not be in the future.
-     * Creates transfer runs where run_time is in the range between start_time
-     * (inclusive) and end_time (exclusive).
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Start time of the range of transfer runs. For example,
-     * `"2017-05-25T00:00:00+00:00"`. The start_time must be strictly less than
-     * the end_time. Creates transfer runs where run_time is in the range between
-     * start_time (inclusive) and end_time (exclusive).
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * End time of the range of transfer runs. For example,
-     * `"2017-05-30T00:00:00+00:00"`. The end_time must not be in the future.
-     * Creates transfer runs where run_time is in the range between start_time
-     * (inclusive) and end_time (exclusive).
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\BigQueryDataTransfer {
+    class TimeRange extends \Google\Model
     {
+        /**
+         * End time of the range of transfer runs. For example,
+         * `"2017-05-30T00:00:00+00:00"`. The end_time must not be in the future.
+         * Creates transfer runs where run_time is in the range between start_time
+         * (inclusive) and end_time (exclusive).
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Start time of the range of transfer runs. For example,
+         * `"2017-05-25T00:00:00+00:00"`. The start_time must be strictly less than
+         * the end_time. Creates transfer runs where run_time is in the range between
+         * start_time (inclusive) and end_time (exclusive).
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * End time of the range of transfer runs. For example,
+         * `"2017-05-30T00:00:00+00:00"`. The end_time must not be in the future.
+         * Creates transfer runs where run_time is in the range between start_time
+         * (inclusive) and end_time (exclusive).
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Start time of the range of transfer runs. For example,
+         * `"2017-05-25T00:00:00+00:00"`. The start_time must be strictly less than
+         * the end_time. Creates transfer runs where run_time is in the range between
+         * start_time (inclusive) and end_time (exclusive).
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigQueryDataTransfer\TimeRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Start time of the range of transfer runs. For example,
-     * `"2017-05-25T00:00:00+00:00"`. The start_time must be strictly less than
-     * the end_time. Creates transfer runs where run_time is in the range between
-     * start_time (inclusive) and end_time (exclusive).
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_BigQueryDataTransfer_TimeRange extends \Google\Service\BigQueryDataTransfer\TimeRange
     {
     }
 }

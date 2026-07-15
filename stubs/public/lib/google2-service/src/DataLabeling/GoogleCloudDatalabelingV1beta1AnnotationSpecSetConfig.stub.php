@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig extends \Google\Model
-{
-    /**
-     * Optional. If allow_multi_label is true, contributors are able to choose
-     * multiple labels from one annotation spec set.
-     *
-     * @var bool
-     */
-    public $allowMultiLabel;
-    /**
-     * Required. Annotation spec set resource name.
-     *
-     * @var string
-     */
-    public $annotationSpecSet;
-    /**
-     * Optional. If allow_multi_label is true, contributors are able to choose
-     * multiple labels from one annotation spec set.
-     *
-     * @param bool $allowMultiLabel
-     */
-    public function setAllowMultiLabel($allowMultiLabel)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig extends \Google\Model
     {
+        /**
+         * Optional. If allow_multi_label is true, contributors are able to choose
+         * multiple labels from one annotation spec set.
+         *
+         * @var bool
+         */
+        public $allowMultiLabel;
+        /**
+         * Required. Annotation spec set resource name.
+         *
+         * @var string
+         */
+        public $annotationSpecSet;
+        /**
+         * Optional. If allow_multi_label is true, contributors are able to choose
+         * multiple labels from one annotation spec set.
+         *
+         * @param bool $allowMultiLabel
+         */
+        public function setAllowMultiLabel($allowMultiLabel)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowMultiLabel()
+        {
+        }
+        /**
+         * Required. Annotation spec set resource name.
+         *
+         * @param string $annotationSpecSet
+         */
+        public function setAnnotationSpecSet($annotationSpecSet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotationSpecSet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowMultiLabel()
-    {
-    }
-    /**
-     * Required. Annotation spec set resource name.
-     *
-     * @param string $annotationSpecSet
-     */
-    public function setAnnotationSpecSet($annotationSpecSet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAnnotationSpecSet()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig
     {
     }
 }

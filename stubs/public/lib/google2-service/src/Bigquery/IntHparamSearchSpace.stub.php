@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class IntHparamSearchSpace extends \Google\Model
-{
-    protected $candidatesType = IntCandidates::class;
-    protected $candidatesDataType = '';
-    protected $rangeType = IntRange::class;
-    protected $rangeDataType = '';
-    /**
-     * Candidates of the int hyperparameter.
-     *
-     * @param IntCandidates $candidates
-     */
-    public function setCandidates(IntCandidates $candidates)
+namespace Google\Service\Bigquery {
+    class IntHparamSearchSpace extends \Google\Model
     {
+        protected $candidatesType = IntCandidates::class;
+        protected $candidatesDataType = '';
+        protected $rangeType = IntRange::class;
+        protected $rangeDataType = '';
+        /**
+         * Candidates of the int hyperparameter.
+         *
+         * @param IntCandidates $candidates
+         */
+        public function setCandidates(IntCandidates $candidates)
+        {
+        }
+        /**
+         * @return IntCandidates
+         */
+        public function getCandidates()
+        {
+        }
+        /**
+         * Range of the int hyperparameter.
+         *
+         * @param IntRange $range
+         */
+        public function setRange(IntRange $range)
+        {
+        }
+        /**
+         * @return IntRange
+         */
+        public function getRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IntCandidates
+     * Runtime class alias of \Google\Service\Bigquery\IntHparamSearchSpace registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCandidates()
-    {
-    }
-    /**
-     * Range of the int hyperparameter.
-     *
-     * @param IntRange $range
-     */
-    public function setRange(IntRange $range)
-    {
-    }
-    /**
-     * @return IntRange
-     */
-    public function getRange()
+    class Google_Service_Bigquery_IntHparamSearchSpace extends \Google\Service\Bigquery\IntHparamSearchSpace
     {
     }
 }

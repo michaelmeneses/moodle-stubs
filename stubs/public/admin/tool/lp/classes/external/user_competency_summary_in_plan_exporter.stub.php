@@ -29,6 +29,10 @@
  */
 namespace tool_lp\external;
 
+use context_user;
+use renderer_base;
+use stdClass;
+use core_competency\external\plan_exporter;
 /**
  * Class for exporting user competency data with additional related data in a plan.
  *

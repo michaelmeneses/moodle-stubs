@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class ResultSetStats extends \Google\Model
-{
-    protected $queryPlanType = QueryPlan::class;
-    protected $queryPlanDataType = '';
-    /**
-     * @var array[]
-     */
-    public $queryStats;
-    /**
-     * @param QueryPlan
-     */
-    public function setQueryPlan(QueryPlan $queryPlan)
+namespace Google\Service\Firestore {
+    class ResultSetStats extends \Google\Model
     {
+        protected $queryPlanType = QueryPlan::class;
+        protected $queryPlanDataType = '';
+        /**
+         * @var array[]
+         */
+        public $queryStats;
+        /**
+         * @param QueryPlan
+         */
+        public function setQueryPlan(QueryPlan $queryPlan)
+        {
+        }
+        /**
+         * @return QueryPlan
+         */
+        public function getQueryPlan()
+        {
+        }
+        /**
+         * @param array[]
+         */
+        public function setQueryStats($queryStats)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getQueryStats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return QueryPlan
+     * Runtime class alias of \Google\Service\Firestore\ResultSetStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQueryPlan()
-    {
-    }
-    /**
-     * @param array[]
-     */
-    public function setQueryStats($queryStats)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getQueryStats()
+    class Google_Service_Firestore_ResultSetStats extends \Google\Service\Firestore\ResultSetStats
     {
     }
 }

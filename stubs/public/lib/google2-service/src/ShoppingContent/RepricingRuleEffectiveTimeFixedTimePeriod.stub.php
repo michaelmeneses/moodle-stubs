@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class RepricingRuleEffectiveTimeFixedTimePeriod extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $endTime;
-    /**
-     * @var string
-     */
-    public $startTime;
-    /**
-     * @param string
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\ShoppingContent {
+    class RepricingRuleEffectiveTimeFixedTimePeriod extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $endTime;
+        /**
+         * @var string
+         */
+        public $startTime;
+        /**
+         * @param string
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\RepricingRuleEffectiveTimeFixedTimePeriod registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_ShoppingContent_RepricingRuleEffectiveTimeFixedTimePeriod extends \Google\Service\ShoppingContent\RepricingRuleEffectiveTimeFixedTimePeriod
     {
     }
 }

@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class RateDetails extends \Google\Model
-{
-    /**
-     * The rate type is not specified or is unknown in this version.
-     */
-    public const INVENTORY_SOURCE_RATE_TYPE_INVENTORY_SOURCE_RATE_TYPE_UNSPECIFIED = 'INVENTORY_SOURCE_RATE_TYPE_UNSPECIFIED';
-    /**
-     * The rate type is CPM (Fixed).
-     */
-    public const INVENTORY_SOURCE_RATE_TYPE_INVENTORY_SOURCE_RATE_TYPE_CPM_FIXED = 'INVENTORY_SOURCE_RATE_TYPE_CPM_FIXED';
-    /**
-     * The rate type is CPM (Floor).
-     */
-    public const INVENTORY_SOURCE_RATE_TYPE_INVENTORY_SOURCE_RATE_TYPE_CPM_FLOOR = 'INVENTORY_SOURCE_RATE_TYPE_CPM_FLOOR';
-    /**
-     * The rate type is Cost per Day.
-     */
-    public const INVENTORY_SOURCE_RATE_TYPE_INVENTORY_SOURCE_RATE_TYPE_CPD = 'INVENTORY_SOURCE_RATE_TYPE_CPD';
-    /**
-     * The rate type is Flat.
-     */
-    public const INVENTORY_SOURCE_RATE_TYPE_INVENTORY_SOURCE_RATE_TYPE_FLAT = 'INVENTORY_SOURCE_RATE_TYPE_FLAT';
-    /**
-     * The rate type. Acceptable values are
-     * `INVENTORY_SOURCE_RATE_TYPE_CPM_FIXED`,
-     * `INVENTORY_SOURCE_RATE_TYPE_CPM_FLOOR`, and
-     * `INVENTORY_SOURCE_RATE_TYPE_CPD`.
-     *
-     * @var string
-     */
-    public $inventorySourceRateType;
-    protected $minimumSpendType = Money::class;
-    protected $minimumSpendDataType = '';
-    protected $rateType = Money::class;
-    protected $rateDataType = '';
-    /**
-     * Required for guaranteed inventory sources. The number of impressions
-     * guaranteed by the seller.
-     *
-     * @var string
-     */
-    public $unitsPurchased;
-    /**
-     * The rate type. Acceptable values are
-     * `INVENTORY_SOURCE_RATE_TYPE_CPM_FIXED`,
-     * `INVENTORY_SOURCE_RATE_TYPE_CPM_FLOOR`, and
-     * `INVENTORY_SOURCE_RATE_TYPE_CPD`.
-     *
-     * Accepted values: INVENTORY_SOURCE_RATE_TYPE_UNSPECIFIED,
-     * INVENTORY_SOURCE_RATE_TYPE_CPM_FIXED, INVENTORY_SOURCE_RATE_TYPE_CPM_FLOOR,
-     * INVENTORY_SOURCE_RATE_TYPE_CPD, INVENTORY_SOURCE_RATE_TYPE_FLAT
-     *
-     * @param self::INVENTORY_SOURCE_RATE_TYPE_* $inventorySourceRateType
-     */
-    public function setInventorySourceRateType($inventorySourceRateType)
+namespace Google\Service\DisplayVideo {
+    class RateDetails extends \Google\Model
     {
+        /**
+         * The rate type is not specified or is unknown in this version.
+         */
+        public const INVENTORY_SOURCE_RATE_TYPE_INVENTORY_SOURCE_RATE_TYPE_UNSPECIFIED = 'INVENTORY_SOURCE_RATE_TYPE_UNSPECIFIED';
+        /**
+         * The rate type is CPM (Fixed).
+         */
+        public const INVENTORY_SOURCE_RATE_TYPE_INVENTORY_SOURCE_RATE_TYPE_CPM_FIXED = 'INVENTORY_SOURCE_RATE_TYPE_CPM_FIXED';
+        /**
+         * The rate type is CPM (Floor).
+         */
+        public const INVENTORY_SOURCE_RATE_TYPE_INVENTORY_SOURCE_RATE_TYPE_CPM_FLOOR = 'INVENTORY_SOURCE_RATE_TYPE_CPM_FLOOR';
+        /**
+         * The rate type is Cost per Day.
+         */
+        public const INVENTORY_SOURCE_RATE_TYPE_INVENTORY_SOURCE_RATE_TYPE_CPD = 'INVENTORY_SOURCE_RATE_TYPE_CPD';
+        /**
+         * The rate type is Flat.
+         */
+        public const INVENTORY_SOURCE_RATE_TYPE_INVENTORY_SOURCE_RATE_TYPE_FLAT = 'INVENTORY_SOURCE_RATE_TYPE_FLAT';
+        /**
+         * The rate type. Acceptable values are
+         * `INVENTORY_SOURCE_RATE_TYPE_CPM_FIXED`,
+         * `INVENTORY_SOURCE_RATE_TYPE_CPM_FLOOR`, and
+         * `INVENTORY_SOURCE_RATE_TYPE_CPD`.
+         *
+         * @var string
+         */
+        public $inventorySourceRateType;
+        protected $minimumSpendType = Money::class;
+        protected $minimumSpendDataType = '';
+        protected $rateType = Money::class;
+        protected $rateDataType = '';
+        /**
+         * Required for guaranteed inventory sources. The number of impressions
+         * guaranteed by the seller.
+         *
+         * @var string
+         */
+        public $unitsPurchased;
+        /**
+         * The rate type. Acceptable values are
+         * `INVENTORY_SOURCE_RATE_TYPE_CPM_FIXED`,
+         * `INVENTORY_SOURCE_RATE_TYPE_CPM_FLOOR`, and
+         * `INVENTORY_SOURCE_RATE_TYPE_CPD`.
+         *
+         * Accepted values: INVENTORY_SOURCE_RATE_TYPE_UNSPECIFIED,
+         * INVENTORY_SOURCE_RATE_TYPE_CPM_FIXED, INVENTORY_SOURCE_RATE_TYPE_CPM_FLOOR,
+         * INVENTORY_SOURCE_RATE_TYPE_CPD, INVENTORY_SOURCE_RATE_TYPE_FLAT
+         *
+         * @param self::INVENTORY_SOURCE_RATE_TYPE_* $inventorySourceRateType
+         */
+        public function setInventorySourceRateType($inventorySourceRateType)
+        {
+        }
+        /**
+         * @return self::INVENTORY_SOURCE_RATE_TYPE_*
+         */
+        public function getInventorySourceRateType()
+        {
+        }
+        /**
+         * Output only. The amount that the buyer has committed to spending on the
+         * inventory source up front. Only applicable for guaranteed inventory
+         * sources.
+         *
+         * @param Money $minimumSpend
+         */
+        public function setMinimumSpend(Money $minimumSpend)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getMinimumSpend()
+        {
+        }
+        /**
+         * The rate for the inventory source.
+         *
+         * @param Money $rate
+         */
+        public function setRate(Money $rate)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getRate()
+        {
+        }
+        /**
+         * Required for guaranteed inventory sources. The number of impressions
+         * guaranteed by the seller.
+         *
+         * @param string $unitsPurchased
+         */
+        public function setUnitsPurchased($unitsPurchased)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnitsPurchased()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::INVENTORY_SOURCE_RATE_TYPE_*
+     * Runtime class alias of \Google\Service\DisplayVideo\RateDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInventorySourceRateType()
-    {
-    }
-    /**
-     * Output only. The amount that the buyer has committed to spending on the
-     * inventory source up front. Only applicable for guaranteed inventory
-     * sources.
-     *
-     * @param Money $minimumSpend
-     */
-    public function setMinimumSpend(Money $minimumSpend)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getMinimumSpend()
-    {
-    }
-    /**
-     * The rate for the inventory source.
-     *
-     * @param Money $rate
-     */
-    public function setRate(Money $rate)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getRate()
-    {
-    }
-    /**
-     * Required for guaranteed inventory sources. The number of impressions
-     * guaranteed by the seller.
-     *
-     * @param string $unitsPurchased
-     */
-    public function setUnitsPurchased($unitsPurchased)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnitsPurchased()
+    class Google_Service_DisplayVideo_RateDetails extends \Google\Service\DisplayVideo\RateDetails
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class RemoteLockEvent extends \Google\Model
-{
-    /**
-     * Package name of the admin app requesting the change.
-     *
-     * @var string
-     */
-    public $adminPackageName;
-    /**
-     * User ID of the admin app from the which the change was requested.
-     *
-     * @var int
-     */
-    public $adminUserId;
-    /**
-     * User ID in which the change was requested in.
-     *
-     * @var int
-     */
-    public $targetUserId;
-    /**
-     * Package name of the admin app requesting the change.
-     *
-     * @param string $adminPackageName
-     */
-    public function setAdminPackageName($adminPackageName)
+namespace Google\Service\AndroidManagement {
+    class RemoteLockEvent extends \Google\Model
     {
+        /**
+         * Package name of the admin app requesting the change.
+         *
+         * @var string
+         */
+        public $adminPackageName;
+        /**
+         * User ID of the admin app from the which the change was requested.
+         *
+         * @var int
+         */
+        public $adminUserId;
+        /**
+         * User ID in which the change was requested in.
+         *
+         * @var int
+         */
+        public $targetUserId;
+        /**
+         * Package name of the admin app requesting the change.
+         *
+         * @param string $adminPackageName
+         */
+        public function setAdminPackageName($adminPackageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdminPackageName()
+        {
+        }
+        /**
+         * User ID of the admin app from the which the change was requested.
+         *
+         * @param int $adminUserId
+         */
+        public function setAdminUserId($adminUserId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAdminUserId()
+        {
+        }
+        /**
+         * User ID in which the change was requested in.
+         *
+         * @param int $targetUserId
+         */
+        public function setTargetUserId($targetUserId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTargetUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\RemoteLockEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdminPackageName()
-    {
-    }
-    /**
-     * User ID of the admin app from the which the change was requested.
-     *
-     * @param int $adminUserId
-     */
-    public function setAdminUserId($adminUserId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getAdminUserId()
-    {
-    }
-    /**
-     * User ID in which the change was requested in.
-     *
-     * @param int $targetUserId
-     */
-    public function setTargetUserId($targetUserId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTargetUserId()
+    class Google_Service_AndroidManagement_RemoteLockEvent extends \Google\Service\AndroidManagement\RemoteLockEvent
     {
     }
 }

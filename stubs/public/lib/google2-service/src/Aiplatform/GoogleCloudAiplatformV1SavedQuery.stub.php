@@ -21,222 +21,231 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SavedQuery extends \Google\Model
-{
-    /**
-     * Output only. Filters on the Annotations in the dataset.
-     *
-     * @var string
-     */
-    public $annotationFilter;
-    /**
-     * Output only. Number of AnnotationSpecs in the context of the SavedQuery.
-     *
-     * @var int
-     */
-    public $annotationSpecCount;
-    /**
-     * Output only. Timestamp when this SavedQuery was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Required. The user-defined name of the SavedQuery. The name can be up to
-     * 128 characters long and can consist of any UTF-8 characters.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Used to perform a consistent read-modify-write update. If not set, a blind
-     * "overwrite" update happens.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Some additional information about the SavedQuery.
-     *
-     * @var array
-     */
-    public $metadata;
-    /**
-     * Output only. Resource name of the SavedQuery.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Problem type of the SavedQuery. Allowed values: *
-     * IMAGE_CLASSIFICATION_SINGLE_LABEL * IMAGE_CLASSIFICATION_MULTI_LABEL *
-     * IMAGE_BOUNDING_POLY * IMAGE_BOUNDING_BOX * TEXT_CLASSIFICATION_SINGLE_LABEL
-     * * TEXT_CLASSIFICATION_MULTI_LABEL * TEXT_EXTRACTION * TEXT_SENTIMENT *
-     * VIDEO_CLASSIFICATION * VIDEO_OBJECT_TRACKING
-     *
-     * @var string
-     */
-    public $problemType;
-    /**
-     * Output only. If the Annotations belonging to the SavedQuery can be used for
-     * AutoML training.
-     *
-     * @var bool
-     */
-    public $supportAutomlTraining;
-    /**
-     * Output only. Timestamp when SavedQuery was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Filters on the Annotations in the dataset.
-     *
-     * @param string $annotationFilter
-     */
-    public function setAnnotationFilter($annotationFilter)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SavedQuery extends \Google\Model
     {
+        /**
+         * Output only. Filters on the Annotations in the dataset.
+         *
+         * @var string
+         */
+        public $annotationFilter;
+        /**
+         * Output only. Number of AnnotationSpecs in the context of the SavedQuery.
+         *
+         * @var int
+         */
+        public $annotationSpecCount;
+        /**
+         * Output only. Timestamp when this SavedQuery was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Required. The user-defined name of the SavedQuery. The name can be up to
+         * 128 characters long and can consist of any UTF-8 characters.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Used to perform a consistent read-modify-write update. If not set, a blind
+         * "overwrite" update happens.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Some additional information about the SavedQuery.
+         *
+         * @var array
+         */
+        public $metadata;
+        /**
+         * Output only. Resource name of the SavedQuery.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Problem type of the SavedQuery. Allowed values: *
+         * IMAGE_CLASSIFICATION_SINGLE_LABEL * IMAGE_CLASSIFICATION_MULTI_LABEL *
+         * IMAGE_BOUNDING_POLY * IMAGE_BOUNDING_BOX * TEXT_CLASSIFICATION_SINGLE_LABEL
+         * * TEXT_CLASSIFICATION_MULTI_LABEL * TEXT_EXTRACTION * TEXT_SENTIMENT *
+         * VIDEO_CLASSIFICATION * VIDEO_OBJECT_TRACKING
+         *
+         * @var string
+         */
+        public $problemType;
+        /**
+         * Output only. If the Annotations belonging to the SavedQuery can be used for
+         * AutoML training.
+         *
+         * @var bool
+         */
+        public $supportAutomlTraining;
+        /**
+         * Output only. Timestamp when SavedQuery was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Filters on the Annotations in the dataset.
+         *
+         * @param string $annotationFilter
+         */
+        public function setAnnotationFilter($annotationFilter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotationFilter()
+        {
+        }
+        /**
+         * Output only. Number of AnnotationSpecs in the context of the SavedQuery.
+         *
+         * @param int $annotationSpecCount
+         */
+        public function setAnnotationSpecCount($annotationSpecCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAnnotationSpecCount()
+        {
+        }
+        /**
+         * Output only. Timestamp when this SavedQuery was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Required. The user-defined name of the SavedQuery. The name can be up to
+         * 128 characters long and can consist of any UTF-8 characters.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Used to perform a consistent read-modify-write update. If not set, a blind
+         * "overwrite" update happens.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Some additional information about the SavedQuery.
+         *
+         * @param array $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Output only. Resource name of the SavedQuery.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Problem type of the SavedQuery. Allowed values: *
+         * IMAGE_CLASSIFICATION_SINGLE_LABEL * IMAGE_CLASSIFICATION_MULTI_LABEL *
+         * IMAGE_BOUNDING_POLY * IMAGE_BOUNDING_BOX * TEXT_CLASSIFICATION_SINGLE_LABEL
+         * * TEXT_CLASSIFICATION_MULTI_LABEL * TEXT_EXTRACTION * TEXT_SENTIMENT *
+         * VIDEO_CLASSIFICATION * VIDEO_OBJECT_TRACKING
+         *
+         * @param string $problemType
+         */
+        public function setProblemType($problemType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProblemType()
+        {
+        }
+        /**
+         * Output only. If the Annotations belonging to the SavedQuery can be used for
+         * AutoML training.
+         *
+         * @param bool $supportAutomlTraining
+         */
+        public function setSupportAutomlTraining($supportAutomlTraining)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportAutomlTraining()
+        {
+        }
+        /**
+         * Output only. Timestamp when SavedQuery was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SavedQuery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationFilter()
-    {
-    }
-    /**
-     * Output only. Number of AnnotationSpecs in the context of the SavedQuery.
-     *
-     * @param int $annotationSpecCount
-     */
-    public function setAnnotationSpecCount($annotationSpecCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getAnnotationSpecCount()
-    {
-    }
-    /**
-     * Output only. Timestamp when this SavedQuery was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Required. The user-defined name of the SavedQuery. The name can be up to
-     * 128 characters long and can consist of any UTF-8 characters.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Used to perform a consistent read-modify-write update. If not set, a blind
-     * "overwrite" update happens.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Some additional information about the SavedQuery.
-     *
-     * @param array $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Output only. Resource name of the SavedQuery.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Problem type of the SavedQuery. Allowed values: *
-     * IMAGE_CLASSIFICATION_SINGLE_LABEL * IMAGE_CLASSIFICATION_MULTI_LABEL *
-     * IMAGE_BOUNDING_POLY * IMAGE_BOUNDING_BOX * TEXT_CLASSIFICATION_SINGLE_LABEL
-     * * TEXT_CLASSIFICATION_MULTI_LABEL * TEXT_EXTRACTION * TEXT_SENTIMENT *
-     * VIDEO_CLASSIFICATION * VIDEO_OBJECT_TRACKING
-     *
-     * @param string $problemType
-     */
-    public function setProblemType($problemType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProblemType()
-    {
-    }
-    /**
-     * Output only. If the Annotations belonging to the SavedQuery can be used for
-     * AutoML training.
-     *
-     * @param bool $supportAutomlTraining
-     */
-    public function setSupportAutomlTraining($supportAutomlTraining)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportAutomlTraining()
-    {
-    }
-    /**
-     * Output only. Timestamp when SavedQuery was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SavedQuery extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SavedQuery
     {
     }
 }

@@ -21,121 +21,130 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class CreativeNativeAd extends \Google\Collection
-{
-    protected $collection_key = 'impressionTrackingUrl';
-    public $advertiser;
-    protected $appIconType = CreativeNativeAdAppIcon::class;
-    protected $appIconDataType = '';
-    public $body;
-    public $callToAction;
-    public $clickLinkUrl;
-    public $clickTrackingUrl;
-    public $headline;
-    protected $imageType = CreativeNativeAdImage::class;
-    protected $imageDataType = '';
-    public $impressionTrackingUrl;
-    protected $logoType = CreativeNativeAdLogo::class;
-    protected $logoDataType = '';
-    public $price;
-    public $starRating;
-    public $videoURL;
-    public function setAdvertiser($advertiser)
+namespace Google\Service\AdExchangeBuyer {
+    class CreativeNativeAd extends \Google\Collection
     {
+        protected $collection_key = 'impressionTrackingUrl';
+        public $advertiser;
+        protected $appIconType = CreativeNativeAdAppIcon::class;
+        protected $appIconDataType = '';
+        public $body;
+        public $callToAction;
+        public $clickLinkUrl;
+        public $clickTrackingUrl;
+        public $headline;
+        protected $imageType = CreativeNativeAdImage::class;
+        protected $imageDataType = '';
+        public $impressionTrackingUrl;
+        protected $logoType = CreativeNativeAdLogo::class;
+        protected $logoDataType = '';
+        public $price;
+        public $starRating;
+        public $videoURL;
+        public function setAdvertiser($advertiser)
+        {
+        }
+        public function getAdvertiser()
+        {
+        }
+        /**
+         * @param CreativeNativeAdAppIcon
+         */
+        public function setAppIcon(CreativeNativeAdAppIcon $appIcon)
+        {
+        }
+        /**
+         * @return CreativeNativeAdAppIcon
+         */
+        public function getAppIcon()
+        {
+        }
+        public function setBody($body)
+        {
+        }
+        public function getBody()
+        {
+        }
+        public function setCallToAction($callToAction)
+        {
+        }
+        public function getCallToAction()
+        {
+        }
+        public function setClickLinkUrl($clickLinkUrl)
+        {
+        }
+        public function getClickLinkUrl()
+        {
+        }
+        public function setClickTrackingUrl($clickTrackingUrl)
+        {
+        }
+        public function getClickTrackingUrl()
+        {
+        }
+        public function setHeadline($headline)
+        {
+        }
+        public function getHeadline()
+        {
+        }
+        /**
+         * @param CreativeNativeAdImage
+         */
+        public function setImage(CreativeNativeAdImage $image)
+        {
+        }
+        /**
+         * @return CreativeNativeAdImage
+         */
+        public function getImage()
+        {
+        }
+        public function setImpressionTrackingUrl($impressionTrackingUrl)
+        {
+        }
+        public function getImpressionTrackingUrl()
+        {
+        }
+        /**
+         * @param CreativeNativeAdLogo
+         */
+        public function setLogo(CreativeNativeAdLogo $logo)
+        {
+        }
+        /**
+         * @return CreativeNativeAdLogo
+         */
+        public function getLogo()
+        {
+        }
+        public function setPrice($price)
+        {
+        }
+        public function getPrice()
+        {
+        }
+        public function setStarRating($starRating)
+        {
+        }
+        public function getStarRating()
+        {
+        }
+        public function setVideoURL($videoURL)
+        {
+        }
+        public function getVideoURL()
+        {
+        }
     }
-    public function getAdvertiser()
-    {
-    }
+}
+namespace {
     /**
-     * @param CreativeNativeAdAppIcon
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\CreativeNativeAd registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setAppIcon(CreativeNativeAdAppIcon $appIcon)
-    {
-    }
-    /**
-     * @return CreativeNativeAdAppIcon
-     */
-    public function getAppIcon()
-    {
-    }
-    public function setBody($body)
-    {
-    }
-    public function getBody()
-    {
-    }
-    public function setCallToAction($callToAction)
-    {
-    }
-    public function getCallToAction()
-    {
-    }
-    public function setClickLinkUrl($clickLinkUrl)
-    {
-    }
-    public function getClickLinkUrl()
-    {
-    }
-    public function setClickTrackingUrl($clickTrackingUrl)
-    {
-    }
-    public function getClickTrackingUrl()
-    {
-    }
-    public function setHeadline($headline)
-    {
-    }
-    public function getHeadline()
-    {
-    }
-    /**
-     * @param CreativeNativeAdImage
-     */
-    public function setImage(CreativeNativeAdImage $image)
-    {
-    }
-    /**
-     * @return CreativeNativeAdImage
-     */
-    public function getImage()
-    {
-    }
-    public function setImpressionTrackingUrl($impressionTrackingUrl)
-    {
-    }
-    public function getImpressionTrackingUrl()
-    {
-    }
-    /**
-     * @param CreativeNativeAdLogo
-     */
-    public function setLogo(CreativeNativeAdLogo $logo)
-    {
-    }
-    /**
-     * @return CreativeNativeAdLogo
-     */
-    public function getLogo()
-    {
-    }
-    public function setPrice($price)
-    {
-    }
-    public function getPrice()
-    {
-    }
-    public function setStarRating($starRating)
-    {
-    }
-    public function getStarRating()
-    {
-    }
-    public function setVideoURL($videoURL)
-    {
-    }
-    public function getVideoURL()
+    class Google_Service_AdExchangeBuyer_CreativeNativeAd extends \Google\Service\AdExchangeBuyer\CreativeNativeAd
     {
     }
 }

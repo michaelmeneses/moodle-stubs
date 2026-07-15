@@ -21,122 +21,131 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class SqlCondition extends \Google\Model
-{
-    protected $booleanTestType = BooleanTest::class;
-    protected $booleanTestDataType = '';
-    protected $dailyType = Daily::class;
-    protected $dailyDataType = '';
-    protected $hourlyType = Hourly::class;
-    protected $hourlyDataType = '';
-    protected $minutesType = Minutes::class;
-    protected $minutesDataType = '';
-    /**
-     * Required. The Log Analytics SQL query to run, as a string. The query must
-     * conform to the required shape. Specifically, the query must not try to
-     * filter the input by time. A filter will automatically be applied to filter
-     * the input so that the query receives all rows received since the last time
-     * the query was run.For example, the following query extracts all log entries
-     * containing an HTTP request: SELECT timestamp, log_name, severity,
-     * http_request, resource, labels FROM my-project.global._Default._AllLogs
-     * WHERE http_request IS NOT NULL
-     *
-     * @var string
-     */
-    public $query;
-    protected $rowCountTestType = RowCountTest::class;
-    protected $rowCountTestDataType = '';
-    /**
-     * Test the boolean value in the indicated column.
-     *
-     * @param BooleanTest $booleanTest
-     */
-    public function setBooleanTest(BooleanTest $booleanTest)
+namespace Google\Service\Monitoring {
+    class SqlCondition extends \Google\Model
     {
+        protected $booleanTestType = BooleanTest::class;
+        protected $booleanTestDataType = '';
+        protected $dailyType = Daily::class;
+        protected $dailyDataType = '';
+        protected $hourlyType = Hourly::class;
+        protected $hourlyDataType = '';
+        protected $minutesType = Minutes::class;
+        protected $minutesDataType = '';
+        /**
+         * Required. The Log Analytics SQL query to run, as a string. The query must
+         * conform to the required shape. Specifically, the query must not try to
+         * filter the input by time. A filter will automatically be applied to filter
+         * the input so that the query receives all rows received since the last time
+         * the query was run.For example, the following query extracts all log entries
+         * containing an HTTP request: SELECT timestamp, log_name, severity,
+         * http_request, resource, labels FROM my-project.global._Default._AllLogs
+         * WHERE http_request IS NOT NULL
+         *
+         * @var string
+         */
+        public $query;
+        protected $rowCountTestType = RowCountTest::class;
+        protected $rowCountTestDataType = '';
+        /**
+         * Test the boolean value in the indicated column.
+         *
+         * @param BooleanTest $booleanTest
+         */
+        public function setBooleanTest(BooleanTest $booleanTest)
+        {
+        }
+        /**
+         * @return BooleanTest
+         */
+        public function getBooleanTest()
+        {
+        }
+        /**
+         * Schedule the query to execute every so many days.
+         *
+         * @param Daily $daily
+         */
+        public function setDaily(Daily $daily)
+        {
+        }
+        /**
+         * @return Daily
+         */
+        public function getDaily()
+        {
+        }
+        /**
+         * Schedule the query to execute every so many hours.
+         *
+         * @param Hourly $hourly
+         */
+        public function setHourly(Hourly $hourly)
+        {
+        }
+        /**
+         * @return Hourly
+         */
+        public function getHourly()
+        {
+        }
+        /**
+         * Schedule the query to execute every so many minutes.
+         *
+         * @param Minutes $minutes
+         */
+        public function setMinutes(Minutes $minutes)
+        {
+        }
+        /**
+         * @return Minutes
+         */
+        public function getMinutes()
+        {
+        }
+        /**
+         * Required. The Log Analytics SQL query to run, as a string. The query must
+         * conform to the required shape. Specifically, the query must not try to
+         * filter the input by time. A filter will automatically be applied to filter
+         * the input so that the query receives all rows received since the last time
+         * the query was run.For example, the following query extracts all log entries
+         * containing an HTTP request: SELECT timestamp, log_name, severity,
+         * http_request, resource, labels FROM my-project.global._Default._AllLogs
+         * WHERE http_request IS NOT NULL
+         *
+         * @param string $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
+        /**
+         * Test the row count against a threshold.
+         *
+         * @param RowCountTest $rowCountTest
+         */
+        public function setRowCountTest(RowCountTest $rowCountTest)
+        {
+        }
+        /**
+         * @return RowCountTest
+         */
+        public function getRowCountTest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BooleanTest
+     * Runtime class alias of \Google\Service\Monitoring\SqlCondition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBooleanTest()
-    {
-    }
-    /**
-     * Schedule the query to execute every so many days.
-     *
-     * @param Daily $daily
-     */
-    public function setDaily(Daily $daily)
-    {
-    }
-    /**
-     * @return Daily
-     */
-    public function getDaily()
-    {
-    }
-    /**
-     * Schedule the query to execute every so many hours.
-     *
-     * @param Hourly $hourly
-     */
-    public function setHourly(Hourly $hourly)
-    {
-    }
-    /**
-     * @return Hourly
-     */
-    public function getHourly()
-    {
-    }
-    /**
-     * Schedule the query to execute every so many minutes.
-     *
-     * @param Minutes $minutes
-     */
-    public function setMinutes(Minutes $minutes)
-    {
-    }
-    /**
-     * @return Minutes
-     */
-    public function getMinutes()
-    {
-    }
-    /**
-     * Required. The Log Analytics SQL query to run, as a string. The query must
-     * conform to the required shape. Specifically, the query must not try to
-     * filter the input by time. A filter will automatically be applied to filter
-     * the input so that the query receives all rows received since the last time
-     * the query was run.For example, the following query extracts all log entries
-     * containing an HTTP request: SELECT timestamp, log_name, severity,
-     * http_request, resource, labels FROM my-project.global._Default._AllLogs
-     * WHERE http_request IS NOT NULL
-     *
-     * @param string $query
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuery()
-    {
-    }
-    /**
-     * Test the row count against a threshold.
-     *
-     * @param RowCountTest $rowCountTest
-     */
-    public function setRowCountTest(RowCountTest $rowCountTest)
-    {
-    }
-    /**
-     * @return RowCountTest
-     */
-    public function getRowCountTest()
+    class Google_Service_Monitoring_SqlCondition extends \Google\Service\Monitoring\SqlCondition
     {
     }
 }

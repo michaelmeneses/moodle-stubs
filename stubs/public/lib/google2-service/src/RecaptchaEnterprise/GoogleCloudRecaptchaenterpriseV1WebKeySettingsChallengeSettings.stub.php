@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1WebKeySettingsChallengeSettings extends \Google\Model
-{
-    protected $actionSettingsType = GoogleCloudRecaptchaenterpriseV1WebKeySettingsActionSettings::class;
-    protected $actionSettingsDataType = 'map';
-    protected $defaultSettingsType = GoogleCloudRecaptchaenterpriseV1WebKeySettingsActionSettings::class;
-    protected $defaultSettingsDataType = '';
-    /**
-     * Optional. The action to score threshold map. The action name should be the
-     * same as the action name passed in the `data-action` attribute (see
-     * https://cloud.google.com/recaptcha/docs/actions-website). Action names are
-     * case-insensitive. There is a maximum of 100 action settings. An action name
-     * has a maximum length of 100.
-     *
-     * @param GoogleCloudRecaptchaenterpriseV1WebKeySettingsActionSettings[] $actionSettings
-     */
-    public function setActionSettings($actionSettings)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1WebKeySettingsChallengeSettings extends \Google\Model
     {
+        protected $actionSettingsType = GoogleCloudRecaptchaenterpriseV1WebKeySettingsActionSettings::class;
+        protected $actionSettingsDataType = 'map';
+        protected $defaultSettingsType = GoogleCloudRecaptchaenterpriseV1WebKeySettingsActionSettings::class;
+        protected $defaultSettingsDataType = '';
+        /**
+         * Optional. The action to score threshold map. The action name should be the
+         * same as the action name passed in the `data-action` attribute (see
+         * https://cloud.google.com/recaptcha/docs/actions-website). Action names are
+         * case-insensitive. There is a maximum of 100 action settings. An action name
+         * has a maximum length of 100.
+         *
+         * @param GoogleCloudRecaptchaenterpriseV1WebKeySettingsActionSettings[] $actionSettings
+         */
+        public function setActionSettings($actionSettings)
+        {
+        }
+        /**
+         * @return GoogleCloudRecaptchaenterpriseV1WebKeySettingsActionSettings[]
+         */
+        public function getActionSettings()
+        {
+        }
+        /**
+         * Required. Defines when a challenge is triggered (unless the default
+         * threshold is overridden for the given action, see `action_settings`).
+         *
+         * @param GoogleCloudRecaptchaenterpriseV1WebKeySettingsActionSettings $defaultSettings
+         */
+        public function setDefaultSettings(GoogleCloudRecaptchaenterpriseV1WebKeySettingsActionSettings $defaultSettings)
+        {
+        }
+        /**
+         * @return GoogleCloudRecaptchaenterpriseV1WebKeySettingsActionSettings
+         */
+        public function getDefaultSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRecaptchaenterpriseV1WebKeySettingsActionSettings[]
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1WebKeySettingsChallengeSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionSettings()
-    {
-    }
-    /**
-     * Required. Defines when a challenge is triggered (unless the default
-     * threshold is overridden for the given action, see `action_settings`).
-     *
-     * @param GoogleCloudRecaptchaenterpriseV1WebKeySettingsActionSettings $defaultSettings
-     */
-    public function setDefaultSettings(GoogleCloudRecaptchaenterpriseV1WebKeySettingsActionSettings $defaultSettings)
-    {
-    }
-    /**
-     * @return GoogleCloudRecaptchaenterpriseV1WebKeySettingsActionSettings
-     */
-    public function getDefaultSettings()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1WebKeySettingsChallengeSettings extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1WebKeySettingsChallengeSettings
     {
     }
 }

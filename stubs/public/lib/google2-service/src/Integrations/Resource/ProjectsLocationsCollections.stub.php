@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations\Resource;
-
-/**
- * The "collections" collection of methods.
- * Typical usage is:
- *  <code>
- *   $integrationsService = new Google\Service\Integrations(...);
- *   $collections = $integrationsService->projects_locations_collections;
- *  </code>
- */
-class ProjectsLocationsCollections extends \Google\Service\Resource
-{
+namespace Google\Service\Integrations\Resource {
+    /**
+     * The "collections" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $integrationsService = new Google\Service\Integrations(...);
+     *   $collections = $integrationsService->projects_locations_collections;
+     *  </code>
+     */
+    class ProjectsLocationsCollections extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Integrations\Resource\ProjectsLocationsCollections registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Integrations_Resource_ProjectsLocationsCollections extends \Google\Service\Integrations\Resource\ProjectsLocationsCollections
+    {
+    }
 }

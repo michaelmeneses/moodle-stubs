@@ -21,92 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Tasks\Resource;
-
-/**
- * The "tasklists" collection of methods.
- * Typical usage is:
- *  <code>
- *   $tasksService = new Google\Service\Tasks(...);
- *   $tasklists = $tasksService->tasklists;
- *  </code>
- */
-class Tasklists extends \Google\Service\Resource
-{
+namespace Google\Service\Tasks\Resource {
+    use Google\Service\Tasks\TaskList;
+    use Google\Service\Tasks\TaskLists as TaskListsModel;
     /**
-     * Deletes the authenticated user's specified task list. If the list contains
-     * assigned tasks, both the assigned tasks and the original tasks in the
-     * assignment surface (Docs, Chat Spaces) are deleted. (tasklists.delete)
-     *
-     * @param string $tasklist Task list identifier.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "tasklists" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $tasksService = new Google\Service\Tasks(...);
+     *   $tasklists = $tasksService->tasklists;
+     *  </code>
      */
-    public function delete($tasklist, $optParams = [])
+    class Tasklists extends \Google\Service\Resource
     {
+        /**
+         * Deletes the authenticated user's specified task list. If the list contains
+         * assigned tasks, both the assigned tasks and the original tasks in the
+         * assignment surface (Docs, Chat Spaces) are deleted. (tasklists.delete)
+         *
+         * @param string $tasklist Task list identifier.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($tasklist, $optParams = [])
+        {
+        }
+        /**
+         * Returns the authenticated user's specified task list. (tasklists.get)
+         *
+         * @param string $tasklist Task list identifier.
+         * @param array $optParams Optional parameters.
+         * @return TaskList
+         * @throws \Google\Service\Exception
+         */
+        public function get($tasklist, $optParams = [])
+        {
+        }
+        /**
+         * Creates a new task list and adds it to the authenticated user's task lists. A
+         * user can have up to 2000 lists at a time. (tasklists.insert)
+         *
+         * @param TaskList $postBody
+         * @param array $optParams Optional parameters.
+         * @return TaskList
+         * @throws \Google\Service\Exception
+         */
+        public function insert(TaskList $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns all the authenticated user's task lists. A user can have up to 2000
+         * lists at a time. (tasklists.listTasklists)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int maxResults Maximum number of task lists returned on one page.
+         * Optional. The default is 1000 (max allowed: 1000).
+         * @opt_param string pageToken Token specifying the result page to return.
+         * Optional.
+         * @return TaskListsModel
+         * @throws \Google\Service\Exception
+         */
+        public function listTasklists($optParams = [])
+        {
+        }
+        /**
+         * Updates the authenticated user's specified task list. This method supports
+         * patch semantics. (tasklists.patch)
+         *
+         * @param string $tasklist Task list identifier.
+         * @param TaskList $postBody
+         * @param array $optParams Optional parameters.
+         * @return TaskList
+         * @throws \Google\Service\Exception
+         */
+        public function patch($tasklist, TaskList $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates the authenticated user's specified task list. (tasklists.update)
+         *
+         * @param string $tasklist Task list identifier.
+         * @param TaskList $postBody
+         * @param array $optParams Optional parameters.
+         * @return TaskList
+         * @throws \Google\Service\Exception
+         */
+        public function update($tasklist, TaskList $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns the authenticated user's specified task list. (tasklists.get)
-     *
-     * @param string $tasklist Task list identifier.
-     * @param array $optParams Optional parameters.
-     * @return TaskList
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Tasks\Resource\Tasklists registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($tasklist, $optParams = [])
-    {
-    }
-    /**
-     * Creates a new task list and adds it to the authenticated user's task lists. A
-     * user can have up to 2000 lists at a time. (tasklists.insert)
-     *
-     * @param TaskList $postBody
-     * @param array $optParams Optional parameters.
-     * @return TaskList
-     * @throws \Google\Service\Exception
-     */
-    public function insert(TaskList $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Returns all the authenticated user's task lists. A user can have up to 2000
-     * lists at a time. (tasklists.listTasklists)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int maxResults Maximum number of task lists returned on one page.
-     * Optional. The default is 1000 (max allowed: 1000).
-     * @opt_param string pageToken Token specifying the result page to return.
-     * Optional.
-     * @return TaskListsModel
-     * @throws \Google\Service\Exception
-     */
-    public function listTasklists($optParams = [])
-    {
-    }
-    /**
-     * Updates the authenticated user's specified task list. This method supports
-     * patch semantics. (tasklists.patch)
-     *
-     * @param string $tasklist Task list identifier.
-     * @param TaskList $postBody
-     * @param array $optParams Optional parameters.
-     * @return TaskList
-     * @throws \Google\Service\Exception
-     */
-    public function patch($tasklist, TaskList $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates the authenticated user's specified task list. (tasklists.update)
-     *
-     * @param string $tasklist Task list identifier.
-     * @param TaskList $postBody
-     * @param array $optParams Optional parameters.
-     * @return TaskList
-     * @throws \Google\Service\Exception
-     */
-    public function update($tasklist, TaskList $postBody, $optParams = [])
+    class Google_Service_Tasks_Resource_Tasklists extends \Google\Service\Tasks\Resource\Tasklists
     {
     }
 }

@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoTriggerCriteria extends \Google\Model
-{
-    /**
-     * Required. Standard filter expression, when true the workflow will be
-     * executed. If there's no trigger_criteria_task_implementation_class_name
-     * specified, the condition will be validated directly.
-     *
-     * @var string
-     */
-    public $condition;
-    protected $parametersType = EnterpriseCrmEventbusProtoEventParameters::class;
-    protected $parametersDataType = '';
-    /**
-     * Optional. Implementation class name. The class should implement the
-     * “TypedTask” interface.
-     *
-     * @var string
-     */
-    public $triggerCriteriaTaskImplementationClassName;
-    /**
-     * Required. Standard filter expression, when true the workflow will be
-     * executed. If there's no trigger_criteria_task_implementation_class_name
-     * specified, the condition will be validated directly.
-     *
-     * @param string $condition
-     */
-    public function setCondition($condition)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoTriggerCriteria extends \Google\Model
     {
+        /**
+         * Required. Standard filter expression, when true the workflow will be
+         * executed. If there's no trigger_criteria_task_implementation_class_name
+         * specified, the condition will be validated directly.
+         *
+         * @var string
+         */
+        public $condition;
+        protected $parametersType = EnterpriseCrmEventbusProtoEventParameters::class;
+        protected $parametersDataType = '';
+        /**
+         * Optional. Implementation class name. The class should implement the
+         * “TypedTask” interface.
+         *
+         * @var string
+         */
+        public $triggerCriteriaTaskImplementationClassName;
+        /**
+         * Required. Standard filter expression, when true the workflow will be
+         * executed. If there's no trigger_criteria_task_implementation_class_name
+         * specified, the condition will be validated directly.
+         *
+         * @param string $condition
+         */
+        public function setCondition($condition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * Optional. To be used in TaskConfig for the implementation class.
+         *
+         * @param EnterpriseCrmEventbusProtoEventParameters $parameters
+         */
+        public function setParameters(EnterpriseCrmEventbusProtoEventParameters $parameters)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoEventParameters
+         */
+        public function getParameters()
+        {
+        }
+        /**
+         * Optional. Implementation class name. The class should implement the
+         * “TypedTask” interface.
+         *
+         * @param string $triggerCriteriaTaskImplementationClassName
+         */
+        public function setTriggerCriteriaTaskImplementationClassName($triggerCriteriaTaskImplementationClassName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTriggerCriteriaTaskImplementationClassName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoTriggerCriteria registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCondition()
-    {
-    }
-    /**
-     * Optional. To be used in TaskConfig for the implementation class.
-     *
-     * @param EnterpriseCrmEventbusProtoEventParameters $parameters
-     */
-    public function setParameters(EnterpriseCrmEventbusProtoEventParameters $parameters)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoEventParameters
-     */
-    public function getParameters()
-    {
-    }
-    /**
-     * Optional. Implementation class name. The class should implement the
-     * “TypedTask” interface.
-     *
-     * @param string $triggerCriteriaTaskImplementationClassName
-     */
-    public function setTriggerCriteriaTaskImplementationClassName($triggerCriteriaTaskImplementationClassName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTriggerCriteriaTaskImplementationClassName()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoTriggerCriteria extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoTriggerCriteria
     {
     }
 }

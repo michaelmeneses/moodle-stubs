@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class ServiceExternalIPsConfig extends \Google\Model
-{
-    /**
-     * Whether Services with ExternalIPs field are allowed or not.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Whether Services with ExternalIPs field are allowed or not.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\Container {
+    class ServiceExternalIPsConfig extends \Google\Model
     {
+        /**
+         * Whether Services with ExternalIPs field are allowed or not.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Whether Services with ExternalIPs field are allowed or not.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\ServiceExternalIPsConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
+    class Google_Service_Container_ServiceExternalIPsConfig extends \Google\Service\Container\ServiceExternalIPsConfig
     {
     }
 }

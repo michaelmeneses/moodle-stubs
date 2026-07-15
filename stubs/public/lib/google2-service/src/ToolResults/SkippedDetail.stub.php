@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class SkippedDetail extends \Google\Model
-{
-    /**
-     * If the App doesn't support the specific API level.
-     *
-     * @var bool
-     */
-    public $incompatibleAppVersion;
-    /**
-     * If the App doesn't run on the specific architecture, for example, x86.
-     *
-     * @var bool
-     */
-    public $incompatibleArchitecture;
-    /**
-     * If the requested OS version doesn't run on the specific device model.
-     *
-     * @var bool
-     */
-    public $incompatibleDevice;
-    /**
-     * If the App doesn't support the specific API level.
-     *
-     * @param bool $incompatibleAppVersion
-     */
-    public function setIncompatibleAppVersion($incompatibleAppVersion)
+namespace Google\Service\ToolResults {
+    class SkippedDetail extends \Google\Model
     {
+        /**
+         * If the App doesn't support the specific API level.
+         *
+         * @var bool
+         */
+        public $incompatibleAppVersion;
+        /**
+         * If the App doesn't run on the specific architecture, for example, x86.
+         *
+         * @var bool
+         */
+        public $incompatibleArchitecture;
+        /**
+         * If the requested OS version doesn't run on the specific device model.
+         *
+         * @var bool
+         */
+        public $incompatibleDevice;
+        /**
+         * If the App doesn't support the specific API level.
+         *
+         * @param bool $incompatibleAppVersion
+         */
+        public function setIncompatibleAppVersion($incompatibleAppVersion)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncompatibleAppVersion()
+        {
+        }
+        /**
+         * If the App doesn't run on the specific architecture, for example, x86.
+         *
+         * @param bool $incompatibleArchitecture
+         */
+        public function setIncompatibleArchitecture($incompatibleArchitecture)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncompatibleArchitecture()
+        {
+        }
+        /**
+         * If the requested OS version doesn't run on the specific device model.
+         *
+         * @param bool $incompatibleDevice
+         */
+        public function setIncompatibleDevice($incompatibleDevice)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncompatibleDevice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ToolResults\SkippedDetail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncompatibleAppVersion()
-    {
-    }
-    /**
-     * If the App doesn't run on the specific architecture, for example, x86.
-     *
-     * @param bool $incompatibleArchitecture
-     */
-    public function setIncompatibleArchitecture($incompatibleArchitecture)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIncompatibleArchitecture()
-    {
-    }
-    /**
-     * If the requested OS version doesn't run on the specific device model.
-     *
-     * @param bool $incompatibleDevice
-     */
-    public function setIncompatibleDevice($incompatibleDevice)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIncompatibleDevice()
+    class Google_Service_ToolResults_SkippedDetail extends \Google\Service\ToolResults\SkippedDetail
     {
     }
 }

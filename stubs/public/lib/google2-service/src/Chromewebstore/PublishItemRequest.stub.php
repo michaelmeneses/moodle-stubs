@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Chromewebstore;
-
-class PublishItemRequest extends \Google\Collection
-{
-    /**
-     * Default value. This is the same as DEFAULT_PUBLISH.
-     */
-    public const PUBLISH_TYPE_PUBLISH_TYPE_UNSPECIFIED = 'PUBLISH_TYPE_UNSPECIFIED';
-    /**
-     * The submission will be published immediately after being approved.
-     */
-    public const PUBLISH_TYPE_DEFAULT_PUBLISH = 'DEFAULT_PUBLISH';
-    /**
-     * After approval the submission will be staged and can then be published by
-     * the developer.
-     */
-    public const PUBLISH_TYPE_STAGED_PUBLISH = 'STAGED_PUBLISH';
-    protected $collection_key = 'deployInfos';
-    protected $deployInfosType = DeployInfo::class;
-    protected $deployInfosDataType = 'array';
-    /**
-     * Optional. Use this to control if the item is published immediately on
-     * approval or staged for publishing in the future. Defaults to
-     * `DEFAULT_PUBLISH` if unset.
-     *
-     * @var string
-     */
-    public $publishType;
-    /**
-     * Optional. Whether to attempt to skip item review. The API will validate if
-     * the item qualifies and return a validation error if the item requires
-     * review. Defaults to `false` if unset.
-     *
-     * @var bool
-     */
-    public $skipReview;
-    /**
-     * Optional. Additional deploy information including the desired initial
-     * percentage rollout. Defaults to the current value saved in the developer
-     * dashboard if unset.
-     *
-     * @param DeployInfo[] $deployInfos
-     */
-    public function setDeployInfos($deployInfos)
+namespace Google\Service\Chromewebstore {
+    class PublishItemRequest extends \Google\Collection
     {
+        /**
+         * Default value. This is the same as DEFAULT_PUBLISH.
+         */
+        public const PUBLISH_TYPE_PUBLISH_TYPE_UNSPECIFIED = 'PUBLISH_TYPE_UNSPECIFIED';
+        /**
+         * The submission will be published immediately after being approved.
+         */
+        public const PUBLISH_TYPE_DEFAULT_PUBLISH = 'DEFAULT_PUBLISH';
+        /**
+         * After approval the submission will be staged and can then be published by
+         * the developer.
+         */
+        public const PUBLISH_TYPE_STAGED_PUBLISH = 'STAGED_PUBLISH';
+        protected $collection_key = 'deployInfos';
+        protected $deployInfosType = DeployInfo::class;
+        protected $deployInfosDataType = 'array';
+        /**
+         * Optional. Use this to control if the item is published immediately on
+         * approval or staged for publishing in the future. Defaults to
+         * `DEFAULT_PUBLISH` if unset.
+         *
+         * @var string
+         */
+        public $publishType;
+        /**
+         * Optional. Whether to attempt to skip item review. The API will validate if
+         * the item qualifies and return a validation error if the item requires
+         * review. Defaults to `false` if unset.
+         *
+         * @var bool
+         */
+        public $skipReview;
+        /**
+         * Optional. Additional deploy information including the desired initial
+         * percentage rollout. Defaults to the current value saved in the developer
+         * dashboard if unset.
+         *
+         * @param DeployInfo[] $deployInfos
+         */
+        public function setDeployInfos($deployInfos)
+        {
+        }
+        /**
+         * @return DeployInfo[]
+         */
+        public function getDeployInfos()
+        {
+        }
+        /**
+         * Optional. Use this to control if the item is published immediately on
+         * approval or staged for publishing in the future. Defaults to
+         * `DEFAULT_PUBLISH` if unset.
+         *
+         * Accepted values: PUBLISH_TYPE_UNSPECIFIED, DEFAULT_PUBLISH, STAGED_PUBLISH
+         *
+         * @param self::PUBLISH_TYPE_* $publishType
+         */
+        public function setPublishType($publishType)
+        {
+        }
+        /**
+         * @return self::PUBLISH_TYPE_*
+         */
+        public function getPublishType()
+        {
+        }
+        /**
+         * Optional. Whether to attempt to skip item review. The API will validate if
+         * the item qualifies and return a validation error if the item requires
+         * review. Defaults to `false` if unset.
+         *
+         * @param bool $skipReview
+         */
+        public function setSkipReview($skipReview)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSkipReview()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeployInfo[]
+     * Runtime class alias of \Google\Service\Chromewebstore\PublishItemRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployInfos()
-    {
-    }
-    /**
-     * Optional. Use this to control if the item is published immediately on
-     * approval or staged for publishing in the future. Defaults to
-     * `DEFAULT_PUBLISH` if unset.
-     *
-     * Accepted values: PUBLISH_TYPE_UNSPECIFIED, DEFAULT_PUBLISH, STAGED_PUBLISH
-     *
-     * @param self::PUBLISH_TYPE_* $publishType
-     */
-    public function setPublishType($publishType)
-    {
-    }
-    /**
-     * @return self::PUBLISH_TYPE_*
-     */
-    public function getPublishType()
-    {
-    }
-    /**
-     * Optional. Whether to attempt to skip item review. The API will validate if
-     * the item qualifies and return a validation error if the item requires
-     * review. Defaults to `false` if unset.
-     *
-     * @param bool $skipReview
-     */
-    public function setSkipReview($skipReview)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSkipReview()
+    class Google_Service_Chromewebstore_PublishItemRequest extends \Google\Service\Chromewebstore\PublishItemRequest
     {
     }
 }

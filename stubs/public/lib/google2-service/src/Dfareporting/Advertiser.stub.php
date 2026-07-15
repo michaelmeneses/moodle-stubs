@@ -21,401 +21,410 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class Advertiser extends \Google\Model
-{
-    /**
-     * You'll need to confirm if your campaign contains EU political advertising.
-     */
-    public const EU_POLITICAL_ADS_DECLARATION_ADVERTISER_PLANS_TO_SERVE_EU_POLITICAL_ADS = 'ADVERTISER_PLANS_TO_SERVE_EU_POLITICAL_ADS';
-    /**
-     * All new campaigns will have “No” selected for the question that asks if
-     * your campaign has EU political ads. You can change this for any campaign at
-     * any time.
-     */
-    public const EU_POLITICAL_ADS_DECLARATION_ADVERTISER_DOES_NOT_PLAN_TO_SERVE_EU_POLITICAL_ADS = 'ADVERTISER_DOES_NOT_PLAN_TO_SERVE_EU_POLITICAL_ADS';
-    /**
-     * Approved (ads can deliver)
-     */
-    public const STATUS_APPROVED = 'APPROVED';
-    /**
-     * On-hold (all ads are stopped)
-     */
-    public const STATUS_ON_HOLD = 'ON_HOLD';
-    /**
-     * Account ID of this advertiser.This is a read-only field that can be left
-     * blank.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * ID of the advertiser group this advertiser belongs to. You can group
-     * advertisers for reporting purposes, allowing you to see aggregated
-     * information for all advertisers in each group.
-     *
-     * @var string
-     */
-    public $advertiserGroupId;
-    /**
-     * Suffix added to click-through URL of ad creative associations under this
-     * advertiser. Must be less than 129 characters long.
-     *
-     * @var string
-     */
-    public $clickThroughUrlSuffix;
-    /**
-     * ID of the click-through event tag to apply by default to the landing pages
-     * of this advertiser's campaigns.
-     *
-     * @var string
-     */
-    public $defaultClickThroughEventTagId;
-    /**
-     * Default email address used in sender field for tag emails.
-     *
-     * @var string
-     */
-    public $defaultEmail;
-    /**
-     * Optional. Whether the advertiser plans to serve EU political ads.
-     *
-     * @var string
-     */
-    public $euPoliticalAdsDeclaration;
-    /**
-     * Floodlight configuration ID of this advertiser. The floodlight
-     * configuration ID will be created automatically, so on insert this field
-     * should be left blank. This field can be set to another advertiser's
-     * floodlight configuration ID in order to share that advertiser's floodlight
-     * configuration with this advertiser, so long as: - This advertiser's
-     * original floodlight configuration is not already associated with floodlight
-     * activities or floodlight activity groups. - This advertiser's original
-     * floodlight configuration is not already shared with another advertiser.
-     *
-     * @var string
-     */
-    public $floodlightConfigurationId;
-    protected $floodlightConfigurationIdDimensionValueType = DimensionValue::class;
-    protected $floodlightConfigurationIdDimensionValueDataType = '';
-    /**
-     * ID of this advertiser. This is a read-only, auto-generated field.
-     *
-     * @var string
-     */
-    public $id;
-    protected $idDimensionValueType = DimensionValue::class;
-    protected $idDimensionValueDataType = '';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#advertiser".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $measurementPartnerLinkType = MeasurementPartnerAdvertiserLink::class;
-    protected $measurementPartnerLinkDataType = '';
-    /**
-     * Name of this advertiser. This is a required field and must be less than 256
-     * characters long and unique among advertisers of the same account.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Original floodlight configuration before any sharing occurred. Set the
-     * floodlightConfigurationId of this advertiser to
-     * originalFloodlightConfigurationId to unshare the advertiser's current
-     * floodlight configuration. You cannot unshare an advertiser's floodlight
-     * configuration if the shared configuration has activities associated with
-     * any campaign or placement.
-     *
-     * @var string
-     */
-    public $originalFloodlightConfigurationId;
-    /**
-     * Status of this advertiser.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Subaccount ID of this advertiser.This is a read-only field that can be left
-     * blank.
-     *
-     * @var string
-     */
-    public $subaccountId;
-    /**
-     * Suspension status of this advertiser.
-     *
-     * @var bool
-     */
-    public $suspended;
-    /**
-     * Account ID of this advertiser.This is a read-only field that can be left
-     * blank.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Dfareporting {
+    class Advertiser extends \Google\Model
     {
+        /**
+         * You'll need to confirm if your campaign contains EU political advertising.
+         */
+        public const EU_POLITICAL_ADS_DECLARATION_ADVERTISER_PLANS_TO_SERVE_EU_POLITICAL_ADS = 'ADVERTISER_PLANS_TO_SERVE_EU_POLITICAL_ADS';
+        /**
+         * All new campaigns will have “No” selected for the question that asks if
+         * your campaign has EU political ads. You can change this for any campaign at
+         * any time.
+         */
+        public const EU_POLITICAL_ADS_DECLARATION_ADVERTISER_DOES_NOT_PLAN_TO_SERVE_EU_POLITICAL_ADS = 'ADVERTISER_DOES_NOT_PLAN_TO_SERVE_EU_POLITICAL_ADS';
+        /**
+         * Approved (ads can deliver)
+         */
+        public const STATUS_APPROVED = 'APPROVED';
+        /**
+         * On-hold (all ads are stopped)
+         */
+        public const STATUS_ON_HOLD = 'ON_HOLD';
+        /**
+         * Account ID of this advertiser.This is a read-only field that can be left
+         * blank.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * ID of the advertiser group this advertiser belongs to. You can group
+         * advertisers for reporting purposes, allowing you to see aggregated
+         * information for all advertisers in each group.
+         *
+         * @var string
+         */
+        public $advertiserGroupId;
+        /**
+         * Suffix added to click-through URL of ad creative associations under this
+         * advertiser. Must be less than 129 characters long.
+         *
+         * @var string
+         */
+        public $clickThroughUrlSuffix;
+        /**
+         * ID of the click-through event tag to apply by default to the landing pages
+         * of this advertiser's campaigns.
+         *
+         * @var string
+         */
+        public $defaultClickThroughEventTagId;
+        /**
+         * Default email address used in sender field for tag emails.
+         *
+         * @var string
+         */
+        public $defaultEmail;
+        /**
+         * Optional. Whether the advertiser plans to serve EU political ads.
+         *
+         * @var string
+         */
+        public $euPoliticalAdsDeclaration;
+        /**
+         * Floodlight configuration ID of this advertiser. The floodlight
+         * configuration ID will be created automatically, so on insert this field
+         * should be left blank. This field can be set to another advertiser's
+         * floodlight configuration ID in order to share that advertiser's floodlight
+         * configuration with this advertiser, so long as: - This advertiser's
+         * original floodlight configuration is not already associated with floodlight
+         * activities or floodlight activity groups. - This advertiser's original
+         * floodlight configuration is not already shared with another advertiser.
+         *
+         * @var string
+         */
+        public $floodlightConfigurationId;
+        protected $floodlightConfigurationIdDimensionValueType = DimensionValue::class;
+        protected $floodlightConfigurationIdDimensionValueDataType = '';
+        /**
+         * ID of this advertiser. This is a read-only, auto-generated field.
+         *
+         * @var string
+         */
+        public $id;
+        protected $idDimensionValueType = DimensionValue::class;
+        protected $idDimensionValueDataType = '';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#advertiser".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $measurementPartnerLinkType = MeasurementPartnerAdvertiserLink::class;
+        protected $measurementPartnerLinkDataType = '';
+        /**
+         * Name of this advertiser. This is a required field and must be less than 256
+         * characters long and unique among advertisers of the same account.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Original floodlight configuration before any sharing occurred. Set the
+         * floodlightConfigurationId of this advertiser to
+         * originalFloodlightConfigurationId to unshare the advertiser's current
+         * floodlight configuration. You cannot unshare an advertiser's floodlight
+         * configuration if the shared configuration has activities associated with
+         * any campaign or placement.
+         *
+         * @var string
+         */
+        public $originalFloodlightConfigurationId;
+        /**
+         * Status of this advertiser.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Subaccount ID of this advertiser.This is a read-only field that can be left
+         * blank.
+         *
+         * @var string
+         */
+        public $subaccountId;
+        /**
+         * Suspension status of this advertiser.
+         *
+         * @var bool
+         */
+        public $suspended;
+        /**
+         * Account ID of this advertiser.This is a read-only field that can be left
+         * blank.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * ID of the advertiser group this advertiser belongs to. You can group
+         * advertisers for reporting purposes, allowing you to see aggregated
+         * information for all advertisers in each group.
+         *
+         * @param string $advertiserGroupId
+         */
+        public function setAdvertiserGroupId($advertiserGroupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserGroupId()
+        {
+        }
+        /**
+         * Suffix added to click-through URL of ad creative associations under this
+         * advertiser. Must be less than 129 characters long.
+         *
+         * @param string $clickThroughUrlSuffix
+         */
+        public function setClickThroughUrlSuffix($clickThroughUrlSuffix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClickThroughUrlSuffix()
+        {
+        }
+        /**
+         * ID of the click-through event tag to apply by default to the landing pages
+         * of this advertiser's campaigns.
+         *
+         * @param string $defaultClickThroughEventTagId
+         */
+        public function setDefaultClickThroughEventTagId($defaultClickThroughEventTagId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultClickThroughEventTagId()
+        {
+        }
+        /**
+         * Default email address used in sender field for tag emails.
+         *
+         * @param string $defaultEmail
+         */
+        public function setDefaultEmail($defaultEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultEmail()
+        {
+        }
+        /**
+         * Optional. Whether the advertiser plans to serve EU political ads.
+         *
+         * Accepted values: ADVERTISER_PLANS_TO_SERVE_EU_POLITICAL_ADS,
+         * ADVERTISER_DOES_NOT_PLAN_TO_SERVE_EU_POLITICAL_ADS
+         *
+         * @param self::EU_POLITICAL_ADS_DECLARATION_* $euPoliticalAdsDeclaration
+         */
+        public function setEuPoliticalAdsDeclaration($euPoliticalAdsDeclaration)
+        {
+        }
+        /**
+         * @return self::EU_POLITICAL_ADS_DECLARATION_*
+         */
+        public function getEuPoliticalAdsDeclaration()
+        {
+        }
+        /**
+         * Floodlight configuration ID of this advertiser. The floodlight
+         * configuration ID will be created automatically, so on insert this field
+         * should be left blank. This field can be set to another advertiser's
+         * floodlight configuration ID in order to share that advertiser's floodlight
+         * configuration with this advertiser, so long as: - This advertiser's
+         * original floodlight configuration is not already associated with floodlight
+         * activities or floodlight activity groups. - This advertiser's original
+         * floodlight configuration is not already shared with another advertiser.
+         *
+         * @param string $floodlightConfigurationId
+         */
+        public function setFloodlightConfigurationId($floodlightConfigurationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFloodlightConfigurationId()
+        {
+        }
+        /**
+         * Dimension value for the ID of the floodlight configuration. This is a read-
+         * only, auto-generated field.
+         *
+         * @param DimensionValue $floodlightConfigurationIdDimensionValue
+         */
+        public function setFloodlightConfigurationIdDimensionValue(DimensionValue $floodlightConfigurationIdDimensionValue)
+        {
+        }
+        /**
+         * @return DimensionValue
+         */
+        public function getFloodlightConfigurationIdDimensionValue()
+        {
+        }
+        /**
+         * ID of this advertiser. This is a read-only, auto-generated field.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Dimension value for the ID of this advertiser. This is a read-only, auto-
+         * generated field.
+         *
+         * @param DimensionValue $idDimensionValue
+         */
+        public function setIdDimensionValue(DimensionValue $idDimensionValue)
+        {
+        }
+        /**
+         * @return DimensionValue
+         */
+        public function getIdDimensionValue()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#advertiser".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Measurement partner advertiser link for tag wrapping.
+         *
+         * @param MeasurementPartnerAdvertiserLink $measurementPartnerLink
+         */
+        public function setMeasurementPartnerLink(MeasurementPartnerAdvertiserLink $measurementPartnerLink)
+        {
+        }
+        /**
+         * @return MeasurementPartnerAdvertiserLink
+         */
+        public function getMeasurementPartnerLink()
+        {
+        }
+        /**
+         * Name of this advertiser. This is a required field and must be less than 256
+         * characters long and unique among advertisers of the same account.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Original floodlight configuration before any sharing occurred. Set the
+         * floodlightConfigurationId of this advertiser to
+         * originalFloodlightConfigurationId to unshare the advertiser's current
+         * floodlight configuration. You cannot unshare an advertiser's floodlight
+         * configuration if the shared configuration has activities associated with
+         * any campaign or placement.
+         *
+         * @param string $originalFloodlightConfigurationId
+         */
+        public function setOriginalFloodlightConfigurationId($originalFloodlightConfigurationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOriginalFloodlightConfigurationId()
+        {
+        }
+        /**
+         * Status of this advertiser.
+         *
+         * Accepted values: APPROVED, ON_HOLD
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Subaccount ID of this advertiser.This is a read-only field that can be left
+         * blank.
+         *
+         * @param string $subaccountId
+         */
+        public function setSubaccountId($subaccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubaccountId()
+        {
+        }
+        /**
+         * Suspension status of this advertiser.
+         *
+         * @param bool $suspended
+         */
+        public function setSuspended($suspended)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSuspended()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\Advertiser registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * ID of the advertiser group this advertiser belongs to. You can group
-     * advertisers for reporting purposes, allowing you to see aggregated
-     * information for all advertisers in each group.
-     *
-     * @param string $advertiserGroupId
-     */
-    public function setAdvertiserGroupId($advertiserGroupId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAdvertiserGroupId()
-    {
-    }
-    /**
-     * Suffix added to click-through URL of ad creative associations under this
-     * advertiser. Must be less than 129 characters long.
-     *
-     * @param string $clickThroughUrlSuffix
-     */
-    public function setClickThroughUrlSuffix($clickThroughUrlSuffix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClickThroughUrlSuffix()
-    {
-    }
-    /**
-     * ID of the click-through event tag to apply by default to the landing pages
-     * of this advertiser's campaigns.
-     *
-     * @param string $defaultClickThroughEventTagId
-     */
-    public function setDefaultClickThroughEventTagId($defaultClickThroughEventTagId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDefaultClickThroughEventTagId()
-    {
-    }
-    /**
-     * Default email address used in sender field for tag emails.
-     *
-     * @param string $defaultEmail
-     */
-    public function setDefaultEmail($defaultEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDefaultEmail()
-    {
-    }
-    /**
-     * Optional. Whether the advertiser plans to serve EU political ads.
-     *
-     * Accepted values: ADVERTISER_PLANS_TO_SERVE_EU_POLITICAL_ADS,
-     * ADVERTISER_DOES_NOT_PLAN_TO_SERVE_EU_POLITICAL_ADS
-     *
-     * @param self::EU_POLITICAL_ADS_DECLARATION_* $euPoliticalAdsDeclaration
-     */
-    public function setEuPoliticalAdsDeclaration($euPoliticalAdsDeclaration)
-    {
-    }
-    /**
-     * @return self::EU_POLITICAL_ADS_DECLARATION_*
-     */
-    public function getEuPoliticalAdsDeclaration()
-    {
-    }
-    /**
-     * Floodlight configuration ID of this advertiser. The floodlight
-     * configuration ID will be created automatically, so on insert this field
-     * should be left blank. This field can be set to another advertiser's
-     * floodlight configuration ID in order to share that advertiser's floodlight
-     * configuration with this advertiser, so long as: - This advertiser's
-     * original floodlight configuration is not already associated with floodlight
-     * activities or floodlight activity groups. - This advertiser's original
-     * floodlight configuration is not already shared with another advertiser.
-     *
-     * @param string $floodlightConfigurationId
-     */
-    public function setFloodlightConfigurationId($floodlightConfigurationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFloodlightConfigurationId()
-    {
-    }
-    /**
-     * Dimension value for the ID of the floodlight configuration. This is a read-
-     * only, auto-generated field.
-     *
-     * @param DimensionValue $floodlightConfigurationIdDimensionValue
-     */
-    public function setFloodlightConfigurationIdDimensionValue(DimensionValue $floodlightConfigurationIdDimensionValue)
-    {
-    }
-    /**
-     * @return DimensionValue
-     */
-    public function getFloodlightConfigurationIdDimensionValue()
-    {
-    }
-    /**
-     * ID of this advertiser. This is a read-only, auto-generated field.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Dimension value for the ID of this advertiser. This is a read-only, auto-
-     * generated field.
-     *
-     * @param DimensionValue $idDimensionValue
-     */
-    public function setIdDimensionValue(DimensionValue $idDimensionValue)
-    {
-    }
-    /**
-     * @return DimensionValue
-     */
-    public function getIdDimensionValue()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#advertiser".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Measurement partner advertiser link for tag wrapping.
-     *
-     * @param MeasurementPartnerAdvertiserLink $measurementPartnerLink
-     */
-    public function setMeasurementPartnerLink(MeasurementPartnerAdvertiserLink $measurementPartnerLink)
-    {
-    }
-    /**
-     * @return MeasurementPartnerAdvertiserLink
-     */
-    public function getMeasurementPartnerLink()
-    {
-    }
-    /**
-     * Name of this advertiser. This is a required field and must be less than 256
-     * characters long and unique among advertisers of the same account.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Original floodlight configuration before any sharing occurred. Set the
-     * floodlightConfigurationId of this advertiser to
-     * originalFloodlightConfigurationId to unshare the advertiser's current
-     * floodlight configuration. You cannot unshare an advertiser's floodlight
-     * configuration if the shared configuration has activities associated with
-     * any campaign or placement.
-     *
-     * @param string $originalFloodlightConfigurationId
-     */
-    public function setOriginalFloodlightConfigurationId($originalFloodlightConfigurationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOriginalFloodlightConfigurationId()
-    {
-    }
-    /**
-     * Status of this advertiser.
-     *
-     * Accepted values: APPROVED, ON_HOLD
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * Subaccount ID of this advertiser.This is a read-only field that can be left
-     * blank.
-     *
-     * @param string $subaccountId
-     */
-    public function setSubaccountId($subaccountId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubaccountId()
-    {
-    }
-    /**
-     * Suspension status of this advertiser.
-     *
-     * @param bool $suspended
-     */
-    public function setSuspended($suspended)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSuspended()
+    class Google_Service_Dfareporting_Advertiser extends \Google\Service\Dfareporting\Advertiser
     {
     }
 }

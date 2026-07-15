@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class PrincipalComponentInfo extends \Google\Model
-{
+namespace Google\Service\Bigquery {
+    class PrincipalComponentInfo extends \Google\Model
+    {
+        /**
+         * The explained_variance is pre-ordered in the descending order to compute
+         * the cumulative explained variance ratio.
+         *
+         * @var 
+         */
+        public $cumulativeExplainedVarianceRatio;
+        /**
+         * Explained variance by this principal component, which is simply the
+         * eigenvalue.
+         *
+         * @var 
+         */
+        public $explainedVariance;
+        /**
+         * Explained_variance over the total explained variance.
+         *
+         * @var 
+         */
+        public $explainedVarianceRatio;
+        /**
+         * Id of the principal component.
+         *
+         * @var string
+         */
+        public $principalComponentId;
+        public function setCumulativeExplainedVarianceRatio($cumulativeExplainedVarianceRatio)
+        {
+        }
+        public function getCumulativeExplainedVarianceRatio()
+        {
+        }
+        public function setExplainedVariance($explainedVariance)
+        {
+        }
+        public function getExplainedVariance()
+        {
+        }
+        public function setExplainedVarianceRatio($explainedVarianceRatio)
+        {
+        }
+        public function getExplainedVarianceRatio()
+        {
+        }
+        /**
+         * Id of the principal component.
+         *
+         * @param string $principalComponentId
+         */
+        public function setPrincipalComponentId($principalComponentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrincipalComponentId()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * The explained_variance is pre-ordered in the descending order to compute
-     * the cumulative explained variance ratio.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Bigquery\PrincipalComponentInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $cumulativeExplainedVarianceRatio;
-    /**
-     * Explained variance by this principal component, which is simply the
-     * eigenvalue.
-     *
-     * @var 
-     */
-    public $explainedVariance;
-    /**
-     * Explained_variance over the total explained variance.
-     *
-     * @var 
-     */
-    public $explainedVarianceRatio;
-    /**
-     * Id of the principal component.
-     *
-     * @var string
-     */
-    public $principalComponentId;
-    public function setCumulativeExplainedVarianceRatio($cumulativeExplainedVarianceRatio)
-    {
-    }
-    public function getCumulativeExplainedVarianceRatio()
-    {
-    }
-    public function setExplainedVariance($explainedVariance)
-    {
-    }
-    public function getExplainedVariance()
-    {
-    }
-    public function setExplainedVarianceRatio($explainedVarianceRatio)
-    {
-    }
-    public function getExplainedVarianceRatio()
-    {
-    }
-    /**
-     * Id of the principal component.
-     *
-     * @param string $principalComponentId
-     */
-    public function setPrincipalComponentId($principalComponentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrincipalComponentId()
+    class Google_Service_Bigquery_PrincipalComponentInfo extends \Google\Service\Bigquery\PrincipalComponentInfo
     {
     }
 }

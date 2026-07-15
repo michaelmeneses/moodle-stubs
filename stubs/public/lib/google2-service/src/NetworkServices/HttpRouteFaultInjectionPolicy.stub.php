@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class HttpRouteFaultInjectionPolicy extends \Google\Model
-{
-    protected $abortType = HttpRouteFaultInjectionPolicyAbort::class;
-    protected $abortDataType = '';
-    protected $delayType = HttpRouteFaultInjectionPolicyDelay::class;
-    protected $delayDataType = '';
-    /**
-     * The specification for aborting to client requests.
-     *
-     * @param HttpRouteFaultInjectionPolicyAbort $abort
-     */
-    public function setAbort(HttpRouteFaultInjectionPolicyAbort $abort)
+namespace Google\Service\NetworkServices {
+    class HttpRouteFaultInjectionPolicy extends \Google\Model
     {
+        protected $abortType = HttpRouteFaultInjectionPolicyAbort::class;
+        protected $abortDataType = '';
+        protected $delayType = HttpRouteFaultInjectionPolicyDelay::class;
+        protected $delayDataType = '';
+        /**
+         * The specification for aborting to client requests.
+         *
+         * @param HttpRouteFaultInjectionPolicyAbort $abort
+         */
+        public function setAbort(HttpRouteFaultInjectionPolicyAbort $abort)
+        {
+        }
+        /**
+         * @return HttpRouteFaultInjectionPolicyAbort
+         */
+        public function getAbort()
+        {
+        }
+        /**
+         * The specification for injecting delay to client requests.
+         *
+         * @param HttpRouteFaultInjectionPolicyDelay $delay
+         */
+        public function setDelay(HttpRouteFaultInjectionPolicyDelay $delay)
+        {
+        }
+        /**
+         * @return HttpRouteFaultInjectionPolicyDelay
+         */
+        public function getDelay()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HttpRouteFaultInjectionPolicyAbort
+     * Runtime class alias of \Google\Service\NetworkServices\HttpRouteFaultInjectionPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAbort()
-    {
-    }
-    /**
-     * The specification for injecting delay to client requests.
-     *
-     * @param HttpRouteFaultInjectionPolicyDelay $delay
-     */
-    public function setDelay(HttpRouteFaultInjectionPolicyDelay $delay)
-    {
-    }
-    /**
-     * @return HttpRouteFaultInjectionPolicyDelay
-     */
-    public function getDelay()
+    class Google_Service_NetworkServices_HttpRouteFaultInjectionPolicy extends \Google\Service\NetworkServices\HttpRouteFaultInjectionPolicy
     {
     }
 }

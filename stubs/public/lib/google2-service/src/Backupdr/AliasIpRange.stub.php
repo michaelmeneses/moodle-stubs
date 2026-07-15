@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class AliasIpRange extends \Google\Model
-{
-    /**
-     * Optional. The IP alias ranges to allocate for this interface.
-     *
-     * @var string
-     */
-    public $ipCidrRange;
-    /**
-     * Optional. The name of a subnetwork secondary IP range from which to
-     * allocate an IP alias range. If not specified, the primary range of the
-     * subnetwork is used.
-     *
-     * @var string
-     */
-    public $subnetworkRangeName;
-    /**
-     * Optional. The IP alias ranges to allocate for this interface.
-     *
-     * @param string $ipCidrRange
-     */
-    public function setIpCidrRange($ipCidrRange)
+namespace Google\Service\Backupdr {
+    class AliasIpRange extends \Google\Model
     {
+        /**
+         * Optional. The IP alias ranges to allocate for this interface.
+         *
+         * @var string
+         */
+        public $ipCidrRange;
+        /**
+         * Optional. The name of a subnetwork secondary IP range from which to
+         * allocate an IP alias range. If not specified, the primary range of the
+         * subnetwork is used.
+         *
+         * @var string
+         */
+        public $subnetworkRangeName;
+        /**
+         * Optional. The IP alias ranges to allocate for this interface.
+         *
+         * @param string $ipCidrRange
+         */
+        public function setIpCidrRange($ipCidrRange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpCidrRange()
+        {
+        }
+        /**
+         * Optional. The name of a subnetwork secondary IP range from which to
+         * allocate an IP alias range. If not specified, the primary range of the
+         * subnetwork is used.
+         *
+         * @param string $subnetworkRangeName
+         */
+        public function setSubnetworkRangeName($subnetworkRangeName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnetworkRangeName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\AliasIpRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpCidrRange()
-    {
-    }
-    /**
-     * Optional. The name of a subnetwork secondary IP range from which to
-     * allocate an IP alias range. If not specified, the primary range of the
-     * subnetwork is used.
-     *
-     * @param string $subnetworkRangeName
-     */
-    public function setSubnetworkRangeName($subnetworkRangeName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubnetworkRangeName()
+    class Google_Service_Backupdr_AliasIpRange extends \Google\Service\Backupdr\AliasIpRange
     {
     }
 }

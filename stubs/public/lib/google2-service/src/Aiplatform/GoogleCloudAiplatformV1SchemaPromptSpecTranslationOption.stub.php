@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPromptSpecTranslationOption extends \Google\Model
-{
-    /**
-     * How many shots to use.
-     *
-     * @var int
-     */
-    public $numberOfShots;
-    /**
-     * How many shots to use.
-     *
-     * @param int $numberOfShots
-     */
-    public function setNumberOfShots($numberOfShots)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPromptSpecTranslationOption extends \Google\Model
     {
+        /**
+         * How many shots to use.
+         *
+         * @var int
+         */
+        public $numberOfShots;
+        /**
+         * How many shots to use.
+         *
+         * @param int $numberOfShots
+         */
+        public function setNumberOfShots($numberOfShots)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumberOfShots()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPromptSpecTranslationOption registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNumberOfShots()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPromptSpecTranslationOption extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPromptSpecTranslationOption
     {
     }
 }

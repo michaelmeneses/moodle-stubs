@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class DisableServiceAccountKeyRequest extends \Google\Model
-{
+namespace Google\Service\Iam {
+    class DisableServiceAccountKeyRequest extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Iam\DisableServiceAccountKeyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Iam_DisableServiceAccountKeyRequest extends \Google\Service\Iam\DisableServiceAccountKeyRequest
+    {
+    }
 }

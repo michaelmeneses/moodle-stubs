@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIot;
-
-class GatewayConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $gatewayAuthMethod;
-    /**
-     * @var string
-     */
-    public $gatewayType;
-    /**
-     * @var string
-     */
-    public $lastAccessedGatewayId;
-    /**
-     * @var string
-     */
-    public $lastAccessedGatewayTime;
-    /**
-     * @param string
-     */
-    public function setGatewayAuthMethod($gatewayAuthMethod)
+namespace Google\Service\CloudIot {
+    class GatewayConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $gatewayAuthMethod;
+        /**
+         * @var string
+         */
+        public $gatewayType;
+        /**
+         * @var string
+         */
+        public $lastAccessedGatewayId;
+        /**
+         * @var string
+         */
+        public $lastAccessedGatewayTime;
+        /**
+         * @param string
+         */
+        public function setGatewayAuthMethod($gatewayAuthMethod)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGatewayAuthMethod()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGatewayType($gatewayType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGatewayType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastAccessedGatewayId($lastAccessedGatewayId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastAccessedGatewayId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastAccessedGatewayTime($lastAccessedGatewayTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastAccessedGatewayTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIot\GatewayConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGatewayAuthMethod()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGatewayType($gatewayType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGatewayType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastAccessedGatewayId($lastAccessedGatewayId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastAccessedGatewayId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastAccessedGatewayTime($lastAccessedGatewayTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastAccessedGatewayTime()
+    class Google_Service_CloudIot_GatewayConfig extends \Google\Service\CloudIot\GatewayConfig
     {
     }
 }

@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class CloudReliabilityZicyWs3DataplaneProtosRegionalMigDistributionPolicy extends \Google\Collection
-{
-    protected $collection_key = 'zones';
-    /**
-     * @var int
-     */
-    public $targetShape;
-    protected $zonesType = CloudReliabilityZicyWs3DataplaneProtosZoneConfiguration::class;
-    protected $zonesDataType = 'array';
-    /**
-     * @param int
-     */
-    public function setTargetShape($targetShape)
+namespace Google\Service\CloudDataplex {
+    class CloudReliabilityZicyWs3DataplaneProtosRegionalMigDistributionPolicy extends \Google\Collection
     {
+        protected $collection_key = 'zones';
+        /**
+         * @var int
+         */
+        public $targetShape;
+        protected $zonesType = CloudReliabilityZicyWs3DataplaneProtosZoneConfiguration::class;
+        protected $zonesDataType = 'array';
+        /**
+         * @param int
+         */
+        public function setTargetShape($targetShape)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTargetShape()
+        {
+        }
+        /**
+         * @param CloudReliabilityZicyWs3DataplaneProtosZoneConfiguration[]
+         */
+        public function setZones($zones)
+        {
+        }
+        /**
+         * @return CloudReliabilityZicyWs3DataplaneProtosZoneConfiguration[]
+         */
+        public function getZones()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudDataplex\CloudReliabilityZicyWs3DataplaneProtosRegionalMigDistributionPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetShape()
-    {
-    }
-    /**
-     * @param CloudReliabilityZicyWs3DataplaneProtosZoneConfiguration[]
-     */
-    public function setZones($zones)
-    {
-    }
-    /**
-     * @return CloudReliabilityZicyWs3DataplaneProtosZoneConfiguration[]
-     */
-    public function getZones()
+    class Google_Service_CloudDataplex_CloudReliabilityZicyWs3DataplaneProtosRegionalMigDistributionPolicy extends \Google\Service\CloudDataplex\CloudReliabilityZicyWs3DataplaneProtosRegionalMigDistributionPolicy
     {
     }
 }

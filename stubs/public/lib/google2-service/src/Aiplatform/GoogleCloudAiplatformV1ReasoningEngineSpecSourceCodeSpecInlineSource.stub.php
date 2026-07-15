@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecInlineSource extends \Google\Model
-{
-    /**
-     * Required. Input only. The application source code archive. It must be a
-     * compressed tarball (.tar.gz) file.
-     *
-     * @var string
-     */
-    public $sourceArchive;
-    /**
-     * Required. Input only. The application source code archive. It must be a
-     * compressed tarball (.tar.gz) file.
-     *
-     * @param string $sourceArchive
-     */
-    public function setSourceArchive($sourceArchive)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecInlineSource extends \Google\Model
     {
+        /**
+         * Required. Input only. The application source code archive. It must be a
+         * compressed tarball (.tar.gz) file.
+         *
+         * @var string
+         */
+        public $sourceArchive;
+        /**
+         * Required. Input only. The application source code archive. It must be a
+         * compressed tarball (.tar.gz) file.
+         *
+         * @param string $sourceArchive
+         */
+        public function setSourceArchive($sourceArchive)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceArchive()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecInlineSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSourceArchive()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecInlineSource extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecInlineSource
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ConfidentialInstanceConfig extends \Google\Model
-{
-    /**
-     * Optional. Defines whether the instance should have confidential compute
-     * enabled.
-     *
-     * @var bool
-     */
-    public $enableConfidentialCompute;
-    /**
-     * Optional. Defines whether the instance should have confidential compute
-     * enabled.
-     *
-     * @param bool $enableConfidentialCompute
-     */
-    public function setEnableConfidentialCompute($enableConfidentialCompute)
+namespace Google\Service\Dataproc {
+    class ConfidentialInstanceConfig extends \Google\Model
     {
+        /**
+         * Optional. Defines whether the instance should have confidential compute
+         * enabled.
+         *
+         * @var bool
+         */
+        public $enableConfidentialCompute;
+        /**
+         * Optional. Defines whether the instance should have confidential compute
+         * enabled.
+         *
+         * @param bool $enableConfidentialCompute
+         */
+        public function setEnableConfidentialCompute($enableConfidentialCompute)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableConfidentialCompute()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dataproc\ConfidentialInstanceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableConfidentialCompute()
+    class Google_Service_Dataproc_ConfidentialInstanceConfig extends \Google\Service\Dataproc\ConfidentialInstanceConfig
     {
     }
 }

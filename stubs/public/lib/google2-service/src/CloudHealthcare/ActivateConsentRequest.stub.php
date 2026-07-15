@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class ActivateConsentRequest extends \Google\Model
-{
-    /**
-     * Required. The resource name of the Consent artifact that contains
-     * documentation of the user's consent, of the form `projects/{project_id}/loc
-     * ations/{location_id}/datasets/{dataset_id}/consentStores/{consent_store_id}
-     * /consentArtifacts/{consent_artifact_id}`. If the draft Consent had a
-     * Consent artifact, this Consent artifact overwrites it.
-     *
-     * @var string
-     */
-    public $consentArtifact;
-    /**
-     * Timestamp in UTC of when this Consent is considered expired.
-     *
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * The time to live for this Consent from when it is marked as active.
-     *
-     * @var string
-     */
-    public $ttl;
-    /**
-     * Required. The resource name of the Consent artifact that contains
-     * documentation of the user's consent, of the form `projects/{project_id}/loc
-     * ations/{location_id}/datasets/{dataset_id}/consentStores/{consent_store_id}
-     * /consentArtifacts/{consent_artifact_id}`. If the draft Consent had a
-     * Consent artifact, this Consent artifact overwrites it.
-     *
-     * @param string $consentArtifact
-     */
-    public function setConsentArtifact($consentArtifact)
+namespace Google\Service\CloudHealthcare {
+    class ActivateConsentRequest extends \Google\Model
     {
+        /**
+         * Required. The resource name of the Consent artifact that contains
+         * documentation of the user's consent, of the form `projects/{project_id}/loc
+         * ations/{location_id}/datasets/{dataset_id}/consentStores/{consent_store_id}
+         * /consentArtifacts/{consent_artifact_id}`. If the draft Consent had a
+         * Consent artifact, this Consent artifact overwrites it.
+         *
+         * @var string
+         */
+        public $consentArtifact;
+        /**
+         * Timestamp in UTC of when this Consent is considered expired.
+         *
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * The time to live for this Consent from when it is marked as active.
+         *
+         * @var string
+         */
+        public $ttl;
+        /**
+         * Required. The resource name of the Consent artifact that contains
+         * documentation of the user's consent, of the form `projects/{project_id}/loc
+         * ations/{location_id}/datasets/{dataset_id}/consentStores/{consent_store_id}
+         * /consentArtifacts/{consent_artifact_id}`. If the draft Consent had a
+         * Consent artifact, this Consent artifact overwrites it.
+         *
+         * @param string $consentArtifact
+         */
+        public function setConsentArtifact($consentArtifact)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsentArtifact()
+        {
+        }
+        /**
+         * Timestamp in UTC of when this Consent is considered expired.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * The time to live for this Consent from when it is marked as active.
+         *
+         * @param string $ttl
+         */
+        public function setTtl($ttl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTtl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\ActivateConsentRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsentArtifact()
-    {
-    }
-    /**
-     * Timestamp in UTC of when this Consent is considered expired.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * The time to live for this Consent from when it is marked as active.
-     *
-     * @param string $ttl
-     */
-    public function setTtl($ttl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTtl()
+    class Google_Service_CloudHealthcare_ActivateConsentRequest extends \Google\Service\CloudHealthcare\ActivateConsentRequest
     {
     }
 }

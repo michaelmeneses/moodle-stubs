@@ -21,189 +21,198 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class PreviewFeature extends \Google\Model
-{
-    public const ACTIVATION_STATUS_ACTIVATION_STATE_UNSPECIFIED = 'ACTIVATION_STATE_UNSPECIFIED';
-    public const ACTIVATION_STATUS_DISABLED = 'DISABLED';
-    public const ACTIVATION_STATUS_ENABLED = 'ENABLED';
-    /**
-     * Specifies whether the feature is enabled or disabled.
-     *
-     * @var string
-     */
-    public $activationStatus;
-    /**
-     * Output only. [Output Only] Creation timestamp inRFC3339 text format.
-     *
-     * @var string
-     */
-    public $creationTimestamp;
-    /**
-     * Output only. [Output Only] Description of the feature.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Output only. [Output Only] The unique identifier for the resource. This
-     * identifier is defined by the server.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Output only. [Output only] The type of the feature. Always
-     * "compute#previewFeature" for preview features.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Name of the feature.
-     *
-     * @var string
-     */
-    public $name;
-    protected $rolloutOperationType = PreviewFeatureRolloutOperation::class;
-    protected $rolloutOperationDataType = '';
-    /**
-     * Output only. [Output Only] Server-defined URL for the resource.
-     *
-     * @var string
-     */
-    public $selfLink;
-    protected $statusType = PreviewFeatureStatus::class;
-    protected $statusDataType = '';
-    /**
-     * Specifies whether the feature is enabled or disabled.
-     *
-     * Accepted values: ACTIVATION_STATE_UNSPECIFIED, DISABLED, ENABLED
-     *
-     * @param self::ACTIVATION_STATUS_* $activationStatus
-     */
-    public function setActivationStatus($activationStatus)
+namespace Google\Service\Compute {
+    class PreviewFeature extends \Google\Model
     {
+        public const ACTIVATION_STATUS_ACTIVATION_STATE_UNSPECIFIED = 'ACTIVATION_STATE_UNSPECIFIED';
+        public const ACTIVATION_STATUS_DISABLED = 'DISABLED';
+        public const ACTIVATION_STATUS_ENABLED = 'ENABLED';
+        /**
+         * Specifies whether the feature is enabled or disabled.
+         *
+         * @var string
+         */
+        public $activationStatus;
+        /**
+         * Output only. [Output Only] Creation timestamp inRFC3339 text format.
+         *
+         * @var string
+         */
+        public $creationTimestamp;
+        /**
+         * Output only. [Output Only] Description of the feature.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Output only. [Output Only] The unique identifier for the resource. This
+         * identifier is defined by the server.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Output only. [Output only] The type of the feature. Always
+         * "compute#previewFeature" for preview features.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Name of the feature.
+         *
+         * @var string
+         */
+        public $name;
+        protected $rolloutOperationType = PreviewFeatureRolloutOperation::class;
+        protected $rolloutOperationDataType = '';
+        /**
+         * Output only. [Output Only] Server-defined URL for the resource.
+         *
+         * @var string
+         */
+        public $selfLink;
+        protected $statusType = PreviewFeatureStatus::class;
+        protected $statusDataType = '';
+        /**
+         * Specifies whether the feature is enabled or disabled.
+         *
+         * Accepted values: ACTIVATION_STATE_UNSPECIFIED, DISABLED, ENABLED
+         *
+         * @param self::ACTIVATION_STATUS_* $activationStatus
+         */
+        public function setActivationStatus($activationStatus)
+        {
+        }
+        /**
+         * @return self::ACTIVATION_STATUS_*
+         */
+        public function getActivationStatus()
+        {
+        }
+        /**
+         * Output only. [Output Only] Creation timestamp inRFC3339 text format.
+         *
+         * @param string $creationTimestamp
+         */
+        public function setCreationTimestamp($creationTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationTimestamp()
+        {
+        }
+        /**
+         * Output only. [Output Only] Description of the feature.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. [Output Only] The unique identifier for the resource. This
+         * identifier is defined by the server.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Output only. [Output only] The type of the feature. Always
+         * "compute#previewFeature" for preview features.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Name of the feature.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Rollout operation of the feature.
+         *
+         * @param PreviewFeatureRolloutOperation $rolloutOperation
+         */
+        public function setRolloutOperation(PreviewFeatureRolloutOperation $rolloutOperation)
+        {
+        }
+        /**
+         * @return PreviewFeatureRolloutOperation
+         */
+        public function getRolloutOperation()
+        {
+        }
+        /**
+         * Output only. [Output Only] Server-defined URL for the resource.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * Output only. [Output only] Status of the feature.
+         *
+         * @param PreviewFeatureStatus $status
+         */
+        public function setStatus(PreviewFeatureStatus $status)
+        {
+        }
+        /**
+         * @return PreviewFeatureStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACTIVATION_STATUS_*
+     * Runtime class alias of \Google\Service\Compute\PreviewFeature registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivationStatus()
-    {
-    }
-    /**
-     * Output only. [Output Only] Creation timestamp inRFC3339 text format.
-     *
-     * @param string $creationTimestamp
-     */
-    public function setCreationTimestamp($creationTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreationTimestamp()
-    {
-    }
-    /**
-     * Output only. [Output Only] Description of the feature.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. [Output Only] The unique identifier for the resource. This
-     * identifier is defined by the server.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Output only. [Output only] The type of the feature. Always
-     * "compute#previewFeature" for preview features.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Name of the feature.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Rollout operation of the feature.
-     *
-     * @param PreviewFeatureRolloutOperation $rolloutOperation
-     */
-    public function setRolloutOperation(PreviewFeatureRolloutOperation $rolloutOperation)
-    {
-    }
-    /**
-     * @return PreviewFeatureRolloutOperation
-     */
-    public function getRolloutOperation()
-    {
-    }
-    /**
-     * Output only. [Output Only] Server-defined URL for the resource.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * Output only. [Output only] Status of the feature.
-     *
-     * @param PreviewFeatureStatus $status
-     */
-    public function setStatus(PreviewFeatureStatus $status)
-    {
-    }
-    /**
-     * @return PreviewFeatureStatus
-     */
-    public function getStatus()
+    class Google_Service_Compute_PreviewFeature extends \Google\Service\Compute\PreviewFeature
     {
     }
 }

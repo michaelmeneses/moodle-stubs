@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1ToolCallResultError extends \Google\Model
-{
-    /**
-     * Optional. The error message of the function.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Optional. The error message of the function.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1ToolCallResultError extends \Google\Model
     {
+        /**
+         * Optional. The error message of the function.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Optional. The error message of the function.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1ToolCallResultError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessage()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1ToolCallResultError extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1ToolCallResultError
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DataProfileBigQueryRowSchema extends \Google\Model
-{
-    protected $columnProfileType = GooglePrivacyDlpV2ColumnDataProfile::class;
-    protected $columnProfileDataType = '';
-    protected $fileStoreProfileType = GooglePrivacyDlpV2FileStoreDataProfile::class;
-    protected $fileStoreProfileDataType = '';
-    protected $tableProfileType = GooglePrivacyDlpV2TableDataProfile::class;
-    protected $tableProfileDataType = '';
-    /**
-     * Column data profile column
-     *
-     * @param GooglePrivacyDlpV2ColumnDataProfile $columnProfile
-     */
-    public function setColumnProfile(GooglePrivacyDlpV2ColumnDataProfile $columnProfile)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DataProfileBigQueryRowSchema extends \Google\Model
     {
+        protected $columnProfileType = GooglePrivacyDlpV2ColumnDataProfile::class;
+        protected $columnProfileDataType = '';
+        protected $fileStoreProfileType = GooglePrivacyDlpV2FileStoreDataProfile::class;
+        protected $fileStoreProfileDataType = '';
+        protected $tableProfileType = GooglePrivacyDlpV2TableDataProfile::class;
+        protected $tableProfileDataType = '';
+        /**
+         * Column data profile column
+         *
+         * @param GooglePrivacyDlpV2ColumnDataProfile $columnProfile
+         */
+        public function setColumnProfile(GooglePrivacyDlpV2ColumnDataProfile $columnProfile)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2ColumnDataProfile
+         */
+        public function getColumnProfile()
+        {
+        }
+        /**
+         * File store data profile column.
+         *
+         * @param GooglePrivacyDlpV2FileStoreDataProfile $fileStoreProfile
+         */
+        public function setFileStoreProfile(GooglePrivacyDlpV2FileStoreDataProfile $fileStoreProfile)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2FileStoreDataProfile
+         */
+        public function getFileStoreProfile()
+        {
+        }
+        /**
+         * Table data profile column
+         *
+         * @param GooglePrivacyDlpV2TableDataProfile $tableProfile
+         */
+        public function setTableProfile(GooglePrivacyDlpV2TableDataProfile $tableProfile)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2TableDataProfile
+         */
+        public function getTableProfile()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2ColumnDataProfile
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DataProfileBigQueryRowSchema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnProfile()
-    {
-    }
-    /**
-     * File store data profile column.
-     *
-     * @param GooglePrivacyDlpV2FileStoreDataProfile $fileStoreProfile
-     */
-    public function setFileStoreProfile(GooglePrivacyDlpV2FileStoreDataProfile $fileStoreProfile)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2FileStoreDataProfile
-     */
-    public function getFileStoreProfile()
-    {
-    }
-    /**
-     * Table data profile column
-     *
-     * @param GooglePrivacyDlpV2TableDataProfile $tableProfile
-     */
-    public function setTableProfile(GooglePrivacyDlpV2TableDataProfile $tableProfile)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2TableDataProfile
-     */
-    public function getTableProfile()
+    class Google_Service_DLP_GooglePrivacyDlpV2DataProfileBigQueryRowSchema extends \Google\Service\DLP\GooglePrivacyDlpV2DataProfileBigQueryRowSchema
     {
     }
 }

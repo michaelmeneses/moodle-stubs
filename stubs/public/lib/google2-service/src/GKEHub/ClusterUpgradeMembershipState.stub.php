@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ClusterUpgradeMembershipState extends \Google\Collection
-{
-    protected $collection_key = 'upgrades';
-    protected $ignoredType = ClusterUpgradeIgnoredMembership::class;
-    protected $ignoredDataType = '';
-    protected $upgradesType = ClusterUpgradeMembershipGKEUpgradeState::class;
-    protected $upgradesDataType = 'array';
-    /**
-     * @param ClusterUpgradeIgnoredMembership
-     */
-    public function setIgnored(ClusterUpgradeIgnoredMembership $ignored)
+namespace Google\Service\GKEHub {
+    class ClusterUpgradeMembershipState extends \Google\Collection
     {
+        protected $collection_key = 'upgrades';
+        protected $ignoredType = ClusterUpgradeIgnoredMembership::class;
+        protected $ignoredDataType = '';
+        protected $upgradesType = ClusterUpgradeMembershipGKEUpgradeState::class;
+        protected $upgradesDataType = 'array';
+        /**
+         * @param ClusterUpgradeIgnoredMembership
+         */
+        public function setIgnored(ClusterUpgradeIgnoredMembership $ignored)
+        {
+        }
+        /**
+         * @return ClusterUpgradeIgnoredMembership
+         */
+        public function getIgnored()
+        {
+        }
+        /**
+         * @param ClusterUpgradeMembershipGKEUpgradeState[]
+         */
+        public function setUpgrades($upgrades)
+        {
+        }
+        /**
+         * @return ClusterUpgradeMembershipGKEUpgradeState[]
+         */
+        public function getUpgrades()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClusterUpgradeIgnoredMembership
+     * Runtime class alias of \Google\Service\GKEHub\ClusterUpgradeMembershipState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIgnored()
-    {
-    }
-    /**
-     * @param ClusterUpgradeMembershipGKEUpgradeState[]
-     */
-    public function setUpgrades($upgrades)
-    {
-    }
-    /**
-     * @return ClusterUpgradeMembershipGKEUpgradeState[]
-     */
-    public function getUpgrades()
+    class Google_Service_GKEHub_ClusterUpgradeMembershipState extends \Google\Service\GKEHub\ClusterUpgradeMembershipState
     {
     }
 }

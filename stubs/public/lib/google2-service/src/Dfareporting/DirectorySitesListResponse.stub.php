@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class DirectorySitesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'directorySites';
-    protected $directorySitesType = DirectorySite::class;
-    protected $directorySitesDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#directorySitesListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Directory site collection.
-     *
-     * @param DirectorySite[] $directorySites
-     */
-    public function setDirectorySites($directorySites)
+namespace Google\Service\Dfareporting {
+    class DirectorySitesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'directorySites';
+        protected $directorySitesType = DirectorySite::class;
+        protected $directorySitesDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#directorySitesListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Directory site collection.
+         *
+         * @param DirectorySite[] $directorySites
+         */
+        public function setDirectorySites($directorySites)
+        {
+        }
+        /**
+         * @return DirectorySite[]
+         */
+        public function getDirectorySites()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#directorySitesListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DirectorySite[]
+     * Runtime class alias of \Google\Service\Dfareporting\DirectorySitesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDirectorySites()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#directorySitesListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dfareporting_DirectorySitesListResponse extends \Google\Service\Dfareporting\DirectorySitesListResponse
     {
     }
 }

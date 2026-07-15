@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class MoveTableToDatabaseRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $dbName;
-    /**
-     * @var string
-     */
-    public $destinationDbName;
-    /**
-     * @var string
-     */
-    public $tableName;
-    /**
-     * @param string
-     */
-    public function setDbName($dbName)
+namespace Google\Service\DataprocMetastore {
+    class MoveTableToDatabaseRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $dbName;
+        /**
+         * @var string
+         */
+        public $destinationDbName;
+        /**
+         * @var string
+         */
+        public $tableName;
+        /**
+         * @param string
+         */
+        public function setDbName($dbName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDbName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDestinationDbName($destinationDbName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationDbName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTableName($tableName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataprocMetastore\MoveTableToDatabaseRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDbName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDestinationDbName($destinationDbName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDestinationDbName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTableName($tableName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableName()
+    class Google_Service_DataprocMetastore_MoveTableToDatabaseRequest extends \Google\Service\DataprocMetastore\MoveTableToDatabaseRequest
     {
     }
 }

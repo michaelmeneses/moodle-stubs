@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class MysqlLogPosition extends \Google\Model
-{
-    /**
-     * Required. The binary log file name.
-     *
-     * @var string
-     */
-    public $logFile;
-    /**
-     * Optional. The position within the binary log file. Default is head of file.
-     *
-     * @var int
-     */
-    public $logPosition;
-    /**
-     * Required. The binary log file name.
-     *
-     * @param string $logFile
-     */
-    public function setLogFile($logFile)
+namespace Google\Service\Datastream {
+    class MysqlLogPosition extends \Google\Model
     {
+        /**
+         * Required. The binary log file name.
+         *
+         * @var string
+         */
+        public $logFile;
+        /**
+         * Optional. The position within the binary log file. Default is head of file.
+         *
+         * @var int
+         */
+        public $logPosition;
+        /**
+         * Required. The binary log file name.
+         *
+         * @param string $logFile
+         */
+        public function setLogFile($logFile)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLogFile()
+        {
+        }
+        /**
+         * Optional. The position within the binary log file. Default is head of file.
+         *
+         * @param int $logPosition
+         */
+        public function setLogPosition($logPosition)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLogPosition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\MysqlLogPosition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLogFile()
-    {
-    }
-    /**
-     * Optional. The position within the binary log file. Default is head of file.
-     *
-     * @param int $logPosition
-     */
-    public function setLogPosition($logPosition)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLogPosition()
+    class Google_Service_Datastream_MysqlLogPosition extends \Google\Service\Datastream\MysqlLogPosition
     {
     }
 }

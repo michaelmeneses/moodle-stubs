@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class ListDeploymentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $deploymentsType = Deployment::class;
-    protected $deploymentsDataType = 'array';
-    /**
-     * Token to be supplied to the next ListDeployments request via `page_token`
-     * to obtain the next set of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * List of Deployments.
-     *
-     * @param Deployment[] $deployments
-     */
-    public function setDeployments($deployments)
+namespace Google\Service\Config {
+    class ListDeploymentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $deploymentsType = Deployment::class;
+        protected $deploymentsDataType = 'array';
+        /**
+         * Token to be supplied to the next ListDeployments request via `page_token`
+         * to obtain the next set of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * List of Deployments.
+         *
+         * @param Deployment[] $deployments
+         */
+        public function setDeployments($deployments)
+        {
+        }
+        /**
+         * @return Deployment[]
+         */
+        public function getDeployments()
+        {
+        }
+        /**
+         * Token to be supplied to the next ListDeployments request via `page_token`
+         * to obtain the next set of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Deployment[]
+     * Runtime class alias of \Google\Service\Config\ListDeploymentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployments()
-    {
-    }
-    /**
-     * Token to be supplied to the next ListDeployments request via `page_token`
-     * to obtain the next set of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Config_ListDeploymentsResponse extends \Google\Service\Config\ListDeploymentsResponse
     {
     }
 }

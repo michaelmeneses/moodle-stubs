@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class Membership extends \Google\Collection
-{
-    protected $collection_key = 'secondaryClusters';
-    protected $primaryClusterType = RemoteCluster::class;
-    protected $primaryClusterDataType = '';
-    protected $secondaryClustersType = RemoteCluster::class;
-    protected $secondaryClustersDataType = 'array';
-    /**
-     * Output only. The primary cluster that acts as the source of replication for
-     * the secondary clusters.
-     *
-     * @param RemoteCluster $primaryCluster
-     */
-    public function setPrimaryCluster(RemoteCluster $primaryCluster)
+namespace Google\Service\CloudRedis {
+    class Membership extends \Google\Collection
     {
+        protected $collection_key = 'secondaryClusters';
+        protected $primaryClusterType = RemoteCluster::class;
+        protected $primaryClusterDataType = '';
+        protected $secondaryClustersType = RemoteCluster::class;
+        protected $secondaryClustersDataType = 'array';
+        /**
+         * Output only. The primary cluster that acts as the source of replication for
+         * the secondary clusters.
+         *
+         * @param RemoteCluster $primaryCluster
+         */
+        public function setPrimaryCluster(RemoteCluster $primaryCluster)
+        {
+        }
+        /**
+         * @return RemoteCluster
+         */
+        public function getPrimaryCluster()
+        {
+        }
+        /**
+         * Output only. The list of secondary clusters replicating from the primary
+         * cluster.
+         *
+         * @param RemoteCluster[] $secondaryClusters
+         */
+        public function setSecondaryClusters($secondaryClusters)
+        {
+        }
+        /**
+         * @return RemoteCluster[]
+         */
+        public function getSecondaryClusters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RemoteCluster
+     * Runtime class alias of \Google\Service\CloudRedis\Membership registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrimaryCluster()
-    {
-    }
-    /**
-     * Output only. The list of secondary clusters replicating from the primary
-     * cluster.
-     *
-     * @param RemoteCluster[] $secondaryClusters
-     */
-    public function setSecondaryClusters($secondaryClusters)
-    {
-    }
-    /**
-     * @return RemoteCluster[]
-     */
-    public function getSecondaryClusters()
+    class Google_Service_CloudRedis_Membership extends \Google\Service\CloudRedis\Membership
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListPipelineJobsResponse extends \Google\Collection
-{
-    protected $collection_key = 'pipelineJobs';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListPipelineJobsRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $pipelineJobsType = GoogleCloudAiplatformV1PipelineJob::class;
-    protected $pipelineJobsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListPipelineJobsRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListPipelineJobsResponse extends \Google\Collection
     {
+        protected $collection_key = 'pipelineJobs';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListPipelineJobsRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $pipelineJobsType = GoogleCloudAiplatformV1PipelineJob::class;
+        protected $pipelineJobsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListPipelineJobsRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of PipelineJobs in the requested page.
+         *
+         * @param GoogleCloudAiplatformV1PipelineJob[] $pipelineJobs
+         */
+        public function setPipelineJobs($pipelineJobs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PipelineJob[]
+         */
+        public function getPipelineJobs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListPipelineJobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of PipelineJobs in the requested page.
-     *
-     * @param GoogleCloudAiplatformV1PipelineJob[] $pipelineJobs
-     */
-    public function setPipelineJobs($pipelineJobs)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1PipelineJob[]
-     */
-    public function getPipelineJobs()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListPipelineJobsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListPipelineJobsResponse
     {
     }
 }

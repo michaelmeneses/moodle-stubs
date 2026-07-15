@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class JoinRestrictionPolicy extends \Google\Collection
-{
-    /**
-     * A join is neither required nor restricted on any column. Default value.
-     */
-    public const JOIN_CONDITION_JOIN_CONDITION_UNSPECIFIED = 'JOIN_CONDITION_UNSPECIFIED';
-    /**
-     * A join is required on at least one of the specified columns.
-     */
-    public const JOIN_CONDITION_JOIN_ANY = 'JOIN_ANY';
-    /**
-     * A join is required on all specified columns.
-     */
-    public const JOIN_CONDITION_JOIN_ALL = 'JOIN_ALL';
-    /**
-     * A join is not required, but if present it is only permitted on
-     * 'join_allowed_columns'
-     */
-    public const JOIN_CONDITION_JOIN_NOT_REQUIRED = 'JOIN_NOT_REQUIRED';
-    /**
-     * Joins are blocked for all queries.
-     */
-    public const JOIN_CONDITION_JOIN_BLOCKED = 'JOIN_BLOCKED';
-    protected $collection_key = 'joinAllowedColumns';
-    /**
-     * Optional. The only columns that joins are allowed on. This field is must be
-     * specified for join_conditions JOIN_ANY and JOIN_ALL and it cannot be set
-     * for JOIN_BLOCKED.
-     *
-     * @var string[]
-     */
-    public $joinAllowedColumns;
-    /**
-     * Optional. Specifies if a join is required or not on queries for the view.
-     * Default is JOIN_CONDITION_UNSPECIFIED.
-     *
-     * @var string
-     */
-    public $joinCondition;
-    /**
-     * Optional. The only columns that joins are allowed on. This field is must be
-     * specified for join_conditions JOIN_ANY and JOIN_ALL and it cannot be set
-     * for JOIN_BLOCKED.
-     *
-     * @param string[] $joinAllowedColumns
-     */
-    public function setJoinAllowedColumns($joinAllowedColumns)
+namespace Google\Service\Bigquery {
+    class JoinRestrictionPolicy extends \Google\Collection
     {
+        /**
+         * A join is neither required nor restricted on any column. Default value.
+         */
+        public const JOIN_CONDITION_JOIN_CONDITION_UNSPECIFIED = 'JOIN_CONDITION_UNSPECIFIED';
+        /**
+         * A join is required on at least one of the specified columns.
+         */
+        public const JOIN_CONDITION_JOIN_ANY = 'JOIN_ANY';
+        /**
+         * A join is required on all specified columns.
+         */
+        public const JOIN_CONDITION_JOIN_ALL = 'JOIN_ALL';
+        /**
+         * A join is not required, but if present it is only permitted on
+         * 'join_allowed_columns'
+         */
+        public const JOIN_CONDITION_JOIN_NOT_REQUIRED = 'JOIN_NOT_REQUIRED';
+        /**
+         * Joins are blocked for all queries.
+         */
+        public const JOIN_CONDITION_JOIN_BLOCKED = 'JOIN_BLOCKED';
+        protected $collection_key = 'joinAllowedColumns';
+        /**
+         * Optional. The only columns that joins are allowed on. This field is must be
+         * specified for join_conditions JOIN_ANY and JOIN_ALL and it cannot be set
+         * for JOIN_BLOCKED.
+         *
+         * @var string[]
+         */
+        public $joinAllowedColumns;
+        /**
+         * Optional. Specifies if a join is required or not on queries for the view.
+         * Default is JOIN_CONDITION_UNSPECIFIED.
+         *
+         * @var string
+         */
+        public $joinCondition;
+        /**
+         * Optional. The only columns that joins are allowed on. This field is must be
+         * specified for join_conditions JOIN_ANY and JOIN_ALL and it cannot be set
+         * for JOIN_BLOCKED.
+         *
+         * @param string[] $joinAllowedColumns
+         */
+        public function setJoinAllowedColumns($joinAllowedColumns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getJoinAllowedColumns()
+        {
+        }
+        /**
+         * Optional. Specifies if a join is required or not on queries for the view.
+         * Default is JOIN_CONDITION_UNSPECIFIED.
+         *
+         * Accepted values: JOIN_CONDITION_UNSPECIFIED, JOIN_ANY, JOIN_ALL,
+         * JOIN_NOT_REQUIRED, JOIN_BLOCKED
+         *
+         * @param self::JOIN_CONDITION_* $joinCondition
+         */
+        public function setJoinCondition($joinCondition)
+        {
+        }
+        /**
+         * @return self::JOIN_CONDITION_*
+         */
+        public function getJoinCondition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Bigquery\JoinRestrictionPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJoinAllowedColumns()
-    {
-    }
-    /**
-     * Optional. Specifies if a join is required or not on queries for the view.
-     * Default is JOIN_CONDITION_UNSPECIFIED.
-     *
-     * Accepted values: JOIN_CONDITION_UNSPECIFIED, JOIN_ANY, JOIN_ALL,
-     * JOIN_NOT_REQUIRED, JOIN_BLOCKED
-     *
-     * @param self::JOIN_CONDITION_* $joinCondition
-     */
-    public function setJoinCondition($joinCondition)
-    {
-    }
-    /**
-     * @return self::JOIN_CONDITION_*
-     */
-    public function getJoinCondition()
+    class Google_Service_Bigquery_JoinRestrictionPolicy extends \Google\Service\Bigquery\JoinRestrictionPolicy
     {
     }
 }

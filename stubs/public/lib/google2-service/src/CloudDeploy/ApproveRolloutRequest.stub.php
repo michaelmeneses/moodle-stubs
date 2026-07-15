@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class ApproveRolloutRequest extends \Google\Collection
-{
-    protected $collection_key = 'overrideDeployPolicy';
-    /**
-     * Required. True = approve; false = reject
-     *
-     * @var bool
-     */
-    public $approved;
-    /**
-     * Optional. Deploy policies to override. Format is
-     * `projects/{project}/locations/{location}/deployPolicies/{deployPolicy}`.
-     *
-     * @var string[]
-     */
-    public $overrideDeployPolicy;
-    /**
-     * Required. True = approve; false = reject
-     *
-     * @param bool $approved
-     */
-    public function setApproved($approved)
+namespace Google\Service\CloudDeploy {
+    class ApproveRolloutRequest extends \Google\Collection
     {
+        protected $collection_key = 'overrideDeployPolicy';
+        /**
+         * Required. True = approve; false = reject
+         *
+         * @var bool
+         */
+        public $approved;
+        /**
+         * Optional. Deploy policies to override. Format is
+         * `projects/{project}/locations/{location}/deployPolicies/{deployPolicy}`.
+         *
+         * @var string[]
+         */
+        public $overrideDeployPolicy;
+        /**
+         * Required. True = approve; false = reject
+         *
+         * @param bool $approved
+         */
+        public function setApproved($approved)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getApproved()
+        {
+        }
+        /**
+         * Optional. Deploy policies to override. Format is
+         * `projects/{project}/locations/{location}/deployPolicies/{deployPolicy}`.
+         *
+         * @param string[] $overrideDeployPolicy
+         */
+        public function setOverrideDeployPolicy($overrideDeployPolicy)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOverrideDeployPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudDeploy\ApproveRolloutRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApproved()
-    {
-    }
-    /**
-     * Optional. Deploy policies to override. Format is
-     * `projects/{project}/locations/{location}/deployPolicies/{deployPolicy}`.
-     *
-     * @param string[] $overrideDeployPolicy
-     */
-    public function setOverrideDeployPolicy($overrideDeployPolicy)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOverrideDeployPolicy()
+    class Google_Service_CloudDeploy_ApproveRolloutRequest extends \Google\Service\CloudDeploy\ApproveRolloutRequest
     {
     }
 }

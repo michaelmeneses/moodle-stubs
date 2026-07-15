@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2AdaptiveProtection extends \Google\Model
-{
-    /**
-     * A score of 0 means that there is low confidence that the detected event is
-     * an actual attack. A score of 1 means that there is high confidence that the
-     * detected event is an attack. See the [Adaptive Protection
-     * documentation](https://cloud.google.com/armor/docs/adaptive-protection-
-     * overview#configure-alert-tuning) for further explanation.
-     *
-     * @var 
-     */
-    public $confidence;
-    public function setConfidence($confidence)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2AdaptiveProtection extends \Google\Model
     {
+        /**
+         * A score of 0 means that there is low confidence that the detected event is
+         * an actual attack. A score of 1 means that there is high confidence that the
+         * detected event is an attack. See the [Adaptive Protection
+         * documentation](https://cloud.google.com/armor/docs/adaptive-protection-
+         * overview#configure-alert-tuning) for further explanation.
+         *
+         * @var 
+         */
+        public $confidence;
+        public function setConfidence($confidence)
+        {
+        }
+        public function getConfidence()
+        {
+        }
     }
-    public function getConfidence()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2AdaptiveProtection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2AdaptiveProtection extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2AdaptiveProtection
     {
     }
 }

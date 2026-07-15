@@ -16,6 +16,7 @@
  */
 namespace Mustache\Loader;
 
+use Mustache\Loader;
 /**
  * Mustache Template string Loader implementation.
  *

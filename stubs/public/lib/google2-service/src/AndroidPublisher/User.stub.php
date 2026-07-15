@@ -21,186 +21,195 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class User extends \Google\Collection
-{
-    /**
-     * Unknown or unspecified access state.
-     */
-    public const ACCESS_STATE_ACCESS_STATE_UNSPECIFIED = 'ACCESS_STATE_UNSPECIFIED';
-    /**
-     * User is invited but has not yet accepted the invitation.
-     */
-    public const ACCESS_STATE_INVITED = 'INVITED';
-    /**
-     * Invitation has expired.
-     */
-    public const ACCESS_STATE_INVITATION_EXPIRED = 'INVITATION_EXPIRED';
-    /**
-     * User has accepted an invitation and has access to the Play Console.
-     */
-    public const ACCESS_STATE_ACCESS_GRANTED = 'ACCESS_GRANTED';
-    /**
-     * Account access has expired.
-     */
-    public const ACCESS_STATE_ACCESS_EXPIRED = 'ACCESS_EXPIRED';
-    protected $collection_key = 'grants';
-    /**
-     * Output only. The state of the user's access to the Play Console.
-     *
-     * @var string
-     */
-    public $accessState;
-    /**
-     * Permissions for the user which apply across the developer account.
-     *
-     * @var string[]
-     */
-    public $developerAccountPermissions;
-    /**
-     * Immutable. The user's email address.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * The time at which the user's access expires, if set. When setting this
-     * value, it must always be in the future.
-     *
-     * @var string
-     */
-    public $expirationTime;
-    protected $grantsType = Grant::class;
-    protected $grantsDataType = 'array';
-    /**
-     * Required. Resource name for this user, following the pattern
-     * "developers/{developer}/users/{email}".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Whether there are more permissions for the user that are not
-     * represented here. This can happen if the caller does not have permission to
-     * manage all apps in the account. This is also `true` if this user is the
-     * account owner. If this field is `true`, it should be taken as a signal that
-     * this user cannot be fully managed via the API. That is, the API caller is
-     * not be able to manage all of the permissions this user holds, either
-     * because it doesn't know about them or because the user is the account
-     * owner.
-     *
-     * @var bool
-     */
-    public $partial;
-    /**
-     * Output only. The state of the user's access to the Play Console.
-     *
-     * Accepted values: ACCESS_STATE_UNSPECIFIED, INVITED, INVITATION_EXPIRED,
-     * ACCESS_GRANTED, ACCESS_EXPIRED
-     *
-     * @param self::ACCESS_STATE_* $accessState
-     */
-    public function setAccessState($accessState)
+namespace Google\Service\AndroidPublisher {
+    class User extends \Google\Collection
     {
+        /**
+         * Unknown or unspecified access state.
+         */
+        public const ACCESS_STATE_ACCESS_STATE_UNSPECIFIED = 'ACCESS_STATE_UNSPECIFIED';
+        /**
+         * User is invited but has not yet accepted the invitation.
+         */
+        public const ACCESS_STATE_INVITED = 'INVITED';
+        /**
+         * Invitation has expired.
+         */
+        public const ACCESS_STATE_INVITATION_EXPIRED = 'INVITATION_EXPIRED';
+        /**
+         * User has accepted an invitation and has access to the Play Console.
+         */
+        public const ACCESS_STATE_ACCESS_GRANTED = 'ACCESS_GRANTED';
+        /**
+         * Account access has expired.
+         */
+        public const ACCESS_STATE_ACCESS_EXPIRED = 'ACCESS_EXPIRED';
+        protected $collection_key = 'grants';
+        /**
+         * Output only. The state of the user's access to the Play Console.
+         *
+         * @var string
+         */
+        public $accessState;
+        /**
+         * Permissions for the user which apply across the developer account.
+         *
+         * @var string[]
+         */
+        public $developerAccountPermissions;
+        /**
+         * Immutable. The user's email address.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * The time at which the user's access expires, if set. When setting this
+         * value, it must always be in the future.
+         *
+         * @var string
+         */
+        public $expirationTime;
+        protected $grantsType = Grant::class;
+        protected $grantsDataType = 'array';
+        /**
+         * Required. Resource name for this user, following the pattern
+         * "developers/{developer}/users/{email}".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Whether there are more permissions for the user that are not
+         * represented here. This can happen if the caller does not have permission to
+         * manage all apps in the account. This is also `true` if this user is the
+         * account owner. If this field is `true`, it should be taken as a signal that
+         * this user cannot be fully managed via the API. That is, the API caller is
+         * not be able to manage all of the permissions this user holds, either
+         * because it doesn't know about them or because the user is the account
+         * owner.
+         *
+         * @var bool
+         */
+        public $partial;
+        /**
+         * Output only. The state of the user's access to the Play Console.
+         *
+         * Accepted values: ACCESS_STATE_UNSPECIFIED, INVITED, INVITATION_EXPIRED,
+         * ACCESS_GRANTED, ACCESS_EXPIRED
+         *
+         * @param self::ACCESS_STATE_* $accessState
+         */
+        public function setAccessState($accessState)
+        {
+        }
+        /**
+         * @return self::ACCESS_STATE_*
+         */
+        public function getAccessState()
+        {
+        }
+        /**
+         * Permissions for the user which apply across the developer account.
+         *
+         * @param string[] $developerAccountPermissions
+         */
+        public function setDeveloperAccountPermissions($developerAccountPermissions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDeveloperAccountPermissions()
+        {
+        }
+        /**
+         * Immutable. The user's email address.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * The time at which the user's access expires, if set. When setting this
+         * value, it must always be in the future.
+         *
+         * @param string $expirationTime
+         */
+        public function setExpirationTime($expirationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpirationTime()
+        {
+        }
+        /**
+         * Output only. Per-app permissions for the user.
+         *
+         * @param Grant[] $grants
+         */
+        public function setGrants($grants)
+        {
+        }
+        /**
+         * @return Grant[]
+         */
+        public function getGrants()
+        {
+        }
+        /**
+         * Required. Resource name for this user, following the pattern
+         * "developers/{developer}/users/{email}".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Whether there are more permissions for the user that are not
+         * represented here. This can happen if the caller does not have permission to
+         * manage all apps in the account. This is also `true` if this user is the
+         * account owner. If this field is `true`, it should be taken as a signal that
+         * this user cannot be fully managed via the API. That is, the API caller is
+         * not be able to manage all of the permissions this user holds, either
+         * because it doesn't know about them or because the user is the account
+         * owner.
+         *
+         * @param bool $partial
+         */
+        public function setPartial($partial)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPartial()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACCESS_STATE_*
+     * Runtime class alias of \Google\Service\AndroidPublisher\User registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessState()
-    {
-    }
-    /**
-     * Permissions for the user which apply across the developer account.
-     *
-     * @param string[] $developerAccountPermissions
-     */
-    public function setDeveloperAccountPermissions($developerAccountPermissions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDeveloperAccountPermissions()
-    {
-    }
-    /**
-     * Immutable. The user's email address.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
-    {
-    }
-    /**
-     * The time at which the user's access expires, if set. When setting this
-     * value, it must always be in the future.
-     *
-     * @param string $expirationTime
-     */
-    public function setExpirationTime($expirationTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpirationTime()
-    {
-    }
-    /**
-     * Output only. Per-app permissions for the user.
-     *
-     * @param Grant[] $grants
-     */
-    public function setGrants($grants)
-    {
-    }
-    /**
-     * @return Grant[]
-     */
-    public function getGrants()
-    {
-    }
-    /**
-     * Required. Resource name for this user, following the pattern
-     * "developers/{developer}/users/{email}".
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Whether there are more permissions for the user that are not
-     * represented here. This can happen if the caller does not have permission to
-     * manage all apps in the account. This is also `true` if this user is the
-     * account owner. If this field is `true`, it should be taken as a signal that
-     * this user cannot be fully managed via the API. That is, the API caller is
-     * not be able to manage all of the permissions this user holds, either
-     * because it doesn't know about them or because the user is the account
-     * owner.
-     *
-     * @param bool $partial
-     */
-    public function setPartial($partial)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPartial()
+    class Google_Service_AndroidPublisher_User extends \Google\Service\AndroidPublisher\User
     {
     }
 }

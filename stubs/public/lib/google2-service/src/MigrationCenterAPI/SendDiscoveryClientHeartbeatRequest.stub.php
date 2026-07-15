@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class SendDiscoveryClientHeartbeatRequest extends \Google\Collection
-{
-    protected $collection_key = 'errors';
-    protected $errorsType = Status::class;
-    protected $errorsDataType = 'array';
-    /**
-     * Optional. Client application version.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Optional. Errors affecting client functionality.
-     *
-     * @param Status[] $errors
-     */
-    public function setErrors($errors)
+namespace Google\Service\MigrationCenterAPI {
+    class SendDiscoveryClientHeartbeatRequest extends \Google\Collection
     {
+        protected $collection_key = 'errors';
+        protected $errorsType = Status::class;
+        protected $errorsDataType = 'array';
+        /**
+         * Optional. Client application version.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Optional. Errors affecting client functionality.
+         *
+         * @param Status[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return Status[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * Optional. Client application version.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Status[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\SendDiscoveryClientHeartbeatRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
-    {
-    }
-    /**
-     * Optional. Client application version.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_MigrationCenterAPI_SendDiscoveryClientHeartbeatRequest extends \Google\Service\MigrationCenterAPI\SendDiscoveryClientHeartbeatRequest
     {
     }
 }

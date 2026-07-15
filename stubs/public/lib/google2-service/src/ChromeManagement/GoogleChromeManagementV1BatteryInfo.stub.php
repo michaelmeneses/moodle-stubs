@@ -21,124 +21,133 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1BatteryInfo extends \Google\Model
-{
-    /**
-     * Output only. Design capacity (mAmpere-hours).
-     *
-     * @var string
-     */
-    public $designCapacity;
-    /**
-     * Output only. Designed minimum output voltage (mV)
-     *
-     * @var int
-     */
-    public $designMinVoltage;
-    protected $manufactureDateType = GoogleTypeDate::class;
-    protected $manufactureDateDataType = '';
-    /**
-     * Output only. Battery manufacturer.
-     *
-     * @var string
-     */
-    public $manufacturer;
-    /**
-     * Output only. Battery serial number.
-     *
-     * @var string
-     */
-    public $serialNumber;
-    /**
-     * Output only. Technology of the battery. Example: Li-ion
-     *
-     * @var string
-     */
-    public $technology;
-    /**
-     * Output only. Design capacity (mAmpere-hours).
-     *
-     * @param string $designCapacity
-     */
-    public function setDesignCapacity($designCapacity)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1BatteryInfo extends \Google\Model
     {
+        /**
+         * Output only. Design capacity (mAmpere-hours).
+         *
+         * @var string
+         */
+        public $designCapacity;
+        /**
+         * Output only. Designed minimum output voltage (mV)
+         *
+         * @var int
+         */
+        public $designMinVoltage;
+        protected $manufactureDateType = GoogleTypeDate::class;
+        protected $manufactureDateDataType = '';
+        /**
+         * Output only. Battery manufacturer.
+         *
+         * @var string
+         */
+        public $manufacturer;
+        /**
+         * Output only. Battery serial number.
+         *
+         * @var string
+         */
+        public $serialNumber;
+        /**
+         * Output only. Technology of the battery. Example: Li-ion
+         *
+         * @var string
+         */
+        public $technology;
+        /**
+         * Output only. Design capacity (mAmpere-hours).
+         *
+         * @param string $designCapacity
+         */
+        public function setDesignCapacity($designCapacity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDesignCapacity()
+        {
+        }
+        /**
+         * Output only. Designed minimum output voltage (mV)
+         *
+         * @param int $designMinVoltage
+         */
+        public function setDesignMinVoltage($designMinVoltage)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDesignMinVoltage()
+        {
+        }
+        /**
+         * Output only. The date the battery was manufactured.
+         *
+         * @param GoogleTypeDate $manufactureDate
+         */
+        public function setManufactureDate(GoogleTypeDate $manufactureDate)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getManufactureDate()
+        {
+        }
+        /**
+         * Output only. Battery manufacturer.
+         *
+         * @param string $manufacturer
+         */
+        public function setManufacturer($manufacturer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getManufacturer()
+        {
+        }
+        /**
+         * Output only. Battery serial number.
+         *
+         * @param string $serialNumber
+         */
+        public function setSerialNumber($serialNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSerialNumber()
+        {
+        }
+        /**
+         * Output only. Technology of the battery. Example: Li-ion
+         *
+         * @param string $technology
+         */
+        public function setTechnology($technology)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTechnology()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1BatteryInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDesignCapacity()
-    {
-    }
-    /**
-     * Output only. Designed minimum output voltage (mV)
-     *
-     * @param int $designMinVoltage
-     */
-    public function setDesignMinVoltage($designMinVoltage)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getDesignMinVoltage()
-    {
-    }
-    /**
-     * Output only. The date the battery was manufactured.
-     *
-     * @param GoogleTypeDate $manufactureDate
-     */
-    public function setManufactureDate(GoogleTypeDate $manufactureDate)
-    {
-    }
-    /**
-     * @return GoogleTypeDate
-     */
-    public function getManufactureDate()
-    {
-    }
-    /**
-     * Output only. Battery manufacturer.
-     *
-     * @param string $manufacturer
-     */
-    public function setManufacturer($manufacturer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getManufacturer()
-    {
-    }
-    /**
-     * Output only. Battery serial number.
-     *
-     * @param string $serialNumber
-     */
-    public function setSerialNumber($serialNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSerialNumber()
-    {
-    }
-    /**
-     * Output only. Technology of the battery. Example: Li-ion
-     *
-     * @param string $technology
-     */
-    public function setTechnology($technology)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTechnology()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1BatteryInfo extends \Google\Service\ChromeManagement\GoogleChromeManagementV1BatteryInfo
     {
     }
 }

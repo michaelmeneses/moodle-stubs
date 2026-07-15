@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunOpV2SecretVolumeSource extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * @var int
-     */
-    public $defaultMode;
-    protected $itemsType = GoogleCloudRunOpV2VersionToPath::class;
-    protected $itemsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $secret;
-    /**
-     * @param int
-     */
-    public function setDefaultMode($defaultMode)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunOpV2SecretVolumeSource extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * @var int
+         */
+        public $defaultMode;
+        protected $itemsType = GoogleCloudRunOpV2VersionToPath::class;
+        protected $itemsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $secret;
+        /**
+         * @param int
+         */
+        public function setDefaultMode($defaultMode)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDefaultMode()
+        {
+        }
+        /**
+         * @param GoogleCloudRunOpV2VersionToPath[]
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return GoogleCloudRunOpV2VersionToPath[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSecret($secret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecret()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunOpV2SecretVolumeSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultMode()
-    {
-    }
-    /**
-     * @param GoogleCloudRunOpV2VersionToPath[]
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return GoogleCloudRunOpV2VersionToPath[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSecret($secret)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecret()
+    class Google_Service_CloudRun_GoogleCloudRunOpV2SecretVolumeSource extends \Google\Service\CloudRun\GoogleCloudRunOpV2SecretVolumeSource
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class ActivationOptions extends \Google\Model
-{
-    /**
-     * HTTPS URL that supports REST semantics. Would be used for requesting
-     * activation from partners for given valuable, triggered by the users.
-     *
-     * @var string
-     */
-    public $activationUrl;
-    /**
-     * Flag to allow users to make activation call from different device. This
-     * allows client to render the activation button enabled even if the
-     * activationStatus is ACTIVATED but the requested device is different than
-     * the current device.
-     *
-     * @var bool
-     */
-    public $allowReactivation;
-    /**
-     * HTTPS URL that supports REST semantics. Would be used for requesting
-     * activation from partners for given valuable, triggered by the users.
-     *
-     * @param string $activationUrl
-     */
-    public function setActivationUrl($activationUrl)
+namespace Google\Service\Walletobjects {
+    class ActivationOptions extends \Google\Model
     {
+        /**
+         * HTTPS URL that supports REST semantics. Would be used for requesting
+         * activation from partners for given valuable, triggered by the users.
+         *
+         * @var string
+         */
+        public $activationUrl;
+        /**
+         * Flag to allow users to make activation call from different device. This
+         * allows client to render the activation button enabled even if the
+         * activationStatus is ACTIVATED but the requested device is different than
+         * the current device.
+         *
+         * @var bool
+         */
+        public $allowReactivation;
+        /**
+         * HTTPS URL that supports REST semantics. Would be used for requesting
+         * activation from partners for given valuable, triggered by the users.
+         *
+         * @param string $activationUrl
+         */
+        public function setActivationUrl($activationUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActivationUrl()
+        {
+        }
+        /**
+         * Flag to allow users to make activation call from different device. This
+         * allows client to render the activation button enabled even if the
+         * activationStatus is ACTIVATED but the requested device is different than
+         * the current device.
+         *
+         * @param bool $allowReactivation
+         */
+        public function setAllowReactivation($allowReactivation)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowReactivation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Walletobjects\ActivationOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivationUrl()
-    {
-    }
-    /**
-     * Flag to allow users to make activation call from different device. This
-     * allows client to render the activation button enabled even if the
-     * activationStatus is ACTIVATED but the requested device is different than
-     * the current device.
-     *
-     * @param bool $allowReactivation
-     */
-    public function setAllowReactivation($allowReactivation)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAllowReactivation()
+    class Google_Service_Walletobjects_ActivationOptions extends \Google\Service\Walletobjects\ActivationOptions
     {
     }
 }

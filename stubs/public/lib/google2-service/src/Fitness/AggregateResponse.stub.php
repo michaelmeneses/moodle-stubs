@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Fitness;
-
-class AggregateResponse extends \Google\Collection
-{
-    protected $collection_key = 'bucket';
-    protected $bucketType = AggregateBucket::class;
-    protected $bucketDataType = 'array';
-    /**
-     * A list of buckets containing the aggregated data.
-     *
-     * @param AggregateBucket[] $bucket
-     */
-    public function setBucket($bucket)
+namespace Google\Service\Fitness {
+    class AggregateResponse extends \Google\Collection
     {
+        protected $collection_key = 'bucket';
+        protected $bucketType = AggregateBucket::class;
+        protected $bucketDataType = 'array';
+        /**
+         * A list of buckets containing the aggregated data.
+         *
+         * @param AggregateBucket[] $bucket
+         */
+        public function setBucket($bucket)
+        {
+        }
+        /**
+         * @return AggregateBucket[]
+         */
+        public function getBucket()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AggregateBucket[]
+     * Runtime class alias of \Google\Service\Fitness\AggregateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucket()
+    class Google_Service_Fitness_AggregateResponse extends \Google\Service\Fitness\AggregateResponse
     {
     }
 }

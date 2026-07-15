@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class AllocateIdsResponse extends \Google\Collection
-{
-    protected $collection_key = 'keys';
-    protected $keysType = Key::class;
-    protected $keysDataType = 'array';
-    /**
-     * The keys specified in the request (in the same order), each with its key
-     * path completed with a newly allocated ID.
-     *
-     * @param Key[] $keys
-     */
-    public function setKeys($keys)
+namespace Google\Service\Datastore {
+    class AllocateIdsResponse extends \Google\Collection
     {
+        protected $collection_key = 'keys';
+        protected $keysType = Key::class;
+        protected $keysDataType = 'array';
+        /**
+         * The keys specified in the request (in the same order), each with its key
+         * path completed with a newly allocated ID.
+         *
+         * @param Key[] $keys
+         */
+        public function setKeys($keys)
+        {
+        }
+        /**
+         * @return Key[]
+         */
+        public function getKeys()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Key[]
+     * Runtime class alias of \Google\Service\Datastore\AllocateIdsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeys()
+    class Google_Service_Datastore_AllocateIdsResponse extends \Google\Service\Datastore\AllocateIdsResponse
     {
     }
 }

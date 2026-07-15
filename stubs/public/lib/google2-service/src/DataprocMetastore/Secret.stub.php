@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class Secret extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $cloudSecret;
-    /**
-     * @param string
-     */
-    public function setCloudSecret($cloudSecret)
+namespace Google\Service\DataprocMetastore {
+    class Secret extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $cloudSecret;
+        /**
+         * @param string
+         */
+        public function setCloudSecret($cloudSecret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCloudSecret()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataprocMetastore\Secret registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudSecret()
+    class Google_Service_DataprocMetastore_Secret extends \Google\Service\DataprocMetastore\Secret
     {
     }
 }

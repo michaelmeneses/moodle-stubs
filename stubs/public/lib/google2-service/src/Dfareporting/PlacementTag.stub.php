@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class PlacementTag extends \Google\Collection
-{
-    protected $collection_key = 'tagDatas';
-    /**
-     * Placement ID
-     *
-     * @var string
-     */
-    public $placementId;
-    protected $tagDatasType = TagData::class;
-    protected $tagDatasDataType = 'array';
-    /**
-     * Placement ID
-     *
-     * @param string $placementId
-     */
-    public function setPlacementId($placementId)
+namespace Google\Service\Dfareporting {
+    class PlacementTag extends \Google\Collection
     {
+        protected $collection_key = 'tagDatas';
+        /**
+         * Placement ID
+         *
+         * @var string
+         */
+        public $placementId;
+        protected $tagDatasType = TagData::class;
+        protected $tagDatasDataType = 'array';
+        /**
+         * Placement ID
+         *
+         * @param string $placementId
+         */
+        public function setPlacementId($placementId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlacementId()
+        {
+        }
+        /**
+         * Tags generated for this placement.
+         *
+         * @param TagData[] $tagDatas
+         */
+        public function setTagDatas($tagDatas)
+        {
+        }
+        /**
+         * @return TagData[]
+         */
+        public function getTagDatas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\PlacementTag registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlacementId()
-    {
-    }
-    /**
-     * Tags generated for this placement.
-     *
-     * @param TagData[] $tagDatas
-     */
-    public function setTagDatas($tagDatas)
-    {
-    }
-    /**
-     * @return TagData[]
-     */
-    public function getTagDatas()
+    class Google_Service_Dfareporting_PlacementTag extends \Google\Service\Dfareporting\PlacementTag
     {
     }
 }

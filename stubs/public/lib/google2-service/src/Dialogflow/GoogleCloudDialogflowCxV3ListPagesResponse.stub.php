@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ListPagesResponse extends \Google\Collection
-{
-    protected $collection_key = 'pages';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $pagesType = GoogleCloudDialogflowCxV3Page::class;
-    protected $pagesDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ListPagesResponse extends \Google\Collection
     {
+        protected $collection_key = 'pages';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $pagesType = GoogleCloudDialogflowCxV3Page::class;
+        protected $pagesDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of pages. There will be a maximum number of items returned based
+         * on the page_size field in the request.
+         *
+         * @param GoogleCloudDialogflowCxV3Page[] $pages
+         */
+        public function setPages($pages)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3Page[]
+         */
+        public function getPages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListPagesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of pages. There will be a maximum number of items returned based
-     * on the page_size field in the request.
-     *
-     * @param GoogleCloudDialogflowCxV3Page[] $pages
-     */
-    public function setPages($pages)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3Page[]
-     */
-    public function getPages()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ListPagesResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListPagesResponse
     {
     }
 }

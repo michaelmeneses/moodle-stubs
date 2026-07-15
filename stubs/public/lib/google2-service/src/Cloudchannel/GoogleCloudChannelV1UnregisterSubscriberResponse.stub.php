@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1UnregisterSubscriberResponse extends \Google\Model
-{
-    /**
-     * Name of the topic the service account subscriber access was removed from.
-     *
-     * @var string
-     */
-    public $topic;
-    /**
-     * Name of the topic the service account subscriber access was removed from.
-     *
-     * @param string $topic
-     */
-    public function setTopic($topic)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1UnregisterSubscriberResponse extends \Google\Model
     {
+        /**
+         * Name of the topic the service account subscriber access was removed from.
+         *
+         * @var string
+         */
+        public $topic;
+        /**
+         * Name of the topic the service account subscriber access was removed from.
+         *
+         * @param string $topic
+         */
+        public function setTopic($topic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1UnregisterSubscriberResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTopic()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1UnregisterSubscriberResponse extends \Google\Service\Cloudchannel\GoogleCloudChannelV1UnregisterSubscriberResponse
     {
     }
 }

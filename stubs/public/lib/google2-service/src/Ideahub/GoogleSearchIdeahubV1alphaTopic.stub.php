@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Ideahub;
-
-class GoogleSearchIdeahubV1alphaTopic extends \Google\Model
-{
-    public $displayName;
-    public $mid;
-    public $name;
-    public function setDisplayName($displayName)
+namespace Google\Service\Ideahub {
+    class GoogleSearchIdeahubV1alphaTopic extends \Google\Model
     {
+        public $displayName;
+        public $mid;
+        public $name;
+        public function setDisplayName($displayName)
+        {
+        }
+        public function getDisplayName()
+        {
+        }
+        public function setMid($mid)
+        {
+        }
+        public function getMid()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
     }
-    public function getDisplayName()
-    {
-    }
-    public function setMid($mid)
-    {
-    }
-    public function getMid()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Ideahub\GoogleSearchIdeahubV1alphaTopic registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Ideahub_GoogleSearchIdeahubV1alphaTopic extends \Google\Service\Ideahub\GoogleSearchIdeahubV1alphaTopic
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1betaExchangeSafetyNetTokenRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $safetyNetToken;
-    /**
-     * @param string
-     */
-    public function setSafetyNetToken($safetyNetToken)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1betaExchangeSafetyNetTokenRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $safetyNetToken;
+        /**
+         * @param string
+         */
+        public function setSafetyNetToken($safetyNetToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSafetyNetToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaExchangeSafetyNetTokenRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSafetyNetToken()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1betaExchangeSafetyNetTokenRequest extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaExchangeSafetyNetTokenRequest
     {
     }
 }

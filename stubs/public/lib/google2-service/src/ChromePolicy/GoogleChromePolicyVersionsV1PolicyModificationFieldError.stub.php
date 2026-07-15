@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1PolicyModificationFieldError extends \Google\Model
-{
-    /**
-     * Output only. The error message related to the field.
-     *
-     * @var string
-     */
-    public $error;
-    /**
-     * Output only. The name of the field with the error.
-     *
-     * @var string
-     */
-    public $field;
-    /**
-     * Output only. The error message related to the field.
-     *
-     * @param string $error
-     */
-    public function setError($error)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1PolicyModificationFieldError extends \Google\Model
     {
+        /**
+         * Output only. The error message related to the field.
+         *
+         * @var string
+         */
+        public $error;
+        /**
+         * Output only. The name of the field with the error.
+         *
+         * @var string
+         */
+        public $field;
+        /**
+         * Output only. The error message related to the field.
+         *
+         * @param string $error
+         */
+        public function setError($error)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getError()
+        {
+        }
+        /**
+         * Output only. The name of the field with the error.
+         *
+         * @param string $field
+         */
+        public function setField($field)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getField()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1PolicyModificationFieldError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * Output only. The name of the field with the error.
-     *
-     * @param string $field
-     */
-    public function setField($field)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getField()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1PolicyModificationFieldError extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1PolicyModificationFieldError
     {
     }
 }

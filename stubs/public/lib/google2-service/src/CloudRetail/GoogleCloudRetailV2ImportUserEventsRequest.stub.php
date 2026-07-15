@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ImportUserEventsRequest extends \Google\Model
-{
-    protected $errorsConfigType = GoogleCloudRetailV2ImportErrorsConfig::class;
-    protected $errorsConfigDataType = '';
-    protected $inputConfigType = GoogleCloudRetailV2UserEventInputConfig::class;
-    protected $inputConfigDataType = '';
-    /**
-     * The desired location of errors incurred during the Import. Cannot be set
-     * for inline user event imports.
-     *
-     * @param GoogleCloudRetailV2ImportErrorsConfig $errorsConfig
-     */
-    public function setErrorsConfig(GoogleCloudRetailV2ImportErrorsConfig $errorsConfig)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ImportUserEventsRequest extends \Google\Model
     {
+        protected $errorsConfigType = GoogleCloudRetailV2ImportErrorsConfig::class;
+        protected $errorsConfigDataType = '';
+        protected $inputConfigType = GoogleCloudRetailV2UserEventInputConfig::class;
+        protected $inputConfigDataType = '';
+        /**
+         * The desired location of errors incurred during the Import. Cannot be set
+         * for inline user event imports.
+         *
+         * @param GoogleCloudRetailV2ImportErrorsConfig $errorsConfig
+         */
+        public function setErrorsConfig(GoogleCloudRetailV2ImportErrorsConfig $errorsConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2ImportErrorsConfig
+         */
+        public function getErrorsConfig()
+        {
+        }
+        /**
+         * Required. The desired input location of the data.
+         *
+         * @param GoogleCloudRetailV2UserEventInputConfig $inputConfig
+         */
+        public function setInputConfig(GoogleCloudRetailV2UserEventInputConfig $inputConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2UserEventInputConfig
+         */
+        public function getInputConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2ImportErrorsConfig
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ImportUserEventsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorsConfig()
-    {
-    }
-    /**
-     * Required. The desired input location of the data.
-     *
-     * @param GoogleCloudRetailV2UserEventInputConfig $inputConfig
-     */
-    public function setInputConfig(GoogleCloudRetailV2UserEventInputConfig $inputConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2UserEventInputConfig
-     */
-    public function getInputConfig()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ImportUserEventsRequest extends \Google\Service\CloudRetail\GoogleCloudRetailV2ImportUserEventsRequest
     {
     }
 }

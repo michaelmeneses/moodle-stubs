@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class DimensionFilter extends \Google\Model
-{
-    /**
-     * The name of the dimension to filter.
-     *
-     * @var string
-     */
-    public $dimensionName;
-    /**
-     * The kind of resource this is, in this case dfareporting#dimensionFilter.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The value of the dimension to filter.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The name of the dimension to filter.
-     *
-     * @param string $dimensionName
-     */
-    public function setDimensionName($dimensionName)
+namespace Google\Service\Dfareporting {
+    class DimensionFilter extends \Google\Model
     {
+        /**
+         * The name of the dimension to filter.
+         *
+         * @var string
+         */
+        public $dimensionName;
+        /**
+         * The kind of resource this is, in this case dfareporting#dimensionFilter.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The value of the dimension to filter.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The name of the dimension to filter.
+         *
+         * @param string $dimensionName
+         */
+        public function setDimensionName($dimensionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDimensionName()
+        {
+        }
+        /**
+         * The kind of resource this is, in this case dfareporting#dimensionFilter.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The value of the dimension to filter.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\DimensionFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionName()
-    {
-    }
-    /**
-     * The kind of resource this is, in this case dfareporting#dimensionFilter.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The value of the dimension to filter.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Dfareporting_DimensionFilter extends \Google\Service\Dfareporting\DimensionFilter
     {
     }
 }

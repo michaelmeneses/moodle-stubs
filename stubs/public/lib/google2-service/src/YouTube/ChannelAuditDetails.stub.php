@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ChannelAuditDetails extends \Google\Model
-{
-    /**
-     * Whether or not the channel respects the community guidelines.
-     *
-     * @var bool
-     */
-    public $communityGuidelinesGoodStanding;
-    /**
-     * Whether or not the channel has any unresolved claims.
-     *
-     * @var bool
-     */
-    public $contentIdClaimsGoodStanding;
-    /**
-     * Whether or not the channel has any copyright strikes.
-     *
-     * @var bool
-     */
-    public $copyrightStrikesGoodStanding;
-    /**
-     * Whether or not the channel respects the community guidelines.
-     *
-     * @param bool $communityGuidelinesGoodStanding
-     */
-    public function setCommunityGuidelinesGoodStanding($communityGuidelinesGoodStanding)
+namespace Google\Service\YouTube {
+    class ChannelAuditDetails extends \Google\Model
     {
+        /**
+         * Whether or not the channel respects the community guidelines.
+         *
+         * @var bool
+         */
+        public $communityGuidelinesGoodStanding;
+        /**
+         * Whether or not the channel has any unresolved claims.
+         *
+         * @var bool
+         */
+        public $contentIdClaimsGoodStanding;
+        /**
+         * Whether or not the channel has any copyright strikes.
+         *
+         * @var bool
+         */
+        public $copyrightStrikesGoodStanding;
+        /**
+         * Whether or not the channel respects the community guidelines.
+         *
+         * @param bool $communityGuidelinesGoodStanding
+         */
+        public function setCommunityGuidelinesGoodStanding($communityGuidelinesGoodStanding)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCommunityGuidelinesGoodStanding()
+        {
+        }
+        /**
+         * Whether or not the channel has any unresolved claims.
+         *
+         * @param bool $contentIdClaimsGoodStanding
+         */
+        public function setContentIdClaimsGoodStanding($contentIdClaimsGoodStanding)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getContentIdClaimsGoodStanding()
+        {
+        }
+        /**
+         * Whether or not the channel has any copyright strikes.
+         *
+         * @param bool $copyrightStrikesGoodStanding
+         */
+        public function setCopyrightStrikesGoodStanding($copyrightStrikesGoodStanding)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCopyrightStrikesGoodStanding()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\YouTube\ChannelAuditDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommunityGuidelinesGoodStanding()
-    {
-    }
-    /**
-     * Whether or not the channel has any unresolved claims.
-     *
-     * @param bool $contentIdClaimsGoodStanding
-     */
-    public function setContentIdClaimsGoodStanding($contentIdClaimsGoodStanding)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getContentIdClaimsGoodStanding()
-    {
-    }
-    /**
-     * Whether or not the channel has any copyright strikes.
-     *
-     * @param bool $copyrightStrikesGoodStanding
-     */
-    public function setCopyrightStrikesGoodStanding($copyrightStrikesGoodStanding)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCopyrightStrikesGoodStanding()
+    class Google_Service_YouTube_ChannelAuditDetails extends \Google\Service\YouTube\ChannelAuditDetails
     {
     }
 }

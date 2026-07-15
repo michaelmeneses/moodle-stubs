@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Genomics;
-
-class CheckInRequest extends \Google\Collection
-{
-    protected $collection_key = 'events';
-    protected $deadlineExpiredType = GenomicsEmpty::class;
-    protected $deadlineExpiredDataType = '';
-    /**
-     * @var array[]
-     */
-    public $event;
-    protected $eventsType = TimestampedEvent::class;
-    protected $eventsDataType = 'array';
-    protected $resultType = Status::class;
-    protected $resultDataType = '';
-    /**
-     * @var string
-     */
-    public $sosReport;
-    protected $workerStatusType = WorkerStatus::class;
-    protected $workerStatusDataType = '';
-    /**
-     * @param GenomicsEmpty
-     */
-    public function setDeadlineExpired(GenomicsEmpty $deadlineExpired)
+namespace Google\Service\Genomics {
+    class CheckInRequest extends \Google\Collection
     {
+        protected $collection_key = 'events';
+        protected $deadlineExpiredType = GenomicsEmpty::class;
+        protected $deadlineExpiredDataType = '';
+        /**
+         * @var array[]
+         */
+        public $event;
+        protected $eventsType = TimestampedEvent::class;
+        protected $eventsDataType = 'array';
+        protected $resultType = Status::class;
+        protected $resultDataType = '';
+        /**
+         * @var string
+         */
+        public $sosReport;
+        protected $workerStatusType = WorkerStatus::class;
+        protected $workerStatusDataType = '';
+        /**
+         * @param GenomicsEmpty
+         */
+        public function setDeadlineExpired(GenomicsEmpty $deadlineExpired)
+        {
+        }
+        /**
+         * @return GenomicsEmpty
+         */
+        public function getDeadlineExpired()
+        {
+        }
+        /**
+         * @param array[]
+         */
+        public function setEvent($event)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getEvent()
+        {
+        }
+        /**
+         * @param TimestampedEvent[]
+         */
+        public function setEvents($events)
+        {
+        }
+        /**
+         * @return TimestampedEvent[]
+         */
+        public function getEvents()
+        {
+        }
+        /**
+         * @param Status
+         */
+        public function setResult(Status $result)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getResult()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSosReport($sosReport)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSosReport()
+        {
+        }
+        /**
+         * @param WorkerStatus
+         */
+        public function setWorkerStatus(WorkerStatus $workerStatus)
+        {
+        }
+        /**
+         * @return WorkerStatus
+         */
+        public function getWorkerStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GenomicsEmpty
+     * Runtime class alias of \Google\Service\Genomics\CheckInRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeadlineExpired()
-    {
-    }
-    /**
-     * @param array[]
-     */
-    public function setEvent($event)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getEvent()
-    {
-    }
-    /**
-     * @param TimestampedEvent[]
-     */
-    public function setEvents($events)
-    {
-    }
-    /**
-     * @return TimestampedEvent[]
-     */
-    public function getEvents()
-    {
-    }
-    /**
-     * @param Status
-     */
-    public function setResult(Status $result)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getResult()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSosReport($sosReport)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSosReport()
-    {
-    }
-    /**
-     * @param WorkerStatus
-     */
-    public function setWorkerStatus(WorkerStatus $workerStatus)
-    {
-    }
-    /**
-     * @return WorkerStatus
-     */
-    public function getWorkerStatus()
+    class Google_Service_Genomics_CheckInRequest extends \Google\Service\Genomics\CheckInRequest
     {
     }
 }

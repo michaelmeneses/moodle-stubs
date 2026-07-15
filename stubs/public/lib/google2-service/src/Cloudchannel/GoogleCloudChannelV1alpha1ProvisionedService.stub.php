@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1alpha1ProvisionedService extends \Google\Model
-{
-    /**
-     * Output only. The product pertaining to the provisioning resource as
-     * specified in the Offer.
-     *
-     * @var string
-     */
-    public $productId;
-    /**
-     * Output only. Provisioning ID of the entitlement. For Google Workspace, this
-     * is the underlying Subscription ID. For Google Cloud, this is the Billing
-     * Account ID of the billing subaccount.
-     *
-     * @var string
-     */
-    public $provisioningId;
-    /**
-     * Output only. The SKU pertaining to the provisioning resource as specified
-     * in the Offer.
-     *
-     * @var string
-     */
-    public $skuId;
-    /**
-     * Output only. The product pertaining to the provisioning resource as
-     * specified in the Offer.
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1alpha1ProvisionedService extends \Google\Model
     {
+        /**
+         * Output only. The product pertaining to the provisioning resource as
+         * specified in the Offer.
+         *
+         * @var string
+         */
+        public $productId;
+        /**
+         * Output only. Provisioning ID of the entitlement. For Google Workspace, this
+         * is the underlying Subscription ID. For Google Cloud, this is the Billing
+         * Account ID of the billing subaccount.
+         *
+         * @var string
+         */
+        public $provisioningId;
+        /**
+         * Output only. The SKU pertaining to the provisioning resource as specified
+         * in the Offer.
+         *
+         * @var string
+         */
+        public $skuId;
+        /**
+         * Output only. The product pertaining to the provisioning resource as
+         * specified in the Offer.
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
+        /**
+         * Output only. Provisioning ID of the entitlement. For Google Workspace, this
+         * is the underlying Subscription ID. For Google Cloud, this is the Billing
+         * Account ID of the billing subaccount.
+         *
+         * @param string $provisioningId
+         */
+        public function setProvisioningId($provisioningId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProvisioningId()
+        {
+        }
+        /**
+         * Output only. The SKU pertaining to the provisioning resource as specified
+         * in the Offer.
+         *
+         * @param string $skuId
+         */
+        public function setSkuId($skuId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSkuId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1alpha1ProvisionedService registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProductId()
-    {
-    }
-    /**
-     * Output only. Provisioning ID of the entitlement. For Google Workspace, this
-     * is the underlying Subscription ID. For Google Cloud, this is the Billing
-     * Account ID of the billing subaccount.
-     *
-     * @param string $provisioningId
-     */
-    public function setProvisioningId($provisioningId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProvisioningId()
-    {
-    }
-    /**
-     * Output only. The SKU pertaining to the provisioning resource as specified
-     * in the Offer.
-     *
-     * @param string $skuId
-     */
-    public function setSkuId($skuId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSkuId()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1alpha1ProvisionedService extends \Google\Service\Cloudchannel\GoogleCloudChannelV1alpha1ProvisionedService
     {
     }
 }

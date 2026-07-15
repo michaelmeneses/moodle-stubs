@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class DlpAction extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $actionType;
-    /**
-     * @var string
-     */
-    public $unsafeHtmlMessageBody;
-    /**
-     * @param string
-     */
-    public function setActionType($actionType)
+namespace Google\Service\CloudSearch {
+    class DlpAction extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $actionType;
+        /**
+         * @var string
+         */
+        public $unsafeHtmlMessageBody;
+        /**
+         * @param string
+         */
+        public function setActionType($actionType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActionType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUnsafeHtmlMessageBody($unsafeHtmlMessageBody)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnsafeHtmlMessageBody()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\DlpAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUnsafeHtmlMessageBody($unsafeHtmlMessageBody)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnsafeHtmlMessageBody()
+    class Google_Service_CloudSearch_DlpAction extends \Google\Service\CloudSearch\DlpAction
     {
     }
 }

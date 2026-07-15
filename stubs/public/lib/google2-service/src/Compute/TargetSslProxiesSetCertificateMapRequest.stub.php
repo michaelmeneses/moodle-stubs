@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class TargetSslProxiesSetCertificateMapRequest extends \Google\Model
-{
-    /**
-     * URL of the Certificate Map to associate with this TargetSslProxy.
-     *
-     *  Accepted format is//certificatemanager.googleapis.com/projects/{project}/l
-     * ocations/{location}/certificateMaps/{resourceName}.
-     *
-     * @var string
-     */
-    public $certificateMap;
-    /**
-     * URL of the Certificate Map to associate with this TargetSslProxy.
-     *
-     *  Accepted format is//certificatemanager.googleapis.com/projects/{project}/l
-     * ocations/{location}/certificateMaps/{resourceName}.
-     *
-     * @param string $certificateMap
-     */
-    public function setCertificateMap($certificateMap)
+namespace Google\Service\Compute {
+    class TargetSslProxiesSetCertificateMapRequest extends \Google\Model
     {
+        /**
+         * URL of the Certificate Map to associate with this TargetSslProxy.
+         *
+         *  Accepted format is//certificatemanager.googleapis.com/projects/{project}/l
+         * ocations/{location}/certificateMaps/{resourceName}.
+         *
+         * @var string
+         */
+        public $certificateMap;
+        /**
+         * URL of the Certificate Map to associate with this TargetSslProxy.
+         *
+         *  Accepted format is//certificatemanager.googleapis.com/projects/{project}/l
+         * ocations/{location}/certificateMaps/{resourceName}.
+         *
+         * @param string $certificateMap
+         */
+        public function setCertificateMap($certificateMap)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertificateMap()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\TargetSslProxiesSetCertificateMapRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificateMap()
+    class Google_Service_Compute_TargetSslProxiesSetCertificateMapRequest extends \Google\Service\Compute\TargetSslProxiesSetCertificateMapRequest
     {
     }
 }

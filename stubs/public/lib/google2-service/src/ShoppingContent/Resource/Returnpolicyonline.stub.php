@@ -21,84 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "returnpolicyonline" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $returnpolicyonline = $contentService->returnpolicyonline;
- *  </code>
- */
-class Returnpolicyonline extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\ListReturnPolicyOnlineResponse;
+    use Google\Service\ShoppingContent\ReturnPolicyOnline as ReturnPolicyOnlineModel;
     /**
-     * Creates a new return policy. (returnpolicyonline.create)
-     *
-     * @param string $merchantId Required. The id of the merchant for which to
-     * retrieve the return policy online object.
-     * @param ReturnPolicyOnlineModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return ReturnPolicyOnlineModel
-     * @throws \Google\Service\Exception
+     * The "returnpolicyonline" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $returnpolicyonline = $contentService->returnpolicyonline;
+     *  </code>
      */
-    public function create($merchantId, ReturnPolicyOnlineModel $postBody, $optParams = [])
+    class Returnpolicyonline extends \Google\Service\Resource
     {
+        /**
+         * Creates a new return policy. (returnpolicyonline.create)
+         *
+         * @param string $merchantId Required. The id of the merchant for which to
+         * retrieve the return policy online object.
+         * @param ReturnPolicyOnlineModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return ReturnPolicyOnlineModel
+         * @throws \Google\Service\Exception
+         */
+        public function create($merchantId, ReturnPolicyOnlineModel $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes an existing return policy. (returnpolicyonline.delete)
+         *
+         * @param string $merchantId Required. The id of the merchant for which to
+         * retrieve the return policy online object.
+         * @param string $returnPolicyId Required. The id of the return policy to
+         * delete.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($merchantId, $returnPolicyId, $optParams = [])
+        {
+        }
+        /**
+         * Gets an existing return policy. (returnpolicyonline.get)
+         *
+         * @param string $merchantId Required. The id of the merchant for which to
+         * retrieve the return policy online object.
+         * @param string $returnPolicyId Required. The id of the return policy to
+         * retrieve.
+         * @param array $optParams Optional parameters.
+         * @return ReturnPolicyOnlineModel
+         * @throws \Google\Service\Exception
+         */
+        public function get($merchantId, $returnPolicyId, $optParams = [])
+        {
+        }
+        /**
+         * Lists all existing return policies.
+         * (returnpolicyonline.listReturnpolicyonline)
+         *
+         * @param string $merchantId Required. The id of the merchant for which to
+         * retrieve the return policy online object.
+         * @param array $optParams Optional parameters.
+         * @return ListReturnPolicyOnlineResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listReturnpolicyonline($merchantId, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing return policy. (returnpolicyonline.patch)
+         *
+         * @param string $merchantId Required. The id of the merchant for which to
+         * retrieve the return policy online object.
+         * @param string $returnPolicyId Required. The id of the return policy to
+         * update.
+         * @param ReturnPolicyOnlineModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return ReturnPolicyOnlineModel
+         * @throws \Google\Service\Exception
+         */
+        public function patch($merchantId, $returnPolicyId, ReturnPolicyOnlineModel $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes an existing return policy. (returnpolicyonline.delete)
-     *
-     * @param string $merchantId Required. The id of the merchant for which to
-     * retrieve the return policy online object.
-     * @param string $returnPolicyId Required. The id of the return policy to
-     * delete.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\Returnpolicyonline registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($merchantId, $returnPolicyId, $optParams = [])
-    {
-    }
-    /**
-     * Gets an existing return policy. (returnpolicyonline.get)
-     *
-     * @param string $merchantId Required. The id of the merchant for which to
-     * retrieve the return policy online object.
-     * @param string $returnPolicyId Required. The id of the return policy to
-     * retrieve.
-     * @param array $optParams Optional parameters.
-     * @return ReturnPolicyOnlineModel
-     * @throws \Google\Service\Exception
-     */
-    public function get($merchantId, $returnPolicyId, $optParams = [])
-    {
-    }
-    /**
-     * Lists all existing return policies.
-     * (returnpolicyonline.listReturnpolicyonline)
-     *
-     * @param string $merchantId Required. The id of the merchant for which to
-     * retrieve the return policy online object.
-     * @param array $optParams Optional parameters.
-     * @return ListReturnPolicyOnlineResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listReturnpolicyonline($merchantId, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing return policy. (returnpolicyonline.patch)
-     *
-     * @param string $merchantId Required. The id of the merchant for which to
-     * retrieve the return policy online object.
-     * @param string $returnPolicyId Required. The id of the return policy to
-     * update.
-     * @param ReturnPolicyOnlineModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return ReturnPolicyOnlineModel
-     * @throws \Google\Service\Exception
-     */
-    public function patch($merchantId, $returnPolicyId, ReturnPolicyOnlineModel $postBody, $optParams = [])
+    class Google_Service_ShoppingContent_Resource_Returnpolicyonline extends \Google\Service\ShoppingContent\Resource\Returnpolicyonline
     {
     }
 }

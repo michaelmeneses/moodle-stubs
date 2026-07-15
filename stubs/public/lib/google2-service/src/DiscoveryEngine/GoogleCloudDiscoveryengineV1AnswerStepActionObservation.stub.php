@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AnswerStepActionObservation extends \Google\Collection
-{
-    protected $collection_key = 'searchResults';
-    protected $searchResultsType = GoogleCloudDiscoveryengineV1AnswerStepActionObservationSearchResult::class;
-    protected $searchResultsDataType = 'array';
-    /**
-     * Search results observed by the search action, it can be snippets info or
-     * chunk info, depending on the citation type set by the user.
-     *
-     * @param GoogleCloudDiscoveryengineV1AnswerStepActionObservationSearchResult[] $searchResults
-     */
-    public function setSearchResults($searchResults)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AnswerStepActionObservation extends \Google\Collection
     {
+        protected $collection_key = 'searchResults';
+        protected $searchResultsType = GoogleCloudDiscoveryengineV1AnswerStepActionObservationSearchResult::class;
+        protected $searchResultsDataType = 'array';
+        /**
+         * Search results observed by the search action, it can be snippets info or
+         * chunk info, depending on the citation type set by the user.
+         *
+         * @param GoogleCloudDiscoveryengineV1AnswerStepActionObservationSearchResult[] $searchResults
+         */
+        public function setSearchResults($searchResults)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AnswerStepActionObservationSearchResult[]
+         */
+        public function getSearchResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1AnswerStepActionObservationSearchResult[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerStepActionObservation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSearchResults()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AnswerStepActionObservation extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerStepActionObservation
     {
     }
 }

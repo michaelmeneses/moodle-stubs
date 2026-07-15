@@ -21,188 +21,197 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigLakeService;
-
-class Table extends \Google\Model
-{
-    /**
-     * The type is not specified.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * Represents a table compatible with Hive Metastore tables.
-     */
-    public const TYPE_HIVE = 'HIVE';
-    /**
-     * Output only. The creation time of the table.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The deletion time of the table. Only set after the table is
-     * deleted.
-     *
-     * @var string
-     */
-    public $deleteTime;
-    /**
-     * The checksum of a table object computed by the server based on the value of
-     * other fields. It may be sent on update requests to ensure the client has an
-     * up-to-date value before proceeding. It is only checked for update table
-     * operations.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Output only. The time when this table is considered expired. Only set after
-     * the table is deleted.
-     *
-     * @var string
-     */
-    public $expireTime;
-    protected $hiveOptionsType = HiveTableOptions::class;
-    protected $hiveOptionsDataType = '';
-    /**
-     * Output only. The resource name. Format: projects/{project_id_or_number}/loc
-     * ations/{location_id}/catalogs/{catalog_id}/databases/{database_id}/tables/{
-     * table_id}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The table type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. The last modification time of the table.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The creation time of the table.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\BigLakeService {
+    class Table extends \Google\Model
     {
+        /**
+         * The type is not specified.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * Represents a table compatible with Hive Metastore tables.
+         */
+        public const TYPE_HIVE = 'HIVE';
+        /**
+         * Output only. The creation time of the table.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The deletion time of the table. Only set after the table is
+         * deleted.
+         *
+         * @var string
+         */
+        public $deleteTime;
+        /**
+         * The checksum of a table object computed by the server based on the value of
+         * other fields. It may be sent on update requests to ensure the client has an
+         * up-to-date value before proceeding. It is only checked for update table
+         * operations.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Output only. The time when this table is considered expired. Only set after
+         * the table is deleted.
+         *
+         * @var string
+         */
+        public $expireTime;
+        protected $hiveOptionsType = HiveTableOptions::class;
+        protected $hiveOptionsDataType = '';
+        /**
+         * Output only. The resource name. Format: projects/{project_id_or_number}/loc
+         * ations/{location_id}/catalogs/{catalog_id}/databases/{database_id}/tables/{
+         * table_id}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The table type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. The last modification time of the table.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The creation time of the table.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The deletion time of the table. Only set after the table is
+         * deleted.
+         *
+         * @param string $deleteTime
+         */
+        public function setDeleteTime($deleteTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeleteTime()
+        {
+        }
+        /**
+         * The checksum of a table object computed by the server based on the value of
+         * other fields. It may be sent on update requests to ensure the client has an
+         * up-to-date value before proceeding. It is only checked for update table
+         * operations.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Output only. The time when this table is considered expired. Only set after
+         * the table is deleted.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * Options of a Hive table.
+         *
+         * @param HiveTableOptions $hiveOptions
+         */
+        public function setHiveOptions(HiveTableOptions $hiveOptions)
+        {
+        }
+        /**
+         * @return HiveTableOptions
+         */
+        public function getHiveOptions()
+        {
+        }
+        /**
+         * Output only. The resource name. Format: projects/{project_id_or_number}/loc
+         * ations/{location_id}/catalogs/{catalog_id}/databases/{database_id}/tables/{
+         * table_id}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The table type.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, HIVE
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Output only. The last modification time of the table.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigLakeService\Table registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The deletion time of the table. Only set after the table is
-     * deleted.
-     *
-     * @param string $deleteTime
-     */
-    public function setDeleteTime($deleteTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeleteTime()
-    {
-    }
-    /**
-     * The checksum of a table object computed by the server based on the value of
-     * other fields. It may be sent on update requests to ensure the client has an
-     * up-to-date value before proceeding. It is only checked for update table
-     * operations.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Output only. The time when this table is considered expired. Only set after
-     * the table is deleted.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * Options of a Hive table.
-     *
-     * @param HiveTableOptions $hiveOptions
-     */
-    public function setHiveOptions(HiveTableOptions $hiveOptions)
-    {
-    }
-    /**
-     * @return HiveTableOptions
-     */
-    public function getHiveOptions()
-    {
-    }
-    /**
-     * Output only. The resource name. Format: projects/{project_id_or_number}/loc
-     * ations/{location_id}/catalogs/{catalog_id}/databases/{database_id}/tables/{
-     * table_id}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The table type.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, HIVE
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Output only. The last modification time of the table.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_BigLakeService_Table extends \Google\Service\BigLakeService\Table
     {
     }
 }

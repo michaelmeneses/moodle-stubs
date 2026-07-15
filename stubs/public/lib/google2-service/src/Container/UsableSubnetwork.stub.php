@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class UsableSubnetwork extends \Google\Collection
-{
-    protected $collection_key = 'secondaryIpRanges';
-    /**
-     * The range of internal addresses that are owned by this subnetwork.
-     *
-     * @var string
-     */
-    public $ipCidrRange;
-    /**
-     * Network Name. Example: projects/my-project/global/networks/my-network
-     *
-     * @var string
-     */
-    public $network;
-    protected $secondaryIpRangesType = UsableSubnetworkSecondaryRange::class;
-    protected $secondaryIpRangesDataType = 'array';
-    /**
-     * A human readable status message representing the reasons for cases where
-     * the caller cannot use the secondary ranges under the subnet. For example if
-     * the secondary_ip_ranges is empty due to a permission issue, an insufficient
-     * permission message will be given by status_message.
-     *
-     * @var string
-     */
-    public $statusMessage;
-    /**
-     * Subnetwork Name. Example: projects/my-project/regions/us-
-     * central1/subnetworks/my-subnet
-     *
-     * @var string
-     */
-    public $subnetwork;
-    /**
-     * The range of internal addresses that are owned by this subnetwork.
-     *
-     * @param string $ipCidrRange
-     */
-    public function setIpCidrRange($ipCidrRange)
+namespace Google\Service\Container {
+    class UsableSubnetwork extends \Google\Collection
     {
+        protected $collection_key = 'secondaryIpRanges';
+        /**
+         * The range of internal addresses that are owned by this subnetwork.
+         *
+         * @var string
+         */
+        public $ipCidrRange;
+        /**
+         * Network Name. Example: projects/my-project/global/networks/my-network
+         *
+         * @var string
+         */
+        public $network;
+        protected $secondaryIpRangesType = UsableSubnetworkSecondaryRange::class;
+        protected $secondaryIpRangesDataType = 'array';
+        /**
+         * A human readable status message representing the reasons for cases where
+         * the caller cannot use the secondary ranges under the subnet. For example if
+         * the secondary_ip_ranges is empty due to a permission issue, an insufficient
+         * permission message will be given by status_message.
+         *
+         * @var string
+         */
+        public $statusMessage;
+        /**
+         * Subnetwork Name. Example: projects/my-project/regions/us-
+         * central1/subnetworks/my-subnet
+         *
+         * @var string
+         */
+        public $subnetwork;
+        /**
+         * The range of internal addresses that are owned by this subnetwork.
+         *
+         * @param string $ipCidrRange
+         */
+        public function setIpCidrRange($ipCidrRange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpCidrRange()
+        {
+        }
+        /**
+         * Network Name. Example: projects/my-project/global/networks/my-network
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * Secondary IP ranges.
+         *
+         * @param UsableSubnetworkSecondaryRange[] $secondaryIpRanges
+         */
+        public function setSecondaryIpRanges($secondaryIpRanges)
+        {
+        }
+        /**
+         * @return UsableSubnetworkSecondaryRange[]
+         */
+        public function getSecondaryIpRanges()
+        {
+        }
+        /**
+         * A human readable status message representing the reasons for cases where
+         * the caller cannot use the secondary ranges under the subnet. For example if
+         * the secondary_ip_ranges is empty due to a permission issue, an insufficient
+         * permission message will be given by status_message.
+         *
+         * @param string $statusMessage
+         */
+        public function setStatusMessage($statusMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatusMessage()
+        {
+        }
+        /**
+         * Subnetwork Name. Example: projects/my-project/regions/us-
+         * central1/subnetworks/my-subnet
+         *
+         * @param string $subnetwork
+         */
+        public function setSubnetwork($subnetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\UsableSubnetwork registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpCidrRange()
-    {
-    }
-    /**
-     * Network Name. Example: projects/my-project/global/networks/my-network
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetwork()
-    {
-    }
-    /**
-     * Secondary IP ranges.
-     *
-     * @param UsableSubnetworkSecondaryRange[] $secondaryIpRanges
-     */
-    public function setSecondaryIpRanges($secondaryIpRanges)
-    {
-    }
-    /**
-     * @return UsableSubnetworkSecondaryRange[]
-     */
-    public function getSecondaryIpRanges()
-    {
-    }
-    /**
-     * A human readable status message representing the reasons for cases where
-     * the caller cannot use the secondary ranges under the subnet. For example if
-     * the secondary_ip_ranges is empty due to a permission issue, an insufficient
-     * permission message will be given by status_message.
-     *
-     * @param string $statusMessage
-     */
-    public function setStatusMessage($statusMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatusMessage()
-    {
-    }
-    /**
-     * Subnetwork Name. Example: projects/my-project/regions/us-
-     * central1/subnetworks/my-subnet
-     *
-     * @param string $subnetwork
-     */
-    public function setSubnetwork($subnetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubnetwork()
+    class Google_Service_Container_UsableSubnetwork extends \Google\Service\Container\UsableSubnetwork
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Adsense;
-
-class ListUrlChannelsResponse extends \Google\Collection
-{
-    protected $collection_key = 'urlChannels';
-    /**
-     * Continuation token used to page through url channels. To retrieve the next
-     * page of the results, set the next request's "page_token" value to this.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $urlChannelsType = UrlChannel::class;
-    protected $urlChannelsDataType = 'array';
-    /**
-     * Continuation token used to page through url channels. To retrieve the next
-     * page of the results, set the next request's "page_token" value to this.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Adsense {
+    class ListUrlChannelsResponse extends \Google\Collection
     {
+        protected $collection_key = 'urlChannels';
+        /**
+         * Continuation token used to page through url channels. To retrieve the next
+         * page of the results, set the next request's "page_token" value to this.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $urlChannelsType = UrlChannel::class;
+        protected $urlChannelsDataType = 'array';
+        /**
+         * Continuation token used to page through url channels. To retrieve the next
+         * page of the results, set the next request's "page_token" value to this.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The url channels returned in this list response.
+         *
+         * @param UrlChannel[] $urlChannels
+         */
+        public function setUrlChannels($urlChannels)
+        {
+        }
+        /**
+         * @return UrlChannel[]
+         */
+        public function getUrlChannels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Adsense\ListUrlChannelsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The url channels returned in this list response.
-     *
-     * @param UrlChannel[] $urlChannels
-     */
-    public function setUrlChannels($urlChannels)
-    {
-    }
-    /**
-     * @return UrlChannel[]
-     */
-    public function getUrlChannels()
+    class Google_Service_Adsense_ListUrlChannelsResponse extends \Google\Service\Adsense\ListUrlChannelsResponse
     {
     }
 }

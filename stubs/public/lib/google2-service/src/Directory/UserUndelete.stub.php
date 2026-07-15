@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class UserUndelete extends \Google\Model
-{
-    /**
-     * OrgUnit of User
-     *
-     * @var string
-     */
-    public $orgUnitPath;
-    /**
-     * OrgUnit of User
-     *
-     * @param string $orgUnitPath
-     */
-    public function setOrgUnitPath($orgUnitPath)
+namespace Google\Service\Directory {
+    class UserUndelete extends \Google\Model
     {
+        /**
+         * OrgUnit of User
+         *
+         * @var string
+         */
+        public $orgUnitPath;
+        /**
+         * OrgUnit of User
+         *
+         * @param string $orgUnitPath
+         */
+        public function setOrgUnitPath($orgUnitPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrgUnitPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\UserUndelete registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOrgUnitPath()
+    class Google_Service_Directory_UserUndelete extends \Google\Service\Directory\UserUndelete
     {
     }
 }

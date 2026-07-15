@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class TimeRange extends \Google\Model
-{
-    /**
-     * Optional. The latest consent change time, in format YYYY-MM-
-     * DDThh:mm:ss.sss+zz:zz If not specified, the system uses the time when
-     * ApplyConsents was called.
-     *
-     * @var string
-     */
-    public $end;
-    /**
-     * Optional. The earliest consent change time, in format YYYY-MM-
-     * DDThh:mm:ss.sss+zz:zz If not specified, the system uses the FHIR store
-     * creation time.
-     *
-     * @var string
-     */
-    public $start;
-    /**
-     * Optional. The latest consent change time, in format YYYY-MM-
-     * DDThh:mm:ss.sss+zz:zz If not specified, the system uses the time when
-     * ApplyConsents was called.
-     *
-     * @param string $end
-     */
-    public function setEnd($end)
+namespace Google\Service\CloudHealthcare {
+    class TimeRange extends \Google\Model
     {
+        /**
+         * Optional. The latest consent change time, in format YYYY-MM-
+         * DDThh:mm:ss.sss+zz:zz If not specified, the system uses the time when
+         * ApplyConsents was called.
+         *
+         * @var string
+         */
+        public $end;
+        /**
+         * Optional. The earliest consent change time, in format YYYY-MM-
+         * DDThh:mm:ss.sss+zz:zz If not specified, the system uses the FHIR store
+         * creation time.
+         *
+         * @var string
+         */
+        public $start;
+        /**
+         * Optional. The latest consent change time, in format YYYY-MM-
+         * DDThh:mm:ss.sss+zz:zz If not specified, the system uses the time when
+         * ApplyConsents was called.
+         *
+         * @param string $end
+         */
+        public function setEnd($end)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnd()
+        {
+        }
+        /**
+         * Optional. The earliest consent change time, in format YYYY-MM-
+         * DDThh:mm:ss.sss+zz:zz If not specified, the system uses the FHIR store
+         * creation time.
+         *
+         * @param string $start
+         */
+        public function setStart($start)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\TimeRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnd()
-    {
-    }
-    /**
-     * Optional. The earliest consent change time, in format YYYY-MM-
-     * DDThh:mm:ss.sss+zz:zz If not specified, the system uses the FHIR store
-     * creation time.
-     *
-     * @param string $start
-     */
-    public function setStart($start)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStart()
+    class Google_Service_CloudHealthcare_TimeRange extends \Google\Service\CloudHealthcare\TimeRange
     {
     }
 }

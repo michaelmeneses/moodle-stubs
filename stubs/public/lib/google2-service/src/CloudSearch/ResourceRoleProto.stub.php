@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ResourceRoleProto extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $applicationId;
-    /**
-     * @var string
-     */
-    public $objectId;
-    /**
-     * @var string
-     */
-    public $objectPart;
-    /**
-     * @var int
-     */
-    public $roleId;
-    /**
-     * @param string
-     */
-    public function setApplicationId($applicationId)
+namespace Google\Service\CloudSearch {
+    class ResourceRoleProto extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $applicationId;
+        /**
+         * @var string
+         */
+        public $objectId;
+        /**
+         * @var string
+         */
+        public $objectPart;
+        /**
+         * @var int
+         */
+        public $roleId;
+        /**
+         * @param string
+         */
+        public function setApplicationId($applicationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicationId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setObjectPart($objectPart)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectPart()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setRoleId($roleId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRoleId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\ResourceRoleProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicationId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setObjectId($objectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setObjectPart($objectPart)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectPart()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setRoleId($roleId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRoleId()
+    class Google_Service_CloudSearch_ResourceRoleProto extends \Google\Service\CloudSearch\ResourceRoleProto
     {
     }
 }

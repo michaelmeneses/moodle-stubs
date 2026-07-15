@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class WebServerNetworkAccessControl extends \Google\Collection
-{
-    protected $collection_key = 'allowedIpRanges';
-    protected $allowedIpRangesType = AllowedIpRange::class;
-    protected $allowedIpRangesDataType = 'array';
-    /**
-     * A collection of allowed IP ranges with descriptions.
-     *
-     * @param AllowedIpRange[] $allowedIpRanges
-     */
-    public function setAllowedIpRanges($allowedIpRanges)
+namespace Google\Service\CloudComposer {
+    class WebServerNetworkAccessControl extends \Google\Collection
     {
+        protected $collection_key = 'allowedIpRanges';
+        protected $allowedIpRangesType = AllowedIpRange::class;
+        protected $allowedIpRangesDataType = 'array';
+        /**
+         * A collection of allowed IP ranges with descriptions.
+         *
+         * @param AllowedIpRange[] $allowedIpRanges
+         */
+        public function setAllowedIpRanges($allowedIpRanges)
+        {
+        }
+        /**
+         * @return AllowedIpRange[]
+         */
+        public function getAllowedIpRanges()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AllowedIpRange[]
+     * Runtime class alias of \Google\Service\CloudComposer\WebServerNetworkAccessControl registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedIpRanges()
+    class Google_Service_CloudComposer_WebServerNetworkAccessControl extends \Google\Service\CloudComposer\WebServerNetworkAccessControl
     {
     }
 }

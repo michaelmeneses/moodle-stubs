@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class TrustConfig extends \Google\Collection
-{
-    protected $collection_key = 'casConfigs';
-    protected $casConfigsType = CertificateAuthorityServiceConfig::class;
-    protected $casConfigsDataType = 'array';
-    /**
-     * Optional. Configuration for the Google Certificate Authority Service.
-     * Maximum 10.
-     *
-     * @param CertificateAuthorityServiceConfig[] $casConfigs
-     */
-    public function setCasConfigs($casConfigs)
+namespace Google\Service\ManagedKafka {
+    class TrustConfig extends \Google\Collection
     {
+        protected $collection_key = 'casConfigs';
+        protected $casConfigsType = CertificateAuthorityServiceConfig::class;
+        protected $casConfigsDataType = 'array';
+        /**
+         * Optional. Configuration for the Google Certificate Authority Service.
+         * Maximum 10.
+         *
+         * @param CertificateAuthorityServiceConfig[] $casConfigs
+         */
+        public function setCasConfigs($casConfigs)
+        {
+        }
+        /**
+         * @return CertificateAuthorityServiceConfig[]
+         */
+        public function getCasConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CertificateAuthorityServiceConfig[]
+     * Runtime class alias of \Google\Service\ManagedKafka\TrustConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCasConfigs()
+    class Google_Service_ManagedKafka_TrustConfig extends \Google\Service\ManagedKafka\TrustConfig
     {
     }
 }

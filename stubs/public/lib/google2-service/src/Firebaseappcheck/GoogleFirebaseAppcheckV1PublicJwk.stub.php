@@ -21,140 +21,149 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1PublicJwk extends \Google\Model
-{
-    /**
-     * See [section 4.4 of RFC
-     * 7517](https://tools.ietf.org/html/rfc7517#section-4.4).
-     *
-     * @var string
-     */
-    public $alg;
-    /**
-     * See [section 6.3.1.2 of RFC
-     * 7518](https://tools.ietf.org/html/rfc7518#section-6.3.1.2).
-     *
-     * @var string
-     */
-    public $e;
-    /**
-     * See [section 4.5 of RFC
-     * 7517](https://tools.ietf.org/html/rfc7517#section-4.5).
-     *
-     * @var string
-     */
-    public $kid;
-    /**
-     * See [section 4.1 of RFC
-     * 7517](https://tools.ietf.org/html/rfc7517#section-4.1).
-     *
-     * @var string
-     */
-    public $kty;
-    /**
-     * See [section 6.3.1.1 of RFC
-     * 7518](https://tools.ietf.org/html/rfc7518#section-6.3.1.1).
-     *
-     * @var string
-     */
-    public $n;
-    /**
-     * See [section 4.2 of RFC
-     * 7517](https://tools.ietf.org/html/rfc7517#section-4.2).
-     *
-     * @var string
-     */
-    public $use;
-    /**
-     * See [section 4.4 of RFC
-     * 7517](https://tools.ietf.org/html/rfc7517#section-4.4).
-     *
-     * @param string $alg
-     */
-    public function setAlg($alg)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1PublicJwk extends \Google\Model
     {
+        /**
+         * See [section 4.4 of RFC
+         * 7517](https://tools.ietf.org/html/rfc7517#section-4.4).
+         *
+         * @var string
+         */
+        public $alg;
+        /**
+         * See [section 6.3.1.2 of RFC
+         * 7518](https://tools.ietf.org/html/rfc7518#section-6.3.1.2).
+         *
+         * @var string
+         */
+        public $e;
+        /**
+         * See [section 4.5 of RFC
+         * 7517](https://tools.ietf.org/html/rfc7517#section-4.5).
+         *
+         * @var string
+         */
+        public $kid;
+        /**
+         * See [section 4.1 of RFC
+         * 7517](https://tools.ietf.org/html/rfc7517#section-4.1).
+         *
+         * @var string
+         */
+        public $kty;
+        /**
+         * See [section 6.3.1.1 of RFC
+         * 7518](https://tools.ietf.org/html/rfc7518#section-6.3.1.1).
+         *
+         * @var string
+         */
+        public $n;
+        /**
+         * See [section 4.2 of RFC
+         * 7517](https://tools.ietf.org/html/rfc7517#section-4.2).
+         *
+         * @var string
+         */
+        public $use;
+        /**
+         * See [section 4.4 of RFC
+         * 7517](https://tools.ietf.org/html/rfc7517#section-4.4).
+         *
+         * @param string $alg
+         */
+        public function setAlg($alg)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAlg()
+        {
+        }
+        /**
+         * See [section 6.3.1.2 of RFC
+         * 7518](https://tools.ietf.org/html/rfc7518#section-6.3.1.2).
+         *
+         * @param string $e
+         */
+        public function setE($e)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getE()
+        {
+        }
+        /**
+         * See [section 4.5 of RFC
+         * 7517](https://tools.ietf.org/html/rfc7517#section-4.5).
+         *
+         * @param string $kid
+         */
+        public function setKid($kid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKid()
+        {
+        }
+        /**
+         * See [section 4.1 of RFC
+         * 7517](https://tools.ietf.org/html/rfc7517#section-4.1).
+         *
+         * @param string $kty
+         */
+        public function setKty($kty)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKty()
+        {
+        }
+        /**
+         * See [section 6.3.1.1 of RFC
+         * 7518](https://tools.ietf.org/html/rfc7518#section-6.3.1.1).
+         *
+         * @param string $n
+         */
+        public function setN($n)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getN()
+        {
+        }
+        /**
+         * See [section 4.2 of RFC
+         * 7517](https://tools.ietf.org/html/rfc7517#section-4.2).
+         *
+         * @param string $use
+         */
+        public function setUse($use)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUse()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1PublicJwk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlg()
-    {
-    }
-    /**
-     * See [section 6.3.1.2 of RFC
-     * 7518](https://tools.ietf.org/html/rfc7518#section-6.3.1.2).
-     *
-     * @param string $e
-     */
-    public function setE($e)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getE()
-    {
-    }
-    /**
-     * See [section 4.5 of RFC
-     * 7517](https://tools.ietf.org/html/rfc7517#section-4.5).
-     *
-     * @param string $kid
-     */
-    public function setKid($kid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKid()
-    {
-    }
-    /**
-     * See [section 4.1 of RFC
-     * 7517](https://tools.ietf.org/html/rfc7517#section-4.1).
-     *
-     * @param string $kty
-     */
-    public function setKty($kty)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKty()
-    {
-    }
-    /**
-     * See [section 6.3.1.1 of RFC
-     * 7518](https://tools.ietf.org/html/rfc7518#section-6.3.1.1).
-     *
-     * @param string $n
-     */
-    public function setN($n)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getN()
-    {
-    }
-    /**
-     * See [section 4.2 of RFC
-     * 7517](https://tools.ietf.org/html/rfc7517#section-4.2).
-     *
-     * @param string $use
-     */
-    public function setUse($use)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUse()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1PublicJwk extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1PublicJwk
     {
     }
 }

@@ -21,129 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoExternalTraffic extends \Google\Model
-{
-    public const SOURCE_SOURCE_UNSPECIFIED = 'SOURCE_UNSPECIFIED';
-    public const SOURCE_APIGEE = 'APIGEE';
-    public const SOURCE_SECURITY = 'SECURITY';
-    /**
-     * Indicates the client enables internal IP feature, this is applicable for
-     * internal clients only.
-     *
-     * @var bool
-     */
-    public $enableInternalIp;
-    /**
-     * User’s GCP project id the traffic is referring to.
-     *
-     * @var string
-     */
-    public $gcpProjectId;
-    /**
-     * User’s GCP project number the traffic is referring to.
-     *
-     * @var string
-     */
-    public $gcpProjectNumber;
-    /**
-     * Location for the user's request.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Enqueue the execution request due to quota issue
-     *
-     * @var bool
-     */
-    public $retryRequestForQuota;
-    /**
-     * @var string
-     */
-    public $source;
-    /**
-     * Indicates the client enables internal IP feature, this is applicable for
-     * internal clients only.
-     *
-     * @param bool $enableInternalIp
-     */
-    public function setEnableInternalIp($enableInternalIp)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoExternalTraffic extends \Google\Model
     {
+        public const SOURCE_SOURCE_UNSPECIFIED = 'SOURCE_UNSPECIFIED';
+        public const SOURCE_APIGEE = 'APIGEE';
+        public const SOURCE_SECURITY = 'SECURITY';
+        /**
+         * Indicates the client enables internal IP feature, this is applicable for
+         * internal clients only.
+         *
+         * @var bool
+         */
+        public $enableInternalIp;
+        /**
+         * User’s GCP project id the traffic is referring to.
+         *
+         * @var string
+         */
+        public $gcpProjectId;
+        /**
+         * User’s GCP project number the traffic is referring to.
+         *
+         * @var string
+         */
+        public $gcpProjectNumber;
+        /**
+         * Location for the user's request.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Enqueue the execution request due to quota issue
+         *
+         * @var bool
+         */
+        public $retryRequestForQuota;
+        /**
+         * @var string
+         */
+        public $source;
+        /**
+         * Indicates the client enables internal IP feature, this is applicable for
+         * internal clients only.
+         *
+         * @param bool $enableInternalIp
+         */
+        public function setEnableInternalIp($enableInternalIp)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableInternalIp()
+        {
+        }
+        /**
+         * User’s GCP project id the traffic is referring to.
+         *
+         * @param string $gcpProjectId
+         */
+        public function setGcpProjectId($gcpProjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcpProjectId()
+        {
+        }
+        /**
+         * User’s GCP project number the traffic is referring to.
+         *
+         * @param string $gcpProjectNumber
+         */
+        public function setGcpProjectNumber($gcpProjectNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcpProjectNumber()
+        {
+        }
+        /**
+         * Location for the user's request.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Enqueue the execution request due to quota issue
+         *
+         * @param bool $retryRequestForQuota
+         */
+        public function setRetryRequestForQuota($retryRequestForQuota)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRetryRequestForQuota()
+        {
+        }
+        /**
+         * @param self::SOURCE_* $source
+         */
+        public function setSource($source)
+        {
+        }
+        /**
+         * @return self::SOURCE_*
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoExternalTraffic registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableInternalIp()
-    {
-    }
-    /**
-     * User’s GCP project id the traffic is referring to.
-     *
-     * @param string $gcpProjectId
-     */
-    public function setGcpProjectId($gcpProjectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcpProjectId()
-    {
-    }
-    /**
-     * User’s GCP project number the traffic is referring to.
-     *
-     * @param string $gcpProjectNumber
-     */
-    public function setGcpProjectNumber($gcpProjectNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcpProjectNumber()
-    {
-    }
-    /**
-     * Location for the user's request.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Enqueue the execution request due to quota issue
-     *
-     * @param bool $retryRequestForQuota
-     */
-    public function setRetryRequestForQuota($retryRequestForQuota)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRetryRequestForQuota()
-    {
-    }
-    /**
-     * @param self::SOURCE_* $source
-     */
-    public function setSource($source)
-    {
-    }
-    /**
-     * @return self::SOURCE_*
-     */
-    public function getSource()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoExternalTraffic extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoExternalTraffic
     {
     }
 }

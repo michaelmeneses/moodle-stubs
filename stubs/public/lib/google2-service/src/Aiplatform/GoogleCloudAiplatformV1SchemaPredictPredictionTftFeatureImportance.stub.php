@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPredictPredictionTftFeatureImportance extends \Google\Collection
-{
-    protected $collection_key = 'horizonWeights';
-    /**
-     * @var string[]
-     */
-    public $attributeColumns;
-    /**
-     * @var float[]
-     */
-    public $attributeWeights;
-    /**
-     * @var string[]
-     */
-    public $contextColumns;
-    /**
-     * TFT feature importance values. Each pair for {context/horizon/attribute}
-     * should have the same shape since the weight corresponds to the column
-     * names.
-     *
-     * @var float[]
-     */
-    public $contextWeights;
-    /**
-     * @var string[]
-     */
-    public $horizonColumns;
-    /**
-     * @var float[]
-     */
-    public $horizonWeights;
-    /**
-     * @param string[] $attributeColumns
-     */
-    public function setAttributeColumns($attributeColumns)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPredictPredictionTftFeatureImportance extends \Google\Collection
     {
+        protected $collection_key = 'horizonWeights';
+        /**
+         * @var string[]
+         */
+        public $attributeColumns;
+        /**
+         * @var float[]
+         */
+        public $attributeWeights;
+        /**
+         * @var string[]
+         */
+        public $contextColumns;
+        /**
+         * TFT feature importance values. Each pair for {context/horizon/attribute}
+         * should have the same shape since the weight corresponds to the column
+         * names.
+         *
+         * @var float[]
+         */
+        public $contextWeights;
+        /**
+         * @var string[]
+         */
+        public $horizonColumns;
+        /**
+         * @var float[]
+         */
+        public $horizonWeights;
+        /**
+         * @param string[] $attributeColumns
+         */
+        public function setAttributeColumns($attributeColumns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAttributeColumns()
+        {
+        }
+        /**
+         * @param float[] $attributeWeights
+         */
+        public function setAttributeWeights($attributeWeights)
+        {
+        }
+        /**
+         * @return float[]
+         */
+        public function getAttributeWeights()
+        {
+        }
+        /**
+         * @param string[] $contextColumns
+         */
+        public function setContextColumns($contextColumns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getContextColumns()
+        {
+        }
+        /**
+         * TFT feature importance values. Each pair for {context/horizon/attribute}
+         * should have the same shape since the weight corresponds to the column
+         * names.
+         *
+         * @param float[] $contextWeights
+         */
+        public function setContextWeights($contextWeights)
+        {
+        }
+        /**
+         * @return float[]
+         */
+        public function getContextWeights()
+        {
+        }
+        /**
+         * @param string[] $horizonColumns
+         */
+        public function setHorizonColumns($horizonColumns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getHorizonColumns()
+        {
+        }
+        /**
+         * @param float[] $horizonWeights
+         */
+        public function setHorizonWeights($horizonWeights)
+        {
+        }
+        /**
+         * @return float[]
+         */
+        public function getHorizonWeights()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictPredictionTftFeatureImportance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributeColumns()
-    {
-    }
-    /**
-     * @param float[] $attributeWeights
-     */
-    public function setAttributeWeights($attributeWeights)
-    {
-    }
-    /**
-     * @return float[]
-     */
-    public function getAttributeWeights()
-    {
-    }
-    /**
-     * @param string[] $contextColumns
-     */
-    public function setContextColumns($contextColumns)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getContextColumns()
-    {
-    }
-    /**
-     * TFT feature importance values. Each pair for {context/horizon/attribute}
-     * should have the same shape since the weight corresponds to the column
-     * names.
-     *
-     * @param float[] $contextWeights
-     */
-    public function setContextWeights($contextWeights)
-    {
-    }
-    /**
-     * @return float[]
-     */
-    public function getContextWeights()
-    {
-    }
-    /**
-     * @param string[] $horizonColumns
-     */
-    public function setHorizonColumns($horizonColumns)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getHorizonColumns()
-    {
-    }
-    /**
-     * @param float[] $horizonWeights
-     */
-    public function setHorizonWeights($horizonWeights)
-    {
-    }
-    /**
-     * @return float[]
-     */
-    public function getHorizonWeights()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPredictPredictionTftFeatureImportance extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictPredictionTftFeatureImportance
     {
     }
 }

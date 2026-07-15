@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class DefaultClickThroughEventTagProperties extends \Google\Model
-{
-    /**
-     * ID of the click-through event tag to apply to all ads in this entity's
-     * scope.
-     *
-     * @var string
-     */
-    public $defaultClickThroughEventTagId;
-    /**
-     * Whether this entity should override the inherited default click-through
-     * event tag with its own defined value.
-     *
-     * @var bool
-     */
-    public $overrideInheritedEventTag;
-    /**
-     * ID of the click-through event tag to apply to all ads in this entity's
-     * scope.
-     *
-     * @param string $defaultClickThroughEventTagId
-     */
-    public function setDefaultClickThroughEventTagId($defaultClickThroughEventTagId)
+namespace Google\Service\Dfareporting {
+    class DefaultClickThroughEventTagProperties extends \Google\Model
     {
+        /**
+         * ID of the click-through event tag to apply to all ads in this entity's
+         * scope.
+         *
+         * @var string
+         */
+        public $defaultClickThroughEventTagId;
+        /**
+         * Whether this entity should override the inherited default click-through
+         * event tag with its own defined value.
+         *
+         * @var bool
+         */
+        public $overrideInheritedEventTag;
+        /**
+         * ID of the click-through event tag to apply to all ads in this entity's
+         * scope.
+         *
+         * @param string $defaultClickThroughEventTagId
+         */
+        public function setDefaultClickThroughEventTagId($defaultClickThroughEventTagId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultClickThroughEventTagId()
+        {
+        }
+        /**
+         * Whether this entity should override the inherited default click-through
+         * event tag with its own defined value.
+         *
+         * @param bool $overrideInheritedEventTag
+         */
+        public function setOverrideInheritedEventTag($overrideInheritedEventTag)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOverrideInheritedEventTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\DefaultClickThroughEventTagProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultClickThroughEventTagId()
-    {
-    }
-    /**
-     * Whether this entity should override the inherited default click-through
-     * event tag with its own defined value.
-     *
-     * @param bool $overrideInheritedEventTag
-     */
-    public function setOverrideInheritedEventTag($overrideInheritedEventTag)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOverrideInheritedEventTag()
+    class Google_Service_Dfareporting_DefaultClickThroughEventTagProperties extends \Google\Service\Dfareporting\DefaultClickThroughEventTagProperties
     {
     }
 }

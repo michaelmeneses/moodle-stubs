@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class MonthlySchedule extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $monthDay;
-    protected $weekDayOfMonthType = WeekDayOfMonth::class;
-    protected $weekDayOfMonthDataType = '';
-    /**
-     * @param int
-     */
-    public function setMonthDay($monthDay)
+namespace Google\Service\OSConfig {
+    class MonthlySchedule extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $monthDay;
+        protected $weekDayOfMonthType = WeekDayOfMonth::class;
+        protected $weekDayOfMonthDataType = '';
+        /**
+         * @param int
+         */
+        public function setMonthDay($monthDay)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMonthDay()
+        {
+        }
+        /**
+         * @param WeekDayOfMonth
+         */
+        public function setWeekDayOfMonth(WeekDayOfMonth $weekDayOfMonth)
+        {
+        }
+        /**
+         * @return WeekDayOfMonth
+         */
+        public function getWeekDayOfMonth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\OSConfig\MonthlySchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMonthDay()
-    {
-    }
-    /**
-     * @param WeekDayOfMonth
-     */
-    public function setWeekDayOfMonth(WeekDayOfMonth $weekDayOfMonth)
-    {
-    }
-    /**
-     * @return WeekDayOfMonth
-     */
-    public function getWeekDayOfMonth()
+    class Google_Service_OSConfig_MonthlySchedule extends \Google\Service\OSConfig\MonthlySchedule
     {
     }
 }

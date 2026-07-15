@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CCAIPlatform;
-
-class EmployeeInfo extends \Google\Collection
-{
-    protected $collection_key = 'unwantedEventIntervals';
-    /**
-     * Required. Unique ID of this employee.
-     *
-     * @var string
-     */
-    public $id;
-    protected $unwantedEventIntervalsType = UnwantedEventInterval::class;
-    protected $unwantedEventIntervalsDataType = 'array';
-    /**
-     * Required. Unique ID of this employee.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\CCAIPlatform {
+    class EmployeeInfo extends \Google\Collection
     {
+        protected $collection_key = 'unwantedEventIntervals';
+        /**
+         * Required. Unique ID of this employee.
+         *
+         * @var string
+         */
+        public $id;
+        protected $unwantedEventIntervalsType = UnwantedEventInterval::class;
+        protected $unwantedEventIntervalsDataType = 'array';
+        /**
+         * Required. Unique ID of this employee.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Optional. A list of unwanted event intervals for this employee. The start
+         * time of the interval must be in the planning horizon.
+         *
+         * @param UnwantedEventInterval[] $unwantedEventIntervals
+         */
+        public function setUnwantedEventIntervals($unwantedEventIntervals)
+        {
+        }
+        /**
+         * @return UnwantedEventInterval[]
+         */
+        public function getUnwantedEventIntervals()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CCAIPlatform\EmployeeInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Optional. A list of unwanted event intervals for this employee. The start
-     * time of the interval must be in the planning horizon.
-     *
-     * @param UnwantedEventInterval[] $unwantedEventIntervals
-     */
-    public function setUnwantedEventIntervals($unwantedEventIntervals)
-    {
-    }
-    /**
-     * @return UnwantedEventInterval[]
-     */
-    public function getUnwantedEventIntervals()
+    class Google_Service_CCAIPlatform_EmployeeInfo extends \Google\Service\CCAIPlatform\EmployeeInfo
     {
     }
 }

@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectAttachmentGroupLogicalStructureRegion extends \Google\Collection
-{
-    protected $collection_key = 'metros';
-    protected $metrosType = InterconnectAttachmentGroupLogicalStructureRegionMetro::class;
-    protected $metrosDataType = 'array';
-    /**
-     * Output only. [Output Only] The name of a region, like "us-central1".
-     *
-     * @var string
-     */
-    public $region;
-    /**
-     * @param InterconnectAttachmentGroupLogicalStructureRegionMetro[] $metros
-     */
-    public function setMetros($metros)
+namespace Google\Service\Compute {
+    class InterconnectAttachmentGroupLogicalStructureRegion extends \Google\Collection
     {
+        protected $collection_key = 'metros';
+        protected $metrosType = InterconnectAttachmentGroupLogicalStructureRegionMetro::class;
+        protected $metrosDataType = 'array';
+        /**
+         * Output only. [Output Only] The name of a region, like "us-central1".
+         *
+         * @var string
+         */
+        public $region;
+        /**
+         * @param InterconnectAttachmentGroupLogicalStructureRegionMetro[] $metros
+         */
+        public function setMetros($metros)
+        {
+        }
+        /**
+         * @return InterconnectAttachmentGroupLogicalStructureRegionMetro[]
+         */
+        public function getMetros()
+        {
+        }
+        /**
+         * Output only. [Output Only] The name of a region, like "us-central1".
+         *
+         * @param string $region
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InterconnectAttachmentGroupLogicalStructureRegionMetro[]
+     * Runtime class alias of \Google\Service\Compute\InterconnectAttachmentGroupLogicalStructureRegion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetros()
-    {
-    }
-    /**
-     * Output only. [Output Only] The name of a region, like "us-central1".
-     *
-     * @param string $region
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegion()
+    class Google_Service_Compute_InterconnectAttachmentGroupLogicalStructureRegion extends \Google\Service\Compute\InterconnectAttachmentGroupLogicalStructureRegion
     {
     }
 }

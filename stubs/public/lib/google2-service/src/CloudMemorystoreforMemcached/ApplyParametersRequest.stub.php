@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMemorystoreforMemcached;
-
-class ApplyParametersRequest extends \Google\Collection
-{
-    protected $collection_key = 'nodeIds';
-    /**
-     * Whether to apply instance-level parameter group to all nodes. If set to
-     * true, users are restricted from specifying individual nodes, and
-     * `ApplyParameters` updates all nodes within the instance.
-     *
-     * @var bool
-     */
-    public $applyAll;
-    /**
-     * Nodes to which the instance-level parameter group is applied.
-     *
-     * @var string[]
-     */
-    public $nodeIds;
-    /**
-     * Whether to apply instance-level parameter group to all nodes. If set to
-     * true, users are restricted from specifying individual nodes, and
-     * `ApplyParameters` updates all nodes within the instance.
-     *
-     * @param bool $applyAll
-     */
-    public function setApplyAll($applyAll)
+namespace Google\Service\CloudMemorystoreforMemcached {
+    class ApplyParametersRequest extends \Google\Collection
     {
+        protected $collection_key = 'nodeIds';
+        /**
+         * Whether to apply instance-level parameter group to all nodes. If set to
+         * true, users are restricted from specifying individual nodes, and
+         * `ApplyParameters` updates all nodes within the instance.
+         *
+         * @var bool
+         */
+        public $applyAll;
+        /**
+         * Nodes to which the instance-level parameter group is applied.
+         *
+         * @var string[]
+         */
+        public $nodeIds;
+        /**
+         * Whether to apply instance-level parameter group to all nodes. If set to
+         * true, users are restricted from specifying individual nodes, and
+         * `ApplyParameters` updates all nodes within the instance.
+         *
+         * @param bool $applyAll
+         */
+        public function setApplyAll($applyAll)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getApplyAll()
+        {
+        }
+        /**
+         * Nodes to which the instance-level parameter group is applied.
+         *
+         * @param string[] $nodeIds
+         */
+        public function setNodeIds($nodeIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNodeIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudMemorystoreforMemcached\ApplyParametersRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplyAll()
-    {
-    }
-    /**
-     * Nodes to which the instance-level parameter group is applied.
-     *
-     * @param string[] $nodeIds
-     */
-    public function setNodeIds($nodeIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNodeIds()
+    class Google_Service_CloudMemorystoreforMemcached_ApplyParametersRequest extends \Google\Service\CloudMemorystoreforMemcached\ApplyParametersRequest
     {
     }
 }

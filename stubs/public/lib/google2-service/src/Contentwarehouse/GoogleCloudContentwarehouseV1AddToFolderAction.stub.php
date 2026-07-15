@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1AddToFolderAction extends \Google\Collection
-{
-    protected $collection_key = 'folders';
-    /**
-     * Names of the folder under which new document is to be added. Format:
-     * projects/{project_number}/locations/{location}/documents/{document_id}.
-     *
-     * @var string[]
-     */
-    public $folders;
-    /**
-     * Names of the folder under which new document is to be added. Format:
-     * projects/{project_number}/locations/{location}/documents/{document_id}.
-     *
-     * @param string[] $folders
-     */
-    public function setFolders($folders)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1AddToFolderAction extends \Google\Collection
     {
+        protected $collection_key = 'folders';
+        /**
+         * Names of the folder under which new document is to be added. Format:
+         * projects/{project_number}/locations/{location}/documents/{document_id}.
+         *
+         * @var string[]
+         */
+        public $folders;
+        /**
+         * Names of the folder under which new document is to be added. Format:
+         * projects/{project_number}/locations/{location}/documents/{document_id}.
+         *
+         * @param string[] $folders
+         */
+        public function setFolders($folders)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFolders()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1AddToFolderAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFolders()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1AddToFolderAction extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1AddToFolderAction
     {
     }
 }

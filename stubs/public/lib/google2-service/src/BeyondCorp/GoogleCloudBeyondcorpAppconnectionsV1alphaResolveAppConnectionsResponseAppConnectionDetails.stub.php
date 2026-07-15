@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpAppconnectionsV1alphaResolveAppConnectionsResponseAppConnectionDetails extends \Google\Collection
-{
-    protected $collection_key = 'recentMigVms';
-    protected $appConnectionType = GoogleCloudBeyondcorpAppconnectionsV1alphaAppConnection::class;
-    protected $appConnectionDataType = '';
-    /**
-     * @var string[]
-     */
-    public $recentMigVms;
-    /**
-     * @param GoogleCloudBeyondcorpAppconnectionsV1alphaAppConnection
-     */
-    public function setAppConnection(GoogleCloudBeyondcorpAppconnectionsV1alphaAppConnection $appConnection)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpAppconnectionsV1alphaResolveAppConnectionsResponseAppConnectionDetails extends \Google\Collection
     {
+        protected $collection_key = 'recentMigVms';
+        protected $appConnectionType = GoogleCloudBeyondcorpAppconnectionsV1alphaAppConnection::class;
+        protected $appConnectionDataType = '';
+        /**
+         * @var string[]
+         */
+        public $recentMigVms;
+        /**
+         * @param GoogleCloudBeyondcorpAppconnectionsV1alphaAppConnection
+         */
+        public function setAppConnection(GoogleCloudBeyondcorpAppconnectionsV1alphaAppConnection $appConnection)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpAppconnectionsV1alphaAppConnection
+         */
+        public function getAppConnection()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setRecentMigVms($recentMigVms)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRecentMigVms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudBeyondcorpAppconnectionsV1alphaAppConnection
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectionsV1alphaResolveAppConnectionsResponseAppConnectionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppConnection()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setRecentMigVms($recentMigVms)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRecentMigVms()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpAppconnectionsV1alphaResolveAppConnectionsResponseAppConnectionDetails extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectionsV1alphaResolveAppConnectionsResponseAppConnectionDetails
     {
     }
 }

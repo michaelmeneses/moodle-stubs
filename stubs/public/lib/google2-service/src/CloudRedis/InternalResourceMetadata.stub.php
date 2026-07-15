@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class InternalResourceMetadata extends \Google\Model
-{
-    protected $backupConfigurationType = BackupConfiguration::class;
-    protected $backupConfigurationDataType = '';
-    protected $backupRunType = BackupRun::class;
-    protected $backupRunDataType = '';
-    /**
-     * Whether deletion protection is enabled for this internal resource.
-     *
-     * @var bool
-     */
-    public $isDeletionProtectionEnabled;
-    protected $productType = Product::class;
-    protected $productDataType = '';
-    protected $resourceIdType = DatabaseResourceId::class;
-    protected $resourceIdDataType = '';
-    /**
-     * Required. internal resource name for spanner this will be database name
-     * e.g."spanner.googleapis.com/projects/123/abc/instances/inst1/databases/db1"
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * Backup configuration for this database
-     *
-     * @param BackupConfiguration $backupConfiguration
-     */
-    public function setBackupConfiguration(BackupConfiguration $backupConfiguration)
+namespace Google\Service\CloudRedis {
+    class InternalResourceMetadata extends \Google\Model
     {
+        protected $backupConfigurationType = BackupConfiguration::class;
+        protected $backupConfigurationDataType = '';
+        protected $backupRunType = BackupRun::class;
+        protected $backupRunDataType = '';
+        /**
+         * Whether deletion protection is enabled for this internal resource.
+         *
+         * @var bool
+         */
+        public $isDeletionProtectionEnabled;
+        protected $productType = Product::class;
+        protected $productDataType = '';
+        protected $resourceIdType = DatabaseResourceId::class;
+        protected $resourceIdDataType = '';
+        /**
+         * Required. internal resource name for spanner this will be database name
+         * e.g."spanner.googleapis.com/projects/123/abc/instances/inst1/databases/db1"
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * Backup configuration for this database
+         *
+         * @param BackupConfiguration $backupConfiguration
+         */
+        public function setBackupConfiguration(BackupConfiguration $backupConfiguration)
+        {
+        }
+        /**
+         * @return BackupConfiguration
+         */
+        public function getBackupConfiguration()
+        {
+        }
+        /**
+         * Information about the last backup attempt for this database
+         *
+         * @param BackupRun $backupRun
+         */
+        public function setBackupRun(BackupRun $backupRun)
+        {
+        }
+        /**
+         * @return BackupRun
+         */
+        public function getBackupRun()
+        {
+        }
+        /**
+         * Whether deletion protection is enabled for this internal resource.
+         *
+         * @param bool $isDeletionProtectionEnabled
+         */
+        public function setIsDeletionProtectionEnabled($isDeletionProtectionEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsDeletionProtectionEnabled()
+        {
+        }
+        /**
+         * @param Product $product
+         */
+        public function setProduct(Product $product)
+        {
+        }
+        /**
+         * @return Product
+         */
+        public function getProduct()
+        {
+        }
+        /**
+         * @param DatabaseResourceId $resourceId
+         */
+        public function setResourceId(DatabaseResourceId $resourceId)
+        {
+        }
+        /**
+         * @return DatabaseResourceId
+         */
+        public function getResourceId()
+        {
+        }
+        /**
+         * Required. internal resource name for spanner this will be database name
+         * e.g."spanner.googleapis.com/projects/123/abc/instances/inst1/databases/db1"
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BackupConfiguration
+     * Runtime class alias of \Google\Service\CloudRedis\InternalResourceMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupConfiguration()
-    {
-    }
-    /**
-     * Information about the last backup attempt for this database
-     *
-     * @param BackupRun $backupRun
-     */
-    public function setBackupRun(BackupRun $backupRun)
-    {
-    }
-    /**
-     * @return BackupRun
-     */
-    public function getBackupRun()
-    {
-    }
-    /**
-     * Whether deletion protection is enabled for this internal resource.
-     *
-     * @param bool $isDeletionProtectionEnabled
-     */
-    public function setIsDeletionProtectionEnabled($isDeletionProtectionEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsDeletionProtectionEnabled()
-    {
-    }
-    /**
-     * @param Product $product
-     */
-    public function setProduct(Product $product)
-    {
-    }
-    /**
-     * @return Product
-     */
-    public function getProduct()
-    {
-    }
-    /**
-     * @param DatabaseResourceId $resourceId
-     */
-    public function setResourceId(DatabaseResourceId $resourceId)
-    {
-    }
-    /**
-     * @return DatabaseResourceId
-     */
-    public function getResourceId()
-    {
-    }
-    /**
-     * Required. internal resource name for spanner this will be database name
-     * e.g."spanner.googleapis.com/projects/123/abc/instances/inst1/databases/db1"
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
+    class Google_Service_CloudRedis_InternalResourceMetadata extends \Google\Service\CloudRedis\InternalResourceMetadata
     {
     }
 }

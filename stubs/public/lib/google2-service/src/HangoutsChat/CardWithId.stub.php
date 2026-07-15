@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class CardWithId extends \Google\Model
-{
-    protected $cardType = GoogleAppsCardV1Card::class;
-    protected $cardDataType = '';
-    /**
-     * Required if the message contains multiple cards. A unique identifier for a
-     * card in a message.
-     *
-     * @var string
-     */
-    public $cardId;
-    /**
-     * A card. Maximum size is 32 KB.
-     *
-     * @param GoogleAppsCardV1Card $card
-     */
-    public function setCard(GoogleAppsCardV1Card $card)
+namespace Google\Service\HangoutsChat {
+    class CardWithId extends \Google\Model
     {
+        protected $cardType = GoogleAppsCardV1Card::class;
+        protected $cardDataType = '';
+        /**
+         * Required if the message contains multiple cards. A unique identifier for a
+         * card in a message.
+         *
+         * @var string
+         */
+        public $cardId;
+        /**
+         * A card. Maximum size is 32 KB.
+         *
+         * @param GoogleAppsCardV1Card $card
+         */
+        public function setCard(GoogleAppsCardV1Card $card)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1Card
+         */
+        public function getCard()
+        {
+        }
+        /**
+         * Required if the message contains multiple cards. A unique identifier for a
+         * card in a message.
+         *
+         * @param string $cardId
+         */
+        public function setCardId($cardId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCardId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsCardV1Card
+     * Runtime class alias of \Google\Service\HangoutsChat\CardWithId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCard()
-    {
-    }
-    /**
-     * Required if the message contains multiple cards. A unique identifier for a
-     * card in a message.
-     *
-     * @param string $cardId
-     */
-    public function setCardId($cardId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCardId()
+    class Google_Service_HangoutsChat_CardWithId extends \Google\Service\HangoutsChat\CardWithId
     {
     }
 }

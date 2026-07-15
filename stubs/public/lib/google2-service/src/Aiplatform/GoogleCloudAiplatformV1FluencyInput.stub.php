@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FluencyInput extends \Google\Model
-{
-    protected $instanceType = GoogleCloudAiplatformV1FluencyInstance::class;
-    protected $instanceDataType = '';
-    protected $metricSpecType = GoogleCloudAiplatformV1FluencySpec::class;
-    protected $metricSpecDataType = '';
-    /**
-     * Required. Fluency instance.
-     *
-     * @param GoogleCloudAiplatformV1FluencyInstance $instance
-     */
-    public function setInstance(GoogleCloudAiplatformV1FluencyInstance $instance)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FluencyInput extends \Google\Model
     {
+        protected $instanceType = GoogleCloudAiplatformV1FluencyInstance::class;
+        protected $instanceDataType = '';
+        protected $metricSpecType = GoogleCloudAiplatformV1FluencySpec::class;
+        protected $metricSpecDataType = '';
+        /**
+         * Required. Fluency instance.
+         *
+         * @param GoogleCloudAiplatformV1FluencyInstance $instance
+         */
+        public function setInstance(GoogleCloudAiplatformV1FluencyInstance $instance)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FluencyInstance
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * Required. Spec for fluency score metric.
+         *
+         * @param GoogleCloudAiplatformV1FluencySpec $metricSpec
+         */
+        public function setMetricSpec(GoogleCloudAiplatformV1FluencySpec $metricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FluencySpec
+         */
+        public function getMetricSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1FluencyInstance
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FluencyInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstance()
-    {
-    }
-    /**
-     * Required. Spec for fluency score metric.
-     *
-     * @param GoogleCloudAiplatformV1FluencySpec $metricSpec
-     */
-    public function setMetricSpec(GoogleCloudAiplatformV1FluencySpec $metricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FluencySpec
-     */
-    public function getMetricSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FluencyInput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FluencyInput
     {
     }
 }

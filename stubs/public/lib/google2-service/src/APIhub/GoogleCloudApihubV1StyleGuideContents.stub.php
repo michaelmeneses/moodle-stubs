@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1StyleGuideContents extends \Google\Model
-{
-    /**
-     * Required. The contents of the style guide.
-     *
-     * @var string
-     */
-    public $contents;
-    /**
-     * Required. The mime type of the content.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * Required. The contents of the style guide.
-     *
-     * @param string $contents
-     */
-    public function setContents($contents)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1StyleGuideContents extends \Google\Model
     {
+        /**
+         * Required. The contents of the style guide.
+         *
+         * @var string
+         */
+        public $contents;
+        /**
+         * Required. The mime type of the content.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * Required. The contents of the style guide.
+         *
+         * @param string $contents
+         */
+        public function setContents($contents)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContents()
+        {
+        }
+        /**
+         * Required. The mime type of the content.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1StyleGuideContents registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContents()
-    {
-    }
-    /**
-     * Required. The mime type of the content.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_APIhub_GoogleCloudApihubV1StyleGuideContents extends \Google\Service\APIhub\GoogleCloudApihubV1StyleGuideContents
     {
     }
 }

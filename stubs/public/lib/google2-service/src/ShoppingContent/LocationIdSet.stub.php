@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class LocationIdSet extends \Google\Collection
-{
-    protected $collection_key = 'locationIds';
-    /**
-     * A non-empty list of location IDs. They must all be of the same location
-     * type (for example, state).
-     *
-     * @var string[]
-     */
-    public $locationIds;
-    /**
-     * A non-empty list of location IDs. They must all be of the same location
-     * type (for example, state).
-     *
-     * @param string[] $locationIds
-     */
-    public function setLocationIds($locationIds)
+namespace Google\Service\ShoppingContent {
+    class LocationIdSet extends \Google\Collection
     {
+        protected $collection_key = 'locationIds';
+        /**
+         * A non-empty list of location IDs. They must all be of the same location
+         * type (for example, state).
+         *
+         * @var string[]
+         */
+        public $locationIds;
+        /**
+         * A non-empty list of location IDs. They must all be of the same location
+         * type (for example, state).
+         *
+         * @param string[] $locationIds
+         */
+        public function setLocationIds($locationIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLocationIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ShoppingContent\LocationIdSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocationIds()
+    class Google_Service_ShoppingContent_LocationIdSet extends \Google\Service\ShoppingContent\LocationIdSet
     {
     }
 }

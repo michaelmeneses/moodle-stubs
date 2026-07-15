@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class SecretManagerSecret extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $env;
-    /**
-     * @var string
-     */
-    public $versionName;
-    /**
-     * @param string
-     */
-    public function setEnv($env)
+namespace Google\Service\CloudBuild {
+    class SecretManagerSecret extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $env;
+        /**
+         * @var string
+         */
+        public $versionName;
+        /**
+         * @param string
+         */
+        public function setEnv($env)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnv()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVersionName($versionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\SecretManagerSecret registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnv()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVersionName($versionName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionName()
+    class Google_Service_CloudBuild_SecretManagerSecret extends \Google\Service\CloudBuild\SecretManagerSecret
     {
     }
 }

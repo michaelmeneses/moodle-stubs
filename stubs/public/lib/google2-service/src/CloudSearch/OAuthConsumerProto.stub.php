@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class OAuthConsumerProto extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $domain;
-    /**
-     * @param string
-     */
-    public function setDomain($domain)
+namespace Google\Service\CloudSearch {
+    class OAuthConsumerProto extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $domain;
+        /**
+         * @param string
+         */
+        public function setDomain($domain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomain()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\OAuthConsumerProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomain()
+    class Google_Service_CloudSearch_OAuthConsumerProto extends \Google\Service\CloudSearch\OAuthConsumerProto
     {
     }
 }

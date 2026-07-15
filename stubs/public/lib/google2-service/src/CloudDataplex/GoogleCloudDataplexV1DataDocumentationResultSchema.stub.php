@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataDocumentationResultSchema extends \Google\Collection
-{
-    protected $collection_key = 'fields';
-    protected $fieldsType = GoogleCloudDataplexV1DataDocumentationResultField::class;
-    protected $fieldsDataType = 'array';
-    /**
-     * Output only. The list of columns.
-     *
-     * @param GoogleCloudDataplexV1DataDocumentationResultField[] $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataDocumentationResultSchema extends \Google\Collection
     {
+        protected $collection_key = 'fields';
+        protected $fieldsType = GoogleCloudDataplexV1DataDocumentationResultField::class;
+        protected $fieldsDataType = 'array';
+        /**
+         * Output only. The list of columns.
+         *
+         * @param GoogleCloudDataplexV1DataDocumentationResultField[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataDocumentationResultField[]
+         */
+        public function getFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1DataDocumentationResultField[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataDocumentationResultSchema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataDocumentationResultSchema extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataDocumentationResultSchema
     {
     }
 }

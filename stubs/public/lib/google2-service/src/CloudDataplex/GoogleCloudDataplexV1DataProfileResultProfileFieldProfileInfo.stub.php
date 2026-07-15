@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfo extends \Google\Collection
-{
-    protected $collection_key = 'topNValues';
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfo extends \Google\Collection
+    {
+        protected $collection_key = 'topNValues';
+        /**
+         * Output only. Ratio of rows with distinct values against total scanned rows.
+         * Not available for complex non-groupable field type, including RECORD,
+         * ARRAY, GEOGRAPHY, and JSON, as well as fields with REPEATABLE mode.
+         *
+         * @var 
+         */
+        public $distinctRatio;
+        protected $doubleProfileType = GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoDoubleFieldInfo::class;
+        protected $doubleProfileDataType = '';
+        protected $integerProfileType = GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoIntegerFieldInfo::class;
+        protected $integerProfileDataType = '';
+        /**
+         * Output only. Ratio of rows with null value against total scanned rows.
+         *
+         * @var 
+         */
+        public $nullRatio;
+        protected $stringProfileType = GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoStringFieldInfo::class;
+        protected $stringProfileDataType = '';
+        protected $topNValuesType = GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoTopNValue::class;
+        protected $topNValuesDataType = 'array';
+        public function setDistinctRatio($distinctRatio)
+        {
+        }
+        public function getDistinctRatio()
+        {
+        }
+        /**
+         * Double type field information.
+         *
+         * @param GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoDoubleFieldInfo $doubleProfile
+         */
+        public function setDoubleProfile(GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoDoubleFieldInfo $doubleProfile)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoDoubleFieldInfo
+         */
+        public function getDoubleProfile()
+        {
+        }
+        /**
+         * Integer type field information.
+         *
+         * @param GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoIntegerFieldInfo $integerProfile
+         */
+        public function setIntegerProfile(GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoIntegerFieldInfo $integerProfile)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoIntegerFieldInfo
+         */
+        public function getIntegerProfile()
+        {
+        }
+        public function setNullRatio($nullRatio)
+        {
+        }
+        public function getNullRatio()
+        {
+        }
+        /**
+         * String type field information.
+         *
+         * @param GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoStringFieldInfo $stringProfile
+         */
+        public function setStringProfile(GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoStringFieldInfo $stringProfile)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoStringFieldInfo
+         */
+        public function getStringProfile()
+        {
+        }
+        /**
+         * Output only. The list of top N non-null values, frequency and ratio with
+         * which they occur in the scanned data. N is 10 or equal to the number of
+         * distinct values in the field, whichever is smaller. Not available for
+         * complex non-groupable field type, including RECORD, ARRAY, GEOGRAPHY, and
+         * JSON, as well as fields with REPEATABLE mode.
+         *
+         * @param GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoTopNValue[] $topNValues
+         */
+        public function setTopNValues($topNValues)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoTopNValue[]
+         */
+        public function getTopNValues()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Output only. Ratio of rows with distinct values against total scanned rows.
-     * Not available for complex non-groupable field type, including RECORD,
-     * ARRAY, GEOGRAPHY, and JSON, as well as fields with REPEATABLE mode.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $distinctRatio;
-    protected $doubleProfileType = GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoDoubleFieldInfo::class;
-    protected $doubleProfileDataType = '';
-    protected $integerProfileType = GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoIntegerFieldInfo::class;
-    protected $integerProfileDataType = '';
-    /**
-     * Output only. Ratio of rows with null value against total scanned rows.
-     *
-     * @var 
-     */
-    public $nullRatio;
-    protected $stringProfileType = GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoStringFieldInfo::class;
-    protected $stringProfileDataType = '';
-    protected $topNValuesType = GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoTopNValue::class;
-    protected $topNValuesDataType = 'array';
-    public function setDistinctRatio($distinctRatio)
-    {
-    }
-    public function getDistinctRatio()
-    {
-    }
-    /**
-     * Double type field information.
-     *
-     * @param GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoDoubleFieldInfo $doubleProfile
-     */
-    public function setDoubleProfile(GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoDoubleFieldInfo $doubleProfile)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoDoubleFieldInfo
-     */
-    public function getDoubleProfile()
-    {
-    }
-    /**
-     * Integer type field information.
-     *
-     * @param GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoIntegerFieldInfo $integerProfile
-     */
-    public function setIntegerProfile(GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoIntegerFieldInfo $integerProfile)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoIntegerFieldInfo
-     */
-    public function getIntegerProfile()
-    {
-    }
-    public function setNullRatio($nullRatio)
-    {
-    }
-    public function getNullRatio()
-    {
-    }
-    /**
-     * String type field information.
-     *
-     * @param GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoStringFieldInfo $stringProfile
-     */
-    public function setStringProfile(GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoStringFieldInfo $stringProfile)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoStringFieldInfo
-     */
-    public function getStringProfile()
-    {
-    }
-    /**
-     * Output only. The list of top N non-null values, frequency and ratio with
-     * which they occur in the scanned data. N is 10 or equal to the number of
-     * distinct values in the field, whichever is smaller. Not available for
-     * complex non-groupable field type, including RECORD, ARRAY, GEOGRAPHY, and
-     * JSON, as well as fields with REPEATABLE mode.
-     *
-     * @param GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoTopNValue[] $topNValues
-     */
-    public function setTopNValues($topNValues)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoTopNValue[]
-     */
-    public function getTopNValues()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfo extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfo
     {
     }
 }

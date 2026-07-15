@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qtype_ordering;
 
+use question_display_options;
+use question_hint_with_parts;
 /**
  * Question hint for ordering.
  *

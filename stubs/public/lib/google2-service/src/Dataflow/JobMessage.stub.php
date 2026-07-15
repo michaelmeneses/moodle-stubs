@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class JobMessage extends \Google\Model
-{
-    /**
-     * The message importance isn't specified, or is unknown.
-     */
-    public const MESSAGE_IMPORTANCE_JOB_MESSAGE_IMPORTANCE_UNKNOWN = 'JOB_MESSAGE_IMPORTANCE_UNKNOWN';
-    /**
-     * The message is at the 'debug' level: typically only useful for software
-     * engineers working on the code the job is running. Typically, Dataflow
-     * pipeline runners do not display log messages at this level by default.
-     */
-    public const MESSAGE_IMPORTANCE_JOB_MESSAGE_DEBUG = 'JOB_MESSAGE_DEBUG';
-    /**
-     * The message is at the 'detailed' level: somewhat verbose, but potentially
-     * useful to users. Typically, Dataflow pipeline runners do not display log
-     * messages at this level by default. These messages are displayed by default
-     * in the Dataflow monitoring UI.
-     */
-    public const MESSAGE_IMPORTANCE_JOB_MESSAGE_DETAILED = 'JOB_MESSAGE_DETAILED';
-    /**
-     * The message is at the 'basic' level: useful for keeping track of the
-     * execution of a Dataflow pipeline. Typically, Dataflow pipeline runners
-     * display log messages at this level by default, and these messages are
-     * displayed by default in the Dataflow monitoring UI.
-     */
-    public const MESSAGE_IMPORTANCE_JOB_MESSAGE_BASIC = 'JOB_MESSAGE_BASIC';
-    /**
-     * The message is at the 'warning' level: indicating a condition pertaining to
-     * a job which may require human intervention. Typically, Dataflow pipeline
-     * runners display log messages at this level by default, and these messages
-     * are displayed by default in the Dataflow monitoring UI.
-     */
-    public const MESSAGE_IMPORTANCE_JOB_MESSAGE_WARNING = 'JOB_MESSAGE_WARNING';
-    /**
-     * The message is at the 'error' level: indicating a condition preventing a
-     * job from succeeding. Typically, Dataflow pipeline runners display log
-     * messages at this level by default, and these messages are displayed by
-     * default in the Dataflow monitoring UI.
-     */
-    public const MESSAGE_IMPORTANCE_JOB_MESSAGE_ERROR = 'JOB_MESSAGE_ERROR';
-    /**
-     * Deprecated.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Importance level of the message.
-     *
-     * @var string
-     */
-    public $messageImportance;
-    /**
-     * The text of the message.
-     *
-     * @var string
-     */
-    public $messageText;
-    /**
-     * The timestamp of the message.
-     *
-     * @var string
-     */
-    public $time;
-    /**
-     * Deprecated.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Dataflow {
+    class JobMessage extends \Google\Model
     {
+        /**
+         * The message importance isn't specified, or is unknown.
+         */
+        public const MESSAGE_IMPORTANCE_JOB_MESSAGE_IMPORTANCE_UNKNOWN = 'JOB_MESSAGE_IMPORTANCE_UNKNOWN';
+        /**
+         * The message is at the 'debug' level: typically only useful for software
+         * engineers working on the code the job is running. Typically, Dataflow
+         * pipeline runners do not display log messages at this level by default.
+         */
+        public const MESSAGE_IMPORTANCE_JOB_MESSAGE_DEBUG = 'JOB_MESSAGE_DEBUG';
+        /**
+         * The message is at the 'detailed' level: somewhat verbose, but potentially
+         * useful to users. Typically, Dataflow pipeline runners do not display log
+         * messages at this level by default. These messages are displayed by default
+         * in the Dataflow monitoring UI.
+         */
+        public const MESSAGE_IMPORTANCE_JOB_MESSAGE_DETAILED = 'JOB_MESSAGE_DETAILED';
+        /**
+         * The message is at the 'basic' level: useful for keeping track of the
+         * execution of a Dataflow pipeline. Typically, Dataflow pipeline runners
+         * display log messages at this level by default, and these messages are
+         * displayed by default in the Dataflow monitoring UI.
+         */
+        public const MESSAGE_IMPORTANCE_JOB_MESSAGE_BASIC = 'JOB_MESSAGE_BASIC';
+        /**
+         * The message is at the 'warning' level: indicating a condition pertaining to
+         * a job which may require human intervention. Typically, Dataflow pipeline
+         * runners display log messages at this level by default, and these messages
+         * are displayed by default in the Dataflow monitoring UI.
+         */
+        public const MESSAGE_IMPORTANCE_JOB_MESSAGE_WARNING = 'JOB_MESSAGE_WARNING';
+        /**
+         * The message is at the 'error' level: indicating a condition preventing a
+         * job from succeeding. Typically, Dataflow pipeline runners display log
+         * messages at this level by default, and these messages are displayed by
+         * default in the Dataflow monitoring UI.
+         */
+        public const MESSAGE_IMPORTANCE_JOB_MESSAGE_ERROR = 'JOB_MESSAGE_ERROR';
+        /**
+         * Deprecated.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Importance level of the message.
+         *
+         * @var string
+         */
+        public $messageImportance;
+        /**
+         * The text of the message.
+         *
+         * @var string
+         */
+        public $messageText;
+        /**
+         * The timestamp of the message.
+         *
+         * @var string
+         */
+        public $time;
+        /**
+         * Deprecated.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Importance level of the message.
+         *
+         * Accepted values: JOB_MESSAGE_IMPORTANCE_UNKNOWN, JOB_MESSAGE_DEBUG,
+         * JOB_MESSAGE_DETAILED, JOB_MESSAGE_BASIC, JOB_MESSAGE_WARNING,
+         * JOB_MESSAGE_ERROR
+         *
+         * @param self::MESSAGE_IMPORTANCE_* $messageImportance
+         */
+        public function setMessageImportance($messageImportance)
+        {
+        }
+        /**
+         * @return self::MESSAGE_IMPORTANCE_*
+         */
+        public function getMessageImportance()
+        {
+        }
+        /**
+         * The text of the message.
+         *
+         * @param string $messageText
+         */
+        public function setMessageText($messageText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessageText()
+        {
+        }
+        /**
+         * The timestamp of the message.
+         *
+         * @param string $time
+         */
+        public function setTime($time)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\JobMessage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Importance level of the message.
-     *
-     * Accepted values: JOB_MESSAGE_IMPORTANCE_UNKNOWN, JOB_MESSAGE_DEBUG,
-     * JOB_MESSAGE_DETAILED, JOB_MESSAGE_BASIC, JOB_MESSAGE_WARNING,
-     * JOB_MESSAGE_ERROR
-     *
-     * @param self::MESSAGE_IMPORTANCE_* $messageImportance
-     */
-    public function setMessageImportance($messageImportance)
-    {
-    }
-    /**
-     * @return self::MESSAGE_IMPORTANCE_*
-     */
-    public function getMessageImportance()
-    {
-    }
-    /**
-     * The text of the message.
-     *
-     * @param string $messageText
-     */
-    public function setMessageText($messageText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessageText()
-    {
-    }
-    /**
-     * The timestamp of the message.
-     *
-     * @param string $time
-     */
-    public function setTime($time)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTime()
+    class Google_Service_Dataflow_JobMessage extends \Google\Service\Dataflow\JobMessage
     {
     }
 }

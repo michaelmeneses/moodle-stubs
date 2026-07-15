@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class ExportDicomDataRequest extends \Google\Model
-{
-    protected $bigqueryDestinationType = GoogleCloudHealthcareV1DicomBigQueryDestination::class;
-    protected $bigqueryDestinationDataType = '';
-    protected $gcsDestinationType = GoogleCloudHealthcareV1DicomGcsDestination::class;
-    protected $gcsDestinationDataType = '';
-    /**
-     * The BigQuery output destination. You can only export to a BigQuery dataset
-     * that's in the same project as the DICOM store you're exporting from. The
-     * Cloud Healthcare Service Agent requires two IAM roles on the BigQuery
-     * location: `roles/bigquery.dataEditor` and `roles/bigquery.jobUser`.
-     *
-     * @param GoogleCloudHealthcareV1DicomBigQueryDestination $bigqueryDestination
-     */
-    public function setBigqueryDestination(GoogleCloudHealthcareV1DicomBigQueryDestination $bigqueryDestination)
+namespace Google\Service\CloudHealthcare {
+    class ExportDicomDataRequest extends \Google\Model
     {
+        protected $bigqueryDestinationType = GoogleCloudHealthcareV1DicomBigQueryDestination::class;
+        protected $bigqueryDestinationDataType = '';
+        protected $gcsDestinationType = GoogleCloudHealthcareV1DicomGcsDestination::class;
+        protected $gcsDestinationDataType = '';
+        /**
+         * The BigQuery output destination. You can only export to a BigQuery dataset
+         * that's in the same project as the DICOM store you're exporting from. The
+         * Cloud Healthcare Service Agent requires two IAM roles on the BigQuery
+         * location: `roles/bigquery.dataEditor` and `roles/bigquery.jobUser`.
+         *
+         * @param GoogleCloudHealthcareV1DicomBigQueryDestination $bigqueryDestination
+         */
+        public function setBigqueryDestination(GoogleCloudHealthcareV1DicomBigQueryDestination $bigqueryDestination)
+        {
+        }
+        /**
+         * @return GoogleCloudHealthcareV1DicomBigQueryDestination
+         */
+        public function getBigqueryDestination()
+        {
+        }
+        /**
+         * The Cloud Storage output destination. The Cloud Healthcare Service Agent
+         * requires the `roles/storage.objectAdmin` Cloud IAM roles on the Cloud
+         * Storage location.
+         *
+         * @param GoogleCloudHealthcareV1DicomGcsDestination $gcsDestination
+         */
+        public function setGcsDestination(GoogleCloudHealthcareV1DicomGcsDestination $gcsDestination)
+        {
+        }
+        /**
+         * @return GoogleCloudHealthcareV1DicomGcsDestination
+         */
+        public function getGcsDestination()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudHealthcareV1DicomBigQueryDestination
+     * Runtime class alias of \Google\Service\CloudHealthcare\ExportDicomDataRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigqueryDestination()
-    {
-    }
-    /**
-     * The Cloud Storage output destination. The Cloud Healthcare Service Agent
-     * requires the `roles/storage.objectAdmin` Cloud IAM roles on the Cloud
-     * Storage location.
-     *
-     * @param GoogleCloudHealthcareV1DicomGcsDestination $gcsDestination
-     */
-    public function setGcsDestination(GoogleCloudHealthcareV1DicomGcsDestination $gcsDestination)
-    {
-    }
-    /**
-     * @return GoogleCloudHealthcareV1DicomGcsDestination
-     */
-    public function getGcsDestination()
+    class Google_Service_CloudHealthcare_ExportDicomDataRequest extends \Google\Service\CloudHealthcare\ExportDicomDataRequest
     {
     }
 }

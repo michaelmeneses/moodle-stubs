@@ -21,107 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class Manifest extends \Google\Collection
-{
-    /**
-     * The manifest type is not specified.
-     */
-    public const TYPE_MANIFEST_TYPE_UNSPECIFIED = 'MANIFEST_TYPE_UNSPECIFIED';
-    /**
-     * Create an HLS manifest. The corresponding file extension is `.m3u8`.
-     */
-    public const TYPE_HLS = 'HLS';
-    /**
-     * Create an MPEG-DASH manifest. The corresponding file extension is `.mpd`.
-     */
-    public const TYPE_DASH = 'DASH';
-    protected $collection_key = 'muxStreams';
-    protected $dashType = DashConfig::class;
-    protected $dashDataType = '';
-    /**
-     * The name of the generated file. The default is `manifest` with the
-     * extension suffix corresponding to the Manifest.type.
-     *
-     * @var string
-     */
-    public $fileName;
-    /**
-     * Required. List of user supplied MuxStream.key values that should appear in
-     * this manifest. When Manifest.type is `HLS`, a media manifest with name
-     * MuxStream.key and `.m3u8` extension is generated for each element in this
-     * list.
-     *
-     * @var string[]
-     */
-    public $muxStreams;
-    /**
-     * Required. Type of the manifest.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * `DASH` manifest configuration.
-     *
-     * @param DashConfig $dash
-     */
-    public function setDash(DashConfig $dash)
+namespace Google\Service\Transcoder {
+    class Manifest extends \Google\Collection
     {
+        /**
+         * The manifest type is not specified.
+         */
+        public const TYPE_MANIFEST_TYPE_UNSPECIFIED = 'MANIFEST_TYPE_UNSPECIFIED';
+        /**
+         * Create an HLS manifest. The corresponding file extension is `.m3u8`.
+         */
+        public const TYPE_HLS = 'HLS';
+        /**
+         * Create an MPEG-DASH manifest. The corresponding file extension is `.mpd`.
+         */
+        public const TYPE_DASH = 'DASH';
+        protected $collection_key = 'muxStreams';
+        protected $dashType = DashConfig::class;
+        protected $dashDataType = '';
+        /**
+         * The name of the generated file. The default is `manifest` with the
+         * extension suffix corresponding to the Manifest.type.
+         *
+         * @var string
+         */
+        public $fileName;
+        /**
+         * Required. List of user supplied MuxStream.key values that should appear in
+         * this manifest. When Manifest.type is `HLS`, a media manifest with name
+         * MuxStream.key and `.m3u8` extension is generated for each element in this
+         * list.
+         *
+         * @var string[]
+         */
+        public $muxStreams;
+        /**
+         * Required. Type of the manifest.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * `DASH` manifest configuration.
+         *
+         * @param DashConfig $dash
+         */
+        public function setDash(DashConfig $dash)
+        {
+        }
+        /**
+         * @return DashConfig
+         */
+        public function getDash()
+        {
+        }
+        /**
+         * The name of the generated file. The default is `manifest` with the
+         * extension suffix corresponding to the Manifest.type.
+         *
+         * @param string $fileName
+         */
+        public function setFileName($fileName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileName()
+        {
+        }
+        /**
+         * Required. List of user supplied MuxStream.key values that should appear in
+         * this manifest. When Manifest.type is `HLS`, a media manifest with name
+         * MuxStream.key and `.m3u8` extension is generated for each element in this
+         * list.
+         *
+         * @param string[] $muxStreams
+         */
+        public function setMuxStreams($muxStreams)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMuxStreams()
+        {
+        }
+        /**
+         * Required. Type of the manifest.
+         *
+         * Accepted values: MANIFEST_TYPE_UNSPECIFIED, HLS, DASH
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DashConfig
+     * Runtime class alias of \Google\Service\Transcoder\Manifest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDash()
-    {
-    }
-    /**
-     * The name of the generated file. The default is `manifest` with the
-     * extension suffix corresponding to the Manifest.type.
-     *
-     * @param string $fileName
-     */
-    public function setFileName($fileName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFileName()
-    {
-    }
-    /**
-     * Required. List of user supplied MuxStream.key values that should appear in
-     * this manifest. When Manifest.type is `HLS`, a media manifest with name
-     * MuxStream.key and `.m3u8` extension is generated for each element in this
-     * list.
-     *
-     * @param string[] $muxStreams
-     */
-    public function setMuxStreams($muxStreams)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMuxStreams()
-    {
-    }
-    /**
-     * Required. Type of the manifest.
-     *
-     * Accepted values: MANIFEST_TYPE_UNSPECIFIED, HLS, DASH
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Transcoder_Manifest extends \Google\Service\Transcoder\Manifest
     {
     }
 }

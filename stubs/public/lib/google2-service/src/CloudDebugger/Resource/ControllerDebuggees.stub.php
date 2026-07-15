@@ -21,33 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDebugger\Resource;
-
-/**
- * The "debuggees" collection of methods.
- * Typical usage is:
- *  <code>
- *   $clouddebuggerService = new Google\Service\CloudDebugger(...);
- *   $debuggees = $clouddebuggerService->controller_debuggees;
- *  </code>
- */
-class ControllerDebuggees extends \Google\Service\Resource
-{
+namespace Google\Service\CloudDebugger\Resource {
+    use Google\Service\CloudDebugger\RegisterDebuggeeRequest;
+    use Google\Service\CloudDebugger\RegisterDebuggeeResponse;
     /**
-     * Registers the debuggee with the controller service. All agents attached to
-     * the same application must call this method with exactly the same request
-     * content to get back the same stable `debuggee_id`. Agents should call this
-     * method again whenever `google.rpc.Code.NOT_FOUND` is returned from any
-     * controller method. This protocol allows the controller service to disable
-     * debuggees, recover from data loss, or change the `debuggee_id` format. Agents
-     * must handle `debuggee_id` value changing upon re-registration.
-     * (debuggees.register)
-     *
-     * @param RegisterDebuggeeRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return RegisterDebuggeeResponse
+     * The "debuggees" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $clouddebuggerService = new Google\Service\CloudDebugger(...);
+     *   $debuggees = $clouddebuggerService->controller_debuggees;
+     *  </code>
      */
-    public function register(RegisterDebuggeeRequest $postBody, $optParams = [])
+    class ControllerDebuggees extends \Google\Service\Resource
+    {
+        /**
+         * Registers the debuggee with the controller service. All agents attached to
+         * the same application must call this method with exactly the same request
+         * content to get back the same stable `debuggee_id`. Agents should call this
+         * method again whenever `google.rpc.Code.NOT_FOUND` is returned from any
+         * controller method. This protocol allows the controller service to disable
+         * debuggees, recover from data loss, or change the `debuggee_id` format. Agents
+         * must handle `debuggee_id` value changing upon re-registration.
+         * (debuggees.register)
+         *
+         * @param RegisterDebuggeeRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return RegisterDebuggeeResponse
+         */
+        public function register(RegisterDebuggeeRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudDebugger\Resource\ControllerDebuggees registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudDebugger_Resource_ControllerDebuggees extends \Google\Service\CloudDebugger\Resource\ControllerDebuggees
     {
     }
 }

@@ -21,76 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Genomics\Resource;
-
-/**
- * The "operations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $genomicsService = new Google\Service\Genomics(...);
- *   $operations = $genomicsService->projects_operations;
- *  </code>
- */
-class ProjectsOperations extends \Google\Service\Resource
-{
+namespace Google\Service\Genomics\Resource {
+    use Google\Service\Genomics\CancelOperationRequest;
+    use Google\Service\Genomics\GenomicsEmpty;
+    use Google\Service\Genomics\ListOperationsResponse;
+    use Google\Service\Genomics\Operation;
     /**
-     * Starts asynchronous cancellation on a long-running operation. The server
-     * makes a best effort to cancel the operation, but success is not guaranteed.
-     * Clients may use Operations.GetOperation or Operations.ListOperations to check
-     * whether the cancellation succeeded or the operation completed despite
-     * cancellation. Authorization requires the following [Google
-     * IAM](https://cloud.google.com/iam) permission: * `genomics.operations.cancel`
-     * (operations.cancel)
-     *
-     * @param string $name The name of the operation resource to be cancelled.
-     * @param CancelOperationRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GenomicsEmpty
+     * The "operations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $genomicsService = new Google\Service\Genomics(...);
+     *   $operations = $genomicsService->projects_operations;
+     *  </code>
      */
-    public function cancel($name, CancelOperationRequest $postBody, $optParams = [])
+    class ProjectsOperations extends \Google\Service\Resource
     {
+        /**
+         * Starts asynchronous cancellation on a long-running operation. The server
+         * makes a best effort to cancel the operation, but success is not guaranteed.
+         * Clients may use Operations.GetOperation or Operations.ListOperations to check
+         * whether the cancellation succeeded or the operation completed despite
+         * cancellation. Authorization requires the following [Google
+         * IAM](https://cloud.google.com/iam) permission: * `genomics.operations.cancel`
+         * (operations.cancel)
+         *
+         * @param string $name The name of the operation resource to be cancelled.
+         * @param CancelOperationRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GenomicsEmpty
+         */
+        public function cancel($name, CancelOperationRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets the latest state of a long-running operation. Clients can use this
+         * method to poll the operation result at intervals as recommended by the API
+         * service. Authorization requires the following [Google
+         * IAM](https://cloud.google.com/iam) permission: * `genomics.operations.get`
+         * (operations.get)
+         *
+         * @param string $name The name of the operation resource.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists operations that match the specified filter in the request.
+         * Authorization requires the following [Google
+         * IAM](https://cloud.google.com/iam) permission: * `genomics.operations.list`
+         * (operations.listProjectsOperations)
+         *
+         * @param string $name The name of the operation's parent resource.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter A string for filtering Operations. In v2alpha1, the
+         * following filter fields are supported: * createTime: The time this job was
+         * created * events: The set of event (names) that have occurred while running
+         * the pipeline. The : operator can be used to determine if a particular event
+         * has occurred. * error: If the pipeline is running, this value is NULL. Once
+         * the pipeline finishes, the value is the standard Google error code. *
+         * labels.key or labels."key with space" where key is a label key. * done: If
+         * the pipeline is running, this value is false. Once the pipeline finishes, the
+         * value is true. Examples: * `projectId = my-project AND createTime >=
+         * 1432140000` * `projectId = my-project AND createTime >= 1432140000 AND
+         * createTime <= 1432150000 AND status = RUNNING` * `projectId = my-project AND
+         * labels.color = *` * `projectId = my-project AND labels.color = red`
+         * @opt_param int pageSize The maximum number of results to return. The maximum
+         * value is 256.
+         * @opt_param string pageToken The standard list page token.
+         * @return ListOperationsResponse
+         */
+        public function listProjectsOperations($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the latest state of a long-running operation. Clients can use this
-     * method to poll the operation result at intervals as recommended by the API
-     * service. Authorization requires the following [Google
-     * IAM](https://cloud.google.com/iam) permission: * `genomics.operations.get`
-     * (operations.get)
-     *
-     * @param string $name The name of the operation resource.
-     * @param array $optParams Optional parameters.
-     * @return Operation
+     * Runtime class alias of \Google\Service\Genomics\Resource\ProjectsOperations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists operations that match the specified filter in the request.
-     * Authorization requires the following [Google
-     * IAM](https://cloud.google.com/iam) permission: * `genomics.operations.list`
-     * (operations.listProjectsOperations)
-     *
-     * @param string $name The name of the operation's parent resource.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter A string for filtering Operations. In v2alpha1, the
-     * following filter fields are supported: * createTime: The time this job was
-     * created * events: The set of event (names) that have occurred while running
-     * the pipeline. The : operator can be used to determine if a particular event
-     * has occurred. * error: If the pipeline is running, this value is NULL. Once
-     * the pipeline finishes, the value is the standard Google error code. *
-     * labels.key or labels."key with space" where key is a label key. * done: If
-     * the pipeline is running, this value is false. Once the pipeline finishes, the
-     * value is true. Examples: * `projectId = my-project AND createTime >=
-     * 1432140000` * `projectId = my-project AND createTime >= 1432140000 AND
-     * createTime <= 1432150000 AND status = RUNNING` * `projectId = my-project AND
-     * labels.color = *` * `projectId = my-project AND labels.color = red`
-     * @opt_param int pageSize The maximum number of results to return. The maximum
-     * value is 256.
-     * @opt_param string pageToken The standard list page token.
-     * @return ListOperationsResponse
-     */
-    public function listProjectsOperations($name, $optParams = [])
+    class Google_Service_Genomics_Resource_ProjectsOperations extends \Google\Service\Genomics\Resource\ProjectsOperations
     {
     }
 }

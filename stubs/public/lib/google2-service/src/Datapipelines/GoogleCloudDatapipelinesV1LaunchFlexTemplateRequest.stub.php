@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1LaunchFlexTemplateRequest extends \Google\Model
-{
-    protected $launchParameterType = GoogleCloudDatapipelinesV1LaunchFlexTemplateParameter::class;
-    protected $launchParameterDataType = '';
-    /**
-     * Required. The [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) to
-     * which to direct the request. For example, `us-central1`, `us-west1`.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Required. The ID of the Cloud Platform project that the job belongs to.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * If true, the request is validated but not actually executed. Defaults to
-     * false.
-     *
-     * @var bool
-     */
-    public $validateOnly;
-    /**
-     * Required. Parameter to launch a job from a Flex Template.
-     *
-     * @param GoogleCloudDatapipelinesV1LaunchFlexTemplateParameter $launchParameter
-     */
-    public function setLaunchParameter(GoogleCloudDatapipelinesV1LaunchFlexTemplateParameter $launchParameter)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1LaunchFlexTemplateRequest extends \Google\Model
     {
+        protected $launchParameterType = GoogleCloudDatapipelinesV1LaunchFlexTemplateParameter::class;
+        protected $launchParameterDataType = '';
+        /**
+         * Required. The [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) to
+         * which to direct the request. For example, `us-central1`, `us-west1`.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Required. The ID of the Cloud Platform project that the job belongs to.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * If true, the request is validated but not actually executed. Defaults to
+         * false.
+         *
+         * @var bool
+         */
+        public $validateOnly;
+        /**
+         * Required. Parameter to launch a job from a Flex Template.
+         *
+         * @param GoogleCloudDatapipelinesV1LaunchFlexTemplateParameter $launchParameter
+         */
+        public function setLaunchParameter(GoogleCloudDatapipelinesV1LaunchFlexTemplateParameter $launchParameter)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1LaunchFlexTemplateParameter
+         */
+        public function getLaunchParameter()
+        {
+        }
+        /**
+         * Required. The [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) to
+         * which to direct the request. For example, `us-central1`, `us-west1`.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Required. The ID of the Cloud Platform project that the job belongs to.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * If true, the request is validated but not actually executed. Defaults to
+         * false.
+         *
+         * @param bool $validateOnly
+         */
+        public function setValidateOnly($validateOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatapipelinesV1LaunchFlexTemplateParameter
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1LaunchFlexTemplateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLaunchParameter()
-    {
-    }
-    /**
-     * Required. The [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) to
-     * which to direct the request. For example, `us-central1`, `us-west1`.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Required. The ID of the Cloud Platform project that the job belongs to.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * If true, the request is validated but not actually executed. Defaults to
-     * false.
-     *
-     * @param bool $validateOnly
-     */
-    public function setValidateOnly($validateOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidateOnly()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1LaunchFlexTemplateRequest extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1LaunchFlexTemplateRequest
     {
     }
 }

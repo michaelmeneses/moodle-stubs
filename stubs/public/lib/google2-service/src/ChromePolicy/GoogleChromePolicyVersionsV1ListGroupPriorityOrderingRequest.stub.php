@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1ListGroupPriorityOrderingRequest extends \Google\Model
-{
-    /**
-     * The namespace of the policy type for the request.
-     *
-     * @var string
-     */
-    public $policyNamespace;
-    /**
-     * The schema name of the policy for the request.
-     *
-     * @var string
-     */
-    public $policySchema;
-    protected $policyTargetKeyType = GoogleChromePolicyVersionsV1PolicyTargetKey::class;
-    protected $policyTargetKeyDataType = '';
-    /**
-     * The namespace of the policy type for the request.
-     *
-     * @param string $policyNamespace
-     */
-    public function setPolicyNamespace($policyNamespace)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1ListGroupPriorityOrderingRequest extends \Google\Model
     {
+        /**
+         * The namespace of the policy type for the request.
+         *
+         * @var string
+         */
+        public $policyNamespace;
+        /**
+         * The schema name of the policy for the request.
+         *
+         * @var string
+         */
+        public $policySchema;
+        protected $policyTargetKeyType = GoogleChromePolicyVersionsV1PolicyTargetKey::class;
+        protected $policyTargetKeyDataType = '';
+        /**
+         * The namespace of the policy type for the request.
+         *
+         * @param string $policyNamespace
+         */
+        public function setPolicyNamespace($policyNamespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicyNamespace()
+        {
+        }
+        /**
+         * The schema name of the policy for the request.
+         *
+         * @param string $policySchema
+         */
+        public function setPolicySchema($policySchema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicySchema()
+        {
+        }
+        /**
+         * Required. The key of the target for which we want to retrieve the group
+         * priority ordering. The target resource must point to an app.
+         *
+         * @param GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey
+         */
+        public function setPolicyTargetKey(GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyVersionsV1PolicyTargetKey
+         */
+        public function getPolicyTargetKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1ListGroupPriorityOrderingRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicyNamespace()
-    {
-    }
-    /**
-     * The schema name of the policy for the request.
-     *
-     * @param string $policySchema
-     */
-    public function setPolicySchema($policySchema)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPolicySchema()
-    {
-    }
-    /**
-     * Required. The key of the target for which we want to retrieve the group
-     * priority ordering. The target resource must point to an app.
-     *
-     * @param GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey
-     */
-    public function setPolicyTargetKey(GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyVersionsV1PolicyTargetKey
-     */
-    public function getPolicyTargetKey()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1ListGroupPriorityOrderingRequest extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1ListGroupPriorityOrderingRequest
     {
     }
 }

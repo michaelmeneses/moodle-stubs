@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class ListImpressionMetricsResponse extends \Google\Collection
-{
-    protected $collection_key = 'impressionMetricsRows';
-    protected $impressionMetricsRowsType = ImpressionMetricsRow::class;
-    protected $impressionMetricsRowsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * ListImpressionMetricsRequest.pageToken field in the subsequent call to the
-     * impressionMetrics.list method to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of rows, each containing a set of impression metrics.
-     *
-     * @param ImpressionMetricsRow[] $impressionMetricsRows
-     */
-    public function setImpressionMetricsRows($impressionMetricsRows)
+namespace Google\Service\AdExchangeBuyerII {
+    class ListImpressionMetricsResponse extends \Google\Collection
     {
+        protected $collection_key = 'impressionMetricsRows';
+        protected $impressionMetricsRowsType = ImpressionMetricsRow::class;
+        protected $impressionMetricsRowsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * ListImpressionMetricsRequest.pageToken field in the subsequent call to the
+         * impressionMetrics.list method to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of rows, each containing a set of impression metrics.
+         *
+         * @param ImpressionMetricsRow[] $impressionMetricsRows
+         */
+        public function setImpressionMetricsRows($impressionMetricsRows)
+        {
+        }
+        /**
+         * @return ImpressionMetricsRow[]
+         */
+        public function getImpressionMetricsRows()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * ListImpressionMetricsRequest.pageToken field in the subsequent call to the
+         * impressionMetrics.list method to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ImpressionMetricsRow[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\ListImpressionMetricsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImpressionMetricsRows()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * ListImpressionMetricsRequest.pageToken field in the subsequent call to the
-     * impressionMetrics.list method to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AdExchangeBuyerII_ListImpressionMetricsResponse extends \Google\Service\AdExchangeBuyerII\ListImpressionMetricsResponse
     {
     }
 }

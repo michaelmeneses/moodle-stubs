@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1ComputeSchemaRequest extends \Google\Collection
-{
-    protected $collection_key = 'inputSchemas';
-    protected $configType = GoogleCloudDatapipelinesV1ConfiguredTransform::class;
-    protected $configDataType = '';
-    protected $inputSchemasType = GoogleCloudDatapipelinesV1Schema::class;
-    protected $inputSchemasDataType = 'array';
-    protected $rawSchemaType = GoogleCloudDatapipelinesV1RawSchemaInfo::class;
-    protected $rawSchemaDataType = '';
-    /**
-     * @param GoogleCloudDatapipelinesV1ConfiguredTransform
-     */
-    public function setConfig(GoogleCloudDatapipelinesV1ConfiguredTransform $config)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1ComputeSchemaRequest extends \Google\Collection
     {
+        protected $collection_key = 'inputSchemas';
+        protected $configType = GoogleCloudDatapipelinesV1ConfiguredTransform::class;
+        protected $configDataType = '';
+        protected $inputSchemasType = GoogleCloudDatapipelinesV1Schema::class;
+        protected $inputSchemasDataType = 'array';
+        protected $rawSchemaType = GoogleCloudDatapipelinesV1RawSchemaInfo::class;
+        protected $rawSchemaDataType = '';
+        /**
+         * @param GoogleCloudDatapipelinesV1ConfiguredTransform
+         */
+        public function setConfig(GoogleCloudDatapipelinesV1ConfiguredTransform $config)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1ConfiguredTransform
+         */
+        public function getConfig()
+        {
+        }
+        /**
+         * @param GoogleCloudDatapipelinesV1Schema[]
+         */
+        public function setInputSchemas($inputSchemas)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1Schema[]
+         */
+        public function getInputSchemas()
+        {
+        }
+        /**
+         * @param GoogleCloudDatapipelinesV1RawSchemaInfo
+         */
+        public function setRawSchema(GoogleCloudDatapipelinesV1RawSchemaInfo $rawSchema)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1RawSchemaInfo
+         */
+        public function getRawSchema()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatapipelinesV1ConfiguredTransform
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1ComputeSchemaRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfig()
-    {
-    }
-    /**
-     * @param GoogleCloudDatapipelinesV1Schema[]
-     */
-    public function setInputSchemas($inputSchemas)
-    {
-    }
-    /**
-     * @return GoogleCloudDatapipelinesV1Schema[]
-     */
-    public function getInputSchemas()
-    {
-    }
-    /**
-     * @param GoogleCloudDatapipelinesV1RawSchemaInfo
-     */
-    public function setRawSchema(GoogleCloudDatapipelinesV1RawSchemaInfo $rawSchema)
-    {
-    }
-    /**
-     * @return GoogleCloudDatapipelinesV1RawSchemaInfo
-     */
-    public function getRawSchema()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1ComputeSchemaRequest extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1ComputeSchemaRequest
     {
     }
 }

@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RemoveDatapointsRequest extends \Google\Collection
-{
-    protected $collection_key = 'datapointIds';
-    /**
-     * A list of datapoint ids to be deleted.
-     *
-     * @var string[]
-     */
-    public $datapointIds;
-    /**
-     * A list of datapoint ids to be deleted.
-     *
-     * @param string[] $datapointIds
-     */
-    public function setDatapointIds($datapointIds)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RemoveDatapointsRequest extends \Google\Collection
     {
+        protected $collection_key = 'datapointIds';
+        /**
+         * A list of datapoint ids to be deleted.
+         *
+         * @var string[]
+         */
+        public $datapointIds;
+        /**
+         * A list of datapoint ids to be deleted.
+         *
+         * @param string[] $datapointIds
+         */
+        public function setDatapointIds($datapointIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDatapointIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RemoveDatapointsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatapointIds()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RemoveDatapointsRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RemoveDatapointsRequest
     {
     }
 }

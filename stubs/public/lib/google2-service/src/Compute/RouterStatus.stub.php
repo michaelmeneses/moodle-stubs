@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RouterStatus extends \Google\Collection
-{
-    protected $collection_key = 'natStatus';
-    protected $bestRoutesType = Route::class;
-    protected $bestRoutesDataType = 'array';
-    protected $bestRoutesForRouterType = Route::class;
-    protected $bestRoutesForRouterDataType = 'array';
-    protected $bgpPeerStatusType = RouterStatusBgpPeerStatus::class;
-    protected $bgpPeerStatusDataType = 'array';
-    protected $natStatusType = RouterStatusNatStatus::class;
-    protected $natStatusDataType = 'array';
-    /**
-     * URI of the network to which this router belongs.
-     *
-     * @var string
-     */
-    public $network;
-    /**
-     * A list of the best dynamic routes for this Cloud Router's Virtual Private
-     * Cloud (VPC) network in the same region as this Cloud Router.
-     *
-     * Lists all of the best routes per prefix that are programmed into this
-     * region's VPC data plane.
-     *
-     * When global dynamic routing mode is turned on in the VPC network, this list
-     * can include cross-region dynamic routes from Cloud Routers in other
-     * regions.
-     *
-     * @param Route[] $bestRoutes
-     */
-    public function setBestRoutes($bestRoutes)
+namespace Google\Service\Compute {
+    class RouterStatus extends \Google\Collection
     {
+        protected $collection_key = 'natStatus';
+        protected $bestRoutesType = Route::class;
+        protected $bestRoutesDataType = 'array';
+        protected $bestRoutesForRouterType = Route::class;
+        protected $bestRoutesForRouterDataType = 'array';
+        protected $bgpPeerStatusType = RouterStatusBgpPeerStatus::class;
+        protected $bgpPeerStatusDataType = 'array';
+        protected $natStatusType = RouterStatusNatStatus::class;
+        protected $natStatusDataType = 'array';
+        /**
+         * URI of the network to which this router belongs.
+         *
+         * @var string
+         */
+        public $network;
+        /**
+         * A list of the best dynamic routes for this Cloud Router's Virtual Private
+         * Cloud (VPC) network in the same region as this Cloud Router.
+         *
+         * Lists all of the best routes per prefix that are programmed into this
+         * region's VPC data plane.
+         *
+         * When global dynamic routing mode is turned on in the VPC network, this list
+         * can include cross-region dynamic routes from Cloud Routers in other
+         * regions.
+         *
+         * @param Route[] $bestRoutes
+         */
+        public function setBestRoutes($bestRoutes)
+        {
+        }
+        /**
+         * @return Route[]
+         */
+        public function getBestRoutes()
+        {
+        }
+        /**
+         * A list of the best BGP routes learned by this Cloud Router.
+         *
+         * It is possible that routes listed might not be programmed into the data
+         * plane, if the Google Cloud control plane finds a more optimal route for a
+         * prefix than a route learned by this Cloud Router.
+         *
+         * @param Route[] $bestRoutesForRouter
+         */
+        public function setBestRoutesForRouter($bestRoutesForRouter)
+        {
+        }
+        /**
+         * @return Route[]
+         */
+        public function getBestRoutesForRouter()
+        {
+        }
+        /**
+         * @param RouterStatusBgpPeerStatus[] $bgpPeerStatus
+         */
+        public function setBgpPeerStatus($bgpPeerStatus)
+        {
+        }
+        /**
+         * @return RouterStatusBgpPeerStatus[]
+         */
+        public function getBgpPeerStatus()
+        {
+        }
+        /**
+         * @param RouterStatusNatStatus[] $natStatus
+         */
+        public function setNatStatus($natStatus)
+        {
+        }
+        /**
+         * @return RouterStatusNatStatus[]
+         */
+        public function getNatStatus()
+        {
+        }
+        /**
+         * URI of the network to which this router belongs.
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Route[]
+     * Runtime class alias of \Google\Service\Compute\RouterStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBestRoutes()
-    {
-    }
-    /**
-     * A list of the best BGP routes learned by this Cloud Router.
-     *
-     * It is possible that routes listed might not be programmed into the data
-     * plane, if the Google Cloud control plane finds a more optimal route for a
-     * prefix than a route learned by this Cloud Router.
-     *
-     * @param Route[] $bestRoutesForRouter
-     */
-    public function setBestRoutesForRouter($bestRoutesForRouter)
-    {
-    }
-    /**
-     * @return Route[]
-     */
-    public function getBestRoutesForRouter()
-    {
-    }
-    /**
-     * @param RouterStatusBgpPeerStatus[] $bgpPeerStatus
-     */
-    public function setBgpPeerStatus($bgpPeerStatus)
-    {
-    }
-    /**
-     * @return RouterStatusBgpPeerStatus[]
-     */
-    public function getBgpPeerStatus()
-    {
-    }
-    /**
-     * @param RouterStatusNatStatus[] $natStatus
-     */
-    public function setNatStatus($natStatus)
-    {
-    }
-    /**
-     * @return RouterStatusNatStatus[]
-     */
-    public function getNatStatus()
-    {
-    }
-    /**
-     * URI of the network to which this router belongs.
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetwork()
+    class Google_Service_Compute_RouterStatus extends \Google\Service\Compute\RouterStatus
     {
     }
 }

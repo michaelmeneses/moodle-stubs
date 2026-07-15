@@ -21,177 +21,186 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1TrainingOutput extends \Google\Collection
-{
-    protected $collection_key = 'trials';
-    protected $builtInAlgorithmOutputType = GoogleCloudMlV1BuiltInAlgorithmOutput::class;
-    protected $builtInAlgorithmOutputDataType = '';
-    /**
-     * The number of hyperparameter tuning trials that completed successfully.
-     * Only set for hyperparameter tuning jobs.
-     *
-     * @var string
-     */
-    public $completedTrialCount;
-    /**
-     * The amount of ML units consumed by the job.
-     *
-     * @var 
-     */
-    public $consumedMLUnits;
-    /**
-     * The TensorFlow summary tag name used for optimizing hyperparameter tuning
-     * trials. See [`HyperparameterSpec.hyperparameterMetricTag`](#HyperparameterS
-     * pec.FIELDS.hyperparameter_metric_tag) for more information. Only set for
-     * hyperparameter tuning jobs.
-     *
-     * @var string
-     */
-    public $hyperparameterMetricTag;
-    /**
-     * Whether this job is a built-in Algorithm job.
-     *
-     * @var bool
-     */
-    public $isBuiltInAlgorithmJob;
-    /**
-     * Whether this job is a hyperparameter tuning job.
-     *
-     * @var bool
-     */
-    public $isHyperparameterTuningJob;
-    protected $trialsType = GoogleCloudMlV1HyperparameterOutput::class;
-    protected $trialsDataType = 'array';
-    /**
-     * Output only. URIs for accessing [interactive
-     * shells](https://cloud.google.com/ai-platform/training/docs/monitor-debug-
-     * interactive-shell) (one URI for each training node). Only available if
-     * training_input.enable_web_access is `true`. The keys are names of each node
-     * in the training job; for example, `master-replica-0` for the master node,
-     * `worker-replica-0` for the first worker, and `ps-replica-0` for the first
-     * parameter server. The values are the URIs for each node's interactive
-     * shell.
-     *
-     * @var string[]
-     */
-    public $webAccessUris;
-    /**
-     * Details related to built-in algorithms jobs. Only set for built-in
-     * algorithms jobs.
-     *
-     * @param GoogleCloudMlV1BuiltInAlgorithmOutput $builtInAlgorithmOutput
-     */
-    public function setBuiltInAlgorithmOutput(GoogleCloudMlV1BuiltInAlgorithmOutput $builtInAlgorithmOutput)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1TrainingOutput extends \Google\Collection
     {
+        protected $collection_key = 'trials';
+        protected $builtInAlgorithmOutputType = GoogleCloudMlV1BuiltInAlgorithmOutput::class;
+        protected $builtInAlgorithmOutputDataType = '';
+        /**
+         * The number of hyperparameter tuning trials that completed successfully.
+         * Only set for hyperparameter tuning jobs.
+         *
+         * @var string
+         */
+        public $completedTrialCount;
+        /**
+         * The amount of ML units consumed by the job.
+         *
+         * @var 
+         */
+        public $consumedMLUnits;
+        /**
+         * The TensorFlow summary tag name used for optimizing hyperparameter tuning
+         * trials. See [`HyperparameterSpec.hyperparameterMetricTag`](#HyperparameterS
+         * pec.FIELDS.hyperparameter_metric_tag) for more information. Only set for
+         * hyperparameter tuning jobs.
+         *
+         * @var string
+         */
+        public $hyperparameterMetricTag;
+        /**
+         * Whether this job is a built-in Algorithm job.
+         *
+         * @var bool
+         */
+        public $isBuiltInAlgorithmJob;
+        /**
+         * Whether this job is a hyperparameter tuning job.
+         *
+         * @var bool
+         */
+        public $isHyperparameterTuningJob;
+        protected $trialsType = GoogleCloudMlV1HyperparameterOutput::class;
+        protected $trialsDataType = 'array';
+        /**
+         * Output only. URIs for accessing [interactive
+         * shells](https://cloud.google.com/ai-platform/training/docs/monitor-debug-
+         * interactive-shell) (one URI for each training node). Only available if
+         * training_input.enable_web_access is `true`. The keys are names of each node
+         * in the training job; for example, `master-replica-0` for the master node,
+         * `worker-replica-0` for the first worker, and `ps-replica-0` for the first
+         * parameter server. The values are the URIs for each node's interactive
+         * shell.
+         *
+         * @var string[]
+         */
+        public $webAccessUris;
+        /**
+         * Details related to built-in algorithms jobs. Only set for built-in
+         * algorithms jobs.
+         *
+         * @param GoogleCloudMlV1BuiltInAlgorithmOutput $builtInAlgorithmOutput
+         */
+        public function setBuiltInAlgorithmOutput(GoogleCloudMlV1BuiltInAlgorithmOutput $builtInAlgorithmOutput)
+        {
+        }
+        /**
+         * @return GoogleCloudMlV1BuiltInAlgorithmOutput
+         */
+        public function getBuiltInAlgorithmOutput()
+        {
+        }
+        /**
+         * The number of hyperparameter tuning trials that completed successfully.
+         * Only set for hyperparameter tuning jobs.
+         *
+         * @param string $completedTrialCount
+         */
+        public function setCompletedTrialCount($completedTrialCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompletedTrialCount()
+        {
+        }
+        public function setConsumedMLUnits($consumedMLUnits)
+        {
+        }
+        public function getConsumedMLUnits()
+        {
+        }
+        /**
+         * The TensorFlow summary tag name used for optimizing hyperparameter tuning
+         * trials. See [`HyperparameterSpec.hyperparameterMetricTag`](#HyperparameterS
+         * pec.FIELDS.hyperparameter_metric_tag) for more information. Only set for
+         * hyperparameter tuning jobs.
+         *
+         * @param string $hyperparameterMetricTag
+         */
+        public function setHyperparameterMetricTag($hyperparameterMetricTag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHyperparameterMetricTag()
+        {
+        }
+        /**
+         * Whether this job is a built-in Algorithm job.
+         *
+         * @param bool $isBuiltInAlgorithmJob
+         */
+        public function setIsBuiltInAlgorithmJob($isBuiltInAlgorithmJob)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsBuiltInAlgorithmJob()
+        {
+        }
+        /**
+         * Whether this job is a hyperparameter tuning job.
+         *
+         * @param bool $isHyperparameterTuningJob
+         */
+        public function setIsHyperparameterTuningJob($isHyperparameterTuningJob)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsHyperparameterTuningJob()
+        {
+        }
+        /**
+         * Results for individual Hyperparameter trials. Only set for hyperparameter
+         * tuning jobs.
+         *
+         * @param GoogleCloudMlV1HyperparameterOutput[] $trials
+         */
+        public function setTrials($trials)
+        {
+        }
+        /**
+         * @return GoogleCloudMlV1HyperparameterOutput[]
+         */
+        public function getTrials()
+        {
+        }
+        /**
+         * Output only. URIs for accessing [interactive
+         * shells](https://cloud.google.com/ai-platform/training/docs/monitor-debug-
+         * interactive-shell) (one URI for each training node). Only available if
+         * training_input.enable_web_access is `true`. The keys are names of each node
+         * in the training job; for example, `master-replica-0` for the master node,
+         * `worker-replica-0` for the first worker, and `ps-replica-0` for the first
+         * parameter server. The values are the URIs for each node's interactive
+         * shell.
+         *
+         * @param string[] $webAccessUris
+         */
+        public function setWebAccessUris($webAccessUris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getWebAccessUris()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudMlV1BuiltInAlgorithmOutput
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1TrainingOutput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuiltInAlgorithmOutput()
-    {
-    }
-    /**
-     * The number of hyperparameter tuning trials that completed successfully.
-     * Only set for hyperparameter tuning jobs.
-     *
-     * @param string $completedTrialCount
-     */
-    public function setCompletedTrialCount($completedTrialCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCompletedTrialCount()
-    {
-    }
-    public function setConsumedMLUnits($consumedMLUnits)
-    {
-    }
-    public function getConsumedMLUnits()
-    {
-    }
-    /**
-     * The TensorFlow summary tag name used for optimizing hyperparameter tuning
-     * trials. See [`HyperparameterSpec.hyperparameterMetricTag`](#HyperparameterS
-     * pec.FIELDS.hyperparameter_metric_tag) for more information. Only set for
-     * hyperparameter tuning jobs.
-     *
-     * @param string $hyperparameterMetricTag
-     */
-    public function setHyperparameterMetricTag($hyperparameterMetricTag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHyperparameterMetricTag()
-    {
-    }
-    /**
-     * Whether this job is a built-in Algorithm job.
-     *
-     * @param bool $isBuiltInAlgorithmJob
-     */
-    public function setIsBuiltInAlgorithmJob($isBuiltInAlgorithmJob)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsBuiltInAlgorithmJob()
-    {
-    }
-    /**
-     * Whether this job is a hyperparameter tuning job.
-     *
-     * @param bool $isHyperparameterTuningJob
-     */
-    public function setIsHyperparameterTuningJob($isHyperparameterTuningJob)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsHyperparameterTuningJob()
-    {
-    }
-    /**
-     * Results for individual Hyperparameter trials. Only set for hyperparameter
-     * tuning jobs.
-     *
-     * @param GoogleCloudMlV1HyperparameterOutput[] $trials
-     */
-    public function setTrials($trials)
-    {
-    }
-    /**
-     * @return GoogleCloudMlV1HyperparameterOutput[]
-     */
-    public function getTrials()
-    {
-    }
-    /**
-     * Output only. URIs for accessing [interactive
-     * shells](https://cloud.google.com/ai-platform/training/docs/monitor-debug-
-     * interactive-shell) (one URI for each training node). Only available if
-     * training_input.enable_web_access is `true`. The keys are names of each node
-     * in the training job; for example, `master-replica-0` for the master node,
-     * `worker-replica-0` for the first worker, and `ps-replica-0` for the first
-     * parameter server. The values are the URIs for each node's interactive
-     * shell.
-     *
-     * @param string[] $webAccessUris
-     */
-    public function setWebAccessUris($webAccessUris)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getWebAccessUris()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1TrainingOutput extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1TrainingOutput
     {
     }
 }

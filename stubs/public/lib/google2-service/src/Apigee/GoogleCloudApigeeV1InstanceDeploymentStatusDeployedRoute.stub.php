@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1InstanceDeploymentStatusDeployedRoute extends \Google\Model
-{
-    /**
-     * Base path in the routing table.
-     *
-     * @var string
-     */
-    public $basepath;
-    /**
-     * Environment group where this route is installed.
-     *
-     * @var string
-     */
-    public $envgroup;
-    /**
-     * Destination environment. This will be empty if the route is not yet
-     * reported.
-     *
-     * @var string
-     */
-    public $environment;
-    /**
-     * Percentage of ingress replicas reporting this route.
-     *
-     * @var int
-     */
-    public $percentage;
-    /**
-     * Base path in the routing table.
-     *
-     * @param string $basepath
-     */
-    public function setBasepath($basepath)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1InstanceDeploymentStatusDeployedRoute extends \Google\Model
     {
+        /**
+         * Base path in the routing table.
+         *
+         * @var string
+         */
+        public $basepath;
+        /**
+         * Environment group where this route is installed.
+         *
+         * @var string
+         */
+        public $envgroup;
+        /**
+         * Destination environment. This will be empty if the route is not yet
+         * reported.
+         *
+         * @var string
+         */
+        public $environment;
+        /**
+         * Percentage of ingress replicas reporting this route.
+         *
+         * @var int
+         */
+        public $percentage;
+        /**
+         * Base path in the routing table.
+         *
+         * @param string $basepath
+         */
+        public function setBasepath($basepath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBasepath()
+        {
+        }
+        /**
+         * Environment group where this route is installed.
+         *
+         * @param string $envgroup
+         */
+        public function setEnvgroup($envgroup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvgroup()
+        {
+        }
+        /**
+         * Destination environment. This will be empty if the route is not yet
+         * reported.
+         *
+         * @param string $environment
+         */
+        public function setEnvironment($environment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * Percentage of ingress replicas reporting this route.
+         *
+         * @param int $percentage
+         */
+        public function setPercentage($percentage)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPercentage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1InstanceDeploymentStatusDeployedRoute registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBasepath()
-    {
-    }
-    /**
-     * Environment group where this route is installed.
-     *
-     * @param string $envgroup
-     */
-    public function setEnvgroup($envgroup)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnvgroup()
-    {
-    }
-    /**
-     * Destination environment. This will be empty if the route is not yet
-     * reported.
-     *
-     * @param string $environment
-     */
-    public function setEnvironment($environment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * Percentage of ingress replicas reporting this route.
-     *
-     * @param int $percentage
-     */
-    public function setPercentage($percentage)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPercentage()
+    class Google_Service_Apigee_GoogleCloudApigeeV1InstanceDeploymentStatusDeployedRoute extends \Google\Service\Apigee\GoogleCloudApigeeV1InstanceDeploymentStatusDeployedRoute
     {
     }
 }

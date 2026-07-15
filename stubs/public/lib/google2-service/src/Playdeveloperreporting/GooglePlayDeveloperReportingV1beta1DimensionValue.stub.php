@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting;
-
-class GooglePlayDeveloperReportingV1beta1DimensionValue extends \Google\Model
-{
-    /**
-     * Name of the dimension.
-     *
-     * @var string
-     */
-    public $dimension;
-    /**
-     * Actual value, represented as an int64.
-     *
-     * @var string
-     */
-    public $int64Value;
-    /**
-     * Actual value, represented as a string.
-     *
-     * @var string
-     */
-    public $stringValue;
-    /**
-     * Optional. Human-friendly label for the value, always in English. For
-     * example, 'Spain' for the 'ES' country code. Whereas the dimension value is
-     * stable, this value label is subject to change. Do not assume that the
-     * (value, value_label) relationship is stable. For example, the ISO country
-     * code 'MK' changed its name recently to 'North Macedonia'.
-     *
-     * @var string
-     */
-    public $valueLabel;
-    /**
-     * Name of the dimension.
-     *
-     * @param string $dimension
-     */
-    public function setDimension($dimension)
+namespace Google\Service\Playdeveloperreporting {
+    class GooglePlayDeveloperReportingV1beta1DimensionValue extends \Google\Model
     {
+        /**
+         * Name of the dimension.
+         *
+         * @var string
+         */
+        public $dimension;
+        /**
+         * Actual value, represented as an int64.
+         *
+         * @var string
+         */
+        public $int64Value;
+        /**
+         * Actual value, represented as a string.
+         *
+         * @var string
+         */
+        public $stringValue;
+        /**
+         * Optional. Human-friendly label for the value, always in English. For
+         * example, 'Spain' for the 'ES' country code. Whereas the dimension value is
+         * stable, this value label is subject to change. Do not assume that the
+         * (value, value_label) relationship is stable. For example, the ISO country
+         * code 'MK' changed its name recently to 'North Macedonia'.
+         *
+         * @var string
+         */
+        public $valueLabel;
+        /**
+         * Name of the dimension.
+         *
+         * @param string $dimension
+         */
+        public function setDimension($dimension)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDimension()
+        {
+        }
+        /**
+         * Actual value, represented as an int64.
+         *
+         * @param string $int64Value
+         */
+        public function setInt64Value($int64Value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInt64Value()
+        {
+        }
+        /**
+         * Actual value, represented as a string.
+         *
+         * @param string $stringValue
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
+        /**
+         * Optional. Human-friendly label for the value, always in English. For
+         * example, 'Spain' for the 'ES' country code. Whereas the dimension value is
+         * stable, this value label is subject to change. Do not assume that the
+         * (value, value_label) relationship is stable. For example, the ISO country
+         * code 'MK' changed its name recently to 'North Macedonia'.
+         *
+         * @param string $valueLabel
+         */
+        public function setValueLabel($valueLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValueLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1DimensionValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimension()
-    {
-    }
-    /**
-     * Actual value, represented as an int64.
-     *
-     * @param string $int64Value
-     */
-    public function setInt64Value($int64Value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInt64Value()
-    {
-    }
-    /**
-     * Actual value, represented as a string.
-     *
-     * @param string $stringValue
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
-    {
-    }
-    /**
-     * Optional. Human-friendly label for the value, always in English. For
-     * example, 'Spain' for the 'ES' country code. Whereas the dimension value is
-     * stable, this value label is subject to change. Do not assume that the
-     * (value, value_label) relationship is stable. For example, the ISO country
-     * code 'MK' changed its name recently to 'North Macedonia'.
-     *
-     * @param string $valueLabel
-     */
-    public function setValueLabel($valueLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValueLabel()
+    class Google_Service_Playdeveloperreporting_GooglePlayDeveloperReportingV1beta1DimensionValue extends \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1DimensionValue
     {
     }
 }

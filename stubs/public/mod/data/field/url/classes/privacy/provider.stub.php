@@ -29,6 +29,9 @@
  */
 namespace datafield_url\privacy;
 
+use core_privacy\local\request\transform;
+use core_privacy\local\request\writer;
+use mod_data\privacy\datafield_provider;
 /**
  * Privacy Subsystem for datafield_url implementing null_provider.
  *

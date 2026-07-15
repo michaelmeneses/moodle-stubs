@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class GoogleIamV2PolicyOperationMetadata extends \Google\Model
-{
-    /**
-     * Timestamp when the `google.longrunning.Operation` was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Timestamp when the `google.longrunning.Operation` was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Iam {
+    class GoogleIamV2PolicyOperationMetadata extends \Google\Model
     {
+        /**
+         * Timestamp when the `google.longrunning.Operation` was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Timestamp when the `google.longrunning.Operation` was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Iam\GoogleIamV2PolicyOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
+    class Google_Service_Iam_GoogleIamV2PolicyOperationMetadata extends \Google\Service\Iam\GoogleIamV2PolicyOperationMetadata
     {
     }
 }

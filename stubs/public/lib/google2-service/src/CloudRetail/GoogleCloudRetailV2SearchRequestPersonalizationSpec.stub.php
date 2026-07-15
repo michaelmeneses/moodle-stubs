@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2SearchRequestPersonalizationSpec extends \Google\Model
-{
-    /**
-     * Default value. In this case, server behavior defaults to Mode.AUTO.
-     */
-    public const MODE_MODE_UNSPECIFIED = 'MODE_UNSPECIFIED';
-    /**
-     * Let CRS decide whether to use personalization based on quality of user
-     * event data.
-     */
-    public const MODE_AUTO = 'AUTO';
-    /**
-     * Disable personalization.
-     */
-    public const MODE_DISABLED = 'DISABLED';
-    /**
-     * Defaults to Mode.AUTO.
-     *
-     * @var string
-     */
-    public $mode;
-    /**
-     * Defaults to Mode.AUTO.
-     *
-     * Accepted values: MODE_UNSPECIFIED, AUTO, DISABLED
-     *
-     * @param self::MODE_* $mode
-     */
-    public function setMode($mode)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2SearchRequestPersonalizationSpec extends \Google\Model
     {
+        /**
+         * Default value. In this case, server behavior defaults to Mode.AUTO.
+         */
+        public const MODE_MODE_UNSPECIFIED = 'MODE_UNSPECIFIED';
+        /**
+         * Let CRS decide whether to use personalization based on quality of user
+         * event data.
+         */
+        public const MODE_AUTO = 'AUTO';
+        /**
+         * Disable personalization.
+         */
+        public const MODE_DISABLED = 'DISABLED';
+        /**
+         * Defaults to Mode.AUTO.
+         *
+         * @var string
+         */
+        public $mode;
+        /**
+         * Defaults to Mode.AUTO.
+         *
+         * Accepted values: MODE_UNSPECIFIED, AUTO, DISABLED
+         *
+         * @param self::MODE_* $mode
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return self::MODE_*
+         */
+        public function getMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MODE_*
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2SearchRequestPersonalizationSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMode()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2SearchRequestPersonalizationSpec extends \Google\Service\CloudRetail\GoogleCloudRetailV2SearchRequestPersonalizationSpec
     {
     }
 }

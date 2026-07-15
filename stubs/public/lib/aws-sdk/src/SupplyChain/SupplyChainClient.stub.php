@@ -8,6 +8,7 @@
  */
 namespace Aws\SupplyChain;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Supply Chain** service.
  * @method \Aws\Result createBillOfMaterialsImportJob(array $args = [])

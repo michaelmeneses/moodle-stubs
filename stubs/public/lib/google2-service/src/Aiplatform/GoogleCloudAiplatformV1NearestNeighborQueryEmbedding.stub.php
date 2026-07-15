@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1NearestNeighborQueryEmbedding extends \Google\Collection
-{
-    protected $collection_key = 'value';
-    /**
-     * Optional. Individual value in the embedding.
-     *
-     * @var float[]
-     */
-    public $value;
-    /**
-     * Optional. Individual value in the embedding.
-     *
-     * @param float[] $value
-     */
-    public function setValue($value)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1NearestNeighborQueryEmbedding extends \Google\Collection
     {
+        protected $collection_key = 'value';
+        /**
+         * Optional. Individual value in the embedding.
+         *
+         * @var float[]
+         */
+        public $value;
+        /**
+         * Optional. Individual value in the embedding.
+         *
+         * @param float[] $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return float[]
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1NearestNeighborQueryEmbedding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValue()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1NearestNeighborQueryEmbedding extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1NearestNeighborQueryEmbedding
     {
     }
 }

@@ -21,49 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter\Resource;
-
-/**
- * The "v1beta1" collection of methods.
- * Typical usage is:
- *  <code>
- *   $alertcenterService = new Google\Service\AlertCenter(...);
- *   $v1beta1 = $alertcenterService->v1beta1;
- *  </code>
- */
-class V1beta1 extends \Google\Service\Resource
-{
+namespace Google\Service\AlertCenter\Resource {
+    use Google\Service\AlertCenter\Settings;
     /**
-     * Returns customer-level settings. (v1beta1.getSettings)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string customerId Optional. The unique identifier of the Google
-     * Workspace account of the customer the alert settings are associated with. The
-     * `customer_id` must/ have the initial "C" stripped (for example, `046psxkn`).
-     * Inferred from the caller identity if not provided. [Find your customer
-     * ID](https://support.google.com/cloudidentity/answer/10070793).
-     * @return Settings
-     * @throws \Google\Service\Exception
+     * The "v1beta1" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $alertcenterService = new Google\Service\AlertCenter(...);
+     *   $v1beta1 = $alertcenterService->v1beta1;
+     *  </code>
      */
-    public function getSettings($optParams = [])
+    class V1beta1 extends \Google\Service\Resource
     {
+        /**
+         * Returns customer-level settings. (v1beta1.getSettings)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string customerId Optional. The unique identifier of the Google
+         * Workspace account of the customer the alert settings are associated with. The
+         * `customer_id` must/ have the initial "C" stripped (for example, `046psxkn`).
+         * Inferred from the caller identity if not provided. [Find your customer
+         * ID](https://support.google.com/cloudidentity/answer/10070793).
+         * @return Settings
+         * @throws \Google\Service\Exception
+         */
+        public function getSettings($optParams = [])
+        {
+        }
+        /**
+         * Updates the customer-level settings. (v1beta1.updateSettings)
+         *
+         * @param Settings $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string customerId Optional. The unique identifier of the Google
+         * Workspace account of the customer the alert settings are associated with. The
+         * `customer_id` must have the initial "C" stripped (for example, `046psxkn`).
+         * Inferred from the caller identity if not provided. [Find your customer
+         * ID](https://support.google.com/cloudidentity/answer/10070793).
+         * @return Settings
+         * @throws \Google\Service\Exception
+         */
+        public function updateSettings(Settings $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Updates the customer-level settings. (v1beta1.updateSettings)
-     *
-     * @param Settings $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string customerId Optional. The unique identifier of the Google
-     * Workspace account of the customer the alert settings are associated with. The
-     * `customer_id` must have the initial "C" stripped (for example, `046psxkn`).
-     * Inferred from the caller identity if not provided. [Find your customer
-     * ID](https://support.google.com/cloudidentity/answer/10070793).
-     * @return Settings
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AlertCenter\Resource\V1beta1 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function updateSettings(Settings $postBody, $optParams = [])
+    class Google_Service_AlertCenter_Resource_V1beta1 extends \Google\Service\AlertCenter\Resource\V1beta1
     {
     }
 }

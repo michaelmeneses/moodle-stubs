@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class VideoTrainability extends \Google\Collection
-{
-    protected $collection_key = 'permitted';
-    /**
-     * Etag of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#videoTrainability".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Specifies who is allowed to train on the video. Valid values are: - a
-     * single string "all" - a single string "none" - a list of allowed parties
-     *
-     * @var string[]
-     */
-    public $permitted;
-    /**
-     * The ID of the video.
-     *
-     * @var string
-     */
-    public $videoId;
-    /**
-     * Etag of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\YouTube {
+    class VideoTrainability extends \Google\Collection
     {
+        protected $collection_key = 'permitted';
+        /**
+         * Etag of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#videoTrainability".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Specifies who is allowed to train on the video. Valid values are: - a
+         * single string "all" - a single string "none" - a list of allowed parties
+         *
+         * @var string[]
+         */
+        public $permitted;
+        /**
+         * The ID of the video.
+         *
+         * @var string
+         */
+        public $videoId;
+        /**
+         * Etag of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#videoTrainability".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Specifies who is allowed to train on the video. Valid values are: - a
+         * single string "all" - a single string "none" - a list of allowed parties
+         *
+         * @param string[] $permitted
+         */
+        public function setPermitted($permitted)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPermitted()
+        {
+        }
+        /**
+         * The ID of the video.
+         *
+         * @param string $videoId
+         */
+        public function setVideoId($videoId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVideoId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\VideoTrainability registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#videoTrainability".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Specifies who is allowed to train on the video. Valid values are: - a
-     * single string "all" - a single string "none" - a list of allowed parties
-     *
-     * @param string[] $permitted
-     */
-    public function setPermitted($permitted)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPermitted()
-    {
-    }
-    /**
-     * The ID of the video.
-     *
-     * @param string $videoId
-     */
-    public function setVideoId($videoId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVideoId()
+    class Google_Service_YouTube_VideoTrainability extends \Google\Service\YouTube\VideoTrainability
     {
     }
 }

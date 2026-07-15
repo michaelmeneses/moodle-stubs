@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryConnectionService;
-
-class ConnectorConfigurationAsset extends \Google\Model
-{
-    /**
-     * Name of the database.
-     *
-     * @var string
-     */
-    public $database;
-    /**
-     * Full Google Cloud resource name -
-     * https://cloud.google.com/apis/design/resource_names#full_resource_name.
-     * Example: `//library.googleapis.com/shelves/shelf1/books/book2`
-     *
-     * @var string
-     */
-    public $googleCloudResource;
-    /**
-     * Name of the database.
-     *
-     * @param string $database
-     */
-    public function setDatabase($database)
+namespace Google\Service\BigQueryConnectionService {
+    class ConnectorConfigurationAsset extends \Google\Model
     {
+        /**
+         * Name of the database.
+         *
+         * @var string
+         */
+        public $database;
+        /**
+         * Full Google Cloud resource name -
+         * https://cloud.google.com/apis/design/resource_names#full_resource_name.
+         * Example: `//library.googleapis.com/shelves/shelf1/books/book2`
+         *
+         * @var string
+         */
+        public $googleCloudResource;
+        /**
+         * Name of the database.
+         *
+         * @param string $database
+         */
+        public function setDatabase($database)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabase()
+        {
+        }
+        /**
+         * Full Google Cloud resource name -
+         * https://cloud.google.com/apis/design/resource_names#full_resource_name.
+         * Example: `//library.googleapis.com/shelves/shelf1/books/book2`
+         *
+         * @param string $googleCloudResource
+         */
+        public function setGoogleCloudResource($googleCloudResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGoogleCloudResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigQueryConnectionService\ConnectorConfigurationAsset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabase()
-    {
-    }
-    /**
-     * Full Google Cloud resource name -
-     * https://cloud.google.com/apis/design/resource_names#full_resource_name.
-     * Example: `//library.googleapis.com/shelves/shelf1/books/book2`
-     *
-     * @param string $googleCloudResource
-     */
-    public function setGoogleCloudResource($googleCloudResource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGoogleCloudResource()
+    class Google_Service_BigQueryConnectionService_ConnectorConfigurationAsset extends \Google\Service\BigQueryConnectionService\ConnectorConfigurationAsset
     {
     }
 }

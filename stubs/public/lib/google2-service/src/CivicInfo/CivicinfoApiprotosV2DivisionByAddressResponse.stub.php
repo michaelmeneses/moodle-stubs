@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class CivicinfoApiprotosV2DivisionByAddressResponse extends \Google\Model
-{
-    protected $divisionsType = CivicinfoSchemaV2GeographicDivision::class;
-    protected $divisionsDataType = 'map';
-    protected $normalizedInputType = CivicinfoSchemaV2SimpleAddressType::class;
-    protected $normalizedInputDataType = '';
-    /**
-     * @param CivicinfoSchemaV2GeographicDivision[] $divisions
-     */
-    public function setDivisions($divisions)
+namespace Google\Service\CivicInfo {
+    class CivicinfoApiprotosV2DivisionByAddressResponse extends \Google\Model
     {
+        protected $divisionsType = CivicinfoSchemaV2GeographicDivision::class;
+        protected $divisionsDataType = 'map';
+        protected $normalizedInputType = CivicinfoSchemaV2SimpleAddressType::class;
+        protected $normalizedInputDataType = '';
+        /**
+         * @param CivicinfoSchemaV2GeographicDivision[] $divisions
+         */
+        public function setDivisions($divisions)
+        {
+        }
+        /**
+         * @return CivicinfoSchemaV2GeographicDivision[]
+         */
+        public function getDivisions()
+        {
+        }
+        /**
+         * The normalized version of the requested address.
+         *
+         * @param CivicinfoSchemaV2SimpleAddressType $normalizedInput
+         */
+        public function setNormalizedInput(CivicinfoSchemaV2SimpleAddressType $normalizedInput)
+        {
+        }
+        /**
+         * @return CivicinfoSchemaV2SimpleAddressType
+         */
+        public function getNormalizedInput()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CivicinfoSchemaV2GeographicDivision[]
+     * Runtime class alias of \Google\Service\CivicInfo\CivicinfoApiprotosV2DivisionByAddressResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDivisions()
-    {
-    }
-    /**
-     * The normalized version of the requested address.
-     *
-     * @param CivicinfoSchemaV2SimpleAddressType $normalizedInput
-     */
-    public function setNormalizedInput(CivicinfoSchemaV2SimpleAddressType $normalizedInput)
-    {
-    }
-    /**
-     * @return CivicinfoSchemaV2SimpleAddressType
-     */
-    public function getNormalizedInput()
+    class Google_Service_CivicInfo_CivicinfoApiprotosV2DivisionByAddressResponse extends \Google\Service\CivicInfo\CivicinfoApiprotosV2DivisionByAddressResponse
     {
     }
 }

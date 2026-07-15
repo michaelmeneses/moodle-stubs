@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppDistribution;
-
-class GoogleFirebaseAppdistroV1BatchJoinGroupRequest extends \Google\Collection
-{
-    protected $collection_key = 'emails';
-    /**
-     * Indicates whether to create tester resources based on `emails` if they
-     * don't exist yet.
-     *
-     * @var bool
-     */
-    public $createMissingTesters;
-    /**
-     * Required. The emails of the testers to be added to the group. A maximum of
-     * 999 and a minimum of 1 tester can be created in a batch.
-     *
-     * @var string[]
-     */
-    public $emails;
-    /**
-     * Indicates whether to create tester resources based on `emails` if they
-     * don't exist yet.
-     *
-     * @param bool $createMissingTesters
-     */
-    public function setCreateMissingTesters($createMissingTesters)
+namespace Google\Service\FirebaseAppDistribution {
+    class GoogleFirebaseAppdistroV1BatchJoinGroupRequest extends \Google\Collection
     {
+        protected $collection_key = 'emails';
+        /**
+         * Indicates whether to create tester resources based on `emails` if they
+         * don't exist yet.
+         *
+         * @var bool
+         */
+        public $createMissingTesters;
+        /**
+         * Required. The emails of the testers to be added to the group. A maximum of
+         * 999 and a minimum of 1 tester can be created in a batch.
+         *
+         * @var string[]
+         */
+        public $emails;
+        /**
+         * Indicates whether to create tester resources based on `emails` if they
+         * don't exist yet.
+         *
+         * @param bool $createMissingTesters
+         */
+        public function setCreateMissingTesters($createMissingTesters)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCreateMissingTesters()
+        {
+        }
+        /**
+         * Required. The emails of the testers to be added to the group. A maximum of
+         * 999 and a minimum of 1 tester can be created in a batch.
+         *
+         * @param string[] $emails
+         */
+        public function setEmails($emails)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEmails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1BatchJoinGroupRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateMissingTesters()
-    {
-    }
-    /**
-     * Required. The emails of the testers to be added to the group. A maximum of
-     * 999 and a minimum of 1 tester can be created in a batch.
-     *
-     * @param string[] $emails
-     */
-    public function setEmails($emails)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEmails()
+    class Google_Service_FirebaseAppDistribution_GoogleFirebaseAppdistroV1BatchJoinGroupRequest extends \Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1BatchJoinGroupRequest
     {
     }
 }

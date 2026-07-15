@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManufacturerCenter;
-
-class Count extends \Google\Model
-{
-    /**
-     * The unit in which these products are counted.
-     *
-     * @var string
-     */
-    public $unit;
-    /**
-     * The numeric value of the number of products in a package.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The unit in which these products are counted.
-     *
-     * @param string $unit
-     */
-    public function setUnit($unit)
+namespace Google\Service\ManufacturerCenter {
+    class Count extends \Google\Model
     {
+        /**
+         * The unit in which these products are counted.
+         *
+         * @var string
+         */
+        public $unit;
+        /**
+         * The numeric value of the number of products in a package.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The unit in which these products are counted.
+         *
+         * @param string $unit
+         */
+        public function setUnit($unit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnit()
+        {
+        }
+        /**
+         * The numeric value of the number of products in a package.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ManufacturerCenter\Count registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUnit()
-    {
-    }
-    /**
-     * The numeric value of the number of products in a package.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_ManufacturerCenter_Count extends \Google\Service\ManufacturerCenter\Count
     {
     }
 }

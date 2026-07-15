@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization;
-
-class CheckResults extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    protected $resultsType = CheckResult::class;
-    protected $resultsDataType = 'array';
-    /**
-     * Per-check details.
-     *
-     * @param CheckResult[] $results
-     */
-    public function setResults($results)
+namespace Google\Service\BinaryAuthorization {
+    class CheckResults extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        protected $resultsType = CheckResult::class;
+        protected $resultsDataType = 'array';
+        /**
+         * Per-check details.
+         *
+         * @param CheckResult[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return CheckResult[]
+         */
+        public function getResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CheckResult[]
+     * Runtime class alias of \Google\Service\BinaryAuthorization\CheckResults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResults()
+    class Google_Service_BinaryAuthorization_CheckResults extends \Google\Service\BinaryAuthorization\CheckResults
     {
     }
 }

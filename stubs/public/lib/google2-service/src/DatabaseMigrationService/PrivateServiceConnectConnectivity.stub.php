@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class PrivateServiceConnectConnectivity extends \Google\Model
-{
-    /**
-     * Required. A service attachment that exposes a database, and has the
-     * following format: projects/{project}/regions/{region}/serviceAttachments/{s
-     * ervice_attachment_name}
-     *
-     * @var string
-     */
-    public $serviceAttachment;
-    /**
-     * Required. A service attachment that exposes a database, and has the
-     * following format: projects/{project}/regions/{region}/serviceAttachments/{s
-     * ervice_attachment_name}
-     *
-     * @param string $serviceAttachment
-     */
-    public function setServiceAttachment($serviceAttachment)
+namespace Google\Service\DatabaseMigrationService {
+    class PrivateServiceConnectConnectivity extends \Google\Model
     {
+        /**
+         * Required. A service attachment that exposes a database, and has the
+         * following format: projects/{project}/regions/{region}/serviceAttachments/{s
+         * ervice_attachment_name}
+         *
+         * @var string
+         */
+        public $serviceAttachment;
+        /**
+         * Required. A service attachment that exposes a database, and has the
+         * following format: projects/{project}/regions/{region}/serviceAttachments/{s
+         * ervice_attachment_name}
+         *
+         * @param string $serviceAttachment
+         */
+        public function setServiceAttachment($serviceAttachment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAttachment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\PrivateServiceConnectConnectivity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServiceAttachment()
+    class Google_Service_DatabaseMigrationService_PrivateServiceConnectConnectivity extends \Google\Service\DatabaseMigrationService\PrivateServiceConnectConnectivity
     {
     }
 }

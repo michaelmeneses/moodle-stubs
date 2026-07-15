@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1DistillationDataStats extends \Google\Model
-{
-    protected $trainingDatasetStatsType = GoogleCloudAiplatformV1DatasetStats::class;
-    protected $trainingDatasetStatsDataType = '';
-    /**
-     * @param GoogleCloudAiplatformV1DatasetStats
-     */
-    public function setTrainingDatasetStats(GoogleCloudAiplatformV1DatasetStats $trainingDatasetStats)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1DistillationDataStats extends \Google\Model
     {
+        protected $trainingDatasetStatsType = GoogleCloudAiplatformV1DatasetStats::class;
+        protected $trainingDatasetStatsDataType = '';
+        /**
+         * @param GoogleCloudAiplatformV1DatasetStats
+         */
+        public function setTrainingDatasetStats(GoogleCloudAiplatformV1DatasetStats $trainingDatasetStats)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DatasetStats
+         */
+        public function getTrainingDatasetStats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1DatasetStats
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1DistillationDataStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTrainingDatasetStats()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1DistillationDataStats extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1DistillationDataStats
     {
     }
 }

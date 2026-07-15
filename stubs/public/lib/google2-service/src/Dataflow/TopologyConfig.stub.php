@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class TopologyConfig extends \Google\Collection
-{
-    protected $collection_key = 'dataDiskAssignments';
-    protected $computationsType = ComputationTopology::class;
-    protected $computationsDataType = 'array';
-    protected $dataDiskAssignmentsType = DataDiskAssignment::class;
-    protected $dataDiskAssignmentsDataType = 'array';
-    /**
-     * The size (in bits) of keys that will be assigned to source messages.
-     *
-     * @var int
-     */
-    public $forwardingKeyBits;
-    /**
-     * Version number for persistent state.
-     *
-     * @var int
-     */
-    public $persistentStateVersion;
-    /**
-     * Maps user stage names to stable computation names.
-     *
-     * @var string[]
-     */
-    public $userStageToComputationNameMap;
-    /**
-     * The computations associated with a streaming Dataflow job.
-     *
-     * @param ComputationTopology[] $computations
-     */
-    public function setComputations($computations)
+namespace Google\Service\Dataflow {
+    class TopologyConfig extends \Google\Collection
     {
+        protected $collection_key = 'dataDiskAssignments';
+        protected $computationsType = ComputationTopology::class;
+        protected $computationsDataType = 'array';
+        protected $dataDiskAssignmentsType = DataDiskAssignment::class;
+        protected $dataDiskAssignmentsDataType = 'array';
+        /**
+         * The size (in bits) of keys that will be assigned to source messages.
+         *
+         * @var int
+         */
+        public $forwardingKeyBits;
+        /**
+         * Version number for persistent state.
+         *
+         * @var int
+         */
+        public $persistentStateVersion;
+        /**
+         * Maps user stage names to stable computation names.
+         *
+         * @var string[]
+         */
+        public $userStageToComputationNameMap;
+        /**
+         * The computations associated with a streaming Dataflow job.
+         *
+         * @param ComputationTopology[] $computations
+         */
+        public function setComputations($computations)
+        {
+        }
+        /**
+         * @return ComputationTopology[]
+         */
+        public function getComputations()
+        {
+        }
+        /**
+         * The disks assigned to a streaming Dataflow job.
+         *
+         * @param DataDiskAssignment[] $dataDiskAssignments
+         */
+        public function setDataDiskAssignments($dataDiskAssignments)
+        {
+        }
+        /**
+         * @return DataDiskAssignment[]
+         */
+        public function getDataDiskAssignments()
+        {
+        }
+        /**
+         * The size (in bits) of keys that will be assigned to source messages.
+         *
+         * @param int $forwardingKeyBits
+         */
+        public function setForwardingKeyBits($forwardingKeyBits)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getForwardingKeyBits()
+        {
+        }
+        /**
+         * Version number for persistent state.
+         *
+         * @param int $persistentStateVersion
+         */
+        public function setPersistentStateVersion($persistentStateVersion)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPersistentStateVersion()
+        {
+        }
+        /**
+         * Maps user stage names to stable computation names.
+         *
+         * @param string[] $userStageToComputationNameMap
+         */
+        public function setUserStageToComputationNameMap($userStageToComputationNameMap)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUserStageToComputationNameMap()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ComputationTopology[]
+     * Runtime class alias of \Google\Service\Dataflow\TopologyConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComputations()
-    {
-    }
-    /**
-     * The disks assigned to a streaming Dataflow job.
-     *
-     * @param DataDiskAssignment[] $dataDiskAssignments
-     */
-    public function setDataDiskAssignments($dataDiskAssignments)
-    {
-    }
-    /**
-     * @return DataDiskAssignment[]
-     */
-    public function getDataDiskAssignments()
-    {
-    }
-    /**
-     * The size (in bits) of keys that will be assigned to source messages.
-     *
-     * @param int $forwardingKeyBits
-     */
-    public function setForwardingKeyBits($forwardingKeyBits)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getForwardingKeyBits()
-    {
-    }
-    /**
-     * Version number for persistent state.
-     *
-     * @param int $persistentStateVersion
-     */
-    public function setPersistentStateVersion($persistentStateVersion)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPersistentStateVersion()
-    {
-    }
-    /**
-     * Maps user stage names to stable computation names.
-     *
-     * @param string[] $userStageToComputationNameMap
-     */
-    public function setUserStageToComputationNameMap($userStageToComputationNameMap)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUserStageToComputationNameMap()
+    class Google_Service_Dataflow_TopologyConfig extends \Google\Service\Dataflow\TopologyConfig
     {
     }
 }

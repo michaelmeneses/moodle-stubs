@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSResponseExplanationMetadataInputMetadata extends \Google\Model
-{
-    public const MODALITY_MODALITY_UNSPECIFIED = 'MODALITY_UNSPECIFIED';
-    public const MODALITY_NUMERIC = 'NUMERIC';
-    public const MODALITY_IMAGE = 'IMAGE';
-    public const MODALITY_CATEGORICAL = 'CATEGORICAL';
-    /**
-     * Name of the input tensor for this model. Only needed in train response.
-     *
-     * @var string
-     */
-    public $inputTensorName;
-    /**
-     * Modality of the feature. Valid values are: numeric, image. Defaults to
-     * numeric.
-     *
-     * @var string
-     */
-    public $modality;
-    protected $visualizationConfigType = XPSVisualization::class;
-    protected $visualizationConfigDataType = '';
-    /**
-     * Name of the input tensor for this model. Only needed in train response.
-     *
-     * @param string $inputTensorName
-     */
-    public function setInputTensorName($inputTensorName)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSResponseExplanationMetadataInputMetadata extends \Google\Model
     {
+        public const MODALITY_MODALITY_UNSPECIFIED = 'MODALITY_UNSPECIFIED';
+        public const MODALITY_NUMERIC = 'NUMERIC';
+        public const MODALITY_IMAGE = 'IMAGE';
+        public const MODALITY_CATEGORICAL = 'CATEGORICAL';
+        /**
+         * Name of the input tensor for this model. Only needed in train response.
+         *
+         * @var string
+         */
+        public $inputTensorName;
+        /**
+         * Modality of the feature. Valid values are: numeric, image. Defaults to
+         * numeric.
+         *
+         * @var string
+         */
+        public $modality;
+        protected $visualizationConfigType = XPSVisualization::class;
+        protected $visualizationConfigDataType = '';
+        /**
+         * Name of the input tensor for this model. Only needed in train response.
+         *
+         * @param string $inputTensorName
+         */
+        public function setInputTensorName($inputTensorName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInputTensorName()
+        {
+        }
+        /**
+         * Modality of the feature. Valid values are: numeric, image. Defaults to
+         * numeric.
+         *
+         * Accepted values: MODALITY_UNSPECIFIED, NUMERIC, IMAGE, CATEGORICAL
+         *
+         * @param self::MODALITY_* $modality
+         */
+        public function setModality($modality)
+        {
+        }
+        /**
+         * @return self::MODALITY_*
+         */
+        public function getModality()
+        {
+        }
+        /**
+         * Visualization configurations for image explanation.
+         *
+         * @param XPSVisualization $visualizationConfig
+         */
+        public function setVisualizationConfig(XPSVisualization $visualizationConfig)
+        {
+        }
+        /**
+         * @return XPSVisualization
+         */
+        public function getVisualizationConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSResponseExplanationMetadataInputMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputTensorName()
-    {
-    }
-    /**
-     * Modality of the feature. Valid values are: numeric, image. Defaults to
-     * numeric.
-     *
-     * Accepted values: MODALITY_UNSPECIFIED, NUMERIC, IMAGE, CATEGORICAL
-     *
-     * @param self::MODALITY_* $modality
-     */
-    public function setModality($modality)
-    {
-    }
-    /**
-     * @return self::MODALITY_*
-     */
-    public function getModality()
-    {
-    }
-    /**
-     * Visualization configurations for image explanation.
-     *
-     * @param XPSVisualization $visualizationConfig
-     */
-    public function setVisualizationConfig(XPSVisualization $visualizationConfig)
-    {
-    }
-    /**
-     * @return XPSVisualization
-     */
-    public function getVisualizationConfig()
+    class Google_Service_CloudNaturalLanguage_XPSResponseExplanationMetadataInputMetadata extends \Google\Service\CloudNaturalLanguage\XPSResponseExplanationMetadataInputMetadata
     {
     }
 }

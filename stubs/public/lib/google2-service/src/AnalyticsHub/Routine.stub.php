@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class Routine extends \Google\Model
-{
-    /**
-     * Default value.
-     */
-    public const ROUTINE_TYPE_ROUTINE_TYPE_UNSPECIFIED = 'ROUTINE_TYPE_UNSPECIFIED';
-    /**
-     * Non-built-in persistent TVF.
-     */
-    public const ROUTINE_TYPE_TABLE_VALUED_FUNCTION = 'TABLE_VALUED_FUNCTION';
-    /**
-     * Optional. The definition body of the routine.
-     *
-     * @var string
-     */
-    public $definitionBody;
-    /**
-     * Required. The type of routine.
-     *
-     * @var string
-     */
-    public $routineType;
-    /**
-     * Optional. The definition body of the routine.
-     *
-     * @param string $definitionBody
-     */
-    public function setDefinitionBody($definitionBody)
+namespace Google\Service\AnalyticsHub {
+    class Routine extends \Google\Model
     {
+        /**
+         * Default value.
+         */
+        public const ROUTINE_TYPE_ROUTINE_TYPE_UNSPECIFIED = 'ROUTINE_TYPE_UNSPECIFIED';
+        /**
+         * Non-built-in persistent TVF.
+         */
+        public const ROUTINE_TYPE_TABLE_VALUED_FUNCTION = 'TABLE_VALUED_FUNCTION';
+        /**
+         * Optional. The definition body of the routine.
+         *
+         * @var string
+         */
+        public $definitionBody;
+        /**
+         * Required. The type of routine.
+         *
+         * @var string
+         */
+        public $routineType;
+        /**
+         * Optional. The definition body of the routine.
+         *
+         * @param string $definitionBody
+         */
+        public function setDefinitionBody($definitionBody)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefinitionBody()
+        {
+        }
+        /**
+         * Required. The type of routine.
+         *
+         * Accepted values: ROUTINE_TYPE_UNSPECIFIED, TABLE_VALUED_FUNCTION
+         *
+         * @param self::ROUTINE_TYPE_* $routineType
+         */
+        public function setRoutineType($routineType)
+        {
+        }
+        /**
+         * @return self::ROUTINE_TYPE_*
+         */
+        public function getRoutineType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsHub\Routine registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefinitionBody()
-    {
-    }
-    /**
-     * Required. The type of routine.
-     *
-     * Accepted values: ROUTINE_TYPE_UNSPECIFIED, TABLE_VALUED_FUNCTION
-     *
-     * @param self::ROUTINE_TYPE_* $routineType
-     */
-    public function setRoutineType($routineType)
-    {
-    }
-    /**
-     * @return self::ROUTINE_TYPE_*
-     */
-    public function getRoutineType()
+    class Google_Service_AnalyticsHub_Routine extends \Google\Service\AnalyticsHub\Routine
     {
     }
 }

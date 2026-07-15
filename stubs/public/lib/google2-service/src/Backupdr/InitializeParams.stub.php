@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class InitializeParams extends \Google\Collection
-{
-    protected $collection_key = 'replicaZones';
-    /**
-     * Optional. Specifies the disk name. If not specified, the default is to use
-     * the name of the instance.
-     *
-     * @var string
-     */
-    public $diskName;
-    /**
-     * Optional. URL of the zone where the disk should be created. Required for
-     * each regional disk associated with the instance.
-     *
-     * @var string[]
-     */
-    public $replicaZones;
-    /**
-     * Optional. Specifies the disk name. If not specified, the default is to use
-     * the name of the instance.
-     *
-     * @param string $diskName
-     */
-    public function setDiskName($diskName)
+namespace Google\Service\Backupdr {
+    class InitializeParams extends \Google\Collection
     {
+        protected $collection_key = 'replicaZones';
+        /**
+         * Optional. Specifies the disk name. If not specified, the default is to use
+         * the name of the instance.
+         *
+         * @var string
+         */
+        public $diskName;
+        /**
+         * Optional. URL of the zone where the disk should be created. Required for
+         * each regional disk associated with the instance.
+         *
+         * @var string[]
+         */
+        public $replicaZones;
+        /**
+         * Optional. Specifies the disk name. If not specified, the default is to use
+         * the name of the instance.
+         *
+         * @param string $diskName
+         */
+        public function setDiskName($diskName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskName()
+        {
+        }
+        /**
+         * Optional. URL of the zone where the disk should be created. Required for
+         * each regional disk associated with the instance.
+         *
+         * @param string[] $replicaZones
+         */
+        public function setReplicaZones($replicaZones)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getReplicaZones()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\InitializeParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiskName()
-    {
-    }
-    /**
-     * Optional. URL of the zone where the disk should be created. Required for
-     * each regional disk associated with the instance.
-     *
-     * @param string[] $replicaZones
-     */
-    public function setReplicaZones($replicaZones)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getReplicaZones()
+    class Google_Service_Backupdr_InitializeParams extends \Google\Service\Backupdr\InitializeParams
     {
     }
 }

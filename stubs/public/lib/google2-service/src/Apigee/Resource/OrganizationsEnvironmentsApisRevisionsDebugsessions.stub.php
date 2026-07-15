@@ -21,99 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "debugsessions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $debugsessions = $apigeeService->organizations_environments_apis_revisions_debugsessions;
- *  </code>
- */
-class OrganizationsEnvironmentsApisRevisionsDebugsessions extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1DebugSession;
+    use Google\Service\Apigee\GoogleCloudApigeeV1ListDebugSessionsResponse;
+    use Google\Service\Apigee\GoogleProtobufEmpty;
     /**
-     * Creates a debug session for a deployed API Proxy revision.
-     * (debugsessions.create)
-     *
-     * @param string $parent Required. The resource name of the API Proxy revision
-     * deployment for which to create the DebugSession. Must be of the form `organiz
-     * ations/{organization}/environments/{environment}/apis/{api}/revisions/{revisi
-     * on}`. If the API proxy resource has the `space` attribute set, IAM
-     * permissions are checked differently . To learn more, read the [Apigee Spaces
-     * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
-     * administration/spaces/apigee-spaces-overview).
-     * @param GoogleCloudApigeeV1DebugSession $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string timeout Optional. The time in seconds after which this
-     * DebugSession should end. A timeout specified in DebugSession will overwrite
-     * this value.
-     * @return GoogleCloudApigeeV1DebugSession
-     * @throws \Google\Service\Exception
+     * The "debugsessions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $debugsessions = $apigeeService->organizations_environments_apis_revisions_debugsessions;
+     *  </code>
      */
-    public function create($parent, GoogleCloudApigeeV1DebugSession $postBody, $optParams = [])
+    class OrganizationsEnvironmentsApisRevisionsDebugsessions extends \Google\Service\Resource
     {
+        /**
+         * Creates a debug session for a deployed API Proxy revision.
+         * (debugsessions.create)
+         *
+         * @param string $parent Required. The resource name of the API Proxy revision
+         * deployment for which to create the DebugSession. Must be of the form `organiz
+         * ations/{organization}/environments/{environment}/apis/{api}/revisions/{revisi
+         * on}`. If the API proxy resource has the `space` attribute set, IAM
+         * permissions are checked differently . To learn more, read the [Apigee Spaces
+         * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
+         * administration/spaces/apigee-spaces-overview).
+         * @param GoogleCloudApigeeV1DebugSession $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string timeout Optional. The time in seconds after which this
+         * DebugSession should end. A timeout specified in DebugSession will overwrite
+         * this value.
+         * @return GoogleCloudApigeeV1DebugSession
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudApigeeV1DebugSession $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes the data from a debug session. This does not cancel the debug session
+         * or prevent further data from being collected if the session is still active
+         * in runtime pods. (debugsessions.deleteData)
+         *
+         * @param string $name Required. The name of the debug session to delete. Must
+         * be of the form: `organizations/{organization}/environments/{environment}/apis
+         * /{api}/revisions/{revision}/debugsessions/{debugsession}`. If the API proxy
+         * resource has the `space` attribute set, IAM permissions are checked
+         * differently . To learn more, read the [Apigee Spaces
+         * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
+         * administration/spaces/apigee-spaces-overview).
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function deleteData($name, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a debug session. (debugsessions.get)
+         *
+         * @param string $name Required. The name of the debug session to retrieve. Must
+         * be of the form: `organizations/{organization}/environments/{environment}/apis
+         * /{api}/revisions/{revision}/debugsessions/{debug_session}`. If the API proxy
+         * resource has the `space` attribute set, IAM permissions are checked
+         * differently . To learn more, read the [Apigee Spaces
+         * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
+         * administration/spaces/apigee-spaces-overview).
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1DebugSession
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists debug sessions that are currently active in the given API Proxy
+         * revision.
+         * (debugsessions.listOrganizationsEnvironmentsApisRevisionsDebugsessions)
+         *
+         * @param string $parent Required. The name of the API Proxy revision deployment
+         * for which to list debug sessions. Must be of the form: `organizations/{organi
+         * zation}/environments/{environment}/apis/{api}/revisions/{revision}`. If the
+         * API proxy resource has the `space` attribute set, IAM permissions are checked
+         * differently . To learn more, read the [Apigee Spaces
+         * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
+         * administration/spaces/apigee-spaces-overview).
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. Maximum number of debug sessions to return.
+         * The page size defaults to 25.
+         * @opt_param string pageToken Optional. Page token, returned from a previous
+         * ListDebugSessions call, that you can use to retrieve the next page.
+         * @return GoogleCloudApigeeV1ListDebugSessionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsEnvironmentsApisRevisionsDebugsessions($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes the data from a debug session. This does not cancel the debug session
-     * or prevent further data from being collected if the session is still active
-     * in runtime pods. (debugsessions.deleteData)
-     *
-     * @param string $name Required. The name of the debug session to delete. Must
-     * be of the form: `organizations/{organization}/environments/{environment}/apis
-     * /{api}/revisions/{revision}/debugsessions/{debugsession}`. If the API proxy
-     * resource has the `space` attribute set, IAM permissions are checked
-     * differently . To learn more, read the [Apigee Spaces
-     * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
-     * administration/spaces/apigee-spaces-overview).
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsEnvironmentsApisRevisionsDebugsessions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function deleteData($name, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a debug session. (debugsessions.get)
-     *
-     * @param string $name Required. The name of the debug session to retrieve. Must
-     * be of the form: `organizations/{organization}/environments/{environment}/apis
-     * /{api}/revisions/{revision}/debugsessions/{debug_session}`. If the API proxy
-     * resource has the `space` attribute set, IAM permissions are checked
-     * differently . To learn more, read the [Apigee Spaces
-     * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
-     * administration/spaces/apigee-spaces-overview).
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1DebugSession
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists debug sessions that are currently active in the given API Proxy
-     * revision.
-     * (debugsessions.listOrganizationsEnvironmentsApisRevisionsDebugsessions)
-     *
-     * @param string $parent Required. The name of the API Proxy revision deployment
-     * for which to list debug sessions. Must be of the form: `organizations/{organi
-     * zation}/environments/{environment}/apis/{api}/revisions/{revision}`. If the
-     * API proxy resource has the `space` attribute set, IAM permissions are checked
-     * differently . To learn more, read the [Apigee Spaces
-     * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
-     * administration/spaces/apigee-spaces-overview).
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. Maximum number of debug sessions to return.
-     * The page size defaults to 25.
-     * @opt_param string pageToken Optional. Page token, returned from a previous
-     * ListDebugSessions call, that you can use to retrieve the next page.
-     * @return GoogleCloudApigeeV1ListDebugSessionsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listOrganizationsEnvironmentsApisRevisionsDebugsessions($parent, $optParams = [])
+    class Google_Service_Apigee_Resource_OrganizationsEnvironmentsApisRevisionsDebugsessions extends \Google\Service\Apigee\Resource\OrganizationsEnvironmentsApisRevisionsDebugsessions
     {
     }
 }

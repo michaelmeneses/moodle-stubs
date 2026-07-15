@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class YoutubeVideoAsset extends \Google\Model
-{
-    /**
-     * Required. The YouTube video id of the asset. This is the 11 char string
-     * value used in the YouTube video URL.
-     *
-     * @var string
-     */
-    public $youtubeVideoId;
-    /**
-     * Required. The YouTube video id of the asset. This is the 11 char string
-     * value used in the YouTube video URL.
-     *
-     * @param string $youtubeVideoId
-     */
-    public function setYoutubeVideoId($youtubeVideoId)
+namespace Google\Service\DisplayVideo {
+    class YoutubeVideoAsset extends \Google\Model
     {
+        /**
+         * Required. The YouTube video id of the asset. This is the 11 char string
+         * value used in the YouTube video URL.
+         *
+         * @var string
+         */
+        public $youtubeVideoId;
+        /**
+         * Required. The YouTube video id of the asset. This is the 11 char string
+         * value used in the YouTube video URL.
+         *
+         * @param string $youtubeVideoId
+         */
+        public function setYoutubeVideoId($youtubeVideoId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getYoutubeVideoId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\YoutubeVideoAsset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getYoutubeVideoId()
+    class Google_Service_DisplayVideo_YoutubeVideoAsset extends \Google\Service\DisplayVideo\YoutubeVideoAsset
     {
     }
 }

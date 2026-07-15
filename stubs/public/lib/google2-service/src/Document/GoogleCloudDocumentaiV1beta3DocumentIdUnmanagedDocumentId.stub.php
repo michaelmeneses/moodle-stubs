@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta3DocumentIdUnmanagedDocumentId extends \Google\Model
-{
-    /**
-     * Required. The id of the document.
-     *
-     * @var string
-     */
-    public $docId;
-    /**
-     * Required. The id of the document.
-     *
-     * @param string $docId
-     */
-    public function setDocId($docId)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta3DocumentIdUnmanagedDocumentId extends \Google\Model
     {
+        /**
+         * Required. The id of the document.
+         *
+         * @var string
+         */
+        public $docId;
+        /**
+         * Required. The id of the document.
+         *
+         * @param string $docId
+         */
+        public function setDocId($docId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta3DocumentIdUnmanagedDocumentId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocId()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta3DocumentIdUnmanagedDocumentId extends \Google\Service\Document\GoogleCloudDocumentaiV1beta3DocumentIdUnmanagedDocumentId
     {
     }
 }

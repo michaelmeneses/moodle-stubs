@@ -21,1054 +21,1063 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessLodging;
-
-class WasteReduction extends \Google\Model
-{
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const COMPOSTABLE_FOOD_CONTAINERS_AND_CUTLERY_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const COMPOSTABLE_FOOD_CONTAINERS_AND_CUTLERY_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const COMPOSTABLE_FOOD_CONTAINERS_AND_CUTLERY_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const COMPOSTABLE_FOOD_CONTAINERS_AND_CUTLERY_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const COMPOSTS_EXCESS_FOOD_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const COMPOSTS_EXCESS_FOOD_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const COMPOSTS_EXCESS_FOOD_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const COMPOSTS_EXCESS_FOOD_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const DONATES_EXCESS_FOOD_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const DONATES_EXCESS_FOOD_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const DONATES_EXCESS_FOOD_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const DONATES_EXCESS_FOOD_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const FOOD_WASTE_REDUCTION_PROGRAM_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const FOOD_WASTE_REDUCTION_PROGRAM_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const FOOD_WASTE_REDUCTION_PROGRAM_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const FOOD_WASTE_REDUCTION_PROGRAM_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const NO_SINGLE_USE_PLASTIC_STRAWS_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const NO_SINGLE_USE_PLASTIC_STRAWS_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const NO_SINGLE_USE_PLASTIC_STRAWS_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const NO_SINGLE_USE_PLASTIC_STRAWS_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const NO_SINGLE_USE_PLASTIC_WATER_BOTTLES_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const NO_SINGLE_USE_PLASTIC_WATER_BOTTLES_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const NO_SINGLE_USE_PLASTIC_WATER_BOTTLES_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const NO_SINGLE_USE_PLASTIC_WATER_BOTTLES_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const NO_STYROFOAM_FOOD_CONTAINERS_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const NO_STYROFOAM_FOOD_CONTAINERS_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const NO_STYROFOAM_FOOD_CONTAINERS_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const NO_STYROFOAM_FOOD_CONTAINERS_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const RECYCLING_PROGRAM_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const RECYCLING_PROGRAM_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const RECYCLING_PROGRAM_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const RECYCLING_PROGRAM_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const REFILLABLE_TOILETRY_CONTAINERS_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const REFILLABLE_TOILETRY_CONTAINERS_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const REFILLABLE_TOILETRY_CONTAINERS_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const REFILLABLE_TOILETRY_CONTAINERS_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const SAFELY_DISPOSES_BATTERIES_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const SAFELY_DISPOSES_BATTERIES_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const SAFELY_DISPOSES_BATTERIES_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const SAFELY_DISPOSES_BATTERIES_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const SAFELY_DISPOSES_ELECTRONICS_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const SAFELY_DISPOSES_ELECTRONICS_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const SAFELY_DISPOSES_ELECTRONICS_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const SAFELY_DISPOSES_ELECTRONICS_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const SAFELY_DISPOSES_LIGHTBULBS_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const SAFELY_DISPOSES_LIGHTBULBS_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const SAFELY_DISPOSES_LIGHTBULBS_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const SAFELY_DISPOSES_LIGHTBULBS_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const SAFELY_HANDLES_HAZARDOUS_SUBSTANCES_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const SAFELY_HANDLES_HAZARDOUS_SUBSTANCES_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const SAFELY_HANDLES_HAZARDOUS_SUBSTANCES_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const SAFELY_HANDLES_HAZARDOUS_SUBSTANCES_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const SOAP_DONATION_PROGRAM_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const SOAP_DONATION_PROGRAM_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const SOAP_DONATION_PROGRAM_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const SOAP_DONATION_PROGRAM_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const TOILETRY_DONATION_PROGRAM_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const TOILETRY_DONATION_PROGRAM_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const TOILETRY_DONATION_PROGRAM_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const TOILETRY_DONATION_PROGRAM_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const WATER_BOTTLE_FILLING_STATIONS_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const WATER_BOTTLE_FILLING_STATIONS_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const WATER_BOTTLE_FILLING_STATIONS_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const WATER_BOTTLE_FILLING_STATIONS_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Compostable food containers and cutlery. 100% of food service containers
-     * and to-go cutlery are compostable, and reusable utensils are offered
-     * wherever possible. Compostable materials are capable of undergoing
-     * biological decomposition in a compost site, such that material is not
-     * visually distinguishable and breaks down into carbon dioxide, water,
-     * inorganic compounds, and biomass.
-     *
-     * @var bool
-     */
-    public $compostableFoodContainersAndCutlery;
-    /**
-     * Compostable food containers and cutlery exception.
-     *
-     * @var string
-     */
-    public $compostableFoodContainersAndCutleryException;
-    /**
-     * Composts excess food. The property has a program and/or policy for
-     * diverting waste from landfill by composting food and yard waste, either
-     * through compost collection and off-site processing or on-site compost
-     * processing.
-     *
-     * @var bool
-     */
-    public $compostsExcessFood;
-    /**
-     * Composts excess food exception.
-     *
-     * @var string
-     */
-    public $compostsExcessFoodException;
-    /**
-     * Donates excess food. The property has a program and/or policy for diverting
-     * waste from landfill that may include efforts to donate for human
-     * consumption or divert food for animal feed.
-     *
-     * @var bool
-     */
-    public $donatesExcessFood;
-    /**
-     * Donates excess food exception.
-     *
-     * @var string
-     */
-    public $donatesExcessFoodException;
-    /**
-     * Food waste reduction program. The property has established a food waste
-     * reduction and donation program, aiming to reduce food waste by half. These
-     * programs typically use tools such as the Hotel Kitchen Toolkit and others
-     * to track waste and measure progress.
-     *
-     * @var bool
-     */
-    public $foodWasteReductionProgram;
-    /**
-     * Food waste reduction program exception.
-     *
-     * @var string
-     */
-    public $foodWasteReductionProgramException;
-    /**
-     * No single use plastic straws. The property bans single-use plastic straws.
-     *
-     * @var bool
-     */
-    public $noSingleUsePlasticStraws;
-    /**
-     * No single use plastic straws exception.
-     *
-     * @var string
-     */
-    public $noSingleUsePlasticStrawsException;
-    /**
-     * No single use plastic water bottles. The property bans single-use plastic
-     * water bottles.
-     *
-     * @var bool
-     */
-    public $noSingleUsePlasticWaterBottles;
-    /**
-     * No single use plastic water bottles exception.
-     *
-     * @var string
-     */
-    public $noSingleUsePlasticWaterBottlesException;
-    /**
-     * No styrofoam food containers. The property eliminates the use of Styrofoam
-     * in disposable food service items.
-     *
-     * @var bool
-     */
-    public $noStyrofoamFoodContainers;
-    /**
-     * No styrofoam food containers exception.
-     *
-     * @var string
-     */
-    public $noStyrofoamFoodContainersException;
-    /**
-     * Recycling program. The property has a recycling program, aligned with LEED
-     * waste requirements, and a policy outlining efforts to send less than 50% of
-     * waste to landfill. The recycling program includes storage locations for
-     * recyclable materials, including mixed paper, corrugated cardboard, glass,
-     * plastics, and metals.
-     *
-     * @var bool
-     */
-    public $recyclingProgram;
-    /**
-     * Recycling program exception.
-     *
-     * @var string
-     */
-    public $recyclingProgramException;
-    /**
-     * Refillable toiletry containers. The property has replaced miniature
-     * individual containers with refillable amenity dispensers for shampoo,
-     * conditioner, soap, and lotion.
-     *
-     * @var bool
-     */
-    public $refillableToiletryContainers;
-    /**
-     * Refillable toiletry containers exception.
-     *
-     * @var string
-     */
-    public $refillableToiletryContainersException;
-    /**
-     * Safely disposes batteries. The property safely stores and disposes
-     * batteries.
-     *
-     * @var bool
-     */
-    public $safelyDisposesBatteries;
-    /**
-     * Safely disposes batteries exception.
-     *
-     * @var string
-     */
-    public $safelyDisposesBatteriesException;
-    /**
-     * Safely disposes electronics. The property has a reputable recycling program
-     * that keeps hazardous electronic parts and chemical compounds out of
-     * landfills, dumps and other unauthorized abandonment sites, and
-     * recycles/reuses applicable materials. (e.g. certified electronics
-     * recyclers).
-     *
-     * @var bool
-     */
-    public $safelyDisposesElectronics;
-    /**
-     * Safely disposes electronics exception.
-     *
-     * @var string
-     */
-    public $safelyDisposesElectronicsException;
-    /**
-     * Safely disposes lightbulbs. The property safely stores and disposes
-     * lightbulbs.
-     *
-     * @var bool
-     */
-    public $safelyDisposesLightbulbs;
-    /**
-     * Safely disposes lightbulbs exception.
-     *
-     * @var string
-     */
-    public $safelyDisposesLightbulbsException;
-    /**
-     * Safely handles hazardous substances. The property has a hazardous waste
-     * management program aligned wit GreenSeal and LEED requirements, and meets
-     * all regulatory requirements for hazardous waste disposal and recycling.
-     * Hazardous means substances that are classified as "hazardous" by an
-     * authoritative body (such as OSHA or DOT), are labeled with signal words
-     * such as "Danger," "Caution," "Warning," or are flammable, corrosive, or
-     * ignitable. Requirements include: - The property shall maintain records of
-     * the efforts it has made to replace the hazardous substances it uses with
-     * less hazardous alternatives. - An inventory of the hazardous materials
-     * stored on-site. - Products intended for cleaning, dishwashing, laundry, and
-     * pool maintenance shall be stored in clearly labeled containers. These
-     * containers shall be checked regularly for leaks, and replaced a necessary.
-     * - Spill containment devices shall be installed to collect spills, drips, or
-     * leaching of chemicals.
-     *
-     * @var bool
-     */
-    public $safelyHandlesHazardousSubstances;
-    /**
-     * Safely handles hazardous substances exception.
-     *
-     * @var string
-     */
-    public $safelyHandlesHazardousSubstancesException;
-    /**
-     * Soap donation program. The property participates in a soap donation program
-     * such as Clean the World or something similar.
-     *
-     * @var bool
-     */
-    public $soapDonationProgram;
-    /**
-     * Soap donation program exception.
-     *
-     * @var string
-     */
-    public $soapDonationProgramException;
-    /**
-     * Toiletry donation program. The property participates in a toiletry donation
-     * program such as Clean the World or something similar.
-     *
-     * @var bool
-     */
-    public $toiletryDonationProgram;
-    /**
-     * Toiletry donation program exception.
-     *
-     * @var string
-     */
-    public $toiletryDonationProgramException;
-    /**
-     * Water bottle filling stations. The property offers water stations
-     * throughout the building for guest use.
-     *
-     * @var bool
-     */
-    public $waterBottleFillingStations;
-    /**
-     * Water bottle filling stations exception.
-     *
-     * @var string
-     */
-    public $waterBottleFillingStationsException;
-    /**
-     * Compostable food containers and cutlery. 100% of food service containers
-     * and to-go cutlery are compostable, and reusable utensils are offered
-     * wherever possible. Compostable materials are capable of undergoing
-     * biological decomposition in a compost site, such that material is not
-     * visually distinguishable and breaks down into carbon dioxide, water,
-     * inorganic compounds, and biomass.
-     *
-     * @param bool $compostableFoodContainersAndCutlery
-     */
-    public function setCompostableFoodContainersAndCutlery($compostableFoodContainersAndCutlery)
+namespace Google\Service\MyBusinessLodging {
+    class WasteReduction extends \Google\Model
     {
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const COMPOSTABLE_FOOD_CONTAINERS_AND_CUTLERY_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const COMPOSTABLE_FOOD_CONTAINERS_AND_CUTLERY_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const COMPOSTABLE_FOOD_CONTAINERS_AND_CUTLERY_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const COMPOSTABLE_FOOD_CONTAINERS_AND_CUTLERY_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const COMPOSTS_EXCESS_FOOD_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const COMPOSTS_EXCESS_FOOD_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const COMPOSTS_EXCESS_FOOD_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const COMPOSTS_EXCESS_FOOD_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const DONATES_EXCESS_FOOD_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const DONATES_EXCESS_FOOD_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const DONATES_EXCESS_FOOD_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const DONATES_EXCESS_FOOD_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const FOOD_WASTE_REDUCTION_PROGRAM_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const FOOD_WASTE_REDUCTION_PROGRAM_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const FOOD_WASTE_REDUCTION_PROGRAM_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const FOOD_WASTE_REDUCTION_PROGRAM_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const NO_SINGLE_USE_PLASTIC_STRAWS_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const NO_SINGLE_USE_PLASTIC_STRAWS_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const NO_SINGLE_USE_PLASTIC_STRAWS_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const NO_SINGLE_USE_PLASTIC_STRAWS_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const NO_SINGLE_USE_PLASTIC_WATER_BOTTLES_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const NO_SINGLE_USE_PLASTIC_WATER_BOTTLES_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const NO_SINGLE_USE_PLASTIC_WATER_BOTTLES_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const NO_SINGLE_USE_PLASTIC_WATER_BOTTLES_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const NO_STYROFOAM_FOOD_CONTAINERS_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const NO_STYROFOAM_FOOD_CONTAINERS_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const NO_STYROFOAM_FOOD_CONTAINERS_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const NO_STYROFOAM_FOOD_CONTAINERS_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const RECYCLING_PROGRAM_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const RECYCLING_PROGRAM_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const RECYCLING_PROGRAM_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const RECYCLING_PROGRAM_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const REFILLABLE_TOILETRY_CONTAINERS_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const REFILLABLE_TOILETRY_CONTAINERS_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const REFILLABLE_TOILETRY_CONTAINERS_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const REFILLABLE_TOILETRY_CONTAINERS_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const SAFELY_DISPOSES_BATTERIES_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const SAFELY_DISPOSES_BATTERIES_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const SAFELY_DISPOSES_BATTERIES_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const SAFELY_DISPOSES_BATTERIES_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const SAFELY_DISPOSES_ELECTRONICS_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const SAFELY_DISPOSES_ELECTRONICS_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const SAFELY_DISPOSES_ELECTRONICS_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const SAFELY_DISPOSES_ELECTRONICS_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const SAFELY_DISPOSES_LIGHTBULBS_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const SAFELY_DISPOSES_LIGHTBULBS_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const SAFELY_DISPOSES_LIGHTBULBS_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const SAFELY_DISPOSES_LIGHTBULBS_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const SAFELY_HANDLES_HAZARDOUS_SUBSTANCES_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const SAFELY_HANDLES_HAZARDOUS_SUBSTANCES_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const SAFELY_HANDLES_HAZARDOUS_SUBSTANCES_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const SAFELY_HANDLES_HAZARDOUS_SUBSTANCES_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const SOAP_DONATION_PROGRAM_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const SOAP_DONATION_PROGRAM_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const SOAP_DONATION_PROGRAM_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const SOAP_DONATION_PROGRAM_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const TOILETRY_DONATION_PROGRAM_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const TOILETRY_DONATION_PROGRAM_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const TOILETRY_DONATION_PROGRAM_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const TOILETRY_DONATION_PROGRAM_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const WATER_BOTTLE_FILLING_STATIONS_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const WATER_BOTTLE_FILLING_STATIONS_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const WATER_BOTTLE_FILLING_STATIONS_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const WATER_BOTTLE_FILLING_STATIONS_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Compostable food containers and cutlery. 100% of food service containers
+         * and to-go cutlery are compostable, and reusable utensils are offered
+         * wherever possible. Compostable materials are capable of undergoing
+         * biological decomposition in a compost site, such that material is not
+         * visually distinguishable and breaks down into carbon dioxide, water,
+         * inorganic compounds, and biomass.
+         *
+         * @var bool
+         */
+        public $compostableFoodContainersAndCutlery;
+        /**
+         * Compostable food containers and cutlery exception.
+         *
+         * @var string
+         */
+        public $compostableFoodContainersAndCutleryException;
+        /**
+         * Composts excess food. The property has a program and/or policy for
+         * diverting waste from landfill by composting food and yard waste, either
+         * through compost collection and off-site processing or on-site compost
+         * processing.
+         *
+         * @var bool
+         */
+        public $compostsExcessFood;
+        /**
+         * Composts excess food exception.
+         *
+         * @var string
+         */
+        public $compostsExcessFoodException;
+        /**
+         * Donates excess food. The property has a program and/or policy for diverting
+         * waste from landfill that may include efforts to donate for human
+         * consumption or divert food for animal feed.
+         *
+         * @var bool
+         */
+        public $donatesExcessFood;
+        /**
+         * Donates excess food exception.
+         *
+         * @var string
+         */
+        public $donatesExcessFoodException;
+        /**
+         * Food waste reduction program. The property has established a food waste
+         * reduction and donation program, aiming to reduce food waste by half. These
+         * programs typically use tools such as the Hotel Kitchen Toolkit and others
+         * to track waste and measure progress.
+         *
+         * @var bool
+         */
+        public $foodWasteReductionProgram;
+        /**
+         * Food waste reduction program exception.
+         *
+         * @var string
+         */
+        public $foodWasteReductionProgramException;
+        /**
+         * No single use plastic straws. The property bans single-use plastic straws.
+         *
+         * @var bool
+         */
+        public $noSingleUsePlasticStraws;
+        /**
+         * No single use plastic straws exception.
+         *
+         * @var string
+         */
+        public $noSingleUsePlasticStrawsException;
+        /**
+         * No single use plastic water bottles. The property bans single-use plastic
+         * water bottles.
+         *
+         * @var bool
+         */
+        public $noSingleUsePlasticWaterBottles;
+        /**
+         * No single use plastic water bottles exception.
+         *
+         * @var string
+         */
+        public $noSingleUsePlasticWaterBottlesException;
+        /**
+         * No styrofoam food containers. The property eliminates the use of Styrofoam
+         * in disposable food service items.
+         *
+         * @var bool
+         */
+        public $noStyrofoamFoodContainers;
+        /**
+         * No styrofoam food containers exception.
+         *
+         * @var string
+         */
+        public $noStyrofoamFoodContainersException;
+        /**
+         * Recycling program. The property has a recycling program, aligned with LEED
+         * waste requirements, and a policy outlining efforts to send less than 50% of
+         * waste to landfill. The recycling program includes storage locations for
+         * recyclable materials, including mixed paper, corrugated cardboard, glass,
+         * plastics, and metals.
+         *
+         * @var bool
+         */
+        public $recyclingProgram;
+        /**
+         * Recycling program exception.
+         *
+         * @var string
+         */
+        public $recyclingProgramException;
+        /**
+         * Refillable toiletry containers. The property has replaced miniature
+         * individual containers with refillable amenity dispensers for shampoo,
+         * conditioner, soap, and lotion.
+         *
+         * @var bool
+         */
+        public $refillableToiletryContainers;
+        /**
+         * Refillable toiletry containers exception.
+         *
+         * @var string
+         */
+        public $refillableToiletryContainersException;
+        /**
+         * Safely disposes batteries. The property safely stores and disposes
+         * batteries.
+         *
+         * @var bool
+         */
+        public $safelyDisposesBatteries;
+        /**
+         * Safely disposes batteries exception.
+         *
+         * @var string
+         */
+        public $safelyDisposesBatteriesException;
+        /**
+         * Safely disposes electronics. The property has a reputable recycling program
+         * that keeps hazardous electronic parts and chemical compounds out of
+         * landfills, dumps and other unauthorized abandonment sites, and
+         * recycles/reuses applicable materials. (e.g. certified electronics
+         * recyclers).
+         *
+         * @var bool
+         */
+        public $safelyDisposesElectronics;
+        /**
+         * Safely disposes electronics exception.
+         *
+         * @var string
+         */
+        public $safelyDisposesElectronicsException;
+        /**
+         * Safely disposes lightbulbs. The property safely stores and disposes
+         * lightbulbs.
+         *
+         * @var bool
+         */
+        public $safelyDisposesLightbulbs;
+        /**
+         * Safely disposes lightbulbs exception.
+         *
+         * @var string
+         */
+        public $safelyDisposesLightbulbsException;
+        /**
+         * Safely handles hazardous substances. The property has a hazardous waste
+         * management program aligned wit GreenSeal and LEED requirements, and meets
+         * all regulatory requirements for hazardous waste disposal and recycling.
+         * Hazardous means substances that are classified as "hazardous" by an
+         * authoritative body (such as OSHA or DOT), are labeled with signal words
+         * such as "Danger," "Caution," "Warning," or are flammable, corrosive, or
+         * ignitable. Requirements include: - The property shall maintain records of
+         * the efforts it has made to replace the hazardous substances it uses with
+         * less hazardous alternatives. - An inventory of the hazardous materials
+         * stored on-site. - Products intended for cleaning, dishwashing, laundry, and
+         * pool maintenance shall be stored in clearly labeled containers. These
+         * containers shall be checked regularly for leaks, and replaced a necessary.
+         * - Spill containment devices shall be installed to collect spills, drips, or
+         * leaching of chemicals.
+         *
+         * @var bool
+         */
+        public $safelyHandlesHazardousSubstances;
+        /**
+         * Safely handles hazardous substances exception.
+         *
+         * @var string
+         */
+        public $safelyHandlesHazardousSubstancesException;
+        /**
+         * Soap donation program. The property participates in a soap donation program
+         * such as Clean the World or something similar.
+         *
+         * @var bool
+         */
+        public $soapDonationProgram;
+        /**
+         * Soap donation program exception.
+         *
+         * @var string
+         */
+        public $soapDonationProgramException;
+        /**
+         * Toiletry donation program. The property participates in a toiletry donation
+         * program such as Clean the World or something similar.
+         *
+         * @var bool
+         */
+        public $toiletryDonationProgram;
+        /**
+         * Toiletry donation program exception.
+         *
+         * @var string
+         */
+        public $toiletryDonationProgramException;
+        /**
+         * Water bottle filling stations. The property offers water stations
+         * throughout the building for guest use.
+         *
+         * @var bool
+         */
+        public $waterBottleFillingStations;
+        /**
+         * Water bottle filling stations exception.
+         *
+         * @var string
+         */
+        public $waterBottleFillingStationsException;
+        /**
+         * Compostable food containers and cutlery. 100% of food service containers
+         * and to-go cutlery are compostable, and reusable utensils are offered
+         * wherever possible. Compostable materials are capable of undergoing
+         * biological decomposition in a compost site, such that material is not
+         * visually distinguishable and breaks down into carbon dioxide, water,
+         * inorganic compounds, and biomass.
+         *
+         * @param bool $compostableFoodContainersAndCutlery
+         */
+        public function setCompostableFoodContainersAndCutlery($compostableFoodContainersAndCutlery)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCompostableFoodContainersAndCutlery()
+        {
+        }
+        /**
+         * Compostable food containers and cutlery exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::COMPOSTABLE_FOOD_CONTAINERS_AND_CUTLERY_EXCEPTION_* $compostableFoodContainersAndCutleryException
+         */
+        public function setCompostableFoodContainersAndCutleryException($compostableFoodContainersAndCutleryException)
+        {
+        }
+        /**
+         * @return self::COMPOSTABLE_FOOD_CONTAINERS_AND_CUTLERY_EXCEPTION_*
+         */
+        public function getCompostableFoodContainersAndCutleryException()
+        {
+        }
+        /**
+         * Composts excess food. The property has a program and/or policy for
+         * diverting waste from landfill by composting food and yard waste, either
+         * through compost collection and off-site processing or on-site compost
+         * processing.
+         *
+         * @param bool $compostsExcessFood
+         */
+        public function setCompostsExcessFood($compostsExcessFood)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCompostsExcessFood()
+        {
+        }
+        /**
+         * Composts excess food exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::COMPOSTS_EXCESS_FOOD_EXCEPTION_* $compostsExcessFoodException
+         */
+        public function setCompostsExcessFoodException($compostsExcessFoodException)
+        {
+        }
+        /**
+         * @return self::COMPOSTS_EXCESS_FOOD_EXCEPTION_*
+         */
+        public function getCompostsExcessFoodException()
+        {
+        }
+        /**
+         * Donates excess food. The property has a program and/or policy for diverting
+         * waste from landfill that may include efforts to donate for human
+         * consumption or divert food for animal feed.
+         *
+         * @param bool $donatesExcessFood
+         */
+        public function setDonatesExcessFood($donatesExcessFood)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDonatesExcessFood()
+        {
+        }
+        /**
+         * Donates excess food exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::DONATES_EXCESS_FOOD_EXCEPTION_* $donatesExcessFoodException
+         */
+        public function setDonatesExcessFoodException($donatesExcessFoodException)
+        {
+        }
+        /**
+         * @return self::DONATES_EXCESS_FOOD_EXCEPTION_*
+         */
+        public function getDonatesExcessFoodException()
+        {
+        }
+        /**
+         * Food waste reduction program. The property has established a food waste
+         * reduction and donation program, aiming to reduce food waste by half. These
+         * programs typically use tools such as the Hotel Kitchen Toolkit and others
+         * to track waste and measure progress.
+         *
+         * @param bool $foodWasteReductionProgram
+         */
+        public function setFoodWasteReductionProgram($foodWasteReductionProgram)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFoodWasteReductionProgram()
+        {
+        }
+        /**
+         * Food waste reduction program exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::FOOD_WASTE_REDUCTION_PROGRAM_EXCEPTION_* $foodWasteReductionProgramException
+         */
+        public function setFoodWasteReductionProgramException($foodWasteReductionProgramException)
+        {
+        }
+        /**
+         * @return self::FOOD_WASTE_REDUCTION_PROGRAM_EXCEPTION_*
+         */
+        public function getFoodWasteReductionProgramException()
+        {
+        }
+        /**
+         * No single use plastic straws. The property bans single-use plastic straws.
+         *
+         * @param bool $noSingleUsePlasticStraws
+         */
+        public function setNoSingleUsePlasticStraws($noSingleUsePlasticStraws)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNoSingleUsePlasticStraws()
+        {
+        }
+        /**
+         * No single use plastic straws exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::NO_SINGLE_USE_PLASTIC_STRAWS_EXCEPTION_* $noSingleUsePlasticStrawsException
+         */
+        public function setNoSingleUsePlasticStrawsException($noSingleUsePlasticStrawsException)
+        {
+        }
+        /**
+         * @return self::NO_SINGLE_USE_PLASTIC_STRAWS_EXCEPTION_*
+         */
+        public function getNoSingleUsePlasticStrawsException()
+        {
+        }
+        /**
+         * No single use plastic water bottles. The property bans single-use plastic
+         * water bottles.
+         *
+         * @param bool $noSingleUsePlasticWaterBottles
+         */
+        public function setNoSingleUsePlasticWaterBottles($noSingleUsePlasticWaterBottles)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNoSingleUsePlasticWaterBottles()
+        {
+        }
+        /**
+         * No single use plastic water bottles exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::NO_SINGLE_USE_PLASTIC_WATER_BOTTLES_EXCEPTION_* $noSingleUsePlasticWaterBottlesException
+         */
+        public function setNoSingleUsePlasticWaterBottlesException($noSingleUsePlasticWaterBottlesException)
+        {
+        }
+        /**
+         * @return self::NO_SINGLE_USE_PLASTIC_WATER_BOTTLES_EXCEPTION_*
+         */
+        public function getNoSingleUsePlasticWaterBottlesException()
+        {
+        }
+        /**
+         * No styrofoam food containers. The property eliminates the use of Styrofoam
+         * in disposable food service items.
+         *
+         * @param bool $noStyrofoamFoodContainers
+         */
+        public function setNoStyrofoamFoodContainers($noStyrofoamFoodContainers)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNoStyrofoamFoodContainers()
+        {
+        }
+        /**
+         * No styrofoam food containers exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::NO_STYROFOAM_FOOD_CONTAINERS_EXCEPTION_* $noStyrofoamFoodContainersException
+         */
+        public function setNoStyrofoamFoodContainersException($noStyrofoamFoodContainersException)
+        {
+        }
+        /**
+         * @return self::NO_STYROFOAM_FOOD_CONTAINERS_EXCEPTION_*
+         */
+        public function getNoStyrofoamFoodContainersException()
+        {
+        }
+        /**
+         * Recycling program. The property has a recycling program, aligned with LEED
+         * waste requirements, and a policy outlining efforts to send less than 50% of
+         * waste to landfill. The recycling program includes storage locations for
+         * recyclable materials, including mixed paper, corrugated cardboard, glass,
+         * plastics, and metals.
+         *
+         * @param bool $recyclingProgram
+         */
+        public function setRecyclingProgram($recyclingProgram)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRecyclingProgram()
+        {
+        }
+        /**
+         * Recycling program exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::RECYCLING_PROGRAM_EXCEPTION_* $recyclingProgramException
+         */
+        public function setRecyclingProgramException($recyclingProgramException)
+        {
+        }
+        /**
+         * @return self::RECYCLING_PROGRAM_EXCEPTION_*
+         */
+        public function getRecyclingProgramException()
+        {
+        }
+        /**
+         * Refillable toiletry containers. The property has replaced miniature
+         * individual containers with refillable amenity dispensers for shampoo,
+         * conditioner, soap, and lotion.
+         *
+         * @param bool $refillableToiletryContainers
+         */
+        public function setRefillableToiletryContainers($refillableToiletryContainers)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRefillableToiletryContainers()
+        {
+        }
+        /**
+         * Refillable toiletry containers exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::REFILLABLE_TOILETRY_CONTAINERS_EXCEPTION_* $refillableToiletryContainersException
+         */
+        public function setRefillableToiletryContainersException($refillableToiletryContainersException)
+        {
+        }
+        /**
+         * @return self::REFILLABLE_TOILETRY_CONTAINERS_EXCEPTION_*
+         */
+        public function getRefillableToiletryContainersException()
+        {
+        }
+        /**
+         * Safely disposes batteries. The property safely stores and disposes
+         * batteries.
+         *
+         * @param bool $safelyDisposesBatteries
+         */
+        public function setSafelyDisposesBatteries($safelyDisposesBatteries)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSafelyDisposesBatteries()
+        {
+        }
+        /**
+         * Safely disposes batteries exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::SAFELY_DISPOSES_BATTERIES_EXCEPTION_* $safelyDisposesBatteriesException
+         */
+        public function setSafelyDisposesBatteriesException($safelyDisposesBatteriesException)
+        {
+        }
+        /**
+         * @return self::SAFELY_DISPOSES_BATTERIES_EXCEPTION_*
+         */
+        public function getSafelyDisposesBatteriesException()
+        {
+        }
+        /**
+         * Safely disposes electronics. The property has a reputable recycling program
+         * that keeps hazardous electronic parts and chemical compounds out of
+         * landfills, dumps and other unauthorized abandonment sites, and
+         * recycles/reuses applicable materials. (e.g. certified electronics
+         * recyclers).
+         *
+         * @param bool $safelyDisposesElectronics
+         */
+        public function setSafelyDisposesElectronics($safelyDisposesElectronics)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSafelyDisposesElectronics()
+        {
+        }
+        /**
+         * Safely disposes electronics exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::SAFELY_DISPOSES_ELECTRONICS_EXCEPTION_* $safelyDisposesElectronicsException
+         */
+        public function setSafelyDisposesElectronicsException($safelyDisposesElectronicsException)
+        {
+        }
+        /**
+         * @return self::SAFELY_DISPOSES_ELECTRONICS_EXCEPTION_*
+         */
+        public function getSafelyDisposesElectronicsException()
+        {
+        }
+        /**
+         * Safely disposes lightbulbs. The property safely stores and disposes
+         * lightbulbs.
+         *
+         * @param bool $safelyDisposesLightbulbs
+         */
+        public function setSafelyDisposesLightbulbs($safelyDisposesLightbulbs)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSafelyDisposesLightbulbs()
+        {
+        }
+        /**
+         * Safely disposes lightbulbs exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::SAFELY_DISPOSES_LIGHTBULBS_EXCEPTION_* $safelyDisposesLightbulbsException
+         */
+        public function setSafelyDisposesLightbulbsException($safelyDisposesLightbulbsException)
+        {
+        }
+        /**
+         * @return self::SAFELY_DISPOSES_LIGHTBULBS_EXCEPTION_*
+         */
+        public function getSafelyDisposesLightbulbsException()
+        {
+        }
+        /**
+         * Safely handles hazardous substances. The property has a hazardous waste
+         * management program aligned wit GreenSeal and LEED requirements, and meets
+         * all regulatory requirements for hazardous waste disposal and recycling.
+         * Hazardous means substances that are classified as "hazardous" by an
+         * authoritative body (such as OSHA or DOT), are labeled with signal words
+         * such as "Danger," "Caution," "Warning," or are flammable, corrosive, or
+         * ignitable. Requirements include: - The property shall maintain records of
+         * the efforts it has made to replace the hazardous substances it uses with
+         * less hazardous alternatives. - An inventory of the hazardous materials
+         * stored on-site. - Products intended for cleaning, dishwashing, laundry, and
+         * pool maintenance shall be stored in clearly labeled containers. These
+         * containers shall be checked regularly for leaks, and replaced a necessary.
+         * - Spill containment devices shall be installed to collect spills, drips, or
+         * leaching of chemicals.
+         *
+         * @param bool $safelyHandlesHazardousSubstances
+         */
+        public function setSafelyHandlesHazardousSubstances($safelyHandlesHazardousSubstances)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSafelyHandlesHazardousSubstances()
+        {
+        }
+        /**
+         * Safely handles hazardous substances exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::SAFELY_HANDLES_HAZARDOUS_SUBSTANCES_EXCEPTION_* $safelyHandlesHazardousSubstancesException
+         */
+        public function setSafelyHandlesHazardousSubstancesException($safelyHandlesHazardousSubstancesException)
+        {
+        }
+        /**
+         * @return self::SAFELY_HANDLES_HAZARDOUS_SUBSTANCES_EXCEPTION_*
+         */
+        public function getSafelyHandlesHazardousSubstancesException()
+        {
+        }
+        /**
+         * Soap donation program. The property participates in a soap donation program
+         * such as Clean the World or something similar.
+         *
+         * @param bool $soapDonationProgram
+         */
+        public function setSoapDonationProgram($soapDonationProgram)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSoapDonationProgram()
+        {
+        }
+        /**
+         * Soap donation program exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::SOAP_DONATION_PROGRAM_EXCEPTION_* $soapDonationProgramException
+         */
+        public function setSoapDonationProgramException($soapDonationProgramException)
+        {
+        }
+        /**
+         * @return self::SOAP_DONATION_PROGRAM_EXCEPTION_*
+         */
+        public function getSoapDonationProgramException()
+        {
+        }
+        /**
+         * Toiletry donation program. The property participates in a toiletry donation
+         * program such as Clean the World or something similar.
+         *
+         * @param bool $toiletryDonationProgram
+         */
+        public function setToiletryDonationProgram($toiletryDonationProgram)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getToiletryDonationProgram()
+        {
+        }
+        /**
+         * Toiletry donation program exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::TOILETRY_DONATION_PROGRAM_EXCEPTION_* $toiletryDonationProgramException
+         */
+        public function setToiletryDonationProgramException($toiletryDonationProgramException)
+        {
+        }
+        /**
+         * @return self::TOILETRY_DONATION_PROGRAM_EXCEPTION_*
+         */
+        public function getToiletryDonationProgramException()
+        {
+        }
+        /**
+         * Water bottle filling stations. The property offers water stations
+         * throughout the building for guest use.
+         *
+         * @param bool $waterBottleFillingStations
+         */
+        public function setWaterBottleFillingStations($waterBottleFillingStations)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWaterBottleFillingStations()
+        {
+        }
+        /**
+         * Water bottle filling stations exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::WATER_BOTTLE_FILLING_STATIONS_EXCEPTION_* $waterBottleFillingStationsException
+         */
+        public function setWaterBottleFillingStationsException($waterBottleFillingStationsException)
+        {
+        }
+        /**
+         * @return self::WATER_BOTTLE_FILLING_STATIONS_EXCEPTION_*
+         */
+        public function getWaterBottleFillingStationsException()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\MyBusinessLodging\WasteReduction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompostableFoodContainersAndCutlery()
-    {
-    }
-    /**
-     * Compostable food containers and cutlery exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::COMPOSTABLE_FOOD_CONTAINERS_AND_CUTLERY_EXCEPTION_* $compostableFoodContainersAndCutleryException
-     */
-    public function setCompostableFoodContainersAndCutleryException($compostableFoodContainersAndCutleryException)
-    {
-    }
-    /**
-     * @return self::COMPOSTABLE_FOOD_CONTAINERS_AND_CUTLERY_EXCEPTION_*
-     */
-    public function getCompostableFoodContainersAndCutleryException()
-    {
-    }
-    /**
-     * Composts excess food. The property has a program and/or policy for
-     * diverting waste from landfill by composting food and yard waste, either
-     * through compost collection and off-site processing or on-site compost
-     * processing.
-     *
-     * @param bool $compostsExcessFood
-     */
-    public function setCompostsExcessFood($compostsExcessFood)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCompostsExcessFood()
-    {
-    }
-    /**
-     * Composts excess food exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::COMPOSTS_EXCESS_FOOD_EXCEPTION_* $compostsExcessFoodException
-     */
-    public function setCompostsExcessFoodException($compostsExcessFoodException)
-    {
-    }
-    /**
-     * @return self::COMPOSTS_EXCESS_FOOD_EXCEPTION_*
-     */
-    public function getCompostsExcessFoodException()
-    {
-    }
-    /**
-     * Donates excess food. The property has a program and/or policy for diverting
-     * waste from landfill that may include efforts to donate for human
-     * consumption or divert food for animal feed.
-     *
-     * @param bool $donatesExcessFood
-     */
-    public function setDonatesExcessFood($donatesExcessFood)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDonatesExcessFood()
-    {
-    }
-    /**
-     * Donates excess food exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::DONATES_EXCESS_FOOD_EXCEPTION_* $donatesExcessFoodException
-     */
-    public function setDonatesExcessFoodException($donatesExcessFoodException)
-    {
-    }
-    /**
-     * @return self::DONATES_EXCESS_FOOD_EXCEPTION_*
-     */
-    public function getDonatesExcessFoodException()
-    {
-    }
-    /**
-     * Food waste reduction program. The property has established a food waste
-     * reduction and donation program, aiming to reduce food waste by half. These
-     * programs typically use tools such as the Hotel Kitchen Toolkit and others
-     * to track waste and measure progress.
-     *
-     * @param bool $foodWasteReductionProgram
-     */
-    public function setFoodWasteReductionProgram($foodWasteReductionProgram)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getFoodWasteReductionProgram()
-    {
-    }
-    /**
-     * Food waste reduction program exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::FOOD_WASTE_REDUCTION_PROGRAM_EXCEPTION_* $foodWasteReductionProgramException
-     */
-    public function setFoodWasteReductionProgramException($foodWasteReductionProgramException)
-    {
-    }
-    /**
-     * @return self::FOOD_WASTE_REDUCTION_PROGRAM_EXCEPTION_*
-     */
-    public function getFoodWasteReductionProgramException()
-    {
-    }
-    /**
-     * No single use plastic straws. The property bans single-use plastic straws.
-     *
-     * @param bool $noSingleUsePlasticStraws
-     */
-    public function setNoSingleUsePlasticStraws($noSingleUsePlasticStraws)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNoSingleUsePlasticStraws()
-    {
-    }
-    /**
-     * No single use plastic straws exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::NO_SINGLE_USE_PLASTIC_STRAWS_EXCEPTION_* $noSingleUsePlasticStrawsException
-     */
-    public function setNoSingleUsePlasticStrawsException($noSingleUsePlasticStrawsException)
-    {
-    }
-    /**
-     * @return self::NO_SINGLE_USE_PLASTIC_STRAWS_EXCEPTION_*
-     */
-    public function getNoSingleUsePlasticStrawsException()
-    {
-    }
-    /**
-     * No single use plastic water bottles. The property bans single-use plastic
-     * water bottles.
-     *
-     * @param bool $noSingleUsePlasticWaterBottles
-     */
-    public function setNoSingleUsePlasticWaterBottles($noSingleUsePlasticWaterBottles)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNoSingleUsePlasticWaterBottles()
-    {
-    }
-    /**
-     * No single use plastic water bottles exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::NO_SINGLE_USE_PLASTIC_WATER_BOTTLES_EXCEPTION_* $noSingleUsePlasticWaterBottlesException
-     */
-    public function setNoSingleUsePlasticWaterBottlesException($noSingleUsePlasticWaterBottlesException)
-    {
-    }
-    /**
-     * @return self::NO_SINGLE_USE_PLASTIC_WATER_BOTTLES_EXCEPTION_*
-     */
-    public function getNoSingleUsePlasticWaterBottlesException()
-    {
-    }
-    /**
-     * No styrofoam food containers. The property eliminates the use of Styrofoam
-     * in disposable food service items.
-     *
-     * @param bool $noStyrofoamFoodContainers
-     */
-    public function setNoStyrofoamFoodContainers($noStyrofoamFoodContainers)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNoStyrofoamFoodContainers()
-    {
-    }
-    /**
-     * No styrofoam food containers exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::NO_STYROFOAM_FOOD_CONTAINERS_EXCEPTION_* $noStyrofoamFoodContainersException
-     */
-    public function setNoStyrofoamFoodContainersException($noStyrofoamFoodContainersException)
-    {
-    }
-    /**
-     * @return self::NO_STYROFOAM_FOOD_CONTAINERS_EXCEPTION_*
-     */
-    public function getNoStyrofoamFoodContainersException()
-    {
-    }
-    /**
-     * Recycling program. The property has a recycling program, aligned with LEED
-     * waste requirements, and a policy outlining efforts to send less than 50% of
-     * waste to landfill. The recycling program includes storage locations for
-     * recyclable materials, including mixed paper, corrugated cardboard, glass,
-     * plastics, and metals.
-     *
-     * @param bool $recyclingProgram
-     */
-    public function setRecyclingProgram($recyclingProgram)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRecyclingProgram()
-    {
-    }
-    /**
-     * Recycling program exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::RECYCLING_PROGRAM_EXCEPTION_* $recyclingProgramException
-     */
-    public function setRecyclingProgramException($recyclingProgramException)
-    {
-    }
-    /**
-     * @return self::RECYCLING_PROGRAM_EXCEPTION_*
-     */
-    public function getRecyclingProgramException()
-    {
-    }
-    /**
-     * Refillable toiletry containers. The property has replaced miniature
-     * individual containers with refillable amenity dispensers for shampoo,
-     * conditioner, soap, and lotion.
-     *
-     * @param bool $refillableToiletryContainers
-     */
-    public function setRefillableToiletryContainers($refillableToiletryContainers)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRefillableToiletryContainers()
-    {
-    }
-    /**
-     * Refillable toiletry containers exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::REFILLABLE_TOILETRY_CONTAINERS_EXCEPTION_* $refillableToiletryContainersException
-     */
-    public function setRefillableToiletryContainersException($refillableToiletryContainersException)
-    {
-    }
-    /**
-     * @return self::REFILLABLE_TOILETRY_CONTAINERS_EXCEPTION_*
-     */
-    public function getRefillableToiletryContainersException()
-    {
-    }
-    /**
-     * Safely disposes batteries. The property safely stores and disposes
-     * batteries.
-     *
-     * @param bool $safelyDisposesBatteries
-     */
-    public function setSafelyDisposesBatteries($safelyDisposesBatteries)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSafelyDisposesBatteries()
-    {
-    }
-    /**
-     * Safely disposes batteries exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::SAFELY_DISPOSES_BATTERIES_EXCEPTION_* $safelyDisposesBatteriesException
-     */
-    public function setSafelyDisposesBatteriesException($safelyDisposesBatteriesException)
-    {
-    }
-    /**
-     * @return self::SAFELY_DISPOSES_BATTERIES_EXCEPTION_*
-     */
-    public function getSafelyDisposesBatteriesException()
-    {
-    }
-    /**
-     * Safely disposes electronics. The property has a reputable recycling program
-     * that keeps hazardous electronic parts and chemical compounds out of
-     * landfills, dumps and other unauthorized abandonment sites, and
-     * recycles/reuses applicable materials. (e.g. certified electronics
-     * recyclers).
-     *
-     * @param bool $safelyDisposesElectronics
-     */
-    public function setSafelyDisposesElectronics($safelyDisposesElectronics)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSafelyDisposesElectronics()
-    {
-    }
-    /**
-     * Safely disposes electronics exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::SAFELY_DISPOSES_ELECTRONICS_EXCEPTION_* $safelyDisposesElectronicsException
-     */
-    public function setSafelyDisposesElectronicsException($safelyDisposesElectronicsException)
-    {
-    }
-    /**
-     * @return self::SAFELY_DISPOSES_ELECTRONICS_EXCEPTION_*
-     */
-    public function getSafelyDisposesElectronicsException()
-    {
-    }
-    /**
-     * Safely disposes lightbulbs. The property safely stores and disposes
-     * lightbulbs.
-     *
-     * @param bool $safelyDisposesLightbulbs
-     */
-    public function setSafelyDisposesLightbulbs($safelyDisposesLightbulbs)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSafelyDisposesLightbulbs()
-    {
-    }
-    /**
-     * Safely disposes lightbulbs exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::SAFELY_DISPOSES_LIGHTBULBS_EXCEPTION_* $safelyDisposesLightbulbsException
-     */
-    public function setSafelyDisposesLightbulbsException($safelyDisposesLightbulbsException)
-    {
-    }
-    /**
-     * @return self::SAFELY_DISPOSES_LIGHTBULBS_EXCEPTION_*
-     */
-    public function getSafelyDisposesLightbulbsException()
-    {
-    }
-    /**
-     * Safely handles hazardous substances. The property has a hazardous waste
-     * management program aligned wit GreenSeal and LEED requirements, and meets
-     * all regulatory requirements for hazardous waste disposal and recycling.
-     * Hazardous means substances that are classified as "hazardous" by an
-     * authoritative body (such as OSHA or DOT), are labeled with signal words
-     * such as "Danger," "Caution," "Warning," or are flammable, corrosive, or
-     * ignitable. Requirements include: - The property shall maintain records of
-     * the efforts it has made to replace the hazardous substances it uses with
-     * less hazardous alternatives. - An inventory of the hazardous materials
-     * stored on-site. - Products intended for cleaning, dishwashing, laundry, and
-     * pool maintenance shall be stored in clearly labeled containers. These
-     * containers shall be checked regularly for leaks, and replaced a necessary.
-     * - Spill containment devices shall be installed to collect spills, drips, or
-     * leaching of chemicals.
-     *
-     * @param bool $safelyHandlesHazardousSubstances
-     */
-    public function setSafelyHandlesHazardousSubstances($safelyHandlesHazardousSubstances)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSafelyHandlesHazardousSubstances()
-    {
-    }
-    /**
-     * Safely handles hazardous substances exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::SAFELY_HANDLES_HAZARDOUS_SUBSTANCES_EXCEPTION_* $safelyHandlesHazardousSubstancesException
-     */
-    public function setSafelyHandlesHazardousSubstancesException($safelyHandlesHazardousSubstancesException)
-    {
-    }
-    /**
-     * @return self::SAFELY_HANDLES_HAZARDOUS_SUBSTANCES_EXCEPTION_*
-     */
-    public function getSafelyHandlesHazardousSubstancesException()
-    {
-    }
-    /**
-     * Soap donation program. The property participates in a soap donation program
-     * such as Clean the World or something similar.
-     *
-     * @param bool $soapDonationProgram
-     */
-    public function setSoapDonationProgram($soapDonationProgram)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSoapDonationProgram()
-    {
-    }
-    /**
-     * Soap donation program exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::SOAP_DONATION_PROGRAM_EXCEPTION_* $soapDonationProgramException
-     */
-    public function setSoapDonationProgramException($soapDonationProgramException)
-    {
-    }
-    /**
-     * @return self::SOAP_DONATION_PROGRAM_EXCEPTION_*
-     */
-    public function getSoapDonationProgramException()
-    {
-    }
-    /**
-     * Toiletry donation program. The property participates in a toiletry donation
-     * program such as Clean the World or something similar.
-     *
-     * @param bool $toiletryDonationProgram
-     */
-    public function setToiletryDonationProgram($toiletryDonationProgram)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getToiletryDonationProgram()
-    {
-    }
-    /**
-     * Toiletry donation program exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::TOILETRY_DONATION_PROGRAM_EXCEPTION_* $toiletryDonationProgramException
-     */
-    public function setToiletryDonationProgramException($toiletryDonationProgramException)
-    {
-    }
-    /**
-     * @return self::TOILETRY_DONATION_PROGRAM_EXCEPTION_*
-     */
-    public function getToiletryDonationProgramException()
-    {
-    }
-    /**
-     * Water bottle filling stations. The property offers water stations
-     * throughout the building for guest use.
-     *
-     * @param bool $waterBottleFillingStations
-     */
-    public function setWaterBottleFillingStations($waterBottleFillingStations)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWaterBottleFillingStations()
-    {
-    }
-    /**
-     * Water bottle filling stations exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::WATER_BOTTLE_FILLING_STATIONS_EXCEPTION_* $waterBottleFillingStationsException
-     */
-    public function setWaterBottleFillingStationsException($waterBottleFillingStationsException)
-    {
-    }
-    /**
-     * @return self::WATER_BOTTLE_FILLING_STATIONS_EXCEPTION_*
-     */
-    public function getWaterBottleFillingStationsException()
+    class Google_Service_MyBusinessLodging_WasteReduction extends \Google\Service\MyBusinessLodging\WasteReduction
     {
     }
 }

@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class Permission extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $apiDisabled;
-    /**
-     * @var string
-     */
-    public $customRolesSupportLevel;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var bool
-     */
-    public $onlyInPredefinedRoles;
-    /**
-     * @var string
-     */
-    public $primaryPermission;
-    /**
-     * @var string
-     */
-    public $stage;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @param bool
-     */
-    public function setApiDisabled($apiDisabled)
+namespace Google\Service\Iam {
+    class Permission extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $apiDisabled;
+        /**
+         * @var string
+         */
+        public $customRolesSupportLevel;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var bool
+         */
+        public $onlyInPredefinedRoles;
+        /**
+         * @var string
+         */
+        public $primaryPermission;
+        /**
+         * @var string
+         */
+        public $stage;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @param bool
+         */
+        public function setApiDisabled($apiDisabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getApiDisabled()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCustomRolesSupportLevel($customRolesSupportLevel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomRolesSupportLevel()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setOnlyInPredefinedRoles($onlyInPredefinedRoles)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOnlyInPredefinedRoles()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPrimaryPermission($primaryPermission)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimaryPermission()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStage($stage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Iam\Permission registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiDisabled()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCustomRolesSupportLevel($customRolesSupportLevel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomRolesSupportLevel()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setOnlyInPredefinedRoles($onlyInPredefinedRoles)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOnlyInPredefinedRoles()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPrimaryPermission($primaryPermission)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrimaryPermission()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStage($stage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Iam_Permission extends \Google\Service\Iam\Permission
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2ExportImageRequest extends \Google\Model
-{
-    /**
-     * Required. The export destination url (the Artifact Registry repo).
-     *
-     * @var string
-     */
-    public $destinationRepo;
-    /**
-     * Required. The export destination url (the Artifact Registry repo).
-     *
-     * @param string $destinationRepo
-     */
-    public function setDestinationRepo($destinationRepo)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2ExportImageRequest extends \Google\Model
     {
+        /**
+         * Required. The export destination url (the Artifact Registry repo).
+         *
+         * @var string
+         */
+        public $destinationRepo;
+        /**
+         * Required. The export destination url (the Artifact Registry repo).
+         *
+         * @param string $destinationRepo
+         */
+        public function setDestinationRepo($destinationRepo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationRepo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2ExportImageRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationRepo()
+    class Google_Service_CloudRun_GoogleCloudRunV2ExportImageRequest extends \Google\Service\CloudRun\GoogleCloudRunV2ExportImageRequest
     {
     }
 }

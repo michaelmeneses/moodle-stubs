@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class Callout extends \Google\Model
-{
-    /**
-     * Default value. Will never be provided by the API.
-     */
-    public const STYLE_HINT_CALLOUT_STYLE_HINT_UNSPECIFIED = 'CALLOUT_STYLE_HINT_UNSPECIFIED';
-    /**
-     * The most important type of information highlighting problems, like an
-     * unsuccessful outcome of previously requested actions.
-     */
-    public const STYLE_HINT_ERROR = 'ERROR';
-    /**
-     * Information warning about pending problems, risks or deadlines.
-     */
-    public const STYLE_HINT_WARNING = 'WARNING';
-    /**
-     * Default severity for important information like pending status of
-     * previously requested action or cooldown for re-review.
-     */
-    public const STYLE_HINT_INFO = 'INFO';
-    protected $fullMessageType = TextWithTooltip::class;
-    protected $fullMessageDataType = '';
-    /**
-     * Can be used to render messages with different severity in different styles.
-     * Snippets off all types contain important information that should be
-     * displayed to merchants.
-     *
-     * @var string
-     */
-    public $styleHint;
-    /**
-     * A full message that needs to be shown to the merchant.
-     *
-     * @param TextWithTooltip $fullMessage
-     */
-    public function setFullMessage(TextWithTooltip $fullMessage)
+namespace Google\Service\ShoppingContent {
+    class Callout extends \Google\Model
     {
+        /**
+         * Default value. Will never be provided by the API.
+         */
+        public const STYLE_HINT_CALLOUT_STYLE_HINT_UNSPECIFIED = 'CALLOUT_STYLE_HINT_UNSPECIFIED';
+        /**
+         * The most important type of information highlighting problems, like an
+         * unsuccessful outcome of previously requested actions.
+         */
+        public const STYLE_HINT_ERROR = 'ERROR';
+        /**
+         * Information warning about pending problems, risks or deadlines.
+         */
+        public const STYLE_HINT_WARNING = 'WARNING';
+        /**
+         * Default severity for important information like pending status of
+         * previously requested action or cooldown for re-review.
+         */
+        public const STYLE_HINT_INFO = 'INFO';
+        protected $fullMessageType = TextWithTooltip::class;
+        protected $fullMessageDataType = '';
+        /**
+         * Can be used to render messages with different severity in different styles.
+         * Snippets off all types contain important information that should be
+         * displayed to merchants.
+         *
+         * @var string
+         */
+        public $styleHint;
+        /**
+         * A full message that needs to be shown to the merchant.
+         *
+         * @param TextWithTooltip $fullMessage
+         */
+        public function setFullMessage(TextWithTooltip $fullMessage)
+        {
+        }
+        /**
+         * @return TextWithTooltip
+         */
+        public function getFullMessage()
+        {
+        }
+        /**
+         * Can be used to render messages with different severity in different styles.
+         * Snippets off all types contain important information that should be
+         * displayed to merchants.
+         *
+         * Accepted values: CALLOUT_STYLE_HINT_UNSPECIFIED, ERROR, WARNING, INFO
+         *
+         * @param self::STYLE_HINT_* $styleHint
+         */
+        public function setStyleHint($styleHint)
+        {
+        }
+        /**
+         * @return self::STYLE_HINT_*
+         */
+        public function getStyleHint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TextWithTooltip
+     * Runtime class alias of \Google\Service\ShoppingContent\Callout registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFullMessage()
-    {
-    }
-    /**
-     * Can be used to render messages with different severity in different styles.
-     * Snippets off all types contain important information that should be
-     * displayed to merchants.
-     *
-     * Accepted values: CALLOUT_STYLE_HINT_UNSPECIFIED, ERROR, WARNING, INFO
-     *
-     * @param self::STYLE_HINT_* $styleHint
-     */
-    public function setStyleHint($styleHint)
-    {
-    }
-    /**
-     * @return self::STYLE_HINT_*
-     */
-    public function getStyleHint()
+    class Google_Service_ShoppingContent_Callout extends \Google\Service\ShoppingContent\Callout
     {
     }
 }

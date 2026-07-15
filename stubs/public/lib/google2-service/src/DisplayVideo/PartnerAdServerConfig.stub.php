@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class PartnerAdServerConfig extends \Google\Model
-{
-    protected $measurementConfigType = MeasurementConfig::class;
-    protected $measurementConfigDataType = '';
-    /**
-     * Measurement settings of a partner.
-     *
-     * @param MeasurementConfig $measurementConfig
-     */
-    public function setMeasurementConfig(MeasurementConfig $measurementConfig)
+namespace Google\Service\DisplayVideo {
+    class PartnerAdServerConfig extends \Google\Model
     {
+        protected $measurementConfigType = MeasurementConfig::class;
+        protected $measurementConfigDataType = '';
+        /**
+         * Measurement settings of a partner.
+         *
+         * @param MeasurementConfig $measurementConfig
+         */
+        public function setMeasurementConfig(MeasurementConfig $measurementConfig)
+        {
+        }
+        /**
+         * @return MeasurementConfig
+         */
+        public function getMeasurementConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MeasurementConfig
+     * Runtime class alias of \Google\Service\DisplayVideo\PartnerAdServerConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMeasurementConfig()
+    class Google_Service_DisplayVideo_PartnerAdServerConfig extends \Google\Service\DisplayVideo\PartnerAdServerConfig
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class AdministratorWebTokenSpecZeroTouch extends \Google\Model
-{
-    /**
-     * Whether zero-touch embedded UI is usable with this token. If enabled, the
-     * admin can link zero-touch customers to this enterprise.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Whether zero-touch embedded UI is usable with this token. If enabled, the
-     * admin can link zero-touch customers to this enterprise.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\AndroidEnterprise {
+    class AdministratorWebTokenSpecZeroTouch extends \Google\Model
     {
+        /**
+         * Whether zero-touch embedded UI is usable with this token. If enabled, the
+         * admin can link zero-touch customers to this enterprise.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Whether zero-touch embedded UI is usable with this token. If enabled, the
+         * admin can link zero-touch customers to this enterprise.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AndroidEnterprise\AdministratorWebTokenSpecZeroTouch registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
+    class Google_Service_AndroidEnterprise_AdministratorWebTokenSpecZeroTouch extends \Google\Service\AndroidEnterprise\AdministratorWebTokenSpecZeroTouch
     {
     }
 }

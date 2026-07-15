@@ -21,142 +21,151 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class DataSourceGcpResource extends \Google\Model
-{
-    protected $alloyDbClusterDatasourcePropertiesType = AlloyDBClusterDataSourceProperties::class;
-    protected $alloyDbClusterDatasourcePropertiesDataType = '';
-    protected $cloudSqlInstanceDatasourcePropertiesType = CloudSqlInstanceDataSourceProperties::class;
-    protected $cloudSqlInstanceDatasourcePropertiesDataType = '';
-    protected $computeInstanceDatasourcePropertiesType = ComputeInstanceDataSourceProperties::class;
-    protected $computeInstanceDatasourcePropertiesDataType = '';
-    protected $diskDatasourcePropertiesType = DiskDataSourceProperties::class;
-    protected $diskDatasourcePropertiesDataType = '';
-    /**
-     * Output only. Full resource pathname URL of the source Google Cloud
-     * resource.
-     *
-     * @var string
-     */
-    public $gcpResourcename;
-    /**
-     * Location of the resource: //"global"/"unspecified".
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * The type of the Google Cloud resource. Use the Unified Resource Type, eg.
-     * compute.googleapis.com/Instance.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. AlloyDBClusterDataSourceProperties has a subset of AlloyDB
-     * cluster properties that are useful at the Datasource level. Currently none
-     * of its child properties are auditable. If new auditable properties are
-     * added, the AUDIT annotation should be added.
-     *
-     * @param AlloyDBClusterDataSourceProperties $alloyDbClusterDatasourceProperties
-     */
-    public function setAlloyDbClusterDatasourceProperties(AlloyDBClusterDataSourceProperties $alloyDbClusterDatasourceProperties)
+namespace Google\Service\Backupdr {
+    class DataSourceGcpResource extends \Google\Model
     {
+        protected $alloyDbClusterDatasourcePropertiesType = AlloyDBClusterDataSourceProperties::class;
+        protected $alloyDbClusterDatasourcePropertiesDataType = '';
+        protected $cloudSqlInstanceDatasourcePropertiesType = CloudSqlInstanceDataSourceProperties::class;
+        protected $cloudSqlInstanceDatasourcePropertiesDataType = '';
+        protected $computeInstanceDatasourcePropertiesType = ComputeInstanceDataSourceProperties::class;
+        protected $computeInstanceDatasourcePropertiesDataType = '';
+        protected $diskDatasourcePropertiesType = DiskDataSourceProperties::class;
+        protected $diskDatasourcePropertiesDataType = '';
+        /**
+         * Output only. Full resource pathname URL of the source Google Cloud
+         * resource.
+         *
+         * @var string
+         */
+        public $gcpResourcename;
+        /**
+         * Location of the resource: //"global"/"unspecified".
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * The type of the Google Cloud resource. Use the Unified Resource Type, eg.
+         * compute.googleapis.com/Instance.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. AlloyDBClusterDataSourceProperties has a subset of AlloyDB
+         * cluster properties that are useful at the Datasource level. Currently none
+         * of its child properties are auditable. If new auditable properties are
+         * added, the AUDIT annotation should be added.
+         *
+         * @param AlloyDBClusterDataSourceProperties $alloyDbClusterDatasourceProperties
+         */
+        public function setAlloyDbClusterDatasourceProperties(AlloyDBClusterDataSourceProperties $alloyDbClusterDatasourceProperties)
+        {
+        }
+        /**
+         * @return AlloyDBClusterDataSourceProperties
+         */
+        public function getAlloyDbClusterDatasourceProperties()
+        {
+        }
+        /**
+         * Output only. CloudSqlInstanceDataSourceProperties has a subset of Cloud SQL
+         * Instance properties that are useful at the Datasource level.
+         *
+         * @param CloudSqlInstanceDataSourceProperties $cloudSqlInstanceDatasourceProperties
+         */
+        public function setCloudSqlInstanceDatasourceProperties(CloudSqlInstanceDataSourceProperties $cloudSqlInstanceDatasourceProperties)
+        {
+        }
+        /**
+         * @return CloudSqlInstanceDataSourceProperties
+         */
+        public function getCloudSqlInstanceDatasourceProperties()
+        {
+        }
+        /**
+         * ComputeInstanceDataSourceProperties has a subset of Compute Instance
+         * properties that are useful at the Datasource level.
+         *
+         * @param ComputeInstanceDataSourceProperties $computeInstanceDatasourceProperties
+         */
+        public function setComputeInstanceDatasourceProperties(ComputeInstanceDataSourceProperties $computeInstanceDatasourceProperties)
+        {
+        }
+        /**
+         * @return ComputeInstanceDataSourceProperties
+         */
+        public function getComputeInstanceDatasourceProperties()
+        {
+        }
+        /**
+         * DiskDataSourceProperties has a subset of Disk properties that are useful at
+         * the Datasource level.
+         *
+         * @param DiskDataSourceProperties $diskDatasourceProperties
+         */
+        public function setDiskDatasourceProperties(DiskDataSourceProperties $diskDatasourceProperties)
+        {
+        }
+        /**
+         * @return DiskDataSourceProperties
+         */
+        public function getDiskDatasourceProperties()
+        {
+        }
+        /**
+         * Output only. Full resource pathname URL of the source Google Cloud
+         * resource.
+         *
+         * @param string $gcpResourcename
+         */
+        public function setGcpResourcename($gcpResourcename)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcpResourcename()
+        {
+        }
+        /**
+         * Location of the resource: //"global"/"unspecified".
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The type of the Google Cloud resource. Use the Unified Resource Type, eg.
+         * compute.googleapis.com/Instance.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AlloyDBClusterDataSourceProperties
+     * Runtime class alias of \Google\Service\Backupdr\DataSourceGcpResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlloyDbClusterDatasourceProperties()
-    {
-    }
-    /**
-     * Output only. CloudSqlInstanceDataSourceProperties has a subset of Cloud SQL
-     * Instance properties that are useful at the Datasource level.
-     *
-     * @param CloudSqlInstanceDataSourceProperties $cloudSqlInstanceDatasourceProperties
-     */
-    public function setCloudSqlInstanceDatasourceProperties(CloudSqlInstanceDataSourceProperties $cloudSqlInstanceDatasourceProperties)
-    {
-    }
-    /**
-     * @return CloudSqlInstanceDataSourceProperties
-     */
-    public function getCloudSqlInstanceDatasourceProperties()
-    {
-    }
-    /**
-     * ComputeInstanceDataSourceProperties has a subset of Compute Instance
-     * properties that are useful at the Datasource level.
-     *
-     * @param ComputeInstanceDataSourceProperties $computeInstanceDatasourceProperties
-     */
-    public function setComputeInstanceDatasourceProperties(ComputeInstanceDataSourceProperties $computeInstanceDatasourceProperties)
-    {
-    }
-    /**
-     * @return ComputeInstanceDataSourceProperties
-     */
-    public function getComputeInstanceDatasourceProperties()
-    {
-    }
-    /**
-     * DiskDataSourceProperties has a subset of Disk properties that are useful at
-     * the Datasource level.
-     *
-     * @param DiskDataSourceProperties $diskDatasourceProperties
-     */
-    public function setDiskDatasourceProperties(DiskDataSourceProperties $diskDatasourceProperties)
-    {
-    }
-    /**
-     * @return DiskDataSourceProperties
-     */
-    public function getDiskDatasourceProperties()
-    {
-    }
-    /**
-     * Output only. Full resource pathname URL of the source Google Cloud
-     * resource.
-     *
-     * @param string $gcpResourcename
-     */
-    public function setGcpResourcename($gcpResourcename)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcpResourcename()
-    {
-    }
-    /**
-     * Location of the resource: //"global"/"unspecified".
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * The type of the Google Cloud resource. Use the Unified Resource Type, eg.
-     * compute.googleapis.com/Instance.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Backupdr_DataSourceGcpResource extends \Google\Service\Backupdr\DataSourceGcpResource
     {
     }
 }

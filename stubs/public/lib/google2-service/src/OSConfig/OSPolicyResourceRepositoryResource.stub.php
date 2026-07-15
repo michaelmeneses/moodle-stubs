@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class OSPolicyResourceRepositoryResource extends \Google\Model
-{
-    protected $aptType = OSPolicyResourceRepositoryResourceAptRepository::class;
-    protected $aptDataType = '';
-    protected $gooType = OSPolicyResourceRepositoryResourceGooRepository::class;
-    protected $gooDataType = '';
-    protected $yumType = OSPolicyResourceRepositoryResourceYumRepository::class;
-    protected $yumDataType = '';
-    protected $zypperType = OSPolicyResourceRepositoryResourceZypperRepository::class;
-    protected $zypperDataType = '';
-    /**
-     * An Apt Repository.
-     *
-     * @param OSPolicyResourceRepositoryResourceAptRepository $apt
-     */
-    public function setApt(OSPolicyResourceRepositoryResourceAptRepository $apt)
+namespace Google\Service\OSConfig {
+    class OSPolicyResourceRepositoryResource extends \Google\Model
     {
+        protected $aptType = OSPolicyResourceRepositoryResourceAptRepository::class;
+        protected $aptDataType = '';
+        protected $gooType = OSPolicyResourceRepositoryResourceGooRepository::class;
+        protected $gooDataType = '';
+        protected $yumType = OSPolicyResourceRepositoryResourceYumRepository::class;
+        protected $yumDataType = '';
+        protected $zypperType = OSPolicyResourceRepositoryResourceZypperRepository::class;
+        protected $zypperDataType = '';
+        /**
+         * An Apt Repository.
+         *
+         * @param OSPolicyResourceRepositoryResourceAptRepository $apt
+         */
+        public function setApt(OSPolicyResourceRepositoryResourceAptRepository $apt)
+        {
+        }
+        /**
+         * @return OSPolicyResourceRepositoryResourceAptRepository
+         */
+        public function getApt()
+        {
+        }
+        /**
+         * A Goo Repository.
+         *
+         * @param OSPolicyResourceRepositoryResourceGooRepository $goo
+         */
+        public function setGoo(OSPolicyResourceRepositoryResourceGooRepository $goo)
+        {
+        }
+        /**
+         * @return OSPolicyResourceRepositoryResourceGooRepository
+         */
+        public function getGoo()
+        {
+        }
+        /**
+         * A Yum Repository.
+         *
+         * @param OSPolicyResourceRepositoryResourceYumRepository $yum
+         */
+        public function setYum(OSPolicyResourceRepositoryResourceYumRepository $yum)
+        {
+        }
+        /**
+         * @return OSPolicyResourceRepositoryResourceYumRepository
+         */
+        public function getYum()
+        {
+        }
+        /**
+         * A Zypper Repository.
+         *
+         * @param OSPolicyResourceRepositoryResourceZypperRepository $zypper
+         */
+        public function setZypper(OSPolicyResourceRepositoryResourceZypperRepository $zypper)
+        {
+        }
+        /**
+         * @return OSPolicyResourceRepositoryResourceZypperRepository
+         */
+        public function getZypper()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OSPolicyResourceRepositoryResourceAptRepository
+     * Runtime class alias of \Google\Service\OSConfig\OSPolicyResourceRepositoryResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApt()
-    {
-    }
-    /**
-     * A Goo Repository.
-     *
-     * @param OSPolicyResourceRepositoryResourceGooRepository $goo
-     */
-    public function setGoo(OSPolicyResourceRepositoryResourceGooRepository $goo)
-    {
-    }
-    /**
-     * @return OSPolicyResourceRepositoryResourceGooRepository
-     */
-    public function getGoo()
-    {
-    }
-    /**
-     * A Yum Repository.
-     *
-     * @param OSPolicyResourceRepositoryResourceYumRepository $yum
-     */
-    public function setYum(OSPolicyResourceRepositoryResourceYumRepository $yum)
-    {
-    }
-    /**
-     * @return OSPolicyResourceRepositoryResourceYumRepository
-     */
-    public function getYum()
-    {
-    }
-    /**
-     * A Zypper Repository.
-     *
-     * @param OSPolicyResourceRepositoryResourceZypperRepository $zypper
-     */
-    public function setZypper(OSPolicyResourceRepositoryResourceZypperRepository $zypper)
-    {
-    }
-    /**
-     * @return OSPolicyResourceRepositoryResourceZypperRepository
-     */
-    public function getZypper()
+    class Google_Service_OSConfig_OSPolicyResourceRepositoryResource extends \Google\Service\OSConfig\OSPolicyResourceRepositoryResource
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Chromewebstore;
-
-class DeployInfo extends \Google\Model
-{
-    /**
-     * Required. The current deploy percentage for the release channel
-     * (nonnegative number between 0 and 100).
-     *
-     * @var int
-     */
-    public $deployPercentage;
-    /**
-     * Required. The current deploy percentage for the release channel
-     * (nonnegative number between 0 and 100).
-     *
-     * @param int $deployPercentage
-     */
-    public function setDeployPercentage($deployPercentage)
+namespace Google\Service\Chromewebstore {
+    class DeployInfo extends \Google\Model
     {
+        /**
+         * Required. The current deploy percentage for the release channel
+         * (nonnegative number between 0 and 100).
+         *
+         * @var int
+         */
+        public $deployPercentage;
+        /**
+         * Required. The current deploy percentage for the release channel
+         * (nonnegative number between 0 and 100).
+         *
+         * @param int $deployPercentage
+         */
+        public function setDeployPercentage($deployPercentage)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDeployPercentage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Chromewebstore\DeployInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployPercentage()
+    class Google_Service_Chromewebstore_DeployInfo extends \Google\Service\Chromewebstore\DeployInfo
     {
     }
 }

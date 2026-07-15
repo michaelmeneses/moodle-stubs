@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sasportal;
-
-class SasPortalMigrateOrganizationRequest extends \Google\Model
-{
-    /**
-     * Required. Id of the SAS organization to be migrated.
-     *
-     * @var string
-     */
-    public $organizationId;
-    /**
-     * Required. Id of the SAS organization to be migrated.
-     *
-     * @param string $organizationId
-     */
-    public function setOrganizationId($organizationId)
+namespace Google\Service\Sasportal {
+    class SasPortalMigrateOrganizationRequest extends \Google\Model
     {
+        /**
+         * Required. Id of the SAS organization to be migrated.
+         *
+         * @var string
+         */
+        public $organizationId;
+        /**
+         * Required. Id of the SAS organization to be migrated.
+         *
+         * @param string $organizationId
+         */
+        public function setOrganizationId($organizationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrganizationId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sasportal\SasPortalMigrateOrganizationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOrganizationId()
+    class Google_Service_Sasportal_SasPortalMigrateOrganizationRequest extends \Google\Service\Sasportal\SasPortalMigrateOrganizationRequest
     {
     }
 }

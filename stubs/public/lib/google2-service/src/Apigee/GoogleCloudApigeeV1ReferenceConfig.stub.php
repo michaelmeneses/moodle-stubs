@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ReferenceConfig extends \Google\Model
-{
-    /**
-     * Name of the reference in the following format:
-     * `organizations/{org}/environments/{env}/references/{reference}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Name of the referenced resource in the following format:
-     * `organizations/{org}/environments/{env}/keystores/{keystore}` Only
-     * references to keystore resources are supported.
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * Name of the reference in the following format:
-     * `organizations/{org}/environments/{env}/references/{reference}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ReferenceConfig extends \Google\Model
     {
+        /**
+         * Name of the reference in the following format:
+         * `organizations/{org}/environments/{env}/references/{reference}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Name of the referenced resource in the following format:
+         * `organizations/{org}/environments/{env}/keystores/{keystore}` Only
+         * references to keystore resources are supported.
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * Name of the reference in the following format:
+         * `organizations/{org}/environments/{env}/references/{reference}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Name of the referenced resource in the following format:
+         * `organizations/{org}/environments/{env}/keystores/{keystore}` Only
+         * references to keystore resources are supported.
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ReferenceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Name of the referenced resource in the following format:
-     * `organizations/{org}/environments/{env}/keystores/{keystore}` Only
-     * references to keystore resources are supported.
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ReferenceConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1ReferenceConfig
     {
     }
 }

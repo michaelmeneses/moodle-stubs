@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner;
-
-class Dpc extends \Google\Model
-{
-    /**
-     * Output only. The title of the DPC app in Google Play. For example, _Google
-     * Apps Device Policy_. Useful in an application's user interface.
-     *
-     * @var string
-     */
-    public $dpcName;
-    /**
-     * Output only. The API resource name in the format
-     * `customers/[CUSTOMER_ID]/dpcs/[DPC_ID]`. Assigned by the server. To
-     * maintain a reference to a DPC across customer accounts, persist and match
-     * the last path component (`DPC_ID`).
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The DPC's Android application ID that looks like a Java
-     * package name. Zero-touch enrollment installs the DPC app onto a device
-     * using this identifier.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * Output only. The title of the DPC app in Google Play. For example, _Google
-     * Apps Device Policy_. Useful in an application's user interface.
-     *
-     * @param string $dpcName
-     */
-    public function setDpcName($dpcName)
+namespace Google\Service\AndroidProvisioningPartner {
+    class Dpc extends \Google\Model
     {
+        /**
+         * Output only. The title of the DPC app in Google Play. For example, _Google
+         * Apps Device Policy_. Useful in an application's user interface.
+         *
+         * @var string
+         */
+        public $dpcName;
+        /**
+         * Output only. The API resource name in the format
+         * `customers/[CUSTOMER_ID]/dpcs/[DPC_ID]`. Assigned by the server. To
+         * maintain a reference to a DPC across customer accounts, persist and match
+         * the last path component (`DPC_ID`).
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The DPC's Android application ID that looks like a Java
+         * package name. Zero-touch enrollment installs the DPC app onto a device
+         * using this identifier.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * Output only. The title of the DPC app in Google Play. For example, _Google
+         * Apps Device Policy_. Useful in an application's user interface.
+         *
+         * @param string $dpcName
+         */
+        public function setDpcName($dpcName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDpcName()
+        {
+        }
+        /**
+         * Output only. The API resource name in the format
+         * `customers/[CUSTOMER_ID]/dpcs/[DPC_ID]`. Assigned by the server. To
+         * maintain a reference to a DPC across customer accounts, persist and match
+         * the last path component (`DPC_ID`).
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The DPC's Android application ID that looks like a Java
+         * package name. Zero-touch enrollment installs the DPC app onto a device
+         * using this identifier.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\Dpc registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDpcName()
-    {
-    }
-    /**
-     * Output only. The API resource name in the format
-     * `customers/[CUSTOMER_ID]/dpcs/[DPC_ID]`. Assigned by the server. To
-     * maintain a reference to a DPC across customer accounts, persist and match
-     * the last path component (`DPC_ID`).
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The DPC's Android application ID that looks like a Java
-     * package name. Zero-touch enrollment installs the DPC app onto a device
-     * using this identifier.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
+    class Google_Service_AndroidProvisioningPartner_Dpc extends \Google\Service\AndroidProvisioningPartner\Dpc
     {
     }
 }

@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class FetchInstanceProvisioningSettingsResponse extends \Google\Collection
-{
-    protected $collection_key = 'images';
-    protected $imagesType = OSImage::class;
-    protected $imagesDataType = 'array';
-    /**
-     * @param OSImage[]
-     */
-    public function setImages($images)
+namespace Google\Service\Baremetalsolution {
+    class FetchInstanceProvisioningSettingsResponse extends \Google\Collection
     {
+        protected $collection_key = 'images';
+        protected $imagesType = OSImage::class;
+        protected $imagesDataType = 'array';
+        /**
+         * @param OSImage[]
+         */
+        public function setImages($images)
+        {
+        }
+        /**
+         * @return OSImage[]
+         */
+        public function getImages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OSImage[]
+     * Runtime class alias of \Google\Service\Baremetalsolution\FetchInstanceProvisioningSettingsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImages()
+    class Google_Service_Baremetalsolution_FetchInstanceProvisioningSettingsResponse extends \Google\Service\Baremetalsolution\FetchInstanceProvisioningSettingsResponse
     {
     }
 }

@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SpeakerVoiceConfig extends \Google\Model
-{
-    /**
-     * Required. The name of the speaker. This should be the same as the speaker
-     * name used in the prompt.
-     *
-     * @var string
-     */
-    public $speaker;
-    protected $voiceConfigType = GoogleCloudAiplatformV1VoiceConfig::class;
-    protected $voiceConfigDataType = '';
-    /**
-     * Required. The name of the speaker. This should be the same as the speaker
-     * name used in the prompt.
-     *
-     * @param string $speaker
-     */
-    public function setSpeaker($speaker)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SpeakerVoiceConfig extends \Google\Model
     {
+        /**
+         * Required. The name of the speaker. This should be the same as the speaker
+         * name used in the prompt.
+         *
+         * @var string
+         */
+        public $speaker;
+        protected $voiceConfigType = GoogleCloudAiplatformV1VoiceConfig::class;
+        protected $voiceConfigDataType = '';
+        /**
+         * Required. The name of the speaker. This should be the same as the speaker
+         * name used in the prompt.
+         *
+         * @param string $speaker
+         */
+        public function setSpeaker($speaker)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpeaker()
+        {
+        }
+        /**
+         * Required. The configuration for the voice of this speaker.
+         *
+         * @param GoogleCloudAiplatformV1VoiceConfig $voiceConfig
+         */
+        public function setVoiceConfig(GoogleCloudAiplatformV1VoiceConfig $voiceConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1VoiceConfig
+         */
+        public function getVoiceConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SpeakerVoiceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSpeaker()
-    {
-    }
-    /**
-     * Required. The configuration for the voice of this speaker.
-     *
-     * @param GoogleCloudAiplatformV1VoiceConfig $voiceConfig
-     */
-    public function setVoiceConfig(GoogleCloudAiplatformV1VoiceConfig $voiceConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1VoiceConfig
-     */
-    public function getVoiceConfig()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SpeakerVoiceConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SpeakerVoiceConfig
     {
     }
 }

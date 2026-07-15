@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceConsumerManagement;
-
-class ApplyTenantProjectConfigRequest extends \Google\Model
-{
-    protected $projectConfigType = TenantProjectConfig::class;
-    protected $projectConfigDataType = '';
-    /**
-     * Required. Tag of the project. Must be less than 128 characters. Required.
-     *
-     * @var string
-     */
-    public $tag;
-    /**
-     * Configuration that should be applied to the existing tenant project.
-     *
-     * @param TenantProjectConfig $projectConfig
-     */
-    public function setProjectConfig(TenantProjectConfig $projectConfig)
+namespace Google\Service\ServiceConsumerManagement {
+    class ApplyTenantProjectConfigRequest extends \Google\Model
     {
+        protected $projectConfigType = TenantProjectConfig::class;
+        protected $projectConfigDataType = '';
+        /**
+         * Required. Tag of the project. Must be less than 128 characters. Required.
+         *
+         * @var string
+         */
+        public $tag;
+        /**
+         * Configuration that should be applied to the existing tenant project.
+         *
+         * @param TenantProjectConfig $projectConfig
+         */
+        public function setProjectConfig(TenantProjectConfig $projectConfig)
+        {
+        }
+        /**
+         * @return TenantProjectConfig
+         */
+        public function getProjectConfig()
+        {
+        }
+        /**
+         * Required. Tag of the project. Must be less than 128 characters. Required.
+         *
+         * @param string $tag
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TenantProjectConfig
+     * Runtime class alias of \Google\Service\ServiceConsumerManagement\ApplyTenantProjectConfigRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectConfig()
-    {
-    }
-    /**
-     * Required. Tag of the project. Must be less than 128 characters. Required.
-     *
-     * @param string $tag
-     */
-    public function setTag($tag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTag()
+    class Google_Service_ServiceConsumerManagement_ApplyTenantProjectConfigRequest extends \Google\Service\ServiceConsumerManagement\ApplyTenantProjectConfigRequest
     {
     }
 }

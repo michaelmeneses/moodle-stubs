@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class ResizeDiskRequest extends \Google\Model
-{
-    protected $bootDiskType = BootDisk::class;
-    protected $bootDiskDataType = '';
-    protected $dataDiskType = DataDisk::class;
-    protected $dataDiskDataType = '';
-    /**
-     * Required. The boot disk to be resized. Only disk_size_gb will be used.
-     *
-     * @param BootDisk $bootDisk
-     */
-    public function setBootDisk(BootDisk $bootDisk)
+namespace Google\Service\AIPlatformNotebooks {
+    class ResizeDiskRequest extends \Google\Model
     {
+        protected $bootDiskType = BootDisk::class;
+        protected $bootDiskDataType = '';
+        protected $dataDiskType = DataDisk::class;
+        protected $dataDiskDataType = '';
+        /**
+         * Required. The boot disk to be resized. Only disk_size_gb will be used.
+         *
+         * @param BootDisk $bootDisk
+         */
+        public function setBootDisk(BootDisk $bootDisk)
+        {
+        }
+        /**
+         * @return BootDisk
+         */
+        public function getBootDisk()
+        {
+        }
+        /**
+         * Required. The data disk to be resized. Only disk_size_gb will be used.
+         *
+         * @param DataDisk $dataDisk
+         */
+        public function setDataDisk(DataDisk $dataDisk)
+        {
+        }
+        /**
+         * @return DataDisk
+         */
+        public function getDataDisk()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BootDisk
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\ResizeDiskRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBootDisk()
-    {
-    }
-    /**
-     * Required. The data disk to be resized. Only disk_size_gb will be used.
-     *
-     * @param DataDisk $dataDisk
-     */
-    public function setDataDisk(DataDisk $dataDisk)
-    {
-    }
-    /**
-     * @return DataDisk
-     */
-    public function getDataDisk()
+    class Google_Service_AIPlatformNotebooks_ResizeDiskRequest extends \Google\Service\AIPlatformNotebooks\ResizeDiskRequest
     {
     }
 }

@@ -21,125 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class BackendServiceLogConfig extends \Google\Collection
-{
-    /**
-     * A subset of optional fields.
-     */
-    public const OPTIONAL_MODE_CUSTOM = 'CUSTOM';
-    /**
-     * None optional fields.
-     */
-    public const OPTIONAL_MODE_EXCLUDE_ALL_OPTIONAL = 'EXCLUDE_ALL_OPTIONAL';
-    /**
-     * All optional fields.
-     */
-    public const OPTIONAL_MODE_INCLUDE_ALL_OPTIONAL = 'INCLUDE_ALL_OPTIONAL';
-    protected $collection_key = 'optionalFields';
-    /**
-     * Denotes whether to enable logging for the load balancer traffic served by
-     * this backend service. The default value is false.
-     *
-     * @var bool
-     */
-    public $enable;
-    /**
-     * This field can only be specified if logging is enabled for this backend
-     * service and "logConfig.optionalMode" was set to CUSTOM. Contains a list of
-     * optional fields you want to include in the logs. For example:
-     * serverInstance, serverGkeDetails.cluster, serverGkeDetails.pod.podNamespace
-     *
-     * @var string[]
-     */
-    public $optionalFields;
-    /**
-     * This field can only be specified if logging is enabled for this backend
-     * service. Configures whether all, none or a subset of optional fields should
-     * be added to the reported logs. One of [INCLUDE_ALL_OPTIONAL,
-     * EXCLUDE_ALL_OPTIONAL, CUSTOM]. Default is EXCLUDE_ALL_OPTIONAL.
-     *
-     * @var string
-     */
-    public $optionalMode;
-    /**
-     * This field can only be specified if logging is enabled for this backend
-     * service. The value of the field must be in [0, 1]. This configures the
-     * sampling rate of requests to the load balancer where 1.0 means all logged
-     * requests are reported and 0.0 means no logged requests are reported. The
-     * default value is 1.0.
-     *
-     * @var float
-     */
-    public $sampleRate;
-    /**
-     * Denotes whether to enable logging for the load balancer traffic served by
-     * this backend service. The default value is false.
-     *
-     * @param bool $enable
-     */
-    public function setEnable($enable)
+namespace Google\Service\Compute {
+    class BackendServiceLogConfig extends \Google\Collection
     {
+        /**
+         * A subset of optional fields.
+         */
+        public const OPTIONAL_MODE_CUSTOM = 'CUSTOM';
+        /**
+         * None optional fields.
+         */
+        public const OPTIONAL_MODE_EXCLUDE_ALL_OPTIONAL = 'EXCLUDE_ALL_OPTIONAL';
+        /**
+         * All optional fields.
+         */
+        public const OPTIONAL_MODE_INCLUDE_ALL_OPTIONAL = 'INCLUDE_ALL_OPTIONAL';
+        protected $collection_key = 'optionalFields';
+        /**
+         * Denotes whether to enable logging for the load balancer traffic served by
+         * this backend service. The default value is false.
+         *
+         * @var bool
+         */
+        public $enable;
+        /**
+         * This field can only be specified if logging is enabled for this backend
+         * service and "logConfig.optionalMode" was set to CUSTOM. Contains a list of
+         * optional fields you want to include in the logs. For example:
+         * serverInstance, serverGkeDetails.cluster, serverGkeDetails.pod.podNamespace
+         *
+         * @var string[]
+         */
+        public $optionalFields;
+        /**
+         * This field can only be specified if logging is enabled for this backend
+         * service. Configures whether all, none or a subset of optional fields should
+         * be added to the reported logs. One of [INCLUDE_ALL_OPTIONAL,
+         * EXCLUDE_ALL_OPTIONAL, CUSTOM]. Default is EXCLUDE_ALL_OPTIONAL.
+         *
+         * @var string
+         */
+        public $optionalMode;
+        /**
+         * This field can only be specified if logging is enabled for this backend
+         * service. The value of the field must be in [0, 1]. This configures the
+         * sampling rate of requests to the load balancer where 1.0 means all logged
+         * requests are reported and 0.0 means no logged requests are reported. The
+         * default value is 1.0.
+         *
+         * @var float
+         */
+        public $sampleRate;
+        /**
+         * Denotes whether to enable logging for the load balancer traffic served by
+         * this backend service. The default value is false.
+         *
+         * @param bool $enable
+         */
+        public function setEnable($enable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnable()
+        {
+        }
+        /**
+         * This field can only be specified if logging is enabled for this backend
+         * service and "logConfig.optionalMode" was set to CUSTOM. Contains a list of
+         * optional fields you want to include in the logs. For example:
+         * serverInstance, serverGkeDetails.cluster, serverGkeDetails.pod.podNamespace
+         *
+         * @param string[] $optionalFields
+         */
+        public function setOptionalFields($optionalFields)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOptionalFields()
+        {
+        }
+        /**
+         * This field can only be specified if logging is enabled for this backend
+         * service. Configures whether all, none or a subset of optional fields should
+         * be added to the reported logs. One of [INCLUDE_ALL_OPTIONAL,
+         * EXCLUDE_ALL_OPTIONAL, CUSTOM]. Default is EXCLUDE_ALL_OPTIONAL.
+         *
+         * Accepted values: CUSTOM, EXCLUDE_ALL_OPTIONAL, INCLUDE_ALL_OPTIONAL
+         *
+         * @param self::OPTIONAL_MODE_* $optionalMode
+         */
+        public function setOptionalMode($optionalMode)
+        {
+        }
+        /**
+         * @return self::OPTIONAL_MODE_*
+         */
+        public function getOptionalMode()
+        {
+        }
+        /**
+         * This field can only be specified if logging is enabled for this backend
+         * service. The value of the field must be in [0, 1]. This configures the
+         * sampling rate of requests to the load balancer where 1.0 means all logged
+         * requests are reported and 0.0 means no logged requests are reported. The
+         * default value is 1.0.
+         *
+         * @param float $sampleRate
+         */
+        public function setSampleRate($sampleRate)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getSampleRate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Compute\BackendServiceLogConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnable()
-    {
-    }
-    /**
-     * This field can only be specified if logging is enabled for this backend
-     * service and "logConfig.optionalMode" was set to CUSTOM. Contains a list of
-     * optional fields you want to include in the logs. For example:
-     * serverInstance, serverGkeDetails.cluster, serverGkeDetails.pod.podNamespace
-     *
-     * @param string[] $optionalFields
-     */
-    public function setOptionalFields($optionalFields)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOptionalFields()
-    {
-    }
-    /**
-     * This field can only be specified if logging is enabled for this backend
-     * service. Configures whether all, none or a subset of optional fields should
-     * be added to the reported logs. One of [INCLUDE_ALL_OPTIONAL,
-     * EXCLUDE_ALL_OPTIONAL, CUSTOM]. Default is EXCLUDE_ALL_OPTIONAL.
-     *
-     * Accepted values: CUSTOM, EXCLUDE_ALL_OPTIONAL, INCLUDE_ALL_OPTIONAL
-     *
-     * @param self::OPTIONAL_MODE_* $optionalMode
-     */
-    public function setOptionalMode($optionalMode)
-    {
-    }
-    /**
-     * @return self::OPTIONAL_MODE_*
-     */
-    public function getOptionalMode()
-    {
-    }
-    /**
-     * This field can only be specified if logging is enabled for this backend
-     * service. The value of the field must be in [0, 1]. This configures the
-     * sampling rate of requests to the load balancer where 1.0 means all logged
-     * requests are reported and 0.0 means no logged requests are reported. The
-     * default value is 1.0.
-     *
-     * @param float $sampleRate
-     */
-    public function setSampleRate($sampleRate)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getSampleRate()
+    class Google_Service_Compute_BackendServiceLogConfig extends \Google\Service\Compute\BackendServiceLogConfig
     {
     }
 }

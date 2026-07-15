@@ -21,183 +21,192 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class VoterInfoResponse extends \Google\Collection
-{
-    protected $collection_key = 'state';
-    protected $contestsType = Contest::class;
-    protected $contestsDataType = 'array';
-    protected $dropOffLocationsType = PollingLocation::class;
-    protected $dropOffLocationsDataType = 'array';
-    protected $earlyVoteSitesType = PollingLocation::class;
-    protected $earlyVoteSitesDataType = 'array';
-    protected $electionType = Election::class;
-    protected $electionDataType = '';
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var bool
-     */
-    public $mailOnly;
-    protected $normalizedInputType = SimpleAddressType::class;
-    protected $normalizedInputDataType = '';
-    protected $otherElectionsType = Election::class;
-    protected $otherElectionsDataType = 'array';
-    protected $pollingLocationsType = PollingLocation::class;
-    protected $pollingLocationsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $precinctId;
-    protected $precinctsType = Precinct::class;
-    protected $precinctsDataType = 'array';
-    protected $stateType = AdministrationRegion::class;
-    protected $stateDataType = 'array';
-    /**
-     * @param Contest[]
-     */
-    public function setContests($contests)
+namespace Google\Service\CivicInfo {
+    class VoterInfoResponse extends \Google\Collection
     {
+        protected $collection_key = 'state';
+        protected $contestsType = Contest::class;
+        protected $contestsDataType = 'array';
+        protected $dropOffLocationsType = PollingLocation::class;
+        protected $dropOffLocationsDataType = 'array';
+        protected $earlyVoteSitesType = PollingLocation::class;
+        protected $earlyVoteSitesDataType = 'array';
+        protected $electionType = Election::class;
+        protected $electionDataType = '';
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var bool
+         */
+        public $mailOnly;
+        protected $normalizedInputType = SimpleAddressType::class;
+        protected $normalizedInputDataType = '';
+        protected $otherElectionsType = Election::class;
+        protected $otherElectionsDataType = 'array';
+        protected $pollingLocationsType = PollingLocation::class;
+        protected $pollingLocationsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $precinctId;
+        protected $precinctsType = Precinct::class;
+        protected $precinctsDataType = 'array';
+        protected $stateType = AdministrationRegion::class;
+        protected $stateDataType = 'array';
+        /**
+         * @param Contest[]
+         */
+        public function setContests($contests)
+        {
+        }
+        /**
+         * @return Contest[]
+         */
+        public function getContests()
+        {
+        }
+        /**
+         * @param PollingLocation[]
+         */
+        public function setDropOffLocations($dropOffLocations)
+        {
+        }
+        /**
+         * @return PollingLocation[]
+         */
+        public function getDropOffLocations()
+        {
+        }
+        /**
+         * @param PollingLocation[]
+         */
+        public function setEarlyVoteSites($earlyVoteSites)
+        {
+        }
+        /**
+         * @return PollingLocation[]
+         */
+        public function getEarlyVoteSites()
+        {
+        }
+        /**
+         * @param Election
+         */
+        public function setElection(Election $election)
+        {
+        }
+        /**
+         * @return Election
+         */
+        public function getElection()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setMailOnly($mailOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMailOnly()
+        {
+        }
+        /**
+         * @param SimpleAddressType
+         */
+        public function setNormalizedInput(SimpleAddressType $normalizedInput)
+        {
+        }
+        /**
+         * @return SimpleAddressType
+         */
+        public function getNormalizedInput()
+        {
+        }
+        /**
+         * @param Election[]
+         */
+        public function setOtherElections($otherElections)
+        {
+        }
+        /**
+         * @return Election[]
+         */
+        public function getOtherElections()
+        {
+        }
+        /**
+         * @param PollingLocation[]
+         */
+        public function setPollingLocations($pollingLocations)
+        {
+        }
+        /**
+         * @return PollingLocation[]
+         */
+        public function getPollingLocations()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPrecinctId($precinctId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrecinctId()
+        {
+        }
+        /**
+         * @param Precinct[]
+         */
+        public function setPrecincts($precincts)
+        {
+        }
+        /**
+         * @return Precinct[]
+         */
+        public function getPrecincts()
+        {
+        }
+        /**
+         * @param AdministrationRegion[]
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return AdministrationRegion[]
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Contest[]
+     * Runtime class alias of \Google\Service\CivicInfo\VoterInfoResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContests()
-    {
-    }
-    /**
-     * @param PollingLocation[]
-     */
-    public function setDropOffLocations($dropOffLocations)
-    {
-    }
-    /**
-     * @return PollingLocation[]
-     */
-    public function getDropOffLocations()
-    {
-    }
-    /**
-     * @param PollingLocation[]
-     */
-    public function setEarlyVoteSites($earlyVoteSites)
-    {
-    }
-    /**
-     * @return PollingLocation[]
-     */
-    public function getEarlyVoteSites()
-    {
-    }
-    /**
-     * @param Election
-     */
-    public function setElection(Election $election)
-    {
-    }
-    /**
-     * @return Election
-     */
-    public function getElection()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setMailOnly($mailOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getMailOnly()
-    {
-    }
-    /**
-     * @param SimpleAddressType
-     */
-    public function setNormalizedInput(SimpleAddressType $normalizedInput)
-    {
-    }
-    /**
-     * @return SimpleAddressType
-     */
-    public function getNormalizedInput()
-    {
-    }
-    /**
-     * @param Election[]
-     */
-    public function setOtherElections($otherElections)
-    {
-    }
-    /**
-     * @return Election[]
-     */
-    public function getOtherElections()
-    {
-    }
-    /**
-     * @param PollingLocation[]
-     */
-    public function setPollingLocations($pollingLocations)
-    {
-    }
-    /**
-     * @return PollingLocation[]
-     */
-    public function getPollingLocations()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPrecinctId($precinctId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrecinctId()
-    {
-    }
-    /**
-     * @param Precinct[]
-     */
-    public function setPrecincts($precincts)
-    {
-    }
-    /**
-     * @return Precinct[]
-     */
-    public function getPrecincts()
-    {
-    }
-    /**
-     * @param AdministrationRegion[]
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return AdministrationRegion[]
-     */
-    public function getState()
+    class Google_Service_CivicInfo_VoterInfoResponse extends \Google\Service\CivicInfo\VoterInfoResponse
     {
     }
 }

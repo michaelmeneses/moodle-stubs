@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CCAIPlatform;
-
-class Critical extends \Google\Collection
-{
-    protected $collection_key = 'peakHours';
-    protected $peakHoursType = WeeklySchedule::class;
-    protected $peakHoursDataType = 'array';
-    /**
-     * Required. Hours during which the instance should not be updated.
-     *
-     * @param WeeklySchedule[] $peakHours
-     */
-    public function setPeakHours($peakHours)
+namespace Google\Service\CCAIPlatform {
+    class Critical extends \Google\Collection
     {
+        protected $collection_key = 'peakHours';
+        protected $peakHoursType = WeeklySchedule::class;
+        protected $peakHoursDataType = 'array';
+        /**
+         * Required. Hours during which the instance should not be updated.
+         *
+         * @param WeeklySchedule[] $peakHours
+         */
+        public function setPeakHours($peakHours)
+        {
+        }
+        /**
+         * @return WeeklySchedule[]
+         */
+        public function getPeakHours()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return WeeklySchedule[]
+     * Runtime class alias of \Google\Service\CCAIPlatform\Critical registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPeakHours()
+    class Google_Service_CCAIPlatform_Critical extends \Google\Service\CCAIPlatform\Critical
     {
     }
 }

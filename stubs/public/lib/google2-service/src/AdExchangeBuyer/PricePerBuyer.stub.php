@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class PricePerBuyer extends \Google\Model
-{
-    public $auctionTier;
-    protected $billedBuyerType = Buyer::class;
-    protected $billedBuyerDataType = '';
-    protected $buyerType = Buyer::class;
-    protected $buyerDataType = '';
-    protected $priceType = Price::class;
-    protected $priceDataType = '';
-    public function setAuctionTier($auctionTier)
+namespace Google\Service\AdExchangeBuyer {
+    class PricePerBuyer extends \Google\Model
     {
+        public $auctionTier;
+        protected $billedBuyerType = Buyer::class;
+        protected $billedBuyerDataType = '';
+        protected $buyerType = Buyer::class;
+        protected $buyerDataType = '';
+        protected $priceType = Price::class;
+        protected $priceDataType = '';
+        public function setAuctionTier($auctionTier)
+        {
+        }
+        public function getAuctionTier()
+        {
+        }
+        /**
+         * @param Buyer
+         */
+        public function setBilledBuyer(Buyer $billedBuyer)
+        {
+        }
+        /**
+         * @return Buyer
+         */
+        public function getBilledBuyer()
+        {
+        }
+        /**
+         * @param Buyer
+         */
+        public function setBuyer(Buyer $buyer)
+        {
+        }
+        /**
+         * @return Buyer
+         */
+        public function getBuyer()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setPrice(Price $price)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getPrice()
+        {
+        }
     }
-    public function getAuctionTier()
-    {
-    }
+}
+namespace {
     /**
-     * @param Buyer
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\PricePerBuyer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setBilledBuyer(Buyer $billedBuyer)
-    {
-    }
-    /**
-     * @return Buyer
-     */
-    public function getBilledBuyer()
-    {
-    }
-    /**
-     * @param Buyer
-     */
-    public function setBuyer(Buyer $buyer)
-    {
-    }
-    /**
-     * @return Buyer
-     */
-    public function getBuyer()
-    {
-    }
-    /**
-     * @param Price
-     */
-    public function setPrice(Price $price)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getPrice()
+    class Google_Service_AdExchangeBuyer_PricePerBuyer extends \Google\Service\AdExchangeBuyer\PricePerBuyer
     {
     }
 }

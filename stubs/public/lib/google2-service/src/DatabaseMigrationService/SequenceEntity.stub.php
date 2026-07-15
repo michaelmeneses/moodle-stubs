@@ -21,154 +21,163 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class SequenceEntity extends \Google\Model
-{
-    /**
-     * Indicates number of entries to cache / precreate.
-     *
-     * @var string
-     */
-    public $cache;
-    /**
-     * Custom engine specific features.
-     *
-     * @var array[]
-     */
-    public $customFeatures;
-    /**
-     * Indicates whether the sequence value should cycle through.
-     *
-     * @var bool
-     */
-    public $cycle;
-    /**
-     * Increment value for the sequence.
-     *
-     * @var string
-     */
-    public $increment;
-    /**
-     * Maximum number for the sequence represented as bytes to accommodate large.
-     * numbers
-     *
-     * @var string
-     */
-    public $maxValue;
-    /**
-     * Minimum number for the sequence represented as bytes to accommodate large.
-     * numbers
-     *
-     * @var string
-     */
-    public $minValue;
-    /**
-     * Start number for the sequence represented as bytes to accommodate large.
-     * numbers
-     *
-     * @var string
-     */
-    public $startValue;
-    /**
-     * Indicates number of entries to cache / precreate.
-     *
-     * @param string $cache
-     */
-    public function setCache($cache)
+namespace Google\Service\DatabaseMigrationService {
+    class SequenceEntity extends \Google\Model
     {
+        /**
+         * Indicates number of entries to cache / precreate.
+         *
+         * @var string
+         */
+        public $cache;
+        /**
+         * Custom engine specific features.
+         *
+         * @var array[]
+         */
+        public $customFeatures;
+        /**
+         * Indicates whether the sequence value should cycle through.
+         *
+         * @var bool
+         */
+        public $cycle;
+        /**
+         * Increment value for the sequence.
+         *
+         * @var string
+         */
+        public $increment;
+        /**
+         * Maximum number for the sequence represented as bytes to accommodate large.
+         * numbers
+         *
+         * @var string
+         */
+        public $maxValue;
+        /**
+         * Minimum number for the sequence represented as bytes to accommodate large.
+         * numbers
+         *
+         * @var string
+         */
+        public $minValue;
+        /**
+         * Start number for the sequence represented as bytes to accommodate large.
+         * numbers
+         *
+         * @var string
+         */
+        public $startValue;
+        /**
+         * Indicates number of entries to cache / precreate.
+         *
+         * @param string $cache
+         */
+        public function setCache($cache)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCache()
+        {
+        }
+        /**
+         * Custom engine specific features.
+         *
+         * @param array[] $customFeatures
+         */
+        public function setCustomFeatures($customFeatures)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getCustomFeatures()
+        {
+        }
+        /**
+         * Indicates whether the sequence value should cycle through.
+         *
+         * @param bool $cycle
+         */
+        public function setCycle($cycle)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCycle()
+        {
+        }
+        /**
+         * Increment value for the sequence.
+         *
+         * @param string $increment
+         */
+        public function setIncrement($increment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIncrement()
+        {
+        }
+        /**
+         * Maximum number for the sequence represented as bytes to accommodate large.
+         * numbers
+         *
+         * @param string $maxValue
+         */
+        public function setMaxValue($maxValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxValue()
+        {
+        }
+        /**
+         * Minimum number for the sequence represented as bytes to accommodate large.
+         * numbers
+         *
+         * @param string $minValue
+         */
+        public function setMinValue($minValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinValue()
+        {
+        }
+        /**
+         * Start number for the sequence represented as bytes to accommodate large.
+         * numbers
+         *
+         * @param string $startValue
+         */
+        public function setStartValue($startValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\SequenceEntity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCache()
-    {
-    }
-    /**
-     * Custom engine specific features.
-     *
-     * @param array[] $customFeatures
-     */
-    public function setCustomFeatures($customFeatures)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getCustomFeatures()
-    {
-    }
-    /**
-     * Indicates whether the sequence value should cycle through.
-     *
-     * @param bool $cycle
-     */
-    public function setCycle($cycle)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCycle()
-    {
-    }
-    /**
-     * Increment value for the sequence.
-     *
-     * @param string $increment
-     */
-    public function setIncrement($increment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIncrement()
-    {
-    }
-    /**
-     * Maximum number for the sequence represented as bytes to accommodate large.
-     * numbers
-     *
-     * @param string $maxValue
-     */
-    public function setMaxValue($maxValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxValue()
-    {
-    }
-    /**
-     * Minimum number for the sequence represented as bytes to accommodate large.
-     * numbers
-     *
-     * @param string $minValue
-     */
-    public function setMinValue($minValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinValue()
-    {
-    }
-    /**
-     * Start number for the sequence represented as bytes to accommodate large.
-     * numbers
-     *
-     * @param string $startValue
-     */
-    public function setStartValue($startValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartValue()
+    class Google_Service_DatabaseMigrationService_SequenceEntity extends \Google\Service\DatabaseMigrationService\SequenceEntity
     {
     }
 }

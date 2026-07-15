@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class MoveImpact extends \Google\Model
-{
-    /**
-     * User friendly impact detail in a free form message.
-     *
-     * @var string
-     */
-    public $detail;
-    /**
-     * User friendly impact detail in a free form message.
-     *
-     * @param string $detail
-     */
-    public function setDetail($detail)
+namespace Google\Service\CloudAsset {
+    class MoveImpact extends \Google\Model
     {
+        /**
+         * User friendly impact detail in a free form message.
+         *
+         * @var string
+         */
+        public $detail;
+        /**
+         * User friendly impact detail in a free form message.
+         *
+         * @param string $detail
+         */
+        public function setDetail($detail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDetail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\MoveImpact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetail()
+    class Google_Service_CloudAsset_MoveImpact extends \Google\Service\CloudAsset\MoveImpact
     {
     }
 }

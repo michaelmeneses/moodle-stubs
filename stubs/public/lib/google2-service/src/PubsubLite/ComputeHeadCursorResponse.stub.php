@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class ComputeHeadCursorResponse extends \Google\Model
-{
-    protected $headCursorType = Cursor::class;
-    protected $headCursorDataType = '';
-    /**
-     * The head cursor.
-     *
-     * @param Cursor $headCursor
-     */
-    public function setHeadCursor(Cursor $headCursor)
+namespace Google\Service\PubsubLite {
+    class ComputeHeadCursorResponse extends \Google\Model
     {
+        protected $headCursorType = Cursor::class;
+        protected $headCursorDataType = '';
+        /**
+         * The head cursor.
+         *
+         * @param Cursor $headCursor
+         */
+        public function setHeadCursor(Cursor $headCursor)
+        {
+        }
+        /**
+         * @return Cursor
+         */
+        public function getHeadCursor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Cursor
+     * Runtime class alias of \Google\Service\PubsubLite\ComputeHeadCursorResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeadCursor()
+    class Google_Service_PubsubLite_ComputeHeadCursorResponse extends \Google\Service\PubsubLite\ComputeHeadCursorResponse
     {
     }
 }

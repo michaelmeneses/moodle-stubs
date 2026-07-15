@@ -21,110 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild\Resource;
-
-/**
- * The "bitbucketServerConfigs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudbuildService = new Google\Service\CloudBuild(...);
- *   $bitbucketServerConfigs = $cloudbuildService->projects_locations_bitbucketServerConfigs;
- *  </code>
- */
-class ProjectsLocationsBitbucketServerConfigs extends \Google\Service\Resource
-{
+namespace Google\Service\CloudBuild\Resource {
+    use Google\Service\CloudBuild\BitbucketServerConfig;
+    use Google\Service\CloudBuild\CloudbuildEmpty;
+    use Google\Service\CloudBuild\ListBitbucketServerConfigsResponse;
+    use Google\Service\CloudBuild\Operation;
+    use Google\Service\CloudBuild\RemoveBitbucketServerConnectedRepositoryRequest;
     /**
-     * Creates a new `BitbucketServerConfig`. This API is experimental.
-     * (bitbucketServerConfigs.create)
-     *
-     * @param string $parent Required. Name of the parent resource.
-     * @param BitbucketServerConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string bitbucketServerConfigId Optional. The ID to use for the
-     * BitbucketServerConfig, which will become the final component of the
-     * BitbucketServerConfig's resource name. bitbucket_server_config_id must meet
-     * the following requirements: + They must contain only alphanumeric characters
-     * and dashes. + They can be 1-64 characters long. + They must begin and end
-     * with an alphanumeric character.
-     * @return Operation
+     * The "bitbucketServerConfigs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudbuildService = new Google\Service\CloudBuild(...);
+     *   $bitbucketServerConfigs = $cloudbuildService->projects_locations_bitbucketServerConfigs;
+     *  </code>
      */
-    public function create($parent, BitbucketServerConfig $postBody, $optParams = [])
+    class ProjectsLocationsBitbucketServerConfigs extends \Google\Service\Resource
     {
+        /**
+         * Creates a new `BitbucketServerConfig`. This API is experimental.
+         * (bitbucketServerConfigs.create)
+         *
+         * @param string $parent Required. Name of the parent resource.
+         * @param BitbucketServerConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string bitbucketServerConfigId Optional. The ID to use for the
+         * BitbucketServerConfig, which will become the final component of the
+         * BitbucketServerConfig's resource name. bitbucket_server_config_id must meet
+         * the following requirements: + They must contain only alphanumeric characters
+         * and dashes. + They can be 1-64 characters long. + They must begin and end
+         * with an alphanumeric character.
+         * @return Operation
+         */
+        public function create($parent, BitbucketServerConfig $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Delete a `BitbucketServerConfig`. This API is experimental.
+         * (bitbucketServerConfigs.delete)
+         *
+         * @param string $name Required. The config resource name.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Retrieve a `BitbucketServerConfig`. This API is experimental.
+         * (bitbucketServerConfigs.get)
+         *
+         * @param string $name Required. The config resource name.
+         * @param array $optParams Optional parameters.
+         * @return BitbucketServerConfig
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * List all `BitbucketServerConfigs` for a given project. This API is
+         * experimental.
+         * (bitbucketServerConfigs.listProjectsLocationsBitbucketServerConfigs)
+         *
+         * @param string $parent Required. Name of the parent resource.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of configs to return. The service
+         * may return fewer than this value. If unspecified, at most 50 configs will be
+         * returned. The maximum value is 1000; values above 1000 will be coerced to
+         * 1000.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListBitbucketServerConfigsRequest` call. Provide this to retrieve the
+         * subsequent page. When paginating, all other parameters provided to
+         * `ListBitbucketServerConfigsRequest` must match the call that provided the
+         * page token.
+         * @return ListBitbucketServerConfigsResponse
+         */
+        public function listProjectsLocationsBitbucketServerConfigs($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing `BitbucketServerConfig`. This API is experimental.
+         * (bitbucketServerConfigs.patch)
+         *
+         * @param string $name The resource name for the config.
+         * @param BitbucketServerConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Update mask for the resource. If this is set,
+         * the server will only update the fields specified in the field mask.
+         * Otherwise, a full update of the mutable resource fields will be performed.
+         * @return Operation
+         */
+        public function patch($name, BitbucketServerConfig $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Remove a Bitbucket Server repository from a given BitbucketServerConfig's
+         * connected repositories. This API is experimental.
+         * (bitbucketServerConfigs.removeBitbucketServerConnectedRepository)
+         *
+         * @param string $config Required. The name of the `BitbucketServerConfig` to
+         * remove a connected repository. Format:
+         * `projects/{project}/locations/{location}/bitbucketServerConfigs/{config}`
+         * @param RemoveBitbucketServerConnectedRepositoryRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return CloudbuildEmpty
+         */
+        public function removeBitbucketServerConnectedRepository($config, RemoveBitbucketServerConnectedRepositoryRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Delete a `BitbucketServerConfig`. This API is experimental.
-     * (bitbucketServerConfigs.delete)
-     *
-     * @param string $name Required. The config resource name.
-     * @param array $optParams Optional parameters.
-     * @return Operation
+     * Runtime class alias of \Google\Service\CloudBuild\Resource\ProjectsLocationsBitbucketServerConfigs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Retrieve a `BitbucketServerConfig`. This API is experimental.
-     * (bitbucketServerConfigs.get)
-     *
-     * @param string $name Required. The config resource name.
-     * @param array $optParams Optional parameters.
-     * @return BitbucketServerConfig
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * List all `BitbucketServerConfigs` for a given project. This API is
-     * experimental.
-     * (bitbucketServerConfigs.listProjectsLocationsBitbucketServerConfigs)
-     *
-     * @param string $parent Required. Name of the parent resource.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of configs to return. The service
-     * may return fewer than this value. If unspecified, at most 50 configs will be
-     * returned. The maximum value is 1000; values above 1000 will be coerced to
-     * 1000.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListBitbucketServerConfigsRequest` call. Provide this to retrieve the
-     * subsequent page. When paginating, all other parameters provided to
-     * `ListBitbucketServerConfigsRequest` must match the call that provided the
-     * page token.
-     * @return ListBitbucketServerConfigsResponse
-     */
-    public function listProjectsLocationsBitbucketServerConfigs($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing `BitbucketServerConfig`. This API is experimental.
-     * (bitbucketServerConfigs.patch)
-     *
-     * @param string $name The resource name for the config.
-     * @param BitbucketServerConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Update mask for the resource. If this is set,
-     * the server will only update the fields specified in the field mask.
-     * Otherwise, a full update of the mutable resource fields will be performed.
-     * @return Operation
-     */
-    public function patch($name, BitbucketServerConfig $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Remove a Bitbucket Server repository from a given BitbucketServerConfig's
-     * connected repositories. This API is experimental.
-     * (bitbucketServerConfigs.removeBitbucketServerConnectedRepository)
-     *
-     * @param string $config Required. The name of the `BitbucketServerConfig` to
-     * remove a connected repository. Format:
-     * `projects/{project}/locations/{location}/bitbucketServerConfigs/{config}`
-     * @param RemoveBitbucketServerConnectedRepositoryRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return CloudbuildEmpty
-     */
-    public function removeBitbucketServerConnectedRepository($config, RemoveBitbucketServerConnectedRepositoryRequest $postBody, $optParams = [])
+    class Google_Service_CloudBuild_Resource_ProjectsLocationsBitbucketServerConfigs extends \Google\Service\CloudBuild\Resource\ProjectsLocationsBitbucketServerConfigs
     {
     }
 }

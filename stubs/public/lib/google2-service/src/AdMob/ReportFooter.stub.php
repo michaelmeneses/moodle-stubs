@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdMob;
-
-class ReportFooter extends \Google\Collection
-{
-    protected $collection_key = 'warnings';
-    /**
-     * Total number of rows that matched the request. Warning: This count does NOT
-     * always match the number of rows in the response. Do not make that
-     * assumption when processing the response.
-     *
-     * @var string
-     */
-    public $matchingRowCount;
-    protected $warningsType = ReportWarning::class;
-    protected $warningsDataType = 'array';
-    /**
-     * Total number of rows that matched the request. Warning: This count does NOT
-     * always match the number of rows in the response. Do not make that
-     * assumption when processing the response.
-     *
-     * @param string $matchingRowCount
-     */
-    public function setMatchingRowCount($matchingRowCount)
+namespace Google\Service\AdMob {
+    class ReportFooter extends \Google\Collection
     {
+        protected $collection_key = 'warnings';
+        /**
+         * Total number of rows that matched the request. Warning: This count does NOT
+         * always match the number of rows in the response. Do not make that
+         * assumption when processing the response.
+         *
+         * @var string
+         */
+        public $matchingRowCount;
+        protected $warningsType = ReportWarning::class;
+        protected $warningsDataType = 'array';
+        /**
+         * Total number of rows that matched the request. Warning: This count does NOT
+         * always match the number of rows in the response. Do not make that
+         * assumption when processing the response.
+         *
+         * @param string $matchingRowCount
+         */
+        public function setMatchingRowCount($matchingRowCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatchingRowCount()
+        {
+        }
+        /**
+         * Warnings associated with generation of the report.
+         *
+         * @param ReportWarning[] $warnings
+         */
+        public function setWarnings($warnings)
+        {
+        }
+        /**
+         * @return ReportWarning[]
+         */
+        public function getWarnings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdMob\ReportFooter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMatchingRowCount()
-    {
-    }
-    /**
-     * Warnings associated with generation of the report.
-     *
-     * @param ReportWarning[] $warnings
-     */
-    public function setWarnings($warnings)
-    {
-    }
-    /**
-     * @return ReportWarning[]
-     */
-    public function getWarnings()
+    class Google_Service_AdMob_ReportFooter extends \Google\Service\AdMob\ReportFooter
     {
     }
 }

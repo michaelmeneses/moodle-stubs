@@ -21,233 +21,242 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class Resources extends \Google\Collection
-{
-    protected $collection_key = 'transitObjects';
-    protected $eventTicketClassesType = EventTicketClass::class;
-    protected $eventTicketClassesDataType = 'array';
-    protected $eventTicketObjectsType = EventTicketObject::class;
-    protected $eventTicketObjectsDataType = 'array';
-    protected $flightClassesType = FlightClass::class;
-    protected $flightClassesDataType = 'array';
-    protected $flightObjectsType = FlightObject::class;
-    protected $flightObjectsDataType = 'array';
-    protected $genericClassesType = GenericClass::class;
-    protected $genericClassesDataType = 'array';
-    protected $genericObjectsType = GenericObject::class;
-    protected $genericObjectsDataType = 'array';
-    protected $giftCardClassesType = GiftCardClass::class;
-    protected $giftCardClassesDataType = 'array';
-    protected $giftCardObjectsType = GiftCardObject::class;
-    protected $giftCardObjectsDataType = 'array';
-    protected $loyaltyClassesType = LoyaltyClass::class;
-    protected $loyaltyClassesDataType = 'array';
-    protected $loyaltyObjectsType = LoyaltyObject::class;
-    protected $loyaltyObjectsDataType = 'array';
-    protected $offerClassesType = OfferClass::class;
-    protected $offerClassesDataType = 'array';
-    protected $offerObjectsType = OfferObject::class;
-    protected $offerObjectsDataType = 'array';
-    protected $transitClassesType = TransitClass::class;
-    protected $transitClassesDataType = 'array';
-    protected $transitObjectsType = TransitObject::class;
-    protected $transitObjectsDataType = 'array';
-    /**
-     * A list of event ticket classes.
-     *
-     * @param EventTicketClass[] $eventTicketClasses
-     */
-    public function setEventTicketClasses($eventTicketClasses)
+namespace Google\Service\Walletobjects {
+    class Resources extends \Google\Collection
     {
+        protected $collection_key = 'transitObjects';
+        protected $eventTicketClassesType = EventTicketClass::class;
+        protected $eventTicketClassesDataType = 'array';
+        protected $eventTicketObjectsType = EventTicketObject::class;
+        protected $eventTicketObjectsDataType = 'array';
+        protected $flightClassesType = FlightClass::class;
+        protected $flightClassesDataType = 'array';
+        protected $flightObjectsType = FlightObject::class;
+        protected $flightObjectsDataType = 'array';
+        protected $genericClassesType = GenericClass::class;
+        protected $genericClassesDataType = 'array';
+        protected $genericObjectsType = GenericObject::class;
+        protected $genericObjectsDataType = 'array';
+        protected $giftCardClassesType = GiftCardClass::class;
+        protected $giftCardClassesDataType = 'array';
+        protected $giftCardObjectsType = GiftCardObject::class;
+        protected $giftCardObjectsDataType = 'array';
+        protected $loyaltyClassesType = LoyaltyClass::class;
+        protected $loyaltyClassesDataType = 'array';
+        protected $loyaltyObjectsType = LoyaltyObject::class;
+        protected $loyaltyObjectsDataType = 'array';
+        protected $offerClassesType = OfferClass::class;
+        protected $offerClassesDataType = 'array';
+        protected $offerObjectsType = OfferObject::class;
+        protected $offerObjectsDataType = 'array';
+        protected $transitClassesType = TransitClass::class;
+        protected $transitClassesDataType = 'array';
+        protected $transitObjectsType = TransitObject::class;
+        protected $transitObjectsDataType = 'array';
+        /**
+         * A list of event ticket classes.
+         *
+         * @param EventTicketClass[] $eventTicketClasses
+         */
+        public function setEventTicketClasses($eventTicketClasses)
+        {
+        }
+        /**
+         * @return EventTicketClass[]
+         */
+        public function getEventTicketClasses()
+        {
+        }
+        /**
+         * A list of event ticket objects.
+         *
+         * @param EventTicketObject[] $eventTicketObjects
+         */
+        public function setEventTicketObjects($eventTicketObjects)
+        {
+        }
+        /**
+         * @return EventTicketObject[]
+         */
+        public function getEventTicketObjects()
+        {
+        }
+        /**
+         * A list of flight classes.
+         *
+         * @param FlightClass[] $flightClasses
+         */
+        public function setFlightClasses($flightClasses)
+        {
+        }
+        /**
+         * @return FlightClass[]
+         */
+        public function getFlightClasses()
+        {
+        }
+        /**
+         * A list of flight objects.
+         *
+         * @param FlightObject[] $flightObjects
+         */
+        public function setFlightObjects($flightObjects)
+        {
+        }
+        /**
+         * @return FlightObject[]
+         */
+        public function getFlightObjects()
+        {
+        }
+        /**
+         * A list of generic classes.
+         *
+         * @param GenericClass[] $genericClasses
+         */
+        public function setGenericClasses($genericClasses)
+        {
+        }
+        /**
+         * @return GenericClass[]
+         */
+        public function getGenericClasses()
+        {
+        }
+        /**
+         * A list of generic objects.
+         *
+         * @param GenericObject[] $genericObjects
+         */
+        public function setGenericObjects($genericObjects)
+        {
+        }
+        /**
+         * @return GenericObject[]
+         */
+        public function getGenericObjects()
+        {
+        }
+        /**
+         * A list of gift card classes.
+         *
+         * @param GiftCardClass[] $giftCardClasses
+         */
+        public function setGiftCardClasses($giftCardClasses)
+        {
+        }
+        /**
+         * @return GiftCardClass[]
+         */
+        public function getGiftCardClasses()
+        {
+        }
+        /**
+         * A list of gift card objects.
+         *
+         * @param GiftCardObject[] $giftCardObjects
+         */
+        public function setGiftCardObjects($giftCardObjects)
+        {
+        }
+        /**
+         * @return GiftCardObject[]
+         */
+        public function getGiftCardObjects()
+        {
+        }
+        /**
+         * A list of loyalty classes.
+         *
+         * @param LoyaltyClass[] $loyaltyClasses
+         */
+        public function setLoyaltyClasses($loyaltyClasses)
+        {
+        }
+        /**
+         * @return LoyaltyClass[]
+         */
+        public function getLoyaltyClasses()
+        {
+        }
+        /**
+         * A list of loyalty objects.
+         *
+         * @param LoyaltyObject[] $loyaltyObjects
+         */
+        public function setLoyaltyObjects($loyaltyObjects)
+        {
+        }
+        /**
+         * @return LoyaltyObject[]
+         */
+        public function getLoyaltyObjects()
+        {
+        }
+        /**
+         * A list of offer classes.
+         *
+         * @param OfferClass[] $offerClasses
+         */
+        public function setOfferClasses($offerClasses)
+        {
+        }
+        /**
+         * @return OfferClass[]
+         */
+        public function getOfferClasses()
+        {
+        }
+        /**
+         * A list of offer objects.
+         *
+         * @param OfferObject[] $offerObjects
+         */
+        public function setOfferObjects($offerObjects)
+        {
+        }
+        /**
+         * @return OfferObject[]
+         */
+        public function getOfferObjects()
+        {
+        }
+        /**
+         * A list of transit classes.
+         *
+         * @param TransitClass[] $transitClasses
+         */
+        public function setTransitClasses($transitClasses)
+        {
+        }
+        /**
+         * @return TransitClass[]
+         */
+        public function getTransitClasses()
+        {
+        }
+        /**
+         * A list of transit objects.
+         *
+         * @param TransitObject[] $transitObjects
+         */
+        public function setTransitObjects($transitObjects)
+        {
+        }
+        /**
+         * @return TransitObject[]
+         */
+        public function getTransitObjects()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EventTicketClass[]
+     * Runtime class alias of \Google\Service\Walletobjects\Resources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventTicketClasses()
-    {
-    }
-    /**
-     * A list of event ticket objects.
-     *
-     * @param EventTicketObject[] $eventTicketObjects
-     */
-    public function setEventTicketObjects($eventTicketObjects)
-    {
-    }
-    /**
-     * @return EventTicketObject[]
-     */
-    public function getEventTicketObjects()
-    {
-    }
-    /**
-     * A list of flight classes.
-     *
-     * @param FlightClass[] $flightClasses
-     */
-    public function setFlightClasses($flightClasses)
-    {
-    }
-    /**
-     * @return FlightClass[]
-     */
-    public function getFlightClasses()
-    {
-    }
-    /**
-     * A list of flight objects.
-     *
-     * @param FlightObject[] $flightObjects
-     */
-    public function setFlightObjects($flightObjects)
-    {
-    }
-    /**
-     * @return FlightObject[]
-     */
-    public function getFlightObjects()
-    {
-    }
-    /**
-     * A list of generic classes.
-     *
-     * @param GenericClass[] $genericClasses
-     */
-    public function setGenericClasses($genericClasses)
-    {
-    }
-    /**
-     * @return GenericClass[]
-     */
-    public function getGenericClasses()
-    {
-    }
-    /**
-     * A list of generic objects.
-     *
-     * @param GenericObject[] $genericObjects
-     */
-    public function setGenericObjects($genericObjects)
-    {
-    }
-    /**
-     * @return GenericObject[]
-     */
-    public function getGenericObjects()
-    {
-    }
-    /**
-     * A list of gift card classes.
-     *
-     * @param GiftCardClass[] $giftCardClasses
-     */
-    public function setGiftCardClasses($giftCardClasses)
-    {
-    }
-    /**
-     * @return GiftCardClass[]
-     */
-    public function getGiftCardClasses()
-    {
-    }
-    /**
-     * A list of gift card objects.
-     *
-     * @param GiftCardObject[] $giftCardObjects
-     */
-    public function setGiftCardObjects($giftCardObjects)
-    {
-    }
-    /**
-     * @return GiftCardObject[]
-     */
-    public function getGiftCardObjects()
-    {
-    }
-    /**
-     * A list of loyalty classes.
-     *
-     * @param LoyaltyClass[] $loyaltyClasses
-     */
-    public function setLoyaltyClasses($loyaltyClasses)
-    {
-    }
-    /**
-     * @return LoyaltyClass[]
-     */
-    public function getLoyaltyClasses()
-    {
-    }
-    /**
-     * A list of loyalty objects.
-     *
-     * @param LoyaltyObject[] $loyaltyObjects
-     */
-    public function setLoyaltyObjects($loyaltyObjects)
-    {
-    }
-    /**
-     * @return LoyaltyObject[]
-     */
-    public function getLoyaltyObjects()
-    {
-    }
-    /**
-     * A list of offer classes.
-     *
-     * @param OfferClass[] $offerClasses
-     */
-    public function setOfferClasses($offerClasses)
-    {
-    }
-    /**
-     * @return OfferClass[]
-     */
-    public function getOfferClasses()
-    {
-    }
-    /**
-     * A list of offer objects.
-     *
-     * @param OfferObject[] $offerObjects
-     */
-    public function setOfferObjects($offerObjects)
-    {
-    }
-    /**
-     * @return OfferObject[]
-     */
-    public function getOfferObjects()
-    {
-    }
-    /**
-     * A list of transit classes.
-     *
-     * @param TransitClass[] $transitClasses
-     */
-    public function setTransitClasses($transitClasses)
-    {
-    }
-    /**
-     * @return TransitClass[]
-     */
-    public function getTransitClasses()
-    {
-    }
-    /**
-     * A list of transit objects.
-     *
-     * @param TransitObject[] $transitObjects
-     */
-    public function setTransitObjects($transitObjects)
-    {
-    }
-    /**
-     * @return TransitObject[]
-     */
-    public function getTransitObjects()
+    class Google_Service_Walletobjects_Resources extends \Google\Service\Walletobjects\Resources
     {
     }
 }

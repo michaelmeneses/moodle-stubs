@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeatureNoiseSigma extends \Google\Collection
-{
-    protected $collection_key = 'noiseSigma';
-    protected $noiseSigmaType = GoogleCloudAiplatformV1FeatureNoiseSigmaNoiseSigmaForFeature::class;
-    protected $noiseSigmaDataType = 'array';
-    /**
-     * Noise sigma per feature. No noise is added to features that are not set.
-     *
-     * @param GoogleCloudAiplatformV1FeatureNoiseSigmaNoiseSigmaForFeature[] $noiseSigma
-     */
-    public function setNoiseSigma($noiseSigma)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeatureNoiseSigma extends \Google\Collection
     {
+        protected $collection_key = 'noiseSigma';
+        protected $noiseSigmaType = GoogleCloudAiplatformV1FeatureNoiseSigmaNoiseSigmaForFeature::class;
+        protected $noiseSigmaDataType = 'array';
+        /**
+         * Noise sigma per feature. No noise is added to features that are not set.
+         *
+         * @param GoogleCloudAiplatformV1FeatureNoiseSigmaNoiseSigmaForFeature[] $noiseSigma
+         */
+        public function setNoiseSigma($noiseSigma)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeatureNoiseSigmaNoiseSigmaForFeature[]
+         */
+        public function getNoiseSigma()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1FeatureNoiseSigmaNoiseSigmaForFeature[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureNoiseSigma registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNoiseSigma()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeatureNoiseSigma extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureNoiseSigma
     {
     }
 }

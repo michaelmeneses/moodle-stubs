@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class InsertContent extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $content;
-    /**
-     * @var string
-     */
-    public $contentType;
-    /**
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * @param string
-     */
-    public function setContent($content)
+namespace Google\Service\CloudSearch {
+    class InsertContent extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $content;
+        /**
+         * @var string
+         */
+        public $contentType;
+        /**
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * @param string
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setContentType($contentType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\InsertContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setContentType($contentType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContentType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_CloudSearch_InsertContent extends \Google\Service\CloudSearch\InsertContent
     {
     }
 }

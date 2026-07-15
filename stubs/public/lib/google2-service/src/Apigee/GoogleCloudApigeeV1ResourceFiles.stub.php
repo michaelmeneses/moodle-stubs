@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ResourceFiles extends \Google\Collection
-{
-    protected $collection_key = 'resourceFile';
-    protected $resourceFileType = GoogleCloudApigeeV1ResourceFile::class;
-    protected $resourceFileDataType = 'array';
-    /**
-     * List of resource files.
-     *
-     * @param GoogleCloudApigeeV1ResourceFile[] $resourceFile
-     */
-    public function setResourceFile($resourceFile)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ResourceFiles extends \Google\Collection
     {
+        protected $collection_key = 'resourceFile';
+        protected $resourceFileType = GoogleCloudApigeeV1ResourceFile::class;
+        protected $resourceFileDataType = 'array';
+        /**
+         * List of resource files.
+         *
+         * @param GoogleCloudApigeeV1ResourceFile[] $resourceFile
+         */
+        public function setResourceFile($resourceFile)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1ResourceFile[]
+         */
+        public function getResourceFile()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1ResourceFile[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ResourceFiles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceFile()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ResourceFiles extends \Google\Service\Apigee\GoogleCloudApigeeV1ResourceFiles
     {
     }
 }

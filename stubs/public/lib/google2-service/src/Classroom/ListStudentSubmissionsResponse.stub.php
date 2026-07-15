@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class ListStudentSubmissionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'studentSubmissions';
-    /**
-     * Token identifying the next page of results to return. If empty, no further
-     * results are available.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $studentSubmissionsType = StudentSubmission::class;
-    protected $studentSubmissionsDataType = 'array';
-    /**
-     * Token identifying the next page of results to return. If empty, no further
-     * results are available.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Classroom {
+    class ListStudentSubmissionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'studentSubmissions';
+        /**
+         * Token identifying the next page of results to return. If empty, no further
+         * results are available.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $studentSubmissionsType = StudentSubmission::class;
+        protected $studentSubmissionsDataType = 'array';
+        /**
+         * Token identifying the next page of results to return. If empty, no further
+         * results are available.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Student work that matches the request.
+         *
+         * @param StudentSubmission[] $studentSubmissions
+         */
+        public function setStudentSubmissions($studentSubmissions)
+        {
+        }
+        /**
+         * @return StudentSubmission[]
+         */
+        public function getStudentSubmissions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\ListStudentSubmissionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Student work that matches the request.
-     *
-     * @param StudentSubmission[] $studentSubmissions
-     */
-    public function setStudentSubmissions($studentSubmissions)
-    {
-    }
-    /**
-     * @return StudentSubmission[]
-     */
-    public function getStudentSubmissions()
+    class Google_Service_Classroom_ListStudentSubmissionsResponse extends \Google\Service\Classroom\ListStudentSubmissionsResponse
     {
     }
 }

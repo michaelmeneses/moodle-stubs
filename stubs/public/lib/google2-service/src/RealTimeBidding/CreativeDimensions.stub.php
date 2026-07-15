@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class CreativeDimensions extends \Google\Model
-{
-    /**
-     * The height of the creative in pixels.
-     *
-     * @var string
-     */
-    public $height;
-    /**
-     * The width of the creative in pixels.
-     *
-     * @var string
-     */
-    public $width;
-    /**
-     * The height of the creative in pixels.
-     *
-     * @param string $height
-     */
-    public function setHeight($height)
+namespace Google\Service\RealTimeBidding {
+    class CreativeDimensions extends \Google\Model
     {
+        /**
+         * The height of the creative in pixels.
+         *
+         * @var string
+         */
+        public $height;
+        /**
+         * The width of the creative in pixels.
+         *
+         * @var string
+         */
+        public $width;
+        /**
+         * The height of the creative in pixels.
+         *
+         * @param string $height
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * The width of the creative in pixels.
+         *
+         * @param string $width
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RealTimeBidding\CreativeDimensions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeight()
-    {
-    }
-    /**
-     * The width of the creative in pixels.
-     *
-     * @param string $width
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWidth()
+    class Google_Service_RealTimeBidding_CreativeDimensions extends \Google\Service\RealTimeBidding\CreativeDimensions
     {
     }
 }

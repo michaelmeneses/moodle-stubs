@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class RegionPreferences extends \Google\Collection
-{
-    protected $collection_key = 'preferredRegions';
-    /**
-     * A list of preferred regions, ordered by the most preferred region first.
-     * Set only valid Google Cloud region names. See
-     * https://cloud.google.com/compute/docs/regions-zones for available regions.
-     *
-     * @var string[]
-     */
-    public $preferredRegions;
-    /**
-     * A list of preferred regions, ordered by the most preferred region first.
-     * Set only valid Google Cloud region names. See
-     * https://cloud.google.com/compute/docs/regions-zones for available regions.
-     *
-     * @param string[] $preferredRegions
-     */
-    public function setPreferredRegions($preferredRegions)
+namespace Google\Service\MigrationCenterAPI {
+    class RegionPreferences extends \Google\Collection
     {
+        protected $collection_key = 'preferredRegions';
+        /**
+         * A list of preferred regions, ordered by the most preferred region first.
+         * Set only valid Google Cloud region names. See
+         * https://cloud.google.com/compute/docs/regions-zones for available regions.
+         *
+         * @var string[]
+         */
+        public $preferredRegions;
+        /**
+         * A list of preferred regions, ordered by the most preferred region first.
+         * Set only valid Google Cloud region names. See
+         * https://cloud.google.com/compute/docs/regions-zones for available regions.
+         *
+         * @param string[] $preferredRegions
+         */
+        public function setPreferredRegions($preferredRegions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPreferredRegions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\RegionPreferences registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPreferredRegions()
+    class Google_Service_MigrationCenterAPI_RegionPreferences extends \Google\Service\MigrationCenterAPI\RegionPreferences
     {
     }
 }

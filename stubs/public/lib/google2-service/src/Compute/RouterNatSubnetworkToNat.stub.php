@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RouterNatSubnetworkToNat extends \Google\Collection
-{
-    protected $collection_key = 'sourceIpRangesToNat';
-    /**
-     * URL for the subnetwork resource that will use NAT.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * A list of the secondary ranges of the Subnetwork that are allowed to use
-     * NAT. This can be populated only if "LIST_OF_SECONDARY_IP_RANGES" is one of
-     * the values in source_ip_ranges_to_nat.
-     *
-     * @var string[]
-     */
-    public $secondaryIpRangeNames;
-    /**
-     * Specify the options for NAT ranges in the Subnetwork. All options of a
-     * single value are valid except NAT_IP_RANGE_OPTION_UNSPECIFIED. The only
-     * valid option with multiple values is: ["PRIMARY_IP_RANGE",
-     * "LIST_OF_SECONDARY_IP_RANGES"] Default: [ALL_IP_RANGES]
-     *
-     * @var string[]
-     */
-    public $sourceIpRangesToNat;
-    /**
-     * URL for the subnetwork resource that will use NAT.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Compute {
+    class RouterNatSubnetworkToNat extends \Google\Collection
     {
+        protected $collection_key = 'sourceIpRangesToNat';
+        /**
+         * URL for the subnetwork resource that will use NAT.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * A list of the secondary ranges of the Subnetwork that are allowed to use
+         * NAT. This can be populated only if "LIST_OF_SECONDARY_IP_RANGES" is one of
+         * the values in source_ip_ranges_to_nat.
+         *
+         * @var string[]
+         */
+        public $secondaryIpRangeNames;
+        /**
+         * Specify the options for NAT ranges in the Subnetwork. All options of a
+         * single value are valid except NAT_IP_RANGE_OPTION_UNSPECIFIED. The only
+         * valid option with multiple values is: ["PRIMARY_IP_RANGE",
+         * "LIST_OF_SECONDARY_IP_RANGES"] Default: [ALL_IP_RANGES]
+         *
+         * @var string[]
+         */
+        public $sourceIpRangesToNat;
+        /**
+         * URL for the subnetwork resource that will use NAT.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * A list of the secondary ranges of the Subnetwork that are allowed to use
+         * NAT. This can be populated only if "LIST_OF_SECONDARY_IP_RANGES" is one of
+         * the values in source_ip_ranges_to_nat.
+         *
+         * @param string[] $secondaryIpRangeNames
+         */
+        public function setSecondaryIpRangeNames($secondaryIpRangeNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSecondaryIpRangeNames()
+        {
+        }
+        /**
+         * Specify the options for NAT ranges in the Subnetwork. All options of a
+         * single value are valid except NAT_IP_RANGE_OPTION_UNSPECIFIED. The only
+         * valid option with multiple values is: ["PRIMARY_IP_RANGE",
+         * "LIST_OF_SECONDARY_IP_RANGES"] Default: [ALL_IP_RANGES]
+         *
+         * @param string[] $sourceIpRangesToNat
+         */
+        public function setSourceIpRangesToNat($sourceIpRangesToNat)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSourceIpRangesToNat()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\RouterNatSubnetworkToNat registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * A list of the secondary ranges of the Subnetwork that are allowed to use
-     * NAT. This can be populated only if "LIST_OF_SECONDARY_IP_RANGES" is one of
-     * the values in source_ip_ranges_to_nat.
-     *
-     * @param string[] $secondaryIpRangeNames
-     */
-    public function setSecondaryIpRangeNames($secondaryIpRangeNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSecondaryIpRangeNames()
-    {
-    }
-    /**
-     * Specify the options for NAT ranges in the Subnetwork. All options of a
-     * single value are valid except NAT_IP_RANGE_OPTION_UNSPECIFIED. The only
-     * valid option with multiple values is: ["PRIMARY_IP_RANGE",
-     * "LIST_OF_SECONDARY_IP_RANGES"] Default: [ALL_IP_RANGES]
-     *
-     * @param string[] $sourceIpRangesToNat
-     */
-    public function setSourceIpRangesToNat($sourceIpRangesToNat)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSourceIpRangesToNat()
+    class Google_Service_Compute_RouterNatSubnetworkToNat extends \Google\Service\Compute\RouterNatSubnetworkToNat
     {
     }
 }

@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Meet;
-
-class SignedinUser extends \Google\Model
-{
-    /**
-     * Output only. For a personal device, it's the user's first name and last
-     * name. For a robot account, it's the administrator-specified device name.
-     * For example, "Altostrat Room".
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. Unique ID for the user. Interoperable with Admin SDK API and
-     * People API. Format: `users/{user}`
-     *
-     * @var string
-     */
-    public $user;
-    /**
-     * Output only. For a personal device, it's the user's first name and last
-     * name. For a robot account, it's the administrator-specified device name.
-     * For example, "Altostrat Room".
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Meet {
+    class SignedinUser extends \Google\Model
     {
+        /**
+         * Output only. For a personal device, it's the user's first name and last
+         * name. For a robot account, it's the administrator-specified device name.
+         * For example, "Altostrat Room".
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. Unique ID for the user. Interoperable with Admin SDK API and
+         * People API. Format: `users/{user}`
+         *
+         * @var string
+         */
+        public $user;
+        /**
+         * Output only. For a personal device, it's the user's first name and last
+         * name. For a robot account, it's the administrator-specified device name.
+         * For example, "Altostrat Room".
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. Unique ID for the user. Interoperable with Admin SDK API and
+         * People API. Format: `users/{user}`
+         *
+         * @param string $user
+         */
+        public function setUser($user)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Meet\SignedinUser registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. Unique ID for the user. Interoperable with Admin SDK API and
-     * People API. Format: `users/{user}`
-     *
-     * @param string $user
-     */
-    public function setUser($user)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUser()
+    class Google_Service_Meet_SignedinUser extends \Google\Service\Meet\SignedinUser
     {
     }
 }

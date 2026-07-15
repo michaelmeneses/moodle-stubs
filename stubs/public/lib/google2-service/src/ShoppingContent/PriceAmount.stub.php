@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class PriceAmount extends \Google\Model
-{
-    /**
-     * The currency of the price.
-     *
-     * @var string
-     */
-    public $currency;
-    /**
-     * The price represented as a number.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The currency of the price.
-     *
-     * @param string $currency
-     */
-    public function setCurrency($currency)
+namespace Google\Service\ShoppingContent {
+    class PriceAmount extends \Google\Model
     {
+        /**
+         * The currency of the price.
+         *
+         * @var string
+         */
+        public $currency;
+        /**
+         * The price represented as a number.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The currency of the price.
+         *
+         * @param string $currency
+         */
+        public function setCurrency($currency)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrency()
+        {
+        }
+        /**
+         * The price represented as a number.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\PriceAmount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrency()
-    {
-    }
-    /**
-     * The price represented as a number.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_ShoppingContent_PriceAmount extends \Google\Service\ShoppingContent\PriceAmount
     {
     }
 }

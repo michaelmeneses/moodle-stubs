@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class ListGtagConfigResponse extends \Google\Collection
-{
-    protected $collection_key = 'gtagConfig';
-    protected $gtagConfigType = GtagConfig::class;
-    protected $gtagConfigDataType = 'array';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * All Google tag configs in a Container.
-     *
-     * @param GtagConfig[] $gtagConfig
-     */
-    public function setGtagConfig($gtagConfig)
+namespace Google\Service\TagManager {
+    class ListGtagConfigResponse extends \Google\Collection
     {
+        protected $collection_key = 'gtagConfig';
+        protected $gtagConfigType = GtagConfig::class;
+        protected $gtagConfigDataType = 'array';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * All Google tag configs in a Container.
+         *
+         * @param GtagConfig[] $gtagConfig
+         */
+        public function setGtagConfig($gtagConfig)
+        {
+        }
+        /**
+         * @return GtagConfig[]
+         */
+        public function getGtagConfig()
+        {
+        }
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GtagConfig[]
+     * Runtime class alias of \Google\Service\TagManager\ListGtagConfigResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGtagConfig()
-    {
-    }
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_TagManager_ListGtagConfigResponse extends \Google\Service\TagManager\ListGtagConfigResponse
     {
     }
 }

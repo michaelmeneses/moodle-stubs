@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceConsumerManagement;
-
-class V1Beta1GenerateServiceIdentityResponse extends \Google\Model
-{
-    protected $identityType = V1Beta1ServiceIdentity::class;
-    protected $identityDataType = '';
-    /**
-     * ServiceIdentity that was created or retrieved.
-     *
-     * @param V1Beta1ServiceIdentity $identity
-     */
-    public function setIdentity(V1Beta1ServiceIdentity $identity)
+namespace Google\Service\ServiceConsumerManagement {
+    class V1Beta1GenerateServiceIdentityResponse extends \Google\Model
     {
+        protected $identityType = V1Beta1ServiceIdentity::class;
+        protected $identityDataType = '';
+        /**
+         * ServiceIdentity that was created or retrieved.
+         *
+         * @param V1Beta1ServiceIdentity $identity
+         */
+        public function setIdentity(V1Beta1ServiceIdentity $identity)
+        {
+        }
+        /**
+         * @return V1Beta1ServiceIdentity
+         */
+        public function getIdentity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return V1Beta1ServiceIdentity
+     * Runtime class alias of \Google\Service\ServiceConsumerManagement\V1Beta1GenerateServiceIdentityResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIdentity()
+    class Google_Service_ServiceConsumerManagement_V1Beta1GenerateServiceIdentityResponse extends \Google\Service\ServiceConsumerManagement\V1Beta1GenerateServiceIdentityResponse
     {
     }
 }

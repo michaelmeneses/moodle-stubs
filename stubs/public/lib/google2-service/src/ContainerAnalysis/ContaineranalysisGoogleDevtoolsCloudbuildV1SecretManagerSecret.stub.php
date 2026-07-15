@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ContaineranalysisGoogleDevtoolsCloudbuildV1SecretManagerSecret extends \Google\Model
-{
-    /**
-     * Environment variable name to associate with the secret. Secret environment
-     * variables must be unique across all of a build's secrets, and must be used
-     * by at least one build step.
-     *
-     * @var string
-     */
-    public $env;
-    /**
-     * Resource name of the SecretVersion. In format: projects/secrets/versions
-     *
-     * @var string
-     */
-    public $versionName;
-    /**
-     * Environment variable name to associate with the secret. Secret environment
-     * variables must be unique across all of a build's secrets, and must be used
-     * by at least one build step.
-     *
-     * @param string $env
-     */
-    public function setEnv($env)
+namespace Google\Service\ContainerAnalysis {
+    class ContaineranalysisGoogleDevtoolsCloudbuildV1SecretManagerSecret extends \Google\Model
     {
+        /**
+         * Environment variable name to associate with the secret. Secret environment
+         * variables must be unique across all of a build's secrets, and must be used
+         * by at least one build step.
+         *
+         * @var string
+         */
+        public $env;
+        /**
+         * Resource name of the SecretVersion. In format: projects/secrets/versions
+         *
+         * @var string
+         */
+        public $versionName;
+        /**
+         * Environment variable name to associate with the secret. Secret environment
+         * variables must be unique across all of a build's secrets, and must be used
+         * by at least one build step.
+         *
+         * @param string $env
+         */
+        public function setEnv($env)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnv()
+        {
+        }
+        /**
+         * Resource name of the SecretVersion. In format: projects/secrets/versions
+         *
+         * @param string $versionName
+         */
+        public function setVersionName($versionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1SecretManagerSecret registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnv()
-    {
-    }
-    /**
-     * Resource name of the SecretVersion. In format: projects/secrets/versions
-     *
-     * @param string $versionName
-     */
-    public function setVersionName($versionName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionName()
+    class Google_Service_ContainerAnalysis_ContaineranalysisGoogleDevtoolsCloudbuildV1SecretManagerSecret extends \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1SecretManagerSecret
     {
     }
 }

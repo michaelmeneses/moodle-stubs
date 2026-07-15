@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class DeliveryControl extends \Google\Collection
-{
-    /**
-     * A placeholder for an undefined creative blocking level.
-     */
-    public const CREATIVE_BLOCKING_LEVEL_CREATIVE_BLOCKING_LEVEL_UNSPECIFIED = 'CREATIVE_BLOCKING_LEVEL_UNSPECIFIED';
-    /**
-     * Publisher blocking rules will be applied.
-     */
-    public const CREATIVE_BLOCKING_LEVEL_PUBLISHER_BLOCKING_RULES = 'PUBLISHER_BLOCKING_RULES';
-    /**
-     * The Ad Exchange policy blocking rules will be applied.
-     */
-    public const CREATIVE_BLOCKING_LEVEL_ADX_POLICY_BLOCKING_ONLY = 'ADX_POLICY_BLOCKING_ONLY';
-    /**
-     * A placeholder for an undefined delivery rate type.
-     */
-    public const DELIVERY_RATE_TYPE_DELIVERY_RATE_TYPE_UNSPECIFIED = 'DELIVERY_RATE_TYPE_UNSPECIFIED';
-    /**
-     * Impressions are served uniformly over the life of the deal.
-     */
-    public const DELIVERY_RATE_TYPE_EVENLY = 'EVENLY';
-    /**
-     * Impressions are served front-loaded.
-     */
-    public const DELIVERY_RATE_TYPE_FRONT_LOADED = 'FRONT_LOADED';
-    /**
-     * Impressions are served as fast as possible.
-     */
-    public const DELIVERY_RATE_TYPE_AS_FAST_AS_POSSIBLE = 'AS_FAST_AS_POSSIBLE';
-    protected $collection_key = 'frequencyCaps';
-    /**
-     * Output only. Specified the creative blocking levels to be applied.
-     *
-     * @var string
-     */
-    public $creativeBlockingLevel;
-    /**
-     * Output only. Specifies how the impression delivery will be paced.
-     *
-     * @var string
-     */
-    public $deliveryRateType;
-    protected $frequencyCapsType = FrequencyCap::class;
-    protected $frequencyCapsDataType = 'array';
-    /**
-     * Output only. Specified the creative blocking levels to be applied.
-     *
-     * Accepted values: CREATIVE_BLOCKING_LEVEL_UNSPECIFIED,
-     * PUBLISHER_BLOCKING_RULES, ADX_POLICY_BLOCKING_ONLY
-     *
-     * @param self::CREATIVE_BLOCKING_LEVEL_* $creativeBlockingLevel
-     */
-    public function setCreativeBlockingLevel($creativeBlockingLevel)
+namespace Google\Service\AdExchangeBuyerII {
+    class DeliveryControl extends \Google\Collection
     {
+        /**
+         * A placeholder for an undefined creative blocking level.
+         */
+        public const CREATIVE_BLOCKING_LEVEL_CREATIVE_BLOCKING_LEVEL_UNSPECIFIED = 'CREATIVE_BLOCKING_LEVEL_UNSPECIFIED';
+        /**
+         * Publisher blocking rules will be applied.
+         */
+        public const CREATIVE_BLOCKING_LEVEL_PUBLISHER_BLOCKING_RULES = 'PUBLISHER_BLOCKING_RULES';
+        /**
+         * The Ad Exchange policy blocking rules will be applied.
+         */
+        public const CREATIVE_BLOCKING_LEVEL_ADX_POLICY_BLOCKING_ONLY = 'ADX_POLICY_BLOCKING_ONLY';
+        /**
+         * A placeholder for an undefined delivery rate type.
+         */
+        public const DELIVERY_RATE_TYPE_DELIVERY_RATE_TYPE_UNSPECIFIED = 'DELIVERY_RATE_TYPE_UNSPECIFIED';
+        /**
+         * Impressions are served uniformly over the life of the deal.
+         */
+        public const DELIVERY_RATE_TYPE_EVENLY = 'EVENLY';
+        /**
+         * Impressions are served front-loaded.
+         */
+        public const DELIVERY_RATE_TYPE_FRONT_LOADED = 'FRONT_LOADED';
+        /**
+         * Impressions are served as fast as possible.
+         */
+        public const DELIVERY_RATE_TYPE_AS_FAST_AS_POSSIBLE = 'AS_FAST_AS_POSSIBLE';
+        protected $collection_key = 'frequencyCaps';
+        /**
+         * Output only. Specified the creative blocking levels to be applied.
+         *
+         * @var string
+         */
+        public $creativeBlockingLevel;
+        /**
+         * Output only. Specifies how the impression delivery will be paced.
+         *
+         * @var string
+         */
+        public $deliveryRateType;
+        protected $frequencyCapsType = FrequencyCap::class;
+        protected $frequencyCapsDataType = 'array';
+        /**
+         * Output only. Specified the creative blocking levels to be applied.
+         *
+         * Accepted values: CREATIVE_BLOCKING_LEVEL_UNSPECIFIED,
+         * PUBLISHER_BLOCKING_RULES, ADX_POLICY_BLOCKING_ONLY
+         *
+         * @param self::CREATIVE_BLOCKING_LEVEL_* $creativeBlockingLevel
+         */
+        public function setCreativeBlockingLevel($creativeBlockingLevel)
+        {
+        }
+        /**
+         * @return self::CREATIVE_BLOCKING_LEVEL_*
+         */
+        public function getCreativeBlockingLevel()
+        {
+        }
+        /**
+         * Output only. Specifies how the impression delivery will be paced.
+         *
+         * Accepted values: DELIVERY_RATE_TYPE_UNSPECIFIED, EVENLY, FRONT_LOADED,
+         * AS_FAST_AS_POSSIBLE
+         *
+         * @param self::DELIVERY_RATE_TYPE_* $deliveryRateType
+         */
+        public function setDeliveryRateType($deliveryRateType)
+        {
+        }
+        /**
+         * @return self::DELIVERY_RATE_TYPE_*
+         */
+        public function getDeliveryRateType()
+        {
+        }
+        /**
+         * Output only. Specifies any frequency caps.
+         *
+         * @param FrequencyCap[] $frequencyCaps
+         */
+        public function setFrequencyCaps($frequencyCaps)
+        {
+        }
+        /**
+         * @return FrequencyCap[]
+         */
+        public function getFrequencyCaps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CREATIVE_BLOCKING_LEVEL_*
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\DeliveryControl registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreativeBlockingLevel()
-    {
-    }
-    /**
-     * Output only. Specifies how the impression delivery will be paced.
-     *
-     * Accepted values: DELIVERY_RATE_TYPE_UNSPECIFIED, EVENLY, FRONT_LOADED,
-     * AS_FAST_AS_POSSIBLE
-     *
-     * @param self::DELIVERY_RATE_TYPE_* $deliveryRateType
-     */
-    public function setDeliveryRateType($deliveryRateType)
-    {
-    }
-    /**
-     * @return self::DELIVERY_RATE_TYPE_*
-     */
-    public function getDeliveryRateType()
-    {
-    }
-    /**
-     * Output only. Specifies any frequency caps.
-     *
-     * @param FrequencyCap[] $frequencyCaps
-     */
-    public function setFrequencyCaps($frequencyCaps)
-    {
-    }
-    /**
-     * @return FrequencyCap[]
-     */
-    public function getFrequencyCaps()
+    class Google_Service_AdExchangeBuyerII_DeliveryControl extends \Google\Service\AdExchangeBuyerII\DeliveryControl
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager;
-
-class BatchCreatePullRequestCommentsRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = CreatePullRequestCommentRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * Required. The request message specifying the resources to create. There
-     * should be exactly one CreatePullRequestCommentRequest with CommentDetail
-     * being REVIEW in the list, and no more than 100
-     * CreatePullRequestCommentRequests with CommentDetail being CODE in the list
-     *
-     * @param CreatePullRequestCommentRequest[] $requests
-     */
-    public function setRequests($requests)
+namespace Google\Service\SecureSourceManager {
+    class BatchCreatePullRequestCommentsRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = CreatePullRequestCommentRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * Required. The request message specifying the resources to create. There
+         * should be exactly one CreatePullRequestCommentRequest with CommentDetail
+         * being REVIEW in the list, and no more than 100
+         * CreatePullRequestCommentRequests with CommentDetail being CODE in the list
+         *
+         * @param CreatePullRequestCommentRequest[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return CreatePullRequestCommentRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CreatePullRequestCommentRequest[]
+     * Runtime class alias of \Google\Service\SecureSourceManager\BatchCreatePullRequestCommentsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_SecureSourceManager_BatchCreatePullRequestCommentsRequest extends \Google\Service\SecureSourceManager\BatchCreatePullRequestCommentsRequest
     {
     }
 }

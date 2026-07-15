@@ -20,147 +20,161 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_course;
-
-/**
- * Stores all the information about the available dndupload handlers
- *
- * @package    core
- * @copyright  2012 Davo Smith
- * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class dndupload_handler
-{
+namespace core_course {
+    use core\component;
+    use core\context\course as context_course;
+    use core\exception\coding_exception;
+    use repository;
+    use stdClass;
     /**
-     * @var array A list of all registered mime types that can be dropped onto a course
-     *            along with the modules that will handle them.
-     */
-    protected $types = [];
-    /**
-     * @var array  A list of the different file types (extensions) that different modules
-     *             will handle.
-     */
-    protected $filehandlers = [];
-    /**
-     * @var context_course|null
-     */
-    protected $context = null;
-    /**
-     * Gather a list of dndupload handlers from the different mods
+     * Stores all the information about the available dndupload handlers
      *
-     * @param object $course The course this is being added to (to check course_allowed_module() )
-     * @param array|null $modnames An array of module names that are allowed in this course.
+     * @package    core
+     * @copyright  2012 Davo Smith
+     * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function __construct($course, $modnames = null)
+    class dndupload_handler
     {
+        /**
+         * @var array A list of all registered mime types that can be dropped onto a course
+         *            along with the modules that will handle them.
+         */
+        protected $types = [];
+        /**
+         * @var array  A list of the different file types (extensions) that different modules
+         *             will handle.
+         */
+        protected $filehandlers = [];
+        /**
+         * @var context_course|null
+         */
+        protected $context = null;
+        /**
+         * Gather a list of dndupload handlers from the different mods
+         *
+         * @param object $course The course this is being added to (to check course_allowed_module() )
+         * @param array|null $modnames An array of module names that are allowed in this course.
+         */
+        public function __construct($course, $modnames = null)
+        {
+        }
+        /**
+         * Used to add a new mime type that can be drag and dropped onto a
+         * course displayed in a browser window
+         *
+         * @param string $identifier The name that this type will be known as
+         * @param array $datatransfertypes An array of the different types in the browser
+         *                                 'dataTransfer.types' object that will map to this type
+         * @param string $addmessage The message to display in the browser when this type is being
+         *                           dragged onto the page
+         * @param string $namemessage The message to pop up when asking for the name to give the
+         *                            course module instance when it is created
+         * @param string $handlermessage The message to pop up when asking which module should handle this type
+         * @param int $priority Controls the order in which types are checked by the browser (mainly
+         *                      needed to check for 'text' last as that is usually given as fallback)
+         */
+        protected function register_type($identifier, $datatransfertypes, $addmessage, $namemessage, $handlermessage, $priority = 100)
+        {
+        }
+        /**
+         * Used to declare that a particular module will handle a particular type
+         * of dropped data
+         *
+         * @param string $type The name of the type (as declared in register_type)
+         * @param string $module The name of the module to handle this type
+         * @param string $message The message to show the user if more than one handler is registered
+         *                        for a type and the user needs to make a choice between them
+         * @param bool $noname If true, the 'name' dialog should be disabled in the pop-up.
+         * @throws coding_exception
+         */
+        protected function register_type_handler($type, $module, $message, $noname)
+        {
+        }
+        /**
+         * Used to declare that a particular module will handle a particular type
+         * of dropped file
+         *
+         * @param string $extension The file extension to handle ('*' for all types)
+         * @param string $module The name of the module to handle this type
+         * @param string $message The message to show the user if more than one handler is registered
+         *                        for a type and the user needs to make a choice between them
+         */
+        protected function register_file_handler($extension, $module, $message)
+        {
+        }
+        /**
+         * Check to see if the type has been registered
+         *
+         * @param string $type The identifier of the type you are interested in
+         * @return bool True if the type is registered
+         */
+        public function is_known_type($type)
+        {
+        }
+        /**
+         * Check to see if the module in question has registered to handle the
+         * type given
+         *
+         * @param string $module The name of the module
+         * @param string $type The identifier of the type
+         * @return bool True if the module has registered to handle that type
+         */
+        public function has_type_handler($module, $type)
+        {
+        }
+        /**
+         * Check to see if the module in question has registered to handle files
+         * with the given extension (or to handle all file types)
+         *
+         * @param string $module The name of the module
+         * @param string $extension The extension of the uploaded file
+         * @return bool True if the module has registered to handle files with
+         *              that extension (or to handle all file types)
+         */
+        public function has_file_handler($module, $extension)
+        {
+        }
+        /**
+         * Gets a list of the file types that are handled by a particular module
+         *
+         * @param string $module The name of the module to check
+         * @return array of file extensions or string '*'
+         */
+        public function get_handled_file_types($module)
+        {
+        }
+        /**
+         * Returns an object to pass onto the javascript code with data about all the
+         * registered file / type handlers
+         *
+         * @return object Data to pass on to Javascript code
+         */
+        public function get_js_data()
+        {
+        }
+        /**
+         * Comparison function used when sorting types by priority
+         * @param object $type1 first type to compare
+         * @param object $type2 second type to compare
+         * @return int -1 for $type1 < $type2; 1 for $type1 > $type2; 0 for equal
+         */
+        protected function type_compare($type1, $type2)
+        {
+        }
+        /**
+         * Load the repository libraries.
+         */
+        private function load_repository(): void
+        {
+        }
     }
+}
+namespace {
     /**
-     * Used to add a new mime type that can be drag and dropped onto a
-     * course displayed in a browser window
-     *
-     * @param string $identifier The name that this type will be known as
-     * @param array $datatransfertypes An array of the different types in the browser
-     *                                 'dataTransfer.types' object that will map to this type
-     * @param string $addmessage The message to display in the browser when this type is being
-     *                           dragged onto the page
-     * @param string $namemessage The message to pop up when asking for the name to give the
-     *                            course module instance when it is created
-     * @param string $handlermessage The message to pop up when asking which module should handle this type
-     * @param int $priority Controls the order in which types are checked by the browser (mainly
-     *                      needed to check for 'text' last as that is usually given as fallback)
+     * Runtime class alias of \core_course\dndupload_handler registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    protected function register_type($identifier, $datatransfertypes, $addmessage, $namemessage, $handlermessage, $priority = 100)
-    {
-    }
-    /**
-     * Used to declare that a particular module will handle a particular type
-     * of dropped data
-     *
-     * @param string $type The name of the type (as declared in register_type)
-     * @param string $module The name of the module to handle this type
-     * @param string $message The message to show the user if more than one handler is registered
-     *                        for a type and the user needs to make a choice between them
-     * @param bool $noname If true, the 'name' dialog should be disabled in the pop-up.
-     * @throws coding_exception
-     */
-    protected function register_type_handler($type, $module, $message, $noname)
-    {
-    }
-    /**
-     * Used to declare that a particular module will handle a particular type
-     * of dropped file
-     *
-     * @param string $extension The file extension to handle ('*' for all types)
-     * @param string $module The name of the module to handle this type
-     * @param string $message The message to show the user if more than one handler is registered
-     *                        for a type and the user needs to make a choice between them
-     */
-    protected function register_file_handler($extension, $module, $message)
-    {
-    }
-    /**
-     * Check to see if the type has been registered
-     *
-     * @param string $type The identifier of the type you are interested in
-     * @return bool True if the type is registered
-     */
-    public function is_known_type($type)
-    {
-    }
-    /**
-     * Check to see if the module in question has registered to handle the
-     * type given
-     *
-     * @param string $module The name of the module
-     * @param string $type The identifier of the type
-     * @return bool True if the module has registered to handle that type
-     */
-    public function has_type_handler($module, $type)
-    {
-    }
-    /**
-     * Check to see if the module in question has registered to handle files
-     * with the given extension (or to handle all file types)
-     *
-     * @param string $module The name of the module
-     * @param string $extension The extension of the uploaded file
-     * @return bool True if the module has registered to handle files with
-     *              that extension (or to handle all file types)
-     */
-    public function has_file_handler($module, $extension)
-    {
-    }
-    /**
-     * Gets a list of the file types that are handled by a particular module
-     *
-     * @param string $module The name of the module to check
-     * @return array of file extensions or string '*'
-     */
-    public function get_handled_file_types($module)
-    {
-    }
-    /**
-     * Returns an object to pass onto the javascript code with data about all the
-     * registered file / type handlers
-     *
-     * @return object Data to pass on to Javascript code
-     */
-    public function get_js_data()
-    {
-    }
-    /**
-     * Comparison function used when sorting types by priority
-     * @param object $type1 first type to compare
-     * @param object $type2 second type to compare
-     * @return int -1 for $type1 < $type2; 1 for $type1 > $type2; 0 for equal
-     */
-    protected function type_compare($type1, $type2)
-    {
-    }
-    /**
-     * Load the repository libraries.
-     */
-    private function load_repository(): void
+    class dndupload_handler extends \core_course\dndupload_handler
     {
     }
 }

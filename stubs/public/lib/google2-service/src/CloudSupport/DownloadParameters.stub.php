@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSupport;
-
-class DownloadParameters extends \Google\Model
-{
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @var bool
-     */
-    public $allowGzipCompression;
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @var bool
-     */
-    public $ignoreRange;
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @param bool $allowGzipCompression
-     */
-    public function setAllowGzipCompression($allowGzipCompression)
+namespace Google\Service\CloudSupport {
+    class DownloadParameters extends \Google\Model
     {
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @var bool
+         */
+        public $allowGzipCompression;
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @var bool
+         */
+        public $ignoreRange;
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @param bool $allowGzipCompression
+         */
+        public function setAllowGzipCompression($allowGzipCompression)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowGzipCompression()
+        {
+        }
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @param bool $ignoreRange
+         */
+        public function setIgnoreRange($ignoreRange)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIgnoreRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSupport\DownloadParameters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowGzipCompression()
-    {
-    }
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @param bool $ignoreRange
-     */
-    public function setIgnoreRange($ignoreRange)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIgnoreRange()
+    class Google_Service_CloudSupport_DownloadParameters extends \Google\Service\CloudSupport\DownloadParameters
     {
     }
 }

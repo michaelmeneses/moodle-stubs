@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSearchSnippet extends \Google\Model
-{
-    /**
-     * Title of the enclosing document.
-     *
-     * @var string
-     */
-    public $documentTitle;
-    /**
-     * Uri for the document. Present if specified for the document.
-     *
-     * @var string
-     */
-    public $documentUri;
-    /**
-     * Metadata associated with the document.
-     *
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * Text included in the prompt.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Title of the enclosing document.
-     *
-     * @param string $documentTitle
-     */
-    public function setDocumentTitle($documentTitle)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSearchSnippet extends \Google\Model
     {
+        /**
+         * Title of the enclosing document.
+         *
+         * @var string
+         */
+        public $documentTitle;
+        /**
+         * Uri for the document. Present if specified for the document.
+         *
+         * @var string
+         */
+        public $documentUri;
+        /**
+         * Metadata associated with the document.
+         *
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * Text included in the prompt.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Title of the enclosing document.
+         *
+         * @param string $documentTitle
+         */
+        public function setDocumentTitle($documentTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocumentTitle()
+        {
+        }
+        /**
+         * Uri for the document. Present if specified for the document.
+         *
+         * @param string $documentUri
+         */
+        public function setDocumentUri($documentUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocumentUri()
+        {
+        }
+        /**
+         * Metadata associated with the document.
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Text included in the prompt.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSearchSnippet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentTitle()
-    {
-    }
-    /**
-     * Uri for the document. Present if specified for the document.
-     *
-     * @param string $documentUri
-     */
-    public function setDocumentUri($documentUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDocumentUri()
-    {
-    }
-    /**
-     * Metadata associated with the document.
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Text included in the prompt.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSearchSnippet extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSearchSnippet
     {
     }
 }

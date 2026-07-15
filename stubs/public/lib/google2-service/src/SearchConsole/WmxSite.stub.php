@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SearchConsole;
-
-class WmxSite extends \Google\Model
-{
-    public const PERMISSION_LEVEL_SITE_PERMISSION_LEVEL_UNSPECIFIED = 'SITE_PERMISSION_LEVEL_UNSPECIFIED';
-    /**
-     * Owner has complete access to the site.
-     */
-    public const PERMISSION_LEVEL_SITE_OWNER = 'SITE_OWNER';
-    /**
-     * Full users can access all data, and perform most of the operations.
-     */
-    public const PERMISSION_LEVEL_SITE_FULL_USER = 'SITE_FULL_USER';
-    /**
-     * Restricted users can access most of the data, and perform some operations.
-     */
-    public const PERMISSION_LEVEL_SITE_RESTRICTED_USER = 'SITE_RESTRICTED_USER';
-    /**
-     * Unverified user has no access to site's data.
-     */
-    public const PERMISSION_LEVEL_SITE_UNVERIFIED_USER = 'SITE_UNVERIFIED_USER';
-    /**
-     * The user's permission level for the site.
-     *
-     * @var string
-     */
-    public $permissionLevel;
-    /**
-     * The URL of the site.
-     *
-     * @var string
-     */
-    public $siteUrl;
-    /**
-     * The user's permission level for the site.
-     *
-     * Accepted values: SITE_PERMISSION_LEVEL_UNSPECIFIED, SITE_OWNER,
-     * SITE_FULL_USER, SITE_RESTRICTED_USER, SITE_UNVERIFIED_USER
-     *
-     * @param self::PERMISSION_LEVEL_* $permissionLevel
-     */
-    public function setPermissionLevel($permissionLevel)
+namespace Google\Service\SearchConsole {
+    class WmxSite extends \Google\Model
     {
+        public const PERMISSION_LEVEL_SITE_PERMISSION_LEVEL_UNSPECIFIED = 'SITE_PERMISSION_LEVEL_UNSPECIFIED';
+        /**
+         * Owner has complete access to the site.
+         */
+        public const PERMISSION_LEVEL_SITE_OWNER = 'SITE_OWNER';
+        /**
+         * Full users can access all data, and perform most of the operations.
+         */
+        public const PERMISSION_LEVEL_SITE_FULL_USER = 'SITE_FULL_USER';
+        /**
+         * Restricted users can access most of the data, and perform some operations.
+         */
+        public const PERMISSION_LEVEL_SITE_RESTRICTED_USER = 'SITE_RESTRICTED_USER';
+        /**
+         * Unverified user has no access to site's data.
+         */
+        public const PERMISSION_LEVEL_SITE_UNVERIFIED_USER = 'SITE_UNVERIFIED_USER';
+        /**
+         * The user's permission level for the site.
+         *
+         * @var string
+         */
+        public $permissionLevel;
+        /**
+         * The URL of the site.
+         *
+         * @var string
+         */
+        public $siteUrl;
+        /**
+         * The user's permission level for the site.
+         *
+         * Accepted values: SITE_PERMISSION_LEVEL_UNSPECIFIED, SITE_OWNER,
+         * SITE_FULL_USER, SITE_RESTRICTED_USER, SITE_UNVERIFIED_USER
+         *
+         * @param self::PERMISSION_LEVEL_* $permissionLevel
+         */
+        public function setPermissionLevel($permissionLevel)
+        {
+        }
+        /**
+         * @return self::PERMISSION_LEVEL_*
+         */
+        public function getPermissionLevel()
+        {
+        }
+        /**
+         * The URL of the site.
+         *
+         * @param string $siteUrl
+         */
+        public function setSiteUrl($siteUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSiteUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::PERMISSION_LEVEL_*
+     * Runtime class alias of \Google\Service\SearchConsole\WmxSite registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPermissionLevel()
-    {
-    }
-    /**
-     * The URL of the site.
-     *
-     * @param string $siteUrl
-     */
-    public function setSiteUrl($siteUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSiteUrl()
+    class Google_Service_SearchConsole_WmxSite extends \Google\Service\SearchConsole\WmxSite
     {
     }
 }

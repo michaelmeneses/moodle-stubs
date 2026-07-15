@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class IAMPermission extends \Google\Model
-{
-    /**
-     * Output only. Whether the permission is granted.
-     *
-     * @var bool
-     */
-    public $granted;
-    /**
-     * Output only. The name of the permission.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Whether the permission is granted.
-     *
-     * @param bool $granted
-     */
-    public function setGranted($granted)
+namespace Google\Service\WorkloadManager {
+    class IAMPermission extends \Google\Model
     {
+        /**
+         * Output only. Whether the permission is granted.
+         *
+         * @var bool
+         */
+        public $granted;
+        /**
+         * Output only. The name of the permission.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Whether the permission is granted.
+         *
+         * @param bool $granted
+         */
+        public function setGranted($granted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getGranted()
+        {
+        }
+        /**
+         * Output only. The name of the permission.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\WorkloadManager\IAMPermission registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGranted()
-    {
-    }
-    /**
-     * Output only. The name of the permission.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_WorkloadManager_IAMPermission extends \Google\Service\WorkloadManager\IAMPermission
     {
     }
 }

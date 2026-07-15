@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaSearchRequestContentSearchSpecChunkSpec extends \Google\Model
-{
-    /**
-     * The number of next chunks to be returned of the current chunk. The maximum
-     * allowed value is 3. If not specified, no next chunks will be returned.
-     *
-     * @var int
-     */
-    public $numNextChunks;
-    /**
-     * The number of previous chunks to be returned of the current chunk. The
-     * maximum allowed value is 3. If not specified, no previous chunks will be
-     * returned.
-     *
-     * @var int
-     */
-    public $numPreviousChunks;
-    /**
-     * The number of next chunks to be returned of the current chunk. The maximum
-     * allowed value is 3. If not specified, no next chunks will be returned.
-     *
-     * @param int $numNextChunks
-     */
-    public function setNumNextChunks($numNextChunks)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaSearchRequestContentSearchSpecChunkSpec extends \Google\Model
     {
+        /**
+         * The number of next chunks to be returned of the current chunk. The maximum
+         * allowed value is 3. If not specified, no next chunks will be returned.
+         *
+         * @var int
+         */
+        public $numNextChunks;
+        /**
+         * The number of previous chunks to be returned of the current chunk. The
+         * maximum allowed value is 3. If not specified, no previous chunks will be
+         * returned.
+         *
+         * @var int
+         */
+        public $numPreviousChunks;
+        /**
+         * The number of next chunks to be returned of the current chunk. The maximum
+         * allowed value is 3. If not specified, no next chunks will be returned.
+         *
+         * @param int $numNextChunks
+         */
+        public function setNumNextChunks($numNextChunks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumNextChunks()
+        {
+        }
+        /**
+         * The number of previous chunks to be returned of the current chunk. The
+         * maximum allowed value is 3. If not specified, no previous chunks will be
+         * returned.
+         *
+         * @param int $numPreviousChunks
+         */
+        public function setNumPreviousChunks($numPreviousChunks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumPreviousChunks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaSearchRequestContentSearchSpecChunkSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNumNextChunks()
-    {
-    }
-    /**
-     * The number of previous chunks to be returned of the current chunk. The
-     * maximum allowed value is 3. If not specified, no previous chunks will be
-     * returned.
-     *
-     * @param int $numPreviousChunks
-     */
-    public function setNumPreviousChunks($numPreviousChunks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumPreviousChunks()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaSearchRequestContentSearchSpecChunkSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaSearchRequestContentSearchSpecChunkSpec
     {
     }
 }

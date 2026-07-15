@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1PlaceAttribution extends \Google\Model
-{
-    /**
-     * Name of the Place's data provider.
-     *
-     * @var string
-     */
-    public $provider;
-    /**
-     * URI to the Place's data provider.
-     *
-     * @var string
-     */
-    public $providerUri;
-    /**
-     * Name of the Place's data provider.
-     *
-     * @param string $provider
-     */
-    public function setProvider($provider)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1PlaceAttribution extends \Google\Model
     {
+        /**
+         * Name of the Place's data provider.
+         *
+         * @var string
+         */
+        public $provider;
+        /**
+         * URI to the Place's data provider.
+         *
+         * @var string
+         */
+        public $providerUri;
+        /**
+         * Name of the Place's data provider.
+         *
+         * @param string $provider
+         */
+        public function setProvider($provider)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProvider()
+        {
+        }
+        /**
+         * URI to the Place's data provider.
+         *
+         * @param string $providerUri
+         */
+        public function setProviderUri($providerUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProviderUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceAttribution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProvider()
-    {
-    }
-    /**
-     * URI to the Place's data provider.
-     *
-     * @param string $providerUri
-     */
-    public function setProviderUri($providerUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProviderUri()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1PlaceAttribution extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceAttribution
     {
     }
 }

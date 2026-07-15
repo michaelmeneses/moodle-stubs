@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ComplianceOccurrence extends \Google\Collection
-{
-    protected $collection_key = 'nonCompliantFiles';
-    /**
-     * @var string
-     */
-    public $nonComplianceReason;
-    protected $nonCompliantFilesType = NonCompliantFile::class;
-    protected $nonCompliantFilesDataType = 'array';
-    protected $versionType = ComplianceVersion::class;
-    protected $versionDataType = '';
-    /**
-     * @param string $nonComplianceReason
-     */
-    public function setNonComplianceReason($nonComplianceReason)
+namespace Google\Service\ContainerAnalysis {
+    class ComplianceOccurrence extends \Google\Collection
     {
+        protected $collection_key = 'nonCompliantFiles';
+        /**
+         * @var string
+         */
+        public $nonComplianceReason;
+        protected $nonCompliantFilesType = NonCompliantFile::class;
+        protected $nonCompliantFilesDataType = 'array';
+        protected $versionType = ComplianceVersion::class;
+        protected $versionDataType = '';
+        /**
+         * @param string $nonComplianceReason
+         */
+        public function setNonComplianceReason($nonComplianceReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNonComplianceReason()
+        {
+        }
+        /**
+         * @param NonCompliantFile[] $nonCompliantFiles
+         */
+        public function setNonCompliantFiles($nonCompliantFiles)
+        {
+        }
+        /**
+         * @return NonCompliantFile[]
+         */
+        public function getNonCompliantFiles()
+        {
+        }
+        /**
+         * The OS and config version the benchmark was run on.
+         *
+         * @param ComplianceVersion $version
+         */
+        public function setVersion(ComplianceVersion $version)
+        {
+        }
+        /**
+         * @return ComplianceVersion
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ComplianceOccurrence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNonComplianceReason()
-    {
-    }
-    /**
-     * @param NonCompliantFile[] $nonCompliantFiles
-     */
-    public function setNonCompliantFiles($nonCompliantFiles)
-    {
-    }
-    /**
-     * @return NonCompliantFile[]
-     */
-    public function getNonCompliantFiles()
-    {
-    }
-    /**
-     * The OS and config version the benchmark was run on.
-     *
-     * @param ComplianceVersion $version
-     */
-    public function setVersion(ComplianceVersion $version)
-    {
-    }
-    /**
-     * @return ComplianceVersion
-     */
-    public function getVersion()
+    class Google_Service_ContainerAnalysis_ComplianceOccurrence extends \Google\Service\ContainerAnalysis\ComplianceOccurrence
     {
     }
 }

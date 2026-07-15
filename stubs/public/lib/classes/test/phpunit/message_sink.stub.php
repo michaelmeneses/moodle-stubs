@@ -20,79 +20,88 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\test\phpunit;
-
-/**
- * Message sink.
- *
- * @package    core
- * @category   test
- * @copyright  2012 Petr Skoda {@link http://skodak.org}
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class message_sink
-{
-    /** @var array of records from messages table */
-    protected $messages = [];
+namespace core\test\phpunit {
     /**
-     * Stop message redirection.
+     * Message sink.
      *
-     * Use if you do not want message redirected any more.
+     * @package    core
+     * @category   test
+     * @copyright  2012 Petr Skoda {@link http://skodak.org}
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function close()
+    class message_sink
     {
+        /** @var array of records from messages table */
+        protected $messages = [];
+        /**
+         * Stop message redirection.
+         *
+         * Use if you do not want message redirected any more.
+         */
+        public function close()
+        {
+        }
+        /**
+         * To be called from phpunit_util only!
+         *
+         * @param \stdClass $message record from messages table
+         */
+        public function add_message($message)
+        {
+        }
+        /**
+         * Returns all redirected messages.
+         *
+         * The instances are records from the messages table.
+         * The array indexes are numbered from 0 and the order is matching
+         * the creation of events.
+         *
+         * @param callable|null $filter Use to filter the messages.
+         * @return array
+         */
+        public function get_messages(?callable $filter = null): array
+        {
+        }
+        /**
+         * Return all redirected messages for a given component.
+         *
+         * @param string $component Component name.
+         * @return array List of messages.
+         */
+        public function get_messages_by_component(string $component): array
+        {
+        }
+        /**
+         * Return all redirected messages for a given component and type.
+         *
+         * @param string $component Component name.
+         * @param string $type Message type.
+         * @return array List of messages.
+         */
+        public function get_messages_by_component_and_type(string $component, string $type): array
+        {
+        }
+        /**
+         * Return number of messages redirected to this sink.
+         * @return int
+         */
+        public function count()
+        {
+        }
+        /**
+         * Removes all previously stored messages.
+         */
+        public function clear()
+        {
+        }
     }
+}
+namespace {
     /**
-     * To be called from phpunit_util only!
-     *
-     * @param \stdClass $message record from messages table
+     * Runtime class alias of \core\test\phpunit\message_sink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function add_message($message)
-    {
-    }
-    /**
-     * Returns all redirected messages.
-     *
-     * The instances are records from the messages table.
-     * The array indexes are numbered from 0 and the order is matching
-     * the creation of events.
-     *
-     * @param callable|null $filter Use to filter the messages.
-     * @return array
-     */
-    public function get_messages(?callable $filter = null): array
-    {
-    }
-    /**
-     * Return all redirected messages for a given component.
-     *
-     * @param string $component Component name.
-     * @return array List of messages.
-     */
-    public function get_messages_by_component(string $component): array
-    {
-    }
-    /**
-     * Return all redirected messages for a given component and type.
-     *
-     * @param string $component Component name.
-     * @param string $type Message type.
-     * @return array List of messages.
-     */
-    public function get_messages_by_component_and_type(string $component, string $type): array
-    {
-    }
-    /**
-     * Return number of messages redirected to this sink.
-     * @return int
-     */
-    public function count()
-    {
-    }
-    /**
-     * Removes all previously stored messages.
-     */
-    public function clear()
+    class phpunit_message_sink extends \core\test\phpunit\message_sink
     {
     }
 }

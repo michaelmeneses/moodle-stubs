@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class DbVersion extends \Google\Model
-{
-    /**
-     * Output only. The name of the DbVersion resource in the following format:
-     * projects/{project}/locations/{region}/dbVersions/{db_version}
-     *
-     * @var string
-     */
-    public $name;
-    protected $propertiesType = DbVersionProperties::class;
-    protected $propertiesDataType = '';
-    /**
-     * Output only. The name of the DbVersion resource in the following format:
-     * projects/{project}/locations/{region}/dbVersions/{db_version}
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\OracleDatabase {
+    class DbVersion extends \Google\Model
     {
+        /**
+         * Output only. The name of the DbVersion resource in the following format:
+         * projects/{project}/locations/{region}/dbVersions/{db_version}
+         *
+         * @var string
+         */
+        public $name;
+        protected $propertiesType = DbVersionProperties::class;
+        protected $propertiesDataType = '';
+        /**
+         * Output only. The name of the DbVersion resource in the following format:
+         * projects/{project}/locations/{region}/dbVersions/{db_version}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The properties of the DbVersion.
+         *
+         * @param DbVersionProperties $properties
+         */
+        public function setProperties(DbVersionProperties $properties)
+        {
+        }
+        /**
+         * @return DbVersionProperties
+         */
+        public function getProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OracleDatabase\DbVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The properties of the DbVersion.
-     *
-     * @param DbVersionProperties $properties
-     */
-    public function setProperties(DbVersionProperties $properties)
-    {
-    }
-    /**
-     * @return DbVersionProperties
-     */
-    public function getProperties()
+    class Google_Service_OracleDatabase_DbVersion extends \Google\Service\OracleDatabase\DbVersion
     {
     }
 }

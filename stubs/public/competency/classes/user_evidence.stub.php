@@ -29,6 +29,8 @@
  */
 namespace core_competency;
 
+use context_user;
+use lang_string;
 /**
  * User evidence persistent class.
  *

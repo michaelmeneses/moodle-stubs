@@ -21,67 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory\Resource;
-
-/**
- * The "photos" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adminService = new Google\Service\Directory(...);
- *   $photos = $adminService->users_photos;
- *  </code>
- */
-class UsersPhotos extends \Google\Service\Resource
-{
+namespace Google\Service\Directory\Resource {
+    use Google\Service\Directory\UserPhoto;
     /**
-     * Removes the user's photo. (photos.delete)
-     *
-     * @param string $userKey Identifies the user in the API request. The value can
-     * be the user's primary email address, alias email address, or unique user ID.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "photos" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adminService = new Google\Service\Directory(...);
+     *   $photos = $adminService->users_photos;
+     *  </code>
      */
-    public function delete($userKey, $optParams = [])
+    class UsersPhotos extends \Google\Service\Resource
     {
+        /**
+         * Removes the user's photo. (photos.delete)
+         *
+         * @param string $userKey Identifies the user in the API request. The value can
+         * be the user's primary email address, alias email address, or unique user ID.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($userKey, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the user's photo. (photos.get)
+         *
+         * @param string $userKey Identifies the user in the API request. The value can
+         * be the user's primary email address, alias email address, or unique user ID.
+         * @param array $optParams Optional parameters.
+         * @return UserPhoto
+         * @throws \Google\Service\Exception
+         */
+        public function get($userKey, $optParams = [])
+        {
+        }
+        /**
+         * Adds a photo for the user. This method supports [patch semantics](https://dev
+         * elopers.google.com/workspace/admin/directory/v1/guides/performance#patch).
+         * (photos.patch)
+         *
+         * @param string $userKey Identifies the user in the API request. The value can
+         * be the user's primary email address, alias email address, or unique user ID.
+         * @param UserPhoto $postBody
+         * @param array $optParams Optional parameters.
+         * @return UserPhoto
+         * @throws \Google\Service\Exception
+         */
+        public function patch($userKey, UserPhoto $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Adds a photo for the user. (photos.update)
+         *
+         * @param string $userKey Identifies the user in the API request. The value can
+         * be the user's primary email address, alias email address, or unique user ID.
+         * @param UserPhoto $postBody
+         * @param array $optParams Optional parameters.
+         * @return UserPhoto
+         * @throws \Google\Service\Exception
+         */
+        public function update($userKey, UserPhoto $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves the user's photo. (photos.get)
-     *
-     * @param string $userKey Identifies the user in the API request. The value can
-     * be the user's primary email address, alias email address, or unique user ID.
-     * @param array $optParams Optional parameters.
-     * @return UserPhoto
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Directory\Resource\UsersPhotos registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($userKey, $optParams = [])
-    {
-    }
-    /**
-     * Adds a photo for the user. This method supports [patch semantics](https://dev
-     * elopers.google.com/workspace/admin/directory/v1/guides/performance#patch).
-     * (photos.patch)
-     *
-     * @param string $userKey Identifies the user in the API request. The value can
-     * be the user's primary email address, alias email address, or unique user ID.
-     * @param UserPhoto $postBody
-     * @param array $optParams Optional parameters.
-     * @return UserPhoto
-     * @throws \Google\Service\Exception
-     */
-    public function patch($userKey, UserPhoto $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Adds a photo for the user. (photos.update)
-     *
-     * @param string $userKey Identifies the user in the API request. The value can
-     * be the user's primary email address, alias email address, or unique user ID.
-     * @param UserPhoto $postBody
-     * @param array $optParams Optional parameters.
-     * @return UserPhoto
-     * @throws \Google\Service\Exception
-     */
-    public function update($userKey, UserPhoto $postBody, $optParams = [])
+    class Google_Service_Directory_Resource_UsersPhotos extends \Google\Service\Directory\Resource\UsersPhotos
     {
     }
 }

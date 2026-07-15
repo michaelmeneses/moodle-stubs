@@ -20,52 +20,62 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\test\phpunit;
-
-/**
- * Coverage information for PHPUnit.
- *
- * @package    core
- * @category   test
- * @copyright  2018 Andrew Nicols <andrew@nicols.co.uk>
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class coverage_info
-{
-    /** @var array The list of folders relative to the plugin root to include in coverage generation. */
-    protected $includelistfolders = [];
-    /** @var array The list of files relative to the plugin root to include in coverage generation. */
-    protected $includelistfiles = [];
-    /** @var array The list of folders relative to the plugin root to exclude from coverage generation. */
-    protected $excludelistfolders = [];
-    /** @var array The list of files relative to the plugin root to exclude from coverage generation. */
-    protected $excludelistfiles = [];
-    /** @var string The base directory to use */
-    protected string $basedir = "";
+namespace core\test\phpunit {
+    use core\output\html_writer;
     /**
-     * Specify the base directory to use for coverage.
+     * Coverage information for PHPUnit.
      *
-     * @param string $basedir
+     * @package    core
+     * @category   test
+     * @copyright  2018 Andrew Nicols <andrew@nicols.co.uk>
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    final public function set_basedir(string $basedir): void
+    class coverage_info
     {
+        /** @var array The list of folders relative to the plugin root to include in coverage generation. */
+        protected $includelistfolders = [];
+        /** @var array The list of files relative to the plugin root to include in coverage generation. */
+        protected $includelistfiles = [];
+        /** @var array The list of folders relative to the plugin root to exclude from coverage generation. */
+        protected $excludelistfolders = [];
+        /** @var array The list of files relative to the plugin root to exclude from coverage generation. */
+        protected $excludelistfiles = [];
+        /** @var string The base directory to use */
+        protected string $basedir = "";
+        /**
+         * Specify the base directory to use for coverage.
+         *
+         * @param string $basedir
+         */
+        final public function set_basedir(string $basedir): void
+        {
+        }
+        /**
+         * Get the formatted XML list of files and folders to include.
+         *
+         * @param   string  $plugindir The root of the plugin, relative to the dataroot.
+         * @return  array
+         */
+        final public function get_includelists(string $plugindir): array
+        {
+        }
+        /**
+         * Get the formatted XML list of files and folders to exclude.
+         *
+         * @param   string  $plugindir The root of the plugin, relative to the dataroot.
+         * @return  array
+         */
+        final public function get_excludelists(string $plugindir): array
+        {
+        }
     }
+}
+namespace {
     /**
-     * Get the formatted XML list of files and folders to include.
-     *
-     * @param   string  $plugindir The root of the plugin, relative to the dataroot.
-     * @return  array
+     * Runtime class alias of \core\test\phpunit\coverage_info registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    final public function get_includelists(string $plugindir): array
-    {
-    }
-    /**
-     * Get the formatted XML list of files and folders to exclude.
-     *
-     * @param   string  $plugindir The root of the plugin, relative to the dataroot.
-     * @return  array
-     */
-    final public function get_excludelists(string $plugindir): array
+    class phpunit_coverage_info extends \core\test\phpunit\coverage_info
     {
     }
 }

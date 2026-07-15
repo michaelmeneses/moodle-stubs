@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class ListAuthorizedCertificatesResponse extends \Google\Collection
-{
-    protected $collection_key = 'certificates';
-    protected $certificatesType = AuthorizedCertificate::class;
-    protected $certificatesDataType = 'array';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The SSL certificates the user is authorized to administer.
-     *
-     * @param AuthorizedCertificate[] $certificates
-     */
-    public function setCertificates($certificates)
+namespace Google\Service\Appengine {
+    class ListAuthorizedCertificatesResponse extends \Google\Collection
     {
+        protected $collection_key = 'certificates';
+        protected $certificatesType = AuthorizedCertificate::class;
+        protected $certificatesDataType = 'array';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The SSL certificates the user is authorized to administer.
+         *
+         * @param AuthorizedCertificate[] $certificates
+         */
+        public function setCertificates($certificates)
+        {
+        }
+        /**
+         * @return AuthorizedCertificate[]
+         */
+        public function getCertificates()
+        {
+        }
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuthorizedCertificate[]
+     * Runtime class alias of \Google\Service\Appengine\ListAuthorizedCertificatesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificates()
-    {
-    }
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Appengine_ListAuthorizedCertificatesResponse extends \Google\Service\Appengine\ListAuthorizedCertificatesResponse
     {
     }
 }

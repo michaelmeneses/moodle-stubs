@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class Delete extends \Google\Model
-{
-    protected $keySetType = KeySet::class;
-    protected $keySetDataType = '';
-    /**
-     * Required. The table whose rows will be deleted.
-     *
-     * @var string
-     */
-    public $table;
-    /**
-     * Required. The primary keys of the rows within table to delete. The primary
-     * keys must be specified in the order in which they appear in the `PRIMARY
-     * KEY()` clause of the table's equivalent DDL statement (the DDL statement
-     * used to create the table). Delete is idempotent. The transaction will
-     * succeed even if some or all rows do not exist.
-     *
-     * @param KeySet $keySet
-     */
-    public function setKeySet(KeySet $keySet)
+namespace Google\Service\Spanner {
+    class Delete extends \Google\Model
     {
+        protected $keySetType = KeySet::class;
+        protected $keySetDataType = '';
+        /**
+         * Required. The table whose rows will be deleted.
+         *
+         * @var string
+         */
+        public $table;
+        /**
+         * Required. The primary keys of the rows within table to delete. The primary
+         * keys must be specified in the order in which they appear in the `PRIMARY
+         * KEY()` clause of the table's equivalent DDL statement (the DDL statement
+         * used to create the table). Delete is idempotent. The transaction will
+         * succeed even if some or all rows do not exist.
+         *
+         * @param KeySet $keySet
+         */
+        public function setKeySet(KeySet $keySet)
+        {
+        }
+        /**
+         * @return KeySet
+         */
+        public function getKeySet()
+        {
+        }
+        /**
+         * Required. The table whose rows will be deleted.
+         *
+         * @param string $table
+         */
+        public function setTable($table)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return KeySet
+     * Runtime class alias of \Google\Service\Spanner\Delete registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeySet()
-    {
-    }
-    /**
-     * Required. The table whose rows will be deleted.
-     *
-     * @param string $table
-     */
-    public function setTable($table)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTable()
+    class Google_Service_Spanner_Delete extends \Google\Service\Spanner\Delete
     {
     }
 }

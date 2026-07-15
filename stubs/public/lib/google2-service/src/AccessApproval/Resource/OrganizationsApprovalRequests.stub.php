@@ -21,102 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessApproval\Resource;
-
-/**
- * The "approvalRequests" collection of methods.
- * Typical usage is:
- *  <code>
- *   $accessapprovalService = new Google\Service\AccessApproval(...);
- *   $approvalRequests = $accessapprovalService->organizations_approvalRequests;
- *  </code>
- */
-class OrganizationsApprovalRequests extends \Google\Service\Resource
-{
+namespace Google\Service\AccessApproval\Resource {
+    use Google\Service\AccessApproval\ApprovalRequest;
+    use Google\Service\AccessApproval\ApproveApprovalRequestMessage;
+    use Google\Service\AccessApproval\DismissApprovalRequestMessage;
+    use Google\Service\AccessApproval\InvalidateApprovalRequestMessage;
+    use Google\Service\AccessApproval\ListApprovalRequestsResponse;
     /**
-     * Approves a request and returns the updated ApprovalRequest. Returns NOT_FOUND
-     * if the request does not exist. Returns FAILED_PRECONDITION if the request
-     * exists but is not in a pending state. (approvalRequests.approve)
-     *
-     * @param string $name Name of the approval request to approve.
-     * @param ApproveApprovalRequestMessage $postBody
-     * @param array $optParams Optional parameters.
-     * @return ApprovalRequest
-     * @throws \Google\Service\Exception
+     * The "approvalRequests" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $accessapprovalService = new Google\Service\AccessApproval(...);
+     *   $approvalRequests = $accessapprovalService->organizations_approvalRequests;
+     *  </code>
      */
-    public function approve($name, ApproveApprovalRequestMessage $postBody, $optParams = [])
+    class OrganizationsApprovalRequests extends \Google\Service\Resource
     {
+        /**
+         * Approves a request and returns the updated ApprovalRequest. Returns NOT_FOUND
+         * if the request does not exist. Returns FAILED_PRECONDITION if the request
+         * exists but is not in a pending state. (approvalRequests.approve)
+         *
+         * @param string $name Name of the approval request to approve.
+         * @param ApproveApprovalRequestMessage $postBody
+         * @param array $optParams Optional parameters.
+         * @return ApprovalRequest
+         * @throws \Google\Service\Exception
+         */
+        public function approve($name, ApproveApprovalRequestMessage $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Dismisses a request. Returns the updated ApprovalRequest. NOTE: When a
+         * request is dismissed, it is considered ignored. Dismissing a request does not
+         * prevent access granted by other Access Approval requests. Returns NOT_FOUND
+         * if the request does not exist. Returns FAILED_PRECONDITION if the request
+         * exists but is not in a pending state. (approvalRequests.dismiss)
+         *
+         * @param string $name Name of the ApprovalRequest to dismiss.
+         * @param DismissApprovalRequestMessage $postBody
+         * @param array $optParams Optional parameters.
+         * @return ApprovalRequest
+         * @throws \Google\Service\Exception
+         */
+        public function dismiss($name, DismissApprovalRequestMessage $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets an approval request. Returns NOT_FOUND if the request does not exist.
+         * (approvalRequests.get)
+         *
+         * @param string $name The name of the approval request to retrieve. Format:
+         * "{projects|folders|organizations}/{id}/approvalRequests/{approval_request}"
+         * @param array $optParams Optional parameters.
+         * @return ApprovalRequest
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Invalidates an existing ApprovalRequest. Returns the updated ApprovalRequest.
+         * NOTE: This action revokes Google access based on this approval request. If
+         * the resource has other active approvals, access will remain granted. Returns
+         * FAILED_PRECONDITION if the request exists but is not in an approved state.
+         * (approvalRequests.invalidate)
+         *
+         * @param string $name Name of the ApprovalRequest to invalidate.
+         * @param InvalidateApprovalRequestMessage $postBody
+         * @param array $optParams Optional parameters.
+         * @return ApprovalRequest
+         * @throws \Google\Service\Exception
+         */
+        public function invalidate($name, InvalidateApprovalRequestMessage $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists approval requests associated with a project, folder, or organization.
+         * Approval requests can be filtered by state (pending, active, dismissed). The
+         * order is reverse chronological.
+         * (approvalRequests.listOrganizationsApprovalRequests)
+         *
+         * @param string $parent The parent resource. This may be "projects/{project}",
+         * "folders/{folder}", or "organizations/{organization}".
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter A filter on the type of approval requests to
+         * retrieve. Must be one of the following values: * [not set]: Requests that are
+         * pending or have active approvals. * ALL: All requests. * PENDING: Only
+         * pending requests. * ACTIVE: Only active (i.e. currently approved) requests. *
+         * DISMISSED: Only requests that have been dismissed, or requests that are not
+         * approved and past expiration. * EXPIRED: Only requests that have been
+         * approved, and the approval has expired. * HISTORY: Active, dismissed and
+         * expired requests.
+         * @opt_param int pageSize Requested page size.
+         * @opt_param string pageToken A token identifying the page of results to
+         * return.
+         * @return ListApprovalRequestsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsApprovalRequests($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Dismisses a request. Returns the updated ApprovalRequest. NOTE: When a
-     * request is dismissed, it is considered ignored. Dismissing a request does not
-     * prevent access granted by other Access Approval requests. Returns NOT_FOUND
-     * if the request does not exist. Returns FAILED_PRECONDITION if the request
-     * exists but is not in a pending state. (approvalRequests.dismiss)
-     *
-     * @param string $name Name of the ApprovalRequest to dismiss.
-     * @param DismissApprovalRequestMessage $postBody
-     * @param array $optParams Optional parameters.
-     * @return ApprovalRequest
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AccessApproval\Resource\OrganizationsApprovalRequests registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function dismiss($name, DismissApprovalRequestMessage $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Gets an approval request. Returns NOT_FOUND if the request does not exist.
-     * (approvalRequests.get)
-     *
-     * @param string $name The name of the approval request to retrieve. Format:
-     * "{projects|folders|organizations}/{id}/approvalRequests/{approval_request}"
-     * @param array $optParams Optional parameters.
-     * @return ApprovalRequest
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Invalidates an existing ApprovalRequest. Returns the updated ApprovalRequest.
-     * NOTE: This action revokes Google access based on this approval request. If
-     * the resource has other active approvals, access will remain granted. Returns
-     * FAILED_PRECONDITION if the request exists but is not in an approved state.
-     * (approvalRequests.invalidate)
-     *
-     * @param string $name Name of the ApprovalRequest to invalidate.
-     * @param InvalidateApprovalRequestMessage $postBody
-     * @param array $optParams Optional parameters.
-     * @return ApprovalRequest
-     * @throws \Google\Service\Exception
-     */
-    public function invalidate($name, InvalidateApprovalRequestMessage $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists approval requests associated with a project, folder, or organization.
-     * Approval requests can be filtered by state (pending, active, dismissed). The
-     * order is reverse chronological.
-     * (approvalRequests.listOrganizationsApprovalRequests)
-     *
-     * @param string $parent The parent resource. This may be "projects/{project}",
-     * "folders/{folder}", or "organizations/{organization}".
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter A filter on the type of approval requests to
-     * retrieve. Must be one of the following values: * [not set]: Requests that are
-     * pending or have active approvals. * ALL: All requests. * PENDING: Only
-     * pending requests. * ACTIVE: Only active (i.e. currently approved) requests. *
-     * DISMISSED: Only requests that have been dismissed, or requests that are not
-     * approved and past expiration. * EXPIRED: Only requests that have been
-     * approved, and the approval has expired. * HISTORY: Active, dismissed and
-     * expired requests.
-     * @opt_param int pageSize Requested page size.
-     * @opt_param string pageToken A token identifying the page of results to
-     * return.
-     * @return ListApprovalRequestsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listOrganizationsApprovalRequests($parent, $optParams = [])
+    class Google_Service_AccessApproval_Resource_OrganizationsApprovalRequests extends \Google\Service\AccessApproval\Resource\OrganizationsApprovalRequests
     {
     }
 }

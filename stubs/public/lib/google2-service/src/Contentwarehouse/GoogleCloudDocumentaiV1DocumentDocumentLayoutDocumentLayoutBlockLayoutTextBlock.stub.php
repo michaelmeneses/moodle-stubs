@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTextBlock extends \Google\Collection
-{
-    protected $collection_key = 'blocks';
-    protected $blocksType = GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlock::class;
-    protected $blocksDataType = 'array';
-    /**
-     * Text content stored in the block.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Type of the text in the block. Available options are: `paragraph`,
-     * `subtitle`, `heading-1`, `heading-2`, `heading-3`, `heading-4`,
-     * `heading-5`, `header`, `footer`.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * A text block could further have child blocks. Repeated blocks support
-     * further hierarchies and nested blocks.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlock[] $blocks
-     */
-    public function setBlocks($blocks)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTextBlock extends \Google\Collection
     {
+        protected $collection_key = 'blocks';
+        protected $blocksType = GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlock::class;
+        protected $blocksDataType = 'array';
+        /**
+         * Text content stored in the block.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Type of the text in the block. Available options are: `paragraph`,
+         * `subtitle`, `heading-1`, `heading-2`, `heading-3`, `heading-4`,
+         * `heading-5`, `header`, `footer`.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * A text block could further have child blocks. Repeated blocks support
+         * further hierarchies and nested blocks.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlock[] $blocks
+         */
+        public function setBlocks($blocks)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlock[]
+         */
+        public function getBlocks()
+        {
+        }
+        /**
+         * Text content stored in the block.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * Type of the text in the block. Available options are: `paragraph`,
+         * `subtitle`, `heading-1`, `heading-2`, `heading-3`, `heading-4`,
+         * `heading-5`, `header`, `footer`.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlock[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTextBlock registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlocks()
-    {
-    }
-    /**
-     * Text content stored in the block.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
-    {
-    }
-    /**
-     * Type of the text in the block. Available options are: `paragraph`,
-     * `subtitle`, `heading-1`, `heading-2`, `heading-3`, `heading-4`,
-     * `heading-5`, `header`, `footer`.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Contentwarehouse_GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTextBlock extends \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTextBlock
     {
     }
 }

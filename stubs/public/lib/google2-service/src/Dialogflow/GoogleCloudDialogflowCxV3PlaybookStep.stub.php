@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3PlaybookStep extends \Google\Collection
-{
-    protected $collection_key = 'steps';
-    protected $stepsType = GoogleCloudDialogflowCxV3PlaybookStep::class;
-    protected $stepsDataType = 'array';
-    /**
-     * Step instruction in text format.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Sub-processing needed to execute the current step.
-     *
-     * @param GoogleCloudDialogflowCxV3PlaybookStep[] $steps
-     */
-    public function setSteps($steps)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3PlaybookStep extends \Google\Collection
     {
+        protected $collection_key = 'steps';
+        protected $stepsType = GoogleCloudDialogflowCxV3PlaybookStep::class;
+        protected $stepsDataType = 'array';
+        /**
+         * Step instruction in text format.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Sub-processing needed to execute the current step.
+         *
+         * @param GoogleCloudDialogflowCxV3PlaybookStep[] $steps
+         */
+        public function setSteps($steps)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3PlaybookStep[]
+         */
+        public function getSteps()
+        {
+        }
+        /**
+         * Step instruction in text format.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3PlaybookStep[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3PlaybookStep registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSteps()
-    {
-    }
-    /**
-     * Step instruction in text format.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3PlaybookStep extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3PlaybookStep
     {
     }
 }

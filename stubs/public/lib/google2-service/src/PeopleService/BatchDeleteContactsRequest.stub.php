@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class BatchDeleteContactsRequest extends \Google\Collection
-{
-    protected $collection_key = 'resourceNames';
-    /**
-     * Required. The resource names of the contact to delete. It's repeatable.
-     * Allows up to 500 resource names in a single request.
-     *
-     * @var string[]
-     */
-    public $resourceNames;
-    /**
-     * Required. The resource names of the contact to delete. It's repeatable.
-     * Allows up to 500 resource names in a single request.
-     *
-     * @param string[] $resourceNames
-     */
-    public function setResourceNames($resourceNames)
+namespace Google\Service\PeopleService {
+    class BatchDeleteContactsRequest extends \Google\Collection
     {
+        protected $collection_key = 'resourceNames';
+        /**
+         * Required. The resource names of the contact to delete. It's repeatable.
+         * Allows up to 500 resource names in a single request.
+         *
+         * @var string[]
+         */
+        public $resourceNames;
+        /**
+         * Required. The resource names of the contact to delete. It's repeatable.
+         * Allows up to 500 resource names in a single request.
+         *
+         * @param string[] $resourceNames
+         */
+        public function setResourceNames($resourceNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\PeopleService\BatchDeleteContactsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceNames()
+    class Google_Service_PeopleService_BatchDeleteContactsRequest extends \Google\Service\PeopleService\BatchDeleteContactsRequest
     {
     }
 }

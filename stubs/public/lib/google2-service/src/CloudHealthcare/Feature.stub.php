@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class Feature extends \Google\Model
-{
-    /**
-     * The model's confidence in this feature annotation. A number between 0 and
-     * 1.
-     *
-     * @var 
-     */
-    public $confidence;
-    /**
-     * The value of this feature annotation. Its range depends on the type of the
-     * feature.
-     *
-     * @var string
-     */
-    public $value;
-    public function setConfidence($confidence)
+namespace Google\Service\CloudHealthcare {
+    class Feature extends \Google\Model
     {
+        /**
+         * The model's confidence in this feature annotation. A number between 0 and
+         * 1.
+         *
+         * @var 
+         */
+        public $confidence;
+        /**
+         * The value of this feature annotation. Its range depends on the type of the
+         * feature.
+         *
+         * @var string
+         */
+        public $value;
+        public function setConfidence($confidence)
+        {
+        }
+        public function getConfidence()
+        {
+        }
+        /**
+         * The value of this feature annotation. Its range depends on the type of the
+         * feature.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
-    public function getConfidence()
-    {
-    }
+}
+namespace {
     /**
-     * The value of this feature annotation. Its range depends on the type of the
-     * feature.
-     *
-     * @param string $value
+     * Runtime class alias of \Google\Service\CloudHealthcare\Feature registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_CloudHealthcare_Feature extends \Google\Service\CloudHealthcare\Feature
     {
     }
 }

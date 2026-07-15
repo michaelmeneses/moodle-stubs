@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub;
-
-class ListServiceProjectAttachmentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $serviceProjectAttachmentsType = ServiceProjectAttachment::class;
-    protected $serviceProjectAttachmentsDataType = 'array';
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\AppHub {
+    class ListServiceProjectAttachmentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $serviceProjectAttachmentsType = ServiceProjectAttachment::class;
+        protected $serviceProjectAttachmentsDataType = 'array';
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of service project attachments.
+         *
+         * @param ServiceProjectAttachment[] $serviceProjectAttachments
+         */
+        public function setServiceProjectAttachments($serviceProjectAttachments)
+        {
+        }
+        /**
+         * @return ServiceProjectAttachment[]
+         */
+        public function getServiceProjectAttachments()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AppHub\ListServiceProjectAttachmentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of service project attachments.
-     *
-     * @param ServiceProjectAttachment[] $serviceProjectAttachments
-     */
-    public function setServiceProjectAttachments($serviceProjectAttachments)
-    {
-    }
-    /**
-     * @return ServiceProjectAttachment[]
-     */
-    public function getServiceProjectAttachments()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_AppHub_ListServiceProjectAttachmentsResponse extends \Google\Service\AppHub\ListServiceProjectAttachmentsResponse
     {
     }
 }

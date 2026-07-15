@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1TaskInfrastructureSpecVpcNetwork extends \Google\Collection
-{
-    protected $collection_key = 'networkTags';
-    /**
-     * Optional. The Cloud VPC network in which the job is run. By default, the
-     * Cloud VPC network named Default within the project is used.
-     *
-     * @var string
-     */
-    public $network;
-    /**
-     * Optional. List of network tags to apply to the job.
-     *
-     * @var string[]
-     */
-    public $networkTags;
-    /**
-     * Optional. The Cloud VPC sub-network in which the job is run.
-     *
-     * @var string
-     */
-    public $subNetwork;
-    /**
-     * Optional. The Cloud VPC network in which the job is run. By default, the
-     * Cloud VPC network named Default within the project is used.
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1TaskInfrastructureSpecVpcNetwork extends \Google\Collection
     {
+        protected $collection_key = 'networkTags';
+        /**
+         * Optional. The Cloud VPC network in which the job is run. By default, the
+         * Cloud VPC network named Default within the project is used.
+         *
+         * @var string
+         */
+        public $network;
+        /**
+         * Optional. List of network tags to apply to the job.
+         *
+         * @var string[]
+         */
+        public $networkTags;
+        /**
+         * Optional. The Cloud VPC sub-network in which the job is run.
+         *
+         * @var string
+         */
+        public $subNetwork;
+        /**
+         * Optional. The Cloud VPC network in which the job is run. By default, the
+         * Cloud VPC network named Default within the project is used.
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * Optional. List of network tags to apply to the job.
+         *
+         * @param string[] $networkTags
+         */
+        public function setNetworkTags($networkTags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNetworkTags()
+        {
+        }
+        /**
+         * Optional. The Cloud VPC sub-network in which the job is run.
+         *
+         * @param string $subNetwork
+         */
+        public function setSubNetwork($subNetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubNetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1TaskInfrastructureSpecVpcNetwork registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetwork()
-    {
-    }
-    /**
-     * Optional. List of network tags to apply to the job.
-     *
-     * @param string[] $networkTags
-     */
-    public function setNetworkTags($networkTags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNetworkTags()
-    {
-    }
-    /**
-     * Optional. The Cloud VPC sub-network in which the job is run.
-     *
-     * @param string $subNetwork
-     */
-    public function setSubNetwork($subNetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubNetwork()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1TaskInfrastructureSpecVpcNetwork extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1TaskInfrastructureSpecVpcNetwork
     {
     }
 }

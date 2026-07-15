@@ -21,132 +21,149 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SASPortalTesting\Resource;
-
-/**
- * The "devices" collection of methods.
- * Typical usage is:
- *  <code>
- *   $prod_tt_sasportalService = new Google\Service\SASPortalTesting(...);
- *   $devices = $prod_tt_sasportalService->customers_devices;
- *  </code>
- */
-class CustomersDevices extends \Google\Service\Resource
-{
+namespace Google\Service\SASPortalTesting\Resource {
+    use Google\Service\SASPortalTesting\SasPortalCreateSignedDeviceRequest;
+    use Google\Service\SASPortalTesting\SasPortalDevice;
+    use Google\Service\SASPortalTesting\SasPortalEmpty;
+    use Google\Service\SASPortalTesting\SasPortalListDevicesResponse;
+    use Google\Service\SASPortalTesting\SasPortalMoveDeviceRequest;
+    use Google\Service\SASPortalTesting\SasPortalOperation;
+    use Google\Service\SASPortalTesting\SasPortalSignDeviceRequest;
+    use Google\Service\SASPortalTesting\SasPortalUpdateSignedDeviceRequest;
     /**
-     * Creates a device under a node or customer. (devices.create)
-     *
-     * @param string $parent Required. The name of the parent resource.
-     * @param SasPortalDevice $postBody
-     * @param array $optParams Optional parameters.
-     * @return SasPortalDevice
-     * @throws \Google\Service\Exception
+     * The "devices" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $prod_tt_sasportalService = new Google\Service\SASPortalTesting(...);
+     *   $devices = $prod_tt_sasportalService->customers_devices;
+     *  </code>
      */
-    public function create($parent, SasPortalDevice $postBody, $optParams = [])
+    class CustomersDevices extends \Google\Service\Resource
     {
+        /**
+         * Creates a device under a node or customer. (devices.create)
+         *
+         * @param string $parent Required. The name of the parent resource.
+         * @param SasPortalDevice $postBody
+         * @param array $optParams Optional parameters.
+         * @return SasPortalDevice
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, SasPortalDevice $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Creates a signed device under a node or customer. (devices.createSigned)
+         *
+         * @param string $parent Required. The name of the parent resource.
+         * @param SasPortalCreateSignedDeviceRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SasPortalDevice
+         * @throws \Google\Service\Exception
+         */
+        public function createSigned($parent, SasPortalCreateSignedDeviceRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a device. (devices.delete)
+         *
+         * @param string $name Required. The name of the device.
+         * @param array $optParams Optional parameters.
+         * @return SasPortalEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets details about a device. (devices.get)
+         *
+         * @param string $name Required. The name of the device.
+         * @param array $optParams Optional parameters.
+         * @return SasPortalDevice
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists devices under a node or customer. (devices.listCustomersDevices)
+         *
+         * @param string $parent Required. The name of the parent resource.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter The filter expression. The filter should have one of
+         * the following formats: "sn=123454" or "display_name=MyDevice". sn corresponds
+         * to serial number of the device. The filter is case insensitive.
+         * @opt_param int pageSize The maximum number of devices to return in the
+         * response. If empty or zero, all devices will be listed. Must be in the range
+         * [0, 1000].
+         * @opt_param string pageToken A pagination token returned from a previous call
+         * to ListDevices that indicates where this listing should continue from.
+         * @return SasPortalListDevicesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listCustomersDevices($parent, $optParams = [])
+        {
+        }
+        /**
+         * Moves a device under another node or customer. (devices.move)
+         *
+         * @param string $name Required. The name of the device to move.
+         * @param SasPortalMoveDeviceRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SasPortalOperation
+         * @throws \Google\Service\Exception
+         */
+        public function move($name, SasPortalMoveDeviceRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates a device. (devices.patch)
+         *
+         * @param string $name Output only. The resource path name.
+         * @param SasPortalDevice $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Fields to be updated.
+         * @return SasPortalDevice
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, SasPortalDevice $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Signs a device. (devices.signDevice)
+         *
+         * @param string $name Output only. The resource path name.
+         * @param SasPortalSignDeviceRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SasPortalEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function signDevice($name, SasPortalSignDeviceRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates a signed device. (devices.updateSigned)
+         *
+         * @param string $name Required. The name of the device to update.
+         * @param SasPortalUpdateSignedDeviceRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SasPortalDevice
+         * @throws \Google\Service\Exception
+         */
+        public function updateSigned($name, SasPortalUpdateSignedDeviceRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Creates a signed device under a node or customer. (devices.createSigned)
-     *
-     * @param string $parent Required. The name of the parent resource.
-     * @param SasPortalCreateSignedDeviceRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SasPortalDevice
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\SASPortalTesting\Resource\CustomersDevices registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function createSigned($parent, SasPortalCreateSignedDeviceRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Deletes a device. (devices.delete)
-     *
-     * @param string $name Required. The name of the device.
-     * @param array $optParams Optional parameters.
-     * @return SasPortalEmpty
-     * @throws \Google\Service\Exception
-     */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets details about a device. (devices.get)
-     *
-     * @param string $name Required. The name of the device.
-     * @param array $optParams Optional parameters.
-     * @return SasPortalDevice
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists devices under a node or customer. (devices.listCustomersDevices)
-     *
-     * @param string $parent Required. The name of the parent resource.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter The filter expression. The filter should have one of
-     * the following formats: "sn=123454" or "display_name=MyDevice". sn corresponds
-     * to serial number of the device. The filter is case insensitive.
-     * @opt_param int pageSize The maximum number of devices to return in the
-     * response. If empty or zero, all devices will be listed. Must be in the range
-     * [0, 1000].
-     * @opt_param string pageToken A pagination token returned from a previous call
-     * to ListDevices that indicates where this listing should continue from.
-     * @return SasPortalListDevicesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listCustomersDevices($parent, $optParams = [])
-    {
-    }
-    /**
-     * Moves a device under another node or customer. (devices.move)
-     *
-     * @param string $name Required. The name of the device to move.
-     * @param SasPortalMoveDeviceRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SasPortalOperation
-     * @throws \Google\Service\Exception
-     */
-    public function move($name, SasPortalMoveDeviceRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates a device. (devices.patch)
-     *
-     * @param string $name Output only. The resource path name.
-     * @param SasPortalDevice $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Fields to be updated.
-     * @return SasPortalDevice
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, SasPortalDevice $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Signs a device. (devices.signDevice)
-     *
-     * @param string $name Output only. The resource path name.
-     * @param SasPortalSignDeviceRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SasPortalEmpty
-     * @throws \Google\Service\Exception
-     */
-    public function signDevice($name, SasPortalSignDeviceRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates a signed device. (devices.updateSigned)
-     *
-     * @param string $name Required. The name of the device to update.
-     * @param SasPortalUpdateSignedDeviceRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SasPortalDevice
-     * @throws \Google\Service\Exception
-     */
-    public function updateSigned($name, SasPortalUpdateSignedDeviceRequest $postBody, $optParams = [])
+    class Google_Service_SASPortalTesting_Resource_CustomersDevices extends \Google\Service\SASPortalTesting\Resource\CustomersDevices
     {
     }
 }

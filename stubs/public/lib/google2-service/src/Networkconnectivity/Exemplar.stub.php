@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class Exemplar extends \Google\Collection
-{
-    protected $collection_key = 'attachments';
-    public $attachments;
-    public $timestamp;
-    public $value;
-    public function setAttachments($attachments)
+namespace Google\Service\Networkconnectivity {
+    class Exemplar extends \Google\Collection
     {
+        protected $collection_key = 'attachments';
+        public $attachments;
+        public $timestamp;
+        public $value;
+        public function setAttachments($attachments)
+        {
+        }
+        public function getAttachments()
+        {
+        }
+        public function setTimestamp($timestamp)
+        {
+        }
+        public function getTimestamp()
+        {
+        }
+        public function setValue($value)
+        {
+        }
+        public function getValue()
+        {
+        }
     }
-    public function getAttachments()
-    {
-    }
-    public function setTimestamp($timestamp)
-    {
-    }
-    public function getTimestamp()
-    {
-    }
-    public function setValue($value)
-    {
-    }
-    public function getValue()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Networkconnectivity\Exemplar registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Networkconnectivity_Exemplar extends \Google\Service\Networkconnectivity\Exemplar
     {
     }
 }

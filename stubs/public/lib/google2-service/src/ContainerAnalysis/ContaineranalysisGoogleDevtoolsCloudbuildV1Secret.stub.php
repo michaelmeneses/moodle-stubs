@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ContaineranalysisGoogleDevtoolsCloudbuildV1Secret extends \Google\Model
-{
-    /**
-     * Cloud KMS key name to use to decrypt these envs.
-     *
-     * @var string
-     */
-    public $kmsKeyName;
-    /**
-     * Map of environment variable name to its encrypted value. Secret environment
-     * variables must be unique across all of a build's secrets, and must be used
-     * by at least one build step. Values can be at most 64 KB in size. There can
-     * be at most 100 secret values across all of a build's secrets.
-     *
-     * @var string[]
-     */
-    public $secretEnv;
-    /**
-     * Cloud KMS key name to use to decrypt these envs.
-     *
-     * @param string $kmsKeyName
-     */
-    public function setKmsKeyName($kmsKeyName)
+namespace Google\Service\ContainerAnalysis {
+    class ContaineranalysisGoogleDevtoolsCloudbuildV1Secret extends \Google\Model
     {
+        /**
+         * Cloud KMS key name to use to decrypt these envs.
+         *
+         * @var string
+         */
+        public $kmsKeyName;
+        /**
+         * Map of environment variable name to its encrypted value. Secret environment
+         * variables must be unique across all of a build's secrets, and must be used
+         * by at least one build step. Values can be at most 64 KB in size. There can
+         * be at most 100 secret values across all of a build's secrets.
+         *
+         * @var string[]
+         */
+        public $secretEnv;
+        /**
+         * Cloud KMS key name to use to decrypt these envs.
+         *
+         * @param string $kmsKeyName
+         */
+        public function setKmsKeyName($kmsKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyName()
+        {
+        }
+        /**
+         * Map of environment variable name to its encrypted value. Secret environment
+         * variables must be unique across all of a build's secrets, and must be used
+         * by at least one build step. Values can be at most 64 KB in size. There can
+         * be at most 100 secret values across all of a build's secrets.
+         *
+         * @param string[] $secretEnv
+         */
+        public function setSecretEnv($secretEnv)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSecretEnv()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1Secret registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKmsKeyName()
-    {
-    }
-    /**
-     * Map of environment variable name to its encrypted value. Secret environment
-     * variables must be unique across all of a build's secrets, and must be used
-     * by at least one build step. Values can be at most 64 KB in size. There can
-     * be at most 100 secret values across all of a build's secrets.
-     *
-     * @param string[] $secretEnv
-     */
-    public function setSecretEnv($secretEnv)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSecretEnv()
+    class Google_Service_ContainerAnalysis_ContaineranalysisGoogleDevtoolsCloudbuildV1Secret extends \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1Secret
     {
     }
 }

@@ -20,53 +20,63 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output\progress_trace;
-
-/**
- * Special type of trace that can be used for catching of output of other traces.
- *
- * @copyright Petr Skoda {@link http://skodak.org}
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @package core
- */
-class progress_trace_buffer extends progress_trace
-{
-    /** @var string output buffer */
-    protected string $buffer = '';
+namespace core\output\progress_trace {
+    use core\output\progress_trace;
     /**
-     * Constructor.
+     * Special type of trace that can be used for catching of output of other traces.
      *
-     * @param progress_trace $trace
-     * @param bool $passthrough true means output and buffer, false means just buffer and no output
+     * @copyright Petr Skoda {@link http://skodak.org}
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @package core
      */
-    public function __construct(
-        /** @var progress_trace The progress_trace to pass content to */
-        protected progress_trace $trace,
-        /** @var bool Whether we pass output out */
-        protected bool $passthrough = true
-    )
+    class progress_trace_buffer extends progress_trace
     {
+        /** @var string output buffer */
+        protected string $buffer = '';
+        /**
+         * Constructor.
+         *
+         * @param progress_trace $trace
+         * @param bool $passthrough true means output and buffer, false means just buffer and no output
+         */
+        public function __construct(
+            /** @var progress_trace The progress_trace to pass content to */
+            protected progress_trace $trace,
+            /** @var bool Whether we pass output out */
+            protected bool $passthrough = true
+        )
+        {
+        }
+        #[\Override]
+        public function output(string $message, int $depth = 0): void
+        {
+        }
+        #[\Override]
+        public function finished(): void
+        {
+        }
+        /**
+         * Reset the internal text buffer.
+         */
+        public function reset_buffer(): void
+        {
+        }
+        /**
+         * Return the internal text buffer.
+         *
+         * @return string buffered plain text
+         */
+        public function get_buffer(): string
+        {
+        }
     }
-    #[\Override]
-    public function output(string $message, int $depth = 0): void
-    {
-    }
-    #[\Override]
-    public function finished(): void
-    {
-    }
+}
+namespace {
     /**
-     * Reset the internal text buffer.
+     * Runtime class alias of \core\output\progress_trace\progress_trace_buffer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function reset_buffer(): void
-    {
-    }
-    /**
-     * Return the internal text buffer.
-     *
-     * @return string buffered plain text
-     */
-    public function get_buffer(): string
+    class progress_trace_buffer extends \core\output\progress_trace\progress_trace_buffer
     {
     }
 }

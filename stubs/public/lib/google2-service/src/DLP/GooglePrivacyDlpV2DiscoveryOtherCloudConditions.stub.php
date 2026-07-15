@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DiscoveryOtherCloudConditions extends \Google\Model
-{
-    protected $amazonS3BucketConditionsType = GooglePrivacyDlpV2AmazonS3BucketConditions::class;
-    protected $amazonS3BucketConditionsDataType = '';
-    /**
-     * Minimum age a resource must be before Cloud DLP can profile it. Value must
-     * be 1 hour or greater.
-     *
-     * @var string
-     */
-    public $minAge;
-    /**
-     * Amazon S3 bucket conditions.
-     *
-     * @param GooglePrivacyDlpV2AmazonS3BucketConditions $amazonS3BucketConditions
-     */
-    public function setAmazonS3BucketConditions(GooglePrivacyDlpV2AmazonS3BucketConditions $amazonS3BucketConditions)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DiscoveryOtherCloudConditions extends \Google\Model
     {
+        protected $amazonS3BucketConditionsType = GooglePrivacyDlpV2AmazonS3BucketConditions::class;
+        protected $amazonS3BucketConditionsDataType = '';
+        /**
+         * Minimum age a resource must be before Cloud DLP can profile it. Value must
+         * be 1 hour or greater.
+         *
+         * @var string
+         */
+        public $minAge;
+        /**
+         * Amazon S3 bucket conditions.
+         *
+         * @param GooglePrivacyDlpV2AmazonS3BucketConditions $amazonS3BucketConditions
+         */
+        public function setAmazonS3BucketConditions(GooglePrivacyDlpV2AmazonS3BucketConditions $amazonS3BucketConditions)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2AmazonS3BucketConditions
+         */
+        public function getAmazonS3BucketConditions()
+        {
+        }
+        /**
+         * Minimum age a resource must be before Cloud DLP can profile it. Value must
+         * be 1 hour or greater.
+         *
+         * @param string $minAge
+         */
+        public function setMinAge($minAge)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinAge()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2AmazonS3BucketConditions
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DiscoveryOtherCloudConditions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmazonS3BucketConditions()
-    {
-    }
-    /**
-     * Minimum age a resource must be before Cloud DLP can profile it. Value must
-     * be 1 hour or greater.
-     *
-     * @param string $minAge
-     */
-    public function setMinAge($minAge)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinAge()
+    class Google_Service_DLP_GooglePrivacyDlpV2DiscoveryOtherCloudConditions extends \Google\Service\DLP\GooglePrivacyDlpV2DiscoveryOtherCloudConditions
     {
     }
 }

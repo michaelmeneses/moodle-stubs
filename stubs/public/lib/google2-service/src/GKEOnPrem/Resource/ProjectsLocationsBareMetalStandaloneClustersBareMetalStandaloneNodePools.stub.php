@@ -21,33 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem\Resource;
-
-/**
- * The "bareMetalStandaloneNodePools" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gkeonpremService = new Google\Service\GKEOnPrem(...);
- *   $bareMetalStandaloneNodePools = $gkeonpremService->projects_locations_bareMetalStandaloneClusters_bareMetalStandaloneNodePools;
- *  </code>
- */
-class ProjectsLocationsBareMetalStandaloneClustersBareMetalStandaloneNodePools extends \Google\Service\Resource
-{
+namespace Google\Service\GKEOnPrem\Resource {
+    use Google\Service\GKEOnPrem\EnrollBareMetalStandaloneNodePoolRequest;
+    use Google\Service\GKEOnPrem\Operation;
     /**
-     * Enrolls an existing bare metal standalone node pool to the Anthos On-Prem API
-     * within a given project and location. Through enrollment, an existing
-     * standalone node pool will become Anthos On-Prem API managed. The
-     * corresponding GCP resources will be created.
-     * (bareMetalStandaloneNodePools.enroll)
-     *
-     * @param string $parent Required. The parent resource where this node pool will
-     * be created.
-     * projects/{project}/locations/{location}/bareMetalStandaloneClusters/{cluster}
-     * @param EnrollBareMetalStandaloneNodePoolRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
+     * The "bareMetalStandaloneNodePools" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gkeonpremService = new Google\Service\GKEOnPrem(...);
+     *   $bareMetalStandaloneNodePools = $gkeonpremService->projects_locations_bareMetalStandaloneClusters_bareMetalStandaloneNodePools;
+     *  </code>
      */
-    public function enroll($parent, EnrollBareMetalStandaloneNodePoolRequest $postBody, $optParams = [])
+    class ProjectsLocationsBareMetalStandaloneClustersBareMetalStandaloneNodePools extends \Google\Service\Resource
+    {
+        /**
+         * Enrolls an existing bare metal standalone node pool to the Anthos On-Prem API
+         * within a given project and location. Through enrollment, an existing
+         * standalone node pool will become Anthos On-Prem API managed. The
+         * corresponding GCP resources will be created.
+         * (bareMetalStandaloneNodePools.enroll)
+         *
+         * @param string $parent Required. The parent resource where this node pool will
+         * be created.
+         * projects/{project}/locations/{location}/bareMetalStandaloneClusters/{cluster}
+         * @param EnrollBareMetalStandaloneNodePoolRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         */
+        public function enroll($parent, EnrollBareMetalStandaloneNodePoolRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\GKEOnPrem\Resource\ProjectsLocationsBareMetalStandaloneClustersBareMetalStandaloneNodePools registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_GKEOnPrem_Resource_ProjectsLocationsBareMetalStandaloneClustersBareMetalStandaloneNodePools extends \Google\Service\GKEOnPrem\Resource\ProjectsLocationsBareMetalStandaloneClustersBareMetalStandaloneNodePools
     {
     }
 }

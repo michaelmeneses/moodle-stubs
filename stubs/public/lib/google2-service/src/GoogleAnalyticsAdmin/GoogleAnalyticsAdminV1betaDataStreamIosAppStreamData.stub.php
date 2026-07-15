@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaDataStreamIosAppStreamData extends \Google\Model
-{
-    /**
-     * Required. Immutable. The Apple App Store Bundle ID for the app Example:
-     * "com.example.myiosapp"
-     *
-     * @var string
-     */
-    public $bundleId;
-    /**
-     * Output only. ID of the corresponding iOS app in Firebase, if any. This ID
-     * can change if the iOS app is deleted and recreated.
-     *
-     * @var string
-     */
-    public $firebaseAppId;
-    /**
-     * Required. Immutable. The Apple App Store Bundle ID for the app Example:
-     * "com.example.myiosapp"
-     *
-     * @param string $bundleId
-     */
-    public function setBundleId($bundleId)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaDataStreamIosAppStreamData extends \Google\Model
     {
+        /**
+         * Required. Immutable. The Apple App Store Bundle ID for the app Example:
+         * "com.example.myiosapp"
+         *
+         * @var string
+         */
+        public $bundleId;
+        /**
+         * Output only. ID of the corresponding iOS app in Firebase, if any. This ID
+         * can change if the iOS app is deleted and recreated.
+         *
+         * @var string
+         */
+        public $firebaseAppId;
+        /**
+         * Required. Immutable. The Apple App Store Bundle ID for the app Example:
+         * "com.example.myiosapp"
+         *
+         * @param string $bundleId
+         */
+        public function setBundleId($bundleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBundleId()
+        {
+        }
+        /**
+         * Output only. ID of the corresponding iOS app in Firebase, if any. This ID
+         * can change if the iOS app is deleted and recreated.
+         *
+         * @param string $firebaseAppId
+         */
+        public function setFirebaseAppId($firebaseAppId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirebaseAppId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaDataStreamIosAppStreamData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBundleId()
-    {
-    }
-    /**
-     * Output only. ID of the corresponding iOS app in Firebase, if any. This ID
-     * can change if the iOS app is deleted and recreated.
-     *
-     * @param string $firebaseAppId
-     */
-    public function setFirebaseAppId($firebaseAppId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFirebaseAppId()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaDataStreamIosAppStreamData extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaDataStreamIosAppStreamData
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class RoboScriptExecution extends \Google\Model
-{
-    /**
-     * The number of Robo script actions executed successfully.
-     *
-     * @var int
-     */
-    public $successfulActions;
-    /**
-     * The total number of actions in the Robo script.
-     *
-     * @var int
-     */
-    public $totalActions;
-    /**
-     * The number of Robo script actions executed successfully.
-     *
-     * @param int $successfulActions
-     */
-    public function setSuccessfulActions($successfulActions)
+namespace Google\Service\ToolResults {
+    class RoboScriptExecution extends \Google\Model
     {
+        /**
+         * The number of Robo script actions executed successfully.
+         *
+         * @var int
+         */
+        public $successfulActions;
+        /**
+         * The total number of actions in the Robo script.
+         *
+         * @var int
+         */
+        public $totalActions;
+        /**
+         * The number of Robo script actions executed successfully.
+         *
+         * @param int $successfulActions
+         */
+        public function setSuccessfulActions($successfulActions)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSuccessfulActions()
+        {
+        }
+        /**
+         * The total number of actions in the Robo script.
+         *
+         * @param int $totalActions
+         */
+        public function setTotalActions($totalActions)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalActions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\ToolResults\RoboScriptExecution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSuccessfulActions()
-    {
-    }
-    /**
-     * The total number of actions in the Robo script.
-     *
-     * @param int $totalActions
-     */
-    public function setTotalActions($totalActions)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalActions()
+    class Google_Service_ToolResults_RoboScriptExecution extends \Google\Service\ToolResults\RoboScriptExecution
     {
     }
 }

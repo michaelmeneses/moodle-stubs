@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class AuthorizedDomain extends \Google\Model
-{
-    /**
-     * Fully qualified domain name of the domain authorized for use. Example:
-     * example.com.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Full path to the AuthorizedDomain resource in the API. Example:
-     * apps/myapp/authorizedDomains/example.com.@OutputOnly
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Fully qualified domain name of the domain authorized for use. Example:
-     * example.com.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Appengine {
+    class AuthorizedDomain extends \Google\Model
     {
+        /**
+         * Fully qualified domain name of the domain authorized for use. Example:
+         * example.com.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Full path to the AuthorizedDomain resource in the API. Example:
+         * apps/myapp/authorizedDomains/example.com.@OutputOnly
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Fully qualified domain name of the domain authorized for use. Example:
+         * example.com.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Full path to the AuthorizedDomain resource in the API. Example:
+         * apps/myapp/authorizedDomains/example.com.@OutputOnly
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Appengine\AuthorizedDomain registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Full path to the AuthorizedDomain resource in the API. Example:
-     * apps/myapp/authorizedDomains/example.com.@OutputOnly
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Appengine_AuthorizedDomain extends \Google\Service\Appengine\AuthorizedDomain
     {
     }
 }

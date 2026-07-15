@@ -21,87 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc\Resource;
-
-/**
- * The "sessionTemplates" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dataprocService = new Google\Service\Dataproc(...);
- *   $sessionTemplates = $dataprocService->projects_locations_sessionTemplates;
- *  </code>
- */
-class ProjectsLocationsSessionTemplates extends \Google\Service\Resource
-{
+namespace Google\Service\Dataproc\Resource {
+    use Google\Service\Dataproc\DataprocEmpty;
+    use Google\Service\Dataproc\ListSessionTemplatesResponse;
+    use Google\Service\Dataproc\SessionTemplate;
     /**
-     * Create a session template synchronously. (sessionTemplates.create)
-     *
-     * @param string $parent Required. The parent resource where this session
-     * template will be created.
-     * @param SessionTemplate $postBody
-     * @param array $optParams Optional parameters.
-     * @return SessionTemplate
-     * @throws \Google\Service\Exception
+     * The "sessionTemplates" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dataprocService = new Google\Service\Dataproc(...);
+     *   $sessionTemplates = $dataprocService->projects_locations_sessionTemplates;
+     *  </code>
      */
-    public function create($parent, SessionTemplate $postBody, $optParams = [])
+    class ProjectsLocationsSessionTemplates extends \Google\Service\Resource
     {
+        /**
+         * Create a session template synchronously. (sessionTemplates.create)
+         *
+         * @param string $parent Required. The parent resource where this session
+         * template will be created.
+         * @param SessionTemplate $postBody
+         * @param array $optParams Optional parameters.
+         * @return SessionTemplate
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, SessionTemplate $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a session template. (sessionTemplates.delete)
+         *
+         * @param string $name Required. The name of the session template resource to
+         * delete.
+         * @param array $optParams Optional parameters.
+         * @return DataprocEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the resource representation for a session template.
+         * (sessionTemplates.get)
+         *
+         * @param string $name Required. The name of the session template to retrieve.
+         * @param array $optParams Optional parameters.
+         * @return SessionTemplate
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists session templates.
+         * (sessionTemplates.listProjectsLocationsSessionTemplates)
+         *
+         * @param string $parent Required. The parent that owns this collection of
+         * session templates.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. A filter for the session templates to
+         * return in the response. Filters are case sensitive and have the following
+         * syntax:field = value AND field = value ...
+         * @opt_param int pageSize Optional. The maximum number of sessions to return in
+         * each response. The service may return fewer than this value.
+         * @opt_param string pageToken Optional. A page token received from a previous
+         * ListSessions call. Provide this token to retrieve the subsequent page.
+         * @return ListSessionTemplatesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsSessionTemplates($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates the session template synchronously. (sessionTemplates.patch)
+         *
+         * @param string $name Required. Identifier. The resource name of the session
+         * template.
+         * @param SessionTemplate $postBody
+         * @param array $optParams Optional parameters.
+         * @return SessionTemplate
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, SessionTemplate $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a session template. (sessionTemplates.delete)
-     *
-     * @param string $name Required. The name of the session template resource to
-     * delete.
-     * @param array $optParams Optional parameters.
-     * @return DataprocEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dataproc\Resource\ProjectsLocationsSessionTemplates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets the resource representation for a session template.
-     * (sessionTemplates.get)
-     *
-     * @param string $name Required. The name of the session template to retrieve.
-     * @param array $optParams Optional parameters.
-     * @return SessionTemplate
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists session templates.
-     * (sessionTemplates.listProjectsLocationsSessionTemplates)
-     *
-     * @param string $parent Required. The parent that owns this collection of
-     * session templates.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. A filter for the session templates to
-     * return in the response. Filters are case sensitive and have the following
-     * syntax:field = value AND field = value ...
-     * @opt_param int pageSize Optional. The maximum number of sessions to return in
-     * each response. The service may return fewer than this value.
-     * @opt_param string pageToken Optional. A page token received from a previous
-     * ListSessions call. Provide this token to retrieve the subsequent page.
-     * @return ListSessionTemplatesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsSessionTemplates($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates the session template synchronously. (sessionTemplates.patch)
-     *
-     * @param string $name Required. Identifier. The resource name of the session
-     * template.
-     * @param SessionTemplate $postBody
-     * @param array $optParams Optional parameters.
-     * @return SessionTemplate
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, SessionTemplate $postBody, $optParams = [])
+    class Google_Service_Dataproc_Resource_ProjectsLocationsSessionTemplates extends \Google\Service\Dataproc\Resource\ProjectsLocationsSessionTemplates
     {
     }
 }

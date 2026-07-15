@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2ServiceMesh extends \Google\Model
-{
-    /**
-     * The Mesh resource name. Format:
-     * `projects/{project}/locations/global/meshes/{mesh}`, where `{project}` can
-     * be project id or number.
-     *
-     * @var string
-     */
-    public $mesh;
-    /**
-     * The Mesh resource name. Format:
-     * `projects/{project}/locations/global/meshes/{mesh}`, where `{project}` can
-     * be project id or number.
-     *
-     * @param string $mesh
-     */
-    public function setMesh($mesh)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2ServiceMesh extends \Google\Model
     {
+        /**
+         * The Mesh resource name. Format:
+         * `projects/{project}/locations/global/meshes/{mesh}`, where `{project}` can
+         * be project id or number.
+         *
+         * @var string
+         */
+        public $mesh;
+        /**
+         * The Mesh resource name. Format:
+         * `projects/{project}/locations/global/meshes/{mesh}`, where `{project}` can
+         * be project id or number.
+         *
+         * @param string $mesh
+         */
+        public function setMesh($mesh)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMesh()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2ServiceMesh registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMesh()
+    class Google_Service_CloudRun_GoogleCloudRunV2ServiceMesh extends \Google\Service\CloudRun\GoogleCloudRunV2ServiceMesh
     {
     }
 }

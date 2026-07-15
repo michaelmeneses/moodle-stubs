@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class MysqlTable extends \Google\Collection
-{
-    protected $collection_key = 'mysqlColumns';
-    protected $mysqlColumnsType = MysqlColumn::class;
-    protected $mysqlColumnsDataType = 'array';
-    /**
-     * Table name.
-     *
-     * @var string
-     */
-    public $table;
-    /**
-     * MySQL columns in the database. When unspecified as part of include/exclude
-     * objects, includes/excludes everything.
-     *
-     * @param MysqlColumn[] $mysqlColumns
-     */
-    public function setMysqlColumns($mysqlColumns)
+namespace Google\Service\Datastream {
+    class MysqlTable extends \Google\Collection
     {
+        protected $collection_key = 'mysqlColumns';
+        protected $mysqlColumnsType = MysqlColumn::class;
+        protected $mysqlColumnsDataType = 'array';
+        /**
+         * Table name.
+         *
+         * @var string
+         */
+        public $table;
+        /**
+         * MySQL columns in the database. When unspecified as part of include/exclude
+         * objects, includes/excludes everything.
+         *
+         * @param MysqlColumn[] $mysqlColumns
+         */
+        public function setMysqlColumns($mysqlColumns)
+        {
+        }
+        /**
+         * @return MysqlColumn[]
+         */
+        public function getMysqlColumns()
+        {
+        }
+        /**
+         * Table name.
+         *
+         * @param string $table
+         */
+        public function setTable($table)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MysqlColumn[]
+     * Runtime class alias of \Google\Service\Datastream\MysqlTable registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMysqlColumns()
-    {
-    }
-    /**
-     * Table name.
-     *
-     * @param string $table
-     */
-    public function setTable($table)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTable()
+    class Google_Service_Datastream_MysqlTable extends \Google\Service\Datastream\MysqlTable
     {
     }
 }

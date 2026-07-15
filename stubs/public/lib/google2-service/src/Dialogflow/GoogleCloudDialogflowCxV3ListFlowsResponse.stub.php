@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ListFlowsResponse extends \Google\Collection
-{
-    protected $collection_key = 'flows';
-    protected $flowsType = GoogleCloudDialogflowCxV3Flow::class;
-    protected $flowsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of flows. There will be a maximum number of items returned based
-     * on the page_size field in the request.
-     *
-     * @param GoogleCloudDialogflowCxV3Flow[] $flows
-     */
-    public function setFlows($flows)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ListFlowsResponse extends \Google\Collection
     {
+        protected $collection_key = 'flows';
+        protected $flowsType = GoogleCloudDialogflowCxV3Flow::class;
+        protected $flowsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of flows. There will be a maximum number of items returned based
+         * on the page_size field in the request.
+         *
+         * @param GoogleCloudDialogflowCxV3Flow[] $flows
+         */
+        public function setFlows($flows)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3Flow[]
+         */
+        public function getFlows()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3Flow[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListFlowsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFlows()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ListFlowsResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListFlowsResponse
     {
     }
 }

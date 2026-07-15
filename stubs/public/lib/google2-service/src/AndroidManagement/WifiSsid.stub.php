@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class WifiSsid extends \Google\Model
-{
-    /**
-     * Required. Wi-Fi SSID represented as a string.
-     *
-     * @var string
-     */
-    public $wifiSsid;
-    /**
-     * Required. Wi-Fi SSID represented as a string.
-     *
-     * @param string $wifiSsid
-     */
-    public function setWifiSsid($wifiSsid)
+namespace Google\Service\AndroidManagement {
+    class WifiSsid extends \Google\Model
     {
+        /**
+         * Required. Wi-Fi SSID represented as a string.
+         *
+         * @var string
+         */
+        public $wifiSsid;
+        /**
+         * Required. Wi-Fi SSID represented as a string.
+         *
+         * @param string $wifiSsid
+         */
+        public function setWifiSsid($wifiSsid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWifiSsid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\WifiSsid registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWifiSsid()
+    class Google_Service_AndroidManagement_WifiSsid extends \Google\Service\AndroidManagement\WifiSsid
     {
     }
 }

@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1AgentCoachingSuggestion extends \Google\Collection
-{
-    protected $collection_key = 'sampleResponses';
-    protected $agentActionSuggestionsType = GoogleCloudDialogflowV2beta1AgentCoachingSuggestionAgentActionSuggestion::class;
-    protected $agentActionSuggestionsDataType = 'array';
-    protected $applicableInstructionsType = GoogleCloudDialogflowV2beta1AgentCoachingInstruction::class;
-    protected $applicableInstructionsDataType = 'array';
-    protected $sampleResponsesType = GoogleCloudDialogflowV2beta1AgentCoachingSuggestionSampleResponse::class;
-    protected $sampleResponsesDataType = 'array';
-    /**
-     * Optional. Suggested actions for the agent to take.
-     *
-     * @param GoogleCloudDialogflowV2beta1AgentCoachingSuggestionAgentActionSuggestion[] $agentActionSuggestions
-     */
-    public function setAgentActionSuggestions($agentActionSuggestions)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1AgentCoachingSuggestion extends \Google\Collection
     {
+        protected $collection_key = 'sampleResponses';
+        protected $agentActionSuggestionsType = GoogleCloudDialogflowV2beta1AgentCoachingSuggestionAgentActionSuggestion::class;
+        protected $agentActionSuggestionsDataType = 'array';
+        protected $applicableInstructionsType = GoogleCloudDialogflowV2beta1AgentCoachingInstruction::class;
+        protected $applicableInstructionsDataType = 'array';
+        protected $sampleResponsesType = GoogleCloudDialogflowV2beta1AgentCoachingSuggestionSampleResponse::class;
+        protected $sampleResponsesDataType = 'array';
+        /**
+         * Optional. Suggested actions for the agent to take.
+         *
+         * @param GoogleCloudDialogflowV2beta1AgentCoachingSuggestionAgentActionSuggestion[] $agentActionSuggestions
+         */
+        public function setAgentActionSuggestions($agentActionSuggestions)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1AgentCoachingSuggestionAgentActionSuggestion[]
+         */
+        public function getAgentActionSuggestions()
+        {
+        }
+        /**
+         * Optional. Instructions applicable based on the current context.
+         *
+         * @param GoogleCloudDialogflowV2beta1AgentCoachingInstruction[] $applicableInstructions
+         */
+        public function setApplicableInstructions($applicableInstructions)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1AgentCoachingInstruction[]
+         */
+        public function getApplicableInstructions()
+        {
+        }
+        /**
+         * Optional. Sample response for the Agent.
+         *
+         * @param GoogleCloudDialogflowV2beta1AgentCoachingSuggestionSampleResponse[] $sampleResponses
+         */
+        public function setSampleResponses($sampleResponses)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1AgentCoachingSuggestionSampleResponse[]
+         */
+        public function getSampleResponses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2beta1AgentCoachingSuggestionAgentActionSuggestion[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1AgentCoachingSuggestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentActionSuggestions()
-    {
-    }
-    /**
-     * Optional. Instructions applicable based on the current context.
-     *
-     * @param GoogleCloudDialogflowV2beta1AgentCoachingInstruction[] $applicableInstructions
-     */
-    public function setApplicableInstructions($applicableInstructions)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2beta1AgentCoachingInstruction[]
-     */
-    public function getApplicableInstructions()
-    {
-    }
-    /**
-     * Optional. Sample response for the Agent.
-     *
-     * @param GoogleCloudDialogflowV2beta1AgentCoachingSuggestionSampleResponse[] $sampleResponses
-     */
-    public function setSampleResponses($sampleResponses)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2beta1AgentCoachingSuggestionSampleResponse[]
-     */
-    public function getSampleResponses()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1AgentCoachingSuggestion extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1AgentCoachingSuggestion
     {
     }
 }

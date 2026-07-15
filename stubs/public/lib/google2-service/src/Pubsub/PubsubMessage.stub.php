@@ -21,138 +21,147 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class PubsubMessage extends \Google\Model
-{
-    /**
-     * Optional. Attributes for this message. If this field is empty, the message
-     * must contain non-empty data. This can be used to filter messages on the
-     * subscription.
-     *
-     * @var string[]
-     */
-    public $attributes;
-    /**
-     * Optional. The message data field. If this field is empty, the message must
-     * contain at least one attribute.
-     *
-     * @var string
-     */
-    public $data;
-    /**
-     * ID of this message, assigned by the server when the message is published.
-     * Guaranteed to be unique within the topic. This value may be read by a
-     * subscriber that receives a `PubsubMessage` via a `Pull` call or a push
-     * delivery. It must not be populated by the publisher in a `Publish` call.
-     *
-     * @var string
-     */
-    public $messageId;
-    /**
-     * Optional. If non-empty, identifies related messages for which publish order
-     * should be respected. If a `Subscription` has `enable_message_ordering` set
-     * to `true`, messages published with the same non-empty `ordering_key` value
-     * will be delivered to subscribers in the order in which they are received by
-     * the Pub/Sub system. All `PubsubMessage`s published in a given
-     * `PublishRequest` must specify the same `ordering_key` value. For more
-     * information, see [ordering
-     * messages](https://cloud.google.com/pubsub/docs/ordering).
-     *
-     * @var string
-     */
-    public $orderingKey;
-    /**
-     * The time at which the message was published, populated by the server when
-     * it receives the `Publish` call. It must not be populated by the publisher
-     * in a `Publish` call.
-     *
-     * @var string
-     */
-    public $publishTime;
-    /**
-     * Optional. Attributes for this message. If this field is empty, the message
-     * must contain non-empty data. This can be used to filter messages on the
-     * subscription.
-     *
-     * @param string[] $attributes
-     */
-    public function setAttributes($attributes)
+namespace Google\Service\Pubsub {
+    class PubsubMessage extends \Google\Model
     {
+        /**
+         * Optional. Attributes for this message. If this field is empty, the message
+         * must contain non-empty data. This can be used to filter messages on the
+         * subscription.
+         *
+         * @var string[]
+         */
+        public $attributes;
+        /**
+         * Optional. The message data field. If this field is empty, the message must
+         * contain at least one attribute.
+         *
+         * @var string
+         */
+        public $data;
+        /**
+         * ID of this message, assigned by the server when the message is published.
+         * Guaranteed to be unique within the topic. This value may be read by a
+         * subscriber that receives a `PubsubMessage` via a `Pull` call or a push
+         * delivery. It must not be populated by the publisher in a `Publish` call.
+         *
+         * @var string
+         */
+        public $messageId;
+        /**
+         * Optional. If non-empty, identifies related messages for which publish order
+         * should be respected. If a `Subscription` has `enable_message_ordering` set
+         * to `true`, messages published with the same non-empty `ordering_key` value
+         * will be delivered to subscribers in the order in which they are received by
+         * the Pub/Sub system. All `PubsubMessage`s published in a given
+         * `PublishRequest` must specify the same `ordering_key` value. For more
+         * information, see [ordering
+         * messages](https://cloud.google.com/pubsub/docs/ordering).
+         *
+         * @var string
+         */
+        public $orderingKey;
+        /**
+         * The time at which the message was published, populated by the server when
+         * it receives the `Publish` call. It must not be populated by the publisher
+         * in a `Publish` call.
+         *
+         * @var string
+         */
+        public $publishTime;
+        /**
+         * Optional. Attributes for this message. If this field is empty, the message
+         * must contain non-empty data. This can be used to filter messages on the
+         * subscription.
+         *
+         * @param string[] $attributes
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * Optional. The message data field. If this field is empty, the message must
+         * contain at least one attribute.
+         *
+         * @param string $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getData()
+        {
+        }
+        /**
+         * ID of this message, assigned by the server when the message is published.
+         * Guaranteed to be unique within the topic. This value may be read by a
+         * subscriber that receives a `PubsubMessage` via a `Pull` call or a push
+         * delivery. It must not be populated by the publisher in a `Publish` call.
+         *
+         * @param string $messageId
+         */
+        public function setMessageId($messageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessageId()
+        {
+        }
+        /**
+         * Optional. If non-empty, identifies related messages for which publish order
+         * should be respected. If a `Subscription` has `enable_message_ordering` set
+         * to `true`, messages published with the same non-empty `ordering_key` value
+         * will be delivered to subscribers in the order in which they are received by
+         * the Pub/Sub system. All `PubsubMessage`s published in a given
+         * `PublishRequest` must specify the same `ordering_key` value. For more
+         * information, see [ordering
+         * messages](https://cloud.google.com/pubsub/docs/ordering).
+         *
+         * @param string $orderingKey
+         */
+        public function setOrderingKey($orderingKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrderingKey()
+        {
+        }
+        /**
+         * The time at which the message was published, populated by the server when
+         * it receives the `Publish` call. It must not be populated by the publisher
+         * in a `Publish` call.
+         *
+         * @param string $publishTime
+         */
+        public function setPublishTime($publishTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublishTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Pubsub\PubsubMessage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
-    {
-    }
-    /**
-     * Optional. The message data field. If this field is empty, the message must
-     * contain at least one attribute.
-     *
-     * @param string $data
-     */
-    public function setData($data)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getData()
-    {
-    }
-    /**
-     * ID of this message, assigned by the server when the message is published.
-     * Guaranteed to be unique within the topic. This value may be read by a
-     * subscriber that receives a `PubsubMessage` via a `Pull` call or a push
-     * delivery. It must not be populated by the publisher in a `Publish` call.
-     *
-     * @param string $messageId
-     */
-    public function setMessageId($messageId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessageId()
-    {
-    }
-    /**
-     * Optional. If non-empty, identifies related messages for which publish order
-     * should be respected. If a `Subscription` has `enable_message_ordering` set
-     * to `true`, messages published with the same non-empty `ordering_key` value
-     * will be delivered to subscribers in the order in which they are received by
-     * the Pub/Sub system. All `PubsubMessage`s published in a given
-     * `PublishRequest` must specify the same `ordering_key` value. For more
-     * information, see [ordering
-     * messages](https://cloud.google.com/pubsub/docs/ordering).
-     *
-     * @param string $orderingKey
-     */
-    public function setOrderingKey($orderingKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrderingKey()
-    {
-    }
-    /**
-     * The time at which the message was published, populated by the server when
-     * it receives the `Publish` call. It must not be populated by the publisher
-     * in a `Publish` call.
-     *
-     * @param string $publishTime
-     */
-    public function setPublishTime($publishTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublishTime()
+    class Google_Service_Pubsub_PubsubMessage extends \Google\Service\Pubsub\PubsubMessage
     {
     }
 }

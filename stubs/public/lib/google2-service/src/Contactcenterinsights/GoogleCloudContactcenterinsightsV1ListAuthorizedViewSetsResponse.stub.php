@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1ListAuthorizedViewSetsResponse extends \Google\Collection
-{
-    protected $collection_key = 'authorizedViewSets';
-    protected $authorizedViewSetsType = GoogleCloudContactcenterinsightsV1AuthorizedViewSet::class;
-    protected $authorizedViewSetsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The AuthorizedViewSets under the parent.
-     *
-     * @param GoogleCloudContactcenterinsightsV1AuthorizedViewSet[] $authorizedViewSets
-     */
-    public function setAuthorizedViewSets($authorizedViewSets)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1ListAuthorizedViewSetsResponse extends \Google\Collection
     {
+        protected $collection_key = 'authorizedViewSets';
+        protected $authorizedViewSetsType = GoogleCloudContactcenterinsightsV1AuthorizedViewSet::class;
+        protected $authorizedViewSetsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The AuthorizedViewSets under the parent.
+         *
+         * @param GoogleCloudContactcenterinsightsV1AuthorizedViewSet[] $authorizedViewSets
+         */
+        public function setAuthorizedViewSets($authorizedViewSets)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1AuthorizedViewSet[]
+         */
+        public function getAuthorizedViewSets()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1AuthorizedViewSet[]
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListAuthorizedViewSetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthorizedViewSets()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1ListAuthorizedViewSetsResponse extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListAuthorizedViewSetsResponse
     {
     }
 }

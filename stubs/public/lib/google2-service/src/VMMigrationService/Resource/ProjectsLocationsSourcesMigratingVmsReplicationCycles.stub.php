@@ -21,51 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService\Resource;
-
-/**
- * The "replicationCycles" collection of methods.
- * Typical usage is:
- *  <code>
- *   $vmmigrationService = new Google\Service\VMMigrationService(...);
- *   $replicationCycles = $vmmigrationService->projects_locations_sources_migratingVms_replicationCycles;
- *  </code>
- */
-class ProjectsLocationsSourcesMigratingVmsReplicationCycles extends \Google\Service\Resource
-{
+namespace Google\Service\VMMigrationService\Resource {
+    use Google\Service\VMMigrationService\ListReplicationCyclesResponse;
+    use Google\Service\VMMigrationService\ReplicationCycle;
     /**
-     * Gets details of a single ReplicationCycle. (replicationCycles.get)
-     *
-     * @param string $name Required. The name of the ReplicationCycle.
-     * @param array $optParams Optional parameters.
-     * @return ReplicationCycle
-     * @throws \Google\Service\Exception
+     * The "replicationCycles" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $vmmigrationService = new Google\Service\VMMigrationService(...);
+     *   $replicationCycles = $vmmigrationService->projects_locations_sources_migratingVms_replicationCycles;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsSourcesMigratingVmsReplicationCycles extends \Google\Service\Resource
     {
+        /**
+         * Gets details of a single ReplicationCycle. (replicationCycles.get)
+         *
+         * @param string $name Required. The name of the ReplicationCycle.
+         * @param array $optParams Optional parameters.
+         * @return ReplicationCycle
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists ReplicationCycles in a given MigratingVM.
+         * (replicationCycles.listProjectsLocationsSourcesMigratingVmsReplicationCycles)
+         *
+         * @param string $parent Required. The parent, which owns this collection of
+         * ReplicationCycles.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. The filter request.
+         * @opt_param string orderBy Optional. the order by fields for the result.
+         * @opt_param int pageSize Optional. The maximum number of replication cycles to
+         * return. The service may return fewer than this value. If unspecified, at most
+         * 100 migrating VMs will be returned. The maximum value is 100; values above
+         * 100 will be coerced to 100.
+         * @opt_param string pageToken Required. A page token, received from a previous
+         * `ListReplicationCycles` call. Provide this to retrieve the subsequent page.
+         * When paginating, all other parameters provided to `ListReplicationCycles`
+         * must match the call that provided the page token.
+         * @return ListReplicationCyclesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsSourcesMigratingVmsReplicationCycles($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists ReplicationCycles in a given MigratingVM.
-     * (replicationCycles.listProjectsLocationsSourcesMigratingVmsReplicationCycles)
-     *
-     * @param string $parent Required. The parent, which owns this collection of
-     * ReplicationCycles.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. The filter request.
-     * @opt_param string orderBy Optional. the order by fields for the result.
-     * @opt_param int pageSize Optional. The maximum number of replication cycles to
-     * return. The service may return fewer than this value. If unspecified, at most
-     * 100 migrating VMs will be returned. The maximum value is 100; values above
-     * 100 will be coerced to 100.
-     * @opt_param string pageToken Required. A page token, received from a previous
-     * `ListReplicationCycles` call. Provide this to retrieve the subsequent page.
-     * When paginating, all other parameters provided to `ListReplicationCycles`
-     * must match the call that provided the page token.
-     * @return ListReplicationCyclesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\VMMigrationService\Resource\ProjectsLocationsSourcesMigratingVmsReplicationCycles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsSourcesMigratingVmsReplicationCycles($parent, $optParams = [])
+    class Google_Service_VMMigrationService_Resource_ProjectsLocationsSourcesMigratingVmsReplicationCycles extends \Google\Service\VMMigrationService\Resource\ProjectsLocationsSourcesMigratingVmsReplicationCycles
     {
     }
 }

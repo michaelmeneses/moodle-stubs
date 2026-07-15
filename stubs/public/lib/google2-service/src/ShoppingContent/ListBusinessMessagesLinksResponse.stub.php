@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ListBusinessMessagesLinksResponse extends \Google\Collection
-{
-    protected $collection_key = 'businessMessagesLinks';
-    /**
-     * @var BusinessMessagesLink[]
-     */
-    public $businessMessagesLinks;
-    protected $businessMessagesLinksType = BusinessMessagesLink::class;
-    protected $businessMessagesLinksDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param BusinessMessagesLink[]
-     */
-    public function setBusinessMessagesLinks($businessMessagesLinks)
+namespace Google\Service\ShoppingContent {
+    class ListBusinessMessagesLinksResponse extends \Google\Collection
     {
+        protected $collection_key = 'businessMessagesLinks';
+        /**
+         * @var BusinessMessagesLink[]
+         */
+        public $businessMessagesLinks;
+        protected $businessMessagesLinksType = BusinessMessagesLink::class;
+        protected $businessMessagesLinksDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param BusinessMessagesLink[]
+         */
+        public function setBusinessMessagesLinks($businessMessagesLinks)
+        {
+        }
+        /**
+         * @return BusinessMessagesLink[]
+         */
+        public function getBusinessMessagesLinks()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BusinessMessagesLink[]
+     * Runtime class alias of \Google\Service\ShoppingContent\ListBusinessMessagesLinksResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBusinessMessagesLinks()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_ShoppingContent_ListBusinessMessagesLinksResponse extends \Google\Service\ShoppingContent\ListBusinessMessagesLinksResponse
     {
     }
 }

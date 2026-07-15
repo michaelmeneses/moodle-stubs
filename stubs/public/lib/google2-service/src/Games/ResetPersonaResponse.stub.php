@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class ResetPersonaResponse extends \Google\Model
-{
-    /**
-     * Required. Whether any tokens were unlinked as a result of this request.
-     *
-     * @var bool
-     */
-    public $unlinked;
-    /**
-     * Required. Whether any tokens were unlinked as a result of this request.
-     *
-     * @param bool $unlinked
-     */
-    public function setUnlinked($unlinked)
+namespace Google\Service\Games {
+    class ResetPersonaResponse extends \Google\Model
     {
+        /**
+         * Required. Whether any tokens were unlinked as a result of this request.
+         *
+         * @var bool
+         */
+        public $unlinked;
+        /**
+         * Required. Whether any tokens were unlinked as a result of this request.
+         *
+         * @param bool $unlinked
+         */
+        public function setUnlinked($unlinked)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUnlinked()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Games\ResetPersonaResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUnlinked()
+    class Google_Service_Games_ResetPersonaResponse extends \Google\Service\Games\ResetPersonaResponse
     {
     }
 }

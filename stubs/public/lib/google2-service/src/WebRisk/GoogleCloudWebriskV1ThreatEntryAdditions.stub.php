@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WebRisk;
-
-class GoogleCloudWebriskV1ThreatEntryAdditions extends \Google\Collection
-{
-    protected $collection_key = 'rawHashes';
-    protected $rawHashesType = GoogleCloudWebriskV1RawHashes::class;
-    protected $rawHashesDataType = 'array';
-    protected $riceHashesType = GoogleCloudWebriskV1RiceDeltaEncoding::class;
-    protected $riceHashesDataType = '';
-    /**
-     * The raw SHA256-formatted entries. Repeated to allow returning sets of
-     * hashes with different prefix sizes.
-     *
-     * @param GoogleCloudWebriskV1RawHashes[] $rawHashes
-     */
-    public function setRawHashes($rawHashes)
+namespace Google\Service\WebRisk {
+    class GoogleCloudWebriskV1ThreatEntryAdditions extends \Google\Collection
     {
+        protected $collection_key = 'rawHashes';
+        protected $rawHashesType = GoogleCloudWebriskV1RawHashes::class;
+        protected $rawHashesDataType = 'array';
+        protected $riceHashesType = GoogleCloudWebriskV1RiceDeltaEncoding::class;
+        protected $riceHashesDataType = '';
+        /**
+         * The raw SHA256-formatted entries. Repeated to allow returning sets of
+         * hashes with different prefix sizes.
+         *
+         * @param GoogleCloudWebriskV1RawHashes[] $rawHashes
+         */
+        public function setRawHashes($rawHashes)
+        {
+        }
+        /**
+         * @return GoogleCloudWebriskV1RawHashes[]
+         */
+        public function getRawHashes()
+        {
+        }
+        /**
+         * The encoded 4-byte prefixes of SHA256-formatted entries, using a Golomb-
+         * Rice encoding. The hashes are converted to uint32, sorted in ascending
+         * order, then delta encoded and stored as encoded_data.
+         *
+         * @param GoogleCloudWebriskV1RiceDeltaEncoding $riceHashes
+         */
+        public function setRiceHashes(GoogleCloudWebriskV1RiceDeltaEncoding $riceHashes)
+        {
+        }
+        /**
+         * @return GoogleCloudWebriskV1RiceDeltaEncoding
+         */
+        public function getRiceHashes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudWebriskV1RawHashes[]
+     * Runtime class alias of \Google\Service\WebRisk\GoogleCloudWebriskV1ThreatEntryAdditions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRawHashes()
-    {
-    }
-    /**
-     * The encoded 4-byte prefixes of SHA256-formatted entries, using a Golomb-
-     * Rice encoding. The hashes are converted to uint32, sorted in ascending
-     * order, then delta encoded and stored as encoded_data.
-     *
-     * @param GoogleCloudWebriskV1RiceDeltaEncoding $riceHashes
-     */
-    public function setRiceHashes(GoogleCloudWebriskV1RiceDeltaEncoding $riceHashes)
-    {
-    }
-    /**
-     * @return GoogleCloudWebriskV1RiceDeltaEncoding
-     */
-    public function getRiceHashes()
+    class Google_Service_WebRisk_GoogleCloudWebriskV1ThreatEntryAdditions extends \Google\Service\WebRisk\GoogleCloudWebriskV1ThreatEntryAdditions
     {
     }
 }

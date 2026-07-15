@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RagFileChunkingConfigFixedLengthChunking extends \Google\Model
-{
-    /**
-     * The overlap between chunks.
-     *
-     * @var int
-     */
-    public $chunkOverlap;
-    /**
-     * The size of the chunks.
-     *
-     * @var int
-     */
-    public $chunkSize;
-    /**
-     * The overlap between chunks.
-     *
-     * @param int $chunkOverlap
-     */
-    public function setChunkOverlap($chunkOverlap)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RagFileChunkingConfigFixedLengthChunking extends \Google\Model
     {
+        /**
+         * The overlap between chunks.
+         *
+         * @var int
+         */
+        public $chunkOverlap;
+        /**
+         * The size of the chunks.
+         *
+         * @var int
+         */
+        public $chunkSize;
+        /**
+         * The overlap between chunks.
+         *
+         * @param int $chunkOverlap
+         */
+        public function setChunkOverlap($chunkOverlap)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getChunkOverlap()
+        {
+        }
+        /**
+         * The size of the chunks.
+         *
+         * @param int $chunkSize
+         */
+        public function setChunkSize($chunkSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getChunkSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagFileChunkingConfigFixedLengthChunking registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChunkOverlap()
-    {
-    }
-    /**
-     * The size of the chunks.
-     *
-     * @param int $chunkSize
-     */
-    public function setChunkSize($chunkSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getChunkSize()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RagFileChunkingConfigFixedLengthChunking extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagFileChunkingConfigFixedLengthChunking
     {
     }
 }

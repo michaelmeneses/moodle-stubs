@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyV1ResolveResponse extends \Google\Collection
-{
-    protected $collection_key = 'resolvedPolicies';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resolvedPoliciesType = GoogleChromePolicyV1ResolvedPolicy::class;
-    protected $resolvedPoliciesDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyV1ResolveResponse extends \Google\Collection
     {
+        protected $collection_key = 'resolvedPolicies';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resolvedPoliciesType = GoogleChromePolicyV1ResolvedPolicy::class;
+        protected $resolvedPoliciesDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param GoogleChromePolicyV1ResolvedPolicy[]
+         */
+        public function setResolvedPolicies($resolvedPolicies)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyV1ResolvedPolicy[]
+         */
+        public function getResolvedPolicies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyV1ResolveResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param GoogleChromePolicyV1ResolvedPolicy[]
-     */
-    public function setResolvedPolicies($resolvedPolicies)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyV1ResolvedPolicy[]
-     */
-    public function getResolvedPolicies()
+    class Google_Service_ChromePolicy_GoogleChromePolicyV1ResolveResponse extends \Google\Service\ChromePolicy\GoogleChromePolicyV1ResolveResponse
     {
     }
 }

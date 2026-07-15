@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1DimensionConversationProfileDimensionMetadata extends \Google\Model
-{
-    /**
-     * Optional. The conversation profile ID.
-     *
-     * @var string
-     */
-    public $conversationProfileId;
-    /**
-     * Optional. The conversation profile ID.
-     *
-     * @param string $conversationProfileId
-     */
-    public function setConversationProfileId($conversationProfileId)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1DimensionConversationProfileDimensionMetadata extends \Google\Model
     {
+        /**
+         * Optional. The conversation profile ID.
+         *
+         * @var string
+         */
+        public $conversationProfileId;
+        /**
+         * Optional. The conversation profile ID.
+         *
+         * @param string $conversationProfileId
+         */
+        public function setConversationProfileId($conversationProfileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConversationProfileId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1DimensionConversationProfileDimensionMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversationProfileId()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1DimensionConversationProfileDimensionMetadata extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1DimensionConversationProfileDimensionMetadata
     {
     }
 }

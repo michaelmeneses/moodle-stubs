@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class AcknowledgeRequest extends \Google\Collection
-{
-    protected $collection_key = 'ackIds';
-    /**
-     * Required. The acknowledgment ID for the messages being acknowledged that
-     * was returned by the Pub/Sub system in the `Pull` response. Must not be
-     * empty.
-     *
-     * @var string[]
-     */
-    public $ackIds;
-    /**
-     * Required. The acknowledgment ID for the messages being acknowledged that
-     * was returned by the Pub/Sub system in the `Pull` response. Must not be
-     * empty.
-     *
-     * @param string[] $ackIds
-     */
-    public function setAckIds($ackIds)
+namespace Google\Service\Pubsub {
+    class AcknowledgeRequest extends \Google\Collection
     {
+        protected $collection_key = 'ackIds';
+        /**
+         * Required. The acknowledgment ID for the messages being acknowledged that
+         * was returned by the Pub/Sub system in the `Pull` response. Must not be
+         * empty.
+         *
+         * @var string[]
+         */
+        public $ackIds;
+        /**
+         * Required. The acknowledgment ID for the messages being acknowledged that
+         * was returned by the Pub/Sub system in the `Pull` response. Must not be
+         * empty.
+         *
+         * @param string[] $ackIds
+         */
+        public function setAckIds($ackIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAckIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Pubsub\AcknowledgeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAckIds()
+    class Google_Service_Pubsub_AcknowledgeRequest extends \Google\Service\Pubsub\AcknowledgeRequest
     {
     }
 }

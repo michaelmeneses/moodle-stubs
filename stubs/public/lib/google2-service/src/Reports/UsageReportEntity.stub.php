@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reports;
-
-class UsageReportEntity extends \Google\Model
-{
-    /**
-     * Output only. The unique identifier of the customer's account.
-     *
-     * @var string
-     */
-    public $customerId;
-    /**
-     * Output only. Object key. Only relevant if entity.type = "OBJECT" Note:
-     * external-facing name of report is "Entities" rather than "Objects".
-     *
-     * @var string
-     */
-    public $entityId;
-    /**
-     * Output only. The user's immutable Google Workspace profile identifier.
-     *
-     * @var string
-     */
-    public $profileId;
-    /**
-     * Output only. The type of item. The value is `user`.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. The user's email address. Only relevant if entity.type =
-     * "USER"
-     *
-     * @var string
-     */
-    public $userEmail;
-    /**
-     * Output only. The unique identifier of the customer's account.
-     *
-     * @param string $customerId
-     */
-    public function setCustomerId($customerId)
+namespace Google\Service\Reports {
+    class UsageReportEntity extends \Google\Model
     {
+        /**
+         * Output only. The unique identifier of the customer's account.
+         *
+         * @var string
+         */
+        public $customerId;
+        /**
+         * Output only. Object key. Only relevant if entity.type = "OBJECT" Note:
+         * external-facing name of report is "Entities" rather than "Objects".
+         *
+         * @var string
+         */
+        public $entityId;
+        /**
+         * Output only. The user's immutable Google Workspace profile identifier.
+         *
+         * @var string
+         */
+        public $profileId;
+        /**
+         * Output only. The type of item. The value is `user`.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. The user's email address. Only relevant if entity.type =
+         * "USER"
+         *
+         * @var string
+         */
+        public $userEmail;
+        /**
+         * Output only. The unique identifier of the customer's account.
+         *
+         * @param string $customerId
+         */
+        public function setCustomerId($customerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomerId()
+        {
+        }
+        /**
+         * Output only. Object key. Only relevant if entity.type = "OBJECT" Note:
+         * external-facing name of report is "Entities" rather than "Objects".
+         *
+         * @param string $entityId
+         */
+        public function setEntityId($entityId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityId()
+        {
+        }
+        /**
+         * Output only. The user's immutable Google Workspace profile identifier.
+         *
+         * @param string $profileId
+         */
+        public function setProfileId($profileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProfileId()
+        {
+        }
+        /**
+         * Output only. The type of item. The value is `user`.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Output only. The user's email address. Only relevant if entity.type =
+         * "USER"
+         *
+         * @param string $userEmail
+         */
+        public function setUserEmail($userEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Reports\UsageReportEntity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomerId()
-    {
-    }
-    /**
-     * Output only. Object key. Only relevant if entity.type = "OBJECT" Note:
-     * external-facing name of report is "Entities" rather than "Objects".
-     *
-     * @param string $entityId
-     */
-    public function setEntityId($entityId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntityId()
-    {
-    }
-    /**
-     * Output only. The user's immutable Google Workspace profile identifier.
-     *
-     * @param string $profileId
-     */
-    public function setProfileId($profileId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProfileId()
-    {
-    }
-    /**
-     * Output only. The type of item. The value is `user`.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Output only. The user's email address. Only relevant if entity.type =
-     * "USER"
-     *
-     * @param string $userEmail
-     */
-    public function setUserEmail($userEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserEmail()
+    class Google_Service_Reports_UsageReportEntity extends \Google\Service\Reports\UsageReportEntity
     {
     }
 }

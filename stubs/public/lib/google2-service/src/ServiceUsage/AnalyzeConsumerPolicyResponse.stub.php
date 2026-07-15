@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class AnalyzeConsumerPolicyResponse extends \Google\Collection
-{
-    protected $collection_key = 'analysis';
-    protected $analysisType = Analysis::class;
-    protected $analysisDataType = 'array';
-    /**
-     * The list of analyses returned from performing the intended policy update
-     * analysis. The analysis is grouped by service name and different analysis
-     * types. The empty analysis list means that the consumer policy can be
-     * updated without any warnings or blockers.
-     *
-     * @param Analysis[] $analysis
-     */
-    public function setAnalysis($analysis)
+namespace Google\Service\ServiceUsage {
+    class AnalyzeConsumerPolicyResponse extends \Google\Collection
     {
+        protected $collection_key = 'analysis';
+        protected $analysisType = Analysis::class;
+        protected $analysisDataType = 'array';
+        /**
+         * The list of analyses returned from performing the intended policy update
+         * analysis. The analysis is grouped by service name and different analysis
+         * types. The empty analysis list means that the consumer policy can be
+         * updated without any warnings or blockers.
+         *
+         * @param Analysis[] $analysis
+         */
+        public function setAnalysis($analysis)
+        {
+        }
+        /**
+         * @return Analysis[]
+         */
+        public function getAnalysis()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Analysis[]
+     * Runtime class alias of \Google\Service\ServiceUsage\AnalyzeConsumerPolicyResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalysis()
+    class Google_Service_ServiceUsage_AnalyzeConsumerPolicyResponse extends \Google\Service\ServiceUsage\AnalyzeConsumerPolicyResponse
     {
     }
 }

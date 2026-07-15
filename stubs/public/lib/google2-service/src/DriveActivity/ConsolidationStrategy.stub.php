@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class ConsolidationStrategy extends \Google\Model
-{
-    protected $legacyType = Legacy::class;
-    protected $legacyDataType = '';
-    protected $noneType = NoConsolidation::class;
-    protected $noneDataType = '';
-    /**
-     * The individual activities are consolidated using the legacy strategy.
-     *
-     * @param Legacy $legacy
-     */
-    public function setLegacy(Legacy $legacy)
+namespace Google\Service\DriveActivity {
+    class ConsolidationStrategy extends \Google\Model
     {
+        protected $legacyType = Legacy::class;
+        protected $legacyDataType = '';
+        protected $noneType = NoConsolidation::class;
+        protected $noneDataType = '';
+        /**
+         * The individual activities are consolidated using the legacy strategy.
+         *
+         * @param Legacy $legacy
+         */
+        public function setLegacy(Legacy $legacy)
+        {
+        }
+        /**
+         * @return Legacy
+         */
+        public function getLegacy()
+        {
+        }
+        /**
+         * The individual activities are not consolidated.
+         *
+         * @param NoConsolidation $none
+         */
+        public function setNone(NoConsolidation $none)
+        {
+        }
+        /**
+         * @return NoConsolidation
+         */
+        public function getNone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Legacy
+     * Runtime class alias of \Google\Service\DriveActivity\ConsolidationStrategy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLegacy()
-    {
-    }
-    /**
-     * The individual activities are not consolidated.
-     *
-     * @param NoConsolidation $none
-     */
-    public function setNone(NoConsolidation $none)
-    {
-    }
-    /**
-     * @return NoConsolidation
-     */
-    public function getNone()
+    class Google_Service_DriveActivity_ConsolidationStrategy extends \Google\Service\DriveActivity\ConsolidationStrategy
     {
     }
 }

@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class Probe extends \Google\Model
-{
-    protected $execType = ExecAction::class;
-    protected $execDataType = '';
-    /**
-     * Optional. How often (in seconds) to perform the probe. Default to 10
-     * seconds. Minimum value is 1. +optional
-     *
-     * @var int
-     */
-    public $periodSeconds;
-    /**
-     * Optional. Exec specifies the action to take. +optional
-     *
-     * @param ExecAction $exec
-     */
-    public function setExec(ExecAction $exec)
+namespace Google\Service\CloudBuild {
+    class Probe extends \Google\Model
     {
+        protected $execType = ExecAction::class;
+        protected $execDataType = '';
+        /**
+         * Optional. How often (in seconds) to perform the probe. Default to 10
+         * seconds. Minimum value is 1. +optional
+         *
+         * @var int
+         */
+        public $periodSeconds;
+        /**
+         * Optional. Exec specifies the action to take. +optional
+         *
+         * @param ExecAction $exec
+         */
+        public function setExec(ExecAction $exec)
+        {
+        }
+        /**
+         * @return ExecAction
+         */
+        public function getExec()
+        {
+        }
+        /**
+         * Optional. How often (in seconds) to perform the probe. Default to 10
+         * seconds. Minimum value is 1. +optional
+         *
+         * @param int $periodSeconds
+         */
+        public function setPeriodSeconds($periodSeconds)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPeriodSeconds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExecAction
+     * Runtime class alias of \Google\Service\CloudBuild\Probe registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExec()
-    {
-    }
-    /**
-     * Optional. How often (in seconds) to perform the probe. Default to 10
-     * seconds. Minimum value is 1. +optional
-     *
-     * @param int $periodSeconds
-     */
-    public function setPeriodSeconds($periodSeconds)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPeriodSeconds()
+    class Google_Service_CloudBuild_Probe extends \Google\Service\CloudBuild\Probe
     {
     }
 }

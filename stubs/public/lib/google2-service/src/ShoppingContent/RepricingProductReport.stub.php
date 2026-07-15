@@ -21,181 +21,190 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class RepricingProductReport extends \Google\Collection
-{
-    protected $collection_key = 'ruleIds';
-    /**
-     * @var string
-     */
-    public $applicationCount;
-    /**
-     * @var RepricingProductReportBuyboxWinningProductStats
-     */
-    public $buyboxWinningProductStats;
-    protected $buyboxWinningProductStatsType = RepricingProductReportBuyboxWinningProductStats::class;
-    protected $buyboxWinningProductStatsDataType = '';
-    /**
-     * @var Date
-     */
-    public $date;
-    protected $dateType = Date::class;
-    protected $dateDataType = '';
-    /**
-     * @var PriceAmount
-     */
-    public $highWatermark;
-    protected $highWatermarkType = PriceAmount::class;
-    protected $highWatermarkDataType = '';
-    /**
-     * @var InapplicabilityDetails[]
-     */
-    public $inapplicabilityDetails;
-    protected $inapplicabilityDetailsType = InapplicabilityDetails::class;
-    protected $inapplicabilityDetailsDataType = 'array';
-    /**
-     * @var PriceAmount
-     */
-    public $lowWatermark;
-    protected $lowWatermarkType = PriceAmount::class;
-    protected $lowWatermarkDataType = '';
-    /**
-     * @var int
-     */
-    public $orderItemCount;
-    /**
-     * @var string[]
-     */
-    public $ruleIds;
-    /**
-     * @var PriceAmount
-     */
-    public $totalGmv;
-    protected $totalGmvType = PriceAmount::class;
-    protected $totalGmvDataType = '';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string
-     */
-    public function setApplicationCount($applicationCount)
+namespace Google\Service\ShoppingContent {
+    class RepricingProductReport extends \Google\Collection
     {
+        protected $collection_key = 'ruleIds';
+        /**
+         * @var string
+         */
+        public $applicationCount;
+        /**
+         * @var RepricingProductReportBuyboxWinningProductStats
+         */
+        public $buyboxWinningProductStats;
+        protected $buyboxWinningProductStatsType = RepricingProductReportBuyboxWinningProductStats::class;
+        protected $buyboxWinningProductStatsDataType = '';
+        /**
+         * @var Date
+         */
+        public $date;
+        protected $dateType = Date::class;
+        protected $dateDataType = '';
+        /**
+         * @var PriceAmount
+         */
+        public $highWatermark;
+        protected $highWatermarkType = PriceAmount::class;
+        protected $highWatermarkDataType = '';
+        /**
+         * @var InapplicabilityDetails[]
+         */
+        public $inapplicabilityDetails;
+        protected $inapplicabilityDetailsType = InapplicabilityDetails::class;
+        protected $inapplicabilityDetailsDataType = 'array';
+        /**
+         * @var PriceAmount
+         */
+        public $lowWatermark;
+        protected $lowWatermarkType = PriceAmount::class;
+        protected $lowWatermarkDataType = '';
+        /**
+         * @var int
+         */
+        public $orderItemCount;
+        /**
+         * @var string[]
+         */
+        public $ruleIds;
+        /**
+         * @var PriceAmount
+         */
+        public $totalGmv;
+        protected $totalGmvType = PriceAmount::class;
+        protected $totalGmvDataType = '';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string
+         */
+        public function setApplicationCount($applicationCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicationCount()
+        {
+        }
+        /**
+         * @param RepricingProductReportBuyboxWinningProductStats
+         */
+        public function setBuyboxWinningProductStats(RepricingProductReportBuyboxWinningProductStats $buyboxWinningProductStats)
+        {
+        }
+        /**
+         * @return RepricingProductReportBuyboxWinningProductStats
+         */
+        public function getBuyboxWinningProductStats()
+        {
+        }
+        /**
+         * @param Date
+         */
+        public function setDate(Date $date)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getDate()
+        {
+        }
+        /**
+         * @param PriceAmount
+         */
+        public function setHighWatermark(PriceAmount $highWatermark)
+        {
+        }
+        /**
+         * @return PriceAmount
+         */
+        public function getHighWatermark()
+        {
+        }
+        /**
+         * @param InapplicabilityDetails[]
+         */
+        public function setInapplicabilityDetails($inapplicabilityDetails)
+        {
+        }
+        /**
+         * @return InapplicabilityDetails[]
+         */
+        public function getInapplicabilityDetails()
+        {
+        }
+        /**
+         * @param PriceAmount
+         */
+        public function setLowWatermark(PriceAmount $lowWatermark)
+        {
+        }
+        /**
+         * @return PriceAmount
+         */
+        public function getLowWatermark()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setOrderItemCount($orderItemCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOrderItemCount()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setRuleIds($ruleIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRuleIds()
+        {
+        }
+        /**
+         * @param PriceAmount
+         */
+        public function setTotalGmv(PriceAmount $totalGmv)
+        {
+        }
+        /**
+         * @return PriceAmount
+         */
+        public function getTotalGmv()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\RepricingProductReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicationCount()
-    {
-    }
-    /**
-     * @param RepricingProductReportBuyboxWinningProductStats
-     */
-    public function setBuyboxWinningProductStats(RepricingProductReportBuyboxWinningProductStats $buyboxWinningProductStats)
-    {
-    }
-    /**
-     * @return RepricingProductReportBuyboxWinningProductStats
-     */
-    public function getBuyboxWinningProductStats()
-    {
-    }
-    /**
-     * @param Date
-     */
-    public function setDate(Date $date)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getDate()
-    {
-    }
-    /**
-     * @param PriceAmount
-     */
-    public function setHighWatermark(PriceAmount $highWatermark)
-    {
-    }
-    /**
-     * @return PriceAmount
-     */
-    public function getHighWatermark()
-    {
-    }
-    /**
-     * @param InapplicabilityDetails[]
-     */
-    public function setInapplicabilityDetails($inapplicabilityDetails)
-    {
-    }
-    /**
-     * @return InapplicabilityDetails[]
-     */
-    public function getInapplicabilityDetails()
-    {
-    }
-    /**
-     * @param PriceAmount
-     */
-    public function setLowWatermark(PriceAmount $lowWatermark)
-    {
-    }
-    /**
-     * @return PriceAmount
-     */
-    public function getLowWatermark()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setOrderItemCount($orderItemCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getOrderItemCount()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setRuleIds($ruleIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRuleIds()
-    {
-    }
-    /**
-     * @param PriceAmount
-     */
-    public function setTotalGmv(PriceAmount $totalGmv)
-    {
-    }
-    /**
-     * @return PriceAmount
-     */
-    public function getTotalGmv()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_ShoppingContent_RepricingProductReport extends \Google\Service\ShoppingContent\RepricingProductReport
     {
     }
 }

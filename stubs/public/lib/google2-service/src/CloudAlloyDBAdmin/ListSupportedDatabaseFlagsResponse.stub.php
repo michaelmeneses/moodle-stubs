@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class ListSupportedDatabaseFlagsResponse extends \Google\Collection
-{
-    protected $collection_key = 'supportedDatabaseFlags';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $supportedDatabaseFlagsType = SupportedDatabaseFlag::class;
-    protected $supportedDatabaseFlagsDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class ListSupportedDatabaseFlagsResponse extends \Google\Collection
     {
+        protected $collection_key = 'supportedDatabaseFlags';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $supportedDatabaseFlagsType = SupportedDatabaseFlag::class;
+        protected $supportedDatabaseFlagsDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of SupportedDatabaseFlags.
+         *
+         * @param SupportedDatabaseFlag[] $supportedDatabaseFlags
+         */
+        public function setSupportedDatabaseFlags($supportedDatabaseFlags)
+        {
+        }
+        /**
+         * @return SupportedDatabaseFlag[]
+         */
+        public function getSupportedDatabaseFlags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\ListSupportedDatabaseFlagsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of SupportedDatabaseFlags.
-     *
-     * @param SupportedDatabaseFlag[] $supportedDatabaseFlags
-     */
-    public function setSupportedDatabaseFlags($supportedDatabaseFlags)
-    {
-    }
-    /**
-     * @return SupportedDatabaseFlag[]
-     */
-    public function getSupportedDatabaseFlags()
+    class Google_Service_CloudAlloyDBAdmin_ListSupportedDatabaseFlagsResponse extends \Google\Service\CloudAlloyDBAdmin\ListSupportedDatabaseFlagsResponse
     {
     }
 }

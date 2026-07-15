@@ -21,67 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides\Resource;
-
-/**
- * The "presentations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $slidesService = new Google\Service\Slides(...);
- *   $presentations = $slidesService->presentations;
- *  </code>
- */
-class Presentations extends \Google\Service\Resource
-{
+namespace Google\Service\Slides\Resource {
+    use Google\Service\Slides\BatchUpdatePresentationRequest;
+    use Google\Service\Slides\BatchUpdatePresentationResponse;
+    use Google\Service\Slides\Presentation;
     /**
-     * Applies one or more updates to the presentation. Each request is validated
-     * before being applied. If any request is not valid, then the entire request
-     * will fail and nothing will be applied. Some requests have replies to give you
-     * some information about how they are applied. Other requests do not need to
-     * return information; these each return an empty reply. The order of replies
-     * matches that of the requests. For example, suppose you call batchUpdate with
-     * four updates, and only the third one returns information. The response would
-     * have two empty replies: the reply to the third request, and another empty
-     * reply, in that order. Because other users may be editing the presentation,
-     * the presentation might not exactly reflect your changes: your changes may be
-     * altered with respect to collaborator changes. If there are no collaborators,
-     * the presentation should reflect your changes. In any case, the updates in
-     * your request are guaranteed to be applied together atomically.
-     * (presentations.batchUpdate)
-     *
-     * @param string $presentationId The presentation to apply the updates to.
-     * @param BatchUpdatePresentationRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return BatchUpdatePresentationResponse
-     * @throws \Google\Service\Exception
+     * The "presentations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $slidesService = new Google\Service\Slides(...);
+     *   $presentations = $slidesService->presentations;
+     *  </code>
      */
-    public function batchUpdate($presentationId, BatchUpdatePresentationRequest $postBody, $optParams = [])
+    class Presentations extends \Google\Service\Resource
     {
+        /**
+         * Applies one or more updates to the presentation. Each request is validated
+         * before being applied. If any request is not valid, then the entire request
+         * will fail and nothing will be applied. Some requests have replies to give you
+         * some information about how they are applied. Other requests do not need to
+         * return information; these each return an empty reply. The order of replies
+         * matches that of the requests. For example, suppose you call batchUpdate with
+         * four updates, and only the third one returns information. The response would
+         * have two empty replies: the reply to the third request, and another empty
+         * reply, in that order. Because other users may be editing the presentation,
+         * the presentation might not exactly reflect your changes: your changes may be
+         * altered with respect to collaborator changes. If there are no collaborators,
+         * the presentation should reflect your changes. In any case, the updates in
+         * your request are guaranteed to be applied together atomically.
+         * (presentations.batchUpdate)
+         *
+         * @param string $presentationId The presentation to apply the updates to.
+         * @param BatchUpdatePresentationRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return BatchUpdatePresentationResponse
+         * @throws \Google\Service\Exception
+         */
+        public function batchUpdate($presentationId, BatchUpdatePresentationRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Creates a blank presentation using the title given in the request. If a
+         * `presentationId` is provided, it is used as the ID of the new presentation.
+         * Otherwise, a new ID is generated. Other fields in the request, including any
+         * provided content, are ignored. Returns the created presentation.
+         * (presentations.create)
+         *
+         * @param Presentation $postBody
+         * @param array $optParams Optional parameters.
+         * @return Presentation
+         * @throws \Google\Service\Exception
+         */
+        public function create(Presentation $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets the latest version of the specified presentation. (presentations.get)
+         *
+         * @param string $presentationId The ID of the presentation to retrieve.
+         * @param array $optParams Optional parameters.
+         * @return Presentation
+         * @throws \Google\Service\Exception
+         */
+        public function get($presentationId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Creates a blank presentation using the title given in the request. If a
-     * `presentationId` is provided, it is used as the ID of the new presentation.
-     * Otherwise, a new ID is generated. Other fields in the request, including any
-     * provided content, are ignored. Returns the created presentation.
-     * (presentations.create)
-     *
-     * @param Presentation $postBody
-     * @param array $optParams Optional parameters.
-     * @return Presentation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Slides\Resource\Presentations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function create(Presentation $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Gets the latest version of the specified presentation. (presentations.get)
-     *
-     * @param string $presentationId The ID of the presentation to retrieve.
-     * @param array $optParams Optional parameters.
-     * @return Presentation
-     * @throws \Google\Service\Exception
-     */
-    public function get($presentationId, $optParams = [])
+    class Google_Service_Slides_Resource_Presentations extends \Google\Service\Slides\Resource\Presentations
     {
     }
 }

@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class CutoverStep extends \Google\Model
-{
-    /**
-     * The time the step has ended.
-     *
-     * @var string
-     */
-    public $endTime;
-    protected $finalSyncType = ReplicationCycle::class;
-    protected $finalSyncDataType = '';
-    protected $instantiatingMigratedVmType = InstantiatingMigratedVMStep::class;
-    protected $instantiatingMigratedVmDataType = '';
-    protected $preparingVmDisksType = PreparingVMDisksStep::class;
-    protected $preparingVmDisksDataType = '';
-    protected $previousReplicationCycleType = ReplicationCycle::class;
-    protected $previousReplicationCycleDataType = '';
-    protected $shuttingDownSourceVmType = ShuttingDownSourceVMStep::class;
-    protected $shuttingDownSourceVmDataType = '';
-    /**
-     * The time the step has started.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * The time the step has ended.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\VMMigrationService {
+    class CutoverStep extends \Google\Model
     {
+        /**
+         * The time the step has ended.
+         *
+         * @var string
+         */
+        public $endTime;
+        protected $finalSyncType = ReplicationCycle::class;
+        protected $finalSyncDataType = '';
+        protected $instantiatingMigratedVmType = InstantiatingMigratedVMStep::class;
+        protected $instantiatingMigratedVmDataType = '';
+        protected $preparingVmDisksType = PreparingVMDisksStep::class;
+        protected $preparingVmDisksDataType = '';
+        protected $previousReplicationCycleType = ReplicationCycle::class;
+        protected $previousReplicationCycleDataType = '';
+        protected $shuttingDownSourceVmType = ShuttingDownSourceVMStep::class;
+        protected $shuttingDownSourceVmDataType = '';
+        /**
+         * The time the step has started.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * The time the step has ended.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Final sync step.
+         *
+         * @param ReplicationCycle $finalSync
+         */
+        public function setFinalSync(ReplicationCycle $finalSync)
+        {
+        }
+        /**
+         * @return ReplicationCycle
+         */
+        public function getFinalSync()
+        {
+        }
+        /**
+         * Instantiating migrated VM step.
+         *
+         * @param InstantiatingMigratedVMStep $instantiatingMigratedVm
+         */
+        public function setInstantiatingMigratedVm(InstantiatingMigratedVMStep $instantiatingMigratedVm)
+        {
+        }
+        /**
+         * @return InstantiatingMigratedVMStep
+         */
+        public function getInstantiatingMigratedVm()
+        {
+        }
+        /**
+         * Preparing VM disks step.
+         *
+         * @param PreparingVMDisksStep $preparingVmDisks
+         */
+        public function setPreparingVmDisks(PreparingVMDisksStep $preparingVmDisks)
+        {
+        }
+        /**
+         * @return PreparingVMDisksStep
+         */
+        public function getPreparingVmDisks()
+        {
+        }
+        /**
+         * A replication cycle prior cutover step.
+         *
+         * @param ReplicationCycle $previousReplicationCycle
+         */
+        public function setPreviousReplicationCycle(ReplicationCycle $previousReplicationCycle)
+        {
+        }
+        /**
+         * @return ReplicationCycle
+         */
+        public function getPreviousReplicationCycle()
+        {
+        }
+        /**
+         * Shutting down VM step.
+         *
+         * @param ShuttingDownSourceVMStep $shuttingDownSourceVm
+         */
+        public function setShuttingDownSourceVm(ShuttingDownSourceVMStep $shuttingDownSourceVm)
+        {
+        }
+        /**
+         * @return ShuttingDownSourceVMStep
+         */
+        public function getShuttingDownSourceVm()
+        {
+        }
+        /**
+         * The time the step has started.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\CutoverStep registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Final sync step.
-     *
-     * @param ReplicationCycle $finalSync
-     */
-    public function setFinalSync(ReplicationCycle $finalSync)
-    {
-    }
-    /**
-     * @return ReplicationCycle
-     */
-    public function getFinalSync()
-    {
-    }
-    /**
-     * Instantiating migrated VM step.
-     *
-     * @param InstantiatingMigratedVMStep $instantiatingMigratedVm
-     */
-    public function setInstantiatingMigratedVm(InstantiatingMigratedVMStep $instantiatingMigratedVm)
-    {
-    }
-    /**
-     * @return InstantiatingMigratedVMStep
-     */
-    public function getInstantiatingMigratedVm()
-    {
-    }
-    /**
-     * Preparing VM disks step.
-     *
-     * @param PreparingVMDisksStep $preparingVmDisks
-     */
-    public function setPreparingVmDisks(PreparingVMDisksStep $preparingVmDisks)
-    {
-    }
-    /**
-     * @return PreparingVMDisksStep
-     */
-    public function getPreparingVmDisks()
-    {
-    }
-    /**
-     * A replication cycle prior cutover step.
-     *
-     * @param ReplicationCycle $previousReplicationCycle
-     */
-    public function setPreviousReplicationCycle(ReplicationCycle $previousReplicationCycle)
-    {
-    }
-    /**
-     * @return ReplicationCycle
-     */
-    public function getPreviousReplicationCycle()
-    {
-    }
-    /**
-     * Shutting down VM step.
-     *
-     * @param ShuttingDownSourceVMStep $shuttingDownSourceVm
-     */
-    public function setShuttingDownSourceVm(ShuttingDownSourceVMStep $shuttingDownSourceVm)
-    {
-    }
-    /**
-     * @return ShuttingDownSourceVMStep
-     */
-    public function getShuttingDownSourceVm()
-    {
-    }
-    /**
-     * The time the step has started.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_VMMigrationService_CutoverStep extends \Google\Service\VMMigrationService\CutoverStep
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SaaSServiceManagement;
-
-class FromMapping extends \Google\Model
-{
-    /**
-     * Required. Alias of the dependency that the outputVariable will pass its
-     * value to
-     *
-     * @var string
-     */
-    public $dependency;
-    /**
-     * Required. Name of the outputVariable on the dependency
-     *
-     * @var string
-     */
-    public $outputVariable;
-    /**
-     * Required. Alias of the dependency that the outputVariable will pass its
-     * value to
-     *
-     * @param string $dependency
-     */
-    public function setDependency($dependency)
+namespace Google\Service\SaaSServiceManagement {
+    class FromMapping extends \Google\Model
     {
+        /**
+         * Required. Alias of the dependency that the outputVariable will pass its
+         * value to
+         *
+         * @var string
+         */
+        public $dependency;
+        /**
+         * Required. Name of the outputVariable on the dependency
+         *
+         * @var string
+         */
+        public $outputVariable;
+        /**
+         * Required. Alias of the dependency that the outputVariable will pass its
+         * value to
+         *
+         * @param string $dependency
+         */
+        public function setDependency($dependency)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDependency()
+        {
+        }
+        /**
+         * Required. Name of the outputVariable on the dependency
+         *
+         * @param string $outputVariable
+         */
+        public function setOutputVariable($outputVariable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputVariable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SaaSServiceManagement\FromMapping registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDependency()
-    {
-    }
-    /**
-     * Required. Name of the outputVariable on the dependency
-     *
-     * @param string $outputVariable
-     */
-    public function setOutputVariable($outputVariable)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutputVariable()
+    class Google_Service_SaaSServiceManagement_FromMapping extends \Google\Service\SaaSServiceManagement\FromMapping
     {
     }
 }

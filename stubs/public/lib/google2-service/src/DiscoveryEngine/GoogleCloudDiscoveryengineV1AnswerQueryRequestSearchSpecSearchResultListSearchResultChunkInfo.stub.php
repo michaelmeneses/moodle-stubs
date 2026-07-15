@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultChunkInfo extends \Google\Model
-{
-    /**
-     * Chunk resource name.
-     *
-     * @var string
-     */
-    public $chunk;
-    /**
-     * Chunk textual content.
-     *
-     * @var string
-     */
-    public $content;
-    protected $documentMetadataType = GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultChunkInfoDocumentMetadata::class;
-    protected $documentMetadataDataType = '';
-    /**
-     * Chunk resource name.
-     *
-     * @param string $chunk
-     */
-    public function setChunk($chunk)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultChunkInfo extends \Google\Model
     {
+        /**
+         * Chunk resource name.
+         *
+         * @var string
+         */
+        public $chunk;
+        /**
+         * Chunk textual content.
+         *
+         * @var string
+         */
+        public $content;
+        protected $documentMetadataType = GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultChunkInfoDocumentMetadata::class;
+        protected $documentMetadataDataType = '';
+        /**
+         * Chunk resource name.
+         *
+         * @param string $chunk
+         */
+        public function setChunk($chunk)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChunk()
+        {
+        }
+        /**
+         * Chunk textual content.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Metadata of the document from the current chunk.
+         *
+         * @param GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultChunkInfoDocumentMetadata $documentMetadata
+         */
+        public function setDocumentMetadata(GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultChunkInfoDocumentMetadata $documentMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultChunkInfoDocumentMetadata
+         */
+        public function getDocumentMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultChunkInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChunk()
-    {
-    }
-    /**
-     * Chunk textual content.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContent()
-    {
-    }
-    /**
-     * Metadata of the document from the current chunk.
-     *
-     * @param GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultChunkInfoDocumentMetadata $documentMetadata
-     */
-    public function setDocumentMetadata(GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultChunkInfoDocumentMetadata $documentMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultChunkInfoDocumentMetadata
-     */
-    public function getDocumentMetadata()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultChunkInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultChunkInfo
     {
     }
 }

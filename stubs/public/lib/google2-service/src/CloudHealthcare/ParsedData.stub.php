@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class ParsedData extends \Google\Collection
-{
-    protected $collection_key = 'segments';
-    protected $segmentsType = Segment::class;
-    protected $segmentsDataType = 'array';
-    /**
-     * @param Segment[] $segments
-     */
-    public function setSegments($segments)
+namespace Google\Service\CloudHealthcare {
+    class ParsedData extends \Google\Collection
     {
+        protected $collection_key = 'segments';
+        protected $segmentsType = Segment::class;
+        protected $segmentsDataType = 'array';
+        /**
+         * @param Segment[] $segments
+         */
+        public function setSegments($segments)
+        {
+        }
+        /**
+         * @return Segment[]
+         */
+        public function getSegments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Segment[]
+     * Runtime class alias of \Google\Service\CloudHealthcare\ParsedData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSegments()
+    class Google_Service_CloudHealthcare_ParsedData extends \Google\Service\CloudHealthcare\ParsedData
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class ManagedZoneServiceDirectoryConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $namespaceType = ManagedZoneServiceDirectoryConfigNamespace::class;
-    protected $namespaceDataType = '';
-    /**
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dns {
+    class ManagedZoneServiceDirectoryConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $namespaceType = ManagedZoneServiceDirectoryConfigNamespace::class;
+        protected $namespaceDataType = '';
+        /**
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Contains information about the namespace associated with the zone.
+         *
+         * @param ManagedZoneServiceDirectoryConfigNamespace $namespace
+         */
+        public function setNamespace(ManagedZoneServiceDirectoryConfigNamespace $namespace)
+        {
+        }
+        /**
+         * @return ManagedZoneServiceDirectoryConfigNamespace
+         */
+        public function getNamespace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dns\ManagedZoneServiceDirectoryConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Contains information about the namespace associated with the zone.
-     *
-     * @param ManagedZoneServiceDirectoryConfigNamespace $namespace
-     */
-    public function setNamespace(ManagedZoneServiceDirectoryConfigNamespace $namespace)
-    {
-    }
-    /**
-     * @return ManagedZoneServiceDirectoryConfigNamespace
-     */
-    public function getNamespace()
+    class Google_Service_Dns_ManagedZoneServiceDirectoryConfig extends \Google\Service\Dns\ManagedZoneServiceDirectoryConfig
     {
     }
 }

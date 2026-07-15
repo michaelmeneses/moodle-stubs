@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2FieldUserOptions extends \Google\Model
-{
-    protected $listOptionsType = GoogleAppsDriveLabelsV2FieldListOptions::class;
-    protected $listOptionsDataType = '';
-    /**
-     * When specified, indicates that this field supports a list of values. Once
-     * the field is published, this cannot be changed.
-     *
-     * @param GoogleAppsDriveLabelsV2FieldListOptions $listOptions
-     */
-    public function setListOptions(GoogleAppsDriveLabelsV2FieldListOptions $listOptions)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2FieldUserOptions extends \Google\Model
     {
+        protected $listOptionsType = GoogleAppsDriveLabelsV2FieldListOptions::class;
+        protected $listOptionsDataType = '';
+        /**
+         * When specified, indicates that this field supports a list of values. Once
+         * the field is published, this cannot be changed.
+         *
+         * @param GoogleAppsDriveLabelsV2FieldListOptions $listOptions
+         */
+        public function setListOptions(GoogleAppsDriveLabelsV2FieldListOptions $listOptions)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2FieldListOptions
+         */
+        public function getListOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsDriveLabelsV2FieldListOptions
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2FieldUserOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getListOptions()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2FieldUserOptions extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2FieldUserOptions
     {
     }
 }

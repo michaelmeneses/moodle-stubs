@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ProjectRepoId extends \Google\Model
-{
-    /**
-     * The ID of the project.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * The name of the repo. Leave empty for the default repo.
-     *
-     * @var string
-     */
-    public $repoName;
-    /**
-     * The ID of the project.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
+namespace Google\Service\ContainerAnalysis {
+    class ProjectRepoId extends \Google\Model
     {
+        /**
+         * The ID of the project.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * The name of the repo. Leave empty for the default repo.
+         *
+         * @var string
+         */
+        public $repoName;
+        /**
+         * The ID of the project.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * The name of the repo. Leave empty for the default repo.
+         *
+         * @param string $repoName
+         */
+        public function setRepoName($repoName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepoName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ProjectRepoId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectId()
-    {
-    }
-    /**
-     * The name of the repo. Leave empty for the default repo.
-     *
-     * @param string $repoName
-     */
-    public function setRepoName($repoName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRepoName()
+    class Google_Service_ContainerAnalysis_ProjectRepoId extends \Google\Service\ContainerAnalysis\ProjectRepoId
     {
     }
 }

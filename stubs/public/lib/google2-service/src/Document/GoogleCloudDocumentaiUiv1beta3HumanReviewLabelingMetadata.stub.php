@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3HumanReviewLabelingMetadata extends \Google\Model
-{
-    /**
-     * Whether to enable normalization editing.
-     *
-     * @var bool
-     */
-    public $enableNormalizationEditing;
-    /**
-     * Whether to enable normalization editing.
-     *
-     * @param bool $enableNormalizationEditing
-     */
-    public function setEnableNormalizationEditing($enableNormalizationEditing)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3HumanReviewLabelingMetadata extends \Google\Model
     {
+        /**
+         * Whether to enable normalization editing.
+         *
+         * @var bool
+         */
+        public $enableNormalizationEditing;
+        /**
+         * Whether to enable normalization editing.
+         *
+         * @param bool $enableNormalizationEditing
+         */
+        public function setEnableNormalizationEditing($enableNormalizationEditing)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableNormalizationEditing()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3HumanReviewLabelingMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableNormalizationEditing()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3HumanReviewLabelingMetadata extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3HumanReviewLabelingMetadata
     {
     }
 }

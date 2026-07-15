@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpec extends \Google\Model
-{
-    protected $searchParamsType = GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchParams::class;
-    protected $searchParamsDataType = '';
-    protected $searchResultListType = GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultList::class;
-    protected $searchResultListDataType = '';
-    /**
-     * Search parameters.
-     *
-     * @param GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchParams $searchParams
-     */
-    public function setSearchParams(GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchParams $searchParams)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpec extends \Google\Model
     {
+        protected $searchParamsType = GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchParams::class;
+        protected $searchParamsDataType = '';
+        protected $searchResultListType = GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultList::class;
+        protected $searchResultListDataType = '';
+        /**
+         * Search parameters.
+         *
+         * @param GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchParams $searchParams
+         */
+        public function setSearchParams(GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchParams $searchParams)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchParams
+         */
+        public function getSearchParams()
+        {
+        }
+        /**
+         * Search result list.
+         *
+         * @param GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultList $searchResultList
+         */
+        public function setSearchResultList(GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultList $searchResultList)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultList
+         */
+        public function getSearchResultList()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchParams
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSearchParams()
-    {
-    }
-    /**
-     * Search result list.
-     *
-     * @param GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultList $searchResultList
-     */
-    public function setSearchResultList(GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultList $searchResultList)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultList
-     */
-    public function getSearchResultList()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpec
     {
     }
 }

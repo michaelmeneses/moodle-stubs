@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class ValidationMessage extends \Google\Model
-{
-    /**
-     * Unspecified level.
-     */
-    public const LEVEL_LEVEL_UNSPECIFIED = 'LEVEL_UNSPECIFIED';
-    /**
-     * Potentially cause issues with the Stream.
-     */
-    public const LEVEL_WARNING = 'WARNING';
-    /**
-     * Definitely cause issues with the Stream.
-     */
-    public const LEVEL_ERROR = 'ERROR';
-    /**
-     * A custom code identifying this specific message.
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * Message severity level (warning or error).
-     *
-     * @var string
-     */
-    public $level;
-    /**
-     * The result of the validation.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Additional metadata related to the result.
-     *
-     * @var string[]
-     */
-    public $metadata;
-    /**
-     * A custom code identifying this specific message.
-     *
-     * @param string $code
-     */
-    public function setCode($code)
+namespace Google\Service\Datastream {
+    class ValidationMessage extends \Google\Model
     {
+        /**
+         * Unspecified level.
+         */
+        public const LEVEL_LEVEL_UNSPECIFIED = 'LEVEL_UNSPECIFIED';
+        /**
+         * Potentially cause issues with the Stream.
+         */
+        public const LEVEL_WARNING = 'WARNING';
+        /**
+         * Definitely cause issues with the Stream.
+         */
+        public const LEVEL_ERROR = 'ERROR';
+        /**
+         * A custom code identifying this specific message.
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * Message severity level (warning or error).
+         *
+         * @var string
+         */
+        public $level;
+        /**
+         * The result of the validation.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Additional metadata related to the result.
+         *
+         * @var string[]
+         */
+        public $metadata;
+        /**
+         * A custom code identifying this specific message.
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * Message severity level (warning or error).
+         *
+         * Accepted values: LEVEL_UNSPECIFIED, WARNING, ERROR
+         *
+         * @param self::LEVEL_* $level
+         */
+        public function setLevel($level)
+        {
+        }
+        /**
+         * @return self::LEVEL_*
+         */
+        public function getLevel()
+        {
+        }
+        /**
+         * The result of the validation.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * Additional metadata related to the result.
+         *
+         * @param string[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\ValidationMessage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * Message severity level (warning or error).
-     *
-     * Accepted values: LEVEL_UNSPECIFIED, WARNING, ERROR
-     *
-     * @param self::LEVEL_* $level
-     */
-    public function setLevel($level)
-    {
-    }
-    /**
-     * @return self::LEVEL_*
-     */
-    public function getLevel()
-    {
-    }
-    /**
-     * The result of the validation.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * Additional metadata related to the result.
-     *
-     * @param string[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetadata()
+    class Google_Service_Datastream_ValidationMessage extends \Google\Service\Datastream\ValidationMessage
     {
     }
 }

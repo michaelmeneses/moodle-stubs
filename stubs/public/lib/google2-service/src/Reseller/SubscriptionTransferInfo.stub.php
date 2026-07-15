@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reseller;
-
-class SubscriptionTransferInfo extends \Google\Model
-{
-    /**
-     * The `skuId` of the current resold subscription. This is populated only when
-     * the customer has a subscription with a legacy SKU and the subscription
-     * resource is populated with the `skuId` of the SKU recommended for the
-     * transfer.
-     *
-     * @var string
-     */
-    public $currentLegacySkuId;
-    /**
-     * When inserting a subscription, this is the minimum number of seats listed
-     * in the transfer order for this product. For example, if the customer has 20
-     * users, the reseller cannot place a transfer order of 15 seats. The minimum
-     * is 20 seats.
-     *
-     * @var int
-     */
-    public $minimumTransferableSeats;
-    /**
-     * The time when transfer token or intent to transfer will expire. The time is
-     * in milliseconds using UNIX Epoch format.
-     *
-     * @var string
-     */
-    public $transferabilityExpirationTime;
-    /**
-     * The `skuId` of the current resold subscription. This is populated only when
-     * the customer has a subscription with a legacy SKU and the subscription
-     * resource is populated with the `skuId` of the SKU recommended for the
-     * transfer.
-     *
-     * @param string $currentLegacySkuId
-     */
-    public function setCurrentLegacySkuId($currentLegacySkuId)
+namespace Google\Service\Reseller {
+    class SubscriptionTransferInfo extends \Google\Model
     {
+        /**
+         * The `skuId` of the current resold subscription. This is populated only when
+         * the customer has a subscription with a legacy SKU and the subscription
+         * resource is populated with the `skuId` of the SKU recommended for the
+         * transfer.
+         *
+         * @var string
+         */
+        public $currentLegacySkuId;
+        /**
+         * When inserting a subscription, this is the minimum number of seats listed
+         * in the transfer order for this product. For example, if the customer has 20
+         * users, the reseller cannot place a transfer order of 15 seats. The minimum
+         * is 20 seats.
+         *
+         * @var int
+         */
+        public $minimumTransferableSeats;
+        /**
+         * The time when transfer token or intent to transfer will expire. The time is
+         * in milliseconds using UNIX Epoch format.
+         *
+         * @var string
+         */
+        public $transferabilityExpirationTime;
+        /**
+         * The `skuId` of the current resold subscription. This is populated only when
+         * the customer has a subscription with a legacy SKU and the subscription
+         * resource is populated with the `skuId` of the SKU recommended for the
+         * transfer.
+         *
+         * @param string $currentLegacySkuId
+         */
+        public function setCurrentLegacySkuId($currentLegacySkuId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrentLegacySkuId()
+        {
+        }
+        /**
+         * When inserting a subscription, this is the minimum number of seats listed
+         * in the transfer order for this product. For example, if the customer has 20
+         * users, the reseller cannot place a transfer order of 15 seats. The minimum
+         * is 20 seats.
+         *
+         * @param int $minimumTransferableSeats
+         */
+        public function setMinimumTransferableSeats($minimumTransferableSeats)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinimumTransferableSeats()
+        {
+        }
+        /**
+         * The time when transfer token or intent to transfer will expire. The time is
+         * in milliseconds using UNIX Epoch format.
+         *
+         * @param string $transferabilityExpirationTime
+         */
+        public function setTransferabilityExpirationTime($transferabilityExpirationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransferabilityExpirationTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Reseller\SubscriptionTransferInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentLegacySkuId()
-    {
-    }
-    /**
-     * When inserting a subscription, this is the minimum number of seats listed
-     * in the transfer order for this product. For example, if the customer has 20
-     * users, the reseller cannot place a transfer order of 15 seats. The minimum
-     * is 20 seats.
-     *
-     * @param int $minimumTransferableSeats
-     */
-    public function setMinimumTransferableSeats($minimumTransferableSeats)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinimumTransferableSeats()
-    {
-    }
-    /**
-     * The time when transfer token or intent to transfer will expire. The time is
-     * in milliseconds using UNIX Epoch format.
-     *
-     * @param string $transferabilityExpirationTime
-     */
-    public function setTransferabilityExpirationTime($transferabilityExpirationTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTransferabilityExpirationTime()
+    class Google_Service_Reseller_SubscriptionTransferInfo extends \Google\Service\Reseller\SubscriptionTransferInfo
     {
     }
 }

@@ -21,133 +21,142 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class Phase extends \Google\Model
-{
-    /**
-     * The Phase has an unspecified state.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The Phase is waiting for an earlier Phase(s) to complete.
-     */
-    public const STATE_PENDING = 'PENDING';
-    /**
-     * The Phase is in progress.
-     */
-    public const STATE_IN_PROGRESS = 'IN_PROGRESS';
-    /**
-     * The Phase has succeeded.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * The Phase has failed.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * The Phase was aborted.
-     */
-    public const STATE_ABORTED = 'ABORTED';
-    /**
-     * The Phase was skipped.
-     */
-    public const STATE_SKIPPED = 'SKIPPED';
-    protected $childRolloutJobsType = ChildRolloutJobs::class;
-    protected $childRolloutJobsDataType = '';
-    protected $deploymentJobsType = DeploymentJobs::class;
-    protected $deploymentJobsDataType = '';
-    /**
-     * Output only. The ID of the Phase.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Output only. Additional information on why the Phase was skipped, if
-     * available.
-     *
-     * @var string
-     */
-    public $skipMessage;
-    /**
-     * Output only. Current state of the Phase.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. ChildRollout job composition.
-     *
-     * @param ChildRolloutJobs $childRolloutJobs
-     */
-    public function setChildRolloutJobs(ChildRolloutJobs $childRolloutJobs)
+namespace Google\Service\CloudDeploy {
+    class Phase extends \Google\Model
     {
+        /**
+         * The Phase has an unspecified state.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The Phase is waiting for an earlier Phase(s) to complete.
+         */
+        public const STATE_PENDING = 'PENDING';
+        /**
+         * The Phase is in progress.
+         */
+        public const STATE_IN_PROGRESS = 'IN_PROGRESS';
+        /**
+         * The Phase has succeeded.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * The Phase has failed.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * The Phase was aborted.
+         */
+        public const STATE_ABORTED = 'ABORTED';
+        /**
+         * The Phase was skipped.
+         */
+        public const STATE_SKIPPED = 'SKIPPED';
+        protected $childRolloutJobsType = ChildRolloutJobs::class;
+        protected $childRolloutJobsDataType = '';
+        protected $deploymentJobsType = DeploymentJobs::class;
+        protected $deploymentJobsDataType = '';
+        /**
+         * Output only. The ID of the Phase.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Output only. Additional information on why the Phase was skipped, if
+         * available.
+         *
+         * @var string
+         */
+        public $skipMessage;
+        /**
+         * Output only. Current state of the Phase.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. ChildRollout job composition.
+         *
+         * @param ChildRolloutJobs $childRolloutJobs
+         */
+        public function setChildRolloutJobs(ChildRolloutJobs $childRolloutJobs)
+        {
+        }
+        /**
+         * @return ChildRolloutJobs
+         */
+        public function getChildRolloutJobs()
+        {
+        }
+        /**
+         * Output only. Deployment job composition.
+         *
+         * @param DeploymentJobs $deploymentJobs
+         */
+        public function setDeploymentJobs(DeploymentJobs $deploymentJobs)
+        {
+        }
+        /**
+         * @return DeploymentJobs
+         */
+        public function getDeploymentJobs()
+        {
+        }
+        /**
+         * Output only. The ID of the Phase.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Output only. Additional information on why the Phase was skipped, if
+         * available.
+         *
+         * @param string $skipMessage
+         */
+        public function setSkipMessage($skipMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSkipMessage()
+        {
+        }
+        /**
+         * Output only. Current state of the Phase.
+         *
+         * Accepted values: STATE_UNSPECIFIED, PENDING, IN_PROGRESS, SUCCEEDED,
+         * FAILED, ABORTED, SKIPPED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ChildRolloutJobs
+     * Runtime class alias of \Google\Service\CloudDeploy\Phase registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChildRolloutJobs()
-    {
-    }
-    /**
-     * Output only. Deployment job composition.
-     *
-     * @param DeploymentJobs $deploymentJobs
-     */
-    public function setDeploymentJobs(DeploymentJobs $deploymentJobs)
-    {
-    }
-    /**
-     * @return DeploymentJobs
-     */
-    public function getDeploymentJobs()
-    {
-    }
-    /**
-     * Output only. The ID of the Phase.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Output only. Additional information on why the Phase was skipped, if
-     * available.
-     *
-     * @param string $skipMessage
-     */
-    public function setSkipMessage($skipMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSkipMessage()
-    {
-    }
-    /**
-     * Output only. Current state of the Phase.
-     *
-     * Accepted values: STATE_UNSPECIFIED, PENDING, IN_PROGRESS, SUCCEEDED,
-     * FAILED, ABORTED, SKIPPED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_CloudDeploy_Phase extends \Google\Service\CloudDeploy\Phase
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaTuneEngineMetadata extends \Google\Model
-{
-    /**
-     * Required. The resource name of the engine that this tune applies to.
-     * Format: `projects/{project}/locations/{location}/collections/{collection_id
-     * }/engines/{engine_id}`
-     *
-     * @var string
-     */
-    public $engine;
-    /**
-     * Required. The resource name of the engine that this tune applies to.
-     * Format: `projects/{project}/locations/{location}/collections/{collection_id
-     * }/engines/{engine_id}`
-     *
-     * @param string $engine
-     */
-    public function setEngine($engine)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaTuneEngineMetadata extends \Google\Model
     {
+        /**
+         * Required. The resource name of the engine that this tune applies to.
+         * Format: `projects/{project}/locations/{location}/collections/{collection_id
+         * }/engines/{engine_id}`
+         *
+         * @var string
+         */
+        public $engine;
+        /**
+         * Required. The resource name of the engine that this tune applies to.
+         * Format: `projects/{project}/locations/{location}/collections/{collection_id
+         * }/engines/{engine_id}`
+         *
+         * @param string $engine
+         */
+        public function setEngine($engine)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEngine()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaTuneEngineMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEngine()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaTuneEngineMetadata extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaTuneEngineMetadata
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementVersionsV1ScepCaConnection extends \Google\Model
-{
-    /**
-     * Output only. A string that references the administrator-provided
-     * configuration for the certification authority service.
-     *
-     * @var string
-     */
-    public $caConnectionAdapterConfigReference;
-    /**
-     * Output only. A string that references the administrator-provided
-     * configuration for the certification authority service.
-     *
-     * @param string $caConnectionAdapterConfigReference
-     */
-    public function setCaConnectionAdapterConfigReference($caConnectionAdapterConfigReference)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementVersionsV1ScepCaConnection extends \Google\Model
     {
+        /**
+         * Output only. A string that references the administrator-provided
+         * configuration for the certification authority service.
+         *
+         * @var string
+         */
+        public $caConnectionAdapterConfigReference;
+        /**
+         * Output only. A string that references the administrator-provided
+         * configuration for the certification authority service.
+         *
+         * @param string $caConnectionAdapterConfigReference
+         */
+        public function setCaConnectionAdapterConfigReference($caConnectionAdapterConfigReference)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCaConnectionAdapterConfigReference()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ScepCaConnection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaConnectionAdapterConfigReference()
+    class Google_Service_ChromeManagement_GoogleChromeManagementVersionsV1ScepCaConnection extends \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ScepCaConnection
     {
     }
 }

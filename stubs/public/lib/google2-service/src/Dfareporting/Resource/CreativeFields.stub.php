@@ -21,106 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "creativeFields" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $creativeFields = $dfareportingService->creativeFields;
- *  </code>
- */
-class CreativeFields extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\CreativeField;
+    use Google\Service\Dfareporting\CreativeFieldsListResponse;
     /**
-     * Deletes an existing creative field. (creativeFields.delete)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $id Creative Field ID
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "creativeFields" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $creativeFields = $dfareportingService->creativeFields;
+     *  </code>
      */
-    public function delete($profileId, $id, $optParams = [])
+    class CreativeFields extends \Google\Service\Resource
     {
+        /**
+         * Deletes an existing creative field. (creativeFields.delete)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $id Creative Field ID
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($profileId, $id, $optParams = [])
+        {
+        }
+        /**
+         * Gets one creative field by ID. (creativeFields.get)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $id Creative Field ID
+         * @param array $optParams Optional parameters.
+         * @return CreativeField
+         * @throws \Google\Service\Exception
+         */
+        public function get($profileId, $id, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a new creative field. (creativeFields.insert)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param CreativeField $postBody
+         * @param array $optParams Optional parameters.
+         * @return CreativeField
+         * @throws \Google\Service\Exception
+         */
+        public function insert($profileId, CreativeField $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of creative fields, possibly filtered. This method supports
+         * paging. (creativeFields.listCreativeFields)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string advertiserIds Select only creative fields that belong to
+         * these advertisers.
+         * @opt_param string ids Select only creative fields with these IDs.
+         * @opt_param int maxResults Maximum number of results to return.
+         * @opt_param string pageToken Value of the nextPageToken from the previous
+         * result page.
+         * @opt_param string searchString Allows searching for creative fields by name
+         * or ID. Wildcards (*) are allowed. For example, "creativefield*2015" will
+         * return creative fields with names like "creativefield June 2015",
+         * "creativefield April 2015", or simply "creativefield 2015". Most of the
+         * searches also add wild-cards implicitly at the start and the end of the
+         * search string. For example, a search string of "creativefield" will match
+         * creative fields with the name "my creativefield", "creativefield 2015", or
+         * simply "creativefield".
+         * @opt_param string sortField Field by which to sort the list.
+         * @opt_param string sortOrder Order of sorted results.
+         * @return CreativeFieldsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listCreativeFields($profileId, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing creative field. This method supports patch semantics.
+         * (creativeFields.patch)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $id CreativeField ID.
+         * @param CreativeField $postBody
+         * @param array $optParams Optional parameters.
+         * @return CreativeField
+         * @throws \Google\Service\Exception
+         */
+        public function patch($profileId, $id, CreativeField $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing creative field. (creativeFields.update)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param CreativeField $postBody
+         * @param array $optParams Optional parameters.
+         * @return CreativeField
+         * @throws \Google\Service\Exception
+         */
+        public function update($profileId, CreativeField $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets one creative field by ID. (creativeFields.get)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $id Creative Field ID
-     * @param array $optParams Optional parameters.
-     * @return CreativeField
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\CreativeFields registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($profileId, $id, $optParams = [])
-    {
-    }
-    /**
-     * Inserts a new creative field. (creativeFields.insert)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param CreativeField $postBody
-     * @param array $optParams Optional parameters.
-     * @return CreativeField
-     * @throws \Google\Service\Exception
-     */
-    public function insert($profileId, CreativeField $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a list of creative fields, possibly filtered. This method supports
-     * paging. (creativeFields.listCreativeFields)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string advertiserIds Select only creative fields that belong to
-     * these advertisers.
-     * @opt_param string ids Select only creative fields with these IDs.
-     * @opt_param int maxResults Maximum number of results to return.
-     * @opt_param string pageToken Value of the nextPageToken from the previous
-     * result page.
-     * @opt_param string searchString Allows searching for creative fields by name
-     * or ID. Wildcards (*) are allowed. For example, "creativefield*2015" will
-     * return creative fields with names like "creativefield June 2015",
-     * "creativefield April 2015", or simply "creativefield 2015". Most of the
-     * searches also add wild-cards implicitly at the start and the end of the
-     * search string. For example, a search string of "creativefield" will match
-     * creative fields with the name "my creativefield", "creativefield 2015", or
-     * simply "creativefield".
-     * @opt_param string sortField Field by which to sort the list.
-     * @opt_param string sortOrder Order of sorted results.
-     * @return CreativeFieldsListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listCreativeFields($profileId, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing creative field. This method supports patch semantics.
-     * (creativeFields.patch)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $id CreativeField ID.
-     * @param CreativeField $postBody
-     * @param array $optParams Optional parameters.
-     * @return CreativeField
-     * @throws \Google\Service\Exception
-     */
-    public function patch($profileId, $id, CreativeField $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing creative field. (creativeFields.update)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param CreativeField $postBody
-     * @param array $optParams Optional parameters.
-     * @return CreativeField
-     * @throws \Google\Service\Exception
-     */
-    public function update($profileId, CreativeField $postBody, $optParams = [])
+    class Google_Service_Dfareporting_Resource_CreativeFields extends \Google\Service\Dfareporting\Resource\CreativeFields
     {
     }
 }

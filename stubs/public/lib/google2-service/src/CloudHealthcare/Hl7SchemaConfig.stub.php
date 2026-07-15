@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class Hl7SchemaConfig extends \Google\Collection
-{
-    protected $collection_key = 'version';
-    protected $messageSchemaConfigsType = SchemaGroup::class;
-    protected $messageSchemaConfigsDataType = 'map';
-    protected $versionType = VersionSource::class;
-    protected $versionDataType = 'array';
-    /**
-     * Map from each HL7v2 message type and trigger event pair, such as ADT_A04,
-     * to its schema configuration root group.
-     *
-     * @param SchemaGroup[] $messageSchemaConfigs
-     */
-    public function setMessageSchemaConfigs($messageSchemaConfigs)
+namespace Google\Service\CloudHealthcare {
+    class Hl7SchemaConfig extends \Google\Collection
     {
+        protected $collection_key = 'version';
+        protected $messageSchemaConfigsType = SchemaGroup::class;
+        protected $messageSchemaConfigsDataType = 'map';
+        protected $versionType = VersionSource::class;
+        protected $versionDataType = 'array';
+        /**
+         * Map from each HL7v2 message type and trigger event pair, such as ADT_A04,
+         * to its schema configuration root group.
+         *
+         * @param SchemaGroup[] $messageSchemaConfigs
+         */
+        public function setMessageSchemaConfigs($messageSchemaConfigs)
+        {
+        }
+        /**
+         * @return SchemaGroup[]
+         */
+        public function getMessageSchemaConfigs()
+        {
+        }
+        /**
+         * Each VersionSource is tested and only if they all match is the schema used
+         * for the message.
+         *
+         * @param VersionSource[] $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return VersionSource[]
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SchemaGroup[]
+     * Runtime class alias of \Google\Service\CloudHealthcare\Hl7SchemaConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessageSchemaConfigs()
-    {
-    }
-    /**
-     * Each VersionSource is tested and only if they all match is the schema used
-     * for the message.
-     *
-     * @param VersionSource[] $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return VersionSource[]
-     */
-    public function getVersion()
+    class Google_Service_CloudHealthcare_Hl7SchemaConfig extends \Google\Service\CloudHealthcare\Hl7SchemaConfig
     {
     }
 }

@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class StateReason extends \Google\Model
-{
-    /**
-     * No information available.
-     */
-    public const CODE_CODE_UNSPECIFIED = 'CODE_UNSPECIFIED';
-    /**
-     * The proposed spoke is pending review.
-     */
-    public const CODE_PENDING_REVIEW = 'PENDING_REVIEW';
-    /**
-     * The proposed spoke has been rejected by the hub administrator.
-     */
-    public const CODE_REJECTED = 'REJECTED';
-    /**
-     * The spoke has been deactivated internally.
-     */
-    public const CODE_PAUSED = 'PAUSED';
-    /**
-     * Network Connectivity Center encountered errors while accepting the spoke.
-     */
-    public const CODE_FAILED = 'FAILED';
-    /**
-     * The proposed spoke update is pending review.
-     */
-    public const CODE_UPDATE_PENDING_REVIEW = 'UPDATE_PENDING_REVIEW';
-    /**
-     * The proposed spoke update has been rejected by the hub administrator.
-     */
-    public const CODE_UPDATE_REJECTED = 'UPDATE_REJECTED';
-    /**
-     * Network Connectivity Center encountered errors while accepting the spoke
-     * update.
-     */
-    public const CODE_UPDATE_FAILED = 'UPDATE_FAILED';
-    /**
-     * The code associated with this reason.
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * Human-readable details about this reason.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Additional information provided by the user in the RejectSpoke call.
-     *
-     * @var string
-     */
-    public $userDetails;
-    /**
-     * The code associated with this reason.
-     *
-     * Accepted values: CODE_UNSPECIFIED, PENDING_REVIEW, REJECTED, PAUSED,
-     * FAILED, UPDATE_PENDING_REVIEW, UPDATE_REJECTED, UPDATE_FAILED
-     *
-     * @param self::CODE_* $code
-     */
-    public function setCode($code)
+namespace Google\Service\Networkconnectivity {
+    class StateReason extends \Google\Model
     {
+        /**
+         * No information available.
+         */
+        public const CODE_CODE_UNSPECIFIED = 'CODE_UNSPECIFIED';
+        /**
+         * The proposed spoke is pending review.
+         */
+        public const CODE_PENDING_REVIEW = 'PENDING_REVIEW';
+        /**
+         * The proposed spoke has been rejected by the hub administrator.
+         */
+        public const CODE_REJECTED = 'REJECTED';
+        /**
+         * The spoke has been deactivated internally.
+         */
+        public const CODE_PAUSED = 'PAUSED';
+        /**
+         * Network Connectivity Center encountered errors while accepting the spoke.
+         */
+        public const CODE_FAILED = 'FAILED';
+        /**
+         * The proposed spoke update is pending review.
+         */
+        public const CODE_UPDATE_PENDING_REVIEW = 'UPDATE_PENDING_REVIEW';
+        /**
+         * The proposed spoke update has been rejected by the hub administrator.
+         */
+        public const CODE_UPDATE_REJECTED = 'UPDATE_REJECTED';
+        /**
+         * Network Connectivity Center encountered errors while accepting the spoke
+         * update.
+         */
+        public const CODE_UPDATE_FAILED = 'UPDATE_FAILED';
+        /**
+         * The code associated with this reason.
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * Human-readable details about this reason.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Additional information provided by the user in the RejectSpoke call.
+         *
+         * @var string
+         */
+        public $userDetails;
+        /**
+         * The code associated with this reason.
+         *
+         * Accepted values: CODE_UNSPECIFIED, PENDING_REVIEW, REJECTED, PAUSED,
+         * FAILED, UPDATE_PENDING_REVIEW, UPDATE_REJECTED, UPDATE_FAILED
+         *
+         * @param self::CODE_* $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return self::CODE_*
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * Human-readable details about this reason.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * Additional information provided by the user in the RejectSpoke call.
+         *
+         * @param string $userDetails
+         */
+        public function setUserDetails($userDetails)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CODE_*
+     * Runtime class alias of \Google\Service\Networkconnectivity\StateReason registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * Human-readable details about this reason.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * Additional information provided by the user in the RejectSpoke call.
-     *
-     * @param string $userDetails
-     */
-    public function setUserDetails($userDetails)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserDetails()
+    class Google_Service_Networkconnectivity_StateReason extends \Google\Service\Networkconnectivity\StateReason
     {
     }
 }

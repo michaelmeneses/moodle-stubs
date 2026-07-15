@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1SubscriptionMigrationDetails extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $migratedSubscriptionId;
-    /**
-     * @param string
-     */
-    public function setMigratedSubscriptionId($migratedSubscriptionId)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1SubscriptionMigrationDetails extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $migratedSubscriptionId;
+        /**
+         * @param string
+         */
+        public function setMigratedSubscriptionId($migratedSubscriptionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMigratedSubscriptionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1SubscriptionMigrationDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMigratedSubscriptionId()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1SubscriptionMigrationDetails extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1SubscriptionMigrationDetails
     {
     }
 }

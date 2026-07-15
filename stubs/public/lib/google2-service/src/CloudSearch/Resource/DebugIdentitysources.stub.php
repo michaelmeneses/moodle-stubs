@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch\Resource;
-
-/**
- * The "identitysources" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudsearchService = new Google\Service\CloudSearch(...);
- *   $identitysources = $cloudsearchService->debug_identitysources;
- *  </code>
- */
-class DebugIdentitysources extends \Google\Service\Resource
-{
+namespace Google\Service\CloudSearch\Resource {
+    /**
+     * The "identitysources" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudsearchService = new Google\Service\CloudSearch(...);
+     *   $identitysources = $cloudsearchService->debug_identitysources;
+     *  </code>
+     */
+    class DebugIdentitysources extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudSearch\Resource\DebugIdentitysources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudSearch_Resource_DebugIdentitysources extends \Google\Service\CloudSearch\Resource\DebugIdentitysources
+    {
+    }
 }

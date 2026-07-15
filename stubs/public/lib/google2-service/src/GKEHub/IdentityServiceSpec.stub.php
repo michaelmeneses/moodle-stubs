@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class IdentityServiceSpec extends \Google\Collection
-{
-    protected $collection_key = 'authMethods';
-    protected $authMethodsType = IdentityServiceAuthMethod::class;
-    protected $authMethodsDataType = 'array';
-    protected $identityServiceOptionsType = IdentityServiceIdentityServiceOptions::class;
-    protected $identityServiceOptionsDataType = '';
-    /**
-     * A member may support multiple auth methods.
-     *
-     * @param IdentityServiceAuthMethod[] $authMethods
-     */
-    public function setAuthMethods($authMethods)
+namespace Google\Service\GKEHub {
+    class IdentityServiceSpec extends \Google\Collection
     {
+        protected $collection_key = 'authMethods';
+        protected $authMethodsType = IdentityServiceAuthMethod::class;
+        protected $authMethodsDataType = 'array';
+        protected $identityServiceOptionsType = IdentityServiceIdentityServiceOptions::class;
+        protected $identityServiceOptionsDataType = '';
+        /**
+         * A member may support multiple auth methods.
+         *
+         * @param IdentityServiceAuthMethod[] $authMethods
+         */
+        public function setAuthMethods($authMethods)
+        {
+        }
+        /**
+         * @return IdentityServiceAuthMethod[]
+         */
+        public function getAuthMethods()
+        {
+        }
+        /**
+         * Optional. non-protocol-related configuration options.
+         *
+         * @param IdentityServiceIdentityServiceOptions $identityServiceOptions
+         */
+        public function setIdentityServiceOptions(IdentityServiceIdentityServiceOptions $identityServiceOptions)
+        {
+        }
+        /**
+         * @return IdentityServiceIdentityServiceOptions
+         */
+        public function getIdentityServiceOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IdentityServiceAuthMethod[]
+     * Runtime class alias of \Google\Service\GKEHub\IdentityServiceSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthMethods()
-    {
-    }
-    /**
-     * Optional. non-protocol-related configuration options.
-     *
-     * @param IdentityServiceIdentityServiceOptions $identityServiceOptions
-     */
-    public function setIdentityServiceOptions(IdentityServiceIdentityServiceOptions $identityServiceOptions)
-    {
-    }
-    /**
-     * @return IdentityServiceIdentityServiceOptions
-     */
-    public function getIdentityServiceOptions()
+    class Google_Service_GKEHub_IdentityServiceSpec extends \Google\Service\GKEHub\IdentityServiceSpec
     {
     }
 }

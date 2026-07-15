@@ -21,48 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "studioCreatives" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $studioCreatives = $dfareportingService->studioCreatives;
- *  </code>
- */
-class StudioCreatives extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\StudioCreative;
     /**
-     * Gets a studio creative by ID. (studioCreatives.get)
-     *
-     * @param string $studioCreativeId Required. Studio creative ID.
-     * @param array $optParams Optional parameters.
-     * @return StudioCreative
-     * @throws \Google\Service\Exception
+     * The "studioCreatives" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $studioCreatives = $dfareportingService->studioCreatives;
+     *  </code>
      */
-    public function get($studioCreativeId, $optParams = [])
+    class StudioCreatives extends \Google\Service\Resource
     {
+        /**
+         * Gets a studio creative by ID. (studioCreatives.get)
+         *
+         * @param string $studioCreativeId Required. Studio creative ID.
+         * @param array $optParams Optional parameters.
+         * @return StudioCreative
+         * @throws \Google\Service\Exception
+         */
+        public function get($studioCreativeId, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a new studio creative. (studioCreatives.insert)
+         *
+         * @param StudioCreative $postBody
+         * @param array $optParams Optional parameters.
+         * @return StudioCreative
+         * @throws \Google\Service\Exception
+         */
+        public function insert(StudioCreative $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Publish for a studio creative. (studioCreatives.publish)
+         *
+         * @param string $studioCreativeId Required. Studio creative ID.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function publish($studioCreativeId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Inserts a new studio creative. (studioCreatives.insert)
-     *
-     * @param StudioCreative $postBody
-     * @param array $optParams Optional parameters.
-     * @return StudioCreative
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\StudioCreatives registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert(StudioCreative $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Publish for a studio creative. (studioCreatives.publish)
-     *
-     * @param string $studioCreativeId Required. Studio creative ID.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
-     */
-    public function publish($studioCreativeId, $optParams = [])
+    class Google_Service_Dfareporting_Resource_StudioCreatives extends \Google\Service\Dfareporting\Resource\StudioCreatives
     {
     }
 }

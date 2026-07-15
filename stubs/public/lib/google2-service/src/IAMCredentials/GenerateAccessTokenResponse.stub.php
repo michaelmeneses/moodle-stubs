@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IAMCredentials;
-
-class GenerateAccessTokenResponse extends \Google\Model
-{
-    /**
-     * The OAuth 2.0 access token.
-     *
-     * @var string
-     */
-    public $accessToken;
-    /**
-     * Token expiration time. The expiration time is always set.
-     *
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * The OAuth 2.0 access token.
-     *
-     * @param string $accessToken
-     */
-    public function setAccessToken($accessToken)
+namespace Google\Service\IAMCredentials {
+    class GenerateAccessTokenResponse extends \Google\Model
     {
+        /**
+         * The OAuth 2.0 access token.
+         *
+         * @var string
+         */
+        public $accessToken;
+        /**
+         * Token expiration time. The expiration time is always set.
+         *
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * The OAuth 2.0 access token.
+         *
+         * @param string $accessToken
+         */
+        public function setAccessToken($accessToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessToken()
+        {
+        }
+        /**
+         * Token expiration time. The expiration time is always set.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IAMCredentials\GenerateAccessTokenResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessToken()
-    {
-    }
-    /**
-     * Token expiration time. The expiration time is always set.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpireTime()
+    class Google_Service_IAMCredentials_GenerateAccessTokenResponse extends \Google\Service\IAMCredentials\GenerateAccessTokenResponse
     {
     }
 }

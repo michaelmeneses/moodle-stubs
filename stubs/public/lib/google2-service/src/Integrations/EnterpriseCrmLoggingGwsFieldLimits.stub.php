@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmLoggingGwsFieldLimits extends \Google\Collection
-{
-    protected $collection_key = 'logType';
-    /**
-     * @var string
-     */
-    public $logAction;
-    /**
-     * @var string[]
-     */
-    public $logType;
-    /**
-     * @var int
-     */
-    public $maxArraySize;
-    /**
-     * @var int
-     */
-    public $maxStringLength;
-    /**
-     * @var string
-     */
-    public $shortenerType;
-    /**
-     * @param string
-     */
-    public function setLogAction($logAction)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmLoggingGwsFieldLimits extends \Google\Collection
     {
+        protected $collection_key = 'logType';
+        /**
+         * @var string
+         */
+        public $logAction;
+        /**
+         * @var string[]
+         */
+        public $logType;
+        /**
+         * @var int
+         */
+        public $maxArraySize;
+        /**
+         * @var int
+         */
+        public $maxStringLength;
+        /**
+         * @var string
+         */
+        public $shortenerType;
+        /**
+         * @param string
+         */
+        public function setLogAction($logAction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLogAction()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLogType($logType)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLogType()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMaxArraySize($maxArraySize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxArraySize()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMaxStringLength($maxStringLength)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxStringLength()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setShortenerType($shortenerType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShortenerType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmLoggingGwsFieldLimits registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLogAction()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLogType($logType)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLogType()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMaxArraySize($maxArraySize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxArraySize()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMaxStringLength($maxStringLength)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxStringLength()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setShortenerType($shortenerType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShortenerType()
+    class Google_Service_Integrations_EnterpriseCrmLoggingGwsFieldLimits extends \Google\Service\Integrations\EnterpriseCrmLoggingGwsFieldLimits
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class DataplaneV2FeatureSpec extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $enableEncryption;
-    /**
-     * @param bool
-     */
-    public function setEnableEncryption($enableEncryption)
+namespace Google\Service\GKEHub {
+    class DataplaneV2FeatureSpec extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $enableEncryption;
+        /**
+         * @param bool
+         */
+        public function setEnableEncryption($enableEncryption)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableEncryption()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GKEHub\DataplaneV2FeatureSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableEncryption()
+    class Google_Service_GKEHub_DataplaneV2FeatureSpec extends \Google\Service\GKEHub\DataplaneV2FeatureSpec
     {
     }
 }

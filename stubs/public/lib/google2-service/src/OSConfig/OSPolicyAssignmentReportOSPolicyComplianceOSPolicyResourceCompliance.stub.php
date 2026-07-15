@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceCompliance extends \Google\Collection
-{
-    protected $collection_key = 'configSteps';
-    /**
-     * @var string
-     */
-    public $complianceState;
-    /**
-     * @var string
-     */
-    public $complianceStateReason;
-    protected $configStepsType = OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceComplianceOSPolicyResourceConfigStep::class;
-    protected $configStepsDataType = 'array';
-    protected $execResourceOutputType = OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceComplianceExecResourceOutput::class;
-    protected $execResourceOutputDataType = '';
-    /**
-     * @var string
-     */
-    public $osPolicyResourceId;
-    /**
-     * @param string
-     */
-    public function setComplianceState($complianceState)
+namespace Google\Service\OSConfig {
+    class OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceCompliance extends \Google\Collection
     {
+        protected $collection_key = 'configSteps';
+        /**
+         * @var string
+         */
+        public $complianceState;
+        /**
+         * @var string
+         */
+        public $complianceStateReason;
+        protected $configStepsType = OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceComplianceOSPolicyResourceConfigStep::class;
+        protected $configStepsDataType = 'array';
+        protected $execResourceOutputType = OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceComplianceExecResourceOutput::class;
+        protected $execResourceOutputDataType = '';
+        /**
+         * @var string
+         */
+        public $osPolicyResourceId;
+        /**
+         * @param string
+         */
+        public function setComplianceState($complianceState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComplianceState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setComplianceStateReason($complianceStateReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComplianceStateReason()
+        {
+        }
+        /**
+         * @param OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceComplianceOSPolicyResourceConfigStep[]
+         */
+        public function setConfigSteps($configSteps)
+        {
+        }
+        /**
+         * @return OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceComplianceOSPolicyResourceConfigStep[]
+         */
+        public function getConfigSteps()
+        {
+        }
+        /**
+         * @param OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceComplianceExecResourceOutput
+         */
+        public function setExecResourceOutput(OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceComplianceExecResourceOutput $execResourceOutput)
+        {
+        }
+        /**
+         * @return OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceComplianceExecResourceOutput
+         */
+        public function getExecResourceOutput()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOsPolicyResourceId($osPolicyResourceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOsPolicyResourceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceCompliance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComplianceState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setComplianceStateReason($complianceStateReason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getComplianceStateReason()
-    {
-    }
-    /**
-     * @param OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceComplianceOSPolicyResourceConfigStep[]
-     */
-    public function setConfigSteps($configSteps)
-    {
-    }
-    /**
-     * @return OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceComplianceOSPolicyResourceConfigStep[]
-     */
-    public function getConfigSteps()
-    {
-    }
-    /**
-     * @param OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceComplianceExecResourceOutput
-     */
-    public function setExecResourceOutput(OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceComplianceExecResourceOutput $execResourceOutput)
-    {
-    }
-    /**
-     * @return OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceComplianceExecResourceOutput
-     */
-    public function getExecResourceOutput()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOsPolicyResourceId($osPolicyResourceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOsPolicyResourceId()
+    class Google_Service_OSConfig_OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceCompliance extends \Google\Service\OSConfig\OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceCompliance
     {
     }
 }

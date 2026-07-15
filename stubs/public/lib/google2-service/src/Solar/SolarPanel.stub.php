@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Solar;
-
-class SolarPanel extends \Google\Model
-{
-    /**
-     * No panel orientation is known.
-     */
-    public const ORIENTATION_SOLAR_PANEL_ORIENTATION_UNSPECIFIED = 'SOLAR_PANEL_ORIENTATION_UNSPECIFIED';
-    /**
-     * A `LANDSCAPE` panel has its long edge perpendicular to the azimuth
-     * direction of the roof segment that it is placed on.
-     */
-    public const ORIENTATION_LANDSCAPE = 'LANDSCAPE';
-    /**
-     * A `PORTRAIT` panel has its long edge parallel to the azimuth direction of
-     * the roof segment that it is placed on.
-     */
-    public const ORIENTATION_PORTRAIT = 'PORTRAIT';
-    protected $centerType = LatLng::class;
-    protected $centerDataType = '';
-    /**
-     * The orientation of the panel.
-     *
-     * @var string
-     */
-    public $orientation;
-    /**
-     * Index in roof_segment_stats of the `RoofSegmentSizeAndSunshineStats` which
-     * corresponds to the roof segment that this panel is placed on.
-     *
-     * @var int
-     */
-    public $segmentIndex;
-    /**
-     * How much sunlight energy this layout captures over the course of a year, in
-     * DC kWh.
-     *
-     * @var float
-     */
-    public $yearlyEnergyDcKwh;
-    /**
-     * The centre of the panel.
-     *
-     * @param LatLng $center
-     */
-    public function setCenter(LatLng $center)
+namespace Google\Service\Solar {
+    class SolarPanel extends \Google\Model
     {
+        /**
+         * No panel orientation is known.
+         */
+        public const ORIENTATION_SOLAR_PANEL_ORIENTATION_UNSPECIFIED = 'SOLAR_PANEL_ORIENTATION_UNSPECIFIED';
+        /**
+         * A `LANDSCAPE` panel has its long edge perpendicular to the azimuth
+         * direction of the roof segment that it is placed on.
+         */
+        public const ORIENTATION_LANDSCAPE = 'LANDSCAPE';
+        /**
+         * A `PORTRAIT` panel has its long edge parallel to the azimuth direction of
+         * the roof segment that it is placed on.
+         */
+        public const ORIENTATION_PORTRAIT = 'PORTRAIT';
+        protected $centerType = LatLng::class;
+        protected $centerDataType = '';
+        /**
+         * The orientation of the panel.
+         *
+         * @var string
+         */
+        public $orientation;
+        /**
+         * Index in roof_segment_stats of the `RoofSegmentSizeAndSunshineStats` which
+         * corresponds to the roof segment that this panel is placed on.
+         *
+         * @var int
+         */
+        public $segmentIndex;
+        /**
+         * How much sunlight energy this layout captures over the course of a year, in
+         * DC kWh.
+         *
+         * @var float
+         */
+        public $yearlyEnergyDcKwh;
+        /**
+         * The centre of the panel.
+         *
+         * @param LatLng $center
+         */
+        public function setCenter(LatLng $center)
+        {
+        }
+        /**
+         * @return LatLng
+         */
+        public function getCenter()
+        {
+        }
+        /**
+         * The orientation of the panel.
+         *
+         * Accepted values: SOLAR_PANEL_ORIENTATION_UNSPECIFIED, LANDSCAPE, PORTRAIT
+         *
+         * @param self::ORIENTATION_* $orientation
+         */
+        public function setOrientation($orientation)
+        {
+        }
+        /**
+         * @return self::ORIENTATION_*
+         */
+        public function getOrientation()
+        {
+        }
+        /**
+         * Index in roof_segment_stats of the `RoofSegmentSizeAndSunshineStats` which
+         * corresponds to the roof segment that this panel is placed on.
+         *
+         * @param int $segmentIndex
+         */
+        public function setSegmentIndex($segmentIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSegmentIndex()
+        {
+        }
+        /**
+         * How much sunlight energy this layout captures over the course of a year, in
+         * DC kWh.
+         *
+         * @param float $yearlyEnergyDcKwh
+         */
+        public function setYearlyEnergyDcKwh($yearlyEnergyDcKwh)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getYearlyEnergyDcKwh()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LatLng
+     * Runtime class alias of \Google\Service\Solar\SolarPanel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCenter()
-    {
-    }
-    /**
-     * The orientation of the panel.
-     *
-     * Accepted values: SOLAR_PANEL_ORIENTATION_UNSPECIFIED, LANDSCAPE, PORTRAIT
-     *
-     * @param self::ORIENTATION_* $orientation
-     */
-    public function setOrientation($orientation)
-    {
-    }
-    /**
-     * @return self::ORIENTATION_*
-     */
-    public function getOrientation()
-    {
-    }
-    /**
-     * Index in roof_segment_stats of the `RoofSegmentSizeAndSunshineStats` which
-     * corresponds to the roof segment that this panel is placed on.
-     *
-     * @param int $segmentIndex
-     */
-    public function setSegmentIndex($segmentIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSegmentIndex()
-    {
-    }
-    /**
-     * How much sunlight energy this layout captures over the course of a year, in
-     * DC kWh.
-     *
-     * @param float $yearlyEnergyDcKwh
-     */
-    public function setYearlyEnergyDcKwh($yearlyEnergyDcKwh)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getYearlyEnergyDcKwh()
+    class Google_Service_Solar_SolarPanel extends \Google\Service\Solar\SolarPanel
     {
     }
 }

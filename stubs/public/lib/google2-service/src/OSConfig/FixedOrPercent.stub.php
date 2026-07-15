@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class FixedOrPercent extends \Google\Model
-{
-    /**
-     * Specifies a fixed value.
-     *
-     * @var int
-     */
-    public $fixed;
-    /**
-     * Specifies the relative value defined as a percentage, which will be
-     * multiplied by a reference value.
-     *
-     * @var int
-     */
-    public $percent;
-    /**
-     * Specifies a fixed value.
-     *
-     * @param int $fixed
-     */
-    public function setFixed($fixed)
+namespace Google\Service\OSConfig {
+    class FixedOrPercent extends \Google\Model
     {
+        /**
+         * Specifies a fixed value.
+         *
+         * @var int
+         */
+        public $fixed;
+        /**
+         * Specifies the relative value defined as a percentage, which will be
+         * multiplied by a reference value.
+         *
+         * @var int
+         */
+        public $percent;
+        /**
+         * Specifies a fixed value.
+         *
+         * @param int $fixed
+         */
+        public function setFixed($fixed)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFixed()
+        {
+        }
+        /**
+         * Specifies the relative value defined as a percentage, which will be
+         * multiplied by a reference value.
+         *
+         * @param int $percent
+         */
+        public function setPercent($percent)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPercent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\OSConfig\FixedOrPercent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFixed()
-    {
-    }
-    /**
-     * Specifies the relative value defined as a percentage, which will be
-     * multiplied by a reference value.
-     *
-     * @param int $percent
-     */
-    public function setPercent($percent)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPercent()
+    class Google_Service_OSConfig_FixedOrPercent extends \Google\Service\OSConfig\FixedOrPercent
     {
     }
 }

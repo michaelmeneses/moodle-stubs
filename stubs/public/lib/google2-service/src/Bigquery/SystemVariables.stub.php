@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class SystemVariables extends \Google\Model
-{
-    protected $typesType = StandardSqlDataType::class;
-    protected $typesDataType = 'map';
-    /**
-     * Output only. Value for each system variable.
-     *
-     * @var array[]
-     */
-    public $values;
-    /**
-     * Output only. Data type for each system variable.
-     *
-     * @param StandardSqlDataType[] $types
-     */
-    public function setTypes($types)
+namespace Google\Service\Bigquery {
+    class SystemVariables extends \Google\Model
     {
+        protected $typesType = StandardSqlDataType::class;
+        protected $typesDataType = 'map';
+        /**
+         * Output only. Value for each system variable.
+         *
+         * @var array[]
+         */
+        public $values;
+        /**
+         * Output only. Data type for each system variable.
+         *
+         * @param StandardSqlDataType[] $types
+         */
+        public function setTypes($types)
+        {
+        }
+        /**
+         * @return StandardSqlDataType[]
+         */
+        public function getTypes()
+        {
+        }
+        /**
+         * Output only. Value for each system variable.
+         *
+         * @param array[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StandardSqlDataType[]
+     * Runtime class alias of \Google\Service\Bigquery\SystemVariables registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTypes()
-    {
-    }
-    /**
-     * Output only. Value for each system variable.
-     *
-     * @param array[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getValues()
+    class Google_Service_Bigquery_SystemVariables extends \Google\Service\Bigquery\SystemVariables
     {
     }
 }

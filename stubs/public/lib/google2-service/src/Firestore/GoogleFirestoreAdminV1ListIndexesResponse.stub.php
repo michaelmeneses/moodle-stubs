@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class GoogleFirestoreAdminV1ListIndexesResponse extends \Google\Collection
-{
-    protected $collection_key = 'indexes';
-    protected $indexesType = GoogleFirestoreAdminV1Index::class;
-    protected $indexesDataType = 'array';
-    /**
-     * A page token that may be used to request another page of results. If blank,
-     * this is the last page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The requested indexes.
-     *
-     * @param GoogleFirestoreAdminV1Index[] $indexes
-     */
-    public function setIndexes($indexes)
+namespace Google\Service\Firestore {
+    class GoogleFirestoreAdminV1ListIndexesResponse extends \Google\Collection
     {
+        protected $collection_key = 'indexes';
+        protected $indexesType = GoogleFirestoreAdminV1Index::class;
+        protected $indexesDataType = 'array';
+        /**
+         * A page token that may be used to request another page of results. If blank,
+         * this is the last page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The requested indexes.
+         *
+         * @param GoogleFirestoreAdminV1Index[] $indexes
+         */
+        public function setIndexes($indexes)
+        {
+        }
+        /**
+         * @return GoogleFirestoreAdminV1Index[]
+         */
+        public function getIndexes()
+        {
+        }
+        /**
+         * A page token that may be used to request another page of results. If blank,
+         * this is the last page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFirestoreAdminV1Index[]
+     * Runtime class alias of \Google\Service\Firestore\GoogleFirestoreAdminV1ListIndexesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIndexes()
-    {
-    }
-    /**
-     * A page token that may be used to request another page of results. If blank,
-     * this is the last page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Firestore_GoogleFirestoreAdminV1ListIndexesResponse extends \Google\Service\Firestore\GoogleFirestoreAdminV1ListIndexesResponse
     {
     }
 }

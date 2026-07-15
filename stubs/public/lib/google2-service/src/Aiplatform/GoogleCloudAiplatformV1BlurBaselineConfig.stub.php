@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BlurBaselineConfig extends \Google\Model
-{
-    /**
-     * The standard deviation of the blur kernel for the blurred baseline. The
-     * same blurring parameter is used for both the height and the width
-     * dimension. If not set, the method defaults to the zero (i.e. black for
-     * images) baseline.
-     *
-     * @var float
-     */
-    public $maxBlurSigma;
-    /**
-     * The standard deviation of the blur kernel for the blurred baseline. The
-     * same blurring parameter is used for both the height and the width
-     * dimension. If not set, the method defaults to the zero (i.e. black for
-     * images) baseline.
-     *
-     * @param float $maxBlurSigma
-     */
-    public function setMaxBlurSigma($maxBlurSigma)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BlurBaselineConfig extends \Google\Model
     {
+        /**
+         * The standard deviation of the blur kernel for the blurred baseline. The
+         * same blurring parameter is used for both the height and the width
+         * dimension. If not set, the method defaults to the zero (i.e. black for
+         * images) baseline.
+         *
+         * @var float
+         */
+        public $maxBlurSigma;
+        /**
+         * The standard deviation of the blur kernel for the blurred baseline. The
+         * same blurring parameter is used for both the height and the width
+         * dimension. If not set, the method defaults to the zero (i.e. black for
+         * images) baseline.
+         *
+         * @param float $maxBlurSigma
+         */
+        public function setMaxBlurSigma($maxBlurSigma)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMaxBlurSigma()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BlurBaselineConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxBlurSigma()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BlurBaselineConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BlurBaselineConfig
     {
     }
 }

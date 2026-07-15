@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class SyntheticMonitorTarget extends \Google\Model
-{
-    protected $cloudFunctionV2Type = CloudFunctionV2Target::class;
-    protected $cloudFunctionV2DataType = '';
-    /**
-     * Target a Synthetic Monitor GCFv2 instance.
-     *
-     * @param CloudFunctionV2Target $cloudFunctionV2
-     */
-    public function setCloudFunctionV2(CloudFunctionV2Target $cloudFunctionV2)
+namespace Google\Service\Monitoring {
+    class SyntheticMonitorTarget extends \Google\Model
     {
+        protected $cloudFunctionV2Type = CloudFunctionV2Target::class;
+        protected $cloudFunctionV2DataType = '';
+        /**
+         * Target a Synthetic Monitor GCFv2 instance.
+         *
+         * @param CloudFunctionV2Target $cloudFunctionV2
+         */
+        public function setCloudFunctionV2(CloudFunctionV2Target $cloudFunctionV2)
+        {
+        }
+        /**
+         * @return CloudFunctionV2Target
+         */
+        public function getCloudFunctionV2()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudFunctionV2Target
+     * Runtime class alias of \Google\Service\Monitoring\SyntheticMonitorTarget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudFunctionV2()
+    class Google_Service_Monitoring_SyntheticMonitorTarget extends \Google\Service\Monitoring\SyntheticMonitorTarget
     {
     }
 }

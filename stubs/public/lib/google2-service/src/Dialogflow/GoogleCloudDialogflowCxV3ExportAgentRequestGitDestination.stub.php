@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ExportAgentRequestGitDestination extends \Google\Model
-{
-    /**
-     * Commit message for the git push.
-     *
-     * @var string
-     */
-    public $commitMessage;
-    /**
-     * Tracking branch for the git push.
-     *
-     * @var string
-     */
-    public $trackingBranch;
-    /**
-     * Commit message for the git push.
-     *
-     * @param string $commitMessage
-     */
-    public function setCommitMessage($commitMessage)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ExportAgentRequestGitDestination extends \Google\Model
     {
+        /**
+         * Commit message for the git push.
+         *
+         * @var string
+         */
+        public $commitMessage;
+        /**
+         * Tracking branch for the git push.
+         *
+         * @var string
+         */
+        public $trackingBranch;
+        /**
+         * Commit message for the git push.
+         *
+         * @param string $commitMessage
+         */
+        public function setCommitMessage($commitMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommitMessage()
+        {
+        }
+        /**
+         * Tracking branch for the git push.
+         *
+         * @param string $trackingBranch
+         */
+        public function setTrackingBranch($trackingBranch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrackingBranch()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ExportAgentRequestGitDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommitMessage()
-    {
-    }
-    /**
-     * Tracking branch for the git push.
-     *
-     * @param string $trackingBranch
-     */
-    public function setTrackingBranch($trackingBranch)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrackingBranch()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ExportAgentRequestGitDestination extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ExportAgentRequestGitDestination
     {
     }
 }

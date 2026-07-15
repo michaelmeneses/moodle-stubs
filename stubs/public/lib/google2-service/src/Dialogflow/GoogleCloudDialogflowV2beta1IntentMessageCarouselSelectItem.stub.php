@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1IntentMessageCarouselSelectItem extends \Google\Model
-{
-    /**
-     * Optional. The body text of the card.
-     *
-     * @var string
-     */
-    public $description;
-    protected $imageType = GoogleCloudDialogflowV2beta1IntentMessageImage::class;
-    protected $imageDataType = '';
-    protected $infoType = GoogleCloudDialogflowV2beta1IntentMessageSelectItemInfo::class;
-    protected $infoDataType = '';
-    /**
-     * Required. Title of the carousel item.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Optional. The body text of the card.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1IntentMessageCarouselSelectItem extends \Google\Model
     {
+        /**
+         * Optional. The body text of the card.
+         *
+         * @var string
+         */
+        public $description;
+        protected $imageType = GoogleCloudDialogflowV2beta1IntentMessageImage::class;
+        protected $imageDataType = '';
+        protected $infoType = GoogleCloudDialogflowV2beta1IntentMessageSelectItemInfo::class;
+        protected $infoDataType = '';
+        /**
+         * Required. Title of the carousel item.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Optional. The body text of the card.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. The image to display.
+         *
+         * @param GoogleCloudDialogflowV2beta1IntentMessageImage $image
+         */
+        public function setImage(GoogleCloudDialogflowV2beta1IntentMessageImage $image)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1IntentMessageImage
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * Required. Additional info about the option item.
+         *
+         * @param GoogleCloudDialogflowV2beta1IntentMessageSelectItemInfo $info
+         */
+        public function setInfo(GoogleCloudDialogflowV2beta1IntentMessageSelectItemInfo $info)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1IntentMessageSelectItemInfo
+         */
+        public function getInfo()
+        {
+        }
+        /**
+         * Required. Title of the carousel item.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageCarouselSelectItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. The image to display.
-     *
-     * @param GoogleCloudDialogflowV2beta1IntentMessageImage $image
-     */
-    public function setImage(GoogleCloudDialogflowV2beta1IntentMessageImage $image)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2beta1IntentMessageImage
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * Required. Additional info about the option item.
-     *
-     * @param GoogleCloudDialogflowV2beta1IntentMessageSelectItemInfo $info
-     */
-    public function setInfo(GoogleCloudDialogflowV2beta1IntentMessageSelectItemInfo $info)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2beta1IntentMessageSelectItemInfo
-     */
-    public function getInfo()
-    {
-    }
-    /**
-     * Required. Title of the carousel item.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1IntentMessageCarouselSelectItem extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageCarouselSelectItem
     {
     }
 }

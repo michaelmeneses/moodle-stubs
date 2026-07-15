@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class SqlserverWorkload extends \Google\Collection
-{
-    protected $collection_key = 'databases';
-    protected $agsType = AvailabilityGroup::class;
-    protected $agsDataType = 'array';
-    protected $clusterType = Cluster::class;
-    protected $clusterDataType = '';
-    protected $databasesType = Database::class;
-    protected $databasesDataType = 'array';
-    protected $loadBalancerServerType = LoadBalancerServer::class;
-    protected $loadBalancerServerDataType = '';
-    /**
-     * @param AvailabilityGroup[]
-     */
-    public function setAgs($ags)
+namespace Google\Service\WorkloadManager {
+    class SqlserverWorkload extends \Google\Collection
     {
+        protected $collection_key = 'databases';
+        protected $agsType = AvailabilityGroup::class;
+        protected $agsDataType = 'array';
+        protected $clusterType = Cluster::class;
+        protected $clusterDataType = '';
+        protected $databasesType = Database::class;
+        protected $databasesDataType = 'array';
+        protected $loadBalancerServerType = LoadBalancerServer::class;
+        protected $loadBalancerServerDataType = '';
+        /**
+         * @param AvailabilityGroup[]
+         */
+        public function setAgs($ags)
+        {
+        }
+        /**
+         * @return AvailabilityGroup[]
+         */
+        public function getAgs()
+        {
+        }
+        /**
+         * @param Cluster
+         */
+        public function setCluster(Cluster $cluster)
+        {
+        }
+        /**
+         * @return Cluster
+         */
+        public function getCluster()
+        {
+        }
+        /**
+         * @param Database[]
+         */
+        public function setDatabases($databases)
+        {
+        }
+        /**
+         * @return Database[]
+         */
+        public function getDatabases()
+        {
+        }
+        /**
+         * @param LoadBalancerServer
+         */
+        public function setLoadBalancerServer(LoadBalancerServer $loadBalancerServer)
+        {
+        }
+        /**
+         * @return LoadBalancerServer
+         */
+        public function getLoadBalancerServer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AvailabilityGroup[]
+     * Runtime class alias of \Google\Service\WorkloadManager\SqlserverWorkload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgs()
-    {
-    }
-    /**
-     * @param Cluster
-     */
-    public function setCluster(Cluster $cluster)
-    {
-    }
-    /**
-     * @return Cluster
-     */
-    public function getCluster()
-    {
-    }
-    /**
-     * @param Database[]
-     */
-    public function setDatabases($databases)
-    {
-    }
-    /**
-     * @return Database[]
-     */
-    public function getDatabases()
-    {
-    }
-    /**
-     * @param LoadBalancerServer
-     */
-    public function setLoadBalancerServer(LoadBalancerServer $loadBalancerServer)
-    {
-    }
-    /**
-     * @return LoadBalancerServer
-     */
-    public function getLoadBalancerServer()
+    class Google_Service_WorkloadManager_SqlserverWorkload extends \Google\Service\WorkloadManager\SqlserverWorkload
     {
     }
 }

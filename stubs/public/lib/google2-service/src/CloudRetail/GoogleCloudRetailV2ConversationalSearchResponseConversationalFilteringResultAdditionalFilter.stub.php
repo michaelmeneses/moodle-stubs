@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ConversationalSearchResponseConversationalFilteringResultAdditionalFilter extends \Google\Model
-{
-    protected $productAttributeValueType = GoogleCloudRetailV2ProductAttributeValue::class;
-    protected $productAttributeValueDataType = '';
-    /**
-     * Product attribute value, including an attribute key and an attribute value.
-     * Other types can be added here in the future.
-     *
-     * @param GoogleCloudRetailV2ProductAttributeValue $productAttributeValue
-     */
-    public function setProductAttributeValue(GoogleCloudRetailV2ProductAttributeValue $productAttributeValue)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ConversationalSearchResponseConversationalFilteringResultAdditionalFilter extends \Google\Model
     {
+        protected $productAttributeValueType = GoogleCloudRetailV2ProductAttributeValue::class;
+        protected $productAttributeValueDataType = '';
+        /**
+         * Product attribute value, including an attribute key and an attribute value.
+         * Other types can be added here in the future.
+         *
+         * @param GoogleCloudRetailV2ProductAttributeValue $productAttributeValue
+         */
+        public function setProductAttributeValue(GoogleCloudRetailV2ProductAttributeValue $productAttributeValue)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2ProductAttributeValue
+         */
+        public function getProductAttributeValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2ProductAttributeValue
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ConversationalSearchResponseConversationalFilteringResultAdditionalFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProductAttributeValue()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ConversationalSearchResponseConversationalFilteringResultAdditionalFilter extends \Google\Service\CloudRetail\GoogleCloudRetailV2ConversationalSearchResponseConversationalFilteringResultAdditionalFilter
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class BackupDRConfiguration extends \Google\Model
-{
-    /**
-     * Indicates if the resource is managed by BackupDR.
-     *
-     * @var bool
-     */
-    public $backupdrManaged;
-    /**
-     * Indicates if the resource is managed by BackupDR.
-     *
-     * @param bool $backupdrManaged
-     */
-    public function setBackupdrManaged($backupdrManaged)
+namespace Google\Service\CloudRedis {
+    class BackupDRConfiguration extends \Google\Model
     {
+        /**
+         * Indicates if the resource is managed by BackupDR.
+         *
+         * @var bool
+         */
+        public $backupdrManaged;
+        /**
+         * Indicates if the resource is managed by BackupDR.
+         *
+         * @param bool $backupdrManaged
+         */
+        public function setBackupdrManaged($backupdrManaged)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBackupdrManaged()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudRedis\BackupDRConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupdrManaged()
+    class Google_Service_CloudRedis_BackupDRConfiguration extends \Google\Service\CloudRedis\BackupDRConfiguration
     {
     }
 }

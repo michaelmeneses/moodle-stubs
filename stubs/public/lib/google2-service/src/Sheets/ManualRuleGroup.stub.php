@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class ManualRuleGroup extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $groupNameType = ExtendedValue::class;
-    protected $groupNameDataType = '';
-    protected $itemsType = ExtendedValue::class;
-    protected $itemsDataType = 'array';
-    /**
-     * The group name, which must be a string. Each group in a given ManualRule
-     * must have a unique group name.
-     *
-     * @param ExtendedValue $groupName
-     */
-    public function setGroupName(ExtendedValue $groupName)
+namespace Google\Service\Sheets {
+    class ManualRuleGroup extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $groupNameType = ExtendedValue::class;
+        protected $groupNameDataType = '';
+        protected $itemsType = ExtendedValue::class;
+        protected $itemsDataType = 'array';
+        /**
+         * The group name, which must be a string. Each group in a given ManualRule
+         * must have a unique group name.
+         *
+         * @param ExtendedValue $groupName
+         */
+        public function setGroupName(ExtendedValue $groupName)
+        {
+        }
+        /**
+         * @return ExtendedValue
+         */
+        public function getGroupName()
+        {
+        }
+        /**
+         * The items in the source data that should be placed into this group. Each
+         * item may be a string, number, or boolean. Items may appear in at most one
+         * group within a given ManualRule. Items that do not appear in any group will
+         * appear on their own.
+         *
+         * @param ExtendedValue[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return ExtendedValue[]
+         */
+        public function getItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExtendedValue
+     * Runtime class alias of \Google\Service\Sheets\ManualRuleGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroupName()
-    {
-    }
-    /**
-     * The items in the source data that should be placed into this group. Each
-     * item may be a string, number, or boolean. Items may appear in at most one
-     * group within a given ManualRule. Items that do not appear in any group will
-     * appear on their own.
-     *
-     * @param ExtendedValue[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return ExtendedValue[]
-     */
-    public function getItems()
+    class Google_Service_Sheets_ManualRuleGroup extends \Google\Service\Sheets\ManualRuleGroup
     {
     }
 }

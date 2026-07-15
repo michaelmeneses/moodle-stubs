@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Libraryagent;
-
-class GoogleExampleLibraryagentV1Book extends \Google\Model
-{
-    /**
-     * The name of the book author.
-     *
-     * @var string
-     */
-    public $author;
-    /**
-     * The resource name of the book. Book names have the form
-     * `shelves/{shelf_id}/books/{book_id}`. The name is ignored when creating a
-     * book.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Value indicating whether the book has been read.
-     *
-     * @var bool
-     */
-    public $read;
-    /**
-     * The title of the book.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The name of the book author.
-     *
-     * @param string $author
-     */
-    public function setAuthor($author)
+namespace Google\Service\Libraryagent {
+    class GoogleExampleLibraryagentV1Book extends \Google\Model
     {
+        /**
+         * The name of the book author.
+         *
+         * @var string
+         */
+        public $author;
+        /**
+         * The resource name of the book. Book names have the form
+         * `shelves/{shelf_id}/books/{book_id}`. The name is ignored when creating a
+         * book.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Value indicating whether the book has been read.
+         *
+         * @var bool
+         */
+        public $read;
+        /**
+         * The title of the book.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The name of the book author.
+         *
+         * @param string $author
+         */
+        public function setAuthor($author)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthor()
+        {
+        }
+        /**
+         * The resource name of the book. Book names have the form
+         * `shelves/{shelf_id}/books/{book_id}`. The name is ignored when creating a
+         * book.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Value indicating whether the book has been read.
+         *
+         * @param bool $read
+         */
+        public function setRead($read)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRead()
+        {
+        }
+        /**
+         * The title of the book.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Libraryagent\GoogleExampleLibraryagentV1Book registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthor()
-    {
-    }
-    /**
-     * The resource name of the book. Book names have the form
-     * `shelves/{shelf_id}/books/{book_id}`. The name is ignored when creating a
-     * book.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Value indicating whether the book has been read.
-     *
-     * @param bool $read
-     */
-    public function setRead($read)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRead()
-    {
-    }
-    /**
-     * The title of the book.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Libraryagent_GoogleExampleLibraryagentV1Book extends \Google\Service\Libraryagent\GoogleExampleLibraryagentV1Book
     {
     }
 }

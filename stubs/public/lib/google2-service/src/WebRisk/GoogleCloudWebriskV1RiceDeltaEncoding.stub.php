@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WebRisk;
-
-class GoogleCloudWebriskV1RiceDeltaEncoding extends \Google\Model
-{
-    /**
-     * The encoded deltas that are encoded using the Golomb-Rice coder.
-     *
-     * @var string
-     */
-    public $encodedData;
-    /**
-     * The number of entries that are delta encoded in the encoded data. If only a
-     * single integer was encoded, this will be zero and the single value will be
-     * stored in `first_value`.
-     *
-     * @var int
-     */
-    public $entryCount;
-    /**
-     * The offset of the first entry in the encoded data, or, if only a single
-     * integer was encoded, that single integer's value. If the field is empty or
-     * missing, assume zero.
-     *
-     * @var string
-     */
-    public $firstValue;
-    /**
-     * The Golomb-Rice parameter, which is a number between 2 and 28. This field
-     * is missing (that is, zero) if `num_entries` is zero.
-     *
-     * @var int
-     */
-    public $riceParameter;
-    /**
-     * The encoded deltas that are encoded using the Golomb-Rice coder.
-     *
-     * @param string $encodedData
-     */
-    public function setEncodedData($encodedData)
+namespace Google\Service\WebRisk {
+    class GoogleCloudWebriskV1RiceDeltaEncoding extends \Google\Model
     {
+        /**
+         * The encoded deltas that are encoded using the Golomb-Rice coder.
+         *
+         * @var string
+         */
+        public $encodedData;
+        /**
+         * The number of entries that are delta encoded in the encoded data. If only a
+         * single integer was encoded, this will be zero and the single value will be
+         * stored in `first_value`.
+         *
+         * @var int
+         */
+        public $entryCount;
+        /**
+         * The offset of the first entry in the encoded data, or, if only a single
+         * integer was encoded, that single integer's value. If the field is empty or
+         * missing, assume zero.
+         *
+         * @var string
+         */
+        public $firstValue;
+        /**
+         * The Golomb-Rice parameter, which is a number between 2 and 28. This field
+         * is missing (that is, zero) if `num_entries` is zero.
+         *
+         * @var int
+         */
+        public $riceParameter;
+        /**
+         * The encoded deltas that are encoded using the Golomb-Rice coder.
+         *
+         * @param string $encodedData
+         */
+        public function setEncodedData($encodedData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncodedData()
+        {
+        }
+        /**
+         * The number of entries that are delta encoded in the encoded data. If only a
+         * single integer was encoded, this will be zero and the single value will be
+         * stored in `first_value`.
+         *
+         * @param int $entryCount
+         */
+        public function setEntryCount($entryCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEntryCount()
+        {
+        }
+        /**
+         * The offset of the first entry in the encoded data, or, if only a single
+         * integer was encoded, that single integer's value. If the field is empty or
+         * missing, assume zero.
+         *
+         * @param string $firstValue
+         */
+        public function setFirstValue($firstValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirstValue()
+        {
+        }
+        /**
+         * The Golomb-Rice parameter, which is a number between 2 and 28. This field
+         * is missing (that is, zero) if `num_entries` is zero.
+         *
+         * @param int $riceParameter
+         */
+        public function setRiceParameter($riceParameter)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRiceParameter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WebRisk\GoogleCloudWebriskV1RiceDeltaEncoding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncodedData()
-    {
-    }
-    /**
-     * The number of entries that are delta encoded in the encoded data. If only a
-     * single integer was encoded, this will be zero and the single value will be
-     * stored in `first_value`.
-     *
-     * @param int $entryCount
-     */
-    public function setEntryCount($entryCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getEntryCount()
-    {
-    }
-    /**
-     * The offset of the first entry in the encoded data, or, if only a single
-     * integer was encoded, that single integer's value. If the field is empty or
-     * missing, assume zero.
-     *
-     * @param string $firstValue
-     */
-    public function setFirstValue($firstValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFirstValue()
-    {
-    }
-    /**
-     * The Golomb-Rice parameter, which is a number between 2 and 28. This field
-     * is missing (that is, zero) if `num_entries` is zero.
-     *
-     * @param int $riceParameter
-     */
-    public function setRiceParameter($riceParameter)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRiceParameter()
+    class Google_Service_WebRisk_GoogleCloudWebriskV1RiceDeltaEncoding extends \Google\Service\WebRisk\GoogleCloudWebriskV1RiceDeltaEncoding
     {
     }
 }

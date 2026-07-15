@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta3BatchDeleteDocumentsMetadata extends \Google\Collection
-{
-    protected $collection_key = 'individualBatchDeleteStatuses';
-    protected $commonMetadataType = GoogleCloudDocumentaiV1beta3CommonOperationMetadata::class;
-    protected $commonMetadataDataType = '';
-    /**
-     * Total number of documents that failed to be deleted in storage.
-     *
-     * @var int
-     */
-    public $errorDocumentCount;
-    protected $individualBatchDeleteStatusesType = GoogleCloudDocumentaiV1beta3BatchDeleteDocumentsMetadataIndividualBatchDeleteStatus::class;
-    protected $individualBatchDeleteStatusesDataType = 'array';
-    /**
-     * Total number of documents deleting from dataset.
-     *
-     * @var int
-     */
-    public $totalDocumentCount;
-    /**
-     * The basic metadata of the long-running operation.
-     *
-     * @param GoogleCloudDocumentaiV1beta3CommonOperationMetadata $commonMetadata
-     */
-    public function setCommonMetadata(GoogleCloudDocumentaiV1beta3CommonOperationMetadata $commonMetadata)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta3BatchDeleteDocumentsMetadata extends \Google\Collection
     {
+        protected $collection_key = 'individualBatchDeleteStatuses';
+        protected $commonMetadataType = GoogleCloudDocumentaiV1beta3CommonOperationMetadata::class;
+        protected $commonMetadataDataType = '';
+        /**
+         * Total number of documents that failed to be deleted in storage.
+         *
+         * @var int
+         */
+        public $errorDocumentCount;
+        protected $individualBatchDeleteStatusesType = GoogleCloudDocumentaiV1beta3BatchDeleteDocumentsMetadataIndividualBatchDeleteStatus::class;
+        protected $individualBatchDeleteStatusesDataType = 'array';
+        /**
+         * Total number of documents deleting from dataset.
+         *
+         * @var int
+         */
+        public $totalDocumentCount;
+        /**
+         * The basic metadata of the long-running operation.
+         *
+         * @param GoogleCloudDocumentaiV1beta3CommonOperationMetadata $commonMetadata
+         */
+        public function setCommonMetadata(GoogleCloudDocumentaiV1beta3CommonOperationMetadata $commonMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta3CommonOperationMetadata
+         */
+        public function getCommonMetadata()
+        {
+        }
+        /**
+         * Total number of documents that failed to be deleted in storage.
+         *
+         * @param int $errorDocumentCount
+         */
+        public function setErrorDocumentCount($errorDocumentCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getErrorDocumentCount()
+        {
+        }
+        /**
+         * The list of response details of each document.
+         *
+         * @param GoogleCloudDocumentaiV1beta3BatchDeleteDocumentsMetadataIndividualBatchDeleteStatus[] $individualBatchDeleteStatuses
+         */
+        public function setIndividualBatchDeleteStatuses($individualBatchDeleteStatuses)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta3BatchDeleteDocumentsMetadataIndividualBatchDeleteStatus[]
+         */
+        public function getIndividualBatchDeleteStatuses()
+        {
+        }
+        /**
+         * Total number of documents deleting from dataset.
+         *
+         * @param int $totalDocumentCount
+         */
+        public function setTotalDocumentCount($totalDocumentCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalDocumentCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1beta3CommonOperationMetadata
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta3BatchDeleteDocumentsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommonMetadata()
-    {
-    }
-    /**
-     * Total number of documents that failed to be deleted in storage.
-     *
-     * @param int $errorDocumentCount
-     */
-    public function setErrorDocumentCount($errorDocumentCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getErrorDocumentCount()
-    {
-    }
-    /**
-     * The list of response details of each document.
-     *
-     * @param GoogleCloudDocumentaiV1beta3BatchDeleteDocumentsMetadataIndividualBatchDeleteStatus[] $individualBatchDeleteStatuses
-     */
-    public function setIndividualBatchDeleteStatuses($individualBatchDeleteStatuses)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta3BatchDeleteDocumentsMetadataIndividualBatchDeleteStatus[]
-     */
-    public function getIndividualBatchDeleteStatuses()
-    {
-    }
-    /**
-     * Total number of documents deleting from dataset.
-     *
-     * @param int $totalDocumentCount
-     */
-    public function setTotalDocumentCount($totalDocumentCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalDocumentCount()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta3BatchDeleteDocumentsMetadata extends \Google\Service\Document\GoogleCloudDocumentaiV1beta3BatchDeleteDocumentsMetadata
     {
     }
 }

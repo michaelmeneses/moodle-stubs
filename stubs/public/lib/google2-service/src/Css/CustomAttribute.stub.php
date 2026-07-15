@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Css;
-
-class CustomAttribute extends \Google\Collection
-{
-    protected $collection_key = 'groupValues';
-    protected $groupValuesType = CustomAttribute::class;
-    protected $groupValuesDataType = 'array';
-    /**
-     * The name of the attribute.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The value of the attribute. If `value` is not empty, `group_values` must be
-     * empty.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Subattributes within this attribute group. If `group_values` is not empty,
-     * `value` must be empty.
-     *
-     * @param CustomAttribute[] $groupValues
-     */
-    public function setGroupValues($groupValues)
+namespace Google\Service\Css {
+    class CustomAttribute extends \Google\Collection
     {
+        protected $collection_key = 'groupValues';
+        protected $groupValuesType = CustomAttribute::class;
+        protected $groupValuesDataType = 'array';
+        /**
+         * The name of the attribute.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The value of the attribute. If `value` is not empty, `group_values` must be
+         * empty.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Subattributes within this attribute group. If `group_values` is not empty,
+         * `value` must be empty.
+         *
+         * @param CustomAttribute[] $groupValues
+         */
+        public function setGroupValues($groupValues)
+        {
+        }
+        /**
+         * @return CustomAttribute[]
+         */
+        public function getGroupValues()
+        {
+        }
+        /**
+         * The name of the attribute.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The value of the attribute. If `value` is not empty, `group_values` must be
+         * empty.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomAttribute[]
+     * Runtime class alias of \Google\Service\Css\CustomAttribute registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroupValues()
-    {
-    }
-    /**
-     * The name of the attribute.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The value of the attribute. If `value` is not empty, `group_values` must be
-     * empty.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Css_CustomAttribute extends \Google\Service\Css\CustomAttribute
     {
     }
 }

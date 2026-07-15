@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class AnalyzeEntitiesRequest extends \Google\Model
-{
-    /**
-     * If `EncodingType` is not specified, encoding-dependent information (such as
-     * `begin_offset`) will be set at `-1`.
-     */
-    public const ENCODING_TYPE_NONE = 'NONE';
-    /**
-     * Encoding-dependent information (such as `begin_offset`) is calculated based
-     * on the UTF-8 encoding of the input. C++ and Go are examples of languages
-     * that use this encoding natively.
-     */
-    public const ENCODING_TYPE_UTF8 = 'UTF8';
-    /**
-     * Encoding-dependent information (such as `begin_offset`) is calculated based
-     * on the UTF-16 encoding of the input. Java and JavaScript are examples of
-     * languages that use this encoding natively.
-     */
-    public const ENCODING_TYPE_UTF16 = 'UTF16';
-    /**
-     * Encoding-dependent information (such as `begin_offset`) is calculated based
-     * on the UTF-32 encoding of the input. Python is an example of a language
-     * that uses this encoding natively.
-     */
-    public const ENCODING_TYPE_UTF32 = 'UTF32';
-    protected $documentType = Document::class;
-    protected $documentDataType = '';
-    /**
-     * The encoding type used by the API to calculate offsets.
-     *
-     * @var string
-     */
-    public $encodingType;
-    /**
-     * Required. Input document.
-     *
-     * @param Document $document
-     */
-    public function setDocument(Document $document)
+namespace Google\Service\CloudNaturalLanguage {
+    class AnalyzeEntitiesRequest extends \Google\Model
     {
+        /**
+         * If `EncodingType` is not specified, encoding-dependent information (such as
+         * `begin_offset`) will be set at `-1`.
+         */
+        public const ENCODING_TYPE_NONE = 'NONE';
+        /**
+         * Encoding-dependent information (such as `begin_offset`) is calculated based
+         * on the UTF-8 encoding of the input. C++ and Go are examples of languages
+         * that use this encoding natively.
+         */
+        public const ENCODING_TYPE_UTF8 = 'UTF8';
+        /**
+         * Encoding-dependent information (such as `begin_offset`) is calculated based
+         * on the UTF-16 encoding of the input. Java and JavaScript are examples of
+         * languages that use this encoding natively.
+         */
+        public const ENCODING_TYPE_UTF16 = 'UTF16';
+        /**
+         * Encoding-dependent information (such as `begin_offset`) is calculated based
+         * on the UTF-32 encoding of the input. Python is an example of a language
+         * that uses this encoding natively.
+         */
+        public const ENCODING_TYPE_UTF32 = 'UTF32';
+        protected $documentType = Document::class;
+        protected $documentDataType = '';
+        /**
+         * The encoding type used by the API to calculate offsets.
+         *
+         * @var string
+         */
+        public $encodingType;
+        /**
+         * Required. Input document.
+         *
+         * @param Document $document
+         */
+        public function setDocument(Document $document)
+        {
+        }
+        /**
+         * @return Document
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * The encoding type used by the API to calculate offsets.
+         *
+         * Accepted values: NONE, UTF8, UTF16, UTF32
+         *
+         * @param self::ENCODING_TYPE_* $encodingType
+         */
+        public function setEncodingType($encodingType)
+        {
+        }
+        /**
+         * @return self::ENCODING_TYPE_*
+         */
+        public function getEncodingType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Document
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\AnalyzeEntitiesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocument()
-    {
-    }
-    /**
-     * The encoding type used by the API to calculate offsets.
-     *
-     * Accepted values: NONE, UTF8, UTF16, UTF32
-     *
-     * @param self::ENCODING_TYPE_* $encodingType
-     */
-    public function setEncodingType($encodingType)
-    {
-    }
-    /**
-     * @return self::ENCODING_TYPE_*
-     */
-    public function getEncodingType()
+    class Google_Service_CloudNaturalLanguage_AnalyzeEntitiesRequest extends \Google\Service\CloudNaturalLanguage\AnalyzeEntitiesRequest
     {
     }
 }

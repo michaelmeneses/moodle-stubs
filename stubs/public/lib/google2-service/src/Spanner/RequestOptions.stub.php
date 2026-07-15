@@ -21,133 +21,142 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class RequestOptions extends \Google\Model
-{
-    /**
-     * `PRIORITY_UNSPECIFIED` is equivalent to `PRIORITY_HIGH`.
-     */
-    public const PRIORITY_PRIORITY_UNSPECIFIED = 'PRIORITY_UNSPECIFIED';
-    /**
-     * This specifies that the request is low priority.
-     */
-    public const PRIORITY_PRIORITY_LOW = 'PRIORITY_LOW';
-    /**
-     * This specifies that the request is medium priority.
-     */
-    public const PRIORITY_PRIORITY_MEDIUM = 'PRIORITY_MEDIUM';
-    /**
-     * This specifies that the request is high priority.
-     */
-    public const PRIORITY_PRIORITY_HIGH = 'PRIORITY_HIGH';
-    protected $clientContextType = ClientContext::class;
-    protected $clientContextDataType = '';
-    /**
-     * Priority for the request.
-     *
-     * @var string
-     */
-    public $priority;
-    /**
-     * A per-request tag which can be applied to queries or reads, used for
-     * statistics collection. Both `request_tag` and `transaction_tag` can be
-     * specified for a read or query that belongs to a transaction. This field is
-     * ignored for requests where it's not applicable (for example,
-     * `CommitRequest`). Legal characters for `request_tag` values are all
-     * printable characters (ASCII 32 - 126) and the length of a request_tag is
-     * limited to 50 characters. Values that exceed this limit are truncated. Any
-     * leading underscore (_) characters are removed from the string.
-     *
-     * @var string
-     */
-    public $requestTag;
-    /**
-     * A tag used for statistics collection about this transaction. Both
-     * `request_tag` and `transaction_tag` can be specified for a read or query
-     * that belongs to a transaction. The value of transaction_tag should be the
-     * same for all requests belonging to the same transaction. If this request
-     * doesn't belong to any transaction, `transaction_tag` is ignored. Legal
-     * characters for `transaction_tag` values are all printable characters (ASCII
-     * 32 - 126) and the length of a `transaction_tag` is limited to 50
-     * characters. Values that exceed this limit are truncated. Any leading
-     * underscore (_) characters are removed from the string.
-     *
-     * @var string
-     */
-    public $transactionTag;
-    /**
-     * Optional. Optional context that may be needed for some requests.
-     *
-     * @param ClientContext $clientContext
-     */
-    public function setClientContext(ClientContext $clientContext)
+namespace Google\Service\Spanner {
+    class RequestOptions extends \Google\Model
     {
+        /**
+         * `PRIORITY_UNSPECIFIED` is equivalent to `PRIORITY_HIGH`.
+         */
+        public const PRIORITY_PRIORITY_UNSPECIFIED = 'PRIORITY_UNSPECIFIED';
+        /**
+         * This specifies that the request is low priority.
+         */
+        public const PRIORITY_PRIORITY_LOW = 'PRIORITY_LOW';
+        /**
+         * This specifies that the request is medium priority.
+         */
+        public const PRIORITY_PRIORITY_MEDIUM = 'PRIORITY_MEDIUM';
+        /**
+         * This specifies that the request is high priority.
+         */
+        public const PRIORITY_PRIORITY_HIGH = 'PRIORITY_HIGH';
+        protected $clientContextType = ClientContext::class;
+        protected $clientContextDataType = '';
+        /**
+         * Priority for the request.
+         *
+         * @var string
+         */
+        public $priority;
+        /**
+         * A per-request tag which can be applied to queries or reads, used for
+         * statistics collection. Both `request_tag` and `transaction_tag` can be
+         * specified for a read or query that belongs to a transaction. This field is
+         * ignored for requests where it's not applicable (for example,
+         * `CommitRequest`). Legal characters for `request_tag` values are all
+         * printable characters (ASCII 32 - 126) and the length of a request_tag is
+         * limited to 50 characters. Values that exceed this limit are truncated. Any
+         * leading underscore (_) characters are removed from the string.
+         *
+         * @var string
+         */
+        public $requestTag;
+        /**
+         * A tag used for statistics collection about this transaction. Both
+         * `request_tag` and `transaction_tag` can be specified for a read or query
+         * that belongs to a transaction. The value of transaction_tag should be the
+         * same for all requests belonging to the same transaction. If this request
+         * doesn't belong to any transaction, `transaction_tag` is ignored. Legal
+         * characters for `transaction_tag` values are all printable characters (ASCII
+         * 32 - 126) and the length of a `transaction_tag` is limited to 50
+         * characters. Values that exceed this limit are truncated. Any leading
+         * underscore (_) characters are removed from the string.
+         *
+         * @var string
+         */
+        public $transactionTag;
+        /**
+         * Optional. Optional context that may be needed for some requests.
+         *
+         * @param ClientContext $clientContext
+         */
+        public function setClientContext(ClientContext $clientContext)
+        {
+        }
+        /**
+         * @return ClientContext
+         */
+        public function getClientContext()
+        {
+        }
+        /**
+         * Priority for the request.
+         *
+         * Accepted values: PRIORITY_UNSPECIFIED, PRIORITY_LOW, PRIORITY_MEDIUM,
+         * PRIORITY_HIGH
+         *
+         * @param self::PRIORITY_* $priority
+         */
+        public function setPriority($priority)
+        {
+        }
+        /**
+         * @return self::PRIORITY_*
+         */
+        public function getPriority()
+        {
+        }
+        /**
+         * A per-request tag which can be applied to queries or reads, used for
+         * statistics collection. Both `request_tag` and `transaction_tag` can be
+         * specified for a read or query that belongs to a transaction. This field is
+         * ignored for requests where it's not applicable (for example,
+         * `CommitRequest`). Legal characters for `request_tag` values are all
+         * printable characters (ASCII 32 - 126) and the length of a request_tag is
+         * limited to 50 characters. Values that exceed this limit are truncated. Any
+         * leading underscore (_) characters are removed from the string.
+         *
+         * @param string $requestTag
+         */
+        public function setRequestTag($requestTag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestTag()
+        {
+        }
+        /**
+         * A tag used for statistics collection about this transaction. Both
+         * `request_tag` and `transaction_tag` can be specified for a read or query
+         * that belongs to a transaction. The value of transaction_tag should be the
+         * same for all requests belonging to the same transaction. If this request
+         * doesn't belong to any transaction, `transaction_tag` is ignored. Legal
+         * characters for `transaction_tag` values are all printable characters (ASCII
+         * 32 - 126) and the length of a `transaction_tag` is limited to 50
+         * characters. Values that exceed this limit are truncated. Any leading
+         * underscore (_) characters are removed from the string.
+         *
+         * @param string $transactionTag
+         */
+        public function setTransactionTag($transactionTag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransactionTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClientContext
+     * Runtime class alias of \Google\Service\Spanner\RequestOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientContext()
-    {
-    }
-    /**
-     * Priority for the request.
-     *
-     * Accepted values: PRIORITY_UNSPECIFIED, PRIORITY_LOW, PRIORITY_MEDIUM,
-     * PRIORITY_HIGH
-     *
-     * @param self::PRIORITY_* $priority
-     */
-    public function setPriority($priority)
-    {
-    }
-    /**
-     * @return self::PRIORITY_*
-     */
-    public function getPriority()
-    {
-    }
-    /**
-     * A per-request tag which can be applied to queries or reads, used for
-     * statistics collection. Both `request_tag` and `transaction_tag` can be
-     * specified for a read or query that belongs to a transaction. This field is
-     * ignored for requests where it's not applicable (for example,
-     * `CommitRequest`). Legal characters for `request_tag` values are all
-     * printable characters (ASCII 32 - 126) and the length of a request_tag is
-     * limited to 50 characters. Values that exceed this limit are truncated. Any
-     * leading underscore (_) characters are removed from the string.
-     *
-     * @param string $requestTag
-     */
-    public function setRequestTag($requestTag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestTag()
-    {
-    }
-    /**
-     * A tag used for statistics collection about this transaction. Both
-     * `request_tag` and `transaction_tag` can be specified for a read or query
-     * that belongs to a transaction. The value of transaction_tag should be the
-     * same for all requests belonging to the same transaction. If this request
-     * doesn't belong to any transaction, `transaction_tag` is ignored. Legal
-     * characters for `transaction_tag` values are all printable characters (ASCII
-     * 32 - 126) and the length of a `transaction_tag` is limited to 50
-     * characters. Values that exceed this limit are truncated. Any leading
-     * underscore (_) characters are removed from the string.
-     *
-     * @param string $transactionTag
-     */
-    public function setTransactionTag($transactionTag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTransactionTag()
+    class Google_Service_Spanner_RequestOptions extends \Google\Service\Spanner\RequestOptions
     {
     }
 }

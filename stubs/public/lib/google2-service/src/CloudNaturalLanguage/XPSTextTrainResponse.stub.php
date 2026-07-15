@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSTextTrainResponse extends \Google\Collection
-{
-    protected $collection_key = 'componentModel';
-    protected $componentModelType = XPSTextComponentModel::class;
-    protected $componentModelDataType = 'array';
-    /**
-     * Component submodels.
-     *
-     * @param XPSTextComponentModel[] $componentModel
-     */
-    public function setComponentModel($componentModel)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSTextTrainResponse extends \Google\Collection
     {
+        protected $collection_key = 'componentModel';
+        protected $componentModelType = XPSTextComponentModel::class;
+        protected $componentModelDataType = 'array';
+        /**
+         * Component submodels.
+         *
+         * @param XPSTextComponentModel[] $componentModel
+         */
+        public function setComponentModel($componentModel)
+        {
+        }
+        /**
+         * @return XPSTextComponentModel[]
+         */
+        public function getComponentModel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSTextComponentModel[]
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSTextTrainResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComponentModel()
+    class Google_Service_CloudNaturalLanguage_XPSTextTrainResponse extends \Google\Service\CloudNaturalLanguage\XPSTextTrainResponse
     {
     }
 }

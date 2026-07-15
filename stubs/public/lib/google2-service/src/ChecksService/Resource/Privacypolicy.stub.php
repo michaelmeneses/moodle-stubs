@@ -21,28 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService\Resource;
-
-/**
- * The "privacypolicy" collection of methods.
- * Typical usage is:
- *  <code>
- *   $checksService = new Google\Service\ChecksService(...);
- *   $privacypolicy = $checksService->privacypolicy;
- *  </code>
- */
-class Privacypolicy extends \Google\Service\Resource
-{
+namespace Google\Service\ChecksService\Resource {
+    use Google\Service\ChecksService\AnalyzePrivacyPolicyRequest;
+    use Google\Service\ChecksService\AnalyzePrivacyPolicyResponse;
     /**
-     * Performs a synchronous analysis of a privacy policy, where the policy content
-     * is mapped to privacy categories, data types, and purposes.
-     * (privacypolicy.analyze)
-     *
-     * @param AnalyzePrivacyPolicyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return AnalyzePrivacyPolicyResponse
+     * The "privacypolicy" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $checksService = new Google\Service\ChecksService(...);
+     *   $privacypolicy = $checksService->privacypolicy;
+     *  </code>
      */
-    public function analyze(AnalyzePrivacyPolicyRequest $postBody, $optParams = [])
+    class Privacypolicy extends \Google\Service\Resource
+    {
+        /**
+         * Performs a synchronous analysis of a privacy policy, where the policy content
+         * is mapped to privacy categories, data types, and purposes.
+         * (privacypolicy.analyze)
+         *
+         * @param AnalyzePrivacyPolicyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return AnalyzePrivacyPolicyResponse
+         */
+        public function analyze(AnalyzePrivacyPolicyRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ChecksService\Resource\Privacypolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ChecksService_Resource_Privacypolicy extends \Google\Service\ChecksService\Resource\Privacypolicy
     {
     }
 }

@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ContaineranalysisGoogleDevtoolsCloudbuildV1Source extends \Google\Model
-{
-    protected $connectedRepositoryType = ContaineranalysisGoogleDevtoolsCloudbuildV1ConnectedRepository::class;
-    protected $connectedRepositoryDataType = '';
-    protected $developerConnectConfigType = ContaineranalysisGoogleDevtoolsCloudbuildV1DeveloperConnectConfig::class;
-    protected $developerConnectConfigDataType = '';
-    protected $gitSourceType = ContaineranalysisGoogleDevtoolsCloudbuildV1GitSource::class;
-    protected $gitSourceDataType = '';
-    protected $repoSourceType = ContaineranalysisGoogleDevtoolsCloudbuildV1RepoSource::class;
-    protected $repoSourceDataType = '';
-    protected $storageSourceType = ContaineranalysisGoogleDevtoolsCloudbuildV1StorageSource::class;
-    protected $storageSourceDataType = '';
-    protected $storageSourceManifestType = ContaineranalysisGoogleDevtoolsCloudbuildV1StorageSourceManifest::class;
-    protected $storageSourceManifestDataType = '';
-    /**
-     * Optional. If provided, get the source from this 2nd-gen Google Cloud Build
-     * repository resource.
-     *
-     * @param ContaineranalysisGoogleDevtoolsCloudbuildV1ConnectedRepository $connectedRepository
-     */
-    public function setConnectedRepository(ContaineranalysisGoogleDevtoolsCloudbuildV1ConnectedRepository $connectedRepository)
+namespace Google\Service\ContainerAnalysis {
+    class ContaineranalysisGoogleDevtoolsCloudbuildV1Source extends \Google\Model
     {
+        protected $connectedRepositoryType = ContaineranalysisGoogleDevtoolsCloudbuildV1ConnectedRepository::class;
+        protected $connectedRepositoryDataType = '';
+        protected $developerConnectConfigType = ContaineranalysisGoogleDevtoolsCloudbuildV1DeveloperConnectConfig::class;
+        protected $developerConnectConfigDataType = '';
+        protected $gitSourceType = ContaineranalysisGoogleDevtoolsCloudbuildV1GitSource::class;
+        protected $gitSourceDataType = '';
+        protected $repoSourceType = ContaineranalysisGoogleDevtoolsCloudbuildV1RepoSource::class;
+        protected $repoSourceDataType = '';
+        protected $storageSourceType = ContaineranalysisGoogleDevtoolsCloudbuildV1StorageSource::class;
+        protected $storageSourceDataType = '';
+        protected $storageSourceManifestType = ContaineranalysisGoogleDevtoolsCloudbuildV1StorageSourceManifest::class;
+        protected $storageSourceManifestDataType = '';
+        /**
+         * Optional. If provided, get the source from this 2nd-gen Google Cloud Build
+         * repository resource.
+         *
+         * @param ContaineranalysisGoogleDevtoolsCloudbuildV1ConnectedRepository $connectedRepository
+         */
+        public function setConnectedRepository(ContaineranalysisGoogleDevtoolsCloudbuildV1ConnectedRepository $connectedRepository)
+        {
+        }
+        /**
+         * @return ContaineranalysisGoogleDevtoolsCloudbuildV1ConnectedRepository
+         */
+        public function getConnectedRepository()
+        {
+        }
+        /**
+         * If provided, get the source from this Developer Connect config.
+         *
+         * @param ContaineranalysisGoogleDevtoolsCloudbuildV1DeveloperConnectConfig $developerConnectConfig
+         */
+        public function setDeveloperConnectConfig(ContaineranalysisGoogleDevtoolsCloudbuildV1DeveloperConnectConfig $developerConnectConfig)
+        {
+        }
+        /**
+         * @return ContaineranalysisGoogleDevtoolsCloudbuildV1DeveloperConnectConfig
+         */
+        public function getDeveloperConnectConfig()
+        {
+        }
+        /**
+         * If provided, get the source from this Git repository.
+         *
+         * @param ContaineranalysisGoogleDevtoolsCloudbuildV1GitSource $gitSource
+         */
+        public function setGitSource(ContaineranalysisGoogleDevtoolsCloudbuildV1GitSource $gitSource)
+        {
+        }
+        /**
+         * @return ContaineranalysisGoogleDevtoolsCloudbuildV1GitSource
+         */
+        public function getGitSource()
+        {
+        }
+        /**
+         * If provided, get the source from this location in a Cloud Source
+         * Repository.
+         *
+         * @param ContaineranalysisGoogleDevtoolsCloudbuildV1RepoSource $repoSource
+         */
+        public function setRepoSource(ContaineranalysisGoogleDevtoolsCloudbuildV1RepoSource $repoSource)
+        {
+        }
+        /**
+         * @return ContaineranalysisGoogleDevtoolsCloudbuildV1RepoSource
+         */
+        public function getRepoSource()
+        {
+        }
+        /**
+         * If provided, get the source from this location in Cloud Storage.
+         *
+         * @param ContaineranalysisGoogleDevtoolsCloudbuildV1StorageSource $storageSource
+         */
+        public function setStorageSource(ContaineranalysisGoogleDevtoolsCloudbuildV1StorageSource $storageSource)
+        {
+        }
+        /**
+         * @return ContaineranalysisGoogleDevtoolsCloudbuildV1StorageSource
+         */
+        public function getStorageSource()
+        {
+        }
+        /**
+         * If provided, get the source from this manifest in Cloud Storage. This
+         * feature is in Preview; see description
+         * [here](https://github.com/GoogleCloudPlatform/cloud-
+         * builders/tree/master/gcs-fetcher).
+         *
+         * @param ContaineranalysisGoogleDevtoolsCloudbuildV1StorageSourceManifest $storageSourceManifest
+         */
+        public function setStorageSourceManifest(ContaineranalysisGoogleDevtoolsCloudbuildV1StorageSourceManifest $storageSourceManifest)
+        {
+        }
+        /**
+         * @return ContaineranalysisGoogleDevtoolsCloudbuildV1StorageSourceManifest
+         */
+        public function getStorageSourceManifest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ContaineranalysisGoogleDevtoolsCloudbuildV1ConnectedRepository
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1Source registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectedRepository()
-    {
-    }
-    /**
-     * If provided, get the source from this Developer Connect config.
-     *
-     * @param ContaineranalysisGoogleDevtoolsCloudbuildV1DeveloperConnectConfig $developerConnectConfig
-     */
-    public function setDeveloperConnectConfig(ContaineranalysisGoogleDevtoolsCloudbuildV1DeveloperConnectConfig $developerConnectConfig)
-    {
-    }
-    /**
-     * @return ContaineranalysisGoogleDevtoolsCloudbuildV1DeveloperConnectConfig
-     */
-    public function getDeveloperConnectConfig()
-    {
-    }
-    /**
-     * If provided, get the source from this Git repository.
-     *
-     * @param ContaineranalysisGoogleDevtoolsCloudbuildV1GitSource $gitSource
-     */
-    public function setGitSource(ContaineranalysisGoogleDevtoolsCloudbuildV1GitSource $gitSource)
-    {
-    }
-    /**
-     * @return ContaineranalysisGoogleDevtoolsCloudbuildV1GitSource
-     */
-    public function getGitSource()
-    {
-    }
-    /**
-     * If provided, get the source from this location in a Cloud Source
-     * Repository.
-     *
-     * @param ContaineranalysisGoogleDevtoolsCloudbuildV1RepoSource $repoSource
-     */
-    public function setRepoSource(ContaineranalysisGoogleDevtoolsCloudbuildV1RepoSource $repoSource)
-    {
-    }
-    /**
-     * @return ContaineranalysisGoogleDevtoolsCloudbuildV1RepoSource
-     */
-    public function getRepoSource()
-    {
-    }
-    /**
-     * If provided, get the source from this location in Cloud Storage.
-     *
-     * @param ContaineranalysisGoogleDevtoolsCloudbuildV1StorageSource $storageSource
-     */
-    public function setStorageSource(ContaineranalysisGoogleDevtoolsCloudbuildV1StorageSource $storageSource)
-    {
-    }
-    /**
-     * @return ContaineranalysisGoogleDevtoolsCloudbuildV1StorageSource
-     */
-    public function getStorageSource()
-    {
-    }
-    /**
-     * If provided, get the source from this manifest in Cloud Storage. This
-     * feature is in Preview; see description
-     * [here](https://github.com/GoogleCloudPlatform/cloud-
-     * builders/tree/master/gcs-fetcher).
-     *
-     * @param ContaineranalysisGoogleDevtoolsCloudbuildV1StorageSourceManifest $storageSourceManifest
-     */
-    public function setStorageSourceManifest(ContaineranalysisGoogleDevtoolsCloudbuildV1StorageSourceManifest $storageSourceManifest)
-    {
-    }
-    /**
-     * @return ContaineranalysisGoogleDevtoolsCloudbuildV1StorageSourceManifest
-     */
-    public function getStorageSourceManifest()
+    class Google_Service_ContainerAnalysis_ContaineranalysisGoogleDevtoolsCloudbuildV1Source extends \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1Source
     {
     }
 }

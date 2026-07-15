@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2StoredType extends \Google\Model
-{
-    /**
-     * Timestamp indicating when the version of the `StoredInfoType` used for
-     * inspection was created. Output-only field, populated by the system.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Resource name of the requested `StoredInfoType`, for example
-     * `organizations/433245324/storedInfoTypes/432452342` or `projects/project-
-     * id/storedInfoTypes/432452342`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Timestamp indicating when the version of the `StoredInfoType` used for
-     * inspection was created. Output-only field, populated by the system.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2StoredType extends \Google\Model
     {
+        /**
+         * Timestamp indicating when the version of the `StoredInfoType` used for
+         * inspection was created. Output-only field, populated by the system.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Resource name of the requested `StoredInfoType`, for example
+         * `organizations/433245324/storedInfoTypes/432452342` or `projects/project-
+         * id/storedInfoTypes/432452342`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Timestamp indicating when the version of the `StoredInfoType` used for
+         * inspection was created. Output-only field, populated by the system.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Resource name of the requested `StoredInfoType`, for example
+         * `organizations/433245324/storedInfoTypes/432452342` or `projects/project-
+         * id/storedInfoTypes/432452342`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2StoredType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Resource name of the requested `StoredInfoType`, for example
-     * `organizations/433245324/storedInfoTypes/432452342` or `projects/project-
-     * id/storedInfoTypes/432452342`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_DLP_GooglePrivacyDlpV2StoredType extends \Google\Service\DLP\GooglePrivacyDlpV2StoredType
     {
     }
 }

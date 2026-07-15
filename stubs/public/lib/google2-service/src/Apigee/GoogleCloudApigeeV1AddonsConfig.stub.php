@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1AddonsConfig extends \Google\Model
-{
-    protected $advancedApiOpsConfigType = GoogleCloudApigeeV1AdvancedApiOpsConfig::class;
-    protected $advancedApiOpsConfigDataType = '';
-    protected $analyticsConfigType = GoogleCloudApigeeV1AnalyticsConfig::class;
-    protected $analyticsConfigDataType = '';
-    protected $apiSecurityConfigType = GoogleCloudApigeeV1ApiSecurityConfig::class;
-    protected $apiSecurityConfigDataType = '';
-    protected $connectorsPlatformConfigType = GoogleCloudApigeeV1ConnectorsPlatformConfig::class;
-    protected $connectorsPlatformConfigDataType = '';
-    protected $integrationConfigType = GoogleCloudApigeeV1IntegrationConfig::class;
-    protected $integrationConfigDataType = '';
-    protected $monetizationConfigType = GoogleCloudApigeeV1MonetizationConfig::class;
-    protected $monetizationConfigDataType = '';
-    /**
-     * Configuration for the Advanced API Ops add-on.
-     *
-     * @param GoogleCloudApigeeV1AdvancedApiOpsConfig $advancedApiOpsConfig
-     */
-    public function setAdvancedApiOpsConfig(GoogleCloudApigeeV1AdvancedApiOpsConfig $advancedApiOpsConfig)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1AddonsConfig extends \Google\Model
     {
+        protected $advancedApiOpsConfigType = GoogleCloudApigeeV1AdvancedApiOpsConfig::class;
+        protected $advancedApiOpsConfigDataType = '';
+        protected $analyticsConfigType = GoogleCloudApigeeV1AnalyticsConfig::class;
+        protected $analyticsConfigDataType = '';
+        protected $apiSecurityConfigType = GoogleCloudApigeeV1ApiSecurityConfig::class;
+        protected $apiSecurityConfigDataType = '';
+        protected $connectorsPlatformConfigType = GoogleCloudApigeeV1ConnectorsPlatformConfig::class;
+        protected $connectorsPlatformConfigDataType = '';
+        protected $integrationConfigType = GoogleCloudApigeeV1IntegrationConfig::class;
+        protected $integrationConfigDataType = '';
+        protected $monetizationConfigType = GoogleCloudApigeeV1MonetizationConfig::class;
+        protected $monetizationConfigDataType = '';
+        /**
+         * Configuration for the Advanced API Ops add-on.
+         *
+         * @param GoogleCloudApigeeV1AdvancedApiOpsConfig $advancedApiOpsConfig
+         */
+        public function setAdvancedApiOpsConfig(GoogleCloudApigeeV1AdvancedApiOpsConfig $advancedApiOpsConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1AdvancedApiOpsConfig
+         */
+        public function getAdvancedApiOpsConfig()
+        {
+        }
+        /**
+         * Configuration for the Analytics add-on. Only used in
+         * organizations.environments.addonsConfig.
+         *
+         * @param GoogleCloudApigeeV1AnalyticsConfig $analyticsConfig
+         */
+        public function setAnalyticsConfig(GoogleCloudApigeeV1AnalyticsConfig $analyticsConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1AnalyticsConfig
+         */
+        public function getAnalyticsConfig()
+        {
+        }
+        /**
+         * Configuration for the API Security add-on.
+         *
+         * @param GoogleCloudApigeeV1ApiSecurityConfig $apiSecurityConfig
+         */
+        public function setApiSecurityConfig(GoogleCloudApigeeV1ApiSecurityConfig $apiSecurityConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1ApiSecurityConfig
+         */
+        public function getApiSecurityConfig()
+        {
+        }
+        /**
+         * Configuration for the Connectors Platform add-on.
+         *
+         * @param GoogleCloudApigeeV1ConnectorsPlatformConfig $connectorsPlatformConfig
+         */
+        public function setConnectorsPlatformConfig(GoogleCloudApigeeV1ConnectorsPlatformConfig $connectorsPlatformConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1ConnectorsPlatformConfig
+         */
+        public function getConnectorsPlatformConfig()
+        {
+        }
+        /**
+         * Configuration for the Integration add-on.
+         *
+         * @param GoogleCloudApigeeV1IntegrationConfig $integrationConfig
+         */
+        public function setIntegrationConfig(GoogleCloudApigeeV1IntegrationConfig $integrationConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1IntegrationConfig
+         */
+        public function getIntegrationConfig()
+        {
+        }
+        /**
+         * Configuration for the Monetization add-on.
+         *
+         * @param GoogleCloudApigeeV1MonetizationConfig $monetizationConfig
+         */
+        public function setMonetizationConfig(GoogleCloudApigeeV1MonetizationConfig $monetizationConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1MonetizationConfig
+         */
+        public function getMonetizationConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1AdvancedApiOpsConfig
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1AddonsConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvancedApiOpsConfig()
-    {
-    }
-    /**
-     * Configuration for the Analytics add-on. Only used in
-     * organizations.environments.addonsConfig.
-     *
-     * @param GoogleCloudApigeeV1AnalyticsConfig $analyticsConfig
-     */
-    public function setAnalyticsConfig(GoogleCloudApigeeV1AnalyticsConfig $analyticsConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1AnalyticsConfig
-     */
-    public function getAnalyticsConfig()
-    {
-    }
-    /**
-     * Configuration for the API Security add-on.
-     *
-     * @param GoogleCloudApigeeV1ApiSecurityConfig $apiSecurityConfig
-     */
-    public function setApiSecurityConfig(GoogleCloudApigeeV1ApiSecurityConfig $apiSecurityConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1ApiSecurityConfig
-     */
-    public function getApiSecurityConfig()
-    {
-    }
-    /**
-     * Configuration for the Connectors Platform add-on.
-     *
-     * @param GoogleCloudApigeeV1ConnectorsPlatformConfig $connectorsPlatformConfig
-     */
-    public function setConnectorsPlatformConfig(GoogleCloudApigeeV1ConnectorsPlatformConfig $connectorsPlatformConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1ConnectorsPlatformConfig
-     */
-    public function getConnectorsPlatformConfig()
-    {
-    }
-    /**
-     * Configuration for the Integration add-on.
-     *
-     * @param GoogleCloudApigeeV1IntegrationConfig $integrationConfig
-     */
-    public function setIntegrationConfig(GoogleCloudApigeeV1IntegrationConfig $integrationConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1IntegrationConfig
-     */
-    public function getIntegrationConfig()
-    {
-    }
-    /**
-     * Configuration for the Monetization add-on.
-     *
-     * @param GoogleCloudApigeeV1MonetizationConfig $monetizationConfig
-     */
-    public function setMonetizationConfig(GoogleCloudApigeeV1MonetizationConfig $monetizationConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1MonetizationConfig
-     */
-    public function getMonetizationConfig()
+    class Google_Service_Apigee_GoogleCloudApigeeV1AddonsConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1AddonsConfig
     {
     }
 }

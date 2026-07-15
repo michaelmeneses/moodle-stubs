@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaServingConfigMediaConfig extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $contentFreshnessCutoffDays;
-    /**
-     * @var float
-     */
-    public $contentWatchedPercentageThreshold;
-    /**
-     * @var float
-     */
-    public $contentWatchedSecondsThreshold;
-    /**
-     * @var string
-     */
-    public $demotionEventType;
-    /**
-     * @param int
-     */
-    public function setContentFreshnessCutoffDays($contentFreshnessCutoffDays)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaServingConfigMediaConfig extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $contentFreshnessCutoffDays;
+        /**
+         * @var float
+         */
+        public $contentWatchedPercentageThreshold;
+        /**
+         * @var float
+         */
+        public $contentWatchedSecondsThreshold;
+        /**
+         * @var string
+         */
+        public $demotionEventType;
+        /**
+         * @param int
+         */
+        public function setContentFreshnessCutoffDays($contentFreshnessCutoffDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getContentFreshnessCutoffDays()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setContentWatchedPercentageThreshold($contentWatchedPercentageThreshold)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getContentWatchedPercentageThreshold()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setContentWatchedSecondsThreshold($contentWatchedSecondsThreshold)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getContentWatchedSecondsThreshold()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDemotionEventType($demotionEventType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDemotionEventType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaServingConfigMediaConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentFreshnessCutoffDays()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setContentWatchedPercentageThreshold($contentWatchedPercentageThreshold)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getContentWatchedPercentageThreshold()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setContentWatchedSecondsThreshold($contentWatchedSecondsThreshold)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getContentWatchedSecondsThreshold()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDemotionEventType($demotionEventType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDemotionEventType()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaServingConfigMediaConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaServingConfigMediaConfig
     {
     }
 }

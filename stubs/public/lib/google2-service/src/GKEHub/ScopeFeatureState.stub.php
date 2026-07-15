@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ScopeFeatureState extends \Google\Model
-{
-    protected $stateType = FeatureState::class;
-    protected $stateDataType = '';
-    /**
-     * @param FeatureState
-     */
-    public function setState(FeatureState $state)
+namespace Google\Service\GKEHub {
+    class ScopeFeatureState extends \Google\Model
     {
+        protected $stateType = FeatureState::class;
+        protected $stateDataType = '';
+        /**
+         * @param FeatureState
+         */
+        public function setState(FeatureState $state)
+        {
+        }
+        /**
+         * @return FeatureState
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FeatureState
+     * Runtime class alias of \Google\Service\GKEHub\ScopeFeatureState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getState()
+    class Google_Service_GKEHub_ScopeFeatureState extends \Google\Service\GKEHub\ScopeFeatureState
     {
     }
 }

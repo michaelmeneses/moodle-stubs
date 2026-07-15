@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI;
-
-class SqlIntegration extends \Google\Model
-{
-    /**
-     * Not Set
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The SQL integration is being created.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * The SQL integration is being deleted.
-     */
-    public const STATE_DELETING = 'DELETING';
-    /**
-     * The SQL integration is ready.
-     */
-    public const STATE_READY = 'READY';
-    /**
-     * Output only. The time the SQL integration was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The unique name of the SQL integration in the form of `projects/{project_id
-     * }/locations/global/domains/{domain_name}/sqlIntegrations/{sql_integration}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The full resource name of an integrated SQL instance
-     *
-     * @var string
-     */
-    public $sqlInstance;
-    /**
-     * Output only. The current state of the SQL integration.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. The time the SQL integration was updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The time the SQL integration was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI {
+    class SqlIntegration extends \Google\Model
     {
+        /**
+         * Not Set
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The SQL integration is being created.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * The SQL integration is being deleted.
+         */
+        public const STATE_DELETING = 'DELETING';
+        /**
+         * The SQL integration is ready.
+         */
+        public const STATE_READY = 'READY';
+        /**
+         * Output only. The time the SQL integration was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The unique name of the SQL integration in the form of `projects/{project_id
+         * }/locations/global/domains/{domain_name}/sqlIntegrations/{sql_integration}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The full resource name of an integrated SQL instance
+         *
+         * @var string
+         */
+        public $sqlInstance;
+        /**
+         * Output only. The current state of the SQL integration.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. The time the SQL integration was updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The time the SQL integration was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The unique name of the SQL integration in the form of `projects/{project_id
+         * }/locations/global/domains/{domain_name}/sqlIntegrations/{sql_integration}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The full resource name of an integrated SQL instance
+         *
+         * @param string $sqlInstance
+         */
+        public function setSqlInstance($sqlInstance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSqlInstance()
+        {
+        }
+        /**
+         * Output only. The current state of the SQL integration.
+         *
+         * Accepted values: STATE_UNSPECIFIED, CREATING, DELETING, READY
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. The time the SQL integration was updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\SqlIntegration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The unique name of the SQL integration in the form of `projects/{project_id
-     * }/locations/global/domains/{domain_name}/sqlIntegrations/{sql_integration}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The full resource name of an integrated SQL instance
-     *
-     * @param string $sqlInstance
-     */
-    public function setSqlInstance($sqlInstance)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSqlInstance()
-    {
-    }
-    /**
-     * Output only. The current state of the SQL integration.
-     *
-     * Accepted values: STATE_UNSPECIFIED, CREATING, DELETING, READY
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. The time the SQL integration was updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_ManagedServiceforMicrosoftActiveDirectoryConsumerAPI_SqlIntegration extends \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\SqlIntegration
     {
     }
 }

@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class CropHintsParams extends \Google\Collection
-{
-    protected $collection_key = 'aspectRatios';
-    /**
-     * Aspect ratios in floats, representing the ratio of the width to the height
-     * of the image. For example, if the desired aspect ratio is 4/3, the
-     * corresponding float value should be 1.33333. If not specified, the best
-     * possible crop is returned. The number of provided aspect ratios is limited
-     * to a maximum of 16; any aspect ratios provided after the 16th are ignored.
-     *
-     * @var float[]
-     */
-    public $aspectRatios;
-    /**
-     * Aspect ratios in floats, representing the ratio of the width to the height
-     * of the image. For example, if the desired aspect ratio is 4/3, the
-     * corresponding float value should be 1.33333. If not specified, the best
-     * possible crop is returned. The number of provided aspect ratios is limited
-     * to a maximum of 16; any aspect ratios provided after the 16th are ignored.
-     *
-     * @param float[] $aspectRatios
-     */
-    public function setAspectRatios($aspectRatios)
+namespace Google\Service\Vision {
+    class CropHintsParams extends \Google\Collection
     {
+        protected $collection_key = 'aspectRatios';
+        /**
+         * Aspect ratios in floats, representing the ratio of the width to the height
+         * of the image. For example, if the desired aspect ratio is 4/3, the
+         * corresponding float value should be 1.33333. If not specified, the best
+         * possible crop is returned. The number of provided aspect ratios is limited
+         * to a maximum of 16; any aspect ratios provided after the 16th are ignored.
+         *
+         * @var float[]
+         */
+        public $aspectRatios;
+        /**
+         * Aspect ratios in floats, representing the ratio of the width to the height
+         * of the image. For example, if the desired aspect ratio is 4/3, the
+         * corresponding float value should be 1.33333. If not specified, the best
+         * possible crop is returned. The number of provided aspect ratios is limited
+         * to a maximum of 16; any aspect ratios provided after the 16th are ignored.
+         *
+         * @param float[] $aspectRatios
+         */
+        public function setAspectRatios($aspectRatios)
+        {
+        }
+        /**
+         * @return float[]
+         */
+        public function getAspectRatios()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float[]
+     * Runtime class alias of \Google\Service\Vision\CropHintsParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAspectRatios()
+    class Google_Service_Vision_CropHintsParams extends \Google\Service\Vision\CropHintsParams
     {
     }
 }

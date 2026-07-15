@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeatureViewOptimizedConfig extends \Google\Model
-{
-    protected $automaticResourcesType = GoogleCloudAiplatformV1AutomaticResources::class;
-    protected $automaticResourcesDataType = '';
-    /**
-     * Optional. A description of resources that the FeatureView uses, which to
-     * large degree are decided by Vertex AI, and optionally allows only a modest
-     * additional configuration. If min_replica_count is not set, the default
-     * value is 2. If max_replica_count is not set, the default value is 6. The
-     * max allowed replica count is 1000.
-     *
-     * @param GoogleCloudAiplatformV1AutomaticResources $automaticResources
-     */
-    public function setAutomaticResources(GoogleCloudAiplatformV1AutomaticResources $automaticResources)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeatureViewOptimizedConfig extends \Google\Model
     {
+        protected $automaticResourcesType = GoogleCloudAiplatformV1AutomaticResources::class;
+        protected $automaticResourcesDataType = '';
+        /**
+         * Optional. A description of resources that the FeatureView uses, which to
+         * large degree are decided by Vertex AI, and optionally allows only a modest
+         * additional configuration. If min_replica_count is not set, the default
+         * value is 2. If max_replica_count is not set, the default value is 6. The
+         * max allowed replica count is 1000.
+         *
+         * @param GoogleCloudAiplatformV1AutomaticResources $automaticResources
+         */
+        public function setAutomaticResources(GoogleCloudAiplatformV1AutomaticResources $automaticResources)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1AutomaticResources
+         */
+        public function getAutomaticResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1AutomaticResources
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewOptimizedConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutomaticResources()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeatureViewOptimizedConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewOptimizedConfig
     {
     }
 }

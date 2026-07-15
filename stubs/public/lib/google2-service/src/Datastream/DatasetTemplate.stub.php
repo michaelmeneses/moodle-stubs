@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class DatasetTemplate extends \Google\Model
-{
-    /**
-     * If supplied, every created dataset will have its name prefixed by the
-     * provided value. The prefix and name will be separated by an underscore.
-     * i.e. _.
-     *
-     * @var string
-     */
-    public $datasetIdPrefix;
-    /**
-     * Describes the Cloud KMS encryption key that will be used to protect
-     * destination BigQuery table. The BigQuery Service Account associated with
-     * your project requires access to this encryption key. i.e. projects/{project
-     * }/locations/{location}/keyRings/{key_ring}/cryptoKeys/{cryptoKey}. See
-     * https://cloud.google.com/bigquery/docs/customer-managed-encryption for more
-     * information.
-     *
-     * @var string
-     */
-    public $kmsKeyName;
-    /**
-     * Required. The geographic location where the dataset should reside. See
-     * https://cloud.google.com/bigquery/docs/locations for supported locations.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * If supplied, every created dataset will have its name prefixed by the
-     * provided value. The prefix and name will be separated by an underscore.
-     * i.e. _.
-     *
-     * @param string $datasetIdPrefix
-     */
-    public function setDatasetIdPrefix($datasetIdPrefix)
+namespace Google\Service\Datastream {
+    class DatasetTemplate extends \Google\Model
     {
+        /**
+         * If supplied, every created dataset will have its name prefixed by the
+         * provided value. The prefix and name will be separated by an underscore.
+         * i.e. _.
+         *
+         * @var string
+         */
+        public $datasetIdPrefix;
+        /**
+         * Describes the Cloud KMS encryption key that will be used to protect
+         * destination BigQuery table. The BigQuery Service Account associated with
+         * your project requires access to this encryption key. i.e. projects/{project
+         * }/locations/{location}/keyRings/{key_ring}/cryptoKeys/{cryptoKey}. See
+         * https://cloud.google.com/bigquery/docs/customer-managed-encryption for more
+         * information.
+         *
+         * @var string
+         */
+        public $kmsKeyName;
+        /**
+         * Required. The geographic location where the dataset should reside. See
+         * https://cloud.google.com/bigquery/docs/locations for supported locations.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * If supplied, every created dataset will have its name prefixed by the
+         * provided value. The prefix and name will be separated by an underscore.
+         * i.e. _.
+         *
+         * @param string $datasetIdPrefix
+         */
+        public function setDatasetIdPrefix($datasetIdPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatasetIdPrefix()
+        {
+        }
+        /**
+         * Describes the Cloud KMS encryption key that will be used to protect
+         * destination BigQuery table. The BigQuery Service Account associated with
+         * your project requires access to this encryption key. i.e. projects/{project
+         * }/locations/{location}/keyRings/{key_ring}/cryptoKeys/{cryptoKey}. See
+         * https://cloud.google.com/bigquery/docs/customer-managed-encryption for more
+         * information.
+         *
+         * @param string $kmsKeyName
+         */
+        public function setKmsKeyName($kmsKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyName()
+        {
+        }
+        /**
+         * Required. The geographic location where the dataset should reside. See
+         * https://cloud.google.com/bigquery/docs/locations for supported locations.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\DatasetTemplate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatasetIdPrefix()
-    {
-    }
-    /**
-     * Describes the Cloud KMS encryption key that will be used to protect
-     * destination BigQuery table. The BigQuery Service Account associated with
-     * your project requires access to this encryption key. i.e. projects/{project
-     * }/locations/{location}/keyRings/{key_ring}/cryptoKeys/{cryptoKey}. See
-     * https://cloud.google.com/bigquery/docs/customer-managed-encryption for more
-     * information.
-     *
-     * @param string $kmsKeyName
-     */
-    public function setKmsKeyName($kmsKeyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKmsKeyName()
-    {
-    }
-    /**
-     * Required. The geographic location where the dataset should reside. See
-     * https://cloud.google.com/bigquery/docs/locations for supported locations.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
+    class Google_Service_Datastream_DatasetTemplate extends \Google\Service\Datastream\DatasetTemplate
     {
     }
 }

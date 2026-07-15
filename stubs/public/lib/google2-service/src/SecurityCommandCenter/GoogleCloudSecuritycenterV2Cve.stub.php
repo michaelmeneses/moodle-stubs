@@ -21,258 +21,267 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2Cve extends \Google\Collection
-{
-    /**
-     * Invalid or empty value.
-     */
-    public const EXPLOITATION_ACTIVITY_EXPLOITATION_ACTIVITY_UNSPECIFIED = 'EXPLOITATION_ACTIVITY_UNSPECIFIED';
-    /**
-     * Exploitation has been reported or confirmed to widely occur.
-     */
-    public const EXPLOITATION_ACTIVITY_WIDE = 'WIDE';
-    /**
-     * Limited reported or confirmed exploitation activities.
-     */
-    public const EXPLOITATION_ACTIVITY_CONFIRMED = 'CONFIRMED';
-    /**
-     * Exploit is publicly available.
-     */
-    public const EXPLOITATION_ACTIVITY_AVAILABLE = 'AVAILABLE';
-    /**
-     * No known exploitation activity, but has a high potential for exploitation.
-     */
-    public const EXPLOITATION_ACTIVITY_ANTICIPATED = 'ANTICIPATED';
-    /**
-     * No known exploitation activity.
-     */
-    public const EXPLOITATION_ACTIVITY_NO_KNOWN = 'NO_KNOWN';
-    /**
-     * Invalid or empty value.
-     */
-    public const IMPACT_RISK_RATING_UNSPECIFIED = 'RISK_RATING_UNSPECIFIED';
-    /**
-     * Exploitation would have little to no security impact.
-     */
-    public const IMPACT_LOW = 'LOW';
-    /**
-     * Exploitation would enable attackers to perform activities, or could allow
-     * attackers to have a direct impact, but would require additional steps.
-     */
-    public const IMPACT_MEDIUM = 'MEDIUM';
-    /**
-     * Exploitation would enable attackers to have a notable direct impact without
-     * needing to overcome any major mitigating factors.
-     */
-    public const IMPACT_HIGH = 'HIGH';
-    /**
-     * Exploitation would fundamentally undermine the security of affected
-     * systems, enable actors to perform significant attacks with minimal effort,
-     * with little to no mitigating factors to overcome.
-     */
-    public const IMPACT_CRITICAL = 'CRITICAL';
-    protected $collection_key = 'references';
-    protected $cvssv3Type = GoogleCloudSecuritycenterV2Cvssv3::class;
-    protected $cvssv3DataType = '';
-    /**
-     * Date the first publicly available exploit or PoC was released.
-     *
-     * @var string
-     */
-    public $exploitReleaseDate;
-    /**
-     * The exploitation activity of the vulnerability in the wild.
-     *
-     * @var string
-     */
-    public $exploitationActivity;
-    /**
-     * Date of the earliest known exploitation.
-     *
-     * @var string
-     */
-    public $firstExploitationDate;
-    /**
-     * The unique identifier for the vulnerability. e.g. CVE-2021-34527
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The potential impact of the vulnerability if it was to be exploited.
-     *
-     * @var string
-     */
-    public $impact;
-    /**
-     * Whether or not the vulnerability has been observed in the wild.
-     *
-     * @var bool
-     */
-    public $observedInTheWild;
-    protected $referencesType = GoogleCloudSecuritycenterV2Reference::class;
-    protected $referencesDataType = 'array';
-    /**
-     * Whether upstream fix is available for the CVE.
-     *
-     * @var bool
-     */
-    public $upstreamFixAvailable;
-    /**
-     * Whether or not the vulnerability was zero day when the finding was
-     * published.
-     *
-     * @var bool
-     */
-    public $zeroDay;
-    /**
-     * Describe Common Vulnerability Scoring System specified at
-     * https://www.first.org/cvss/v3.1/specification-document
-     *
-     * @param GoogleCloudSecuritycenterV2Cvssv3 $cvssv3
-     */
-    public function setCvssv3(GoogleCloudSecuritycenterV2Cvssv3 $cvssv3)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2Cve extends \Google\Collection
     {
+        /**
+         * Invalid or empty value.
+         */
+        public const EXPLOITATION_ACTIVITY_EXPLOITATION_ACTIVITY_UNSPECIFIED = 'EXPLOITATION_ACTIVITY_UNSPECIFIED';
+        /**
+         * Exploitation has been reported or confirmed to widely occur.
+         */
+        public const EXPLOITATION_ACTIVITY_WIDE = 'WIDE';
+        /**
+         * Limited reported or confirmed exploitation activities.
+         */
+        public const EXPLOITATION_ACTIVITY_CONFIRMED = 'CONFIRMED';
+        /**
+         * Exploit is publicly available.
+         */
+        public const EXPLOITATION_ACTIVITY_AVAILABLE = 'AVAILABLE';
+        /**
+         * No known exploitation activity, but has a high potential for exploitation.
+         */
+        public const EXPLOITATION_ACTIVITY_ANTICIPATED = 'ANTICIPATED';
+        /**
+         * No known exploitation activity.
+         */
+        public const EXPLOITATION_ACTIVITY_NO_KNOWN = 'NO_KNOWN';
+        /**
+         * Invalid or empty value.
+         */
+        public const IMPACT_RISK_RATING_UNSPECIFIED = 'RISK_RATING_UNSPECIFIED';
+        /**
+         * Exploitation would have little to no security impact.
+         */
+        public const IMPACT_LOW = 'LOW';
+        /**
+         * Exploitation would enable attackers to perform activities, or could allow
+         * attackers to have a direct impact, but would require additional steps.
+         */
+        public const IMPACT_MEDIUM = 'MEDIUM';
+        /**
+         * Exploitation would enable attackers to have a notable direct impact without
+         * needing to overcome any major mitigating factors.
+         */
+        public const IMPACT_HIGH = 'HIGH';
+        /**
+         * Exploitation would fundamentally undermine the security of affected
+         * systems, enable actors to perform significant attacks with minimal effort,
+         * with little to no mitigating factors to overcome.
+         */
+        public const IMPACT_CRITICAL = 'CRITICAL';
+        protected $collection_key = 'references';
+        protected $cvssv3Type = GoogleCloudSecuritycenterV2Cvssv3::class;
+        protected $cvssv3DataType = '';
+        /**
+         * Date the first publicly available exploit or PoC was released.
+         *
+         * @var string
+         */
+        public $exploitReleaseDate;
+        /**
+         * The exploitation activity of the vulnerability in the wild.
+         *
+         * @var string
+         */
+        public $exploitationActivity;
+        /**
+         * Date of the earliest known exploitation.
+         *
+         * @var string
+         */
+        public $firstExploitationDate;
+        /**
+         * The unique identifier for the vulnerability. e.g. CVE-2021-34527
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The potential impact of the vulnerability if it was to be exploited.
+         *
+         * @var string
+         */
+        public $impact;
+        /**
+         * Whether or not the vulnerability has been observed in the wild.
+         *
+         * @var bool
+         */
+        public $observedInTheWild;
+        protected $referencesType = GoogleCloudSecuritycenterV2Reference::class;
+        protected $referencesDataType = 'array';
+        /**
+         * Whether upstream fix is available for the CVE.
+         *
+         * @var bool
+         */
+        public $upstreamFixAvailable;
+        /**
+         * Whether or not the vulnerability was zero day when the finding was
+         * published.
+         *
+         * @var bool
+         */
+        public $zeroDay;
+        /**
+         * Describe Common Vulnerability Scoring System specified at
+         * https://www.first.org/cvss/v3.1/specification-document
+         *
+         * @param GoogleCloudSecuritycenterV2Cvssv3 $cvssv3
+         */
+        public function setCvssv3(GoogleCloudSecuritycenterV2Cvssv3 $cvssv3)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2Cvssv3
+         */
+        public function getCvssv3()
+        {
+        }
+        /**
+         * Date the first publicly available exploit or PoC was released.
+         *
+         * @param string $exploitReleaseDate
+         */
+        public function setExploitReleaseDate($exploitReleaseDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExploitReleaseDate()
+        {
+        }
+        /**
+         * The exploitation activity of the vulnerability in the wild.
+         *
+         * Accepted values: EXPLOITATION_ACTIVITY_UNSPECIFIED, WIDE, CONFIRMED,
+         * AVAILABLE, ANTICIPATED, NO_KNOWN
+         *
+         * @param self::EXPLOITATION_ACTIVITY_* $exploitationActivity
+         */
+        public function setExploitationActivity($exploitationActivity)
+        {
+        }
+        /**
+         * @return self::EXPLOITATION_ACTIVITY_*
+         */
+        public function getExploitationActivity()
+        {
+        }
+        /**
+         * Date of the earliest known exploitation.
+         *
+         * @param string $firstExploitationDate
+         */
+        public function setFirstExploitationDate($firstExploitationDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirstExploitationDate()
+        {
+        }
+        /**
+         * The unique identifier for the vulnerability. e.g. CVE-2021-34527
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The potential impact of the vulnerability if it was to be exploited.
+         *
+         * Accepted values: RISK_RATING_UNSPECIFIED, LOW, MEDIUM, HIGH, CRITICAL
+         *
+         * @param self::IMPACT_* $impact
+         */
+        public function setImpact($impact)
+        {
+        }
+        /**
+         * @return self::IMPACT_*
+         */
+        public function getImpact()
+        {
+        }
+        /**
+         * Whether or not the vulnerability has been observed in the wild.
+         *
+         * @param bool $observedInTheWild
+         */
+        public function setObservedInTheWild($observedInTheWild)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getObservedInTheWild()
+        {
+        }
+        /**
+         * Additional information about the CVE. e.g. https://cve.mitre.org/cgi-
+         * bin/cvename.cgi?name=CVE-2021-34527
+         *
+         * @param GoogleCloudSecuritycenterV2Reference[] $references
+         */
+        public function setReferences($references)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2Reference[]
+         */
+        public function getReferences()
+        {
+        }
+        /**
+         * Whether upstream fix is available for the CVE.
+         *
+         * @param bool $upstreamFixAvailable
+         */
+        public function setUpstreamFixAvailable($upstreamFixAvailable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUpstreamFixAvailable()
+        {
+        }
+        /**
+         * Whether or not the vulnerability was zero day when the finding was
+         * published.
+         *
+         * @param bool $zeroDay
+         */
+        public function setZeroDay($zeroDay)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getZeroDay()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV2Cvssv3
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Cve registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCvssv3()
-    {
-    }
-    /**
-     * Date the first publicly available exploit or PoC was released.
-     *
-     * @param string $exploitReleaseDate
-     */
-    public function setExploitReleaseDate($exploitReleaseDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExploitReleaseDate()
-    {
-    }
-    /**
-     * The exploitation activity of the vulnerability in the wild.
-     *
-     * Accepted values: EXPLOITATION_ACTIVITY_UNSPECIFIED, WIDE, CONFIRMED,
-     * AVAILABLE, ANTICIPATED, NO_KNOWN
-     *
-     * @param self::EXPLOITATION_ACTIVITY_* $exploitationActivity
-     */
-    public function setExploitationActivity($exploitationActivity)
-    {
-    }
-    /**
-     * @return self::EXPLOITATION_ACTIVITY_*
-     */
-    public function getExploitationActivity()
-    {
-    }
-    /**
-     * Date of the earliest known exploitation.
-     *
-     * @param string $firstExploitationDate
-     */
-    public function setFirstExploitationDate($firstExploitationDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFirstExploitationDate()
-    {
-    }
-    /**
-     * The unique identifier for the vulnerability. e.g. CVE-2021-34527
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The potential impact of the vulnerability if it was to be exploited.
-     *
-     * Accepted values: RISK_RATING_UNSPECIFIED, LOW, MEDIUM, HIGH, CRITICAL
-     *
-     * @param self::IMPACT_* $impact
-     */
-    public function setImpact($impact)
-    {
-    }
-    /**
-     * @return self::IMPACT_*
-     */
-    public function getImpact()
-    {
-    }
-    /**
-     * Whether or not the vulnerability has been observed in the wild.
-     *
-     * @param bool $observedInTheWild
-     */
-    public function setObservedInTheWild($observedInTheWild)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getObservedInTheWild()
-    {
-    }
-    /**
-     * Additional information about the CVE. e.g. https://cve.mitre.org/cgi-
-     * bin/cvename.cgi?name=CVE-2021-34527
-     *
-     * @param GoogleCloudSecuritycenterV2Reference[] $references
-     */
-    public function setReferences($references)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2Reference[]
-     */
-    public function getReferences()
-    {
-    }
-    /**
-     * Whether upstream fix is available for the CVE.
-     *
-     * @param bool $upstreamFixAvailable
-     */
-    public function setUpstreamFixAvailable($upstreamFixAvailable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUpstreamFixAvailable()
-    {
-    }
-    /**
-     * Whether or not the vulnerability was zero day when the finding was
-     * published.
-     *
-     * @param bool $zeroDay
-     */
-    public function setZeroDay($zeroDay)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getZeroDay()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2Cve extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Cve
     {
     }
 }

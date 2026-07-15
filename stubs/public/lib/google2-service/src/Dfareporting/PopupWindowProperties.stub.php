@@ -21,192 +21,201 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class PopupWindowProperties extends \Google\Model
-{
-    /**
-     * window positioning at center.
-     */
-    public const POSITION_TYPE_CENTER = 'CENTER';
-    /**
-     * window positioning by upper left corner coordinates.
-     */
-    public const POSITION_TYPE_COORDINATES = 'COORDINATES';
-    protected $dimensionType = Size::class;
-    protected $dimensionDataType = '';
-    protected $offsetType = OffsetPosition::class;
-    protected $offsetDataType = '';
-    /**
-     * Popup window position either centered or at specific coordinate.
-     *
-     * @var string
-     */
-    public $positionType;
-    /**
-     * Whether to display the browser address bar.
-     *
-     * @var bool
-     */
-    public $showAddressBar;
-    /**
-     * Whether to display the browser menu bar.
-     *
-     * @var bool
-     */
-    public $showMenuBar;
-    /**
-     * Whether to display the browser scroll bar.
-     *
-     * @var bool
-     */
-    public $showScrollBar;
-    /**
-     * Whether to display the browser status bar.
-     *
-     * @var bool
-     */
-    public $showStatusBar;
-    /**
-     * Whether to display the browser tool bar.
-     *
-     * @var bool
-     */
-    public $showToolBar;
-    /**
-     * Title of popup window.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Popup dimension for a creative. This is a read-only field. Applicable to
-     * the following creative types: all RICH_MEDIA and all VPAID
-     *
-     * @param Size $dimension
-     */
-    public function setDimension(Size $dimension)
+namespace Google\Service\Dfareporting {
+    class PopupWindowProperties extends \Google\Model
     {
+        /**
+         * window positioning at center.
+         */
+        public const POSITION_TYPE_CENTER = 'CENTER';
+        /**
+         * window positioning by upper left corner coordinates.
+         */
+        public const POSITION_TYPE_COORDINATES = 'COORDINATES';
+        protected $dimensionType = Size::class;
+        protected $dimensionDataType = '';
+        protected $offsetType = OffsetPosition::class;
+        protected $offsetDataType = '';
+        /**
+         * Popup window position either centered or at specific coordinate.
+         *
+         * @var string
+         */
+        public $positionType;
+        /**
+         * Whether to display the browser address bar.
+         *
+         * @var bool
+         */
+        public $showAddressBar;
+        /**
+         * Whether to display the browser menu bar.
+         *
+         * @var bool
+         */
+        public $showMenuBar;
+        /**
+         * Whether to display the browser scroll bar.
+         *
+         * @var bool
+         */
+        public $showScrollBar;
+        /**
+         * Whether to display the browser status bar.
+         *
+         * @var bool
+         */
+        public $showStatusBar;
+        /**
+         * Whether to display the browser tool bar.
+         *
+         * @var bool
+         */
+        public $showToolBar;
+        /**
+         * Title of popup window.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Popup dimension for a creative. This is a read-only field. Applicable to
+         * the following creative types: all RICH_MEDIA and all VPAID
+         *
+         * @param Size $dimension
+         */
+        public function setDimension(Size $dimension)
+        {
+        }
+        /**
+         * @return Size
+         */
+        public function getDimension()
+        {
+        }
+        /**
+         * Upper-left corner coordinates of the popup window. Applicable if
+         * positionType is COORDINATES.
+         *
+         * @param OffsetPosition $offset
+         */
+        public function setOffset(OffsetPosition $offset)
+        {
+        }
+        /**
+         * @return OffsetPosition
+         */
+        public function getOffset()
+        {
+        }
+        /**
+         * Popup window position either centered or at specific coordinate.
+         *
+         * Accepted values: CENTER, COORDINATES
+         *
+         * @param self::POSITION_TYPE_* $positionType
+         */
+        public function setPositionType($positionType)
+        {
+        }
+        /**
+         * @return self::POSITION_TYPE_*
+         */
+        public function getPositionType()
+        {
+        }
+        /**
+         * Whether to display the browser address bar.
+         *
+         * @param bool $showAddressBar
+         */
+        public function setShowAddressBar($showAddressBar)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getShowAddressBar()
+        {
+        }
+        /**
+         * Whether to display the browser menu bar.
+         *
+         * @param bool $showMenuBar
+         */
+        public function setShowMenuBar($showMenuBar)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getShowMenuBar()
+        {
+        }
+        /**
+         * Whether to display the browser scroll bar.
+         *
+         * @param bool $showScrollBar
+         */
+        public function setShowScrollBar($showScrollBar)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getShowScrollBar()
+        {
+        }
+        /**
+         * Whether to display the browser status bar.
+         *
+         * @param bool $showStatusBar
+         */
+        public function setShowStatusBar($showStatusBar)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getShowStatusBar()
+        {
+        }
+        /**
+         * Whether to display the browser tool bar.
+         *
+         * @param bool $showToolBar
+         */
+        public function setShowToolBar($showToolBar)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getShowToolBar()
+        {
+        }
+        /**
+         * Title of popup window.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Size
+     * Runtime class alias of \Google\Service\Dfareporting\PopupWindowProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimension()
-    {
-    }
-    /**
-     * Upper-left corner coordinates of the popup window. Applicable if
-     * positionType is COORDINATES.
-     *
-     * @param OffsetPosition $offset
-     */
-    public function setOffset(OffsetPosition $offset)
-    {
-    }
-    /**
-     * @return OffsetPosition
-     */
-    public function getOffset()
-    {
-    }
-    /**
-     * Popup window position either centered or at specific coordinate.
-     *
-     * Accepted values: CENTER, COORDINATES
-     *
-     * @param self::POSITION_TYPE_* $positionType
-     */
-    public function setPositionType($positionType)
-    {
-    }
-    /**
-     * @return self::POSITION_TYPE_*
-     */
-    public function getPositionType()
-    {
-    }
-    /**
-     * Whether to display the browser address bar.
-     *
-     * @param bool $showAddressBar
-     */
-    public function setShowAddressBar($showAddressBar)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getShowAddressBar()
-    {
-    }
-    /**
-     * Whether to display the browser menu bar.
-     *
-     * @param bool $showMenuBar
-     */
-    public function setShowMenuBar($showMenuBar)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getShowMenuBar()
-    {
-    }
-    /**
-     * Whether to display the browser scroll bar.
-     *
-     * @param bool $showScrollBar
-     */
-    public function setShowScrollBar($showScrollBar)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getShowScrollBar()
-    {
-    }
-    /**
-     * Whether to display the browser status bar.
-     *
-     * @param bool $showStatusBar
-     */
-    public function setShowStatusBar($showStatusBar)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getShowStatusBar()
-    {
-    }
-    /**
-     * Whether to display the browser tool bar.
-     *
-     * @param bool $showToolBar
-     */
-    public function setShowToolBar($showToolBar)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getShowToolBar()
-    {
-    }
-    /**
-     * Title of popup window.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Dfareporting_PopupWindowProperties extends \Google\Service\Dfareporting\PopupWindowProperties
     {
     }
 }

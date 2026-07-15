@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class OneTimeProductListing extends \Google\Model
-{
-    /**
-     * Required. The description of this product in the language of this listing.
-     * The maximum length is 200 characters.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. The language of this listing, as defined by BCP-47, e.g., "en-
-     * US".
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Required. The title of this product in the language of this listing. The
-     * maximum length is 55 characters.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Required. The description of this product in the language of this listing.
-     * The maximum length is 200 characters.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\AndroidPublisher {
+    class OneTimeProductListing extends \Google\Model
     {
+        /**
+         * Required. The description of this product in the language of this listing.
+         * The maximum length is 200 characters.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. The language of this listing, as defined by BCP-47, e.g., "en-
+         * US".
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Required. The title of this product in the language of this listing. The
+         * maximum length is 55 characters.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Required. The description of this product in the language of this listing.
+         * The maximum length is 200 characters.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. The language of this listing, as defined by BCP-47, e.g., "en-
+         * US".
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * Required. The title of this product in the language of this listing. The
+         * maximum length is 55 characters.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\OneTimeProductListing registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. The language of this listing, as defined by BCP-47, e.g., "en-
-     * US".
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * Required. The title of this product in the language of this listing. The
-     * maximum length is 55 characters.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_AndroidPublisher_OneTimeProductListing extends \Google\Service\AndroidPublisher\OneTimeProductListing
     {
     }
 }

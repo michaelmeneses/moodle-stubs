@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3ProcessorVersionGenAiModelInfo extends \Google\Model
-{
-    protected $customGenAiModelInfoType = GoogleCloudDocumentaiUiv1beta3ProcessorVersionGenAiModelInfoCustomGenAiModelInfo::class;
-    protected $customGenAiModelInfoDataType = '';
-    protected $foundationGenAiModelInfoType = GoogleCloudDocumentaiUiv1beta3ProcessorVersionGenAiModelInfoFoundationGenAiModelInfo::class;
-    protected $foundationGenAiModelInfoDataType = '';
-    /**
-     * Information for a custom Generative AI model created by the user.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3ProcessorVersionGenAiModelInfoCustomGenAiModelInfo $customGenAiModelInfo
-     */
-    public function setCustomGenAiModelInfo(GoogleCloudDocumentaiUiv1beta3ProcessorVersionGenAiModelInfoCustomGenAiModelInfo $customGenAiModelInfo)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3ProcessorVersionGenAiModelInfo extends \Google\Model
     {
+        protected $customGenAiModelInfoType = GoogleCloudDocumentaiUiv1beta3ProcessorVersionGenAiModelInfoCustomGenAiModelInfo::class;
+        protected $customGenAiModelInfoDataType = '';
+        protected $foundationGenAiModelInfoType = GoogleCloudDocumentaiUiv1beta3ProcessorVersionGenAiModelInfoFoundationGenAiModelInfo::class;
+        protected $foundationGenAiModelInfoDataType = '';
+        /**
+         * Information for a custom Generative AI model created by the user.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3ProcessorVersionGenAiModelInfoCustomGenAiModelInfo $customGenAiModelInfo
+         */
+        public function setCustomGenAiModelInfo(GoogleCloudDocumentaiUiv1beta3ProcessorVersionGenAiModelInfoCustomGenAiModelInfo $customGenAiModelInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3ProcessorVersionGenAiModelInfoCustomGenAiModelInfo
+         */
+        public function getCustomGenAiModelInfo()
+        {
+        }
+        /**
+         * Information for a pretrained Google-managed foundation model.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3ProcessorVersionGenAiModelInfoFoundationGenAiModelInfo $foundationGenAiModelInfo
+         */
+        public function setFoundationGenAiModelInfo(GoogleCloudDocumentaiUiv1beta3ProcessorVersionGenAiModelInfoFoundationGenAiModelInfo $foundationGenAiModelInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3ProcessorVersionGenAiModelInfoFoundationGenAiModelInfo
+         */
+        public function getFoundationGenAiModelInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiUiv1beta3ProcessorVersionGenAiModelInfoCustomGenAiModelInfo
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3ProcessorVersionGenAiModelInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomGenAiModelInfo()
-    {
-    }
-    /**
-     * Information for a pretrained Google-managed foundation model.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3ProcessorVersionGenAiModelInfoFoundationGenAiModelInfo $foundationGenAiModelInfo
-     */
-    public function setFoundationGenAiModelInfo(GoogleCloudDocumentaiUiv1beta3ProcessorVersionGenAiModelInfoFoundationGenAiModelInfo $foundationGenAiModelInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiUiv1beta3ProcessorVersionGenAiModelInfoFoundationGenAiModelInfo
-     */
-    public function getFoundationGenAiModelInfo()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3ProcessorVersionGenAiModelInfo extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3ProcessorVersionGenAiModelInfo
     {
     }
 }

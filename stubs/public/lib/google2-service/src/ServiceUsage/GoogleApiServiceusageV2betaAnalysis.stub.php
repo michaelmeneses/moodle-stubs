@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class GoogleApiServiceusageV2betaAnalysis extends \Google\Model
-{
-    /**
-     * Unspecified analysis type. Do not use.
-     */
-    public const ANALYSIS_TYPE_ANALYSIS_TYPE_UNSPECIFIED = 'ANALYSIS_TYPE_UNSPECIFIED';
-    /**
-     * The analysis of service dependencies.
-     */
-    public const ANALYSIS_TYPE_ANALYSIS_TYPE_DEPENDENCY = 'ANALYSIS_TYPE_DEPENDENCY';
-    /**
-     * The analysis of service resource usage.
-     */
-    public const ANALYSIS_TYPE_ANALYSIS_TYPE_RESOURCE_USAGE = 'ANALYSIS_TYPE_RESOURCE_USAGE';
-    protected $analysisResultType = GoogleApiServiceusageV2betaAnalysisResult::class;
-    protected $analysisResultDataType = '';
-    /**
-     * Output only. The type of analysis.
-     *
-     * @var string
-     */
-    public $analysisType;
-    /**
-     * Output only. The user friendly display name of the analysis type. E.g.
-     * service dependency analysis, service resource usage analysis, etc.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The names of the service that has analysis result of warnings or blockers.
-     * Example: `services/storage.googleapis.com`.
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * Output only. Analysis result of updating a policy.
-     *
-     * @param GoogleApiServiceusageV2betaAnalysisResult $analysisResult
-     */
-    public function setAnalysisResult(GoogleApiServiceusageV2betaAnalysisResult $analysisResult)
+namespace Google\Service\ServiceUsage {
+    class GoogleApiServiceusageV2betaAnalysis extends \Google\Model
     {
+        /**
+         * Unspecified analysis type. Do not use.
+         */
+        public const ANALYSIS_TYPE_ANALYSIS_TYPE_UNSPECIFIED = 'ANALYSIS_TYPE_UNSPECIFIED';
+        /**
+         * The analysis of service dependencies.
+         */
+        public const ANALYSIS_TYPE_ANALYSIS_TYPE_DEPENDENCY = 'ANALYSIS_TYPE_DEPENDENCY';
+        /**
+         * The analysis of service resource usage.
+         */
+        public const ANALYSIS_TYPE_ANALYSIS_TYPE_RESOURCE_USAGE = 'ANALYSIS_TYPE_RESOURCE_USAGE';
+        protected $analysisResultType = GoogleApiServiceusageV2betaAnalysisResult::class;
+        protected $analysisResultDataType = '';
+        /**
+         * Output only. The type of analysis.
+         *
+         * @var string
+         */
+        public $analysisType;
+        /**
+         * Output only. The user friendly display name of the analysis type. E.g.
+         * service dependency analysis, service resource usage analysis, etc.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The names of the service that has analysis result of warnings or blockers.
+         * Example: `services/storage.googleapis.com`.
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * Output only. Analysis result of updating a policy.
+         *
+         * @param GoogleApiServiceusageV2betaAnalysisResult $analysisResult
+         */
+        public function setAnalysisResult(GoogleApiServiceusageV2betaAnalysisResult $analysisResult)
+        {
+        }
+        /**
+         * @return GoogleApiServiceusageV2betaAnalysisResult
+         */
+        public function getAnalysisResult()
+        {
+        }
+        /**
+         * Output only. The type of analysis.
+         *
+         * Accepted values: ANALYSIS_TYPE_UNSPECIFIED, ANALYSIS_TYPE_DEPENDENCY,
+         * ANALYSIS_TYPE_RESOURCE_USAGE
+         *
+         * @param self::ANALYSIS_TYPE_* $analysisType
+         */
+        public function setAnalysisType($analysisType)
+        {
+        }
+        /**
+         * @return self::ANALYSIS_TYPE_*
+         */
+        public function getAnalysisType()
+        {
+        }
+        /**
+         * Output only. The user friendly display name of the analysis type. E.g.
+         * service dependency analysis, service resource usage analysis, etc.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The names of the service that has analysis result of warnings or blockers.
+         * Example: `services/storage.googleapis.com`.
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleApiServiceusageV2betaAnalysisResult
+     * Runtime class alias of \Google\Service\ServiceUsage\GoogleApiServiceusageV2betaAnalysis registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalysisResult()
-    {
-    }
-    /**
-     * Output only. The type of analysis.
-     *
-     * Accepted values: ANALYSIS_TYPE_UNSPECIFIED, ANALYSIS_TYPE_DEPENDENCY,
-     * ANALYSIS_TYPE_RESOURCE_USAGE
-     *
-     * @param self::ANALYSIS_TYPE_* $analysisType
-     */
-    public function setAnalysisType($analysisType)
-    {
-    }
-    /**
-     * @return self::ANALYSIS_TYPE_*
-     */
-    public function getAnalysisType()
-    {
-    }
-    /**
-     * Output only. The user friendly display name of the analysis type. E.g.
-     * service dependency analysis, service resource usage analysis, etc.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The names of the service that has analysis result of warnings or blockers.
-     * Example: `services/storage.googleapis.com`.
-     *
-     * @param string $service
-     */
-    public function setService($service)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getService()
+    class Google_Service_ServiceUsage_GoogleApiServiceusageV2betaAnalysis extends \Google\Service\ServiceUsage\GoogleApiServiceusageV2betaAnalysis
     {
     }
 }

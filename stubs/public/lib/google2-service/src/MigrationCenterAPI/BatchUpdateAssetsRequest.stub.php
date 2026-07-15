@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class BatchUpdateAssetsRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = UpdateAssetRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * Required. The request message specifying the resources to update. A maximum
-     * of 1000 assets can be modified in a batch.
-     *
-     * @param UpdateAssetRequest[] $requests
-     */
-    public function setRequests($requests)
+namespace Google\Service\MigrationCenterAPI {
+    class BatchUpdateAssetsRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = UpdateAssetRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * Required. The request message specifying the resources to update. A maximum
+         * of 1000 assets can be modified in a batch.
+         *
+         * @param UpdateAssetRequest[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return UpdateAssetRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UpdateAssetRequest[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\BatchUpdateAssetsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_MigrationCenterAPI_BatchUpdateAssetsRequest extends \Google\Service\MigrationCenterAPI\BatchUpdateAssetsRequest
     {
     }
 }

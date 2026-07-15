@@ -21,79 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise\Resource;
-
-/**
- * The "managedconfigurationsfordevice" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidenterpriseService = new Google\Service\AndroidEnterprise(...);
- *   $managedconfigurationsfordevice = $androidenterpriseService->managedconfigurationsfordevice;
- *  </code>
- */
-class Managedconfigurationsfordevice extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidEnterprise\Resource {
+    use Google\Service\AndroidEnterprise\ManagedConfiguration;
+    use Google\Service\AndroidEnterprise\ManagedConfigurationsForDeviceListResponse;
     /**
-     * Removes a per-device managed configuration for an app for the specified
-     * device. (managedconfigurationsfordevice.delete)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param string $userId The ID of the user.
-     * @param string $deviceId The Android ID of the device.
-     * @param string $managedConfigurationForDeviceId The ID of the managed
-     * configuration (a product ID), e.g. "app:com.google.android.gm".
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "managedconfigurationsfordevice" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidenterpriseService = new Google\Service\AndroidEnterprise(...);
+     *   $managedconfigurationsfordevice = $androidenterpriseService->managedconfigurationsfordevice;
+     *  </code>
      */
-    public function delete($enterpriseId, $userId, $deviceId, $managedConfigurationForDeviceId, $optParams = [])
+    class Managedconfigurationsfordevice extends \Google\Service\Resource
     {
+        /**
+         * Removes a per-device managed configuration for an app for the specified
+         * device. (managedconfigurationsfordevice.delete)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param string $userId The ID of the user.
+         * @param string $deviceId The Android ID of the device.
+         * @param string $managedConfigurationForDeviceId The ID of the managed
+         * configuration (a product ID), e.g. "app:com.google.android.gm".
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($enterpriseId, $userId, $deviceId, $managedConfigurationForDeviceId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves details of a per-device managed configuration.
+         * (managedconfigurationsfordevice.get)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param string $userId The ID of the user.
+         * @param string $deviceId The Android ID of the device.
+         * @param string $managedConfigurationForDeviceId The ID of the managed
+         * configuration (a product ID), e.g. "app:com.google.android.gm".
+         * @param array $optParams Optional parameters.
+         * @return ManagedConfiguration
+         * @throws \Google\Service\Exception
+         */
+        public function get($enterpriseId, $userId, $deviceId, $managedConfigurationForDeviceId, $optParams = [])
+        {
+        }
+        /**
+         * Lists all the per-device managed configurations for the specified device.
+         * Only the ID is set.
+         * (managedconfigurationsfordevice.listManagedconfigurationsfordevice)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param string $userId The ID of the user.
+         * @param string $deviceId The Android ID of the device.
+         * @param array $optParams Optional parameters.
+         * @return ManagedConfigurationsForDeviceListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listManagedconfigurationsfordevice($enterpriseId, $userId, $deviceId, $optParams = [])
+        {
+        }
+        /**
+         * Adds or updates a per-device managed configuration for an app for the
+         * specified device. (managedconfigurationsfordevice.update)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param string $userId The ID of the user.
+         * @param string $deviceId The Android ID of the device.
+         * @param string $managedConfigurationForDeviceId The ID of the managed
+         * configuration (a product ID), e.g. "app:com.google.android.gm".
+         * @param ManagedConfiguration $postBody
+         * @param array $optParams Optional parameters.
+         * @return ManagedConfiguration
+         * @throws \Google\Service\Exception
+         */
+        public function update($enterpriseId, $userId, $deviceId, $managedConfigurationForDeviceId, ManagedConfiguration $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves details of a per-device managed configuration.
-     * (managedconfigurationsfordevice.get)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param string $userId The ID of the user.
-     * @param string $deviceId The Android ID of the device.
-     * @param string $managedConfigurationForDeviceId The ID of the managed
-     * configuration (a product ID), e.g. "app:com.google.android.gm".
-     * @param array $optParams Optional parameters.
-     * @return ManagedConfiguration
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidEnterprise\Resource\Managedconfigurationsfordevice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($enterpriseId, $userId, $deviceId, $managedConfigurationForDeviceId, $optParams = [])
-    {
-    }
-    /**
-     * Lists all the per-device managed configurations for the specified device.
-     * Only the ID is set.
-     * (managedconfigurationsfordevice.listManagedconfigurationsfordevice)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param string $userId The ID of the user.
-     * @param string $deviceId The Android ID of the device.
-     * @param array $optParams Optional parameters.
-     * @return ManagedConfigurationsForDeviceListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listManagedconfigurationsfordevice($enterpriseId, $userId, $deviceId, $optParams = [])
-    {
-    }
-    /**
-     * Adds or updates a per-device managed configuration for an app for the
-     * specified device. (managedconfigurationsfordevice.update)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param string $userId The ID of the user.
-     * @param string $deviceId The Android ID of the device.
-     * @param string $managedConfigurationForDeviceId The ID of the managed
-     * configuration (a product ID), e.g. "app:com.google.android.gm".
-     * @param ManagedConfiguration $postBody
-     * @param array $optParams Optional parameters.
-     * @return ManagedConfiguration
-     * @throws \Google\Service\Exception
-     */
-    public function update($enterpriseId, $userId, $deviceId, $managedConfigurationForDeviceId, ManagedConfiguration $postBody, $optParams = [])
+    class Google_Service_AndroidEnterprise_Resource_Managedconfigurationsfordevice extends \Google\Service\AndroidEnterprise\Resource\Managedconfigurationsfordevice
     {
     }
 }

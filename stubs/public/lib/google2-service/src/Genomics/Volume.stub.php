@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Genomics;
-
-class Volume extends \Google\Model
-{
-    protected $existingDiskType = ExistingDisk::class;
-    protected $existingDiskDataType = '';
-    protected $nfsMountType = NFSMount::class;
-    protected $nfsMountDataType = '';
-    protected $persistentDiskType = PersistentDisk::class;
-    protected $persistentDiskDataType = '';
-    /**
-     * @var string
-     */
-    public $volume;
-    /**
-     * @param ExistingDisk
-     */
-    public function setExistingDisk(ExistingDisk $existingDisk)
+namespace Google\Service\Genomics {
+    class Volume extends \Google\Model
     {
+        protected $existingDiskType = ExistingDisk::class;
+        protected $existingDiskDataType = '';
+        protected $nfsMountType = NFSMount::class;
+        protected $nfsMountDataType = '';
+        protected $persistentDiskType = PersistentDisk::class;
+        protected $persistentDiskDataType = '';
+        /**
+         * @var string
+         */
+        public $volume;
+        /**
+         * @param ExistingDisk
+         */
+        public function setExistingDisk(ExistingDisk $existingDisk)
+        {
+        }
+        /**
+         * @return ExistingDisk
+         */
+        public function getExistingDisk()
+        {
+        }
+        /**
+         * @param NFSMount
+         */
+        public function setNfsMount(NFSMount $nfsMount)
+        {
+        }
+        /**
+         * @return NFSMount
+         */
+        public function getNfsMount()
+        {
+        }
+        /**
+         * @param PersistentDisk
+         */
+        public function setPersistentDisk(PersistentDisk $persistentDisk)
+        {
+        }
+        /**
+         * @return PersistentDisk
+         */
+        public function getPersistentDisk()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVolume($volume)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVolume()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExistingDisk
+     * Runtime class alias of \Google\Service\Genomics\Volume registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExistingDisk()
-    {
-    }
-    /**
-     * @param NFSMount
-     */
-    public function setNfsMount(NFSMount $nfsMount)
-    {
-    }
-    /**
-     * @return NFSMount
-     */
-    public function getNfsMount()
-    {
-    }
-    /**
-     * @param PersistentDisk
-     */
-    public function setPersistentDisk(PersistentDisk $persistentDisk)
-    {
-    }
-    /**
-     * @return PersistentDisk
-     */
-    public function getPersistentDisk()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVolume($volume)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVolume()
+    class Google_Service_Genomics_Volume extends \Google\Service\Genomics\Volume
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1TelemetryUsbPeripheralsEvent extends \Google\Collection
-{
-    protected $collection_key = 'usbPeripheralReport';
-    protected $usbPeripheralReportType = GoogleChromeManagementV1UsbPeripheralReport::class;
-    protected $usbPeripheralReportDataType = 'array';
-    /**
-     * List of usb devices that were either added or removed.
-     *
-     * @param GoogleChromeManagementV1UsbPeripheralReport[] $usbPeripheralReport
-     */
-    public function setUsbPeripheralReport($usbPeripheralReport)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1TelemetryUsbPeripheralsEvent extends \Google\Collection
     {
+        protected $collection_key = 'usbPeripheralReport';
+        protected $usbPeripheralReportType = GoogleChromeManagementV1UsbPeripheralReport::class;
+        protected $usbPeripheralReportDataType = 'array';
+        /**
+         * List of usb devices that were either added or removed.
+         *
+         * @param GoogleChromeManagementV1UsbPeripheralReport[] $usbPeripheralReport
+         */
+        public function setUsbPeripheralReport($usbPeripheralReport)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1UsbPeripheralReport[]
+         */
+        public function getUsbPeripheralReport()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromeManagementV1UsbPeripheralReport[]
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryUsbPeripheralsEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUsbPeripheralReport()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1TelemetryUsbPeripheralsEvent extends \Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryUsbPeripheralsEvent
     {
     }
 }

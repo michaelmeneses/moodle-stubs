@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BusinessProfilePerformance;
-
-class TimeSeries extends \Google\Collection
-{
-    protected $collection_key = 'datedValues';
-    protected $datedValuesType = DatedValue::class;
-    protected $datedValuesDataType = 'array';
-    /**
-     * List of datapoints in the timeseries, where each datapoint is a date-value
-     * pair.
-     *
-     * @param DatedValue[] $datedValues
-     */
-    public function setDatedValues($datedValues)
+namespace Google\Service\BusinessProfilePerformance {
+    class TimeSeries extends \Google\Collection
     {
+        protected $collection_key = 'datedValues';
+        protected $datedValuesType = DatedValue::class;
+        protected $datedValuesDataType = 'array';
+        /**
+         * List of datapoints in the timeseries, where each datapoint is a date-value
+         * pair.
+         *
+         * @param DatedValue[] $datedValues
+         */
+        public function setDatedValues($datedValues)
+        {
+        }
+        /**
+         * @return DatedValue[]
+         */
+        public function getDatedValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DatedValue[]
+     * Runtime class alias of \Google\Service\BusinessProfilePerformance\TimeSeries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatedValues()
+    class Google_Service_BusinessProfilePerformance_TimeSeries extends \Google\Service\BusinessProfilePerformance\TimeSeries
     {
     }
 }

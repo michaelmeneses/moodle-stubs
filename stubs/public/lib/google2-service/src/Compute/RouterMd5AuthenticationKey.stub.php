@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RouterMd5AuthenticationKey extends \Google\Model
-{
-    /**
-     * [Input only] Value of the key.
-     *
-     * For patch and update calls, it can be skipped to copy the value from the
-     * previous configuration. This is allowed if the key with the same name
-     * existed before the operation. Maximum length is 80 characters. Can only
-     * contain printable ASCII characters.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Name used to identify the key.
-     *
-     * Must be unique within a router. Must be referenced by exactly one bgpPeer.
-     * Must comply withRFC1035.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * [Input only] Value of the key.
-     *
-     * For patch and update calls, it can be skipped to copy the value from the
-     * previous configuration. This is allowed if the key with the same name
-     * existed before the operation. Maximum length is 80 characters. Can only
-     * contain printable ASCII characters.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\Compute {
+    class RouterMd5AuthenticationKey extends \Google\Model
     {
+        /**
+         * [Input only] Value of the key.
+         *
+         * For patch and update calls, it can be skipped to copy the value from the
+         * previous configuration. This is allowed if the key with the same name
+         * existed before the operation. Maximum length is 80 characters. Can only
+         * contain printable ASCII characters.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Name used to identify the key.
+         *
+         * Must be unique within a router. Must be referenced by exactly one bgpPeer.
+         * Must comply withRFC1035.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * [Input only] Value of the key.
+         *
+         * For patch and update calls, it can be skipped to copy the value from the
+         * previous configuration. This is allowed if the key with the same name
+         * existed before the operation. Maximum length is 80 characters. Can only
+         * contain printable ASCII characters.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Name used to identify the key.
+         *
+         * Must be unique within a router. Must be referenced by exactly one bgpPeer.
+         * Must comply withRFC1035.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\RouterMd5AuthenticationKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * Name used to identify the key.
-     *
-     * Must be unique within a router. Must be referenced by exactly one bgpPeer.
-     * Must comply withRFC1035.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Compute_RouterMd5AuthenticationKey extends \Google\Service\Compute\RouterMd5AuthenticationKey
     {
     }
 }

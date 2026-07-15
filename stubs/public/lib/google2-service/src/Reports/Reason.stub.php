@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reports;
-
-class Reason extends \Google\Model
-{
-    /**
-     * The type of the reason.
-     *
-     * @var string
-     */
-    public $reasonType;
-    /**
-     * The type of the reason.
-     *
-     * @param string $reasonType
-     */
-    public function setReasonType($reasonType)
+namespace Google\Service\Reports {
+    class Reason extends \Google\Model
     {
+        /**
+         * The type of the reason.
+         *
+         * @var string
+         */
+        public $reasonType;
+        /**
+         * The type of the reason.
+         *
+         * @param string $reasonType
+         */
+        public function setReasonType($reasonType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReasonType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Reports\Reason registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReasonType()
+    class Google_Service_Reports_Reason extends \Google\Service\Reports\Reason
     {
     }
 }

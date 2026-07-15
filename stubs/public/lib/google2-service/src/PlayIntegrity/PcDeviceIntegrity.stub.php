@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayIntegrity;
-
-class PcDeviceIntegrity extends \Google\Collection
-{
-    protected $collection_key = 'deviceRecognitionVerdict';
-    /**
-     * Details about the integrity of the device the app is running on.
-     *
-     * @var string[]
-     */
-    public $deviceRecognitionVerdict;
-    /**
-     * Details about the integrity of the device the app is running on.
-     *
-     * @param string[] $deviceRecognitionVerdict
-     */
-    public function setDeviceRecognitionVerdict($deviceRecognitionVerdict)
+namespace Google\Service\PlayIntegrity {
+    class PcDeviceIntegrity extends \Google\Collection
     {
+        protected $collection_key = 'deviceRecognitionVerdict';
+        /**
+         * Details about the integrity of the device the app is running on.
+         *
+         * @var string[]
+         */
+        public $deviceRecognitionVerdict;
+        /**
+         * Details about the integrity of the device the app is running on.
+         *
+         * @param string[] $deviceRecognitionVerdict
+         */
+        public function setDeviceRecognitionVerdict($deviceRecognitionVerdict)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDeviceRecognitionVerdict()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\PlayIntegrity\PcDeviceIntegrity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceRecognitionVerdict()
+    class Google_Service_PlayIntegrity_PcDeviceIntegrity extends \Google\Service\PlayIntegrity\PcDeviceIntegrity
     {
     }
 }

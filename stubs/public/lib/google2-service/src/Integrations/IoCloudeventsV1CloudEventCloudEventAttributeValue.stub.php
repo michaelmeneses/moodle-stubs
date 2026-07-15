@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class IoCloudeventsV1CloudEventCloudEventAttributeValue extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $ceBoolean;
-    /**
-     * @var string
-     */
-    public $ceBytes;
-    /**
-     * @var int
-     */
-    public $ceInteger;
-    /**
-     * @var string
-     */
-    public $ceString;
-    /**
-     * @var string
-     */
-    public $ceTimestamp;
-    /**
-     * @var string
-     */
-    public $ceUri;
-    /**
-     * @var string
-     */
-    public $ceUriRef;
-    /**
-     * @param bool
-     */
-    public function setCeBoolean($ceBoolean)
+namespace Google\Service\Integrations {
+    class IoCloudeventsV1CloudEventCloudEventAttributeValue extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $ceBoolean;
+        /**
+         * @var string
+         */
+        public $ceBytes;
+        /**
+         * @var int
+         */
+        public $ceInteger;
+        /**
+         * @var string
+         */
+        public $ceString;
+        /**
+         * @var string
+         */
+        public $ceTimestamp;
+        /**
+         * @var string
+         */
+        public $ceUri;
+        /**
+         * @var string
+         */
+        public $ceUriRef;
+        /**
+         * @param bool
+         */
+        public function setCeBoolean($ceBoolean)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCeBoolean()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCeBytes($ceBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCeBytes()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setCeInteger($ceInteger)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCeInteger()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCeString($ceString)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCeString()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCeTimestamp($ceTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCeTimestamp()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCeUri($ceUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCeUri()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCeUriRef($ceUriRef)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCeUriRef()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Integrations\IoCloudeventsV1CloudEventCloudEventAttributeValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCeBoolean()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCeBytes($ceBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCeBytes()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setCeInteger($ceInteger)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getCeInteger()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCeString($ceString)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCeString()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCeTimestamp($ceTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCeTimestamp()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCeUri($ceUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCeUri()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCeUriRef($ceUriRef)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCeUriRef()
+    class Google_Service_Integrations_IoCloudeventsV1CloudEventCloudEventAttributeValue extends \Google\Service\Integrations\IoCloudeventsV1CloudEventCloudEventAttributeValue
     {
     }
 }

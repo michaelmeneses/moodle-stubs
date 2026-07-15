@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class Segment extends \Google\Model
-{
-    /**
-     * A mapping from the positional location to the value. The key string uses
-     * zero-based indexes separated by dots to identify Fields, components and
-     * sub-components. A bracket notation is also used to identify different
-     * instances of a repeated field. Regex for key: (\d+)(\[\d+\])?(.\d+)?(.\d+)?
-     * Examples of (key, value) pairs: * (0.1, "hemoglobin") denotes that the
-     * first component of Field 0 has the value "hemoglobin". * (1.1.2, "CBC")
-     * denotes that the second sub-component of the first component of Field 1 has
-     * the value "CBC". * (1[0].1, "HbA1c") denotes that the first component of
-     * the first Instance of Field 1, which is repeated, has the value "HbA1c".
-     *
-     * @var string[]
-     */
-    public $fields;
-    /**
-     * A string that indicates the type of segment. For example, EVN or PID.
-     *
-     * @var string
-     */
-    public $segmentId;
-    /**
-     * Set ID for segments that can be in a set. This can be empty if it's missing
-     * or isn't applicable.
-     *
-     * @var string
-     */
-    public $setId;
-    /**
-     * A mapping from the positional location to the value. The key string uses
-     * zero-based indexes separated by dots to identify Fields, components and
-     * sub-components. A bracket notation is also used to identify different
-     * instances of a repeated field. Regex for key: (\d+)(\[\d+\])?(.\d+)?(.\d+)?
-     * Examples of (key, value) pairs: * (0.1, "hemoglobin") denotes that the
-     * first component of Field 0 has the value "hemoglobin". * (1.1.2, "CBC")
-     * denotes that the second sub-component of the first component of Field 1 has
-     * the value "CBC". * (1[0].1, "HbA1c") denotes that the first component of
-     * the first Instance of Field 1, which is repeated, has the value "HbA1c".
-     *
-     * @param string[] $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\CloudHealthcare {
+    class Segment extends \Google\Model
     {
+        /**
+         * A mapping from the positional location to the value. The key string uses
+         * zero-based indexes separated by dots to identify Fields, components and
+         * sub-components. A bracket notation is also used to identify different
+         * instances of a repeated field. Regex for key: (\d+)(\[\d+\])?(.\d+)?(.\d+)?
+         * Examples of (key, value) pairs: * (0.1, "hemoglobin") denotes that the
+         * first component of Field 0 has the value "hemoglobin". * (1.1.2, "CBC")
+         * denotes that the second sub-component of the first component of Field 1 has
+         * the value "CBC". * (1[0].1, "HbA1c") denotes that the first component of
+         * the first Instance of Field 1, which is repeated, has the value "HbA1c".
+         *
+         * @var string[]
+         */
+        public $fields;
+        /**
+         * A string that indicates the type of segment. For example, EVN or PID.
+         *
+         * @var string
+         */
+        public $segmentId;
+        /**
+         * Set ID for segments that can be in a set. This can be empty if it's missing
+         * or isn't applicable.
+         *
+         * @var string
+         */
+        public $setId;
+        /**
+         * A mapping from the positional location to the value. The key string uses
+         * zero-based indexes separated by dots to identify Fields, components and
+         * sub-components. A bracket notation is also used to identify different
+         * instances of a repeated field. Regex for key: (\d+)(\[\d+\])?(.\d+)?(.\d+)?
+         * Examples of (key, value) pairs: * (0.1, "hemoglobin") denotes that the
+         * first component of Field 0 has the value "hemoglobin". * (1.1.2, "CBC")
+         * denotes that the second sub-component of the first component of Field 1 has
+         * the value "CBC". * (1[0].1, "HbA1c") denotes that the first component of
+         * the first Instance of Field 1, which is repeated, has the value "HbA1c".
+         *
+         * @param string[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * A string that indicates the type of segment. For example, EVN or PID.
+         *
+         * @param string $segmentId
+         */
+        public function setSegmentId($segmentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSegmentId()
+        {
+        }
+        /**
+         * Set ID for segments that can be in a set. This can be empty if it's missing
+         * or isn't applicable.
+         *
+         * @param string $setId
+         */
+        public function setSetId($setId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSetId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudHealthcare\Segment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
-    {
-    }
-    /**
-     * A string that indicates the type of segment. For example, EVN or PID.
-     *
-     * @param string $segmentId
-     */
-    public function setSegmentId($segmentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSegmentId()
-    {
-    }
-    /**
-     * Set ID for segments that can be in a set. This can be empty if it's missing
-     * or isn't applicable.
-     *
-     * @param string $setId
-     */
-    public function setSetId($setId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSetId()
+    class Google_Service_CloudHealthcare_Segment extends \Google\Service\CloudHealthcare\Segment
     {
     }
 }

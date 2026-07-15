@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class SecretManagerSource extends \Google\Model
-{
-    /**
-     * Required. The name of the Secret Version containing the encryption key in
-     * the following format:
-     * `projects/{project}/secrets/{secret_id}/versions/{version_number}` Note
-     * that only numbered versions are supported. Aliases like "latest" are not
-     * supported.
-     *
-     * @var string
-     */
-    public $secretVersion;
-    /**
-     * Required. The name of the Secret Version containing the encryption key in
-     * the following format:
-     * `projects/{project}/secrets/{secret_id}/versions/{version_number}` Note
-     * that only numbered versions are supported. Aliases like "latest" are not
-     * supported.
-     *
-     * @param string $secretVersion
-     */
-    public function setSecretVersion($secretVersion)
+namespace Google\Service\Transcoder {
+    class SecretManagerSource extends \Google\Model
     {
+        /**
+         * Required. The name of the Secret Version containing the encryption key in
+         * the following format:
+         * `projects/{project}/secrets/{secret_id}/versions/{version_number}` Note
+         * that only numbered versions are supported. Aliases like "latest" are not
+         * supported.
+         *
+         * @var string
+         */
+        public $secretVersion;
+        /**
+         * Required. The name of the Secret Version containing the encryption key in
+         * the following format:
+         * `projects/{project}/secrets/{secret_id}/versions/{version_number}` Note
+         * that only numbered versions are supported. Aliases like "latest" are not
+         * supported.
+         *
+         * @param string $secretVersion
+         */
+        public function setSecretVersion($secretVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecretVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Transcoder\SecretManagerSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSecretVersion()
+    class Google_Service_Transcoder_SecretManagerSource extends \Google\Service\Transcoder\SecretManagerSource
     {
     }
 }

@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ToolDataStoreTool extends \Google\Collection
-{
-    protected $collection_key = 'dataStoreConnections';
-    protected $dataStoreConnectionsType = GoogleCloudDialogflowCxV3DataStoreConnection::class;
-    protected $dataStoreConnectionsDataType = 'array';
-    protected $fallbackPromptType = GoogleCloudDialogflowCxV3ToolDataStoreToolFallbackPrompt::class;
-    protected $fallbackPromptDataType = '';
-    /**
-     * Required. List of data stores to search.
-     *
-     * @param GoogleCloudDialogflowCxV3DataStoreConnection[] $dataStoreConnections
-     */
-    public function setDataStoreConnections($dataStoreConnections)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ToolDataStoreTool extends \Google\Collection
     {
+        protected $collection_key = 'dataStoreConnections';
+        protected $dataStoreConnectionsType = GoogleCloudDialogflowCxV3DataStoreConnection::class;
+        protected $dataStoreConnectionsDataType = 'array';
+        protected $fallbackPromptType = GoogleCloudDialogflowCxV3ToolDataStoreToolFallbackPrompt::class;
+        protected $fallbackPromptDataType = '';
+        /**
+         * Required. List of data stores to search.
+         *
+         * @param GoogleCloudDialogflowCxV3DataStoreConnection[] $dataStoreConnections
+         */
+        public function setDataStoreConnections($dataStoreConnections)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3DataStoreConnection[]
+         */
+        public function getDataStoreConnections()
+        {
+        }
+        /**
+         * Required. Fallback prompt configurations to use.
+         *
+         * @param GoogleCloudDialogflowCxV3ToolDataStoreToolFallbackPrompt $fallbackPrompt
+         */
+        public function setFallbackPrompt(GoogleCloudDialogflowCxV3ToolDataStoreToolFallbackPrompt $fallbackPrompt)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3ToolDataStoreToolFallbackPrompt
+         */
+        public function getFallbackPrompt()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3DataStoreConnection[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ToolDataStoreTool registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataStoreConnections()
-    {
-    }
-    /**
-     * Required. Fallback prompt configurations to use.
-     *
-     * @param GoogleCloudDialogflowCxV3ToolDataStoreToolFallbackPrompt $fallbackPrompt
-     */
-    public function setFallbackPrompt(GoogleCloudDialogflowCxV3ToolDataStoreToolFallbackPrompt $fallbackPrompt)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3ToolDataStoreToolFallbackPrompt
-     */
-    public function getFallbackPrompt()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ToolDataStoreTool extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ToolDataStoreTool
     {
     }
 }

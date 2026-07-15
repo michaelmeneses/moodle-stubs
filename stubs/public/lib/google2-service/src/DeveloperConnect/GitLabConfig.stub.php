@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class GitLabConfig extends \Google\Model
-{
-    protected $authorizerCredentialType = UserCredential::class;
-    protected $authorizerCredentialDataType = '';
-    protected $readAuthorizerCredentialType = UserCredential::class;
-    protected $readAuthorizerCredentialDataType = '';
-    /**
-     * Required. Immutable. SecretManager resource containing the webhook secret
-     * of a GitLab project, formatted as `projects/secrets/versions` or
-     * `projects/locations/secrets/versions` (if regional secrets are supported in
-     * that location). This is used to validate webhooks.
-     *
-     * @var string
-     */
-    public $webhookSecretSecretVersion;
-    /**
-     * Required. A GitLab personal access token with the minimum `api` scope
-     * access and a minimum role of `maintainer`. The GitLab Projects visible to
-     * this Personal Access Token will control which Projects Developer Connect
-     * has access to.
-     *
-     * @param UserCredential $authorizerCredential
-     */
-    public function setAuthorizerCredential(UserCredential $authorizerCredential)
+namespace Google\Service\DeveloperConnect {
+    class GitLabConfig extends \Google\Model
     {
+        protected $authorizerCredentialType = UserCredential::class;
+        protected $authorizerCredentialDataType = '';
+        protected $readAuthorizerCredentialType = UserCredential::class;
+        protected $readAuthorizerCredentialDataType = '';
+        /**
+         * Required. Immutable. SecretManager resource containing the webhook secret
+         * of a GitLab project, formatted as `projects/secrets/versions` or
+         * `projects/locations/secrets/versions` (if regional secrets are supported in
+         * that location). This is used to validate webhooks.
+         *
+         * @var string
+         */
+        public $webhookSecretSecretVersion;
+        /**
+         * Required. A GitLab personal access token with the minimum `api` scope
+         * access and a minimum role of `maintainer`. The GitLab Projects visible to
+         * this Personal Access Token will control which Projects Developer Connect
+         * has access to.
+         *
+         * @param UserCredential $authorizerCredential
+         */
+        public function setAuthorizerCredential(UserCredential $authorizerCredential)
+        {
+        }
+        /**
+         * @return UserCredential
+         */
+        public function getAuthorizerCredential()
+        {
+        }
+        /**
+         * Required. A GitLab personal access token with the minimum `read_api` scope
+         * access and a minimum role of `reporter`. The GitLab Projects visible to
+         * this Personal Access Token will control which Projects Developer Connect
+         * has access to.
+         *
+         * @param UserCredential $readAuthorizerCredential
+         */
+        public function setReadAuthorizerCredential(UserCredential $readAuthorizerCredential)
+        {
+        }
+        /**
+         * @return UserCredential
+         */
+        public function getReadAuthorizerCredential()
+        {
+        }
+        /**
+         * Required. Immutable. SecretManager resource containing the webhook secret
+         * of a GitLab project, formatted as `projects/secrets/versions` or
+         * `projects/locations/secrets/versions` (if regional secrets are supported in
+         * that location). This is used to validate webhooks.
+         *
+         * @param string $webhookSecretSecretVersion
+         */
+        public function setWebhookSecretSecretVersion($webhookSecretSecretVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebhookSecretSecretVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UserCredential
+     * Runtime class alias of \Google\Service\DeveloperConnect\GitLabConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthorizerCredential()
-    {
-    }
-    /**
-     * Required. A GitLab personal access token with the minimum `read_api` scope
-     * access and a minimum role of `reporter`. The GitLab Projects visible to
-     * this Personal Access Token will control which Projects Developer Connect
-     * has access to.
-     *
-     * @param UserCredential $readAuthorizerCredential
-     */
-    public function setReadAuthorizerCredential(UserCredential $readAuthorizerCredential)
-    {
-    }
-    /**
-     * @return UserCredential
-     */
-    public function getReadAuthorizerCredential()
-    {
-    }
-    /**
-     * Required. Immutable. SecretManager resource containing the webhook secret
-     * of a GitLab project, formatted as `projects/secrets/versions` or
-     * `projects/locations/secrets/versions` (if regional secrets are supported in
-     * that location). This is used to validate webhooks.
-     *
-     * @param string $webhookSecretSecretVersion
-     */
-    public function setWebhookSecretSecretVersion($webhookSecretSecretVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebhookSecretSecretVersion()
+    class Google_Service_DeveloperConnect_GitLabConfig extends \Google\Service\DeveloperConnect\GitLabConfig
     {
     }
 }

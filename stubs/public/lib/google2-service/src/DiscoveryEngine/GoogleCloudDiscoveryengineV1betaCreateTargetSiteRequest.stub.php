@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaCreateTargetSiteRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $parent;
-    protected $targetSiteType = GoogleCloudDiscoveryengineV1betaTargetSite::class;
-    protected $targetSiteDataType = '';
-    /**
-     * @param string
-     */
-    public function setParent($parent)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaCreateTargetSiteRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $parent;
+        protected $targetSiteType = GoogleCloudDiscoveryengineV1betaTargetSite::class;
+        protected $targetSiteDataType = '';
+        /**
+         * @param string
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaTargetSite
+         */
+        public function setTargetSite(GoogleCloudDiscoveryengineV1betaTargetSite $targetSite)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaTargetSite
+         */
+        public function getTargetSite()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaCreateTargetSiteRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParent()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaTargetSite
-     */
-    public function setTargetSite(GoogleCloudDiscoveryengineV1betaTargetSite $targetSite)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaTargetSite
-     */
-    public function getTargetSite()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaCreateTargetSiteRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaCreateTargetSiteRequest
     {
     }
 }

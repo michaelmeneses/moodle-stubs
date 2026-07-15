@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class PossiblyTrimmedModel extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $isTrimmed;
-    /**
-     * @var string
-     */
-    public $model;
-    /**
-     * @param bool
-     */
-    public function setIsTrimmed($isTrimmed)
+namespace Google\Service\CloudSearch {
+    class PossiblyTrimmedModel extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $isTrimmed;
+        /**
+         * @var string
+         */
+        public $model;
+        /**
+         * @param bool
+         */
+        public function setIsTrimmed($isTrimmed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsTrimmed()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\PossiblyTrimmedModel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsTrimmed()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setModel($model)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModel()
+    class Google_Service_CloudSearch_PossiblyTrimmedModel extends \Google\Service\CloudSearch\PossiblyTrimmedModel
     {
     }
 }

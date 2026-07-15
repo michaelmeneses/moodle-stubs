@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GenerateUserSessionRequest extends \Google\Model
-{
-    protected $intentPayloadType = IntentPayload::class;
-    protected $intentPayloadDataType = '';
-    /**
-     * The user intent to generate the user session.
-     *
-     * @param IntentPayload $intentPayload
-     */
-    public function setIntentPayload(IntentPayload $intentPayload)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GenerateUserSessionRequest extends \Google\Model
     {
+        protected $intentPayloadType = IntentPayload::class;
+        protected $intentPayloadDataType = '';
+        /**
+         * The user intent to generate the user session.
+         *
+         * @param IntentPayload $intentPayload
+         */
+        public function setIntentPayload(IntentPayload $intentPayload)
+        {
+        }
+        /**
+         * @return IntentPayload
+         */
+        public function getIntentPayload()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IntentPayload
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GenerateUserSessionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntentPayload()
+    class Google_Service_PaymentsResellerSubscription_GenerateUserSessionRequest extends \Google\Service\PaymentsResellerSubscription\GenerateUserSessionRequest
     {
     }
 }

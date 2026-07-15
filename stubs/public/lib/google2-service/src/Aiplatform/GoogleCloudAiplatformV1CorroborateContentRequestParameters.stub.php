@@ -21,20 +21,29 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1CorroborateContentRequestParameters extends \Google\Model
-{
-    /**
-     * Optional. Only return claims with citation score larger than the threshold.
-     *
-     * @var 
-     */
-    public $citationThreshold;
-    public function setCitationThreshold($citationThreshold)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1CorroborateContentRequestParameters extends \Google\Model
     {
+        /**
+         * Optional. Only return claims with citation score larger than the threshold.
+         *
+         * @var 
+         */
+        public $citationThreshold;
+        public function setCitationThreshold($citationThreshold)
+        {
+        }
+        public function getCitationThreshold()
+        {
+        }
     }
-    public function getCitationThreshold()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1CorroborateContentRequestParameters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1CorroborateContentRequestParameters extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1CorroborateContentRequestParameters
     {
     }
 }

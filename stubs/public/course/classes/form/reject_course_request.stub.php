@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course\form;
 
+use moodleform;
 /**
  * A form for an administrator to reject a course request.
  *

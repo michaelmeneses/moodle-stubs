@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StreetViewPublish;
-
-class BatchDeletePhotosResponse extends \Google\Collection
-{
-    protected $collection_key = 'status';
-    protected $statusType = Status::class;
-    protected $statusDataType = 'array';
-    /**
-     * The status for the operation to delete a single Photo in the batch request.
-     *
-     * @param Status[] $status
-     */
-    public function setStatus($status)
+namespace Google\Service\StreetViewPublish {
+    class BatchDeletePhotosResponse extends \Google\Collection
     {
+        protected $collection_key = 'status';
+        protected $statusType = Status::class;
+        protected $statusDataType = 'array';
+        /**
+         * The status for the operation to delete a single Photo in the batch request.
+         *
+         * @param Status[] $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return Status[]
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Status[]
+     * Runtime class alias of \Google\Service\StreetViewPublish\BatchDeletePhotosResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStatus()
+    class Google_Service_StreetViewPublish_BatchDeletePhotosResponse extends \Google\Service\StreetViewPublish\BatchDeletePhotosResponse
     {
     }
 }

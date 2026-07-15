@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FactCheckTools;
-
-class GoogleProtobufEmpty extends \Google\Model
-{
+namespace Google\Service\FactCheckTools {
+    class GoogleProtobufEmpty extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\FactCheckTools\GoogleProtobufEmpty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_FactCheckTools_GoogleProtobufEmpty extends \Google\Service\FactCheckTools\GoogleProtobufEmpty
+    {
+    }
 }

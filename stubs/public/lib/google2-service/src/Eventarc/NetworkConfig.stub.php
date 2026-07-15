@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Eventarc;
-
-class NetworkConfig extends \Google\Model
-{
-    /**
-     * Required. Name of the NetworkAttachment that allows access to the
-     * customer's VPC. Format: `projects/{PROJECT_ID}/regions/{REGION}/networkAtta
-     * chments/{NETWORK_ATTACHMENT_NAME}`
-     *
-     * @var string
-     */
-    public $networkAttachment;
-    /**
-     * Required. Name of the NetworkAttachment that allows access to the
-     * customer's VPC. Format: `projects/{PROJECT_ID}/regions/{REGION}/networkAtta
-     * chments/{NETWORK_ATTACHMENT_NAME}`
-     *
-     * @param string $networkAttachment
-     */
-    public function setNetworkAttachment($networkAttachment)
+namespace Google\Service\Eventarc {
+    class NetworkConfig extends \Google\Model
     {
+        /**
+         * Required. Name of the NetworkAttachment that allows access to the
+         * customer's VPC. Format: `projects/{PROJECT_ID}/regions/{REGION}/networkAtta
+         * chments/{NETWORK_ATTACHMENT_NAME}`
+         *
+         * @var string
+         */
+        public $networkAttachment;
+        /**
+         * Required. Name of the NetworkAttachment that allows access to the
+         * customer's VPC. Format: `projects/{PROJECT_ID}/regions/{REGION}/networkAtta
+         * chments/{NETWORK_ATTACHMENT_NAME}`
+         *
+         * @param string $networkAttachment
+         */
+        public function setNetworkAttachment($networkAttachment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkAttachment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Eventarc\NetworkConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkAttachment()
+    class Google_Service_Eventarc_NetworkConfig extends \Google\Service\Eventarc\NetworkConfig
     {
     }
 }

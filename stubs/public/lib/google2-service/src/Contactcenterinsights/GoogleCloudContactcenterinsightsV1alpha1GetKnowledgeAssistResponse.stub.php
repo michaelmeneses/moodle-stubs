@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponse extends \Google\Model
-{
-    protected $suggestedQueryType = GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseSuggestedQuery::class;
-    protected $suggestedQueryDataType = '';
-    protected $suggestedQueryAnswerType = GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswer::class;
-    protected $suggestedQueryAnswerDataType = '';
-    /**
-     * @param GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseSuggestedQuery
-     */
-    public function setSuggestedQuery(GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseSuggestedQuery $suggestedQuery)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponse extends \Google\Model
     {
+        protected $suggestedQueryType = GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseSuggestedQuery::class;
+        protected $suggestedQueryDataType = '';
+        protected $suggestedQueryAnswerType = GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswer::class;
+        protected $suggestedQueryAnswerDataType = '';
+        /**
+         * @param GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseSuggestedQuery
+         */
+        public function setSuggestedQuery(GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseSuggestedQuery $suggestedQuery)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseSuggestedQuery
+         */
+        public function getSuggestedQuery()
+        {
+        }
+        /**
+         * @param GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswer
+         */
+        public function setSuggestedQueryAnswer(GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswer $suggestedQueryAnswer)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswer
+         */
+        public function getSuggestedQueryAnswer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseSuggestedQuery
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSuggestedQuery()
-    {
-    }
-    /**
-     * @param GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswer
-     */
-    public function setSuggestedQueryAnswer(GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswer $suggestedQueryAnswer)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswer
-     */
-    public function getSuggestedQueryAnswer()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponse extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponse
     {
     }
 }

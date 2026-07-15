@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class GoogleCloudAssetV1DeniedAccessDenyDetail extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    protected $accessesType = GoogleCloudAssetV1DeniedAccessAccess::class;
-    protected $accessesDataType = 'array';
-    protected $denyRuleType = GoogleIamV2DenyRule::class;
-    protected $denyRuleDataType = '';
-    /**
-     * @var bool
-     */
-    public $fullyDenied;
-    protected $identitiesType = GoogleCloudAssetV1DeniedAccessIdentity::class;
-    protected $identitiesDataType = 'array';
-    protected $resourcesType = GoogleCloudAssetV1DeniedAccessResource::class;
-    protected $resourcesDataType = 'array';
-    /**
-     * @param GoogleCloudAssetV1DeniedAccessAccess[]
-     */
-    public function setAccesses($accesses)
+namespace Google\Service\CloudAsset {
+    class GoogleCloudAssetV1DeniedAccessDenyDetail extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        protected $accessesType = GoogleCloudAssetV1DeniedAccessAccess::class;
+        protected $accessesDataType = 'array';
+        protected $denyRuleType = GoogleIamV2DenyRule::class;
+        protected $denyRuleDataType = '';
+        /**
+         * @var bool
+         */
+        public $fullyDenied;
+        protected $identitiesType = GoogleCloudAssetV1DeniedAccessIdentity::class;
+        protected $identitiesDataType = 'array';
+        protected $resourcesType = GoogleCloudAssetV1DeniedAccessResource::class;
+        protected $resourcesDataType = 'array';
+        /**
+         * @param GoogleCloudAssetV1DeniedAccessAccess[]
+         */
+        public function setAccesses($accesses)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1DeniedAccessAccess[]
+         */
+        public function getAccesses()
+        {
+        }
+        /**
+         * @param GoogleIamV2DenyRule
+         */
+        public function setDenyRule(GoogleIamV2DenyRule $denyRule)
+        {
+        }
+        /**
+         * @return GoogleIamV2DenyRule
+         */
+        public function getDenyRule()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setFullyDenied($fullyDenied)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFullyDenied()
+        {
+        }
+        /**
+         * @param GoogleCloudAssetV1DeniedAccessIdentity[]
+         */
+        public function setIdentities($identities)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1DeniedAccessIdentity[]
+         */
+        public function getIdentities()
+        {
+        }
+        /**
+         * @param GoogleCloudAssetV1DeniedAccessResource[]
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1DeniedAccessResource[]
+         */
+        public function getResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAssetV1DeniedAccessAccess[]
+     * Runtime class alias of \Google\Service\CloudAsset\GoogleCloudAssetV1DeniedAccessDenyDetail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccesses()
-    {
-    }
-    /**
-     * @param GoogleIamV2DenyRule
-     */
-    public function setDenyRule(GoogleIamV2DenyRule $denyRule)
-    {
-    }
-    /**
-     * @return GoogleIamV2DenyRule
-     */
-    public function getDenyRule()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setFullyDenied($fullyDenied)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getFullyDenied()
-    {
-    }
-    /**
-     * @param GoogleCloudAssetV1DeniedAccessIdentity[]
-     */
-    public function setIdentities($identities)
-    {
-    }
-    /**
-     * @return GoogleCloudAssetV1DeniedAccessIdentity[]
-     */
-    public function getIdentities()
-    {
-    }
-    /**
-     * @param GoogleCloudAssetV1DeniedAccessResource[]
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return GoogleCloudAssetV1DeniedAccessResource[]
-     */
-    public function getResources()
+    class Google_Service_CloudAsset_GoogleCloudAssetV1DeniedAccessDenyDetail extends \Google\Service\CloudAsset\GoogleCloudAssetV1DeniedAccessDenyDetail
     {
     }
 }

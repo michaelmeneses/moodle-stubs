@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace customfield_select;
 
+use coding_exception;
 /**
  * Class field
  *

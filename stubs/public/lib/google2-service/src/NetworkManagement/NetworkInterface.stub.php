@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class NetworkInterface extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $adapterDescription;
-    /**
-     * @var string
-     */
-    public $cidr;
-    /**
-     * @var string
-     */
-    public $interfaceName;
-    /**
-     * @var string
-     */
-    public $ipAddress;
-    /**
-     * @var string
-     */
-    public $macAddress;
-    /**
-     * @var string
-     */
-    public $speed;
-    /**
-     * @var string
-     */
-    public $vlanId;
-    /**
-     * @param string
-     */
-    public function setAdapterDescription($adapterDescription)
+namespace Google\Service\NetworkManagement {
+    class NetworkInterface extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $adapterDescription;
+        /**
+         * @var string
+         */
+        public $cidr;
+        /**
+         * @var string
+         */
+        public $interfaceName;
+        /**
+         * @var string
+         */
+        public $ipAddress;
+        /**
+         * @var string
+         */
+        public $macAddress;
+        /**
+         * @var string
+         */
+        public $speed;
+        /**
+         * @var string
+         */
+        public $vlanId;
+        /**
+         * @param string
+         */
+        public function setAdapterDescription($adapterDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdapterDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCidr($cidr)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCidr()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInterfaceName($interfaceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInterfaceName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIpAddress($ipAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpAddress()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMacAddress($macAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMacAddress()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSpeed($speed)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpeed()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVlanId($vlanId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVlanId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\NetworkInterface registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdapterDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCidr($cidr)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCidr()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInterfaceName($interfaceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInterfaceName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIpAddress($ipAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIpAddress()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMacAddress($macAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMacAddress()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSpeed($speed)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpeed()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVlanId($vlanId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVlanId()
+    class Google_Service_NetworkManagement_NetworkInterface extends \Google\Service\NetworkManagement\NetworkInterface
     {
     }
 }

@@ -21,56 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
-* Service definition for SASPortalTesting (v1alpha1).
-*
-* <p>
-</p>
-*
-* <p>
-* For more information about this service, see the API
-* <a href="https://developers.google.com/spectrum-access-system/" target="_blank">Documentation</a>
-* </p>
-*
-* @author Google, Inc.
-*/
-class SASPortalTesting extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    /** Read, create, update, and delete your SAS Portal data.. */
-    const SASPORTAL = "https://www.googleapis.com/auth/sasportal";
-    public $customers;
-    public $customers_deployments;
-    public $customers_deployments_devices;
-    public $customers_devices;
-    public $customers_nodes;
-    public $customers_nodes_deployments;
-    public $customers_nodes_devices;
-    public $customers_nodes_nodes;
-    public $deployments;
-    public $deployments_devices;
-    public $installer;
-    public $nodes;
-    public $nodes_deployments;
-    public $nodes_deployments_devices;
-    public $nodes_devices;
-    public $nodes_nodes;
-    public $nodes_nodes_deployments;
-    public $nodes_nodes_devices;
-    public $nodes_nodes_nodes;
-    public $policies;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the SASPortalTesting service.
-     *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+    * Service definition for SASPortalTesting (v1alpha1).
+    *
+    * <p>
+    </p>
+    *
+    * <p>
+    * For more information about this service, see the API
+    * <a href="https://developers.google.com/spectrum-access-system/" target="_blank">Documentation</a>
+    * </p>
+    *
+    * @author Google, Inc.
+    */
+    class SASPortalTesting extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        /** Read, create, update, and delete your SAS Portal data.. */
+        const SASPORTAL = "https://www.googleapis.com/auth/sasportal";
+        public $customers;
+        public $customers_deployments;
+        public $customers_deployments_devices;
+        public $customers_devices;
+        public $customers_nodes;
+        public $customers_nodes_deployments;
+        public $customers_nodes_devices;
+        public $customers_nodes_nodes;
+        public $deployments;
+        public $deployments_devices;
+        public $installer;
+        public $nodes;
+        public $nodes_deployments;
+        public $nodes_deployments_devices;
+        public $nodes_devices;
+        public $nodes_nodes;
+        public $nodes_nodes_deployments;
+        public $nodes_nodes_devices;
+        public $nodes_nodes_nodes;
+        public $policies;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the SASPortalTesting service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SASPortalTesting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Google_Service_SASPortalTesting extends \Google\Service\SASPortalTesting
     {
     }
 }

@@ -21,193 +21,202 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceConsumerManagement;
-
-class Method extends \Google\Collection
-{
-    /**
-     * Syntax `proto2`.
-     */
-    public const SYNTAX_SYNTAX_PROTO2 = 'SYNTAX_PROTO2';
-    /**
-     * Syntax `proto3`.
-     */
-    public const SYNTAX_SYNTAX_PROTO3 = 'SYNTAX_PROTO3';
-    /**
-     * Syntax `editions`.
-     */
-    public const SYNTAX_SYNTAX_EDITIONS = 'SYNTAX_EDITIONS';
-    protected $collection_key = 'options';
-    /**
-     * The source edition string, only valid when syntax is SYNTAX_EDITIONS. This
-     * field should be ignored, instead the edition should be inherited from Api.
-     * This is similar to Field and EnumValue.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $edition;
-    /**
-     * The simple name of this method.
-     *
-     * @var string
-     */
-    public $name;
-    protected $optionsType = Option::class;
-    protected $optionsDataType = 'array';
-    /**
-     * If true, the request is streamed.
-     *
-     * @var bool
-     */
-    public $requestStreaming;
-    /**
-     * A URL of the input message type.
-     *
-     * @var string
-     */
-    public $requestTypeUrl;
-    /**
-     * If true, the response is streamed.
-     *
-     * @var bool
-     */
-    public $responseStreaming;
-    /**
-     * The URL of the output message type.
-     *
-     * @var string
-     */
-    public $responseTypeUrl;
-    /**
-     * The source syntax of this method. This field should be ignored, instead the
-     * syntax should be inherited from Api. This is similar to Field and
-     * EnumValue.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $syntax;
-    /**
-     * The source edition string, only valid when syntax is SYNTAX_EDITIONS. This
-     * field should be ignored, instead the edition should be inherited from Api.
-     * This is similar to Field and EnumValue.
-     *
-     * @deprecated
-     * @param string $edition
-     */
-    public function setEdition($edition)
+namespace Google\Service\ServiceConsumerManagement {
+    class Method extends \Google\Collection
     {
+        /**
+         * Syntax `proto2`.
+         */
+        public const SYNTAX_SYNTAX_PROTO2 = 'SYNTAX_PROTO2';
+        /**
+         * Syntax `proto3`.
+         */
+        public const SYNTAX_SYNTAX_PROTO3 = 'SYNTAX_PROTO3';
+        /**
+         * Syntax `editions`.
+         */
+        public const SYNTAX_SYNTAX_EDITIONS = 'SYNTAX_EDITIONS';
+        protected $collection_key = 'options';
+        /**
+         * The source edition string, only valid when syntax is SYNTAX_EDITIONS. This
+         * field should be ignored, instead the edition should be inherited from Api.
+         * This is similar to Field and EnumValue.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $edition;
+        /**
+         * The simple name of this method.
+         *
+         * @var string
+         */
+        public $name;
+        protected $optionsType = Option::class;
+        protected $optionsDataType = 'array';
+        /**
+         * If true, the request is streamed.
+         *
+         * @var bool
+         */
+        public $requestStreaming;
+        /**
+         * A URL of the input message type.
+         *
+         * @var string
+         */
+        public $requestTypeUrl;
+        /**
+         * If true, the response is streamed.
+         *
+         * @var bool
+         */
+        public $responseStreaming;
+        /**
+         * The URL of the output message type.
+         *
+         * @var string
+         */
+        public $responseTypeUrl;
+        /**
+         * The source syntax of this method. This field should be ignored, instead the
+         * syntax should be inherited from Api. This is similar to Field and
+         * EnumValue.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $syntax;
+        /**
+         * The source edition string, only valid when syntax is SYNTAX_EDITIONS. This
+         * field should be ignored, instead the edition should be inherited from Api.
+         * This is similar to Field and EnumValue.
+         *
+         * @deprecated
+         * @param string $edition
+         */
+        public function setEdition($edition)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getEdition()
+        {
+        }
+        /**
+         * The simple name of this method.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Any metadata attached to the method.
+         *
+         * @param Option[] $options
+         */
+        public function setOptions($options)
+        {
+        }
+        /**
+         * @return Option[]
+         */
+        public function getOptions()
+        {
+        }
+        /**
+         * If true, the request is streamed.
+         *
+         * @param bool $requestStreaming
+         */
+        public function setRequestStreaming($requestStreaming)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRequestStreaming()
+        {
+        }
+        /**
+         * A URL of the input message type.
+         *
+         * @param string $requestTypeUrl
+         */
+        public function setRequestTypeUrl($requestTypeUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestTypeUrl()
+        {
+        }
+        /**
+         * If true, the response is streamed.
+         *
+         * @param bool $responseStreaming
+         */
+        public function setResponseStreaming($responseStreaming)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getResponseStreaming()
+        {
+        }
+        /**
+         * The URL of the output message type.
+         *
+         * @param string $responseTypeUrl
+         */
+        public function setResponseTypeUrl($responseTypeUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResponseTypeUrl()
+        {
+        }
+        /**
+         * The source syntax of this method. This field should be ignored, instead the
+         * syntax should be inherited from Api. This is similar to Field and
+         * EnumValue.
+         *
+         * Accepted values: SYNTAX_PROTO2, SYNTAX_PROTO3, SYNTAX_EDITIONS
+         *
+         * @deprecated
+         * @param self::SYNTAX_* $syntax
+         */
+        public function setSyntax($syntax)
+        {
+        }
+        /**
+         * @deprecated
+         * @return self::SYNTAX_*
+         */
+        public function getSyntax()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceConsumerManagement\Method registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEdition()
-    {
-    }
-    /**
-     * The simple name of this method.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Any metadata attached to the method.
-     *
-     * @param Option[] $options
-     */
-    public function setOptions($options)
-    {
-    }
-    /**
-     * @return Option[]
-     */
-    public function getOptions()
-    {
-    }
-    /**
-     * If true, the request is streamed.
-     *
-     * @param bool $requestStreaming
-     */
-    public function setRequestStreaming($requestStreaming)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRequestStreaming()
-    {
-    }
-    /**
-     * A URL of the input message type.
-     *
-     * @param string $requestTypeUrl
-     */
-    public function setRequestTypeUrl($requestTypeUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestTypeUrl()
-    {
-    }
-    /**
-     * If true, the response is streamed.
-     *
-     * @param bool $responseStreaming
-     */
-    public function setResponseStreaming($responseStreaming)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getResponseStreaming()
-    {
-    }
-    /**
-     * The URL of the output message type.
-     *
-     * @param string $responseTypeUrl
-     */
-    public function setResponseTypeUrl($responseTypeUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResponseTypeUrl()
-    {
-    }
-    /**
-     * The source syntax of this method. This field should be ignored, instead the
-     * syntax should be inherited from Api. This is similar to Field and
-     * EnumValue.
-     *
-     * Accepted values: SYNTAX_PROTO2, SYNTAX_PROTO3, SYNTAX_EDITIONS
-     *
-     * @deprecated
-     * @param self::SYNTAX_* $syntax
-     */
-    public function setSyntax($syntax)
-    {
-    }
-    /**
-     * @deprecated
-     * @return self::SYNTAX_*
-     */
-    public function getSyntax()
+    class Google_Service_ServiceConsumerManagement_Method extends \Google\Service\ServiceConsumerManagement\Method
     {
     }
 }

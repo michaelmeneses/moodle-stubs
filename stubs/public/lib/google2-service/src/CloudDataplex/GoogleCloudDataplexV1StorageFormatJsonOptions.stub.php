@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1StorageFormatJsonOptions extends \Google\Model
-{
-    /**
-     * Optional. The character encoding of the data. Accepts "US-ASCII", "UTF-8"
-     * and "ISO-8859-1". Defaults to UTF-8 if not specified.
-     *
-     * @var string
-     */
-    public $encoding;
-    /**
-     * Optional. The character encoding of the data. Accepts "US-ASCII", "UTF-8"
-     * and "ISO-8859-1". Defaults to UTF-8 if not specified.
-     *
-     * @param string $encoding
-     */
-    public function setEncoding($encoding)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1StorageFormatJsonOptions extends \Google\Model
     {
+        /**
+         * Optional. The character encoding of the data. Accepts "US-ASCII", "UTF-8"
+         * and "ISO-8859-1". Defaults to UTF-8 if not specified.
+         *
+         * @var string
+         */
+        public $encoding;
+        /**
+         * Optional. The character encoding of the data. Accepts "US-ASCII", "UTF-8"
+         * and "ISO-8859-1". Defaults to UTF-8 if not specified.
+         *
+         * @param string $encoding
+         */
+        public function setEncoding($encoding)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncoding()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1StorageFormatJsonOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncoding()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1StorageFormatJsonOptions extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1StorageFormatJsonOptions
     {
     }
 }

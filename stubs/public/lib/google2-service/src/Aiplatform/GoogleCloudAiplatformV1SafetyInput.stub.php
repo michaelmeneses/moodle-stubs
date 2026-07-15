@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SafetyInput extends \Google\Model
-{
-    protected $instanceType = GoogleCloudAiplatformV1SafetyInstance::class;
-    protected $instanceDataType = '';
-    protected $metricSpecType = GoogleCloudAiplatformV1SafetySpec::class;
-    protected $metricSpecDataType = '';
-    /**
-     * Required. Safety instance.
-     *
-     * @param GoogleCloudAiplatformV1SafetyInstance $instance
-     */
-    public function setInstance(GoogleCloudAiplatformV1SafetyInstance $instance)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SafetyInput extends \Google\Model
     {
+        protected $instanceType = GoogleCloudAiplatformV1SafetyInstance::class;
+        protected $instanceDataType = '';
+        protected $metricSpecType = GoogleCloudAiplatformV1SafetySpec::class;
+        protected $metricSpecDataType = '';
+        /**
+         * Required. Safety instance.
+         *
+         * @param GoogleCloudAiplatformV1SafetyInstance $instance
+         */
+        public function setInstance(GoogleCloudAiplatformV1SafetyInstance $instance)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SafetyInstance
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * Required. Spec for safety metric.
+         *
+         * @param GoogleCloudAiplatformV1SafetySpec $metricSpec
+         */
+        public function setMetricSpec(GoogleCloudAiplatformV1SafetySpec $metricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SafetySpec
+         */
+        public function getMetricSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SafetyInstance
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SafetyInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstance()
-    {
-    }
-    /**
-     * Required. Spec for safety metric.
-     *
-     * @param GoogleCloudAiplatformV1SafetySpec $metricSpec
-     */
-    public function setMetricSpec(GoogleCloudAiplatformV1SafetySpec $metricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SafetySpec
-     */
-    public function getMetricSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SafetyInput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SafetyInput
     {
     }
 }

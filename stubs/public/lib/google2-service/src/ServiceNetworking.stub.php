@@ -21,46 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for ServiceNetworking (v1).
- *
- * <p>
- * Provides automatic management of network configurations necessary for certain
- * services.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/service-infrastructure/docs/service-networking/getting-started" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class ServiceNetworking extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    /** Manage your Google API service configuration. */
-    const SERVICE_MANAGEMENT = "https://www.googleapis.com/auth/service.management";
-    public $operations;
-    public $services;
-    public $services_connections;
-    public $services_dnsRecordSets;
-    public $services_dnsZones;
-    public $services_projects_global_networks;
-    public $services_projects_global_networks_dnsZones;
-    public $services_projects_global_networks_peeredDnsDomains;
-    public $services_roles;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the ServiceNetworking service.
+     * Service definition for ServiceNetworking (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Provides automatic management of network configurations necessary for certain
+     * services.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/service-infrastructure/docs/service-networking/getting-started" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class ServiceNetworking extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        /** Manage your Google API service configuration. */
+        const SERVICE_MANAGEMENT = "https://www.googleapis.com/auth/service.management";
+        public $operations;
+        public $services;
+        public $services_connections;
+        public $services_dnsRecordSets;
+        public $services_dnsZones;
+        public $services_projects_global_networks;
+        public $services_projects_global_networks_dnsZones;
+        public $services_projects_global_networks_peeredDnsDomains;
+        public $services_roles;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the ServiceNetworking service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ServiceNetworking registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ServiceNetworking extends \Google\Service\ServiceNetworking
     {
     }
 }

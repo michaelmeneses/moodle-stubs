@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class PlacementTargeting extends \Google\Model
-{
-    protected $mobileApplicationTargetingType = MobileApplicationTargeting::class;
-    protected $mobileApplicationTargetingDataType = '';
-    protected $uriTargetingType = UriTargeting::class;
-    protected $uriTargetingDataType = '';
-    /**
-     * Mobile application targeting information in a deal. This doesn't apply to
-     * Auction Packages.
-     *
-     * @param MobileApplicationTargeting $mobileApplicationTargeting
-     */
-    public function setMobileApplicationTargeting(MobileApplicationTargeting $mobileApplicationTargeting)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class PlacementTargeting extends \Google\Model
     {
+        protected $mobileApplicationTargetingType = MobileApplicationTargeting::class;
+        protected $mobileApplicationTargetingDataType = '';
+        protected $uriTargetingType = UriTargeting::class;
+        protected $uriTargetingDataType = '';
+        /**
+         * Mobile application targeting information in a deal. This doesn't apply to
+         * Auction Packages.
+         *
+         * @param MobileApplicationTargeting $mobileApplicationTargeting
+         */
+        public function setMobileApplicationTargeting(MobileApplicationTargeting $mobileApplicationTargeting)
+        {
+        }
+        /**
+         * @return MobileApplicationTargeting
+         */
+        public function getMobileApplicationTargeting()
+        {
+        }
+        /**
+         * URLs to be included/excluded.
+         *
+         * @param UriTargeting $uriTargeting
+         */
+        public function setUriTargeting(UriTargeting $uriTargeting)
+        {
+        }
+        /**
+         * @return UriTargeting
+         */
+        public function getUriTargeting()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MobileApplicationTargeting
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\PlacementTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMobileApplicationTargeting()
-    {
-    }
-    /**
-     * URLs to be included/excluded.
-     *
-     * @param UriTargeting $uriTargeting
-     */
-    public function setUriTargeting(UriTargeting $uriTargeting)
-    {
-    }
-    /**
-     * @return UriTargeting
-     */
-    public function getUriTargeting()
+    class Google_Service_AuthorizedBuyersMarketplace_PlacementTargeting extends \Google\Service\AuthorizedBuyersMarketplace\PlacementTargeting
     {
     }
 }

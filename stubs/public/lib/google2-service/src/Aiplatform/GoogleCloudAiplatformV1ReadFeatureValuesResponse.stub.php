@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ReadFeatureValuesResponse extends \Google\Model
-{
-    protected $entityViewType = GoogleCloudAiplatformV1ReadFeatureValuesResponseEntityView::class;
-    protected $entityViewDataType = '';
-    protected $headerType = GoogleCloudAiplatformV1ReadFeatureValuesResponseHeader::class;
-    protected $headerDataType = '';
-    /**
-     * Entity view with Feature values. This may be the entity in the Featurestore
-     * if values for all Features were requested, or a projection of the entity in
-     * the Featurestore if values for only some Features were requested.
-     *
-     * @param GoogleCloudAiplatformV1ReadFeatureValuesResponseEntityView $entityView
-     */
-    public function setEntityView(GoogleCloudAiplatformV1ReadFeatureValuesResponseEntityView $entityView)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ReadFeatureValuesResponse extends \Google\Model
     {
+        protected $entityViewType = GoogleCloudAiplatformV1ReadFeatureValuesResponseEntityView::class;
+        protected $entityViewDataType = '';
+        protected $headerType = GoogleCloudAiplatformV1ReadFeatureValuesResponseHeader::class;
+        protected $headerDataType = '';
+        /**
+         * Entity view with Feature values. This may be the entity in the Featurestore
+         * if values for all Features were requested, or a projection of the entity in
+         * the Featurestore if values for only some Features were requested.
+         *
+         * @param GoogleCloudAiplatformV1ReadFeatureValuesResponseEntityView $entityView
+         */
+        public function setEntityView(GoogleCloudAiplatformV1ReadFeatureValuesResponseEntityView $entityView)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ReadFeatureValuesResponseEntityView
+         */
+        public function getEntityView()
+        {
+        }
+        /**
+         * Response header.
+         *
+         * @param GoogleCloudAiplatformV1ReadFeatureValuesResponseHeader $header
+         */
+        public function setHeader(GoogleCloudAiplatformV1ReadFeatureValuesResponseHeader $header)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ReadFeatureValuesResponseHeader
+         */
+        public function getHeader()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ReadFeatureValuesResponseEntityView
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadFeatureValuesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntityView()
-    {
-    }
-    /**
-     * Response header.
-     *
-     * @param GoogleCloudAiplatformV1ReadFeatureValuesResponseHeader $header
-     */
-    public function setHeader(GoogleCloudAiplatformV1ReadFeatureValuesResponseHeader $header)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ReadFeatureValuesResponseHeader
-     */
-    public function getHeader()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ReadFeatureValuesResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadFeatureValuesResponse
     {
     }
 }

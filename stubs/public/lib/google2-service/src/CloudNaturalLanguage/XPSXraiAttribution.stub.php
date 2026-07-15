@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSXraiAttribution extends \Google\Model
-{
-    /**
-     * The number of steps for approximating the path integral. A good value to
-     * start is 50 and gradually increase until the sum to diff property is met
-     * within the desired error range. Valid range of its value is [1, 100],
-     * inclusively.
-     *
-     * @var int
-     */
-    public $stepCount;
-    /**
-     * The number of steps for approximating the path integral. A good value to
-     * start is 50 and gradually increase until the sum to diff property is met
-     * within the desired error range. Valid range of its value is [1, 100],
-     * inclusively.
-     *
-     * @param int $stepCount
-     */
-    public function setStepCount($stepCount)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSXraiAttribution extends \Google\Model
     {
+        /**
+         * The number of steps for approximating the path integral. A good value to
+         * start is 50 and gradually increase until the sum to diff property is met
+         * within the desired error range. Valid range of its value is [1, 100],
+         * inclusively.
+         *
+         * @var int
+         */
+        public $stepCount;
+        /**
+         * The number of steps for approximating the path integral. A good value to
+         * start is 50 and gradually increase until the sum to diff property is met
+         * within the desired error range. Valid range of its value is [1, 100],
+         * inclusively.
+         *
+         * @param int $stepCount
+         */
+        public function setStepCount($stepCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStepCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSXraiAttribution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStepCount()
+    class Google_Service_CloudNaturalLanguage_XPSXraiAttribution extends \Google\Service\CloudNaturalLanguage\XPSXraiAttribution
     {
     }
 }

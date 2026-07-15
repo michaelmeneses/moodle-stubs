@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1Examples extends \Google\Model
-{
-    protected $exampleGcsSourceType = GoogleCloudAiplatformV1ExamplesExampleGcsSource::class;
-    protected $exampleGcsSourceDataType = '';
-    /**
-     * The full configuration for the generated index, the semantics are the same
-     * as metadata and should match
-     * [NearestNeighborSearchConfig](https://cloud.google.com/vertex-
-     * ai/docs/explainable-ai/configuring-explanations-example-based#nearest-
-     * neighbor-search-config).
-     *
-     * @var array
-     */
-    public $nearestNeighborSearchConfig;
-    /**
-     * The number of neighbors to return when querying for examples.
-     *
-     * @var int
-     */
-    public $neighborCount;
-    protected $presetsType = GoogleCloudAiplatformV1Presets::class;
-    protected $presetsDataType = '';
-    /**
-     * The Cloud Storage input instances.
-     *
-     * @param GoogleCloudAiplatformV1ExamplesExampleGcsSource $exampleGcsSource
-     */
-    public function setExampleGcsSource(GoogleCloudAiplatformV1ExamplesExampleGcsSource $exampleGcsSource)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1Examples extends \Google\Model
     {
+        protected $exampleGcsSourceType = GoogleCloudAiplatformV1ExamplesExampleGcsSource::class;
+        protected $exampleGcsSourceDataType = '';
+        /**
+         * The full configuration for the generated index, the semantics are the same
+         * as metadata and should match
+         * [NearestNeighborSearchConfig](https://cloud.google.com/vertex-
+         * ai/docs/explainable-ai/configuring-explanations-example-based#nearest-
+         * neighbor-search-config).
+         *
+         * @var array
+         */
+        public $nearestNeighborSearchConfig;
+        /**
+         * The number of neighbors to return when querying for examples.
+         *
+         * @var int
+         */
+        public $neighborCount;
+        protected $presetsType = GoogleCloudAiplatformV1Presets::class;
+        protected $presetsDataType = '';
+        /**
+         * The Cloud Storage input instances.
+         *
+         * @param GoogleCloudAiplatformV1ExamplesExampleGcsSource $exampleGcsSource
+         */
+        public function setExampleGcsSource(GoogleCloudAiplatformV1ExamplesExampleGcsSource $exampleGcsSource)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ExamplesExampleGcsSource
+         */
+        public function getExampleGcsSource()
+        {
+        }
+        /**
+         * The full configuration for the generated index, the semantics are the same
+         * as metadata and should match
+         * [NearestNeighborSearchConfig](https://cloud.google.com/vertex-
+         * ai/docs/explainable-ai/configuring-explanations-example-based#nearest-
+         * neighbor-search-config).
+         *
+         * @param array $nearestNeighborSearchConfig
+         */
+        public function setNearestNeighborSearchConfig($nearestNeighborSearchConfig)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getNearestNeighborSearchConfig()
+        {
+        }
+        /**
+         * The number of neighbors to return when querying for examples.
+         *
+         * @param int $neighborCount
+         */
+        public function setNeighborCount($neighborCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNeighborCount()
+        {
+        }
+        /**
+         * Simplified preset configuration, which automatically sets configuration
+         * values based on the desired query speed-precision trade-off and modality.
+         *
+         * @param GoogleCloudAiplatformV1Presets $presets
+         */
+        public function setPresets(GoogleCloudAiplatformV1Presets $presets)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Presets
+         */
+        public function getPresets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ExamplesExampleGcsSource
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1Examples registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExampleGcsSource()
-    {
-    }
-    /**
-     * The full configuration for the generated index, the semantics are the same
-     * as metadata and should match
-     * [NearestNeighborSearchConfig](https://cloud.google.com/vertex-
-     * ai/docs/explainable-ai/configuring-explanations-example-based#nearest-
-     * neighbor-search-config).
-     *
-     * @param array $nearestNeighborSearchConfig
-     */
-    public function setNearestNeighborSearchConfig($nearestNeighborSearchConfig)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getNearestNeighborSearchConfig()
-    {
-    }
-    /**
-     * The number of neighbors to return when querying for examples.
-     *
-     * @param int $neighborCount
-     */
-    public function setNeighborCount($neighborCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNeighborCount()
-    {
-    }
-    /**
-     * Simplified preset configuration, which automatically sets configuration
-     * values based on the desired query speed-precision trade-off and modality.
-     *
-     * @param GoogleCloudAiplatformV1Presets $presets
-     */
-    public function setPresets(GoogleCloudAiplatformV1Presets $presets)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1Presets
-     */
-    public function getPresets()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1Examples extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1Examples
     {
     }
 }

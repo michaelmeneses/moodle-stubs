@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class PerStepNamespaceMetrics extends \Google\Collection
-{
-    protected $collection_key = 'metricValues';
-    protected $metricValuesType = MetricValue::class;
-    protected $metricValuesDataType = 'array';
-    /**
-     * The namespace of these metrics on the worker.
-     *
-     * @var string
-     */
-    public $metricsNamespace;
-    /**
-     * The original system name of the unfused step that these metrics are
-     * reported from.
-     *
-     * @var string
-     */
-    public $originalStep;
-    /**
-     * Optional. Metrics that are recorded for this namespace and unfused step.
-     *
-     * @param MetricValue[] $metricValues
-     */
-    public function setMetricValues($metricValues)
+namespace Google\Service\Dataflow {
+    class PerStepNamespaceMetrics extends \Google\Collection
     {
+        protected $collection_key = 'metricValues';
+        protected $metricValuesType = MetricValue::class;
+        protected $metricValuesDataType = 'array';
+        /**
+         * The namespace of these metrics on the worker.
+         *
+         * @var string
+         */
+        public $metricsNamespace;
+        /**
+         * The original system name of the unfused step that these metrics are
+         * reported from.
+         *
+         * @var string
+         */
+        public $originalStep;
+        /**
+         * Optional. Metrics that are recorded for this namespace and unfused step.
+         *
+         * @param MetricValue[] $metricValues
+         */
+        public function setMetricValues($metricValues)
+        {
+        }
+        /**
+         * @return MetricValue[]
+         */
+        public function getMetricValues()
+        {
+        }
+        /**
+         * The namespace of these metrics on the worker.
+         *
+         * @param string $metricsNamespace
+         */
+        public function setMetricsNamespace($metricsNamespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetricsNamespace()
+        {
+        }
+        /**
+         * The original system name of the unfused step that these metrics are
+         * reported from.
+         *
+         * @param string $originalStep
+         */
+        public function setOriginalStep($originalStep)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOriginalStep()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MetricValue[]
+     * Runtime class alias of \Google\Service\Dataflow\PerStepNamespaceMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetricValues()
-    {
-    }
-    /**
-     * The namespace of these metrics on the worker.
-     *
-     * @param string $metricsNamespace
-     */
-    public function setMetricsNamespace($metricsNamespace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetricsNamespace()
-    {
-    }
-    /**
-     * The original system name of the unfused step that these metrics are
-     * reported from.
-     *
-     * @param string $originalStep
-     */
-    public function setOriginalStep($originalStep)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOriginalStep()
+    class Google_Service_Dataflow_PerStepNamespaceMetrics extends \Google\Service\Dataflow\PerStepNamespaceMetrics
     {
     }
 }

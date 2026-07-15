@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3CompareVersionsResponse extends \Google\Model
-{
-    /**
-     * JSON representation of the base version content.
-     *
-     * @var string
-     */
-    public $baseVersionContentJson;
-    /**
-     * The timestamp when the two version compares.
-     *
-     * @var string
-     */
-    public $compareTime;
-    /**
-     * JSON representation of the target version content.
-     *
-     * @var string
-     */
-    public $targetVersionContentJson;
-    /**
-     * JSON representation of the base version content.
-     *
-     * @param string $baseVersionContentJson
-     */
-    public function setBaseVersionContentJson($baseVersionContentJson)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3CompareVersionsResponse extends \Google\Model
     {
+        /**
+         * JSON representation of the base version content.
+         *
+         * @var string
+         */
+        public $baseVersionContentJson;
+        /**
+         * The timestamp when the two version compares.
+         *
+         * @var string
+         */
+        public $compareTime;
+        /**
+         * JSON representation of the target version content.
+         *
+         * @var string
+         */
+        public $targetVersionContentJson;
+        /**
+         * JSON representation of the base version content.
+         *
+         * @param string $baseVersionContentJson
+         */
+        public function setBaseVersionContentJson($baseVersionContentJson)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBaseVersionContentJson()
+        {
+        }
+        /**
+         * The timestamp when the two version compares.
+         *
+         * @param string $compareTime
+         */
+        public function setCompareTime($compareTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompareTime()
+        {
+        }
+        /**
+         * JSON representation of the target version content.
+         *
+         * @param string $targetVersionContentJson
+         */
+        public function setTargetVersionContentJson($targetVersionContentJson)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetVersionContentJson()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3CompareVersionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBaseVersionContentJson()
-    {
-    }
-    /**
-     * The timestamp when the two version compares.
-     *
-     * @param string $compareTime
-     */
-    public function setCompareTime($compareTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCompareTime()
-    {
-    }
-    /**
-     * JSON representation of the target version content.
-     *
-     * @param string $targetVersionContentJson
-     */
-    public function setTargetVersionContentJson($targetVersionContentJson)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetVersionContentJson()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3CompareVersionsResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3CompareVersionsResponse
     {
     }
 }

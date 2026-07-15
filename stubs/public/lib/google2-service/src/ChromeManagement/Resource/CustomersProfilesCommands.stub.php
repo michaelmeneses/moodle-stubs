@@ -21,60 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement\Resource;
-
-/**
- * The "commands" collection of methods.
- * Typical usage is:
- *  <code>
- *   $chromemanagementService = new Google\Service\ChromeManagement(...);
- *   $commands = $chromemanagementService->customers_profiles_commands;
- *  </code>
- */
-class CustomersProfilesCommands extends \Google\Service\Resource
-{
+namespace Google\Service\ChromeManagement\Resource {
+    use Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ChromeBrowserProfileCommand;
+    use Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ListChromeBrowserProfileCommandsResponse;
     /**
-     * Creates a Chrome browser profile remote command. (commands.create)
-     *
-     * @param string $parent Required. Format:
-     * customers/{customer_id}/profiles/{profile_permanent_id}
-     * @param GoogleChromeManagementVersionsV1ChromeBrowserProfileCommand $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleChromeManagementVersionsV1ChromeBrowserProfileCommand
-     * @throws \Google\Service\Exception
+     * The "commands" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $chromemanagementService = new Google\Service\ChromeManagement(...);
+     *   $commands = $chromemanagementService->customers_profiles_commands;
+     *  </code>
      */
-    public function create($parent, GoogleChromeManagementVersionsV1ChromeBrowserProfileCommand $postBody, $optParams = [])
+    class CustomersProfilesCommands extends \Google\Service\Resource
     {
+        /**
+         * Creates a Chrome browser profile remote command. (commands.create)
+         *
+         * @param string $parent Required. Format:
+         * customers/{customer_id}/profiles/{profile_permanent_id}
+         * @param GoogleChromeManagementVersionsV1ChromeBrowserProfileCommand $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleChromeManagementVersionsV1ChromeBrowserProfileCommand
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleChromeManagementVersionsV1ChromeBrowserProfileCommand $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets a Chrome browser profile remote command. (commands.get)
+         *
+         * @param string $name Required. Format:
+         * customers/{customer_id}/profiles/{profile_permanent_id}/commands/{command_id}
+         * @param array $optParams Optional parameters.
+         * @return GoogleChromeManagementVersionsV1ChromeBrowserProfileCommand
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists remote commands of a Chrome browser profile.
+         * (commands.listCustomersProfilesCommands)
+         *
+         * @param string $parent Required. Format:
+         * customers/{customer_id}/profiles/{profile_permanent_id}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of commands to return.
+         * The default page size is 100 if page_size is unspecified, and the maximum
+         * page size allowed is 100.
+         * @opt_param string pageToken Optional. The page token used to retrieve a
+         * specific page of the listing request.
+         * @return GoogleChromeManagementVersionsV1ListChromeBrowserProfileCommandsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listCustomersProfilesCommands($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a Chrome browser profile remote command. (commands.get)
-     *
-     * @param string $name Required. Format:
-     * customers/{customer_id}/profiles/{profile_permanent_id}/commands/{command_id}
-     * @param array $optParams Optional parameters.
-     * @return GoogleChromeManagementVersionsV1ChromeBrowserProfileCommand
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ChromeManagement\Resource\CustomersProfilesCommands registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists remote commands of a Chrome browser profile.
-     * (commands.listCustomersProfilesCommands)
-     *
-     * @param string $parent Required. Format:
-     * customers/{customer_id}/profiles/{profile_permanent_id}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of commands to return.
-     * The default page size is 100 if page_size is unspecified, and the maximum
-     * page size allowed is 100.
-     * @opt_param string pageToken Optional. The page token used to retrieve a
-     * specific page of the listing request.
-     * @return GoogleChromeManagementVersionsV1ListChromeBrowserProfileCommandsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listCustomersProfilesCommands($parent, $optParams = [])
+    class Google_Service_ChromeManagement_Resource_CustomersProfilesCommands extends \Google\Service\ChromeManagement\Resource\CustomersProfilesCommands
     {
     }
 }

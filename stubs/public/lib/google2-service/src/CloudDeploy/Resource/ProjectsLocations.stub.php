@@ -21,62 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $clouddeployService = new Google\Service\CloudDeploy(...);
- *   $locations = $clouddeployService->projects_locations;
- *  </code>
- */
-class ProjectsLocations extends \Google\Service\Resource
-{
+namespace Google\Service\CloudDeploy\Resource {
+    use Google\Service\CloudDeploy\Config;
+    use Google\Service\CloudDeploy\ListLocationsResponse;
+    use Google\Service\CloudDeploy\Location;
     /**
-     * Gets information about a location. (locations.get)
-     *
-     * @param string $name Resource name for the location.
-     * @param array $optParams Optional parameters.
-     * @return Location
-     * @throws \Google\Service\Exception
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $clouddeployService = new Google\Service\CloudDeploy(...);
+     *   $locations = $clouddeployService->projects_locations;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocations extends \Google\Service\Resource
     {
+        /**
+         * Gets information about a location. (locations.get)
+         *
+         * @param string $name Resource name for the location.
+         * @param array $optParams Optional parameters.
+         * @return Location
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the configuration for a location. (locations.getConfig)
+         *
+         * @param string $name Required. Name of requested configuration.
+         * @param array $optParams Optional parameters.
+         * @return Config
+         * @throws \Google\Service\Exception
+         */
+        public function getConfig($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists information about the supported locations for this service.
+         * (locations.listProjectsLocations)
+         *
+         * @param string $name The resource that owns the locations collection, if
+         * applicable.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string extraLocationTypes Optional. Do not use this field. It is
+         * unsupported and is ignored unless explicitly documented otherwise. This is
+         * primarily for internal usage.
+         * @opt_param string filter A filter to narrow down results to a preferred
+         * subset. The filtering language accepts strings like `"displayName=tokyo"`,
+         * and is documented in more detail in [AIP-160](https://google.aip.dev/160).
+         * @opt_param int pageSize The maximum number of results to return. If not set,
+         * the service selects a default.
+         * @opt_param string pageToken A page token received from the `next_page_token`
+         * field in the response. Send that page token to receive the subsequent page.
+         * @return ListLocationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocations($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the configuration for a location. (locations.getConfig)
-     *
-     * @param string $name Required. Name of requested configuration.
-     * @param array $optParams Optional parameters.
-     * @return Config
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudDeploy\Resource\ProjectsLocations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfig($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists information about the supported locations for this service.
-     * (locations.listProjectsLocations)
-     *
-     * @param string $name The resource that owns the locations collection, if
-     * applicable.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string extraLocationTypes Optional. Do not use this field. It is
-     * unsupported and is ignored unless explicitly documented otherwise. This is
-     * primarily for internal usage.
-     * @opt_param string filter A filter to narrow down results to a preferred
-     * subset. The filtering language accepts strings like `"displayName=tokyo"`,
-     * and is documented in more detail in [AIP-160](https://google.aip.dev/160).
-     * @opt_param int pageSize The maximum number of results to return. If not set,
-     * the service selects a default.
-     * @opt_param string pageToken A page token received from the `next_page_token`
-     * field in the response. Send that page token to receive the subsequent page.
-     * @return ListLocationsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocations($name, $optParams = [])
+    class Google_Service_CloudDeploy_Resource_ProjectsLocations extends \Google\Service\CloudDeploy\Resource\ProjectsLocations
     {
     }
 }

@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class ProductsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'product';
-    protected $pageInfoType = PageInfo::class;
-    protected $pageInfoDataType = '';
-    protected $productType = Product::class;
-    protected $productDataType = 'array';
-    protected $tokenPaginationType = TokenPagination::class;
-    protected $tokenPaginationDataType = '';
-    /**
-     * General pagination information.
-     *
-     * @param PageInfo $pageInfo
-     */
-    public function setPageInfo(PageInfo $pageInfo)
+namespace Google\Service\AndroidEnterprise {
+    class ProductsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'product';
+        protected $pageInfoType = PageInfo::class;
+        protected $pageInfoDataType = '';
+        protected $productType = Product::class;
+        protected $productDataType = 'array';
+        protected $tokenPaginationType = TokenPagination::class;
+        protected $tokenPaginationDataType = '';
+        /**
+         * General pagination information.
+         *
+         * @param PageInfo $pageInfo
+         */
+        public function setPageInfo(PageInfo $pageInfo)
+        {
+        }
+        /**
+         * @return PageInfo
+         */
+        public function getPageInfo()
+        {
+        }
+        /**
+         * Information about a product (e.g. an app) in the Google Play store, for
+         * display to an enterprise admin.
+         *
+         * @param Product[] $product
+         */
+        public function setProduct($product)
+        {
+        }
+        /**
+         * @return Product[]
+         */
+        public function getProduct()
+        {
+        }
+        /**
+         * Pagination information for token pagination.
+         *
+         * @param TokenPagination $tokenPagination
+         */
+        public function setTokenPagination(TokenPagination $tokenPagination)
+        {
+        }
+        /**
+         * @return TokenPagination
+         */
+        public function getTokenPagination()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PageInfo
+     * Runtime class alias of \Google\Service\AndroidEnterprise\ProductsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageInfo()
-    {
-    }
-    /**
-     * Information about a product (e.g. an app) in the Google Play store, for
-     * display to an enterprise admin.
-     *
-     * @param Product[] $product
-     */
-    public function setProduct($product)
-    {
-    }
-    /**
-     * @return Product[]
-     */
-    public function getProduct()
-    {
-    }
-    /**
-     * Pagination information for token pagination.
-     *
-     * @param TokenPagination $tokenPagination
-     */
-    public function setTokenPagination(TokenPagination $tokenPagination)
-    {
-    }
-    /**
-     * @return TokenPagination
-     */
-    public function getTokenPagination()
+    class Google_Service_AndroidEnterprise_ProductsListResponse extends \Google\Service\AndroidEnterprise\ProductsListResponse
     {
     }
 }

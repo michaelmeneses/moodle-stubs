@@ -21,32 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization\Resource;
-
-/**
- * The "policies" collection of methods.
- * Typical usage is:
- *  <code>
- *   $binaryauthorizationService = new Google\Service\BinaryAuthorization(...);
- *   $policies = $binaryauthorizationService->projects_platforms_gke_policies;
- *  </code>
- */
-class ProjectsPlatformsGkePolicies extends \Google\Service\Resource
-{
+namespace Google\Service\BinaryAuthorization\Resource {
+    use Google\Service\BinaryAuthorization\EvaluateGkePolicyRequest;
+    use Google\Service\BinaryAuthorization\EvaluateGkePolicyResponse;
     /**
-     * Evaluates a Kubernetes object versus a GKE platform policy. Returns
-     * `NOT_FOUND` if the policy doesn't exist, `INVALID_ARGUMENT` if the policy or
-     * request is malformed and `PERMISSION_DENIED` if the client does not have
-     * sufficient permissions. (policies.evaluate)
-     *
-     * @param string $name Required. The name of the platform policy to evaluate in
-     * the format `projects/platforms/policies`.
-     * @param EvaluateGkePolicyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return EvaluateGkePolicyResponse
-     * @throws \Google\Service\Exception
+     * The "policies" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $binaryauthorizationService = new Google\Service\BinaryAuthorization(...);
+     *   $policies = $binaryauthorizationService->projects_platforms_gke_policies;
+     *  </code>
      */
-    public function evaluate($name, EvaluateGkePolicyRequest $postBody, $optParams = [])
+    class ProjectsPlatformsGkePolicies extends \Google\Service\Resource
+    {
+        /**
+         * Evaluates a Kubernetes object versus a GKE platform policy. Returns
+         * `NOT_FOUND` if the policy doesn't exist, `INVALID_ARGUMENT` if the policy or
+         * request is malformed and `PERMISSION_DENIED` if the client does not have
+         * sufficient permissions. (policies.evaluate)
+         *
+         * @param string $name Required. The name of the platform policy to evaluate in
+         * the format `projects/platforms/policies`.
+         * @param EvaluateGkePolicyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return EvaluateGkePolicyResponse
+         * @throws \Google\Service\Exception
+         */
+        public function evaluate($name, EvaluateGkePolicyRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\BinaryAuthorization\Resource\ProjectsPlatformsGkePolicies registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_BinaryAuthorization_Resource_ProjectsPlatformsGkePolicies extends \Google\Service\BinaryAuthorization\Resource\ProjectsPlatformsGkePolicies
     {
     }
 }

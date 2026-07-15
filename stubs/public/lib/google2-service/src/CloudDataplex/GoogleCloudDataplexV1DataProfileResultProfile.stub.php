@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataProfileResultProfile extends \Google\Collection
-{
-    protected $collection_key = 'fields';
-    protected $fieldsType = GoogleCloudDataplexV1DataProfileResultProfileField::class;
-    protected $fieldsDataType = 'array';
-    /**
-     * Output only. List of fields with structural and profile information for
-     * each field.
-     *
-     * @param GoogleCloudDataplexV1DataProfileResultProfileField[] $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataProfileResultProfile extends \Google\Collection
     {
+        protected $collection_key = 'fields';
+        protected $fieldsType = GoogleCloudDataplexV1DataProfileResultProfileField::class;
+        protected $fieldsDataType = 'array';
+        /**
+         * Output only. List of fields with structural and profile information for
+         * each field.
+         *
+         * @param GoogleCloudDataplexV1DataProfileResultProfileField[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataProfileResultProfileField[]
+         */
+        public function getFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1DataProfileResultProfileField[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataProfileResultProfile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataProfileResultProfile extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataProfileResultProfile
     {
     }
 }

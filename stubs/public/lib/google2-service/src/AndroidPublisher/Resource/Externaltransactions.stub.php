@@ -21,66 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher\Resource;
-
-/**
- * The "externaltransactions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $externaltransactions = $androidpublisherService->externaltransactions;
- *  </code>
- */
-class Externaltransactions extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidPublisher\Resource {
+    use Google\Service\AndroidPublisher\ExternalTransaction;
+    use Google\Service\AndroidPublisher\RefundExternalTransactionRequest;
     /**
-     * Creates a new external transaction.
-     * (externaltransactions.createexternaltransaction)
-     *
-     * @param string $parent Required. The parent resource where this external
-     * transaction will be created. Format: applications/{package_name}
-     * @param ExternalTransaction $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string externalTransactionId Required. The id to use for the
-     * external transaction. Must be unique across all other transactions for the
-     * app. This value should be 1-63 characters and valid characters are
-     * /a-zA-Z0-9_-/. Do not use this field to store any Personally Identifiable
-     * Information (PII) such as emails. Attempting to store PII in this field may
-     * result in requests being blocked.
-     * @return ExternalTransaction
-     * @throws \Google\Service\Exception
+     * The "externaltransactions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
+     *   $externaltransactions = $androidpublisherService->externaltransactions;
+     *  </code>
      */
-    public function createexternaltransaction($parent, ExternalTransaction $postBody, $optParams = [])
+    class Externaltransactions extends \Google\Service\Resource
     {
+        /**
+         * Creates a new external transaction.
+         * (externaltransactions.createexternaltransaction)
+         *
+         * @param string $parent Required. The parent resource where this external
+         * transaction will be created. Format: applications/{package_name}
+         * @param ExternalTransaction $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string externalTransactionId Required. The id to use for the
+         * external transaction. Must be unique across all other transactions for the
+         * app. This value should be 1-63 characters and valid characters are
+         * /a-zA-Z0-9_-/. Do not use this field to store any Personally Identifiable
+         * Information (PII) such as emails. Attempting to store PII in this field may
+         * result in requests being blocked.
+         * @return ExternalTransaction
+         * @throws \Google\Service\Exception
+         */
+        public function createexternaltransaction($parent, ExternalTransaction $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets an existing external transaction.
+         * (externaltransactions.getexternaltransaction)
+         *
+         * @param string $name Required. The name of the external transaction to
+         * retrieve. Format:
+         * applications/{package_name}/externalTransactions/{external_transaction}
+         * @param array $optParams Optional parameters.
+         * @return ExternalTransaction
+         * @throws \Google\Service\Exception
+         */
+        public function getexternaltransaction($name, $optParams = [])
+        {
+        }
+        /**
+         * Refunds or partially refunds an existing external transaction.
+         * (externaltransactions.refundexternaltransaction)
+         *
+         * @param string $name Required. The name of the external transaction that will
+         * be refunded. Format:
+         * applications/{package_name}/externalTransactions/{external_transaction}
+         * @param RefundExternalTransactionRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ExternalTransaction
+         * @throws \Google\Service\Exception
+         */
+        public function refundexternaltransaction($name, RefundExternalTransactionRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets an existing external transaction.
-     * (externaltransactions.getexternaltransaction)
-     *
-     * @param string $name Required. The name of the external transaction to
-     * retrieve. Format:
-     * applications/{package_name}/externalTransactions/{external_transaction}
-     * @param array $optParams Optional parameters.
-     * @return ExternalTransaction
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidPublisher\Resource\Externaltransactions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getexternaltransaction($name, $optParams = [])
-    {
-    }
-    /**
-     * Refunds or partially refunds an existing external transaction.
-     * (externaltransactions.refundexternaltransaction)
-     *
-     * @param string $name Required. The name of the external transaction that will
-     * be refunded. Format:
-     * applications/{package_name}/externalTransactions/{external_transaction}
-     * @param RefundExternalTransactionRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ExternalTransaction
-     * @throws \Google\Service\Exception
-     */
-    public function refundexternaltransaction($name, RefundExternalTransactionRequest $postBody, $optParams = [])
+    class Google_Service_AndroidPublisher_Resource_Externaltransactions extends \Google\Service\AndroidPublisher\Resource\Externaltransactions
     {
     }
 }

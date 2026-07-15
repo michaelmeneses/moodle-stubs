@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class GcfsConfig extends \Google\Model
-{
-    /**
-     * Whether to use GCFS.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Whether to use GCFS.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\Container {
+    class GcfsConfig extends \Google\Model
     {
+        /**
+         * Whether to use GCFS.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Whether to use GCFS.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\GcfsConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
+    class Google_Service_Container_GcfsConfig extends \Google\Service\Container\GcfsConfig
     {
     }
 }

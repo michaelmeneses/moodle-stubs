@@ -21,179 +21,188 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class CloudAiLargeModelsVisionImage extends \Google\Model
-{
-    /**
-     * Image encoding, encoded as "image/png" or "image/jpg".
-     *
-     * @var string
-     */
-    public $encoding;
-    /**
-     * Generation seed for the sampled image. This parameter is exposed to the
-     * user only if one of the following is true: 1. The user specified per-
-     * example seeds in the request. 2. The user doesn't specify the generation
-     * seed in the request.
-     *
-     * @var int
-     */
-    public $generationSeed;
-    /**
-     * Raw bytes.
-     *
-     * @var string
-     */
-    public $image;
-    protected $imageRaiScoresType = CloudAiLargeModelsVisionImageRAIScores::class;
-    protected $imageRaiScoresDataType = '';
-    protected $imageSizeType = CloudAiLargeModelsVisionImageImageSize::class;
-    protected $imageSizeDataType = '';
-    protected $raiInfoType = CloudAiLargeModelsVisionRaiInfo::class;
-    protected $raiInfoDataType = '';
-    protected $semanticFilterResponseType = CloudAiLargeModelsVisionSemanticFilterResponse::class;
-    protected $semanticFilterResponseDataType = '';
-    /**
-     * Text/Expanded text input for imagen.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Path to another storage (typically Google Cloud Storage).
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Image encoding, encoded as "image/png" or "image/jpg".
-     *
-     * @param string $encoding
-     */
-    public function setEncoding($encoding)
+namespace Google\Service\Aiplatform {
+    class CloudAiLargeModelsVisionImage extends \Google\Model
     {
+        /**
+         * Image encoding, encoded as "image/png" or "image/jpg".
+         *
+         * @var string
+         */
+        public $encoding;
+        /**
+         * Generation seed for the sampled image. This parameter is exposed to the
+         * user only if one of the following is true: 1. The user specified per-
+         * example seeds in the request. 2. The user doesn't specify the generation
+         * seed in the request.
+         *
+         * @var int
+         */
+        public $generationSeed;
+        /**
+         * Raw bytes.
+         *
+         * @var string
+         */
+        public $image;
+        protected $imageRaiScoresType = CloudAiLargeModelsVisionImageRAIScores::class;
+        protected $imageRaiScoresDataType = '';
+        protected $imageSizeType = CloudAiLargeModelsVisionImageImageSize::class;
+        protected $imageSizeDataType = '';
+        protected $raiInfoType = CloudAiLargeModelsVisionRaiInfo::class;
+        protected $raiInfoDataType = '';
+        protected $semanticFilterResponseType = CloudAiLargeModelsVisionSemanticFilterResponse::class;
+        protected $semanticFilterResponseDataType = '';
+        /**
+         * Text/Expanded text input for imagen.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Path to another storage (typically Google Cloud Storage).
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Image encoding, encoded as "image/png" or "image/jpg".
+         *
+         * @param string $encoding
+         */
+        public function setEncoding($encoding)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncoding()
+        {
+        }
+        /**
+         * Generation seed for the sampled image. This parameter is exposed to the
+         * user only if one of the following is true: 1. The user specified per-
+         * example seeds in the request. 2. The user doesn't specify the generation
+         * seed in the request.
+         *
+         * @param int $generationSeed
+         */
+        public function setGenerationSeed($generationSeed)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getGenerationSeed()
+        {
+        }
+        /**
+         * Raw bytes.
+         *
+         * @param string $image
+         */
+        public function setImage($image)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * RAI scores for generated image.
+         *
+         * @param CloudAiLargeModelsVisionImageRAIScores $imageRaiScores
+         */
+        public function setImageRaiScores(CloudAiLargeModelsVisionImageRAIScores $imageRaiScores)
+        {
+        }
+        /**
+         * @return CloudAiLargeModelsVisionImageRAIScores
+         */
+        public function getImageRaiScores()
+        {
+        }
+        /**
+         * Image size. The size of the image. Can be self reported, or computed from
+         * the image bytes.
+         *
+         * @param CloudAiLargeModelsVisionImageImageSize $imageSize
+         */
+        public function setImageSize(CloudAiLargeModelsVisionImageImageSize $imageSize)
+        {
+        }
+        /**
+         * @return CloudAiLargeModelsVisionImageImageSize
+         */
+        public function getImageSize()
+        {
+        }
+        /**
+         * RAI info for image.
+         *
+         * @param CloudAiLargeModelsVisionRaiInfo $raiInfo
+         */
+        public function setRaiInfo(CloudAiLargeModelsVisionRaiInfo $raiInfo)
+        {
+        }
+        /**
+         * @return CloudAiLargeModelsVisionRaiInfo
+         */
+        public function getRaiInfo()
+        {
+        }
+        /**
+         * Semantic filter info for image.
+         *
+         * @param CloudAiLargeModelsVisionSemanticFilterResponse $semanticFilterResponse
+         */
+        public function setSemanticFilterResponse(CloudAiLargeModelsVisionSemanticFilterResponse $semanticFilterResponse)
+        {
+        }
+        /**
+         * @return CloudAiLargeModelsVisionSemanticFilterResponse
+         */
+        public function getSemanticFilterResponse()
+        {
+        }
+        /**
+         * Text/Expanded text input for imagen.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * Path to another storage (typically Google Cloud Storage).
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\CloudAiLargeModelsVisionImage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncoding()
-    {
-    }
-    /**
-     * Generation seed for the sampled image. This parameter is exposed to the
-     * user only if one of the following is true: 1. The user specified per-
-     * example seeds in the request. 2. The user doesn't specify the generation
-     * seed in the request.
-     *
-     * @param int $generationSeed
-     */
-    public function setGenerationSeed($generationSeed)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getGenerationSeed()
-    {
-    }
-    /**
-     * Raw bytes.
-     *
-     * @param string $image
-     */
-    public function setImage($image)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * RAI scores for generated image.
-     *
-     * @param CloudAiLargeModelsVisionImageRAIScores $imageRaiScores
-     */
-    public function setImageRaiScores(CloudAiLargeModelsVisionImageRAIScores $imageRaiScores)
-    {
-    }
-    /**
-     * @return CloudAiLargeModelsVisionImageRAIScores
-     */
-    public function getImageRaiScores()
-    {
-    }
-    /**
-     * Image size. The size of the image. Can be self reported, or computed from
-     * the image bytes.
-     *
-     * @param CloudAiLargeModelsVisionImageImageSize $imageSize
-     */
-    public function setImageSize(CloudAiLargeModelsVisionImageImageSize $imageSize)
-    {
-    }
-    /**
-     * @return CloudAiLargeModelsVisionImageImageSize
-     */
-    public function getImageSize()
-    {
-    }
-    /**
-     * RAI info for image.
-     *
-     * @param CloudAiLargeModelsVisionRaiInfo $raiInfo
-     */
-    public function setRaiInfo(CloudAiLargeModelsVisionRaiInfo $raiInfo)
-    {
-    }
-    /**
-     * @return CloudAiLargeModelsVisionRaiInfo
-     */
-    public function getRaiInfo()
-    {
-    }
-    /**
-     * Semantic filter info for image.
-     *
-     * @param CloudAiLargeModelsVisionSemanticFilterResponse $semanticFilterResponse
-     */
-    public function setSemanticFilterResponse(CloudAiLargeModelsVisionSemanticFilterResponse $semanticFilterResponse)
-    {
-    }
-    /**
-     * @return CloudAiLargeModelsVisionSemanticFilterResponse
-     */
-    public function getSemanticFilterResponse()
-    {
-    }
-    /**
-     * Text/Expanded text input for imagen.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
-    {
-    }
-    /**
-     * Path to another storage (typically Google Cloud Storage).
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Aiplatform_CloudAiLargeModelsVisionImage extends \Google\Service\Aiplatform\CloudAiLargeModelsVisionImage
     {
     }
 }

@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GroupMembership extends \Google\Model
-{
-    /**
-     * Default value.
-     */
-    public const GROUP_TYPE_GROUP_TYPE_UNSPECIFIED = 'GROUP_TYPE_UNSPECIFIED';
-    /**
-     * Group represents a toxic combination.
-     */
-    public const GROUP_TYPE_GROUP_TYPE_TOXIC_COMBINATION = 'GROUP_TYPE_TOXIC_COMBINATION';
-    /**
-     * Group represents a chokepoint.
-     */
-    public const GROUP_TYPE_GROUP_TYPE_CHOKEPOINT = 'GROUP_TYPE_CHOKEPOINT';
-    /**
-     * ID of the group.
-     *
-     * @var string
-     */
-    public $groupId;
-    /**
-     * Type of group.
-     *
-     * @var string
-     */
-    public $groupType;
-    /**
-     * ID of the group.
-     *
-     * @param string $groupId
-     */
-    public function setGroupId($groupId)
+namespace Google\Service\SecurityCommandCenter {
+    class GroupMembership extends \Google\Model
     {
+        /**
+         * Default value.
+         */
+        public const GROUP_TYPE_GROUP_TYPE_UNSPECIFIED = 'GROUP_TYPE_UNSPECIFIED';
+        /**
+         * Group represents a toxic combination.
+         */
+        public const GROUP_TYPE_GROUP_TYPE_TOXIC_COMBINATION = 'GROUP_TYPE_TOXIC_COMBINATION';
+        /**
+         * Group represents a chokepoint.
+         */
+        public const GROUP_TYPE_GROUP_TYPE_CHOKEPOINT = 'GROUP_TYPE_CHOKEPOINT';
+        /**
+         * ID of the group.
+         *
+         * @var string
+         */
+        public $groupId;
+        /**
+         * Type of group.
+         *
+         * @var string
+         */
+        public $groupType;
+        /**
+         * ID of the group.
+         *
+         * @param string $groupId
+         */
+        public function setGroupId($groupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroupId()
+        {
+        }
+        /**
+         * Type of group.
+         *
+         * Accepted values: GROUP_TYPE_UNSPECIFIED, GROUP_TYPE_TOXIC_COMBINATION,
+         * GROUP_TYPE_CHOKEPOINT
+         *
+         * @param self::GROUP_TYPE_* $groupType
+         */
+        public function setGroupType($groupType)
+        {
+        }
+        /**
+         * @return self::GROUP_TYPE_*
+         */
+        public function getGroupType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GroupMembership registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroupId()
-    {
-    }
-    /**
-     * Type of group.
-     *
-     * Accepted values: GROUP_TYPE_UNSPECIFIED, GROUP_TYPE_TOXIC_COMBINATION,
-     * GROUP_TYPE_CHOKEPOINT
-     *
-     * @param self::GROUP_TYPE_* $groupType
-     */
-    public function setGroupType($groupType)
-    {
-    }
-    /**
-     * @return self::GROUP_TYPE_*
-     */
-    public function getGroupType()
+    class Google_Service_SecurityCommandCenter_GroupMembership extends \Google\Service\SecurityCommandCenter\GroupMembership
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionStringRange extends \Google\Model
-{
-    /**
-     * Zero-based offset of the last Unicode character (exclusive).
-     *
-     * @var int
-     */
-    public $endOffset;
-    /**
-     * Zero-based offset of the first Unicode character of the string (inclusive).
-     *
-     * @var int
-     */
-    public $startOffset;
-    /**
-     * Zero-based offset of the last Unicode character (exclusive).
-     *
-     * @param int $endOffset
-     */
-    public function setEndOffset($endOffset)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionStringRange extends \Google\Model
     {
+        /**
+         * Zero-based offset of the last Unicode character (exclusive).
+         *
+         * @var int
+         */
+        public $endOffset;
+        /**
+         * Zero-based offset of the first Unicode character of the string (inclusive).
+         *
+         * @var int
+         */
+        public $startOffset;
+        /**
+         * Zero-based offset of the last Unicode character (exclusive).
+         *
+         * @param int $endOffset
+         */
+        public function setEndOffset($endOffset)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEndOffset()
+        {
+        }
+        /**
+         * Zero-based offset of the first Unicode character of the string (inclusive).
+         *
+         * @param int $startOffset
+         */
+        public function setStartOffset($startOffset)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartOffset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionStringRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndOffset()
-    {
-    }
-    /**
-     * Zero-based offset of the first Unicode character of the string (inclusive).
-     *
-     * @param int $startOffset
-     */
-    public function setStartOffset($startOffset)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartOffset()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionStringRange extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1AutocompletePlacesResponseSuggestionStringRange
     {
     }
 }

@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1TestingOptions extends \Google\Model
-{
-    /**
-     * Perform the normal risk analysis and return either nocaptcha or a challenge
-     * depending on risk and trust factors.
-     */
-    public const TESTING_CHALLENGE_TESTING_CHALLENGE_UNSPECIFIED = 'TESTING_CHALLENGE_UNSPECIFIED';
-    /**
-     * Challenge requests for this key always return a nocaptcha, which does not
-     * require a solution.
-     */
-    public const TESTING_CHALLENGE_NOCAPTCHA = 'NOCAPTCHA';
-    /**
-     * Challenge requests for this key always return an unsolvable challenge.
-     */
-    public const TESTING_CHALLENGE_UNSOLVABLE_CHALLENGE = 'UNSOLVABLE_CHALLENGE';
-    /**
-     * Optional. For challenge-based keys only (CHECKBOX, INVISIBLE), all
-     * challenge requests for this site return nocaptcha if NOCAPTCHA, or an
-     * unsolvable challenge if CHALLENGE.
-     *
-     * @var string
-     */
-    public $testingChallenge;
-    /**
-     * Optional. All assessments for this Key return this score. Must be between 0
-     * (likely not legitimate) and 1 (likely legitimate) inclusive.
-     *
-     * @var float
-     */
-    public $testingScore;
-    /**
-     * Optional. For challenge-based keys only (CHECKBOX, INVISIBLE), all
-     * challenge requests for this site return nocaptcha if NOCAPTCHA, or an
-     * unsolvable challenge if CHALLENGE.
-     *
-     * Accepted values: TESTING_CHALLENGE_UNSPECIFIED, NOCAPTCHA,
-     * UNSOLVABLE_CHALLENGE
-     *
-     * @param self::TESTING_CHALLENGE_* $testingChallenge
-     */
-    public function setTestingChallenge($testingChallenge)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1TestingOptions extends \Google\Model
     {
+        /**
+         * Perform the normal risk analysis and return either nocaptcha or a challenge
+         * depending on risk and trust factors.
+         */
+        public const TESTING_CHALLENGE_TESTING_CHALLENGE_UNSPECIFIED = 'TESTING_CHALLENGE_UNSPECIFIED';
+        /**
+         * Challenge requests for this key always return a nocaptcha, which does not
+         * require a solution.
+         */
+        public const TESTING_CHALLENGE_NOCAPTCHA = 'NOCAPTCHA';
+        /**
+         * Challenge requests for this key always return an unsolvable challenge.
+         */
+        public const TESTING_CHALLENGE_UNSOLVABLE_CHALLENGE = 'UNSOLVABLE_CHALLENGE';
+        /**
+         * Optional. For challenge-based keys only (CHECKBOX, INVISIBLE), all
+         * challenge requests for this site return nocaptcha if NOCAPTCHA, or an
+         * unsolvable challenge if CHALLENGE.
+         *
+         * @var string
+         */
+        public $testingChallenge;
+        /**
+         * Optional. All assessments for this Key return this score. Must be between 0
+         * (likely not legitimate) and 1 (likely legitimate) inclusive.
+         *
+         * @var float
+         */
+        public $testingScore;
+        /**
+         * Optional. For challenge-based keys only (CHECKBOX, INVISIBLE), all
+         * challenge requests for this site return nocaptcha if NOCAPTCHA, or an
+         * unsolvable challenge if CHALLENGE.
+         *
+         * Accepted values: TESTING_CHALLENGE_UNSPECIFIED, NOCAPTCHA,
+         * UNSOLVABLE_CHALLENGE
+         *
+         * @param self::TESTING_CHALLENGE_* $testingChallenge
+         */
+        public function setTestingChallenge($testingChallenge)
+        {
+        }
+        /**
+         * @return self::TESTING_CHALLENGE_*
+         */
+        public function getTestingChallenge()
+        {
+        }
+        /**
+         * Optional. All assessments for this Key return this score. Must be between 0
+         * (likely not legitimate) and 1 (likely legitimate) inclusive.
+         *
+         * @param float $testingScore
+         */
+        public function setTestingScore($testingScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getTestingScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TESTING_CHALLENGE_*
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1TestingOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTestingChallenge()
-    {
-    }
-    /**
-     * Optional. All assessments for this Key return this score. Must be between 0
-     * (likely not legitimate) and 1 (likely legitimate) inclusive.
-     *
-     * @param float $testingScore
-     */
-    public function setTestingScore($testingScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getTestingScore()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1TestingOptions extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1TestingOptions
     {
     }
 }

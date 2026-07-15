@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class QueryCountByStatus extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $count;
-    /**
-     * This represents the http status code.
-     *
-     * @var int
-     */
-    public $statusCode;
-    /**
-     * @param string $count
-     */
-    public function setCount($count)
+namespace Google\Service\CloudSearch {
+    class QueryCountByStatus extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $count;
+        /**
+         * This represents the http status code.
+         *
+         * @var int
+         */
+        public $statusCode;
+        /**
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * This represents the http status code.
+         *
+         * @param int $statusCode
+         */
+        public function setStatusCode($statusCode)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStatusCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\QueryCountByStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * This represents the http status code.
-     *
-     * @param int $statusCode
-     */
-    public function setStatusCode($statusCode)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStatusCode()
+    class Google_Service_CloudSearch_QueryCountByStatus extends \Google\Service\CloudSearch\QueryCountByStatus
     {
     }
 }

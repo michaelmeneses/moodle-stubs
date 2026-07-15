@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class LoadInstanceAuthInfoResponse extends \Google\Collection
-{
-    protected $collection_key = 'sshKeys';
-    protected $sshKeysType = SSHKey::class;
-    protected $sshKeysDataType = 'array';
-    protected $userAccountsType = UserAccount::class;
-    protected $userAccountsDataType = 'map';
-    /**
-     * List of ssh keys.
-     *
-     * @param SSHKey[] $sshKeys
-     */
-    public function setSshKeys($sshKeys)
+namespace Google\Service\Baremetalsolution {
+    class LoadInstanceAuthInfoResponse extends \Google\Collection
     {
+        protected $collection_key = 'sshKeys';
+        protected $sshKeysType = SSHKey::class;
+        protected $sshKeysDataType = 'array';
+        protected $userAccountsType = UserAccount::class;
+        protected $userAccountsDataType = 'map';
+        /**
+         * List of ssh keys.
+         *
+         * @param SSHKey[] $sshKeys
+         */
+        public function setSshKeys($sshKeys)
+        {
+        }
+        /**
+         * @return SSHKey[]
+         */
+        public function getSshKeys()
+        {
+        }
+        /**
+         * Map of username to the user account info.
+         *
+         * @param UserAccount[] $userAccounts
+         */
+        public function setUserAccounts($userAccounts)
+        {
+        }
+        /**
+         * @return UserAccount[]
+         */
+        public function getUserAccounts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SSHKey[]
+     * Runtime class alias of \Google\Service\Baremetalsolution\LoadInstanceAuthInfoResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSshKeys()
-    {
-    }
-    /**
-     * Map of username to the user account info.
-     *
-     * @param UserAccount[] $userAccounts
-     */
-    public function setUserAccounts($userAccounts)
-    {
-    }
-    /**
-     * @return UserAccount[]
-     */
-    public function getUserAccounts()
+    class Google_Service_Baremetalsolution_LoadInstanceAuthInfoResponse extends \Google\Service\Baremetalsolution\LoadInstanceAuthInfoResponse
     {
     }
 }

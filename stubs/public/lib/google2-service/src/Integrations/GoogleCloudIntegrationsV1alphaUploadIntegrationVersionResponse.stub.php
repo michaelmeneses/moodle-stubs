@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaUploadIntegrationVersionResponse extends \Google\Model
-{
-    protected $integrationVersionType = GoogleCloudIntegrationsV1alphaIntegrationVersion::class;
-    protected $integrationVersionDataType = '';
-    /**
-     * The uploaded integration.
-     *
-     * @param GoogleCloudIntegrationsV1alphaIntegrationVersion $integrationVersion
-     */
-    public function setIntegrationVersion(GoogleCloudIntegrationsV1alphaIntegrationVersion $integrationVersion)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaUploadIntegrationVersionResponse extends \Google\Model
     {
+        protected $integrationVersionType = GoogleCloudIntegrationsV1alphaIntegrationVersion::class;
+        protected $integrationVersionDataType = '';
+        /**
+         * The uploaded integration.
+         *
+         * @param GoogleCloudIntegrationsV1alphaIntegrationVersion $integrationVersion
+         */
+        public function setIntegrationVersion(GoogleCloudIntegrationsV1alphaIntegrationVersion $integrationVersion)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaIntegrationVersion
+         */
+        public function getIntegrationVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaIntegrationVersion
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUploadIntegrationVersionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntegrationVersion()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaUploadIntegrationVersionResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUploadIntegrationVersionResponse
     {
     }
 }

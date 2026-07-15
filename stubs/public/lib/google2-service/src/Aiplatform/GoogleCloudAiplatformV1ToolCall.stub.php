@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ToolCall extends \Google\Model
-{
-    /**
-     * Optional. Spec for tool input
-     *
-     * @var string
-     */
-    public $toolInput;
-    /**
-     * Required. Spec for tool name
-     *
-     * @var string
-     */
-    public $toolName;
-    /**
-     * Optional. Spec for tool input
-     *
-     * @param string $toolInput
-     */
-    public function setToolInput($toolInput)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ToolCall extends \Google\Model
     {
+        /**
+         * Optional. Spec for tool input
+         *
+         * @var string
+         */
+        public $toolInput;
+        /**
+         * Required. Spec for tool name
+         *
+         * @var string
+         */
+        public $toolName;
+        /**
+         * Optional. Spec for tool input
+         *
+         * @param string $toolInput
+         */
+        public function setToolInput($toolInput)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToolInput()
+        {
+        }
+        /**
+         * Required. Spec for tool name
+         *
+         * @param string $toolName
+         */
+        public function setToolName($toolName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToolName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ToolCall registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getToolInput()
-    {
-    }
-    /**
-     * Required. Spec for tool name
-     *
-     * @param string $toolName
-     */
-    public function setToolName($toolName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getToolName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ToolCall extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ToolCall
     {
     }
 }

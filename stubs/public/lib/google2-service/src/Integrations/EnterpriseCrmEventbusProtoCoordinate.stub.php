@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoCoordinate extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $x;
-    /**
-     * @var int
-     */
-    public $y;
-    /**
-     * @param int $x
-     */
-    public function setX($x)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoCoordinate extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $x;
+        /**
+         * @var int
+         */
+        public $y;
+        /**
+         * @param int $x
+         */
+        public function setX($x)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getX()
+        {
+        }
+        /**
+         * @param int $y
+         */
+        public function setY($y)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getY()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoCoordinate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getX()
-    {
-    }
-    /**
-     * @param int $y
-     */
-    public function setY($y)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getY()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoCoordinate extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoCoordinate
     {
     }
 }

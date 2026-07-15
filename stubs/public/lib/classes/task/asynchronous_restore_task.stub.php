@@ -29,6 +29,7 @@
  */
 namespace core\task;
 
+use async_helper;
 /**
  * Adhoc task that performs asynchronous restores.
  *

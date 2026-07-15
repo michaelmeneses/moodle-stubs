@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class ContactToCreate extends \Google\Model
-{
-    protected $contactPersonType = Person::class;
-    protected $contactPersonDataType = '';
-    /**
-     * Required. The person data to populate a newly created source.
-     *
-     * @param Person $contactPerson
-     */
-    public function setContactPerson(Person $contactPerson)
+namespace Google\Service\PeopleService {
+    class ContactToCreate extends \Google\Model
     {
+        protected $contactPersonType = Person::class;
+        protected $contactPersonDataType = '';
+        /**
+         * Required. The person data to populate a newly created source.
+         *
+         * @param Person $contactPerson
+         */
+        public function setContactPerson(Person $contactPerson)
+        {
+        }
+        /**
+         * @return Person
+         */
+        public function getContactPerson()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Person
+     * Runtime class alias of \Google\Service\PeopleService\ContactToCreate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContactPerson()
+    class Google_Service_PeopleService_ContactToCreate extends \Google\Service\PeopleService\ContactToCreate
     {
     }
 }

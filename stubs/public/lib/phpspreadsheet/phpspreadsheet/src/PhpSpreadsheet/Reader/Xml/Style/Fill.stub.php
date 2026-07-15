@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader\Xml\Style;
 
+use PhpOffice\PhpSpreadsheet\Style\Fill as FillStyles;
+use SimpleXMLElement;
 class Fill extends StyleBase
 {
     public const FILL_MAPPINGS = ['fillType' => [

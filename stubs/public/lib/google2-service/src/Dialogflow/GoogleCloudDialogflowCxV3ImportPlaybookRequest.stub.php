@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ImportPlaybookRequest extends \Google\Model
-{
-    protected $importStrategyType = GoogleCloudDialogflowCxV3PlaybookImportStrategy::class;
-    protected $importStrategyDataType = '';
-    /**
-     * Uncompressed raw byte content for playbook.
-     *
-     * @var string
-     */
-    public $playbookContent;
-    /**
-     * [Dialogflow access control]
-     * (https://cloud.google.com/dialogflow/cx/docs/concept/access-
-     * control#storage).
-     *
-     * @var string
-     */
-    public $playbookUri;
-    /**
-     * Optional. Specifies the import strategy used when resolving resource
-     * conflicts.
-     *
-     * @param GoogleCloudDialogflowCxV3PlaybookImportStrategy $importStrategy
-     */
-    public function setImportStrategy(GoogleCloudDialogflowCxV3PlaybookImportStrategy $importStrategy)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ImportPlaybookRequest extends \Google\Model
     {
+        protected $importStrategyType = GoogleCloudDialogflowCxV3PlaybookImportStrategy::class;
+        protected $importStrategyDataType = '';
+        /**
+         * Uncompressed raw byte content for playbook.
+         *
+         * @var string
+         */
+        public $playbookContent;
+        /**
+         * [Dialogflow access control]
+         * (https://cloud.google.com/dialogflow/cx/docs/concept/access-
+         * control#storage).
+         *
+         * @var string
+         */
+        public $playbookUri;
+        /**
+         * Optional. Specifies the import strategy used when resolving resource
+         * conflicts.
+         *
+         * @param GoogleCloudDialogflowCxV3PlaybookImportStrategy $importStrategy
+         */
+        public function setImportStrategy(GoogleCloudDialogflowCxV3PlaybookImportStrategy $importStrategy)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3PlaybookImportStrategy
+         */
+        public function getImportStrategy()
+        {
+        }
+        /**
+         * Uncompressed raw byte content for playbook.
+         *
+         * @param string $playbookContent
+         */
+        public function setPlaybookContent($playbookContent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlaybookContent()
+        {
+        }
+        /**
+         * [Dialogflow access control]
+         * (https://cloud.google.com/dialogflow/cx/docs/concept/access-
+         * control#storage).
+         *
+         * @param string $playbookUri
+         */
+        public function setPlaybookUri($playbookUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlaybookUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3PlaybookImportStrategy
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ImportPlaybookRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImportStrategy()
-    {
-    }
-    /**
-     * Uncompressed raw byte content for playbook.
-     *
-     * @param string $playbookContent
-     */
-    public function setPlaybookContent($playbookContent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlaybookContent()
-    {
-    }
-    /**
-     * [Dialogflow access control]
-     * (https://cloud.google.com/dialogflow/cx/docs/concept/access-
-     * control#storage).
-     *
-     * @param string $playbookUri
-     */
-    public function setPlaybookUri($playbookUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlaybookUri()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ImportPlaybookRequest extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ImportPlaybookRequest
     {
     }
 }

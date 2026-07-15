@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class Editors extends \Google\Collection
-{
-    protected $collection_key = 'users';
-    /**
-     * True if anyone in the document's domain has edit access to the protected
-     * range. Domain protection is only supported on documents within a domain.
-     *
-     * @var bool
-     */
-    public $domainUsersCanEdit;
-    /**
-     * The email addresses of groups with edit access to the protected range.
-     *
-     * @var string[]
-     */
-    public $groups;
-    /**
-     * The email addresses of users with edit access to the protected range.
-     *
-     * @var string[]
-     */
-    public $users;
-    /**
-     * True if anyone in the document's domain has edit access to the protected
-     * range. Domain protection is only supported on documents within a domain.
-     *
-     * @param bool $domainUsersCanEdit
-     */
-    public function setDomainUsersCanEdit($domainUsersCanEdit)
+namespace Google\Service\Sheets {
+    class Editors extends \Google\Collection
     {
+        protected $collection_key = 'users';
+        /**
+         * True if anyone in the document's domain has edit access to the protected
+         * range. Domain protection is only supported on documents within a domain.
+         *
+         * @var bool
+         */
+        public $domainUsersCanEdit;
+        /**
+         * The email addresses of groups with edit access to the protected range.
+         *
+         * @var string[]
+         */
+        public $groups;
+        /**
+         * The email addresses of users with edit access to the protected range.
+         *
+         * @var string[]
+         */
+        public $users;
+        /**
+         * True if anyone in the document's domain has edit access to the protected
+         * range. Domain protection is only supported on documents within a domain.
+         *
+         * @param bool $domainUsersCanEdit
+         */
+        public function setDomainUsersCanEdit($domainUsersCanEdit)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDomainUsersCanEdit()
+        {
+        }
+        /**
+         * The email addresses of groups with edit access to the protected range.
+         *
+         * @param string[] $groups
+         */
+        public function setGroups($groups)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getGroups()
+        {
+        }
+        /**
+         * The email addresses of users with edit access to the protected range.
+         *
+         * @param string[] $users
+         */
+        public function setUsers($users)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUsers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Sheets\Editors registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomainUsersCanEdit()
-    {
-    }
-    /**
-     * The email addresses of groups with edit access to the protected range.
-     *
-     * @param string[] $groups
-     */
-    public function setGroups($groups)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getGroups()
-    {
-    }
-    /**
-     * The email addresses of users with edit access to the protected range.
-     *
-     * @param string[] $users
-     */
-    public function setUsers($users)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUsers()
+    class Google_Service_Sheets_Editors extends \Google\Service\Sheets\Editors
     {
     }
 }

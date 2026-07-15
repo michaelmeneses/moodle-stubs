@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ThirdPartyGenericCard extends \Google\Model
-{
-    /**
-     * Unique identifier for the card.
-     *
-     * @var string
-     */
-    public $cardId;
-    /**
-     * Category that the card belongs to.
-     *
-     * @var string
-     */
-    public $category;
-    protected $contentType = Content::class;
-    protected $contentDataType = '';
-    protected $contextType = Context::class;
-    protected $contextDataType = '';
-    /**
-     * Whether the card can be dismissed.
-     *
-     * @var bool
-     */
-    public $isDismissible;
-    /**
-     * Priority of the card, where 0 is the highest priority.
-     *
-     * @var int
-     */
-    public $priority;
-    /**
-     * Unique identifier for the card.
-     *
-     * @param string $cardId
-     */
-    public function setCardId($cardId)
+namespace Google\Service\CloudSearch {
+    class ThirdPartyGenericCard extends \Google\Model
     {
+        /**
+         * Unique identifier for the card.
+         *
+         * @var string
+         */
+        public $cardId;
+        /**
+         * Category that the card belongs to.
+         *
+         * @var string
+         */
+        public $category;
+        protected $contentType = Content::class;
+        protected $contentDataType = '';
+        protected $contextType = Context::class;
+        protected $contextDataType = '';
+        /**
+         * Whether the card can be dismissed.
+         *
+         * @var bool
+         */
+        public $isDismissible;
+        /**
+         * Priority of the card, where 0 is the highest priority.
+         *
+         * @var int
+         */
+        public $priority;
+        /**
+         * Unique identifier for the card.
+         *
+         * @param string $cardId
+         */
+        public function setCardId($cardId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCardId()
+        {
+        }
+        /**
+         * Category that the card belongs to.
+         *
+         * @param string $category
+         */
+        public function setCategory($category)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategory()
+        {
+        }
+        /**
+         * [Required] Card content.
+         *
+         * @param Content $content
+         */
+        public function setContent(Content $content)
+        {
+        }
+        /**
+         * @return Content
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * [Required] Context where the card should be triggered.
+         *
+         * @param Context $context
+         */
+        public function setContext(Context $context)
+        {
+        }
+        /**
+         * @return Context
+         */
+        public function getContext()
+        {
+        }
+        /**
+         * Whether the card can be dismissed.
+         *
+         * @param bool $isDismissible
+         */
+        public function setIsDismissible($isDismissible)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsDismissible()
+        {
+        }
+        /**
+         * Priority of the card, where 0 is the highest priority.
+         *
+         * @param int $priority
+         */
+        public function setPriority($priority)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPriority()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\ThirdPartyGenericCard registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCardId()
-    {
-    }
-    /**
-     * Category that the card belongs to.
-     *
-     * @param string $category
-     */
-    public function setCategory($category)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCategory()
-    {
-    }
-    /**
-     * [Required] Card content.
-     *
-     * @param Content $content
-     */
-    public function setContent(Content $content)
-    {
-    }
-    /**
-     * @return Content
-     */
-    public function getContent()
-    {
-    }
-    /**
-     * [Required] Context where the card should be triggered.
-     *
-     * @param Context $context
-     */
-    public function setContext(Context $context)
-    {
-    }
-    /**
-     * @return Context
-     */
-    public function getContext()
-    {
-    }
-    /**
-     * Whether the card can be dismissed.
-     *
-     * @param bool $isDismissible
-     */
-    public function setIsDismissible($isDismissible)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsDismissible()
-    {
-    }
-    /**
-     * Priority of the card, where 0 is the highest priority.
-     *
-     * @param int $priority
-     */
-    public function setPriority($priority)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPriority()
+    class Google_Service_CloudSearch_ThirdPartyGenericCard extends \Google\Service\CloudSearch\ThirdPartyGenericCard
     {
     }
 }

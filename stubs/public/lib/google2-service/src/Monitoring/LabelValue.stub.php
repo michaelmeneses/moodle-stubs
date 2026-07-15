@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class LabelValue extends \Google\Model
-{
-    /**
-     * A bool label value.
-     *
-     * @var bool
-     */
-    public $boolValue;
-    /**
-     * An int64 label value.
-     *
-     * @var string
-     */
-    public $int64Value;
-    /**
-     * A string label value.
-     *
-     * @var string
-     */
-    public $stringValue;
-    /**
-     * A bool label value.
-     *
-     * @param bool $boolValue
-     */
-    public function setBoolValue($boolValue)
+namespace Google\Service\Monitoring {
+    class LabelValue extends \Google\Model
     {
+        /**
+         * A bool label value.
+         *
+         * @var bool
+         */
+        public $boolValue;
+        /**
+         * An int64 label value.
+         *
+         * @var string
+         */
+        public $int64Value;
+        /**
+         * A string label value.
+         *
+         * @var string
+         */
+        public $stringValue;
+        /**
+         * A bool label value.
+         *
+         * @param bool $boolValue
+         */
+        public function setBoolValue($boolValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBoolValue()
+        {
+        }
+        /**
+         * An int64 label value.
+         *
+         * @param string $int64Value
+         */
+        public function setInt64Value($int64Value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInt64Value()
+        {
+        }
+        /**
+         * A string label value.
+         *
+         * @param string $stringValue
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Monitoring\LabelValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoolValue()
-    {
-    }
-    /**
-     * An int64 label value.
-     *
-     * @param string $int64Value
-     */
-    public function setInt64Value($int64Value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInt64Value()
-    {
-    }
-    /**
-     * A string label value.
-     *
-     * @param string $stringValue
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
+    class Google_Service_Monitoring_LabelValue extends \Google\Service\Monitoring\LabelValue
     {
     }
 }

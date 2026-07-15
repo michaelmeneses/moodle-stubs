@@ -21,172 +21,181 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2SecurityPosture extends \Google\Collection
-{
-    protected $collection_key = 'policyDriftDetails';
-    /**
-     * The name of the updated policy, for example,
-     * `projects/{project_id}/policies/{constraint_name}`.
-     *
-     * @var string
-     */
-    public $changedPolicy;
-    /**
-     * Name of the posture, for example, `CIS-Posture`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The ID of the updated policy, for example, `compute-policy-1`.
-     *
-     * @var string
-     */
-    public $policy;
-    protected $policyDriftDetailsType = GoogleCloudSecuritycenterV2PolicyDriftDetails::class;
-    protected $policyDriftDetailsDataType = 'array';
-    /**
-     * The name of the updated policy set, for example, `cis-policyset`.
-     *
-     * @var string
-     */
-    public $policySet;
-    /**
-     * The name of the posture deployment, for example,
-     * `organizations/{org_id}/posturedeployments/{posture_deployment_id}`.
-     *
-     * @var string
-     */
-    public $postureDeployment;
-    /**
-     * The project, folder, or organization on which the posture is deployed, for
-     * example, `projects/{project_number}`.
-     *
-     * @var string
-     */
-    public $postureDeploymentResource;
-    /**
-     * The version of the posture, for example, `c7cfa2a8`.
-     *
-     * @var string
-     */
-    public $revisionId;
-    /**
-     * The name of the updated policy, for example,
-     * `projects/{project_id}/policies/{constraint_name}`.
-     *
-     * @param string $changedPolicy
-     */
-    public function setChangedPolicy($changedPolicy)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2SecurityPosture extends \Google\Collection
     {
+        protected $collection_key = 'policyDriftDetails';
+        /**
+         * The name of the updated policy, for example,
+         * `projects/{project_id}/policies/{constraint_name}`.
+         *
+         * @var string
+         */
+        public $changedPolicy;
+        /**
+         * Name of the posture, for example, `CIS-Posture`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The ID of the updated policy, for example, `compute-policy-1`.
+         *
+         * @var string
+         */
+        public $policy;
+        protected $policyDriftDetailsType = GoogleCloudSecuritycenterV2PolicyDriftDetails::class;
+        protected $policyDriftDetailsDataType = 'array';
+        /**
+         * The name of the updated policy set, for example, `cis-policyset`.
+         *
+         * @var string
+         */
+        public $policySet;
+        /**
+         * The name of the posture deployment, for example,
+         * `organizations/{org_id}/posturedeployments/{posture_deployment_id}`.
+         *
+         * @var string
+         */
+        public $postureDeployment;
+        /**
+         * The project, folder, or organization on which the posture is deployed, for
+         * example, `projects/{project_number}`.
+         *
+         * @var string
+         */
+        public $postureDeploymentResource;
+        /**
+         * The version of the posture, for example, `c7cfa2a8`.
+         *
+         * @var string
+         */
+        public $revisionId;
+        /**
+         * The name of the updated policy, for example,
+         * `projects/{project_id}/policies/{constraint_name}`.
+         *
+         * @param string $changedPolicy
+         */
+        public function setChangedPolicy($changedPolicy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChangedPolicy()
+        {
+        }
+        /**
+         * Name of the posture, for example, `CIS-Posture`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The ID of the updated policy, for example, `compute-policy-1`.
+         *
+         * @param string $policy
+         */
+        public function setPolicy($policy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicy()
+        {
+        }
+        /**
+         * The details about a change in an updated policy that violates the deployed
+         * posture.
+         *
+         * @param GoogleCloudSecuritycenterV2PolicyDriftDetails[] $policyDriftDetails
+         */
+        public function setPolicyDriftDetails($policyDriftDetails)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2PolicyDriftDetails[]
+         */
+        public function getPolicyDriftDetails()
+        {
+        }
+        /**
+         * The name of the updated policy set, for example, `cis-policyset`.
+         *
+         * @param string $policySet
+         */
+        public function setPolicySet($policySet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicySet()
+        {
+        }
+        /**
+         * The name of the posture deployment, for example,
+         * `organizations/{org_id}/posturedeployments/{posture_deployment_id}`.
+         *
+         * @param string $postureDeployment
+         */
+        public function setPostureDeployment($postureDeployment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostureDeployment()
+        {
+        }
+        /**
+         * The project, folder, or organization on which the posture is deployed, for
+         * example, `projects/{project_number}`.
+         *
+         * @param string $postureDeploymentResource
+         */
+        public function setPostureDeploymentResource($postureDeploymentResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostureDeploymentResource()
+        {
+        }
+        /**
+         * The version of the posture, for example, `c7cfa2a8`.
+         *
+         * @param string $revisionId
+         */
+        public function setRevisionId($revisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2SecurityPosture registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChangedPolicy()
-    {
-    }
-    /**
-     * Name of the posture, for example, `CIS-Posture`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The ID of the updated policy, for example, `compute-policy-1`.
-     *
-     * @param string $policy
-     */
-    public function setPolicy($policy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPolicy()
-    {
-    }
-    /**
-     * The details about a change in an updated policy that violates the deployed
-     * posture.
-     *
-     * @param GoogleCloudSecuritycenterV2PolicyDriftDetails[] $policyDriftDetails
-     */
-    public function setPolicyDriftDetails($policyDriftDetails)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2PolicyDriftDetails[]
-     */
-    public function getPolicyDriftDetails()
-    {
-    }
-    /**
-     * The name of the updated policy set, for example, `cis-policyset`.
-     *
-     * @param string $policySet
-     */
-    public function setPolicySet($policySet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPolicySet()
-    {
-    }
-    /**
-     * The name of the posture deployment, for example,
-     * `organizations/{org_id}/posturedeployments/{posture_deployment_id}`.
-     *
-     * @param string $postureDeployment
-     */
-    public function setPostureDeployment($postureDeployment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPostureDeployment()
-    {
-    }
-    /**
-     * The project, folder, or organization on which the posture is deployed, for
-     * example, `projects/{project_number}`.
-     *
-     * @param string $postureDeploymentResource
-     */
-    public function setPostureDeploymentResource($postureDeploymentResource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPostureDeploymentResource()
-    {
-    }
-    /**
-     * The version of the posture, for example, `c7cfa2a8`.
-     *
-     * @param string $revisionId
-     */
-    public function setRevisionId($revisionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionId()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2SecurityPosture extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2SecurityPosture
     {
     }
 }

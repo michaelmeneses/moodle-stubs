@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class UpdateInstanceConfigRequest extends \Google\Model
-{
-    protected $instanceConfigType = InstanceConfig::class;
-    protected $instanceConfigDataType = '';
-    /**
-     * Required. A mask specifying which fields in InstanceConfig should be
-     * updated. The field mask must always be specified; this prevents any future
-     * fields in InstanceConfig from being erased accidentally by clients that do
-     * not know about them. Only display_name and labels can be updated.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * An option to validate, but not actually execute, a request, and provide the
-     * same response.
-     *
-     * @var bool
-     */
-    public $validateOnly;
-    /**
-     * Required. The user instance configuration to update, which must always
-     * include the instance configuration name. Otherwise, only fields mentioned
-     * in update_mask need be included. To prevent conflicts of concurrent
-     * updates, etag can be used.
-     *
-     * @param InstanceConfig $instanceConfig
-     */
-    public function setInstanceConfig(InstanceConfig $instanceConfig)
+namespace Google\Service\Spanner {
+    class UpdateInstanceConfigRequest extends \Google\Model
     {
+        protected $instanceConfigType = InstanceConfig::class;
+        protected $instanceConfigDataType = '';
+        /**
+         * Required. A mask specifying which fields in InstanceConfig should be
+         * updated. The field mask must always be specified; this prevents any future
+         * fields in InstanceConfig from being erased accidentally by clients that do
+         * not know about them. Only display_name and labels can be updated.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * An option to validate, but not actually execute, a request, and provide the
+         * same response.
+         *
+         * @var bool
+         */
+        public $validateOnly;
+        /**
+         * Required. The user instance configuration to update, which must always
+         * include the instance configuration name. Otherwise, only fields mentioned
+         * in update_mask need be included. To prevent conflicts of concurrent
+         * updates, etag can be used.
+         *
+         * @param InstanceConfig $instanceConfig
+         */
+        public function setInstanceConfig(InstanceConfig $instanceConfig)
+        {
+        }
+        /**
+         * @return InstanceConfig
+         */
+        public function getInstanceConfig()
+        {
+        }
+        /**
+         * Required. A mask specifying which fields in InstanceConfig should be
+         * updated. The field mask must always be specified; this prevents any future
+         * fields in InstanceConfig from being erased accidentally by clients that do
+         * not know about them. Only display_name and labels can be updated.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
+        /**
+         * An option to validate, but not actually execute, a request, and provide the
+         * same response.
+         *
+         * @param bool $validateOnly
+         */
+        public function setValidateOnly($validateOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InstanceConfig
+     * Runtime class alias of \Google\Service\Spanner\UpdateInstanceConfigRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceConfig()
-    {
-    }
-    /**
-     * Required. A mask specifying which fields in InstanceConfig should be
-     * updated. The field mask must always be specified; this prevents any future
-     * fields in InstanceConfig from being erased accidentally by clients that do
-     * not know about them. Only display_name and labels can be updated.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
-    {
-    }
-    /**
-     * An option to validate, but not actually execute, a request, and provide the
-     * same response.
-     *
-     * @param bool $validateOnly
-     */
-    public function setValidateOnly($validateOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidateOnly()
+    class Google_Service_Spanner_UpdateInstanceConfigRequest extends \Google\Service\Spanner\UpdateInstanceConfigRequest
     {
     }
 }

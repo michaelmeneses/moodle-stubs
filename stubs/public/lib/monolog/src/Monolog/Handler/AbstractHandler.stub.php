@@ -16,6 +16,11 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\Level;
+use Monolog\Logger;
+use Monolog\ResettableInterface;
+use Psr\Log\LogLevel;
+use Monolog\LogRecord;
 /**
  * Base Handler class providing basic level/bubble support
  *

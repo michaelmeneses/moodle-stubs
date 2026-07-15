@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class CombinedAudience extends \Google\Model
-{
-    /**
-     * Output only. The unique ID of the combined audience. Assigned by the
-     * system.
-     *
-     * @var string
-     */
-    public $combinedAudienceId;
-    /**
-     * Output only. The display name of the combined audience. .
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The resource name of the combined audience.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The unique ID of the combined audience. Assigned by the
-     * system.
-     *
-     * @param string $combinedAudienceId
-     */
-    public function setCombinedAudienceId($combinedAudienceId)
+namespace Google\Service\DisplayVideo {
+    class CombinedAudience extends \Google\Model
     {
+        /**
+         * Output only. The unique ID of the combined audience. Assigned by the
+         * system.
+         *
+         * @var string
+         */
+        public $combinedAudienceId;
+        /**
+         * Output only. The display name of the combined audience. .
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The resource name of the combined audience.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The unique ID of the combined audience. Assigned by the
+         * system.
+         *
+         * @param string $combinedAudienceId
+         */
+        public function setCombinedAudienceId($combinedAudienceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCombinedAudienceId()
+        {
+        }
+        /**
+         * Output only. The display name of the combined audience. .
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. The resource name of the combined audience.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\CombinedAudience registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCombinedAudienceId()
-    {
-    }
-    /**
-     * Output only. The display name of the combined audience. .
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. The resource name of the combined audience.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_DisplayVideo_CombinedAudience extends \Google\Service\DisplayVideo\CombinedAudience
     {
     }
 }

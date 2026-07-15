@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1IssueModelLabelStatsIssueStats extends \Google\Model
-{
-    /**
-     * Display name of the issue.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Issue resource. Format: projects/{project}/locations/{location}/issueModels
-     * /{issue_model}/issues/{issue}
-     *
-     * @var string
-     */
-    public $issue;
-    /**
-     * Number of conversations attached to the issue at this point in time.
-     *
-     * @var string
-     */
-    public $labeledConversationsCount;
-    /**
-     * Display name of the issue.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1IssueModelLabelStatsIssueStats extends \Google\Model
     {
+        /**
+         * Display name of the issue.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Issue resource. Format: projects/{project}/locations/{location}/issueModels
+         * /{issue_model}/issues/{issue}
+         *
+         * @var string
+         */
+        public $issue;
+        /**
+         * Number of conversations attached to the issue at this point in time.
+         *
+         * @var string
+         */
+        public $labeledConversationsCount;
+        /**
+         * Display name of the issue.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Issue resource. Format: projects/{project}/locations/{location}/issueModels
+         * /{issue_model}/issues/{issue}
+         *
+         * @param string $issue
+         */
+        public function setIssue($issue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssue()
+        {
+        }
+        /**
+         * Number of conversations attached to the issue at this point in time.
+         *
+         * @param string $labeledConversationsCount
+         */
+        public function setLabeledConversationsCount($labeledConversationsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabeledConversationsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1IssueModelLabelStatsIssueStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Issue resource. Format: projects/{project}/locations/{location}/issueModels
-     * /{issue_model}/issues/{issue}
-     *
-     * @param string $issue
-     */
-    public function setIssue($issue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIssue()
-    {
-    }
-    /**
-     * Number of conversations attached to the issue at this point in time.
-     *
-     * @param string $labeledConversationsCount
-     */
-    public function setLabeledConversationsCount($labeledConversationsCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabeledConversationsCount()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1IssueModelLabelStatsIssueStats extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1IssueModelLabelStatsIssueStats
     {
     }
 }

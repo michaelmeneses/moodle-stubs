@@ -21,147 +21,156 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class Domains extends \Google\Collection
-{
-    protected $collection_key = 'domainAliases';
-    /**
-     * Creation time of the domain. Expressed in [Unix
-     * time](https://en.wikipedia.org/wiki/Epoch_time) format. (Read-only).
-     *
-     * @var string
-     */
-    public $creationTime;
-    protected $domainAliasesType = DomainAlias::class;
-    protected $domainAliasesDataType = 'array';
-    /**
-     * The domain name of the customer.
-     *
-     * @var string
-     */
-    public $domainName;
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Indicates if the domain is a primary domain (Read-only).
-     *
-     * @var bool
-     */
-    public $isPrimary;
-    /**
-     * Kind of resource this is.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Indicates the verification state of a domain. (Read-only).
-     *
-     * @var bool
-     */
-    public $verified;
-    /**
-     * Creation time of the domain. Expressed in [Unix
-     * time](https://en.wikipedia.org/wiki/Epoch_time) format. (Read-only).
-     *
-     * @param string $creationTime
-     */
-    public function setCreationTime($creationTime)
+namespace Google\Service\Directory {
+    class Domains extends \Google\Collection
     {
+        protected $collection_key = 'domainAliases';
+        /**
+         * Creation time of the domain. Expressed in [Unix
+         * time](https://en.wikipedia.org/wiki/Epoch_time) format. (Read-only).
+         *
+         * @var string
+         */
+        public $creationTime;
+        protected $domainAliasesType = DomainAlias::class;
+        protected $domainAliasesDataType = 'array';
+        /**
+         * The domain name of the customer.
+         *
+         * @var string
+         */
+        public $domainName;
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Indicates if the domain is a primary domain (Read-only).
+         *
+         * @var bool
+         */
+        public $isPrimary;
+        /**
+         * Kind of resource this is.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Indicates the verification state of a domain. (Read-only).
+         *
+         * @var bool
+         */
+        public $verified;
+        /**
+         * Creation time of the domain. Expressed in [Unix
+         * time](https://en.wikipedia.org/wiki/Epoch_time) format. (Read-only).
+         *
+         * @param string $creationTime
+         */
+        public function setCreationTime($creationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationTime()
+        {
+        }
+        /**
+         * A list of domain alias objects. (Read-only)
+         *
+         * @param DomainAlias[] $domainAliases
+         */
+        public function setDomainAliases($domainAliases)
+        {
+        }
+        /**
+         * @return DomainAlias[]
+         */
+        public function getDomainAliases()
+        {
+        }
+        /**
+         * The domain name of the customer.
+         *
+         * @param string $domainName
+         */
+        public function setDomainName($domainName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomainName()
+        {
+        }
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Indicates if the domain is a primary domain (Read-only).
+         *
+         * @param bool $isPrimary
+         */
+        public function setIsPrimary($isPrimary)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsPrimary()
+        {
+        }
+        /**
+         * Kind of resource this is.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Indicates the verification state of a domain. (Read-only).
+         *
+         * @param bool $verified
+         */
+        public function setVerified($verified)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getVerified()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\Domains registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreationTime()
-    {
-    }
-    /**
-     * A list of domain alias objects. (Read-only)
-     *
-     * @param DomainAlias[] $domainAliases
-     */
-    public function setDomainAliases($domainAliases)
-    {
-    }
-    /**
-     * @return DomainAlias[]
-     */
-    public function getDomainAliases()
-    {
-    }
-    /**
-     * The domain name of the customer.
-     *
-     * @param string $domainName
-     */
-    public function setDomainName($domainName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDomainName()
-    {
-    }
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Indicates if the domain is a primary domain (Read-only).
-     *
-     * @param bool $isPrimary
-     */
-    public function setIsPrimary($isPrimary)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsPrimary()
-    {
-    }
-    /**
-     * Kind of resource this is.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Indicates the verification state of a domain. (Read-only).
-     *
-     * @param bool $verified
-     */
-    public function setVerified($verified)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getVerified()
+    class Google_Service_Directory_Domains extends \Google\Service\Directory\Domains
     {
     }
 }

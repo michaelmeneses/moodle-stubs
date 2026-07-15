@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedAvatarInfo extends \Google\Model
-{
-    protected $emojiType = AppsDynamiteSharedEmoji::class;
-    protected $emojiDataType = '';
-    /**
-     * @param AppsDynamiteSharedEmoji
-     */
-    public function setEmoji(AppsDynamiteSharedEmoji $emoji)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedAvatarInfo extends \Google\Model
     {
+        protected $emojiType = AppsDynamiteSharedEmoji::class;
+        protected $emojiDataType = '';
+        /**
+         * @param AppsDynamiteSharedEmoji
+         */
+        public function setEmoji(AppsDynamiteSharedEmoji $emoji)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedEmoji
+         */
+        public function getEmoji()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedEmoji
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedAvatarInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmoji()
+    class Google_Service_CloudSearch_AppsDynamiteSharedAvatarInfo extends \Google\Service\CloudSearch\AppsDynamiteSharedAvatarInfo
     {
     }
 }

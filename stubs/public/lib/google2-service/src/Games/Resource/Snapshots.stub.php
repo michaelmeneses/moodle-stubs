@@ -21,50 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games\Resource;
-
-/**
- * The "snapshots" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gamesService = new Google\Service\Games(...);
- *   $snapshots = $gamesService->snapshots;
- *  </code>
- */
-class Snapshots extends \Google\Service\Resource
-{
+namespace Google\Service\Games\Resource {
+    use Google\Service\Games\Snapshot;
+    use Google\Service\Games\SnapshotListResponse;
     /**
-     * Retrieves the metadata for a given snapshot ID. (snapshots.get)
-     *
-     * @param string $snapshotId The ID of the snapshot.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string language The preferred language to use for strings returned
-     * by this method.
-     * @return Snapshot
-     * @throws \Google\Service\Exception
+     * The "snapshots" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gamesService = new Google\Service\Games(...);
+     *   $snapshots = $gamesService->snapshots;
+     *  </code>
      */
-    public function get($snapshotId, $optParams = [])
+    class Snapshots extends \Google\Service\Resource
     {
+        /**
+         * Retrieves the metadata for a given snapshot ID. (snapshots.get)
+         *
+         * @param string $snapshotId The ID of the snapshot.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string language The preferred language to use for strings returned
+         * by this method.
+         * @return Snapshot
+         * @throws \Google\Service\Exception
+         */
+        public function get($snapshotId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of snapshots created by your application for the player
+         * corresponding to the player ID. (snapshots.listSnapshots)
+         *
+         * @param string $playerId A player ID. A value of `me` may be used in place of
+         * the authenticated player's ID.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string language The preferred language to use for strings returned
+         * by this method.
+         * @opt_param int maxResults The maximum number of snapshot resources to return
+         * in the response, used for paging. For any response, the actual number of
+         * snapshot resources returned may be less than the specified `maxResults`.
+         * @opt_param string pageToken The token returned by the previous request.
+         * @return SnapshotListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listSnapshots($playerId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a list of snapshots created by your application for the player
-     * corresponding to the player ID. (snapshots.listSnapshots)
-     *
-     * @param string $playerId A player ID. A value of `me` may be used in place of
-     * the authenticated player's ID.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string language The preferred language to use for strings returned
-     * by this method.
-     * @opt_param int maxResults The maximum number of snapshot resources to return
-     * in the response, used for paging. For any response, the actual number of
-     * snapshot resources returned may be less than the specified `maxResults`.
-     * @opt_param string pageToken The token returned by the previous request.
-     * @return SnapshotListResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Games\Resource\Snapshots registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listSnapshots($playerId, $optParams = [])
+    class Google_Service_Games_Resource_Snapshots extends \Google\Service\Games\Resource\Snapshots
     {
     }
 }

@@ -21,115 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class MerchantOrderReturn extends \Google\Collection
-{
-    protected $collection_key = 'returnShipments';
-    /**
-     * @var string
-     */
-    public $creationDate;
-    /**
-     * @var string
-     */
-    public $merchantOrderId;
-    /**
-     * @var string
-     */
-    public $orderId;
-    /**
-     * @var string
-     */
-    public $orderReturnId;
-    protected $returnItemsType = MerchantOrderReturnItem::class;
-    protected $returnItemsDataType = 'array';
-    protected $returnPricingInfoType = ReturnPricingInfo::class;
-    protected $returnPricingInfoDataType = '';
-    protected $returnShipmentsType = ReturnShipment::class;
-    protected $returnShipmentsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setCreationDate($creationDate)
+namespace Google\Service\ShoppingContent {
+    class MerchantOrderReturn extends \Google\Collection
     {
+        protected $collection_key = 'returnShipments';
+        /**
+         * @var string
+         */
+        public $creationDate;
+        /**
+         * @var string
+         */
+        public $merchantOrderId;
+        /**
+         * @var string
+         */
+        public $orderId;
+        /**
+         * @var string
+         */
+        public $orderReturnId;
+        protected $returnItemsType = MerchantOrderReturnItem::class;
+        protected $returnItemsDataType = 'array';
+        protected $returnPricingInfoType = ReturnPricingInfo::class;
+        protected $returnPricingInfoDataType = '';
+        protected $returnShipmentsType = ReturnShipment::class;
+        protected $returnShipmentsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setCreationDate($creationDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMerchantOrderId($merchantOrderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantOrderId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOrderId($orderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrderId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOrderReturnId($orderReturnId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrderReturnId()
+        {
+        }
+        /**
+         * @param MerchantOrderReturnItem[]
+         */
+        public function setReturnItems($returnItems)
+        {
+        }
+        /**
+         * @return MerchantOrderReturnItem[]
+         */
+        public function getReturnItems()
+        {
+        }
+        /**
+         * @param ReturnPricingInfo
+         */
+        public function setReturnPricingInfo(ReturnPricingInfo $returnPricingInfo)
+        {
+        }
+        /**
+         * @return ReturnPricingInfo
+         */
+        public function getReturnPricingInfo()
+        {
+        }
+        /**
+         * @param ReturnShipment[]
+         */
+        public function setReturnShipments($returnShipments)
+        {
+        }
+        /**
+         * @return ReturnShipment[]
+         */
+        public function getReturnShipments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\MerchantOrderReturn registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreationDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMerchantOrderId($merchantOrderId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantOrderId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOrderId($orderId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrderId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOrderReturnId($orderReturnId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrderReturnId()
-    {
-    }
-    /**
-     * @param MerchantOrderReturnItem[]
-     */
-    public function setReturnItems($returnItems)
-    {
-    }
-    /**
-     * @return MerchantOrderReturnItem[]
-     */
-    public function getReturnItems()
-    {
-    }
-    /**
-     * @param ReturnPricingInfo
-     */
-    public function setReturnPricingInfo(ReturnPricingInfo $returnPricingInfo)
-    {
-    }
-    /**
-     * @return ReturnPricingInfo
-     */
-    public function getReturnPricingInfo()
-    {
-    }
-    /**
-     * @param ReturnShipment[]
-     */
-    public function setReturnShipments($returnShipments)
-    {
-    }
-    /**
-     * @return ReturnShipment[]
-     */
-    public function getReturnShipments()
+    class Google_Service_ShoppingContent_MerchantOrderReturn extends \Google\Service\ShoppingContent\MerchantOrderReturn
     {
     }
 }

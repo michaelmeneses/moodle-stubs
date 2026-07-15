@@ -21,78 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for AdExchangeBuyerII (v2beta1).
- *
- * <p>
- * Accesses the latest features for managing Authorized Buyers accounts, Real-
- * Time Bidding configurations and auction metrics, and Marketplace programmatic
- * deals.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/authorized-buyers/apis/reference/rest/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class AdExchangeBuyerII extends \Google\Service
-{
-    /** Manage your Ad Exchange buyer account configuration. */
-    const ADEXCHANGE_BUYER = "https://www.googleapis.com/auth/adexchange.buyer";
-    public $accounts_clients;
-    public $accounts_clients_invitations;
-    public $accounts_clients_users;
-    public $accounts_creatives;
-    public $accounts_creatives_dealAssociations;
-    public $accounts_finalizedProposals;
-    public $accounts_products;
-    public $accounts_proposals;
-    public $accounts_publisherProfiles;
-    public $bidders_accounts_filterSets;
-    public $bidders_accounts_filterSets_bidMetrics;
-    public $bidders_accounts_filterSets_bidResponseErrors;
-    public $bidders_accounts_filterSets_bidResponsesWithoutBids;
-    public $bidders_accounts_filterSets_filteredBidRequests;
-    public $bidders_accounts_filterSets_filteredBids;
-    public $bidders_accounts_filterSets_filteredBids_creatives;
-    public $bidders_accounts_filterSets_filteredBids_details;
-    public $bidders_accounts_filterSets_impressionMetrics;
-    public $bidders_accounts_filterSets_losingBids;
-    public $bidders_accounts_filterSets_nonBillableWinningBids;
-    public $bidders_filterSets;
-    public $bidders_filterSets_bidMetrics;
-    public $bidders_filterSets_bidResponseErrors;
-    public $bidders_filterSets_bidResponsesWithoutBids;
-    public $bidders_filterSets_filteredBidRequests;
-    public $bidders_filterSets_filteredBids;
-    public $bidders_filterSets_filteredBids_creatives;
-    public $bidders_filterSets_filteredBids_details;
-    public $bidders_filterSets_impressionMetrics;
-    public $bidders_filterSets_losingBids;
-    public $bidders_filterSets_nonBillableWinningBids;
-    public $buyers_filterSets;
-    public $buyers_filterSets_bidMetrics;
-    public $buyers_filterSets_bidResponseErrors;
-    public $buyers_filterSets_bidResponsesWithoutBids;
-    public $buyers_filterSets_filteredBidRequests;
-    public $buyers_filterSets_filteredBids;
-    public $buyers_filterSets_filteredBids_creatives;
-    public $buyers_filterSets_filteredBids_details;
-    public $buyers_filterSets_impressionMetrics;
-    public $buyers_filterSets_losingBids;
-    public $buyers_filterSets_nonBillableWinningBids;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the AdExchangeBuyerII service.
+     * Service definition for AdExchangeBuyerII (v2beta1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Accesses the latest features for managing Authorized Buyers accounts, Real-
+     * Time Bidding configurations and auction metrics, and Marketplace programmatic
+     * deals.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/authorized-buyers/apis/reference/rest/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class AdExchangeBuyerII extends \Google\Service
+    {
+        /** Manage your Ad Exchange buyer account configuration. */
+        const ADEXCHANGE_BUYER = "https://www.googleapis.com/auth/adexchange.buyer";
+        public $accounts_clients;
+        public $accounts_clients_invitations;
+        public $accounts_clients_users;
+        public $accounts_creatives;
+        public $accounts_creatives_dealAssociations;
+        public $accounts_finalizedProposals;
+        public $accounts_products;
+        public $accounts_proposals;
+        public $accounts_publisherProfiles;
+        public $bidders_accounts_filterSets;
+        public $bidders_accounts_filterSets_bidMetrics;
+        public $bidders_accounts_filterSets_bidResponseErrors;
+        public $bidders_accounts_filterSets_bidResponsesWithoutBids;
+        public $bidders_accounts_filterSets_filteredBidRequests;
+        public $bidders_accounts_filterSets_filteredBids;
+        public $bidders_accounts_filterSets_filteredBids_creatives;
+        public $bidders_accounts_filterSets_filteredBids_details;
+        public $bidders_accounts_filterSets_impressionMetrics;
+        public $bidders_accounts_filterSets_losingBids;
+        public $bidders_accounts_filterSets_nonBillableWinningBids;
+        public $bidders_filterSets;
+        public $bidders_filterSets_bidMetrics;
+        public $bidders_filterSets_bidResponseErrors;
+        public $bidders_filterSets_bidResponsesWithoutBids;
+        public $bidders_filterSets_filteredBidRequests;
+        public $bidders_filterSets_filteredBids;
+        public $bidders_filterSets_filteredBids_creatives;
+        public $bidders_filterSets_filteredBids_details;
+        public $bidders_filterSets_impressionMetrics;
+        public $bidders_filterSets_losingBids;
+        public $bidders_filterSets_nonBillableWinningBids;
+        public $buyers_filterSets;
+        public $buyers_filterSets_bidMetrics;
+        public $buyers_filterSets_bidResponseErrors;
+        public $buyers_filterSets_bidResponsesWithoutBids;
+        public $buyers_filterSets_filteredBidRequests;
+        public $buyers_filterSets_filteredBids;
+        public $buyers_filterSets_filteredBids_creatives;
+        public $buyers_filterSets_filteredBids_details;
+        public $buyers_filterSets_impressionMetrics;
+        public $buyers_filterSets_losingBids;
+        public $buyers_filterSets_nonBillableWinningBids;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the AdExchangeBuyerII service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyerII extends \Google\Service\AdExchangeBuyerII
     {
     }
 }

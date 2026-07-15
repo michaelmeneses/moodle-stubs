@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2CatalogAttributeFacetConfigMergedFacetValue extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * All the previous values are replaced by this merged facet value. This
-     * merged_value must be non-empty and can have up to 128 characters.
-     *
-     * @var string
-     */
-    public $mergedValue;
-    /**
-     * All the facet values that are replaces by the same merged_value that
-     * follows. The maximum number of values per MergedFacetValue is 25. Each
-     * value can have up to 128 characters.
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * All the previous values are replaced by this merged facet value. This
-     * merged_value must be non-empty and can have up to 128 characters.
-     *
-     * @param string $mergedValue
-     */
-    public function setMergedValue($mergedValue)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2CatalogAttributeFacetConfigMergedFacetValue extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * All the previous values are replaced by this merged facet value. This
+         * merged_value must be non-empty and can have up to 128 characters.
+         *
+         * @var string
+         */
+        public $mergedValue;
+        /**
+         * All the facet values that are replaces by the same merged_value that
+         * follows. The maximum number of values per MergedFacetValue is 25. Each
+         * value can have up to 128 characters.
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * All the previous values are replaced by this merged facet value. This
+         * merged_value must be non-empty and can have up to 128 characters.
+         *
+         * @param string $mergedValue
+         */
+        public function setMergedValue($mergedValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMergedValue()
+        {
+        }
+        /**
+         * All the facet values that are replaces by the same merged_value that
+         * follows. The maximum number of values per MergedFacetValue is 25. Each
+         * value can have up to 128 characters.
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2CatalogAttributeFacetConfigMergedFacetValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMergedValue()
-    {
-    }
-    /**
-     * All the facet values that are replaces by the same merged_value that
-     * follows. The maximum number of values per MergedFacetValue is 25. Each
-     * value can have up to 128 characters.
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValues()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2CatalogAttributeFacetConfigMergedFacetValue extends \Google\Service\CloudRetail\GoogleCloudRetailV2CatalogAttributeFacetConfigMergedFacetValue
     {
     }
 }

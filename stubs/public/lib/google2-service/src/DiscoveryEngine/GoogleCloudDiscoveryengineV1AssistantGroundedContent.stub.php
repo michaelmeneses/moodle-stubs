@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AssistantGroundedContent extends \Google\Model
-{
-    protected $citationMetadataType = GoogleCloudDiscoveryengineV1CitationMetadata::class;
-    protected $citationMetadataDataType = '';
-    protected $contentType = GoogleCloudDiscoveryengineV1AssistantContent::class;
-    protected $contentDataType = '';
-    protected $textGroundingMetadataType = GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadata::class;
-    protected $textGroundingMetadataDataType = '';
-    /**
-     * Source attribution of the generated content. See also
-     * https://cloud.google.com/vertex-ai/generative-
-     * ai/docs/learn/overview#citation_check
-     *
-     * @param GoogleCloudDiscoveryengineV1CitationMetadata $citationMetadata
-     */
-    public function setCitationMetadata(GoogleCloudDiscoveryengineV1CitationMetadata $citationMetadata)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AssistantGroundedContent extends \Google\Model
     {
+        protected $citationMetadataType = GoogleCloudDiscoveryengineV1CitationMetadata::class;
+        protected $citationMetadataDataType = '';
+        protected $contentType = GoogleCloudDiscoveryengineV1AssistantContent::class;
+        protected $contentDataType = '';
+        protected $textGroundingMetadataType = GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadata::class;
+        protected $textGroundingMetadataDataType = '';
+        /**
+         * Source attribution of the generated content. See also
+         * https://cloud.google.com/vertex-ai/generative-
+         * ai/docs/learn/overview#citation_check
+         *
+         * @param GoogleCloudDiscoveryengineV1CitationMetadata $citationMetadata
+         */
+        public function setCitationMetadata(GoogleCloudDiscoveryengineV1CitationMetadata $citationMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1CitationMetadata
+         */
+        public function getCitationMetadata()
+        {
+        }
+        /**
+         * The content.
+         *
+         * @param GoogleCloudDiscoveryengineV1AssistantContent $content
+         */
+        public function setContent(GoogleCloudDiscoveryengineV1AssistantContent $content)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AssistantContent
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Metadata for grounding based on text sources.
+         *
+         * @param GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadata $textGroundingMetadata
+         */
+        public function setTextGroundingMetadata(GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadata $textGroundingMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadata
+         */
+        public function getTextGroundingMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1CitationMetadata
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistantGroundedContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCitationMetadata()
-    {
-    }
-    /**
-     * The content.
-     *
-     * @param GoogleCloudDiscoveryengineV1AssistantContent $content
-     */
-    public function setContent(GoogleCloudDiscoveryengineV1AssistantContent $content)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1AssistantContent
-     */
-    public function getContent()
-    {
-    }
-    /**
-     * Metadata for grounding based on text sources.
-     *
-     * @param GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadata $textGroundingMetadata
-     */
-    public function setTextGroundingMetadata(GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadata $textGroundingMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadata
-     */
-    public function getTextGroundingMetadata()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AssistantGroundedContent extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistantGroundedContent
     {
     }
 }

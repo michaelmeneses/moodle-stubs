@@ -21,206 +21,215 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class Query extends \Google\Collection
-{
-    protected $collection_key = 'projection';
-    protected $distinctOnType = PropertyReference::class;
-    protected $distinctOnDataType = 'array';
-    /**
-     * An ending point for the query results. Query cursors are returned in query
-     * result batches and [can only be used to limit the same query](https://cloud
-     * .google.com/datastore/docs/concepts/queries#cursors_limits_and_offsets).
-     *
-     * @var string
-     */
-    public $endCursor;
-    protected $filterType = Filter::class;
-    protected $filterDataType = '';
-    protected $findNearestType = FindNearest::class;
-    protected $findNearestDataType = '';
-    protected $kindType = KindExpression::class;
-    protected $kindDataType = 'array';
-    /**
-     * The maximum number of results to return. Applies after all other
-     * constraints. Optional. Unspecified is interpreted as no limit. Must be >= 0
-     * if specified.
-     *
-     * @var int
-     */
-    public $limit;
-    /**
-     * The number of results to skip. Applies before limit, but after all other
-     * constraints. Optional. Must be >= 0 if specified.
-     *
-     * @var int
-     */
-    public $offset;
-    protected $orderType = PropertyOrder::class;
-    protected $orderDataType = 'array';
-    protected $projectionType = Projection::class;
-    protected $projectionDataType = 'array';
-    /**
-     * A starting point for the query results. Query cursors are returned in query
-     * result batches and [can only be used to continue the same query](https://cl
-     * oud.google.com/datastore/docs/concepts/queries#cursors_limits_and_offsets).
-     *
-     * @var string
-     */
-    public $startCursor;
-    /**
-     * The properties to make distinct. The query results will contain the first
-     * result for each distinct combination of values for the given properties (if
-     * empty, all results are returned). Requires: * If `order` is specified, the
-     * set of distinct on properties must appear before the non-distinct on
-     * properties in `order`.
-     *
-     * @param PropertyReference[] $distinctOn
-     */
-    public function setDistinctOn($distinctOn)
+namespace Google\Service\Datastore {
+    class Query extends \Google\Collection
     {
+        protected $collection_key = 'projection';
+        protected $distinctOnType = PropertyReference::class;
+        protected $distinctOnDataType = 'array';
+        /**
+         * An ending point for the query results. Query cursors are returned in query
+         * result batches and [can only be used to limit the same query](https://cloud
+         * .google.com/datastore/docs/concepts/queries#cursors_limits_and_offsets).
+         *
+         * @var string
+         */
+        public $endCursor;
+        protected $filterType = Filter::class;
+        protected $filterDataType = '';
+        protected $findNearestType = FindNearest::class;
+        protected $findNearestDataType = '';
+        protected $kindType = KindExpression::class;
+        protected $kindDataType = 'array';
+        /**
+         * The maximum number of results to return. Applies after all other
+         * constraints. Optional. Unspecified is interpreted as no limit. Must be >= 0
+         * if specified.
+         *
+         * @var int
+         */
+        public $limit;
+        /**
+         * The number of results to skip. Applies before limit, but after all other
+         * constraints. Optional. Must be >= 0 if specified.
+         *
+         * @var int
+         */
+        public $offset;
+        protected $orderType = PropertyOrder::class;
+        protected $orderDataType = 'array';
+        protected $projectionType = Projection::class;
+        protected $projectionDataType = 'array';
+        /**
+         * A starting point for the query results. Query cursors are returned in query
+         * result batches and [can only be used to continue the same query](https://cl
+         * oud.google.com/datastore/docs/concepts/queries#cursors_limits_and_offsets).
+         *
+         * @var string
+         */
+        public $startCursor;
+        /**
+         * The properties to make distinct. The query results will contain the first
+         * result for each distinct combination of values for the given properties (if
+         * empty, all results are returned). Requires: * If `order` is specified, the
+         * set of distinct on properties must appear before the non-distinct on
+         * properties in `order`.
+         *
+         * @param PropertyReference[] $distinctOn
+         */
+        public function setDistinctOn($distinctOn)
+        {
+        }
+        /**
+         * @return PropertyReference[]
+         */
+        public function getDistinctOn()
+        {
+        }
+        /**
+         * An ending point for the query results. Query cursors are returned in query
+         * result batches and [can only be used to limit the same query](https://cloud
+         * .google.com/datastore/docs/concepts/queries#cursors_limits_and_offsets).
+         *
+         * @param string $endCursor
+         */
+        public function setEndCursor($endCursor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndCursor()
+        {
+        }
+        /**
+         * The filter to apply.
+         *
+         * @param Filter $filter
+         */
+        public function setFilter(Filter $filter)
+        {
+        }
+        /**
+         * @return Filter
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * Optional. A potential Nearest Neighbors Search. Applies after all other
+         * filters and ordering. Finds the closest vector embeddings to the given
+         * query vector.
+         *
+         * @param FindNearest $findNearest
+         */
+        public function setFindNearest(FindNearest $findNearest)
+        {
+        }
+        /**
+         * @return FindNearest
+         */
+        public function getFindNearest()
+        {
+        }
+        /**
+         * The kinds to query (if empty, returns entities of all kinds). Currently at
+         * most 1 kind may be specified.
+         *
+         * @param KindExpression[] $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return KindExpression[]
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The maximum number of results to return. Applies after all other
+         * constraints. Optional. Unspecified is interpreted as no limit. Must be >= 0
+         * if specified.
+         *
+         * @param int $limit
+         */
+        public function setLimit($limit)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLimit()
+        {
+        }
+        /**
+         * The number of results to skip. Applies before limit, but after all other
+         * constraints. Optional. Must be >= 0 if specified.
+         *
+         * @param int $offset
+         */
+        public function setOffset($offset)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOffset()
+        {
+        }
+        /**
+         * The order to apply to the query results (if empty, order is unspecified).
+         *
+         * @param PropertyOrder[] $order
+         */
+        public function setOrder($order)
+        {
+        }
+        /**
+         * @return PropertyOrder[]
+         */
+        public function getOrder()
+        {
+        }
+        /**
+         * The projection to return. Defaults to returning all properties.
+         *
+         * @param Projection[] $projection
+         */
+        public function setProjection($projection)
+        {
+        }
+        /**
+         * @return Projection[]
+         */
+        public function getProjection()
+        {
+        }
+        /**
+         * A starting point for the query results. Query cursors are returned in query
+         * result batches and [can only be used to continue the same query](https://cl
+         * oud.google.com/datastore/docs/concepts/queries#cursors_limits_and_offsets).
+         *
+         * @param string $startCursor
+         */
+        public function setStartCursor($startCursor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartCursor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PropertyReference[]
+     * Runtime class alias of \Google\Service\Datastore\Query registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDistinctOn()
-    {
-    }
-    /**
-     * An ending point for the query results. Query cursors are returned in query
-     * result batches and [can only be used to limit the same query](https://cloud
-     * .google.com/datastore/docs/concepts/queries#cursors_limits_and_offsets).
-     *
-     * @param string $endCursor
-     */
-    public function setEndCursor($endCursor)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndCursor()
-    {
-    }
-    /**
-     * The filter to apply.
-     *
-     * @param Filter $filter
-     */
-    public function setFilter(Filter $filter)
-    {
-    }
-    /**
-     * @return Filter
-     */
-    public function getFilter()
-    {
-    }
-    /**
-     * Optional. A potential Nearest Neighbors Search. Applies after all other
-     * filters and ordering. Finds the closest vector embeddings to the given
-     * query vector.
-     *
-     * @param FindNearest $findNearest
-     */
-    public function setFindNearest(FindNearest $findNearest)
-    {
-    }
-    /**
-     * @return FindNearest
-     */
-    public function getFindNearest()
-    {
-    }
-    /**
-     * The kinds to query (if empty, returns entities of all kinds). Currently at
-     * most 1 kind may be specified.
-     *
-     * @param KindExpression[] $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return KindExpression[]
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The maximum number of results to return. Applies after all other
-     * constraints. Optional. Unspecified is interpreted as no limit. Must be >= 0
-     * if specified.
-     *
-     * @param int $limit
-     */
-    public function setLimit($limit)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLimit()
-    {
-    }
-    /**
-     * The number of results to skip. Applies before limit, but after all other
-     * constraints. Optional. Must be >= 0 if specified.
-     *
-     * @param int $offset
-     */
-    public function setOffset($offset)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getOffset()
-    {
-    }
-    /**
-     * The order to apply to the query results (if empty, order is unspecified).
-     *
-     * @param PropertyOrder[] $order
-     */
-    public function setOrder($order)
-    {
-    }
-    /**
-     * @return PropertyOrder[]
-     */
-    public function getOrder()
-    {
-    }
-    /**
-     * The projection to return. Defaults to returning all properties.
-     *
-     * @param Projection[] $projection
-     */
-    public function setProjection($projection)
-    {
-    }
-    /**
-     * @return Projection[]
-     */
-    public function getProjection()
-    {
-    }
-    /**
-     * A starting point for the query results. Query cursors are returned in query
-     * result batches and [can only be used to continue the same query](https://cl
-     * oud.google.com/datastore/docs/concepts/queries#cursors_limits_and_offsets).
-     *
-     * @param string $startCursor
-     */
-    public function setStartCursor($startCursor)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartCursor()
+    class Google_Service_Datastore_Query extends \Google\Service\Datastore\Query
     {
     }
 }

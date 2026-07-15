@@ -21,34 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking\Resource;
-
-/**
- * The "dnsZone" collection of methods.
- * Typical usage is:
- *  <code>
- *   $servicenetworkingService = new Google\Service\ServiceNetworking(...);
- *   $dnsZone = $servicenetworkingService->services_dnsZones_dnsZone;
- *  </code>
- */
-class ServicesDnsZonesDnsZone extends \Google\Service\Resource
-{
+namespace Google\Service\ServiceNetworking\Resource {
+    use Google\Service\ServiceNetworking\GetDnsZoneResponse;
     /**
-     * Service producers can use this method to retrieve a DNS zone in the shared
-     * producer host project and the matching peering zones in consumer project
-     * (dnsZone.get)
-     *
-     * @param string $name Required. The network that the consumer is using to
-     * connect with services. Must be in the form of services/{service}/projects/{pr
-     * oject}/global/networks/{network}/zones/{zoneName} Where {service} is the
-     * peering service that is managing connectivity for the service producer's
-     * organization. For Google services that support this {project} is the project
-     * number, as in '12345' {network} is the network name. {zoneName} is the DNS
-     * zone name
-     * @param array $optParams Optional parameters.
-     * @return GetDnsZoneResponse
+     * The "dnsZone" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $servicenetworkingService = new Google\Service\ServiceNetworking(...);
+     *   $dnsZone = $servicenetworkingService->services_dnsZones_dnsZone;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ServicesDnsZonesDnsZone extends \Google\Service\Resource
+    {
+        /**
+         * Service producers can use this method to retrieve a DNS zone in the shared
+         * producer host project and the matching peering zones in consumer project
+         * (dnsZone.get)
+         *
+         * @param string $name Required. The network that the consumer is using to
+         * connect with services. Must be in the form of services/{service}/projects/{pr
+         * oject}/global/networks/{network}/zones/{zoneName} Where {service} is the
+         * peering service that is managing connectivity for the service producer's
+         * organization. For Google services that support this {project} is the project
+         * number, as in '12345' {network} is the network name. {zoneName} is the DNS
+         * zone name
+         * @param array $optParams Optional parameters.
+         * @return GetDnsZoneResponse
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ServiceNetworking\Resource\ServicesDnsZonesDnsZone registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ServiceNetworking_Resource_ServicesDnsZonesDnsZone extends \Google\Service\ServiceNetworking\Resource\ServicesDnsZonesDnsZone
     {
     }
 }

@@ -21,423 +21,432 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Merchant;
-
-class ProductPerformanceView extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $brand;
-    /**
-     * @var string
-     */
-    public $categoryL1;
-    /**
-     * @var string
-     */
-    public $categoryL2;
-    /**
-     * @var string
-     */
-    public $categoryL3;
-    /**
-     * @var string
-     */
-    public $categoryL4;
-    /**
-     * @var string
-     */
-    public $categoryL5;
-    public $clickThroughRate;
-    /**
-     * @var string
-     */
-    public $clicks;
-    public $conversionRate;
-    protected $conversionValueType = Price::class;
-    protected $conversionValueDataType = '';
-    public $conversions;
-    /**
-     * @var string
-     */
-    public $customLabel0;
-    /**
-     * @var string
-     */
-    public $customLabel1;
-    /**
-     * @var string
-     */
-    public $customLabel2;
-    /**
-     * @var string
-     */
-    public $customLabel3;
-    /**
-     * @var string
-     */
-    public $customLabel4;
-    /**
-     * @var string
-     */
-    public $customerCountryCode;
-    protected $dateType = Date::class;
-    protected $dateDataType = '';
-    /**
-     * @var string
-     */
-    public $impressions;
-    /**
-     * @var string
-     */
-    public $marketingMethod;
-    /**
-     * @var string
-     */
-    public $offerId;
-    /**
-     * @var string
-     */
-    public $productTypeL1;
-    /**
-     * @var string
-     */
-    public $productTypeL2;
-    /**
-     * @var string
-     */
-    public $productTypeL3;
-    /**
-     * @var string
-     */
-    public $productTypeL4;
-    /**
-     * @var string
-     */
-    public $productTypeL5;
-    /**
-     * @var string
-     */
-    public $title;
-    protected $weekType = Date::class;
-    protected $weekDataType = '';
-    /**
-     * @param string
-     */
-    public function setBrand($brand)
+namespace Google\Service\Merchant {
+    class ProductPerformanceView extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $brand;
+        /**
+         * @var string
+         */
+        public $categoryL1;
+        /**
+         * @var string
+         */
+        public $categoryL2;
+        /**
+         * @var string
+         */
+        public $categoryL3;
+        /**
+         * @var string
+         */
+        public $categoryL4;
+        /**
+         * @var string
+         */
+        public $categoryL5;
+        public $clickThroughRate;
+        /**
+         * @var string
+         */
+        public $clicks;
+        public $conversionRate;
+        protected $conversionValueType = Price::class;
+        protected $conversionValueDataType = '';
+        public $conversions;
+        /**
+         * @var string
+         */
+        public $customLabel0;
+        /**
+         * @var string
+         */
+        public $customLabel1;
+        /**
+         * @var string
+         */
+        public $customLabel2;
+        /**
+         * @var string
+         */
+        public $customLabel3;
+        /**
+         * @var string
+         */
+        public $customLabel4;
+        /**
+         * @var string
+         */
+        public $customerCountryCode;
+        protected $dateType = Date::class;
+        protected $dateDataType = '';
+        /**
+         * @var string
+         */
+        public $impressions;
+        /**
+         * @var string
+         */
+        public $marketingMethod;
+        /**
+         * @var string
+         */
+        public $offerId;
+        /**
+         * @var string
+         */
+        public $productTypeL1;
+        /**
+         * @var string
+         */
+        public $productTypeL2;
+        /**
+         * @var string
+         */
+        public $productTypeL3;
+        /**
+         * @var string
+         */
+        public $productTypeL4;
+        /**
+         * @var string
+         */
+        public $productTypeL5;
+        /**
+         * @var string
+         */
+        public $title;
+        protected $weekType = Date::class;
+        protected $weekDataType = '';
+        /**
+         * @param string
+         */
+        public function setBrand($brand)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBrand()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCategoryL1($categoryL1)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategoryL1()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCategoryL2($categoryL2)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategoryL2()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCategoryL3($categoryL3)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategoryL3()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCategoryL4($categoryL4)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategoryL4()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCategoryL5($categoryL5)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategoryL5()
+        {
+        }
+        public function setClickThroughRate($clickThroughRate)
+        {
+        }
+        public function getClickThroughRate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setClicks($clicks)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClicks()
+        {
+        }
+        public function setConversionRate($conversionRate)
+        {
+        }
+        public function getConversionRate()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setConversionValue(Price $conversionValue)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getConversionValue()
+        {
+        }
+        public function setConversions($conversions)
+        {
+        }
+        public function getConversions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCustomLabel0($customLabel0)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomLabel0()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCustomLabel1($customLabel1)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomLabel1()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCustomLabel2($customLabel2)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomLabel2()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCustomLabel3($customLabel3)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomLabel3()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCustomLabel4($customLabel4)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomLabel4()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCustomerCountryCode($customerCountryCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomerCountryCode()
+        {
+        }
+        /**
+         * @param Date
+         */
+        public function setDate(Date $date)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setImpressions($impressions)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImpressions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMarketingMethod($marketingMethod)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMarketingMethod()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOfferId($offerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOfferId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProductTypeL1($productTypeL1)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductTypeL1()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProductTypeL2($productTypeL2)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductTypeL2()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProductTypeL3($productTypeL3)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductTypeL3()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProductTypeL4($productTypeL4)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductTypeL4()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProductTypeL5($productTypeL5)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductTypeL5()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * @param Date
+         */
+        public function setWeek(Date $week)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getWeek()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Merchant\ProductPerformanceView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBrand()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCategoryL1($categoryL1)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCategoryL1()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCategoryL2($categoryL2)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCategoryL2()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCategoryL3($categoryL3)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCategoryL3()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCategoryL4($categoryL4)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCategoryL4()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCategoryL5($categoryL5)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCategoryL5()
-    {
-    }
-    public function setClickThroughRate($clickThroughRate)
-    {
-    }
-    public function getClickThroughRate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setClicks($clicks)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClicks()
-    {
-    }
-    public function setConversionRate($conversionRate)
-    {
-    }
-    public function getConversionRate()
-    {
-    }
-    /**
-     * @param Price
-     */
-    public function setConversionValue(Price $conversionValue)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getConversionValue()
-    {
-    }
-    public function setConversions($conversions)
-    {
-    }
-    public function getConversions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCustomLabel0($customLabel0)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomLabel0()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCustomLabel1($customLabel1)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomLabel1()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCustomLabel2($customLabel2)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomLabel2()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCustomLabel3($customLabel3)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomLabel3()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCustomLabel4($customLabel4)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomLabel4()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCustomerCountryCode($customerCountryCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomerCountryCode()
-    {
-    }
-    /**
-     * @param Date
-     */
-    public function setDate(Date $date)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setImpressions($impressions)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImpressions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMarketingMethod($marketingMethod)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMarketingMethod()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOfferId($offerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOfferId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProductTypeL1($productTypeL1)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductTypeL1()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProductTypeL2($productTypeL2)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductTypeL2()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProductTypeL3($productTypeL3)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductTypeL3()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProductTypeL4($productTypeL4)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductTypeL4()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProductTypeL5($productTypeL5)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductTypeL5()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * @param Date
-     */
-    public function setWeek(Date $week)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getWeek()
+    class Google_Service_Merchant_ProductPerformanceView extends \Google\Service\Merchant\ProductPerformanceView
     {
     }
 }

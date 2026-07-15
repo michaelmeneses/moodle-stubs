@@ -21,190 +21,199 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BackupforGKE;
-
-class BackupPlanBinding extends \Google\Model
-{
-    /**
-     * Output only. Immutable. The fully qualified name of the BackupPlan bound
-     * with the parent BackupChannel.
-     * `projects/locations/backupPlans/{backup_plan}`
-     *
-     * @var string
-     */
-    public $backupPlan;
-    protected $backupPlanDetailsType = BackupPlanDetails::class;
-    protected $backupPlanDetailsDataType = '';
-    /**
-     * Output only. Immutable. The fully qualified name of the cluster that is
-     * being backed up Valid formats: - `projects/locations/clusters` -
-     * `projects/zones/clusters`
-     *
-     * @var string
-     */
-    public $cluster;
-    /**
-     * Output only. The timestamp when this binding was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. `etag` is used for optimistic concurrency control as a way to
-     * help prevent simultaneous updates of a BackupPlanBinding from overwriting
-     * each other. It is strongly suggested that systems make use of the 'etag' in
-     * the read-modify-write cycle to perform BackupPlanBinding updates in order
-     * to avoid race conditions: An `etag` is returned in the response to
-     * `GetBackupPlanBinding`, and systems are expected to put that etag in the
-     * request to `UpdateBackupPlanBinding` or `DeleteBackupPlanBinding` to ensure
-     * that their change will be applied to the same version of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Identifier. The fully qualified name of the BackupPlanBinding.
-     * `projects/locations/backupChannels/backupPlanBindings`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Server generated global unique identifier of
-     * [UUID4](https://en.wikipedia.org/wiki/Universally_unique_identifier)
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Output only. The timestamp when this binding was created.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Immutable. The fully qualified name of the BackupPlan bound
-     * with the parent BackupChannel.
-     * `projects/locations/backupPlans/{backup_plan}`
-     *
-     * @param string $backupPlan
-     */
-    public function setBackupPlan($backupPlan)
+namespace Google\Service\BackupforGKE {
+    class BackupPlanBinding extends \Google\Model
     {
+        /**
+         * Output only. Immutable. The fully qualified name of the BackupPlan bound
+         * with the parent BackupChannel.
+         * `projects/locations/backupPlans/{backup_plan}`
+         *
+         * @var string
+         */
+        public $backupPlan;
+        protected $backupPlanDetailsType = BackupPlanDetails::class;
+        protected $backupPlanDetailsDataType = '';
+        /**
+         * Output only. Immutable. The fully qualified name of the cluster that is
+         * being backed up Valid formats: - `projects/locations/clusters` -
+         * `projects/zones/clusters`
+         *
+         * @var string
+         */
+        public $cluster;
+        /**
+         * Output only. The timestamp when this binding was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. `etag` is used for optimistic concurrency control as a way to
+         * help prevent simultaneous updates of a BackupPlanBinding from overwriting
+         * each other. It is strongly suggested that systems make use of the 'etag' in
+         * the read-modify-write cycle to perform BackupPlanBinding updates in order
+         * to avoid race conditions: An `etag` is returned in the response to
+         * `GetBackupPlanBinding`, and systems are expected to put that etag in the
+         * request to `UpdateBackupPlanBinding` or `DeleteBackupPlanBinding` to ensure
+         * that their change will be applied to the same version of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Identifier. The fully qualified name of the BackupPlanBinding.
+         * `projects/locations/backupChannels/backupPlanBindings`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Server generated global unique identifier of
+         * [UUID4](https://en.wikipedia.org/wiki/Universally_unique_identifier)
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Output only. The timestamp when this binding was created.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Immutable. The fully qualified name of the BackupPlan bound
+         * with the parent BackupChannel.
+         * `projects/locations/backupPlans/{backup_plan}`
+         *
+         * @param string $backupPlan
+         */
+        public function setBackupPlan($backupPlan)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackupPlan()
+        {
+        }
+        /**
+         * Output only. Contains details about the backup plan/backup.
+         *
+         * @param BackupPlanDetails $backupPlanDetails
+         */
+        public function setBackupPlanDetails(BackupPlanDetails $backupPlanDetails)
+        {
+        }
+        /**
+         * @return BackupPlanDetails
+         */
+        public function getBackupPlanDetails()
+        {
+        }
+        /**
+         * Output only. Immutable. The fully qualified name of the cluster that is
+         * being backed up Valid formats: - `projects/locations/clusters` -
+         * `projects/zones/clusters`
+         *
+         * @param string $cluster
+         */
+        public function setCluster($cluster)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCluster()
+        {
+        }
+        /**
+         * Output only. The timestamp when this binding was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. `etag` is used for optimistic concurrency control as a way to
+         * help prevent simultaneous updates of a BackupPlanBinding from overwriting
+         * each other. It is strongly suggested that systems make use of the 'etag' in
+         * the read-modify-write cycle to perform BackupPlanBinding updates in order
+         * to avoid race conditions: An `etag` is returned in the response to
+         * `GetBackupPlanBinding`, and systems are expected to put that etag in the
+         * request to `UpdateBackupPlanBinding` or `DeleteBackupPlanBinding` to ensure
+         * that their change will be applied to the same version of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Identifier. The fully qualified name of the BackupPlanBinding.
+         * `projects/locations/backupChannels/backupPlanBindings`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Server generated global unique identifier of
+         * [UUID4](https://en.wikipedia.org/wiki/Universally_unique_identifier)
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * Output only. The timestamp when this binding was created.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BackupforGKE\BackupPlanBinding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupPlan()
-    {
-    }
-    /**
-     * Output only. Contains details about the backup plan/backup.
-     *
-     * @param BackupPlanDetails $backupPlanDetails
-     */
-    public function setBackupPlanDetails(BackupPlanDetails $backupPlanDetails)
-    {
-    }
-    /**
-     * @return BackupPlanDetails
-     */
-    public function getBackupPlanDetails()
-    {
-    }
-    /**
-     * Output only. Immutable. The fully qualified name of the cluster that is
-     * being backed up Valid formats: - `projects/locations/clusters` -
-     * `projects/zones/clusters`
-     *
-     * @param string $cluster
-     */
-    public function setCluster($cluster)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCluster()
-    {
-    }
-    /**
-     * Output only. The timestamp when this binding was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. `etag` is used for optimistic concurrency control as a way to
-     * help prevent simultaneous updates of a BackupPlanBinding from overwriting
-     * each other. It is strongly suggested that systems make use of the 'etag' in
-     * the read-modify-write cycle to perform BackupPlanBinding updates in order
-     * to avoid race conditions: An `etag` is returned in the response to
-     * `GetBackupPlanBinding`, and systems are expected to put that etag in the
-     * request to `UpdateBackupPlanBinding` or `DeleteBackupPlanBinding` to ensure
-     * that their change will be applied to the same version of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Identifier. The fully qualified name of the BackupPlanBinding.
-     * `projects/locations/backupChannels/backupPlanBindings`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Server generated global unique identifier of
-     * [UUID4](https://en.wikipedia.org/wiki/Universally_unique_identifier)
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * Output only. The timestamp when this binding was created.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_BackupforGKE_BackupPlanBinding extends \Google\Service\BackupforGKE\BackupPlanBinding
     {
     }
 }

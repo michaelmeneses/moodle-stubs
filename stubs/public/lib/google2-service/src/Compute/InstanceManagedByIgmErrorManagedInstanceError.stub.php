@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceManagedByIgmErrorManagedInstanceError extends \Google\Model
-{
-    /**
-     * Output only. [Output Only] Error code.
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * Output only. [Output Only] Error message.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Output only. [Output Only] Error code.
-     *
-     * @param string $code
-     */
-    public function setCode($code)
+namespace Google\Service\Compute {
+    class InstanceManagedByIgmErrorManagedInstanceError extends \Google\Model
     {
+        /**
+         * Output only. [Output Only] Error code.
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * Output only. [Output Only] Error message.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Output only. [Output Only] Error code.
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * Output only. [Output Only] Error message.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InstanceManagedByIgmErrorManagedInstanceError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * Output only. [Output Only] Error message.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
+    class Google_Service_Compute_InstanceManagedByIgmErrorManagedInstanceError extends \Google\Service\Compute\InstanceManagedByIgmErrorManagedInstanceError
     {
     }
 }

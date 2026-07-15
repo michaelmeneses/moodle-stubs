@@ -21,141 +21,150 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1WidgetConfigDataStoreComponent extends \Google\Model
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const DATA_STORE_CONFIG_TYPE_DATA_STORE_CONFIG_TYPE_UNSPECIFIED = 'DATA_STORE_CONFIG_TYPE_UNSPECIFIED';
-    /**
-     * The data store is connected to AlloyDB
-     */
-    public const DATA_STORE_CONFIG_TYPE_ALLOW_DB_CONFIG = 'ALLOW_DB_CONFIG';
-    /**
-     * The data store is a connected to a third party data source.
-     */
-    public const DATA_STORE_CONFIG_TYPE_THIRD_PARTY_OAUTH_CONFIG = 'THIRD_PARTY_OAUTH_CONFIG';
-    /**
-     * The data store is a connected to NotebookLM Enterprise.
-     */
-    public const DATA_STORE_CONFIG_TYPE_NOTEBOOKLM_CONFIG = 'NOTEBOOKLM_CONFIG';
-    /**
-     * Output only. The type of the data store config.
-     *
-     * @var string
-     */
-    public $dataStoreConfigType;
-    /**
-     * The display name of the data store.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The name of the entity, retrieved from
-     * `Collection.data_connector.entities.entityName`.
-     *
-     * @var string
-     */
-    public $entityName;
-    /**
-     * Output only. the identifier of the data store, used for widget service. For
-     * now it refers to data_store_id, in the future we will migrate the field to
-     * encrypted data store name UUID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The name of the data store. It should be data store resource name Format: `
-     * projects/{project}/locations/{location}/collections/{collection_id}/dataSto
-     * res/{data_store_id}`. For APIs under WidgetService, such as
-     * WidgetService.LookUpWidgetConfig, the project number and location part is
-     * erased in this field.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The type of the data store config.
-     *
-     * Accepted values: DATA_STORE_CONFIG_TYPE_UNSPECIFIED, ALLOW_DB_CONFIG,
-     * THIRD_PARTY_OAUTH_CONFIG, NOTEBOOKLM_CONFIG
-     *
-     * @param self::DATA_STORE_CONFIG_TYPE_* $dataStoreConfigType
-     */
-    public function setDataStoreConfigType($dataStoreConfigType)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1WidgetConfigDataStoreComponent extends \Google\Model
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const DATA_STORE_CONFIG_TYPE_DATA_STORE_CONFIG_TYPE_UNSPECIFIED = 'DATA_STORE_CONFIG_TYPE_UNSPECIFIED';
+        /**
+         * The data store is connected to AlloyDB
+         */
+        public const DATA_STORE_CONFIG_TYPE_ALLOW_DB_CONFIG = 'ALLOW_DB_CONFIG';
+        /**
+         * The data store is a connected to a third party data source.
+         */
+        public const DATA_STORE_CONFIG_TYPE_THIRD_PARTY_OAUTH_CONFIG = 'THIRD_PARTY_OAUTH_CONFIG';
+        /**
+         * The data store is a connected to NotebookLM Enterprise.
+         */
+        public const DATA_STORE_CONFIG_TYPE_NOTEBOOKLM_CONFIG = 'NOTEBOOKLM_CONFIG';
+        /**
+         * Output only. The type of the data store config.
+         *
+         * @var string
+         */
+        public $dataStoreConfigType;
+        /**
+         * The display name of the data store.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The name of the entity, retrieved from
+         * `Collection.data_connector.entities.entityName`.
+         *
+         * @var string
+         */
+        public $entityName;
+        /**
+         * Output only. the identifier of the data store, used for widget service. For
+         * now it refers to data_store_id, in the future we will migrate the field to
+         * encrypted data store name UUID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The name of the data store. It should be data store resource name Format: `
+         * projects/{project}/locations/{location}/collections/{collection_id}/dataSto
+         * res/{data_store_id}`. For APIs under WidgetService, such as
+         * WidgetService.LookUpWidgetConfig, the project number and location part is
+         * erased in this field.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The type of the data store config.
+         *
+         * Accepted values: DATA_STORE_CONFIG_TYPE_UNSPECIFIED, ALLOW_DB_CONFIG,
+         * THIRD_PARTY_OAUTH_CONFIG, NOTEBOOKLM_CONFIG
+         *
+         * @param self::DATA_STORE_CONFIG_TYPE_* $dataStoreConfigType
+         */
+        public function setDataStoreConfigType($dataStoreConfigType)
+        {
+        }
+        /**
+         * @return self::DATA_STORE_CONFIG_TYPE_*
+         */
+        public function getDataStoreConfigType()
+        {
+        }
+        /**
+         * The display name of the data store.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The name of the entity, retrieved from
+         * `Collection.data_connector.entities.entityName`.
+         *
+         * @param string $entityName
+         */
+        public function setEntityName($entityName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityName()
+        {
+        }
+        /**
+         * Output only. the identifier of the data store, used for widget service. For
+         * now it refers to data_store_id, in the future we will migrate the field to
+         * encrypted data store name UUID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The name of the data store. It should be data store resource name Format: `
+         * projects/{project}/locations/{location}/collections/{collection_id}/dataSto
+         * res/{data_store_id}`. For APIs under WidgetService, such as
+         * WidgetService.LookUpWidgetConfig, the project number and location part is
+         * erased in this field.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DATA_STORE_CONFIG_TYPE_*
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1WidgetConfigDataStoreComponent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataStoreConfigType()
-    {
-    }
-    /**
-     * The display name of the data store.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The name of the entity, retrieved from
-     * `Collection.data_connector.entities.entityName`.
-     *
-     * @param string $entityName
-     */
-    public function setEntityName($entityName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntityName()
-    {
-    }
-    /**
-     * Output only. the identifier of the data store, used for widget service. For
-     * now it refers to data_store_id, in the future we will migrate the field to
-     * encrypted data store name UUID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The name of the data store. It should be data store resource name Format: `
-     * projects/{project}/locations/{location}/collections/{collection_id}/dataSto
-     * res/{data_store_id}`. For APIs under WidgetService, such as
-     * WidgetService.LookUpWidgetConfig, the project number and location part is
-     * erased in this field.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1WidgetConfigDataStoreComponent extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1WidgetConfigDataStoreComponent
     {
     }
 }

@@ -21,122 +21,131 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class MaterializedView extends \Google\Model
-{
-    protected $clusterStatesType = GoogleBigtableAdminV2MaterializedViewClusterState::class;
-    protected $clusterStatesDataType = 'map';
-    /**
-     * Set to true to make the MaterializedView protected against deletion. Views:
-     * `SCHEMA_VIEW`, `REPLICATION_VIEW`, `FULL`.
-     *
-     * @var bool
-     */
-    public $deletionProtection;
-    /**
-     * Optional. The etag for this materialized view. This may be sent on update
-     * requests to ensure that the client has an up-to-date value before
-     * proceeding. The server returns an ABORTED error on a mismatched etag.
-     * Views: `SCHEMA_VIEW`, `REPLICATION_VIEW`, `FULL`.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Identifier. The unique name of the materialized view. Format: `projects/{pr
-     * oject}/instances/{instance}/materializedViews/{materialized_view}` Views:
-     * `SCHEMA_VIEW`, `REPLICATION_VIEW`, `FULL`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Immutable. The materialized view's select query. Views:
-     * `SCHEMA_VIEW`, `FULL`.
-     *
-     * @var string
-     */
-    public $query;
-    /**
-     * Output only. Map from cluster ID to per-cluster materialized view state. If
-     * it could not be determined whether or not the materialized view has data in
-     * a particular cluster (for example, if its zone is unavailable), then there
-     * will be an entry for the cluster with `STATE_NOT_KNOWN` state. Views:
-     * `REPLICATION_VIEW`, `FULL`.
-     *
-     * @param GoogleBigtableAdminV2MaterializedViewClusterState[] $clusterStates
-     */
-    public function setClusterStates($clusterStates)
+namespace Google\Service\BigtableAdmin {
+    class MaterializedView extends \Google\Model
     {
+        protected $clusterStatesType = GoogleBigtableAdminV2MaterializedViewClusterState::class;
+        protected $clusterStatesDataType = 'map';
+        /**
+         * Set to true to make the MaterializedView protected against deletion. Views:
+         * `SCHEMA_VIEW`, `REPLICATION_VIEW`, `FULL`.
+         *
+         * @var bool
+         */
+        public $deletionProtection;
+        /**
+         * Optional. The etag for this materialized view. This may be sent on update
+         * requests to ensure that the client has an up-to-date value before
+         * proceeding. The server returns an ABORTED error on a mismatched etag.
+         * Views: `SCHEMA_VIEW`, `REPLICATION_VIEW`, `FULL`.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Identifier. The unique name of the materialized view. Format: `projects/{pr
+         * oject}/instances/{instance}/materializedViews/{materialized_view}` Views:
+         * `SCHEMA_VIEW`, `REPLICATION_VIEW`, `FULL`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Immutable. The materialized view's select query. Views:
+         * `SCHEMA_VIEW`, `FULL`.
+         *
+         * @var string
+         */
+        public $query;
+        /**
+         * Output only. Map from cluster ID to per-cluster materialized view state. If
+         * it could not be determined whether or not the materialized view has data in
+         * a particular cluster (for example, if its zone is unavailable), then there
+         * will be an entry for the cluster with `STATE_NOT_KNOWN` state. Views:
+         * `REPLICATION_VIEW`, `FULL`.
+         *
+         * @param GoogleBigtableAdminV2MaterializedViewClusterState[] $clusterStates
+         */
+        public function setClusterStates($clusterStates)
+        {
+        }
+        /**
+         * @return GoogleBigtableAdminV2MaterializedViewClusterState[]
+         */
+        public function getClusterStates()
+        {
+        }
+        /**
+         * Set to true to make the MaterializedView protected against deletion. Views:
+         * `SCHEMA_VIEW`, `REPLICATION_VIEW`, `FULL`.
+         *
+         * @param bool $deletionProtection
+         */
+        public function setDeletionProtection($deletionProtection)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeletionProtection()
+        {
+        }
+        /**
+         * Optional. The etag for this materialized view. This may be sent on update
+         * requests to ensure that the client has an up-to-date value before
+         * proceeding. The server returns an ABORTED error on a mismatched etag.
+         * Views: `SCHEMA_VIEW`, `REPLICATION_VIEW`, `FULL`.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Identifier. The unique name of the materialized view. Format: `projects/{pr
+         * oject}/instances/{instance}/materializedViews/{materialized_view}` Views:
+         * `SCHEMA_VIEW`, `REPLICATION_VIEW`, `FULL`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Immutable. The materialized view's select query. Views:
+         * `SCHEMA_VIEW`, `FULL`.
+         *
+         * @param string $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleBigtableAdminV2MaterializedViewClusterState[]
+     * Runtime class alias of \Google\Service\BigtableAdmin\MaterializedView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterStates()
-    {
-    }
-    /**
-     * Set to true to make the MaterializedView protected against deletion. Views:
-     * `SCHEMA_VIEW`, `REPLICATION_VIEW`, `FULL`.
-     *
-     * @param bool $deletionProtection
-     */
-    public function setDeletionProtection($deletionProtection)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDeletionProtection()
-    {
-    }
-    /**
-     * Optional. The etag for this materialized view. This may be sent on update
-     * requests to ensure that the client has an up-to-date value before
-     * proceeding. The server returns an ABORTED error on a mismatched etag.
-     * Views: `SCHEMA_VIEW`, `REPLICATION_VIEW`, `FULL`.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Identifier. The unique name of the materialized view. Format: `projects/{pr
-     * oject}/instances/{instance}/materializedViews/{materialized_view}` Views:
-     * `SCHEMA_VIEW`, `REPLICATION_VIEW`, `FULL`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Immutable. The materialized view's select query. Views:
-     * `SCHEMA_VIEW`, `FULL`.
-     *
-     * @param string $query
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuery()
+    class Google_Service_BigtableAdmin_MaterializedView extends \Google\Service\BigtableAdmin\MaterializedView
     {
     }
 }

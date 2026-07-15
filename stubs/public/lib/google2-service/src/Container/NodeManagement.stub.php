@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class NodeManagement extends \Google\Model
-{
-    /**
-     * A flag that specifies whether the node auto-repair is enabled for the node
-     * pool. If enabled, the nodes in this node pool will be monitored and, if
-     * they fail health checks too many times, an automatic repair action will be
-     * triggered.
-     *
-     * @var bool
-     */
-    public $autoRepair;
-    /**
-     * A flag that specifies whether node auto-upgrade is enabled for the node
-     * pool. If enabled, node auto-upgrade helps keep the nodes in your node pool
-     * up to date with the latest release version of Kubernetes.
-     *
-     * @var bool
-     */
-    public $autoUpgrade;
-    protected $upgradeOptionsType = AutoUpgradeOptions::class;
-    protected $upgradeOptionsDataType = '';
-    /**
-     * A flag that specifies whether the node auto-repair is enabled for the node
-     * pool. If enabled, the nodes in this node pool will be monitored and, if
-     * they fail health checks too many times, an automatic repair action will be
-     * triggered.
-     *
-     * @param bool $autoRepair
-     */
-    public function setAutoRepair($autoRepair)
+namespace Google\Service\Container {
+    class NodeManagement extends \Google\Model
     {
+        /**
+         * A flag that specifies whether the node auto-repair is enabled for the node
+         * pool. If enabled, the nodes in this node pool will be monitored and, if
+         * they fail health checks too many times, an automatic repair action will be
+         * triggered.
+         *
+         * @var bool
+         */
+        public $autoRepair;
+        /**
+         * A flag that specifies whether node auto-upgrade is enabled for the node
+         * pool. If enabled, node auto-upgrade helps keep the nodes in your node pool
+         * up to date with the latest release version of Kubernetes.
+         *
+         * @var bool
+         */
+        public $autoUpgrade;
+        protected $upgradeOptionsType = AutoUpgradeOptions::class;
+        protected $upgradeOptionsDataType = '';
+        /**
+         * A flag that specifies whether the node auto-repair is enabled for the node
+         * pool. If enabled, the nodes in this node pool will be monitored and, if
+         * they fail health checks too many times, an automatic repair action will be
+         * triggered.
+         *
+         * @param bool $autoRepair
+         */
+        public function setAutoRepair($autoRepair)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutoRepair()
+        {
+        }
+        /**
+         * A flag that specifies whether node auto-upgrade is enabled for the node
+         * pool. If enabled, node auto-upgrade helps keep the nodes in your node pool
+         * up to date with the latest release version of Kubernetes.
+         *
+         * @param bool $autoUpgrade
+         */
+        public function setAutoUpgrade($autoUpgrade)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutoUpgrade()
+        {
+        }
+        /**
+         * Specifies the Auto Upgrade knobs for the node pool.
+         *
+         * @param AutoUpgradeOptions $upgradeOptions
+         */
+        public function setUpgradeOptions(AutoUpgradeOptions $upgradeOptions)
+        {
+        }
+        /**
+         * @return AutoUpgradeOptions
+         */
+        public function getUpgradeOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\NodeManagement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoRepair()
-    {
-    }
-    /**
-     * A flag that specifies whether node auto-upgrade is enabled for the node
-     * pool. If enabled, node auto-upgrade helps keep the nodes in your node pool
-     * up to date with the latest release version of Kubernetes.
-     *
-     * @param bool $autoUpgrade
-     */
-    public function setAutoUpgrade($autoUpgrade)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAutoUpgrade()
-    {
-    }
-    /**
-     * Specifies the Auto Upgrade knobs for the node pool.
-     *
-     * @param AutoUpgradeOptions $upgradeOptions
-     */
-    public function setUpgradeOptions(AutoUpgradeOptions $upgradeOptions)
-    {
-    }
-    /**
-     * @return AutoUpgradeOptions
-     */
-    public function getUpgradeOptions()
+    class Google_Service_Container_NodeManagement extends \Google\Service\Container\NodeManagement
     {
     }
 }

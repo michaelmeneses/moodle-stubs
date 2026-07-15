@@ -21,177 +21,186 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1Dataset extends \Google\Collection
-{
-    protected $collection_key = 'inputConfigs';
-    /**
-     * Output only. The names of any related resources that are blocking changes
-     * to the dataset.
-     *
-     * @var string[]
-     */
-    public $blockingResources;
-    /**
-     * Output only. Time the dataset is created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The number of data items in the dataset.
-     *
-     * @var string
-     */
-    public $dataItemCount;
-    /**
-     * Optional. User-provided description of the annotation specification set.
-     * The description can be up to 10000 characters long.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. The display name of the dataset. Maximum of 64 characters.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $inputConfigsType = GoogleCloudDatalabelingV1beta1InputConfig::class;
-    protected $inputConfigsDataType = 'array';
-    /**
-     * Last time that the Dataset is migrated to AI Platform V2. If any of the
-     * AnnotatedDataset is migrated, the last_migration_time in Dataset is also
-     * updated.
-     *
-     * @var string
-     */
-    public $lastMigrateTime;
-    /**
-     * Output only. Dataset resource name, format is:
-     * projects/{project_id}/datasets/{dataset_id}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The names of any related resources that are blocking changes
-     * to the dataset.
-     *
-     * @param string[] $blockingResources
-     */
-    public function setBlockingResources($blockingResources)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1Dataset extends \Google\Collection
     {
+        protected $collection_key = 'inputConfigs';
+        /**
+         * Output only. The names of any related resources that are blocking changes
+         * to the dataset.
+         *
+         * @var string[]
+         */
+        public $blockingResources;
+        /**
+         * Output only. Time the dataset is created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The number of data items in the dataset.
+         *
+         * @var string
+         */
+        public $dataItemCount;
+        /**
+         * Optional. User-provided description of the annotation specification set.
+         * The description can be up to 10000 characters long.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. The display name of the dataset. Maximum of 64 characters.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $inputConfigsType = GoogleCloudDatalabelingV1beta1InputConfig::class;
+        protected $inputConfigsDataType = 'array';
+        /**
+         * Last time that the Dataset is migrated to AI Platform V2. If any of the
+         * AnnotatedDataset is migrated, the last_migration_time in Dataset is also
+         * updated.
+         *
+         * @var string
+         */
+        public $lastMigrateTime;
+        /**
+         * Output only. Dataset resource name, format is:
+         * projects/{project_id}/datasets/{dataset_id}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The names of any related resources that are blocking changes
+         * to the dataset.
+         *
+         * @param string[] $blockingResources
+         */
+        public function setBlockingResources($blockingResources)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBlockingResources()
+        {
+        }
+        /**
+         * Output only. Time the dataset is created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The number of data items in the dataset.
+         *
+         * @param string $dataItemCount
+         */
+        public function setDataItemCount($dataItemCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataItemCount()
+        {
+        }
+        /**
+         * Optional. User-provided description of the annotation specification set.
+         * The description can be up to 10000 characters long.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. The display name of the dataset. Maximum of 64 characters.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. This is populated with the original input configs where
+         * ImportData is called. It is available only after the clients import data to
+         * this dataset.
+         *
+         * @param GoogleCloudDatalabelingV1beta1InputConfig[] $inputConfigs
+         */
+        public function setInputConfigs($inputConfigs)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1InputConfig[]
+         */
+        public function getInputConfigs()
+        {
+        }
+        /**
+         * Last time that the Dataset is migrated to AI Platform V2. If any of the
+         * AnnotatedDataset is migrated, the last_migration_time in Dataset is also
+         * updated.
+         *
+         * @param string $lastMigrateTime
+         */
+        public function setLastMigrateTime($lastMigrateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastMigrateTime()
+        {
+        }
+        /**
+         * Output only. Dataset resource name, format is:
+         * projects/{project_id}/datasets/{dataset_id}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1Dataset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlockingResources()
-    {
-    }
-    /**
-     * Output only. Time the dataset is created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The number of data items in the dataset.
-     *
-     * @param string $dataItemCount
-     */
-    public function setDataItemCount($dataItemCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataItemCount()
-    {
-    }
-    /**
-     * Optional. User-provided description of the annotation specification set.
-     * The description can be up to 10000 characters long.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. The display name of the dataset. Maximum of 64 characters.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. This is populated with the original input configs where
-     * ImportData is called. It is available only after the clients import data to
-     * this dataset.
-     *
-     * @param GoogleCloudDatalabelingV1beta1InputConfig[] $inputConfigs
-     */
-    public function setInputConfigs($inputConfigs)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1InputConfig[]
-     */
-    public function getInputConfigs()
-    {
-    }
-    /**
-     * Last time that the Dataset is migrated to AI Platform V2. If any of the
-     * AnnotatedDataset is migrated, the last_migration_time in Dataset is also
-     * updated.
-     *
-     * @param string $lastMigrateTime
-     */
-    public function setLastMigrateTime($lastMigrateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastMigrateTime()
-    {
-    }
-    /**
-     * Output only. Dataset resource name, format is:
-     * projects/{project_id}/datasets/{dataset_id}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1Dataset extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1Dataset
     {
     }
 }

@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class MachineNetworkDetails extends \Google\Model
-{
-    protected $adaptersType = NetworkAdapterList::class;
-    protected $adaptersDataType = '';
-    /**
-     * Optional. Default gateway address.
-     *
-     * @var string
-     */
-    public $defaultGateway;
-    /**
-     * The primary IP address of the machine.
-     *
-     * @var string
-     */
-    public $primaryIpAddress;
-    /**
-     * MAC address of the machine. This property is used to uniqly identify the
-     * machine.
-     *
-     * @var string
-     */
-    public $primaryMacAddress;
-    /**
-     * The public IP address of the machine.
-     *
-     * @var string
-     */
-    public $publicIpAddress;
-    /**
-     * List of network adapters.
-     *
-     * @param NetworkAdapterList $adapters
-     */
-    public function setAdapters(NetworkAdapterList $adapters)
+namespace Google\Service\MigrationCenterAPI {
+    class MachineNetworkDetails extends \Google\Model
     {
+        protected $adaptersType = NetworkAdapterList::class;
+        protected $adaptersDataType = '';
+        /**
+         * Optional. Default gateway address.
+         *
+         * @var string
+         */
+        public $defaultGateway;
+        /**
+         * The primary IP address of the machine.
+         *
+         * @var string
+         */
+        public $primaryIpAddress;
+        /**
+         * MAC address of the machine. This property is used to uniqly identify the
+         * machine.
+         *
+         * @var string
+         */
+        public $primaryMacAddress;
+        /**
+         * The public IP address of the machine.
+         *
+         * @var string
+         */
+        public $publicIpAddress;
+        /**
+         * List of network adapters.
+         *
+         * @param NetworkAdapterList $adapters
+         */
+        public function setAdapters(NetworkAdapterList $adapters)
+        {
+        }
+        /**
+         * @return NetworkAdapterList
+         */
+        public function getAdapters()
+        {
+        }
+        /**
+         * Optional. Default gateway address.
+         *
+         * @param string $defaultGateway
+         */
+        public function setDefaultGateway($defaultGateway)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultGateway()
+        {
+        }
+        /**
+         * The primary IP address of the machine.
+         *
+         * @param string $primaryIpAddress
+         */
+        public function setPrimaryIpAddress($primaryIpAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimaryIpAddress()
+        {
+        }
+        /**
+         * MAC address of the machine. This property is used to uniqly identify the
+         * machine.
+         *
+         * @param string $primaryMacAddress
+         */
+        public function setPrimaryMacAddress($primaryMacAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimaryMacAddress()
+        {
+        }
+        /**
+         * The public IP address of the machine.
+         *
+         * @param string $publicIpAddress
+         */
+        public function setPublicIpAddress($publicIpAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublicIpAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NetworkAdapterList
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\MachineNetworkDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdapters()
-    {
-    }
-    /**
-     * Optional. Default gateway address.
-     *
-     * @param string $defaultGateway
-     */
-    public function setDefaultGateway($defaultGateway)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDefaultGateway()
-    {
-    }
-    /**
-     * The primary IP address of the machine.
-     *
-     * @param string $primaryIpAddress
-     */
-    public function setPrimaryIpAddress($primaryIpAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrimaryIpAddress()
-    {
-    }
-    /**
-     * MAC address of the machine. This property is used to uniqly identify the
-     * machine.
-     *
-     * @param string $primaryMacAddress
-     */
-    public function setPrimaryMacAddress($primaryMacAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrimaryMacAddress()
-    {
-    }
-    /**
-     * The public IP address of the machine.
-     *
-     * @param string $publicIpAddress
-     */
-    public function setPublicIpAddress($publicIpAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublicIpAddress()
+    class Google_Service_MigrationCenterAPI_MachineNetworkDetails extends \Google\Service\MigrationCenterAPI\MachineNetworkDetails
     {
     }
 }

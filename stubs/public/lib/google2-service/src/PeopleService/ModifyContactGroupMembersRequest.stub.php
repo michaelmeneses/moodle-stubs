@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class ModifyContactGroupMembersRequest extends \Google\Collection
-{
-    protected $collection_key = 'resourceNamesToRemove';
-    /**
-     * Optional. The resource names of the contact people to add in the form of
-     * `people/{person_id}`. The total number of resource names in
-     * `resource_names_to_add` and `resource_names_to_remove` must be less than or
-     * equal to 1000.
-     *
-     * @var string[]
-     */
-    public $resourceNamesToAdd;
-    /**
-     * Optional. The resource names of the contact people to remove in the form of
-     * `people/{person_id}`. The total number of resource names in
-     * `resource_names_to_add` and `resource_names_to_remove` must be less than or
-     * equal to 1000.
-     *
-     * @var string[]
-     */
-    public $resourceNamesToRemove;
-    /**
-     * Optional. The resource names of the contact people to add in the form of
-     * `people/{person_id}`. The total number of resource names in
-     * `resource_names_to_add` and `resource_names_to_remove` must be less than or
-     * equal to 1000.
-     *
-     * @param string[] $resourceNamesToAdd
-     */
-    public function setResourceNamesToAdd($resourceNamesToAdd)
+namespace Google\Service\PeopleService {
+    class ModifyContactGroupMembersRequest extends \Google\Collection
     {
+        protected $collection_key = 'resourceNamesToRemove';
+        /**
+         * Optional. The resource names of the contact people to add in the form of
+         * `people/{person_id}`. The total number of resource names in
+         * `resource_names_to_add` and `resource_names_to_remove` must be less than or
+         * equal to 1000.
+         *
+         * @var string[]
+         */
+        public $resourceNamesToAdd;
+        /**
+         * Optional. The resource names of the contact people to remove in the form of
+         * `people/{person_id}`. The total number of resource names in
+         * `resource_names_to_add` and `resource_names_to_remove` must be less than or
+         * equal to 1000.
+         *
+         * @var string[]
+         */
+        public $resourceNamesToRemove;
+        /**
+         * Optional. The resource names of the contact people to add in the form of
+         * `people/{person_id}`. The total number of resource names in
+         * `resource_names_to_add` and `resource_names_to_remove` must be less than or
+         * equal to 1000.
+         *
+         * @param string[] $resourceNamesToAdd
+         */
+        public function setResourceNamesToAdd($resourceNamesToAdd)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceNamesToAdd()
+        {
+        }
+        /**
+         * Optional. The resource names of the contact people to remove in the form of
+         * `people/{person_id}`. The total number of resource names in
+         * `resource_names_to_add` and `resource_names_to_remove` must be less than or
+         * equal to 1000.
+         *
+         * @param string[] $resourceNamesToRemove
+         */
+        public function setResourceNamesToRemove($resourceNamesToRemove)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceNamesToRemove()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\PeopleService\ModifyContactGroupMembersRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceNamesToAdd()
-    {
-    }
-    /**
-     * Optional. The resource names of the contact people to remove in the form of
-     * `people/{person_id}`. The total number of resource names in
-     * `resource_names_to_add` and `resource_names_to_remove` must be less than or
-     * equal to 1000.
-     *
-     * @param string[] $resourceNamesToRemove
-     */
-    public function setResourceNamesToRemove($resourceNamesToRemove)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResourceNamesToRemove()
+    class Google_Service_PeopleService_ModifyContactGroupMembersRequest extends \Google\Service\PeopleService\ModifyContactGroupMembersRequest
     {
     }
 }

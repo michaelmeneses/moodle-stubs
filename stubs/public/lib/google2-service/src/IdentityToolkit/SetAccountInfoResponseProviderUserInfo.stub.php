@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class SetAccountInfoResponseProviderUserInfo extends \Google\Model
-{
-    /**
-     * The user's display name at the IDP.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * User's identifier at IDP.
-     *
-     * @var string
-     */
-    public $federatedId;
-    /**
-     * The user's photo url at the IDP.
-     *
-     * @var string
-     */
-    public $photoUrl;
-    /**
-     * The IdP ID. For whitelisted IdPs it's a short domain name, e.g.,
-     * google.com, aol.com, live.net and yahoo.com. For other OpenID IdPs it's the
-     * OP identifier.
-     *
-     * @var string
-     */
-    public $providerId;
-    /**
-     * The user's display name at the IDP.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\IdentityToolkit {
+    class SetAccountInfoResponseProviderUserInfo extends \Google\Model
     {
+        /**
+         * The user's display name at the IDP.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * User's identifier at IDP.
+         *
+         * @var string
+         */
+        public $federatedId;
+        /**
+         * The user's photo url at the IDP.
+         *
+         * @var string
+         */
+        public $photoUrl;
+        /**
+         * The IdP ID. For whitelisted IdPs it's a short domain name, e.g.,
+         * google.com, aol.com, live.net and yahoo.com. For other OpenID IdPs it's the
+         * OP identifier.
+         *
+         * @var string
+         */
+        public $providerId;
+        /**
+         * The user's display name at the IDP.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * User's identifier at IDP.
+         *
+         * @param string $federatedId
+         */
+        public function setFederatedId($federatedId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFederatedId()
+        {
+        }
+        /**
+         * The user's photo url at the IDP.
+         *
+         * @param string $photoUrl
+         */
+        public function setPhotoUrl($photoUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhotoUrl()
+        {
+        }
+        /**
+         * The IdP ID. For whitelisted IdPs it's a short domain name, e.g.,
+         * google.com, aol.com, live.net and yahoo.com. For other OpenID IdPs it's the
+         * OP identifier.
+         *
+         * @param string $providerId
+         */
+        public function setProviderId($providerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProviderId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\SetAccountInfoResponseProviderUserInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * User's identifier at IDP.
-     *
-     * @param string $federatedId
-     */
-    public function setFederatedId($federatedId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFederatedId()
-    {
-    }
-    /**
-     * The user's photo url at the IDP.
-     *
-     * @param string $photoUrl
-     */
-    public function setPhotoUrl($photoUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhotoUrl()
-    {
-    }
-    /**
-     * The IdP ID. For whitelisted IdPs it's a short domain name, e.g.,
-     * google.com, aol.com, live.net and yahoo.com. For other OpenID IdPs it's the
-     * OP identifier.
-     *
-     * @param string $providerId
-     */
-    public function setProviderId($providerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProviderId()
+    class Google_Service_IdentityToolkit_SetAccountInfoResponseProviderUserInfo extends \Google\Service\IdentityToolkit\SetAccountInfoResponseProviderUserInfo
     {
     }
 }

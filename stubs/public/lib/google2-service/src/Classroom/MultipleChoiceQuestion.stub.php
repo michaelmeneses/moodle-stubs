@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class MultipleChoiceQuestion extends \Google\Collection
-{
-    protected $collection_key = 'choices';
-    /**
-     * Possible choices.
-     *
-     * @var string[]
-     */
-    public $choices;
-    /**
-     * Possible choices.
-     *
-     * @param string[] $choices
-     */
-    public function setChoices($choices)
+namespace Google\Service\Classroom {
+    class MultipleChoiceQuestion extends \Google\Collection
     {
+        protected $collection_key = 'choices';
+        /**
+         * Possible choices.
+         *
+         * @var string[]
+         */
+        public $choices;
+        /**
+         * Possible choices.
+         *
+         * @param string[] $choices
+         */
+        public function setChoices($choices)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getChoices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Classroom\MultipleChoiceQuestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChoices()
+    class Google_Service_Classroom_MultipleChoiceQuestion extends \Google\Service\Classroom\MultipleChoiceQuestion
     {
     }
 }

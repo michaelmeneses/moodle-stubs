@@ -21,141 +21,150 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Digitalassetlinks;
-
-class CheckResponse extends \Google\Collection
-{
-    protected $collection_key = 'relationExtensions';
-    /**
-     * Human-readable message containing information intended to help end users
-     * understand, reproduce and debug the result. The message will be in English
-     * and we are currently not planning to offer any translations. Please note
-     * that no guarantees are made about the contents or format of this string.
-     * Any aspect of it may be subject to change without notice. You should not
-     * attempt to programmatically parse this data. For programmatic access, use
-     * the error_code field below.
-     *
-     * @var string
-     */
-    public $debugString;
-    /**
-     * Error codes that describe the result of the Check operation. NOTE: Error
-     * codes may be populated even when `linked` is true. The error codes do not
-     * necessarily imply that the request failed, but rather, specify any errors
-     * encountered in the statements file(s) which may or may not impact whether
-     * the server determines the requested source and target to be linked.
-     *
-     * @var string[]
-     */
-    public $errorCode;
-    /**
-     * Set to true if the assets specified in the request are linked by the
-     * relation specified in the request.
-     *
-     * @var bool
-     */
-    public $linked;
-    /**
-     * From serving time, how much longer the response should be considered valid
-     * barring further updates. REQUIRED
-     *
-     * @var string
-     */
-    public $maxAge;
-    /**
-     * Statements may specify relation level extensions/payloads to express more
-     * details when declaring permissions to grant from the source asset to the
-     * target asset. When requested, the API will return relation_extensions
-     * specified in any and all statements linking the requested source and target
-     * assets by the relation specified in the request.
-     *
-     * @var array[]
-     */
-    public $relationExtensions;
-    /**
-     * Human-readable message containing information intended to help end users
-     * understand, reproduce and debug the result. The message will be in English
-     * and we are currently not planning to offer any translations. Please note
-     * that no guarantees are made about the contents or format of this string.
-     * Any aspect of it may be subject to change without notice. You should not
-     * attempt to programmatically parse this data. For programmatic access, use
-     * the error_code field below.
-     *
-     * @param string $debugString
-     */
-    public function setDebugString($debugString)
+namespace Google\Service\Digitalassetlinks {
+    class CheckResponse extends \Google\Collection
     {
+        protected $collection_key = 'relationExtensions';
+        /**
+         * Human-readable message containing information intended to help end users
+         * understand, reproduce and debug the result. The message will be in English
+         * and we are currently not planning to offer any translations. Please note
+         * that no guarantees are made about the contents or format of this string.
+         * Any aspect of it may be subject to change without notice. You should not
+         * attempt to programmatically parse this data. For programmatic access, use
+         * the error_code field below.
+         *
+         * @var string
+         */
+        public $debugString;
+        /**
+         * Error codes that describe the result of the Check operation. NOTE: Error
+         * codes may be populated even when `linked` is true. The error codes do not
+         * necessarily imply that the request failed, but rather, specify any errors
+         * encountered in the statements file(s) which may or may not impact whether
+         * the server determines the requested source and target to be linked.
+         *
+         * @var string[]
+         */
+        public $errorCode;
+        /**
+         * Set to true if the assets specified in the request are linked by the
+         * relation specified in the request.
+         *
+         * @var bool
+         */
+        public $linked;
+        /**
+         * From serving time, how much longer the response should be considered valid
+         * barring further updates. REQUIRED
+         *
+         * @var string
+         */
+        public $maxAge;
+        /**
+         * Statements may specify relation level extensions/payloads to express more
+         * details when declaring permissions to grant from the source asset to the
+         * target asset. When requested, the API will return relation_extensions
+         * specified in any and all statements linking the requested source and target
+         * assets by the relation specified in the request.
+         *
+         * @var array[]
+         */
+        public $relationExtensions;
+        /**
+         * Human-readable message containing information intended to help end users
+         * understand, reproduce and debug the result. The message will be in English
+         * and we are currently not planning to offer any translations. Please note
+         * that no guarantees are made about the contents or format of this string.
+         * Any aspect of it may be subject to change without notice. You should not
+         * attempt to programmatically parse this data. For programmatic access, use
+         * the error_code field below.
+         *
+         * @param string $debugString
+         */
+        public function setDebugString($debugString)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDebugString()
+        {
+        }
+        /**
+         * Error codes that describe the result of the Check operation. NOTE: Error
+         * codes may be populated even when `linked` is true. The error codes do not
+         * necessarily imply that the request failed, but rather, specify any errors
+         * encountered in the statements file(s) which may or may not impact whether
+         * the server determines the requested source and target to be linked.
+         *
+         * @param string[] $errorCode
+         */
+        public function setErrorCode($errorCode)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getErrorCode()
+        {
+        }
+        /**
+         * Set to true if the assets specified in the request are linked by the
+         * relation specified in the request.
+         *
+         * @param bool $linked
+         */
+        public function setLinked($linked)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLinked()
+        {
+        }
+        /**
+         * From serving time, how much longer the response should be considered valid
+         * barring further updates. REQUIRED
+         *
+         * @param string $maxAge
+         */
+        public function setMaxAge($maxAge)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxAge()
+        {
+        }
+        /**
+         * Statements may specify relation level extensions/payloads to express more
+         * details when declaring permissions to grant from the source asset to the
+         * target asset. When requested, the API will return relation_extensions
+         * specified in any and all statements linking the requested source and target
+         * assets by the relation specified in the request.
+         *
+         * @param array[] $relationExtensions
+         */
+        public function setRelationExtensions($relationExtensions)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getRelationExtensions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Digitalassetlinks\CheckResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDebugString()
-    {
-    }
-    /**
-     * Error codes that describe the result of the Check operation. NOTE: Error
-     * codes may be populated even when `linked` is true. The error codes do not
-     * necessarily imply that the request failed, but rather, specify any errors
-     * encountered in the statements file(s) which may or may not impact whether
-     * the server determines the requested source and target to be linked.
-     *
-     * @param string[] $errorCode
-     */
-    public function setErrorCode($errorCode)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getErrorCode()
-    {
-    }
-    /**
-     * Set to true if the assets specified in the request are linked by the
-     * relation specified in the request.
-     *
-     * @param bool $linked
-     */
-    public function setLinked($linked)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getLinked()
-    {
-    }
-    /**
-     * From serving time, how much longer the response should be considered valid
-     * barring further updates. REQUIRED
-     *
-     * @param string $maxAge
-     */
-    public function setMaxAge($maxAge)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxAge()
-    {
-    }
-    /**
-     * Statements may specify relation level extensions/payloads to express more
-     * details when declaring permissions to grant from the source asset to the
-     * target asset. When requested, the API will return relation_extensions
-     * specified in any and all statements linking the requested source and target
-     * assets by the relation specified in the request.
-     *
-     * @param array[] $relationExtensions
-     */
-    public function setRelationExtensions($relationExtensions)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getRelationExtensions()
+    class Google_Service_Digitalassetlinks_CheckResponse extends \Google\Service\Digitalassetlinks\CheckResponse
     {
     }
 }

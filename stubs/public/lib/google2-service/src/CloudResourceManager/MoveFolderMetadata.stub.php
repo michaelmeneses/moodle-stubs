@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudResourceManager;
-
-class MoveFolderMetadata extends \Google\Model
-{
-    /**
-     * The resource name of the folder or organization to move the folder to.
-     *
-     * @var string
-     */
-    public $destinationParent;
-    /**
-     * The display name of the folder.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The resource name of the folder's parent.
-     *
-     * @var string
-     */
-    public $sourceParent;
-    /**
-     * The resource name of the folder or organization to move the folder to.
-     *
-     * @param string $destinationParent
-     */
-    public function setDestinationParent($destinationParent)
+namespace Google\Service\CloudResourceManager {
+    class MoveFolderMetadata extends \Google\Model
     {
+        /**
+         * The resource name of the folder or organization to move the folder to.
+         *
+         * @var string
+         */
+        public $destinationParent;
+        /**
+         * The display name of the folder.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The resource name of the folder's parent.
+         *
+         * @var string
+         */
+        public $sourceParent;
+        /**
+         * The resource name of the folder or organization to move the folder to.
+         *
+         * @param string $destinationParent
+         */
+        public function setDestinationParent($destinationParent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationParent()
+        {
+        }
+        /**
+         * The display name of the folder.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The resource name of the folder's parent.
+         *
+         * @param string $sourceParent
+         */
+        public function setSourceParent($sourceParent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudResourceManager\MoveFolderMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationParent()
-    {
-    }
-    /**
-     * The display name of the folder.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The resource name of the folder's parent.
-     *
-     * @param string $sourceParent
-     */
-    public function setSourceParent($sourceParent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceParent()
+    class Google_Service_CloudResourceManager_MoveFolderMetadata extends \Google\Service\CloudResourceManager\MoveFolderMetadata
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS;
-
-class ShowEffectiveKeyAccessJustificationsEnrollmentConfigResponse extends \Google\Model
-{
-    protected $externalConfigType = KeyAccessJustificationsEnrollmentConfig::class;
-    protected $externalConfigDataType = '';
-    protected $hardwareConfigType = KeyAccessJustificationsEnrollmentConfig::class;
-    protected $hardwareConfigDataType = '';
-    protected $softwareConfigType = KeyAccessJustificationsEnrollmentConfig::class;
-    protected $softwareConfigDataType = '';
-    /**
-     * The effective KeyAccessJustificationsEnrollmentConfig for external keys.
-     *
-     * @param KeyAccessJustificationsEnrollmentConfig $externalConfig
-     */
-    public function setExternalConfig(KeyAccessJustificationsEnrollmentConfig $externalConfig)
+namespace Google\Service\CloudKMS {
+    class ShowEffectiveKeyAccessJustificationsEnrollmentConfigResponse extends \Google\Model
     {
+        protected $externalConfigType = KeyAccessJustificationsEnrollmentConfig::class;
+        protected $externalConfigDataType = '';
+        protected $hardwareConfigType = KeyAccessJustificationsEnrollmentConfig::class;
+        protected $hardwareConfigDataType = '';
+        protected $softwareConfigType = KeyAccessJustificationsEnrollmentConfig::class;
+        protected $softwareConfigDataType = '';
+        /**
+         * The effective KeyAccessJustificationsEnrollmentConfig for external keys.
+         *
+         * @param KeyAccessJustificationsEnrollmentConfig $externalConfig
+         */
+        public function setExternalConfig(KeyAccessJustificationsEnrollmentConfig $externalConfig)
+        {
+        }
+        /**
+         * @return KeyAccessJustificationsEnrollmentConfig
+         */
+        public function getExternalConfig()
+        {
+        }
+        /**
+         * The effective KeyAccessJustificationsEnrollmentConfig for hardware keys.
+         *
+         * @param KeyAccessJustificationsEnrollmentConfig $hardwareConfig
+         */
+        public function setHardwareConfig(KeyAccessJustificationsEnrollmentConfig $hardwareConfig)
+        {
+        }
+        /**
+         * @return KeyAccessJustificationsEnrollmentConfig
+         */
+        public function getHardwareConfig()
+        {
+        }
+        /**
+         * The effective KeyAccessJustificationsEnrollmentConfig for software keys.
+         *
+         * @param KeyAccessJustificationsEnrollmentConfig $softwareConfig
+         */
+        public function setSoftwareConfig(KeyAccessJustificationsEnrollmentConfig $softwareConfig)
+        {
+        }
+        /**
+         * @return KeyAccessJustificationsEnrollmentConfig
+         */
+        public function getSoftwareConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return KeyAccessJustificationsEnrollmentConfig
+     * Runtime class alias of \Google\Service\CloudKMS\ShowEffectiveKeyAccessJustificationsEnrollmentConfigResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExternalConfig()
-    {
-    }
-    /**
-     * The effective KeyAccessJustificationsEnrollmentConfig for hardware keys.
-     *
-     * @param KeyAccessJustificationsEnrollmentConfig $hardwareConfig
-     */
-    public function setHardwareConfig(KeyAccessJustificationsEnrollmentConfig $hardwareConfig)
-    {
-    }
-    /**
-     * @return KeyAccessJustificationsEnrollmentConfig
-     */
-    public function getHardwareConfig()
-    {
-    }
-    /**
-     * The effective KeyAccessJustificationsEnrollmentConfig for software keys.
-     *
-     * @param KeyAccessJustificationsEnrollmentConfig $softwareConfig
-     */
-    public function setSoftwareConfig(KeyAccessJustificationsEnrollmentConfig $softwareConfig)
-    {
-    }
-    /**
-     * @return KeyAccessJustificationsEnrollmentConfig
-     */
-    public function getSoftwareConfig()
+    class Google_Service_CloudKMS_ShowEffectiveKeyAccessJustificationsEnrollmentConfigResponse extends \Google\Service\CloudKMS\ShowEffectiveKeyAccessJustificationsEnrollmentConfigResponse
     {
     }
 }

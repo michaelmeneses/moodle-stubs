@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Webmasters;
-
-class SitemapsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'sitemap';
-    protected $sitemapType = WmxSitemap::class;
-    protected $sitemapDataType = 'array';
-    /**
-     * @param WmxSitemap[]
-     */
-    public function setSitemap($sitemap)
+namespace Google\Service\Webmasters {
+    class SitemapsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'sitemap';
+        protected $sitemapType = WmxSitemap::class;
+        protected $sitemapDataType = 'array';
+        /**
+         * @param WmxSitemap[]
+         */
+        public function setSitemap($sitemap)
+        {
+        }
+        /**
+         * @return WmxSitemap[]
+         */
+        public function getSitemap()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return WmxSitemap[]
+     * Runtime class alias of \Google\Service\Webmasters\SitemapsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSitemap()
+    class Google_Service_Webmasters_SitemapsListResponse extends \Google\Service\Webmasters\SitemapsListResponse
     {
     }
 }

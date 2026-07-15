@@ -21,157 +21,166 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CustomSearchAPI;
-
-class Search extends \Google\Collection
-{
-    protected $collection_key = 'promotions';
-    /**
-     * Metadata and refinements associated with the given search engine,
-     * including: * The name of the search engine that was used for the query. * A
-     * set of [facet objects](https://developers.google.com/custom-
-     * search/docs/refinements#create) (refinements) you can use for refining a
-     * search.
-     *
-     * @var array[]
-     */
-    public $context;
-    protected $itemsType = Result::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Unique identifier for the type of current object. For this API, it is
-     * customsearch#search.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $promotionsType = Promotion::class;
-    protected $promotionsDataType = 'array';
-    protected $queriesType = SearchQueries::class;
-    protected $queriesDataType = '';
-    protected $searchInformationType = SearchSearchInformation::class;
-    protected $searchInformationDataType = '';
-    protected $spellingType = SearchSpelling::class;
-    protected $spellingDataType = '';
-    protected $urlType = SearchUrl::class;
-    protected $urlDataType = '';
-    /**
-     * Metadata and refinements associated with the given search engine,
-     * including: * The name of the search engine that was used for the query. * A
-     * set of [facet objects](https://developers.google.com/custom-
-     * search/docs/refinements#create) (refinements) you can use for refining a
-     * search.
-     *
-     * @param array[] $context
-     */
-    public function setContext($context)
+namespace Google\Service\CustomSearchAPI {
+    class Search extends \Google\Collection
     {
+        protected $collection_key = 'promotions';
+        /**
+         * Metadata and refinements associated with the given search engine,
+         * including: * The name of the search engine that was used for the query. * A
+         * set of [facet objects](https://developers.google.com/custom-
+         * search/docs/refinements#create) (refinements) you can use for refining a
+         * search.
+         *
+         * @var array[]
+         */
+        public $context;
+        protected $itemsType = Result::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Unique identifier for the type of current object. For this API, it is
+         * customsearch#search.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $promotionsType = Promotion::class;
+        protected $promotionsDataType = 'array';
+        protected $queriesType = SearchQueries::class;
+        protected $queriesDataType = '';
+        protected $searchInformationType = SearchSearchInformation::class;
+        protected $searchInformationDataType = '';
+        protected $spellingType = SearchSpelling::class;
+        protected $spellingDataType = '';
+        protected $urlType = SearchUrl::class;
+        protected $urlDataType = '';
+        /**
+         * Metadata and refinements associated with the given search engine,
+         * including: * The name of the search engine that was used for the query. * A
+         * set of [facet objects](https://developers.google.com/custom-
+         * search/docs/refinements#create) (refinements) you can use for refining a
+         * search.
+         *
+         * @param array[] $context
+         */
+        public function setContext($context)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getContext()
+        {
+        }
+        /**
+         * The current set of custom search results.
+         *
+         * @param Result[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Result[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Unique identifier for the type of current object. For this API, it is
+         * customsearch#search.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The set of [promotions](https://developers.google.com/custom-
+         * search/docs/promotions). Present only if the custom search engine's
+         * configuration files define any promotions for the given query.
+         *
+         * @param Promotion[] $promotions
+         */
+        public function setPromotions($promotions)
+        {
+        }
+        /**
+         * @return Promotion[]
+         */
+        public function getPromotions()
+        {
+        }
+        /**
+         * Query metadata for the previous, current, and next pages of results.
+         *
+         * @param SearchQueries $queries
+         */
+        public function setQueries(SearchQueries $queries)
+        {
+        }
+        /**
+         * @return SearchQueries
+         */
+        public function getQueries()
+        {
+        }
+        /**
+         * Metadata about a search operation.
+         *
+         * @param SearchSearchInformation $searchInformation
+         */
+        public function setSearchInformation(SearchSearchInformation $searchInformation)
+        {
+        }
+        /**
+         * @return SearchSearchInformation
+         */
+        public function getSearchInformation()
+        {
+        }
+        /**
+         * Spell correction information for a query.
+         *
+         * @param SearchSpelling $spelling
+         */
+        public function setSpelling(SearchSpelling $spelling)
+        {
+        }
+        /**
+         * @return SearchSpelling
+         */
+        public function getSpelling()
+        {
+        }
+        /**
+         * OpenSearch template and URL.
+         *
+         * @param SearchUrl $url
+         */
+        public function setUrl(SearchUrl $url)
+        {
+        }
+        /**
+         * @return SearchUrl
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\CustomSearchAPI\Search registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContext()
-    {
-    }
-    /**
-     * The current set of custom search results.
-     *
-     * @param Result[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return Result[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * Unique identifier for the type of current object. For this API, it is
-     * customsearch#search.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The set of [promotions](https://developers.google.com/custom-
-     * search/docs/promotions). Present only if the custom search engine's
-     * configuration files define any promotions for the given query.
-     *
-     * @param Promotion[] $promotions
-     */
-    public function setPromotions($promotions)
-    {
-    }
-    /**
-     * @return Promotion[]
-     */
-    public function getPromotions()
-    {
-    }
-    /**
-     * Query metadata for the previous, current, and next pages of results.
-     *
-     * @param SearchQueries $queries
-     */
-    public function setQueries(SearchQueries $queries)
-    {
-    }
-    /**
-     * @return SearchQueries
-     */
-    public function getQueries()
-    {
-    }
-    /**
-     * Metadata about a search operation.
-     *
-     * @param SearchSearchInformation $searchInformation
-     */
-    public function setSearchInformation(SearchSearchInformation $searchInformation)
-    {
-    }
-    /**
-     * @return SearchSearchInformation
-     */
-    public function getSearchInformation()
-    {
-    }
-    /**
-     * Spell correction information for a query.
-     *
-     * @param SearchSpelling $spelling
-     */
-    public function setSpelling(SearchSpelling $spelling)
-    {
-    }
-    /**
-     * @return SearchSpelling
-     */
-    public function getSpelling()
-    {
-    }
-    /**
-     * OpenSearch template and URL.
-     *
-     * @param SearchUrl $url
-     */
-    public function setUrl(SearchUrl $url)
-    {
-    }
-    /**
-     * @return SearchUrl
-     */
-    public function getUrl()
+    class Google_Service_CustomSearchAPI_Search extends \Google\Service\CustomSearchAPI\Search
     {
     }
 }

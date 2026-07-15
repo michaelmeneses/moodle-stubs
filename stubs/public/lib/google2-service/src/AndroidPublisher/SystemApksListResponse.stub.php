@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class SystemApksListResponse extends \Google\Collection
-{
-    protected $collection_key = 'variants';
-    protected $variantsType = Variant::class;
-    protected $variantsDataType = 'array';
-    /**
-     * All system APK variants created.
-     *
-     * @param Variant[] $variants
-     */
-    public function setVariants($variants)
+namespace Google\Service\AndroidPublisher {
+    class SystemApksListResponse extends \Google\Collection
     {
+        protected $collection_key = 'variants';
+        protected $variantsType = Variant::class;
+        protected $variantsDataType = 'array';
+        /**
+         * All system APK variants created.
+         *
+         * @param Variant[] $variants
+         */
+        public function setVariants($variants)
+        {
+        }
+        /**
+         * @return Variant[]
+         */
+        public function getVariants()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Variant[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\SystemApksListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVariants()
+    class Google_Service_AndroidPublisher_SystemApksListResponse extends \Google\Service\AndroidPublisher\SystemApksListResponse
     {
     }
 }

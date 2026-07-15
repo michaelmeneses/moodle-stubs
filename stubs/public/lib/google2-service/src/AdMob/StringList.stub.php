@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdMob;
-
-class StringList extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * The string values.
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * The string values.
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\AdMob {
+    class StringList extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * The string values.
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * The string values.
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AdMob\StringList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_AdMob_StringList extends \Google\Service\AdMob\StringList
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner;
-
-class GoogleWorkspaceAccount extends \Google\Collection
-{
-    protected $collection_key = 'preProvisioningTokens';
-    /**
-     * Required. The customer ID.
-     *
-     * @var string
-     */
-    public $customerId;
-    /**
-     * Output only. The pre-provisioning tokens previously used to claim devices.
-     *
-     * @var string[]
-     */
-    public $preProvisioningTokens;
-    /**
-     * Required. The customer ID.
-     *
-     * @param string $customerId
-     */
-    public function setCustomerId($customerId)
+namespace Google\Service\AndroidProvisioningPartner {
+    class GoogleWorkspaceAccount extends \Google\Collection
     {
+        protected $collection_key = 'preProvisioningTokens';
+        /**
+         * Required. The customer ID.
+         *
+         * @var string
+         */
+        public $customerId;
+        /**
+         * Output only. The pre-provisioning tokens previously used to claim devices.
+         *
+         * @var string[]
+         */
+        public $preProvisioningTokens;
+        /**
+         * Required. The customer ID.
+         *
+         * @param string $customerId
+         */
+        public function setCustomerId($customerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomerId()
+        {
+        }
+        /**
+         * Output only. The pre-provisioning tokens previously used to claim devices.
+         *
+         * @param string[] $preProvisioningTokens
+         */
+        public function setPreProvisioningTokens($preProvisioningTokens)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPreProvisioningTokens()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\GoogleWorkspaceAccount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomerId()
-    {
-    }
-    /**
-     * Output only. The pre-provisioning tokens previously used to claim devices.
-     *
-     * @param string[] $preProvisioningTokens
-     */
-    public function setPreProvisioningTokens($preProvisioningTokens)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPreProvisioningTokens()
+    class Google_Service_AndroidProvisioningPartner_GoogleWorkspaceAccount extends \Google\Service\AndroidProvisioningPartner\GoogleWorkspaceAccount
     {
     }
 }

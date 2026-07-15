@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1EnvironmentEndpoints extends \Google\Model
-{
-    /**
-     * Output only. URI to serve notebook APIs
-     *
-     * @var string
-     */
-    public $notebooks;
-    /**
-     * Output only. URI to serve SQL APIs
-     *
-     * @var string
-     */
-    public $sql;
-    /**
-     * Output only. URI to serve notebook APIs
-     *
-     * @param string $notebooks
-     */
-    public function setNotebooks($notebooks)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1EnvironmentEndpoints extends \Google\Model
     {
+        /**
+         * Output only. URI to serve notebook APIs
+         *
+         * @var string
+         */
+        public $notebooks;
+        /**
+         * Output only. URI to serve SQL APIs
+         *
+         * @var string
+         */
+        public $sql;
+        /**
+         * Output only. URI to serve notebook APIs
+         *
+         * @param string $notebooks
+         */
+        public function setNotebooks($notebooks)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotebooks()
+        {
+        }
+        /**
+         * Output only. URI to serve SQL APIs
+         *
+         * @param string $sql
+         */
+        public function setSql($sql)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSql()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1EnvironmentEndpoints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNotebooks()
-    {
-    }
-    /**
-     * Output only. URI to serve SQL APIs
-     *
-     * @param string $sql
-     */
-    public function setSql($sql)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSql()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1EnvironmentEndpoints extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1EnvironmentEndpoints
     {
     }
 }

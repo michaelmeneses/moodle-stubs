@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ConnectionTypesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'connectionTypes';
-    protected $connectionTypesType = ConnectionType::class;
-    protected $connectionTypesDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#connectionTypesListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Collection of connection types such as broadband and mobile.
-     *
-     * @param ConnectionType[] $connectionTypes
-     */
-    public function setConnectionTypes($connectionTypes)
+namespace Google\Service\Dfareporting {
+    class ConnectionTypesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'connectionTypes';
+        protected $connectionTypesType = ConnectionType::class;
+        protected $connectionTypesDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#connectionTypesListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Collection of connection types such as broadband and mobile.
+         *
+         * @param ConnectionType[] $connectionTypes
+         */
+        public function setConnectionTypes($connectionTypes)
+        {
+        }
+        /**
+         * @return ConnectionType[]
+         */
+        public function getConnectionTypes()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#connectionTypesListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConnectionType[]
+     * Runtime class alias of \Google\Service\Dfareporting\ConnectionTypesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectionTypes()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#connectionTypesListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Dfareporting_ConnectionTypesListResponse extends \Google\Service\Dfareporting\ConnectionTypesListResponse
     {
     }
 }

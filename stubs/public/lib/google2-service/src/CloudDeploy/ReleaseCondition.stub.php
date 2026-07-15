@@ -21,141 +21,150 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class ReleaseCondition extends \Google\Model
-{
-    protected $dockerVersionSupportedConditionType = ToolVersionSupportedCondition::class;
-    protected $dockerVersionSupportedConditionDataType = '';
-    protected $helmVersionSupportedConditionType = ToolVersionSupportedCondition::class;
-    protected $helmVersionSupportedConditionDataType = '';
-    protected $kptVersionSupportedConditionType = ToolVersionSupportedCondition::class;
-    protected $kptVersionSupportedConditionDataType = '';
-    protected $kubectlVersionSupportedConditionType = ToolVersionSupportedCondition::class;
-    protected $kubectlVersionSupportedConditionDataType = '';
-    protected $kustomizeVersionSupportedConditionType = ToolVersionSupportedCondition::class;
-    protected $kustomizeVersionSupportedConditionDataType = '';
-    protected $releaseReadyConditionType = ReleaseReadyCondition::class;
-    protected $releaseReadyConditionDataType = '';
-    protected $skaffoldSupportedConditionType = SkaffoldSupportedCondition::class;
-    protected $skaffoldSupportedConditionDataType = '';
-    protected $skaffoldVersionSupportedConditionType = ToolVersionSupportedCondition::class;
-    protected $skaffoldVersionSupportedConditionDataType = '';
-    /**
-     * Output only. Details around the support state of the release's Docker
-     * version.
-     *
-     * @param ToolVersionSupportedCondition $dockerVersionSupportedCondition
-     */
-    public function setDockerVersionSupportedCondition(ToolVersionSupportedCondition $dockerVersionSupportedCondition)
+namespace Google\Service\CloudDeploy {
+    class ReleaseCondition extends \Google\Model
     {
+        protected $dockerVersionSupportedConditionType = ToolVersionSupportedCondition::class;
+        protected $dockerVersionSupportedConditionDataType = '';
+        protected $helmVersionSupportedConditionType = ToolVersionSupportedCondition::class;
+        protected $helmVersionSupportedConditionDataType = '';
+        protected $kptVersionSupportedConditionType = ToolVersionSupportedCondition::class;
+        protected $kptVersionSupportedConditionDataType = '';
+        protected $kubectlVersionSupportedConditionType = ToolVersionSupportedCondition::class;
+        protected $kubectlVersionSupportedConditionDataType = '';
+        protected $kustomizeVersionSupportedConditionType = ToolVersionSupportedCondition::class;
+        protected $kustomizeVersionSupportedConditionDataType = '';
+        protected $releaseReadyConditionType = ReleaseReadyCondition::class;
+        protected $releaseReadyConditionDataType = '';
+        protected $skaffoldSupportedConditionType = SkaffoldSupportedCondition::class;
+        protected $skaffoldSupportedConditionDataType = '';
+        protected $skaffoldVersionSupportedConditionType = ToolVersionSupportedCondition::class;
+        protected $skaffoldVersionSupportedConditionDataType = '';
+        /**
+         * Output only. Details around the support state of the release's Docker
+         * version.
+         *
+         * @param ToolVersionSupportedCondition $dockerVersionSupportedCondition
+         */
+        public function setDockerVersionSupportedCondition(ToolVersionSupportedCondition $dockerVersionSupportedCondition)
+        {
+        }
+        /**
+         * @return ToolVersionSupportedCondition
+         */
+        public function getDockerVersionSupportedCondition()
+        {
+        }
+        /**
+         * Output only. Details around the support state of the release's Helm
+         * version.
+         *
+         * @param ToolVersionSupportedCondition $helmVersionSupportedCondition
+         */
+        public function setHelmVersionSupportedCondition(ToolVersionSupportedCondition $helmVersionSupportedCondition)
+        {
+        }
+        /**
+         * @return ToolVersionSupportedCondition
+         */
+        public function getHelmVersionSupportedCondition()
+        {
+        }
+        /**
+         * Output only. Details around the support state of the release's Kpt version.
+         *
+         * @param ToolVersionSupportedCondition $kptVersionSupportedCondition
+         */
+        public function setKptVersionSupportedCondition(ToolVersionSupportedCondition $kptVersionSupportedCondition)
+        {
+        }
+        /**
+         * @return ToolVersionSupportedCondition
+         */
+        public function getKptVersionSupportedCondition()
+        {
+        }
+        /**
+         * Output only. Details around the support state of the release's Kubectl
+         * version.
+         *
+         * @param ToolVersionSupportedCondition $kubectlVersionSupportedCondition
+         */
+        public function setKubectlVersionSupportedCondition(ToolVersionSupportedCondition $kubectlVersionSupportedCondition)
+        {
+        }
+        /**
+         * @return ToolVersionSupportedCondition
+         */
+        public function getKubectlVersionSupportedCondition()
+        {
+        }
+        /**
+         * Output only. Details around the support state of the release's Kustomize
+         * version.
+         *
+         * @param ToolVersionSupportedCondition $kustomizeVersionSupportedCondition
+         */
+        public function setKustomizeVersionSupportedCondition(ToolVersionSupportedCondition $kustomizeVersionSupportedCondition)
+        {
+        }
+        /**
+         * @return ToolVersionSupportedCondition
+         */
+        public function getKustomizeVersionSupportedCondition()
+        {
+        }
+        /**
+         * Details around the Releases's overall status.
+         *
+         * @param ReleaseReadyCondition $releaseReadyCondition
+         */
+        public function setReleaseReadyCondition(ReleaseReadyCondition $releaseReadyCondition)
+        {
+        }
+        /**
+         * @return ReleaseReadyCondition
+         */
+        public function getReleaseReadyCondition()
+        {
+        }
+        /**
+         * Details around the support state of the release's Skaffold version.
+         *
+         * @param SkaffoldSupportedCondition $skaffoldSupportedCondition
+         */
+        public function setSkaffoldSupportedCondition(SkaffoldSupportedCondition $skaffoldSupportedCondition)
+        {
+        }
+        /**
+         * @return SkaffoldSupportedCondition
+         */
+        public function getSkaffoldSupportedCondition()
+        {
+        }
+        /**
+         * Output only. Details around the support state of the release's Skaffold
+         * version.
+         *
+         * @param ToolVersionSupportedCondition $skaffoldVersionSupportedCondition
+         */
+        public function setSkaffoldVersionSupportedCondition(ToolVersionSupportedCondition $skaffoldVersionSupportedCondition)
+        {
+        }
+        /**
+         * @return ToolVersionSupportedCondition
+         */
+        public function getSkaffoldVersionSupportedCondition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ToolVersionSupportedCondition
+     * Runtime class alias of \Google\Service\CloudDeploy\ReleaseCondition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDockerVersionSupportedCondition()
-    {
-    }
-    /**
-     * Output only. Details around the support state of the release's Helm
-     * version.
-     *
-     * @param ToolVersionSupportedCondition $helmVersionSupportedCondition
-     */
-    public function setHelmVersionSupportedCondition(ToolVersionSupportedCondition $helmVersionSupportedCondition)
-    {
-    }
-    /**
-     * @return ToolVersionSupportedCondition
-     */
-    public function getHelmVersionSupportedCondition()
-    {
-    }
-    /**
-     * Output only. Details around the support state of the release's Kpt version.
-     *
-     * @param ToolVersionSupportedCondition $kptVersionSupportedCondition
-     */
-    public function setKptVersionSupportedCondition(ToolVersionSupportedCondition $kptVersionSupportedCondition)
-    {
-    }
-    /**
-     * @return ToolVersionSupportedCondition
-     */
-    public function getKptVersionSupportedCondition()
-    {
-    }
-    /**
-     * Output only. Details around the support state of the release's Kubectl
-     * version.
-     *
-     * @param ToolVersionSupportedCondition $kubectlVersionSupportedCondition
-     */
-    public function setKubectlVersionSupportedCondition(ToolVersionSupportedCondition $kubectlVersionSupportedCondition)
-    {
-    }
-    /**
-     * @return ToolVersionSupportedCondition
-     */
-    public function getKubectlVersionSupportedCondition()
-    {
-    }
-    /**
-     * Output only. Details around the support state of the release's Kustomize
-     * version.
-     *
-     * @param ToolVersionSupportedCondition $kustomizeVersionSupportedCondition
-     */
-    public function setKustomizeVersionSupportedCondition(ToolVersionSupportedCondition $kustomizeVersionSupportedCondition)
-    {
-    }
-    /**
-     * @return ToolVersionSupportedCondition
-     */
-    public function getKustomizeVersionSupportedCondition()
-    {
-    }
-    /**
-     * Details around the Releases's overall status.
-     *
-     * @param ReleaseReadyCondition $releaseReadyCondition
-     */
-    public function setReleaseReadyCondition(ReleaseReadyCondition $releaseReadyCondition)
-    {
-    }
-    /**
-     * @return ReleaseReadyCondition
-     */
-    public function getReleaseReadyCondition()
-    {
-    }
-    /**
-     * Details around the support state of the release's Skaffold version.
-     *
-     * @param SkaffoldSupportedCondition $skaffoldSupportedCondition
-     */
-    public function setSkaffoldSupportedCondition(SkaffoldSupportedCondition $skaffoldSupportedCondition)
-    {
-    }
-    /**
-     * @return SkaffoldSupportedCondition
-     */
-    public function getSkaffoldSupportedCondition()
-    {
-    }
-    /**
-     * Output only. Details around the support state of the release's Skaffold
-     * version.
-     *
-     * @param ToolVersionSupportedCondition $skaffoldVersionSupportedCondition
-     */
-    public function setSkaffoldVersionSupportedCondition(ToolVersionSupportedCondition $skaffoldVersionSupportedCondition)
-    {
-    }
-    /**
-     * @return ToolVersionSupportedCondition
-     */
-    public function getSkaffoldVersionSupportedCondition()
+    class Google_Service_CloudDeploy_ReleaseCondition extends \Google\Service\CloudDeploy\ReleaseCondition
     {
     }
 }

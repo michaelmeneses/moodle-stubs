@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReply extends \Google\Model
-{
-    /**
-     * Opaque payload that the Dialogflow receives in a user event when the user
-     * taps the suggested reply. This data will be also forwarded to webhook to
-     * allow performing custom business logic.
-     *
-     * @var string
-     */
-    public $postbackData;
-    /**
-     * Suggested reply text.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Opaque payload that the Dialogflow receives in a user event when the user
-     * taps the suggested reply. This data will be also forwarded to webhook to
-     * allow performing custom business logic.
-     *
-     * @param string $postbackData
-     */
-    public function setPostbackData($postbackData)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReply extends \Google\Model
     {
+        /**
+         * Opaque payload that the Dialogflow receives in a user event when the user
+         * taps the suggested reply. This data will be also forwarded to webhook to
+         * allow performing custom business logic.
+         *
+         * @var string
+         */
+        public $postbackData;
+        /**
+         * Suggested reply text.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Opaque payload that the Dialogflow receives in a user event when the user
+         * taps the suggested reply. This data will be also forwarded to webhook to
+         * allow performing custom business logic.
+         *
+         * @param string $postbackData
+         */
+        public function setPostbackData($postbackData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostbackData()
+        {
+        }
+        /**
+         * Suggested reply text.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReply registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPostbackData()
-    {
-    }
-    /**
-     * Suggested reply text.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReply extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReply
     {
     }
 }

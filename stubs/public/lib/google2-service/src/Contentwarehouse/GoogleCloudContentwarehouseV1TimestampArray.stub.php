@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1TimestampArray extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    protected $valuesType = GoogleCloudContentwarehouseV1TimestampValue::class;
-    protected $valuesDataType = 'array';
-    /**
-     * List of timestamp values.
-     *
-     * @param GoogleCloudContentwarehouseV1TimestampValue[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1TimestampArray extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        protected $valuesType = GoogleCloudContentwarehouseV1TimestampValue::class;
+        protected $valuesDataType = 'array';
+        /**
+         * List of timestamp values.
+         *
+         * @param GoogleCloudContentwarehouseV1TimestampValue[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1TimestampValue[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContentwarehouseV1TimestampValue[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1TimestampArray registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1TimestampArray extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1TimestampArray
     {
     }
 }

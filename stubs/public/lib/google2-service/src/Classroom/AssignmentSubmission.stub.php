@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class AssignmentSubmission extends \Google\Collection
-{
-    protected $collection_key = 'attachments';
-    protected $attachmentsType = Attachment::class;
-    protected $attachmentsDataType = 'array';
-    /**
-     * Attachments added by the student. Drive files that correspond to materials
-     * with a share mode of STUDENT_COPY may not exist yet if the student has not
-     * accessed the assignment in Classroom. Some attachment metadata is only
-     * populated if the requesting user has permission to access it. Identifier
-     * and alternate_link fields are always available, but others (for example,
-     * title) may not be.
-     *
-     * @param Attachment[] $attachments
-     */
-    public function setAttachments($attachments)
+namespace Google\Service\Classroom {
+    class AssignmentSubmission extends \Google\Collection
     {
+        protected $collection_key = 'attachments';
+        protected $attachmentsType = Attachment::class;
+        protected $attachmentsDataType = 'array';
+        /**
+         * Attachments added by the student. Drive files that correspond to materials
+         * with a share mode of STUDENT_COPY may not exist yet if the student has not
+         * accessed the assignment in Classroom. Some attachment metadata is only
+         * populated if the requesting user has permission to access it. Identifier
+         * and alternate_link fields are always available, but others (for example,
+         * title) may not be.
+         *
+         * @param Attachment[] $attachments
+         */
+        public function setAttachments($attachments)
+        {
+        }
+        /**
+         * @return Attachment[]
+         */
+        public function getAttachments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Attachment[]
+     * Runtime class alias of \Google\Service\Classroom\AssignmentSubmission registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachments()
+    class Google_Service_Classroom_AssignmentSubmission extends \Google\Service\Classroom\AssignmentSubmission
     {
     }
 }

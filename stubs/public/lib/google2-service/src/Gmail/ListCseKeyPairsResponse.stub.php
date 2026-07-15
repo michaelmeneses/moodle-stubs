@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class ListCseKeyPairsResponse extends \Google\Collection
-{
-    protected $collection_key = 'cseKeyPairs';
-    protected $cseKeyPairsType = CseKeyPair::class;
-    protected $cseKeyPairsDataType = 'array';
-    /**
-     * Pagination token to be passed to a subsequent ListCseKeyPairs call in order
-     * to retrieve the next page of key pairs. If this value is not returned, then
-     * no further pages remain.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * One page of the list of CSE key pairs installed for the user.
-     *
-     * @param CseKeyPair[] $cseKeyPairs
-     */
-    public function setCseKeyPairs($cseKeyPairs)
+namespace Google\Service\Gmail {
+    class ListCseKeyPairsResponse extends \Google\Collection
     {
+        protected $collection_key = 'cseKeyPairs';
+        protected $cseKeyPairsType = CseKeyPair::class;
+        protected $cseKeyPairsDataType = 'array';
+        /**
+         * Pagination token to be passed to a subsequent ListCseKeyPairs call in order
+         * to retrieve the next page of key pairs. If this value is not returned, then
+         * no further pages remain.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * One page of the list of CSE key pairs installed for the user.
+         *
+         * @param CseKeyPair[] $cseKeyPairs
+         */
+        public function setCseKeyPairs($cseKeyPairs)
+        {
+        }
+        /**
+         * @return CseKeyPair[]
+         */
+        public function getCseKeyPairs()
+        {
+        }
+        /**
+         * Pagination token to be passed to a subsequent ListCseKeyPairs call in order
+         * to retrieve the next page of key pairs. If this value is not returned, then
+         * no further pages remain.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CseKeyPair[]
+     * Runtime class alias of \Google\Service\Gmail\ListCseKeyPairsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCseKeyPairs()
-    {
-    }
-    /**
-     * Pagination token to be passed to a subsequent ListCseKeyPairs call in order
-     * to retrieve the next page of key pairs. If this value is not returned, then
-     * no further pages remain.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Gmail_ListCseKeyPairsResponse extends \Google\Service\Gmail\ListCseKeyPairsResponse
     {
     }
 }

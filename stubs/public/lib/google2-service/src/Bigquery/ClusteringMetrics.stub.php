@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ClusteringMetrics extends \Google\Collection
-{
-    protected $collection_key = 'clusters';
-    protected $clustersType = Cluster::class;
-    protected $clustersDataType = 'array';
+namespace Google\Service\Bigquery {
+    class ClusteringMetrics extends \Google\Collection
+    {
+        protected $collection_key = 'clusters';
+        protected $clustersType = Cluster::class;
+        protected $clustersDataType = 'array';
+        /**
+         * Davies-Bouldin index.
+         *
+         * @var 
+         */
+        public $daviesBouldinIndex;
+        /**
+         * Mean of squared distances between each sample to its cluster centroid.
+         *
+         * @var 
+         */
+        public $meanSquaredDistance;
+        /**
+         * Information for all clusters.
+         *
+         * @param Cluster[] $clusters
+         */
+        public function setClusters($clusters)
+        {
+        }
+        /**
+         * @return Cluster[]
+         */
+        public function getClusters()
+        {
+        }
+        public function setDaviesBouldinIndex($daviesBouldinIndex)
+        {
+        }
+        public function getDaviesBouldinIndex()
+        {
+        }
+        public function setMeanSquaredDistance($meanSquaredDistance)
+        {
+        }
+        public function getMeanSquaredDistance()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Davies-Bouldin index.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Bigquery\ClusteringMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $daviesBouldinIndex;
-    /**
-     * Mean of squared distances between each sample to its cluster centroid.
-     *
-     * @var 
-     */
-    public $meanSquaredDistance;
-    /**
-     * Information for all clusters.
-     *
-     * @param Cluster[] $clusters
-     */
-    public function setClusters($clusters)
-    {
-    }
-    /**
-     * @return Cluster[]
-     */
-    public function getClusters()
-    {
-    }
-    public function setDaviesBouldinIndex($daviesBouldinIndex)
-    {
-    }
-    public function getDaviesBouldinIndex()
-    {
-    }
-    public function setMeanSquaredDistance($meanSquaredDistance)
-    {
-    }
-    public function getMeanSquaredDistance()
+    class Google_Service_Bigquery_ClusteringMetrics extends \Google\Service\Bigquery\ClusteringMetrics
     {
     }
 }

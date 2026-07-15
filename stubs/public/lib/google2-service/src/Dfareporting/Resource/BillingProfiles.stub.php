@@ -21,73 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "billingProfiles" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $billingProfiles = $dfareportingService->billingProfiles;
- *  </code>
- */
-class BillingProfiles extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\BillingProfile;
+    use Google\Service\Dfareporting\BillingProfilesListResponse;
     /**
-     * Gets one billing profile by ID. (billingProfiles.get)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $id Billing Profile ID.
-     * @param array $optParams Optional parameters.
-     * @return BillingProfile
-     * @throws \Google\Service\Exception
+     * The "billingProfiles" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $billingProfiles = $dfareportingService->billingProfiles;
+     *  </code>
      */
-    public function get($profileId, $id, $optParams = [])
+    class BillingProfiles extends \Google\Service\Resource
     {
+        /**
+         * Gets one billing profile by ID. (billingProfiles.get)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $id Billing Profile ID.
+         * @param array $optParams Optional parameters.
+         * @return BillingProfile
+         * @throws \Google\Service\Exception
+         */
+        public function get($profileId, $id, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of billing profiles, possibly filtered. This method supports
+         * paging. (billingProfiles.listBillingProfiles)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string currency_code Select only billing profile with currency.
+         * @opt_param string ids Select only billing profile with these IDs.
+         * @opt_param int maxResults Maximum number of results to return.
+         * @opt_param string name Allows searching for billing profiles by name.
+         * Wildcards (*) are allowed. For example, "profile*2020" will return objects
+         * with names like "profile June 2020", "profile April 2020", or simply "profile
+         * 2020". Most of the searches also add wildcards implicitly at the start and
+         * the end of the search string. For example, a search string of "profile" will
+         * match objects with name "my profile", "profile 2021", or simply "profile".
+         * @opt_param bool onlySuggestion Select only billing profile which is suggested
+         * for the currency_code & subaccount_id using the Billing Suggestion API.
+         * @opt_param string pageToken Value of the nextPageToken from the previous
+         * result page.
+         * @opt_param string sortField Field by which to sort the list.
+         * @opt_param string sortOrder Order of sorted results.
+         * @opt_param string status Select only billing profile with the specified
+         * status.
+         * @opt_param string subaccountIds Select only billing profile with the
+         * specified subaccount.When only_suggestion is true, only a single
+         * subaccount_id is supported.
+         * @return BillingProfilesListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listBillingProfiles($profileId, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing billing profile. (billingProfiles.update)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param BillingProfile $postBody
+         * @param array $optParams Optional parameters.
+         * @return BillingProfile
+         * @throws \Google\Service\Exception
+         */
+        public function update($profileId, BillingProfile $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a list of billing profiles, possibly filtered. This method supports
-     * paging. (billingProfiles.listBillingProfiles)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string currency_code Select only billing profile with currency.
-     * @opt_param string ids Select only billing profile with these IDs.
-     * @opt_param int maxResults Maximum number of results to return.
-     * @opt_param string name Allows searching for billing profiles by name.
-     * Wildcards (*) are allowed. For example, "profile*2020" will return objects
-     * with names like "profile June 2020", "profile April 2020", or simply "profile
-     * 2020". Most of the searches also add wildcards implicitly at the start and
-     * the end of the search string. For example, a search string of "profile" will
-     * match objects with name "my profile", "profile 2021", or simply "profile".
-     * @opt_param bool onlySuggestion Select only billing profile which is suggested
-     * for the currency_code & subaccount_id using the Billing Suggestion API.
-     * @opt_param string pageToken Value of the nextPageToken from the previous
-     * result page.
-     * @opt_param string sortField Field by which to sort the list.
-     * @opt_param string sortOrder Order of sorted results.
-     * @opt_param string status Select only billing profile with the specified
-     * status.
-     * @opt_param string subaccountIds Select only billing profile with the
-     * specified subaccount.When only_suggestion is true, only a single
-     * subaccount_id is supported.
-     * @return BillingProfilesListResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\BillingProfiles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listBillingProfiles($profileId, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing billing profile. (billingProfiles.update)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param BillingProfile $postBody
-     * @param array $optParams Optional parameters.
-     * @return BillingProfile
-     * @throws \Google\Service\Exception
-     */
-    public function update($profileId, BillingProfile $postBody, $optParams = [])
+    class Google_Service_Dfareporting_Resource_BillingProfiles extends \Google\Service\Dfareporting\Resource\BillingProfiles
     {
     }
 }

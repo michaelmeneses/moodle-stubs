@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class ExchangeAuthCodeRequest extends \Google\Model
-{
-    protected $authCodeDataType = AuthCodeData::class;
-    protected $authCodeDataDataType = '';
-    /**
-     * Optional. AuthCodeData contains the data the runtime requires to exchange
-     * for access and refresh tokens. If the data is not provided, the runtime
-     * will read the data from the secret manager.
-     *
-     * @param AuthCodeData $authCodeData
-     */
-    public function setAuthCodeData(AuthCodeData $authCodeData)
+namespace Google\Service\Connectors {
+    class ExchangeAuthCodeRequest extends \Google\Model
     {
+        protected $authCodeDataType = AuthCodeData::class;
+        protected $authCodeDataDataType = '';
+        /**
+         * Optional. AuthCodeData contains the data the runtime requires to exchange
+         * for access and refresh tokens. If the data is not provided, the runtime
+         * will read the data from the secret manager.
+         *
+         * @param AuthCodeData $authCodeData
+         */
+        public function setAuthCodeData(AuthCodeData $authCodeData)
+        {
+        }
+        /**
+         * @return AuthCodeData
+         */
+        public function getAuthCodeData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuthCodeData
+     * Runtime class alias of \Google\Service\Connectors\ExchangeAuthCodeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthCodeData()
+    class Google_Service_Connectors_ExchangeAuthCodeRequest extends \Google\Service\Connectors\ExchangeAuthCodeRequest
     {
     }
 }

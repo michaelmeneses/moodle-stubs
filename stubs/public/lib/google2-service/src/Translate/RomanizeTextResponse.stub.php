@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class RomanizeTextResponse extends \Google\Collection
-{
-    protected $collection_key = 'romanizations';
-    protected $romanizationsType = Romanization::class;
-    protected $romanizationsDataType = 'array';
-    /**
-     * Text romanization responses. This field has the same length as `contents`.
-     *
-     * @param Romanization[] $romanizations
-     */
-    public function setRomanizations($romanizations)
+namespace Google\Service\Translate {
+    class RomanizeTextResponse extends \Google\Collection
     {
+        protected $collection_key = 'romanizations';
+        protected $romanizationsType = Romanization::class;
+        protected $romanizationsDataType = 'array';
+        /**
+         * Text romanization responses. This field has the same length as `contents`.
+         *
+         * @param Romanization[] $romanizations
+         */
+        public function setRomanizations($romanizations)
+        {
+        }
+        /**
+         * @return Romanization[]
+         */
+        public function getRomanizations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Romanization[]
+     * Runtime class alias of \Google\Service\Translate\RomanizeTextResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRomanizations()
+    class Google_Service_Translate_RomanizeTextResponse extends \Google\Service\Translate\RomanizeTextResponse
     {
     }
 }

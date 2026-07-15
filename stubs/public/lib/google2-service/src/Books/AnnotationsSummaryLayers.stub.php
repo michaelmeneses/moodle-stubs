@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class AnnotationsSummaryLayers extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $allowedCharacterCount;
-    /**
-     * @var string
-     */
-    public $layerId;
-    /**
-     * @var string
-     */
-    public $limitType;
-    /**
-     * @var int
-     */
-    public $remainingCharacterCount;
-    /**
-     * @var string
-     */
-    public $updated;
-    /**
-     * @param int $allowedCharacterCount
-     */
-    public function setAllowedCharacterCount($allowedCharacterCount)
+namespace Google\Service\Books {
+    class AnnotationsSummaryLayers extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $allowedCharacterCount;
+        /**
+         * @var string
+         */
+        public $layerId;
+        /**
+         * @var string
+         */
+        public $limitType;
+        /**
+         * @var int
+         */
+        public $remainingCharacterCount;
+        /**
+         * @var string
+         */
+        public $updated;
+        /**
+         * @param int $allowedCharacterCount
+         */
+        public function setAllowedCharacterCount($allowedCharacterCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAllowedCharacterCount()
+        {
+        }
+        /**
+         * @param string $layerId
+         */
+        public function setLayerId($layerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLayerId()
+        {
+        }
+        /**
+         * @param string $limitType
+         */
+        public function setLimitType($limitType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLimitType()
+        {
+        }
+        /**
+         * @param int $remainingCharacterCount
+         */
+        public function setRemainingCharacterCount($remainingCharacterCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRemainingCharacterCount()
+        {
+        }
+        /**
+         * @param string $updated
+         */
+        public function setUpdated($updated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdated()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Books\AnnotationsSummaryLayers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedCharacterCount()
-    {
-    }
-    /**
-     * @param string $layerId
-     */
-    public function setLayerId($layerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLayerId()
-    {
-    }
-    /**
-     * @param string $limitType
-     */
-    public function setLimitType($limitType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLimitType()
-    {
-    }
-    /**
-     * @param int $remainingCharacterCount
-     */
-    public function setRemainingCharacterCount($remainingCharacterCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRemainingCharacterCount()
-    {
-    }
-    /**
-     * @param string $updated
-     */
-    public function setUpdated($updated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdated()
+    class Google_Service_Books_AnnotationsSummaryLayers extends \Google\Service\Books\AnnotationsSummaryLayers
     {
     }
 }

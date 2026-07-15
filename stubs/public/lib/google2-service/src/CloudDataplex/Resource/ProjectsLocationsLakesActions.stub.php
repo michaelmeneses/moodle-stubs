@@ -21,37 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex\Resource;
-
-/**
- * The "actions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dataplexService = new Google\Service\CloudDataplex(...);
- *   $actions = $dataplexService->projects_locations_lakes_actions;
- *  </code>
- */
-class ProjectsLocationsLakesActions extends \Google\Service\Resource
-{
+namespace Google\Service\CloudDataplex\Resource {
+    use Google\Service\CloudDataplex\GoogleCloudDataplexV1ListActionsResponse;
     /**
-     * Lists action resources in a lake. (actions.listProjectsLocationsLakesActions)
-     *
-     * @param string $parent Required. The resource name of the parent lake:
-     * projects/{project_number}/locations/{location_id}/lakes/{lake_id}.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. Maximum number of actions to return. The
-     * service may return fewer than this value. If unspecified, at most 10 actions
-     * will be returned. The maximum value is 1000; values above 1000 will be
-     * coerced to 1000.
-     * @opt_param string pageToken Optional. Page token received from a previous
-     * ListLakeActions call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to ListLakeActions must match the
-     * call that provided the page token.
-     * @return GoogleCloudDataplexV1ListActionsResponse
-     * @throws \Google\Service\Exception
+     * The "actions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dataplexService = new Google\Service\CloudDataplex(...);
+     *   $actions = $dataplexService->projects_locations_lakes_actions;
+     *  </code>
      */
-    public function listProjectsLocationsLakesActions($parent, $optParams = [])
+    class ProjectsLocationsLakesActions extends \Google\Service\Resource
+    {
+        /**
+         * Lists action resources in a lake. (actions.listProjectsLocationsLakesActions)
+         *
+         * @param string $parent Required. The resource name of the parent lake:
+         * projects/{project_number}/locations/{location_id}/lakes/{lake_id}.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. Maximum number of actions to return. The
+         * service may return fewer than this value. If unspecified, at most 10 actions
+         * will be returned. The maximum value is 1000; values above 1000 will be
+         * coerced to 1000.
+         * @opt_param string pageToken Optional. Page token received from a previous
+         * ListLakeActions call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to ListLakeActions must match the
+         * call that provided the page token.
+         * @return GoogleCloudDataplexV1ListActionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsLakesActions($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudDataplex\Resource\ProjectsLocationsLakesActions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudDataplex_Resource_ProjectsLocationsLakesActions extends \Google\Service\CloudDataplex\Resource\ProjectsLocationsLakesActions
     {
     }
 }

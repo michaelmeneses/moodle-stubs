@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reports;
-
-class FieldValueUserValue extends \Google\Model
-{
-    /**
-     * Email of the user.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Email of the user.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\Reports {
+    class FieldValueUserValue extends \Google\Model
     {
+        /**
+         * Email of the user.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Email of the user.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Reports\FieldValueUserValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
+    class Google_Service_Reports_FieldValueUserValue extends \Google\Service\Reports\FieldValueUserValue
     {
     }
 }

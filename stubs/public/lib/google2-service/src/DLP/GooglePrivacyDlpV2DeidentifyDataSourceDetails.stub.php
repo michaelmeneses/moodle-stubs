@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DeidentifyDataSourceDetails extends \Google\Model
-{
-    protected $deidentifyStatsType = GooglePrivacyDlpV2DeidentifyDataSourceStats::class;
-    protected $deidentifyStatsDataType = '';
-    protected $requestedOptionsType = GooglePrivacyDlpV2RequestedDeidentifyOptions::class;
-    protected $requestedOptionsDataType = '';
-    /**
-     * Stats about the de-identification operation.
-     *
-     * @param GooglePrivacyDlpV2DeidentifyDataSourceStats $deidentifyStats
-     */
-    public function setDeidentifyStats(GooglePrivacyDlpV2DeidentifyDataSourceStats $deidentifyStats)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DeidentifyDataSourceDetails extends \Google\Model
     {
+        protected $deidentifyStatsType = GooglePrivacyDlpV2DeidentifyDataSourceStats::class;
+        protected $deidentifyStatsDataType = '';
+        protected $requestedOptionsType = GooglePrivacyDlpV2RequestedDeidentifyOptions::class;
+        protected $requestedOptionsDataType = '';
+        /**
+         * Stats about the de-identification operation.
+         *
+         * @param GooglePrivacyDlpV2DeidentifyDataSourceStats $deidentifyStats
+         */
+        public function setDeidentifyStats(GooglePrivacyDlpV2DeidentifyDataSourceStats $deidentifyStats)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DeidentifyDataSourceStats
+         */
+        public function getDeidentifyStats()
+        {
+        }
+        /**
+         * De-identification config used for the request.
+         *
+         * @param GooglePrivacyDlpV2RequestedDeidentifyOptions $requestedOptions
+         */
+        public function setRequestedOptions(GooglePrivacyDlpV2RequestedDeidentifyOptions $requestedOptions)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2RequestedDeidentifyOptions
+         */
+        public function getRequestedOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2DeidentifyDataSourceStats
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DeidentifyDataSourceDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeidentifyStats()
-    {
-    }
-    /**
-     * De-identification config used for the request.
-     *
-     * @param GooglePrivacyDlpV2RequestedDeidentifyOptions $requestedOptions
-     */
-    public function setRequestedOptions(GooglePrivacyDlpV2RequestedDeidentifyOptions $requestedOptions)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2RequestedDeidentifyOptions
-     */
-    public function getRequestedOptions()
+    class Google_Service_DLP_GooglePrivacyDlpV2DeidentifyDataSourceDetails extends \Google\Service\DLP\GooglePrivacyDlpV2DeidentifyDataSourceDetails
     {
     }
 }

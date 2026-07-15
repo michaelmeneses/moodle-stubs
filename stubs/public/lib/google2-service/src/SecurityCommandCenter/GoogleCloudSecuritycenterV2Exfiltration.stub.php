@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2Exfiltration extends \Google\Collection
-{
-    protected $collection_key = 'targets';
-    protected $sourcesType = GoogleCloudSecuritycenterV2ExfilResource::class;
-    protected $sourcesDataType = 'array';
-    protected $targetsType = GoogleCloudSecuritycenterV2ExfilResource::class;
-    protected $targetsDataType = 'array';
-    /**
-     * Total exfiltrated bytes processed for the entire job.
-     *
-     * @var string
-     */
-    public $totalExfiltratedBytes;
-    /**
-     * If there are multiple sources, then the data is considered "joined" between
-     * them. For instance, BigQuery can join multiple tables, and each table would
-     * be considered a source.
-     *
-     * @param GoogleCloudSecuritycenterV2ExfilResource[] $sources
-     */
-    public function setSources($sources)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2Exfiltration extends \Google\Collection
     {
+        protected $collection_key = 'targets';
+        protected $sourcesType = GoogleCloudSecuritycenterV2ExfilResource::class;
+        protected $sourcesDataType = 'array';
+        protected $targetsType = GoogleCloudSecuritycenterV2ExfilResource::class;
+        protected $targetsDataType = 'array';
+        /**
+         * Total exfiltrated bytes processed for the entire job.
+         *
+         * @var string
+         */
+        public $totalExfiltratedBytes;
+        /**
+         * If there are multiple sources, then the data is considered "joined" between
+         * them. For instance, BigQuery can join multiple tables, and each table would
+         * be considered a source.
+         *
+         * @param GoogleCloudSecuritycenterV2ExfilResource[] $sources
+         */
+        public function setSources($sources)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2ExfilResource[]
+         */
+        public function getSources()
+        {
+        }
+        /**
+         * If there are multiple targets, each target would get a complete copy of the
+         * "joined" source data.
+         *
+         * @param GoogleCloudSecuritycenterV2ExfilResource[] $targets
+         */
+        public function setTargets($targets)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2ExfilResource[]
+         */
+        public function getTargets()
+        {
+        }
+        /**
+         * Total exfiltrated bytes processed for the entire job.
+         *
+         * @param string $totalExfiltratedBytes
+         */
+        public function setTotalExfiltratedBytes($totalExfiltratedBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalExfiltratedBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV2ExfilResource[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Exfiltration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSources()
-    {
-    }
-    /**
-     * If there are multiple targets, each target would get a complete copy of the
-     * "joined" source data.
-     *
-     * @param GoogleCloudSecuritycenterV2ExfilResource[] $targets
-     */
-    public function setTargets($targets)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2ExfilResource[]
-     */
-    public function getTargets()
-    {
-    }
-    /**
-     * Total exfiltrated bytes processed for the entire job.
-     *
-     * @param string $totalExfiltratedBytes
-     */
-    public function setTotalExfiltratedBytes($totalExfiltratedBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalExfiltratedBytes()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2Exfiltration extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Exfiltration
     {
     }
 }

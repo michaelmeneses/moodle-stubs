@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class CheckConsistencyResponse extends \Google\Model
-{
-    /**
-     * True only if the token is consistent. A token is consistent if replication
-     * has caught up with the restrictions specified in the request.
-     *
-     * @var bool
-     */
-    public $consistent;
-    /**
-     * True only if the token is consistent. A token is consistent if replication
-     * has caught up with the restrictions specified in the request.
-     *
-     * @param bool $consistent
-     */
-    public function setConsistent($consistent)
+namespace Google\Service\BigtableAdmin {
+    class CheckConsistencyResponse extends \Google\Model
     {
+        /**
+         * True only if the token is consistent. A token is consistent if replication
+         * has caught up with the restrictions specified in the request.
+         *
+         * @var bool
+         */
+        public $consistent;
+        /**
+         * True only if the token is consistent. A token is consistent if replication
+         * has caught up with the restrictions specified in the request.
+         *
+         * @param bool $consistent
+         */
+        public function setConsistent($consistent)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getConsistent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\BigtableAdmin\CheckConsistencyResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsistent()
+    class Google_Service_BigtableAdmin_CheckConsistencyResponse extends \Google\Service\BigtableAdmin\CheckConsistencyResponse
     {
     }
 }

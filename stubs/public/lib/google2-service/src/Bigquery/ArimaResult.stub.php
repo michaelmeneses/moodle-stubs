@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ArimaResult extends \Google\Collection
-{
-    protected $collection_key = 'seasonalPeriods';
-    protected $arimaModelInfoType = ArimaModelInfo::class;
-    protected $arimaModelInfoDataType = 'array';
-    /**
-     * Seasonal periods. Repeated because multiple periods are supported for one
-     * time series.
-     *
-     * @var string[]
-     */
-    public $seasonalPeriods;
-    /**
-     * This message is repeated because there are multiple arima models fitted in
-     * auto-arima. For non-auto-arima model, its size is one.
-     *
-     * @param ArimaModelInfo[] $arimaModelInfo
-     */
-    public function setArimaModelInfo($arimaModelInfo)
+namespace Google\Service\Bigquery {
+    class ArimaResult extends \Google\Collection
     {
+        protected $collection_key = 'seasonalPeriods';
+        protected $arimaModelInfoType = ArimaModelInfo::class;
+        protected $arimaModelInfoDataType = 'array';
+        /**
+         * Seasonal periods. Repeated because multiple periods are supported for one
+         * time series.
+         *
+         * @var string[]
+         */
+        public $seasonalPeriods;
+        /**
+         * This message is repeated because there are multiple arima models fitted in
+         * auto-arima. For non-auto-arima model, its size is one.
+         *
+         * @param ArimaModelInfo[] $arimaModelInfo
+         */
+        public function setArimaModelInfo($arimaModelInfo)
+        {
+        }
+        /**
+         * @return ArimaModelInfo[]
+         */
+        public function getArimaModelInfo()
+        {
+        }
+        /**
+         * Seasonal periods. Repeated because multiple periods are supported for one
+         * time series.
+         *
+         * @param string[] $seasonalPeriods
+         */
+        public function setSeasonalPeriods($seasonalPeriods)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSeasonalPeriods()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ArimaModelInfo[]
+     * Runtime class alias of \Google\Service\Bigquery\ArimaResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArimaModelInfo()
-    {
-    }
-    /**
-     * Seasonal periods. Repeated because multiple periods are supported for one
-     * time series.
-     *
-     * @param string[] $seasonalPeriods
-     */
-    public function setSeasonalPeriods($seasonalPeriods)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSeasonalPeriods()
+    class Google_Service_Bigquery_ArimaResult extends \Google\Service\Bigquery\ArimaResult
     {
     }
 }

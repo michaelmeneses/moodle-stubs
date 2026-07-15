@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class ListTagsResponse extends \Google\Collection
-{
-    protected $collection_key = 'tag';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $tagType = Tag::class;
-    protected $tagDataType = 'array';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\TagManager {
+    class ListTagsResponse extends \Google\Collection
     {
+        protected $collection_key = 'tag';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $tagType = Tag::class;
+        protected $tagDataType = 'array';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * All GTM Tags of a GTM Container.
+         *
+         * @param Tag[] $tag
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return Tag[]
+         */
+        public function getTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TagManager\ListTagsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * All GTM Tags of a GTM Container.
-     *
-     * @param Tag[] $tag
-     */
-    public function setTag($tag)
-    {
-    }
-    /**
-     * @return Tag[]
-     */
-    public function getTag()
+    class Google_Service_TagManager_ListTagsResponse extends \Google\Service\TagManager\ListTagsResponse
     {
     }
 }

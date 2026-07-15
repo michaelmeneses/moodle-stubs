@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaCrawlRateTimeSeries extends \Google\Model
-{
-    protected $qpsTimeSeriesType = GoogleMonitoringV3TimeSeries::class;
-    protected $qpsTimeSeriesDataType = '';
-    /**
-     * The QPS of the crawl rate.
-     *
-     * @param GoogleMonitoringV3TimeSeries $qpsTimeSeries
-     */
-    public function setQpsTimeSeries(GoogleMonitoringV3TimeSeries $qpsTimeSeries)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaCrawlRateTimeSeries extends \Google\Model
     {
+        protected $qpsTimeSeriesType = GoogleMonitoringV3TimeSeries::class;
+        protected $qpsTimeSeriesDataType = '';
+        /**
+         * The QPS of the crawl rate.
+         *
+         * @param GoogleMonitoringV3TimeSeries $qpsTimeSeries
+         */
+        public function setQpsTimeSeries(GoogleMonitoringV3TimeSeries $qpsTimeSeries)
+        {
+        }
+        /**
+         * @return GoogleMonitoringV3TimeSeries
+         */
+        public function getQpsTimeSeries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleMonitoringV3TimeSeries
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaCrawlRateTimeSeries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQpsTimeSeries()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaCrawlRateTimeSeries extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaCrawlRateTimeSeries
     {
     }
 }

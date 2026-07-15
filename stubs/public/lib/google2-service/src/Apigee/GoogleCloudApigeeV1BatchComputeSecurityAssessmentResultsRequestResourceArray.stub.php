@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequestResourceArray extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    protected $resourcesType = GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequestResourceArrayResource::class;
-    protected $resourcesDataType = 'array';
-    /**
-     * Required. The array of resources. For Apigee, the proxies are resources.
-     *
-     * @param GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequestResourceArrayResource[] $resources
-     */
-    public function setResources($resources)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequestResourceArray extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        protected $resourcesType = GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequestResourceArrayResource::class;
+        protected $resourcesDataType = 'array';
+        /**
+         * Required. The array of resources. For Apigee, the proxies are resources.
+         *
+         * @param GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequestResourceArrayResource[] $resources
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequestResourceArrayResource[]
+         */
+        public function getResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequestResourceArrayResource[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequestResourceArray registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResources()
+    class Google_Service_Apigee_GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequestResourceArray extends \Google\Service\Apigee\GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequestResourceArray
     {
     }
 }

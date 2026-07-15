@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class InsertTableRowsRequest extends \Google\Model
-{
-    protected $cellLocationType = TableCellLocation::class;
-    protected $cellLocationDataType = '';
-    /**
-     * Whether to insert new rows below the reference cell location. - `True`:
-     * insert below the cell. - `False`: insert above the cell.
-     *
-     * @var bool
-     */
-    public $insertBelow;
-    /**
-     * The number of rows to be inserted. Maximum 20 per request.
-     *
-     * @var int
-     */
-    public $number;
-    /**
-     * The table to insert rows into.
-     *
-     * @var string
-     */
-    public $tableObjectId;
-    /**
-     * The reference table cell location from which rows will be inserted. A new
-     * row will be inserted above (or below) the row where the reference cell is.
-     * If the reference cell is a merged cell, a new row will be inserted above
-     * (or below) the merged cell.
-     *
-     * @param TableCellLocation $cellLocation
-     */
-    public function setCellLocation(TableCellLocation $cellLocation)
+namespace Google\Service\Slides {
+    class InsertTableRowsRequest extends \Google\Model
     {
+        protected $cellLocationType = TableCellLocation::class;
+        protected $cellLocationDataType = '';
+        /**
+         * Whether to insert new rows below the reference cell location. - `True`:
+         * insert below the cell. - `False`: insert above the cell.
+         *
+         * @var bool
+         */
+        public $insertBelow;
+        /**
+         * The number of rows to be inserted. Maximum 20 per request.
+         *
+         * @var int
+         */
+        public $number;
+        /**
+         * The table to insert rows into.
+         *
+         * @var string
+         */
+        public $tableObjectId;
+        /**
+         * The reference table cell location from which rows will be inserted. A new
+         * row will be inserted above (or below) the row where the reference cell is.
+         * If the reference cell is a merged cell, a new row will be inserted above
+         * (or below) the merged cell.
+         *
+         * @param TableCellLocation $cellLocation
+         */
+        public function setCellLocation(TableCellLocation $cellLocation)
+        {
+        }
+        /**
+         * @return TableCellLocation
+         */
+        public function getCellLocation()
+        {
+        }
+        /**
+         * Whether to insert new rows below the reference cell location. - `True`:
+         * insert below the cell. - `False`: insert above the cell.
+         *
+         * @param bool $insertBelow
+         */
+        public function setInsertBelow($insertBelow)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInsertBelow()
+        {
+        }
+        /**
+         * The number of rows to be inserted. Maximum 20 per request.
+         *
+         * @param int $number
+         */
+        public function setNumber($number)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumber()
+        {
+        }
+        /**
+         * The table to insert rows into.
+         *
+         * @param string $tableObjectId
+         */
+        public function setTableObjectId($tableObjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableObjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TableCellLocation
+     * Runtime class alias of \Google\Service\Slides\InsertTableRowsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCellLocation()
-    {
-    }
-    /**
-     * Whether to insert new rows below the reference cell location. - `True`:
-     * insert below the cell. - `False`: insert above the cell.
-     *
-     * @param bool $insertBelow
-     */
-    public function setInsertBelow($insertBelow)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInsertBelow()
-    {
-    }
-    /**
-     * The number of rows to be inserted. Maximum 20 per request.
-     *
-     * @param int $number
-     */
-    public function setNumber($number)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumber()
-    {
-    }
-    /**
-     * The table to insert rows into.
-     *
-     * @param string $tableObjectId
-     */
-    public function setTableObjectId($tableObjectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableObjectId()
+    class Google_Service_Slides_InsertTableRowsRequest extends \Google\Service\Slides\InsertTableRowsRequest
     {
     }
 }

@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Eventarc;
-
-class HttpEndpoint extends \Google\Model
-{
-    /**
-     * Required. The URI of the HTTP endpoint. The value must be a RFC2396 URI
-     * string. Examples: `http://10.10.10.8:80/route`, `http://svc.us-
-     * central1.p.local:8080/`. Only HTTP and HTTPS protocols are supported. The
-     * host can be either a static IP addressable from the VPC specified by the
-     * network config, or an internal DNS hostname of the service resolvable via
-     * Cloud DNS.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Required. The URI of the HTTP endpoint. The value must be a RFC2396 URI
-     * string. Examples: `http://10.10.10.8:80/route`, `http://svc.us-
-     * central1.p.local:8080/`. Only HTTP and HTTPS protocols are supported. The
-     * host can be either a static IP addressable from the VPC specified by the
-     * network config, or an internal DNS hostname of the service resolvable via
-     * Cloud DNS.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
+namespace Google\Service\Eventarc {
+    class HttpEndpoint extends \Google\Model
     {
+        /**
+         * Required. The URI of the HTTP endpoint. The value must be a RFC2396 URI
+         * string. Examples: `http://10.10.10.8:80/route`, `http://svc.us-
+         * central1.p.local:8080/`. Only HTTP and HTTPS protocols are supported. The
+         * host can be either a static IP addressable from the VPC specified by the
+         * network config, or an internal DNS hostname of the service resolvable via
+         * Cloud DNS.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Required. The URI of the HTTP endpoint. The value must be a RFC2396 URI
+         * string. Examples: `http://10.10.10.8:80/route`, `http://svc.us-
+         * central1.p.local:8080/`. Only HTTP and HTTPS protocols are supported. The
+         * host can be either a static IP addressable from the VPC specified by the
+         * network config, or an internal DNS hostname of the service resolvable via
+         * Cloud DNS.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Eventarc\HttpEndpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUri()
+    class Google_Service_Eventarc_HttpEndpoint extends \Google\Service\Eventarc\HttpEndpoint
     {
     }
 }

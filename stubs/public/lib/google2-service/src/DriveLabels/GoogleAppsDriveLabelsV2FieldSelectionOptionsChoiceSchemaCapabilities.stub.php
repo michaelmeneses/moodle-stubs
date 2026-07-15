@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2FieldSelectionOptionsChoiceSchemaCapabilities extends \Google\Model
-{
-    /**
-     * Whether the user can delete this choice.
-     *
-     * @var bool
-     */
-    public $canDelete;
-    /**
-     * Whether the user can disable this choice.
-     *
-     * @var bool
-     */
-    public $canDisable;
-    /**
-     * Whether the user can enable this choice.
-     *
-     * @var bool
-     */
-    public $canEnable;
-    /**
-     * Whether the user can update this choice.
-     *
-     * @var bool
-     */
-    public $canUpdate;
-    /**
-     * Whether the user can delete this choice.
-     *
-     * @param bool $canDelete
-     */
-    public function setCanDelete($canDelete)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2FieldSelectionOptionsChoiceSchemaCapabilities extends \Google\Model
     {
+        /**
+         * Whether the user can delete this choice.
+         *
+         * @var bool
+         */
+        public $canDelete;
+        /**
+         * Whether the user can disable this choice.
+         *
+         * @var bool
+         */
+        public $canDisable;
+        /**
+         * Whether the user can enable this choice.
+         *
+         * @var bool
+         */
+        public $canEnable;
+        /**
+         * Whether the user can update this choice.
+         *
+         * @var bool
+         */
+        public $canUpdate;
+        /**
+         * Whether the user can delete this choice.
+         *
+         * @param bool $canDelete
+         */
+        public function setCanDelete($canDelete)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanDelete()
+        {
+        }
+        /**
+         * Whether the user can disable this choice.
+         *
+         * @param bool $canDisable
+         */
+        public function setCanDisable($canDisable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanDisable()
+        {
+        }
+        /**
+         * Whether the user can enable this choice.
+         *
+         * @param bool $canEnable
+         */
+        public function setCanEnable($canEnable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanEnable()
+        {
+        }
+        /**
+         * Whether the user can update this choice.
+         *
+         * @param bool $canUpdate
+         */
+        public function setCanUpdate($canUpdate)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanUpdate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2FieldSelectionOptionsChoiceSchemaCapabilities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanDelete()
-    {
-    }
-    /**
-     * Whether the user can disable this choice.
-     *
-     * @param bool $canDisable
-     */
-    public function setCanDisable($canDisable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanDisable()
-    {
-    }
-    /**
-     * Whether the user can enable this choice.
-     *
-     * @param bool $canEnable
-     */
-    public function setCanEnable($canEnable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanEnable()
-    {
-    }
-    /**
-     * Whether the user can update this choice.
-     *
-     * @param bool $canUpdate
-     */
-    public function setCanUpdate($canUpdate)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanUpdate()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2FieldSelectionOptionsChoiceSchemaCapabilities extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2FieldSelectionOptionsChoiceSchemaCapabilities
     {
     }
 }

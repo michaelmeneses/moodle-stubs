@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class ListBuyersResponse extends \Google\Collection
-{
-    protected $collection_key = 'buyers';
-    protected $buyersType = Buyer::class;
-    protected $buyersDataType = 'array';
-    /**
-     * A token which can be passed to a subsequent call to the `ListBuyers` method
-     * to retrieve the next page of results in ListBuyersRequest.pageToken.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of buyers.
-     *
-     * @param Buyer[] $buyers
-     */
-    public function setBuyers($buyers)
+namespace Google\Service\RealTimeBidding {
+    class ListBuyersResponse extends \Google\Collection
     {
+        protected $collection_key = 'buyers';
+        protected $buyersType = Buyer::class;
+        protected $buyersDataType = 'array';
+        /**
+         * A token which can be passed to a subsequent call to the `ListBuyers` method
+         * to retrieve the next page of results in ListBuyersRequest.pageToken.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of buyers.
+         *
+         * @param Buyer[] $buyers
+         */
+        public function setBuyers($buyers)
+        {
+        }
+        /**
+         * @return Buyer[]
+         */
+        public function getBuyers()
+        {
+        }
+        /**
+         * A token which can be passed to a subsequent call to the `ListBuyers` method
+         * to retrieve the next page of results in ListBuyersRequest.pageToken.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Buyer[]
+     * Runtime class alias of \Google\Service\RealTimeBidding\ListBuyersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuyers()
-    {
-    }
-    /**
-     * A token which can be passed to a subsequent call to the `ListBuyers` method
-     * to retrieve the next page of results in ListBuyersRequest.pageToken.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_RealTimeBidding_ListBuyersResponse extends \Google\Service\RealTimeBidding\ListBuyersResponse
     {
     }
 }

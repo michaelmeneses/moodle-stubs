@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaListKeyEventsResponse extends \Google\Collection
-{
-    protected $collection_key = 'keyEvents';
-    protected $keyEventsType = GoogleAnalyticsAdminV1betaKeyEvent::class;
-    protected $keyEventsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The requested Key Events
-     *
-     * @param GoogleAnalyticsAdminV1betaKeyEvent[] $keyEvents
-     */
-    public function setKeyEvents($keyEvents)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaListKeyEventsResponse extends \Google\Collection
     {
+        protected $collection_key = 'keyEvents';
+        protected $keyEventsType = GoogleAnalyticsAdminV1betaKeyEvent::class;
+        protected $keyEventsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The requested Key Events
+         *
+         * @param GoogleAnalyticsAdminV1betaKeyEvent[] $keyEvents
+         */
+        public function setKeyEvents($keyEvents)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaKeyEvent[]
+         */
+        public function getKeyEvents()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1betaKeyEvent[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListKeyEventsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeyEvents()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaListKeyEventsResponse extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListKeyEventsResponse
     {
     }
 }

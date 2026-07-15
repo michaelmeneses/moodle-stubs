@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class TestCaseReference extends \Google\Model
-{
-    /**
-     * The name of the class.
-     *
-     * @var string
-     */
-    public $className;
-    /**
-     * The name of the test case. Required.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The name of the test suite to which this test case belongs.
-     *
-     * @var string
-     */
-    public $testSuiteName;
-    /**
-     * The name of the class.
-     *
-     * @param string $className
-     */
-    public function setClassName($className)
+namespace Google\Service\ToolResults {
+    class TestCaseReference extends \Google\Model
     {
+        /**
+         * The name of the class.
+         *
+         * @var string
+         */
+        public $className;
+        /**
+         * The name of the test case. Required.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The name of the test suite to which this test case belongs.
+         *
+         * @var string
+         */
+        public $testSuiteName;
+        /**
+         * The name of the class.
+         *
+         * @param string $className
+         */
+        public function setClassName($className)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClassName()
+        {
+        }
+        /**
+         * The name of the test case. Required.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The name of the test suite to which this test case belongs.
+         *
+         * @param string $testSuiteName
+         */
+        public function setTestSuiteName($testSuiteName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTestSuiteName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ToolResults\TestCaseReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClassName()
-    {
-    }
-    /**
-     * The name of the test case. Required.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The name of the test suite to which this test case belongs.
-     *
-     * @param string $testSuiteName
-     */
-    public function setTestSuiteName($testSuiteName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTestSuiteName()
+    class Google_Service_ToolResults_TestCaseReference extends \Google\Service\ToolResults\TestCaseReference
     {
     }
 }

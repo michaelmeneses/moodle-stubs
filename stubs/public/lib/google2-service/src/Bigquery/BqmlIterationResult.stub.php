@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class BqmlIterationResult extends \Google\Model
-{
-    /**
-     * Deprecated.
-     *
-     * @var string
-     */
-    public $durationMs;
-    /**
-     * Deprecated.
-     *
-     * @var 
-     */
-    public $evalLoss;
-    /**
-     * Deprecated.
-     *
-     * @var int
-     */
-    public $index;
-    /**
-     * Deprecated.
-     *
-     * @var 
-     */
-    public $learnRate;
-    /**
-     * Deprecated.
-     *
-     * @var 
-     */
-    public $trainingLoss;
-    /**
-     * Deprecated.
-     *
-     * @param string $durationMs
-     */
-    public function setDurationMs($durationMs)
+namespace Google\Service\Bigquery {
+    class BqmlIterationResult extends \Google\Model
     {
+        /**
+         * Deprecated.
+         *
+         * @var string
+         */
+        public $durationMs;
+        /**
+         * Deprecated.
+         *
+         * @var 
+         */
+        public $evalLoss;
+        /**
+         * Deprecated.
+         *
+         * @var int
+         */
+        public $index;
+        /**
+         * Deprecated.
+         *
+         * @var 
+         */
+        public $learnRate;
+        /**
+         * Deprecated.
+         *
+         * @var 
+         */
+        public $trainingLoss;
+        /**
+         * Deprecated.
+         *
+         * @param string $durationMs
+         */
+        public function setDurationMs($durationMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDurationMs()
+        {
+        }
+        public function setEvalLoss($evalLoss)
+        {
+        }
+        public function getEvalLoss()
+        {
+        }
+        /**
+         * Deprecated.
+         *
+         * @param int $index
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIndex()
+        {
+        }
+        public function setLearnRate($learnRate)
+        {
+        }
+        public function getLearnRate()
+        {
+        }
+        public function setTrainingLoss($trainingLoss)
+        {
+        }
+        public function getTrainingLoss()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\BqmlIterationResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDurationMs()
-    {
-    }
-    public function setEvalLoss($evalLoss)
-    {
-    }
-    public function getEvalLoss()
-    {
-    }
-    /**
-     * Deprecated.
-     *
-     * @param int $index
-     */
-    public function setIndex($index)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIndex()
-    {
-    }
-    public function setLearnRate($learnRate)
-    {
-    }
-    public function getLearnRate()
-    {
-    }
-    public function setTrainingLoss($trainingLoss)
-    {
-    }
-    public function getTrainingLoss()
+    class Google_Service_Bigquery_BqmlIterationResult extends \Google\Service\Bigquery\BqmlIterationResult
     {
     }
 }

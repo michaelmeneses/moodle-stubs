@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class SqlServerTraceFlag extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const SCOPE_SCOPE_UNSPECIFIED = 'SCOPE_UNSPECIFIED';
-    /**
-     * Off.
-     */
-    public const SCOPE_OFF = 'OFF';
-    /**
-     * Global.
-     */
-    public const SCOPE_GLOBAL = 'GLOBAL';
-    /**
-     * Session.
-     */
-    public const SCOPE_SESSION = 'SESSION';
-    /**
-     * Required. The trace flag scope.
-     *
-     * @var string
-     */
-    public $scope;
-    /**
-     * Required. The trace flag name.
-     *
-     * @var string
-     */
-    public $traceFlagName;
-    /**
-     * Required. The trace flag scope.
-     *
-     * Accepted values: SCOPE_UNSPECIFIED, OFF, GLOBAL, SESSION
-     *
-     * @param self::SCOPE_* $scope
-     */
-    public function setScope($scope)
+namespace Google\Service\MigrationCenterAPI {
+    class SqlServerTraceFlag extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const SCOPE_SCOPE_UNSPECIFIED = 'SCOPE_UNSPECIFIED';
+        /**
+         * Off.
+         */
+        public const SCOPE_OFF = 'OFF';
+        /**
+         * Global.
+         */
+        public const SCOPE_GLOBAL = 'GLOBAL';
+        /**
+         * Session.
+         */
+        public const SCOPE_SESSION = 'SESSION';
+        /**
+         * Required. The trace flag scope.
+         *
+         * @var string
+         */
+        public $scope;
+        /**
+         * Required. The trace flag name.
+         *
+         * @var string
+         */
+        public $traceFlagName;
+        /**
+         * Required. The trace flag scope.
+         *
+         * Accepted values: SCOPE_UNSPECIFIED, OFF, GLOBAL, SESSION
+         *
+         * @param self::SCOPE_* $scope
+         */
+        public function setScope($scope)
+        {
+        }
+        /**
+         * @return self::SCOPE_*
+         */
+        public function getScope()
+        {
+        }
+        /**
+         * Required. The trace flag name.
+         *
+         * @param string $traceFlagName
+         */
+        public function setTraceFlagName($traceFlagName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTraceFlagName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::SCOPE_*
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\SqlServerTraceFlag registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScope()
-    {
-    }
-    /**
-     * Required. The trace flag name.
-     *
-     * @param string $traceFlagName
-     */
-    public function setTraceFlagName($traceFlagName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTraceFlagName()
+    class Google_Service_MigrationCenterAPI_SqlServerTraceFlag extends \Google\Service\MigrationCenterAPI\SqlServerTraceFlag
     {
     }
 }

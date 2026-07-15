@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Speech;
-
-class TranscriptOutputConfig extends \Google\Model
-{
-    /**
-     * Specifies a Cloud Storage URI for the recognition results. Must be
-     * specified in the format: `gs://bucket_name/object_name`, and the bucket
-     * must already exist.
-     *
-     * @var string
-     */
-    public $gcsUri;
-    /**
-     * Specifies a Cloud Storage URI for the recognition results. Must be
-     * specified in the format: `gs://bucket_name/object_name`, and the bucket
-     * must already exist.
-     *
-     * @param string $gcsUri
-     */
-    public function setGcsUri($gcsUri)
+namespace Google\Service\Speech {
+    class TranscriptOutputConfig extends \Google\Model
     {
+        /**
+         * Specifies a Cloud Storage URI for the recognition results. Must be
+         * specified in the format: `gs://bucket_name/object_name`, and the bucket
+         * must already exist.
+         *
+         * @var string
+         */
+        public $gcsUri;
+        /**
+         * Specifies a Cloud Storage URI for the recognition results. Must be
+         * specified in the format: `gs://bucket_name/object_name`, and the bucket
+         * must already exist.
+         *
+         * @param string $gcsUri
+         */
+        public function setGcsUri($gcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Speech\TranscriptOutputConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsUri()
+    class Google_Service_Speech_TranscriptOutputConfig extends \Google\Service\Speech\TranscriptOutputConfig
     {
     }
 }

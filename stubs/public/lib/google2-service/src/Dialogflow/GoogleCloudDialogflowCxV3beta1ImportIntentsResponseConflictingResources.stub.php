@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1ImportIntentsResponseConflictingResources extends \Google\Collection
-{
-    protected $collection_key = 'intentDisplayNames';
-    /**
-     * Display names of conflicting entities.
-     *
-     * @var string[]
-     */
-    public $entityDisplayNames;
-    /**
-     * Display names of conflicting intents.
-     *
-     * @var string[]
-     */
-    public $intentDisplayNames;
-    /**
-     * Display names of conflicting entities.
-     *
-     * @param string[] $entityDisplayNames
-     */
-    public function setEntityDisplayNames($entityDisplayNames)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1ImportIntentsResponseConflictingResources extends \Google\Collection
     {
+        protected $collection_key = 'intentDisplayNames';
+        /**
+         * Display names of conflicting entities.
+         *
+         * @var string[]
+         */
+        public $entityDisplayNames;
+        /**
+         * Display names of conflicting intents.
+         *
+         * @var string[]
+         */
+        public $intentDisplayNames;
+        /**
+         * Display names of conflicting entities.
+         *
+         * @param string[] $entityDisplayNames
+         */
+        public function setEntityDisplayNames($entityDisplayNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEntityDisplayNames()
+        {
+        }
+        /**
+         * Display names of conflicting intents.
+         *
+         * @param string[] $intentDisplayNames
+         */
+        public function setIntentDisplayNames($intentDisplayNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIntentDisplayNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1ImportIntentsResponseConflictingResources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntityDisplayNames()
-    {
-    }
-    /**
-     * Display names of conflicting intents.
-     *
-     * @param string[] $intentDisplayNames
-     */
-    public function setIntentDisplayNames($intentDisplayNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIntentDisplayNames()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1ImportIntentsResponseConflictingResources extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1ImportIntentsResponseConflictingResources
     {
     }
 }

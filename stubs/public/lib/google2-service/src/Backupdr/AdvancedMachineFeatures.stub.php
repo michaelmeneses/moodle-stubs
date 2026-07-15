@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class AdvancedMachineFeatures extends \Google\Model
-{
-    /**
-     * Optional. Whether to enable nested virtualization or not (default is
-     * false).
-     *
-     * @var bool
-     */
-    public $enableNestedVirtualization;
-    /**
-     * Optional. Whether to enable UEFI networking for instance creation.
-     *
-     * @var bool
-     */
-    public $enableUefiNetworking;
-    /**
-     * Optional. The number of threads per physical core. To disable simultaneous
-     * multithreading (SMT) set this to 1. If unset, the maximum number of threads
-     * supported per core by the underlying processor is assumed.
-     *
-     * @var int
-     */
-    public $threadsPerCore;
-    /**
-     * Optional. The number of physical cores to expose to an instance. Multiply
-     * by the number of threads per core to compute the total number of virtual
-     * CPUs to expose to the instance. If unset, the number of cores is inferred
-     * from the instance's nominal CPU count and the underlying platform's SMT
-     * width.
-     *
-     * @var int
-     */
-    public $visibleCoreCount;
-    /**
-     * Optional. Whether to enable nested virtualization or not (default is
-     * false).
-     *
-     * @param bool $enableNestedVirtualization
-     */
-    public function setEnableNestedVirtualization($enableNestedVirtualization)
+namespace Google\Service\Backupdr {
+    class AdvancedMachineFeatures extends \Google\Model
     {
+        /**
+         * Optional. Whether to enable nested virtualization or not (default is
+         * false).
+         *
+         * @var bool
+         */
+        public $enableNestedVirtualization;
+        /**
+         * Optional. Whether to enable UEFI networking for instance creation.
+         *
+         * @var bool
+         */
+        public $enableUefiNetworking;
+        /**
+         * Optional. The number of threads per physical core. To disable simultaneous
+         * multithreading (SMT) set this to 1. If unset, the maximum number of threads
+         * supported per core by the underlying processor is assumed.
+         *
+         * @var int
+         */
+        public $threadsPerCore;
+        /**
+         * Optional. The number of physical cores to expose to an instance. Multiply
+         * by the number of threads per core to compute the total number of virtual
+         * CPUs to expose to the instance. If unset, the number of cores is inferred
+         * from the instance's nominal CPU count and the underlying platform's SMT
+         * width.
+         *
+         * @var int
+         */
+        public $visibleCoreCount;
+        /**
+         * Optional. Whether to enable nested virtualization or not (default is
+         * false).
+         *
+         * @param bool $enableNestedVirtualization
+         */
+        public function setEnableNestedVirtualization($enableNestedVirtualization)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableNestedVirtualization()
+        {
+        }
+        /**
+         * Optional. Whether to enable UEFI networking for instance creation.
+         *
+         * @param bool $enableUefiNetworking
+         */
+        public function setEnableUefiNetworking($enableUefiNetworking)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableUefiNetworking()
+        {
+        }
+        /**
+         * Optional. The number of threads per physical core. To disable simultaneous
+         * multithreading (SMT) set this to 1. If unset, the maximum number of threads
+         * supported per core by the underlying processor is assumed.
+         *
+         * @param int $threadsPerCore
+         */
+        public function setThreadsPerCore($threadsPerCore)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getThreadsPerCore()
+        {
+        }
+        /**
+         * Optional. The number of physical cores to expose to an instance. Multiply
+         * by the number of threads per core to compute the total number of virtual
+         * CPUs to expose to the instance. If unset, the number of cores is inferred
+         * from the instance's nominal CPU count and the underlying platform's SMT
+         * width.
+         *
+         * @param int $visibleCoreCount
+         */
+        public function setVisibleCoreCount($visibleCoreCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVisibleCoreCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Backupdr\AdvancedMachineFeatures registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableNestedVirtualization()
-    {
-    }
-    /**
-     * Optional. Whether to enable UEFI networking for instance creation.
-     *
-     * @param bool $enableUefiNetworking
-     */
-    public function setEnableUefiNetworking($enableUefiNetworking)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableUefiNetworking()
-    {
-    }
-    /**
-     * Optional. The number of threads per physical core. To disable simultaneous
-     * multithreading (SMT) set this to 1. If unset, the maximum number of threads
-     * supported per core by the underlying processor is assumed.
-     *
-     * @param int $threadsPerCore
-     */
-    public function setThreadsPerCore($threadsPerCore)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getThreadsPerCore()
-    {
-    }
-    /**
-     * Optional. The number of physical cores to expose to an instance. Multiply
-     * by the number of threads per core to compute the total number of virtual
-     * CPUs to expose to the instance. If unset, the number of cores is inferred
-     * from the instance's nominal CPU count and the underlying platform's SMT
-     * width.
-     *
-     * @param int $visibleCoreCount
-     */
-    public function setVisibleCoreCount($visibleCoreCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVisibleCoreCount()
+    class Google_Service_Backupdr_AdvancedMachineFeatures extends \Google\Service\Backupdr\AdvancedMachineFeatures
     {
     }
 }

@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1SearchTextRequestLocationRestriction extends \Google\Model
-{
-    protected $rectangleType = GoogleGeoTypeViewport::class;
-    protected $rectangleDataType = '';
-    /**
-     * A rectangle box defined by northeast and southwest corner.
-     * `rectangle.high()` must be the northeast point of the rectangle viewport.
-     * `rectangle.low()` must be the southwest point of the rectangle viewport.
-     * `rectangle.low().latitude()` cannot be greater than
-     * `rectangle.high().latitude()`. This will result in an empty latitude range.
-     * A rectangle viewport cannot be wider than 180 degrees.
-     *
-     * @param GoogleGeoTypeViewport $rectangle
-     */
-    public function setRectangle(GoogleGeoTypeViewport $rectangle)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1SearchTextRequestLocationRestriction extends \Google\Model
     {
+        protected $rectangleType = GoogleGeoTypeViewport::class;
+        protected $rectangleDataType = '';
+        /**
+         * A rectangle box defined by northeast and southwest corner.
+         * `rectangle.high()` must be the northeast point of the rectangle viewport.
+         * `rectangle.low()` must be the southwest point of the rectangle viewport.
+         * `rectangle.low().latitude()` cannot be greater than
+         * `rectangle.high().latitude()`. This will result in an empty latitude range.
+         * A rectangle viewport cannot be wider than 180 degrees.
+         *
+         * @param GoogleGeoTypeViewport $rectangle
+         */
+        public function setRectangle(GoogleGeoTypeViewport $rectangle)
+        {
+        }
+        /**
+         * @return GoogleGeoTypeViewport
+         */
+        public function getRectangle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleGeoTypeViewport
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1SearchTextRequestLocationRestriction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRectangle()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1SearchTextRequestLocationRestriction extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1SearchTextRequestLocationRestriction
     {
     }
 }

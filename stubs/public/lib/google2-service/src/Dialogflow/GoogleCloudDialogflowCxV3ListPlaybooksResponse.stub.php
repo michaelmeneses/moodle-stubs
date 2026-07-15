@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ListPlaybooksResponse extends \Google\Collection
-{
-    protected $collection_key = 'playbooks';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $playbooksType = GoogleCloudDialogflowCxV3Playbook::class;
-    protected $playbooksDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ListPlaybooksResponse extends \Google\Collection
     {
+        protected $collection_key = 'playbooks';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $playbooksType = GoogleCloudDialogflowCxV3Playbook::class;
+        protected $playbooksDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of playbooks. There will be a maximum number of items returned
+         * based on the page_size field in the request.
+         *
+         * @param GoogleCloudDialogflowCxV3Playbook[] $playbooks
+         */
+        public function setPlaybooks($playbooks)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3Playbook[]
+         */
+        public function getPlaybooks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListPlaybooksResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of playbooks. There will be a maximum number of items returned
-     * based on the page_size field in the request.
-     *
-     * @param GoogleCloudDialogflowCxV3Playbook[] $playbooks
-     */
-    public function setPlaybooks($playbooks)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3Playbook[]
-     */
-    public function getPlaybooks()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ListPlaybooksResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListPlaybooksResponse
     {
     }
 }

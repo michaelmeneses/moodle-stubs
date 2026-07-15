@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPromptSpecTranslationPrompt extends \Google\Model
-{
-    protected $exampleType = GoogleCloudAiplatformV1SchemaPromptSpecTranslationExample::class;
-    protected $exampleDataType = '';
-    protected $optionType = GoogleCloudAiplatformV1SchemaPromptSpecTranslationOption::class;
-    protected $optionDataType = '';
-    protected $promptMessageType = GoogleCloudAiplatformV1SchemaPromptSpecPromptMessage::class;
-    protected $promptMessageDataType = '';
-    /**
-     * The source language code.
-     *
-     * @var string
-     */
-    public $sourceLanguageCode;
-    /**
-     * The target language code.
-     *
-     * @var string
-     */
-    public $targetLanguageCode;
-    /**
-     * The translation example.
-     *
-     * @param GoogleCloudAiplatformV1SchemaPromptSpecTranslationExample $example
-     */
-    public function setExample(GoogleCloudAiplatformV1SchemaPromptSpecTranslationExample $example)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPromptSpecTranslationPrompt extends \Google\Model
     {
+        protected $exampleType = GoogleCloudAiplatformV1SchemaPromptSpecTranslationExample::class;
+        protected $exampleDataType = '';
+        protected $optionType = GoogleCloudAiplatformV1SchemaPromptSpecTranslationOption::class;
+        protected $optionDataType = '';
+        protected $promptMessageType = GoogleCloudAiplatformV1SchemaPromptSpecPromptMessage::class;
+        protected $promptMessageDataType = '';
+        /**
+         * The source language code.
+         *
+         * @var string
+         */
+        public $sourceLanguageCode;
+        /**
+         * The target language code.
+         *
+         * @var string
+         */
+        public $targetLanguageCode;
+        /**
+         * The translation example.
+         *
+         * @param GoogleCloudAiplatformV1SchemaPromptSpecTranslationExample $example
+         */
+        public function setExample(GoogleCloudAiplatformV1SchemaPromptSpecTranslationExample $example)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaPromptSpecTranslationExample
+         */
+        public function getExample()
+        {
+        }
+        /**
+         * The translation option.
+         *
+         * @param GoogleCloudAiplatformV1SchemaPromptSpecTranslationOption $option
+         */
+        public function setOption(GoogleCloudAiplatformV1SchemaPromptSpecTranslationOption $option)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaPromptSpecTranslationOption
+         */
+        public function getOption()
+        {
+        }
+        /**
+         * The prompt message.
+         *
+         * @param GoogleCloudAiplatformV1SchemaPromptSpecPromptMessage $promptMessage
+         */
+        public function setPromptMessage(GoogleCloudAiplatformV1SchemaPromptSpecPromptMessage $promptMessage)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaPromptSpecPromptMessage
+         */
+        public function getPromptMessage()
+        {
+        }
+        /**
+         * The source language code.
+         *
+         * @param string $sourceLanguageCode
+         */
+        public function setSourceLanguageCode($sourceLanguageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceLanguageCode()
+        {
+        }
+        /**
+         * The target language code.
+         *
+         * @param string $targetLanguageCode
+         */
+        public function setTargetLanguageCode($targetLanguageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetLanguageCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SchemaPromptSpecTranslationExample
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPromptSpecTranslationPrompt registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExample()
-    {
-    }
-    /**
-     * The translation option.
-     *
-     * @param GoogleCloudAiplatformV1SchemaPromptSpecTranslationOption $option
-     */
-    public function setOption(GoogleCloudAiplatformV1SchemaPromptSpecTranslationOption $option)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SchemaPromptSpecTranslationOption
-     */
-    public function getOption()
-    {
-    }
-    /**
-     * The prompt message.
-     *
-     * @param GoogleCloudAiplatformV1SchemaPromptSpecPromptMessage $promptMessage
-     */
-    public function setPromptMessage(GoogleCloudAiplatformV1SchemaPromptSpecPromptMessage $promptMessage)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SchemaPromptSpecPromptMessage
-     */
-    public function getPromptMessage()
-    {
-    }
-    /**
-     * The source language code.
-     *
-     * @param string $sourceLanguageCode
-     */
-    public function setSourceLanguageCode($sourceLanguageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceLanguageCode()
-    {
-    }
-    /**
-     * The target language code.
-     *
-     * @param string $targetLanguageCode
-     */
-    public function setTargetLanguageCode($targetLanguageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetLanguageCode()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPromptSpecTranslationPrompt extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPromptSpecTranslationPrompt
     {
     }
 }

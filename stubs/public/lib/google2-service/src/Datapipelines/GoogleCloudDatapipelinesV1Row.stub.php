@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1Row extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    protected $schemaType = GoogleCloudDatapipelinesV1SchemaSource::class;
-    protected $schemaDataType = '';
-    protected $valuesType = GoogleCloudDatapipelinesV1FieldValue::class;
-    protected $valuesDataType = 'array';
-    /**
-     * @param GoogleCloudDatapipelinesV1SchemaSource
-     */
-    public function setSchema(GoogleCloudDatapipelinesV1SchemaSource $schema)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1Row extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        protected $schemaType = GoogleCloudDatapipelinesV1SchemaSource::class;
+        protected $schemaDataType = '';
+        protected $valuesType = GoogleCloudDatapipelinesV1FieldValue::class;
+        protected $valuesDataType = 'array';
+        /**
+         * @param GoogleCloudDatapipelinesV1SchemaSource
+         */
+        public function setSchema(GoogleCloudDatapipelinesV1SchemaSource $schema)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1SchemaSource
+         */
+        public function getSchema()
+        {
+        }
+        /**
+         * @param GoogleCloudDatapipelinesV1FieldValue[]
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1FieldValue[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatapipelinesV1SchemaSource
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1Row registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSchema()
-    {
-    }
-    /**
-     * @param GoogleCloudDatapipelinesV1FieldValue[]
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return GoogleCloudDatapipelinesV1FieldValue[]
-     */
-    public function getValues()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1Row extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1Row
     {
     }
 }

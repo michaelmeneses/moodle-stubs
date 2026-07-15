@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class GoogleFirestoreAdminV1IndexConfig extends \Google\Collection
-{
-    protected $collection_key = 'indexes';
-    /**
-     * Output only. Specifies the resource name of the `Field` from which this
-     * field's index configuration is set (when `uses_ancestor_config` is true),
-     * or from which it *would* be set if this field had no index configuration
-     * (when `uses_ancestor_config` is false).
-     *
-     * @var string
-     */
-    public $ancestorField;
-    protected $indexesType = GoogleFirestoreAdminV1Index::class;
-    protected $indexesDataType = 'array';
-    /**
-     * Output only When true, the `Field`'s index configuration is in the process
-     * of being reverted. Once complete, the index config will transition to the
-     * same state as the field specified by `ancestor_field`, at which point
-     * `uses_ancestor_config` will be `true` and `reverting` will be `false`.
-     *
-     * @var bool
-     */
-    public $reverting;
-    /**
-     * Output only. When true, the `Field`'s index configuration is set from the
-     * configuration specified by the `ancestor_field`. When false, the `Field`'s
-     * index configuration is defined explicitly.
-     *
-     * @var bool
-     */
-    public $usesAncestorConfig;
-    /**
-     * Output only. Specifies the resource name of the `Field` from which this
-     * field's index configuration is set (when `uses_ancestor_config` is true),
-     * or from which it *would* be set if this field had no index configuration
-     * (when `uses_ancestor_config` is false).
-     *
-     * @param string $ancestorField
-     */
-    public function setAncestorField($ancestorField)
+namespace Google\Service\Firestore {
+    class GoogleFirestoreAdminV1IndexConfig extends \Google\Collection
     {
+        protected $collection_key = 'indexes';
+        /**
+         * Output only. Specifies the resource name of the `Field` from which this
+         * field's index configuration is set (when `uses_ancestor_config` is true),
+         * or from which it *would* be set if this field had no index configuration
+         * (when `uses_ancestor_config` is false).
+         *
+         * @var string
+         */
+        public $ancestorField;
+        protected $indexesType = GoogleFirestoreAdminV1Index::class;
+        protected $indexesDataType = 'array';
+        /**
+         * Output only When true, the `Field`'s index configuration is in the process
+         * of being reverted. Once complete, the index config will transition to the
+         * same state as the field specified by `ancestor_field`, at which point
+         * `uses_ancestor_config` will be `true` and `reverting` will be `false`.
+         *
+         * @var bool
+         */
+        public $reverting;
+        /**
+         * Output only. When true, the `Field`'s index configuration is set from the
+         * configuration specified by the `ancestor_field`. When false, the `Field`'s
+         * index configuration is defined explicitly.
+         *
+         * @var bool
+         */
+        public $usesAncestorConfig;
+        /**
+         * Output only. Specifies the resource name of the `Field` from which this
+         * field's index configuration is set (when `uses_ancestor_config` is true),
+         * or from which it *would* be set if this field had no index configuration
+         * (when `uses_ancestor_config` is false).
+         *
+         * @param string $ancestorField
+         */
+        public function setAncestorField($ancestorField)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAncestorField()
+        {
+        }
+        /**
+         * The indexes supported for this field.
+         *
+         * @param GoogleFirestoreAdminV1Index[] $indexes
+         */
+        public function setIndexes($indexes)
+        {
+        }
+        /**
+         * @return GoogleFirestoreAdminV1Index[]
+         */
+        public function getIndexes()
+        {
+        }
+        /**
+         * Output only When true, the `Field`'s index configuration is in the process
+         * of being reverted. Once complete, the index config will transition to the
+         * same state as the field specified by `ancestor_field`, at which point
+         * `uses_ancestor_config` will be `true` and `reverting` will be `false`.
+         *
+         * @param bool $reverting
+         */
+        public function setReverting($reverting)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReverting()
+        {
+        }
+        /**
+         * Output only. When true, the `Field`'s index configuration is set from the
+         * configuration specified by the `ancestor_field`. When false, the `Field`'s
+         * index configuration is defined explicitly.
+         *
+         * @param bool $usesAncestorConfig
+         */
+        public function setUsesAncestorConfig($usesAncestorConfig)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUsesAncestorConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firestore\GoogleFirestoreAdminV1IndexConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAncestorField()
-    {
-    }
-    /**
-     * The indexes supported for this field.
-     *
-     * @param GoogleFirestoreAdminV1Index[] $indexes
-     */
-    public function setIndexes($indexes)
-    {
-    }
-    /**
-     * @return GoogleFirestoreAdminV1Index[]
-     */
-    public function getIndexes()
-    {
-    }
-    /**
-     * Output only When true, the `Field`'s index configuration is in the process
-     * of being reverted. Once complete, the index config will transition to the
-     * same state as the field specified by `ancestor_field`, at which point
-     * `uses_ancestor_config` will be `true` and `reverting` will be `false`.
-     *
-     * @param bool $reverting
-     */
-    public function setReverting($reverting)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReverting()
-    {
-    }
-    /**
-     * Output only. When true, the `Field`'s index configuration is set from the
-     * configuration specified by the `ancestor_field`. When false, the `Field`'s
-     * index configuration is defined explicitly.
-     *
-     * @param bool $usesAncestorConfig
-     */
-    public function setUsesAncestorConfig($usesAncestorConfig)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUsesAncestorConfig()
+    class Google_Service_Firestore_GoogleFirestoreAdminV1IndexConfig extends \Google\Service\Firestore\GoogleFirestoreAdminV1IndexConfig
     {
     }
 }

@@ -21,207 +21,216 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class DiskImageTargetDetails extends \Google\Collection
-{
-    protected $collection_key = 'additionalLicenses';
-    /**
-     * Optional. Additional licenses to assign to the image. Format: https://www.g
-     * oogleapis.com/compute/v1/projects/PROJECT_ID/global/licenses/LICENSE_NAME
-     * Or https://www.googleapis.com/compute/beta/projects/PROJECT_ID/global/licen
-     * ses/LICENSE_NAME
-     *
-     * @var string[]
-     */
-    public $additionalLicenses;
-    protected $dataDiskImageImportType = DataDiskImageImport::class;
-    protected $dataDiskImageImportDataType = '';
-    /**
-     * Optional. An optional description of the image.
-     *
-     * @var string
-     */
-    public $description;
-    protected $encryptionType = Encryption::class;
-    protected $encryptionDataType = '';
-    /**
-     * Optional. The name of the image family to which the new image belongs.
-     *
-     * @var string
-     */
-    public $familyName;
-    /**
-     * Required. The name of the image to be created.
-     *
-     * @var string
-     */
-    public $imageName;
-    /**
-     * Optional. A map of labels to associate with the image.
-     *
-     * @var string[]
-     */
-    public $labels;
-    protected $osAdaptationParametersType = ImageImportOsAdaptationParameters::class;
-    protected $osAdaptationParametersDataType = '';
-    /**
-     * Optional. Set to true to set the image storageLocations to the single
-     * region of the import job. When false, the closest multi-region is selected.
-     *
-     * @var bool
-     */
-    public $singleRegionStorage;
-    /**
-     * Required. Reference to the TargetProject resource that represents the
-     * target project in which the imported image will be created.
-     *
-     * @var string
-     */
-    public $targetProject;
-    /**
-     * Optional. Additional licenses to assign to the image. Format: https://www.g
-     * oogleapis.com/compute/v1/projects/PROJECT_ID/global/licenses/LICENSE_NAME
-     * Or https://www.googleapis.com/compute/beta/projects/PROJECT_ID/global/licen
-     * ses/LICENSE_NAME
-     *
-     * @param string[] $additionalLicenses
-     */
-    public function setAdditionalLicenses($additionalLicenses)
+namespace Google\Service\VMMigrationService {
+    class DiskImageTargetDetails extends \Google\Collection
     {
+        protected $collection_key = 'additionalLicenses';
+        /**
+         * Optional. Additional licenses to assign to the image. Format: https://www.g
+         * oogleapis.com/compute/v1/projects/PROJECT_ID/global/licenses/LICENSE_NAME
+         * Or https://www.googleapis.com/compute/beta/projects/PROJECT_ID/global/licen
+         * ses/LICENSE_NAME
+         *
+         * @var string[]
+         */
+        public $additionalLicenses;
+        protected $dataDiskImageImportType = DataDiskImageImport::class;
+        protected $dataDiskImageImportDataType = '';
+        /**
+         * Optional. An optional description of the image.
+         *
+         * @var string
+         */
+        public $description;
+        protected $encryptionType = Encryption::class;
+        protected $encryptionDataType = '';
+        /**
+         * Optional. The name of the image family to which the new image belongs.
+         *
+         * @var string
+         */
+        public $familyName;
+        /**
+         * Required. The name of the image to be created.
+         *
+         * @var string
+         */
+        public $imageName;
+        /**
+         * Optional. A map of labels to associate with the image.
+         *
+         * @var string[]
+         */
+        public $labels;
+        protected $osAdaptationParametersType = ImageImportOsAdaptationParameters::class;
+        protected $osAdaptationParametersDataType = '';
+        /**
+         * Optional. Set to true to set the image storageLocations to the single
+         * region of the import job. When false, the closest multi-region is selected.
+         *
+         * @var bool
+         */
+        public $singleRegionStorage;
+        /**
+         * Required. Reference to the TargetProject resource that represents the
+         * target project in which the imported image will be created.
+         *
+         * @var string
+         */
+        public $targetProject;
+        /**
+         * Optional. Additional licenses to assign to the image. Format: https://www.g
+         * oogleapis.com/compute/v1/projects/PROJECT_ID/global/licenses/LICENSE_NAME
+         * Or https://www.googleapis.com/compute/beta/projects/PROJECT_ID/global/licen
+         * ses/LICENSE_NAME
+         *
+         * @param string[] $additionalLicenses
+         */
+        public function setAdditionalLicenses($additionalLicenses)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAdditionalLicenses()
+        {
+        }
+        /**
+         * Optional. Use to skip OS adaptation process.
+         *
+         * @param DataDiskImageImport $dataDiskImageImport
+         */
+        public function setDataDiskImageImport(DataDiskImageImport $dataDiskImageImport)
+        {
+        }
+        /**
+         * @return DataDiskImageImport
+         */
+        public function getDataDiskImageImport()
+        {
+        }
+        /**
+         * Optional. An optional description of the image.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Immutable. The encryption to apply to the image.
+         *
+         * @param Encryption $encryption
+         */
+        public function setEncryption(Encryption $encryption)
+        {
+        }
+        /**
+         * @return Encryption
+         */
+        public function getEncryption()
+        {
+        }
+        /**
+         * Optional. The name of the image family to which the new image belongs.
+         *
+         * @param string $familyName
+         */
+        public function setFamilyName($familyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFamilyName()
+        {
+        }
+        /**
+         * Required. The name of the image to be created.
+         *
+         * @param string $imageName
+         */
+        public function setImageName($imageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageName()
+        {
+        }
+        /**
+         * Optional. A map of labels to associate with the image.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Optional. Use to set the parameters relevant for the OS adaptation process.
+         *
+         * @param ImageImportOsAdaptationParameters $osAdaptationParameters
+         */
+        public function setOsAdaptationParameters(ImageImportOsAdaptationParameters $osAdaptationParameters)
+        {
+        }
+        /**
+         * @return ImageImportOsAdaptationParameters
+         */
+        public function getOsAdaptationParameters()
+        {
+        }
+        /**
+         * Optional. Set to true to set the image storageLocations to the single
+         * region of the import job. When false, the closest multi-region is selected.
+         *
+         * @param bool $singleRegionStorage
+         */
+        public function setSingleRegionStorage($singleRegionStorage)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSingleRegionStorage()
+        {
+        }
+        /**
+         * Required. Reference to the TargetProject resource that represents the
+         * target project in which the imported image will be created.
+         *
+         * @param string $targetProject
+         */
+        public function setTargetProject($targetProject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetProject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\VMMigrationService\DiskImageTargetDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalLicenses()
-    {
-    }
-    /**
-     * Optional. Use to skip OS adaptation process.
-     *
-     * @param DataDiskImageImport $dataDiskImageImport
-     */
-    public function setDataDiskImageImport(DataDiskImageImport $dataDiskImageImport)
-    {
-    }
-    /**
-     * @return DataDiskImageImport
-     */
-    public function getDataDiskImageImport()
-    {
-    }
-    /**
-     * Optional. An optional description of the image.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Immutable. The encryption to apply to the image.
-     *
-     * @param Encryption $encryption
-     */
-    public function setEncryption(Encryption $encryption)
-    {
-    }
-    /**
-     * @return Encryption
-     */
-    public function getEncryption()
-    {
-    }
-    /**
-     * Optional. The name of the image family to which the new image belongs.
-     *
-     * @param string $familyName
-     */
-    public function setFamilyName($familyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFamilyName()
-    {
-    }
-    /**
-     * Required. The name of the image to be created.
-     *
-     * @param string $imageName
-     */
-    public function setImageName($imageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageName()
-    {
-    }
-    /**
-     * Optional. A map of labels to associate with the image.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Optional. Use to set the parameters relevant for the OS adaptation process.
-     *
-     * @param ImageImportOsAdaptationParameters $osAdaptationParameters
-     */
-    public function setOsAdaptationParameters(ImageImportOsAdaptationParameters $osAdaptationParameters)
-    {
-    }
-    /**
-     * @return ImageImportOsAdaptationParameters
-     */
-    public function getOsAdaptationParameters()
-    {
-    }
-    /**
-     * Optional. Set to true to set the image storageLocations to the single
-     * region of the import job. When false, the closest multi-region is selected.
-     *
-     * @param bool $singleRegionStorage
-     */
-    public function setSingleRegionStorage($singleRegionStorage)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSingleRegionStorage()
-    {
-    }
-    /**
-     * Required. Reference to the TargetProject resource that represents the
-     * target project in which the imported image will be created.
-     *
-     * @param string $targetProject
-     */
-    public function setTargetProject($targetProject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetProject()
+    class Google_Service_VMMigrationService_DiskImageTargetDetails extends \Google\Service\VMMigrationService\DiskImageTargetDetails
     {
     }
 }

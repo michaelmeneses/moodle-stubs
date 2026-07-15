@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1betaDeviceCheckConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $keyId;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $privateKey;
-    /**
-     * @var bool
-     */
-    public $privateKeySet;
-    /**
-     * @var string
-     */
-    public $tokenTtl;
-    /**
-     * @param string
-     */
-    public function setKeyId($keyId)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1betaDeviceCheckConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $keyId;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $privateKey;
+        /**
+         * @var bool
+         */
+        public $privateKeySet;
+        /**
+         * @var string
+         */
+        public $tokenTtl;
+        /**
+         * @param string
+         */
+        public function setKeyId($keyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPrivateKey($privateKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivateKey()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setPrivateKeySet($privateKeySet)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPrivateKeySet()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTokenTtl($tokenTtl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTokenTtl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaDeviceCheckConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeyId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPrivateKey($privateKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrivateKey()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setPrivateKeySet($privateKeySet)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPrivateKeySet()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTokenTtl($tokenTtl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTokenTtl()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1betaDeviceCheckConfig extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaDeviceCheckConfig
     {
     }
 }

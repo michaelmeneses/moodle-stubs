@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory\Resource;
-
-/**
- * The "devices" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adminService = new Google\Service\Directory(...);
- *   $devices = $adminService->customer_devices;
- *  </code>
- */
-class CustomerDevices extends \Google\Service\Resource
-{
+namespace Google\Service\Directory\Resource {
+    /**
+     * The "devices" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adminService = new Google\Service\Directory(...);
+     *   $devices = $adminService->customer_devices;
+     *  </code>
+     */
+    class CustomerDevices extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Directory\Resource\CustomerDevices registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Directory_Resource_CustomerDevices extends \Google\Service\Directory\Resource\CustomerDevices
+    {
+    }
 }

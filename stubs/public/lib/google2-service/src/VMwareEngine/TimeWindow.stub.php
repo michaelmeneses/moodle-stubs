@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class TimeWindow extends \Google\Model
-{
-    /**
-     * The day of the week is unspecified.
-     */
-    public const DAY_OF_WEEK_DAY_OF_WEEK_UNSPECIFIED = 'DAY_OF_WEEK_UNSPECIFIED';
-    /**
-     * Monday
-     */
-    public const DAY_OF_WEEK_MONDAY = 'MONDAY';
-    /**
-     * Tuesday
-     */
-    public const DAY_OF_WEEK_TUESDAY = 'TUESDAY';
-    /**
-     * Wednesday
-     */
-    public const DAY_OF_WEEK_WEDNESDAY = 'WEDNESDAY';
-    /**
-     * Thursday
-     */
-    public const DAY_OF_WEEK_THURSDAY = 'THURSDAY';
-    /**
-     * Friday
-     */
-    public const DAY_OF_WEEK_FRIDAY = 'FRIDAY';
-    /**
-     * Saturday
-     */
-    public const DAY_OF_WEEK_SATURDAY = 'SATURDAY';
-    /**
-     * Sunday
-     */
-    public const DAY_OF_WEEK_SUNDAY = 'SUNDAY';
-    /**
-     * Required. Day of the week for this window.
-     *
-     * @var string
-     */
-    public $dayOfWeek;
-    /**
-     * Required. The duration of the window. The max allowed duration for any
-     * window is 24 hours.
-     *
-     * @var string
-     */
-    public $duration;
-    protected $startTimeType = TimeOfDay::class;
-    protected $startTimeDataType = '';
-    /**
-     * Required. Day of the week for this window.
-     *
-     * Accepted values: DAY_OF_WEEK_UNSPECIFIED, MONDAY, TUESDAY, WEDNESDAY,
-     * THURSDAY, FRIDAY, SATURDAY, SUNDAY
-     *
-     * @param self::DAY_OF_WEEK_* $dayOfWeek
-     */
-    public function setDayOfWeek($dayOfWeek)
+namespace Google\Service\VMwareEngine {
+    class TimeWindow extends \Google\Model
     {
+        /**
+         * The day of the week is unspecified.
+         */
+        public const DAY_OF_WEEK_DAY_OF_WEEK_UNSPECIFIED = 'DAY_OF_WEEK_UNSPECIFIED';
+        /**
+         * Monday
+         */
+        public const DAY_OF_WEEK_MONDAY = 'MONDAY';
+        /**
+         * Tuesday
+         */
+        public const DAY_OF_WEEK_TUESDAY = 'TUESDAY';
+        /**
+         * Wednesday
+         */
+        public const DAY_OF_WEEK_WEDNESDAY = 'WEDNESDAY';
+        /**
+         * Thursday
+         */
+        public const DAY_OF_WEEK_THURSDAY = 'THURSDAY';
+        /**
+         * Friday
+         */
+        public const DAY_OF_WEEK_FRIDAY = 'FRIDAY';
+        /**
+         * Saturday
+         */
+        public const DAY_OF_WEEK_SATURDAY = 'SATURDAY';
+        /**
+         * Sunday
+         */
+        public const DAY_OF_WEEK_SUNDAY = 'SUNDAY';
+        /**
+         * Required. Day of the week for this window.
+         *
+         * @var string
+         */
+        public $dayOfWeek;
+        /**
+         * Required. The duration of the window. The max allowed duration for any
+         * window is 24 hours.
+         *
+         * @var string
+         */
+        public $duration;
+        protected $startTimeType = TimeOfDay::class;
+        protected $startTimeDataType = '';
+        /**
+         * Required. Day of the week for this window.
+         *
+         * Accepted values: DAY_OF_WEEK_UNSPECIFIED, MONDAY, TUESDAY, WEDNESDAY,
+         * THURSDAY, FRIDAY, SATURDAY, SUNDAY
+         *
+         * @param self::DAY_OF_WEEK_* $dayOfWeek
+         */
+        public function setDayOfWeek($dayOfWeek)
+        {
+        }
+        /**
+         * @return self::DAY_OF_WEEK_*
+         */
+        public function getDayOfWeek()
+        {
+        }
+        /**
+         * Required. The duration of the window. The max allowed duration for any
+         * window is 24 hours.
+         *
+         * @param string $duration
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDuration()
+        {
+        }
+        /**
+         * Required. Time in UTC when the window starts.
+         *
+         * @param TimeOfDay $startTime
+         */
+        public function setStartTime(TimeOfDay $startTime)
+        {
+        }
+        /**
+         * @return TimeOfDay
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DAY_OF_WEEK_*
+     * Runtime class alias of \Google\Service\VMwareEngine\TimeWindow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDayOfWeek()
-    {
-    }
-    /**
-     * Required. The duration of the window. The max allowed duration for any
-     * window is 24 hours.
-     *
-     * @param string $duration
-     */
-    public function setDuration($duration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDuration()
-    {
-    }
-    /**
-     * Required. Time in UTC when the window starts.
-     *
-     * @param TimeOfDay $startTime
-     */
-    public function setStartTime(TimeOfDay $startTime)
-    {
-    }
-    /**
-     * @return TimeOfDay
-     */
-    public function getStartTime()
+    class Google_Service_VMwareEngine_TimeWindow extends \Google\Service\VMwareEngine\TimeWindow
     {
     }
 }

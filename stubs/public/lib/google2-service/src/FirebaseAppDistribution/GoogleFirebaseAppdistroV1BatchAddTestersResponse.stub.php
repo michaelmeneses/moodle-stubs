@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppDistribution;
-
-class GoogleFirebaseAppdistroV1BatchAddTestersResponse extends \Google\Collection
-{
-    protected $collection_key = 'testers';
-    protected $testersType = GoogleFirebaseAppdistroV1Tester::class;
-    protected $testersDataType = 'array';
-    /**
-     * The testers which are created and/or already exist
-     *
-     * @param GoogleFirebaseAppdistroV1Tester[] $testers
-     */
-    public function setTesters($testers)
+namespace Google\Service\FirebaseAppDistribution {
+    class GoogleFirebaseAppdistroV1BatchAddTestersResponse extends \Google\Collection
     {
+        protected $collection_key = 'testers';
+        protected $testersType = GoogleFirebaseAppdistroV1Tester::class;
+        protected $testersDataType = 'array';
+        /**
+         * The testers which are created and/or already exist
+         *
+         * @param GoogleFirebaseAppdistroV1Tester[] $testers
+         */
+        public function setTesters($testers)
+        {
+        }
+        /**
+         * @return GoogleFirebaseAppdistroV1Tester[]
+         */
+        public function getTesters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFirebaseAppdistroV1Tester[]
+     * Runtime class alias of \Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1BatchAddTestersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTesters()
+    class Google_Service_FirebaseAppDistribution_GoogleFirebaseAppdistroV1BatchAddTestersResponse extends \Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1BatchAddTestersResponse
     {
     }
 }

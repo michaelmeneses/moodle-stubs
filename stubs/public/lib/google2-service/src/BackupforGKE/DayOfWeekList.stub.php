@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BackupforGKE;
-
-class DayOfWeekList extends \Google\Collection
-{
-    protected $collection_key = 'daysOfWeek';
-    /**
-     * Optional. A list of days of week.
-     *
-     * @var string[]
-     */
-    public $daysOfWeek;
-    /**
-     * Optional. A list of days of week.
-     *
-     * @param string[] $daysOfWeek
-     */
-    public function setDaysOfWeek($daysOfWeek)
+namespace Google\Service\BackupforGKE {
+    class DayOfWeekList extends \Google\Collection
     {
+        protected $collection_key = 'daysOfWeek';
+        /**
+         * Optional. A list of days of week.
+         *
+         * @var string[]
+         */
+        public $daysOfWeek;
+        /**
+         * Optional. A list of days of week.
+         *
+         * @param string[] $daysOfWeek
+         */
+        public function setDaysOfWeek($daysOfWeek)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDaysOfWeek()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\BackupforGKE\DayOfWeekList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDaysOfWeek()
+    class Google_Service_BackupforGKE_DayOfWeekList extends \Google\Service\BackupforGKE\DayOfWeekList
     {
     }
 }

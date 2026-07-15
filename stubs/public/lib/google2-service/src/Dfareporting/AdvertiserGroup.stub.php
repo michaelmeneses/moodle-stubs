@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class AdvertiserGroup extends \Google\Model
-{
-    /**
-     * Account ID of this advertiser group. This is a read-only field that can be
-     * left blank.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * ID of this advertiser group. This is a read-only, auto-generated field.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#advertiserGroup".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Name of this advertiser group. This is a required field and must be less
-     * than 256 characters long and unique among advertiser groups of the same
-     * account.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Account ID of this advertiser group. This is a read-only field that can be
-     * left blank.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Dfareporting {
+    class AdvertiserGroup extends \Google\Model
     {
+        /**
+         * Account ID of this advertiser group. This is a read-only field that can be
+         * left blank.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * ID of this advertiser group. This is a read-only, auto-generated field.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#advertiserGroup".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Name of this advertiser group. This is a required field and must be less
+         * than 256 characters long and unique among advertiser groups of the same
+         * account.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Account ID of this advertiser group. This is a read-only field that can be
+         * left blank.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * ID of this advertiser group. This is a read-only, auto-generated field.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#advertiserGroup".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Name of this advertiser group. This is a required field and must be less
+         * than 256 characters long and unique among advertiser groups of the same
+         * account.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\AdvertiserGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * ID of this advertiser group. This is a read-only, auto-generated field.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#advertiserGroup".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Name of this advertiser group. This is a required field and must be less
-     * than 256 characters long and unique among advertiser groups of the same
-     * account.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Dfareporting_AdvertiserGroup extends \Google\Service\Dfareporting\AdvertiserGroup
     {
     }
 }

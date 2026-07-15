@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage extends \Google\Model
-{
-    /**
-     * @var float
-     */
-    public $confidence;
-    /**
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * @param float
-     */
-    public function setConfidence($confidence)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage extends \Google\Model
     {
+        /**
+         * @var float
+         */
+        public $confidence;
+        /**
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * @param float
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidence()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage extends \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage
     {
     }
 }

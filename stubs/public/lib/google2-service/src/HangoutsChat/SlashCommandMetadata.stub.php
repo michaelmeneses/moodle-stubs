@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class SlashCommandMetadata extends \Google\Model
-{
-    /**
-     * Default value for the enum. Don't use.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * Add Chat app to space.
-     */
-    public const TYPE_ADD = 'ADD';
-    /**
-     * Invoke slash command in space.
-     */
-    public const TYPE_INVOKE = 'INVOKE';
-    protected $botType = User::class;
-    protected $botDataType = '';
-    /**
-     * The command ID of the invoked slash command.
-     *
-     * @var string
-     */
-    public $commandId;
-    /**
-     * The name of the invoked slash command.
-     *
-     * @var string
-     */
-    public $commandName;
-    /**
-     * Indicates whether the slash command is for a dialog.
-     *
-     * @var bool
-     */
-    public $triggersDialog;
-    /**
-     * The type of slash command.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The Chat app whose command was invoked.
-     *
-     * @param User $bot
-     */
-    public function setBot(User $bot)
+namespace Google\Service\HangoutsChat {
+    class SlashCommandMetadata extends \Google\Model
     {
+        /**
+         * Default value for the enum. Don't use.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * Add Chat app to space.
+         */
+        public const TYPE_ADD = 'ADD';
+        /**
+         * Invoke slash command in space.
+         */
+        public const TYPE_INVOKE = 'INVOKE';
+        protected $botType = User::class;
+        protected $botDataType = '';
+        /**
+         * The command ID of the invoked slash command.
+         *
+         * @var string
+         */
+        public $commandId;
+        /**
+         * The name of the invoked slash command.
+         *
+         * @var string
+         */
+        public $commandName;
+        /**
+         * Indicates whether the slash command is for a dialog.
+         *
+         * @var bool
+         */
+        public $triggersDialog;
+        /**
+         * The type of slash command.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The Chat app whose command was invoked.
+         *
+         * @param User $bot
+         */
+        public function setBot(User $bot)
+        {
+        }
+        /**
+         * @return User
+         */
+        public function getBot()
+        {
+        }
+        /**
+         * The command ID of the invoked slash command.
+         *
+         * @param string $commandId
+         */
+        public function setCommandId($commandId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommandId()
+        {
+        }
+        /**
+         * The name of the invoked slash command.
+         *
+         * @param string $commandName
+         */
+        public function setCommandName($commandName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommandName()
+        {
+        }
+        /**
+         * Indicates whether the slash command is for a dialog.
+         *
+         * @param bool $triggersDialog
+         */
+        public function setTriggersDialog($triggersDialog)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTriggersDialog()
+        {
+        }
+        /**
+         * The type of slash command.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, ADD, INVOKE
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return User
+     * Runtime class alias of \Google\Service\HangoutsChat\SlashCommandMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBot()
-    {
-    }
-    /**
-     * The command ID of the invoked slash command.
-     *
-     * @param string $commandId
-     */
-    public function setCommandId($commandId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCommandId()
-    {
-    }
-    /**
-     * The name of the invoked slash command.
-     *
-     * @param string $commandName
-     */
-    public function setCommandName($commandName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCommandName()
-    {
-    }
-    /**
-     * Indicates whether the slash command is for a dialog.
-     *
-     * @param bool $triggersDialog
-     */
-    public function setTriggersDialog($triggersDialog)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTriggersDialog()
-    {
-    }
-    /**
-     * The type of slash command.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, ADD, INVOKE
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_HangoutsChat_SlashCommandMetadata extends \Google\Service\HangoutsChat\SlashCommandMetadata
     {
     }
 }

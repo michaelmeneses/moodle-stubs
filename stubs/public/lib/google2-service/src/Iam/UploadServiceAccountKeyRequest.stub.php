@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class UploadServiceAccountKeyRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $publicKeyData;
-    /**
-     * @param string
-     */
-    public function setPublicKeyData($publicKeyData)
+namespace Google\Service\Iam {
+    class UploadServiceAccountKeyRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $publicKeyData;
+        /**
+         * @param string
+         */
+        public function setPublicKeyData($publicKeyData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublicKeyData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Iam\UploadServiceAccountKeyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPublicKeyData()
+    class Google_Service_Iam_UploadServiceAccountKeyRequest extends \Google\Service\Iam\UploadServiceAccountKeyRequest
     {
     }
 }

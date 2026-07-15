@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class WatchResponse extends \Google\Model
-{
-    /**
-     * When Gmail will stop sending notifications for mailbox updates (epoch
-     * millis). Call `watch` again before this time to renew the watch.
-     *
-     * @var string
-     */
-    public $expiration;
-    /**
-     * The ID of the mailbox's current history record.
-     *
-     * @var string
-     */
-    public $historyId;
-    /**
-     * When Gmail will stop sending notifications for mailbox updates (epoch
-     * millis). Call `watch` again before this time to renew the watch.
-     *
-     * @param string $expiration
-     */
-    public function setExpiration($expiration)
+namespace Google\Service\Gmail {
+    class WatchResponse extends \Google\Model
     {
+        /**
+         * When Gmail will stop sending notifications for mailbox updates (epoch
+         * millis). Call `watch` again before this time to renew the watch.
+         *
+         * @var string
+         */
+        public $expiration;
+        /**
+         * The ID of the mailbox's current history record.
+         *
+         * @var string
+         */
+        public $historyId;
+        /**
+         * When Gmail will stop sending notifications for mailbox updates (epoch
+         * millis). Call `watch` again before this time to renew the watch.
+         *
+         * @param string $expiration
+         */
+        public function setExpiration($expiration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpiration()
+        {
+        }
+        /**
+         * The ID of the mailbox's current history record.
+         *
+         * @param string $historyId
+         */
+        public function setHistoryId($historyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHistoryId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Gmail\WatchResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpiration()
-    {
-    }
-    /**
-     * The ID of the mailbox's current history record.
-     *
-     * @param string $historyId
-     */
-    public function setHistoryId($historyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHistoryId()
+    class Google_Service_Gmail_WatchResponse extends \Google\Service\Gmail\WatchResponse
     {
     }
 }

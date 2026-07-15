@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelSemverSemVer extends \Google\Model
-{
-    public $major;
-    public $minor;
-    public $patch;
-    public $prerelease;
-    public function setMajor($major)
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelSemverSemVer extends \Google\Model
     {
+        public $major;
+        public $minor;
+        public $patch;
+        public $prerelease;
+        public function setMajor($major)
+        {
+        }
+        public function getMajor()
+        {
+        }
+        public function setMinor($minor)
+        {
+        }
+        public function getMinor()
+        {
+        }
+        public function setPatch($patch)
+        {
+        }
+        public function getPatch()
+        {
+        }
+        public function setPrerelease($prerelease)
+        {
+        }
+        public function getPrerelease()
+        {
+        }
     }
-    public function getMajor()
-    {
-    }
-    public function setMinor($minor)
-    {
-    }
-    public function getMinor()
-    {
-    }
-    public function setPatch($patch)
-    {
-    }
-    public function getPatch()
-    {
-    }
-    public function setPrerelease($prerelease)
-    {
-    }
-    public function getPrerelease()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelSemverSemVer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RemoteBuildExecution_BuildBazelSemverSemVer extends \Google\Service\RemoteBuildExecution\BuildBazelSemverSemVer
     {
     }
 }

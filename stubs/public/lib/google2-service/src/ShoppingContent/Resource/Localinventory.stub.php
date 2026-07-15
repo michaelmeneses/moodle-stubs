@@ -21,44 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "localinventory" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $localinventory = $contentService->localinventory;
- *  </code>
- */
-class Localinventory extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\LocalInventory as LocalInventoryModel;
+    use Google\Service\ShoppingContent\LocalinventoryCustomBatchRequest;
+    use Google\Service\ShoppingContent\LocalinventoryCustomBatchResponse;
     /**
-     * Updates local inventory for multiple products or stores in a single request.
-     * (localinventory.custombatch)
-     *
-     * @param LocalinventoryCustomBatchRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return LocalinventoryCustomBatchResponse
-     * @throws \Google\Service\Exception
+     * The "localinventory" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $localinventory = $contentService->localinventory;
+     *  </code>
      */
-    public function custombatch(LocalinventoryCustomBatchRequest $postBody, $optParams = [])
+    class Localinventory extends \Google\Service\Resource
     {
+        /**
+         * Updates local inventory for multiple products or stores in a single request.
+         * (localinventory.custombatch)
+         *
+         * @param LocalinventoryCustomBatchRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return LocalinventoryCustomBatchResponse
+         * @throws \Google\Service\Exception
+         */
+        public function custombatch(LocalinventoryCustomBatchRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates the local inventory of a product in your Merchant Center account.
+         * (localinventory.insert)
+         *
+         * @param string $merchantId The ID of the account that contains the product.
+         * This account cannot be a multi-client account.
+         * @param string $productId The REST ID of the product for which to update local
+         * inventory.
+         * @param LocalInventoryModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return LocalInventoryModel
+         * @throws \Google\Service\Exception
+         */
+        public function insert($merchantId, $productId, LocalInventoryModel $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Updates the local inventory of a product in your Merchant Center account.
-     * (localinventory.insert)
-     *
-     * @param string $merchantId The ID of the account that contains the product.
-     * This account cannot be a multi-client account.
-     * @param string $productId The REST ID of the product for which to update local
-     * inventory.
-     * @param LocalInventoryModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return LocalInventoryModel
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\Localinventory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert($merchantId, $productId, LocalInventoryModel $postBody, $optParams = [])
+    class Google_Service_ShoppingContent_Resource_Localinventory extends \Google\Service\ShoppingContent\Resource\Localinventory
     {
     }
 }

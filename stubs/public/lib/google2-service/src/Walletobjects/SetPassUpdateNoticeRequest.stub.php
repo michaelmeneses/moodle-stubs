@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class SetPassUpdateNoticeRequest extends \Google\Model
-{
-    /**
-     * Required. A fully qualified identifier of the pass that the issuer wants to
-     * notify the pass holder(s) about. Formatted as .
-     *
-     * @var string
-     */
-    public $externalPassId;
-    /**
-     * Required. The issuer endpoint URI the pass holder needs to follow in order
-     * to receive an updated pass JWT. It can not contain any sensitive
-     * information. The endpoint needs to authenticate the user before giving the
-     * user the updated JWT. Example update URI
-     * https://someissuer.com/update/passId=someExternalPassId
-     *
-     * @var string
-     */
-    public $updateUri;
-    /**
-     * Required. The JWT signature of the updated pass that the issuer wants to
-     * notify Google about. Only devices that report a different JWT signature
-     * than this JWT signature will receive the update notification.
-     *
-     * @var string
-     */
-    public $updatedPassJwtSignature;
-    /**
-     * Required. A fully qualified identifier of the pass that the issuer wants to
-     * notify the pass holder(s) about. Formatted as .
-     *
-     * @param string $externalPassId
-     */
-    public function setExternalPassId($externalPassId)
+namespace Google\Service\Walletobjects {
+    class SetPassUpdateNoticeRequest extends \Google\Model
     {
+        /**
+         * Required. A fully qualified identifier of the pass that the issuer wants to
+         * notify the pass holder(s) about. Formatted as .
+         *
+         * @var string
+         */
+        public $externalPassId;
+        /**
+         * Required. The issuer endpoint URI the pass holder needs to follow in order
+         * to receive an updated pass JWT. It can not contain any sensitive
+         * information. The endpoint needs to authenticate the user before giving the
+         * user the updated JWT. Example update URI
+         * https://someissuer.com/update/passId=someExternalPassId
+         *
+         * @var string
+         */
+        public $updateUri;
+        /**
+         * Required. The JWT signature of the updated pass that the issuer wants to
+         * notify Google about. Only devices that report a different JWT signature
+         * than this JWT signature will receive the update notification.
+         *
+         * @var string
+         */
+        public $updatedPassJwtSignature;
+        /**
+         * Required. A fully qualified identifier of the pass that the issuer wants to
+         * notify the pass holder(s) about. Formatted as .
+         *
+         * @param string $externalPassId
+         */
+        public function setExternalPassId($externalPassId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternalPassId()
+        {
+        }
+        /**
+         * Required. The issuer endpoint URI the pass holder needs to follow in order
+         * to receive an updated pass JWT. It can not contain any sensitive
+         * information. The endpoint needs to authenticate the user before giving the
+         * user the updated JWT. Example update URI
+         * https://someissuer.com/update/passId=someExternalPassId
+         *
+         * @param string $updateUri
+         */
+        public function setUpdateUri($updateUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateUri()
+        {
+        }
+        /**
+         * Required. The JWT signature of the updated pass that the issuer wants to
+         * notify Google about. Only devices that report a different JWT signature
+         * than this JWT signature will receive the update notification.
+         *
+         * @param string $updatedPassJwtSignature
+         */
+        public function setUpdatedPassJwtSignature($updatedPassJwtSignature)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdatedPassJwtSignature()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Walletobjects\SetPassUpdateNoticeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExternalPassId()
-    {
-    }
-    /**
-     * Required. The issuer endpoint URI the pass holder needs to follow in order
-     * to receive an updated pass JWT. It can not contain any sensitive
-     * information. The endpoint needs to authenticate the user before giving the
-     * user the updated JWT. Example update URI
-     * https://someissuer.com/update/passId=someExternalPassId
-     *
-     * @param string $updateUri
-     */
-    public function setUpdateUri($updateUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateUri()
-    {
-    }
-    /**
-     * Required. The JWT signature of the updated pass that the issuer wants to
-     * notify Google about. Only devices that report a different JWT signature
-     * than this JWT signature will receive the update notification.
-     *
-     * @param string $updatedPassJwtSignature
-     */
-    public function setUpdatedPassJwtSignature($updatedPassJwtSignature)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdatedPassJwtSignature()
+    class Google_Service_Walletobjects_SetPassUpdateNoticeRequest extends \Google\Service\Walletobjects\SetPassUpdateNoticeRequest
     {
     }
 }

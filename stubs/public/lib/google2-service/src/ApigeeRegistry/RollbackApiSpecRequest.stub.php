@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ApigeeRegistry;
-
-class RollbackApiSpecRequest extends \Google\Model
-{
-    /**
-     * Required. The revision ID to roll back to. It must be a revision of the
-     * same spec. Example: `c7cfa2a8`
-     *
-     * @var string
-     */
-    public $revisionId;
-    /**
-     * Required. The revision ID to roll back to. It must be a revision of the
-     * same spec. Example: `c7cfa2a8`
-     *
-     * @param string $revisionId
-     */
-    public function setRevisionId($revisionId)
+namespace Google\Service\ApigeeRegistry {
+    class RollbackApiSpecRequest extends \Google\Model
     {
+        /**
+         * Required. The revision ID to roll back to. It must be a revision of the
+         * same spec. Example: `c7cfa2a8`
+         *
+         * @var string
+         */
+        public $revisionId;
+        /**
+         * Required. The revision ID to roll back to. It must be a revision of the
+         * same spec. Example: `c7cfa2a8`
+         *
+         * @param string $revisionId
+         */
+        public function setRevisionId($revisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ApigeeRegistry\RollbackApiSpecRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRevisionId()
+    class Google_Service_ApigeeRegistry_RollbackApiSpecRequest extends \Google\Service\ApigeeRegistry\RollbackApiSpecRequest
     {
     }
 }

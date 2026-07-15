@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class Column extends \Google\Model
-{
-    /**
-     * Map of attribute name and value for this column.
-     *
-     * @var string[]
-     */
-    public $attributes;
-    /**
-     * Column id.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Resource type for Analytics column.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Map of attribute name and value for this column.
-     *
-     * @param string[] $attributes
-     */
-    public function setAttributes($attributes)
+namespace Google\Service\Analytics {
+    class Column extends \Google\Model
     {
+        /**
+         * Map of attribute name and value for this column.
+         *
+         * @var string[]
+         */
+        public $attributes;
+        /**
+         * Column id.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Resource type for Analytics column.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Map of attribute name and value for this column.
+         *
+         * @param string[] $attributes
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * Column id.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Resource type for Analytics column.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Analytics\Column registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
-    {
-    }
-    /**
-     * Column id.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Resource type for Analytics column.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Analytics_Column extends \Google\Service\Analytics\Column
     {
     }
 }

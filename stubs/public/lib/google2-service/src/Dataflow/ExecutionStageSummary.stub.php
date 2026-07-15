@@ -21,193 +21,202 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class ExecutionStageSummary extends \Google\Collection
-{
-    /**
-     * Unrecognized transform type.
-     */
-    public const KIND_UNKNOWN_KIND = 'UNKNOWN_KIND';
-    /**
-     * ParDo transform.
-     */
-    public const KIND_PAR_DO_KIND = 'PAR_DO_KIND';
-    /**
-     * Group By Key transform.
-     */
-    public const KIND_GROUP_BY_KEY_KIND = 'GROUP_BY_KEY_KIND';
-    /**
-     * Flatten transform.
-     */
-    public const KIND_FLATTEN_KIND = 'FLATTEN_KIND';
-    /**
-     * Read transform.
-     */
-    public const KIND_READ_KIND = 'READ_KIND';
-    /**
-     * Write transform.
-     */
-    public const KIND_WRITE_KIND = 'WRITE_KIND';
-    /**
-     * Constructs from a constant value, such as with Create.of.
-     */
-    public const KIND_CONSTANT_KIND = 'CONSTANT_KIND';
-    /**
-     * Creates a Singleton view of a collection.
-     */
-    public const KIND_SINGLETON_KIND = 'SINGLETON_KIND';
-    /**
-     * Opening or closing a shuffle session, often as part of a GroupByKey.
-     */
-    public const KIND_SHUFFLE_KIND = 'SHUFFLE_KIND';
-    protected $collection_key = 'prerequisiteStage';
-    protected $componentSourceType = ComponentSource::class;
-    protected $componentSourceDataType = 'array';
-    protected $componentTransformType = ComponentTransform::class;
-    protected $componentTransformDataType = 'array';
-    /**
-     * Dataflow service generated id for this stage.
-     *
-     * @var string
-     */
-    public $id;
-    protected $inputSourceType = StageSource::class;
-    protected $inputSourceDataType = 'array';
-    /**
-     * Type of transform this stage is executing.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Dataflow service generated name for this stage.
-     *
-     * @var string
-     */
-    public $name;
-    protected $outputSourceType = StageSource::class;
-    protected $outputSourceDataType = 'array';
-    /**
-     * Other stages that must complete before this stage can run.
-     *
-     * @var string[]
-     */
-    public $prerequisiteStage;
-    /**
-     * Collections produced and consumed by component transforms of this stage.
-     *
-     * @param ComponentSource[] $componentSource
-     */
-    public function setComponentSource($componentSource)
+namespace Google\Service\Dataflow {
+    class ExecutionStageSummary extends \Google\Collection
     {
+        /**
+         * Unrecognized transform type.
+         */
+        public const KIND_UNKNOWN_KIND = 'UNKNOWN_KIND';
+        /**
+         * ParDo transform.
+         */
+        public const KIND_PAR_DO_KIND = 'PAR_DO_KIND';
+        /**
+         * Group By Key transform.
+         */
+        public const KIND_GROUP_BY_KEY_KIND = 'GROUP_BY_KEY_KIND';
+        /**
+         * Flatten transform.
+         */
+        public const KIND_FLATTEN_KIND = 'FLATTEN_KIND';
+        /**
+         * Read transform.
+         */
+        public const KIND_READ_KIND = 'READ_KIND';
+        /**
+         * Write transform.
+         */
+        public const KIND_WRITE_KIND = 'WRITE_KIND';
+        /**
+         * Constructs from a constant value, such as with Create.of.
+         */
+        public const KIND_CONSTANT_KIND = 'CONSTANT_KIND';
+        /**
+         * Creates a Singleton view of a collection.
+         */
+        public const KIND_SINGLETON_KIND = 'SINGLETON_KIND';
+        /**
+         * Opening or closing a shuffle session, often as part of a GroupByKey.
+         */
+        public const KIND_SHUFFLE_KIND = 'SHUFFLE_KIND';
+        protected $collection_key = 'prerequisiteStage';
+        protected $componentSourceType = ComponentSource::class;
+        protected $componentSourceDataType = 'array';
+        protected $componentTransformType = ComponentTransform::class;
+        protected $componentTransformDataType = 'array';
+        /**
+         * Dataflow service generated id for this stage.
+         *
+         * @var string
+         */
+        public $id;
+        protected $inputSourceType = StageSource::class;
+        protected $inputSourceDataType = 'array';
+        /**
+         * Type of transform this stage is executing.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Dataflow service generated name for this stage.
+         *
+         * @var string
+         */
+        public $name;
+        protected $outputSourceType = StageSource::class;
+        protected $outputSourceDataType = 'array';
+        /**
+         * Other stages that must complete before this stage can run.
+         *
+         * @var string[]
+         */
+        public $prerequisiteStage;
+        /**
+         * Collections produced and consumed by component transforms of this stage.
+         *
+         * @param ComponentSource[] $componentSource
+         */
+        public function setComponentSource($componentSource)
+        {
+        }
+        /**
+         * @return ComponentSource[]
+         */
+        public function getComponentSource()
+        {
+        }
+        /**
+         * Transforms that comprise this execution stage.
+         *
+         * @param ComponentTransform[] $componentTransform
+         */
+        public function setComponentTransform($componentTransform)
+        {
+        }
+        /**
+         * @return ComponentTransform[]
+         */
+        public function getComponentTransform()
+        {
+        }
+        /**
+         * Dataflow service generated id for this stage.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Input sources for this stage.
+         *
+         * @param StageSource[] $inputSource
+         */
+        public function setInputSource($inputSource)
+        {
+        }
+        /**
+         * @return StageSource[]
+         */
+        public function getInputSource()
+        {
+        }
+        /**
+         * Type of transform this stage is executing.
+         *
+         * Accepted values: UNKNOWN_KIND, PAR_DO_KIND, GROUP_BY_KEY_KIND,
+         * FLATTEN_KIND, READ_KIND, WRITE_KIND, CONSTANT_KIND, SINGLETON_KIND,
+         * SHUFFLE_KIND
+         *
+         * @param self::KIND_* $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return self::KIND_*
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Dataflow service generated name for this stage.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output sources for this stage.
+         *
+         * @param StageSource[] $outputSource
+         */
+        public function setOutputSource($outputSource)
+        {
+        }
+        /**
+         * @return StageSource[]
+         */
+        public function getOutputSource()
+        {
+        }
+        /**
+         * Other stages that must complete before this stage can run.
+         *
+         * @param string[] $prerequisiteStage
+         */
+        public function setPrerequisiteStage($prerequisiteStage)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPrerequisiteStage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ComponentSource[]
+     * Runtime class alias of \Google\Service\Dataflow\ExecutionStageSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComponentSource()
-    {
-    }
-    /**
-     * Transforms that comprise this execution stage.
-     *
-     * @param ComponentTransform[] $componentTransform
-     */
-    public function setComponentTransform($componentTransform)
-    {
-    }
-    /**
-     * @return ComponentTransform[]
-     */
-    public function getComponentTransform()
-    {
-    }
-    /**
-     * Dataflow service generated id for this stage.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Input sources for this stage.
-     *
-     * @param StageSource[] $inputSource
-     */
-    public function setInputSource($inputSource)
-    {
-    }
-    /**
-     * @return StageSource[]
-     */
-    public function getInputSource()
-    {
-    }
-    /**
-     * Type of transform this stage is executing.
-     *
-     * Accepted values: UNKNOWN_KIND, PAR_DO_KIND, GROUP_BY_KEY_KIND,
-     * FLATTEN_KIND, READ_KIND, WRITE_KIND, CONSTANT_KIND, SINGLETON_KIND,
-     * SHUFFLE_KIND
-     *
-     * @param self::KIND_* $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return self::KIND_*
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Dataflow service generated name for this stage.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output sources for this stage.
-     *
-     * @param StageSource[] $outputSource
-     */
-    public function setOutputSource($outputSource)
-    {
-    }
-    /**
-     * @return StageSource[]
-     */
-    public function getOutputSource()
-    {
-    }
-    /**
-     * Other stages that must complete before this stage can run.
-     *
-     * @param string[] $prerequisiteStage
-     */
-    public function setPrerequisiteStage($prerequisiteStage)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPrerequisiteStage()
+    class Google_Service_Dataflow_ExecutionStageSummary extends \Google\Service\Dataflow\ExecutionStageSummary
     {
     }
 }

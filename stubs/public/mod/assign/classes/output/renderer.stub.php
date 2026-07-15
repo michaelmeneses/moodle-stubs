@@ -29,6 +29,11 @@
  */
 namespace mod_assign\output;
 
+use assign_files;
+use html_writer;
+use mod_assign\output\grading_app;
+use portfolio_add_button;
+use stored_file;
 /**
  * A custom renderer class that extends the plugin_renderer_base and is used by the assign module.
  *

@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class EditGuaranteedOrderReadAccessorsResponse extends \Google\Collection
-{
-    protected $collection_key = 'readAdvertiserIds';
-    /**
-     * Whether all advertisers of read_write_partner_id have read access to the
-     * guaranteed order.
-     *
-     * @var bool
-     */
-    public $readAccessInherited;
-    /**
-     * The IDs of advertisers with read access to the guaranteed order.
-     *
-     * @var string[]
-     */
-    public $readAdvertiserIds;
-    /**
-     * Whether all advertisers of read_write_partner_id have read access to the
-     * guaranteed order.
-     *
-     * @param bool $readAccessInherited
-     */
-    public function setReadAccessInherited($readAccessInherited)
+namespace Google\Service\DisplayVideo {
+    class EditGuaranteedOrderReadAccessorsResponse extends \Google\Collection
     {
+        protected $collection_key = 'readAdvertiserIds';
+        /**
+         * Whether all advertisers of read_write_partner_id have read access to the
+         * guaranteed order.
+         *
+         * @var bool
+         */
+        public $readAccessInherited;
+        /**
+         * The IDs of advertisers with read access to the guaranteed order.
+         *
+         * @var string[]
+         */
+        public $readAdvertiserIds;
+        /**
+         * Whether all advertisers of read_write_partner_id have read access to the
+         * guaranteed order.
+         *
+         * @param bool $readAccessInherited
+         */
+        public function setReadAccessInherited($readAccessInherited)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReadAccessInherited()
+        {
+        }
+        /**
+         * The IDs of advertisers with read access to the guaranteed order.
+         *
+         * @param string[] $readAdvertiserIds
+         */
+        public function setReadAdvertiserIds($readAdvertiserIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getReadAdvertiserIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DisplayVideo\EditGuaranteedOrderReadAccessorsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReadAccessInherited()
-    {
-    }
-    /**
-     * The IDs of advertisers with read access to the guaranteed order.
-     *
-     * @param string[] $readAdvertiserIds
-     */
-    public function setReadAdvertiserIds($readAdvertiserIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getReadAdvertiserIds()
+    class Google_Service_DisplayVideo_EditGuaranteedOrderReadAccessorsResponse extends \Google\Service\DisplayVideo\EditGuaranteedOrderReadAccessorsResponse
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class FlexibleRuntimeSettings extends \Google\Model
-{
-    /**
-     * The operating system of the application runtime.
-     *
-     * @var string
-     */
-    public $operatingSystem;
-    /**
-     * The runtime version of an App Engine flexible application.
-     *
-     * @var string
-     */
-    public $runtimeVersion;
-    /**
-     * The operating system of the application runtime.
-     *
-     * @param string $operatingSystem
-     */
-    public function setOperatingSystem($operatingSystem)
+namespace Google\Service\Appengine {
+    class FlexibleRuntimeSettings extends \Google\Model
     {
+        /**
+         * The operating system of the application runtime.
+         *
+         * @var string
+         */
+        public $operatingSystem;
+        /**
+         * The runtime version of an App Engine flexible application.
+         *
+         * @var string
+         */
+        public $runtimeVersion;
+        /**
+         * The operating system of the application runtime.
+         *
+         * @param string $operatingSystem
+         */
+        public function setOperatingSystem($operatingSystem)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperatingSystem()
+        {
+        }
+        /**
+         * The runtime version of an App Engine flexible application.
+         *
+         * @param string $runtimeVersion
+         */
+        public function setRuntimeVersion($runtimeVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuntimeVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Appengine\FlexibleRuntimeSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperatingSystem()
-    {
-    }
-    /**
-     * The runtime version of an App Engine flexible application.
-     *
-     * @param string $runtimeVersion
-     */
-    public function setRuntimeVersion($runtimeVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuntimeVersion()
+    class Google_Service_Appengine_FlexibleRuntimeSettings extends \Google\Service\Appengine\FlexibleRuntimeSettings
     {
     }
 }

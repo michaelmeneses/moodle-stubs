@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class VideoTargeting extends \Google\Collection
-{
-    protected $collection_key = 'targetedPositionTypes';
-    /**
-     * A list of video positions to be excluded. When this field is populated, the
-     * targeted_position_types field must be empty.
-     *
-     * @var string[]
-     */
-    public $excludedPositionTypes;
-    /**
-     * A list of video positions to be included. When this field is populated, the
-     * excluded_position_types field must be empty.
-     *
-     * @var string[]
-     */
-    public $targetedPositionTypes;
-    /**
-     * A list of video positions to be excluded. When this field is populated, the
-     * targeted_position_types field must be empty.
-     *
-     * @param string[] $excludedPositionTypes
-     */
-    public function setExcludedPositionTypes($excludedPositionTypes)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class VideoTargeting extends \Google\Collection
     {
+        protected $collection_key = 'targetedPositionTypes';
+        /**
+         * A list of video positions to be excluded. When this field is populated, the
+         * targeted_position_types field must be empty.
+         *
+         * @var string[]
+         */
+        public $excludedPositionTypes;
+        /**
+         * A list of video positions to be included. When this field is populated, the
+         * excluded_position_types field must be empty.
+         *
+         * @var string[]
+         */
+        public $targetedPositionTypes;
+        /**
+         * A list of video positions to be excluded. When this field is populated, the
+         * targeted_position_types field must be empty.
+         *
+         * @param string[] $excludedPositionTypes
+         */
+        public function setExcludedPositionTypes($excludedPositionTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludedPositionTypes()
+        {
+        }
+        /**
+         * A list of video positions to be included. When this field is populated, the
+         * excluded_position_types field must be empty.
+         *
+         * @param string[] $targetedPositionTypes
+         */
+        public function setTargetedPositionTypes($targetedPositionTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTargetedPositionTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\VideoTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExcludedPositionTypes()
-    {
-    }
-    /**
-     * A list of video positions to be included. When this field is populated, the
-     * excluded_position_types field must be empty.
-     *
-     * @param string[] $targetedPositionTypes
-     */
-    public function setTargetedPositionTypes($targetedPositionTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTargetedPositionTypes()
+    class Google_Service_AuthorizedBuyersMarketplace_VideoTargeting extends \Google\Service\AuthorizedBuyersMarketplace\VideoTargeting
     {
     }
 }

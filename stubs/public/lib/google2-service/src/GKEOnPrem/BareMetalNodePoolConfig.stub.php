@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalNodePoolConfig extends \Google\Collection
-{
-    /**
-     * No operating system runtime selected.
-     */
-    public const OPERATING_SYSTEM_OPERATING_SYSTEM_UNSPECIFIED = 'OPERATING_SYSTEM_UNSPECIFIED';
-    /**
-     * Linux operating system.
-     */
-    public const OPERATING_SYSTEM_LINUX = 'LINUX';
-    protected $collection_key = 'taints';
-    protected $kubeletConfigType = BareMetalKubeletConfig::class;
-    protected $kubeletConfigDataType = '';
-    /**
-     * The labels assigned to nodes of this node pool. An object containing a list
-     * of key/value pairs. Example: { "name": "wrench", "mass": "1.3kg", "count":
-     * "3" }.
-     *
-     * @var string[]
-     */
-    public $labels;
-    protected $nodeConfigsType = BareMetalNodeConfig::class;
-    protected $nodeConfigsDataType = 'array';
-    /**
-     * Specifies the nodes operating system (default: LINUX).
-     *
-     * @var string
-     */
-    public $operatingSystem;
-    protected $taintsType = NodeTaint::class;
-    protected $taintsDataType = 'array';
-    /**
-     * The modifiable kubelet configurations for the bare metal machines.
-     *
-     * @param BareMetalKubeletConfig $kubeletConfig
-     */
-    public function setKubeletConfig(BareMetalKubeletConfig $kubeletConfig)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalNodePoolConfig extends \Google\Collection
     {
+        /**
+         * No operating system runtime selected.
+         */
+        public const OPERATING_SYSTEM_OPERATING_SYSTEM_UNSPECIFIED = 'OPERATING_SYSTEM_UNSPECIFIED';
+        /**
+         * Linux operating system.
+         */
+        public const OPERATING_SYSTEM_LINUX = 'LINUX';
+        protected $collection_key = 'taints';
+        protected $kubeletConfigType = BareMetalKubeletConfig::class;
+        protected $kubeletConfigDataType = '';
+        /**
+         * The labels assigned to nodes of this node pool. An object containing a list
+         * of key/value pairs. Example: { "name": "wrench", "mass": "1.3kg", "count":
+         * "3" }.
+         *
+         * @var string[]
+         */
+        public $labels;
+        protected $nodeConfigsType = BareMetalNodeConfig::class;
+        protected $nodeConfigsDataType = 'array';
+        /**
+         * Specifies the nodes operating system (default: LINUX).
+         *
+         * @var string
+         */
+        public $operatingSystem;
+        protected $taintsType = NodeTaint::class;
+        protected $taintsDataType = 'array';
+        /**
+         * The modifiable kubelet configurations for the bare metal machines.
+         *
+         * @param BareMetalKubeletConfig $kubeletConfig
+         */
+        public function setKubeletConfig(BareMetalKubeletConfig $kubeletConfig)
+        {
+        }
+        /**
+         * @return BareMetalKubeletConfig
+         */
+        public function getKubeletConfig()
+        {
+        }
+        /**
+         * The labels assigned to nodes of this node pool. An object containing a list
+         * of key/value pairs. Example: { "name": "wrench", "mass": "1.3kg", "count":
+         * "3" }.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Required. The list of machine addresses in the bare metal node pool.
+         *
+         * @param BareMetalNodeConfig[] $nodeConfigs
+         */
+        public function setNodeConfigs($nodeConfigs)
+        {
+        }
+        /**
+         * @return BareMetalNodeConfig[]
+         */
+        public function getNodeConfigs()
+        {
+        }
+        /**
+         * Specifies the nodes operating system (default: LINUX).
+         *
+         * Accepted values: OPERATING_SYSTEM_UNSPECIFIED, LINUX
+         *
+         * @param self::OPERATING_SYSTEM_* $operatingSystem
+         */
+        public function setOperatingSystem($operatingSystem)
+        {
+        }
+        /**
+         * @return self::OPERATING_SYSTEM_*
+         */
+        public function getOperatingSystem()
+        {
+        }
+        /**
+         * The initial taints assigned to nodes of this node pool.
+         *
+         * @param NodeTaint[] $taints
+         */
+        public function setTaints($taints)
+        {
+        }
+        /**
+         * @return NodeTaint[]
+         */
+        public function getTaints()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BareMetalKubeletConfig
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalNodePoolConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKubeletConfig()
-    {
-    }
-    /**
-     * The labels assigned to nodes of this node pool. An object containing a list
-     * of key/value pairs. Example: { "name": "wrench", "mass": "1.3kg", "count":
-     * "3" }.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Required. The list of machine addresses in the bare metal node pool.
-     *
-     * @param BareMetalNodeConfig[] $nodeConfigs
-     */
-    public function setNodeConfigs($nodeConfigs)
-    {
-    }
-    /**
-     * @return BareMetalNodeConfig[]
-     */
-    public function getNodeConfigs()
-    {
-    }
-    /**
-     * Specifies the nodes operating system (default: LINUX).
-     *
-     * Accepted values: OPERATING_SYSTEM_UNSPECIFIED, LINUX
-     *
-     * @param self::OPERATING_SYSTEM_* $operatingSystem
-     */
-    public function setOperatingSystem($operatingSystem)
-    {
-    }
-    /**
-     * @return self::OPERATING_SYSTEM_*
-     */
-    public function getOperatingSystem()
-    {
-    }
-    /**
-     * The initial taints assigned to nodes of this node pool.
-     *
-     * @param NodeTaint[] $taints
-     */
-    public function setTaints($taints)
-    {
-    }
-    /**
-     * @return NodeTaint[]
-     */
-    public function getTaints()
+    class Google_Service_GKEOnPrem_BareMetalNodePoolConfig extends \Google\Service\GKEOnPrem\BareMetalNodePoolConfig
     {
     }
 }

@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1CarouselCard extends \Google\Collection
-{
-    protected $collection_key = 'widgets';
-    protected $footerWidgetsType = GoogleAppsCardV1NestedWidget::class;
-    protected $footerWidgetsDataType = 'array';
-    protected $widgetsType = GoogleAppsCardV1NestedWidget::class;
-    protected $widgetsDataType = 'array';
-    /**
-     * A list of widgets displayed at the bottom of the carousel card. The widgets
-     * are displayed in the order that they are specified.
-     *
-     * @param GoogleAppsCardV1NestedWidget[] $footerWidgets
-     */
-    public function setFooterWidgets($footerWidgets)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1CarouselCard extends \Google\Collection
     {
+        protected $collection_key = 'widgets';
+        protected $footerWidgetsType = GoogleAppsCardV1NestedWidget::class;
+        protected $footerWidgetsDataType = 'array';
+        protected $widgetsType = GoogleAppsCardV1NestedWidget::class;
+        protected $widgetsDataType = 'array';
+        /**
+         * A list of widgets displayed at the bottom of the carousel card. The widgets
+         * are displayed in the order that they are specified.
+         *
+         * @param GoogleAppsCardV1NestedWidget[] $footerWidgets
+         */
+        public function setFooterWidgets($footerWidgets)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1NestedWidget[]
+         */
+        public function getFooterWidgets()
+        {
+        }
+        /**
+         * A list of widgets displayed in the carousel card. The widgets are displayed
+         * in the order that they are specified.
+         *
+         * @param GoogleAppsCardV1NestedWidget[] $widgets
+         */
+        public function setWidgets($widgets)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1NestedWidget[]
+         */
+        public function getWidgets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsCardV1NestedWidget[]
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1CarouselCard registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFooterWidgets()
-    {
-    }
-    /**
-     * A list of widgets displayed in the carousel card. The widgets are displayed
-     * in the order that they are specified.
-     *
-     * @param GoogleAppsCardV1NestedWidget[] $widgets
-     */
-    public function setWidgets($widgets)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1NestedWidget[]
-     */
-    public function getWidgets()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1CarouselCard extends \Google\Service\HangoutsChat\GoogleAppsCardV1CarouselCard
     {
     }
 }

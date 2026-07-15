@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDomains;
-
-class PrimaryBackupPolicy extends \Google\Model
-{
-    protected $backupGeoTargetsType = GeoPolicy::class;
-    protected $backupGeoTargetsDataType = '';
-    protected $primaryTargetsType = HealthCheckTargets::class;
-    protected $primaryTargetsDataType = '';
-    /**
-     * When serving state is `PRIMARY`, this field provides the option of sending
-     * a small percentage of the traffic to the backup targets.
-     *
-     * @var 
-     */
-    public $trickleTraffic;
-    /**
-     * Backup targets provide a regional failover policy for the otherwise global
-     * primary targets. If serving state is set to `BACKUP`, this policy
-     * essentially becomes a geo routing policy.
-     *
-     * @param GeoPolicy $backupGeoTargets
-     */
-    public function setBackupGeoTargets(GeoPolicy $backupGeoTargets)
+namespace Google\Service\CloudDomains {
+    class PrimaryBackupPolicy extends \Google\Model
     {
+        protected $backupGeoTargetsType = GeoPolicy::class;
+        protected $backupGeoTargetsDataType = '';
+        protected $primaryTargetsType = HealthCheckTargets::class;
+        protected $primaryTargetsDataType = '';
+        /**
+         * When serving state is `PRIMARY`, this field provides the option of sending
+         * a small percentage of the traffic to the backup targets.
+         *
+         * @var 
+         */
+        public $trickleTraffic;
+        /**
+         * Backup targets provide a regional failover policy for the otherwise global
+         * primary targets. If serving state is set to `BACKUP`, this policy
+         * essentially becomes a geo routing policy.
+         *
+         * @param GeoPolicy $backupGeoTargets
+         */
+        public function setBackupGeoTargets(GeoPolicy $backupGeoTargets)
+        {
+        }
+        /**
+         * @return GeoPolicy
+         */
+        public function getBackupGeoTargets()
+        {
+        }
+        /**
+         * Endpoints that are health checked before making the routing decision.
+         * Unhealthy endpoints are omitted from the results. If all endpoints are
+         * unhealthy, we serve a response based on the `backup_geo_targets`.
+         *
+         * @param HealthCheckTargets $primaryTargets
+         */
+        public function setPrimaryTargets(HealthCheckTargets $primaryTargets)
+        {
+        }
+        /**
+         * @return HealthCheckTargets
+         */
+        public function getPrimaryTargets()
+        {
+        }
+        public function setTrickleTraffic($trickleTraffic)
+        {
+        }
+        public function getTrickleTraffic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GeoPolicy
+     * Runtime class alias of \Google\Service\CloudDomains\PrimaryBackupPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupGeoTargets()
-    {
-    }
-    /**
-     * Endpoints that are health checked before making the routing decision.
-     * Unhealthy endpoints are omitted from the results. If all endpoints are
-     * unhealthy, we serve a response based on the `backup_geo_targets`.
-     *
-     * @param HealthCheckTargets $primaryTargets
-     */
-    public function setPrimaryTargets(HealthCheckTargets $primaryTargets)
-    {
-    }
-    /**
-     * @return HealthCheckTargets
-     */
-    public function getPrimaryTargets()
-    {
-    }
-    public function setTrickleTraffic($trickleTraffic)
-    {
-    }
-    public function getTrickleTraffic()
+    class Google_Service_CloudDomains_PrimaryBackupPolicy extends \Google\Service\CloudDomains\PrimaryBackupPolicy
     {
     }
 }

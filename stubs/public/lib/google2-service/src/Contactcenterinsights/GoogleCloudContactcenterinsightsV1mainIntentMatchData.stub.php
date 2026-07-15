@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainIntentMatchData extends \Google\Model
-{
-    /**
-     * The id of the matched intent. Can be used to retrieve the corresponding
-     * intent information.
-     *
-     * @var string
-     */
-    public $intentUniqueId;
-    /**
-     * The id of the matched intent. Can be used to retrieve the corresponding
-     * intent information.
-     *
-     * @param string $intentUniqueId
-     */
-    public function setIntentUniqueId($intentUniqueId)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainIntentMatchData extends \Google\Model
     {
+        /**
+         * The id of the matched intent. Can be used to retrieve the corresponding
+         * intent information.
+         *
+         * @var string
+         */
+        public $intentUniqueId;
+        /**
+         * The id of the matched intent. Can be used to retrieve the corresponding
+         * intent information.
+         *
+         * @param string $intentUniqueId
+         */
+        public function setIntentUniqueId($intentUniqueId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntentUniqueId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainIntentMatchData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntentUniqueId()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainIntentMatchData extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainIntentMatchData
     {
     }
 }

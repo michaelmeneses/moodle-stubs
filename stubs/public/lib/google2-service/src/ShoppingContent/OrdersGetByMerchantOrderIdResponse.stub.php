@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrdersGetByMerchantOrderIdResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $orderType = Order::class;
-    protected $orderDataType = '';
-    /**
-     * @param string
-     */
-    public function setKind($kind)
+namespace Google\Service\ShoppingContent {
+    class OrdersGetByMerchantOrderIdResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $orderType = Order::class;
+        protected $orderDataType = '';
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param Order
+         */
+        public function setOrder(Order $order)
+        {
+        }
+        /**
+         * @return Order
+         */
+        public function getOrder()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrdersGetByMerchantOrderIdResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * @param Order
-     */
-    public function setOrder(Order $order)
-    {
-    }
-    /**
-     * @return Order
-     */
-    public function getOrder()
+    class Google_Service_ShoppingContent_OrdersGetByMerchantOrderIdResponse extends \Google\Service\ShoppingContent\OrdersGetByMerchantOrderIdResponse
     {
     }
 }

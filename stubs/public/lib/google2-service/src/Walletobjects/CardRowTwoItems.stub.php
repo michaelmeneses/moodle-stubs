@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class CardRowTwoItems extends \Google\Model
-{
-    protected $endItemType = TemplateItem::class;
-    protected $endItemDataType = '';
-    protected $startItemType = TemplateItem::class;
-    protected $startItemDataType = '';
-    /**
-     * The item to be displayed at the end of the row. This item will be aligned
-     * to the right.
-     *
-     * @param TemplateItem $endItem
-     */
-    public function setEndItem(TemplateItem $endItem)
+namespace Google\Service\Walletobjects {
+    class CardRowTwoItems extends \Google\Model
     {
+        protected $endItemType = TemplateItem::class;
+        protected $endItemDataType = '';
+        protected $startItemType = TemplateItem::class;
+        protected $startItemDataType = '';
+        /**
+         * The item to be displayed at the end of the row. This item will be aligned
+         * to the right.
+         *
+         * @param TemplateItem $endItem
+         */
+        public function setEndItem(TemplateItem $endItem)
+        {
+        }
+        /**
+         * @return TemplateItem
+         */
+        public function getEndItem()
+        {
+        }
+        /**
+         * The item to be displayed at the start of the row. This item will be aligned
+         * to the left.
+         *
+         * @param TemplateItem $startItem
+         */
+        public function setStartItem(TemplateItem $startItem)
+        {
+        }
+        /**
+         * @return TemplateItem
+         */
+        public function getStartItem()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TemplateItem
+     * Runtime class alias of \Google\Service\Walletobjects\CardRowTwoItems registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndItem()
-    {
-    }
-    /**
-     * The item to be displayed at the start of the row. This item will be aligned
-     * to the left.
-     *
-     * @param TemplateItem $startItem
-     */
-    public function setStartItem(TemplateItem $startItem)
-    {
-    }
-    /**
-     * @return TemplateItem
-     */
-    public function getStartItem()
+    class Google_Service_Walletobjects_CardRowTwoItems extends \Google\Service\Walletobjects\CardRowTwoItems
     {
     }
 }

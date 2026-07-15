@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class OSPolicyResourcePackageResourceRPM extends \Google\Model
-{
-    /**
-     * Whether dependencies should also be installed. - install when false: `rpm
-     * --upgrade --replacepkgs package.rpm` - install when true: `yum -y install
-     * package.rpm` or `zypper -y install package.rpm`
-     *
-     * @var bool
-     */
-    public $pullDeps;
-    protected $sourceType = OSPolicyResourceFile::class;
-    protected $sourceDataType = '';
-    /**
-     * Whether dependencies should also be installed. - install when false: `rpm
-     * --upgrade --replacepkgs package.rpm` - install when true: `yum -y install
-     * package.rpm` or `zypper -y install package.rpm`
-     *
-     * @param bool $pullDeps
-     */
-    public function setPullDeps($pullDeps)
+namespace Google\Service\OSConfig {
+    class OSPolicyResourcePackageResourceRPM extends \Google\Model
     {
+        /**
+         * Whether dependencies should also be installed. - install when false: `rpm
+         * --upgrade --replacepkgs package.rpm` - install when true: `yum -y install
+         * package.rpm` or `zypper -y install package.rpm`
+         *
+         * @var bool
+         */
+        public $pullDeps;
+        protected $sourceType = OSPolicyResourceFile::class;
+        protected $sourceDataType = '';
+        /**
+         * Whether dependencies should also be installed. - install when false: `rpm
+         * --upgrade --replacepkgs package.rpm` - install when true: `yum -y install
+         * package.rpm` or `zypper -y install package.rpm`
+         *
+         * @param bool $pullDeps
+         */
+        public function setPullDeps($pullDeps)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPullDeps()
+        {
+        }
+        /**
+         * Required. An rpm package.
+         *
+         * @param OSPolicyResourceFile $source
+         */
+        public function setSource(OSPolicyResourceFile $source)
+        {
+        }
+        /**
+         * @return OSPolicyResourceFile
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\OSConfig\OSPolicyResourcePackageResourceRPM registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPullDeps()
-    {
-    }
-    /**
-     * Required. An rpm package.
-     *
-     * @param OSPolicyResourceFile $source
-     */
-    public function setSource(OSPolicyResourceFile $source)
-    {
-    }
-    /**
-     * @return OSPolicyResourceFile
-     */
-    public function getSource()
+    class Google_Service_OSConfig_OSPolicyResourcePackageResourceRPM extends \Google\Service\OSConfig\OSPolicyResourcePackageResourceRPM
     {
     }
 }

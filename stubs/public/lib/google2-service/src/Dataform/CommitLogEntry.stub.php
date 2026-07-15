@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class CommitLogEntry extends \Google\Model
-{
-    protected $authorType = CommitAuthor::class;
-    protected $authorDataType = '';
-    /**
-     * The commit message for this commit log entry.
-     *
-     * @var string
-     */
-    public $commitMessage;
-    /**
-     * The commit SHA for this commit log entry.
-     *
-     * @var string
-     */
-    public $commitSha;
-    /**
-     * Commit timestamp.
-     *
-     * @var string
-     */
-    public $commitTime;
-    /**
-     * The commit author for this commit log entry.
-     *
-     * @param CommitAuthor $author
-     */
-    public function setAuthor(CommitAuthor $author)
+namespace Google\Service\Dataform {
+    class CommitLogEntry extends \Google\Model
     {
+        protected $authorType = CommitAuthor::class;
+        protected $authorDataType = '';
+        /**
+         * The commit message for this commit log entry.
+         *
+         * @var string
+         */
+        public $commitMessage;
+        /**
+         * The commit SHA for this commit log entry.
+         *
+         * @var string
+         */
+        public $commitSha;
+        /**
+         * Commit timestamp.
+         *
+         * @var string
+         */
+        public $commitTime;
+        /**
+         * The commit author for this commit log entry.
+         *
+         * @param CommitAuthor $author
+         */
+        public function setAuthor(CommitAuthor $author)
+        {
+        }
+        /**
+         * @return CommitAuthor
+         */
+        public function getAuthor()
+        {
+        }
+        /**
+         * The commit message for this commit log entry.
+         *
+         * @param string $commitMessage
+         */
+        public function setCommitMessage($commitMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommitMessage()
+        {
+        }
+        /**
+         * The commit SHA for this commit log entry.
+         *
+         * @param string $commitSha
+         */
+        public function setCommitSha($commitSha)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommitSha()
+        {
+        }
+        /**
+         * Commit timestamp.
+         *
+         * @param string $commitTime
+         */
+        public function setCommitTime($commitTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommitTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CommitAuthor
+     * Runtime class alias of \Google\Service\Dataform\CommitLogEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthor()
-    {
-    }
-    /**
-     * The commit message for this commit log entry.
-     *
-     * @param string $commitMessage
-     */
-    public function setCommitMessage($commitMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCommitMessage()
-    {
-    }
-    /**
-     * The commit SHA for this commit log entry.
-     *
-     * @param string $commitSha
-     */
-    public function setCommitSha($commitSha)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCommitSha()
-    {
-    }
-    /**
-     * Commit timestamp.
-     *
-     * @param string $commitTime
-     */
-    public function setCommitTime($commitTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCommitTime()
+    class Google_Service_Dataform_CommitLogEntry extends \Google\Service\Dataform\CommitLogEntry
     {
     }
 }

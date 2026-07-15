@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class ChromeOsDeviceActiveTimeRanges extends \Google\Model
-{
-    /**
-     * Duration of usage in milliseconds.
-     *
-     * @var int
-     */
-    public $activeTime;
-    /**
-     * Date of usage
-     *
-     * @var string
-     */
-    public $date;
-    /**
-     * Duration of usage in milliseconds.
-     *
-     * @param int $activeTime
-     */
-    public function setActiveTime($activeTime)
+namespace Google\Service\Directory {
+    class ChromeOsDeviceActiveTimeRanges extends \Google\Model
     {
+        /**
+         * Duration of usage in milliseconds.
+         *
+         * @var int
+         */
+        public $activeTime;
+        /**
+         * Date of usage
+         *
+         * @var string
+         */
+        public $date;
+        /**
+         * Duration of usage in milliseconds.
+         *
+         * @param int $activeTime
+         */
+        public function setActiveTime($activeTime)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getActiveTime()
+        {
+        }
+        /**
+         * Date of usage
+         *
+         * @param string $date
+         */
+        public function setDate($date)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Directory\ChromeOsDeviceActiveTimeRanges registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActiveTime()
-    {
-    }
-    /**
-     * Date of usage
-     *
-     * @param string $date
-     */
-    public function setDate($date)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDate()
+    class Google_Service_Directory_ChromeOsDeviceActiveTimeRanges extends \Google\Service\Directory\ChromeOsDeviceActiveTimeRanges
     {
     }
 }

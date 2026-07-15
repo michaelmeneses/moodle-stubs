@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class Table extends \Google\Collection
-{
-    protected $collection_key = 'columnProperties';
-    protected $columnPropertiesType = TableColumnProperties::class;
-    protected $columnPropertiesDataType = 'array';
-    /**
-     * The table name. This is unique to all tables in the same spreadsheet.
-     *
-     * @var string
-     */
-    public $name;
-    protected $rangeType = GridRange::class;
-    protected $rangeDataType = '';
-    protected $rowsPropertiesType = TableRowsProperties::class;
-    protected $rowsPropertiesDataType = '';
-    /**
-     * The id of the table.
-     *
-     * @var string
-     */
-    public $tableId;
-    /**
-     * The table column properties.
-     *
-     * @param TableColumnProperties[] $columnProperties
-     */
-    public function setColumnProperties($columnProperties)
+namespace Google\Service\Sheets {
+    class Table extends \Google\Collection
     {
+        protected $collection_key = 'columnProperties';
+        protected $columnPropertiesType = TableColumnProperties::class;
+        protected $columnPropertiesDataType = 'array';
+        /**
+         * The table name. This is unique to all tables in the same spreadsheet.
+         *
+         * @var string
+         */
+        public $name;
+        protected $rangeType = GridRange::class;
+        protected $rangeDataType = '';
+        protected $rowsPropertiesType = TableRowsProperties::class;
+        protected $rowsPropertiesDataType = '';
+        /**
+         * The id of the table.
+         *
+         * @var string
+         */
+        public $tableId;
+        /**
+         * The table column properties.
+         *
+         * @param TableColumnProperties[] $columnProperties
+         */
+        public function setColumnProperties($columnProperties)
+        {
+        }
+        /**
+         * @return TableColumnProperties[]
+         */
+        public function getColumnProperties()
+        {
+        }
+        /**
+         * The table name. This is unique to all tables in the same spreadsheet.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The table range.
+         *
+         * @param GridRange $range
+         */
+        public function setRange(GridRange $range)
+        {
+        }
+        /**
+         * @return GridRange
+         */
+        public function getRange()
+        {
+        }
+        /**
+         * The table rows properties.
+         *
+         * @param TableRowsProperties $rowsProperties
+         */
+        public function setRowsProperties(TableRowsProperties $rowsProperties)
+        {
+        }
+        /**
+         * @return TableRowsProperties
+         */
+        public function getRowsProperties()
+        {
+        }
+        /**
+         * The id of the table.
+         *
+         * @param string $tableId
+         */
+        public function setTableId($tableId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TableColumnProperties[]
+     * Runtime class alias of \Google\Service\Sheets\Table registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnProperties()
-    {
-    }
-    /**
-     * The table name. This is unique to all tables in the same spreadsheet.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The table range.
-     *
-     * @param GridRange $range
-     */
-    public function setRange(GridRange $range)
-    {
-    }
-    /**
-     * @return GridRange
-     */
-    public function getRange()
-    {
-    }
-    /**
-     * The table rows properties.
-     *
-     * @param TableRowsProperties $rowsProperties
-     */
-    public function setRowsProperties(TableRowsProperties $rowsProperties)
-    {
-    }
-    /**
-     * @return TableRowsProperties
-     */
-    public function getRowsProperties()
-    {
-    }
-    /**
-     * The id of the table.
-     *
-     * @param string $tableId
-     */
-    public function setTableId($tableId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableId()
+    class Google_Service_Sheets_Table extends \Google\Service\Sheets\Table
     {
     }
 }

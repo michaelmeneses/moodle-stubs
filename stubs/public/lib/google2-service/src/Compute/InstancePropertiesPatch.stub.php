@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstancePropertiesPatch extends \Google\Model
-{
-    /**
-     * The label key-value pairs that you want to patch onto the instance.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * The metadata key-value pairs that you want to patch onto the instance. For
-     * more information, see Project and instance metadata.
-     *
-     * @var string[]
-     */
-    public $metadata;
-    /**
-     * The label key-value pairs that you want to patch onto the instance.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
+namespace Google\Service\Compute {
+    class InstancePropertiesPatch extends \Google\Model
     {
+        /**
+         * The label key-value pairs that you want to patch onto the instance.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * The metadata key-value pairs that you want to patch onto the instance. For
+         * more information, see Project and instance metadata.
+         *
+         * @var string[]
+         */
+        public $metadata;
+        /**
+         * The label key-value pairs that you want to patch onto the instance.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * The metadata key-value pairs that you want to patch onto the instance. For
+         * more information, see Project and instance metadata.
+         *
+         * @param string[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\InstancePropertiesPatch registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabels()
-    {
-    }
-    /**
-     * The metadata key-value pairs that you want to patch onto the instance. For
-     * more information, see Project and instance metadata.
-     *
-     * @param string[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetadata()
+    class Google_Service_Compute_InstancePropertiesPatch extends \Google\Service\Compute\InstancePropertiesPatch
     {
     }
 }

@@ -21,160 +21,169 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class GeolayerdataGeo extends \Google\Collection
-{
-    protected $collection_key = 'boundary';
-    /**
-     * The boundary of the location as a set of loops containing pairs of
-     * latitude, longitude coordinates.
-     *
-     * @var string[]
-     */
-    public $boundary;
-    /**
-     * The cache policy active for this data. EX: UNRESTRICTED, RESTRICTED, NEVER
-     *
-     * @var string
-     */
-    public $cachePolicy;
-    /**
-     * The country code of the location.
-     *
-     * @var string
-     */
-    public $countryCode;
-    /**
-     * The latitude of the location.
-     *
-     * @var 
-     */
-    public $latitude;
-    /**
-     * The longitude of the location.
-     *
-     * @var 
-     */
-    public $longitude;
-    /**
-     * The type of map that should be used for this location. EX: HYBRID, ROADMAP,
-     * SATELLITE, TERRAIN
-     *
-     * @var string
-     */
-    public $mapType;
-    protected $viewportType = GeolayerdataGeoViewport::class;
-    protected $viewportDataType = '';
-    /**
-     * The Zoom level to use for the map. Zoom levels between 0 (the lowest zoom
-     * level, in which the entire world can be seen on one map) to 21+ (down to
-     * individual buildings). See: https:
-     * //developers.google.com/maps/documentation/staticmaps/#Zoomlevels
-     *
-     * @var int
-     */
-    public $zoom;
-    /**
-     * The boundary of the location as a set of loops containing pairs of
-     * latitude, longitude coordinates.
-     *
-     * @param string[] $boundary
-     */
-    public function setBoundary($boundary)
+namespace Google\Service\Books {
+    class GeolayerdataGeo extends \Google\Collection
     {
+        protected $collection_key = 'boundary';
+        /**
+         * The boundary of the location as a set of loops containing pairs of
+         * latitude, longitude coordinates.
+         *
+         * @var string[]
+         */
+        public $boundary;
+        /**
+         * The cache policy active for this data. EX: UNRESTRICTED, RESTRICTED, NEVER
+         *
+         * @var string
+         */
+        public $cachePolicy;
+        /**
+         * The country code of the location.
+         *
+         * @var string
+         */
+        public $countryCode;
+        /**
+         * The latitude of the location.
+         *
+         * @var 
+         */
+        public $latitude;
+        /**
+         * The longitude of the location.
+         *
+         * @var 
+         */
+        public $longitude;
+        /**
+         * The type of map that should be used for this location. EX: HYBRID, ROADMAP,
+         * SATELLITE, TERRAIN
+         *
+         * @var string
+         */
+        public $mapType;
+        protected $viewportType = GeolayerdataGeoViewport::class;
+        protected $viewportDataType = '';
+        /**
+         * The Zoom level to use for the map. Zoom levels between 0 (the lowest zoom
+         * level, in which the entire world can be seen on one map) to 21+ (down to
+         * individual buildings). See: https:
+         * //developers.google.com/maps/documentation/staticmaps/#Zoomlevels
+         *
+         * @var int
+         */
+        public $zoom;
+        /**
+         * The boundary of the location as a set of loops containing pairs of
+         * latitude, longitude coordinates.
+         *
+         * @param string[] $boundary
+         */
+        public function setBoundary($boundary)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBoundary()
+        {
+        }
+        /**
+         * The cache policy active for this data. EX: UNRESTRICTED, RESTRICTED, NEVER
+         *
+         * @param string $cachePolicy
+         */
+        public function setCachePolicy($cachePolicy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCachePolicy()
+        {
+        }
+        /**
+         * The country code of the location.
+         *
+         * @param string $countryCode
+         */
+        public function setCountryCode($countryCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountryCode()
+        {
+        }
+        public function setLatitude($latitude)
+        {
+        }
+        public function getLatitude()
+        {
+        }
+        public function setLongitude($longitude)
+        {
+        }
+        public function getLongitude()
+        {
+        }
+        /**
+         * The type of map that should be used for this location. EX: HYBRID, ROADMAP,
+         * SATELLITE, TERRAIN
+         *
+         * @param string $mapType
+         */
+        public function setMapType($mapType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMapType()
+        {
+        }
+        /**
+         * The viewport for showing this location. This is a latitude, longitude
+         * rectangle.
+         *
+         * @param GeolayerdataGeoViewport $viewport
+         */
+        public function setViewport(GeolayerdataGeoViewport $viewport)
+        {
+        }
+        /**
+         * @return GeolayerdataGeoViewport
+         */
+        public function getViewport()
+        {
+        }
+        /**
+         * The Zoom level to use for the map. Zoom levels between 0 (the lowest zoom
+         * level, in which the entire world can be seen on one map) to 21+ (down to
+         * individual buildings). See: https:
+         * //developers.google.com/maps/documentation/staticmaps/#Zoomlevels
+         *
+         * @param int $zoom
+         */
+        public function setZoom($zoom)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getZoom()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Books\GeolayerdataGeo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoundary()
-    {
-    }
-    /**
-     * The cache policy active for this data. EX: UNRESTRICTED, RESTRICTED, NEVER
-     *
-     * @param string $cachePolicy
-     */
-    public function setCachePolicy($cachePolicy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCachePolicy()
-    {
-    }
-    /**
-     * The country code of the location.
-     *
-     * @param string $countryCode
-     */
-    public function setCountryCode($countryCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCountryCode()
-    {
-    }
-    public function setLatitude($latitude)
-    {
-    }
-    public function getLatitude()
-    {
-    }
-    public function setLongitude($longitude)
-    {
-    }
-    public function getLongitude()
-    {
-    }
-    /**
-     * The type of map that should be used for this location. EX: HYBRID, ROADMAP,
-     * SATELLITE, TERRAIN
-     *
-     * @param string $mapType
-     */
-    public function setMapType($mapType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMapType()
-    {
-    }
-    /**
-     * The viewport for showing this location. This is a latitude, longitude
-     * rectangle.
-     *
-     * @param GeolayerdataGeoViewport $viewport
-     */
-    public function setViewport(GeolayerdataGeoViewport $viewport)
-    {
-    }
-    /**
-     * @return GeolayerdataGeoViewport
-     */
-    public function getViewport()
-    {
-    }
-    /**
-     * The Zoom level to use for the map. Zoom levels between 0 (the lowest zoom
-     * level, in which the entire world can be seen on one map) to 21+ (down to
-     * individual buildings). See: https:
-     * //developers.google.com/maps/documentation/staticmaps/#Zoomlevels
-     *
-     * @param int $zoom
-     */
-    public function setZoom($zoom)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getZoom()
+    class Google_Service_Books_GeolayerdataGeo extends \Google\Service\Books\GeolayerdataGeo
     {
     }
 }

@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class ResultStorage extends \Google\Model
-{
-    protected $googleCloudStorageType = GoogleCloudStorage::class;
-    protected $googleCloudStorageDataType = '';
-    /**
-     * Output only. URL to the results in the Firebase Web Console.
-     *
-     * @var string
-     */
-    public $resultsUrl;
-    protected $toolResultsExecutionType = ToolResultsExecution::class;
-    protected $toolResultsExecutionDataType = '';
-    protected $toolResultsHistoryType = ToolResultsHistory::class;
-    protected $toolResultsHistoryDataType = '';
-    /**
-     * Required.
-     *
-     * @param GoogleCloudStorage $googleCloudStorage
-     */
-    public function setGoogleCloudStorage(GoogleCloudStorage $googleCloudStorage)
+namespace Google\Service\Testing {
+    class ResultStorage extends \Google\Model
     {
+        protected $googleCloudStorageType = GoogleCloudStorage::class;
+        protected $googleCloudStorageDataType = '';
+        /**
+         * Output only. URL to the results in the Firebase Web Console.
+         *
+         * @var string
+         */
+        public $resultsUrl;
+        protected $toolResultsExecutionType = ToolResultsExecution::class;
+        protected $toolResultsExecutionDataType = '';
+        protected $toolResultsHistoryType = ToolResultsHistory::class;
+        protected $toolResultsHistoryDataType = '';
+        /**
+         * Required.
+         *
+         * @param GoogleCloudStorage $googleCloudStorage
+         */
+        public function setGoogleCloudStorage(GoogleCloudStorage $googleCloudStorage)
+        {
+        }
+        /**
+         * @return GoogleCloudStorage
+         */
+        public function getGoogleCloudStorage()
+        {
+        }
+        /**
+         * Output only. URL to the results in the Firebase Web Console.
+         *
+         * @param string $resultsUrl
+         */
+        public function setResultsUrl($resultsUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultsUrl()
+        {
+        }
+        /**
+         * Output only. The tool results execution that results are written to.
+         *
+         * @param ToolResultsExecution $toolResultsExecution
+         */
+        public function setToolResultsExecution(ToolResultsExecution $toolResultsExecution)
+        {
+        }
+        /**
+         * @return ToolResultsExecution
+         */
+        public function getToolResultsExecution()
+        {
+        }
+        /**
+         * The tool results history that contains the tool results execution that
+         * results are written to. If not provided, the service will choose an
+         * appropriate value.
+         *
+         * @param ToolResultsHistory $toolResultsHistory
+         */
+        public function setToolResultsHistory(ToolResultsHistory $toolResultsHistory)
+        {
+        }
+        /**
+         * @return ToolResultsHistory
+         */
+        public function getToolResultsHistory()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudStorage
+     * Runtime class alias of \Google\Service\Testing\ResultStorage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGoogleCloudStorage()
-    {
-    }
-    /**
-     * Output only. URL to the results in the Firebase Web Console.
-     *
-     * @param string $resultsUrl
-     */
-    public function setResultsUrl($resultsUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResultsUrl()
-    {
-    }
-    /**
-     * Output only. The tool results execution that results are written to.
-     *
-     * @param ToolResultsExecution $toolResultsExecution
-     */
-    public function setToolResultsExecution(ToolResultsExecution $toolResultsExecution)
-    {
-    }
-    /**
-     * @return ToolResultsExecution
-     */
-    public function getToolResultsExecution()
-    {
-    }
-    /**
-     * The tool results history that contains the tool results execution that
-     * results are written to. If not provided, the service will choose an
-     * appropriate value.
-     *
-     * @param ToolResultsHistory $toolResultsHistory
-     */
-    public function setToolResultsHistory(ToolResultsHistory $toolResultsHistory)
-    {
-    }
-    /**
-     * @return ToolResultsHistory
-     */
-    public function getToolResultsHistory()
+    class Google_Service_Testing_ResultStorage extends \Google\Service\Testing\ResultStorage
     {
     }
 }

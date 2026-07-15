@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script;
-
-class DeploymentConfig extends \Google\Model
-{
-    /**
-     * The description for this deployment.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The manifest file name for this deployment.
-     *
-     * @var string
-     */
-    public $manifestFileName;
-    /**
-     * The script project's Drive ID.
-     *
-     * @var string
-     */
-    public $scriptId;
-    /**
-     * The version number on which this deployment is based.
-     *
-     * @var int
-     */
-    public $versionNumber;
-    /**
-     * The description for this deployment.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Script {
+    class DeploymentConfig extends \Google\Model
     {
+        /**
+         * The description for this deployment.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The manifest file name for this deployment.
+         *
+         * @var string
+         */
+        public $manifestFileName;
+        /**
+         * The script project's Drive ID.
+         *
+         * @var string
+         */
+        public $scriptId;
+        /**
+         * The version number on which this deployment is based.
+         *
+         * @var int
+         */
+        public $versionNumber;
+        /**
+         * The description for this deployment.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The manifest file name for this deployment.
+         *
+         * @param string $manifestFileName
+         */
+        public function setManifestFileName($manifestFileName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getManifestFileName()
+        {
+        }
+        /**
+         * The script project's Drive ID.
+         *
+         * @param string $scriptId
+         */
+        public function setScriptId($scriptId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScriptId()
+        {
+        }
+        /**
+         * The version number on which this deployment is based.
+         *
+         * @param int $versionNumber
+         */
+        public function setVersionNumber($versionNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVersionNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Script\DeploymentConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The manifest file name for this deployment.
-     *
-     * @param string $manifestFileName
-     */
-    public function setManifestFileName($manifestFileName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getManifestFileName()
-    {
-    }
-    /**
-     * The script project's Drive ID.
-     *
-     * @param string $scriptId
-     */
-    public function setScriptId($scriptId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScriptId()
-    {
-    }
-    /**
-     * The version number on which this deployment is based.
-     *
-     * @param int $versionNumber
-     */
-    public function setVersionNumber($versionNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVersionNumber()
+    class Google_Service_Script_DeploymentConfig extends \Google\Service\Script\DeploymentConfig
     {
     }
 }

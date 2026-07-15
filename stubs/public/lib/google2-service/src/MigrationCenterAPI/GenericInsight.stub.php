@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class GenericInsight extends \Google\Collection
-{
-    protected $collection_key = 'additionalInformation';
-    /**
-     * Output only. Additional information about the insight, each entry can be a
-     * logical entry and must make sense if it is displayed with line breaks
-     * between each entry. Text can contain md style links.
-     *
-     * @var string[]
-     */
-    public $additionalInformation;
-    /**
-     * Output only. In case message_code is not yet known by the client
-     * default_message will be the message to be used instead.
-     *
-     * @var string
-     */
-    public $defaultMessage;
-    /**
-     * Output only. Represents a globally unique message id for this insight, can
-     * be used for localization purposes, in case message_code is not yet known by
-     * the client use default_message instead.
-     *
-     * @var string
-     */
-    public $messageId;
-    /**
-     * Output only. Additional information about the insight, each entry can be a
-     * logical entry and must make sense if it is displayed with line breaks
-     * between each entry. Text can contain md style links.
-     *
-     * @param string[] $additionalInformation
-     */
-    public function setAdditionalInformation($additionalInformation)
+namespace Google\Service\MigrationCenterAPI {
+    class GenericInsight extends \Google\Collection
     {
+        protected $collection_key = 'additionalInformation';
+        /**
+         * Output only. Additional information about the insight, each entry can be a
+         * logical entry and must make sense if it is displayed with line breaks
+         * between each entry. Text can contain md style links.
+         *
+         * @var string[]
+         */
+        public $additionalInformation;
+        /**
+         * Output only. In case message_code is not yet known by the client
+         * default_message will be the message to be used instead.
+         *
+         * @var string
+         */
+        public $defaultMessage;
+        /**
+         * Output only. Represents a globally unique message id for this insight, can
+         * be used for localization purposes, in case message_code is not yet known by
+         * the client use default_message instead.
+         *
+         * @var string
+         */
+        public $messageId;
+        /**
+         * Output only. Additional information about the insight, each entry can be a
+         * logical entry and must make sense if it is displayed with line breaks
+         * between each entry. Text can contain md style links.
+         *
+         * @param string[] $additionalInformation
+         */
+        public function setAdditionalInformation($additionalInformation)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAdditionalInformation()
+        {
+        }
+        /**
+         * Output only. In case message_code is not yet known by the client
+         * default_message will be the message to be used instead.
+         *
+         * @param string $defaultMessage
+         */
+        public function setDefaultMessage($defaultMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultMessage()
+        {
+        }
+        /**
+         * Output only. Represents a globally unique message id for this insight, can
+         * be used for localization purposes, in case message_code is not yet known by
+         * the client use default_message instead.
+         *
+         * @param string $messageId
+         */
+        public function setMessageId($messageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessageId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\GenericInsight registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalInformation()
-    {
-    }
-    /**
-     * Output only. In case message_code is not yet known by the client
-     * default_message will be the message to be used instead.
-     *
-     * @param string $defaultMessage
-     */
-    public function setDefaultMessage($defaultMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDefaultMessage()
-    {
-    }
-    /**
-     * Output only. Represents a globally unique message id for this insight, can
-     * be used for localization purposes, in case message_code is not yet known by
-     * the client use default_message instead.
-     *
-     * @param string $messageId
-     */
-    public function setMessageId($messageId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessageId()
+    class Google_Service_MigrationCenterAPI_GenericInsight extends \Google\Service\MigrationCenterAPI\GenericInsight
     {
     }
 }

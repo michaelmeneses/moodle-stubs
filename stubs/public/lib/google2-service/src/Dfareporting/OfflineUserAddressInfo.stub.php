@@ -21,156 +21,165 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class OfflineUserAddressInfo extends \Google\Model
-{
-    /**
-     * City of the address.
-     *
-     * @var string
-     */
-    public $city;
-    /**
-     * 2-letter country code in ISO-3166-1 alpha-2 of the user's address.
-     *
-     * @var string
-     */
-    public $countryCode;
-    /**
-     * First name of the user, which is hashed as SHA-256 after normalized
-     * (Lowercase all characters; Remove any extra spaces before, after, and in
-     * between).
-     *
-     * @var string
-     */
-    public $hashedFirstName;
-    /**
-     * Last name of the user, which is hashed as SHA-256 after normalized (lower
-     * case only and no punctuation).
-     *
-     * @var string
-     */
-    public $hashedLastName;
-    /**
-     * The street address of the user hashed using SHA-256 hash function after
-     * normalization (lower case only).
-     *
-     * @var string
-     */
-    public $hashedStreetAddress;
-    /**
-     * Postal code of the user's address.
-     *
-     * @var string
-     */
-    public $postalCode;
-    /**
-     * State code of the address.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * City of the address.
-     *
-     * @param string $city
-     */
-    public function setCity($city)
+namespace Google\Service\Dfareporting {
+    class OfflineUserAddressInfo extends \Google\Model
     {
+        /**
+         * City of the address.
+         *
+         * @var string
+         */
+        public $city;
+        /**
+         * 2-letter country code in ISO-3166-1 alpha-2 of the user's address.
+         *
+         * @var string
+         */
+        public $countryCode;
+        /**
+         * First name of the user, which is hashed as SHA-256 after normalized
+         * (Lowercase all characters; Remove any extra spaces before, after, and in
+         * between).
+         *
+         * @var string
+         */
+        public $hashedFirstName;
+        /**
+         * Last name of the user, which is hashed as SHA-256 after normalized (lower
+         * case only and no punctuation).
+         *
+         * @var string
+         */
+        public $hashedLastName;
+        /**
+         * The street address of the user hashed using SHA-256 hash function after
+         * normalization (lower case only).
+         *
+         * @var string
+         */
+        public $hashedStreetAddress;
+        /**
+         * Postal code of the user's address.
+         *
+         * @var string
+         */
+        public $postalCode;
+        /**
+         * State code of the address.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * City of the address.
+         *
+         * @param string $city
+         */
+        public function setCity($city)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCity()
+        {
+        }
+        /**
+         * 2-letter country code in ISO-3166-1 alpha-2 of the user's address.
+         *
+         * @param string $countryCode
+         */
+        public function setCountryCode($countryCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountryCode()
+        {
+        }
+        /**
+         * First name of the user, which is hashed as SHA-256 after normalized
+         * (Lowercase all characters; Remove any extra spaces before, after, and in
+         * between).
+         *
+         * @param string $hashedFirstName
+         */
+        public function setHashedFirstName($hashedFirstName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHashedFirstName()
+        {
+        }
+        /**
+         * Last name of the user, which is hashed as SHA-256 after normalized (lower
+         * case only and no punctuation).
+         *
+         * @param string $hashedLastName
+         */
+        public function setHashedLastName($hashedLastName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHashedLastName()
+        {
+        }
+        /**
+         * The street address of the user hashed using SHA-256 hash function after
+         * normalization (lower case only).
+         *
+         * @param string $hashedStreetAddress
+         */
+        public function setHashedStreetAddress($hashedStreetAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHashedStreetAddress()
+        {
+        }
+        /**
+         * Postal code of the user's address.
+         *
+         * @param string $postalCode
+         */
+        public function setPostalCode($postalCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostalCode()
+        {
+        }
+        /**
+         * State code of the address.
+         *
+         * @param string $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\OfflineUserAddressInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCity()
-    {
-    }
-    /**
-     * 2-letter country code in ISO-3166-1 alpha-2 of the user's address.
-     *
-     * @param string $countryCode
-     */
-    public function setCountryCode($countryCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCountryCode()
-    {
-    }
-    /**
-     * First name of the user, which is hashed as SHA-256 after normalized
-     * (Lowercase all characters; Remove any extra spaces before, after, and in
-     * between).
-     *
-     * @param string $hashedFirstName
-     */
-    public function setHashedFirstName($hashedFirstName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHashedFirstName()
-    {
-    }
-    /**
-     * Last name of the user, which is hashed as SHA-256 after normalized (lower
-     * case only and no punctuation).
-     *
-     * @param string $hashedLastName
-     */
-    public function setHashedLastName($hashedLastName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHashedLastName()
-    {
-    }
-    /**
-     * The street address of the user hashed using SHA-256 hash function after
-     * normalization (lower case only).
-     *
-     * @param string $hashedStreetAddress
-     */
-    public function setHashedStreetAddress($hashedStreetAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHashedStreetAddress()
-    {
-    }
-    /**
-     * Postal code of the user's address.
-     *
-     * @param string $postalCode
-     */
-    public function setPostalCode($postalCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPostalCode()
-    {
-    }
-    /**
-     * State code of the address.
-     *
-     * @param string $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
+    class Google_Service_Dfareporting_OfflineUserAddressInfo extends \Google\Service\Dfareporting\OfflineUserAddressInfo
     {
     }
 }

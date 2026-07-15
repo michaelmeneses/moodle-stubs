@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class AppRestrictionsSchemaChangeEvent extends \Google\Model
-{
-    /**
-     * The id of the product (e.g. "app:com.google.android.gm") for which the app
-     * restriction schema changed. This field will always be present.
-     *
-     * @var string
-     */
-    public $productId;
-    /**
-     * The id of the product (e.g. "app:com.google.android.gm") for which the app
-     * restriction schema changed. This field will always be present.
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
+namespace Google\Service\AndroidEnterprise {
+    class AppRestrictionsSchemaChangeEvent extends \Google\Model
     {
+        /**
+         * The id of the product (e.g. "app:com.google.android.gm") for which the app
+         * restriction schema changed. This field will always be present.
+         *
+         * @var string
+         */
+        public $productId;
+        /**
+         * The id of the product (e.g. "app:com.google.android.gm") for which the app
+         * restriction schema changed. This field will always be present.
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidEnterprise\AppRestrictionsSchemaChangeEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProductId()
+    class Google_Service_AndroidEnterprise_AppRestrictionsSchemaChangeEvent extends \Google\Service\AndroidEnterprise\AppRestrictionsSchemaChangeEvent
     {
     }
 }

@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedActivityFeedAnnotationData extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $activityFeedMessageCreateTime;
-    protected $activityFeedMessageIdType = MessageId::class;
-    protected $activityFeedMessageIdDataType = '';
-    protected $chatItemType = AppsDynamiteSharedChatItem::class;
-    protected $chatItemDataType = '';
-    protected $sharedUserInfoType = UserInfo::class;
-    protected $sharedUserInfoDataType = '';
-    protected $userInfoType = AppsDynamiteSharedActivityFeedAnnotationDataUserInfo::class;
-    protected $userInfoDataType = '';
-    /**
-     * @param string
-     */
-    public function setActivityFeedMessageCreateTime($activityFeedMessageCreateTime)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedActivityFeedAnnotationData extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $activityFeedMessageCreateTime;
+        protected $activityFeedMessageIdType = MessageId::class;
+        protected $activityFeedMessageIdDataType = '';
+        protected $chatItemType = AppsDynamiteSharedChatItem::class;
+        protected $chatItemDataType = '';
+        protected $sharedUserInfoType = UserInfo::class;
+        protected $sharedUserInfoDataType = '';
+        protected $userInfoType = AppsDynamiteSharedActivityFeedAnnotationDataUserInfo::class;
+        protected $userInfoDataType = '';
+        /**
+         * @param string
+         */
+        public function setActivityFeedMessageCreateTime($activityFeedMessageCreateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActivityFeedMessageCreateTime()
+        {
+        }
+        /**
+         * @param MessageId
+         */
+        public function setActivityFeedMessageId(MessageId $activityFeedMessageId)
+        {
+        }
+        /**
+         * @return MessageId
+         */
+        public function getActivityFeedMessageId()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedChatItem
+         */
+        public function setChatItem(AppsDynamiteSharedChatItem $chatItem)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedChatItem
+         */
+        public function getChatItem()
+        {
+        }
+        /**
+         * @param UserInfo
+         */
+        public function setSharedUserInfo(UserInfo $sharedUserInfo)
+        {
+        }
+        /**
+         * @return UserInfo
+         */
+        public function getSharedUserInfo()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedActivityFeedAnnotationDataUserInfo
+         */
+        public function setUserInfo(AppsDynamiteSharedActivityFeedAnnotationDataUserInfo $userInfo)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedActivityFeedAnnotationDataUserInfo
+         */
+        public function getUserInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedActivityFeedAnnotationData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivityFeedMessageCreateTime()
-    {
-    }
-    /**
-     * @param MessageId
-     */
-    public function setActivityFeedMessageId(MessageId $activityFeedMessageId)
-    {
-    }
-    /**
-     * @return MessageId
-     */
-    public function getActivityFeedMessageId()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedChatItem
-     */
-    public function setChatItem(AppsDynamiteSharedChatItem $chatItem)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedChatItem
-     */
-    public function getChatItem()
-    {
-    }
-    /**
-     * @param UserInfo
-     */
-    public function setSharedUserInfo(UserInfo $sharedUserInfo)
-    {
-    }
-    /**
-     * @return UserInfo
-     */
-    public function getSharedUserInfo()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedActivityFeedAnnotationDataUserInfo
-     */
-    public function setUserInfo(AppsDynamiteSharedActivityFeedAnnotationDataUserInfo $userInfo)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedActivityFeedAnnotationDataUserInfo
-     */
-    public function getUserInfo()
+    class Google_Service_CloudSearch_AppsDynamiteSharedActivityFeedAnnotationData extends \Google\Service\CloudSearch\AppsDynamiteSharedActivityFeedAnnotationData
     {
     }
 }

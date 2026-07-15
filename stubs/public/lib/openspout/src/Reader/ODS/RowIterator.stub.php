@@ -8,6 +8,17 @@
  */
 namespace OpenSpout\Reader\ODS;
 
+use DOMElement;
+use OpenSpout\Common\Entity\Cell;
+use OpenSpout\Common\Entity\Row;
+use OpenSpout\Common\Exception\IOException;
+use OpenSpout\Reader\Common\XMLProcessor;
+use OpenSpout\Reader\Exception\InvalidValueException;
+use OpenSpout\Reader\Exception\IteratorNotRewindableException;
+use OpenSpout\Reader\Exception\SharedStringNotFoundException;
+use OpenSpout\Reader\ODS\Helper\CellValueFormatter;
+use OpenSpout\Reader\RowIteratorInterface;
+use OpenSpout\Reader\Wrapper\XMLReader;
 final class RowIterator implements RowIteratorInterface
 {
     /**

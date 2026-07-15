@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AnswerQueryRequestAnswerGenerationSpecModelSpec extends \Google\Model
-{
-    /**
-     * Model version. If not set, it will use the default stable model. Allowed
-     * values are: stable, preview.
-     *
-     * @var string
-     */
-    public $modelVersion;
-    /**
-     * Model version. If not set, it will use the default stable model. Allowed
-     * values are: stable, preview.
-     *
-     * @param string $modelVersion
-     */
-    public function setModelVersion($modelVersion)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AnswerQueryRequestAnswerGenerationSpecModelSpec extends \Google\Model
     {
+        /**
+         * Model version. If not set, it will use the default stable model. Allowed
+         * values are: stable, preview.
+         *
+         * @var string
+         */
+        public $modelVersion;
+        /**
+         * Model version. If not set, it will use the default stable model. Allowed
+         * values are: stable, preview.
+         *
+         * @param string $modelVersion
+         */
+        public function setModelVersion($modelVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestAnswerGenerationSpecModelSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModelVersion()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AnswerQueryRequestAnswerGenerationSpecModelSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestAnswerGenerationSpecModelSpec
     {
     }
 }

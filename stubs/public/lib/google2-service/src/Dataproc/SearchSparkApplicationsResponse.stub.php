@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SearchSparkApplicationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'sparkApplications';
-    /**
-     * This token is included in the response if there are more results to fetch.
-     * To fetch additional results, provide this value as the page_token in a
-     * subsequent SearchSparkApplicationsRequest.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $sparkApplicationsType = SparkApplication::class;
-    protected $sparkApplicationsDataType = 'array';
-    /**
-     * This token is included in the response if there are more results to fetch.
-     * To fetch additional results, provide this value as the page_token in a
-     * subsequent SearchSparkApplicationsRequest.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Dataproc {
+    class SearchSparkApplicationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'sparkApplications';
+        /**
+         * This token is included in the response if there are more results to fetch.
+         * To fetch additional results, provide this value as the page_token in a
+         * subsequent SearchSparkApplicationsRequest.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $sparkApplicationsType = SparkApplication::class;
+        protected $sparkApplicationsDataType = 'array';
+        /**
+         * This token is included in the response if there are more results to fetch.
+         * To fetch additional results, provide this value as the page_token in a
+         * subsequent SearchSparkApplicationsRequest.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Output only. High level information corresponding to an application.
+         *
+         * @param SparkApplication[] $sparkApplications
+         */
+        public function setSparkApplications($sparkApplications)
+        {
+        }
+        /**
+         * @return SparkApplication[]
+         */
+        public function getSparkApplications()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\SearchSparkApplicationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Output only. High level information corresponding to an application.
-     *
-     * @param SparkApplication[] $sparkApplications
-     */
-    public function setSparkApplications($sparkApplications)
-    {
-    }
-    /**
-     * @return SparkApplication[]
-     */
-    public function getSparkApplications()
+    class Google_Service_Dataproc_SearchSparkApplicationsResponse extends \Google\Service\Dataproc\SearchSparkApplicationsResponse
     {
     }
 }

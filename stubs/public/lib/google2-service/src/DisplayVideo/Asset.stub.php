@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class Asset extends \Google\Model
-{
-    /**
-     * The asset content. For uploaded assets, the content is the serving path.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * Media ID of the uploaded asset. This is a unique identifier for the asset.
-     * This ID can be passed to other API calls, e.g. CreateCreative to associate
-     * the asset with a creative. The Media ID space updated on **April 5, 2023**.
-     * Update media IDs cached before **April 5, 2023** by retrieving the new
-     * media ID from associated creative resources or re-uploading the asset.
-     *
-     * @var string
-     */
-    public $mediaId;
-    /**
-     * The asset content. For uploaded assets, the content is the serving path.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\DisplayVideo {
+    class Asset extends \Google\Model
     {
+        /**
+         * The asset content. For uploaded assets, the content is the serving path.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * Media ID of the uploaded asset. This is a unique identifier for the asset.
+         * This ID can be passed to other API calls, e.g. CreateCreative to associate
+         * the asset with a creative. The Media ID space updated on **April 5, 2023**.
+         * Update media IDs cached before **April 5, 2023** by retrieving the new
+         * media ID from associated creative resources or re-uploading the asset.
+         *
+         * @var string
+         */
+        public $mediaId;
+        /**
+         * The asset content. For uploaded assets, the content is the serving path.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Media ID of the uploaded asset. This is a unique identifier for the asset.
+         * This ID can be passed to other API calls, e.g. CreateCreative to associate
+         * the asset with a creative. The Media ID space updated on **April 5, 2023**.
+         * Update media IDs cached before **April 5, 2023** by retrieving the new
+         * media ID from associated creative resources or re-uploading the asset.
+         *
+         * @param string $mediaId
+         */
+        public function setMediaId($mediaId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMediaId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\Asset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * Media ID of the uploaded asset. This is a unique identifier for the asset.
-     * This ID can be passed to other API calls, e.g. CreateCreative to associate
-     * the asset with a creative. The Media ID space updated on **April 5, 2023**.
-     * Update media IDs cached before **April 5, 2023** by retrieving the new
-     * media ID from associated creative resources or re-uploading the asset.
-     *
-     * @param string $mediaId
-     */
-    public function setMediaId($mediaId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMediaId()
+    class Google_Service_DisplayVideo_Asset extends \Google\Service\DisplayVideo\Asset
     {
     }
 }

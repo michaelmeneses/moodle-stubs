@@ -21,156 +21,165 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class FailureDetail extends \Google\Model
-{
-    /**
-     * If the failure was severe because the system (app) under test crashed.
-     *
-     * @var bool
-     */
-    public $crashed;
-    /**
-     * If the device ran out of memory during a test, causing the test to crash.
-     *
-     * @var bool
-     */
-    public $deviceOutOfMemory;
-    /**
-     * If the Roboscript failed to complete successfully, e.g., because a
-     * Roboscript action or assertion failed or a Roboscript action could not be
-     * matched during the entire crawl.
-     *
-     * @var bool
-     */
-    public $failedRoboscript;
-    /**
-     * If an app is not installed and thus no test can be run with the app. This
-     * might be caused by trying to run a test on an unsupported platform.
-     *
-     * @var bool
-     */
-    public $notInstalled;
-    /**
-     * If a native process (including any other than the app) crashed.
-     *
-     * @var bool
-     */
-    public $otherNativeCrash;
-    /**
-     * If the test overran some time limit, and that is why it failed.
-     *
-     * @var bool
-     */
-    public $timedOut;
-    /**
-     * If the robo was unable to crawl the app; perhaps because the app did not
-     * start.
-     *
-     * @var bool
-     */
-    public $unableToCrawl;
-    /**
-     * If the failure was severe because the system (app) under test crashed.
-     *
-     * @param bool $crashed
-     */
-    public function setCrashed($crashed)
+namespace Google\Service\ToolResults {
+    class FailureDetail extends \Google\Model
     {
+        /**
+         * If the failure was severe because the system (app) under test crashed.
+         *
+         * @var bool
+         */
+        public $crashed;
+        /**
+         * If the device ran out of memory during a test, causing the test to crash.
+         *
+         * @var bool
+         */
+        public $deviceOutOfMemory;
+        /**
+         * If the Roboscript failed to complete successfully, e.g., because a
+         * Roboscript action or assertion failed or a Roboscript action could not be
+         * matched during the entire crawl.
+         *
+         * @var bool
+         */
+        public $failedRoboscript;
+        /**
+         * If an app is not installed and thus no test can be run with the app. This
+         * might be caused by trying to run a test on an unsupported platform.
+         *
+         * @var bool
+         */
+        public $notInstalled;
+        /**
+         * If a native process (including any other than the app) crashed.
+         *
+         * @var bool
+         */
+        public $otherNativeCrash;
+        /**
+         * If the test overran some time limit, and that is why it failed.
+         *
+         * @var bool
+         */
+        public $timedOut;
+        /**
+         * If the robo was unable to crawl the app; perhaps because the app did not
+         * start.
+         *
+         * @var bool
+         */
+        public $unableToCrawl;
+        /**
+         * If the failure was severe because the system (app) under test crashed.
+         *
+         * @param bool $crashed
+         */
+        public function setCrashed($crashed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCrashed()
+        {
+        }
+        /**
+         * If the device ran out of memory during a test, causing the test to crash.
+         *
+         * @param bool $deviceOutOfMemory
+         */
+        public function setDeviceOutOfMemory($deviceOutOfMemory)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeviceOutOfMemory()
+        {
+        }
+        /**
+         * If the Roboscript failed to complete successfully, e.g., because a
+         * Roboscript action or assertion failed or a Roboscript action could not be
+         * matched during the entire crawl.
+         *
+         * @param bool $failedRoboscript
+         */
+        public function setFailedRoboscript($failedRoboscript)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFailedRoboscript()
+        {
+        }
+        /**
+         * If an app is not installed and thus no test can be run with the app. This
+         * might be caused by trying to run a test on an unsupported platform.
+         *
+         * @param bool $notInstalled
+         */
+        public function setNotInstalled($notInstalled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNotInstalled()
+        {
+        }
+        /**
+         * If a native process (including any other than the app) crashed.
+         *
+         * @param bool $otherNativeCrash
+         */
+        public function setOtherNativeCrash($otherNativeCrash)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOtherNativeCrash()
+        {
+        }
+        /**
+         * If the test overran some time limit, and that is why it failed.
+         *
+         * @param bool $timedOut
+         */
+        public function setTimedOut($timedOut)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTimedOut()
+        {
+        }
+        /**
+         * If the robo was unable to crawl the app; perhaps because the app did not
+         * start.
+         *
+         * @param bool $unableToCrawl
+         */
+        public function setUnableToCrawl($unableToCrawl)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUnableToCrawl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ToolResults\FailureDetail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCrashed()
-    {
-    }
-    /**
-     * If the device ran out of memory during a test, causing the test to crash.
-     *
-     * @param bool $deviceOutOfMemory
-     */
-    public function setDeviceOutOfMemory($deviceOutOfMemory)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDeviceOutOfMemory()
-    {
-    }
-    /**
-     * If the Roboscript failed to complete successfully, e.g., because a
-     * Roboscript action or assertion failed or a Roboscript action could not be
-     * matched during the entire crawl.
-     *
-     * @param bool $failedRoboscript
-     */
-    public function setFailedRoboscript($failedRoboscript)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getFailedRoboscript()
-    {
-    }
-    /**
-     * If an app is not installed and thus no test can be run with the app. This
-     * might be caused by trying to run a test on an unsupported platform.
-     *
-     * @param bool $notInstalled
-     */
-    public function setNotInstalled($notInstalled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNotInstalled()
-    {
-    }
-    /**
-     * If a native process (including any other than the app) crashed.
-     *
-     * @param bool $otherNativeCrash
-     */
-    public function setOtherNativeCrash($otherNativeCrash)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOtherNativeCrash()
-    {
-    }
-    /**
-     * If the test overran some time limit, and that is why it failed.
-     *
-     * @param bool $timedOut
-     */
-    public function setTimedOut($timedOut)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTimedOut()
-    {
-    }
-    /**
-     * If the robo was unable to crawl the app; perhaps because the app did not
-     * start.
-     *
-     * @param bool $unableToCrawl
-     */
-    public function setUnableToCrawl($unableToCrawl)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUnableToCrawl()
+    class Google_Service_ToolResults_FailureDetail extends \Google\Service\ToolResults\FailureDetail
     {
     }
 }

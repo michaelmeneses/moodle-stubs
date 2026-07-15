@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class ConcatPosition extends \Google\Model
-{
-    /**
-     * Index of the inner source.
-     *
-     * @var int
-     */
-    public $index;
-    protected $positionType = Position::class;
-    protected $positionDataType = '';
-    /**
-     * Index of the inner source.
-     *
-     * @param int $index
-     */
-    public function setIndex($index)
+namespace Google\Service\Dataflow {
+    class ConcatPosition extends \Google\Model
     {
+        /**
+         * Index of the inner source.
+         *
+         * @var int
+         */
+        public $index;
+        protected $positionType = Position::class;
+        protected $positionDataType = '';
+        /**
+         * Index of the inner source.
+         *
+         * @param int $index
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIndex()
+        {
+        }
+        /**
+         * Position within the inner source.
+         *
+         * @param Position $position
+         */
+        public function setPosition(Position $position)
+        {
+        }
+        /**
+         * @return Position
+         */
+        public function getPosition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dataflow\ConcatPosition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIndex()
-    {
-    }
-    /**
-     * Position within the inner source.
-     *
-     * @param Position $position
-     */
-    public function setPosition(Position $position)
-    {
-    }
-    /**
-     * @return Position
-     */
-    public function getPosition()
+    class Google_Service_Dataflow_ConcatPosition extends \Google\Service\Dataflow\ConcatPosition
     {
     }
 }

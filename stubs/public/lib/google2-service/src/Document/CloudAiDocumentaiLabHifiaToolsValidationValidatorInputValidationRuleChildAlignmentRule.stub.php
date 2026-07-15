@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleChildAlignmentRule extends \Google\Collection
-{
-    protected $collection_key = 'childFields';
-    protected $alignmentRuleType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleAlignmentRule::class;
-    protected $alignmentRuleDataType = '';
-    protected $childFieldsType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField::class;
-    protected $childFieldsDataType = 'array';
-    protected $parentFieldType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField::class;
-    protected $parentFieldDataType = '';
-    /**
-     * The alignment rule to apply to the child fields.
-     *
-     * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleAlignmentRule $alignmentRule
-     */
-    public function setAlignmentRule(CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleAlignmentRule $alignmentRule)
+namespace Google\Service\Document {
+    class CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleChildAlignmentRule extends \Google\Collection
     {
+        protected $collection_key = 'childFields';
+        protected $alignmentRuleType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleAlignmentRule::class;
+        protected $alignmentRuleDataType = '';
+        protected $childFieldsType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField::class;
+        protected $childFieldsDataType = 'array';
+        protected $parentFieldType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField::class;
+        protected $parentFieldDataType = '';
+        /**
+         * The alignment rule to apply to the child fields.
+         *
+         * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleAlignmentRule $alignmentRule
+         */
+        public function setAlignmentRule(CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleAlignmentRule $alignmentRule)
+        {
+        }
+        /**
+         * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleAlignmentRule
+         */
+        public function getAlignmentRule()
+        {
+        }
+        /**
+         * The child fields to be aligned within the parent field.
+         *
+         * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField[] $childFields
+         */
+        public function setChildFields($childFields)
+        {
+        }
+        /**
+         * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField[]
+         */
+        public function getChildFields()
+        {
+        }
+        /**
+         * The full path of the parent field.
+         *
+         * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField $parentField
+         */
+        public function setParentField(CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField $parentField)
+        {
+        }
+        /**
+         * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField
+         */
+        public function getParentField()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleAlignmentRule
+     * Runtime class alias of \Google\Service\Document\CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleChildAlignmentRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlignmentRule()
-    {
-    }
-    /**
-     * The child fields to be aligned within the parent field.
-     *
-     * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField[] $childFields
-     */
-    public function setChildFields($childFields)
-    {
-    }
-    /**
-     * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField[]
-     */
-    public function getChildFields()
-    {
-    }
-    /**
-     * The full path of the parent field.
-     *
-     * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField $parentField
-     */
-    public function setParentField(CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField $parentField)
-    {
-    }
-    /**
-     * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField
-     */
-    public function getParentField()
+    class Google_Service_Document_CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleChildAlignmentRule extends \Google\Service\Document\CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleChildAlignmentRule
     {
     }
 }

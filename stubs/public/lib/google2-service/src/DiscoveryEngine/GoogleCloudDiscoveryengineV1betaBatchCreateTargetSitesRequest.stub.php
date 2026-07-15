@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaBatchCreateTargetSitesRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = GoogleCloudDiscoveryengineV1betaCreateTargetSiteRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaCreateTargetSiteRequest[]
-     */
-    public function setRequests($requests)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaBatchCreateTargetSitesRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = GoogleCloudDiscoveryengineV1betaCreateTargetSiteRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaCreateTargetSiteRequest[]
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaCreateTargetSiteRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaCreateTargetSiteRequest[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaBatchCreateTargetSitesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaBatchCreateTargetSitesRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaBatchCreateTargetSitesRequest
     {
     }
 }

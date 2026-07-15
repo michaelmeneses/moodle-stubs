@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SaaSServiceManagement;
-
-class Schedule extends \Google\Model
-{
-    /**
-     * Optional. Start of operation. If not set, will be set to the start of the
-     * next window. (optional)
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Optional. Start of operation. If not set, will be set to the start of the
-     * next window. (optional)
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
+namespace Google\Service\SaaSServiceManagement {
+    class Schedule extends \Google\Model
     {
+        /**
+         * Optional. Start of operation. If not set, will be set to the start of the
+         * next window. (optional)
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Optional. Start of operation. If not set, will be set to the start of the
+         * next window. (optional)
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SaaSServiceManagement\Schedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStartTime()
+    class Google_Service_SaaSServiceManagement_Schedule extends \Google\Service\SaaSServiceManagement\Schedule
     {
     }
 }

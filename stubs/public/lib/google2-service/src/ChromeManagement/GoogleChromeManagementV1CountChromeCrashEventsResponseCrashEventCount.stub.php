@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1CountChromeCrashEventsResponseCrashEventCount extends \Google\Model
-{
-    /**
-     * Browser version this is counting.
-     *
-     * @var string
-     */
-    public $browserVersion;
-    /**
-     * Total count of crash events.
-     *
-     * @var string
-     */
-    public $count;
-    protected $dateType = GoogleTypeDate::class;
-    protected $dateDataType = '';
-    /**
-     * Browser version this is counting.
-     *
-     * @param string $browserVersion
-     */
-    public function setBrowserVersion($browserVersion)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1CountChromeCrashEventsResponseCrashEventCount extends \Google\Model
     {
+        /**
+         * Browser version this is counting.
+         *
+         * @var string
+         */
+        public $browserVersion;
+        /**
+         * Total count of crash events.
+         *
+         * @var string
+         */
+        public $count;
+        protected $dateType = GoogleTypeDate::class;
+        protected $dateDataType = '';
+        /**
+         * Browser version this is counting.
+         *
+         * @param string $browserVersion
+         */
+        public function setBrowserVersion($browserVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBrowserVersion()
+        {
+        }
+        /**
+         * Total count of crash events.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * Date of the crash event.
+         *
+         * @param GoogleTypeDate $date
+         */
+        public function setDate(GoogleTypeDate $date)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1CountChromeCrashEventsResponseCrashEventCount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBrowserVersion()
-    {
-    }
-    /**
-     * Total count of crash events.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCount()
-    {
-    }
-    /**
-     * Date of the crash event.
-     *
-     * @param GoogleTypeDate $date
-     */
-    public function setDate(GoogleTypeDate $date)
-    {
-    }
-    /**
-     * @return GoogleTypeDate
-     */
-    public function getDate()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1CountChromeCrashEventsResponseCrashEventCount extends \Google\Service\ChromeManagement\GoogleChromeManagementV1CountChromeCrashEventsResponseCrashEventCount
     {
     }
 }

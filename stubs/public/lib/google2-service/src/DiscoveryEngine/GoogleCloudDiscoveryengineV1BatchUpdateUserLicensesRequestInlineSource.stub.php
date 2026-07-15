@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesRequestInlineSource extends \Google\Collection
-{
-    protected $collection_key = 'userLicenses';
-    /**
-     * Optional. The list of fields to update.
-     *
-     * @var string
-     */
-    public $updateMask;
-    protected $userLicensesType = GoogleCloudDiscoveryengineV1UserLicense::class;
-    protected $userLicensesDataType = 'array';
-    /**
-     * Optional. The list of fields to update.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesRequestInlineSource extends \Google\Collection
     {
+        protected $collection_key = 'userLicenses';
+        /**
+         * Optional. The list of fields to update.
+         *
+         * @var string
+         */
+        public $updateMask;
+        protected $userLicensesType = GoogleCloudDiscoveryengineV1UserLicense::class;
+        protected $userLicensesDataType = 'array';
+        /**
+         * Optional. The list of fields to update.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
+        /**
+         * Required. A list of user licenses to update. Each user license must have a
+         * valid UserLicense.user_principal.
+         *
+         * @param GoogleCloudDiscoveryengineV1UserLicense[] $userLicenses
+         */
+        public function setUserLicenses($userLicenses)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1UserLicense[]
+         */
+        public function getUserLicenses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesRequestInlineSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUpdateMask()
-    {
-    }
-    /**
-     * Required. A list of user licenses to update. Each user license must have a
-     * valid UserLicense.user_principal.
-     *
-     * @param GoogleCloudDiscoveryengineV1UserLicense[] $userLicenses
-     */
-    public function setUserLicenses($userLicenses)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1UserLicense[]
-     */
-    public function getUserLicenses()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesRequestInlineSource extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesRequestInlineSource
     {
     }
 }

@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDataConnect;
-
-class GraphqlRequest extends \Google\Model
-{
-    protected $extensionsType = GraphqlRequestExtensions::class;
-    protected $extensionsDataType = '';
-    /**
-     * Optional. The name of the GraphQL operation name. Required only if `query`
-     * contains multiple operations. See
-     * https://graphql.org/learn/queries/#operation-name.
-     *
-     * @var string
-     */
-    public $operationName;
-    /**
-     * Required. The GraphQL query document source.
-     *
-     * @var string
-     */
-    public $query;
-    /**
-     * Optional. Values for GraphQL variables provided in this request.
-     *
-     * @var array[]
-     */
-    public $variables;
-    /**
-     * Optional. Additional GraphQL request information.
-     *
-     * @param GraphqlRequestExtensions $extensions
-     */
-    public function setExtensions(GraphqlRequestExtensions $extensions)
+namespace Google\Service\FirebaseDataConnect {
+    class GraphqlRequest extends \Google\Model
     {
+        protected $extensionsType = GraphqlRequestExtensions::class;
+        protected $extensionsDataType = '';
+        /**
+         * Optional. The name of the GraphQL operation name. Required only if `query`
+         * contains multiple operations. See
+         * https://graphql.org/learn/queries/#operation-name.
+         *
+         * @var string
+         */
+        public $operationName;
+        /**
+         * Required. The GraphQL query document source.
+         *
+         * @var string
+         */
+        public $query;
+        /**
+         * Optional. Values for GraphQL variables provided in this request.
+         *
+         * @var array[]
+         */
+        public $variables;
+        /**
+         * Optional. Additional GraphQL request information.
+         *
+         * @param GraphqlRequestExtensions $extensions
+         */
+        public function setExtensions(GraphqlRequestExtensions $extensions)
+        {
+        }
+        /**
+         * @return GraphqlRequestExtensions
+         */
+        public function getExtensions()
+        {
+        }
+        /**
+         * Optional. The name of the GraphQL operation name. Required only if `query`
+         * contains multiple operations. See
+         * https://graphql.org/learn/queries/#operation-name.
+         *
+         * @param string $operationName
+         */
+        public function setOperationName($operationName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperationName()
+        {
+        }
+        /**
+         * Required. The GraphQL query document source.
+         *
+         * @param string $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
+        /**
+         * Optional. Values for GraphQL variables provided in this request.
+         *
+         * @param array[] $variables
+         */
+        public function setVariables($variables)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getVariables()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GraphqlRequestExtensions
+     * Runtime class alias of \Google\Service\FirebaseDataConnect\GraphqlRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExtensions()
-    {
-    }
-    /**
-     * Optional. The name of the GraphQL operation name. Required only if `query`
-     * contains multiple operations. See
-     * https://graphql.org/learn/queries/#operation-name.
-     *
-     * @param string $operationName
-     */
-    public function setOperationName($operationName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperationName()
-    {
-    }
-    /**
-     * Required. The GraphQL query document source.
-     *
-     * @param string $query
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuery()
-    {
-    }
-    /**
-     * Optional. Values for GraphQL variables provided in this request.
-     *
-     * @param array[] $variables
-     */
-    public function setVariables($variables)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getVariables()
+    class Google_Service_FirebaseDataConnect_GraphqlRequest extends \Google\Service\FirebaseDataConnect\GraphqlRequest
     {
     }
 }

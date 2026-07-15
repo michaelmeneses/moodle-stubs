@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1betaPublicJwk extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $alg;
-    /**
-     * @var string
-     */
-    public $e;
-    /**
-     * @var string
-     */
-    public $kid;
-    /**
-     * @var string
-     */
-    public $kty;
-    /**
-     * @var string
-     */
-    public $n;
-    /**
-     * @var string
-     */
-    public $use;
-    /**
-     * @param string
-     */
-    public function setAlg($alg)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1betaPublicJwk extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $alg;
+        /**
+         * @var string
+         */
+        public $e;
+        /**
+         * @var string
+         */
+        public $kid;
+        /**
+         * @var string
+         */
+        public $kty;
+        /**
+         * @var string
+         */
+        public $n;
+        /**
+         * @var string
+         */
+        public $use;
+        /**
+         * @param string
+         */
+        public function setAlg($alg)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAlg()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setE($e)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getE()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKid($kid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKid()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKty($kty)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKty()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setN($n)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getN()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUse($use)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUse()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaPublicJwk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlg()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setE($e)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getE()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKid($kid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKid()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKty($kty)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKty()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setN($n)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getN()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUse($use)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUse()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1betaPublicJwk extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaPublicJwk
     {
     }
 }

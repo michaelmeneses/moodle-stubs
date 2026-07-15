@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataTransfer;
-
-class ApplicationsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'applications';
-    protected $applicationsType = Application::class;
-    protected $applicationsDataType = 'array';
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Identifies the resource as a collection of Applications.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Token to specify the next page in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of applications that support data transfer and are also installed
-     * for the customer.
-     *
-     * @param Application[] $applications
-     */
-    public function setApplications($applications)
+namespace Google\Service\DataTransfer {
+    class ApplicationsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'applications';
+        protected $applicationsType = Application::class;
+        protected $applicationsDataType = 'array';
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Identifies the resource as a collection of Applications.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Token to specify the next page in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of applications that support data transfer and are also installed
+         * for the customer.
+         *
+         * @param Application[] $applications
+         */
+        public function setApplications($applications)
+        {
+        }
+        /**
+         * @return Application[]
+         */
+        public function getApplications()
+        {
+        }
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Identifies the resource as a collection of Applications.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Token to specify the next page in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Application[]
+     * Runtime class alias of \Google\Service\DataTransfer\ApplicationsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplications()
-    {
-    }
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Identifies the resource as a collection of Applications.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Token to specify the next page in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DataTransfer_ApplicationsListResponse extends \Google\Service\DataTransfer\ApplicationsListResponse
     {
     }
 }

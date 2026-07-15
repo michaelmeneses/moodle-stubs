@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class NotificationSet extends \Google\Collection
-{
-    protected $collection_key = 'notification';
-    protected $notificationType = Notification::class;
-    protected $notificationDataType = 'array';
-    /**
-     * The notification set ID, required to mark the notification as received with
-     * the Enterprises.AcknowledgeNotification API. This will be omitted if no
-     * notifications are present.
-     *
-     * @var string
-     */
-    public $notificationSetId;
-    /**
-     * The notifications received, or empty if no notifications are present.
-     *
-     * @param Notification[] $notification
-     */
-    public function setNotification($notification)
+namespace Google\Service\AndroidEnterprise {
+    class NotificationSet extends \Google\Collection
     {
+        protected $collection_key = 'notification';
+        protected $notificationType = Notification::class;
+        protected $notificationDataType = 'array';
+        /**
+         * The notification set ID, required to mark the notification as received with
+         * the Enterprises.AcknowledgeNotification API. This will be omitted if no
+         * notifications are present.
+         *
+         * @var string
+         */
+        public $notificationSetId;
+        /**
+         * The notifications received, or empty if no notifications are present.
+         *
+         * @param Notification[] $notification
+         */
+        public function setNotification($notification)
+        {
+        }
+        /**
+         * @return Notification[]
+         */
+        public function getNotification()
+        {
+        }
+        /**
+         * The notification set ID, required to mark the notification as received with
+         * the Enterprises.AcknowledgeNotification API. This will be omitted if no
+         * notifications are present.
+         *
+         * @param string $notificationSetId
+         */
+        public function setNotificationSetId($notificationSetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotificationSetId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Notification[]
+     * Runtime class alias of \Google\Service\AndroidEnterprise\NotificationSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNotification()
-    {
-    }
-    /**
-     * The notification set ID, required to mark the notification as received with
-     * the Enterprises.AcknowledgeNotification API. This will be omitted if no
-     * notifications are present.
-     *
-     * @param string $notificationSetId
-     */
-    public function setNotificationSetId($notificationSetId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotificationSetId()
+    class Google_Service_AndroidEnterprise_NotificationSet extends \Google\Service\AndroidEnterprise\NotificationSet
     {
     }
 }

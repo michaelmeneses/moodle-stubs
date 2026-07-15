@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Product extends \Google\Model
-{
-    /**
-     * Contains a URI which is vendor-specific. Example: The artifact repository
-     * URL of an image.
-     *
-     * @var string
-     */
-    public $genericUri;
-    /**
-     * Token that identifies a product so that it can be referred to from other
-     * parts in the document. There is no predefined format as long as it uniquely
-     * identifies a group in the context of the current document.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Name of the product.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Contains a URI which is vendor-specific. Example: The artifact repository
-     * URL of an image.
-     *
-     * @param string $genericUri
-     */
-    public function setGenericUri($genericUri)
+namespace Google\Service\ContainerAnalysis {
+    class Product extends \Google\Model
     {
+        /**
+         * Contains a URI which is vendor-specific. Example: The artifact repository
+         * URL of an image.
+         *
+         * @var string
+         */
+        public $genericUri;
+        /**
+         * Token that identifies a product so that it can be referred to from other
+         * parts in the document. There is no predefined format as long as it uniquely
+         * identifies a group in the context of the current document.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Name of the product.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Contains a URI which is vendor-specific. Example: The artifact repository
+         * URL of an image.
+         *
+         * @param string $genericUri
+         */
+        public function setGenericUri($genericUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGenericUri()
+        {
+        }
+        /**
+         * Token that identifies a product so that it can be referred to from other
+         * parts in the document. There is no predefined format as long as it uniquely
+         * identifies a group in the context of the current document.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Name of the product.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Product registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGenericUri()
-    {
-    }
-    /**
-     * Token that identifies a product so that it can be referred to from other
-     * parts in the document. There is no predefined format as long as it uniquely
-     * identifies a group in the context of the current document.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Name of the product.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_ContainerAnalysis_Product extends \Google\Service\ContainerAnalysis\Product
     {
     }
 }

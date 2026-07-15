@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteStorageImageComponent extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $altText;
-    protected $borderStyleType = AppsDynamiteStorageBorderStyle::class;
-    protected $borderStyleDataType = '';
-    protected $cropStyleType = AppsDynamiteStorageImageCropStyle::class;
-    protected $cropStyleDataType = '';
-    /**
-     * @var string
-     */
-    public $imageUri;
-    /**
-     * @param string
-     */
-    public function setAltText($altText)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteStorageImageComponent extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $altText;
+        protected $borderStyleType = AppsDynamiteStorageBorderStyle::class;
+        protected $borderStyleDataType = '';
+        protected $cropStyleType = AppsDynamiteStorageImageCropStyle::class;
+        protected $cropStyleDataType = '';
+        /**
+         * @var string
+         */
+        public $imageUri;
+        /**
+         * @param string
+         */
+        public function setAltText($altText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAltText()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageBorderStyle
+         */
+        public function setBorderStyle(AppsDynamiteStorageBorderStyle $borderStyle)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageBorderStyle
+         */
+        public function getBorderStyle()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageImageCropStyle
+         */
+        public function setCropStyle(AppsDynamiteStorageImageCropStyle $cropStyle)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageImageCropStyle
+         */
+        public function getCropStyle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setImageUri($imageUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteStorageImageComponent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAltText()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageBorderStyle
-     */
-    public function setBorderStyle(AppsDynamiteStorageBorderStyle $borderStyle)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageBorderStyle
-     */
-    public function getBorderStyle()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageImageCropStyle
-     */
-    public function setCropStyle(AppsDynamiteStorageImageCropStyle $cropStyle)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageImageCropStyle
-     */
-    public function getCropStyle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setImageUri($imageUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUri()
+    class Google_Service_CloudSearch_AppsDynamiteStorageImageComponent extends \Google\Service\CloudSearch\AppsDynamiteStorageImageComponent
     {
     }
 }

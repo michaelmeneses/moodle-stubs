@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3RunTestCaseRequest extends \Google\Model
-{
-    /**
-     * Optional. Environment name. If not set, draft environment is assumed.
-     * Format: `projects//locations//agents//environments/`.
-     *
-     * @var string
-     */
-    public $environment;
-    /**
-     * Optional. Environment name. If not set, draft environment is assumed.
-     * Format: `projects//locations//agents//environments/`.
-     *
-     * @param string $environment
-     */
-    public function setEnvironment($environment)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3RunTestCaseRequest extends \Google\Model
     {
+        /**
+         * Optional. Environment name. If not set, draft environment is assumed.
+         * Format: `projects//locations//agents//environments/`.
+         *
+         * @var string
+         */
+        public $environment;
+        /**
+         * Optional. Environment name. If not set, draft environment is assumed.
+         * Format: `projects//locations//agents//environments/`.
+         *
+         * @param string $environment
+         */
+        public function setEnvironment($environment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvironment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RunTestCaseRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnvironment()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3RunTestCaseRequest extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RunTestCaseRequest
     {
     }
 }

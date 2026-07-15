@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ResourceSettings;
-
-class GoogleCloudResourcesettingsV1SettingMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $dataType;
-    protected $defaultValueType = GoogleCloudResourcesettingsV1Value::class;
-    protected $defaultValueDataType = '';
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var bool
-     */
-    public $readOnly;
-    /**
-     * @param string
-     */
-    public function setDataType($dataType)
+namespace Google\Service\ResourceSettings {
+    class GoogleCloudResourcesettingsV1SettingMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $dataType;
+        protected $defaultValueType = GoogleCloudResourcesettingsV1Value::class;
+        protected $defaultValueDataType = '';
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var bool
+         */
+        public $readOnly;
+        /**
+         * @param string
+         */
+        public function setDataType($dataType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataType()
+        {
+        }
+        /**
+         * @param GoogleCloudResourcesettingsV1Value
+         */
+        public function setDefaultValue(GoogleCloudResourcesettingsV1Value $defaultValue)
+        {
+        }
+        /**
+         * @return GoogleCloudResourcesettingsV1Value
+         */
+        public function getDefaultValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setReadOnly($readOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReadOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ResourceSettings\GoogleCloudResourcesettingsV1SettingMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataType()
-    {
-    }
-    /**
-     * @param GoogleCloudResourcesettingsV1Value
-     */
-    public function setDefaultValue(GoogleCloudResourcesettingsV1Value $defaultValue)
-    {
-    }
-    /**
-     * @return GoogleCloudResourcesettingsV1Value
-     */
-    public function getDefaultValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setReadOnly($readOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReadOnly()
+    class Google_Service_ResourceSettings_GoogleCloudResourcesettingsV1SettingMetadata extends \Google\Service\ResourceSettings\GoogleCloudResourcesettingsV1SettingMetadata
     {
     }
 }

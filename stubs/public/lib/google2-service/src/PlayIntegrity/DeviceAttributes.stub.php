@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayIntegrity;
-
-class DeviceAttributes extends \Google\Model
-{
-    /**
-     * Android SDK version of the device, as defined in the public Android
-     * documentation:
-     * https://developer.android.com/reference/android/os/Build.VERSION_CODES. It
-     * won't be set if a necessary requirement was missed. For example
-     * DeviceIntegrity did not meet the minimum bar.
-     *
-     * @var int
-     */
-    public $sdkVersion;
-    /**
-     * Android SDK version of the device, as defined in the public Android
-     * documentation:
-     * https://developer.android.com/reference/android/os/Build.VERSION_CODES. It
-     * won't be set if a necessary requirement was missed. For example
-     * DeviceIntegrity did not meet the minimum bar.
-     *
-     * @param int $sdkVersion
-     */
-    public function setSdkVersion($sdkVersion)
+namespace Google\Service\PlayIntegrity {
+    class DeviceAttributes extends \Google\Model
     {
+        /**
+         * Android SDK version of the device, as defined in the public Android
+         * documentation:
+         * https://developer.android.com/reference/android/os/Build.VERSION_CODES. It
+         * won't be set if a necessary requirement was missed. For example
+         * DeviceIntegrity did not meet the minimum bar.
+         *
+         * @var int
+         */
+        public $sdkVersion;
+        /**
+         * Android SDK version of the device, as defined in the public Android
+         * documentation:
+         * https://developer.android.com/reference/android/os/Build.VERSION_CODES. It
+         * won't be set if a necessary requirement was missed. For example
+         * DeviceIntegrity did not meet the minimum bar.
+         *
+         * @param int $sdkVersion
+         */
+        public function setSdkVersion($sdkVersion)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSdkVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\PlayIntegrity\DeviceAttributes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSdkVersion()
+    class Google_Service_PlayIntegrity_DeviceAttributes extends \Google\Service\PlayIntegrity\DeviceAttributes
     {
     }
 }

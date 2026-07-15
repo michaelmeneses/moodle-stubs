@@ -8,6 +8,8 @@
  */
 namespace DI\Attribute;
 
+use Attribute;
+use DI\Definition\Exception\InvalidAttribute;
 /**
  * #[Inject] attribute.
  *

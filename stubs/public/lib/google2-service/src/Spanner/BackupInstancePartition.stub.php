@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class BackupInstancePartition extends \Google\Model
-{
-    /**
-     * A unique identifier for the instance partition. Values are of the form
-     * `projects//instances//instancePartitions/`
-     *
-     * @var string
-     */
-    public $instancePartition;
-    /**
-     * A unique identifier for the instance partition. Values are of the form
-     * `projects//instances//instancePartitions/`
-     *
-     * @param string $instancePartition
-     */
-    public function setInstancePartition($instancePartition)
+namespace Google\Service\Spanner {
+    class BackupInstancePartition extends \Google\Model
     {
+        /**
+         * A unique identifier for the instance partition. Values are of the form
+         * `projects//instances//instancePartitions/`
+         *
+         * @var string
+         */
+        public $instancePartition;
+        /**
+         * A unique identifier for the instance partition. Values are of the form
+         * `projects//instances//instancePartitions/`
+         *
+         * @param string $instancePartition
+         */
+        public function setInstancePartition($instancePartition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstancePartition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\BackupInstancePartition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstancePartition()
+    class Google_Service_Spanner_BackupInstancePartition extends \Google\Service\Spanner\BackupInstancePartition
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class SingleUser extends \Google\Model
-{
-    /**
-     * User value as email.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * User value as email.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
+namespace Google\Service\DriveActivity {
+    class SingleUser extends \Google\Model
     {
+        /**
+         * User value as email.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * User value as email.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveActivity\SingleUser registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValue()
+    class Google_Service_DriveActivity_SingleUser extends \Google\Service\DriveActivity\SingleUser
     {
     }
 }

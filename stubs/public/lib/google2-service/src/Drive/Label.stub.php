@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class Label extends \Google\Model
-{
-    protected $fieldsType = LabelField::class;
-    protected $fieldsDataType = 'map';
-    /**
-     * The ID of the label.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * This is always drive#label
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The revision ID of the label.
-     *
-     * @var string
-     */
-    public $revisionId;
-    /**
-     * A map of the fields on the label, keyed by the field's ID.
-     *
-     * @param LabelField[] $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\Drive {
+    class Label extends \Google\Model
     {
+        protected $fieldsType = LabelField::class;
+        protected $fieldsDataType = 'map';
+        /**
+         * The ID of the label.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * This is always drive#label
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The revision ID of the label.
+         *
+         * @var string
+         */
+        public $revisionId;
+        /**
+         * A map of the fields on the label, keyed by the field's ID.
+         *
+         * @param LabelField[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return LabelField[]
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * The ID of the label.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * This is always drive#label
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The revision ID of the label.
+         *
+         * @param string $revisionId
+         */
+        public function setRevisionId($revisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LabelField[]
+     * Runtime class alias of \Google\Service\Drive\Label registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
-    {
-    }
-    /**
-     * The ID of the label.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * This is always drive#label
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The revision ID of the label.
-     *
-     * @param string $revisionId
-     */
-    public function setRevisionId($revisionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionId()
+    class Google_Service_Drive_Label extends \Google\Service\Drive\Label
     {
     }
 }

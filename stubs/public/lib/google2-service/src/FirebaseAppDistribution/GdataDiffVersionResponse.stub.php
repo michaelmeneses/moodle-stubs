@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppDistribution;
-
-class GdataDiffVersionResponse extends \Google\Model
-{
-    /**
-     * The total size of the server object.
-     *
-     * @var string
-     */
-    public $objectSizeBytes;
-    /**
-     * The version of the object stored at the server.
-     *
-     * @var string
-     */
-    public $objectVersion;
-    /**
-     * The total size of the server object.
-     *
-     * @param string $objectSizeBytes
-     */
-    public function setObjectSizeBytes($objectSizeBytes)
+namespace Google\Service\FirebaseAppDistribution {
+    class GdataDiffVersionResponse extends \Google\Model
     {
+        /**
+         * The total size of the server object.
+         *
+         * @var string
+         */
+        public $objectSizeBytes;
+        /**
+         * The version of the object stored at the server.
+         *
+         * @var string
+         */
+        public $objectVersion;
+        /**
+         * The total size of the server object.
+         *
+         * @param string $objectSizeBytes
+         */
+        public function setObjectSizeBytes($objectSizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectSizeBytes()
+        {
+        }
+        /**
+         * The version of the object stored at the server.
+         *
+         * @param string $objectVersion
+         */
+        public function setObjectVersion($objectVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseAppDistribution\GdataDiffVersionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectSizeBytes()
-    {
-    }
-    /**
-     * The version of the object stored at the server.
-     *
-     * @param string $objectVersion
-     */
-    public function setObjectVersion($objectVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectVersion()
+    class Google_Service_FirebaseAppDistribution_GdataDiffVersionResponse extends \Google\Service\FirebaseAppDistribution\GdataDiffVersionResponse
     {
     }
 }

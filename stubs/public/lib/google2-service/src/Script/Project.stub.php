@@ -21,144 +21,153 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script;
-
-class Project extends \Google\Model
-{
-    /**
-     * When the script was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $creatorType = GoogleAppsScriptTypeUser::class;
-    protected $creatorDataType = '';
-    protected $lastModifyUserType = GoogleAppsScriptTypeUser::class;
-    protected $lastModifyUserDataType = '';
-    /**
-     * The parent's Drive ID that the script will be attached to. This is usually
-     * the ID of a Google Document or Google Sheet. This field is optional, and if
-     * not set, a stand-alone script will be created.
-     *
-     * @var string
-     */
-    public $parentId;
-    /**
-     * The script project's Drive ID.
-     *
-     * @var string
-     */
-    public $scriptId;
-    /**
-     * The title for the project.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * When the script was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * When the script was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Script {
+    class Project extends \Google\Model
     {
+        /**
+         * When the script was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $creatorType = GoogleAppsScriptTypeUser::class;
+        protected $creatorDataType = '';
+        protected $lastModifyUserType = GoogleAppsScriptTypeUser::class;
+        protected $lastModifyUserDataType = '';
+        /**
+         * The parent's Drive ID that the script will be attached to. This is usually
+         * the ID of a Google Document or Google Sheet. This field is optional, and if
+         * not set, a stand-alone script will be created.
+         *
+         * @var string
+         */
+        public $parentId;
+        /**
+         * The script project's Drive ID.
+         *
+         * @var string
+         */
+        public $scriptId;
+        /**
+         * The title for the project.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * When the script was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * When the script was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * User who originally created the script.
+         *
+         * @param GoogleAppsScriptTypeUser $creator
+         */
+        public function setCreator(GoogleAppsScriptTypeUser $creator)
+        {
+        }
+        /**
+         * @return GoogleAppsScriptTypeUser
+         */
+        public function getCreator()
+        {
+        }
+        /**
+         * User who last modified the script.
+         *
+         * @param GoogleAppsScriptTypeUser $lastModifyUser
+         */
+        public function setLastModifyUser(GoogleAppsScriptTypeUser $lastModifyUser)
+        {
+        }
+        /**
+         * @return GoogleAppsScriptTypeUser
+         */
+        public function getLastModifyUser()
+        {
+        }
+        /**
+         * The parent's Drive ID that the script will be attached to. This is usually
+         * the ID of a Google Document or Google Sheet. This field is optional, and if
+         * not set, a stand-alone script will be created.
+         *
+         * @param string $parentId
+         */
+        public function setParentId($parentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParentId()
+        {
+        }
+        /**
+         * The script project's Drive ID.
+         *
+         * @param string $scriptId
+         */
+        public function setScriptId($scriptId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScriptId()
+        {
+        }
+        /**
+         * The title for the project.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * When the script was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Script\Project registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * User who originally created the script.
-     *
-     * @param GoogleAppsScriptTypeUser $creator
-     */
-    public function setCreator(GoogleAppsScriptTypeUser $creator)
-    {
-    }
-    /**
-     * @return GoogleAppsScriptTypeUser
-     */
-    public function getCreator()
-    {
-    }
-    /**
-     * User who last modified the script.
-     *
-     * @param GoogleAppsScriptTypeUser $lastModifyUser
-     */
-    public function setLastModifyUser(GoogleAppsScriptTypeUser $lastModifyUser)
-    {
-    }
-    /**
-     * @return GoogleAppsScriptTypeUser
-     */
-    public function getLastModifyUser()
-    {
-    }
-    /**
-     * The parent's Drive ID that the script will be attached to. This is usually
-     * the ID of a Google Document or Google Sheet. This field is optional, and if
-     * not set, a stand-alone script will be created.
-     *
-     * @param string $parentId
-     */
-    public function setParentId($parentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParentId()
-    {
-    }
-    /**
-     * The script project's Drive ID.
-     *
-     * @param string $scriptId
-     */
-    public function setScriptId($scriptId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScriptId()
-    {
-    }
-    /**
-     * The title for the project.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * When the script was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Script_Project extends \Google\Service\Script\Project
     {
     }
 }

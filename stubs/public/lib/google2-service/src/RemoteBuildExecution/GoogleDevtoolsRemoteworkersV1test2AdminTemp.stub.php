@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemoteworkersV1test2AdminTemp extends \Google\Model
-{
-    public $arg;
-    public $command;
-    public function setArg($arg)
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemoteworkersV1test2AdminTemp extends \Google\Model
     {
+        public $arg;
+        public $command;
+        public function setArg($arg)
+        {
+        }
+        public function getArg()
+        {
+        }
+        public function setCommand($command)
+        {
+        }
+        public function getCommand()
+        {
+        }
     }
-    public function getArg()
-    {
-    }
-    public function setCommand($command)
-    {
-    }
-    public function getCommand()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemoteworkersV1test2AdminTemp registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemoteworkersV1test2AdminTemp extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemoteworkersV1test2AdminTemp
     {
     }
 }

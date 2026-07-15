@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class GlossaryTermsSet extends \Google\Collection
-{
-    protected $collection_key = 'terms';
-    protected $termsType = GlossaryTerm::class;
-    protected $termsDataType = 'array';
-    /**
-     * Each term in the set represents a term that can be replaced by the other
-     * terms.
-     *
-     * @param GlossaryTerm[] $terms
-     */
-    public function setTerms($terms)
+namespace Google\Service\Translate {
+    class GlossaryTermsSet extends \Google\Collection
     {
+        protected $collection_key = 'terms';
+        protected $termsType = GlossaryTerm::class;
+        protected $termsDataType = 'array';
+        /**
+         * Each term in the set represents a term that can be replaced by the other
+         * terms.
+         *
+         * @param GlossaryTerm[] $terms
+         */
+        public function setTerms($terms)
+        {
+        }
+        /**
+         * @return GlossaryTerm[]
+         */
+        public function getTerms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GlossaryTerm[]
+     * Runtime class alias of \Google\Service\Translate\GlossaryTermsSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTerms()
+    class Google_Service_Translate_GlossaryTermsSet extends \Google\Service\Translate\GlossaryTermsSet
     {
     }
 }

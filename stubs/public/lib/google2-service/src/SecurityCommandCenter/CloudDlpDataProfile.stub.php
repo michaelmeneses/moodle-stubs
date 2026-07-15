@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class CloudDlpDataProfile extends \Google\Collection
-{
-    /**
-     * Unspecified parent type.
-     */
-    public const PARENT_TYPE_PARENT_TYPE_UNSPECIFIED = 'PARENT_TYPE_UNSPECIFIED';
-    /**
-     * Organization-level configurations.
-     */
-    public const PARENT_TYPE_ORGANIZATION = 'ORGANIZATION';
-    /**
-     * Project-level configurations.
-     */
-    public const PARENT_TYPE_PROJECT = 'PROJECT';
-    protected $collection_key = 'infoTypes';
-    /**
-     * Name of the data profile, for example,
-     * `projects/123/locations/europe/tableProfiles/8383929`.
-     *
-     * @var string
-     */
-    public $dataProfile;
-    protected $infoTypesType = InfoType::class;
-    protected $infoTypesDataType = 'array';
-    /**
-     * The resource hierarchy level at which the data profile was generated.
-     *
-     * @var string
-     */
-    public $parentType;
-    /**
-     * Name of the data profile, for example,
-     * `projects/123/locations/europe/tableProfiles/8383929`.
-     *
-     * @param string $dataProfile
-     */
-    public function setDataProfile($dataProfile)
+namespace Google\Service\SecurityCommandCenter {
+    class CloudDlpDataProfile extends \Google\Collection
     {
+        /**
+         * Unspecified parent type.
+         */
+        public const PARENT_TYPE_PARENT_TYPE_UNSPECIFIED = 'PARENT_TYPE_UNSPECIFIED';
+        /**
+         * Organization-level configurations.
+         */
+        public const PARENT_TYPE_ORGANIZATION = 'ORGANIZATION';
+        /**
+         * Project-level configurations.
+         */
+        public const PARENT_TYPE_PROJECT = 'PROJECT';
+        protected $collection_key = 'infoTypes';
+        /**
+         * Name of the data profile, for example,
+         * `projects/123/locations/europe/tableProfiles/8383929`.
+         *
+         * @var string
+         */
+        public $dataProfile;
+        protected $infoTypesType = InfoType::class;
+        protected $infoTypesDataType = 'array';
+        /**
+         * The resource hierarchy level at which the data profile was generated.
+         *
+         * @var string
+         */
+        public $parentType;
+        /**
+         * Name of the data profile, for example,
+         * `projects/123/locations/europe/tableProfiles/8383929`.
+         *
+         * @param string $dataProfile
+         */
+        public function setDataProfile($dataProfile)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataProfile()
+        {
+        }
+        /**
+         * Type of information detected by SDP. Info type includes name, version and
+         * sensitivity of the detected information type.
+         *
+         * @param InfoType[] $infoTypes
+         */
+        public function setInfoTypes($infoTypes)
+        {
+        }
+        /**
+         * @return InfoType[]
+         */
+        public function getInfoTypes()
+        {
+        }
+        /**
+         * The resource hierarchy level at which the data profile was generated.
+         *
+         * Accepted values: PARENT_TYPE_UNSPECIFIED, ORGANIZATION, PROJECT
+         *
+         * @param self::PARENT_TYPE_* $parentType
+         */
+        public function setParentType($parentType)
+        {
+        }
+        /**
+         * @return self::PARENT_TYPE_*
+         */
+        public function getParentType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\CloudDlpDataProfile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataProfile()
-    {
-    }
-    /**
-     * Type of information detected by SDP. Info type includes name, version and
-     * sensitivity of the detected information type.
-     *
-     * @param InfoType[] $infoTypes
-     */
-    public function setInfoTypes($infoTypes)
-    {
-    }
-    /**
-     * @return InfoType[]
-     */
-    public function getInfoTypes()
-    {
-    }
-    /**
-     * The resource hierarchy level at which the data profile was generated.
-     *
-     * Accepted values: PARENT_TYPE_UNSPECIFIED, ORGANIZATION, PROJECT
-     *
-     * @param self::PARENT_TYPE_* $parentType
-     */
-    public function setParentType($parentType)
-    {
-    }
-    /**
-     * @return self::PARENT_TYPE_*
-     */
-    public function getParentType()
+    class Google_Service_SecurityCommandCenter_CloudDlpDataProfile extends \Google\Service\SecurityCommandCenter\CloudDlpDataProfile
     {
     }
 }

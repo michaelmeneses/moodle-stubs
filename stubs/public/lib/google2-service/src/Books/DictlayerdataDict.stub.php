@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class DictlayerdataDict extends \Google\Collection
-{
-    protected $collection_key = 'words';
-    protected $sourceType = DictlayerdataDictSource::class;
-    protected $sourceDataType = '';
-    protected $wordsType = DictlayerdataDictWords::class;
-    protected $wordsDataType = 'array';
-    /**
-     * The source, url and attribution for this dictionary data.
-     *
-     * @param DictlayerdataDictSource $source
-     */
-    public function setSource(DictlayerdataDictSource $source)
+namespace Google\Service\Books {
+    class DictlayerdataDict extends \Google\Collection
     {
+        protected $collection_key = 'words';
+        protected $sourceType = DictlayerdataDictSource::class;
+        protected $sourceDataType = '';
+        protected $wordsType = DictlayerdataDictWords::class;
+        protected $wordsDataType = 'array';
+        /**
+         * The source, url and attribution for this dictionary data.
+         *
+         * @param DictlayerdataDictSource $source
+         */
+        public function setSource(DictlayerdataDictSource $source)
+        {
+        }
+        /**
+         * @return DictlayerdataDictSource
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * @param DictlayerdataDictWords[] $words
+         */
+        public function setWords($words)
+        {
+        }
+        /**
+         * @return DictlayerdataDictWords[]
+         */
+        public function getWords()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DictlayerdataDictSource
+     * Runtime class alias of \Google\Service\Books\DictlayerdataDict registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSource()
-    {
-    }
-    /**
-     * @param DictlayerdataDictWords[] $words
-     */
-    public function setWords($words)
-    {
-    }
-    /**
-     * @return DictlayerdataDictWords[]
-     */
-    public function getWords()
+    class Google_Service_Books_DictlayerdataDict extends \Google\Service\Books\DictlayerdataDict
     {
     }
 }

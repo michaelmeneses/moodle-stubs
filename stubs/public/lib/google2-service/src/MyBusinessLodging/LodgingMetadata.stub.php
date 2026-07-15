@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessLodging;
-
-class LodgingMetadata extends \Google\Model
-{
-    /**
-     * Required. The latest time at which the Lodging data is asserted to be true
-     * in the real world. This is not necessarily the time at which the request is
-     * made.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Required. The latest time at which the Lodging data is asserted to be true
-     * in the real world. This is not necessarily the time at which the request is
-     * made.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
+namespace Google\Service\MyBusinessLodging {
+    class LodgingMetadata extends \Google\Model
     {
+        /**
+         * Required. The latest time at which the Lodging data is asserted to be true
+         * in the real world. This is not necessarily the time at which the request is
+         * made.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Required. The latest time at which the Lodging data is asserted to be true
+         * in the real world. This is not necessarily the time at which the request is
+         * made.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessLodging\LodgingMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUpdateTime()
+    class Google_Service_MyBusinessLodging_LodgingMetadata extends \Google\Service\MyBusinessLodging\LodgingMetadata
     {
     }
 }

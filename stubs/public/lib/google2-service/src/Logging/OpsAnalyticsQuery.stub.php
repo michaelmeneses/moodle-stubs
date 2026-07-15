@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class OpsAnalyticsQuery extends \Google\Model
-{
-    /**
-     * Required. A logs analytics SQL query, which generally follows BigQuery
-     * format.This is the SQL query that appears in the Log Analytics UI's query
-     * editor.
-     *
-     * @var string
-     */
-    public $sqlQueryText;
-    /**
-     * Required. A logs analytics SQL query, which generally follows BigQuery
-     * format.This is the SQL query that appears in the Log Analytics UI's query
-     * editor.
-     *
-     * @param string $sqlQueryText
-     */
-    public function setSqlQueryText($sqlQueryText)
+namespace Google\Service\Logging {
+    class OpsAnalyticsQuery extends \Google\Model
     {
+        /**
+         * Required. A logs analytics SQL query, which generally follows BigQuery
+         * format.This is the SQL query that appears in the Log Analytics UI's query
+         * editor.
+         *
+         * @var string
+         */
+        public $sqlQueryText;
+        /**
+         * Required. A logs analytics SQL query, which generally follows BigQuery
+         * format.This is the SQL query that appears in the Log Analytics UI's query
+         * editor.
+         *
+         * @param string $sqlQueryText
+         */
+        public function setSqlQueryText($sqlQueryText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSqlQueryText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Logging\OpsAnalyticsQuery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSqlQueryText()
+    class Google_Service_Logging_OpsAnalyticsQuery extends \Google\Service\Logging\OpsAnalyticsQuery
     {
     }
 }

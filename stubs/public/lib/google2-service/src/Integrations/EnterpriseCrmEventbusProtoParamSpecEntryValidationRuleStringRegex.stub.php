@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleStringRegex extends \Google\Model
-{
-    /**
-     * Whether the regex matcher is applied exclusively (if true, matching values
-     * will be rejected).
-     *
-     * @var bool
-     */
-    public $exclusive;
-    /**
-     * The regex applied to the input value(s).
-     *
-     * @var string
-     */
-    public $regex;
-    /**
-     * Whether the regex matcher is applied exclusively (if true, matching values
-     * will be rejected).
-     *
-     * @param bool $exclusive
-     */
-    public function setExclusive($exclusive)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleStringRegex extends \Google\Model
     {
+        /**
+         * Whether the regex matcher is applied exclusively (if true, matching values
+         * will be rejected).
+         *
+         * @var bool
+         */
+        public $exclusive;
+        /**
+         * The regex applied to the input value(s).
+         *
+         * @var string
+         */
+        public $regex;
+        /**
+         * Whether the regex matcher is applied exclusively (if true, matching values
+         * will be rejected).
+         *
+         * @param bool $exclusive
+         */
+        public function setExclusive($exclusive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getExclusive()
+        {
+        }
+        /**
+         * The regex applied to the input value(s).
+         *
+         * @param string $regex
+         */
+        public function setRegex($regex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleStringRegex registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExclusive()
-    {
-    }
-    /**
-     * The regex applied to the input value(s).
-     *
-     * @param string $regex
-     */
-    public function setRegex($regex)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegex()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleStringRegex extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleStringRegex
     {
     }
 }

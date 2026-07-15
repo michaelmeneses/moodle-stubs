@@ -21,149 +21,158 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class DimensionMetadata extends \Google\Collection
-{
-    protected $collection_key = 'deprecatedApiNames';
-    /**
-     * This dimension's name. Useable in [Dimension](#Dimension)'s `name`. For
-     * example, `eventName`.
-     *
-     * @var string
-     */
-    public $apiName;
-    /**
-     * The display name of the category that this dimension belongs to. Similar
-     * dimensions and metrics are categorized together.
-     *
-     * @var string
-     */
-    public $category;
-    /**
-     * True if the dimension is custom to this property. This includes user,
-     * event, & item scoped custom dimensions; to learn more about custom
-     * dimensions, see https://support.google.com/analytics/answer/14240153. This
-     * also include custom channel groups; to learn more about custom channel
-     * groups, see https://support.google.com/analytics/answer/13051316.
-     *
-     * @var bool
-     */
-    public $customDefinition;
-    /**
-     * Still usable but deprecated names for this dimension. If populated, this
-     * dimension is available by either `apiName` or one of `deprecatedApiNames`
-     * for a period of time. After the deprecation period, the dimension will be
-     * available only by `apiName`.
-     *
-     * @var string[]
-     */
-    public $deprecatedApiNames;
-    /**
-     * Description of how this dimension is used and calculated.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * This dimension's name within the Google Analytics user interface. For
-     * example, `Event name`.
-     *
-     * @var string
-     */
-    public $uiName;
-    /**
-     * This dimension's name. Useable in [Dimension](#Dimension)'s `name`. For
-     * example, `eventName`.
-     *
-     * @param string $apiName
-     */
-    public function setApiName($apiName)
+namespace Google\Service\AnalyticsData {
+    class DimensionMetadata extends \Google\Collection
     {
+        protected $collection_key = 'deprecatedApiNames';
+        /**
+         * This dimension's name. Useable in [Dimension](#Dimension)'s `name`. For
+         * example, `eventName`.
+         *
+         * @var string
+         */
+        public $apiName;
+        /**
+         * The display name of the category that this dimension belongs to. Similar
+         * dimensions and metrics are categorized together.
+         *
+         * @var string
+         */
+        public $category;
+        /**
+         * True if the dimension is custom to this property. This includes user,
+         * event, & item scoped custom dimensions; to learn more about custom
+         * dimensions, see https://support.google.com/analytics/answer/14240153. This
+         * also include custom channel groups; to learn more about custom channel
+         * groups, see https://support.google.com/analytics/answer/13051316.
+         *
+         * @var bool
+         */
+        public $customDefinition;
+        /**
+         * Still usable but deprecated names for this dimension. If populated, this
+         * dimension is available by either `apiName` or one of `deprecatedApiNames`
+         * for a period of time. After the deprecation period, the dimension will be
+         * available only by `apiName`.
+         *
+         * @var string[]
+         */
+        public $deprecatedApiNames;
+        /**
+         * Description of how this dimension is used and calculated.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * This dimension's name within the Google Analytics user interface. For
+         * example, `Event name`.
+         *
+         * @var string
+         */
+        public $uiName;
+        /**
+         * This dimension's name. Useable in [Dimension](#Dimension)'s `name`. For
+         * example, `eventName`.
+         *
+         * @param string $apiName
+         */
+        public function setApiName($apiName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiName()
+        {
+        }
+        /**
+         * The display name of the category that this dimension belongs to. Similar
+         * dimensions and metrics are categorized together.
+         *
+         * @param string $category
+         */
+        public function setCategory($category)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategory()
+        {
+        }
+        /**
+         * True if the dimension is custom to this property. This includes user,
+         * event, & item scoped custom dimensions; to learn more about custom
+         * dimensions, see https://support.google.com/analytics/answer/14240153. This
+         * also include custom channel groups; to learn more about custom channel
+         * groups, see https://support.google.com/analytics/answer/13051316.
+         *
+         * @param bool $customDefinition
+         */
+        public function setCustomDefinition($customDefinition)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCustomDefinition()
+        {
+        }
+        /**
+         * Still usable but deprecated names for this dimension. If populated, this
+         * dimension is available by either `apiName` or one of `deprecatedApiNames`
+         * for a period of time. After the deprecation period, the dimension will be
+         * available only by `apiName`.
+         *
+         * @param string[] $deprecatedApiNames
+         */
+        public function setDeprecatedApiNames($deprecatedApiNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDeprecatedApiNames()
+        {
+        }
+        /**
+         * Description of how this dimension is used and calculated.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * This dimension's name within the Google Analytics user interface. For
+         * example, `Event name`.
+         *
+         * @param string $uiName
+         */
+        public function setUiName($uiName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUiName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsData\DimensionMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiName()
-    {
-    }
-    /**
-     * The display name of the category that this dimension belongs to. Similar
-     * dimensions and metrics are categorized together.
-     *
-     * @param string $category
-     */
-    public function setCategory($category)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCategory()
-    {
-    }
-    /**
-     * True if the dimension is custom to this property. This includes user,
-     * event, & item scoped custom dimensions; to learn more about custom
-     * dimensions, see https://support.google.com/analytics/answer/14240153. This
-     * also include custom channel groups; to learn more about custom channel
-     * groups, see https://support.google.com/analytics/answer/13051316.
-     *
-     * @param bool $customDefinition
-     */
-    public function setCustomDefinition($customDefinition)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCustomDefinition()
-    {
-    }
-    /**
-     * Still usable but deprecated names for this dimension. If populated, this
-     * dimension is available by either `apiName` or one of `deprecatedApiNames`
-     * for a period of time. After the deprecation period, the dimension will be
-     * available only by `apiName`.
-     *
-     * @param string[] $deprecatedApiNames
-     */
-    public function setDeprecatedApiNames($deprecatedApiNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDeprecatedApiNames()
-    {
-    }
-    /**
-     * Description of how this dimension is used and calculated.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * This dimension's name within the Google Analytics user interface. For
-     * example, `Event name`.
-     *
-     * @param string $uiName
-     */
-    public function setUiName($uiName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUiName()
+    class Google_Service_AnalyticsData_DimensionMetadata extends \Google\Service\AnalyticsData\DimensionMetadata
     {
     }
 }

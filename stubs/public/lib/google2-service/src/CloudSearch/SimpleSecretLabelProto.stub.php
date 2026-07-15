@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SimpleSecretLabelProto extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $capabilityId;
-    /**
-     * @var string
-     */
-    public $genericLabel;
-    /**
-     * @var string
-     */
-    public $inviteId;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param int
-     */
-    public function setCapabilityId($capabilityId)
+namespace Google\Service\CloudSearch {
+    class SimpleSecretLabelProto extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $capabilityId;
+        /**
+         * @var string
+         */
+        public $genericLabel;
+        /**
+         * @var string
+         */
+        public $inviteId;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param int
+         */
+        public function setCapabilityId($capabilityId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCapabilityId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGenericLabel($genericLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGenericLabel()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInviteId($inviteId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInviteId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudSearch\SimpleSecretLabelProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCapabilityId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGenericLabel($genericLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGenericLabel()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInviteId($inviteId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInviteId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudSearch_SimpleSecretLabelProto extends \Google\Service\CloudSearch\SimpleSecretLabelProto
     {
     }
 }

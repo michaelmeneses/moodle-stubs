@@ -21,125 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class PartialGroupByKeyInstruction extends \Google\Collection
-{
-    protected $collection_key = 'sideInputs';
-    protected $inputType = InstructionInput::class;
-    protected $inputDataType = '';
-    /**
-     * The codec to use for interpreting an element in the input PTable.
-     *
-     * @var array[]
-     */
-    public $inputElementCodec;
-    /**
-     * If this instruction includes a combining function this is the name of the
-     * intermediate store between the GBK and the CombineValues.
-     *
-     * @var string
-     */
-    public $originalCombineValuesInputStoreName;
-    /**
-     * If this instruction includes a combining function, this is the name of the
-     * CombineValues instruction lifted into this instruction.
-     *
-     * @var string
-     */
-    public $originalCombineValuesStepName;
-    protected $sideInputsType = SideInputInfo::class;
-    protected $sideInputsDataType = 'array';
-    /**
-     * The value combining function to invoke.
-     *
-     * @var array[]
-     */
-    public $valueCombiningFn;
-    /**
-     * Describes the input to the partial group-by-key instruction.
-     *
-     * @param InstructionInput $input
-     */
-    public function setInput(InstructionInput $input)
+namespace Google\Service\Dataflow {
+    class PartialGroupByKeyInstruction extends \Google\Collection
     {
+        protected $collection_key = 'sideInputs';
+        protected $inputType = InstructionInput::class;
+        protected $inputDataType = '';
+        /**
+         * The codec to use for interpreting an element in the input PTable.
+         *
+         * @var array[]
+         */
+        public $inputElementCodec;
+        /**
+         * If this instruction includes a combining function this is the name of the
+         * intermediate store between the GBK and the CombineValues.
+         *
+         * @var string
+         */
+        public $originalCombineValuesInputStoreName;
+        /**
+         * If this instruction includes a combining function, this is the name of the
+         * CombineValues instruction lifted into this instruction.
+         *
+         * @var string
+         */
+        public $originalCombineValuesStepName;
+        protected $sideInputsType = SideInputInfo::class;
+        protected $sideInputsDataType = 'array';
+        /**
+         * The value combining function to invoke.
+         *
+         * @var array[]
+         */
+        public $valueCombiningFn;
+        /**
+         * Describes the input to the partial group-by-key instruction.
+         *
+         * @param InstructionInput $input
+         */
+        public function setInput(InstructionInput $input)
+        {
+        }
+        /**
+         * @return InstructionInput
+         */
+        public function getInput()
+        {
+        }
+        /**
+         * The codec to use for interpreting an element in the input PTable.
+         *
+         * @param array[] $inputElementCodec
+         */
+        public function setInputElementCodec($inputElementCodec)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getInputElementCodec()
+        {
+        }
+        /**
+         * If this instruction includes a combining function this is the name of the
+         * intermediate store between the GBK and the CombineValues.
+         *
+         * @param string $originalCombineValuesInputStoreName
+         */
+        public function setOriginalCombineValuesInputStoreName($originalCombineValuesInputStoreName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOriginalCombineValuesInputStoreName()
+        {
+        }
+        /**
+         * If this instruction includes a combining function, this is the name of the
+         * CombineValues instruction lifted into this instruction.
+         *
+         * @param string $originalCombineValuesStepName
+         */
+        public function setOriginalCombineValuesStepName($originalCombineValuesStepName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOriginalCombineValuesStepName()
+        {
+        }
+        /**
+         * Zero or more side inputs.
+         *
+         * @param SideInputInfo[] $sideInputs
+         */
+        public function setSideInputs($sideInputs)
+        {
+        }
+        /**
+         * @return SideInputInfo[]
+         */
+        public function getSideInputs()
+        {
+        }
+        /**
+         * The value combining function to invoke.
+         *
+         * @param array[] $valueCombiningFn
+         */
+        public function setValueCombiningFn($valueCombiningFn)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getValueCombiningFn()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InstructionInput
+     * Runtime class alias of \Google\Service\Dataflow\PartialGroupByKeyInstruction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInput()
-    {
-    }
-    /**
-     * The codec to use for interpreting an element in the input PTable.
-     *
-     * @param array[] $inputElementCodec
-     */
-    public function setInputElementCodec($inputElementCodec)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getInputElementCodec()
-    {
-    }
-    /**
-     * If this instruction includes a combining function this is the name of the
-     * intermediate store between the GBK and the CombineValues.
-     *
-     * @param string $originalCombineValuesInputStoreName
-     */
-    public function setOriginalCombineValuesInputStoreName($originalCombineValuesInputStoreName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOriginalCombineValuesInputStoreName()
-    {
-    }
-    /**
-     * If this instruction includes a combining function, this is the name of the
-     * CombineValues instruction lifted into this instruction.
-     *
-     * @param string $originalCombineValuesStepName
-     */
-    public function setOriginalCombineValuesStepName($originalCombineValuesStepName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOriginalCombineValuesStepName()
-    {
-    }
-    /**
-     * Zero or more side inputs.
-     *
-     * @param SideInputInfo[] $sideInputs
-     */
-    public function setSideInputs($sideInputs)
-    {
-    }
-    /**
-     * @return SideInputInfo[]
-     */
-    public function getSideInputs()
-    {
-    }
-    /**
-     * The value combining function to invoke.
-     *
-     * @param array[] $valueCombiningFn
-     */
-    public function setValueCombiningFn($valueCombiningFn)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getValueCombiningFn()
+    class Google_Service_Dataflow_PartialGroupByKeyInstruction extends \Google\Service\Dataflow\PartialGroupByKeyInstruction
     {
     }
 }

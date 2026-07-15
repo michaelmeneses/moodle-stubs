@@ -21,705 +21,714 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class RequestLog extends \Google\Collection
-{
-    protected $collection_key = 'sourceReference';
-    /**
-     * App Engine release version.
-     *
-     * @var string
-     */
-    public $appEngineRelease;
-    /**
-     * Application that handled this request.
-     *
-     * @var string
-     */
-    public $appId;
-    /**
-     * An indication of the relative cost of serving this request.
-     *
-     * @var 
-     */
-    public $cost;
-    /**
-     * Time when the request finished.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Whether this request is finished or active.
-     *
-     * @var bool
-     */
-    public $finished;
-    /**
-     * Whether this is the first RequestLog entry for this request. If an active
-     * request has several RequestLog entries written to Stackdriver Logging, then
-     * this field will be set for one of them.
-     *
-     * @var bool
-     */
-    public $first;
-    /**
-     * Internet host and port number of the resource being requested.
-     *
-     * @var string
-     */
-    public $host;
-    /**
-     * HTTP version of request. Example: "HTTP/1.1".
-     *
-     * @var string
-     */
-    public $httpVersion;
-    /**
-     * An identifier for the instance that handled the request.
-     *
-     * @var string
-     */
-    public $instanceId;
-    /**
-     * If the instance processing this request belongs to a manually scaled
-     * module, then this is the 0-based index of the instance. Otherwise, this
-     * value is -1.
-     *
-     * @var int
-     */
-    public $instanceIndex;
-    /**
-     * Origin IP address.
-     *
-     * @var string
-     */
-    public $ip;
-    /**
-     * Latency of the request.
-     *
-     * @var string
-     */
-    public $latency;
-    protected $lineType = LogLine::class;
-    protected $lineDataType = 'array';
-    /**
-     * Number of CPU megacycles used to process request.
-     *
-     * @var string
-     */
-    public $megaCycles;
-    /**
-     * Request method. Example: "GET", "HEAD", "PUT", "POST", "DELETE".
-     *
-     * @var string
-     */
-    public $method;
-    /**
-     * Module of the application that handled this request.
-     *
-     * @var string
-     */
-    public $moduleId;
-    /**
-     * The logged-in user who made the request.Most likely, this is the part of
-     * the user's email before the @ sign. The field value is the same for
-     * different requests from the same user, but different users can have similar
-     * names. This information is also available to the application via the App
-     * Engine Users API.This field will be populated starting with App Engine
-     * 1.9.21.
-     *
-     * @var string
-     */
-    public $nickname;
-    /**
-     * Time this request spent in the pending request queue.
-     *
-     * @var string
-     */
-    public $pendingTime;
-    /**
-     * Referrer URL of request.
-     *
-     * @var string
-     */
-    public $referrer;
-    /**
-     * Globally unique identifier for a request, which is based on the request
-     * start time. Request IDs for requests which started later will compare
-     * greater as strings than those for requests which started earlier.
-     *
-     * @var string
-     */
-    public $requestId;
-    /**
-     * Contains the path and query portion of the URL that was requested. For
-     * example, if the URL was "http://example.com/app?name=val", the resource
-     * would be "/app?name=val". The fragment identifier, which is identified by
-     * the # character, is not included.
-     *
-     * @var string
-     */
-    public $resource;
-    /**
-     * Size in bytes sent back to client by request.
-     *
-     * @var string
-     */
-    public $responseSize;
-    protected $sourceReferenceType = SourceReference::class;
-    protected $sourceReferenceDataType = 'array';
-    /**
-     * Stackdriver Trace span identifier for this request.
-     *
-     * @var string
-     */
-    public $spanId;
-    /**
-     * Time when the request started.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * HTTP response status code. Example: 200, 404.
-     *
-     * @var int
-     */
-    public $status;
-    /**
-     * Task name of the request, in the case of an offline request.
-     *
-     * @var string
-     */
-    public $taskName;
-    /**
-     * Queue name of the request, in the case of an offline request.
-     *
-     * @var string
-     */
-    public $taskQueueName;
-    /**
-     * Stackdriver Trace identifier for this request.
-     *
-     * @var string
-     */
-    public $traceId;
-    /**
-     * If true, the value in the 'trace_id' field was sampled for storage in a
-     * trace backend.
-     *
-     * @var bool
-     */
-    public $traceSampled;
-    /**
-     * File or class that handled the request.
-     *
-     * @var string
-     */
-    public $urlMapEntry;
-    /**
-     * User agent that made the request.
-     *
-     * @var string
-     */
-    public $userAgent;
-    /**
-     * Version of the application that handled this request.
-     *
-     * @var string
-     */
-    public $versionId;
-    /**
-     * Whether this was a loading request for the instance.
-     *
-     * @var bool
-     */
-    public $wasLoadingRequest;
-    /**
-     * App Engine release version.
-     *
-     * @param string $appEngineRelease
-     */
-    public function setAppEngineRelease($appEngineRelease)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAppEngineRelease()
-    {
-    }
-    /**
-     * Application that handled this request.
-     *
-     * @param string $appId
-     */
-    public function setAppId($appId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAppId()
-    {
-    }
-    public function setCost($cost)
-    {
-    }
-    public function getCost()
-    {
-    }
-    /**
-     * Time when the request finished.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Whether this request is finished or active.
-     *
-     * @param bool $finished
-     */
-    public function setFinished($finished)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getFinished()
-    {
-    }
-    /**
-     * Whether this is the first RequestLog entry for this request. If an active
-     * request has several RequestLog entries written to Stackdriver Logging, then
-     * this field will be set for one of them.
-     *
-     * @param bool $first
-     */
-    public function setFirst($first)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getFirst()
-    {
-    }
-    /**
-     * Internet host and port number of the resource being requested.
-     *
-     * @param string $host
-     */
-    public function setHost($host)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHost()
-    {
-    }
-    /**
-     * HTTP version of request. Example: "HTTP/1.1".
-     *
-     * @param string $httpVersion
-     */
-    public function setHttpVersion($httpVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHttpVersion()
-    {
-    }
-    /**
-     * An identifier for the instance that handled the request.
-     *
-     * @param string $instanceId
-     */
-    public function setInstanceId($instanceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceId()
-    {
-    }
-    /**
-     * If the instance processing this request belongs to a manually scaled
-     * module, then this is the 0-based index of the instance. Otherwise, this
-     * value is -1.
-     *
-     * @param int $instanceIndex
-     */
-    public function setInstanceIndex($instanceIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getInstanceIndex()
-    {
-    }
-    /**
-     * Origin IP address.
-     *
-     * @param string $ip
-     */
-    public function setIp($ip)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIp()
-    {
-    }
-    /**
-     * Latency of the request.
-     *
-     * @param string $latency
-     */
-    public function setLatency($latency)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLatency()
-    {
-    }
-    /**
-     * A list of log lines emitted by the application while serving this request.
-     *
-     * @param LogLine[] $line
-     */
-    public function setLine($line)
-    {
-    }
-    /**
-     * @return LogLine[]
-     */
-    public function getLine()
-    {
-    }
-    /**
-     * Number of CPU megacycles used to process request.
-     *
-     * @param string $megaCycles
-     */
-    public function setMegaCycles($megaCycles)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMegaCycles()
-    {
-    }
-    /**
-     * Request method. Example: "GET", "HEAD", "PUT", "POST", "DELETE".
-     *
-     * @param string $method
-     */
-    public function setMethod($method)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMethod()
-    {
-    }
-    /**
-     * Module of the application that handled this request.
-     *
-     * @param string $moduleId
-     */
-    public function setModuleId($moduleId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModuleId()
-    {
-    }
-    /**
-     * The logged-in user who made the request.Most likely, this is the part of
-     * the user's email before the @ sign. The field value is the same for
-     * different requests from the same user, but different users can have similar
-     * names. This information is also available to the application via the App
-     * Engine Users API.This field will be populated starting with App Engine
-     * 1.9.21.
-     *
-     * @param string $nickname
-     */
-    public function setNickname($nickname)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNickname()
-    {
-    }
-    /**
-     * Time this request spent in the pending request queue.
-     *
-     * @param string $pendingTime
-     */
-    public function setPendingTime($pendingTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPendingTime()
-    {
-    }
-    /**
-     * Referrer URL of request.
-     *
-     * @param string $referrer
-     */
-    public function setReferrer($referrer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferrer()
-    {
-    }
-    /**
-     * Globally unique identifier for a request, which is based on the request
-     * start time. Request IDs for requests which started later will compare
-     * greater as strings than those for requests which started earlier.
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
-    {
-    }
-    /**
-     * Contains the path and query portion of the URL that was requested. For
-     * example, if the URL was "http://example.com/app?name=val", the resource
-     * would be "/app?name=val". The fragment identifier, which is identified by
-     * the # character, is not included.
-     *
-     * @param string $resource
-     */
-    public function setResource($resource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResource()
-    {
-    }
-    /**
-     * Size in bytes sent back to client by request.
-     *
-     * @param string $responseSize
-     */
-    public function setResponseSize($responseSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResponseSize()
-    {
-    }
-    /**
-     * Source code for the application that handled this request. There can be
-     * more than one source reference per deployed application if source code is
-     * distributed among multiple repositories.
-     *
-     * @param SourceReference[] $sourceReference
-     */
-    public function setSourceReference($sourceReference)
-    {
-    }
-    /**
-     * @return SourceReference[]
-     */
-    public function getSourceReference()
-    {
-    }
-    /**
-     * Stackdriver Trace span identifier for this request.
-     *
-     * @param string $spanId
-     */
-    public function setSpanId($spanId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpanId()
-    {
-    }
-    /**
-     * Time when the request started.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * HTTP response status code. Example: 200, 404.
-     *
-     * @param int $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * Task name of the request, in the case of an offline request.
-     *
-     * @param string $taskName
-     */
-    public function setTaskName($taskName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTaskName()
-    {
-    }
-    /**
-     * Queue name of the request, in the case of an offline request.
-     *
-     * @param string $taskQueueName
-     */
-    public function setTaskQueueName($taskQueueName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTaskQueueName()
-    {
-    }
-    /**
-     * Stackdriver Trace identifier for this request.
-     *
-     * @param string $traceId
-     */
-    public function setTraceId($traceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTraceId()
-    {
-    }
-    /**
-     * If true, the value in the 'trace_id' field was sampled for storage in a
-     * trace backend.
-     *
-     * @param bool $traceSampled
-     */
-    public function setTraceSampled($traceSampled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTraceSampled()
-    {
-    }
-    /**
-     * File or class that handled the request.
-     *
-     * @param string $urlMapEntry
-     */
-    public function setUrlMapEntry($urlMapEntry)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrlMapEntry()
-    {
-    }
-    /**
-     * User agent that made the request.
-     *
-     * @param string $userAgent
-     */
-    public function setUserAgent($userAgent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserAgent()
-    {
-    }
-    /**
-     * Version of the application that handled this request.
-     *
-     * @param string $versionId
-     */
-    public function setVersionId($versionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionId()
-    {
-    }
-    /**
-     * Whether this was a loading request for the instance.
-     *
-     * @param bool $wasLoadingRequest
-     */
-    public function setWasLoadingRequest($wasLoadingRequest)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWasLoadingRequest()
+namespace Google\Service\Logging {
+    class RequestLog extends \Google\Collection
+    {
+        protected $collection_key = 'sourceReference';
+        /**
+         * App Engine release version.
+         *
+         * @var string
+         */
+        public $appEngineRelease;
+        /**
+         * Application that handled this request.
+         *
+         * @var string
+         */
+        public $appId;
+        /**
+         * An indication of the relative cost of serving this request.
+         *
+         * @var 
+         */
+        public $cost;
+        /**
+         * Time when the request finished.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Whether this request is finished or active.
+         *
+         * @var bool
+         */
+        public $finished;
+        /**
+         * Whether this is the first RequestLog entry for this request. If an active
+         * request has several RequestLog entries written to Stackdriver Logging, then
+         * this field will be set for one of them.
+         *
+         * @var bool
+         */
+        public $first;
+        /**
+         * Internet host and port number of the resource being requested.
+         *
+         * @var string
+         */
+        public $host;
+        /**
+         * HTTP version of request. Example: "HTTP/1.1".
+         *
+         * @var string
+         */
+        public $httpVersion;
+        /**
+         * An identifier for the instance that handled the request.
+         *
+         * @var string
+         */
+        public $instanceId;
+        /**
+         * If the instance processing this request belongs to a manually scaled
+         * module, then this is the 0-based index of the instance. Otherwise, this
+         * value is -1.
+         *
+         * @var int
+         */
+        public $instanceIndex;
+        /**
+         * Origin IP address.
+         *
+         * @var string
+         */
+        public $ip;
+        /**
+         * Latency of the request.
+         *
+         * @var string
+         */
+        public $latency;
+        protected $lineType = LogLine::class;
+        protected $lineDataType = 'array';
+        /**
+         * Number of CPU megacycles used to process request.
+         *
+         * @var string
+         */
+        public $megaCycles;
+        /**
+         * Request method. Example: "GET", "HEAD", "PUT", "POST", "DELETE".
+         *
+         * @var string
+         */
+        public $method;
+        /**
+         * Module of the application that handled this request.
+         *
+         * @var string
+         */
+        public $moduleId;
+        /**
+         * The logged-in user who made the request.Most likely, this is the part of
+         * the user's email before the @ sign. The field value is the same for
+         * different requests from the same user, but different users can have similar
+         * names. This information is also available to the application via the App
+         * Engine Users API.This field will be populated starting with App Engine
+         * 1.9.21.
+         *
+         * @var string
+         */
+        public $nickname;
+        /**
+         * Time this request spent in the pending request queue.
+         *
+         * @var string
+         */
+        public $pendingTime;
+        /**
+         * Referrer URL of request.
+         *
+         * @var string
+         */
+        public $referrer;
+        /**
+         * Globally unique identifier for a request, which is based on the request
+         * start time. Request IDs for requests which started later will compare
+         * greater as strings than those for requests which started earlier.
+         *
+         * @var string
+         */
+        public $requestId;
+        /**
+         * Contains the path and query portion of the URL that was requested. For
+         * example, if the URL was "http://example.com/app?name=val", the resource
+         * would be "/app?name=val". The fragment identifier, which is identified by
+         * the # character, is not included.
+         *
+         * @var string
+         */
+        public $resource;
+        /**
+         * Size in bytes sent back to client by request.
+         *
+         * @var string
+         */
+        public $responseSize;
+        protected $sourceReferenceType = SourceReference::class;
+        protected $sourceReferenceDataType = 'array';
+        /**
+         * Stackdriver Trace span identifier for this request.
+         *
+         * @var string
+         */
+        public $spanId;
+        /**
+         * Time when the request started.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * HTTP response status code. Example: 200, 404.
+         *
+         * @var int
+         */
+        public $status;
+        /**
+         * Task name of the request, in the case of an offline request.
+         *
+         * @var string
+         */
+        public $taskName;
+        /**
+         * Queue name of the request, in the case of an offline request.
+         *
+         * @var string
+         */
+        public $taskQueueName;
+        /**
+         * Stackdriver Trace identifier for this request.
+         *
+         * @var string
+         */
+        public $traceId;
+        /**
+         * If true, the value in the 'trace_id' field was sampled for storage in a
+         * trace backend.
+         *
+         * @var bool
+         */
+        public $traceSampled;
+        /**
+         * File or class that handled the request.
+         *
+         * @var string
+         */
+        public $urlMapEntry;
+        /**
+         * User agent that made the request.
+         *
+         * @var string
+         */
+        public $userAgent;
+        /**
+         * Version of the application that handled this request.
+         *
+         * @var string
+         */
+        public $versionId;
+        /**
+         * Whether this was a loading request for the instance.
+         *
+         * @var bool
+         */
+        public $wasLoadingRequest;
+        /**
+         * App Engine release version.
+         *
+         * @param string $appEngineRelease
+         */
+        public function setAppEngineRelease($appEngineRelease)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppEngineRelease()
+        {
+        }
+        /**
+         * Application that handled this request.
+         *
+         * @param string $appId
+         */
+        public function setAppId($appId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppId()
+        {
+        }
+        public function setCost($cost)
+        {
+        }
+        public function getCost()
+        {
+        }
+        /**
+         * Time when the request finished.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Whether this request is finished or active.
+         *
+         * @param bool $finished
+         */
+        public function setFinished($finished)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFinished()
+        {
+        }
+        /**
+         * Whether this is the first RequestLog entry for this request. If an active
+         * request has several RequestLog entries written to Stackdriver Logging, then
+         * this field will be set for one of them.
+         *
+         * @param bool $first
+         */
+        public function setFirst($first)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFirst()
+        {
+        }
+        /**
+         * Internet host and port number of the resource being requested.
+         *
+         * @param string $host
+         */
+        public function setHost($host)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHost()
+        {
+        }
+        /**
+         * HTTP version of request. Example: "HTTP/1.1".
+         *
+         * @param string $httpVersion
+         */
+        public function setHttpVersion($httpVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHttpVersion()
+        {
+        }
+        /**
+         * An identifier for the instance that handled the request.
+         *
+         * @param string $instanceId
+         */
+        public function setInstanceId($instanceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceId()
+        {
+        }
+        /**
+         * If the instance processing this request belongs to a manually scaled
+         * module, then this is the 0-based index of the instance. Otherwise, this
+         * value is -1.
+         *
+         * @param int $instanceIndex
+         */
+        public function setInstanceIndex($instanceIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getInstanceIndex()
+        {
+        }
+        /**
+         * Origin IP address.
+         *
+         * @param string $ip
+         */
+        public function setIp($ip)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIp()
+        {
+        }
+        /**
+         * Latency of the request.
+         *
+         * @param string $latency
+         */
+        public function setLatency($latency)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLatency()
+        {
+        }
+        /**
+         * A list of log lines emitted by the application while serving this request.
+         *
+         * @param LogLine[] $line
+         */
+        public function setLine($line)
+        {
+        }
+        /**
+         * @return LogLine[]
+         */
+        public function getLine()
+        {
+        }
+        /**
+         * Number of CPU megacycles used to process request.
+         *
+         * @param string $megaCycles
+         */
+        public function setMegaCycles($megaCycles)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMegaCycles()
+        {
+        }
+        /**
+         * Request method. Example: "GET", "HEAD", "PUT", "POST", "DELETE".
+         *
+         * @param string $method
+         */
+        public function setMethod($method)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMethod()
+        {
+        }
+        /**
+         * Module of the application that handled this request.
+         *
+         * @param string $moduleId
+         */
+        public function setModuleId($moduleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModuleId()
+        {
+        }
+        /**
+         * The logged-in user who made the request.Most likely, this is the part of
+         * the user's email before the @ sign. The field value is the same for
+         * different requests from the same user, but different users can have similar
+         * names. This information is also available to the application via the App
+         * Engine Users API.This field will be populated starting with App Engine
+         * 1.9.21.
+         *
+         * @param string $nickname
+         */
+        public function setNickname($nickname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNickname()
+        {
+        }
+        /**
+         * Time this request spent in the pending request queue.
+         *
+         * @param string $pendingTime
+         */
+        public function setPendingTime($pendingTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPendingTime()
+        {
+        }
+        /**
+         * Referrer URL of request.
+         *
+         * @param string $referrer
+         */
+        public function setReferrer($referrer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferrer()
+        {
+        }
+        /**
+         * Globally unique identifier for a request, which is based on the request
+         * start time. Request IDs for requests which started later will compare
+         * greater as strings than those for requests which started earlier.
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
+        /**
+         * Contains the path and query portion of the URL that was requested. For
+         * example, if the URL was "http://example.com/app?name=val", the resource
+         * would be "/app?name=val". The fragment identifier, which is identified by
+         * the # character, is not included.
+         *
+         * @param string $resource
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResource()
+        {
+        }
+        /**
+         * Size in bytes sent back to client by request.
+         *
+         * @param string $responseSize
+         */
+        public function setResponseSize($responseSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResponseSize()
+        {
+        }
+        /**
+         * Source code for the application that handled this request. There can be
+         * more than one source reference per deployed application if source code is
+         * distributed among multiple repositories.
+         *
+         * @param SourceReference[] $sourceReference
+         */
+        public function setSourceReference($sourceReference)
+        {
+        }
+        /**
+         * @return SourceReference[]
+         */
+        public function getSourceReference()
+        {
+        }
+        /**
+         * Stackdriver Trace span identifier for this request.
+         *
+         * @param string $spanId
+         */
+        public function setSpanId($spanId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpanId()
+        {
+        }
+        /**
+         * Time when the request started.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * HTTP response status code. Example: 200, 404.
+         *
+         * @param int $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Task name of the request, in the case of an offline request.
+         *
+         * @param string $taskName
+         */
+        public function setTaskName($taskName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTaskName()
+        {
+        }
+        /**
+         * Queue name of the request, in the case of an offline request.
+         *
+         * @param string $taskQueueName
+         */
+        public function setTaskQueueName($taskQueueName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTaskQueueName()
+        {
+        }
+        /**
+         * Stackdriver Trace identifier for this request.
+         *
+         * @param string $traceId
+         */
+        public function setTraceId($traceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTraceId()
+        {
+        }
+        /**
+         * If true, the value in the 'trace_id' field was sampled for storage in a
+         * trace backend.
+         *
+         * @param bool $traceSampled
+         */
+        public function setTraceSampled($traceSampled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTraceSampled()
+        {
+        }
+        /**
+         * File or class that handled the request.
+         *
+         * @param string $urlMapEntry
+         */
+        public function setUrlMapEntry($urlMapEntry)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrlMapEntry()
+        {
+        }
+        /**
+         * User agent that made the request.
+         *
+         * @param string $userAgent
+         */
+        public function setUserAgent($userAgent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserAgent()
+        {
+        }
+        /**
+         * Version of the application that handled this request.
+         *
+         * @param string $versionId
+         */
+        public function setVersionId($versionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionId()
+        {
+        }
+        /**
+         * Whether this was a loading request for the instance.
+         *
+         * @param bool $wasLoadingRequest
+         */
+        public function setWasLoadingRequest($wasLoadingRequest)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWasLoadingRequest()
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Logging\RequestLog registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Logging_RequestLog extends \Google\Service\Logging\RequestLog
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1MoveSharedFlowRequest extends \Google\Model
-{
-    /**
-     * Optional. Resource ID of the space to move the shared flow to. If
-     * unspecified, the shared flow will be moved to the organization level.
-     *
-     * @var string
-     */
-    public $space;
-    /**
-     * Optional. Resource ID of the space to move the shared flow to. If
-     * unspecified, the shared flow will be moved to the organization level.
-     *
-     * @param string $space
-     */
-    public function setSpace($space)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1MoveSharedFlowRequest extends \Google\Model
     {
+        /**
+         * Optional. Resource ID of the space to move the shared flow to. If
+         * unspecified, the shared flow will be moved to the organization level.
+         *
+         * @var string
+         */
+        public $space;
+        /**
+         * Optional. Resource ID of the space to move the shared flow to. If
+         * unspecified, the shared flow will be moved to the organization level.
+         *
+         * @param string $space
+         */
+        public function setSpace($space)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1MoveSharedFlowRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSpace()
+    class Google_Service_Apigee_GoogleCloudApigeeV1MoveSharedFlowRequest extends \Google\Service\Apigee\GoogleCloudApigeeV1MoveSharedFlowRequest
     {
     }
 }

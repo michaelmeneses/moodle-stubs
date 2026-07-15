@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationMode extends \Google\Model
-{
-    protected $joinConfigType = GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationModeJoinConfig::class;
-    protected $joinConfigDataType = '';
-    public $joinConfig;
-    /**
-     * @var string
-     */
-    public $operationType;
-    protected $unionConfigType = GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationModeUnionConfig::class;
-    protected $unionConfigDataType = '';
-    public $unionConfig;
-    /**
-     * @param GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationModeJoinConfig
-     */
-    public function setJoinConfig(GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationModeJoinConfig $joinConfig)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationMode extends \Google\Model
     {
+        protected $joinConfigType = GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationModeJoinConfig::class;
+        protected $joinConfigDataType = '';
+        public $joinConfig;
+        /**
+         * @var string
+         */
+        public $operationType;
+        protected $unionConfigType = GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationModeUnionConfig::class;
+        protected $unionConfigDataType = '';
+        public $unionConfig;
+        /**
+         * @param GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationModeJoinConfig
+         */
+        public function setJoinConfig(GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationModeJoinConfig $joinConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationModeJoinConfig
+         */
+        public function getJoinConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOperationType($operationType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperationType()
+        {
+        }
+        /**
+         * @param GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationModeUnionConfig
+         */
+        public function setUnionConfig(GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationModeUnionConfig $unionConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationModeUnionConfig
+         */
+        public function getUnionConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationModeJoinConfig
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationMode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJoinConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOperationType($operationType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperationType()
-    {
-    }
-    /**
-     * @param GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationModeUnionConfig
-     */
-    public function setUnionConfig(GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationModeUnionConfig $unionConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationModeUnionConfig
-     */
-    public function getUnionConfig()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationMode extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationMode
     {
     }
 }

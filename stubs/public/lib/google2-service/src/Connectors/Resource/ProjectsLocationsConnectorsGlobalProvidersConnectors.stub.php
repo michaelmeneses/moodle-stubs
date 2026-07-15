@@ -21,42 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors\Resource;
-
-/**
- * The "connectors" collection of methods.
- * Typical usage is:
- *  <code>
- *   $connectorsService = new Google\Service\Connectors(...);
- *   $connectors = $connectorsService->connectors;
- *  </code>
- */
-class ProjectsLocationsConnectorsGlobalProvidersConnectors extends \Google\Service\Resource
-{
+namespace Google\Service\Connectors\Resource {
+    use Google\Service\Connectors\Connector;
+    use Google\Service\Connectors\ListConnectorsResponse;
     /**
-     * Gets details of a single Connector. (connectors.get)
-     *
-     * @param string $name Required. Resource name of the form:
-     * `projects/locations/providers/connectors`
-     * @param array $optParams Optional parameters.
-     * @return Connector
+     * The "connectors" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $connectorsService = new Google\Service\Connectors(...);
+     *   $connectors = $connectorsService->connectors;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsConnectorsGlobalProvidersConnectors extends \Google\Service\Resource
     {
+        /**
+         * Gets details of a single Connector. (connectors.get)
+         *
+         * @param string $name Required. Resource name of the form:
+         * `projects/locations/providers/connectors`
+         * @param array $optParams Optional parameters.
+         * @return Connector
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists Connectors in a given project and location.
+         * (connectors.listProjectsLocationsConnectorsGlobalProvidersConnectors)
+         *
+         * @param string $parent Required. Parent resource of the connectors, of the
+         * form: `projects/locations/providers`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Page size.
+         * @opt_param string pageToken Page token.
+         * @return ListConnectorsResponse
+         */
+        public function listProjectsLocationsConnectorsGlobalProvidersConnectors($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists Connectors in a given project and location.
-     * (connectors.listProjectsLocationsConnectorsGlobalProvidersConnectors)
-     *
-     * @param string $parent Required. Parent resource of the connectors, of the
-     * form: `projects/locations/providers`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Page size.
-     * @opt_param string pageToken Page token.
-     * @return ListConnectorsResponse
+     * Runtime class alias of \Google\Service\Connectors\Resource\ProjectsLocationsConnectorsGlobalProvidersConnectors registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsConnectorsGlobalProvidersConnectors($parent, $optParams = [])
+    class Google_Service_Connectors_Resource_ProjectsLocationsConnectorsGlobalProvidersConnectors extends \Google\Service\Connectors\Resource\ProjectsLocationsConnectorsGlobalProvidersConnectors
     {
     }
 }

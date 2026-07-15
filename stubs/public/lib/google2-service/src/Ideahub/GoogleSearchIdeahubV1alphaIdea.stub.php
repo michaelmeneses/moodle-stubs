@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Ideahub;
-
-class GoogleSearchIdeahubV1alphaIdea extends \Google\Collection
-{
-    protected $collection_key = 'topics';
-    public $name;
-    public $text;
-    protected $topicsType = GoogleSearchIdeahubV1alphaTopic::class;
-    protected $topicsDataType = 'array';
-    public function setName($name)
+namespace Google\Service\Ideahub {
+    class GoogleSearchIdeahubV1alphaIdea extends \Google\Collection
     {
+        protected $collection_key = 'topics';
+        public $name;
+        public $text;
+        protected $topicsType = GoogleSearchIdeahubV1alphaTopic::class;
+        protected $topicsDataType = 'array';
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        public function setText($text)
+        {
+        }
+        public function getText()
+        {
+        }
+        /**
+         * @param GoogleSearchIdeahubV1alphaTopic[]
+         */
+        public function setTopics($topics)
+        {
+        }
+        /**
+         * @return GoogleSearchIdeahubV1alphaTopic[]
+         */
+        public function getTopics()
+        {
+        }
     }
-    public function getName()
-    {
-    }
-    public function setText($text)
-    {
-    }
-    public function getText()
-    {
-    }
+}
+namespace {
     /**
-     * @param GoogleSearchIdeahubV1alphaTopic[]
+     * Runtime class alias of \Google\Service\Ideahub\GoogleSearchIdeahubV1alphaIdea registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setTopics($topics)
-    {
-    }
-    /**
-     * @return GoogleSearchIdeahubV1alphaTopic[]
-     */
-    public function getTopics()
+    class Google_Service_Ideahub_GoogleSearchIdeahubV1alphaIdea extends \Google\Service\Ideahub\GoogleSearchIdeahubV1alphaIdea
     {
     }
 }

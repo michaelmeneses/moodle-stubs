@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaLanguageInfo extends \Google\Model
-{
-    /**
-     * Output only. Language part of normalized_language_code. E.g.: `en-US` ->
-     * `en`, `zh-Hans-HK` -> `zh`, `en` -> `en`.
-     *
-     * @var string
-     */
-    public $language;
-    /**
-     * The language code for the DataStore.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Output only. This is the normalized form of language_code. E.g.:
-     * language_code of `en-GB`, `en_GB`, `en-UK` or `en-gb` will have
-     * normalized_language_code of `en-GB`.
-     *
-     * @var string
-     */
-    public $normalizedLanguageCode;
-    /**
-     * Output only. Region part of normalized_language_code, if present. E.g.:
-     * `en-US` -> `US`, `zh-Hans-HK` -> `HK`, `en` -> ``.
-     *
-     * @var string
-     */
-    public $region;
-    /**
-     * Output only. Language part of normalized_language_code. E.g.: `en-US` ->
-     * `en`, `zh-Hans-HK` -> `zh`, `en` -> `en`.
-     *
-     * @param string $language
-     */
-    public function setLanguage($language)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaLanguageInfo extends \Google\Model
     {
+        /**
+         * Output only. Language part of normalized_language_code. E.g.: `en-US` ->
+         * `en`, `zh-Hans-HK` -> `zh`, `en` -> `en`.
+         *
+         * @var string
+         */
+        public $language;
+        /**
+         * The language code for the DataStore.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Output only. This is the normalized form of language_code. E.g.:
+         * language_code of `en-GB`, `en_GB`, `en-UK` or `en-gb` will have
+         * normalized_language_code of `en-GB`.
+         *
+         * @var string
+         */
+        public $normalizedLanguageCode;
+        /**
+         * Output only. Region part of normalized_language_code, if present. E.g.:
+         * `en-US` -> `US`, `zh-Hans-HK` -> `HK`, `en` -> ``.
+         *
+         * @var string
+         */
+        public $region;
+        /**
+         * Output only. Language part of normalized_language_code. E.g.: `en-US` ->
+         * `en`, `zh-Hans-HK` -> `zh`, `en` -> `en`.
+         *
+         * @param string $language
+         */
+        public function setLanguage($language)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguage()
+        {
+        }
+        /**
+         * The language code for the DataStore.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * Output only. This is the normalized form of language_code. E.g.:
+         * language_code of `en-GB`, `en_GB`, `en-UK` or `en-gb` will have
+         * normalized_language_code of `en-GB`.
+         *
+         * @param string $normalizedLanguageCode
+         */
+        public function setNormalizedLanguageCode($normalizedLanguageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNormalizedLanguageCode()
+        {
+        }
+        /**
+         * Output only. Region part of normalized_language_code, if present. E.g.:
+         * `en-US` -> `US`, `zh-Hans-HK` -> `HK`, `en` -> ``.
+         *
+         * @param string $region
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaLanguageInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLanguage()
-    {
-    }
-    /**
-     * The language code for the DataStore.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * Output only. This is the normalized form of language_code. E.g.:
-     * language_code of `en-GB`, `en_GB`, `en-UK` or `en-gb` will have
-     * normalized_language_code of `en-GB`.
-     *
-     * @param string $normalizedLanguageCode
-     */
-    public function setNormalizedLanguageCode($normalizedLanguageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNormalizedLanguageCode()
-    {
-    }
-    /**
-     * Output only. Region part of normalized_language_code, if present. E.g.:
-     * `en-US` -> `US`, `zh-Hans-HK` -> `HK`, `en` -> ``.
-     *
-     * @param string $region
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegion()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaLanguageInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaLanguageInfo
     {
     }
 }

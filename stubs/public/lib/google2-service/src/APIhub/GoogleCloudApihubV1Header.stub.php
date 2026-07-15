@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1Header extends \Google\Model
-{
-    /**
-     * Unspecified data type
-     */
-    public const DATA_TYPE_DATA_TYPE_UNSPECIFIED = 'DATA_TYPE_UNSPECIFIED';
-    /**
-     * Boolean data type
-     */
-    public const DATA_TYPE_BOOL = 'BOOL';
-    /**
-     * Integer data type
-     */
-    public const DATA_TYPE_INTEGER = 'INTEGER';
-    /**
-     * Float data type
-     */
-    public const DATA_TYPE_FLOAT = 'FLOAT';
-    /**
-     * String data type
-     */
-    public const DATA_TYPE_STRING = 'STRING';
-    /**
-     * UUID data type
-     */
-    public const DATA_TYPE_UUID = 'UUID';
-    /**
-     * The number of occurrences of this Header across transactions.
-     *
-     * @var string
-     */
-    public $count;
-    /**
-     * Data type of header
-     *
-     * @var string
-     */
-    public $dataType;
-    /**
-     * Header name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The number of occurrences of this Header across transactions.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1Header extends \Google\Model
     {
+        /**
+         * Unspecified data type
+         */
+        public const DATA_TYPE_DATA_TYPE_UNSPECIFIED = 'DATA_TYPE_UNSPECIFIED';
+        /**
+         * Boolean data type
+         */
+        public const DATA_TYPE_BOOL = 'BOOL';
+        /**
+         * Integer data type
+         */
+        public const DATA_TYPE_INTEGER = 'INTEGER';
+        /**
+         * Float data type
+         */
+        public const DATA_TYPE_FLOAT = 'FLOAT';
+        /**
+         * String data type
+         */
+        public const DATA_TYPE_STRING = 'STRING';
+        /**
+         * UUID data type
+         */
+        public const DATA_TYPE_UUID = 'UUID';
+        /**
+         * The number of occurrences of this Header across transactions.
+         *
+         * @var string
+         */
+        public $count;
+        /**
+         * Data type of header
+         *
+         * @var string
+         */
+        public $dataType;
+        /**
+         * Header name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The number of occurrences of this Header across transactions.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * Data type of header
+         *
+         * Accepted values: DATA_TYPE_UNSPECIFIED, BOOL, INTEGER, FLOAT, STRING, UUID
+         *
+         * @param self::DATA_TYPE_* $dataType
+         */
+        public function setDataType($dataType)
+        {
+        }
+        /**
+         * @return self::DATA_TYPE_*
+         */
+        public function getDataType()
+        {
+        }
+        /**
+         * Header name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1Header registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * Data type of header
-     *
-     * Accepted values: DATA_TYPE_UNSPECIFIED, BOOL, INTEGER, FLOAT, STRING, UUID
-     *
-     * @param self::DATA_TYPE_* $dataType
-     */
-    public function setDataType($dataType)
-    {
-    }
-    /**
-     * @return self::DATA_TYPE_*
-     */
-    public function getDataType()
-    {
-    }
-    /**
-     * Header name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_APIhub_GoogleCloudApihubV1Header extends \Google\Service\APIhub\GoogleCloudApihubV1Header
     {
     }
 }

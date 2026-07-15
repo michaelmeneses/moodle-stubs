@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class MysqlObjectIdentifier extends \Google\Model
-{
-    /**
-     * Required. The database name.
-     *
-     * @var string
-     */
-    public $database;
-    /**
-     * Required. The table name.
-     *
-     * @var string
-     */
-    public $table;
-    /**
-     * Required. The database name.
-     *
-     * @param string $database
-     */
-    public function setDatabase($database)
+namespace Google\Service\Datastream {
+    class MysqlObjectIdentifier extends \Google\Model
     {
+        /**
+         * Required. The database name.
+         *
+         * @var string
+         */
+        public $database;
+        /**
+         * Required. The table name.
+         *
+         * @var string
+         */
+        public $table;
+        /**
+         * Required. The database name.
+         *
+         * @param string $database
+         */
+        public function setDatabase($database)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabase()
+        {
+        }
+        /**
+         * Required. The table name.
+         *
+         * @param string $table
+         */
+        public function setTable($table)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\MysqlObjectIdentifier registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabase()
-    {
-    }
-    /**
-     * Required. The table name.
-     *
-     * @param string $table
-     */
-    public function setTable($table)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTable()
+    class Google_Service_Datastream_MysqlObjectIdentifier extends \Google\Service\Datastream\MysqlObjectIdentifier
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class Price extends \Google\Model
-{
-    /**
-     * 3 letter Currency code, as defined by ISO 4217. See
-     * java/com/google/common/money/CurrencyCode.java
-     *
-     * @var string
-     */
-    public $currency;
-    /**
-     * Price in 1/million of the currency base unit, represented as a string.
-     *
-     * @var string
-     */
-    public $priceMicros;
-    /**
-     * 3 letter Currency code, as defined by ISO 4217. See
-     * java/com/google/common/money/CurrencyCode.java
-     *
-     * @param string $currency
-     */
-    public function setCurrency($currency)
+namespace Google\Service\AndroidPublisher {
+    class Price extends \Google\Model
     {
+        /**
+         * 3 letter Currency code, as defined by ISO 4217. See
+         * java/com/google/common/money/CurrencyCode.java
+         *
+         * @var string
+         */
+        public $currency;
+        /**
+         * Price in 1/million of the currency base unit, represented as a string.
+         *
+         * @var string
+         */
+        public $priceMicros;
+        /**
+         * 3 letter Currency code, as defined by ISO 4217. See
+         * java/com/google/common/money/CurrencyCode.java
+         *
+         * @param string $currency
+         */
+        public function setCurrency($currency)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrency()
+        {
+        }
+        /**
+         * Price in 1/million of the currency base unit, represented as a string.
+         *
+         * @param string $priceMicros
+         */
+        public function setPriceMicros($priceMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPriceMicros()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\Price registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrency()
-    {
-    }
-    /**
-     * Price in 1/million of the currency base unit, represented as a string.
-     *
-     * @param string $priceMicros
-     */
-    public function setPriceMicros($priceMicros)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPriceMicros()
+    class Google_Service_AndroidPublisher_Price extends \Google\Service\AndroidPublisher\Price
     {
     }
 }

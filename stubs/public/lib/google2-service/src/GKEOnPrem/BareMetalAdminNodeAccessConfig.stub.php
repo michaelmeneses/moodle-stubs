@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalAdminNodeAccessConfig extends \Google\Model
-{
-    /**
-     * Required. LoginUser is the user name used to access node machines. It
-     * defaults to "root" if not set.
-     *
-     * @var string
-     */
-    public $loginUser;
-    /**
-     * Required. LoginUser is the user name used to access node machines. It
-     * defaults to "root" if not set.
-     *
-     * @param string $loginUser
-     */
-    public function setLoginUser($loginUser)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalAdminNodeAccessConfig extends \Google\Model
     {
+        /**
+         * Required. LoginUser is the user name used to access node machines. It
+         * defaults to "root" if not set.
+         *
+         * @var string
+         */
+        public $loginUser;
+        /**
+         * Required. LoginUser is the user name used to access node machines. It
+         * defaults to "root" if not set.
+         *
+         * @param string $loginUser
+         */
+        public function setLoginUser($loginUser)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLoginUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalAdminNodeAccessConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLoginUser()
+    class Google_Service_GKEOnPrem_BareMetalAdminNodeAccessConfig extends \Google\Service\GKEOnPrem\BareMetalAdminNodeAccessConfig
     {
     }
 }

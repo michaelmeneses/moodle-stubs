@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class AcceleratorTopologiesInfoAcceleratorTopologyInfoInfoPerTopologyState extends \Google\Model
-{
-    /**
-     * The accelerator topology is available.
-     */
-    public const STATE_AVAILABLE = 'AVAILABLE';
-    /**
-     * The accelerator topology is degraded. The underlying capacity is not in a
-     * healthy state and is not available.
-     */
-    public const STATE_DEGRADED = 'DEGRADED';
-    /**
-     * The accelerator topology is running. If there are both running and degraded
-     * hosts within a topology, DEGRADED state will be returned.
-     */
-    public const STATE_RUNNING = 'RUNNING';
-    /**
-     * The state of the topology is unspecified.
-     */
-    public const STATE_TOPOLOGY_STATE_UNSPECIFIED = 'TOPOLOGY_STATE_UNSPECIFIED';
-    /**
-     * This value has been deprecated and is no longer used.
-     *
-     * @deprecated
-     */
-    public const STATE_UNHEALTHY = 'UNHEALTHY';
-    /**
-     * The number of accelerator topologies in this state.
-     *
-     * @var int
-     */
-    public $count;
-    /**
-     * The state of the accelerator topology.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * The number of accelerator topologies in this state.
-     *
-     * @param int $count
-     */
-    public function setCount($count)
+namespace Google\Service\Compute {
+    class AcceleratorTopologiesInfoAcceleratorTopologyInfoInfoPerTopologyState extends \Google\Model
     {
+        /**
+         * The accelerator topology is available.
+         */
+        public const STATE_AVAILABLE = 'AVAILABLE';
+        /**
+         * The accelerator topology is degraded. The underlying capacity is not in a
+         * healthy state and is not available.
+         */
+        public const STATE_DEGRADED = 'DEGRADED';
+        /**
+         * The accelerator topology is running. If there are both running and degraded
+         * hosts within a topology, DEGRADED state will be returned.
+         */
+        public const STATE_RUNNING = 'RUNNING';
+        /**
+         * The state of the topology is unspecified.
+         */
+        public const STATE_TOPOLOGY_STATE_UNSPECIFIED = 'TOPOLOGY_STATE_UNSPECIFIED';
+        /**
+         * This value has been deprecated and is no longer used.
+         *
+         * @deprecated
+         */
+        public const STATE_UNHEALTHY = 'UNHEALTHY';
+        /**
+         * The number of accelerator topologies in this state.
+         *
+         * @var int
+         */
+        public $count;
+        /**
+         * The state of the accelerator topology.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * The number of accelerator topologies in this state.
+         *
+         * @param int $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * The state of the accelerator topology.
+         *
+         * Accepted values: AVAILABLE, DEGRADED, RUNNING, TOPOLOGY_STATE_UNSPECIFIED,
+         * UNHEALTHY
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Compute\AcceleratorTopologiesInfoAcceleratorTopologyInfoInfoPerTopologyState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * The state of the accelerator topology.
-     *
-     * Accepted values: AVAILABLE, DEGRADED, RUNNING, TOPOLOGY_STATE_UNSPECIFIED,
-     * UNHEALTHY
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Compute_AcceleratorTopologiesInfoAcceleratorTopologyInfoInfoPerTopologyState extends \Google\Service\Compute\AcceleratorTopologiesInfoAcceleratorTopologyInfoInfoPerTopologyState
     {
     }
 }

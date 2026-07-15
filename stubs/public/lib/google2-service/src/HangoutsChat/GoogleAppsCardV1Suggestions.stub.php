@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1Suggestions extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = GoogleAppsCardV1SuggestionItem::class;
-    protected $itemsDataType = 'array';
-    /**
-     * A list of suggestions used for autocomplete recommendations in text input
-     * fields.
-     *
-     * @param GoogleAppsCardV1SuggestionItem[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1Suggestions extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = GoogleAppsCardV1SuggestionItem::class;
+        protected $itemsDataType = 'array';
+        /**
+         * A list of suggestions used for autocomplete recommendations in text input
+         * fields.
+         *
+         * @param GoogleAppsCardV1SuggestionItem[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1SuggestionItem[]
+         */
+        public function getItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsCardV1SuggestionItem[]
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1Suggestions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1Suggestions extends \Google\Service\HangoutsChat\GoogleAppsCardV1Suggestions
     {
     }
 }

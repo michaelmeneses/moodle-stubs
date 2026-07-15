@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaPublishIntegrationVersionRequest extends \Google\Model
-{
-    /**
-     * Optional. Config parameters used during integration execution.
-     *
-     * @var array[]
-     */
-    public $configParameters;
-    /**
-     * Optional. Config parameters used during integration execution.
-     *
-     * @param array[] $configParameters
-     */
-    public function setConfigParameters($configParameters)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaPublishIntegrationVersionRequest extends \Google\Model
     {
+        /**
+         * Optional. Config parameters used during integration execution.
+         *
+         * @var array[]
+         */
+        public $configParameters;
+        /**
+         * Optional. Config parameters used during integration execution.
+         *
+         * @param array[] $configParameters
+         */
+        public function setConfigParameters($configParameters)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getConfigParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaPublishIntegrationVersionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigParameters()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaPublishIntegrationVersionRequest extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaPublishIntegrationVersionRequest
     {
     }
 }

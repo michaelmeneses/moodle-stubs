@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class DoubleVerifyBrandSafetyCategories extends \Google\Collection
-{
-    protected $collection_key = 'avoidedMediumSeverityCategories';
-    /**
-     * Unknown or unrateable.
-     *
-     * @var bool
-     */
-    public $avoidUnknownBrandSafetyCategory;
-    /**
-     * Brand safety high severity avoidance categories.
-     *
-     * @var string[]
-     */
-    public $avoidedHighSeverityCategories;
-    /**
-     * Brand safety medium severity avoidance categories.
-     *
-     * @var string[]
-     */
-    public $avoidedMediumSeverityCategories;
-    /**
-     * Unknown or unrateable.
-     *
-     * @param bool $avoidUnknownBrandSafetyCategory
-     */
-    public function setAvoidUnknownBrandSafetyCategory($avoidUnknownBrandSafetyCategory)
+namespace Google\Service\DisplayVideo {
+    class DoubleVerifyBrandSafetyCategories extends \Google\Collection
     {
+        protected $collection_key = 'avoidedMediumSeverityCategories';
+        /**
+         * Unknown or unrateable.
+         *
+         * @var bool
+         */
+        public $avoidUnknownBrandSafetyCategory;
+        /**
+         * Brand safety high severity avoidance categories.
+         *
+         * @var string[]
+         */
+        public $avoidedHighSeverityCategories;
+        /**
+         * Brand safety medium severity avoidance categories.
+         *
+         * @var string[]
+         */
+        public $avoidedMediumSeverityCategories;
+        /**
+         * Unknown or unrateable.
+         *
+         * @param bool $avoidUnknownBrandSafetyCategory
+         */
+        public function setAvoidUnknownBrandSafetyCategory($avoidUnknownBrandSafetyCategory)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAvoidUnknownBrandSafetyCategory()
+        {
+        }
+        /**
+         * Brand safety high severity avoidance categories.
+         *
+         * @param string[] $avoidedHighSeverityCategories
+         */
+        public function setAvoidedHighSeverityCategories($avoidedHighSeverityCategories)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAvoidedHighSeverityCategories()
+        {
+        }
+        /**
+         * Brand safety medium severity avoidance categories.
+         *
+         * @param string[] $avoidedMediumSeverityCategories
+         */
+        public function setAvoidedMediumSeverityCategories($avoidedMediumSeverityCategories)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAvoidedMediumSeverityCategories()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DisplayVideo\DoubleVerifyBrandSafetyCategories registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvoidUnknownBrandSafetyCategory()
-    {
-    }
-    /**
-     * Brand safety high severity avoidance categories.
-     *
-     * @param string[] $avoidedHighSeverityCategories
-     */
-    public function setAvoidedHighSeverityCategories($avoidedHighSeverityCategories)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAvoidedHighSeverityCategories()
-    {
-    }
-    /**
-     * Brand safety medium severity avoidance categories.
-     *
-     * @param string[] $avoidedMediumSeverityCategories
-     */
-    public function setAvoidedMediumSeverityCategories($avoidedMediumSeverityCategories)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAvoidedMediumSeverityCategories()
+    class Google_Service_DisplayVideo_DoubleVerifyBrandSafetyCategories extends \Google\Service\DisplayVideo\DoubleVerifyBrandSafetyCategories
     {
     }
 }

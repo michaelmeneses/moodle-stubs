@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1Subscription extends \Google\Model
-{
-    /**
-     * Full name of the Pub/Sub subcription. Use the following structure in your
-     * request: `subscription "projects/foo/subscription/bar"`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Full name of the Pub/Sub subcription. Use the following structure in your
-     * request: `subscription "projects/foo/subscription/bar"`
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1Subscription extends \Google\Model
     {
+        /**
+         * Full name of the Pub/Sub subcription. Use the following structure in your
+         * request: `subscription "projects/foo/subscription/bar"`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Full name of the Pub/Sub subcription. Use the following structure in your
+         * request: `subscription "projects/foo/subscription/bar"`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1Subscription registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_Apigee_GoogleCloudApigeeV1Subscription extends \Google\Service\Apigee\GoogleCloudApigeeV1Subscription
     {
     }
 }

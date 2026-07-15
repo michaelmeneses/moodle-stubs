@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class BackendMetastore extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $metastoreType;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param string
-     */
-    public function setMetastoreType($metastoreType)
+namespace Google\Service\DataprocMetastore {
+    class BackendMetastore extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $metastoreType;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param string
+         */
+        public function setMetastoreType($metastoreType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetastoreType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataprocMetastore\BackendMetastore registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetastoreType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_DataprocMetastore_BackendMetastore extends \Google\Service\DataprocMetastore\BackendMetastore
     {
     }
 }

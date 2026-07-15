@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Keep;
-
-class ListNotesResponse extends \Google\Collection
-{
-    protected $collection_key = 'notes';
-    /**
-     * Next page's `page_token` field.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $notesType = Note::class;
-    protected $notesDataType = 'array';
-    /**
-     * Next page's `page_token` field.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Keep {
+    class ListNotesResponse extends \Google\Collection
     {
+        protected $collection_key = 'notes';
+        /**
+         * Next page's `page_token` field.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $notesType = Note::class;
+        protected $notesDataType = 'array';
+        /**
+         * Next page's `page_token` field.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A page of notes.
+         *
+         * @param Note[] $notes
+         */
+        public function setNotes($notes)
+        {
+        }
+        /**
+         * @return Note[]
+         */
+        public function getNotes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Keep\ListNotesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A page of notes.
-     *
-     * @param Note[] $notes
-     */
-    public function setNotes($notes)
-    {
-    }
-    /**
-     * @return Note[]
-     */
-    public function getNotes()
+    class Google_Service_Keep_ListNotesResponse extends \Google\Service\Keep\ListNotesResponse
     {
     }
 }

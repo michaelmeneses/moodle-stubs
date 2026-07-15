@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudLifeSciences;
-
-class ContainerKilledEvent extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $actionId;
-    /**
-     * @param int
-     */
-    public function setActionId($actionId)
+namespace Google\Service\CloudLifeSciences {
+    class ContainerKilledEvent extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $actionId;
+        /**
+         * @param int
+         */
+        public function setActionId($actionId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getActionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudLifeSciences\ContainerKilledEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionId()
+    class Google_Service_CloudLifeSciences_ContainerKilledEvent extends \Google\Service\CloudLifeSciences\ContainerKilledEvent
     {
     }
 }

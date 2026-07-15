@@ -21,189 +21,198 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class GmailMessageInfo extends \Google\Collection
-{
-    protected $collection_key = 'attachmentsSha256Hash';
-    /**
-     * The `SHA256` hash of email's attachment and all MIME parts.
-     *
-     * @var string[]
-     */
-    public $attachmentsSha256Hash;
-    /**
-     * The date of the event related to this email.
-     *
-     * @var string
-     */
-    public $date;
-    /**
-     * The hash of the message body text.
-     *
-     * @var string
-     */
-    public $md5HashMessageBody;
-    /**
-     * The MD5 Hash of email's subject (only available for reported emails).
-     *
-     * @var string
-     */
-    public $md5HashSubject;
-    /**
-     * The snippet of the message body text (only available for reported emails).
-     *
-     * @var string
-     */
-    public $messageBodySnippet;
-    /**
-     * The message ID.
-     *
-     * @var string
-     */
-    public $messageId;
-    /**
-     * The recipient of this email.
-     *
-     * @var string
-     */
-    public $recipient;
-    /**
-     * The sent time of the email.
-     *
-     * @var string
-     */
-    public $sentTime;
-    /**
-     * The email subject text (only available for reported emails).
-     *
-     * @var string
-     */
-    public $subjectText;
-    /**
-     * The `SHA256` hash of email's attachment and all MIME parts.
-     *
-     * @param string[] $attachmentsSha256Hash
-     */
-    public function setAttachmentsSha256Hash($attachmentsSha256Hash)
+namespace Google\Service\AlertCenter {
+    class GmailMessageInfo extends \Google\Collection
     {
+        protected $collection_key = 'attachmentsSha256Hash';
+        /**
+         * The `SHA256` hash of email's attachment and all MIME parts.
+         *
+         * @var string[]
+         */
+        public $attachmentsSha256Hash;
+        /**
+         * The date of the event related to this email.
+         *
+         * @var string
+         */
+        public $date;
+        /**
+         * The hash of the message body text.
+         *
+         * @var string
+         */
+        public $md5HashMessageBody;
+        /**
+         * The MD5 Hash of email's subject (only available for reported emails).
+         *
+         * @var string
+         */
+        public $md5HashSubject;
+        /**
+         * The snippet of the message body text (only available for reported emails).
+         *
+         * @var string
+         */
+        public $messageBodySnippet;
+        /**
+         * The message ID.
+         *
+         * @var string
+         */
+        public $messageId;
+        /**
+         * The recipient of this email.
+         *
+         * @var string
+         */
+        public $recipient;
+        /**
+         * The sent time of the email.
+         *
+         * @var string
+         */
+        public $sentTime;
+        /**
+         * The email subject text (only available for reported emails).
+         *
+         * @var string
+         */
+        public $subjectText;
+        /**
+         * The `SHA256` hash of email's attachment and all MIME parts.
+         *
+         * @param string[] $attachmentsSha256Hash
+         */
+        public function setAttachmentsSha256Hash($attachmentsSha256Hash)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAttachmentsSha256Hash()
+        {
+        }
+        /**
+         * The date of the event related to this email.
+         *
+         * @param string $date
+         */
+        public function setDate($date)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDate()
+        {
+        }
+        /**
+         * The hash of the message body text.
+         *
+         * @param string $md5HashMessageBody
+         */
+        public function setMd5HashMessageBody($md5HashMessageBody)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMd5HashMessageBody()
+        {
+        }
+        /**
+         * The MD5 Hash of email's subject (only available for reported emails).
+         *
+         * @param string $md5HashSubject
+         */
+        public function setMd5HashSubject($md5HashSubject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMd5HashSubject()
+        {
+        }
+        /**
+         * The snippet of the message body text (only available for reported emails).
+         *
+         * @param string $messageBodySnippet
+         */
+        public function setMessageBodySnippet($messageBodySnippet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessageBodySnippet()
+        {
+        }
+        /**
+         * The message ID.
+         *
+         * @param string $messageId
+         */
+        public function setMessageId($messageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessageId()
+        {
+        }
+        /**
+         * The recipient of this email.
+         *
+         * @param string $recipient
+         */
+        public function setRecipient($recipient)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecipient()
+        {
+        }
+        /**
+         * The sent time of the email.
+         *
+         * @param string $sentTime
+         */
+        public function setSentTime($sentTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSentTime()
+        {
+        }
+        /**
+         * The email subject text (only available for reported emails).
+         *
+         * @param string $subjectText
+         */
+        public function setSubjectText($subjectText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubjectText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AlertCenter\GmailMessageInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachmentsSha256Hash()
-    {
-    }
-    /**
-     * The date of the event related to this email.
-     *
-     * @param string $date
-     */
-    public function setDate($date)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDate()
-    {
-    }
-    /**
-     * The hash of the message body text.
-     *
-     * @param string $md5HashMessageBody
-     */
-    public function setMd5HashMessageBody($md5HashMessageBody)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMd5HashMessageBody()
-    {
-    }
-    /**
-     * The MD5 Hash of email's subject (only available for reported emails).
-     *
-     * @param string $md5HashSubject
-     */
-    public function setMd5HashSubject($md5HashSubject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMd5HashSubject()
-    {
-    }
-    /**
-     * The snippet of the message body text (only available for reported emails).
-     *
-     * @param string $messageBodySnippet
-     */
-    public function setMessageBodySnippet($messageBodySnippet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessageBodySnippet()
-    {
-    }
-    /**
-     * The message ID.
-     *
-     * @param string $messageId
-     */
-    public function setMessageId($messageId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessageId()
-    {
-    }
-    /**
-     * The recipient of this email.
-     *
-     * @param string $recipient
-     */
-    public function setRecipient($recipient)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecipient()
-    {
-    }
-    /**
-     * The sent time of the email.
-     *
-     * @param string $sentTime
-     */
-    public function setSentTime($sentTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSentTime()
-    {
-    }
-    /**
-     * The email subject text (only available for reported emails).
-     *
-     * @param string $subjectText
-     */
-    public function setSubjectText($subjectText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubjectText()
+    class Google_Service_AlertCenter_GmailMessageInfo extends \Google\Service\AlertCenter\GmailMessageInfo
     {
     }
 }

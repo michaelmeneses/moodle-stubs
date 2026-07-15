@@ -8,6 +8,12 @@
  */
 namespace Aws\Api\Parser;
 
+use Aws\Api\StructureShape;
+use Aws\CommandInterface;
+use Aws\Exception\AwsException;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\StreamInterface;
+use GuzzleHttp\Psr7;
 /**
  * @internal Decorates a parser and validates the x-amz-crc32 header.
  */

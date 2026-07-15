@@ -21,181 +21,190 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class DynamiteMessagesScoringInfo extends \Google\Model
-{
+namespace Google\Service\CloudSearch {
+    class DynamiteMessagesScoringInfo extends \Google\Model
+    {
+        /**
+         * @var string
+         */
+        public $commonContactCount;
+        public $commonCountToContactListCountRatio;
+        public $commonCountToMembershipCountRatio;
+        /**
+         * @var string
+         */
+        public $creatorGaiaId;
+        /**
+         * @var bool
+         */
+        public $creatorInSearcherContactList;
+        public $crowdingMultiplier;
+        /**
+         * @var string
+         */
+        public $dasContactCount;
+        public $finalScore;
+        public $freshnessScore;
+        public $joinedSpaceAffinityScore;
+        public $lastReadTimestampAgeInDays;
+        public $messageAgeInDays;
+        public $messageSenderAffinityScore;
+        /**
+         * @var string
+         */
+        public $spaceId;
+        /**
+         * @var string
+         */
+        public $spaceMembershipCount;
+        public $topicalityScore;
+        public $unjoinedSpaceAffinityScore;
+        /**
+         * @param string
+         */
+        public function setCommonContactCount($commonContactCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommonContactCount()
+        {
+        }
+        public function setCommonCountToContactListCountRatio($commonCountToContactListCountRatio)
+        {
+        }
+        public function getCommonCountToContactListCountRatio()
+        {
+        }
+        public function setCommonCountToMembershipCountRatio($commonCountToMembershipCountRatio)
+        {
+        }
+        public function getCommonCountToMembershipCountRatio()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreatorGaiaId($creatorGaiaId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatorGaiaId()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setCreatorInSearcherContactList($creatorInSearcherContactList)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCreatorInSearcherContactList()
+        {
+        }
+        public function setCrowdingMultiplier($crowdingMultiplier)
+        {
+        }
+        public function getCrowdingMultiplier()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDasContactCount($dasContactCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDasContactCount()
+        {
+        }
+        public function setFinalScore($finalScore)
+        {
+        }
+        public function getFinalScore()
+        {
+        }
+        public function setFreshnessScore($freshnessScore)
+        {
+        }
+        public function getFreshnessScore()
+        {
+        }
+        public function setJoinedSpaceAffinityScore($joinedSpaceAffinityScore)
+        {
+        }
+        public function getJoinedSpaceAffinityScore()
+        {
+        }
+        public function setLastReadTimestampAgeInDays($lastReadTimestampAgeInDays)
+        {
+        }
+        public function getLastReadTimestampAgeInDays()
+        {
+        }
+        public function setMessageAgeInDays($messageAgeInDays)
+        {
+        }
+        public function getMessageAgeInDays()
+        {
+        }
+        public function setMessageSenderAffinityScore($messageSenderAffinityScore)
+        {
+        }
+        public function getMessageSenderAffinityScore()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSpaceId($spaceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpaceId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSpaceMembershipCount($spaceMembershipCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpaceMembershipCount()
+        {
+        }
+        public function setTopicalityScore($topicalityScore)
+        {
+        }
+        public function getTopicalityScore()
+        {
+        }
+        public function setUnjoinedSpaceAffinityScore($unjoinedSpaceAffinityScore)
+        {
+        }
+        public function getUnjoinedSpaceAffinityScore()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @var string
+     * Runtime class alias of \Google\Service\CloudSearch\DynamiteMessagesScoringInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $commonContactCount;
-    public $commonCountToContactListCountRatio;
-    public $commonCountToMembershipCountRatio;
-    /**
-     * @var string
-     */
-    public $creatorGaiaId;
-    /**
-     * @var bool
-     */
-    public $creatorInSearcherContactList;
-    public $crowdingMultiplier;
-    /**
-     * @var string
-     */
-    public $dasContactCount;
-    public $finalScore;
-    public $freshnessScore;
-    public $joinedSpaceAffinityScore;
-    public $lastReadTimestampAgeInDays;
-    public $messageAgeInDays;
-    public $messageSenderAffinityScore;
-    /**
-     * @var string
-     */
-    public $spaceId;
-    /**
-     * @var string
-     */
-    public $spaceMembershipCount;
-    public $topicalityScore;
-    public $unjoinedSpaceAffinityScore;
-    /**
-     * @param string
-     */
-    public function setCommonContactCount($commonContactCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCommonContactCount()
-    {
-    }
-    public function setCommonCountToContactListCountRatio($commonCountToContactListCountRatio)
-    {
-    }
-    public function getCommonCountToContactListCountRatio()
-    {
-    }
-    public function setCommonCountToMembershipCountRatio($commonCountToMembershipCountRatio)
-    {
-    }
-    public function getCommonCountToMembershipCountRatio()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreatorGaiaId($creatorGaiaId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreatorGaiaId()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setCreatorInSearcherContactList($creatorInSearcherContactList)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCreatorInSearcherContactList()
-    {
-    }
-    public function setCrowdingMultiplier($crowdingMultiplier)
-    {
-    }
-    public function getCrowdingMultiplier()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDasContactCount($dasContactCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDasContactCount()
-    {
-    }
-    public function setFinalScore($finalScore)
-    {
-    }
-    public function getFinalScore()
-    {
-    }
-    public function setFreshnessScore($freshnessScore)
-    {
-    }
-    public function getFreshnessScore()
-    {
-    }
-    public function setJoinedSpaceAffinityScore($joinedSpaceAffinityScore)
-    {
-    }
-    public function getJoinedSpaceAffinityScore()
-    {
-    }
-    public function setLastReadTimestampAgeInDays($lastReadTimestampAgeInDays)
-    {
-    }
-    public function getLastReadTimestampAgeInDays()
-    {
-    }
-    public function setMessageAgeInDays($messageAgeInDays)
-    {
-    }
-    public function getMessageAgeInDays()
-    {
-    }
-    public function setMessageSenderAffinityScore($messageSenderAffinityScore)
-    {
-    }
-    public function getMessageSenderAffinityScore()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSpaceId($spaceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpaceId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSpaceMembershipCount($spaceMembershipCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpaceMembershipCount()
-    {
-    }
-    public function setTopicalityScore($topicalityScore)
-    {
-    }
-    public function getTopicalityScore()
-    {
-    }
-    public function setUnjoinedSpaceAffinityScore($unjoinedSpaceAffinityScore)
-    {
-    }
-    public function getUnjoinedSpaceAffinityScore()
+    class Google_Service_CloudSearch_DynamiteMessagesScoringInfo extends \Google\Service\CloudSearch\DynamiteMessagesScoringInfo
     {
     }
 }

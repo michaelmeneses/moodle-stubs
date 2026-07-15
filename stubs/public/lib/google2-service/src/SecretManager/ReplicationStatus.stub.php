@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecretManager;
-
-class ReplicationStatus extends \Google\Model
-{
-    protected $automaticType = AutomaticStatus::class;
-    protected $automaticDataType = '';
-    protected $userManagedType = UserManagedStatus::class;
-    protected $userManagedDataType = '';
-    /**
-     * Describes the replication status of a SecretVersion with automatic
-     * replication. Only populated if the parent Secret has an automatic
-     * replication policy.
-     *
-     * @param AutomaticStatus $automatic
-     */
-    public function setAutomatic(AutomaticStatus $automatic)
+namespace Google\Service\SecretManager {
+    class ReplicationStatus extends \Google\Model
     {
+        protected $automaticType = AutomaticStatus::class;
+        protected $automaticDataType = '';
+        protected $userManagedType = UserManagedStatus::class;
+        protected $userManagedDataType = '';
+        /**
+         * Describes the replication status of a SecretVersion with automatic
+         * replication. Only populated if the parent Secret has an automatic
+         * replication policy.
+         *
+         * @param AutomaticStatus $automatic
+         */
+        public function setAutomatic(AutomaticStatus $automatic)
+        {
+        }
+        /**
+         * @return AutomaticStatus
+         */
+        public function getAutomatic()
+        {
+        }
+        /**
+         * Describes the replication status of a SecretVersion with user-managed
+         * replication. Only populated if the parent Secret has a user-managed
+         * replication policy.
+         *
+         * @param UserManagedStatus $userManaged
+         */
+        public function setUserManaged(UserManagedStatus $userManaged)
+        {
+        }
+        /**
+         * @return UserManagedStatus
+         */
+        public function getUserManaged()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AutomaticStatus
+     * Runtime class alias of \Google\Service\SecretManager\ReplicationStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutomatic()
-    {
-    }
-    /**
-     * Describes the replication status of a SecretVersion with user-managed
-     * replication. Only populated if the parent Secret has a user-managed
-     * replication policy.
-     *
-     * @param UserManagedStatus $userManaged
-     */
-    public function setUserManaged(UserManagedStatus $userManaged)
-    {
-    }
-    /**
-     * @return UserManagedStatus
-     */
-    public function getUserManaged()
+    class Google_Service_SecretManager_ReplicationStatus extends \Google\Service\SecretManager\ReplicationStatus
     {
     }
 }

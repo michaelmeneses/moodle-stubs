@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaAccessOrderBy extends \Google\Model
-{
-    /**
-     * If true, sorts by descending order. If false or unspecified, sorts in
-     * ascending order.
-     *
-     * @var bool
-     */
-    public $desc;
-    protected $dimensionType = GoogleAnalyticsAdminV1betaAccessOrderByDimensionOrderBy::class;
-    protected $dimensionDataType = '';
-    protected $metricType = GoogleAnalyticsAdminV1betaAccessOrderByMetricOrderBy::class;
-    protected $metricDataType = '';
-    /**
-     * If true, sorts by descending order. If false or unspecified, sorts in
-     * ascending order.
-     *
-     * @param bool $desc
-     */
-    public function setDesc($desc)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaAccessOrderBy extends \Google\Model
     {
+        /**
+         * If true, sorts by descending order. If false or unspecified, sorts in
+         * ascending order.
+         *
+         * @var bool
+         */
+        public $desc;
+        protected $dimensionType = GoogleAnalyticsAdminV1betaAccessOrderByDimensionOrderBy::class;
+        protected $dimensionDataType = '';
+        protected $metricType = GoogleAnalyticsAdminV1betaAccessOrderByMetricOrderBy::class;
+        protected $metricDataType = '';
+        /**
+         * If true, sorts by descending order. If false or unspecified, sorts in
+         * ascending order.
+         *
+         * @param bool $desc
+         */
+        public function setDesc($desc)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDesc()
+        {
+        }
+        /**
+         * Sorts results by a dimension's values.
+         *
+         * @param GoogleAnalyticsAdminV1betaAccessOrderByDimensionOrderBy $dimension
+         */
+        public function setDimension(GoogleAnalyticsAdminV1betaAccessOrderByDimensionOrderBy $dimension)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaAccessOrderByDimensionOrderBy
+         */
+        public function getDimension()
+        {
+        }
+        /**
+         * Sorts results by a metric's values.
+         *
+         * @param GoogleAnalyticsAdminV1betaAccessOrderByMetricOrderBy $metric
+         */
+        public function setMetric(GoogleAnalyticsAdminV1betaAccessOrderByMetricOrderBy $metric)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaAccessOrderByMetricOrderBy
+         */
+        public function getMetric()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccessOrderBy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDesc()
-    {
-    }
-    /**
-     * Sorts results by a dimension's values.
-     *
-     * @param GoogleAnalyticsAdminV1betaAccessOrderByDimensionOrderBy $dimension
-     */
-    public function setDimension(GoogleAnalyticsAdminV1betaAccessOrderByDimensionOrderBy $dimension)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1betaAccessOrderByDimensionOrderBy
-     */
-    public function getDimension()
-    {
-    }
-    /**
-     * Sorts results by a metric's values.
-     *
-     * @param GoogleAnalyticsAdminV1betaAccessOrderByMetricOrderBy $metric
-     */
-    public function setMetric(GoogleAnalyticsAdminV1betaAccessOrderByMetricOrderBy $metric)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1betaAccessOrderByMetricOrderBy
-     */
-    public function getMetric()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaAccessOrderBy extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccessOrderBy
     {
     }
 }

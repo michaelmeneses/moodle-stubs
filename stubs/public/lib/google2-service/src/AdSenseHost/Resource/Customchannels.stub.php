@@ -21,101 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSenseHost\Resource;
-
-/**
- * The "customchannels" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adsensehostService = new Google\Service\AdSenseHost(...);
- *   $customchannels = $adsensehostService->customchannels;
- *  </code>
- */
-class Customchannels extends \Google\Service\Resource
-{
+namespace Google\Service\AdSenseHost\Resource {
+    use Google\Service\AdSenseHost\CustomChannel;
+    use Google\Service\AdSenseHost\CustomChannels as CustomChannelsModel;
     /**
-     * Delete a specific custom channel from the host AdSense account.
-     * (customchannels.delete)
-     *
-     * @param string $adClientId Ad client from which to delete the custom channel.
-     * @param string $customChannelId Custom channel to delete.
-     * @param array $optParams Optional parameters.
-     * @return CustomChannel
-     * @throws \Google\Service\Exception
+     * The "customchannels" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adsensehostService = new Google\Service\AdSenseHost(...);
+     *   $customchannels = $adsensehostService->customchannels;
+     *  </code>
      */
-    public function delete($adClientId, $customChannelId, $optParams = [])
+    class Customchannels extends \Google\Service\Resource
     {
+        /**
+         * Delete a specific custom channel from the host AdSense account.
+         * (customchannels.delete)
+         *
+         * @param string $adClientId Ad client from which to delete the custom channel.
+         * @param string $customChannelId Custom channel to delete.
+         * @param array $optParams Optional parameters.
+         * @return CustomChannel
+         * @throws \Google\Service\Exception
+         */
+        public function delete($adClientId, $customChannelId, $optParams = [])
+        {
+        }
+        /**
+         * Get a specific custom channel from the host AdSense account.
+         * (customchannels.get)
+         *
+         * @param string $adClientId Ad client from which to get the custom channel.
+         * @param string $customChannelId Custom channel to get.
+         * @param array $optParams Optional parameters.
+         * @return CustomChannel
+         * @throws \Google\Service\Exception
+         */
+        public function get($adClientId, $customChannelId, $optParams = [])
+        {
+        }
+        /**
+         * Add a new custom channel to the host AdSense account. (customchannels.insert)
+         *
+         * @param string $adClientId Ad client to which the new custom channel will be
+         * added.
+         * @param CustomChannel $postBody
+         * @param array $optParams Optional parameters.
+         * @return CustomChannel
+         * @throws \Google\Service\Exception
+         */
+        public function insert($adClientId, CustomChannel $postBody, $optParams = [])
+        {
+        }
+        /**
+         * List all host custom channels in this AdSense account.
+         * (customchannels.listCustomchannels)
+         *
+         * @param string $adClientId Ad client for which to list custom channels.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string maxResults The maximum number of custom channels to include
+         * in the response, used for paging.
+         * @opt_param string pageToken A continuation token, used to page through custom
+         * channels. To retrieve the next page, set this parameter to the value of
+         * "nextPageToken" from the previous response.
+         * @return CustomChannelsModel
+         * @throws \Google\Service\Exception
+         */
+        public function listCustomchannels($adClientId, $optParams = [])
+        {
+        }
+        /**
+         * Update a custom channel in the host AdSense account. This method supports
+         * patch semantics. (customchannels.patch)
+         *
+         * @param string $adClientId Ad client in which the custom channel will be
+         * updated.
+         * @param string $customChannelId Custom channel to get.
+         * @param CustomChannel $postBody
+         * @param array $optParams Optional parameters.
+         * @return CustomChannel
+         * @throws \Google\Service\Exception
+         */
+        public function patch($adClientId, $customChannelId, CustomChannel $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Update a custom channel in the host AdSense account. (customchannels.update)
+         *
+         * @param string $adClientId Ad client in which the custom channel will be
+         * updated.
+         * @param CustomChannel $postBody
+         * @param array $optParams Optional parameters.
+         * @return CustomChannel
+         * @throws \Google\Service\Exception
+         */
+        public function update($adClientId, CustomChannel $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Get a specific custom channel from the host AdSense account.
-     * (customchannels.get)
-     *
-     * @param string $adClientId Ad client from which to get the custom channel.
-     * @param string $customChannelId Custom channel to get.
-     * @param array $optParams Optional parameters.
-     * @return CustomChannel
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AdSenseHost\Resource\Customchannels registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($adClientId, $customChannelId, $optParams = [])
-    {
-    }
-    /**
-     * Add a new custom channel to the host AdSense account. (customchannels.insert)
-     *
-     * @param string $adClientId Ad client to which the new custom channel will be
-     * added.
-     * @param CustomChannel $postBody
-     * @param array $optParams Optional parameters.
-     * @return CustomChannel
-     * @throws \Google\Service\Exception
-     */
-    public function insert($adClientId, CustomChannel $postBody, $optParams = [])
-    {
-    }
-    /**
-     * List all host custom channels in this AdSense account.
-     * (customchannels.listCustomchannels)
-     *
-     * @param string $adClientId Ad client for which to list custom channels.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string maxResults The maximum number of custom channels to include
-     * in the response, used for paging.
-     * @opt_param string pageToken A continuation token, used to page through custom
-     * channels. To retrieve the next page, set this parameter to the value of
-     * "nextPageToken" from the previous response.
-     * @return CustomChannelsModel
-     * @throws \Google\Service\Exception
-     */
-    public function listCustomchannels($adClientId, $optParams = [])
-    {
-    }
-    /**
-     * Update a custom channel in the host AdSense account. This method supports
-     * patch semantics. (customchannels.patch)
-     *
-     * @param string $adClientId Ad client in which the custom channel will be
-     * updated.
-     * @param string $customChannelId Custom channel to get.
-     * @param CustomChannel $postBody
-     * @param array $optParams Optional parameters.
-     * @return CustomChannel
-     * @throws \Google\Service\Exception
-     */
-    public function patch($adClientId, $customChannelId, CustomChannel $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Update a custom channel in the host AdSense account. (customchannels.update)
-     *
-     * @param string $adClientId Ad client in which the custom channel will be
-     * updated.
-     * @param CustomChannel $postBody
-     * @param array $optParams Optional parameters.
-     * @return CustomChannel
-     * @throws \Google\Service\Exception
-     */
-    public function update($adClientId, CustomChannel $postBody, $optParams = [])
+    class Google_Service_AdSenseHost_Resource_Customchannels extends \Google\Service\AdSenseHost\Resource\Customchannels
     {
     }
 }

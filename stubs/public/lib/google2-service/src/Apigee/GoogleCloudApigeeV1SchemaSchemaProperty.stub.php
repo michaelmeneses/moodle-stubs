@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1SchemaSchemaProperty extends \Google\Model
-{
-    /**
-     * Time the field was created in RFC3339 string form. For example:
-     * `2016-02-26T10:23:09.592Z`.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Flag that specifies whether the field is standard in the dataset or a
-     * custom field created by the customer. `true` indicates that it is a custom
-     * field.
-     *
-     * @var string
-     */
-    public $custom;
-    /**
-     * Data type of the field.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Time the field was created in RFC3339 string form. For example:
-     * `2016-02-26T10:23:09.592Z`.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1SchemaSchemaProperty extends \Google\Model
     {
+        /**
+         * Time the field was created in RFC3339 string form. For example:
+         * `2016-02-26T10:23:09.592Z`.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Flag that specifies whether the field is standard in the dataset or a
+         * custom field created by the customer. `true` indicates that it is a custom
+         * field.
+         *
+         * @var string
+         */
+        public $custom;
+        /**
+         * Data type of the field.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Time the field was created in RFC3339 string form. For example:
+         * `2016-02-26T10:23:09.592Z`.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Flag that specifies whether the field is standard in the dataset or a
+         * custom field created by the customer. `true` indicates that it is a custom
+         * field.
+         *
+         * @param string $custom
+         */
+        public function setCustom($custom)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustom()
+        {
+        }
+        /**
+         * Data type of the field.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1SchemaSchemaProperty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Flag that specifies whether the field is standard in the dataset or a
-     * custom field created by the customer. `true` indicates that it is a custom
-     * field.
-     *
-     * @param string $custom
-     */
-    public function setCustom($custom)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustom()
-    {
-    }
-    /**
-     * Data type of the field.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Apigee_GoogleCloudApigeeV1SchemaSchemaProperty extends \Google\Service\Apigee\GoogleCloudApigeeV1SchemaSchemaProperty
     {
     }
 }

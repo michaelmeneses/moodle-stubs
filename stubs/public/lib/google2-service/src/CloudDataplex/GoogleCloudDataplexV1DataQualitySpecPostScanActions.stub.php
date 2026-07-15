@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataQualitySpecPostScanActions extends \Google\Model
-{
-    protected $bigqueryExportType = GoogleCloudDataplexV1DataQualitySpecPostScanActionsBigQueryExport::class;
-    protected $bigqueryExportDataType = '';
-    protected $notificationReportType = GoogleCloudDataplexV1DataQualitySpecPostScanActionsNotificationReport::class;
-    protected $notificationReportDataType = '';
-    /**
-     * Optional. If set, results will be exported to the provided BigQuery table.
-     *
-     * @param GoogleCloudDataplexV1DataQualitySpecPostScanActionsBigQueryExport $bigqueryExport
-     */
-    public function setBigqueryExport(GoogleCloudDataplexV1DataQualitySpecPostScanActionsBigQueryExport $bigqueryExport)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataQualitySpecPostScanActions extends \Google\Model
     {
+        protected $bigqueryExportType = GoogleCloudDataplexV1DataQualitySpecPostScanActionsBigQueryExport::class;
+        protected $bigqueryExportDataType = '';
+        protected $notificationReportType = GoogleCloudDataplexV1DataQualitySpecPostScanActionsNotificationReport::class;
+        protected $notificationReportDataType = '';
+        /**
+         * Optional. If set, results will be exported to the provided BigQuery table.
+         *
+         * @param GoogleCloudDataplexV1DataQualitySpecPostScanActionsBigQueryExport $bigqueryExport
+         */
+        public function setBigqueryExport(GoogleCloudDataplexV1DataQualitySpecPostScanActionsBigQueryExport $bigqueryExport)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataQualitySpecPostScanActionsBigQueryExport
+         */
+        public function getBigqueryExport()
+        {
+        }
+        /**
+         * Optional. If set, results will be sent to the provided notification
+         * receipts upon triggers.
+         *
+         * @param GoogleCloudDataplexV1DataQualitySpecPostScanActionsNotificationReport $notificationReport
+         */
+        public function setNotificationReport(GoogleCloudDataplexV1DataQualitySpecPostScanActionsNotificationReport $notificationReport)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataQualitySpecPostScanActionsNotificationReport
+         */
+        public function getNotificationReport()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1DataQualitySpecPostScanActionsBigQueryExport
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualitySpecPostScanActions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigqueryExport()
-    {
-    }
-    /**
-     * Optional. If set, results will be sent to the provided notification
-     * receipts upon triggers.
-     *
-     * @param GoogleCloudDataplexV1DataQualitySpecPostScanActionsNotificationReport $notificationReport
-     */
-    public function setNotificationReport(GoogleCloudDataplexV1DataQualitySpecPostScanActionsNotificationReport $notificationReport)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1DataQualitySpecPostScanActionsNotificationReport
-     */
-    public function getNotificationReport()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataQualitySpecPostScanActions extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualitySpecPostScanActions
     {
     }
 }

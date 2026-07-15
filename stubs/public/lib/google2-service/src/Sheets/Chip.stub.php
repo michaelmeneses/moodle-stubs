@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class Chip extends \Google\Model
-{
-    protected $personPropertiesType = PersonProperties::class;
-    protected $personPropertiesDataType = '';
-    protected $richLinkPropertiesType = RichLinkProperties::class;
-    protected $richLinkPropertiesDataType = '';
-    /**
-     * Properties of a linked person.
-     *
-     * @param PersonProperties $personProperties
-     */
-    public function setPersonProperties(PersonProperties $personProperties)
+namespace Google\Service\Sheets {
+    class Chip extends \Google\Model
     {
+        protected $personPropertiesType = PersonProperties::class;
+        protected $personPropertiesDataType = '';
+        protected $richLinkPropertiesType = RichLinkProperties::class;
+        protected $richLinkPropertiesDataType = '';
+        /**
+         * Properties of a linked person.
+         *
+         * @param PersonProperties $personProperties
+         */
+        public function setPersonProperties(PersonProperties $personProperties)
+        {
+        }
+        /**
+         * @return PersonProperties
+         */
+        public function getPersonProperties()
+        {
+        }
+        /**
+         * Properties of a rich link.
+         *
+         * @param RichLinkProperties $richLinkProperties
+         */
+        public function setRichLinkProperties(RichLinkProperties $richLinkProperties)
+        {
+        }
+        /**
+         * @return RichLinkProperties
+         */
+        public function getRichLinkProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PersonProperties
+     * Runtime class alias of \Google\Service\Sheets\Chip registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPersonProperties()
-    {
-    }
-    /**
-     * Properties of a rich link.
-     *
-     * @param RichLinkProperties $richLinkProperties
-     */
-    public function setRichLinkProperties(RichLinkProperties $richLinkProperties)
-    {
-    }
-    /**
-     * @return RichLinkProperties
-     */
-    public function getRichLinkProperties()
+    class Google_Service_Sheets_Chip extends \Google\Service\Sheets\Chip
     {
     }
 }

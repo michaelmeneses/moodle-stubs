@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2MessageAnnotation extends \Google\Collection
-{
-    protected $collection_key = 'parts';
-    /**
-     * Indicates whether the text message contains entities.
-     *
-     * @var bool
-     */
-    public $containEntities;
-    protected $partsType = GoogleCloudDialogflowV2AnnotatedMessagePart::class;
-    protected $partsDataType = 'array';
-    /**
-     * Indicates whether the text message contains entities.
-     *
-     * @param bool $containEntities
-     */
-    public function setContainEntities($containEntities)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2MessageAnnotation extends \Google\Collection
     {
+        protected $collection_key = 'parts';
+        /**
+         * Indicates whether the text message contains entities.
+         *
+         * @var bool
+         */
+        public $containEntities;
+        protected $partsType = GoogleCloudDialogflowV2AnnotatedMessagePart::class;
+        protected $partsDataType = 'array';
+        /**
+         * Indicates whether the text message contains entities.
+         *
+         * @param bool $containEntities
+         */
+        public function setContainEntities($containEntities)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getContainEntities()
+        {
+        }
+        /**
+         * The collection of annotated message parts ordered by their position in the
+         * message. You can recover the annotated message by concatenating
+         * [AnnotatedMessagePart.text].
+         *
+         * @param GoogleCloudDialogflowV2AnnotatedMessagePart[] $parts
+         */
+        public function setParts($parts)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2AnnotatedMessagePart[]
+         */
+        public function getParts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2MessageAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainEntities()
-    {
-    }
-    /**
-     * The collection of annotated message parts ordered by their position in the
-     * message. You can recover the annotated message by concatenating
-     * [AnnotatedMessagePart.text].
-     *
-     * @param GoogleCloudDialogflowV2AnnotatedMessagePart[] $parts
-     */
-    public function setParts($parts)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2AnnotatedMessagePart[]
-     */
-    public function getParts()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2MessageAnnotation extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2MessageAnnotation
     {
     }
 }

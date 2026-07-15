@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SparkRuntimeInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $javaHome;
-    /**
-     * @var string
-     */
-    public $javaVersion;
-    /**
-     * @var string
-     */
-    public $scalaVersion;
-    /**
-     * @param string $javaHome
-     */
-    public function setJavaHome($javaHome)
+namespace Google\Service\Dataproc {
+    class SparkRuntimeInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $javaHome;
+        /**
+         * @var string
+         */
+        public $javaVersion;
+        /**
+         * @var string
+         */
+        public $scalaVersion;
+        /**
+         * @param string $javaHome
+         */
+        public function setJavaHome($javaHome)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJavaHome()
+        {
+        }
+        /**
+         * @param string $javaVersion
+         */
+        public function setJavaVersion($javaVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJavaVersion()
+        {
+        }
+        /**
+         * @param string $scalaVersion
+         */
+        public function setScalaVersion($scalaVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScalaVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\SparkRuntimeInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJavaHome()
-    {
-    }
-    /**
-     * @param string $javaVersion
-     */
-    public function setJavaVersion($javaVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJavaVersion()
-    {
-    }
-    /**
-     * @param string $scalaVersion
-     */
-    public function setScalaVersion($scalaVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScalaVersion()
+    class Google_Service_Dataproc_SparkRuntimeInfo extends \Google\Service\Dataproc\SparkRuntimeInfo
     {
     }
 }

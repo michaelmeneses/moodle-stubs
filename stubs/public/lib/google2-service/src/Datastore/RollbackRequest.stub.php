@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class RollbackRequest extends \Google\Model
-{
-    /**
-     * The ID of the database against which to make the request. '(default)' is
-     * not allowed; please use empty string '' to refer the default database.
-     *
-     * @var string
-     */
-    public $databaseId;
-    /**
-     * Required. The transaction identifier, returned by a call to
-     * Datastore.BeginTransaction.
-     *
-     * @var string
-     */
-    public $transaction;
-    /**
-     * The ID of the database against which to make the request. '(default)' is
-     * not allowed; please use empty string '' to refer the default database.
-     *
-     * @param string $databaseId
-     */
-    public function setDatabaseId($databaseId)
+namespace Google\Service\Datastore {
+    class RollbackRequest extends \Google\Model
     {
+        /**
+         * The ID of the database against which to make the request. '(default)' is
+         * not allowed; please use empty string '' to refer the default database.
+         *
+         * @var string
+         */
+        public $databaseId;
+        /**
+         * Required. The transaction identifier, returned by a call to
+         * Datastore.BeginTransaction.
+         *
+         * @var string
+         */
+        public $transaction;
+        /**
+         * The ID of the database against which to make the request. '(default)' is
+         * not allowed; please use empty string '' to refer the default database.
+         *
+         * @param string $databaseId
+         */
+        public function setDatabaseId($databaseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabaseId()
+        {
+        }
+        /**
+         * Required. The transaction identifier, returned by a call to
+         * Datastore.BeginTransaction.
+         *
+         * @param string $transaction
+         */
+        public function setTransaction($transaction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransaction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastore\RollbackRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabaseId()
-    {
-    }
-    /**
-     * Required. The transaction identifier, returned by a call to
-     * Datastore.BeginTransaction.
-     *
-     * @param string $transaction
-     */
-    public function setTransaction($transaction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTransaction()
+    class Google_Service_Datastore_RollbackRequest extends \Google\Service\Datastore\RollbackRequest
     {
     }
 }

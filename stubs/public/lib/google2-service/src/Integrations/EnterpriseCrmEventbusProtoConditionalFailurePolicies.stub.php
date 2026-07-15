@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoConditionalFailurePolicies extends \Google\Collection
-{
-    protected $collection_key = 'failurePolicies';
-    protected $defaultFailurePolicyType = EnterpriseCrmEventbusProtoFailurePolicy::class;
-    protected $defaultFailurePolicyDataType = '';
-    protected $failurePoliciesType = EnterpriseCrmEventbusProtoFailurePolicy::class;
-    protected $failurePoliciesDataType = 'array';
-    /**
-     * The default failure policy to be applied if no conditional failure policy
-     * matches
-     *
-     * @param EnterpriseCrmEventbusProtoFailurePolicy $defaultFailurePolicy
-     */
-    public function setDefaultFailurePolicy(EnterpriseCrmEventbusProtoFailurePolicy $defaultFailurePolicy)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoConditionalFailurePolicies extends \Google\Collection
     {
+        protected $collection_key = 'failurePolicies';
+        protected $defaultFailurePolicyType = EnterpriseCrmEventbusProtoFailurePolicy::class;
+        protected $defaultFailurePolicyDataType = '';
+        protected $failurePoliciesType = EnterpriseCrmEventbusProtoFailurePolicy::class;
+        protected $failurePoliciesDataType = 'array';
+        /**
+         * The default failure policy to be applied if no conditional failure policy
+         * matches
+         *
+         * @param EnterpriseCrmEventbusProtoFailurePolicy $defaultFailurePolicy
+         */
+        public function setDefaultFailurePolicy(EnterpriseCrmEventbusProtoFailurePolicy $defaultFailurePolicy)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoFailurePolicy
+         */
+        public function getDefaultFailurePolicy()
+        {
+        }
+        /**
+         * The list of failure policies that will be applied to the task in order.
+         *
+         * @param EnterpriseCrmEventbusProtoFailurePolicy[] $failurePolicies
+         */
+        public function setFailurePolicies($failurePolicies)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoFailurePolicy[]
+         */
+        public function getFailurePolicies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmEventbusProtoFailurePolicy
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoConditionalFailurePolicies registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultFailurePolicy()
-    {
-    }
-    /**
-     * The list of failure policies that will be applied to the task in order.
-     *
-     * @param EnterpriseCrmEventbusProtoFailurePolicy[] $failurePolicies
-     */
-    public function setFailurePolicies($failurePolicies)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoFailurePolicy[]
-     */
-    public function getFailurePolicies()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoConditionalFailurePolicies extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoConditionalFailurePolicies
     {
     }
 }

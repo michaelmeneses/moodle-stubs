@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class UpdateMembershipRolesParams extends \Google\Model
-{
-    /**
-     * The fully-qualified names of fields to update. May only contain the field
-     * `expiry_detail.expire_time`.
-     *
-     * @var string
-     */
-    public $fieldMask;
-    protected $membershipRoleType = MembershipRole::class;
-    protected $membershipRoleDataType = '';
-    /**
-     * The fully-qualified names of fields to update. May only contain the field
-     * `expiry_detail.expire_time`.
-     *
-     * @param string $fieldMask
-     */
-    public function setFieldMask($fieldMask)
+namespace Google\Service\CloudIdentity {
+    class UpdateMembershipRolesParams extends \Google\Model
     {
+        /**
+         * The fully-qualified names of fields to update. May only contain the field
+         * `expiry_detail.expire_time`.
+         *
+         * @var string
+         */
+        public $fieldMask;
+        protected $membershipRoleType = MembershipRole::class;
+        protected $membershipRoleDataType = '';
+        /**
+         * The fully-qualified names of fields to update. May only contain the field
+         * `expiry_detail.expire_time`.
+         *
+         * @param string $fieldMask
+         */
+        public function setFieldMask($fieldMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldMask()
+        {
+        }
+        /**
+         * The `MembershipRole`s to be updated. Only `MEMBER` `MembershipRole` can
+         * currently be updated.
+         *
+         * @param MembershipRole $membershipRole
+         */
+        public function setMembershipRole(MembershipRole $membershipRole)
+        {
+        }
+        /**
+         * @return MembershipRole
+         */
+        public function getMembershipRole()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIdentity\UpdateMembershipRolesParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldMask()
-    {
-    }
-    /**
-     * The `MembershipRole`s to be updated. Only `MEMBER` `MembershipRole` can
-     * currently be updated.
-     *
-     * @param MembershipRole $membershipRole
-     */
-    public function setMembershipRole(MembershipRole $membershipRole)
-    {
-    }
-    /**
-     * @return MembershipRole
-     */
-    public function getMembershipRole()
+    class Google_Service_CloudIdentity_UpdateMembershipRolesParams extends \Google\Service\CloudIdentity\UpdateMembershipRolesParams
     {
     }
 }

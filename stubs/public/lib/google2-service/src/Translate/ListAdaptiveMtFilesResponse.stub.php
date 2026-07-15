@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class ListAdaptiveMtFilesResponse extends \Google\Collection
-{
-    protected $collection_key = 'adaptiveMtFiles';
-    protected $adaptiveMtFilesType = AdaptiveMtFile::class;
-    protected $adaptiveMtFilesDataType = 'array';
-    /**
-     * Optional. A token to retrieve a page of results. Pass this value in the
-     * ListAdaptiveMtFilesRequest.page_token field in the subsequent call to
-     * `ListAdaptiveMtFiles` method to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Output only. The Adaptive MT files.
-     *
-     * @param AdaptiveMtFile[] $adaptiveMtFiles
-     */
-    public function setAdaptiveMtFiles($adaptiveMtFiles)
+namespace Google\Service\Translate {
+    class ListAdaptiveMtFilesResponse extends \Google\Collection
     {
+        protected $collection_key = 'adaptiveMtFiles';
+        protected $adaptiveMtFilesType = AdaptiveMtFile::class;
+        protected $adaptiveMtFilesDataType = 'array';
+        /**
+         * Optional. A token to retrieve a page of results. Pass this value in the
+         * ListAdaptiveMtFilesRequest.page_token field in the subsequent call to
+         * `ListAdaptiveMtFiles` method to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Output only. The Adaptive MT files.
+         *
+         * @param AdaptiveMtFile[] $adaptiveMtFiles
+         */
+        public function setAdaptiveMtFiles($adaptiveMtFiles)
+        {
+        }
+        /**
+         * @return AdaptiveMtFile[]
+         */
+        public function getAdaptiveMtFiles()
+        {
+        }
+        /**
+         * Optional. A token to retrieve a page of results. Pass this value in the
+         * ListAdaptiveMtFilesRequest.page_token field in the subsequent call to
+         * `ListAdaptiveMtFiles` method to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdaptiveMtFile[]
+     * Runtime class alias of \Google\Service\Translate\ListAdaptiveMtFilesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdaptiveMtFiles()
-    {
-    }
-    /**
-     * Optional. A token to retrieve a page of results. Pass this value in the
-     * ListAdaptiveMtFilesRequest.page_token field in the subsequent call to
-     * `ListAdaptiveMtFiles` method to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Translate_ListAdaptiveMtFilesResponse extends \Google\Service\Translate\ListAdaptiveMtFilesResponse
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class NetworkAddress extends \Google\Model
-{
-    /**
-     * IPv4 address to be assigned to the server.
-     *
-     * @var string
-     */
-    public $address;
-    /**
-     * Name of the existing network to use.
-     *
-     * @var string
-     */
-    public $existingNetworkId;
-    /**
-     * Id of the network to use, within the same ProvisioningConfig request.
-     *
-     * @var string
-     */
-    public $networkId;
-    /**
-     * IPv4 address to be assigned to the server.
-     *
-     * @param string $address
-     */
-    public function setAddress($address)
+namespace Google\Service\Baremetalsolution {
+    class NetworkAddress extends \Google\Model
     {
+        /**
+         * IPv4 address to be assigned to the server.
+         *
+         * @var string
+         */
+        public $address;
+        /**
+         * Name of the existing network to use.
+         *
+         * @var string
+         */
+        public $existingNetworkId;
+        /**
+         * Id of the network to use, within the same ProvisioningConfig request.
+         *
+         * @var string
+         */
+        public $networkId;
+        /**
+         * IPv4 address to be assigned to the server.
+         *
+         * @param string $address
+         */
+        public function setAddress($address)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * Name of the existing network to use.
+         *
+         * @param string $existingNetworkId
+         */
+        public function setExistingNetworkId($existingNetworkId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExistingNetworkId()
+        {
+        }
+        /**
+         * Id of the network to use, within the same ProvisioningConfig request.
+         *
+         * @param string $networkId
+         */
+        public function setNetworkId($networkId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Baremetalsolution\NetworkAddress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * Name of the existing network to use.
-     *
-     * @param string $existingNetworkId
-     */
-    public function setExistingNetworkId($existingNetworkId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExistingNetworkId()
-    {
-    }
-    /**
-     * Id of the network to use, within the same ProvisioningConfig request.
-     *
-     * @param string $networkId
-     */
-    public function setNetworkId($networkId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetworkId()
+    class Google_Service_Baremetalsolution_NetworkAddress extends \Google\Service\Baremetalsolution\NetworkAddress
     {
     }
 }

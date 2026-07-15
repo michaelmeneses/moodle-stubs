@@ -21,97 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube\Resource;
-
-/**
- * The "channels" collection of methods.
- * Typical usage is:
- *  <code>
- *   $youtubeService = new Google\Service\YouTube(...);
- *   $channels = $youtubeService->channels;
- *  </code>
- */
-class Channels extends \Google\Service\Resource
-{
+namespace Google\Service\YouTube\Resource {
+    use Google\Service\YouTube\Channel;
+    use Google\Service\YouTube\ChannelListResponse;
     /**
-     * Retrieves a list of resources, possibly filtered. (channels.listChannels)
-     *
-     * @param string|array $part The *part* parameter specifies a comma-separated
-     * list of one or more channel resource properties that the API response will
-     * include. If the parameter identifies a property that contains child
-     * properties, the child properties will be included in the response. For
-     * example, in a channel resource, the contentDetails property contains other
-     * properties, such as the uploads properties. As such, if you set
-     * *part=contentDetails*, the API response will also contain all of those nested
-     * properties.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string categoryId Return the channels within the specified guide
-     * category ID.
-     * @opt_param string forHandle Return the channel associated with a YouTube
-     * handle.
-     * @opt_param string forUsername Return the channel associated with a YouTube
-     * username.
-     * @opt_param string hl Stands for "host language". Specifies the localization
-     * language of the metadata to be filled into snippet.localized. The field is
-     * filled with the default metadata if there is no localization in the specified
-     * language. The parameter value must be a language code included in the list
-     * returned by the i18nLanguages.list method (e.g. en_US, es_MX).
-     * @opt_param string id Return the channels with the specified IDs.
-     * @opt_param bool managedByMe Return the channels managed by the authenticated
-     * user.
-     * @opt_param string maxResults The *maxResults* parameter specifies the maximum
-     * number of items that should be returned in the result set.
-     * @opt_param bool mine Return the ids of channels owned by the authenticated
-     * user.
-     * @opt_param bool mySubscribers Return the channels subscribed to the
-     * authenticated user
-     * @opt_param string onBehalfOfContentOwner *Note:* This parameter is intended
-     * exclusively for YouTube content partners. The *onBehalfOfContentOwner*
-     * parameter indicates that the request's authorization credentials identify a
-     * YouTube CMS user who is acting on behalf of the content owner specified in
-     * the parameter value. This parameter is intended for YouTube content partners
-     * that own and manage many different YouTube channels. It allows content owners
-     * to authenticate once and get access to all their video and channel data,
-     * without having to provide authentication credentials for each individual
-     * channel. The CMS account that the user authenticates with must be linked to
-     * the specified YouTube content owner.
-     * @opt_param string pageToken The *pageToken* parameter identifies a specific
-     * page in the result set that should be returned. In an API response, the
-     * nextPageToken and prevPageToken properties identify other pages that could be
-     * retrieved.
-     * @return ChannelListResponse
-     * @throws \Google\Service\Exception
+     * The "channels" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $youtubeService = new Google\Service\YouTube(...);
+     *   $channels = $youtubeService->channels;
+     *  </code>
      */
-    public function listChannels($part, $optParams = [])
+    class Channels extends \Google\Service\Resource
     {
+        /**
+         * Retrieves a list of resources, possibly filtered. (channels.listChannels)
+         *
+         * @param string|array $part The *part* parameter specifies a comma-separated
+         * list of one or more channel resource properties that the API response will
+         * include. If the parameter identifies a property that contains child
+         * properties, the child properties will be included in the response. For
+         * example, in a channel resource, the contentDetails property contains other
+         * properties, such as the uploads properties. As such, if you set
+         * *part=contentDetails*, the API response will also contain all of those nested
+         * properties.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string categoryId Return the channels within the specified guide
+         * category ID.
+         * @opt_param string forHandle Return the channel associated with a YouTube
+         * handle.
+         * @opt_param string forUsername Return the channel associated with a YouTube
+         * username.
+         * @opt_param string hl Stands for "host language". Specifies the localization
+         * language of the metadata to be filled into snippet.localized. The field is
+         * filled with the default metadata if there is no localization in the specified
+         * language. The parameter value must be a language code included in the list
+         * returned by the i18nLanguages.list method (e.g. en_US, es_MX).
+         * @opt_param string id Return the channels with the specified IDs.
+         * @opt_param bool managedByMe Return the channels managed by the authenticated
+         * user.
+         * @opt_param string maxResults The *maxResults* parameter specifies the maximum
+         * number of items that should be returned in the result set.
+         * @opt_param bool mine Return the ids of channels owned by the authenticated
+         * user.
+         * @opt_param bool mySubscribers Return the channels subscribed to the
+         * authenticated user
+         * @opt_param string onBehalfOfContentOwner *Note:* This parameter is intended
+         * exclusively for YouTube content partners. The *onBehalfOfContentOwner*
+         * parameter indicates that the request's authorization credentials identify a
+         * YouTube CMS user who is acting on behalf of the content owner specified in
+         * the parameter value. This parameter is intended for YouTube content partners
+         * that own and manage many different YouTube channels. It allows content owners
+         * to authenticate once and get access to all their video and channel data,
+         * without having to provide authentication credentials for each individual
+         * channel. The CMS account that the user authenticates with must be linked to
+         * the specified YouTube content owner.
+         * @opt_param string pageToken The *pageToken* parameter identifies a specific
+         * page in the result set that should be returned. In an API response, the
+         * nextPageToken and prevPageToken properties identify other pages that could be
+         * retrieved.
+         * @return ChannelListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listChannels($part, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing resource. (channels.update)
+         *
+         * @param string|array $part The *part* parameter serves two purposes in this
+         * operation. It identifies the properties that the write operation will set as
+         * well as the properties that the API response will include. The API currently
+         * only allows the parameter value to be set to either brandingSettings or
+         * invideoPromotion. (You cannot update both of those parts with a single
+         * request.) Note that this method overrides the existing values for all of the
+         * mutable properties that are contained in any parts that the parameter value
+         * specifies.
+         * @param Channel $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string onBehalfOfContentOwner The *onBehalfOfContentOwner*
+         * parameter indicates that the authenticated user is acting on behalf of the
+         * content owner specified in the parameter value. This parameter is intended
+         * for YouTube content partners that own and manage many different YouTube
+         * channels. It allows content owners to authenticate once and get access to all
+         * their video and channel data, without having to provide authentication
+         * credentials for each individual channel. The actual CMS account that the user
+         * authenticates with needs to be linked to the specified YouTube content owner.
+         * @return Channel
+         * @throws \Google\Service\Exception
+         */
+        public function update($part, Channel $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Updates an existing resource. (channels.update)
-     *
-     * @param string|array $part The *part* parameter serves two purposes in this
-     * operation. It identifies the properties that the write operation will set as
-     * well as the properties that the API response will include. The API currently
-     * only allows the parameter value to be set to either brandingSettings or
-     * invideoPromotion. (You cannot update both of those parts with a single
-     * request.) Note that this method overrides the existing values for all of the
-     * mutable properties that are contained in any parts that the parameter value
-     * specifies.
-     * @param Channel $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string onBehalfOfContentOwner The *onBehalfOfContentOwner*
-     * parameter indicates that the authenticated user is acting on behalf of the
-     * content owner specified in the parameter value. This parameter is intended
-     * for YouTube content partners that own and manage many different YouTube
-     * channels. It allows content owners to authenticate once and get access to all
-     * their video and channel data, without having to provide authentication
-     * credentials for each individual channel. The actual CMS account that the user
-     * authenticates with needs to be linked to the specified YouTube content owner.
-     * @return Channel
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\YouTube\Resource\Channels registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function update($part, Channel $postBody, $optParams = [])
+    class Google_Service_YouTube_Resource_Channels extends \Google\Service\YouTube\Resource\Channels
     {
     }
 }

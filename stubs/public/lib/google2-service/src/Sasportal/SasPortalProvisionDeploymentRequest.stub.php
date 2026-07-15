@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sasportal;
-
-class SasPortalProvisionDeploymentRequest extends \Google\Model
-{
-    /**
-     * Optional. If this field is set, and a new SAS Portal Deployment needs to be
-     * created, its display name will be set to the value of this field.
-     *
-     * @var string
-     */
-    public $newDeploymentDisplayName;
-    /**
-     * Optional. If this field is set, and a new SAS Portal Organization needs to
-     * be created, its display name will be set to the value of this field.
-     *
-     * @var string
-     */
-    public $newOrganizationDisplayName;
-    /**
-     * Optional. If this field is set then a new deployment will be created under
-     * the organization specified by this id.
-     *
-     * @var string
-     */
-    public $organizationId;
-    /**
-     * Optional. If this field is set, and a new SAS Portal Deployment needs to be
-     * created, its display name will be set to the value of this field.
-     *
-     * @param string $newDeploymentDisplayName
-     */
-    public function setNewDeploymentDisplayName($newDeploymentDisplayName)
+namespace Google\Service\Sasportal {
+    class SasPortalProvisionDeploymentRequest extends \Google\Model
     {
+        /**
+         * Optional. If this field is set, and a new SAS Portal Deployment needs to be
+         * created, its display name will be set to the value of this field.
+         *
+         * @var string
+         */
+        public $newDeploymentDisplayName;
+        /**
+         * Optional. If this field is set, and a new SAS Portal Organization needs to
+         * be created, its display name will be set to the value of this field.
+         *
+         * @var string
+         */
+        public $newOrganizationDisplayName;
+        /**
+         * Optional. If this field is set then a new deployment will be created under
+         * the organization specified by this id.
+         *
+         * @var string
+         */
+        public $organizationId;
+        /**
+         * Optional. If this field is set, and a new SAS Portal Deployment needs to be
+         * created, its display name will be set to the value of this field.
+         *
+         * @param string $newDeploymentDisplayName
+         */
+        public function setNewDeploymentDisplayName($newDeploymentDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewDeploymentDisplayName()
+        {
+        }
+        /**
+         * Optional. If this field is set, and a new SAS Portal Organization needs to
+         * be created, its display name will be set to the value of this field.
+         *
+         * @param string $newOrganizationDisplayName
+         */
+        public function setNewOrganizationDisplayName($newOrganizationDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewOrganizationDisplayName()
+        {
+        }
+        /**
+         * Optional. If this field is set then a new deployment will be created under
+         * the organization specified by this id.
+         *
+         * @param string $organizationId
+         */
+        public function setOrganizationId($organizationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrganizationId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sasportal\SasPortalProvisionDeploymentRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewDeploymentDisplayName()
-    {
-    }
-    /**
-     * Optional. If this field is set, and a new SAS Portal Organization needs to
-     * be created, its display name will be set to the value of this field.
-     *
-     * @param string $newOrganizationDisplayName
-     */
-    public function setNewOrganizationDisplayName($newOrganizationDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNewOrganizationDisplayName()
-    {
-    }
-    /**
-     * Optional. If this field is set then a new deployment will be created under
-     * the organization specified by this id.
-     *
-     * @param string $organizationId
-     */
-    public function setOrganizationId($organizationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrganizationId()
+    class Google_Service_Sasportal_SasPortalProvisionDeploymentRequest extends \Google\Service\Sasportal\SasPortalProvisionDeploymentRequest
     {
     }
 }

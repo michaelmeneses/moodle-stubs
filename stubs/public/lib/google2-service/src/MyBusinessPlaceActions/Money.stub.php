@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessPlaceActions;
-
-class Money extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $currencyCode;
-    /**
-     * @var int
-     */
-    public $nanos;
-    /**
-     * @var string
-     */
-    public $units;
-    /**
-     * @param string
-     */
-    public function setCurrencyCode($currencyCode)
+namespace Google\Service\MyBusinessPlaceActions {
+    class Money extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $currencyCode;
+        /**
+         * @var int
+         */
+        public $nanos;
+        /**
+         * @var string
+         */
+        public $units;
+        /**
+         * @param string
+         */
+        public function setCurrencyCode($currencyCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrencyCode()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setNanos($nanos)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNanos()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUnits($units)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnits()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessPlaceActions\Money registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrencyCode()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setNanos($nanos)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNanos()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUnits($units)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnits()
+    class Google_Service_MyBusinessPlaceActions_Money extends \Google\Service\MyBusinessPlaceActions\Money
     {
     }
 }

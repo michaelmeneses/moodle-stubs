@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaAnswerReferenceChunkInfo extends \Google\Collection
-{
-    protected $collection_key = 'blobAttachmentIndexes';
-    /**
-     * Output only. Stores indexes of blobattachments linked to this chunk.
-     *
-     * @var string[]
-     */
-    public $blobAttachmentIndexes;
-    /**
-     * Chunk resource name.
-     *
-     * @var string
-     */
-    public $chunk;
-    /**
-     * Chunk textual content.
-     *
-     * @var string
-     */
-    public $content;
-    protected $documentMetadataType = GoogleCloudDiscoveryengineV1alphaAnswerReferenceChunkInfoDocumentMetadata::class;
-    protected $documentMetadataDataType = '';
-    /**
-     * The relevance of the chunk for a given query. Values range from 0.0
-     * (completely irrelevant) to 1.0 (completely relevant). This value is for
-     * informational purpose only. It may change for the same query and chunk at
-     * any time due to a model retraining or change in implementation.
-     *
-     * @var float
-     */
-    public $relevanceScore;
-    /**
-     * Output only. Stores indexes of blobattachments linked to this chunk.
-     *
-     * @param string[] $blobAttachmentIndexes
-     */
-    public function setBlobAttachmentIndexes($blobAttachmentIndexes)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaAnswerReferenceChunkInfo extends \Google\Collection
     {
+        protected $collection_key = 'blobAttachmentIndexes';
+        /**
+         * Output only. Stores indexes of blobattachments linked to this chunk.
+         *
+         * @var string[]
+         */
+        public $blobAttachmentIndexes;
+        /**
+         * Chunk resource name.
+         *
+         * @var string
+         */
+        public $chunk;
+        /**
+         * Chunk textual content.
+         *
+         * @var string
+         */
+        public $content;
+        protected $documentMetadataType = GoogleCloudDiscoveryengineV1alphaAnswerReferenceChunkInfoDocumentMetadata::class;
+        protected $documentMetadataDataType = '';
+        /**
+         * The relevance of the chunk for a given query. Values range from 0.0
+         * (completely irrelevant) to 1.0 (completely relevant). This value is for
+         * informational purpose only. It may change for the same query and chunk at
+         * any time due to a model retraining or change in implementation.
+         *
+         * @var float
+         */
+        public $relevanceScore;
+        /**
+         * Output only. Stores indexes of blobattachments linked to this chunk.
+         *
+         * @param string[] $blobAttachmentIndexes
+         */
+        public function setBlobAttachmentIndexes($blobAttachmentIndexes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBlobAttachmentIndexes()
+        {
+        }
+        /**
+         * Chunk resource name.
+         *
+         * @param string $chunk
+         */
+        public function setChunk($chunk)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChunk()
+        {
+        }
+        /**
+         * Chunk textual content.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Document metadata.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaAnswerReferenceChunkInfoDocumentMetadata $documentMetadata
+         */
+        public function setDocumentMetadata(GoogleCloudDiscoveryengineV1alphaAnswerReferenceChunkInfoDocumentMetadata $documentMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaAnswerReferenceChunkInfoDocumentMetadata
+         */
+        public function getDocumentMetadata()
+        {
+        }
+        /**
+         * The relevance of the chunk for a given query. Values range from 0.0
+         * (completely irrelevant) to 1.0 (completely relevant). This value is for
+         * informational purpose only. It may change for the same query and chunk at
+         * any time due to a model retraining or change in implementation.
+         *
+         * @param float $relevanceScore
+         */
+        public function setRelevanceScore($relevanceScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getRelevanceScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAnswerReferenceChunkInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlobAttachmentIndexes()
-    {
-    }
-    /**
-     * Chunk resource name.
-     *
-     * @param string $chunk
-     */
-    public function setChunk($chunk)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChunk()
-    {
-    }
-    /**
-     * Chunk textual content.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContent()
-    {
-    }
-    /**
-     * Document metadata.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaAnswerReferenceChunkInfoDocumentMetadata $documentMetadata
-     */
-    public function setDocumentMetadata(GoogleCloudDiscoveryengineV1alphaAnswerReferenceChunkInfoDocumentMetadata $documentMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1alphaAnswerReferenceChunkInfoDocumentMetadata
-     */
-    public function getDocumentMetadata()
-    {
-    }
-    /**
-     * The relevance of the chunk for a given query. Values range from 0.0
-     * (completely irrelevant) to 1.0 (completely relevant). This value is for
-     * informational purpose only. It may change for the same query and chunk at
-     * any time due to a model retraining or change in implementation.
-     *
-     * @param float $relevanceScore
-     */
-    public function setRelevanceScore($relevanceScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getRelevanceScore()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaAnswerReferenceChunkInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAnswerReferenceChunkInfo
     {
     }
 }

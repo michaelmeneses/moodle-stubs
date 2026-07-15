@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3DocumentSchemaMetadata extends \Google\Model
-{
-    /**
-     * If true, on a given page, there can be multiple `document` annotations
-     * covering it.
-     *
-     * @var bool
-     */
-    public $documentAllowMultipleLabels;
-    /**
-     * If true, a `document` entity type can be applied to subdocument
-     * (splitting). Otherwise, it can only be applied to the entire document
-     * (classification).
-     *
-     * @var bool
-     */
-    public $documentSplitter;
-    /**
-     * If set, all the nested entities must be prefixed with the parents.
-     *
-     * @var bool
-     */
-    public $prefixedNamingOnProperties;
-    /**
-     * If set, we will skip the naming format validation in the schema. So the
-     * string values in `DocumentSchema.EntityType.name` and
-     * `DocumentSchema.EntityType.Property.name` will not be checked.
-     *
-     * @var bool
-     */
-    public $skipNamingValidation;
-    /**
-     * If true, on a given page, there can be multiple `document` annotations
-     * covering it.
-     *
-     * @param bool $documentAllowMultipleLabels
-     */
-    public function setDocumentAllowMultipleLabels($documentAllowMultipleLabels)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3DocumentSchemaMetadata extends \Google\Model
     {
+        /**
+         * If true, on a given page, there can be multiple `document` annotations
+         * covering it.
+         *
+         * @var bool
+         */
+        public $documentAllowMultipleLabels;
+        /**
+         * If true, a `document` entity type can be applied to subdocument
+         * (splitting). Otherwise, it can only be applied to the entire document
+         * (classification).
+         *
+         * @var bool
+         */
+        public $documentSplitter;
+        /**
+         * If set, all the nested entities must be prefixed with the parents.
+         *
+         * @var bool
+         */
+        public $prefixedNamingOnProperties;
+        /**
+         * If set, we will skip the naming format validation in the schema. So the
+         * string values in `DocumentSchema.EntityType.name` and
+         * `DocumentSchema.EntityType.Property.name` will not be checked.
+         *
+         * @var bool
+         */
+        public $skipNamingValidation;
+        /**
+         * If true, on a given page, there can be multiple `document` annotations
+         * covering it.
+         *
+         * @param bool $documentAllowMultipleLabels
+         */
+        public function setDocumentAllowMultipleLabels($documentAllowMultipleLabels)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDocumentAllowMultipleLabels()
+        {
+        }
+        /**
+         * If true, a `document` entity type can be applied to subdocument
+         * (splitting). Otherwise, it can only be applied to the entire document
+         * (classification).
+         *
+         * @param bool $documentSplitter
+         */
+        public function setDocumentSplitter($documentSplitter)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDocumentSplitter()
+        {
+        }
+        /**
+         * If set, all the nested entities must be prefixed with the parents.
+         *
+         * @param bool $prefixedNamingOnProperties
+         */
+        public function setPrefixedNamingOnProperties($prefixedNamingOnProperties)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPrefixedNamingOnProperties()
+        {
+        }
+        /**
+         * If set, we will skip the naming format validation in the schema. So the
+         * string values in `DocumentSchema.EntityType.name` and
+         * `DocumentSchema.EntityType.Property.name` will not be checked.
+         *
+         * @param bool $skipNamingValidation
+         */
+        public function setSkipNamingValidation($skipNamingValidation)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSkipNamingValidation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3DocumentSchemaMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentAllowMultipleLabels()
-    {
-    }
-    /**
-     * If true, a `document` entity type can be applied to subdocument
-     * (splitting). Otherwise, it can only be applied to the entire document
-     * (classification).
-     *
-     * @param bool $documentSplitter
-     */
-    public function setDocumentSplitter($documentSplitter)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDocumentSplitter()
-    {
-    }
-    /**
-     * If set, all the nested entities must be prefixed with the parents.
-     *
-     * @param bool $prefixedNamingOnProperties
-     */
-    public function setPrefixedNamingOnProperties($prefixedNamingOnProperties)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPrefixedNamingOnProperties()
-    {
-    }
-    /**
-     * If set, we will skip the naming format validation in the schema. So the
-     * string values in `DocumentSchema.EntityType.name` and
-     * `DocumentSchema.EntityType.Property.name` will not be checked.
-     *
-     * @param bool $skipNamingValidation
-     */
-    public function setSkipNamingValidation($skipNamingValidation)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSkipNamingValidation()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3DocumentSchemaMetadata extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3DocumentSchemaMetadata
     {
     }
 }

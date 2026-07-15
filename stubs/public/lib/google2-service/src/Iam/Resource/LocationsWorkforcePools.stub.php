@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam\Resource;
-
-/**
- * The "workforcePools" collection of methods.
- * Typical usage is:
- *  <code>
- *   $iamService = new Google\Service\Iam(...);
- *   $workforcePools = $iamService->locations_workforcePools;
- *  </code>
- */
-class LocationsWorkforcePools extends \Google\Service\Resource
-{
+namespace Google\Service\Iam\Resource {
+    /**
+     * The "workforcePools" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $iamService = new Google\Service\Iam(...);
+     *   $workforcePools = $iamService->locations_workforcePools;
+     *  </code>
+     */
+    class LocationsWorkforcePools extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Iam\Resource\LocationsWorkforcePools registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Iam_Resource_LocationsWorkforcePools extends \Google\Service\Iam\Resource\LocationsWorkforcePools
+    {
+    }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class AcceptHubSpokeResponse extends \Google\Model
-{
-    protected $spokeType = Spoke::class;
-    protected $spokeDataType = '';
-    /**
-     * The spoke that was operated on.
-     *
-     * @param Spoke $spoke
-     */
-    public function setSpoke(Spoke $spoke)
+namespace Google\Service\Networkconnectivity {
+    class AcceptHubSpokeResponse extends \Google\Model
     {
+        protected $spokeType = Spoke::class;
+        protected $spokeDataType = '';
+        /**
+         * The spoke that was operated on.
+         *
+         * @param Spoke $spoke
+         */
+        public function setSpoke(Spoke $spoke)
+        {
+        }
+        /**
+         * @return Spoke
+         */
+        public function getSpoke()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Spoke
+     * Runtime class alias of \Google\Service\Networkconnectivity\AcceptHubSpokeResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSpoke()
+    class Google_Service_Networkconnectivity_AcceptHubSpokeResponse extends \Google\Service\Networkconnectivity\AcceptHubSpokeResponse
     {
     }
 }

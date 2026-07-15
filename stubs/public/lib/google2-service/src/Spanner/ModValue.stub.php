@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class ModValue extends \Google\Model
-{
-    /**
-     * Index within the repeated column_metadata field, to obtain the column
-     * metadata for the column that was modified.
-     *
-     * @var int
-     */
-    public $columnMetadataIndex;
-    /**
-     * The value of the column.
-     *
-     * @var array
-     */
-    public $value;
-    /**
-     * Index within the repeated column_metadata field, to obtain the column
-     * metadata for the column that was modified.
-     *
-     * @param int $columnMetadataIndex
-     */
-    public function setColumnMetadataIndex($columnMetadataIndex)
+namespace Google\Service\Spanner {
+    class ModValue extends \Google\Model
     {
+        /**
+         * Index within the repeated column_metadata field, to obtain the column
+         * metadata for the column that was modified.
+         *
+         * @var int
+         */
+        public $columnMetadataIndex;
+        /**
+         * The value of the column.
+         *
+         * @var array
+         */
+        public $value;
+        /**
+         * Index within the repeated column_metadata field, to obtain the column
+         * metadata for the column that was modified.
+         *
+         * @param int $columnMetadataIndex
+         */
+        public function setColumnMetadataIndex($columnMetadataIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColumnMetadataIndex()
+        {
+        }
+        /**
+         * The value of the column.
+         *
+         * @param array $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Spanner\ModValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnMetadataIndex()
-    {
-    }
-    /**
-     * The value of the column.
-     *
-     * @param array $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getValue()
+    class Google_Service_Spanner_ModValue extends \Google\Service\Spanner\ModValue
     {
     }
 }

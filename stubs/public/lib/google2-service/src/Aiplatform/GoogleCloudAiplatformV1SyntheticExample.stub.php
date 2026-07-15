@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SyntheticExample extends \Google\Collection
-{
-    protected $collection_key = 'fields';
-    protected $fieldsType = GoogleCloudAiplatformV1SyntheticField::class;
-    protected $fieldsDataType = 'array';
-    /**
-     * Required. A list of fields that constitute an example.
-     *
-     * @param GoogleCloudAiplatformV1SyntheticField[] $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SyntheticExample extends \Google\Collection
     {
+        protected $collection_key = 'fields';
+        protected $fieldsType = GoogleCloudAiplatformV1SyntheticField::class;
+        protected $fieldsDataType = 'array';
+        /**
+         * Required. A list of fields that constitute an example.
+         *
+         * @param GoogleCloudAiplatformV1SyntheticField[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SyntheticField[]
+         */
+        public function getFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SyntheticField[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SyntheticExample registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SyntheticExample extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SyntheticExample
     {
     }
 }

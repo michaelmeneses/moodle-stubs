@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1VideoClassificationConfig extends \Google\Collection
-{
-    protected $collection_key = 'annotationSpecSetConfigs';
-    protected $annotationSpecSetConfigsType = GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig::class;
-    protected $annotationSpecSetConfigsDataType = 'array';
-    /**
-     * Optional. Option to apply shot detection on the video.
-     *
-     * @var bool
-     */
-    public $applyShotDetection;
-    /**
-     * Required. The list of annotation spec set configs. Since watching a video
-     * clip takes much longer time than an image, we support label with multiple
-     * AnnotationSpecSet at the same time. Labels in each AnnotationSpecSet will
-     * be shown in a group to contributors. Contributors can select one or more
-     * (depending on whether to allow multi label) from each group.
-     *
-     * @param GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig[] $annotationSpecSetConfigs
-     */
-    public function setAnnotationSpecSetConfigs($annotationSpecSetConfigs)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1VideoClassificationConfig extends \Google\Collection
     {
+        protected $collection_key = 'annotationSpecSetConfigs';
+        protected $annotationSpecSetConfigsType = GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig::class;
+        protected $annotationSpecSetConfigsDataType = 'array';
+        /**
+         * Optional. Option to apply shot detection on the video.
+         *
+         * @var bool
+         */
+        public $applyShotDetection;
+        /**
+         * Required. The list of annotation spec set configs. Since watching a video
+         * clip takes much longer time than an image, we support label with multiple
+         * AnnotationSpecSet at the same time. Labels in each AnnotationSpecSet will
+         * be shown in a group to contributors. Contributors can select one or more
+         * (depending on whether to allow multi label) from each group.
+         *
+         * @param GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig[] $annotationSpecSetConfigs
+         */
+        public function setAnnotationSpecSetConfigs($annotationSpecSetConfigs)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig[]
+         */
+        public function getAnnotationSpecSetConfigs()
+        {
+        }
+        /**
+         * Optional. Option to apply shot detection on the video.
+         *
+         * @param bool $applyShotDetection
+         */
+        public function setApplyShotDetection($applyShotDetection)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getApplyShotDetection()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig[]
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1VideoClassificationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationSpecSetConfigs()
-    {
-    }
-    /**
-     * Optional. Option to apply shot detection on the video.
-     *
-     * @param bool $applyShotDetection
-     */
-    public function setApplyShotDetection($applyShotDetection)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getApplyShotDetection()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1VideoClassificationConfig extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1VideoClassificationConfig
     {
     }
 }

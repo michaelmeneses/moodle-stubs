@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class LocationContext extends \Google\Collection
-{
-    protected $collection_key = 'geoCriteriaIds';
-    /**
-     * IDs representing the geo location for this context. Refer to the [geo-
-     * table.csv](https://storage.googleapis.com/adx-rtb-dictionaries/geo-
-     * table.csv) file for different geo criteria IDs.
-     *
-     * @var int[]
-     */
-    public $geoCriteriaIds;
-    /**
-     * IDs representing the geo location for this context. Refer to the [geo-
-     * table.csv](https://storage.googleapis.com/adx-rtb-dictionaries/geo-
-     * table.csv) file for different geo criteria IDs.
-     *
-     * @param int[] $geoCriteriaIds
-     */
-    public function setGeoCriteriaIds($geoCriteriaIds)
+namespace Google\Service\AdExchangeBuyerII {
+    class LocationContext extends \Google\Collection
     {
+        protected $collection_key = 'geoCriteriaIds';
+        /**
+         * IDs representing the geo location for this context. Refer to the [geo-
+         * table.csv](https://storage.googleapis.com/adx-rtb-dictionaries/geo-
+         * table.csv) file for different geo criteria IDs.
+         *
+         * @var int[]
+         */
+        public $geoCriteriaIds;
+        /**
+         * IDs representing the geo location for this context. Refer to the [geo-
+         * table.csv](https://storage.googleapis.com/adx-rtb-dictionaries/geo-
+         * table.csv) file for different geo criteria IDs.
+         *
+         * @param int[] $geoCriteriaIds
+         */
+        public function setGeoCriteriaIds($geoCriteriaIds)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getGeoCriteriaIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\LocationContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGeoCriteriaIds()
+    class Google_Service_AdExchangeBuyerII_LocationContext extends \Google\Service\AdExchangeBuyerII\LocationContext
     {
     }
 }

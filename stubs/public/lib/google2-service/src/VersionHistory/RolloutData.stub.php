@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VersionHistory;
-
-class RolloutData extends \Google\Collection
-{
-    protected $collection_key = 'tag';
-    /**
-     * The name of the rollout.
-     *
-     * @var string
-     */
-    public $rolloutName;
-    /**
-     * Tags associated with a release's role in a rollout. Most rollouts will have
-     * at least one release with a "rollout" tag and another release with a
-     * "control" tag. Some rollouts may have additional named arms.
-     *
-     * @var string[]
-     */
-    public $tag;
-    /**
-     * The name of the rollout.
-     *
-     * @param string $rolloutName
-     */
-    public function setRolloutName($rolloutName)
+namespace Google\Service\VersionHistory {
+    class RolloutData extends \Google\Collection
     {
+        protected $collection_key = 'tag';
+        /**
+         * The name of the rollout.
+         *
+         * @var string
+         */
+        public $rolloutName;
+        /**
+         * Tags associated with a release's role in a rollout. Most rollouts will have
+         * at least one release with a "rollout" tag and another release with a
+         * "control" tag. Some rollouts may have additional named arms.
+         *
+         * @var string[]
+         */
+        public $tag;
+        /**
+         * The name of the rollout.
+         *
+         * @param string $rolloutName
+         */
+        public function setRolloutName($rolloutName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRolloutName()
+        {
+        }
+        /**
+         * Tags associated with a release's role in a rollout. Most rollouts will have
+         * at least one release with a "rollout" tag and another release with a
+         * "control" tag. Some rollouts may have additional named arms.
+         *
+         * @param string[] $tag
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VersionHistory\RolloutData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRolloutName()
-    {
-    }
-    /**
-     * Tags associated with a release's role in a rollout. Most rollouts will have
-     * at least one release with a "rollout" tag and another release with a
-     * "control" tag. Some rollouts may have additional named arms.
-     *
-     * @param string[] $tag
-     */
-    public function setTag($tag)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTag()
+    class Google_Service_VersionHistory_RolloutData extends \Google\Service\VersionHistory\RolloutData
     {
     }
 }

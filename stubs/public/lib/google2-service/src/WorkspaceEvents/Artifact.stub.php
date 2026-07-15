@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class Artifact extends \Google\Collection
-{
-    protected $collection_key = 'parts';
-    /**
-     * Unique identifier (e.g. UUID) for the artifact. It must be at least unique
-     * within a task.
-     *
-     * @var string
-     */
-    public $artifactId;
-    /**
-     * A human readable description of the artifact, optional.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The URIs of extensions that are present or contributed to this Artifact.
-     *
-     * @var string[]
-     */
-    public $extensions;
-    /**
-     * Optional metadata included with the artifact.
-     *
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * A human readable name for the artifact.
-     *
-     * @var string
-     */
-    public $name;
-    protected $partsType = Part::class;
-    protected $partsDataType = 'array';
-    /**
-     * Unique identifier (e.g. UUID) for the artifact. It must be at least unique
-     * within a task.
-     *
-     * @param string $artifactId
-     */
-    public function setArtifactId($artifactId)
+namespace Google\Service\WorkspaceEvents {
+    class Artifact extends \Google\Collection
     {
+        protected $collection_key = 'parts';
+        /**
+         * Unique identifier (e.g. UUID) for the artifact. It must be at least unique
+         * within a task.
+         *
+         * @var string
+         */
+        public $artifactId;
+        /**
+         * A human readable description of the artifact, optional.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The URIs of extensions that are present or contributed to this Artifact.
+         *
+         * @var string[]
+         */
+        public $extensions;
+        /**
+         * Optional metadata included with the artifact.
+         *
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * A human readable name for the artifact.
+         *
+         * @var string
+         */
+        public $name;
+        protected $partsType = Part::class;
+        protected $partsDataType = 'array';
+        /**
+         * Unique identifier (e.g. UUID) for the artifact. It must be at least unique
+         * within a task.
+         *
+         * @param string $artifactId
+         */
+        public function setArtifactId($artifactId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArtifactId()
+        {
+        }
+        /**
+         * A human readable description of the artifact, optional.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The URIs of extensions that are present or contributed to this Artifact.
+         *
+         * @param string[] $extensions
+         */
+        public function setExtensions($extensions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExtensions()
+        {
+        }
+        /**
+         * Optional metadata included with the artifact.
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * A human readable name for the artifact.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The content of the artifact.
+         *
+         * @param Part[] $parts
+         */
+        public function setParts($parts)
+        {
+        }
+        /**
+         * @return Part[]
+         */
+        public function getParts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkspaceEvents\Artifact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifactId()
-    {
-    }
-    /**
-     * A human readable description of the artifact, optional.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * The URIs of extensions that are present or contributed to this Artifact.
-     *
-     * @param string[] $extensions
-     */
-    public function setExtensions($extensions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExtensions()
-    {
-    }
-    /**
-     * Optional metadata included with the artifact.
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * A human readable name for the artifact.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The content of the artifact.
-     *
-     * @param Part[] $parts
-     */
-    public function setParts($parts)
-    {
-    }
-    /**
-     * @return Part[]
-     */
-    public function getParts()
+    class Google_Service_WorkspaceEvents_Artifact extends \Google\Service\WorkspaceEvents\Artifact
     {
     }
 }

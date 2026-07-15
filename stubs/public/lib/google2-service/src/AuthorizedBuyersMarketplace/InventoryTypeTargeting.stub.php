@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class InventoryTypeTargeting extends \Google\Collection
-{
-    protected $collection_key = 'inventoryTypes';
-    /**
-     * The list of targeted inventory types for the bid request.
-     *
-     * @var string[]
-     */
-    public $inventoryTypes;
-    /**
-     * The list of targeted inventory types for the bid request.
-     *
-     * @param string[] $inventoryTypes
-     */
-    public function setInventoryTypes($inventoryTypes)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class InventoryTypeTargeting extends \Google\Collection
     {
+        protected $collection_key = 'inventoryTypes';
+        /**
+         * The list of targeted inventory types for the bid request.
+         *
+         * @var string[]
+         */
+        public $inventoryTypes;
+        /**
+         * The list of targeted inventory types for the bid request.
+         *
+         * @param string[] $inventoryTypes
+         */
+        public function setInventoryTypes($inventoryTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getInventoryTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\InventoryTypeTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInventoryTypes()
+    class Google_Service_AuthorizedBuyersMarketplace_InventoryTypeTargeting extends \Google\Service\AuthorizedBuyersMarketplace\InventoryTypeTargeting
     {
     }
 }

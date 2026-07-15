@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class ChromeOsDeviceCpuStatusReportsCpuTemperatureInfo extends \Google\Model
-{
-    /**
-     * CPU label
-     *
-     * @var string
-     */
-    public $label;
-    /**
-     * Temperature in Celsius degrees.
-     *
-     * @var int
-     */
-    public $temperature;
-    /**
-     * CPU label
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
+namespace Google\Service\Directory {
+    class ChromeOsDeviceCpuStatusReportsCpuTemperatureInfo extends \Google\Model
     {
+        /**
+         * CPU label
+         *
+         * @var string
+         */
+        public $label;
+        /**
+         * Temperature in Celsius degrees.
+         *
+         * @var int
+         */
+        public $temperature;
+        /**
+         * CPU label
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * Temperature in Celsius degrees.
+         *
+         * @param int $temperature
+         */
+        public function setTemperature($temperature)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTemperature()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\ChromeOsDeviceCpuStatusReportsCpuTemperatureInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabel()
-    {
-    }
-    /**
-     * Temperature in Celsius degrees.
-     *
-     * @param int $temperature
-     */
-    public function setTemperature($temperature)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTemperature()
+    class Google_Service_Directory_ChromeOsDeviceCpuStatusReportsCpuTemperatureInfo extends \Google\Service\Directory\ChromeOsDeviceCpuStatusReportsCpuTemperatureInfo
     {
     }
 }

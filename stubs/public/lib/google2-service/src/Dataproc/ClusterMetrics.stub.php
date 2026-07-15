@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ClusterMetrics extends \Google\Model
-{
-    /**
-     * The HDFS metrics.
-     *
-     * @var string[]
-     */
-    public $hdfsMetrics;
-    /**
-     * YARN metrics.
-     *
-     * @var string[]
-     */
-    public $yarnMetrics;
-    /**
-     * The HDFS metrics.
-     *
-     * @param string[] $hdfsMetrics
-     */
-    public function setHdfsMetrics($hdfsMetrics)
+namespace Google\Service\Dataproc {
+    class ClusterMetrics extends \Google\Model
     {
+        /**
+         * The HDFS metrics.
+         *
+         * @var string[]
+         */
+        public $hdfsMetrics;
+        /**
+         * YARN metrics.
+         *
+         * @var string[]
+         */
+        public $yarnMetrics;
+        /**
+         * The HDFS metrics.
+         *
+         * @param string[] $hdfsMetrics
+         */
+        public function setHdfsMetrics($hdfsMetrics)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getHdfsMetrics()
+        {
+        }
+        /**
+         * YARN metrics.
+         *
+         * @param string[] $yarnMetrics
+         */
+        public function setYarnMetrics($yarnMetrics)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getYarnMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataproc\ClusterMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHdfsMetrics()
-    {
-    }
-    /**
-     * YARN metrics.
-     *
-     * @param string[] $yarnMetrics
-     */
-    public function setYarnMetrics($yarnMetrics)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getYarnMetrics()
+    class Google_Service_Dataproc_ClusterMetrics extends \Google\Service\Dataproc\ClusterMetrics
     {
     }
 }

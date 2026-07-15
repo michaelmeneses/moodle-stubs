@@ -30,6 +30,7 @@
  */
 namespace tool_log\local\privacy;
 
+use core_privacy\local\request\transform;
 /**
  * Privacy helper class.
  *

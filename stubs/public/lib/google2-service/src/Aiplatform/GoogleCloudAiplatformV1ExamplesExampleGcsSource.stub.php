@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ExamplesExampleGcsSource extends \Google\Model
-{
-    /**
-     * Format unspecified, used when unset.
-     */
-    public const DATA_FORMAT_DATA_FORMAT_UNSPECIFIED = 'DATA_FORMAT_UNSPECIFIED';
-    /**
-     * Examples are stored in JSONL files.
-     */
-    public const DATA_FORMAT_JSONL = 'JSONL';
-    /**
-     * The format in which instances are given, if not specified, assume it's
-     * JSONL format. Currently only JSONL format is supported.
-     *
-     * @var string
-     */
-    public $dataFormat;
-    protected $gcsSourceType = GoogleCloudAiplatformV1GcsSource::class;
-    protected $gcsSourceDataType = '';
-    /**
-     * The format in which instances are given, if not specified, assume it's
-     * JSONL format. Currently only JSONL format is supported.
-     *
-     * Accepted values: DATA_FORMAT_UNSPECIFIED, JSONL
-     *
-     * @param self::DATA_FORMAT_* $dataFormat
-     */
-    public function setDataFormat($dataFormat)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ExamplesExampleGcsSource extends \Google\Model
     {
+        /**
+         * Format unspecified, used when unset.
+         */
+        public const DATA_FORMAT_DATA_FORMAT_UNSPECIFIED = 'DATA_FORMAT_UNSPECIFIED';
+        /**
+         * Examples are stored in JSONL files.
+         */
+        public const DATA_FORMAT_JSONL = 'JSONL';
+        /**
+         * The format in which instances are given, if not specified, assume it's
+         * JSONL format. Currently only JSONL format is supported.
+         *
+         * @var string
+         */
+        public $dataFormat;
+        protected $gcsSourceType = GoogleCloudAiplatformV1GcsSource::class;
+        protected $gcsSourceDataType = '';
+        /**
+         * The format in which instances are given, if not specified, assume it's
+         * JSONL format. Currently only JSONL format is supported.
+         *
+         * Accepted values: DATA_FORMAT_UNSPECIFIED, JSONL
+         *
+         * @param self::DATA_FORMAT_* $dataFormat
+         */
+        public function setDataFormat($dataFormat)
+        {
+        }
+        /**
+         * @return self::DATA_FORMAT_*
+         */
+        public function getDataFormat()
+        {
+        }
+        /**
+         * The Cloud Storage location for the input instances.
+         *
+         * @param GoogleCloudAiplatformV1GcsSource $gcsSource
+         */
+        public function setGcsSource(GoogleCloudAiplatformV1GcsSource $gcsSource)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GcsSource
+         */
+        public function getGcsSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DATA_FORMAT_*
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExamplesExampleGcsSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataFormat()
-    {
-    }
-    /**
-     * The Cloud Storage location for the input instances.
-     *
-     * @param GoogleCloudAiplatformV1GcsSource $gcsSource
-     */
-    public function setGcsSource(GoogleCloudAiplatformV1GcsSource $gcsSource)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1GcsSource
-     */
-    public function getGcsSource()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ExamplesExampleGcsSource extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExamplesExampleGcsSource
     {
     }
 }

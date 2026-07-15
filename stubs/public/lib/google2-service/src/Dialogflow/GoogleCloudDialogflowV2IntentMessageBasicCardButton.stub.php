@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2IntentMessageBasicCardButton extends \Google\Model
-{
-    protected $openUriActionType = GoogleCloudDialogflowV2IntentMessageBasicCardButtonOpenUriAction::class;
-    protected $openUriActionDataType = '';
-    /**
-     * Required. The title of the button.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Required. Action to take when a user taps on the button.
-     *
-     * @param GoogleCloudDialogflowV2IntentMessageBasicCardButtonOpenUriAction $openUriAction
-     */
-    public function setOpenUriAction(GoogleCloudDialogflowV2IntentMessageBasicCardButtonOpenUriAction $openUriAction)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2IntentMessageBasicCardButton extends \Google\Model
     {
+        protected $openUriActionType = GoogleCloudDialogflowV2IntentMessageBasicCardButtonOpenUriAction::class;
+        protected $openUriActionDataType = '';
+        /**
+         * Required. The title of the button.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Required. Action to take when a user taps on the button.
+         *
+         * @param GoogleCloudDialogflowV2IntentMessageBasicCardButtonOpenUriAction $openUriAction
+         */
+        public function setOpenUriAction(GoogleCloudDialogflowV2IntentMessageBasicCardButtonOpenUriAction $openUriAction)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2IntentMessageBasicCardButtonOpenUriAction
+         */
+        public function getOpenUriAction()
+        {
+        }
+        /**
+         * Required. The title of the button.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2IntentMessageBasicCardButtonOpenUriAction
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2IntentMessageBasicCardButton registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOpenUriAction()
-    {
-    }
-    /**
-     * Required. The title of the button.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2IntentMessageBasicCardButton extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2IntentMessageBasicCardButton
     {
     }
 }

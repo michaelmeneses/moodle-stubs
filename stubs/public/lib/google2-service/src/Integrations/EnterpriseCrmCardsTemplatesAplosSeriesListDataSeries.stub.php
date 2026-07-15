@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmCardsTemplatesAplosSeriesListDataSeries extends \Google\Model
-{
-    protected $dataType = EnterpriseCrmCardsTemplatesAplosSeriesData::class;
-    protected $dataDataType = '';
-    public $data;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param EnterpriseCrmCardsTemplatesAplosSeriesData
-     */
-    public function setData(EnterpriseCrmCardsTemplatesAplosSeriesData $data)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmCardsTemplatesAplosSeriesListDataSeries extends \Google\Model
     {
+        protected $dataType = EnterpriseCrmCardsTemplatesAplosSeriesData::class;
+        protected $dataDataType = '';
+        public $data;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param EnterpriseCrmCardsTemplatesAplosSeriesData
+         */
+        public function setData(EnterpriseCrmCardsTemplatesAplosSeriesData $data)
+        {
+        }
+        /**
+         * @return EnterpriseCrmCardsTemplatesAplosSeriesData
+         */
+        public function getData()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmCardsTemplatesAplosSeriesData
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmCardsTemplatesAplosSeriesListDataSeries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Integrations_EnterpriseCrmCardsTemplatesAplosSeriesListDataSeries extends \Google\Service\Integrations\EnterpriseCrmCardsTemplatesAplosSeriesListDataSeries
     {
     }
 }

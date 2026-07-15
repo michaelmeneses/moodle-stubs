@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityPosture;
-
-class GoogleCloudSecuritypostureV1PolicyRuleStringValues extends \Google\Collection
-{
-    protected $collection_key = 'deniedValues';
-    /**
-     * The allowed values for the constraint.
-     *
-     * @var string[]
-     */
-    public $allowedValues;
-    /**
-     * The denied values for the constraint.
-     *
-     * @var string[]
-     */
-    public $deniedValues;
-    /**
-     * The allowed values for the constraint.
-     *
-     * @param string[] $allowedValues
-     */
-    public function setAllowedValues($allowedValues)
+namespace Google\Service\SecurityPosture {
+    class GoogleCloudSecuritypostureV1PolicyRuleStringValues extends \Google\Collection
     {
+        protected $collection_key = 'deniedValues';
+        /**
+         * The allowed values for the constraint.
+         *
+         * @var string[]
+         */
+        public $allowedValues;
+        /**
+         * The denied values for the constraint.
+         *
+         * @var string[]
+         */
+        public $deniedValues;
+        /**
+         * The allowed values for the constraint.
+         *
+         * @param string[] $allowedValues
+         */
+        public function setAllowedValues($allowedValues)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowedValues()
+        {
+        }
+        /**
+         * The denied values for the constraint.
+         *
+         * @param string[] $deniedValues
+         */
+        public function setDeniedValues($deniedValues)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDeniedValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\SecurityPosture\GoogleCloudSecuritypostureV1PolicyRuleStringValues registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedValues()
-    {
-    }
-    /**
-     * The denied values for the constraint.
-     *
-     * @param string[] $deniedValues
-     */
-    public function setDeniedValues($deniedValues)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDeniedValues()
+    class Google_Service_SecurityPosture_GoogleCloudSecuritypostureV1PolicyRuleStringValues extends \Google\Service\SecurityPosture\GoogleCloudSecuritypostureV1PolicyRuleStringValues
     {
     }
 }

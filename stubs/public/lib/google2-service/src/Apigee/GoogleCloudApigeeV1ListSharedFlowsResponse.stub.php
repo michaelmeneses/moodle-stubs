@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListSharedFlowsResponse extends \Google\Collection
-{
-    protected $collection_key = 'sharedFlows';
-    protected $sharedFlowsType = GoogleCloudApigeeV1SharedFlow::class;
-    protected $sharedFlowsDataType = 'array';
-    /**
-     * @param GoogleCloudApigeeV1SharedFlow[] $sharedFlows
-     */
-    public function setSharedFlows($sharedFlows)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListSharedFlowsResponse extends \Google\Collection
     {
+        protected $collection_key = 'sharedFlows';
+        protected $sharedFlowsType = GoogleCloudApigeeV1SharedFlow::class;
+        protected $sharedFlowsDataType = 'array';
+        /**
+         * @param GoogleCloudApigeeV1SharedFlow[] $sharedFlows
+         */
+        public function setSharedFlows($sharedFlows)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1SharedFlow[]
+         */
+        public function getSharedFlows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1SharedFlow[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListSharedFlowsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSharedFlows()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListSharedFlowsResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListSharedFlowsResponse
     {
     }
 }

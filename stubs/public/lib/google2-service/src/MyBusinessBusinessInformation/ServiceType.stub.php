@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class ServiceType extends \Google\Model
-{
-    /**
-     * Output only. The human-readable display name for the service type.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. A stable ID (provided by Google) for this service type.
-     *
-     * @var string
-     */
-    public $serviceTypeId;
-    /**
-     * Output only. The human-readable display name for the service type.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class ServiceType extends \Google\Model
     {
+        /**
+         * Output only. The human-readable display name for the service type.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. A stable ID (provided by Google) for this service type.
+         *
+         * @var string
+         */
+        public $serviceTypeId;
+        /**
+         * Output only. The human-readable display name for the service type.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. A stable ID (provided by Google) for this service type.
+         *
+         * @param string $serviceTypeId
+         */
+        public function setServiceTypeId($serviceTypeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceTypeId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\ServiceType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. A stable ID (provided by Google) for this service type.
-     *
-     * @param string $serviceTypeId
-     */
-    public function setServiceTypeId($serviceTypeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceTypeId()
+    class Google_Service_MyBusinessBusinessInformation_ServiceType extends \Google\Service\MyBusinessBusinessInformation\ServiceType
     {
     }
 }

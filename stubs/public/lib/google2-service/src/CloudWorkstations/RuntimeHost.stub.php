@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudWorkstations;
-
-class RuntimeHost extends \Google\Model
-{
-    protected $gceInstanceHostType = GceInstanceHost::class;
-    protected $gceInstanceHostDataType = '';
-    /**
-     * Specifies a Compute Engine instance as the host.
-     *
-     * @param GceInstanceHost $gceInstanceHost
-     */
-    public function setGceInstanceHost(GceInstanceHost $gceInstanceHost)
+namespace Google\Service\CloudWorkstations {
+    class RuntimeHost extends \Google\Model
     {
+        protected $gceInstanceHostType = GceInstanceHost::class;
+        protected $gceInstanceHostDataType = '';
+        /**
+         * Specifies a Compute Engine instance as the host.
+         *
+         * @param GceInstanceHost $gceInstanceHost
+         */
+        public function setGceInstanceHost(GceInstanceHost $gceInstanceHost)
+        {
+        }
+        /**
+         * @return GceInstanceHost
+         */
+        public function getGceInstanceHost()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GceInstanceHost
+     * Runtime class alias of \Google\Service\CloudWorkstations\RuntimeHost registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGceInstanceHost()
+    class Google_Service_CloudWorkstations_RuntimeHost extends \Google\Service\CloudWorkstations\RuntimeHost
     {
     }
 }

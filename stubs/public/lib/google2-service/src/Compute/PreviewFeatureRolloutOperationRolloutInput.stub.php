@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class PreviewFeatureRolloutOperationRolloutInput extends \Google\Model
-{
-    public const PREDEFINED_ROLLOUT_PLAN_ROLLOUT_PLAN_FAST_ROLLOUT = 'ROLLOUT_PLAN_FAST_ROLLOUT';
-    public const PREDEFINED_ROLLOUT_PLAN_ROLLOUT_PLAN_TWO_DAY_ROLLOUT = 'ROLLOUT_PLAN_TWO_DAY_ROLLOUT';
-    public const PREDEFINED_ROLLOUT_PLAN_ROLLOUT_PLAN_UNSPECIFIED = 'ROLLOUT_PLAN_UNSPECIFIED';
-    /**
-     * The name of the rollout plan Ex.
-     * organizations//locations/global/rolloutPlans/ Ex.
-     * folders//locations/global/rolloutPlans/ Ex.
-     * projects//locations/global/rolloutPlans/.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Predefined rollout plan.
-     *
-     * @var string
-     */
-    public $predefinedRolloutPlan;
-    /**
-     * The name of the rollout plan Ex.
-     * organizations//locations/global/rolloutPlans/ Ex.
-     * folders//locations/global/rolloutPlans/ Ex.
-     * projects//locations/global/rolloutPlans/.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Compute {
+    class PreviewFeatureRolloutOperationRolloutInput extends \Google\Model
     {
+        public const PREDEFINED_ROLLOUT_PLAN_ROLLOUT_PLAN_FAST_ROLLOUT = 'ROLLOUT_PLAN_FAST_ROLLOUT';
+        public const PREDEFINED_ROLLOUT_PLAN_ROLLOUT_PLAN_TWO_DAY_ROLLOUT = 'ROLLOUT_PLAN_TWO_DAY_ROLLOUT';
+        public const PREDEFINED_ROLLOUT_PLAN_ROLLOUT_PLAN_UNSPECIFIED = 'ROLLOUT_PLAN_UNSPECIFIED';
+        /**
+         * The name of the rollout plan Ex.
+         * organizations//locations/global/rolloutPlans/ Ex.
+         * folders//locations/global/rolloutPlans/ Ex.
+         * projects//locations/global/rolloutPlans/.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Predefined rollout plan.
+         *
+         * @var string
+         */
+        public $predefinedRolloutPlan;
+        /**
+         * The name of the rollout plan Ex.
+         * organizations//locations/global/rolloutPlans/ Ex.
+         * folders//locations/global/rolloutPlans/ Ex.
+         * projects//locations/global/rolloutPlans/.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Predefined rollout plan.
+         *
+         * Accepted values: ROLLOUT_PLAN_FAST_ROLLOUT, ROLLOUT_PLAN_TWO_DAY_ROLLOUT,
+         * ROLLOUT_PLAN_UNSPECIFIED
+         *
+         * @param self::PREDEFINED_ROLLOUT_PLAN_* $predefinedRolloutPlan
+         */
+        public function setPredefinedRolloutPlan($predefinedRolloutPlan)
+        {
+        }
+        /**
+         * @return self::PREDEFINED_ROLLOUT_PLAN_*
+         */
+        public function getPredefinedRolloutPlan()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\PreviewFeatureRolloutOperationRolloutInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Predefined rollout plan.
-     *
-     * Accepted values: ROLLOUT_PLAN_FAST_ROLLOUT, ROLLOUT_PLAN_TWO_DAY_ROLLOUT,
-     * ROLLOUT_PLAN_UNSPECIFIED
-     *
-     * @param self::PREDEFINED_ROLLOUT_PLAN_* $predefinedRolloutPlan
-     */
-    public function setPredefinedRolloutPlan($predefinedRolloutPlan)
-    {
-    }
-    /**
-     * @return self::PREDEFINED_ROLLOUT_PLAN_*
-     */
-    public function getPredefinedRolloutPlan()
+    class Google_Service_Compute_PreviewFeatureRolloutOperationRolloutInput extends \Google\Service\Compute\PreviewFeatureRolloutOperationRolloutInput
     {
     }
 }

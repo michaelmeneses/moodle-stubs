@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeatureViewFeatureRegistrySourceFeatureGroup extends \Google\Collection
-{
-    protected $collection_key = 'featureIds';
-    /**
-     * Required. Identifier of the feature group.
-     *
-     * @var string
-     */
-    public $featureGroupId;
-    /**
-     * Required. Identifiers of features under the feature group.
-     *
-     * @var string[]
-     */
-    public $featureIds;
-    /**
-     * Required. Identifier of the feature group.
-     *
-     * @param string $featureGroupId
-     */
-    public function setFeatureGroupId($featureGroupId)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeatureViewFeatureRegistrySourceFeatureGroup extends \Google\Collection
     {
+        protected $collection_key = 'featureIds';
+        /**
+         * Required. Identifier of the feature group.
+         *
+         * @var string
+         */
+        public $featureGroupId;
+        /**
+         * Required. Identifiers of features under the feature group.
+         *
+         * @var string[]
+         */
+        public $featureIds;
+        /**
+         * Required. Identifier of the feature group.
+         *
+         * @param string $featureGroupId
+         */
+        public function setFeatureGroupId($featureGroupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFeatureGroupId()
+        {
+        }
+        /**
+         * Required. Identifiers of features under the feature group.
+         *
+         * @param string[] $featureIds
+         */
+        public function setFeatureIds($featureIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFeatureIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewFeatureRegistrySourceFeatureGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFeatureGroupId()
-    {
-    }
-    /**
-     * Required. Identifiers of features under the feature group.
-     *
-     * @param string[] $featureIds
-     */
-    public function setFeatureIds($featureIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFeatureIds()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeatureViewFeatureRegistrySourceFeatureGroup extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewFeatureRegistrySourceFeatureGroup
     {
     }
 }

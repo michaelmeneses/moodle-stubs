@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class ThreatMatch extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $cacheDuration;
-    /**
-     * @var string
-     */
-    public $platformType;
-    protected $threatDataType = '';
-    public $threat;
-    protected $threatEntryMetadataType = ThreatEntryMetadata::class;
-    protected $threatEntryMetadataDataType = '';
-    public $threatEntryMetadata;
-    /**
-     * @var string
-     */
-    public $threatEntryType;
-    /**
-     * @var string
-     */
-    public $threatType;
-    /**
-     * @param string
-     */
-    public function setCacheDuration($cacheDuration)
+namespace Google\Service\Safebrowsing {
+    class ThreatMatch extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $cacheDuration;
+        /**
+         * @var string
+         */
+        public $platformType;
+        protected $threatDataType = '';
+        public $threat;
+        protected $threatEntryMetadataType = ThreatEntryMetadata::class;
+        protected $threatEntryMetadataDataType = '';
+        public $threatEntryMetadata;
+        /**
+         * @var string
+         */
+        public $threatEntryType;
+        /**
+         * @var string
+         */
+        public $threatType;
+        /**
+         * @param string
+         */
+        public function setCacheDuration($cacheDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCacheDuration()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPlatformType($platformType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlatformType()
+        {
+        }
+        /**
+         * @param ThreatEntry
+         */
+        public function setThreat(ThreatEntry $threat)
+        {
+        }
+        /**
+         * @return ThreatEntry
+         */
+        public function getThreat()
+        {
+        }
+        /**
+         * @param ThreatEntryMetadata
+         */
+        public function setThreatEntryMetadata(ThreatEntryMetadata $threatEntryMetadata)
+        {
+        }
+        /**
+         * @return ThreatEntryMetadata
+         */
+        public function getThreatEntryMetadata()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setThreatEntryType($threatEntryType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThreatEntryType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setThreatType($threatType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThreatType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Safebrowsing\ThreatMatch registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCacheDuration()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPlatformType($platformType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlatformType()
-    {
-    }
-    /**
-     * @param ThreatEntry
-     */
-    public function setThreat(ThreatEntry $threat)
-    {
-    }
-    /**
-     * @return ThreatEntry
-     */
-    public function getThreat()
-    {
-    }
-    /**
-     * @param ThreatEntryMetadata
-     */
-    public function setThreatEntryMetadata(ThreatEntryMetadata $threatEntryMetadata)
-    {
-    }
-    /**
-     * @return ThreatEntryMetadata
-     */
-    public function getThreatEntryMetadata()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setThreatEntryType($threatEntryType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThreatEntryType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setThreatType($threatType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThreatType()
+    class Google_Service_Safebrowsing_ThreatMatch extends \Google\Service\Safebrowsing\ThreatMatch
     {
     }
 }

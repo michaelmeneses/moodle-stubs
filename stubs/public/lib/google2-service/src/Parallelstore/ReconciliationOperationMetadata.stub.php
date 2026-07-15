@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Parallelstore;
-
-class ReconciliationOperationMetadata extends \Google\Model
-{
-    /**
-     * Unknown repair action.
-     */
-    public const EXCLUSIVE_ACTION_UNKNOWN_REPAIR_ACTION = 'UNKNOWN_REPAIR_ACTION';
-    /**
-     * The resource has to be deleted. When using this bit, the CLH should fail
-     * the operation. DEPRECATED. Instead use DELETE_RESOURCE OperationSignal in
-     * SideChannel.
-     *
-     * @deprecated
-     */
-    public const EXCLUSIVE_ACTION_DELETE = 'DELETE';
-    /**
-     * This resource could not be repaired but the repair should be tried again at
-     * a later time. This can happen if there is a dependency that needs to be
-     * resolved first- e.g. if a parent resource must be repaired before a child
-     * resource.
-     */
-    public const EXCLUSIVE_ACTION_RETRY = 'RETRY';
-    /**
-     * DEPRECATED. Use exclusive_action instead.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $deleteResource;
-    /**
-     * Excluisive action returned by the CLH.
-     *
-     * @var string
-     */
-    public $exclusiveAction;
-    /**
-     * DEPRECATED. Use exclusive_action instead.
-     *
-     * @deprecated
-     * @param bool $deleteResource
-     */
-    public function setDeleteResource($deleteResource)
+namespace Google\Service\Parallelstore {
+    class ReconciliationOperationMetadata extends \Google\Model
     {
+        /**
+         * Unknown repair action.
+         */
+        public const EXCLUSIVE_ACTION_UNKNOWN_REPAIR_ACTION = 'UNKNOWN_REPAIR_ACTION';
+        /**
+         * The resource has to be deleted. When using this bit, the CLH should fail
+         * the operation. DEPRECATED. Instead use DELETE_RESOURCE OperationSignal in
+         * SideChannel.
+         *
+         * @deprecated
+         */
+        public const EXCLUSIVE_ACTION_DELETE = 'DELETE';
+        /**
+         * This resource could not be repaired but the repair should be tried again at
+         * a later time. This can happen if there is a dependency that needs to be
+         * resolved first- e.g. if a parent resource must be repaired before a child
+         * resource.
+         */
+        public const EXCLUSIVE_ACTION_RETRY = 'RETRY';
+        /**
+         * DEPRECATED. Use exclusive_action instead.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $deleteResource;
+        /**
+         * Excluisive action returned by the CLH.
+         *
+         * @var string
+         */
+        public $exclusiveAction;
+        /**
+         * DEPRECATED. Use exclusive_action instead.
+         *
+         * @deprecated
+         * @param bool $deleteResource
+         */
+        public function setDeleteResource($deleteResource)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getDeleteResource()
+        {
+        }
+        /**
+         * Excluisive action returned by the CLH.
+         *
+         * Accepted values: UNKNOWN_REPAIR_ACTION, DELETE, RETRY
+         *
+         * @param self::EXCLUSIVE_ACTION_* $exclusiveAction
+         */
+        public function setExclusiveAction($exclusiveAction)
+        {
+        }
+        /**
+         * @return self::EXCLUSIVE_ACTION_*
+         */
+        public function getExclusiveAction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return bool
+     * Runtime class alias of \Google\Service\Parallelstore\ReconciliationOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeleteResource()
-    {
-    }
-    /**
-     * Excluisive action returned by the CLH.
-     *
-     * Accepted values: UNKNOWN_REPAIR_ACTION, DELETE, RETRY
-     *
-     * @param self::EXCLUSIVE_ACTION_* $exclusiveAction
-     */
-    public function setExclusiveAction($exclusiveAction)
-    {
-    }
-    /**
-     * @return self::EXCLUSIVE_ACTION_*
-     */
-    public function getExclusiveAction()
+    class Google_Service_Parallelstore_ReconciliationOperationMetadata extends \Google\Service\Parallelstore\ReconciliationOperationMetadata
     {
     }
 }

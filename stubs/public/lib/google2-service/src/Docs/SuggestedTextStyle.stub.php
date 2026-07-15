@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class SuggestedTextStyle extends \Google\Model
-{
-    protected $textStyleType = TextStyle::class;
-    protected $textStyleDataType = '';
-    protected $textStyleSuggestionStateType = TextStyleSuggestionState::class;
-    protected $textStyleSuggestionStateDataType = '';
-    /**
-     * A TextStyle that only includes the changes made in this suggestion. This
-     * can be used along with the text_style_suggestion_state to see which fields
-     * have changed and their new values.
-     *
-     * @param TextStyle $textStyle
-     */
-    public function setTextStyle(TextStyle $textStyle)
+namespace Google\Service\Docs {
+    class SuggestedTextStyle extends \Google\Model
     {
+        protected $textStyleType = TextStyle::class;
+        protected $textStyleDataType = '';
+        protected $textStyleSuggestionStateType = TextStyleSuggestionState::class;
+        protected $textStyleSuggestionStateDataType = '';
+        /**
+         * A TextStyle that only includes the changes made in this suggestion. This
+         * can be used along with the text_style_suggestion_state to see which fields
+         * have changed and their new values.
+         *
+         * @param TextStyle $textStyle
+         */
+        public function setTextStyle(TextStyle $textStyle)
+        {
+        }
+        /**
+         * @return TextStyle
+         */
+        public function getTextStyle()
+        {
+        }
+        /**
+         * A mask that indicates which of the fields on the base TextStyle have been
+         * changed in this suggestion.
+         *
+         * @param TextStyleSuggestionState $textStyleSuggestionState
+         */
+        public function setTextStyleSuggestionState(TextStyleSuggestionState $textStyleSuggestionState)
+        {
+        }
+        /**
+         * @return TextStyleSuggestionState
+         */
+        public function getTextStyleSuggestionState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TextStyle
+     * Runtime class alias of \Google\Service\Docs\SuggestedTextStyle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTextStyle()
-    {
-    }
-    /**
-     * A mask that indicates which of the fields on the base TextStyle have been
-     * changed in this suggestion.
-     *
-     * @param TextStyleSuggestionState $textStyleSuggestionState
-     */
-    public function setTextStyleSuggestionState(TextStyleSuggestionState $textStyleSuggestionState)
-    {
-    }
-    /**
-     * @return TextStyleSuggestionState
-     */
-    public function getTextStyleSuggestionState()
+    class Google_Service_Docs_SuggestedTextStyle extends \Google\Service\Docs\SuggestedTextStyle
     {
     }
 }

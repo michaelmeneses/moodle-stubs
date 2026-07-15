@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ModelDefinition extends \Google\Collection
-{
-    protected $collection_key = 'trainingRuns';
-    protected $modelOptionsType = ModelDefinitionModelOptions::class;
-    protected $modelOptionsDataType = '';
-    protected $trainingRunsType = BqmlTrainingRun::class;
-    protected $trainingRunsDataType = 'array';
-    /**
-     * Deprecated.
-     *
-     * @param ModelDefinitionModelOptions $modelOptions
-     */
-    public function setModelOptions(ModelDefinitionModelOptions $modelOptions)
+namespace Google\Service\Bigquery {
+    class ModelDefinition extends \Google\Collection
     {
+        protected $collection_key = 'trainingRuns';
+        protected $modelOptionsType = ModelDefinitionModelOptions::class;
+        protected $modelOptionsDataType = '';
+        protected $trainingRunsType = BqmlTrainingRun::class;
+        protected $trainingRunsDataType = 'array';
+        /**
+         * Deprecated.
+         *
+         * @param ModelDefinitionModelOptions $modelOptions
+         */
+        public function setModelOptions(ModelDefinitionModelOptions $modelOptions)
+        {
+        }
+        /**
+         * @return ModelDefinitionModelOptions
+         */
+        public function getModelOptions()
+        {
+        }
+        /**
+         * Deprecated.
+         *
+         * @param BqmlTrainingRun[] $trainingRuns
+         */
+        public function setTrainingRuns($trainingRuns)
+        {
+        }
+        /**
+         * @return BqmlTrainingRun[]
+         */
+        public function getTrainingRuns()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ModelDefinitionModelOptions
+     * Runtime class alias of \Google\Service\Bigquery\ModelDefinition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModelOptions()
-    {
-    }
-    /**
-     * Deprecated.
-     *
-     * @param BqmlTrainingRun[] $trainingRuns
-     */
-    public function setTrainingRuns($trainingRuns)
-    {
-    }
-    /**
-     * @return BqmlTrainingRun[]
-     */
-    public function getTrainingRuns()
+    class Google_Service_Bigquery_ModelDefinition extends \Google\Service\Bigquery\ModelDefinition
     {
     }
 }

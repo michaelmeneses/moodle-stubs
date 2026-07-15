@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1TrajectoryRecallResults extends \Google\Collection
-{
-    protected $collection_key = 'trajectoryRecallMetricValues';
-    protected $trajectoryRecallMetricValuesType = GoogleCloudAiplatformV1TrajectoryRecallMetricValue::class;
-    protected $trajectoryRecallMetricValuesDataType = 'array';
-    /**
-     * Output only. TrajectoryRecall metric values.
-     *
-     * @param GoogleCloudAiplatformV1TrajectoryRecallMetricValue[] $trajectoryRecallMetricValues
-     */
-    public function setTrajectoryRecallMetricValues($trajectoryRecallMetricValues)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1TrajectoryRecallResults extends \Google\Collection
     {
+        protected $collection_key = 'trajectoryRecallMetricValues';
+        protected $trajectoryRecallMetricValuesType = GoogleCloudAiplatformV1TrajectoryRecallMetricValue::class;
+        protected $trajectoryRecallMetricValuesDataType = 'array';
+        /**
+         * Output only. TrajectoryRecall metric values.
+         *
+         * @param GoogleCloudAiplatformV1TrajectoryRecallMetricValue[] $trajectoryRecallMetricValues
+         */
+        public function setTrajectoryRecallMetricValues($trajectoryRecallMetricValues)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TrajectoryRecallMetricValue[]
+         */
+        public function getTrajectoryRecallMetricValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1TrajectoryRecallMetricValue[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrajectoryRecallResults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTrajectoryRecallMetricValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1TrajectoryRecallResults extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrajectoryRecallResults
     {
     }
 }

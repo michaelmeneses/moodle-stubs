@@ -21,193 +21,202 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class WidgetMarkup extends \Google\Collection
-{
-    protected $collection_key = 'buttons';
-    protected $buttonsType = Button::class;
-    protected $buttonsDataType = 'array';
-    protected $dateTimePickerType = DateTimePicker::class;
-    protected $dateTimePickerDataType = '';
-    protected $dividerType = Divider::class;
-    protected $dividerDataType = '';
-    protected $gridType = Grid::class;
-    protected $gridDataType = '';
-    /**
-     * @var string
-     */
-    public $horizontalAlignment;
-    protected $imageType = Image::class;
-    protected $imageDataType = '';
-    protected $imageKeyValueType = ImageKeyValue::class;
-    protected $imageKeyValueDataType = '';
-    protected $keyValueType = KeyValue::class;
-    protected $keyValueDataType = '';
-    protected $menuType = Menu::class;
-    protected $menuDataType = '';
-    protected $selectionControlType = SelectionControl::class;
-    protected $selectionControlDataType = '';
-    protected $textFieldType = TextField::class;
-    protected $textFieldDataType = '';
-    protected $textKeyValueType = TextKeyValue::class;
-    protected $textKeyValueDataType = '';
-    protected $textParagraphType = TextParagraph::class;
-    protected $textParagraphDataType = '';
-    /**
-     * @param Button[]
-     */
-    public function setButtons($buttons)
+namespace Google\Service\CloudSearch {
+    class WidgetMarkup extends \Google\Collection
     {
+        protected $collection_key = 'buttons';
+        protected $buttonsType = Button::class;
+        protected $buttonsDataType = 'array';
+        protected $dateTimePickerType = DateTimePicker::class;
+        protected $dateTimePickerDataType = '';
+        protected $dividerType = Divider::class;
+        protected $dividerDataType = '';
+        protected $gridType = Grid::class;
+        protected $gridDataType = '';
+        /**
+         * @var string
+         */
+        public $horizontalAlignment;
+        protected $imageType = Image::class;
+        protected $imageDataType = '';
+        protected $imageKeyValueType = ImageKeyValue::class;
+        protected $imageKeyValueDataType = '';
+        protected $keyValueType = KeyValue::class;
+        protected $keyValueDataType = '';
+        protected $menuType = Menu::class;
+        protected $menuDataType = '';
+        protected $selectionControlType = SelectionControl::class;
+        protected $selectionControlDataType = '';
+        protected $textFieldType = TextField::class;
+        protected $textFieldDataType = '';
+        protected $textKeyValueType = TextKeyValue::class;
+        protected $textKeyValueDataType = '';
+        protected $textParagraphType = TextParagraph::class;
+        protected $textParagraphDataType = '';
+        /**
+         * @param Button[]
+         */
+        public function setButtons($buttons)
+        {
+        }
+        /**
+         * @return Button[]
+         */
+        public function getButtons()
+        {
+        }
+        /**
+         * @param DateTimePicker
+         */
+        public function setDateTimePicker(DateTimePicker $dateTimePicker)
+        {
+        }
+        /**
+         * @return DateTimePicker
+         */
+        public function getDateTimePicker()
+        {
+        }
+        /**
+         * @param Divider
+         */
+        public function setDivider(Divider $divider)
+        {
+        }
+        /**
+         * @return Divider
+         */
+        public function getDivider()
+        {
+        }
+        /**
+         * @param Grid
+         */
+        public function setGrid(Grid $grid)
+        {
+        }
+        /**
+         * @return Grid
+         */
+        public function getGrid()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHorizontalAlignment($horizontalAlignment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHorizontalAlignment()
+        {
+        }
+        /**
+         * @param Image
+         */
+        public function setImage(Image $image)
+        {
+        }
+        /**
+         * @return Image
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * @param ImageKeyValue
+         */
+        public function setImageKeyValue(ImageKeyValue $imageKeyValue)
+        {
+        }
+        /**
+         * @return ImageKeyValue
+         */
+        public function getImageKeyValue()
+        {
+        }
+        /**
+         * @param KeyValue
+         */
+        public function setKeyValue(KeyValue $keyValue)
+        {
+        }
+        /**
+         * @return KeyValue
+         */
+        public function getKeyValue()
+        {
+        }
+        /**
+         * @param Menu
+         */
+        public function setMenu(Menu $menu)
+        {
+        }
+        /**
+         * @return Menu
+         */
+        public function getMenu()
+        {
+        }
+        /**
+         * @param SelectionControl
+         */
+        public function setSelectionControl(SelectionControl $selectionControl)
+        {
+        }
+        /**
+         * @return SelectionControl
+         */
+        public function getSelectionControl()
+        {
+        }
+        /**
+         * @param TextField
+         */
+        public function setTextField(TextField $textField)
+        {
+        }
+        /**
+         * @return TextField
+         */
+        public function getTextField()
+        {
+        }
+        /**
+         * @param TextKeyValue
+         */
+        public function setTextKeyValue(TextKeyValue $textKeyValue)
+        {
+        }
+        /**
+         * @return TextKeyValue
+         */
+        public function getTextKeyValue()
+        {
+        }
+        /**
+         * @param TextParagraph
+         */
+        public function setTextParagraph(TextParagraph $textParagraph)
+        {
+        }
+        /**
+         * @return TextParagraph
+         */
+        public function getTextParagraph()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Button[]
+     * Runtime class alias of \Google\Service\CloudSearch\WidgetMarkup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getButtons()
-    {
-    }
-    /**
-     * @param DateTimePicker
-     */
-    public function setDateTimePicker(DateTimePicker $dateTimePicker)
-    {
-    }
-    /**
-     * @return DateTimePicker
-     */
-    public function getDateTimePicker()
-    {
-    }
-    /**
-     * @param Divider
-     */
-    public function setDivider(Divider $divider)
-    {
-    }
-    /**
-     * @return Divider
-     */
-    public function getDivider()
-    {
-    }
-    /**
-     * @param Grid
-     */
-    public function setGrid(Grid $grid)
-    {
-    }
-    /**
-     * @return Grid
-     */
-    public function getGrid()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHorizontalAlignment($horizontalAlignment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHorizontalAlignment()
-    {
-    }
-    /**
-     * @param Image
-     */
-    public function setImage(Image $image)
-    {
-    }
-    /**
-     * @return Image
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * @param ImageKeyValue
-     */
-    public function setImageKeyValue(ImageKeyValue $imageKeyValue)
-    {
-    }
-    /**
-     * @return ImageKeyValue
-     */
-    public function getImageKeyValue()
-    {
-    }
-    /**
-     * @param KeyValue
-     */
-    public function setKeyValue(KeyValue $keyValue)
-    {
-    }
-    /**
-     * @return KeyValue
-     */
-    public function getKeyValue()
-    {
-    }
-    /**
-     * @param Menu
-     */
-    public function setMenu(Menu $menu)
-    {
-    }
-    /**
-     * @return Menu
-     */
-    public function getMenu()
-    {
-    }
-    /**
-     * @param SelectionControl
-     */
-    public function setSelectionControl(SelectionControl $selectionControl)
-    {
-    }
-    /**
-     * @return SelectionControl
-     */
-    public function getSelectionControl()
-    {
-    }
-    /**
-     * @param TextField
-     */
-    public function setTextField(TextField $textField)
-    {
-    }
-    /**
-     * @return TextField
-     */
-    public function getTextField()
-    {
-    }
-    /**
-     * @param TextKeyValue
-     */
-    public function setTextKeyValue(TextKeyValue $textKeyValue)
-    {
-    }
-    /**
-     * @return TextKeyValue
-     */
-    public function getTextKeyValue()
-    {
-    }
-    /**
-     * @param TextParagraph
-     */
-    public function setTextParagraph(TextParagraph $textParagraph)
-    {
-    }
-    /**
-     * @return TextParagraph
-     */
-    public function getTextParagraph()
+    class Google_Service_CloudSearch_WidgetMarkup extends \Google\Service\CloudSearch\WidgetMarkup
     {
     }
 }

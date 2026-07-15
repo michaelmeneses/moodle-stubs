@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class GoogleCloudMetastoreV2RestoreServiceRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $backup;
-    /**
-     * @var string
-     */
-    public $backupLocation;
-    /**
-     * @var string
-     */
-    public $requestId;
-    /**
-     * @var string
-     */
-    public $restoreType;
-    /**
-     * @param string
-     */
-    public function setBackup($backup)
+namespace Google\Service\DataprocMetastore {
+    class GoogleCloudMetastoreV2RestoreServiceRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $backup;
+        /**
+         * @var string
+         */
+        public $backupLocation;
+        /**
+         * @var string
+         */
+        public $requestId;
+        /**
+         * @var string
+         */
+        public $restoreType;
+        /**
+         * @param string
+         */
+        public function setBackup($backup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackup()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBackupLocation($backupLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackupLocation()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRestoreType($restoreType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRestoreType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataprocMetastore\GoogleCloudMetastoreV2RestoreServiceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackup()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBackupLocation($backupLocation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBackupLocation()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRestoreType($restoreType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRestoreType()
+    class Google_Service_DataprocMetastore_GoogleCloudMetastoreV2RestoreServiceRequest extends \Google\Service\DataprocMetastore\GoogleCloudMetastoreV2RestoreServiceRequest
     {
     }
 }

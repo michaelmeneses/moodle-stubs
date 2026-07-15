@@ -21,174 +21,183 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaKeyEvent extends \Google\Model
-{
-    /**
-     * Counting method not specified.
-     */
-    public const COUNTING_METHOD_COUNTING_METHOD_UNSPECIFIED = 'COUNTING_METHOD_UNSPECIFIED';
-    /**
-     * Each Event instance is considered a Key Event.
-     */
-    public const COUNTING_METHOD_ONCE_PER_EVENT = 'ONCE_PER_EVENT';
-    /**
-     * An Event instance is considered a Key Event at most once per session per
-     * user.
-     */
-    public const COUNTING_METHOD_ONCE_PER_SESSION = 'ONCE_PER_SESSION';
-    /**
-     * Required. The method by which Key Events will be counted across multiple
-     * events within a session.
-     *
-     * @var string
-     */
-    public $countingMethod;
-    /**
-     * Output only. Time when this key event was created in the property.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. If set to true, this key event refers to a custom event. If
-     * set to false, this key event refers to a default event in GA. Default
-     * events typically have special meaning in GA. Default events are usually
-     * created for you by the GA system, but in some cases can be created by
-     * property admins. Custom events count towards the maximum number of custom
-     * key events that may be created per property.
-     *
-     * @var bool
-     */
-    public $custom;
-    protected $defaultValueType = GoogleAnalyticsAdminV1betaKeyEventDefaultValue::class;
-    protected $defaultValueDataType = '';
-    /**
-     * Output only. If set to true, this event can be deleted.
-     *
-     * @var bool
-     */
-    public $deletable;
-    /**
-     * Immutable. The event name for this key event. Examples: 'click', 'purchase'
-     *
-     * @var string
-     */
-    public $eventName;
-    /**
-     * Output only. Resource name of this key event. Format:
-     * properties/{property}/keyEvents/{key_event}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The method by which Key Events will be counted across multiple
-     * events within a session.
-     *
-     * Accepted values: COUNTING_METHOD_UNSPECIFIED, ONCE_PER_EVENT,
-     * ONCE_PER_SESSION
-     *
-     * @param self::COUNTING_METHOD_* $countingMethod
-     */
-    public function setCountingMethod($countingMethod)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaKeyEvent extends \Google\Model
     {
+        /**
+         * Counting method not specified.
+         */
+        public const COUNTING_METHOD_COUNTING_METHOD_UNSPECIFIED = 'COUNTING_METHOD_UNSPECIFIED';
+        /**
+         * Each Event instance is considered a Key Event.
+         */
+        public const COUNTING_METHOD_ONCE_PER_EVENT = 'ONCE_PER_EVENT';
+        /**
+         * An Event instance is considered a Key Event at most once per session per
+         * user.
+         */
+        public const COUNTING_METHOD_ONCE_PER_SESSION = 'ONCE_PER_SESSION';
+        /**
+         * Required. The method by which Key Events will be counted across multiple
+         * events within a session.
+         *
+         * @var string
+         */
+        public $countingMethod;
+        /**
+         * Output only. Time when this key event was created in the property.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. If set to true, this key event refers to a custom event. If
+         * set to false, this key event refers to a default event in GA. Default
+         * events typically have special meaning in GA. Default events are usually
+         * created for you by the GA system, but in some cases can be created by
+         * property admins. Custom events count towards the maximum number of custom
+         * key events that may be created per property.
+         *
+         * @var bool
+         */
+        public $custom;
+        protected $defaultValueType = GoogleAnalyticsAdminV1betaKeyEventDefaultValue::class;
+        protected $defaultValueDataType = '';
+        /**
+         * Output only. If set to true, this event can be deleted.
+         *
+         * @var bool
+         */
+        public $deletable;
+        /**
+         * Immutable. The event name for this key event. Examples: 'click', 'purchase'
+         *
+         * @var string
+         */
+        public $eventName;
+        /**
+         * Output only. Resource name of this key event. Format:
+         * properties/{property}/keyEvents/{key_event}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The method by which Key Events will be counted across multiple
+         * events within a session.
+         *
+         * Accepted values: COUNTING_METHOD_UNSPECIFIED, ONCE_PER_EVENT,
+         * ONCE_PER_SESSION
+         *
+         * @param self::COUNTING_METHOD_* $countingMethod
+         */
+        public function setCountingMethod($countingMethod)
+        {
+        }
+        /**
+         * @return self::COUNTING_METHOD_*
+         */
+        public function getCountingMethod()
+        {
+        }
+        /**
+         * Output only. Time when this key event was created in the property.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. If set to true, this key event refers to a custom event. If
+         * set to false, this key event refers to a default event in GA. Default
+         * events typically have special meaning in GA. Default events are usually
+         * created for you by the GA system, but in some cases can be created by
+         * property admins. Custom events count towards the maximum number of custom
+         * key events that may be created per property.
+         *
+         * @param bool $custom
+         */
+        public function setCustom($custom)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCustom()
+        {
+        }
+        /**
+         * Optional. Defines a default value/currency for a key event.
+         *
+         * @param GoogleAnalyticsAdminV1betaKeyEventDefaultValue $defaultValue
+         */
+        public function setDefaultValue(GoogleAnalyticsAdminV1betaKeyEventDefaultValue $defaultValue)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaKeyEventDefaultValue
+         */
+        public function getDefaultValue()
+        {
+        }
+        /**
+         * Output only. If set to true, this event can be deleted.
+         *
+         * @param bool $deletable
+         */
+        public function setDeletable($deletable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeletable()
+        {
+        }
+        /**
+         * Immutable. The event name for this key event. Examples: 'click', 'purchase'
+         *
+         * @param string $eventName
+         */
+        public function setEventName($eventName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventName()
+        {
+        }
+        /**
+         * Output only. Resource name of this key event. Format:
+         * properties/{property}/keyEvents/{key_event}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::COUNTING_METHOD_*
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaKeyEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountingMethod()
-    {
-    }
-    /**
-     * Output only. Time when this key event was created in the property.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. If set to true, this key event refers to a custom event. If
-     * set to false, this key event refers to a default event in GA. Default
-     * events typically have special meaning in GA. Default events are usually
-     * created for you by the GA system, but in some cases can be created by
-     * property admins. Custom events count towards the maximum number of custom
-     * key events that may be created per property.
-     *
-     * @param bool $custom
-     */
-    public function setCustom($custom)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCustom()
-    {
-    }
-    /**
-     * Optional. Defines a default value/currency for a key event.
-     *
-     * @param GoogleAnalyticsAdminV1betaKeyEventDefaultValue $defaultValue
-     */
-    public function setDefaultValue(GoogleAnalyticsAdminV1betaKeyEventDefaultValue $defaultValue)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1betaKeyEventDefaultValue
-     */
-    public function getDefaultValue()
-    {
-    }
-    /**
-     * Output only. If set to true, this event can be deleted.
-     *
-     * @param bool $deletable
-     */
-    public function setDeletable($deletable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDeletable()
-    {
-    }
-    /**
-     * Immutable. The event name for this key event. Examples: 'click', 'purchase'
-     *
-     * @param string $eventName
-     */
-    public function setEventName($eventName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventName()
-    {
-    }
-    /**
-     * Output only. Resource name of this key event. Format:
-     * properties/{property}/keyEvents/{key_event}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaKeyEvent extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaKeyEvent
     {
     }
 }

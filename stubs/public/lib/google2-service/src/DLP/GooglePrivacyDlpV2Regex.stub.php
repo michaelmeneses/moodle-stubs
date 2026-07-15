@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2Regex extends \Google\Collection
-{
-    protected $collection_key = 'groupIndexes';
-    /**
-     * The index of the submatch to extract as findings. When not specified, the
-     * entire match is returned. No more than 3 may be included.
-     *
-     * @var int[]
-     */
-    public $groupIndexes;
-    /**
-     * Pattern defining the regular expression. Its syntax
-     * (https://github.com/google/re2/wiki/Syntax) can be found under the
-     * google/re2 repository on GitHub.
-     *
-     * @var string
-     */
-    public $pattern;
-    /**
-     * The index of the submatch to extract as findings. When not specified, the
-     * entire match is returned. No more than 3 may be included.
-     *
-     * @param int[] $groupIndexes
-     */
-    public function setGroupIndexes($groupIndexes)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2Regex extends \Google\Collection
     {
+        protected $collection_key = 'groupIndexes';
+        /**
+         * The index of the submatch to extract as findings. When not specified, the
+         * entire match is returned. No more than 3 may be included.
+         *
+         * @var int[]
+         */
+        public $groupIndexes;
+        /**
+         * Pattern defining the regular expression. Its syntax
+         * (https://github.com/google/re2/wiki/Syntax) can be found under the
+         * google/re2 repository on GitHub.
+         *
+         * @var string
+         */
+        public $pattern;
+        /**
+         * The index of the submatch to extract as findings. When not specified, the
+         * entire match is returned. No more than 3 may be included.
+         *
+         * @param int[] $groupIndexes
+         */
+        public function setGroupIndexes($groupIndexes)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getGroupIndexes()
+        {
+        }
+        /**
+         * Pattern defining the regular expression. Its syntax
+         * (https://github.com/google/re2/wiki/Syntax) can be found under the
+         * google/re2 repository on GitHub.
+         *
+         * @param string $pattern
+         */
+        public function setPattern($pattern)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPattern()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2Regex registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroupIndexes()
-    {
-    }
-    /**
-     * Pattern defining the regular expression. Its syntax
-     * (https://github.com/google/re2/wiki/Syntax) can be found under the
-     * google/re2 repository on GitHub.
-     *
-     * @param string $pattern
-     */
-    public function setPattern($pattern)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPattern()
+    class Google_Service_DLP_GooglePrivacyDlpV2Regex extends \Google\Service\DLP\GooglePrivacyDlpV2Regex
     {
     }
 }

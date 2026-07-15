@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class Shard extends \Google\Model
-{
-    /**
-     * Output only. The estimated shard duration based on previous test case
-     * timing records, if available.
-     *
-     * @var string
-     */
-    public $estimatedShardDuration;
-    /**
-     * Output only. The total number of shards.
-     *
-     * @var int
-     */
-    public $numShards;
-    /**
-     * Output only. The index of the shard among all the shards.
-     *
-     * @var int
-     */
-    public $shardIndex;
-    protected $testTargetsForShardType = TestTargetsForShard::class;
-    protected $testTargetsForShardDataType = '';
-    /**
-     * Output only. The estimated shard duration based on previous test case
-     * timing records, if available.
-     *
-     * @param string $estimatedShardDuration
-     */
-    public function setEstimatedShardDuration($estimatedShardDuration)
+namespace Google\Service\Testing {
+    class Shard extends \Google\Model
     {
+        /**
+         * Output only. The estimated shard duration based on previous test case
+         * timing records, if available.
+         *
+         * @var string
+         */
+        public $estimatedShardDuration;
+        /**
+         * Output only. The total number of shards.
+         *
+         * @var int
+         */
+        public $numShards;
+        /**
+         * Output only. The index of the shard among all the shards.
+         *
+         * @var int
+         */
+        public $shardIndex;
+        protected $testTargetsForShardType = TestTargetsForShard::class;
+        protected $testTargetsForShardDataType = '';
+        /**
+         * Output only. The estimated shard duration based on previous test case
+         * timing records, if available.
+         *
+         * @param string $estimatedShardDuration
+         */
+        public function setEstimatedShardDuration($estimatedShardDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEstimatedShardDuration()
+        {
+        }
+        /**
+         * Output only. The total number of shards.
+         *
+         * @param int $numShards
+         */
+        public function setNumShards($numShards)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumShards()
+        {
+        }
+        /**
+         * Output only. The index of the shard among all the shards.
+         *
+         * @param int $shardIndex
+         */
+        public function setShardIndex($shardIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getShardIndex()
+        {
+        }
+        /**
+         * Output only. Test targets for each shard. Only set for manual sharding.
+         *
+         * @param TestTargetsForShard $testTargetsForShard
+         */
+        public function setTestTargetsForShard(TestTargetsForShard $testTargetsForShard)
+        {
+        }
+        /**
+         * @return TestTargetsForShard
+         */
+        public function getTestTargetsForShard()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Testing\Shard registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEstimatedShardDuration()
-    {
-    }
-    /**
-     * Output only. The total number of shards.
-     *
-     * @param int $numShards
-     */
-    public function setNumShards($numShards)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumShards()
-    {
-    }
-    /**
-     * Output only. The index of the shard among all the shards.
-     *
-     * @param int $shardIndex
-     */
-    public function setShardIndex($shardIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getShardIndex()
-    {
-    }
-    /**
-     * Output only. Test targets for each shard. Only set for manual sharding.
-     *
-     * @param TestTargetsForShard $testTargetsForShard
-     */
-    public function setTestTargetsForShard(TestTargetsForShard $testTargetsForShard)
-    {
-    }
-    /**
-     * @return TestTargetsForShard
-     */
-    public function getTestTargetsForShard()
+    class Google_Service_Testing_Shard extends \Google\Service\Testing\Shard
     {
     }
 }

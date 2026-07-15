@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class RetrieveGamesPlayerTokensResponse extends \Google\Collection
-{
-    protected $collection_key = 'gamePlayerTokens';
-    protected $gamePlayerTokensType = GamePlayerToken::class;
-    protected $gamePlayerTokensDataType = 'array';
-    /**
-     * The requested applications along with the recall tokens for the player. If
-     * the player does not have recall tokens for an application, that application
-     * is not included in the response.
-     *
-     * @param GamePlayerToken[] $gamePlayerTokens
-     */
-    public function setGamePlayerTokens($gamePlayerTokens)
+namespace Google\Service\Games {
+    class RetrieveGamesPlayerTokensResponse extends \Google\Collection
     {
+        protected $collection_key = 'gamePlayerTokens';
+        protected $gamePlayerTokensType = GamePlayerToken::class;
+        protected $gamePlayerTokensDataType = 'array';
+        /**
+         * The requested applications along with the recall tokens for the player. If
+         * the player does not have recall tokens for an application, that application
+         * is not included in the response.
+         *
+         * @param GamePlayerToken[] $gamePlayerTokens
+         */
+        public function setGamePlayerTokens($gamePlayerTokens)
+        {
+        }
+        /**
+         * @return GamePlayerToken[]
+         */
+        public function getGamePlayerTokens()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GamePlayerToken[]
+     * Runtime class alias of \Google\Service\Games\RetrieveGamesPlayerTokensResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGamePlayerTokens()
+    class Google_Service_Games_RetrieveGamesPlayerTokensResponse extends \Google\Service\Games\RetrieveGamesPlayerTokensResponse
     {
     }
 }

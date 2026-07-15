@@ -21,166 +21,175 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrdersUpdateShipmentRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $carrier;
-    /**
-     * @var string
-     */
-    public $deliveryDate;
-    /**
-     * @var string
-     */
-    public $lastPickupDate;
-    /**
-     * @var string
-     */
-    public $operationId;
-    /**
-     * @var string
-     */
-    public $readyPickupDate;
-    protected $scheduledDeliveryDetailsType = OrdersCustomBatchRequestEntryUpdateShipmentScheduledDeliveryDetails::class;
-    protected $scheduledDeliveryDetailsDataType = '';
-    /**
-     * @var string
-     */
-    public $shipmentId;
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @var string
-     */
-    public $trackingId;
-    /**
-     * @var string
-     */
-    public $undeliveredDate;
-    /**
-     * @param string
-     */
-    public function setCarrier($carrier)
+namespace Google\Service\ShoppingContent {
+    class OrdersUpdateShipmentRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $carrier;
+        /**
+         * @var string
+         */
+        public $deliveryDate;
+        /**
+         * @var string
+         */
+        public $lastPickupDate;
+        /**
+         * @var string
+         */
+        public $operationId;
+        /**
+         * @var string
+         */
+        public $readyPickupDate;
+        protected $scheduledDeliveryDetailsType = OrdersCustomBatchRequestEntryUpdateShipmentScheduledDeliveryDetails::class;
+        protected $scheduledDeliveryDetailsDataType = '';
+        /**
+         * @var string
+         */
+        public $shipmentId;
+        /**
+         * @var string
+         */
+        public $status;
+        /**
+         * @var string
+         */
+        public $trackingId;
+        /**
+         * @var string
+         */
+        public $undeliveredDate;
+        /**
+         * @param string
+         */
+        public function setCarrier($carrier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCarrier()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDeliveryDate($deliveryDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeliveryDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastPickupDate($lastPickupDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastPickupDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOperationId($operationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperationId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReadyPickupDate($readyPickupDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadyPickupDate()
+        {
+        }
+        /**
+         * @param OrdersCustomBatchRequestEntryUpdateShipmentScheduledDeliveryDetails
+         */
+        public function setScheduledDeliveryDetails(OrdersCustomBatchRequestEntryUpdateShipmentScheduledDeliveryDetails $scheduledDeliveryDetails)
+        {
+        }
+        /**
+         * @return OrdersCustomBatchRequestEntryUpdateShipmentScheduledDeliveryDetails
+         */
+        public function getScheduledDeliveryDetails()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setShipmentId($shipmentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShipmentId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTrackingId($trackingId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrackingId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUndeliveredDate($undeliveredDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUndeliveredDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrdersUpdateShipmentRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCarrier()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDeliveryDate($deliveryDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeliveryDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastPickupDate($lastPickupDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastPickupDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOperationId($operationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperationId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReadyPickupDate($readyPickupDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadyPickupDate()
-    {
-    }
-    /**
-     * @param OrdersCustomBatchRequestEntryUpdateShipmentScheduledDeliveryDetails
-     */
-    public function setScheduledDeliveryDetails(OrdersCustomBatchRequestEntryUpdateShipmentScheduledDeliveryDetails $scheduledDeliveryDetails)
-    {
-    }
-    /**
-     * @return OrdersCustomBatchRequestEntryUpdateShipmentScheduledDeliveryDetails
-     */
-    public function getScheduledDeliveryDetails()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setShipmentId($shipmentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShipmentId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTrackingId($trackingId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrackingId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUndeliveredDate($undeliveredDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUndeliveredDate()
+    class Google_Service_ShoppingContent_OrdersUpdateShipmentRequest extends \Google\Service\ShoppingContent\OrdersUpdateShipmentRequest
     {
     }
 }

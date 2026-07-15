@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class Annotationsdata extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = GeoAnnotationdata::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Resource type
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Token to pass in for pagination for the next page. This will not be present
-     * if this request does not have more results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The total number of volume annotations found.
-     *
-     * @var int
-     */
-    public $totalItems;
-    /**
-     * A list of Annotation Data.
-     *
-     * @param GeoAnnotationdata[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Books {
+    class Annotationsdata extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = GeoAnnotationdata::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Resource type
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Token to pass in for pagination for the next page. This will not be present
+         * if this request does not have more results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The total number of volume annotations found.
+         *
+         * @var int
+         */
+        public $totalItems;
+        /**
+         * A list of Annotation Data.
+         *
+         * @param GeoAnnotationdata[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return GeoAnnotationdata[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Resource type
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Token to pass in for pagination for the next page. This will not be present
+         * if this request does not have more results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The total number of volume annotations found.
+         *
+         * @param int $totalItems
+         */
+        public function setTotalItems($totalItems)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GeoAnnotationdata[]
+     * Runtime class alias of \Google\Service\Books\Annotationsdata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * Resource type
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Token to pass in for pagination for the next page. This will not be present
-     * if this request does not have more results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The total number of volume annotations found.
-     *
-     * @param int $totalItems
-     */
-    public function setTotalItems($totalItems)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalItems()
+    class Google_Service_Books_Annotationsdata extends \Google\Service\Books\Annotationsdata
     {
     }
 }

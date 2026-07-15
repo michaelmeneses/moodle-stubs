@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class Pricing extends \Google\Collection
-{
-    protected $collection_key = 'flights';
-    /**
-     * @var string
-     */
-    public $capCostType;
-    /**
-     * @var string
-     */
-    public $endDate;
-    protected $flightsType = Flight::class;
-    protected $flightsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $groupType;
-    /**
-     * @var string
-     */
-    public $pricingType;
-    /**
-     * @var string
-     */
-    public $startDate;
-    /**
-     * @param string
-     */
-    public function setCapCostType($capCostType)
+namespace Google\Service\Dfareporting {
+    class Pricing extends \Google\Collection
     {
+        protected $collection_key = 'flights';
+        /**
+         * @var string
+         */
+        public $capCostType;
+        /**
+         * @var string
+         */
+        public $endDate;
+        protected $flightsType = Flight::class;
+        protected $flightsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $groupType;
+        /**
+         * @var string
+         */
+        public $pricingType;
+        /**
+         * @var string
+         */
+        public $startDate;
+        /**
+         * @param string
+         */
+        public function setCapCostType($capCostType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCapCostType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEndDate($endDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * @param Flight[]
+         */
+        public function setFlights($flights)
+        {
+        }
+        /**
+         * @return Flight[]
+         */
+        public function getFlights()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGroupType($groupType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroupType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPricingType($pricingType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPricingType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStartDate($startDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\Pricing registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCapCostType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEndDate($endDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndDate()
-    {
-    }
-    /**
-     * @param Flight[]
-     */
-    public function setFlights($flights)
-    {
-    }
-    /**
-     * @return Flight[]
-     */
-    public function getFlights()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGroupType($groupType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGroupType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPricingType($pricingType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPricingType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStartDate($startDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartDate()
+    class Google_Service_Dfareporting_Pricing extends \Google\Service\Dfareporting\Pricing
     {
     }
 }

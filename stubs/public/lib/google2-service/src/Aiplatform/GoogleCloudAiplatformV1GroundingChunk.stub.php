@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GroundingChunk extends \Google\Model
-{
-    protected $mapsType = GoogleCloudAiplatformV1GroundingChunkMaps::class;
-    protected $mapsDataType = '';
-    protected $retrievedContextType = GoogleCloudAiplatformV1GroundingChunkRetrievedContext::class;
-    protected $retrievedContextDataType = '';
-    protected $webType = GoogleCloudAiplatformV1GroundingChunkWeb::class;
-    protected $webDataType = '';
-    /**
-     * A grounding chunk from Google Maps. See the `Maps` message for details.
-     *
-     * @param GoogleCloudAiplatformV1GroundingChunkMaps $maps
-     */
-    public function setMaps(GoogleCloudAiplatformV1GroundingChunkMaps $maps)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GroundingChunk extends \Google\Model
     {
+        protected $mapsType = GoogleCloudAiplatformV1GroundingChunkMaps::class;
+        protected $mapsDataType = '';
+        protected $retrievedContextType = GoogleCloudAiplatformV1GroundingChunkRetrievedContext::class;
+        protected $retrievedContextDataType = '';
+        protected $webType = GoogleCloudAiplatformV1GroundingChunkWeb::class;
+        protected $webDataType = '';
+        /**
+         * A grounding chunk from Google Maps. See the `Maps` message for details.
+         *
+         * @param GoogleCloudAiplatformV1GroundingChunkMaps $maps
+         */
+        public function setMaps(GoogleCloudAiplatformV1GroundingChunkMaps $maps)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GroundingChunkMaps
+         */
+        public function getMaps()
+        {
+        }
+        /**
+         * A grounding chunk from a data source retrieved by a retrieval tool, such as
+         * Vertex AI Search. See the `RetrievedContext` message for details
+         *
+         * @param GoogleCloudAiplatformV1GroundingChunkRetrievedContext $retrievedContext
+         */
+        public function setRetrievedContext(GoogleCloudAiplatformV1GroundingChunkRetrievedContext $retrievedContext)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GroundingChunkRetrievedContext
+         */
+        public function getRetrievedContext()
+        {
+        }
+        /**
+         * A grounding chunk from a web page, typically from Google Search. See the
+         * `Web` message for details.
+         *
+         * @param GoogleCloudAiplatformV1GroundingChunkWeb $web
+         */
+        public function setWeb(GoogleCloudAiplatformV1GroundingChunkWeb $web)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GroundingChunkWeb
+         */
+        public function getWeb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1GroundingChunkMaps
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GroundingChunk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaps()
-    {
-    }
-    /**
-     * A grounding chunk from a data source retrieved by a retrieval tool, such as
-     * Vertex AI Search. See the `RetrievedContext` message for details
-     *
-     * @param GoogleCloudAiplatformV1GroundingChunkRetrievedContext $retrievedContext
-     */
-    public function setRetrievedContext(GoogleCloudAiplatformV1GroundingChunkRetrievedContext $retrievedContext)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1GroundingChunkRetrievedContext
-     */
-    public function getRetrievedContext()
-    {
-    }
-    /**
-     * A grounding chunk from a web page, typically from Google Search. See the
-     * `Web` message for details.
-     *
-     * @param GoogleCloudAiplatformV1GroundingChunkWeb $web
-     */
-    public function setWeb(GoogleCloudAiplatformV1GroundingChunkWeb $web)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1GroundingChunkWeb
-     */
-    public function getWeb()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GroundingChunk extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GroundingChunk
     {
     }
 }

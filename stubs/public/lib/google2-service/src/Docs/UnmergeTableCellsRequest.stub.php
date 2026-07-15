@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class UnmergeTableCellsRequest extends \Google\Model
-{
-    protected $tableRangeType = TableRange::class;
-    protected $tableRangeDataType = '';
-    /**
-     * The table range specifying which cells of the table to unmerge. All merged
-     * cells in this range will be unmerged, and cells that are already unmerged
-     * will not be affected. If the range has no merged cells, the request will do
-     * nothing. If there is text in any of the merged cells, the text will remain
-     * in the "head" cell of the resulting block of unmerged cells. The "head"
-     * cell is the upper-left cell when the content direction is from left to
-     * right, and the upper-right otherwise.
-     *
-     * @param TableRange $tableRange
-     */
-    public function setTableRange(TableRange $tableRange)
+namespace Google\Service\Docs {
+    class UnmergeTableCellsRequest extends \Google\Model
     {
+        protected $tableRangeType = TableRange::class;
+        protected $tableRangeDataType = '';
+        /**
+         * The table range specifying which cells of the table to unmerge. All merged
+         * cells in this range will be unmerged, and cells that are already unmerged
+         * will not be affected. If the range has no merged cells, the request will do
+         * nothing. If there is text in any of the merged cells, the text will remain
+         * in the "head" cell of the resulting block of unmerged cells. The "head"
+         * cell is the upper-left cell when the content direction is from left to
+         * right, and the upper-right otherwise.
+         *
+         * @param TableRange $tableRange
+         */
+        public function setTableRange(TableRange $tableRange)
+        {
+        }
+        /**
+         * @return TableRange
+         */
+        public function getTableRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TableRange
+     * Runtime class alias of \Google\Service\Docs\UnmergeTableCellsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTableRange()
+    class Google_Service_Docs_UnmergeTableCellsRequest extends \Google\Service\Docs\UnmergeTableCellsRequest
     {
     }
 }

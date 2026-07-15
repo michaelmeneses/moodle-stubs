@@ -21,153 +21,162 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ImportFeatureValuesOperationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'sourceUris';
-    /**
-     * List of ImportFeatureValues operations running under a single EntityType
-     * that are blocking this operation.
-     *
-     * @var string[]
-     */
-    public $blockingOperationIds;
-    protected $genericMetadataType = GoogleCloudAiplatformV1GenericOperationMetadata::class;
-    protected $genericMetadataDataType = '';
-    /**
-     * Number of entities that have been imported by the operation.
-     *
-     * @var string
-     */
-    public $importedEntityCount;
-    /**
-     * Number of Feature values that have been imported by the operation.
-     *
-     * @var string
-     */
-    public $importedFeatureValueCount;
-    /**
-     * The number of rows in input source that weren't imported due to either *
-     * Not having any featureValues. * Having a null entityId. * Having a null
-     * timestamp. * Not being parsable (applicable for CSV sources).
-     *
-     * @var string
-     */
-    public $invalidRowCount;
-    /**
-     * The source URI from where Feature values are imported.
-     *
-     * @var string[]
-     */
-    public $sourceUris;
-    /**
-     * The number rows that weren't ingested due to having timestamps outside the
-     * retention boundary.
-     *
-     * @var string
-     */
-    public $timestampOutsideRetentionRowsCount;
-    /**
-     * List of ImportFeatureValues operations running under a single EntityType
-     * that are blocking this operation.
-     *
-     * @param string[] $blockingOperationIds
-     */
-    public function setBlockingOperationIds($blockingOperationIds)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ImportFeatureValuesOperationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'sourceUris';
+        /**
+         * List of ImportFeatureValues operations running under a single EntityType
+         * that are blocking this operation.
+         *
+         * @var string[]
+         */
+        public $blockingOperationIds;
+        protected $genericMetadataType = GoogleCloudAiplatformV1GenericOperationMetadata::class;
+        protected $genericMetadataDataType = '';
+        /**
+         * Number of entities that have been imported by the operation.
+         *
+         * @var string
+         */
+        public $importedEntityCount;
+        /**
+         * Number of Feature values that have been imported by the operation.
+         *
+         * @var string
+         */
+        public $importedFeatureValueCount;
+        /**
+         * The number of rows in input source that weren't imported due to either *
+         * Not having any featureValues. * Having a null entityId. * Having a null
+         * timestamp. * Not being parsable (applicable for CSV sources).
+         *
+         * @var string
+         */
+        public $invalidRowCount;
+        /**
+         * The source URI from where Feature values are imported.
+         *
+         * @var string[]
+         */
+        public $sourceUris;
+        /**
+         * The number rows that weren't ingested due to having timestamps outside the
+         * retention boundary.
+         *
+         * @var string
+         */
+        public $timestampOutsideRetentionRowsCount;
+        /**
+         * List of ImportFeatureValues operations running under a single EntityType
+         * that are blocking this operation.
+         *
+         * @param string[] $blockingOperationIds
+         */
+        public function setBlockingOperationIds($blockingOperationIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBlockingOperationIds()
+        {
+        }
+        /**
+         * Operation metadata for Featurestore import Feature values.
+         *
+         * @param GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata
+         */
+        public function setGenericMetadata(GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GenericOperationMetadata
+         */
+        public function getGenericMetadata()
+        {
+        }
+        /**
+         * Number of entities that have been imported by the operation.
+         *
+         * @param string $importedEntityCount
+         */
+        public function setImportedEntityCount($importedEntityCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImportedEntityCount()
+        {
+        }
+        /**
+         * Number of Feature values that have been imported by the operation.
+         *
+         * @param string $importedFeatureValueCount
+         */
+        public function setImportedFeatureValueCount($importedFeatureValueCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImportedFeatureValueCount()
+        {
+        }
+        /**
+         * The number of rows in input source that weren't imported due to either *
+         * Not having any featureValues. * Having a null entityId. * Having a null
+         * timestamp. * Not being parsable (applicable for CSV sources).
+         *
+         * @param string $invalidRowCount
+         */
+        public function setInvalidRowCount($invalidRowCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInvalidRowCount()
+        {
+        }
+        /**
+         * The source URI from where Feature values are imported.
+         *
+         * @param string[] $sourceUris
+         */
+        public function setSourceUris($sourceUris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSourceUris()
+        {
+        }
+        /**
+         * The number rows that weren't ingested due to having timestamps outside the
+         * retention boundary.
+         *
+         * @param string $timestampOutsideRetentionRowsCount
+         */
+        public function setTimestampOutsideRetentionRowsCount($timestampOutsideRetentionRowsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestampOutsideRetentionRowsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ImportFeatureValuesOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlockingOperationIds()
-    {
-    }
-    /**
-     * Operation metadata for Featurestore import Feature values.
-     *
-     * @param GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata
-     */
-    public function setGenericMetadata(GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1GenericOperationMetadata
-     */
-    public function getGenericMetadata()
-    {
-    }
-    /**
-     * Number of entities that have been imported by the operation.
-     *
-     * @param string $importedEntityCount
-     */
-    public function setImportedEntityCount($importedEntityCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImportedEntityCount()
-    {
-    }
-    /**
-     * Number of Feature values that have been imported by the operation.
-     *
-     * @param string $importedFeatureValueCount
-     */
-    public function setImportedFeatureValueCount($importedFeatureValueCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImportedFeatureValueCount()
-    {
-    }
-    /**
-     * The number of rows in input source that weren't imported due to either *
-     * Not having any featureValues. * Having a null entityId. * Having a null
-     * timestamp. * Not being parsable (applicable for CSV sources).
-     *
-     * @param string $invalidRowCount
-     */
-    public function setInvalidRowCount($invalidRowCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInvalidRowCount()
-    {
-    }
-    /**
-     * The source URI from where Feature values are imported.
-     *
-     * @param string[] $sourceUris
-     */
-    public function setSourceUris($sourceUris)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSourceUris()
-    {
-    }
-    /**
-     * The number rows that weren't ingested due to having timestamps outside the
-     * retention boundary.
-     *
-     * @param string $timestampOutsideRetentionRowsCount
-     */
-    public function setTimestampOutsideRetentionRowsCount($timestampOutsideRetentionRowsCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestampOutsideRetentionRowsCount()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ImportFeatureValuesOperationMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ImportFeatureValuesOperationMetadata
     {
     }
 }

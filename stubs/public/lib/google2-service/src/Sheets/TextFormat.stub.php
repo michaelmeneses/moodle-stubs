@@ -21,184 +21,193 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class TextFormat extends \Google\Model
-{
-    /**
-     * True if the text is bold.
-     *
-     * @var bool
-     */
-    public $bold;
-    /**
-     * The font family.
-     *
-     * @var string
-     */
-    public $fontFamily;
-    /**
-     * The size of the font.
-     *
-     * @var int
-     */
-    public $fontSize;
-    protected $foregroundColorType = Color::class;
-    protected $foregroundColorDataType = '';
-    protected $foregroundColorStyleType = ColorStyle::class;
-    protected $foregroundColorStyleDataType = '';
-    /**
-     * True if the text is italicized.
-     *
-     * @var bool
-     */
-    public $italic;
-    protected $linkType = Link::class;
-    protected $linkDataType = '';
-    /**
-     * True if the text has a strikethrough.
-     *
-     * @var bool
-     */
-    public $strikethrough;
-    /**
-     * True if the text is underlined.
-     *
-     * @var bool
-     */
-    public $underline;
-    /**
-     * True if the text is bold.
-     *
-     * @param bool $bold
-     */
-    public function setBold($bold)
+namespace Google\Service\Sheets {
+    class TextFormat extends \Google\Model
     {
+        /**
+         * True if the text is bold.
+         *
+         * @var bool
+         */
+        public $bold;
+        /**
+         * The font family.
+         *
+         * @var string
+         */
+        public $fontFamily;
+        /**
+         * The size of the font.
+         *
+         * @var int
+         */
+        public $fontSize;
+        protected $foregroundColorType = Color::class;
+        protected $foregroundColorDataType = '';
+        protected $foregroundColorStyleType = ColorStyle::class;
+        protected $foregroundColorStyleDataType = '';
+        /**
+         * True if the text is italicized.
+         *
+         * @var bool
+         */
+        public $italic;
+        protected $linkType = Link::class;
+        protected $linkDataType = '';
+        /**
+         * True if the text has a strikethrough.
+         *
+         * @var bool
+         */
+        public $strikethrough;
+        /**
+         * True if the text is underlined.
+         *
+         * @var bool
+         */
+        public $underline;
+        /**
+         * True if the text is bold.
+         *
+         * @param bool $bold
+         */
+        public function setBold($bold)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBold()
+        {
+        }
+        /**
+         * The font family.
+         *
+         * @param string $fontFamily
+         */
+        public function setFontFamily($fontFamily)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFontFamily()
+        {
+        }
+        /**
+         * The size of the font.
+         *
+         * @param int $fontSize
+         */
+        public function setFontSize($fontSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFontSize()
+        {
+        }
+        /**
+         * The foreground color of the text. Deprecated: Use foreground_color_style.
+         *
+         * @deprecated
+         * @param Color $foregroundColor
+         */
+        public function setForegroundColor(Color $foregroundColor)
+        {
+        }
+        /**
+         * @deprecated
+         * @return Color
+         */
+        public function getForegroundColor()
+        {
+        }
+        /**
+         * The foreground color of the text. If foreground_color is also set, this
+         * field takes precedence.
+         *
+         * @param ColorStyle $foregroundColorStyle
+         */
+        public function setForegroundColorStyle(ColorStyle $foregroundColorStyle)
+        {
+        }
+        /**
+         * @return ColorStyle
+         */
+        public function getForegroundColorStyle()
+        {
+        }
+        /**
+         * True if the text is italicized.
+         *
+         * @param bool $italic
+         */
+        public function setItalic($italic)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getItalic()
+        {
+        }
+        /**
+         * The link destination of the text, if any. Setting the link field in a
+         * TextFormatRun will clear the cell's existing links or a cell-level link set
+         * in the same request. When a link is set, the text foreground color will be
+         * set to the default link color and the text will be underlined. If these
+         * fields are modified in the same request, those values will be used instead
+         * of the link defaults.
+         *
+         * @param Link $link
+         */
+        public function setLink(Link $link)
+        {
+        }
+        /**
+         * @return Link
+         */
+        public function getLink()
+        {
+        }
+        /**
+         * True if the text has a strikethrough.
+         *
+         * @param bool $strikethrough
+         */
+        public function setStrikethrough($strikethrough)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStrikethrough()
+        {
+        }
+        /**
+         * True if the text is underlined.
+         *
+         * @param bool $underline
+         */
+        public function setUnderline($underline)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUnderline()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Sheets\TextFormat registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBold()
-    {
-    }
-    /**
-     * The font family.
-     *
-     * @param string $fontFamily
-     */
-    public function setFontFamily($fontFamily)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFontFamily()
-    {
-    }
-    /**
-     * The size of the font.
-     *
-     * @param int $fontSize
-     */
-    public function setFontSize($fontSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFontSize()
-    {
-    }
-    /**
-     * The foreground color of the text. Deprecated: Use foreground_color_style.
-     *
-     * @deprecated
-     * @param Color $foregroundColor
-     */
-    public function setForegroundColor(Color $foregroundColor)
-    {
-    }
-    /**
-     * @deprecated
-     * @return Color
-     */
-    public function getForegroundColor()
-    {
-    }
-    /**
-     * The foreground color of the text. If foreground_color is also set, this
-     * field takes precedence.
-     *
-     * @param ColorStyle $foregroundColorStyle
-     */
-    public function setForegroundColorStyle(ColorStyle $foregroundColorStyle)
-    {
-    }
-    /**
-     * @return ColorStyle
-     */
-    public function getForegroundColorStyle()
-    {
-    }
-    /**
-     * True if the text is italicized.
-     *
-     * @param bool $italic
-     */
-    public function setItalic($italic)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getItalic()
-    {
-    }
-    /**
-     * The link destination of the text, if any. Setting the link field in a
-     * TextFormatRun will clear the cell's existing links or a cell-level link set
-     * in the same request. When a link is set, the text foreground color will be
-     * set to the default link color and the text will be underlined. If these
-     * fields are modified in the same request, those values will be used instead
-     * of the link defaults.
-     *
-     * @param Link $link
-     */
-    public function setLink(Link $link)
-    {
-    }
-    /**
-     * @return Link
-     */
-    public function getLink()
-    {
-    }
-    /**
-     * True if the text has a strikethrough.
-     *
-     * @param bool $strikethrough
-     */
-    public function setStrikethrough($strikethrough)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getStrikethrough()
-    {
-    }
-    /**
-     * True if the text is underlined.
-     *
-     * @param bool $underline
-     */
-    public function setUnderline($underline)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUnderline()
+    class Google_Service_Sheets_TextFormat extends \Google\Service\Sheets\TextFormat
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1ListIssueModelsResponse extends \Google\Collection
-{
-    protected $collection_key = 'issueModels';
-    protected $issueModelsType = GoogleCloudContactcenterinsightsV1IssueModel::class;
-    protected $issueModelsDataType = 'array';
-    /**
-     * The issue models that match the request.
-     *
-     * @param GoogleCloudContactcenterinsightsV1IssueModel[] $issueModels
-     */
-    public function setIssueModels($issueModels)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1ListIssueModelsResponse extends \Google\Collection
     {
+        protected $collection_key = 'issueModels';
+        protected $issueModelsType = GoogleCloudContactcenterinsightsV1IssueModel::class;
+        protected $issueModelsDataType = 'array';
+        /**
+         * The issue models that match the request.
+         *
+         * @param GoogleCloudContactcenterinsightsV1IssueModel[] $issueModels
+         */
+        public function setIssueModels($issueModels)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1IssueModel[]
+         */
+        public function getIssueModels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1IssueModel[]
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListIssueModelsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIssueModels()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1ListIssueModelsResponse extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListIssueModelsResponse
     {
     }
 }

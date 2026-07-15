@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class Task extends \Google\Model
-{
-    /**
-     * Task name. The name is generated from the parent TaskGroup name and 'id'
-     * field. For example: "projects/123456/locations/us-
-     * west1/jobs/job01/taskGroups/group01/tasks/task01".
-     *
-     * @var string
-     */
-    public $name;
-    protected $statusType = TaskStatus::class;
-    protected $statusDataType = '';
-    /**
-     * Task name. The name is generated from the parent TaskGroup name and 'id'
-     * field. For example: "projects/123456/locations/us-
-     * west1/jobs/job01/taskGroups/group01/tasks/task01".
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Batch {
+    class Task extends \Google\Model
     {
+        /**
+         * Task name. The name is generated from the parent TaskGroup name and 'id'
+         * field. For example: "projects/123456/locations/us-
+         * west1/jobs/job01/taskGroups/group01/tasks/task01".
+         *
+         * @var string
+         */
+        public $name;
+        protected $statusType = TaskStatus::class;
+        protected $statusDataType = '';
+        /**
+         * Task name. The name is generated from the parent TaskGroup name and 'id'
+         * field. For example: "projects/123456/locations/us-
+         * west1/jobs/job01/taskGroups/group01/tasks/task01".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Task Status.
+         *
+         * @param TaskStatus $status
+         */
+        public function setStatus(TaskStatus $status)
+        {
+        }
+        /**
+         * @return TaskStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Batch\Task registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Task Status.
-     *
-     * @param TaskStatus $status
-     */
-    public function setStatus(TaskStatus $status)
-    {
-    }
-    /**
-     * @return TaskStatus
-     */
-    public function getStatus()
+    class Google_Service_Batch_Task extends \Google\Service\Batch\Task
     {
     }
 }

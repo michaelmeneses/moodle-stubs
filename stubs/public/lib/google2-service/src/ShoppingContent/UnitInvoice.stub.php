@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class UnitInvoice extends \Google\Collection
-{
-    protected $collection_key = 'unitPriceTaxes';
-    protected $additionalChargesType = UnitInvoiceAdditionalCharge::class;
-    protected $additionalChargesDataType = 'array';
-    protected $unitPriceType = Price::class;
-    protected $unitPriceDataType = '';
-    protected $unitPriceTaxesType = UnitInvoiceTaxLine::class;
-    protected $unitPriceTaxesDataType = 'array';
-    /**
-     * @param UnitInvoiceAdditionalCharge[]
-     */
-    public function setAdditionalCharges($additionalCharges)
+namespace Google\Service\ShoppingContent {
+    class UnitInvoice extends \Google\Collection
     {
+        protected $collection_key = 'unitPriceTaxes';
+        protected $additionalChargesType = UnitInvoiceAdditionalCharge::class;
+        protected $additionalChargesDataType = 'array';
+        protected $unitPriceType = Price::class;
+        protected $unitPriceDataType = '';
+        protected $unitPriceTaxesType = UnitInvoiceTaxLine::class;
+        protected $unitPriceTaxesDataType = 'array';
+        /**
+         * @param UnitInvoiceAdditionalCharge[]
+         */
+        public function setAdditionalCharges($additionalCharges)
+        {
+        }
+        /**
+         * @return UnitInvoiceAdditionalCharge[]
+         */
+        public function getAdditionalCharges()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setUnitPrice(Price $unitPrice)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getUnitPrice()
+        {
+        }
+        /**
+         * @param UnitInvoiceTaxLine[]
+         */
+        public function setUnitPriceTaxes($unitPriceTaxes)
+        {
+        }
+        /**
+         * @return UnitInvoiceTaxLine[]
+         */
+        public function getUnitPriceTaxes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UnitInvoiceAdditionalCharge[]
+     * Runtime class alias of \Google\Service\ShoppingContent\UnitInvoice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalCharges()
-    {
-    }
-    /**
-     * @param Price
-     */
-    public function setUnitPrice(Price $unitPrice)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getUnitPrice()
-    {
-    }
-    /**
-     * @param UnitInvoiceTaxLine[]
-     */
-    public function setUnitPriceTaxes($unitPriceTaxes)
-    {
-    }
-    /**
-     * @return UnitInvoiceTaxLine[]
-     */
-    public function getUnitPriceTaxes()
+    class Google_Service_ShoppingContent_UnitInvoice extends \Google\Service\ShoppingContent\UnitInvoice
     {
     }
 }

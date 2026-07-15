@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class DeleteHeaderRequest extends \Google\Model
-{
-    /**
-     * The id of the header to delete. If this header is defined on DocumentStyle,
-     * the reference to this header is removed, resulting in no header of that
-     * type for the first section of the document. If this header is defined on a
-     * SectionStyle, the reference to this header is removed and the header of
-     * that type is now continued from the previous section.
-     *
-     * @var string
-     */
-    public $headerId;
-    /**
-     * The tab containing the header to delete. When omitted, the request is
-     * applied to the first tab. In a document containing a single tab: - If
-     * provided, must match the singular tab's ID. - If omitted, the request
-     * applies to the singular tab. In a document containing multiple tabs: - If
-     * provided, the request applies to the specified tab. - If omitted, the
-     * request applies to the first tab in the document.
-     *
-     * @var string
-     */
-    public $tabId;
-    /**
-     * The id of the header to delete. If this header is defined on DocumentStyle,
-     * the reference to this header is removed, resulting in no header of that
-     * type for the first section of the document. If this header is defined on a
-     * SectionStyle, the reference to this header is removed and the header of
-     * that type is now continued from the previous section.
-     *
-     * @param string $headerId
-     */
-    public function setHeaderId($headerId)
+namespace Google\Service\Docs {
+    class DeleteHeaderRequest extends \Google\Model
     {
+        /**
+         * The id of the header to delete. If this header is defined on DocumentStyle,
+         * the reference to this header is removed, resulting in no header of that
+         * type for the first section of the document. If this header is defined on a
+         * SectionStyle, the reference to this header is removed and the header of
+         * that type is now continued from the previous section.
+         *
+         * @var string
+         */
+        public $headerId;
+        /**
+         * The tab containing the header to delete. When omitted, the request is
+         * applied to the first tab. In a document containing a single tab: - If
+         * provided, must match the singular tab's ID. - If omitted, the request
+         * applies to the singular tab. In a document containing multiple tabs: - If
+         * provided, the request applies to the specified tab. - If omitted, the
+         * request applies to the first tab in the document.
+         *
+         * @var string
+         */
+        public $tabId;
+        /**
+         * The id of the header to delete. If this header is defined on DocumentStyle,
+         * the reference to this header is removed, resulting in no header of that
+         * type for the first section of the document. If this header is defined on a
+         * SectionStyle, the reference to this header is removed and the header of
+         * that type is now continued from the previous section.
+         *
+         * @param string $headerId
+         */
+        public function setHeaderId($headerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeaderId()
+        {
+        }
+        /**
+         * The tab containing the header to delete. When omitted, the request is
+         * applied to the first tab. In a document containing a single tab: - If
+         * provided, must match the singular tab's ID. - If omitted, the request
+         * applies to the singular tab. In a document containing multiple tabs: - If
+         * provided, the request applies to the specified tab. - If omitted, the
+         * request applies to the first tab in the document.
+         *
+         * @param string $tabId
+         */
+        public function setTabId($tabId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTabId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Docs\DeleteHeaderRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeaderId()
-    {
-    }
-    /**
-     * The tab containing the header to delete. When omitted, the request is
-     * applied to the first tab. In a document containing a single tab: - If
-     * provided, must match the singular tab's ID. - If omitted, the request
-     * applies to the singular tab. In a document containing multiple tabs: - If
-     * provided, the request applies to the specified tab. - If omitted, the
-     * request applies to the first tab in the document.
-     *
-     * @param string $tabId
-     */
-    public function setTabId($tabId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTabId()
+    class Google_Service_Docs_DeleteHeaderRequest extends \Google\Service\Docs\DeleteHeaderRequest
     {
     }
 }

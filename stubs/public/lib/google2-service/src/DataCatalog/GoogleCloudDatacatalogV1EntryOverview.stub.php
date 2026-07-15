@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1EntryOverview extends \Google\Model
-{
-    /**
-     * Entry overview with support for rich text. The overview must only contain
-     * Unicode characters, and should be formatted using HTML. The maximum length
-     * is 10 MiB as this value holds HTML descriptions including encoded images.
-     * The maximum length of the text without images is 100 KiB.
-     *
-     * @var string
-     */
-    public $overview;
-    /**
-     * Entry overview with support for rich text. The overview must only contain
-     * Unicode characters, and should be formatted using HTML. The maximum length
-     * is 10 MiB as this value holds HTML descriptions including encoded images.
-     * The maximum length of the text without images is 100 KiB.
-     *
-     * @param string $overview
-     */
-    public function setOverview($overview)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1EntryOverview extends \Google\Model
     {
+        /**
+         * Entry overview with support for rich text. The overview must only contain
+         * Unicode characters, and should be formatted using HTML. The maximum length
+         * is 10 MiB as this value holds HTML descriptions including encoded images.
+         * The maximum length of the text without images is 100 KiB.
+         *
+         * @var string
+         */
+        public $overview;
+        /**
+         * Entry overview with support for rich text. The overview must only contain
+         * Unicode characters, and should be formatted using HTML. The maximum length
+         * is 10 MiB as this value holds HTML descriptions including encoded images.
+         * The maximum length of the text without images is 100 KiB.
+         *
+         * @param string $overview
+         */
+        public function setOverview($overview)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOverview()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1EntryOverview registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOverview()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1EntryOverview extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1EntryOverview
     {
     }
 }

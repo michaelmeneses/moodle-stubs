@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIot;
-
-class PublicKeyCredential extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $format;
-    /**
-     * @var string
-     */
-    public $key;
-    /**
-     * @param string
-     */
-    public function setFormat($format)
+namespace Google\Service\CloudIot {
+    class PublicKeyCredential extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $format;
+        /**
+         * @var string
+         */
+        public $key;
+        /**
+         * @param string
+         */
+        public function setFormat($format)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormat()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIot\PublicKeyCredential registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFormat()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
+    class Google_Service_CloudIot_PublicKeyCredential extends \Google\Service\CloudIot\PublicKeyCredential
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessVerifications;
-
-class Verify extends \Google\Model
-{
-    /**
-     * Indicates whether a verification process has already started, and can be
-     * completed by the location.
-     *
-     * @var bool
-     */
-    public $hasPendingVerification;
-    /**
-     * Indicates whether a verification process has already started, and can be
-     * completed by the location.
-     *
-     * @param bool $hasPendingVerification
-     */
-    public function setHasPendingVerification($hasPendingVerification)
+namespace Google\Service\MyBusinessVerifications {
+    class Verify extends \Google\Model
     {
+        /**
+         * Indicates whether a verification process has already started, and can be
+         * completed by the location.
+         *
+         * @var bool
+         */
+        public $hasPendingVerification;
+        /**
+         * Indicates whether a verification process has already started, and can be
+         * completed by the location.
+         *
+         * @param bool $hasPendingVerification
+         */
+        public function setHasPendingVerification($hasPendingVerification)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasPendingVerification()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\MyBusinessVerifications\Verify registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHasPendingVerification()
+    class Google_Service_MyBusinessVerifications_Verify extends \Google\Service\MyBusinessVerifications\Verify
     {
     }
 }

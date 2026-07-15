@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesConfiguration;
-
-class LocalizedStringBundle extends \Google\Collection
-{
-    protected $collection_key = 'translations';
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesConfiguration#localizedStringBundle`.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $translationsType = LocalizedString::class;
-    protected $translationsDataType = 'array';
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesConfiguration#localizedStringBundle`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\GamesConfiguration {
+    class LocalizedStringBundle extends \Google\Collection
     {
+        protected $collection_key = 'translations';
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesConfiguration#localizedStringBundle`.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $translationsType = LocalizedString::class;
+        protected $translationsDataType = 'array';
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesConfiguration#localizedStringBundle`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The locale strings.
+         *
+         * @param LocalizedString[] $translations
+         */
+        public function setTranslations($translations)
+        {
+        }
+        /**
+         * @return LocalizedString[]
+         */
+        public function getTranslations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GamesConfiguration\LocalizedStringBundle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The locale strings.
-     *
-     * @param LocalizedString[] $translations
-     */
-    public function setTranslations($translations)
-    {
-    }
-    /**
-     * @return LocalizedString[]
-     */
-    public function getTranslations()
+    class Google_Service_GamesConfiguration_LocalizedStringBundle extends \Google\Service\GamesConfiguration\LocalizedStringBundle
     {
     }
 }

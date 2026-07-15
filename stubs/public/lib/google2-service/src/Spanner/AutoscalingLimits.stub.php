@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class AutoscalingLimits extends \Google\Model
-{
-    /**
-     * Maximum number of nodes allocated to the instance. If set, this number
-     * should be greater than or equal to min_nodes.
-     *
-     * @var int
-     */
-    public $maxNodes;
-    /**
-     * Maximum number of processing units allocated to the instance. If set, this
-     * number should be multiples of 1000 and be greater than or equal to
-     * min_processing_units.
-     *
-     * @var int
-     */
-    public $maxProcessingUnits;
-    /**
-     * Minimum number of nodes allocated to the instance. If set, this number
-     * should be greater than or equal to 1.
-     *
-     * @var int
-     */
-    public $minNodes;
-    /**
-     * Minimum number of processing units allocated to the instance. If set, this
-     * number should be multiples of 1000.
-     *
-     * @var int
-     */
-    public $minProcessingUnits;
-    /**
-     * Maximum number of nodes allocated to the instance. If set, this number
-     * should be greater than or equal to min_nodes.
-     *
-     * @param int $maxNodes
-     */
-    public function setMaxNodes($maxNodes)
+namespace Google\Service\Spanner {
+    class AutoscalingLimits extends \Google\Model
     {
+        /**
+         * Maximum number of nodes allocated to the instance. If set, this number
+         * should be greater than or equal to min_nodes.
+         *
+         * @var int
+         */
+        public $maxNodes;
+        /**
+         * Maximum number of processing units allocated to the instance. If set, this
+         * number should be multiples of 1000 and be greater than or equal to
+         * min_processing_units.
+         *
+         * @var int
+         */
+        public $maxProcessingUnits;
+        /**
+         * Minimum number of nodes allocated to the instance. If set, this number
+         * should be greater than or equal to 1.
+         *
+         * @var int
+         */
+        public $minNodes;
+        /**
+         * Minimum number of processing units allocated to the instance. If set, this
+         * number should be multiples of 1000.
+         *
+         * @var int
+         */
+        public $minProcessingUnits;
+        /**
+         * Maximum number of nodes allocated to the instance. If set, this number
+         * should be greater than or equal to min_nodes.
+         *
+         * @param int $maxNodes
+         */
+        public function setMaxNodes($maxNodes)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxNodes()
+        {
+        }
+        /**
+         * Maximum number of processing units allocated to the instance. If set, this
+         * number should be multiples of 1000 and be greater than or equal to
+         * min_processing_units.
+         *
+         * @param int $maxProcessingUnits
+         */
+        public function setMaxProcessingUnits($maxProcessingUnits)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxProcessingUnits()
+        {
+        }
+        /**
+         * Minimum number of nodes allocated to the instance. If set, this number
+         * should be greater than or equal to 1.
+         *
+         * @param int $minNodes
+         */
+        public function setMinNodes($minNodes)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinNodes()
+        {
+        }
+        /**
+         * Minimum number of processing units allocated to the instance. If set, this
+         * number should be multiples of 1000.
+         *
+         * @param int $minProcessingUnits
+         */
+        public function setMinProcessingUnits($minProcessingUnits)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinProcessingUnits()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Spanner\AutoscalingLimits registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxNodes()
-    {
-    }
-    /**
-     * Maximum number of processing units allocated to the instance. If set, this
-     * number should be multiples of 1000 and be greater than or equal to
-     * min_processing_units.
-     *
-     * @param int $maxProcessingUnits
-     */
-    public function setMaxProcessingUnits($maxProcessingUnits)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxProcessingUnits()
-    {
-    }
-    /**
-     * Minimum number of nodes allocated to the instance. If set, this number
-     * should be greater than or equal to 1.
-     *
-     * @param int $minNodes
-     */
-    public function setMinNodes($minNodes)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinNodes()
-    {
-    }
-    /**
-     * Minimum number of processing units allocated to the instance. If set, this
-     * number should be multiples of 1000.
-     *
-     * @param int $minProcessingUnits
-     */
-    public function setMinProcessingUnits($minProcessingUnits)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinProcessingUnits()
+    class Google_Service_Spanner_AutoscalingLimits extends \Google\Service\Spanner\AutoscalingLimits
     {
     }
 }

@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2Dictionary extends \Google\Model
-{
-    protected $cloudStoragePathType = GooglePrivacyDlpV2CloudStoragePath::class;
-    protected $cloudStoragePathDataType = '';
-    protected $wordListType = GooglePrivacyDlpV2WordList::class;
-    protected $wordListDataType = '';
-    /**
-     * Newline-delimited file of words in Cloud Storage. Only a single file is
-     * accepted.
-     *
-     * @param GooglePrivacyDlpV2CloudStoragePath $cloudStoragePath
-     */
-    public function setCloudStoragePath(GooglePrivacyDlpV2CloudStoragePath $cloudStoragePath)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2Dictionary extends \Google\Model
     {
+        protected $cloudStoragePathType = GooglePrivacyDlpV2CloudStoragePath::class;
+        protected $cloudStoragePathDataType = '';
+        protected $wordListType = GooglePrivacyDlpV2WordList::class;
+        protected $wordListDataType = '';
+        /**
+         * Newline-delimited file of words in Cloud Storage. Only a single file is
+         * accepted.
+         *
+         * @param GooglePrivacyDlpV2CloudStoragePath $cloudStoragePath
+         */
+        public function setCloudStoragePath(GooglePrivacyDlpV2CloudStoragePath $cloudStoragePath)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2CloudStoragePath
+         */
+        public function getCloudStoragePath()
+        {
+        }
+        /**
+         * List of words or phrases to search for.
+         *
+         * @param GooglePrivacyDlpV2WordList $wordList
+         */
+        public function setWordList(GooglePrivacyDlpV2WordList $wordList)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2WordList
+         */
+        public function getWordList()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2CloudStoragePath
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2Dictionary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudStoragePath()
-    {
-    }
-    /**
-     * List of words or phrases to search for.
-     *
-     * @param GooglePrivacyDlpV2WordList $wordList
-     */
-    public function setWordList(GooglePrivacyDlpV2WordList $wordList)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2WordList
-     */
-    public function getWordList()
+    class Google_Service_DLP_GooglePrivacyDlpV2Dictionary extends \Google\Service\DLP\GooglePrivacyDlpV2Dictionary
     {
     }
 }

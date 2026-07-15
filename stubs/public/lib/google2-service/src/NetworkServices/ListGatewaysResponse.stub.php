@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class ListGatewaysResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $gatewaysType = Gateway::class;
-    protected $gatewaysDataType = 'array';
-    /**
-     * If there might be more results than those appearing in this response, then
-     * `next_page_token` is included. To get the next set of results, call this
-     * method again using the value of `next_page_token` as `page_token`.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * List of Gateway resources.
-     *
-     * @param Gateway[] $gateways
-     */
-    public function setGateways($gateways)
+namespace Google\Service\NetworkServices {
+    class ListGatewaysResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $gatewaysType = Gateway::class;
+        protected $gatewaysDataType = 'array';
+        /**
+         * If there might be more results than those appearing in this response, then
+         * `next_page_token` is included. To get the next set of results, call this
+         * method again using the value of `next_page_token` as `page_token`.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * List of Gateway resources.
+         *
+         * @param Gateway[] $gateways
+         */
+        public function setGateways($gateways)
+        {
+        }
+        /**
+         * @return Gateway[]
+         */
+        public function getGateways()
+        {
+        }
+        /**
+         * If there might be more results than those appearing in this response, then
+         * `next_page_token` is included. To get the next set of results, call this
+         * method again using the value of `next_page_token` as `page_token`.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Gateway[]
+     * Runtime class alias of \Google\Service\NetworkServices\ListGatewaysResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGateways()
-    {
-    }
-    /**
-     * If there might be more results than those appearing in this response, then
-     * `next_page_token` is included. To get the next set of results, call this
-     * method again using the value of `next_page_token` as `page_token`.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_NetworkServices_ListGatewaysResponse extends \Google\Service\NetworkServices\ListGatewaysResponse
     {
     }
 }

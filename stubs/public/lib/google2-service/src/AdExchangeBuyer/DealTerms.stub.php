@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class DealTerms extends \Google\Model
-{
-    public $brandingType;
-    public $crossListedExternalDealIdType;
-    public $description;
-    protected $estimatedGrossSpendType = Price::class;
-    protected $estimatedGrossSpendDataType = '';
-    public $estimatedImpressionsPerDay;
-    protected $guaranteedFixedPriceTermsType = DealTermsGuaranteedFixedPriceTerms::class;
-    protected $guaranteedFixedPriceTermsDataType = '';
-    protected $nonGuaranteedAuctionTermsType = DealTermsNonGuaranteedAuctionTerms::class;
-    protected $nonGuaranteedAuctionTermsDataType = '';
-    protected $nonGuaranteedFixedPriceTermsType = DealTermsNonGuaranteedFixedPriceTerms::class;
-    protected $nonGuaranteedFixedPriceTermsDataType = '';
-    protected $rubiconNonGuaranteedTermsType = DealTermsRubiconNonGuaranteedTerms::class;
-    protected $rubiconNonGuaranteedTermsDataType = '';
-    public $sellerTimeZone;
-    public function setBrandingType($brandingType)
+namespace Google\Service\AdExchangeBuyer {
+    class DealTerms extends \Google\Model
     {
+        public $brandingType;
+        public $crossListedExternalDealIdType;
+        public $description;
+        protected $estimatedGrossSpendType = Price::class;
+        protected $estimatedGrossSpendDataType = '';
+        public $estimatedImpressionsPerDay;
+        protected $guaranteedFixedPriceTermsType = DealTermsGuaranteedFixedPriceTerms::class;
+        protected $guaranteedFixedPriceTermsDataType = '';
+        protected $nonGuaranteedAuctionTermsType = DealTermsNonGuaranteedAuctionTerms::class;
+        protected $nonGuaranteedAuctionTermsDataType = '';
+        protected $nonGuaranteedFixedPriceTermsType = DealTermsNonGuaranteedFixedPriceTerms::class;
+        protected $nonGuaranteedFixedPriceTermsDataType = '';
+        protected $rubiconNonGuaranteedTermsType = DealTermsRubiconNonGuaranteedTerms::class;
+        protected $rubiconNonGuaranteedTermsDataType = '';
+        public $sellerTimeZone;
+        public function setBrandingType($brandingType)
+        {
+        }
+        public function getBrandingType()
+        {
+        }
+        public function setCrossListedExternalDealIdType($crossListedExternalDealIdType)
+        {
+        }
+        public function getCrossListedExternalDealIdType()
+        {
+        }
+        public function setDescription($description)
+        {
+        }
+        public function getDescription()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setEstimatedGrossSpend(Price $estimatedGrossSpend)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getEstimatedGrossSpend()
+        {
+        }
+        public function setEstimatedImpressionsPerDay($estimatedImpressionsPerDay)
+        {
+        }
+        public function getEstimatedImpressionsPerDay()
+        {
+        }
+        /**
+         * @param DealTermsGuaranteedFixedPriceTerms
+         */
+        public function setGuaranteedFixedPriceTerms(DealTermsGuaranteedFixedPriceTerms $guaranteedFixedPriceTerms)
+        {
+        }
+        /**
+         * @return DealTermsGuaranteedFixedPriceTerms
+         */
+        public function getGuaranteedFixedPriceTerms()
+        {
+        }
+        /**
+         * @param DealTermsNonGuaranteedAuctionTerms
+         */
+        public function setNonGuaranteedAuctionTerms(DealTermsNonGuaranteedAuctionTerms $nonGuaranteedAuctionTerms)
+        {
+        }
+        /**
+         * @return DealTermsNonGuaranteedAuctionTerms
+         */
+        public function getNonGuaranteedAuctionTerms()
+        {
+        }
+        /**
+         * @param DealTermsNonGuaranteedFixedPriceTerms
+         */
+        public function setNonGuaranteedFixedPriceTerms(DealTermsNonGuaranteedFixedPriceTerms $nonGuaranteedFixedPriceTerms)
+        {
+        }
+        /**
+         * @return DealTermsNonGuaranteedFixedPriceTerms
+         */
+        public function getNonGuaranteedFixedPriceTerms()
+        {
+        }
+        /**
+         * @param DealTermsRubiconNonGuaranteedTerms
+         */
+        public function setRubiconNonGuaranteedTerms(DealTermsRubiconNonGuaranteedTerms $rubiconNonGuaranteedTerms)
+        {
+        }
+        /**
+         * @return DealTermsRubiconNonGuaranteedTerms
+         */
+        public function getRubiconNonGuaranteedTerms()
+        {
+        }
+        public function setSellerTimeZone($sellerTimeZone)
+        {
+        }
+        public function getSellerTimeZone()
+        {
+        }
     }
-    public function getBrandingType()
-    {
-    }
-    public function setCrossListedExternalDealIdType($crossListedExternalDealIdType)
-    {
-    }
-    public function getCrossListedExternalDealIdType()
-    {
-    }
-    public function setDescription($description)
-    {
-    }
-    public function getDescription()
-    {
-    }
+}
+namespace {
     /**
-     * @param Price
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\DealTerms registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setEstimatedGrossSpend(Price $estimatedGrossSpend)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getEstimatedGrossSpend()
-    {
-    }
-    public function setEstimatedImpressionsPerDay($estimatedImpressionsPerDay)
-    {
-    }
-    public function getEstimatedImpressionsPerDay()
-    {
-    }
-    /**
-     * @param DealTermsGuaranteedFixedPriceTerms
-     */
-    public function setGuaranteedFixedPriceTerms(DealTermsGuaranteedFixedPriceTerms $guaranteedFixedPriceTerms)
-    {
-    }
-    /**
-     * @return DealTermsGuaranteedFixedPriceTerms
-     */
-    public function getGuaranteedFixedPriceTerms()
-    {
-    }
-    /**
-     * @param DealTermsNonGuaranteedAuctionTerms
-     */
-    public function setNonGuaranteedAuctionTerms(DealTermsNonGuaranteedAuctionTerms $nonGuaranteedAuctionTerms)
-    {
-    }
-    /**
-     * @return DealTermsNonGuaranteedAuctionTerms
-     */
-    public function getNonGuaranteedAuctionTerms()
-    {
-    }
-    /**
-     * @param DealTermsNonGuaranteedFixedPriceTerms
-     */
-    public function setNonGuaranteedFixedPriceTerms(DealTermsNonGuaranteedFixedPriceTerms $nonGuaranteedFixedPriceTerms)
-    {
-    }
-    /**
-     * @return DealTermsNonGuaranteedFixedPriceTerms
-     */
-    public function getNonGuaranteedFixedPriceTerms()
-    {
-    }
-    /**
-     * @param DealTermsRubiconNonGuaranteedTerms
-     */
-    public function setRubiconNonGuaranteedTerms(DealTermsRubiconNonGuaranteedTerms $rubiconNonGuaranteedTerms)
-    {
-    }
-    /**
-     * @return DealTermsRubiconNonGuaranteedTerms
-     */
-    public function getRubiconNonGuaranteedTerms()
-    {
-    }
-    public function setSellerTimeZone($sellerTimeZone)
-    {
-    }
-    public function getSellerTimeZone()
+    class Google_Service_AdExchangeBuyer_DealTerms extends \Google\Service\AdExchangeBuyer\DealTerms
     {
     }
 }
